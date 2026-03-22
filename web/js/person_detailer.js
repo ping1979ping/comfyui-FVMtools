@@ -37,43 +37,70 @@ function drawSepLine(ctx, label, width, posY) {
     ctx.restore();
 }
 
-// Hide/show for remaining standard widgets (prompt textarea)
-function hideWidget(w) {
-    if (!w || w._fvm_hidden) return;
-    w._fvm_hidden = true;
-    w._fvm_origType = w.type;
-    w._fvm_origCS = w.computeSize;
-    w.type = "converted-widget";
-    w.computeSize = () => [0, -4];
-    if (w.inputEl) w.inputEl.style.display = "none";
+// ── Splice-based hide/show ──
+// The only reliable way to hide widgets in this ComfyUI version.
+// Stores removed widgets in node._fvm_stash keyed by widget name.
+
+function spliceHide(node, widgetName) {
+    if (!node._fvm_stash) node._fvm_stash = {};
+    if (node._fvm_stash[widgetName]) return; // already hidden
+
+    const idx = node.widgets.findIndex(w => w.name === widgetName);
+    if (idx < 0) return;
+
+    const widget = node.widgets[idx];
+    // For DOM widgets (textarea), also hide the element
+    if (widget.inputEl) widget.inputEl.style.display = "none";
+
+    node._fvm_stash[widgetName] = { widget, afterName: null };
+
+    // Remember which widget it was after (for re-insertion)
+    if (idx > 0) {
+        node._fvm_stash[widgetName].afterName = node.widgets[idx - 1].name;
+    }
+
+    node.widgets.splice(idx, 1);
 }
 
-function showWidget(w) {
-    if (!w || !w._fvm_hidden) return;
-    w._fvm_hidden = false;
-    w.type = w._fvm_origType;
-    w.computeSize = w._fvm_origCS;
-    if (w.inputEl) w.inputEl.style.display = "";
+function spliceShow(node, widgetName) {
+    if (!node._fvm_stash?.[widgetName]) return; // not hidden
+
+    const { widget, afterName } = node._fvm_stash[widgetName];
+    delete node._fvm_stash[widgetName];
+
+    // For DOM widgets, show element
+    if (widget.inputEl) widget.inputEl.style.display = "";
+
+    // Find insertion point: after the widget it was previously after
+    let insertIdx = node.widgets.length;
+    if (afterName) {
+        const afterIdx = node.widgets.findIndex(w => w.name === afterName);
+        if (afterIdx >= 0) insertIdx = afterIdx + 1;
+    }
+
+    node.widgets.splice(insertIdx, 0, widget);
 }
 
 function updateSlots(node) {
+    // Collect which widgets to hide per slot
     for (const def of SLOT_DEFS) {
-        const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled");
-        const strengthW = node.widgets.find(w => w.name === def.prefix + "lora_strength");
-        const promptW = node.widgets.find(w => w.name === def.prefix + "prompt");
-        const catchW = node.widgets.find(w => w.name === def.prefix + "catch_unprocessed");
+        const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled")
+                      || node._fvm_stash?.[def.prefix + "enabled"]?.widget;
         if (!enabledW) continue;
 
+        const names = [
+            def.prefix + "lora_strength",
+            def.prefix + "prompt",
+            def.prefix + "catch_unprocessed",
+        ];
+
         if (enabledW.value) {
-            showWidget(strengthW);
-            showWidget(promptW);
-            showWidget(catchW);
+            for (const n of names) spliceShow(node, n);
         } else {
-            hideWidget(strengthW);
-            hideWidget(promptW);
-            hideWidget(catchW);
+            for (const n of names) spliceHide(node, n);
         }
     }
+
     const sz = node.computeSize();
     node.setSize([Math.max(node.size[0], sz[0]), sz[1]]);
     node.graph?.setDirtyCanvas(true, true);
@@ -106,18 +133,16 @@ app.registerExtension({
                 });
             }
 
-            // --- Process slots (backwards to avoid index shift) ---
+            // --- Replace enabled BOOLEAN widgets (backwards) ---
             for (let si = SLOT_DEFS.length - 1; si >= 0; si--) {
                 const def = SLOT_DEFS[si];
-
-                // 1. Remove enabled BOOLEAN widget
                 const enIdx = node.widgets.findIndex(w => w.name === def.prefix + "enabled");
                 if (enIdx < 0) continue;
+
                 const enabledValue = node.widgets[enIdx].value;
                 node.widgets[enIdx].onRemove?.();
                 node.widgets.splice(enIdx, 1);
 
-                // 3. Create custom toggle+separator widget
                 const toggle = {
                     name: def.prefix + "enabled",
                     type: "custom",
@@ -184,7 +209,6 @@ app.registerExtension({
                     serializeValue() { return this.value; },
                 };
 
-                // Insert toggle at the position where enabled was
                 node.widgets.splice(enIdx, 0, toggle);
             }
 
