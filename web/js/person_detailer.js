@@ -60,14 +60,16 @@ function updateSlots(node) {
     for (const def of SLOT_DEFS) {
         const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled");
         const promptW = node.widgets.find(w => w.name === def.prefix + "prompt");
+        // generic has an extra widget
+        const catchW = node.widgets.find(w => w.name === def.prefix + "catch_unprocessed");
         if (!enabledW) continue;
 
-        // LoRA combo is NEVER hidden (always visible, just dimmed via draw override)
-        // Only prompt textarea toggles visibility
         if (enabledW.value) {
             showWidget(promptW);
+            showWidget(catchW);
         } else {
             hideWidget(promptW);
+            hideWidget(catchW);
         }
     }
     const sz = node.computeSize();
@@ -86,6 +88,7 @@ app.registerExtension({
             const result = onNodeCreated?.apply(this, arguments);
             const node = this;
 
+            try {
             // --- Static separators (backwards) ---
             for (let i = STATIC_SEPS.length - 1; i >= 0; i--) {
                 const sep = STATIC_SEPS[i];
@@ -225,6 +228,10 @@ app.registerExtension({
                 requestAnimationFrame(() => updateSlots(node));
             });
 
+            } catch (e) {
+                console.error("[FVMTools] PersonDetailer widget setup error:", e);
+            }
+
             return result;
         };
 
@@ -251,7 +258,11 @@ app.registerExtension({
                 ctx.strokeStyle = "#555";
                 ctx.lineWidth = 1;
                 ctx.beginPath();
-                ctx.roundRect(sx, sy + 1, sw, sh - 2, 4);
+                if (ctx.roundRect) {
+                    ctx.roundRect(sx, sy + 1, sw, sh - 2, 4);
+                } else {
+                    ctx.rect(sx, sy + 1, sw, sh - 2);
+                }
                 ctx.fill();
                 ctx.stroke();
 
