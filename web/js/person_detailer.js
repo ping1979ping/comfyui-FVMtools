@@ -241,17 +241,42 @@ app.registerExtension({
             const r = onDrawFG ? onDrawFG.apply(this, arguments) : undefined;
 
             // Draw strength box on each lora combo widget
+            const wh = LiteGraph.NODE_WIDGET_HEIGHT || 20;
             for (const def of SLOT_DEFS) {
                 const loraW = this.widgets?.find(w => w.name === def.prefix + "lora");
                 if (!loraW || !loraW._fvm_strProxy) continue;
-                if (loraW.last_y == null && loraW.y == null) continue;
-                const widgetY = loraW.last_y ?? loraW.y;
+
+                // Find widget Y position — try multiple approaches
+                let widgetY = loraW.last_y;
+                if (widgetY == null) {
+                    // Fallback: calculate from widget index
+                    const wIdx = this.widgets.indexOf(loraW);
+                    if (wIdx >= 0) {
+                        // Accumulate heights of all widgets before this one
+                        let accY = this.computeSize()[1] > 0 ? 0 : 0;
+                        // Use the title height + slot area as starting offset
+                        accY = (LiteGraph.NODE_TITLE_HEIGHT || 30) + 4;
+                        // Add input slots height
+                        if (this.inputs) accY += this.inputs.length * (LiteGraph.NODE_SLOT_HEIGHT || 20);
+                        for (let wi = 0; wi < wIdx; wi++) {
+                            const w = this.widgets[wi];
+                            if (w.computeSize) {
+                                const cs = w.computeSize(this.size[0]);
+                                accY += (cs[1] > 0 ? cs[1] : 0) + 4;
+                            } else {
+                                accY += wh + 4;
+                            }
+                        }
+                        widgetY = accY;
+                    }
+                }
+                if (widgetY == null) continue;
 
                 const sp = loraW._fvm_strProxy;
                 const val = sp.value.toFixed(2);
                 const width = this.size[0];
                 const sw = 55, sx = width - sw - 8;
-                const sy = widgetY, sh = LiteGraph.NODE_WIDGET_HEIGHT || 20;
+                const sy = widgetY, sh = wh;
 
                 ctx.save();
                 ctx.fillStyle = "#2a2a2a";
