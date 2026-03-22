@@ -30,12 +30,6 @@ class InpaintOptions:
                 "reference_4_mask_type": (["face", "head", "body"], {"default": "head", "tooltip": "Mask type for reference slot 4"}),
                 "reference_5_mask_type": (["face", "head", "body"], {"default": "head", "tooltip": "Mask type for reference slot 5"}),
                 "generic_mask_type": (["face", "head", "body"], {"default": "head", "tooltip": "Mask type for generic (unmatched) slot"}),
-                "reference_1_lora_strength": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05, "tooltip": "LoRA strength for reference 1"}),
-                "reference_2_lora_strength": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05, "tooltip": "LoRA strength for reference 2"}),
-                "reference_3_lora_strength": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05, "tooltip": "LoRA strength for reference 3"}),
-                "reference_4_lora_strength": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05, "tooltip": "LoRA strength for reference 4"}),
-                "reference_5_lora_strength": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05, "tooltip": "LoRA strength for reference 5"}),
-                "generic_lora_strength": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05, "tooltip": "LoRA strength for generic slot"}),
                 "reference_1_detail_daemon": ("BOOLEAN", {"default": True, "tooltip": "Use Detail Daemon for reference 1"}),
                 "reference_2_detail_daemon": ("BOOLEAN", {"default": True, "tooltip": "Use Detail Daemon for reference 2"}),
                 "reference_3_detail_daemon": ("BOOLEAN", {"default": True, "tooltip": "Use Detail Daemon for reference 3"}),
@@ -50,7 +44,6 @@ class InpaintOptions:
         for prefix in ["reference_1", "reference_2", "reference_3", "reference_4", "reference_5", "generic"]:
             slots[prefix] = {
                 "mask_type": kwargs.get(f"{prefix}_mask_type", "head"),
-                "lora_strength": kwargs.get(f"{prefix}_lora_strength", 1.0),
                 "detail_daemon": kwargs.get(f"{prefix}_detail_daemon", True),
             }
 

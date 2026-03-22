@@ -9,6 +9,7 @@ import folder_paths
 from .utils.mask_utils import is_mask_empty, split_mask_to_components
 from .utils.inpaint_pipeline import inpaint_slot
 from .utils.detail_daemon import DD_DEFAULTS
+from .utils.lora_utils import is_z_image_turbo, needs_qkv_conversion, convert_qkv_lora
 
 
 # Default inpaint options (used when InpaintOptions node is not connected)
@@ -55,6 +56,8 @@ class PersonDetailer:
             slot_widgets[f"{prefix}enabled"] = ("BOOLEAN", {"default": i == 1,
                                                              "tooltip": f"Enable reference slot {i} for detailing"})
             slot_widgets[f"{prefix}lora"] = (lora_list, {"tooltip": f"LoRA to apply when detailing reference {i}"})
+            slot_widgets[f"{prefix}lora_strength"] = ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05,
+                                                                  "tooltip": f"LoRA strength for reference {i}"})
             slot_widgets[f"{prefix}prompt"] = ("STRING", {"multiline": True, "default": "",
                                                            "tooltip": f"Positive prompt for reference {i}. If empty, uses base conditioning."})
 
@@ -62,6 +65,8 @@ class PersonDetailer:
         slot_widgets["generic_enabled"] = ("BOOLEAN", {"default": False,
                                                         "tooltip": "Enable detailing for unmatched faces (not assigned to any reference)"})
         slot_widgets["generic_lora"] = (lora_list, {"tooltip": "LoRA to apply for unmatched faces"})
+        slot_widgets["generic_lora_strength"] = ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05,
+                                                            "tooltip": "LoRA strength for unmatched faces"})
         slot_widgets["generic_prompt"] = ("STRING", {"multiline": True, "default": "",
                                                       "tooltip": "Positive prompt for unmatched faces. If empty, uses base conditioning."})
 
@@ -118,11 +123,18 @@ class PersonDetailer:
         return [[cond, output]]
 
     def _apply_lora(self, model, clip, lora_name, strength):
-        """Apply LoRA to model and clip, returning patched clones."""
+        """Apply LoRA to model and clip, returning patched clones.
+        Auto-converts LoRA for Z-Image Turbo if needed."""
         if lora_name == "None" or strength == 0:
             return model, clip
         lora_path = folder_paths.get_full_path_or_raise("loras", lora_name)
         lora = comfy.utils.load_torch_file(lora_path, safe_load=True)
+
+        # Auto-convert for Z-Image Turbo (Lumina2) if LoRA has separate Q/K/V
+        if is_z_image_turbo(model) and needs_qkv_conversion(lora):
+            print(f"[FVMTools] Auto-converting LoRA '{lora_name}' for Z-Image Turbo QKV format")
+            lora = convert_qkv_lora(lora)
+
         patched_model, patched_clip = comfy.sd.load_lora_for_models(model, clip, lora, strength, strength)
         return patched_model, patched_clip
 
@@ -130,12 +142,12 @@ class PersonDetailer:
                 seed, steps, denoise, sampler_name, scheduler,
                 detail_daemon_enabled, detail_amount, dd_smooth,
                 mask_blend_pixels, mask_expand_pixels, target_width, target_height,
-                reference_1_enabled, reference_1_lora, reference_1_prompt,
-                reference_2_enabled, reference_2_lora, reference_2_prompt,
-                reference_3_enabled, reference_3_lora, reference_3_prompt,
-                reference_4_enabled, reference_4_lora, reference_4_prompt,
-                reference_5_enabled, reference_5_lora, reference_5_prompt,
-                generic_enabled, generic_lora, generic_prompt,
+                reference_1_enabled, reference_1_lora, reference_1_lora_strength, reference_1_prompt,
+                reference_2_enabled, reference_2_lora, reference_2_lora_strength, reference_2_prompt,
+                reference_3_enabled, reference_3_lora, reference_3_lora_strength, reference_3_prompt,
+                reference_4_enabled, reference_4_lora, reference_4_lora_strength, reference_4_prompt,
+                reference_5_enabled, reference_5_lora, reference_5_lora_strength, reference_5_prompt,
+                generic_enabled, generic_lora, generic_lora_strength, generic_prompt,
                 positive_base=None, negative=None, dd_options=None, inpaint_options=None):
 
         batch_size = images.shape[0]
@@ -147,12 +159,12 @@ class PersonDetailer:
 
         # Collect slot configs
         slots = []
-        for i, (enabled, lora, prompt) in enumerate([
-            (reference_1_enabled, reference_1_lora, reference_1_prompt),
-            (reference_2_enabled, reference_2_lora, reference_2_prompt),
-            (reference_3_enabled, reference_3_lora, reference_3_prompt),
-            (reference_4_enabled, reference_4_lora, reference_4_prompt),
-            (reference_5_enabled, reference_5_lora, reference_5_prompt),
+        for i, (enabled, lora, lora_str, prompt) in enumerate([
+            (reference_1_enabled, reference_1_lora, reference_1_lora_strength, reference_1_prompt),
+            (reference_2_enabled, reference_2_lora, reference_2_lora_strength, reference_2_prompt),
+            (reference_3_enabled, reference_3_lora, reference_3_lora_strength, reference_3_prompt),
+            (reference_4_enabled, reference_4_lora, reference_4_lora_strength, reference_4_prompt),
+            (reference_5_enabled, reference_5_lora, reference_5_lora_strength, reference_5_prompt),
         ], start=1):
             if not enabled:
                 continue
@@ -164,7 +176,7 @@ class PersonDetailer:
                 "lora": lora,
                 "prompt": prompt,
                 "mask_type": slot_cfg.get("mask_type", "head"),
-                "lora_strength": slot_cfg.get("lora_strength", 1.0),
+                "lora_strength": lora_str,
                 "use_dd": slot_cfg.get("detail_daemon", True),
             })
 
@@ -261,7 +273,6 @@ class PersonDetailer:
                     current_step += 1
                     print(f"    [{current_step}/{total_steps}] Generic — {len(components)} unmatched face(s)")
 
-                    generic_lora_strength = generic_cfg.get("lora_strength", 1.0)
                     generic_use_dd = generic_cfg.get("detail_daemon", True)
 
                     patched_model, patched_clip = self._apply_lora(

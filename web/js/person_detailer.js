@@ -6,9 +6,9 @@ app.registerExtension({
     async nodeCreated(node) {
         if (node.comfyClass !== "PersonDetailer") return;
 
-        // ── Robust hide/show using the "converted-widget" pattern ──
-        // This is the pattern used by ComfyUI-Easy-Use and other mature extensions.
-        // It fully removes the widget from layout calculations.
+        // ── Hide/Show helpers ──
+        // For canvas widgets: converted-widget pattern
+        // For DOM widgets (textarea): also hide the DOM element
         function hideWidget(widget) {
             if (!widget || widget._fvm_hidden) return;
             widget._fvm_hidden = true;
@@ -17,7 +17,8 @@ app.registerExtension({
             widget._fvm_origSerialize = widget.serializeValue;
             widget.type = "converted-widget";
             widget.computeSize = () => [0, -4];
-            widget.serializeValue = () => widget.value; // still serialize the value
+            widget.serializeValue = () => widget.value;
+            if (widget.inputEl) widget.inputEl.style.display = "none";
         }
 
         function showWidget(widget) {
@@ -26,17 +27,84 @@ app.registerExtension({
             widget.type = widget._fvm_origType;
             widget.computeSize = widget._fvm_origComputeSize;
             widget.serializeValue = widget._fvm_origSerialize;
+            if (widget.inputEl) widget.inputEl.style.display = "";
         }
 
-        // ── Add separator labels via custom draw widgets ──
-        // Insert separators BACKWARDS to avoid index shifting issues.
+        // ── Merge enabled + lora onto one line ──
+        // Hide the original enabled widget and draw a toggle on the lora widget
+        const slotConfigs = [
+            "reference_1_", "reference_2_", "reference_3_",
+            "reference_4_", "reference_5_", "generic_"
+        ];
+
+        for (const prefix of slotConfigs) {
+            const enabledWidget = node.widgets.find(w => w.name === prefix + "enabled");
+            const loraWidget = node.widgets.find(w => w.name === prefix + "lora");
+            const strengthWidget = node.widgets.find(w => w.name === prefix + "lora_strength");
+            if (!enabledWidget || !loraWidget) continue;
+
+            // Hide the standalone enabled widget — we'll draw its toggle on the lora row
+            hideWidget(enabledWidget);
+
+            // Store reference so lora widget can access it
+            loraWidget._fvm_enabledWidget = enabledWidget;
+
+            // Override lora widget draw to add toggle circle
+            const origDraw = loraWidget.draw?.bind(loraWidget);
+            loraWidget._fvm_origDraw = origDraw;
+
+            loraWidget.draw = function(ctx, nodeRef, width, posY, height) {
+                const enabled = this._fvm_enabledWidget.value;
+
+                // Draw toggle circle on the left
+                const toggleX = 15;
+                const toggleY = posY + height / 2;
+                const toggleR = 6;
+
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(toggleX, toggleY, toggleR, 0, Math.PI * 2);
+                if (enabled) {
+                    ctx.fillStyle = "#4CAF50";
+                    ctx.fill();
+                } else {
+                    ctx.strokeStyle = "#666";
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+                    // Dim the whole row when disabled
+                    ctx.globalAlpha = 0.4;
+                }
+                ctx.restore();
+
+                // Store toggle hit area for click detection
+                this._fvm_toggleBounds = { x: toggleX - toggleR - 4, y: posY, w: toggleR * 2 + 8, h: height };
+            };
+
+            // Handle clicks on the toggle area
+            const origMouse = loraWidget.mouse?.bind(loraWidget);
+            loraWidget.mouse = function(event, pos, nodeRef) {
+                if (this._fvm_toggleBounds && event.type === "pointerdown") {
+                    const [mx, my] = pos;
+                    const b = this._fvm_toggleBounds;
+                    if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) {
+                        this._fvm_enabledWidget.value = !this._fvm_enabledWidget.value;
+                        updateAllSlots();
+                        return true;
+                    }
+                }
+                if (origMouse) return origMouse(event, pos, nodeRef);
+                return false;
+            };
+        }
+
+        // ── Add section separators (insert backwards to avoid index shift) ──
         const separators = [
-            { label: "── Generic (Unmatched) ──", before: "generic_enabled" },
-            { label: "── Reference 5 ──", before: "reference_5_enabled" },
-            { label: "── Reference 4 ──", before: "reference_4_enabled" },
-            { label: "── Reference 3 ──", before: "reference_3_enabled" },
-            { label: "── Reference 2 ──", before: "reference_2_enabled" },
-            { label: "── Reference 1 ──", before: "reference_1_enabled" },
+            { label: "── Generic (Unmatched) ──", before: "generic_lora" },
+            { label: "── Reference 5 ──", before: "reference_5_lora" },
+            { label: "── Reference 4 ──", before: "reference_4_lora" },
+            { label: "── Reference 3 ──", before: "reference_3_lora" },
+            { label: "── Reference 2 ──", before: "reference_2_lora" },
+            { label: "── Reference 1 ──", before: "reference_1_lora" },
             { label: "── Inpaint ──", before: "mask_blend_pixels" },
             { label: "── Detail Daemon ──", before: "detail_daemon_enabled" },
             { label: "── Sampler ──", before: "seed" },
@@ -52,7 +120,6 @@ app.registerExtension({
                 value: sep.label,
                 options: { serialize: false },
                 computeSize: () => [0, 24],
-                _fvm_separator: true,
                 draw(ctx, nodeRef, width, posY) {
                     ctx.save();
                     ctx.font = "bold 11px Arial";
@@ -60,7 +127,6 @@ app.registerExtension({
                     ctx.textAlign = "center";
                     const cy = posY + 15;
                     ctx.fillText(this.value, width / 2, cy);
-                    // Lines on each side
                     const tw = ctx.measureText(this.value).width;
                     const cx = width / 2;
                     ctx.strokeStyle = "#555";
@@ -79,53 +145,37 @@ app.registerExtension({
             node.widgets.splice(idx, 0, sepWidget);
         }
 
-        // ── Slot toggle logic ──
-        const slotConfigs = [
-            { prefix: "reference_1_", sepName: "_sep_reference_1_enabled" },
-            { prefix: "reference_2_", sepName: "_sep_reference_2_enabled" },
-            { prefix: "reference_3_", sepName: "_sep_reference_3_enabled" },
-            { prefix: "reference_4_", sepName: "_sep_reference_4_enabled" },
-            { prefix: "reference_5_", sepName: "_sep_reference_5_enabled" },
-            { prefix: "generic_", sepName: "_sep_generic_enabled" },
-        ];
-
+        // ── Slot visibility toggle ──
         function updateAllSlots() {
-            for (const cfg of slotConfigs) {
-                const toggle = node.widgets.find(w => w.name === cfg.prefix + "enabled");
-                const lora = node.widgets.find(w => w.name === cfg.prefix + "lora");
-                const prompt = node.widgets.find(w => w.name === cfg.prefix + "prompt");
-                if (!toggle) continue;
+            for (const prefix of slotConfigs) {
+                const enabledWidget = node.widgets.find(w => w.name === prefix + "enabled");
+                const promptWidget = node.widgets.find(w => w.name === prefix + "prompt");
+                const strengthWidget = node.widgets.find(w => w.name === prefix + "lora_strength");
+                const loraWidget = node.widgets.find(w => w.name === prefix + "lora");
+                if (!enabledWidget) continue;
 
-                if (toggle.value) {
-                    showWidget(lora);
-                    showWidget(prompt);
+                // Prompt and strength only visible when enabled
+                if (enabledWidget.value) {
+                    showWidget(promptWidget);
+                    showWidget(strengthWidget);
                 } else {
-                    hideWidget(lora);
-                    hideWidget(prompt);
+                    hideWidget(promptWidget);
+                    hideWidget(strengthWidget);
                 }
+
+                // Force lora widget to redraw (for toggle state change)
+                if (loraWidget) loraWidget._fvm_needsRedraw = true;
             }
 
-            // Recalculate node height
             const sz = node.computeSize();
             node.setSize([Math.max(node.size[0], sz[0]), sz[1]]);
             node.graph?.setDirtyCanvas(true, true);
         }
 
-        // Attach toggle callbacks
-        for (const cfg of slotConfigs) {
-            const toggle = node.widgets.find(w => w.name === cfg.prefix + "enabled");
-            if (!toggle) continue;
-            const origCb = toggle.callback;
-            toggle.callback = function(value) {
-                if (origCb) origCb.call(this, value);
-                updateAllSlots();
-            };
-        }
-
-        // Initial visibility — use requestAnimationFrame for reliable timing
+        // No separate toggle callbacks needed — toggle is on the lora widget now
+        // But we still need initial state
         requestAnimationFrame(() => {
             updateAllSlots();
-            // Second pass after ComfyUI finishes its own layout
             requestAnimationFrame(updateAllSlots);
         });
     },
@@ -133,7 +183,6 @@ app.registerExtension({
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
         if (nodeData.name !== "PersonDetailer") return;
 
-        // Display execution info
         const onExecuted = nodeType.prototype.onExecuted;
         nodeType.prototype.onExecuted = function (message) {
             const r = onExecuted ? onExecuted.apply(this, arguments) : undefined;
@@ -148,7 +197,6 @@ app.registerExtension({
         nodeType.prototype.onDrawForeground = function (ctx) {
             const r = onDrawFG ? onDrawFG.apply(this, arguments) : undefined;
             if (!this._pdInfo) return r;
-
             ctx.save();
             ctx.font = "11px Arial";
             ctx.fillStyle = "#8f8";

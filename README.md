@@ -64,6 +64,15 @@ Image Batch → Person Selector Multi → Person Detailer → Output Images
 1. **Person Selector Multi** detects faces, matches them to references, generates masks, and outputs `PERSON_DATA`
 2. **Person Detailer** iterates over each enabled reference slot, applies the slot's LoRA and prompt, inpaints the masked face region, and stitches it back
 
+## Z-Image Turbo Compatibility
+
+Person Detailer automatically detects Z-Image Turbo (Lumina2) models and converts LoRAs trained with diffusers-style trainers on the fly. Z-Image Turbo uses fused QKV attention layers, while standard LoRAs have separate `to_q`/`to_k`/`to_v` projections — these are automatically concatenated into the fused format when needed.
+
+No user action required. The conversion is logged in the console:
+```
+[FVMTools] Auto-converting LoRA 'my_lora.safetensors' for Z-Image Turbo QKV format
+```
+
 ## Dependencies
 
 ```
@@ -72,6 +81,19 @@ onnxruntime-gpu>=1.17.0
 opencv-python>=4.8.0
 numpy>=1.24.0
 ```
+
+## Credits & References
+
+This project builds on the work of several open-source projects:
+
+| Component | Author / Project | License |
+|-----------|-----------------|---------|
+| Face detection & embeddings | [InsightFace](https://github.com/deepinsight/insightface) (Jia Guo et al.) | MIT |
+| BiSeNet face parsing | [facexlib](https://github.com/xinntao/facexlib) (Xintao Wang) | BSD |
+| Detail Daemon concept | [ComfyUI-Detail-Daemon](https://github.com/Jonseed/ComfyUI-Detail-Daemon) (Jonseed) | MIT |
+| Z-Image Turbo QKV conversion | [Comfyui-ZiT-Lora-loader](https://github.com/capitan01R/Comfyui-ZiT-Lora-loader) (capitan01R) | MIT |
+| SAM2 segmentation | [Segment Anything 2](https://github.com/facebookresearch/sam2) (Meta AI) | Apache 2.0 |
+| SAM integration | [ComfyUI Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) (ltdrdata) | GPL-3.0 |
 
 ## License
 
