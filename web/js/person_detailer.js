@@ -236,14 +236,15 @@ app.registerExtension({
             // Draw strength box on each lora combo widget
             for (const def of SLOT_DEFS) {
                 const loraW = this.widgets?.find(w => w.name === def.prefix + "lora");
-                if (!loraW || !loraW._fvm_strProxy || loraW._fvm_hidden) continue;
-                if (loraW.last_y == null) continue;
+                if (!loraW || !loraW._fvm_strProxy) continue;
+                if (loraW.last_y == null && loraW.y == null) continue;
+                const widgetY = loraW.last_y ?? loraW.y;
 
                 const sp = loraW._fvm_strProxy;
                 const val = sp.value.toFixed(2);
                 const width = this.size[0];
                 const sw = 55, sx = width - sw - 8;
-                const sy = loraW.last_y, sh = LiteGraph.NODE_WIDGET_HEIGHT || 20;
+                const sy = widgetY, sh = LiteGraph.NODE_WIDGET_HEIGHT || 20;
 
                 ctx.save();
                 ctx.fillStyle = "#2a2a2a";

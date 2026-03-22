@@ -64,6 +64,8 @@ class PersonDetailer:
         # Generic slot
         slot_widgets["generic_enabled"] = ("BOOLEAN", {"default": False,
                                                         "tooltip": "Enable detailing for unmatched faces (not assigned to any reference)"})
+        slot_widgets["generic_catch_unprocessed"] = ("BOOLEAN", {"default": True,
+                                                                   "tooltip": "ON: detail all faces not processed by active slots (including matched but disabled slots). OFF: only truly unmatched faces from Person Selector Multi."})
         slot_widgets["generic_lora"] = (lora_list, {"tooltip": "LoRA to apply for unmatched faces"})
         slot_widgets["generic_lora_strength"] = ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05,
                                                             "tooltip": "LoRA strength for unmatched faces"})
@@ -147,7 +149,7 @@ class PersonDetailer:
                 reference_3_enabled, reference_3_lora, reference_3_lora_strength, reference_3_prompt,
                 reference_4_enabled, reference_4_lora, reference_4_lora_strength, reference_4_prompt,
                 reference_5_enabled, reference_5_lora, reference_5_lora_strength, reference_5_prompt,
-                generic_enabled, generic_lora, generic_lora_strength, generic_prompt,
+                generic_enabled, generic_catch_unprocessed, generic_lora, generic_lora_strength, generic_prompt,
                 positive_base=None, negative=None, dd_options=None, inpaint_options=None):
 
         batch_size = images.shape[0]
@@ -267,10 +269,23 @@ class PersonDetailer:
                 if refined is not None:
                     refined_parts.append(refined)
 
-            # Generic slot: unmatched faces
+            # Generic slot: unmatched/unprocessed faces
             if generic_enabled:
-                unmatched_mask = person_data["all_faces_mask"][b] - person_data["matched_faces_mask"][b]
-                unmatched_mask = unmatched_mask.clamp(0, 1)
+                if generic_catch_unprocessed:
+                    # Build mask of faces actually processed by active slots
+                    h, w = person_data["image_height"], person_data["image_width"]
+                    processed_mask = torch.zeros(h, w, dtype=torch.float32)
+                    for slot in slots:
+                        ri = slot["index"]
+                        if ri >= num_refs:
+                            continue
+                        mask_key = f"{slot['mask_type']}_masks"
+                        slot_mask = person_data[mask_key][ri][b]
+                        processed_mask = torch.max(processed_mask, slot_mask)
+                    unmatched_mask = (person_data["all_faces_mask"][b] - processed_mask).clamp(0, 1)
+                else:
+                    # Only truly unmatched faces from PersonSelectorMulti
+                    unmatched_mask = (person_data["all_faces_mask"][b] - person_data["matched_faces_mask"][b]).clamp(0, 1)
 
                 # Split into individual face components
                 components = split_mask_to_components(unmatched_mask, min_area_fraction=0.001)
