@@ -37,6 +37,7 @@ function drawSepLine(ctx, label, width, posY) {
     ctx.restore();
 }
 
+// Hide/show for remaining standard widgets (prompt textarea)
 function hideWidget(w) {
     if (!w || w._fvm_hidden) return;
     w._fvm_hidden = true;
@@ -59,20 +60,16 @@ function updateSlots(node) {
     for (const def of SLOT_DEFS) {
         const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled");
         const loraW = node.widgets.find(w => w.name === def.prefix + "lora");
-        const strengthW = node.widgets.find(w => w.name === def.prefix + "lora_strength");
         const promptW = node.widgets.find(w => w.name === def.prefix + "prompt");
         if (!enabledW) continue;
 
         if (enabledW.value) {
             showWidget(loraW);
             showWidget(promptW);
-            // strength is always hidden (drawn on lora row)
         } else {
             hideWidget(loraW);
             hideWidget(promptW);
         }
-        // strength widget always hidden — value drawn on lora combo instead
-        hideWidget(strengthW);
     }
     const sz = node.computeSize();
     node.setSize([Math.max(node.size[0], sz[0]), sz[1]]);
@@ -105,20 +102,42 @@ app.registerExtension({
                 });
             }
 
-            // --- Replace enabled BOOLEAN widgets (backwards) ---
+            // --- Process slots (backwards to avoid index shift) ---
             for (let si = SLOT_DEFS.length - 1; si >= 0; si--) {
                 const def = SLOT_DEFS[si];
-                const idx = node.widgets.findIndex(w => w.name === def.prefix + "enabled");
-                if (idx < 0) continue;
 
-                const origValue = node.widgets[idx].value;
-                node.widgets[idx].onRemove?.();
-                node.widgets.splice(idx, 1);
+                // 1. Remove lora_strength widget, store value on a custom object
+                const strIdx = node.widgets.findIndex(w => w.name === def.prefix + "lora_strength");
+                let strengthValue = 1.0;
+                if (strIdx >= 0) {
+                    strengthValue = node.widgets[strIdx].value;
+                    node.widgets[strIdx].onRemove?.();
+                    node.widgets.splice(strIdx, 1);
+                }
 
+                // Create a hidden proxy widget to hold strength value for serialization
+                const strengthProxy = {
+                    name: def.prefix + "lora_strength",
+                    type: "custom",
+                    value: strengthValue,
+                    options: { serialize: true },
+                    computeSize: () => [0, -4], // zero height, invisible
+                    draw() {}, // nothing to draw
+                    serializeValue() { return this.value; },
+                };
+
+                // 2. Remove enabled BOOLEAN widget
+                const enIdx = node.widgets.findIndex(w => w.name === def.prefix + "enabled");
+                if (enIdx < 0) continue;
+                const enabledValue = node.widgets[enIdx].value;
+                node.widgets[enIdx].onRemove?.();
+                node.widgets.splice(enIdx, 1);
+
+                // 3. Create custom toggle+separator widget
                 const toggle = {
                     name: def.prefix + "enabled",
                     type: "custom",
-                    value: origValue,
+                    value: enabledValue,
                     options: { serialize: true },
                     computeSize: () => [0, 28],
                     _label: def.label,
@@ -128,7 +147,6 @@ app.registerExtension({
                         const cy = posY + 16;
                         ctx.save();
 
-                        // Circle
                         const cx = 22, r = 7;
                         ctx.beginPath();
                         ctx.arc(cx, cy - 1, r, 0, Math.PI * 2);
@@ -152,14 +170,12 @@ app.registerExtension({
                             ctx.stroke();
                         }
 
-                        // Label
                         const lx = cx + r + 10;
                         ctx.font = "bold 11px Arial";
                         ctx.fillStyle = on ? "#ccc" : "#777";
                         ctx.textAlign = "left";
                         ctx.fillText(this._label, lx, cy + 1);
 
-                        // Line
                         const te = lx + ctx.measureText(this._label).width + 10;
                         if (te < width - 15) {
                             ctx.strokeStyle = "#555";
@@ -184,89 +200,80 @@ app.registerExtension({
                     serializeValue() { return this.value; },
                 };
 
-                node.widgets.splice(idx, 0, toggle);
-            }
+                // Insert toggle at the position where enabled was
+                node.widgets.splice(enIdx, 0, toggle);
 
-            // --- Override lora combo draw to show strength value ---
-            for (const def of SLOT_DEFS) {
+                // Insert strength proxy right after toggle (hidden, just for serialization)
+                // Find the lora widget position and insert proxy after it
+                const loraIdx = node.widgets.findIndex(w => w.name === def.prefix + "lora");
+                if (loraIdx >= 0) {
+                    node.widgets.splice(loraIdx + 1, 0, strengthProxy);
+                } else {
+                    // Fallback: insert after toggle
+                    node.widgets.splice(enIdx + 1, 0, strengthProxy);
+                }
+
+                // 4. Augment lora combo widget to draw strength on same row
                 const loraW = node.widgets.find(w => w.name === def.prefix + "lora");
-                const strengthW = node.widgets.find(w => w.name === def.prefix + "lora_strength");
-                if (!loraW || !strengthW) continue;
+                if (loraW) {
+                    loraW._fvm_strProxy = strengthProxy;
 
-                // Store ref so lora widget can read strength
-                loraW._fvm_strengthWidget = strengthW;
+                    const origDraw = loraW.draw;
+                    loraW.draw = function(ctx, nodeRef, width, posY, height) {
+                        if (origDraw) origDraw.call(this, ctx, nodeRef, width, posY, height);
 
-                // Wrap the combo draw to add strength display + click areas
-                const origDraw = loraW.draw;
-                loraW.draw = function(ctx, nodeRef, width, posY, height) {
-                    // Draw original combo (lora name)
-                    if (origDraw) {
-                        origDraw.call(this, ctx, nodeRef, width, posY, height);
-                    }
+                        const sp = this._fvm_strProxy;
+                        if (!sp) return;
 
-                    // Draw strength value on the right side
-                    const sw = this._fvm_strengthWidget;
-                    if (!sw) return;
+                        const val = sp.value.toFixed(2);
+                        const sw = 55, sx = width - sw - 5;
+                        const sy = posY, sh = height || 20;
 
-                    const val = sw.value.toFixed(2);
-                    const strWidth = 55;
-                    const strX = width - strWidth - 5;
-                    const strY = posY;
-                    const strH = height || 20;
+                        ctx.save();
+                        ctx.fillStyle = "#2a2a2a";
+                        ctx.strokeStyle = "#555";
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.roundRect(sx, sy + 1, sw, sh - 2, 4);
+                        ctx.fill();
+                        ctx.stroke();
 
-                    ctx.save();
+                        ctx.font = "12px Arial";
+                        ctx.fillStyle = "#ddd";
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        ctx.fillText(val, sx + sw / 2, sy + sh / 2);
 
-                    // Background
-                    ctx.fillStyle = "#2a2a2a";
-                    ctx.strokeStyle = "#555";
-                    ctx.lineWidth = 1;
-                    ctx.beginPath();
-                    ctx.roundRect(strX, strY + 1, strWidth, strH - 2, 4);
-                    ctx.fill();
-                    ctx.stroke();
+                        ctx.font = "8px Arial";
+                        ctx.fillStyle = "#888";
+                        ctx.fillText("◀", sx + 7, sy + sh / 2);
+                        ctx.fillText("▶", sx + sw - 7, sy + sh / 2);
+                        ctx.restore();
 
-                    // Value text
-                    ctx.font = "12px Arial";
-                    ctx.fillStyle = "#ddd";
-                    ctx.textAlign = "center";
-                    ctx.textBaseline = "middle";
-                    ctx.fillText(val, strX + strWidth / 2, strY + strH / 2);
+                        this._fvm_strBounds = { x: sx, y: sy, w: sw, h: sh };
+                    };
 
-                    // ▼ ▲ arrows for click
-                    ctx.font = "8px Arial";
-                    ctx.fillStyle = "#888";
-                    ctx.fillText("◀", strX + 6, strY + strH / 2);
-                    ctx.fillText("▶", strX + strWidth - 6, strY + strH / 2);
-
-                    ctx.restore();
-
-                    // Store hit area
-                    this._fvm_strBounds = { x: strX, y: strY, w: strWidth, h: strH };
-                };
-
-                // Handle clicks on strength area
-                const origMouse = loraW.mouse;
-                loraW.mouse = function(event, pos, nodeRef) {
-                    if (this._fvm_strBounds && this._fvm_strengthWidget) {
-                        const [mx, my] = pos;
-                        const b = this._fvm_strBounds;
-                        if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) {
-                            if (event.type === "pointerdown") {
-                                const sw = this._fvm_strengthWidget;
+                    const origMouse = loraW.mouse;
+                    loraW.mouse = function(event, pos, nodeRef) {
+                        if (this._fvm_strBounds && this._fvm_strProxy && event.type === "pointerdown") {
+                            const [mx, my] = pos;
+                            const b = this._fvm_strBounds;
+                            if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) {
+                                const sp = this._fvm_strProxy;
                                 const half = b.x + b.w / 2;
                                 if (mx < half) {
-                                    sw.value = Math.max(0, +(sw.value - 0.05).toFixed(2));
+                                    sp.value = Math.max(0, +(sp.value - 0.05).toFixed(2));
                                 } else {
-                                    sw.value = Math.min(2, +(sw.value + 0.05).toFixed(2));
+                                    sp.value = Math.min(2, +(sp.value + 0.05).toFixed(2));
                                 }
                                 nodeRef.graph?.setDirtyCanvas(true, true);
                                 return true;
                             }
                         }
-                    }
-                    if (origMouse) return origMouse.call(this, event, pos, nodeRef);
-                    return false;
-                };
+                        if (origMouse) return origMouse.call(this, event, pos, nodeRef);
+                        return false;
+                    };
+                }
             }
 
             // Initial state
