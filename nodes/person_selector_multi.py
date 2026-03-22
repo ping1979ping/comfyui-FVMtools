@@ -118,8 +118,12 @@ class PersonSelectorMulti:
 
     def _generate_all_masks(self, cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur):
         label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
+        unique_labels = np.unique(label_map)
+        print(f"[PersonSelectorMulti] BiSeNet labels found: {unique_labels.tolist()}"
+              f" | label_map shape={label_map.shape} | non-zero pixels={np.count_nonzero(label_map)}")
         face_mask_np = np.isin(label_map, list(FACE_LABELS)).astype(np.float32)
         head_mask_np = np.isin(label_map, list(HEAD_LABELS)).astype(np.float32)
+        print(f"[PersonSelectorMulti] face_mask pixels={face_mask_np.sum():.0f} | head_mask pixels={head_mask_np.sum():.0f}")
         body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model)
 
         masks = {}
@@ -188,10 +192,15 @@ class PersonSelectorMulti:
                 face_masks_list.append(masks["face"])
                 head_masks_list.append(masks["head"])
                 body_masks_list.append(masks["body"])
+                print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})"
+                      f" | face_mask sum={masks['face'].sum():.0f}"
+                      f" | head_mask sum={masks['head'].sum():.0f}"
+                      f" | body_mask sum={masks['body'].sum():.0f}")
             else:
                 face_masks_list.append(empty_mask(h, w))
                 head_masks_list.append(empty_mask(h, w))
                 body_masks_list.append(empty_mask(h, w))
+                print(f"[PersonSelectorMulti] ref {ri+1} → no match, empty masks")
 
         # Generate all_faces_mask (OR of all detected faces, matched or not)
         if face_count > 0:
