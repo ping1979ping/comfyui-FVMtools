@@ -35,6 +35,11 @@ class MaskGenerator:
             pass
 
         if weight_path is None:
+            fallback = r"E:\AI\AI_Models_Archive\gfpgan\parsing_bisenet.pth"
+            if os.path.exists(fallback):
+                weight_path = fallback
+
+        if weight_path is None:
             raise FileNotFoundError(
                 "parsing_bisenet.pth not found. Place it in models/gfpgan/"
             )
