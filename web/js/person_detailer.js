@@ -212,66 +212,10 @@ app.registerExtension({
                     node.widgets.splice(enIdx + 1, 0, strengthProxy);
                 }
 
-                // 4. Augment lora combo widget to draw strength on same row
+                // 4. Link lora combo to strength proxy for foreground drawing
                 const loraW = node.widgets.find(w => w.name === def.prefix + "lora");
                 if (loraW) {
                     loraW._fvm_strProxy = strengthProxy;
-
-                    const origDraw = loraW.draw;
-                    loraW.draw = function(ctx, nodeRef, width, posY, height) {
-                        if (origDraw) origDraw.call(this, ctx, nodeRef, width, posY, height);
-
-                        const sp = this._fvm_strProxy;
-                        if (!sp) return;
-
-                        const val = sp.value.toFixed(2);
-                        const sw = 55, sx = width - sw - 5;
-                        const sy = posY, sh = height || 20;
-
-                        ctx.save();
-                        ctx.fillStyle = "#2a2a2a";
-                        ctx.strokeStyle = "#555";
-                        ctx.lineWidth = 1;
-                        ctx.beginPath();
-                        ctx.roundRect(sx, sy + 1, sw, sh - 2, 4);
-                        ctx.fill();
-                        ctx.stroke();
-
-                        ctx.font = "12px Arial";
-                        ctx.fillStyle = "#ddd";
-                        ctx.textAlign = "center";
-                        ctx.textBaseline = "middle";
-                        ctx.fillText(val, sx + sw / 2, sy + sh / 2);
-
-                        ctx.font = "8px Arial";
-                        ctx.fillStyle = "#888";
-                        ctx.fillText("◀", sx + 7, sy + sh / 2);
-                        ctx.fillText("▶", sx + sw - 7, sy + sh / 2);
-                        ctx.restore();
-
-                        this._fvm_strBounds = { x: sx, y: sy, w: sw, h: sh };
-                    };
-
-                    const origMouse = loraW.mouse;
-                    loraW.mouse = function(event, pos, nodeRef) {
-                        if (this._fvm_strBounds && this._fvm_strProxy && event.type === "pointerdown") {
-                            const [mx, my] = pos;
-                            const b = this._fvm_strBounds;
-                            if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) {
-                                const sp = this._fvm_strProxy;
-                                const half = b.x + b.w / 2;
-                                if (mx < half) {
-                                    sp.value = Math.max(0, +(sp.value - 0.05).toFixed(2));
-                                } else {
-                                    sp.value = Math.min(2, +(sp.value + 0.05).toFixed(2));
-                                }
-                                nodeRef.graph?.setDirtyCanvas(true, true);
-                                return true;
-                            }
-                        }
-                        if (origMouse) return origMouse.call(this, event, pos, nodeRef);
-                        return false;
-                    };
                 }
             }
 
@@ -284,6 +228,86 @@ app.registerExtension({
             return result;
         };
 
+        // --- Draw strength overlays on lora combo rows ---
+        const onDrawFG = nodeType.prototype.onDrawForeground;
+        nodeType.prototype.onDrawForeground = function (ctx) {
+            const r = onDrawFG ? onDrawFG.apply(this, arguments) : undefined;
+
+            // Draw strength box on each lora combo widget
+            for (const def of SLOT_DEFS) {
+                const loraW = this.widgets?.find(w => w.name === def.prefix + "lora");
+                if (!loraW || !loraW._fvm_strProxy || loraW._fvm_hidden) continue;
+                if (loraW.last_y == null) continue;
+
+                const sp = loraW._fvm_strProxy;
+                const val = sp.value.toFixed(2);
+                const width = this.size[0];
+                const sw = 55, sx = width - sw - 8;
+                const sy = loraW.last_y, sh = LiteGraph.NODE_WIDGET_HEIGHT || 20;
+
+                ctx.save();
+                ctx.fillStyle = "#2a2a2a";
+                ctx.strokeStyle = "#555";
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.roundRect(sx, sy + 1, sw, sh - 2, 4);
+                ctx.fill();
+                ctx.stroke();
+
+                ctx.font = "12px Arial";
+                ctx.fillStyle = "#ddd";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillText(val, sx + sw / 2, sy + sh / 2);
+
+                ctx.font = "8px Arial";
+                ctx.fillStyle = "#888";
+                ctx.fillText("◀", sx + 7, sy + sh / 2);
+                ctx.fillText("▶", sx + sw - 7, sy + sh / 2);
+                ctx.restore();
+
+                // Store bounds for click detection
+                loraW._fvm_strBounds = { x: sx, y: sy, w: sw, h: sh };
+            }
+
+            // Execution info
+            if (this._pdInfo) {
+                ctx.save();
+                ctx.font = "11px Arial";
+                ctx.fillStyle = "#8f8";
+                ctx.textAlign = "left";
+                ctx.fillText(this._pdInfo, 10, this.size[1] - 6);
+                ctx.restore();
+            }
+
+            return r;
+        };
+
+        // --- Handle clicks on strength overlays ---
+        const onMouseDown = nodeType.prototype.onMouseDown;
+        nodeType.prototype.onMouseDown = function (event, pos, canvas) {
+            // Check strength overlay clicks
+            for (const def of SLOT_DEFS) {
+                const loraW = this.widgets?.find(w => w.name === def.prefix + "lora");
+                if (!loraW?._fvm_strBounds || !loraW._fvm_strProxy) continue;
+                const b = loraW._fvm_strBounds;
+                const [mx, my] = pos;
+                if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) {
+                    const sp = loraW._fvm_strProxy;
+                    const half = b.x + b.w / 2;
+                    if (mx < half) {
+                        sp.value = Math.max(0, +(sp.value - 0.05).toFixed(2));
+                    } else {
+                        sp.value = Math.min(2, +(sp.value + 0.05).toFixed(2));
+                    }
+                    this.graph?.setDirtyCanvas(true, true);
+                    return true;
+                }
+            }
+            if (onMouseDown) return onMouseDown.apply(this, arguments);
+            return false;
+        };
+
         // --- Execution info ---
         const onExecuted = nodeType.prototype.onExecuted;
         nodeType.prototype.onExecuted = function (message) {
@@ -292,19 +316,6 @@ app.registerExtension({
                 this._pdInfo = message.text[0];
                 this.setDirtyCanvas(true);
             }
-            return r;
-        };
-
-        const onDrawFG = nodeType.prototype.onDrawForeground;
-        nodeType.prototype.onDrawForeground = function (ctx) {
-            const r = onDrawFG ? onDrawFG.apply(this, arguments) : undefined;
-            if (!this._pdInfo) return r;
-            ctx.save();
-            ctx.font = "11px Arial";
-            ctx.fillStyle = "#8f8";
-            ctx.textAlign = "left";
-            ctx.fillText(this._pdInfo, 10, this.size[1] - 6);
-            ctx.restore();
             return r;
         };
     },
