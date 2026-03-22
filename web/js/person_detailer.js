@@ -59,15 +59,17 @@ function showWidget(w) {
 function updateSlots(node) {
     for (const def of SLOT_DEFS) {
         const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled");
+        const strengthW = node.widgets.find(w => w.name === def.prefix + "lora_strength");
         const promptW = node.widgets.find(w => w.name === def.prefix + "prompt");
-        // generic has an extra widget
         const catchW = node.widgets.find(w => w.name === def.prefix + "catch_unprocessed");
         if (!enabledW) continue;
 
         if (enabledW.value) {
+            showWidget(strengthW);
             showWidget(promptW);
             showWidget(catchW);
         } else {
+            hideWidget(strengthW);
             hideWidget(promptW);
             hideWidget(catchW);
         }
@@ -108,27 +110,7 @@ app.registerExtension({
             for (let si = SLOT_DEFS.length - 1; si >= 0; si--) {
                 const def = SLOT_DEFS[si];
 
-                // 1. Remove lora_strength widget, store value on a custom object
-                const strIdx = node.widgets.findIndex(w => w.name === def.prefix + "lora_strength");
-                let strengthValue = 1.0;
-                if (strIdx >= 0) {
-                    strengthValue = node.widgets[strIdx].value;
-                    node.widgets[strIdx].onRemove?.();
-                    node.widgets.splice(strIdx, 1);
-                }
-
-                // Create a hidden proxy widget to hold strength value for serialization
-                const strengthProxy = {
-                    name: def.prefix + "lora_strength",
-                    type: "custom",
-                    value: strengthValue,
-                    options: { serialize: true },
-                    computeSize: () => [0, -4], // zero height, invisible
-                    draw() {}, // nothing to draw
-                    serializeValue() { return this.value; },
-                };
-
-                // 2. Remove enabled BOOLEAN widget
+                // 1. Remove enabled BOOLEAN widget
                 const enIdx = node.widgets.findIndex(w => w.name === def.prefix + "enabled");
                 if (enIdx < 0) continue;
                 const enabledValue = node.widgets[enIdx].value;
@@ -204,22 +186,6 @@ app.registerExtension({
 
                 // Insert toggle at the position where enabled was
                 node.widgets.splice(enIdx, 0, toggle);
-
-                // Insert strength proxy right after toggle (hidden, just for serialization)
-                // Find the lora widget position and insert proxy after it
-                const loraIdx = node.widgets.findIndex(w => w.name === def.prefix + "lora");
-                if (loraIdx >= 0) {
-                    node.widgets.splice(loraIdx + 1, 0, strengthProxy);
-                } else {
-                    // Fallback: insert after toggle
-                    node.widgets.splice(enIdx + 1, 0, strengthProxy);
-                }
-
-                // 4. Link lora combo to strength proxy for foreground drawing
-                const loraW = node.widgets.find(w => w.name === def.prefix + "lora");
-                if (loraW) {
-                    loraW._fvm_strProxy = strengthProxy;
-                }
             }
 
             // Initial state
@@ -235,84 +201,10 @@ app.registerExtension({
             return result;
         };
 
-        // --- Draw strength overlays on lora combo rows ---
+        // --- Execution info display ---
         const onDrawFG = nodeType.prototype.onDrawForeground;
         nodeType.prototype.onDrawForeground = function (ctx) {
             const r = onDrawFG ? onDrawFG.apply(this, arguments) : undefined;
-
-            // Draw strength box on each lora combo widget
-            const wh = LiteGraph.NODE_WIDGET_HEIGHT || 20;
-            if (!this._fvm_dbg) {
-                this._fvm_dbg = true;
-                const names = this.widgets?.map(w => w.name + ":" + (w._fvm_strProxy ? "hasProxy" : "noProxy")) || [];
-                console.log("[FVMTools] onDrawFG widgets:", names.join(", "));
-            }
-            for (const def of SLOT_DEFS) {
-                const loraW = this.widgets?.find(w => w.name === def.prefix + "lora");
-                if (!loraW || !loraW._fvm_strProxy) continue;
-
-                // Find widget Y position — try multiple approaches
-                let widgetY = loraW.last_y;
-                if (widgetY == null) {
-                    // Fallback: calculate from widget index
-                    const wIdx = this.widgets.indexOf(loraW);
-                    if (wIdx >= 0) {
-                        // Accumulate heights of all widgets before this one
-                        let accY = this.computeSize()[1] > 0 ? 0 : 0;
-                        // Use the title height + slot area as starting offset
-                        accY = (LiteGraph.NODE_TITLE_HEIGHT || 30) + 4;
-                        // Add input slots height
-                        if (this.inputs) accY += this.inputs.length * (LiteGraph.NODE_SLOT_HEIGHT || 20);
-                        for (let wi = 0; wi < wIdx; wi++) {
-                            const w = this.widgets[wi];
-                            if (w.computeSize) {
-                                const cs = w.computeSize(this.size[0]);
-                                accY += (cs[1] > 0 ? cs[1] : 0) + 4;
-                            } else {
-                                accY += wh + 4;
-                            }
-                        }
-                        widgetY = accY;
-                    }
-                }
-                if (widgetY == null) continue;
-
-                const sp = loraW._fvm_strProxy;
-                const val = sp.value.toFixed(2);
-                const width = this.size[0];
-                const sw = 55, sx = width - sw - 8;
-                const sy = widgetY, sh = wh;
-
-                ctx.save();
-                ctx.fillStyle = "#2a2a2a";
-                ctx.strokeStyle = "#555";
-                ctx.lineWidth = 1;
-                ctx.beginPath();
-                if (ctx.roundRect) {
-                    ctx.roundRect(sx, sy + 1, sw, sh - 2, 4);
-                } else {
-                    ctx.rect(sx, sy + 1, sw, sh - 2);
-                }
-                ctx.fill();
-                ctx.stroke();
-
-                ctx.font = "12px Arial";
-                ctx.fillStyle = "#ddd";
-                ctx.textAlign = "center";
-                ctx.textBaseline = "middle";
-                ctx.fillText(val, sx + sw / 2, sy + sh / 2);
-
-                ctx.font = "8px Arial";
-                ctx.fillStyle = "#888";
-                ctx.fillText("◀", sx + 7, sy + sh / 2);
-                ctx.fillText("▶", sx + sw - 7, sy + sh / 2);
-                ctx.restore();
-
-                // Store bounds for click detection
-                loraW._fvm_strBounds = { x: sx, y: sy, w: sw, h: sh };
-            }
-
-            // Execution info
             if (this._pdInfo) {
                 ctx.save();
                 ctx.font = "11px Arial";
@@ -321,33 +213,7 @@ app.registerExtension({
                 ctx.fillText(this._pdInfo, 10, this.size[1] - 6);
                 ctx.restore();
             }
-
             return r;
-        };
-
-        // --- Handle clicks on strength overlays ---
-        const onMouseDown = nodeType.prototype.onMouseDown;
-        nodeType.prototype.onMouseDown = function (event, pos, canvas) {
-            // Check strength overlay clicks
-            for (const def of SLOT_DEFS) {
-                const loraW = this.widgets?.find(w => w.name === def.prefix + "lora");
-                if (!loraW?._fvm_strBounds || !loraW._fvm_strProxy) continue;
-                const b = loraW._fvm_strBounds;
-                const [mx, my] = pos;
-                if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) {
-                    const sp = loraW._fvm_strProxy;
-                    const half = b.x + b.w / 2;
-                    if (mx < half) {
-                        sp.value = Math.max(0, +(sp.value - 0.05).toFixed(2));
-                    } else {
-                        sp.value = Math.min(2, +(sp.value + 0.05).toFixed(2));
-                    }
-                    this.graph?.setDirtyCanvas(true, true);
-                    return true;
-                }
-            }
-            if (onMouseDown) return onMouseDown.apply(this, arguments);
-            return false;
         };
 
         // --- Execution info ---
