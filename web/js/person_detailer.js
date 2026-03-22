@@ -59,15 +59,14 @@ function showWidget(w) {
 function updateSlots(node) {
     for (const def of SLOT_DEFS) {
         const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled");
-        const loraW = node.widgets.find(w => w.name === def.prefix + "lora");
         const promptW = node.widgets.find(w => w.name === def.prefix + "prompt");
         if (!enabledW) continue;
 
+        // LoRA combo is NEVER hidden (always visible, just dimmed via draw override)
+        // Only prompt textarea toggles visibility
         if (enabledW.value) {
-            showWidget(loraW);
             showWidget(promptW);
         } else {
-            hideWidget(loraW);
             hideWidget(promptW);
         }
     }
