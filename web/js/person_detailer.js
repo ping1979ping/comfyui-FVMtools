@@ -7,17 +7,13 @@ app.registerExtension({
         if (node.comfyClass !== "PersonDetailer") return;
 
         // ── Hide/Show helpers ──
-        // For canvas widgets: converted-widget pattern
-        // For DOM widgets (textarea): also hide the DOM element
         function hideWidget(widget) {
             if (!widget || widget._fvm_hidden) return;
             widget._fvm_hidden = true;
             widget._fvm_origType = widget.type;
             widget._fvm_origComputeSize = widget.computeSize;
-            widget._fvm_origSerialize = widget.serializeValue;
             widget.type = "converted-widget";
             widget.computeSize = () => [0, -4];
-            widget.serializeValue = () => widget.value;
             if (widget.inputEl) widget.inputEl.style.display = "none";
         }
 
@@ -26,101 +22,25 @@ app.registerExtension({
             widget._fvm_hidden = false;
             widget.type = widget._fvm_origType;
             widget.computeSize = widget._fvm_origComputeSize;
-            widget.serializeValue = widget._fvm_origSerialize;
             if (widget.inputEl) widget.inputEl.style.display = "";
         }
 
-        // ── Merge enabled + lora onto one line ──
-        // Hide the original enabled widget and draw a toggle on the lora widget
-        const slotConfigs = [
-            "reference_1_", "reference_2_", "reference_3_",
-            "reference_4_", "reference_5_", "generic_"
-        ];
-
-        for (const prefix of slotConfigs) {
-            const enabledWidget = node.widgets.find(w => w.name === prefix + "enabled");
-            const loraWidget = node.widgets.find(w => w.name === prefix + "lora");
-            const strengthWidget = node.widgets.find(w => w.name === prefix + "lora_strength");
-            if (!enabledWidget || !loraWidget) continue;
-
-            // Hide the standalone enabled widget — we'll draw its toggle on the lora row
-            hideWidget(enabledWidget);
-
-            // Store reference so lora widget can access it
-            loraWidget._fvm_enabledWidget = enabledWidget;
-
-            // Override lora widget draw to add toggle circle
-            const origDraw = loraWidget.draw?.bind(loraWidget);
-            loraWidget._fvm_origDraw = origDraw;
-
-            loraWidget.draw = function(ctx, nodeRef, width, posY, height) {
-                const enabled = this._fvm_enabledWidget.value;
-
-                // Draw toggle circle on the left
-                const toggleX = 15;
-                const toggleY = posY + height / 2;
-                const toggleR = 6;
-
-                ctx.save();
-                ctx.beginPath();
-                ctx.arc(toggleX, toggleY, toggleR, 0, Math.PI * 2);
-                if (enabled) {
-                    ctx.fillStyle = "#4CAF50";
-                    ctx.fill();
-                } else {
-                    ctx.strokeStyle = "#666";
-                    ctx.lineWidth = 1.5;
-                    ctx.stroke();
-                    // Dim the whole row when disabled
-                    ctx.globalAlpha = 0.4;
-                }
-                ctx.restore();
-
-                // Store toggle hit area for click detection
-                this._fvm_toggleBounds = { x: toggleX - toggleR - 4, y: posY, w: toggleR * 2 + 8, h: height };
-            };
-
-            // Handle clicks on the toggle area
-            const origMouse = loraWidget.mouse?.bind(loraWidget);
-            loraWidget.mouse = function(event, pos, nodeRef) {
-                if (this._fvm_toggleBounds && event.type === "pointerdown") {
-                    const [mx, my] = pos;
-                    const b = this._fvm_toggleBounds;
-                    if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) {
-                        this._fvm_enabledWidget.value = !this._fvm_enabledWidget.value;
-                        updateAllSlots();
-                        return true;
-                    }
-                }
-                if (origMouse) return origMouse(event, pos, nodeRef);
-                return false;
-            };
-        }
-
-        // ── Add section separators (insert backwards to avoid index shift) ──
-        const separators = [
-            { label: "── Generic (Unmatched) ──", before: "generic_lora" },
-            { label: "── Reference 5 ──", before: "reference_5_lora" },
-            { label: "── Reference 4 ──", before: "reference_4_lora" },
-            { label: "── Reference 3 ──", before: "reference_3_lora" },
-            { label: "── Reference 2 ──", before: "reference_2_lora" },
-            { label: "── Reference 1 ──", before: "reference_1_lora" },
+        // ── Add static separators for non-slot sections (insert backwards) ──
+        const staticSeps = [
             { label: "── Inpaint ──", before: "mask_blend_pixels" },
             { label: "── Detail Daemon ──", before: "detail_daemon_enabled" },
             { label: "── Sampler ──", before: "seed" },
         ];
-
-        for (const sep of separators) {
+        for (const sep of staticSeps) {
             const idx = node.widgets.findIndex(w => w.name === sep.before);
             if (idx < 0) continue;
-
-            const sepWidget = {
+            node.widgets.splice(idx, 0, {
                 name: "_sep_" + sep.before,
                 type: "custom",
                 value: sep.label,
                 options: { serialize: false },
                 computeSize: () => [0, 24],
-                draw(ctx, nodeRef, width, posY) {
+                draw(ctx, n, width, posY) {
                     ctx.save();
                     ctx.font = "bold 11px Arial";
                     ctx.fillStyle = "#999";
@@ -141,30 +61,100 @@ app.registerExtension({
                     ctx.stroke();
                     ctx.restore();
                 },
-            };
-            node.widgets.splice(idx, 0, sepWidget);
+            });
         }
 
-        // ── Slot visibility toggle ──
-        function updateAllSlots() {
-            for (const prefix of slotConfigs) {
-                const enabledWidget = node.widgets.find(w => w.name === prefix + "enabled");
-                const promptWidget = node.widgets.find(w => w.name === prefix + "prompt");
-                const strengthWidget = node.widgets.find(w => w.name === prefix + "lora_strength");
-                const loraWidget = node.widgets.find(w => w.name === prefix + "lora");
-                if (!enabledWidget) continue;
+        // ── Slot config: replace enabled widget draw with separator+toggle ──
+        const slotDefs = [
+            { prefix: "reference_1_", label: "Reference 1" },
+            { prefix: "reference_2_", label: "Reference 2" },
+            { prefix: "reference_3_", label: "Reference 3" },
+            { prefix: "reference_4_", label: "Reference 4" },
+            { prefix: "reference_5_", label: "Reference 5" },
+            { prefix: "generic_", label: "Generic (Unmatched)" },
+        ];
 
-                // Prompt and strength only visible when enabled
-                if (enabledWidget.value) {
-                    showWidget(promptWidget);
-                    showWidget(strengthWidget);
+        for (const def of slotDefs) {
+            const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled");
+            if (!enabledW) continue;
+
+            // Override the enabled widget to render as a separator line with toggle
+            enabledW._fvm_label = def.label;
+            enabledW._fvm_origDraw = enabledW.draw;
+            enabledW.type = "custom";
+            enabledW.computeSize = () => [0, 28];
+
+            enabledW.draw = function(ctx, nodeRef, width, posY, height) {
+                const enabled = this.value;
+                const cy = posY + 16;
+
+                ctx.save();
+
+                // Toggle circle
+                const toggleX = 22;
+                const toggleR = 6;
+                ctx.beginPath();
+                ctx.arc(toggleX, cy - 2, toggleR, 0, Math.PI * 2);
+                if (enabled) {
+                    ctx.fillStyle = "#4CAF50";
+                    ctx.fill();
                 } else {
-                    hideWidget(promptWidget);
-                    hideWidget(strengthWidget);
+                    ctx.strokeStyle = "#666";
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
                 }
 
-                // Force lora widget to redraw (for toggle state change)
-                if (loraWidget) loraWidget._fvm_needsRedraw = true;
+                // Label text
+                ctx.font = "bold 11px Arial";
+                ctx.fillStyle = enabled ? "#ccc" : "#666";
+                ctx.textAlign = "left";
+                ctx.fillText("── " + this._fvm_label + " ──", toggleX + toggleR + 8, cy);
+
+                // Right-side line
+                const labelText = "── " + this._fvm_label + " ──";
+                const textEnd = toggleX + toggleR + 8 + ctx.measureText(labelText).width + 8;
+                if (textEnd < width - 15) {
+                    ctx.strokeStyle = "#555";
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(textEnd, cy - 4);
+                    ctx.lineTo(width - 15, cy - 4);
+                    ctx.stroke();
+                }
+
+                ctx.restore();
+            };
+
+            // Handle click on the toggle area
+            enabledW.mouse = function(event, pos, nodeRef) {
+                if (event.type === "pointerdown") {
+                    // Toggle on click anywhere on the widget
+                    this.value = !this.value;
+                    updateAllSlots();
+                    return true;
+                }
+                return false;
+            };
+        }
+
+        // ── Slot visibility ──
+        function updateAllSlots() {
+            for (const def of slotDefs) {
+                const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled");
+                const loraW = node.widgets.find(w => w.name === def.prefix + "lora");
+                const strengthW = node.widgets.find(w => w.name === def.prefix + "lora_strength");
+                const promptW = node.widgets.find(w => w.name === def.prefix + "prompt");
+                if (!enabledW) continue;
+
+                if (enabledW.value) {
+                    showWidget(loraW);
+                    showWidget(strengthW);
+                    showWidget(promptW);
+                } else {
+                    hideWidget(loraW);
+                    hideWidget(strengthW);
+                    hideWidget(promptW);
+                }
             }
 
             const sz = node.computeSize();
@@ -172,8 +162,7 @@ app.registerExtension({
             node.graph?.setDirtyCanvas(true, true);
         }
 
-        // No separate toggle callbacks needed — toggle is on the lora widget now
-        // But we still need initial state
+        // Initial state
         requestAnimationFrame(() => {
             updateAllSlots();
             requestAnimationFrame(updateAllSlots);
