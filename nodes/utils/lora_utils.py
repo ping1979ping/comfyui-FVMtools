@@ -59,9 +59,31 @@ def convert_qkv_lora(lora_sd):
         v_up = lora_sd.get(f"{base}.to_v.lora_B.weight")
 
         if all(t is not None for t in [q_down, k_down, v_down, q_up, k_up, v_up]):
-            # Concatenate into fused format
+            # Fuse into QKV format with block-diagonal lora_B
+            #
+            # lora_A (down projection): simple concat along dim=0
+            #   q_down: [rank, dim], k_down: [rank, dim], v_down: [rank, dim]
+            #   → [rank*3, dim]
+            #
+            # lora_B (up projection): block-diagonal so inner dims match
+            #   q_up: [dim, rank], k_up: [dim, rank], v_up: [dim, rank]
+            #   → [dim*3, rank*3] with Q/K/V on the diagonal
+            #
+            # Result: lora_B @ lora_A = [dim*3, rank*3] @ [rank*3, dim] = [dim*3, dim] ✓
+            rank = q_down.shape[0]
+            dim = q_down.shape[1]
+
             converted[f"{base}.qkv.lora_A.weight"] = torch.cat([q_down, k_down, v_down], dim=0)
-            converted[f"{base}.qkv.lora_B.weight"] = torch.cat([q_up, k_up, v_up], dim=0)
+
+            # Block-diagonal lora_B: each Q/K/V occupies its own block
+            lora_B = torch.zeros(dim * 3, rank * 3, dtype=q_up.dtype, device=q_up.device)
+            lora_B[0:dim, 0:rank] = q_up
+            lora_B[dim:dim*2, rank:rank*2] = k_up
+            lora_B[dim*2:dim*3, rank*2:rank*3] = v_up
+            converted[f"{base}.qkv.lora_B.weight"] = lora_B
+
+            print(f"[FVMTools] QKV fused: {base} rank={rank} dim={dim} "
+                  f"lora_A=[{rank*3},{dim}] lora_B=[{dim*3},{rank*3}]")
 
             # Average alpha values if present
             alphas = []
