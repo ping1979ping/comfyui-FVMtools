@@ -1,6 +1,5 @@
 import { app } from "../../../scripts/app.js";
 
-// Slot definitions
 const SLOT_DEFS = [
     { prefix: "reference_1_", label: "Reference 1" },
     { prefix: "reference_2_", label: "Reference 2" },
@@ -10,14 +9,13 @@ const SLOT_DEFS = [
     { prefix: "generic_", label: "Generic (Unmatched)" },
 ];
 
-// Static section separators
 const STATIC_SEPS = [
     { label: "── Inpaint ──", before: "mask_blend_pixels" },
     { label: "── Detail Daemon ──", before: "detail_daemon_enabled" },
     { label: "── Sampler ──", before: "seed" },
 ];
 
-function drawSeparatorLine(ctx, label, width, posY) {
+function drawSepLine(ctx, label, width, posY) {
     ctx.save();
     ctx.font = "bold 11px Arial";
     ctx.fillStyle = "#999";
@@ -39,26 +37,25 @@ function drawSeparatorLine(ctx, label, width, posY) {
     ctx.restore();
 }
 
-// Hide/show helpers
-function hideWidget(widget) {
-    if (!widget || widget._fvm_hidden) return;
-    widget._fvm_hidden = true;
-    widget._fvm_origType = widget.type;
-    widget._fvm_origComputeSize = widget.computeSize;
-    widget.type = "converted-widget";
-    widget.computeSize = () => [0, -4];
-    if (widget.inputEl) widget.inputEl.style.display = "none";
+function hideWidget(w) {
+    if (!w || w._fvm_hidden) return;
+    w._fvm_hidden = true;
+    w._fvm_origType = w.type;
+    w._fvm_origCS = w.computeSize;
+    w.type = "converted-widget";
+    w.computeSize = () => [0, -4];
+    if (w.inputEl) w.inputEl.style.display = "none";
 }
 
-function showWidget(widget) {
-    if (!widget || !widget._fvm_hidden) return;
-    widget._fvm_hidden = false;
-    widget.type = widget._fvm_origType;
-    widget.computeSize = widget._fvm_origComputeSize;
-    if (widget.inputEl) widget.inputEl.style.display = "";
+function showWidget(w) {
+    if (!w || !w._fvm_hidden) return;
+    w._fvm_hidden = false;
+    w.type = w._fvm_origType;
+    w.computeSize = w._fvm_origCS;
+    if (w.inputEl) w.inputEl.style.display = "";
 }
 
-function updateSlotVisibility(node) {
+function updateSlots(node) {
     for (const def of SLOT_DEFS) {
         const enabledW = node.widgets.find(w => w.name === def.prefix + "enabled");
         const loraW = node.widgets.find(w => w.name === def.prefix + "lora");
@@ -66,18 +63,17 @@ function updateSlotVisibility(node) {
         const promptW = node.widgets.find(w => w.name === def.prefix + "prompt");
         if (!enabledW) continue;
 
-        const enabled = enabledW.value;
-        if (enabled) {
+        if (enabledW.value) {
             showWidget(loraW);
-            showWidget(strengthW);
             showWidget(promptW);
+            // strength is always hidden (drawn on lora row)
         } else {
             hideWidget(loraW);
-            hideWidget(strengthW);
             hideWidget(promptW);
         }
+        // strength widget always hidden — value drawn on lora combo instead
+        hideWidget(strengthW);
     }
-
     const sz = node.computeSize();
     node.setSize([Math.max(node.size[0], sz[0]), sz[1]]);
     node.graph?.setDirtyCanvas(true, true);
@@ -89,13 +85,12 @@ app.registerExtension({
     async beforeRegisterNodeDef(nodeType, nodeData, appRef) {
         if (nodeData.name !== "PersonDetailer") return;
 
-        // Hook into onNodeCreated to replace widgets AFTER they exist
         const onNodeCreated = nodeType.prototype.onNodeCreated;
         nodeType.prototype.onNodeCreated = function () {
             const result = onNodeCreated?.apply(this, arguments);
             const node = this;
 
-            // --- Add static separators (backwards to avoid index shift) ---
+            // --- Static separators (backwards) ---
             for (let i = STATIC_SEPS.length - 1; i >= 0; i--) {
                 const sep = STATIC_SEPS[i];
                 const idx = node.widgets.findIndex(w => w.name === sep.before);
@@ -106,54 +101,46 @@ app.registerExtension({
                     value: sep.label,
                     options: { serialize: false },
                     computeSize: () => [0, 24],
-                    draw(ctx, n, width, posY) {
-                        drawSeparatorLine(ctx, this.value, width, posY);
-                    },
+                    draw(ctx, n, width, posY) { drawSepLine(ctx, this.value, width, posY); },
                 });
             }
 
-            // --- Replace enabled BOOLEAN widgets with custom toggle+separator ---
-            // Process in reverse to avoid index shifting
+            // --- Replace enabled BOOLEAN widgets (backwards) ---
             for (let si = SLOT_DEFS.length - 1; si >= 0; si--) {
                 const def = SLOT_DEFS[si];
                 const idx = node.widgets.findIndex(w => w.name === def.prefix + "enabled");
                 if (idx < 0) continue;
 
-                // Save current value and remove original BOOLEAN widget
                 const origValue = node.widgets[idx].value;
                 node.widgets[idx].onRemove?.();
                 node.widgets.splice(idx, 1);
 
-                // Create custom replacement widget
-                const toggleWidget = {
+                const toggle = {
                     name: def.prefix + "enabled",
                     type: "custom",
                     value: origValue,
                     options: { serialize: true },
                     computeSize: () => [0, 28],
-                    _fvm_label: def.label,
+                    _label: def.label,
 
-                    draw(ctx, nodeRef, width, posY, height) {
-                        const enabled = this.value;
+                    draw(ctx, nodeRef, width, posY) {
+                        const on = this.value;
                         const cy = posY + 16;
-
                         ctx.save();
 
-                        // Toggle circle
-                        const toggleX = 22;
-                        const toggleR = 7;
+                        // Circle
+                        const cx = 22, r = 7;
                         ctx.beginPath();
-                        ctx.arc(toggleX, cy - 1, toggleR, 0, Math.PI * 2);
-                        if (enabled) {
+                        ctx.arc(cx, cy - 1, r, 0, Math.PI * 2);
+                        if (on) {
                             ctx.fillStyle = "#4CAF50";
                             ctx.fill();
-                            // Checkmark
                             ctx.strokeStyle = "#fff";
                             ctx.lineWidth = 2;
                             ctx.beginPath();
-                            ctx.moveTo(toggleX - 3, cy - 1);
-                            ctx.lineTo(toggleX - 0.5, cy + 2);
-                            ctx.lineTo(toggleX + 4, cy - 4);
+                            ctx.moveTo(cx - 3, cy - 1);
+                            ctx.lineTo(cx - 0.5, cy + 2);
+                            ctx.lineTo(cx + 4, cy - 4);
                             ctx.stroke();
                         } else {
                             ctx.fillStyle = "#333";
@@ -161,59 +148,137 @@ app.registerExtension({
                             ctx.strokeStyle = "#666";
                             ctx.lineWidth = 1.5;
                             ctx.beginPath();
-                            ctx.arc(toggleX, cy - 1, toggleR, 0, Math.PI * 2);
+                            ctx.arc(cx, cy - 1, r, 0, Math.PI * 2);
                             ctx.stroke();
                         }
 
                         // Label
-                        const labelX = toggleX + toggleR + 10;
+                        const lx = cx + r + 10;
                         ctx.font = "bold 11px Arial";
-                        ctx.fillStyle = enabled ? "#ccc" : "#777";
+                        ctx.fillStyle = on ? "#ccc" : "#777";
                         ctx.textAlign = "left";
-                        ctx.fillText(this._fvm_label, labelX, cy + 1);
+                        ctx.fillText(this._label, lx, cy + 1);
 
-                        // Line after label
-                        const textEnd = labelX + ctx.measureText(this._fvm_label).width + 10;
-                        ctx.strokeStyle = "#555";
-                        ctx.lineWidth = 1;
-                        if (textEnd < width - 15) {
+                        // Line
+                        const te = lx + ctx.measureText(this._label).width + 10;
+                        if (te < width - 15) {
+                            ctx.strokeStyle = "#555";
+                            ctx.lineWidth = 1;
                             ctx.beginPath();
-                            ctx.moveTo(textEnd, cy - 3);
+                            ctx.moveTo(te, cy - 3);
                             ctx.lineTo(width - 15, cy - 3);
                             ctx.stroke();
                         }
-
                         ctx.restore();
                     },
 
                     mouse(event, pos, nodeRef) {
                         if (event.type === "pointerdown") {
                             this.value = !this.value;
-                            updateSlotVisibility(nodeRef);
+                            updateSlots(nodeRef);
                             return true;
                         }
                         return false;
                     },
 
-                    serializeValue() {
-                        return this.value;
-                    },
+                    serializeValue() { return this.value; },
                 };
 
-                // Insert at same position
-                node.widgets.splice(idx, 0, toggleWidget);
+                node.widgets.splice(idx, 0, toggle);
             }
 
-            // Set initial visibility
+            // --- Override lora combo draw to show strength value ---
+            for (const def of SLOT_DEFS) {
+                const loraW = node.widgets.find(w => w.name === def.prefix + "lora");
+                const strengthW = node.widgets.find(w => w.name === def.prefix + "lora_strength");
+                if (!loraW || !strengthW) continue;
+
+                // Store ref so lora widget can read strength
+                loraW._fvm_strengthWidget = strengthW;
+
+                // Wrap the combo draw to add strength display + click areas
+                const origDraw = loraW.draw;
+                loraW.draw = function(ctx, nodeRef, width, posY, height) {
+                    // Draw original combo (lora name)
+                    if (origDraw) {
+                        origDraw.call(this, ctx, nodeRef, width, posY, height);
+                    }
+
+                    // Draw strength value on the right side
+                    const sw = this._fvm_strengthWidget;
+                    if (!sw) return;
+
+                    const val = sw.value.toFixed(2);
+                    const strWidth = 55;
+                    const strX = width - strWidth - 5;
+                    const strY = posY;
+                    const strH = height || 20;
+
+                    ctx.save();
+
+                    // Background
+                    ctx.fillStyle = "#2a2a2a";
+                    ctx.strokeStyle = "#555";
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.roundRect(strX, strY + 1, strWidth, strH - 2, 4);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    // Value text
+                    ctx.font = "12px Arial";
+                    ctx.fillStyle = "#ddd";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    ctx.fillText(val, strX + strWidth / 2, strY + strH / 2);
+
+                    // ▼ ▲ arrows for click
+                    ctx.font = "8px Arial";
+                    ctx.fillStyle = "#888";
+                    ctx.fillText("◀", strX + 6, strY + strH / 2);
+                    ctx.fillText("▶", strX + strWidth - 6, strY + strH / 2);
+
+                    ctx.restore();
+
+                    // Store hit area
+                    this._fvm_strBounds = { x: strX, y: strY, w: strWidth, h: strH };
+                };
+
+                // Handle clicks on strength area
+                const origMouse = loraW.mouse;
+                loraW.mouse = function(event, pos, nodeRef) {
+                    if (this._fvm_strBounds && this._fvm_strengthWidget) {
+                        const [mx, my] = pos;
+                        const b = this._fvm_strBounds;
+                        if (mx >= b.x && mx <= b.x + b.w && my >= b.y && my <= b.y + b.h) {
+                            if (event.type === "pointerdown") {
+                                const sw = this._fvm_strengthWidget;
+                                const half = b.x + b.w / 2;
+                                if (mx < half) {
+                                    sw.value = Math.max(0, +(sw.value - 0.05).toFixed(2));
+                                } else {
+                                    sw.value = Math.min(2, +(sw.value + 0.05).toFixed(2));
+                                }
+                                nodeRef.graph?.setDirtyCanvas(true, true);
+                                return true;
+                            }
+                        }
+                    }
+                    if (origMouse) return origMouse.call(this, event, pos, nodeRef);
+                    return false;
+                };
+            }
+
+            // Initial state
             requestAnimationFrame(() => {
-                updateSlotVisibility(node);
-                requestAnimationFrame(() => updateSlotVisibility(node));
+                updateSlots(node);
+                requestAnimationFrame(() => updateSlots(node));
             });
 
             return result;
         };
 
-        // --- Execution info display ---
+        // --- Execution info ---
         const onExecuted = nodeType.prototype.onExecuted;
         nodeType.prototype.onExecuted = function (message) {
             const r = onExecuted ? onExecuted.apply(this, arguments) : undefined;
