@@ -175,7 +175,17 @@ class PersonSelectorMulti:
         face_count = len(cur_faces)
         face_embs = [analyzer.get_embedding(f) for f in cur_faces]
 
+        print(f"[PersonSelectorMulti] Image {single_image.shape} → {face_count} faces detected")
+        if face_count > 0:
+            for fi, face in enumerate(cur_faces):
+                bbox = [int(v) for v in face.bbox]
+                area = (bbox[2]-bbox[0]) * (bbox[3]-bbox[1])
+                print(f"  face #{fi}: bbox={bbox} area={area}px")
+
         sim_matrix = self._build_similarity_matrix(ref_emb_sets, face_embs, aggregation)
+        if sim_matrix.size > 0:
+            import numpy as _np
+            print(f"[PersonSelectorMulti] sim_matrix:\n{_np.array2string(sim_matrix, precision=4)}")
         assignments = self._assign_greedy(sim_matrix, effective_threshold)
 
         face_masks_list = []
@@ -305,16 +315,26 @@ class PersonSelectorMulti:
             "matched_faces_mask": matched_faces_masks,
         }
 
-        # Legacy outputs: use first batch item for backward compatibility
-        first = batch_results[0]
-        face_masks_batch = torch.cat(first["face_masks"], dim=0)
-        head_masks_batch = torch.cat(first["head_masks"], dim=0)
-        body_masks_batch = torch.cat(first["body_masks"], dim=0)
+        # Mask outputs: stack across all batch items (per ref, per batch)
+        # Shape: [B * num_refs, H, W] — refs cycle within each batch item
+        all_face_masks = []
+        all_head_masks = []
+        all_body_masks = []
+        for b in range(batch_size):
+            for ri in range(num_refs):
+                all_face_masks.append(batch_results[b]["face_masks"][ri])
+                all_head_masks.append(batch_results[b]["head_masks"][ri])
+                all_body_masks.append(batch_results[b]["body_masks"][ri])
+
+        face_masks_batch = torch.cat(all_face_masks, dim=0)
+        head_masks_batch = torch.cat(all_head_masks, dim=0)
+        body_masks_batch = torch.cat(all_body_masks, dim=0)
 
         total_matched = sum(len(br["assignments"]) for br in batch_results)
         total_faces = sum(br["face_count"] for br in batch_results)
 
-        if len(first["assignments"]) > 0:
+        # Combined masks: OR across all batch items and all matched refs
+        if total_matched > 0:
             combined_face = torch.max(face_masks_batch, dim=0, keepdim=True)[0]
             combined_head = torch.max(head_masks_batch, dim=0, keepdim=True)[0]
             combined_body = torch.max(body_masks_batch, dim=0, keepdim=True)[0]
@@ -323,39 +343,48 @@ class PersonSelectorMulti:
             combined_head = empty_mask(h, w)
             combined_body = empty_mask(h, w)
 
-        # Preview: first batch item
-        preview = self._render_preview(
-            current_image[0:1], first["assignments"], first["cur_faces"],
-            first["body_masks"], h, w
-        )
+        # Preview: render all batch items, stack vertically
+        preview_parts = []
+        for b in range(batch_size):
+            p = self._render_preview(
+                current_image[b:b+1], batch_results[b]["assignments"],
+                batch_results[b]["cur_faces"], batch_results[b]["body_masks"], h, w
+            )
+            preview_parts.append(p)
+        preview = torch.cat(preview_parts, dim=0)  # [B, H, W, C]
 
-        # Similarity/match strings from first batch item
+        # Report: per batch item
         sim_values = []
         match_values = []
         report_lines = [
             f"Batch size: {batch_size}",
-            f"Faces (total across batch): {total_faces}",
+            f"Faces (total): {total_faces}",
             f"Reference persons: {num_refs}",
             f"Threshold: {'Auto' if auto_threshold else threshold} | Aggregation: {aggregation}",
-            f"Matched (total across batch): {total_matched}",
+            f"Matched (total): {total_matched}",
             "",
         ]
 
-        for ri in range(num_refs):
-            if ri in first["assignments"]:
-                fi, sim = first["assignments"][ri]
-                sim_values.append(f"{sim:.4f}")
-                match_values.append("true")
-                report_lines.append(f"  reference_{ri+1}: MATCH face #{fi} (sim {sim:.4f})")
-            else:
-                has_embs = len(ref_emb_sets[ri]) > 0
-                if has_embs and first["face_count"] > 0:
-                    best_sim = float(np.max(first["sim_matrix"][ri]))
-                    sim_values.append(f"{best_sim:.4f}")
+        for b in range(batch_size):
+            br = batch_results[b]
+            report_lines.append(f"  [Image {b+1}/{batch_size}] {br['face_count']} faces, {len(br['assignments'])} matched")
+            for ri in range(num_refs):
+                if ri in br["assignments"]:
+                    fi, sim = br["assignments"][ri]
+                    if b == 0:
+                        sim_values.append(f"{sim:.4f}")
+                        match_values.append("true")
+                    report_lines.append(f"    ref {ri+1}: MATCH face #{fi} (sim {sim:.4f})")
                 else:
-                    sim_values.append("0.0000")
-                match_values.append("false")
-                report_lines.append(f"  reference_{ri+1}: NO MATCH")
+                    if b == 0:
+                        has_embs = len(ref_emb_sets[ri]) > 0
+                        if has_embs and br["face_count"] > 0:
+                            best_sim = float(np.max(br["sim_matrix"][ri]))
+                            sim_values.append(f"{best_sim:.4f}")
+                        else:
+                            sim_values.append("0.0000")
+                        match_values.append("false")
+                    report_lines.append(f"    ref {ri+1}: no match")
 
         similarities_str = ", ".join(sim_values)
         matches_str = ", ".join(match_values)
