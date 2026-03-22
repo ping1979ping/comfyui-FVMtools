@@ -17,20 +17,33 @@ INPAINT_DEFAULTS = {
     "context_expand_factor": 1.20,
     "output_padding": 32,
     "slots": {
-        prefix: {"mask_type": "face", "lora_strength": 1.0, "detail_daemon": True}
-        for prefix in ["ref_1", "ref_2", "ref_3", "ref_4", "ref_5", "generic"]
+        prefix: {"mask_type": "head", "lora_strength": 1.0, "detail_daemon": True}
+        for prefix in ["reference_1", "reference_2", "reference_3", "reference_4", "reference_5", "generic"]
     },
 }
 
 
 class PersonDetailer:
-    """All-in-one face detailing node with per-slot LoRA and inpaint pipeline."""
+    """All-in-one face detailing node. Iterates over reference slots per batch image,
+    applies per-slot LoRA and prompt, inpaints the masked region, and stitches back.
+    Unmatched faces can be handled by the generic slot via connected components."""
 
     CATEGORY = "FVM Tools/Face"
     FUNCTION = "execute"
-    RETURN_TYPES = ("IMAGE", "IMAGE", "IMAGE")
-    RETURN_NAMES = ("images", "refined", "preview")
+    RETURN_TYPES = ("IMAGE", "IMAGE")
+    RETURN_NAMES = ("images", "refined")
     OUTPUT_NODE = True
+    DESCRIPTION = (
+        "Per-person face detailing with individual LoRA and prompt per reference slot.\n\n"
+        "Connect PERSON_DATA from Person Selector Multi to assign faces to slots.\n"
+        "Each enabled slot inpaints its matched face region using the slot's LoRA and prompt.\n"
+        "The generic slot handles unmatched faces via connected components with a size threshold.\n\n"
+        "Optional inputs:\n"
+        "- positive_base: fallback conditioning when a slot's prompt is empty\n"
+        "- negative: negative conditioning (empty if not connected)\n"
+        "- dd_options: Detail Daemon fine-tuning from Detail Daemon Options node\n"
+        "- inpaint_options: advanced inpaint settings from Inpaint Options node"
+    )
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -38,43 +51,45 @@ class PersonDetailer:
 
         slot_widgets = {}
         for i in range(1, 6):
-            prefix = f"ref_{i}_"
+            prefix = f"reference_{i}_"
             slot_widgets[f"{prefix}enabled"] = ("BOOLEAN", {"default": i == 1,
-                                                             "tooltip": f"Enable reference slot {i}"})
-            slot_widgets[f"{prefix}lora"] = (lora_list, {"tooltip": f"LoRA for reference {i}"})
+                                                             "tooltip": f"Enable reference slot {i} for detailing"})
+            slot_widgets[f"{prefix}lora"] = (lora_list, {"tooltip": f"LoRA to apply when detailing reference {i}"})
             slot_widgets[f"{prefix}prompt"] = ("STRING", {"multiline": True, "default": "",
-                                                           "tooltip": f"Positive prompt for reference {i}"})
+                                                           "tooltip": f"Positive prompt for reference {i}. If empty, uses base conditioning."})
 
         # Generic slot
         slot_widgets["generic_enabled"] = ("BOOLEAN", {"default": False,
-                                                        "tooltip": "Enable generic slot for unmatched faces"})
-        slot_widgets["generic_lora"] = (lora_list, {"tooltip": "LoRA for unmatched faces"})
+                                                        "tooltip": "Enable detailing for unmatched faces (not assigned to any reference)"})
+        slot_widgets["generic_lora"] = (lora_list, {"tooltip": "LoRA to apply for unmatched faces"})
         slot_widgets["generic_prompt"] = ("STRING", {"multiline": True, "default": "",
-                                                      "tooltip": "Positive prompt for unmatched faces"})
+                                                      "tooltip": "Positive prompt for unmatched faces. If empty, uses base conditioning."})
 
         return {
             "required": {
-                "images": ("IMAGE",),
-                "person_data": ("PERSON_DATA",),
-                "model": ("MODEL",),
-                "clip": ("CLIP",),
-                "vae": ("VAE",),
-                "negative": ("CONDITIONING",),
-                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
-                "steps": ("INT", {"default": 4, "min": 1, "max": 100}),
-                "denoise": ("FLOAT", {"default": 0.52, "min": 0.0, "max": 1.0, "step": 0.01}),
-                "sampler_name": (comfy.samplers.SAMPLER_NAMES,),
-                "scheduler": (comfy.samplers.SCHEDULER_NAMES,),
+                "images": ("IMAGE", {"tooltip": "Input image batch [B, H, W, C]"}),
+                "person_data": ("PERSON_DATA", {"tooltip": "Person data from Person Selector Multi node"}),
+                "model": ("MODEL", {"tooltip": "Base model (LoRAs are applied as temporary clones per slot)"}),
+                "clip": ("CLIP", {"tooltip": "CLIP model for prompt encoding"}),
+                "vae": ("VAE", {"tooltip": "VAE for encode/decode in the inpaint pipeline"}),
+                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff,
+                                  "tooltip": "Global seed, fixed across all slots and batch items"}),
+                "steps": ("INT", {"default": 4, "min": 1, "max": 100,
+                                   "tooltip": "Number of sampling steps per inpaint"}),
+                "denoise": ("FLOAT", {"default": 0.52, "min": 0.0, "max": 1.0, "step": 0.01,
+                                       "tooltip": "Denoise strength for inpainting (lower = more original detail preserved)"}),
+                "sampler_name": (comfy.samplers.SAMPLER_NAMES, {"tooltip": "Sampler algorithm"}),
+                "scheduler": (comfy.samplers.SCHEDULER_NAMES, {"tooltip": "Noise schedule"}),
                 "detail_daemon_enabled": ("BOOLEAN", {"default": True,
-                                                       "tooltip": "Enable Detail Daemon sigma manipulation"}),
+                                                       "tooltip": "Enable Detail Daemon sigma manipulation for enhanced detail preservation"}),
                 "detail_amount": ("FLOAT", {"default": 0.20, "min": -5.0, "max": 5.0, "step": 0.01,
-                                             "tooltip": "Detail Daemon strength (0 = off)"}),
+                                             "tooltip": "Detail Daemon strength. Positive = more detail, negative = smoother. 0 = off."}),
                 "dd_smooth": ("BOOLEAN", {"default": True,
-                                           "tooltip": "Smooth the Detail Daemon sigma curve"}),
+                                           "tooltip": "Smooth the Detail Daemon sigma curve to avoid artifacts"}),
                 "mask_blend_pixels": ("INT", {"default": 32, "min": 0, "max": 128, "step": 1,
-                                               "tooltip": "Feather/blend pixels at mask edges"}),
+                                               "tooltip": "Gaussian feather radius at mask edges for seamless blending"}),
                 "mask_expand_pixels": ("INT", {"default": 0, "min": 0, "max": 64, "step": 1,
-                                                "tooltip": "Expand mask by this many pixels"}),
+                                                "tooltip": "Dilate/expand mask by this many pixels before inpainting"}),
                 "target_width": ("INT", {"default": 800, "min": 64, "max": 4096, "step": 8,
                                           "tooltip": "Width to resize face crops to before sampling"}),
                 "target_height": ("INT", {"default": 1200, "min": 64, "max": 4096, "step": 8,
@@ -82,9 +97,10 @@ class PersonDetailer:
                 **slot_widgets,
             },
             "optional": {
-                "positive_base": ("CONDITIONING",),
-                "dd_options": ("DD_OPTIONS",),
-                "inpaint_options": ("INPAINT_OPTIONS",),
+                "positive_base": ("CONDITIONING", {"tooltip": "Base positive conditioning, used as fallback when a slot's prompt is empty"}),
+                "negative": ("CONDITIONING", {"tooltip": "Negative conditioning. If not connected, an empty negative is used."}),
+                "dd_options": ("DD_OPTIONS", {"tooltip": "Advanced Detail Daemon parameters from Detail Daemon Options node"}),
+                "inpaint_options": ("INPAINT_OPTIONS", {"tooltip": "Advanced inpaint settings and per-slot overrides from Inpaint Options node"}),
             },
         }
 
@@ -92,7 +108,7 @@ class PersonDetailer:
         """Get per-slot config from InpaintOptions or defaults."""
         opts = inpaint_options or INPAINT_DEFAULTS
         slots = opts.get("slots", INPAINT_DEFAULTS["slots"])
-        return slots.get(slot_key, INPAINT_DEFAULTS["slots"]["ref_1"])
+        return slots.get(slot_key, INPAINT_DEFAULTS["slots"]["reference_1"])
 
     def _encode_prompt(self, clip, prompt_text):
         """Encode a text prompt using CLIP."""
@@ -110,39 +126,44 @@ class PersonDetailer:
         patched_model, patched_clip = comfy.sd.load_lora_for_models(model, clip, lora, strength, strength)
         return patched_model, patched_clip
 
-    def execute(self, images, person_data, model, clip, vae, negative,
+    def execute(self, images, person_data, model, clip, vae,
                 seed, steps, denoise, sampler_name, scheduler,
                 detail_daemon_enabled, detail_amount, dd_smooth,
                 mask_blend_pixels, mask_expand_pixels, target_width, target_height,
-                ref_1_enabled, ref_1_lora, ref_1_prompt,
-                ref_2_enabled, ref_2_lora, ref_2_prompt,
-                ref_3_enabled, ref_3_lora, ref_3_prompt,
-                ref_4_enabled, ref_4_lora, ref_4_prompt,
-                ref_5_enabled, ref_5_lora, ref_5_prompt,
+                reference_1_enabled, reference_1_lora, reference_1_prompt,
+                reference_2_enabled, reference_2_lora, reference_2_prompt,
+                reference_3_enabled, reference_3_lora, reference_3_prompt,
+                reference_4_enabled, reference_4_lora, reference_4_prompt,
+                reference_5_enabled, reference_5_lora, reference_5_prompt,
                 generic_enabled, generic_lora, generic_prompt,
-                positive_base=None, dd_options=None, inpaint_options=None):
+                positive_base=None, negative=None, dd_options=None, inpaint_options=None):
 
         batch_size = images.shape[0]
         inpaint_opts = inpaint_options or INPAINT_DEFAULTS
 
+        # If no negative conditioning, create empty one
+        if negative is None:
+            negative = self._encode_prompt(clip, "")
+
         # Collect slot configs
         slots = []
         for i, (enabled, lora, prompt) in enumerate([
-            (ref_1_enabled, ref_1_lora, ref_1_prompt),
-            (ref_2_enabled, ref_2_lora, ref_2_prompt),
-            (ref_3_enabled, ref_3_lora, ref_3_prompt),
-            (ref_4_enabled, ref_4_lora, ref_4_prompt),
-            (ref_5_enabled, ref_5_lora, ref_5_prompt),
+            (reference_1_enabled, reference_1_lora, reference_1_prompt),
+            (reference_2_enabled, reference_2_lora, reference_2_prompt),
+            (reference_3_enabled, reference_3_lora, reference_3_prompt),
+            (reference_4_enabled, reference_4_lora, reference_4_prompt),
+            (reference_5_enabled, reference_5_lora, reference_5_prompt),
         ], start=1):
             if not enabled:
                 continue
-            slot_key = f"ref_{i}"
+            slot_key = f"reference_{i}"
             slot_cfg = self._get_slot_config(slot_key, inpaint_options)
             slots.append({
                 "index": i - 1,  # 0-based index into person_data masks
+                "label": f"Reference {i}",
                 "lora": lora,
                 "prompt": prompt,
-                "mask_type": slot_cfg.get("mask_type", "face"),
+                "mask_type": slot_cfg.get("mask_type", "head"),
                 "lora_strength": slot_cfg.get("lora_strength", 1.0),
                 "use_dd": slot_cfg.get("detail_daemon", True),
             })
@@ -176,11 +197,11 @@ class PersonDetailer:
                 mask = person_data[mask_key][ri][b]  # [H, W]
 
                 if is_mask_empty(mask):
-                    print(f"    Reference {ri+1} — no match, skip")
+                    print(f"    {slot['label']} — no match, skip")
                     continue
 
                 current_step += 1
-                print(f"    [{current_step}/{total_steps}] Reference {ri+1} — detailing...")
+                print(f"    [{current_step}/{total_steps}] {slot['label']} — detailing...")
 
                 # Apply LoRA
                 patched_model, patched_clip = self._apply_lora(
@@ -298,13 +319,10 @@ class PersonDetailer:
 
         if refined_parts:
             output_refined = torch.cat(refined_parts, dim=0)  # [N, tH, tW, C]
-            preview = refined_parts[-1]  # last refined part
         else:
-            # No refinement happened — return input images
             output_refined = output_images
-            preview = output_images[0:1]
 
         return {
             "ui": {"text": [f"Processed {batch_size} images, {len(refined_parts)} refinements"]},
-            "result": (output_images, output_refined, preview),
+            "result": (output_images, output_refined),
         }

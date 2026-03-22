@@ -9,6 +9,11 @@ class DetailDaemonOptions:
     FUNCTION = "execute"
     RETURN_TYPES = ("DD_OPTIONS",)
     RETURN_NAMES = ("dd_options",)
+    DESCRIPTION = (
+        "Fine-tune Detail Daemon sigma manipulation parameters.\n\n"
+        "Connect to Person Detailer's dd_options input to override the built-in defaults.\n"
+        "Controls the sigma modulation curve shape, range, bias, and fade."
+    )
 
     @classmethod
     def INPUT_TYPES(cls):

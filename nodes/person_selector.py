@@ -53,6 +53,15 @@ class PersonSelector:
     FUNCTION = "execute"
     CATEGORY = "FVM Tools/Face"
     OUTPUT_NODE = True
+    DESCRIPTION = (
+        "Matches a reference person in the current image using InsightFace (ArcFace) embeddings.\n\n"
+        "Outputs similarity score, match boolean, and optional mask (face/head/body).\n"
+        "Body mask requires SAM model from Impact Pack SAMLoader.\n"
+        "Face/head masks use BiSeNet segmentation.\n\n"
+        "threshold: minimum cosine similarity for a match (0.6-0.7 recommended)\n"
+        "aggregation: how to combine scores across multiple reference images\n"
+        "det_size: face detection resolution — higher finds smaller faces but uses more VRAM"
+    )
 
     def execute(self, current_image, reference_images, threshold, aggregation,
                 mask_mode, mask_fill_holes, mask_blur, det_size, sam_model=None):
