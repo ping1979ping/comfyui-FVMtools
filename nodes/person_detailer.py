@@ -200,9 +200,15 @@ class PersonDetailer:
             print(f"\n  [Batch {b+1}/{batch_size}]")
 
             # Process reference slots
+            num_refs = person_data["num_references"]
             for slot in slots:
                 ri = slot["index"]
                 mask_type = slot["mask_type"]
+
+                # Skip if this slot index exceeds available references
+                if ri >= num_refs:
+                    print(f"    {slot['label']} — no reference connected, skip")
+                    continue
 
                 # Get mask from PERSON_DATA
                 mask_key = f"{mask_type}_masks"
