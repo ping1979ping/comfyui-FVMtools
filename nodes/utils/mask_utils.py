@@ -62,3 +62,27 @@ def split_mask_to_components(mask_2d: torch.Tensor, min_area_fraction: float = 0
     # Sort by area descending (largest face first)
     components.sort(key=lambda c: c.sum(), reverse=True)
     return components
+
+
+def clean_mask_crumbs(mask_np, min_area_fraction=0.005):
+    """Remove small disconnected blobs from a mask.
+
+    Useful for body masks from SAM which often have small artifacts.
+
+    Args:
+        mask_np: [H, W] float32 numpy array, values in [0,1]
+        min_area_fraction: minimum blob area as fraction of image area
+
+    Returns:
+        Cleaned float32 numpy array.
+    """
+    mask_uint8 = (mask_np * 255).astype(np.uint8)
+    num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(mask_uint8, connectivity=8)
+    total_area = mask_np.shape[0] * mask_np.shape[1]
+    min_area = int(total_area * min_area_fraction)
+
+    cleaned = np.zeros_like(mask_np)
+    for label_id in range(1, num_labels):
+        if stats[label_id, cv2.CC_STAT_AREA] >= min_area:
+            cleaned[labels == label_id] = 1.0
+    return cleaned

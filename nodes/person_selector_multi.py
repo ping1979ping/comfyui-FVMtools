@@ -4,8 +4,9 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities
-from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS
+from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
+from .utils.mask_utils import clean_mask_crumbs
 
 # Colors for preview overlay (RGB), one per reference
 _PREVIEW_COLORS = [
@@ -52,15 +53,17 @@ class PersonSelectorMulti:
                                       "tooltip": "Gaussian blur radius for mask edges"}),
                 "det_size": (["320", "480", "640", "768"],
                              {"tooltip": "Face detection resolution — higher finds smaller faces but uses more VRAM"}),
+                "aux_mask_type": (["none", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories"],
+                                  {"default": "none", "tooltip": "Additional mask type for aux_masks output (derived from BiSeNet, no extra cost)"}),
             },
             "optional": {
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
 
-    RETURN_TYPES = ("PERSON_DATA", "MASK", "MASK", "MASK", "MASK", "MASK", "MASK", "IMAGE", "STRING", "STRING", "INT", "INT", "STRING")
+    RETURN_TYPES = ("PERSON_DATA", "MASK", "MASK", "MASK", "MASK", "MASK", "MASK", "MASK", "IMAGE", "STRING", "STRING", "INT", "INT", "STRING")
     RETURN_NAMES = ("person_data", "face_masks", "head_masks", "body_masks",
-                    "combined_face", "combined_head", "combined_body",
+                    "combined_face", "combined_head", "combined_body", "aux_masks",
                     "preview", "similarities", "matches", "matched_count", "face_count", "report")
     FUNCTION = "execute"
     CATEGORY = "FVM Tools/Face"
@@ -117,23 +120,32 @@ class PersonSelectorMulti:
         return assignments
 
     def _generate_all_masks(self, cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur):
+        """Generate all mask types from a single BiSeNet run + SAM body mask."""
         label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
-        unique_labels = np.unique(label_map)
-        print(f"[PersonSelectorMulti] BiSeNet labels found: {unique_labels.tolist()}"
-              f" | label_map shape={label_map.shape} | non-zero pixels={np.count_nonzero(label_map)}")
-        face_mask_np = np.isin(label_map, list(FACE_LABELS)).astype(np.float32)
-        head_mask_np = np.isin(label_map, list(HEAD_LABELS)).astype(np.float32)
-        print(f"[PersonSelectorMulti] face_mask pixels={face_mask_np.sum():.0f} | head_mask pixels={head_mask_np.sum():.0f}")
-        body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model)
 
         masks = {}
-        for name, mask_np in [("face", face_mask_np), ("head", head_mask_np), ("body", body_mask_np)]:
+
+        # All BiSeNet-derived masks from the same label_map (nearly free)
+        for mask_type, labels in MASK_TYPE_LABELS.items():
+            mask_np = np.isin(label_map, list(labels)).astype(np.float32)
             mask = mask2tensor(mask_np)
             if mask_fill_holes:
                 mask = fill_mask_holes(mask)
             if mask_blur > 0:
                 mask = apply_gaussian_blur(mask, mask_blur)
-            masks[name] = mask
+            masks[mask_type] = mask
+
+        # Body mask via SAM (separate from BiSeNet)
+        body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model)
+        # Clean up crumbs/artifacts from SAM
+        body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.005)
+        mask = mask2tensor(body_mask_np)
+        if mask_fill_holes:
+            mask = fill_mask_holes(mask)
+        if mask_blur > 0:
+            mask = apply_gaussian_blur(mask, mask_blur)
+        masks["body"] = mask
+
         return masks
 
     def _render_preview(self, current_image, assignments, cur_faces, body_masks_list, h, w):
@@ -188,31 +200,22 @@ class PersonSelectorMulti:
             print(f"[PersonSelectorMulti] sim_matrix:\n{_np.array2string(sim_matrix, precision=4)}")
         assignments = self._assign_greedy(sim_matrix, effective_threshold)
 
-        face_masks_list = []
-        head_masks_list = []
-        body_masks_list = []
-
-        # Track all detected faces for all_faces_mask
-        all_face_masks = []
+        # Collect all mask types per reference
+        from .utils.masker import ALL_MASK_TYPES
+        masks_per_type = {mt: [] for mt in ALL_MASK_TYPES}
 
         for ri in range(num_refs):
             if ri in assignments:
                 fi, sim = assignments[ri]
                 masks = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur)
-                face_masks_list.append(masks["face"])
-                head_masks_list.append(masks["head"])
-                body_masks_list.append(masks["body"])
-                print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})"
-                      f" | face_mask sum={masks['face'].sum():.0f}"
-                      f" | head_mask sum={masks['head'].sum():.0f}"
-                      f" | body_mask sum={masks['body'].sum():.0f}")
+                for mt in ALL_MASK_TYPES:
+                    masks_per_type[mt].append(masks.get(mt, empty_mask(h, w)))
+                print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})")
             else:
-                face_masks_list.append(empty_mask(h, w))
-                head_masks_list.append(empty_mask(h, w))
-                body_masks_list.append(empty_mask(h, w))
-                print(f"[PersonSelectorMulti] ref {ri+1} → no match, empty masks")
+                for mt in ALL_MASK_TYPES:
+                    masks_per_type[mt].append(empty_mask(h, w))
 
-        # Generate all_faces_mask (OR of all detected faces, matched or not)
+        # all_faces_mask: OR of all detected faces (matched or not)
         if face_count > 0:
             all_face_mask_parts = []
             for face in cur_faces:
@@ -222,7 +225,7 @@ class PersonSelectorMulti:
         else:
             all_faces_mask = empty_mask(h, w)
 
-        # matched_faces_mask = OR of matched face masks only
+        # matched_faces_mask: OR of matched face masks only
         matched_indices = set(fi for fi, sim in assignments.values())
         if matched_indices:
             matched_parts = []
@@ -234,9 +237,7 @@ class PersonSelectorMulti:
             matched_faces_mask = empty_mask(h, w)
 
         return {
-            "face_masks": face_masks_list,
-            "head_masks": head_masks_list,
-            "body_masks": body_masks_list,
+            "masks_per_type": masks_per_type,
             "assignments": assignments,
             "cur_faces": cur_faces,
             "face_count": face_count,
@@ -246,7 +247,7 @@ class PersonSelectorMulti:
         }
 
     def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, aggregation,
-                mask_fill_holes, mask_blur, det_size, **kwargs):
+                mask_fill_holes, mask_blur, det_size, aux_mask_type="none", **kwargs):
         det_size_int = int(det_size)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -277,23 +278,19 @@ class PersonSelectorMulti:
             )
             batch_results.append(result)
 
-        # Build PERSON_DATA
-        person_data_face_masks = []  # per ref: tensor [B, H, W]
-        person_data_head_masks = []
-        person_data_body_masks = []
-        person_data_matches = []     # per batch item: [bool per ref]
+        # Build PERSON_DATA with all mask types
+        from .utils.masker import ALL_MASK_TYPES
+        person_data_masks = {mt: [] for mt in ALL_MASK_TYPES}  # per type: list of [B,H,W] per ref
+        person_data_matches = []
 
         for ri in range(num_refs):
-            ref_face_masks = []
-            ref_head_masks = []
-            ref_body_masks = []
+            ref_masks_per_type = {mt: [] for mt in ALL_MASK_TYPES}
             for b in range(batch_size):
-                ref_face_masks.append(batch_results[b]["face_masks"][ri])
-                ref_head_masks.append(batch_results[b]["head_masks"][ri])
-                ref_body_masks.append(batch_results[b]["body_masks"][ri])
-            person_data_face_masks.append(torch.cat(ref_face_masks, dim=0))
-            person_data_head_masks.append(torch.cat(ref_head_masks, dim=0))
-            person_data_body_masks.append(torch.cat(ref_body_masks, dim=0))
+                mpt = batch_results[b]["masks_per_type"]
+                for mt in ALL_MASK_TYPES:
+                    ref_masks_per_type[mt].append(mpt[mt][ri])
+            for mt in ALL_MASK_TYPES:
+                person_data_masks[mt].append(torch.cat(ref_masks_per_type[mt], dim=0))
 
         for b in range(batch_size):
             matches_for_image = [ri in batch_results[b]["assignments"] for ri in range(num_refs)]
@@ -307,33 +304,32 @@ class PersonSelectorMulti:
             "num_references": num_refs,
             "image_height": h,
             "image_width": w,
-            "face_masks": person_data_face_masks,
-            "head_masks": person_data_head_masks,
-            "body_masks": person_data_body_masks,
             "matches": person_data_matches,
             "all_faces_mask": all_faces_masks,
             "matched_faces_mask": matched_faces_masks,
         }
+        # Add all mask types: face_masks, head_masks, body_masks, hair_masks, etc.
+        for mt in ALL_MASK_TYPES:
+            person_data[f"{mt}_masks"] = person_data_masks[mt]
 
-        # Mask outputs: stack across all batch items (per ref, per batch)
-        # Shape: [B * num_refs, H, W] — refs cycle within each batch item
-        all_face_masks = []
-        all_head_masks = []
-        all_body_masks = []
+        # Legacy mask outputs: face, head, body stacked across batch
+        all_face_out = []
+        all_head_out = []
+        all_body_out = []
         for b in range(batch_size):
+            mpt = batch_results[b]["masks_per_type"]
             for ri in range(num_refs):
-                all_face_masks.append(batch_results[b]["face_masks"][ri])
-                all_head_masks.append(batch_results[b]["head_masks"][ri])
-                all_body_masks.append(batch_results[b]["body_masks"][ri])
+                all_face_out.append(mpt["face"][ri])
+                all_head_out.append(mpt["head"][ri])
+                all_body_out.append(mpt["body"][ri])
 
-        face_masks_batch = torch.cat(all_face_masks, dim=0)
-        head_masks_batch = torch.cat(all_head_masks, dim=0)
-        body_masks_batch = torch.cat(all_body_masks, dim=0)
+        face_masks_batch = torch.cat(all_face_out, dim=0)
+        head_masks_batch = torch.cat(all_head_out, dim=0)
+        body_masks_batch = torch.cat(all_body_out, dim=0)
 
         total_matched = sum(len(br["assignments"]) for br in batch_results)
         total_faces = sum(br["face_count"] for br in batch_results)
 
-        # Combined masks: OR across all batch items and all matched refs
         if total_matched > 0:
             combined_face = torch.max(face_masks_batch, dim=0, keepdim=True)[0]
             combined_head = torch.max(head_masks_batch, dim=0, keepdim=True)[0]
@@ -343,15 +339,27 @@ class PersonSelectorMulti:
             combined_head = empty_mask(h, w)
             combined_body = empty_mask(h, w)
 
-        # Preview: render all batch items, stack vertically
+        # Auxiliary masks output
+        if aux_mask_type != "none" and aux_mask_type in MASK_TYPE_LABELS:
+            aux_list = []
+            for b in range(batch_size):
+                mpt = batch_results[b]["masks_per_type"]
+                for ri in range(num_refs):
+                    aux_list.append(mpt[aux_mask_type][ri])
+            aux_masks_batch = torch.cat(aux_list, dim=0)
+        else:
+            aux_masks_batch = empty_mask(h, w)
+
+        # Preview
         preview_parts = []
         for b in range(batch_size):
+            body_masks_for_preview = batch_results[b]["masks_per_type"]["body"]
             p = self._render_preview(
                 current_image[b:b+1], batch_results[b]["assignments"],
-                batch_results[b]["cur_faces"], batch_results[b]["body_masks"], h, w
+                batch_results[b]["cur_faces"], body_masks_for_preview, h, w
             )
             preview_parts.append(p)
-        preview = torch.cat(preview_parts, dim=0)  # [B, H, W, C]
+        preview = torch.cat(preview_parts, dim=0)
 
         # Report: per batch item
         sim_values = []
@@ -395,7 +403,7 @@ class PersonSelectorMulti:
         return {
             "ui": {"text": [ui_text]},
             "result": (person_data, face_masks_batch, head_masks_batch, body_masks_batch,
-                       combined_face, combined_head, combined_body,
+                       combined_face, combined_head, combined_body, aux_masks_batch,
                        preview, similarities_str, matches_str,
                        total_matched, total_faces, report),
         }

@@ -8,10 +8,40 @@ import folder_paths
 from ...parsing import BiSeNet
 
 
-# BiSeNet label groups
-FACE_LABELS = {1, 2, 3, 4, 5, 10, 11, 12, 13}  # skin, brows, eyes, nose, mouth, lips
-HEAD_EXTRA_LABELS = {6, 7, 8, 9, 14, 17, 18}    # glasses, ears, earrings, neck, hair, hat
+# BiSeNet 19-class labels:
+# 0=background, 1=skin, 2=left_brow, 3=right_brow, 4=left_eye, 5=right_eye,
+# 6=glasses, 7=left_ear, 8=right_ear, 9=earrings, 10=nose,
+# 11=mouth_interior, 12=upper_lip, 13=lower_lip, 14=neck,
+# 15=necklace, 16=cloth, 17=hair, 18=hat
+
+# Label groups
+FACE_LABELS = {1, 2, 3, 4, 5, 10, 11, 12, 13}       # skin, brows, eyes, nose, mouth, lips
+HEAD_EXTRA_LABELS = {6, 7, 8, 9, 14, 17, 18}          # glasses, ears, earrings, neck, hair, hat
 HEAD_LABELS = FACE_LABELS | HEAD_EXTRA_LABELS
+
+# Additional mask types (all derived from BiSeNet, no extra cost)
+HAIR_LABELS = {17}
+FACIAL_SKIN_LABELS = {1}                               # skin only (no eyes, brows, lips)
+EYES_LABELS = {4, 5}
+MOUTH_LABELS = {11, 12, 13}
+NECK_LABELS = {14}
+ACCESSORIES_LABELS = {6, 9, 15}                        # glasses, earrings, necklace
+
+# Map from mask type name to label set
+MASK_TYPE_LABELS = {
+    "face": FACE_LABELS,
+    "head": HEAD_LABELS,
+    "hair": HAIR_LABELS,
+    "facial_skin": FACIAL_SKIN_LABELS,
+    "eyes": EYES_LABELS,
+    "mouth": MOUTH_LABELS,
+    "neck": NECK_LABELS,
+    "accessories": ACCESSORIES_LABELS,
+}
+
+# All available mask type names (for dropdowns)
+ALL_MASK_TYPES = ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories"]
+BISENET_MASK_TYPES = [t for t in ALL_MASK_TYPES if t != "body"]  # types derivable from BiSeNet
 
 
 class MaskGenerator:

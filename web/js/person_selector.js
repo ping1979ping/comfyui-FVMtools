@@ -147,10 +147,11 @@ app.registerExtension({
                         face_count: parts[1],
                         similarities: parts.slice(2).join("|"),
                     };
-                    // Updated indices: +1 offset due to PERSON_DATA at index 0
-                    if (this.outputs[10]) this.outputs[10]["label"] = " ";  // matched_count
-                    if (this.outputs[11]) this.outputs[11]["label"] = " ";  // face_count
-                    if (this.outputs[8]) this.outputs[8]["label"] = " ";   // similarities
+                    // Output indices: person_data(0), face/head/body(1-3), combined(4-6),
+                    // aux_masks(7), preview(8), similarities(9), matches(10), matched_count(11), face_count(12), report(13)
+                    if (this.outputs[11]) this.outputs[11]["label"] = " ";  // matched_count
+                    if (this.outputs[12]) this.outputs[12]["label"] = " ";  // face_count
+                    if (this.outputs[9]) this.outputs[9]["label"] = " ";   // similarities
                     this.setDirtyCanvas(true);
                 }
                 return r;
@@ -161,11 +162,10 @@ app.registerExtension({
                 const r = onDrawFGMulti ? onDrawFGMulti.apply(this, arguments) : undefined;
                 if (!this.outputs || !this._psmValues) return r;
 
-                // Updated indices: +1 offset due to PERSON_DATA at index 0
                 const entries = [
-                    { idx: 8, label: "similarities", value: this._psmValues.similarities },
-                    { idx: 10, label: "matched", value: this._psmValues.matched_count },
-                    { idx: 11, label: "faces", value: this._psmValues.face_count },
+                    { idx: 9, label: "similarities", value: this._psmValues.similarities },
+                    { idx: 11, label: "matched", value: this._psmValues.matched_count },
+                    { idx: 12, label: "faces", value: this._psmValues.face_count },
                 ];
                 for (const e of entries) {
                     if (!this.outputs[e.idx]) continue;

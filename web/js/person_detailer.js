@@ -2,6 +2,7 @@ import { app } from "../../../scripts/app.js";
 
 // Static section separators only (no slot separators)
 const STATIC_SEPS = [
+    { label: "── References ──", before: "reference_1_enabled" },
     { label: "── Inpaint ──", before: "mask_blend_pixels" },
     { label: "── Detail Daemon ──", before: "detail_daemon_enabled" },
     { label: "── Sampler ──", before: "seed" },
