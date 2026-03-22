@@ -242,6 +242,11 @@ app.registerExtension({
 
             // Draw strength box on each lora combo widget
             const wh = LiteGraph.NODE_WIDGET_HEIGHT || 20;
+            if (!this._fvm_dbg) {
+                this._fvm_dbg = true;
+                const names = this.widgets?.map(w => w.name + ":" + (w._fvm_strProxy ? "hasProxy" : "noProxy")) || [];
+                console.log("[FVMTools] onDrawFG widgets:", names.join(", "));
+            }
             for (const def of SLOT_DEFS) {
                 const loraW = this.widgets?.find(w => w.name === def.prefix + "lora");
                 if (!loraW || !loraW._fvm_strProxy) continue;
