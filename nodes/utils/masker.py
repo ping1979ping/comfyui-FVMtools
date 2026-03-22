@@ -25,23 +25,34 @@ class MaskGenerator:
         if cls._bisenet is not None and cls._bisenet_device == device:
             return cls._bisenet
 
-        # Try folder_paths first, then direct path
+        # Search for parsing_bisenet.pth in standard ComfyUI model directories
         weight_path = None
-        try:
-            gfpgan_path = os.path.join(folder_paths.models_dir, "gfpgan", "parsing_bisenet.pth")
-            if os.path.exists(gfpgan_path):
-                weight_path = gfpgan_path
-        except Exception:
-            pass
+        search_dirs = [
+            os.path.join(folder_paths.models_dir, "gfpgan"),
+            os.path.join(folder_paths.models_dir, "facedetection"),
+            os.path.join(folder_paths.models_dir, "facerestore_models"),
+        ]
 
-        if weight_path is None:
-            fallback = r"E:\AI\AI_Models_Archive\gfpgan\parsing_bisenet.pth"
-            if os.path.exists(fallback):
-                weight_path = fallback
+        # Also check folder_paths registered paths for face-related categories
+        for category in ["gfpgan", "facedetection", "facerestore_models"]:
+            try:
+                for p in folder_paths.get_folder_paths(category):
+                    if p not in search_dirs:
+                        search_dirs.append(p)
+            except Exception:
+                pass
+
+        for search_dir in search_dirs:
+            candidate = os.path.join(search_dir, "parsing_bisenet.pth")
+            if os.path.exists(candidate):
+                weight_path = candidate
+                break
 
         if weight_path is None:
             raise FileNotFoundError(
-                "parsing_bisenet.pth not found. Place it in models/gfpgan/"
+                "parsing_bisenet.pth not found. Searched in: "
+                + ", ".join(search_dirs)
+                + "\nPlease place it in one of these directories."
             )
 
         net = BiSeNet(num_class=19)
