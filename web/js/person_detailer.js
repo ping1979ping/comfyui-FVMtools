@@ -1,141 +1,144 @@
 import { app } from "../../../scripts/app.js";
 
-// Section separator names and the widget that starts each section
-const SECTIONS = [
-    { label: "── Sampler ──", before: "seed" },
-    { label: "── Detail Daemon ──", before: "detail_daemon_enabled" },
-    { label: "── Inpaint ──", before: "mask_blend_pixels" },
-    { label: "── Reference 1 ──", before: "reference_1_enabled" },
-    { label: "── Reference 2 ──", before: "reference_2_enabled" },
-    { label: "── Reference 3 ──", before: "reference_3_enabled" },
-    { label: "── Reference 4 ──", before: "reference_4_enabled" },
-    { label: "── Reference 5 ──", before: "reference_5_enabled" },
-    { label: "── Generic (Unmatched) ──", before: "generic_enabled" },
-];
-
 app.registerExtension({
     name: "FVMTools.PersonDetailer",
 
     async nodeCreated(node) {
         if (node.comfyClass !== "PersonDetailer") return;
 
-        // --- Add section separator widgets ---
-        // We insert separator widgets before the target widgets.
-        // ComfyUI renders widgets in array order, so we insert at the right index.
-        for (const section of SECTIONS) {
-            const targetIdx = node.widgets.findIndex(w => w.name === section.before);
-            if (targetIdx < 0) continue;
+        // ── Robust hide/show using the "converted-widget" pattern ──
+        // This is the pattern used by ComfyUI-Easy-Use and other mature extensions.
+        // It fully removes the widget from layout calculations.
+        function hideWidget(widget) {
+            if (!widget || widget._fvm_hidden) return;
+            widget._fvm_hidden = true;
+            widget._fvm_origType = widget.type;
+            widget._fvm_origComputeSize = widget.computeSize;
+            widget._fvm_origSerialize = widget.serializeValue;
+            widget.type = "converted-widget";
+            widget.computeSize = () => [0, -4];
+            widget.serializeValue = () => widget.value; // still serialize the value
+        }
 
-            const separator = {
-                name: "_sep_" + section.before,
+        function showWidget(widget) {
+            if (!widget || !widget._fvm_hidden) return;
+            widget._fvm_hidden = false;
+            widget.type = widget._fvm_origType;
+            widget.computeSize = widget._fvm_origComputeSize;
+            widget.serializeValue = widget._fvm_origSerialize;
+        }
+
+        // ── Add separator labels via custom draw widgets ──
+        // Insert separators BACKWARDS to avoid index shifting issues.
+        const separators = [
+            { label: "── Generic (Unmatched) ──", before: "generic_enabled" },
+            { label: "── Reference 5 ──", before: "reference_5_enabled" },
+            { label: "── Reference 4 ──", before: "reference_4_enabled" },
+            { label: "── Reference 3 ──", before: "reference_3_enabled" },
+            { label: "── Reference 2 ──", before: "reference_2_enabled" },
+            { label: "── Reference 1 ──", before: "reference_1_enabled" },
+            { label: "── Inpaint ──", before: "mask_blend_pixels" },
+            { label: "── Detail Daemon ──", before: "detail_daemon_enabled" },
+            { label: "── Sampler ──", before: "seed" },
+        ];
+
+        for (const sep of separators) {
+            const idx = node.widgets.findIndex(w => w.name === sep.before);
+            if (idx < 0) continue;
+
+            const sepWidget = {
+                name: "_sep_" + sep.before,
                 type: "custom",
-                value: section.label,
-                hidden: false,
+                value: sep.label,
                 options: { serialize: false },
-                computeSize: () => [0, 20],
-                draw: function(ctx, node, width, posY, h) {
+                computeSize: () => [0, 24],
+                _fvm_separator: true,
+                draw(ctx, nodeRef, width, posY) {
                     ctx.save();
                     ctx.font = "bold 11px Arial";
-                    ctx.fillStyle = "#888";
+                    ctx.fillStyle = "#999";
                     ctx.textAlign = "center";
-                    ctx.fillText(this.value, width / 2, posY + 14);
-                    // Draw line
+                    const cy = posY + 15;
+                    ctx.fillText(this.value, width / 2, cy);
+                    // Lines on each side
+                    const tw = ctx.measureText(this.value).width;
+                    const cx = width / 2;
                     ctx.strokeStyle = "#555";
                     ctx.lineWidth = 1;
-                    const textW = ctx.measureText(this.value).width;
-                    const cx = width / 2;
-                    if (cx - textW/2 - 10 > 15) {
-                        ctx.beginPath();
-                        ctx.moveTo(15, posY + 10);
-                        ctx.lineTo(cx - textW/2 - 8, posY + 10);
-                        ctx.stroke();
-                    }
-                    if (cx + textW/2 + 10 < width - 15) {
-                        ctx.beginPath();
-                        ctx.moveTo(cx + textW/2 + 8, posY + 10);
-                        ctx.lineTo(width - 15, posY + 10);
-                        ctx.stroke();
-                    }
+                    ctx.beginPath();
+                    ctx.moveTo(15, cy - 4);
+                    ctx.lineTo(Math.max(15, cx - tw / 2 - 10), cy - 4);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(Math.min(width - 15, cx + tw / 2 + 10), cy - 4);
+                    ctx.lineTo(width - 15, cy - 4);
+                    ctx.stroke();
                     ctx.restore();
                 },
             };
-            node.widgets.splice(targetIdx, 0, separator);
+            node.widgets.splice(idx, 0, sepWidget);
         }
 
-        // --- Helper: hide/show a widget ---
-        function setWidgetVisible(widget, visible) {
-            if (!widget) return;
-            if (!visible) {
-                widget.hidden = true;
-                if (!widget._origType) widget._origType = widget.type;
-                if (!widget._origComputeSize) widget._origComputeSize = widget.computeSize;
-                widget.type = "hidden";
-                widget.computeSize = () => [0, -4];
-            } else {
-                widget.hidden = false;
-                if (widget._origType) widget.type = widget._origType;
-                if (widget._origComputeSize) widget.computeSize = widget._origComputeSize;
-            }
-        }
-
-        // --- Toggle slot visibility ---
-        const slotPrefixes = [
-            "reference_1_", "reference_2_", "reference_3_",
-            "reference_4_", "reference_5_", "generic_"
+        // ── Slot toggle logic ──
+        const slotConfigs = [
+            { prefix: "reference_1_", sepName: "_sep_reference_1_enabled" },
+            { prefix: "reference_2_", sepName: "_sep_reference_2_enabled" },
+            { prefix: "reference_3_", sepName: "_sep_reference_3_enabled" },
+            { prefix: "reference_4_", sepName: "_sep_reference_4_enabled" },
+            { prefix: "reference_5_", sepName: "_sep_reference_5_enabled" },
+            { prefix: "generic_", sepName: "_sep_generic_enabled" },
         ];
 
         function updateAllSlots() {
-            for (const prefix of slotPrefixes) {
-                const toggle = node.widgets.find(w => w.name === prefix + "enabled");
-                const lora = node.widgets.find(w => w.name === prefix + "lora");
-                const prompt = node.widgets.find(w => w.name === prefix + "prompt");
+            for (const cfg of slotConfigs) {
+                const toggle = node.widgets.find(w => w.name === cfg.prefix + "enabled");
+                const lora = node.widgets.find(w => w.name === cfg.prefix + "lora");
+                const prompt = node.widgets.find(w => w.name === cfg.prefix + "prompt");
                 if (!toggle) continue;
-                setWidgetVisible(lora, toggle.value);
-                setWidgetVisible(prompt, toggle.value);
+
+                if (toggle.value) {
+                    showWidget(lora);
+                    showWidget(prompt);
+                } else {
+                    hideWidget(lora);
+                    hideWidget(prompt);
+                }
             }
-            // Force full size recalculation
-            const newH = node.computeSize()[1];
-            node.setSize([node.size[0], newH]);
+
+            // Recalculate node height
+            const sz = node.computeSize();
+            node.setSize([Math.max(node.size[0], sz[0]), sz[1]]);
             node.graph?.setDirtyCanvas(true, true);
         }
 
-        // Attach callbacks
-        for (const prefix of slotPrefixes) {
-            const toggle = node.widgets.find(w => w.name === prefix + "enabled");
+        // Attach toggle callbacks
+        for (const cfg of slotConfigs) {
+            const toggle = node.widgets.find(w => w.name === cfg.prefix + "enabled");
             if (!toggle) continue;
             const origCb = toggle.callback;
-            toggle.callback = (value) => {
-                if (origCb) origCb(value);
+            toggle.callback = function(value) {
+                if (origCb) origCb.call(this, value);
                 updateAllSlots();
             };
         }
 
-        // Initial state — delay to let ComfyUI finish layout
-        setTimeout(updateAllSlots, 100);
-        // Second pass for loaded workflows
-        setTimeout(updateAllSlots, 500);
+        // Initial visibility — use requestAnimationFrame for reliable timing
+        requestAnimationFrame(() => {
+            updateAllSlots();
+            // Second pass after ComfyUI finishes its own layout
+            requestAnimationFrame(updateAllSlots);
+        });
     },
 
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
         if (nodeData.name !== "PersonDetailer") return;
 
-        // Display execution info and preview
+        // Display execution info
         const onExecuted = nodeType.prototype.onExecuted;
         nodeType.prototype.onExecuted = function (message) {
             const r = onExecuted ? onExecuted.apply(this, arguments) : undefined;
-            if (message && message.text && message.text.length > 0) {
+            if (message?.text?.length > 0) {
                 this._pdInfo = message.text[0];
-                this.setDirtyCanvas(true);
-            }
-            // Show preview images inline
-            if (message && message.images) {
-                this.imgs = message.images.map(img => {
-                    const url = `/view?filename=${encodeURIComponent(img.filename)}&type=${img.type}&subfolder=${encodeURIComponent(img.subfolder || "")}`;
-                    const imgEl = new Image();
-                    imgEl.src = url;
-                    return imgEl;
-                });
-                this.setSizeForImage?.();
                 this.setDirtyCanvas(true);
             }
             return r;
@@ -152,7 +155,6 @@ app.registerExtension({
             ctx.textAlign = "left";
             ctx.fillText(this._pdInfo, 10, this.size[1] - 6);
             ctx.restore();
-
             return r;
         };
     },
