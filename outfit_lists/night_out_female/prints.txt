@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+sequin detail | 0.4 | top,accessories,bag | 0.4-0.9
+metallic finish | 0.4 | top,accessories,bag | 0.4-0.9
+lace detail | 0.4 | top | 0.4-0.8
+rhinestone detail | 0.3 | top,accessories | 0.4-0.9
+embossed detail | 0.2 | bag,accessories | 0.4-0.8
+subtle shimmer | 0.4 | top,accessories | 0.4-0.8
+animal print | 0.2 | top,bottom,bag | 0.3-0.7
+glitter detail | 0.3 | top,accessories | 0.4-0.8
+velvet burnout pattern | 0.2 | top | 0.4-0.8
+beaded detail | 0.2 | top,accessories | 0.5-0.9
+dark floral | 0.2 | top,bottom | 0.3-0.7

@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+jeans | 0.90 | 0.2-0.4 | denim
+shorts | 0.65 | 0.1-0.3 | denim,cotton
+leggings | 0.70 | 0.1-0.3 | jersey,polyester
+denim skirt | 0.55 | 0.2-0.4 | denim
+midi skirt | 0.40 | 0.3-0.5 | cotton,jersey
+cargo pants | 0.40 | 0.1-0.3 | cotton,canvas
+cutoff shorts | 0.45 | 0.1-0.2 | denim
+mini skirt | 0.50 | 0.1-0.3 | denim,cotton

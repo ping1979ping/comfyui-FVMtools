@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WANDERLUST" | 0.2 | top | handwritten script
+"FREE" | 0.2 | top | boho lettering
+"GYPSY SOUL" | 0.15 | top | organic font
+"NAMASTE" | 0.15 | top | handwritten script
+"BLOOM" | 0.2 | top | watercolor text

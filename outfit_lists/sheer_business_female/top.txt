@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer blouse | 0.85 | 0.6-0.9 | chiffon,organza,silk
+semi-transparent blouse | 0.75 | 0.6-0.9 | silk,chiffon
+sheer button-down shirt | 0.60 | 0.6-0.8 | organza,chiffon
+deep V-neck blouse | 0.70 | 0.6-0.9 | silk,chiffon,cotton
+wide-neckline blouse with visible bra strap | 0.65 | 0.6-0.8 | silk,cotton,chiffon
+off-shoulder blouse with visible bra strap | 0.55 | 0.5-0.8 | silk,chiffon,cotton
+low-cut fitted top | 0.60 | 0.6-0.8 | silk,jersey,cotton
+thin white shirt with visible dark bra underneath | 0.50 | 0.6-0.9 | cotton,silk
+sheer lace blouse | 0.55 | 0.6-0.9 | lace,mesh
+one-shoulder top with visible bra strap | 0.45 | 0.5-0.8 | silk,chiffon

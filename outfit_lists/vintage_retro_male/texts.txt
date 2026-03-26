@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"1987" | 0.2 | top | retro font
+"RETRO" | 0.2 | top | neon sign font
+"CLASSIC" | 0.2 | top | vintage serif
+"VINTAGE" | 0.15 | top | Art Deco lettering
+"OLD SCHOOL" | 0.2 | top,headwear | varsity font
+"THROWBACK" | 0.15 | top | retro font
+"ICONIC" | 0.15 | top | Art Deco lettering
+"ORIGINAL" | 0.2 | top | vintage serif

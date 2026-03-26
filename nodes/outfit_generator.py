@@ -56,6 +56,13 @@ class FVM_OutfitGenerator:
                 "enable_footwear": ("BOOLEAN", {"default": True}),
                 "enable_accessories": ("BOOLEAN", {"default": False}),
                 "enable_bag": ("BOOLEAN", {"default": False}),
+                "print_probability": ("FLOAT", {
+                    "default": 0.3, "min": 0.0, "max": 1.0, "step": 0.05,
+                    "tooltip": "Probability of adding prints, patterns, logos, or text to garments (0=never, 1=always)",
+                }),
+                "text_mode": (["auto", "quoted", "descriptive", "off"], {
+                    "tooltip": "auto/quoted: exact text in quotes (ZImage/Flux2). descriptive: generic description (safe for SD/SDXL). off: no text, prints only.",
+                }),
             },
             "optional": {
                 "override_string": ("STRING", {
@@ -75,7 +82,8 @@ class FVM_OutfitGenerator:
     def generate(self, outfit_set, seed, style_preset, formality, coverage,
                  enable_headwear, enable_top, enable_outerwear,
                  enable_bottom, enable_footwear, enable_accessories,
-                 enable_bag, override_string="", prefix="wearing ", separator=", "):
+                 enable_bag, print_probability=0.3, text_mode="auto",
+                 override_string="", prefix="wearing ", separator=", "):
 
         slot_enables = {
             "headwear": enable_headwear,
@@ -99,6 +107,8 @@ class FVM_OutfitGenerator:
             overrides=overrides,
             prefix=prefix,
             separator=separator,
+            print_probability=print_probability,
+            text_mode=text_mode,
         )
 
         return (result["outfit_prompt"], result["outfit_details"], result["outfit_info"])

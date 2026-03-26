@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"RUN" | 0.2 | top | minimal sans-serif
+"FIT" | 0.15 | top | bold block letters
+"MOVE" | 0.15 | top | clean modern font
+"STRONG" | 0.25 | top | athletic font
+"ACTIVE" | 0.15 | top | minimal sans-serif
+"SPORT" | 0.2 | top | bold block letters
+"TRAIN" | 0.15 | top | athletic font
+"FOCUS" | 0.2 | top | clean modern font

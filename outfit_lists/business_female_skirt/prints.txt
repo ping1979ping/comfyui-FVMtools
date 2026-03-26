@@ -1,0 +1,5 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+pinstripe pattern | 0.3 | top,bottom | 0.6-1.0
+subtle check | 0.3 | top,bottom | 0.5-0.9
+herringbone pattern | 0.3 | top,bottom,outerwear | 0.6-1.0
+subtle floral | 0.2 | top | 0.5-0.8

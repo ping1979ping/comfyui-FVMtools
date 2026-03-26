@@ -67,7 +67,7 @@ The Outfit Generator is part of the **comfyui-FVMtools** custom node pack. No se
 ## Quick Start
 
 1. **Add the "Outfit Generator" node** (right-click canvas > FVM Tools > Fashion > Outfit Generator).
-2. **Select an outfit set** from the dropdown (e.g., `business_female`, `streetwear_male`).
+2. **Select an outfit set** from the dropdown (e.g., `business_female_skirt`, `streetwear_male`).
 3. **Set a seed** -- any integer. The same seed always produces the same outfit.
 4. **Leave slot toggles at defaults** -- `top`, `bottom`, and `footwear` are enabled by default.
 5. **Connect the `outfit_prompt` output** to the `prompt` input of a **Prompt Color Replace** node.
@@ -423,13 +423,15 @@ This means:
 
 ## Available Outfit Sets
 
-The following 34 outfit sets are included. Each set contains curated garment lists tailored to its theme.
+The following 39 outfit sets are included. Each set contains curated garment lists tailored to its theme.
 
 | Set | Theme | Target | Typical formality |
 |-----|-------|--------|-------------------|
 | `general_female` | All-purpose, full range | Female | 0.0-1.0 |
 | `general_male` | All-purpose, full range | Male | 0.0-1.0 |
-| `business_female` | Office, corporate, professional | Female | 0.5-1.0 |
+| `business_female_skirt` | Business with skirts only (legs visible) | Female | 0.5-1.0 |
+| `business_female_dress` | Business dresses | Female | 0.5-1.0 |
+| `business_female2` | Office, corporate, professional | Female | 0.5-1.0 |
 | `business_male` | Office, corporate, professional | Male | 0.5-1.0 |
 | `casual_female` | Everyday relaxed wear | Female | 0.0-0.4 |
 | `casual_male` | Everyday relaxed wear | Male | 0.0-0.4 |
@@ -461,6 +463,9 @@ The following 34 outfit sets are included. Each set contains curated garment lis
 | `beach_holiday_male` | Beach, resort, vacation | Male | 0.0-0.2 |
 | `winter_wonderland_female` | Cold weather, winter | Female | 0.1-0.6 |
 | `winter_wonderland_male` | Cold weather, winter | Male | 0.1-0.6 |
+| `sheer_business_female` | Business with sheer/visible bra tops | Female | 0.5-0.9 |
+| `sheer_casual_female` | Casual with sheer/visible bra tops | Female | 0.0-0.4 |
+| `sheer_evening_female` | Evening with sheer/visible bra tops | Female | 0.3-0.8 |
 
 ---
 
@@ -518,6 +523,13 @@ Setting an `enable_*` checkbox to False guarantees no output from that slot, reg
 - The default color tag assignments (primary for top, secondary for bottom, etc.) produce balanced results. Override them only when you want specific creative control.
 - **Use the override string** to force a specific color tag on a specific slot without changing the outfit set files.
 - **Combine with Palette From Image** instead of Color Palette Generator to match outfits to reference image colors.
+
+### Layering and sheer clothing
+
+- The `sheer_business_female`, `sheer_casual_female`, and `sheer_evening_female` outfit sets contain tops designed to show visible undergarments (sheer fabric, visible bra straps, low necklines).
+- Garment names like `sheer blouse` are paired with fabrics like `chiffon`, `organza`, or `mesh`. The engine builds prompts like `#primary# chiffon sheer blouse` -- no fabric duplication since "sheer" is part of the garment name, not the fabric.
+- For even more explicit layering, use the override string to add detail: `top:thin white shirt with visible dark bra underneath:silk`
+- **Z-Image Turbo tip:** Dark bra + light sheer top creates the strongest contrast. Add `backlit` to your environment prompt for enhanced see-through effect.
 
 ### Debugging
 

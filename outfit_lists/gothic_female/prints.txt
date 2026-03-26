@@ -1,0 +1,17 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+skull print | 0.4 | top,accessories | 0.0-0.3
+cross emblem | 0.3 | top,accessories | 0.0-0.4
+lace overlay | 0.5 | top,outerwear | 0.1-0.5
+studded detail | 0.4 | top,outerwear,accessories,bag | 0.0-0.3
+chain detail | 0.4 | accessories,bag | 0.0-0.4
+dark floral | 0.4 | top,bottom | 0.1-0.5
+pentagram print | 0.2 | top,accessories | 0.0-0.2
+Victorian embroidery | 0.3 | top,outerwear | 0.2-0.6
+distressed details | 0.4 | top,bottom | 0.0-0.3
+corset lacing detail | 0.3 | top | 0.1-0.4
+occult symbol | 0.2 | top,accessories | 0.0-0.2
+bat print | 0.2 | top | 0.0-0.2
+spider web print | 0.2 | top,accessories | 0.0-0.2
+velvet burnout pattern | 0.3 | top | 0.1-0.5
+baroque print | 0.2 | top,bottom | 0.2-0.5
+raven embroidery | 0.2 | top,outerwear | 0.1-0.4

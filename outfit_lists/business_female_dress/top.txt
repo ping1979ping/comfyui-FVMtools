@@ -1,0 +1,4 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+none | 0.95 | 0.5-1.0 | none

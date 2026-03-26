@@ -1,0 +1,18 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+graffiti graphic | 0.4 | top,outerwear | 0.0-0.3
+brand logo | 0.5 | top,headwear,bag | 0.0-0.4
+screen-printed slogan | 0.4 | top | 0.0-0.3
+patches | 0.3 | outerwear,bag | 0.0-0.3
+embroidered logo | 0.4 | top,headwear,outerwear | 0.1-0.4
+abstract graphic | 0.3 | top,outerwear | 0.0-0.3
+camouflage pattern | 0.3 | top,bottom,outerwear,bag | 0.0-0.2
+skull print | 0.2 | top | 0.0-0.2
+distressed details | 0.4 | top,bottom | 0.0-0.3
+bleach-wash effect | 0.2 | top,bottom | 0.0-0.2
+tie-dye pattern | 0.3 | top | 0.0-0.3
+oversized print | 0.3 | top,outerwear | 0.0-0.2
+rhinestone detail | 0.2 | top,accessories | 0.1-0.4
+color-block pattern | 0.3 | top,outerwear | 0.0-0.3
+chain detail | 0.2 | accessories,bag | 0.0-0.3
+anime graphic | 0.2 | top | 0.0-0.2
+checker pattern | 0.3 | top,bottom,accessories | 0.0-0.3

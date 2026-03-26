@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer lace top with visible bra | 0.80 | 0.5-0.8 | lace,mesh
+deep plunging V-neck top | 0.75 | 0.5-0.8 | silk,satin
+backless halter top with visible bra clasp | 0.55 | 0.4-0.7 | silk,satin
+sheer sequin top | 0.65 | 0.5-0.8 | sequin,mesh
+mesh bodysuit | 0.50 | 0.3-0.6 | mesh
+one-shoulder top with visible bra strap | 0.60 | 0.4-0.7 | silk,satin,chiffon
+corset top with peeking bra cups | 0.55 | 0.4-0.7 | satin,leather
+silk camisole with visible lace bra | 0.70 | 0.5-0.7 | silk,satin
+sheer chiffon top with visible dark bra underneath | 0.65 | 0.5-0.8 | chiffon,organza
+low-cut wrap top with visible bralette | 0.60 | 0.5-0.7 | silk,satin

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+metallic finish | 0.3 | top,accessories | 0.4-0.8
+subtle shimmer | 0.3 | top,accessories | 0.4-0.8
+embossed detail | 0.2 | accessories | 0.4-0.8
+rhinestone detail | 0.1 | accessories | 0.4-0.8
+geometric pattern | 0.2 | top | 0.4-0.7
+abstract graphic | 0.2 | top | 0.3-0.6
+bold stripe | 0.3 | top | 0.4-0.7
+textured weave | 0.3 | top | 0.4-0.8
+tonal pattern | 0.2 | top | 0.4-0.8
+dark floral | 0.1 | top | 0.3-0.6

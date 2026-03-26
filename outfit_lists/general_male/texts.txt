@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NYC" | 0.2 | top,headwear | block lettering
+"1987" | 0.2 | top,outerwear | varsity font
+"CLASSIC" | 0.2 | top | bold sans-serif
+"STAY REAL" | 0.15 | top | gothic font
+"ORIGINAL" | 0.2 | top | retro font
+"LEGEND" | 0.15 | top | bold block letters
+"HUSTLE" | 0.1 | top | distressed print
+"NO LIMITS" | 0.15 | top | stencil font

@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+argyle pattern | 0.4 | top | 0.3-0.7
+nautical stripes | 0.4 | top,bottom | 0.3-0.7
+monogram | 0.3 | bag,accessories | 0.3-0.7
+cable-knit texture | 0.4 | top,outerwear | 0.3-0.7
+plaid pattern | 0.5 | top,bottom,outerwear | 0.3-0.7
+gingham pattern | 0.3 | top,bottom | 0.3-0.6
+polka dot | 0.3 | top | 0.3-0.6
+embroidered crest | 0.2 | top,outerwear | 0.4-0.8

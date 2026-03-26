@@ -59,6 +59,22 @@ class TestSchema:
         assert "prefix" in optional
         assert "separator" in optional
 
+    def test_print_probability_input_exists(self):
+        inputs = FVM_OutfitGenerator.INPUT_TYPES()
+        required = inputs["required"]
+        assert "print_probability" in required
+        assert required["print_probability"][0] == "FLOAT"
+
+    def test_text_mode_input_exists(self):
+        inputs = FVM_OutfitGenerator.INPUT_TYPES()
+        required = inputs["required"]
+        assert "text_mode" in required
+        options = required["text_mode"][0]
+        assert "auto" in options
+        assert "quoted" in options
+        assert "descriptive" in options
+        assert "off" in options
+
 
 class TestExecution:
     """Tests for node execution."""
@@ -115,3 +131,29 @@ class TestExecution:
         )
         assert isinstance(result, tuple)
         assert len(result) == 3
+
+    def test_print_probability_passed_through(self):
+        node = FVM_OutfitGenerator()
+        result = node.generate(
+            outfit_set="general_female",
+            seed=42, style_preset="general", formality=0.5, coverage=0.5,
+            enable_headwear=False, enable_top=True, enable_outerwear=False,
+            enable_bottom=True, enable_footwear=True, enable_accessories=False,
+            enable_bag=False, print_probability=0.0,
+        )
+        assert isinstance(result, tuple)
+        assert len(result) == 3
+        # No decoration with probability 0
+        assert "with " not in result[0]
+
+    def test_text_mode_passed_through(self):
+        node = FVM_OutfitGenerator()
+        result = node.generate(
+            outfit_set="general_female",
+            seed=42, style_preset="general", formality=0.5, coverage=0.5,
+            enable_headwear=False, enable_top=True, enable_outerwear=False,
+            enable_bottom=True, enable_footwear=True, enable_accessories=False,
+            enable_bag=False, print_probability=1.0, text_mode="off",
+        )
+        assert isinstance(result, tuple)
+        assert '"' not in result[0]  # no quoted text with text_mode=off

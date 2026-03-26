@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"REBEL" | 0.3 | top | gothic font
+"NYC" | 0.2 | top,headwear | bold block letters
+"SUPREME" | 0.2 | top | bold block letters
+"OFF-WHITE" | 0.15 | top | distressed print
+"HUSTLE" | 0.2 | top | graffiti style
+"STAY REAL" | 0.15 | top | stencil font
+"NO LIMITS" | 0.2 | top,outerwear | gothic font
+"URBAN" | 0.25 | top | graffiti style
+"STREET" | 0.2 | top | distressed print
+"FEARLESS" | 0.15 | top | bold block letters
+"GRIND" | 0.1 | top | stencil font
+"ICONIC" | 0.15 | top,outerwear | gothic font

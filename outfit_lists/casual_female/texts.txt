@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"CHILL" | 0.2 | top | handwritten script
+"LOVE" | 0.25 | top | playful font
+"GOOD VIBES" | 0.2 | top | retro font
+"HAPPY" | 0.15 | top | bold sans-serif
+"SUNSHINE" | 0.2 | top | handwritten script
+"HELLO" | 0.15 | top | playful font
+"WEEKEND" | 0.2 | top | retro font
+"BE KIND" | 0.15 | top | handwritten script

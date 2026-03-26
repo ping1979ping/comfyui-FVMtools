@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"DARK SOUL" | 0.25 | top | gothic font
+"ETERNAL" | 0.2 | top | blackletter
+"DEATH" | 0.15 | top | distressed text
+"UNDEAD" | 0.15 | top | gothic font
+"CURSED" | 0.2 | top | ornate calligraphy
+"ABYSS" | 0.15 | top | blackletter
+"NOCTURNAL" | 0.1 | top | medieval script
+"PHANTOM" | 0.15 | top | gothic font
+"DOOM" | 0.2 | top | distressed text
+"SINISTER" | 0.1 | top | ornate calligraphy

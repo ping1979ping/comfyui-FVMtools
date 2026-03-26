@@ -42,6 +42,7 @@ def parse_overrides(override_string):
                 "fabric": None,
                 "color_tag": None,
                 "mode": "exclude",
+                "decoration": None,
             }
             continue
 
@@ -51,22 +52,32 @@ def parse_overrides(override_string):
                 "fabric": None,
                 "color_tag": None,
                 "mode": "auto",
+                "decoration": None,
             }
             continue
 
-        # Parse: garment_spec [fabric] | color_tag
+        # Parse: garment_spec | color_tag [| decoration]
         color_tag = None
+        decoration = None
+
         if "|" in spec:
-            spec_part, _, tag_part = spec.rpartition("|")
-            spec = spec_part.strip()
-            tag_part = tag_part.strip()
-            if tag_part:
+            pipe_parts = [p.strip() for p in spec.split("|")]
+            spec = pipe_parts[0]
+            if len(pipe_parts) >= 2 and pipe_parts[1]:
+                tag_part = pipe_parts[1]
                 # Ensure it has # delimiters
                 if not tag_part.startswith("#"):
                     tag_part = f"#{tag_part}#"
                 elif not tag_part.endswith("#"):
                     tag_part = f"{tag_part}#"
                 color_tag = tag_part
+            if len(pipe_parts) >= 3 and pipe_parts[2]:
+                deco_part = pipe_parts[2]
+                if deco_part.lower().startswith("text:"):
+                    # Text override: text:"STAY WILD" in gothic font
+                    decoration = deco_part[5:].strip()
+                else:
+                    decoration = deco_part
 
         # Parse garment and fabric from spec
         # Try to find fabric in brackets: "silk blouse" or just "blouse"
@@ -87,6 +98,7 @@ def parse_overrides(override_string):
             "fabric": fabric,
             "color_tag": color_tag,
             "mode": "override",
+            "decoration": decoration,
         }
 
     return result

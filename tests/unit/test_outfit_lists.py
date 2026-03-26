@@ -1,7 +1,9 @@
 """Unit tests for core/outfit_lists.py — garment, fabric, and harmony loading."""
 
 import pytest
-from core.outfit_lists import load_garments, load_fabrics, load_fabric_harmony, get_available_sets, get_list_file_path
+from core.outfit_lists import (load_garments, load_fabrics, load_fabric_harmony,
+                               get_available_sets, get_list_file_path,
+                               load_prints, load_texts)
 
 
 ALL_SLOTS = ["top", "bottom", "footwear", "headwear", "outerwear", "accessories", "bag"]
@@ -144,6 +146,91 @@ class TestLoadFabricHarmony:
         for family, compatible in harmony.items():
             assert isinstance(compatible, list)
             assert len(compatible) > 0
+
+
+class TestLoadPrints:
+    """Tests for load_prints()."""
+
+    def test_returns_non_empty_list(self):
+        prints = load_prints("general_female")
+        assert len(prints) > 0
+
+    def test_print_has_required_keys(self):
+        prints = load_prints("general_female")
+        for p in prints:
+            assert "name" in p
+            assert "probability" in p
+            assert "slots" in p
+            assert "formality" in p
+
+    def test_probability_range(self):
+        prints = load_prints("general_female")
+        for p in prints:
+            assert 0.0 <= p["probability"] <= 1.0, f"{p['name']} probability out of range"
+
+    def test_formality_is_tuple(self):
+        prints = load_prints("general_female")
+        for p in prints:
+            assert isinstance(p["formality"], tuple)
+            assert len(p["formality"]) == 2
+            assert p["formality"][0] <= p["formality"][1]
+
+    def test_slots_is_list(self):
+        prints = load_prints("general_female")
+        for p in prints:
+            assert isinstance(p["slots"], list)
+            assert len(p["slots"]) > 0
+
+    def test_nonexistent_file_returns_empty(self):
+        prints = load_prints("nonexistent_set_xyz")
+        assert prints == []
+
+    def test_default_outfit_set(self):
+        prints_default = load_prints()
+        prints_explicit = load_prints("general_female")
+        assert prints_default == prints_explicit
+
+
+class TestLoadTexts:
+    """Tests for load_texts()."""
+
+    def test_returns_non_empty_list(self):
+        texts = load_texts("general_female")
+        assert len(texts) > 0
+
+    def test_text_has_required_keys(self):
+        texts = load_texts("general_female")
+        for t in texts:
+            assert "text" in t
+            assert "probability" in t
+            assert "slots" in t
+            assert "font" in t
+
+    def test_probability_range(self):
+        texts = load_texts("general_female")
+        for t in texts:
+            assert 0.0 <= t["probability"] <= 1.0, f"{t['text']} probability out of range"
+
+    def test_slots_is_list(self):
+        texts = load_texts("general_female")
+        for t in texts:
+            assert isinstance(t["slots"], list)
+            assert len(t["slots"]) > 0
+
+    def test_font_is_string(self):
+        texts = load_texts("general_female")
+        for t in texts:
+            assert isinstance(t["font"], str)
+            assert len(t["font"]) > 0
+
+    def test_nonexistent_file_returns_empty(self):
+        texts = load_texts("nonexistent_set_xyz")
+        assert texts == []
+
+    def test_default_outfit_set(self):
+        texts_default = load_texts()
+        texts_explicit = load_texts("general_female")
+        assert texts_default == texts_explicit
 
 
 class TestCrossValidation:

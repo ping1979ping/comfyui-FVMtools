@@ -1,0 +1,8 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+lace detail | 0.4 | top | 0.4-0.8
+subtle shimmer | 0.4 | top,accessories | 0.4-0.8
+embossed leather | 0.2 | bag,accessories | 0.4-0.8
+delicate embroidery | 0.3 | top | 0.4-0.8
+sequin accent | 0.2 | top,accessories | 0.4-0.9
+dark floral | 0.3 | top,bottom | 0.3-0.7
+metallic thread | 0.2 | top,accessories | 0.4-0.8

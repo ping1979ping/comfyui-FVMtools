@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheath dress | 0.85 | 0.7-1.0 | wool,polyester,cotton
+wrap dress | 0.70 | 0.6-0.9 | silk,jersey,cotton
+shift dress | 0.60 | 0.6-0.8 | cotton,linen,polyester
+pencil dress | 0.75 | 0.7-1.0 | wool,polyester
+fit-and-flare dress | 0.55 | 0.6-0.8 | cotton,polyester,wool
+blazer dress | 0.50 | 0.7-0.9 | wool,polyester
+shirt dress | 0.55 | 0.6-0.8 | cotton,linen,silk
+bodycon dress | 0.40 | 0.5-0.7 | jersey,polyester
+a-line dress | 0.60 | 0.6-0.9 | wool,cotton,polyester
+midi wrap dress | 0.50 | 0.6-0.9 | silk,jersey
+peplum dress | 0.45 | 0.7-0.9 | wool,polyester,cotton
+long-sleeve sheath dress | 0.55 | 0.7-1.0 | wool,polyester

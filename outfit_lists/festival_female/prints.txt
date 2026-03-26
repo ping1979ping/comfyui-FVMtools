@@ -1,0 +1,18 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tie-dye pattern | 0.5 | top,bottom | 0.0-0.3
+psychedelic print | 0.4 | top,bottom | 0.0-0.2
+fringe detail | 0.4 | top,outerwear,bag,accessories | 0.0-0.3
+beaded detail | 0.3 | top,accessories,bag | 0.0-0.3
+patches | 0.3 | outerwear,bag | 0.0-0.3
+body paint effect | 0.2 | top | 0.0-0.1
+glitter detail | 0.4 | top,accessories | 0.0-0.3
+sequin detail | 0.3 | top,accessories | 0.0-0.3
+tribal pattern | 0.3 | top,bottom,accessories | 0.0-0.3
+crochet overlay | 0.3 | top | 0.0-0.3
+holographic detail | 0.3 | top,accessories | 0.0-0.2
+neon print | 0.3 | top,accessories | 0.0-0.2
+mandala print | 0.2 | top,bottom | 0.0-0.3
+ethnic print | 0.3 | top,bottom | 0.0-0.3
+floral embroidery | 0.3 | top,outerwear | 0.0-0.3
+butterfly print | 0.2 | top | 0.0-0.3
+rainbow pattern | 0.3 | top,accessories | 0.0-0.2

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+sequin detail | 0.5 | top,accessories,bag | 0.4-0.9
+glitter detail | 0.4 | top,accessories | 0.3-0.8
+metallic finish | 0.4 | top,bottom,accessories,bag | 0.4-0.9
+rhinestone detail | 0.3 | top,accessories | 0.4-0.9
+animal print | 0.3 | top,bottom,bag | 0.3-0.7
+holographic detail | 0.2 | top,accessories | 0.3-0.7
+lace overlay | 0.3 | top | 0.4-0.8
+abstract shimmer | 0.3 | top,accessories | 0.4-0.8
+embossed detail | 0.2 | bag,accessories | 0.4-0.8
+neon accent | 0.2 | top,accessories | 0.3-0.6
+leopard print | 0.2 | top,bottom,bag | 0.3-0.6

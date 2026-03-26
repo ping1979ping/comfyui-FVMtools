@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VIP" | 0.2 | top | glitter font
+"PARTY" | 0.25 | top | neon lettering
+"LET'S GO" | 0.15 | top | bold metallic
+"ICONIC" | 0.15 | top | sparkle text
+"GLAM" | 0.2 | top | glitter font

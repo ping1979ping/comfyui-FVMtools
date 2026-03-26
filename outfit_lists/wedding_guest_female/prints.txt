@@ -1,0 +1,6 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+lace overlay | 0.4 | top | 0.6-1.0
+beaded detail | 0.3 | top,accessories | 0.6-1.0
+embroidered detail | 0.3 | top | 0.6-1.0
+sequin accent | 0.2 | top,accessories,bag | 0.6-1.0
+delicate floral | 0.3 | top,bottom | 0.5-0.9

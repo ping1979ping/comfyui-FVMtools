@@ -1,0 +1,16 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral print | 0.5 | top,bottom,bag | 0.1-0.6
+abstract graphic | 0.3 | top,bag | 0.0-0.4
+geometric pattern | 0.4 | top,bottom,bag | 0.2-0.7
+striped pattern | 0.6 | top,bottom | 0.1-0.8
+polka dot | 0.3 | top,bottom | 0.2-0.6
+plaid | 0.4 | top,bottom,outerwear | 0.1-0.5
+animal print | 0.3 | top,bottom,bag,accessories | 0.1-0.5
+embroidered logo | 0.3 | top,outerwear,headwear | 0.2-0.7
+brand logo | 0.2 | top,headwear,bag | 0.1-0.5
+distressed details | 0.3 | top,bottom | 0.0-0.3
+lace detail | 0.3 | top,bottom | 0.3-0.8
+sequin detail | 0.2 | top,bag,accessories | 0.4-0.9
+paisley print | 0.3 | top,bottom,bag | 0.2-0.6
+tropical print | 0.3 | top,bottom | 0.0-0.4
+tie-dye pattern | 0.2 | top | 0.0-0.3

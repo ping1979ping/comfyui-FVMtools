@@ -66,6 +66,38 @@ class TestParseOverrides:
         assert "top" in result
 
 
+class TestParseOverridesDecoration:
+    """Tests for decoration field in parse_overrides()."""
+
+    def test_third_field_parsed_as_decoration(self):
+        result = parse_overrides("top: silk blouse | #primary# | floral print")
+        assert result["top"]["decoration"] == "floral print"
+
+    def test_decoration_none_explicit(self):
+        result = parse_overrides("bottom: jeans | #secondary# | none")
+        assert result["bottom"]["decoration"] == "none"
+
+    def test_text_decoration_parsed(self):
+        result = parse_overrides('top: graphic tee | #primary# | text:"STAY WILD" in gothic font')
+        assert result["top"]["decoration"] == '"STAY WILD" in gothic font'
+
+    def test_no_decoration_field_is_none(self):
+        result = parse_overrides("top: silk blouse | #primary#")
+        assert result["top"]["decoration"] is None
+
+    def test_exclude_has_decoration_none(self):
+        result = parse_overrides("top: exclude")
+        assert result["top"]["decoration"] is None
+
+    def test_auto_has_decoration_none(self):
+        result = parse_overrides("top: auto")
+        assert result["top"]["decoration"] is None
+
+    def test_garment_only_no_decoration(self):
+        result = parse_overrides("bottom: jeans")
+        assert result["bottom"]["decoration"] is None
+
+
 class TestResolveWildcards:
     """Tests for resolve_wildcards()."""
 

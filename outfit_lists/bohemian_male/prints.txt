@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+paisley pattern | 0.4 | top | 0.1-0.5
+ethnic print | 0.4 | top | 0.1-0.4
+block print | 0.3 | top | 0.1-0.4
+mandala print | 0.2 | top | 0.0-0.4
+tie-dye pattern | 0.3 | top | 0.0-0.3
+batik print | 0.3 | top | 0.1-0.4
+floral embroidery | 0.3 | top,outerwear | 0.1-0.5
+ikat pattern | 0.2 | top | 0.1-0.4
+tassel detail | 0.2 | outerwear,accessories | 0.0-0.4
+macrame detail | 0.2 | accessories | 0.0-0.3
+fringe detail | 0.2 | outerwear,accessories | 0.0-0.4

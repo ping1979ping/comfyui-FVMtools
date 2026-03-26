@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+retro stripes | 0.4 | top | 0.2-0.6
+paisley print | 0.3 | top | 0.2-0.6
+gingham pattern | 0.3 | top | 0.2-0.5
+plaid pattern | 0.4 | top,outerwear | 0.2-0.6
+houndstooth pattern | 0.3 | top,outerwear | 0.3-0.7
+Art Deco pattern | 0.2 | top,accessories | 0.3-0.7
+geometric retro | 0.3 | top | 0.2-0.6
+polka dot pattern | 0.2 | top | 0.2-0.5
+bowling shirt graphic | 0.2 | top | 0.1-0.4
+argyle pattern | 0.3 | top | 0.3-0.6
+floral print | 0.2 | top | 0.1-0.5

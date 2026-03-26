@@ -1,0 +1,7 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+cable-knit pattern | 0.5 | top,outerwear | 0.2-0.6
+fair isle pattern | 0.4 | top,outerwear | 0.2-0.5
+plaid pattern | 0.5 | top,outerwear,accessories | 0.2-0.6
+faux fur trim | 0.2 | outerwear | 0.2-0.6
+quilted texture | 0.4 | outerwear | 0.2-0.6
+herringbone pattern | 0.3 | outerwear | 0.3-0.7

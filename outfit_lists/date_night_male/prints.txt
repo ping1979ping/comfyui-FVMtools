@@ -1,0 +1,7 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+subtle shimmer | 0.2 | top | 0.4-0.8
+embossed leather | 0.3 | accessories | 0.4-0.8
+delicate embroidery | 0.2 | top | 0.4-0.8
+textured weave | 0.3 | top | 0.4-0.8
+tonal pattern | 0.3 | top | 0.4-0.8
+micro check | 0.2 | top | 0.4-0.7

@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral embroidery | 0.5 | top,outerwear,bag | 0.1-0.5
+mandala print | 0.3 | top,bottom | 0.0-0.4
+paisley pattern | 0.4 | top,bottom,bag | 0.1-0.5
+ethnic print | 0.4 | top,bottom | 0.1-0.4
+tassel detail | 0.4 | top,outerwear,bag,accessories | 0.0-0.4
+macrame detail | 0.3 | top,bag,accessories | 0.0-0.3
+crochet overlay | 0.4 | top | 0.0-0.4
+block print | 0.3 | top,bottom | 0.1-0.4
+tie-dye pattern | 0.3 | top,bottom | 0.0-0.3
+batik print | 0.3 | top,bottom | 0.1-0.4
+fringe detail | 0.3 | outerwear,bag,accessories | 0.0-0.4
+ikat pattern | 0.2 | top,bottom | 0.1-0.4

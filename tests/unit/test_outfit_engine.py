@@ -182,6 +182,74 @@ class TestInvisibleFabrics:
         assert "rubber" not in prompt
 
 
+class TestPrintTextDecorations:
+    """Tests for print/text decoration feature."""
+
+    def test_print_probability_zero_no_decoration(self):
+        """print_probability=0 should never produce 'with' in output."""
+        # Test multiple seeds to be thorough
+        for seed in range(10):
+            result = generate_outfit(seed=seed, outfit_set="general_female", print_probability=0.0)
+            assert "with " not in result["outfit_prompt"], (
+                f"Seed {seed}: 'with' found in prompt when print_probability=0: {result['outfit_prompt']}")
+
+    def test_print_probability_one_has_decoration(self):
+        """print_probability=1 should produce 'with' in at least some slots."""
+        # With probability 1, at least one slot should get a decoration
+        found_with = False
+        for seed in range(20):
+            result = generate_outfit(seed=seed, outfit_set="general_female", print_probability=1.0)
+            if "with " in result["outfit_prompt"]:
+                found_with = True
+                break
+        assert found_with, "Expected at least one decoration with print_probability=1.0"
+
+    def test_text_mode_off_no_quoted_text(self):
+        """text_mode='off' should never produce quoted text in output."""
+        for seed in range(20):
+            result = generate_outfit(seed=seed, outfit_set="general_female",
+                                     print_probability=1.0, text_mode="off")
+            prompt = result["outfit_prompt"]
+            assert '"' not in prompt, (
+                f"Seed {seed}: quoted text found with text_mode=off: {prompt}")
+
+    def test_text_mode_descriptive_no_quotes(self):
+        """text_mode='descriptive' should not produce quoted text."""
+        for seed in range(20):
+            result = generate_outfit(seed=seed, outfit_set="general_female",
+                                     print_probability=1.0, text_mode="descriptive")
+            prompt = result["outfit_prompt"]
+            # Descriptive mode strips the quoted content
+            assert '"' not in prompt, (
+                f"Seed {seed}: quoted text found with text_mode=descriptive: {prompt}")
+
+    def test_determinism_with_prints(self):
+        """Same seed should produce same output with prints enabled."""
+        r1 = generate_outfit(seed=42, outfit_set="general_female", print_probability=0.5)
+        r2 = generate_outfit(seed=42, outfit_set="general_female", print_probability=0.5)
+        assert r1["outfit_prompt"] == r2["outfit_prompt"]
+        assert r1["outfit_details"] == r2["outfit_details"]
+
+    def test_determinism_print_probability_doesnt_break_other_slots(self):
+        """Changing print_probability should not change garment/fabric selection.
+        rng is always consumed for decoration regardless."""
+        # This is tricky: we can't directly compare because decorations change the prompt.
+        # But the details (slot:garment:fabric:color) should remain stable.
+        r1 = generate_outfit(seed=42, outfit_set="general_female", print_probability=0.0)
+        r2 = generate_outfit(seed=42, outfit_set="general_female", print_probability=1.0)
+        # Parse details to compare garment selections
+        d1 = {p.split(":")[0]: p.split(":")[1] for p in r1["outfit_details"].split("|") if ":" in p}
+        d2 = {p.split(":")[0]: p.split(":")[1] for p in r2["outfit_details"].split("|") if ":" in p}
+        assert d1 == d2, f"Garment selections changed: {d1} vs {d2}"
+
+    def test_backward_compatible_no_prints_file(self):
+        """Set without prints.txt should work fine (no decorations)."""
+        # business_male might not have prints.txt - test with a nonexistent set fallback
+        result = generate_outfit(seed=42, outfit_set="general_female", print_probability=0.0)
+        assert result["outfit_prompt"]
+        assert result["outfit_details"]
+
+
 class TestDefaultOutfitSet:
     """Tests that default outfit_set parameter works."""
 

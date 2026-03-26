@@ -1,0 +1,8 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tropical print | 0.5 | top,bottom | 0.0-0.3
+nautical stripes | 0.4 | top | 0.1-0.4
+palm print | 0.4 | top,bottom | 0.0-0.3
+floral print | 0.3 | top | 0.0-0.4
+ombre effect | 0.2 | top | 0.0-0.3
+shell print | 0.1 | top | 0.0-0.3
+hibiscus print | 0.3 | top | 0.0-0.3

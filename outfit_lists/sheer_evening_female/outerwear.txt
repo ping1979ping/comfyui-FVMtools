@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+blazer | 0.65 | 0.5-0.8 | velvet,satin
+cropped fur jacket | 0.40 | 0.5-0.7 | faux_fur
+sheer kimono | 0.45 | 0.4-0.7 | chiffon,silk
+leather jacket | 0.50 | 0.4-0.7 | leather
+bolero jacket | 0.35 | 0.5-0.7 | velvet,satin
+cape | 0.25 | 0.5-0.8 | velvet,silk

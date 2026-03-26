@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+business mini skirt | 0.50 | 0.5-0.7 | cotton,polyester
+short pencil skirt | 0.60 | 0.6-0.8 | wool,cotton,polyester
+tulip skirt | 0.45 | 0.6-0.8 | wool,cotton,silk
+pencil skirt | 0.85 | 0.7-1.0 | wool,cotton,polyester
+a-line skirt | 0.65 | 0.6-0.9 | wool,cotton,tweed
+wrap skirt | 0.50 | 0.6-0.8 | silk,wool,cotton
+pleated skirt | 0.55 | 0.6-0.9 | wool,polyester,cotton
+high-slit pencil skirt | 0.40 | 0.6-0.8 | wool,silk,polyester
+flared skirt | 0.45 | 0.5-0.8 | cotton,wool,polyester
+midi skirt | 0.60 | 0.6-0.9 | silk,wool,cotton
+long a-line skirt | 0.40 | 0.7-1.0 | wool,silk,cotton
+long pleated skirt | 0.35 | 0.7-0.9 | wool,polyester,chiffon

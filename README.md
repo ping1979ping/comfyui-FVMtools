@@ -28,6 +28,7 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
 - [Color Tag Reference](#color-tag-reference)
 - [Outfit Set Customization](#outfit-set-customization)
 - [Z-Image Turbo Compatibility](#z-image-turbo-compatibility)
+- [Detailed Guides](#detailed-guides)
 - [Credits and References](#credits-and-references)
 - [License](#license)
 
@@ -499,7 +500,7 @@ All Fashion Tool nodes appear under **FVM Tools/Fashion** in the ComfyUI menu.
 
 **Display name:** Outfit Generator
 
-Generates seed-controlled outfit descriptions with color tag placeholders, ready for colorization via Prompt Color Replace. Ships with 34 built-in outfit sets (17 themes, each with male and female variants). Outfit list files are plain text and can be edited or extended without restarting ComfyUI.
+Generates seed-controlled outfit descriptions with color tag placeholders, ready for colorization via Prompt Color Replace. Ships with 39 built-in outfit sets covering business, casual, evening, sheer/layered, and many more themes. Outfit list files are plain text and can be edited or extended without restarting ComfyUI.
 
 Each generated outfit assembles garment pieces from the selected outfit set, filtered by the `formality` and `coverage` sliders, and inserts `#color#` tags for later replacement.
 
@@ -536,7 +537,7 @@ Each generated outfit assembles garment pieces from the selected outfit set, fil
 | `outfit_details` | STRING | Breakdown of selected garments |
 | `outfit_info` | STRING | Full generation metadata |
 
-**Available outfit themes:** `general`, `business`, `casual`, `night_out`, `party`, `beach_holiday`, `winter_wonderland`, `festival`, `sporty`, `date_night`, `wedding_guest`, `streetwear`, `bohemian`, `preppy`, `gothic`, `vintage_retro`, `athleisure` -- each with `_female` and `_male` variants.
+**Available outfit themes:** `general`, `business_female_skirt`, `business_female_dress`, `business_female2`, `business_male`, `casual`, `night_out`, `party`, `beach_holiday`, `winter_wonderland`, `festival`, `sporty`, `date_night`, `wedding_guest`, `streetwear`, `bohemian`, `preppy`, `gothic`, `vintage_retro`, `athleisure`, `sheer_business_female`, `sheer_casual_female`, `sheer_evening_female` -- most themes have `_female` and `_male` variants. See the [Outfit Guide](documentation/OUTFIT_GUIDE.md#available-outfit-sets) for the full list of all 39 sets.
 
 #### Usage Example
 
@@ -662,6 +663,19 @@ No user action required. The conversion is logged in the console:
 ```
 [FVMTools] Auto-converting LoRA 'my_lora.safetensors' for Z-Image Turbo QKV format
 ```
+
+---
+
+## Detailed Guides
+
+For in-depth documentation beyond this README, see the guides in the `documentation/` folder:
+
+| Guide | Description |
+|-------|-------------|
+| [Color Guide](documentation/COLOR_GUIDE.md) | Complete reference for Color Palette Generator, Palette From Image, and Prompt Color Replace -- includes style presets, example prompts, and tips for sheer/layered clothing |
+| [Outfit Guide](documentation/OUTFIT_GUIDE.md) | Full guide for the Outfit Generator -- creating custom outfit sets, fabric system, override strings, formality tuning, and layering tips |
+| [Outfit Installation](documentation/OUTFIT_INSTALLATION.md) | Setup and configuration for the outfit system, including custom paths via `outfit_config.ini` |
+| [Person Detailer Spec](documentation/comfyui_person_detailer_spec.md) | Technical specification for the face detection, matching, and per-person LoRA inpainting pipeline |
 
 ---
 

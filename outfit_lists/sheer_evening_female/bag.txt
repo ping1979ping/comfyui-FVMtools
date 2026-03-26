@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+clutch | 0.80 | 0.5-0.8 | satin,leather
+mini bag | 0.60 | 0.4-0.7 | leather,satin
+envelope bag | 0.50 | 0.5-0.8 | satin,leather
+chain strap bag | 0.55 | 0.4-0.7 | leather,velvet
+crystal clutch | 0.35 | 0.5-0.8 | sequin

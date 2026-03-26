@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+crossbody bag | 0.75 | 0.1-0.4 | leather,canvas
+tote bag | 0.65 | 0.2-0.4 | canvas,cotton
+backpack | 0.55 | 0.1-0.3 | nylon,canvas
+mini bag | 0.45 | 0.2-0.4 | leather
+belt bag | 0.35 | 0.1-0.3 | leather,nylon

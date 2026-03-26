@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer mesh top | 0.80 | 0.1-0.4 | mesh
+crop top with visible bralette | 0.75 | 0.1-0.3 | cotton,jersey
+off-shoulder sweater with visible bra strap | 0.65 | 0.2-0.4 | knit,cotton
+tank top with peeking bra straps | 0.70 | 0.1-0.3 | cotton,jersey
+low-cut tank top | 0.70 | 0.1-0.3 | cotton,jersey
+oversized sheer t-shirt | 0.55 | 0.1-0.3 | mesh,chiffon
+lace top with visible bra underneath | 0.60 | 0.2-0.4 | lace,mesh
+thin ribbed top with visible bra | 0.65 | 0.1-0.3 | cotton,jersey
+deep scoop-neck top with peeking bra | 0.60 | 0.1-0.4 | cotton,jersey
+spaghetti strap top with visible bra straps | 0.55 | 0.1-0.3 | cotton,silk
