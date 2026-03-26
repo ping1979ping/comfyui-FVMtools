@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+faux fur jacket | 0.40 | 0.4-0.6 | faux_fur
+sparkle blazer | 0.35 | 0.4-0.6 | sequin,metallic
+cape | 0.15 | 0.5-0.7 | velvet,satin
+cropped jacket | 0.30 | 0.3-0.5 | satin,metallic
+bolero | 0.20 | 0.4-0.6 | sequin,satin

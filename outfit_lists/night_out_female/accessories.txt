@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+statement earrings | 0.75 | 0.5-0.8 | metal
+layered necklaces | 0.55 | 0.4-0.7 | metal
+choker | 0.50 | 0.4-0.6 | velvet,metal,leather
+cocktail ring | 0.45 | 0.5-0.8 | metal
+bangle bracelets | 0.40 | 0.4-0.7 | metal
+cuff bracelet | 0.35 | 0.5-0.7 | metal
+chandelier earrings | 0.30 | 0.6-0.8 | metal
+anklet | 0.20 | 0.3-0.5 | metal

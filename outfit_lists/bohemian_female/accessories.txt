@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+layered necklaces | 0.7 | 0.2-0.4 | cotton,leather
+feather earrings | 0.5 | 0.1-0.3 | leather,cotton
+stackable rings | 0.6 | 0.2-0.4 | cotton,leather
+arm cuff | 0.3 | 0.1-0.3 | leather,suede
+anklet | 0.4 | 0.1-0.3 | cotton,macrame,leather
+dreamcatcher pendant | 0.3 | 0.1-0.3 | leather,cotton,macrame
+beaded bracelet | 0.5 | 0.1-0.3 | cotton,hemp
+body chain | 0.2 | 0.1-0.3 | cotton
+tassel earrings | 0.4 | 0.2-0.4 | cotton,raw silk

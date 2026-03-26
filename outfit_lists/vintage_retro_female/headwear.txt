@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+hair bow | 0.40 | 0.1-0.4 | silk,cotton,satin
+headscarf | 0.35 | 0.1-0.4 | silk,cotton
+
+# mid-casual
+beret | 0.40 | 0.3-0.6 | wool,knit,velvet
+turban | 0.25 | 0.3-0.6 | silk,velvet
+
+# formal
+pillbox hat | 0.30 | 0.5-0.8 | wool,velvet,silk

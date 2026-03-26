@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tailored shorts | 0.45 | 0.2-0.4 | cotton,linen
+
+# mid-casual
+chinos | 0.75 | 0.3-0.6 | cotton,corduroy
+khakis | 0.60 | 0.3-0.6 | cotton
+corduroy pants | 0.40 | 0.3-0.6 | corduroy
+
+# formal
+dress pants | 0.55 | 0.5-0.8 | wool,cotton,linen

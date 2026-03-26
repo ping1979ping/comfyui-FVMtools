@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+pedal pushers | 0.30 | 0.1-0.3 | cotton,denim
+
+# mid-casual
+circle skirt | 0.55 | 0.2-0.5 | cotton,wool,satin
+A-line skirt | 0.55 | 0.2-0.6 | cotton,wool,tweed
+wide-leg trousers | 0.45 | 0.2-0.6 | wool,cotton,linen
+high-waisted pants | 0.50 | 0.2-0.6 | cotton,wool,denim
+
+# formal
+pencil skirt | 0.50 | 0.4-0.8 | wool,satin,silk
+pleated skirt | 0.45 | 0.3-0.7 | wool,cotton,silk

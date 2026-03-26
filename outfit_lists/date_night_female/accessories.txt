@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+delicate necklace | 0.7 | 0.4-0.7 | silk
+stud earrings | 0.8 | 0.4-0.7 | silk
+bracelet | 0.5 | 0.4-0.7 | leather,silk
+watch | 0.4 | 0.4-0.7 | leather
+dangle earrings | 0.5 | 0.5-0.7 | silk
+cocktail ring | 0.3 | 0.5-0.7 | silk
+silk scarf | 0.2 | 0.5-0.7 | silk,chiffon
+anklet | 0.15 | 0.4-0.6 | silk

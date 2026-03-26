@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+mesh top | 0.45 | 0.0-0.3 | mesh
+band tee | 0.40 | 0.0-0.3 | cotton
+
+# mid-casual
+lace top | 0.55 | 0.2-0.5 | lace,mesh
+off-shoulder top | 0.45 | 0.2-0.5 | velvet,lace,cotton
+bell-sleeve top | 0.40 | 0.2-0.6 | velvet,lace,silk
+
+# formal
+corset top | 0.55 | 0.3-0.7 | satin,velvet,leather,PVC
+velvet bustier | 0.40 | 0.3-0.7 | velvet,satin
+Victorian blouse | 0.50 | 0.4-0.8 | lace,silk,satin

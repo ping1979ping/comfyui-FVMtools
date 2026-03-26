@@ -1,0 +1,7 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sneakers | 0.70 | 0.0-0.2 | cotton,rubber
+combat boots | 0.50 | 0.0-0.2 | leather
+sandals | 0.40 | 0.0-0.1 | leather,rubber
+high-tops | 0.45 | 0.0-0.2 | cotton,leather

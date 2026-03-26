@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+leather jacket | 0.60 | 0.1-0.4 | leather,faux leather
+
+# mid-casual
+long coat | 0.50 | 0.2-0.6 | leather,velvet
+leather trench coat | 0.45 | 0.2-0.6 | leather,faux leather
+cape | 0.25 | 0.3-0.7 | velvet,satin
+
+# formal
+Victorian frock coat | 0.40 | 0.4-0.8 | velvet,satin,silk

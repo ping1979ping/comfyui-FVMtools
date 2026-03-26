@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+leather jacket | 0.70 | 0.4-0.6 | leather
+blazer | 0.60 | 0.5-0.7 | wool,cotton
+bomber jacket | 0.50 | 0.3-0.5 | nylon,leather
+suede jacket | 0.30 | 0.4-0.6 | suede
+overcoat | 0.25 | 0.5-0.7 | wool,cashmere

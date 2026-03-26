@@ -1,0 +1,9 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+performance tee | 0.80 | 0.0-0.2 | polyester,nylon
+tank top | 0.65 | 0.0-0.1 | cotton,polyester,mesh
+compression shirt | 0.45 | 0.0-0.1 | spandex,nylon
+polo shirt | 0.50 | 0.1-0.3 | polyester,cotton
+basketball jersey | 0.40 | 0.0-0.1 | polyester,mesh
+sleeveless tee | 0.55 | 0.0-0.1 | cotton,polyester

@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+wide-brim hat | 0.5 | 0.2-0.4 | cotton,linen,hemp
+flower crown | 0.3 | 0.1-0.3 | cotton,lace
+headscarf | 0.4 | 0.2-0.4 | cotton,chiffon,raw silk
+turban | 0.3 | 0.2-0.4 | cotton,velvet,linen
+bandana | 0.4 | 0.1-0.3 | cotton,embroidered cotton
+floppy hat | 0.3 | 0.2-0.4 | cotton,linen
+hair wrap | 0.3 | 0.1-0.3 | cotton,gauze

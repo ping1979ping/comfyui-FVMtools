@@ -1,0 +1,10 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dress shirt | 0.90 | 0.7-1.0 | cotton,linen
+button-down shirt | 0.80 | 0.6-0.9 | cotton,linen
+polo shirt | 0.45 | 0.5-0.7 | cotton,jersey
+turtleneck | 0.40 | 0.6-0.8 | wool,cashmere
+henley | 0.30 | 0.5-0.7 | cotton,jersey
+crew neck sweater | 0.50 | 0.6-0.8 | wool,cashmere,cotton
+v-neck sweater | 0.45 | 0.6-0.8 | wool,cashmere

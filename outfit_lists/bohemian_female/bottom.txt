@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+maxi skirt | 0.8 | 0.2-0.4 | cotton,chiffon,gauze,linen
+wide-leg pants | 0.6 | 0.2-0.4 | cotton,linen,hemp
+flared pants | 0.5 | 0.2-0.4 | cotton,velvet,linen
+tiered skirt | 0.6 | 0.2-0.4 | cotton,chiffon,gauze,embroidered cotton
+palazzo pants | 0.5 | 0.2-0.4 | linen,cotton,chiffon
+wrap skirt | 0.5 | 0.2-0.4 | cotton,raw silk,linen
+handkerchief skirt | 0.3 | 0.2-0.4 | chiffon,gauze,cotton
+harem pants | 0.3 | 0.1-0.3 | cotton,linen,gauze

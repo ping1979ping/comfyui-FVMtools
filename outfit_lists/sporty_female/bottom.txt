@@ -1,0 +1,9 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+yoga pants | 0.70 | 0.0-0.1 | spandex,nylon
+leggings | 0.75 | 0.0-0.2 | spandex,polyester
+running shorts | 0.65 | 0.0-0.1 | polyester,nylon
+tennis skirt | 0.45 | 0.1-0.3 | polyester,nylon
+track pants | 0.50 | 0.0-0.2 | polyester,nylon
+biker shorts | 0.55 | 0.0-0.1 | spandex,nylon

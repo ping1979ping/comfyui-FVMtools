@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+shorts | 0.50 | 0.0-0.2 | cotton,nylon,linen
+joggers | 0.45 | 0.0-0.2 | cotton,fleece,jersey,polyester
+cargo pants | 0.40 | 0.0-0.3 | cotton,canvas,nylon
+jeans | 0.80 | 0.0-0.4 | denim
+
+# mid-casual
+chinos | 0.65 | 0.2-0.6 | cotton,corduroy
+
+# formal
+dress pants | 0.60 | 0.4-0.8 | wool,cotton,linen,polyester
+suit trousers | 0.50 | 0.6-1.0 | wool,polyester

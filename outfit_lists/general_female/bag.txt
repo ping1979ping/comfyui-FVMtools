@@ -1,0 +1,20 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+backpack | 0.55 | 0.0-0.2 | nylon,canvas,polyester
+fanny pack | 0.30 | 0.0-0.2 | nylon,canvas,leather
+
+# mid-casual
+tote bag | 0.50 | 0.1-0.5 | canvas,cotton,leather
+crossbody bag | 0.50 | 0.1-0.5 | leather,nylon,canvas
+satchel | 0.35 | 0.2-0.6 | leather,canvas
+
+# mid-formal
+shoulder bag | 0.45 | 0.3-0.7 | leather,suede
+bucket bag | 0.30 | 0.3-0.7 | leather,suede,canvas
+handbag | 0.50 | 0.4-0.8 | leather,suede,satin
+mini bag | 0.30 | 0.4-0.9 | leather,satin,velvet
+
+# formal
+clutch | 0.40 | 0.6-1.0 | satin,velvet,leather,silk

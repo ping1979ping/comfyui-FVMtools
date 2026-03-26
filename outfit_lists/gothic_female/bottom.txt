@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ripped fishnet leggings | 0.35 | 0.0-0.3 | mesh
+leather pants | 0.50 | 0.1-0.4 | leather,faux leather
+
+# mid-casual
+long skirt | 0.55 | 0.2-0.6 | velvet,lace,satin
+velvet skirt | 0.50 | 0.2-0.6 | velvet
+tulle skirt | 0.40 | 0.2-0.6 | tulle
+
+# formal
+pleated maxi skirt | 0.45 | 0.3-0.7 | velvet,satin,silk
+pencil skirt | 0.40 | 0.4-0.7 | leather,faux leather,velvet,satin

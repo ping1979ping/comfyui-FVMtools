@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+hoodie | 0.70 | 0.1-0.3 | fleece,cotton
+denim jacket | 0.65 | 0.2-0.4 | denim
+bomber jacket | 0.50 | 0.2-0.4 | nylon,polyester
+windbreaker | 0.40 | 0.1-0.3 | nylon,polyester
+zip-up hoodie | 0.60 | 0.1-0.3 | fleece,cotton
+flannel overshirt | 0.45 | 0.2-0.4 | cotton,flannel
+puffer vest | 0.30 | 0.2-0.3 | nylon,polyester

@@ -1,0 +1,7 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+track jacket | 0.60 | 0.0-0.2 | polyester,nylon
+windbreaker | 0.50 | 0.0-0.2 | nylon,polyester
+zip-up hoodie | 0.55 | 0.0-0.2 | fleece,cotton
+puffer vest | 0.30 | 0.1-0.3 | nylon,polyester

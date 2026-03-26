@@ -1,0 +1,13 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+mesh | 0.1 | sporty | light
+nylon | 0.15 | sporty | light
+polyester | 0.2 | sporty | light
+spandex | 0.1 | sporty | light
+jersey | 0.1 | casual | light
+cotton | 0.2 | natural | medium
+fleece | 0.1 | casual | medium
+
+# special materials
+metal | 0.5 | luxury | heavy

@@ -1,0 +1,25 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+hair clip | 0.40 | 0.0-0.4 | polyester,metal
+anklet | 0.20 | 0.0-0.3 | metal,leather
+bracelet | 0.50 | 0.0-0.6 | metal,leather
+ring | 0.55 | 0.0-0.8 | metal
+
+# mid-casual
+sunglasses | 0.55 | 0.0-0.6 | plastic,metal
+belt | 0.60 | 0.1-0.8 | leather,canvas,suede
+chain | 0.35 | 0.1-0.5 | metal
+scarf | 0.35 | 0.2-0.7 | silk,wool,cashmere,cotton
+
+# mid-formal
+earrings | 0.55 | 0.2-1.0 | metal
+necklace | 0.55 | 0.2-1.0 | metal
+watch | 0.50 | 0.2-1.0 | metal,leather
+pendant | 0.40 | 0.2-1.0 | metal
+
+# formal
+cuff | 0.20 | 0.4-1.0 | metal
+choker | 0.25 | 0.3-0.8 | velvet,leather,lace,metal
+brooch | 0.15 | 0.5-1.0 | metal

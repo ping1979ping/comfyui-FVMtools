@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+
+cotton | 0.3 | natural | medium
+silk | 0.6 | natural | light
+denim | 0.3 | natural | heavy
+velvet | 0.6 | natural | medium
+sequin | 0.5 | embellished | light
+metallic | 0.5 | synthetic | light
+polyester | 0.3 | synthetic | medium
+nylon | 0.3 | synthetic | light
+leather | 0.5 | animal | medium
+suede | 0.5 | animal | medium
+jersey | 0.3 | knit | light
+canvas | 0.2 | natural | heavy
+felt | 0.4 | natural | medium
+wool | 0.5 | natural | medium
+metal | 0.4 | accessories | light

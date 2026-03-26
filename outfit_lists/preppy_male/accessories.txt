@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+watch | 0.60 | 0.3-0.8 | metal,leather
+belt | 0.65 | 0.3-0.8 | leather,suede
+
+# formal
+tie | 0.40 | 0.5-0.8 | silk,wool,cotton
+bow tie | 0.25 | 0.5-0.8 | silk,cotton
+pocket square | 0.30 | 0.5-0.8 | silk,cotton,linen

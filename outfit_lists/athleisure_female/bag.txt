@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+belt bag | 0.45 | 0.0-0.2 | nylon,polyester
+mini backpack | 0.50 | 0.0-0.2 | nylon,polyester
+
+# mid-casual
+crossbody bag | 0.45 | 0.1-0.3 | nylon,polyester
+gym tote | 0.40 | 0.0-0.2 | nylon,cotton

@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+cuffed jeans | 0.50 | 0.0-0.3 | denim
+corduroy pants | 0.40 | 0.1-0.4 | corduroy
+
+# mid-casual
+wide-leg pants | 0.45 | 0.2-0.5 | cotton,wool,linen
+pleated pants | 0.50 | 0.2-0.6 | wool,cotton
+
+# formal
+high-waisted trousers | 0.55 | 0.4-0.8 | wool,tweed,cotton

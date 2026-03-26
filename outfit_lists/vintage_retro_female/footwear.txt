@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+saddle shoes | 0.35 | 0.1-0.3 | leather
+wedge sandals | 0.40 | 0.1-0.4 | leather,suede
+
+# mid-casual
+Mary Janes | 0.55 | 0.2-0.6 | leather,suede
+platform shoes | 0.40 | 0.2-0.5 | leather,suede
+go-go boots | 0.30 | 0.2-0.5 | leather
+
+# formal
+kitten heels | 0.50 | 0.4-0.8 | leather,suede,satin

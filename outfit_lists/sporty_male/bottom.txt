@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+basketball shorts | 0.70 | 0.0-0.1 | polyester,mesh
+track pants | 0.60 | 0.0-0.2 | polyester,nylon
+running shorts | 0.65 | 0.0-0.1 | polyester,nylon
+compression leggings | 0.35 | 0.0-0.1 | spandex,nylon
+joggers | 0.55 | 0.0-0.2 | cotton,polyester

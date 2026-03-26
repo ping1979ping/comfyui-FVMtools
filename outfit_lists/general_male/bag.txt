@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+backpack | 0.55 | 0.0-0.2 | nylon,canvas,polyester
+gym bag | 0.30 | 0.0-0.2 | nylon,polyester
+
+# mid-casual
+messenger bag | 0.45 | 0.2-0.6 | leather,canvas,nylon
+
+# formal
+briefcase | 0.40 | 0.5-1.0 | leather

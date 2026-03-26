@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tank top | 0.40 | 0.0-0.1 | cotton,jersey,mesh
+fitted tee | 0.65 | 0.0-0.2 | cotton,jersey,polyester
+crew neck sweatshirt | 0.50 | 0.0-0.2 | cotton,fleece
+
+# mid-casual
+hoodie | 0.60 | 0.0-0.3 | cotton,fleece,polyester
+quarter-zip | 0.50 | 0.1-0.3 | polyester,nylon,fleece
+performance polo | 0.45 | 0.1-0.3 | polyester,nylon

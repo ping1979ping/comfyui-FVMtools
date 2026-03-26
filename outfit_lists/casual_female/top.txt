@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+t-shirt | 0.90 | 0.1-0.4 | cotton,jersey
+tank top | 0.70 | 0.1-0.3 | cotton,jersey
+crop top | 0.60 | 0.1-0.3 | cotton,jersey,knit
+hoodie | 0.65 | 0.1-0.3 | fleece,cotton
+sweater | 0.70 | 0.2-0.4 | knit,cotton
+flannel shirt | 0.50 | 0.2-0.4 | cotton,flannel
+tube top | 0.35 | 0.1-0.2 | jersey,cotton
+off-shoulder top | 0.45 | 0.2-0.4 | cotton,jersey,knit
+graphic tee | 0.65 | 0.1-0.3 | cotton,jersey
+henley | 0.40 | 0.2-0.4 | cotton,jersey

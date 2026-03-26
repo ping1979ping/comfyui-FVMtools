@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+polo shirt | 0.75 | 0.2-0.5 | cotton,knit
+cable-knit sweater | 0.60 | 0.2-0.6 | wool,cashmere,cotton
+
+# mid-casual
+argyle vest | 0.40 | 0.3-0.6 | wool,knit,cotton
+turtleneck | 0.50 | 0.3-0.7 | wool,cashmere,cotton,silk
+peter pan collar blouse | 0.55 | 0.3-0.7 | cotton,silk
+
+# formal
+button-down shirt | 0.70 | 0.4-0.8 | cotton,linen,silk
+fitted sweater | 0.45 | 0.3-0.6 | cashmere,wool,cotton

@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+leather messenger | 0.35 | 0.3-0.6 | leather
+
+# formal
+briefcase | 0.25 | 0.5-0.8 | leather

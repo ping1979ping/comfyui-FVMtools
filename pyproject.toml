@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short --import-mode=importlib"
+markers = [
+    "slow: Langsame Tests (> 5s)",
+    "gpu: Tests die CUDA brauchen",
+    "integration: Braucht laufendes ComfyUI",
+]

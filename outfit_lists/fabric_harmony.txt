@@ -1,0 +1,6 @@
+# format: family | compatible_families (comma-separated)
+luxury | luxury,natural
+natural | natural,luxury,casual
+casual | casual,natural,sporty
+tough | tough,casual,sporty
+sporty | sporty,casual,tough

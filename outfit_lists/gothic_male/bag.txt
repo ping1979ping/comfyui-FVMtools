@@ -1,0 +1,5 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+chain bag | 0.20 | 0.2-0.5 | leather,faux leather

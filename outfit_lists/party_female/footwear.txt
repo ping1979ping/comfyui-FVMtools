@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+platform heels | 0.75 | 0.4-0.6 | satin,metallic
+glitter heels | 0.60 | 0.4-0.6 | glitter,metallic
+ankle boots | 0.50 | 0.3-0.5 | metallic,satin
+strappy sandals | 0.55 | 0.4-0.6 | satin,metallic
+platform boots | 0.40 | 0.3-0.5 | metallic,satin
+stilettos | 0.45 | 0.5-0.7 | satin,metallic
+sparkle flats | 0.30 | 0.3-0.5 | glitter,sequin

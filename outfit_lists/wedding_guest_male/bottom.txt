@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+suit trousers | 0.9 | 0.8-1.0 | wool,wool blend
+dress pants | 0.7 | 0.7-1.0 | wool,wool blend,twill
+flat-front trousers | 0.5 | 0.7-0.9 | wool blend,twill
+pleated trousers | 0.3 | 0.8-1.0 | wool,wool blend
+morning trousers | 0.1 | 0.9-1.0 | wool
+linen trousers | 0.2 | 0.7-0.9 | linen

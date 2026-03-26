@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neckerchief | 0.30 | 0.1-0.4 | silk,cotton
+
+# mid-casual
+aviator sunglasses | 0.50 | 0.2-0.6 | metal
+suspenders | 0.40 | 0.2-0.6 | leather,cotton
+signet ring | 0.35 | 0.2-0.6 | metal
+
+# formal
+pocket watch | 0.25 | 0.4-0.8 | metal
+tie clip | 0.30 | 0.5-0.8 | metal

@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+lace headband | 0.40 | 0.1-0.4 | lace
+
+# mid-casual
+hair comb | 0.35 | 0.2-0.6 | metal
+dark flower crown | 0.30 | 0.2-0.6 | silk,velvet
+
+# formal
+veil | 0.30 | 0.3-0.7 | lace,tulle,mesh
+top hat | 0.20 | 0.4-0.8 | velvet,satin

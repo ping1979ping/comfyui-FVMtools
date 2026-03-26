@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+headband | 0.55 | 0.1-0.5 | silk,cotton
+
+# mid-casual
+ribbon belt | 0.45 | 0.2-0.6 | silk,cotton
+watch | 0.55 | 0.3-0.8 | metal,leather
+
+# formal
+pearl earrings | 0.50 | 0.4-0.8 | metal
+brooch | 0.30 | 0.5-0.8 | metal
+collar pin | 0.25 | 0.5-0.8 | metal

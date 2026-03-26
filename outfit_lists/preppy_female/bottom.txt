@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tailored shorts | 0.45 | 0.2-0.4 | cotton,linen
+capri pants | 0.35 | 0.2-0.4 | cotton,linen
+tennis skirt | 0.40 | 0.2-0.4 | cotton,knit
+
+# mid-casual
+chinos | 0.65 | 0.3-0.6 | cotton,tweed,corduroy
+A-line skirt | 0.55 | 0.3-0.7 | cotton,wool,tweed
+
+# formal
+pleated skirt | 0.60 | 0.4-0.8 | wool,cotton,silk
+dress pants | 0.50 | 0.5-0.8 | wool,cotton,linen

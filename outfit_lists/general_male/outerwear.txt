@@ -1,0 +1,16 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+denim jacket | 0.50 | 0.0-0.3 | denim
+bomber jacket | 0.45 | 0.1-0.4 | nylon,leather,polyester
+hoodie | 0.55 | 0.0-0.3 | cotton,fleece
+vest | 0.35 | 0.0-0.4 | nylon,fleece,denim
+
+# mid-casual
+leather jacket | 0.45 | 0.2-0.6 | leather,suede
+jacket | 0.55 | 0.2-0.6 | cotton,nylon,leather
+
+# formal
+blazer | 0.60 | 0.5-1.0 | wool,cotton,linen,tweed
+coat | 0.40 | 0.4-0.9 | wool,cotton,polyester

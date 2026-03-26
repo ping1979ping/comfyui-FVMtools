@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tank top | 0.35 | 0.0-0.1 | cotton,jersey
+t-shirt | 0.85 | 0.0-0.3 | cotton,jersey,polyester
+hoodie | 0.55 | 0.0-0.3 | cotton,fleece,jersey
+henley | 0.45 | 0.1-0.4 | cotton,jersey
+
+# mid-casual
+polo shirt | 0.55 | 0.2-0.5 | cotton,jersey,knit
+sweater | 0.55 | 0.2-0.5 | wool,cashmere,knit,cotton
+turtleneck | 0.40 | 0.3-0.7 | wool,cashmere,knit,cotton
+
+# formal
+button-down shirt | 0.65 | 0.3-0.7 | cotton,linen
+dress shirt | 0.60 | 0.5-1.0 | cotton,silk,linen

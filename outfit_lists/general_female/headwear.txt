@@ -1,0 +1,18 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+baseball cap | 0.60 | 0.0-0.2 | cotton,polyester,nylon
+bandana | 0.30 | 0.0-0.2 | cotton,polyester
+visor | 0.20 | 0.0-0.2 | cotton,nylon,polyester
+beanie | 0.55 | 0.0-0.3 | knit,wool,cotton,fleece
+bucket hat | 0.35 | 0.0-0.3 | cotton,nylon,canvas
+
+# mid-casual
+headband | 0.45 | 0.1-0.5 | cotton,silk,velvet,knit
+sun hat | 0.40 | 0.1-0.5 | cotton,linen,canvas
+
+# formal
+beret | 0.30 | 0.3-0.8 | wool,knit,velvet
+fedora | 0.25 | 0.4-0.9 | wool,cotton,linen
+wide-brim hat | 0.20 | 0.4-1.0 | wool,cotton,linen

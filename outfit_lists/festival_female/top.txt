@@ -1,0 +1,10 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+crop top | 0.80 | 0.0-0.2 | cotton,mesh,sequin
+bandeau | 0.55 | 0.0-0.1 | cotton,sequin
+crochet top | 0.60 | 0.0-0.2 | crochet
+tie-dye top | 0.50 | 0.0-0.2 | cotton,tie-dye
+mesh top | 0.45 | 0.0-0.2 | mesh
+fringe top | 0.40 | 0.0-0.2 | suede,fringe
+bralette | 0.50 | 0.0-0.1 | cotton,mesh,lace

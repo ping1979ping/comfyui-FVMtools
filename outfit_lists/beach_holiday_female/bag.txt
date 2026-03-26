@@ -1,0 +1,7 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+straw bag | 0.65 | 0.0-0.2 | straw
+beach tote | 0.70 | 0.0-0.2 | cotton,mesh
+mesh bag | 0.45 | 0.0-0.1 | mesh
+woven clutch | 0.30 | 0.1-0.3 | straw,cotton

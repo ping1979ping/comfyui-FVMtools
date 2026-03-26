@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+creepers | 0.35 | 0.0-0.3 | leather,faux leather
+combat boots | 0.60 | 0.0-0.4 | leather,faux leather
+
+# mid-casual
+platform boots | 0.65 | 0.1-0.5 | leather,faux leather,PVC
+buckle boots | 0.50 | 0.1-0.5 | leather,faux leather
+
+# formal
+stiletto boots | 0.45 | 0.3-0.7 | leather,velvet,satin
+Victorian boots | 0.40 | 0.4-0.8 | leather

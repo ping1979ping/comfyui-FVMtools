@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+basket bag | 0.30 | 0.1-0.3 | cotton
+
+# mid-casual
+vinyl bag | 0.35 | 0.2-0.5 | leather
+chain strap bag | 0.40 | 0.2-0.6 | leather,satin
+
+# formal
+box bag | 0.45 | 0.4-0.7 | leather
+structured handbag | 0.50 | 0.4-0.8 | leather,suede

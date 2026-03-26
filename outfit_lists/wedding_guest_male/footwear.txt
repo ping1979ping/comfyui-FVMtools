@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oxford shoes | 0.8 | 0.8-1.0 | leather
+derby shoes | 0.6 | 0.7-0.9 | leather
+loafers | 0.4 | 0.7-0.9 | leather
+monk strap shoes | 0.4 | 0.7-1.0 | leather
+cap-toe oxfords | 0.5 | 0.8-1.0 | leather
+brogues | 0.3 | 0.7-0.9 | leather

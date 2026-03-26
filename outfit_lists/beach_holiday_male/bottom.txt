@@ -1,0 +1,7 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+swim trunks | 0.85 | 0.0-0.1 | nylon,polyester
+board shorts | 0.70 | 0.0-0.1 | nylon,polyester
+linen shorts | 0.55 | 0.1-0.3 | linen
+cargo shorts | 0.45 | 0.0-0.2 | cotton

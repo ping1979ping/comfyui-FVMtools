@@ -1,0 +1,9 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+watch | 0.75 | 0.4-0.7 | metal,leather
+chain necklace | 0.40 | 0.3-0.5 | metal
+signet ring | 0.30 | 0.4-0.7 | metal
+leather bracelet | 0.35 | 0.3-0.5 | leather
+belt | 0.65 | 0.4-0.6 | leather
+sunglasses | 0.30 | 0.3-0.5 | metal

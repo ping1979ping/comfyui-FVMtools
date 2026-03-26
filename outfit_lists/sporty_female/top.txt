@@ -1,0 +1,9 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sports bra | 0.75 | 0.0-0.1 | spandex,polyester,nylon
+tank top | 0.70 | 0.0-0.2 | polyester,cotton,mesh
+racerback top | 0.60 | 0.0-0.1 | polyester,nylon,spandex
+compression top | 0.45 | 0.0-0.1 | spandex,nylon
+crop tank | 0.55 | 0.0-0.1 | cotton,polyester
+performance tee | 0.65 | 0.0-0.2 | polyester,nylon

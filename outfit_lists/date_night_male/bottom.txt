@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+dark jeans | 0.7 | 0.4-0.6 | denim
+chinos | 0.7 | 0.4-0.6 | cotton,twill
+tailored trousers | 0.6 | 0.5-0.7 | wool blend,cotton,twill
+slim pants | 0.5 | 0.4-0.6 | cotton,twill,wool blend
+dress pants | 0.4 | 0.5-0.7 | wool blend,twill
+flat-front trousers | 0.4 | 0.5-0.7 | wool blend,cotton

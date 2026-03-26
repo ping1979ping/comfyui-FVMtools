@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+denim jacket | 0.45 | 0.0-0.3 | denim
+leather jacket | 0.50 | 0.1-0.4 | leather
+varsity jacket | 0.40 | 0.1-0.4 | wool,leather,cotton
+
+# mid-casual
+harrington jacket | 0.45 | 0.2-0.5 | cotton
+
+# formal
+tweed blazer | 0.50 | 0.4-0.8 | tweed,wool

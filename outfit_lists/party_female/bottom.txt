@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mini skirt | 0.75 | 0.3-0.5 | sequin,satin,metallic
+hot pants | 0.45 | 0.3-0.4 | satin,sequin
+sparkle skirt | 0.55 | 0.4-0.6 | sequin,glitter
+tutu skirt | 0.30 | 0.3-0.5 | tulle
+metallic skirt | 0.50 | 0.4-0.6 | metallic,satin
+bodycon skirt | 0.60 | 0.4-0.6 | satin,velvet
+sequin pants | 0.35 | 0.4-0.6 | sequin
+high-waisted shorts | 0.40 | 0.3-0.5 | satin,metallic

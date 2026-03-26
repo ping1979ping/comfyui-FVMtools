@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+running shoes | 0.80 | 0.0-0.1 | mesh,rubber
+basketball shoes | 0.55 | 0.0-0.1 | leather,rubber
+training shoes | 0.65 | 0.0-0.2 | mesh,rubber
+high-tops | 0.45 | 0.0-0.2 | leather,cotton,rubber
+cleats | 0.25 | 0.0-0.1 | rubber,nylon

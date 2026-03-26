@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wool trousers | 0.65 | 0.4-0.7 | wool,tweed
+corduroy pants | 0.60 | 0.2-0.5 | corduroy
+insulated pants | 0.45 | 0.1-0.3 | nylon,polyester
+cargo pants | 0.40 | 0.1-0.3 | cotton,nylon
+chinos | 0.50 | 0.3-0.5 | cotton,wool

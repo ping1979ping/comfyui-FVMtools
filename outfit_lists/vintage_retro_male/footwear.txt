@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+converse | 0.40 | 0.0-0.3 | cotton
+saddle shoes | 0.35 | 0.1-0.4 | leather
+
+# mid-casual
+Chelsea boots | 0.50 | 0.2-0.6 | leather,suede
+desert boots | 0.45 | 0.2-0.5 | suede,leather
+loafers | 0.50 | 0.3-0.6 | leather,suede
+
+# formal
+wingtip shoes | 0.45 | 0.5-0.8 | leather

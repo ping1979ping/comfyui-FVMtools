@@ -1,0 +1,25 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+bikini bottoms | 0.10 | 0.0-0.1 | nylon,polyester
+shorts | 0.55 | 0.0-0.2 | cotton,denim,nylon,linen
+joggers | 0.45 | 0.0-0.2 | cotton,fleece,jersey,polyester
+cargo pants | 0.40 | 0.0-0.3 | cotton,canvas,nylon
+leggings | 0.55 | 0.0-0.3 | nylon,polyester,jersey,cotton
+jeans | 0.80 | 0.0-0.4 | denim
+
+# mid-casual
+mini skirt | 0.45 | 0.1-0.5 | denim,cotton,leather,polyester
+culottes | 0.30 | 0.2-0.5 | cotton,linen,polyester
+wide-leg pants | 0.45 | 0.2-0.6 | linen,cotton,polyester,wool
+maxi skirt | 0.40 | 0.2-0.6 | cotton,chiffon,linen,jersey
+
+# mid-formal
+skirt | 0.60 | 0.3-0.7 | cotton,wool,polyester,silk
+palazzo pants | 0.35 | 0.3-0.7 | silk,chiffon,linen,polyester
+pleated skirt | 0.40 | 0.3-0.8 | polyester,wool,cotton,silk
+
+# formal
+trousers | 0.70 | 0.4-1.0 | wool,cotton,linen,polyester
+pencil skirt | 0.45 | 0.5-1.0 | wool,cotton,leather,satin

@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+blouse | 0.85 | 0.6-0.9 | silk,cotton,chiffon
+silk shirt | 0.70 | 0.7-1.0 | silk
+button-down shirt | 0.75 | 0.6-0.9 | cotton,linen
+cashmere sweater | 0.50 | 0.6-0.8 | cashmere
+shell top | 0.60 | 0.7-0.9 | silk,cotton
+turtleneck | 0.55 | 0.6-0.8 | cashmere,wool,cotton
+wrap top | 0.45 | 0.6-0.8 | silk,jersey
+peplum top | 0.40 | 0.7-0.9 | cotton,polyester
+fitted knit top | 0.50 | 0.5-0.7 | wool,cashmere

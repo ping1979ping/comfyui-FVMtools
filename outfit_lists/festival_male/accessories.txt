@@ -1,0 +1,8 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sunglasses | 0.75 | 0.0-0.3 | plastic
+bandana | 0.45 | 0.0-0.1 | cotton,tie-dye
+beaded necklace | 0.35 | 0.0-0.1 | wood
+wristband | 0.50 | 0.0-0.1 | leather,cotton
+chain | 0.30 | 0.0-0.2 | metal

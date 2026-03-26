@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+wristband | 0.30 | 0.0-0.2 | cotton,nylon
+
+# mid-casual
+sports watch | 0.50 | 0.0-0.3 | metal
+sunglasses | 0.45 | 0.0-0.3 | metal
+cap | 0.40 | 0.0-0.3 | cotton,nylon

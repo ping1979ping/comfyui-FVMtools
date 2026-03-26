@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+studded clutch | 0.35 | 0.1-0.4 | leather,faux leather
+
+# mid-casual
+coffin bag | 0.40 | 0.2-0.5 | leather,faux leather,velvet
+chain bag | 0.45 | 0.2-0.6 | leather,faux leather,velvet
+
+# formal
+leather satchel | 0.40 | 0.3-0.7 | leather

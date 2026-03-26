@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sandals | 0.35 | 0.0-0.2 | leather,nylon
+sneakers | 0.80 | 0.0-0.3 | canvas,leather,nylon,mesh
+high-tops | 0.35 | 0.0-0.3 | canvas,leather
+
+# mid-casual
+boots | 0.50 | 0.2-0.6 | leather,suede
+Chelsea boots | 0.45 | 0.2-0.7 | leather,suede
+loafers | 0.50 | 0.3-0.7 | leather,suede
+
+# formal
+oxford shoes | 0.50 | 0.5-1.0 | leather

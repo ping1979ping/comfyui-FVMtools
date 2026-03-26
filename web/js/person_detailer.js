@@ -77,9 +77,27 @@ app.registerExtension({
             if (this._pdInfo) {
                 ctx.save();
                 ctx.font = "11px Arial";
-                ctx.fillStyle = "#8f8";
                 ctx.textAlign = "left";
-                ctx.fillText(this._pdInfo, 10, this.size[1] - 6);
+
+                const parts = this._pdInfo.split(" | ");
+                const lineH = 14;
+                let y = this.size[1] - 6;
+
+                for (let i = parts.length - 1; i >= 0; i--) {
+                    const part = parts[i].trim();
+                    // Color based on content
+                    if (part.includes("no input") || part.includes("no ref") || part.includes("skip")) {
+                        ctx.fillStyle = "#f88"; // red for warnings
+                    } else if (part.startsWith("Generic")) {
+                        ctx.fillStyle = "#ff8"; // yellow for generic
+                    } else if (part.includes("aux(0)") || part.includes("0 faces")) {
+                        ctx.fillStyle = "#888"; // gray for empty
+                    } else {
+                        ctx.fillStyle = "#8f8"; // green for active
+                    }
+                    ctx.fillText(part, 10, y);
+                    y -= lineH;
+                }
                 ctx.restore();
             }
             return r;

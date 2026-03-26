@@ -1,0 +1,8 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sunglasses | 0.85 | 0.0-0.3 | plastic
+anklet | 0.45 | 0.0-0.2 | metal
+shell necklace | 0.50 | 0.0-0.2 | shell
+straw bracelet | 0.35 | 0.0-0.1 | straw
+body chain | 0.25 | 0.0-0.2 | metal

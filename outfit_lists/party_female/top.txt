@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sequin top | 0.75 | 0.4-0.7 | sequin,metallic
+bandeau top | 0.50 | 0.3-0.5 | satin,velvet
+off-shoulder top | 0.60 | 0.4-0.6 | satin,chiffon,mesh
+crop top | 0.70 | 0.3-0.5 | sequin,metallic,satin
+bodysuit | 0.55 | 0.4-0.6 | mesh,satin,velvet
+halter top | 0.50 | 0.4-0.6 | satin,sequin
+glitter top | 0.45 | 0.3-0.5 | glitter,metallic
+tube top | 0.40 | 0.3-0.5 | satin,sequin
+corset top | 0.35 | 0.4-0.6 | satin,velvet

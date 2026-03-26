@@ -1,0 +1,10 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+peasant blouse | 0.8 | 0.2-0.4 | cotton,embroidered cotton,gauze
+crochet top | 0.6 | 0.1-0.3 | crochet,cotton
+off-shoulder top | 0.6 | 0.2-0.4 | cotton,linen,chiffon
+wrap top | 0.6 | 0.2-0.4 | cotton,raw silk,chiffon
+embroidered top | 0.7 | 0.2-0.4 | embroidered cotton,cotton,linen
+flowy tunic | 0.7 | 0.2-0.4 | cotton,gauze,muslin,linen
+halter top | 0.4 | 0.1-0.3 | cotton,crochet,linen
+tie-front blouse | 0.5 | 0.2-0.4 | cotton,chiffon,linen

@@ -1,0 +1,6 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+leather tote | 0.60 | 0.3-0.6 | leather
+structured handbag | 0.50 | 0.4-0.7 | leather,suede
+quilted bag | 0.45 | 0.3-0.6 | polyester,leather

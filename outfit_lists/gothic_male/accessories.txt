@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+spiked bracelet | 0.40 | 0.0-0.3 | metal,leather
+silver rings | 0.55 | 0.0-0.5 | metal
+
+# mid-casual
+chain necklace | 0.50 | 0.1-0.5 | metal
+cross pendant | 0.45 | 0.1-0.5 | metal
+eyeliner | 0.40 | 0.0-0.5 | cotton

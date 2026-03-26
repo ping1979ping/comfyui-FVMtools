@@ -1,0 +1,9 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tank top | 0.70 | 0.0-0.1 | cotton,mesh
+open shirt | 0.55 | 0.0-0.2 | cotton,linen
+graphic tee | 0.75 | 0.0-0.2 | cotton
+mesh top | 0.35 | 0.0-0.1 | mesh
+Hawaiian shirt | 0.45 | 0.0-0.2 | cotton,polyester
+tie-dye shirt | 0.50 | 0.0-0.2 | cotton,tie-dye

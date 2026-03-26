@@ -1,0 +1,16 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.2 | natural | medium
+denim | 0.2 | natural | heavy
+nylon | 0.2 | synthetic | light
+mesh | 0.1 | synthetic | light
+polyester | 0.2 | synthetic | medium
+fleece | 0.1 | synthetic | heavy
+leather | 0.3 | animal | medium
+canvas | 0.2 | natural | heavy
+jersey | 0.2 | synthetic | light
+ripstop | 0.2 | synthetic | medium
+corduroy | 0.2 | natural | medium
+terry cloth | 0.1 | natural | medium
+velour | 0.2 | synthetic | medium
+flannel | 0.2 | natural | medium
+twill | 0.2 | natural | medium

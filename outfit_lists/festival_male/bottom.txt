@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shorts | 0.70 | 0.0-0.2 | cotton,denim
+joggers | 0.50 | 0.0-0.2 | cotton,polyester
+printed shorts | 0.45 | 0.0-0.1 | cotton,polyester
+cargo shorts | 0.55 | 0.0-0.2 | cotton
+slim jeans | 0.40 | 0.1-0.3 | denim

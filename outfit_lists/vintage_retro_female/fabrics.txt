@@ -1,0 +1,21 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+cotton | 0.2 | natural | medium
+denim | 0.2 | tough | heavy
+knit | 0.25 | casual | medium
+
+# mid-range fabrics
+linen | 0.4 | natural | light
+suede | 0.4 | tough | medium
+leather | 0.45 | tough | heavy
+wool | 0.5 | natural | heavy
+tweed | 0.55 | natural | heavy
+
+# formal fabrics
+velvet | 0.65 | luxury | medium
+satin | 0.65 | luxury | light
+silk | 0.85 | luxury | light
+
+# special materials
+metal | 0.5 | luxury | heavy

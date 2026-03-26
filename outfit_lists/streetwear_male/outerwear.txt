@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+puffer jacket | 0.6 | 0.0-0.2 | nylon,polyester
+bomber jacket | 0.6 | 0.0-0.3 | nylon,polyester,leather
+windbreaker | 0.5 | 0.0-0.2 | nylon,ripstop,polyester
+oversized hoodie | 0.5 | 0.0-0.2 | cotton,fleece
+coach jacket | 0.4 | 0.0-0.2 | nylon,polyester
+varsity jacket | 0.4 | 0.0-0.3 | leather,cotton,twill
+denim jacket | 0.4 | 0.0-0.3 | denim
+anorak | 0.3 | 0.0-0.2 | nylon,ripstop

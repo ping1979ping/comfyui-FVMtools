@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flip-flops | 0.85 | 0.0-0.1 | rubber
+sandals | 0.75 | 0.0-0.2 | leather,rubber
+espadrilles | 0.50 | 0.1-0.3 | cotton,straw
+barefoot anklet | 0.25 | 0.0-0.1 | metal,cotton
+wedge sandals | 0.35 | 0.1-0.3 | leather,straw

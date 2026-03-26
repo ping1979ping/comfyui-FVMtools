@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+hair pin | 0.2 | 0.4-0.7 | silk,velvet
+decorative clip | 0.15 | 0.5-0.7 | velvet,satin
+pearl hair comb | 0.1 | 0.5-0.7 | silk,satin
+barrette | 0.1 | 0.4-0.6 | velvet,leather
+headband | 0.1 | 0.4-0.6 | velvet,silk,satin
+hair scarf | 0.1 | 0.4-0.6 | silk,chiffon

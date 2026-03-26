@@ -1,0 +1,6 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sports watch | 0.60 | 0.0-0.2 | rubber,plastic
+sweatband | 0.40 | 0.0-0.1 | cotton
+headband | 0.35 | 0.0-0.1 | cotton,polyester

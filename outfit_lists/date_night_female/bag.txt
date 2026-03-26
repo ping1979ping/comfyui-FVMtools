@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+clutch | 0.7 | 0.5-0.7 | leather,satin,velvet
+small crossbody | 0.5 | 0.4-0.6 | leather,satin
+chain bag | 0.5 | 0.5-0.7 | leather,velvet
+evening bag | 0.4 | 0.6-0.7 | satin,silk,velvet
+minaudiere | 0.2 | 0.6-0.7 | satin,velvet
+wristlet | 0.3 | 0.4-0.6 | leather,satin

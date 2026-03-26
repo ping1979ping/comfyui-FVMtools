@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+beanie | 0.35 | 0.0-0.2 | cotton,fleece
+visor | 0.25 | 0.0-0.2 | nylon,polyester
+
+# mid-casual
+baseball cap | 0.60 | 0.0-0.3 | cotton,nylon,polyester
+snapback | 0.40 | 0.0-0.3 | cotton,polyester

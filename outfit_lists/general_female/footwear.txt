@@ -1,0 +1,20 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flip-flops | 0.25 | 0.0-0.1 | nylon,polyester
+sneakers | 0.80 | 0.0-0.3 | canvas,leather,nylon,mesh
+combat boots | 0.30 | 0.0-0.3 | leather,suede,canvas
+sandals | 0.50 | 0.0-0.4 | leather,suede,nylon
+
+# mid-casual
+boots | 0.55 | 0.2-0.6 | leather,suede
+ankle boots | 0.50 | 0.2-0.7 | leather,suede
+platform shoes | 0.25 | 0.2-0.7 | leather,suede,velvet
+ballet flats | 0.45 | 0.2-0.7 | leather,suede,satin
+
+# formal
+loafers | 0.50 | 0.4-0.8 | leather,suede
+oxford shoes | 0.40 | 0.5-1.0 | leather
+heels | 0.60 | 0.4-1.0 | leather,suede,satin,velvet
+stilettos | 0.35 | 0.6-1.0 | leather,suede,satin

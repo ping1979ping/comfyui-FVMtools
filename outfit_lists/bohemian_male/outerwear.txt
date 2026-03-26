@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+linen blazer | 0.4 | 0.3-0.4 | linen,cotton
+poncho | 0.4 | 0.2-0.4 | cotton,hemp,crochet
+open cardigan | 0.5 | 0.2-0.4 | cotton,crochet,linen
+suede jacket | 0.3 | 0.2-0.4 | suede
+denim jacket | 0.3 | 0.2-0.4 | denim
+knit vest | 0.3 | 0.2-0.4 | cotton,crochet,hemp
+shawl wrap | 0.3 | 0.2-0.4 | cotton,linen,hemp

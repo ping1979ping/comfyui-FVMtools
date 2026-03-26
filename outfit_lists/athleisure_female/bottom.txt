@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+biker shorts | 0.45 | 0.0-0.1 | spandex,nylon
+leggings | 0.75 | 0.0-0.2 | spandex,nylon,polyester
+sweatpants | 0.45 | 0.0-0.2 | cotton,fleece
+
+# mid-casual
+joggers | 0.65 | 0.1-0.3 | cotton,polyester,nylon
+track pants | 0.50 | 0.1-0.3 | nylon,polyester
+tennis skirt | 0.40 | 0.1-0.3 | polyester,nylon

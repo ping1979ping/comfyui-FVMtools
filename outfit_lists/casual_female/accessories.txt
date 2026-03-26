@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sunglasses | 0.70 | 0.1-0.4 | plastic
+scrunchie | 0.55 | 0.1-0.3 | cotton,jersey
+layered necklace | 0.45 | 0.2-0.4 | metal
+anklet | 0.25 | 0.1-0.3 | metal
+friendship bracelet | 0.30 | 0.1-0.2 | cotton
+hoop earrings | 0.50 | 0.2-0.4 | metal
+digital watch | 0.40 | 0.1-0.3 | rubber,plastic
+hair tie | 0.60 | 0.1-0.3 | elastic

@@ -7,6 +7,7 @@ from .utils.matcher import compute_similarity, aggregate_similarities
 from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
 from .utils.mask_utils import clean_mask_crumbs
+from .utils.segs_utils import assign_segs_to_references, run_detector
 
 # Colors for preview overlay (RGB), one per reference
 _PREVIEW_COLORS = [
@@ -31,7 +32,10 @@ class PersonSelectorMulti:
         "Each reference input accepts a batch of images for one person.\n"
         "Connect a reference to auto-create the next input slot.\n\n"
         "Supports batch input: pass multiple images and get PERSON_DATA for PersonDetailer.\n\n"
-        "Faces are assigned exclusively: each face matches at most one reference."
+        "Faces are assigned exclusively: each face matches at most one reference.\n\n"
+        "Optional: connect SEGS or a detector for body-part detection.\n"
+        "Detected parts are assigned to references via body mask overlap\n"
+        "and stored as 'aux' masks in PERSON_DATA for PersonDetailer."
     )
 
     @classmethod
@@ -40,7 +44,6 @@ class PersonSelectorMulti:
             "required": {
                 "sam_model": ("SAM_MODEL", {"tooltip": "SAM model from Impact Pack SAMLoader — required for body masks"}),
                 "current_image": ("IMAGE",),
-                "reference_1": ("IMAGE",),
                 "auto_threshold": ("BOOLEAN", {"default": True,
                                                "tooltip": "Auto: finds optimal 1:1 face-reference assignment (ignores threshold). Off: uses manual threshold."}),
                 "threshold": ("FLOAT", {"default": 0.40, "min": 0.0, "max": 1.0, "step": 0.01,
@@ -55,8 +58,18 @@ class PersonSelectorMulti:
                              {"tooltip": "Face detection resolution — higher finds smaller faces but uses more VRAM"}),
                 "aux_mask_type": (["none", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories"],
                                   {"default": "none", "tooltip": "Additional mask type for aux_masks output (derived from BiSeNet, no extra cost)"}),
+                "detect_threshold": ("FLOAT", {"default": 0.30, "min": 0.0, "max": 1.0, "step": 0.05,
+                                                "tooltip": "Detection confidence threshold for body-part detector (only used when detector/SEGS connected)"}),
+                "detect_dilation": ("INT", {"default": 10, "min": 0, "max": 100, "step": 1,
+                                             "tooltip": "Mask dilation in pixels for detected body parts"}),
+                "detect_crop_factor": ("FLOAT", {"default": 3.0, "min": 1.0, "max": 10.0, "step": 0.1,
+                                                   "tooltip": "Crop expansion factor passed to detector"}),
+                "reference_1": ("IMAGE",),
             },
             "optional": {
+                "segs": ("SEGS", {"tooltip": "Pre-computed body-part SEGS (e.g. from Impact Pack). Takes priority over detector inputs."}),
+                "bbox_detector": ("BBOX_DETECTOR", {"tooltip": "Bounding box detector for body-part detection. Ignored if SEGS connected."}),
+                "segm_detector": ("SEGM_DETECTOR", {"tooltip": "Segmentation detector (preferred over bbox). Ignored if SEGS connected."}),
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
@@ -247,7 +260,9 @@ class PersonSelectorMulti:
         }
 
     def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, aggregation,
-                mask_fill_holes, mask_blur, det_size, aux_mask_type="none", **kwargs):
+                mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
+                detect_threshold=0.3, detect_dilation=10, detect_crop_factor=3.0,
+                segs=None, bbox_detector=None, segm_detector=None, **kwargs):
         det_size_int = int(det_size)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -311,6 +326,57 @@ class PersonSelectorMulti:
         # Add all mask types: face_masks, head_masks, body_masks, hair_masks, etc.
         for mt in ALL_MASK_TYPES:
             person_data[f"{mt}_masks"] = person_data_masks[mt]
+
+        # Body-part detection via SEGS/detector (optional)
+        has_detector = segs is not None or bbox_detector is not None or segm_detector is not None
+        if has_detector:
+            aux_per_ref = [[] for _ in range(num_refs)]  # list of [1,H,W] per ref per batch
+            aux_unassigned = []  # [1,H,W] per batch
+            aux_part_counts = []  # [{ri: count}, ...] per batch
+
+            for b in range(batch_size):
+                single_image = current_image[b]  # [H, W, C]
+
+                # Get or compute SEGS
+                if segs is not None:
+                    current_segs = segs
+                else:
+                    detector = segm_detector if segm_detector is not None else bbox_detector
+                    current_segs = run_detector(detector, single_image.unsqueeze(0),
+                                                 detect_threshold, detect_dilation, detect_crop_factor)
+
+                # Assign SEGS to references via body mask overlap
+                body_masks = person_data.get("body_masks", [])
+                seg_assignments = assign_segs_to_references(current_segs, body_masks, num_refs, b)
+
+                counts = {}
+                for ri in range(num_refs):
+                    parts = seg_assignments.get(ri, [])
+                    counts[ri] = len(parts)
+                    if parts:
+                        merged = torch.max(torch.stack(parts), dim=0)[0]  # [H, W]
+                        aux_per_ref[ri].append(merged.unsqueeze(0))  # [1, H, W]
+                    else:
+                        aux_per_ref[ri].append(torch.zeros(1, h, w, dtype=torch.float32))
+
+                # Unassigned parts
+                unassigned_parts = seg_assignments.get(-1, [])
+                if unassigned_parts:
+                    merged_unassigned = torch.max(torch.stack(unassigned_parts), dim=0)[0]
+                    aux_unassigned.append(merged_unassigned.unsqueeze(0))
+                else:
+                    aux_unassigned.append(torch.zeros(1, h, w, dtype=torch.float32))
+
+                aux_part_counts.append(counts)
+
+                total_parts = sum(counts.values()) + len(unassigned_parts)
+                print(f"[PersonSelectorMulti] Image {b+1}: {total_parts} body parts detected, "
+                      f"{sum(1 for c in counts.values() if c > 0)} refs matched")
+
+            # Store in PERSON_DATA
+            person_data["aux_masks"] = [torch.cat(aux_per_ref[ri], dim=0) for ri in range(num_refs)]  # [B, H, W] per ref
+            person_data["aux_unassigned_masks"] = torch.cat(aux_unassigned, dim=0)  # [B, H, W]
+            person_data["aux_part_counts"] = aux_part_counts
 
         # Legacy mask outputs: face, head, body stacked across batch
         all_face_out = []

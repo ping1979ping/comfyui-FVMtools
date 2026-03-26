@@ -1,0 +1,12 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+visor | 0.25 | 0.1-0.3 | cotton
+
+# mid-casual
+headband | 0.60 | 0.2-0.6 | silk,cotton,knit
+ribbon headband | 0.50 | 0.2-0.6 | silk,cotton
+
+# formal
+beret | 0.35 | 0.4-0.7 | wool,knit,cashmere

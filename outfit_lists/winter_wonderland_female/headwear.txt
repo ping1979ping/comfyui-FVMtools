@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beanie | 0.75 | 0.1-0.3 | wool,knit
+fur hat | 0.35 | 0.3-0.6 | faux fur
+beret | 0.40 | 0.3-0.6 | wool,felt
+trapper hat | 0.30 | 0.1-0.3 | faux fur,leather
+wool headband | 0.45 | 0.2-0.4 | wool,knit

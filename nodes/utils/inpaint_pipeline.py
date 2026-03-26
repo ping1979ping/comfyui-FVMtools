@@ -226,6 +226,7 @@ def inpaint_slot(
     mask_expand_pixels=0, mask_blend_pixels=32, mask_fill_holes=True,
     context_expand_factor=1.20, output_padding=32,
     dd_enabled=False, dd_amount=0.0, dd_smooth=True, dd_options=None,
+    repeat=1,
 ):
     """Run the full inpaint pipeline for a single masked region.
 
@@ -269,11 +270,9 @@ def inpaint_slot(
     device = comfy.model_management.get_torch_device()
     cropped_image_device = cropped_image.to(device)
     latent_samples = vae.encode(cropped_image_device[:, :, :, :3])
-    latent = {"samples": latent_samples}
 
     # Step 8: Set noise mask
     noise_mask = cropped_mask.reshape(1, 1, target_height, target_width).to(device)
-    latent["noise_mask"] = noise_mask
 
     # Step 9: Compute sigmas
     model_sampling = model.get_model_object("model_sampling")
@@ -298,26 +297,32 @@ def inpaint_slot(
             smooth=dd_smooth,
         )
 
-    # Step 10: Sample
-    noise = comfy.sample.prepare_noise(latent_samples, seed)
-    latent_image = comfy.sample.fix_empty_latent_channels(model, latent_samples)
+    # Step 10: Sample (with optional repeat/cycling)
     sampler_obj = comfy.samplers.sampler_object(sampler_name)
-
     guider = Guider_Basic(model)
     guider.set_conds(positive_cond)
 
-    callback = latent_preview.prepare_callback(model, sigmas.shape[-1] - 1)
-    disable_pbar = not comfy.utils.PROGRESS_BAR_ENABLED
+    repeat = max(1, int(repeat))
+    for iteration in range(repeat):
+        if iteration > 0:
+            # Re-encode previous result as new latent input (latent cycling)
+            latent_samples = vae.encode(decoded[:, :, :, :3].to(device))
 
-    samples = guider.sample(
-        noise, latent_image, sampler_obj, sigmas,
-        denoise_mask=latent.get("noise_mask", None),
-        callback=callback, disable_pbar=disable_pbar, seed=seed,
-    )
-    samples = samples.to(comfy.model_management.intermediate_device())
+        noise = comfy.sample.prepare_noise(latent_samples, seed + iteration)
+        latent_image = comfy.sample.fix_empty_latent_channels(model, latent_samples)
 
-    # Step 11: VAE decode
-    decoded = vae.decode(samples)  # [1, tH, tW, C]
+        callback = latent_preview.prepare_callback(model, sigmas.shape[-1] - 1)
+        disable_pbar = not comfy.utils.PROGRESS_BAR_ENABLED
+
+        samples = guider.sample(
+            noise, latent_image, sampler_obj, sigmas,
+            denoise_mask=noise_mask,
+            callback=callback, disable_pbar=disable_pbar, seed=seed + iteration,
+        )
+        samples = samples.to(comfy.model_management.intermediate_device())
+
+        # VAE decode
+        decoded = vae.decode(samples)  # [1, tH, tW, C]
 
     # Step 12: Stitch back
     stitched = stitch_back(image, decoded, blend_mask_orig, crop, stitch_info)

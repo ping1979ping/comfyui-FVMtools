@@ -1,0 +1,9 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+turtleneck | 0.75 | 0.3-0.6 | wool,cashmere,knit
+cable-knit sweater | 0.70 | 0.2-0.5 | wool,knit
+thermal top | 0.55 | 0.1-0.3 | fleece,cotton
+cashmere pullover | 0.50 | 0.4-0.7 | cashmere
+mock neck top | 0.45 | 0.3-0.6 | wool,knit,cotton
+flannel shirt | 0.40 | 0.1-0.3 | cotton,flannel

@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+jeans | 0.90 | 0.2-0.4 | denim
+chinos | 0.65 | 0.3-0.5 | cotton
+shorts | 0.60 | 0.1-0.3 | cotton,denim
+cargo pants | 0.50 | 0.1-0.3 | cotton,canvas
+joggers | 0.55 | 0.1-0.2 | fleece,cotton,jersey
+sweatpants | 0.50 | 0.1-0.2 | fleece,cotton
+athletic shorts | 0.35 | 0.1-0.2 | polyester,nylon

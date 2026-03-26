@@ -1,0 +1,5 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+drawstring bag | 0.50 | 0.0-0.1 | nylon,polyester
+backpack | 0.25 | 0.0-0.2 | nylon,cotton

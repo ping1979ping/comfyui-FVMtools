@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+heels | 0.8 | 0.5-0.7 | leather,satin
+ankle boots | 0.5 | 0.4-0.6 | leather,velvet
+strappy sandals | 0.7 | 0.5-0.7 | leather,satin
+pointed-toe flats | 0.5 | 0.4-0.6 | leather,velvet,satin
+mules | 0.4 | 0.4-0.6 | leather,satin,velvet
+kitten heels | 0.4 | 0.5-0.7 | leather,satin
+block heels | 0.5 | 0.4-0.6 | leather,velvet

@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+band tee | 0.45 | 0.0-0.3 | cotton
+mesh top | 0.35 | 0.0-0.3 | mesh
+fitted black shirt | 0.55 | 0.1-0.4 | cotton,satin
+
+# mid-casual
+turtleneck | 0.45 | 0.2-0.5 | cotton,wool
+lace-up shirt | 0.40 | 0.2-0.6 | leather,cotton,satin
+
+# formal
+Victorian shirt | 0.50 | 0.4-0.8 | silk,satin,lace

@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+blazer | 0.55 | 0.4-0.6 | cotton,velvet,polyester
+bomber jacket | 0.50 | 0.3-0.5 | nylon,polyester
+velvet jacket | 0.35 | 0.5-0.7 | velvet
+sequin blazer | 0.20 | 0.5-0.7 | sequin
+leather jacket | 0.40 | 0.3-0.5 | leather

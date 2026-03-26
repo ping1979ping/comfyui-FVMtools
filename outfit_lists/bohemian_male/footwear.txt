@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+leather sandals | 0.7 | 0.1-0.3 | leather
+moccasins | 0.5 | 0.2-0.4 | suede,leather
+desert boots | 0.5 | 0.2-0.4 | suede,leather
+espadrilles | 0.5 | 0.2-0.4 | cotton,hemp,canvas
+canvas sneakers | 0.4 | 0.1-0.3 | canvas,cotton
+huarache sandals | 0.3 | 0.1-0.3 | leather
+ankle boots | 0.4 | 0.2-0.4 | suede,leather

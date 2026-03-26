@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+statement earrings | 0.7 | 0.7-1.0 | silk
+pearl necklace | 0.6 | 0.8-1.0 | silk
+crystal bracelet | 0.5 | 0.8-1.0 | silk
+cocktail ring | 0.4 | 0.7-1.0 | silk
+pendant necklace | 0.4 | 0.7-0.9 | silk
+drop earrings | 0.5 | 0.7-1.0 | silk
+brooch | 0.2 | 0.8-1.0 | silk,velvet
+silk gloves | 0.1 | 0.9-1.0 | silk

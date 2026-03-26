@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+slides | 0.35 | 0.0-0.1 | nylon,polyester
+running shoes | 0.55 | 0.0-0.2 | mesh,nylon
+
+# mid-casual
+sneakers | 0.75 | 0.0-0.3 | mesh,nylon,cotton
+high-tops | 0.40 | 0.0-0.3 | cotton,nylon
+dad shoes | 0.35 | 0.0-0.3 | mesh,nylon

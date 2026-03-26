@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+scrunchie | 0.50 | 0.0-0.2 | cotton,nylon
+hair clip | 0.40 | 0.0-0.2 | metal
+headband | 0.45 | 0.0-0.2 | nylon,spandex
+
+# mid-casual
+sports watch | 0.45 | 0.0-0.3 | metal
+mini sunglasses | 0.40 | 0.1-0.3 | metal

@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized tee | 0.8 | 0.0-0.3 | cotton,jersey
+crop top | 0.7 | 0.0-0.2 | cotton,jersey,spandex
+graphic tee | 0.7 | 0.0-0.2 | cotton,jersey
+hoodie | 0.6 | 0.0-0.2 | cotton,fleece,terry cloth
+mesh top | 0.4 | 0.0-0.2 | mesh,nylon
+off-shoulder sweatshirt | 0.4 | 0.0-0.3 | cotton,fleece
+tank top | 0.5 | 0.0-0.2 | cotton,jersey
+cropped hoodie | 0.5 | 0.0-0.2 | cotton,fleece
+tube top | 0.3 | 0.0-0.2 | jersey,spandex,velour
+band tee | 0.4 | 0.0-0.2 | cotton

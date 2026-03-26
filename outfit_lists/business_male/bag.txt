@@ -1,0 +1,7 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+briefcase | 0.70 | 0.8-1.0 | leather
+messenger bag | 0.55 | 0.6-0.8 | leather,canvas
+laptop bag | 0.60 | 0.6-0.8 | leather,nylon
+portfolio | 0.35 | 0.8-1.0 | leather

@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+shorts | 0.55 | 0.0-0.1 | nylon,polyester,cotton
+tapered sweatpants | 0.50 | 0.0-0.2 | cotton,fleece
+
+# mid-casual
+joggers | 0.70 | 0.0-0.3 | cotton,polyester,nylon
+track pants | 0.50 | 0.1-0.3 | nylon,polyester
+chino joggers | 0.40 | 0.1-0.3 | cotton

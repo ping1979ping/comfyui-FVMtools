@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sneakers | 0.90 | 0.1-0.4 | canvas,leather
+sandals | 0.65 | 0.1-0.3 | leather,rubber
+flip-flops | 0.40 | 0.1-0.2 | rubber
+ballet flats | 0.50 | 0.3-0.5 | leather,canvas
+slip-ons | 0.55 | 0.2-0.4 | canvas,leather
+canvas shoes | 0.60 | 0.1-0.3 | canvas
+platform sneakers | 0.35 | 0.1-0.3 | canvas,leather
+ankle boots | 0.40 | 0.3-0.5 | leather,suede

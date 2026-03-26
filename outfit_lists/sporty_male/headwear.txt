@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+baseball cap | 0.65 | 0.0-0.2 | cotton,polyester
+visor | 0.45 | 0.0-0.1 | polyester,cotton
+sports headband | 0.40 | 0.0-0.1 | cotton,polyester
+snapback | 0.35 | 0.0-0.1 | cotton,polyester

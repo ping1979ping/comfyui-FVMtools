@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+cargo pants | 0.7 | 0.0-0.3 | cotton,ripstop,nylon,twill
+baggy jeans | 0.7 | 0.0-0.3 | denim
+joggers | 0.6 | 0.0-0.2 | cotton,fleece,polyester
+track pants | 0.5 | 0.0-0.2 | polyester,nylon
+wide-leg pants | 0.4 | 0.0-0.3 | cotton,twill,corduroy
+basketball shorts | 0.4 | 0.0-0.1 | mesh,polyester,nylon
+carpenter pants | 0.3 | 0.0-0.3 | denim,canvas,twill
+parachute pants | 0.4 | 0.0-0.2 | nylon,ripstop

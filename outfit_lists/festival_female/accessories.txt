@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flower crown | 0.55 | 0.0-0.2 | cotton
+body chain | 0.40 | 0.0-0.2 | metal
+layered necklaces | 0.60 | 0.0-0.3 | metal
+arm cuff | 0.30 | 0.0-0.2 | metal,leather
+temporary tattoo band | 0.25 | 0.0-0.1 | plastic
+round sunglasses | 0.70 | 0.0-0.3 | metal,plastic
+choker | 0.45 | 0.0-0.2 | leather,metal,lace

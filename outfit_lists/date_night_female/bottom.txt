@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+midi skirt | 0.7 | 0.5-0.7 | silk,satin,crepe
+tailored pants | 0.7 | 0.5-0.7 | wool blend,cotton,crepe
+A-line skirt | 0.6 | 0.5-0.7 | cotton,crepe,velvet
+satin skirt | 0.5 | 0.5-0.7 | satin,silk
+wide-leg trousers | 0.5 | 0.4-0.7 | crepe,wool blend,jersey
+pencil skirt | 0.4 | 0.5-0.7 | crepe,leather,cotton
+slim pants | 0.5 | 0.4-0.6 | cotton,jersey,wool blend
+wrap skirt | 0.3 | 0.4-0.6 | silk,chiffon,georgette

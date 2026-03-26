@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+crochet cardigan | 0.6 | 0.2-0.4 | crochet,cotton
+fringe jacket | 0.4 | 0.2-0.4 | suede,leather
+kimono | 0.5 | 0.2-0.4 | chiffon,raw silk,cotton
+poncho | 0.4 | 0.2-0.4 | cotton,hemp,crochet
+embroidered vest | 0.4 | 0.2-0.4 | embroidered cotton,suede,velvet
+duster cardigan | 0.3 | 0.2-0.4 | cotton,linen,gauze
+shawl | 0.4 | 0.2-0.4 | cotton,crochet,linen

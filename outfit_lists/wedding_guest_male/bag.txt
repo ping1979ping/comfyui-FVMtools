@@ -1,0 +1,4 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+none | 0.95 | 0.7-1.0 | leather
+slim wallet | 0.05 | 0.7-1.0 | leather

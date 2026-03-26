@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+striped tee | 0.40 | 0.0-0.3 | cotton
+bowling shirt | 0.40 | 0.1-0.3 | cotton
+
+# mid-casual
+Cuban collar shirt | 0.50 | 0.2-0.5 | cotton,linen,silk
+knit polo | 0.50 | 0.2-0.5 | cotton,knit
+fitted button-down | 0.55 | 0.2-0.6 | cotton,linen
+
+# formal
+turtleneck | 0.45 | 0.3-0.7 | wool,cotton,knit
