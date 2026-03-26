@@ -9,3 +9,13 @@
 "TRIBE" | 0.2 | top,headwear | boho lettering
 "UNITY" | 0.15 | top | tie-dye lettering
 "RADIANCE" | 0.1 | top | neon font
+"BASS DROP" | 0.2 | top | neon font
+"RAVE" | 0.25 | top,headwear | rave lettering
+"TECHNO" | 0.2 | top | futuristic font
+"AFTER DARK" | 0.15 | top | digital glitch
+"NEON SOUL" | 0.15 | top | neon font
+"FREQUENCY" | 0.1 | top | LED display font
+"PULSE" | 0.2 | top | futuristic font
+"VORTEX" | 0.15 | top | digital glitch
+"TRANSCEND" | 0.1 | top | rave lettering
+"ELECTRIC" | 0.2 | top | LED display font

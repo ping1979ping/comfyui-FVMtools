@@ -11,3 +11,13 @@
 "FEARLESS" | 0.2 | top | bold block letters
 "GRIND" | 0.15 | top | stencil font
 "ICONIC" | 0.1 | top,outerwear | gothic font
+"KING" | 0.25 | top | gothic font
+"ALPHA" | 0.2 | top | bold block letters
+"BEAST MODE" | 0.15 | top,outerwear | distressed print
+"NO CAP" | 0.2 | top | stencil font
+"GOAT" | 0.2 | top,headwear | bold block letters
+"GRIND HARD" | 0.15 | top | industrial font
+"RESPECT" | 0.2 | top | gothic font
+"LEGACY" | 0.1 | top | stencil font
+"UNSTOPPABLE" | 0.15 | top,outerwear | distressed print
+"RAW" | 0.25 | top | industrial font

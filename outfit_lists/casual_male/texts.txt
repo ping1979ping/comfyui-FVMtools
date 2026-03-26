@@ -7,3 +7,13 @@
 "WEEKEND" | 0.2 | top | bold sans-serif
 "BE KIND" | 0.1 | top | handwritten script
 "LOVE" | 0.15 | top | playful font
+"EXPLORE" | 0.2 | top | handwritten script
+"WANDER" | 0.15 | top | casual sans-serif
+"ADVENTURE" | 0.2 | top | vintage print
+"CHILL OUT" | 0.15 | top | retro block
+"NO WORRIES" | 0.1 | top | clean modern
+"SIMPLE" | 0.2 | top | casual sans-serif
+"FRESH" | 0.25 | top | retro block
+"EASY" | 0.15 | top | handwritten script
+"PEACE OUT" | 0.2 | top,headwear | vintage print
+"LAID BACK" | 0.15 | top | clean modern

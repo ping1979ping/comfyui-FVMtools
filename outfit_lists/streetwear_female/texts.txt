@@ -11,3 +11,13 @@
 "FEARLESS" | 0.15 | top | bold block letters
 "GRIND" | 0.1 | top | stencil font
 "ICONIC" | 0.15 | top,outerwear | gothic font
+"DRIP" | 0.25 | top | graffiti style
+"HYPE" | 0.2 | top | bold condensed
+"SAVAGE" | 0.2 | top,outerwear | stencil font
+"VIBES" | 0.15 | top | marker style
+"DOPE" | 0.2 | top | graffiti style
+"FLEX" | 0.25 | top | bold condensed
+"SLAY" | 0.2 | top | street art font
+"QUEEN" | 0.15 | top,headwear | bold condensed
+"BOSS BABE" | 0.1 | top | stencil font
+"WOKE" | 0.15 | top | marker style

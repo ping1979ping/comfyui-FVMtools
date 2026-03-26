@@ -7,3 +7,13 @@
 "THROWBACK" | 0.15 | top | retro font
 "ICONIC" | 0.15 | top | Art Deco lettering
 "ORIGINAL" | 0.2 | top | vintage serif
+"ROAD TRIP" | 0.15 | top,headwear | garage font
+"KEEP IT REAL" | 0.15 | top | trucker cap font
+"BORN TO RIDE" | 0.1 | top | hot rod lettering
+"AMERICAN CLASSIC" | 0.1 | top | racing stripe text
+"HIGHWAY" | 0.2 | top,headwear | garage font
+"REBEL WITHOUT A CAUSE" | 0.1 | top | rockabilly script
+"COOL CAT" | 0.15 | top | hot rod lettering
+"BEATNIK" | 0.1 | top | trucker cap font
+"GARAGE BAND" | 0.15 | top | garage font
+"ROCKABILLY" | 0.15 | top | rockabilly script

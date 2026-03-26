@@ -7,3 +7,13 @@
 "HELLO" | 0.15 | top | playful font
 "WEEKEND" | 0.2 | top | retro font
 "BE KIND" | 0.15 | top | handwritten script
+"BLESSED" | 0.2 | top | cursive font
+"GRATEFUL" | 0.15 | top | watercolor text
+"DREAMER" | 0.2 | top | light serif
+"WANDERER" | 0.15 | top | playful handwriting
+"SPARKLE" | 0.25 | top | pastel lettering
+"LOVELY" | 0.2 | top | cursive font
+"PRETTY" | 0.15 | top | watercolor text
+"WILD HEART" | 0.1 | top | playful handwriting
+"FREE SPIRIT" | 0.15 | top,outerwear | light serif
+"DAYDREAM" | 0.2 | top | pastel lettering

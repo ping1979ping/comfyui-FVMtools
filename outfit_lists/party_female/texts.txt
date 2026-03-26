@@ -4,3 +4,13 @@
 "LET'S GO" | 0.15 | top | bold metallic
 "ICONIC" | 0.15 | top | sparkle text
 "GLAM" | 0.2 | top | glitter font
+"QUEEN" | 0.2 | top | crystal lettering
+"SLAY" | 0.2 | top | neon cursive
+"DIVA" | 0.15 | top | glitter script
+"SPARKLE" | 0.2 | top | holographic font
+"CHAMPAGNE DREAMS" | 0.1 | top | glitter script
+"AFTER MIDNIGHT" | 0.1 | top | neon cursive
+"DANCE ALL NIGHT" | 0.1 | top | sequin text
+"FABULOUS" | 0.15 | top | crystal lettering
+"GLAMOUR" | 0.15 | top | holographic font
+"BIRTHDAY GIRL" | 0.1 | top | glitter script

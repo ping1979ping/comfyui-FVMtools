@@ -4,3 +4,13 @@
 "LET'S GO" | 0.2 | top | bold metallic
 "ICONIC" | 0.15 | top | sparkle text
 "GLAM" | 0.15 | top | neon lettering
+"KING" | 0.2 | top | metallic bold
+"LEGEND" | 0.2 | top | chrome text
+"VIP ACCESS" | 0.1 | top | LED display
+"AFTER HOURS" | 0.15 | top | neon block
+"NIGHT OWL" | 0.15 | top | neon block
+"MAIN CHARACTER" | 0.1 | top | chrome text
+"BOSS MOVE" | 0.15 | top | metallic bold
+"HIGH ROLLER" | 0.1 | top | luxury serif
+"ENCORE" | 0.2 | top | LED display
+"ALL NIGHT" | 0.15 | top | neon block

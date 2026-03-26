@@ -7,3 +7,13 @@
 "THROWBACK" | 0.15 | top | retro font
 "ICONIC" | 0.1 | top | Art Deco lettering
 "ORIGINAL" | 0.15 | top | vintage serif
+"GROOVY" | 0.2 | top | psychedelic font
+"FAR OUT" | 0.15 | top | 70s bubble letters
+"FLOWER POWER" | 0.15 | top | Art Nouveau script
+"DISCO QUEEN" | 0.1 | top | disco lettering
+"PEACE & LOVE" | 0.15 | top | psychedelic font
+"SUNSHINE STATE" | 0.1 | top | 70s bubble letters
+"GOLDEN AGE" | 0.15 | top | Art Nouveau script
+"TIMELESS" | 0.2 | top | mod typography
+"SOUL SISTER" | 0.1 | top | disco lettering
+"BOHEMIAN RHAPSODY" | 0.1 | top | psychedelic font

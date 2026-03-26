@@ -7,3 +7,13 @@
 "SPORT" | 0.2 | top | bold block letters
 "TRAIN" | 0.15 | top | athletic font
 "FOCUS" | 0.2 | top | clean modern font
+"BEAST" | 0.2 | top | bold industrial
+"GAINS" | 0.2 | top | block condensed
+"PUMP" | 0.15 | top | stencil bold
+"IRON" | 0.2 | top | bold industrial
+"REP" | 0.15 | top | impact font
+"SHRED" | 0.15 | top | block condensed
+"LIFT" | 0.2 | top | gym font
+"FORGE" | 0.15 | top | bold industrial
+"GRIND TIME" | 0.1 | top | stencil bold
+"HUSTLE HARD" | 0.1 | top | impact font

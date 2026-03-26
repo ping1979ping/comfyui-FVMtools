@@ -7,3 +7,16 @@
 "SPORT" | 0.15 | top | bold block letters
 "TRAIN" | 0.1 | top | athletic font
 "FOCUS" | 0.15 | top | clean modern font
+"PA" | 0.15 | top | bold block letters
+"LOVE" | 0.1 | top | lovely font
+"cal burner" | 0.15 | top | clean modern font
+"HUSTLE" | 0.2 | top | minimal bold
+"GRIND" | 0.15 | top | sporty condensed
+"BOSS" | 0.2 | top | modern geometric
+"POWER UP" | 0.15 | top | clean sans-serif
+"LEVEL UP" | 0.2 | top | sporty condensed
+"SWEAT EQUITY" | 0.1 | top | minimal bold
+"RISE" | 0.2 | top | clean sans-serif
+"GLOW" | 0.25 | top | modern geometric
+"ENERGY" | 0.15 | top | athletic script
+"THRIVE" | 0.2 | top | minimal bold

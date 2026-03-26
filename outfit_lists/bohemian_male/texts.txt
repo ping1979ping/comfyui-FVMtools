@@ -4,3 +4,13 @@
 "GYPSY SOUL" | 0.15 | top | organic font
 "NAMASTE" | 0.15 | top | handwritten script
 "BLOOM" | 0.15 | top | watercolor text
+"NOMAD" | 0.2 | top | hand-carved font
+"TRAVELER" | 0.2 | top | rustic lettering
+"DESERT SOUL" | 0.15 | top | weathered text
+"DRIFTER" | 0.15 | top | hand-carved font
+"SUNSET CHASER" | 0.1 | top | compass rose script
+"WILD ONE" | 0.2 | top | rustic lettering
+"EARTH BOUND" | 0.15 | top | organic serif
+"PILGRIM" | 0.15 | top | hand-carved font
+"VAGABOND" | 0.15 | top | weathered text
+"HORIZON" | 0.2 | top | compass rose script

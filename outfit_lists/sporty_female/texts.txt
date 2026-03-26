@@ -7,3 +7,13 @@
 "GAME ON" | 0.15 | top | varsity font
 "ATHLETE" | 0.1 | top | bold block letters
 "23" | 0.15 | top | jersey number font
+"FEARLESS" | 0.2 | top | athletic bold
+"WARRIOR" | 0.15 | top | sporty italic
+"QUEEN OF THE COURT" | 0.1 | top | dynamic font
+"FIERCE" | 0.2 | top | racing stripes text
+"NO EXCUSES" | 0.15 | top | impact font
+"SWEAT" | 0.2 | top | athletic bold
+"GOALS" | 0.25 | top,headwear | sporty italic
+"UNBREAKABLE" | 0.15 | top | dynamic font
+"SHE BELIEVED" | 0.1 | top | racing stripes text
+"LIMITLESS" | 0.15 | top | impact font

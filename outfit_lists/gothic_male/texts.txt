@@ -9,3 +9,13 @@
 "PHANTOM" | 0.15 | top | gothic font
 "DOOM" | 0.25 | top | distressed text
 "SINISTER" | 0.15 | top | ornate calligraphy
+"REAPER" | 0.25 | top | metal band font
+"WRATH" | 0.2 | top | cracked text
+"INFERNO" | 0.2 | top,outerwear | heavy blackletter
+"OBLIVION" | 0.15 | top | runic font
+"CHAOS" | 0.2 | top | distressed gothic
+"RAVEN" | 0.15 | top | metal band font
+"FALLEN" | 0.2 | top | cracked text
+"BLASPHEMY" | 0.1 | top | heavy blackletter
+"TORMENT" | 0.15 | top | runic font
+"VENGEANCE" | 0.1 | top,outerwear | distressed gothic

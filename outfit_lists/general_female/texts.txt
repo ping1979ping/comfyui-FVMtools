@@ -7,3 +7,13 @@
 "HELLO" | 0.2 | top | retro font
 "PEACE" | 0.15 | top | handwritten script
 "VOGUE" | 0.1 | top | elegant serif
+"INSPIRE" | 0.2 | top | modern script
+"CREATE" | 0.2 | top | minimalist sans
+"BELIEVE" | 0.15 | top | feminine calligraphy
+"BRAVE" | 0.2 | top | brushstroke font
+"SHINE" | 0.2 | top | elegant serif
+"RADIANT" | 0.15 | top | modern script
+"GRACE" | 0.2 | top | feminine calligraphy
+"EMPOWER" | 0.15 | top | minimalist sans
+"BEAUTIFUL" | 0.15 | top | elegant serif
+"WONDER" | 0.2 | top | brushstroke font

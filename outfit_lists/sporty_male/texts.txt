@@ -7,3 +7,13 @@
 "GAME ON" | 0.2 | top,headwear | varsity font
 "ATHLETE" | 0.15 | top | bold block letters
 "23" | 0.2 | top | jersey number font
+"MVP" | 0.25 | top | varsity bold
+"ELITE" | 0.2 | top | athletic block
+"NO PAIN NO GAIN" | 0.15 | top | stencil military
+"LEGEND" | 0.2 | top,headwear | jersey font
+"BUILT DIFFERENT" | 0.1 | top | industrial bold
+"ALL IN" | 0.2 | top | varsity bold
+"OVERTIME" | 0.15 | top | athletic block
+"IRON WILL" | 0.15 | top | stencil military
+"DOMINATE" | 0.2 | top,outerwear | jersey font
+"RELENTLESS" | 0.1 | top | industrial bold

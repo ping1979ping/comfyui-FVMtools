@@ -9,3 +9,13 @@
 "TRIBE" | 0.15 | top,headwear | boho lettering
 "UNITY" | 0.1 | top | tie-dye lettering
 "RADIANCE" | 0.15 | top | neon font
+"STARLIGHT" | 0.2 | top | celestial script
+"ETHEREAL" | 0.15 | top | flowing cursive
+"BLOOM" | 0.25 | top | dreamy lettering
+"MOONCHILD" | 0.2 | top,headwear | celestial script
+"STARDUST" | 0.15 | top | sparkle font
+"AURORA" | 0.2 | top | flowing cursive
+"CELESTIAL" | 0.1 | top | mystical script
+"EUPHORIA" | 0.2 | top | dreamy lettering
+"MYSTIC" | 0.15 | top | mystical script
+"SACRED" | 0.1 | top | celestial script

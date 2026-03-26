@@ -9,3 +9,13 @@
 "PHANTOM" | 0.15 | top | gothic font
 "DOOM" | 0.2 | top | distressed text
 "SINISTER" | 0.1 | top | ornate calligraphy
+"FALLEN ANGEL" | 0.2 | top | ornate blackletter
+"WITCH" | 0.25 | top | dripping text
+"MEMENTO MORI" | 0.1 | top | Victorian gothic
+"NEVERMORE" | 0.15 | top | ancient script
+"REQUIEM" | 0.15 | top | dark calligraphy
+"SHADOW" | 0.2 | top | ornate blackletter
+"VOID" | 0.2 | top | dripping text
+"OBSCURA" | 0.1 | top | Victorian gothic
+"IMMORTAL" | 0.15 | top,outerwear | ancient script
+"NIGHTSHADE" | 0.15 | top | dark calligraphy

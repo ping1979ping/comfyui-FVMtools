@@ -4,3 +4,13 @@
 "GYPSY SOUL" | 0.15 | top | organic font
 "NAMASTE" | 0.15 | top | handwritten script
 "BLOOM" | 0.2 | top | watercolor text
+"WILD FLOWER" | 0.15 | top | organic cursive
+"EARTH CHILD" | 0.15 | top | earthy handwriting
+"MOONBEAM" | 0.2 | top | watercolor script
+"BAREFOOT" | 0.15 | top | nature-inspired
+"OCEAN SOUL" | 0.15 | top | flowing calligraphy
+"DREAMER" | 0.2 | top | watercolor script
+"GYPSY HEART" | 0.1 | top | organic cursive
+"STARGAZER" | 0.15 | top | flowing calligraphy
+"MOTHER EARTH" | 0.1 | top | earthy handwriting
+"BOHEMIA" | 0.2 | top | nature-inspired

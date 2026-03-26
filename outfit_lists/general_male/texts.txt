@@ -7,3 +7,13 @@
 "LEGEND" | 0.15 | top | bold block letters
 "HUSTLE" | 0.1 | top | distressed print
 "NO LIMITS" | 0.15 | top | stencil font
+"CREATE" | 0.2 | top | modern sans-serif
+"INNOVATE" | 0.15 | top | architectural font
+"BOLD" | 0.2 | top | clean bold
+"VISIONARY" | 0.15 | top | minimal geometric
+"MAVERICK" | 0.15 | top | industrial serif
+"PIONEER" | 0.15 | top | architectural font
+"AUTHENTIC" | 0.2 | top | modern sans-serif
+"CRAFT" | 0.2 | top,headwear | clean bold
+"RESOLVE" | 0.15 | top | industrial serif
+"ORIGIN" | 0.2 | top | minimal geometric
