@@ -1,0 +1,23 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bralette | 0.85 | 0.1-0.5 | lace,mesh,silk
+push-up bra | 0.80 | 0.1-0.5 | satin,lace
+sheer bra | 0.70 | 0.1-0.4 | mesh,chiffon
+balconette bra | 0.75 | 0.2-0.5 | lace,satin
+underwire bra | 0.70 | 0.1-0.5 | satin,silk,lace
+bodysuit | 0.65 | 0.2-0.5 | lace,mesh,satin
+sheer bodysuit | 0.60 | 0.1-0.4 | mesh,chiffon
+camisole | 0.70 | 0.3-0.6 | silk,satin
+bralette with bow detail | 0.65 | 0.2-0.5 | satin,silk
+corset | 0.55 | 0.3-0.6 | satin,lace,leather
+sheer corset | 0.50 | 0.2-0.5 | mesh,lace
+bustier | 0.60 | 0.3-0.6 | satin,lace
+crop top | 0.55 | 0.1-0.4 | mesh,lace
+halter bralette | 0.50 | 0.1-0.4 | lace,satin
+longline bra | 0.45 | 0.2-0.5 | lace,mesh,satin
+triangle bra | 0.60 | 0.1-0.4 | lace,silk
+plunge bra | 0.65 | 0.2-0.5 | satin,lace
+teddy | 0.45 | 0.1-0.4 | mesh,chiffon,silk
+ribbon-tie bralette | 0.40 | 0.1-0.3 | silk,satin
+strappy cage bra | 0.50 | 0.1-0.4 | elastic,lace

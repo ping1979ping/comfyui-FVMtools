@@ -500,7 +500,7 @@ All Fashion Tool nodes appear under **FVM Tools/Fashion** in the ComfyUI menu.
 
 **Display name:** Outfit Generator
 
-Generates seed-controlled outfit descriptions with color tag placeholders, ready for colorization via Prompt Color Replace. Ships with 39 built-in outfit sets covering business, casual, evening, sheer/layered, and many more themes. Outfit list files are plain text and can be edited or extended without restarting ComfyUI.
+Generates seed-controlled outfit descriptions with color tag placeholders, ready for colorization via Prompt Color Replace. Ships with 40 built-in outfit sets covering business, casual, evening, sheer/layered, lingerie, and many more themes. Outfit list files are plain text and can be edited or extended without restarting ComfyUI.
 
 Each generated outfit assembles garment pieces from the selected outfit set, filtered by the `formality` and `coverage` sliders, and inserts `#color#` tags for later replacement.
 
@@ -537,7 +537,7 @@ Each generated outfit assembles garment pieces from the selected outfit set, fil
 | `outfit_details` | STRING | Breakdown of selected garments |
 | `outfit_info` | STRING | Full generation metadata |
 
-**Available outfit themes:** `general`, `business_female_skirt`, `business_female_dress`, `business_female2`, `business_male`, `casual`, `night_out`, `party`, `beach_holiday`, `winter_wonderland`, `festival`, `sporty`, `date_night`, `wedding_guest`, `streetwear`, `bohemian`, `preppy`, `gothic`, `vintage_retro`, `athleisure`, `sheer_business_female`, `sheer_casual_female`, `sheer_evening_female` -- most themes have `_female` and `_male` variants. See the [Outfit Guide](documentation/OUTFIT_GUIDE.md#available-outfit-sets) for the full list of all 39 sets.
+**Available outfit themes:** `general`, `business_female_skirt`, `business_female_dress`, `business_female2`, `business_male`, `casual`, `night_out`, `party`, `beach_holiday`, `winter_wonderland`, `festival`, `sporty`, `date_night`, `wedding_guest`, `streetwear`, `bohemian`, `preppy`, `gothic`, `vintage_retro`, `athleisure`, `sheer_business_female`, `sheer_casual_female`, `sheer_evening_female`, `female_lingerie` -- most themes have `_female` and `_male` variants. See the [Outfit Guide](documentation/OUTFIT_GUIDE.md#available-outfit-sets) for the full list of all 40 sets.
 
 #### Usage Example
 

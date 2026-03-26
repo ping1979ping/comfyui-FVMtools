@@ -487,6 +487,17 @@ Recommended outfit sets: `sheer_business_female`, `sheer_casual_female`, `sheer_
 
 **Tip:** For visible undergarments, name both layers explicitly in the prompt. Use specific fabric names like chiffon, organza, or mesh instead of generic "see-through". A dark bra under a light sheer top creates the strongest visual contrast. Adding `backlit` or `rim lighting` to the environment description enhances the see-through effect. For visible bra straps, describe them directly: `with visible bra strap`, `with peeking bra straps`.
 
+### Lingerie / Boudoir
+
+```
+a woman in a bedroom wearing #primary# lace bralette,
+#secondary# silk robe, #secondary# satin panties,
+#neutral# stiletto heels, #metallic# pearl necklace
+```
+Recommended outfit set: `female_lingerie`
+
+**Tip:** The `female_lingerie` set has ~20 tops (bralettes, corsets, bodysuits, bras) and ~16 bottoms, mixing sheer and opaque pieces. Pair with `coverage: 0.7` to include robes, stockings, and accessories. Disable the `bag` slot for cleaner results.
+
 ---
 
 ## Tips and Tricks

@@ -1,0 +1,5 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+clutch | 0.30 | 0.3-0.6 | satin,silk
+mini pouch | 0.20 | 0.2-0.5 | satin,velvet

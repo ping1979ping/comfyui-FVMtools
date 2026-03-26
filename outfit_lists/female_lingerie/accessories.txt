@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+garter with stockings | 0.65 | 0.2-0.5 | lace,elastic
+thigh-high stockings | 0.70 | 0.2-0.5 | nylon,lace
+choker | 0.60 | 0.2-0.5 | lace,velvet,satin
+pearl necklace | 0.55 | 0.3-0.6 | metal
+long gloves | 0.40 | 0.3-0.6 | satin,lace
+diamond stud earrings | 0.50 | 0.3-0.6 | metal
+body chain | 0.45 | 0.1-0.4 | metal
+blindfold | 0.25 | 0.1-0.3 | silk,satin
+ankle bracelet | 0.40 | 0.1-0.4 | metal
+ribbon choker | 0.50 | 0.1-0.4 | silk,satin
+fishnet stockings | 0.55 | 0.1-0.4 | nylon
+arm sleeves | 0.30 | 0.2-0.5 | lace,mesh
+pendant necklace | 0.45 | 0.2-0.5 | metal
+waist chain | 0.35 | 0.1-0.4 | metal
+bow hair tie | 0.40 | 0.2-0.5 | satin,silk
+drop earrings | 0.50 | 0.3-0.6 | metal

@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+robe | 0.75 | 0.2-0.5 | silk,satin
+sheer kimono | 0.65 | 0.2-0.5 | chiffon,silk
+robe with lace trim | 0.60 | 0.2-0.5 | silk,satin
+dressing gown | 0.55 | 0.3-0.6 | satin,velvet
+cover-up | 0.50 | 0.1-0.4 | mesh,chiffon
+feather-trimmed robe | 0.40 | 0.3-0.6 | silk,satin
+sheer robe | 0.55 | 0.1-0.4 | chiffon,mesh
+velvet robe | 0.35 | 0.3-0.6 | velvet
+cropped fur bolero | 0.30 | 0.3-0.6 | faux_fur
+open-front jacket | 0.35 | 0.2-0.5 | satin,silk
+shrug | 0.40 | 0.2-0.5 | lace,chiffon
+bed jacket | 0.30 | 0.2-0.5 | silk,satin

@@ -423,7 +423,7 @@ This means:
 
 ## Available Outfit Sets
 
-The following 39 outfit sets are included. Each set contains curated garment lists tailored to its theme.
+The following 40 outfit sets are included. Each set contains curated garment lists tailored to its theme.
 
 | Set | Theme | Target | Typical formality |
 |-----|-------|--------|-------------------|
@@ -466,6 +466,7 @@ The following 39 outfit sets are included. Each set contains curated garment lis
 | `sheer_business_female` | Business with sheer/visible bra tops | Female | 0.5-0.9 |
 | `sheer_casual_female` | Casual with sheer/visible bra tops | Female | 0.0-0.4 |
 | `sheer_evening_female` | Evening with sheer/visible bra tops | Female | 0.3-0.8 |
+| `female_lingerie` | Lingerie, bras, bodysuits, robes, stockings | Female | 0.0-0.6 |
 
 ---
 
