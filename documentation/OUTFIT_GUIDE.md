@@ -9,6 +9,7 @@
 - [Override String Format](#override-string-format)
 - [Creating Custom Outfit Sets](#creating-custom-outfit-sets)
 - [Fabric System](#fabric-system)
+- [Prints, Text, and Logos](#prints-text-and-logos)
 - [Available Outfit Sets](#available-outfit-sets)
 - [Slot System](#slot-system)
 - [Tips and Tricks](#tips-and-tricks)
@@ -418,6 +419,138 @@ This means:
 | `natural` | Mid (0.2-0.5) | cotton, linen, wool, tweed |
 | `tough` | Mid (0.2-0.45) | denim, canvas, leather, suede |
 | `luxury` | High (0.6-0.85) | silk, satin, velvet, cashmere, chiffon, lace |
+
+---
+
+## Prints, Text, and Logos
+
+The Outfit Generator can add prints, patterns, logos, and text decorations to garments. This feature is controlled by two node inputs and two optional data files per outfit set.
+
+### Node Inputs
+
+| Input | Type | Default | Description |
+|-------|------|---------|-------------|
+| `print_probability` | FLOAT | 0.3 | Probability (0.0--1.0) of adding a print, pattern, logo, or text decoration to each garment. At 0.0, no decorations are added. At 1.0, every garment gets one (if compatible entries exist). |
+| `text_mode` | COMBO | auto | Controls how text on clothing is rendered in prompts. Options: `auto`, `quoted`, `descriptive`, `off`. |
+
+### text_mode Behavior
+
+| Mode | Behavior | Example output |
+|------|----------|----------------|
+| `auto` | Same as `quoted` -- uses exact text in quotation marks | `t-shirt with "REBEL" text in gothic font` |
+| `quoted` | Exact text in quotation marks | `t-shirt with "REBEL" text in gothic font` |
+| `descriptive` | Generic description, no literal text | `t-shirt with bold text graphic` |
+| `off` | No text decorations at all; prints/patterns/logos still apply | `t-shirt with floral print` (but never text) |
+
+#### Model Compatibility Warning
+
+> **ZImage Turbo / Flux2** can render text inside quotation marks correctly. Known brand logos also work well. Use `auto` or `quoted` mode with these models.
+>
+> **SDXL / SD 1.5** cannot reliably render readable text. Use `text_mode = "descriptive"` for these models to avoid garbled text artifacts in your images.
+
+### Data Files
+
+Each outfit set can include two optional files alongside the garment and fabric files:
+
+```
+outfit_lists/
+  my_custom_set/
+    top.txt
+    bottom.txt
+    footwear.txt
+    ...
+    fabrics.txt
+    prints.txt        <-- optional: patterns, logos, graphics
+    texts.txt         <-- optional: text/slogans on clothing
+```
+
+If these files are missing or empty, the outfit set simply produces no print/text decorations.
+
+### `prints.txt` Format
+
+Defines patterns, logos, graphics, and textures that can be applied to garments.
+
+```
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral print | 0.5 | top,bottom,bag | 0.1-0.6
+vintage band graphic | 0.3 | top | 0.0-0.4
+pinstripe pattern | 0.4 | top,bottom,outerwear | 0.5-1.0
+skull print | 0.3 | top | 0.0-0.3
+Nike swoosh logo | 0.2 | top,footwear,headwear,bag | 0.0-0.4
+distressed details | 0.4 | bottom | 0.0-0.4
+leopard print | 0.3 | top,bottom,bag,accessories | 0.1-0.5
+```
+
+| Field | Description |
+|-------|-------------|
+| `print_name` | The decoration text as it will appear in the prompt. |
+| `probability` | Relative weight for selection (same logic as garment probability). |
+| `compatible_slots` | Comma-separated list of slots this print can appear on. |
+| `formality_range` | The formality window where this print is eligible. A `floral print` at `0.1-0.6` will not appear at formality 0.8. |
+
+### `texts.txt` Format
+
+Defines text and slogans that appear on garments. These are affected by the `text_mode` setting.
+
+```
+# format: text_content | probability | compatible_slots | font_hint
+"REBEL" | 0.3 | top | gothic font
+"STAY WILD" | 0.25 | top | brush script font
+"NYC 1997" | 0.2 | top,headwear | block letter font
+"LOVE" | 0.3 | top,accessories | serif font
+```
+
+| Field | Description |
+|-------|-------------|
+| `text_content` | The literal text in quotes. Used as-is in `quoted`/`auto` mode; replaced with a generic description in `descriptive` mode. |
+| `probability` | Relative weight for selection. |
+| `compatible_slots` | Comma-separated list of slots this text can appear on. |
+| `font_hint` | Font style hint included in the prompt (e.g., `gothic font`, `brush script font`). Helps guide the model's rendering. |
+
+### Override String: Decoration Field
+
+The override string format supports a third field after the color tag for specifying decorations directly:
+
+```
+slot: garment_spec | color_tag | decoration
+```
+
+Examples:
+
+```
+top: graphic tee | #primary# | skull print
+bottom: jeans | #secondary# | distressed details
+headwear: cap | #accent# | Nike swoosh logo
+top: tee | #primary# | text:"STAY WILD" in gothic font
+accessories: necklace | #metallic# | none
+```
+
+Use `none` to explicitly prevent any decoration on that slot. Use `text:"..."` to specify inline text with a font hint.
+
+### Output Examples
+
+The decoration is appended to the garment description in the prompt:
+
+| Scenario | Output |
+|----------|--------|
+| No print | `wearing #primary# cotton t-shirt` |
+| With print | `wearing #primary# cotton t-shirt with vintage band graphic` |
+| With text (quoted/auto) | `wearing #primary# cotton t-shirt with "REBEL" text in gothic font` |
+| With text (descriptive) | `wearing #primary# cotton t-shirt with bold text graphic` |
+
+### Creating Custom Prints and Texts
+
+1. Navigate to your outfit set directory (e.g., `outfit_lists/streetwear_male/`).
+2. Create `prints.txt` and/or `texts.txt` following the formats above.
+3. Match the `compatible_slots` to the slots defined in your garment files.
+4. Set appropriate `formality_range` values -- casual prints should not appear at high formality and vice versa.
+5. Changes take effect immediately on the next execution (no restart needed).
+
+**Tips:**
+- Keep `print_probability` low (0.2--0.4) for realistic outfits. Not every garment needs a decoration.
+- Brand logos (Nike, Adidas, Supreme) work best with ZImage Turbo / Flux2.
+- For gothic/punk sets, use `texts.txt` with aggressive fonts (`gothic font`, `dripping font`).
+- For business sets, limit prints to subtle patterns (`pinstripe pattern`, `houndstooth check`) and avoid text entirely.
 
 ---
 

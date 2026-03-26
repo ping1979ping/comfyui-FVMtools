@@ -520,6 +520,8 @@ Each generated outfit assembles garment pieces from the selected outfit set, fil
 | `enable_footwear` | BOOLEAN | True | Include footwear |
 | `enable_accessories` | BOOLEAN | True | Include accessories |
 | `enable_bag` | BOOLEAN | True | Include bag/purse |
+| `print_probability` | FLOAT | 0.3 | Probability (0.0--1.0) of adding prints/patterns/logos/text to garments |
+| `text_mode` | COMBO | auto | How text on clothing is rendered: `auto`/`quoted` = exact text in quotes (ZImage Turbo/Flux2), `descriptive` = generic description (SD/SDXL safe), `off` = no text decorations |
 | `prefix` | STRING | -- | Text prepended to the outfit prompt |
 | `separator` | STRING | , | Separator between garment items |
 
@@ -583,7 +585,7 @@ Tags are case-insensitive. If a tag cannot be resolved (e.g., `#color7#` when on
 
 ### Directory Structure
 
-Each outfit set is a directory inside `outfit_lists/` containing 8 text files:
+Each outfit set is a directory inside `outfit_lists/` containing up to 10 text files:
 
 ```
 outfit_lists/
@@ -596,7 +598,11 @@ outfit_lists/
     accessories.txt
     bag.txt
     fabrics.txt
+    prints.txt          # optional: patterns, logos, graphics
+    texts.txt           # optional: text/slogans on clothing
 ```
+
+The `prints.txt` and `texts.txt` files are optional. When present, the Outfit Generator can add decorations to garments based on the `print_probability` setting. See the [Outfit Guide](documentation/OUTFIT_GUIDE.md#prints-text-and-logos) for full format documentation and model compatibility notes.
 
 ### File Format
 
