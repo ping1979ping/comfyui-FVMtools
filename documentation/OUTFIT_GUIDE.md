@@ -359,7 +359,7 @@ These fabrics still function normally for selection logic -- they just do not ap
 ### Step 4: Verify
 
 1. Save all your `.txt` files.
-2. In ComfyUI, the new set appears in the `outfit_set` dropdown on next node execution (no restart needed).
+2. In ComfyUI, the new set appears in the `outfit_set` dropdown after a browser refresh or re-adding the node (no ComfyUI restart needed -- the dropdown is scanned live).
 3. Set a seed, queue the prompt, and check the `outfit_info` output for the chosen pieces.
 
 ### Tip: Start from an existing set

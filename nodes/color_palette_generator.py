@@ -32,7 +32,6 @@ class FVM_ColorPaletteGenerator:
 
     _HARMONY_TYPES = ["auto", "analogous", "complementary", "split_complementary",
                       "triadic", "tetradic", "monochromatic"]
-    _STYLE_PRESETS = sorted(STYLE_PRESETS.keys())
 
     @classmethod
     def INPUT_TYPES(cls):
@@ -49,7 +48,7 @@ class FVM_ColorPaletteGenerator:
                     "max": 8,
                 }),
                 "harmony_type": (cls._HARMONY_TYPES,),
-                "style_preset": (cls._STYLE_PRESETS,),
+                "style_preset": (sorted(STYLE_PRESETS.keys()),),
                 "vibrancy": ("FLOAT", {
                     "default": 0.5,
                     "min": 0.0,

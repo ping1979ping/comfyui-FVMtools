@@ -103,4 +103,4 @@ The Outfit Generator works best as part of a 3-node chain:
 
 - Outfit lists are loaded on every execution -- no restart is needed.
 - If changes seem ignored, verify you saved the file and are editing the correct set (check the `outfit_set` dropdown).
-- After adding a completely new set directory, the dropdown updates on the next ComfyUI restart.
+- After adding a new set directory, refresh the browser page or re-add the node to see it in the dropdown -- no ComfyUI restart needed.

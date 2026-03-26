@@ -531,3 +531,7 @@ You can wire multiple palette generators into a single workflow. For example:
 - One generator for main outfit colors (style preset: `casual_daywear`).
 - Another generator for accessory accent colors (style preset: `festival`).
 - Connect each generator's individual color outputs to different override slots on Prompt Color Replace.
+
+### Live Updates -- No Restart Needed
+
+All dropdown lists (style presets, outfit sets) are scanned dynamically each time a node is placed or the page is refreshed. If you add new style presets or outfit sets to the code or file system, a browser refresh is enough to see them -- no ComfyUI restart required.

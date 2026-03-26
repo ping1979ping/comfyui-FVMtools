@@ -26,20 +26,17 @@ class FVM_OutfitGenerator:
         "ready for Prompt Color Replace, a structured details string, and info."
     )
 
-    _STYLE_PRESETS = sorted(OUTFIT_PRESETS.keys())
-    _OUTFIT_SETS = get_available_sets()
-
     @classmethod
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "outfit_set": (cls._OUTFIT_SETS,),
+                "outfit_set": (get_available_sets(),),
                 "seed": ("INT", {
                     "default": 0,
                     "min": 0,
                     "max": 0xFFFFFFFF,
                 }),
-                "style_preset": (cls._STYLE_PRESETS,),
+                "style_preset": (sorted(OUTFIT_PRESETS.keys()),),
                 "formality": ("FLOAT", {
                     "default": 0.5,
                     "min": 0.0,
