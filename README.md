@@ -403,7 +403,9 @@ Fine-tunes the sigma manipulation curve used by Detail Daemon within Person Deta
 
 **Display name:** Inpaint Options
 
-Configures per-slot mask types, repeat counts, and Detail Daemon toggles for Person Detailer. Allows different inpainting strategies for each reference slot (e.g., face mask for one person, head mask for another).
+Configures per-slot mask types, inpaint rounds, and Detail Daemon toggles for Person Detailer. Allows different inpainting strategies for each reference slot (e.g., face mask for one person, head mask for another).
+
+Supports **progressive refinement**: set `rounds` > 1 and use `denoise_progression` / `steps_progression` to decrease denoise and steps across rounds (e.g. strong first pass, gentle refinement).
 
 #### Inputs
 
@@ -414,13 +416,15 @@ Configures per-slot mask types, repeat counts, and Detail Daemon toggles for Per
 | `mask_fill_holes` | BOOLEAN | True | Fill holes in inpaint masks |
 | `context_expand_factor` | FLOAT | 1.20 | Context area expansion factor |
 | `output_padding` | INT | 32 | Output padding in pixels |
+| `denoise_progression` | STRING | (empty) | Per-round denoise values separated by `\|`. Example: `0.5\|0.3` for 2 rounds. When empty, PersonDetailer's global denoise is used for all rounds. |
+| `steps_progression` | STRING | (empty) | Per-round steps values separated by `\|`. Example: `6\|4` for 2 rounds. When empty, PersonDetailer's global steps are used for all rounds. |
 
 **Per-slot settings (ref_1 through ref_5 + generic):**
 
 | Name | Type | Default | Description |
 |------|------|---------|-------------|
-| `slot_mask_type` | COMBO | face | Mask type: `face`, `head`, `body`, `hair`, `facial_skin`, `eyes`, `mouth`, `neck`, `accessories`, `aux` |
-| `slot_repeat` | INT | 1 | Number of inpaint passes for this slot |
+| `slot_mask_type` | COMBO | head | Mask type: `face`, `head`, `body`, `hair`, `facial_skin`, `eyes`, `mouth`, `neck`, `accessories`, `aux` |
+| `slot_rounds` | INT | 1 | Number of inpaint passes for this slot (latent cycling). Use with progression fields for decreasing denoise/steps. |
 | `slot_detail_daemon` | BOOLEAN | True | Enable Detail Daemon for this slot |
 
 #### Outputs

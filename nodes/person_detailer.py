@@ -17,8 +17,10 @@ INPAINT_DEFAULTS = {
     "mask_fill_holes": True,
     "context_expand_factor": 1.20,
     "output_padding": 32,
+    "denoise_progression": "",
+    "steps_progression": "",
     "slots": {
-        prefix: {"mask_type": "head", "detail_daemon": True, "repeat": 1}
+        prefix: {"mask_type": "head", "detail_daemon": True, "rounds": 1}
         for prefix in ["reference_1", "reference_2", "reference_3", "reference_4", "reference_5", "generic"]
     },
 }
@@ -198,7 +200,9 @@ class PersonDetailer:
             dd_amount=detail_amount,
             dd_smooth=dd_smooth,
             dd_options=dd_options,
-            repeat=slot.get("repeat", 1),
+            repeat=slot.get("rounds", 1),
+            denoise_progression=inpaint_opts.get("denoise_progression", ""),
+            steps_progression=inpaint_opts.get("steps_progression", ""),
         )
         return stitched, refined
 
@@ -243,7 +247,7 @@ class PersonDetailer:
                 "mask_type": slot_cfg.get("mask_type", "head"),
                 "lora_strength": lora_str,
                 "use_dd": slot_cfg.get("detail_daemon", True),
-                "repeat": slot_cfg.get("repeat", 1),
+                "rounds": slot_cfg.get("rounds", 1),
             })
 
         generic_cfg = self._get_slot_config("generic", inpaint_options)
@@ -353,7 +357,7 @@ class PersonDetailer:
                             print(f"    Generic — aux: detailing unassigned body parts...")
                             generic_slot = {
                                 "lora": generic_lora, "lora_strength": generic_lora_strength,
-                                "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "repeat": generic_cfg.get("repeat", 1),
+                                "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "rounds": generic_cfg.get("rounds", 1),
                             }
                             stitched, refined = self._inpaint_mask(
                                 current_image, unassigned_mask[b], generic_slot, **inpaint_kwargs)
@@ -387,7 +391,7 @@ class PersonDetailer:
                         print(f"    Generic — {len(components)} unmatched face(s) ({generic_mask_type})")
                         generic_slot = {
                             "lora": generic_lora, "lora_strength": generic_lora_strength,
-                            "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "repeat": generic_cfg.get("repeat", 1),
+                            "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "rounds": generic_cfg.get("rounds", 1),
                         }
                         for comp_mask in components:
                             stitched, refined = self._inpaint_mask(

@@ -219,6 +219,35 @@ def stitch_back(original_image, decoded_crop, blend_mask_orig, crop, stitch_info
     return result
 
 
+def _parse_progression(value_str, count, default, cast_fn=float):
+    """Parse a pipe-separated progression string into a list of values.
+
+    Args:
+        value_str: e.g. "0.5|0.3" or "" or None.
+        count: number of rounds (desired list length).
+        default: fallback value when string is empty.
+        cast_fn: float or int.
+
+    Returns:
+        list of length `count`. If fewer values given, last value repeats.
+    """
+    if not value_str or not value_str.strip():
+        return [default] * count
+
+    try:
+        parts = [cast_fn(v.strip()) for v in value_str.strip().split("|") if v.strip()]
+    except (ValueError, TypeError):
+        return [default] * count
+
+    if not parts:
+        return [default] * count
+
+    # Pad with last value if fewer than count
+    while len(parts) < count:
+        parts.append(parts[-1])
+    return parts[:count]
+
+
 def inpaint_slot(
     image, mask_2d, model, positive_cond, negative_cond, vae,
     seed, steps, denoise, sampler_name, scheduler,
@@ -227,8 +256,15 @@ def inpaint_slot(
     context_expand_factor=1.20, output_padding=32,
     dd_enabled=False, dd_amount=0.0, dd_smooth=True, dd_options=None,
     repeat=1,
+    denoise_progression="", steps_progression="",
 ):
     """Run the full inpaint pipeline for a single masked region.
+
+    Args:
+        repeat: number of inpaint rounds (latent cycling).
+        denoise_progression: pipe-separated denoise per round (e.g. "0.5|0.3").
+        steps_progression: pipe-separated steps per round (e.g. "6|4").
+        When empty, `denoise` and `steps` are used for all rounds.
 
     Returns:
         (stitched_image [H,W,C], refined_crop [1, tH, tW, C])
@@ -274,39 +310,50 @@ def inpaint_slot(
     # Step 8: Set noise mask
     noise_mask = cropped_mask.reshape(1, 1, target_height, target_width).to(device)
 
-    # Step 9: Compute sigmas
-    model_sampling = model.get_model_object("model_sampling")
-    total_steps = steps
-    if denoise < 1.0:
-        total_steps = int(steps / denoise)
+    # Step 9: Prepare per-round parameters
+    repeat = max(1, int(repeat))
+    denoise_per_round = _parse_progression(denoise_progression, repeat, denoise, float)
+    steps_per_round = _parse_progression(steps_progression, repeat, steps, int)
 
-    sigmas = comfy.samplers.calculate_sigmas(model_sampling, scheduler, total_steps).cpu()
-    sigmas = sigmas[-(steps + 1):]
-
-    if dd_enabled and dd_amount != 0:
-        dd_opts = dd_options or DD_DEFAULTS
-        sigmas = apply_detail_daemon_to_sigmas(
-            sigmas, detail_amount=dd_amount,
-            start=dd_opts.get("dd_start", DD_DEFAULTS["dd_start"]),
-            end=dd_opts.get("dd_end", DD_DEFAULTS["dd_end"]),
-            bias=dd_opts.get("dd_bias", DD_DEFAULTS["dd_bias"]),
-            exponent=dd_opts.get("dd_exponent", DD_DEFAULTS["dd_exponent"]),
-            start_offset=dd_opts.get("dd_start_offset", DD_DEFAULTS["dd_start_offset"]),
-            end_offset=dd_opts.get("dd_end_offset", DD_DEFAULTS["dd_end_offset"]),
-            fade=dd_opts.get("dd_fade", DD_DEFAULTS["dd_fade"]),
-            smooth=dd_smooth,
-        )
-
-    # Step 10: Sample (with optional repeat/cycling)
+    # Step 10: Sample (with optional multi-round cycling)
     sampler_obj = comfy.samplers.sampler_object(sampler_name)
     guider = Guider_Basic(model)
     guider.set_conds(positive_cond)
+    model_sampling = model.get_model_object("model_sampling")
 
-    repeat = max(1, int(repeat))
     for iteration in range(repeat):
         if iteration > 0:
             # Re-encode previous result as new latent input (latent cycling)
             latent_samples = vae.encode(decoded[:, :, :, :3].to(device))
+
+        # Per-round denoise and steps
+        round_denoise = denoise_per_round[iteration]
+        round_steps = max(1, int(steps_per_round[iteration]))
+
+        # Compute sigmas for this round
+        total_steps = round_steps
+        if round_denoise < 1.0:
+            total_steps = int(round_steps / round_denoise)
+
+        sigmas = comfy.samplers.calculate_sigmas(model_sampling, scheduler, total_steps).cpu()
+        sigmas = sigmas[-(round_steps + 1):]
+
+        if dd_enabled and dd_amount != 0:
+            dd_opts = dd_options or DD_DEFAULTS
+            sigmas = apply_detail_daemon_to_sigmas(
+                sigmas, detail_amount=dd_amount,
+                start=dd_opts.get("dd_start", DD_DEFAULTS["dd_start"]),
+                end=dd_opts.get("dd_end", DD_DEFAULTS["dd_end"]),
+                bias=dd_opts.get("dd_bias", DD_DEFAULTS["dd_bias"]),
+                exponent=dd_opts.get("dd_exponent", DD_DEFAULTS["dd_exponent"]),
+                start_offset=dd_opts.get("dd_start_offset", DD_DEFAULTS["dd_start_offset"]),
+                end_offset=dd_opts.get("dd_end_offset", DD_DEFAULTS["dd_end_offset"]),
+                fade=dd_opts.get("dd_fade", DD_DEFAULTS["dd_fade"]),
+                smooth=dd_smooth,
+            )
+
+        if repeat > 1:
+            print(f"      round {iteration+1}/{repeat}: denoise={round_denoise}, steps={round_steps}")
 
         noise = comfy.sample.prepare_noise(latent_samples, seed + iteration)
         latent_image = comfy.sample.fix_empty_latent_channels(model, latent_samples)
