@@ -2,9 +2,19 @@
 
 A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color palette generation**, and **outfit prompt building** -- designed for character-consistent image generation workflows.
 
-**Face Tools** -- Detect, match, and detail faces using InsightFace embeddings, BiSeNet parsing, and per-person LoRA inpainting.
-**Color Tools** -- Generate harmonious named color palettes from color theory or extract them from reference images.
-**Fashion Tools** -- Build seed-controlled outfit descriptions with color tag placeholders that integrate with the color pipeline.
+## Features at a Glance
+
+- **Multi-person face matching** — ArcFace embeddings with exclusive 1:1 assignment across up to 10 reference slots
+- **Appearance-enhanced matching** — Combine face identity with hair color and head appearance for better disambiguation when faces look similar ([details](documentation/MATCHING_GUIDE.md))
+- **Per-person LoRA inpainting** — 5 reference slots + 1 generic catch-all, each with its own LoRA, prompt, and mask type
+- **9 mask types** — face, head, body, hair, facial skin, eyes, mouth, neck, accessories (all from a single BiSeNet run)
+- **Detail Daemon integration** — sigma curve manipulation for detail-preserving inpainting
+- **Z-Image Turbo auto-detection** — automatic LoRA QKV conversion for Lumina2 models
+- **Color palette generation** — 7 harmony types, 14 style presets, 161 named colors
+- **Palette from image** — K-Means extraction with fashion-aware mode (no scikit-learn needed)
+- **Outfit prompt builder** — 40+ themed outfit sets, seed-controlled, with `#color#` tag integration
+- **Configurable model paths** — fallback paths via `outfit_config.ini` when models are in non-standard locations
+- **Zero extra dependencies for Color/Fashion tools** — only numpy (already in ComfyUI)
 
 ---
 
@@ -241,6 +251,8 @@ Performs single-reference face matching using InsightFace ArcFace embeddings. Co
 
 Multi-reference batch face matching node that outputs `PERSON_DATA` for use with Person Detailer. Supports up to 10 reference slots with exclusive face assignment -- each detected face matches at most one reference, preventing duplicate assignments. Generates face, head, body, and auxiliary masks for all detected persons.
 
+Supports **appearance-enhanced matching**: blends face identity (ArcFace) with hair color (BiSeNet) and head appearance (HSV histogram) for better disambiguation when faces look similar. See the [Matching Guide](documentation/MATCHING_GUIDE.md) for details and tuning tips.
+
 #### Inputs
 
 | Name | Type | Default | Description |
@@ -257,6 +269,7 @@ Multi-reference batch face matching node that outputs `PERSON_DATA` for use with
 | `detect_threshold` | FLOAT | 0.30 | Detection confidence threshold |
 | `detect_dilation` | INT | 10 | Mask dilation in pixels |
 | `detect_crop_factor` | FLOAT | 3.0 | Crop factor for face region extraction |
+| `match_weights` | STRING | 60/20/20 | Matching weight blend: face/hair/head. Controls how much each signal contributes. `100/0/0` = pure face matching. See [Matching Guide](documentation/MATCHING_GUIDE.md). |
 | `reference_1` | IMAGE | -- | First reference image (required) |
 | `reference_2` -- `reference_10` | IMAGE | -- | Additional reference images (optional) |
 
@@ -721,6 +734,7 @@ For in-depth documentation beyond this README, see the guides in the `documentat
 
 | Guide | Description |
 |-------|-------------|
+| [Matching Guide](documentation/MATCHING_GUIDE.md) | Appearance-enhanced face matching -- how hair color and head appearance improve disambiguation, weight tuning, examples |
 | [Color Guide](documentation/COLOR_GUIDE.md) | Complete reference for Color Palette Generator, Palette From Image, and Prompt Color Replace -- includes style presets, example prompts, and tips for sheer/layered clothing |
 | [Outfit Guide](documentation/OUTFIT_GUIDE.md) | Full guide for the Outfit Generator -- creating custom outfit sets, fabric system, override strings, formality tuning, and layering tips |
 | [Outfit Installation](documentation/OUTFIT_INSTALLATION.md) | Setup and configuration for the outfit system, including custom paths via `outfit_config.ini` |

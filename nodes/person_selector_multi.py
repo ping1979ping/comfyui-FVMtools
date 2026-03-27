@@ -3,11 +3,16 @@ import numpy as np
 import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
-from .utils.matcher import compute_similarity, aggregate_similarities
+from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
 from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
 from .utils.mask_utils import clean_mask_crumbs
 from .utils.segs_utils import assign_segs_to_references, run_detector
+from .utils.appearance import (
+    extract_hair_color,
+    extract_head_histogram,
+    parse_match_weights,
+)
 
 # Colors for preview overlay (RGB), one per reference
 _PREVIEW_COLORS = [
@@ -28,11 +33,14 @@ class PersonSelectorMulti:
     AUTO_FLOOR = 0.10
 
     DESCRIPTION = (
-        "Matches multiple reference persons in the current image using InsightFace (ArcFace) embeddings.\n\n"
+        "Matches multiple reference persons in the current image using InsightFace (ArcFace) embeddings,\n"
+        "optionally combined with hair color and head appearance matching.\n\n"
         "Each reference input accepts a batch of images for one person.\n"
         "Connect a reference to auto-create the next input slot.\n\n"
         "Supports batch input: pass multiple images and get PERSON_DATA for PersonDetailer.\n\n"
         "Faces are assigned exclusively: each face matches at most one reference.\n\n"
+        "match_weights controls the scoring blend: 'face/hair/head' (e.g. '60/20/20').\n"
+        "Set to '100/0/0' for pure face matching (previous behavior).\n\n"
         "Optional: connect SEGS or a detector for body-part detection.\n"
         "Detected parts are assigned to references via body mask overlap\n"
         "and stored as 'aux' masks in PERSON_DATA for PersonDetailer."
@@ -43,7 +51,7 @@ class PersonSelectorMulti:
         return {
             "required": {
                 "sam_model": ("SAM_MODEL", {"tooltip": "SAM model from Impact Pack SAMLoader — required for body masks"}),
-                "current_image": ("IMAGE",),
+                "current_image": ("IMAGE", {"tooltip": "Image(s) to search for faces. Supports batch input — each image is processed independently."}),
                 "auto_threshold": ("BOOLEAN", {"default": True,
                                                "tooltip": "Auto: finds optimal 1:1 face-reference assignment (ignores threshold). Off: uses manual threshold."}),
                 "threshold": ("FLOAT", {"default": 0.40, "min": 0.0, "max": 1.0, "step": 0.01,
@@ -64,7 +72,18 @@ class PersonSelectorMulti:
                                              "tooltip": "Mask dilation in pixels for detected body parts"}),
                 "detect_crop_factor": ("FLOAT", {"default": 3.0, "min": 1.0, "max": 10.0, "step": 0.1,
                                                    "tooltip": "Crop expansion factor passed to detector"}),
-                "reference_1": ("IMAGE",),
+                "match_weights": ("STRING", {"default": "60/20/20",
+                                             "tooltip": "Matching weight blend: face/hair/head as ratio.\n"
+                                                        "Controls how much each signal contributes to the final similarity score.\n\n"
+                                                        "Examples:\n"
+                                                        "  60/20/20 — balanced: face identity + hair color + head appearance (default)\n"
+                                                        "  100/0/0 — pure face matching (original behavior, ignores appearance)\n"
+                                                        "  50/30/20 — strong hair weight (good when faces are similar but hair differs)\n"
+                                                        "  40/40/20 — heavy hair focus (e.g. blonde vs brunette disambiguation)\n"
+                                                        "  70/15/15 — mostly face with subtle appearance boost\n\n"
+                                                        "Hair = BiSeNet hair region color (HSV). Head = head crop histogram (HSV).\n"
+                                                        "Values are auto-normalized, so 3/1/1 equals 60/20/20."}),
+                "reference_1": ("IMAGE", {"tooltip": "Reference image(s) for person 1. Pass a batch of images of the same person for better matching accuracy."}),
             },
             "optional": {
                 "segs": ("SEGS", {"tooltip": "Pre-computed body-part SEGS (e.g. from Impact Pack). Takes priority over detector inputs."}),
@@ -101,6 +120,45 @@ class PersonSelectorMulti:
             if faces:
                 embs.append(analyzer.get_embedding(faces[0]))
         return embs
+
+    def _extract_ref_appearance(self, analyzer, ref_batch, device):
+        """Extract appearance features (hair color, head histogram) from reference images.
+
+        Returns: (hair_color_hsv_or_None, head_hist_or_None) aggregated across batch.
+        """
+        hair_colors = []
+        head_hists = []
+
+        for i in range(ref_batch.shape[0]):
+            frame = ref_batch[i:i+1]
+            rgb = tensor2np(frame)
+            bgr = tensor2cv2(frame)
+            faces = analyzer.detect_faces(bgr)
+            if not faces:
+                continue
+
+            face = faces[0]
+            # Run BiSeNet for hair color
+            label_map = MaskGenerator._run_bisenet(rgb, face, device)
+            hc = extract_hair_color(rgb, label_map)
+            if hc is not None:
+                hair_colors.append(hc)
+
+            # Head histogram
+            hh = extract_head_histogram(rgb, face.bbox)
+            if hh is not None:
+                head_hists.append(hh)
+
+        # Aggregate: median hair color, average histogram
+        agg_hair = np.median(np.stack(hair_colors), axis=0).astype(np.float32) if hair_colors else None
+        agg_hist = None
+        if head_hists:
+            agg_hist = head_hists[0].copy()
+            for h in head_hists[1:]:
+                agg_hist += h
+            cv2.normalize(agg_hist, agg_hist)
+
+        return agg_hair, agg_hist
 
     def _build_similarity_matrix(self, ref_emb_sets, face_embs, aggregation):
         num_refs = len(ref_emb_sets)
@@ -190,7 +248,8 @@ class PersonSelectorMulti:
 
     def _process_single_image(self, single_image, analyzer, ref_emb_sets, num_refs,
                                sam_model, aggregation, effective_threshold,
-                               mask_fill_holes, mask_blur, device):
+                               mask_fill_holes, mask_blur, device,
+                               ref_appearances=None, match_weights=(1.0, 0.0, 0.0)):
         """Process a single image and return per-ref masks, assignments, faces, etc."""
         h, w = single_image.shape[1], single_image.shape[2]
 
@@ -207,10 +266,39 @@ class PersonSelectorMulti:
                 area = (bbox[2]-bbox[0]) * (bbox[3]-bbox[1])
                 print(f"  face #{fi}: bbox={bbox} area={area}px")
 
-        sim_matrix = self._build_similarity_matrix(ref_emb_sets, face_embs, aggregation)
-        if sim_matrix.size > 0:
-            import numpy as _np
-            print(f"[PersonSelectorMulti] sim_matrix:\n{_np.array2string(sim_matrix, precision=4)}")
+        # Build face embedding similarity matrix
+        face_sim_matrix = self._build_similarity_matrix(ref_emb_sets, face_embs, aggregation)
+
+        # Appearance-enhanced matching
+        w_face, w_hair, w_head = match_weights
+        use_appearance = (w_hair > 0 or w_head > 0) and ref_appearances is not None and face_count > 0
+
+        if use_appearance:
+            # Extract appearance features for detected faces
+            face_hair_colors = []
+            face_head_hists = []
+            for face in cur_faces:
+                label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
+                face_hair_colors.append(extract_hair_color(cur_rgb, label_map))
+                face_head_hists.append(extract_head_histogram(cur_rgb, face.bbox))
+
+            ref_hair_colors = [ra[0] for ra in ref_appearances]
+            ref_head_hists = [ra[1] for ra in ref_appearances]
+
+            sim_matrix = build_appearance_matrix(
+                face_sim_matrix, ref_hair_colors, face_hair_colors,
+                ref_head_hists, face_head_hists, match_weights,
+            )
+
+            if sim_matrix.size > 0:
+                print(f"[PersonSelectorMulti] face_sim:\n{np.array2string(face_sim_matrix, precision=4)}")
+                print(f"[PersonSelectorMulti] combined_sim (weights {w_face:.0%}/{w_hair:.0%}/{w_head:.0%}):\n"
+                      f"{np.array2string(sim_matrix, precision=4)}")
+        else:
+            sim_matrix = face_sim_matrix
+            if sim_matrix.size > 0:
+                print(f"[PersonSelectorMulti] sim_matrix:\n{np.array2string(sim_matrix, precision=4)}")
+
         assignments = self._assign_greedy(sim_matrix, effective_threshold)
 
         # Collect all mask types per reference
@@ -262,6 +350,7 @@ class PersonSelectorMulti:
     def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, aggregation,
                 mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
                 detect_threshold=0.3, detect_dilation=10, detect_crop_factor=3.0,
+                match_weights="60/20/20",
                 segs=None, bbox_detector=None, segm_detector=None, **kwargs):
         det_size_int = int(det_size)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -279,6 +368,20 @@ class PersonSelectorMulti:
         ref_emb_sets = [self._extract_ref_embeddings(analyzer, rb) for rb in refs]
         effective_threshold = self.AUTO_FLOOR if auto_threshold else threshold
 
+        # Parse appearance weights
+        weights = parse_match_weights(match_weights)
+        w_face, w_hair, w_head = weights
+        use_appearance = w_hair > 0 or w_head > 0
+
+        # Extract reference appearance features (hair color, head histogram)
+        ref_appearances = None
+        if use_appearance:
+            ref_appearances = [self._extract_ref_appearance(analyzer, rb, device) for rb in refs]
+            print(f"[PersonSelectorMulti] Appearance matching: weights={w_face:.0%}/{w_hair:.0%}/{w_head:.0%}")
+            for ri, (hc, hh) in enumerate(ref_appearances):
+                hair_info = f"HSV({hc[0]:.0f},{hc[1]:.0f},{hc[2]:.0f})" if hc is not None else "no hair"
+                print(f"  ref {ri+1}: hair={hair_info}, histogram={'yes' if hh is not None else 'no'}")
+
         print(f"[PersonSelectorMulti] batch_size={batch_size}, refs={num_refs}, "
               f"auto_threshold={auto_threshold}, effective={effective_threshold}")
 
@@ -290,6 +393,7 @@ class PersonSelectorMulti:
                 single, analyzer, ref_emb_sets, num_refs,
                 sam_model, aggregation, effective_threshold,
                 mask_fill_holes, mask_blur, device,
+                ref_appearances=ref_appearances, match_weights=weights,
             )
             batch_results.append(result)
 
@@ -430,11 +534,13 @@ class PersonSelectorMulti:
         # Report: per batch item
         sim_values = []
         match_values = []
+        weight_str = f"face {w_face:.0%} / hair {w_hair:.0%} / head {w_head:.0%}" if use_appearance else "face only"
         report_lines = [
             f"Batch size: {batch_size}",
             f"Faces (total): {total_faces}",
             f"Reference persons: {num_refs}",
             f"Threshold: {'Auto' if auto_threshold else threshold} | Aggregation: {aggregation}",
+            f"Match weights: {weight_str}",
             f"Matched (total): {total_matched}",
             "",
         ]
