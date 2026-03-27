@@ -57,34 +57,54 @@ Restart ComfyUI after installation.
 
 ## Required Models
 
-### InsightFace (Face Detection and Embedding)
+### InsightFace buffalo_l (Face Detection and Embedding)
 
-Downloaded automatically on first use. Stored in:
+Five ONNX models for face detection, landmark alignment, recognition, and gender/age estimation. **Auto-downloaded on first use** if `onnxruntime` is installed.
+
+**Stored in:**
 
 ```
 ComfyUI/models/insightface/models/buffalo_l/
+├── det_10g.onnx        (16.9 MB — face detection)
+├── w600k_r50.onnx      (174 MB — face recognition)
+├── 1k3d68.onnx         (144 MB — 3D face alignment)
+├── 2d106det.onnx       (5.0 MB — 2D landmark detection)
+└── genderage.onnx      (1.3 MB — gender/age estimation)
 ```
+
+**Download links (manual install):**
+
+| Source | Link |
+|--------|------|
+| HuggingFace (individual files) | [public-data/insightface/models/buffalo_l](https://huggingface.co/public-data/insightface/tree/main/models/buffalo_l) |
+| GitHub (ZIP bundle, ~326 MB) | [buffalo_l.zip](https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip) |
 
 ### BiSeNet (Face/Head Segmentation)
 
-**File:** `parsing_bisenet.pth`
+**File:** `parsing_bisenet.pth` (53 MB)
 
-A BiSeNet face parsing model with 19 semantic classes, used for generating face, head, hair, and other segmentation masks.
+A BiSeNet face parsing model with 19 semantic classes, used for generating face, head, hair, and other segmentation masks. **Must be downloaded manually.**
 
 Place in one of these directories:
 
 ```
-ComfyUI/models/gfpgan/parsing_bisenet.pth
+ComfyUI/models/gfpgan/parsing_bisenet.pth           (recommended)
 ComfyUI/models/facedetection/parsing_bisenet.pth
+ComfyUI/models/facerestore_models/parsing_bisenet.pth
 ```
 
-Download: [parsing_bisenet.pth](https://github.com/xinntao/facexlib/releases/download/v0.2.0/parsing_bisenet.pth)
+**Download links:**
 
-### SAM (Body Segmentation) -- Optional
+| Source | Link |
+|--------|------|
+| GitHub (official) | [parsing_bisenet.pth](https://github.com/xinntao/facexlib/releases/download/v0.2.0/parsing_bisenet.pth) |
+| HuggingFace (mirror) | [leonelhs/facexlib](https://huggingface.co/leonelhs/facexlib/resolve/main/parsing_bisenet.pth) |
+
+### SAM2.1 (Body Segmentation) -- Optional
 
 Required only for **body** mask mode. Uses the SAM model loaded via [ComfyUI Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)'s **SAMLoader** node.
 
-**Recommended model:** `sam2.1_hiera_large.pt`
+**Recommended model:** `sam2.1_hiera_large.pt` (898 MB)
 
 Place in:
 
@@ -92,9 +112,32 @@ Place in:
 ComfyUI/models/sams/sam2.1_hiera_large.pt
 ```
 
-Download: [sam2.1_hiera_large.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt)
+**Download links:**
+
+| Source | Link |
+|--------|------|
+| HuggingFace (official) | [facebook/sam2.1-hiera-large](https://huggingface.co/facebook/sam2.1-hiera-large) |
+| Meta CDN (direct) | [sam2.1_hiera_large.pt](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt) |
 
 Connect the SAMLoader output to Person Selector Multi's `sam_model` input.
+
+### Custom Model Paths
+
+If your models are stored in a non-standard location, you can configure fallback paths in `outfit_config.ini`:
+
+```ini
+[models]
+insightface_path = D:\AI\models\insightface
+bisenet_path = D:\AI\models\facerestore_models\parsing_bisenet.pth
+```
+
+These paths are only used as a **last resort**. The automatic search order is:
+
+1. ComfyUI standard model directories (`models/insightface/`, `models/gfpgan/`, etc.)
+2. Paths from `extra_model_paths.yaml`
+3. Paths from `outfit_config.ini`
+
+Changes to `outfit_config.ini` take effect on the next node execution -- no restart needed.
 
 ---
 

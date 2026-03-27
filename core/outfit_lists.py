@@ -1,27 +1,18 @@
 """Loads garment, fabric, and harmony data from .txt list files."""
 
-import configparser
 import os
 
-
-def _get_project_root():
-    """Get the project root directory."""
-    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+from .config import get_config, _get_project_root
 
 
 def _get_lists_path():
     """Get the lists directory path. Checks outfit_config.ini first, falls back to outfit_lists/."""
-    root = _get_project_root()
-    config_path = os.path.join(root, "outfit_config.ini")
+    config = get_config()
+    custom = config.get("paths", "custom_lists_path", fallback="").strip()
+    if custom and os.path.isdir(custom):
+        return custom
 
-    if os.path.isfile(config_path):
-        config = configparser.ConfigParser()
-        config.read(config_path, encoding="utf-8")
-        custom = config.get("paths", "custom_lists_path", fallback="").strip()
-        if custom and os.path.isdir(custom):
-            return custom
-
-    return os.path.join(root, "outfit_lists")
+    return os.path.join(_get_project_root(), "outfit_lists")
 
 
 def get_available_sets():

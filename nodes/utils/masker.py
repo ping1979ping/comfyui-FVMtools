@@ -7,6 +7,11 @@ import cv2
 import folder_paths
 from ...parsing import BiSeNet
 
+try:
+    from ...core.config import get_model_path
+except ImportError:
+    from core.config import get_model_path
+
 
 # BiSeNet 19-class labels:
 # 0=background, 1=skin, 2=left_brow, 3=right_brow, 4=left_eye, 5=right_eye,
@@ -78,11 +83,19 @@ class MaskGenerator:
                 weight_path = candidate
                 break
 
+        # INI fallback: check outfit_config.ini [models] bisenet_path
+        if weight_path is None:
+            ini_path = get_model_path("bisenet_path")
+            if ini_path and os.path.isfile(ini_path):
+                weight_path = ini_path
+
         if weight_path is None:
             raise FileNotFoundError(
-                "parsing_bisenet.pth not found. Searched in: "
-                + ", ".join(search_dirs)
-                + "\nPlease place it in one of these directories."
+                "parsing_bisenet.pth not found.\n"
+                "Searched in: " + ", ".join(search_dirs) + "\n"
+                "You can also set the path in outfit_config.ini under [models] bisenet_path.\n"
+                "Download: https://github.com/xinntao/facexlib/releases/download/v0.2.0/parsing_bisenet.pth\n"
+                "Mirror:   https://huggingface.co/leonelhs/facexlib/resolve/main/parsing_bisenet.pth"
             )
 
         net = BiSeNet(num_class=19)
