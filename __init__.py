@@ -18,6 +18,78 @@ try:
     from server import PromptServer
     from .core.outfit_lists import _get_lists_path
 
+    # ── API routes for LoRA info (CivitAI lookup) ──
+    import hashlib
+    import json as _json
+    import aiohttp as _aiohttp
+
+    _lora_info_cache = {}  # sha256 → civitai data
+
+    def _sha256_file(path, chunk_size=1 << 20):
+        h = hashlib.sha256()
+        with open(path, "rb") as f:
+            while True:
+                chunk = f.read(chunk_size)
+                if not chunk:
+                    break
+                h.update(chunk)
+        return h.hexdigest()
+
+    @PromptServer.instance.routes.get("/fvmtools/lora-info")
+    async def _get_lora_info(request):
+        """Get LoRA info from CivitAI by SHA256 hash lookup."""
+        lora_name = request.rel_url.query.get("file", "")
+        if not lora_name:
+            return web.json_response({"error": "missing file param"}, status=400)
+
+        try:
+            lora_path = folder_paths.get_full_path_or_raise("loras", lora_name)
+        except Exception:
+            return web.json_response({"error": "lora not found"}, status=404)
+
+        # Compute SHA256 (cached by path)
+        file_hash = _lora_info_cache.get(f"hash:{lora_path}")
+        if not file_hash:
+            file_hash = _sha256_file(lora_path)
+            _lora_info_cache[f"hash:{lora_path}"] = file_hash
+
+        # Check civitai cache
+        cached = _lora_info_cache.get(f"civitai:{file_hash}")
+        if cached is not None:
+            return web.json_response(cached)
+
+        # Query CivitAI API
+        try:
+            async with _aiohttp.ClientSession() as session:
+                url = f"https://civitai.com/api/v1/model-versions/by-hash/{file_hash}"
+                async with session.get(url, timeout=_aiohttp.ClientTimeout(total=10)) as resp:
+                    if resp.status != 200:
+                        result = {"error": f"CivitAI returned {resp.status}", "sha256": file_hash}
+                        _lora_info_cache[f"civitai:{file_hash}"] = result
+                        return web.json_response(result)
+                    data = await resp.json()
+        except Exception as e:
+            return web.json_response({"error": f"CivitAI request failed: {e}", "sha256": file_hash})
+
+        # Extract useful info
+        model_info = data.get("model", {})
+        trained_words = data.get("trainedWords", [])
+        model_id = data.get("modelId", "")
+        version_id = data.get("id", "")
+        civitai_url = f"https://civitai.com/models/{model_id}?modelVersionId={version_id}" if model_id else ""
+
+        result = {
+            "name": model_info.get("name", lora_name),
+            "version": data.get("name", ""),
+            "type": model_info.get("type", ""),
+            "baseModel": data.get("baseModel", ""),
+            "triggerWords": trained_words,
+            "civitaiUrl": civitai_url,
+            "sha256": file_hash,
+        }
+        _lora_info_cache[f"civitai:{file_hash}"] = result
+        return web.json_response(result)
+
     @PromptServer.instance.routes.get("/fvmtools/outfit-files")
     async def _get_outfit_files(request):
         """List .txt files in an outfit set directory."""
