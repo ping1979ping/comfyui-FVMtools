@@ -75,6 +75,52 @@ Chronologische Dokumentation der Ansätze für Depth-guided Masking und Body-Mas
 
 ---
 
+---
+
+## 7. SEGS-Zuweisung per Body-Mask Overlap — VERWORFEN (zirkulär)
+
+**Ansatz:** segm_detector SEGS werden Referenzen per Body-Mask-Overlap zugewiesen.
+
+**Problem:** Zirkuläre Abhängigkeit — die Body-Masken (SAM) sind das Problem, und die SEGS-Zuweisung basiert auf ihnen. Falscher Overlap → falscher Person zugewiesen.
+
+**Fix:** SEGS-Zuweisung über Face-Center-Containment statt Body-Overlap. Welches SEGS-Segment enthält den Face-Center einer Referenz? → direkte, identity-basierte Zuweisung.
+
+---
+
+## 8. BiSeNet-only Seed (ohne SAM) — VERWORFEN (zu klein)
+
+**Ansatz:** Nur BiSeNet Labels 1-18 als Body-Seed, dann Grow zu Image/Depth Edges.
+
+**Problem:** BiSeNet croppt auf Face-Bbox + 30% Padding. Der Cloth-Label (16) deckt nur den Kragen-Bereich ab. Grow von 30-150px reicht nicht bis zum Körper.
+
+**Warum verworfen:** BiSeNet sieht nur den Kopfbereich, nicht den Torso. Der Seed ist zu klein für Ganzkörper-Masken.
+
+---
+
+## 9. SEGS als Body-Masken (Detector Mode) — AKTUELL EMPFOHLEN
+
+**Ansatz:** Wenn segm_detector verbunden → YOLO-Instanz-Segmentierung als Body-Masken nutzen. SAM komplett überspringen.
+
+**Vorteile:**
+- Instanz-basiert = nicht-überlappend per Design
+- Face-Center-basierte Zuweisung = identity-korrekt
+- Schneller (kein SAM nötig, ~200-500ms/Person gespart)
+- YOLO erkennt auch teilweise verdeckte Personen
+
+**Parameter:** `body_mask_mode="auto"` + segm_detector verbunden → automatisch Detector-Mode
+
+---
+
+## 10. Depth-basierte Rendering-Reihenfolge — BEIBEHALTEN
+
+**Ansatz:** PersonDetailer rendert Personen back-to-front (hinterste zuerst, vorderste zuletzt). Vordergrund-Person "gewinnt" bei Überlappung.
+
+**Depth-Quelle:** Median Depth aus Body-Maske pro Referenz. Fallback: Face-Y-Position.
+
+**Parameter:** `depth_sort_order` = "front_last" (hell=nah) | "front_first" (invertiert) | "off"
+
+---
+
 ## Erkenntnisse
 
 1. **BiSeNet Head-Masken sind zuverlässig** — können als Vertrauensanker dienen
@@ -82,4 +128,8 @@ Chronologische Dokumentation der Ansätze für Depth-guided Masking und Body-Mas
 3. **Depth-Edges sind nützlich** aber nur im Head-Bereich wirklich stark
 4. **Image-Edges (Canny) sind unterschätzt** — Körperkonturen sind im Bild klar sichtbar
 5. **Preview muss deconflicted Masken zeigen** — sonst sieht man den Effekt nicht
-6. **Inside-Out (Seed→Grow) ist besser als Outside-In (SAM→Trim)**
+6. **Inside-Out (Seed→Grow) ist besser als Outside-In (SAM→Trim)** — aber nur mit genug Seed-Fläche
+7. **SEGS-Zuweisung per Face-Center statt Body-Overlap** — bricht zirkuläre Abhängigkeit
+8. **segm_detector (YOLO) ist die beste Body-Mask-Quelle** für Multi-Person — nicht SAM
+9. **Rendering-Reihenfolge nach Tiefe** löst Überlappungs-Artefakte beim Inpainting
+10. **BiSeNet Seeds sind zu klein für Body** — nur nützlich für Head/Face, nicht für Ganzkörper

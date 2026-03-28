@@ -8,7 +8,8 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
 - **Appearance-enhanced matching** — Combine face identity with hair color and head appearance for better disambiguation when faces look similar ([details](documentation/MATCHING_GUIDE.md))
 - **Per-person LoRA inpainting** — 5 reference slots + 1 generic catch-all, each with its own LoRA, prompt, and mask type
 - **9 mask types** — face, head, body, hair, facial skin, eyes, mouth, neck, accessories (all from a single BiSeNet run)
-- **Depth-guided mask reconstruction** — optional depth map input fills mask gaps and removes overlapping objects using depth coherence
+- **Depth-guided mask refinement** — edge carving, cross-reference deconfliction, and back-to-front rendering order via depth map
+- **Instance-level body masks** — connect a segm_detector for non-overlapping per-person body masks (replaces SAM)
 - **Person Data Refiner** — regenerate masks at hi-res after upscaling, preserving face-to-reference assignments
 - **Detail Daemon integration** — sigma curve manipulation for detail-preserving inpainting
 - **Z-Image Turbo auto-detection** — automatic LoRA QKV conversion for Lumina2 models
@@ -274,6 +275,10 @@ Multi-reference batch face matching node that outputs `PERSON_DATA` for use with
 
 Supports **appearance-enhanced matching**: blends face identity (ArcFace) with hair color (BiSeNet) and head appearance (HSV histogram) for better disambiguation when faces look similar. See the [Matching Guide](documentation/MATCHING_GUIDE.md) for details and tuning tips.
 
+**Body mask modes:** When a `segm_detector` is connected (recommended), instance-level person segments are used as body masks -- these are non-overlapping by design and much more accurate than SAM for multi-person scenes. The `body_mask_mode` parameter controls the strategy (`auto` selects the best available).
+
+**Depth-aware rendering:** When a `depth_map` is connected, masks are refined using depth edges, overlapping masks are resolved by depth proximity, and the `depth_sort_order` parameter controls back-to-front rendering order in Person Detailer. The preview output includes an isometric layer diagram showing the rendering order.
+
 #### Inputs
 
 | Name | Type | Default | Description |
@@ -299,12 +304,14 @@ Supports **appearance-enhanced matching**: blends face identity (ArcFace) with h
 | Name | Type | Description |
 |------|------|-------------|
 | `segs` | SEGS | Pre-computed segments from external detector |
-| `bbox_detector` | BBOX_DETECTOR | Bounding box detector for face detection |
-| `segm_detector` | SEGM_DETECTOR | Segmentation detector |
-| `depth_map` | IMAGE | Depth map batch (e.g. from Depth Anything V2) for depth-guided mask reconstruction |
-| `depth_grow_pixels` | INT | Max dilation radius for depth-based gap filling (default: 50, 0=off) |
-| `depth_remove_overlap` | BOOLEAN | Remove depth-mismatched pixels from masks (default: True) |
-| `depth_tolerance` | FLOAT | Depth band tolerance factor (default: 0.05, higher=more permissive) |
+| `bbox_detector` | BBOX_DETECTOR | Bounding box detector for body detection |
+| `segm_detector` | SEGM_DETECTOR | Segmentation detector for instance-level body masks (recommended for multi-person) |
+| `depth_map` | IMAGE | Depth map batch (e.g. from Depth Anything V2) for depth-guided mask refinement and rendering order |
+| `depth_edge_threshold` | FLOAT | Depth gradient threshold for edge detection (default: 0.05, lower=more edges) |
+| `depth_carve_strength` | FLOAT | How strongly depth edges cut masks (default: 0.8, 0=off, 1=full) |
+| `depth_grow_pixels` | INT | Gap filling between depth edges (default: 30, 0=off) |
+| `body_mask_mode` | COMBO | Body mask strategy: `auto` (detector if connected, else seed_grow), `detector`, `seed_grow`, `sam` |
+| `depth_sort_order` | COMBO | Rendering order: `front_last` (bright=near, default), `front_first` (inverted depth), `off` |
 
 #### Outputs
 
@@ -318,7 +325,7 @@ Supports **appearance-enhanced matching**: blends face identity (ArcFace) with h
 | `combined_head` | MASK | Combined head mask (all references) |
 | `combined_body` | MASK | Combined body mask (all references) |
 | `aux_masks` | MASK | Auxiliary masks (hair, skin, etc.) |
-| `preview` | IMAGE | Annotated preview image showing matches |
+| `preview` | IMAGE | Annotated preview + isometric depth layer diagram (2 images per batch) |
 | `similarities` | FLOAT | Per-reference similarity scores |
 | `matches` | BOOLEAN | Per-reference match results |
 | `matched_count` | INT | Number of successfully matched faces |
@@ -421,10 +428,10 @@ Optional depth map input enables **depth-guided mask reconstruction**: fills mas
 
 | Name | Type | Default | Description |
 |------|------|---------|-------------|
-| `depth_map` | IMAGE | -- | Depth map batch for depth-guided mask reconstruction |
-| `depth_grow_pixels` | INT | 50 | Max dilation radius for depth-based gap filling (0=off) |
-| `depth_remove_overlap` | BOOLEAN | True | Remove depth-mismatched pixels from masks |
-| `depth_tolerance` | FLOAT | 0.05 | Depth band tolerance factor |
+| `depth_map` | IMAGE | -- | Depth map batch for depth-guided mask refinement |
+| `depth_edge_threshold` | FLOAT | 0.05 | Depth gradient threshold for edge detection |
+| `depth_carve_strength` | FLOAT | 0.8 | How strongly depth edges cut masks |
+| `depth_grow_pixels` | INT | 30 | Gap filling between depth edges |
 
 #### Outputs
 
@@ -433,16 +440,25 @@ Optional depth map input enables **depth-guided mask reconstruction**: fills mas
 | `person_data` | PERSON_DATA | Fresh PERSON_DATA with masks at the new resolution |
 | `report` | STRING | Report showing re-matching results and runtime |
 
-#### Depth-Guided Mask Reconstruction
+#### Depth-Guided Mask Refinement
 
-When a `depth_map` is connected (available on both Person Selector Multi and Person Data Refiner), the system uses depth coherence to improve body/head/face masks:
+When a `depth_map` is connected, the system uses depth information in three ways:
 
-1. **Depth profile estimation** -- computes the person's depth range from the existing mask (robust percentile-based band)
-2. **Gap filling** -- iteratively grows the mask into adjacent pixels whose depth matches the person. Stops at depth discontinuities (e.g. another person behind).
-3. **Overlap removal** -- pixels inside the mask whose depth doesn't match the person are softly removed (sigmoid falloff). This handles cases where another person's arm or a background object bleeds into the mask.
-4. **Cleanup** -- morphological closing smooths edges, tiny fragments are removed.
+1. **Edge carving** -- Sobel edge detection on the depth map finds depth discontinuities (object boundaries). Masks are cut along these edges, then components with matching person-depth are regrouped. This handles occlusion (e.g. a pole in front of a person creates two mask parts that are both kept).
+2. **Gap filling** -- iteratively grows masks between edges without crossing them. Contour-based hole filling closes internal gaps (between legs, arm-body gaps).
+3. **Cross-reference deconfliction** -- where masks of different persons overlap, the pixel is assigned to the person with the closest depth. BiSeNet identity seeds get priority over SAM-derived areas.
+4. **Rendering order** -- Person Detailer renders persons back-to-front based on depth, so foreground persons correctly overlap background ones. Controlled by `depth_sort_order`.
 
-The depth refinement is applied to body, head, and face masks only. Fine-grained semantic masks (hair, eyes, mouth, etc.) are not refined with depth as they require pixel-precise semantic boundaries.
+**Body mask modes** (`body_mask_mode`):
+
+| Mode | Description |
+|------|-------------|
+| `auto` (default) | Uses `detector` if segm/bbox detector connected, else `seed_grow` |
+| `detector` | Instance-level SEGS from connected detector as body mask. Non-overlapping by design, fastest, best for multi-person. Skips SAM entirely. |
+| `seed_grow` | BiSeNet labels + SAM as combined seed, carved by Canny image edges + depth edges |
+| `sam` | Legacy SAM-only body segmentation |
+
+**Recommended setup for multi-person:** Connect a `segm_detector` (e.g. YOLO from Impact Pack) + `depth_map` (Depth Anything V2). Set `body_mask_mode=auto`. This gives instance-separated body masks with depth-aware rendering order.
 
 **Recommended depth source:** [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) via ComfyUI ControlNet Aux.
 
