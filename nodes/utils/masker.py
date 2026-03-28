@@ -49,6 +49,49 @@ ALL_MASK_TYPES = ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth"
 BISENET_MASK_TYPES = [t for t in ALL_MASK_TYPES if t != "body"]  # types derivable from BiSeNet
 
 
+def _clip_labels_to_person(label_map, face, other_faces):
+    """Remove BiSeNet labels that are geometrically closer to another person's face.
+
+    When BiSeNet crops overlap, labels from a neighboring person can leak into
+    this person's label map. This function zeroes out any person-labeled pixels
+    (labels 1-18) that are closer to another face center than to the target face.
+    """
+    if not other_faces:
+        return label_map
+
+    h, w = label_map.shape
+    fx1, fy1, fx2, fy2 = [int(v) for v in face.bbox]
+    face_cx = (fx1 + fx2) / 2
+    face_cy = (fy1 + fy2) / 2
+
+    # Find all person pixels (non-background)
+    person_pixels = label_map > 0
+    if not np.any(person_pixels):
+        return label_map
+
+    # Get coordinates of all person pixels
+    ys, xs = np.where(person_pixels)
+
+    # Distance to own face center
+    own_dist = (xs - face_cx) ** 2 + (ys - face_cy) ** 2
+
+    # Check if any other face is closer
+    for of in other_faces:
+        ox1, oy1, ox2, oy2 = [int(v) for v in of.bbox]
+        ocx = (ox1 + ox2) / 2
+        ocy = (oy1 + oy2) / 2
+        other_dist = (xs - ocx) ** 2 + (ys - ocy) ** 2
+
+        # Zero out pixels closer to other face
+        closer_to_other = other_dist < own_dist
+        if np.any(closer_to_other):
+            label_map_copy = label_map.copy()
+            label_map_copy[ys[closer_to_other], xs[closer_to_other]] = 0
+            label_map = label_map_copy
+
+    return label_map
+
+
 def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
                                 depth_edges_data=None, depth_np=None,
                                 depth_carve_strength=0.8, depth_grow=30,
@@ -81,6 +124,11 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     use_depth = depth_edges_data is not None and depth_np is not None
 
     label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
+
+    # Remove labels that belong to a neighboring person (cross-person leakage)
+    if other_faces:
+        label_map = _clip_labels_to_person(label_map, face, other_faces)
+
     masks = {}
 
     for mask_type, labels in MASK_TYPE_LABELS.items():
@@ -139,14 +187,9 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         grow_px = max(depth_grow, 25)
         body_mask_np = grow_mask_between_edges(body_mask_np, barrier, max_pixels=grow_px)
 
-        # Contour fill for internal holes
-        body_uint8 = (body_mask_np * 255).astype(np.uint8)
-        contours, _ = cv2.findContours(body_uint8, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        filled = np.zeros_like(body_uint8)
-        cv2.drawContours(filled, contours, -1, 255, cv2.FILLED)
-        body_mask_np = (filled / 255.0).astype(np.float32)
-
-        smooth_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11, 11))
+        # Morphological closing to smooth edges and bridge small gaps
+        # Use moderate kernel — large enough for noise, small enough to preserve leg gaps
+        smooth_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
         body_mask_np = cv2.morphologyEx((body_mask_np * 255).astype(np.uint8),
                                          cv2.MORPH_CLOSE, smooth_kernel).astype(np.float32) / 255.0
         body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.003)
@@ -233,14 +276,18 @@ class MaskGenerator:
 
     @classmethod
     def _run_bisenet(cls, image_rgb: np.ndarray, face, device) -> np.ndarray:
-        """Run BiSeNet on face crop, return label map at original image size."""
+        """Run BiSeNet on face crop, return label map at original image size.
+
+        Uses generous padding (50%) around face bbox and feathered edge blending
+        to avoid hard rectangular crop boundary artifacts.
+        """
         h, w = image_rgb.shape[:2]
         net = cls._load_bisenet(device)
 
-        # Get bbox with 30% padding
+        # Get bbox with 50% padding (increased from 30% for smoother edges)
         x1, y1, x2, y2 = [int(v) for v in face.bbox]
         bw, bh = x2 - x1, y2 - y1
-        pad_x, pad_y = int(bw * 0.3), int(bh * 0.3)
+        pad_x, pad_y = int(bw * 0.5), int(bh * 0.5)
         cx1 = max(0, x1 - pad_x)
         cy1 = max(0, y1 - pad_y)
         cx2 = min(w, x2 + pad_x)
@@ -260,6 +307,14 @@ class MaskGenerator:
             out = net(crop_t)[0]  # (1, 19, 512, 512)
 
         parsing = out.squeeze(0).argmax(0).cpu().numpy().astype(np.uint8)  # (512, 512)
+
+        # Zero out labels at the crop border to prevent hard edges
+        # Fade out: labels within 8px of the 512x512 crop edge are zeroed
+        border = 8
+        parsing[:border, :] = 0
+        parsing[-border:, :] = 0
+        parsing[:, :border] = 0
+        parsing[:, -border:] = 0
 
         # Scale back to crop size
         crop_h, crop_w = cy2 - cy1, cx2 - cx1
