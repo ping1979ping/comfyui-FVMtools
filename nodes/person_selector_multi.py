@@ -634,6 +634,23 @@ class PersonSelectorMulti:
             person_data["aux_unassigned_masks"] = torch.cat(aux_unassigned, dim=0)  # [B, H, W]
             person_data["aux_part_counts"] = aux_part_counts
 
+            # Use SEGS person masks as body masks (instance-level, non-overlapping)
+            # The aux assignments already map SEGS to refs via body mask overlap.
+            # If a ref got person-sized SEGS, those are better body masks than SAM.
+            segs_upgraded = 0
+            for b in range(batch_size):
+                for ri in range(num_refs):
+                    aux_mask = person_data["aux_masks"][ri][b]
+                    aux_area = aux_mask.sum().item()
+                    current_body = person_data["body_masks"][ri][b]
+                    current_area = current_body.sum().item()
+                    # Replace body mask if SEGS mask is substantial (>30% of current body)
+                    if aux_area > current_area * 0.3 and aux_area > 1000:
+                        person_data["body_masks"][ri][b] = aux_mask
+                        segs_upgraded += 1
+            if segs_upgraded > 0:
+                print(f"[PersonSelectorMulti] Upgraded {segs_upgraded} body masks from SEGS detector")
+
         # Legacy mask outputs: face, head, body stacked across batch
         all_face_out = []
         all_head_out = []
