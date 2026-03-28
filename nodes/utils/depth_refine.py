@@ -29,6 +29,11 @@ def refine_mask_with_depth(mask, depth_map, grow_pixels=50, remove_overlap=True,
     if depth_map is None:
         return mask
 
+    # Resize depth map if resolution doesn't match mask
+    H, W = mask.shape
+    if depth_map.shape[0] != H or depth_map.shape[1] != W:
+        depth_map = cv2.resize(depth_map, (W, H), interpolation=cv2.INTER_LINEAR)
+
     # Need enough mask pixels to estimate depth profile
     mask_pixels = np.sum(mask > 0.5)
     if mask_pixels < 50:
