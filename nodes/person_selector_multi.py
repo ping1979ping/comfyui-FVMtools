@@ -653,10 +653,11 @@ class PersonSelectorMulti:
         else:
             aux_masks_batch = empty_mask(h, w)
 
-        # Preview
+        # Preview (uses deconflicted masks from person_data_masks, not raw batch_results)
         preview_parts = []
         for b in range(batch_size):
-            body_masks_for_preview = batch_results[b]["masks_per_type"]["body"]
+            # Build per-ref body mask list from deconflicted person_data_masks
+            body_masks_for_preview = [person_data_masks["body"][ri][b:b+1] for ri in range(num_refs)]
             p = self._render_preview(
                 current_image[b:b+1], batch_results[b]["assignments"],
                 batch_results[b]["cur_faces"], body_masks_for_preview, h, w,
