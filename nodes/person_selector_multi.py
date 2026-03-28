@@ -4,7 +4,7 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
-from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES
+from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
 from .utils.mask_utils import clean_mask_crumbs
 from .utils.segs_utils import assign_segs_to_references, run_detector
@@ -89,6 +89,13 @@ class PersonSelectorMulti:
                 "segs": ("SEGS", {"tooltip": "Pre-computed body-part SEGS (e.g. from Impact Pack). Takes priority over detector inputs."}),
                 "bbox_detector": ("BBOX_DETECTOR", {"tooltip": "Bounding box detector for body-part detection. Ignored if SEGS connected."}),
                 "segm_detector": ("SEGM_DETECTOR", {"tooltip": "Segmentation detector (preferred over bbox). Ignored if SEGS connected."}),
+                "depth_map": ("IMAGE", {"tooltip": "Depth map batch from Depth Anything V2 or similar. Improves masks by filling gaps and removing overlaps using depth coherence."}),
+                "depth_grow_pixels": ("INT", {"default": 50, "min": 0, "max": 200, "step": 5,
+                                               "tooltip": "Max dilation radius for depth-based gap filling. 0 = no growing."}),
+                "depth_remove_overlap": ("BOOLEAN", {"default": True,
+                                                      "tooltip": "Remove pixels from masks whose depth doesn't match the person."}),
+                "depth_tolerance": ("FLOAT", {"default": 0.05, "min": 0.01, "max": 0.30, "step": 0.01,
+                                               "tooltip": "Depth band tolerance. Higher = more permissive (includes more depth variation)."}),
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
@@ -190,34 +197,14 @@ class PersonSelectorMulti:
             assigned_faces.add(fi)
         return assignments
 
-    def _generate_all_masks(self, cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur):
-        """Generate all mask types from a single BiSeNet run + SAM body mask."""
-        label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
-
-        masks = {}
-
-        # All BiSeNet-derived masks from the same label_map (nearly free)
-        for mask_type, labels in MASK_TYPE_LABELS.items():
-            mask_np = np.isin(label_map, list(labels)).astype(np.float32)
-            mask = mask2tensor(mask_np)
-            if mask_fill_holes:
-                mask = fill_mask_holes(mask)
-            if mask_blur > 0:
-                mask = apply_gaussian_blur(mask, mask_blur)
-            masks[mask_type] = mask
-
-        # Body mask via SAM (separate from BiSeNet)
-        body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model)
-        # Clean up crumbs/artifacts from SAM
-        body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.005)
-        mask = mask2tensor(body_mask_np)
-        if mask_fill_holes:
-            mask = fill_mask_holes(mask)
-        if mask_blur > 0:
-            mask = apply_gaussian_blur(mask, mask_blur)
-        masks["body"] = mask
-
-        return masks
+    def _generate_all_masks(self, cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
+                            depth_np=None, depth_grow=50, depth_remove_overlap=True, depth_tolerance=0.05):
+        """Generate all mask types. Delegates to shared generate_all_masks_for_face()."""
+        return generate_all_masks_for_face(
+            cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
+            depth_np=depth_np, depth_grow=depth_grow,
+            depth_remove_overlap=depth_remove_overlap, depth_tolerance=depth_tolerance,
+        )
 
     def _render_preview(self, current_image, assignments, cur_faces, body_masks_list, h, w):
         preview = tensor2np(current_image).copy()
@@ -249,7 +236,8 @@ class PersonSelectorMulti:
     def _process_single_image(self, single_image, analyzer, ref_emb_sets, num_refs,
                                sam_model, aggregation, effective_threshold,
                                mask_fill_holes, mask_blur, device,
-                               ref_appearances=None, match_weights=(1.0, 0.0, 0.0)):
+                               ref_appearances=None, match_weights=(1.0, 0.0, 0.0),
+                               depth_np=None, depth_grow=50, depth_remove_overlap=True, depth_tolerance=0.05):
         """Process a single image and return per-ref masks, assignments, faces, etc."""
         h, w = single_image.shape[1], single_image.shape[2]
 
@@ -308,7 +296,9 @@ class PersonSelectorMulti:
         for ri in range(num_refs):
             if ri in assignments:
                 fi, sim = assignments[ri]
-                masks = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur)
+                masks = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
+                                                  depth_np=depth_np, depth_grow=depth_grow,
+                                                  depth_remove_overlap=depth_remove_overlap, depth_tolerance=depth_tolerance)
                 for mt in ALL_MASK_TYPES:
                     masks_per_type[mt].append(masks.get(mt, empty_mask(h, w)))
                 print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})")
@@ -346,7 +336,9 @@ class PersonSelectorMulti:
                 ri = fi_to_ri[fi]
                 per_face = {mt: masks_per_type[mt][ri] for mt in ALL_MASK_TYPES}
             else:
-                per_face = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur)
+                per_face = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
+                                                      depth_np=depth_np, depth_grow=depth_grow,
+                                                      depth_remove_overlap=depth_remove_overlap, depth_tolerance=depth_tolerance)
             per_face_masks.append(per_face)
         face_to_ref = [fi_to_ri.get(fi) for fi in range(face_count)]
 
@@ -366,7 +358,9 @@ class PersonSelectorMulti:
                 mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
                 detect_threshold=0.3, detect_dilation=10, detect_crop_factor=3.0,
                 match_weights="60/20/20",
-                segs=None, bbox_detector=None, segm_detector=None, **kwargs):
+                segs=None, bbox_detector=None, segm_detector=None,
+                depth_map=None, depth_grow_pixels=50, depth_remove_overlap=True, depth_tolerance=0.05,
+                **kwargs):
         import time as _time
         _t0 = _time.monotonic()
         det_size_int = int(det_size)
@@ -399,10 +393,20 @@ class PersonSelectorMulti:
                 hair_info = f"HSV({hc[0]:.0f},{hc[1]:.0f},{hc[2]:.0f})" if hc is not None else "no hair"
                 print(f"  ref {ri+1}: hair={hair_info}, histogram={'yes' if hh is not None else 'no'}")
 
+        # Prepare depth maps per batch image
+        use_depth = depth_map is not None
+        depth_nps = []
+        if use_depth:
+            for b in range(batch_size):
+                dm = depth_map[b].cpu().numpy()  # [H, W, C]
+                depth_nps.append(dm[:, :, 0] if dm.ndim == 3 else dm)
+            print(f"[PersonSelectorMulti] Depth refinement enabled: grow={depth_grow_pixels}, overlap={depth_remove_overlap}, tol={depth_tolerance}")
+
         print(f"[PersonSelectorMulti] batch_size={batch_size}, refs={num_refs}, "
               f"auto_threshold={auto_threshold}, effective={effective_threshold}")
 
         # Process each image in the batch
+        depth_kwargs = dict(depth_grow=depth_grow_pixels, depth_remove_overlap=depth_remove_overlap, depth_tolerance=depth_tolerance) if use_depth else {}
         batch_results = []
         for b in range(batch_size):
             single = current_image[b:b+1]
@@ -411,6 +415,8 @@ class PersonSelectorMulti:
                 sam_model, aggregation, effective_threshold,
                 mask_fill_holes, mask_blur, device,
                 ref_appearances=ref_appearances, match_weights=weights,
+                depth_np=depth_nps[b] if use_depth else None,
+                **depth_kwargs,
             )
             batch_results.append(result)
 
