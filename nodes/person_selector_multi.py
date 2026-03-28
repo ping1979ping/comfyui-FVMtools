@@ -281,98 +281,70 @@ class PersonSelectorMulti:
 
         return np2tensor(preview)
 
-    def _render_depth_layers(self, assignments, body_masks_list, ref_depths, h, w, sort_order="front_last"):
-        """Render isometric layer diagram showing rendering order by depth."""
-        canvas = np.full((h, w, 3), 30, dtype=np.uint8)  # dark gray background
+    def _render_mask_layers(self, current_image, assignments, cur_faces,
+                             body_masks_list, h, w, num_refs):
+        """Render mask overlay: original image with semi-transparent colored body silhouettes.
 
-        if not assignments or not ref_depths:
-            # No depth info — draw placeholder
-            font = cv2.FONT_HERSHEY_SIMPLEX
-            cv2.putText(canvas, "No depth data", (w // 4, h // 2), font, 1.5, (100, 100, 100), 2, cv2.LINE_AA)
-            return np2tensor(canvas)
+        Shows all reference masks layered on top of the original image with clear
+        color coding, contour outlines, and reference number labels.
+        Unmatched regions remain clearly visible underneath.
+        """
+        preview = tensor2np(current_image).copy()
 
-        # Sort refs by depth for display
-        sorted_refs = sorted(assignments.keys(), key=lambda ri: ref_depths.get(ri, 0.5))
-        if sort_order == "front_last":
-            # Render order: furthest first (low depth) → closest last (high depth)
-            render_order = sorted_refs  # ascending = far first
-        elif sort_order == "front_first":
-            render_order = list(reversed(sorted_refs))
-        else:
-            render_order = sorted(assignments.keys())
-
-        n = len(render_order)
-        if n == 0:
-            return np2tensor(canvas)
-
-        # Isometric offsets: each layer shifts right+down
-        offset_x_step = max(20, min(50, w // (n * 4)))
-        offset_y_step = max(15, min(40, h // (n * 4)))
-        total_offset_x = offset_x_step * (n - 1)
-        total_offset_y = offset_y_step * (n - 1)
-
-        # Scale silhouettes to fit with offsets
-        avail_w = w - total_offset_x - 20
-        avail_h = h - total_offset_y - 60
-        scale = min(avail_w / w, avail_h / h, 0.85)
-
-        font = cv2.FONT_HERSHEY_SIMPLEX
-
-        for layer_idx, ri in enumerate(render_order):
+        # Paint all masks as colored overlays (back-to-front by ref index)
+        for ri in range(num_refs):
             color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
-            depth_val = ref_depths.get(ri, 0.5)
-            fi = assignments[ri][0]
-
-            # Get body mask
-            if ri < len(body_masks_list):
-                mask = (body_masks_list[ri][0].cpu().numpy() * 255).astype(np.uint8)
-            else:
+            if ri >= len(body_masks_list):
+                continue
+            mask_np = (body_masks_list[ri][0].cpu().numpy() * 255).astype(np.uint8)
+            if mask_np.max() == 0:
                 continue
 
-            # Resize mask
-            sh = int(h * scale)
-            sw = int(w * scale)
-            mask_small = cv2.resize(mask, (sw, sh), interpolation=cv2.INTER_NEAREST)
+            mask_bool = mask_np > 128
+            fill_color = np.array(color, dtype=np.float32)
 
-            # Offset for this layer
-            ox = 10 + layer_idx * offset_x_step
-            oy = 40 + layer_idx * offset_y_step
+            # 40% opacity fill — strong enough to see, transparent enough to see image
+            preview_float = preview.astype(np.float32)
+            preview_float[mask_bool] = preview_float[mask_bool] * 0.6 + fill_color * 0.4
+            preview = preview_float.astype(np.uint8)
 
-            # Draw shadow (darker version behind)
-            shadow_region = canvas[oy:oy + sh, ox:ox + sw]
-            if shadow_region.shape[:2] == (sh, sw):
-                shadow_mask = mask_small > 128
-                shadow_region[shadow_mask] = np.clip(
-                    shadow_region[shadow_mask].astype(np.int16) + 15, 0, 255).astype(np.uint8)
+            # White contour outline for separation
+            contours, _ = cv2.findContours(mask_np, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            cv2.drawContours(preview, contours, -1, (255, 255, 255), 1)
+            # Colored contour on top
+            cv2.drawContours(preview, contours, -1, color, 2)
 
-            # Draw silhouette with color fill
-            sil_region = canvas[oy:oy + sh, ox:ox + sw]
-            if sil_region.shape[:2] == (sh, sw):
-                sil_mask = mask_small > 128
-                fill_color = np.array(color, dtype=np.uint8)
-                # Semi-transparent fill
-                sil_region[sil_mask] = (sil_region[sil_mask].astype(np.float32) * 0.3 +
-                                         fill_color.astype(np.float32) * 0.7).astype(np.uint8)
+        # Reference number labels on matched faces
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        for ri, (fi, sim) in assignments.items():
+            color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
+            face = cur_faces[fi]
+            x1, y1, x2, y2 = [int(v) for v in face.bbox]
+            cx = (x1 + x2) // 2
+            label = str(ri + 1)
 
-                # Contour
-                contours, _ = cv2.findContours(mask_small, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-                # Shift contours by offset
-                shifted = [c + np.array([ox, oy]) for c in contours]
-                cv2.drawContours(canvas, shifted, -1, color, 2)
+            font_scale = max(0.7, min(2.0, (x2 - x1) / 80.0))
+            thickness = max(1, int(font_scale * 2))
+            (tw, th_text), baseline = cv2.getTextSize(label, font, font_scale, thickness)
 
-            # Label
-            label = f"Ref{ri+1} ({depth_val:.2f})"
-            order_num = f"#{layer_idx + 1}"
-            lx = ox + 5
-            ly = oy + 20
-            cv2.putText(canvas, order_num, (lx, ly), font, 0.6, (255, 255, 255), 2, cv2.LINE_AA)
-            cv2.putText(canvas, label, (lx + 35, ly), font, 0.5, color, 1, cv2.LINE_AA)
+            tx = cx - tw // 2
+            ty = max(th_text + 4, y1 - 8)
 
-        # Title
-        title = f"Render Order ({sort_order}): back → front"
-        cv2.putText(canvas, title, (10, 25), font, 0.6, (200, 200, 200), 1, cv2.LINE_AA)
+            # Label background + text
+            cv2.rectangle(preview, (tx - 4, ty - th_text - 4), (tx + tw + 4, ty + 4), (0, 0, 0), cv2.FILLED)
+            cv2.putText(preview, label, (tx, ty), font, font_scale, color, thickness, cv2.LINE_AA)
 
-        return np2tensor(canvas)
+            # Similarity percentage below label
+            sim_label = f"{round(sim * 100)}%"
+            sim_scale = font_scale * 0.6
+            sim_thick = max(1, int(sim_scale * 2))
+            (stw, sth), _ = cv2.getTextSize(sim_label, font, sim_scale, sim_thick)
+            stx = cx - stw // 2
+            sty = ty + sth + 8
+            cv2.rectangle(preview, (stx - 2, sty - sth - 2), (stx + stw + 2, sty + 2), (0, 0, 0), cv2.FILLED)
+            cv2.putText(preview, sim_label, (stx, sty), font, sim_scale, color, sim_thick, cv2.LINE_AA)
+
+        return np2tensor(preview)
 
     def _process_single_image(self, single_image, analyzer, ref_emb_sets, num_refs,
                                sam_model, aggregation, effective_threshold,
@@ -835,11 +807,11 @@ class PersonSelectorMulti:
                 depth_edges_binary=depth_edges_list[b][1] if use_depth else None,
             )
             preview_parts.append(p)
-            # Depth layer diagram (isometric rendering order visualization)
-            layer_diag = self._render_depth_layers(
-                batch_results[b]["assignments"], body_masks_for_preview,
-                ref_depths_per_batch[b], h, w, sort_order=depth_sort_order)
-            preview_parts.append(layer_diag)
+            # Mask layer overlay (original image + colored mask silhouettes)
+            layer_overlay = self._render_mask_layers(
+                current_image[b:b+1], batch_results[b]["assignments"],
+                batch_results[b]["cur_faces"], body_masks_for_preview, h, w, num_refs)
+            preview_parts.append(layer_overlay)
         preview = torch.cat(preview_parts, dim=0)
 
         # Report: per batch item
