@@ -100,40 +100,127 @@ def head_histogram_similarity(hist1, hist2):
 
 
 def parse_match_weights(weight_string: str):
-    """Parse weight string like '60/20/20' or '0.6/0.2/0.2' into (face, hair, head) tuple.
+    """Parse weight string into (face, hair, head, outfit) tuple.
 
-    Accepts:
-        - '60/20/20' (percentages, auto-normalized)
-        - '0.6/0.2/0.2' (fractions)
-        - '70/15/15' (any ratio)
+    Accepts 3 or 4 values:
+        - '60/20/20' → (face, hair, head, 0.0)  — backward compatible
+        - '50/15/15/20' → (face, hair, head, outfit)
+        - Any ratio, auto-normalized to sum 1.0
 
-    Returns: tuple of 3 floats summing to 1.0. Falls back to (1.0, 0.0, 0.0) on error.
+    Returns: tuple of 4 floats summing to 1.0. Falls back to (1.0, 0.0, 0.0, 0.0) on error.
     """
     try:
         parts = [float(p.strip()) for p in weight_string.strip().split("/")]
-        if len(parts) != 3:
-            return (1.0, 0.0, 0.0)
+        if len(parts) == 3:
+            parts.append(0.0)
+        elif len(parts) != 4:
+            return (1.0, 0.0, 0.0, 0.0)
 
         total = sum(parts)
         if total <= 0:
-            return (1.0, 0.0, 0.0)
+            return (1.0, 0.0, 0.0, 0.0)
 
         return tuple(p / total for p in parts)
     except (ValueError, ZeroDivisionError):
-        return (1.0, 0.0, 0.0)
+        return (1.0, 0.0, 0.0, 0.0)
 
 
 def combined_similarity(face_sim: float, hair_sim: float, head_sim: float,
-                         weights: tuple) -> float:
+                         weights: tuple, outfit_sim: float = 0.0) -> float:
     """Compute weighted combined similarity score.
 
     Args:
         face_sim: ArcFace cosine similarity [0, 1].
         hair_sim: Hair color similarity [0, 1].
         head_sim: Head histogram similarity [0, 1].
-        weights: (face_weight, hair_weight, head_weight) summing to 1.0.
+        weights: (face_weight, hair_weight, head_weight, outfit_weight) summing to 1.0.
+        outfit_sim: Outfit color similarity [0, 1].
 
     Returns: float in [0, 1].
     """
-    w_face, w_hair, w_head = weights
-    return float(w_face * face_sim + w_hair * hair_sim + w_head * head_sim)
+    w_face, w_hair, w_head = weights[0], weights[1], weights[2]
+    w_outfit = weights[3] if len(weights) > 3 else 0.0
+    return float(w_face * face_sim + w_hair * hair_sim + w_head * head_sim + w_outfit * outfit_sim)
+
+
+def extract_palette_histogram(palette_image_rgb: np.ndarray, bins=(30, 32)):
+    """Extract HSV histogram from a palette swatch image.
+
+    The palette preview has color blocks in the top 75% and text labels below.
+    We sample only the swatch area to build a representative color histogram.
+
+    Args:
+        palette_image_rgb: Palette preview as RGB numpy array (H, W, 3), uint8.
+        bins: (hue_bins, saturation_bins) for the 2D histogram.
+
+    Returns:
+        np.ndarray — normalized 2D HSV histogram, or None if image is empty.
+    """
+    if palette_image_rgb is None or palette_image_rgb.size == 0:
+        return None
+
+    h = palette_image_rgb.shape[0]
+    # Use top 70% to avoid text labels at the bottom
+    swatch_h = int(h * 0.70)
+    swatch = palette_image_rgb[:swatch_h, :, :]
+
+    if swatch.size == 0:
+        return None
+
+    swatch_bgr = swatch[:, ::-1].copy()
+    swatch_hsv = cv2.cvtColor(swatch_bgr, cv2.COLOR_BGR2HSV)
+
+    hist = cv2.calcHist([swatch_hsv], [0, 1], None, list(bins), [0, 180, 0, 256])
+    cv2.normalize(hist, hist)
+    return hist
+
+
+def extract_clothing_histogram(image_rgb: np.ndarray, body_mask: np.ndarray,
+                                head_mask: np.ndarray, min_pixels: int = 200,
+                                bins=(30, 32)):
+    """Extract HSV histogram from the clothing region (body minus head).
+
+    Args:
+        image_rgb: Full image as RGB numpy array (H, W, 3), uint8.
+        body_mask: Binary body mask (H, W), float32 or uint8.
+        head_mask: Binary head mask (H, W), float32 or uint8.
+        min_pixels: Minimum clothing pixels required for a valid result.
+        bins: (hue_bins, saturation_bins) for the 2D histogram.
+
+    Returns:
+        np.ndarray — normalized 2D HSV histogram, or None if too few pixels.
+    """
+    # Clothing = body AND NOT head
+    body_bin = (body_mask > 0.5).astype(np.uint8)
+    head_bin = (head_mask > 0.5).astype(np.uint8)
+    clothing_mask = body_bin & (~head_bin.astype(bool)).astype(np.uint8)
+
+    if clothing_mask.sum() < min_pixels:
+        return None
+
+    # Extract clothing pixels
+    clothing_pixels = image_rgb[clothing_mask > 0]  # (N, 3) RGB
+    clothing_bgr = clothing_pixels[:, ::-1].reshape(1, -1, 3).astype(np.uint8)
+    clothing_hsv = cv2.cvtColor(clothing_bgr, cv2.COLOR_BGR2HSV).reshape(-1, 3)
+
+    # Build 2D histogram from clothing pixels
+    hist = cv2.calcHist([clothing_hsv.reshape(-1, 1, 3)], [0, 1], None,
+                        list(bins), [0, 180, 0, 256])
+    cv2.normalize(hist, hist)
+    return hist
+
+
+def outfit_color_similarity(palette_hist, clothing_hist):
+    """Compute similarity between palette and clothing HSV histograms.
+
+    Uses histogram correlation (same approach as head_histogram_similarity).
+
+    Returns: float in [0, 1] where 1 = identical distribution, 0 = completely different.
+    Returns 0.0 if either histogram is None.
+    """
+    if palette_hist is None or clothing_hist is None:
+        return 0.0
+
+    score = cv2.compareHist(palette_hist, clothing_hist, cv2.HISTCMP_CORREL)
+    # CORREL returns [-1, 1], normalize to [0, 1]
+    return float(np.clip((score + 1.0) / 2.0, 0.0, 1.0))
