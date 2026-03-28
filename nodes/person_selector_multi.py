@@ -115,6 +115,11 @@ class PersonSelectorMulti:
                                                "- detector: SEGS from connected segm/bbox detector as body mask (fastest, best separation)\n"
                                                "- seed_grow: BiSeNet + SAM seed, carved by image/depth edges\n"
                                                "- sam: legacy SAM-only body segmentation"}),
+                "depth_sort_order": (["front_last", "front_first", "off"], {"default": "front_last",
+                                      "tooltip": "Rendering order for PersonDetailer:\n"
+                                                 "- front_last: closest person rendered last (correct for depth_map with bright=near)\n"
+                                                 "- front_first: closest person rendered first (for inverted depth maps)\n"
+                                                 "- off: no sorting, uses slot order"}),
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
@@ -275,6 +280,99 @@ class PersonSelectorMulti:
             cv2.putText(preview, label, (tx, ty), font, font_scale, color, thickness, cv2.LINE_AA)
 
         return np2tensor(preview)
+
+    def _render_depth_layers(self, assignments, body_masks_list, ref_depths, h, w, sort_order="front_last"):
+        """Render isometric layer diagram showing rendering order by depth."""
+        canvas = np.full((h, w, 3), 30, dtype=np.uint8)  # dark gray background
+
+        if not assignments or not ref_depths:
+            # No depth info — draw placeholder
+            font = cv2.FONT_HERSHEY_SIMPLEX
+            cv2.putText(canvas, "No depth data", (w // 4, h // 2), font, 1.5, (100, 100, 100), 2, cv2.LINE_AA)
+            return np2tensor(canvas)
+
+        # Sort refs by depth for display
+        sorted_refs = sorted(assignments.keys(), key=lambda ri: ref_depths.get(ri, 0.5))
+        if sort_order == "front_last":
+            # Render order: furthest first (low depth) → closest last (high depth)
+            render_order = sorted_refs  # ascending = far first
+        elif sort_order == "front_first":
+            render_order = list(reversed(sorted_refs))
+        else:
+            render_order = sorted(assignments.keys())
+
+        n = len(render_order)
+        if n == 0:
+            return np2tensor(canvas)
+
+        # Isometric offsets: each layer shifts right+down
+        offset_x_step = max(20, min(50, w // (n * 4)))
+        offset_y_step = max(15, min(40, h // (n * 4)))
+        total_offset_x = offset_x_step * (n - 1)
+        total_offset_y = offset_y_step * (n - 1)
+
+        # Scale silhouettes to fit with offsets
+        avail_w = w - total_offset_x - 20
+        avail_h = h - total_offset_y - 60
+        scale = min(avail_w / w, avail_h / h, 0.85)
+
+        font = cv2.FONT_HERSHEY_SIMPLEX
+
+        for layer_idx, ri in enumerate(render_order):
+            color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
+            depth_val = ref_depths.get(ri, 0.5)
+            fi = assignments[ri][0]
+
+            # Get body mask
+            if ri < len(body_masks_list):
+                mask = (body_masks_list[ri][0].cpu().numpy() * 255).astype(np.uint8)
+            else:
+                continue
+
+            # Resize mask
+            sh = int(h * scale)
+            sw = int(w * scale)
+            mask_small = cv2.resize(mask, (sw, sh), interpolation=cv2.INTER_NEAREST)
+
+            # Offset for this layer
+            ox = 10 + layer_idx * offset_x_step
+            oy = 40 + layer_idx * offset_y_step
+
+            # Draw shadow (darker version behind)
+            shadow_region = canvas[oy:oy + sh, ox:ox + sw]
+            if shadow_region.shape[:2] == (sh, sw):
+                shadow_mask = mask_small > 128
+                shadow_region[shadow_mask] = np.clip(
+                    shadow_region[shadow_mask].astype(np.int16) + 15, 0, 255).astype(np.uint8)
+
+            # Draw silhouette with color fill
+            sil_region = canvas[oy:oy + sh, ox:ox + sw]
+            if sil_region.shape[:2] == (sh, sw):
+                sil_mask = mask_small > 128
+                fill_color = np.array(color, dtype=np.uint8)
+                # Semi-transparent fill
+                sil_region[sil_mask] = (sil_region[sil_mask].astype(np.float32) * 0.3 +
+                                         fill_color.astype(np.float32) * 0.7).astype(np.uint8)
+
+                # Contour
+                contours, _ = cv2.findContours(mask_small, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+                # Shift contours by offset
+                shifted = [c + np.array([ox, oy]) for c in contours]
+                cv2.drawContours(canvas, shifted, -1, color, 2)
+
+            # Label
+            label = f"Ref{ri+1} ({depth_val:.2f})"
+            order_num = f"#{layer_idx + 1}"
+            lx = ox + 5
+            ly = oy + 20
+            cv2.putText(canvas, order_num, (lx, ly), font, 0.6, (255, 255, 255), 2, cv2.LINE_AA)
+            cv2.putText(canvas, label, (lx + 35, ly), font, 0.5, color, 1, cv2.LINE_AA)
+
+        # Title
+        title = f"Render Order ({sort_order}): back → front"
+        cv2.putText(canvas, title, (10, 25), font, 0.6, (200, 200, 200), 1, cv2.LINE_AA)
+
+        return np2tensor(canvas)
 
     def _process_single_image(self, single_image, analyzer, ref_emb_sets, num_refs,
                                sam_model, aggregation, effective_threshold,
@@ -439,6 +537,7 @@ class PersonSelectorMulti:
                 segs=None, bbox_detector=None, segm_detector=None,
                 depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
                 body_mask_mode="auto",
+                depth_sort_order="front_last",
                 **kwargs):
         import time as _time
         _t0 = _time.monotonic()
@@ -604,6 +703,7 @@ class PersonSelectorMulti:
             "per_face_masks": [batch_results[b]["per_face_masks"] for b in range(batch_size)],
             "face_to_ref": [batch_results[b]["face_to_ref"] for b in range(batch_size)],
             "ref_depths": ref_depths_per_batch,
+            "depth_sort_order": depth_sort_order,
         }
         # Add all mask types: face_masks, head_masks, body_masks, hair_masks, etc.
         for mt in ALL_MASK_TYPES:
@@ -727,7 +827,6 @@ class PersonSelectorMulti:
         # Preview (uses deconflicted masks from person_data_masks, not raw batch_results)
         preview_parts = []
         for b in range(batch_size):
-            # Build per-ref body mask list from deconflicted person_data_masks
             body_masks_for_preview = [person_data_masks["body"][ri][b:b+1] for ri in range(num_refs)]
             p = self._render_preview(
                 current_image[b:b+1], batch_results[b]["assignments"],
@@ -736,6 +835,11 @@ class PersonSelectorMulti:
                 depth_edges_binary=depth_edges_list[b][1] if use_depth else None,
             )
             preview_parts.append(p)
+            # Depth layer diagram (isometric rendering order visualization)
+            layer_diag = self._render_depth_layers(
+                batch_results[b]["assignments"], body_masks_for_preview,
+                ref_depths_per_batch[b], h, w, sort_order=depth_sort_order)
+            preview_parts.append(layer_diag)
         preview = torch.cat(preview_parts, dim=0)
 
         # Report: per batch item
