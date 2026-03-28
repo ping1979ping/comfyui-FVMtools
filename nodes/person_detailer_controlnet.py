@@ -120,7 +120,7 @@ class PersonDetailerControlNet:
                                              "  depth — structural depth guidance (DepthAnythingV2)\n"
                                              "  pose — skeletal pose guidance (DWPose)\n"
                                              "  depth+pose — both applied as separate patches"}),
-                "control_strength": ("FLOAT", {"default": 0.80, "min": 0.0, "max": 2.0, "step": 0.05,
+                "control_strength": ("FLOAT", {"default": 0.30, "min": 0.0, "max": 2.0, "step": 0.05,
                                                 "tooltip": "ControlNet Union strength. 0 = disabled."}),
                 "cn_resolution": ("INT", {"default": 512, "min": 64, "max": 2048, "step": 64,
                                            "tooltip": "Resolution for DWPose/DepthAnything preprocessors"}),
