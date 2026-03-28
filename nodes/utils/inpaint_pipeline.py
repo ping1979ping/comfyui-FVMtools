@@ -257,6 +257,7 @@ def inpaint_slot(
     dd_enabled=False, dd_amount=0.0, dd_smooth=True, dd_options=None,
     repeat=1,
     denoise_progression="", steps_progression="",
+    controlnet_apply_fn=None,
 ):
     """Run the full inpaint pipeline for a single masked region.
 
@@ -265,6 +266,10 @@ def inpaint_slot(
         denoise_progression: pipe-separated denoise per round (e.g. "0.5|0.3").
         steps_progression: pipe-separated steps per round (e.g. "6|4").
         When empty, `denoise` and `steps` are used for all rounds.
+        controlnet_apply_fn: optional callable(model, positive, negative, crop_image) -> (model, pos, neg).
+            When provided, applies control guidance per round using the current crop.
+            Can patch the model (Z-Image ControlNet Union) and/or modify conditioning.
+            Used by PersonDetailerControlNet to inject pose/depth guidance.
 
     Returns:
         (stitched_image [H,W,C], refined_crop [1, tH, tW, C])
@@ -317,14 +322,25 @@ def inpaint_slot(
 
     # Step 10: Sample (with optional multi-round cycling)
     sampler_obj = comfy.samplers.sampler_object(sampler_name)
-    guider = Guider_Basic(model)
-    guider.set_conds(positive_cond)
     model_sampling = model.get_model_object("model_sampling")
 
     for iteration in range(repeat):
         if iteration > 0:
             # Re-encode previous result as new latent input (latent cycling)
             latent_samples = vae.encode(decoded[:, :, :, :3].to(device))
+
+        # Apply control guidance per round (if provided)
+        round_model = model
+        round_positive = positive_cond
+        round_negative = negative_cond
+        if controlnet_apply_fn is not None:
+            current_crop = cropped_image if iteration == 0 else decoded
+            round_model, round_positive, round_negative = controlnet_apply_fn(
+                model, round_positive, round_negative, current_crop)
+
+        # Create guider with (possibly patched) model and conditioning
+        guider = Guider_Basic(round_model)
+        guider.set_conds(round_positive)
 
         # Per-round denoise and steps
         round_denoise = denoise_per_round[iteration]

@@ -10,6 +10,7 @@ try:
     from .nodes.palette_from_image import FVM_PaletteFromImage
     from .nodes.outfit_generator import FVM_OutfitGenerator
     from .nodes.person_data_refiner import PersonDataRefiner
+    from .nodes.person_detailer_controlnet import PersonDetailerControlNet
 
     # ── API routes for outfit list editing ──
     import os
@@ -77,6 +78,7 @@ try:
         "FVM_PaletteFromImage": FVM_PaletteFromImage,
         "FVM_OutfitGenerator": FVM_OutfitGenerator,
         "PersonDataRefiner": PersonDataRefiner,
+        "PersonDetailerControlNet": PersonDetailerControlNet,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -90,6 +92,7 @@ try:
         "FVM_PaletteFromImage": "Palette From Image",
         "FVM_OutfitGenerator": "Outfit Generator",
         "PersonDataRefiner": "Person Data Refiner",
+        "PersonDetailerControlNet": "Person Detailer ControlNet",
     }
 
     WEB_DIRECTORY = "./web/js"
