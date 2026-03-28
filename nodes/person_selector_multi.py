@@ -601,9 +601,18 @@ class PersonSelectorMulti:
                     current_segs = run_detector(detector, single_image.unsqueeze(0),
                                                  detect_threshold, detect_dilation, detect_crop_factor)
 
-                # Assign SEGS to references via body mask overlap
+                # Build face centers for identity-based SEGS assignment
+                face_centers = {}
+                br = batch_results[b]
+                for ri, (fi, sim) in br["assignments"].items():
+                    face = br["cur_faces"][fi]
+                    fx1, fy1, fx2, fy2 = face.bbox
+                    face_centers[ri] = ((fx1 + fx2) / 2, (fy1 + fy2) / 2)
+
+                # Assign SEGS to references via face center containment
                 body_masks = person_data.get("body_masks", [])
-                seg_assignments = assign_segs_to_references(current_segs, body_masks, num_refs, b)
+                seg_assignments = assign_segs_to_references(current_segs, body_masks, num_refs, b,
+                                                             face_centers=face_centers)
 
                 counts = {}
                 for ri in range(num_refs):
