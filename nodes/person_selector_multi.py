@@ -233,61 +233,13 @@ class PersonSelectorMulti:
             other_faces=other_faces, body_mask_mode=body_mask_mode,
         )
 
-    def _render_preview(self, current_image, assignments, cur_faces, body_masks_list, h, w,
-                         depth_np=None, depth_edges_binary=None):
-        preview = tensor2np(current_image).copy()
-
-        # Depth map overlay (subtle blue tint)
-        if depth_np is not None:
-            depth_vis = (np.clip(depth_np, 0, 1) * 255).astype(np.uint8)
-            depth_colored = cv2.applyColorMap(depth_vis, cv2.COLORMAP_INFERNO)
-            depth_rgb = cv2.cvtColor(depth_colored, cv2.COLOR_BGR2RGB)
-            preview = cv2.addWeighted(preview, 0.7, depth_rgb, 0.3, 0)
-
-        # Depth edges overlay (cyan thin lines)
-        if depth_edges_binary is not None:
-            edge_overlay = np.zeros_like(preview)
-            edge_overlay[depth_edges_binary] = (0, 255, 255)  # cyan
-            preview = cv2.addWeighted(preview, 1.0, edge_overlay, 0.4, 0)
-
-        for ri, (fi, sim) in assignments.items():
-            color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
-            mask_np = (body_masks_list[ri][0].cpu().numpy() * 255).astype(np.uint8)
-
-            # Transparent fill
-            fill_overlay = np.zeros_like(preview)
-            fill_overlay[mask_np > 128] = color
-            preview = cv2.addWeighted(preview, 1.0, fill_overlay, 0.15, 0)
-
-            # Thick contour lines
-            contours, _ = cv2.findContours(mask_np, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-            cv2.drawContours(preview, contours, -1, color, 3)
-
-            face = cur_faces[fi]
-            x1, y1, x2, y2 = [int(v) for v in face.bbox]
-            cx = (x1 + x2) // 2
-            label = str(ri + 1)
-
-            font = cv2.FONT_HERSHEY_SIMPLEX
-            font_scale = max(0.7, min(2.0, (x2 - x1) / 80.0))
-            thickness = max(1, int(font_scale * 2))
-            (tw, th_text), baseline = cv2.getTextSize(label, font, font_scale, thickness)
-
-            tx = cx - tw // 2
-            ty = max(th_text + 4, y1 - 8)
-
-            cv2.rectangle(preview, (tx - 4, ty - th_text - 4), (tx + tw + 4, ty + 4), (0, 0, 0), cv2.FILLED)
-            cv2.putText(preview, label, (tx, ty), font, font_scale, color, thickness, cv2.LINE_AA)
-
-        return np2tensor(preview)
-
     def _render_mask_layers(self, current_image, assignments, cur_faces,
-                             body_masks_list, h, w, num_refs):
+                             body_masks_list, h, w, num_refs, ref_depths=None):
         """Render mask overlay: original image with semi-transparent colored body silhouettes.
 
         Shows all reference masks layered on top of the original image with clear
         color coding, contour outlines, and reference number labels.
-        Unmatched regions remain clearly visible underneath.
+        Includes render order info when depth data is available.
         """
         preview = tensor2np(current_image).copy()
 
@@ -343,6 +295,23 @@ class PersonSelectorMulti:
             sty = ty + sth + 8
             cv2.rectangle(preview, (stx - 2, sty - sth - 2), (stx + stw + 2, sty + 2), (0, 0, 0), cv2.FILLED)
             cv2.putText(preview, sim_label, (stx, sty), font, sim_scale, color, sim_thick, cv2.LINE_AA)
+
+        # Render order text at bottom (when depth data available)
+        if ref_depths and assignments:
+            sorted_refs = sorted(assignments.keys(), key=lambda ri: ref_depths.get(ri, 0.5))
+            order_parts = []
+            for ri in sorted_refs:
+                color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
+                order_parts.append(str(ri + 1))
+            order_text = "Render: " + " > ".join(order_parts) + " (back>front)"
+
+            font_s = 0.6
+            thick_s = 1
+            (otw, oth), _ = cv2.getTextSize(order_text, font, font_s, thick_s)
+            ox = 10
+            oy = h - 10
+            cv2.rectangle(preview, (ox - 4, oy - oth - 4), (ox + otw + 4, oy + 4), (0, 0, 0), cv2.FILLED)
+            cv2.putText(preview, order_text, (ox, oy), font, font_s, (200, 200, 200), thick_s, cv2.LINE_AA)
 
         return np2tensor(preview)
 
@@ -796,22 +765,15 @@ class PersonSelectorMulti:
         else:
             aux_masks_batch = empty_mask(h, w)
 
-        # Preview (uses deconflicted masks from person_data_masks, not raw batch_results)
+        # Preview: mask overlay with render order (uses deconflicted masks)
         preview_parts = []
         for b in range(batch_size):
             body_masks_for_preview = [person_data_masks["body"][ri][b:b+1] for ri in range(num_refs)]
-            p = self._render_preview(
+            p = self._render_mask_layers(
                 current_image[b:b+1], batch_results[b]["assignments"],
-                batch_results[b]["cur_faces"], body_masks_for_preview, h, w,
-                depth_np=depth_nps[b] if use_depth else None,
-                depth_edges_binary=depth_edges_list[b][1] if use_depth else None,
-            )
+                batch_results[b]["cur_faces"], body_masks_for_preview, h, w, num_refs,
+                ref_depths=ref_depths_per_batch[b] if use_depth else None)
             preview_parts.append(p)
-            # Mask layer overlay (original image + colored mask silhouettes)
-            layer_overlay = self._render_mask_layers(
-                current_image[b:b+1], batch_results[b]["assignments"],
-                batch_results[b]["cur_faces"], body_masks_for_preview, h, w, num_refs)
-            preview_parts.append(layer_overlay)
         preview = torch.cat(preview_parts, dim=0)
 
         # Report: per batch item

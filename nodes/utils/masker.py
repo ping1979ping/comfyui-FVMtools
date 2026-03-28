@@ -49,47 +49,22 @@ ALL_MASK_TYPES = ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth"
 BISENET_MASK_TYPES = [t for t in ALL_MASK_TYPES if t != "body"]  # types derivable from BiSeNet
 
 
-def _clip_labels_to_person(label_map, face, other_faces):
-    """Remove BiSeNet labels that are geometrically closer to another person's face.
+def _clip_labels_to_body(label_map, sam_body_mask):
+    """Remove BiSeNet labels that fall outside the SAM body mask.
 
-    When BiSeNet crops overlap, labels from a neighboring person can leak into
-    this person's label map. This function zeroes out any person-labeled pixels
-    (labels 1-18) that are closer to another face center than to the target face.
+    SAM body masks are generated with negative prompts at other face centers,
+    so they reliably separate persons. BiSeNet labels outside a person's SAM
+    body region are cross-person leakage and get zeroed out.
     """
-    if not other_faces:
+    if sam_body_mask is None:
         return label_map
 
-    h, w = label_map.shape
-    fx1, fy1, fx2, fy2 = [int(v) for v in face.bbox]
-    face_cx = (fx1 + fx2) / 2
-    face_cy = (fy1 + fy2) / 2
-
-    # Find all person pixels (non-background)
-    person_pixels = label_map > 0
-    if not np.any(person_pixels):
-        return label_map
-
-    # Get coordinates of all person pixels
-    ys, xs = np.where(person_pixels)
-
-    # Distance to own face center
-    own_dist = (xs - face_cx) ** 2 + (ys - face_cy) ** 2
-
-    # Check if any other face is closer
-    for of in other_faces:
-        ox1, oy1, ox2, oy2 = [int(v) for v in of.bbox]
-        ocx = (ox1 + ox2) / 2
-        ocy = (oy1 + oy2) / 2
-        other_dist = (xs - ocx) ** 2 + (ys - ocy) ** 2
-
-        # Zero out pixels closer to other face
-        closer_to_other = other_dist < own_dist
-        if np.any(closer_to_other):
-            label_map_copy = label_map.copy()
-            label_map_copy[ys[closer_to_other], xs[closer_to_other]] = 0
-            label_map = label_map_copy
-
-    return label_map
+    clipped = label_map.copy()
+    outside_body = sam_body_mask < 0.5
+    leaked = (clipped > 0) & outside_body
+    if np.any(leaked):
+        clipped[leaked] = 0
+    return clipped
 
 
 def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
@@ -125,9 +100,13 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
 
     label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
 
-    # Remove labels that belong to a neighboring person (cross-person leakage)
-    if other_faces:
-        label_map = _clip_labels_to_person(label_map, face, other_faces)
+    # Generate SAM body early (needed for label clipping + body mask)
+    _sam_body_for_clip = None
+    if other_faces and sam_model is not None and body_mask_mode in ("seed_grow", "auto"):
+        _sam_body_for_clip = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
+        _sam_body_for_clip = clean_mask_crumbs(_sam_body_for_clip, min_area_fraction=0.005)
+        # Clip BiSeNet labels to SAM body region (removes cross-person leakage)
+        label_map = _clip_labels_to_body(label_map, _sam_body_for_clip)
 
     masks = {}
 
@@ -154,8 +133,12 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     elif body_mask_mode == "seed_grow":
         # Hybrid: BiSeNet + SAM seed, carved by image/depth edges
         bisenet_seed = (label_map > 0).astype(np.float32)
-        sam_body = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
-        sam_body = clean_mask_crumbs(sam_body, min_area_fraction=0.005)
+        # Reuse SAM body from label clipping if available, otherwise generate fresh
+        if _sam_body_for_clip is not None:
+            sam_body = _sam_body_for_clip
+        else:
+            sam_body = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
+            sam_body = clean_mask_crumbs(sam_body, min_area_fraction=0.005)
         combined_seed = np.maximum(bisenet_seed, sam_body)
         seed_area = int(np.sum(combined_seed > 0.5))
 
@@ -204,8 +187,8 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
                                                   depth_carve_strength, depth_grow)
         print(f"    body: SAM ({int(np.sum(body_mask_np > 0.5))}px)")
     mask = mask2tensor(body_mask_np)
-    if mask_fill_holes:
-        mask = fill_mask_holes(mask)
+    # Body masks: do NOT fill holes — preserve natural gaps (between legs, under arms)
+    # fill_mask_holes is only for BiSeNet-derived masks above (face, head, etc.)
     if mask_blur > 0:
         mask = apply_gaussian_blur(mask, mask_blur)
     masks["body"] = mask
