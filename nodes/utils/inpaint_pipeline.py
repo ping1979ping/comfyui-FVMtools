@@ -387,9 +387,6 @@ def inpaint_slot(
         # VAE decode
         decoded = vae.decode(samples)  # [1, tH, tW, C]
 
-    # Cleanup after all rounds — break references to patched model clones
-    del guider, round_model, round_positive, round_negative
-
     # Step 12: Stitch back
     stitched = stitch_back(image, decoded, blend_mask_orig, crop, stitch_info)
 
