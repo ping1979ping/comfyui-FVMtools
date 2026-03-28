@@ -111,9 +111,10 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         combined_seed = np.maximum(bisenet_seed, sam_body)
         seed_area = int(np.sum(combined_seed > 0.5))
 
-        # 4. Compute image edges as barrier
+        # 4. Compute image edges as barrier (blur first to reduce texture noise)
         image_gray = cv2.cvtColor(cur_rgb, cv2.COLOR_RGB2GRAY)
-        image_edges = cv2.Canny(image_gray, 50, 150)
+        image_gray = cv2.GaussianBlur(image_gray, (5, 5), 0)
+        image_edges = cv2.Canny(image_gray, 80, 200)
         image_edges_binary = (image_edges > 0)
 
         # 5. Combine with depth edges if available
@@ -133,25 +134,35 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
             body_mask_np = carve_mask_at_depth_edges(combined_seed, barrier, depth_np,
                                                       carve_strength=depth_carve_strength)
         else:
-            # Without depth: carve at image edges, keep largest connected component
             carved = (combined_seed > 0.5).astype(np.uint8) & (~image_edges_binary).astype(np.uint8)
-            # Keep components that overlap with the head seed
             num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(carved, connectivity=8)
             body_mask_np = np.zeros((h, w), dtype=np.float32)
             for lid in range(1, num_labels):
                 comp = (labels == lid)
-                # Keep if overlaps with BiSeNet seed (person identity)
                 if np.sum(comp & (bisenet_seed > 0.5)) > 0 or stats[lid, cv2.CC_STAT_AREA] > 500:
                     body_mask_np[comp] = 1.0
 
         # 7. Grow to fill small gaps between edges
-        if depth_grow > 0:
-            body_mask_np = grow_mask_between_edges(body_mask_np, barrier, max_pixels=depth_grow)
+        grow_px = max(depth_grow, 25)  # minimum 25px grow for body coverage
+        body_mask_np = grow_mask_between_edges(body_mask_np, barrier, max_pixels=grow_px)
 
-        # 8. Morphological closing
-        kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))
+        # 8. Remove internal gaps: between legs, arm-body gaps
+        # Use morphological closing with large kernel, then cut holes back using edges
+        close_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (25, 25))
         body_uint8 = (body_mask_np * 255).astype(np.uint8)
-        body_mask_np = cv2.morphologyEx(body_uint8, cv2.MORPH_CLOSE, kernel).astype(np.float32) / 255.0
+        closed = cv2.morphologyEx(body_uint8, cv2.MORPH_CLOSE, close_kernel)
+        # Find what closing added (filled gaps)
+        filled_gaps = closed & ~body_uint8
+        # Only keep filled pixels that are NOT on strong edges (preserve real gaps at contour)
+        edge_dilated = cv2.dilate(image_edges_binary.astype(np.uint8),
+                                   cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3)), iterations=1)
+        internal_fill = filled_gaps & ~edge_dilated
+        body_mask_np = ((body_uint8 | internal_fill) / 255.0).astype(np.float32)
+
+        # 9. Final smoothing
+        smooth_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11, 11))
+        body_smooth = cv2.morphologyEx((body_mask_np * 255).astype(np.uint8), cv2.MORPH_CLOSE, smooth_kernel)
+        body_mask_np = (body_smooth / 255.0).astype(np.float32)
         body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.003)
 
         result_area = int(np.sum(body_mask_np > 0.5))
