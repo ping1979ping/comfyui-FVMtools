@@ -260,11 +260,15 @@ class PersonSelectorMulti:
             preview_float[mask_bool] = preview_float[mask_bool] * 0.6 + fill_color * 0.4
             preview = preview_float.astype(np.uint8)
 
-            # White contour outline for separation
+            # Contour outlines — thickness scales with image size
+            contour_thick = max(2, int(2 * max(h, w) / 1000))
             contours, _ = cv2.findContours(mask_np, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-            cv2.drawContours(preview, contours, -1, (255, 255, 255), 1)
-            # Colored contour on top
-            cv2.drawContours(preview, contours, -1, color, 2)
+            cv2.drawContours(preview, contours, -1, (255, 255, 255), contour_thick + 1)
+            cv2.drawContours(preview, contours, -1, color, contour_thick)
+
+        # Scale factor for all text — based on image size, 2x larger than before
+        img_scale = max(h, w) / 1000.0  # 1.0 at 1000px, 2.0 at 2000px, etc.
+        base_font = img_scale * 1.2  # doubled from ~0.6
 
         # Reference number labels on matched faces
         font = cv2.FONT_HERSHEY_SIMPLEX
@@ -275,15 +279,15 @@ class PersonSelectorMulti:
             cx = (x1 + x2) // 2
             label = str(ri + 1)
 
-            font_scale = max(0.7, min(2.0, (x2 - x1) / 80.0))
-            thickness = max(1, int(font_scale * 2))
+            font_scale = max(base_font, min(base_font * 2.5, (x2 - x1) / 40.0))
+            thickness = max(2, int(font_scale * 2))
             (tw, th_text), baseline = cv2.getTextSize(label, font, font_scale, thickness)
 
             tx = cx - tw // 2
-            ty = max(th_text + 4, y1 - 8)
+            ty = max(th_text + 4, y1 - int(8 * img_scale))
 
-            # Label background + text
-            cv2.rectangle(preview, (tx - 4, ty - th_text - 4), (tx + tw + 4, ty + 4), (0, 0, 0), cv2.FILLED)
+            pad = int(6 * img_scale)
+            cv2.rectangle(preview, (tx - pad, ty - th_text - pad), (tx + tw + pad, ty + pad), (0, 0, 0), cv2.FILLED)
             cv2.putText(preview, label, (tx, ty), font, font_scale, color, thickness, cv2.LINE_AA)
 
             # Similarity percentage below label
@@ -292,26 +296,27 @@ class PersonSelectorMulti:
             sim_thick = max(1, int(sim_scale * 2))
             (stw, sth), _ = cv2.getTextSize(sim_label, font, sim_scale, sim_thick)
             stx = cx - stw // 2
-            sty = ty + sth + 8
-            cv2.rectangle(preview, (stx - 2, sty - sth - 2), (stx + stw + 2, sty + 2), (0, 0, 0), cv2.FILLED)
+            sty = ty + sth + int(10 * img_scale)
+            sp = int(4 * img_scale)
+            cv2.rectangle(preview, (stx - sp, sty - sth - sp), (stx + stw + sp, sty + sp), (0, 0, 0), cv2.FILLED)
             cv2.putText(preview, sim_label, (stx, sty), font, sim_scale, color, sim_thick, cv2.LINE_AA)
 
-        # Render order text at bottom (when depth data available)
+        # Render order text at bottom-left — 4x larger than before
         if ref_depths and assignments:
             sorted_refs = sorted(assignments.keys(), key=lambda ri: ref_depths.get(ri, 0.5))
             order_parts = []
             for ri in sorted_refs:
-                color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
                 order_parts.append(str(ri + 1))
             order_text = "Render: " + " > ".join(order_parts) + " (back>front)"
 
-            font_s = 0.6
-            thick_s = 1
-            (otw, oth), _ = cv2.getTextSize(order_text, font, font_s, thick_s)
-            ox = 10
-            oy = h - 10
-            cv2.rectangle(preview, (ox - 4, oy - oth - 4), (ox + otw + 4, oy + 4), (0, 0, 0), cv2.FILLED)
-            cv2.putText(preview, order_text, (ox, oy), font, font_s, (200, 200, 200), thick_s, cv2.LINE_AA)
+            order_scale = img_scale * 2.0  # 4x original (was 0.6, now ~2.4 at 2000px)
+            order_thick = max(2, int(order_scale * 2))
+            (otw, oth), _ = cv2.getTextSize(order_text, font, order_scale, order_thick)
+            ox = int(15 * img_scale)
+            oy = h - int(15 * img_scale)
+            op = int(8 * img_scale)
+            cv2.rectangle(preview, (ox - op, oy - oth - op), (ox + otw + op, oy + op), (0, 0, 0), cv2.FILLED)
+            cv2.putText(preview, order_text, (ox, oy), font, order_scale, (220, 220, 220), order_thick, cv2.LINE_AA)
 
         return np2tensor(preview)
 
