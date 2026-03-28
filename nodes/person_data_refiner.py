@@ -216,9 +216,10 @@ class PersonDataRefiner:
             for ri in range(num_refs):
                 if ri in ref_to_new_fi:
                     nfi = ref_to_new_fi[ri]
+                    others = [f for j, f in enumerate(new_faces) if j != nfi]
                     masks = generate_all_masks_for_face(
                         cur_rgb, new_faces[nfi], device, sam_model,
-                        mask_fill_holes, mask_blur, **depth_kwargs)
+                        mask_fill_holes, mask_blur, other_faces=others, **depth_kwargs)
                     for mt in ALL_MASK_TYPES:
                         masks_for_refs[mt].append(masks.get(mt, empty_mask(new_h, new_w)))
                     matches_for_image.append(True)
@@ -239,9 +240,10 @@ class PersonDataRefiner:
                     ri = fi_to_ri[nfi]
                     pf = {mt: masks_for_refs[mt][ri] for mt in ALL_MASK_TYPES}
                 else:
+                    others = [f for j, f in enumerate(new_faces) if j != nfi]
                     pf = generate_all_masks_for_face(
                         cur_rgb, new_faces[nfi], device, sam_model,
-                        mask_fill_holes, mask_blur, **depth_kwargs)
+                        mask_fill_holes, mask_blur, other_faces=others, **depth_kwargs)
                 per_face_masks.append(pf)
 
             all_per_face_masks.append(per_face_masks)

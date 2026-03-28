@@ -212,12 +212,14 @@ class PersonSelectorMulti:
 
     def _generate_all_masks(self, cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
                             depth_edges_data=None, depth_np=None,
-                            depth_carve_strength=0.8, depth_grow=30):
+                            depth_carve_strength=0.8, depth_grow=30,
+                            other_faces=None):
         """Generate all mask types. Delegates to shared generate_all_masks_for_face()."""
         return generate_all_masks_for_face(
             cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
             depth_edges_data=depth_edges_data, depth_np=depth_np,
             depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
+            other_faces=other_faces,
         )
 
     def _render_preview(self, current_image, assignments, cur_faces, body_masks_list, h, w,
@@ -355,9 +357,11 @@ class PersonSelectorMulti:
         for ri in range(num_refs):
             if ri in assignments:
                 fi, sim = assignments[ri]
+                others = [f for j, f in enumerate(cur_faces) if j != fi]
                 masks = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
                                                   depth_edges_data=depth_edges_data, depth_np=depth_np,
-                                                  depth_carve_strength=depth_carve_strength, depth_grow=depth_grow)
+                                                  depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
+                                                  other_faces=others)
                 for mt in ALL_MASK_TYPES:
                     masks_per_type[mt].append(masks.get(mt, empty_mask(h, w)))
                 print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})")
@@ -395,9 +399,11 @@ class PersonSelectorMulti:
                 ri = fi_to_ri[fi]
                 per_face = {mt: masks_per_type[mt][ri] for mt in ALL_MASK_TYPES}
             else:
+                others = [f for j, f in enumerate(cur_faces) if j != fi]
                 per_face = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
                                                       depth_edges_data=depth_edges_data, depth_np=depth_np,
-                                                      depth_carve_strength=depth_carve_strength, depth_grow=depth_grow)
+                                                      depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
+                                                      other_faces=others)
             per_face_masks.append(per_face)
         face_to_ref = [fi_to_ri.get(fi) for fi in range(face_count)]
 

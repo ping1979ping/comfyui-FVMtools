@@ -51,7 +51,8 @@ BISENET_MASK_TYPES = [t for t in ALL_MASK_TYPES if t != "body"]  # types derivab
 
 def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
                                 depth_edges_data=None, depth_np=None,
-                                depth_carve_strength=0.8, depth_grow=30):
+                                depth_carve_strength=0.8, depth_grow=30,
+                                other_faces=None):
     """Generate all 9 mask types for a single face. Shared by PersonSelectorMulti and PersonDataRefiner.
 
     Args:
@@ -90,8 +91,11 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
             mask = apply_gaussian_blur(mask, mask_blur)
         masks[mask_type] = mask
 
-    # Body mask via SAM
-    body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model)
+    # Body mask via SAM (with negative prompts for other faces and head mask for scoring)
+    head_mask_np = masks["head"][0].cpu().numpy() if "head" in masks else None
+    body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model,
+                                                     other_faces=other_faces,
+                                                     head_mask=head_mask_np)
     body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.005)
     if use_depth:
         body_mask_np = refine_mask_with_depth(body_mask_np, depth_edges_data, depth_np,
@@ -225,8 +229,13 @@ class MaskGenerator:
         return sam_model
 
     @classmethod
-    def _estimate_body_points(cls, face, h, w):
-        """Estimate body keypoints from face bbox for SAM prompts."""
+    def _estimate_body_points(cls, face, h, w, other_faces=None):
+        """Estimate body keypoints from face bbox for SAM prompts.
+
+        Args:
+            other_faces: list of other face objects — their centers become
+                         negative SAM prompts to exclude other persons.
+        """
         x1, y1, x2, y2 = [int(v) for v in face.bbox]
         face_w = x2 - x1
         face_h = y2 - y1
@@ -242,6 +251,15 @@ class MaskGenerator:
         ]
         plabs = [1] * len(points)
 
+        # Negative prompts at other face centers
+        if other_faces:
+            for of in other_faces:
+                ox1, oy1, ox2, oy2 = [int(v) for v in of.bbox]
+                ocx = (ox1 + ox2) // 2
+                ocy = (oy1 + oy2) // 2
+                points.append([ocx, ocy])
+                plabs.append(0)  # negative prompt
+
         body_half_w = face_w * 2
         bbox = [
             max(0, cx - body_half_w),
@@ -252,8 +270,14 @@ class MaskGenerator:
         return points, plabs, bbox
 
     @classmethod
-    def generate_body_mask(cls, image_rgb: np.ndarray, face, sam_model=None) -> np.ndarray:
-        """Generate body mask using SAM with multiple body prompt points."""
+    def generate_body_mask(cls, image_rgb: np.ndarray, face, sam_model=None,
+                           other_faces=None, head_mask=None) -> np.ndarray:
+        """Generate body mask using SAM with positive and negative prompts.
+
+        Args:
+            other_faces: list of other detected face objects — used as negative SAM prompts
+            head_mask: optional [H,W] float32 head mask for better candidate selection
+        """
         h, w = image_rgb.shape[:2]
 
         if sam_model is None:
@@ -262,15 +286,21 @@ class MaskGenerator:
         try:
             predictor = cls._get_sam_predictor(sam_model)
             is_sam2 = hasattr(sam_model, 'image_predictor') or hasattr(sam_model, 'config')
-            points, plabs, bbox = cls._estimate_body_points(face, h, w)
+            points, plabs, bbox = cls._estimate_body_points(face, h, w, other_faces=other_faces)
 
             sam_bbox = None if is_sam2 else bbox
 
             result_masks = predictor.predict(image_rgb, points, plabs, sam_bbox, 0.3)
 
             if result_masks is not None and len(result_masks) > 0:
-                best_mask = None
-                best_area = 0
+                # Compute face/head center for scoring
+                fx1, fy1, fx2, fy2 = [int(v) for v in face.bbox]
+                face_cx = (fx1 + fx2) / 2
+                face_cy = (fy1 + fy2) / 2
+                face_area = (fx2 - fx1) * (fy2 - fy1)
+                max_body_area = face_area * 40  # body can't be more than 40x face area
+
+                candidates = []
                 for m in result_masks:
                     if isinstance(m, torch.Tensor):
                         m = m.cpu().numpy()
@@ -278,10 +308,48 @@ class MaskGenerator:
                     if m.shape != (h, w):
                         m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
                     area = np.sum(m > 0.5)
-                    if area > best_area:
-                        best_area = area
+                    if area < face_area * 0.5:
+                        continue  # too small
+                    candidates.append((m, area))
+
+                if not candidates:
+                    print("[FVMTools] SAM: no valid candidates, using bbox fallback")
+                    return cls.generate_body_bbox_fallback((h, w), face)
+
+                # Score candidates: prefer mask that contains face, has reasonable size,
+                # and best overlaps with head_mask if available
+                best_mask = None
+                best_score = -1
+                for m, area in candidates:
+                    # Must contain the face center
+                    if m[int(face_cy), int(face_cx)] < 0.5:
+                        continue
+
+                    # Size penalty: prefer smaller masks (less likely to include others)
+                    size_score = 1.0 - min(area / max_body_area, 1.0) if area <= max_body_area else 0.0
+
+                    # Head overlap bonus
+                    head_score = 0.0
+                    if head_mask is not None:
+                        head_pixels = np.sum(head_mask > 0.5)
+                        if head_pixels > 0:
+                            overlap = np.sum((m > 0.5) & (head_mask > 0.5))
+                            head_score = overlap / head_pixels  # 1.0 = mask fully contains head
+
+                    score = size_score * 0.4 + head_score * 0.6 + 0.01  # small base score
+                    if score > best_score:
+                        best_score = score
                         best_mask = m
-                return best_mask
+
+                if best_mask is not None:
+                    return best_mask
+
+                # Fallback: smallest candidate that contains face
+                for m, area in sorted(candidates, key=lambda x: x[1]):
+                    if m[int(face_cy), int(face_cx)] > 0.5:
+                        return m
+
+                return candidates[0][0]
 
             print("[FVMTools] SAM returned no masks, using body bbox fallback")
             return cls.generate_body_bbox_fallback((h, w), face)
