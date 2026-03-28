@@ -141,13 +141,19 @@ app.registerExtension({
             nodeType.prototype.onExecuted = function (message) {
                 const r = onExecutedMulti ? onExecutedMulti.apply(this, arguments) : undefined;
                 if (message && message.text && message.text.length > 0) {
-                    // Format: "matched_per_img§faces_per_img§sim1, sim2"
-                    // e.g. "2|1§4|3§72%, 85%" (batch=2: matched 2,1 / faces 4,3)
-                    const sections = message.text[0].split("§");
+                    // Format: "m1|m2|f1|f2|72%, 85%" — all pipe-separated
+                    // Numeric parts (matched + faces) come first, then similarities (contain %)
+                    const segs = message.text[0].split("|");
+                    let simIdx = segs.length;
+                    for (let i = 0; i < segs.length; i++) {
+                        if (segs[i].includes("%")) { simIdx = i; break; }
+                    }
+                    const nums = segs.slice(0, simIdx);
+                    const half = Math.floor(nums.length / 2);
                     this._psmValues = {
-                        matched_count: sections[0] || "0",
-                        face_count: sections[1] || "0",
-                        similarities: sections[2] || "",
+                        matched_count: nums.slice(0, half).join("|") || "0",
+                        face_count: nums.slice(half).join("|") || "0",
+                        similarities: segs.slice(simIdx).join("|") || "",
                     };
                     if (this.outputs[11]) this.outputs[11]["label"] = " ";
                     if (this.outputs[12]) this.outputs[12]["label"] = " ";

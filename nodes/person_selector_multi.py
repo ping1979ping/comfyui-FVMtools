@@ -597,7 +597,7 @@ class PersonSelectorMulti:
         faces_count_str = "|".join(faces_per_image)
         report = "\n".join(report_lines)
 
-        ui_text = f"{matched_faces_str}§{faces_count_str}§{similarities_str}"
+        ui_text = f"{matched_faces_str}|{faces_count_str}|{similarities_str}"
 
         return {
             "ui": {"text": [ui_text]},
