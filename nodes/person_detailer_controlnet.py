@@ -88,27 +88,32 @@ class PersonDetailerControlNet:
 
         return {
             "required": {
+                # ── Inputs ──
                 "images": ("IMAGE", {"tooltip": "Input image batch [B, H, W, C]"}),
                 "person_data": ("PERSON_DATA", {"tooltip": "Person data from Person Selector Multi node"}),
                 "model": ("MODEL", {"tooltip": "Base model (Z-Image Turbo or other)"}),
                 "clip": ("CLIP", {"tooltip": "CLIP model for prompt encoding"}),
                 "vae": ("VAE", {"tooltip": "VAE for encode/decode (also used to encode control images for the model patch)"}),
+                # ── Sampler ──
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
                 "steps": ("INT", {"default": 4, "min": 1, "max": 100}),
                 "denoise": ("FLOAT", {"default": 0.52, "min": 0.0, "max": 1.0, "step": 0.01}),
                 "sampler_name": (comfy.samplers.SAMPLER_NAMES,),
                 "scheduler": (comfy.samplers.SCHEDULER_NAMES,),
+                # ── Detail Daemon ──
                 "detail_daemon_enabled": ("BOOLEAN", {"default": True}),
                 "detail_amount": ("FLOAT", {"default": 0.20, "min": -5.0, "max": 5.0, "step": 0.01}),
                 "dd_smooth": ("BOOLEAN", {"default": True}),
+                # ── Inpaint ──
                 "mask_blend_pixels": ("INT", {"default": 32, "min": 0, "max": 128, "step": 1}),
                 "mask_expand_pixels": ("INT", {"default": 0, "min": 0, "max": 64, "step": 1}),
                 "target_width": ("INT", {"default": 800, "min": 64, "max": 4096, "step": 8}),
                 "target_height": ("INT", {"default": 1200, "min": 64, "max": 4096, "step": 8}),
-                # ── ControlNet Union settings ──
+                # ── ControlNet Union ──
+                "controlnet_enabled": ("BOOLEAN", {"default": True,
+                                                    "tooltip": "Enable/disable ControlNet guidance. When off, behaves like Person Detailer."}),
                 "model_patch": (_get_model_patch_list(),
-                                {"tooltip": "Z-Image ControlNet Union model patch from models/model_patches/.\n"
-                                            "Set to 'None' to disable ControlNet (same as Person Detailer)."}),
+                                {"tooltip": "Z-Image ControlNet Union model patch from models/model_patches/."}),
                 "control_type": (["depth", "pose", "depth+pose"],
                                  {"default": "depth",
                                   "tooltip": "Which control signal to generate from each crop:\n"
@@ -123,6 +128,7 @@ class PersonDetailerControlNet:
                                  "depth_anything_v2_vitg.pth", "depth_anything_v2_vits.pth"],
                                 {"default": "depth_anything_v2_vitl.pth",
                                  "tooltip": "DepthAnythingV2 checkpoint (vitl=balanced, vitg=best, vits=fastest)"}),
+                # ── References ──
                 **slot_widgets,
             },
             "optional": {
@@ -251,7 +257,7 @@ class PersonDetailerControlNet:
                 seed, steps, denoise, sampler_name, scheduler,
                 detail_daemon_enabled, detail_amount, dd_smooth,
                 mask_blend_pixels, mask_expand_pixels, target_width, target_height,
-                model_patch, control_type, control_strength, cn_resolution, depth_model,
+                controlnet_enabled, model_patch, control_type, control_strength, cn_resolution, depth_model,
                 reference_1_enabled, reference_1_lora, reference_1_lora_strength, reference_1_prompt,
                 reference_2_enabled, reference_2_lora, reference_2_lora_strength, reference_2_prompt,
                 reference_3_enabled, reference_3_lora, reference_3_lora_strength, reference_3_prompt,
@@ -271,7 +277,7 @@ class PersonDetailerControlNet:
             negative = self._encode_prompt(clip, "")
 
         # ── Build ControlNet apply function ──────────────────────────────────
-        has_cn = model_patch != "None" and control_strength > 0
+        has_cn = controlnet_enabled and model_patch != "None" and control_strength > 0
 
         if has_cn and not HAS_CONTROLNET_AUX:
             print("[FVMTools] WARNING: comfyui_controlnet_aux not installed — ControlNet disabled")
