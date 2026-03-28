@@ -360,6 +360,7 @@ class PersonSelectorMulti:
         from .utils.masker import ALL_MASK_TYPES
         masks_per_type = {mt: [] for mt in ALL_MASK_TYPES}
 
+        bisenet_seeds_per_ref = {}  # {ri: [H,W] float32} for deconfliction priority
         for ri in range(num_refs):
             if ri in assignments:
                 fi, sim = assignments[ri]
@@ -370,6 +371,9 @@ class PersonSelectorMulti:
                                                   other_faces=others, body_mask_mode=body_mask_mode)
                 for mt in ALL_MASK_TYPES:
                     masks_per_type[mt].append(masks.get(mt, empty_mask(h, w)))
+                # Store bisenet seed for deconfliction priority
+                if "_bisenet_seed" in masks:
+                    bisenet_seeds_per_ref[ri] = masks["_bisenet_seed"]
                 print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})")
             else:
                 for mt in ALL_MASK_TYPES:
@@ -423,6 +427,7 @@ class PersonSelectorMulti:
             "matched_faces_mask": matched_faces_mask,
             "per_face_masks": per_face_masks,
             "face_to_ref": face_to_ref,
+            "bisenet_seeds": bisenet_seeds_per_ref,
         }
 
     def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, aggregation,
@@ -540,13 +545,19 @@ class PersonSelectorMulti:
             for mt in ("body", "head", "face"):
                 for b in range(batch_size):
                     overlap_dict = {}
+                    seeds_dict = {}
                     for ri in range(num_refs):
                         m = person_data_masks[mt][ri][b].cpu().numpy()
                         if m.sum() > 0:
                             overlap_dict[ri] = m
+                        # BiSeNet seeds for priority (from first batch image's results)
+                        br_seeds = batch_results[b].get("bisenet_seeds", {})
+                        if ri in br_seeds:
+                            seeds_dict[ri] = br_seeds[ri]
                     if len(overlap_dict) >= 2:
                         eb = depth_edges_list[b][1] if b < len(depth_edges_list) else None
-                        resolved = deconflict_masks(overlap_dict, depth_nps[b], edges_binary=eb)
+                        resolved = deconflict_masks(overlap_dict, depth_nps[b], edges_binary=eb,
+                                                     bisenet_seeds=seeds_dict if seeds_dict else None)
                         for ri, m in resolved.items():
                             person_data_masks[mt][ri][b] = torch.from_numpy(m)
 

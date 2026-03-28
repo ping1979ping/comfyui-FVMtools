@@ -143,23 +143,17 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
                     body_mask_np[comp] = 1.0
 
         # 7. Grow to fill small gaps between edges
-        grow_px = max(depth_grow, 25)  # minimum 25px grow for body coverage
+        grow_px = max(depth_grow, 25)
         body_mask_np = grow_mask_between_edges(body_mask_np, barrier, max_pixels=grow_px)
 
-        # 8. Remove internal gaps: between legs, arm-body gaps
-        # Use morphological closing with large kernel, then cut holes back using edges
-        close_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (25, 25))
+        # 8. Fill internal holes (between legs, arm-body gaps) via contour fill
         body_uint8 = (body_mask_np * 255).astype(np.uint8)
-        closed = cv2.morphologyEx(body_uint8, cv2.MORPH_CLOSE, close_kernel)
-        # Find what closing added (filled gaps)
-        filled_gaps = closed & ~body_uint8
-        # Only keep filled pixels that are NOT on strong edges (preserve real gaps at contour)
-        edge_dilated = cv2.dilate(image_edges_binary.astype(np.uint8),
-                                   cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3)), iterations=1)
-        internal_fill = filled_gaps & ~edge_dilated
-        body_mask_np = ((body_uint8 | internal_fill) / 255.0).astype(np.float32)
+        contours, _ = cv2.findContours(body_uint8, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        filled = np.zeros_like(body_uint8)
+        cv2.drawContours(filled, contours, -1, 255, cv2.FILLED)
+        body_mask_np = (filled / 255.0).astype(np.float32)
 
-        # 9. Final smoothing
+        # 9. Final smoothing + cleanup
         smooth_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11, 11))
         body_smooth = cv2.morphologyEx((body_mask_np * 255).astype(np.uint8), cv2.MORPH_CLOSE, smooth_kernel)
         body_mask_np = (body_smooth / 255.0).astype(np.float32)
@@ -183,6 +177,9 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     if mask_blur > 0:
         mask = apply_gaussian_blur(mask, mask_blur)
     masks["body"] = mask
+
+    # Store bisenet seed for deconfliction priority (label_map > 0 = all person pixels)
+    masks["_bisenet_seed"] = (label_map > 0).astype(np.float32)
 
     return masks
 

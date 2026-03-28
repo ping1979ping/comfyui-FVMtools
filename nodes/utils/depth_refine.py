@@ -111,18 +111,19 @@ def grow_mask_between_edges(mask, edges_binary, max_pixels=30):
 
 # ── Phase 4: Cross-Reference Deconfliction (vectorized) ──
 
-def deconflict_masks(masks_dict, depth_map, edges_binary=None):
-    """Resolve overlapping masks using depth-based winner-takes-all.
+def deconflict_masks(masks_dict, depth_map, edges_binary=None, bisenet_seeds=None):
+    """Resolve overlapping masks with BiSeNet priority + depth fallback.
 
-    For each pixel claimed by multiple references, the reference whose
-    CORE depth (from non-overlapping region) is closest wins.
-    After deconfliction, winning masks are extended along depth edges
-    to fill any gaps at boundaries.
+    Priority order for each overlapping pixel:
+    1. If exactly ONE ref has a BiSeNet seed there → that ref wins (identity-anchored)
+    2. If MULTIPLE refs have BiSeNet seeds → closest depth wins
+    3. If NO refs have BiSeNet seeds → closest depth wins
 
     Args:
         masks_dict: {ri: [H,W] float32} for all references
         depth_map: [H,W] float32
         edges_binary: optional [H,W] bool for edge-aware extension
+        bisenet_seeds: optional {ri: [H,W] float32} — BiSeNet label seeds per ref
 
     Returns:
         {ri: [H,W] float32} with overlaps resolved
@@ -133,22 +134,28 @@ def deconflict_masks(masks_dict, depth_map, edges_binary=None):
     active_refs = sorted(masks_dict.keys())
     H, W = depth_map.shape
 
-    # Stack all masks into array [N, H, W]
     N = len(active_refs)
     ri_to_idx = {ri: i for i, ri in enumerate(active_refs)}
     mask_stack = np.zeros((N, H, W), dtype=np.float32)
     for ri in active_refs:
         mask_stack[ri_to_idx[ri]] = masks_dict[ri]
 
-    # Binary masks at low threshold to catch soft overlaps
+    # BiSeNet seed stack (if provided)
+    has_seeds = bisenet_seeds is not None and len(bisenet_seeds) > 0
+    seed_stack = np.zeros((N, H, W), dtype=bool)
+    if has_seeds:
+        for ri in active_refs:
+            if ri in bisenet_seeds:
+                seed_stack[ri_to_idx[ri]] = bisenet_seeds[ri] > 0.5
+
     binary_stack = (mask_stack > 0.3).astype(np.int32)
-    overlap_count = binary_stack.sum(axis=0)  # [H, W]
+    overlap_count = binary_stack.sum(axis=0)
 
     has_overlap = (overlap_count >= 2).any()
     if not has_overlap:
         return masks_dict
 
-    # Compute CORE depth per reference (from non-overlapping pixels only)
+    # Core depth per ref (non-overlapping pixels)
     non_overlap = (overlap_count <= 1)
     ref_core_depths = {}
     for ri in active_refs:
@@ -158,39 +165,51 @@ def deconflict_masks(masks_dict, depth_map, edges_binary=None):
         if len(core_pixels) > 20:
             ref_core_depths[ri] = np.median(core_pixels)
         else:
-            # Fallback: use full mask
             all_pixels = depth_map[mask_stack[i] > 0.5]
             ref_core_depths[ri] = np.median(all_pixels) if len(all_pixels) > 0 else 0.5
 
-    # Vectorized winner assignment for overlapping pixels
     overlap_mask = (overlap_count >= 2)
     oys, oxs = np.where(overlap_mask)
 
     if len(oys) > 0:
-        pixel_depths = depth_map[oys, oxs]  # [K]
+        pixel_depths = depth_map[oys, oxs]
 
-        # For each overlap pixel, compute distance to each ref's core depth
-        # Shape: [N, K]
-        distances = np.zeros((N, len(oys)), dtype=np.float32)
+        # Claims and distances [N, K]
         claims = np.zeros((N, len(oys)), dtype=bool)
+        distances = np.full((N, len(oys)), np.inf, dtype=np.float32)
+        seed_claims = np.zeros((N, len(oys)), dtype=bool)
+
         for ri in active_refs:
             i = ri_to_idx[ri]
             claims[i] = mask_stack[i][oys, oxs] > 0.3
-            distances[i] = np.abs(ref_core_depths[ri] - pixel_depths)
+            distances[i] = np.where(claims[i], np.abs(ref_core_depths[ri] - pixel_depths), np.inf)
+            if has_seeds:
+                seed_claims[i] = seed_stack[i][oys, oxs] & claims[i]
 
-        # Set non-claimant distances to infinity
-        distances[~claims] = np.inf
+        # Determine winners with BiSeNet priority
+        seed_count = seed_claims.sum(axis=0)  # how many refs have seed at each pixel
 
-        # Winner = closest depth per pixel
-        winners = np.argmin(distances, axis=0)  # [K]
+        # Default: depth-based winner
+        winners = np.argmin(distances, axis=0)
+
+        if has_seeds:
+            # Where exactly one ref has a seed → that ref wins
+            single_seed = (seed_count == 1)
+            if single_seed.any():
+                seed_winner = np.argmax(seed_claims[:, single_seed], axis=0)
+                winners[single_seed] = seed_winner
+
+            # Where multiple seeds → depth among seed-holders only
+            multi_seed = (seed_count >= 2)
+            if multi_seed.any():
+                seed_distances = np.where(seed_claims[:, multi_seed], distances[:, multi_seed], np.inf)
+                winners[multi_seed] = np.argmin(seed_distances, axis=0)
 
         # Zero out losers
         for i in range(N):
             loser_pixels = (winners != i) & claims[i]
             if loser_pixels.any():
-                ly = oys[loser_pixels]
-                lx = oxs[loser_pixels]
-                mask_stack[i][ly, lx] = 0.0
+                mask_stack[i][oys[loser_pixels], oxs[loser_pixels]] = 0.0
 
     # Edge-aware extension: grow winning masks slightly along depth edges
     # to fill gaps at boundaries where carving + deconfliction left thin strips
