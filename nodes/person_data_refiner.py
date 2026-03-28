@@ -46,13 +46,13 @@ class PersonDataRefiner:
                              "tooltip": "Face detection resolution"}),
             },
             "optional": {
-                "depth_map": ("IMAGE", {"tooltip": "Depth map batch for depth-guided mask reconstruction"}),
-                "depth_grow_pixels": ("INT", {"default": 50, "min": 0, "max": 200, "step": 5,
-                                               "tooltip": "Max dilation radius for depth-based gap filling"}),
-                "depth_remove_overlap": ("BOOLEAN", {"default": True,
-                                                      "tooltip": "Remove depth-mismatched pixels from masks"}),
-                "depth_tolerance": ("FLOAT", {"default": 0.05, "min": 0.01, "max": 0.30, "step": 0.01,
-                                               "tooltip": "Depth band tolerance factor"}),
+                "depth_map": ("IMAGE", {"tooltip": "Depth map batch for depth-guided mask refinement"}),
+                "depth_edge_threshold": ("FLOAT", {"default": 0.05, "min": 0.01, "max": 0.30, "step": 0.01,
+                                                    "tooltip": "Depth gradient threshold for edge detection"}),
+                "depth_carve_strength": ("FLOAT", {"default": 0.8, "min": 0.0, "max": 1.0, "step": 0.05,
+                                                    "tooltip": "How strongly depth edges cut masks"}),
+                "depth_grow_pixels": ("INT", {"default": 30, "min": 0, "max": 200, "step": 5,
+                                               "tooltip": "Gap filling between depth edges"}),
             },
         }
 
@@ -126,9 +126,10 @@ class PersonDataRefiner:
         return new_face_to_ref
 
     def execute(self, person_data, images, sam_model, mask_fill_holes, mask_blur, det_size,
-                depth_map=None, depth_grow_pixels=50, depth_remove_overlap=True, depth_tolerance=0.05):
+                depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30):
 
         import time as _time
+        import cv2
         _t0 = _time.monotonic()
 
         batch_size = images.shape[0]
@@ -143,12 +144,18 @@ class PersonDataRefiner:
         det_size_int = int(det_size)
         analyzer = FaceAnalyzer(det_size_int)
 
+        from .utils.depth_refine import compute_depth_edges, deconflict_masks
         use_depth = depth_map is not None
         depth_nps = []
+        depth_edges_list = []
         if use_depth:
             for b in range(batch_size):
                 dm = depth_map[b].cpu().numpy()
-                depth_nps.append(dm[:, :, 0] if dm.ndim == 3 else dm)
+                dnp = dm[:, :, 0] if dm.ndim == 3 else dm
+                if dnp.shape[0] != new_h or dnp.shape[1] != new_w:
+                    dnp = cv2.resize(dnp, (new_w, new_h), interpolation=cv2.INTER_LINEAR)
+                depth_nps.append(dnp)
+                depth_edges_list.append(compute_depth_edges(dnp, depth_edge_threshold))
 
         print(f"\n{'='*50}")
         print(f"  PersonDataRefiner")
@@ -196,9 +203,12 @@ class PersonDataRefiner:
                 if ref_idx is not None:
                     ref_to_new_fi[ref_idx] = nfi
 
-            depth_kwargs = dict(depth_np=depth_np, depth_grow=depth_grow_pixels,
-                                depth_remove_overlap=depth_remove_overlap,
-                                depth_tolerance=depth_tolerance) if use_depth else {}
+            depth_kwargs = dict(
+                depth_edges_data=depth_edges_list[b] if use_depth else None,
+                depth_np=depth_nps[b] if use_depth else None,
+                depth_carve_strength=depth_carve_strength,
+                depth_grow=depth_grow_pixels,
+            )
 
             # Generate masks per reference
             masks_for_refs = {mt: [] for mt in ALL_MASK_TYPES}
@@ -276,6 +286,20 @@ class PersonDataRefiner:
                 for b in range(batch_size):
                     ref_batch.append(all_masks_per_type[mt][b][ri])
                 pd_masks[mt].append(torch.cat(ref_batch, dim=0))
+
+        # Cross-reference deconfliction
+        if use_depth and num_refs >= 2:
+            for mt in ("body", "head", "face"):
+                for b in range(batch_size):
+                    overlap_dict = {}
+                    for ri in range(num_refs):
+                        m = pd_masks[mt][ri][b].cpu().numpy()
+                        if m.sum() > 0:
+                            overlap_dict[ri] = m
+                    if len(overlap_dict) >= 2:
+                        resolved = deconflict_masks(overlap_dict, depth_nps[b])
+                        for ri, m in resolved.items():
+                            pd_masks[mt][ri][b] = torch.from_numpy(m)
 
         new_person_data = {
             "batch_size": batch_size,

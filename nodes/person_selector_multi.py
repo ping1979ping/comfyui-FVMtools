@@ -11,6 +11,8 @@ from .utils.segs_utils import assign_segs_to_references, run_detector
 from .utils.appearance import (
     extract_hair_color,
     extract_head_histogram,
+    extract_palette_histogram,
+    extract_clothing_histogram,
     parse_match_weights,
 )
 
@@ -34,13 +36,16 @@ class PersonSelectorMulti:
 
     DESCRIPTION = (
         "Matches multiple reference persons in the current image using InsightFace (ArcFace) embeddings,\n"
-        "optionally combined with hair color and head appearance matching.\n\n"
+        "optionally combined with hair color, head appearance, and outfit color matching.\n\n"
         "Each reference input accepts a batch of images for one person.\n"
         "Connect a reference to auto-create the next input slot.\n\n"
         "Supports batch input: pass multiple images and get PERSON_DATA for PersonDetailer.\n\n"
         "Faces are assigned exclusively: each face matches at most one reference.\n\n"
-        "match_weights controls the scoring blend: 'face/hair/head' (e.g. '60/20/20').\n"
+        "match_weights controls the scoring blend: 'face/hair/head' (e.g. '60/20/20')\n"
+        "or 'face/hair/head/outfit' (e.g. '50/15/15/20') when outfit_palettes is connected.\n"
         "Set to '100/0/0' for pure face matching (previous behavior).\n\n"
+        "Outfit matching: connect palette_preview images as a batch to outfit_palettes.\n"
+        "Compares palette color distribution with detected clothing colors (BiSeNet).\n\n"
         "Optional: connect SEGS or a detector for body-part detection.\n"
         "Detected parts are assigned to references via body mask overlap\n"
         "and stored as 'aux' masks in PERSON_DATA for PersonDetailer."
@@ -73,29 +78,37 @@ class PersonSelectorMulti:
                 "detect_crop_factor": ("FLOAT", {"default": 3.0, "min": 1.0, "max": 10.0, "step": 0.1,
                                                    "tooltip": "Crop expansion factor passed to detector"}),
                 "match_weights": ("STRING", {"default": "60/20/20",
-                                             "tooltip": "Matching weight blend: face/hair/head as ratio.\n"
+                                             "tooltip": "Matching weight blend: face/hair/head or face/hair/head/outfit.\n"
                                                         "Controls how much each signal contributes to the final similarity score.\n\n"
-                                                        "Examples:\n"
-                                                        "  60/20/20 — balanced: face identity + hair color + head appearance (default)\n"
-                                                        "  100/0/0 — pure face matching (original behavior, ignores appearance)\n"
-                                                        "  50/30/20 — strong hair weight (good when faces are similar but hair differs)\n"
-                                                        "  40/40/20 — heavy hair focus (e.g. blonde vs brunette disambiguation)\n"
-                                                        "  70/15/15 — mostly face with subtle appearance boost\n\n"
-                                                        "Hair = BiSeNet hair region color (HSV). Head = head crop histogram (HSV).\n"
+                                                        "3 values (no outfit):\n"
+                                                        "  60/20/20 — balanced: face + hair + head (default)\n"
+                                                        "  100/0/0 — pure face matching\n"
+                                                        "  50/30/20 — strong hair weight\n\n"
+                                                        "4 values (with outfit_palettes connected):\n"
+                                                        "  50/15/15/20 — face + hair + head + outfit colors\n"
+                                                        "  40/15/15/30 — heavy outfit weight\n"
+                                                        "  60/20/20/0 — ignore outfit even when connected\n\n"
+                                                        "Hair = BiSeNet hair color (HSV). Head = head crop histogram.\n"
+                                                        "Outfit = clothing region vs. palette color distribution.\n"
                                                         "Values are auto-normalized, so 3/1/1 equals 60/20/20."}),
                 "reference_1": ("IMAGE", {"tooltip": "Reference image(s) for person 1. Pass a batch of images of the same person for better matching accuracy."}),
             },
             "optional": {
+                "outfit_palettes": ("IMAGE", {"tooltip": "Palette preview image batch for outfit color matching.\n"
+                                                          "Image[0] = palette for reference 1, image[1] = for reference 2, etc.\n"
+                                                          "If batch is smaller than number of references, remaining refs skip outfit matching.\n"
+                                                          "Connect palette_preview outputs from Color Palette Generator.\n"
+                                                          "Use match_weights with 4 values to control outfit weight (e.g. 50/15/15/20)."}),
                 "segs": ("SEGS", {"tooltip": "Pre-computed body-part SEGS (e.g. from Impact Pack). Takes priority over detector inputs."}),
                 "bbox_detector": ("BBOX_DETECTOR", {"tooltip": "Bounding box detector for body-part detection. Ignored if SEGS connected."}),
                 "segm_detector": ("SEGM_DETECTOR", {"tooltip": "Segmentation detector (preferred over bbox). Ignored if SEGS connected."}),
-                "depth_map": ("IMAGE", {"tooltip": "Depth map batch from Depth Anything V2 or similar. Improves masks by filling gaps and removing overlaps using depth coherence."}),
-                "depth_grow_pixels": ("INT", {"default": 50, "min": 0, "max": 200, "step": 5,
-                                               "tooltip": "Max dilation radius for depth-based gap filling. 0 = no growing."}),
-                "depth_remove_overlap": ("BOOLEAN", {"default": True,
-                                                      "tooltip": "Remove pixels from masks whose depth doesn't match the person."}),
-                "depth_tolerance": ("FLOAT", {"default": 0.05, "min": 0.01, "max": 0.30, "step": 0.01,
-                                               "tooltip": "Depth band tolerance. Higher = more permissive (includes more depth variation)."}),
+                "depth_map": ("IMAGE", {"tooltip": "Depth map batch from Depth Anything V2 or similar. Improves masks via edge carving and cross-reference deconfliction."}),
+                "depth_edge_threshold": ("FLOAT", {"default": 0.05, "min": 0.01, "max": 0.30, "step": 0.01,
+                                                    "tooltip": "Depth gradient threshold for edge detection. Lower = more edges detected."}),
+                "depth_carve_strength": ("FLOAT", {"default": 0.8, "min": 0.0, "max": 1.0, "step": 0.05,
+                                                    "tooltip": "How strongly depth edges cut masks. 0=off, 1=full cut."}),
+                "depth_grow_pixels": ("INT", {"default": 30, "min": 0, "max": 200, "step": 5,
+                                               "tooltip": "Gap filling between depth edges. 0 = no growing."}),
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
@@ -198,22 +211,44 @@ class PersonSelectorMulti:
         return assignments
 
     def _generate_all_masks(self, cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
-                            depth_np=None, depth_grow=50, depth_remove_overlap=True, depth_tolerance=0.05):
+                            depth_edges_data=None, depth_np=None,
+                            depth_carve_strength=0.8, depth_grow=30):
         """Generate all mask types. Delegates to shared generate_all_masks_for_face()."""
         return generate_all_masks_for_face(
             cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
-            depth_np=depth_np, depth_grow=depth_grow,
-            depth_remove_overlap=depth_remove_overlap, depth_tolerance=depth_tolerance,
+            depth_edges_data=depth_edges_data, depth_np=depth_np,
+            depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
         )
 
-    def _render_preview(self, current_image, assignments, cur_faces, body_masks_list, h, w):
+    def _render_preview(self, current_image, assignments, cur_faces, body_masks_list, h, w,
+                         depth_np=None, depth_edges_binary=None):
         preview = tensor2np(current_image).copy()
+
+        # Depth map overlay (subtle blue tint)
+        if depth_np is not None:
+            depth_vis = (np.clip(depth_np, 0, 1) * 255).astype(np.uint8)
+            depth_colored = cv2.applyColorMap(depth_vis, cv2.COLORMAP_INFERNO)
+            depth_rgb = cv2.cvtColor(depth_colored, cv2.COLOR_BGR2RGB)
+            preview = cv2.addWeighted(preview, 0.7, depth_rgb, 0.3, 0)
+
+        # Depth edges overlay (cyan thin lines)
+        if depth_edges_binary is not None:
+            edge_overlay = np.zeros_like(preview)
+            edge_overlay[depth_edges_binary] = (0, 255, 255)  # cyan
+            preview = cv2.addWeighted(preview, 1.0, edge_overlay, 0.4, 0)
 
         for ri, (fi, sim) in assignments.items():
             color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
             mask_np = (body_masks_list[ri][0].cpu().numpy() * 255).astype(np.uint8)
+
+            # Transparent fill
+            fill_overlay = np.zeros_like(preview)
+            fill_overlay[mask_np > 128] = color
+            preview = cv2.addWeighted(preview, 1.0, fill_overlay, 0.15, 0)
+
+            # Thick contour lines
             contours, _ = cv2.findContours(mask_np, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-            cv2.drawContours(preview, contours, -1, color, 2)
+            cv2.drawContours(preview, contours, -1, color, 3)
 
             face = cur_faces[fi]
             x1, y1, x2, y2 = [int(v) for v in face.bbox]
@@ -236,8 +271,10 @@ class PersonSelectorMulti:
     def _process_single_image(self, single_image, analyzer, ref_emb_sets, num_refs,
                                sam_model, aggregation, effective_threshold,
                                mask_fill_holes, mask_blur, device,
-                               ref_appearances=None, match_weights=(1.0, 0.0, 0.0),
-                               depth_np=None, depth_grow=50, depth_remove_overlap=True, depth_tolerance=0.05):
+                               ref_appearances=None, match_weights=(1.0, 0.0, 0.0, 0.0),
+                               ref_outfit_hists=None,
+                               depth_edges_data=None, depth_np=None,
+                               depth_carve_strength=0.8, depth_grow=30):
         """Process a single image and return per-ref masks, assignments, faces, etc."""
         h, w = single_image.shape[1], single_image.shape[2]
 
@@ -258,29 +295,51 @@ class PersonSelectorMulti:
         face_sim_matrix = self._build_similarity_matrix(ref_emb_sets, face_embs, aggregation)
 
         # Appearance-enhanced matching
-        w_face, w_hair, w_head = match_weights
-        use_appearance = (w_hair > 0 or w_head > 0) and ref_appearances is not None and face_count > 0
+        w_face, w_hair, w_head = match_weights[0], match_weights[1], match_weights[2]
+        w_outfit = match_weights[3] if len(match_weights) > 3 else 0.0
+        use_appearance = (w_hair > 0 or w_head > 0 or w_outfit > 0) and ref_appearances is not None and face_count > 0
 
         if use_appearance:
             # Extract appearance features for detected faces
+            # Run BiSeNet once per face and reuse for hair, head, and clothing
             face_hair_colors = []
             face_head_hists = []
+            face_label_maps = []
             for face in cur_faces:
                 label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
+                face_label_maps.append(label_map)
                 face_hair_colors.append(extract_hair_color(cur_rgb, label_map))
                 face_head_hists.append(extract_head_histogram(cur_rgb, face.bbox))
 
             ref_hair_colors = [ra[0] for ra in ref_appearances]
             ref_head_hists = [ra[1] for ra in ref_appearances]
 
+            # Extract clothing histograms for outfit matching
+            # BiSeNet label 16 = cloth — reuses label map from above, no extra cost.
+            face_clothing_hists = None
+            if w_outfit > 0 and ref_outfit_hists is not None:
+                face_clothing_hists = []
+                for fi, face in enumerate(cur_faces):
+                    cloth_mask = (face_label_maps[fi] == 16).astype(np.float32)
+                    # Cloth label already excludes head — pass empty head mask
+                    head_mask_np = np.zeros_like(cloth_mask)
+                    face_clothing_hists.append(
+                        extract_clothing_histogram(cur_rgb, cloth_mask, head_mask_np)
+                    )
+
             sim_matrix = build_appearance_matrix(
                 face_sim_matrix, ref_hair_colors, face_hair_colors,
                 ref_head_hists, face_head_hists, match_weights,
+                ref_outfit_hists=ref_outfit_hists,
+                face_clothing_hists=face_clothing_hists,
             )
 
             if sim_matrix.size > 0:
+                weight_str = f"{w_face:.0%}/{w_hair:.0%}/{w_head:.0%}"
+                if w_outfit > 0:
+                    weight_str += f"/{w_outfit:.0%}"
                 print(f"[PersonSelectorMulti] face_sim:\n{np.array2string(face_sim_matrix, precision=4)}")
-                print(f"[PersonSelectorMulti] combined_sim (weights {w_face:.0%}/{w_hair:.0%}/{w_head:.0%}):\n"
+                print(f"[PersonSelectorMulti] combined_sim (weights {weight_str}):\n"
                       f"{np.array2string(sim_matrix, precision=4)}")
         else:
             sim_matrix = face_sim_matrix
@@ -297,8 +356,8 @@ class PersonSelectorMulti:
             if ri in assignments:
                 fi, sim = assignments[ri]
                 masks = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
-                                                  depth_np=depth_np, depth_grow=depth_grow,
-                                                  depth_remove_overlap=depth_remove_overlap, depth_tolerance=depth_tolerance)
+                                                  depth_edges_data=depth_edges_data, depth_np=depth_np,
+                                                  depth_carve_strength=depth_carve_strength, depth_grow=depth_grow)
                 for mt in ALL_MASK_TYPES:
                     masks_per_type[mt].append(masks.get(mt, empty_mask(h, w)))
                 print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})")
@@ -337,8 +396,8 @@ class PersonSelectorMulti:
                 per_face = {mt: masks_per_type[mt][ri] for mt in ALL_MASK_TYPES}
             else:
                 per_face = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
-                                                      depth_np=depth_np, depth_grow=depth_grow,
-                                                      depth_remove_overlap=depth_remove_overlap, depth_tolerance=depth_tolerance)
+                                                      depth_edges_data=depth_edges_data, depth_np=depth_np,
+                                                      depth_carve_strength=depth_carve_strength, depth_grow=depth_grow)
             per_face_masks.append(per_face)
         face_to_ref = [fi_to_ri.get(fi) for fi in range(face_count)]
 
@@ -358,8 +417,9 @@ class PersonSelectorMulti:
                 mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
                 detect_threshold=0.3, detect_dilation=10, detect_crop_factor=3.0,
                 match_weights="60/20/20",
+                outfit_palettes=None,
                 segs=None, bbox_detector=None, segm_detector=None,
-                depth_map=None, depth_grow_pixels=50, depth_remove_overlap=True, depth_tolerance=0.05,
+                depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
                 **kwargs):
         import time as _time
         _t0 = _time.monotonic()
@@ -379,34 +439,58 @@ class PersonSelectorMulti:
         ref_emb_sets = [self._extract_ref_embeddings(analyzer, rb) for rb in refs]
         effective_threshold = self.AUTO_FLOOR if auto_threshold else threshold
 
-        # Parse appearance weights
+        # Parse appearance weights (3 or 4 values)
         weights = parse_match_weights(match_weights)
-        w_face, w_hair, w_head = weights
-        use_appearance = w_hair > 0 or w_head > 0
+        w_face, w_hair, w_head, w_outfit = weights
+        use_appearance = w_hair > 0 or w_head > 0 or w_outfit > 0
+
+        # Extract palette histograms from outfit_palettes batch (one per reference)
+        ref_outfit_hists = None
+        if outfit_palettes is not None and w_outfit > 0:
+            ref_outfit_hists = []
+            palette_batch_size = outfit_palettes.shape[0]
+            for ri in range(num_refs):
+                if ri < palette_batch_size:
+                    palette_rgb = (outfit_palettes[ri].cpu().numpy() * 255).astype(np.uint8)
+                    ref_outfit_hists.append(extract_palette_histogram(palette_rgb))
+                else:
+                    ref_outfit_hists.append(None)
+            print(f"[PersonSelectorMulti] Outfit palettes: {palette_batch_size} palette(s) for {num_refs} refs")
 
         # Extract reference appearance features (hair color, head histogram)
         ref_appearances = None
         if use_appearance:
             ref_appearances = [self._extract_ref_appearance(analyzer, rb, device) for rb in refs]
-            print(f"[PersonSelectorMulti] Appearance matching: weights={w_face:.0%}/{w_hair:.0%}/{w_head:.0%}")
+            weight_parts = [f"face {w_face:.0%}", f"hair {w_hair:.0%}", f"head {w_head:.0%}"]
+            if w_outfit > 0:
+                weight_parts.append(f"outfit {w_outfit:.0%}")
+            print(f"[PersonSelectorMulti] Appearance matching: {' / '.join(weight_parts)}")
             for ri, (hc, hh) in enumerate(ref_appearances):
                 hair_info = f"HSV({hc[0]:.0f},{hc[1]:.0f},{hc[2]:.0f})" if hc is not None else "no hair"
-                print(f"  ref {ri+1}: hair={hair_info}, histogram={'yes' if hh is not None else 'no'}")
+                outfit_info = ""
+                if ref_outfit_hists is not None:
+                    outfit_info = f", palette={'yes' if ref_outfit_hists[ri] is not None else 'no'}"
+                print(f"  ref {ri+1}: hair={hair_info}, histogram={'yes' if hh is not None else 'no'}{outfit_info}")
 
-        # Prepare depth maps per batch image
+        # Prepare depth data per batch image
+        from .utils.depth_refine import compute_depth_edges, deconflict_masks
         use_depth = depth_map is not None
         depth_nps = []
+        depth_edges_list = []
         if use_depth:
             for b in range(batch_size):
-                dm = depth_map[b].cpu().numpy()  # [H, W, C]
-                depth_nps.append(dm[:, :, 0] if dm.ndim == 3 else dm)
-            print(f"[PersonSelectorMulti] Depth refinement enabled: grow={depth_grow_pixels}, overlap={depth_remove_overlap}, tol={depth_tolerance}")
+                dm = depth_map[b].cpu().numpy()
+                dnp = dm[:, :, 0] if dm.ndim == 3 else dm
+                if dnp.shape[0] != h or dnp.shape[1] != w:
+                    dnp = cv2.resize(dnp, (w, h), interpolation=cv2.INTER_LINEAR)
+                depth_nps.append(dnp)
+                depth_edges_list.append(compute_depth_edges(dnp, depth_edge_threshold))
+            print(f"[PersonSelectorMulti] Depth: edge_thr={depth_edge_threshold}, carve={depth_carve_strength}, grow={depth_grow_pixels}")
 
         print(f"[PersonSelectorMulti] batch_size={batch_size}, refs={num_refs}, "
               f"auto_threshold={auto_threshold}, effective={effective_threshold}")
 
         # Process each image in the batch
-        depth_kwargs = dict(depth_grow=depth_grow_pixels, depth_remove_overlap=depth_remove_overlap, depth_tolerance=depth_tolerance) if use_depth else {}
         batch_results = []
         for b in range(batch_size):
             single = current_image[b:b+1]
@@ -415,8 +499,11 @@ class PersonSelectorMulti:
                 sam_model, aggregation, effective_threshold,
                 mask_fill_holes, mask_blur, device,
                 ref_appearances=ref_appearances, match_weights=weights,
+                ref_outfit_hists=ref_outfit_hists,
+                depth_edges_data=depth_edges_list[b] if use_depth else None,
                 depth_np=depth_nps[b] if use_depth else None,
-                **depth_kwargs,
+                depth_carve_strength=depth_carve_strength,
+                depth_grow=depth_grow_pixels,
             )
             batch_results.append(result)
 
@@ -433,6 +520,21 @@ class PersonSelectorMulti:
                     ref_masks_per_type[mt].append(mpt[mt][ri])
             for mt in ALL_MASK_TYPES:
                 person_data_masks[mt].append(torch.cat(ref_masks_per_type[mt], dim=0))
+
+        # Cross-reference deconfliction: resolve overlapping masks per batch image
+        if use_depth and num_refs >= 2:
+            for mt in ("body", "head", "face"):
+                mask_key = mt
+                for b in range(batch_size):
+                    overlap_dict = {}
+                    for ri in range(num_refs):
+                        m = person_data_masks[mask_key][ri][b].cpu().numpy()
+                        if m.sum() > 0:
+                            overlap_dict[ri] = m
+                    if len(overlap_dict) >= 2:
+                        resolved = deconflict_masks(overlap_dict, depth_nps[b])
+                        for ri, m in resolved.items():
+                            person_data_masks[mask_key][ri][b] = torch.from_numpy(m)
 
         for b in range(batch_size):
             matches_for_image = [ri in batch_results[b]["assignments"] for ri in range(num_refs)]
@@ -551,7 +653,9 @@ class PersonSelectorMulti:
             body_masks_for_preview = batch_results[b]["masks_per_type"]["body"]
             p = self._render_preview(
                 current_image[b:b+1], batch_results[b]["assignments"],
-                batch_results[b]["cur_faces"], body_masks_for_preview, h, w
+                batch_results[b]["cur_faces"], body_masks_for_preview, h, w,
+                depth_np=depth_nps[b] if use_depth else None,
+                depth_edges_binary=depth_edges_list[b][1] if use_depth else None,
             )
             preview_parts.append(p)
         preview = torch.cat(preview_parts, dim=0)
@@ -560,7 +664,12 @@ class PersonSelectorMulti:
         sim_values = []
         match_values = []
         _elapsed = int(_time.monotonic() - _t0)
-        weight_str = f"face {w_face:.0%} / hair {w_hair:.0%} / head {w_head:.0%}" if use_appearance else "face only"
+        if use_appearance:
+            weight_str = f"face {w_face:.0%} / hair {w_hair:.0%} / head {w_head:.0%}"
+            if w_outfit > 0:
+                weight_str += f" / outfit {w_outfit:.0%}"
+        else:
+            weight_str = "face only"
         report_lines = [
             f"Batch size: {batch_size}",
             f"Faces (total): {total_faces}",

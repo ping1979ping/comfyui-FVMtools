@@ -50,8 +50,8 @@ BISENET_MASK_TYPES = [t for t in ALL_MASK_TYPES if t != "body"]  # types derivab
 
 
 def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
-                                depth_np=None, depth_grow=50,
-                                depth_remove_overlap=True, depth_tolerance=0.05):
+                                depth_edges_data=None, depth_np=None,
+                                depth_carve_strength=0.8, depth_grow=30):
     """Generate all 9 mask types for a single face. Shared by PersonSelectorMulti and PersonDataRefiner.
 
     Args:
@@ -61,10 +61,10 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         sam_model: SAM model for body mask
         mask_fill_holes: bool
         mask_blur: int (blur radius)
+        depth_edges_data: optional tuple (edge_magnitude, edges_binary) from compute_depth_edges
         depth_np: optional (H, W) float32 depth map [0,1]
-        depth_grow: max dilation pixels for depth gap filling
-        depth_remove_overlap: whether to remove depth-mismatched pixels
-        depth_tolerance: depth band expansion factor
+        depth_carve_strength: how strongly depth edges cut masks (0=off, 1=full)
+        depth_grow: max gap fill pixels between edges
 
     Returns:
         dict {mask_type: torch.Tensor [1, H, W]} for all 9 types in ALL_MASK_TYPES
@@ -73,13 +73,16 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     from .tensor_utils import mask2tensor, fill_mask_holes, apply_gaussian_blur
     from .mask_utils import clean_mask_crumbs
 
+    use_depth = depth_edges_data is not None and depth_np is not None
+
     label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
     masks = {}
 
     for mask_type, labels in MASK_TYPE_LABELS.items():
         mask_np = np.isin(label_map, list(labels)).astype(np.float32)
-        if depth_np is not None and mask_type in DEPTH_REFINABLE_MASKS:
-            mask_np = refine_mask_with_depth(mask_np, depth_np, depth_grow, depth_remove_overlap, depth_tolerance)
+        if use_depth and mask_type in DEPTH_REFINABLE_MASKS:
+            mask_np = refine_mask_with_depth(mask_np, depth_edges_data, depth_np,
+                                             depth_carve_strength, depth_grow)
         mask = mask2tensor(mask_np)
         if mask_fill_holes:
             mask = fill_mask_holes(mask)
@@ -90,8 +93,9 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     # Body mask via SAM
     body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model)
     body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.005)
-    if depth_np is not None:
-        body_mask_np = refine_mask_with_depth(body_mask_np, depth_np, depth_grow, depth_remove_overlap, depth_tolerance)
+    if use_depth:
+        body_mask_np = refine_mask_with_depth(body_mask_np, depth_edges_data, depth_np,
+                                              depth_carve_strength, depth_grow)
     mask = mask2tensor(body_mask_np)
     if mask_fill_holes:
         mask = fill_mask_holes(mask)
