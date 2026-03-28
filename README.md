@@ -8,11 +8,13 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
 - **Appearance-enhanced matching** — Combine face identity with hair color and head appearance for better disambiguation when faces look similar ([details](documentation/MATCHING_GUIDE.md))
 - **Per-person LoRA inpainting** — 5 reference slots + 1 generic catch-all, each with its own LoRA, prompt, and mask type
 - **9 mask types** — face, head, body, hair, facial skin, eyes, mouth, neck, accessories (all from a single BiSeNet run)
+- **Depth-guided mask reconstruction** — optional depth map input fills mask gaps and removes overlapping objects using depth coherence
+- **Person Data Refiner** — regenerate masks at hi-res after upscaling, preserving face-to-reference assignments
 - **Detail Daemon integration** — sigma curve manipulation for detail-preserving inpainting
 - **Z-Image Turbo auto-detection** — automatic LoRA QKV conversion for Lumina2 models
 - **Color palette generation** — 7 harmony types, 14 style presets, 161 named colors
 - **Palette from image** — K-Means extraction with fashion-aware mode (no scikit-learn needed)
-- **Outfit prompt builder** — 40+ themed outfit sets, seed-controlled, with `#color#` tag integration
+- **Outfit prompt builder** — 40+ themed outfit sets, seed-controlled, with `#color#` tag integration and in-browser list editing
 - **Configurable model paths** — fallback paths via `outfit_config.ini` when models are in non-standard locations
 - **Zero extra dependencies for Color/Fashion tools** — only numpy (already in ComfyUI)
 
@@ -27,14 +29,15 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
   - [Person Selector (Match)](#1-person-selector-match)
   - [Person Selector Multi](#2-person-selector-multi)
   - [Person Detailer](#3-person-detailer)
-  - [Detail Daemon Options](#4-detail-daemon-options)
-  - [Inpaint Options](#5-inpaint-options)
+  - [Person Data Refiner](#4-person-data-refiner)
+  - [Detail Daemon Options](#5-detail-daemon-options)
+  - [Inpaint Options](#6-inpaint-options)
 - [Node Reference -- Color Tools](#node-reference----color-tools)
-  - [Color Palette Generator](#6-color-palette-generator)
-  - [Palette From Image](#7-palette-from-image)
-  - [Prompt Color Replace](#8-prompt-color-replace)
+  - [Color Palette Generator](#7-color-palette-generator)
+  - [Palette From Image](#8-palette-from-image)
+  - [Prompt Color Replace](#9-prompt-color-replace)
 - [Node Reference -- Fashion Tools](#node-reference----fashion-tools)
-  - [Outfit Generator](#9-outfit-generator)
+  - [Outfit Generator](#10-outfit-generator)
 - [Color Tag Reference](#color-tag-reference)
 - [Outfit Set Customization](#outfit-set-customization)
 - [Z-Image Turbo Compatibility](#z-image-turbo-compatibility)
@@ -160,10 +163,28 @@ Image Batch --> Person Selector Multi --> Person Detailer --> Output Images
                        ^                        ^
                  Reference Images          Model / CLIP / VAE
                  + SAM Model              + LoRAs & Prompts
+                 + Depth Map (optional)
 ```
 
-1. **Person Selector Multi** detects faces, matches them to references, generates masks, and outputs `PERSON_DATA`.
+1. **Person Selector Multi** detects faces, matches them to references, generates masks, and outputs `PERSON_DATA`. Optional depth map input improves mask quality.
 2. **Person Detailer** iterates over each enabled reference slot, applies the slot's LoRA and prompt, inpaints the masked face region, and stitches it back.
+
+### Pipeline 1b: Hi-Res Face Detailing (with upscale)
+
+```
+Low-Res Image --> Person Selector Multi --> Person Detailer --> Upscaler
+                                                                    |
+                                                                    v
+                                              Person Data Refiner --> Person Detailer --> Output
+                                                    ^                      ^
+                                              SAM Model              Model / CLIP / VAE
+                                              + Depth Map (optional)
+```
+
+1. First pass: face detailing at low resolution (fast iteration)
+2. **Upscaler**: increase resolution (e.g. 2-4x)
+3. **Person Data Refiner**: re-detects faces at hi-res, matches them by position to the original references, regenerates all masks at the new resolution
+4. Second pass: face detailing at hi-res with fresh, accurate masks
 
 ### Pipeline 2: Color Palette
 
@@ -280,6 +301,10 @@ Supports **appearance-enhanced matching**: blends face identity (ArcFace) with h
 | `segs` | SEGS | Pre-computed segments from external detector |
 | `bbox_detector` | BBOX_DETECTOR | Bounding box detector for face detection |
 | `segm_detector` | SEGM_DETECTOR | Segmentation detector |
+| `depth_map` | IMAGE | Depth map batch (e.g. from Depth Anything V2) for depth-guided mask reconstruction |
+| `depth_grow_pixels` | INT | Max dilation radius for depth-based gap filling (default: 50, 0=off) |
+| `depth_remove_overlap` | BOOLEAN | Remove depth-mismatched pixels from masks (default: True) |
+| `depth_tolerance` | FLOAT | Depth band tolerance factor (default: 0.05, higher=more permissive) |
 
 #### Outputs
 
@@ -373,7 +398,57 @@ The generic slot can optionally catch unprocessed faces (those not matched by an
 
 ---
 
-### 4. Detail Daemon Options
+### 4. Person Data Refiner
+
+**Display name:** Person Data Refiner
+
+Regenerates PERSON_DATA masks at a new image resolution after upscaling, preserving face-to-reference assignments from the original. Re-detects faces at the new resolution, matches them to the original references by spatial proximity (centroid distance), and regenerates all 9 mask types using BiSeNet and SAM.
+
+Optional depth map input enables **depth-guided mask reconstruction**: fills mask gaps where depth matches the person and removes overlapping objects with mismatched depth.
+
+#### Inputs
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+| `person_data` | PERSON_DATA | -- | Original PERSON_DATA from Person Selector Multi |
+| `images` | IMAGE | -- | New (hi-res) images. Batch size must match original. |
+| `sam_model` | SAM_MODEL | -- | SAM model for body mask generation |
+| `mask_fill_holes` | BOOLEAN | True | Fill holes in generated masks |
+| `mask_blur` | INT | 0 | Gaussian blur radius for mask edges (0--100) |
+| `det_size` | COMBO | 640 | Face detection resolution: `320`, `480`, `640`, `768` |
+
+**Optional inputs:**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+| `depth_map` | IMAGE | -- | Depth map batch for depth-guided mask reconstruction |
+| `depth_grow_pixels` | INT | 50 | Max dilation radius for depth-based gap filling (0=off) |
+| `depth_remove_overlap` | BOOLEAN | True | Remove depth-mismatched pixels from masks |
+| `depth_tolerance` | FLOAT | 0.05 | Depth band tolerance factor |
+
+#### Outputs
+
+| Name | Type | Description |
+|------|------|-------------|
+| `person_data` | PERSON_DATA | Fresh PERSON_DATA with masks at the new resolution |
+| `report` | STRING | Report showing re-matching results and runtime |
+
+#### Depth-Guided Mask Reconstruction
+
+When a `depth_map` is connected (available on both Person Selector Multi and Person Data Refiner), the system uses depth coherence to improve body/head/face masks:
+
+1. **Depth profile estimation** -- computes the person's depth range from the existing mask (robust percentile-based band)
+2. **Gap filling** -- iteratively grows the mask into adjacent pixels whose depth matches the person. Stops at depth discontinuities (e.g. another person behind).
+3. **Overlap removal** -- pixels inside the mask whose depth doesn't match the person are softly removed (sigmoid falloff). This handles cases where another person's arm or a background object bleeds into the mask.
+4. **Cleanup** -- morphological closing smooths edges, tiny fragments are removed.
+
+The depth refinement is applied to body, head, and face masks only. Fine-grained semantic masks (hair, eyes, mouth, etc.) are not refined with depth as they require pixel-precise semantic boundaries.
+
+**Recommended depth source:** [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) via ComfyUI ControlNet Aux.
+
+---
+
+### 5. Detail Daemon Options
 
 **Display name:** Detail Daemon Options
 
@@ -399,7 +474,7 @@ Fine-tunes the sigma manipulation curve used by Detail Daemon within Person Deta
 
 ---
 
-### 5. Inpaint Options
+### 6. Inpaint Options
 
 **Display name:** Inpaint Options
 
@@ -439,7 +514,7 @@ Supports **progressive refinement**: set `rounds` > 1 and use `denoise_progressi
 
 All Color Tool nodes appear under **FVM Tools/Color** in the ComfyUI menu.
 
-### 6. Color Palette Generator
+### 7. Color Palette Generator
 
 **Display name:** Color Palette Generator
 
@@ -485,7 +560,7 @@ Generates harmonious named color palettes using color theory principles. Include
 
 ---
 
-### 7. Palette From Image
+### 8. Palette From Image
 
 **Display name:** Palette From Image
 
@@ -523,7 +598,7 @@ Extracts a color palette from a reference image using K-Means clustering. Implem
 
 ---
 
-### 8. Prompt Color Replace
+### 9. Prompt Color Replace
 
 **Display name:** Prompt Color Replace
 
@@ -556,11 +631,11 @@ Replaces color tag placeholders in prompts with actual color names from a palett
 
 All Fashion Tool nodes appear under **FVM Tools/Fashion** in the ComfyUI menu.
 
-### 9. Outfit Generator
+### 10. Outfit Generator
 
 **Display name:** Outfit Generator
 
-Generates seed-controlled outfit descriptions with color tag placeholders, ready for colorization via Prompt Color Replace. Ships with 40 built-in outfit sets covering business, casual, evening, sheer/layered, lingerie, and many more themes. Outfit list files are plain text and can be edited or extended without restarting ComfyUI.
+Generates seed-controlled outfit descriptions with color tag placeholders, ready for colorization via Prompt Color Replace. Ships with 40 built-in outfit sets covering business, casual, evening, sheer/layered, lingerie, and many more themes. Outfit list files are plain text and can be edited directly from the node via the **Edit List** button -- changes are saved instantly and take effect on the next Queue (no browser reload needed).
 
 Each generated outfit assembles garment pieces from the selected outfit set, filtered by the `formality` and `coverage` sliders, and inserts `#color#` tags for later replacement.
 
