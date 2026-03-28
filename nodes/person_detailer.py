@@ -370,40 +370,79 @@ class PersonDetailer:
                             print(f"    Generic — aux: no unassigned body parts")
                             img_summary["Generic"] = {"status": "no parts", "mask_type": "aux", "parts": 0}
                 else:
-                    # Standard generic: unmatched faces
-                    if generic_catch_unprocessed:
-                        h, w = person_data["image_height"], person_data["image_width"]
-                        processed_mask = torch.zeros(h, w, dtype=torch.float32)
-                        for slot in slots:
-                            ri = slot["index"]
-                            if ri >= num_refs or slot["mask_type"] == "aux":
-                                continue
-                            mask_key = f"{slot['mask_type']}_masks"
-                            slot_mask = person_data[mask_key][ri][b]
-                            processed_mask = torch.max(processed_mask, slot_mask)
-                        unmatched_mask = (person_data["all_faces_mask"][b] - processed_mask).clamp(0, 1)
-                    else:
-                        unmatched_mask = (person_data["all_faces_mask"][b] - person_data["matched_faces_mask"][b]).clamp(0, 1)
+                    # Standard generic: unmatched/unprocessed faces
+                    per_face = person_data.get("per_face_masks", [])
+                    face_to_ref = person_data.get("face_to_ref", [])
 
-                    components = split_mask_to_components(unmatched_mask, min_area_fraction=0.001)
-
-                    if components:
-                        print(f"    Generic — {len(components)} unmatched face(s) ({generic_mask_type})")
+                    if per_face and b < len(per_face):
+                        # Use per-face masks with correct mask type
+                        active_ref_indices = {slot["index"] for slot in slots}
                         generic_slot = {
                             "lora": generic_lora, "lora_strength": generic_lora_strength,
-                            "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "rounds": generic_cfg.get("rounds", 1),
+                            "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True),
+                            "rounds": generic_cfg.get("rounds", 1),
                         }
-                        for comp_mask in components:
+                        face_count = 0
+                        for fi, face_masks in enumerate(per_face[b]):
+                            ref_idx = face_to_ref[b][fi] if b < len(face_to_ref) else None
+                            if generic_catch_unprocessed:
+                                if ref_idx is not None and ref_idx in active_ref_indices:
+                                    continue
+                            else:
+                                if ref_idx is not None:
+                                    continue
+                            mask = face_masks.get(generic_mask_type, face_masks.get("head"))
+                            if mask.dim() == 3:
+                                mask = mask[0]
+                            if is_mask_empty(mask):
+                                continue
+                            face_count += 1
+                            print(f"    Generic — face #{fi+1} ({generic_mask_type}) detailing...")
                             stitched, refined = self._inpaint_mask(
-                                current_image, comp_mask, generic_slot, **inpaint_kwargs)
+                                current_image, mask, generic_slot, **inpaint_kwargs)
                             current_image = stitched
                             if refined is not None:
                                 refined_parts.append(refined)
                                 refined_gen_parts.append(refined)
-                        img_summary["Generic"] = {"status": "ok", "mask_type": generic_mask_type, "faces": len(components)}
+                        if face_count > 0:
+                            img_summary["Generic"] = {"status": "ok", "mask_type": generic_mask_type, "faces": face_count}
+                        else:
+                            print(f"    Generic — no unmatched faces")
+                            img_summary["Generic"] = {"status": "empty", "mask_type": generic_mask_type, "faces": 0}
                     else:
-                        print(f"    Generic — no unmatched faces")
-                        img_summary["Generic"] = {"status": "empty", "mask_type": generic_mask_type, "faces": 0}
+                        # Fallback: old behavior with face-based components
+                        if generic_catch_unprocessed:
+                            h, w = person_data["image_height"], person_data["image_width"]
+                            processed_mask = torch.zeros(h, w, dtype=torch.float32)
+                            for slot in slots:
+                                ri = slot["index"]
+                                if ri >= num_refs or slot["mask_type"] == "aux":
+                                    continue
+                                mask_key = f"{slot['mask_type']}_masks"
+                                slot_mask = person_data[mask_key][ri][b]
+                                processed_mask = torch.max(processed_mask, slot_mask)
+                            unmatched_mask = (person_data["all_faces_mask"][b] - processed_mask).clamp(0, 1)
+                        else:
+                            unmatched_mask = (person_data["all_faces_mask"][b] - person_data["matched_faces_mask"][b]).clamp(0, 1)
+
+                        components = split_mask_to_components(unmatched_mask, min_area_fraction=0.001)
+                        if components:
+                            print(f"    Generic — {len(components)} unmatched face(s) ({generic_mask_type})")
+                            generic_slot = {
+                                "lora": generic_lora, "lora_strength": generic_lora_strength,
+                                "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "rounds": generic_cfg.get("rounds", 1),
+                            }
+                            for comp_mask in components:
+                                stitched, refined = self._inpaint_mask(
+                                    current_image, comp_mask, generic_slot, **inpaint_kwargs)
+                                current_image = stitched
+                                if refined is not None:
+                                    refined_parts.append(refined)
+                                    refined_gen_parts.append(refined)
+                            img_summary["Generic"] = {"status": "ok", "mask_type": generic_mask_type, "faces": len(components)}
+                        else:
+                            print(f"    Generic — no unmatched faces")
+                            img_summary["Generic"] = {"status": "empty", "mask_type": generic_mask_type, "faces": 0}
 
             results.append(current_image)
             all_summaries.append(img_summary)

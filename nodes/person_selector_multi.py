@@ -337,6 +337,19 @@ class PersonSelectorMulti:
         else:
             matched_faces_mask = empty_mask(h, w)
 
+        # Per-face masks for ALL detected faces (for generic slot in PersonDetailer)
+        # Matched faces reuse already-computed masks; unmatched faces get new masks generated
+        fi_to_ri = {fi: ri for ri, (fi, sim) in assignments.items()}
+        per_face_masks = []
+        for fi in range(face_count):
+            if fi in fi_to_ri:
+                ri = fi_to_ri[fi]
+                per_face = {mt: masks_per_type[mt][ri] for mt in ALL_MASK_TYPES}
+            else:
+                per_face = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur)
+            per_face_masks.append(per_face)
+        face_to_ref = [fi_to_ri.get(fi) for fi in range(face_count)]
+
         return {
             "masks_per_type": masks_per_type,
             "assignments": assignments,
@@ -345,6 +358,8 @@ class PersonSelectorMulti:
             "sim_matrix": sim_matrix,
             "all_faces_mask": all_faces_mask,
             "matched_faces_mask": matched_faces_mask,
+            "per_face_masks": per_face_masks,
+            "face_to_ref": face_to_ref,
         }
 
     def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, aggregation,
@@ -426,6 +441,8 @@ class PersonSelectorMulti:
             "matches": person_data_matches,
             "all_faces_mask": all_faces_masks,
             "matched_faces_mask": matched_faces_masks,
+            "per_face_masks": [batch_results[b]["per_face_masks"] for b in range(batch_size)],
+            "face_to_ref": [batch_results[b]["face_to_ref"] for b in range(batch_size)],
         }
         # Add all mask types: face_masks, head_masks, body_masks, hair_masks, etc.
         for mt in ALL_MASK_TYPES:
