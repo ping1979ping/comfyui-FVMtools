@@ -363,9 +363,23 @@ class PersonDetailerControlNet:
 
             print(f"\n  [Batch {b+1}/{batch_size}]")
 
-            # Process reference slots
+            # Process reference slots — sorted by depth (back-to-front)
             num_refs = person_data["num_references"]
-            for slot in slots:
+            ref_depths = person_data.get("ref_depths", [{}])
+            batch_depths = ref_depths[b] if b < len(ref_depths) else {}
+            depth_sort = person_data.get("depth_sort_order", "off")
+
+            if depth_sort == "front_last" and batch_depths:
+                sorted_slots = sorted(slots, key=lambda s: batch_depths.get(s["index"], 0.5))
+            elif depth_sort == "front_first" and batch_depths:
+                sorted_slots = sorted(slots, key=lambda s: batch_depths.get(s["index"], 0.5), reverse=True)
+            else:
+                sorted_slots = slots
+
+            if batch_depths and depth_sort != "off":
+                order_str = ", ".join(f"{s['label']}({batch_depths.get(s['index'], 0):.2f})" for s in sorted_slots)
+                print(f"    Render order ({depth_sort}): {order_str}")
+            for slot in sorted_slots:
                 ri = slot["index"]
                 mask_type = slot["mask_type"]
 
