@@ -575,6 +575,24 @@ class PersonSelectorMulti:
         all_faces_masks = torch.cat([br["all_faces_mask"] for br in batch_results], dim=0)
         matched_faces_masks = torch.cat([br["matched_faces_mask"] for br in batch_results], dim=0)
 
+        # Compute per-ref depth for rendering order (back-to-front)
+        # Uses depth map if available, else face Y-position as proxy
+        ref_depths_per_batch = []
+        for b in range(batch_size):
+            depths = {}
+            br = batch_results[b]
+            for ri, (fi, sim) in br["assignments"].items():
+                if use_depth:
+                    body_mask_np = person_data_masks["body"][ri][b].cpu().numpy()
+                    masked = depth_nps[b][body_mask_np > 0.5] if body_mask_np.sum() > 0 else np.array([])
+                    depths[ri] = float(np.median(masked)) if len(masked) > 0 else 0.5
+                else:
+                    # Fallback: face Y center (higher Y = closer to camera in most perspectives)
+                    face = br["cur_faces"][fi]
+                    fy = (face.bbox[1] + face.bbox[3]) / 2
+                    depths[ri] = fy / h  # normalize to 0-1 (0=top/far, 1=bottom/close)
+            ref_depths_per_batch.append(depths)
+
         person_data = {
             "batch_size": batch_size,
             "num_references": num_refs,
@@ -585,6 +603,7 @@ class PersonSelectorMulti:
             "matched_faces_mask": matched_faces_masks,
             "per_face_masks": [batch_results[b]["per_face_masks"] for b in range(batch_size)],
             "face_to_ref": [batch_results[b]["face_to_ref"] for b in range(batch_size)],
+            "ref_depths": ref_depths_per_batch,
         }
         # Add all mask types: face_masks, head_masks, body_masks, hair_masks, etc.
         for mt in ALL_MASK_TYPES:

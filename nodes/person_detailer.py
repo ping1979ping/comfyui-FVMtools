@@ -286,9 +286,17 @@ class PersonDetailer:
 
             print(f"\n  [Batch {b+1}/{batch_size}]")
 
-            # Process reference slots
+            # Process reference slots — sorted by depth (back-to-front: furthest first, closest last)
             num_refs = person_data["num_references"]
-            for slot in slots:
+            ref_depths = person_data.get("ref_depths", [{}])
+            batch_depths = ref_depths[b] if b < len(ref_depths) else {}
+            # Higher depth value = further from camera = render first
+            # Lower depth value = closer = render last (overwrites background persons)
+            sorted_slots = sorted(slots, key=lambda s: batch_depths.get(s["index"], 0.5), reverse=True)
+            if batch_depths:
+                order_str = ", ".join(f"{s['label']}({batch_depths.get(s['index'], 0):.2f})" for s in sorted_slots)
+                print(f"    Render order (back→front): {order_str}")
+            for slot in sorted_slots:
                 ri = slot["index"]
                 mask_type = slot["mask_type"]
 
