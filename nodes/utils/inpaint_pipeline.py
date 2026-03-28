@@ -340,6 +340,9 @@ def inpaint_slot(
 
         # Create guider with (possibly patched) model and conditioning
         guider = Guider_Basic(round_model)
+        # Break reference to patched model clone immediately — guider holds what it needs
+        if controlnet_apply_fn is not None:
+            round_model = None
         guider.set_conds(round_positive)
 
         # Per-round denoise and steps
@@ -383,6 +386,10 @@ def inpaint_slot(
             callback=callback, disable_pbar=disable_pbar, seed=seed + iteration,
         )
         samples = samples.to(comfy.model_management.intermediate_device())
+
+        # Free ControlNet patched model references to prevent memory leak
+        del guider
+        del callback
 
         # VAE decode
         decoded = vae.decode(samples)  # [1, tH, tW, C]
