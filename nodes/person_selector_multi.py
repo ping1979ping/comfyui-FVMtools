@@ -109,6 +109,11 @@ class PersonSelectorMulti:
                                                     "tooltip": "How strongly depth edges cut masks. 0=off, 1=full cut."}),
                 "depth_grow_pixels": ("INT", {"default": 30, "min": 0, "max": 200, "step": 5,
                                                "tooltip": "Gap filling between depth edges. 0 = no growing."}),
+                "body_mask_mode": (["auto", "seed_grow", "sam"], {"default": "auto",
+                                    "tooltip": "Body mask strategy:\n"
+                                               "- seed_grow: BiSeNet labels as seed, grow to image/depth edges (best for multi-person)\n"
+                                               "- sam: legacy SAM-based body segmentation\n"
+                                               "- auto: seed_grow with SAM fallback if seed is too small"}),
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
@@ -213,13 +218,13 @@ class PersonSelectorMulti:
     def _generate_all_masks(self, cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
                             depth_edges_data=None, depth_np=None,
                             depth_carve_strength=0.8, depth_grow=30,
-                            other_faces=None):
+                            other_faces=None, body_mask_mode="auto"):
         """Generate all mask types. Delegates to shared generate_all_masks_for_face()."""
         return generate_all_masks_for_face(
             cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
             depth_edges_data=depth_edges_data, depth_np=depth_np,
             depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
-            other_faces=other_faces,
+            other_faces=other_faces, body_mask_mode=body_mask_mode,
         )
 
     def _render_preview(self, current_image, assignments, cur_faces, body_masks_list, h, w,
@@ -276,7 +281,8 @@ class PersonSelectorMulti:
                                ref_appearances=None, match_weights=(1.0, 0.0, 0.0, 0.0),
                                ref_outfit_hists=None,
                                depth_edges_data=None, depth_np=None,
-                               depth_carve_strength=0.8, depth_grow=30):
+                               depth_carve_strength=0.8, depth_grow=30,
+                               body_mask_mode="auto"):
         """Process a single image and return per-ref masks, assignments, faces, etc."""
         h, w = single_image.shape[1], single_image.shape[2]
 
@@ -361,7 +367,7 @@ class PersonSelectorMulti:
                 masks = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
                                                   depth_edges_data=depth_edges_data, depth_np=depth_np,
                                                   depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
-                                                  other_faces=others)
+                                                  other_faces=others, body_mask_mode=body_mask_mode)
                 for mt in ALL_MASK_TYPES:
                     masks_per_type[mt].append(masks.get(mt, empty_mask(h, w)))
                 print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})")
@@ -403,7 +409,7 @@ class PersonSelectorMulti:
                 per_face = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
                                                       depth_edges_data=depth_edges_data, depth_np=depth_np,
                                                       depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
-                                                      other_faces=others)
+                                                      other_faces=others, body_mask_mode=body_mask_mode)
             per_face_masks.append(per_face)
         face_to_ref = [fi_to_ri.get(fi) for fi in range(face_count)]
 
@@ -426,6 +432,7 @@ class PersonSelectorMulti:
                 outfit_palettes=None,
                 segs=None, bbox_detector=None, segm_detector=None,
                 depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
+                body_mask_mode="auto",
                 **kwargs):
         import time as _time
         _t0 = _time.monotonic()
@@ -510,6 +517,7 @@ class PersonSelectorMulti:
                 depth_np=depth_nps[b] if use_depth else None,
                 depth_carve_strength=depth_carve_strength,
                 depth_grow=depth_grow_pixels,
+                body_mask_mode=body_mask_mode,
             )
             batch_results.append(result)
 
