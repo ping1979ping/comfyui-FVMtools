@@ -21,12 +21,10 @@ def compute_depth_edges(depth_map, threshold=0.05):
         (edge_magnitude [H,W] float32 normalized [0,1],
          edges_binary [H,W] bool)
     """
-    # Sobel gradients
     sx = cv2.Sobel(depth_map, cv2.CV_32F, 1, 0, ksize=3)
     sy = cv2.Sobel(depth_map, cv2.CV_32F, 0, 1, ksize=3)
     magnitude = np.sqrt(sx ** 2 + sy ** 2)
 
-    # Normalize to [0, 1]
     mag_max = magnitude.max()
     if mag_max > 0:
         magnitude = magnitude / mag_max
@@ -40,17 +38,12 @@ def compute_depth_edges(depth_map, threshold=0.05):
 def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8, min_area=100):
     """Cut mask along depth edges, regroup components by depth similarity.
 
-    Depth edges inside the mask create cuts. Then connected components are
-    analyzed: components whose median depth matches the person's depth band
-    are kept (handles the pole-in-front-of-person case where a person becomes
-    a multi-part mask).
-
     Args:
         mask: [H, W] float32 [0,1]
-        edges_binary: [H, W] bool — depth edge map
-        depth_map: [H, W] float32 — for depth-based regrouping
-        carve_strength: 0-1, how strongly edges cut (0=off)
-        min_area: minimum component area in pixels to keep
+        edges_binary: [H, W] bool
+        depth_map: [H, W] float32
+        carve_strength: 0-1
+        min_area: minimum component area in pixels
 
     Returns:
         [H, W] float32 carved mask
@@ -58,17 +51,16 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
     if carve_strength <= 0 or np.sum(mask > 0.5) < min_area:
         return mask
 
-    # Cut: zero out mask pixels on depth edges
     mask_binary = (mask > 0.5).astype(np.uint8)
-    edge_cut = edges_binary.astype(np.uint8)
 
-    # Thicken edges slightly for cleaner cuts (3x3 dilation)
+    # Thicken edges for cleaner cuts
+    edge_cut = edges_binary.astype(np.uint8)
     edge_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
     edge_cut = cv2.dilate(edge_cut, edge_kernel, iterations=1)
 
     carved = mask_binary & ~edge_cut
 
-    # Estimate person depth band from original mask
+    # Person depth band from original mask
     masked_depths = depth_map[mask > 0.5]
     if len(masked_depths) < 50:
         return mask
@@ -91,7 +83,6 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
         if depth_low <= comp_depth <= depth_high:
             result[comp_pixels] = 1.0
 
-    # Blend with original based on carve_strength
     result = mask * (1.0 - carve_strength) + result * carve_strength
     return np.clip(result, 0, 1).astype(np.float32)
 
@@ -99,21 +90,12 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
 # ── Phase 3: Gap Filling (per mask) ──
 
 def grow_mask_between_edges(mask, edges_binary, max_pixels=30):
-    """Grow mask to fill gaps, but never cross depth edges.
-
-    Args:
-        mask: [H, W] float32 [0,1]
-        edges_binary: [H, W] bool
-        max_pixels: maximum dilation radius
-
-    Returns:
-        [H, W] float32
-    """
+    """Grow mask to fill gaps, but never cross depth edges."""
     if max_pixels <= 0:
         return mask
 
     current = (mask > 0.5).astype(np.uint8)
-    barrier = (~edges_binary).astype(np.uint8)  # 1 where growth is allowed
+    barrier = (~edges_binary).astype(np.uint8)
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
     iterations = max_pixels // 2
 
@@ -127,17 +109,20 @@ def grow_mask_between_edges(mask, edges_binary, max_pixels=30):
     return current.astype(np.float32)
 
 
-# ── Phase 4: Cross-Reference Deconfliction ──
+# ── Phase 4: Cross-Reference Deconfliction (vectorized) ──
 
-def deconflict_masks(masks_dict, depth_map):
-    """Resolve overlapping masks across references using depth proximity.
+def deconflict_masks(masks_dict, depth_map, edges_binary=None):
+    """Resolve overlapping masks using depth-based winner-takes-all.
 
-    Where masks overlap, the pixel goes to the person whose median depth
-    is closer to that pixel's depth value.
+    For each pixel claimed by multiple references, the reference whose
+    CORE depth (from non-overlapping region) is closest wins.
+    After deconfliction, winning masks are extended along depth edges
+    to fill any gaps at boundaries.
 
     Args:
         masks_dict: {ri: [H,W] float32} for all references
         depth_map: [H,W] float32
+        edges_binary: optional [H,W] bool for edge-aware extension
 
     Returns:
         {ri: [H,W] float32} with overlaps resolved
@@ -145,49 +130,98 @@ def deconflict_masks(masks_dict, depth_map):
     if len(masks_dict) < 2:
         return masks_dict
 
-    # Compute median depth per reference
-    ref_depths = {}
-    for ri, mask in masks_dict.items():
-        pixels = depth_map[mask > 0.5]
-        if len(pixels) > 0:
-            ref_depths[ri] = np.median(pixels)
-        else:
-            ref_depths[ri] = 0.5  # fallback
-
-    # Find all overlapping pixels (where 2+ masks are active)
-    active_refs = list(masks_dict.keys())
+    active_refs = sorted(masks_dict.keys())
     H, W = depth_map.shape
-    overlap_count = np.zeros((H, W), dtype=np.int32)
-    for ri in active_refs:
-        overlap_count += (masks_dict[ri] > 0.5).astype(np.int32)
 
-    overlap_mask = overlap_count >= 2
-    if not overlap_mask.any():
+    # Stack all masks into array [N, H, W]
+    N = len(active_refs)
+    ri_to_idx = {ri: i for i, ri in enumerate(active_refs)}
+    mask_stack = np.zeros((N, H, W), dtype=np.float32)
+    for ri in active_refs:
+        mask_stack[ri_to_idx[ri]] = masks_dict[ri]
+
+    # Binary masks at low threshold to catch soft overlaps
+    binary_stack = (mask_stack > 0.3).astype(np.int32)
+    overlap_count = binary_stack.sum(axis=0)  # [H, W]
+
+    has_overlap = (overlap_count >= 2).any()
+    if not has_overlap:
         return masks_dict
 
-    # For overlapping pixels: assign to nearest-depth reference
-    result = {ri: masks_dict[ri].copy() for ri in active_refs}
-    overlap_ys, overlap_xs = np.where(overlap_mask)
+    # Compute CORE depth per reference (from non-overlapping pixels only)
+    non_overlap = (overlap_count <= 1)
+    ref_core_depths = {}
+    for ri in active_refs:
+        i = ri_to_idx[ri]
+        core_mask = (mask_stack[i] > 0.5) & non_overlap
+        core_pixels = depth_map[core_mask]
+        if len(core_pixels) > 20:
+            ref_core_depths[ri] = np.median(core_pixels)
+        else:
+            # Fallback: use full mask
+            all_pixels = depth_map[mask_stack[i] > 0.5]
+            ref_core_depths[ri] = np.median(all_pixels) if len(all_pixels) > 0 else 0.5
 
-    if len(overlap_ys) == 0:
-        return result
+    # Vectorized winner assignment for overlapping pixels
+    overlap_mask = (overlap_count >= 2)
+    oys, oxs = np.where(overlap_mask)
 
-    pixel_depths = depth_map[overlap_ys, overlap_xs]
+    if len(oys) > 0:
+        pixel_depths = depth_map[oys, oxs]  # [K]
 
-    for idx in range(len(overlap_ys)):
-        y, x = overlap_ys[idx], overlap_xs[idx]
-        pd = pixel_depths[idx]
+        # For each overlap pixel, compute distance to each ref's core depth
+        # Shape: [N, K]
+        distances = np.zeros((N, len(oys)), dtype=np.float32)
+        claims = np.zeros((N, len(oys)), dtype=bool)
+        for ri in active_refs:
+            i = ri_to_idx[ri]
+            claims[i] = mask_stack[i][oys, oxs] > 0.3
+            distances[i] = np.abs(ref_core_depths[ri] - pixel_depths)
 
-        # Find which refs claim this pixel
-        claimants = [ri for ri in active_refs if masks_dict[ri][y, x] > 0.5]
-        if len(claimants) < 2:
-            continue
+        # Set non-claimant distances to infinity
+        distances[~claims] = np.inf
 
-        # Winner = closest depth to pixel
-        best_ri = min(claimants, key=lambda ri: abs(ref_depths[ri] - pd))
-        for ri in claimants:
-            if ri != best_ri:
-                result[ri][y, x] = 0.0
+        # Winner = closest depth per pixel
+        winners = np.argmin(distances, axis=0)  # [K]
+
+        # Zero out losers
+        for i in range(N):
+            loser_pixels = (winners != i) & claims[i]
+            if loser_pixels.any():
+                ly = oys[loser_pixels]
+                lx = oxs[loser_pixels]
+                mask_stack[i][ly, lx] = 0.0
+
+    # Edge-aware extension: grow winning masks slightly along depth edges
+    # to fill gaps at boundaries where carving + deconfliction left thin strips
+    if edges_binary is not None:
+        kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+        # Build combined "claimed" mask (any ref)
+        any_claimed = (mask_stack.max(axis=0) > 0.3)
+
+        for i in range(N):
+            m = (mask_stack[i] > 0.3).astype(np.uint8)
+            if m.sum() == 0:
+                continue
+            # Dilate slightly, but only into unclaimed territory near edges
+            dilated = cv2.dilate(m, kernel, iterations=2)
+            near_edge = edges_binary.astype(np.uint8)
+            # New pixels: dilated, near an edge, not claimed by anyone else
+            other_claimed = np.zeros((H, W), dtype=np.uint8)
+            for j in range(N):
+                if j != i:
+                    other_claimed = np.maximum(other_claimed, (mask_stack[j] > 0.3).astype(np.uint8))
+            new_pixels = dilated & ~m & near_edge & ~other_claimed
+            mask_stack[i][new_pixels > 0] = 1.0
+
+    # Build result
+    result = {}
+    for ri in active_refs:
+        result[ri] = mask_stack[ri_to_idx[ri]]
+
+    total_overlap_before = len(oys) if len(oys) > 0 else 0
+    remaining = np.sum((mask_stack > 0.3).astype(np.int32).sum(axis=0) >= 2)
+    print(f"    [Deconflict] {total_overlap_before} overlap pixels resolved, {remaining} remaining")
 
     return result
 
@@ -213,7 +247,6 @@ def refine_mask_with_depth(mask, depth_edges_data, depth_map,
 
     _, edges_binary = depth_edges_data
 
-    # Resize if needed
     H, W = mask.shape
     if edges_binary.shape[0] != H or edges_binary.shape[1] != W:
         edges_binary = cv2.resize(edges_binary.astype(np.uint8), (W, H),
@@ -224,14 +257,11 @@ def refine_mask_with_depth(mask, depth_edges_data, depth_map,
     if np.sum(mask > 0.5) < 50:
         return mask
 
-    # Carve at edges + regroup by depth
     carved = carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength)
 
-    # Fill gaps between edges
     if grow_pixels > 0:
         carved = grow_mask_between_edges(carved, edges_binary, grow_pixels)
 
-    # Morphological closing to smooth
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
     result = cv2.morphologyEx((carved * 255).astype(np.uint8), cv2.MORPH_CLOSE, kernel)
     return (result / 255.0).astype(np.float32)

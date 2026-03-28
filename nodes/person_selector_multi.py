@@ -524,17 +524,17 @@ class PersonSelectorMulti:
         # Cross-reference deconfliction: resolve overlapping masks per batch image
         if use_depth and num_refs >= 2:
             for mt in ("body", "head", "face"):
-                mask_key = mt
                 for b in range(batch_size):
                     overlap_dict = {}
                     for ri in range(num_refs):
-                        m = person_data_masks[mask_key][ri][b].cpu().numpy()
+                        m = person_data_masks[mt][ri][b].cpu().numpy()
                         if m.sum() > 0:
                             overlap_dict[ri] = m
                     if len(overlap_dict) >= 2:
-                        resolved = deconflict_masks(overlap_dict, depth_nps[b])
+                        eb = depth_edges_list[b][1] if b < len(depth_edges_list) else None
+                        resolved = deconflict_masks(overlap_dict, depth_nps[b], edges_binary=eb)
                         for ri, m in resolved.items():
-                            person_data_masks[mask_key][ri][b] = torch.from_numpy(m)
+                            person_data_masks[mt][ri][b] = torch.from_numpy(m)
 
         for b in range(batch_size):
             matches_for_image = [ri in batch_results[b]["assignments"] for ri in range(num_refs)]
