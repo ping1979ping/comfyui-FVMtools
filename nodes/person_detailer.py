@@ -218,6 +218,9 @@ class PersonDetailer:
                 generic_enabled, generic_catch_unprocessed, generic_lora, generic_lora_strength, generic_prompt,
                 positive_base=None, negative=None, dd_options=None, inpaint_options=None):
 
+        import time as _time
+        _t0 = _time.monotonic()
+
         batch_size = images.shape[0]
         inpaint_opts = inpaint_options or INPAINT_DEFAULTS
         has_aux = "aux_masks" in person_data
@@ -447,12 +450,13 @@ class PersonDetailer:
             results.append(current_image)
             all_summaries.append(img_summary)
 
+        _elapsed = int(_time.monotonic() - _t0)
         print(f"\n{'='*50}")
-        print(f"  Done! {batch_size} images, {len(refined_parts)} refinements.")
+        print(f"  Done! {batch_size} images, {len(refined_parts)} refinements in {_elapsed}s.")
         print(f"{'='*50}\n")
 
         # Build preview text from first batch image summary
-        preview_text = self._build_preview_text(all_summaries[0] if all_summaries else {}, batch_size, len(refined_parts))
+        preview_text = self._build_preview_text(all_summaries[0] if all_summaries else {}, batch_size, len(refined_parts), _elapsed)
 
         # Stack results
         output_images = torch.stack(results)  # [B, H, W, C]
@@ -480,10 +484,11 @@ class PersonDetailer:
         }
 
     @staticmethod
-    def _build_preview_text(summary, batch_size, num_refinements):
+    def _build_preview_text(summary, batch_size, num_refinements, elapsed_s=0):
         """Build a concise preview text from the per-image summary dict."""
+        time_suffix = f" | {elapsed_s}s" if elapsed_s > 0 else ""
         if not summary:
-            return f"{batch_size} img, {num_refinements} refined"
+            return f"{batch_size} img, {num_refinements} refined{time_suffix}"
 
         parts = []
         for label, info in summary.items():
@@ -509,4 +514,5 @@ class PersonDetailer:
             elif status == "empty":
                 parts.append(f"{label}: 0 faces")
 
-        return " | ".join(parts) if parts else f"{batch_size} img, {num_refinements} refined"
+        text = " | ".join(parts) if parts else f"{batch_size} img, {num_refinements} refined"
+        return f"{text}{time_suffix}"

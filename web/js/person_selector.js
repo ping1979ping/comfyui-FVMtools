@@ -35,7 +35,7 @@ app.registerExtension({
                 if (message && message.text && message.text.length > 0) {
                     const parts = message.text[0].split("|");
                     this._psValues = {
-                        similarity: parseFloat(parts[0]).toFixed(4),
+                        similarity: parts[0],
                         face_count: parts[1],
                         matched_face_index: parseInt(parts[2]) >= 0 ? parts[2] : "-",
                     };
@@ -141,17 +141,17 @@ app.registerExtension({
             nodeType.prototype.onExecuted = function (message) {
                 const r = onExecutedMulti ? onExecutedMulti.apply(this, arguments) : undefined;
                 if (message && message.text && message.text.length > 0) {
-                    const parts = message.text[0].split("|");
+                    // Format: "matched_per_img§faces_per_img§sim1, sim2"
+                    // e.g. "2|1§4|3§72%, 85%" (batch=2: matched 2,1 / faces 4,3)
+                    const sections = message.text[0].split("§");
                     this._psmValues = {
-                        matched_count: parts[0],
-                        face_count: parts[1],
-                        similarities: parts.slice(2).join("|"),
+                        matched_count: sections[0] || "0",
+                        face_count: sections[1] || "0",
+                        similarities: sections[2] || "",
                     };
-                    // Output indices: person_data(0), face/head/body(1-3), combined(4-6),
-                    // aux_masks(7), preview(8), similarities(9), matches(10), matched_count(11), face_count(12), report(13)
-                    if (this.outputs[11]) this.outputs[11]["label"] = " ";  // matched_count
-                    if (this.outputs[12]) this.outputs[12]["label"] = " ";  // face_count
-                    if (this.outputs[9]) this.outputs[9]["label"] = " ";   // similarities
+                    if (this.outputs[11]) this.outputs[11]["label"] = " ";
+                    if (this.outputs[12]) this.outputs[12]["label"] = " ";
+                    if (this.outputs[9]) this.outputs[9]["label"] = " ";
                     this.setDirtyCanvas(true);
                 }
                 return r;

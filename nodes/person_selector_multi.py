@@ -367,6 +367,8 @@ class PersonSelectorMulti:
                 detect_threshold=0.3, detect_dilation=10, detect_crop_factor=3.0,
                 match_weights="60/20/20",
                 segs=None, bbox_detector=None, segm_detector=None, **kwargs):
+        import time as _time
+        _t0 = _time.monotonic()
         det_size_int = int(det_size)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -551,6 +553,7 @@ class PersonSelectorMulti:
         # Report: per batch item
         sim_values = []
         match_values = []
+        _elapsed = int(_time.monotonic() - _t0)
         weight_str = f"face {w_face:.0%} / hair {w_hair:.0%} / head {w_head:.0%}" if use_appearance else "face only"
         report_lines = [
             f"Batch size: {batch_size}",
@@ -559,35 +562,42 @@ class PersonSelectorMulti:
             f"Threshold: {'Auto' if auto_threshold else threshold} | Aggregation: {aggregation}",
             f"Match weights: {weight_str}",
             f"Matched (total): {total_matched}",
+            f"Runtime: {_elapsed}s",
             "",
         ]
 
+        matched_per_image = []
+        faces_per_image = []
         for b in range(batch_size):
             br = batch_results[b]
+            matched_per_image.append(str(len(br["assignments"])))
+            faces_per_image.append(str(br["face_count"]))
             report_lines.append(f"  [Image {b+1}/{batch_size}] {br['face_count']} faces, {len(br['assignments'])} matched")
             for ri in range(num_refs):
                 if ri in br["assignments"]:
                     fi, sim = br["assignments"][ri]
                     if b == 0:
-                        sim_values.append(f"{sim:.4f}")
+                        sim_values.append(f"{round(sim * 100)}%")
                         match_values.append("true")
-                    report_lines.append(f"    ref {ri+1}: MATCH face #{fi} (sim {sim:.4f})")
+                    report_lines.append(f"    ref {ri+1}: MATCH face #{fi} (sim {round(sim * 100)}%)")
                 else:
                     if b == 0:
                         has_embs = len(ref_emb_sets[ri]) > 0
                         if has_embs and br["face_count"] > 0:
                             best_sim = float(np.max(br["sim_matrix"][ri]))
-                            sim_values.append(f"{best_sim:.4f}")
+                            sim_values.append(f"{round(best_sim * 100)}%")
                         else:
-                            sim_values.append("0.0000")
+                            sim_values.append("0%")
                         match_values.append("false")
                     report_lines.append(f"    ref {ri+1}: no match")
 
         similarities_str = ", ".join(sim_values)
         matches_str = ", ".join(match_values)
+        matched_faces_str = "|".join(matched_per_image)
+        faces_count_str = "|".join(faces_per_image)
         report = "\n".join(report_lines)
 
-        ui_text = f"{total_matched}|{total_faces}|{similarities_str}"
+        ui_text = f"{matched_faces_str}§{faces_count_str}§{similarities_str}"
 
         return {
             "ui": {"text": [ui_text]},

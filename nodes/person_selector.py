@@ -141,7 +141,7 @@ class PersonSelector:
         report_lines = [
             f"Faces in current image: {face_count}",
             f"Reference embeddings: {len(ref_embs)} (from {ref_count} images)",
-            f"Best match: face #{face_idx} with similarity {similarity:.4f}",
+            f"Best match: face #{face_idx} with similarity {round(similarity * 100)}%",
             f"Threshold: {threshold} | Aggregation: {aggregation}",
             f"Match: {'YES' if is_match else 'NO'}",
             f"Mask mode: {mask_mode}",
@@ -149,6 +149,6 @@ class PersonSelector:
         report = "\n".join(report_lines)
 
         return {
-            "ui": {"text": [f"{similarity:.4f}|{face_count}|{face_idx}"]},
+            "ui": {"text": [f"{round(similarity * 100)}%|{face_count}|{face_idx}"]},
             "result": (similarity, is_match, mask, best_reference, face_count, face_idx, report),
         }
