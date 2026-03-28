@@ -274,9 +274,12 @@ class MaskGenerator:
                            other_faces=None, head_mask=None) -> np.ndarray:
         """Generate body mask using SAM with positive and negative prompts.
 
+        Negative prompts at other face centers help SAM exclude other persons.
+        Selects the largest mask that contains the target face center.
+
         Args:
-            other_faces: list of other detected face objects — used as negative SAM prompts
-            head_mask: optional [H,W] float32 head mask for better candidate selection
+            other_faces: list of other detected face objects — centers become negative SAM prompts
+            head_mask: unused (kept for API compat)
         """
         h, w = image_rgb.shape[:2]
 
@@ -293,14 +296,14 @@ class MaskGenerator:
             result_masks = predictor.predict(image_rgb, points, plabs, sam_bbox, 0.3)
 
             if result_masks is not None and len(result_masks) > 0:
-                # Compute face/head center for scoring
                 fx1, fy1, fx2, fy2 = [int(v) for v in face.bbox]
-                face_cx = (fx1 + fx2) / 2
-                face_cy = (fy1 + fy2) / 2
+                face_cx = int((fx1 + fx2) / 2)
+                face_cy = int((fy1 + fy2) / 2)
                 face_area = (fx2 - fx1) * (fy2 - fy1)
-                max_body_area = face_area * 40  # body can't be more than 40x face area
 
-                candidates = []
+                # Select largest mask that contains the face center
+                best_mask = None
+                best_area = 0
                 for m in result_masks:
                     if isinstance(m, torch.Tensor):
                         m = m.cpu().numpy()
@@ -309,47 +312,30 @@ class MaskGenerator:
                         m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
                     area = np.sum(m > 0.5)
                     if area < face_area * 0.5:
-                        continue  # too small
-                    candidates.append((m, area))
-
-                if not candidates:
-                    print("[FVMTools] SAM: no valid candidates, using bbox fallback")
-                    return cls.generate_body_bbox_fallback((h, w), face)
-
-                # Score candidates: prefer mask that contains face, has reasonable size,
-                # and best overlaps with head_mask if available
-                best_mask = None
-                best_score = -1
-                for m, area in candidates:
-                    # Must contain the face center
-                    if m[int(face_cy), int(face_cx)] < 0.5:
                         continue
-
-                    # Size penalty: prefer smaller masks (less likely to include others)
-                    size_score = 1.0 - min(area / max_body_area, 1.0) if area <= max_body_area else 0.0
-
-                    # Head overlap bonus
-                    head_score = 0.0
-                    if head_mask is not None:
-                        head_pixels = np.sum(head_mask > 0.5)
-                        if head_pixels > 0:
-                            overlap = np.sum((m > 0.5) & (head_mask > 0.5))
-                            head_score = overlap / head_pixels  # 1.0 = mask fully contains head
-
-                    score = size_score * 0.4 + head_score * 0.6 + 0.01  # small base score
-                    if score > best_score:
-                        best_score = score
+                    # Must contain face center
+                    if m[min(face_cy, h - 1), min(face_cx, w - 1)] < 0.5:
+                        continue
+                    if area > best_area:
+                        best_area = area
                         best_mask = m
 
                 if best_mask is not None:
                     return best_mask
 
-                # Fallback: smallest candidate that contains face
-                for m, area in sorted(candidates, key=lambda x: x[1]):
-                    if m[int(face_cy), int(face_cx)] > 0.5:
-                        return m
-
-                return candidates[0][0]
+                # Fallback: largest overall
+                for m in result_masks:
+                    if isinstance(m, torch.Tensor):
+                        m = m.cpu().numpy()
+                    m = m.squeeze().astype(np.float32)
+                    if m.shape != (h, w):
+                        m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
+                    area = np.sum(m > 0.5)
+                    if area > best_area:
+                        best_area = area
+                        best_mask = m
+                if best_mask is not None:
+                    return best_mask
 
             print("[FVMTools] SAM returned no masks, using body bbox fallback")
             return cls.generate_body_bbox_fallback((h, w), face)
