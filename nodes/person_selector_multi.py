@@ -109,11 +109,12 @@ class PersonSelectorMulti:
                                                     "tooltip": "How strongly depth edges cut masks. 0=off, 1=full cut."}),
                 "depth_grow_pixels": ("INT", {"default": 30, "min": 0, "max": 200, "step": 5,
                                                "tooltip": "Gap filling between depth edges. 0 = no growing."}),
-                "body_mask_mode": (["auto", "seed_grow", "sam"], {"default": "auto",
+                "body_mask_mode": (["auto", "detector", "seed_grow", "sam"], {"default": "auto",
                                     "tooltip": "Body mask strategy:\n"
-                                               "- seed_grow: BiSeNet labels as seed, grow to image/depth edges (best for multi-person)\n"
-                                               "- sam: legacy SAM-based body segmentation\n"
-                                               "- auto: seed_grow with SAM fallback if seed is too small"}),
+                                               "- auto: uses detector if connected, else seed_grow (recommended)\n"
+                                               "- detector: SEGS from connected segm/bbox detector as body mask (fastest, best separation)\n"
+                                               "- seed_grow: BiSeNet + SAM seed, carved by image/depth edges\n"
+                                               "- sam: legacy SAM-only body segmentation"}),
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
@@ -505,8 +506,14 @@ class PersonSelectorMulti:
                 depth_edges_list.append(compute_depth_edges(dnp, depth_edge_threshold))
             print(f"[PersonSelectorMulti] Depth: edge_thr={depth_edge_threshold}, carve={depth_carve_strength}, grow={depth_grow_pixels}")
 
+        # Resolve auto body_mask_mode: detector if connected, else seed_grow
+        has_detector = segs is not None or bbox_detector is not None or segm_detector is not None
+        effective_body_mode = body_mask_mode
+        if body_mask_mode == "auto":
+            effective_body_mode = "detector" if has_detector else "seed_grow"
         print(f"[PersonSelectorMulti] batch_size={batch_size}, refs={num_refs}, "
-              f"auto_threshold={auto_threshold}, effective={effective_threshold}")
+              f"auto_threshold={auto_threshold}, effective={effective_threshold}, "
+              f"body_mode={effective_body_mode}" + (" (auto)" if body_mask_mode == "auto" else ""))
 
         # Process each image in the batch
         batch_results = []
@@ -522,7 +529,7 @@ class PersonSelectorMulti:
                 depth_np=depth_nps[b] if use_depth else None,
                 depth_carve_strength=depth_carve_strength,
                 depth_grow=depth_grow_pixels,
-                body_mask_mode=body_mask_mode,
+                body_mask_mode=effective_body_mode,
             )
             batch_results.append(result)
 

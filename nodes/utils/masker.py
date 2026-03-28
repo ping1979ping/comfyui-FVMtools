@@ -66,8 +66,10 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         depth_np: optional (H, W) float32 depth map [0,1]
         depth_carve_strength: how strongly depth edges cut masks (0=off, 1=full)
         depth_grow: max gap fill pixels between edges
-        body_mask_mode: "seed_grow" (BiSeNet seed + edge barrier), "sam" (legacy SAM),
-                        "auto" (seed_grow, fallback to SAM if seed too small)
+        body_mask_mode: "detector" (skip SAM, use SEGS from connected detector),
+                        "seed_grow" (BiSeNet seed + SAM + edge carving),
+                        "sam" (legacy SAM only),
+                        "auto" (detector if connected, else seed_grow)
 
     Returns:
         dict {mask_type: torch.Tensor [1, H, W]} for all 9 types in ALL_MASK_TYPES
@@ -95,40 +97,32 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
 
     # Body mask generation
     h, w = cur_rgb.shape[:2]
-    head_mask_np = masks["head"][0].cpu().numpy() if "head" in masks else None
 
-    if body_mask_mode in ("seed_grow", "auto"):
-        # Hybrid approach: BiSeNet head + SAM body as combined seed, then edge-trim
-        # 1. BiSeNet seed (head + cloth + all person labels)
+    if body_mask_mode == "detector":
+        # Detector mode: BiSeNet-only placeholder, SEGS upgrade happens later in execute()
+        body_mask_np = (label_map > 0).astype(np.float32)
+        print(f"    body: detector (placeholder {int(np.sum(body_mask_np > 0.5))}px, awaiting SEGS)")
+
+    elif body_mask_mode == "seed_grow":
+        # Hybrid: BiSeNet + SAM seed, carved by image/depth edges
         bisenet_seed = (label_map > 0).astype(np.float32)
-
-        # 2. SAM body mask (rough but covers full body)
-        sam_body = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model,
-                                                     other_faces=other_faces)
+        sam_body = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
         sam_body = clean_mask_crumbs(sam_body, min_area_fraction=0.005)
-
-        # 3. Combine: union of BiSeNet person labels + SAM body
         combined_seed = np.maximum(bisenet_seed, sam_body)
         seed_area = int(np.sum(combined_seed > 0.5))
 
-        # 4. Compute image edges as barrier (blur first to reduce texture noise)
-        image_gray = cv2.cvtColor(cur_rgb, cv2.COLOR_RGB2GRAY)
-        image_gray = cv2.GaussianBlur(image_gray, (5, 5), 0)
-        image_edges = cv2.Canny(image_gray, 80, 200)
-        image_edges_binary = (image_edges > 0)
+        image_gray = cv2.GaussianBlur(cv2.cvtColor(cur_rgb, cv2.COLOR_RGB2GRAY), (5, 5), 0)
+        image_edges_binary = (cv2.Canny(image_gray, 80, 200) > 0)
 
-        # 5. Combine with depth edges if available
         if use_depth:
             _, depth_edges_binary = depth_edges_data
             if depth_edges_binary.shape != image_edges_binary.shape:
-                depth_edges_binary = cv2.resize(
-                    depth_edges_binary.astype(np.uint8), (w, h),
-                    interpolation=cv2.INTER_NEAREST).astype(bool)
+                depth_edges_binary = cv2.resize(depth_edges_binary.astype(np.uint8), (w, h),
+                                                interpolation=cv2.INTER_NEAREST).astype(bool)
             barrier = image_edges_binary | depth_edges_binary
         else:
             barrier = image_edges_binary
 
-        # 6. Carve the combined seed at edges — cuts along body contour
         from .depth_refine import carve_mask_at_depth_edges
         if use_depth:
             body_mask_np = carve_mask_at_depth_edges(combined_seed, barrier, depth_np,
@@ -142,30 +136,25 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
                 if np.sum(comp & (bisenet_seed > 0.5)) > 0 or stats[lid, cv2.CC_STAT_AREA] > 500:
                     body_mask_np[comp] = 1.0
 
-        # 7. Grow to fill small gaps between edges
         grow_px = max(depth_grow, 25)
         body_mask_np = grow_mask_between_edges(body_mask_np, barrier, max_pixels=grow_px)
 
-        # 8. Fill internal holes (between legs, arm-body gaps) via contour fill
+        # Contour fill for internal holes
         body_uint8 = (body_mask_np * 255).astype(np.uint8)
         contours, _ = cv2.findContours(body_uint8, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         filled = np.zeros_like(body_uint8)
         cv2.drawContours(filled, contours, -1, 255, cv2.FILLED)
         body_mask_np = (filled / 255.0).astype(np.float32)
 
-        # 9. Final smoothing + cleanup
         smooth_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11, 11))
-        body_smooth = cv2.morphologyEx((body_mask_np * 255).astype(np.uint8), cv2.MORPH_CLOSE, smooth_kernel)
-        body_mask_np = (body_smooth / 255.0).astype(np.float32)
+        body_mask_np = cv2.morphologyEx((body_mask_np * 255).astype(np.uint8),
+                                         cv2.MORPH_CLOSE, smooth_kernel).astype(np.float32) / 255.0
         body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.003)
-
-        result_area = int(np.sum(body_mask_np > 0.5))
-        print(f"    body: hybrid (bisenet+sam={seed_area}px → carved={result_area}px)")
+        print(f"    body: hybrid (bisenet+sam={seed_area}px → carved={int(np.sum(body_mask_np > 0.5))}px)")
 
     else:
         # Pure SAM mode
-        body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model,
-                                                         other_faces=other_faces)
+        body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
         body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.005)
         if use_depth:
             body_mask_np = refine_mask_with_depth(body_mask_np, depth_edges_data, depth_np,
