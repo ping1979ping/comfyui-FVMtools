@@ -10,6 +10,7 @@ from .utils.mask_utils import is_mask_empty, split_mask_to_components
 from .utils.inpaint_pipeline import inpaint_slot
 from .utils.detail_daemon import DD_DEFAULTS
 from .utils.lora_utils import is_z_image_turbo, needs_qkv_conversion, convert_qkv_lora
+from .utils.lora_cache import _LoraFileCache
 
 
 # Default inpaint options (used when InpaintOptions node is not connected)
@@ -118,6 +119,9 @@ class PersonDetailer:
                 "dd_options": ("DD_OPTIONS", {"tooltip": "Advanced Detail Daemon parameters from Detail Daemon Options node"}),
                 "inpaint_options": ("INPAINT_OPTIONS", {"tooltip": "Advanced inpaint settings and per-slot overrides from Inpaint Options node"}),
             },
+            "hidden": {
+                "unique_id": "UNIQUE_ID",
+            },
         }
 
     def _get_slot_config(self, slot_key, inpaint_options):
@@ -146,7 +150,7 @@ class PersonDetailer:
         if lora_name == "None" or strength == 0:
             return model, clip
         lora_path = folder_paths.get_full_path_or_raise("loras", lora_name)
-        lora = comfy.utils.load_torch_file(lora_path, safe_load=True)
+        lora = _LoraFileCache.get(lora_path, safe_load=True)
 
         # Auto-convert for Z-Image Turbo (Lumina2) if LoRA has separate Q/K/V
         if is_z_image_turbo(model) and needs_qkv_conversion(lora):
@@ -169,12 +173,16 @@ class PersonDetailer:
                       seed, steps, denoise, sampler_name, scheduler,
                       detail_daemon_enabled, detail_amount, dd_smooth, dd_options,
                       mask_blend_pixels, mask_expand_pixels, target_width, target_height,
-                      inpaint_opts):
+                      inpaint_opts, cached_model=None, cached_cond=None):
         """Inpaint a single mask region. Returns (stitched_image, refined_crop_or_None)."""
-        patched_model, patched_clip = self._apply_lora(
-            model, clip, slot["lora"], slot["lora_strength"]
-        )
-        positive_cond = self._prepare_conditioning(clip, patched_clip, slot["prompt"], positive_base)
+        if cached_model is not None and cached_cond is not None:
+            patched_model = cached_model.clone()
+            positive_cond = cached_cond
+        else:
+            patched_model, patched_clip = self._apply_lora(
+                model, clip, slot["lora"], slot["lora_strength"]
+            )
+            positive_cond = self._prepare_conditioning(clip, patched_clip, slot["prompt"], positive_base)
         slot_dd_enabled = detail_daemon_enabled and slot["use_dd"]
 
         stitched, refined = inpaint_slot(
@@ -216,10 +224,20 @@ class PersonDetailer:
                 reference_4_enabled, reference_4_lora, reference_4_lora_strength, reference_4_prompt,
                 reference_5_enabled, reference_5_lora, reference_5_lora_strength, reference_5_prompt,
                 generic_enabled, generic_catch_unprocessed, generic_lora, generic_lora_strength, generic_prompt,
-                positive_base=None, negative=None, dd_options=None, inpaint_options=None):
+                positive_base=None, negative=None, dd_options=None, inpaint_options=None, unique_id=None):
 
         import time as _time
         _t0 = _time.monotonic()
+
+        # Live progress helper
+        def _send_progress(text):
+            if unique_id is None:
+                return
+            try:
+                from server import PromptServer
+                PromptServer.instance.send_progress_text(text, unique_id)
+            except Exception:
+                pass
 
         batch_size = images.shape[0]
         inpaint_opts = inpaint_options or INPAINT_DEFAULTS
@@ -280,6 +298,27 @@ class PersonDetailer:
             inpaint_opts=inpaint_opts,
         )
 
+        # ── Pre-cache LoRA + conditioning per unique slot config ────────────
+        slot_cache = {}
+        all_slot_configs = list(slots)
+        if generic_enabled:
+            all_slot_configs.append({
+                "lora": generic_lora, "lora_strength": generic_lora_strength,
+                "prompt": generic_prompt, "label": "Generic (pre-cache)",
+            })
+        for sc in all_slot_configs:
+            cache_key = (sc["lora"], sc["lora_strength"], sc["prompt"])
+            if cache_key in slot_cache:
+                continue
+            patched_model, patched_clip = self._apply_lora(
+                model, clip, sc["lora"], sc["lora_strength"]
+            )
+            positive_cond = self._prepare_conditioning(
+                clip, patched_clip, sc["prompt"], positive_base
+            )
+            slot_cache[cache_key] = {"model": patched_model, "cond": positive_cond}
+            print(f"    Cached: {sc.get('label', '?')} — lora={str(sc['lora'])[:30]}, prompt={'yes' if sc['prompt'].strip() else 'base'}")
+
         for b in range(batch_size):
             current_image = images[b]  # [H, W, C]
             img_summary = {}
@@ -333,14 +372,18 @@ class PersonDetailer:
                         part_count = person_data["aux_part_counts"][b].get(ri, 0)
                     print(f"    {slot['label']} — aux: {part_count} body part(s), detailing merged mask...")
 
+                    cached = slot_cache.get((slot["lora"], slot["lora_strength"], slot["prompt"]))
                     stitched, refined = self._inpaint_mask(
-                        current_image, aux_mask, slot, **inpaint_kwargs)
+                        current_image, aux_mask, slot, **inpaint_kwargs,
+                        cached_model=cached["model"] if cached else None,
+                        cached_cond=cached["cond"] if cached else None)
                     current_image = stitched
                     if refined is not None:
                         refined_parts.append(refined)
                         refined_ref_parts.append(refined)
 
                     img_summary[slot["label"]] = {"status": "ok", "mask_type": "aux", "parts": part_count}
+                    _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts)))
 
                 else:
                     # Standard mask-based detailing (face/head/body/hair/etc.)
@@ -354,16 +397,21 @@ class PersonDetailer:
 
                     print(f"    {slot['label']} — {mask_type} detailing...")
 
+                    cached = slot_cache.get((slot["lora"], slot["lora_strength"], slot["prompt"]))
                     stitched, refined = self._inpaint_mask(
-                        current_image, mask, slot, **inpaint_kwargs)
+                        current_image, mask, slot, **inpaint_kwargs,
+                        cached_model=cached["model"] if cached else None,
+                        cached_cond=cached["cond"] if cached else None)
                     current_image = stitched
                     if refined is not None:
                         refined_parts.append(refined)
                         refined_ref_parts.append(refined)
 
                     img_summary[slot["label"]] = {"status": "ok", "mask_type": mask_type}
+                    _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts)))
 
             # Generic slot: unmatched/unprocessed faces or body parts
+            gen_cached = slot_cache.get((generic_lora, generic_lora_strength, generic_prompt))
             if generic_enabled:
                 if generic_mask_type == "aux":
                     # Generic aux: detail unassigned body parts from PERSON_DATA
@@ -379,12 +427,15 @@ class PersonDetailer:
                                 "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "rounds": generic_cfg.get("rounds", 1),
                             }
                             stitched, refined = self._inpaint_mask(
-                                current_image, unassigned_mask[b], generic_slot, **inpaint_kwargs)
+                                current_image, unassigned_mask[b], generic_slot, **inpaint_kwargs,
+                                cached_model=gen_cached["model"] if gen_cached else None,
+                                cached_cond=gen_cached["cond"] if gen_cached else None)
                             current_image = stitched
                             if refined is not None:
                                 refined_parts.append(refined)
                                 refined_gen_parts.append(refined)
                             img_summary["Generic"] = {"status": "ok", "mask_type": "aux", "parts": 1}
+                            _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts)))
                         else:
                             print(f"    Generic — aux: no unassigned body parts")
                             img_summary["Generic"] = {"status": "no parts", "mask_type": "aux", "parts": 0}
@@ -418,13 +469,16 @@ class PersonDetailer:
                             face_count += 1
                             print(f"    Generic — face #{fi+1} ({generic_mask_type}) detailing...")
                             stitched, refined = self._inpaint_mask(
-                                current_image, mask, generic_slot, **inpaint_kwargs)
+                                current_image, mask, generic_slot, **inpaint_kwargs,
+                                cached_model=gen_cached["model"] if gen_cached else None,
+                                cached_cond=gen_cached["cond"] if gen_cached else None)
                             current_image = stitched
                             if refined is not None:
                                 refined_parts.append(refined)
                                 refined_gen_parts.append(refined)
                         if face_count > 0:
                             img_summary["Generic"] = {"status": "ok", "mask_type": generic_mask_type, "faces": face_count}
+                            _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts)))
                         else:
                             print(f"    Generic — no unmatched faces")
                             img_summary["Generic"] = {"status": "empty", "mask_type": generic_mask_type, "faces": 0}
@@ -453,12 +507,15 @@ class PersonDetailer:
                             }
                             for comp_mask in components:
                                 stitched, refined = self._inpaint_mask(
-                                    current_image, comp_mask, generic_slot, **inpaint_kwargs)
+                                    current_image, comp_mask, generic_slot, **inpaint_kwargs,
+                                    cached_model=gen_cached["model"] if gen_cached else None,
+                                    cached_cond=gen_cached["cond"] if gen_cached else None)
                                 current_image = stitched
                                 if refined is not None:
                                     refined_parts.append(refined)
                                     refined_gen_parts.append(refined)
                             img_summary["Generic"] = {"status": "ok", "mask_type": generic_mask_type, "faces": len(components)}
+                            _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts)))
                         else:
                             print(f"    Generic — no unmatched faces")
                             img_summary["Generic"] = {"status": "empty", "mask_type": generic_mask_type, "faces": 0}

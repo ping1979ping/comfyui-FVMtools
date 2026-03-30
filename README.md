@@ -5,12 +5,15 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
 ## Features at a Glance
 
 - **Multi-person face matching** — ArcFace embeddings with exclusive 1:1 assignment across up to 10 reference slots
-- **Appearance-enhanced matching** — Combine face identity with hair color and head appearance for better disambiguation when faces look similar ([details](documentation/MATCHING_GUIDE.md))
+- **Appearance-enhanced matching** — Combine face identity with hair color, head appearance, and outfit colors for better disambiguation when faces look similar ([details](documentation/MATCHING_GUIDE.md))
 - **Per-person LoRA inpainting** — 5 reference slots + 1 generic catch-all, each with its own LoRA, prompt, and mask type
+- **LoRA file caching** — LRU cache (6 slots) avoids repeated disk reads across nodes and sessions; slot pre-caching computes each unique LoRA+prompt combination only once per batch run
 - **9 mask types** — face, head, body, hair, facial skin, eyes, mouth, neck, accessories (all from a single BiSeNet run)
-- **Depth-guided mask refinement** — edge carving, cross-reference deconfliction, and back-to-front rendering order via depth map
+- **Depth-guided mask refinement** — edge carving, cross-reference deconfliction, and back-to-front rendering order via depth map (85th percentile depth for accurate limb handling)
 - **Instance-level body masks** — connect a segm_detector for non-overlapping per-person body masks (replaces SAM)
 - **Person Data Refiner** — regenerate masks at hi-res after upscaling, preserving face-to-reference assignments
+- **Adaptive ControlNet strength** — automatic strength scaling based on denoise level prevents pose/depth artifacts at high denoise values (PersonDetailerControlNet)
+- **Pose map smoothing** — Gaussian blur on skeleton maps prevents hard edge artifacts bleeding into output
 - **Detail Daemon integration** — sigma curve manipulation for detail-preserving inpainting
 - **Z-Image Turbo auto-detection** — automatic LoRA QKV conversion for Lumina2 models
 - **Color palette generation** — 7 harmony types, 14 style presets, 161 named colors
@@ -30,6 +33,7 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
   - [Person Selector (Match)](#1-person-selector-match)
   - [Person Selector Multi](#2-person-selector-multi)
   - [Person Detailer](#3-person-detailer)
+  - [Person Detailer ControlNet](#3b-person-detailer-controlnet)
   - [Person Data Refiner](#4-person-data-refiner)
   - [Detail Daemon Options](#5-detail-daemon-options)
   - [Inpaint Options](#6-inpaint-options)
@@ -273,7 +277,9 @@ Performs single-reference face matching using InsightFace ArcFace embeddings. Co
 
 Multi-reference batch face matching node that outputs `PERSON_DATA` for use with Person Detailer. Supports up to 10 reference slots with exclusive face assignment -- each detected face matches at most one reference, preventing duplicate assignments. Generates face, head, body, and auxiliary masks for all detected persons.
 
-Supports **appearance-enhanced matching**: blends face identity (ArcFace) with hair color (BiSeNet) and head appearance (HSV histogram) for better disambiguation when faces look similar. See the [Matching Guide](documentation/MATCHING_GUIDE.md) for details and tuning tips.
+Supports **appearance-enhanced matching**: blends face identity (ArcFace) with hair color (BiSeNet) and head appearance (HSV histogram) for better disambiguation when faces look similar. **Outfit matching** uses palette color distribution with primary/secondary weighting (first two colors weighted 3x/2x). See the [Matching Guide](documentation/MATCHING_GUIDE.md) for details and tuning tips.
+
+**Preview overlay:** When `outfit_palettes` is connected, a miniature palette swatch is shown above each matched face in the preview for visual verification of the color assignment. Render order is always displayed (uses depth map when available, Y-position fallback otherwise).
 
 **Body mask modes:** When a `segm_detector` is connected (recommended), instance-level person segments are used as body masks -- these are non-overlapping by design and much more accurate than SAM for multi-person scenes. The `body_mask_mode` parameter controls the strategy (`auto` selects the best available).
 
@@ -295,7 +301,7 @@ Supports **appearance-enhanced matching**: blends face identity (ArcFace) with h
 | `detect_threshold` | FLOAT | 0.30 | Detection confidence threshold |
 | `detect_dilation` | INT | 10 | Mask dilation in pixels |
 | `detect_crop_factor` | FLOAT | 3.0 | Crop factor for face region extraction |
-| `match_weights` | STRING | 60/20/20 | Matching weight blend: face/hair/head. Controls how much each signal contributes. `100/0/0` = pure face matching. See [Matching Guide](documentation/MATCHING_GUIDE.md). |
+| `match_weights` | STRING | 50/15/15/20 | Matching weight blend: face/hair/head/outfit. Controls how much each signal contributes. `100/0/0/0` = pure face matching. `60/20/20/0` = no outfit. 3 values also work (outfit=0). See [Matching Guide](documentation/MATCHING_GUIDE.md). |
 | `reference_1` | IMAGE | -- | First reference image (required) |
 | `reference_2` -- `reference_10` | IMAGE | -- | Additional reference images (optional) |
 
@@ -312,6 +318,7 @@ Supports **appearance-enhanced matching**: blends face identity (ArcFace) with h
 | `depth_grow_pixels` | INT | Gap filling between depth edges (default: 30, 0=off) |
 | `body_mask_mode` | COMBO | Body mask strategy: `auto` (detector if connected, else seed_grow), `detector`, `seed_grow`, `sam` |
 | `depth_sort_order` | COMBO | Rendering order: `front_last` (bright=near, default), `front_first` (inverted depth), `off` |
+| `outfit_palettes` | IMAGE | Batch of palette preview images (one per reference). Enables outfit color matching and palette overlay in preview. Primary/secondary colors (first two blocks) are weighted 3x/2x for better matching. |
 
 #### Outputs
 
@@ -339,6 +346,8 @@ Supports **appearance-enhanced matching**: blends face identity (ArcFace) with h
 **Display name:** Person Detailer
 
 Per-person LoRA-based inpainting pipeline with 5 reference slots plus a generic catch-all slot. Each slot can have its own LoRA, prompt, and mask type. Processing is sequential: each slot inpaints into the result of the previous slot, building up the final image progressively.
+
+**Performance:** LoRA files are cached in a module-level LRU cache (6 entries) to avoid repeated disk reads across batch images and chained nodes. Before the batch loop, all unique (LoRA, strength, prompt) combinations are pre-computed once and reused for every mask — so 5 persons with the same LoRA only trigger 1 load + 1 conditioning encode.
 
 The generic slot can optionally catch unprocessed faces (those not matched by any reference slot), applying a general-purpose LoRA and prompt to all remaining faces.
 
@@ -405,6 +414,48 @@ The generic slot can optionally catch unprocessed faces (those not matched by an
 
 ---
 
+### 3b. Person Detailer ControlNet
+
+**Display name:** Person Detailer ControlNet
+
+Extended version of Person Detailer with integrated ControlNet support for depth and pose guidance during inpainting. Automatically generates depth maps or pose maps from cropped regions and applies them as ControlNet conditioning.
+
+All Person Detailer features (5 reference slots, generic slot, LoRA caching, slot pre-caching, progressive refinement) are included.
+
+#### Additional Inputs (beyond Person Detailer)
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+| `control_type` | COMBO | depth | ControlNet type: `depth`, `pose` |
+| `control_strength` | FLOAT | 0.50 | Base ControlNet strength (auto-scaled by denoise) |
+| `cn_resolution` | INT | 512 | Resolution for ControlNet preprocessing |
+
+**Optional inputs:**
+
+| Name | Type | Description |
+|------|------|-------------|
+| `depth_model` | STRING | Depth model checkpoint (for depth mode) |
+
+#### Adaptive Strength Scaling
+
+ControlNet strength is automatically scaled down when denoise is high to prevent pose/depth artifacts accumulating across many sampling steps:
+
+```
+effective_strength = control_strength * (1.0 - denoise * 0.5)
+```
+
+For example, with `control_strength=0.50` and `denoise=0.52`: effective strength is `0.50 * 0.74 = 0.37`. The console shows the scaling: `depth s=0.50->0.37`.
+
+#### Pose Map Smoothing
+
+When using `pose` control type, skeleton lines are smoothed with a Gaussian blur to prevent hard edges from bleeding into the output as visible artifacts. The blur kernel scales with resolution (`ksize = max(3, (resolution // 64) * 2 + 1)`).
+
+#### Outputs
+
+Same as Person Detailer.
+
+---
+
 ### 4. Person Data Refiner
 
 **Display name:** Person Data Refiner
@@ -447,7 +498,7 @@ When a `depth_map` is connected, the system uses depth information in three ways
 1. **Edge carving** -- Sobel edge detection on the depth map finds depth discontinuities (object boundaries). Masks are cut along these edges, then components with matching person-depth are regrouped. This handles occlusion (e.g. a pole in front of a person creates two mask parts that are both kept).
 2. **Gap filling** -- iteratively grows masks between edges without crossing them. Contour-based hole filling closes internal gaps (between legs, arm-body gaps).
 3. **Cross-reference deconfliction** -- where masks of different persons overlap, the pixel is assigned to the person with the closest depth. BiSeNet identity seeds get priority over SAM-derived areas.
-4. **Rendering order** -- Person Detailer renders persons back-to-front based on depth, so foreground persons correctly overlap background ones. Controlled by `depth_sort_order`.
+4. **Rendering order** -- Person Detailer renders persons back-to-front based on depth (85th percentile of body mask depth values, so limbs reaching toward the camera correctly pull the depth forward), so foreground persons correctly overlap background ones. Controlled by `depth_sort_order`.
 
 **Body mask modes** (`body_mask_mode`):
 

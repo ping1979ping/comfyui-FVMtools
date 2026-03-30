@@ -196,9 +196,21 @@ def process(images, person_data, model, clip, vae, negative, **kwargs):
     total_steps = batch_size * count_active_slots()
     current_step = 0
     
+    # === PRE-CACHE: compute LoRA + conditioning once per unique config ===
+    slot_cache = {}
+    for slot in all_active_slots:
+        cache_key = (slot.lora, slot.lora_strength, slot.prompt)
+        if cache_key not in slot_cache:
+            patched_model, patched_clip = load_lora(model, clip, slot.lora, slot.lora_strength)
+            positive_cond = clip_encode(patched_clip, slot.prompt) if slot.prompt else positive_base
+            slot_cache[cache_key] = (patched_model, positive_cond)
+
+    # LoRA files are also cached at the module level via _LoraFileCache (LRU, 6 entries)
+    # to avoid repeated disk reads across batch images and chained nodes.
+
     for batch_idx in range(batch_size):
         current_image = images[batch_idx]  # [H, W, C]
-        
+
         # === REFERENZ-SLOTS 1-5 (sequentiell) ===
         for slot_idx in range(5):
             if not slot_enabled(slot_idx):

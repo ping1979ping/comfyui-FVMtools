@@ -12,7 +12,9 @@ from .utils.appearance import (
     extract_hair_color,
     extract_head_histogram,
     extract_palette_histogram,
+    extract_palette_colors,
     extract_clothing_histogram,
+    extract_clothing_colors,
     parse_match_weights,
 )
 
@@ -41,9 +43,8 @@ class PersonSelectorMulti:
         "Connect a reference to auto-create the next input slot.\n\n"
         "Supports batch input: pass multiple images and get PERSON_DATA for PersonDetailer.\n\n"
         "Faces are assigned exclusively: each face matches at most one reference.\n\n"
-        "match_weights controls the scoring blend: 'face/hair/head' (e.g. '60/20/20')\n"
-        "or 'face/hair/head/outfit' (e.g. '50/15/15/20') when outfit_palettes is connected.\n"
-        "Set to '100/0/0' for pure face matching (previous behavior).\n\n"
+        "match_weights controls the scoring blend: 'face/hair/head/outfit' (default 50/15/15/20).\n"
+        "Set to '100/0/0/0' for pure face matching, or '60/20/20/0' to disable outfit.\n\n"
         "Outfit matching: connect palette_preview images as a batch to outfit_palettes.\n"
         "Compares palette color distribution with detected clothing colors (BiSeNet).\n\n"
         "Optional: connect SEGS or a detector for body-part detection.\n"
@@ -77,20 +78,17 @@ class PersonSelectorMulti:
                                              "tooltip": "Mask dilation in pixels for detected body parts"}),
                 "detect_crop_factor": ("FLOAT", {"default": 3.0, "min": 1.0, "max": 10.0, "step": 0.1,
                                                    "tooltip": "Crop expansion factor passed to detector"}),
-                "match_weights": ("STRING", {"default": "60/20/20",
-                                             "tooltip": "Matching weight blend: face/hair/head or face/hair/head/outfit.\n"
+                "match_weights": ("STRING", {"default": "50/15/15/20",
+                                             "tooltip": "Matching weight blend: face/hair/head/outfit.\n"
                                                         "Controls how much each signal contributes to the final similarity score.\n\n"
-                                                        "3 values (no outfit):\n"
-                                                        "  60/20/20 — balanced: face + hair + head (default)\n"
-                                                        "  100/0/0 — pure face matching\n"
-                                                        "  50/30/20 — strong hair weight\n\n"
-                                                        "4 values (with outfit_palettes connected):\n"
-                                                        "  50/15/15/20 — face + hair + head + outfit colors\n"
-                                                        "  40/15/15/30 — heavy outfit weight\n"
-                                                        "  60/20/20/0 — ignore outfit even when connected\n\n"
+                                                        "  50/15/15/20 — balanced with outfit (default)\n"
+                                                        "  60/20/20/0 — no outfit matching\n"
+                                                        "  100/0/0/0 — pure face matching\n"
+                                                        "  40/15/15/30 — heavy outfit weight\n\n"
+                                                        "3 values also work (outfit=0): 60/20/20 equals 60/20/20/0.\n\n"
                                                         "Hair = BiSeNet hair color (HSV). Head = head crop histogram.\n"
                                                         "Outfit = clothing region vs. palette color distribution.\n"
-                                                        "Values are auto-normalized, so 3/1/1 equals 60/20/20."}),
+                                                        "Values are auto-normalized, so 3/1/1/1 equals 50/17/17/17."}),
                 "reference_1": ("IMAGE", {"tooltip": "Reference image(s) for person 1. Pass a batch of images of the same person for better matching accuracy."}),
             },
             "optional": {
@@ -234,7 +232,8 @@ class PersonSelectorMulti:
         )
 
     def _render_mask_layers(self, current_image, assignments, cur_faces,
-                             body_masks_list, h, w, num_refs, ref_depths=None):
+                             body_masks_list, h, w, num_refs, ref_depths=None,
+                             outfit_palettes=None):
         """Render mask overlay: original image with semi-transparent colored body silhouettes.
 
         Shows all reference masks layered on top of the original image with clear
@@ -301,6 +300,23 @@ class PersonSelectorMulti:
             cv2.rectangle(preview, (stx - sp, sty - sth - sp), (stx + stw + sp, sty + sp), (0, 0, 0), cv2.FILLED)
             cv2.putText(preview, sim_label, (stx, sty), font, sim_scale, color, sim_thick, cv2.LINE_AA)
 
+            # Palette swatch overlay — centered above face label
+            if outfit_palettes is not None and ri < outfit_palettes.shape[0]:
+                pal_rgb = (outfit_palettes[ri].cpu().numpy() * 255).astype(np.uint8)
+                pw = max(40, x2 - x1)
+                ph = max(10, int(pw * pal_rgb.shape[0] / max(1, pal_rgb.shape[1])))
+                pal_small = cv2.resize(pal_rgb, (pw, ph), interpolation=cv2.INTER_AREA)
+                px = max(0, min(w - pw, cx - pw // 2))
+                py = max(0, ty - th_text - pad - ph - int(4 * img_scale))
+                border = max(1, int(2 * img_scale))
+                cv2.rectangle(preview, (px - border, py - border),
+                              (px + pw + border, py + ph + border), (0, 0, 0), cv2.FILLED)
+                # Clamp paste region to image bounds
+                paste_h = min(ph, h - py)
+                paste_w = min(pw, w - px)
+                if paste_h > 0 and paste_w > 0:
+                    preview[py:py+paste_h, px:px+paste_w] = pal_small[:paste_h, :paste_w]
+
         # Render order text at bottom-left — 4x larger than before
         if ref_depths and assignments:
             sorted_refs = sorted(assignments.keys(), key=lambda ri: ref_depths.get(ri, 0.5))
@@ -309,7 +325,7 @@ class PersonSelectorMulti:
                 order_parts.append(str(ri + 1))
             order_text = "Render: " + " > ".join(order_parts) + " (back>front)"
 
-            order_scale = img_scale * 2.0  # 4x original (was 0.6, now ~2.4 at 2000px)
+            order_scale = h / 800.0  # text height ~2.5% of image height, always readable
             order_thick = max(2, int(order_scale * 2))
             (otw, oth), _ = cv2.getTextSize(order_text, font, order_scale, order_thick)
             ox = int(15 * img_scale)
@@ -324,7 +340,7 @@ class PersonSelectorMulti:
                                sam_model, aggregation, effective_threshold,
                                mask_fill_holes, mask_blur, device,
                                ref_appearances=None, match_weights=(1.0, 0.0, 0.0, 0.0),
-                               ref_outfit_hists=None,
+                               ref_outfit_hists=None, ref_palette_colors=None,
                                depth_edges_data=None, depth_np=None,
                                depth_carve_strength=0.8, depth_grow=30,
                                body_mask_mode="auto"):
@@ -367,24 +383,32 @@ class PersonSelectorMulti:
             ref_hair_colors = [ra[0] for ra in ref_appearances]
             ref_head_hists = [ra[1] for ra in ref_appearances]
 
-            # Extract clothing histograms for outfit matching
+            # Extract clothing data for outfit matching
             # BiSeNet label 16 = cloth — reuses label map from above, no extra cost.
             face_clothing_hists = None
+            face_clothing_colors = None
             if w_outfit > 0 and ref_outfit_hists is not None:
                 face_clothing_hists = []
+                face_clothing_colors = []
                 for fi, face in enumerate(cur_faces):
                     cloth_mask = (face_label_maps[fi] == 16).astype(np.float32)
-                    # Cloth label already excludes head — pass empty head mask
                     head_mask_np = np.zeros_like(cloth_mask)
                     face_clothing_hists.append(
                         extract_clothing_histogram(cur_rgb, cloth_mask, head_mask_np)
                     )
+                    upper, lower = extract_clothing_colors(cur_rgb, cloth_mask, face.bbox)
+                    face_clothing_colors.append((upper, lower))
+                    u_str = f"H{upper[0]:.0f}/S{upper[1]:.0f}/V{upper[2]:.0f}" if upper is not None else "none"
+                    l_str = f"H{lower[0]:.0f}/S{lower[1]:.0f}/V{lower[2]:.0f}" if lower is not None else "none"
+                    print(f"  Face{fi+1} clothing: upper={u_str}, lower={l_str}")
 
             sim_matrix = build_appearance_matrix(
                 face_sim_matrix, ref_hair_colors, face_hair_colors,
                 ref_head_hists, face_head_hists, match_weights,
                 ref_outfit_hists=ref_outfit_hists,
                 face_clothing_hists=face_clothing_hists,
+                ref_palette_colors=ref_palette_colors,
+                face_clothing_colors=face_clothing_colors,
             )
 
             if sim_matrix.size > 0:
@@ -478,7 +502,7 @@ class PersonSelectorMulti:
     def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, aggregation,
                 mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
                 detect_threshold=0.3, detect_dilation=10, detect_crop_factor=3.0,
-                match_weights="60/20/20",
+                match_weights="50/15/15/20",
                 outfit_palettes=None,
                 segs=None, bbox_detector=None, segm_detector=None,
                 depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
@@ -508,18 +532,26 @@ class PersonSelectorMulti:
         w_face, w_hair, w_head, w_outfit = weights
         use_appearance = w_hair > 0 or w_head > 0 or w_outfit > 0
 
-        # Extract palette histograms from outfit_palettes batch (one per reference)
+        # Extract palette data from outfit_palettes batch (one per reference)
         ref_outfit_hists = None
+        ref_palette_colors = None
         if outfit_palettes is not None and w_outfit > 0:
             ref_outfit_hists = []
+            ref_palette_colors = []
             palette_batch_size = outfit_palettes.shape[0]
             for ri in range(num_refs):
                 if ri < palette_batch_size:
                     palette_rgb = (outfit_palettes[ri].cpu().numpy() * 255).astype(np.uint8)
                     ref_outfit_hists.append(extract_palette_histogram(palette_rgb))
+                    ref_palette_colors.append(extract_palette_colors(palette_rgb))
                 else:
                     ref_outfit_hists.append(None)
+                    ref_palette_colors.append([])
             print(f"[PersonSelectorMulti] Outfit palettes: {palette_batch_size} palette(s) for {num_refs} refs")
+            for ri, colors in enumerate(ref_palette_colors):
+                if colors:
+                    color_strs = [f"H{c[0]:.0f}/S{c[1]:.0f}/V{c[2]:.0f}" for c in colors[:3]]
+                    print(f"  Ref{ri+1} palette colors: {', '.join(color_strs)}")
 
         # Extract reference appearance features (hair color, head histogram)
         ref_appearances = None
@@ -569,7 +601,7 @@ class PersonSelectorMulti:
                 sam_model, aggregation, effective_threshold,
                 mask_fill_holes, mask_blur, device,
                 ref_appearances=ref_appearances, match_weights=weights,
-                ref_outfit_hists=ref_outfit_hists,
+                ref_outfit_hists=ref_outfit_hists, ref_palette_colors=ref_palette_colors,
                 depth_edges_data=depth_edges_list[b] if use_depth else None,
                 depth_np=depth_nps[b] if use_depth else None,
                 depth_carve_strength=depth_carve_strength,
@@ -630,7 +662,10 @@ class PersonSelectorMulti:
                 if use_depth:
                     body_mask_np = person_data_masks["body"][ri][b].cpu().numpy()
                     masked = depth_nps[b][body_mask_np > 0.5] if body_mask_np.sum() > 0 else np.array([])
-                    depths[ri] = float(np.median(masked)) if len(masked) > 0 else 0.5
+                    # Use 85th percentile instead of median so that limbs
+                    # reaching toward the camera (arms in front of another
+                    # person) pull the depth value forward.  Bright = near.
+                    depths[ri] = float(np.percentile(masked, 85)) if len(masked) > 0 else 0.5
                 else:
                     # Fallback: face Y center (higher Y = closer to camera in most perspectives)
                     face = br["cur_faces"][fi]
@@ -777,7 +812,8 @@ class PersonSelectorMulti:
             p = self._render_mask_layers(
                 current_image[b:b+1], batch_results[b]["assignments"],
                 batch_results[b]["cur_faces"], body_masks_for_preview, h, w, num_refs,
-                ref_depths=ref_depths_per_batch[b] if use_depth else None)
+                ref_depths=ref_depths_per_batch[b],
+                outfit_palettes=outfit_palettes)
             preview_parts.append(p)
         preview = torch.cat(preview_parts, dim=0)
 

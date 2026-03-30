@@ -6,3 +6,5 @@ hair comb | 0.4 | 0.7-0.9 | silk,lace
 floral hair clip | 0.3 | 0.7-0.9 | silk,organza
 pearl headband | 0.25 | 0.7-0.9 | silk,satin
 birdcage veil | 0.15 | 0.8-1.0 | tulle,lace
+heart-shaped hair clip | 0.3 | 0.7-0.9 | plastic
+delicate headband | 0.25 | 0.7-0.9 | silk,satin,velvet,cotton

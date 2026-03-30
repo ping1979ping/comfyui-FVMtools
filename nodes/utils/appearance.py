@@ -144,10 +144,10 @@ def combined_similarity(face_sim: float, hair_sim: float, head_sim: float,
 
 
 def extract_palette_histogram(palette_image_rgb: np.ndarray, bins=(30, 32)):
-    """Extract HSV histogram from a palette swatch image.
+    """Extract HSV histogram from a palette swatch image with primary/secondary weighting.
 
-    The palette preview has color blocks in the top 75% and text labels below.
-    We sample only the swatch area to build a representative color histogram.
+    The palette preview has color blocks arranged left-to-right (primary first).
+    Splits into vertical columns and weights: primary=3x, secondary=2x, rest=1x.
 
     Args:
         palette_image_rgb: Palette preview as RGB numpy array (H, W, 3), uint8.
@@ -159,20 +159,47 @@ def extract_palette_histogram(palette_image_rgb: np.ndarray, bins=(30, 32)):
     if palette_image_rgb is None or palette_image_rgb.size == 0:
         return None
 
-    h = palette_image_rgb.shape[0]
+    img_h = palette_image_rgb.shape[0]
+    img_w = palette_image_rgb.shape[1]
     # Use top 70% to avoid text labels at the bottom
-    swatch_h = int(h * 0.70)
+    swatch_h = int(img_h * 0.70)
     swatch = palette_image_rgb[:swatch_h, :, :]
 
     if swatch.size == 0:
         return None
 
-    swatch_bgr = swatch[:, ::-1].copy()
-    swatch_hsv = cv2.cvtColor(swatch_bgr, cv2.COLOR_BGR2HSV)
+    # Estimate number of color blocks from aspect ratio
+    sw = swatch.shape[1]
+    sh = swatch.shape[0]
+    num_blocks = max(1, round(sw / max(1, sh)))
 
-    hist = cv2.calcHist([swatch_hsv], [0, 1], None, list(bins), [0, 180, 0, 256])
-    cv2.normalize(hist, hist)
-    return hist
+    if num_blocks <= 1:
+        # Single block or can't split — use flat histogram (original behavior)
+        swatch_bgr = swatch[:, ::-1].copy()
+        swatch_hsv = cv2.cvtColor(swatch_bgr, cv2.COLOR_BGR2HSV)
+        hist = cv2.calcHist([swatch_hsv], [0, 1], None, list(bins), [0, 180, 0, 256])
+        cv2.normalize(hist, hist)
+        return hist
+
+    # Primary=3x, secondary=2x, rest=1x
+    block_weights = [3.0, 2.0] + [1.0] * max(0, num_blocks - 2)
+    combined_hist = np.zeros((bins[0], bins[1]), dtype=np.float32)
+    block_w = sw // num_blocks
+
+    for i in range(num_blocks):
+        x_start = i * block_w
+        x_end = (i + 1) * block_w if i < num_blocks - 1 else sw
+        block = swatch[:, x_start:x_end, :]
+        if block.size == 0:
+            continue
+        block_bgr = block[:, ::-1].copy()
+        block_hsv = cv2.cvtColor(block_bgr, cv2.COLOR_BGR2HSV)
+        h_block = cv2.calcHist([block_hsv], [0, 1], None, list(bins), [0, 180, 0, 256])
+        cv2.normalize(h_block, h_block)
+        combined_hist += h_block * block_weights[i]
+
+    cv2.normalize(combined_hist, combined_hist)
+    return combined_hist
 
 
 def extract_clothing_histogram(image_rgb: np.ndarray, body_mask: np.ndarray,
@@ -224,3 +251,138 @@ def outfit_color_similarity(palette_hist, clothing_hist):
     score = cv2.compareHist(palette_hist, clothing_hist, cv2.HISTCMP_CORREL)
     # CORREL returns [-1, 1], normalize to [0, 1]
     return float(np.clip((score + 1.0) / 2.0, 0.0, 1.0))
+
+
+# ── Smart Outfit Matching: dominant color ranking ───────────────────────────
+
+def _dominant_hsv(image_rgb, mask, min_pixels=50):
+    """Extract median HSV color from masked image region.
+
+    Returns: np.ndarray (3,) with [H, S, V] or None if too few pixels.
+    """
+    pixels = image_rgb[mask > 0.5]
+    if len(pixels) < min_pixels:
+        return None
+    pixels_bgr = pixels[:, ::-1].reshape(1, -1, 3).astype(np.uint8)
+    pixels_hsv = cv2.cvtColor(pixels_bgr, cv2.COLOR_BGR2HSV).reshape(-1, 3)
+    return np.median(pixels_hsv, axis=0).astype(np.float32)
+
+
+def _hsv_similarity(c1, c2):
+    """Similarity between two HSV colors on the HSV cylinder.
+
+    Hue wraps at 180 (OpenCV range). Returns float in [0, 1].
+    """
+    if c1 is None or c2 is None:
+        return 0.0
+    dh = min(abs(c1[0] - c2[0]), 180 - abs(c1[0] - c2[0]))
+    ds = abs(c1[1] - c2[1])
+    dv = abs(c1[2] - c2[2])
+    dist_sq = (dh / 90.0) ** 2 + (ds / 255.0) ** 2 + (dv / 255.0) ** 2
+    # max possible dist_sq = 1 + 1 + 1 = 3
+    return float(np.clip(1.0 - dist_sq / 3.0, 0.0, 1.0))
+
+
+def extract_palette_colors(palette_image_rgb):
+    """Extract dominant HSV color per palette block (left to right).
+
+    Splits palette swatch into vertical columns based on aspect ratio.
+    Returns: list of np.ndarray [(H, S, V), ...] — primary first. Empty list on failure.
+    """
+    if palette_image_rgb is None or palette_image_rgb.size == 0:
+        return []
+
+    img_h, img_w = palette_image_rgb.shape[:2]
+    swatch_h = int(img_h * 0.70)
+    swatch = palette_image_rgb[:swatch_h, :, :]
+    if swatch.size == 0:
+        return []
+
+    sw, sh = swatch.shape[1], swatch.shape[0]
+    num_blocks = max(1, round(sw / max(1, sh)))
+    block_w = sw // max(1, num_blocks)
+
+    colors = []
+    for i in range(num_blocks):
+        x_start = i * block_w
+        x_end = (i + 1) * block_w if i < num_blocks - 1 else sw
+        block = swatch[:, x_start:x_end, :]
+        if block.size == 0:
+            continue
+        block_bgr = block[:, ::-1].copy()
+        block_hsv = cv2.cvtColor(block_bgr, cv2.COLOR_BGR2HSV).reshape(-1, 3)
+        dominant = np.median(block_hsv, axis=0).astype(np.float32)
+        colors.append(dominant)
+    return colors
+
+
+def extract_clothing_colors(image_rgb, cloth_mask, face_bbox, min_pixels=100):
+    """Extract dominant HSV from upper and lower clothing regions.
+
+    Split point: face bottom (y2) + 40% of remaining cloth height.
+
+    Args:
+        image_rgb: Full image RGB (H, W, 3) uint8.
+        cloth_mask: BiSeNet label 16 mask (H, W) float32.
+        face_bbox: (x1, y1, x2, y2) face bounding box.
+        min_pixels: Minimum pixels per region for valid extraction.
+
+    Returns: (upper_hsv, lower_hsv) — each np.ndarray (3,) or None.
+    """
+    cloth_ys = np.where(cloth_mask > 0.5)[0]
+    if len(cloth_ys) < min_pixels * 2:
+        return None, None
+
+    y2 = int(face_bbox[3])
+    cloth_bottom = int(cloth_ys.max())
+    split_y = int(y2 + (cloth_bottom - y2) * 0.4)
+
+    upper_mask = cloth_mask.copy()
+    upper_mask[split_y:, :] = 0
+    lower_mask = cloth_mask.copy()
+    lower_mask[:split_y, :] = 0
+
+    upper_hsv = _dominant_hsv(image_rgb, upper_mask, min_pixels)
+    lower_hsv = _dominant_hsv(image_rgb, lower_mask, min_pixels)
+    return upper_hsv, lower_hsv
+
+
+def outfit_ranking_similarity(palette_colors, upper_hsv, lower_hsv):
+    """Score how well palette colors match upper/lower clothing regions.
+
+    Scoring:
+    - primary (palette[0]) vs upper body: weight 0.45
+    - secondary (palette[1]) vs lower body: weight 0.35
+    - presence bonus (best match of any palette color in any region): weight 0.20
+
+    Returns: float in [0, 1].
+    """
+    if not palette_colors:
+        return 0.0
+    if upper_hsv is None and lower_hsv is None:
+        return 0.0
+
+    primary_sim = 0.0
+    secondary_sim = 0.0
+    presence_sim = 0.0
+
+    # Primary vs upper body
+    if len(palette_colors) >= 1 and upper_hsv is not None:
+        primary_sim = _hsv_similarity(palette_colors[0], upper_hsv)
+
+    # Secondary vs lower body
+    if len(palette_colors) >= 2 and lower_hsv is not None:
+        secondary_sim = _hsv_similarity(palette_colors[1], lower_hsv)
+
+    # Presence bonus: best match of any palette color in either region
+    best_match = 0.0
+    for pc in palette_colors:
+        if upper_hsv is not None:
+            best_match = max(best_match, _hsv_similarity(pc, upper_hsv))
+        if lower_hsv is not None:
+            best_match = max(best_match, _hsv_similarity(pc, lower_hsv))
+    presence_sim = best_match
+
+    # Weighted combination
+    score = 0.45 * primary_sim + 0.35 * secondary_sim + 0.20 * presence_sim
+    return float(np.clip(score, 0.0, 1.0))

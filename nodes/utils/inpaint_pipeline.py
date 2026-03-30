@@ -52,7 +52,8 @@ def adjust_crop_to_aspect_ratio(crop, target_w, target_h):
     """Expand crop region to match target aspect ratio without distortion.
 
     Only expands — never shrinks. One axis stays the same, the other grows
-    to match the target AR. Handles boundary clamping.
+    to match the target AR. Negative x/y are allowed — create_canvas_with_edge_replication
+    handles out-of-bounds regions via edge padding.
     """
     x, y, w, h = crop["x"], crop["y"], crop["w"], crop["h"]
     img_w, img_h = crop["img_w"], crop["img_h"]
@@ -73,31 +74,25 @@ def adjust_crop_to_aspect_ratio(crop, target_w, target_h):
         new_x = x
         new_y = y - (new_h - h) // 2
 
-    # Clamp to image bounds, shift if possible
-    if new_x < 0:
-        new_x = 0
-    if new_x + new_w > img_w:
-        new_x = max(0, img_w - new_w)
-        new_w = min(new_w, img_w)
-    if new_y < 0:
-        new_y = 0
-    if new_y + new_h > img_h:
-        new_y = max(0, img_h - new_h)
-        new_h = min(new_h, img_h)
+    # Try to shift into image bounds without changing size.
+    # If the crop is larger than the image, center it (negative coords are fine).
+    if new_w <= img_w:
+        new_x = max(0, min(new_x, img_w - new_w))
+    else:
+        new_x = -(new_w - img_w) // 2
+
+    if new_h <= img_h:
+        new_y = max(0, min(new_y, img_h - new_h))
+    else:
+        new_y = -(new_h - img_h) // 2
 
     # Ensure divisible by 8 (VAE requirement)
     new_w = max(8, math.ceil(new_w / 8) * 8)
     new_h = max(8, math.ceil(new_h / 8) * 8)
 
-    # Re-clamp after rounding
-    if new_x + new_w > img_w:
-        new_x = max(0, img_w - new_w)
-    if new_y + new_h > img_h:
-        new_y = max(0, img_h - new_h)
-
     return {
         "x": new_x, "y": new_y,
-        "w": min(new_w, img_w), "h": min(new_h, img_h),
+        "w": new_w, "h": new_h,
         "img_w": img_w, "img_h": img_h,
     }
 

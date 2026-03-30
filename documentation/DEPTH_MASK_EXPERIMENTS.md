@@ -115,7 +115,7 @@ Chronologische Dokumentation der Ansätze für Depth-guided Masking und Body-Mas
 
 **Ansatz:** PersonDetailer rendert Personen back-to-front (hinterste zuerst, vorderste zuletzt). Vordergrund-Person "gewinnt" bei Überlappung.
 
-**Depth-Quelle:** Median Depth aus Body-Maske pro Referenz. Fallback: Face-Y-Position.
+**Depth-Quelle:** 85th percentile depth from body mask per reference (not median — the 85th percentile ensures that limbs reaching toward the camera, like outstretched arms, correctly pull the depth value forward). Fallback: Face-Y-Position.
 
 **Parameter:** `depth_sort_order` = "front_last" (hell=nah) | "front_first" (invertiert) | "off"
 
@@ -132,4 +132,5 @@ Chronologische Dokumentation der Ansätze für Depth-guided Masking und Body-Mas
 7. **SEGS-Zuweisung per Face-Center statt Body-Overlap** — bricht zirkuläre Abhängigkeit
 8. **segm_detector (YOLO) ist die beste Body-Mask-Quelle** für Multi-Person — nicht SAM
 9. **Rendering-Reihenfolge nach Tiefe** löst Überlappungs-Artefakte beim Inpainting
-10. **BiSeNet Seeds sind zu klein für Body** — nur nützlich für Head/Face, nicht für Ganzkörper
+10. **85th Percentile > Median für Depth-Sorting** — Median ignoriert Gliedmaßen die zur Kamera zeigen (Arme, Hände). 85th Percentile zieht den Tiefenwert korrekt nach vorn.
+11. **BiSeNet Seeds sind zu klein für Body** — nur nützlich für Head/Face, nicht für Ganzkörper

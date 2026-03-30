@@ -5,6 +5,7 @@ from .appearance import (
     hair_color_similarity,
     head_histogram_similarity,
     outfit_color_similarity,
+    outfit_ranking_similarity,
     combined_similarity,
     parse_match_weights,
 )
@@ -68,7 +69,8 @@ def find_best_match(
 
 def build_appearance_matrix(face_sims, ref_hair_colors, face_hair_colors,
                             ref_head_hists, face_head_hists, weights,
-                            ref_outfit_hists=None, face_clothing_hists=None):
+                            ref_outfit_hists=None, face_clothing_hists=None,
+                            ref_palette_colors=None, face_clothing_colors=None):
     """Build a combined similarity matrix incorporating face, hair, head, and outfit signals.
 
     Args:
@@ -78,8 +80,10 @@ def build_appearance_matrix(face_sims, ref_hair_colors, face_hair_colors,
         ref_head_hists: list of histograms (or None) per reference.
         face_head_hists: list of histograms (or None) per detected face.
         weights: (face_w, hair_w, head_w, outfit_w) tuple summing to 1.0.
-        ref_outfit_hists: list of HSV histograms (or None) per reference (from palette preview).
-        face_clothing_hists: list of HSV histograms (or None) per detected face (from clothing region).
+        ref_outfit_hists: list of HSV histograms (or None) per reference (legacy, fallback).
+        face_clothing_hists: list of HSV histograms (or None) per detected face (legacy, fallback).
+        ref_palette_colors: list of [HSV, HSV, ...] per reference (smart matching).
+        face_clothing_colors: list of (upper_hsv, lower_hsv) per detected face (smart matching).
 
     Returns:
         np.ndarray (num_refs, num_faces) — combined similarity scores.
@@ -96,6 +100,9 @@ def build_appearance_matrix(face_sims, ref_hair_colors, face_hair_colors,
     if w_hair == 0 and w_head == 0 and w_outfit == 0:
         return face_sims.copy()
 
+    # Determine outfit matching mode: smart (dominant colors) or legacy (histograms)
+    use_smart_outfit = (ref_palette_colors is not None and face_clothing_colors is not None)
+
     for ri in range(num_refs):
         for fi in range(num_faces):
             f_sim = face_sims[ri, fi]
@@ -111,11 +118,16 @@ def build_appearance_matrix(face_sims, ref_hair_colors, face_hair_colors,
             )
 
             o_sim = 0.0
-            if w_outfit > 0 and ref_outfit_hists is not None and face_clothing_hists is not None:
-                o_sim = outfit_color_similarity(
-                    ref_outfit_hists[ri] if ri < len(ref_outfit_hists) else None,
-                    face_clothing_hists[fi] if fi < len(face_clothing_hists) else None,
-                )
+            if w_outfit > 0:
+                if use_smart_outfit:
+                    palette_cols = ref_palette_colors[ri] if ri < len(ref_palette_colors) else []
+                    upper, lower = face_clothing_colors[fi] if fi < len(face_clothing_colors) else (None, None)
+                    o_sim = outfit_ranking_similarity(palette_cols, upper, lower)
+                elif ref_outfit_hists is not None and face_clothing_hists is not None:
+                    o_sim = outfit_color_similarity(
+                        ref_outfit_hists[ri] if ri < len(ref_outfit_hists) else None,
+                        face_clothing_hists[fi] if fi < len(face_clothing_hists) else None,
+                    )
 
             result[ri, fi] = combined_similarity(f_sim, h_sim, hd_sim, weights, outfit_sim=o_sim)
 

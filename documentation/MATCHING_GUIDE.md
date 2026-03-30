@@ -16,22 +16,22 @@ Meanwhile, other visual cues are obvious to the human eye:
 
 ## The Solution: Multi-Signal Matching
 
-Person Selector Multi now blends **three signals** into one combined score:
+Person Selector Multi now blends **four signals** into one combined score:
 
 ```
-┌─────────────────────────────────────────────────────┐
-│               Combined Similarity Score              │
-│                                                     │
-│   ┌──────────┐  ┌───────────┐  ┌────────────────┐  │
-│   │  ArcFace │  │ Hair Color│  │ Head Histogram │  │
-│   │ (face)   │  │  (hair)   │  │ (head crop)    │  │
-│   │  60%     │  │   20%     │  │    20%         │  │
-│   └──────────┘  └───────────┘  └────────────────┘  │
-│                                                     │
-│   face identity   blonde vs    overall look:        │
-│   from ArcFace    brunette     hair + skin + jaw    │
-│   embeddings      via BiSeNet  via HSV histogram    │
-└─────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│                    Combined Similarity Score                      │
+│                                                                  │
+│   ┌──────────┐  ┌───────────┐  ┌──────────────┐  ┌───────────┐ │
+│   │  ArcFace │  │ Hair Color│  │ Head Histgrm │  │  Outfit   │ │
+│   │ (face)   │  │  (hair)   │  │ (head crop)  │  │ (clothing)│ │
+│   │  50%     │  │   15%     │  │    15%       │  │   20%     │ │
+│   └──────────┘  └───────────┘  └──────────────┘  └───────────┘ │
+│                                                                  │
+│   face identity   blonde vs    overall look:      clothing color │
+│   from ArcFace    brunette     hair + skin + jaw  vs palette     │
+│   embeddings      via BiSeNet  via HSV histogram  via BiSeNet    │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 ### Signal 1: Face Embedding (ArcFace)
@@ -104,37 +104,39 @@ The histogram is computed in HSV space (30 hue bins × 32 saturation bins) and c
 The `match_weights` input on Person Selector Multi controls the blend:
 
 ```
-Format: face/hair/head
+Format: face/hair/head/outfit
 ```
 
 | Setting | When to use |
 |---------|-------------|
-| `60/20/20` | **Default.** Balanced blend — good starting point for most workflows. |
-| `100/0/0` | Pure face matching. Use when appearance should not influence matching (e.g. same person in different wigs/costumes). |
-| `50/30/20` | Strong hair weight. Use when faces are similar but hair colors differ clearly. |
-| `40/40/20` | Heavy hair focus. Best for blonde-vs-brunette disambiguation. |
-| `70/15/15` | Mostly face with a subtle appearance boost. Conservative option. |
-| `50/25/25` | Equal appearance weight. Good when both hair and overall look help. |
+| `50/15/15/20` | **Default.** Balanced blend with outfit matching — good starting point for most workflows. |
+| `60/20/20/0` | No outfit matching. Good when clothing changes between reference and target. |
+| `100/0/0/0` | Pure face matching. Use when appearance should not influence matching (e.g. same person in different wigs/costumes). |
+| `40/15/15/30` | Heavy outfit weight. Best when clothing colors are the strongest differentiator. |
+| `50/30/10/10` | Strong hair weight. Use when faces are similar but hair colors differ clearly. |
+| `70/10/10/10` | Mostly face with a subtle appearance boost. Conservative option. |
 
-Values are **auto-normalized** — `3/1/1` is the same as `60/20/20`.
+Values are **auto-normalized** — `3/1/1/1` is the same as `50/17/17/17`.
+
+**3-value shorthand:** `60/20/20` equals `60/20/20/0` (outfit weight = 0). Use this when outfit_palettes is not connected.
 
 ### Example Scenario
 
 You have a group photo with 4 people. Two women have very similar faces (score 0.63 vs 0.60 with pure ArcFace), but one is blonde and the other brunette.
 
-**With `100/0/0` (face only):**
+**With `100/0/0/0` (face only):**
 ```
 ref_1 (blonde) → face #2 (sim 0.63) ← might be wrong person
 ref_2 (brunette) → face #0 (sim 0.60) ← might be wrong person
 ```
 The 0.03 difference is within noise — assignment could flip between runs.
 
-**With `60/20/20` (appearance-enhanced):**
+**With `50/15/15/20` (appearance-enhanced, default):**
 ```
-ref_1 (blonde) → face #2 (combined 0.72) ← hair match boosts score
-ref_2 (brunette) → face #0 (combined 0.68) ← correct assignment, clear gap
+ref_1 (blonde) → face #2 (combined 0.74) ← hair + outfit match boost score
+ref_2 (brunette) → face #0 (combined 0.69) ← correct assignment, clear gap
 ```
-The hair color signal widens the gap from 0.03 to 0.04+, and the histogram adds further confirmation. Assignment becomes stable.
+The hair color, head histogram, and outfit color signals widen the gap. Assignment becomes stable.
 
 ---
 
@@ -160,12 +162,13 @@ The hair color signal widens the gap from 0.03 to 0.04+, and the histogram adds 
 
 ### Graceful Degradation
 
-When appearance data is unavailable (e.g. no hair visible, face too small):
+When appearance data is unavailable (e.g. no hair visible, face too small, no outfit_palettes connected):
 
 - Hair signal returns `None` → treated as similarity 0.0 for that pair
 - Head histogram returns `None` → treated as similarity 0.0 for that pair
+- Outfit signal returns `None` when outfit_palettes is not connected → weight is redistributed to other signals
 - The face embedding signal always works, so the system falls back gracefully
-- With `100/0/0` weights, appearance is completely disabled — identical to previous behavior
+- With `100/0/0/0` weights, appearance is completely disabled — identical to previous behavior
 
 ### Performance Impact
 
@@ -182,15 +185,15 @@ When appearance data is unavailable (e.g. no hair visible, face too small):
 When appearance matching is active, the console shows additional information:
 
 ```
-[PersonSelectorMulti] Appearance matching: weights=60%/20%/20%
-  ref 1: hair=HSV(25,120,200), histogram=yes
-  ref 2: hair=HSV(12,80,60), histogram=yes
+[PersonSelectorMulti] Appearance matching: weights=50%/15%/15%/20%
+  ref 1: hair=HSV(25,120,200), histogram=yes, outfit=yes
+  ref 2: hair=HSV(12,80,60), histogram=yes, outfit=yes
 [PersonSelectorMulti] face_sim:
 [[0.6300 0.6050]
  [0.5800 0.6000]]
-[PersonSelectorMulti] combined_sim (weights 60%/20%/20%):
-[[0.7180 0.5420]
- [0.4920 0.6830]]
+[PersonSelectorMulti] combined_sim (weights 50%/15%/15%/20%):
+[[0.7380 0.5220]
+ [0.4720 0.6930]]
 ```
 
 This helps you see exactly how appearance signals shift the scores.
@@ -199,9 +202,11 @@ This helps you see exactly how appearance signals shift the scores.
 
 ## Tips
 
-- **Start with defaults** (`60/20/20`). Only adjust if you see mismatches.
+- **Start with defaults** (`50/15/15/20`). Only adjust if you see mismatches.
 - **Check the console** for `face_sim` vs `combined_sim` to see how weights affect scoring.
-- **Use `100/0/0`** when the same person appears in different costumes/wigs — appearance matching would hurt in that case.
-- **Increase hair weight** (`40/40/20`) when you have clearly different hair colors and similar faces.
+- **Use `100/0/0/0`** when the same person appears in different costumes/wigs — appearance matching would hurt in that case.
+- **Use `60/20/20/0`** to disable outfit matching when clothing differs between reference and target.
+- **Increase hair weight** (`40/30/10/20`) when you have clearly different hair colors and similar faces.
+- **Connect outfit_palettes** for the outfit signal to work — without it, the outfit weight is redistributed to the other signals.
 - **Reference image quality matters** — use a clear, well-lit reference with visible hair for best hair color extraction.
 - **Multiple references** improve both face and appearance matching — the system aggregates across all reference images per slot.

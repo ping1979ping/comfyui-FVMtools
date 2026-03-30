@@ -2,8 +2,8 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 midi skirt | 0.7 | 0.7-0.9 | silk,satin,crepe,chiffon
 maxi skirt | 0.6 | 0.7-1.0 | chiffon,silk,tulle,organza
-tailored trousers | 0.4 | 0.7-0.9 | wool blend,crepe,silk
-palazzo pants | 0.4 | 0.7-0.9 | chiffon,silk,crepe
+tailored skirt| 0.4 | 0.7-0.9 | wool blend,crepe,silk
+bayerisches dirndl skirt | 0.4 | 0.7-0.9 | chiffon,silk,crepe
 A-line skirt | 0.6 | 0.7-0.9 | taffeta,satin,crepe,silk
 pleated skirt | 0.4 | 0.7-0.9 | chiffon,silk,georgette
 pencil skirt | 0.3 | 0.7-0.9 | crepe,satin,brocade

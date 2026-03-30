@@ -193,6 +193,16 @@ def generate_pose_map(image_tensor, resolution=512,
         image_and_json=True, resolution=resolution,
         show_pbar=False,
     )
+
+    # Soften sharp skeleton lines to prevent them bleeding into the output
+    # as visible artifacts. A light Gaussian blur turns hard edges into
+    # smooth gradients that guide structure without imprinting lines.
+    import cv2
+    pose_np = (out[0].cpu().numpy() * 255).astype(np.uint8)
+    ksize = max(3, (resolution // 64) * 2 + 1)  # ~7 at 512, scales with resolution
+    pose_np = cv2.GaussianBlur(pose_np, (ksize, ksize), 0)
+    out = torch.from_numpy(pose_np.astype(np.float32) / 255.0).unsqueeze(0)
+
     return out
 
 
