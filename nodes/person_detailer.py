@@ -17,6 +17,10 @@ from .utils.lora_cache import _LoraFileCache
 INPAINT_DEFAULTS = {
     "cfg": 1.0,
     "negative_prompt": "",
+    "blend_mode": "auto",
+    "denoise_gradient": 0.0,
+    "edge_refine": False,
+    "edge_refine_denoise": 0.12,
     "mask_fill_holes": True,
     "context_expand_factor": 1.20,
     "output_padding": 32,
@@ -214,6 +218,10 @@ class PersonDetailer:
             denoise_progression=inpaint_opts.get("denoise_progression", ""),
             steps_progression=inpaint_opts.get("steps_progression", ""),
             cfg=cfg,
+            blend_mode=inpaint_opts.get("blend_mode", "auto"),
+            denoise_gradient=inpaint_opts.get("denoise_gradient", 0.0),
+            edge_refine=inpaint_opts.get("edge_refine", False),
+            edge_refine_denoise=inpaint_opts.get("edge_refine_denoise", 0.12),
         )
         return stitched, refined
 

@@ -43,6 +43,41 @@ class InpaintOptions:
                                                        "  'blurry, washed out, pale, low contrast'\n"
                                                        "  'extra fingers, deformed hands, bad anatomy'\n\n"
                                                        "Leave empty to use only the connected negative conditioning."}),
+            "blend_mode": (["auto", "gaussian", "poisson", "poisson_mixed"], {
+                "default": "auto",
+                "tooltip": "How the inpainted crop blends back into the original image.\n\n"
+                           "auto/poisson — seamless cloning via Poisson solver, matches boundary colors\n"
+                           "  automatically. Best for faces and skin. (recommended)\n\n"
+                           "gaussian — feathered alpha blend with delta clamping. Faster but may\n"
+                           "  show color discontinuities at high denoise values.\n\n"
+                           "poisson_mixed — Poisson with mixed gradients, preserves more original\n"
+                           "  texture at the boundary. Good for detailed backgrounds.",
+            }),
+            "denoise_gradient": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 1.0, "step": 0.1,
+                "tooltip": "Center-to-edge denoise falloff during sampling.\n\n"
+                           "Creates a gradient denoise mask: full denoise at the center of the\n"
+                           "masked region, fading toward the edges.\n\n"
+                           "0.0 = uniform denoise everywhere (current behavior)\n"
+                           "0.3 = gentle gradient (edges stay closer to original)\n"
+                           "0.5 = moderate gradient (recommended starting point)\n"
+                           "1.0 = full gradient (edges almost untouched by sampling)\n\n"
+                           "This uses ComfyUI's native denoise_mask which blends the sampled\n"
+                           "result with the original at every step. Very effective at reducing\n"
+                           "visible seams without post-processing.",
+            }),
+            "edge_refine": ("BOOLEAN", {"default": False,
+                "tooltip": "Run a quick low-denoise refinement pass on the blend zone.\n\n"
+                           "After the main inpaint is stitched back, this identifies the\n"
+                           "transition area (where the feathered mask is partially transparent)\n"
+                           "and runs a short 2-3 step harmonization pass at very low denoise.\n\n"
+                           "Adds ~0.5s per crop but can significantly reduce visible seams.\n"
+                           "Most effective when combined with gaussian blend_mode.",
+            }),
+            "edge_refine_denoise": ("FLOAT", {"default": 0.12, "min": 0.05, "max": 0.30, "step": 0.01,
+                "tooltip": "Denoise strength for the edge refinement pass.\n\n"
+                           "Keep low (0.10-0.15) to harmonize without changing content.\n"
+                           "Higher values may alter the inpainted result.",
+            }),
             "mask_fill_holes": ("BOOLEAN", {"default": True,
                                              "tooltip": "Fill holes in masks before inpainting (closes gaps in segmentation)"}),
             "context_expand_factor": ("FLOAT", {"default": 1.20, "min": 1.0, "max": 3.0, "step": 0.05,
@@ -113,6 +148,10 @@ class InpaintOptions:
         return ({
             "cfg": kwargs.get("cfg", 1.0),
             "negative_prompt": kwargs.get("negative_prompt", ""),
+            "blend_mode": kwargs.get("blend_mode", "auto"),
+            "denoise_gradient": kwargs.get("denoise_gradient", 0.0),
+            "edge_refine": kwargs.get("edge_refine", False),
+            "edge_refine_denoise": kwargs.get("edge_refine_denoise", 0.12),
             "mask_fill_holes": kwargs["mask_fill_holes"],
             "context_expand_factor": kwargs["context_expand_factor"],
             "output_padding": kwargs["output_padding"],

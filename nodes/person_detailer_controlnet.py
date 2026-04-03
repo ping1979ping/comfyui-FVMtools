@@ -228,6 +228,10 @@ class PersonDetailerControlNet:
             steps_progression=inpaint_opts.get("steps_progression", ""),
             controlnet_apply_fn=controlnet_apply_fn,
             cfg=cfg,
+            blend_mode=inpaint_opts.get("blend_mode", "auto"),
+            denoise_gradient=inpaint_opts.get("denoise_gradient", 0.0),
+            edge_refine=inpaint_opts.get("edge_refine", False),
+            edge_refine_denoise=inpaint_opts.get("edge_refine_denoise", 0.12),
         )
         return stitched, refined
 

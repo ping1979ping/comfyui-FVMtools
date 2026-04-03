@@ -7,7 +7,7 @@ from .utils.matcher import compute_similarity, aggregate_similarities, build_app
 from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
 from .utils.mask_utils import clean_mask_crumbs
-from .utils.segs_utils import assign_segs_to_references, run_detector
+from .utils.yolo_detector import get_available_yolo_models, detect_objects, assign_detections_to_references
 from .utils.appearance import (
     extract_hair_color,
     extract_head_histogram,
@@ -40,20 +40,22 @@ class PersonSelectorMulti:
         "Matches multiple reference persons in the current image using InsightFace (ArcFace) embeddings,\n"
         "optionally combined with hair color, head appearance, and outfit color matching.\n\n"
         "Each reference input accepts a batch of images for one person.\n"
-        "Connect a reference to auto-create the next input slot.\n\n"
+        "All references are optional — with none connected, all faces go to the generic slot.\n\n"
         "Supports batch input: pass multiple images and get PERSON_DATA for PersonDetailer.\n\n"
         "Faces are assigned exclusively: each face matches at most one reference.\n\n"
         "match_weights controls the scoring blend: 'face/hair/head/outfit' (default 50/15/15/20).\n"
         "Set to '100/0/0/0' for pure face matching, or '60/20/20/0' to disable outfit.\n\n"
         "Outfit matching: connect palette_preview images as a batch to outfit_palettes.\n"
         "Compares palette color distribution with detected clothing colors (BiSeNet).\n\n"
-        "Optional: connect SEGS or a detector for body-part detection.\n"
+        "Built-in YOLO detection: select a model from aux_model to detect body parts.\n"
         "Detected parts are assigned to references via body mask overlap\n"
-        "and stored as 'aux' masks in PERSON_DATA for PersonDetailer."
+        "and stored as 'aux' masks in PERSON_DATA for PersonDetailer.\n"
+        "Drop YOLO .pt models into models/ultralytics/segm/ to add more detectors."
     )
 
     @classmethod
     def INPUT_TYPES(cls):
+        yolo_models = ["none"] + get_available_yolo_models()
         return {
             "required": {
                 "sam_model": ("SAM_MODEL", {"tooltip": "SAM model from Impact Pack SAMLoader — required for body masks"}),
@@ -76,12 +78,25 @@ class PersonSelectorMulti:
                              {"tooltip": "Face detection resolution — higher finds smaller faces but uses more VRAM"}),
                 "aux_mask_type": (["none", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories"],
                                   {"default": "none", "tooltip": "Additional mask type for aux_masks output (derived from BiSeNet, no extra cost)"}),
-                "detect_threshold": ("FLOAT", {"default": 0.30, "min": 0.0, "max": 1.0, "step": 0.05,
-                                                "tooltip": "Detection confidence threshold for body-part detector (only used when detector/SEGS connected)"}),
-                "detect_dilation": ("INT", {"default": 10, "min": 0, "max": 100, "step": 1,
-                                             "tooltip": "Mask dilation in pixels for detected body parts"}),
-                "detect_crop_factor": ("FLOAT", {"default": 3.0, "min": 1.0, "max": 10.0, "step": 0.1,
-                                                   "tooltip": "Crop expansion factor passed to detector"}),
+                "aux_model": (yolo_models, {
+                    "tooltip": "YOLO model for body-part detection. Runs per batch image internally.\n\n"
+                               "Select a model from models/ultralytics/ to detect body parts\n"
+                               "(hands, persons, etc.). Detections are assigned to references via\n"
+                               "body mask overlap and stored as aux_masks in PERSON_DATA.\n\n"
+                               "none = no body-part detection (default)\n\n"
+                               "Drop .pt files into models/ultralytics/segm/ to add more models."}),
+                "aux_confidence": ("FLOAT", {"default": 0.35, "min": 0.05, "max": 1.0, "step": 0.05,
+                                              "tooltip": "YOLO detection confidence threshold.\n\n"
+                                                         "Lower = more detections (may include false positives)\n"
+                                                         "Higher = fewer, more confident detections\n\n"
+                                                         "0.25-0.35 recommended for most models."}),
+                "aux_label": ("STRING", {"default": "",
+                                          "tooltip": "Filter YOLO detections by class label.\n\n"
+                                                     "Empty = keep all detected classes (default)\n"
+                                                     "Comma-separated: 'person' or 'hand,face'\n\n"
+                                                     "The available labels depend on the model.\n"
+                                                     "COCO models: person, bicycle, car, etc.\n"
+                                                     "Specialized models may have: hand, face, head, etc."}),
                 "match_weights": ("STRING", {"default": "50/15/15/20",
                                              "tooltip": "Matching weight blend: face/hair/head/outfit.\n"
                                                         "Controls how much each signal contributes to the final similarity score.\n\n"
@@ -93,17 +108,15 @@ class PersonSelectorMulti:
                                                         "Hair = BiSeNet hair color (HSV). Head = head crop histogram.\n"
                                                         "Outfit = clothing region vs. palette color distribution.\n"
                                                         "Values are auto-normalized, so 3/1/1/1 equals 50/17/17/17."}),
-                "reference_1": ("IMAGE", {"tooltip": "Reference image(s) for person 1. Pass a batch of images of the same person for better matching accuracy."}),
             },
             "optional": {
+                "reference_1": ("IMAGE", {"tooltip": "Reference image(s) for person 1. Pass a batch of images of the same person for better matching accuracy.\n\n"
+                                                      "Optional — if no references connected, all detected faces go to the generic slot in PersonDetailer."}),
                 "outfit_palettes": ("IMAGE", {"tooltip": "Palette preview image batch for outfit color matching.\n"
                                                           "Image[0] = palette for reference 1, image[1] = for reference 2, etc.\n"
                                                           "If batch is smaller than number of references, remaining refs skip outfit matching.\n"
                                                           "Connect palette_preview outputs from Color Palette Generator.\n"
                                                           "Use match_weights with 4 values to control outfit weight (e.g. 50/15/15/20)."}),
-                "segs": ("SEGS", {"tooltip": "Pre-computed body-part SEGS (e.g. from Impact Pack). Takes priority over detector inputs."}),
-                "bbox_detector": ("BBOX_DETECTOR", {"tooltip": "Bounding box detector for body-part detection. Ignored if SEGS connected."}),
-                "segm_detector": ("SEGM_DETECTOR", {"tooltip": "Segmentation detector (preferred over bbox). Ignored if SEGS connected."}),
                 "depth_map": ("IMAGE", {"tooltip": "Depth map batch from Depth Anything V2 or similar. Improves masks via edge carving and cross-reference deconfliction."}),
                 "depth_edge_threshold": ("FLOAT", {"default": 0.05, "min": 0.01, "max": 0.30, "step": 0.01,
                                                     "tooltip": "Depth gradient threshold for edge detection. Lower = more edges detected."}),
@@ -111,10 +124,9 @@ class PersonSelectorMulti:
                                                     "tooltip": "How strongly depth edges cut masks. 0=off, 1=full cut."}),
                 "depth_grow_pixels": ("INT", {"default": 30, "min": 0, "max": 200, "step": 5,
                                                "tooltip": "Gap filling between depth edges. 0 = no growing."}),
-                "body_mask_mode": (["auto", "detector", "seed_grow", "sam"], {"default": "auto",
+                "body_mask_mode": (["auto", "seed_grow", "sam"], {"default": "auto",
                                     "tooltip": "Body mask strategy:\n"
-                                               "- auto: uses detector if connected, else seed_grow (recommended)\n"
-                                               "- detector: SEGS from connected segm/bbox detector as body mask (fastest, best separation)\n"
+                                               "- auto: seed_grow (recommended)\n"
                                                "- seed_grow: BiSeNet + SAM seed, carved by image/depth edges\n"
                                                "- sam: legacy SAM-only body segmentation"}),
                 "depth_sort_order": (["front_last", "front_first", "off"], {"default": "front_last",
@@ -134,13 +146,17 @@ class PersonSelectorMulti:
     CATEGORY = "FVM Tools/Face"
     OUTPUT_NODE = True
 
-    def _collect_references(self, reference_1, **kwargs):
-        refs = [reference_1]
+    def _collect_references(self, reference_1=None, **kwargs):
+        refs = []
+        if reference_1 is not None:
+            refs.append(reference_1)
         for i in range(2, self.MAX_REFERENCES + 1):
             key = f"reference_{i}"
             if key in kwargs and kwargs[key] is not None:
                 refs.append(kwargs[key])
             else:
+                if not refs:
+                    continue  # keep scanning — ref_1 might be empty but ref_2 connected
                 break
         return refs
 
@@ -521,12 +537,12 @@ class PersonSelectorMulti:
             "bisenet_seeds": bisenet_seeds_per_ref,
         }
 
-    def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, guaranteed_refs,
+    def execute(self, sam_model, current_image, auto_threshold, threshold, guaranteed_refs,
                 aggregation, mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
-                detect_threshold=0.3, detect_dilation=10, detect_crop_factor=3.0,
+                aux_model="none", aux_confidence=0.35, aux_label="",
                 match_weights="50/15/15/20",
+                reference_1=None,
                 outfit_palettes=None,
-                segs=None, bbox_detector=None, segm_detector=None,
                 depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
                 body_mask_mode="auto",
                 depth_sort_order="front_last",
@@ -546,7 +562,7 @@ class PersonSelectorMulti:
         refs = self._collect_references(reference_1, **kwargs)
         num_refs = len(refs)
 
-        ref_emb_sets = [self._extract_ref_embeddings(analyzer, rb) for rb in refs]
+        ref_emb_sets = [self._extract_ref_embeddings(analyzer, rb) for rb in refs] if refs else []
         effective_threshold = self.AUTO_FLOOR if auto_threshold else threshold
 
         # Parse appearance weights (3 or 4 values)
@@ -577,7 +593,7 @@ class PersonSelectorMulti:
 
         # Extract reference appearance features (hair color, head histogram)
         ref_appearances = None
-        if use_appearance:
+        if use_appearance and refs:
             ref_appearances = [self._extract_ref_appearance(analyzer, rb, device) for rb in refs]
             weight_parts = [f"face {w_face:.0%}", f"hair {w_hair:.0%}", f"head {w_head:.0%}"]
             if w_outfit > 0:
@@ -605,11 +621,10 @@ class PersonSelectorMulti:
                 depth_edges_list.append(compute_depth_edges(dnp, depth_edge_threshold))
             print(f"[PersonSelectorMulti] Depth: edge_thr={depth_edge_threshold}, carve={depth_carve_strength}, grow={depth_grow_pixels}")
 
-        # Resolve auto body_mask_mode: detector if connected, else seed_grow
-        has_detector = segs is not None or bbox_detector is not None or segm_detector is not None
+        # Resolve auto body_mask_mode
         effective_body_mode = body_mask_mode
         if body_mask_mode == "auto":
-            effective_body_mode = "detector" if has_detector else "seed_grow"
+            effective_body_mode = "seed_grow"
         guaranteed_str = f", guaranteed={guaranteed_refs}" if guaranteed_refs > 0 else ""
         print(f"[PersonSelectorMulti] batch_size={batch_size}, refs={num_refs}, "
               f"auto_threshold={auto_threshold}, effective={effective_threshold}, "
@@ -714,9 +729,8 @@ class PersonSelectorMulti:
         for mt in ALL_MASK_TYPES:
             person_data[f"{mt}_masks"] = person_data_masks[mt]
 
-        # Body-part detection via SEGS/detector (optional)
-        has_detector = segs is not None or bbox_detector is not None or segm_detector is not None
-        if has_detector:
+        # Built-in YOLO body-part detection (optional)
+        if aux_model != "none":
             aux_per_ref = [[] for _ in range(num_refs)]  # list of [1,H,W] per ref per batch
             aux_unassigned = []  # [1,H,W] per batch
             aux_part_counts = []  # [{ri: count}, ...] per batch
@@ -724,30 +738,18 @@ class PersonSelectorMulti:
             for b in range(batch_size):
                 single_image = current_image[b]  # [H, W, C]
 
-                # Get or compute SEGS
-                if segs is not None:
-                    current_segs = segs
-                else:
-                    detector = segm_detector if segm_detector is not None else bbox_detector
-                    current_segs = run_detector(detector, single_image.unsqueeze(0),
-                                                 detect_threshold, detect_dilation, detect_crop_factor)
+                # Run YOLO detection on this image
+                detections = detect_objects(single_image, aux_model,
+                                            confidence=aux_confidence, label_filter=aux_label)
 
-                # Build face centers for identity-based SEGS assignment
-                face_centers = {}
-                br = batch_results[b]
-                for ri, (fi, sim) in br["assignments"].items():
-                    face = br["cur_faces"][fi]
-                    fx1, fy1, fx2, fy2 = face.bbox
-                    face_centers[ri] = ((fx1 + fx2) / 2, (fy1 + fy2) / 2)
-
-                # Assign SEGS to references via face center containment
-                body_masks = person_data.get("body_masks", [])
-                seg_assignments = assign_segs_to_references(current_segs, body_masks, num_refs, b,
-                                                             face_centers=face_centers)
+                # Assign detections to references via body mask overlap
+                body_masks_list = person_data.get("body_masks", [])
+                det_assignments = assign_detections_to_references(
+                    detections, body_masks_list, num_refs, b)
 
                 counts = {}
                 for ri in range(num_refs):
-                    parts = seg_assignments.get(ri, [])
+                    parts = det_assignments.get(ri, [])
                     counts[ri] = len(parts)
                     if parts:
                         merged = torch.max(torch.stack(parts), dim=0)[0]  # [H, W]
@@ -756,7 +758,7 @@ class PersonSelectorMulti:
                         aux_per_ref[ri].append(torch.zeros(1, h, w, dtype=torch.float32))
 
                 # Unassigned parts
-                unassigned_parts = seg_assignments.get(-1, [])
+                unassigned_parts = det_assignments.get(-1, [])
                 if unassigned_parts:
                     merged_unassigned = torch.max(torch.stack(unassigned_parts), dim=0)[0]
                     aux_unassigned.append(merged_unassigned.unsqueeze(0))
@@ -766,7 +768,8 @@ class PersonSelectorMulti:
                 aux_part_counts.append(counts)
 
                 total_parts = sum(counts.values()) + len(unassigned_parts)
-                print(f"[PersonSelectorMulti] Image {b+1}: {total_parts} body parts detected, "
+                labels_found = set(d["label"] for d in detections)
+                print(f"[PersonSelectorMulti] Image {b+1}: {total_parts} detections ({', '.join(labels_found) or 'none'}), "
                       f"{sum(1 for c in counts.values() if c > 0)} refs matched")
 
             # Store in PERSON_DATA
@@ -774,37 +777,40 @@ class PersonSelectorMulti:
             person_data["aux_unassigned_masks"] = torch.cat(aux_unassigned, dim=0)  # [B, H, W]
             person_data["aux_part_counts"] = aux_part_counts
 
-            # Use SEGS person masks as body masks (instance-level, non-overlapping)
-            # The aux assignments already map SEGS to refs via body mask overlap.
-            # If a ref got person-sized SEGS, those are better body masks than SAM.
-            segs_upgraded = 0
+            # Upgrade body masks if YOLO detections are substantial person silhouettes
+            yolo_upgraded = 0
             for b in range(batch_size):
                 for ri in range(num_refs):
                     aux_mask = person_data["aux_masks"][ri][b]
                     aux_area = aux_mask.sum().item()
                     current_body = person_data["body_masks"][ri][b]
                     current_area = current_body.sum().item()
-                    # Replace body mask if SEGS mask is substantial (>30% of current body)
                     if aux_area > current_area * 0.3 and aux_area > 1000:
                         person_data["body_masks"][ri][b] = aux_mask
-                        segs_upgraded += 1
-            if segs_upgraded > 0:
-                print(f"[PersonSelectorMulti] Upgraded {segs_upgraded} body masks from SEGS detector")
+                        yolo_upgraded += 1
+            if yolo_upgraded > 0:
+                print(f"[PersonSelectorMulti] Upgraded {yolo_upgraded} body masks from YOLO detector")
 
         # Legacy mask outputs: face, head, body stacked across batch
         all_face_out = []
         all_head_out = []
         all_body_out = []
-        for b in range(batch_size):
-            mpt = batch_results[b]["masks_per_type"]
-            for ri in range(num_refs):
-                all_face_out.append(mpt["face"][ri])
-                all_head_out.append(mpt["head"][ri])
-                all_body_out.append(mpt["body"][ri])
+        if num_refs > 0:
+            for b in range(batch_size):
+                mpt = batch_results[b]["masks_per_type"]
+                for ri in range(num_refs):
+                    all_face_out.append(mpt["face"][ri])
+                    all_head_out.append(mpt["head"][ri])
+                    all_body_out.append(mpt["body"][ri])
 
-        face_masks_batch = torch.cat(all_face_out, dim=0)
-        head_masks_batch = torch.cat(all_head_out, dim=0)
-        body_masks_batch = torch.cat(all_body_out, dim=0)
+        if all_face_out:
+            face_masks_batch = torch.cat(all_face_out, dim=0)
+            head_masks_batch = torch.cat(all_head_out, dim=0)
+            body_masks_batch = torch.cat(all_body_out, dim=0)
+        else:
+            face_masks_batch = empty_mask(h, w)
+            head_masks_batch = empty_mask(h, w)
+            body_masks_batch = empty_mask(h, w)
 
         total_matched = sum(len(br["assignments"]) for br in batch_results)
         total_faces = sum(br["face_count"] for br in batch_results)
@@ -819,13 +825,13 @@ class PersonSelectorMulti:
             combined_body = empty_mask(h, w)
 
         # Auxiliary masks output
-        if aux_mask_type != "none" and aux_mask_type in MASK_TYPE_LABELS:
+        if aux_mask_type != "none" and aux_mask_type in MASK_TYPE_LABELS and num_refs > 0:
             aux_list = []
             for b in range(batch_size):
                 mpt = batch_results[b]["masks_per_type"]
                 for ri in range(num_refs):
                     aux_list.append(mpt[aux_mask_type][ri])
-            aux_masks_batch = torch.cat(aux_list, dim=0)
+            aux_masks_batch = torch.cat(aux_list, dim=0) if aux_list else empty_mask(h, w)
         else:
             aux_masks_batch = empty_mask(h, w)
 
