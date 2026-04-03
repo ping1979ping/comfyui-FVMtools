@@ -66,7 +66,11 @@ def load_garments(slot_name, outfit_set="general_female"):
     with open(file_path, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            if not line or line.startswith("#"):
+            if not line:
+                continue
+            # Lines starting with # are comments, UNLESS they contain pipe-separated data
+            # (garment lines start with #color# tag followed by garment_name | prob | ...)
+            if line.startswith("#") and "|" not in line:
                 continue
 
             parts = [p.strip() for p in line.split("|")]

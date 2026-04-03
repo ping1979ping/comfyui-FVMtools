@@ -11,6 +11,7 @@ try:
     from .nodes.outfit_generator import FVM_OutfitGenerator
     from .nodes.person_data_refiner import PersonDataRefiner
     from .nodes.person_detailer_controlnet import PersonDetailerControlNet
+    from .nodes.person_detailer_power import PersonDetailerPower
 
     # ── API routes for outfit list editing ──
     import os
@@ -35,43 +36,145 @@ try:
                 h.update(chunk)
         return h.hexdigest()
 
+    import folder_paths as _folder_paths
+
+    def _read_sidecar_metadata(lora_path):
+        """Read metadata from sidecar files next to the LoRA.
+        Checks: .metadata.json (model manager) and .safetensors.rgthree-info.json (rgthree)."""
+        result = {}
+        base = lora_path
+        # Strip .safetensors extension for .metadata.json pattern
+        stem = lora_path.rsplit(".safetensors", 1)[0] if lora_path.endswith(".safetensors") else lora_path
+
+        # Try .metadata.json (written by model manager tools)
+        meta_path = stem + ".metadata.json"
+        if os.path.isfile(meta_path):
+            try:
+                with open(meta_path, "r", encoding="utf-8") as f:
+                    meta = _json.load(f)
+                result["name"] = meta.get("model_name") or meta.get("file_name", "")
+                result["baseModel"] = meta.get("base_model", "")
+                result["sha256"] = meta.get("sha256", "")
+                civitai = meta.get("civitai", {})
+                if civitai:
+                    result["version"] = civitai.get("name", "")
+                    result["triggerWords"] = civitai.get("trainedWords", [])
+                    model_id = civitai.get("modelId", "")
+                    version_id = civitai.get("id", "")
+                    if model_id:
+                        result["civitaiUrl"] = f"https://civitai.com/models/{model_id}?modelVersionId={version_id}"
+                    result["type"] = "LORA"
+                # Preview image
+                for ext in (".jpeg", ".jpg", ".png", ".webp"):
+                    img_path = stem + ext
+                    if os.path.isfile(img_path):
+                        result["previewImage"] = img_path
+                        break
+            except Exception:
+                pass
+
+        # Try .safetensors.rgthree-info.json (written by rgthree)
+        rgthree_path = lora_path + ".rgthree-info.json"
+        if os.path.isfile(rgthree_path):
+            try:
+                with open(rgthree_path, "r", encoding="utf-8") as f:
+                    info = _json.load(f)
+                if not result.get("name"):
+                    result["name"] = info.get("name", "")
+                if not result.get("baseModel"):
+                    result["baseModel"] = info.get("baseModel", "")
+                if not result.get("sha256"):
+                    result["sha256"] = info.get("sha256", "")
+                if not result.get("type"):
+                    result["type"] = info.get("type", "LORA")
+                # rgthree stores trainedWords differently
+                trained = info.get("trainedWords", [])
+                if trained and not result.get("triggerWords"):
+                    result["triggerWords"] = [w.get("word", w) if isinstance(w, dict) else w for w in trained]
+                # Links
+                links = info.get("links", [])
+                if links and not result.get("civitaiUrl"):
+                    for link in links:
+                        if "civitai.com" in str(link):
+                            result["civitaiUrl"] = link
+                            break
+            except Exception:
+                pass
+
+        return result
+
     @PromptServer.instance.routes.get("/fvmtools/lora-info")
     async def _get_lora_info(request):
-        """Get LoRA info from CivitAI by SHA256 hash lookup."""
+        """Get LoRA info — reads sidecar metadata first, falls back to CivitAI API."""
         lora_name = request.rel_url.query.get("file", "")
         if not lora_name:
             return web.json_response({"error": "missing file param"}, status=400)
 
         try:
-            lora_path = folder_paths.get_full_path_or_raise("loras", lora_name)
+            lora_path = _folder_paths.get_full_path_or_raise("loras", lora_name)
         except Exception:
-            return web.json_response({"error": "lora not found"}, status=404)
+            return web.json_response({"error": "lora not found", "file": lora_name}, status=404)
 
-        # Compute SHA256 (cached by path)
-        file_hash = _lora_info_cache.get(f"hash:{lora_path}")
+        # Check in-memory cache first
+        cached = _lora_info_cache.get(f"info:{lora_path}")
+        if cached is not None:
+            return web.json_response(cached)
+
+        # Read sidecar metadata files (.metadata.json, .rgthree-info.json)
+        sidecar = _read_sidecar_metadata(lora_path)
+
+        # If sidecar has good data (name + triggerWords or civitaiUrl), use it directly
+        if sidecar.get("name") and (sidecar.get("triggerWords") or sidecar.get("civitaiUrl")):
+            result = {
+                "name": sidecar.get("name", lora_name),
+                "version": sidecar.get("version", ""),
+                "type": sidecar.get("type", "LORA"),
+                "baseModel": sidecar.get("baseModel", ""),
+                "triggerWords": sidecar.get("triggerWords", []),
+                "civitaiUrl": sidecar.get("civitaiUrl", ""),
+                "sha256": sidecar.get("sha256", ""),
+                "source": "sidecar",
+            }
+            _lora_info_cache[f"info:{lora_path}"] = result
+            return web.json_response(result)
+
+        # Fall back to CivitAI API lookup by SHA256
+        file_hash = sidecar.get("sha256", "")
+        if not file_hash:
+            file_hash = _lora_info_cache.get(f"hash:{lora_path}")
         if not file_hash:
             file_hash = _sha256_file(lora_path)
             _lora_info_cache[f"hash:{lora_path}"] = file_hash
 
-        # Check civitai cache
-        cached = _lora_info_cache.get(f"civitai:{file_hash}")
-        if cached is not None:
-            return web.json_response(cached)
-
-        # Query CivitAI API
         try:
             async with _aiohttp.ClientSession() as session:
                 url = f"https://civitai.com/api/v1/model-versions/by-hash/{file_hash}"
                 async with session.get(url, timeout=_aiohttp.ClientTimeout(total=10)) as resp:
                     if resp.status != 200:
-                        result = {"error": f"CivitAI returned {resp.status}", "sha256": file_hash}
-                        _lora_info_cache[f"civitai:{file_hash}"] = result
+                        # No CivitAI data — return what we have from sidecar
+                        result = {
+                            "name": sidecar.get("name", lora_name),
+                            "version": sidecar.get("version", ""),
+                            "type": sidecar.get("type", ""),
+                            "baseModel": sidecar.get("baseModel", ""),
+                            "triggerWords": sidecar.get("triggerWords", []),
+                            "civitaiUrl": sidecar.get("civitaiUrl", ""),
+                            "sha256": file_hash,
+                            "error": f"CivitAI returned {resp.status}",
+                        }
+                        _lora_info_cache[f"info:{lora_path}"] = result
                         return web.json_response(result)
                     data = await resp.json()
         except Exception as e:
-            return web.json_response({"error": f"CivitAI request failed: {e}", "sha256": file_hash})
+            result = {
+                "name": sidecar.get("name", lora_name),
+                "sha256": file_hash,
+                "error": f"CivitAI request failed: {e}",
+                **{k: sidecar.get(k, "") for k in ("version", "type", "baseModel", "triggerWords", "civitaiUrl")},
+            }
+            return web.json_response(result)
 
-        # Extract useful info
+        # Extract CivitAI info
         model_info = data.get("model", {})
         trained_words = data.get("trainedWords", [])
         model_id = data.get("modelId", "")
@@ -79,16 +182,24 @@ try:
         civitai_url = f"https://civitai.com/models/{model_id}?modelVersionId={version_id}" if model_id else ""
 
         result = {
-            "name": model_info.get("name", lora_name),
-            "version": data.get("name", ""),
-            "type": model_info.get("type", ""),
-            "baseModel": data.get("baseModel", ""),
-            "triggerWords": trained_words,
-            "civitaiUrl": civitai_url,
+            "name": model_info.get("name", sidecar.get("name", lora_name)),
+            "version": data.get("name", sidecar.get("version", "")),
+            "type": model_info.get("type", sidecar.get("type", "")),
+            "baseModel": data.get("baseModel", sidecar.get("baseModel", "")),
+            "triggerWords": trained_words or sidecar.get("triggerWords", []),
+            "civitaiUrl": civitai_url or sidecar.get("civitaiUrl", ""),
             "sha256": file_hash,
+            "source": "civitai",
         }
-        _lora_info_cache[f"civitai:{file_hash}"] = result
+        _lora_info_cache[f"info:{lora_path}"] = result
         return web.json_response(result)
+
+    @PromptServer.instance.routes.get("/fvmtools/loras")
+    async def _get_loras(request):
+        """List available LoRA files for the Power LoRA widget."""
+        import folder_paths as _fp
+        loras = _fp.get_filename_list("loras")
+        return web.json_response({"loras": loras})
 
     @PromptServer.instance.routes.get("/fvmtools/outfit-files")
     async def _get_outfit_files(request):
@@ -151,6 +262,7 @@ try:
         "FVM_OutfitGenerator": FVM_OutfitGenerator,
         "PersonDataRefiner": PersonDataRefiner,
         "PersonDetailerControlNet": PersonDetailerControlNet,
+        "PersonDetailerPower": PersonDetailerPower,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -165,6 +277,7 @@ try:
         "FVM_OutfitGenerator": "Outfit Generator",
         "PersonDataRefiner": "Person Data Refiner",
         "PersonDetailerControlNet": "Person Detailer ControlNet",
+        "PersonDetailerPower": "Person Detailer Power",
     }
 
     WEB_DIRECTORY = "./web/js"

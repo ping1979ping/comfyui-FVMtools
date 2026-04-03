@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+long cyberpunk trench coat with armored panels | 0.65 | 0.0-0.5 | neoprene,leather
+tactical bomber jacket with shoulder armor | 0.60 | 0.0-0.5 | kevlar,nylon
+heavy armored vest with chest plate | 0.55 | 0.1-0.6 | kevlar,carbon_fiber
+pilot flight jacket with unit insignia | 0.60 | 0.3-0.7 | neoprene,leather
+hooded longcoat with reactive camo panels | 0.45 | 0.1-0.5 | neoprene,kevlar
+structured officer overcoat with chrome epaulettes | 0.45 | 0.6-1.0 | satin,neoprene
+armored shoulder cape with chrome trim | 0.35 | 0.3-0.8 | kevlar,metal_mesh

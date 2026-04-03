@@ -8,7 +8,9 @@ class InpaintOptions:
     RETURN_NAMES = ("inpaint_options",)
     DESCRIPTION = (
         "Advanced inpaint settings and per-slot overrides for Person Detailer.\n\n"
-        "Controls mask preprocessing, crop region expansion, and per-slot options:\n"
+        "Controls mask preprocessing, crop region expansion, CFG, and per-slot options:\n"
+        "- cfg: Classifier-Free Guidance scale for sampling contrast\n"
+        "- negative_prompt: additional negative prompt combined with the negative conditioning input\n"
         "- mask_type: which mask to use per reference slot (head/face/body/aux)\n"
         "  'aux' uses body-part masks from detector connected to Person Selector Multi\n"
         "- rounds: number of inpaint passes per crop (latent cycling)\n"
@@ -23,6 +25,24 @@ class InpaintOptions:
         mask_types = ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories", "aux"]
 
         widgets = {
+            "cfg": ("FLOAT", {"default": 1.0, "min": 1.0, "max": 30.0, "step": 0.5,
+                               "tooltip": "Classifier-Free Guidance scale.\n\n"
+                                          "Controls how strongly the sampler follows the prompt vs. generating freely.\n"
+                                          "Higher values = more contrast and prompt adherence, but can oversaturate.\n\n"
+                                          "Recommended values:\n"
+                                          "  1.0 — no guidance (default, best for distilled/turbo models)\n"
+                                          "  1.5-3.0 — light guidance, reduces paleness\n"
+                                          "  4.0-7.0 — standard guidance for non-distilled models\n"
+                                          "  8.0+ — strong guidance, risk of artifacts"}),
+            "negative_prompt": ("STRING", {"multiline": True, "default": "",
+                                            "tooltip": "Additional negative prompt text for inpainting.\n\n"
+                                                       "This is encoded and combined with the negative conditioning\n"
+                                                       "input on the Person Detailer node. If no negative conditioning\n"
+                                                       "is connected, this text alone is used as negative.\n\n"
+                                                       "Useful for suppressing common inpaint artifacts:\n"
+                                                       "  'blurry, washed out, pale, low contrast'\n"
+                                                       "  'extra fingers, deformed hands, bad anatomy'\n\n"
+                                                       "Leave empty to use only the connected negative conditioning."}),
             "mask_fill_holes": ("BOOLEAN", {"default": True,
                                              "tooltip": "Fill holes in masks before inpainting (closes gaps in segmentation)"}),
             "context_expand_factor": ("FLOAT", {"default": 1.20, "min": 1.0, "max": 3.0, "step": 0.05,
@@ -91,6 +111,8 @@ class InpaintOptions:
             }
 
         return ({
+            "cfg": kwargs.get("cfg", 1.0),
+            "negative_prompt": kwargs.get("negative_prompt", ""),
             "mask_fill_holes": kwargs["mask_fill_holes"],
             "context_expand_factor": kwargs["context_expand_factor"],
             "output_padding": kwargs["output_padding"],

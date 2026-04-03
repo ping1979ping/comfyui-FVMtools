@@ -1,0 +1,21 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual / street
+cropped neon-trimmed tank top | 0.60 | 0.0-0.3 | neoprene,mesh
+mesh-panel sports bra with LED strips | 0.45 | 0.0-0.2 | mesh,spandex
+holographic crop top | 0.55 | 0.0-0.3 | holographic,spandex
+asymmetric cutout bodysuit | 0.50 | 0.0-0.4 | spandex,neoprene
+
+# mid-range / tactical
+fitted tactical bodysuit with utility harness | 0.80 | 0.2-0.7 | neoprene,kevlar
+high-collar flight suit top with shoulder pads | 0.70 | 0.3-0.7 | kevlar,neoprene
+armored vest over compression shirt | 0.65 | 0.2-0.6 | kevlar,carbon_fiber
+sleek pilot jumpsuit top with rank patches | 0.60 | 0.3-0.7 | neoprene,spandex
+form-fitting uniform top with glowing circuit lines | 0.75 | 0.2-0.8 | spandex,neoprene
+ribbed turtleneck with metallic threads | 0.55 | 0.3-0.7 | spandex,mesh
+
+# formal / elegant
+structured high-collar evening top with chrome accents | 0.50 | 0.6-1.0 | satin,holographic
+iridescent draped blouse with floating shoulder pieces | 0.45 | 0.7-1.0 | holographic,satin
+metallic corset top with fiber optic detailing | 0.40 | 0.5-0.9 | metal_mesh,satin

@@ -1,0 +1,8 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+white fur trim | 0.65 | top,bottom,headwear,outerwear | 0.3-0.7
+candy cane stripes | 0.30 | bottom,headwear | 0.3-0.5
+snowflake pattern | 0.25 | top,bottom | 0.3-0.5
+holly embroidery | 0.20 | top | 0.3-0.5
+red and green plaid | 0.25 | top,bottom | 0.3-0.5
+gold sequin detail | 0.20 | top | 0.3-0.6
+jingle bell trim | 0.15 | headwear,outerwear | 0.3-0.5

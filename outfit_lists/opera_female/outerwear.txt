@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# faux fur stole | 0.75 | 0.7-1.0 | faux_fur
+#color# velvet opera cape | 0.55 | 0.8-1.0 | velvet,silk
+#color# silk evening shawl | 0.85 | 0.6-0.9 | silk,chiffon
+#color# embroidered bolero jacket | 0.50 | 0.7-1.0 | silk,brocade
+#color# cashmere wrap | 0.60 | 0.6-0.9 | cashmere
+#color# tailored tuxedo blazer | 0.40 | 0.6-0.9 | wool,silk
+#color# beaded capelet | 0.35 | 0.8-1.0 | silk,organza
+#color# satin evening coat | 0.45 | 0.7-1.0 | satin,silk

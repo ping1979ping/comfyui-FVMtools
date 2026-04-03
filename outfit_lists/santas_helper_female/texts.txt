@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NAUGHTY" | 0.20 | top | playful script
+"NICE" | 0.20 | top | elegant serif
+"ELF" | 0.15 | top | playful bold
+"SANTA'S HELPER" | 0.15 | top | festive serif
+"MERRY" | 0.15 | top | playful script
+"JINGLE" | 0.10 | top | festive bold

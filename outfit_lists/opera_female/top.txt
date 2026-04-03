@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# integrated (dresses dominate — top is usually part of dress)
+#color# strapless bustier bodice | 0.65 | 0.7-1.0 | silk,satin,taffeta
+#color# fitted corset top | 0.55 | 0.7-1.0 | silk,satin,brocade
+#color# off-shoulder draped blouse | 0.65 | 0.6-0.9 | silk,chiffon,satin
+#color# silk camisole | 0.70 | 0.5-0.8 | silk,satin
+#color# velvet wrap top | 0.50 | 0.6-0.9 | velvet,silk
+#color# beaded halter top | 0.40 | 0.7-1.0 | silk,satin
+#color# lace blouse | 0.60 | 0.5-0.8 | lace,silk
+#color# high-neck silk blouse | 0.50 | 0.6-0.9 | silk,satin,chiffon

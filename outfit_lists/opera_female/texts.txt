@@ -1,0 +1,2 @@
+# format: text_content | probability | compatible_slots | font_hint
+# Opera outfits typically have no text — this file is minimal

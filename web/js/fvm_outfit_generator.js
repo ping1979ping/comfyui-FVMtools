@@ -33,7 +33,69 @@ function createEditorModal() {
         borderRadius: "6px", padding: "4px 8px", fontSize: "13px", cursor: "pointer",
     });
 
-    header.append(title, fileSelect);
+    const helpBtn = document.createElement("button");
+    helpBtn.textContent = "?";
+    helpBtn.title = "Show format reference";
+    Object.assign(helpBtn.style, {
+        background: "#313244", color: "#89b4fa", border: "1px solid #45475a",
+        borderRadius: "50%", width: "24px", height: "24px", fontSize: "14px",
+        cursor: "pointer", fontWeight: "bold", lineHeight: "1", padding: "0",
+    });
+
+    header.append(title, fileSelect, helpBtn);
+
+    // Help panel (hidden by default)
+    const helpPanel = document.createElement("div");
+    helpPanel.style.display = "none";
+    Object.assign(helpPanel.style, {
+        background: "#11111b", border: "1px solid #45475a", borderRadius: "6px",
+        padding: "12px", fontSize: "12px", lineHeight: "1.6", color: "#a6adc8",
+        maxHeight: "280px", overflowY: "auto",
+    });
+    helpPanel.innerHTML = `
+        <div style="color:#89b4fa;font-weight:bold;margin-bottom:8px">Garment List Format Reference</div>
+        <div style="color:#f9e2af;font-family:monospace;margin-bottom:10px">
+            garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+        </div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:8px">Probability</div>
+        <div>Selection weight when multiple garments match. Higher = picked more often.<br>
+        Not a percentage — values are relative. A garment with <b>0.9</b> is 3x more likely
+        than one with <b>0.3</b>. Range: any positive number, typically 0.1–1.0.</div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:8px">Formality (min-max)</div>
+        <div>Range <b>0.0</b> (very casual) to <b>1.0</b> (very formal).<br>
+        A garment is only eligible when the node's formality slider falls within its range.<br>
+        <span style="color:#a6e3a1">0.0-0.3</span> = casual only &nbsp;
+        <span style="color:#f9e2af">0.3-0.7</span> = mid-range &nbsp;
+        <span style="color:#f38ba8">0.7-1.0</span> = formal only<br>
+        Wide ranges like <b>0.0-0.8</b> = versatile, narrow like <b>0.8-1.0</b> = specialized.<br>
+        Overlap is fine — multiple garments compete via probability.</div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:8px">Fabrics</div>
+        <div>Comma-separated list of compatible fabrics for this garment.<br>
+        The engine picks one based on formality distance from <b>fabrics.txt</b>.<br>
+        Each fabric in fabrics.txt has its own formality score — closer match = preferred.<br>
+        Props without fabric (barefoot, candy cane) can leave this empty.</div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:8px">#color# prefix</div>
+        <div>Prefix garment names with <b>#color#</b> to insert a color placeholder:<br>
+        <span style="color:#a6e3a1;font-family:monospace">#color# sports bra | 0.95 | 0.0-0.1 | spandex</span><br>
+        The Color Replace node substitutes #color# with actual color names.</div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:8px">Comments</div>
+        <div>Lines starting with <b>#</b> (without a pipe <b>|</b>) are comments — ignored by the parser.</div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:8px">Other file types</div>
+        <div style="margin-top:2px">
+        <b>fabrics.txt</b>: <span style="font-family:monospace">name | formality | family | weight</span><br>
+        <b>prints.txt</b>: <span style="font-family:monospace">name | probability | slot1,slot2 | formality_min-max</span><br>
+        <b>texts.txt</b>: <span style="font-family:monospace">"TEXT" | probability | slot1,slot2 | font description</span>
+        </div>
+    `;
+    helpBtn.addEventListener("click", () => {
+        helpPanel.style.display = helpPanel.style.display === "none" ? "block" : "none";
+    });
 
     // Textarea
     const textarea = document.createElement("textarea");
@@ -79,7 +141,7 @@ function createEditorModal() {
     Object.assign(cancelBtn.style, { ...btnStyle, background: "#45475a", color: "#cdd6f4" });
 
     btnRow.append(saveBtn, cancelBtn);
-    dialog.append(header, textarea, status, btnRow);
+    dialog.append(header, helpPanel, textarea, status, btnRow);
     overlay.append(dialog);
     document.body.append(overlay);
 

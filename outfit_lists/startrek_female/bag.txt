@@ -1,0 +1,6 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+starfleet away team satchel | 0.35 | 0.0-0.6 | nylon,leather
+medical kit bag | 0.30 | 0.0-0.5 | nylon,plastic
+equipment pouch on belt | 0.40 | 0.0-0.6 | nylon,leather

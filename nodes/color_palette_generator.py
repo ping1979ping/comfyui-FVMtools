@@ -41,53 +41,104 @@ class FVM_ColorPaletteGenerator:
                     "default": 0,
                     "min": 0,
                     "max": 0xFFFFFFFF,
+                    "tooltip": "Random seed for deterministic palette generation.\n"
+                               "Same seed + same settings = same palette every time.",
                 }),
                 "num_colors": ("INT", {
                     "default": 5,
                     "min": 2,
                     "max": 8,
+                    "tooltip": "Number of colors to generate (2-8).\n\n"
+                               "5 is recommended — maps to the semantic roles:\n"
+                               "primary, secondary, accent, neutral, metallic.\n"
+                               "Extra colors are available as color_6, color_7, color_8.",
                 }),
-                "harmony_type": (cls._HARMONY_TYPES,),
-                "style_preset": (sorted(STYLE_PRESETS.keys()),),
+                "harmony_type": (cls._HARMONY_TYPES, {
+                    "tooltip": "Color harmony algorithm for hue selection.\n\n"
+                               "auto — picks a harmony type based on seed\n"
+                               "analogous — neighboring hues (calm, cohesive)\n"
+                               "complementary — opposite hues (bold contrast)\n"
+                               "split_complementary — one hue + two adjacent opposites\n"
+                               "triadic — three evenly spaced hues (vibrant)\n"
+                               "tetradic — four hues in two complementary pairs\n"
+                               "monochromatic — single hue, varied lightness/saturation",
+                }),
+                "style_preset": (sorted(STYLE_PRESETS.keys()), {
+                    "tooltip": "Visual style that influences color selection.\n\n"
+                               "Each preset defines preferred hue ranges, saturation,\n"
+                               "and lightness profiles. E.g. 'pastel' favors light desaturated\n"
+                               "colors, 'gothic' favors dark reds/purples/blacks.",
+                }),
                 "vibrancy": ("FLOAT", {
                     "default": 0.5,
                     "min": 0.0,
                     "max": 1.0,
                     "step": 0.05,
+                    "tooltip": "Color saturation intensity.\n\n"
+                               "0.0 = muted, desaturated (grays, pastels)\n"
+                               "0.5 = balanced (default)\n"
+                               "1.0 = vivid, highly saturated colors",
                 }),
                 "contrast": ("FLOAT", {
                     "default": 0.5,
                     "min": 0.0,
                     "max": 1.0,
                     "step": 0.05,
+                    "tooltip": "Lightness spread between colors.\n\n"
+                               "0.0 = all colors at similar brightness\n"
+                               "0.5 = moderate light/dark variation (default)\n"
+                               "1.0 = maximum spread (very light + very dark colors)",
                 }),
                 "warmth": ("FLOAT", {
                     "default": 0.5,
                     "min": 0.0,
                     "max": 1.0,
                     "step": 0.05,
+                    "tooltip": "Color temperature bias.\n\n"
+                               "0.0 = cool (blues, greens, purples)\n"
+                               "0.5 = neutral (default)\n"
+                               "1.0 = warm (reds, oranges, yellows)",
                 }),
                 "neutral_ratio": ("FLOAT", {
                     "default": 0.4,
                     "min": 0.0,
                     "max": 1.0,
                     "step": 0.1,
+                    "tooltip": "Proportion of neutral/muted colors in the palette.\n\n"
+                               "0.0 = all colors are chromatic (vibrant)\n"
+                               "0.4 = ~40% neutrals like gray, beige, cream (default)\n"
+                               "1.0 = mostly neutrals (subdued palette)",
                 }),
                 "include_metallics": ("BOOLEAN", {
                     "default": True,
+                    "tooltip": "Include metallic colors (gold, silver, bronze, rose-gold, etc.).\n\n"
+                               "When enabled, one palette slot is reserved for a metallic color\n"
+                               "and output as the 'metallic' role. Useful for jewelry/accessories.",
                 }),
             },
             "optional": {
-                "palette_source": (["generate", "from_file"],),
+                "palette_source": (["generate", "from_file"], {
+                    "tooltip": "generate — create palette from seed + settings (default)\n"
+                               "from_file — pick a palette from the wildcard_file text below",
+                }),
                 "wildcard_file": ("STRING", {
                     "default": "",
                     "multiline": True,
                     "placeholder": "One palette per line: red, blue, green, white, gold",
+                    "tooltip": "Manual palette list (one per line, comma-separated color names).\n\n"
+                               "Only used when palette_source = 'from_file'.\n"
+                               "Example:\n"
+                               "  navy-blue, soft-pink, charcoal, gold, cream\n"
+                               "  forest-green, burgundy, tan, silver, ivory\n\n"
+                               "Use palette_index to pick a specific line, or -1 for random by seed.",
                 }),
                 "palette_index": ("INT", {
                     "default": -1,
                     "min": -1,
                     "max": 9999,
+                    "tooltip": "Which line to pick from wildcard_file.\n\n"
+                               "-1 = random line based on seed (default)\n"
+                               "0+ = specific line number (wraps around if too large)",
                 }),
             },
         }

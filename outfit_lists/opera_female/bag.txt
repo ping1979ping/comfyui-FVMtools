@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# satin clutch | 0.95 | 0.7-1.0 | satin,silk
+#color# beaded evening bag | 0.70 | 0.8-1.0 | silk,satin
+#color# velvet minaudiere | 0.50 | 0.8-1.0 | velvet
+#color# metallic box clutch | 0.50 | 0.7-1.0 | metal
+#color# pearl-encrusted clutch | 0.40 | 0.8-1.0 | satin
+#color# envelope clutch | 0.60 | 0.6-0.9 | satin,leather

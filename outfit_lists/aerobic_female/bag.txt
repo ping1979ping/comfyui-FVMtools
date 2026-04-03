@@ -1,0 +1,7 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# gym duffel bag | 0.80 | 0.0-0.2 | nylon,polyester
+#color# drawstring backpack | 0.70 | 0.0-0.2 | nylon,polyester
+#color# belt bag | 0.60 | 0.0-0.2 | nylon,spandex
+#color# sports tote | 0.50 | 0.0-0.2 | nylon,polyester

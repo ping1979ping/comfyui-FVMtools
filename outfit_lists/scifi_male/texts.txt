@@ -1,0 +1,7 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"SECTOR 7" | 0.20 | top | stencil font
+"VOID RUNNER" | 0.15 | top,outerwear | bold angular font
+"2187" | 0.20 | top,accessories | digital LCD font
+"ALPHA SQUAD" | 0.15 | top,outerwear | military stencil font
+"NEXUS CORP" | 0.15 | top | corporate futuristic font

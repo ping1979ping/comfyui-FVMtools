@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+magnetic hip pouch with chrome clasp | 0.50 | 0.0-0.6 | nylon,leather
+sleek backpack with integrated solar panel | 0.40 | 0.0-0.5 | nylon,kevlar
+transparent messenger bag with neon frame | 0.35 | 0.0-0.4 | plastic,nylon
+structured metallic clutch | 0.30 | 0.5-1.0 | metal_mesh,satin
+tactical sling bag with glow-strip | 0.45 | 0.1-0.6 | nylon,neoprene

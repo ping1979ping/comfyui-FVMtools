@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Santa hat with white fur pompom | 1.00 | 0.3-0.6 | velvet,faux_fur
+red velvet Santa cap | 0.65 | 0.3-0.6 | velvet,faux_fur
+long droopy red Santa hat | 0.40 | 0.3-0.6 | velvet,faux_fur

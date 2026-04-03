@@ -1,0 +1,22 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# minimal / studio
+ sports bra | 0.95 | 0.0-0.1 | spandex,nylon
+ halter bra top | 0.70 | 0.0-0.1 | spandex,nylon
+ strappy back bra top | 0.55 | 0.0-0.1 | spandex,nylon
+longline sports bra | 0.85 | 0.0-0.1 | spandex,nylon,bamboo
+ cross-back bra top | 0.55 | 0.0-0.1 | spandex,nylon
+
+# relaxed
+cropped tank top | 0.90 | 0.0-0.2 | cotton,bamboo,modal
+racerback tank | 0.85 | 0.0-0.2 | cotton,bamboo,jersey
+flowy yoga top | 0.75 | 0.0-0.2 | bamboo,modal,cotton
+loose fit muscle tee | 0.65 | 0.0-0.2 | cotton,jersey
+open-back tank top | 0.55 | 0.0-0.2 | bamboo,modal
+
+# covered
+itted long-sleeve top | 0.75 | 0.1-0.3 | nylon,spandex,bamboo
+wrap top | 0.65 | 0.1-0.3 | modal,bamboo,cotton
+mock neck crop top | 0.50 | 0.1-0.3 | nylon,spandex
+off-shoulder yoga top | 0.40 | 0.1-0.3 | bamboo,modal,cotton

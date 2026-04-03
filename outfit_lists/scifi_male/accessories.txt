@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# tech
+wrist-mounted holographic communicator | 0.60 | 0.0-0.8 | metal,plastic
+cybernetic arm bracelet with data display | 0.50 | 0.0-0.7 | metal
+utility belt with magnetic tool pouches | 0.60 | 0.1-0.6 | nylon,leather
+earpiece communicator with blue glow | 0.50 | 0.0-0.8 | metal,plastic
+holstered energy pistol on thigh | 0.45 | 0.0-0.5 | plastic,metal
+dog tags with embedded data chip | 0.40 | 0.0-0.7 | metal
+
+# formal
+chrome cufflinks with embedded circuit | 0.30 | 0.5-1.0 | metal
+officer rank pins on collar | 0.35 | 0.4-1.0 | metal

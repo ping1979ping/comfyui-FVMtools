@@ -62,6 +62,10 @@ class PersonSelectorMulti:
                                                "tooltip": "Auto: finds optimal 1:1 face-reference assignment (ignores threshold). Off: uses manual threshold."}),
                 "threshold": ("FLOAT", {"default": 0.40, "min": 0.0, "max": 1.0, "step": 0.01,
                                         "tooltip": "Minimum cosine similarity to count as match. Ignored when auto_threshold is on."}),
+                "guaranteed_refs": ("INT", {"default": 0, "min": 0, "max": 10, "step": 1,
+                                            "tooltip": "Force-assign the first N references to their best matching face, ignoring threshold.\n"
+                                                        "0 = off (default). 2 = Ref1 and Ref2 always get assigned.\n"
+                                                        "Useful when key characters must always be detailed."}),
                 "aggregation": (["max", "mean", "min"],
                                 {"tooltip": "How to combine similarity scores across multiple reference images of the same person"}),
                 "mask_fill_holes": ("BOOLEAN", {"default": True,
@@ -201,17 +205,35 @@ class PersonSelectorMulti:
                 sim_matrix[ri, fi] = aggregate_similarities(sims, aggregation)
         return sim_matrix
 
-    def _assign_greedy(self, sim_matrix, threshold):
+    def _assign_greedy(self, sim_matrix, threshold, guaranteed_refs=0):
         num_refs, num_faces = sim_matrix.shape
+        assigned_faces = set()
+        assignments = {}
+
+        # Phase 1: Force-assign guaranteed refs (best face, no threshold)
+        if guaranteed_refs > 0 and num_faces > 0:
+            for ri in range(min(guaranteed_refs, num_refs)):
+                best_fi = -1
+                best_sim = -1.0
+                for fi in range(num_faces):
+                    if fi not in assigned_faces and sim_matrix[ri, fi] > best_sim:
+                        best_sim = sim_matrix[ri, fi]
+                        best_fi = fi
+                if best_fi >= 0:
+                    assignments[ri] = (best_fi, float(best_sim))
+                    assigned_faces.add(best_fi)
+                    print(f"    Ref{ri+1} force-assigned → face {best_fi+1} (sim={best_sim:.3f})")
+
+        # Phase 2: Greedy assignment for remaining refs (with threshold)
         candidates = []
         for ri in range(num_refs):
+            if ri in assignments:
+                continue
             for fi in range(num_faces):
                 if sim_matrix[ri, fi] >= threshold:
                     candidates.append((ri, fi, sim_matrix[ri, fi]))
         candidates.sort(key=lambda x: x[2], reverse=True)
 
-        assigned_faces = set()
-        assignments = {}
         for ri, fi, sim in candidates:
             if ri in assignments or fi in assigned_faces:
                 continue
@@ -343,7 +365,7 @@ class PersonSelectorMulti:
                                ref_outfit_hists=None, ref_palette_colors=None,
                                depth_edges_data=None, depth_np=None,
                                depth_carve_strength=0.8, depth_grow=30,
-                               body_mask_mode="auto"):
+                               body_mask_mode="auto", guaranteed_refs=0):
         """Process a single image and return per-ref masks, assignments, faces, etc."""
         h, w = single_image.shape[1], single_image.shape[2]
 
@@ -423,7 +445,7 @@ class PersonSelectorMulti:
             if sim_matrix.size > 0:
                 print(f"[PersonSelectorMulti] sim_matrix:\n{np.array2string(sim_matrix, precision=4)}")
 
-        assignments = self._assign_greedy(sim_matrix, effective_threshold)
+        assignments = self._assign_greedy(sim_matrix, effective_threshold, guaranteed_refs=guaranteed_refs)
 
         # Collect all mask types per reference
         from .utils.masker import ALL_MASK_TYPES
@@ -499,8 +521,8 @@ class PersonSelectorMulti:
             "bisenet_seeds": bisenet_seeds_per_ref,
         }
 
-    def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, aggregation,
-                mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
+    def execute(self, sam_model, current_image, reference_1, auto_threshold, threshold, guaranteed_refs,
+                aggregation, mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
                 detect_threshold=0.3, detect_dilation=10, detect_crop_factor=3.0,
                 match_weights="50/15/15/20",
                 outfit_palettes=None,
@@ -588,9 +610,10 @@ class PersonSelectorMulti:
         effective_body_mode = body_mask_mode
         if body_mask_mode == "auto":
             effective_body_mode = "detector" if has_detector else "seed_grow"
+        guaranteed_str = f", guaranteed={guaranteed_refs}" if guaranteed_refs > 0 else ""
         print(f"[PersonSelectorMulti] batch_size={batch_size}, refs={num_refs}, "
               f"auto_threshold={auto_threshold}, effective={effective_threshold}, "
-              f"body_mode={effective_body_mode}" + (" (auto)" if body_mask_mode == "auto" else ""))
+              f"body_mode={effective_body_mode}" + (" (auto)" if body_mask_mode == "auto" else "") + guaranteed_str)
 
         # Process each image in the batch
         batch_results = []
@@ -607,6 +630,7 @@ class PersonSelectorMulti:
                 depth_carve_strength=depth_carve_strength,
                 depth_grow=depth_grow_pixels,
                 body_mask_mode=effective_body_mode,
+                guaranteed_refs=guaranteed_refs,
             )
             batch_results.append(result)
 

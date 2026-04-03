@@ -14,7 +14,7 @@ import comfy.sample
 import comfy.samplers
 import comfy.model_management
 import latent_preview
-from comfy_extras.nodes_custom_sampler import Guider_Basic
+from comfy.samplers import CFGGuider
 
 from .mask_utils import expand_mask, feather_mask, fill_mask_holes_2d
 from .detail_daemon import apply_detail_daemon_to_sigmas, DD_DEFAULTS
@@ -253,6 +253,7 @@ def inpaint_slot(
     repeat=1,
     denoise_progression="", steps_progression="",
     controlnet_apply_fn=None,
+    cfg=1.0,
 ):
     """Run the full inpaint pipeline for a single masked region.
 
@@ -334,8 +335,9 @@ def inpaint_slot(
                 model, round_positive, round_negative, current_crop)
 
         # Create guider with (possibly patched) model and conditioning
-        guider = Guider_Basic(round_model)
-        guider.set_conds(round_positive)
+        guider = CFGGuider(round_model)
+        guider.set_conds(round_positive, round_negative)
+        guider.set_cfg(cfg)
 
         # Per-round denoise and steps
         round_denoise = denoise_per_round[iteration]

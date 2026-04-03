@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heavy armored combat boots with magnetic soles | 0.75 | 0.0-0.7 | leather,kevlar
+tactical ankle boots with reinforced toe | 0.70 | 0.2-0.7 | leather,neoprene
+sleek knee-high boots with chrome accents | 0.55 | 0.3-0.8 | leather,metal_mesh
+minimalist futuristic sneakers with LED sole | 0.45 | 0.0-0.3 | mesh,rubber
+officer dress boots with polished chrome buckle | 0.40 | 0.6-1.0 | leather

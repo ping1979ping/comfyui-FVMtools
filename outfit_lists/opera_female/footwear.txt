@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# stiletto heels | 0.95 | 0.7-1.0 | satin,leather
+#color# strappy high-heel sandals | 0.80 | 0.7-1.0 | satin,leather
+#color# satin pumps | 0.90 | 0.6-0.9 | satin
+#color# embellished heels | 0.60 | 0.8-1.0 | satin,silk
+#color# velvet heels | 0.50 | 0.7-1.0 | velvet
+#color# metallic heels | 0.50 | 0.7-1.0 | leather
+#color# kitten heels | 0.40 | 0.5-0.8 | satin,leather
+#color# platform heels | 0.40 | 0.6-0.9 | satin,velvet

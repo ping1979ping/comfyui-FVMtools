@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cross-training shoes | 0.95 | 0.0-0.2 | mesh,nylon
+#color# aerobic sneakers | 0.85 | 0.0-0.2 | mesh,nylon,polyester
+#color# high-top training shoes | 0.55 | 0.0-0.2 | mesh,nylon
+#color# lightweight running shoes | 0.70 | 0.0-0.2 | mesh,nylon
+#color# dance sneakers | 0.45 | 0.0-0.2 | mesh,nylon

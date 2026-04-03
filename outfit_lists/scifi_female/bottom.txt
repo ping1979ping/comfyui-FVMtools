@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+high-waisted cargo pants with glow-strip seams | 0.70 | 0.0-0.4 | neoprene,nylon
+skin-tight leggings with circuit board pattern | 0.60 | 0.0-0.3 | spandex,mesh
+holographic mini skirt | 0.45 | 0.0-0.3 | holographic,spandex
+
+# tactical
+armored tactical pants with knee plates | 0.80 | 0.2-0.7 | kevlar,neoprene
+fitted combat trousers with thigh holsters | 0.70 | 0.2-0.6 | kevlar,nylon
+sleek pilot flight pants | 0.65 | 0.3-0.7 | neoprene,spandex
+utility jumpsuit pants with magnetic closures | 0.55 | 0.2-0.7 | neoprene,nylon
+
+# formal
+flowing asymmetric skirt with LED hem | 0.45 | 0.6-1.0 | satin,holographic
+structured high-waisted palazzo pants | 0.50 | 0.5-1.0 | satin,neoprene
+fitted metallic trousers with chrome piping | 0.55 | 0.5-0.9 | metal_mesh,satin

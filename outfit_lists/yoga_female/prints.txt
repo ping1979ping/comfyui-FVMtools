@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tie-dye pattern | 0.30 | top,bottom | 0.0-0.2
+mandala print | 0.25 | top,bottom | 0.0-0.2
+marble print | 0.25 | top,bottom | 0.0-0.2
+abstract watercolor | 0.20 | top,bottom | 0.0-0.2
+tropical leaf print | 0.20 | top,bottom | 0.0-0.2
+ombre gradient | 0.30 | top,bottom | 0.0-0.2
+subtle lotus print | 0.20 | top,bottom | 0.0-0.2
+geometric pattern | 0.25 | top,bottom | 0.0-0.3
+color-block | 0.35 | top,bottom,outerwear | 0.0-0.3
+mesh panel detail | 0.30 | top,bottom | 0.0-0.2
+minimal logo | 0.25 | top,headwear | 0.1-0.3

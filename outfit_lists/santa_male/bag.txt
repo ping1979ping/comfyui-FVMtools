@@ -1,0 +1,6 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+large red velvet gift sack | 0.95 | 0.3-0.6 | velvet,cotton
+brown burlap toy sack | 0.50 | 0.3-0.5 | cotton
+red drawstring bag | 0.40 | 0.3-0.5 | velvet

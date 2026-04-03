@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical visor with holographic HUD | 0.45 | 0.0-0.6 | plastic,metal
+pilot helmet with retractable face shield | 0.35 | 0.2-0.7 | kevlar,plastic
+neural interface headband with glowing nodes | 0.35 | 0.0-0.7 | metal,plastic
+augmented reality glasses with chrome frame | 0.45 | 0.0-0.8 | metal,plastic
+military beret with holographic unit patch | 0.25 | 0.4-0.9 | neoprene
+hooded cowl with face-framing LED strip | 0.30 | 0.0-0.5 | neoprene,mesh

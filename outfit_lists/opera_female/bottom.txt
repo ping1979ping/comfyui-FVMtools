@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# full-length gowns (most common — "bottom" is the skirt part)
+#color# floor-length evening gown skirt | 1.00 | 0.7-1.0 | silk,satin,taffeta,chiffon
+#color# A-line ball gown skirt | 0.75 | 0.8-1.0 | taffeta,satin,organza
+#color# mermaid gown skirt | 0.65 | 0.7-1.0 | silk,satin,crepe
+#color# flowing chiffon skirt | 0.60 | 0.6-0.9 | chiffon,silk
+#color# high-slit evening skirt | 0.50 | 0.7-1.0 | silk,satin,crepe
+
+# separates
+#color# wide-leg palazzo pants | 0.40 | 0.6-0.9 | silk,satin,velvet
+#color# tailored tuxedo trousers | 0.40 | 0.6-0.9 | wool,silk
+#color# silk midi skirt | 0.50 | 0.5-0.8 | silk,satin
+#color# velvet pencil skirt | 0.40 | 0.6-0.9 | velvet

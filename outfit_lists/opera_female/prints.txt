@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral brocade | 0.30 | top,bottom | 0.7-1.0
+damask pattern | 0.25 | top,bottom | 0.7-1.0
+subtle jacquard | 0.30 | top,bottom,outerwear | 0.6-1.0
+delicate lace overlay | 0.35 | top,bottom | 0.6-1.0
+beaded embroidery | 0.30 | top,bottom | 0.8-1.0
+sequin detailing | 0.35 | top,bottom | 0.7-1.0
+metallic thread accent | 0.25 | top,outerwear | 0.7-1.0
+art deco pattern | 0.20 | top,bottom | 0.7-1.0
+paisley | 0.15 | top,outerwear | 0.6-0.9
+tone-on-tone pattern | 0.25 | top,bottom | 0.6-0.9

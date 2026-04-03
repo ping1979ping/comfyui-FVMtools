@@ -1,0 +1,20 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# tight / studio
+high-waisted yoga leggings | 1.00 | 0.0-0.2 | spandex,nylon
+7/8 leggings | 0.80 | 0.0-0.2 | spandex,nylon
+capri leggings | 0.65 | 0.0-0.2 | spandex,nylon
+flared yoga leggings | 0.60 | 0.0-0.2 | spandex,nylon,cotton
+biker shorts | 0.60 | 0.0-0.1 | spandex,nylon
+
+# relaxed / flow
+wide-leg yoga pants | 0.70 | 0.0-0.2 | cotton,bamboo,modal
+harem pants | 0.50 | 0.0-0.2 | cotton,bamboo,rayon
+palazzo yoga pants | 0.40 | 0.0-0.2 | bamboo,modal
+loose drawstring pants | 0.50 | 0.0-0.2 | cotton,bamboo
+
+# shorts
+yoga shorts | 0.65 | 0.0-0.1 | spandex,nylon
+dolphin hem shorts | 0.45 | 0.0-0.1 | nylon,spandex
+flowy yoga shorts | 0.45 | 0.0-0.1 | bamboo,modal

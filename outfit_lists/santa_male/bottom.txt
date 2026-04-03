@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Santa trousers with white fur cuffs | 1.00 | 0.3-0.6 | velvet,faux_fur
+red velvet pants | 0.80 | 0.3-0.6 | velvet
+red baggy Santa pants tucked into boots | 0.70 | 0.3-0.6 | velvet,cotton
+burgundy velvet trousers | 0.40 | 0.4-0.7 | velvet
+red suspender pants | 0.30 | 0.3-0.5 | velvet,cotton

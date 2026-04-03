@@ -1,0 +1,7 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+black leather Santa boots with fur trim | 0.95 | 0.3-0.6 | leather,faux_fur
+tall black boots | 0.80 | 0.3-0.6 | leather
+black buckled boots | 0.55 | 0.3-0.6 | leather
+brown leather boots | 0.30 | 0.3-0.5 | leather

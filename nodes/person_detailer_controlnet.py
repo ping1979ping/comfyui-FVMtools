@@ -188,7 +188,7 @@ class PersonDetailerControlNet:
                       seed, steps, denoise, sampler_name, scheduler,
                       detail_daemon_enabled, detail_amount, dd_smooth, dd_options,
                       mask_blend_pixels, mask_expand_pixels, target_width, target_height,
-                      inpaint_opts, controlnet_apply_fn=None,
+                      inpaint_opts, controlnet_apply_fn=None, cfg=1.0,
                       cached_model=None, cached_cond=None):
         if cached_model is not None and cached_cond is not None:
             patched_model = cached_model.clone()
@@ -227,6 +227,7 @@ class PersonDetailerControlNet:
             denoise_progression=inpaint_opts.get("denoise_progression", ""),
             steps_progression=inpaint_opts.get("steps_progression", ""),
             controlnet_apply_fn=controlnet_apply_fn,
+            cfg=cfg,
         )
         return stitched, refined
 
@@ -292,8 +293,17 @@ class PersonDetailerControlNet:
         inpaint_opts = inpaint_options or INPAINT_DEFAULTS
         has_aux = "aux_masks" in person_data
 
-        if negative is None:
+        # Build negative conditioning: combine connected negative + inpaint_opts negative_prompt
+        neg_prompt_text = inpaint_opts.get("negative_prompt", "").strip()
+        if negative is None and not neg_prompt_text:
             negative = self._encode_prompt(clip, "")
+        elif negative is None and neg_prompt_text:
+            negative = self._encode_prompt(clip, neg_prompt_text)
+        elif neg_prompt_text:
+            neg_from_text = self._encode_prompt(clip, neg_prompt_text)
+            negative = negative + neg_from_text
+
+        cfg = inpaint_opts.get("cfg", 1.0)
 
         # ── Build ControlNet apply function ──────────────────────────────────
         has_cn = controlnet_enabled and model_patch != "None" and control_strength > 0
@@ -376,7 +386,7 @@ class PersonDetailerControlNet:
             dd_smooth=dd_smooth, dd_options=dd_options,
             mask_blend_pixels=mask_blend_pixels, mask_expand_pixels=mask_expand_pixels,
             target_width=target_width, target_height=target_height,
-            inpaint_opts=inpaint_opts,
+            inpaint_opts=inpaint_opts, cfg=cfg,
             controlnet_apply_fn=controlnet_apply_fn,
         )
 

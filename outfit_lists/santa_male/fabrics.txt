@@ -1,0 +1,6 @@
+# format: fabric_name | formality | family | weight
+velvet | 0.4 | luxury | medium
+faux_fur | 0.4 | luxury | heavy
+cotton | 0.3 | natural | medium
+leather | 0.4 | classic | medium
+metal | 0.5 | luxury | heavy

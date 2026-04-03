@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scrunchie | 0.80 | 0.0-0.2 | nylon,cotton
+sweatband wristbands | 0.60 | 0.0-0.1 | cotton,nylon
+sport watch | 0.65 | 0.0-0.2 | metal
+fitness tracker | 0.60 | 0.0-0.2 | nylon
+resistance band | 0.30 | 0.0-0.1 | nylon
+jump rope | 0.20 | 0.0-0.1 | nylon
+hair tie | 0.75 | 0.0-0.2 | nylon

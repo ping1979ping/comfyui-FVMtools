@@ -1,0 +1,17 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# hair
+scrunchie | 0.80 | 0.0-0.2 | cotton,bamboo
+thin headband | 0.70 | 0.0-0.2 | nylon,spandex
+claw clip | 0.60 | 0.0-0.2 | metal
+
+# jewelry
+delicate chain necklace | 0.45 | 0.0-0.3 | metal
+small stud earrings | 0.55 | 0.0-0.3 | metal
+thin bangle bracelet | 0.35 | 0.0-0.3 | metal
+mala bead bracelet | 0.50 | 0.0-0.2 | wood
+
+# functional
+yoga mat strap | 0.40 | 0.0-0.2 | cotton,nylon
+water bottle | 0.50 | 0.0-0.2 | metal

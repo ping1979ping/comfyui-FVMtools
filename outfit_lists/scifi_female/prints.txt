@@ -1,0 +1,10 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+glowing circuit board pattern | 0.45 | top,bottom | 0.0-0.6
+hexagonal tech grid pattern | 0.40 | top,bottom,outerwear | 0.2-0.8
+holographic color-shift pattern | 0.35 | top,outerwear | 0.3-0.9
+neon stripe accent | 0.50 | top,bottom,outerwear | 0.0-0.5
+bioluminescent organic pattern | 0.30 | top,bottom | 0.3-0.8
+digital camouflage pattern | 0.35 | outerwear,bottom | 0.1-0.5
+chrome geometric print | 0.30 | top | 0.4-0.9
+fractal pattern | 0.25 | top,bottom | 0.2-0.7

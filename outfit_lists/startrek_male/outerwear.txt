@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+starfleet jacket with rank insignia | 0.60 | 0.3-0.8 | spandex,lycra
+starfleet away team tactical vest | 0.50 | 0.2-0.6 | nylon,spandex
+starfleet dress overcoat with gold piping | 0.40 | 0.7-1.0 | satin,lycra
+starfleet field jacket | 0.50 | 0.2-0.6 | nylon,spandex
+lab coat with starfleet insignia | 0.30 | 0.3-0.7 | cotton,lycra

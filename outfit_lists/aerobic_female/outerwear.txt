@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# zip-up hoodie | 0.80 | 0.0-0.2 | polyester,cotton,fleece
+#color# lightweight windbreaker | 0.60 | 0.0-0.2 | nylon,polyester
+#color# cropped sweatshirt | 0.70 | 0.0-0.2 | cotton,fleece
+#color# track jacket | 0.80 | 0.0-0.2 | nylon,polyester
+#color# warm-up jacket | 0.60 | 0.0-0.2 | polyester,nylon

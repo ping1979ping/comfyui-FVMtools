@@ -1,0 +1,21 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# high intensity
+#color# sports bra | 0.85 | 0.0-0.1 | spandex,nylon,polyester
+#color# racerback sports bra | 0.75 | 0.0-0.1 | spandex,nylon
+#color# strappy sports bra | 0.60 | 0.0-0.1 | spandex,nylon
+#color# crop top | 0.85 | 0.0-0.1 | spandex,nylon,polyester
+#color# halter crop top | 0.60 | 0.0-0.1 | spandex,nylon
+
+# mid coverage
+#color# racerback tank top | 0.90 | 0.0-0.2 | polyester,nylon,mesh
+#color# muscle tank | 0.75 | 0.0-0.2 | polyester,cotton,mesh
+#color# mesh panel top | 0.65 | 0.0-0.2 | mesh,nylon,spandex
+#color# cut-out detail top | 0.55 | 0.0-0.2 | nylon,spandex
+#color# compression top | 0.70 | 0.0-0.2 | spandex,nylon,polyester
+
+# retro / fun
+#color# bodysuit | 0.55 | 0.0-0.1 | spandex,nylon
+#color# thong bodysuit | 0.35 | 0.0-0.1 | spandex,nylon
+#color# neon crop top | 0.50 | 0.0-0.1 | spandex,nylon,polyester

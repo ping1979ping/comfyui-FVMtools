@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+long cyberpunk trench coat with neon lining | 0.65 | 0.0-0.5 | neoprene,leather
+cropped bomber jacket with holographic patches | 0.60 | 0.0-0.4 | nylon,neoprene
+tactical vest with magnetic ammo pouches | 0.55 | 0.1-0.6 | kevlar,nylon
+armored shoulder cape with chrome trim | 0.45 | 0.3-0.8 | kevlar,metal_mesh
+sleek pilot jacket with rank insignia | 0.60 | 0.3-0.7 | neoprene,leather
+floor-length hooded cloak with iridescent fabric | 0.40 | 0.5-1.0 | holographic,satin
+structured blazer with LED-lit lapels | 0.45 | 0.6-1.0 | satin,neoprene
+transparent rain cape with chrome closures | 0.35 | 0.0-0.5 | plastic,neoprene

@@ -30,23 +30,47 @@ class FVM_PromptColorReplace:
                     "default": "",
                     "multiline": True,
                     "placeholder": "wearing #primary# miniskirt with #neutral# top, #metallic# earrings",
+                    "tooltip": "Text with color placeholder tags to replace.\n\n"
+                               "Supported tags:\n"
+                               "  #color1# to #color8# (or #c1# to #c8#) — by palette position\n"
+                               "  #primary# #secondary# #accent# #neutral# #metallic# — by role\n"
+                               "  #pri# #sec# #acc# #neu# #met# — short aliases\n\n"
+                               "Connect the outfit_prompt from Outfit Generator, or write manually.\n"
+                               "Tags are case-insensitive.",
                 }),
                 "palette_string": ("STRING", {
                     "default": "",
                     "multiline": False,
                     "placeholder": "navy-blue, soft-pink, charcoal-gray, gold, cream",
                     "forceInput": True,
+                    "tooltip": "Comma-separated color names from Color Palette Generator.\n\n"
+                               "Position mapping:\n"
+                               "  1st color = #color1# = #primary#\n"
+                               "  2nd color = #color2# = #secondary#\n"
+                               "  3rd color = #color3# = #accent#\n"
+                               "  4th color = #color4# = #neutral#\n"
+                               "  5th color = #color5# = #metallic#\n"
+                               "  6th-8th   = #color6# to #color8#\n\n"
+                               "Connect palette_string output from Color Palette Generator.",
                 }),
             },
             "optional": {
-                "primary": ("STRING", {"default": "", "forceInput": True}),
-                "secondary": ("STRING", {"default": "", "forceInput": True}),
-                "accent": ("STRING", {"default": "", "forceInput": True}),
-                "neutral": ("STRING", {"default": "", "forceInput": True}),
-                "metallic": ("STRING", {"default": "", "forceInput": True}),
-                "fallback_color": ("STRING", {"default": "black"}),
+                "primary": ("STRING", {"default": "", "forceInput": True,
+                    "tooltip": "Override the primary role color.\nTakes precedence over the palette_string position.\nConnect from Color Palette Generator's 'primary' output."}),
+                "secondary": ("STRING", {"default": "", "forceInput": True,
+                    "tooltip": "Override the secondary role color.\nTakes precedence over the palette_string position.\nConnect from Color Palette Generator's 'secondary' output."}),
+                "accent": ("STRING", {"default": "", "forceInput": True,
+                    "tooltip": "Override the accent role color.\nTakes precedence over the palette_string position.\nConnect from Color Palette Generator's 'accent' output."}),
+                "neutral": ("STRING", {"default": "", "forceInput": True,
+                    "tooltip": "Override the neutral role color.\nTakes precedence over the palette_string position.\nConnect from Color Palette Generator's 'neutral' output."}),
+                "metallic": ("STRING", {"default": "", "forceInput": True,
+                    "tooltip": "Override the metallic role color.\nTakes precedence over the palette_string position.\nConnect from Color Palette Generator's 'metallic' output."}),
+                "fallback_color": ("STRING", {"default": "black",
+                    "tooltip": "Color used when a tag has no matching palette color.\nDefault: 'black'. Used if palette has fewer colors than tags referenced."}),
                 "strip_hyphens": ("BOOLEAN", {"default": True,
-                    "tooltip": "Convert navy-blue to navy blue (SD prompts work better without hyphens)"}),
+                    "tooltip": "Convert hyphenated colors to spaces.\n\n"
+                               "ON: navy-blue → navy blue (better for SD/SDXL prompts)\n"
+                               "OFF: keep navy-blue as-is (useful if your model expects hyphens)"}),
             },
         }
 

@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual / street
+fitted compression shirt with neon piping | 0.60 | 0.0-0.3 | spandex,mesh
+sleeveless tech vest with glowing seams | 0.50 | 0.0-0.3 | neoprene,mesh
+holographic print t-shirt | 0.45 | 0.0-0.3 | spandex,neoprene
+
+# mid-range / tactical
+armored tactical bodysuit top with shoulder plates | 0.80 | 0.2-0.7 | kevlar,neoprene
+high-collar military uniform top with rank insignia | 0.75 | 0.3-0.8 | neoprene,kevlar
+fitted pilot flight suit top with unit patches | 0.70 | 0.3-0.7 | neoprene,spandex
+ribbed turtleneck with metallic weave | 0.55 | 0.3-0.7 | spandex,neoprene
+utility shirt with magnetic closures | 0.60 | 0.2-0.6 | nylon,neoprene
+form-fitting uniform top with glowing circuit lines | 0.65 | 0.2-0.8 | spandex,neoprene
+
+# formal
+structured mandarin collar tunic with chrome clasps | 0.50 | 0.6-1.0 | satin,neoprene
+metallic-threaded dress shirt with angular cut | 0.45 | 0.7-1.0 | satin,holographic
+officer dress uniform top with medal ribbons | 0.40 | 0.8-1.0 | satin,kevlar

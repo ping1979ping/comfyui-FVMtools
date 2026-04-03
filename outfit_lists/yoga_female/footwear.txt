@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# barefoot / studio
+bare foot | 0.60 | 0.0-0.1 | 
+ballerinas | 0.30 | 0.0-0.1 | pvc
+yoga toe socks | 0.60 | 0.0-0.1 | cotton,bamboo
+grip socks | 0.30 | 0.0-0.1 | cotton,nylon
+legwarmers | 0.35 | 0.0-0.1 | cotton, wool
+
+# casual
+slides | 0.55 | 0.0-0.2 | nylon,polyester
+flat sandals | 0.45 | 0.0-0.2 | cotton,nylon
+minimalist sneakers | 0.40 | 0.1-0.3 | mesh,nylon

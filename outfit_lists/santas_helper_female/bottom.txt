@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# skirts
+red velvet mini skirt with white fur trim | 0.95 | 0.3-0.6 | velvet,faux_fur
+red pleated mini skirt | 0.70 | 0.3-0.5 | velvet,polyester
+green velvet mini skirt | 0.50 | 0.3-0.5 | velvet
+red and white striped skirt | 0.40 | 0.3-0.5 | cotton,polyester
+red tutu skirt | 0.30 | 0.3-0.5 | tulle,satin
+
+# pants / shorts
+red velvet shorts with fur cuffs | 0.60 | 0.3-0.5 | velvet,faux_fur
+red hot pants with white trim | 0.40 | 0.3-0.5 | velvet,satin
+candy cane striped leggings | 0.50 | 0.3-0.5 | spandex,nylon
+red and white striped tights | 0.55 | 0.3-0.5 | nylon,spandex

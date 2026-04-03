@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# tight
+#color# high-waisted leggings | 1.00 | 0.0-0.2 | spandex,nylon,polyester
+#color# capri leggings | 0.70 | 0.0-0.2 | spandex,nylon
+#color# biker shorts | 0.80 | 0.0-0.1 | spandex,nylon
+#color# booty shorts | 0.55 | 0.0-0.1 | spandex,nylon
+#color# compression shorts | 0.65 | 0.0-0.1 | spandex,nylon,polyester
+
+# loose
+#color# running shorts | 0.70 | 0.0-0.1 | polyester,nylon
+#color# dolphin hem shorts | 0.55 | 0.0-0.1 | nylon,polyester
+#color# skort | 0.50 | 0.0-0.2 | polyester,nylon,spandex
+
+# retro
+#color# high-cut leotard bottom | 0.35 | 0.0-0.1 | spandex,nylon
+#color# flared workout pants | 0.45 | 0.0-0.2 | spandex,nylon,cotton

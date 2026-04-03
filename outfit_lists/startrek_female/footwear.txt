@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+starfleet duty boots | 0.90 | 0.0-0.9 | leather,rubber
+tall starfleet boots | 0.60 | 0.0-0.5 | leather,rubber
+starfleet ankle boots | 0.65 | 0.2-0.8 | leather,rubber
+starfleet dress shoes | 0.45 | 0.7-1.0 | leather
+low-cut athletic shoes | 0.30 | 0.0-0.2 | rubber,mesh

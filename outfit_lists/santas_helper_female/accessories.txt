@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+jingle bell choker | 0.55 | 0.3-0.5 | metal,satin
+candy cane earrings | 0.45 | 0.3-0.5 | metal
+snowflake pendant necklace | 0.55 | 0.3-0.5 | metal
+red satin ribbon wrist tie | 0.40 | 0.3-0.5 | satin
+red and white striped arm warmers | 0.30 | 0.3-0.5 | cotton,nylon
+white lace gloves | 0.35 | 0.3-0.5 | lace
+small gift box prop | 0.25 | 0.3-0.5 |
+candy cane | 0.35 | 0.3-0.5 |

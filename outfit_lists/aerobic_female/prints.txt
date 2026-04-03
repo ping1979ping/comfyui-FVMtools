@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+neon color-block | 0.40 | top,bottom | 0.0-0.2
+racing stripes | 0.35 | top,bottom,outerwear | 0.0-0.2
+abstract geometric | 0.30 | top,bottom | 0.0-0.2
+lightning bolt pattern | 0.20 | top | 0.0-0.1
+camo print | 0.25 | top,bottom | 0.0-0.2
+gradient fade | 0.30 | top,bottom | 0.0-0.2
+mesh panel detail | 0.35 | top,bottom | 0.0-0.2
+reflective stripe | 0.25 | top,outerwear | 0.0-0.2
+brand logo | 0.35 | top,headwear | 0.0-0.3
+animal print | 0.20 | top,bottom | 0.0-0.2
+splatter pattern | 0.20 | top | 0.0-0.1

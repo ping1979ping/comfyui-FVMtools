@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# light layers
+cropped hoodie | 0.80 | 0.0-0.2 | cotton,bamboo,fleece
+lightweight zip-up jacket | 0.70 | 0.0-0.2 | nylon,polyester
+shrug | 0.55 | 0.0-0.2 | bamboo,modal,cotton
+wrap cardigan | 0.70 | 0.1-0.3 | bamboo,cotton,cashmere
+draped open-front vest | 0.45 | 0.0-0.2 | bamboo,modal
+oversized off-shoulder sweater | 0.55 | 0.1-0.3 | cotton,bamboo,cashmere

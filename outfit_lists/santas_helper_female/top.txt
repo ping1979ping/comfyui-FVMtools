@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# fitted / cute
+red velvet corset top with white fur trim | 0.90 | 0.3-0.6 | velvet,faux_fur
+red off-shoulder crop top with fur trim | 0.70 | 0.3-0.6 | velvet,faux_fur
+red halter top with white trim | 0.55 | 0.3-0.5 | velvet,satin
+red bustier with candy cane lacing | 0.45 | 0.3-0.5 | satin,velvet
+green velvet crop top with red trim | 0.55 | 0.3-0.6 | velvet,satin
+red fitted jacket with fur collar | 0.70 | 0.3-0.6 | velvet,faux_fur
+
+# dress-style (top+bottom integrated)
+red velvet mini dress with white fur hem | 0.85 | 0.3-0.6 | velvet,faux_fur
+red and green plaid dress | 0.45 | 0.3-0.5 | cotton,polyester
+red satin babydoll top with white trim | 0.40 | 0.3-0.5 | satin,faux_fur

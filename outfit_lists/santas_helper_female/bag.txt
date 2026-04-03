@@ -1,0 +1,7 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+small red velvet gift bag | 0.75 | 0.3-0.5 | velvet
+red satin clutch with bow | 0.55 | 0.3-0.5 | satin
+green velvet drawstring pouch | 0.40 | 0.3-0.5 | velvet
+christmas stocking purse | 0.30 | 0.3-0.5 | velvet,faux_fur

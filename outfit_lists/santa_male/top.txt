@@ -1,0 +1,9 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Santa coat with white fur trim | 1.00 | 0.3-0.6 | velvet,faux_fur
+red Santa jacket with gold buttons | 0.80 | 0.3-0.6 | velvet,faux_fur
+red velvet Santa vest over white shirt | 0.55 | 0.3-0.6 | velvet,cotton
+long red Santa robe with white fur collar | 0.45 | 0.4-0.7 | velvet,faux_fur
+red double-breasted Santa coat | 0.65 | 0.3-0.6 | velvet,faux_fur
+burgundy Santa coat with cream fur trim | 0.35 | 0.4-0.7 | velvet,faux_fur

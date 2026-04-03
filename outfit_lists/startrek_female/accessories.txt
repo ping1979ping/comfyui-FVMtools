@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# badges & tech
+starfleet communicator badge on chest | 0.90 | 0.0-1.0 | metal
+starfleet rank pips on collar | 0.80 | 0.2-1.0 | metal
+tricorder on hip | 0.50 | 0.0-0.7 | plastic,metal
+phaser holstered on belt | 0.40 | 0.0-0.6 | plastic,metal
+PADD tablet device | 0.45 | 0.2-0.8 | plastic
+
+# jewelry (off-duty)
+small earrings | 0.30 | 0.0-0.5 | metal
+delicate necklace | 0.25 | 0.0-0.5 | metal
+
+# formal
+starfleet service medals on chest | 0.35 | 0.7-1.0 | metal

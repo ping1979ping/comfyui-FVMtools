@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# fascinator | 0.60 | 0.7-1.0 | silk,organza
+#color# jeweled hair tiara | 0.40 | 0.8-1.0 | metal
+#color# feathered headpiece | 0.40 | 0.8-1.0 | silk
+#color# silk turban | 0.30 | 0.7-1.0 | silk,satin
+#color# pearl hair pins | 0.55 | 0.6-0.9 | metal

@@ -15,6 +15,8 @@ from .utils.lora_cache import _LoraFileCache
 
 # Default inpaint options (used when InpaintOptions node is not connected)
 INPAINT_DEFAULTS = {
+    "cfg": 1.0,
+    "negative_prompt": "",
     "mask_fill_holes": True,
     "context_expand_factor": 1.20,
     "output_padding": 32,
@@ -173,7 +175,7 @@ class PersonDetailer:
                       seed, steps, denoise, sampler_name, scheduler,
                       detail_daemon_enabled, detail_amount, dd_smooth, dd_options,
                       mask_blend_pixels, mask_expand_pixels, target_width, target_height,
-                      inpaint_opts, cached_model=None, cached_cond=None):
+                      inpaint_opts, cfg=1.0, cached_model=None, cached_cond=None):
         """Inpaint a single mask region. Returns (stitched_image, refined_crop_or_None)."""
         if cached_model is not None and cached_cond is not None:
             patched_model = cached_model.clone()
@@ -211,6 +213,7 @@ class PersonDetailer:
             repeat=slot.get("rounds", 1),
             denoise_progression=inpaint_opts.get("denoise_progression", ""),
             steps_progression=inpaint_opts.get("steps_progression", ""),
+            cfg=cfg,
         )
         return stitched, refined
 
@@ -243,9 +246,18 @@ class PersonDetailer:
         inpaint_opts = inpaint_options or INPAINT_DEFAULTS
         has_aux = "aux_masks" in person_data
 
-        # If no negative conditioning, create empty one
-        if negative is None:
+        # Build negative conditioning: combine connected negative + inpaint_opts negative_prompt
+        neg_prompt_text = inpaint_opts.get("negative_prompt", "").strip()
+        if negative is None and not neg_prompt_text:
             negative = self._encode_prompt(clip, "")
+        elif negative is None and neg_prompt_text:
+            negative = self._encode_prompt(clip, neg_prompt_text)
+        elif neg_prompt_text:
+            # Combine: connected negative conditioning + encoded negative_prompt text
+            neg_from_text = self._encode_prompt(clip, neg_prompt_text)
+            negative = negative + neg_from_text  # concat conditioning list
+
+        cfg = inpaint_opts.get("cfg", 1.0)
 
         # Collect slot configs
         slots = []
@@ -295,7 +307,7 @@ class PersonDetailer:
             dd_smooth=dd_smooth, dd_options=dd_options,
             mask_blend_pixels=mask_blend_pixels, mask_expand_pixels=mask_expand_pixels,
             target_width=target_width, target_height=target_height,
-            inpaint_opts=inpaint_opts,
+            inpaint_opts=inpaint_opts, cfg=cfg,
         )
 
         # ── Pre-cache LoRA + conditioning per unique slot config ────────────

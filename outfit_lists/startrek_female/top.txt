@@ -1,0 +1,26 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# TOS era
+form-fitting starfleet uniform top with delta insignia badge | 0.80 | 0.0-0.5 | spandex,lycra
+sleeveless starfleet uniform top with command insignia | 0.50 | 0.0-0.4 | spandex,lycra
+starfleet minidress uniform with rank braids on sleeve | 0.70 | 0.0-0.5 | spandex,lycra
+
+# TNG era
+starfleet uniform jumpsuit top with communicator badge | 0.90 | 0.3-0.8 | spandex,lycra
+starfleet duty uniform with rank pips on collar | 0.85 | 0.3-0.8 | spandex,lycra
+starfleet science division uniform top with blue shoulders | 0.65 | 0.3-0.8 | spandex,lycra
+starfleet command division uniform top with red shoulders | 0.65 | 0.3-0.8 | spandex,lycra
+starfleet engineering division uniform top with gold shoulders | 0.60 | 0.3-0.8 | spandex,lycra
+
+# DS9 / VOY era
+starfleet gray-shouldered uniform top with colored undershirt | 0.75 | 0.4-0.9 | spandex,lycra
+starfleet voyager uniform with division color stripe | 0.70 | 0.4-0.9 | spandex,lycra
+
+# formal / dress
+starfleet dress uniform with white tunic and medals | 0.55 | 0.7-1.0 | satin,lycra
+starfleet admiral uniform with gold trim | 0.40 | 0.8-1.0 | satin,lycra
+
+# off-duty
+starfleet undershirt | 0.45 | 0.0-0.3 | cotton,jersey
+fitted tank top | 0.35 | 0.0-0.2 | cotton,jersey

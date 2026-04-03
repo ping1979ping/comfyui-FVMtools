@@ -1,0 +1,8 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white cotton gloves | 0.85 | 0.3-0.6 | cotton
+round gold-framed spectacles | 0.65 | 0.3-0.6 | metal
+pocket watch on gold chain | 0.45 | 0.4-0.7 | metal
+candy cane | 0.35 | 0.3-0.5 |
+jingle bells | 0.25 | 0.3-0.5 | metal

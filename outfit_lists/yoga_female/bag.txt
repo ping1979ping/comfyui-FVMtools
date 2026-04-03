@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+yoga mat bag | 0.75 | 0.0-0.2 | cotton,nylon
+drawstring backpack | 0.60 | 0.0-0.2 | nylon,cotton
+small crossbody bag | 0.50 | 0.0-0.2 | nylon,cotton
+canvas tote | 0.60 | 0.0-0.2 | cotton
+belt bag | 0.50 | 0.0-0.2 | nylon,spandex

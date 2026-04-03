@@ -1,0 +1,7 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical sling bag with glow-strip | 0.50 | 0.0-0.6 | nylon,neoprene
+magnetic hip pouch with chrome clasp | 0.50 | 0.0-0.6 | nylon,leather
+rugged backpack with integrated antenna | 0.40 | 0.0-0.5 | nylon,kevlar
+equipment duffel with armor panels | 0.30 | 0.0-0.4 | kevlar,nylon

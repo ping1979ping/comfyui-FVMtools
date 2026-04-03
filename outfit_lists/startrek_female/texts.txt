@@ -1,0 +1,6 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"NCC-1701" | 0.20 | accessories | block font
+"USS ENTERPRISE" | 0.15 | accessories | stencil font
+"STARFLEET ACADEMY" | 0.15 | top | bold block font
+"LIVE LONG AND PROSPER" | 0.10 | top | italic font
