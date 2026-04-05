@@ -13,14 +13,14 @@ from .utils.lora_utils import is_z_image_turbo, needs_qkv_conversion, convert_qk
 from .utils.lora_cache import _LoraFileCache
 
 
+_VALID_MASK_TYPES = {"face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories"}
+
 # Default inpaint options (used when InpaintOptions node is not connected)
 INPAINT_DEFAULTS = {
     "cfg": 1.0,
     "negative_prompt": "",
-    "blend_mode": "auto",
     "denoise_gradient": 0.0,
-    "edge_refine": False,
-    "edge_refine_denoise": 0.12,
+    "denoise_gradient_mode": "linear",
     "mask_fill_holes": True,
     "context_expand_factor": 1.20,
     "output_padding": 32,
@@ -182,7 +182,7 @@ class PersonDetailer:
                       inpaint_opts, cfg=1.0, cached_model=None, cached_cond=None):
         """Inpaint a single mask region. Returns (stitched_image, refined_crop_or_None)."""
         if cached_model is not None and cached_cond is not None:
-            patched_model = cached_model.clone()
+            patched_model = cached_model  # reuse directly, no clone needed
             positive_cond = cached_cond
         else:
             patched_model, patched_clip = self._apply_lora(
@@ -218,10 +218,8 @@ class PersonDetailer:
             denoise_progression=inpaint_opts.get("denoise_progression", ""),
             steps_progression=inpaint_opts.get("steps_progression", ""),
             cfg=cfg,
-            blend_mode=inpaint_opts.get("blend_mode", "auto"),
             denoise_gradient=inpaint_opts.get("denoise_gradient", 0.0),
-            edge_refine=inpaint_opts.get("edge_refine", False),
-            edge_refine_denoise=inpaint_opts.get("edge_refine_denoise", 0.12),
+            denoise_gradient_mode=inpaint_opts.get("denoise_gradient_mode", "linear"),
         )
         return stitched, refined
 
@@ -293,6 +291,9 @@ class PersonDetailer:
 
         generic_cfg = self._get_slot_config("generic", inpaint_options)
         generic_mask_type = generic_cfg.get("mask_type", "head")
+        if generic_mask_type not in _VALID_MASK_TYPES and generic_mask_type != "aux":
+            print(f"[FVMTools] Warning: invalid generic mask_type '{generic_mask_type}', falling back to 'head'")
+            generic_mask_type = "head"
 
         print(f"\n{'='*50}")
         print(f"  PersonDetailer v2.0")
@@ -306,6 +307,14 @@ class PersonDetailer:
         refined_ref_parts = []
         refined_gen_parts = []
         all_summaries = []  # Per-batch-image summaries for preview text
+
+        # Pre-compute constants used in the per-batch loop
+        active_ref_indices = {slot["index"] for slot in slots}
+        generic_slot_cfg = {
+            "lora": generic_lora, "lora_strength": generic_lora_strength,
+            "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True),
+            "rounds": generic_cfg.get("rounds", 1),
+        }
 
         # Common inpaint kwargs
         inpaint_kwargs = dict(
@@ -407,6 +416,10 @@ class PersonDetailer:
 
                 else:
                     # Standard mask-based detailing (face/head/body/hair/etc.)
+                    if mask_type not in _VALID_MASK_TYPES:
+                        print(f"    {slot['label']} — invalid mask_type '{mask_type}', falling back to 'head'. "
+                              f"(Recreate Inpaint Options node to fix.)")
+                        mask_type = "head"
                     mask_key = f"{mask_type}_masks"
                     mask = person_data[mask_key][ri][b]  # [H, W]
 
@@ -442,10 +455,7 @@ class PersonDetailer:
                         unassigned_mask = person_data.get("aux_unassigned_masks")
                         if unassigned_mask is not None and not is_mask_empty(unassigned_mask[b]):
                             print(f"    Generic — aux: detailing unassigned body parts...")
-                            generic_slot = {
-                                "lora": generic_lora, "lora_strength": generic_lora_strength,
-                                "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "rounds": generic_cfg.get("rounds", 1),
-                            }
+                            generic_slot = generic_slot_cfg
                             stitched, refined = self._inpaint_mask(
                                 current_image, unassigned_mask[b], generic_slot, **inpaint_kwargs,
                                 cached_model=gen_cached["model"] if gen_cached else None,
@@ -466,12 +476,7 @@ class PersonDetailer:
 
                     if per_face and b < len(per_face):
                         # Use per-face masks with correct mask type
-                        active_ref_indices = {slot["index"] for slot in slots}
-                        generic_slot = {
-                            "lora": generic_lora, "lora_strength": generic_lora_strength,
-                            "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True),
-                            "rounds": generic_cfg.get("rounds", 1),
-                        }
+                        generic_slot = generic_slot_cfg
                         face_count = 0
                         for fi, face_masks in enumerate(per_face[b]):
                             ref_idx = face_to_ref[b][fi] if b < len(face_to_ref) else None
@@ -521,10 +526,7 @@ class PersonDetailer:
                         components = split_mask_to_components(unmatched_mask, min_area_fraction=0.001)
                         if components:
                             print(f"    Generic — {len(components)} unmatched face(s) ({generic_mask_type})")
-                            generic_slot = {
-                                "lora": generic_lora, "lora_strength": generic_lora_strength,
-                                "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True), "rounds": generic_cfg.get("rounds", 1),
-                            }
+                            generic_slot = generic_slot_cfg
                             for comp_mask in components:
                                 stitched, refined = self._inpaint_mask(
                                     current_image, comp_mask, generic_slot, **inpaint_kwargs,

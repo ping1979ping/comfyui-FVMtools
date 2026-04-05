@@ -250,6 +250,20 @@ function removeArrayItem(arr, item) {
 // ═══════════════════════════════════════════════════════════════════════════
 
 let _loraListCache = null;
+const _loraInfoCache = {};
+
+async function fetchLoraInfo(loraName) {
+    if (_loraInfoCache[loraName]) return _loraInfoCache[loraName];
+    try {
+        const resp = await fetch(`/fvmtools/lora-info?file=${encodeURIComponent(loraName)}`);
+        if (!resp.ok) return null;
+        const data = await resp.json();
+        _loraInfoCache[loraName] = data;
+        return data;
+    } catch (e) {
+        return null;
+    }
+}
 
 async function fetchLoraList(force = false) {
     if (_loraListCache && !force) return _loraListCache;
@@ -797,13 +811,38 @@ app.registerExtension({
             const widgetName = slot?.widget?.name;
             if (widgetName?.startsWith("ref_lora_") || widgetName === "gen_lora") {
                 const widget = slot.widget;
-                const index = this.widgets.indexOf(widget);
+                const isLora = (w) => w?.name?.startsWith("ref_lora_") || w?.name === "gen_lora";
 
-                // Check if adjacent widgets are also lora widgets (for move up/down)
-                const canMoveUp = this.widgets[index - 1]?.name?.startsWith("ref_lora_") ||
-                                  this.widgets[index - 1]?.name === "gen_lora";
-                const canMoveDown = this.widgets[index + 1]?.name?.startsWith("ref_lora_") ||
-                                    this.widgets[index + 1]?.name === "gen_lora";
+                // Find previous/next lora widget (skip prompts, separators, etc.)
+                const loraWidgets = this.widgets.filter(isLora);
+                const loraIdx = loraWidgets.indexOf(widget);
+                const prevLora = loraIdx > 0 ? loraWidgets[loraIdx - 1] : null;
+                const nextLora = loraIdx < loraWidgets.length - 1 ? loraWidgets[loraIdx + 1] : null;
+
+                // Find paired prompt widgets for swap
+                const getPrompt = (loraW) => {
+                    if (!loraW) return null;
+                    // ref_lora_1 → ref_prompt_1, gen_lora → gen_prompt
+                    const promptName = loraW.name === "gen_lora" ? "gen_prompt"
+                        : "ref_prompt_" + loraW.name.replace("ref_lora_", "");
+                    return this.widgets.find(w => w.name === promptName) || null;
+                };
+                const thisPrompt = getPrompt(widget);
+                const prevPrompt = getPrompt(prevLora);
+                const nextPrompt = getPrompt(nextLora);
+
+                const swapPair = (loraA, promptA, loraB, promptB) => {
+                    // Swap lora values
+                    const tmpLora = { ...loraA.value };
+                    loraA.value = { ...loraB.value };
+                    loraB.value = tmpLora;
+                    // Swap prompt values
+                    if (promptA && promptB) {
+                        const tmpPrompt = promptA.value;
+                        promptA.value = promptB.value;
+                        promptB.value = tmpPrompt;
+                    }
+                };
 
                 const menuItems = [
                     {
@@ -821,26 +860,53 @@ app.registerExtension({
                     },
                     {
                         content: "\u2b06\ufe0f Move Up",
-                        disabled: !canMoveUp,
+                        disabled: !prevLora,
                         callback: () => {
-                            // Swap lora values with the widget above
-                            const above = this.widgets[index - 1];
-                            const tempVal = { ...widget.value };
-                            widget.value = { ...above.value };
-                            above.value = tempVal;
+                            swapPair(widget, thisPrompt, prevLora, prevPrompt);
                         },
                     },
                     {
                         content: "\u2b07\ufe0f Move Down",
-                        disabled: !canMoveDown,
+                        disabled: !nextLora,
                         callback: () => {
-                            // Swap lora values with the widget below
-                            const below = this.widgets[index + 1];
-                            const tempVal = { ...widget.value };
-                            widget.value = { ...below.value };
-                            below.value = tempVal;
+                            swapPair(widget, thisPrompt, nextLora, nextPrompt);
                         },
                     },
+                    {
+                        content: "\ud83d\udcdd Add Trigger Words",
+                        disabled: !widget.value.lora || widget.value.lora === "None",
+                        callback: () => {
+                            if (!widget.value.lora || !thisPrompt) return;
+                            fetchLoraInfo(widget.value.lora).then(info => {
+                                if (!info?.triggerWords?.length) {
+                                    console.log("[FVMTools] No trigger words found for", widget.value.lora);
+                                    return;
+                                }
+                                const triggerStr = info.triggerWords.join(", ");
+                                const current = (thisPrompt.value || "").trim();
+                                if (current && current.includes(triggerStr)) return;
+                                thisPrompt.value = current ? current + ", " + triggerStr : triggerStr;
+                                thisPrompt.callback?.(thisPrompt.value);
+                                this.setDirtyCanvas(true, true);
+                            });
+                        },
+                    },
+                    {
+                        content: "\ud83c\udf10 Open on CivitAI",
+                        disabled: !widget.value.lora || widget.value.lora === "None",
+                        callback: () => {
+                            if (!widget.value.lora) return;
+                            fetchLoraInfo(widget.value.lora).then(info => {
+                                if (info?.civitaiUrl) {
+                                    window.open(info.civitaiUrl, "_blank");
+                                } else {
+                                    const name = widget.value.lora.split(/[/\\]/).pop().replace(/\.\w+$/, "");
+                                    window.open(`https://civitai.com/search/models?sortBy=models_v9&query=${encodeURIComponent(name)}`, "_blank");
+                                }
+                            });
+                        },
+                    },
+                    null, // separator
                     {
                         content: "\ud83d\uddd1\ufe0f Remove",
                         callback: () => {

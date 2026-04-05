@@ -8,6 +8,7 @@ so the resize step never distorts the image.
 import torch
 import numpy as np
 import math
+import cv2
 
 import comfy.utils
 import comfy.sample
@@ -188,11 +189,12 @@ def crop_and_resize(image, mask_2d, crop, target_w, target_h):
 def _boundary_color_correction(decoded_np, orig_np, mask_np):
     """Apply soft color correction at mask boundary.
 
-    Samples a collar of pixels outside the mask edge, compares mean color
-    with pixels just inside, and applies a fading offset to reduce color drift.
+    Samples a thin collar of pixels just outside and inside the mask edge,
+    computes a per-channel offset, and applies it only in a narrow fade zone
+    near the edge to reduce color drift without introducing shadows.
     """
-    import cv2
-    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11, 11))
+    # Use a small kernel for thin collar sampling
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
     mask_uint8 = (mask_np * 255).astype(np.uint8)
 
     outer = cv2.dilate(mask_uint8, kernel, iterations=1)
@@ -201,37 +203,35 @@ def _boundary_color_correction(decoded_np, orig_np, mask_np):
     collar = (outer > 128) & (mask_uint8 < 128)   # ring just outside mask
     inner = (mask_uint8 > 128) & (inner_eroded < 128)  # ring just inside mask
 
-    if collar.sum() < 10 or inner.sum() < 10:
+    if collar.sum() < 20 or inner.sum() < 20:
         return decoded_np  # not enough pixels to compute
 
-    collar_mean = orig_np[collar].mean(axis=0)      # mean color outside
-    inner_mean = decoded_np[inner].mean(axis=0)      # mean color inside
-    offset = collar_mean - inner_mean                # color drift to correct
+    # Use median instead of mean to resist outliers (shadows, highlights)
+    collar_color = np.median(orig_np[collar], axis=0)
+    inner_color = np.median(decoded_np[inner], axis=0)
+    offset = collar_color - inner_color
 
-    # Apply offset fading from edge toward center using distance transform
+    # Clamp offset to prevent large shifts (max ±0.08 per channel)
+    offset = np.clip(offset, -0.08, 0.08)
+
+    # Fade: only apply in a narrow band near the edge (not across the whole mask)
     dist = cv2.distanceTransform(mask_uint8, cv2.DIST_L2, 5)
-    max_dist = dist.max()
-    if max_dist < 1:
-        return decoded_np
-    fade = 1.0 - np.clip(dist / max_dist, 0, 1)     # 1 at edge, 0 at center
+    # Fade zone = 30px from edge, then drops to zero
+    fade_zone_px = 30.0
+    fade = np.clip(1.0 - dist / fade_zone_px, 0, 1)  # 1 at edge, 0 beyond 30px
     fade_3c = fade[:, :, np.newaxis]
 
-    corrected = decoded_np + offset * fade_3c * 0.7   # 0.7 = correction strength
+    corrected = decoded_np + offset * fade_3c * 0.4   # gentle 40% correction
     return np.clip(corrected, 0, 1).astype(np.float32)
 
 
 def stitch_back(original_image, decoded_crop, blend_mask_orig, crop, stitch_info,
-                blend_mode="auto"):
+                denoise=0.5):
     """Stitch decoded crop back into original image.
 
-    Supports multiple blend modes:
-    - gaussian: feathered alpha blend with delta clamping
-    - poisson: cv2.seamlessClone for seamless boundary matching
-    - poisson_mixed: seamlessClone with mixed gradients
-    - auto: uses poisson
+    Uses feathered alpha blend with boundary color correction and delta clamping
+    to prevent visible seams at mask edges.
     """
-    import cv2
-
     x, y = stitch_info["x"], stitch_info["y"]
     actual_w, actual_h = stitch_info["w"], stitch_info["h"]
     pad_l, pad_t = stitch_info["pad_l"], stitch_info["pad_t"]
@@ -245,81 +245,21 @@ def stitch_back(original_image, decoded_crop, blend_mask_orig, crop, stitch_info
     # Extract only the non-padded region
     decoded_actual = decoded_full[pad_t:pad_t + actual_h, pad_l:pad_l + actual_w, :]
 
+    # Modify only the crop region in-place on a clone of the affected area
     result = original_image.clone()
     orig_region = result[y:y + actual_h, x:x + actual_w, :]
-
-    effective_mode = "poisson" if blend_mode == "auto" else blend_mode
-
-    if effective_mode in ("poisson", "poisson_mixed"):
-        # Convert to uint8 numpy for cv2.seamlessClone
-        decoded_np = (decoded_actual.cpu().numpy() * 255).astype(np.uint8)
-        result_np = (result.cpu().numpy() * 255).astype(np.uint8)
-        mask_np = blend_mask_orig.cpu().numpy()
-
-        # Boundary color correction before Poisson
-        decoded_f = decoded_actual.cpu().numpy().astype(np.float32)
-        orig_f = orig_region.cpu().numpy().astype(np.float32)
-        decoded_f = _boundary_color_correction(decoded_f, orig_f, mask_np)
-        decoded_np = (np.clip(decoded_f, 0, 1) * 255).astype(np.uint8)
-
-        # Binary mask for seamlessClone (needs uint8)
-        clone_mask = (mask_np * 255).astype(np.uint8)
-        # Ensure mask has enough white area
-        if clone_mask.max() < 128:
-            # Fallback to gaussian if mask is too faint
-            effective_mode = "gaussian"
-        else:
-            center = (x + actual_w // 2, y + actual_h // 2)
-            clone_flag = cv2.NORMAL_CLONE if effective_mode == "poisson" else cv2.MIXED_CLONE
-
-            # Build source: place decoded in a full-size canvas at the correct position
-            src_canvas = result_np.copy()
-            src_canvas[y:y + actual_h, x:x + actual_w, :] = decoded_np
-
-            try:
-                blended = cv2.seamlessClone(src_canvas, result_np, clone_mask_full := np.zeros(result_np.shape[:2], dtype=np.uint8), center, clone_flag)
-            except cv2.error:
-                # seamlessClone needs the mask on the full image
-                pass
-
-            # Alternative approach: seamlessClone on the crop region
-            # Create a padded version to give Poisson solver boundary context
-            pad = 16
-            sy, ey = max(0, y - pad), min(result_np.shape[0], y + actual_h + pad)
-            sx, ex = max(0, x - pad), min(result_np.shape[1], x + actual_w + pad)
-            dst_region = result_np[sy:ey, sx:ex, :]
-
-            # Place decoded in same region
-            src_region = dst_region.copy()
-            ly, lx = y - sy, x - sx
-            src_region[ly:ly + actual_h, lx:lx + actual_w, :] = decoded_np
-
-            # Full-region mask
-            region_mask = np.zeros((ey - sy, ex - sx), dtype=np.uint8)
-            region_mask[ly:ly + actual_h, lx:lx + actual_w] = clone_mask
-
-            region_center = (region_mask.shape[1] // 2, region_mask.shape[0] // 2)
-
-            try:
-                blended_region = cv2.seamlessClone(src_region, dst_region, region_mask, region_center, clone_flag)
-                result_np[sy:ey, sx:ex, :] = blended_region
-                return torch.from_numpy(result_np.astype(np.float32) / 255.0).to(original_image.device)
-            except cv2.error:
-                # Fall through to gaussian
-                effective_mode = "gaussian"
-
-    # Gaussian blend with delta clamping + color correction
     blend_3c = blend_mask_orig.unsqueeze(-1)  # [actual_h, actual_w, 1]
 
-    # Boundary color correction
-    decoded_f = decoded_actual.cpu().numpy().astype(np.float32)
-    orig_f = orig_region.cpu().numpy().astype(np.float32)
-    mask_np = blend_mask_orig.cpu().numpy()
-    decoded_corrected = _boundary_color_correction(decoded_f, orig_f, mask_np)
-    decoded_corrected = torch.from_numpy(decoded_corrected).to(original_image.device)
+    # Boundary color correction (skip for low denoise — barely changes content)
+    if denoise > 0.2:
+        decoded_f = decoded_actual.cpu().numpy().astype(np.float32)
+        orig_f = orig_region.cpu().numpy().astype(np.float32)
+        mask_np = blend_mask_orig.cpu().numpy()
+        decoded_corrected = _boundary_color_correction(decoded_f, orig_f, mask_np)
+        decoded_actual = torch.from_numpy(decoded_corrected).to(original_image.device)
 
     # Delta clamping: prevent extreme color jumps at edges
-    delta = decoded_corrected - orig_region
+    delta = decoded_actual - orig_region
     delta = delta.clamp(-0.35, 0.35)
     result[y:y + actual_h, x:x + actual_w, :] = orig_region + delta * blend_3c
 
@@ -366,10 +306,8 @@ def inpaint_slot(
     denoise_progression="", steps_progression="",
     controlnet_apply_fn=None,
     cfg=1.0,
-    blend_mode="auto",
     denoise_gradient=0.0,
-    edge_refine=False,
-    edge_refine_denoise=0.12,
+    denoise_gradient_mode="linear",
 ):
     """Run the full inpaint pipeline for a single masked region.
 
@@ -387,8 +325,8 @@ def inpaint_slot(
         (stitched_image [H,W,C], refined_crop [1, tH, tW, C])
         or (image, None) if mask is empty
     """
-    # Step 1: Mask preprocessing
-    processed_mask = mask_2d.clone()
+    # Step 1: Mask preprocessing (fill/expand return new tensors, no clone needed)
+    processed_mask = mask_2d
     if mask_fill_holes:
         processed_mask = fill_mask_holes_2d(processed_mask)
     if mask_expand_pixels > 0:
@@ -426,16 +364,47 @@ def inpaint_slot(
 
     # Step 8: Apply denoise gradient (center-to-edge falloff)
     if denoise_gradient > 0:
-        import cv2
         mask_np = cropped_mask.cpu().numpy()
         mask_uint8 = (mask_np * 255).astype(np.uint8)
-        dist = cv2.distanceTransform(mask_uint8, cv2.DIST_L2, 5)
-        max_dist = dist.max()
-        if max_dist > 0:
-            dist_norm = dist / max_dist  # 0 at edges, 1 at center
-            # Blend: at edges mask *= (1 - denoise_gradient), at center stays 1.0
-            gradient = 1.0 - denoise_gradient * (1.0 - dist_norm)
-            cropped_mask = cropped_mask * torch.from_numpy(gradient).float()
+        h_m, w_m = mask_np.shape[:2]
+
+        if denoise_gradient_mode == "radial":
+            # Radial falloff from mask centroid — good for roughly circular masks (faces)
+            ys, xs = np.where(mask_uint8 > 128)
+            if len(xs) > 0:
+                cx, cy = xs.mean(), ys.mean()
+                Y, X = np.mgrid[:h_m, :w_m]
+                dist_from_center = np.sqrt((X - cx)**2 + (Y - cy)**2).astype(np.float32)
+                max_r = dist_from_center[mask_uint8 > 128].max()
+                gradient = 1.0 - np.clip(dist_from_center / max(max_r, 1.0), 0, 1)
+                gradient *= (mask_np > 0.1).astype(np.float32)
+            else:
+                gradient = mask_np.copy()
+        elif denoise_gradient_mode == "smooth":
+            # Smoothed distance transform — follows mask shape closely
+            dist = cv2.distanceTransform(mask_uint8, cv2.DIST_L2, 5)
+            max_dist = dist.max()
+            if max_dist > 0:
+                gradient = dist / max_dist
+            else:
+                gradient = mask_np.copy()
+        else:
+            # "linear" (default) — USD Upscale style linear ramp, smoothest
+            dist = cv2.distanceTransform(mask_uint8, cv2.DIST_L2, 5)
+            max_dist = dist.max()
+            if max_dist > 0:
+                # Reach 1.0 at 40% depth from edge — flatter center, steeper edges
+                gradient = np.clip(dist / max(max_dist * 0.4, 1.0), 0, 1)
+            else:
+                gradient = mask_np.copy()
+
+        # Heavy Gaussian blur to eliminate aliasing at latent resolution (8x downscale)
+        blur_size = max(31, int(min(h_m, w_m) * 0.15)) | 1  # odd, scales with crop
+        gradient = cv2.GaussianBlur(gradient.astype(np.float32), (blur_size, blur_size), 0)
+
+        # Apply: at edges mask *= (1 - strength), at center stays 1.0
+        gradient = 1.0 - denoise_gradient * (1.0 - gradient)
+        cropped_mask = cropped_mask * torch.from_numpy(gradient.astype(np.float32))
 
     # Step 9: Set noise mask
     noise_mask = cropped_mask.reshape(1, 1, target_height, target_width).to(device)
@@ -515,44 +484,6 @@ def inpaint_slot(
 
     # Step 12: Stitch back
     stitched = stitch_back(image, decoded, blend_mask_orig, crop, stitch_info,
-                           blend_mode=blend_mode)
-
-    # Step 13: Edge refinement pass (optional)
-    if edge_refine and edge_refine_denoise > 0:
-        import cv2
-        # Create a strip mask around the blend zone (where mask is 0.1-0.9)
-        blend_np = blend_mask_orig.cpu().numpy()
-        edge_strip = ((blend_np > 0.05) & (blend_np < 0.95)).astype(np.uint8) * 255
-        # Dilate the strip slightly for context
-        kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
-        edge_strip = cv2.dilate(edge_strip, kernel, iterations=2)
-        edge_strip_mask = torch.from_numpy(edge_strip.astype(np.float32) / 255.0)
-
-        if edge_strip_mask.sum() > 100:  # only if meaningful edge area exists
-            # Run a quick low-denoise pass on the stitched region using the strip as mask
-            x, y = stitch_info["x"], stitch_info["y"]
-            actual_w, actual_h = stitch_info["w"], stitch_info["h"]
-
-            # Build a full-image strip mask
-            full_strip = torch.zeros(image.shape[0], image.shape[1], dtype=torch.float32)
-            full_strip[y:y + actual_h, x:x + actual_w] = edge_strip_mask
-
-            # Recursive call with minimal settings for the edge pass
-            stitched, _ = inpaint_slot(
-                image=stitched, mask_2d=full_strip,
-                model=model, positive_cond=positive_cond, negative_cond=negative_cond, vae=vae,
-                seed=seed + 999, steps=max(2, steps // 2), denoise=edge_refine_denoise,
-                sampler_name=sampler_name, scheduler=scheduler,
-                target_width=target_width, target_height=target_height,
-                mask_expand_pixels=0, mask_blend_pixels=max(4, mask_blend_pixels // 4),
-                mask_fill_holes=False,
-                context_expand_factor=context_expand_factor,
-                output_padding=output_padding,
-                dd_enabled=False,  # no detail daemon for edge pass
-                cfg=cfg,
-                blend_mode="gaussian",  # always gaussian for edge pass
-                denoise_gradient=0.5,  # gentle gradient for the edge strip itself
-                edge_refine=False,  # prevent infinite recursion
-            )
+                           denoise=denoise)
 
     return stitched, decoded

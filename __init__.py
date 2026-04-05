@@ -192,6 +192,33 @@ try:
             "source": "civitai",
         }
         _lora_info_cache[f"info:{lora_path}"] = result
+
+        # Save as sidecar .metadata.json so next lookup is instant
+        stem = lora_path.rsplit(".safetensors", 1)[0] if lora_path.endswith(".safetensors") else lora_path
+        meta_path = stem + ".metadata.json"
+        if not os.path.isfile(meta_path):
+            try:
+                sidecar_data = {
+                    "file_name": os.path.basename(stem),
+                    "model_name": result["name"],
+                    "base_model": result["baseModel"],
+                    "sha256": file_hash,
+                    "from_civitai": True,
+                    "civitai": {
+                        "id": version_id,
+                        "modelId": model_id,
+                        "name": result["version"],
+                        "baseModel": result["baseModel"],
+                        "trainedWords": trained_words,
+                    },
+                    "metadata_source": "fvmtools_auto",
+                }
+                with open(meta_path, "w", encoding="utf-8") as f:
+                    _json.dump(sidecar_data, f, indent=2)
+                print(f"[FVMTools] Saved metadata sidecar: {meta_path}")
+            except Exception as e:
+                print(f"[FVMTools] Could not save sidecar: {e}")
+
         return web.json_response(result)
 
     @PromptServer.instance.routes.get("/fvmtools/loras")

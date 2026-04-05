@@ -191,7 +191,7 @@ class PersonDetailerControlNet:
                       inpaint_opts, controlnet_apply_fn=None, cfg=1.0,
                       cached_model=None, cached_cond=None):
         if cached_model is not None and cached_cond is not None:
-            patched_model = cached_model.clone()
+            patched_model = cached_model  # reuse directly, no clone needed
             positive_cond = cached_cond
         else:
             patched_model, patched_clip = self._apply_lora(
@@ -228,10 +228,8 @@ class PersonDetailerControlNet:
             steps_progression=inpaint_opts.get("steps_progression", ""),
             controlnet_apply_fn=controlnet_apply_fn,
             cfg=cfg,
-            blend_mode=inpaint_opts.get("blend_mode", "auto"),
             denoise_gradient=inpaint_opts.get("denoise_gradient", 0.0),
-            edge_refine=inpaint_opts.get("edge_refine", False),
-            edge_refine_denoise=inpaint_opts.get("edge_refine_denoise", 0.12),
+            denoise_gradient_mode=inpaint_opts.get("denoise_gradient_mode", "linear"),
         )
         return stitched, refined
 

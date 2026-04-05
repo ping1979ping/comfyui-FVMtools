@@ -39,6 +39,7 @@ def get_available_yolo_models():
 
 def resolve_yolo_path(model_name):
     """Resolve a model name to absolute path."""
+    # Try registered folder_paths first
     for folder_key in ("ultralytics_segm", "ultralytics_bbox", "ultralytics"):
         try:
             path = folder_paths.get_full_path(folder_key, model_name)
@@ -46,13 +47,33 @@ def resolve_yolo_path(model_name):
                 return path
         except Exception:
             pass
+        # Also try just the filename without subdirectory prefix
+        basename = os.path.basename(model_name)
+        if basename != model_name:
+            try:
+                path = folder_paths.get_full_path(folder_key, basename)
+                if path and os.path.isfile(path):
+                    return path
+            except Exception:
+                pass
 
-    # Direct path fallback
+    # Direct path under models/ultralytics/
     base = os.path.join(folder_paths.models_dir, "ultralytics")
     direct = os.path.join(base, model_name)
     if os.path.isfile(direct):
         return direct
 
+    # Try without subdirectory prefix
+    direct2 = os.path.join(base, os.path.basename(model_name))
+    if os.path.isfile(direct2):
+        return direct2
+
+    # Search recursively as last resort
+    for root, dirs, files in os.walk(base):
+        if os.path.basename(model_name) in files:
+            return os.path.join(root, os.path.basename(model_name))
+
+    print(f"[FVMTools] Could not resolve YOLO model path: {model_name}")
     return None
 
 
@@ -102,20 +123,33 @@ def detect_objects(image_tensor, model_name, confidence=0.5, label_filter=""):
     # Run inference
     results = model.predict(img_pil, conf=confidence, verbose=False)
 
+    # Log available class names from model
+    if results and hasattr(results[0], 'names'):
+        all_names = results[0].names
+        print(f"[FVMTools] YOLO model classes: {all_names}")
+
     # Parse label filter
     filter_labels = set()
     if label_filter.strip():
         filter_labels = {l.strip().lower() for l in label_filter.split(",") if l.strip()}
+        print(f"[FVMTools] Label filter: {filter_labels}")
 
     detections = []
     for r in results:
         has_masks = r.masks is not None
-        for j in range(len(r.boxes)):
+        num_detections = len(r.boxes) if r.boxes is not None else 0
+        print(f"[FVMTools] YOLO detected {num_detections} objects, has_masks={has_masks}")
+
+        if num_detections == 0:
+            continue
+
+        for j in range(num_detections):
             class_id = int(r.boxes.cls[j])
             class_name = r.names[class_id]
 
             # Apply label filter
             if filter_labels and class_name.lower() not in filter_labels:
+                print(f"[FVMTools]   skipping '{class_name}' (not in filter)")
                 continue
 
             conf = r.boxes.conf[j].cpu().item()
