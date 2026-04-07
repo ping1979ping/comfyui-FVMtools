@@ -280,10 +280,14 @@ class MaskGenerator:
         if crop.size == 0:
             return np.zeros((h, w), dtype=np.float32)
 
-        # Preprocess: resize to 512x512, normalize
+        # Preprocess: resize to 512x512, scale to [0,1], then normalize to [-1,1]
+        # parsing_bisenet.pth (facexlib/CodeFormer) expects mean/std = (0.5, 0.5, 0.5).
+        # Without this step the network collapses to a dominant class and face masks
+        # end up covering the full padded crop instead of actual face pixels.
         crop_resized = cv2.resize(crop, (512, 512), interpolation=cv2.INTER_LINEAR)
         crop_t = torch.from_numpy(crop_resized.astype(np.float32) / 255.0)
         crop_t = crop_t.permute(2, 0, 1).unsqueeze(0)  # (1, 3, 512, 512)
+        crop_t = (crop_t - 0.5) / 0.5
         crop_t = crop_t.to(device)
 
         with torch.no_grad():
