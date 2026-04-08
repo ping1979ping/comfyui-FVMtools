@@ -228,6 +228,19 @@ try:
         loras = _fp.get_filename_list("loras")
         return web.json_response({"loras": loras})
 
+    @PromptServer.instance.routes.get("/fvmtools/yolo-classes")
+    async def _get_yolo_classes(request):
+        """Return class names for a YOLO model (used by PersonSelectorMulti aux_label tooltip)."""
+        model_name = request.rel_url.query.get("model", "")
+        if not model_name or model_name == "none":
+            return web.json_response({"classes": []})
+        from .nodes.utils.yolo_detector import get_yolo_classes
+        try:
+            classes = get_yolo_classes(model_name)
+        except Exception as e:
+            return web.json_response({"error": str(e), "classes": []}, status=500)
+        return web.json_response({"classes": classes})
+
     @PromptServer.instance.routes.get("/fvmtools/outfit-files")
     async def _get_outfit_files(request):
         """List .txt files in an outfit set directory."""

@@ -12,15 +12,29 @@ import folder_paths
 # ── Model path scanning ──────────────────────────────────────────────────
 
 def get_available_yolo_models():
-    """Scan ultralytics model folders for .pt files. Returns list of relative names."""
+    """Scan ultralytics model folders for .pt files. Returns list of relative names.
+
+    Deduplicates by basename so the same file isn't listed twice when it appears
+    both via folder_paths registration (e.g. 'foo.pt' under 'ultralytics_segm')
+    and via the fallback directory walk (e.g. 'segm/foo.pt' under 'ultralytics').
+    """
+    seen_basenames = set()
     models = []
+
+    def _add(name):
+        base = os.path.basename(name).lower()
+        if base in seen_basenames:
+            return
+        seen_basenames.add(base)
+        models.append(name)
+
     # Check registered folders
     for folder_key in ("ultralytics", "ultralytics_segm", "ultralytics_bbox"):
         try:
             files = folder_paths.get_filename_list(folder_key)
             for f in files:
-                if f.endswith(".pt") and f not in models:
-                    models.append(f)
+                if f.endswith(".pt"):
+                    _add(f)
         except Exception:
             pass
 
@@ -31,10 +45,9 @@ def get_available_yolo_models():
             for f in files:
                 if f.endswith(".pt"):
                     rel = os.path.relpath(os.path.join(root, f), base)
-                    if rel not in models:
-                        models.append(rel)
+                    _add(rel)
 
-    return sorted(set(models))
+    return sorted(models)
 
 
 def resolve_yolo_path(model_name):
@@ -80,6 +93,7 @@ def resolve_yolo_path(model_name):
 # ── Model cache ──────────────────────────────────────────────────────────
 
 _model_cache = {}  # path → YOLO model
+_classes_cache = {}  # path → list[str] of class names
 
 
 def _load_model(model_path):
@@ -91,6 +105,27 @@ def _load_model(model_path):
     model = YOLO(model_path)
     _model_cache[model_path] = model
     return model
+
+
+def get_yolo_classes(model_name):
+    """Return sorted list of class names for a YOLO model. Cached."""
+    model_path = resolve_yolo_path(model_name)
+    if model_path is None:
+        return []
+    if model_path in _classes_cache:
+        return _classes_cache[model_path]
+    try:
+        model = _load_model(model_path)
+        names = getattr(model, "names", None) or {}
+        if isinstance(names, dict):
+            classes = [str(v) for _, v in sorted(names.items())]
+        else:
+            classes = [str(v) for v in names]
+    except Exception as e:
+        print(f"[FVMTools] Failed to read classes from {model_name}: {e}")
+        classes = []
+    _classes_cache[model_path] = classes
+    return classes
 
 
 # ── Detection ────────────────────────────────────────────────────────────
@@ -128,11 +163,10 @@ def detect_objects(image_tensor, model_name, confidence=0.5, label_filter=""):
         all_names = results[0].names
         print(f"[FVMTools] YOLO model classes: {all_names}")
 
-    # Parse label filter
-    filter_labels = set()
-    if label_filter.strip():
-        filter_labels = {l.strip().lower() for l in label_filter.split(",") if l.strip()}
-        print(f"[FVMTools] Label filter: {filter_labels}")
+    # Parse label filter (substring match — "leg" matches "Left-leg", "right_leg", etc.)
+    filter_labels = [l.strip().lower() for l in label_filter.split(",") if l.strip()]
+    if filter_labels:
+        print(f"[FVMTools] Label filter (substring match): {filter_labels}")
 
     detections = []
     for r in results:
@@ -147,10 +181,12 @@ def detect_objects(image_tensor, model_name, confidence=0.5, label_filter=""):
             class_id = int(r.boxes.cls[j])
             class_name = r.names[class_id]
 
-            # Apply label filter
-            if filter_labels and class_name.lower() not in filter_labels:
-                print(f"[FVMTools]   skipping '{class_name}' (not in filter)")
-                continue
+            # Apply label filter — substring match so "leg" hits "Left-leg", "right_leg", etc.
+            if filter_labels:
+                cn_lower = class_name.lower()
+                if not any(f in cn_lower for f in filter_labels):
+                    print(f"[FVMTools]   skipping '{class_name}' (not in filter)")
+                    continue
 
             conf = r.boxes.conf[j].cpu().item()
             bbox = r.boxes.xyxy[j].cpu().numpy()

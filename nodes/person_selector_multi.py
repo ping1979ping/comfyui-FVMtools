@@ -6,7 +6,7 @@ from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
 from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
-from .utils.mask_utils import clean_mask_crumbs
+from .utils.mask_utils import clean_mask_crumbs, fill_mask_holes_2d, expand_mask, feather_mask
 from .utils.yolo_detector import get_available_yolo_models, detect_objects, assign_detections_to_references
 from .utils.appearance import (
     extract_hair_color,
@@ -91,12 +91,24 @@ class PersonSelectorMulti:
                                                          "Higher = fewer, more confident detections\n\n"
                                                          "0.25-0.35 recommended for most models."}),
                 "aux_label": ("STRING", {"default": "",
-                                          "tooltip": "Filter YOLO detections by class label.\n\n"
+                                          "tooltip": "Filter YOLO detections by class label (substring match).\n\n"
                                                      "Empty = keep all detected classes (default)\n"
-                                                     "Comma-separated: 'person' or 'hand,face'\n\n"
-                                                     "The available labels depend on the model.\n"
-                                                     "COCO models: person, bicycle, car, etc.\n"
-                                                     "Specialized models may have: hand, face, head, etc."}),
+                                                     "Comma-separated: 'person' or 'leg,foot'\n\n"
+                                                     "Substring match: 'leg' hits 'Left-leg', 'right_leg', etc.\n"
+                                                     "The class list for the selected model is displayed\n"
+                                                     "above the Matching section after model selection."}),
+                "aux_fill_holes": ("BOOLEAN", {"default": False,
+                                                "tooltip": "Fill holes inside YOLO aux masks (closes interior gaps).\n"
+                                                           "Off by default — segm models usually produce solid masks."}),
+                "aux_expand_pixels": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1,
+                                                "tooltip": "Dilate YOLO aux masks by N pixels (elliptical kernel).\n"
+                                                           "Useful when segm masks hug the silhouette too tightly\n"
+                                                           "for inpainting. 0 = no growth."}),
+                "aux_blend_pixels": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1,
+                                               "tooltip": "Gaussian blur radius for YOLO aux mask edges (symmetric).\n"
+                                                          "Blurs ~N pixels inward AND outward from the current edge.\n"
+                                                          "If you want the grown shape to stay fully opaque, set\n"
+                                                          "aux_expand_pixels at least as large as aux_blend_pixels."}),
                 "match_weights": ("STRING", {"default": "50/15/15/20",
                                              "tooltip": "Matching weight blend: face/hair/head/outfit.\n"
                                                         "Controls how much each signal contributes to the final similarity score.\n\n"
@@ -540,6 +552,7 @@ class PersonSelectorMulti:
     def execute(self, sam_model, current_image, auto_threshold, threshold, guaranteed_refs,
                 aggregation, mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
                 aux_model="none", aux_confidence=0.35, aux_label="",
+                aux_fill_holes=False, aux_expand_pixels=0, aux_blend_pixels=0,
                 match_weights="50/15/15/20",
                 reference_1=None,
                 outfit_palettes=None,
@@ -735,6 +748,18 @@ class PersonSelectorMulti:
             aux_unassigned = []  # [1,H,W] per batch
             aux_part_counts = []  # [{ri: count}, ...] per batch
 
+            # Post-processing helper — applied to each merged YOLO mask so both
+            # person_data["aux_masks"] (consumed by PersonDetailer) and the
+            # aux_masks output port see the cleaned mask.
+            def _aux_post(mask_2d):
+                if aux_fill_holes:
+                    mask_2d = fill_mask_holes_2d(mask_2d)
+                if aux_expand_pixels > 0:
+                    mask_2d = expand_mask(mask_2d, aux_expand_pixels)
+                if aux_blend_pixels > 0:
+                    mask_2d = feather_mask(mask_2d, aux_blend_pixels)
+                return mask_2d
+
             for b in range(batch_size):
                 single_image = current_image[b]  # [H, W, C]
 
@@ -753,6 +778,7 @@ class PersonSelectorMulti:
                     counts[ri] = len(parts)
                     if parts:
                         merged = torch.max(torch.stack(parts), dim=0)[0]  # [H, W]
+                        merged = _aux_post(merged)
                         aux_per_ref[ri].append(merged.unsqueeze(0))  # [1, H, W]
                     else:
                         aux_per_ref[ri].append(torch.zeros(1, h, w, dtype=torch.float32))
@@ -761,6 +787,7 @@ class PersonSelectorMulti:
                 unassigned_parts = det_assignments.get(-1, [])
                 if unassigned_parts:
                     merged_unassigned = torch.max(torch.stack(unassigned_parts), dim=0)[0]
+                    merged_unassigned = _aux_post(merged_unassigned)
                     aux_unassigned.append(merged_unassigned.unsqueeze(0))
                 else:
                     aux_unassigned.append(torch.zeros(1, h, w, dtype=torch.float32))
@@ -824,13 +851,22 @@ class PersonSelectorMulti:
             combined_head = empty_mask(h, w)
             combined_body = empty_mask(h, w)
 
-        # Auxiliary masks output
+        # Auxiliary masks output:
+        #   1. If aux_mask_type is set → BiSeNet mask of that type
+        #   2. Else if YOLO aux_model ran → merged YOLO detections per ref
+        #   3. Else → empty
         if aux_mask_type != "none" and aux_mask_type in MASK_TYPE_LABELS and num_refs > 0:
             aux_list = []
             for b in range(batch_size):
                 mpt = batch_results[b]["masks_per_type"]
                 for ri in range(num_refs):
                     aux_list.append(mpt[aux_mask_type][ri])
+            aux_masks_batch = torch.cat(aux_list, dim=0) if aux_list else empty_mask(h, w)
+        elif aux_model != "none" and "aux_masks" in person_data and num_refs > 0:
+            aux_list = []
+            for b in range(batch_size):
+                for ri in range(num_refs):
+                    aux_list.append(person_data["aux_masks"][ri][b:b+1])
             aux_masks_batch = torch.cat(aux_list, dim=0) if aux_list else empty_mask(h, w)
         else:
             aux_masks_batch = empty_mask(h, w)

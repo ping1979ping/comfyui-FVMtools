@@ -73,6 +73,13 @@ app.registerExtension({
         //   7: preview, 8: similarities, 9: matches, 10: matched_count, 11: face_count, 12: report
         if (nodeData.name === "PersonSelectorMulti") {
 
+            const PSM_SEPS = [
+                { label: "── Matching ──",        before: "auto_threshold" },
+                { label: "── Mask Refinement ──", before: "mask_fill_holes" },
+                { label: "── Aux / YOLO ──",      before: "aux_mask_type" },
+                { label: "── Appearance ──",      before: "match_weights" },
+            ];
+
             const onNodeCreated = nodeType.prototype.onNodeCreated;
             nodeType.prototype.onNodeCreated = function () {
                 const r = onNodeCreated ? onNodeCreated.apply(this, arguments) : undefined;
@@ -83,6 +90,95 @@ app.registerExtension({
                     }
                 }
                 this.addInput("reference_2", "IMAGE");
+
+                // Static section separators (same pattern as person_detailer.js)
+                try {
+                    for (let i = PSM_SEPS.length - 1; i >= 0; i--) {
+                        const sep = PSM_SEPS[i];
+                        const idx = this.widgets.findIndex(w => w.name === sep.before);
+                        if (idx < 0) continue;
+                        this.widgets.splice(idx, 0, {
+                            name: "_sep_" + sep.before,
+                            type: "custom",
+                            value: sep.label,
+                            options: { serialize: false },
+                            computeSize: () => [0, 24],
+                            draw(ctx, n, width, posY) {
+                                ctx.save();
+                                ctx.font = "bold 11px Arial";
+                                ctx.fillStyle = "#999";
+                                ctx.textAlign = "center";
+                                const cy = posY + 15;
+                                ctx.fillText(this.value, width / 2, cy);
+                                const tw = ctx.measureText(this.value).width;
+                                const cx = width / 2;
+                                ctx.strokeStyle = "#555";
+                                ctx.lineWidth = 1;
+                                ctx.beginPath();
+                                ctx.moveTo(15, cy - 4);
+                                ctx.lineTo(Math.max(15, cx - tw / 2 - 10), cy - 4);
+                                ctx.stroke();
+                                ctx.beginPath();
+                                ctx.moveTo(Math.min(width - 15, cx + tw / 2 + 10), cy - 4);
+                                ctx.lineTo(width - 15, cy - 4);
+                                ctx.stroke();
+                                ctx.restore();
+                            },
+                        });
+                    }
+                } catch (e) {
+                    console.error("[FVMTools] PersonSelectorMulti separator setup error:", e);
+                }
+
+                // Wire aux_model → fetch class names and stash them on the node so
+                // they can be drawn directly under the aux_label widget. The new Vue
+                // frontend doesn't honor mutated widget tooltips, so we render text
+                // on the canvas instead — always visible, no hover needed.
+                const auxModelW = this.widgets?.find(w => w.name === "aux_model");
+                const auxLabelW = this.widgets?.find(w => w.name === "aux_label");
+                if (auxModelW) {
+                    const node = this;
+                    node._fvmAuxClasses = "";
+                    const updateClasses = async (modelName) => {
+                        if (!modelName || modelName === "none") {
+                            node._fvmAuxClasses = "";
+                            node.setDirtyCanvas(true, true);
+                            return;
+                        }
+                        try {
+                            const resp = await fetch(`/fvmtools/yolo-classes?model=${encodeURIComponent(modelName)}`);
+                            const data = await resp.json();
+                            const cls = (data.classes || []);
+                            node._fvmAuxClasses = cls.length
+                                ? "classes: " + cls.join(", ")
+                                : "(no class metadata)";
+                            console.log(`[FVMTools] ${modelName} classes:`, cls);
+                            // Best-effort tooltip update for frontends that DO honor mutations
+                            if (auxLabelW) {
+                                auxLabelW.options = auxLabelW.options || {};
+                                auxLabelW.options.tooltip =
+                                    "Comma-separated substring filter. Available: " + cls.join(", ");
+                                if (auxLabelW.inputEl) {
+                                    auxLabelW.inputEl.title = auxLabelW.options.tooltip;
+                                }
+                            }
+                            node.setDirtyCanvas(true, true);
+                        } catch (e) {
+                            console.warn("[FVMTools] yolo-classes fetch failed:", e);
+                        }
+                    };
+                    const origCallback = auxModelW.callback;
+                    auxModelW.callback = function (value) {
+                        const ret = origCallback ? origCallback.apply(this, arguments) : undefined;
+                        updateClasses(value);
+                        return ret;
+                    };
+                    // Initial fetch for the default value
+                    if (auxModelW.value && auxModelW.value !== "none") {
+                        updateClasses(auxModelW.value);
+                    }
+                }
+
                 return r;
             };
 
@@ -166,6 +262,43 @@ app.registerExtension({
             const onDrawFGMulti = nodeType.prototype.onDrawForeground;
             nodeType.prototype.onDrawForeground = function (ctx) {
                 const r = onDrawFGMulti ? onDrawFGMulti.apply(this, arguments) : undefined;
+
+                // Draw YOLO class list right above the auto_threshold widget,
+                // left half of the node so it doesn't collide with right-side widgets.
+                if (this._fvmAuxClasses) {
+                    const anchorW = this.widgets?.find(w => w.name === "auto_threshold");
+                    if (anchorW && anchorW.last_y != null) {
+                        ctx.save();
+                        ctx.font = "10px sans-serif";
+                        ctx.fillStyle = "#9cf";
+                        ctx.textBaseline = "bottom";
+                        const maxW = this.size[0] * 0.5 - 10;
+                        // Word-wrap the class list across multiple lines
+                        const words = this._fvmAuxClasses.split(" ");
+                        const lines = [];
+                        let cur = "";
+                        for (const w of words) {
+                            const test = cur ? cur + " " + w : w;
+                            if (ctx.measureText(test).width > maxW && cur) {
+                                lines.push(cur);
+                                cur = w;
+                            } else {
+                                cur = test;
+                            }
+                        }
+                        if (cur) lines.push(cur);
+                        const maxLines = Math.min(lines.length, 6);
+                        const lineH = 12;
+                        // Anchor: bottom of last line sits 4px above the auto_threshold widget top
+                        const bottomY = anchorW.last_y - 4;
+                        for (let i = 0; i < maxLines; i++) {
+                            const y = bottomY - (maxLines - 1 - i) * lineH;
+                            ctx.fillText(lines[i], 10, y);
+                        }
+                        ctx.restore();
+                    }
+                }
+
                 if (!this.outputs || !this._psmValues) return r;
 
                 const entries = [
