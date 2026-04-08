@@ -67,10 +67,68 @@ def _clip_labels_to_body(label_map, sam_body_mask):
     return clipped
 
 
+def split_person_mask_by_anchors(person_mask_np, anchors, depth_np=None):
+    """Split a foreground mask into per-anchor envelopes.
+
+    Used by PersonSelectorMulti to carve a BiRefNet/RMBG foreground mask
+    into per-reference (or per-face when no refs connected) envelopes.
+
+    Args:
+        person_mask_np: [H,W] float32 foreground mask (BiRefNet output)
+        anchors: list of dicts, one per reference/face. Each has:
+                 {"center": (cx, cy), "bbox": (x1,y1,x2,y2), "depth": float|None}
+        depth_np: [H,W] float32 depth map, or None
+
+    Returns:
+        list of [H,W] float32 per-anchor masks, same length as anchors.
+        Pixels outside person_mask are zero in every output. Each foreground
+        pixel is assigned exclusively to its closest anchor (by spatial distance,
+        optionally weighted by depth similarity when depth is available).
+    """
+    if not anchors:
+        return []
+
+    H, W = person_mask_np.shape
+    fg = person_mask_np > 0.5
+    ys, xs = np.where(fg)
+
+    if len(ys) == 0:
+        return [np.zeros_like(person_mask_np) for _ in anchors]
+
+    N = len(anchors)
+    # Distance score per anchor per foreground pixel: smaller = more likely owner
+    scores = np.full((N, len(ys)), np.inf, dtype=np.float32)
+
+    for i, a in enumerate(anchors):
+        cx, cy = a["center"]
+        dx = xs - cx
+        dy = ys - cy
+        spatial = np.sqrt(dx * dx + dy * dy).astype(np.float32)
+        if depth_np is not None and a.get("depth") is not None:
+            pixel_depth = depth_np[ys, xs].astype(np.float32)
+            depth_diff = np.abs(pixel_depth - float(a["depth"]))
+            # depth_diff in ~[0,1] → inflate distance up to 3x when depth disagrees
+            scores[i] = spatial * (1.0 + 2.0 * depth_diff)
+        else:
+            scores[i] = spatial
+
+    winners = np.argmin(scores, axis=0)
+
+    out = []
+    for i in range(N):
+        mask = np.zeros_like(person_mask_np)
+        owned = winners == i
+        if np.any(owned):
+            mask[ys[owned], xs[owned]] = 1.0
+        out.append(mask)
+    return out
+
+
 def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
                                 depth_edges_data=None, depth_np=None,
                                 depth_carve_strength=0.8, depth_grow=30,
-                                other_faces=None, body_mask_mode="auto"):
+                                other_faces=None, body_mask_mode="auto",
+                                person_mask_envelope=None):
     """Generate all 9 mask types for a single face. Shared by PersonSelectorMulti and PersonDataRefiner.
 
     Args:
@@ -88,6 +146,10 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
                         "seed_grow" (BiSeNet seed + SAM + edge carving),
                         "sam" (legacy SAM only),
                         "auto" (detector if connected, else seed_grow)
+        person_mask_envelope: optional [H,W] float32 BiRefNet-style foreground envelope for
+                              this specific person (already split per-reference upstream).
+                              When provided, replaces SAM body mask, clips BiSeNet labels to
+                              this envelope, and hard-clips all output masks to stay within it.
 
     Returns:
         dict {mask_type: torch.Tensor [1, H, W]} for all 9 types in ALL_MASK_TYPES
@@ -97,12 +159,19 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     from .mask_utils import clean_mask_crumbs
 
     use_depth = depth_edges_data is not None and depth_np is not None
+    has_envelope = person_mask_envelope is not None
 
     label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
 
-    # Generate SAM body early (needed for label clipping + body mask)
+    # Unified person envelope: BiRefNet slice (preferred) > SAM body > none
+    # This is the region we clip BiSeNet labels to, AND the source of the body mask
+    # when no body_mask_mode-specific generation is needed.
     _sam_body_for_clip = None
-    if other_faces and sam_model is not None and body_mask_mode in ("seed_grow", "auto"):
+    if has_envelope:
+        # Use the externally-provided BiRefNet envelope
+        _clip_source = person_mask_envelope.astype(np.float32)
+        label_map = _clip_labels_to_body(label_map, _clip_source)
+    elif other_faces and sam_model is not None and body_mask_mode in ("seed_grow", "auto"):
         _sam_body_for_clip = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
         _sam_body_for_clip = clean_mask_crumbs(_sam_body_for_clip, min_area_fraction=0.005)
         # Clip BiSeNet labels to SAM body region (removes cross-person leakage)
@@ -125,7 +194,12 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     # Body mask generation
     h, w = cur_rgb.shape[:2]
 
-    if body_mask_mode == "detector":
+    if has_envelope:
+        # Envelope short-circuit: use BiRefNet foreground slice directly as the body mask.
+        # Skips the entire SAM / seed_grow / detector pipeline.
+        body_mask_np = person_mask_envelope.astype(np.float32)
+        print(f"    body: envelope ({int(np.sum(body_mask_np > 0.5))}px from person_mask)")
+    elif body_mask_mode == "detector":
         # Detector mode: BiSeNet-only placeholder, SEGS upgrade happens later in execute()
         body_mask_np = (label_map > 0).astype(np.float32)
         print(f"    body: detector (placeholder {int(np.sum(body_mask_np > 0.5))}px, awaiting SEGS)")
@@ -195,6 +269,20 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
 
     # Store bisenet seed for deconfliction priority (label_map > 0 = all person pixels)
     masks["_bisenet_seed"] = (label_map > 0).astype(np.float32)
+
+    # Final hard-clip pass: zero any mask pixel outside the person envelope
+    if has_envelope:
+        env_bool = person_mask_envelope > 0.5
+        # Also clip the bisenet seed (it's used downstream for deconfliction priority)
+        masks["_bisenet_seed"] = masks["_bisenet_seed"] * env_bool.astype(np.float32)
+        for mt in list(masks.keys()):
+            if mt.startswith("_"):
+                continue
+            t = masks[mt]
+            # masks[mt] is a torch.Tensor [1,H,W] — multiply in place with env
+            m_np = t[0].cpu().numpy()
+            m_np[~env_bool] = 0.0
+            masks[mt] = mask2tensor(m_np)
 
     return masks
 

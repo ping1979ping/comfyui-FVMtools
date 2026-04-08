@@ -4,7 +4,7 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
-from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face
+from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face, split_person_mask_by_anchors
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
 from .utils.mask_utils import clean_mask_crumbs, fill_mask_holes_2d, expand_mask, feather_mask
 from .utils.yolo_detector import get_available_yolo_models, detect_objects, assign_detections_to_references
@@ -129,6 +129,17 @@ class PersonSelectorMulti:
                                                           "If batch is smaller than number of references, remaining refs skip outfit matching.\n"
                                                           "Connect palette_preview outputs from Color Palette Generator.\n"
                                                           "Use match_weights with 4 values to control outfit weight (e.g. 50/15/15/20)."}),
+                "person_mask": ("MASK", {"tooltip":
+                    "Foreground person mask (BiRefNet, RMBG-2.0, or similar).\n\n"
+                    "When connected, acts as a hard clip for ALL mask types — face, head, "
+                    "body, aux, and BiSeNet label seeds are zeroed outside this silhouette. "
+                    "Body masks are replaced entirely by the BiRefNet envelope (SAM/seed_grow skipped).\n\n"
+                    "Single mask [1,H,W] or per-image batch [B,H,W]. If batch size is 1 but "
+                    "current_image has a larger batch, the mask is broadcast to all images.\n\n"
+                    "Multi-person split: the foreground is divided per reference using depth "
+                    "(closest depth wins) when depth_map is also connected, or by face-center "
+                    "distance otherwise. When no references are connected, the split falls back "
+                    "to detected face count — each detected face becomes a pseudo-reference."}),
                 "depth_map": ("IMAGE", {"tooltip": "Depth map batch from Depth Anything V2 or similar. Improves masks via edge carving and cross-reference deconfliction."}),
                 "depth_edge_threshold": ("FLOAT", {"default": 0.05, "min": 0.01, "max": 0.30, "step": 0.01,
                                                     "tooltip": "Depth gradient threshold for edge detection. Lower = more edges detected."}),
@@ -272,13 +283,15 @@ class PersonSelectorMulti:
     def _generate_all_masks(self, cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
                             depth_edges_data=None, depth_np=None,
                             depth_carve_strength=0.8, depth_grow=30,
-                            other_faces=None, body_mask_mode="auto"):
+                            other_faces=None, body_mask_mode="auto",
+                            person_mask_envelope=None):
         """Generate all mask types. Delegates to shared generate_all_masks_for_face()."""
         return generate_all_masks_for_face(
             cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
             depth_edges_data=depth_edges_data, depth_np=depth_np,
             depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
             other_faces=other_faces, body_mask_mode=body_mask_mode,
+            person_mask_envelope=person_mask_envelope,
         )
 
     def _render_mask_layers(self, current_image, assignments, cur_faces,
@@ -393,7 +406,8 @@ class PersonSelectorMulti:
                                ref_outfit_hists=None, ref_palette_colors=None,
                                depth_edges_data=None, depth_np=None,
                                depth_carve_strength=0.8, depth_grow=30,
-                               body_mask_mode="auto", guaranteed_refs=0):
+                               body_mask_mode="auto", guaranteed_refs=0,
+                               person_mask_np=None):
         """Process a single image and return per-ref masks, assignments, faces, etc."""
         h, w = single_image.shape[1], single_image.shape[2]
 
@@ -475,6 +489,27 @@ class PersonSelectorMulti:
 
         assignments = self._assign_greedy(sim_matrix, effective_threshold, guaranteed_refs=guaranteed_refs)
 
+        # Build per-face envelopes from person_mask (BiRefNet foreground split per face).
+        # Indexed by face idx (fi) — matched ref faces use their fi; unmatched faces
+        # fall through to the per_face_masks block below with the same envelope source.
+        # When no person_mask is provided, face_envelopes is empty and the downstream
+        # generate_all_masks_for_face falls back to SAM-based clipping.
+        face_envelopes = {}  # fi -> [H,W] float32
+        if person_mask_np is not None and face_count > 0:
+            anchors = []
+            for face in cur_faces:
+                x1, y1, x2, y2 = [int(v) for v in face.bbox]
+                cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
+                a = {"center": (cx, cy), "bbox": (x1, y1, x2, y2), "depth": None}
+                if depth_np is not None and y2 > y1 and x2 > x1:
+                    a["depth"] = float(np.median(depth_np[y1:y2, x1:x2]))
+                anchors.append(a)
+            envs = split_person_mask_by_anchors(person_mask_np, anchors, depth_np=depth_np)
+            for fi, env in enumerate(envs):
+                face_envelopes[fi] = env
+            print(f"[PersonSelectorMulti] person_mask split into {len(envs)} envelopes "
+                  f"(anchors={'depth-weighted' if depth_np is not None else 'face-center'})")
+
         # Collect all mask types per reference
         from .utils.masker import ALL_MASK_TYPES
         masks_per_type = {mt: [] for mt in ALL_MASK_TYPES}
@@ -487,7 +522,8 @@ class PersonSelectorMulti:
                 masks = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
                                                   depth_edges_data=depth_edges_data, depth_np=depth_np,
                                                   depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
-                                                  other_faces=others, body_mask_mode=body_mask_mode)
+                                                  other_faces=others, body_mask_mode=body_mask_mode,
+                                                  person_mask_envelope=face_envelopes.get(fi))
                 for mt in ALL_MASK_TYPES:
                     masks_per_type[mt].append(masks.get(mt, empty_mask(h, w)))
                 # Store bisenet seed for deconfliction priority
@@ -532,7 +568,8 @@ class PersonSelectorMulti:
                 per_face = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
                                                       depth_edges_data=depth_edges_data, depth_np=depth_np,
                                                       depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
-                                                      other_faces=others, body_mask_mode=body_mask_mode)
+                                                      other_faces=others, body_mask_mode=body_mask_mode,
+                                                      person_mask_envelope=face_envelopes.get(fi))
             per_face_masks.append(per_face)
         face_to_ref = [fi_to_ri.get(fi) for fi in range(face_count)]
 
@@ -547,6 +584,7 @@ class PersonSelectorMulti:
             "per_face_masks": per_face_masks,
             "face_to_ref": face_to_ref,
             "bisenet_seeds": bisenet_seeds_per_ref,
+            "face_envelopes": face_envelopes,  # fi -> [H,W] when person_mask connected
         }
 
     def execute(self, sam_model, current_image, auto_threshold, threshold, guaranteed_refs,
@@ -556,6 +594,7 @@ class PersonSelectorMulti:
                 match_weights="50/15/15/20",
                 reference_1=None,
                 outfit_palettes=None,
+                person_mask=None,
                 depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
                 body_mask_mode="auto",
                 depth_sort_order="front_last",
@@ -634,6 +673,24 @@ class PersonSelectorMulti:
                 depth_edges_list.append(compute_depth_edges(dnp, depth_edge_threshold))
             print(f"[PersonSelectorMulti] Depth: edge_thr={depth_edge_threshold}, carve={depth_carve_strength}, grow={depth_grow_pixels}")
 
+        # Prepare person_mask (BiRefNet/RMBG foreground) per batch image.
+        # Single mask broadcasts to full batch; otherwise per-image.
+        person_mask_np_list = []
+        if person_mask is not None:
+            pm = person_mask
+            if pm.dim() == 2:
+                pm = pm.unsqueeze(0)
+            pm_batch = pm.shape[0]
+            for b in range(batch_size):
+                idx = min(b, pm_batch - 1)
+                arr = pm[idx].cpu().numpy().astype(np.float32)
+                if arr.shape[0] != h or arr.shape[1] != w:
+                    arr = cv2.resize(arr, (w, h), interpolation=cv2.INTER_LINEAR)
+                person_mask_np_list.append(arr)
+            fg_frac = np.mean([float((m > 0.5).mean()) for m in person_mask_np_list])
+            print(f"[PersonSelectorMulti] person_mask connected: broadcast={pm_batch == 1 and batch_size > 1}, "
+                  f"mean foreground = {fg_frac * 100:.1f}%")
+
         # Resolve auto body_mask_mode
         effective_body_mode = body_mask_mode
         if body_mask_mode == "auto":
@@ -659,6 +716,7 @@ class PersonSelectorMulti:
                 depth_grow=depth_grow_pixels,
                 body_mask_mode=effective_body_mode,
                 guaranteed_refs=guaranteed_refs,
+                person_mask_np=person_mask_np_list[b] if person_mask_np_list else None,
             )
             batch_results.append(result)
 
@@ -752,10 +810,14 @@ class PersonSelectorMulti:
             # person_data["aux_masks"] (consumed by PersonDetailer) and the
             # aux_masks output port see the cleaned mask.
             def _aux_post(mask_2d):
-                if aux_fill_holes:
-                    mask_2d = fill_mask_holes_2d(mask_2d)
+                # Order: grow → fill → blur. Growing first can bridge small
+                # gaps between adjacent detections (e.g. upper leg + foot),
+                # and the subsequent fill_holes then closes the enclosed area,
+                # yielding a solid silhouette before edge feathering.
                 if aux_expand_pixels > 0:
                     mask_2d = expand_mask(mask_2d, aux_expand_pixels)
+                if aux_fill_holes:
+                    mask_2d = fill_mask_holes_2d(mask_2d)
                 if aux_blend_pixels > 0:
                     mask_2d = feather_mask(mask_2d, aux_blend_pixels)
                 return mask_2d
@@ -772,12 +834,22 @@ class PersonSelectorMulti:
                 det_assignments = assign_detections_to_references(
                     detections, body_masks_list, num_refs, b)
 
+                # Envelope clip mask for this batch image (union of all face envelopes
+                # if person_mask was provided). Used to zero any YOLO detection that
+                # straggles outside the BiRefNet foreground.
+                env_clip_tensor = None
+                if person_mask_np_list:
+                    env_union = person_mask_np_list[b] > 0.5
+                    env_clip_tensor = torch.from_numpy(env_union.astype(np.float32))
+
                 counts = {}
                 for ri in range(num_refs):
                     parts = det_assignments.get(ri, [])
                     counts[ri] = len(parts)
                     if parts:
                         merged = torch.max(torch.stack(parts), dim=0)[0]  # [H, W]
+                        if env_clip_tensor is not None:
+                            merged = merged * env_clip_tensor
                         merged = _aux_post(merged)
                         aux_per_ref[ri].append(merged.unsqueeze(0))  # [1, H, W]
                     else:
@@ -787,6 +859,8 @@ class PersonSelectorMulti:
                 unassigned_parts = det_assignments.get(-1, [])
                 if unassigned_parts:
                     merged_unassigned = torch.max(torch.stack(unassigned_parts), dim=0)[0]
+                    if env_clip_tensor is not None:
+                        merged_unassigned = merged_unassigned * env_clip_tensor
                     merged_unassigned = _aux_post(merged_unassigned)
                     aux_unassigned.append(merged_unassigned.unsqueeze(0))
                 else:

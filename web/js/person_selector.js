@@ -263,8 +263,9 @@ app.registerExtension({
             nodeType.prototype.onDrawForeground = function (ctx) {
                 const r = onDrawFGMulti ? onDrawFGMulti.apply(this, arguments) : undefined;
 
-                // Draw YOLO class list right above the auto_threshold widget,
+                // Draw YOLO class list above the auto_threshold widget,
                 // left half of the node so it doesn't collide with right-side widgets.
+                // Header "classes:" on its own line, followed by word-wrapped names.
                 if (this._fvmAuxClasses) {
                     const anchorW = this.widgets?.find(w => w.name === "auto_threshold");
                     if (anchorW && anchorW.last_y != null) {
@@ -273,9 +274,10 @@ app.registerExtension({
                         ctx.fillStyle = "#9cf";
                         ctx.textBaseline = "bottom";
                         const maxW = this.size[0] * 0.5 - 10;
-                        // Word-wrap the class list across multiple lines
-                        const words = this._fvmAuxClasses.split(" ");
-                        const lines = [];
+                        // Strip leading "classes: " so we can render it as a header line
+                        const body = this._fvmAuxClasses.replace(/^classes:\s*/, "");
+                        const words = body.split(" ");
+                        const lines = ["classes:"];
                         let cur = "";
                         for (const w of words) {
                             const test = cur ? cur + " " + w : w;
@@ -287,10 +289,11 @@ app.registerExtension({
                             }
                         }
                         if (cur) lines.push(cur);
-                        const maxLines = Math.min(lines.length, 6);
+                        const maxLines = Math.min(lines.length, 7);
                         const lineH = 12;
-                        // Anchor: bottom of last line sits 4px above the auto_threshold widget top
-                        const bottomY = anchorW.last_y - 4;
+                        // Shift up by ~2 widget heights (default widget height = 20)
+                        // so the text clears the widgets below it.
+                        const bottomY = anchorW.last_y - 44;
                         for (let i = 0; i < maxLines; i++) {
                             const y = bottomY - (maxLines - 1 - i) * lineH;
                             ctx.fillText(lines[i], 10, y);

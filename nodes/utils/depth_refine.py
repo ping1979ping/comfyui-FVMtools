@@ -30,6 +30,13 @@ def compute_depth_edges(depth_map, threshold=0.05):
         magnitude = magnitude / mag_max
 
     edges_binary = magnitude > threshold
+
+    # Diagnostic: warn when depth is too flat for meaningful edge detection
+    edge_count = int(edges_binary.sum())
+    if edge_count < depth_map.size * 0.001:
+        print(f"[FVMTools] compute_depth_edges: only {edge_count} edge pixels detected "
+              f"(threshold={threshold}). Depth refinement will be a no-op for this image.")
+
     return magnitude, edges_binary
 
 
@@ -90,11 +97,30 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
 # ── Phase 3: Gap Filling (per mask) ──
 
 def grow_mask_between_edges(mask, edges_binary, max_pixels=30):
-    """Grow mask to fill gaps, but never cross depth edges."""
+    """Grow mask to fill gaps, but never cross depth edges.
+
+    Guards against whole-image explosions: bails out if there are no edges
+    (barrier would be all-open) and caps growth at 3x starting area to
+    contain partial barrier failures.
+    """
     if max_pixels <= 0:
         return mask
 
+    # Guard 1: no edges detected → barrier would be all-open, dilation would
+    # fill the image. Bail out and return mask unchanged.
+    if not edges_binary.any():
+        return mask
+
     current = (mask > 0.5).astype(np.uint8)
+    start_area = int(current.sum())
+    if start_area == 0:
+        return mask
+
+    # Guard 2: hard cap at 3x starting area so a partial barrier failure
+    # (edges present but not forming a closed boundary) can't produce
+    # runaway growth either.
+    max_area = start_area * 3
+
     barrier = (~edges_binary).astype(np.uint8)
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
     iterations = max_pixels // 2
@@ -105,6 +131,8 @@ def grow_mask_between_edges(mask, edges_binary, max_pixels=30):
         if new_pixels.sum() == 0:
             break
         current = current | new_pixels
+        if int(current.sum()) > max_area:
+            break
 
     return current.astype(np.float32)
 

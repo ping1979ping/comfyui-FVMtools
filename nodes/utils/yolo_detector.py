@@ -194,9 +194,20 @@ def detect_objects(image_tensor, model_name, confidence=0.5, label_filter=""):
             # Get mask (segmentation model) or create from bbox
             if has_masks:
                 import cv2
-                mask_raw = r.masks.data[j].cpu().numpy()
-                mask_resized = cv2.resize(mask_raw, (img_w, img_h), interpolation=cv2.INTER_LINEAR)
-                mask = (mask_resized > 0.5).astype(np.float32)
+                # Use r.masks.xy (polygon in ORIGINAL image coordinates) rather than
+                # r.masks.data (which is at letterboxed model input size and would
+                # introduce a vertical offset equal to the letterbox padding when
+                # resized straight back to the image dimensions).
+                mask = np.zeros((img_h, img_w), dtype=np.float32)
+                try:
+                    poly = r.masks.xy[j]
+                    if poly is not None and len(poly) >= 3:
+                        cv2.fillPoly(mask, [poly.astype(np.int32)], 1.0)
+                except (AttributeError, IndexError):
+                    # Fallback to legacy path if .xy isn't available
+                    mask_raw = r.masks.data[j].cpu().numpy()
+                    mask_resized = cv2.resize(mask_raw, (img_w, img_h), interpolation=cv2.INTER_LINEAR)
+                    mask = (mask_resized > 0.5).astype(np.float32)
             else:
                 # Bbox-only model: create rectangular mask
                 mask = np.zeros((img_h, img_w), dtype=np.float32)
