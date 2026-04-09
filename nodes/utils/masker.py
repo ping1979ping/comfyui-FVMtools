@@ -142,8 +142,29 @@ def split_person_mask_by_seeds(person_mask_np, seed_masks):
     for i in range(N):
         mask = np.zeros_like(person_mask_np)
         owned = (winners == i) & fg
-        if np.any(owned):
-            mask[owned] = 1.0
+        if not np.any(owned):
+            out.append(mask)
+            continue
+        mask[owned] = 1.0
+
+        # Connected-component cleanup: keep only components that touch this
+        # person's seed, or that exceed a minimum area. Removes isolated blobs
+        # mis-assigned by pure nearest-seed distance (small BiRefNet noise
+        # fragments, tiny islands, etc.).
+        seed_bool = seed_bools[i]
+        num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(
+            (mask > 0.5).astype(np.uint8), connectivity=8)
+        if num_labels > 2:  # more than just background + one component
+            min_keep_area = int(0.0005 * H * W)  # 0.05% of image
+            cleaned = np.zeros_like(mask)
+            for lid in range(1, num_labels):
+                comp = (labels == lid)
+                area = int(stats[lid, cv2.CC_STAT_AREA])
+                touches_seed = bool(np.any(comp & seed_bool))
+                if touches_seed or area >= min_keep_area:
+                    cleaned[comp] = 1.0
+            mask = cleaned
+
         out.append(mask)
     return out
 
