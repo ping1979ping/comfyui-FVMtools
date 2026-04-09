@@ -4,7 +4,7 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
-from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face, split_person_mask_by_anchors
+from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face, split_person_mask_by_anchors, split_person_mask_by_seeds
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
 from .utils.mask_utils import clean_mask_crumbs, fill_mask_holes_2d, expand_mask, feather_mask
 from .utils.yolo_detector import get_available_yolo_models, detect_objects, assign_detections_to_references
@@ -507,25 +507,43 @@ class PersonSelectorMulti:
         assignments = self._assign_greedy(sim_matrix, effective_threshold, guaranteed_refs=guaranteed_refs)
 
         # Build per-face envelopes from person_mask (BiRefNet foreground split per face).
-        # Indexed by face idx (fi) — matched ref faces use their fi; unmatched faces
-        # fall through to the per_face_masks block below with the same envelope source.
-        # When no person_mask is provided, face_envelopes is empty and the downstream
-        # generate_all_masks_for_face falls back to SAM-based clipping.
+        # Preferred split: SAM body masks as seeds (distance transform) — SAM generates
+        # per-person body masks with negative prompts for cross-person separation, so
+        # each BiRefNet pixel gets assigned to the person whose actual body silhouette
+        # is closest (not just whose face center is closest, which produces diagonal
+        # Voronoi cuts for standing figures).
+        # Fallback: face-center Voronoi when SAM isn't available.
         face_envelopes = {}  # fi -> [H,W] float32
         if person_mask_np is not None and face_count > 0:
-            anchors = []
-            for face in cur_faces:
-                x1, y1, x2, y2 = [int(v) for v in face.bbox]
-                cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
-                a = {"center": (cx, cy), "bbox": (x1, y1, x2, y2), "depth": None}
-                if depth_np is not None and y2 > y1 and x2 > x1:
-                    a["depth"] = float(np.median(depth_np[y1:y2, x1:x2]))
-                anchors.append(a)
-            envs = split_person_mask_by_anchors(person_mask_np, anchors, depth_np=depth_np)
+            if sam_model is not None:
+                # Generate per-face SAM body masks once, upfront, with negative prompts
+                # at all other face centers for cross-person separation.
+                seed_masks = []
+                for fi, face in enumerate(cur_faces):
+                    others = [f for j, f in enumerate(cur_faces) if j != fi]
+                    sam_body = MaskGenerator.generate_body_mask(
+                        cur_rgb, face, sam_model, other_faces=others)
+                    from .utils.mask_utils import clean_mask_crumbs as _clean
+                    sam_body = _clean(sam_body, min_area_fraction=0.005)
+                    seed_masks.append(sam_body)
+                envs = split_person_mask_by_seeds(person_mask_np, seed_masks)
+                split_method = "SAM-seed distance transform"
+            else:
+                # Fallback: face-center anchors (Voronoi)
+                anchors = []
+                for face in cur_faces:
+                    x1, y1, x2, y2 = [int(v) for v in face.bbox]
+                    cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
+                    a = {"center": (cx, cy), "bbox": (x1, y1, x2, y2), "depth": None}
+                    if depth_np is not None and y2 > y1 and x2 > x1:
+                        a["depth"] = float(np.median(depth_np[y1:y2, x1:x2]))
+                    anchors.append(a)
+                envs = split_person_mask_by_anchors(person_mask_np, anchors, depth_np=depth_np)
+                split_method = "face-center Voronoi (no SAM)"
             for fi, env in enumerate(envs):
                 face_envelopes[fi] = env
             print(f"[PersonSelectorMulti] person_mask split into {len(envs)} envelopes "
-                  f"(anchors={'depth-weighted' if depth_np is not None else 'face-center'})")
+                  f"via {split_method}")
 
         # Collect all mask types per reference
         from .utils.masker import ALL_MASK_TYPES

@@ -67,6 +67,60 @@ def _clip_labels_to_body(label_map, sam_body_mask):
     return clipped
 
 
+def split_person_mask_by_seeds(person_mask_np, seed_masks):
+    """Split a foreground mask by nearest seed mask via distance transform.
+
+    Each foreground pixel in person_mask_np is assigned to the seed mask whose
+    silhouette is spatially closest. When the seeds are per-person SAM body
+    masks (generated with negative prompts for cross-person separation), this
+    produces a clean per-person split of the BiRefNet foreground — each seed
+    "owns" the BiRefNet pixels nearest to its actual body shape, not just
+    nearest to a face center point. Fixes the Voronoi-diagonal-cut artifact
+    that face-center anchoring produces for standing figures.
+
+    Args:
+        person_mask_np: [H,W] float32 foreground mask
+        seed_masks: list of [H,W] float32 seed masks (e.g. per-face SAM body masks)
+
+    Returns:
+        list of [H,W] float32 per-seed masks, same length as seed_masks.
+        Pixels outside person_mask are zero in every output. Every foreground
+        pixel belongs to exactly one seed (ties broken by iteration order).
+    """
+    if not seed_masks:
+        return []
+
+    H, W = person_mask_np.shape
+    fg = person_mask_np > 0.5
+    if not np.any(fg):
+        return [np.zeros_like(person_mask_np) for _ in seed_masks]
+
+    N = len(seed_masks)
+    distances = np.full((N, H, W), np.inf, dtype=np.float32)
+
+    for i, seed in enumerate(seed_masks):
+        if seed is None or not np.any(seed > 0.5):
+            continue
+        # distanceTransform measures distance to the NEAREST ZERO pixel.
+        # Invert the seed mask so that inside-seed pixels get distance 0
+        # and outside pixels get distance to the nearest seed pixel.
+        inverted = (seed <= 0.5).astype(np.uint8)
+        dist = cv2.distanceTransform(inverted, cv2.DIST_L2, 3)
+        distances[i] = dist
+
+    # Winner per foreground pixel
+    winners = np.argmin(distances, axis=0)
+
+    out = []
+    for i in range(N):
+        mask = np.zeros_like(person_mask_np)
+        owned = (winners == i) & fg
+        if np.any(owned):
+            mask[owned] = 1.0
+        out.append(mask)
+    return out
+
+
 def split_person_mask_by_anchors(person_mask_np, anchors, depth_np=None):
     """Split a foreground mask into per-anchor envelopes.
 
