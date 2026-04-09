@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silk ribbon in blush | 0.80 | 0.1-0.4 | silk,satin
+pearl headband | 0.72 | 0.2-0.5 | metal
+flower crown in pale pink | 0.68 | 0.1-0.4 | silk,organza
+silk hair turban in champagne | 0.58 | 0.2-0.5 | silk,silk charmeuse
+fresh flower accent in dusty rose | 0.55 | 0.1-0.4 | silk
+delicate tiara | 0.45 | 0.3-0.5 | metal
+lace headband in nude | 0.42 | 0.1-0.4 | lace,mesh
+ribbon bow headpiece in peach | 0.40 | 0.1-0.4 | silk,satin
+marabou hair clip in blush | 0.38 | 0.1-0.4 | marabou,satin
+pearl hair comb | 0.35 | 0.2-0.5 | metal

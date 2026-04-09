@@ -1,0 +1,9 @@
+latex
+PVC
+leather
+patent leather
+vinyl
+fishnet
+mesh
+spandex
+wet-look

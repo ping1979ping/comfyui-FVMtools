@@ -1,0 +1,19 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+1940s T-strap heels | 0.90 | 0.3-0.6 | leather,satin
+peep-toe platforms | 0.88 | 0.3-0.6 | leather,satin,suede
+platform wedge sandals | 0.82 | 0.3-0.6 | cork,leather,satin
+Mary Jane pumps | 0.78 | 0.3-0.6 | leather,suede,satin
+ankle-strap heels | 0.75 | 0.3-0.6 | leather,satin,suede
+sling-back heels | 0.72 | 0.3-0.6 | leather,satin,suede
+1940s pumps | 0.68 | 0.3-0.6 | leather,satin
+seamed-stocking heels | 0.65 | 0.3-0.6 | leather,satin
+bow-front heels | 0.58 | 0.3-0.6 | satin,leather
+cork-platform wedges | 0.55 | 0.3-0.6 | cork,leather,suede
+peep-toe sling-back heels | 0.52 | 0.3-0.6 | leather,satin
+T-strap platform heels | 0.50 | 0.3-0.6 | leather,satin
+ankle-strap peep-toe pumps | 0.48 | 0.3-0.6 | leather,satin,suede
+1940s Mary Jane platforms | 0.45 | 0.3-0.6 | leather,suede
+vintage satin pumps | 0.42 | 0.3-0.6 | satin,silk
+two-tone spectator heels | 0.40 | 0.3-0.6 | leather,suede

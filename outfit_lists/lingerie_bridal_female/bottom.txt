@@ -1,0 +1,21 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white lace panties | 0.88 | 0.1-0.6 | lace,silk
+ivory silk tap shorts | 0.82 | 0.2-0.6 | silk,satin
+bridal garter belt | 0.78 | 0.2-0.7 | lace,satin
+white bridal briefs | 0.72 | 0.1-0.6 | lace,satin
+ivory lace thong | 0.68 | 0.1-0.5 | lace,silk
+white tulle skirt | 0.65 | 0.2-0.7 | tulle,organza
+pearl-trim panties | 0.62 | 0.2-0.6 | lace,pearl
+ivory high-waisted briefs | 0.60 | 0.2-0.6 | lace,satin
+champagne silk panties | 0.58 | 0.1-0.5 | silk,satin
+white french knickers | 0.55 | 0.2-0.6 | silk,lace
+ivory cheeky panties | 0.52 | 0.1-0.5 | lace,mesh
+white sheer panties | 0.48 | 0.1-0.5 | mesh,chiffon
+bridal tulle mini skirt | 0.50 | 0.2-0.7 | tulle,lace
+ivory ruffle panties | 0.45 | 0.1-0.5 | silk,lace
+white slip skirt | 0.42 | 0.3-0.6 | satin,silk
+ivory boy shorts | 0.40 | 0.1-0.5 | lace,satin
+pearl-embellished garter belt | 0.45 | 0.2-0.7 | lace,pearl,satin
+white organza skirt | 0.38 | 0.2-0.6 | organza,tulle

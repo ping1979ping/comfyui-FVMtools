@@ -1,0 +1,20 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waist satin panties | 0.88 | 0.2-0.6 | satin,lace
+ruffled burlesque panties | 0.85 | 0.2-0.5 | satin,lace
+garter belt | 0.82 | 0.2-0.5 | satin,lace
+showgirl briefs with rhinestones | 0.78 | 0.2-0.5 | sequins,satin
+feather-trim briefs | 0.70 | 0.2-0.5 | satin,feathers
+satin tap pants | 0.65 | 0.3-0.6 | satin,silk
+black lace high-waist panties | 0.68 | 0.2-0.5 | lace,satin
+fishnet panty | 0.58 | 0.1-0.4 | mesh,lace
+rhinestone g-string | 0.55 | 0.1-0.4 | sequins,mesh
+cabaret ruffle skirt | 0.52 | 0.2-0.5 | satin,organza
+red satin tap pants | 0.50 | 0.2-0.5 | satin,silk
+sequin booty shorts | 0.48 | 0.2-0.5 | sequins,satin
+ruffled garter shorts | 0.45 | 0.2-0.5 | satin,lace
+velvet high-waist briefs | 0.42 | 0.3-0.6 | velvet,satin
+brocade tap pants | 0.40 | 0.3-0.6 | brocade,satin
+feathered cabaret skirt | 0.38 | 0.2-0.5 | feathers,satin
+mesh ruffle panties | 0.35 | 0.1-0.4 | mesh,lace

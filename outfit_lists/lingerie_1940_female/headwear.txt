@@ -1,0 +1,11 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silk hair scarf 1940s tie | 0.72 | 0.2-0.5 | silk,rayon
+victory rolls | 0.78 | 0.2-0.6 | none
+snood | 0.60 | 0.2-0.5 | rayon,cotton
+pin curls setting | 0.55 | 0.2-0.5 | none
+satin hair turban | 0.58 | 0.2-0.5 | satin,silk
+1940s bandana | 0.52 | 0.2-0.4 | cotton,rayon
+hair flower | 0.48 | 0.2-0.5 | silk,velvet
+vintage veil hat | 0.42 | 0.3-0.6 | tulle,silk

@@ -1,0 +1,21 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+O-ring choker | 0.88 | 0.1-0.4 | leather,metal
+leather collar | 0.85 | 0.1-0.4 | leather
+elbow-length latex gloves | 0.82 | 0.1-0.4 | latex
+leather wrist cuffs | 0.78 | 0.1-0.4 | leather
+fishnet stockings | 0.75 | 0.1-0.4 | fishnet,nylon
+spiked collar | 0.72 | 0.1-0.4 | leather,metal
+chain harness | 0.70 | 0.1-0.4 | metal
+riding crop | 0.65 | 0.1-0.4 | leather
+body chains | 0.62 | 0.1-0.4 | metal
+nipple chains | 0.58 | 0.1-0.4 | metal
+leather arm straps | 0.55 | 0.1-0.4 | leather
+whip | 0.52 | 0.1-0.4 | leather
+PVC long gloves | 0.50 | 0.1-0.4 | PVC,vinyl
+fishnet thigh-highs with garters | 0.48 | 0.1-0.4 | fishnet,elastic
+ball gag | 0.42 | 0.1-0.3 | leather,metal
+leather ankle cuffs | 0.40 | 0.1-0.4 | leather
+studded choker | 0.38 | 0.1-0.4 | leather,metal
+waist chain harness | 0.35 | 0.1-0.4 | metal

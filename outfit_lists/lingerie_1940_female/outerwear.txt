@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silk bed jacket | 0.75 | 0.3-0.6 | silk,satin
+satin robe 1940s cut | 0.72 | 0.3-0.6 | satin,silk
+peach silk dressing gown | 0.68 | 0.3-0.6 | silk,satin
+marabou-trim bed jacket | 0.58 | 0.3-0.6 | silk,satin
+1940s silk robe | 0.65 | 0.3-0.6 | silk,satin
+quilted bed jacket | 0.55 | 0.3-0.6 | satin,rayon
+chiffon peignoir | 0.50 | 0.3-0.6 | chiffon,silk
+lace-trim dressing gown | 0.48 | 0.3-0.6 | silk,satin,lace
+velvet evening robe | 0.42 | 0.3-0.6 | velvet,silk

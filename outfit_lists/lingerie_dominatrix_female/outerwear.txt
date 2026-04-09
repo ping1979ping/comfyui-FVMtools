@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+leather trench coat | 0.80 | 0.2-0.5 | leather
+latex cape | 0.72 | 0.1-0.4 | latex
+PVC jacket | 0.68 | 0.1-0.4 | PVC,vinyl
+studded leather jacket | 0.65 | 0.1-0.4 | leather
+vinyl cropped jacket | 0.58 | 0.1-0.4 | vinyl,PVC
+latex trench coat | 0.55 | 0.2-0.5 | latex
+leather biker jacket | 0.50 | 0.1-0.4 | leather
+wet-look duster | 0.45 | 0.1-0.4 | wet-look,spandex
+patent leather coat | 0.40 | 0.2-0.5 | patent leather
+harness-strapped leather jacket | 0.38 | 0.1-0.4 | leather

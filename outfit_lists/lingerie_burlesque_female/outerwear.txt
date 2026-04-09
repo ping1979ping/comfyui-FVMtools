@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ostrich feather cape | 0.85 | 0.2-0.6 | feathers,satin
+red velvet robe | 0.78 | 0.3-0.6 | velvet,satin
+silk kimono with embroidery | 0.72 | 0.3-0.6 | silk,brocade
+sequin showgirl jacket | 0.65 | 0.2-0.5 | sequins,satin
+satin robe with feather trim | 0.62 | 0.3-0.6 | satin,feathers
+black feather boa cape | 0.55 | 0.2-0.5 | feathers,satin
+brocade opera coat | 0.50 | 0.3-0.6 | brocade,silk
+marabou trim robe | 0.45 | 0.2-0.5 | satin,feathers
+velvet burlesque cape | 0.42 | 0.3-0.6 | velvet,satin
+rhinestone bolero | 0.38 | 0.2-0.5 | sequins,mesh

@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+minimalist chain bag | 0.55 | 0.1-0.5 | leather,scuba
+mesh pouch | 0.48 | 0.1-0.4 | mesh,micro-mesh
+small O-ring clutch | 0.50 | 0.2-0.5 | leather,suede
+modern clutch | 0.52 | 0.2-0.5 | leather,scuba
+chain-strap mini bag | 0.50 | 0.1-0.5 | leather,velvet
+velvet mini clutch | 0.42 | 0.2-0.5 | velvet,suede
+micro crossbody bag | 0.45 | 0.1-0.5 | leather,scuba
+architectural hard clutch | 0.38 | 0.2-0.5 | scuba,leather
+harness-strap bag | 0.40 | 0.1-0.4 | leather,elastic

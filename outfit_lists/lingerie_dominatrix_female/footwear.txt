@@ -1,0 +1,20 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+thigh-high patent platform boots | 0.90 | 0.1-0.5 | patent leather
+platform stiletto heels | 0.88 | 0.1-0.5 | patent leather,leather
+ballet boots | 0.82 | 0.1-0.4 | patent leather,leather
+platform knee-high boots | 0.80 | 0.1-0.5 | leather,patent leather
+pointed-toe platform boots | 0.75 | 0.1-0.5 | leather,patent leather
+PVC platform heels | 0.72 | 0.1-0.4 | PVC,vinyl
+over-the-knee latex boots | 0.70 | 0.1-0.4 | latex
+thigh-high latex boots | 0.68 | 0.1-0.4 | latex
+extreme platform stilettos | 0.65 | 0.1-0.4 | patent leather
+lace-up platform boots | 0.60 | 0.1-0.5 | leather
+ankle-strap platform stilettos | 0.58 | 0.1-0.5 | patent leather,leather
+platform ankle boots | 0.55 | 0.1-0.5 | leather,patent leather
+pointed patent platform heels | 0.52 | 0.1-0.5 | patent leather
+studded platform boots | 0.48 | 0.1-0.4 | leather
+buckled platform knee boots | 0.45 | 0.1-0.4 | leather
+PVC thigh-high boots | 0.42 | 0.1-0.4 | PVC,vinyl
+chain-strap platform heels | 0.38 | 0.1-0.4 | leather,metal

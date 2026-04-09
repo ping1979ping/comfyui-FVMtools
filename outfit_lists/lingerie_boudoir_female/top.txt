@@ -1,0 +1,21 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer babydoll chemise in blush | 0.90 | 0.1-0.4 | chiffon,lace,mesh
+silk slip chemise in champagne | 0.88 | 0.1-0.5 | silk,silk charmeuse
+lace chemise in dusty rose | 0.82 | 0.1-0.4 | lace,mesh
+ruffle-trim babydoll in pale pink | 0.78 | 0.1-0.4 | chiffon,tulle,lace
+sheer babydoll chemise in nude | 0.80 | 0.1-0.4 | chiffon,mesh
+silk slip top in peach | 0.75 | 0.2-0.5 | silk,silk charmeuse
+sweetheart babydoll in mauve | 0.70 | 0.1-0.4 | chiffon,lace
+bow-front bralette in blush | 0.65 | 0.1-0.4 | silk,lace
+sheer bralette in champagne | 0.68 | 0.1-0.4 | mesh,lace
+silk camisole in peach | 0.62 | 0.2-0.5 | silk,silk charmeuse
+chiffon bra in pale pink | 0.58 | 0.1-0.4 | chiffon,mesh
+ruffle camisole in dusty rose | 0.55 | 0.1-0.4 | chiffon,silk
+tulle bra in nude | 0.50 | 0.1-0.4 | tulle,mesh
+marabou-trim babydoll in blush | 0.52 | 0.1-0.4 | chiffon,marabou,lace
+organza chemise in champagne | 0.45 | 0.1-0.4 | organza,silk
+lace-trim slip in mauve | 0.48 | 0.2-0.5 | silk,lace
+ribbon-strap babydoll in peach | 0.42 | 0.1-0.4 | chiffon,satin
+ruffle-sleeve chemise in pale pink | 0.38 | 0.1-0.4 | chiffon,tulle

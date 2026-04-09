@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+strappy cage thong | 0.88 | 0.1-0.5 | elastic,mesh
+multi-strap thong | 0.82 | 0.1-0.5 | elastic,spandex
+high-cut strappy bottom | 0.80 | 0.1-0.5 | elastic,scuba
+cage briefs | 0.75 | 0.1-0.4 | elastic,mesh
+O-ring panties | 0.72 | 0.1-0.4 | elastic,leather
+mesh cage panty | 0.68 | 0.1-0.4 | mesh,micro-mesh
+waist-chain panty | 0.65 | 0.1-0.4 | elastic,mesh
+strap-detail brief | 0.60 | 0.1-0.4 | spandex,elastic
+garter-strap bottom | 0.62 | 0.1-0.5 | elastic,mesh
+high-waist cage brief | 0.55 | 0.1-0.4 | scuba,elastic
+crossover strappy thong | 0.52 | 0.1-0.4 | elastic,spandex
+geometric strap panty | 0.48 | 0.1-0.4 | elastic,mesh
+velvet cage thong | 0.42 | 0.2-0.5 | velvet,elastic
+architectural brief | 0.40 | 0.1-0.4 | scuba,elastic
+micro-mesh cage panty | 0.45 | 0.1-0.4 | micro-mesh,elastic
+longline strap brief | 0.38 | 0.1-0.4 | elastic,mesh

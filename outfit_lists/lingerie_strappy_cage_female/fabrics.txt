@@ -1,0 +1,10 @@
+elastic
+mesh
+micro-mesh
+velvet
+scuba
+suede
+leather
+spandex
+nylon
+micro-jacquard

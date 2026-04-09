@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+strappy cage bra | 0.90 | 0.1-0.5 | elastic,mesh
+harness bralette | 0.85 | 0.1-0.5 | elastic,leather
+multi-strap bralette | 0.82 | 0.1-0.5 | elastic,spandex
+strap-detail bodysuit | 0.78 | 0.1-0.5 | mesh,spandex
+harness bodysuit | 0.80 | 0.1-0.5 | elastic,mesh
+cut-out bodysuit | 0.72 | 0.1-0.5 | scuba,spandex
+O-ring bra | 0.70 | 0.1-0.4 | elastic,leather
+geometric strap bra | 0.68 | 0.1-0.4 | elastic,mesh
+longline cage bra | 0.65 | 0.2-0.5 | micro-mesh,elastic
+crossover strap bra | 0.62 | 0.1-0.4 | elastic,spandex
+high-neck cage top | 0.58 | 0.1-0.4 | mesh,velvet
+mesh cage bra | 0.60 | 0.1-0.4 | mesh,micro-mesh
+caged bralette | 0.55 | 0.1-0.4 | elastic,mesh
+strappy halter bra | 0.50 | 0.1-0.4 | elastic,scuba
+architectural strap top | 0.45 | 0.1-0.4 | scuba,elastic
+velvet cage bra | 0.42 | 0.2-0.5 | velvet,elastic
+micro-jacquard bralette | 0.38 | 0.2-0.5 | micro-jacquard,elastic

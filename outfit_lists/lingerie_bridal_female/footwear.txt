@@ -1,0 +1,21 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white satin stilettos | 0.88 | 0.3-0.7 | satin,silk
+bridal platform pumps | 0.82 | 0.3-0.7 | satin,lace
+crystal-embellished platforms | 0.78 | 0.3-0.7 | satin,crystal
+ivory strappy platforms | 0.72 | 0.2-0.6 | satin,silk
+lace-up wedding heels | 0.70 | 0.3-0.7 | lace,satin
+white pointed-toe stilettos | 0.68 | 0.3-0.7 | satin,silk
+ivory ankle-strap heels | 0.65 | 0.2-0.6 | satin,lace
+pearl-trim platform heels | 0.62 | 0.3-0.7 | satin,pearl
+champagne satin pumps | 0.60 | 0.3-0.7 | satin,silk
+white peep-toe platforms | 0.55 | 0.2-0.6 | satin,lace
+ivory slingback heels | 0.52 | 0.3-0.7 | satin,silk
+white marabou feather heels | 0.50 | 0.1-0.5 | feather,satin
+ivory lace bridal heels | 0.58 | 0.3-0.7 | lace,satin
+white crystal-strap stilettos | 0.55 | 0.3-0.7 | satin,crystal
+champagne platform mules | 0.45 | 0.2-0.6 | satin,silk
+ivory bow-front pumps | 0.42 | 0.2-0.6 | satin,silk
+white kitten heel mules | 0.38 | 0.2-0.6 | satin,silk
+pearl-beaded platform heels | 0.48 | 0.3-0.7 | satin,pearl

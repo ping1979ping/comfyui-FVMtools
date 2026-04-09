@@ -1,0 +1,22 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+black satin corset | 0.90 | 0.2-0.6 | satin,lace
+red velvet corset | 0.85 | 0.2-0.6 | velvet,satin
+rhinestone bustier | 0.82 | 0.2-0.6 | sequins,mesh
+brocade corset | 0.75 | 0.3-0.6 | brocade,satin
+feather-trim corset | 0.72 | 0.2-0.5 | satin,feathers
+sequin corset | 0.70 | 0.2-0.5 | sequins,satin
+cabaret bra | 0.68 | 0.2-0.5 | satin,sequins
+burlesque bra with tassels | 0.65 | 0.2-0.5 | satin,sequins
+halter bustier | 0.62 | 0.2-0.5 | satin,lace
+lace overlay corset | 0.60 | 0.2-0.6 | lace,satin
+rhinestone bra | 0.58 | 0.2-0.5 | sequins,mesh
+waist cincher | 0.55 | 0.3-0.6 | satin,brocade
+burgundy satin bustier | 0.52 | 0.2-0.6 | satin,lace
+showgirl bra with crystals | 0.48 | 0.2-0.5 | sequins,mesh
+pasties with tassels | 0.45 | 0.1-0.4 | sequins,feathers
+emerald velvet corset | 0.42 | 0.2-0.6 | velvet,satin
+gold sequin bustier | 0.40 | 0.2-0.5 | sequins,satin
+nipple tassels | 0.38 | 0.1-0.3 | sequins,silk
+feathered cabaret bra | 0.35 | 0.2-0.5 | feathers,satin

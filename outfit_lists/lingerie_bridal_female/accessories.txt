@@ -1,0 +1,22 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bridal veil | 0.88 | 0.2-0.7 | tulle,lace
+pearl choker | 0.82 | 0.2-0.7 | pearl,satin
+white lace gloves | 0.78 | 0.2-0.7 | lace,silk
+bridal garter | 0.75 | 0.2-0.6 | lace,satin
+white thigh-high stockings | 0.72 | 0.2-0.6 | lace,silk
+pearl drop earrings | 0.68 | 0.3-0.7 | pearl
+ivory lace stockings | 0.65 | 0.2-0.6 | lace,nylon
+diamond bracelet | 0.60 | 0.3-0.7 | crystal
+pearl necklace | 0.62 | 0.3-0.7 | pearl
+white satin ribbon choker | 0.55 | 0.2-0.6 | satin,silk
+long satin gloves | 0.52 | 0.3-0.7 | satin,silk
+crystal hair pins | 0.50 | 0.3-0.7 | crystal
+rose petals accent | 0.48 | 0.1-0.5 | silk
+pearl bracelet | 0.55 | 0.3-0.7 | pearl
+white feather boa | 0.42 | 0.1-0.5 | feather
+ivory silk garter | 0.50 | 0.2-0.6 | silk,satin
+crystal anklet | 0.40 | 0.2-0.6 | crystal
+pearl belly chain | 0.38 | 0.1-0.5 | pearl
+white bow hair tie | 0.42 | 0.2-0.6 | satin,silk

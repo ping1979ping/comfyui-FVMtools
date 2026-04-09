@@ -1,0 +1,14 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cathedral bridal veil | 0.88 | 0.3-0.7 | tulle,lace
+fingertip veil | 0.82 | 0.2-0.7 | tulle,lace
+crystal tiara | 0.78 | 0.3-0.7 | crystal
+birdcage veil | 0.68 | 0.2-0.7 | tulle,lace
+floral crown | 0.62 | 0.2-0.6 | silk
+pearl headband | 0.65 | 0.2-0.7 | pearl,satin
+white hair flowers | 0.55 | 0.2-0.6 | silk,organza
+ivory lace mantilla | 0.50 | 0.3-0.7 | lace
+pearl-beaded tiara | 0.58 | 0.3-0.7 | pearl,crystal
+white rose hairpiece | 0.45 | 0.2-0.6 | silk
+crystal hair vine | 0.52 | 0.3-0.7 | crystal,pearl

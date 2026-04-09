@@ -1,0 +1,21 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+latex bodysuit | 0.88 | 0.1-0.4 | latex
+leather harness bra | 0.85 | 0.1-0.4 | leather
+PVC bustier | 0.80 | 0.2-0.5 | PVC,vinyl
+latex halter bra | 0.78 | 0.1-0.4 | latex
+strappy cage top | 0.75 | 0.1-0.4 | leather,elastic
+chest harness | 0.72 | 0.1-0.4 | leather
+bondage bra | 0.70 | 0.1-0.4 | leather,latex
+PVC bra | 0.70 | 0.1-0.4 | PVC,vinyl
+collar and chain bra | 0.65 | 0.1-0.4 | leather,metal
+latex longline bra | 0.62 | 0.2-0.5 | latex
+vinyl crop top | 0.58 | 0.1-0.4 | vinyl,PVC
+fishnet bodysuit | 0.55 | 0.1-0.4 | fishnet,mesh
+leather underbust corset | 0.55 | 0.2-0.5 | leather
+latex crop top | 0.50 | 0.1-0.4 | latex
+O-ring harness top | 0.48 | 0.1-0.4 | leather,metal
+wet-look bodysuit | 0.45 | 0.1-0.4 | wet-look,spandex
+studded leather bra | 0.42 | 0.1-0.4 | leather
+mesh cage bodysuit | 0.38 | 0.1-0.4 | mesh,elastic

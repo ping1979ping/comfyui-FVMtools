@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beaded clutch | 0.82 | 0.3-0.6 | sequins,satin
+satin minaudiere | 0.75 | 0.3-0.6 | satin,silk
+feather-trim purse | 0.68 | 0.2-0.5 | feathers,satin
+vintage evening bag | 0.62 | 0.3-0.6 | velvet,brocade
+rhinestone clutch | 0.58 | 0.3-0.6 | sequins,satin
+cigarette case | 0.52 | 0.3-0.6 | satin
+velvet wristlet | 0.45 | 0.3-0.6 | velvet,satin
+sequin box clutch | 0.42 | 0.2-0.5 | sequins,satin
+pearl-trim evening bag | 0.38 | 0.3-0.6 | satin,silk
+brocade frame purse | 0.35 | 0.3-0.6 | brocade,silk

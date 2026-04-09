@@ -1,0 +1,22 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+feather boa | 0.90 | 0.2-0.5 | feathers
+elbow-length opera gloves | 0.85 | 0.3-0.6 | satin,silk
+seamed stockings | 0.82 | 0.2-0.5 | nylon,silk
+fishnet stockings | 0.80 | 0.1-0.5 | mesh,nylon
+velvet ribbon choker | 0.78 | 0.2-0.5 | velvet,silk
+long pearl necklace | 0.72 | 0.3-0.6 | silk
+rhinestone pasties | 0.68 | 0.1-0.4 | sequins
+cameo choker | 0.62 | 0.3-0.6 | velvet,silk
+feather fan | 0.60 | 0.2-0.5 | feathers,silk
+silk fan | 0.55 | 0.3-0.6 | silk,organza
+cigarette holder | 0.52 | 0.3-0.6 | lace
+lace garter with charm | 0.58 | 0.2-0.5 | lace,satin
+chandelier earrings | 0.55 | 0.3-0.6 | sequins
+rhinestone bracelet cuff | 0.48 | 0.3-0.6 | sequins
+beauty mark | 0.45 | 0.2-0.5 | silk
+black lace fingerless gloves | 0.42 | 0.2-0.5 | lace,mesh
+back-seam fishnets | 0.50 | 0.1-0.5 | mesh,nylon
+rhinestone anklet | 0.38 | 0.2-0.5 | sequins
+feathered garter | 0.40 | 0.2-0.5 | feathers,lace

@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bullet bra | 0.90 | 0.2-0.6 | satin,rayon,cotton
+torpedo bra | 0.88 | 0.2-0.6 | satin,rayon,cotton
+longline pointed bra | 0.82 | 0.2-0.6 | satin,rayon,lace
+conical bra | 0.80 | 0.2-0.6 | satin,cotton,rayon
+pointed bra | 0.78 | 0.2-0.6 | satin,rayon,cotton
+circle-stitched bullet bra | 0.75 | 0.2-0.6 | cotton,satin,rayon
+structured 1940s bra | 0.72 | 0.2-0.6 | satin,rayon,cotton
+satin underwire bra | 0.68 | 0.2-0.6 | satin,silk,lace
+peach satin bra | 0.65 | 0.2-0.5 | satin,silk
+rayon bra | 0.62 | 0.2-0.5 | rayon,lace
+longline bra | 0.60 | 0.2-0.6 | satin,rayon,lace
+corselette top | 0.58 | 0.3-0.6 | satin,rayon,lace
+full slip top | 0.55 | 0.3-0.6 | rayon,silk,satin
+1940s camisole | 0.52 | 0.2-0.5 | rayon,silk,crepe
+tap top | 0.48 | 0.2-0.5 | rayon,silk,satin
+bed jacket bra | 0.42 | 0.2-0.5 | silk,satin,chiffon
+lace-trim bullet bra | 0.50 | 0.2-0.6 | satin,lace

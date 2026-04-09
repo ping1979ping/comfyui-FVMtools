@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+seamed silk stockings | 0.90 | 0.2-0.6 | silk,nylon
+nylon stockings with back seam | 0.88 | 0.2-0.6 | nylon,silk
+6-strap garter belt | 0.85 | 0.2-0.6 | satin,lace,rayon
+vintage long gloves | 0.72 | 0.3-0.6 | satin,silk,lace
+pearl necklace single strand | 0.68 | 0.3-0.6 | pearl
+cameo choker | 0.62 | 0.3-0.6 | velvet,silk
+red lipstick accent | 0.65 | 0.2-0.6 | none
+victory roll hairpins | 0.60 | 0.2-0.6 | metal
+1940s hat-veil | 0.55 | 0.3-0.6 | tulle,silk
+silk scarf | 0.52 | 0.2-0.5 | silk,rayon
+bakelite bangles | 0.50 | 0.2-0.5 | bakelite
+cherry earrings | 0.48 | 0.2-0.5 | bakelite,plastic
+Lucite clutch handle | 0.42 | 0.3-0.6 | lucite
+rhinestone brooch | 0.45 | 0.3-0.6 | metal,rhinestone
+seamed nylon thigh-highs | 0.70 | 0.2-0.6 | nylon
+vintage cocktail ring | 0.40 | 0.3-0.6 | metal,rhinestone

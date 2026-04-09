@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silk pouch in champagne | 0.75 | 0.1-0.4 | silk,satin
+pearl clutch in blush | 0.70 | 0.2-0.5 | satin,silk
+satin evening bag in pale pink | 0.65 | 0.2-0.5 | satin,silk
+beaded minaudiere in nude | 0.58 | 0.3-0.5 | satin,silk
+ribbon-tie purse in dusty rose | 0.52 | 0.1-0.4 | silk,satin
+marabou-trim clutch in blush | 0.48 | 0.1-0.4 | marabou,satin
+silk drawstring pouch in peach | 0.45 | 0.1-0.4 | silk,silk charmeuse
+lace-overlay clutch in champagne | 0.42 | 0.2-0.5 | lace,satin
+pearl-embellished evening bag in mauve | 0.38 | 0.3-0.5 | satin,silk
+organza pouch in pale pink | 0.35 | 0.1-0.4 | organza,silk

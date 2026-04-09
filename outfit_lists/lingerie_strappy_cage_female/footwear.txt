@@ -1,0 +1,19 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+extreme platform stilettos | 0.90 | 0.1-0.5 | leather,suede
+gladiator strap platforms | 0.85 | 0.1-0.5 | leather,elastic
+caged ankle heels | 0.82 | 0.1-0.5 | leather,suede
+lace-up platform booties | 0.75 | 0.1-0.5 | leather,suede
+architectural heel platforms | 0.72 | 0.2-0.5 | leather,scuba
+pointed cage heels | 0.68 | 0.1-0.5 | leather,mesh
+strappy platform sandals | 0.70 | 0.1-0.5 | leather,elastic
+knee-high gladiator heels | 0.60 | 0.1-0.4 | leather,suede
+thigh-high strap stilettos | 0.55 | 0.1-0.4 | leather,elastic
+O-ring ankle heels | 0.58 | 0.1-0.4 | leather,suede
+mesh cage platform | 0.52 | 0.1-0.4 | mesh,leather
+velvet strap stilettos | 0.48 | 0.2-0.5 | velvet,leather
+clear platform stilettos | 0.50 | 0.1-0.4 | scuba,leather
+lace-up thigh boots | 0.45 | 0.1-0.4 | leather,elastic
+chunky platform heels | 0.42 | 0.1-0.4 | leather,suede
+geometric strap heels | 0.40 | 0.1-0.4 | leather,scuba

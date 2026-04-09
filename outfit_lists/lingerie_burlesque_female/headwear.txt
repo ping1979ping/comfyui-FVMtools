@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+feather headdress | 0.88 | 0.2-0.5 | feathers,sequins
+showgirl headpiece with plumes | 0.82 | 0.2-0.5 | feathers,sequins
+rhinestone tiara | 0.72 | 0.3-0.6 | sequins
+pillbox hat with veil | 0.65 | 0.3-0.6 | satin,mesh
+flower hair pin | 0.58 | 0.2-0.6 | silk,organza
+fascinator with feathers | 0.55 | 0.3-0.6 | feathers,satin
+velvet bow headband | 0.48 | 0.2-0.5 | velvet,satin
+jeweled hair comb | 0.42 | 0.3-0.6 | sequins
+sequined headband | 0.40 | 0.2-0.5 | sequins,satin
+turban with brooch | 0.38 | 0.3-0.6 | silk,satin

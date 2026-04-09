@@ -1,0 +1,20 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+Mary Jane platform heels | 0.90 | 0.2-0.6 | leather,satin
+pin-up T-strap pumps | 0.85 | 0.2-0.6 | leather,suede
+ankle-strap pin-up heels | 0.80 | 0.2-0.6 | leather,satin
+peep-toe platform heels | 0.75 | 0.2-0.6 | leather,suede
+feather-trim mule heels | 0.70 | 0.2-0.5 | satin,feathers
+bow-front stiletto heels | 0.68 | 0.2-0.6 | satin,leather
+red patent Mary Jane heels | 0.65 | 0.2-0.6 | leather
+classic platform heels | 0.62 | 0.2-0.5 | leather,suede
+rhinestone ankle-strap heels | 0.58 | 0.2-0.5 | sequins,satin
+T-strap platform heels | 0.55 | 0.2-0.6 | leather,suede
+velvet pin-up pumps | 0.52 | 0.2-0.6 | velvet,satin
+marabou feather heels | 0.50 | 0.2-0.5 | feathers,satin
+satin peep-toe heels | 0.48 | 0.2-0.6 | satin,silk
+lace-up burlesque heels | 0.45 | 0.2-0.5 | leather,satin
+gold glitter platform heels | 0.42 | 0.2-0.5 | sequins,leather
+black suede T-strap heels | 0.40 | 0.2-0.6 | suede,leather
+burgundy velvet Mary Janes | 0.38 | 0.2-0.6 | velvet,satin

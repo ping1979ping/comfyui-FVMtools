@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mesh duster | 0.55 | 0.1-0.5 | mesh,micro-mesh
+cropped leather jacket | 0.50 | 0.2-0.5 | leather,scuba
+fishnet bolero | 0.45 | 0.1-0.4 | nylon,mesh
+sheer mesh cape | 0.42 | 0.1-0.4 | mesh,micro-mesh
+strap-detail jacket | 0.40 | 0.2-0.5 | leather,scuba
+velvet cropped jacket | 0.38 | 0.2-0.5 | velvet,scuba
+mesh longline cardigan | 0.35 | 0.1-0.4 | mesh,elastic
+harness overlay jacket | 0.38 | 0.1-0.4 | leather,elastic
+micro-mesh kimono | 0.32 | 0.1-0.4 | micro-mesh,mesh

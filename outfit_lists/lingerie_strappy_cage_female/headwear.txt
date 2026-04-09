@@ -1,0 +1,12 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+thin headband | 0.50 | 0.1-0.5 | elastic,velvet
+metal hair cuff | 0.45 | 0.1-0.5 | leather,elastic
+minimalist hair chain | 0.48 | 0.1-0.5 | elastic,leather
+mesh beanie | 0.38 | 0.1-0.4 | mesh,micro-mesh
+veil-like hair accessory | 0.40 | 0.1-0.4 | mesh,micro-mesh
+leather headband | 0.42 | 0.1-0.4 | leather,elastic
+O-ring hair tie | 0.35 | 0.1-0.4 | elastic,leather
+velvet headband | 0.38 | 0.1-0.5 | velvet,elastic
+architectural hair piece | 0.32 | 0.1-0.4 | scuba,leather
