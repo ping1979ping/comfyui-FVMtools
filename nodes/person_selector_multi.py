@@ -302,11 +302,27 @@ class PersonSelectorMulti:
         Shows all reference masks layered on top of the original image with clear
         color coding, contour outlines, and reference number labels.
         Includes render order info when depth data is available.
+
+        In no-refs mode (num_refs=0), each detected face is treated as its own
+        pseudo-reference labeled F1/F2/...  — body masks come from body_masks_list
+        indexed by face idx, and labels use the same _PREVIEW_COLORS palette.
         """
         preview = tensor2np(current_image).copy()
 
-        # Paint all masks as colored overlays (back-to-front by ref index)
-        for ri in range(num_refs):
+        # In no-refs mode, synthesize pseudo-assignments (fi → (fi, 1.0)) so the
+        # label-drawing code below can iterate uniformly. Labels get an "F" prefix
+        # and no similarity score.
+        face_mode = num_refs == 0 and cur_faces
+        if face_mode:
+            effective_assignments = {fi: (fi, 1.0) for fi in range(len(cur_faces))}
+            effective_count = len(cur_faces)
+        else:
+            effective_assignments = assignments
+            effective_count = num_refs
+
+        # Paint all masks as colored overlays (back-to-front by slot index).
+        # Slot index = ref index (refs mode) OR face index (no-refs mode).
+        for ri in range(effective_count):
             color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
             if ri >= len(body_masks_list):
                 continue
@@ -332,14 +348,14 @@ class PersonSelectorMulti:
         img_scale = max(h, w) / 1000.0  # 1.0 at 1000px, 2.0 at 2000px, etc.
         base_font = img_scale * 1.2  # doubled from ~0.6
 
-        # Reference number labels on matched faces
+        # Reference number labels on matched faces (or F-labels in no-refs face mode)
         font = cv2.FONT_HERSHEY_SIMPLEX
-        for ri, (fi, sim) in assignments.items():
+        for ri, (fi, sim) in effective_assignments.items():
             color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
             face = cur_faces[fi]
             x1, y1, x2, y2 = [int(v) for v in face.bbox]
             cx = (x1 + x2) // 2
-            label = str(ri + 1)
+            label = f"F{ri + 1}" if face_mode else str(ri + 1)
 
             font_scale = max(base_font, min(base_font * 2.5, (x2 - x1) / 40.0))
             thickness = max(2, int(font_scale * 2))
@@ -352,16 +368,17 @@ class PersonSelectorMulti:
             cv2.rectangle(preview, (tx - pad, ty - th_text - pad), (tx + tw + pad, ty + pad), (0, 0, 0), cv2.FILLED)
             cv2.putText(preview, label, (tx, ty), font, font_scale, color, thickness, cv2.LINE_AA)
 
-            # Similarity percentage below label
-            sim_label = f"{round(sim * 100)}%"
-            sim_scale = font_scale * 0.6
-            sim_thick = max(1, int(sim_scale * 2))
-            (stw, sth), _ = cv2.getTextSize(sim_label, font, sim_scale, sim_thick)
-            stx = cx - stw // 2
-            sty = ty + sth + int(10 * img_scale)
-            sp = int(4 * img_scale)
-            cv2.rectangle(preview, (stx - sp, sty - sth - sp), (stx + stw + sp, sty + sp), (0, 0, 0), cv2.FILLED)
-            cv2.putText(preview, sim_label, (stx, sty), font, sim_scale, color, sim_thick, cv2.LINE_AA)
+            # Similarity percentage below label (ref mode only — face mode has no sim)
+            if not face_mode:
+                sim_label = f"{round(sim * 100)}%"
+                sim_scale = font_scale * 0.6
+                sim_thick = max(1, int(sim_scale * 2))
+                (stw, sth), _ = cv2.getTextSize(sim_label, font, sim_scale, sim_thick)
+                stx = cx - stw // 2
+                sty = ty + sth + int(10 * img_scale)
+                sp = int(4 * img_scale)
+                cv2.rectangle(preview, (stx - sp, sty - sth - sp), (stx + stw + sp, sty + sp), (0, 0, 0), cv2.FILLED)
+                cv2.putText(preview, sim_label, (stx, sty), font, sim_scale, color, sim_thick, cv2.LINE_AA)
 
             # Palette swatch overlay — centered above face label
             if outfit_palettes is not None and ri < outfit_palettes.shape[0]:
@@ -960,10 +977,15 @@ class PersonSelectorMulti:
         else:
             aux_masks_batch = empty_mask(h, w)
 
-        # Preview: mask overlay with render order (uses deconflicted masks)
+        # Preview: mask overlay with render order (uses deconflicted masks).
+        # In no-refs mode, source body masks from per_face_masks so each detected
+        # face gets its own colored overlay and F-label.
         preview_parts = []
         for b in range(batch_size):
-            body_masks_for_preview = [person_data_masks["body"][ri][b:b+1] for ri in range(num_refs)]
+            if num_refs > 0:
+                body_masks_for_preview = [person_data_masks["body"][ri][b:b+1] for ri in range(num_refs)]
+            else:
+                body_masks_for_preview = [pf["body"] for pf in batch_results[b]["per_face_masks"]]
             p = self._render_mask_layers(
                 current_image[b:b+1], batch_results[b]["assignments"],
                 batch_results[b]["cur_faces"], body_masks_for_preview, h, w, num_refs,
