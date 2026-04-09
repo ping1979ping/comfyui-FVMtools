@@ -71,12 +71,21 @@ def split_person_mask_by_seeds(person_mask_np, seed_masks):
     """Split a foreground mask by nearest seed mask via distance transform.
 
     Each foreground pixel in person_mask_np is assigned to the seed mask whose
-    silhouette is spatially closest. When the seeds are per-person SAM body
-    masks (generated with negative prompts for cross-person separation), this
-    produces a clean per-person split of the BiRefNet foreground — each seed
-    "owns" the BiRefNet pixels nearest to its actual body shape, not just
-    nearest to a face center point. Fixes the Voronoi-diagonal-cut artifact
-    that face-center anchoring produces for standing figures.
+    EXCLUSIVE CORE (seed minus overlap with any other seed) is spatially
+    closest. When the seeds are per-person SAM body masks (generated with
+    negative prompts for cross-person separation), this produces a clean
+    per-person split of the BiRefNet foreground — each seed "owns" the
+    BiRefNet pixels nearest to its actual body shape, not just nearest to a
+    face center point. Fixes the Voronoi-diagonal-cut artifact that
+    face-center anchoring produces for standing figures.
+
+    Uses EXCLUSIVE cores (seed minus all other seeds) to break tie-speckle:
+    when two SAM body masks overlap at touching bodies, raw distance
+    transform gives distance=0 on both seeds for overlap pixels, and
+    np.argmin picks one or the other per pixel based on floating-point noise
+    — visible as a dithered/speckled boundary. By first subtracting overlaps
+    from each seed, overlap pixels have strictly positive distance to every
+    exclusive core and get a deterministic nearest-core assignment.
 
     Args:
         person_mask_np: [H,W] float32 foreground mask
@@ -85,7 +94,7 @@ def split_person_mask_by_seeds(person_mask_np, seed_masks):
     Returns:
         list of [H,W] float32 per-seed masks, same length as seed_masks.
         Pixels outside person_mask are zero in every output. Every foreground
-        pixel belongs to exactly one seed (ties broken by iteration order).
+        pixel belongs to exactly one seed.
     """
     if not seed_masks:
         return []
@@ -96,19 +105,37 @@ def split_person_mask_by_seeds(person_mask_np, seed_masks):
         return [np.zeros_like(person_mask_np) for _ in seed_masks]
 
     N = len(seed_masks)
-    distances = np.full((N, H, W), np.inf, dtype=np.float32)
 
-    for i, seed in enumerate(seed_masks):
-        if seed is None or not np.any(seed > 0.5):
+    # Build exclusive cores: each seed minus the union of every other seed.
+    # Overlap regions are removed from every core, so they'll be assigned
+    # purely by nearest-core distance instead of by argmin-tie-break.
+    seed_bools = [(s > 0.5) if s is not None else np.zeros((H, W), dtype=bool)
+                  for s in seed_masks]
+    exclusive_cores = []
+    for i in range(N):
+        others_union = np.zeros((H, W), dtype=bool)
+        for j in range(N):
+            if j != i:
+                others_union |= seed_bools[j]
+        core = seed_bools[i] & ~others_union
+        # If a seed is entirely swallowed by overlaps, fall back to its full mask
+        # so it still has an anchor (better than losing it completely).
+        if not np.any(core):
+            core = seed_bools[i]
+        exclusive_cores.append(core)
+
+    distances = np.full((N, H, W), np.inf, dtype=np.float32)
+    for i, core in enumerate(exclusive_cores):
+        if not np.any(core):
             continue
         # distanceTransform measures distance to the NEAREST ZERO pixel.
-        # Invert the seed mask so that inside-seed pixels get distance 0
-        # and outside pixels get distance to the nearest seed pixel.
-        inverted = (seed <= 0.5).astype(np.uint8)
+        # Invert the core so that core pixels get distance 0 and others get
+        # their Euclidean distance to the nearest core pixel.
+        inverted = (~core).astype(np.uint8)
         dist = cv2.distanceTransform(inverted, cv2.DIST_L2, 3)
         distances[i] = dist
 
-    # Winner per foreground pixel
+    # Winner per pixel = index of nearest exclusive core
     winners = np.argmin(distances, axis=0)
 
     out = []
