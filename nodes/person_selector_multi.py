@@ -892,7 +892,9 @@ class PersonSelectorMulti:
             if yolo_upgraded > 0:
                 print(f"[PersonSelectorMulti] Upgraded {yolo_upgraded} body masks from YOLO detector")
 
-        # Legacy mask outputs: face, head, body stacked across batch
+        # Legacy mask outputs: face, head, body stacked across batch.
+        # With refs connected → one slot per ref. Without refs → fall back to
+        # one slot per detected face (face_count mode) so outputs aren't empty.
         all_face_out = []
         all_head_out = []
         all_body_out = []
@@ -903,6 +905,13 @@ class PersonSelectorMulti:
                     all_face_out.append(mpt["face"][ri])
                     all_head_out.append(mpt["head"][ri])
                     all_body_out.append(mpt["body"][ri])
+        else:
+            # No-refs fallback: use per-face masks so each detected face becomes a slot
+            for b in range(batch_size):
+                for pf in batch_results[b]["per_face_masks"]:
+                    all_face_out.append(pf["face"])
+                    all_head_out.append(pf["head"])
+                    all_body_out.append(pf["body"])
 
         if all_face_out:
             face_masks_batch = torch.cat(all_face_out, dim=0)
@@ -916,7 +925,9 @@ class PersonSelectorMulti:
         total_matched = sum(len(br["assignments"]) for br in batch_results)
         total_faces = sum(br["face_count"] for br in batch_results)
 
-        if total_matched > 0:
+        # combined_* outputs: OR of all slots. In no-refs mode we still want this to
+        # reflect "any detected face/body" so we use total_faces as the trigger.
+        if total_matched > 0 or (num_refs == 0 and total_faces > 0):
             combined_face = torch.max(face_masks_batch, dim=0, keepdim=True)[0]
             combined_head = torch.max(head_masks_batch, dim=0, keepdim=True)[0]
             combined_body = torch.max(body_masks_batch, dim=0, keepdim=True)[0]
@@ -927,14 +938,18 @@ class PersonSelectorMulti:
 
         # Auxiliary masks output:
         #   1. If aux_mask_type is set → BiSeNet mask of that type
-        #   2. Else if YOLO aux_model ran → merged YOLO detections per ref
+        #   2. Else if YOLO aux_model ran → merged YOLO detections per ref/face
         #   3. Else → empty
-        if aux_mask_type != "none" and aux_mask_type in MASK_TYPE_LABELS and num_refs > 0:
+        if aux_mask_type != "none" and aux_mask_type in MASK_TYPE_LABELS:
             aux_list = []
             for b in range(batch_size):
                 mpt = batch_results[b]["masks_per_type"]
-                for ri in range(num_refs):
-                    aux_list.append(mpt[aux_mask_type][ri])
+                if num_refs > 0:
+                    for ri in range(num_refs):
+                        aux_list.append(mpt[aux_mask_type][ri])
+                else:
+                    for pf in batch_results[b]["per_face_masks"]:
+                        aux_list.append(pf[aux_mask_type])
             aux_masks_batch = torch.cat(aux_list, dim=0) if aux_list else empty_mask(h, w)
         elif aux_model != "none" and "aux_masks" in person_data and num_refs > 0:
             aux_list = []

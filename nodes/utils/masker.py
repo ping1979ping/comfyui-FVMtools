@@ -181,7 +181,10 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
 
     for mask_type, labels in MASK_TYPE_LABELS.items():
         mask_np = np.isin(label_map, list(labels)).astype(np.float32)
-        if use_depth and mask_type in DEPTH_REFINABLE_MASKS:
+        # Skip depth carving when we have a BiRefNet envelope — the envelope clip
+        # at the end already handles silhouette bounds, and depth carving can
+        # introduce gaps by fragmenting the mask along noisy depth gradients.
+        if use_depth and mask_type in DEPTH_REFINABLE_MASKS and not has_envelope:
             mask_np = refine_mask_with_depth(mask_np, depth_edges_data, depth_np,
                                              depth_carve_strength, depth_grow)
         mask = mask2tensor(mask_np)
