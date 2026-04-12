@@ -570,29 +570,66 @@ class PersonSelectorMulti:
             print(f"[PersonSelectorMulti] person_mask used as hard clip for {face_count} faces "
                   f"(SAM handles per-person separation)")
 
-        # Collect all mask types per reference
+        # Collect all mask types per reference — front-to-back peeling.
+        # Process the nearest (front) person first on the clean image, then
+        # erase their pixels and process the next person. This way SAM never
+        # sees the front person when segmenting the back person → no leak.
         from .utils.masker import ALL_MASK_TYPES
         masks_per_type = {mt: [] for mt in ALL_MASK_TYPES}
-
-        bisenet_seeds_per_ref = {}  # {ri: [H,W] float32} for deconfliction priority
+        # Pre-fill with empty masks (will be overwritten for matched refs)
         for ri in range(num_refs):
-            if ri in assignments:
-                fi, sim = assignments[ri]
-                others = [f for j, f in enumerate(cur_faces) if j != fi]
-                masks = self._generate_all_masks(cur_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
-                                                  depth_edges_data=depth_edges_data, depth_np=depth_np,
-                                                  depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
-                                                  other_faces=others, body_mask_mode=body_mask_mode,
-                                                  person_mask_envelope=face_envelopes.get(fi))
-                for mt in ALL_MASK_TYPES:
-                    masks_per_type[mt].append(masks.get(mt, empty_mask(h, w)))
-                # Store bisenet seed for deconfliction priority
-                if "_bisenet_seed" in masks:
-                    bisenet_seeds_per_ref[ri] = masks["_bisenet_seed"]
-                print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f})")
-            else:
-                for mt in ALL_MASK_TYPES:
-                    masks_per_type[mt].append(empty_mask(h, w))
+            for mt in ALL_MASK_TYPES:
+                masks_per_type[mt].append(empty_mask(h, w))
+
+        bisenet_seeds_per_ref = {}
+
+        # Sort matched refs by depth: front (nearest) first.
+        # Depth convention: higher value = closer to camera (Depth Anything V2 bright=near).
+        matched_refs = [(ri, fi, sim) for ri, (fi, sim) in assignments.items()]
+        if depth_np is not None and matched_refs:
+            def _face_depth(item):
+                ri, fi, sim = item
+                face = cur_faces[fi]
+                x1, y1, x2, y2 = [int(v) for v in face.bbox]
+                if y2 > y1 and x2 > x1:
+                    return -float(np.median(depth_np[y1:y2, x1:x2]))  # negative for front-first sort
+                return 0.0
+            matched_refs.sort(key=_face_depth)
+            order_labels = [str(ri + 1) for ri, _, _ in matched_refs]
+            print(f"[PersonSelectorMulti] Front-to-back peeling order: {' → '.join(order_labels)}")
+
+        # Working image: will be progressively erased as we peel off front people
+        working_rgb = cur_rgb.copy()
+        # Mean color for neutral fill (less disruptive to SAM than black)
+        mean_color = cur_rgb.mean(axis=(0, 1)).astype(np.uint8)
+        claimed_mask = np.zeros((h, w), dtype=np.float32)  # union of all processed bodies
+
+        for ri, fi, sim in matched_refs:
+            others = [f for j, f in enumerate(cur_faces) if j != fi]
+            masks = self._generate_all_masks(working_rgb, cur_faces[fi], device, sam_model, mask_fill_holes, mask_blur,
+                                              depth_edges_data=depth_edges_data, depth_np=depth_np,
+                                              depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
+                                              other_faces=others, body_mask_mode=body_mask_mode,
+                                              person_mask_envelope=face_envelopes.get(fi))
+            for mt in ALL_MASK_TYPES:
+                masks_per_type[mt][ri] = masks.get(mt, empty_mask(h, w))
+            if "_bisenet_seed" in masks:
+                bisenet_seeds_per_ref[ri] = masks["_bisenet_seed"]
+
+            # Peel: erase this person's body from the working image so the next
+            # (further back) person's SAM won't see them. Fill with mean color.
+            body_np = masks.get("body", empty_mask(h, w))
+            if body_np.dim() == 3:
+                body_np = body_np[0]
+            body_bool = body_np.cpu().numpy() > 0.5
+            # Dilate slightly to cover silhouette edges
+            peel_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
+            body_dilated = cv2.dilate(body_bool.astype(np.uint8), peel_kernel, iterations=1).astype(bool)
+            working_rgb[body_dilated] = mean_color
+            claimed_mask[body_dilated] = 1.0
+
+            print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f}) "
+                  f"[peeled {int(body_dilated.sum())}px, {int(claimed_mask.sum())}px total claimed]")
 
         # all_faces_mask: OR of all detected faces (matched or not)
         if face_count > 0:
