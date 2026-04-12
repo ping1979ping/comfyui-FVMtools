@@ -263,6 +263,15 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     use_depth = depth_edges_data is not None and depth_np is not None
     has_envelope = person_mask_envelope is not None
 
+    # Pre-compute fused edges (bilateral + LAB Canny + depth morph gradient) once.
+    # Used by both per-type mask refinement and body seed_grow carving below.
+    _fused_edges_data = None
+    if use_depth and not has_envelope:
+        from .depth_refine import compute_fused_edges
+        fused, depth_only, _ = compute_fused_edges(cur_rgb, depth_np)
+        # Package as (magnitude_unused, fused_edges) for refine_mask_with_depth compat
+        _fused_edges_data = (None, fused)
+
     label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
 
     # Unified person envelope: BiRefNet slice (preferred) > SAM body > none
@@ -283,11 +292,10 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
 
     for mask_type, labels in MASK_TYPE_LABELS.items():
         mask_np = np.isin(label_map, list(labels)).astype(np.float32)
-        # Skip depth carving when we have a BiRefNet envelope — the envelope clip
-        # at the end already handles silhouette bounds, and depth carving can
-        # introduce gaps by fragmenting the mask along noisy depth gradients.
+        # When BiRefNet envelope is provided, skip depth carving (envelope handles bounds).
+        # Otherwise use fused edges (color+depth agreement) for safer carving.
         if use_depth and mask_type in DEPTH_REFINABLE_MASKS and not has_envelope:
-            mask_np = refine_mask_with_depth(mask_np, depth_edges_data, depth_np,
+            mask_np = refine_mask_with_depth(mask_np, _fused_edges_data, depth_np,
                                              depth_carve_strength, depth_grow,
                                              face_bbox=face.bbox)
         mask = mask2tensor(mask_np)
@@ -326,17 +334,23 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         image_edges_binary = (cv2.Canny(image_gray, 80, 200) > 0)
 
         if use_depth:
-            _, depth_edges_binary = depth_edges_data
-            if depth_edges_binary.shape != image_edges_binary.shape:
-                depth_edges_binary = cv2.resize(depth_edges_binary.astype(np.uint8), (w, h),
-                                                interpolation=cv2.INTER_NEAREST).astype(bool)
-            barrier = image_edges_binary | depth_edges_binary
+            # Compute fused edges: bilateral + LAB Canny + depth morph gradient.
+            # Fused edges fire only where BOTH color AND depth agree — suppresses
+            # within-person depth changes (arm forward) while preserving real
+            # person-to-person boundaries.
+            from .depth_refine import compute_fused_edges
+            fused_edges, depth_only_edges, _ = compute_fused_edges(
+                cur_rgb, depth_np, depth_threshold=depth_carve_strength * 0.06)
+            # Carving uses fused edges (color+depth agreement)
+            carve_barrier = fused_edges
+            # Growing uses image+depth edges (broader barrier for gap fill)
+            barrier = image_edges_binary | depth_only_edges
         else:
             barrier = image_edges_binary
 
         from .depth_refine import carve_mask_at_depth_edges
         if use_depth:
-            body_mask_np = carve_mask_at_depth_edges(combined_seed, barrier, depth_np,
+            body_mask_np = carve_mask_at_depth_edges(combined_seed, carve_barrier, depth_np,
                                                       carve_strength=depth_carve_strength,
                                                       face_bbox=face.bbox)
         else:

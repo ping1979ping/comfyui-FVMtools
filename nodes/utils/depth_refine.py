@@ -40,34 +40,91 @@ def compute_depth_edges(depth_map, threshold=0.05):
     return magnitude, edges_binary
 
 
+# ── Phase 1b: Fused Edges (color + depth agreement) ──
+
+def compute_fused_edges(image_rgb, depth_map, depth_threshold=0.05):
+    """Compute fused person-boundary edges requiring BOTH color AND depth agreement.
+
+    Suppresses within-person depth changes (arm reaching forward, body tilt)
+    where there's a depth edge but no visual edge (same skin/clothing color).
+    Only fires where both depth AND color discontinuities agree — these are
+    real person-to-person or person-to-background boundaries.
+
+    Pipeline:
+    1. Bilateral filter — smooth clothing texture/hair, preserve silhouettes
+    2. Canny on LAB L-channel — perceptually uniform edge detection
+    3. Morphological gradient on depth — robust to quantization
+    4. Fuse: fused = color_edges & dilate(depth_edges, 5px)
+
+    Args:
+        image_rgb: [H, W, 3] uint8 RGB image
+        depth_map: [H, W] float32 [0,1]
+        depth_threshold: gradient magnitude threshold for depth edges
+
+    Returns:
+        (fused_edges [H,W] bool — for carving, only where both signals agree,
+         depth_only_edges [H,W] bool — for grow_mask_between_edges,
+         depth_magnitude [H,W] float32 — normalized gradient magnitude)
+    """
+    # 1. Bilateral filter — edge-preserving smoothing removes clothing patterns
+    #    and hair detail while keeping the strong luminance jump at person boundaries.
+    filtered = cv2.bilateralFilter(image_rgb, d=9, sigmaColor=75, sigmaSpace=75)
+
+    # 2. Canny on LAB L-channel — LAB lightness is perceptually uniform, giving
+    #    better skin-vs-clothing and person-vs-background separation than grayscale.
+    lab = cv2.cvtColor(filtered, cv2.COLOR_RGB2LAB)
+    L = lab[:, :, 0]
+    color_edges = cv2.Canny(L, 30, 90) > 0
+
+    # 3. Morphological gradient on depth — more robust than Sobel on quantized
+    #    depth maps (common from Depth Anything V2).
+    depth_uint8 = (np.clip(depth_map, 0, 1) * 255).astype(np.uint8)
+    depth_grad = cv2.morphologyEx(depth_uint8, cv2.MORPH_GRADIENT,
+                                   np.ones((3, 3), dtype=np.uint8))
+    depth_edges = depth_grad > int(depth_threshold * 255)
+
+    # 4. Fuse: require BOTH signals. Dilate depth edges ~5px for alignment
+    #    tolerance (depth and color edges rarely align pixel-perfectly).
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+    depth_dilated = cv2.dilate(depth_edges.astype(np.uint8), kernel).astype(bool)
+    fused = color_edges & depth_dilated
+
+    # Depth-only edges and magnitude for other consumers (grow, compute_depth_edges compat)
+    magnitude = depth_grad.astype(np.float32) / 255.0
+    depth_only_edges = magnitude > depth_threshold
+
+    fused_count = int(fused.sum())
+    depth_count = int(depth_only_edges.sum())
+    color_count = int(color_edges.sum())
+    print(f"    [FusedEdges] color={color_count}, depth={depth_count}, "
+          f"fused={fused_count} ({fused_count / max(1, depth_count) * 100:.0f}% of depth edges confirmed by color)")
+
+    return fused, depth_only_edges, magnitude
+
+
 # ── Phase 2: Edge Carving (per mask) ──
 
 def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8, min_area=100,
                               face_bbox=None):
-    """Cut mask along depth edges, regroup components by seed connectivity + depth.
+    """Cut mask along fused edges, regroup components by pre-carved body connectivity + depth.
 
-    After cutting, each connected component is kept if it meets EITHER criterion:
-    1. Seed-connected: the component overlaps the face/head region (derived from
-       face_bbox). This ensures that the person's own body fragments — including
-       parts at a different depth (arm reaching forward, body behind another
-       person) — survive as long as they're connected to the seed.
-    2. Depth-matched: the component's median depth falls within the person's
-       depth band AND its area exceeds min_area. This catches disconnected
-       fragments (e.g. a hand floating away from the body) that still belong
-       to this person by depth.
-
-    Components that are BOTH disconnected from the seed AND at a foreign depth
-    are dropped — these are cross-person leakage from SAM/BiSeNet.
+    Uses a two-layer safety system:
+    1. Fused edges (from compute_fused_edges) already suppress within-person depth
+       changes — only boundaries where both color AND depth agree get carved.
+    2. Pre-carved component seed: before carving, find the connected component of the
+       ORIGINAL mask containing the face center. After carving, any fragment overlapping
+       this pre-carved body is kept regardless of depth. Only fragments with zero
+       overlap AND wrong depth are dropped (cross-person leakage).
 
     Args:
         mask: [H, W] float32 [0,1]
-        edges_binary: [H, W] bool
+        edges_binary: [H, W] bool — should be fused edges (color+depth agreement)
         depth_map: [H, W] float32
         carve_strength: 0-1
         min_area: minimum component area in pixels
-        face_bbox: optional (x1, y1, x2, y2) — face bounding box used to build
-                   the seed region for connectivity testing. When provided,
-                   components touching the seed are always kept regardless of depth.
+        face_bbox: optional (x1, y1, x2, y2) — face bounding box. When provided,
+                   the pre-carved connected component containing the face center
+                   is used as the seed for the keep/drop decision.
 
     Returns:
         [H, W] float32 carved mask
@@ -75,7 +132,22 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
     if carve_strength <= 0 or np.sum(mask > 0.5) < min_area:
         return mask
 
+    H, W = mask.shape
     mask_binary = (mask > 0.5).astype(np.uint8)
+
+    # Pre-carved component seed: find the connected component of the ORIGINAL mask
+    # that contains the face center. This is the person's full body silhouette
+    # before any carving — legs, arms, torso, everything. After carving splits
+    # the mask into fragments, any fragment overlapping this region is "ours".
+    face_component = None
+    if face_bbox is not None:
+        fx1, fy1, fx2, fy2 = [int(v) for v in face_bbox]
+        face_cx = min(max(0, (fx1 + fx2) // 2), W - 1)
+        face_cy = min(max(0, (fy1 + fy2) // 2), H - 1)
+        num_pre, labels_pre = cv2.connectedComponents(mask_binary, connectivity=8)
+        face_label = labels_pre[face_cy, face_cx]
+        if face_label > 0:
+            face_component = (labels_pre == face_label)
 
     # Thicken edges for cleaner cuts
     edge_cut = edges_binary.astype(np.uint8)
@@ -94,24 +166,7 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
     depth_low -= band_margin
     depth_high += band_margin
 
-    # Build seed region from face bbox — expanded downward to cover neck/upper torso.
-    # Any carved component that touches this seed is "connected to the person" and
-    # survives regardless of its depth (handles arms reaching forward, body behind
-    # another person, etc.).
-    H, W = mask.shape
-    seed_mask = np.zeros((H, W), dtype=bool)
-    if face_bbox is not None:
-        fx1, fy1, fx2, fy2 = [int(v) for v in face_bbox]
-        face_h = fy2 - fy1
-        # Expand seed region: full face bbox width, extended 2x face height downward
-        # to cover neck and upper chest (connection point to the body).
-        sx1 = max(0, fx1)
-        sy1 = max(0, fy1)
-        sx2 = min(W, fx2)
-        sy2 = min(H, fy2 + face_h * 2)
-        seed_mask[sy1:sy2, sx1:sx2] = True
-
-    # Regroup: keep components that touch seed OR match depth band
+    # Regroup: keep components that overlap pre-carved body OR match depth band
     num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(carved, connectivity=8)
     result = np.zeros_like(mask)
 
@@ -121,13 +176,14 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
             continue
         comp_pixels = (labels == label_id)
 
-        # Criterion 1: touches the face/seed region → always keep
-        touches_seed = face_bbox is not None and np.any(comp_pixels & seed_mask)
+        # Criterion 1: overlaps the pre-carved body component → always keep.
+        # This covers the full body (legs, arms, everything) — not just face+neck.
+        overlaps_body = face_component is not None and np.any(comp_pixels & face_component)
         # Criterion 2: depth matches the person's band → keep
         comp_depth = np.median(depth_map[comp_pixels])
         depth_match = depth_low <= comp_depth <= depth_high
 
-        if touches_seed or depth_match:
+        if overlaps_body or depth_match:
             result[comp_pixels] = 1.0
 
     result = mask * (1.0 - carve_strength) + result * carve_strength
