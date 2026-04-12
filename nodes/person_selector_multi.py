@@ -616,6 +616,16 @@ class PersonSelectorMulti:
             if "_bisenet_seed" in masks:
                 bisenet_seeds_per_ref[ri] = masks["_bisenet_seed"]
 
+            # Subtract already-claimed pixels from all mask types — prevents
+            # SAM expansion into erased (mean-colored) areas of front people.
+            if claimed_mask.sum() > 0:
+                claimed_bool = claimed_mask > 0.5
+                for mt in ALL_MASK_TYPES:
+                    m = masks_per_type[mt][ri]
+                    m_np = m[0].cpu().numpy()
+                    m_np[claimed_bool] = 0.0
+                    masks_per_type[mt][ri] = mask2tensor(m_np)
+
             # Peel: erase this person's body from the working image so the next
             # (further back) person's SAM won't see them. Fill with mean color.
             body_np = masks.get("body", empty_mask(h, w))
