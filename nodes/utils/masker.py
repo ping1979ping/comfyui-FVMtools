@@ -650,24 +650,28 @@ class MaskGenerator:
                 face_cy = int((fy1 + fy2) / 2)
                 face_area = (fx2 - fx1) * (fy2 - fy1)
 
-                # Select largest mask that contains the face center
-                best_mask = None
-                best_area = 0
+                # Collect all valid masks (contain face center, big enough)
+                valid_masks = []
                 for m in result_masks:
                     if isinstance(m, torch.Tensor):
                         m = m.cpu().numpy()
                     m = m.squeeze().astype(np.float32)
                     if m.shape != (h, w):
                         m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
-                    area = np.sum(m > 0.5)
+                    area = int(np.sum(m > 0.5))
                     if area < face_area * 0.5:
                         continue
-                    # Must contain face center
                     if m[min(face_cy, h - 1), min(face_cx, w - 1)] < 0.5:
                         continue
-                    if area > best_area:
-                        best_area = area
-                        best_mask = m
+                    valid_masks.append((area, m))
+
+                if valid_masks:
+                    valid_masks.sort(key=lambda x: x[0])  # smallest first
+                    sizes = [f"{a}px" for a, _ in valid_masks]
+                    print(f"    SAM masks: {len(valid_masks)} valid [{', '.join(sizes)}]")
+                    # Pick MEDIUM mask: if 3 masks, take middle; if 2, take smaller; if 1, take it
+                    mid_idx = len(valid_masks) // 2 if len(valid_masks) >= 3 else 0
+                    best_area, best_mask = valid_masks[mid_idx]
 
                 if best_mask is not None:
                     return best_mask
