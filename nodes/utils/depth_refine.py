@@ -104,27 +104,15 @@ def compute_fused_edges(image_rgb, depth_map, depth_threshold=0.05):
 
 # ── Phase 2: Edge Carving (per mask) ──
 
-def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8, min_area=100,
-                              face_bbox=None):
-    """Cut mask along fused edges, regroup components by pre-carved body connectivity + depth.
-
-    Uses a two-layer safety system:
-    1. Fused edges (from compute_fused_edges) already suppress within-person depth
-       changes — only boundaries where both color AND depth agree get carved.
-    2. Pre-carved component seed: before carving, find the connected component of the
-       ORIGINAL mask containing the face center. After carving, any fragment overlapping
-       this pre-carved body is kept regardless of depth. Only fragments with zero
-       overlap AND wrong depth are dropped (cross-person leakage).
+def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8, min_area=100):
+    """Cut mask along depth edges, regroup components by depth similarity.
 
     Args:
         mask: [H, W] float32 [0,1]
-        edges_binary: [H, W] bool — should be fused edges (color+depth agreement)
+        edges_binary: [H, W] bool
         depth_map: [H, W] float32
         carve_strength: 0-1
         min_area: minimum component area in pixels
-        face_bbox: optional (x1, y1, x2, y2) — face bounding box. When provided,
-                   the pre-carved connected component containing the face center
-                   is used as the seed for the keep/drop decision.
 
     Returns:
         [H, W] float32 carved mask
@@ -132,22 +120,7 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
     if carve_strength <= 0 or np.sum(mask > 0.5) < min_area:
         return mask
 
-    H, W = mask.shape
     mask_binary = (mask > 0.5).astype(np.uint8)
-
-    # Pre-carved component seed: find the connected component of the ORIGINAL mask
-    # that contains the face center. This is the person's full body silhouette
-    # before any carving — legs, arms, torso, everything. After carving splits
-    # the mask into fragments, any fragment overlapping this region is "ours".
-    face_component = None
-    if face_bbox is not None:
-        fx1, fy1, fx2, fy2 = [int(v) for v in face_bbox]
-        face_cx = min(max(0, (fx1 + fx2) // 2), W - 1)
-        face_cy = min(max(0, (fy1 + fy2) // 2), H - 1)
-        num_pre, labels_pre = cv2.connectedComponents(mask_binary, connectivity=8)
-        face_label = labels_pre[face_cy, face_cx]
-        if face_label > 0:
-            face_component = (labels_pre == face_label)
 
     # Thicken edges for cleaner cuts
     edge_cut = edges_binary.astype(np.uint8)
@@ -166,7 +139,7 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
     depth_low -= band_margin
     depth_high += band_margin
 
-    # Regroup: keep components that overlap pre-carved body OR match depth band
+    # Regroup: keep all components whose depth matches the person
     num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(carved, connectivity=8)
     result = np.zeros_like(mask)
 
@@ -175,15 +148,8 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
         if area < min_area:
             continue
         comp_pixels = (labels == label_id)
-
-        # Criterion 1: overlaps the pre-carved body component → always keep.
-        # This covers the full body (legs, arms, everything) — not just face+neck.
-        overlaps_body = face_component is not None and np.any(comp_pixels & face_component)
-        # Criterion 2: depth matches the person's band → keep
         comp_depth = np.median(depth_map[comp_pixels])
-        depth_match = depth_low <= comp_depth <= depth_high
-
-        if overlaps_body or depth_match:
+        if depth_low <= comp_depth <= depth_high:
             result[comp_pixels] = 1.0
 
     result = mask * (1.0 - carve_strength) + result * carve_strength
@@ -372,7 +338,7 @@ def deconflict_masks(masks_dict, depth_map, edges_binary=None, bisenet_seeds=Non
 # ── Combined refinement (per mask, called from masker.py) ──
 
 def refine_mask_with_depth(mask, depth_edges_data, depth_map,
-                           carve_strength=0.8, grow_pixels=30, face_bbox=None):
+                           carve_strength=0.8, grow_pixels=30):
     """Refine a single mask using precomputed depth edges.
 
     Args:
@@ -381,8 +347,6 @@ def refine_mask_with_depth(mask, depth_edges_data, depth_map,
         depth_map: [H, W] float32
         carve_strength: 0-1
         grow_pixels: max gap fill radius
-        face_bbox: optional (x1,y1,x2,y2) passed to carve_mask_at_depth_edges
-                   for seed-connectivity testing
 
     Returns:
         [H, W] float32
@@ -402,8 +366,7 @@ def refine_mask_with_depth(mask, depth_edges_data, depth_map,
     if np.sum(mask > 0.5) < 50:
         return mask
 
-    carved = carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength,
-                                       face_bbox=face_bbox)
+    carved = carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength)
 
     if grow_pixels > 0:
         carved = grow_mask_between_edges(carved, edges_binary, grow_pixels)

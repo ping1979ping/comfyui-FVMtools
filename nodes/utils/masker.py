@@ -328,40 +328,23 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     use_depth = depth_edges_data is not None and depth_np is not None
     has_envelope = person_mask_envelope is not None
 
-    # Pre-compute fused edges (bilateral + LAB Canny + depth morph gradient) once.
-    # Used by both per-type mask refinement and body seed_grow carving below.
-    _fused_edges_data = None
-    if use_depth and not has_envelope:
-        from .depth_refine import compute_fused_edges
-        fused, depth_only, _ = compute_fused_edges(cur_rgb, depth_np)
-        # Package as (magnitude_unused, fused_edges) for refine_mask_with_depth compat
-        _fused_edges_data = (None, fused)
-
     label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
 
-    # SAM body for BiSeNet label clipping (removes cross-person leakage).
-    # When BiRefNet envelope is provided, ALSO use it as an additional clip source —
-    # but SAM still runs for per-person separation (BiRefNet is full-scene foreground,
-    # SAM handles which pixels belong to THIS specific person).
+    # Generate SAM body early (needed for label clipping + body mask)
     _sam_body_for_clip = None
     if other_faces and sam_model is not None and body_mask_mode in ("seed_grow", "auto"):
         _sam_body_for_clip = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
         _sam_body_for_clip = clean_mask_crumbs(_sam_body_for_clip, min_area_fraction=0.005)
+        # Clip BiSeNet labels to SAM body region (removes cross-person leakage)
         label_map = _clip_labels_to_body(label_map, _sam_body_for_clip)
-    if has_envelope:
-        # Additional clip: BiRefNet foreground provides sharper silhouette edges
-        label_map = _clip_labels_to_body(label_map, person_mask_envelope.astype(np.float32))
 
     masks = {}
 
     for mask_type, labels in MASK_TYPE_LABELS.items():
         mask_np = np.isin(label_map, list(labels)).astype(np.float32)
-        # When BiRefNet envelope is provided, skip depth carving (envelope handles bounds).
-        # Otherwise use fused edges (color+depth agreement) for safer carving.
-        if use_depth and mask_type in DEPTH_REFINABLE_MASKS and not has_envelope:
-            mask_np = refine_mask_with_depth(mask_np, _fused_edges_data, depth_np,
-                                             depth_carve_strength, depth_grow,
-                                             face_bbox=face.bbox)
+        if use_depth and mask_type in DEPTH_REFINABLE_MASKS:
+            mask_np = refine_mask_with_depth(mask_np, depth_edges_data, depth_np,
+                                             depth_carve_strength, depth_grow)
         mask = mask2tensor(mask_np)
         if mask_fill_holes:
             mask = fill_mask_holes(mask)
@@ -392,33 +375,19 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         image_gray = cv2.GaussianBlur(cv2.cvtColor(cur_rgb, cv2.COLOR_RGB2GRAY), (5, 5), 0)
         image_edges_binary = (cv2.Canny(image_gray, 80, 200) > 0)
 
-        if use_depth and not has_envelope:
-            # Compute fused edges: bilateral + LAB Canny + depth morph gradient.
-            # Fused edges fire only where BOTH color AND depth agree — suppresses
-            # within-person depth changes (arm forward) while preserving real
-            # person-to-person boundaries.
-            # Skipped when BiRefNet envelope is connected — the final envelope clip
-            # handles silhouette bounds without fragmenting the mask.
-            from .depth_refine import compute_fused_edges
-            fused_edges, depth_only_edges, _ = compute_fused_edges(
-                cur_rgb, depth_np, depth_threshold=depth_carve_strength * 0.06)
-            carve_barrier = fused_edges
-            barrier = image_edges_binary | depth_only_edges
-        elif use_depth:
-            # Envelope connected: skip depth carving, keep image edges for growing only
-            barrier = image_edges_binary
+        if use_depth:
+            _, depth_edges_binary = depth_edges_data
+            if depth_edges_binary.shape != image_edges_binary.shape:
+                depth_edges_binary = cv2.resize(depth_edges_binary.astype(np.uint8), (w, h),
+                                                interpolation=cv2.INTER_NEAREST).astype(bool)
+            barrier = image_edges_binary | depth_edges_binary
         else:
             barrier = image_edges_binary
 
         from .depth_refine import carve_mask_at_depth_edges
-        if use_depth and not has_envelope:
-            body_mask_np = carve_mask_at_depth_edges(combined_seed, carve_barrier, depth_np,
-                                                      carve_strength=depth_carve_strength,
-                                                      face_bbox=face.bbox)
-        elif has_envelope:
-            # Envelope connected: skip depth carving entirely — use SAM+BiSeNet seed
-            # directly. The final envelope clip handles silhouette edges.
-            body_mask_np = combined_seed.copy()
+        if use_depth:
+            body_mask_np = carve_mask_at_depth_edges(combined_seed, barrier, depth_np,
+                                                      carve_strength=depth_carve_strength)
         else:
             carved = (combined_seed > 0.5).astype(np.uint8) & (~image_edges_binary).astype(np.uint8)
             num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(carved, connectivity=8)
@@ -445,8 +414,7 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.005)
         if use_depth:
             body_mask_np = refine_mask_with_depth(body_mask_np, depth_edges_data, depth_np,
-                                                  depth_carve_strength, depth_grow,
-                                                  face_bbox=face.bbox)
+                                                  depth_carve_strength, depth_grow)
         print(f"    body: SAM ({int(np.sum(body_mask_np > 0.5))}px)")
     mask = mask2tensor(body_mask_np)
     # Body masks: do NOT fill holes — preserve natural gaps (between legs, under arms)
