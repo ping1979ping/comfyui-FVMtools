@@ -68,20 +68,22 @@ def _clip_labels_to_body(label_map, sam_body_mask):
 
 
 def split_person_mask_by_watershed(person_mask_np, image_rgb, face_bboxes):
-    """Split a foreground mask using watershed on a bilateral-filtered image.
+    """Split a foreground mask using body-column Voronoi from face positions.
 
-    Uses face centers as watershed markers and the bilateral-filtered image's
-    natural gradients to find person-to-person boundaries. This avoids the
-    SAM-seed approach which breaks under heavy occlusion (SAM can't segment
-    the back person through the front person, producing holey seeds that
-    propagate into the distance-transform split as stripe artifacts).
+    For each foreground pixel, computes a weighted distance to each face center:
+    - Horizontal (X) distance at full weight — bodies are roughly vertical columns
+      below their face.
+    - Vertical (Y) distance at 0.3× weight for pixels BELOW the face — legs/feet
+      are far below the face in Y but still belong to the same person.
+    - Vertical (Y) at full weight for pixels ABOVE the face (hair, hat).
 
-    The bilateral filter preserves strong edges at person boundaries while
-    smoothing clothing texture — watershed follows these preserved edges.
+    This produces body-column-shaped splits that naturally match standing figures
+    without depending on SAM seeds (which break under occlusion) or edge-following
+    (which is too restrictive on textured clothing).
 
     Args:
         person_mask_np: [H,W] float32 foreground mask
-        image_rgb: [H,W,3] uint8 RGB image
+        image_rgb: [H,W,3] uint8 RGB image (unused but kept for API compat)
         face_bboxes: list of (x1,y1,x2,y2) bounding boxes, one per face
 
     Returns:
@@ -97,60 +99,36 @@ def split_person_mask_by_watershed(person_mask_np, image_rgb, face_bboxes):
         return [np.zeros_like(person_mask_np) for _ in face_bboxes]
 
     N = len(face_bboxes)
+    ys, xs = np.where(fg)
 
-    # Bilateral filter — edge-preserving smoothing. Removes clothing texture
-    # while keeping the luminance/color jump at person silhouette boundaries.
-    filtered = cv2.bilateralFilter(image_rgb, d=9, sigmaColor=75, sigmaSpace=75)
+    if len(ys) == 0:
+        return [np.zeros_like(person_mask_np) for _ in face_bboxes]
 
-    # Build watershed markers:
-    #   0 = unknown (foreground pixels to be assigned)
-    #   1 = background (outside person_mask)
-    #   2..N+1 = face markers (one per detected face)
-    markers = np.zeros((H, W), dtype=np.int32)
-    markers[~fg] = 1  # background
-
-    # Place a small marker blob at each face center, extended downward into
-    # the neck/upper chest to give watershed a head start into the body.
+    # Compute body-column weighted distance for each face
+    scores = np.full((N, len(ys)), np.inf, dtype=np.float32)
     for i, bbox in enumerate(face_bboxes):
         x1, y1, x2, y2 = [int(v) for v in bbox]
-        face_w = x2 - x1
-        face_h = y2 - y1
-        # Marker region: face bbox + 1x face_height downward
-        mx1 = max(0, x1 + face_w // 4)
-        my1 = max(0, y1 + face_h // 4)
-        mx2 = min(W, x2 - face_w // 4)
-        my2 = min(H, y2 + face_h)
-        marker_region = fg[my1:my2, mx1:mx2]
-        markers[my1:my2, mx1:mx2] = np.where(marker_region, i + 2, markers[my1:my2, mx1:mx2])
+        cx = (x1 + x2) / 2.0
+        cy = (y1 + y2) / 2.0
 
-    # Run watershed — it expands each marker region outward, stopping at
-    # edges in the filtered image. On the bilateral image, person boundaries
-    # are strong edges while within-person regions are smooth → clean splits.
-    cv2.watershed(filtered, markers)
+        dx = (xs - cx).astype(np.float32)
+        dy = (ys - cy).astype(np.float32)
 
-    # Extract per-face masks from watershed labels
+        # Vertical weight: pixels below the face get 0.3× Y-weight
+        # (body extends far below face), pixels above get full weight
+        y_weight = np.where(ys > cy, 0.3, 1.0)
+
+        scores[i] = dx * dx + (dy * y_weight) * (dy * y_weight)
+
+    winners = np.argmin(scores, axis=0)
+
     out = []
     for i in range(N):
         mask = np.zeros_like(person_mask_np)
-        owned = (markers == i + 2) & fg
+        owned = winners == i
         if np.any(owned):
-            mask[owned] = 1.0
+            mask[ys[owned], xs[owned]] = 1.0
         out.append(mask)
-
-    # Assign any remaining foreground pixels (watershed boundary = -1) to
-    # nearest face by spatial distance (rare edge pixels at boundaries).
-    boundary = fg & (markers <= 0)
-    if np.any(boundary):
-        by, bx = np.where(boundary)
-        centers = []
-        for bbox in face_bboxes:
-            x1, y1, x2, y2 = [int(v) for v in bbox]
-            centers.append(((x1 + x2) / 2, (y1 + y2) / 2))
-        for py, px in zip(by, bx):
-            dists = [(px - cx) ** 2 + (py - cy) ** 2 for cx, cy in centers]
-            nearest = int(np.argmin(dists))
-            out[nearest][py, px] = 1.0
-
     return out
 
 
