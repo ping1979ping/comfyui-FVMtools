@@ -475,7 +475,7 @@ class PersonSelectorMulti:
                                depth_edges_data=None, depth_np=None,
                                depth_carve_strength=0.8, depth_grow=30,
                                body_mask_mode="auto", guaranteed_refs=0,
-                               person_mask_np=None):
+                               person_mask_np=None, sam3_model=None):
         """Process a single image and return per-ref masks, assignments, faces, etc."""
         h, w = single_image.shape[1], single_image.shape[2]
 
@@ -944,6 +944,7 @@ class PersonSelectorMulti:
                 body_mask_mode=effective_body_mode,
                 guaranteed_refs=guaranteed_refs,
                 person_mask_np=person_mask_np_list[b] if person_mask_np_list else None,
+                sam3_model=sam3_model,
             )
             batch_results.append(result)
 
