@@ -1,5 +1,8 @@
 """PersonDataRefiner: regenerate PERSON_DATA masks at a new resolution,
-preserving face-to-reference assignments from the original."""
+preserving face-to-reference assignments from the original.
+Optionally runs YOLO body-part detection and injects aux_masks into person_data.
+Chainable: when resolution hasn't changed, skips the full face-regen and just
+runs YOLO, allowing multiple refiners in sequence (each with a different aux model/label)."""
 
 import torch
 import numpy as np
@@ -7,6 +10,8 @@ import numpy as np
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.masker import MaskGenerator, ALL_MASK_TYPES, generate_all_masks_for_face
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, empty_mask
+from .utils.yolo_detector import get_available_yolo_models, detect_objects, assign_detections_to_references
+from .utils.mask_utils import fill_mask_holes_2d, expand_mask, feather_mask
 
 
 class PersonDataRefiner:
@@ -29,12 +34,17 @@ class PersonDataRefiner:
         "Use after upscaling: takes original person_data + hi-res images,\n"
         "re-detects faces and regenerates all masks at the new resolution\n"
         "while preserving face-to-reference assignments.\n\n"
+        "Chainable: when image resolution matches person_data, skips\n"
+        "face re-detection entirely and just runs YOLO aux detection.\n"
+        "Chain multiple refiners with different aux_model/aux_label combos\n"
+        "to build separate aux mask passes (hands, feet, etc.).\n\n"
         "Optional depth map input improves masks by filling gaps\n"
         "and removing overlapping objects using depth coherence."
     )
 
     @classmethod
     def INPUT_TYPES(cls):
+        yolo_models = ["none"] + get_available_yolo_models()
         return {
             "required": {
                 "person_data": ("PERSON_DATA", {"tooltip": "Original PERSON_DATA from Person Selector Multi"}),
@@ -53,6 +63,22 @@ class PersonDataRefiner:
                                                     "tooltip": "How strongly depth edges cut masks"}),
                 "depth_grow_pixels": ("INT", {"default": 30, "min": 0, "max": 200, "step": 5,
                                                "tooltip": "Gap filling between depth edges"}),
+                "aux_model": (yolo_models, {
+                    "tooltip": "YOLO segm model for body-part detection (hands, feet, etc.).\n"
+                               "Runs on the current images and injects results into person_data[\"aux_masks\"].\n"
+                               "Chainable: each refiner replaces aux_masks, so chain multiple refiners\n"
+                               "with different models/labels for separate aux passes."}),
+                "aux_confidence": ("FLOAT", {"default": 0.35, "min": 0.05, "max": 1.0, "step": 0.05,
+                                              "tooltip": "YOLO detection confidence threshold"}),
+                "aux_label": ("STRING", {"default": "",
+                                          "tooltip": "Filter YOLO detections by class label (substring match).\n"
+                                                     "Empty = all classes. Comma-separated: 'hand,foot'"}),
+                "aux_fill_holes": ("BOOLEAN", {"default": False,
+                                                "tooltip": "Fill holes inside YOLO aux masks"}),
+                "aux_expand_pixels": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1,
+                                                "tooltip": "Dilate YOLO aux masks by N pixels"}),
+                "aux_blend_pixels": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1,
+                                               "tooltip": "Gaussian blur radius for YOLO aux mask edges"}),
             },
         }
 
@@ -126,7 +152,9 @@ class PersonDataRefiner:
         return new_face_to_ref
 
     def execute(self, person_data, images, sam_model, mask_fill_holes, mask_blur, det_size,
-                depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30):
+                depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
+                aux_model="none", aux_confidence=0.35, aux_label="",
+                aux_fill_holes=False, aux_expand_pixels=0, aux_blend_pixels=0):
 
         import time as _time
         import cv2
@@ -140,6 +168,26 @@ class PersonDataRefiner:
         scale_x = new_w / old_w
         num_refs = person_data["num_references"]
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        resolution_changed = (new_h != old_h or new_w != old_w)
+
+        # Smart skip: if resolution hasn't changed AND aux_model is connected,
+        # skip the full face-regen and just run YOLO on the existing person_data.
+        # This makes chaining multiple refiners lightweight (YOLO-only pass).
+        if not resolution_changed and aux_model != "none":
+            print(f"\n{'='*50}")
+            print(f"  PersonDataRefiner (YOLO-only pass, same resolution)")
+            print(f"  {new_w}x{new_h} | Refs: {num_refs} | aux_model: {aux_model}")
+            print(f"{'='*50}")
+            import copy
+            new_person_data = copy.copy(person_data)
+            new_person_data = self._run_yolo_aux(
+                new_person_data, images, num_refs, new_h, new_w, batch_size,
+                aux_model, aux_confidence, aux_label,
+                aux_fill_holes, aux_expand_pixels, aux_blend_pixels)
+            _elapsed = int(_time.monotonic() - _t0)
+            report = f"YOLO-only pass ({_elapsed}s): resolution unchanged, skipped face regen"
+            print(f"  Done in {_elapsed}s\n{'='*50}\n")
+            return (new_person_data, report)
 
         det_size_int = int(det_size)
         analyzer = FaceAnalyzer(det_size_int)
@@ -289,20 +337,8 @@ class PersonDataRefiner:
                     ref_batch.append(all_masks_per_type[mt][b][ri])
                 pd_masks[mt].append(torch.cat(ref_batch, dim=0))
 
-        # Cross-reference deconfliction
-        if use_depth and num_refs >= 2:
-            for mt in ("body", "head", "face"):
-                for b in range(batch_size):
-                    overlap_dict = {}
-                    for ri in range(num_refs):
-                        m = pd_masks[mt][ri][b].cpu().numpy()
-                        if m.sum() > 0:
-                            overlap_dict[ri] = m
-                    if len(overlap_dict) >= 2:
-                        eb = depth_edges_list[b][1] if b < len(depth_edges_list) else None
-                        resolved = deconflict_masks(overlap_dict, depth_nps[b], edges_binary=eb)
-                        for ri, m in resolved.items():
-                            pd_masks[mt][ri][b] = torch.from_numpy(m)
+        # Note: cross-reference mask deconfliction removed — PersonDetailer handles
+        # occlusion via back-to-front render order (same reasoning as PersonSelectorMulti).
 
         new_person_data = {
             "batch_size": batch_size,
@@ -318,6 +354,13 @@ class PersonDataRefiner:
         for mt in ALL_MASK_TYPES:
             new_person_data[f"{mt}_masks"] = pd_masks[mt]
 
+        # Run YOLO aux detection if aux_model connected (full-regen path)
+        if aux_model != "none":
+            new_person_data = self._run_yolo_aux(
+                new_person_data, images, num_refs, new_h, new_w, batch_size,
+                aux_model, aux_confidence, aux_label,
+                aux_fill_holes, aux_expand_pixels, aux_blend_pixels)
+
         _elapsed = int(_time.monotonic() - _t0)
         report_lines.insert(0, f"Runtime: {_elapsed}s")
         report = "\n".join(report_lines)
@@ -326,3 +369,67 @@ class PersonDataRefiner:
         print(f"{'='*50}\n")
 
         return (new_person_data, report)
+
+    def _run_yolo_aux(self, person_data, images, num_refs, h, w, batch_size,
+                      aux_model, aux_confidence, aux_label,
+                      aux_fill_holes, aux_expand_pixels, aux_blend_pixels):
+        """Run YOLO detection on images and inject aux_masks into person_data.
+
+        Reuses the same logic as PersonSelectorMulti's YOLO block:
+        detect → assign to refs via body mask overlap → merge → post-process.
+        Replaces any existing aux_masks in person_data.
+        """
+        def _aux_post(mask_2d):
+            if aux_expand_pixels > 0:
+                mask_2d = expand_mask(mask_2d, aux_expand_pixels)
+            if aux_fill_holes:
+                mask_2d = fill_mask_holes_2d(mask_2d)
+            if aux_blend_pixels > 0:
+                mask_2d = feather_mask(mask_2d, aux_blend_pixels)
+            return mask_2d
+
+        aux_per_ref = [[] for _ in range(num_refs)]
+        aux_unassigned = []
+        aux_part_counts = []
+
+        for b in range(batch_size):
+            single_image = images[b]  # [H, W, C]
+            detections = detect_objects(single_image, aux_model,
+                                        confidence=aux_confidence, label_filter=aux_label)
+
+            body_masks_list = person_data.get("body_masks", [])
+            det_assignments = assign_detections_to_references(
+                detections, body_masks_list, num_refs, b)
+
+            counts = {}
+            for ri in range(num_refs):
+                parts = det_assignments.get(ri, [])
+                counts[ri] = len(parts)
+                if parts:
+                    merged = torch.max(torch.stack(parts), dim=0)[0]
+                    merged = _aux_post(merged)
+                    aux_per_ref[ri].append(merged.unsqueeze(0))
+                else:
+                    aux_per_ref[ri].append(torch.zeros(1, h, w, dtype=torch.float32))
+
+            unassigned_parts = det_assignments.get(-1, [])
+            if unassigned_parts:
+                merged_unassigned = torch.max(torch.stack(unassigned_parts), dim=0)[0]
+                merged_unassigned = _aux_post(merged_unassigned)
+                aux_unassigned.append(merged_unassigned.unsqueeze(0))
+            else:
+                aux_unassigned.append(torch.zeros(1, h, w, dtype=torch.float32))
+
+            aux_part_counts.append(counts)
+            total_parts = sum(counts.values()) + len(unassigned_parts)
+            labels_found = set(d["label"] for d in detections)
+            print(f"  [PersonDataRefiner YOLO] Image {b+1}: {total_parts} detections "
+                  f"({', '.join(labels_found) or 'none'}), "
+                  f"{sum(1 for c in counts.values() if c > 0)} refs matched")
+
+        # Inject into person_data (replaces any existing aux_masks)
+        person_data["aux_masks"] = [torch.cat(aux_per_ref[ri], dim=0) for ri in range(num_refs)]
+        person_data["aux_unassigned_masks"] = torch.cat(aux_unassigned, dim=0)
+        person_data["aux_part_counts"] = aux_part_counts
+
+        return person_data
