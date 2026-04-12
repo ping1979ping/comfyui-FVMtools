@@ -125,6 +125,27 @@ When a `depth_map` is connected to PersonSelectorMulti, body masks of **occluded
 
 ---
 
+## Important Observation: Deconfliction Was a Double-Edged Sword
+
+The "best" result the user saw during this session was **early on, before deconfliction
+was removed** (around commit `071eea1`). At that point, SAM + depth + deconfliction
+was active. Deconfliction caused STRIPES on the back person (bad), but it ALSO cleaned
+up SAM's cross-person leakage by removing overlap pixels from the "loser" (good).
+
+After removing deconfliction (`208ba76`), the stripes went away but SAM's leak from
+the back person over the boy in front was no longer cleaned up. The current result
+(image 19) shows ref 2 (green) extending over the boy — that's raw SAM leak with no
+cleanup.
+
+**The trade-off:** deconfliction fixes SAM leak but causes stripes. No deconfliction
+fixes stripes but allows SAM leak. No solution in this session solved both simultaneously.
+
+**Best current workaround:** For this specific scene, don't connect person_mask or
+depth_map. Pure SAM with negative prompts (no depth, no BiRefNet, no deconfliction)
+was actually the cleanest result — image 4 in the session.
+
+---
+
 ## Future Ideas (not tried yet)
 
 - **Depth only for render order + selective carving:** Instead of carving all depth edges, only carve at edges where the mask EXITS the person (touching background), not where another person occludes. Would need to classify each depth edge as "person-background" vs "person-person".
