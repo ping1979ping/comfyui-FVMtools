@@ -569,8 +569,19 @@ class PersonSelectorMulti:
                     others = [f for j, f in enumerate(cur_faces) if j != fi]
                     sam_body = MaskGenerator.generate_body_mask(
                         cur_rgb, face, sam_model, other_faces=others)
-                    from .utils.mask_utils import clean_mask_crumbs as _clean
-                    sam_body = _clean(sam_body, min_area_fraction=0.005)
+                    sam_body = clean_mask_crumbs(sam_body, min_area_fraction=0.005)
+                    # Fill holes in the SAM seed — SAM's negative prompts carve out
+                    # the front person from the back person's mask, creating holes
+                    # that would cause the distance-transform split to assign those
+                    # pixels to the wrong person. Contour fill + morph close fixes this.
+                    sam_uint8 = (sam_body * 255).astype(np.uint8)
+                    contours, _ = cv2.findContours(sam_uint8, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+                    filled = np.zeros_like(sam_uint8)
+                    cv2.drawContours(filled, contours, -1, 255, cv2.FILLED)
+                    # Morphological close to bridge narrow gaps between SAM fragments
+                    close_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))
+                    filled = cv2.morphologyEx(filled, cv2.MORPH_CLOSE, close_kernel)
+                    sam_body = (filled / 255.0).astype(np.float32)
                     seed_masks.append(sam_body)
                 envs = split_person_mask_by_seeds(person_mask_np, seed_masks)
                 split_method = "SAM-seed distance transform"
