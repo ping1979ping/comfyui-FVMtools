@@ -130,18 +130,43 @@ app.registerExtension({
                     console.error("[FVMTools] PersonSelectorMulti separator setup error:", e);
                 }
 
-                // Wire aux_model → fetch class names and stash them on the node so
-                // they can be drawn directly under the aux_label widget. The new Vue
-                // frontend doesn't honor mutated widget tooltips, so we render text
-                // on the canvas instead — always visible, no hover needed.
+                // Inject a dynamic-height custom widget right after aux_model to
+                // display YOLO class names. Expands based on class count, collapses
+                // to one widget height when no model is selected.
                 const auxModelW = this.widgets?.find(w => w.name === "aux_model");
-                const auxLabelW = this.widgets?.find(w => w.name === "aux_label");
                 if (auxModelW) {
+                    const auxModelIdx = this.widgets.indexOf(auxModelW);
+                    const classWidget = {
+                        name: "_aux_classes",
+                        type: "custom",
+                        value: "",
+                        _lines: [],
+                        options: { serialize: false },
+                        computeSize(nodeWidth) {
+                            const lineH = 13;
+                            const lines = this._lines.length || 0;
+                            return [0, lines > 0 ? lines * lineH + 6 : 20];
+                        },
+                        draw(ctx, node, width, posY, height) {
+                            if (!this._lines.length) return;
+                            ctx.save();
+                            ctx.font = "10px sans-serif";
+                            ctx.fillStyle = "#9cf";
+                            ctx.textBaseline = "top";
+                            const lineH = 13;
+                            for (let i = 0; i < this._lines.length; i++) {
+                                ctx.fillText(this._lines[i], 15, posY + 3 + i * lineH);
+                            }
+                            ctx.restore();
+                        },
+                    };
+                    this.widgets.splice(auxModelIdx + 1, 0, classWidget);
+
                     const node = this;
-                    node._fvmAuxClasses = "";
                     const updateClasses = async (modelName) => {
                         if (!modelName || modelName === "none") {
-                            node._fvmAuxClasses = "";
+                            classWidget._lines = [];
+                            classWidget.value = "";
                             node.setDirtyCanvas(true, true);
                             return;
                         }
@@ -149,19 +174,32 @@ app.registerExtension({
                             const resp = await fetch(`/fvmtools/yolo-classes?model=${encodeURIComponent(modelName)}`);
                             const data = await resp.json();
                             const cls = (data.classes || []);
-                            node._fvmAuxClasses = cls.length
-                                ? "classes: " + cls.join(", ")
-                                : "(no class metadata)";
-                            console.log(`[FVMTools] ${modelName} classes:`, cls);
-                            // Best-effort tooltip update for frontends that DO honor mutations
-                            if (auxLabelW) {
-                                auxLabelW.options = auxLabelW.options || {};
-                                auxLabelW.options.tooltip =
-                                    "Comma-separated substring filter. Available: " + cls.join(", ");
-                                if (auxLabelW.inputEl) {
-                                    auxLabelW.inputEl.title = auxLabelW.options.tooltip;
-                                }
+                            if (!cls.length) {
+                                classWidget._lines = ["(no class metadata)"];
+                                classWidget.value = "";
+                                node.setDirtyCanvas(true, true);
+                                return;
                             }
+                            // Word-wrap classes into lines
+                            const maxW = (node.size?.[0] || 300) - 30;
+                            ctx_measure: {
+                                const lines = ["classes:"];
+                                let cur = "";
+                                for (const c of cls) {
+                                    const test = cur ? cur + ", " + c : c;
+                                    // Approximate: 6px per char at 10px font
+                                    if ((test.length * 6) > maxW && cur) {
+                                        lines.push(cur);
+                                        cur = c;
+                                    } else {
+                                        cur = test;
+                                    }
+                                }
+                                if (cur) lines.push(cur);
+                                classWidget._lines = lines;
+                            }
+                            classWidget.value = cls.join(", ");
+                            console.log(`[FVMTools] ${modelName} classes:`, cls);
                             node.setDirtyCanvas(true, true);
                         } catch (e) {
                             console.warn("[FVMTools] yolo-classes fetch failed:", e);
@@ -173,7 +211,6 @@ app.registerExtension({
                         updateClasses(value);
                         return ret;
                     };
-                    // Initial fetch for the default value
                     if (auxModelW.value && auxModelW.value !== "none") {
                         updateClasses(auxModelW.value);
                     }
@@ -262,45 +299,6 @@ app.registerExtension({
             const onDrawFGMulti = nodeType.prototype.onDrawForeground;
             nodeType.prototype.onDrawForeground = function (ctx) {
                 const r = onDrawFGMulti ? onDrawFGMulti.apply(this, arguments) : undefined;
-
-                // Draw YOLO class list above the auto_threshold widget,
-                // left half of the node so it doesn't collide with right-side widgets.
-                // Header "classes:" on its own line, followed by word-wrapped names.
-                if (this._fvmAuxClasses) {
-                    const anchorW = this.widgets?.find(w => w.name === "auto_threshold");
-                    if (anchorW && anchorW.last_y != null) {
-                        ctx.save();
-                        ctx.font = "10px sans-serif";
-                        ctx.fillStyle = "#9cf";
-                        ctx.textBaseline = "bottom";
-                        const maxW = this.size[0] * 0.5 - 10;
-                        // Strip leading "classes: " so we can render it as a header line
-                        const body = this._fvmAuxClasses.replace(/^classes:\s*/, "");
-                        const words = body.split(" ");
-                        const lines = ["classes:"];
-                        let cur = "";
-                        for (const w of words) {
-                            const test = cur ? cur + " " + w : w;
-                            if (ctx.measureText(test).width > maxW && cur) {
-                                lines.push(cur);
-                                cur = w;
-                            } else {
-                                cur = test;
-                            }
-                        }
-                        if (cur) lines.push(cur);
-                        const maxLines = Math.min(lines.length, 7);
-                        const lineH = 12;
-                        // Shift up by ~2 widget heights (default widget height = 20)
-                        // so the text clears the widgets below it.
-                        const bottomY = anchorW.last_y - 44;
-                        for (let i = 0; i < maxLines; i++) {
-                            const y = bottomY - (maxLines - 1 - i) * lineH;
-                            ctx.fillText(lines[i], 10, y);
-                        }
-                        ctx.restore();
-                    }
-                }
 
                 if (!this.outputs || !this._psmValues) return r;
 

@@ -27,8 +27,8 @@ class PersonDataRefiner:
 
     CATEGORY = "FVM Tools/Face"
     FUNCTION = "execute"
-    RETURN_TYPES = ("PERSON_DATA", "STRING")
-    RETURN_NAMES = ("person_data", "report")
+    RETURN_TYPES = ("PERSON_DATA", "MASK", "STRING")
+    RETURN_NAMES = ("person_data", "aux_masks", "report")
     DESCRIPTION = (
         "Regenerate PERSON_DATA masks at a new image resolution.\n\n"
         "Use after upscaling: takes original person_data + hi-res images,\n"
@@ -187,7 +187,8 @@ class PersonDataRefiner:
             _elapsed = int(_time.monotonic() - _t0)
             report = f"YOLO-only pass ({_elapsed}s): resolution unchanged, skipped face regen"
             print(f"  Done in {_elapsed}s\n{'='*50}\n")
-            return (new_person_data, report)
+            aux_masks_batch = self._build_aux_output(new_person_data, num_refs, batch_size, new_h, new_w)
+            return (new_person_data, aux_masks_batch, report)
 
         det_size_int = int(det_size)
         analyzer = FaceAnalyzer(det_size_int)
@@ -368,7 +369,19 @@ class PersonDataRefiner:
         print(f"\n  Done in {_elapsed}s")
         print(f"{'='*50}\n")
 
-        return (new_person_data, report)
+        aux_masks_batch = self._build_aux_output(new_person_data, num_refs, batch_size, new_h, new_w)
+        return (new_person_data, aux_masks_batch, report)
+
+    def _build_aux_output(self, person_data, num_refs, batch_size, h, w):
+        """Build a stacked MASK tensor from person_data['aux_masks'] for the output port."""
+        if "aux_masks" not in person_data or num_refs == 0:
+            return empty_mask(h, w)
+        aux_list = []
+        for b in range(batch_size):
+            for ri in range(num_refs):
+                if ri < len(person_data["aux_masks"]):
+                    aux_list.append(person_data["aux_masks"][ri][b:b+1])
+        return torch.cat(aux_list, dim=0) if aux_list else empty_mask(h, w)
 
     def _run_yolo_aux(self, person_data, images, num_refs, h, w, batch_size,
                       aux_model, aux_confidence, aux_label,
