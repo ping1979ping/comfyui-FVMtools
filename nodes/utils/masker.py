@@ -677,9 +677,8 @@ class MaskGenerator:
                     valid_masks.sort(key=lambda x: x[0])  # smallest first
                     sizes = [f"{a}px" for a, _ in valid_masks]
                     print(f"    SAM masks: {len(valid_masks)} valid [{', '.join(sizes)}]")
-                    # Pick MEDIUM mask: if 3 masks, take middle; if 2, take smaller; if 1, take it
-                    mid_idx = len(valid_masks) // 2 if len(valid_masks) >= 3 else 0
-                    best_area, best_mask = valid_masks[mid_idx]
+                    # Pick LARGEST valid mask — depth overlap resolution handles bleeding
+                    best_area, best_mask = valid_masks[-1]
 
                 if best_mask is not None:
                     return best_mask

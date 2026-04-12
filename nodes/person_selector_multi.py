@@ -58,7 +58,6 @@ class PersonSelectorMulti:
         yolo_models = ["none"] + get_available_yolo_models()
         return {
             "required": {
-                "sam_model": ("SAM_MODEL", {"tooltip": "SAM model from Impact Pack SAMLoader — required for body masks"}),
                 "current_image": ("IMAGE", {"tooltip": "Image(s) to search for faces. Supports batch input — each image is processed independently."}),
                 "auto_threshold": ("BOOLEAN", {"default": True,
                                                "tooltip": "Auto: finds optimal 1:1 face-reference assignment (ignores threshold). Off: uses manual threshold."}),
@@ -122,6 +121,8 @@ class PersonSelectorMulti:
                                                         "Values are auto-normalized, so 3/1/1/1 equals 50/17/17/17."}),
             },
             "optional": {
+                "sam_model": ("SAM_MODEL", {"tooltip": "SAM2 model from Impact Pack SAMLoader for body masks.\n"
+                                                        "Optional when sam3_model is connected."}),
                 "reference_1": ("IMAGE", {"tooltip": "Reference image(s) for person 1. Pass a batch of images of the same person for better matching accuracy.\n\n"
                                                       "Optional — if no references connected, all detected faces go to the generic slot in PersonDetailer."}),
                 "outfit_palettes": ("IMAGE", {"tooltip": "Palette preview image batch for outfit color matching.\n"
@@ -810,11 +811,12 @@ class PersonSelectorMulti:
             "face_envelopes": face_envelopes,  # fi -> [H,W] when person_mask connected
         }
 
-    def execute(self, sam_model, current_image, auto_threshold, threshold, guaranteed_refs,
+    def execute(self, current_image, auto_threshold, threshold, guaranteed_refs,
                 aggregation, mask_fill_holes, mask_blur, det_size, aux_mask_type="none",
                 aux_model="none", aux_confidence=0.35, aux_label="",
                 aux_fill_holes=False, aux_expand_pixels=0, aux_blend_pixels=0,
                 match_weights="50/15/15/20",
+                sam_model=None,
                 reference_1=None,
                 outfit_palettes=None,
                 person_mask=None,
