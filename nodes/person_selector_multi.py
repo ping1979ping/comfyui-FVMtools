@@ -815,26 +815,17 @@ class PersonSelectorMulti:
             for mt in ALL_MASK_TYPES:
                 person_data_masks[mt].append(torch.cat(ref_masks_per_type[mt], dim=0))
 
-        # Cross-reference deconfliction: resolve overlapping masks per batch image
-        if use_depth and num_refs >= 2:
-            for mt in ("body", "head", "face"):
-                for b in range(batch_size):
-                    overlap_dict = {}
-                    seeds_dict = {}
-                    for ri in range(num_refs):
-                        m = person_data_masks[mt][ri][b].cpu().numpy()
-                        if m.sum() > 0:
-                            overlap_dict[ri] = m
-                        # BiSeNet seeds for priority (from first batch image's results)
-                        br_seeds = batch_results[b].get("bisenet_seeds", {})
-                        if ri in br_seeds:
-                            seeds_dict[ri] = br_seeds[ri]
-                    if len(overlap_dict) >= 2:
-                        eb = depth_edges_list[b][1] if b < len(depth_edges_list) else None
-                        resolved = deconflict_masks(overlap_dict, depth_nps[b], edges_binary=eb,
-                                                     bisenet_seeds=seeds_dict if seeds_dict else None)
-                        for ri, m in resolved.items():
-                            person_data_masks[mt][ri][b] = torch.from_numpy(m)
+        # Note: cross-reference mask deconfliction (carving overlap from the farther
+        # person) has been removed. It caused stripe/fragment artifacts on occluded
+        # people (visible as horizontal cuts in the back person's body mask). This is
+        # redundant because:
+        #   1. PersonDetailer handles occlusion via back-to-front render order
+        #      (depth_sort_order), painting each person in full and layering front-over-back.
+        #   2. With person_mask (BiRefNet), the SAM-seed split already produces
+        #      exclusive per-person envelopes with no overlap.
+        #   3. Without person_mask, SAM with negative prompts minimizes overlap.
+        # Each person keeps their FULL body mask including occluded parts so
+        # PersonDetailer can inpaint them completely before layering.
 
         for b in range(batch_size):
             matches_for_image = [ri in batch_results[b]["assignments"] for ri in range(num_refs)]
