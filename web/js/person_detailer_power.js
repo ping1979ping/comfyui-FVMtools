@@ -28,6 +28,39 @@ function fitString(ctx, str, maxWidth) {
     return str.substring(0, max) + ellipsis;
 }
 
+/**
+ * Draw an info "i" icon with three visual states:
+ *   FILLED  — solid blue (CivitAI data available)
+ *   OUTLINED — blue outline only (local sidecar file exists)
+ *   GRAYED  — gray outline (no info available yet)
+ */
+function drawInfoIcon(ctx, x, y, size, treatment = "GRAYED") {
+    ctx.save();
+    ctx.beginPath();
+    ctx.roundRect(x, y, size, size, [size * 0.15]);
+    if (treatment === "GRAYED") {
+        ctx.fillStyle = "#555";
+        ctx.strokeStyle = "#888";
+    } else {
+        ctx.fillStyle = "#2f82ec";
+        ctx.strokeStyle = "#2f82ec";
+    }
+    if (treatment === "FILLED") {
+        ctx.fill();
+    } else {
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+    }
+    // Draw "i" letter inside
+    const iColor = treatment === "FILLED" ? "#FFF" : treatment === "OUTLINED" ? "#2f82ec" : "#999";
+    ctx.fillStyle = iColor;
+    ctx.font = `bold ${Math.round(size * 0.65)}px sans-serif`;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("i", x + size / 2, y + size / 2 + 0.5);
+    ctx.restore();
+}
+
 function drawRoundedRectangle(ctx, options) {
     const lowQ = isLowQuality();
     ctx.save();
@@ -549,8 +582,11 @@ class RefLoraWidget extends FvmBaseWidget {
         this.type = "custom";
         this.haveMouseMovedStrength = false;
         this._value = { ...DEFAULT_LORA_VALUE };
+        this._infoState = "GRAYED";  // "GRAYED" | "OUTLINED" | "FILLED"
+        this._infoCheckedLora = null; // last lora we checked info for
         this.hitAreas = {
             toggle:      { bounds: [0, 0], onDown: this.onToggleDown },
+            info:        { bounds: [0, 0], onDown: this.onInfoDown },
             lora:        { bounds: [0, 0], onClick: this.onLoraClick },
             strengthDec: { bounds: [0, 0], onClick: this.onStrengthDecClick },
             strengthVal: { bounds: [0, 0], onClick: this.onStrengthValClick },
@@ -563,6 +599,7 @@ class RefLoraWidget extends FvmBaseWidget {
     set value(v) {
         if (typeof v === "object" && v !== null) {
             this._value = v;
+            this._checkLoraInfo();
         } else {
             this._value = { ...DEFAULT_LORA_VALUE };
         }
@@ -604,9 +641,16 @@ class RefLoraWidget extends FvmBaseWidget {
         this.hitAreas.strengthInc.bounds = rightArr;
         this.hitAreas.strengthAny.bounds = [leftArr[0], rightArr[0] + rightArr[1] - leftArr[0]];
 
-        // LoRA name (fills remaining space)
+        // Info icon (between lora name and strength)
+        const infoIconSize = Math.round(height * 0.65);
+        const infoReserved = infoIconSize + innerMargin * 2;
+        const infoX = leftArr[0] - innerMargin - infoIconSize;
+        drawInfoIcon(ctx, infoX, posY + (height - infoIconSize) / 2, infoIconSize, this._infoState);
+        this.hitAreas.info.bounds = [infoX, infoReserved];
+
+        // LoRA name (fills remaining space, minus icon)
         const loraX = posX;
-        const loraWidth = leftArr[0] - innerMargin - posX;
+        const loraWidth = infoX - innerMargin - posX;
         ctx.textAlign = "left";
         ctx.textBaseline = "middle";
         const label = String(this.value.lora || "None");
@@ -633,6 +677,7 @@ class RefLoraWidget extends FvmBaseWidget {
         showLoraChooser(event, (value) => {
             if (typeof value === "string") {
                 this.value.lora = value === "None" ? null : value;
+                this._checkLoraInfo().then(() => node.setDirtyCanvas(true, true));
             }
             node.setDirtyCanvas(true, true);
         });
@@ -671,6 +716,46 @@ class RefLoraWidget extends FvmBaseWidget {
         const step = 0.05;
         const strength = (this.value.strength ?? 1) + step * direction;
         this.value.strength = Math.round(strength * 100) / 100;
+    }
+
+    onInfoDown(event, pos, node) {
+        if (this.value.lora) {
+            showLoraInfoDialog(this.value.lora);
+        }
+        this.cancelMouseDown();
+        return true;
+    }
+
+    /** Async check: does this LoRA have sidecar/CivitAI info?
+     *  Sets _infoState to FILLED (civitai), OUTLINED (sidecar), or GRAYED (none).
+     *  Re-checks only when the LoRA name changes. */
+    async _checkLoraInfo() {
+        const lora = this._value?.lora;
+        if (!lora || lora === "None") {
+            this._infoState = "GRAYED";
+            this._infoCheckedLora = null;
+            return;
+        }
+        if (lora === this._infoCheckedLora) return;
+        this._infoCheckedLora = lora;
+        try {
+            const resp = await fetch(`/fvmtools/lora-info?file=${encodeURIComponent(lora)}`);
+            if (!resp.ok) {
+                this._infoState = "GRAYED";
+                return;
+            }
+            const data = await resp.json();
+            if (data.source === "sidecar") {
+                // Sidecar can contain civitai data too
+                this._infoState = data.civitaiUrl ? "FILLED" : "OUTLINED";
+            } else if (data.name && !data.error) {
+                this._infoState = "FILLED";
+            } else {
+                this._infoState = "GRAYED";
+            }
+        } catch {
+            this._infoState = "GRAYED";
+        }
     }
 }
 
