@@ -831,8 +831,12 @@ class PersonSelectorMulti:
             for mt in ALL_MASK_TYPES:
                 person_data_masks[mt].append(torch.cat(ref_masks_per_type[mt], dim=0))
 
-        # Cross-reference deconfliction: resolve overlapping masks per batch image
-        if use_depth and num_refs >= 2:
+        # Cross-reference deconfliction is SKIPPED when depth is available because
+        # front-to-back peeling (above) already prevents overlap during generation.
+        # Without depth, peeling can't sort and deconfliction can't run either
+        # (it requires depth_map), so this block is effectively depth-only anyway.
+        # Disabled: peeling replaces deconfliction as the overlap resolution strategy.
+        if False and use_depth and num_refs >= 2:
             for mt in ("body", "head", "face"):
                 for b in range(batch_size):
                     overlap_dict = {}
