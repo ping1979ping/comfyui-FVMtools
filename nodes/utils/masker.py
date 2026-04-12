@@ -295,7 +295,7 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
                                 depth_edges_data=None, depth_np=None,
                                 depth_carve_strength=0.8, depth_grow=30,
                                 other_faces=None, body_mask_mode="auto",
-                                person_mask_envelope=None):
+                                person_mask_envelope=None, sam3_config=None):
     """Generate all 9 mask types for a single face. Shared by PersonSelectorMulti and PersonDataRefiner.
 
     Args:
@@ -331,9 +331,14 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
 
     # Generate SAM body early (needed for label clipping + body mask)
+    # SAM3 takes priority over SAM2 when both are available
+    _use_sam3 = sam3_config is not None
     _sam_body_for_clip = None
-    if other_faces and sam_model is not None and body_mask_mode in ("seed_grow", "auto"):
-        _sam_body_for_clip = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
+    if other_faces and body_mask_mode in ("seed_grow", "auto"):
+        if _use_sam3:
+            _sam_body_for_clip = MaskGenerator.generate_body_mask_sam3(cur_rgb, face, sam3_config, other_faces=other_faces)
+        elif sam_model is not None:
+            _sam_body_for_clip = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
         _sam_body_for_clip = clean_mask_crumbs(_sam_body_for_clip, min_area_fraction=0.005)
         # Clip BiSeNet labels to SAM body region (removes cross-person leakage)
         label_map = _clip_labels_to_body(label_map, _sam_body_for_clip)
@@ -409,8 +414,11 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         print(f"    body: hybrid (bisenet+sam={seed_area}px → carved={int(np.sum(body_mask_np > 0.5))}px)")
 
     else:
-        # Pure SAM mode
-        body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
+        # Pure SAM mode (SAM3 preferred over SAM2)
+        if _use_sam3:
+            body_mask_np = MaskGenerator.generate_body_mask_sam3(cur_rgb, face, sam3_config, other_faces=other_faces)
+        else:
+            body_mask_np = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
         body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.005)
         if use_depth:
             body_mask_np = refine_mask_with_depth(body_mask_np, depth_edges_data, depth_np,
@@ -694,6 +702,104 @@ class MaskGenerator:
             return cls.generate_body_bbox_fallback((h, w), face)
         except Exception as e:
             print(f"[FVMTools] SAM failed: {e}, using body bbox fallback")
+            return cls.generate_body_bbox_fallback((h, w), face)
+
+    @classmethod
+    def generate_body_mask_sam3(cls, image_rgb: np.ndarray, face, sam3_config,
+                                other_faces=None) -> np.ndarray:
+        """Generate body mask using SAM3's interactive predictor.
+
+        SAM3 uses a processor-based API with pixel-coordinate points/boxes.
+        Returns masks in same format as generate_body_mask (SAM2).
+        """
+        from PIL import Image
+        h, w = image_rgb.shape[:2]
+
+        try:
+            # Import SAM3's model cache (from comfyui-sam3 extension)
+            import importlib
+            sam3_cache = importlib.import_module(
+                "custom_nodes.comfyui-sam3.nodes._model_cache"
+            )
+            import comfy.model_management
+
+            sam3_model = sam3_cache.get_or_build_model(sam3_config)
+            comfy.model_management.load_models_gpu([sam3_model])
+
+            processor = sam3_model.processor
+            model = processor.model
+
+            if hasattr(processor, 'sync_device_with_model'):
+                processor.sync_device_with_model()
+
+            if model.inst_interactive_predictor is None:
+                print("[FVMTools] SAM3 inst_interactive_predictor not available, falling back to bbox")
+                return cls.generate_body_bbox_fallback((h, w), face)
+
+            # Set image
+            pil_img = Image.fromarray(image_rgb)
+            state = processor.set_image(pil_img)
+
+            # Build points + labels (same heuristic as SAM2)
+            points, plabs, bbox = cls._estimate_body_points(face, h, w, other_faces=other_faces)
+
+            point_coords = np.array(points, dtype=np.float32)
+            point_labels = np.array(plabs, dtype=np.int32)
+            box_array = np.array(bbox, dtype=np.float32)
+
+            # SAM3 predict_inst: pixel coords, normalize_coords=True handles transform
+            masks_np, scores_np, low_res_masks = model.predict_inst(
+                state,
+                point_coords=point_coords,
+                point_labels=point_labels,
+                box=box_array,
+                mask_input=None,
+                multimask_output=True,
+                normalize_coords=True,
+            )
+
+            if masks_np is None or len(masks_np) == 0:
+                print("[FVMTools] SAM3 returned no masks, using bbox fallback")
+                return cls.generate_body_bbox_fallback((h, w), face)
+
+            # Select mask using same logic as SAM2 (medium mask)
+            fx1, fy1, fx2, fy2 = [int(v) for v in face.bbox]
+            face_cx = int((fx1 + fx2) / 2)
+            face_cy = int((fy1 + fy2) / 2)
+            face_area = (fx2 - fx1) * (fy2 - fy1)
+
+            valid_masks = []
+            for i in range(masks_np.shape[0]):
+                m = masks_np[i].astype(np.float32)
+                if m.shape != (h, w):
+                    m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
+                area = int(np.sum(m > 0.5))
+                if area < face_area * 0.5:
+                    continue
+                if m[min(face_cy, h - 1), min(face_cx, w - 1)] < 0.5:
+                    continue
+                valid_masks.append((area, m, float(scores_np[i])))
+
+            if valid_masks:
+                valid_masks.sort(key=lambda x: x[0])
+                sizes = [f"{a}px(s={s:.2f})" for a, _, s in valid_masks]
+                print(f"    SAM3 masks: {len(valid_masks)} valid [{', '.join(sizes)}]")
+                mid_idx = len(valid_masks) // 2 if len(valid_masks) >= 3 else 0
+                _, best_mask, _ = valid_masks[mid_idx]
+                return best_mask
+
+            # Fallback: highest score
+            best_idx = int(np.argmax(scores_np))
+            m = masks_np[best_idx].astype(np.float32)
+            if m.shape != (h, w):
+                m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
+            print(f"    SAM3: no valid mask containing face, using best score (idx={best_idx})")
+            return m
+
+        except Exception as e:
+            print(f"[FVMTools] SAM3 failed: {e}, using bbox fallback")
+            import traceback
+            traceback.print_exc()
             return cls.generate_body_bbox_fallback((h, w), face)
 
     @classmethod

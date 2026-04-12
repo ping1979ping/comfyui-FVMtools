@@ -157,6 +157,11 @@ class PersonSelectorMulti:
                                                  "- front_last: closest person rendered last (correct for depth_map with bright=near)\n"
                                                  "- front_first: closest person rendered first (for inverted depth maps)\n"
                                                  "- off: no sorting, uses slot order"}),
+                "sam3_model": ("SAM3_MODEL_CONFIG", {"tooltip":
+                    "SAM3 model config (alternative to SAM2).\n\n"
+                    "Connect LoadSAM3Model output here to use SAM3 for body masks.\n"
+                    "When connected, SAM3 is used instead of SAM2 (sam_model).\n"
+                    "SAM3 supports text+point prompts and may produce tighter masks."}),
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
@@ -284,14 +289,14 @@ class PersonSelectorMulti:
                             depth_edges_data=None, depth_np=None,
                             depth_carve_strength=0.8, depth_grow=30,
                             other_faces=None, body_mask_mode="auto",
-                            person_mask_envelope=None):
+                            person_mask_envelope=None, sam3_config=None):
         """Generate all mask types. Delegates to shared generate_all_masks_for_face()."""
         return generate_all_masks_for_face(
             cur_rgb, face, device, sam_model, mask_fill_holes, mask_blur,
             depth_edges_data=depth_edges_data, depth_np=depth_np,
             depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
             other_faces=other_faces, body_mask_mode=body_mask_mode,
-            person_mask_envelope=person_mask_envelope,
+            person_mask_envelope=person_mask_envelope, sam3_config=sam3_config,
         )
 
     def _render_mask_layers(self, current_image, assignments, cur_faces,
@@ -631,7 +636,8 @@ class PersonSelectorMulti:
                                               depth_edges_data=depth_edges_data, depth_np=depth_np,
                                               depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
                                               other_faces=others, body_mask_mode=body_mask_mode,
-                                              person_mask_envelope=face_envelopes.get(fi))
+                                              person_mask_envelope=face_envelopes.get(fi),
+                                              sam3_config=sam3_model)
             for mt in ALL_MASK_TYPES:
                 masks_per_type[mt][ri] = masks.get(mt, empty_mask(h, w))
             if "_bisenet_seed" in masks:
@@ -785,7 +791,8 @@ class PersonSelectorMulti:
                                                       depth_edges_data=depth_edges_data, depth_np=depth_np,
                                                       depth_carve_strength=depth_carve_strength, depth_grow=depth_grow,
                                                       other_faces=others, body_mask_mode=body_mask_mode,
-                                                      person_mask_envelope=face_envelopes.get(fi))
+                                                      person_mask_envelope=face_envelopes.get(fi),
+                                                      sam3_config=sam3_model)
             per_face_masks.append(per_face)
         face_to_ref = [fi_to_ri.get(fi) for fi in range(face_count)]
 
@@ -814,6 +821,7 @@ class PersonSelectorMulti:
                 depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
                 body_mask_mode="auto",
                 depth_sort_order="front_last",
+                sam3_model=None,
                 **kwargs):
         import time as _time
         _t0 = _time.monotonic()
@@ -824,6 +832,9 @@ class PersonSelectorMulti:
             PersonSelectorMulti._face_analyzer = FaceAnalyzer(det_size_int)
             PersonSelectorMulti._last_det_size = det_size_int
         analyzer = PersonSelectorMulti._face_analyzer
+
+        if sam3_model is not None:
+            print(f"[PersonSelectorMulti] SAM3 model connected — using SAM3 for body masks")
 
         batch_size = current_image.shape[0]
         h, w = current_image.shape[1], current_image.shape[2]
