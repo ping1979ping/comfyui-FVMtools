@@ -146,6 +146,36 @@ was actually the cleanest result — image 4 in the session.
 
 ---
 
+## Current Approach: Front-to-back Peeling (active, shipped)
+
+**Commit:** `d7eec4e` (body-region depth sort)
+
+**How it works:**
+1. Sort matched refs by body-region depth (75th percentile, expanded face bbox)
+2. Process front person first on clean image → SAM produces perfect mask
+3. Erase front person's body (fill with mean color, 7px dilated)
+4. Subtract claimed pixels from next person's masks
+5. Repeat until all refs processed
+
+**Results:** Much better than deconfliction — no stripes, clear per-person separation.
+Back person (ref 2) processed last on erased image → clean mask.
+
+**Remaining issue:** People processed later lose overlap pixels to earlier people.
+The woman (ref 1) in the test image still has parts of her body obscured where
+the boys (processed earlier) claimed territory. The peeling inherently gives
+priority to front people — this is correct for rendering but can leave back
+people with incomplete masks for inpainting.
+
+**Possible improvements:**
+- After peeling, re-expand each person's mask into unclaimed foreground
+  (BiRefNet pixels not owned by anyone)
+- Use the depth map to decide overlap ownership (closer pixel wins)
+  rather than pure processing-order priority
+- Two-pass: first pass = peel for clean SAM, second pass = depth-based
+  overlap resolution on the clean masks (softer than deconfliction)
+
+---
+
 ## Future Ideas (not tried yet)
 
 - **Depth only for render order + selective carving:** Instead of carving all depth edges, only carve at edges where the mask EXITS the person (touching background), not where another person occludes. Would need to classify each depth edge as "person-background" vs "person-person".
