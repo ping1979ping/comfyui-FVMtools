@@ -559,20 +559,16 @@ class PersonSelectorMulti:
         # is closest (not just whose face center is closest, which produces diagonal
         # Voronoi cuts for standing figures).
         # Fallback: face-center Voronoi when SAM isn't available.
+        # When person_mask (BiRefNet) is connected, use the FULL foreground as a hard
+        # clip envelope for ALL faces — no splitting needed. SAM with negative prompts
+        # already handles per-person separation (it's the best segmenter for that).
+        # BiRefNet just clips the SAM output to sharper silhouette edges.
         face_envelopes = {}  # fi -> [H,W] float32
         if person_mask_np is not None and face_count > 0:
-            # Split BiRefNet foreground using watershed on bilateral-filtered image.
-            # Face centers seed the watershed; bilateral filter preserves person-to-
-            # person edges while smoothing clothing texture. This avoids the SAM-seed
-            # approach which breaks under heavy occlusion (SAM holes propagate into
-            # the distance-transform split as stripe artifacts).
-            face_bboxes = [face.bbox for face in cur_faces]
-            envs = split_person_mask_by_watershed(person_mask_np, cur_rgb, face_bboxes)
-            split_method = "bilateral+watershed"
-            for fi, env in enumerate(envs):
-                face_envelopes[fi] = env
-            print(f"[PersonSelectorMulti] person_mask split into {len(envs)} envelopes "
-                  f"via {split_method}")
+            for fi in range(face_count):
+                face_envelopes[fi] = person_mask_np  # same full foreground for everyone
+            print(f"[PersonSelectorMulti] person_mask used as hard clip for {face_count} faces "
+                  f"(SAM handles per-person separation)")
 
         # Collect all mask types per reference
         from .utils.masker import ALL_MASK_TYPES

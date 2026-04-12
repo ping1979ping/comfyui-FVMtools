@@ -313,10 +313,10 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
                         "seed_grow" (BiSeNet seed + SAM + edge carving),
                         "sam" (legacy SAM only),
                         "auto" (detector if connected, else seed_grow)
-        person_mask_envelope: optional [H,W] float32 BiRefNet-style foreground envelope for
-                              this specific person (already split per-reference upstream).
-                              When provided, replaces SAM body mask, clips BiSeNet labels to
-                              this envelope, and hard-clips all output masks to stay within it.
+        person_mask_envelope: optional [H,W] float32 BiRefNet-style foreground mask.
+                              When provided, SAM still runs for per-person separation — BiRefNet
+                              is used as a hard clip on all output masks to sharpen silhouette
+                              edges. Depth carving is skipped (envelope handles bounds).
 
     Returns:
         dict {mask_type: torch.Tensor [1, H, W]} for all 9 types in ALL_MASK_TYPES
@@ -339,19 +339,18 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
 
     label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
 
-    # Unified person envelope: BiRefNet slice (preferred) > SAM body > none
-    # This is the region we clip BiSeNet labels to, AND the source of the body mask
-    # when no body_mask_mode-specific generation is needed.
+    # SAM body for BiSeNet label clipping (removes cross-person leakage).
+    # When BiRefNet envelope is provided, ALSO use it as an additional clip source —
+    # but SAM still runs for per-person separation (BiRefNet is full-scene foreground,
+    # SAM handles which pixels belong to THIS specific person).
     _sam_body_for_clip = None
-    if has_envelope:
-        # Use the externally-provided BiRefNet envelope
-        _clip_source = person_mask_envelope.astype(np.float32)
-        label_map = _clip_labels_to_body(label_map, _clip_source)
-    elif other_faces and sam_model is not None and body_mask_mode in ("seed_grow", "auto"):
+    if other_faces and sam_model is not None and body_mask_mode in ("seed_grow", "auto"):
         _sam_body_for_clip = MaskGenerator.generate_body_mask(cur_rgb, face, sam_model, other_faces=other_faces)
         _sam_body_for_clip = clean_mask_crumbs(_sam_body_for_clip, min_area_fraction=0.005)
-        # Clip BiSeNet labels to SAM body region (removes cross-person leakage)
         label_map = _clip_labels_to_body(label_map, _sam_body_for_clip)
+    if has_envelope:
+        # Additional clip: BiRefNet foreground provides sharper silhouette edges
+        label_map = _clip_labels_to_body(label_map, person_mask_envelope.astype(np.float32))
 
     masks = {}
 
@@ -373,12 +372,7 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     # Body mask generation
     h, w = cur_rgb.shape[:2]
 
-    if has_envelope:
-        # Envelope short-circuit: use BiRefNet foreground slice directly as the body mask.
-        # Skips the entire SAM / seed_grow / detector pipeline.
-        body_mask_np = person_mask_envelope.astype(np.float32)
-        print(f"    body: envelope ({int(np.sum(body_mask_np > 0.5))}px from person_mask)")
-    elif body_mask_mode == "detector":
+    if body_mask_mode == "detector":
         # Detector mode: BiSeNet-only placeholder, SEGS upgrade happens later in execute()
         body_mask_np = (label_map > 0).astype(np.float32)
         print(f"    body: detector (placeholder {int(np.sum(body_mask_np > 0.5))}px, awaiting SEGS)")
