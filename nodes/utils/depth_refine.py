@@ -42,8 +42,22 @@ def compute_depth_edges(depth_map, threshold=0.05):
 
 # ── Phase 2: Edge Carving (per mask) ──
 
-def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8, min_area=100):
-    """Cut mask along depth edges, regroup components by depth similarity.
+def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8, min_area=100,
+                              face_bbox=None):
+    """Cut mask along depth edges, regroup components by seed connectivity + depth.
+
+    After cutting, each connected component is kept if it meets EITHER criterion:
+    1. Seed-connected: the component overlaps the face/head region (derived from
+       face_bbox). This ensures that the person's own body fragments — including
+       parts at a different depth (arm reaching forward, body behind another
+       person) — survive as long as they're connected to the seed.
+    2. Depth-matched: the component's median depth falls within the person's
+       depth band AND its area exceeds min_area. This catches disconnected
+       fragments (e.g. a hand floating away from the body) that still belong
+       to this person by depth.
+
+    Components that are BOTH disconnected from the seed AND at a foreign depth
+    are dropped — these are cross-person leakage from SAM/BiSeNet.
 
     Args:
         mask: [H, W] float32 [0,1]
@@ -51,6 +65,9 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
         depth_map: [H, W] float32
         carve_strength: 0-1
         min_area: minimum component area in pixels
+        face_bbox: optional (x1, y1, x2, y2) — face bounding box used to build
+                   the seed region for connectivity testing. When provided,
+                   components touching the seed are always kept regardless of depth.
 
     Returns:
         [H, W] float32 carved mask
@@ -77,7 +94,24 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
     depth_low -= band_margin
     depth_high += band_margin
 
-    # Regroup: keep all components whose depth matches the person
+    # Build seed region from face bbox — expanded downward to cover neck/upper torso.
+    # Any carved component that touches this seed is "connected to the person" and
+    # survives regardless of its depth (handles arms reaching forward, body behind
+    # another person, etc.).
+    H, W = mask.shape
+    seed_mask = np.zeros((H, W), dtype=bool)
+    if face_bbox is not None:
+        fx1, fy1, fx2, fy2 = [int(v) for v in face_bbox]
+        face_h = fy2 - fy1
+        # Expand seed region: full face bbox width, extended 2x face height downward
+        # to cover neck and upper chest (connection point to the body).
+        sx1 = max(0, fx1)
+        sy1 = max(0, fy1)
+        sx2 = min(W, fx2)
+        sy2 = min(H, fy2 + face_h * 2)
+        seed_mask[sy1:sy2, sx1:sx2] = True
+
+    # Regroup: keep components that touch seed OR match depth band
     num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(carved, connectivity=8)
     result = np.zeros_like(mask)
 
@@ -86,8 +120,14 @@ def carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength=0.8,
         if area < min_area:
             continue
         comp_pixels = (labels == label_id)
+
+        # Criterion 1: touches the face/seed region → always keep
+        touches_seed = face_bbox is not None and np.any(comp_pixels & seed_mask)
+        # Criterion 2: depth matches the person's band → keep
         comp_depth = np.median(depth_map[comp_pixels])
-        if depth_low <= comp_depth <= depth_high:
+        depth_match = depth_low <= comp_depth <= depth_high
+
+        if touches_seed or depth_match:
             result[comp_pixels] = 1.0
 
     result = mask * (1.0 - carve_strength) + result * carve_strength
@@ -276,7 +316,7 @@ def deconflict_masks(masks_dict, depth_map, edges_binary=None, bisenet_seeds=Non
 # ── Combined refinement (per mask, called from masker.py) ──
 
 def refine_mask_with_depth(mask, depth_edges_data, depth_map,
-                           carve_strength=0.8, grow_pixels=30):
+                           carve_strength=0.8, grow_pixels=30, face_bbox=None):
     """Refine a single mask using precomputed depth edges.
 
     Args:
@@ -285,6 +325,8 @@ def refine_mask_with_depth(mask, depth_edges_data, depth_map,
         depth_map: [H, W] float32
         carve_strength: 0-1
         grow_pixels: max gap fill radius
+        face_bbox: optional (x1,y1,x2,y2) passed to carve_mask_at_depth_edges
+                   for seed-connectivity testing
 
     Returns:
         [H, W] float32
@@ -304,7 +346,8 @@ def refine_mask_with_depth(mask, depth_edges_data, depth_map,
     if np.sum(mask > 0.5) < 50:
         return mask
 
-    carved = carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength)
+    carved = carve_mask_at_depth_edges(mask, edges_binary, depth_map, carve_strength,
+                                       face_bbox=face_bbox)
 
     if grow_pixels > 0:
         carved = grow_mask_between_edges(carved, edges_binary, grow_pixels)

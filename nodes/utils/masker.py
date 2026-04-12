@@ -288,7 +288,8 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         # introduce gaps by fragmenting the mask along noisy depth gradients.
         if use_depth and mask_type in DEPTH_REFINABLE_MASKS and not has_envelope:
             mask_np = refine_mask_with_depth(mask_np, depth_edges_data, depth_np,
-                                             depth_carve_strength, depth_grow)
+                                             depth_carve_strength, depth_grow,
+                                             face_bbox=face.bbox)
         mask = mask2tensor(mask_np)
         if mask_fill_holes:
             mask = fill_mask_holes(mask)
@@ -336,7 +337,8 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         from .depth_refine import carve_mask_at_depth_edges
         if use_depth:
             body_mask_np = carve_mask_at_depth_edges(combined_seed, barrier, depth_np,
-                                                      carve_strength=depth_carve_strength)
+                                                      carve_strength=depth_carve_strength,
+                                                      face_bbox=face.bbox)
         else:
             carved = (combined_seed > 0.5).astype(np.uint8) & (~image_edges_binary).astype(np.uint8)
             num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(carved, connectivity=8)
@@ -363,7 +365,8 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         body_mask_np = clean_mask_crumbs(body_mask_np, min_area_fraction=0.005)
         if use_depth:
             body_mask_np = refine_mask_with_depth(body_mask_np, depth_edges_data, depth_np,
-                                                  depth_carve_strength, depth_grow)
+                                                  depth_carve_strength, depth_grow,
+                                                  face_bbox=face.bbox)
         print(f"    body: SAM ({int(np.sum(body_mask_np > 0.5))}px)")
     mask = mask2tensor(body_mask_np)
     # Body masks: do NOT fill holes — preserve natural gaps (between legs, under arms)
