@@ -338,8 +338,21 @@ class PersonDataRefiner:
                     ref_batch.append(all_masks_per_type[mt][b][ri])
                 pd_masks[mt].append(torch.cat(ref_batch, dim=0))
 
-        # Note: cross-reference mask deconfliction removed — PersonDetailer handles
-        # occlusion via back-to-front render order (same reasoning as PersonSelectorMulti).
+        # Cross-reference deconfliction: resolve overlapping masks per batch image
+        if use_depth and num_refs >= 2:
+            from .utils.depth_refine import deconflict_masks
+            for mt in ("body", "head", "face"):
+                for b in range(batch_size):
+                    overlap_dict = {}
+                    for ri in range(num_refs):
+                        m = pd_masks[mt][ri][b].cpu().numpy()
+                        if m.sum() > 0:
+                            overlap_dict[ri] = m
+                    if len(overlap_dict) >= 2:
+                        eb = depth_edges_list[b][1] if b < len(depth_edges_list) else None
+                        resolved = deconflict_masks(overlap_dict, depth_nps[b], edges_binary=eb)
+                        for ri, m in resolved.items():
+                            pd_masks[mt][ri][b] = torch.from_numpy(m)
 
         new_person_data = {
             "batch_size": batch_size,
