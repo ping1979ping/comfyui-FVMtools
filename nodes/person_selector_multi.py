@@ -296,7 +296,7 @@ class PersonSelectorMulti:
 
     def _render_mask_layers(self, current_image, assignments, cur_faces,
                              body_masks_list, h, w, num_refs, ref_depths=None,
-                             outfit_palettes=None):
+                             outfit_palettes=None, per_face_masks=None):
         """Render mask overlay: original image with semi-transparent colored body silhouettes.
 
         Shows all reference masks layered on top of the original image with clear
@@ -306,6 +306,10 @@ class PersonSelectorMulti:
         In no-refs mode (num_refs=0), each detected face is treated as its own
         pseudo-reference labeled F1/F2/...  — body masks come from body_masks_list
         indexed by face idx, and labels use the same _PREVIEW_COLORS palette.
+
+        When per_face_masks is provided and num_refs>0, unmatched faces (detected
+        but not assigned to any reference) are drawn with a dimmed gray overlay
+        and labeled '?' so users can see which faces are going to the generic slot.
         """
         preview = tensor2np(current_image).copy()
 
@@ -396,6 +400,48 @@ class PersonSelectorMulti:
                 paste_w = min(pw, w - px)
                 if paste_h > 0 and paste_w > 0:
                     preview[py:py+paste_h, px:px+paste_w] = pal_small[:paste_h, :paste_w]
+
+        # Unmatched faces: detected but not assigned to any reference.
+        # Draw them with a dimmed gray overlay and "?" label so users know
+        # which faces go to PersonDetailer's generic slot.
+        if not face_mode and per_face_masks is not None:
+            matched_fis = {fi for fi, sim in assignments.values()}
+            unmatched_color = (160, 160, 160)  # neutral gray
+            for fi, face in enumerate(cur_faces):
+                if fi in matched_fis:
+                    continue
+                # Body mask from per_face_masks
+                if fi < len(per_face_masks) and "body" in per_face_masks[fi]:
+                    umask_np = (per_face_masks[fi]["body"][0].cpu().numpy() * 255).astype(np.uint8)
+                    if umask_np.max() == 0:
+                        continue
+
+                    umask_bool = umask_np > 128
+                    # 25% opacity — dimmer than matched refs (40%) to visually distinguish
+                    preview_float = preview.astype(np.float32)
+                    fill = np.array(unmatched_color, dtype=np.float32)
+                    preview_float[umask_bool] = preview_float[umask_bool] * 0.75 + fill * 0.25
+                    preview = preview_float.astype(np.uint8)
+
+                    # Dashed-style contour (thin, gray)
+                    contour_thick = max(1, int(1.5 * max(h, w) / 1000))
+                    contours, _ = cv2.findContours(umask_np, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+                    cv2.drawContours(preview, contours, -1, unmatched_color, contour_thick)
+
+                    # "?" label above face
+                    x1, y1, x2, y2 = [int(v) for v in face.bbox]
+                    cx = (x1 + x2) // 2
+                    label = "?"
+                    font_scale = max(base_font, min(base_font * 2.5, (x2 - x1) / 40.0))
+                    thickness = max(2, int(font_scale * 2))
+                    (tw, th_text), _ = cv2.getTextSize(label, font, font_scale, thickness)
+                    tx = cx - tw // 2
+                    ty = max(th_text + 4, y1 - int(8 * img_scale))
+                    pad = int(6 * img_scale)
+                    cv2.rectangle(preview, (tx - pad, ty - th_text - pad),
+                                  (tx + tw + pad, ty + pad), (40, 40, 40), cv2.FILLED)
+                    cv2.putText(preview, label, (tx, ty), font, font_scale,
+                                unmatched_color, thickness, cv2.LINE_AA)
 
         # Render order text at bottom-left — 4x larger than before
         if ref_depths and assignments:
@@ -1008,7 +1054,8 @@ class PersonSelectorMulti:
                 current_image[b:b+1], batch_results[b]["assignments"],
                 batch_results[b]["cur_faces"], body_masks_for_preview, h, w, num_refs,
                 ref_depths=ref_depths_per_batch[b],
-                outfit_palettes=outfit_palettes)
+                outfit_palettes=outfit_palettes,
+                per_face_masks=batch_results[b]["per_face_masks"])
             preview_parts.append(p)
         preview = torch.cat(preview_parts, dim=0)
 
