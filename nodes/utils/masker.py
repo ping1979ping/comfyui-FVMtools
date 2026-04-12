@@ -67,6 +67,93 @@ def _clip_labels_to_body(label_map, sam_body_mask):
     return clipped
 
 
+def split_person_mask_by_watershed(person_mask_np, image_rgb, face_bboxes):
+    """Split a foreground mask using watershed on a bilateral-filtered image.
+
+    Uses face centers as watershed markers and the bilateral-filtered image's
+    natural gradients to find person-to-person boundaries. This avoids the
+    SAM-seed approach which breaks under heavy occlusion (SAM can't segment
+    the back person through the front person, producing holey seeds that
+    propagate into the distance-transform split as stripe artifacts).
+
+    The bilateral filter preserves strong edges at person boundaries while
+    smoothing clothing texture — watershed follows these preserved edges.
+
+    Args:
+        person_mask_np: [H,W] float32 foreground mask
+        image_rgb: [H,W,3] uint8 RGB image
+        face_bboxes: list of (x1,y1,x2,y2) bounding boxes, one per face
+
+    Returns:
+        list of [H,W] float32 per-face masks. Pixels outside person_mask
+        are zero. Each foreground pixel assigned to exactly one face.
+    """
+    if not face_bboxes:
+        return []
+
+    H, W = person_mask_np.shape
+    fg = person_mask_np > 0.5
+    if not np.any(fg):
+        return [np.zeros_like(person_mask_np) for _ in face_bboxes]
+
+    N = len(face_bboxes)
+
+    # Bilateral filter — edge-preserving smoothing. Removes clothing texture
+    # while keeping the luminance/color jump at person silhouette boundaries.
+    filtered = cv2.bilateralFilter(image_rgb, d=9, sigmaColor=75, sigmaSpace=75)
+
+    # Build watershed markers:
+    #   0 = unknown (foreground pixels to be assigned)
+    #   1 = background (outside person_mask)
+    #   2..N+1 = face markers (one per detected face)
+    markers = np.zeros((H, W), dtype=np.int32)
+    markers[~fg] = 1  # background
+
+    # Place a small marker blob at each face center, extended downward into
+    # the neck/upper chest to give watershed a head start into the body.
+    for i, bbox in enumerate(face_bboxes):
+        x1, y1, x2, y2 = [int(v) for v in bbox]
+        face_w = x2 - x1
+        face_h = y2 - y1
+        # Marker region: face bbox + 1x face_height downward
+        mx1 = max(0, x1 + face_w // 4)
+        my1 = max(0, y1 + face_h // 4)
+        mx2 = min(W, x2 - face_w // 4)
+        my2 = min(H, y2 + face_h)
+        marker_region = fg[my1:my2, mx1:mx2]
+        markers[my1:my2, mx1:mx2] = np.where(marker_region, i + 2, markers[my1:my2, mx1:mx2])
+
+    # Run watershed — it expands each marker region outward, stopping at
+    # edges in the filtered image. On the bilateral image, person boundaries
+    # are strong edges while within-person regions are smooth → clean splits.
+    cv2.watershed(filtered, markers)
+
+    # Extract per-face masks from watershed labels
+    out = []
+    for i in range(N):
+        mask = np.zeros_like(person_mask_np)
+        owned = (markers == i + 2) & fg
+        if np.any(owned):
+            mask[owned] = 1.0
+        out.append(mask)
+
+    # Assign any remaining foreground pixels (watershed boundary = -1) to
+    # nearest face by spatial distance (rare edge pixels at boundaries).
+    boundary = fg & (markers <= 0)
+    if np.any(boundary):
+        by, bx = np.where(boundary)
+        centers = []
+        for bbox in face_bboxes:
+            x1, y1, x2, y2 = [int(v) for v in bbox]
+            centers.append(((x1 + x2) / 2, (y1 + y2) / 2))
+        for py, px in zip(by, bx):
+            dists = [(px - cx) ** 2 + (py - cy) ** 2 for cx, cy in centers]
+            nearest = int(np.argmin(dists))
+            out[nearest][py, px] = 1.0
+
+    return out
+
+
 def split_person_mask_by_seeds(person_mask_np, seed_masks):
     """Split a foreground mask by nearest seed mask via distance transform.
 

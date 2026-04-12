@@ -4,7 +4,7 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
-from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face, split_person_mask_by_anchors, split_person_mask_by_seeds
+from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face, split_person_mask_by_anchors, split_person_mask_by_seeds, split_person_mask_by_watershed
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
 from .utils.mask_utils import clean_mask_crumbs, fill_mask_holes_2d, expand_mask, feather_mask
 from .utils.yolo_detector import get_available_yolo_models, detect_objects, assign_detections_to_references
@@ -561,42 +561,14 @@ class PersonSelectorMulti:
         # Fallback: face-center Voronoi when SAM isn't available.
         face_envelopes = {}  # fi -> [H,W] float32
         if person_mask_np is not None and face_count > 0:
-            if sam_model is not None:
-                # Generate per-face SAM body masks once, upfront, with negative prompts
-                # at all other face centers for cross-person separation.
-                seed_masks = []
-                for fi, face in enumerate(cur_faces):
-                    others = [f for j, f in enumerate(cur_faces) if j != fi]
-                    sam_body = MaskGenerator.generate_body_mask(
-                        cur_rgb, face, sam_model, other_faces=others)
-                    sam_body = clean_mask_crumbs(sam_body, min_area_fraction=0.005)
-                    # Fill holes in the SAM seed — SAM's negative prompts carve out
-                    # the front person from the back person's mask, creating holes
-                    # that would cause the distance-transform split to assign those
-                    # pixels to the wrong person. Contour fill + morph close fixes this.
-                    sam_uint8 = (sam_body * 255).astype(np.uint8)
-                    contours, _ = cv2.findContours(sam_uint8, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-                    filled = np.zeros_like(sam_uint8)
-                    cv2.drawContours(filled, contours, -1, 255, cv2.FILLED)
-                    # Morphological close to bridge narrow gaps between SAM fragments
-                    close_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))
-                    filled = cv2.morphologyEx(filled, cv2.MORPH_CLOSE, close_kernel)
-                    sam_body = (filled / 255.0).astype(np.float32)
-                    seed_masks.append(sam_body)
-                envs = split_person_mask_by_seeds(person_mask_np, seed_masks)
-                split_method = "SAM-seed distance transform"
-            else:
-                # Fallback: face-center anchors (Voronoi)
-                anchors = []
-                for face in cur_faces:
-                    x1, y1, x2, y2 = [int(v) for v in face.bbox]
-                    cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
-                    a = {"center": (cx, cy), "bbox": (x1, y1, x2, y2), "depth": None}
-                    if depth_np is not None and y2 > y1 and x2 > x1:
-                        a["depth"] = float(np.median(depth_np[y1:y2, x1:x2]))
-                    anchors.append(a)
-                envs = split_person_mask_by_anchors(person_mask_np, anchors, depth_np=depth_np)
-                split_method = "face-center Voronoi (no SAM)"
+            # Split BiRefNet foreground using watershed on bilateral-filtered image.
+            # Face centers seed the watershed; bilateral filter preserves person-to-
+            # person edges while smoothing clothing texture. This avoids the SAM-seed
+            # approach which breaks under heavy occlusion (SAM holes propagate into
+            # the distance-transform split as stripe artifacts).
+            face_bboxes = [face.bbox for face in cur_faces]
+            envs = split_person_mask_by_watershed(person_mask_np, cur_rgb, face_bboxes)
+            split_method = "bilateral+watershed"
             for fi, env in enumerate(envs):
                 face_envelopes[fi] = env
             print(f"[PersonSelectorMulti] person_mask split into {len(envs)} envelopes "
