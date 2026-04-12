@@ -584,18 +584,39 @@ class PersonSelectorMulti:
         bisenet_seeds_per_ref = {}
 
         # Sort matched refs by depth: front (nearest) first.
+        # Uses the body region (face bbox expanded to estimated body extent) for
+        # more representative depth sampling than just the small face bbox.
         # Depth convention: higher value = closer to camera (Depth Anything V2 bright=near).
         matched_refs = [(ri, fi, sim) for ri, (fi, sim) in assignments.items()]
         if depth_np is not None and matched_refs:
-            def _face_depth(item):
+            def _body_depth(item):
                 ri, fi, sim = item
                 face = cur_faces[fi]
                 x1, y1, x2, y2 = [int(v) for v in face.bbox]
-                if y2 > y1 and x2 > x1:
-                    return -float(np.median(depth_np[y1:y2, x1:x2]))  # negative for front-first sort
+                face_w = x2 - x1
+                face_h = y2 - y1
+                # Expand face bbox to estimated body region:
+                # width: 2x face width each side, height: from face top to 6x face height below
+                bx1 = max(0, x1 - face_w)
+                by1 = max(0, y1)
+                bx2 = min(w, x2 + face_w)
+                by2 = min(h, y2 + face_h * 5)
+                body_region = depth_np[by1:by2, bx1:bx2]
+                if body_region.size > 0:
+                    # Use 75th percentile — captures the closest parts of the body
+                    # (arms reaching forward, chest) without being skewed by background
+                    return -float(np.percentile(body_region, 75))
                 return 0.0
-            matched_refs.sort(key=_face_depth)
-            order_labels = [str(ri + 1) for ri, _, _ in matched_refs]
+            matched_refs.sort(key=_body_depth)
+            order_labels = []
+            for ri, fi, _ in matched_refs:
+                face = cur_faces[fi]
+                x1, y1, x2, y2 = [int(v) for v in face.bbox]
+                face_h = y2 - y1
+                bx1, by1 = max(0, x1 - (x2-x1)), max(0, y1)
+                bx2, by2 = min(w, x2 + (x2-x1)), min(h, y2 + face_h * 5)
+                d = float(np.percentile(depth_np[by1:by2, bx1:bx2], 75))
+                order_labels.append(f"{ri+1}(d={d:.2f})")
             print(f"[PersonSelectorMulti] Front-to-back peeling order: {' → '.join(order_labels)}")
 
         # Working image: will be progressively erased as we peel off front people
