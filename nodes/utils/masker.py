@@ -392,26 +392,33 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
         image_gray = cv2.GaussianBlur(cv2.cvtColor(cur_rgb, cv2.COLOR_RGB2GRAY), (5, 5), 0)
         image_edges_binary = (cv2.Canny(image_gray, 80, 200) > 0)
 
-        if use_depth:
+        if use_depth and not has_envelope:
             # Compute fused edges: bilateral + LAB Canny + depth morph gradient.
             # Fused edges fire only where BOTH color AND depth agree — suppresses
             # within-person depth changes (arm forward) while preserving real
             # person-to-person boundaries.
+            # Skipped when BiRefNet envelope is connected — the final envelope clip
+            # handles silhouette bounds without fragmenting the mask.
             from .depth_refine import compute_fused_edges
             fused_edges, depth_only_edges, _ = compute_fused_edges(
                 cur_rgb, depth_np, depth_threshold=depth_carve_strength * 0.06)
-            # Carving uses fused edges (color+depth agreement)
             carve_barrier = fused_edges
-            # Growing uses image+depth edges (broader barrier for gap fill)
             barrier = image_edges_binary | depth_only_edges
+        elif use_depth:
+            # Envelope connected: skip depth carving, keep image edges for growing only
+            barrier = image_edges_binary
         else:
             barrier = image_edges_binary
 
         from .depth_refine import carve_mask_at_depth_edges
-        if use_depth:
+        if use_depth and not has_envelope:
             body_mask_np = carve_mask_at_depth_edges(combined_seed, carve_barrier, depth_np,
                                                       carve_strength=depth_carve_strength,
                                                       face_bbox=face.bbox)
+        elif has_envelope:
+            # Envelope connected: skip depth carving entirely — use SAM+BiSeNet seed
+            # directly. The final envelope clip handles silhouette edges.
+            body_mask_np = combined_seed.copy()
         else:
             carved = (combined_seed > 0.5).astype(np.uint8) & (~image_edges_binary).astype(np.uint8)
             num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(carved, connectivity=8)
