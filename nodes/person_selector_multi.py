@@ -637,16 +637,6 @@ class PersonSelectorMulti:
             if "_bisenet_seed" in masks:
                 bisenet_seeds_per_ref[ri] = masks["_bisenet_seed"]
 
-            # Subtract already-claimed pixels from all mask types — prevents
-            # SAM expansion into erased (mean-colored) areas of front people.
-            if claimed_mask.sum() > 0:
-                claimed_bool = claimed_mask > 0.5
-                for mt in ALL_MASK_TYPES:
-                    m = masks_per_type[mt][ri]
-                    m_np = m[0].cpu().numpy()
-                    m_np[claimed_bool] = 0.0
-                    masks_per_type[mt][ri] = mask2tensor(m_np)
-
             # Peel: erase this person's body from the working image so the next
             # (further back) person's SAM won't see them. Fill with mean color.
             body_np = masks.get("body", empty_mask(h, w))
@@ -661,6 +651,104 @@ class PersonSelectorMulti:
 
             print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f}) "
                   f"[peeled {int(body_dilated.sum())}px, {int(claimed_mask.sum())}px total claimed]")
+
+        # ── Post-peel: depth-based overlap resolution ──
+        # After peeling, SAM masks may still overlap (SAM for a back person can
+        # extend over front people despite negative prompts). Resolve: at each
+        # overlapping pixel, the CLOSER person (higher depth value = nearer) wins.
+        # This is softer than the old deconfliction (which caused stripes) because
+        # it works on the already-clean peeled masks, not raw SAM output.
+        if len(matched_refs) >= 2 and depth_np is not None:
+            # Collect body masks as numpy
+            body_arrays = {}
+            for ri, fi, sim in matched_refs:
+                body_t = masks_per_type["body"][ri]
+                body_m = body_t[0].cpu().numpy() if body_t.dim() == 3 else body_t.cpu().numpy()
+                body_arrays[ri] = body_m
+
+            # Find overlap pixels (claimed by 2+ refs)
+            overlap_count = np.zeros((h, w), dtype=np.int32)
+            for ri, bm in body_arrays.items():
+                overlap_count += (bm > 0.5).astype(np.int32)
+            has_overlap = overlap_count >= 2
+
+            total_overlap = int(has_overlap.sum())
+            if total_overlap > 0:
+                # Core depth per ref (from non-overlapping pixels for stability)
+                ref_core_depth = {}
+                for ri, bm in body_arrays.items():
+                    solo = (bm > 0.5) & ~has_overlap
+                    solo_depths = depth_np[solo]
+                    if len(solo_depths) > 20:
+                        ref_core_depth[ri] = float(np.median(solo_depths))
+                    else:
+                        all_depths = depth_np[bm > 0.5]
+                        ref_core_depth[ri] = float(np.median(all_depths)) if len(all_depths) > 0 else 0.5
+
+                depth_log = ", ".join(f"ref {ri+1}: {d:.3f}" for ri, d in sorted(ref_core_depth.items()))
+                print(f"    [Overlap] Core depths: {depth_log}")
+
+                # At each overlap pixel: the person whose core depth is closest
+                # to the actual pixel depth wins. This handles cases where person A
+                # is globally nearer but person B is locally in front at the overlap.
+                # Tie-break (distance diff < 0.02): nearer person (higher core depth) wins.
+                oys, oxs = np.where(has_overlap)
+                pixel_depths = depth_np[oys, oxs]
+                removed_per_ref = {}
+
+                for ri, bm in body_arrays.items():
+                    in_mask = bm[oys, oxs] > 0.5
+                    if not in_mask.any():
+                        continue
+                    my_dist = np.abs(pixel_depths - ref_core_depth[ri])
+                    lose = np.zeros(len(oys), dtype=bool)
+                    for other_ri, other_bm in body_arrays.items():
+                        if other_ri == ri:
+                            continue
+                        other_in = other_bm[oys, oxs] > 0.5
+                        both = in_mask & other_in
+                        if not both.any():
+                            continue
+                        other_dist = np.abs(pixel_depths - ref_core_depth[other_ri])
+                        # Other ref's core depth is closer to the pixel → I lose
+                        # Tie-break: if distances are nearly equal (< 0.02),
+                        # the globally nearer person (higher core depth) wins
+                        dist_diff = my_dist - other_dist
+                        other_closer = dist_diff > 0.02  # clear winner by pixel depth
+                        tie_and_nearer = (np.abs(dist_diff) <= 0.02) & (ref_core_depth[other_ri] > ref_core_depth[ri])
+                        lose |= both & (other_closer | tie_and_nearer)
+
+                    loser_pixels = in_mask & lose
+                    removed = int(loser_pixels.sum())
+                    if removed > 0:
+                        bm[oys[loser_pixels], oxs[loser_pixels]] = 0.0
+                        removed_per_ref[ri] = removed
+
+                # Build loser mask per ref: pixels this ref lost
+                loser_masks = {}
+                for ri in removed_per_ref:
+                    # Reconstruct from body_arrays diff (body was modified in-place)
+                    body_t = masks_per_type["body"][ri]
+                    orig = body_t[0].cpu().numpy() if body_t.dim() == 3 else body_t.cpu().numpy()
+                    loser_masks[ri] = (orig > 0.5) & (body_arrays[ri] < 0.5)
+
+                # Write back body masks and apply same loser mask to ALL mask types
+                for ri, bm in body_arrays.items():
+                    if ri in removed_per_ref:
+                        masks_per_type["body"][ri] = mask2tensor(bm)
+                        lost = loser_masks[ri]
+                        for mt in ALL_MASK_TYPES:
+                            if mt == "body":
+                                continue
+                            m = masks_per_type[mt][ri]
+                            m_np = m[0].cpu().numpy() if m.dim() == 3 else m.cpu().numpy()
+                            if m_np[lost].sum() > 0:
+                                m_np[lost] = 0.0
+                                masks_per_type[mt][ri] = mask2tensor(m_np)
+
+                log_parts = [f"ref {ri+1}: -{n}px" for ri, n in sorted(removed_per_ref.items())]
+                print(f"[PersonSelectorMulti] Depth overlap resolution: {total_overlap}px overlap, "
+                      f"resolved: {', '.join(log_parts) if log_parts else 'none'}")
 
         # all_faces_mask: OR of all detected faces (matched or not)
         if face_count > 0:
