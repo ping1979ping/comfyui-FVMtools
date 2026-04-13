@@ -12,6 +12,7 @@ try:
     from .nodes.person_data_refiner import PersonDataRefiner
     from .nodes.person_detailer_controlnet import PersonDetailerControlNet
     from .nodes.person_detailer_power import PersonDetailerPower
+    from .nodes.person_selector_sam3 import PersonSelectorSAM3
 
     # ── API routes for outfit list editing ──
     import os
@@ -303,6 +304,7 @@ try:
         "PersonDataRefiner": PersonDataRefiner,
         "PersonDetailerControlNet": PersonDetailerControlNet,
         "PersonDetailerPower": PersonDetailerPower,
+        "PersonSelectorSAM3": PersonSelectorSAM3,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -318,6 +320,7 @@ try:
         "PersonDataRefiner": "Person Data Refiner",
         "PersonDetailerControlNet": "Person Detailer ControlNet",
         "PersonDetailerPower": "Person Detailer Power",
+        "PersonSelectorSAM3": "Person Selector SAM3",
     }
 
     WEB_DIRECTORY = "./web/js"
