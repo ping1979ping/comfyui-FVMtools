@@ -488,12 +488,39 @@ class PersonSelectorSAM3:
             face_embs = [analyzer.get_embedding(f) for f in cur_faces]
             if num_refs > 0 and face_embs:
                 sim_matrix = self._build_similarity_matrix(ref_emb_sets, face_embs, aggregation)
-                if use_appearance:
-                    app_matrix = build_appearance_matrix(
-                        cur_rgb, cur_faces, ref_appearances, device,
-                        ref_outfit_hists=ref_outfit_hists, ref_palette_colors=ref_palette_colors)
-                    combined = sim_matrix * w_face + app_matrix * (1 - w_face)
-                    sim_matrix = combined
+
+                # Appearance matching: extract per-face features via BiSeNet
+                if use_appearance and ref_appearances:
+                    ref_hair_colors = [app[0] for app in ref_appearances]
+                    ref_head_hists = [app[1] for app in ref_appearances]
+                    face_hair_colors = []
+                    face_head_hists = []
+                    face_clothing_hists = []
+                    face_clothing_colors = []
+                    for fi, face in enumerate(cur_faces):
+                        label_map = MaskGenerator._run_bisenet(cur_rgb, face, device)
+                        face_hair_colors.append(extract_hair_color(cur_rgb, label_map))
+                        face_head_hists.append(extract_head_histogram(cur_rgb, face.bbox))
+                        if w_outfit > 0:
+                            from .utils.masker import MASK_TYPE_LABELS
+                            cloth_labels = MASK_TYPE_LABELS.get("neck", set()) | {14, 15, 16}
+                            cloth_mask = np.isin(label_map, list(cloth_labels)).astype(np.float32)
+                            head_mask_np = np.isin(label_map, list(MASK_TYPE_LABELS.get("head", set()))).astype(np.float32)
+                            face_clothing_hists.append(extract_clothing_histogram(cur_rgb, cloth_mask, head_mask_np))
+                            upper, lower = extract_clothing_colors(cur_rgb, cloth_mask, face.bbox)
+                            face_clothing_colors.append((upper, lower))
+                        else:
+                            face_clothing_hists.append(None)
+                            face_clothing_colors.append((None, None))
+
+                    sim_matrix = build_appearance_matrix(
+                        sim_matrix, ref_hair_colors, face_hair_colors,
+                        ref_head_hists, face_head_hists, weights,
+                        ref_outfit_hists=ref_outfit_hists,
+                        face_clothing_hists=face_clothing_hists,
+                        ref_palette_colors=ref_palette_colors,
+                        face_clothing_colors=face_clothing_colors,
+                    )
 
                 if auto_threshold:
                     assignments = self._assign_greedy(sim_matrix, self.AUTO_FLOOR, guaranteed_refs)
