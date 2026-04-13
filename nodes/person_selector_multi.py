@@ -820,6 +820,12 @@ class PersonSelectorMulti:
                                                       other_faces=others, body_mask_mode=body_mask_mode,
                                                       person_mask_envelope=face_envelopes.get(fi),
                                                       sam3_config=sam3_model)
+                # Override body with SAM3 grounding mask if available
+                if fi in _sam3_body_map:
+                    sam3_body = _sam3_body_map[fi]
+                    if fi in face_envelopes:
+                        sam3_body = sam3_body * (face_envelopes[fi] > 0.5).astype(np.float32)
+                    per_face["body"] = mask2tensor(sam3_body)
             per_face_masks.append(per_face)
         face_to_ref = [fi_to_ri.get(fi) for fi in range(face_count)]
 
