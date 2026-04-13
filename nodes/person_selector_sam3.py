@@ -311,7 +311,8 @@ class PersonSelectorSAM3:
     # ── Preview Rendering ──
 
     def _render_preview(self, current_image, assignments, cur_faces, per_face_masks,
-                        h, w, num_refs, ref_depths=None, depth_sort_order="front_last"):
+                        h, w, num_refs, ref_depths=None, depth_sort_order="front_last",
+                        depth_np=None):
         preview = tensor2np(current_image).copy()
 
         # Determine render order — includes ALL faces (matched + unmatched)
@@ -324,19 +325,15 @@ class PersonSelectorSAM3:
                     depth = ref_depths.get(ri, 0.5) if ref_depths else 0.5
                     render_items.append((ri, fi, depth))
                     matched_fis.add(fi)
-        # Add unmatched faces with estimated depth
+        # Add unmatched faces with depth from body mask
         for fi in range(len(cur_faces)):
             if fi not in matched_fis:
-                if fi < len(per_face_masks) and ref_depths is not None:
+                depth = 0.5
+                if depth_np is not None and fi < len(per_face_masks):
                     body_np = per_face_masks[fi]["body"][0].cpu().numpy()
                     body_pixels = body_np > 0.5
                     if body_pixels.any():
-                        # Estimate depth from body region (needs depth_map access)
-                        depth = 0.5  # default if no depth info in preview
-                    else:
-                        depth = 0.5
-                else:
-                    depth = 0.5
+                        depth = float(np.percentile(depth_np[body_pixels], 85))
                 render_items.append((-1, fi, depth))
         # Sort by depth
         if depth_sort_order == "front_last":
@@ -621,7 +618,8 @@ class PersonSelectorSAM3:
             else:
                 body_list = [pf["body"] for pf in per_face_masks]
             preview = self._render_preview(single, assignments, cur_faces, per_face_masks,
-                                            h, w, num_refs, ref_depths=depths, depth_sort_order=depth_sort_order)
+                                            h, w, num_refs, ref_depths=depths, depth_sort_order=depth_sort_order,
+                                            depth_np=depth_np)
             preview_parts.append(preview)
 
             # Sim/match strings
