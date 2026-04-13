@@ -329,24 +329,38 @@ class PersonSelectorSAM3:
         else:
             render_items = [(fi, fi, 0.5) for fi in range(len(cur_faces))]
 
-        # Paint body masks
+        # Paint body masks in render order (back first, front last)
         fi_to_ri = {fi: ri for ri, (fi, sim) in assignments.items()} if assignments else {}
-        for ri_or_fi in range(max(num_refs, len(cur_faces))):
-            color = _PREVIEW_COLORS[ri_or_fi % len(_PREVIEW_COLORS)]
-            if ri_or_fi < len(per_face_masks):
-                body_mask = per_face_masks[ri_or_fi]["body"]
-                mask_np = (body_mask[0].cpu().numpy() * 255).astype(np.uint8)
-                if mask_np.max() == 0:
-                    continue
-                mask_bool = mask_np > 128
-                fill_color = np.array(color, dtype=np.float32)
-                pf = preview.astype(np.float32)
-                pf[mask_bool] = pf[mask_bool] * 0.6 + fill_color * 0.4
-                preview = pf.astype(np.uint8)
-                contours, _ = cv2.findContours(mask_np, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-                thick = max(2, int(2 * max(h, w) / 1000))
-                cv2.drawContours(preview, contours, -1, (255, 255, 255), thick + 1)
-                cv2.drawContours(preview, contours, -1, color, thick)
+
+        def _paint_mask(preview, fi, color_idx):
+            if fi >= len(per_face_masks):
+                return preview
+            color = _PREVIEW_COLORS[color_idx % len(_PREVIEW_COLORS)]
+            body_mask = per_face_masks[fi]["body"]
+            mask_np = (body_mask[0].cpu().numpy() * 255).astype(np.uint8)
+            if mask_np.max() == 0:
+                return preview
+            mask_bool = mask_np > 128
+            fill_color = np.array(color, dtype=np.float32)
+            pf = preview.astype(np.float32)
+            pf[mask_bool] = pf[mask_bool] * 0.6 + fill_color * 0.4
+            preview = pf.astype(np.uint8)
+            contours, _ = cv2.findContours(mask_np, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            thick = max(2, int(2 * max(h, w) / 1000))
+            cv2.drawContours(preview, contours, -1, (255, 255, 255), thick + 1)
+            cv2.drawContours(preview, contours, -1, color, thick)
+            return preview
+
+        # Paint in render order (back→front)
+        for ri, fi, depth in render_items:
+            color_idx = ri if num_refs > 0 else fi
+            preview = _paint_mask(preview, fi, color_idx)
+
+        # Paint unmatched faces (gray)
+        matched_fis = set(fi for fi, sim in assignments.values()) if assignments else set()
+        for fi in range(len(cur_faces)):
+            if fi not in matched_fis and fi not in [item[1] for item in render_items]:
+                preview = _paint_mask(preview, fi, 9)  # gray-ish
 
         # Labels
         font = cv2.FONT_HERSHEY_SIMPLEX
@@ -486,8 +500,12 @@ class PersonSelectorSAM3:
 
             # Face embeddings + matching
             face_embs = [analyzer.get_embedding(f) for f in cur_faces]
+            print(f"[PersonSelectorSAM3] {num_refs} refs, {len(face_embs)} face embeddings")
             if num_refs > 0 and face_embs:
                 sim_matrix = self._build_similarity_matrix(ref_emb_sets, face_embs, aggregation)
+                for ri in range(num_refs):
+                    best_fi = int(np.argmax(sim_matrix[ri]))
+                    print(f"    ref {ri+1}: best face #{best_fi} sim={sim_matrix[ri, best_fi]:.4f}")
 
                 # Appearance matching: extract per-face features via BiSeNet
                 if use_appearance and ref_appearances:
