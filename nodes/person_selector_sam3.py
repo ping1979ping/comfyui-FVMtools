@@ -659,6 +659,8 @@ class PersonSelectorSAM3:
                 for fi in range(face_count):
                     batch_report_lines.append(f"P{fi+1}: detected (no refs connected)")
 
+            batch_report_lines.append("---")
+
             # Render order
             all_render = []
             for fi in range(face_count):
@@ -677,6 +679,7 @@ class PersonSelectorSAM3:
             if all_render:
                 order_str = " > ".join(f"{lbl}(d={d:.2f})" for lbl, d in all_render)
                 batch_report_lines.append(f"Render: {order_str} (back>front)")
+                batch_report_lines.append("---")
 
             per_image_reports.append("\n".join(batch_report_lines))
 
@@ -728,17 +731,16 @@ class PersonSelectorSAM3:
         matched_count = sum(len(person_data_matches[b]) and any(person_data_matches[b]) for b in range(batch_size))
         total_faces = sum(len(all_per_face_masks[b]) for b in range(batch_size))
 
+        aux_info = f" | Aux: {aux_preset}" + (f" ('{aux_custom_prompt}')" if aux_preset == "custom" else "") if aux_preset != "none" else ""
         report_lines = [
-            f"Batch size: {batch_size}",
-            f"Faces (total): {total_faces}",
-            f"Reference persons: {num_refs}",
-            f"Threshold: {'Auto' if auto_threshold else threshold} | Aggregation: {aggregation}",
-            f"Match weights: face {w_face:.0%} / hair {w_hair:.0%} / head {w_head:.0%} / outfit {w_outfit:.0%}",
-            f"Matched (total): {matched_count}",
-            f"Segmenter: SAM3 text grounding",
-            f"Aux preset: {aux_preset}" + (f" ('{aux_custom_prompt}')" if aux_preset == "custom" else ""),
-            f"Runtime: {_elapsed}s",
-            "",
+            f"## PersonSelectorSAM3",
+            f"**{total_faces}** faces | **{num_refs}** refs | **{matched_count}** matched | {_elapsed}s",
+            f"",
+            f"Threshold: {'Auto' if auto_threshold else threshold} | Aggregation: {aggregation}{aux_info}",
+            f"Weights: face {w_face:.0%} / hair {w_hair:.0%} / head {w_head:.0%} / outfit {w_outfit:.0%}",
+            f"",
+            f"---",
+            f"",
         ] + per_image_reports
         report = "\n".join(report_lines)
         print(f"[PersonSelectorSAM3] Done in {_elapsed}s")
