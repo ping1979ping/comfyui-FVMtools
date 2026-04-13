@@ -501,6 +501,13 @@ def run_sam3_grounding(sam3_config, image_rgb, text_prompt, threshold=0.2):
         if masks is None or len(masks) == 0:
             return []
 
+        # Ensure float32 (SAM3 may output bfloat16 which numpy/OpenCV can't handle)
+        masks = masks.float()
+        if scores is not None:
+            scores = scores.float()
+        if boxes is not None:
+            boxes = boxes.float()
+
         # Sort by score descending
         if scores is not None and len(scores) > 0:
             sorted_idx = torch.argsort(scores, descending=True)
@@ -510,7 +517,10 @@ def run_sam3_grounding(sam3_config, image_rgb, text_prompt, threshold=0.2):
 
         results = []
         for i in range(len(masks)):
-            m = masks[i].cpu().numpy().astype(np.float32)
+            m = masks[i].cpu().numpy().squeeze().astype(np.float32)
+            if m.ndim != 2:
+                print(f"    [SAM3] Unexpected mask shape: {m.shape}, skipping")
+                continue
             if m.shape != (h, w):
                 m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
             score = float(scores[i]) if scores is not None else 1.0
