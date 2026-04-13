@@ -290,11 +290,17 @@ class PersonSelectorSAM3:
 
             # Aux mask
             if aux_preset == "headless_body":
-                # Computed: body minus head minus hair
+                # Computed: body minus head minus hair (dilated to catch fringe)
                 body_np = masks["body"][0].cpu().numpy()
                 head_np = masks["head"][0].cpu().numpy()
                 hair_np = masks["hair"][0].cpu().numpy()
-                headless = np.clip(body_np - np.maximum(head_np, hair_np), 0, 1).astype(np.float32)
+                # Union head+hair, dilate to cover edges SAM3 missed (long hair etc.)
+                head_hair = np.maximum(head_np, hair_np)
+                dilate_k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))
+                head_hair = cv2.dilate((head_hair * 255).astype(np.uint8), dilate_k).astype(np.float32) / 255.0
+                headless = np.clip(body_np - head_hair, 0, 1).astype(np.float32)
+                # Clean small fragments
+                headless = (headless > 0.5).astype(np.float32)
                 masks["aux"] = mask2tensor(headless)
             elif fi in aux_assignment:
                 masks["aux"] = mask2tensor(aux_results[aux_assignment[fi]][0])
