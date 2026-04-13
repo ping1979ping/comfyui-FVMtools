@@ -344,7 +344,7 @@ class PersonSelectorSAM3:
         elif depth_sort_order == "front_first":
             render_items.sort(key=lambda x: -x[2])
 
-        # Paint body masks in render order (back first, front last)
+        # Build face→ref mapping
         fi_to_ri = {fi: ri for ri, (fi, sim) in assignments.items()} if assignments else {}
 
         def _paint_mask(preview, fi, color_idx):
@@ -368,58 +368,50 @@ class PersonSelectorSAM3:
 
         # Paint in render order (back→front)
         for ri, fi, depth in render_items:
-            color_idx = ri if num_refs > 0 else fi
+            color_idx = fi_to_ri.get(fi, fi) if ri < 0 else ri
             preview = _paint_mask(preview, fi, color_idx)
 
-        # Paint unmatched faces (gray)
-        matched_fis = set(fi for fi, sim in assignments.values()) if assignments else set()
-        for fi in range(len(cur_faces)):
-            if fi not in matched_fis and fi not in [item[1] for item in render_items]:
-                preview = _paint_mask(preview, fi, 9)  # gray-ish
-
-        # Labels
+        # Labels: every person gets P1..Pn, matched ones show ref number instead
         font = cv2.FONT_HERSHEY_SIMPLEX
         scale = max(h, w) / 1000.0 * 1.2
-        for ri, (fi, sim) in assignments.items():
-            face = cur_faces[fi]
-            x1, y1, x2, y2 = [int(v) for v in face.bbox]
-            cx = (x1 + x2) // 2
-            color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
-            label = f"{ri+1}"
-            sim_label = f"{sim:.0%}"
-            (tw, th), _ = cv2.getTextSize(label, font, scale, 2)
-            tx = cx - tw // 2
-            ty = y1 - 5
-            cv2.rectangle(preview, (tx - 3, ty - th - 3), (tx + tw + 3, ty + 3), (0, 0, 0), cv2.FILLED)
-            cv2.putText(preview, label, (tx, ty), font, scale, color, 2, cv2.LINE_AA)
-            (sw, sh), _ = cv2.getTextSize(sim_label, font, scale * 0.6, 1)
-            sx = cx - sw // 2
-            sy = ty + sh + 8
-            cv2.rectangle(preview, (sx - 2, sy - sh - 2), (sx + sw + 2, sy + 2), (0, 0, 0), cv2.FILLED)
-            cv2.putText(preview, sim_label, (sx, sy), font, scale * 0.6, color, 1, cv2.LINE_AA)
-
-        # Unmatched faces
-        matched_fis = set(fi for fi, sim in assignments.values())
         for fi, face in enumerate(cur_faces):
-            if fi in matched_fis:
-                continue
             x1, y1, x2, y2 = [int(v) for v in face.bbox]
             cx = (x1 + x2) // 2
-            label = "?"
-            (tw, th), _ = cv2.getTextSize(label, font, scale, 2)
+
+            if fi in fi_to_ri:
+                ri = fi_to_ri[fi]
+                sim = assignments[ri][1]
+                color = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)]
+                label = f"{ri+1}"
+                sim_label = f"{sim:.0%}"
+            else:
+                color = (160, 160, 160)
+                label = f"P{fi+1}"
+                sim_label = None
+
+            # Main label
+            (tw, th_text), _ = cv2.getTextSize(label, font, scale, 2)
             tx = cx - tw // 2
             ty = y1 - 5
-            cv2.rectangle(preview, (tx - 3, ty - th - 3), (tx + tw + 3, ty + 3), (0, 0, 0), cv2.FILLED)
-            cv2.putText(preview, label, (tx, ty), font, scale, (160, 160, 160), 2, cv2.LINE_AA)
+            cv2.rectangle(preview, (tx - 3, ty - th_text - 3), (tx + tw + 3, ty + 3), (0, 0, 0), cv2.FILLED)
+            cv2.putText(preview, label, (tx, ty), font, scale, color, 2, cv2.LINE_AA)
 
-        # Render order text — includes all faces (refs + unmatched)
+            # Sim label (only for matched)
+            if sim_label:
+                (sw, sh), _ = cv2.getTextSize(sim_label, font, scale * 0.6, 1)
+                sx = cx - sw // 2
+                sy = ty + sh + 8
+                cv2.rectangle(preview, (sx - 2, sy - sh - 2), (sx + sw + 2, sy + 2), (0, 0, 0), cv2.FILLED)
+                cv2.putText(preview, sim_label, (sx, sy), font, scale * 0.6, color, 1, cv2.LINE_AA)
+
+        # Render order text — all faces with labels
         if len(render_items) > 1:
             labels = []
             for ri, fi, depth in render_items:
-                if ri >= 0:
-                    labels.append(str(ri + 1))
+                if fi in fi_to_ri:
+                    labels.append(str(fi_to_ri[fi] + 1))
                 else:
-                    labels.append(f"?F{fi}")
+                    labels.append(f"P{fi+1}")
             order_text = f"Render: {' > '.join(labels)} (back>front)"
             (ow, oh), _ = cv2.getTextSize(order_text, font, scale * 0.5, 1)
             ox = (w - ow) // 2
@@ -641,32 +633,51 @@ class PersonSelectorSAM3:
                 sim_values.append("")
                 match_values.append("0")
 
-            # Per-image report data
-            batch_report_lines = [f"  [Image {b+1}/{batch_size}] {face_count} faces, {len(assignments)} matched"]
-            for ri in range(num_refs):
-                if ri in assignments:
-                    fi, sim = assignments[ri]
-                    batch_report_lines.append(f"    ref {ri+1}: MATCH face #{fi} (sim {sim:.0%})")
-                else:
-                    batch_report_lines.append(f"    ref {ri+1}: no match")
-            # Unmatched faces
+            # Per-image report: markdown table with P1..Pn rows × ref columns
             matched_fis_report = set(fi for fi, sim in assignments.values())
-            for fi in range(face_count):
-                if fi not in matched_fis_report:
-                    batch_report_lines.append(f"    face #{fi}: unmatched")
-            # Render order
-            if depths:
-                sorted_depths = sorted(depths.items(), key=lambda x: x[1])
-                if depth_sort_order == "front_last":
-                    order_str = " > ".join(f"ref {ri+1}(d={d:.2f})" for ri, d in sorted_depths)
-                else:
-                    order_str = " > ".join(f"ref {ri+1}(d={d:.2f})" for ri, d in reversed(sorted_depths))
-                # Add unmatched faces to render order
+            fi_to_ri_report = {fi: ri for ri, (fi, sim) in assignments.items()}
+
+            batch_report_lines = [f"  [Image {b+1}/{batch_size}] {face_count} faces, {len(assignments)} matched"]
+
+            if num_refs > 0 and face_count > 0:
+                # Table header
+                ref_headers = " | ".join(f"Ref{ri+1}" for ri in range(num_refs))
+                batch_report_lines.append(f"    Person | {ref_headers} | Match")
+                batch_report_lines.append(f"    {'-------|' * 1} {'-------|' * num_refs} -------")
+
                 for fi in range(face_count):
-                    if fi not in matched_fis_report:
-                        fd = float(np.percentile(depth_np[per_face_masks[fi]["body"][0].cpu().numpy() > 0.5], 85)) if use_depth and per_face_masks[fi]["body"][0].cpu().numpy().sum() > 0 else 0.5
-                        order_str += f" > ?F{fi}(d={fd:.2f})"
-                batch_report_lines.append(f"    render: {order_str} (back>front)")
+                    label = f"R{fi_to_ri_report[fi]+1}" if fi in fi_to_ri_report else f"P{fi+1}"
+                    sims = []
+                    for ri in range(num_refs):
+                        s = sim_matrix[ri, fi] if sim_matrix.shape[1] > fi else 0
+                        marker = " ←" if fi_to_ri_report.get(fi) == ri else ""
+                        sims.append(f"{s:.0%}{marker}")
+                    sim_str = " | ".join(sims)
+                    match_str = f"→ Ref{fi_to_ri_report[fi]+1}" if fi in fi_to_ri_report else "—"
+                    batch_report_lines.append(f"    {label:6s} | {sim_str} | {match_str}")
+            elif face_count > 0:
+                for fi in range(face_count):
+                    batch_report_lines.append(f"    P{fi+1}: detected (no refs connected)")
+
+            # Render order
+            all_render = []
+            for fi in range(face_count):
+                if use_depth and fi < len(per_face_masks):
+                    body_np = per_face_masks[fi]["body"][0].cpu().numpy()
+                    body_px = body_np > 0.5
+                    fd = float(np.percentile(depth_np[body_px], 85)) if body_px.any() else 0.5
+                else:
+                    fd = 0.5
+                lbl = f"R{fi_to_ri_report[fi]+1}" if fi in fi_to_ri_report else f"P{fi+1}"
+                all_render.append((lbl, fd))
+            if depth_sort_order == "front_last":
+                all_render.sort(key=lambda x: x[1])
+            elif depth_sort_order == "front_first":
+                all_render.sort(key=lambda x: -x[1])
+            if all_render:
+                order_str = " > ".join(f"{lbl}(d={d:.2f})" for lbl, d in all_render)
+                batch_report_lines.append(f"    Render: {order_str} (back>front)")
+
             per_image_reports.append("\n".join(batch_report_lines))
 
         # ── Build outputs ──
