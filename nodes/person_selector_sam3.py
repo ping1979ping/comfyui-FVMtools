@@ -637,27 +637,27 @@ class PersonSelectorSAM3:
             matched_fis_report = set(fi for fi, sim in assignments.values())
             fi_to_ri_report = {fi: ri for ri, (fi, sim) in assignments.items()}
 
-            batch_report_lines = [f"  [Image {b+1}/{batch_size}] {face_count} faces, {len(assignments)} matched"]
+            batch_report_lines = [f"[Image {b+1}/{batch_size}] {face_count} faces, {len(assignments)} matched"]
 
             if num_refs > 0 and face_count > 0:
-                # Table header
+                # Markdown table header
                 ref_headers = " | ".join(f"Ref{ri+1}" for ri in range(num_refs))
-                batch_report_lines.append(f"    Person | {ref_headers} | Match")
-                batch_report_lines.append(f"    {'-------|' * 1} {'-------|' * num_refs} -------")
+                batch_report_lines.append(f"Person | {ref_headers} | Match")
+                batch_report_lines.append(f"--- | {'--- | ' * num_refs}---")
 
                 for fi in range(face_count):
                     label = f"R{fi_to_ri_report[fi]+1}" if fi in fi_to_ri_report else f"P{fi+1}"
                     sims = []
                     for ri in range(num_refs):
                         s = sim_matrix[ri, fi] if sim_matrix.shape[1] > fi else 0
-                        marker = " ←" if fi_to_ri_report.get(fi) == ri else ""
+                        marker = " **←**" if fi_to_ri_report.get(fi) == ri else ""
                         sims.append(f"{s:.0%}{marker}")
                     sim_str = " | ".join(sims)
-                    match_str = f"→ Ref{fi_to_ri_report[fi]+1}" if fi in fi_to_ri_report else "—"
-                    batch_report_lines.append(f"    {label:6s} | {sim_str} | {match_str}")
+                    match_str = f"**→ Ref{fi_to_ri_report[fi]+1}**" if fi in fi_to_ri_report else "—"
+                    batch_report_lines.append(f"{label} | {sim_str} | {match_str}")
             elif face_count > 0:
                 for fi in range(face_count):
-                    batch_report_lines.append(f"    P{fi+1}: detected (no refs connected)")
+                    batch_report_lines.append(f"P{fi+1}: detected (no refs connected)")
 
             # Render order
             all_render = []
@@ -676,7 +676,7 @@ class PersonSelectorSAM3:
                 all_render.sort(key=lambda x: -x[1])
             if all_render:
                 order_str = " > ".join(f"{lbl}(d={d:.2f})" for lbl, d in all_render)
-                batch_report_lines.append(f"    Render: {order_str} (back>front)")
+                batch_report_lines.append(f"Render: {order_str} (back>front)")
 
             per_image_reports.append("\n".join(batch_report_lines))
 
