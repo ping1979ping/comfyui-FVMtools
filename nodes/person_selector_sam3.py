@@ -290,10 +290,11 @@ class PersonSelectorSAM3:
 
             # Aux mask
             if aux_preset == "headless_body":
-                # Computed: body minus head
+                # Computed: body minus head minus hair
                 body_np = masks["body"][0].cpu().numpy()
                 head_np = masks["head"][0].cpu().numpy()
-                headless = np.clip(body_np - head_np, 0, 1).astype(np.float32)
+                hair_np = masks["hair"][0].cpu().numpy()
+                headless = np.clip(body_np - np.maximum(head_np, hair_np), 0, 1).astype(np.float32)
                 masks["aux"] = mask2tensor(headless)
             elif fi in aux_assignment:
                 masks["aux"] = mask2tensor(aux_results[aux_assignment[fi]][0])
