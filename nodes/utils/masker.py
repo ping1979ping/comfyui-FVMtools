@@ -451,6 +451,130 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
     return masks
 
 
+# ── SAM3 Grounding helpers ──
+
+def run_sam3_grounding(sam3_config, image_rgb, text_prompt, threshold=0.2):
+    """Run SAM3 text-based grounding segmentation.
+
+    Args:
+        sam3_config: dict from LoadSAM3Model (checkpoint_path, bpe_path, etc.)
+        image_rgb: [H, W, 3] uint8 RGB numpy array
+        text_prompt: natural language noun phrase ("person", "face", "hair", etc.)
+        threshold: confidence threshold (0.2 default, lower = more detections)
+
+    Returns:
+        list of (mask_np [H,W] float32, score float, bbox [x1,y1,x2,y2]) tuples,
+        sorted by score descending. Empty list if no detections.
+    """
+    from PIL import Image
+    import importlib
+    import gc
+
+    h, w = image_rgb.shape[:2]
+
+    try:
+        sam3_cache = importlib.import_module(
+            "custom_nodes.comfyui-sam3.nodes._model_cache"
+        )
+        import comfy.model_management
+
+        sam3_model = sam3_cache.get_or_build_model(sam3_config)
+        comfy.model_management.load_models_gpu([sam3_model])
+
+        processor = sam3_model.processor
+        if hasattr(processor, 'sync_device_with_model'):
+            processor.sync_device_with_model()
+
+        processor.set_confidence_threshold(threshold)
+        pil_img = Image.fromarray(image_rgb)
+        state = processor.set_image(pil_img)
+        state = processor.set_text_prompt(text_prompt.strip(), state)
+
+        masks = state.get("masks", None)
+        boxes = state.get("boxes", None)
+        scores = state.get("scores", None)
+
+        # Clean up state
+        del state
+        gc.collect()
+
+        if masks is None or len(masks) == 0:
+            return []
+
+        # Sort by score descending
+        if scores is not None and len(scores) > 0:
+            sorted_idx = torch.argsort(scores, descending=True)
+            masks = masks[sorted_idx]
+            boxes = boxes[sorted_idx] if boxes is not None else None
+            scores = scores[sorted_idx]
+
+        results = []
+        for i in range(len(masks)):
+            m = masks[i].cpu().numpy().astype(np.float32)
+            if m.shape != (h, w):
+                m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
+            score = float(scores[i]) if scores is not None else 1.0
+            bbox = boxes[i].cpu().numpy().tolist() if boxes is not None else [0, 0, w, h]
+            results.append((m, score, bbox))
+
+        print(f"    [SAM3] '{text_prompt}': {len(results)} detections "
+              f"[{', '.join(f'{s:.2f}' for _, s, _ in results)}]")
+        return results
+
+    except Exception as e:
+        print(f"[FVMTools] SAM3 grounding failed for '{text_prompt}': {e}")
+        import traceback
+        traceback.print_exc()
+        return []
+
+
+def assign_masks_to_faces(mask_results, faces):
+    """Assign SAM3 grounding masks to InsightFace detected faces.
+
+    For each face, find the mask whose area overlaps most with the face bbox.
+    Uses face center as primary anchor, then overlap area as tiebreaker.
+
+    Args:
+        mask_results: list of (mask_np, score, bbox) from run_sam3_grounding
+        faces: list of InsightFace face objects with .bbox
+
+    Returns:
+        dict {face_idx: mask_idx} — may not cover all faces if masks < faces
+    """
+    if not mask_results or not faces:
+        return {}
+
+    face_to_mask = {}
+    used_masks = set()
+
+    for fi, face in enumerate(faces):
+        fx1, fy1, fx2, fy2 = [int(v) for v in face.bbox]
+        cx = (fx1 + fx2) // 2
+        cy = (fy1 + fy2) // 2
+
+        best_mi = None
+        best_overlap = 0
+
+        for mi, (mask, score, bbox) in enumerate(mask_results):
+            if mi in used_masks:
+                continue
+            h, w = mask.shape
+            # Primary: does mask contain face center?
+            if mask[min(cy, h - 1), min(cx, w - 1)] > 0.5:
+                # Tiebreaker: overlap area with face bbox
+                face_region = mask[max(0, fy1):min(h, fy2), max(0, fx1):min(w, fx2)]
+                overlap = float(face_region.sum())
+                if overlap > best_overlap:
+                    best_overlap = overlap
+                    best_mi = mi
+
+        if best_mi is not None:
+            face_to_mask[fi] = best_mi
+            used_masks.add(best_mi)
+
+    return face_to_mask
+
+
 class MaskGenerator:
     """Generates face/head/body masks using BiSeNet and SAM."""
 

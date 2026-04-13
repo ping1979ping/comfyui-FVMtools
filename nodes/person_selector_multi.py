@@ -4,7 +4,7 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
-from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face, split_person_mask_by_anchors, split_person_mask_by_seeds, split_person_mask_by_watershed
+from .utils.masker import MaskGenerator, FACE_LABELS, HEAD_LABELS, MASK_TYPE_LABELS, BISENET_MASK_TYPES, generate_all_masks_for_face, split_person_mask_by_anchors, split_person_mask_by_seeds, split_person_mask_by_watershed, run_sam3_grounding, assign_masks_to_faces
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask, apply_gaussian_blur, fill_mask_holes
 from .utils.mask_utils import clean_mask_crumbs, fill_mask_holes_2d, expand_mask, feather_mask
 from .utils.yolo_detector import get_available_yolo_models, detect_objects, assign_detections_to_references
@@ -576,10 +576,7 @@ class PersonSelectorMulti:
             print(f"[PersonSelectorMulti] person_mask used as hard clip for {face_count} faces "
                   f"(SAM handles per-person separation)")
 
-        # Collect all mask types per reference — front-to-back peeling.
-        # Process the nearest (front) person first on the clean image, then
-        # erase their pixels and process the next person. This way SAM never
-        # sees the front person when segmenting the back person → no leak.
+        # Collect all mask types per reference.
         from .utils.masker import ALL_MASK_TYPES
         masks_per_type = {mt: [] for mt in ALL_MASK_TYPES}
         # Pre-fill with empty masks (will be overwritten for matched refs)
@@ -588,6 +585,23 @@ class PersonSelectorMulti:
                 masks_per_type[mt].append(empty_mask(h, w))
 
         bisenet_seeds_per_ref = {}
+
+        # ── SAM3 Grounding path: one-shot segmentation for ALL people ──
+        # SAM3 text grounding with "person" produces non-overlapping masks
+        # for all people in one call — no peeling needed.
+        _sam3_body_map = {}  # fi → [H,W] float32 body mask from SAM3
+        if sam3_model is not None and face_count > 0:
+            sam3_bodies = run_sam3_grounding(sam3_model, cur_rgb, "person", threshold=0.15)
+            if sam3_bodies:
+                body_assignment = assign_masks_to_faces(sam3_bodies, cur_faces)
+                for fi, mi in body_assignment.items():
+                    _sam3_body_map[fi] = sam3_bodies[mi][0]  # mask_np
+                assigned = [f"F{fi}→M{mi}" for fi, mi in body_assignment.items()]
+                print(f"[PersonSelectorMulti] SAM3 grounding: {len(sam3_bodies)} person masks, "
+                      f"assigned: {', '.join(assigned)}")
+            else:
+                print(f"[PersonSelectorMulti] SAM3 grounding: no 'person' detections, "
+                      f"falling back to SAM2/BiSeNet")
 
         # Sort matched refs by depth: front (nearest) first.
         # Uses the body region (face bbox expanded to estimated body extent) for
@@ -639,6 +653,16 @@ class PersonSelectorMulti:
                                               other_faces=others, body_mask_mode=body_mask_mode,
                                               person_mask_envelope=face_envelopes.get(fi),
                                               sam3_config=sam3_model)
+
+            # Override body mask with SAM3 grounding if available for this face
+            if fi in _sam3_body_map:
+                sam3_body = _sam3_body_map[fi]
+                # Clip to person_mask envelope if connected
+                if fi in face_envelopes:
+                    sam3_body = sam3_body * (face_envelopes[fi] > 0.5).astype(np.float32)
+                masks["body"] = mask2tensor(sam3_body)
+                print(f"    body: SAM3 grounding ({int(np.sum(sam3_body > 0.5))}px)")
+
             for mt in ALL_MASK_TYPES:
                 masks_per_type[mt][ri] = masks.get(mt, empty_mask(h, w))
             if "_bisenet_seed" in masks:
@@ -646,14 +670,16 @@ class PersonSelectorMulti:
 
             # Peel: erase this person's body from the working image so the next
             # (further back) person's SAM won't see them. Fill with mean color.
+            # Skip peeling when SAM3 grounding is active (masks are already exclusive).
             body_np = masks.get("body", empty_mask(h, w))
             if body_np.dim() == 3:
                 body_np = body_np[0]
             body_bool = body_np.cpu().numpy() > 0.5
-            # Dilate slightly to cover silhouette edges
             peel_kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
             body_dilated = cv2.dilate(body_bool.astype(np.uint8), peel_kernel, iterations=1).astype(bool)
-            working_rgb[body_dilated] = mean_color
+            if not _sam3_body_map:
+                # Only peel when using SAM2 (SAM3 masks are non-overlapping)
+                working_rgb[body_dilated] = mean_color
             claimed_mask[body_dilated] = 1.0
 
             print(f"[PersonSelectorMulti] ref {ri+1} → face #{fi} (sim={sim:.4f}) "
