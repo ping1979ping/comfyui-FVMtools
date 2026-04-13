@@ -719,16 +719,17 @@ class PersonSelectorSAM3:
         if aux_preset != "none":
             person_data["aux_masks"] = final_masks["aux"]
 
-        # Combined masks (OR across all refs)
-        def _combine_masks(mask_list):
+        # Batch masks: one mask per ref slot [num_refs, H, W], black if no match
+        def _batch_masks(mask_list):
             if not mask_list:
-                return empty_mask(h, w).expand(batch_size, -1, -1)
-            return torch.max(torch.stack(mask_list, dim=0), dim=0)[0]
+                return empty_mask(h, w)
+            # Each entry is [B, H, W] per ref — for single-image (B=1), stack as [num_refs, H, W]
+            return torch.cat(mask_list, dim=0)  # [num_refs, H, W]
 
-        combined_face = _combine_masks(final_masks["face"])
-        combined_head = _combine_masks(final_masks["head"])
-        combined_body = _combine_masks(final_masks["body"])
-        combined_aux = _combine_masks(final_masks["aux"]) if aux_preset != "none" else empty_mask(h, w).expand(batch_size, -1, -1)
+        batch_face = _batch_masks(final_masks["face"])
+        batch_head = _batch_masks(final_masks["head"])
+        batch_body = _batch_masks(final_masks["body"])
+        batch_aux = _batch_masks(final_masks["aux"]) if aux_preset != "none" else empty_mask(h, w)
 
         preview_out = torch.cat(preview_parts, dim=0)
         sims_str = " | ".join(sim_values)
@@ -750,5 +751,5 @@ class PersonSelectorSAM3:
         report = "\n".join(report_lines)
         print(f"[PersonSelectorSAM3] Done in {_elapsed}s")
 
-        return (person_data, combined_face, combined_head, combined_body, combined_aux,
+        return (person_data, batch_face, batch_head, batch_body, batch_aux,
                 preview_out, sims_str, matches_str, matched_count, total_faces, report)
