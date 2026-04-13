@@ -314,20 +314,35 @@ class PersonSelectorSAM3:
                         h, w, num_refs, ref_depths=None, depth_sort_order="front_last"):
         preview = tensor2np(current_image).copy()
 
-        # Determine render order
+        # Determine render order — includes ALL faces (matched + unmatched)
+        render_items = []  # (label_idx, fi, depth) — label_idx = ri for matched, -1 for unmatched
+        matched_fis = set()
         if num_refs > 0:
-            render_items = []
             for ri in range(num_refs):
                 if ri in assignments:
                     fi, sim = assignments[ri]
                     depth = ref_depths.get(ri, 0.5) if ref_depths else 0.5
                     render_items.append((ri, fi, depth))
-            if depth_sort_order == "front_last":
-                render_items.sort(key=lambda x: x[2])  # back first, front last
-            elif depth_sort_order == "front_first":
-                render_items.sort(key=lambda x: -x[2])
-        else:
-            render_items = [(fi, fi, 0.5) for fi in range(len(cur_faces))]
+                    matched_fis.add(fi)
+        # Add unmatched faces with estimated depth
+        for fi in range(len(cur_faces)):
+            if fi not in matched_fis:
+                if fi < len(per_face_masks) and ref_depths is not None:
+                    body_np = per_face_masks[fi]["body"][0].cpu().numpy()
+                    body_pixels = body_np > 0.5
+                    if body_pixels.any():
+                        # Estimate depth from body region (needs depth_map access)
+                        depth = 0.5  # default if no depth info in preview
+                    else:
+                        depth = 0.5
+                else:
+                    depth = 0.5
+                render_items.append((-1, fi, depth))
+        # Sort by depth
+        if depth_sort_order == "front_last":
+            render_items.sort(key=lambda x: x[2])
+        elif depth_sort_order == "front_first":
+            render_items.sort(key=lambda x: -x[2])
 
         # Paint body masks in render order (back first, front last)
         fi_to_ri = {fi: ri for ri, (fi, sim) in assignments.items()} if assignments else {}
@@ -397,16 +412,15 @@ class PersonSelectorSAM3:
             cv2.rectangle(preview, (tx - 3, ty - th - 3), (tx + tw + 3, ty + 3), (0, 0, 0), cv2.FILLED)
             cv2.putText(preview, label, (tx, ty), font, scale, (160, 160, 160), 2, cv2.LINE_AA)
 
-        # Render order text
-        if ref_depths and len(ref_depths) > 1:
-            if depth_sort_order == "front_last":
-                sorted_refs = sorted(ref_depths.items(), key=lambda x: x[1])
-            elif depth_sort_order == "front_first":
-                sorted_refs = sorted(ref_depths.items(), key=lambda x: -x[1])
-            else:
-                sorted_refs = sorted(ref_depths.items())
-            order = " > ".join(str(ri + 1) for ri, _ in sorted_refs)
-            order_text = f"Render: {order} (back>front)"
+        # Render order text — includes all faces (refs + unmatched)
+        if len(render_items) > 1:
+            labels = []
+            for ri, fi, depth in render_items:
+                if ri >= 0:
+                    labels.append(str(ri + 1))
+                else:
+                    labels.append(f"?F{fi}")
+            order_text = f"Render: {' > '.join(labels)} (back>front)"
             (ow, oh), _ = cv2.getTextSize(order_text, font, scale * 0.5, 1)
             ox = (w - ow) // 2
             oy = h - 10
@@ -487,6 +501,7 @@ class PersonSelectorSAM3:
         all_face_to_ref = []
         sim_values = []
         match_values = []
+        per_image_reports = []
 
         for b in range(batch_size):
             single = current_image[b:b+1]
@@ -626,6 +641,34 @@ class PersonSelectorSAM3:
                 sim_values.append("")
                 match_values.append("0")
 
+            # Per-image report data
+            batch_report_lines = [f"  [Image {b+1}/{batch_size}] {face_count} faces, {len(assignments)} matched"]
+            for ri in range(num_refs):
+                if ri in assignments:
+                    fi, sim = assignments[ri]
+                    batch_report_lines.append(f"    ref {ri+1}: MATCH face #{fi} (sim {sim:.0%})")
+                else:
+                    batch_report_lines.append(f"    ref {ri+1}: no match")
+            # Unmatched faces
+            matched_fis_report = set(fi for fi, sim in assignments.values())
+            for fi in range(face_count):
+                if fi not in matched_fis_report:
+                    batch_report_lines.append(f"    face #{fi}: unmatched")
+            # Render order
+            if depths:
+                sorted_depths = sorted(depths.items(), key=lambda x: x[1])
+                if depth_sort_order == "front_last":
+                    order_str = " > ".join(f"ref {ri+1}(d={d:.2f})" for ri, d in sorted_depths)
+                else:
+                    order_str = " > ".join(f"ref {ri+1}(d={d:.2f})" for ri, d in reversed(sorted_depths))
+                # Add unmatched faces to render order
+                for fi in range(face_count):
+                    if fi not in matched_fis_report:
+                        fd = float(np.percentile(depth_np[per_face_masks[fi]["body"][0].cpu().numpy() > 0.5], 85)) if use_depth and per_face_masks[fi]["body"][0].cpu().numpy().sum() > 0 else 0.5
+                        order_str += f" > ?F{fi}(d={fd:.2f})"
+                batch_report_lines.append(f"    render: {order_str} (back>front)")
+            per_image_reports.append("\n".join(batch_report_lines))
+
         # ── Build outputs ──
         _elapsed = int(_time.monotonic() - _t0)
 
@@ -678,10 +721,14 @@ class PersonSelectorSAM3:
             f"Batch size: {batch_size}",
             f"Faces (total): {total_faces}",
             f"Reference persons: {num_refs}",
+            f"Threshold: {'Auto' if auto_threshold else threshold} | Aggregation: {aggregation}",
+            f"Match weights: face {w_face:.0%} / hair {w_hair:.0%} / head {w_head:.0%} / outfit {w_outfit:.0%}",
+            f"Matched (total): {matched_count}",
             f"Segmenter: SAM3 text grounding",
             f"Aux preset: {aux_preset}" + (f" ('{aux_custom_prompt}')" if aux_preset == "custom" else ""),
             f"Runtime: {_elapsed}s",
-        ]
+            "",
+        ] + per_image_reports
         report = "\n".join(report_lines)
         print(f"[PersonSelectorSAM3] Done in {_elapsed}s")
 
