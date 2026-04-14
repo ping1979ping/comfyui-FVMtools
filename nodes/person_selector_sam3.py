@@ -10,7 +10,7 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
-from .utils.masker import MaskGenerator, run_sam3_grounding, assign_masks_to_faces
+from .utils.masker import MaskGenerator, run_sam3_grounding, assign_masks_to_faces, assign_masks_by_body_overlap
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask
 from .utils.appearance import (
     extract_hair_color,
@@ -224,26 +224,43 @@ class PersonSelectorSAM3:
         h, w = cur_rgb.shape[:2]
         face_count = len(cur_faces)
 
-        # Run grounding for each mask type
-        mask_results = {}
-        for mask_type, (prompt, threshold) in SAM3_MASK_CONFIG.items():
+        # Step 1: Body masks — assign by face center (primary anchor)
+        body_results = run_sam3_grounding(sam3_config, cur_rgb, "person", threshold=0.15)
+        body_assign = assign_masks_to_faces(body_results, cur_faces) if body_results else {}
+
+        # Build body_map for overlap-based assignment of other mask types
+        body_map = {}  # fi → body_mask_np
+        for fi, mi in body_assign.items():
+            body_map[fi] = body_results[mi][0]
+
+        # Step 2: Other mask types — assign by body overlap
+        mask_results = {"body": (body_results, body_assign)}
+        for mask_type in ("face", "head", "hair"):
+            prompt, threshold = SAM3_MASK_CONFIG[mask_type]
             results = run_sam3_grounding(sam3_config, cur_rgb, prompt, threshold=threshold)
-            assignment = assign_masks_to_faces(results, cur_faces) if results else {}
+            if results and body_map:
+                assignment = assign_masks_by_body_overlap(results, body_map, cur_faces)
+            elif results:
+                assignment = assign_masks_to_faces(results, cur_faces)
+            else:
+                assignment = {}
             mask_results[mask_type] = (results, assignment)
 
-        # Run aux grounding
+        # Step 3: Aux grounding — also by body overlap
         aux_results = []
         aux_assignment = {}
         if aux_preset != "none":
             if aux_preset == "custom" and aux_custom_prompt.strip():
                 aux_results = run_sam3_grounding(sam3_config, cur_rgb, aux_custom_prompt.strip(), threshold=aux_threshold)
-                aux_assignment = assign_masks_to_faces(aux_results, cur_faces) if aux_results else {}
             elif aux_preset == "headless_body":
-                pass  # computed below from body - head
+                pass  # computed below from body - face - hair
             elif aux_preset in AUX_PRESETS and AUX_PRESETS[aux_preset] is not None:
                 prompt, default_thresh = AUX_PRESETS[aux_preset]
                 aux_results = run_sam3_grounding(sam3_config, cur_rgb, prompt, threshold=aux_threshold)
-                aux_assignment = assign_masks_to_faces(aux_results, cur_faces) if aux_results else {}
+            if aux_results and body_map:
+                aux_assignment = assign_masks_by_body_overlap(aux_results, body_map, cur_faces)
+            elif aux_results:
+                aux_assignment = assign_masks_to_faces(aux_results, cur_faces)
 
         # Build per-face mask dict
         per_face = []
@@ -294,6 +311,10 @@ class PersonSelectorSAM3:
                 body_np = masks["body"][0].cpu().numpy()
                 face_np = masks["face"][0].cpu().numpy()
                 hair_np = masks["hair"][0].cpu().numpy()
+                body_px = int((body_np > 0.5).sum())
+                face_px = int((face_np > 0.5).sum())
+                hair_px = int((hair_np > 0.5).sum())
+                print(f"    [headless_body] P{fi+1}: body={body_px}px, face={face_px}px, hair={hair_px}px")
                 # Union face+hair, dilate to catch fringe edges
                 subtract = np.maximum(face_np, hair_np)
                 dilate_k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11, 11))
@@ -303,6 +324,9 @@ class PersonSelectorSAM3:
                 headless = (headless > 0.5).astype(np.uint8)
                 close_k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
                 headless = cv2.morphologyEx(headless, cv2.MORPH_CLOSE, close_k).astype(np.float32)
+                sub_px = int((subtract > 0.5).sum())
+                result_px = int((headless > 0.5).sum())
+                print(f"    [headless_body] P{fi+1}: subtract={sub_px}px → result={result_px}px")
                 masks["aux"] = mask2tensor(headless)
             elif fi in aux_assignment:
                 masks["aux"] = mask2tensor(aux_results[aux_assignment[fi]][0])

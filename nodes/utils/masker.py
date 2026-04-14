@@ -539,17 +539,16 @@ def run_sam3_grounding(sam3_config, image_rgb, text_prompt, threshold=0.2):
 
 
 def assign_masks_to_faces(mask_results, faces):
-    """Assign SAM3 grounding masks to InsightFace detected faces.
+    """Assign SAM3 grounding masks to faces using face-center hit.
 
-    For each face, find the mask whose area overlaps most with the face bbox.
-    Uses face center as primary anchor, then overlap area as tiebreaker.
+    For body/face masks: the mask that contains the face center wins.
 
     Args:
         mask_results: list of (mask_np, score, bbox) from run_sam3_grounding
         faces: list of InsightFace face objects with .bbox
 
     Returns:
-        dict {face_idx: mask_idx} — may not cover all faces if masks < faces
+        dict {face_idx: mask_idx}
     """
     if not mask_results or not faces:
         return {}
@@ -569,9 +568,7 @@ def assign_masks_to_faces(mask_results, faces):
             if mi in used_masks:
                 continue
             h, w = mask.shape
-            # Primary: does mask contain face center?
             if mask[min(cy, h - 1), min(cx, w - 1)] > 0.5:
-                # Tiebreaker: overlap area with face bbox
                 face_region = mask[max(0, fy1):min(h, fy2), max(0, fx1):min(w, fx2)]
                 overlap = float(face_region.sum())
                 if overlap > best_overlap:
@@ -579,6 +576,52 @@ def assign_masks_to_faces(mask_results, faces):
                     best_mi = mi
 
         if best_mi is not None:
+            face_to_mask[fi] = best_mi
+            used_masks.add(best_mi)
+
+    return face_to_mask
+
+
+def assign_masks_by_body_overlap(mask_results, body_map, faces):
+    """Assign SAM3 masks to faces by overlap with their body mask.
+
+    Used for hair, head, aux etc. where the mask may not contain the face center
+    but overlaps with the person's body.
+
+    Args:
+        mask_results: list of (mask_np, score, bbox) from run_sam3_grounding
+        body_map: dict {face_idx: body_mask_np [H,W]} — from assign_masks_to_faces on "person"
+        faces: list of InsightFace face objects
+
+    Returns:
+        dict {face_idx: mask_idx}
+    """
+    if not mask_results or not body_map:
+        return {}
+
+    face_to_mask = {}
+    used_masks = set()
+
+    # Sort faces by body area descending (larger bodies get first pick)
+    sorted_faces = sorted(body_map.keys(), key=lambda fi: body_map[fi].sum(), reverse=True)
+
+    for fi in sorted_faces:
+        body = body_map[fi]
+        body_bool = body > 0.5
+
+        best_mi = None
+        best_overlap = 0
+
+        for mi, (mask, score, bbox) in enumerate(mask_results):
+            if mi in used_masks:
+                continue
+            # Overlap = pixels where both mask and body are active
+            overlap = float((mask > 0.5) & body_bool).sum() if mask.shape == body.shape else 0
+            if overlap > best_overlap:
+                best_overlap = overlap
+                best_mi = mi
+
+        if best_mi is not None and best_overlap > 50:
             face_to_mask[fi] = best_mi
             used_masks.add(best_mi)
 
