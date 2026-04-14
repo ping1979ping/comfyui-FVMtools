@@ -616,7 +616,7 @@ def assign_masks_by_body_overlap(mask_results, body_map, faces):
             if mi in used_masks:
                 continue
             # Overlap = pixels where both mask and body are active
-            overlap = float((mask > 0.5) & body_bool).sum() if mask.shape == body.shape else 0
+            overlap = float(((mask > 0.5) & body_bool).sum()) if mask.shape == body.shape else 0
             if overlap > best_overlap:
                 best_overlap = overlap
                 best_mi = mi
