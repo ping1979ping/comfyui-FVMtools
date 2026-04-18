@@ -252,6 +252,28 @@ class PersonDataRefiner:
                 if ref_idx is not None:
                     ref_to_new_fi[ref_idx] = nfi
 
+            matched_count = sum(1 for r in new_face_to_ref if r is not None)
+            old_face_count = len(old_f2r) if old_f2r else 0
+            print(f"  [Img {b+1}] InsightFace detected {new_face_count} faces "
+                  f"(old had {old_face_count}), {matched_count}/{num_refs} matched to refs")
+            if new_face_count > 0 and matched_count == 0:
+                for ofi in range(len(old_pfm)):
+                    fm = old_pfm[ofi].get("face", old_pfm[ofi].get("head"))
+                    if fm is None: continue
+                    m = fm[0].cpu().numpy() if fm.dim() == 3 else fm.cpu().numpy()
+                    import numpy as _np
+                    ys, xs = _np.where(m > 0.5)
+                    if len(ys) > 0:
+                        ocx = float(xs.mean()) * scale_x
+                        ocy = float(ys.mean()) * scale_y
+                        ofw = float(xs.max() - xs.min()) * scale_x
+                        print(f"      old face {ofi+1} ref={old_f2r[ofi] if ofi < len(old_f2r) else '?'} "
+                              f"center=({ocx:.0f},{ocy:.0f}) width={ofw:.0f} max_match_dist={ofw*2:.0f}")
+                for nfi_, f in enumerate(new_faces):
+                    x1,y1,x2,y2 = f.bbox
+                    print(f"      new face {nfi_+1} bbox=({x1:.0f},{y1:.0f})-({x2:.0f},{y2:.0f}) "
+                          f"center=({(x1+x2)/2:.0f},{(y1+y2)/2:.0f})")
+
             depth_kwargs = dict(
                 depth_edges_data=depth_edges_list[b] if use_depth else None,
                 depth_np=depth_nps[b] if use_depth else None,
