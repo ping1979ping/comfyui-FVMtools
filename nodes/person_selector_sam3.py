@@ -744,7 +744,7 @@ class PersonSelectorSAM3:
             "depth_sort_order": depth_sort_order,
         }
         for mt in MASK_TYPES:
-            person_data[mt] = final_masks[mt]
+            person_data[f"{mt}_masks"] = final_masks[mt]
         if aux_preset != "none":
             person_data["aux_masks"] = final_masks["aux"]
 
