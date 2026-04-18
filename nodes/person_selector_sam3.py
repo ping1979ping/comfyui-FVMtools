@@ -500,7 +500,7 @@ class PersonSelectorSAM3:
         if use_appearance and refs:
             ref_appearances = [self._extract_ref_appearance(analyzer, rb, device) for rb in refs]
 
-        # Depth maps
+        # Depth maps — resize to image resolution when preprocessor output differs
         use_depth = depth_map is not None
         depth_nps = []
         if use_depth:
@@ -508,7 +508,10 @@ class PersonSelectorSAM3:
                 d = depth_map[b].cpu().numpy()
                 if d.ndim == 3:
                     d = d.mean(axis=2)
-                depth_nps.append(d.astype(np.float32))
+                d = d.astype(np.float32)
+                if d.shape[0] != h or d.shape[1] != w:
+                    d = cv2.resize(d, (w, h), interpolation=cv2.INTER_LINEAR)
+                depth_nps.append(d)
 
         # ── Process each batch image ──
         MASK_TYPES = ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories"]
