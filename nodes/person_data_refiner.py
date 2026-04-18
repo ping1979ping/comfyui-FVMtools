@@ -34,6 +34,8 @@ class PersonDataRefiner:
         "Use after upscaling: takes original person_data + hi-res images,\n"
         "re-detects faces and regenerates all masks at the new resolution\n"
         "while preserving face-to-reference assignments.\n\n"
+        "Accepts either sam_model (SAM2) or sam3_model (SAM3) for body masks.\n"
+        "SAM3 takes priority when both are connected.\n\n"
         "Chainable: when image resolution matches person_data, skips\n"
         "face re-detection entirely and just runs YOLO aux detection.\n"
         "Chain multiple refiners with different aux_model/aux_label combos\n"
@@ -47,15 +49,16 @@ class PersonDataRefiner:
         yolo_models = ["none"] + get_available_yolo_models()
         return {
             "required": {
-                "person_data": ("PERSON_DATA", {"tooltip": "Original PERSON_DATA from Person Selector Multi"}),
+                "person_data": ("PERSON_DATA", {"tooltip": "Original PERSON_DATA from Person Selector Multi / SAM3"}),
                 "images": ("IMAGE", {"tooltip": "New images (batch size must match original person_data)"}),
-                "sam_model": ("SAM_MODEL", {"tooltip": "SAM model for body mask generation"}),
                 "mask_fill_holes": ("BOOLEAN", {"default": True}),
                 "mask_blur": ("INT", {"default": 0, "min": 0, "max": 100}),
                 "det_size": (["320", "480", "640", "768"], {"default": "640",
                              "tooltip": "Face detection resolution"}),
             },
             "optional": {
+                "sam_model": ("SAM_MODEL", {"tooltip": "SAM2 model for body mask generation (fallback when sam3_model not connected)"}),
+                "sam3_model": ("SAM3_MODEL_CONFIG", {"tooltip": "SAM3 model from LoadSAM3Model. Takes priority over sam_model when both connected."}),
                 "depth_map": ("IMAGE", {"tooltip": "Depth map batch for depth-guided mask refinement"}),
                 "depth_edge_threshold": ("FLOAT", {"default": 0.05, "min": 0.01, "max": 0.30, "step": 0.01,
                                                     "tooltip": "Depth gradient threshold for edge detection"}),
@@ -151,7 +154,8 @@ class PersonDataRefiner:
 
         return new_face_to_ref
 
-    def execute(self, person_data, images, sam_model, mask_fill_holes, mask_blur, det_size,
+    def execute(self, person_data, images, mask_fill_holes, mask_blur, det_size,
+                sam_model=None, sam3_model=None,
                 depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
                 aux_model="none", aux_confidence=0.35, aux_label="",
                 aux_fill_holes=False, aux_expand_pixels=0, aux_blend_pixels=0):
@@ -290,7 +294,8 @@ class PersonDataRefiner:
                     others = [f for j, f in enumerate(new_faces) if j != nfi]
                     masks = generate_all_masks_for_face(
                         cur_rgb, new_faces[nfi], device, sam_model,
-                        mask_fill_holes, mask_blur, other_faces=others, **depth_kwargs)
+                        mask_fill_holes, mask_blur, other_faces=others,
+                        sam3_config=sam3_model, **depth_kwargs)
                     for mt in ALL_MASK_TYPES:
                         masks_for_refs[mt].append(masks.get(mt, empty_mask(new_h, new_w)))
                     matches_for_image.append(True)
@@ -314,7 +319,8 @@ class PersonDataRefiner:
                     others = [f for j, f in enumerate(new_faces) if j != nfi]
                     pf = generate_all_masks_for_face(
                         cur_rgb, new_faces[nfi], device, sam_model,
-                        mask_fill_holes, mask_blur, other_faces=others, **depth_kwargs)
+                        mask_fill_holes, mask_blur, other_faces=others,
+                        sam3_config=sam3_model, **depth_kwargs)
                 per_face_masks.append(pf)
 
             all_per_face_masks.append(per_face_masks)
