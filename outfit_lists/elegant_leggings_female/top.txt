@@ -1,21 +1,21 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-silk blouse tucked in | 0.70 | 0.5-0.7 | silk,satin
-oversized silk shirt | 0.60 | 0.4-0.7 | silk
-fitted black turtleneck | 0.70 | 0.5-0.7 | jersey
+blouse tucked in | 0.70 | 0.5-0.7 | silk,satin,chiffon
+oversized shirt | 0.60 | 0.4-0.7 | silk,satin
+fitted turtleneck | 0.70 | 0.5-0.7 | jersey
 cashmere sweater | 0.55 | 0.4-0.7 | natural
 off-shoulder top | 0.65 | 0.4-0.7 | silk,chiffon,jersey
 corset top | 0.70 | 0.4-0.7 | satin,leather,velvet
-silk camisole | 0.65 | 0.5-0.7 | silk,satin
-lace bodysuit | 0.55 | 0.4-0.7 | lace
-sheer chiffon blouse | 0.50 | 0.4-0.7 | chiffon,silk
+camisole | 0.65 | 0.5-0.7 | silk,satin
+lace bodysuit | 0.55 | 0.4-0.7 | jersey,satin
+sheer blouse | 0.50 | 0.4-0.7 | chiffon,silk
 backless halter top | 0.50 | 0.4-0.7 | silk,satin
 cropped blazer over bralette | 0.55 | 0.4-0.7 | satin,velvet
-wrap silk top | 0.55 | 0.5-0.7 | silk,satin
-velvet bodysuit | 0.50 | 0.5-0.7 | velvet
-mesh long-sleeve top | 0.40 | 0.3-0.6 | mesh
-off-shoulder silk blouse | 0.60 | 0.5-0.7 | silk
+wrap top | 0.55 | 0.5-0.7 | silk,satin
+velvet bodysuit | 0.50 | 0.5-0.7 | jersey
+long-sleeve mesh top | 0.40 | 0.3-0.6 | jersey
+off-shoulder blouse | 0.60 | 0.5-0.7 | silk,satin
 structured bustier | 0.45 | 0.5-0.7 | satin,leather
-oversized cashmere knit off-shoulder | 0.50 | 0.4-0.6 | natural
-silk tank tucked in | 0.60 | 0.4-0.7 | silk,satin
+cashmere knit off-shoulder | 0.50 | 0.4-0.6 | natural
+tank tucked in | 0.60 | 0.4-0.7 | silk,satin

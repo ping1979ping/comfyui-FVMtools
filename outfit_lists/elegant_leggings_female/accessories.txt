@@ -9,13 +9,13 @@ gold hoop earrings | 0.55 | 0.4-0.7 | metal
 statement earrings | 0.45 | 0.5-0.7 | metal
 silver chain belt | 0.50 | 0.4-0.7 | metal
 wide structured waist belt | 0.50 | 0.4-0.6 | leather
-thin leather belt | 0.55 | 0.4-0.7 | leather
+thin waist belt | 0.55 | 0.4-0.7 | leather
 gold watch | 0.40 | 0.4-0.7 | metal
 stacked bangles | 0.40 | 0.4-0.6 | metal
 layered necklaces | 0.45 | 0.4-0.6 | metal
 thin gold choker | 0.45 | 0.4-0.7 | metal
 crystal bracelet | 0.35 | 0.5-0.7 | metal
-silk scarf | 0.25 | 0.4-0.7 | silk,chiffon
+patterned scarf | 0.25 | 0.4-0.7 | silk,chiffon
 cocktail ring | 0.35 | 0.5-0.7 | metal
 tennis bracelet | 0.30 | 0.5-0.7 | metal
 sunglasses | 0.40 | 0.3-0.6 | metal

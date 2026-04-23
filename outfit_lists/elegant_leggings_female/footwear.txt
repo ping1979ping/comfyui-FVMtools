@@ -5,8 +5,8 @@ stiletto pumps | 0.85 | 0.5-0.8 | leather,suede
 pointed-toe heels | 0.80 | 0.5-0.8 | leather,satin
 ankle strap stilettos | 0.70 | 0.5-0.7 | leather,suede
 strappy heeled sandals | 0.65 | 0.5-0.7 | leather,satin
-patent leather pumps | 0.55 | 0.5-0.7 | leather
-suede pumps | 0.60 | 0.5-0.7 | suede
+patent pumps | 0.55 | 0.5-0.7 | leather
+court pumps | 0.60 | 0.5-0.7 | suede,leather
 knee-high stiletto boots | 0.55 | 0.4-0.7 | leather,suede
 over-the-knee boots | 0.45 | 0.4-0.7 | leather,suede
 heeled ankle boots | 0.55 | 0.4-0.6 | leather,suede
