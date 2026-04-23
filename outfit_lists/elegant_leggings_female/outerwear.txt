@@ -1,0 +1,19 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+long wool coat | 0.65 | 0.5-0.7 | natural
+tailored blazer | 0.70 | 0.5-0.7 | natural,satin
+cropped leather jacket | 0.60 | 0.4-0.6 | leather
+leather trench coat | 0.50 | 0.5-0.7 | leather
+longline blazer | 0.55 | 0.5-0.7 | natural,satin
+camel wool coat | 0.55 | 0.5-0.7 | natural
+faux fur coat | 0.50 | 0.5-0.7 | faux_fur
+velvet blazer | 0.45 | 0.5-0.7 | velvet
+satin trench coat | 0.40 | 0.5-0.7 | satin
+cropped faux fur jacket | 0.45 | 0.4-0.6 | faux_fur
+belted wool coat | 0.50 | 0.5-0.7 | natural
+cashmere cape | 0.30 | 0.6-0.8 | natural
+silk duster coat | 0.35 | 0.5-0.7 | silk,satin
+oversized boyfriend blazer | 0.55 | 0.4-0.6 | natural
+leather biker jacket | 0.50 | 0.3-0.6 | leather
+structured trench | 0.50 | 0.5-0.7 | natural

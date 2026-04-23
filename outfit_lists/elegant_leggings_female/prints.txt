@@ -1,0 +1,15 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+subtle shimmer | 0.40 | top,accessories | 0.4-0.7
+metallic finish | 0.40 | top,bottom,accessories,bag | 0.4-0.7
+lace detail | 0.45 | top,bottom | 0.4-0.7
+crocodile embossed | 0.30 | bottom,bag,footwear | 0.5-0.7
+snake print | 0.30 | bottom,footwear,bag | 0.4-0.7
+animal print accent | 0.25 | top,bag | 0.3-0.7
+monochrome | 0.50 | top,bottom | 0.4-0.7
+tone-on-tone | 0.40 | top,bottom | 0.5-0.7
+glossy finish | 0.50 | bottom,footwear | 0.4-0.7
+matte black | 0.55 | bottom,top,outerwear | 0.4-0.7
+wet-look finish | 0.35 | bottom,footwear | 0.3-0.6
+velvet burnout pattern | 0.20 | top | 0.4-0.7
+rhinestone detail | 0.25 | top,accessories | 0.4-0.8

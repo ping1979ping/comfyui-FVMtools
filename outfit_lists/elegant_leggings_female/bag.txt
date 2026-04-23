@@ -1,0 +1,16 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+clutch | 0.75 | 0.5-0.7 | leather,satin,velvet
+leather chain bag | 0.65 | 0.4-0.7 | leather
+envelope clutch | 0.50 | 0.5-0.7 | leather,satin
+small crossbody | 0.55 | 0.4-0.6 | leather
+mini tote | 0.45 | 0.4-0.7 | leather
+top handle bag | 0.55 | 0.5-0.7 | leather,suede
+quilted handbag | 0.50 | 0.5-0.7 | leather
+velvet clutch | 0.35 | 0.5-0.7 | velvet
+beaded evening bag | 0.30 | 0.5-0.7 | satin
+minaudiere | 0.25 | 0.6-0.7 | satin,velvet
+wristlet | 0.35 | 0.4-0.6 | leather,satin
+metallic clutch | 0.35 | 0.4-0.7 | leather,satin
+patent leather bag | 0.40 | 0.5-0.7 | leather

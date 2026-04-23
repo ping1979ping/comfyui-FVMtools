@@ -1,0 +1,21 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+leather leggings | 0.90 | 0.4-0.7 | leather
+glossy black leather leggings | 0.80 | 0.4-0.7 | leather
+high-waisted leather leggings | 0.75 | 0.5-0.7 | leather
+satin leggings | 0.70 | 0.5-0.7 | satin
+velvet leggings | 0.65 | 0.5-0.7 | velvet
+faux leather leggings | 0.70 | 0.4-0.6 | leather
+metallic leggings | 0.50 | 0.4-0.6 | satin
+ponte leggings | 0.55 | 0.5-0.7 | jersey
+suede leggings | 0.45 | 0.5-0.7 | suede
+lace-inset leggings | 0.45 | 0.4-0.6 | lace,jersey
+mesh-panel leggings | 0.40 | 0.3-0.6 | mesh,jersey
+sheer-paneled leggings | 0.35 | 0.3-0.6 | mesh,jersey
+wet-look leggings | 0.55 | 0.3-0.6 | satin,leather
+stirrup leggings | 0.35 | 0.4-0.6 | jersey,leather
+crocodile-embossed leggings | 0.35 | 0.5-0.7 | leather
+snake-embossed leggings | 0.30 | 0.4-0.7 | leather
+zippered leather leggings | 0.45 | 0.4-0.6 | leather
+side-striped leggings | 0.35 | 0.4-0.6 | jersey,satin

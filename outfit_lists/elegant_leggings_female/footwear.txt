@@ -1,0 +1,19 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+stiletto pumps | 0.85 | 0.5-0.8 | leather,suede
+pointed-toe heels | 0.80 | 0.5-0.8 | leather,satin
+ankle strap stilettos | 0.70 | 0.5-0.7 | leather,suede
+strappy heeled sandals | 0.65 | 0.5-0.7 | leather,satin
+patent leather pumps | 0.55 | 0.5-0.7 | leather
+suede pumps | 0.60 | 0.5-0.7 | suede
+knee-high stiletto boots | 0.55 | 0.4-0.7 | leather,suede
+over-the-knee boots | 0.45 | 0.4-0.7 | leather,suede
+heeled ankle boots | 0.55 | 0.4-0.6 | leather,suede
+crystal-embellished heels | 0.35 | 0.5-0.8 | satin,leather
+snake-print heels | 0.30 | 0.4-0.7 | leather
+metallic heels | 0.40 | 0.4-0.7 | leather,satin
+block-heel ankle boots | 0.40 | 0.4-0.6 | leather,suede
+platform stilettos | 0.45 | 0.4-0.7 | leather,suede
+slingback pumps | 0.40 | 0.5-0.7 | leather,satin
+mule heels | 0.35 | 0.5-0.7 | leather,suede,satin
