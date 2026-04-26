@@ -1,4 +1,5 @@
 import { app } from "../../../scripts/app.js";
+import { createSeparator } from "./_widgets_common.js";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // Section 1: Canvas drawing utilities (ported from rgthree utils_canvas.js)
@@ -757,42 +758,6 @@ class RefLoraWidget extends FvmBaseWidget {
             this._infoState = "GRAYED";
         }
     }
-}
-
-
-// ═══════════════════════════════════════════════════════════════════════════
-// Section 8: Section separators
-// ═══════════════════════════════════════════════════════════════════════════
-
-function createSeparator(label) {
-    return {
-        name: "_sep_" + label.replace(/\s/g, "_"),
-        type: "custom",
-        value: label,
-        options: { serialize: false },
-        computeSize: () => [0, 24],
-        draw(ctx, n, width, posY) {
-            ctx.save();
-            ctx.font = "bold 11px Arial";
-            ctx.fillStyle = "#999";
-            ctx.textAlign = "center";
-            const cy = posY + 15;
-            ctx.fillText(this.value, width / 2, cy);
-            const tw = ctx.measureText(this.value).width;
-            const cx = width / 2;
-            ctx.strokeStyle = "#555";
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(15, cy - 4);
-            ctx.lineTo(Math.max(15, cx - tw / 2 - 10), cy - 4);
-            ctx.stroke();
-            ctx.beginPath();
-            ctx.moveTo(Math.min(width - 15, cx + tw / 2 + 10), cy - 4);
-            ctx.lineTo(width - 15, cy - 4);
-            ctx.stroke();
-            ctx.restore();
-        },
-    };
 }
 
 
