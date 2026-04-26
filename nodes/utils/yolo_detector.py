@@ -192,6 +192,7 @@ def detect_objects(image_tensor, model_name, confidence=0.5, label_filter=""):
             bbox = r.boxes.xyxy[j].cpu().numpy()
 
             # Get mask (segmentation model) or create from bbox
+            is_bbox_only = not has_masks
             if has_masks:
                 import cv2
                 # Use r.masks.xy (polygon in ORIGINAL image coordinates) rather than
@@ -221,6 +222,7 @@ def detect_objects(image_tensor, model_name, confidence=0.5, label_filter=""):
                 "mask": torch.from_numpy(mask),  # [H, W] float32
                 "bbox": bbox,
                 "confidence": conf,
+                "is_bbox_only": is_bbox_only,
             })
 
     return detections

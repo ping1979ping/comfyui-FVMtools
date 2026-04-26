@@ -979,6 +979,123 @@ class MaskGenerator:
             return cls.generate_body_bbox_fallback((h, w), face)
 
     @classmethod
+    def refine_bbox_with_sam(cls, image_rgb: np.ndarray, bbox, sam_model,
+                             bbox_expansion: int = 0):
+        """Refine a YOLO bbox into a pixel-precise mask via SAM2 box prompt.
+
+        Pattern adapted from Impact Pack core.make_sam_mask: bbox as box-prompt
+        plus center-of-bbox positive point. Returns [H, W] float32 mask in
+        image coordinates, or None on failure.
+        """
+        h, w = image_rgb.shape[:2]
+        try:
+            x1, y1, x2, y2 = [int(v) for v in bbox]
+            x1 = max(0, x1 - bbox_expansion)
+            y1 = max(0, y1 - bbox_expansion)
+            x2 = min(w, x2 + bbox_expansion)
+            y2 = min(h, y2 + bbox_expansion)
+            if x2 <= x1 or y2 <= y1:
+                return None
+
+            cx = (x1 + x2) // 2
+            cy = (y1 + y2) // 2
+            points = [[cx, cy]]
+            plabs = [1]
+            sam_bbox = [x1, y1, x2, y2]
+
+            predictor = cls._get_sam_predictor(sam_model)
+            is_sam2 = hasattr(sam_model, 'image_predictor') or hasattr(sam_model, 'config')
+            sam_box_arg = None if is_sam2 else sam_bbox
+
+            result_masks = predictor.predict(image_rgb, points, plabs, sam_box_arg, 0.0)
+            if result_masks is None or len(result_masks) == 0:
+                return None
+
+            best_mask = None
+            best_area = -1
+            for m in result_masks:
+                if isinstance(m, torch.Tensor):
+                    m = m.cpu().numpy()
+                m = m.squeeze().astype(np.float32)
+                if m.shape != (h, w):
+                    m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
+                # Constrain to bbox to avoid SAM bleeding into unrelated regions
+                clipped = np.zeros_like(m)
+                clipped[y1:y2, x1:x2] = m[y1:y2, x1:x2]
+                area = int(np.sum(clipped > 0.5))
+                if area > best_area:
+                    best_area = area
+                    best_mask = clipped
+            return best_mask
+        except Exception as e:
+            print(f"[FVMTools] refine_bbox_with_sam failed: {e}")
+            return None
+
+    @classmethod
+    def refine_bbox_with_sam3(cls, image_rgb: np.ndarray, bbox, sam3_config,
+                              bbox_expansion: int = 0):
+        """Refine a YOLO bbox into a pixel-precise mask via SAM3
+        inst_interactive_predictor box prompt. Returns [H, W] float32 mask or None.
+        """
+        from PIL import Image
+        h, w = image_rgb.shape[:2]
+        try:
+            x1, y1, x2, y2 = [int(v) for v in bbox]
+            x1 = max(0, x1 - bbox_expansion)
+            y1 = max(0, y1 - bbox_expansion)
+            x2 = min(w, x2 + bbox_expansion)
+            y2 = min(h, y2 + bbox_expansion)
+            if x2 <= x1 or y2 <= y1:
+                return None
+
+            import importlib
+            sam3_cache = importlib.import_module(
+                "custom_nodes.comfyui-sam3.nodes._model_cache"
+            )
+            import comfy.model_management
+
+            sam3_model = sam3_cache.get_or_build_model(sam3_config)
+            comfy.model_management.load_models_gpu([sam3_model])
+            processor = sam3_model.processor
+            model = processor.model
+            if hasattr(processor, 'sync_device_with_model'):
+                processor.sync_device_with_model()
+            if model.inst_interactive_predictor is None:
+                return None
+
+            pil_img = Image.fromarray(image_rgb)
+            state = processor.set_image(pil_img)
+
+            cx = (x1 + x2) // 2
+            cy = (y1 + y2) // 2
+            point_coords = np.array([[cx, cy]], dtype=np.float32)
+            point_labels = np.array([1], dtype=np.int32)
+            box_array = np.array([x1, y1, x2, y2], dtype=np.float32)
+
+            masks_np, scores_np, _ = model.predict_inst(
+                state,
+                point_coords=point_coords,
+                point_labels=point_labels,
+                box=box_array,
+                mask_input=None,
+                multimask_output=True,
+                normalize_coords=True,
+            )
+            if masks_np is None or len(masks_np) == 0:
+                return None
+
+            best_idx = int(np.argmax(scores_np))
+            m = masks_np[best_idx].astype(np.float32)
+            if m.shape != (h, w):
+                m = cv2.resize(m, (w, h), interpolation=cv2.INTER_NEAREST)
+            clipped = np.zeros_like(m)
+            clipped[y1:y2, x1:x2] = m[y1:y2, x1:x2]
+            return clipped
+        except Exception as e:
+            print(f"[FVMTools] refine_bbox_with_sam3 failed: {e}")
+            return None
+
+    @classmethod
     def generate_body_bbox_fallback(cls, shape: tuple, face) -> np.ndarray:
         """Estimate body region from face bbox."""
         h, w = shape[:2]

@@ -12,6 +12,11 @@ from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
 from .utils.masker import MaskGenerator, run_sam3_grounding, assign_masks_to_faces, assign_masks_by_body_overlap
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask
+from .utils.yolo_detector import (
+    detect_objects,
+    assign_detections_to_references,
+    get_available_yolo_models,
+)
 from .utils.appearance import (
     extract_hair_color,
     extract_head_histogram,
@@ -76,6 +81,7 @@ class PersonSelectorSAM3:
     @classmethod
     def INPUT_TYPES(cls):
         aux_choices = list(AUX_PRESETS.keys())
+        yolo_choices = ["None"] + get_available_yolo_models()
         return {
             "required": {
                 "sam3_model": ("SAM3_MODEL_CONFIG", {"tooltip": "SAM3 model from LoadSAM3Model node"}),
@@ -111,6 +117,24 @@ class PersonSelectorSAM3:
                 "depth_map": ("IMAGE", {"tooltip": "Depth map for render order sorting."}),
                 "depth_sort_order": (["front_last", "front_first", "off"], {"default": "front_last",
                     "tooltip": "Rendering order for PersonDetailer."}),
+                "aux_yolo_model": (yolo_choices, {"default": "None",
+                    "tooltip": "Optional Ultralytics YOLO model for aux detection.\n"
+                               "Overrides the SAM3 text-prompt aux pathway when set.\n"
+                               "Bbox-only models are refined to pixel masks via SAM3/SAM\n"
+                               "when aux_yolo_sam_refine is on."}),
+                "aux_yolo_confidence": ("FLOAT", {"default": 0.30, "min": 0.05, "max": 1.0, "step": 0.05,
+                    "tooltip": "YOLO detection confidence threshold."}),
+                "aux_yolo_label_filter": ("STRING", {"default": "",
+                    "tooltip": "Comma-separated class-name substrings to keep (empty = all).\n"
+                               "Example: 'shoe,boot' or 'glasses'."}),
+                "aux_yolo_sam_refine": ("BOOLEAN", {"default": True,
+                    "tooltip": "On (default): refine bbox-only YOLO detections into pixel masks\n"
+                               "using SAM3 (priority) → SAM2 (fallback). Off: use raw bbox\n"
+                               "rectangles as aux masks (today's bbox-only behavior)."}),
+                "sam_model": ("SAM_MODEL", {"tooltip": "Optional SAM2 model from Impact Pack SAMLoader.\n"
+                                                       "Used as fallback when sam3_model isn't suitable for refinement."}),
+                "aux_yolo_sam_bbox_expansion": ("INT", {"default": 0, "min": 0, "max": 64, "step": 1,
+                    "tooltip": "Pixels to expand bbox before SAM refinement (helps thin objects)."}),
                 **{f"reference_{i}": ("IMAGE",) for i in range(2, cls.MAX_REFERENCES + 1)},
             },
         }
@@ -341,6 +365,91 @@ class PersonSelectorSAM3:
 
         return per_face
 
+    # ── YOLO aux pipeline (optional, replaces SAM3 text-prompt aux) ──
+
+    def _run_yolo_aux_per_face(self, single_image_tensor, cur_rgb, per_face_masks,
+                                aux_yolo_model, aux_yolo_confidence, aux_yolo_label_filter,
+                                aux_yolo_sam_refine, sam3_config, sam_model,
+                                aux_yolo_sam_bbox_expansion):
+        """Run YOLO detection, optionally refine bbox-only detections via SAM3/SAM,
+        assign to faces by body-mask overlap.
+
+        Returns:
+            per_face_aux: dict fi -> [H, W] np.float32 (union of assigned detections)
+            per_face_counts: dict fi -> int (number of detections assigned to this face)
+            unassigned_mask: [H, W] np.float32 (union of unassigned detections)
+            unassigned_count: int
+        """
+        h, w = cur_rgb.shape[:2]
+        face_count = len(per_face_masks)
+
+        detections = detect_objects(
+            single_image_tensor[0], aux_yolo_model,
+            confidence=aux_yolo_confidence, label_filter=aux_yolo_label_filter,
+        )
+
+        # Refine bbox-only masks before assignment so the overlap calculation
+        # benefits from the SAM-generated pixel form.
+        refined = []
+        for det in detections:
+            mask_2d = det["mask"]  # torch.Tensor [H, W]
+            if det.get("is_bbox_only", False) and aux_yolo_sam_refine:
+                refined_mask = None
+                if sam3_config is not None:
+                    refined_mask = MaskGenerator.refine_bbox_with_sam3(
+                        cur_rgb, det["bbox"], sam3_config,
+                        bbox_expansion=aux_yolo_sam_bbox_expansion,
+                    )
+                if refined_mask is None and sam_model is not None:
+                    refined_mask = MaskGenerator.refine_bbox_with_sam(
+                        cur_rgb, det["bbox"], sam_model,
+                        bbox_expansion=aux_yolo_sam_bbox_expansion,
+                    )
+                if refined_mask is not None and float(refined_mask.sum()) > 0:
+                    mask_2d = torch.from_numpy(refined_mask)
+            refined.append({**det, "mask": mask_2d})
+
+        # Assign each detection to the face whose body mask it overlaps most.
+        per_face_aux = {fi: np.zeros((h, w), dtype=np.float32) for fi in range(face_count)}
+        per_face_counts = {fi: 0 for fi in range(face_count)}
+        unassigned_acc = np.zeros((h, w), dtype=np.float32)
+        unassigned_count = 0
+
+        for det in refined:
+            det_mask = det["mask"]
+            det_area = float(det_mask.sum().item())
+            if det_area < 10:
+                continue
+            best_fi = -1
+            best_overlap = 0.0
+            for fi in range(face_count):
+                body = per_face_masks[fi].get("body")
+                if body is None:
+                    continue
+                body_2d = body[0] if body.dim() == 3 else body
+                inter = float((det_mask * body_2d).sum().item())
+                frac = inter / det_area if det_area > 0 else 0.0
+                if frac > best_overlap:
+                    best_overlap = frac
+                    best_fi = fi
+
+            mask_np = det_mask.cpu().numpy().astype(np.float32)
+            if best_overlap >= 0.10 and best_fi >= 0:
+                per_face_aux[best_fi] = np.maximum(per_face_aux[best_fi], mask_np)
+                per_face_counts[best_fi] += 1
+            else:
+                unassigned_acc = np.maximum(unassigned_acc, mask_np)
+                unassigned_count += 1
+
+        labels_found = sorted({d["label"] for d in detections})
+        bbox_only_count = sum(1 for d in detections if d.get("is_bbox_only", False))
+        print(f"    [aux_yolo] {len(detections)} detections "
+              f"({bbox_only_count} bbox-only), labels={labels_found or 'none'}, "
+              f"assigned={sum(per_face_counts.values())}, unassigned={unassigned_count}, "
+              f"refine={'on' if aux_yolo_sam_refine else 'off'}")
+
+        return per_face_aux, per_face_counts, unassigned_acc, unassigned_count
+
     # ── Preview Rendering ──
 
     def _render_preview(self, current_image, assignments, cur_faces, per_face_masks,
@@ -458,6 +567,9 @@ class PersonSelectorSAM3:
                 aux_threshold=0.30, match_weights="50/15/15/20",
                 reference_1=None, outfit_palettes=None,
                 depth_map=None, depth_sort_order="front_last",
+                aux_yolo_model="None", aux_yolo_confidence=0.30,
+                aux_yolo_label_filter="", aux_yolo_sam_refine=True,
+                sam_model=None, aux_yolo_sam_bbox_expansion=0,
                 **kwargs):
         import time as _time
         _t0 = _time.monotonic()
@@ -518,6 +630,10 @@ class PersonSelectorSAM3:
         person_data_masks = {mt: [] for mt in MASK_TYPES}
         person_data_masks["aux"] = []
         person_data_matches = []
+
+        use_yolo_aux = aux_yolo_model is not None and aux_yolo_model != "None"
+        aux_part_counts_batches = []  # list of {ri: count} per batch image
+        aux_unassigned_batches = []   # list of [1, H, W] tensors
         all_faces_parts = []
         matched_faces_parts = []
         preview_parts = []
@@ -594,6 +710,42 @@ class PersonSelectorSAM3:
 
             # Build per-ref masks from per-face masks via assignments
             fi_to_ri = {fi: ri for ri, (fi, sim) in assignments.items()}
+
+            # ── YOLO aux pipeline (overrides SAM3 text-prompt aux when set) ──
+            if use_yolo_aux:
+                yolo_per_face, yolo_counts, yolo_unassigned, yolo_unassigned_count = \
+                    self._run_yolo_aux_per_face(
+                        single, cur_rgb, per_face_masks,
+                        aux_yolo_model, aux_yolo_confidence, aux_yolo_label_filter,
+                        aux_yolo_sam_refine, sam3_model, sam_model,
+                        aux_yolo_sam_bbox_expansion,
+                    )
+                # Override per-face aux mask
+                for fi in range(len(per_face_masks)):
+                    aux_np = yolo_per_face.get(fi, np.zeros((h, w), dtype=np.float32))
+                    per_face_masks[fi]["aux"] = mask2tensor(aux_np)
+
+                # Per-ref counts via assignments (unmatched faces' detections fold into unassigned)
+                counts_per_ref = {ri: 0 for ri in range(num_refs)}
+                extra_unassigned_count = 0
+                extra_unassigned_acc = np.zeros((h, w), dtype=np.float32)
+                for fi, count in yolo_counts.items():
+                    if count <= 0:
+                        continue
+                    if fi in fi_to_ri:
+                        counts_per_ref[fi_to_ri[fi]] += count
+                    else:
+                        extra_unassigned_count += count
+                        extra_unassigned_acc = np.maximum(
+                            extra_unassigned_acc,
+                            yolo_per_face.get(fi, extra_unassigned_acc),
+                        )
+                aux_part_counts_batches.append(counts_per_ref)
+                merged_unassigned = np.maximum(yolo_unassigned, extra_unassigned_acc)
+                aux_unassigned_batches.append(
+                    torch.from_numpy(merged_unassigned).unsqueeze(0)  # [1, H, W]
+                )
+
             ref_masks = {mt: [] for mt in MASK_TYPES}
             ref_masks["aux"] = []
             for ri in range(num_refs):
@@ -745,8 +897,14 @@ class PersonSelectorSAM3:
         }
         for mt in MASK_TYPES:
             person_data[f"{mt}_masks"] = final_masks[mt]
-        if aux_preset != "none":
+        if aux_preset != "none" or use_yolo_aux:
             person_data["aux_masks"] = final_masks["aux"]
+        if use_yolo_aux:
+            person_data["aux_part_counts"] = aux_part_counts_batches
+            if aux_unassigned_batches:
+                person_data["aux_unassigned_masks"] = torch.cat(aux_unassigned_batches, dim=0)
+            else:
+                person_data["aux_unassigned_masks"] = torch.zeros(batch_size, h, w, dtype=torch.float32)
 
         # Batch masks: one mask per ref slot [num_refs, H, W], black if no match
         def _batch_masks(mask_list):
@@ -758,7 +916,7 @@ class PersonSelectorSAM3:
         batch_face = _batch_masks(final_masks["face"])
         batch_head = _batch_masks(final_masks["head"])
         batch_body = _batch_masks(final_masks["body"])
-        batch_aux = _batch_masks(final_masks["aux"]) if aux_preset != "none" else empty_mask(h, w)
+        batch_aux = _batch_masks(final_masks["aux"]) if (aux_preset != "none" or use_yolo_aux) else empty_mask(h, w)
 
         preview_out = torch.cat(preview_parts, dim=0)
         sims_str = " | ".join(sim_values)
@@ -766,7 +924,13 @@ class PersonSelectorSAM3:
         matched_count = sum(len(person_data_matches[b]) and any(person_data_matches[b]) for b in range(batch_size))
         total_faces = sum(len(all_per_face_masks[b]) for b in range(batch_size))
 
-        aux_info = f" | Aux: {aux_preset}" + (f" ('{aux_custom_prompt}')" if aux_preset == "custom" else "") if aux_preset != "none" else ""
+        if use_yolo_aux:
+            refine_state = "SAM3→SAM" if aux_yolo_sam_refine else "off"
+            aux_info = f" | Aux YOLO: {aux_yolo_model} (refine: {refine_state})"
+        elif aux_preset != "none":
+            aux_info = f" | Aux: {aux_preset}" + (f" ('{aux_custom_prompt}')" if aux_preset == "custom" else "")
+        else:
+            aux_info = ""
         report_lines = [
             f"## PersonSelectorSAM3",
             f"**{total_faces}** faces | **{num_refs}** refs | **{matched_count}** matched | {_elapsed}s",
