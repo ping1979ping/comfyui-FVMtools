@@ -94,17 +94,21 @@ class InpaintOptions:
 
         for i in range(1, 6):
             prefix = f"reference_{i}"
+            widgets[f"{prefix}_ref_index"] = ("INT", {"default": i, "min": 1, "max": 10, "step": 1,
+                                                       "tooltip": f"Which reference (1-10) this row configures.\n"
+                                                                  f"Default: row {i} → reference {i}.\n"
+                                                                  f"Person Selector supports up to 10 references."})
             widgets[f"{prefix}_mask_type"] = (mask_types, {"default": "head",
-                                                            "tooltip": f"Mask type for reference slot {i}.\n"
+                                                            "tooltip": f"Mask type for this row.\n"
                                                                        f"face=skin only, head=face+hair, body=full body,\n"
                                                                        f"aux=body-part SEGS from detector"})
             widgets[f"{prefix}_rounds"] = ("INT", {"default": 1, "min": 1, "max": 10, "step": 1,
-                                                    "tooltip": f"Number of inpaint passes for reference {i}.\n"
+                                                    "tooltip": f"Number of inpaint passes for this row.\n"
                                                                f"Each round re-encodes the previous result (latent cycling).\n"
                                                                f"Use denoise_progression/steps_progression to control per-round values.\n\n"
                                                                f"1 = single pass (default), 2-3 = progressive refinement"})
             widgets[f"{prefix}_detail_daemon"] = ("BOOLEAN", {"default": True,
-                                                               "tooltip": f"Enable Detail Daemon sigma manipulation for reference {i}.\n"
+                                                               "tooltip": f"Enable Detail Daemon sigma manipulation for this row.\n"
                                                                           f"Enhances detail preservation during inpainting."})
 
         widgets["generic_mask_type"] = (mask_types, {"default": "head",
@@ -124,12 +128,25 @@ class InpaintOptions:
 
     def execute(self, **kwargs):
         slots = {}
-        for prefix in ["reference_1", "reference_2", "reference_3", "reference_4", "reference_5", "generic"]:
-            slots[prefix] = {
-                "mask_type": kwargs.get(f"{prefix}_mask_type", "head"),
-                "rounds": kwargs.get(f"{prefix}_rounds", 1),
-                "detail_daemon": kwargs.get(f"{prefix}_detail_daemon", True),
+        # Reference rows are keyed in the OUTPUT by their chosen ref_index (1-10),
+        # not by row position — so a row set to ref_index=7 ends up at slots["reference_7"].
+        # Default ref_index per row equals the row number, preserving the legacy 1:1 mapping
+        # for workflows that pre-date the row selector.
+        for row_i in range(1, 6):
+            row_prefix = f"reference_{row_i}"
+            ref_index = int(kwargs.get(f"{row_prefix}_ref_index", row_i))
+            ref_index = max(1, min(10, ref_index))
+            slot_key = f"reference_{ref_index}"
+            slots[slot_key] = {
+                "mask_type": kwargs.get(f"{row_prefix}_mask_type", "head"),
+                "rounds": kwargs.get(f"{row_prefix}_rounds", 1),
+                "detail_daemon": kwargs.get(f"{row_prefix}_detail_daemon", True),
             }
+        slots["generic"] = {
+            "mask_type": kwargs.get("generic_mask_type", "head"),
+            "rounds": kwargs.get("generic_rounds", 1),
+            "detail_daemon": kwargs.get("generic_detail_daemon", True),
+        }
 
         return ({
             "cfg": kwargs.get("cfg", 1.0),
