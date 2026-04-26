@@ -82,6 +82,12 @@ class PersonDataRefiner:
                                                 "tooltip": "Dilate YOLO aux masks by N pixels"}),
                 "aux_blend_pixels": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1,
                                                "tooltip": "Gaussian blur radius for YOLO aux mask edges"}),
+                "aux_yolo_sam_refine": ("BOOLEAN", {"default": True,
+                    "tooltip": "On (default): refine bbox-only YOLO detections into pixel masks\n"
+                               "using SAM3 (priority) → SAM2 (fallback). Off: use raw bbox\n"
+                               "rectangles as aux masks (today's bbox-only behavior)."}),
+                "aux_yolo_sam_bbox_expansion": ("INT", {"default": 0, "min": 0, "max": 64, "step": 1,
+                    "tooltip": "Pixels to expand bbox before SAM refinement (helps thin objects)."}),
             },
         }
 
@@ -158,7 +164,8 @@ class PersonDataRefiner:
                 sam_model=None, sam3_model=None,
                 depth_map=None, depth_edge_threshold=0.05, depth_carve_strength=0.8, depth_grow_pixels=30,
                 aux_model="none", aux_confidence=0.35, aux_label="",
-                aux_fill_holes=False, aux_expand_pixels=0, aux_blend_pixels=0):
+                aux_fill_holes=False, aux_expand_pixels=0, aux_blend_pixels=0,
+                aux_yolo_sam_refine=True, aux_yolo_sam_bbox_expansion=0):
 
         import time as _time
         import cv2
@@ -187,7 +194,9 @@ class PersonDataRefiner:
             new_person_data = self._run_yolo_aux(
                 new_person_data, images, num_refs, new_h, new_w, batch_size,
                 aux_model, aux_confidence, aux_label,
-                aux_fill_holes, aux_expand_pixels, aux_blend_pixels)
+                aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
+                aux_yolo_sam_refine, aux_yolo_sam_bbox_expansion,
+                sam3_model, sam_model)
             _elapsed = int(_time.monotonic() - _t0)
             report = f"YOLO-only pass ({_elapsed}s): resolution unchanged, skipped face regen"
             print(f"  Done in {_elapsed}s\n{'='*50}\n")
@@ -401,7 +410,9 @@ class PersonDataRefiner:
             new_person_data = self._run_yolo_aux(
                 new_person_data, images, num_refs, new_h, new_w, batch_size,
                 aux_model, aux_confidence, aux_label,
-                aux_fill_holes, aux_expand_pixels, aux_blend_pixels)
+                aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
+                aux_yolo_sam_refine, aux_yolo_sam_bbox_expansion,
+                sam3_model, sam_model)
 
         _elapsed = int(_time.monotonic() - _t0)
         report_lines.insert(0, f"Runtime: {_elapsed}s")
@@ -426,12 +437,15 @@ class PersonDataRefiner:
 
     def _run_yolo_aux(self, person_data, images, num_refs, h, w, batch_size,
                       aux_model, aux_confidence, aux_label,
-                      aux_fill_holes, aux_expand_pixels, aux_blend_pixels):
+                      aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
+                      aux_yolo_sam_refine=True, aux_yolo_sam_bbox_expansion=0,
+                      sam3_model=None, sam_model=None):
         """Run YOLO detection on images and inject aux_masks into person_data.
 
         Reuses the same logic as PersonSelectorMulti's YOLO block:
-        detect → assign to refs via body mask overlap → merge → post-process.
-        Replaces any existing aux_masks in person_data.
+        detect → optional SAM-refine bbox-only detections → assign to refs
+        via body mask overlap → merge → post-process. Replaces any existing
+        aux_masks in person_data.
         """
         def _aux_post(mask_2d):
             if aux_expand_pixels > 0:
@@ -450,6 +464,32 @@ class PersonDataRefiner:
             single_image = images[b]  # [H, W, C]
             detections = detect_objects(single_image, aux_model,
                                         confidence=aux_confidence, label_filter=aux_label)
+
+            # Optional SAM-refinement of bbox-only detections (priority: SAM3 → SAM2).
+            # Off → bbox rectangles flow through unchanged (today's behavior).
+            if aux_yolo_sam_refine and detections:
+                cur_rgb = (single_image.cpu().numpy() * 255).clip(0, 255).astype(np.uint8)
+                refined_count = 0
+                for det in detections:
+                    if not det.get("is_bbox_only", False):
+                        continue
+                    refined_mask = None
+                    if sam3_model is not None:
+                        refined_mask = MaskGenerator.refine_bbox_with_sam3(
+                            cur_rgb, det["bbox"], sam3_model,
+                            bbox_expansion=aux_yolo_sam_bbox_expansion,
+                        )
+                    if refined_mask is None and sam_model is not None:
+                        refined_mask = MaskGenerator.refine_bbox_with_sam(
+                            cur_rgb, det["bbox"], sam_model,
+                            bbox_expansion=aux_yolo_sam_bbox_expansion,
+                        )
+                    if refined_mask is not None and float(refined_mask.sum()) > 0:
+                        det["mask"] = torch.from_numpy(refined_mask)
+                        refined_count += 1
+                if refined_count > 0:
+                    print(f"  [PersonDataRefiner YOLO] Image {b+1}: SAM-refined "
+                          f"{refined_count}/{len(detections)} bbox-only detections")
 
             body_masks_list = person_data.get("body_masks", [])
             det_assignments = assign_detections_to_references(
