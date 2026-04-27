@@ -22,6 +22,11 @@ try:
     from .nodes.smp.location_combiner import FVM_SMP_LocationCombiner
     from .nodes.smp.structured_assembler import FVM_SMP_StructuredPromptAssembler
     from .nodes.smp.sam_class_router import FVM_SMP_SAMClassRouter
+    from .nodes.smp.builders.subject_builder import FVM_SMP_SubjectBuilder
+    from .nodes.smp.builders.clothing_builder import FVM_SMP_ClothingBuilder
+    from .nodes.smp.builders.environment_builder import FVM_SMP_EnvironmentBuilder
+    from .nodes.smp.aggregator import FVM_SMP_Aggregator
+    from .nodes.smp.serialize import FVM_SMP_PromptSerialize
 
     # ── API routes for outfit list editing ──
     import os
@@ -322,6 +327,11 @@ try:
         "FVM_SMP_LocationCombiner":  FVM_SMP_LocationCombiner,
         "FVM_SMP_StructuredPromptAssembler": FVM_SMP_StructuredPromptAssembler,
         "FVM_SMP_SAMClassRouter":    FVM_SMP_SAMClassRouter,
+        "FVM_SMP_SubjectBuilder":     FVM_SMP_SubjectBuilder,
+        "FVM_SMP_ClothingBuilder":    FVM_SMP_ClothingBuilder,
+        "FVM_SMP_EnvironmentBuilder": FVM_SMP_EnvironmentBuilder,
+        "FVM_SMP_Aggregator":         FVM_SMP_Aggregator,
+        "FVM_SMP_PromptSerialize":    FVM_SMP_PromptSerialize,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -346,6 +356,11 @@ try:
         "FVM_SMP_LocationCombiner":  "SMP · Location Combiner",
         "FVM_SMP_StructuredPromptAssembler": "SMP · Structured Prompt Assembler",
         "FVM_SMP_SAMClassRouter":    "SMP · SAM3 Class Router",
+        "FVM_SMP_SubjectBuilder":     "SMP · Subject Builder",
+        "FVM_SMP_ClothingBuilder":    "SMP · Clothing Builder",
+        "FVM_SMP_EnvironmentBuilder": "SMP · Environment Builder",
+        "FVM_SMP_Aggregator":         "SMP · Aggregator",
+        "FVM_SMP_PromptSerialize":    "SMP · Prompt Serialize",
     }
 
     WEB_DIRECTORY = "./web/js"
