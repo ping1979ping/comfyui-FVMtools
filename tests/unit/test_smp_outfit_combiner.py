@@ -85,3 +85,30 @@ def test_full_pipeline_dict_only_no_tokens():
     a, _ = FVM_SMP_OutfitCombiner().combine(raw, palette)
     b, _ = FVM_SMP_OutfitCombiner().combine(raw, palette)
     assert a == b
+
+
+def test_combiner_resolves_color_marker_in_data_files():
+    """Regression: outfit sets like aerobic_female embed `#color#` literally
+    in garment names. The engine must substitute it with the role tag so the
+    combiner sees a single role token to resolve, leaving no `#color#` behind.
+    """
+    # aerobic_female top.txt entries are of the form "#color# bodysuit ..."
+    raw = FVM_SMP_OutfitGenerator().generate(
+        outfit_set="aerobic_female", seed=0, style_preset="general",
+        formality=0.0, coverage=0.5,
+        enable_headwear=False, enable_top=True, enable_bottom=True,
+        enable_footwear=True, enable_outerwear=False,
+        enable_accessories=False, enable_bag=False,
+        print_probability=0.3, text_mode="auto",
+    )[0]
+    # Engine output must NOT contain the literal `#color#` marker any more
+    for g in raw["garments"].values():
+        assert "#color#" not in g["prompt_fragment"], (
+            f"engine left literal #color# marker in: {g['prompt_fragment']!r}"
+        )
+    palette = _palette()
+    resolved, _ = FVM_SMP_OutfitCombiner().combine(raw, palette)
+    for g in resolved["garments"].values():
+        assert "#" not in g["prompt_fragment"], (
+            f"unresolved token in: {g['prompt_fragment']!r}"
+        )

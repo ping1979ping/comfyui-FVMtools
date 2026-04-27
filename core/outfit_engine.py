@@ -339,14 +339,36 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
 
 
 def _build_description(color_tag, fabric_name, garment_name, decoration=None):
-    """Build a single garment description like '#primary# silk blouse with floral print'."""
-    parts = [color_tag]
-    if fabric_name and fabric_name not in INVISIBLE_FABRICS:
-        parts.append(fabric_name)
-    parts.append(garment_name)
+    """Build a single garment description like '#primary# silk blouse with floral print'.
+
+    If the garment name embeds a literal ``#color#`` marker (data-file
+    convention — see ``core/outfit_lists.py:72``), the marker dictates where
+    the color token lands; fabric is placed immediately after it. Otherwise
+    the color tag is prepended and fabric inserted between color and name.
+    """
+    fabric_visible = bool(fabric_name) and fabric_name not in INVISIBLE_FABRICS
+
+    if "#color#" in (garment_name or ""):
+        pre, post = garment_name.split("#color#", 1)
+        pieces: list[str] = []
+        if pre.strip():
+            pieces.append(pre.strip())
+        pieces.append(color_tag)
+        if fabric_visible:
+            pieces.append(fabric_name)
+        if post.strip():
+            pieces.append(post.strip())
+        result = " ".join(pieces)
+    else:
+        parts = [color_tag]
+        if fabric_visible:
+            parts.append(fabric_name)
+        parts.append(garment_name)
+        result = " ".join(parts)
+
     if decoration:
-        parts.append(f"with {decoration}")
-    return " ".join(parts)
+        result = f"{result} with {decoration}"
+    return result
 
 
 def _consume_decoration_rng(rng):
