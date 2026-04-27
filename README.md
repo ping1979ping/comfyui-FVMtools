@@ -19,8 +19,9 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
 - **Color palette generation** — 7 harmony types, 14 style presets, 161 named colors
 - **Palette from image** — K-Means extraction with fashion-aware mode (no scikit-learn needed)
 - **Outfit prompt builder** — 40+ themed outfit sets, seed-controlled, with `#color#` tag integration and in-browser list editing
+- **StructPromptMaker (SMP)** — typed dict-based structural prompt pipeline with Outfit / Color / Location generators, deep-merge Aggregator, regional StructuredPromptAssembler that bridges into the existing SAM3 + PersonDetailer stack, and SidecarSaver that writes a `.prompt.json` next to each rendered image. See [SMP reference workflow](examples/workflows/smp_v1_minimal.md).
 - **Configurable model paths** — fallback paths via `outfit_config.ini` when models are in non-standard locations
-- **Zero extra dependencies for Color/Fashion tools** — only numpy (already in ComfyUI)
+- **Zero extra dependencies for Color/Fashion tools** — only numpy (already in ComfyUI). SMP additionally uses pydantic 2 (already in the ComfyUI venv).
 
 ---
 

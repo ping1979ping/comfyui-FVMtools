@@ -27,6 +27,7 @@ try:
     from .nodes.smp.builders.environment_builder import FVM_SMP_EnvironmentBuilder
     from .nodes.smp.aggregator import FVM_SMP_Aggregator
     from .nodes.smp.serialize import FVM_SMP_PromptSerialize
+    from .nodes.smp.sidecar_saver import FVM_SMP_SidecarSaver
 
     # ── API routes for outfit list editing ──
     import os
@@ -332,6 +333,7 @@ try:
         "FVM_SMP_EnvironmentBuilder": FVM_SMP_EnvironmentBuilder,
         "FVM_SMP_Aggregator":         FVM_SMP_Aggregator,
         "FVM_SMP_PromptSerialize":    FVM_SMP_PromptSerialize,
+        "FVM_SMP_SidecarSaver":       FVM_SMP_SidecarSaver,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -361,6 +363,7 @@ try:
         "FVM_SMP_EnvironmentBuilder": "SMP · Environment Builder",
         "FVM_SMP_Aggregator":         "SMP · Aggregator",
         "FVM_SMP_PromptSerialize":    "SMP · Prompt Serialize",
+        "FVM_SMP_SidecarSaver":       "SMP · Sidecar Saver",
     }
 
     WEB_DIRECTORY = "./web/js"
