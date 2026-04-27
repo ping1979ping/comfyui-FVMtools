@@ -1,0 +1,9 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright Mediterranean midday | 1.0 | - | -
+golden hour over the sea | 0.95 | - | -
+warm late-afternoon honey light | 0.9 | - | -
+soft pre-dawn pastel | 0.7 | - | -
+twilight blue hour | 0.75 | - | -
+early morning sidelight off the water | 0.8 | - | -

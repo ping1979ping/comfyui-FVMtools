@@ -1,0 +1,9 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+high-key studio daylight | 1.0 | - | -
+low-key chiaroscuro setup | 0.85 | - | -
+soft beauty-dish key | 0.9 | - | -
+rim-lit dramatic setup | 0.75 | - | -
+even diffused fashion lighting | 0.95 | - | -
+dramatic single-source key | 0.7 | - | -

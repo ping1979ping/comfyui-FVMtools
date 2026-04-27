@@ -1,0 +1,11 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+wide concrete steps | 1.0 | 0.1-0.3 | smooth troweled treads
+low geometric bench | 0.9 | 0.0-0.2 | polished sealed top
+raised concrete platform | 0.85 | 0.1-0.3 | aggregate exposed surface
+minimalist planter block | 0.7 | 0.0-0.2 | board-formed sides
+angular concrete plinth | 0.75 | 0.0-0.2 | smooth precast finish
+stepped seating ledge | 0.8 | 0.1-0.3 | bush-hammered top
+sunken pit edge | 0.55 | 0.1-0.3 | rough cast lip
+modernist threshold slab | 0.6 | 0.0-0.2 | polished grey surface

@@ -1,0 +1,8 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clean clear studio air | 1.0 | - | -
+soft atmospheric haze | 0.7 | - | -
+subtle diffused smoke | 0.6 | - | -
+hint of theatrical fog | 0.5 | - | -
+crisp neutral studio atmosphere | 0.95 | - | -

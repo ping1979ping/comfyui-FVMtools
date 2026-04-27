@@ -18,6 +18,8 @@ try:
     from .nodes.smp.outfit_generator import FVM_SMP_OutfitGenerator
     from .nodes.smp.color_generator import FVM_SMP_ColorGenerator
     from .nodes.smp.outfit_combiner import FVM_SMP_OutfitCombiner
+    from .nodes.smp.location_generator import FVM_SMP_LocationGenerator
+    from .nodes.smp.location_combiner import FVM_SMP_LocationCombiner
 
     # ── API routes for outfit list editing ──
     import os
@@ -311,9 +313,11 @@ try:
         "PersonDetailerPower": PersonDetailerPower,
         "PersonSelectorSAM3": PersonSelectorSAM3,
         # ── SMP (StructPromptMaker) ──
-        "FVM_SMP_OutfitGenerator": FVM_SMP_OutfitGenerator,
-        "FVM_SMP_ColorGenerator":  FVM_SMP_ColorGenerator,
-        "FVM_SMP_OutfitCombiner":  FVM_SMP_OutfitCombiner,
+        "FVM_SMP_OutfitGenerator":   FVM_SMP_OutfitGenerator,
+        "FVM_SMP_ColorGenerator":    FVM_SMP_ColorGenerator,
+        "FVM_SMP_OutfitCombiner":    FVM_SMP_OutfitCombiner,
+        "FVM_SMP_LocationGenerator": FVM_SMP_LocationGenerator,
+        "FVM_SMP_LocationCombiner":  FVM_SMP_LocationCombiner,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -331,9 +335,11 @@ try:
         "PersonDetailerPower": "Person Detailer Power",
         "PersonSelectorSAM3": "Person Selector SAM3",
         # ── SMP (StructPromptMaker) ──
-        "FVM_SMP_OutfitGenerator": "SMP · Outfit Generator (dict)",
-        "FVM_SMP_ColorGenerator":  "SMP · Color Generator (dict)",
-        "FVM_SMP_OutfitCombiner":  "SMP · Outfit Combiner",
+        "FVM_SMP_OutfitGenerator":   "SMP · Outfit Generator (dict)",
+        "FVM_SMP_ColorGenerator":    "SMP · Color Generator (dict)",
+        "FVM_SMP_OutfitCombiner":    "SMP · Outfit Combiner",
+        "FVM_SMP_LocationGenerator": "SMP · Location Generator (dict)",
+        "FVM_SMP_LocationCombiner":  "SMP · Location Combiner",
     }
 
     WEB_DIRECTORY = "./web/js"

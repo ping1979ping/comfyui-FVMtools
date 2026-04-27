@@ -1,0 +1,11 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low whitewashed garden wall | 1.0 | 0.3-0.6 | chalky lime finish with hairline cracks
+terraced bougainvillea garden | 0.9 | 0.3-0.6 | tumbling magenta blooms over rough render
+narrow cobbled lane | 0.85 | 0.2-0.5 | uneven worn paving with sun-warmed grout
+distant cypress row | 0.8 | 0.2-0.5 | slender dark green spires against sky
+sun-faded harbor steps | 0.75 | 0.2-0.5 | smooth-trodden ochre treads
+pergola draped with grapevines | 0.7 | 0.3-0.6 | dappled leafy canopy on aged timber
+clustered hillside dwellings | 0.65 | 0.3-0.6 | stacked pastel cubes with painted shutters
+weathered seaside balustrade | 0.6 | 0.2-0.5 | turned stone columns with salt-frosted patina

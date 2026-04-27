@@ -1,0 +1,9 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear crystalline blue sky | 1.0 | - | -
+light coastal haze | 0.85 | - | -
+thin scattered clouds | 0.8 | - | -
+warm dry Mediterranean breeze visible | 0.75 | - | -
+soft humid sea air | 0.7 | - | -
+faint salt mist drifting inland | 0.6 | - | -

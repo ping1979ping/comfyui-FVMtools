@@ -1,0 +1,9 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+softbox edge spill | 0.7 | 0.02-0.12 | feathered luminous bleed
+faint barn-door shadow | 0.55 | 0.02-0.1 | crisp linear shape
+key-light gradient | 0.75 | 0.05-0.15 | smoothly graded falloff
+edge falloff into shadow | 0.7 | 0.03-0.12 | velvety tonal drop
+subtle grid-spot pattern | 0.45 | 0.02-0.1 | softly hexagonal bloom
+flag-cut hard edge | 0.5 | 0.02-0.1 | sharp linear cutoff

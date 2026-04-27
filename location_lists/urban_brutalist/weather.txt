@@ -1,0 +1,9 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear crisp atmosphere | 1.0 | - | -
+light overcast haze | 0.9 | - | -
+after-rain damp surfaces | 0.75 | - | -
+dry concrete glare | 0.85 | - | -
+flat grey diffused sky | 0.8 | - | -
+cool dry breeze clarity | 0.65 | - | -

@@ -1,0 +1,11 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+bone seamless paper roll | 1.0 | 0.7-1.0 | matte fibrous finish
+charcoal seamless paper roll | 0.9 | 0.7-1.0 | softly absorbent surface
+dove grey seamless paper roll | 0.85 | 0.7-1.0 | smooth photographic surface
+dusty rose seamless paper roll | 0.6 | 0.6-0.95 | soft chalky finish
+sage seamless paper roll | 0.55 | 0.6-0.95 | muted velvety surface
+hand-painted muslin backdrop | 0.7 | 0.7-1.0 | mottled canvas weave
+smooth gradient wall | 0.65 | 0.8-1.0 | softly graduated tone
+matte black void | 0.5 | 0.8-1.0 | light-swallowing depth

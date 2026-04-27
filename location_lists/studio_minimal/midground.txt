@@ -1,0 +1,9 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+distant softbox glow | 0.7 | 0.1-0.35 | feathered halo edge
+faint catchlight reflection | 0.55 | 0.1-0.25 | crisp specular sheen
+subtle vignette darkening | 0.65 | 0.15-0.4 | smoothly falling tonality
+hovering rim of fill light | 0.5 | 0.1-0.3 | gentle luminous gradient
+soft halo from beauty dish | 0.45 | 0.1-0.3 | diffused circular wash
+recessed shadow gradient | 0.55 | 0.15-0.4 | velvety tonal transition

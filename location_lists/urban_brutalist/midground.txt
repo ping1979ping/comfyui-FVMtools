@@ -1,0 +1,11 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low retaining wall | 1.0 | 0.3-0.6 | board-formed horizontal grain
+cantilevered concrete slab | 0.8 | 0.2-0.5 | smooth underside with drip edge
+recessed alcove volume | 0.7 | 0.2-0.5 | shadowed rough cast surface
+stepped terrace platform | 0.9 | 0.3-0.6 | aggregate exposed finish
+angular concrete buttress | 0.6 | 0.2-0.5 | bush-hammered texture
+modernist planter wall | 0.75 | 0.2-0.5 | smooth grey precast
+geometric concrete kiosk | 0.5 | 0.2-0.4 | polished sealed surface
+sunken plaza wall | 0.65 | 0.3-0.6 | weathered streaked patina
