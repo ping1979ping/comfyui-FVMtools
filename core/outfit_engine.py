@@ -196,6 +196,148 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
     }
 
 
+def generate_outfit_records(seed, outfit_set="general_female", style_preset="general",
+                             formality=0.5, coverage=0.5, slot_enables=None,
+                             overrides=None, print_probability=0.3, text_mode="auto"):
+    """Like ``generate_outfit`` but returns rich per-garment records.
+
+    Used by the SMP (StructPromptMaker) dict-based pipeline. Same algorithm
+    and same RNG consumption order as ``generate_outfit`` so determinism is
+    preserved across the V1 string-form and V2 dict-form code paths.
+
+    Returns: dict {
+        "seed": int,
+        "outfit_set": str,
+        "style_preset": str,
+        "effective_formality": float,
+        "coverage_target": float,
+        "active_slots": list[str],
+        "garments": dict[slot, {
+            "slot", "name", "fabric", "color_tag", "color_role",
+            "decoration", "prompt_fragment", "is_override",
+        }],
+    }
+    """
+    rng = random.Random(seed)
+    preset = OUTFIT_PRESETS.get(style_preset, OUTFIT_PRESETS["general"])
+    f_min, f_max = preset["formality_range"]
+    eff_formality = max(f_min, min(f_max, formality))
+
+    all_garments = {slot: load_garments(slot, outfit_set) for slot in SLOT_ORDER}
+    fabrics_db = load_fabrics(outfit_set)
+    fabric_harmony = load_fabric_harmony()
+    prints_list = load_prints(outfit_set)
+    texts_list = load_texts(outfit_set)
+
+    if slot_enables is None:
+        slot_enables = {s: True for s in SLOT_ORDER}
+    if overrides is None:
+        overrides = {}
+
+    resolved_overrides = {}
+    for slot_name, ov in overrides.items():
+        resolved = dict(ov)
+        if resolved.get("garment"):
+            resolved["garment"] = resolve_wildcards(resolved["garment"], rng)
+        if resolved.get("fabric"):
+            resolved["fabric"] = resolve_wildcards(resolved["fabric"], rng)
+        resolved_overrides[slot_name] = resolved
+    overrides = resolved_overrides
+
+    active_slots = []
+    for slot in SLOT_ORDER:
+        roll = rng.random()
+        if not slot_enables.get(slot, False):
+            continue
+        ov_mode = overrides.get(slot, {}).get("mode")
+        if ov_mode == "exclude":
+            continue
+        if ov_mode == "override":
+            active_slots.append(slot)
+        elif slot in ALWAYS_ACTIVE_SLOTS:
+            active_slots.append(slot)
+        else:
+            base_prob = preset["slot_probabilities"].get(slot, 0.5)
+            adjusted_prob = min(1.0, base_prob * (0.5 + coverage))
+            if roll < adjusted_prob:
+                active_slots.append(slot)
+
+    preferred_families = preset.get("preferred_fabric_families")
+    garments_out: dict = {}
+
+    for slot in SLOT_ORDER:
+        if slot not in active_slots:
+            _consume_decoration_rng(rng)
+            continue
+
+        ov = overrides.get(slot, {})
+
+        if ov.get("mode") == "override" and ov.get("garment"):
+            garment_name = ov["garment"]
+            fabric_name = ov.get("fabric")
+            color_tag = ov.get("color_tag") or DEFAULT_COLOR_TAGS.get(slot, "#primary#")
+            ov_decoration = ov.get("decoration")
+            if ov_decoration is not None:
+                decoration = None if ov_decoration.lower() == "none" else ov_decoration
+                _consume_decoration_rng(rng)
+            else:
+                decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
+                                              texts_list, print_probability, text_mode)
+            fragment = _build_description(color_tag, fabric_name, garment_name, decoration)
+            garments_out[slot] = {
+                "slot": slot,
+                "name": garment_name,
+                "fabric": fabric_name,
+                "color_tag": color_tag,
+                "decoration": decoration,
+                "prompt_fragment": fragment,
+                "is_override": True,
+            }
+            continue
+
+        garments = all_garments.get(slot, [])
+        if not garments:
+            _consume_decoration_rng(rng)
+            continue
+
+        compatible = [g for g in garments
+                      if g["formality"][0] <= eff_formality <= g["formality"][1]]
+        if not compatible:
+            compatible = garments
+
+        weights = [g["probability"] for g in compatible]
+        chosen_garment = rng.choices(compatible, weights=weights, k=1)[0]
+
+        garment_fabrics = chosen_garment["fabrics"]
+        fabric_name = _pick_fabric(rng, garment_fabrics, fabrics_db, fabric_harmony,
+                                   eff_formality, preferred_families)
+
+        decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
+                                      texts_list, print_probability, text_mode)
+
+        color_tag = DEFAULT_COLOR_TAGS.get(slot, "#primary#")
+        fragment = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration)
+        garments_out[slot] = {
+            "slot": slot,
+            "name": chosen_garment["name"],
+            "fabric": fabric_name,
+            "color_tag": color_tag,
+            "decoration": decoration,
+            "prompt_fragment": fragment,
+            "is_override": False,
+        }
+
+    return {
+        "seed": seed,
+        "outfit_set": outfit_set,
+        "style_preset": style_preset,
+        "effective_formality": eff_formality,
+        "coverage_target": coverage,
+        "active_slots": active_slots,
+        "garments": garments_out,
+    }
+
+
 def _build_description(color_tag, fabric_name, garment_name, decoration=None):
     """Build a single garment description like '#primary# silk blouse with floral print'."""
     parts = [color_tag]

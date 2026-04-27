@@ -14,6 +14,11 @@ try:
     from .nodes.person_detailer_power import PersonDetailerPower
     from .nodes.person_selector_sam3 import PersonSelectorSAM3
 
+    # ── SMP (StructPromptMaker) — dict-based structural prompt suite ──
+    from .nodes.smp.outfit_generator import FVM_SMP_OutfitGenerator
+    from .nodes.smp.color_generator import FVM_SMP_ColorGenerator
+    from .nodes.smp.outfit_combiner import FVM_SMP_OutfitCombiner
+
     # ── API routes for outfit list editing ──
     import os
     from aiohttp import web
@@ -305,6 +310,10 @@ try:
         "PersonDetailerControlNet": PersonDetailerControlNet,
         "PersonDetailerPower": PersonDetailerPower,
         "PersonSelectorSAM3": PersonSelectorSAM3,
+        # ── SMP (StructPromptMaker) ──
+        "FVM_SMP_OutfitGenerator": FVM_SMP_OutfitGenerator,
+        "FVM_SMP_ColorGenerator":  FVM_SMP_ColorGenerator,
+        "FVM_SMP_OutfitCombiner":  FVM_SMP_OutfitCombiner,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -321,6 +330,10 @@ try:
         "PersonDetailerControlNet": "Person Detailer ControlNet",
         "PersonDetailerPower": "Person Detailer Power",
         "PersonSelectorSAM3": "Person Selector SAM3",
+        # ── SMP (StructPromptMaker) ──
+        "FVM_SMP_OutfitGenerator": "SMP · Outfit Generator (dict)",
+        "FVM_SMP_ColorGenerator":  "SMP · Color Generator (dict)",
+        "FVM_SMP_OutfitCombiner":  "SMP · Outfit Combiner",
     }
 
     WEB_DIRECTORY = "./web/js"
