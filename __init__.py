@@ -20,6 +20,8 @@ try:
     from .nodes.smp.outfit_combiner import FVM_SMP_OutfitCombiner
     from .nodes.smp.location_generator import FVM_SMP_LocationGenerator
     from .nodes.smp.location_combiner import FVM_SMP_LocationCombiner
+    from .nodes.smp.structured_assembler import FVM_SMP_StructuredPromptAssembler
+    from .nodes.smp.sam_class_router import FVM_SMP_SAMClassRouter
 
     # ── API routes for outfit list editing ──
     import os
@@ -318,6 +320,8 @@ try:
         "FVM_SMP_OutfitCombiner":    FVM_SMP_OutfitCombiner,
         "FVM_SMP_LocationGenerator": FVM_SMP_LocationGenerator,
         "FVM_SMP_LocationCombiner":  FVM_SMP_LocationCombiner,
+        "FVM_SMP_StructuredPromptAssembler": FVM_SMP_StructuredPromptAssembler,
+        "FVM_SMP_SAMClassRouter":    FVM_SMP_SAMClassRouter,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -340,6 +344,8 @@ try:
         "FVM_SMP_OutfitCombiner":    "SMP · Outfit Combiner",
         "FVM_SMP_LocationGenerator": "SMP · Location Generator (dict)",
         "FVM_SMP_LocationCombiner":  "SMP · Location Combiner",
+        "FVM_SMP_StructuredPromptAssembler": "SMP · Structured Prompt Assembler",
+        "FVM_SMP_SAMClassRouter":    "SMP · SAM3 Class Router",
     }
 
     WEB_DIRECTORY = "./web/js"
