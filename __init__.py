@@ -365,6 +365,47 @@ try:
             f.write(content)
         return web.json_response({"success": True})
 
+    # ── JB prompt-catalog routes ──
+
+    from .core.jb import catalog as _jb_catalog
+
+    @PromptServer.instance.routes.get("/fvmtools/jb-catalog")
+    async def _list_jb_catalog(request):
+        """List categories and entries: {category: [entry_name, ...]}."""
+        out = {}
+        for cat in _jb_catalog.list_categories():
+            out[cat] = _jb_catalog.list_entries(cat)
+        return web.json_response({"catalog": out})
+
+    @PromptServer.instance.routes.get("/fvmtools/jb-catalog-entry")
+    async def _get_jb_catalog_entry(request):
+        category = request.rel_url.query.get("category", "")
+        name = request.rel_url.query.get("name", "")
+        data = _jb_catalog.read_entry(category, name)
+        if data is None:
+            return web.json_response({"error": "not found"}, status=404)
+        return web.json_response({"data": data})
+
+    @PromptServer.instance.routes.post("/fvmtools/jb-catalog-entry")
+    async def _save_jb_catalog_entry(request):
+        body = await request.json()
+        category = body.get("category", "")
+        name = body.get("name", "")
+        data = body.get("data")
+        if data is None:
+            return web.json_response({"error": "missing data"}, status=400)
+        ok = _jb_catalog.write_entry(category, name, data)
+        if not ok:
+            return web.json_response({"error": "invalid name or category"}, status=400)
+        return web.json_response({"success": True})
+
+    @PromptServer.instance.routes.delete("/fvmtools/jb-catalog-entry")
+    async def _delete_jb_catalog_entry(request):
+        category = request.rel_url.query.get("category", "")
+        name = request.rel_url.query.get("name", "")
+        ok = _jb_catalog.delete_entry(category, name)
+        return web.json_response({"success": ok})
+
     NODE_CLASS_MAPPINGS = {
         "PersonSelector": PersonSelector,
         "PersonSelectorMulti": PersonSelectorMulti,
