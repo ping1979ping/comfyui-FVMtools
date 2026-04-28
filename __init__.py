@@ -31,6 +31,8 @@ try:
 
     # ── JB (JSON Builder) — universal JSON-prompt assembly ──
     from .nodes.jb.builder import FVM_JB_Builder
+    from .nodes.jb.stitcher import FVM_JB_Stitcher
+    from .nodes.jb.extractor import FVM_JB_Extractor
 
     # ── API routes for outfit list editing ──
     import os
@@ -339,6 +341,8 @@ try:
         "FVM_SMP_SidecarSaver":       FVM_SMP_SidecarSaver,
         # ── JB (JSON Builder) ──
         "FVM_JB_Builder":             FVM_JB_Builder,
+        "FVM_JB_Stitcher":            FVM_JB_Stitcher,
+        "FVM_JB_Extractor":           FVM_JB_Extractor,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -371,6 +375,8 @@ try:
         "FVM_SMP_SidecarSaver":       "SMP · Sidecar Saver (legacy)",
         # ── JB (JSON Builder) ──
         "FVM_JB_Builder":             "JB · Builder",
+        "FVM_JB_Stitcher":            "JB · Stitcher",
+        "FVM_JB_Extractor":           "JB · Extractor",
     }
 
     WEB_DIRECTORY = "./web/js"
