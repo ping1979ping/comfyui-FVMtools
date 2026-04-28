@@ -19,9 +19,10 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
 - **Color palette generation** — 7 harmony types, 14 style presets, 161 named colors
 - **Palette from image** — K-Means extraction with fashion-aware mode (no scikit-learn needed)
 - **Outfit prompt builder** — 40+ themed outfit sets, seed-controlled, with `#color#` tag integration and in-browser list editing
-- **StructPromptMaker (SMP)** — typed dict-based structural prompt pipeline with Outfit / Color / Location generators, deep-merge Aggregator, regional StructuredPromptAssembler that bridges into the existing SAM3 + PersonDetailer stack, and SidecarSaver that writes a `.prompt.json` next to each rendered image. See [SMP reference workflow](examples/workflows/smp_v1_minimal.md).
+- **JB (JSON Builder)** — universal JSON-prompt assembly suite. Five nodes: `JB · Outfit Block` and `JB · Location Block` (one-shot combos with built-in palette + Edit List), `JB · Builder` (hand-author a tree of `key:value` rows with indent-based nesting + Insert From Catalog dropdown + Edit Catalog modal), `JB · Stitcher` (deep-merge N JSON fragments under one title, dynamic input slots), and `JB · Extractor` (pull a sub-tree by dot-path). Output is plain string (strict JSON or loose-keys, no-key-quotes form) ready for any CLIPTextEncode. See [JB reference workflow](examples/workflows/jb_v1_minimal.md).
+- **StructPromptMaker (SMP, legacy)** — earlier multi-stage pipeline (Outfit / Color / Location generators, deep-merge Aggregator, regional StructuredPromptAssembler bridging into SAM3 + PersonDetailer, SidecarSaver). 13 nodes; superseded by the JB suite for most use cases but kept fully functional. See [SMP reference workflow](examples/workflows/smp_v1_minimal.md).
 - **Configurable model paths** — fallback paths via `outfit_config.ini` when models are in non-standard locations
-- **Zero extra dependencies for Color/Fashion tools** — only numpy (already in ComfyUI). SMP additionally uses pydantic 2 (already in the ComfyUI venv).
+- **Zero extra dependencies for Color/Fashion/JB tools** — only numpy (already in ComfyUI). The dict pipelines additionally use pydantic 2 (already in the ComfyUI venv).
 
 ---
 
