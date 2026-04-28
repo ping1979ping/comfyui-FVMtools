@@ -1,0 +1,19 @@
+{
+  "location": {
+    "type": "modern brutalist concrete architecture exterior",
+    "background": {
+      "main": "large plain light-gray concrete wall with subtle geometric panel lines",
+      "texture": "raw poured concrete with form-tie marks, faint weather staining",
+      "lighting": "bright diffused natural daylight, soft even illumination"
+    },
+    "foreground": {
+      "main": "wide concrete steps with visible aggregate texture",
+      "shadow_tone": "deep cool blue cast",
+      "depth": "three-tier platform leading toward the camera"
+    },
+    "atmosphere": {
+      "time_of_day": "bright overcast midday",
+      "weather": "clear crisp atmosphere"
+    }
+  }
+}

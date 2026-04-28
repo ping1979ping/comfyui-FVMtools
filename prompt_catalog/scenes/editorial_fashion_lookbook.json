@@ -1,0 +1,19 @@
+{
+  "scene": {
+    "style": "high-end fashion editorial lookbook spread",
+    "mood": "elegant, confident, modern minimalist",
+    "color_palette": "neutral concrete grays with bold burgundy accent",
+    "photography_technique": "fashion shoot, sharp focus on subject, shallow depth of field",
+    "camera": {
+      "angle": "low-angle shot from slightly below",
+      "lens": "35mm prime",
+      "aspect_ratio": "2:3"
+    },
+    "composition": {
+      "framing": "full-body with emphasis on legs and torso",
+      "rule": "rule of thirds with subject on left vertical line",
+      "focus": "sharp on eyes, face, and key garment details",
+      "depth": "three-layer: foreground steps, subject, background wall"
+    }
+  }
+}

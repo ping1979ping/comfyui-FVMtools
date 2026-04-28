@@ -1,0 +1,20 @@
+{
+  "location": {
+    "type": "Mediterranean coastal scene at golden hour",
+    "background": {
+      "main": "turquoise sea horizon meeting whitewashed coastal village",
+      "texture": "limewashed plaster walls with patina, terracotta rooflines",
+      "lighting": "warm golden honey light raking from the side"
+    },
+    "foreground": {
+      "main": "fine pale sand with scattered pebbles",
+      "shadow_tone": "soft warm sienna shadows",
+      "depth": "footprints leading from camera toward water line"
+    },
+    "props": "weathered wooden boardwalk, sun-bleached driftwood",
+    "atmosphere": {
+      "time_of_day": "golden hour late afternoon",
+      "weather": "clear crystalline blue sky, gentle warm breeze"
+    }
+  }
+}

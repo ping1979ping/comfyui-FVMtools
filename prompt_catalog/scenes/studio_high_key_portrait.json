@@ -1,0 +1,19 @@
+{
+  "scene": {
+    "style": "high-key studio portrait, magazine cover quality",
+    "mood": "fresh, optimistic, clean",
+    "color_palette": "soft pastels on bone-white seamless backdrop",
+    "photography_technique": "85mm portrait lens, beauty-dish key with reflector fill",
+    "camera": {
+      "angle": "eye-level, slight tilt to subject",
+      "lens": "85mm portrait prime",
+      "aspect_ratio": "4:5"
+    },
+    "composition": {
+      "framing": "head and shoulders, subject centered",
+      "rule": "centered with negative space above the head",
+      "focus": "sharp on near eye",
+      "depth": "shallow — subject crisp, background gently falls off"
+    }
+  }
+}
