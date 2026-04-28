@@ -29,6 +29,9 @@ try:
     from .nodes.smp.serialize import FVM_SMP_PromptSerialize
     from .nodes.smp.sidecar_saver import FVM_SMP_SidecarSaver
 
+    # ── JB (JSON Builder) — universal JSON-prompt assembly ──
+    from .nodes.jb.builder import FVM_JB_Builder
+
     # ── API routes for outfit list editing ──
     import os
     from aiohttp import web
@@ -334,6 +337,8 @@ try:
         "FVM_SMP_Aggregator":         FVM_SMP_Aggregator,
         "FVM_SMP_PromptSerialize":    FVM_SMP_PromptSerialize,
         "FVM_SMP_SidecarSaver":       FVM_SMP_SidecarSaver,
+        # ── JB (JSON Builder) ──
+        "FVM_JB_Builder":             FVM_JB_Builder,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -364,6 +369,8 @@ try:
         "FVM_SMP_Aggregator":         "SMP · Aggregator (legacy)",
         "FVM_SMP_PromptSerialize":    "SMP · Prompt Serialize (legacy)",
         "FVM_SMP_SidecarSaver":       "SMP · Sidecar Saver (legacy)",
+        # ── JB (JSON Builder) ──
+        "FVM_JB_Builder":             "JB · Builder",
     }
 
     WEB_DIRECTORY = "./web/js"
