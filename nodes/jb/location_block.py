@@ -110,19 +110,12 @@ class FVM_JB_LocationBlock:
 
         elements: dict = {}
         for elem_id, e in rec["elements"].items():
-            region_hint = e.get("region_hint")
-            if region_hint and region_hint.get("bbox_relative"):
-                # Convert tuple to list for clean JSON output.
-                rh = dict(region_hint)
-                rh["bbox_relative"] = list(rh["bbox_relative"])
-                region_hint = rh
             elements[elem_id] = {
                 "name":            e["name"],
                 "coverage":        e["coverage"],
                 "texture":         e.get("texture"),
                 "layer":           e["layer"],
                 "prompt_fragment": resolve_tokens(e["prompt_fragment"], subs),
-                "region_hint":     region_hint,
             }
 
         location = {

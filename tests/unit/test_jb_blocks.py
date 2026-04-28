@@ -152,6 +152,41 @@ def test_location_block_three_sets_all_work():
 # ─── End-to-end JB pipeline through Stitcher ─────────────────────────
 
 
+def test_outfit_block_drops_region_hint():
+    """region_hint is layout metadata that's not useful for prompt encoding."""
+    outfit_json, _, _ = _outfit()
+    parsed = json.loads(outfit_json)
+    for region_id, garment in parsed["outfit"]["garments"].items():
+        assert "region_hint" not in garment, (
+            f"{region_id} still carries region_hint — should be stripped"
+        )
+
+
+def test_location_block_drops_region_hint():
+    location_json, _, _ = _location()
+    parsed = json.loads(location_json)
+    for elem_id, e in parsed["location"]["elements"].items():
+        assert "region_hint" not in e, (
+            f"{elem_id} still carries region_hint — should be stripped"
+        )
+
+
+def test_outfit_block_string_has_no_extraneous_quotes():
+    """User's rule: loose_keys output strips ALL JSON-syntactic `"`,
+    only literal `"` chars from explicit `\\"` escapes survive."""
+    _, outfit_string, _ = _outfit()
+    assert '"' not in outfit_string, (
+        f"unexpected quote in OutfitBlock string output: ...{outfit_string[:200]}..."
+    )
+
+
+def test_location_block_string_has_no_extraneous_quotes():
+    _, location_string, _ = _location()
+    assert '"' not in location_string, (
+        f"unexpected quote in LocationBlock string output: ...{location_string[:200]}..."
+    )
+
+
 def test_outfit_plus_location_plus_stitcher_into_one_character():
     from nodes.jb.stitcher import FVM_JB_Stitcher
 

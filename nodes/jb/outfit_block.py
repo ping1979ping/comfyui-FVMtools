@@ -66,15 +66,6 @@ def _formality_bucket(value: float) -> str:
 
 def _slot_to_garment(rec: dict, region_id: str, subs: dict[str, str]) -> dict:
     slot = rec["slot"]
-    region = DEFAULT_PERSON_REGIONS.get(region_id) or DEFAULT_PERSON_REGIONS.get(slot) or {}
-    region_hint = None
-    if region:
-        region_hint = {
-            "region_id":      region_id,
-            "sam_class_hint": region.get("sam_class"),
-            "bbox_relative":  list(region.get("bbox")) if region.get("bbox") else None,
-            "layer_depth":    "subject",
-        }
     color_role = DEFAULT_COLOR_ROLE_BY_SLOT.get(slot) or "primary"
     # Some outfit lists embed a literal '#color#' placement marker in the
     # garment name (see core/outfit_lists.py:72). Strip it from the cosmetic
@@ -88,7 +79,6 @@ def _slot_to_garment(rec: dict, region_id: str, subs: dict[str, str]) -> dict:
         "color_role":      color_role,
         "color_resolved":  subs.get(f"#{color_role}#"),
         "prompt_fragment": fragment,
-        "region_hint":     region_hint,
     }
 
 

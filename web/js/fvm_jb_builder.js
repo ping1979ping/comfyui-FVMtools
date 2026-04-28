@@ -697,18 +697,10 @@ function buildRowWidget(node) {
     // initial render
     render();
 
-    // Hide the raw `rows` STRING widget — UI is the host element.
+    // Hide the raw `rows` STRING widget — the host element above is the UI.
     if (rowsHidden) {
         rowsHidden.type = "hidden";
         rowsHidden.computeSize = () => [0, -4];
-    }
-
-    // Hide the legacy `text` STRING widget too — kept on the Python side
-    // as an internal fallback only; not part of the visible UI.
-    const textHidden = node.widgets.find(w => w.name === "text");
-    if (textHidden) {
-        textHidden.type = "hidden";
-        textHidden.computeSize = () => [0, -4];
     }
 
     return host;
