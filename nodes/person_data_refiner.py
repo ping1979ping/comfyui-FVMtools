@@ -8,7 +8,7 @@ import torch
 import numpy as np
 
 from .utils.face_analyzer import FaceAnalyzer
-from .utils.masker import MaskGenerator, ALL_MASK_TYPES, generate_all_masks_for_face
+from .utils.masker import MaskGenerator, ALL_MASK_TYPES, generate_all_masks_for_face, run_sam3_grounding
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, empty_mask
 from .utils.yolo_detector import get_available_yolo_models, detect_objects, assign_detections_to_references
 from .utils.mask_utils import fill_mask_holes_2d, expand_mask, feather_mask
@@ -70,12 +70,22 @@ class PersonDataRefiner:
                     "tooltip": "YOLO segm model for body-part detection (hands, feet, etc.).\n"
                                "Runs on the current images and injects results into person_data[\"aux_masks\"].\n"
                                "Chainable: each refiner replaces aux_masks, so chain multiple refiners\n"
-                               "with different models/labels for separate aux passes."}),
+                               "with different models/labels for separate aux passes.\n\n"
+                               "Set to 'none' to skip YOLO. If aux_label is non-empty AND a SAM3\n"
+                               "model is connected, the refiner falls back to SAM3 text-grounded\n"
+                               "segmentation using aux_label as the prompt."}),
                 "aux_confidence": ("FLOAT", {"default": 0.35, "min": 0.05, "max": 1.0, "step": 0.05,
-                                              "tooltip": "YOLO detection confidence threshold"}),
+                                              "tooltip": "Detection confidence threshold.\n"
+                                                          "YOLO path: per-detection score gate.\n"
+                                                          "SAM3-text-aux path: passed as the SAM3 grounding threshold\n"
+                                                          "(lower = more permissive)."}),
                 "aux_label": ("STRING", {"default": "",
-                                          "tooltip": "Filter YOLO detections by class label (substring match).\n"
-                                                     "Empty = all classes. Comma-separated: 'hand,foot'"}),
+                                          "tooltip": "YOLO path: filter detections by class label\n"
+                                                     "  (substring match; comma-separated for multiple, e.g. 'hand,foot').\n"
+                                                     "  Empty = all classes.\n\n"
+                                                     "SAM3-text-aux path (when aux_model='none'):\n"
+                                                     "  this is the SAM3 grounding prompt itself, e.g. 'legs', 'arms'.\n"
+                                                     "  Comma-separated values are run as separate prompts and unioned."}),
                 "aux_fill_holes": ("BOOLEAN", {"default": False,
                                                 "tooltip": "Fill holes inside YOLO aux masks"}),
                 "aux_expand_pixels": ("INT", {"default": 0, "min": 0, "max": 100, "step": 1,
@@ -181,24 +191,39 @@ class PersonDataRefiner:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         resolution_changed = (new_h != old_h or new_w != old_w)
 
-        # Smart skip: if resolution hasn't changed AND aux_model is connected,
-        # skip the full face-regen and just run YOLO on the existing person_data.
-        # This makes chaining multiple refiners lightweight (YOLO-only pass).
-        if not resolution_changed and aux_model != "none":
+        # Smart skip: if resolution hasn't changed AND we have an aux source
+        # (YOLO model OR SAM3 + text label), skip the full face-regen and just
+        # run aux detection on the existing person_data. Chains stay light.
+        sam3_text_aux_active = (aux_model == "none"
+                                and bool((aux_label or "").strip())
+                                and sam3_model is not None)
+        if not resolution_changed and (aux_model != "none" or sam3_text_aux_active):
             print(f"\n{'='*50}")
-            print(f"  PersonDataRefiner (YOLO-only pass, same resolution)")
-            print(f"  {new_w}x{new_h} | Refs: {num_refs} | aux_model: {aux_model}")
+            if aux_model != "none":
+                source_desc = f"aux_model: {aux_model}"
+                print(f"  PersonDataRefiner (YOLO-only pass, same resolution)")
+            else:
+                source_desc = f"aux via SAM3 text='{aux_label}'"
+                print(f"  PersonDataRefiner (SAM3-text-aux pass, same resolution)")
+            print(f"  {new_w}x{new_h} | Refs: {num_refs} | {source_desc}")
             print(f"{'='*50}")
             import copy
             new_person_data = copy.copy(person_data)
-            new_person_data = self._run_yolo_aux(
-                new_person_data, images, num_refs, new_h, new_w, batch_size,
-                aux_model, aux_confidence, aux_label,
-                aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
-                aux_yolo_sam_refine, aux_yolo_sam_bbox_expansion,
-                sam3_model, sam_model)
+            if aux_model != "none":
+                new_person_data = self._run_yolo_aux(
+                    new_person_data, images, num_refs, new_h, new_w, batch_size,
+                    aux_model, aux_confidence, aux_label,
+                    aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
+                    aux_yolo_sam_refine, aux_yolo_sam_bbox_expansion,
+                    sam3_model, sam_model)
+            else:
+                new_person_data = self._run_sam3_text_aux(
+                    new_person_data, images, num_refs, new_h, new_w, batch_size,
+                    aux_label, aux_confidence,
+                    aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
+                    sam3_model)
             _elapsed = int(_time.monotonic() - _t0)
-            report = f"YOLO-only pass ({_elapsed}s): resolution unchanged, skipped face regen"
+            report = f"Aux-only pass ({_elapsed}s, {source_desc}): resolution unchanged, skipped face regen"
             print(f"  Done in {_elapsed}s\n{'='*50}\n")
             aux_masks_batch = self._build_aux_output(new_person_data, num_refs, batch_size, new_h, new_w)
             return (new_person_data, aux_masks_batch, report)
@@ -405,7 +430,9 @@ class PersonDataRefiner:
         for mt in ALL_MASK_TYPES:
             new_person_data[f"{mt}_masks"] = pd_masks[mt]
 
-        # Run YOLO aux detection if aux_model connected (full-regen path)
+        # Run aux detection (full-regen path).
+        # Priority: YOLO if a model is selected; otherwise fall back to SAM3
+        # text-grounded segmentation if a text label is given and SAM3 is wired.
         if aux_model != "none":
             new_person_data = self._run_yolo_aux(
                 new_person_data, images, num_refs, new_h, new_w, batch_size,
@@ -413,6 +440,12 @@ class PersonDataRefiner:
                 aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
                 aux_yolo_sam_refine, aux_yolo_sam_bbox_expansion,
                 sam3_model, sam_model)
+        elif (aux_label or "").strip() and sam3_model is not None:
+            new_person_data = self._run_sam3_text_aux(
+                new_person_data, images, num_refs, new_h, new_w, batch_size,
+                aux_label, aux_confidence,
+                aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
+                sam3_model)
 
         _elapsed = int(_time.monotonic() - _t0)
         report_lines.insert(0, f"Runtime: {_elapsed}s")
@@ -522,6 +555,89 @@ class PersonDataRefiner:
                   f"{sum(1 for c in counts.values() if c > 0)} refs matched")
 
         # Inject into person_data (replaces any existing aux_masks)
+        person_data["aux_masks"] = [torch.cat(aux_per_ref[ri], dim=0) for ri in range(num_refs)]
+        person_data["aux_unassigned_masks"] = torch.cat(aux_unassigned, dim=0)
+        person_data["aux_part_counts"] = aux_part_counts
+
+        return person_data
+
+    def _run_sam3_text_aux(self, person_data, images, num_refs, h, w, batch_size,
+                            aux_label, aux_confidence,
+                            aux_fill_holes, aux_expand_pixels, aux_blend_pixels,
+                            sam3_model):
+        """SAM3 text-grounded aux pass — runs when no YOLO model is selected
+        but ``aux_label`` is given and a SAM3 model is connected.
+
+        For each batch image: SAM3 grounds the text prompt, the resulting
+        pixel masks are converted into the same detection-dict shape used by
+        the YOLO path, then assigned to references via body-mask overlap and
+        post-processed identically.
+        """
+        def _aux_post(mask_2d):
+            if aux_expand_pixels > 0:
+                mask_2d = expand_mask(mask_2d, aux_expand_pixels)
+            if aux_fill_holes:
+                mask_2d = fill_mask_holes_2d(mask_2d)
+            if aux_blend_pixels > 0:
+                mask_2d = feather_mask(mask_2d, aux_blend_pixels)
+            return mask_2d
+
+        prompt = (aux_label or "").strip()
+        # Comma-separated labels are supported by the YOLO branch; SAM3 takes
+        # one prompt at a time, so loop over each fragment and union the masks.
+        prompts = [p.strip() for p in prompt.split(",") if p.strip()]
+
+        aux_per_ref = [[] for _ in range(num_refs)]
+        aux_unassigned = []
+        aux_part_counts = []
+
+        for b in range(batch_size):
+            single_image = images[b]
+            cur_rgb = (single_image.cpu().numpy() * 255).clip(0, 255).astype(np.uint8)
+
+            detections = []
+            for p in prompts:
+                results = run_sam3_grounding(sam3_model, cur_rgb, p,
+                                             threshold=aux_confidence)
+                for mask_np, score, bbox in results:
+                    detections.append({
+                        "mask": torch.from_numpy(mask_np).float(),
+                        "label": p,
+                        "score": float(score),
+                        "bbox": bbox,
+                        "is_bbox_only": False,
+                    })
+
+            body_masks_list = person_data.get("body_masks", [])
+            det_assignments = assign_detections_to_references(
+                detections, body_masks_list, num_refs, b)
+
+            counts = {}
+            for ri in range(num_refs):
+                parts = det_assignments.get(ri, [])
+                counts[ri] = len(parts)
+                if parts:
+                    merged = torch.max(torch.stack(parts), dim=0)[0]
+                    merged = _aux_post(merged)
+                    aux_per_ref[ri].append(merged.unsqueeze(0))
+                else:
+                    aux_per_ref[ri].append(torch.zeros(1, h, w, dtype=torch.float32))
+
+            unassigned_parts = det_assignments.get(-1, [])
+            if unassigned_parts:
+                merged_unassigned = torch.max(torch.stack(unassigned_parts), dim=0)[0]
+                merged_unassigned = _aux_post(merged_unassigned)
+                aux_unassigned.append(merged_unassigned.unsqueeze(0))
+            else:
+                aux_unassigned.append(torch.zeros(1, h, w, dtype=torch.float32))
+
+            aux_part_counts.append(counts)
+            total_parts = sum(counts.values()) + len(unassigned_parts)
+            labels_found = set(d["label"] for d in detections)
+            print(f"  [PersonDataRefiner SAM3-text] Image {b+1}: {total_parts} detections "
+                  f"for '{prompt}' ({', '.join(labels_found) or 'none'}), "
+                  f"{sum(1 for c in counts.values() if c > 0)} refs matched")
+
         person_data["aux_masks"] = [torch.cat(aux_per_ref[ri], dim=0) for ri in range(num_refs)]
         person_data["aux_unassigned_masks"] = torch.cat(aux_unassigned, dim=0)
         person_data["aux_part_counts"] = aux_part_counts
