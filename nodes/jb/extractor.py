@@ -1,12 +1,28 @@
-"""FVM_JB_Extractor — pull a sub-tree out of a JSON string by dot-path key.
+"""FVM_JB_Extractor — recursive key search + dot-path lookup.
 
-Examples (input = the Stitcher's output for two characters):
+Two lookup modes auto-selected by the ``category`` value:
 
-  category="character_1"            → the whole character_1 object.
-  category="character_1.hosiery"    → just the hosiery sub-object.
-  category="character_1.hosiery.type"  → the leaf string value.
+  Single key  (``"face"``)        → recursive depth-first search through
+                                     every nested dict; returns the FIRST
+                                     match wrapped as ``{key: value}``.
 
-Missing path → empty raw_json string and ``found=False``.
+  Dot-path    (``"a.b.c"``)        → strict descent along the explicit path.
+                                     Returns ``{c: value}`` (wrapped under
+                                     the LAST segment).
+
+  Empty       (``""``)             → returns the whole input unwrapped.
+
+  Examples
+  --------
+  Input::
+
+      {"character_1": {"face": {"age": "twenties", "eyes": "amber"}}}
+
+  category="face" → ``{"face": {"age": "twenties", "eyes": "amber"}}``
+  category="character_1.face" → same as above.
+  category="character_1" → ``{"character_1": {...}}``.
+
+Missing key → empty outputs + ``found=False``.
 """
 
 from __future__ import annotations
@@ -27,11 +43,8 @@ except ImportError:  # pragma: no cover
     )
 
 
-def _walk_dot_path(payload, path: str):
-    """Return (found, value) for a dot-separated path inside payload."""
-    if not path:
-        return True, payload
-    parts = [p for p in path.split(".") if p]
+def _walk_dot_path(payload, parts: list[str]):
+    """Strict descent along the explicit dot-path."""
     cur = payload
     for p in parts:
         if isinstance(cur, dict) and p in cur:
@@ -41,8 +54,38 @@ def _walk_dot_path(payload, path: str):
     return True, cur
 
 
+def _search_recursive(obj, key: str):
+    """DFS through every nested dict / list and return the first match."""
+    if isinstance(obj, dict):
+        if key in obj:
+            return True, obj[key]
+        for v in obj.values():
+            found, val = _search_recursive(v, key)
+            if found:
+                return True, val
+    elif isinstance(obj, list):
+        for v in obj:
+            found, val = _search_recursive(v, key)
+            if found:
+                return True, val
+    return False, None
+
+
+def _resolve_category(payload, category: str):
+    """Return (found, value, wrap_key)."""
+    cat = (category or "").strip()
+    if not cat:
+        return True, payload, None
+    if "." in cat:
+        parts = [p for p in cat.split(".") if p]
+        found, val = _walk_dot_path(payload, parts)
+        return found, val, (parts[-1] if found else None)
+    found, val = _search_recursive(payload, cat)
+    return found, val, (cat if found else None)
+
+
 class FVM_JB_Extractor:
-    """Pull a named subtree out of a JSON string."""
+    """Pull a named subtree out of a JSON string by recursive key search."""
 
     CATEGORY = "FVM Tools/JB"
     FUNCTION = "extract"
@@ -51,11 +94,13 @@ class FVM_JB_Extractor:
     OUTPUT_NODE = False
     DESCRIPTION = (
         "Pulls a named subtree out of a JSON string.\n\n"
-        "category supports dot-paths for nested lookup, e.g.\n"
-        "  'character_1' → top-level character object\n"
-        "  'character_1.hosiery' → hosiery sub-object\n"
-        "  'character_1.hosiery.type' → the leaf value\n\n"
-        "Missing path → empty outputs and found=False."
+        "Modes — auto-selected by the category value:\n"
+        "  • single key   → recursive search through every nesting level,\n"
+        "                   returns the first match wrapped as {key: value}.\n"
+        "  • dot-path     → strict descent (e.g. 'character_1.hosiery'),\n"
+        "                   returns {last_segment: value}.\n"
+        "  • empty        → returns the whole input unwrapped.\n\n"
+        "Missing key → empty outputs and found=False."
     )
 
     @classmethod
@@ -73,15 +118,15 @@ class FVM_JB_Extractor:
         if not isinstance(parsed, (dict, list)):
             return ("", "", False)
 
-        found, value = _walk_dot_path(parsed, (category or "").strip())
+        found, value, wrap_key = _resolve_category(parsed, category)
         if not found:
             return ("", "", False)
 
-        # Wrap leaf scalars so the JSON output is always valid syntax.
-        if isinstance(value, (dict, list)):
-            raw = emit_strict_json(value, indent=2)
-            string_out = emit(value, output_format)
+        out_obj = {wrap_key: value} if wrap_key is not None else value
+
+        if isinstance(out_obj, (dict, list)):
+            raw = emit_strict_json(out_obj, indent=2)
         else:
-            raw = emit_strict_json(value, indent=None)
-            string_out = emit(value, output_format)
+            raw = emit_strict_json(out_obj, indent=None)
+        string_out = emit(out_obj, output_format)
         return (raw, string_out, True)

@@ -77,28 +77,29 @@ class FVM_JB_Builder:
     OUTPUT_NODE = False
     DESCRIPTION = (
         "Universal JSON prompt builder.\n\n"
-        "P1 fallback: type strict JSON or a loose-keys blob in the textarea;\n"
-        "the node parses it and emits raw_json (strict) and string (chosen format).\n\n"
-        "P4 will replace the textarea with a custom row-based widget that\n"
-        "writes the same row-list JSON into the hidden 'rows' field."
+        "Hand-author a tree of key:value rows with indent-based nesting,\n"
+        "or insert a snippet from the catalog. Emits raw_json (strict)\n"
+        "and string (chosen format)."
     )
 
     @classmethod
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "text": ("STRING", {"default": _DEFAULT_TEXT, "multiline": True}),
+                # Hidden row-list field — the JS widget owns the visible UI
+                # (rows + Insert From Catalog + Edit Catalog) and writes a
+                # JSON-encoded list of {key,value,indent} into this string.
+                "rows": ("STRING", {"default": "[]", "multiline": True}),
                 "output_format": (list(ALL_FORMATS), {"default": "loose_keys"}),
             },
             "optional": {
-                # Hidden row-list field for the P4 JS widget. Treated as a
-                # JSON-encoded list of {key,value,indent}. When non-empty it
-                # takes precedence over the textarea.
-                "rows": ("STRING", {"default": "", "multiline": True}),
+                # Internal fallback for power-users / pytest — accepts a raw
+                # JSON or loose-keys blob. UI does not expose this field.
+                "text": ("STRING", {"default": "", "multiline": True}),
             },
         }
 
-    def build(self, text, output_format, rows=""):
+    def build(self, rows, output_format, text=""):
         # Prefer the rows widget if populated.
         payload = None
         if isinstance(rows, str) and rows.strip():

@@ -36,11 +36,13 @@ def test_emit_strict_json_compact():
 
 
 def test_emit_loose_keys_simple_object():
+    """Keys: bareword without quotes. Values: raw, no surrounding quotes."""
     out = emit_loose_keys({"hosiery": {"type": "stockings"}})
     assert '"hosiery"' not in out
+    assert '"stockings"' not in out
     assert "hosiery:" in out
     assert "type:" in out
-    assert '"stockings"' in out  # string values keep quotes
+    assert "stockings" in out
 
 
 def test_emit_loose_keys_handles_nesting():
@@ -54,20 +56,36 @@ def test_emit_loose_keys_handles_nesting():
     assert "hosiery:" in out
     assert "type:" in out
     assert "opacity:" in out
-    assert '"sheer black stockings"' in out
+    assert "sheer black stockings" in out
+    assert '"sheer black stockings"' not in out
 
 
 def test_emit_loose_keys_array():
     out = emit_loose_keys({"tags": ["a", "b", "c"]})
     assert "tags:" in out
-    assert '"a"' in out and '"b"' in out and '"c"' in out
+    # Values inside an array are bare strings now
+    assert '"a"' not in out and '"b"' not in out and '"c"' not in out
+    assert "a" in out and "b" in out and "c" in out
     assert "[" in out and "]" in out
 
 
 def test_emit_loose_keys_quotes_keys_with_special_chars():
+    """Keys with spaces / punctuation are bareword-unsafe → keep quotes."""
     out = emit_loose_keys({"weird key!": "value"})
-    # Keys with spaces / punctuation must keep quotes
     assert '"weird key!"' in out
+
+
+def test_emit_loose_keys_preserves_explicit_quotes_in_values():
+    """``\\"`` in the JSON source survives parse → emit as a literal "."""
+    src = {"ethnicity": 'tanned european "SUPI"'}
+    out = emit_loose_keys(src)
+    # The value is bare (no surrounding quotes) BUT the inner quotes from
+    # the source's \" escapes are preserved literally.
+    assert "ethnicity:" in out
+    assert 'tanned european "SUPI"' in out
+    # No JSON-syntactic surrounding quotes around the value
+    assert '"tanned european' not in out
+    assert 'SUPI""' not in out
 
 
 def test_emit_loose_keys_handles_scalars():
@@ -75,7 +93,8 @@ def test_emit_loose_keys_handles_scalars():
     assert emit_loose_keys(True) == "true"
     assert emit_loose_keys(False) == "false"
     assert emit_loose_keys(42) == "42"
-    assert emit_loose_keys("hello") == '"hello"'
+    # Strings: raw, no quotes
+    assert emit_loose_keys("hello") == "hello"
 
 
 def test_emit_loose_keys_empty_collections():
@@ -106,11 +125,14 @@ def test_parse_input_empty():
     assert parse_input("   ") == {}
 
 
-def test_parse_input_loose_keys_roundtrip():
-    src = {"hosiery": {"type": "stockings", "opacity": "20-30 denier"}}
-    loose = emit_loose_keys(src)
-    parsed = parse_input(loose)
-    assert parsed == src
+def test_parse_input_loose_keys_with_quoted_values():
+    """Strict JSON in / loose-keys-with-quoted-values still parses fine."""
+    src = '{"hosiery": {"type": "stockings", "opacity": "20-30 denier"}}'
+    parsed = parse_input(src)
+    assert parsed == {"hosiery": {"type": "stockings", "opacity": "20-30 denier"}}
+    # Same input but with bareword keys (still quoted values) parses too.
+    near_loose = 'hosiery: {type: "stockings", opacity: "20-30 denier"}'
+    assert parse_input(near_loose) == parsed
 
 
 def test_parse_input_unparseable_returns_string():
@@ -259,7 +281,11 @@ def test_full_roundtrip_strict_json():
     assert parse_input(s) == src
 
 
-def test_full_roundtrip_loose_keys():
-    src = {"hosiery": {"type": "stockings", "opacity": "sheer"}}
-    s = emit(src, LOOSE_KEYS)
-    assert parse_input(s) == src
+def test_loose_keys_is_one_way():
+    """loose_keys is a one-way emit format for SD/CLIP encoders. It strips
+    JSON-syntactic quotes around values so it is NOT round-trippable
+    through parse_input — that's by design."""
+    src = {"hosiery": {"type": "sheer black stockings", "opacity": "20-30 denier"}}
+    out = emit(src, LOOSE_KEYS)
+    assert "sheer black stockings" in out
+    assert '"sheer black stockings"' not in out

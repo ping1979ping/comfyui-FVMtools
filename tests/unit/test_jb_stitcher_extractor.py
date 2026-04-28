@@ -99,6 +99,7 @@ def test_stitcher_bare_string_input_synthetic_key():
 
 
 def test_stitcher_loose_keys_output():
+    """loose_keys: keys bare, values bare, no JSON-syntactic quotes anywhere."""
     _, string_out = _stitch(
         "outfit",
         output_format="loose_keys",
@@ -106,8 +107,20 @@ def test_stitcher_loose_keys_output():
     )
     assert "outfit:" in string_out
     assert "top:" in string_out
-    assert '"blazer"' in string_out
+    assert "blazer" in string_out
+    assert "skirt" in string_out
+    assert '"blazer"' not in string_out
     assert '"outfit"' not in string_out
+
+
+def test_stitcher_preserves_explicit_quote_chars():
+    """`\\"`-escapes in inputs survive as literal `"` in loose_keys output."""
+    _, string_out = _stitch(
+        "outfit",
+        output_format="loose_keys",
+        input_1='{"label": "tanned european \\"SUPI\\""}',
+    )
+    assert 'tanned european "SUPI"' in string_out
 
 
 def test_stitcher_no_inputs_emits_empty_object():
@@ -140,37 +153,71 @@ def test_extractor_node_metadata():
     assert FVM_JB_Extractor.RETURN_NAMES == ("raw_json", "string", "found")
 
 
-def test_extractor_top_level_key():
+def test_extractor_top_level_key_wraps():
+    """Single-key category: result is wrapped under that key name."""
     src = '{"character_1": {"hosiery": {"type": "stockings"}}}'
-    raw, string_out, found = _extract(src, "character_1")
+    raw, _, found = _extract(src, "character_1")
     assert found is True
-    assert json.loads(raw) == {"hosiery": {"type": "stockings"}}
+    assert json.loads(raw) == {"character_1": {"hosiery": {"type": "stockings"}}}
 
 
-def test_extractor_dot_path_nested():
+def test_extractor_recursive_search_user_face_example():
+    """The user's specified behavior: search 'face' anywhere in the tree
+    and return the wrapped subtree."""
+    src = """
+    {
+      "character_1": {
+        "face": {
+          "age": "mid twenties",
+          "ethnicity": "tanned european",
+          "skin": "sun-kissed glow"
+        }
+      }
+    }
+    """
+    raw, _, found = _extract(src, "face")
+    assert found is True
+    parsed = json.loads(raw)
+    assert parsed == {
+        "face": {
+            "age": "mid twenties",
+            "ethnicity": "tanned european",
+            "skin": "sun-kissed glow",
+        }
+    }
+
+
+def test_extractor_recursive_finds_first_match_at_any_depth():
+    src = '{"a": {"b": {"target": {"x": 1}}}}'
+    raw, _, found = _extract(src, "target")
+    assert found is True
+    assert json.loads(raw) == {"target": {"x": 1}}
+
+
+def test_extractor_dot_path_nested_wraps_under_last_segment():
     src = '{"character_1": {"hosiery": {"type": "stockings", "opacity": "sheer"}}}'
     raw, _, found = _extract(src, "character_1.hosiery")
     assert found is True
-    assert json.loads(raw) == {"type": "stockings", "opacity": "sheer"}
+    # Wrapped under the LAST path segment.
+    assert json.loads(raw) == {"hosiery": {"type": "stockings", "opacity": "sheer"}}
 
 
-def test_extractor_dot_path_to_leaf():
+def test_extractor_dot_path_to_leaf_wraps_too():
     src = '{"character_1": {"hosiery": {"type": "stockings"}}}'
-    raw, string_out, found = _extract(src, "character_1.hosiery.type")
+    raw, _, found = _extract(src, "character_1.hosiery.type")
     assert found is True
-    # Leaf scalars come back as their JSON literal
-    assert raw == '"stockings"'
+    assert json.loads(raw) == {"type": "stockings"}
 
 
-def test_extractor_missing_path():
+def test_extractor_missing_key_returns_empty():
     src = '{"a": 1}'
-    raw, string_out, found = _extract(src, "nonexistent.path")
+    raw, string_out, found = _extract(src, "nonexistent")
     assert found is False
     assert raw == ""
     assert string_out == ""
 
 
-def test_extractor_empty_path_returns_whole_doc():
+def test_extractor_empty_category_returns_whole_doc_unwrapped():
     src = '{"a": 1, "b": 2}'
     raw, _, found = _extract(src, "")
     assert found is True
@@ -183,11 +230,28 @@ def test_extractor_invalid_json_input():
 
 
 def test_extractor_loose_keys_input_works():
-    """Extractor accepts loose-keys input via shared parse_input."""
-    src = "character_1: {hosiery: {type: \"stockings\"}}"
+    src = 'character_1: {hosiery: {type: "stockings"}}'
     raw, _, found = _extract(src, "character_1.hosiery")
     assert found is True
-    assert json.loads(raw) == {"type": "stockings"}
+    assert json.loads(raw) == {"hosiery": {"type": "stockings"}}
+
+
+def test_extractor_string_output_strips_value_quotes():
+    """Loose-keys string output: keys bare, values bare, no JSON quotes."""
+    src = '{"face": {"eyes": "warm amber", "expression": "intense focus"}}'
+    _, string_out, _ = _extract(src, "face")
+    assert "face:" in string_out
+    assert "warm amber" in string_out
+    assert '"warm amber"' not in string_out
+    assert "intense focus" in string_out
+    assert '"face"' not in string_out
+
+
+def test_extractor_string_output_preserves_explicit_quotes():
+    """Literal `"` chars from `\\"` survive into the loose_keys string output."""
+    src = '{"face": {"ethnicity": "tanned european \\"SUPI\\""}}'
+    _, string_out, _ = _extract(src, "face")
+    assert 'tanned european "SUPI"' in string_out
 
 
 # ─── Stitcher → Extractor end-to-end ──────────────────────────────────
@@ -199,8 +263,16 @@ def test_stitcher_then_extractor_roundtrip():
         input_1='{"hosiery": {"type": "stockings"}}',
         input_2='{"face": {"eyes": "blue"}}',
     )
+    # Recursive search by single key — extractor wraps the result.
     raw, _, found = FVM_JB_Extractor().extract(
-        stitched_raw, "character_1.hosiery", "loose_keys"
+        stitched_raw, "hosiery", "loose_keys"
     )
     assert found is True
-    assert json.loads(raw) == {"type": "stockings"}
+    assert json.loads(raw) == {"hosiery": {"type": "stockings"}}
+
+    # Same flow, dot-path — wraps under the last segment.
+    raw2, _, found2 = FVM_JB_Extractor().extract(
+        stitched_raw, "character_1.face", "loose_keys"
+    )
+    assert found2 is True
+    assert json.loads(raw2) == {"face": {"eyes": "blue"}}

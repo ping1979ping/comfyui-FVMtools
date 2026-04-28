@@ -181,6 +181,8 @@ def test_outfit_block_then_extractor_pulls_subtree():
     )
     assert found is True
     parsed = json.loads(raw)
-    assert isinstance(parsed, dict)
+    # Wrapped under the last path segment ("garments")
+    assert "garments" in parsed
+    garments = parsed["garments"]
     # At minimum top + bottom + footwear regions should land
-    assert any(k in parsed for k in ("upper_body", "lower_body", "footwear"))
+    assert any(k in garments for k in ("upper_body", "lower_body", "footwear"))

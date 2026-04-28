@@ -250,11 +250,23 @@ def emit_strict_json(obj: Any, indent: int | None = 2) -> str:
 
 
 def emit_loose_keys(obj: Any, level: int = 0, _indent: int = 2) -> str:
-    """No-key-quotes JSON-ish format (still valid for prompt encoders).
+    """Loose-keys output for SD/CLIP encoders.
 
-    Keys: emitted unquoted (`hosiery:`).
-    String values: keep double quotes (`"sheer black stockings"`).
-    Other scalars / arrays / objects: standard JSON syntax.
+    Strips ALL JSON-syntactic quotation marks. Only quote characters that
+    survived JSON parsing (i.e. were written as ``\\"`` in the source) are
+    kept literally — that's the user's "explicit quotation marks from
+    within the content" rule.
+
+    Result for ``{"ethnicity": "tanned european \\"SUPI\\""}``::
+
+        ethnicity: tanned european "SUPI"
+
+    Keys: bare (no quotes).
+    String values: raw, no surrounding quotes, no escape sequences.
+    Object/array structure preserved with ``{}`` / ``[]`` / commas.
+
+    Note: this format is NOT designed to round-trip back through
+    ``parse_input`` — it's a one-way emit for encoder consumption.
     """
     pad = " " * (level * _indent)
     inner_pad = " " * ((level + 1) * _indent)
@@ -266,7 +278,10 @@ def emit_loose_keys(obj: Any, level: int = 0, _indent: int = 2) -> str:
     if isinstance(obj, (int, float)):
         return json.dumps(obj)
     if isinstance(obj, str):
-        return json.dumps(obj, ensure_ascii=False)
+        # Raw — no surrounding quotes. Any literal " characters in the
+        # Python string came from \" in the original JSON source and are
+        # preserved as-is.
+        return obj
 
     if isinstance(obj, list):
         if not obj:

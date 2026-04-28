@@ -373,9 +373,11 @@ function buildRowWidget(node) {
 
     function makeRowEl(row, idx) {
         const wrap = document.createElement("div");
+        wrap.dataset.rowIdx = String(idx);
         Object.assign(wrap.style, {
             display: "flex", alignItems: "center", gap: "4px",
             paddingLeft: (row.indent * INDENT_PX) + "px",
+            transition: "background-color 0.1s",
         });
 
         // Indent bar
@@ -408,25 +410,157 @@ function buildRowWidget(node) {
         valIn.addEventListener("input", () => { row.value = valIn.value; commit(); });
         wrap.append(valIn);
 
-        // ⋮ menu
+        // ⋮ drag handle. Pointerdown starts tracking; if the pointer moves
+        // more than DRAG_THRESHOLD pixels before release we enter drag mode
+        // and reorder on drop. A clean click without drag opens the small
+        // action menu (Indent, Duplicate, Delete).
         const menuBtn = document.createElement("button");
         menuBtn.textContent = "⋮";
+        menuBtn.title = "Drag to move · click for actions";
         Object.assign(menuBtn.style, {
             flex: "0 0 24px", background: "#313244", color: "#cdd6f4",
-            border: "1px solid #45475a", borderRadius: "4px", cursor: "pointer",
+            border: "1px solid #45475a", borderRadius: "4px", cursor: "grab",
             fontSize: "14px", padding: "0", height: "22px",
+            userSelect: "none", touchAction: "none",
         });
-        menuBtn.addEventListener("click", (e) => {
-            e.preventDefault(); e.stopPropagation();
-            showRowMenu(idx, menuBtn);
-        });
+        attachDragHandle(menuBtn, wrap, idx);
         wrap.append(menuBtn);
 
         return wrap;
     }
 
-    // ── row actions ────────────────────────────────────────────────
-    function showRowMenu(idx, anchor) {
+    // ── drag handle ────────────────────────────────────────────────
+    const DRAG_THRESHOLD_PX = 4;
+
+    function attachDragHandle(handle, rowEl, idx) {
+        let pointerStart = null;
+        let dragging = false;
+        let placeholder = null;
+        let ghost = null;
+        let startIndent = 0;
+
+        function onPointerMove(ev) {
+            if (!pointerStart) return;
+            const dx = ev.clientX - pointerStart.x;
+            const dy = ev.clientY - pointerStart.y;
+            if (!dragging && Math.hypot(dx, dy) >= DRAG_THRESHOLD_PX) {
+                enterDrag();
+            }
+            if (!dragging) return;
+            // Update ghost position
+            ghost.style.transform = `translate(${ev.clientX - pointerStart.x}px, ${ev.clientY - pointerStart.y}px)`;
+            // Compute drop target row by Y over the row list.
+            const targetIdx = computeDropIndex(ev.clientY);
+            placeholder.dataset.targetIdx = String(targetIdx);
+            // Compute indent delta from horizontal drift.
+            const indentDelta = Math.round((ev.clientX - pointerStart.x) / INDENT_PX);
+            placeholder.dataset.indent = String(Math.max(0, startIndent + indentDelta));
+            redrawPlaceholder();
+        }
+
+        function onPointerUp(ev) {
+            window.removeEventListener("pointermove", onPointerMove);
+            window.removeEventListener("pointerup", onPointerUp);
+            handle.style.cursor = "grab";
+            if (!dragging) {
+                // Click without drag → open small actions menu.
+                if (pointerStart) {
+                    const dx = ev.clientX - pointerStart.x;
+                    const dy = ev.clientY - pointerStart.y;
+                    if (Math.hypot(dx, dy) < DRAG_THRESHOLD_PX) {
+                        showRowActions(idx, handle);
+                    }
+                }
+                pointerStart = null;
+                return;
+            }
+            // Apply the drop.
+            const targetIdx = parseInt(placeholder.dataset.targetIdx, 10);
+            const newIndent = parseInt(placeholder.dataset.indent, 10);
+            cleanupDrag();
+            applyDrop(idx, targetIdx, newIndent);
+            pointerStart = null;
+        }
+
+        function enterDrag() {
+            dragging = true;
+            handle.style.cursor = "grabbing";
+            startIndent = rows[idx].indent || 0;
+
+            // Ghost: visual clone that follows the cursor.
+            ghost = rowEl.cloneNode(true);
+            const r = rowEl.getBoundingClientRect();
+            Object.assign(ghost.style, {
+                position: "fixed", left: r.left + "px", top: r.top + "px",
+                width: r.width + "px", opacity: "0.85",
+                pointerEvents: "none", zIndex: "9998",
+                background: "#313244", borderRadius: "4px",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.4)",
+            });
+            document.body.append(ghost);
+
+            // Placeholder: thin insertion line that snaps to drop target.
+            placeholder = document.createElement("div");
+            Object.assign(placeholder.style, {
+                height: "2px", background: "#89b4fa",
+                margin: "0 6px", borderRadius: "1px",
+                pointerEvents: "none",
+            });
+            placeholder.dataset.targetIdx = String(idx);
+            placeholder.dataset.indent = String(startIndent);
+            redrawPlaceholder();
+        }
+
+        function redrawPlaceholder() {
+            if (!placeholder) return;
+            const targetIdx = parseInt(placeholder.dataset.targetIdx, 10);
+            // Remove from current parent then reinsert at target position.
+            if (placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
+            const children = Array.from(rowList.children);
+            const before = children[targetIdx];
+            if (before) rowList.insertBefore(placeholder, before);
+            else rowList.append(placeholder);
+            const indent = parseInt(placeholder.dataset.indent, 10) || 0;
+            placeholder.style.marginLeft = (indent * INDENT_PX + 6) + "px";
+        }
+
+        function computeDropIndex(clientY) {
+            const children = Array.from(rowList.children).filter(c => c !== placeholder && c.classList ? true : true);
+            for (let i = 0; i < children.length; i++) {
+                const r = children[i].getBoundingClientRect();
+                if (clientY < r.top + r.height / 2) return i;
+            }
+            return children.length;
+        }
+
+        function cleanupDrag() {
+            if (ghost && ghost.parentNode) ghost.parentNode.removeChild(ghost);
+            if (placeholder && placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
+            ghost = null;
+            placeholder = null;
+            dragging = false;
+        }
+
+        function applyDrop(fromIdx, toIdx, newIndent) {
+            const moved = rows.splice(fromIdx, 1)[0];
+            // After removing fromIdx, indices ≥ fromIdx shift down by 1.
+            const adjusted = (toIdx > fromIdx) ? toIdx - 1 : toIdx;
+            moved.indent = Math.max(0, Math.min(8, newIndent));
+            rows.splice(adjusted, 0, moved);
+            commit();
+            render();
+        }
+
+        handle.addEventListener("pointerdown", (e) => {
+            e.preventDefault();
+            pointerStart = { x: e.clientX, y: e.clientY };
+            window.addEventListener("pointermove", onPointerMove);
+            window.addEventListener("pointerup", onPointerUp);
+        });
+    }
+
+    // ── row actions menu (opens on bare ⋮ click without drag) ──────
+    function showRowActions(idx, anchor) {
         const menu = document.createElement("div");
         Object.assign(menu.style, {
             position: "fixed", background: "#1e1e2e", color: "#cdd6f4",
@@ -438,8 +572,6 @@ function buildRowWidget(node) {
         menu.style.left = r.left + "px";
         menu.style.top  = (r.bottom + 2) + "px";
         const items = [
-            ["Move Up",      () => moveRow(idx, -1)],
-            ["Move Down",    () => moveRow(idx, +1)],
             ["Indent Right", () => indentRow(idx, +1)],
             ["Indent Left",  () => indentRow(idx, -1)],
             ["Duplicate",    () => duplicateRow(idx)],
@@ -455,7 +587,7 @@ function buildRowWidget(node) {
             item.addEventListener("mouseleave", () => item.style.background = "");
             item.addEventListener("click", () => {
                 fn();
-                document.body.removeChild(menu);
+                if (menu.parentNode) document.body.removeChild(menu);
                 render();
             });
             menu.append(item);
@@ -571,6 +703,14 @@ function buildRowWidget(node) {
         rowsHidden.computeSize = () => [0, -4];
     }
 
+    // Hide the legacy `text` STRING widget too — kept on the Python side
+    // as an internal fallback only; not part of the visible UI.
+    const textHidden = node.widgets.find(w => w.name === "text");
+    if (textHidden) {
+        textHidden.type = "hidden";
+        textHidden.computeSize = () => [0, -4];
+    }
+
     return host;
 }
 
@@ -586,14 +726,38 @@ app.registerExtension({
             const r = onNodeCreated ? onNodeCreated.apply(this, arguments) : undefined;
 
             const host = buildRowWidget(this);
-            // Insert the host as a DOM widget; ComfyUI takes care of layout.
-            this.addDOMWidget("jb_rows_host", "div", host, { serialize: false });
+            // Insert the host as a DOM widget. The getHeight callback makes
+            // the widget (and therefore the node) auto-grow as the user adds
+            // rows. ComfyUI calls this on every redraw; we return the host's
+            // measured natural content height with a small safety margin.
+            const node = this;
+            this.addDOMWidget("jb_rows_host", "div", host, {
+                serialize: false,
+                getHeight: () => {
+                    // scrollHeight includes children + padding even when no
+                    // explicit min-height is set on the host.
+                    const h = Math.max(60, host.scrollHeight + 8);
+                    return h;
+                },
+            });
+
+            // Re-flow the node when the host resizes (rows added/removed,
+            // wide values overflowing, etc.).
+            try {
+                const ro = new ResizeObserver(() => {
+                    if (typeof node.onResize === "function") {
+                        node.onResize(node.size);
+                    }
+                    node.setDirtyCanvas(true, true);
+                });
+                ro.observe(host);
+            } catch (e) { /* ResizeObserver not available — fall through */ }
 
             // Default to a reasonable initial node size.
             try {
                 const computed = this.computeSize();
-                const w = Math.max(this.size?.[0] || 0, 460);
-                const h = Math.max(this.size?.[1] || 0, computed?.[1] || 240);
+                const w = Math.max(this.size?.[0] || 0, 480);
+                const h = Math.max(this.size?.[1] || 0, computed?.[1] || 260);
                 this.size = [w, h];
             } catch (e) { /* ignore */ }
 
