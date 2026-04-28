@@ -699,8 +699,17 @@ function buildRowWidget(node) {
 
     // Hide the raw `rows` STRING widget — the host element above is the UI.
     if (rowsHidden) {
-        rowsHidden.type = "hidden";
+        // Multiple belt-and-braces hide flags. Different ComfyUI versions
+        // honour different ones; setting them all guarantees the widget
+        // never draws AND claims zero vertical space in the node layout.
+        rowsHidden.type = "converted-widget";
+        rowsHidden.hidden = true;
         rowsHidden.computeSize = () => [0, -4];
+        rowsHidden.draw = () => {};
+        if (rowsHidden.options) {
+            rowsHidden.options.hidden = true;
+            rowsHidden.options.serialize = true;  // keep value in saved workflows
+        }
     }
 
     return host;

@@ -75,17 +75,15 @@ def test_emit_loose_keys_quotes_keys_with_special_chars():
     assert '"weird key!"' in out
 
 
-def test_emit_loose_keys_preserves_explicit_quotes_in_values():
-    """``\\"`` in the JSON source survives parse → emit as a literal "."""
-    src = {"ethnicity": 'tanned european "SUPI"'}
+def test_emit_loose_keys_strips_all_quote_chars_from_values():
+    """User's final rule: NO `"` chars anywhere in loose_keys output —
+    even literal quotes embedded in values get stripped."""
+    src = {"ethnicity": 'tanned european "SUPI"', "text_overlay": '"NO LIMITS"'}
     out = emit_loose_keys(src)
-    # The value is bare (no surrounding quotes) BUT the inner quotes from
-    # the source's \" escapes are preserved literally.
+    assert '"' not in out
     assert "ethnicity:" in out
-    assert 'tanned european "SUPI"' in out
-    # No JSON-syntactic surrounding quotes around the value
-    assert '"tanned european' not in out
-    assert 'SUPI""' not in out
+    assert "tanned european SUPI" in out
+    assert "NO LIMITS" in out
 
 
 def test_emit_loose_keys_handles_scalars():

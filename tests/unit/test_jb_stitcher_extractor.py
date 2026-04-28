@@ -113,14 +113,16 @@ def test_stitcher_loose_keys_output():
     assert '"outfit"' not in string_out
 
 
-def test_stitcher_preserves_explicit_quote_chars():
-    """`\\"`-escapes in inputs survive as literal `"` in loose_keys output."""
+def test_stitcher_strips_all_quote_chars_in_loose_keys_output():
+    """User's rule: NO `"` chars in loose_keys output, even ones that were
+    embedded literally in input values."""
     _, string_out = _stitch(
         "outfit",
         output_format="loose_keys",
         input_1='{"label": "tanned european \\"SUPI\\""}',
     )
-    assert 'tanned european "SUPI"' in string_out
+    assert '"' not in string_out
+    assert "tanned european SUPI" in string_out
 
 
 def test_stitcher_no_inputs_emits_empty_object():
@@ -247,11 +249,12 @@ def test_extractor_string_output_strips_value_quotes():
     assert '"face"' not in string_out
 
 
-def test_extractor_string_output_preserves_explicit_quotes():
-    """Literal `"` chars from `\\"` survive into the loose_keys string output."""
+def test_extractor_strips_all_quote_chars_in_loose_keys_output():
+    """User's rule: NO `"` chars in loose_keys output anywhere."""
     src = '{"face": {"ethnicity": "tanned european \\"SUPI\\""}}'
     _, string_out, _ = _extract(src, "face")
-    assert 'tanned european "SUPI"' in string_out
+    assert '"' not in string_out
+    assert "tanned european SUPI" in string_out
 
 
 # ─── Stitcher → Extractor end-to-end ──────────────────────────────────

@@ -56,13 +56,16 @@ def test_rows_with_user_hosiery_example():
     assert '"hosiery"' not in string_out
 
 
-def test_rows_preserve_explicit_quotes_in_value():
-    """A literal `"` in a row value (e.g. from a `\\"` escape in source JSON)
-    survives into the loose-keys output."""
+def test_rows_strip_quote_chars_from_value_in_loose_keys():
+    """All `"` chars are stripped from loose_keys output, including any
+    embedded in row values. raw_json keeps them (it's strict JSON)."""
     rows = _rows(("ethnicity", 'tanned european "SUPI"', 0))
     raw_json, string_out = _build(rows=rows, output_format="loose_keys")
+    # Strict JSON keeps the literal `"` chars (escaped in the JSON source).
     assert json.loads(raw_json) == {"ethnicity": 'tanned european "SUPI"'}
-    assert 'tanned european "SUPI"' in string_out
+    # Loose_keys strips them all.
+    assert '"' not in string_out
+    assert "tanned european SUPI" in string_out
     assert "ethnicity:" in string_out
 
 
