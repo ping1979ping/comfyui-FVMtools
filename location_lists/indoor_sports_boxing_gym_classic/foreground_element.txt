@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+worn canvas ring-floor edge | 0.95 | 0.2-0.5 | scuffed taut painted canvas
+hand-wrap-strewn rubber gym mat | 0.9 | 0.2-0.5 | softly buckled black rubber
+scattered rosin chalk dust patch | 0.8 | 0.05-0.2 | fine white floor powder
+ring-step wooden corner riser | 0.7 | 0.05-0.2 | scuffed painted wood stair
+loose hand-wrap roll on floor | 0.85 | 0.05-0.2 | coiled cotton bandage
+damp sweat-stained towel drape | 0.8 | 0.05-0.2 | limp cotton terry cloth
+leather speedbag glove pair | 0.7 | 0.05-0.15 | scuffed paired training mitt
+upturned spit bucket foreground | 0.55 | 0.05-0.15 | battered metal pail
+rosin tray near ringside | 0.55 | 0.05-0.15 | small wooden powder dish
+scuffed gym shoe pair on canvas | 0.7 | 0.05-0.15 | low-cut leather boxing boot
+dropped focus mitts on canvas | 0.7 | 0.05-0.15 | padded curved trainer pads
+stopwatch on wooden stool | 0.55 | 0.02-0.08 | chrome round-faced timer

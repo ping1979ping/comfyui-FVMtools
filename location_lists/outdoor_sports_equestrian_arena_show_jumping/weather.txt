@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear dry game-day air | 1.0 | - | -
+light breeze across the field | 0.9 | - | -
+warm dry summer competition heat | 0.8 | - | -
+cool crisp autumn match air | 0.85 | - | -
+light overcast humid stillness | 0.75 | - | -
+faint scent of cut grass | 0.7 | - | -
+dry dusty stadium air | 0.65 | - | -
+damp morning dew chill | 0.6 | - | -
+sharp cold winter sport bite | 0.7 | - | -
+steady tournament-day stillness | 0.85 | - | -
+muggy late-summer match humidity | 0.65 | - | -

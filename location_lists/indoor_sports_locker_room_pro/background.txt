@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+painted team-logo locker-room mural wall | 1.0 | 0.7-1.0 | matte painted club emblem
+hardwood-veneer locker stall row | 0.95 | 0.7-1.0 | tall stall-front cabinet line
+framed championship-photo wall | 0.85 | 0.6-0.9 | rows of black-framed prints
+brushed-metal stall-row backdrop | 0.85 | 0.6-1.0 | brushed-aluminum cabinet skin
+etched-glass team-motto wall | 0.7 | 0.5-0.9 | softly etched motivational text
+retired-number jersey wall | 0.75 | 0.5-0.9 | framed numbered jerseys
+monochrome accent paint wall | 0.85 | 0.7-1.0 | matte deep team-color paint
+trainer-station tile wall | 0.7 | 0.6-0.9 | smooth tile sports-medical wall
+rear training-room glass wall | 0.6 | 0.5-0.9 | transparent glazing partition
+low backlit locker-name plate row | 0.75 | 0.5-0.9 | etched athlete-name strip
+hand-painted club-creed quote wall | 0.65 | 0.5-0.9 | stencil-painted creed
+upper trophy-shelf-row backdrop | 0.7 | 0.5-0.9 | row of trophy displays
+dark stained wood-cap molding wall | 0.7 | 0.6-1.0 | rich stained timber edge

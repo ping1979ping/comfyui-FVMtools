@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+start-house gate-shed roof line | 0.85 | 0.05-0.2 | small start-house roof
+painted start-gate threshold edge | 0.95 | 0.05-0.15 | embedded start-gate band
+course-gate flag-pole standard | 0.95 | 0.05-0.15 | small fluttering gate-pole
+safety-net B-net cable post | 0.85 | 0.05-0.15 | racer B-net post
+race-clock pylon-tower mast top | 0.85 | 0.02-0.1 | start-clock column top
+padded gate-bumper-pad top edge | 0.7 | 0.05-0.15 | padded gate-pad bumper top
+course-marshal flag pole base | 0.55 | 0.02-0.08 | small handheld flag-pole
+start-wand-arm trigger top | 0.7 | 0.02-0.08 | lever-trigger top
+speaker-post mast top fixture | 0.55 | 0.02-0.08 | tall PA-speaker pole
+flag-of-nations pole standard top | 0.7 | 0.02-0.1 | high-mast country flag

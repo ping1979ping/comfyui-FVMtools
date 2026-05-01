@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+packed hockey-arena seating bowl | 1.0 | 0.7-1.0 | rows of fold-down spectator seat
+dasher-board sponsor-graphic perimeter | 1.0 | 0.6-1.0 | wrapped advertising rink edge
+rink-end glass-and-net protective wall | 0.95 | 0.6-1.0 | tempered safety glass band
+center-hung scoreboard video cube | 0.95 | 0.6-1.0 | four-sided rink video board
+retired-jersey rafter banner display | 0.75 | 0.5-0.9 | hanging numbered jerseys
+home-team championship-banner row | 0.85 | 0.6-0.9 | rafter title cloth
+Zamboni-tunnel resurfacer entrance | 0.7 | 0.4-0.8 | rink-corner ice-machine portal
+press-box upper-tier glass front | 0.7 | 0.5-0.9 | media-window strip
+home-team penalty-box backdrop | 0.7 | 0.5-0.9 | open-front sin-bin enclosure
+opposite-end goal-net backdrop | 0.95 | 0.4-0.8 | white tied goal mesh
+club-emblem center-stand mural | 0.6 | 0.4-0.8 | painted team-emblem wall
+organist platform mid-tier | 0.5 | 0.3-0.7 | small raised musician stand
+LED ribbon-board upper-fascia sweep | 0.85 | 0.6-1.0 | scrolling rink-edge graphic

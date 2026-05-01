@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+tiered baseball-park grandstand bowl | 1.0 | 0.7-1.0 | rows of fold-down stadium seat
+center-field batter-eye dark wall | 0.95 | 0.5-0.9 | matte dark-green vision wall
+perimeter outfield wall sponsor sweep | 0.95 | 0.5-0.9 | padded ad-wrapped fence
+massive video scoreboard pylon | 0.9 | 0.5-0.9 | large LED video panel
+foul-pole vertical yellow tower | 0.85 | 0.5-0.9 | tall painted boundary marker
+retired-number outfield-wall display | 0.7 | 0.4-0.8 | painted commemorative numerals
+press-box mid-tier glass front | 0.7 | 0.5-0.9 | media-window strip
+home-club team-flag pole row | 0.6 | 0.4-0.8 | high-mast banner row
+opposite-stand crowd silhouette | 0.85 | 0.6-1.0 | far-side spectator wall
+home-team championship pennant row | 0.7 | 0.4-0.8 | rafter title cloth
+manual scoreboard vintage facade | 0.55 | 0.4-0.8 | hand-flipped numeral wall
+bullpen-pen relief-pitcher mound area | 0.6 | 0.3-0.7 | open relief-warmup pen
+perimeter pitching-bullpen gate sweep | 0.55 | 0.4-0.8 | low pen-edge fence

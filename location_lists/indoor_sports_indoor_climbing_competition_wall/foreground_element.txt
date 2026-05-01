@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+indoor-climb padded bouldering-pad surface edge | 1.0 | 0.3-0.6 | thick bouldering-pad surface
+painted indoor-climb start-line tag | 0.85 | 0.05-0.15 | painted start-line tag
+dropped indoor-climb chalk-bag pouch | 0.85 | 0.02-0.05 | small grip-chalk pouch
+scuffed indoor-climb shoe pair | 0.85 | 0.02-0.08 | rubber-sole climbing shoe
+dropped indoor-climb harness-clip carabiner | 0.55 | 0.02-0.05 | auto-lock carabiner
+rolled indoor-climb belay-rope coil | 0.85 | 0.05-0.15 | dynamic-rope coil
+dropped indoor-climb athletic-tape roll | 0.7 | 0.02-0.05 | white cotton finger-tape spool
+dropped indoor-climb finger-brush | 0.55 | 0.02-0.03 | small hold-cleaning brush
+athlete indoor-climb water-bottle ground | 0.85 | 0.02-0.05 | branded sport bottle
+indoor-climb chalk-cloud dust patch | 0.85 | 0.05-0.15 | hand-applied chalk dust
+dropped indoor-climb athlete-bib number | 0.7 | 0.02-0.05 | race-bib paper number
+indoor-climb spectator program flyer | 0.5 | 0.02-0.05 | creased event-program page

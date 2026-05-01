@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+racing low-profile swim goggle | 1.0 | 0.02-0.08 | silicone-seal racing eyewear
+team-color silicone swim cap | 1.0 | 0.02-0.05 | smooth molded racing cap
+athlete kickboard foam slab | 0.7 | 0.02-0.1 | training swim board
+split-time stopwatch lanyard | 0.85 | 0.02-0.05 | digital lap-timer pendant
+synthetic chamois towel | 0.85 | 0.02-0.08 | high-absorbency squeeze cloth
+nose-clip swim accessory | 0.55 | 0.02-0.03 | small silicone clip
+athlete deck robe parka | 0.85 | 0.02-0.1 | team-monogrammed warm parka
+pull-buoy training float | 0.55 | 0.02-0.05 | thigh-grip foam float
+athlete energy-gel pouch | 0.6 | 0.02-0.03 | small foil-pack supplement
+hand-paddle training pair | 0.5 | 0.02-0.05 | rigid pull-paddle
+split-card lap-counter paddle | 0.6 | 0.02-0.05 | numbered turn-board
+athlete water-bottle squeeze | 0.85 | 0.02-0.05 | branded sport bottle
+ear-plug silicone pair | 0.5 | 0.02-0.03 | small molded ear-cap

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+regulation eight-sided fighting cage | 1.0 | 0.3-0.6 | metal-fence octagonal enclosure
+padded fight-canvas cage floor | 1.0 | 0.3-0.6 | stretched event-cloth canvas
+cage-gate hinged-entry door | 0.85 | 0.2-0.4 | fenced-mesh entry panel
+octagon-corner cornerman stool | 0.85 | 0.2-0.4 | fight-corner perch seat
+ring-side judges' table row | 0.85 | 0.2-0.4 | rink-side judging bench
+cutman seat near corner | 0.7 | 0.1-0.3 | cornerman wound-care seat
+chain-link cage-wall fencing | 0.95 | 0.3-0.5 | vinyl-coated mesh barrier
+ring-announcer center-cage stance | 0.7 | 0.1-0.3 | tuxedo-clad announcer
+cage-side broadcast-camera operator | 0.7 | 0.1-0.3 | shoulder-cam shooter
+octagon-corner cornerman cluster | 0.7 | 0.2-0.4 | fight-corner team huddle
+center-canvas referee stance | 0.85 | 0.1-0.3 | referee in cage
+ring-card girl walking line | 0.55 | 0.1-0.3 | round-card walker

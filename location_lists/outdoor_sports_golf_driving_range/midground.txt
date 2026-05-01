@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+range-tee artificial mat row | 1.0 | 0.3-0.6 | rubber-base hitting mat
+ball-pyramid range pyramid stack | 0.95 | 0.1-0.3 | pyramidal range-ball stack
+range-side ball-dispenser column | 0.85 | 0.2-0.4 | automatic ball-feeder unit
+range-stretcher athlete warmup zone | 0.7 | 0.2-0.4 | warmup loose-stretch area
+driving-tee yardage-flag pole | 0.85 | 0.1-0.3 | small numbered yardage flag
+ball-picker tractor mid-range | 0.7 | 0.1-0.3 | wheeled-cage range collector
+range-pro instructor stance | 0.7 | 0.1-0.3 | pro-coach standing pose
+range-side bag-stand cluster | 0.85 | 0.2-0.4 | row of stand-bag golf bags
+yardage-target green-marker zone | 0.85 | 0.2-0.4 | marked target green
+range-side lesson-tee partition | 0.7 | 0.1-0.3 | small bay-divider partition
+ball-washer station mid-range | 0.55 | 0.1-0.3 | small cleaning station
+club-rack range-side stand | 0.7 | 0.1-0.3 | vertical demo-club rack

@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+velvet-cover riding helmet | 1.0 | 0.02-0.08 | velvet-cover ASTM-rated helmet
+tall leather riding boot pair | 0.95 | 0.02-0.1 | knee-high leather riding boot
+leather-grip riding crop | 0.85 | 0.02-0.05 | leather-grip riding crop
+dressage white show-coat jacket | 0.7 | 0.02-0.1 | tailored show-coat jacket
+white show-shirt stock tie | 0.7 | 0.02-0.05 | starched show-shirt tie
+leather show-saddle close-contact | 0.85 | 0.02-0.1 | close-contact jumping saddle
+braided-mane horse decorative tie | 0.7 | 0.02-0.05 | braided ribbon mane tie
+brushed dandy-curry brush set | 0.65 | 0.02-0.05 | wooden grooming brush
+snaffle-bit bridle headstall | 0.7 | 0.02-0.08 | leather bridle headstall
+padded saddle-pad cloth | 0.7 | 0.02-0.08 | fitted saddle-pad cloth
+show-jumping spurs pair | 0.55 | 0.02-0.05 | small metal riding spur
+rider gloves leather pair | 0.7 | 0.02-0.05 | soft show-glove pair
+show-coat rosette ribbon prize | 0.55 | 0.02-0.05 | ribbon-rosette award

@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+athlete cleat-and-shoe pair in stall | 0.95 | 0.02-0.1 | team-issued sport shoe
+gear duffel bag | 0.95 | 0.02-0.1 | team-emblem zip duffel
+rolled match-day towel | 0.95 | 0.02-0.08 | team-monogrammed cotton wrap
+wireless headphone over-ear pair | 0.85 | 0.02-0.05 | padded over-ear headphone
+athlete shaker-blender bottle | 0.85 | 0.02-0.05 | agitator-blender sports cup
+athletic-tape roll set | 0.85 | 0.02-0.05 | white cotton finger-tape spool
+foam-roller recovery tool | 0.7 | 0.02-0.1 | high-density cylindrical roller
+massage-gun percussion device | 0.7 | 0.02-0.05 | handheld massage gun
+cold-tub thermometer probe | 0.5 | 0.02-0.03 | digital tub temp probe
+hand-grip stress squeezer | 0.55 | 0.02-0.03 | spring squeeze trainer
+personal pre-game playlist player | 0.55 | 0.02-0.03 | small portable music player
+trainer's strapping-tape scissors | 0.55 | 0.02-0.03 | blunt-tip athletic shears
+athlete recovery slipper pair | 0.7 | 0.02-0.08 | soft slip-on recovery sandal

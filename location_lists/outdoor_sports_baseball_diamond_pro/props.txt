@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+regulation leather baseball | 1.0 | 0.02-0.05 | stitched-hide white ball
+ash baseball bat | 0.85 | 0.02-0.1 | lathed wood bat
+leather fielder mitt | 0.95 | 0.02-0.08 | pocketed catch glove
+catcher chest-protector | 0.7 | 0.02-0.1 | padded torso shell
+batter helmet single-flap | 0.85 | 0.02-0.08 | ear-flap protective helmet
+rosin-bag grip pouch | 0.7 | 0.02-0.05 | talc-filled pitcher pouch
+pine-tar stick | 0.55 | 0.02-0.05 | grip-tar applicator
+catcher mask cage | 0.65 | 0.02-0.08 | wired shield face guard
+batting-donut weight ring | 0.55 | 0.02-0.05 | rubber on-deck weight
+club-monogrammed cap | 0.9 | 0.02-0.05 | team-emblem fitted cap
+eye-black grease tube | 0.55 | 0.02-0.03 | small grease applicator
+dugout sunflower-seed bag | 0.6 | 0.02-0.05 | branded snack pouch
+ball-player batting glove pair | 0.85 | 0.02-0.05 | leather palm-grip glove

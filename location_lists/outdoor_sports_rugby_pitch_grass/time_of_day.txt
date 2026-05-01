@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+crisp early morning warmup light | 0.95 | - | -
+bright midday match sunshine | 1.0 | - | -
+warm late afternoon match glow | 0.9 | - | -
+golden hour tournament light | 0.85 | - | -
+overcast diffused practice daylight | 0.85 | - | -
+evening floodlit night-match brightness | 0.9 | - | -
+dawn pre-race start gate light | 0.7 | - | -
+dusk hush after the whistle | 0.7 | - | -
+hard high-noon shadow contrast | 0.8 | - | -
+amber sunset finishing-stretch glow | 0.75 | - | -
+twilight cooldown blue hush | 0.6 | - | -

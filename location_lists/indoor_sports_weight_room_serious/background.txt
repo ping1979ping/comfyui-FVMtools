@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+matte black rubber-tile gym wall | 1.0 | 0.7-1.0 | studded recycled rubber sheet
+painted dark grey training-floor wall | 0.9 | 0.7-1.0 | smooth matte commercial paint
+mirrored full-height training wall | 0.95 | 0.7-1.0 | polished plate-glass reflection
+perforated steel weight-rack wall | 0.85 | 0.6-1.0 | punched commercial steel panel
+graffiti-stenciled barbell motto wall | 0.7 | 0.6-0.9 | stencil-sprayed motivational text
+exposed concrete blockwork backdrop | 0.85 | 0.7-1.0 | rough-cast structural masonry
+dark slatwall display panel | 0.75 | 0.6-0.9 | horizontal grooved retail board
+framed champion-lifter photo wall | 0.7 | 0.6-0.9 | rows of black-framed prints
+plate-loaded barbell-rack backdrop | 0.85 | 0.6-0.9 | rows of cast-iron discs
+painted record-board wall | 0.65 | 0.5-0.9 | whiteboard tracking athlete records
+industrial ribbed-metal sheet wall | 0.7 | 0.6-1.0 | corrugated steel cladding
+dumbbell-cabinet steel grid wall | 0.8 | 0.6-0.9 | stepped cast-iron rack
+dim performance-zone painted wall | 0.65 | 0.6-0.9 | matte charcoal performance paint

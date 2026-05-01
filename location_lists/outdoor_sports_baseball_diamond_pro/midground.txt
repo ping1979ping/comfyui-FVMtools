@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+regulation baseball-diamond infield | 1.0 | 0.4-0.7 | graded packed-clay infield
+regulation pitching-mound dirt circle | 0.95 | 0.2-0.4 | raised packed-clay rise
+home-plate pentagon shape mark | 0.95 | 0.1-0.3 | white painted pentagon
+first-base fielder ready stance | 0.7 | 0.1-0.3 | ready-glove fielder pose
+on-deck circle hitter ready zone | 0.7 | 0.1-0.3 | painted ready ring
+dugout home-team bench shelter | 0.85 | 0.2-0.4 | covered courtside shelter
+painted foul-line chalk stripe | 0.95 | 0.2-0.4 | bold chalked field-edge stripe
+warning-track outfield-edge strip | 0.85 | 0.2-0.4 | loose-cinder transition strip
+ground-crew chalk-line cart figure | 0.6 | 0.1-0.3 | wheeled chalk dispenser
+infielder dirt-cutout base path | 0.85 | 0.2-0.4 | packed runner pathway
+ump home-plate official squat | 0.7 | 0.1-0.3 | padded plate-umpire stance
+center-field flagpole short-mast | 0.55 | 0.1-0.3 | small park flag standard

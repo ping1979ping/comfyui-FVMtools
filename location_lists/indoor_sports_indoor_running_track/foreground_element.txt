@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+synthetic-rubber lane surface edge | 1.0 | 0.3-0.6 | spongy oval-track surface
+painted finish-line foreground | 0.95 | 0.05-0.15 | bold timing-line stripe
+dropped lane-baton on track | 0.7 | 0.02-0.05 | metal relay baton
+scuffed sprint-spike pair | 0.85 | 0.02-0.08 | lightweight track spike shoe
+track-towel near bench | 0.7 | 0.05-0.15 | athlete cotton wrap
+dropped wristband on track | 0.55 | 0.02-0.05 | elastic terry sweat cuff
+starter-block ramp foreground | 0.85 | 0.05-0.15 | stagger-pad starting block
+painted-inside-rail edge stripe | 0.85 | 0.05-0.15 | white inner-lane stripe
+infield-circle toe-board edge | 0.7 | 0.05-0.15 | concrete circle-toe band
+dropped chip-timing tag | 0.55 | 0.02-0.03 | small ankle-strap chip
+rolled warmup pants pile | 0.6 | 0.05-0.15 | team-issue warmup pant
+dropped energy-gel pouch | 0.5 | 0.02-0.03 | foil-pack supplement

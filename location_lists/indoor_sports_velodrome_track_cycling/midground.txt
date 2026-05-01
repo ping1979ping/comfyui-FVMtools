@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+polished-wood track-cycling boards | 1.0 | 0.4-0.7 | lacquered hardwood track
+painted measurement-line stripe | 0.95 | 0.2-0.4 | bold blue and red track stripe
+track-cycling pursuit-line painted band | 0.95 | 0.1-0.3 | painted pursuit reference line
+cycling-rider mid-banked stance | 0.85 | 0.2-0.5 | leaning track-rider pose
+center-infield team pit-row | 0.85 | 0.2-0.4 | rider-team pit gathering
+track-side commissaire bench | 0.7 | 0.1-0.3 | official judge bench
+starter-gate-holder kneel pose | 0.7 | 0.1-0.3 | rider-holder kneeling
+derny-bike pace-rider mid-track | 0.5 | 0.2-0.4 | pace-motorbike rider
+painted black-line track pursuit edge | 0.85 | 0.1-0.3 | low-edge race line
+pursuit-pursuit kilo-marker band | 0.7 | 0.1-0.3 | kilo-marker reference band
+center-infield warmup-roller bike | 0.7 | 0.1-0.3 | stationary warmup bike
+track-edge inner-rail safety post | 0.85 | 0.1-0.3 | low-rail standard

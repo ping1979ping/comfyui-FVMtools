@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+painted asphalt finish-zone street | 1.0 | 0.4-0.7 | wet-asphalt black road surface
+painted finish-line broad band | 0.95 | 0.2-0.4 | bold race-day stripe
+course-mile distance marker post | 0.85 | 0.2-0.4 | freestanding distance sign
+race-bib pinned runner stride | 0.85 | 0.2-0.4 | mid-stride runner pose
+course-marshal high-vis pose | 0.7 | 0.1-0.3 | bright-vest race official
+medical-aid station row | 0.7 | 0.2-0.4 | small first-aid bench row
+water-cup table refreshment row | 0.85 | 0.2-0.4 | long aid-table cup row
+photo-finish camera-tripod cluster | 0.6 | 0.1-0.3 | long-lens finish-line crouch
+crowd-cheer barricade line | 0.95 | 0.3-0.5 | fan-line metal barrier
+course-route arrow pavement decal | 0.7 | 0.2-0.4 | painted route arrow
+post-finish foil-blanket walk-zone | 0.7 | 0.2-0.4 | post-finish recovery lane
+course-runner pace-leader cluster | 0.7 | 0.2-0.4 | lead-pack runner group

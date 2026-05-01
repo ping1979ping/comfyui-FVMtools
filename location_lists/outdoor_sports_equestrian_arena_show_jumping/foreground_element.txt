@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+raked sand arena-footing surface edge | 1.0 | 0.3-0.6 | graded sand-fiber arena footing
+painted standard-pillar jump base | 0.95 | 0.05-0.15 | ornate jump-pillar base
+scattered hoofprint divot patch | 0.85 | 0.05-0.2 | shallow hoof impact
+dropped riding-crop on sand | 0.55 | 0.02-0.05 | leather-grip crop
+dropped show-jumping helmet | 0.55 | 0.02-0.08 | velvet-cover riding helmet
+scuffed riding-boot pair | 0.7 | 0.02-0.1 | tall leather riding boot
+course-flagged fence-numeral plaque | 0.85 | 0.05-0.15 | small painted course-numeral
+painted fence-base potted-flower base | 0.85 | 0.05-0.15 | decorative jump-base flower
+scattered show-arena straw flake | 0.6 | 0.05-0.15 | loose-arena straw flake
+course-walking rider stride foreground | 0.6 | 0.1-0.2 | rider-walk striding pose
+dropped warmup-jacket riding-coat | 0.55 | 0.05-0.15 | riding-coat tweed wrap
+scuffed sand-arena rake mark | 0.6 | 0.05-0.15 | fresh-rake fork pattern

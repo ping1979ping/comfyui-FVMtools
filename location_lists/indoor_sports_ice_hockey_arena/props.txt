@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+composite hockey stick | 1.0 | 0.02-0.1 | tape-wrapped graphite shaft
+vulcanized rubber puck | 1.0 | 0.02-0.05 | small black disk
+padded goalie blocker | 0.7 | 0.02-0.08 | rectangular padded glove
+catcher trapper goalie glove | 0.7 | 0.02-0.08 | webbed-pocket goalie mitt
+composite skate boot pair | 0.85 | 0.02-0.1 | stainless-blade skate
+rink-side athletic-tape roll | 0.85 | 0.02-0.05 | white stick-tape spool
+team-color helmet with cage | 0.85 | 0.02-0.1 | shell with face guard
+rink-side water-bottle squeeze | 0.85 | 0.02-0.05 | branded sport bottle
+club-monogrammed bench towel | 0.7 | 0.02-0.08 | team-emblem cotton wrap
+captain elbow-pad pair | 0.55 | 0.02-0.08 | padded shell elbow guard
+rink-side stick-rack holder | 0.65 | 0.02-0.1 | vertical stick storage
+face-shield visor accessory | 0.55 | 0.02-0.05 | clear shield half-cage
+rink-side referee whistle | 0.55 | 0.02-0.03 | metal lanyard whistle

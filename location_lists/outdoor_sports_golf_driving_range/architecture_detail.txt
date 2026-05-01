@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+teaching-bay open-front roof line | 0.85 | 0.05-0.2 | long open-eaves roof
+perimeter mesh-net cable post | 0.95 | 0.05-0.15 | tall safety-net standard
+range-bay divider partition top | 0.85 | 0.05-0.15 | bay-side acoustic-divider
+yardage-marker post cap | 0.85 | 0.05-0.15 | small numbered post top
+ball-dispenser column top | 0.7 | 0.05-0.15 | auto-feeder cabinet cap
+range-edge fence panel cap | 0.7 | 0.05-0.1 | low boundary-fence top
+clubhouse range-side eaves edge | 0.7 | 0.05-0.15 | shop-roof eaves line
+range-mat steel-frame edge | 0.7 | 0.05-0.1 | mat-frame boundary
+range-side speaker post mast | 0.55 | 0.02-0.08 | tall PA-speaker pole
+low range-step concrete riser | 0.55 | 0.02-0.08 | concrete tee-up step

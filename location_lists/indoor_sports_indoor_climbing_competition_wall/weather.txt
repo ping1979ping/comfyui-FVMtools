@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+climate-controlled cool dry air | 1.0 | - | -
+faint smell of rubber and chalk | 0.85 | - | -
+crisp arena ventilation hum | 0.9 | - | -
+warm body-heat humidity from athletes | 0.8 | - | -
+scent of liniment and sweat | 0.75 | - | -
+subtle chlorine or rubber tang | 0.6 | - | -
+dry conditioned hardcourt stillness | 0.85 | - | -
+steady whoosh of HVAC vents | 0.8 | - | -
+muted echo of empty-hall acoustics | 0.7 | - | -
+faint scent of polished hardwood | 0.55 | - | -
+crisp ozone of fresh ice surface | 0.55 | - | -

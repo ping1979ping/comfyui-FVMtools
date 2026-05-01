@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+rink-arena cantilever ceiling | 0.85 | 0.1-0.2 | soaring exposed roof
+center-ice video-cube hang rig | 0.95 | 0.05-0.15 | suspended four-sided board
+rafter lighting truss cluster | 0.85 | 0.05-0.15 | high-output ceiling spot grid
+dasher-board plexiglass top edge | 0.95 | 0.05-0.2 | tempered safety panel
+rafter-hung championship banner | 0.85 | 0.05-0.2 | fabric title cloth
+LED ribbon-fascia rink edge | 0.85 | 0.05-0.2 | scrolling graphic strip
+ice-resurfacer ramp portal frame | 0.7 | 0.05-0.15 | rink-corner machine portal
+glass-pane mounting frame top cap | 0.95 | 0.05-0.15 | rink safety-glass frame
+speaker-cluster line-array hang | 0.7 | 0.05-0.15 | vertical sound array
+rink-end goal-camera mount | 0.7 | 0.02-0.1 | robotic mounted camera

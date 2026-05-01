@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+indoor-climb wall-panel top horizon edge | 0.95 | 0.05-0.2 | textured-resin wall top
+indoor-climb wall-route overhang-roof shelf | 0.85 | 0.05-0.2 | overhang-route ceiling
+indoor-climb wall-route bolt-anchor row | 0.95 | 0.05-0.15 | route-bolt anchor line
+indoor-climb scaffold-platform top edge | 0.7 | 0.05-0.15 | route-setter scaffold edge
+indoor-climb LED-fascia ribbon edge | 0.85 | 0.05-0.2 | rolling sponsor light edge
+indoor-climb auto-belay device cap | 0.85 | 0.02-0.1 | auto-belay device housing
+indoor-climb judge-booth canopy edge | 0.7 | 0.05-0.15 | judge-booth canopy edge
+indoor-climb timer-clock panel base | 0.7 | 0.05-0.15 | countdown panel base
+indoor-climb route-tag flag-post top | 0.7 | 0.02-0.08 | route-tag flag pole top
+indoor-climb venue speaker-cluster hang | 0.7 | 0.05-0.15 | vertical sound array

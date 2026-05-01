@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed truss training-floor ceiling | 0.85 | 0.1-0.2 | open black-painted joist
+rigged pull-up monkey-bar grid | 0.95 | 0.05-0.15 | ladder-grid rig structure
+track-mounted spotlight rail | 0.85 | 0.05-0.15 | high-output ceiling spot row
+safety-pinned rack catch arm | 0.95 | 0.02-0.1 | horizontal safety pin
+ceiling-suspended ring-and-rope rig | 0.7 | 0.05-0.15 | gymnastic ring suspension
+painted lift-zone floor stripe | 0.85 | 0.05-0.2 | high-visibility safety paint
+battle-rope wall anchor plate | 0.7 | 0.02-0.1 | steel mounting bracket
+competition platform corner edge | 0.85 | 0.05-0.15 | wood-rubber lifting edge
+ceiling-fixed industrial fan | 0.7 | 0.05-0.15 | high-volume blade
+painted record-board wall mount | 0.55 | 0.02-0.1 | framed whiteboard fixture

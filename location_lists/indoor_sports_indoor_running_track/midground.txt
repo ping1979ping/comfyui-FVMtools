@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+synthetic-rubber track lane row | 1.0 | 0.3-0.6 | spongy oval-track surface
+painted lane stripe boundary | 0.95 | 0.2-0.4 | bold lane-divider stripe
+starter-block sprinter row | 0.95 | 0.2-0.4 | stagger-pad starting block
+finish-line painted band | 0.95 | 0.1-0.3 | bold black-and-white stripe
+infield-circle shot-put station | 0.7 | 0.1-0.3 | concrete circle-toe board
+vault-runway carpet-strip lane | 0.6 | 0.2-0.4 | infield runway carpet
+hurdle-race hurdle row | 0.7 | 0.2-0.4 | evenly-spaced track hurdle
+starter strobe-and-horn pole | 0.7 | 0.1-0.3 | audio-trigger starter unit
+officials' tape-measure crew | 0.55 | 0.1-0.3 | throws-event measure team
+spike-warming athlete bench row | 0.7 | 0.1-0.3 | warmup waiting bench
+padded high-jump landing mat | 0.7 | 0.2-0.4 | thick foam landing pit
+relay-zone exchange marker tape | 0.7 | 0.1-0.3 | infield exchange zone

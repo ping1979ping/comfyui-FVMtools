@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+scuffed brick gym wall | 1.0 | 0.7-1.0 | weathered painted masonry
+faded fight-poster covered wall | 0.95 | 0.7-1.0 | layered torn promotional bills
+white painted concrete block wall | 0.9 | 0.7-1.0 | matte chipped paint surface
+dim industrial corner with hanging bags | 0.85 | 0.6-1.0 | shadowed metal-frame backdrop
+vintage championship belt display wall | 0.7 | 0.6-0.9 | leather and gilded plate row
+worn leather speedbag wall mount | 0.7 | 0.5-0.9 | scuffed pear-shaped silhouette
+hand-painted gym signage wall | 0.8 | 0.6-1.0 | block-letter painted lettering
+rust-streaked metal locker wall | 0.65 | 0.6-0.9 | battered enamel paint
+ring-rope corner pillar background | 0.85 | 0.5-0.9 | tightly wound canvas-covered cable
+trophy-shelf cluttered backdrop | 0.65 | 0.5-0.9 | brass and plastic figurine row
+hand-wrapped boxing glove rack wall | 0.7 | 0.5-0.9 | rows of stitched leather mitts
+yellowed mirror wall with smudges | 0.7 | 0.6-1.0 | softly tarnished reflective glass
+torn flag hung above ring | 0.55 | 0.4-0.8 | frayed fabric pennant

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+groomed snow-piste surface edge | 1.0 | 0.3-0.6 | groomed icy snow-piste
+painted start-gate band foreground | 0.95 | 0.05-0.15 | bold start-stripe paint
+dropped ski-pole on snow | 0.7 | 0.02-0.1 | carbon-shaft ski-pole
+scuffed ski-edge ice-shave foreground | 0.85 | 0.05-0.15 | scraped ice-edge ridge
+dropped race-helmet near gate | 0.7 | 0.02-0.1 | chin-bar racing helmet
+scuffed boot-clip ski-binding pair | 0.85 | 0.02-0.08 | race-binding cleat
+dropped start-bib pinned number | 0.85 | 0.02-0.05 | race-bib paper number
+racer-coach goggle pair on snow | 0.7 | 0.02-0.05 | anti-fog ski goggle
+painted course-gate flag base | 0.85 | 0.05-0.15 | embedded gate-flag base
+scuffed glove-grip pole-handle | 0.7 | 0.02-0.05 | padded ski-pole grip
+dropped chip-timing band | 0.55 | 0.02-0.03 | small wrist timing band
+scuffed wax-stick scrap on snow | 0.55 | 0.02-0.03 | small wax-stick scrap

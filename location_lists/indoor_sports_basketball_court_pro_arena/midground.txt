@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+polished hardwood basketball court | 1.0 | 0.3-0.6 | glossy maple floor plank
+regulation breakaway hoop and backboard | 1.0 | 0.2-0.5 | tempered-glass square backboard
+painted three-point arc line | 0.95 | 0.2-0.5 | bold curved court paint
+center-jump tip-off circle | 0.85 | 0.2-0.4 | painted center logo ring
+courtside player benches | 0.85 | 0.2-0.4 | padded fold-down team chair row
+scorer table center-court | 0.8 | 0.2-0.4 | sponsor-wrapped media console
+photographer baseline cluster | 0.7 | 0.1-0.3 | long-lens crouched cluster
+referee stand-by strip | 0.7 | 0.1-0.3 | striped jersey official trio
+LED court-edge video board | 0.75 | 0.2-0.4 | courtside graphic ribbon
+standing front-row VIP seats | 0.7 | 0.2-0.4 | leather courtside chair
+painted free-throw lane key | 0.85 | 0.2-0.4 | bold rectangular paint
+dribble-zone painted half-court line | 0.8 | 0.2-0.4 | bold midcourt stripe

@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+training-shoe lightweight cross-trainer | 0.95 | 0.02-0.08 | lightweight cross-trainer
+magnesium-chalk grip block | 0.85 | 0.02-0.05 | compressed magnesium cube
+training-resistance loop band | 0.95 | 0.02-0.08 | looped stretch resistance band
+athlete water-jug bottle | 0.95 | 0.02-0.08 | translucent training jug
+training-glove fingerless pair | 0.85 | 0.02-0.05 | fingerless training glove
+ankle-weight strap pair | 0.7 | 0.02-0.05 | padded ankle-weight strap
+athlete gear-bag duffel | 0.85 | 0.02-0.1 | athletic-duffel bag
+calisthenics-ring suspension ring | 0.55 | 0.02-0.05 | wooden gymnastic ring
+park-jump rope coil | 0.85 | 0.02-0.05 | coiled wire skip-rope
+training-towel cotton wrap | 0.85 | 0.02-0.08 | athletic-cotton wrap towel
+phone-arm-strap fitness tracker | 0.55 | 0.02-0.03 | armband phone-strap
+training-tracker wrist watch | 0.7 | 0.02-0.03 | wrist GPS pace watch
+knee-sleeve neoprene pair | 0.65 | 0.02-0.05 | thick stretch knee support

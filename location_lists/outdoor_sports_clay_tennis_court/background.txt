@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+packed clay-court horizon line | 1.0 | 0.6-1.0 | flat ochre crushed-brick haze
+dark green windscreen perimeter | 0.95 | 0.7-1.0 | tightly woven mesh fabric
+tiered open-air spectator stand | 0.85 | 0.6-1.0 | rows of bench seating
+distant clubhouse cypress row | 0.8 | 0.5-0.9 | tall slender evergreen line
+cluster of umpire-shaded gallery | 0.7 | 0.5-0.9 | shaded crowd cluster
+broadcast tower tournament backdrop | 0.65 | 0.4-0.8 | scaffold camera platform
+court-side logo windscreen panel | 0.85 | 0.6-1.0 | sponsor-printed mesh skin
+player-area awning canopy | 0.75 | 0.5-0.9 | stretched white tournament cloth
+outdoor scoreboard pylon | 0.85 | 0.5-0.9 | freestanding match-score column
+ball-kid shaded bench backdrop | 0.7 | 0.4-0.8 | small awning over shaded seat
+tournament logo backdrop banner | 0.8 | 0.6-0.9 | stretched event-brand cloth
+center-court chair umpire stand | 0.8 | 0.5-0.9 | tall raised official chair
+clay-warmup adjacent court strip | 0.65 | 0.5-0.9 | second-court ochre strip

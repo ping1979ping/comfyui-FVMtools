@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+driver-club graphite shaft | 1.0 | 0.02-0.1 | graphite-shaft driver club
+iron-club blade pair | 0.85 | 0.02-0.1 | forged-iron club
+yellow-stripe range ball pile | 0.95 | 0.02-0.05 | yellow-band range ball
+club-glove pair | 0.85 | 0.02-0.05 | soft leather golf glove
+rubber range-tee peg | 0.95 | 0.02-0.03 | low rubber peg post
+club-monogrammed range towel | 0.85 | 0.02-0.08 | team-club cotton wrap
+range-bag stand-bag | 0.95 | 0.02-0.1 | club-pocket stand bag
+ball-marker round disc | 0.55 | 0.02-0.03 | small flat round marker
+club-bristle cleaning brush | 0.55 | 0.02-0.03 | metal-bristle club brush
+range-pro alignment stick | 0.7 | 0.02-0.08 | fiberglass aiming rod
+range-mat ball-bucket pail | 0.95 | 0.02-0.1 | round wire ball pail
+ball-mark divot-tool prong | 0.55 | 0.02-0.03 | small fork repair tool
+club-headcover knit hood | 0.55 | 0.02-0.05 | knit driver headcover

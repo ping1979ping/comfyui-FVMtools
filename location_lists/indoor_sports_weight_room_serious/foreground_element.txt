@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+rubber stall-mat lifting floor | 1.0 | 0.3-0.6 | thick interlocking gym tile
+scattered chalk dust handprint | 0.85 | 0.05-0.2 | white powdered grip residue
+loaded barbell on platform foreground | 0.9 | 0.2-0.5 | knurled steel sleeve and discs
+rolled lifting belt on floor | 0.7 | 0.05-0.2 | thick coiled leather strap
+dropped wrist-wrap pair | 0.7 | 0.05-0.2 | elastic wrist-support strap
+scuffed weight collar pair | 0.6 | 0.02-0.1 | spring-clip steel ring
+foam roller on floor | 0.7 | 0.05-0.2 | high-density cylindrical roller
+set of fractional plates | 0.55 | 0.02-0.1 | small calibrated discs
+dropped chalk block by platform | 0.7 | 0.02-0.1 | compressed magnesium cube
+hex-dumbbell pair grounded | 0.75 | 0.05-0.2 | rubber-coated hand weight pair
+athlete water-jug on floor | 0.7 | 0.05-0.15 | translucent gallon training jug
+ankle-strap loop discarded | 0.5 | 0.02-0.1 | padded cuff with D-ring

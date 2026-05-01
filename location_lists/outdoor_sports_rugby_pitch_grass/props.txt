@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+regulation oval rugby-ball | 1.0 | 0.02-0.08 | leather oval rugby ball
+rugby-scrum scrum-cap padded helmet | 0.7 | 0.02-0.08 | padded scrum-cap
+rugby-team mouthguard gum-shield | 0.7 | 0.02-0.03 | small mouthguard
+rugby-cleat soft-stud boot pair | 0.95 | 0.02-0.1 | soft-stud rugby boot
+rugby-team-jersey strip | 0.85 | 0.02-0.1 | team-color rugby jersey
+rugby-tape strapping shoulder roll | 0.7 | 0.02-0.05 | rubberized shoulder strap
+rugby-team water-bottle squeeze | 0.85 | 0.02-0.05 | branded sport bottle
+rugby-bench tackle-bag pad | 0.65 | 0.02-0.1 | padded tackle-bag pad
+rugby-team-monogrammed match towel | 0.7 | 0.02-0.08 | team-emblem cotton wrap
+rugby-referee whistle and cards | 0.7 | 0.02-0.03 | lanyard with cards
+rugby-coach clipboard tactical sheet | 0.55 | 0.02-0.05 | coach tactical sheet
+rugby-team kicking-tee plastic peg | 0.65 | 0.02-0.03 | kicking-tee plastic peg
+rugby-team captain-armband elastic | 0.55 | 0.02-0.05 | colored captain band

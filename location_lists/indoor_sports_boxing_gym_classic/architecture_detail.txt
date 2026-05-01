@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed steel I-beam ceiling | 0.85 | 0.1-0.2 | riveted painted girder
+hanging chain-suspension bag rig | 0.95 | 0.05-0.15 | heavy industrial chain links
+caged industrial pendant lamp | 0.85 | 0.05-0.15 | wire-guard metal cage shade
+ring-corner turnbuckle pad | 0.95 | 0.05-0.15 | padded vinyl-covered post cap
+ceiling fan slow-spin blade | 0.7 | 0.05-0.15 | battered metal industrial fan
+speedbag platform under-ceiling | 0.7 | 0.05-0.15 | rebound oval mounted disk
+mounted round-bell timer fixture | 0.75 | 0.02-0.1 | brass-bell wall fitting
+painted square ceiling pipe run | 0.6 | 0.02-0.1 | exposed riveted conduit
+weathered gym-name signage above ring | 0.7 | 0.05-0.15 | old painted name plate
+rope-ringed corner post sleeve | 0.75 | 0.05-0.15 | tightly wrapped canvas cover

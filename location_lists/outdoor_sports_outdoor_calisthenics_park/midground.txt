@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+steel pull-up bar parallel-bar rig | 1.0 | 0.3-0.6 | powder-coated steel rig
+dip-station parallel-bar zone | 0.85 | 0.2-0.4 | parallel dip-bar pair
+monkey-bar suspension rig | 0.85 | 0.2-0.4 | horizontal monkey-bar grid
+ring-suspension calisthenics ring rig | 0.7 | 0.2-0.4 | gymnastic-ring suspension
+low-bar push-up parallette pair | 0.7 | 0.1-0.3 | low parallette pair
+plyometric-jump box stack | 0.7 | 0.1-0.3 | stacked plyo-box pair
+park-bench warm-up athlete pose | 0.7 | 0.1-0.3 | stretching athlete on bench
+rubber-tile floor-zone training area | 0.85 | 0.2-0.4 | interlocking rubber tile zone
+park-side athlete bag drop | 0.7 | 0.1-0.3 | athlete gear-bag pile
+steel-rig vertical climbing-rope | 0.55 | 0.1-0.3 | knotted-rope climb line
+tractor-tire flip station | 0.55 | 0.1-0.3 | large training tire
+battle-rope ground-anchor station | 0.7 | 0.1-0.3 | thick battle-rope length

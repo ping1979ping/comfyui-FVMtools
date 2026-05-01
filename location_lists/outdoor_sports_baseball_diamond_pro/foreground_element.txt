@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+packed clay infield surface edge | 1.0 | 0.3-0.6 | graded fine-clay top dressing
+painted foul-line chalk edge | 0.95 | 0.1-0.3 | freshly chalked field stripe
+home-plate pentagon foreground | 0.95 | 0.05-0.15 | white painted pentagon
+loose baseball on infield | 0.95 | 0.02-0.05 | leather-hide stitched ball
+dropped fielder mitt foreground | 0.7 | 0.05-0.1 | leather pocket fielder glove
+scuffed batting helmet foreground | 0.55 | 0.05-0.1 | shell with single-flap
+rosin-bag near pitching rubber | 0.7 | 0.02-0.05 | small grip-talc pouch
+dropped batting donut weight | 0.55 | 0.02-0.05 | rubber bat weight ring
+scuffed cleat divot dirt foreground | 0.7 | 0.05-0.15 | torn clay-mark patch
+warmup pine-tar stick | 0.55 | 0.02-0.05 | grip-tar applicator stick
+dropped batting-glove pair | 0.6 | 0.02-0.08 | leather palm-grip glove
+foul-line chalk-cart wheel mark | 0.55 | 0.02-0.08 | fresh-chalk applicator track

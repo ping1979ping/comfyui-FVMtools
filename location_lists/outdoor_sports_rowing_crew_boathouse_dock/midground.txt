@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+painted timber-decked launching dock | 1.0 | 0.3-0.6 | weathered painted plank dock
+rowing-shell hull-fleet stack row | 0.85 | 0.3-0.6 | stacked carbon-shell hulls
+rowing-crew oar-rack row | 0.95 | 0.2-0.4 | vertical oar-rack stand
+rowing-crew stretching warmup zone | 0.7 | 0.2-0.4 | athlete stretching cluster
+rowing-shell mid-water glide line | 0.85 | 0.2-0.4 | mid-water shell glide
+coxswain-coach launch-boat nearshore | 0.6 | 0.2-0.4 | small motor coach-launch
+riverbank sandbag dock-anchor row | 0.7 | 0.1-0.3 | sandbag dock-anchor
+rowing-crew athlete-team huddle | 0.7 | 0.2-0.4 | team pre-race huddle
+dock-side ergometer warmup row | 0.6 | 0.2-0.4 | indoor-row ergometer line
+dock-side flag-pole standard row | 0.7 | 0.1-0.3 | club-pole flag standard
+dock-edge crew-bag drop pile | 0.7 | 0.2-0.4 | rower gear-bag pile
+riverbank lane-buoy course-line | 0.85 | 0.2-0.4 | row of course-marker buoy

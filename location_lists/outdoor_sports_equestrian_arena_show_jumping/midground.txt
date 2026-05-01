@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+raked sand-and-fiber arena footing | 1.0 | 0.4-0.7 | graded sand-fiber arena footing
+show-jumping painted-rail fence | 1.0 | 0.2-0.5 | painted-pole jump rail
+brush-fence brush-jump element | 0.85 | 0.2-0.4 | brush-pile jump element
+oxer-double-rail jump element | 0.85 | 0.2-0.4 | double-rail oxer jump
+liverpool-pool water-jump element | 0.6 | 0.2-0.4 | shallow blue-painted pool
+painted course-numbered fence flag | 0.85 | 0.1-0.3 | show-jump number plaque
+rider warm-up canter circle | 0.7 | 0.2-0.4 | warm-up loose canter ring
+course-builder ground-jury team | 0.55 | 0.1-0.3 | course-design team
+show-arena gate-keeper ribbon | 0.55 | 0.1-0.3 | ribbon-hold attendant
+course-decorator floral fence-base | 0.85 | 0.1-0.3 | potted flower fence base
+rider-walk course-walk pre-round | 0.6 | 0.1-0.3 | rider-on-foot course walk
+perimeter ribbon-banner sweep | 0.85 | 0.2-0.4 | show-arena perimeter banner

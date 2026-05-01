@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+hardwood-front athlete locker stall | 1.0 | 0.3-0.6 | open-front numbered stall
+athlete bench seating row | 0.9 | 0.2-0.4 | padded stall-front bench
+stall-mounted nameplate | 0.95 | 0.1-0.3 | etched athlete-name plate
+trainer rolling massage-table | 0.7 | 0.2-0.4 | padded portable table
+center-room speaker-and-sound dock | 0.55 | 0.2-0.4 | small portable stereo
+freestanding gear bin column | 0.7 | 0.2-0.4 | open-top equipment hamper
+strategy whiteboard rolling stand | 0.7 | 0.2-0.4 | wheeled tactical board
+cold-tub recovery hydro station | 0.55 | 0.2-0.4 | tiled cold-water tub
+media-prep podium stand | 0.55 | 0.1-0.3 | small interview podium
+trophy-display center pedestal | 0.7 | 0.1-0.3 | lit display plinth
+rolling laundry-cart hamper | 0.7 | 0.1-0.3 | canvas wheeled hamper
+athlete dressing-bench rack | 0.85 | 0.2-0.4 | long padded bench

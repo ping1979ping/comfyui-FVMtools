@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+clapboard boathouse-eaves ridge edge | 0.95 | 0.05-0.2 | painted-board eaves ridge
+oar-rack vertical post-cap | 0.95 | 0.05-0.15 | oar-rack post top
+dock-railing post-mast top | 0.85 | 0.05-0.15 | wooden dock-rail post top
+rowing-shell hull-rack tier edge | 0.95 | 0.05-0.15 | stacked hull-rack tier
+club-pennant flagpole standard top | 0.7 | 0.02-0.1 | small pennant-pole top
+boathouse-door slide-rail top | 0.7 | 0.05-0.15 | sliding boathouse-door rail
+dock-anchor sandbag-row top edge | 0.55 | 0.05-0.15 | sandbag-row top edge
+regatta-finish gantry-arch top spar | 0.7 | 0.05-0.15 | finish-arch top
+dock-edge metal cleat-bollard | 0.7 | 0.02-0.08 | small mooring-cleat bollard
+dock-side speaker-post mast top | 0.55 | 0.02-0.08 | PA-speaker pole top

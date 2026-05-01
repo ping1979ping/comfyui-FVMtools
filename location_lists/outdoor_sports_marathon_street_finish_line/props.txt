@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+racing-flat lightweight shoe | 1.0 | 0.02-0.08 | minimal-cushion racing shoe
+race-bib pinned paper number | 0.95 | 0.02-0.05 | race-bib paper number
+chip-timing ankle tag | 0.85 | 0.02-0.03 | small ankle-strap chip
+post-finish foil-blanket wrap | 0.85 | 0.02-0.1 | silver mylar recovery sheet
+paper aid-station cup | 0.85 | 0.02-0.05 | creased paper aid-cup
+squeeze-pouch energy gel | 0.85 | 0.02-0.03 | foil-pack supplement
+course-marshal handheld flag | 0.7 | 0.02-0.05 | small triangle race flag
+finisher medal pendant | 0.85 | 0.02-0.05 | ribboned bronze medal
+race-cap visor sun cap | 0.85 | 0.02-0.05 | lightweight running visor
+hand-held GPS sport-watch | 0.85 | 0.02-0.03 | wrist GPS pace watch
+hydration-belt small flask | 0.7 | 0.02-0.05 | waist-belt small flask
+compression sleeve calf-wrap | 0.6 | 0.02-0.08 | graduated compression sleeve
+pace-bracelet split-time band | 0.55 | 0.02-0.03 | printed pace-band

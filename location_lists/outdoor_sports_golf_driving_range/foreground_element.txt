@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+artificial-turf range-mat surface edge | 1.0 | 0.3-0.6 | rubber-base hitting mat
+painted range-tee distance line | 0.85 | 0.05-0.15 | small painted yardage stripe
+loose range-ball cluster on mat | 0.95 | 0.05-0.15 | yellow-and-white range balls
+dropped club-glove pair | 0.55 | 0.02-0.05 | soft leather golf glove
+rubber-tee mat-peg foreground | 0.85 | 0.02-0.05 | low rubber peg post
+range-towel on bag | 0.85 | 0.02-0.08 | club-monogrammed cotton wrap
+dropped tee-peg short row | 0.7 | 0.02-0.03 | small wooden tee peg
+yardage-flag base ground patch | 0.7 | 0.05-0.15 | flag-anchor base patch
+scuffed range-shoe pair | 0.6 | 0.02-0.08 | spike-sole golf shoe
+dropped scorecard-paper sheet | 0.5 | 0.02-0.05 | printed lesson-track sheet
+range-mat ball-mark indent | 0.7 | 0.02-0.08 | scuffed mat impact
+ball-bucket on mat | 0.95 | 0.05-0.15 | round wire ball pail

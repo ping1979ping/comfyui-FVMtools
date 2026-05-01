@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+flat-water rowing-river horizon line | 1.0 | 0.6-1.0 | calm reflective river surface
+riverbank tree-line opposite shore | 0.95 | 0.5-0.9 | wooded far-bank line
+clapboard-clad boathouse façade | 0.95 | 0.5-0.9 | painted-board boathouse wall
+crew-club pennant flagpole row | 0.7 | 0.4-0.8 | club-pennant flag row
+riverbank stone-revetment edge | 0.7 | 0.4-0.8 | stacked-stone revetment
+rowing-buoy lane-marker chain | 0.85 | 0.5-0.9 | row of small course-buoy
+regatta race-tower judging mast | 0.7 | 0.4-0.8 | raised race-judging tower
+rowing-crew sponsor-banner sweep | 0.85 | 0.5-0.9 | stretched regatta cloth
+riverbank willow-overhang fringe | 0.65 | 0.4-0.8 | drooping willow shoots
+boathouse-rack hull-storage row | 0.85 | 0.5-0.9 | stacked hull-storage rack
+rowing-crew finish-line gantry | 0.7 | 0.4-0.8 | finish-line race gantry
+riverbank reed-and-rush bed | 0.6 | 0.3-0.7 | shallow-water reed bed
+club-launch-coach motor-tender | 0.55 | 0.3-0.7 | small coach-launch boat

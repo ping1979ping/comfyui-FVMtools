@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+foul-pole vertical column edge | 0.85 | 0.05-0.2 | tall yellow boundary tower
+perimeter outfield padding edge | 0.95 | 0.05-0.2 | padded ad-wrapped wall edge
+dugout-shelter polycarbonate roof | 0.85 | 0.05-0.15 | transparent curved cover
+press-box overhang glass-front fascia | 0.7 | 0.05-0.15 | long media-window strip
+scoreboard pylon support strut | 0.7 | 0.05-0.15 | large board column
+painted home-plate rim arc | 0.85 | 0.05-0.15 | small rim-edge stripe
+bullpen-gate fence cap | 0.7 | 0.05-0.1 | low pen-edge rail
+speaker-cluster pylon hang | 0.7 | 0.02-0.1 | stadium PA cluster
+flag-pole standard mast top | 0.55 | 0.02-0.1 | high-mast metal cap
+backstop-screen netting cable | 0.85 | 0.05-0.2 | tightened safety-net cord

@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+massive indoor-climbing competition wall | 1.0 | 0.7-1.0 | textured-resin climbing panel
+indoor-climb upper-tier spectator gallery | 0.95 | 0.6-1.0 | rows of fold-down seat
+indoor-climb sponsor-banner backdrop sweep | 0.95 | 0.6-1.0 | stretched event cloth
+indoor-climb route-setter scaffold platform | 0.7 | 0.5-0.9 | raised route-setter scaffold
+indoor-climb route-numbered tag-row | 0.85 | 0.5-0.9 | row of route-tag plaques
+indoor-climb tournament scoreboard panel | 0.85 | 0.5-0.9 | competition LED panel
+indoor-climb route-painted color stripe | 0.95 | 0.6-1.0 | painted-route color stripe
+indoor-climb upper-canopy ceiling angle | 0.7 | 0.4-0.8 | overhang-route ceiling
+indoor-climb home-team color wedge | 0.7 | 0.5-0.9 | team-color seating wedge
+indoor-climb roped-route belay-line area | 0.85 | 0.5-0.9 | lead-rope belay area
+indoor-climb bouldering-zone padded area | 0.7 | 0.4-0.8 | padded bouldering area
+indoor-climb opposite-bank crowd silhouette | 0.85 | 0.6-1.0 | far-bank spectator block
+indoor-climb broadcast camera-pit | 0.6 | 0.4-0.8 | front-row long-lens cluster

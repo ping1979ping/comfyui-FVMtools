@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+racing-ski cleat pair | 1.0 | 0.02-0.1 | stiff racing-ski pair
+carbon-shaft ski-pole pair | 0.95 | 0.02-0.08 | carbon-shaft ski-pole
+chin-bar racing helmet | 0.95 | 0.02-0.08 | chin-bar racing helmet
+anti-fog ski-goggle pair | 0.95 | 0.02-0.05 | anti-fog ski goggle
+race-bib pinned number | 0.95 | 0.02-0.05 | race-bib paper number
+race-skinsuit one-piece racewear | 0.85 | 0.02-0.1 | lycra-one-piece skinsuit
+race-glove padded pair | 0.85 | 0.02-0.05 | padded grip ski glove
+ski-wax stick block | 0.7 | 0.02-0.03 | small wax-stick block
+ski-binding adjustment screwdriver | 0.55 | 0.02-0.03 | small precision screwdriver
+hand-warmer chemical pack | 0.55 | 0.02-0.03 | small chemical hand-warmer
+chin-strap wrist timing band | 0.55 | 0.02-0.03 | small wrist timing band
+warmup-suit insulated parka | 0.7 | 0.02-0.1 | team-color insulated parka
+ski-coach lap-board chart | 0.55 | 0.02-0.05 | small lap-chart board

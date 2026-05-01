@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+painted-timber dock-plank surface edge | 1.0 | 0.3-0.6 | weathered painted plank
+painted dock-edge boundary stripe | 0.7 | 0.05-0.15 | painted dock boundary
+dropped oar-blade scoop edge | 0.85 | 0.05-0.2 | carbon-blade oar scoop
+scuffed unisuit body-suit drape | 0.7 | 0.05-0.15 | lycra unisuit drape
+dropped boat-shoe pair | 0.55 | 0.02-0.08 | rubber-grip dock shoe
+coiled dock-line mooring rope | 0.7 | 0.05-0.15 | coiled mooring line
+dropped megaphone-bullhorn | 0.5 | 0.02-0.05 | small handheld bullhorn
+athlete water-bottle on dock | 0.85 | 0.02-0.05 | branded sport bottle
+rolled crew-blanket pile | 0.55 | 0.05-0.15 | team-color cotton wrap
+dropped seat-roller hull seat | 0.55 | 0.02-0.05 | rolling-shell seat
+painted club-emblem dock decal | 0.55 | 0.02-0.08 | painted club-emblem decal
+dock-edge condensation puddle patch | 0.55 | 0.02-0.1 | dock-water splash patch

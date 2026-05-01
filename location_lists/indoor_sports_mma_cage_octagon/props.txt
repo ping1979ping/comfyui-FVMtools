@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+MMA open-finger fight glove | 1.0 | 0.02-0.08 | padded open-finger glove
+athlete fight-shorts pair | 0.85 | 0.02-0.08 | loose fight-trunk pair
+cornerman water bottle | 0.85 | 0.02-0.05 | branded sport squeeze bottle
+cornerman ice-pack compress | 0.7 | 0.02-0.05 | fabric-wrapped cold pack
+cutman vaseline tin | 0.7 | 0.02-0.03 | small grease tin
+athletic-tape roll set | 0.85 | 0.02-0.05 | white cotton finger-tape spool
+hand-wrap cotton roll | 0.85 | 0.02-0.05 | coiled stretch bandage
+mouthguard clamshell case | 0.7 | 0.02-0.03 | small protective case
+cornerman wound-swab end-tip | 0.55 | 0.02-0.03 | cotton-end care swab
+athlete groin-protector cup | 0.55 | 0.02-0.03 | rigid groin guard
+fight-night robe drape | 0.6 | 0.02-0.1 | branded entrance robe
+athletic-shears blunt scissors | 0.55 | 0.02-0.03 | blunt-tip cutman shears
+smelling-salt vial pair | 0.5 | 0.02-0.03 | small ammonia capsule

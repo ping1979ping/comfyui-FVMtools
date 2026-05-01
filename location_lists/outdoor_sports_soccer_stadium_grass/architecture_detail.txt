@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+stadium cantilever roof undercut | 0.85 | 0.1-0.2 | vast covering sweep
+floodlight pylon mast top | 0.95 | 0.05-0.2 | high-mast lamp cluster
+painted touchline-edge tartan strip | 0.7 | 0.05-0.15 | warmup synthetic edge
+perimeter LED-board column base | 0.95 | 0.05-0.2 | rolling sponsor light face
+goal-mouth net-anchor post cap | 0.95 | 0.05-0.15 | frame-mounted mesh fastener
+dugout-shelter polycarbonate roof | 0.85 | 0.05-0.15 | transparent curved cover
+press-box overhang glass-front fascia | 0.7 | 0.05-0.15 | long media-window strip
+VAR review-monitor side cabinet | 0.55 | 0.02-0.1 | fourth-official screen
+video-screen pylon support strut | 0.7 | 0.05-0.15 | scoreboard column brace
+speaker-cluster pylon hang | 0.7 | 0.02-0.1 | high-mast PA array

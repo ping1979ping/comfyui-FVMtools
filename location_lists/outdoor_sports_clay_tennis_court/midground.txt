@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+regulation clay-court playing surface | 1.0 | 0.3-0.6 | raked crushed-brick top dressing
+white-painted singles boundary line | 0.95 | 0.2-0.5 | freshly chalked court line
+center service-line stripe | 0.95 | 0.2-0.4 | bold white painted divider
+regulation tennis net center | 0.95 | 0.2-0.5 | tightly stretched white-band net
+doubles-alley side stripe | 0.85 | 0.2-0.4 | secondary outer line
+ball-kid kneeling baseline | 0.75 | 0.1-0.3 | ready stance retriever
+clay-rake court-attendant figure | 0.7 | 0.1-0.3 | broom-pulling groundsman
+court-side player chair pair | 0.85 | 0.2-0.4 | shaded courtside resting seat
+center-mark baseline tab | 0.85 | 0.1-0.3 | small midline reference mark
+singles-stick net-tension post | 0.7 | 0.1-0.3 | small adjustable side post
+ice-and-towel changeover cooler | 0.6 | 0.1-0.3 | branded courtside cooler
+warmup hitting-zone rally | 0.6 | 0.2-0.4 | loose pre-match volley

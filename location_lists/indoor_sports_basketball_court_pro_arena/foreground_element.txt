@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished hardwood plank floor edge | 1.0 | 0.3-0.6 | glossy varnished maple
+painted sideline boundary stripe | 0.95 | 0.1-0.3 | high-contrast court edge
+loose game basketball on floor | 0.9 | 0.05-0.2 | leather pebbled grain ball
+courtside stat-sheet drift | 0.7 | 0.05-0.2 | scattered printed paper
+dropped wristband on baseline | 0.55 | 0.02-0.1 | elastic terry sweatband
+wooden floor-cleaner mop | 0.6 | 0.05-0.15 | long flat-mop applicator
+courtside warmup jacket pile | 0.7 | 0.05-0.2 | team-color tracksuit pile
+baseline photographer crouch foreground | 0.7 | 0.1-0.3 | telephoto-camera shooter
+sponsor-logo floor decal | 0.75 | 0.05-0.15 | vinyl-applied court decal
+athletic resin-grip rosin patch | 0.55 | 0.02-0.08 | white grip residue
+rolled towel near bench | 0.7 | 0.05-0.15 | team-monogrammed cotton towel
+scuffed sneaker print on hardwood | 0.6 | 0.05-0.15 | rubber sole skid mark

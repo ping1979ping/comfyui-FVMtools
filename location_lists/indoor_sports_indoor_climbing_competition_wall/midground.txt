@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+indoor-climb competition lead-route panel | 1.0 | 0.4-0.7 | textured-resin route panel
+indoor-climb competition hold-route line | 1.0 | 0.2-0.5 | colored route-hold line
+indoor-climb auto-belay descent-line column | 0.85 | 0.2-0.4 | auto-belay descent column
+indoor-climb belayer ground-stance pair | 0.85 | 0.1-0.3 | ground-belayer pose
+indoor-climb route-setter mid-wall pose | 0.55 | 0.2-0.4 | route-setter mid-wall pose
+indoor-climb bouldering-pad stack zone | 0.85 | 0.2-0.4 | padded bouldering pad stack
+indoor-climb judge-and-isolation booth | 0.7 | 0.2-0.4 | small judge booth
+indoor-climb chalk-bag start-line zone | 0.7 | 0.1-0.3 | athlete chalk-up zone
+indoor-climb timer-clock countdown panel | 0.85 | 0.1-0.3 | competition countdown clock
+indoor-climb athlete pre-climb bench row | 0.7 | 0.1-0.3 | athlete waiting bench row
+indoor-climb coach-zone stand area | 0.7 | 0.1-0.3 | coach-side stand
+indoor-climb route-flag tag pole | 0.7 | 0.1-0.3 | route-tag flag pole

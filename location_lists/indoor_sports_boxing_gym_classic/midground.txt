@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+regulation boxing ring with red ropes | 1.0 | 0.3-0.6 | padded canvas square platform
+row of heavy hanging punching bags | 0.95 | 0.3-0.6 | scuffed leather cylinders on chains
+speedbag rebound platform | 0.8 | 0.2-0.4 | polished oval drum board
+double-end bag tethered between floor and ceiling | 0.7 | 0.2-0.4 | small leather sphere on cords
+trainer pad-holding mid-floor | 0.7 | 0.2-0.5 | focus-mitt drilling stance
+free-standing reflex bag column | 0.65 | 0.2-0.4 | rebound mannequin form
+jump-rope station floor zone | 0.7 | 0.2-0.4 | open coiled-rope marked area
+medicine-ball rack mid-room | 0.6 | 0.2-0.4 | stacked weighted leather spheres
+cornerman stool with bucket | 0.6 | 0.1-0.3 | battered wooden seat and pail
+upright weight bench beside ring | 0.6 | 0.2-0.4 | padded vinyl flat bench
+freestanding spit bucket and towels | 0.5 | 0.1-0.3 | galvanized pail with rags
+hanging timer round-bell unit | 0.7 | 0.1-0.3 | wall-mounted brass bell

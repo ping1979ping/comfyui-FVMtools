@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+clear-span banked-track ceiling | 0.85 | 0.1-0.2 | vast open-roof span
+rafter spot truss with meet lights | 0.85 | 0.05-0.2 | high-output ceiling spot grid
+photo-finish gantry overhead arch | 0.85 | 0.05-0.15 | finish-line camera arch
+track-edge inner-rail standard | 0.95 | 0.05-0.15 | low inside-rail post
+ceiling-mounted speaker cluster | 0.7 | 0.05-0.15 | PA-cluster ceiling array
+rafter-hung meet banner | 0.85 | 0.05-0.2 | fabric meet-cloth banner
+painted lane-stripe edge band | 0.95 | 0.05-0.15 | lane-edge boundary stripe
+infield-circle toe-board top | 0.7 | 0.05-0.1 | concrete circle-toe band
+clock-tower center mast top | 0.65 | 0.02-0.1 | infield meet-clock pylon top
+starter-podium base-plinth edge | 0.7 | 0.05-0.15 | raised official base

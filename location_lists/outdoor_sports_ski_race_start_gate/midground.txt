@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+painted race-start gate-line band | 1.0 | 0.2-0.4 | bold start-stripe paint
+racer ski-tip start-stance pair | 1.0 | 0.1-0.3 | racing-ski tip pair
+painted course-gate alternating panel | 0.95 | 0.2-0.4 | blue-and-red gate-panel
+course-marshal flag-judge stance | 0.7 | 0.1-0.3 | bright-vest official
+start-wand race-trigger arm | 0.85 | 0.1-0.3 | lever start-trigger wand
+racer-coach last-call cluster | 0.7 | 0.1-0.3 | coach-rider final-prep huddle
+starter-marshal countdown-stance | 0.85 | 0.1-0.3 | race-start official stance
+piste-edge B-net safety fence | 0.85 | 0.2-0.4 | racer safety B-net fence
+padded course-bumper protective pad | 0.7 | 0.1-0.3 | padded gate-pad bumper
+race-helmet coach-helmet cluster | 0.6 | 0.1-0.3 | ski-coach helmet cluster
+course-recon course-side judge stand | 0.55 | 0.1-0.3 | small judge stand
+piste-grooming snowcat parked | 0.55 | 0.1-0.3 | snow-grooming machine parked

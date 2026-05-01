@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+regulation grass pitch playing surface | 1.0 | 0.4-0.7 | striped mowed turf field
+painted center-circle midline | 0.95 | 0.2-0.4 | bold white midfield arc
+regulation soccer goal frame | 0.95 | 0.2-0.5 | white goal-post crossbar rig
+white penalty-area boundary line | 0.95 | 0.2-0.4 | bold rectangular paint
+corner-flag standing pole | 0.85 | 0.1-0.3 | fluttering small triangle flag
+touchline-side technical area | 0.85 | 0.2-0.4 | painted bench-side rectangle
+substitute bench dugout shelter | 0.85 | 0.2-0.4 | covered courtside shelter
+fourth-official sideline strip | 0.6 | 0.1-0.3 | midline officiating zone
+center-spot kickoff mark | 0.85 | 0.1-0.3 | small painted center dot
+perimeter LED hoarding row | 0.95 | 0.2-0.5 | rolling sponsor light boards
+warmup zone bib-cluster | 0.7 | 0.2-0.4 | spare players in bibs
+ball-boy crouched touchline | 0.65 | 0.1-0.3 | ready-throw retriever

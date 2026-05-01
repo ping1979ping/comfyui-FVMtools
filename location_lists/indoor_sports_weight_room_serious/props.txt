@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+calibrated competition lifting belt | 0.95 | 0.02-0.1 | thick stitched leather waist belt
+magnesium chalk block | 0.95 | 0.02-0.05 | compressed white grip cube
+knurled-grip barbell collar pair | 0.85 | 0.02-0.05 | spring-clip locking ring
+competition lifting shoes pair | 0.85 | 0.02-0.08 | raised-heel weightlifting shoe
+wrist-wrap stiffened cuff | 0.7 | 0.02-0.05 | padded elastic wrist support
+knee-sleeve neoprene pair | 0.75 | 0.02-0.08 | thick stretch knee support
+training journal logbook | 0.6 | 0.02-0.05 | spiral-bound rep tracker
+PR-attempt smelling-salt vial | 0.5 | 0.02-0.05 | small glass ammonia capsule
+athlete shaker bottle | 0.85 | 0.02-0.08 | agitator-blender sports cup
+metal collar deadlift jack | 0.55 | 0.02-0.05 | small lever-handle bar lifter
+hand-grip strengthener | 0.55 | 0.02-0.05 | spring squeeze trainer
+athletic-tape roll | 0.7 | 0.02-0.05 | white cotton finger-tape spool
+liquid-chalk applicator bottle | 0.6 | 0.02-0.05 | pump-top grip-fluid bottle

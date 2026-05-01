@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+regulation hockey-rink ice surface | 1.0 | 0.4-0.7 | smooth resurfaced clear ice
+center-ice face-off circle | 0.95 | 0.2-0.4 | painted central red dot
+painted blue-line zone divider | 0.95 | 0.2-0.4 | bold rink-zone stripe
+regulation goal-frame net rig | 0.95 | 0.2-0.4 | red-frame goal-mouth
+home-team bench player area | 0.85 | 0.2-0.4 | open-front rink-side bench
+officials' time-keeper bench | 0.7 | 0.1-0.3 | rink-side scorer table
+penalty-box rink-edge enclosure | 0.85 | 0.2-0.4 | open glass sin-bin
+face-off-circle painted dot row | 0.85 | 0.1-0.3 | secondary face-off mark
+dasher-board rounded rink corner | 0.95 | 0.2-0.4 | curved board panel
+Zamboni resurfacer mid-ice | 0.5 | 0.2-0.5 | ice-machine resurface unit
+warmup-shoot puck pile | 0.6 | 0.1-0.3 | loose vulcanized rubber pucks
+center-ice referee skater stance | 0.7 | 0.1-0.3 | striped jersey official

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+interlocking rubber-tile ground edge | 1.0 | 0.3-0.6 | shock-absorption rubber tile
+painted training-zone boundary stripe | 0.7 | 0.05-0.15 | park-stripe boundary
+scuffed training-shoe pair | 0.85 | 0.02-0.08 | lightweight cross-trainer
+dropped grip-chalk block | 0.7 | 0.02-0.05 | compressed magnesium cube
+rolled foam-roller cylinder | 0.6 | 0.05-0.15 | high-density cylindrical roller
+athlete water-jug on tile | 0.85 | 0.05-0.15 | translucent training jug
+dropped wrist-wrap pair | 0.55 | 0.02-0.05 | elastic wrist-support strap
+training-resistance band loop pile | 0.7 | 0.05-0.15 | looped resistance band
+dropped chalk-bag pouch | 0.65 | 0.02-0.05 | small grip-chalk pouch
+scattered hand-grip glove pair | 0.55 | 0.02-0.05 | fingerless training glove
+park-bench gear-pile shadow | 0.6 | 0.05-0.15 | gear-bag shadow pile
+dropped jumprope coil | 0.65 | 0.02-0.08 | coiled wire skip-rope

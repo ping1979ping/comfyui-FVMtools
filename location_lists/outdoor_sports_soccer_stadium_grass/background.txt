@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+packed multi-tier supporter stand | 1.0 | 0.7-1.0 | dense crowd-color block
+home-end ultras choreography wall | 0.85 | 0.6-1.0 | team-scarf banner display
+massive stadium scoreboard pylon | 0.9 | 0.6-1.0 | matchday LED video board
+perimeter advertising boards sweep | 0.95 | 0.5-0.9 | sponsor LED ribbon
+opposite-stand crowd silhouette | 0.85 | 0.6-1.0 | far-side spectator wall
+stadium roof-overhang cantilever | 0.8 | 0.5-1.0 | broad covering sweep
+massive corner flag-bearer banner | 0.65 | 0.4-0.8 | huge supporter tifo cloth
+press-box mid-tier glass front | 0.7 | 0.5-0.9 | long media-window strip
+home-end goal-net far backdrop | 0.95 | 0.5-0.9 | tightly hung white goal mesh
+away-supporter caged section | 0.6 | 0.4-0.8 | fenced visitor enclosure
+team-color seating mosaic | 0.85 | 0.6-1.0 | patterned crowd-seat block
+club crest center-stand mural | 0.65 | 0.4-0.8 | painted team-emblem wall
+VIP director-box parapet line | 0.6 | 0.4-0.8 | elevated officials gallery

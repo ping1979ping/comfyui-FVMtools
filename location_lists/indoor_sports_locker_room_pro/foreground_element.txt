@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished-wood locker-room floor edge | 1.0 | 0.3-0.6 | matte sealed timber plank
+low-pile carpeted center-room rug | 0.7 | 0.3-0.6 | looped commercial carpet
+dropped athletic-tape roll | 0.7 | 0.02-0.05 | white cotton finger-tape spool
+scattered athletic-shoe pair | 0.85 | 0.05-0.15 | team-issued cross-trainer
+rolled match-day towel | 0.85 | 0.05-0.15 | team-monogrammed cotton wrap
+dropped warm-up tee shirt | 0.7 | 0.05-0.15 | team-color cotton tee
+scuffed gear bag on floor | 0.7 | 0.05-0.2 | duffel team-emblem bag
+water-bottle on bench | 0.85 | 0.02-0.08 | branded sport squeeze bottle
+dropped wrist-tape strip | 0.55 | 0.02-0.05 | loose stretch wrist tape
+dropped earbud pair | 0.5 | 0.02-0.03 | wireless earpiece pair
+foam roller along bench | 0.6 | 0.05-0.15 | high-density cylindrical roller
+dropped pre-game letter envelope | 0.5 | 0.02-0.05 | personal handwritten note

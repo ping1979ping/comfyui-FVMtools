@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+tournament tennis racket | 1.0 | 0.02-0.1 | stringed graphite racquet
+optic-yellow tennis ball pair | 0.95 | 0.02-0.05 | felt-covered seamed ball
+courtside player towel | 0.9 | 0.02-0.08 | tournament-monogrammed cotton wrap
+water bottle on side chair | 0.95 | 0.02-0.05 | branded sport squeeze bottle
+banana-and-energy-bar snack | 0.65 | 0.02-0.05 | fresh fruit and bar
+racket-string overgrip roll | 0.7 | 0.02-0.05 | tacky black handle wrap
+vibration string-dampener button | 0.55 | 0.02-0.03 | small rubber string ring
+ball-kid uniform polo | 0.6 | 0.02-0.08 | tournament-color short shirt
+tournament wristband pair | 0.7 | 0.02-0.05 | elastic terry sweat cuff
+clay-court shoe pair | 0.85 | 0.02-0.08 | herringbone-sole athletic shoe
+tournament cap visor | 0.75 | 0.02-0.05 | brand-logo athletic cap
+hawk-eye review tablet | 0.5 | 0.02-0.05 | courtside official screen
+string-tension racket case | 0.55 | 0.02-0.08 | padded racquet carrier

@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+regulation match soccer ball | 1.0 | 0.02-0.05 | panel-stitched white ball
+captain elastic armband | 0.7 | 0.02-0.05 | colored captain band
+goalkeeper foam-palm glove | 0.7 | 0.02-0.08 | padded tacky-palm glove
+club training cone marker | 0.85 | 0.02-0.05 | bright orange-and-yellow cone
+substitute warmup bib | 0.85 | 0.02-0.08 | mesh team-color overshirt
+athletic-tape roll | 0.7 | 0.02-0.05 | white cotton finger-tape spool
+sideline water-bottle squad rack | 0.85 | 0.02-0.1 | carrier of squeeze bottles
+substitution number paddle | 0.6 | 0.02-0.05 | digit-display sub paddle
+club-monogrammed match towel | 0.7 | 0.02-0.08 | team-emblem cotton wrap
+shin-guard pair | 0.7 | 0.02-0.05 | padded plastic leg shield
+referee whistle-and-card set | 0.7 | 0.02-0.03 | lanyard with cards
+match-day lineup clipboard | 0.55 | 0.02-0.05 | official tactical sheet
+captain coin-toss pendant | 0.5 | 0.02-0.03 | polished match-coin

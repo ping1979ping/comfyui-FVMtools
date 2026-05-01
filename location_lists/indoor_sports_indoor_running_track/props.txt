@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+sprint-spike track shoe | 1.0 | 0.02-0.08 | lightweight cleated spike shoe
+relay aluminum baton | 0.85 | 0.02-0.05 | tubular metal baton
+starter pistol-and-shell | 0.55 | 0.02-0.03 | small starter device
+athlete chip-timing ankle-tag | 0.7 | 0.02-0.03 | small ankle-strap chip
+hurdle-race race hurdle | 0.85 | 0.02-0.1 | tipping-bar track hurdle
+track-pole vault pole length | 0.7 | 0.02-0.1 | fiberglass long pole
+shot-put metal sphere | 0.55 | 0.02-0.05 | iron-sphere throws ball
+javelin throw-rod implement | 0.55 | 0.02-0.08 | long aluminum javelin
+athletic-tape roll | 0.7 | 0.02-0.05 | white cotton finger-tape spool
+athlete water-bottle squeeze | 0.85 | 0.02-0.05 | branded sport bottle
+warmup-jacket team-color drape | 0.85 | 0.02-0.1 | team-color tracksuit
+event-bib pinned number | 0.85 | 0.02-0.05 | race-bib paper number
+starting-block adjustment wrench | 0.55 | 0.02-0.03 | small adjuster wrench

@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+dark fight-night arena seating bowl | 1.0 | 0.7-1.0 | rows of dimmed spectator seat
+smoke-haze upper-tier crowd silhouette | 0.85 | 0.6-1.0 | atmospheric crowd backdrop
+massive sponsor-logo cage backdrop | 0.95 | 0.6-1.0 | branded promotional fascia
+center-hung video cube fight rig | 0.9 | 0.5-0.9 | suspended LED video display
+dim media-photographer pit | 0.7 | 0.4-0.8 | front-row long-lens cluster
+walk-out tunnel entrance portal | 0.7 | 0.4-0.8 | darkened dramatic walk-out
+ring-girl perimeter platform | 0.6 | 0.4-0.8 | round-card walking lane
+low-arena spotlit canvas glow | 0.85 | 0.5-0.9 | downcast spot pool over canvas
+event-night sponsor banner sweep | 0.85 | 0.6-0.9 | stretched fight-night cloth
+smoke-machine atmospheric haze | 0.7 | 0.5-0.9 | soft drifting fog layer
+front-row VIP seated crowd | 0.85 | 0.5-0.9 | first-row spectator block
+dimmed organist-and-DJ booth | 0.5 | 0.3-0.7 | small audio-side platform
+rafter-suspended event banner | 0.7 | 0.4-0.8 | fight-night rafter cloth

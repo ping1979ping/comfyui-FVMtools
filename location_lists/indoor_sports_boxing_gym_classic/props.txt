@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+scuffed leather boxing gloves pair | 0.95 | 0.02-0.1 | lace-up padded mitts
+cotton hand-wrap roll | 0.9 | 0.02-0.08 | coiled stretch bandage
+padded headgear in cornerman bucket | 0.7 | 0.02-0.08 | open-face leather headguard
+ring-side spit bucket | 0.7 | 0.02-0.08 | battered galvanized pail
+dented water bottle on stool | 0.7 | 0.02-0.08 | scuffed plastic squeeze bottle
+ringside cornerman ice pack | 0.55 | 0.02-0.08 | fabric-wrapped cold compress
+vintage timing stopwatch | 0.65 | 0.02-0.05 | chrome dial round timer
+rosin powder block | 0.5 | 0.02-0.05 | compact white grip block
+stitched leather mouthguard case | 0.5 | 0.02-0.05 | small clamshell holder
+hand-stamped gym-name towel | 0.65 | 0.02-0.08 | white cotton terry towel
+worn champion belt on rack | 0.55 | 0.02-0.1 | leather and gilded plate
+focus mitts pair on stool | 0.7 | 0.02-0.08 | curved padded trainer pads
+rope-skipping handle pair | 0.55 | 0.02-0.05 | wooden grip skip-rope

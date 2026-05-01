@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+regulation leather game basketball | 1.0 | 0.02-0.08 | pebbled tacky orange ball
+home-team warmup jacket | 0.85 | 0.02-0.1 | satin team-color tracksuit
+courtside whiteboard play sheet | 0.8 | 0.02-0.05 | marker-drawn play diagram
+athletic rosin-bag pouch | 0.6 | 0.02-0.05 | talc-filled grip pouch
+team-branded water bottle | 0.85 | 0.02-0.05 | squeeze-top sport bottle
+padded cushioned bench towel | 0.85 | 0.02-0.08 | team-monogrammed cotton wrap
+courtside laptop stat-tablet | 0.6 | 0.02-0.05 | portable team-side device
+bench microphone for coach | 0.5 | 0.02-0.05 | cabled handheld mic
+athletic-tape roll | 0.7 | 0.02-0.05 | white cotton finger-tape spool
+substitution paddle number | 0.55 | 0.02-0.05 | digit-display sub paddle
+courtside ankle-brace pair | 0.55 | 0.02-0.05 | lace-up athletic brace
+game-program courtside copy | 0.5 | 0.02-0.05 | glossy printed booklet
+clipboard with timeout play | 0.7 | 0.02-0.05 | wipe-board with marker

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+padded octagon-canvas floor edge | 1.0 | 0.3-0.6 | stretched event-canvas surface
+painted center-cage logo decal | 0.85 | 0.05-0.2 | vinyl center mat decal
+dropped athletic-tape strip | 0.7 | 0.02-0.05 | loose stretch wrist tape
+cornerman water-bucket ground | 0.7 | 0.05-0.15 | battered metal pail
+dropped fight-glove pair | 0.85 | 0.02-0.08 | open-finger MMA glove
+scuffed mouthguard near corner | 0.55 | 0.02-0.05 | small clamshell mouthguard
+blood-and-vaseline gauze square | 0.55 | 0.02-0.05 | cut-care medical gauze
+rolled hand-wrap on canvas | 0.7 | 0.02-0.08 | coiled cotton bandage
+athlete corner-stool foreground | 0.7 | 0.05-0.15 | fight-corner perch
+dropped corner-towel on canvas | 0.7 | 0.05-0.15 | fight-corner cotton wrap
+cage-floor athlete shorts foreground | 0.6 | 0.02-0.08 | loose fight-trunk pair
+dropped Vaseline tin | 0.5 | 0.02-0.03 | small grease tin

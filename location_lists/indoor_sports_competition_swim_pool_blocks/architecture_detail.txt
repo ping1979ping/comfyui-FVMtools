@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+acoustic-baffle natatorium ceiling panel | 0.95 | 0.1-0.2 | sound-dampening tile
+clerestory skylight band overhead | 0.85 | 0.05-0.2 | high-window strip
+backstroke-flag suspension cable | 0.85 | 0.05-0.2 | tightened transverse line
+perimeter pool-deck gutter rim | 0.95 | 0.05-0.15 | overflow channel ledge
+starter strobe pole-top fixture | 0.7 | 0.02-0.1 | synchronized flash unit
+camera-rig overhead boom hang | 0.55 | 0.02-0.1 | broadcast suspended unit
+tile-and-grout pool-edge join | 0.85 | 0.05-0.15 | ceramic-grouted edge
+dehumidifier vent-grille panel | 0.7 | 0.05-0.15 | louvered ceiling vent
+pool-side handrail stainless rail | 0.85 | 0.05-0.15 | tubular stair handrail
+starter podium base-plinth edge | 0.7 | 0.05-0.15 | raised official base

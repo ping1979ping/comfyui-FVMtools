@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+steeply banked velodrome curve sweep | 1.0 | 0.6-1.0 | polished hardwood banked curve
+velodrome center-infield bowl | 0.85 | 0.5-0.9 | open infield gathering area
+upper-tier velodrome spectator gallery | 0.95 | 0.6-1.0 | rows of fold-down seat
+center-hung velodrome scoreboard cube | 0.85 | 0.5-0.9 | suspended LED video board
+infield team-staging pit area | 0.7 | 0.4-0.8 | rider-team prep cluster
+velodrome cantilever roof underside | 0.85 | 0.5-1.0 | soaring exposed truss
+rafter-hung championship-banner row | 0.7 | 0.4-0.8 | fabric title cloth
+track-edge inner-rail boundary line | 0.85 | 0.5-0.9 | low-rail track-edge boundary
+home-team supporter color wedge | 0.7 | 0.5-0.9 | team-color seating wedge
+velodrome-meet sponsor-banner sweep | 0.85 | 0.5-0.9 | stretched event cloth
+photo-finish camera-gantry mast | 0.7 | 0.4-0.8 | overhead camera mast
+opposite-bank crowd silhouette | 0.85 | 0.6-1.0 | far-bank spectator block
+warm-up roller-trainer pit area | 0.6 | 0.3-0.7 | stationary warm-up trainer pit

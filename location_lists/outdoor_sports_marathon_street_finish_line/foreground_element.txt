@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+wet asphalt street surface edge | 1.0 | 0.3-0.6 | rain-slick blacktop road
+painted finish-line foreground | 0.95 | 0.1-0.3 | bold race-day stripe
+dropped paper water-cup | 0.95 | 0.02-0.05 | creased paper aid-cup
+scattered race-bib safety pins | 0.55 | 0.02-0.03 | small safety-pin pair
+dropped chip-timing tag near foot | 0.55 | 0.02-0.03 | small ankle-strap chip
+crumpled energy-gel pouch | 0.85 | 0.02-0.05 | foil-pack supplement
+scuffed running-shoe pair | 0.85 | 0.02-0.08 | racing-flat lightweight shoe
+post-finish foil-blanket scrap | 0.7 | 0.02-0.1 | creased silver mylar wrap
+dropped sweat-soaked tee shirt | 0.6 | 0.05-0.15 | race-day tech tee
+rolled timing-mat edge band | 0.85 | 0.05-0.15 | rubberized timing-mat strip
+dropped wristband on pavement | 0.55 | 0.02-0.05 | elastic terry sweat cuff
+dropped race-program flyer | 0.55 | 0.02-0.05 | creased event-program page

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+octagon-cage roof-canopy hang | 0.7 | 0.05-0.15 | open-air fence top edge
+center-canvas cage-floor riser edge | 0.95 | 0.05-0.15 | raised platform base
+rafter spot truss with arena par-cans | 0.85 | 0.05-0.2 | high-output ceiling spot grid
+center-hung video-cube hang rig | 0.85 | 0.05-0.15 | suspended four-sided board
+cage-side judging-table riser strip | 0.7 | 0.05-0.15 | raised judging bench front
+walk-out tunnel arch frame | 0.7 | 0.05-0.2 | dramatic dark portal arch
+smoke-machine cage-floor vent strip | 0.7 | 0.02-0.1 | low fog dispersal port
+cage-perimeter event-LED edge | 0.85 | 0.05-0.2 | rolling sponsor light fascia
+speaker-cluster line-array hang | 0.7 | 0.05-0.15 | vertical sound array
+ring-side cameraman boom-arm | 0.55 | 0.02-0.1 | broadcast camera boom

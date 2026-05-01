@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+raised umpire-chair canopy | 0.85 | 0.05-0.2 | small fabric shade over chair
+tournament-logo court-edge signage | 0.95 | 0.05-0.2 | sponsor printed perimeter board
+clay-court line-tape anchor edge | 0.95 | 0.05-0.15 | embedded white line strip
+net-post tension cable mount | 0.85 | 0.02-0.1 | geared crank net adjuster
+ball-kid covered side bench | 0.65 | 0.05-0.15 | small awning-and-seat unit
+court-side speaker post mast | 0.6 | 0.02-0.1 | tall PA-speaker pole
+camera-platform scaffold leg | 0.55 | 0.05-0.15 | broadcast tower base
+scoreboard column base | 0.7 | 0.05-0.15 | freestanding score pillar
+perimeter windscreen tie strap | 0.7 | 0.02-0.1 | looped fabric fastener
+watering-system spigot riser | 0.55 | 0.02-0.1 | court-side faucet pipe

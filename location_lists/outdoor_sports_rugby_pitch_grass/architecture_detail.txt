@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+rugby-stadium cantilever roof-undercut | 0.85 | 0.1-0.2 | vast covering sweep
+rugby-stand floodlight pylon-mast top | 0.95 | 0.05-0.2 | high-mast lamp cluster
+rugby-pitch H-post upright top spar | 0.95 | 0.05-0.2 | tall H-post upright top
+perimeter rugby-hoarding panel base | 0.95 | 0.05-0.2 | rolling sponsor advert face
+rugby-end goal-post crossbar edge | 0.95 | 0.05-0.15 | H-post crossbar edge
+rugby-bench shelter polycarbonate roof | 0.85 | 0.05-0.15 | transparent curved cover
+rugby-press-box glass-front fascia | 0.7 | 0.05-0.15 | long media-window strip
+rugby-stand video-screen pylon strut | 0.7 | 0.05-0.15 | scoreboard column brace
+rugby-corner-flag pole base | 0.85 | 0.02-0.1 | fluttering small triangle flag
+rugby-stand speaker-cluster pylon | 0.7 | 0.02-0.1 | stadium PA cluster

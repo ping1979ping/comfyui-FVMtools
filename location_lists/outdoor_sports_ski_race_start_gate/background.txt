@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+alpine snow-piste race-course slope | 1.0 | 0.6-1.0 | groomed icy snow-piste
+course-line gate-flag panel sweep | 1.0 | 0.5-0.9 | fluttering gate-flag panel
+snow-cornice ridge horizon line | 0.85 | 0.5-0.9 | wind-sculpted snow ridge
+evergreen pine-forest piste edge | 0.85 | 0.5-0.9 | snow-laden pine border
+race-meet sponsor-banner sweep | 0.95 | 0.5-0.9 | stretched race-day cloth
+massive race-clock pylon-tower | 0.85 | 0.5-0.9 | elapsed-time start pylon
+start-house gate-shed shelter | 0.85 | 0.5-0.9 | small wooden start-house
+course-marshal high-vis cluster | 0.7 | 0.4-0.8 | bright-vest race official
+rope-and-fence safety-net perimeter | 0.85 | 0.5-0.9 | B-net racer safety fence
+flag-of-nations meet flag row | 0.7 | 0.4-0.8 | row of overhead country flags
+piste-grooming track sweep | 0.65 | 0.4-0.8 | fresh-grooming snow track
+blizzard-haze far peak silhouette | 0.7 | 0.4-0.8 | atmospheric distant peak
+alpine course-cliff drop edge | 0.6 | 0.3-0.7 | steep terrain drop edge

@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+track-cycling carbon-frame bike | 1.0 | 0.05-0.2 | fixed-gear carbon frame
+aerodynamic teardrop helmet | 0.95 | 0.02-0.08 | aero-shell time-trial helmet
+carbon-sole cycling-shoe cleat pair | 0.95 | 0.02-0.08 | stiff carbon-sole road cleat
+skinsuit body-suit racewear | 0.85 | 0.02-0.1 | lycra one-piece skinsuit
+track-cycling tubular-tire spare | 0.7 | 0.02-0.05 | rolled tubular spare
+rider-team gear-bag duffel | 0.7 | 0.02-0.1 | team-emblem zip duffel
+CO2 tire-inflator canister pair | 0.55 | 0.02-0.03 | small inflator canister
+chain-lubricant small bottle | 0.55 | 0.02-0.03 | small lubricant flask
+rider race-number safety-pinned card | 0.85 | 0.02-0.05 | race-number cardboard
+rider water-bottle squeeze | 0.85 | 0.02-0.05 | branded sport bottle
+starter-gate trigger-button device | 0.55 | 0.02-0.03 | small trigger-button device
+rider-pace lap-counter board | 0.7 | 0.02-0.05 | small lap-board
+eyewear sport-shield glasses | 0.7 | 0.02-0.05 | wraparound sport eyewear
