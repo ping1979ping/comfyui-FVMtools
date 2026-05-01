@@ -10,6 +10,8 @@ const TREE_ENABLED_NODES = new Set([
     "FVM_SMP_LocationGenerator",
     "FVM_JB_LocationBlock",
     "FVM_SMP_OutfitGenerator",
+    "FVM_OutfitGenerator",
+    "FVM_JB_OutfitBlock",
 ]);
 
 const TREE_WIDGET_NAMES = new Set([
@@ -44,7 +46,7 @@ app.registerExtension({
             parent: document.body,
         });
 
-        const buildTree = (menu) => {
+        const buildTree = (menu, selectedValue) => {
             const items = Array.from(menu.querySelectorAll(".litemenu-entry"));
             if (!items.length) return;
 
@@ -55,6 +57,18 @@ app.registerExtension({
                 return splitBy.test(v);
             });
             if (!hasSlash) return;
+
+            // Path-prefix of the currently selected value, so we can default-open
+            // only the branch leading to it. e.g. selectedValue =
+            // "indoor/business/skyscraper_lobby" → openPathPrefixes contains
+            // "indoor" and "indoor/business".
+            const openPathPrefixes = new Set();
+            if (selectedValue && splitBy.test(selectedValue)) {
+                const parts = selectedValue.split(splitBy);
+                for (let i = 1; i < parts.length; i++) {
+                    openPathPrefixes.add(parts.slice(0, i).join("/"));
+                }
+            }
 
             const folderMap = new Map();
             const itemsSymbol = Symbol("items");
@@ -95,17 +109,20 @@ app.registerExtension({
                 });
             };
 
-            const insertStructure = (parent, map, level = 0) => {
+            const insertStructure = (parent, map, ancestorPath = [], level = 0) => {
                 for (const [folderName, content] of map.entries()) {
                     if (folderName === itemsSymbol) continue;
+
+                    const folderPath = [...ancestorPath, folderName];
+                    const folderPathStr = folderPath.join("/");
 
                     const folderEl = createFolderElement(folderName);
                     folderEl.style.paddingLeft = `${level * 10 + 5}px`;
                     parent.appendChild(folderEl);
 
-                    // Top-level open by default so user immediately sees the
-                    // category structure; deeper levels start collapsed.
-                    const startOpen = level === 0;
+                    // Open by default only if this folder lies on the path to
+                    // the currently selected value; everything else collapsed.
+                    const startOpen = openPathPrefixes.has(folderPathStr);
                     const child = $el("div.fvm-combo-folder-contents", {
                         style: { display: startOpen ? "block" : "none" },
                     });
@@ -117,7 +134,7 @@ app.registerExtension({
                         it.style.paddingLeft = `${(level + 1) * 10 + 14}px`;
                         child.appendChild(it);
                     }
-                    insertStructure(child, content, level + 1);
+                    insertStructure(child, content, folderPath, level + 1);
                     parent.appendChild(child);
 
                     folderEl.addEventListener("click", (e) => {
@@ -143,11 +160,12 @@ app.registerExtension({
                     if (!added.classList?.contains("litecontextmenu")) continue;
                     const overWidget = app.canvas.getWidgetAtCursor?.();
                     if (!overWidget || !TREE_WIDGET_NAMES.has(overWidget.name)) continue;
+                    const selectedValue = overWidget.value;
                     requestAnimationFrame(() => {
                         // Only apply to the searchable filter dropdown, not right-click menu.
                         if (!added.querySelector(".comfy-context-menu-filter")) return;
                         try {
-                            buildTree(added);
+                            buildTree(added, selectedValue);
                         } catch (err) {
                             console.error("[fvm_combo_tree] buildTree failed:", err);
                         }
