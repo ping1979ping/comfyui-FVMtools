@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+translucent layered tee | 0.80 | 0.1-0.4 | chiffon
+gauzy long-sleeve blouse | 0.70 | 0.2-0.4 | chiffon,polyester
+double-layer crop tank | 0.65 | 0.2-0.4 | chiffon,cotton
+see-through tunic over bralette | 0.60 | 0.1-0.3 | chiffon
+fine-weave cardigan with visible bra | 0.55 | 0.2-0.4 | knit
+oversized open-weave pullover | 0.65 | 0.2-0.4 | knit
+filmy ribbed turtleneck | 0.55 | 0.2-0.4 | jersey
+thin scoop tee with peeking bra | 0.70 | 0.1-0.3 | cotton,jersey
+delicate floral top with visible bralette | 0.60 | 0.2-0.4 | lace
+airy puff-sleeve blouse | 0.55 | 0.2-0.4 | chiffon
+sheer button-up shirt | 0.65 | 0.2-0.4 | chiffon,polyester
+gossamer raglan top | 0.55 | 0.1-0.3 | chiffon,mesh

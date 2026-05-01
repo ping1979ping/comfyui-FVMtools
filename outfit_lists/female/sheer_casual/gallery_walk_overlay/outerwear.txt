@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured longline blazer | 0.70 | 0.3-0.5 | polyester,cotton
+draped trench coat | 0.60 | 0.3-0.5 | cotton,polyester
+oversized buttondown overshirt | 0.50 | 0.2-0.4 | cotton
+sleek biker jacket | 0.50 | 0.2-0.4 | leather
+chunky cardigan | 0.50 | 0.2-0.4 | knit
+sheer duster | 0.55 | 0.2-0.4 | chiffon
+boyfriend blazer | 0.55 | 0.3-0.5 | polyester
+cropped trucker jacket | 0.45 | 0.2-0.4 | denim
+wool-look coat | 0.45 | 0.3-0.5 | polyester
+asymmetric cape | 0.40 | 0.2-0.4 | polyester

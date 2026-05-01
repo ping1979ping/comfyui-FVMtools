@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide grip headband | 0.95 | 0.0-0.1 | spandex,nylon
+#color# slim sweat band | 0.85 | 0.0-0.1 | spandex,nylon
+#color# performance buff | 0.55 | 0.0-0.1 | polyester
+#color# sport visor cap | 0.50 | 0.0-0.2 | polyester
+#color# baseball-style cap | 0.55 | 0.0-0.2 | polyester

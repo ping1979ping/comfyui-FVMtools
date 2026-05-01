@@ -1,0 +1,14 @@
+# format: fabric_name | formality | family | weight
+
+spandex | 0.4 | synthetic | light
+lycra | 0.4 | synthetic | light
+microfiber | 0.5 | synthetic | light
+satin | 0.8 | luxury | light
+gabardine | 0.7 | luxury | medium
+wool-blend | 0.6 | natural | medium
+cotton-blend | 0.3 | natural | medium
+neoprene | 0.4 | synthetic | medium
+polyamide | 0.4 | synthetic | light
+faux-leather | 0.5 | tough | medium
+brass | 0.7 | tech | heavy
+chrome | 0.6 | tech | heavy

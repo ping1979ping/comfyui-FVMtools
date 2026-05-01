@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white tailored shorts | 0.65 | 0.1-0.3 | cotton,linen
+khaki bermuda shorts | 0.50 | 0.1-0.3 | cotton
+seersucker shorts | 0.45 | 0.1-0.3 | cotton
+white capri pants | 0.55 | 0.1-0.4 | cotton,linen
+
+# mid-casual
+wide-leg summer pants | 0.55 | 0.3-0.6 | linen
+A-line skirt | 0.45 | 0.3-0.6 | cotton,linen
+nautical chinos | 0.55 | 0.3-0.6 | cotton
+high-waisted trousers | 0.45 | 0.3-0.6 | cotton,linen
+
+# formal
+white wide-leg trousers | 0.55 | 0.4-0.7 | linen,silk
+pleated midi skirt | 0.45 | 0.4-0.7 | linen,silk
+tailored slacks | 0.45 | 0.5-0.8 | linen,wool

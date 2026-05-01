@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+waterproof Chelsea boots | 0.70 | 0.2-0.4 | leather
+ankle rain boots | 0.65 | 0.1-0.3 | plastic
+loafers | 0.60 | 0.3-0.5 | leather,suede
+ballet flats | 0.55 | 0.2-0.4 | leather
+mary janes | 0.55 | 0.2-0.4 | leather
+oxford shoes | 0.50 | 0.3-0.5 | leather
+combat boots | 0.45 | 0.1-0.3 | leather
+brogues | 0.45 | 0.3-0.5 | leather
+chunky platform shoes | 0.40 | 0.1-0.3 | leather
+slip-on sneakers | 0.50 | 0.1-0.3 | canvas

@@ -1,0 +1,23 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# hair
+#color# performance headband | 0.95 | 0.0-0.1 | spandex,nylon
+#color# wide grip headband | 0.85 | 0.0-0.1 | spandex,nylon
+#color# slim sweat band | 0.75 | 0.0-0.1 | spandex,nylon
+#color# braided sport headband | 0.65 | 0.0-0.1 | spandex,nylon
+#color# tight ponytail tie | 0.50 | 0.0-0.1 | spandex
+
+# minimal jewelry
+#color# tiny stud earrings | 0.50 | 0.0-0.3 | metal
+#color# silicone band ring | 0.45 | 0.0-0.2 | rubber
+#color# fitness tracker watch | 0.85 | 0.0-0.2 | metal,rubber
+#color# heart rate chest band | 0.45 | 0.0-0.2 | spandex
+
+# functional
+#color# wrist sweat bands | 0.65 | 0.0-0.1 | spandex,nylon
+#color# weightlifting gloves | 0.45 | 0.0-0.2 | leather
+#color# resistance loop band | 0.55 | 0.0-0.2 | rubber
+#color# insulated water bottle | 0.85 | 0.0-0.2 | metal
+#color# protein shaker | 0.55 | 0.0-0.2 | plastic
+#color# sweat towel | 0.65 | 0.0-0.1 | microfiber

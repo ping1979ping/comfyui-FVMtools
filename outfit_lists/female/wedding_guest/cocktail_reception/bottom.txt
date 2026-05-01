@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sleek pencil midi in classic black | 0.7 | 0.7-1.0 | crepe,silk
+A-line cocktail skirt in scarlet | 0.6 | 0.7-0.9 | crepe,silk
+high-slit knee-length skirt in navy | 0.5 | 0.7-1.0 | satin,silk
+flared midi in fuchsia | 0.5 | 0.7-0.9 | crepe,silk
+fitted column skirt in champagne | 0.4 | 0.8-1.0 | satin,silk
+draped wrap skirt in forest green | 0.4 | 0.7-0.9 | charmeuse,silk
+trumpet midi in midnight blue | 0.4 | 0.7-1.0 | satin,silk
+asymmetric-hem skirt in mustard yellow | 0.4 | 0.7-0.9 | silk,charmeuse
+sleek cigarette pants in classic black | 0.4 | 0.7-0.9 | crepe,silk
+ruched mini skirt in dusty rose | 0.3 | 0.7-0.9 | satin,silk

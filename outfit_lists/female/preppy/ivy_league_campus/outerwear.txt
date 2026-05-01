@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+varsity jacket | 0.55 | 0.1-0.4 | wool,leather
+fitted cardigan | 0.55 | 0.2-0.5 | wool,knit,cashmere
+cropped windbreaker | 0.40 | 0.2-0.4 | nylon
+
+# mid-casual
+crested blazer | 0.60 | 0.3-0.7 | wool,tweed
+shawl-collar pullover | 0.50 | 0.3-0.6 | wool,cashmere
+plaid bomber jacket | 0.45 | 0.3-0.6 | wool
+
+# formal
+tailored blazer | 0.65 | 0.4-0.8 | wool,tweed,linen
+pea coat | 0.50 | 0.5-0.8 | wool
+camel overcoat | 0.45 | 0.5-0.8 | wool,cashmere
+trench coat | 0.45 | 0.5-0.8 | cotton,silk

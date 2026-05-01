@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical patrol beret with security crest | 0.25 | 0.0-0.7 | microfiber
+helmet with face shield | 0.15 | 0.0-0.5 | ballistic-weave,chrome
+formal dress cap with chrome insignia | 0.15 | 0.7-1.0 | satin,microfiber

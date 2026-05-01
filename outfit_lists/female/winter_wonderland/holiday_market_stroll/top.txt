@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+festive pullover | 0.70 | 0.2-0.5 | wool,knit
+ribbed turtleneck | 0.65 | 0.3-0.6 | wool,cashmere,knit
+sequined knit top | 0.45 | 0.4-0.7 | knit,polyester
+cropped cashmere pullover | 0.55 | 0.4-0.7 | cashmere
+bow-front blouse | 0.40 | 0.4-0.7 | velvet,polyester
+chunky cardigan | 0.55 | 0.2-0.5 | wool,knit
+mock neck top | 0.50 | 0.3-0.6 | wool,knit,cotton
+fitted plush evening top | 0.40 | 0.4-0.7 | velvet
+embellished pullover | 0.40 | 0.3-0.6 | knit
+button-up blouse | 0.45 | 0.3-0.6 | cotton,polyester

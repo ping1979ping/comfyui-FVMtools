@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim crossbody | 0.70 | 0.2-0.4 | leather
+mini shoulder bag | 0.60 | 0.2-0.4 | leather
+small backpack | 0.55 | 0.1-0.3 | nylon
+fold-over clutch | 0.50 | 0.2-0.4 | leather,suede
+sleek tote | 0.55 | 0.2-0.4 | leather
+belt bag | 0.50 | 0.1-0.3 | nylon,leather
+top-handle bag | 0.45 | 0.3-0.5 | leather
+woven shopper | 0.45 | 0.1-0.3 | canvas

@@ -1,0 +1,9 @@
+# format: fabric_name | formality | family | weight
+chiffon | 0.7 | synthetic | light
+georgette | 0.7 | synthetic | light
+crepe | 0.7 | mixed | light
+silk | 0.8 | natural | light
+linen | 0.6 | natural | light
+cotton voile | 0.6 | natural | light
+organza | 0.8 | synthetic | light
+charmeuse | 0.8 | synthetic | light

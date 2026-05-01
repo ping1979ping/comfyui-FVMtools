@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowing midi skirt | 0.80 | 0.5-0.8 | silk,satin
+draped knee-length skirt | 0.70 | 0.5-0.7 | silk,satin
+ruffled tea-length skirt | 0.55 | 0.5-0.8 | silk,chiffon
+fitted cocktail skirt | 0.65 | 0.5-0.7 | satin,velvet
+asymmetric hem skirt | 0.60 | 0.5-0.8 | satin,chiffon
+high-waisted evening trousers | 0.50 | 0.5-0.8 | satin,velvet
+wrap front midi skirt | 0.55 | 0.4-0.7 | silk,satin
+pleated cocktail skirt | 0.45 | 0.5-0.7 | satin
+embellished mini skirt | 0.40 | 0.5-0.7 | beaded,satin
+gathered tulip skirt | 0.50 | 0.5-0.7 | silk,satin

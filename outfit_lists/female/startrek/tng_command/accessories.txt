@@ -1,0 +1,23 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# command-grade tech
+combadge on chest | 0.95 | 0.0-1.0 | brass,chrome
+captain rank pips on collar | 0.85 | 0.3-1.0 | brass
+PADD tablet under arm | 0.50 | 0.2-0.8 | chrome
+tricorder slung at hip | 0.35 | 0.0-0.6 | chrome
+type-2 phaser holstered on belt | 0.40 | 0.0-0.6 | chrome
+duty belt with utility loops | 0.45 | 0.2-0.7 | faux-leather
+
+# formal
+admiral grade service medals | 0.35 | 0.7-1.0 | brass
+honor sash across chest | 0.25 | 0.8-1.0 | satin
+
+# off-duty
+small stud earrings | 0.25 | 0.0-0.5 | brass
+delicate pendant necklace | 0.25 | 0.0-0.5 | brass
+captain signet ring | 0.20 | 0.4-1.0 | brass
+
+# tech extras
+ear-piece comm receiver | 0.15 | 0.0-0.7 | chrome
+wrist chronometer with gold band | 0.20 | 0.3-0.8 | brass

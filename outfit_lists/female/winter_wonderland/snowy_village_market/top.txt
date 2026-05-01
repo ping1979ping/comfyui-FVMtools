@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cozy turtleneck | 0.75 | 0.3-0.6 | wool,cashmere,knit
+cable-pattern pullover | 0.70 | 0.2-0.5 | wool,knit
+ribbed knit top | 0.60 | 0.3-0.6 | knit,cotton
+chunky shawl cardigan | 0.55 | 0.3-0.6 | wool,knit
+plaid button-down | 0.50 | 0.1-0.3 | flannel,cotton
+mock neck pullover | 0.50 | 0.3-0.6 | wool,knit
+oversized chunky sweater | 0.55 | 0.2-0.5 | wool,knit
+fitted thermal henley | 0.45 | 0.1-0.3 | cotton,fleece
+boatneck sweater | 0.40 | 0.3-0.6 | knit,cashmere
+puff-sleeve pullover | 0.40 | 0.3-0.6 | knit,wool

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# soft cotton tote | 0.80 | 0.0-0.2 | canvas
+#color# woven straw basket | 0.55 | 0.0-0.2 | jute
+#color# weekender bag | 0.65 | 0.0-0.2 | canvas
+#color# drawstring laundry sack | 0.55 | 0.0-0.2 | canvas
+#color# slouchy hobo bag | 0.50 | 0.0-0.2 | suede
+#color# soft pouch bag | 0.50 | 0.0-0.2 | velvet
+#color# yoga bolster carrier | 0.60 | 0.0-0.2 | canvas
+#color# drawstring sack | 0.50 | 0.0-0.2 | linen

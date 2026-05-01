@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heeled ankle boots | 0.60 | 0.3-0.6 | leather,suede
+shearling-lined boots | 0.65 | 0.1-0.3 | leather,suede
+knee-high riding boots | 0.55 | 0.3-0.7 | leather,suede
+classic leather chelsea | 0.50 | 0.3-0.6 | leather
+buckled tall boots | 0.50 | 0.3-0.6 | leather
+warm pull-on boots | 0.55 | 0.1-0.3 | suede,leather
+embellished party boots | 0.40 | 0.4-0.7 | suede,leather
+plush winter booties | 0.50 | 0.1-0.3 | suede
+slim block-heel boots | 0.45 | 0.3-0.6 | leather,suede
+classic snow boots | 0.55 | 0.1-0.3 | leather,suede

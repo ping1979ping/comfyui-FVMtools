@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+delicate floral overlay blouse with visible bralette | 0.80 | 0.2-0.5 | lace
+vintage crochet top with peeking bra | 0.65 | 0.1-0.4 | knit
+filigree-pattern blouse over visible bra | 0.65 | 0.2-0.4 | lace,chiffon
+soft eyelet shirt with bralette underneath | 0.60 | 0.2-0.4 | cotton
+high-neck doily-pattern top | 0.55 | 0.2-0.4 | lace
+ribbed scoop tee with peeking bra | 0.65 | 0.1-0.3 | jersey
+oversized fine-knit pullover with visible bra | 0.65 | 0.2-0.4 | knit
+tea-stained crochet camisole | 0.50 | 0.1-0.3 | knit
+embroidered bib blouse | 0.55 | 0.2-0.4 | cotton
+romantic puff-sleeve blouse | 0.60 | 0.2-0.4 | chiffon,cotton
+buttoned shirt with peeking bralette | 0.60 | 0.2-0.4 | cotton
+fine-gauge turtleneck shell | 0.55 | 0.2-0.4 | knit

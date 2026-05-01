@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WANDER" | 0.30 | top | elegant thin font
+"NATURE" | 0.25 | top | clean modern font
+"GROUNDED" | 0.25 | top | elegant serif
+"WILD" | 0.25 | top | bold sans-serif
+"OM" | 0.25 | top | elegant serif
+"FREE SPIRIT" | 0.25 | top | thin sans-serif
+"EARTH" | 0.20 | top | minimal sans-serif
+"ROOTS" | 0.20 | top | elegant thin font
+"WANDERLUST" | 0.20 | top | thin sans-serif
+"FLOW" | 0.20 | top | clean modern font
+"NAMASTE" | 0.25 | top | elegant thin font
+"BOHO" | 0.20 | top | minimal bold

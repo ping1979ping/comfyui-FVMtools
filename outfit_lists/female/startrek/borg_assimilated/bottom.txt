@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+assimilated leggings with thigh implant | 0.85 | 0.0-0.7 | biomesh,polylatex
+borg drone trousers with cyber knee plates | 0.75 | 0.0-0.7 | neoprene,exo-armor
+form-fitting hive pants with cable conduits | 0.70 | 0.0-0.6 | nano-weave,copper-conduit
+graphite shin guards over leggings | 0.60 | 0.0-0.6 | matte-graphite,biomesh
+liberated drone civilian pants | 0.45 | 0.2-0.7 | biomesh,nano-weave
+high-waisted exo-armored trousers | 0.55 | 0.0-0.6 | exo-armor,neoprene
+plated panel skirt with tights | 0.40 | 0.2-0.7 | chrome-plate,polylatex
+unimatrix elite leg-armor | 0.45 | 0.2-0.7 | exo-armor,chrome-plate
+silicone compression pants | 0.50 | 0.0-0.5 | servo-silicone,nano-weave
+former-drone trousers with hidden ports | 0.40 | 0.0-0.5 | biomesh,polylatex

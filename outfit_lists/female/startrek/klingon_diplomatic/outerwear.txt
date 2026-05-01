@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ambassador shoulder cloak with house crest | 0.65 | 0.5-1.0 | brocade,velvet-blend
+warrior diplomat shoulder armor with chainmail drape | 0.60 | 0.3-0.8 | chainmail,warrior-mesh
+ceremonial council overcoat with bronze epaulets | 0.50 | 0.6-1.0 | brocade,bronze-alloy
+high-house cape in deep crimson | 0.55 | 0.6-1.0 | velvet-blend,silk-weave
+warrior bandolier vest with battle medallions | 0.55 | 0.2-0.7 | bat-leather,warrior-mesh
+emissary mantle with obsidian clasps | 0.40 | 0.5-1.0 | velvet-blend,obsidian
+studded warrior war-cloak | 0.40 | 0.0-0.6 | spiked-hide,bat-leather
+formal house robe with chainmail collar | 0.40 | 0.6-1.0 | brocade,chainmail

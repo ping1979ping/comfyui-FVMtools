@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# soft tote bag | 0.80 | 0.0-0.2 | canvas
+#color# yoga mat sling | 0.65 | 0.0-0.2 | canvas,nylon
+#color# crossbody pouch | 0.55 | 0.0-0.2 | nylon
+#color# slouchy hobo bag | 0.55 | 0.0-0.2 | suede
+#color# weekender bag | 0.55 | 0.0-0.2 | canvas
+#color# drawstring backpack | 0.55 | 0.0-0.2 | canvas,nylon
+#color# small clutch pouch | 0.45 | 0.0-0.2 | velvet
+#color# drawstring sack | 0.50 | 0.0-0.2 | linen

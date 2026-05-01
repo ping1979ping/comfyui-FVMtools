@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+houndstooth check | 0.5 | top,bottom,outerwear | 0.3-0.8
+tattersall pattern | 0.5 | top,outerwear | 0.3-0.7
+horse-bit motif | 0.4 | accessories,bag | 0.3-0.7
+hunt crest | 0.4 | top,outerwear | 0.4-0.8
+plaid pattern | 0.5 | top,bottom,outerwear | 0.3-0.7
+foxhead embroidery | 0.3 | top,outerwear | 0.4-0.8
+horseshoe motif | 0.3 | accessories,bag | 0.2-0.7
+windowpane check | 0.4 | bottom,outerwear | 0.3-0.7
+stirrup-link print | 0.3 | accessories,bag | 0.3-0.7
+team stripes | 0.4 | top | 0.2-0.6

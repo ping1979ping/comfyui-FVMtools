@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sleek halter bodice in onyx black | 0.7 | 0.8-1.0 | silk,charmeuse
+embellished off-shoulder corset in midnight blue | 0.6 | 0.8-1.0 | brocade,silk
+plunging V-neck top in deep emerald | 0.5 | 0.8-1.0 | silk,charmeuse
+sequined evening bodice in gunmetal | 0.5 | 0.8-1.0 | silk,satin
+draped one-shoulder top in burgundy | 0.6 | 0.8-1.0 | silk,charmeuse
+fitted strapless bustier in jet black | 0.4 | 0.8-1.0 | satin,brocade
+beaded long-sleeve top in champagne | 0.4 | 0.8-1.0 | silk,satin
+illusion-mesh bodice in noir | 0.4 | 0.8-1.0 | silk,satin
+crystal-encrusted top in deep plum | 0.3 | 0.9-1.0 | silk,brocade
+high-neck embellished top in obsidian | 0.4 | 0.8-1.0 | silk,satin
+backless halter top in bordeaux | 0.4 | 0.8-1.0 | satin,charmeuse

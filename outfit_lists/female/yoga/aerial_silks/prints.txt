@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+shimmer-finish gradient | 0.40 | top,bottom | 0.0-0.2
+mesh insert panels | 0.45 | top,bottom | 0.0-0.2
+holographic shimmer | 0.30 | top,bottom | 0.0-0.2
+metallic accent panels | 0.35 | top,bottom | 0.0-0.3
+color-block panels | 0.40 | top,bottom,outerwear | 0.0-0.3
+rhinestone trim | 0.30 | top,bottom | 0.0-0.3
+galaxy print | 0.25 | top,bottom | 0.0-0.2
+stage-shimmer foil print | 0.30 | top,bottom | 0.0-0.2
+contrasting side stripe | 0.35 | top,bottom | 0.0-0.3
+sequin trim detail | 0.25 | top,outerwear | 0.0-0.3
+tonal velvet panel | 0.25 | top,bottom | 0.0-0.3
+ombre fade | 0.35 | top,bottom | 0.0-0.2

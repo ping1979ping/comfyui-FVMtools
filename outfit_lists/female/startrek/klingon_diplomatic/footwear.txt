@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+warrior knee-high boots with bronze buckles | 0.85 | 0.0-0.8 | bat-leather,targ-hide
+ceremonial high-house heels with obsidian tips | 0.55 | 0.6-1.0 | velvet-blend,obsidian
+ambassador formal boots with bronze trim | 0.65 | 0.5-1.0 | bat-leather,bronze-alloy
+studded warrior ankle boots | 0.45 | 0.0-0.6 | spiked-hide,bat-leather
+ceremonial slippers with brocade panels | 0.35 | 0.6-1.0 | brocade,silk-weave
+warrior diplomat mid-calf boots | 0.55 | 0.3-0.8 | bat-leather,warrior-mesh

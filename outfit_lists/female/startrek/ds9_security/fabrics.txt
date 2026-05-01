@@ -1,0 +1,12 @@
+# format: fabric_name | formality | family | weight
+
+ballistic-weave | 0.4 | tough | heavy
+spandex | 0.3 | synthetic | light
+microfiber | 0.4 | synthetic | light
+ripstop | 0.3 | synthetic | medium
+faux-leather | 0.5 | tough | medium
+kevlar-blend | 0.5 | tough | heavy
+gunmetal | 0.6 | tech | heavy
+chrome | 0.5 | tech | heavy
+satin | 0.8 | luxury | light
+neoprene | 0.4 | synthetic | medium

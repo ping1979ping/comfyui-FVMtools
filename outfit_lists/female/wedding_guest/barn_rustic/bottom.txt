@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flowing prairie maxi skirt in cream | 0.7 | 0.6-0.9 | cotton voile,georgette
+tiered boho midi skirt in sage | 0.6 | 0.7-0.9 | chiffon,silk
+A-line knee-length skirt in dusty pink | 0.5 | 0.7-0.9 | crepe,silk
+floaty maxi skirt in terracotta | 0.5 | 0.7-0.9 | chiffon,silk
+embroidered hem skirt in ivory | 0.4 | 0.6-0.9 | cotton voile,linen
+bias-cut midi in dusty rose | 0.5 | 0.7-1.0 | charmeuse,silk
+ruffled tiered maxi in butter yellow | 0.4 | 0.6-0.9 | chiffon,georgette
+soft pleated midi in blush | 0.4 | 0.7-0.9 | georgette,silk
+gathered boho skirt in muted lavender | 0.4 | 0.6-0.9 | cotton voile,silk
+flowing column skirt in soft sage | 0.3 | 0.7-0.9 | chiffon,silk

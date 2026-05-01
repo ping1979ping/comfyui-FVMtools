@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+paneled office blouse | 0.85 | 0.6-0.9 | mesh,silk
+sheer-yoke shirt | 0.80 | 0.6-0.9 | chiffon,silk
+illusion-back blouse | 0.75 | 0.6-0.9 | mesh,chiffon
+see-through inset top | 0.70 | 0.6-0.9 | mesh,organza
+transparent-shoulder shirt | 0.65 | 0.5-0.8 | chiffon,silk
+button-down with sheer panels | 0.70 | 0.6-0.9 | organza,silk
+boatneck blouse with visible bra strap | 0.55 | 0.5-0.8 | silk,cotton
+deep V-neck shirt | 0.60 | 0.6-0.8 | silk,chiffon
+keyhole-front office top | 0.50 | 0.5-0.8 | silk,jersey
+high-neck transparent shirt | 0.55 | 0.6-0.9 | organza,chiffon
+fitted shell with sheer overlay | 0.65 | 0.6-0.8 | mesh,silk

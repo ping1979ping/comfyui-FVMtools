@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored blazer | 0.85 | 0.7-1.0 | wool,cotton,linen
+fitted jacket | 0.65 | 0.7-1.0 | wool,tweed
+cropped meeting blazer | 0.55 | 0.6-0.8 | wool,cotton
+bolero jacket | 0.40 | 0.7-0.9 | wool,silk
+soft cardigan | 0.40 | 0.5-0.7 | cashmere,wool
+double-breasted blazer | 0.50 | 0.8-1.0 | wool

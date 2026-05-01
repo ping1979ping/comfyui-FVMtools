@@ -1,0 +1,24 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+knit | 0.25 | casual | medium
+cotton | 0.2 | natural | medium
+canvas | 0.2 | casual | medium
+jute | 0.3 | natural | medium
+rope | 0.2 | casual | medium
+
+# mid-range fabrics
+linen | 0.4 | natural | light
+suede | 0.4 | tough | medium
+leather | 0.45 | tough | heavy
+wool | 0.5 | natural | heavy
+nylon | 0.3 | synthetic | light
+straw | 0.3 | natural | light
+plastic | 0.2 | synthetic | light
+
+# formal fabrics
+silk | 0.85 | luxury | light
+cashmere | 0.8 | luxury | medium
+
+# special materials
+metal | 0.5 | luxury | heavy

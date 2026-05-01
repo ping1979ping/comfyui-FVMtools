@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"REST" | 0.30 | top | elegant thin font
+"PEACE" | 0.30 | top | minimal sans-serif
+"BREATHE" | 0.30 | top | thin sans-serif
+"STILL" | 0.25 | top | elegant serif
+"RESTORE" | 0.25 | top | clean modern font
+"SLOW DOWN" | 0.20 | top | thin sans-serif
+"BE GENTLE" | 0.20 | top | elegant thin font
+"SOFT" | 0.20 | top | minimal sans-serif
+"CALM" | 0.20 | top | thin sans-serif
+"GROUNDED" | 0.15 | top | elegant serif
+"SLOW" | 0.15 | top | clean sans-serif

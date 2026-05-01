@@ -1,0 +1,6 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"NCC-1701-D" | 0.25 | accessories | block font
+"USS ENTERPRISE" | 0.15 | accessories | stencil font
+"CAPTAIN" | 0.20 | top | bold block font
+"COMMAND DIVISION" | 0.15 | top | block font

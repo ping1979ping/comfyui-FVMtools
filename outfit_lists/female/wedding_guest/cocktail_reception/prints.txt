@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+sequin shimmer accent | 0.5 | top,bag | 0.7-1.0
+sleek metallic finish | 0.4 | top,bag | 0.7-1.0
+art-deco geometric motif | 0.4 | top,bottom | 0.7-1.0
+crystal beadwork detail | 0.4 | top,accessories | 0.8-1.0
+abstract painterly print | 0.3 | top,bottom | 0.7-0.9
+modern color-block design | 0.3 | top,bottom | 0.7-0.9
+glossy patent finish | 0.3 | bag,footwear | 0.7-1.0
+all-over glitter overlay | 0.3 | top,bottom | 0.8-1.0
+modernist geometric pattern | 0.3 | top,bottom | 0.7-0.9
+embroidered abstract motif | 0.3 | top | 0.8-1.0

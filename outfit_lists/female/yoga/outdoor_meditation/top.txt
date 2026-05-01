@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# loose tank top | 0.90 | 0.0-0.2 | linen,bamboo
+#color# flowy peasant blouse | 0.65 | 0.1-0.3 | linen,bamboo
+#color# cropped tee | 0.75 | 0.0-0.2 | jersey
+#color# boho wrap top | 0.65 | 0.1-0.3 | bamboo,modal
+#color# sleeveless tunic | 0.65 | 0.0-0.2 | linen,bamboo
+#color# halter tie-back top | 0.60 | 0.0-0.2 | bamboo,modal
+#color# scoopneck flowy tank | 0.75 | 0.0-0.2 | bamboo,modal
+#color# long-sleeve breathable top | 0.55 | 0.1-0.3 | bamboo,modal
+#color# cami strap top | 0.55 | 0.0-0.2 | bamboo,modal
+#color# off-shoulder peasant top | 0.50 | 0.1-0.3 | linen,bamboo
+#color# embroidered tunic | 0.45 | 0.1-0.3 | linen,bamboo

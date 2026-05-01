@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NAMASTE" | 0.30 | top | elegant thin font
+"FLOW" | 0.25 | top | clean modern font
+"BREATHE IN" | 0.20 | top | thin sans-serif
+"VINYASA" | 0.20 | top | minimal sans-serif
+"OM" | 0.20 | top | elegant serif
+"BALANCE" | 0.20 | top | minimal sans-serif
+"BE STILL" | 0.15 | top | thin sans-serif
+"MINDFUL" | 0.15 | top | elegant thin font
+"FLOW STATE" | 0.15 | top | clean modern font
+"YOGA LIFE" | 0.15 | top | minimal bold
+"INHALE" | 0.15 | top | thin sans-serif
+"PRESENT" | 0.15 | top | elegant thin font

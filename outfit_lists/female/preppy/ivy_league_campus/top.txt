@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+crested rugby shirt | 0.65 | 0.2-0.5 | cotton,knit
+varsity tee | 0.55 | 0.1-0.4 | cotton
+striped polo | 0.55 | 0.2-0.5 | cotton,knit
+crewneck sweatshirt | 0.60 | 0.1-0.4 | cotton,fleece
+
+# mid-casual
+cable-knit pullover | 0.65 | 0.3-0.7 | wool,cashmere
+collegiate cardigan | 0.55 | 0.3-0.6 | wool,knit
+v-neck sweater vest | 0.50 | 0.3-0.6 | wool,cotton
+turtleneck pullover | 0.55 | 0.3-0.7 | cashmere,wool
+
+# formal
+button-down shirt | 0.65 | 0.4-0.8 | cotton,silk
+bow-tie blouse | 0.45 | 0.5-0.8 | silk,cotton
+fitted oxford top | 0.50 | 0.4-0.8 | cotton
+pussy-bow blouse | 0.40 | 0.5-0.8 | silk

@@ -1,0 +1,16 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white windbreaker | 0.50 | 0.1-0.3 | nylon
+piped track jacket | 0.45 | 0.1-0.3 | polyester
+fitted court vest | 0.45 | 0.2-0.5 | cotton,wool
+
+# mid-casual
+cream cardigan | 0.55 | 0.3-0.6 | wool,cashmere
+v-neck cricket pullover | 0.55 | 0.3-0.7 | wool
+fitted court cardigan | 0.50 | 0.3-0.6 | wool,knit
+
+# formal
+white tennis blazer | 0.55 | 0.4-0.8 | wool,linen
+double-breasted court coat | 0.40 | 0.5-0.8 | wool

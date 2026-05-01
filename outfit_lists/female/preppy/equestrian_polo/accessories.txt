@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+braided western belt | 0.55 | 0.1-0.5 | leather
+horse-bit belt | 0.45 | 0.2-0.5 | leather,metal
+pony tie scarf | 0.40 | 0.1-0.5 | silk
+riding gloves | 0.45 | 0.2-0.6 | leather
+
+# mid-casual
+horseshoe pendant | 0.45 | 0.2-0.6 | metal
+slim watch | 0.55 | 0.3-0.8 | metal,leather
+stirrup-link bracelet | 0.40 | 0.3-0.7 | metal
+
+# formal
+pearl earrings | 0.55 | 0.4-0.8 | metal
+gold stock pin | 0.40 | 0.5-0.8 | metal
+white stock tie | 0.50 | 0.5-0.8 | silk
+fox-head brooch | 0.30 | 0.5-0.8 | metal

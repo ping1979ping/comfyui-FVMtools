@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped trucker jacket | 0.70 | 0.1-0.3 | denim
+moto biker jacket | 0.65 | 0.1-0.3 | leather
+oversized band hoodie | 0.55 | 0.1-0.3 | cotton
+plaid open shirt | 0.50 | 0.1-0.3 | cotton
+glitter bomber jacket | 0.50 | 0.1-0.3 | polyester
+sheer net duster | 0.45 | 0.1-0.3 | mesh
+fringed jacket | 0.40 | 0.1-0.3 | suede
+cropped puffer | 0.40 | 0.1-0.3 | nylon
+camo overshirt | 0.45 | 0.1-0.3 | cotton
+windbreaker | 0.45 | 0.1-0.3 | nylon

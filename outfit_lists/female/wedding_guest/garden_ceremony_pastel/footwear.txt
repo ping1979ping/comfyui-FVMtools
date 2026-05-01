@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+nude block heels | 0.7 | 0.7-1.0 | silk,charmeuse
+pastel pink kitten heels | 0.6 | 0.7-1.0 | silk,charmeuse
+strappy sandals in soft gold | 0.6 | 0.7-0.9 | silk,charmeuse
+ballet-style flats in blush | 0.5 | 0.6-0.8 | silk,charmeuse
+mint-green wedge sandals | 0.4 | 0.6-0.8 | charmeuse,silk
+lavender peep-toe heels | 0.4 | 0.7-1.0 | silk,charmeuse
+bow-detail pumps in cream | 0.5 | 0.7-1.0 | silk,charmeuse
+embellished sandals in champagne | 0.4 | 0.7-1.0 | silk,charmeuse
+ivory ankle-strap heels | 0.5 | 0.7-1.0 | silk,charmeuse
+peach slingback heels | 0.4 | 0.7-1.0 | silk,charmeuse

@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+architectural statement earrings | 0.60 | 0.2-0.5 | metal
+slim minimalist watch | 0.55 | 0.3-0.5 | metal
+geometric pendant necklace | 0.55 | 0.2-0.4 | metal
+sleek square sunglasses | 0.55 | 0.2-0.4 | plastic
+thin waist belt | 0.50 | 0.2-0.4 | leather
+sculptural cuff bracelet | 0.45 | 0.2-0.4 | metal
+delicate ring stack | 0.55 | 0.1-0.4 | metal
+gallery badge pin | 0.30 | 0.2-0.4 | metal
+chunky chain necklace | 0.45 | 0.2-0.4 | metal
+slim choker | 0.40 | 0.1-0.3 | leather

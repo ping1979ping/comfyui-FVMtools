@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+plaid pattern | 0.55 | top,bottom,outerwear,accessories | 0.2-0.6
+fair isle pattern | 0.45 | top,outerwear,accessories | 0.2-0.5
+sequined detail | 0.35 | top,outerwear,bag | 0.4-0.7
+cable-knit texture | 0.50 | top,outerwear | 0.2-0.6
+metallic shimmer | 0.40 | outerwear,accessories,bag | 0.3-0.7
+herringbone pattern | 0.35 | outerwear | 0.3-0.7
+quilted texture | 0.40 | outerwear,bag | 0.2-0.6
+embroidered motif | 0.30 | top,accessories | 0.3-0.6
+buffalo check | 0.35 | top,outerwear,accessories | 0.2-0.5
+shearling trim | 0.35 | outerwear,accessories | 0.2-0.7

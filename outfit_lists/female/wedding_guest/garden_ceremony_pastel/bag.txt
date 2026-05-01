@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+beaded clutch in blush | 0.6 | 0.7-1.0 | charmeuse,silk
+embroidered pouch in mint | 0.5 | 0.7-0.9 | silk,georgette
+floral-print mini bag in lavender | 0.5 | 0.7-0.9 | charmeuse,silk
+pearl-handle clutch in cream | 0.4 | 0.8-1.0 | charmeuse,silk
+soft envelope bag in peach | 0.4 | 0.7-1.0 | charmeuse,silk
+delicate wristlet in pale pink | 0.4 | 0.7-0.9 | charmeuse,silk
+ribbon-tie pouch in butter yellow | 0.3 | 0.7-0.9 | charmeuse,silk
+chain-strap mini in champagne | 0.4 | 0.7-1.0 | charmeuse,silk

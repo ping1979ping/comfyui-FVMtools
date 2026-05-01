@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+belted long coat | 0.65 | 0.4-0.7 | wool,tweed
+plaid wrap coat | 0.50 | 0.4-0.7 | wool,tweed
+shearling-trimmed parka | 0.55 | 0.2-0.5 | nylon,suede
+puffer jacket | 0.55 | 0.1-0.3 | nylon,polyester
+double-breasted overcoat | 0.55 | 0.4-0.7 | wool,tweed
+oversized teddy coat | 0.55 | 0.3-0.6 | polyester
+cropped puffer | 0.50 | 0.1-0.3 | nylon,polyester
+swing coat | 0.50 | 0.4-0.7 | wool,tweed
+shimmery quilted jacket | 0.40 | 0.3-0.6 | polyester
+hooded shearling parka | 0.45 | 0.2-0.5 | nylon,suede

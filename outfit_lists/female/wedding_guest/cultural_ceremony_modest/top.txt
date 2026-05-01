@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+modest long-sleeve blouse in jewel red | 0.7 | 0.7-1.0 | silk,georgette
+embroidered high-neck top in deep teal | 0.6 | 0.8-1.0 | brocade,silk
+flowing tunic top in saffron | 0.6 | 0.7-0.9 | silk,chiffon
+elegant kaftan-style top in royal blue | 0.5 | 0.7-1.0 | silk,charmeuse
+modest mock-neck bodice in emerald | 0.5 | 0.8-1.0 | brocade,silk
+embellished long-sleeve top in plum | 0.5 | 0.8-1.0 | silk,satin
+flowing kameez-style top in ruby | 0.5 | 0.7-1.0 | silk,georgette
+beaded modest top in turquoise | 0.4 | 0.8-1.0 | silk,satin
+embroidered tunic in burnt orange | 0.4 | 0.7-1.0 | silk,brocade
+high-collar embellished top in deep purple | 0.4 | 0.8-1.0 | silk,satin
+modest wrap-front top in ochre | 0.4 | 0.7-0.9 | silk,charmeuse

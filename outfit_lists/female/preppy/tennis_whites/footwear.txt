@@ -1,0 +1,16 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+classic tennis shoes | 0.85 | 0.1-0.3 | leather,canvas
+white court sneakers | 0.70 | 0.1-0.3 | leather,canvas
+canvas slip-ons | 0.40 | 0.1-0.3 | canvas
+
+# mid-casual
+white loafers | 0.50 | 0.3-0.6 | leather
+cream ballet flats | 0.45 | 0.3-0.6 | leather,suede
+ankle socks tennis pumps | 0.40 | 0.3-0.6 | leather
+
+# formal
+cream pumps | 0.40 | 0.5-0.8 | leather
+white kitten heels | 0.40 | 0.5-0.8 | leather

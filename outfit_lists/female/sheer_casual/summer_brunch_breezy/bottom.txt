@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowy midi skirt | 0.80 | 0.2-0.4 | chiffon,polyester
+high-waisted shorts | 0.70 | 0.1-0.3 | denim,cotton
+breezy palazzo pants | 0.55 | 0.2-0.4 | polyester,cotton
+A-line mini skirt | 0.60 | 0.1-0.3 | cotton
+wrap midi skirt | 0.50 | 0.2-0.4 | chiffon
+cropped flare jeans | 0.55 | 0.2-0.4 | denim
+tiered ruffle skirt | 0.50 | 0.2-0.4 | chiffon,cotton
+linen-look pants | 0.50 | 0.2-0.4 | cotton
+frayed cutoffs | 0.55 | 0.1-0.3 | denim
+pleated mini skirt | 0.50 | 0.1-0.3 | polyester,chiffon
+paperbag-waist shorts | 0.50 | 0.1-0.3 | cotton
+flared midi skirt | 0.45 | 0.2-0.4 | polyester

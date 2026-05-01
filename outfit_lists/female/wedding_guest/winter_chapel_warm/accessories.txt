@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ruby drop earrings | 0.6 | 0.8-1.0 | silk
+pearl statement necklace | 0.5 | 0.7-1.0 | silk
+gold cuff bracelet | 0.5 | 0.7-1.0 | silk
+emerald pendant | 0.4 | 0.8-1.0 | silk
+crystal chandelier earrings | 0.5 | 0.8-1.0 | silk
+art-deco brooch | 0.4 | 0.8-1.0 | silk
+warm leather gloves in brown | 0.3 | 0.6-0.8 | silk
+pearl-stud earrings | 0.4 | 0.7-0.9 | silk
+sapphire cocktail ring | 0.3 | 0.8-1.0 | silk
+chunky gold chain necklace | 0.3 | 0.7-0.9 | silk

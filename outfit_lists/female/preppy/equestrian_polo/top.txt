@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fitted polo shirt | 0.80 | 0.2-0.5 | cotton,knit
+piped riding shirt | 0.55 | 0.3-0.6 | cotton,silk
+hunt-club tee | 0.45 | 0.2-0.4 | cotton,knit
+team-stripe polo | 0.50 | 0.2-0.5 | cotton,knit
+
+# mid-casual
+tattersall blouse | 0.55 | 0.3-0.7 | cotton,silk
+ratcatcher shirt | 0.50 | 0.3-0.6 | cotton
+fitted turtleneck | 0.50 | 0.3-0.7 | wool,cashmere
+crewneck pullover | 0.50 | 0.3-0.6 | wool,cashmere
+
+# formal
+hunt show shirt | 0.55 | 0.4-0.8 | cotton,silk
+stock-tie blouse | 0.45 | 0.5-0.8 | silk
+fitted button-down | 0.60 | 0.4-0.8 | cotton,silk
+ruffled show top | 0.40 | 0.5-0.8 | silk

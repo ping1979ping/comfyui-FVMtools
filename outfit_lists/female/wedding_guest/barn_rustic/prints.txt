@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+romantic floral pattern | 0.5 | top,bottom | 0.6-0.9
+ditsy meadow-flower print | 0.4 | top,bottom | 0.6-0.9
+embroidered wildflower motif | 0.4 | top,bottom | 0.6-0.9
+botanical-leaf pattern | 0.3 | top,bottom | 0.6-0.9
+soft watercolor wash | 0.3 | top,bottom | 0.6-0.9
+boho paisley pattern | 0.3 | top,bottom | 0.6-0.8
+delicate eyelet pattern | 0.4 | top | 0.6-0.9
+prairie gingham check | 0.2 | top,bottom | 0.6-0.8
+sunflower-print motif | 0.2 | top,bottom | 0.6-0.8
+soft sage-green tonal pattern | 0.3 | top,bottom | 0.6-0.9

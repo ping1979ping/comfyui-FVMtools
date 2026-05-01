@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+uniform pants in black | 0.90 | 0.2-0.9 | spandex,lycra
+fitted duty trousers with side seam | 0.75 | 0.3-0.9 | microfiber,spandex
+command division skirt in black | 0.45 | 0.2-0.6 | gabardine,polyamide
+high-waisted bridge officer pants | 0.65 | 0.4-0.9 | wool-blend,gabardine
+dress trousers with red side stripe | 0.50 | 0.7-1.0 | satin,wool-blend
+field duty pants with cargo pocket | 0.40 | 0.2-0.6 | microfiber,neoprene
+form-fitted leggings under tunic | 0.55 | 0.0-0.4 | spandex,polyamide
+ready-room slacks with crisp crease | 0.50 | 0.5-0.9 | gabardine,wool-blend
+ten-forward casual chinos | 0.30 | 0.0-0.3 | cotton-blend,polyamide
+admiral dress pants with gold piping | 0.35 | 0.8-1.0 | satin,gabardine

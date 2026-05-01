@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid white | 0.8 | top,bottom,outerwear | 0.1-0.7
+green piping | 0.5 | top,bottom,outerwear | 0.2-0.7
+navy piping | 0.5 | top,outerwear | 0.2-0.7
+court crest | 0.4 | top,outerwear | 0.3-0.7
+racquet emblem | 0.4 | top,bag | 0.2-0.6
+v-stripe trim | 0.4 | top,outerwear | 0.2-0.6
+wimbledon green | 0.3 | accessories,outerwear | 0.3-0.7
+piped trim | 0.5 | top,bottom,outerwear | 0.2-0.7
+embroidered crest | 0.3 | top,outerwear | 0.3-0.7
+court stripes | 0.4 | top,outerwear | 0.2-0.6

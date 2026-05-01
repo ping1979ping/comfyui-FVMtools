@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floor-length opera cape | 0.55 | 0.7-0.9 | satin,velvet
+dramatic embellished cape | 0.50 | 0.7-0.9 | beaded,satin
+draped silk shawl | 0.55 | 0.6-0.9 | silk,chiffon
+faux-fur stole wrap | 0.45 | 0.6-0.9 | satin
+sequined evening jacket | 0.45 | 0.7-0.9 | sequin
+luxe capelet | 0.50 | 0.6-0.9 | velvet
+metallic shrug | 0.40 | 0.6-0.9 | metallic
+beaded evening wrap | 0.45 | 0.6-0.9 | beaded,silk
+long opera coat | 0.40 | 0.7-0.9 | satin
+embellished bolero | 0.45 | 0.6-0.9 | beaded

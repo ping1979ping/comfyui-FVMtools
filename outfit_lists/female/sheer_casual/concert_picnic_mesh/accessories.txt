@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+layered chain necklaces | 0.65 | 0.1-0.3 | metal
+festival face glitter | 0.40 | 0.1-0.2 | plastic
+oversized round sunglasses | 0.65 | 0.1-0.3 | plastic
+studded belt | 0.55 | 0.1-0.3 | leather
+chunky bracelet stack | 0.55 | 0.1-0.3 | metal
+dangly statement earrings | 0.55 | 0.1-0.4 | metal
+choker necklace | 0.55 | 0.1-0.3 | leather,metal
+edgy thumb rings | 0.50 | 0.1-0.3 | metal
+neon scrunchie | 0.40 | 0.1-0.2 | polyester
+bandana neck scarf | 0.40 | 0.1-0.3 | cotton

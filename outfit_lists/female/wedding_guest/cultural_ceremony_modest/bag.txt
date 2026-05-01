@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embellished potli bag in ruby | 0.6 | 0.7-1.0 | silk,brocade
+beaded clutch in jewel green | 0.5 | 0.7-1.0 | silk,charmeuse
+embroidered drawstring pouch | 0.5 | 0.7-1.0 | silk,brocade
+ornate box clutch in gold | 0.4 | 0.8-1.0 | brocade,charmeuse
+mirror-work mini bag | 0.4 | 0.7-0.9 | silk,charmeuse
+embellished evening clutch in saffron | 0.4 | 0.7-1.0 | silk,charmeuse
+zardozi-embroidered pouch | 0.3 | 0.8-1.0 | silk,brocade

@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+romantic boho blouse in ivory | 0.7 | 0.6-0.9 | cotton voile,silk
+prairie-style top with bell sleeves in cream | 0.6 | 0.6-0.9 | cotton voile,georgette
+embroidered peasant top in sage green | 0.5 | 0.6-0.9 | cotton voile,linen
+ruffled square-neck blouse in dusty pink | 0.5 | 0.7-0.9 | chiffon,silk
+sweet bow-tie blouse in butter yellow | 0.4 | 0.6-0.9 | silk,georgette
+flutter-sleeve top in terracotta | 0.5 | 0.7-0.9 | chiffon,silk
+crochet-detail bardot top in ivory | 0.4 | 0.6-0.8 | cotton voile,linen
+romantic milkmaid bodice in blush | 0.4 | 0.7-0.9 | silk,georgette
+soft puff-sleeve blouse in dusty rose | 0.5 | 0.6-0.9 | crepe,silk
+keyhole-back top in muted lavender | 0.3 | 0.7-0.9 | chiffon,silk
+button-front blouse in soft white | 0.4 | 0.6-0.8 | cotton voile,linen

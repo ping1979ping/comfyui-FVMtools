@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored velvet blazer | 0.65 | 0.5-0.8 | velvet
+draped wrap shawl | 0.55 | 0.5-0.8 | silk,chiffon
+fitted leather jacket | 0.50 | 0.4-0.7 | leather
+embellished bolero | 0.45 | 0.5-0.8 | beaded
+tailored trench coat | 0.45 | 0.5-0.8 | satin
+sheer kimono jacket | 0.45 | 0.5-0.7 | mesh,chiffon
+cropped sequin jacket | 0.40 | 0.5-0.7 | sequin
+fitted brocade jacket | 0.40 | 0.5-0.8 | silk
+draped silk cape | 0.45 | 0.5-0.8 | silk
+beaded evening wrap | 0.40 | 0.5-0.8 | beaded,silk

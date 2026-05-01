@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plush evening pumps | 0.75 | 0.6-0.9 | velvet
+elegant pointed-toe heels | 0.80 | 0.6-0.9 | satin
+embellished opera pumps | 0.65 | 0.6-0.9 | satin,beaded
+ankle-strap evening heels | 0.60 | 0.5-0.8 | leather,satin
+classic stiletto pumps | 0.65 | 0.5-0.8 | leather,satin
+slingback evening heels | 0.55 | 0.6-0.9 | satin,leather
+peep-toe stiletto sandals | 0.45 | 0.5-0.8 | satin,leather
+metallic pointed pumps | 0.50 | 0.5-0.8 | leather
+classic court shoes | 0.55 | 0.6-0.9 | leather
+suede evening pumps | 0.45 | 0.5-0.8 | satin

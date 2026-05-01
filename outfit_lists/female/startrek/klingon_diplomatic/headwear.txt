@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ceremonial bronze circlet across forehead | 0.30 | 0.5-1.0 | bronze-alloy
+warrior diplomat headband with house crest | 0.25 | 0.2-0.8 | bat-leather,bronze-alloy
+ambassador veil with obsidian beads | 0.20 | 0.6-1.0 | silk-weave,obsidian

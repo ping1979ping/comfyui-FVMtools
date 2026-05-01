@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+formal pumps with platinum buckle | 0.65 | 0.6-1.0 | satin,silk-blend
+elegant heels in burgundy | 0.55 | 0.7-1.0 | velvet-blend,silk-blend
+embassy duty flats in muted gold | 0.45 | 0.4-0.8 | satin,microfiber
+ceremonial slippers with gold embroidery | 0.40 | 0.7-1.0 | brocade,satin
+state dinner stiletto heels | 0.40 | 0.8-1.0 | satin,silk-blend
+diplomatic kitten heels | 0.50 | 0.5-0.9 | satin,microfiber
+ankle dress booties with gold zip | 0.40 | 0.5-0.9 | velvet-blend,satin
+liaison wedge sandals | 0.30 | 0.4-0.8 | silk-blend,linen

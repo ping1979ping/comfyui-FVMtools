@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dress uniform officer cap with brass insignia | 0.20 | 0.7-1.0 | wool-blend,satin
+admiral parade hat with gold band | 0.10 | 0.8-1.0 | satin,wool-blend
+formal beret with delta emblem | 0.10 | 0.5-1.0 | wool-blend

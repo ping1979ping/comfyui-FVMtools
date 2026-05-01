@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+crochet cardigan in cream | 0.5 | 0.6-0.8 | cotton voile,linen
+soft denim jacket in faded blue | 0.4 | 0.5-0.7 | cotton voile,linen
+fringed shawl in beige | 0.4 | 0.6-0.8 | silk,georgette
+boho kimono in floral print | 0.5 | 0.6-0.9 | silk,charmeuse
+embroidered duster in sage | 0.3 | 0.6-0.8 | silk,georgette
+soft wrap in dusty rose | 0.4 | 0.7-0.9 | chiffon,silk
+crochet shrug in ivory | 0.3 | 0.6-0.8 | cotton voile,linen

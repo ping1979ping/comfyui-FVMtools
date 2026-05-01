@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sleek hair comb in metallic | 0.3 | 0.7-1.0 | silk
+art-deco headband | 0.3 | 0.7-1.0 | silk,charmeuse
+crystal hairpin | 0.3 | 0.8-1.0 | silk
+chic feathered fascinator | 0.3 | 0.8-1.0 | silk,organza

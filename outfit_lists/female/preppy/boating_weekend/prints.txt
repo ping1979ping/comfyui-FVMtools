@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+breton stripes | 0.7 | top,outerwear | 0.2-0.7
+nautical stripes | 0.6 | top,bottom,outerwear | 0.2-0.7
+seersucker stripes | 0.5 | bottom,top | 0.1-0.5
+solid white | 0.7 | top,bottom,outerwear | 0.1-0.7
+anchor motif | 0.4 | top,bag,accessories | 0.2-0.7
+shell motif | 0.3 | bag,accessories | 0.1-0.5
+red piping | 0.4 | top,outerwear | 0.3-0.7
+maritime crest | 0.3 | top,outerwear | 0.3-0.7
+flag emblem | 0.3 | top,bag | 0.2-0.6
+gold buttons | 0.5 | outerwear | 0.4-0.8

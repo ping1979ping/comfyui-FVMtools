@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shearling-lined boots | 0.70 | 0.1-0.3 | leather,suede
+mid-calf hiking boots | 0.60 | 0.1-0.3 | leather,nylon
+classic snow boots | 0.65 | 0.1-0.3 | leather,suede
+plush slipper boots | 0.50 | 0.1-0.3 | suede
+laced winter boots | 0.55 | 0.2-0.5 | leather,suede
+buckled tall boots | 0.50 | 0.3-0.6 | leather
+sherpa-trimmed booties | 0.50 | 0.1-0.3 | suede,leather
+ankle-length winter booties | 0.50 | 0.3-0.6 | leather,suede
+warm pull-on boots | 0.50 | 0.1-0.3 | suede,leather
+heavy-duty trekking boots | 0.45 | 0.1-0.3 | leather,suede

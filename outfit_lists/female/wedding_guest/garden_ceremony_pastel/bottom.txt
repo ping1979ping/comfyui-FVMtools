@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flowy midi skirt in pastel pink | 0.7 | 0.7-0.9 | chiffon,silk
+tiered maxi skirt in mint | 0.6 | 0.7-1.0 | chiffon,georgette
+A-line knee-length skirt in lavender | 0.6 | 0.7-0.9 | crepe,silk
+floaty maxi in butter yellow | 0.5 | 0.7-1.0 | chiffon,silk
+pleated midi in blush | 0.5 | 0.7-0.9 | georgette,silk
+soft-hem flared skirt in seafoam | 0.4 | 0.7-0.9 | crepe,silk
+bias-cut midi in peach | 0.4 | 0.7-1.0 | charmeuse,silk
+fluttering tiered skirt in lilac | 0.4 | 0.7-1.0 | tulle,chiffon
+romantic gathered skirt in dusty rose | 0.4 | 0.7-0.9 | chiffon,silk
+elegant column skirt in pale blue | 0.3 | 0.7-1.0 | crepe,silk

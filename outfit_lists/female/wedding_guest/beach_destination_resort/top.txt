@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flowing halter top in coral | 0.7 | 0.7-0.9 | silk,chiffon
+breezy off-shoulder bodice in turquoise | 0.6 | 0.7-0.9 | chiffon,silk
+delicate camisole in seafoam | 0.5 | 0.7-0.9 | silk,charmeuse
+flutter-sleeve blouse in sunset orange | 0.5 | 0.7-0.9 | chiffon,georgette
+draped wrap top in tropical green | 0.5 | 0.7-0.9 | silk,charmeuse
+sheer overlay bodice in ocean blue | 0.4 | 0.7-1.0 | organza,silk
+embroidered peasant top in ivory | 0.5 | 0.6-0.8 | cotton voile,silk
+ruffled bardot top in pale aqua | 0.4 | 0.7-0.9 | chiffon,silk
+strapless ruched bodice in fuchsia | 0.4 | 0.7-1.0 | silk,charmeuse
+crochet-trim top in sand | 0.4 | 0.6-0.8 | cotton voile,linen
+keyhole-back top in coral pink | 0.3 | 0.7-0.9 | silk,georgette

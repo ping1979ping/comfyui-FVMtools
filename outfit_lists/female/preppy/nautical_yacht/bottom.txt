@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white tailored shorts | 0.65 | 0.2-0.4 | cotton,linen
+red sailor shorts | 0.45 | 0.2-0.4 | cotton
+navy capri pants | 0.50 | 0.2-0.4 | cotton,linen
+striped bermuda shorts | 0.40 | 0.2-0.4 | cotton
+
+# mid-casual
+white wide-leg pants | 0.55 | 0.3-0.6 | linen,cotton
+A-line skirt | 0.50 | 0.3-0.7 | cotton,wool
+sailor pants | 0.55 | 0.3-0.7 | wool,cotton
+nautical chinos | 0.50 | 0.3-0.6 | cotton
+
+# formal
+double-breasted skirt | 0.40 | 0.5-0.8 | wool
+white sailor trousers | 0.50 | 0.5-0.8 | wool,linen
+pleated midi skirt | 0.50 | 0.4-0.8 | silk,wool

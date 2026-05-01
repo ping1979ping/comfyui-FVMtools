@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+striped boatneck tee | 0.85 | 0.1-0.4 | cotton,knit
+white tank top | 0.50 | 0.1-0.3 | cotton,linen
+cropped sailor shirt | 0.55 | 0.1-0.4 | cotton
+breton-style top | 0.65 | 0.2-0.5 | cotton,knit
+
+# mid-casual
+boatneck pullover | 0.55 | 0.3-0.6 | cotton,knit
+piped polo | 0.50 | 0.2-0.5 | cotton,knit
+sailor tie blouse | 0.45 | 0.3-0.6 | cotton,silk
+cable-knit pullover | 0.55 | 0.3-0.7 | wool,cashmere
+
+# formal
+white summer blouse | 0.55 | 0.4-0.7 | linen,cotton
+crepe shell top | 0.40 | 0.4-0.8 | silk
+fitted button-down | 0.55 | 0.4-0.7 | cotton
+tied sailor blouse | 0.45 | 0.4-0.7 | cotton,silk

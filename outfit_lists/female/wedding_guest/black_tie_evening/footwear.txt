@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+black stiletto pumps | 0.7 | 0.8-1.0 | satin,silk
+strappy stilettos in jet black | 0.6 | 0.8-1.0 | satin,silk
+metallic gold stilettos | 0.5 | 0.8-1.0 | satin,silk
+crystal-embellished heels | 0.5 | 0.9-1.0 | satin,silk
+ankle-strap pumps in onyx | 0.5 | 0.8-1.0 | satin,silk
+rhinestone-studded heels | 0.4 | 0.8-1.0 | satin,silk
+patent-finish stilettos in noir | 0.4 | 0.8-1.0 | satin,silk
+peep-toe pumps in midnight blue | 0.4 | 0.8-1.0 | satin,silk
+glittering heels in champagne | 0.5 | 0.8-1.0 | satin,silk
+high-shine pumps in deep red | 0.3 | 0.8-1.0 | satin,silk

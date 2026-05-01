@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SWEAT" | 0.30 | top | bold sans-serif
+"HOT YOGA" | 0.30 | top | minimal bold
+"HEAT" | 0.25 | top | bold sans-serif
+"PUSH" | 0.25 | top | clean modern font
+"BURN" | 0.25 | top | bold sans-serif
+"NO LIMITS" | 0.20 | top | minimal bold
+"INHALE EXHALE" | 0.20 | top | thin sans-serif
+"FOCUS" | 0.20 | top | clean sans-serif
+"FIRE" | 0.20 | top | bold sans-serif
+"95F" | 0.15 | top | minimal sans-serif

@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+striped breton tee | 0.85 | 0.2-0.5 | cotton,knit
+sailor stripe shirt | 0.70 | 0.2-0.5 | cotton,knit
+navy tank top | 0.50 | 0.1-0.4 | cotton,knit
+white halter top | 0.45 | 0.1-0.4 | cotton,linen
+
+# mid-casual
+nautical pullover | 0.55 | 0.3-0.6 | wool,knit
+boatneck top | 0.60 | 0.3-0.6 | cotton,knit
+sailor collar blouse | 0.50 | 0.3-0.7 | cotton,silk
+piped shirt | 0.45 | 0.3-0.6 | cotton,silk
+
+# formal
+white button-down | 0.65 | 0.4-0.8 | cotton,silk
+cravat blouse | 0.40 | 0.5-0.8 | silk
+fitted captain blouse | 0.45 | 0.4-0.7 | cotton,silk
+double-breasted top | 0.40 | 0.5-0.8 | wool,silk

@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tight stretch headband | 0.85 | 0.0-0.1 | spandex,nylon
+#color# rhinestone tiara | 0.45 | 0.1-0.3 | metal
+#color# performance sweat band | 0.65 | 0.0-0.1 | spandex,nylon
+#color# braided hair wrap | 0.55 | 0.0-0.2 | satin

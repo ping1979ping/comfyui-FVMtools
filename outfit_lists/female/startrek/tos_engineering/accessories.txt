@@ -1,0 +1,21 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# engineering tools
+hyperspanner clipped to belt | 0.65 | 0.0-0.5 | brass,copper
+flux coupler tool on hip | 0.55 | 0.0-0.5 | brass,copper
+sonic micro-driver in chest pocket | 0.45 | 0.0-0.5 | brass
+isolinear chip pouch on belt | 0.40 | 0.0-0.5 | suede,canvas
+delta arrowhead patch on chest | 0.90 | 0.0-1.0 | velour
+ensign rank braid on sleeve | 0.85 | 0.2-1.0 | satin
+phaser holstered at hip | 0.35 | 0.0-0.6 | brass
+communicator clipped to belt | 0.60 | 0.0-0.7 | brass
+
+# jewelry & service
+small hoop earrings | 0.30 | 0.0-0.5 | brass,copper
+service medal cluster on chest | 0.30 | 0.7-1.0 | brass
+chief engineer signet ring | 0.20 | 0.4-1.0 | brass
+
+# other
+work goggles around neck | 0.35 | 0.0-0.4 | copper,canvas
+ear-receiver wireless plug | 0.20 | 0.0-0.6 | brass

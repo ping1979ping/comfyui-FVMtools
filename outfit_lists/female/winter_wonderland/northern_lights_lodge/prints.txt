@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+nordic pattern | 0.55 | top,outerwear,accessories | 0.1-0.5
+fair isle pattern | 0.50 | top,outerwear,accessories | 0.2-0.5
+chunky cable pattern | 0.50 | top,outerwear | 0.2-0.6
+snowflake motif | 0.30 | top,accessories | 0.1-0.4
+quilted texture | 0.45 | outerwear,bag | 0.2-0.6
+shearling trim | 0.40 | outerwear,accessories | 0.1-0.6
+ribbed texture | 0.40 | top,accessories | 0.2-0.5
+herringbone pattern | 0.30 | outerwear | 0.3-0.7
+plaid pattern | 0.35 | top,outerwear | 0.2-0.6
+arctic camo pattern | 0.25 | outerwear,bag | 0.1-0.4

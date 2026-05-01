@@ -1,0 +1,6 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"7 OF 9" | 0.20 | accessories | bold block font
+"RESISTANCE IS FUTILE" | 0.20 | top | bold block font
+"THIRD OF FIVE" | 0.15 | accessories | block font
+"UNIMATRIX ZERO" | 0.15 | top | stencil font

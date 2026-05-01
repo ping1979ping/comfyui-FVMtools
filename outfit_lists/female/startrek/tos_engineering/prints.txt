@@ -1,0 +1,8 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+mustard gold solid block | 0.55 | top | 0.0-0.7
+sleeve-braid stripe pattern | 0.45 | top,outerwear | 0.2-1.0
+delta arrowhead emblem | 0.40 | top | 0.0-0.8
+copper rivet detailing | 0.30 | outerwear | 0.0-0.5
+green dress sash band | 0.25 | top | 0.6-1.0
+chief engineer chevron stripe | 0.30 | top,outerwear | 0.5-1.0

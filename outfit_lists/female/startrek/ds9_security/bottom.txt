@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical duty pants with cargo pockets | 0.85 | 0.2-0.8 | ripstop,kevlar-blend
+station patrol trousers in black | 0.80 | 0.3-0.9 | microfiber,ripstop
+reinforced knee combat pants | 0.55 | 0.0-0.6 | ripstop,kevlar-blend
+high-waisted security trousers | 0.65 | 0.4-0.9 | microfiber,spandex
+form-fitting tac-leggings under tunic | 0.50 | 0.0-0.4 | spandex,kevlar-blend
+dress trousers with mustard side stripe | 0.40 | 0.7-1.0 | satin,microfiber
+runabout pilot pants with thigh holster loops | 0.45 | 0.2-0.7 | ripstop,microfiber
+brig duty cargo pants | 0.50 | 0.0-0.5 | ripstop
+station civilian slacks | 0.30 | 0.0-0.4 | microfiber
+breakaway tac-pants with side zip | 0.40 | 0.2-0.7 | ripstop,neoprene

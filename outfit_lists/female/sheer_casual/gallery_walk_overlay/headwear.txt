@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+minimalist beret | 0.40 | 0.2-0.4 | knit
+slim hair clip | 0.30 | 0.2-0.4 | metal
+sleek headband | 0.30 | 0.2-0.4 | polyester
+felt fedora | 0.25 | 0.2-0.4 | knit

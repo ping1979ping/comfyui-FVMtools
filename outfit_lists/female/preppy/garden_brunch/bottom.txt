@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+floral mini skirt | 0.55 | 0.2-0.5 | cotton,linen
+high-waisted shorts | 0.50 | 0.2-0.4 | cotton,linen
+gingham culottes | 0.45 | 0.2-0.5 | cotton
+pastel A-line skirt | 0.55 | 0.2-0.5 | cotton
+
+# mid-casual
+midi sundress skirt | 0.55 | 0.3-0.6 | cotton,linen
+embroidered skirt | 0.50 | 0.3-0.7 | cotton,linen
+wide-leg cropped pants | 0.45 | 0.3-0.6 | linen
+pleated tea skirt | 0.50 | 0.3-0.7 | cotton,silk
+
+# formal
+floral midi skirt | 0.55 | 0.4-0.8 | silk,chiffon
+pleated chiffon skirt | 0.50 | 0.5-0.8 | chiffon,silk
+tailored cream slacks | 0.40 | 0.5-0.8 | linen,wool

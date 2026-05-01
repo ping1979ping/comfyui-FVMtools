@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+executive pencil skirt | 0.85 | 0.7-1.0 | wool,polyester
+straight-leg suit pants | 0.75 | 0.7-1.0 | wool,cotton
+high-waisted trousers | 0.70 | 0.7-1.0 | wool,cotton
+midi pencil skirt | 0.60 | 0.6-0.9 | wool,polyester
+A-line knee skirt | 0.55 | 0.6-0.9 | wool,tweed
+slim cigarette pants | 0.55 | 0.7-1.0 | wool,polyester
+tailored wide-leg pants | 0.50 | 0.7-1.0 | wool,linen
+short pencil skirt | 0.40 | 0.6-0.8 | wool,cotton

@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide soft headband | 0.80 | 0.0-0.2 | bamboo,modal
+#color# knotted hair wrap | 0.70 | 0.0-0.2 | bamboo,modal
+#color# turban-style wrap | 0.60 | 0.0-0.2 | bamboo,modal
+#color# soft beanie | 0.55 | 0.0-0.2 | wool
+#color# silk hair scarf | 0.50 | 0.0-0.2 | silk

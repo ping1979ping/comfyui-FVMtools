@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# kimono-style wrap | 0.75 | 0.1-0.3 | bamboo,modal
+#color# fringed shawl | 0.65 | 0.0-0.2 | wool
+#color# longline duster cardigan | 0.65 | 0.1-0.3 | bamboo,modal
+#color# embroidered jacket | 0.45 | 0.1-0.3 | bamboo,modal
+#color# poncho cape | 0.55 | 0.0-0.2 | wool
+#color# light hiking shell | 0.50 | 0.0-0.3 | nylon,polyester
+#color# slouchy crochet vest | 0.50 | 0.0-0.2 | bamboo,modal
+#color# packable windbreaker | 0.45 | 0.0-0.2 | nylon
+#color# waterfall open cardigan | 0.55 | 0.1-0.3 | bamboo,modal
+#color# tassel-trim wrap | 0.45 | 0.0-0.2 | bamboo,modal

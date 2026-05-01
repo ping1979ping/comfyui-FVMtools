@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sculptural box clutch | 0.75 | 0.5-0.8 | metal,satin
+structured top-handle bag | 0.65 | 0.5-0.8 | satin
+embellished evening pouch | 0.60 | 0.5-0.8 | beaded
+artistic minaudiere | 0.55 | 0.5-0.8 | metal
+chain-strap shoulder bag | 0.50 | 0.5-0.7 | leather,satin
+luxe pochette | 0.50 | 0.5-0.8 | velvet
+modern envelope clutch | 0.55 | 0.5-0.8 | leather,satin
+sequined wristlet | 0.40 | 0.5-0.7 | sequin

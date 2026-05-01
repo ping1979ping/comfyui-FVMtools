@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+soft pastel ombre | 0.40 | top,bottom | 0.0-0.2
+gentle floral motif | 0.35 | top,bottom | 0.0-0.2
+heather-marl texture | 0.40 | top,bottom,outerwear | 0.0-0.3
+muted color-block | 0.30 | top,bottom,outerwear | 0.0-0.3
+ruched side detail | 0.45 | top,bottom | 0.0-0.2
+soft tonal stripes | 0.30 | top,bottom | 0.0-0.3
+subtle dot print | 0.25 | top,bottom | 0.0-0.2
+neutral marble effect | 0.25 | top,bottom | 0.0-0.2
+mama lettering motif | 0.25 | top | 0.0-0.3
+washed tie-dye | 0.25 | top,bottom | 0.0-0.2

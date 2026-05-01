@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+away team satchel slung over shoulder | 0.35 | 0.0-0.6 | polyamide,faux-leather
+captain log courier case | 0.30 | 0.3-0.8 | faux-leather,microfiber
+equipment pouch clipped to belt | 0.45 | 0.0-0.6 | polyamide
+diplomatic envelope folio | 0.30 | 0.6-1.0 | faux-leather,satin
+ready-room briefcase in black | 0.30 | 0.5-0.9 | faux-leather
+PADD carrier sleeve | 0.35 | 0.2-0.7 | neoprene,polyamide
+admiral dispatch case with brass clasp | 0.25 | 0.7-1.0 | faux-leather,brass
+flight bag for shuttle missions | 0.30 | 0.0-0.5 | polyamide,neoprene

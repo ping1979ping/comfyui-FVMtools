@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+gray-yoked science top with teal undershirt | 0.90 | 0.3-0.9 | spandex,biothread
+voyager science division tunic with combadge | 0.85 | 0.3-0.9 | spandex,microfiber
+lieutenant rank top with two pips on collar | 0.75 | 0.3-0.9 | spandex,biothread
+sleeveless lab tunic with shoulder yoke | 0.50 | 0.2-0.6 | spandex,microfiber
+turtleneck undertop in teal | 0.65 | 0.2-0.7 | spandex,lycra
+chief science officer tunic with three pips | 0.60 | 0.4-0.9 | biothread,microfiber
+delta quadrant survey top with field patches | 0.55 | 0.2-0.7 | microfiber,linen
+astrometrics duty top with stellar embroidery | 0.50 | 0.3-0.8 | biothread,spandex
+formal dress tunic with science insignia | 0.45 | 0.7-1.0 | satin,silk-blend
+research lab smock with sample loops | 0.50 | 0.0-0.5 | linen,cotton-blend
+holodeck off-duty blouse in muted teal | 0.40 | 0.0-0.4 | silk-blend,linen
+sickbay assistant tunic with med insignia | 0.45 | 0.3-0.8 | microfiber,biothread

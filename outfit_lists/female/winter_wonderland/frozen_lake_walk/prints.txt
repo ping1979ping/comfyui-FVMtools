@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+quilted texture | 0.55 | outerwear,bag | 0.1-0.5
+cable-knit texture | 0.50 | top,outerwear | 0.1-0.5
+fair isle pattern | 0.40 | top,accessories | 0.1-0.5
+ribbed texture | 0.45 | top,accessories | 0.1-0.5
+shearling trim | 0.40 | outerwear,accessories | 0.1-0.5
+herringbone pattern | 0.30 | outerwear | 0.3-0.7
+camo pattern | 0.30 | outerwear,bag | 0.1-0.4
+nordic motif | 0.35 | top,accessories | 0.1-0.4
+plaid pattern | 0.35 | top,outerwear | 0.1-0.5
+weatherproof finish | 0.40 | outerwear,bag | 0.1-0.4

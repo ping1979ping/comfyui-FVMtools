@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+braided rope belt | 0.50 | 0.1-0.4 | rope,leather
+shell pendant | 0.40 | 0.1-0.4 | metal
+oversized sunglasses | 0.65 | 0.1-0.5 | plastic,metal
+small wristlet | 0.30 | 0.1-0.4 | canvas
+
+# mid-casual
+gold rope chain | 0.50 | 0.2-0.6 | metal
+nautical watch | 0.55 | 0.3-0.7 | metal,leather
+anchor charm bracelet | 0.40 | 0.2-0.6 | metal
+
+# formal
+pearl earrings | 0.55 | 0.4-0.8 | metal
+printed neckerchief | 0.45 | 0.3-0.7 | silk
+gold bangle | 0.45 | 0.4-0.8 | metal

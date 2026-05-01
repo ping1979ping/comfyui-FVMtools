@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+translucent button-up shirt with visible bralette | 0.80 | 0.1-0.4 | chiffon
+ribbed cropped tank with peeking bra | 0.75 | 0.1-0.3 | jersey
+gauzy long-sleeve top with bra showing | 0.70 | 0.2-0.4 | chiffon
+sheer paneled tee with visible bralette | 0.65 | 0.1-0.3 | mesh
+fitted scoop-neck top with peeking bra | 0.65 | 0.1-0.3 | jersey,cotton
+boxy oversized tee with side bra exposure | 0.60 | 0.1-0.3 | cotton
+delicate floral overlay top over bralette | 0.60 | 0.2-0.4 | lace
+filmy halter blouse with visible bra | 0.55 | 0.1-0.3 | polyester
+cropped long-sleeve with peeking bra | 0.65 | 0.1-0.3 | mesh
+square-neck tank with bralette underneath | 0.60 | 0.1-0.3 | jersey
+delicate spaghetti-strap cami | 0.60 | 0.1-0.3 | polyester
+deep-V draped top with peeking bra | 0.55 | 0.2-0.4 | chiffon

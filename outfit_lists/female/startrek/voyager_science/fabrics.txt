@@ -1,0 +1,13 @@
+# format: fabric_name | formality | family | weight
+
+biothread | 0.5 | synthetic | light
+spandex | 0.3 | synthetic | light
+lycra | 0.4 | synthetic | light
+microfiber | 0.4 | synthetic | light
+silk-blend | 0.7 | luxury | light
+linen | 0.5 | natural | light
+cotton-blend | 0.3 | natural | medium
+satin | 0.8 | luxury | light
+faux-leather | 0.5 | tough | medium
+chrome | 0.6 | tech | heavy
+copper | 0.5 | tech | heavy

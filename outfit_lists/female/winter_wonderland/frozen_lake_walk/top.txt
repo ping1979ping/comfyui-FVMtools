@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-neck pullover | 0.70 | 0.3-0.6 | wool,knit
+zip-neck thermal top | 0.60 | 0.1-0.3 | fleece,polyester
+ribbed mock turtleneck | 0.60 | 0.2-0.5 | knit,wool
+quarter-zip fleece pullover | 0.55 | 0.1-0.3 | fleece
+chunky cable pullover | 0.55 | 0.2-0.5 | wool,knit
+fitted base layer | 0.50 | 0.1-0.3 | fleece,cotton
+hooded thermal top | 0.45 | 0.1-0.3 | fleece,cotton
+sherpa-lined pullover | 0.50 | 0.1-0.3 | polyester,knit
+oversized cowl neck top | 0.40 | 0.2-0.5 | knit,wool
+ribbed thermal henley | 0.40 | 0.1-0.3 | cotton,fleece

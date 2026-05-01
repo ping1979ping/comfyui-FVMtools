@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+quilted crossbody | 0.55 | 0.3-0.6 | polyester,leather
+structured handbag | 0.55 | 0.4-0.7 | leather,suede
+slouchy hobo bag | 0.50 | 0.2-0.5 | leather,suede
+basket carrier | 0.40 | 0.2-0.5 | felt
+shearling-trimmed tote | 0.50 | 0.3-0.6 | leather,suede
+canvas market bag | 0.45 | 0.1-0.4 | cotton
+shoulder satchel | 0.50 | 0.4-0.7 | leather
+plaid weekender | 0.35 | 0.2-0.5 | wool,flannel

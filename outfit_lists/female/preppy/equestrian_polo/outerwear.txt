@@ -1,0 +1,17 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+quilted riding vest | 0.55 | 0.2-0.5 | nylon,wool
+field jacket | 0.50 | 0.2-0.5 | cotton,wax
+fleece pullover | 0.40 | 0.2-0.4 | fleece,polyester
+
+# mid-casual
+classic hacking jacket | 0.65 | 0.3-0.7 | tweed,wool
+fitted cardigan | 0.50 | 0.3-0.6 | cashmere,wool,knit
+houndstooth blazer | 0.50 | 0.3-0.7 | tweed,wool
+
+# formal
+hunt show coat | 0.55 | 0.5-0.8 | wool
+double-breasted blazer | 0.50 | 0.5-0.8 | wool,tweed
+formal riding tailcoat | 0.35 | 0.6-0.8 | wool

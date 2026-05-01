@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+fitted illusion bodice | 0.85 | 0.5-0.8 | mesh,satin
+sheer paneled corset | 0.75 | 0.5-0.8 | mesh,satin
+deep V-neck silk blouse | 0.70 | 0.5-0.8 | silk,satin
+backless halter top | 0.65 | 0.5-0.8 | satin,silk
+sheer cutout bodice | 0.65 | 0.5-0.8 | mesh
+embellished shoulder bodice | 0.60 | 0.5-0.8 | beaded,satin
+fitted long-sleeve top | 0.55 | 0.5-0.8 | mesh,silk
+plunging cowl bodice | 0.55 | 0.5-0.8 | satin,silk
+asymmetric one-shoulder top | 0.60 | 0.5-0.8 | satin,silk
+sheer high-neck blouse | 0.50 | 0.5-0.8 | mesh,chiffon
+strapless fitted bustier | 0.55 | 0.5-0.8 | satin

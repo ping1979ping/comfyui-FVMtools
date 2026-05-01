@@ -1,0 +1,20 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tailored shorts | 0.60 | 0.2-0.4 | cotton,linen
+white tennis skirt | 0.45 | 0.2-0.4 | cotton,knit
+golf skort | 0.50 | 0.2-0.4 | cotton,polyester
+seersucker shorts | 0.40 | 0.2-0.4 | cotton
+
+# mid-casual
+chinos | 0.65 | 0.3-0.6 | cotton,tweed
+A-line skirt | 0.55 | 0.3-0.7 | cotton,wool
+pleated tennis skirt | 0.50 | 0.3-0.6 | cotton,knit
+cropped trousers | 0.50 | 0.3-0.6 | cotton,linen
+
+# formal
+pleated midi skirt | 0.55 | 0.4-0.8 | wool,silk
+tailored slacks | 0.50 | 0.5-0.8 | wool,cotton
+pencil skirt | 0.45 | 0.5-0.8 | wool,silk
+wide-leg trousers | 0.40 | 0.5-0.8 | wool,linen

@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white sneakers | 0.55 | 0.1-0.3 | leather,canvas
+saddle shoes | 0.50 | 0.2-0.5 | leather
+campus boots | 0.45 | 0.2-0.4 | leather,suede
+
+# mid-casual
+penny loafers | 0.70 | 0.3-0.7 | leather
+ballet flats | 0.50 | 0.3-0.6 | leather,suede
+chelsea boots | 0.50 | 0.3-0.7 | leather,suede
+mary jane shoes | 0.45 | 0.3-0.7 | leather
+
+# formal
+oxford shoes | 0.50 | 0.5-0.8 | leather
+kitten heels | 0.45 | 0.5-0.8 | leather,suede
+court pumps | 0.45 | 0.5-0.8 | leather,suede

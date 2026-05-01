@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ruffled blouse in pastel pink | 0.7 | 0.7-0.9 | silk,georgette
+flutter-sleeve top in mint | 0.6 | 0.6-0.9 | chiffon,silk
+draped peplum blouse in lavender | 0.5 | 0.7-0.9 | crepe,silk
+romantic ruched bodice in blush | 0.5 | 0.7-1.0 | silk,charmeuse
+delicate bardot top in peach | 0.5 | 0.7-0.9 | chiffon,silk
+embroidered camisole in dusty rose | 0.4 | 0.7-1.0 | silk,georgette
+sweetheart-neck bodice in butter yellow | 0.4 | 0.7-1.0 | silk,charmeuse
+puff-sleeve blouse in sky blue | 0.5 | 0.6-0.9 | chiffon,georgette
+scalloped-edge top in pale rose | 0.4 | 0.7-1.0 | lace,silk
+keyhole-neck blouse in seafoam | 0.4 | 0.7-0.9 | silk,georgette
+sheer-overlay top in primrose | 0.3 | 0.7-1.0 | organza,silk
+off-shoulder ruffled top in lilac | 0.4 | 0.7-0.9 | chiffon,silk

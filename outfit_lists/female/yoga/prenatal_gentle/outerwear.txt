@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# soft wrap cardigan | 0.85 | 0.0-0.3 | bamboo,modal
+#color# longline open duster | 0.75 | 0.0-0.3 | bamboo,modal
+#color# kimono-style robe | 0.70 | 0.1-0.3 | bamboo,modal
+#color# slouchy oversized hoodie | 0.75 | 0.0-0.2 | jersey
+#color# bump-friendly zip jacket | 0.65 | 0.0-0.3 | jersey,bamboo
+#color# shrug cardigan | 0.65 | 0.0-0.2 | bamboo,modal
+#color# blanket wrap shawl | 0.55 | 0.0-0.2 | wool
+#color# poncho cape | 0.50 | 0.0-0.2 | wool
+#color# fleece-lined pullover | 0.55 | 0.0-0.2 | jersey
+#color# lightweight knit cardigan | 0.65 | 0.0-0.3 | bamboo,modal

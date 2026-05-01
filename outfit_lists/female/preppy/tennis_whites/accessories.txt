@@ -1,0 +1,17 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sweat wristband | 0.55 | 0.1-0.3 | cotton,terry
+piped sport belt | 0.40 | 0.1-0.4 | cotton
+white sport socks | 0.55 | 0.1-0.3 | cotton
+
+# mid-casual
+slim watch | 0.55 | 0.3-0.8 | metal,leather
+gold tennis bracelet | 0.50 | 0.3-0.7 | metal
+ribbon sash belt | 0.40 | 0.2-0.6 | silk
+
+# formal
+pearl studs | 0.55 | 0.4-0.8 | metal
+gold racquet brooch | 0.30 | 0.5-0.8 | metal
+decorative neck ribbon | 0.40 | 0.4-0.7 | silk

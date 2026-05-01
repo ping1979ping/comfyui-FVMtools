@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+unstructured creative blazer | 0.80 | 0.5-0.8 | linen,cotton
+oversized jacket | 0.55 | 0.5-0.7 | wool,cotton
+cropped studio blazer | 0.55 | 0.5-0.8 | cotton,linen
+soft cardigan | 0.55 | 0.4-0.7 | cashmere,wool
+collarless jacket | 0.45 | 0.5-0.8 | linen,cotton
+bolero jacket | 0.35 | 0.5-0.8 | wool,silk

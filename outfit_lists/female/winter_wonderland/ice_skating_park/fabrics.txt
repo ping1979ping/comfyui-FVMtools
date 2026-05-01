@@ -1,0 +1,20 @@
+# format: fabric_name | formality | family | weight
+
+# warm fabrics
+wool | 0.45 | natural | heavy
+cashmere | 0.75 | luxury | medium
+fleece | 0.15 | casual | medium
+knit | 0.25 | casual | medium
+cotton | 0.2 | natural | medium
+
+# structured fabrics
+tweed | 0.55 | natural | heavy
+suede | 0.4 | tough | medium
+corduroy | 0.3 | casual | medium
+leather | 0.45 | tough | heavy
+felt | 0.35 | natural | medium
+
+# others
+nylon | 0.15 | sporty | light
+polyester | 0.15 | sporty | light
+metal | 0.5 | accessory | light

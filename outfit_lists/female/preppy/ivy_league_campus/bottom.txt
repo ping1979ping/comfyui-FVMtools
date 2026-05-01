@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+khaki chinos | 0.65 | 0.2-0.5 | cotton
+cuffed shorts | 0.45 | 0.1-0.4 | denim
+boyfriend jeans | 0.50 | 0.1-0.4 | denim
+pleated mini skirt | 0.55 | 0.2-0.5 | wool,cotton
+
+# mid-casual
+A-line skirt | 0.55 | 0.3-0.7 | wool,cotton
+high-waisted trousers | 0.50 | 0.3-0.7 | wool,cotton
+plaid kilt | 0.55 | 0.3-0.7 | wool
+pleated midi skirt | 0.55 | 0.3-0.7 | wool,cotton
+
+# formal
+tailored slacks | 0.55 | 0.5-0.8 | wool
+pencil skirt | 0.50 | 0.5-0.8 | wool,silk
+wide-leg dress pants | 0.45 | 0.5-0.8 | wool

@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+low-top sneakers | 0.75 | 0.1-0.3 | canvas,leather
+loafers | 0.60 | 0.3-0.5 | leather,suede
+ballet flats | 0.55 | 0.2-0.4 | leather
+ankle boots | 0.65 | 0.2-0.4 | leather,suede
+slip-on espadrilles | 0.45 | 0.2-0.4 | canvas
+chunky platform shoes | 0.45 | 0.1-0.3 | leather
+mary janes | 0.50 | 0.2-0.4 | leather,suede
+oxford shoes | 0.45 | 0.3-0.5 | leather
+heeled mules | 0.40 | 0.3-0.5 | leather,suede
+slip-on shoes | 0.55 | 0.1-0.3 | canvas

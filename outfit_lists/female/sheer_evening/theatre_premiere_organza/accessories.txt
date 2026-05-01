@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chandelier earrings | 0.80 | 0.6-0.9 | metal
+ornate collar necklace | 0.65 | 0.6-0.9 | metal
+crystal cuff bracelet | 0.55 | 0.6-0.9 | metal
+heirloom cocktail ring | 0.55 | 0.6-0.9 | metal
+pearl drop earrings | 0.55 | 0.6-0.9 | metal
+brooch pin | 0.45 | 0.6-0.9 | metal
+opera-length gloves | 0.35 | 0.7-0.9 | silk,satin
+long pendant necklace | 0.50 | 0.6-0.9 | metal
+embellished evening choker | 0.45 | 0.6-0.9 | metal,velvet
+embellished waist sash | 0.30 | 0.5-0.8 | beaded

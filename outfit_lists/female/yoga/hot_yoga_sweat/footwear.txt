@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bare feet | 0.85 | 0.0-0.1 | 
+#color# grip toe socks | 0.70 | 0.0-0.1 | bamboo
+#color# studio grip socks | 0.60 | 0.0-0.1 | bamboo
+#color# slide sandals | 0.45 | 0.0-0.2 | rubber
+#color# sport flip-flops | 0.40 | 0.0-0.2 | rubber
+#color# minimalist barefoot shoes | 0.35 | 0.1-0.3 | mesh
+#color# flat thong sandals | 0.30 | 0.0-0.2 | rubber
+#color# pool slides | 0.35 | 0.0-0.2 | rubber

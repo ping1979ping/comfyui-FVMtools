@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+slim belt | 0.55 | 0.1-0.5 | leather
+soft hairband | 0.50 | 0.1-0.5 | silk
+sport visor pin | 0.30 | 0.1-0.4 | metal
+
+# mid-casual
+ribbon belt | 0.50 | 0.2-0.6 | silk,cotton
+slim watch | 0.55 | 0.3-0.8 | metal,leather
+gold bangle | 0.45 | 0.3-0.7 | metal
+charm bracelet | 0.40 | 0.3-0.6 | metal
+
+# formal
+pearl earrings | 0.55 | 0.4-0.8 | metal
+gold brooch | 0.30 | 0.5-0.8 | metal
+printed neck scarf | 0.40 | 0.4-0.8 | silk
+diamond stud earrings | 0.35 | 0.5-0.8 | metal

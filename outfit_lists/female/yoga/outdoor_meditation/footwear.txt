@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bare feet | 0.65 | 0.0-0.1 | 
+#color# flat strappy sandals | 0.65 | 0.0-0.2 | leather
+#color# huarache sandals | 0.55 | 0.0-0.2 | leather
+#color# slip-on espadrilles | 0.55 | 0.0-0.2 | jute
+#color# minimalist barefoot shoes | 0.50 | 0.1-0.3 | mesh
+#color# trail running shoes | 0.45 | 0.1-0.3 | mesh,polyester
+#color# beaded ankle anklet | 0.40 | 0.0-0.2 | wood
+#color# flat ankle boots | 0.35 | 0.1-0.3 | suede
+#color# moccasin slip-ons | 0.45 | 0.0-0.2 | suede
+#color# rope-tie sandals | 0.45 | 0.0-0.2 | jute
+#color# slim leather thong sandals | 0.40 | 0.0-0.2 | leather

@@ -1,0 +1,22 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# tactical gear
+phaser-2 sidearm holstered on thigh | 0.75 | 0.0-0.6 | gunmetal
+phaser rifle slung across back | 0.40 | 0.0-0.5 | gunmetal
+combadge clipped to chest | 0.95 | 0.0-1.0 | chrome
+rank pips on collar | 0.85 | 0.3-1.0 | chrome
+tricorder slung at hip | 0.55 | 0.0-0.7 | chrome
+duty belt with tactical loops | 0.70 | 0.0-0.7 | faux-leather
+brig key card on lanyard | 0.40 | 0.0-0.6 | chrome
+zip-cuff binders pouch on belt | 0.30 | 0.0-0.5 | gunmetal
+emergency forcefield emitter | 0.25 | 0.0-0.6 | chrome
+
+# formal
+chief security service medals | 0.30 | 0.7-1.0 | chrome
+honor sash across chest | 0.20 | 0.8-1.0 | satin
+
+# off-duty
+small stud earrings | 0.20 | 0.0-0.5 | chrome
+service signet ring | 0.20 | 0.4-1.0 | chrome
+ear-receiver tactical comm | 0.30 | 0.0-0.7 | chrome

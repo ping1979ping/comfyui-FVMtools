@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+woven straw tote | 0.70 | 0.1-0.3 | canvas,cotton
+mini crossbody bag | 0.65 | 0.2-0.4 | leather
+beaded clutch | 0.50 | 0.2-0.4 | plastic
+raffia shoulder bag | 0.55 | 0.1-0.3 | canvas
+small bucket bag | 0.50 | 0.2-0.4 | leather,suede
+casual day tote | 0.55 | 0.1-0.3 | canvas
+fringed pouch | 0.45 | 0.1-0.3 | suede
+saddle bag | 0.45 | 0.2-0.4 | leather

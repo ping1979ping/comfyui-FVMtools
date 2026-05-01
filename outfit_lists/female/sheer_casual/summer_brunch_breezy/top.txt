@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowy off-shoulder blouse with visible bralette | 0.80 | 0.1-0.4 | chiffon
+breezy cami top with peeking bra straps | 0.75 | 0.1-0.3 | silk,polyester
+ruffled crop blouse over visible bra | 0.65 | 0.1-0.3 | chiffon,cotton
+sheer balloon-sleeve top | 0.70 | 0.2-0.4 | chiffon
+tied-front cropped shirt with visible bra | 0.60 | 0.1-0.3 | cotton
+spaghetti-strap floral top | 0.65 | 0.1-0.3 | chiffon,polyester
+delicate eyelet blouse with bralette underneath | 0.55 | 0.2-0.4 | cotton,lace
+cropped sweetheart-neck tee | 0.55 | 0.1-0.3 | jersey,cotton
+gauzy peasant blouse | 0.60 | 0.2-0.4 | chiffon,cotton
+filmy halter top with peeking bra | 0.55 | 0.1-0.3 | polyester
+sheer wrap blouse | 0.55 | 0.2-0.4 | chiffon
+airy bardot top | 0.55 | 0.2-0.4 | chiffon,polyester

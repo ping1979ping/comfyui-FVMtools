@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-rise straight jeans | 0.85 | 0.2-0.4 | denim
+cargo pants | 0.65 | 0.1-0.3 | cotton,canvas
+relaxed wide-leg jeans | 0.65 | 0.2-0.4 | denim
+midi pencil skirt | 0.50 | 0.3-0.5 | polyester
+slim cropped trousers | 0.55 | 0.2-0.4 | polyester,cotton
+high-waist cutoffs | 0.60 | 0.1-0.3 | denim
+flared midi skirt | 0.50 | 0.2-0.4 | polyester
+distressed boyfriend jeans | 0.55 | 0.1-0.3 | denim
+faux-vinyl mini skirt | 0.45 | 0.1-0.3 | polyester
+A-line mini skirt | 0.50 | 0.1-0.3 | cotton
+joggers | 0.55 | 0.1-0.3 | jersey
+loose paperbag pants | 0.45 | 0.2-0.4 | cotton

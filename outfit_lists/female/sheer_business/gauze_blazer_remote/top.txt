@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+soft remote-work blouse | 0.80 | 0.5-0.8 | cotton,silk
+sheer-overlay home blouse | 0.75 | 0.5-0.8 | chiffon,silk
+relaxed boatneck top | 0.70 | 0.5-0.8 | jersey,cotton
+fitted V-neck shirt | 0.65 | 0.5-0.8 | silk,jersey
+soft button-down shirt | 0.65 | 0.5-0.8 | cotton,silk
+draped wrap blouse | 0.60 | 0.5-0.8 | silk,jersey
+sheer-sleeve home top | 0.55 | 0.5-0.8 | chiffon,silk
+fitted shell top | 0.55 | 0.5-0.8 | silk,jersey
+camisole shell with overlay | 0.50 | 0.5-0.8 | silk,chiffon
+crew-neck soft blouse | 0.55 | 0.5-0.8 | cotton,silk
+high-neck pleated blouse | 0.50 | 0.5-0.8 | silk,chiffon

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped puffer | 0.65 | 0.1-0.3 | nylon,polyester
+swing coat | 0.55 | 0.4-0.7 | wool,tweed
+faux-shearling jacket | 0.55 | 0.3-0.6 | suede
+oversized teddy coat | 0.55 | 0.3-0.6 | polyester
+quilted shimmer jacket | 0.50 | 0.2-0.5 | nylon,polyester
+double-breasted overcoat | 0.50 | 0.4-0.7 | wool,tweed
+princess-cut coat | 0.40 | 0.4-0.7 | wool,tweed
+hooded puffer | 0.55 | 0.1-0.3 | nylon,polyester
+belted wrap coat | 0.45 | 0.4-0.7 | wool,tweed
+shimmery short jacket | 0.40 | 0.3-0.6 | polyester

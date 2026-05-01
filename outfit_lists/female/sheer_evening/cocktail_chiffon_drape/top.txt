@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+draped wrap bodice | 0.85 | 0.5-0.8 | chiffon,silk
+flowing one-shoulder top | 0.75 | 0.5-0.8 | chiffon,silk
+ruffled cocktail blouse | 0.65 | 0.5-0.8 | silk,satin
+asymmetric draped bodice | 0.70 | 0.5-0.8 | chiffon,satin
+gathered halter top | 0.60 | 0.4-0.7 | chiffon,silk
+sheer flutter-sleeve blouse | 0.65 | 0.5-0.7 | chiffon,mesh
+plunging cowl-neck top | 0.55 | 0.5-0.8 | satin,silk
+empire-waist embellished top | 0.50 | 0.5-0.7 | beaded,silk
+twisted-bust evening blouse | 0.55 | 0.5-0.8 | satin,silk
+embellished cocktail bodice | 0.50 | 0.5-0.8 | beaded,satin
+flowy peplum top | 0.45 | 0.4-0.7 | silk,satin

@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+engineer tool roll on hip | 0.50 | 0.0-0.5 | suede,canvas
+spare-parts satchel slung across body | 0.40 | 0.0-0.5 | canvas,denim
+isolinear chip pouch on belt | 0.45 | 0.0-0.5 | suede,canvas
+warp core diagnostic kit case | 0.30 | 0.0-0.4 | canvas
+field tricorder bag | 0.35 | 0.0-0.5 | canvas,suede
+chief engineer dispatch portfolio | 0.25 | 0.5-0.9 | satin,suede
+crew duffel for shore leave | 0.30 | 0.0-0.3 | denim,canvas

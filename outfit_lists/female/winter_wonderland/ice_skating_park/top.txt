@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+fitted turtleneck | 0.75 | 0.3-0.6 | wool,cashmere,knit
+ribbed pullover | 0.70 | 0.2-0.5 | knit,wool
+cropped chunky sweater | 0.55 | 0.2-0.5 | wool,knit
+soft mock neck top | 0.55 | 0.3-0.6 | knit,cotton
+fleece-lined base layer | 0.55 | 0.1-0.3 | fleece,cotton
+fuzzy cardigan | 0.50 | 0.2-0.5 | knit,polyester
+ballet-neck sweater | 0.45 | 0.3-0.6 | knit,cashmere
+long-sleeve thermal top | 0.50 | 0.1-0.3 | cotton,fleece
+short shrunken pullover | 0.45 | 0.2-0.5 | knit
+twisted-front knit top | 0.40 | 0.3-0.6 | knit

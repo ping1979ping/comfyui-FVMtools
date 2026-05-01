@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+oatmeal heather | 0.40 | top,bottom,outerwear | 0.0-0.3
+soft tonal stripes | 0.30 | top,bottom | 0.0-0.3
+chunky cable-knit texture | 0.30 | outerwear | 0.0-0.3
+neutral marble effect | 0.25 | top,bottom | 0.0-0.2
+subtle floral motif | 0.20 | top,bottom | 0.0-0.2
+washed pastel ombre | 0.30 | top,bottom | 0.0-0.2
+mandala motif | 0.20 | top,bottom | 0.0-0.2
+woven texture | 0.30 | outerwear,bag | 0.0-0.3
+muted color-block | 0.25 | top,bottom,outerwear | 0.0-0.3
+soft tie-dye | 0.25 | top,bottom | 0.0-0.2

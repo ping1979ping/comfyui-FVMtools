@@ -1,0 +1,17 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+cropped cardigan | 0.55 | 0.2-0.5 | cashmere,knit
+lightweight shawl | 0.45 | 0.2-0.5 | silk,linen
+embroidered bolero | 0.40 | 0.2-0.5 | cotton,linen
+
+# mid-casual
+fitted cardigan | 0.55 | 0.3-0.6 | cashmere,wool,knit
+cropped summer blazer | 0.55 | 0.3-0.7 | linen
+floral kimono jacket | 0.45 | 0.3-0.6 | silk
+
+# formal
+tailored pastel blazer | 0.55 | 0.4-0.8 | linen,wool
+flowing evening shawl | 0.40 | 0.5-0.8 | silk
+fitted overcoat | 0.35 | 0.5-0.8 | wool,cashmere

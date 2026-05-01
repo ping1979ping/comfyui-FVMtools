@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+minimalist wide-leg trousers | 0.75 | 0.3-0.5 | polyester,cotton
+straight-cut high-waist jeans | 0.65 | 0.2-0.4 | denim
+midi pencil skirt | 0.55 | 0.3-0.5 | polyester
+black tapered pants | 0.65 | 0.2-0.5 | polyester,cotton
+relaxed dark-wash jeans | 0.55 | 0.2-0.4 | denim
+flared midi skirt | 0.50 | 0.3-0.5 | polyester
+cropped trousers | 0.55 | 0.3-0.5 | polyester
+A-line midi skirt | 0.50 | 0.2-0.4 | cotton
+loose paperbag pants | 0.45 | 0.2-0.4 | cotton
+sleek slim trousers | 0.55 | 0.3-0.5 | polyester
+side-slit midi skirt | 0.45 | 0.3-0.5 | polyester
+high-rise straight jeans | 0.55 | 0.2-0.4 | denim

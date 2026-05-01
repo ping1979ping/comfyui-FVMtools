@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+vintage brooch | 0.50 | 0.2-0.4 | metal
+delicate locket necklace | 0.55 | 0.2-0.4 | metal
+clear-frame glasses | 0.55 | 0.2-0.4 | plastic
+slim waist belt | 0.50 | 0.2-0.4 | leather
+soft satin neck ribbon | 0.40 | 0.2-0.4 | silk
+pearl drop earrings | 0.55 | 0.2-0.4 | metal
+stacked thin rings | 0.50 | 0.1-0.4 | metal
+small wristwatch | 0.50 | 0.2-0.4 | metal
+embroidered handkerchief | 0.30 | 0.2-0.4 | cotton
+floral hair clip | 0.40 | 0.2-0.4 | metal

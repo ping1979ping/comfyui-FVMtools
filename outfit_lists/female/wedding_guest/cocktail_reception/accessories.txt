@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+statement chandelier earrings | 0.6 | 0.7-1.0 | silk
+sleek tennis bracelet | 0.5 | 0.7-1.0 | silk
+pearl drop earrings | 0.5 | 0.7-1.0 | silk
+gold layered necklace | 0.4 | 0.7-0.9 | silk
+crystal cocktail ring | 0.4 | 0.7-1.0 | silk
+sleek choker in metallic | 0.4 | 0.7-0.9 | silk
+diamond stud earrings | 0.5 | 0.8-1.0 | silk
+art-deco bracelet | 0.4 | 0.8-1.0 | silk
+chic pendant necklace | 0.4 | 0.7-0.9 | silk
+embellished hair clip | 0.3 | 0.7-0.9 | silk

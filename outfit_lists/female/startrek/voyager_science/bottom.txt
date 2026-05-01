@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+duty trousers in black | 0.90 | 0.2-0.9 | spandex,biothread
+fitted science pants with side seam | 0.75 | 0.3-0.9 | microfiber,spandex
+high-waisted lab trousers | 0.60 | 0.3-0.8 | biothread,microfiber
+form-fitting leggings under tunic | 0.55 | 0.0-0.4 | spandex,lycra
+dress trousers with teal side stripe | 0.45 | 0.7-1.0 | satin,microfiber
+field survey pants with map pockets | 0.45 | 0.2-0.6 | microfiber,linen
+chief science slacks with crisp pleat | 0.40 | 0.5-0.9 | biothread,silk-blend
+holodeck casual chinos | 0.30 | 0.0-0.3 | cotton-blend,linen
+astrometrics duty leggings | 0.45 | 0.0-0.5 | spandex,biothread

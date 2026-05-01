@@ -1,0 +1,14 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+visor | 0.35 | 0.1-0.3 | cotton
+sun cap | 0.30 | 0.1-0.3 | cotton
+
+# mid-casual
+tied hairband | 0.55 | 0.2-0.6 | silk
+ribbon hairband | 0.50 | 0.2-0.6 | silk,cotton
+
+# formal
+woven beret | 0.30 | 0.4-0.7 | wool,cashmere
+wide-brim sun hat | 0.35 | 0.3-0.7 | straw

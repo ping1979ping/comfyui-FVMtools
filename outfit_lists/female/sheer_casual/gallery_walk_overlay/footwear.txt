@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+minimalist white sneakers | 0.70 | 0.1-0.4 | leather,canvas
+pointed-toe flats | 0.60 | 0.3-0.5 | leather
+ankle boots | 0.65 | 0.2-0.4 | leather,suede
+heeled mules | 0.55 | 0.3-0.5 | leather,suede
+chunky platform shoes | 0.45 | 0.1-0.3 | leather
+loafers | 0.55 | 0.3-0.5 | leather,suede
+strap heels | 0.50 | 0.3-0.5 | leather
+slip-on shoes | 0.50 | 0.1-0.3 | canvas
+square-toe boots | 0.45 | 0.2-0.4 | leather
+ballet flats | 0.50 | 0.2-0.4 | leather

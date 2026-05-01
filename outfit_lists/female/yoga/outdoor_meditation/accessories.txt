@@ -1,0 +1,22 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# hair
+#color# braided headband | 0.70 | 0.0-0.2 | leather
+#color# flower hair clip | 0.60 | 0.0-0.2 | metal
+#color# bandana | 0.55 | 0.0-0.2 | silk
+#color# wooden hair stick | 0.40 | 0.0-0.2 | wood
+
+# bohemian jewelry
+#color# layered chain necklaces | 0.65 | 0.0-0.2 | metal
+#color# turquoise pendant | 0.55 | 0.0-0.2 | metal
+#color# beaded bracelet stack | 0.70 | 0.0-0.2 | wood
+#color# hoop earrings | 0.55 | 0.0-0.3 | metal
+#color# anklet with bells | 0.45 | 0.0-0.2 | metal
+#color# mala bead long necklace | 0.65 | 0.0-0.2 | wood
+#color# crystal pendant | 0.55 | 0.0-0.2 | metal
+
+# functional outdoor
+#color# wide-brim sun hat strap | 0.30 | 0.0-0.2 | leather
+#color# trekking water bottle | 0.55 | 0.0-0.2 | metal
+#color# essential oil rollerball | 0.40 | 0.0-0.2 | glass

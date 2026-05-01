@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+tan ankle boots | 0.6 | 0.6-0.8 | linen,silk
+brown low-heel boots | 0.5 | 0.6-0.8 | linen,silk
+nude block heels | 0.6 | 0.7-0.9 | silk,charmeuse
+strappy sandals in cognac | 0.5 | 0.7-0.9 | silk,charmeuse
+embellished flats in ivory | 0.4 | 0.6-0.9 | silk,charmeuse
+woven espadrilles in tan | 0.4 | 0.6-0.8 | linen,cotton voile
+suede block heels in nude | 0.4 | 0.7-0.9 | silk,charmeuse
+ankle-strap wedges in caramel | 0.4 | 0.6-0.8 | silk,charmeuse
+crochet-trim flats in cream | 0.3 | 0.6-0.8 | cotton voile,linen
+boho fringe sandals in tan | 0.4 | 0.6-0.8 | linen,silk

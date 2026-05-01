@@ -1,0 +1,22 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# hair tight
+#color# tight bun hair tie | 0.75 | 0.0-0.1 | spandex
+#color# slick-back hair gel | 0.55 | 0.0-0.1 | plastic
+#color# wide stretch headband | 0.65 | 0.0-0.1 | spandex,nylon
+#color# braided hair ribbon | 0.55 | 0.0-0.2 | satin
+#color# hair pin set | 0.50 | 0.0-0.2 | metal
+
+# performance jewelry minimal
+#color# tiny stud earrings | 0.55 | 0.0-0.3 | metal
+#color# simple pendant necklace | 0.40 | 0.0-0.2 | metal
+#color# silicone band | 0.35 | 0.0-0.2 | rubber
+
+# functional
+#color# rosin grip bag | 0.55 | 0.0-0.2 | canvas
+#color# leg warmers | 0.65 | 0.0-0.2 | wool
+#color# wrist tape wrap | 0.55 | 0.0-0.1 | cotton
+#color# crash mat | 0.40 | 0.0-0.2 | foam
+#color# performance water bottle | 0.65 | 0.0-0.2 | metal
+#color# rhinestone choker | 0.35 | 0.0-0.2 | metal

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+boho paisley print | 0.35 | top,bottom | 0.0-0.3
+mandala print | 0.40 | top,bottom | 0.0-0.2
+tribal pattern | 0.30 | top,bottom | 0.0-0.3
+floral embroidery | 0.30 | top,bottom,outerwear | 0.0-0.3
+earth-tone tie-dye | 0.30 | top,bottom | 0.0-0.2
+sunburst motif | 0.25 | top,bottom | 0.0-0.2
+geometric aztec pattern | 0.25 | top,bottom | 0.0-0.3
+washed earth tones | 0.40 | top,bottom,outerwear | 0.0-0.3
+floral block-print | 0.25 | top,bottom | 0.0-0.2
+fringe trim detail | 0.25 | top,bottom,outerwear | 0.0-0.3

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized teddy coat | 0.65 | 0.2-0.5 | polyester
+cozy long cardigan | 0.65 | 0.1-0.3 | knit,wool
+hooded fleece pullover | 0.60 | 0.1-0.3 | fleece
+plaid wrap coat | 0.50 | 0.4-0.7 | wool,flannel
+puffy vest | 0.55 | 0.1-0.3 | nylon,polyester
+sherpa-lined chore jacket | 0.50 | 0.1-0.3 | cotton,polyester
+belted wool overcoat | 0.45 | 0.4-0.7 | wool,tweed
+duster cardigan | 0.45 | 0.2-0.5 | knit,wool
+quilted barn jacket | 0.45 | 0.2-0.5 | polyester,nylon
+shawl-collar wrap | 0.45 | 0.2-0.5 | wool,knit

@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floor-length column gown skirt | 0.80 | 0.6-0.9 | satin,silk
+mermaid silhouette skirt | 0.65 | 0.7-0.9 | satin,beaded
+high-slit floor-length skirt | 0.70 | 0.6-0.9 | silk,satin
+embellished trumpet skirt | 0.55 | 0.7-0.9 | beaded,satin
+A-line evening skirt | 0.60 | 0.6-0.9 | silk,satin
+tailored evening trousers | 0.45 | 0.6-0.8 | satin,velvet
+overlay tea-length skirt | 0.50 | 0.5-0.8 | lace,tulle
+fitted pencil evening skirt | 0.55 | 0.5-0.8 | satin,velvet
+sheath gown skirt with train | 0.50 | 0.7-0.9 | silk,satin
+draped sarong evening skirt | 0.40 | 0.6-0.8 | silk,chiffon

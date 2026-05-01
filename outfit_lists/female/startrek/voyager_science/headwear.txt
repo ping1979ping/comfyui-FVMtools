@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+formal officer cap with chrome insignia | 0.20 | 0.7-1.0 | satin,silk-blend
+field survey hat with neck flap | 0.20 | 0.0-0.5 | linen,cotton-blend
+hairband with delta emblem clip | 0.15 | 0.0-0.6 | chrome

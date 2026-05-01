@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+assimilated bodysuit top with cybernetic implants | 0.90 | 0.0-0.8 | biomesh,polylatex
+borg drone tunic with chest port and tubing | 0.85 | 0.0-0.7 | neoprene,nano-weave
+form-fitting drone top with shoulder armor plates | 0.80 | 0.0-0.7 | exo-armor,biomesh
+hive-collective second-skin top with neural ports | 0.75 | 0.0-0.6 | nano-weave,polylatex
+liberated drone duty top with partial implants | 0.65 | 0.2-0.7 | biomesh,neoprene
+chest-tube fed assimilation top | 0.60 | 0.0-0.5 | polylatex,servo-silicone
+queen-grade drone top with lattice trim | 0.55 | 0.3-0.8 | nano-weave,exo-armor
+former-drone civilian top with hidden ports | 0.50 | 0.0-0.5 | biomesh,nano-weave
+graphite chest plate over base layer | 0.65 | 0.0-0.6 | matte-graphite,exo-armor
+conduit overlay top with cable trim | 0.55 | 0.0-0.6 | copper-conduit,biomesh
+neural-implant turtleneck under armor | 0.60 | 0.0-0.7 | nano-weave,polylatex
+sleeveless drone underlay with shoulder ports | 0.45 | 0.0-0.5 | biomesh,neoprene
+unimatrix elite top with chrome-plate accents | 0.50 | 0.3-0.7 | chrome-plate,nano-weave

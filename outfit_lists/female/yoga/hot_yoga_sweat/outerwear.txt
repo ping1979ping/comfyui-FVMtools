@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# light zip-up jacket | 0.55 | 0.0-0.2 | nylon,polyester
+#color# cropped wind shell | 0.50 | 0.0-0.2 | nylon,polyester
+#color# track jacket | 0.50 | 0.0-0.2 | nylon,polyester
+#color# breathable mesh hoodie | 0.45 | 0.0-0.2 | mesh,polyester
+#color# oversized post-class shirt | 0.55 | 0.0-0.2 | bamboo,jersey
+#color# slouchy hoodie | 0.50 | 0.0-0.2 | jersey
+#color# kimono cover-up | 0.40 | 0.0-0.2 | bamboo
+#color# cropped pullover | 0.45 | 0.0-0.2 | jersey
+#color# waterproof shell | 0.35 | 0.1-0.3 | polyester
+#color# lightweight bomber | 0.40 | 0.1-0.3 | nylon,polyester

@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky scarf | 0.85 | 0.1-0.5 | wool,knit,cashmere
+ski goggles | 0.55 | 0.1-0.3 | polyester
+patterned mittens | 0.65 | 0.1-0.4 | wool,knit
+thermal gloves | 0.60 | 0.1-0.3 | leather,polyester
+nordic knit socks | 0.55 | 0.1-0.3 | wool,knit
+oversized infinity scarf | 0.50 | 0.2-0.5 | knit,wool,cashmere
+chunky neck warmer | 0.45 | 0.1-0.4 | knit,wool
+silver pendant | 0.30 | 0.3-0.6 | metal
+ribbed leg warmers | 0.30 | 0.1-0.3 | knit,wool
+shearling-trimmed gloves | 0.40 | 0.2-0.5 | leather,suede

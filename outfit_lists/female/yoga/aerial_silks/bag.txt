@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# dance duffel | 0.80 | 0.0-0.2 | nylon
+#color# silks travel bag | 0.70 | 0.0-0.2 | nylon
+#color# costume garment bag | 0.55 | 0.0-0.2 | polyester
+#color# studio backpack | 0.65 | 0.0-0.2 | nylon
+#color# rolled mat sling | 0.50 | 0.0-0.2 | canvas,nylon
+#color# small crossbody pouch | 0.50 | 0.0-0.2 | nylon
+#color# rosin pocket pouch | 0.45 | 0.0-0.2 | canvas
+#color# slim arm pouch | 0.40 | 0.0-0.1 | spandex,nylon

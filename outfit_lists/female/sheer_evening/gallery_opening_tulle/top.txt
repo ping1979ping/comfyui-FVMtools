@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ethereal layered bodice | 0.85 | 0.5-0.8 | tulle,mesh
+gossamer illusion top | 0.75 | 0.5-0.8 | mesh,silk
+appliqued floral bodice | 0.70 | 0.6-0.8 | lace,silk
+tiered ruffle blouse | 0.60 | 0.5-0.8 | silk,chiffon
+sheer puff-sleeve top | 0.65 | 0.5-0.8 | mesh,organza
+fitted illusion corset | 0.65 | 0.6-0.8 | mesh,satin
+embroidered art-piece bodice | 0.55 | 0.6-0.9 | beaded,silk
+high-collar mesh blouse | 0.60 | 0.5-0.8 | mesh,silk
+sweetheart layered bustier | 0.55 | 0.5-0.8 | satin,mesh
+dramatic puff-shoulder top | 0.50 | 0.5-0.8 | silk,satin
+modern asymmetric blouse | 0.55 | 0.5-0.8 | silk,satin

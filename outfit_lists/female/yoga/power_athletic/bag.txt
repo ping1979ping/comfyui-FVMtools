@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# gym duffel | 0.85 | 0.0-0.2 | nylon
+#color# performance backpack | 0.75 | 0.0-0.2 | nylon
+#color# yoga mat sling | 0.65 | 0.0-0.2 | nylon
+#color# wet-dry pouch | 0.55 | 0.0-0.2 | nylon
+#color# crossbody phone pouch | 0.50 | 0.0-0.2 | nylon
+#color# slim arm pocket | 0.50 | 0.0-0.1 | spandex,nylon
+#color# hip belt pouch | 0.50 | 0.0-0.1 | nylon
+#color# water bottle sling | 0.55 | 0.0-0.2 | nylon

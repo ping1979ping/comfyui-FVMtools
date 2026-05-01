@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pom-pom beanie | 0.70 | 0.1-0.3 | wool,knit
+chunky knit beanie | 0.65 | 0.1-0.3 | wool,knit
+plaid newsboy cap | 0.40 | 0.2-0.5 | wool,tweed
+shearling-trimmed trapper | 0.40 | 0.1-0.3 | suede
+felted beret | 0.45 | 0.3-0.6 | felt,wool

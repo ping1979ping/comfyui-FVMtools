@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ceremonial circlet across forehead | 0.30 | 0.7-1.0 | platinum
+ambassador veil with platinum thread | 0.20 | 0.6-1.0 | chiffon,silk-blend
+formal headpiece with delta crest | 0.20 | 0.7-1.0 | platinum,brocade

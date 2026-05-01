@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured top-handle bag | 0.80 | 0.5-0.8 | leather,satin
+slim envelope clutch | 0.70 | 0.5-0.8 | leather,satin
+chain-strap mini bag | 0.60 | 0.5-0.8 | leather,satin
+embellished evening pouch | 0.50 | 0.5-0.8 | beaded
+sleek box clutch | 0.55 | 0.5-0.8 | leather,satin
+luxe pochette | 0.50 | 0.5-0.8 | velvet
+small foldover purse | 0.45 | 0.5-0.7 | leather
+metallic clutch | 0.45 | 0.5-0.8 | leather

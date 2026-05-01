@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured book tote | 0.70 | 0.2-0.4 | leather,canvas
+small satchel | 0.60 | 0.2-0.4 | leather
+slim crossbody | 0.55 | 0.2-0.4 | leather
+soft hobo bag | 0.50 | 0.2-0.4 | suede
+mini backpack | 0.50 | 0.1-0.3 | nylon
+quilted shoulder bag | 0.45 | 0.3-0.5 | leather
+embroidered pouch | 0.40 | 0.2-0.4 | cotton
+top-handle bag | 0.45 | 0.3-0.5 | leather

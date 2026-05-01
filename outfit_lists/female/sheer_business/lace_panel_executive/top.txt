@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+paneled executive blouse | 0.85 | 0.7-1.0 | lace,silk
+inset-trim shirt | 0.75 | 0.7-1.0 | lace,silk
+fitted lace-trim blouse | 0.80 | 0.7-1.0 | lace,silk
+high-neck panel top | 0.70 | 0.7-1.0 | lace,silk
+sheer-yoke executive shirt | 0.65 | 0.7-1.0 | lace,chiffon
+button-down with sheer trim | 0.65 | 0.6-0.9 | lace,cotton
+crew-neck silk top | 0.60 | 0.6-0.9 | silk,jersey
+modest deep V-neck blouse | 0.55 | 0.6-0.8 | silk,chiffon
+camisole shell with sheer overlay | 0.50 | 0.6-0.9 | lace,silk
+boatneck blouse | 0.55 | 0.6-0.9 | silk,chiffon
+fitted sleeveless top | 0.50 | 0.6-0.8 | silk,jersey

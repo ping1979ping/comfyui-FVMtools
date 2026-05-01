@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# minimal sports bra | 1.00 | 0.0-0.1 | spandex,nylon
+#color# strappy bra top | 0.85 | 0.0-0.1 | spandex,nylon
+#color# bandeau bra top | 0.70 | 0.0-0.1 | spandex,nylon
+#color# cropped tank | 0.80 | 0.0-0.1 | spandex,nylon
+#color# halter bra top | 0.75 | 0.0-0.1 | spandex,nylon
+#color# cutout sports bra | 0.65 | 0.0-0.1 | spandex,nylon
+#color# triangle bralette | 0.55 | 0.0-0.1 | spandex,nylon
+#color# longline bra top | 0.65 | 0.0-0.1 | spandex,nylon
+#color# strappy back tank | 0.50 | 0.0-0.1 | spandex,nylon
+#color# scoopneck crop tank | 0.55 | 0.0-0.1 | spandex,nylon
+#color# crossback bra top | 0.50 | 0.0-0.1 | spandex,nylon
+#color# tube top | 0.40 | 0.0-0.1 | spandex,nylon

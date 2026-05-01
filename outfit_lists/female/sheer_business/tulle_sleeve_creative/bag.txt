@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured creative handbag | 0.75 | 0.5-0.8 | leather,suede
+slouchy hobo bag | 0.55 | 0.5-0.8 | leather,suede
+bucket bag | 0.50 | 0.5-0.8 | leather,suede
+mini grab bag | 0.50 | 0.5-0.8 | leather,suede
+tote bag | 0.55 | 0.5-0.8 | leather,cotton
+crossbody satchel | 0.50 | 0.5-0.8 | leather
+slim clutch | 0.45 | 0.6-0.9 | leather,suede

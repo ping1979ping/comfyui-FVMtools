@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured ball gown skirt | 0.80 | 0.6-0.9 | satin,silk
+fitted opera skirt | 0.70 | 0.6-0.9 | velvet,satin
+sweeping floor-length skirt | 0.65 | 0.6-0.9 | satin,silk
+draped column gown skirt | 0.60 | 0.6-0.9 | silk,satin
+high-slit evening skirt | 0.55 | 0.5-0.8 | satin,silk
+A-line tea-length skirt | 0.50 | 0.5-0.8 | silk,satin
+fitted opera trousers | 0.45 | 0.5-0.8 | satin,velvet
+ruffled tiered skirt | 0.50 | 0.5-0.8 | silk,satin
+trumpet evening skirt | 0.55 | 0.6-0.9 | satin
+fishtail floor-length skirt | 0.45 | 0.6-0.9 | satin,beaded

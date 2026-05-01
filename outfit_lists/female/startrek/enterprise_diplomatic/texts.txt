@@ -1,0 +1,6 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"UFP" | 0.20 | accessories | elegant serif font
+"AMBASSADOR" | 0.25 | top | elegant block font
+"FEDERATION COUNCIL" | 0.15 | accessories | serif font
+"PEACE THROUGH UNDERSTANDING" | 0.10 | top | italic serif font

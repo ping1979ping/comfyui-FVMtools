@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical vest with phaser holster harness | 0.65 | 0.0-0.7 | kevlar-blend,ripstop
+patrol jacket with security shoulder patch | 0.60 | 0.3-0.8 | microfiber,ripstop
+breakaway armor plate carrier | 0.45 | 0.0-0.5 | kevlar-blend,ballistic-weave
+field operations parka with hood | 0.40 | 0.0-0.5 | ripstop,neoprene
+formal duty jacket with rank pip cluster | 0.45 | 0.6-1.0 | microfiber,satin
+chief security overcoat with gunmetal piping | 0.35 | 0.7-1.0 | satin,microfiber
+combat exo-jacket with reinforced elbows | 0.40 | 0.0-0.5 | ballistic-weave,ripstop
+runabout flight jacket with patches | 0.35 | 0.2-0.7 | microfiber,neoprene

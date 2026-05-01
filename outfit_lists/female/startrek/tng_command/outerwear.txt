@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+command jacket with rank insignia on shoulder | 0.60 | 0.3-0.8 | spandex,microfiber
+red duty vest with utility pockets | 0.40 | 0.2-0.6 | neoprene,microfiber
+admiral overcoat with gold piping on cuffs | 0.40 | 0.7-1.0 | satin,wool-blend
+field jacket with command division stripe | 0.50 | 0.2-0.6 | neoprene,microfiber
+captain ready-room blazer in burgundy | 0.45 | 0.5-0.9 | wool-blend,gabardine
+formal cape with red lining | 0.30 | 0.8-1.0 | satin,wool-blend
+ten-forward cardigan in muted red | 0.30 | 0.0-0.3 | cotton-blend,polyamide
+flag officer dress jacket with shoulder boards | 0.40 | 0.7-1.0 | satin,wool-blend
+duty wrap with combadge clasp | 0.35 | 0.3-0.7 | microfiber,polyamide

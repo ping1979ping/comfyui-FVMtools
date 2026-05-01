@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+envelope clutch | 0.80 | 0.5-0.8 | satin
+embellished cocktail purse | 0.70 | 0.5-0.8 | beaded
+crystal box clutch | 0.55 | 0.5-0.8 | metal,beaded
+chain-strap mini bag | 0.55 | 0.5-0.7 | leather,satin
+pleated wristlet | 0.50 | 0.5-0.7 | satin
+evening pouch bag | 0.45 | 0.5-0.8 | velvet
+metallic foldover clutch | 0.45 | 0.5-0.8 | leather
+sequined wristlet | 0.40 | 0.5-0.7 | sequin

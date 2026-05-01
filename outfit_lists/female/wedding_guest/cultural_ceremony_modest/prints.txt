@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ornate paisley pattern | 0.5 | top,bottom | 0.7-1.0
+intricate zardozi embroidery | 0.5 | top | 0.8-1.0
+gold-thread embroidered motif | 0.5 | top,bottom | 0.8-1.0
+mirror-work detail | 0.3 | top,bag | 0.7-1.0
+floral mehendi-style motif | 0.4 | top,bottom | 0.7-1.0
+intricate beadwork pattern | 0.4 | top | 0.8-1.0
+ornate damask weave | 0.3 | top,bottom | 0.7-1.0
+embroidered medallion print | 0.3 | top | 0.7-1.0
+opulent jewel-tone tonal | 0.3 | top,bottom | 0.7-1.0
+intricate floral motif | 0.4 | top,bottom | 0.7-1.0

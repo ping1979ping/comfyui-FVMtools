@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plush evening pants | 0.55 | 0.4-0.7 | velvet
+high-waist trousers | 0.65 | 0.4-0.7 | wool,tweed
+plaid pleated skirt | 0.50 | 0.3-0.6 | wool,tweed
+fleece-lined leggings | 0.55 | 0.1-0.3 | fleece
+midi knit skirt | 0.45 | 0.3-0.6 | knit,wool
+checked midi skirt | 0.40 | 0.3-0.6 | wool,tweed
+shimmery party skirt | 0.40 | 0.4-0.7 | polyester
+cigarette pants | 0.45 | 0.4-0.7 | wool,tweed
+ribbed leggings | 0.50 | 0.1-0.3 | cotton,fleece
+sequined party skirt | 0.35 | 0.4-0.7 | polyester

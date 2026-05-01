@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+artful hair clip | 0.30 | 0.5-0.8 | metal
+sculpted headband | 0.20 | 0.5-0.8 | metal
+decorative hair pin | 0.25 | 0.5-0.8 | metal

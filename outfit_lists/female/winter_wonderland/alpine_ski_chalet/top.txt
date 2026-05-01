@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky pullover | 0.70 | 0.2-0.5 | wool,knit
+nordic patterned sweater | 0.65 | 0.2-0.5 | wool,knit
+ribbed turtleneck | 0.60 | 0.3-0.6 | wool,cashmere,knit
+fleece-lined base layer | 0.55 | 0.1-0.3 | fleece,cotton
+oversized chalet sweater | 0.55 | 0.2-0.5 | wool,knit
+zip-neck thermal top | 0.50 | 0.1-0.3 | fleece,polyester
+cropped cardigan | 0.45 | 0.3-0.6 | knit,wool
+mock neck pullover | 0.45 | 0.3-0.6 | wool,knit,cashmere
+quarter-zip fleece pullover | 0.40 | 0.1-0.3 | fleece
+chunky cowl neck top | 0.40 | 0.2-0.5 | knit,wool
+shawl collar cardigan | 0.35 | 0.3-0.6 | wool,knit

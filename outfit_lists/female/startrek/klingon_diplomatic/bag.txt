@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+warrior diplomat satchel slung over shoulder | 0.45 | 0.2-0.7 | bat-leather,warrior-mesh
+high-house dispatch case in bronze | 0.40 | 0.5-1.0 | bat-leather,bronze-alloy
+ambassador document folio under arm | 0.45 | 0.5-1.0 | velvet-blend,silk-weave
+ceremonial gift chest on hip | 0.30 | 0.6-1.0 | brocade,bronze-alloy
+warrior weapon-belt pouch | 0.50 | 0.0-0.6 | bat-leather,bronze-alloy
+emissary courier bag with house crest | 0.35 | 0.4-0.9 | bat-leather,brocade
+council chamber portfolio | 0.30 | 0.6-1.0 | velvet-blend,bronze-alloy
+studded tactical pouch | 0.30 | 0.0-0.5 | spiked-hide,bat-leather

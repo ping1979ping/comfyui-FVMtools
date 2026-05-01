@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sheer wrap in blush | 0.5 | 0.7-0.9 | chiffon,georgette
+delicate bolero in pale pink | 0.4 | 0.7-1.0 | lace,silk
+floral cardigan in mint | 0.4 | 0.6-0.8 | crepe,silk
+romantic cape in lavender | 0.3 | 0.7-1.0 | chiffon,silk
+embroidered shrug in cream | 0.4 | 0.7-0.9 | silk,georgette
+pastel duster jacket in peach | 0.3 | 0.7-0.9 | crepe,silk
+soft pashmina wrap in seafoam | 0.5 | 0.7-1.0 | silk,georgette
+short bolero in butter yellow | 0.3 | 0.7-1.0 | silk,crepe
+draped capelet in pale rose | 0.3 | 0.7-1.0 | chiffon,silk

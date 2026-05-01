@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide-brim sun hat | 0.65 | 0.0-0.3 | jute
+#color# braided headband | 0.60 | 0.0-0.2 | leather
+#color# turban-style wrap | 0.55 | 0.0-0.2 | bamboo,modal
+#color# bandana scarf | 0.55 | 0.0-0.2 | bamboo,silk
+#color# floppy beach hat | 0.45 | 0.0-0.3 | jute

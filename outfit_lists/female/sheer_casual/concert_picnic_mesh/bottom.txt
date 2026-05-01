@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waist cutoffs | 0.80 | 0.1-0.3 | denim
+cropped flared jeans | 0.65 | 0.2-0.4 | denim
+biker shorts | 0.60 | 0.1-0.3 | jersey,polyester
+mini skater skirt | 0.55 | 0.1-0.3 | polyester
+relaxed wide-leg jeans | 0.60 | 0.2-0.4 | denim
+metallic mini skirt | 0.50 | 0.1-0.3 | polyester
+high-rise shorts | 0.60 | 0.1-0.3 | denim,cotton
+asymmetric mini skirt | 0.45 | 0.1-0.3 | polyester
+flared mini skirt | 0.50 | 0.1-0.3 | polyester
+ribbed midi skirt | 0.45 | 0.2-0.4 | jersey
+faux-vinyl pants | 0.50 | 0.1-0.3 | polyester
+ripped baggy jeans | 0.55 | 0.1-0.3 | denim

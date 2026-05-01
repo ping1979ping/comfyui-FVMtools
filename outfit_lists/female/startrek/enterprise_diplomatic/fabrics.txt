@@ -1,0 +1,12 @@
+# format: fabric_name | formality | family | weight
+
+silk-blend | 0.8 | luxury | light
+satin | 0.8 | luxury | light
+chiffon | 0.7 | luxury | light
+brocade | 0.9 | luxury | medium
+velvet-blend | 0.8 | luxury | medium
+linen | 0.5 | natural | light
+microfiber | 0.4 | synthetic | light
+spandex | 0.3 | synthetic | light
+gold-thread | 0.9 | luxury | light
+platinum | 0.9 | tech | heavy

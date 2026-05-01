@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# soft loungewear top | 0.85 | 0.0-0.2 | bamboo,modal
+#color# slouchy oversized tee | 0.90 | 0.0-0.2 | jersey,bamboo
+#color# long-sleeve loose top | 0.80 | 0.0-0.3 | bamboo,modal
+#color# wrap-front pullover | 0.70 | 0.1-0.3 | bamboo,modal
+#color# off-shoulder sweater | 0.75 | 0.1-0.3 | bamboo,modal
+#color# scoopneck soft tank | 0.75 | 0.0-0.2 | bamboo,modal
+#color# henley pullover | 0.55 | 0.1-0.3 | jersey,bamboo
+#color# loose racerback tank | 0.65 | 0.0-0.2 | bamboo,modal
+#color# kimono-sleeve top | 0.55 | 0.1-0.3 | bamboo,modal
+#color# loose tunic | 0.60 | 0.0-0.3 | bamboo,modal
+#color# soft v-neck top | 0.65 | 0.0-0.2 | bamboo,modal
+#color# slouchy crewneck | 0.65 | 0.0-0.3 | jersey,bamboo

@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flowing maxi skirt in turquoise | 0.7 | 0.7-1.0 | chiffon,silk
+breezy palazzo pants in ivory | 0.5 | 0.7-0.9 | linen,silk
+high-slit beach skirt in coral | 0.6 | 0.7-0.9 | chiffon,silk
+tropical-print midi in sunset orange | 0.5 | 0.7-0.9 | silk,charmeuse
+floaty wrap skirt in seafoam | 0.5 | 0.7-0.9 | chiffon,georgette
+A-line midi skirt in pale aqua | 0.4 | 0.7-0.9 | crepe,silk
+asymmetric hem skirt in fuchsia | 0.4 | 0.7-1.0 | chiffon,silk
+breezy wide-leg trousers in sand | 0.4 | 0.6-0.8 | linen,silk
+draped sarong skirt in ocean blue | 0.4 | 0.7-0.9 | chiffon,silk
+flowing maxi in tropical green | 0.4 | 0.7-1.0 | silk,charmeuse

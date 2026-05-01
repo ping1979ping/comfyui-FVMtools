@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+airy peasant blouse with visible bralette | 0.80 | 0.1-0.4 | chiffon,cotton
+embroidered crop tank with peeking bra | 0.70 | 0.1-0.3 | cotton
+flowy gauze tunic over bralette | 0.65 | 0.1-0.3 | chiffon
+boho off-shoulder top | 0.70 | 0.1-0.3 | cotton,chiffon
+tied-front knot top with visible bra | 0.65 | 0.1-0.3 | jersey,cotton
+ribbed scoop tank with peeking bra straps | 0.60 | 0.1-0.3 | jersey
+filmy bell-sleeve blouse | 0.60 | 0.2-0.4 | chiffon
+spaghetti-strap camisole with bra straps showing | 0.65 | 0.1-0.3 | polyester
+breezy halter top with visible bralette | 0.55 | 0.1-0.3 | cotton
+patterned wrap top | 0.55 | 0.2-0.4 | polyester,chiffon
+sheer button-up shirt over visible bra | 0.55 | 0.2-0.4 | chiffon
+folk-style smock blouse | 0.50 | 0.2-0.4 | cotton

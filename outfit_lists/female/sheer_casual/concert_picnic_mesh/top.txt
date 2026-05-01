@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+paneled crop top with visible bralette | 0.80 | 0.1-0.4 | mesh
+fishnet-style long-sleeve top with bra showing | 0.70 | 0.1-0.3 | mesh
+cropped athletic-cut tank with peeking bra | 0.70 | 0.1-0.3 | jersey
+sheer net overlay shirt | 0.65 | 0.1-0.4 | mesh
+ribbed scoop tank with bralette underneath | 0.65 | 0.1-0.3 | jersey
+graphic concert tee | 0.65 | 0.1-0.3 | cotton
+sheer panel-cut top | 0.55 | 0.1-0.3 | mesh
+spaghetti-strap rave camisole | 0.60 | 0.1-0.3 | polyester
+oversized band tee with peeking bra | 0.60 | 0.1-0.3 | cotton
+asymmetric cut-out top | 0.55 | 0.1-0.3 | jersey,polyester
+glittery halter top with visible bra | 0.55 | 0.1-0.3 | polyester
+fluttery bralette-style cami | 0.55 | 0.1-0.3 | polyester

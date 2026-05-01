@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sheer wrap in ivory | 0.5 | 0.7-0.9 | chiffon,silk
+breezy kimono in tropical print | 0.5 | 0.6-0.9 | silk,charmeuse
+delicate shrug in coral | 0.4 | 0.7-0.9 | chiffon,silk
+crochet cardigan in sand | 0.3 | 0.6-0.8 | cotton voile,linen
+floaty pareo cover-up in turquoise | 0.4 | 0.6-0.8 | chiffon,silk
+soft pashmina in seafoam | 0.4 | 0.7-1.0 | silk,georgette
+embroidered duster in ocean blue | 0.3 | 0.7-0.9 | silk,georgette

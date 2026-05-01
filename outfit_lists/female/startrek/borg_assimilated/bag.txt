@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+assimilation tool harness on hip | 0.50 | 0.0-0.6 | exo-armor,copper-conduit
+borg regen-pack on back | 0.45 | 0.0-0.5 | exo-armor,matte-graphite
+data-conduit pouch on belt | 0.40 | 0.0-0.6 | copper-conduit,nano-weave
+hive-collective cable spool on hip | 0.35 | 0.0-0.5 | copper-conduit
+liberated drone civilian satchel | 0.30 | 0.2-0.6 | biomesh,neoprene
+unimatrix elite dispatch case | 0.25 | 0.3-0.8 | nano-weave,chrome-plate
+queen-grade neural-pod carrier | 0.20 | 0.4-0.8 | implant-alloy,nano-weave
+shoulder-mounted servo storage pod | 0.30 | 0.0-0.6 | exo-armor

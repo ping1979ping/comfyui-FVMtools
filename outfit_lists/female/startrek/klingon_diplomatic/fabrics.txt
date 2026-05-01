@@ -1,0 +1,12 @@
+# format: fabric_name | formality | family | weight
+
+targ-hide | 0.5 | tough | heavy
+warrior-mesh | 0.5 | tough | medium
+brocade | 0.9 | luxury | medium
+silk-weave | 0.8 | luxury | light
+chainmail | 0.6 | tough | heavy
+bat-leather | 0.5 | tough | medium
+bronze-alloy | 0.7 | tech | heavy
+obsidian | 0.8 | tech | heavy
+velvet-blend | 0.8 | luxury | medium
+spiked-hide | 0.4 | tough | heavy

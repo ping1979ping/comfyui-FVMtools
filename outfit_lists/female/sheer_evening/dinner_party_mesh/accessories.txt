@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+statement drop earrings | 0.80 | 0.5-0.8 | metal
+delicate gold chain | 0.65 | 0.5-0.8 | metal
+stack of bangles | 0.55 | 0.5-0.8 | metal
+cocktail ring | 0.55 | 0.5-0.8 | metal
+sleek hoop earrings | 0.55 | 0.4-0.7 | metal
+pendant necklace | 0.55 | 0.5-0.8 | metal
+tennis bracelet | 0.50 | 0.5-0.8 | metal
+choker necklace | 0.45 | 0.5-0.7 | metal
+ear cuff | 0.40 | 0.4-0.7 | metal
+slim leather belt | 0.30 | 0.4-0.7 | leather

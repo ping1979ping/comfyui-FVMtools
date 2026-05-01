@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+apres-ski boots | 0.75 | 0.1-0.3 | leather,suede
+shearling-lined boots | 0.70 | 0.1-0.3 | leather,suede
+mountain boots | 0.65 | 0.1-0.3 | leather,suede
+tall waterproof boots | 0.55 | 0.1-0.3 | leather,nylon
+plush slipper boots | 0.50 | 0.1-0.3 | suede
+hiking-style boots | 0.50 | 0.2-0.5 | leather,suede
+chunky platform boots | 0.45 | 0.3-0.6 | leather
+buckled snow boots | 0.45 | 0.1-0.3 | leather,suede
+ankle-length winter booties | 0.50 | 0.3-0.6 | leather,suede
+sherpa-trimmed boots | 0.40 | 0.1-0.3 | suede,leather

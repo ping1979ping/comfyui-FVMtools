@@ -1,0 +1,22 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# hair
+#color# soft scrunchie | 0.80 | 0.0-0.2 | bamboo
+#color# wide cloth headband | 0.75 | 0.0-0.2 | bamboo
+#color# claw clip | 0.60 | 0.0-0.2 | metal
+#color# hair scarf | 0.55 | 0.0-0.2 | silk
+
+# gentle jewelry
+#color# delicate chain necklace | 0.50 | 0.0-0.3 | metal
+#color# small stud earrings | 0.55 | 0.0-0.3 | metal
+#color# mama bear pendant | 0.45 | 0.0-0.2 | metal
+#color# wedding band | 0.65 | 0.0-0.3 | metal
+#color# tiny hoop earrings | 0.45 | 0.0-0.3 | metal
+
+# functional
+#color# pregnancy support belt | 0.45 | 0.0-0.1 | spandex,nylon
+#color# water bottle | 0.85 | 0.0-0.2 | metal
+#color# yoga mat strap | 0.45 | 0.0-0.2 | nylon
+#color# eye pillow for rest | 0.45 | 0.0-0.2 | linen
+#color# meditation cushion | 0.55 | 0.0-0.2 | linen

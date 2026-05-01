@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+duty boots in polished black | 0.90 | 0.0-0.9 | faux-leather
+ankle science boots with side zip | 0.65 | 0.2-0.8 | faux-leather
+mid-calf field boots for survey teams | 0.50 | 0.0-0.6 | faux-leather
+formal dress shoes with low heel | 0.45 | 0.7-1.0 | faux-leather,satin
+ten-forward flats for off-duty | 0.30 | 0.0-0.3 | linen,cotton-blend
+astrometrics low-heel pumps | 0.35 | 0.4-0.9 | faux-leather,satin

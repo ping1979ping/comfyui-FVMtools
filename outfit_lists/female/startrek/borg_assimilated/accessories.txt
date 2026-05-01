@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# implants
+ocular implant over right eye | 0.85 | 0.0-1.0 | implant-alloy
+cybernetic neural processor on temple | 0.75 | 0.0-1.0 | implant-alloy
+borg assimilation tubules on hand | 0.70 | 0.0-0.8 | servo-silicone,implant-alloy
+cortical node behind ear | 0.65 | 0.0-1.0 | implant-alloy
+chest assimilation port | 0.60 | 0.0-0.8 | implant-alloy,copper-conduit
+shoulder-mounted servo-arm | 0.50 | 0.0-0.7 | exo-armor,implant-alloy
+hand-mounted laser cutter | 0.45 | 0.0-0.7 | chrome-plate,implant-alloy
+neck cable plug-port | 0.55 | 0.0-0.8 | copper-conduit,implant-alloy
+spinal column conduit array | 0.45 | 0.0-0.7 | copper-conduit
+forearm interface panel | 0.50 | 0.0-0.7 | matte-graphite,implant-alloy
+hip data-port with cable | 0.40 | 0.0-0.7 | copper-conduit
+glowing green optical sensor strip | 0.50 | 0.0-0.8 | chrome-plate
+queen-grade collar with neural lattice | 0.30 | 0.3-0.8 | implant-alloy,nano-weave
+liberated drone medical scar patch | 0.35 | 0.2-0.7 | biomesh

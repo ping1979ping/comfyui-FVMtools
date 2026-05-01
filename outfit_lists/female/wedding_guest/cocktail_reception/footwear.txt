@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+classic black stilettos | 0.7 | 0.7-1.0 | satin,silk
+strappy heels in metallic gold | 0.6 | 0.8-1.0 | silk,charmeuse
+ankle-strap pumps in red | 0.5 | 0.7-1.0 | satin,silk
+sleek pointed-toe heels in nude | 0.5 | 0.7-1.0 | silk,charmeuse
+embellished sandals in champagne | 0.5 | 0.8-1.0 | silk,charmeuse
+patent-finish pumps in burgundy | 0.4 | 0.7-1.0 | silk,charmeuse
+crystal-strap heels in silver | 0.4 | 0.8-1.0 | silk,charmeuse
+slingback pumps in classic black | 0.5 | 0.7-1.0 | silk,charmeuse
+peep-toe pumps in navy | 0.4 | 0.7-0.9 | satin,silk
+metallic block heels in rose gold | 0.4 | 0.7-1.0 | silk,charmeuse

@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# compression leggings | 1.00 | 0.0-0.2 | spandex,nylon
+#color# high-waisted compression leggings | 0.90 | 0.0-0.2 | spandex,nylon
+#color# 7/8 power leggings | 0.85 | 0.0-0.2 | spandex,nylon
+#color# capri compression leggings | 0.75 | 0.0-0.2 | spandex,nylon
+#color# squat-proof leggings | 0.85 | 0.0-0.2 | spandex,nylon
+#color# bike shorts | 0.70 | 0.0-0.1 | spandex,nylon
+#color# compression shorts | 0.70 | 0.0-0.1 | spandex,nylon
+#color# mid-thigh shorts | 0.55 | 0.0-0.1 | spandex,nylon
+#color# pocketed leggings | 0.65 | 0.0-0.2 | spandex,nylon
+#color# side-stripe leggings | 0.60 | 0.0-0.2 | spandex,nylon
+#color# scrunch-back leggings | 0.65 | 0.0-0.2 | spandex,nylon

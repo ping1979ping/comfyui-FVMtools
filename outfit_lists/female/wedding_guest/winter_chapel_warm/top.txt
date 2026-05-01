@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+plush long-sleeve bodice in deep burgundy | 0.7 | 0.7-1.0 | velvet,silk
+high-neck embellished top in forest green | 0.6 | 0.7-1.0 | brocade,silk
+sleek turtleneck in jewel sapphire | 0.5 | 0.7-0.9 | cashmere,silk
+embroidered long-sleeve top in plum | 0.5 | 0.8-1.0 | brocade,silk
+draped cowl-neck top in champagne | 0.5 | 0.7-0.9 | charmeuse,silk
+fitted velveteen bodice in midnight blue | 0.4 | 0.7-1.0 | velvet,silk
+beaded long-sleeve top in deep red | 0.4 | 0.8-1.0 | silk,satin
+classic boatneck top in winter white | 0.4 | 0.7-0.9 | cashmere,wool blend
+plush wrap-front top in emerald | 0.4 | 0.7-1.0 | velvet,silk
+embroidered mock-neck top in oxblood | 0.4 | 0.7-1.0 | brocade,silk

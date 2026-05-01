@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+campus tote strap | 0.40 | 0.1-0.4 | leather,canvas
+braided headband | 0.50 | 0.1-0.5 | silk,knit
+pleated bow tie | 0.40 | 0.2-0.6 | silk
+
+# mid-casual
+slim watch | 0.55 | 0.3-0.8 | metal,leather
+crested ring | 0.40 | 0.3-0.7 | metal
+printed neck scarf | 0.45 | 0.3-0.7 | silk
+gold bangle | 0.45 | 0.3-0.7 | metal
+
+# formal
+pearl studs | 0.55 | 0.4-0.8 | metal
+crested brooch | 0.35 | 0.5-0.8 | metal
+gold cuff bracelet | 0.40 | 0.5-0.8 | metal

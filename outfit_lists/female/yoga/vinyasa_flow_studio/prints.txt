@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mandala print | 0.30 | top,bottom | 0.0-0.2
+ombre gradient | 0.35 | top,bottom | 0.0-0.2
+abstract watercolor | 0.25 | top,bottom | 0.0-0.2
+subtle lotus motif | 0.25 | top,bottom | 0.0-0.2
+geometric pattern | 0.30 | top,bottom | 0.0-0.3
+color-block panels | 0.40 | top,bottom,outerwear | 0.0-0.3
+mesh side panels | 0.35 | top,bottom | 0.0-0.2
+tropical leaf print | 0.20 | top,bottom | 0.0-0.2
+marble effect | 0.25 | top,bottom | 0.0-0.2
+brand logo small | 0.30 | top,headwear,outerwear | 0.1-0.3
+tonal stripes | 0.30 | top,bottom | 0.0-0.3
+subtle floral print | 0.20 | top,bottom | 0.0-0.2

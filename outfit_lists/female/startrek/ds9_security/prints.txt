@@ -1,0 +1,9 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+gray shoulder yoke with mustard underlay | 0.55 | top | 0.2-0.9
+security division stripe band | 0.40 | top,bottom | 0.3-0.9
+delta arrowhead emblem | 0.35 | top | 0.2-0.8
+tactical webbing pattern | 0.30 | outerwear | 0.0-0.6
+chief security chevron | 0.30 | top,outerwear | 0.5-1.0
+brig keycard barcode patch | 0.20 | top | 0.0-0.5
+gunmetal trim accents | 0.30 | outerwear | 0.5-1.0

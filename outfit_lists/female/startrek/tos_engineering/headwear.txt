@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+engineer work cap with mustard band | 0.30 | 0.0-0.4 | twill,canvas
+dress officer hat with brass crest | 0.15 | 0.7-1.0 | satin,velour
+hairband with brass delta clip | 0.20 | 0.0-0.6 | brass

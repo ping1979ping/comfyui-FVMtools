@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+field survey satchel slung over shoulder | 0.45 | 0.0-0.6 | linen,faux-leather
+sample-vial bandolier across chest | 0.35 | 0.0-0.5 | biothread,faux-leather
+research portfolio under arm | 0.35 | 0.3-0.8 | faux-leather,silk-blend
+delta quadrant explorer pack | 0.30 | 0.0-0.5 | microfiber,linen
+sickbay courier bag with med cross | 0.30 | 0.0-0.5 | microfiber,biothread
+chief science dispatch case | 0.25 | 0.6-1.0 | faux-leather,satin
+PADD carrier sleeve with chrome trim | 0.40 | 0.2-0.7 | microfiber,chrome
+astrometrics chart tube on shoulder | 0.30 | 0.0-0.5 | linen,faux-leather

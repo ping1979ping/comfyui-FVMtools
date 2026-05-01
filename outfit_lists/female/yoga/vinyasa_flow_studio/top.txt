@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# strappy bra top | 0.95 | 0.0-0.1 | spandex,nylon
+#color# longline sports bra | 0.85 | 0.0-0.1 | spandex,nylon
+#color# crossback bra top | 0.70 | 0.0-0.1 | spandex,nylon
+#color# scoopneck tank | 0.85 | 0.0-0.2 | bamboo,modal
+#color# flowy racerback tank | 0.80 | 0.0-0.2 | bamboo,modal
+#color# open back yoga tank | 0.65 | 0.0-0.2 | bamboo,modal
+#color# wrap front top | 0.65 | 0.1-0.3 | modal,bamboo
+#color# fitted long-sleeve top | 0.60 | 0.1-0.3 | nylon,spandex
+#color# cropped flow tee | 0.70 | 0.0-0.2 | jersey,bamboo
+#color# off-shoulder yoga top | 0.50 | 0.1-0.3 | bamboo,modal
+#color# halter neck bra top | 0.55 | 0.0-0.1 | spandex,nylon
+#color# twisted-front crop | 0.50 | 0.0-0.2 | bamboo,modal

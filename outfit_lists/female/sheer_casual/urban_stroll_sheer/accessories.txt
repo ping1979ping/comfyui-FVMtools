@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim chain belt | 0.55 | 0.1-0.3 | metal
+oversized rectangular sunglasses | 0.65 | 0.1-0.3 | plastic
+layered necklaces | 0.60 | 0.1-0.4 | metal
+medium hoop earrings | 0.55 | 0.1-0.4 | metal
+chunky signet ring | 0.50 | 0.1-0.4 | metal
+slim wristwatch | 0.50 | 0.2-0.4 | metal
+sleek choker | 0.45 | 0.1-0.3 | leather
+beaded charm bracelet | 0.45 | 0.1-0.3 | plastic
+cuff bracelet | 0.45 | 0.1-0.4 | metal
+small drop earrings | 0.50 | 0.1-0.4 | metal

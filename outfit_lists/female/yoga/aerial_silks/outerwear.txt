@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# warm-up jacket | 0.75 | 0.0-0.2 | nylon,polyester
+#color# fitted track jacket | 0.65 | 0.0-0.2 | nylon,polyester
+#color# slouchy off-shoulder pullover | 0.70 | 0.0-0.2 | jersey
+#color# legwarmer-style shrug | 0.50 | 0.0-0.2 | wool
+#color# wrap ballet cardigan | 0.65 | 0.1-0.3 | bamboo,modal
+#color# lightweight zip-up hoodie | 0.65 | 0.0-0.2 | jersey
+#color# circus warm-up vest | 0.45 | 0.0-0.2 | nylon,polyester
+#color# kimono-style robe | 0.50 | 0.1-0.3 | bamboo,modal
+#color# cropped bomber jacket | 0.50 | 0.1-0.3 | nylon,polyester
+#color# performance windbreaker | 0.40 | 0.0-0.2 | nylon,polyester

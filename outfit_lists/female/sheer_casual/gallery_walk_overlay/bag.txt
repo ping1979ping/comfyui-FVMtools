@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured tote | 0.70 | 0.3-0.5 | leather
+slim shoulder bag | 0.60 | 0.2-0.4 | leather
+small crossbody | 0.55 | 0.2-0.4 | leather
+fold-over clutch | 0.50 | 0.3-0.5 | leather,suede
+minimalist bucket bag | 0.45 | 0.2-0.4 | leather,suede
+slim portfolio | 0.45 | 0.3-0.5 | leather
+top-handle satchel | 0.50 | 0.3-0.5 | leather
+roomy hobo bag | 0.45 | 0.2-0.4 | leather,suede

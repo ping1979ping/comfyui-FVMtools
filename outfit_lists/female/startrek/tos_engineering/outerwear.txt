@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+engineering tool vest with copper rivets | 0.60 | 0.0-0.6 | canvas,twill
+gold sleeve-braid jacket with chest patch | 0.55 | 0.3-0.8 | velour,lycra
+warp core radiation smock | 0.40 | 0.0-0.4 | canvas,twill
+technician coverall jacket | 0.50 | 0.0-0.5 | twill,denim
+chief engineer dress jacket with green trim | 0.40 | 0.7-1.0 | satin,velour
+work apron with copper grommets | 0.45 | 0.0-0.3 | canvas,suede
+mustard duty cardigan with insignia patch | 0.30 | 0.0-0.5 | velour,spandex
+field repair anorak | 0.40 | 0.0-0.5 | canvas,twill

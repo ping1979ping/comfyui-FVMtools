@@ -1,0 +1,16 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+court duffel | 0.50 | 0.1-0.4 | canvas,leather
+white tote | 0.55 | 0.1-0.4 | canvas,leather
+racquet sling | 0.45 | 0.1-0.3 | nylon,canvas
+
+# mid-casual
+piped club bag | 0.45 | 0.3-0.6 | leather,canvas
+fitted satchel | 0.40 | 0.3-0.6 | leather
+top-handle club bag | 0.45 | 0.3-0.7 | leather
+
+# formal
+structured handbag | 0.50 | 0.4-0.8 | leather
+quilted clutch | 0.40 | 0.5-0.8 | leather

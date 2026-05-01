@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red command division duty top with black shoulders | 0.90 | 0.3-0.9 | spandex,lycra
+captain rank uniform top with four pips on collar | 0.80 | 0.4-0.9 | spandex,lycra
+commander uniform top with three pips on collar | 0.75 | 0.4-0.9 | spandex,lycra
+duty jumpsuit top with combadge on chest | 0.85 | 0.3-0.8 | spandex,microfiber
+crimson tunic with raised black yoke | 0.70 | 0.3-0.8 | spandex,lycra
+maroon command tunic with high collar | 0.55 | 0.4-0.9 | wool-blend,satin
+red shouldered duty top with gray torso panel | 0.65 | 0.4-0.8 | microfiber,spandex
+form-fitting jumpsuit with one-piece zipper closure | 0.60 | 0.3-0.8 | spandex,lycra
+admiral grade tunic with gold braid on cuffs | 0.45 | 0.7-1.0 | satin,gabardine
+flag officer dress tunic with white trim | 0.40 | 0.8-1.0 | satin,wool-blend
+red ready-room blazer with rank insignia | 0.50 | 0.5-0.9 | gabardine,wool-blend
+sleeveless command undertunic with shoulder braid | 0.40 | 0.2-0.6 | spandex,microfiber
+ten-forward leisure top in burgundy | 0.45 | 0.0-0.4 | cotton-blend,microfiber
+holodeck off-duty blouse in red | 0.35 | 0.0-0.3 | cotton-blend,polyamide
+captain log dictation tunic with chest pocket | 0.40 | 0.4-0.8 | gabardine,microfiber

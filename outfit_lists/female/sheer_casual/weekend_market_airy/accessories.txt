@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+stack of beaded bracelets | 0.65 | 0.1-0.3 | plastic
+oversized round sunglasses | 0.60 | 0.1-0.3 | plastic
+boho fringe earrings | 0.55 | 0.1-0.3 | metal
+braided rope belt | 0.50 | 0.2-0.4 | leather
+turquoise pendant necklace | 0.50 | 0.1-0.3 | metal
+stacked thumb rings | 0.55 | 0.1-0.4 | metal
+bandana neck scarf | 0.40 | 0.1-0.3 | cotton
+small drop earrings | 0.50 | 0.2-0.4 | metal
+woven cord choker | 0.40 | 0.1-0.3 | cotton
+soft headband | 0.35 | 0.1-0.3 | cotton

@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+opulent damask pattern | 0.4 | top,bottom | 0.7-1.0
+embroidered baroque motif | 0.4 | top | 0.8-1.0
+deep tonal jacquard | 0.3 | top,bottom | 0.7-1.0
+plush textured weave | 0.3 | top,bottom | 0.7-1.0
+metallic-thread embroidery | 0.4 | top,accessories | 0.8-1.0
+art-deco geometric motif | 0.3 | top,bottom | 0.8-1.0
+beaded floral detail | 0.3 | top | 0.8-1.0
+rich burgundy tonal print | 0.3 | top,bottom | 0.7-1.0
+embellished snowflake motif | 0.2 | top,accessories | 0.7-1.0

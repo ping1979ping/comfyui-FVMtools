@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+fluid wide-leg suit pants | 0.85 | 0.7-1.0 | silk,polyester
+straight-leg silk trousers | 0.80 | 0.7-1.0 | silk,polyester
+high-waisted suit pants | 0.75 | 0.7-1.0 | silk,wool
+slim cigarette pants | 0.65 | 0.7-1.0 | wool,polyester
+tapered suit pants | 0.60 | 0.7-1.0 | silk,wool
+flared suit trousers | 0.55 | 0.7-1.0 | silk,polyester
+cropped slim trousers | 0.50 | 0.6-0.9 | wool,polyester
+pleated wide-leg pants | 0.55 | 0.7-1.0 | silk,polyester

@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+power blazer | 0.85 | 0.7-1.0 | wool,cotton
+fitted suit jacket | 0.70 | 0.7-1.0 | wool,tweed
+double-breasted blazer | 0.55 | 0.8-1.0 | wool
+cropped pitch blazer | 0.50 | 0.7-1.0 | wool,cotton
+collarless jacket | 0.45 | 0.6-0.9 | wool
+tailored cardigan | 0.35 | 0.5-0.7 | cashmere,wool

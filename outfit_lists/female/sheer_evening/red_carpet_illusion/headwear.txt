@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+diamond tiara | 0.20 | 0.7-0.9 | metal
+crystal hair clip | 0.30 | 0.6-0.9 | metal
+embellished hair comb | 0.25 | 0.6-0.9 | metal
+jeweled headband | 0.25 | 0.6-0.9 | metal

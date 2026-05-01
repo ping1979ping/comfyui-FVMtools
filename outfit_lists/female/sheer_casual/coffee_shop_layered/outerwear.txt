@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+unbuttoned trucker jacket | 0.65 | 0.2-0.4 | denim
+chunky open cardigan | 0.60 | 0.2-0.4 | knit
+draped trench coat | 0.55 | 0.3-0.5 | cotton,polyester
+soft biker jacket | 0.55 | 0.2-0.4 | leather
+thin kimono wrap | 0.50 | 0.2-0.4 | chiffon,polyester
+boyfriend blazer | 0.55 | 0.3-0.5 | polyester,cotton
+shacket | 0.45 | 0.2-0.4 | suede
+quilted vest | 0.40 | 0.2-0.4 | nylon,polyester
+oversized button-down overshirt | 0.55 | 0.2-0.4 | cotton
+cropped puffer jacket | 0.40 | 0.1-0.3 | nylon,polyester

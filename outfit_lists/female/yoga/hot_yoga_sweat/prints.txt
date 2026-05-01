@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ombre gradient | 0.40 | top,bottom | 0.0-0.2
+color-block panels | 0.45 | top,bottom,outerwear | 0.0-0.3
+mesh ventilation panels | 0.50 | top,bottom | 0.0-0.2
+neon-tone accents | 0.30 | top,bottom | 0.0-0.2
+reflective stripes | 0.30 | top,bottom,outerwear | 0.0-0.2
+tonal logo print | 0.30 | top,bottom | 0.0-0.3
+abstract heatmap pattern | 0.20 | top,bottom | 0.0-0.2
+geometric pattern | 0.30 | top,bottom | 0.0-0.3
+brand wordmark | 0.30 | top,headwear | 0.1-0.3
+side stripe panel | 0.30 | top,bottom | 0.0-0.3

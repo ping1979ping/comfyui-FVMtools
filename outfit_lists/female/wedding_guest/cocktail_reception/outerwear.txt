@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sleek tailored blazer in classic black | 0.6 | 0.7-1.0 | crepe,silk
+fitted bolero in scarlet | 0.4 | 0.7-1.0 | silk,satin
+draped wrap in champagne | 0.5 | 0.7-1.0 | silk,charmeuse
+elegant capelet in navy | 0.3 | 0.8-1.0 | silk,satin
+beaded shrug in midnight blue | 0.4 | 0.8-1.0 | silk,georgette
+slim-fit duster in dusty rose | 0.3 | 0.7-0.9 | crepe,silk
+short evening jacket in forest green | 0.3 | 0.7-1.0 | silk,brocade

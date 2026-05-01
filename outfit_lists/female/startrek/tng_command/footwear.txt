@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bridge duty boots in black | 0.90 | 0.0-0.9 | faux-leather
+tall command boots with mid-calf shaft | 0.55 | 0.0-0.5 | faux-leather
+ankle duty boots with side zip | 0.65 | 0.2-0.8 | faux-leather
+formal dress shoes with low heel | 0.45 | 0.7-1.0 | faux-leather
+ready-room loafers in polished black | 0.40 | 0.5-0.9 | faux-leather
+admiral pumps with brass buckle | 0.30 | 0.7-1.0 | faux-leather,satin
+ten-forward flats for off-duty | 0.30 | 0.0-0.3 | cotton-blend,faux-leather

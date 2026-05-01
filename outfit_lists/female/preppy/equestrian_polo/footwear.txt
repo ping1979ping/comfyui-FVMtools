@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+paddock boots | 0.65 | 0.2-0.5 | leather
+ankle riding boots | 0.55 | 0.2-0.5 | leather
+brown lace-up boots | 0.45 | 0.2-0.5 | leather
+
+# mid-casual
+tall riding boots | 0.70 | 0.3-0.7 | leather
+penny loafers | 0.55 | 0.3-0.7 | leather
+chelsea boots | 0.50 | 0.3-0.6 | leather
+
+# formal
+black dress boots | 0.55 | 0.5-0.8 | leather
+oxford shoes | 0.45 | 0.5-0.8 | leather
+polished pumps | 0.40 | 0.5-0.8 | leather

@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+opulent fur stole in jet black | 0.4 | 0.9-1.0 | silk,charmeuse
+glamorous evening cape in onyx | 0.4 | 0.9-1.0 | satin,silk
+fitted bolero in midnight blue | 0.4 | 0.8-1.0 | brocade,silk
+draped wrap in champagne | 0.5 | 0.8-1.0 | silk,charmeuse
+luxe capelet in burgundy | 0.3 | 0.9-1.0 | brocade,silk
+tailored evening jacket in noir | 0.3 | 0.8-1.0 | satin,silk
+beaded shawl in gunmetal | 0.3 | 0.8-1.0 | silk,charmeuse
+shimmering wrap in obsidian | 0.4 | 0.8-1.0 | satin,silk

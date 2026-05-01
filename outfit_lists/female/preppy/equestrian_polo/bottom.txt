@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+beige jodhpurs | 0.65 | 0.2-0.5 | cotton,wool
+cream riding breeches | 0.60 | 0.2-0.5 | cotton,wool
+slim chinos | 0.55 | 0.2-0.5 | cotton
+schooling tights | 0.50 | 0.2-0.4 | spandex,polyester
+
+# mid-casual
+high-waisted jodhpurs | 0.60 | 0.3-0.7 | wool,cotton
+A-line tweed skirt | 0.50 | 0.3-0.7 | wool,tweed
+fitted breeches | 0.55 | 0.3-0.7 | wool
+houndstooth trousers | 0.45 | 0.3-0.7 | wool,tweed
+
+# formal
+white show breeches | 0.60 | 0.4-0.8 | wool
+pleated wool skirt | 0.45 | 0.5-0.8 | wool
+tailored slacks | 0.50 | 0.5-0.8 | wool

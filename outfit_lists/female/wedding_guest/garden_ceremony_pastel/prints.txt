@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+delicate floral pattern | 0.5 | top,bottom | 0.6-1.0
+soft watercolor print | 0.4 | top,bottom | 0.6-0.9
+ditsy floral print | 0.4 | top,bottom | 0.6-0.9
+botanical embroidery | 0.3 | top | 0.7-1.0
+pastel polka pattern | 0.2 | top,bottom | 0.6-0.9
+gentle ombre wash | 0.3 | top,bottom | 0.6-0.9
+beaded floral motif | 0.3 | top,accessories | 0.7-1.0
+romantic rose print | 0.3 | top,bottom | 0.6-0.9
+small daisy print | 0.3 | top,bottom | 0.6-0.9
+soft pastel stripe | 0.2 | top,bottom | 0.6-0.8

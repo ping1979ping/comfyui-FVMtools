@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"MAMA" | 0.35 | top | elegant thin font
+"BUMP" | 0.25 | top | minimal sans-serif
+"BABY ON BOARD" | 0.20 | top | clean modern font
+"GROWING" | 0.20 | top | elegant thin font
+"BREATHE" | 0.30 | top | thin sans-serif
+"GENTLE" | 0.25 | top | elegant serif
+"NURTURE" | 0.20 | top | thin sans-serif
+"BLOOM" | 0.25 | top | elegant thin font
+"PEACE" | 0.25 | top | minimal sans-serif
+"LOVE" | 0.25 | top | elegant serif
+"MAMA TO BE" | 0.20 | top | elegant thin font

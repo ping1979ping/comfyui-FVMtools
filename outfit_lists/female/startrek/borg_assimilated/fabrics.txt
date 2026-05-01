@@ -1,0 +1,12 @@
+# format: fabric_name | formality | family | weight
+
+biomesh | 0.4 | tough | medium
+neoprene | 0.4 | synthetic | medium
+nano-weave | 0.5 | synthetic | light
+polylatex | 0.3 | synthetic | medium
+implant-alloy | 0.6 | tech | heavy
+chrome-plate | 0.6 | tech | heavy
+matte-graphite | 0.5 | tech | heavy
+copper-conduit | 0.5 | tech | heavy
+exo-armor | 0.6 | tough | heavy
+servo-silicone | 0.4 | synthetic | medium

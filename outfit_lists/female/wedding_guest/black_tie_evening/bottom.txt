@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+floor-length column skirt in onyx black | 0.7 | 0.8-1.0 | satin,silk
+fishtail evening skirt in midnight blue | 0.6 | 0.8-1.0 | taffeta,satin
+high-slit maxi skirt in burgundy | 0.6 | 0.8-1.0 | silk,charmeuse
+draped trumpet skirt in deep emerald | 0.5 | 0.8-1.0 | satin,silk
+ball-gown skirt in jet black | 0.4 | 0.9-1.0 | taffeta,brocade
+sleek pencil floor-length skirt in champagne | 0.4 | 0.8-1.0 | satin,silk
+A-line evening skirt in gunmetal | 0.4 | 0.8-1.0 | taffeta,silk
+bias-cut maxi skirt in plum | 0.4 | 0.8-1.0 | charmeuse,silk
+mermaid-cut skirt in noir | 0.3 | 0.9-1.0 | satin,brocade
+opulent train skirt in obsidian | 0.3 | 0.9-1.0 | brocade,satin

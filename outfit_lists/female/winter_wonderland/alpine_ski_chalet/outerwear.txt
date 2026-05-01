@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ski parka | 0.75 | 0.1-0.3 | nylon,polyester
+puffer jacket | 0.70 | 0.1-0.3 | nylon,polyester
+shearling-trimmed coat | 0.55 | 0.4-0.7 | suede,wool
+oversized chalet coat | 0.55 | 0.4-0.7 | wool,tweed
+quilted snow jacket | 0.60 | 0.1-0.3 | nylon,polyester
+hooded mountain jacket | 0.55 | 0.1-0.3 | nylon,polyester
+belted long coat | 0.45 | 0.4-0.7 | wool,tweed
+cropped puffer | 0.50 | 0.1-0.3 | nylon,polyester
+toggle-button duffle | 0.40 | 0.3-0.6 | wool
+sherpa-lined parka | 0.50 | 0.1-0.3 | nylon,polyester

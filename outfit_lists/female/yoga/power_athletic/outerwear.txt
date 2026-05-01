@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# performance zip jacket | 0.80 | 0.0-0.3 | nylon,polyester
+#color# track jacket | 0.75 | 0.0-0.2 | nylon,polyester
+#color# windbreaker shell | 0.65 | 0.0-0.3 | nylon,polyester
+#color# cropped athletic hoodie | 0.70 | 0.0-0.2 | jersey
+#color# half-zip pullover | 0.65 | 0.0-0.2 | polyester
+#color# bomber-cut jacket | 0.55 | 0.1-0.3 | nylon,polyester
+#color# zip-front vest | 0.50 | 0.0-0.2 | nylon,polyester
+#color# fitted full-zip hoodie | 0.65 | 0.0-0.2 | jersey
+#color# breathable mesh shrug | 0.50 | 0.0-0.2 | mesh
+#color# longline athletic coat | 0.45 | 0.1-0.3 | nylon,polyester

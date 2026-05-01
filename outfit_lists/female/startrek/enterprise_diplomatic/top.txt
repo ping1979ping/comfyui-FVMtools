@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+federation ambassador robe top with gold trim | 0.85 | 0.6-1.0 | brocade,silk-blend
+diplomatic dress tunic with high collar | 0.80 | 0.5-1.0 | satin,silk-blend
+elegant federation gown with delta clasp | 0.65 | 0.7-1.0 | chiffon,silk-blend
+formal duty top with embassy crest | 0.75 | 0.4-0.9 | satin,microfiber
+ceremonial federation council blouse | 0.55 | 0.6-1.0 | brocade,velvet-blend
+diplomatic envoy tunic with shoulder cape | 0.50 | 0.7-1.0 | velvet-blend,satin
+state dinner top with platinum embroidery | 0.45 | 0.8-1.0 | brocade,silk-blend
+council chamber dress top in deep burgundy | 0.55 | 0.6-1.0 | velvet-blend,silk-blend
+treaty signing tunic with gold sash | 0.50 | 0.7-1.0 | satin,brocade
+flowing diplomatic blouse with bell sleeves | 0.45 | 0.5-0.9 | chiffon,silk-blend
+embassy duty blouse with rank cord | 0.55 | 0.4-0.9 | silk-blend,microfiber
+ambassador courier dress top | 0.40 | 0.5-0.9 | satin,linen
+casual liaison blouse for off-duty | 0.35 | 0.0-0.4 | linen,silk-blend
+peace conference dress with delta clasp | 0.40 | 0.7-1.0 | chiffon,brocade

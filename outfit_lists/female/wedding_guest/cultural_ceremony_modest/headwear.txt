@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ornate dupatta head-drape | 0.5 | 0.7-1.0 | chiffon,silk
+embellished hair pin set | 0.4 | 0.7-1.0 | silk
+flowing head scarf in jewel red | 0.4 | 0.7-0.9 | silk,charmeuse
+ornate hair comb | 0.3 | 0.8-1.0 | silk
+delicate floral hair vine | 0.3 | 0.7-0.9 | silk,organza

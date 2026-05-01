@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# stretchy maternity tank | 0.95 | 0.0-0.2 | spandex,bamboo
+#color# soft ruched-side top | 0.85 | 0.0-0.2 | bamboo,modal
+#color# loose flowy maternity tee | 0.85 | 0.0-0.2 | bamboo,modal
+#color# wrap-front top | 0.75 | 0.1-0.3 | bamboo,modal
+#color# scoopneck soft tank | 0.80 | 0.0-0.2 | bamboo,modal
+#color# longline maternity top | 0.70 | 0.0-0.2 | bamboo,modal
+#color# gentle support bra top | 0.85 | 0.0-0.1 | spandex,bamboo
+#color# tunic-length top | 0.70 | 0.0-0.3 | bamboo,modal
+#color# loose long-sleeve top | 0.65 | 0.0-0.3 | bamboo,modal
+#color# off-shoulder soft top | 0.55 | 0.1-0.3 | bamboo,modal
+#color# bump-friendly cami | 0.65 | 0.0-0.2 | bamboo,modal
+#color# henley pullover | 0.55 | 0.0-0.3 | jersey,bamboo

@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+plush midi skirt in burgundy | 0.7 | 0.7-1.0 | velvet,silk
+A-line knee-length skirt in forest green | 0.6 | 0.7-0.9 | wool blend,crepe
+fitted maxi skirt in midnight blue | 0.5 | 0.7-1.0 | brocade,silk
+warm pleated skirt in deep plum | 0.5 | 0.7-0.9 | wool blend,crepe
+elegant column skirt in champagne | 0.5 | 0.8-1.0 | satin,silk
+mermaid-cut skirt in emerald | 0.4 | 0.8-1.0 | velvet,silk
+high-low skirt in oxblood | 0.4 | 0.7-0.9 | brocade,silk
+draped trumpet skirt in sapphire | 0.4 | 0.7-1.0 | satin,silk
+soft midi skirt in ivory | 0.4 | 0.7-0.9 | wool blend,crepe
+flared knee-length in deep red | 0.3 | 0.7-0.9 | crepe,silk

@@ -1,0 +1,12 @@
+# format: fabric_name | formality | family | weight
+
+velour | 0.5 | luxury | medium
+spandex | 0.3 | synthetic | light
+lycra | 0.4 | synthetic | light
+canvas | 0.2 | natural | medium
+denim | 0.2 | natural | medium
+twill | 0.4 | natural | medium
+suede | 0.4 | tough | medium
+copper | 0.5 | tech | heavy
+brass | 0.6 | tech | heavy
+satin | 0.8 | luxury | light

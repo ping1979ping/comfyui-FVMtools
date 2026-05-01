@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+skater skirt with tights | 0.65 | 0.3-0.6 | knit,wool
+fleece-lined leggings | 0.70 | 0.1-0.3 | fleece
+flared knit skirt | 0.55 | 0.3-0.6 | knit,wool
+high-waist thermal pants | 0.55 | 0.1-0.3 | fleece,cotton
+pleated mini skirt with leggings | 0.50 | 0.3-0.6 | wool,tweed
+fitted ribbed leggings | 0.55 | 0.1-0.3 | cotton,fleece
+plaid pleated skirt | 0.45 | 0.3-0.6 | wool,tweed
+high-waist trousers | 0.50 | 0.4-0.7 | wool,tweed
+A-line midi skirt | 0.45 | 0.3-0.6 | wool,knit
+slim corduroy pants | 0.45 | 0.2-0.5 | corduroy

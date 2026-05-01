@@ -1,0 +1,10 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+borg cube hull-plating texture | 0.50 | top,outerwear | 0.0-0.7
+glowing green circuit pattern | 0.45 | top,outerwear | 0.0-0.7
+hive-collective hexagon lattice | 0.40 | top | 0.0-0.6
+copper-conduit cable lines | 0.45 | top,outerwear | 0.0-0.6
+matte-graphite hex pattern | 0.40 | top,outerwear | 0.0-0.6
+neural-port cluster pattern | 0.30 | top | 0.0-0.5
+unimatrix sigil emblem | 0.25 | top,outerwear | 0.3-0.8
+queen-grade filigree etch | 0.25 | outerwear | 0.4-0.8

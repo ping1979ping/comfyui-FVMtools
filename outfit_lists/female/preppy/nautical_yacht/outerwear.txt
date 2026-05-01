@@ -1,0 +1,17 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+cropped windbreaker | 0.45 | 0.2-0.4 | nylon
+striped cardigan | 0.55 | 0.2-0.5 | wool,knit
+sail-stripe pullover | 0.45 | 0.2-0.5 | wool,knit
+
+# mid-casual
+double-breasted jacket | 0.55 | 0.3-0.7 | wool,linen
+fitted cardigan | 0.50 | 0.3-0.6 | cashmere,wool,knit
+sailor jacket | 0.55 | 0.3-0.7 | wool
+
+# formal
+captain blazer | 0.65 | 0.4-0.8 | wool,linen
+pea coat | 0.45 | 0.5-0.8 | wool
+brass-button blazer | 0.50 | 0.4-0.8 | wool

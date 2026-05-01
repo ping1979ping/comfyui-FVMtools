@@ -1,0 +1,15 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+riding cap | 0.40 | 0.1-0.4 | wool,velvet
+classic flat cap | 0.45 | 0.2-0.5 | tweed,wool
+hair net snood | 0.30 | 0.1-0.4 | nylon
+
+# mid-casual
+tied hairband | 0.45 | 0.2-0.6 | silk
+velvet bow clip | 0.40 | 0.2-0.6 | velvet,silk
+
+# formal
+hunt derby hat | 0.40 | 0.5-0.8 | velvet,wool
+top hat | 0.30 | 0.6-0.8 | velvet

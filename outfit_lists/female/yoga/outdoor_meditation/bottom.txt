@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide-leg flow pants | 0.85 | 0.0-0.3 | linen,bamboo
+#color# harem-style trousers | 0.75 | 0.0-0.2 | bamboo,modal
+#color# loose drawstring pants | 0.75 | 0.0-0.2 | linen,bamboo
+#color# palazzo flow trousers | 0.70 | 0.0-0.3 | linen,bamboo
+#color# cropped flowy trousers | 0.55 | 0.0-0.2 | linen,bamboo
+#color# rolled-cuff hiking pants | 0.45 | 0.0-0.3 | hemp
+#color# tapered ankle pants | 0.55 | 0.0-0.3 | linen,bamboo
+#color# yoga shorts | 0.55 | 0.0-0.1 | spandex,nylon
+#color# bohemian skirt-pants | 0.50 | 0.1-0.3 | linen,bamboo
+#color# fold-over waist leggings | 0.55 | 0.0-0.2 | bamboo,modal

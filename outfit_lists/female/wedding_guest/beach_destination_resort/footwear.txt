@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embellished flat sandals | 0.7 | 0.6-0.9 | silk,charmeuse
+metallic gold gladiator sandals | 0.5 | 0.7-0.9 | silk,charmeuse
+strappy wedge espadrilles | 0.6 | 0.7-0.9 | silk,charmeuse
+seashell-trim flats | 0.4 | 0.6-0.8 | silk,charmeuse
+beaded slide sandals | 0.5 | 0.6-0.8 | silk,charmeuse
+ankle-tie low heels in nude | 0.4 | 0.7-0.9 | silk,charmeuse
+turquoise-bead sandals | 0.4 | 0.6-0.8 | silk,charmeuse
+crystal-strap flats in ivory | 0.4 | 0.7-0.9 | silk,charmeuse
+block-heel sandals in coral | 0.4 | 0.7-0.9 | silk,charmeuse
+woven raffia sandals | 0.4 | 0.6-0.8 | linen,silk

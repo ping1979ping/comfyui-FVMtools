@@ -1,0 +1,19 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white sneakers | 0.55 | 0.1-0.3 | leather,canvas
+golf shoes | 0.40 | 0.2-0.4 | leather
+tennis shoes | 0.45 | 0.2-0.4 | leather,canvas
+espadrilles | 0.40 | 0.2-0.4 | jute,canvas
+
+# mid-casual
+ballet flats | 0.55 | 0.3-0.6 | leather,suede
+penny loafers | 0.65 | 0.3-0.7 | leather
+driving moccasins | 0.45 | 0.3-0.6 | leather,suede
+slingback flats | 0.40 | 0.3-0.7 | leather,suede
+
+# formal
+oxford shoes | 0.45 | 0.5-0.8 | leather
+kitten heels | 0.50 | 0.5-0.8 | leather,suede
+court pumps | 0.45 | 0.5-0.8 | leather,suede

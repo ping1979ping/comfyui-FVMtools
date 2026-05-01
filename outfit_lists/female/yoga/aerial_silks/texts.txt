@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FLY" | 0.30 | top | elegant thin font
+"AERIAL" | 0.30 | top | clean modern font
+"SILKS" | 0.25 | top | elegant serif
+"GRACE" | 0.25 | top | elegant thin font
+"SOAR" | 0.25 | top | clean modern font
+"DEFY GRAVITY" | 0.20 | top | minimal sans-serif
+"AIR" | 0.25 | top | thin sans-serif
+"DANCE" | 0.25 | top | elegant thin font
+"PERFORM" | 0.20 | top | minimal bold
+"FLOW UP" | 0.20 | top | clean sans-serif

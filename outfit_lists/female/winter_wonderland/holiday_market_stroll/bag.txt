@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured handbag | 0.60 | 0.4-0.7 | leather,suede
+quilted crossbody | 0.55 | 0.3-0.6 | polyester,leather
+chain-strap shoulder bag | 0.50 | 0.4-0.7 | leather
+embellished clutch | 0.40 | 0.4-0.7 | velvet,polyester
+shearling-trimmed tote | 0.45 | 0.3-0.6 | suede,leather
+canvas market bag | 0.40 | 0.1-0.4 | cotton
+small plush evening pouch | 0.40 | 0.4-0.7 | velvet
+slouchy hobo bag | 0.45 | 0.2-0.5 | leather,suede

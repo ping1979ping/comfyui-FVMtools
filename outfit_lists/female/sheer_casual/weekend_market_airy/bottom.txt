@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowy maxi skirt | 0.80 | 0.2-0.4 | cotton,chiffon
+relaxed wide-leg jeans | 0.70 | 0.2-0.4 | denim
+high-waist cutoffs | 0.65 | 0.1-0.3 | denim
+boho tiered skirt | 0.55 | 0.2-0.4 | cotton,chiffon
+patchwork mini skirt | 0.50 | 0.1-0.3 | denim,cotton
+loose paperbag pants | 0.55 | 0.2-0.4 | cotton
+A-line midi skirt | 0.55 | 0.2-0.4 | cotton
+straight-leg jeans | 0.60 | 0.2-0.4 | denim
+flared corduroy pants | 0.45 | 0.2-0.4 | cotton
+embroidered shorts | 0.45 | 0.1-0.3 | cotton
+gauze midi skirt | 0.50 | 0.2-0.4 | chiffon
+overall shorts | 0.40 | 0.1-0.3 | denim

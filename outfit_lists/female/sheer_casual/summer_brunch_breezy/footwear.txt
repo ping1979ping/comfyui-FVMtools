@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+strappy flat sandals | 0.80 | 0.1-0.3 | leather
+woven espadrille wedges | 0.65 | 0.2-0.4 | canvas
+slide sandals | 0.60 | 0.1-0.3 | leather
+gladiator sandals | 0.50 | 0.1-0.3 | leather
+ballet flats | 0.55 | 0.2-0.4 | leather
+braided slip-ons | 0.45 | 0.1-0.3 | leather
+heeled sandals | 0.45 | 0.3-0.5 | leather,suede
+white sneakers | 0.55 | 0.1-0.3 | canvas,leather
+woven mules | 0.45 | 0.2-0.4 | leather
+toe-ring flats | 0.40 | 0.1-0.3 | leather

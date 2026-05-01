@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# bike shorts | 1.00 | 0.0-0.1 | spandex,nylon
+#color# high-cut briefs | 0.75 | 0.0-0.1 | spandex,nylon
+#color# capri leggings | 0.80 | 0.0-0.2 | spandex,nylon
+#color# 7/8 leggings | 0.85 | 0.0-0.2 | spandex,nylon
+#color# yoga shorts | 0.80 | 0.0-0.1 | spandex,nylon
+#color# booty shorts | 0.65 | 0.0-0.1 | spandex,nylon
+#color# sweat-wicking shorts | 0.60 | 0.0-0.1 | spandex,nylon
+#color# cycling-cut shorts | 0.55 | 0.0-0.1 | spandex,nylon
+#color# mid-thigh shorts | 0.55 | 0.0-0.1 | spandex,nylon
+#color# high-waisted shorts | 0.65 | 0.0-0.1 | spandex,nylon

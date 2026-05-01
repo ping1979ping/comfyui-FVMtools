@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+crystal-encrusted clutch | 0.85 | 0.7-0.9 | sequin,beaded
+envelope clutch | 0.75 | 0.6-0.9 | satin
+embellished minaudiere | 0.60 | 0.7-0.9 | beaded,metal
+chain-strap evening bag | 0.55 | 0.6-0.9 | leather,satin
+ornate box clutch | 0.50 | 0.6-0.9 | beaded
+evening pouch | 0.45 | 0.6-0.9 | velvet
+sequined wristlet | 0.50 | 0.6-0.9 | sequin
+metallic envelope bag | 0.45 | 0.6-0.9 | leather

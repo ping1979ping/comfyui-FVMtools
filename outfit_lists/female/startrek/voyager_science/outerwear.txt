@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+science lab coat with delta emblem | 0.55 | 0.3-0.7 | linen,cotton-blend
+voyager duty jacket with rank pips | 0.60 | 0.3-0.8 | spandex,microfiber
+delta quadrant survey jacket with patches | 0.50 | 0.2-0.6 | microfiber,linen
+chief science overcoat with teal piping | 0.40 | 0.7-1.0 | satin,silk-blend
+field research vest with sample pockets | 0.50 | 0.0-0.5 | microfiber,linen
+formal dress jacket with shoulder boards | 0.40 | 0.7-1.0 | satin,silk-blend
+astrometrics smock with chest pocket | 0.40 | 0.0-0.4 | linen,cotton-blend
+warp lab apron with chrome buckles | 0.35 | 0.0-0.4 | linen,faux-leather

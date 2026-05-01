@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+plush evening clutch in burgundy | 0.6 | 0.7-1.0 | velvet,silk
+embellished box bag in midnight blue | 0.5 | 0.8-1.0 | brocade,silk
+sleek envelope clutch in oxblood | 0.5 | 0.7-1.0 | velvet,charmeuse
+beaded minaudiere in champagne | 0.4 | 0.8-1.0 | silk,charmeuse
+chain-strap clutch in emerald | 0.4 | 0.7-1.0 | velvet,silk
+embroidered pouch in deep plum | 0.3 | 0.7-1.0 | brocade,silk
+classic clutch in winter white | 0.3 | 0.7-0.9 | silk,charmeuse

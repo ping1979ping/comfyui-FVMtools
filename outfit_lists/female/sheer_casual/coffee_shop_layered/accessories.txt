@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dainty pendant necklace | 0.65 | 0.1-0.4 | metal
+mini hoop earrings | 0.55 | 0.1-0.4 | metal
+oversized round sunglasses | 0.55 | 0.1-0.3 | plastic
+slim belt | 0.50 | 0.2-0.4 | leather
+satin hair scarf | 0.40 | 0.2-0.4 | silk
+stacked rings | 0.55 | 0.1-0.4 | metal
+beaded bracelet | 0.40 | 0.1-0.3 | plastic
+minimal wristwatch | 0.50 | 0.2-0.4 | metal
+small drop earrings | 0.45 | 0.2-0.4 | metal
+choker necklace | 0.40 | 0.1-0.3 | leather,metal

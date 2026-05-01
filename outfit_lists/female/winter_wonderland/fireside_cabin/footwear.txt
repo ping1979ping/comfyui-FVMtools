@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shearling-lined slippers | 0.75 | 0.1-0.3 | suede
+plush slipper boots | 0.70 | 0.1-0.3 | suede
+ankle boots | 0.55 | 0.3-0.6 | leather,suede
+warm pull-on boots | 0.55 | 0.1-0.3 | suede,leather
+fluffy moccasins | 0.50 | 0.1-0.3 | suede
+classic snow boots | 0.50 | 0.1-0.3 | leather,suede
+ribbed knit socks worn loose | 0.40 | 0.1-0.3 | wool,knit
+sherpa-trimmed booties | 0.50 | 0.1-0.3 | suede,leather
+chunky sock-style boots | 0.45 | 0.1-0.3 | knit,suede
+mid-calf winter boots | 0.45 | 0.2-0.5 | leather,suede

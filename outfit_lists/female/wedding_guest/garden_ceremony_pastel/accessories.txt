@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+pearl drop earrings | 0.7 | 0.7-1.0 | silk
+delicate floral choker | 0.5 | 0.7-0.9 | silk
+crystal-stud earrings | 0.6 | 0.7-1.0 | silk
+rose-gold pendant | 0.5 | 0.7-1.0 | silk
+flower-shaped brooch | 0.4 | 0.7-1.0 | silk
+charm bracelet in soft gold | 0.4 | 0.7-1.0 | silk
+butterfly hairpin | 0.3 | 0.7-0.9 | silk,organza
+slim watch with pastel band | 0.3 | 0.7-0.9 | silk
+delicate ankle bracelet | 0.3 | 0.7-0.9 | silk
+opal cocktail ring | 0.3 | 0.7-1.0 | silk

@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical patrol boots with rubberized sole | 0.90 | 0.0-0.8 | faux-leather,neoprene
+station guard combat boots | 0.75 | 0.0-0.7 | faux-leather
+mid-calf security boots with side zip | 0.55 | 0.2-0.7 | faux-leather
+brig duty ankle boots | 0.60 | 0.2-0.7 | faux-leather
+formal dress shoes with low heel | 0.40 | 0.7-1.0 | faux-leather,satin
+runabout pilot flight boots | 0.45 | 0.2-0.7 | faux-leather,neoprene

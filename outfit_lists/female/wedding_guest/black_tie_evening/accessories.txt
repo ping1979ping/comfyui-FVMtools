@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+diamond drop earrings | 0.7 | 0.8-1.0 | silk
+chandelier earrings | 0.6 | 0.8-1.0 | silk
+pearl choker | 0.5 | 0.8-1.0 | silk
+emerald cocktail ring | 0.4 | 0.8-1.0 | silk
+crystal tennis bracelet | 0.5 | 0.8-1.0 | silk
+sapphire pendant | 0.4 | 0.8-1.0 | silk
+art-deco brooch | 0.3 | 0.9-1.0 | silk
+rhinestone collar | 0.3 | 0.9-1.0 | silk
+opera-length pearl strand | 0.3 | 0.9-1.0 | silk
+black opera gloves | 0.3 | 0.9-1.0 | silk
+ruby drop necklace | 0.3 | 0.9-1.0 | silk

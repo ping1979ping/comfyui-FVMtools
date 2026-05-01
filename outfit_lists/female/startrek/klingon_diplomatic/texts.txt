@@ -1,0 +1,6 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"QAPLA" | 0.25 | accessories | klingon script
+"HOUSE OF MARTOK" | 0.20 | top | bold block font
+"EMPIRE" | 0.20 | accessories | block font
+"HONOR ABOVE ALL" | 0.15 | top | klingon script

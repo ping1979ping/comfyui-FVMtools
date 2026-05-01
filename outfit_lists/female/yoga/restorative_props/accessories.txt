@@ -1,0 +1,22 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# hair
+#color# soft hair scarf | 0.70 | 0.0-0.2 | silk
+#color# loose scrunchie | 0.75 | 0.0-0.2 | bamboo
+#color# wide cloth headband | 0.65 | 0.0-0.2 | bamboo
+#color# claw clip | 0.55 | 0.0-0.2 | metal
+
+# jewelry mindful
+#color# mala bead bracelet | 0.75 | 0.0-0.2 | wood
+#color# crystal pendant necklace | 0.55 | 0.0-0.2 | metal
+#color# delicate chain bracelet | 0.45 | 0.0-0.3 | metal
+#color# rose quartz pendant | 0.45 | 0.0-0.2 | metal
+#color# small hoop earrings | 0.45 | 0.0-0.3 | metal
+
+# props
+#color# yoga bolster | 0.70 | 0.0-0.2 | linen
+#color# eye pillow | 0.55 | 0.0-0.2 | linen
+#color# soft yoga blanket | 0.70 | 0.0-0.2 | wool
+#color# meditation cushion | 0.55 | 0.0-0.2 | linen
+#color# herbal tea mug | 0.45 | 0.0-0.2 | ceramic

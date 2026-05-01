@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bare feet | 0.75 | 0.0-0.1 | 
+#color# fuzzy slippers | 0.70 | 0.0-0.2 | sherpa
+#color# soft toe socks | 0.65 | 0.0-0.1 | bamboo
+#color# warm chunky socks | 0.65 | 0.0-0.2 | wool
+#color# slip-on slides | 0.40 | 0.0-0.2 | rubber
+#color# moccasin slippers | 0.50 | 0.0-0.2 | suede
+#color# leg warmers | 0.50 | 0.0-0.2 | wool
+#color# studio slippers | 0.45 | 0.0-0.2 | sherpa
+#color# fluffy footies | 0.40 | 0.0-0.1 | sherpa

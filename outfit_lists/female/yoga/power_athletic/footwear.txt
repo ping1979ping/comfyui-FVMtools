@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bare feet | 0.55 | 0.0-0.1 | 
+#color# performance training shoes | 0.75 | 0.1-0.3 | mesh,nylon
+#color# cross-training trainers | 0.70 | 0.1-0.3 | mesh,nylon
+#color# minimalist barefoot trainers | 0.55 | 0.1-0.3 | mesh
+#color# studio grip socks | 0.55 | 0.0-0.1 | bamboo
+#color# slip-on slides | 0.45 | 0.0-0.2 | rubber
+#color# lifting flat shoes | 0.40 | 0.1-0.3 | leather
+#color# sport flip-flops | 0.40 | 0.0-0.2 | rubber

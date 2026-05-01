@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+woven boho clutch | 0.6 | 0.6-0.8 | linen,silk
+embroidered pouch in cream | 0.5 | 0.6-0.9 | silk,charmeuse
+fringed crossbody in tan | 0.4 | 0.6-0.8 | linen,silk
+beaded mini bag in dusty rose | 0.4 | 0.7-0.9 | silk,charmeuse
+crochet pouch in ivory | 0.4 | 0.6-0.8 | cotton voile,linen
+suede wristlet in cognac | 0.3 | 0.6-0.8 | linen,silk

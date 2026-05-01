@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+plaid tartan | 0.6 | top,bottom,outerwear | 0.3-0.8
+argyle pattern | 0.5 | top,outerwear | 0.3-0.7
+collegiate crest | 0.5 | top,outerwear | 0.3-0.8
+varsity letter | 0.4 | top,outerwear | 0.1-0.5
+houndstooth check | 0.4 | bottom,outerwear | 0.3-0.7
+gingham check | 0.3 | top,bottom | 0.2-0.6
+windowpane check | 0.4 | bottom,outerwear | 0.4-0.7
+crested embroidery | 0.4 | top,outerwear,bag | 0.3-0.8
+oxford stripe | 0.4 | top | 0.3-0.7
+ivy emblem | 0.3 | top,outerwear,bag | 0.3-0.8

@@ -1,0 +1,17 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+classic tote | 0.55 | 0.2-0.5 | canvas,leather
+woven beach bag | 0.40 | 0.1-0.4 | straw,jute
+golf pouch | 0.30 | 0.1-0.4 | leather,nylon
+
+# mid-casual
+bucket purse | 0.40 | 0.3-0.6 | leather,suede
+saddle bag | 0.45 | 0.3-0.6 | leather
+top-handle satchel | 0.50 | 0.3-0.7 | leather,suede
+
+# formal
+structured handbag | 0.55 | 0.4-0.8 | leather,suede
+quilted clutch | 0.40 | 0.5-0.8 | leather,silk
+chain shoulder bag | 0.45 | 0.4-0.8 | leather

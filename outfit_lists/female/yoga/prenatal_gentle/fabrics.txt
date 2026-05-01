@@ -1,0 +1,27 @@
+# format: fabric_name | formality | family | weight
+
+# soft stretch
+spandex | 0.1 | sporty | light
+bamboo | 0.1 | natural | light
+modal | 0.1 | natural | light
+jersey | 0.1 | casual | medium
+linen | 0.2 | natural | light
+
+# layers
+wool | 0.2 | natural | medium
+sherpa | 0.1 | casual | heavy
+
+# performance light
+nylon | 0.1 | sporty | light
+mesh | 0.1 | sporty | light
+
+# accents
+silk | 0.4 | luxury | light
+suede | 0.3 | luxury | medium
+velvet | 0.3 | luxury | medium
+leather | 0.3 | tough | medium
+
+# accessories
+metal | 0.5 | luxury | heavy
+canvas | 0.1 | casual | medium
+rubber | 0.1 | sporty | medium

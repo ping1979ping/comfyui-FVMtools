@@ -1,0 +1,10 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+red shoulder yoke with black torso | 0.55 | top | 0.2-0.9
+gold braid pattern on cuffs | 0.30 | top,outerwear | 0.5-1.0
+delta arrowhead emblem | 0.35 | top | 0.2-0.8
+rank pip cluster on collar | 0.40 | top | 0.3-1.0
+metallic admiral trim | 0.25 | outerwear | 0.7-1.0
+crimson side-stripe pattern | 0.30 | bottom | 0.4-1.0
+holo-projected division stripe | 0.20 | top,outerwear | 0.3-0.7
+gray torso panel pattern | 0.35 | top | 0.3-0.9

@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+panama hat | 0.55 | 0.1-0.4 | straw
+white sailor cap | 0.45 | 0.1-0.3 | cotton
+classic sun cap | 0.45 | 0.1-0.3 | cotton
+
+# mid-casual
+tied hairband | 0.45 | 0.2-0.6 | silk
+
+# formal
+wide-brim sun hat | 0.40 | 0.3-0.7 | straw

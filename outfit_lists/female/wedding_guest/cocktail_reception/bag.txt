@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sleek envelope clutch in classic black | 0.7 | 0.7-1.0 | satin,charmeuse
+embellished mini bag in scarlet | 0.5 | 0.7-1.0 | silk,charmeuse
+chain-strap clutch in metallic gold | 0.5 | 0.7-1.0 | satin,charmeuse
+beaded box bag in champagne | 0.4 | 0.8-1.0 | silk,charmeuse
+patent finish wristlet in burgundy | 0.4 | 0.7-1.0 | satin,charmeuse
+crystal-encrusted minaudiere | 0.3 | 0.8-1.0 | silk,charmeuse
+sleek pouch clutch in navy | 0.4 | 0.7-0.9 | satin,silk

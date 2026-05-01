@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized cat-eye sunglasses | 0.65 | 0.1-0.3 | plastic
+layered gold chains | 0.60 | 0.1-0.4 | metal
+shell-pendant necklace | 0.50 | 0.1-0.3 | plastic,metal
+braided thin belt | 0.50 | 0.2-0.4 | leather
+soft hair tie | 0.40 | 0.2-0.4 | silk
+chunky resin bangles | 0.45 | 0.1-0.3 | plastic
+hoop earrings | 0.55 | 0.1-0.4 | metal
+ankle bracelet | 0.40 | 0.1-0.3 | metal
+floral hair pin | 0.40 | 0.1-0.4 | metal
+beaded choker | 0.40 | 0.1-0.3 | plastic

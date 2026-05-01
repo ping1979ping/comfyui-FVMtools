@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide-leg lounge pants | 0.90 | 0.0-0.3 | bamboo,modal
+#color# loose drawstring trousers | 0.80 | 0.0-0.3 | bamboo,modal
+#color# soft jogger pants | 0.75 | 0.0-0.2 | jersey,bamboo
+#color# harem pants | 0.65 | 0.0-0.2 | bamboo,modal
+#color# palazzo flow pants | 0.60 | 0.0-0.3 | bamboo,modal
+#color# tapered lounge pants | 0.65 | 0.0-0.2 | jersey,bamboo
+#color# relaxed-fit yoga pants | 0.85 | 0.0-0.2 | bamboo,modal
+#color# fold-over waistband leggings | 0.70 | 0.0-0.2 | bamboo,modal
+#color# loose cropped pants | 0.55 | 0.0-0.2 | bamboo,modal
+#color# soft track pants | 0.55 | 0.0-0.2 | jersey,bamboo

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+argyle pattern | 0.5 | top,outerwear | 0.3-0.7
+country crest emblem | 0.4 | top,outerwear | 0.3-0.7
+nautical stripes | 0.4 | top,bottom | 0.2-0.6
+monogram print | 0.3 | bag,accessories | 0.3-0.7
+gingham check | 0.4 | top,bottom | 0.2-0.6
+plaid pattern | 0.5 | top,bottom,outerwear | 0.3-0.7
+embroidered emblem | 0.3 | top,outerwear | 0.4-0.8
+solid pastel | 0.5 | top,bottom,outerwear | 0.2-0.7
+floral pattern | 0.3 | top | 0.3-0.6
+piped trim | 0.4 | top,outerwear | 0.3-0.6

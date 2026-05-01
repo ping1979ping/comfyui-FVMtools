@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+translucent overlay blouse with visible bralette | 0.80 | 0.2-0.5 | chiffon
+asymmetric draped top over bra | 0.70 | 0.2-0.4 | chiffon,polyester
+sheer paneled tunic | 0.65 | 0.2-0.4 | chiffon
+minimalist sleeveless top with peeking bra | 0.65 | 0.1-0.4 | jersey
+filmy long-sleeve blouse with visible bralette | 0.70 | 0.2-0.5 | chiffon
+gauzy boatneck top | 0.60 | 0.2-0.4 | polyester
+deep V-neck shell top | 0.55 | 0.2-0.4 | polyester,cotton
+oversized art-print tee | 0.55 | 0.1-0.3 | cotton
+crepe wrap blouse with peeking bra | 0.60 | 0.2-0.5 | polyester
+cropped turtleneck shell | 0.55 | 0.2-0.4 | jersey
+diaphanous overlay shirt | 0.60 | 0.2-0.4 | chiffon
+sleek tank top with visible bra | 0.60 | 0.1-0.3 | jersey

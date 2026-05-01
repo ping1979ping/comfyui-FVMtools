@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+drone shoulder armor with tubing harness | 0.65 | 0.0-0.7 | exo-armor,copper-conduit
+borg cuirass with chest implant | 0.55 | 0.0-0.7 | exo-armor,matte-graphite
+hive-collective cape with cable spine | 0.45 | 0.0-0.6 | nano-weave,copper-conduit
+liberated drone duster jacket | 0.40 | 0.2-0.6 | neoprene,biomesh
+unimatrix elite robe with chrome-plate trim | 0.40 | 0.3-0.8 | chrome-plate,nano-weave
+exo-armored vest with regen-port | 0.55 | 0.0-0.6 | exo-armor,polylatex
+queen-grade overcoat with copper filigree | 0.35 | 0.4-0.8 | copper-conduit,nano-weave
+former-drone overlayer with subtle ports | 0.40 | 0.2-0.6 | biomesh,neoprene

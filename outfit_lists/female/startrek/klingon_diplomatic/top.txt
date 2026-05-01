@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-house klingon ambassador robe top with bronze trim | 0.85 | 0.5-1.0 | brocade,silk-weave
+warrior-cut tunic with house crest on chest | 0.80 | 0.3-0.9 | warrior-mesh,bat-leather
+ceremonial sash-tunic with battle honors | 0.65 | 0.5-1.0 | brocade,velvet-blend
+high-collar ambassador dress top | 0.70 | 0.6-1.0 | silk-weave,brocade
+council chamber gown top with shoulder spikes | 0.55 | 0.5-1.0 | velvet-blend,spiked-hide
+duty tunic with chainmail accent panel | 0.60 | 0.3-0.8 | warrior-mesh,chainmail
+formal house lady dress top with bronze clasp | 0.50 | 0.6-1.0 | brocade,velvet-blend
+warrior diplomat blouse with armored shoulders | 0.55 | 0.4-0.9 | warrior-mesh,bat-leather
+ceremonial blood-wine reception tunic | 0.45 | 0.6-1.0 | velvet-blend,brocade
+ambassador robe top with obsidian collar | 0.50 | 0.6-1.0 | silk-weave,obsidian
+emissary dress top with bronze epaulets | 0.45 | 0.5-1.0 | brocade,bat-leather
+warrior diplomat sleeveless undertunic | 0.40 | 0.2-0.6 | warrior-mesh,bat-leather
+high-house mourning robe top in deep red | 0.40 | 0.7-1.0 | velvet-blend,silk-weave

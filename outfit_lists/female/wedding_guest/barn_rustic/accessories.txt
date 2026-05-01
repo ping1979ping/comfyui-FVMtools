@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+turquoise drop earrings | 0.5 | 0.6-0.9 | silk
+boho-style layered necklace | 0.5 | 0.6-0.9 | silk
+brown belt with vintage buckle | 0.4 | 0.6-0.8 | linen,silk
+wooden bangle bracelet | 0.4 | 0.6-0.8 | linen
+feather earrings | 0.4 | 0.6-0.8 | silk
+delicate pendant in rose gold | 0.5 | 0.7-0.9 | silk
+hammered cuff bracelet | 0.4 | 0.6-0.9 | silk
+amber cocktail ring | 0.3 | 0.6-0.8 | silk
+hoop earrings in antique gold | 0.4 | 0.6-0.9 | silk
+charm anklet | 0.3 | 0.6-0.8 | silk

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+all-over sequin shimmer | 0.5 | top,bottom | 0.8-1.0
+crystal beadwork detail | 0.5 | top,accessories | 0.8-1.0
+art-deco geometric motif | 0.3 | top,bottom | 0.8-1.0
+metallic foil accent | 0.3 | top,bag | 0.8-1.0
+embroidered baroque motif | 0.3 | top | 0.9-1.0
+shimmering glitter overlay | 0.3 | top,bottom | 0.8-1.0
+black tonal jacquard | 0.3 | top,bottom | 0.8-1.0
+glossy patent finish | 0.2 | bag,footwear | 0.8-1.0
+rhinestone scattered detail | 0.3 | top,accessories | 0.8-1.0
+opulent embroidered scrollwork | 0.3 | top,bottom | 0.9-1.0

@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+statement drop earrings | 0.75 | 0.5-0.8 | metal
+crystal collar necklace | 0.55 | 0.5-0.8 | metal
+delicate pendant necklace | 0.60 | 0.5-0.8 | metal
+stack of bangles | 0.50 | 0.4-0.7 | metal
+cocktail ring | 0.55 | 0.5-0.8 | metal
+pearl strand necklace | 0.50 | 0.5-0.8 | metal
+hoop earrings | 0.45 | 0.4-0.7 | metal
+tennis bracelet | 0.45 | 0.5-0.8 | metal
+beaded waist sash | 0.30 | 0.5-0.7 | beaded
+long evening gloves | 0.25 | 0.6-0.8 | silk,satin

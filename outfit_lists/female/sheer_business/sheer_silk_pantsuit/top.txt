@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+draped silk blouse | 0.85 | 0.7-1.0 | silk,chiffon
+sheer-front shirt | 0.75 | 0.7-1.0 | chiffon,silk
+fitted satin blouse | 0.70 | 0.7-1.0 | silk,polyester
+boatneck shell | 0.65 | 0.6-0.9 | silk,jersey
+high-neck pleated top | 0.60 | 0.7-1.0 | silk,chiffon
+deep V-neck silk blouse | 0.55 | 0.6-0.9 | silk,chiffon
+button-down silk shirt | 0.70 | 0.7-1.0 | silk
+camisole shell | 0.50 | 0.7-1.0 | silk,jersey
+fluid wrap blouse | 0.55 | 0.7-1.0 | silk,chiffon
+sheer-yoke top | 0.60 | 0.6-0.9 | chiffon,silk
+fitted long-sleeve top | 0.55 | 0.7-1.0 | silk,jersey

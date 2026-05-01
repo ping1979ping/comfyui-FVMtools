@@ -1,0 +1,18 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+woven straw bag | 0.65 | 0.1-0.4 | straw,jute
+floral tote | 0.55 | 0.1-0.4 | canvas,cotton
+basket purse | 0.50 | 0.1-0.4 | wicker,straw
+embroidered crossbody | 0.40 | 0.2-0.5 | cotton,leather
+
+# mid-casual
+top-handle bag | 0.50 | 0.3-0.7 | leather,suede
+bucket purse | 0.45 | 0.3-0.6 | leather,suede
+chain mini bag | 0.45 | 0.3-0.7 | leather
+
+# formal
+beaded clutch | 0.50 | 0.5-0.8 | silk,beads
+structured handbag | 0.50 | 0.4-0.8 | leather,suede
+satin evening pouch | 0.40 | 0.5-0.8 | silk

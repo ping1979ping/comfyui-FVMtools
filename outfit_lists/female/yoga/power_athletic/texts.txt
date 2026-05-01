@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"POWER" | 0.35 | top | bold sans-serif
+"STRONG" | 0.30 | top | bold sans-serif
+"PUSH HARDER" | 0.25 | top | bold sans-serif
+"NO LIMITS" | 0.25 | top | minimal bold
+"GRIND" | 0.25 | top | bold sans-serif
+"BEAST MODE" | 0.20 | top | bold sans-serif
+"FOCUS" | 0.25 | top | clean sans-serif
+"TRAIN" | 0.25 | top | minimal bold
+"CORE" | 0.20 | top | bold sans-serif
+"FLOW STRONG" | 0.20 | top | clean modern font
+"FIRE" | 0.20 | top | bold sans-serif

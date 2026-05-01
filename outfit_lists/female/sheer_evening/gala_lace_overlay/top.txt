@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scalloped overlay bodice | 0.85 | 0.6-0.9 | lace,mesh
+illusion neckline blouse | 0.75 | 0.6-0.9 | mesh,chiffon
+sheer paneled corset | 0.70 | 0.6-0.9 | beaded,satin
+filigree-embroidered top | 0.65 | 0.6-0.9 | lace,silk
+plunging illusion bodice | 0.70 | 0.6-0.9 | mesh,satin
+ornate floral overlay top | 0.65 | 0.7-0.9 | beaded,silk
+long-sleeve illusion blouse | 0.60 | 0.6-0.9 | mesh,chiffon
+strapless beaded bustier | 0.55 | 0.7-0.9 | beaded,satin
+high-neck embellished top | 0.50 | 0.6-0.9 | lace,silk
+sweetheart illusion top | 0.60 | 0.5-0.8 | mesh,satin
+draped silk blouse with embroidery | 0.55 | 0.6-0.8 | silk,chiffon

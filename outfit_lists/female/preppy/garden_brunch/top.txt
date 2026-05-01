@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+puff-sleeve blouse | 0.65 | 0.2-0.5 | cotton,silk
+floral camisole | 0.50 | 0.2-0.5 | cotton,silk
+ribbon-tie tank | 0.55 | 0.2-0.5 | cotton,linen
+peter pan collar top | 0.55 | 0.2-0.5 | cotton
+
+# mid-casual
+embroidered blouse | 0.60 | 0.3-0.7 | cotton,linen
+smocked top | 0.55 | 0.3-0.6 | cotton
+gingham puff blouse | 0.55 | 0.3-0.6 | cotton
+ruffled tank | 0.50 | 0.3-0.6 | cotton,silk
+
+# formal
+pussy-bow blouse | 0.50 | 0.5-0.8 | silk
+ruffled high-neck blouse | 0.50 | 0.4-0.8 | silk,cotton
+fitted lace top | 0.45 | 0.5-0.8 | lace,silk
+pleated chiffon blouse | 0.45 | 0.5-0.8 | chiffon,silk

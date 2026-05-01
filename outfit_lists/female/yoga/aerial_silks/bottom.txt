@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# full-length leggings | 1.00 | 0.0-0.2 | spandex,nylon
+#color# stirrup leggings | 0.75 | 0.0-0.2 | spandex,nylon
+#color# high-waisted leggings | 0.90 | 0.0-0.2 | spandex,nylon
+#color# unitard pants | 0.55 | 0.0-0.2 | spandex,nylon
+#color# bootcut performance pants | 0.55 | 0.0-0.2 | spandex,nylon
+#color# 7/8 fitted leggings | 0.75 | 0.0-0.2 | spandex,nylon
+#color# flared dance pants | 0.65 | 0.0-0.2 | spandex,nylon
+#color# capri leggings | 0.55 | 0.0-0.2 | spandex,nylon
+#color# foot-wrap leggings | 0.50 | 0.0-0.2 | spandex,nylon
+#color# mesh-insert leggings | 0.50 | 0.0-0.2 | spandex,mesh

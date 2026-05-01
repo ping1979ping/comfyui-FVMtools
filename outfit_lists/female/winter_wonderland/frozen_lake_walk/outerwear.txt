@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heavy parka | 0.70 | 0.1-0.3 | nylon,polyester
+puffer jacket | 0.65 | 0.1-0.3 | nylon,polyester
+hooded mountain jacket | 0.60 | 0.1-0.3 | nylon,polyester
+sherpa-lined chore jacket | 0.50 | 0.1-0.3 | cotton,polyester
+quilted barn jacket | 0.50 | 0.2-0.5 | polyester,nylon
+shearling-trimmed parka | 0.55 | 0.2-0.5 | nylon,suede
+belted long coat | 0.45 | 0.4-0.7 | wool,tweed
+hooded puffer | 0.55 | 0.1-0.3 | nylon,polyester
+ski-style jacket | 0.50 | 0.1-0.3 | nylon,polyester
+expedition-style parka | 0.45 | 0.1-0.3 | nylon,polyester

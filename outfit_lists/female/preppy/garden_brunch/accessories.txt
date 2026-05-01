@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ribbon waist sash | 0.50 | 0.1-0.5 | silk,cotton
+flower hairpin | 0.55 | 0.1-0.5 | metal,silk
+delicate anklet | 0.40 | 0.1-0.4 | metal
+oversized sunglasses | 0.55 | 0.1-0.5 | plastic,metal
+
+# mid-casual
+printed neck scarf | 0.50 | 0.2-0.6 | silk
+gold layered necklace | 0.50 | 0.3-0.7 | metal
+charm bracelet | 0.45 | 0.2-0.6 | metal
+ribbon belt | 0.50 | 0.2-0.6 | silk
+
+# formal
+pearl drop earrings | 0.55 | 0.4-0.8 | metal
+floral brooch | 0.40 | 0.5-0.8 | metal
+gold cuff bracelet | 0.40 | 0.4-0.8 | metal

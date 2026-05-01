@@ -1,0 +1,17 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+canvas tote | 0.50 | 0.2-0.5 | canvas,leather
+hunting satchel | 0.40 | 0.2-0.5 | leather,wax
+field bag | 0.40 | 0.2-0.5 | canvas,leather
+
+# mid-casual
+saddle purse | 0.55 | 0.3-0.7 | leather
+top-handle satchel | 0.50 | 0.3-0.7 | leather
+bridle-bit bag | 0.45 | 0.3-0.7 | leather
+
+# formal
+structured handbag | 0.55 | 0.4-0.8 | leather
+chain shoulder bag | 0.40 | 0.5-0.8 | leather
+quilted clutch | 0.40 | 0.5-0.8 | leather

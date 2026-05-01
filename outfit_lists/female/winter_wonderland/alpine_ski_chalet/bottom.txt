@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ski pants | 0.70 | 0.1-0.3 | nylon,polyester
+slim-fit thermal pants | 0.65 | 0.1-0.3 | fleece,cotton
+ribbed leggings | 0.60 | 0.1-0.3 | cotton,fleece
+cuffed trousers | 0.55 | 0.4-0.7 | wool,tweed
+chunky knit skirt | 0.40 | 0.3-0.6 | knit,wool
+quilted snow pants | 0.50 | 0.1-0.3 | nylon,polyester
+fitted cargo trousers | 0.45 | 0.2-0.5 | corduroy,cotton
+high-waist tweed pants | 0.40 | 0.4-0.7 | tweed,wool
+midi skirt with tights | 0.35 | 0.3-0.6 | knit,wool
+flared corduroy pants | 0.40 | 0.2-0.5 | corduroy

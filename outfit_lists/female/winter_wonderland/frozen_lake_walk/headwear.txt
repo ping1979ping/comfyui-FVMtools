@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cuffed beanie | 0.75 | 0.1-0.3 | wool,knit
+shearling-trimmed trapper | 0.55 | 0.1-0.3 | suede,leather
+chunky earflap hat | 0.50 | 0.1-0.3 | knit,wool
+hooded balaclava | 0.40 | 0.1-0.3 | fleece,wool

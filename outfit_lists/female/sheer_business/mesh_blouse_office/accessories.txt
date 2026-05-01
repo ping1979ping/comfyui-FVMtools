@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pearl earrings | 0.70 | 0.7-1.0 | metal
+slim watch | 0.75 | 0.6-1.0 | metal,leather
+delicate pendant necklace | 0.65 | 0.6-0.9 | metal
+stud earrings | 0.65 | 0.6-0.9 | metal
+thin office belt | 0.60 | 0.6-0.8 | leather
+neck scarf | 0.45 | 0.7-0.9 | silk
+gold bracelet | 0.40 | 0.6-0.9 | metal
+brooch pin | 0.30 | 0.8-1.0 | metal
+hoop earrings | 0.45 | 0.5-0.8 | metal

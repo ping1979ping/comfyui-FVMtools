@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+architectural drop earrings | 0.75 | 0.5-0.8 | metal
+sculptural collar necklace | 0.60 | 0.5-0.8 | metal
+modernist cuff bracelet | 0.55 | 0.5-0.8 | metal
+oversized statement ring | 0.55 | 0.5-0.8 | metal
+geometric drop earrings | 0.55 | 0.5-0.8 | metal
+long pendant necklace | 0.50 | 0.5-0.8 | metal
+mixed metal bangles | 0.45 | 0.5-0.8 | metal
+artful brooch | 0.40 | 0.5-0.8 | metal
+abstract chain choker | 0.45 | 0.5-0.8 | metal
+draped waist tie | 0.30 | 0.5-0.7 | silk,satin

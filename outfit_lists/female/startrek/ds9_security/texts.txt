@@ -1,0 +1,6 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"DS9 SECURITY" | 0.30 | accessories | bold block font
+"DEEP SPACE 9" | 0.20 | accessories | stencil font
+"BRIG OFFICER" | 0.15 | top | block font
+"STATION PATROL" | 0.20 | top | bold block font

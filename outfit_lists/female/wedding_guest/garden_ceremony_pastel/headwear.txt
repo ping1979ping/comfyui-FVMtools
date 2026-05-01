@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+fresh flower crown | 0.4 | 0.6-0.9 | silk,organza
+pastel hair ribbon | 0.3 | 0.6-0.9 | silk,charmeuse
+delicate floral fascinator | 0.4 | 0.7-1.0 | silk,organza
+pearl-detail headband | 0.3 | 0.7-1.0 | silk,charmeuse
+romantic wide-brim sun hat | 0.3 | 0.6-0.9 | silk,georgette

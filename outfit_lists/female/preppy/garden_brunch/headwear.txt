@@ -1,0 +1,14 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+floral crown | 0.45 | 0.1-0.4 | silk
+classic boater | 0.50 | 0.1-0.4 | straw
+ribbon hairband | 0.55 | 0.1-0.5 | silk
+
+# mid-casual
+wide-brim sun hat | 0.55 | 0.3-0.7 | straw
+embroidered headscarf | 0.40 | 0.2-0.6 | silk
+
+# formal
+fascinator hat | 0.40 | 0.5-0.8 | silk,feather

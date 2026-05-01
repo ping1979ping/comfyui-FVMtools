@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+evening clutch with delta clasp | 0.55 | 0.6-1.0 | satin,platinum
+diplomatic envelope folio under arm | 0.45 | 0.5-0.9 | silk-blend,satin
+ambassador dispatch case with platinum lock | 0.35 | 0.7-1.0 | velvet-blend,platinum
+embassy briefcase in burgundy | 0.30 | 0.5-0.9 | velvet-blend,satin
+ceremonial gift box on hip | 0.25 | 0.7-1.0 | brocade,silk-blend
+liaison shoulder satchel in cream | 0.30 | 0.4-0.8 | linen,silk-blend
+treaty document tube on shoulder | 0.30 | 0.6-1.0 | satin,platinum
+state dinner minaudiere | 0.30 | 0.8-1.0 | satin,gold-thread

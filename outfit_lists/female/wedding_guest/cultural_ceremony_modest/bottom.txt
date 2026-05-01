@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flowing maxi skirt in jewel red | 0.7 | 0.7-1.0 | silk,chiffon
+elegant column skirt in deep teal | 0.6 | 0.8-1.0 | satin,silk
+A-line floor-length skirt in saffron | 0.5 | 0.7-1.0 | silk,georgette
+embellished maxi in royal blue | 0.5 | 0.8-1.0 | brocade,silk
+flowing palazzo pants in plum | 0.5 | 0.7-0.9 | crepe,silk
+fitted floor-length skirt in emerald | 0.4 | 0.8-1.0 | satin,silk
+flared maxi skirt in turquoise | 0.4 | 0.7-1.0 | chiffon,silk
+embroidered hem skirt in ruby | 0.4 | 0.8-1.0 | silk,brocade
+modest A-line maxi in burnt orange | 0.4 | 0.7-1.0 | silk,charmeuse
+elegant flowing maxi in deep purple | 0.3 | 0.8-1.0 | silk,satin

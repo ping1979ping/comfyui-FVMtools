@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ditsy floral | 0.6 | top,bottom,bag | 0.2-0.7
+gingham check | 0.5 | top,bottom | 0.2-0.6
+pastel solid | 0.6 | top,bottom,outerwear | 0.2-0.7
+embroidered florals | 0.5 | top,outerwear,bag | 0.3-0.7
+polka dot | 0.4 | top,bottom | 0.2-0.6
+botanical print | 0.4 | top,bottom | 0.3-0.7
+lace overlay | 0.4 | top,outerwear | 0.4-0.8
+chiffon ruffles | 0.4 | top,bottom | 0.4-0.8
+ribbon trim | 0.5 | top,outerwear | 0.2-0.7
+broderie anglaise | 0.4 | top,bottom | 0.3-0.7

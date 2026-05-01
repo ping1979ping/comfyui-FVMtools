@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tropical palm motif | 0.5 | top,bottom | 0.6-0.9
+hibiscus floral pattern | 0.4 | top,bottom | 0.6-0.9
+ocean watercolor wash | 0.4 | top,bottom | 0.6-0.9
+sunset gradient effect | 0.3 | top,bottom | 0.6-0.9
+seashell-print pattern | 0.3 | top,bottom | 0.6-0.8
+exotic-bird motif | 0.3 | top,bottom | 0.6-0.9
+beachy stripe pattern | 0.3 | top,bottom | 0.6-0.8
+embroidered tropical detail | 0.4 | top,bag | 0.7-0.9
+coral-reef-inspired pattern | 0.3 | top,bottom | 0.6-0.9
+sun-bleached batik effect | 0.3 | top,bottom | 0.6-0.8
