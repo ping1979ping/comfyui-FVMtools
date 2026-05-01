@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sherwani-style coat | 0.55 | 0.8-1.0 | silk,wool blend
+nehru jacket | 0.65 | 0.7-1.0 | wool blend,cotton
+bandhgala jacket | 0.55 | 0.8-1.0 | wool blend,silk
+embroidered formal coat | 0.45 | 0.8-1.0 | silk,wool blend
+modest waistcoat | 0.55 | 0.8-1.0 | wool blend,silk
+long ceremonial robe | 0.40 | 0.8-1.0 | silk,cotton
+ivory dress jacket | 0.55 | 0.8-1.0 | wool blend,cotton
+formal bandhgala coat | 0.45 | 0.8-1.0 | wool blend
+ornate brocade jacket | 0.35 | 0.8-1.0 | silk,brocade
+classic suit jacket | 0.55 | 0.8-1.0 | wool blend

@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+large red Santa gift sack | 0.95 | 0.3-0.6 | velvet,cotton
+classic brown burlap toy bag | 0.55 | 0.3-0.5 | cotton
+red drawstring holiday pouch | 0.45 | 0.3-0.5 | velvet
+ornate gold-embroidered gift sack | 0.40 | 0.4-0.7 | brocade,satin
+crimson Santa carry bag | 0.50 | 0.3-0.6 | velvet,cotton
+deep red ceremonial gift pouch | 0.30 | 0.4-0.7 | brocade
+classic Father Christmas sack | 0.65 | 0.3-0.6 | velvet,cotton

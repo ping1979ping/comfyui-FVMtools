@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+black oxford shoes | 0.80 | 0.8-1.0 | leather
+formal cap-toe shoes | 0.65 | 0.8-1.0 | leather
+chelsea boots | 0.55 | 0.7-0.9 | leather
+wholecut dress shoes | 0.50 | 0.8-1.0 | leather
+dark brown brogues | 0.50 | 0.7-0.9 | leather
+monk strap shoes | 0.50 | 0.7-1.0 | leather
+soft-finish chukkas | 0.40 | 0.7-0.9 | suede
+plain-toe oxfords | 0.55 | 0.8-1.0 | leather
+polished derby shoes | 0.50 | 0.7-0.9 | leather

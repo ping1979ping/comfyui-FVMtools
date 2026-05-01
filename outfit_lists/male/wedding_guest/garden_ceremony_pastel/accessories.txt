@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+floral tie | 0.70 | 0.7-1.0 | silk
+pastel pocket square | 0.75 | 0.7-1.0 | silk,cotton,linen
+woven leather belt | 0.70 | 0.7-1.0 | leather
+boutonniere | 0.50 | 0.7-1.0 | silk
+knit-weave tie | 0.45 | 0.7-0.9 | silk
+botanical bow tie | 0.30 | 0.8-1.0 | silk
+pastel suspenders | 0.20 | 0.8-1.0 | silk
+tortoiseshell sunglasses | 0.55 | 0.7-0.9 | leather
+slim watch | 0.65 | 0.7-1.0 | leather
+folded pocket square | 0.40 | 0.7-0.9 | linen,cotton
+floral lapel pin | 0.35 | 0.7-1.0 | silk

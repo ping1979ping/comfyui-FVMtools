@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+tuxedo trousers | 0.90 | 0.9-1.0 | wool
+satin-stripe formal trousers | 0.75 | 0.9-1.0 | wool
+flat-front evening trousers | 0.60 | 0.8-1.0 | wool blend
+pleated black trousers | 0.45 | 0.9-1.0 | wool
+midnight blue tuxedo pants | 0.55 | 0.9-1.0 | wool
+formal black trousers | 0.70 | 0.8-1.0 | wool blend
+cummerbund-paired trousers | 0.30 | 0.9-1.0 | wool
+high-rise dress pants | 0.35 | 0.8-1.0 | wool blend
+pinstripe formal trousers | 0.25 | 0.8-1.0 | wool
+slim formal trousers | 0.50 | 0.8-1.0 | wool blend

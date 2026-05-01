@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Santa helper cap with white pompom | 0.95 | 0.3-0.5 | cotton,faux_fur
+red baseball cap with embroidered Santa logo | 0.65 | 0.3-0.5 | cotton
+red and white striped elf hat | 0.45 | 0.3-0.5 | cotton
+red beanie with white trim | 0.50 | 0.3-0.5 | cotton
+red holiday visor | 0.30 | 0.3-0.5 | cotton
+red Santa headband with reindeer antlers | 0.40 | 0.3-0.5 | polyester

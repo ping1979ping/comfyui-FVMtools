@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red chunky Santa cardigan | 0.80 | 0.3-0.6 | knit,wool
+plaid wool-blend hunting jacket | 0.55 | 0.3-0.6 | wool,flannel
+oversized cream shawl-collar cardigan | 0.50 | 0.3-0.6 | knit,cashmere
+red holiday quilted vest | 0.65 | 0.3-0.5 | cotton
+green festive zip-up cardigan | 0.45 | 0.3-0.5 | knit
+warm brown corduroy blazer | 0.40 | 0.4-0.6 | corduroy
+red fleece Christmas-themed pullover jacket | 0.55 | 0.3-0.5 | fleece
+toggle-fastened wool overcoat | 0.45 | 0.4-0.6 | wool
+cream cable-knit shawl wrap | 0.40 | 0.3-0.6 | knit,cashmere

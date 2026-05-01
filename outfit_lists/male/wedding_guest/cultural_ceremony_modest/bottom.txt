@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+churidar style trousers | 0.55 | 0.7-1.0 | cotton,silk
+pajama-style dress pants | 0.50 | 0.7-0.9 | cotton,linen
+straight-cut formal trousers | 0.75 | 0.7-1.0 | wool blend,cotton
+ivory dress pants | 0.55 | 0.7-1.0 | cotton,linen
+blended-fiber trousers | 0.45 | 0.8-1.0 | silk,wool blend
+modest-cut suit pants | 0.65 | 0.8-1.0 | wool blend
+heritage trousers | 0.50 | 0.7-0.9 | cotton,wool blend
+draped formal pants | 0.40 | 0.7-0.9 | cotton,silk
+flat-front pants | 0.55 | 0.7-1.0 | wool blend,cotton
+gold-toned trim trousers | 0.30 | 0.8-1.0 | silk,cotton

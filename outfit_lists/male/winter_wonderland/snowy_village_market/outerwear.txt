@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+waxed jacket | 0.65 | 0.2-0.5 | cotton,canvas
+peacoat | 0.55 | 0.4-0.7 | wool
+herringbone overcoat | 0.50 | 0.5-0.8 | wool,tweed
+puffer jacket | 0.60 | 0.1-0.3 | nylon,polyester
+sherpa-lined chore coat | 0.55 | 0.2-0.5 | cotton,fleece
+duffle coat | 0.50 | 0.4-0.7 | wool
+field jacket | 0.55 | 0.2-0.5 | cotton,canvas
+trucker jacket | 0.45 | 0.1-0.4 | denim,fleece
+quilted barn jacket | 0.50 | 0.2-0.5 | cotton,nylon
+loden coat | 0.40 | 0.5-0.8 | wool

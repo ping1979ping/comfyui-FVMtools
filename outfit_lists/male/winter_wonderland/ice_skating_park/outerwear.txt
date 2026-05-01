@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+puffer jacket | 0.75 | 0.1-0.3 | nylon,polyester
+peacoat | 0.55 | 0.4-0.7 | wool
+shell parka | 0.55 | 0.1-0.3 | nylon,polyester
+quilted gilet | 0.55 | 0.2-0.5 | nylon,polyester
+duffle coat | 0.50 | 0.4-0.7 | wool
+trench coat | 0.40 | 0.5-0.8 | wool,gabardine
+sherpa-lined jacket | 0.55 | 0.2-0.5 | cotton,fleece
+field jacket | 0.50 | 0.2-0.5 | cotton,canvas
+overshirt jacket | 0.55 | 0.2-0.5 | wool
+pile pullover | 0.50 | 0.1-0.3 | fleece,polyester

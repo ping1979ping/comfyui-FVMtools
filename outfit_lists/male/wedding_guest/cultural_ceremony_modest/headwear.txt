@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+none | 0.55 | 0.7-1.0 | silk
+ceremonial turban | 0.20 | 0.8-1.0 | silk,cotton
+ornate pagri | 0.10 | 0.8-1.0 | silk
+embroidered topi | 0.10 | 0.7-1.0 | cotton,silk
+fez-style cap | 0.05 | 0.7-1.0 | wool,silk

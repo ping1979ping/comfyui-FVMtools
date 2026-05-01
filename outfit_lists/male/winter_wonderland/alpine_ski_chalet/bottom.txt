@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ski pants | 0.75 | 0.1-0.3 | nylon,polyester
+salopettes | 0.55 | 0.1-0.3 | nylon,polyester
+insulated trousers | 0.60 | 0.2-0.5 | wool,nylon
+softshell pants | 0.50 | 0.1-0.3 | nylon,polyester
+brushed trousers | 0.45 | 0.3-0.6 | cotton,moleskin
+heavy chinos | 0.45 | 0.3-0.5 | cotton,wool
+cord trousers | 0.50 | 0.2-0.5 | corduroy
+fleece-lined jeans | 0.55 | 0.1-0.3 | denim,fleece
+thermal leggings | 0.40 | 0.1-0.3 | polyester,merino
+tailored flannels | 0.40 | 0.4-0.7 | wool,flannel

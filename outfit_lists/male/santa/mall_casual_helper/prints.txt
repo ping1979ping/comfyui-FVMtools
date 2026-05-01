@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+white trim | 0.70 | top,bottom,headwear | 0.3-0.5
+candy cane stripe | 0.40 | top,headwear | 0.3-0.5
+snowflake graphic | 0.35 | top | 0.3-0.5
+reindeer print | 0.25 | top | 0.3-0.5
+holly graphic | 0.20 | top | 0.3-0.5
+gingerbread motif | 0.20 | top | 0.3-0.5
+Christmas tree icon | 0.20 | top | 0.3-0.5
+star pattern | 0.15 | top,outerwear | 0.3-0.5

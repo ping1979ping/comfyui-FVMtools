@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+slim cocktail suit jacket | 0.85 | 0.8-1.0 | wool blend
+midnight navy blazer | 0.70 | 0.8-1.0 | wool blend
+sharkskin suit jacket | 0.50 | 0.8-1.0 | wool blend
+deep burgundy jacket | 0.40 | 0.8-1.0 | velvet,wool
+double-breasted blazer | 0.50 | 0.8-1.0 | wool
+peak-lapel jacket | 0.50 | 0.8-1.0 | wool blend
+slim waistcoat | 0.50 | 0.8-1.0 | wool blend,silk
+plush evening jacket | 0.30 | 0.8-1.0 | velvet
+charcoal sport coat | 0.55 | 0.7-1.0 | wool blend
+slim three-piece suit jacket | 0.40 | 0.8-1.0 | wool blend

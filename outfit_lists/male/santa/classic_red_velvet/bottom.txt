@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic red Santa trousers with white cuffs | 1.00 | 0.3-0.6 | velvet,faux_fur
+red Santa pants tucked into boots | 0.85 | 0.3-0.6 | velvet,cotton
+crimson Santa breeches | 0.65 | 0.3-0.6 | velvet
+deep red holiday trousers | 0.70 | 0.3-0.6 | velvet,satin
+ruby red ceremonial pants | 0.45 | 0.4-0.7 | velvet,brocade
+red suspender bottoms with white piping | 0.40 | 0.3-0.5 | velvet,cotton
+traditional red Santa knickerbockers | 0.35 | 0.3-0.5 | velvet
+classic red holiday pants with gold edging | 0.55 | 0.4-0.7 | velvet,satin
+red Father Christmas trousers | 0.75 | 0.3-0.6 | velvet,faux_fur
+red baggy Santa bottoms | 0.50 | 0.3-0.5 | velvet,cotton

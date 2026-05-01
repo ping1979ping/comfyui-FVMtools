@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+patent leather oxfords | 0.85 | 0.9-1.0 | leather
+black opera pumps | 0.30 | 0.9-1.0 | leather
+formal cap-toe shoes | 0.65 | 0.8-1.0 | leather
+black wholecut oxfords | 0.55 | 0.8-1.0 | leather
+glossy dress shoes | 0.65 | 0.8-1.0 | leather
+plain-toe black shoes | 0.55 | 0.8-1.0 | leather
+plush evening slippers | 0.20 | 0.8-1.0 | velvet
+black derby shoes | 0.40 | 0.7-0.9 | leather
+mirror-shine oxfords | 0.45 | 0.9-1.0 | leather

@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+mandarin collar shirt | 0.75 | 0.7-1.0 | cotton,linen,silk
+band collar dress shirt | 0.65 | 0.7-1.0 | cotton,linen
+embroidered tunic top | 0.50 | 0.7-0.9 | cotton,silk
+nehru collar shirt | 0.55 | 0.7-1.0 | cotton,silk
+long kurta-style shirt | 0.50 | 0.7-0.9 | cotton,linen,silk
+crisp white dress shirt | 0.85 | 0.7-1.0 | cotton,poplin,broadcloth
+pintuck mandarin shirt | 0.40 | 0.8-1.0 | cotton,silk
+ivory ceremonial shirt | 0.55 | 0.8-1.0 | cotton,silk
+ornate-yoke tunic | 0.40 | 0.7-0.9 | cotton,silk
+modest collared shirt | 0.55 | 0.7-1.0 | cotton,poplin
+fitted dress shirt | 0.55 | 0.7-1.0 | cotton,poplin

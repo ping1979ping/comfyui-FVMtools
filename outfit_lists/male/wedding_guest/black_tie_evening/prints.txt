@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+glossy lapel detail | 0.55 | outerwear | 0.8-1.0
+satin stripe trim | 0.55 | bottom | 0.8-1.0
+subtle jacquard | 0.30 | outerwear,accessories | 0.8-1.0
+embroidered detail | 0.20 | accessories | 0.8-1.0
+tone-on-tone pattern | 0.25 | accessories | 0.8-1.0
+pintuck pleat | 0.30 | top | 0.8-1.0
+herringbone weave | 0.20 | outerwear | 0.8-1.0
+midnight tonal sheen | 0.30 | outerwear | 0.8-1.0

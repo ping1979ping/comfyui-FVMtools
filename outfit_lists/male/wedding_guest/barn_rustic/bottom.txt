@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+brown chinos | 0.75 | 0.7-0.9 | cotton,twill
+khaki dress pants | 0.65 | 0.7-0.9 | cotton,twill
+dark wash trousers | 0.55 | 0.7-0.8 | denim
+heritage trousers | 0.55 | 0.7-0.9 | wool blend,cotton
+rust colored slacks | 0.45 | 0.7-0.9 | cotton,corduroy
+olive dress pants | 0.50 | 0.7-0.9 | cotton,twill
+ribbed velvet pants | 0.40 | 0.7-0.8 | corduroy
+charcoal trousers | 0.55 | 0.7-1.0 | wool blend
+flat-front pants | 0.50 | 0.7-0.9 | cotton,twill
+tweed-style trousers | 0.40 | 0.7-0.9 | wool blend

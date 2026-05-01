@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+none | 0.75 | 0.7-1.0 | linen
+panama style hat | 0.15 | 0.7-0.9 | linen
+straw boater | 0.05 | 0.7-0.9 | linen
+raffia beach hat | 0.05 | 0.7-0.8 | linen

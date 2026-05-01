@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sleek oxford shoes | 0.75 | 0.8-1.0 | leather
+tassel loafers | 0.55 | 0.7-0.9 | leather
+monk strap shoes | 0.55 | 0.7-1.0 | leather
+patent leather oxfords | 0.45 | 0.8-1.0 | leather
+chelsea boots | 0.45 | 0.7-0.9 | leather
+tasseled slip-ons | 0.40 | 0.7-0.9 | suede
+plain-toe derby shoes | 0.50 | 0.7-0.9 | leather
+plush evening slippers | 0.30 | 0.8-1.0 | velvet
+sleek brogues | 0.40 | 0.7-0.9 | leather

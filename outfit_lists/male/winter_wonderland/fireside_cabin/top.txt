@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky cardigan | 0.75 | 0.2-0.5 | wool,knit
+shawl-collar pullover | 0.65 | 0.2-0.5 | wool,knit
+button-down shirt | 0.70 | 0.1-0.3 | cotton,flannel
+henley shirt | 0.60 | 0.1-0.3 | cotton,fleece
+fisherman jumper | 0.55 | 0.2-0.5 | wool,knit
+ribbed long-sleeve | 0.55 | 0.1-0.3 | cotton
+brushed overshirt | 0.55 | 0.1-0.3 | flannel,cotton
+heavy turtleneck | 0.50 | 0.3-0.6 | wool,cashmere
+buffalo check shirt | 0.50 | 0.1-0.3 | flannel,cotton
+oatmeal pullover | 0.45 | 0.2-0.5 | wool,knit

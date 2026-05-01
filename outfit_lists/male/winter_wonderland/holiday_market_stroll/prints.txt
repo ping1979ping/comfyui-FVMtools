@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+plaid pattern | 0.65 | top,outerwear,accessories | 0.2-0.7
+fair isle pattern | 0.55 | top,accessories | 0.2-0.5
+nordic motif | 0.50 | top,outerwear | 0.2-0.5
+herringbone weave | 0.50 | outerwear,bottom | 0.4-0.7
+festive jacquard | 0.40 | top,accessories | 0.2-0.5
+windowpane check | 0.40 | outerwear,top | 0.4-0.7
+chunky cable knit | 0.50 | top,accessories | 0.2-0.5
+tartan pattern | 0.50 | top,accessories | 0.2-0.6
+houndstooth pattern | 0.35 | outerwear,headwear | 0.4-0.7
+solid heathered | 0.35 | top,outerwear | 0.2-0.5

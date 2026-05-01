@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+chunky cable knit | 0.55 | top,accessories | 0.2-0.5
+fair isle pattern | 0.45 | top,accessories | 0.2-0.5
+ribbed knit texture | 0.55 | top,accessories | 0.1-0.4
+quilted texture | 0.55 | outerwear | 0.2-0.5
+shearling trim | 0.45 | outerwear,headwear | 0.2-0.6
+solid heathered | 0.45 | top,outerwear | 0.1-0.4
+herringbone weave | 0.40 | outerwear,bottom | 0.3-0.6
+plaid pattern | 0.45 | top,outerwear | 0.2-0.5
+buffalo check | 0.40 | top,outerwear | 0.1-0.4
+camo print | 0.30 | outerwear,bottom | 0.1-0.4

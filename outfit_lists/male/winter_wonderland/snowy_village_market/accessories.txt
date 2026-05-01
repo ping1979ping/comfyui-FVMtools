@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky scarf | 0.75 | 0.1-0.4 | wool,knit
+plaid muffler | 0.55 | 0.2-0.5 | wool
+driving gloves | 0.65 | 0.3-0.6 | leather
+ribbed gloves | 0.55 | 0.1-0.3 | wool,knit
+braided belt | 0.55 | 0.3-0.6 | leather
+silver wristwatch | 0.45 | 0.3-0.6 | metal
+ribbed socks | 0.50 | 0.1-0.3 | wool,knit
+suspenders | 0.25 | 0.4-0.7 | leather
+pocket square | 0.20 | 0.5-0.8 | cotton
+silver chain | 0.25 | 0.2-0.5 | metal

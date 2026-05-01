@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+charcoal trousers | 0.85 | 0.8-1.0 | wool
+heavyweight wool trousers | 0.70 | 0.8-1.0 | wool
+brushed dress pants | 0.60 | 0.7-0.9 | wool blend,flannel
+midnight blue trousers | 0.55 | 0.8-1.0 | wool
+pleated formal trousers | 0.45 | 0.8-1.0 | wool
+dark grey suit pants | 0.65 | 0.8-1.0 | wool blend
+tweed-style trousers | 0.40 | 0.7-0.9 | wool blend
+slim formal trousers | 0.50 | 0.8-1.0 | wool blend
+dark brown trousers | 0.40 | 0.7-0.9 | wool blend

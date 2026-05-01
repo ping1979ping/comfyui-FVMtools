@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Santa helper polo shirt | 1.00 | 0.3-0.5 | cotton,polyester
+red Santa t-shirt with white trim | 0.85 | 0.3-0.5 | cotton
+red and white striped helper shirt | 0.70 | 0.3-0.5 | cotton
+red zipped Santa hoodie | 0.75 | 0.3-0.5 | fleece,cotton
+red checked holiday button-up | 0.55 | 0.3-0.5 | flannel,cotton
+red Christmas elf-style top | 0.45 | 0.3-0.5 | cotton,polyester
+casual red Santa pullover | 0.65 | 0.3-0.5 | fleece,cotton
+red cotton long-sleeve Santa shirt | 0.60 | 0.3-0.5 | cotton
+festive red mall helper jersey | 0.50 | 0.3-0.5 | polyester,cotton
+red Santa workshop tee with white piping | 0.45 | 0.3-0.5 | cotton
+relaxed red holiday henley | 0.55 | 0.3-0.5 | cotton,fleece

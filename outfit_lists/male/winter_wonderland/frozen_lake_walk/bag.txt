@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+trail backpack | 0.55 | 0.1-0.3 | nylon
+rolltop rucksack | 0.45 | 0.1-0.4 | nylon,canvas
+hip pack | 0.40 | 0.1-0.3 | nylon
+sling pack | 0.35 | 0.1-0.3 | nylon
+weathered backpack | 0.40 | 0.1-0.4 | leather,canvas
+cotton duffel | 0.35 | 0.1-0.4 | canvas
+chest pouch | 0.30 | 0.1-0.3 | nylon
+crossbody pouch | 0.30 | 0.2-0.5 | leather,nylon

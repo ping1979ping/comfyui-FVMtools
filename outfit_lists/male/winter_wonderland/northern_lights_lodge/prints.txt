@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+fair isle pattern | 0.65 | top,accessories,headwear | 0.2-0.5
+nordic motif | 0.60 | top,outerwear,accessories | 0.2-0.5
+chunky cable knit | 0.55 | top,accessories | 0.2-0.5
+icelandic motif | 0.50 | top,accessories | 0.2-0.5
+herringbone weave | 0.50 | outerwear,bottom | 0.4-0.7
+shearling trim | 0.50 | outerwear,headwear | 0.2-0.6
+heritage plaid | 0.45 | top,outerwear | 0.2-0.5
+quilted stitching | 0.40 | outerwear | 0.2-0.5
+solid heathered | 0.40 | top,outerwear | 0.2-0.5
+ribbed knit texture | 0.45 | top,accessories | 0.2-0.5

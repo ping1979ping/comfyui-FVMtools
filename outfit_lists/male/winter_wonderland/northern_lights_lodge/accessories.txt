@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heritage scarf | 0.75 | 0.2-0.5 | wool,cashmere
+driving gloves | 0.65 | 0.3-0.6 | leather
+ribbed gloves | 0.55 | 0.1-0.3 | wool,knit
+heavy socks | 0.55 | 0.1-0.3 | wool,knit
+neck gaiter | 0.50 | 0.1-0.3 | fleece,merino
+silver wristwatch | 0.45 | 0.3-0.6 | metal
+ear warmers | 0.45 | 0.1-0.3 | knit,fleece
+silver bracelet | 0.30 | 0.2-0.5 | metal
+braided wristband | 0.30 | 0.1-0.4 | leather
+nordic-trim scarf | 0.50 | 0.2-0.5 | wool,knit

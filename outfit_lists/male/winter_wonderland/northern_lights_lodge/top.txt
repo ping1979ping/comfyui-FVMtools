@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+nordic motif sweater | 0.70 | 0.2-0.5 | wool,knit
+fair isle pullover | 0.65 | 0.2-0.5 | wool,knit
+heavy turtleneck | 0.65 | 0.2-0.5 | wool,cashmere
+icelandic jumper | 0.55 | 0.2-0.5 | wool,knit
+chunky cable pullover | 0.55 | 0.2-0.5 | wool,knit
+roll-neck sweater | 0.55 | 0.3-0.6 | cashmere,wool
+zip-neck pullover | 0.50 | 0.2-0.5 | wool,fleece
+brushed long-sleeve | 0.50 | 0.1-0.3 | cotton,fleece
+heritage pullover | 0.50 | 0.2-0.5 | wool,knit
+shawl-collar sweater | 0.50 | 0.2-0.5 | wool,knit

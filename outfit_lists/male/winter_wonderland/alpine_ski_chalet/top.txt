@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+base layer | 0.70 | 0.1-0.4 | merino,knit
+turtleneck | 0.65 | 0.3-0.6 | wool,cashmere,knit
+zip-neck pullover | 0.60 | 0.2-0.5 | wool,fleece
+fair isle sweater | 0.55 | 0.2-0.5 | wool,knit
+chunky cardigan | 0.50 | 0.2-0.5 | wool,knit
+ribbed thermal | 0.55 | 0.1-0.3 | cotton,fleece
+ski mid-layer | 0.45 | 0.1-0.3 | fleece,polyester
+half-zip sweater | 0.50 | 0.3-0.6 | wool,cashmere
+quarter-zip pullover | 0.55 | 0.2-0.5 | fleece,knit
+nordic pullover | 0.45 | 0.2-0.5 | wool,knit

@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+none | 0.92 | 0.8-1.0 | leather
+slim cardholder | 0.04 | 0.8-1.0 | leather
+formal billfold | 0.02 | 0.8-1.0 | leather
+silk pouch | 0.01 | 0.9-1.0 | silk
+small evening case | 0.01 | 0.9-1.0 | leather
+black leather portfolio | 0.02 | 0.8-1.0 | leather
+gift box | 0.02 | 0.8-1.0 | satin

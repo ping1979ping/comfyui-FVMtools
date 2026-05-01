@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+knit tie | 0.65 | 0.7-0.9 | wool,silk
+brown leather belt | 0.75 | 0.7-1.0 | leather
+folded pocket square | 0.55 | 0.7-1.0 | cotton,silk
+suspenders | 0.45 | 0.8-1.0 | wool blend
+boutonniere | 0.45 | 0.7-1.0 | silk
+vintage-style watch | 0.65 | 0.7-1.0 | leather
+plaid bow tie | 0.30 | 0.8-1.0 | cotton,silk
+woven-strap belt | 0.45 | 0.7-0.9 | leather
+copper cufflinks | 0.45 | 0.8-1.0 | silk
+heritage tie clip | 0.35 | 0.8-1.0 | silk
+flat cap accent | 0.20 | 0.7-0.9 | wool blend

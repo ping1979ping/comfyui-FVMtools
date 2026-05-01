@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red helper name badge | 0.85 | 0.3-0.5 | metal
+white knit holiday gloves | 0.60 | 0.3-0.5 | cotton
+striped candy cane | 0.50 | 0.3-0.5 |
+green elf-style suspenders | 0.45 | 0.3-0.5 | cotton
+silver bell necklace | 0.40 | 0.3-0.5 | metal
+red Christmas-themed wristband | 0.35 | 0.3-0.5 | cotton
+walkie-talkie clipped to belt | 0.30 | 0.3-0.5 | metal
+holiday-themed lanyard | 0.55 | 0.3-0.5 | polyester
+red Santa-helper cap pin | 0.30 | 0.3-0.5 | metal
+candy striped mall scarf | 0.45 | 0.3-0.5 | cotton

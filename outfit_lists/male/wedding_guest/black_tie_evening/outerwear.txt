@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+black tuxedo jacket | 0.90 | 0.9-1.0 | wool
+midnight blue dinner jacket | 0.55 | 0.9-1.0 | wool
+shawl-collar tuxedo | 0.60 | 0.9-1.0 | wool
+peak-lapel formal jacket | 0.50 | 0.9-1.0 | wool
+double-breasted dinner jacket | 0.40 | 0.9-1.0 | wool
+white dinner jacket | 0.20 | 0.9-1.0 | wool blend
+plush smoking jacket | 0.30 | 0.9-1.0 | velvet
+formal waistcoat | 0.55 | 0.9-1.0 | satin,silk
+cummerbund | 0.45 | 0.9-1.0 | silk,satin
+classic dinner jacket | 0.65 | 0.9-1.0 | wool

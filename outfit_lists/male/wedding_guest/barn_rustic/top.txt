@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+chambray button-up | 0.75 | 0.7-0.9 | cotton,denim
+plaid dress shirt | 0.65 | 0.7-0.9 | cotton,flannel
+white oxford shirt | 0.80 | 0.7-1.0 | cotton,poplin
+work-style shirt | 0.55 | 0.7-0.8 | denim,cotton
+cream button-down | 0.60 | 0.7-0.9 | cotton,linen
+heritage check shirt | 0.55 | 0.7-0.9 | cotton,flannel
+rolled-sleeve shirt | 0.50 | 0.7-0.8 | cotton,linen
+fitted dress shirt | 0.55 | 0.7-1.0 | cotton,poplin
+brown-toned shirt | 0.50 | 0.7-0.9 | cotton,linen
+spread collar shirt | 0.45 | 0.7-1.0 | cotton,poplin

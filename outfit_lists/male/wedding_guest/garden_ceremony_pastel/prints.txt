@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral pattern | 0.45 | accessories | 0.6-1.0
+delicate paisley | 0.30 | accessories | 0.6-1.0
+subtle stripe | 0.30 | top,bottom | 0.6-1.0
+botanical print | 0.30 | accessories | 0.6-1.0
+pastel gingham | 0.25 | top | 0.6-0.9
+soft polka dots | 0.20 | accessories | 0.6-1.0
+tonal pattern | 0.25 | top,outerwear | 0.6-1.0
+windowpane check | 0.25 | outerwear | 0.7-1.0
+herringbone weave | 0.20 | outerwear | 0.7-1.0
+seersucker stripe | 0.30 | outerwear,bottom | 0.7-0.9

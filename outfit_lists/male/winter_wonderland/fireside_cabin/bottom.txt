@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flannel-lined pants | 0.70 | 0.1-0.3 | cotton,flannel
+worn jeans | 0.65 | 0.1-0.3 | denim
+brushed trousers | 0.60 | 0.3-0.6 | cotton,moleskin
+relaxed chinos | 0.55 | 0.2-0.5 | cotton
+cord trousers | 0.55 | 0.2-0.5 | corduroy
+loose lounge pants | 0.45 | 0.1-0.2 | fleece,cotton
+fleece-lined trousers | 0.55 | 0.1-0.3 | nylon,fleece
+selvedge jeans | 0.50 | 0.1-0.4 | denim
+brushed twill trousers | 0.45 | 0.2-0.5 | cotton
+heavyweight chinos | 0.50 | 0.3-0.5 | cotton

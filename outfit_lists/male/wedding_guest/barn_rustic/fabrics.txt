@@ -1,0 +1,13 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.6 | natural | medium
+wool | 0.7 | natural | medium
+wool blend | 0.7 | natural | medium
+linen | 0.6 | natural | light
+twill | 0.6 | natural | medium
+poplin | 0.7 | natural | light
+denim | 0.4 | natural | medium
+flannel | 0.5 | natural | medium
+corduroy | 0.5 | natural | medium
+silk | 0.8 | natural | light
+suede | 0.6 | animal | medium
+leather | 0.6 | animal | medium

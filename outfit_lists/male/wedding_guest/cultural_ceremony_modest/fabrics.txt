@@ -1,0 +1,11 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.6 | natural | medium
+linen | 0.6 | natural | light
+silk | 0.9 | natural | light
+wool | 0.8 | natural | medium
+wool blend | 0.7 | natural | medium
+poplin | 0.7 | natural | light
+broadcloth | 0.8 | natural | light
+satin | 0.8 | synthetic | light
+brocade | 0.9 | natural | medium
+leather | 0.6 | animal | medium

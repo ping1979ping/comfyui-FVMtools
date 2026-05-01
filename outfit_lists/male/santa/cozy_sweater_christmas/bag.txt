@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cream knitted holiday tote | 0.75 | 0.3-0.5 | knit,wool
+brown corduroy carry bag | 0.55 | 0.3-0.5 | corduroy
+red tartan gift sack | 0.60 | 0.3-0.5 | flannel,wool
+plaid winter satchel | 0.50 | 0.3-0.6 | flannel
+red Christmas-themed shoulder bag | 0.50 | 0.3-0.5 | cotton
+cozy fair-isle drawstring pouch | 0.45 | 0.3-0.5 | knit

@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+tweed jacket | 0.70 | 0.7-0.9 | wool blend
+heritage waistcoat | 0.65 | 0.7-0.9 | wool blend,cotton
+brown sport coat | 0.60 | 0.7-0.9 | wool blend
+ribbed velvet blazer | 0.50 | 0.7-0.9 | corduroy
+patch-pocket jacket | 0.50 | 0.7-0.9 | wool blend,cotton
+herringbone jacket | 0.55 | 0.7-1.0 | wool blend
+rustic three-piece jacket | 0.40 | 0.8-1.0 | wool blend
+elbow-patched blazer | 0.45 | 0.7-0.9 | wool blend
+flannel-lined jacket | 0.40 | 0.7-0.8 | wool blend
+country waistcoat | 0.45 | 0.7-0.9 | wool blend,cotton

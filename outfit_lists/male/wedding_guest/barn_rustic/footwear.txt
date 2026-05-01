@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+brown leather boots | 0.75 | 0.7-0.9 | leather
+rugged dress shoes | 0.60 | 0.7-0.9 | leather
+chukka boots | 0.65 | 0.7-0.9 | suede,leather
+oiled-finish derby shoes | 0.55 | 0.7-0.9 | leather
+brown brogues | 0.55 | 0.7-0.9 | leather
+chelsea boots | 0.55 | 0.7-0.9 | leather,suede
+tan loafers | 0.45 | 0.7-0.9 | leather
+work-style oxfords | 0.40 | 0.7-0.9 | leather
+soft-finish chukkas | 0.50 | 0.7-0.9 | suede
+country brogue boots | 0.40 | 0.7-0.9 | leather

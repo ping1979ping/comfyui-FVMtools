@@ -1,0 +1,4 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NAUGHTY OR NICE" | 0.10 | top | playful serif
+"MERRY CHRISTMAS" | 0.15 | top | classic serif
+"SEASONS GREETINGS" | 0.10 | top | classic serif

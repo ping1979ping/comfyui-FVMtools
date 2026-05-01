@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+fair-isle pattern | 0.55 | top,headwear,outerwear | 0.3-0.6
+snowflake design | 0.45 | top,bottom | 0.3-0.6
+reindeer motif | 0.40 | top | 0.3-0.6
+Christmas tree graphic | 0.30 | top | 0.3-0.5
+gingerbread design | 0.25 | top | 0.3-0.5
+plaid pattern | 0.35 | top,outerwear | 0.3-0.6
+cable-knit texture | 0.40 | top,outerwear | 0.3-0.6
+snowman illustration | 0.20 | top | 0.3-0.5
+star embroidery | 0.20 | top,headwear | 0.3-0.6

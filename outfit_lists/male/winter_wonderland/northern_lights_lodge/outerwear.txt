@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shearling jacket | 0.65 | 0.2-0.5 | suede,leather
+heavy parka | 0.60 | 0.1-0.3 | nylon,polyester
+loden coat | 0.55 | 0.5-0.8 | wool,tweed
+sherpa-lined chore coat | 0.55 | 0.2-0.5 | cotton,fleece
+puffer jacket | 0.55 | 0.1-0.3 | nylon,polyester
+heritage overcoat | 0.50 | 0.5-0.8 | wool,tweed
+field jacket | 0.50 | 0.2-0.5 | cotton,canvas
+quilted gilet | 0.50 | 0.2-0.5 | nylon,polyester
+shawl-collar coat | 0.45 | 0.4-0.7 | wool
+heavy waxed jacket | 0.50 | 0.2-0.5 | cotton,canvas

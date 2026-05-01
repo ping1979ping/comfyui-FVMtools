@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+insulated trousers | 0.65 | 0.1-0.3 | nylon,polyester
+heavy chinos | 0.55 | 0.3-0.5 | cotton,wool
+fleece-lined jeans | 0.65 | 0.1-0.3 | denim,fleece
+brushed trousers | 0.55 | 0.3-0.6 | cotton,moleskin
+softshell pants | 0.50 | 0.1-0.3 | nylon,polyester
+cargo trousers | 0.50 | 0.1-0.3 | cotton,nylon
+heavyweight jeans | 0.55 | 0.1-0.4 | denim
+cord trousers | 0.50 | 0.2-0.5 | corduroy
+thermal-lined pants | 0.55 | 0.1-0.3 | nylon,fleece
+brushed twill trousers | 0.45 | 0.2-0.5 | cotton

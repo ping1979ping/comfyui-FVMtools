@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+unstructured linen blazer | 0.70 | 0.7-0.9 | linen
+white tropical jacket | 0.55 | 0.7-0.9 | linen,cotton
+beige sport coat | 0.55 | 0.7-0.9 | linen,cotton
+sand-colored blazer | 0.55 | 0.7-0.9 | linen,cotton
+cream summer jacket | 0.50 | 0.7-0.9 | linen,cotton
+pastel resort blazer | 0.40 | 0.7-0.9 | linen,cotton
+double-breasted resort jacket | 0.30 | 0.8-1.0 | linen
+relaxed cotton jacket | 0.45 | 0.7-0.8 | cotton,twill
+soft-shouldered blazer | 0.40 | 0.7-0.9 | linen,cotton
+ivory dinner jacket | 0.30 | 0.8-1.0 | linen,wool blend

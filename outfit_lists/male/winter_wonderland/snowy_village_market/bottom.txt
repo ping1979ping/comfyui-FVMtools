@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dark denim jeans | 0.70 | 0.1-0.4 | denim
+brushed chinos | 0.60 | 0.3-0.5 | cotton
+cord trousers | 0.55 | 0.2-0.5 | corduroy
+heavy trousers | 0.50 | 0.4-0.7 | wool,tweed
+brushed pants | 0.45 | 0.3-0.6 | cotton,moleskin
+five-pocket cords | 0.50 | 0.2-0.5 | corduroy
+straight-leg jeans | 0.55 | 0.1-0.4 | denim
+fleece-lined trousers | 0.45 | 0.1-0.3 | nylon,fleece
+herringbone trousers | 0.40 | 0.4-0.7 | wool,tweed
+flannel-lined pants | 0.45 | 0.1-0.3 | cotton,flannel

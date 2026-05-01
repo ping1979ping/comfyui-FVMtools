@@ -1,0 +1,9 @@
+# format: fabric_name | formality | family | weight
+wool | 0.4 | natural | heavy
+knit | 0.3 | natural | heavy
+cotton | 0.3 | natural | medium
+fleece | 0.3 | casual | heavy
+corduroy | 0.4 | classic | medium
+cashmere | 0.6 | luxury | medium
+flannel | 0.3 | casual | medium
+metal | 0.5 | luxury | heavy

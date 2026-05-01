@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+festive pullover | 0.65 | 0.2-0.5 | wool,knit
+roll-neck sweater | 0.60 | 0.3-0.6 | cashmere,wool
+crew-neck jumper | 0.65 | 0.2-0.5 | knit,wool
+oxford button-down | 0.55 | 0.4-0.7 | cotton
+fair isle pullover | 0.55 | 0.2-0.5 | wool,knit
+nordic motif sweater | 0.50 | 0.2-0.5 | wool,knit
+v-neck pullover | 0.50 | 0.3-0.6 | cashmere,knit
+button-down shirt | 0.55 | 0.1-0.3 | cotton,flannel
+striped jumper | 0.50 | 0.2-0.5 | wool,knit
+brushed long-sleeve | 0.45 | 0.1-0.3 | cotton

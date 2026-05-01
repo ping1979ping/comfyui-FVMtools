@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+waxed canvas rucksack | 0.45 | 0.1-0.4 | canvas,leather
+saddle holdall | 0.40 | 0.2-0.5 | leather
+cotton duffel | 0.40 | 0.1-0.4 | canvas
+saddle messenger | 0.35 | 0.3-0.6 | leather
+firewood satchel | 0.30 | 0.1-0.3 | canvas,leather
+hip pack | 0.25 | 0.1-0.3 | nylon
+weathered backpack | 0.40 | 0.1-0.4 | leather,canvas
+tote bag | 0.30 | 0.1-0.3 | canvas

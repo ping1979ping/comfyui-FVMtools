@@ -1,0 +1,5 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+none | 0.93 | 0.8-1.0 | wool
+black top hat | 0.05 | 0.9-1.0 | wool
+homburg hat | 0.02 | 0.9-1.0 | wool

@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embroidered slip-ons | 0.60 | 0.7-0.9 | leather,silk
+mojari style shoes | 0.50 | 0.7-0.9 | leather
+formal oxford shoes | 0.65 | 0.8-1.0 | leather
+ceremonial loafers | 0.55 | 0.7-0.9 | leather
+ivory dress shoes | 0.45 | 0.8-1.0 | leather
+black derby shoes | 0.55 | 0.7-1.0 | leather
+heritage leather slippers | 0.45 | 0.7-0.9 | leather
+ornate beaded slip-ons | 0.40 | 0.7-0.9 | silk,leather
+khussa style shoes | 0.40 | 0.7-0.9 | leather
+sleek dress shoes | 0.55 | 0.8-1.0 | leather

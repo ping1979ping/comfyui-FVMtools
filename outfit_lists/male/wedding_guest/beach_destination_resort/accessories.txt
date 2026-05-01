@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+braided belt | 0.70 | 0.7-0.9 | leather
+folded pocket square | 0.65 | 0.7-1.0 | linen
+floral tie | 0.45 | 0.7-1.0 | silk
+knit silk tie | 0.40 | 0.7-0.9 | silk
+boutonniere | 0.40 | 0.7-1.0 | silk
+sunglasses with tortoise frames | 0.65 | 0.7-0.9 | leather
+woven fabric belt | 0.45 | 0.7-0.8 | cotton
+casual sport watch | 0.55 | 0.7-0.9 | leather
+shell motif lapel pin | 0.25 | 0.7-0.9 | silk
+beach friendly bow tie | 0.20 | 0.8-1.0 | silk
+straw braid hatband | 0.25 | 0.7-0.9 | linen

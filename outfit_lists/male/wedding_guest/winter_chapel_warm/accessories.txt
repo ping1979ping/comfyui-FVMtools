@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+classic tie | 0.80 | 0.7-1.0 | silk
+luxe wool scarf | 0.55 | 0.7-1.0 | cashmere,wool
+dress gloves | 0.55 | 0.7-1.0 | leather
+folded pocket square | 0.65 | 0.7-1.0 | silk,cotton
+heritage belt | 0.70 | 0.7-1.0 | leather
+silver cufflinks | 0.50 | 0.8-1.0 | silk
+boutonniere | 0.40 | 0.8-1.0 | silk
+formal watch | 0.65 | 0.7-1.0 | leather
+knit tie | 0.40 | 0.7-0.9 | wool,silk
+warm wrap scarf | 0.40 | 0.7-0.9 | wool blend,cashmere
+suspenders | 0.20 | 0.8-1.0 | silk

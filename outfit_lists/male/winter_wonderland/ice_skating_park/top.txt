@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+striped pullover | 0.65 | 0.2-0.5 | wool,knit
+turtleneck | 0.60 | 0.3-0.6 | wool,cashmere
+fitted sweater | 0.55 | 0.2-0.5 | knit,cashmere
+thermal long-sleeve | 0.65 | 0.1-0.3 | cotton,fleece
+roll-neck top | 0.55 | 0.3-0.6 | wool,cashmere
+ribbed pullover | 0.55 | 0.2-0.5 | wool,knit
+crewneck sweater | 0.60 | 0.2-0.5 | knit,cotton
+zip-front fleece | 0.50 | 0.1-0.3 | fleece,polyester
+fair isle pullover | 0.45 | 0.2-0.5 | wool,knit
+breton long-sleeve | 0.40 | 0.2-0.5 | cotton,knit

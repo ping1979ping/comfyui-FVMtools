@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white holiday gloves | 0.85 | 0.3-0.6 | cotton
+round gold-framed spectacles | 0.70 | 0.3-0.6 | metal
+ornate pocket watch on gold chain | 0.55 | 0.4-0.7 | metal
+red and white candy cane | 0.40 | 0.3-0.5 |
+golden jingle bells | 0.35 | 0.3-0.5 | metal
+red bowtie with white snowflake | 0.30 | 0.4-0.7 | satin
+gold-embroidered scarf | 0.45 | 0.3-0.6 | satin
+silver pocket compass | 0.25 | 0.4-0.7 | metal
+holiday list scroll | 0.30 | 0.3-0.5 |
+gold cufflinks with snowflake design | 0.25 | 0.5-0.7 | metal

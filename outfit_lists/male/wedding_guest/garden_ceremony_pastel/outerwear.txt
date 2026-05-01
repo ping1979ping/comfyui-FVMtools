@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+beige blazer | 0.80 | 0.7-0.9 | wool blend,linen
+tan suit jacket | 0.70 | 0.8-1.0 | wool blend,cotton
+cream sport coat | 0.55 | 0.7-0.9 | linen,cotton
+sage green blazer | 0.50 | 0.7-0.9 | linen,wool blend
+unstructured linen jacket | 0.60 | 0.7-0.9 | linen
+light grey suit jacket | 0.55 | 0.8-1.0 | wool blend
+pastel waistcoat | 0.35 | 0.8-1.0 | wool blend,silk
+casual blazer | 0.50 | 0.7-0.9 | cotton,twill
+double-breasted summer jacket | 0.30 | 0.8-1.0 | linen,wool blend
+seersucker jacket | 0.30 | 0.7-0.9 | cotton

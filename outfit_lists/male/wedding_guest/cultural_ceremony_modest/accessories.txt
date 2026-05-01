@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+elegant shawl | 0.55 | 0.7-1.0 | silk,cotton
+embroidered stole | 0.50 | 0.7-1.0 | silk,cotton
+ornate brooch | 0.40 | 0.8-1.0 | silk
+gold-toned cufflinks | 0.45 | 0.8-1.0 | silk
+folded pocket square | 0.60 | 0.7-1.0 | silk,cotton
+ceremonial belt | 0.40 | 0.7-1.0 | leather,silk
+formal knot tie | 0.50 | 0.7-1.0 | silk
+dignified watch | 0.55 | 0.7-1.0 | leather
+prayer beads accent | 0.30 | 0.7-1.0 | silk
+boutonniere | 0.30 | 0.8-1.0 | silk
+heirloom lapel pin | 0.35 | 0.8-1.0 | silk

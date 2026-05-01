@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+saddle messenger | 0.45 | 0.3-0.6 | leather
+tote bag | 0.45 | 0.1-0.3 | canvas
+weekender holdall | 0.40 | 0.2-0.5 | leather,canvas
+market basket | 0.35 | 0.1-0.3 | wicker
+backpack | 0.40 | 0.1-0.4 | leather,nylon
+cross-body pouch | 0.30 | 0.2-0.5 | leather
+shopping holdall | 0.30 | 0.1-0.3 | canvas
+saddle satchel | 0.35 | 0.3-0.6 | leather

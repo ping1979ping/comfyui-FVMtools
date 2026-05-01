@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+slim pinstripe | 0.40 | outerwear,bottom | 0.7-1.0
+fine micro-check | 0.35 | top,outerwear | 0.7-1.0
+sheen jacquard | 0.30 | accessories | 0.7-1.0
+subtle stripe | 0.30 | top | 0.7-1.0
+geometric weave | 0.25 | accessories | 0.7-1.0
+tonal sheen | 0.30 | outerwear | 0.7-1.0
+diamond pattern | 0.30 | accessories | 0.7-1.0
+embroidered detail | 0.20 | accessories | 0.7-1.0
+sharkskin tonal | 0.30 | outerwear | 0.7-1.0

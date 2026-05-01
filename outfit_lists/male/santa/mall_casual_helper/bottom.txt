@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red cargo pants with white side stripe | 0.90 | 0.3-0.5 | cotton,polyester
+classic blue jeans for Santa helper | 0.80 | 0.3-0.5 | denim
+red sweatpants with white piping | 0.75 | 0.3-0.5 | fleece,cotton
+casual red khakis | 0.55 | 0.3-0.5 | cotton
+red drawstring jogger pants | 0.65 | 0.3-0.5 | cotton,polyester
+red corduroy holiday trousers | 0.45 | 0.3-0.5 | cotton
+red Santa workshop pants | 0.70 | 0.3-0.5 | cotton,fleece
+red track pants with white piping | 0.50 | 0.3-0.5 | polyester
+red holiday utility pants | 0.40 | 0.3-0.5 | cotton
+relaxed red mall helper bottoms | 0.60 | 0.3-0.5 | cotton

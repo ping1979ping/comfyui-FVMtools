@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+white trim | 0.70 | top,bottom,headwear | 0.3-0.7
+gold embroidery | 0.40 | top,outerwear | 0.4-0.7
+snowflake embroidery | 0.30 | top,headwear | 0.3-0.6
+holly pattern | 0.25 | top | 0.3-0.6
+candy cane stripe | 0.15 | top | 0.3-0.5
+gold filigree | 0.20 | top,outerwear | 0.5-0.7
+poinsettia motif | 0.15 | top | 0.4-0.7
+ornate scroll detailing | 0.20 | outerwear | 0.5-0.7

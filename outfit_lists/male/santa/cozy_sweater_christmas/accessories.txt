@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cream knitted holiday gloves | 0.80 | 0.3-0.6 | knit,wool
+red fair-isle scarf | 0.70 | 0.3-0.6 | knit,wool
+round wire-framed reading glasses | 0.55 | 0.3-0.6 | metal
+red plaid pocket square | 0.40 | 0.3-0.5 | flannel
+warm brown earmuffs | 0.45 | 0.3-0.5 | wool
+green tartan winter scarf | 0.45 | 0.3-0.6 | wool,flannel
+cozy mug of cocoa | 0.50 | 0.3-0.5 |
+red knitted mittens | 0.55 | 0.3-0.5 | knit,wool
+silver bell pendant | 0.30 | 0.3-0.5 | metal
+plaid suspenders | 0.35 | 0.3-0.5 | flannel

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Christmas pullover with reindeer pattern | 1.00 | 0.3-0.6 | knit,wool
+chunky cream Santa-themed jumper | 0.85 | 0.3-0.6 | knit,wool
+red cozy holiday sweater with snowflakes | 0.75 | 0.3-0.6 | knit
+green festive Christmas turtleneck | 0.55 | 0.3-0.6 | knit,wool
+red fair-isle Santa cardigan | 0.65 | 0.3-0.6 | knit,wool
+oversized red snowman pullover | 0.50 | 0.3-0.6 | knit
+maroon Christmas tree pullover | 0.55 | 0.3-0.6 | knit,wool
+plush red holiday fleece | 0.70 | 0.3-0.5 | fleece
+soft cream gingerbread-pattern pullover | 0.45 | 0.3-0.6 | knit,cashmere
+red plaid winter shirt | 0.60 | 0.3-0.5 | flannel,cotton
+warm red holiday henley | 0.50 | 0.3-0.5 | cotton,fleece
+ribbed red Christmas pullover with white trim | 0.55 | 0.3-0.6 | knit,wool

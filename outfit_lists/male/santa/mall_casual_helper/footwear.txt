@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red canvas Santa sneakers | 0.85 | 0.3-0.5 | cotton
+white running shoes with red laces | 0.75 | 0.3-0.5 | polyester
+casual brown work boots | 0.60 | 0.3-0.5 |
+red and white high-top trainers | 0.65 | 0.3-0.5 | cotton
+black slip-on Santa shoes | 0.55 | 0.3-0.5 |
+red holiday Crocs with jingle charms | 0.40 | 0.3-0.5 | polyester
+white cushioned mall walking shoes | 0.50 | 0.3-0.5 | polyester
+red elf-style holiday boots | 0.45 | 0.3-0.5 |
+classic black mall helper shoes | 0.55 | 0.3-0.5 |
+red Christmas-themed sneakers | 0.50 | 0.3-0.5 | cotton

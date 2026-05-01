@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wide black belt with gold buckle | 1.00 | 0.3-0.6 | leather
+ornate gold-buckled black waist belt | 0.70 | 0.3-0.6 | leather
+red ceremonial Santa cape with white trim | 0.45 | 0.4-0.7 | velvet,faux_fur
+deep red Santa overcoat with embroidered hem | 0.35 | 0.4-0.7 | velvet,brocade
+luxurious red Santa cloak | 0.40 | 0.4-0.7 | velvet,satin
+crimson holiday mantle | 0.30 | 0.4-0.7 | velvet,brocade
+heritage Santa shawl with gold tassels | 0.25 | 0.4-0.7 | velvet,satin
+black sash with brass detailing | 0.50 | 0.3-0.6 | leather
+red Father Christmas overcoat | 0.35 | 0.4-0.7 | velvet,faux_fur

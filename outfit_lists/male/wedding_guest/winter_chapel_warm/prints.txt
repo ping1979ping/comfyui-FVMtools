@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+herringbone weave | 0.50 | outerwear | 0.7-1.0
+window pane plaid | 0.35 | outerwear | 0.7-1.0
+subtle check | 0.40 | top,bottom | 0.7-1.0
+houndstooth motif | 0.30 | outerwear,accessories | 0.7-1.0
+glen plaid | 0.30 | outerwear | 0.7-1.0
+tonal pattern | 0.30 | top,accessories | 0.7-1.0
+embroidered detail | 0.20 | accessories | 0.7-1.0
+heritage tartan | 0.30 | accessories | 0.7-1.0
+pinstripe | 0.30 | bottom,outerwear | 0.7-1.0

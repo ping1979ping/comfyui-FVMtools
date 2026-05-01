@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+window pane plaid | 0.40 | top,outerwear | 0.6-1.0
+heritage tartan | 0.35 | accessories | 0.6-1.0
+herringbone weave | 0.40 | outerwear | 0.6-1.0
+gingham pattern | 0.35 | top | 0.6-0.9
+houndstooth motif | 0.30 | outerwear | 0.6-1.0
+subtle check | 0.40 | top,bottom | 0.6-1.0
+country tweed | 0.35 | outerwear | 0.6-1.0
+woven texture | 0.30 | accessories | 0.6-1.0
+floral embroidery | 0.20 | accessories | 0.6-1.0
+faded indigo wash | 0.25 | bottom | 0.6-0.8

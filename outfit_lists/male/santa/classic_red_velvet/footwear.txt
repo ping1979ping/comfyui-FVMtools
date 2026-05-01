@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic black Santa boots with white trim | 0.95 | 0.3-0.6 | leather,faux_fur
+tall polished black boots with golden buckle | 0.80 | 0.4-0.7 | leather
+black knee-high Santa boots | 0.75 | 0.3-0.6 | leather
+ornate buckled boots with gold accents | 0.55 | 0.4-0.7 | leather
+black riding-style holiday boots | 0.50 | 0.3-0.6 | leather
+deep brown polished Santa boots | 0.40 | 0.3-0.6 | leather
+glossy black boots with red laces | 0.45 | 0.3-0.5 | leather
+traditional Father Christmas boots | 0.70 | 0.3-0.6 | leather,faux_fur
+black ceremonial boots with brass buckles | 0.35 | 0.4-0.7 | leather
+classic Santa riding boots | 0.60 | 0.3-0.6 | leather

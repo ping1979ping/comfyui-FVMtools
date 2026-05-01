@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cream knitted Christmas slippers | 0.85 | 0.3-0.5 | knit,wool
+brown shearling-lined boots | 0.75 | 0.3-0.6 | wool
+red plaid house slippers | 0.65 | 0.3-0.5 | flannel
+warm tan suede ankle boots | 0.55 | 0.3-0.6 |
+cozy reindeer-pattern slipper socks | 0.50 | 0.3-0.5 | knit
+brown leather-look winter boots | 0.50 | 0.3-0.6 |
+red sock-style Christmas slippers | 0.45 | 0.3-0.5 | knit
+warm grey moccasins | 0.50 | 0.3-0.5 |
+chunky brown hiking boots | 0.40 | 0.3-0.5 |
+red holiday-themed slip-ons | 0.45 | 0.3-0.5 | wool

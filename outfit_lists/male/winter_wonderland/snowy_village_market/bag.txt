@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+saddle satchel | 0.40 | 0.3-0.6 | leather
+cotton messenger | 0.40 | 0.2-0.5 | canvas,leather
+weathered backpack | 0.45 | 0.1-0.4 | leather,canvas
+woven shopping bag | 0.30 | 0.1-0.3 | jute
+holdall | 0.35 | 0.2-0.5 | leather,canvas
+cross-body pouch | 0.30 | 0.2-0.5 | leather
+hip flask pouch | 0.20 | 0.2-0.5 | leather
+market basket | 0.30 | 0.1-0.3 | wicker

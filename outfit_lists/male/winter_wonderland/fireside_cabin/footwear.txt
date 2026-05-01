@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shearling-lined boots | 0.70 | 0.1-0.4 | leather,suede
+moccasin slippers | 0.65 | 0.1-0.2 | suede
+plush slippers | 0.55 | 0.1-0.2 | knit,suede
+duck boots | 0.55 | 0.1-0.3 | leather,rubber
+work boots | 0.55 | 0.1-0.3 | leather
+fleece-lined boots | 0.55 | 0.1-0.3 | leather,fleece
+moc-toe boots | 0.50 | 0.2-0.5 | leather
+chukka boots | 0.45 | 0.3-0.6 | suede,leather
+heavy socks with sandals | 0.20 | 0.1-0.2 | wool,leather
+shearling-lined slippers | 0.55 | 0.1-0.2 | suede,knit

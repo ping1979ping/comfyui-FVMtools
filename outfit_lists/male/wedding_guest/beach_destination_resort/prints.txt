@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tropical floral | 0.45 | accessories | 0.6-1.0
+hibiscus motif | 0.35 | accessories | 0.6-1.0
+palm leaf pattern | 0.30 | accessories | 0.6-0.9
+soft pastel stripe | 0.30 | top,bottom | 0.6-0.9
+embroidered vines | 0.25 | top | 0.6-0.9
+seersucker stripe | 0.30 | bottom,outerwear | 0.6-0.9
+oceanic blue gradient | 0.25 | accessories | 0.6-1.0
+textured weave | 0.25 | top,outerwear | 0.6-1.0
+woven jacquard | 0.20 | accessories | 0.6-1.0

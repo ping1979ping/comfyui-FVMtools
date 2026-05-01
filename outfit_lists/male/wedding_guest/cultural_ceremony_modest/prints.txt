@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ornate paisley | 0.50 | outerwear,accessories | 0.7-1.0
+gold thread embroidery | 0.45 | outerwear,accessories | 0.7-1.0
+heritage damask | 0.40 | outerwear | 0.7-1.0
+intricate jacquard | 0.40 | outerwear,accessories | 0.7-1.0
+floral embroidery | 0.45 | top,accessories | 0.7-1.0
+geometric border | 0.30 | outerwear | 0.7-1.0
+metallic accent | 0.35 | accessories | 0.7-1.0
+woven brocade | 0.40 | outerwear | 0.7-1.0
+subtle tonal sheen | 0.30 | top,outerwear | 0.7-1.0
+ornamental motif | 0.35 | accessories | 0.7-1.0

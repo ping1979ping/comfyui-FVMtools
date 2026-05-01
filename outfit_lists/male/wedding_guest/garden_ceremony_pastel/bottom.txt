@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+beige chinos | 0.80 | 0.7-0.9 | cotton,twill
+khaki dress pants | 0.70 | 0.7-0.9 | cotton,twill
+light grey trousers | 0.75 | 0.7-1.0 | wool blend,twill
+cream colored trousers | 0.60 | 0.7-0.9 | cotton,linen
+tan suit trousers | 0.65 | 0.8-1.0 | wool blend,cotton
+relaxed pants | 0.65 | 0.7-0.9 | linen
+flat-front dress pants | 0.55 | 0.7-0.9 | wool blend,twill
+sand colored trousers | 0.55 | 0.7-0.9 | linen,cotton
+pleated trousers | 0.30 | 0.8-1.0 | wool blend
+dove grey suit trousers | 0.45 | 0.8-1.0 | wool blend

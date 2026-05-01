@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heavy scarf | 0.70 | 0.1-0.4 | wool,knit
+fingerless gloves | 0.55 | 0.1-0.3 | wool,knit
+braided belt | 0.55 | 0.2-0.5 | leather
+heavy socks | 0.65 | 0.1-0.3 | wool,knit
+suspenders | 0.40 | 0.2-0.5 | leather
+pocket watch | 0.30 | 0.4-0.7 | metal
+silver ring | 0.30 | 0.2-0.5 | metal
+beard comb pouch | 0.20 | 0.1-0.3 | leather
+ribbed scarf | 0.55 | 0.2-0.5 | wool,knit
+braided wristband | 0.30 | 0.1-0.4 | leather

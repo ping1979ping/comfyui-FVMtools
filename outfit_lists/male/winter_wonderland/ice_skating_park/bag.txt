@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+skate bag | 0.50 | 0.1-0.3 | nylon,canvas
+crossbody pouch | 0.40 | 0.2-0.5 | leather,nylon
+backpack | 0.45 | 0.1-0.4 | nylon,leather
+gym duffel | 0.35 | 0.1-0.4 | nylon
+tote bag | 0.30 | 0.1-0.3 | canvas
+sling pack | 0.30 | 0.1-0.3 | nylon
+saddle satchel | 0.25 | 0.3-0.6 | leather
+hip pack | 0.30 | 0.1-0.3 | nylon

@@ -1,0 +1,8 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.3 | natural | medium
+fleece | 0.3 | casual | heavy
+denim | 0.3 | casual | medium
+flannel | 0.3 | casual | medium
+faux_fur | 0.4 | luxury | heavy
+polyester | 0.3 | synthetic | light
+metal | 0.5 | luxury | heavy

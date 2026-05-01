@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim trousers | 0.65 | 0.3-0.6 | wool
+fleece-lined jeans | 0.65 | 0.1-0.3 | denim,fleece
+chinos | 0.55 | 0.3-0.5 | cotton
+straight-leg pants | 0.55 | 0.2-0.5 | cotton,wool
+cord trousers | 0.50 | 0.2-0.5 | corduroy
+thermal-lined trousers | 0.55 | 0.1-0.3 | nylon,fleece
+heavy chinos | 0.45 | 0.3-0.5 | cotton
+brushed pants | 0.40 | 0.3-0.6 | cotton,moleskin
+straight jeans | 0.55 | 0.1-0.4 | denim
+tailored slacks | 0.40 | 0.4-0.7 | wool

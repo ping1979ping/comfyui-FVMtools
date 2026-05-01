@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+striped scarf | 0.75 | 0.2-0.5 | wool,knit
+ribbed gloves | 0.65 | 0.1-0.3 | wool,knit
+driving gloves | 0.55 | 0.3-0.6 | leather
+ribbed scarf | 0.60 | 0.2-0.5 | wool,knit
+ear warmers | 0.50 | 0.1-0.3 | knit,fleece
+silver watch | 0.45 | 0.3-0.6 | metal
+warm socks | 0.50 | 0.1-0.3 | wool,knit
+neck warmer | 0.45 | 0.1-0.3 | fleece,knit
+silver bracelet | 0.30 | 0.2-0.5 | metal
+hand muff | 0.25 | 0.1-0.4 | suede,knit
