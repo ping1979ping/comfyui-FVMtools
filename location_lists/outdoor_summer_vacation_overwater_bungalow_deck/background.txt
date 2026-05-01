@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+crystal turquoise lagoon water | 1.0 | 0.5-1.0 | brilliantly clear shallow aqua
+distant ring of bungalow rooftops | 0.85 | 0.3-0.7 | thatched conical row over water
+white sandbar on horizon | 0.7 | 0.2-0.5 | bright low pale strip
+distant motu palm island | 0.7 | 0.2-0.5 | small dark palm-tipped landmass
+deep ocean band beyond reef | 0.7 | 0.3-0.7 | navy blue gradient line
+breaking surf along reef | 0.6 | 0.2-0.5 | bright white scalloped edge
+piled cumulus clouds | 0.85 | 0.4-0.8 | soft white rounded volumes
+submerged coral patches visible | 0.7 | 0.3-0.6 | dark reef shadows in shallows
+distant outrigger canoe | 0.4 | 0.1-0.3 | small slender silhouette
+soft pastel sky band | 0.85 | 0.4-0.8 | gradient peach-aqua wash
+shoreline mountain ridge silhouette | 0.55 | 0.2-0.5 | hazy emerald green peaks
+swimming reef fish school | 0.4 | 0.1-0.3 | scattered dark moving dots

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday harbor sun | 0.85 | - | -
+crisp mid-morning light | 0.9 | - | -
+late golden afternoon | 1.0 | - | -
+fiery harbor sunset | 0.95 | - | -
+soft hour before sunset | 0.9 | - | -
+pink twilight afterglow | 0.7 | - | -
+cool blue post-sunset | 0.55 | - | -
+warm dawn over masts | 0.6 | - | -
+hot glaring noon | 0.65 | - | -
+calm evening blue hour | 0.55 | - | -

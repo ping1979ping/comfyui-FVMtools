@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+snorkel mask and snorkel pair | 0.7 | 0.05-0.15 | clear silicone and dark tube
+underwater swim fins | 0.55 | 0.05-0.2 | smooth rubbery flippers
+oversized woven straw hat | 0.85 | 0.05-0.15 | softly braided golden plait
+fresh coconut with paper straw | 0.75 | 0.05-0.15 | smooth green husk
+tortoiseshell oversize sunglasses | 0.75 | 0.02-0.08 | warm amber lens frame
+striped resort towel rolled | 0.7 | 0.05-0.2 | softly worn loop pile
+tropical cocktail with garnish | 0.6 | 0.03-0.1 | bright fruity drink and rim
+woven straw beach tote | 0.7 | 0.05-0.2 | open natural fiber weave
+underwater action camera | 0.5 | 0.02-0.08 | small black waterproof cube
+flower-print sarong wrap | 0.65 | 0.05-0.2 | softly flowing patterned cotton
+plate of sliced tropical fruit | 0.55 | 0.03-0.12 | bright pineapple and mango chunks
+inflatable pink flamingo float | 0.45 | 0.05-0.2 | smooth glossy vinyl bird

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+hot dry desert day | 0.9 | - | -
+soft breeze through arches | 0.85 | - | -
+calm hot still afternoon | 0.8 | - | -
+fragrant orange-blossom air | 0.7 | - | -
+warm dusty saharan air | 0.65 | - | -
+clear bright midday sky | 0.9 | - | -
+sun-warmed courtyard stillness | 0.85 | - | -
+brief sudden desert rain | 0.35 | - | -
+clear cool evening | 0.7 | - | -
+softly fragrant incense haze | 0.55 | - | -

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+turquoise reef lagoon horizon | 1.0 | 0.6-1.0 | softly rippled aqua water
+distant volcanic island silhouette | 0.7 | 0.4-0.8 | hazy blue-violet ridge
+swaying coconut palm canopy | 0.95 | 0.6-1.0 | feathered green frond curtain
+white cumulus cloud bank | 0.85 | 0.5-0.9 | soft cotton-puff highlights
+deep blue open ocean band | 0.8 | 0.5-0.9 | gently rippling sapphire surface
+distant catamaran on horizon | 0.45 | 0.2-0.5 | small white sail dot
+breaking surf line on reef | 0.7 | 0.4-0.7 | foamy white scalloped edge
+fringing tropical treeline | 0.85 | 0.5-0.9 | dense layered jungle wall
+soft pink sky belt | 0.55 | 0.4-0.8 | gradient peach-rose wash
+distant coral atoll ring | 0.4 | 0.3-0.6 | thin sandy crescent silhouette
+hibiscus bloom thicket border | 0.55 | 0.3-0.6 | scarlet flower-dotted greenery
+palm-shadowed shoreline bend | 0.6 | 0.4-0.7 | dappled sun-broken sand

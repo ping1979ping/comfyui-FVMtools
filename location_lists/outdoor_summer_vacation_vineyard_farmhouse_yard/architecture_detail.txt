@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+rough stone farmhouse wall | 0.85 | 0.2-0.5 | warm uneven mortared masonry
+weathered wooden shutter pair | 0.65 | 0.1-0.3 | sage-painted aged wood
+warm clay tile roof eave | 0.7 | 0.1-0.3 | warm rounded terracotta rows
+ivy-covered stone column | 0.55 | 0.1-0.3 | dense glossy green-coated post
+rusted wrought iron lantern | 0.55 | 0.05-0.15 | softly aged scrolled metal
+stone-paved courtyard floor | 0.85 | 0.2-0.5 | warm uneven slate slabs
+heavy wooden barn door | 0.55 | 0.1-0.3 | iron-banded thick timber
+chestnut beam pergola crossbeam | 0.65 | 0.1-0.3 | sun-silvered split timbers
+arched stone doorway opening | 0.6 | 0.1-0.3 | softly aged limestone curve
+deep-set casement window | 0.55 | 0.1-0.3 | thick whitewashed reveal
+hand-forged iron door handle | 0.5 | 0.02-0.08 | dark twisted aged metal
+crumbling plaster patch on wall | 0.55 | 0.1-0.3 | softly flaking lime-coated finish

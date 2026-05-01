@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+dappled noon courtyard light | 0.85 | - | -
+warm late afternoon shaft | 1.0 | - | -
+soft mid-morning glow | 0.9 | - | -
+amber late-day warmth | 0.95 | - | -
+candle-lit early evening | 0.9 | - | -
+golden hour through lattice | 0.95 | - | -
+deep blue twilight | 0.7 | - | -
+cool dawn diffused light | 0.55 | - | -
+night-time lantern glow | 0.85 | - | -
+hot bright noon overhead | 0.65 | - | -

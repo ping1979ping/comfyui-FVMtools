@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+palm-thatched roof eave | 0.85 | 0.1-0.3 | thick layered dry frond bundles
+hardwood support stilt post | 0.75 | 0.1-0.3 | dark oiled raw timber
+woven palm wall panel section | 0.6 | 0.1-0.3 | tight diagonal frond weave
+carved wooden gable detail | 0.55 | 0.05-0.2 | softly ornate scrolled wood
+rope-tied rafter truss | 0.55 | 0.1-0.3 | knotted natural sisal joints
+glass French door panel | 0.6 | 0.1-0.3 | clear framed sliding panel
+slatted privacy wall corner | 0.5 | 0.1-0.3 | thin parallel timber strips
+canvas overhead day shade | 0.5 | 0.1-0.3 | tautly stretched off-white cloth
+hardwood deck railing top | 0.65 | 0.1-0.3 | smoothly oiled rounded timber
+hand-carved totem post | 0.4 | 0.05-0.15 | softly chiseled tribal motif
+inset spotlight deck recess | 0.45 | 0.02-0.06 | small brushed brass ring
+thatched ridge cap line | 0.6 | 0.05-0.15 | tightly bound frond crown

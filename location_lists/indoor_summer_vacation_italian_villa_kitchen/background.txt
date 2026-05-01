@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+warm ochre plastered wall | 1.0 | 0.6-1.0 | softly mottled hand-applied finish
+whitewashed stone interior wall | 0.85 | 0.5-1.0 | gently chalky uneven masonry
+dark exposed ceiling beams | 0.85 | 0.4-0.9 | dark heavy oiled timber
+arched plaster doorway | 0.7 | 0.3-0.7 | softly rounded white arch
+hand-painted majolica tile band | 0.7 | 0.3-0.6 | glossy blue-yellow patterns
+warm terracotta tile floor view | 0.85 | 0.4-0.8 | softly worn warm clay slabs
+window over olive grove | 0.65 | 0.2-0.5 | bright distant grey-green canopy
+copper pot rack along wall | 0.6 | 0.2-0.5 | hammered warm metallic glow
+faded fresco panel | 0.5 | 0.2-0.5 | softly muted painted plaster
+tall painted larder cabinet | 0.6 | 0.2-0.5 | sage-painted aged wood
+exposed stone arch over hearth | 0.55 | 0.2-0.5 | rough mortared limestone
+rustic wooden plate rack | 0.6 | 0.2-0.5 | aged pine slats

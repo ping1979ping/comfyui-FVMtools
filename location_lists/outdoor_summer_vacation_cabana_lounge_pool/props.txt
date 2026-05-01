@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+frozen daiquiri cocktail | 0.75 | 0.03-0.1 | pale icy slush in glass
+oversized straw sun hat | 0.85 | 0.05-0.15 | softly floppy braided fiber
+designer cat-eye sunglasses | 0.8 | 0.02-0.08 | glossy black acetate frame
+luxury folded bath towel | 0.7 | 0.05-0.2 | softly piled fluffy cotton
+silk paisley sarong wrap | 0.65 | 0.05-0.2 | richly flowing patterned weave
+fashion magazine flipped open | 0.55 | 0.05-0.15 | softly creased glossy spread
+gold-strap leather sandals | 0.65 | 0.03-0.1 | softly polished metallic strap
+bottle of designer sunscreen | 0.6 | 0.02-0.08 | smooth labeled bright tube
+pool float inflatable swan | 0.45 | 0.05-0.2 | smooth glossy white vinyl
+small leather valise | 0.5 | 0.05-0.2 | softly aged tan hide
+crystal cocktail tumbler | 0.6 | 0.02-0.08 | faceted clear lowball
+woven rattan beach tote | 0.7 | 0.05-0.2 | golden plaited fibers

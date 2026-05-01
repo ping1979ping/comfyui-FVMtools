@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+weathered swimming dock structure | 1.0 | 0.2-0.5 | sun-silvered plank surface
+moored small wooden rowboat | 0.7 | 0.1-0.3 | varnished aged wooden hull
+floating swim raft | 0.55 | 0.1-0.3 | weathered timber and barrels
+overturned canoe on grass | 0.55 | 0.1-0.3 | smoothly painted hull
+mossy granite shoreline boulder | 0.7 | 0.1-0.3 | green-mottled rough stone
+clump of cattails by water | 0.6 | 0.05-0.2 | tall slender brown spikes
+old red boathouse front | 0.5 | 0.1-0.3 | weathered painted siding
+pine sapling cluster | 0.65 | 0.1-0.3 | bright green needled branches
+stone fire ring with chairs | 0.5 | 0.1-0.3 | charred grey rocks
+clump of wildflowers in grass | 0.7 | 0.1-0.25 | mixed yellow and white blooms
+wooden footbridge over inlet | 0.45 | 0.1-0.3 | timbered plank span
+gravel lakeside path | 0.6 | 0.1-0.3 | crunchy mixed pebble surface

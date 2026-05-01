@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+warm late morning light | 1.0 | - | -
+soft early afternoon sun | 0.9 | - | -
+dappled noon shade | 0.7 | - | -
+golden afternoon shaft | 0.95 | - | -
+amber late-day warmth | 0.85 | - | -
+soft pre-dinner hour | 0.8 | - | -
+candle-lit early evening | 0.6 | - | -
+calm dawn through shutters | 0.55 | - | -
+hot bright midday filtered | 0.6 | - | -
+twilight blue dusk inside | 0.45 | - | -

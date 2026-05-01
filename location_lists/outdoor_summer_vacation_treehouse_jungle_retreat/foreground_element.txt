@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+out-of-focus monstera leaf | 0.85 | 0.1-0.3 | blurred glossy fenestrated green
+glossy heliconia bloom | 0.55 | 0.05-0.15 | bright lobster-claw stalks
+dappled jungle leaf shadow | 0.85 | 0.15-0.4 | crisp cut-out leaf silhouette
+out-of-focus rope railing | 0.7 | 0.05-0.15 | blurred thick natural twist
+hanging vanilla orchid spray | 0.5 | 0.03-0.1 | small pale waxy flowers
+warm hardwood deck plank | 0.85 | 0.15-0.4 | richly oiled grain
+mist droplets on leaf | 0.6 | 0.05-0.15 | clear bead-like water marks
+out-of-focus brass lantern glow | 0.55 | 0.05-0.15 | blurred warm amber light
+small green tree frog | 0.35 | 0.02-0.06 | bright glossy little form
+trailing fern frond curl | 0.6 | 0.03-0.1 | bright glossy serrated edge
+tropical butterfly silhouette | 0.4 | 0.02-0.06 | bright iridescent winged form
+out-of-focus rattan tassel | 0.5 | 0.03-0.1 | blurred plaited fiber edge

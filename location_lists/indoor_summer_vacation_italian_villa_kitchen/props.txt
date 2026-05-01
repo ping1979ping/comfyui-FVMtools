@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+linen apron over chair | 0.75 | 0.05-0.2 | softly crumpled striped weave
+woven straw market basket | 0.7 | 0.05-0.2 | golden plaited fibers
+cookbook open on counter | 0.55 | 0.05-0.15 | softly worn paper pages
+ceramic pitcher of water | 0.7 | 0.05-0.15 | hand-thrown glazed clay
+wooden rolling pin | 0.55 | 0.03-0.1 | smoothly turned beech
+ball of pasta dough | 0.55 | 0.03-0.1 | softly floured matte surface
+hand-painted ceramic bowl | 0.7 | 0.05-0.15 | glossy scrolled motifs
+glass carafe of red wine | 0.6 | 0.03-0.1 | clear elegant rounded glass
+wedge of parmesan on board | 0.55 | 0.03-0.1 | crystalline pale rind
+small brass espresso pot | 0.6 | 0.03-0.1 | softly polished burnished metal
+sprig of fresh oregano bunch | 0.55 | 0.03-0.1 | tiny green leaf clusters
+straw-bound bottle of chianti | 0.5 | 0.03-0.1 | woven raffia jacket

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday rooftop sun | 0.85 | - | -
+warm late afternoon | 1.0 | - | -
+soft mid-morning glow | 0.85 | - | -
+golden hour over skyline | 0.95 | - | -
+fiery city sunset | 0.95 | - | -
+deep blue hour after sunset | 0.85 | - | -
+night with city lights | 0.8 | - | -
+soft hour before sunset | 0.9 | - | -
+pre-dawn pink twilight | 0.55 | - | -
+hot bleached noon | 0.7 | - | -

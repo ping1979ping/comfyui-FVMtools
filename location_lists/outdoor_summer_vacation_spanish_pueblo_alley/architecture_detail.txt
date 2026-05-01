@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+rounded arched doorway top | 0.7 | 0.1-0.3 | softly curved plaster opening
+hand-painted azulejo tile band | 0.7 | 0.1-0.3 | glossy blue-white motif
+wooden balcony with carved post | 0.6 | 0.1-0.3 | richly turned timber piece
+chunky clay roof tile run | 0.7 | 0.15-0.4 | warm rounded terracotta rows
+iron window guard scrollwork | 0.65 | 0.05-0.2 | dark intricate forged twist
+stone door surround molding | 0.6 | 0.1-0.3 | softly aged carved limestone
+whitewashed exterior corner | 0.7 | 0.15-0.4 | thickly coated curved render
+ornate cast iron downspout | 0.5 | 0.05-0.15 | dark fluted forged tube
+heavy wooden door hinge | 0.55 | 0.02-0.08 | dark hand-forged strap
+azulejo street name plaque | 0.55 | 0.05-0.15 | small bright tile panel
+rough mortared stone seam | 0.6 | 0.1-0.3 | warm uneven masonry line
+hand-thrown clay drainpipe end | 0.45 | 0.02-0.06 | warm rough earthenware nozzle

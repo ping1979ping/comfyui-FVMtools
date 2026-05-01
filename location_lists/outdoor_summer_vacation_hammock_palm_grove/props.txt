@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+paperback novel face down | 0.7 | 0.03-0.1 | softly creased cover
+fresh coconut with paper straw | 0.8 | 0.05-0.15 | smooth green husk
+oversized straw sun hat | 0.85 | 0.05-0.15 | softly braided golden plait
+tortoiseshell oversize sunglasses | 0.7 | 0.02-0.08 | warm amber lens frame
+hand-fan of palm leaf | 0.55 | 0.03-0.1 | golden plaited paddle shape
+fruit bowl with mangoes | 0.55 | 0.05-0.15 | glossy yellow-orange fruits
+woven raffia tote on sand | 0.6 | 0.05-0.2 | open natural fiber weave
+striped beach throw blanket | 0.7 | 0.05-0.2 | softly worn cotton stripes
+small ukulele leaning | 0.4 | 0.05-0.15 | warm spruce wood top
+plumeria flower in hair | 0.55 | 0.02-0.06 | creamy waxy bloom
+sun-warmed clay drinking cup | 0.5 | 0.02-0.08 | rough hand-thrown earthen
+brass shoreline lantern | 0.45 | 0.05-0.15 | brushed warm metal finish

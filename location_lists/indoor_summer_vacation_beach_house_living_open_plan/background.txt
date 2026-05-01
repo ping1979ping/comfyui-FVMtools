@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+shiplap-paneled white wall | 1.0 | 0.5-1.0 | softly painted horizontal slat
+distant glimpse of dunes through doors | 0.7 | 0.2-0.5 | bright pale grass-flecked horizon
+floor-to-ceiling glass slider | 0.85 | 0.3-0.7 | clear large-pane framed door
+softly bleached oak ceiling beam | 0.7 | 0.3-0.6 | warm horizontal aged timber
+vaulted high cathedral ceiling | 0.7 | 0.3-0.7 | bright sloped white expanse
+pale grey driftwood-style flooring | 0.85 | 0.3-0.7 | softly weathered linear plank
+white painted brick fireplace | 0.5 | 0.2-0.5 | softly chalky stacked face
+woven sea-grass wall hanging | 0.6 | 0.2-0.5 | softly textured natural fiber
+distant pampas grass arrangement | 0.55 | 0.1-0.3 | tall feathered tan plumes
+bright white linen curtain panel | 0.7 | 0.3-0.6 | softly billowing sheer cloth
+limewashed accent end-wall | 0.55 | 0.2-0.5 | softly mottled chalky finish
+gallery wall of coastal prints | 0.5 | 0.2-0.5 | grouped softly framed images

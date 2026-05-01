@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday adriatic sun | 0.9 | - | -
+warm late afternoon | 1.0 | - | -
+soft mid-morning glow | 0.9 | - | -
+golden hour over harbor | 0.95 | - | -
+fiery adriatic sunset | 0.9 | - | -
+amber pre-evening warmth | 0.85 | - | -
+soft pink dusk | 0.7 | - | -
+hot bleached noon | 0.7 | - | -
+calm dawn over quay | 0.55 | - | -
+twilight harbor blue hour | 0.6 | - | -

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+string lights crisscrossed overhead | 1.0 | 0.4-0.9 | warm scattered tiny glowing bulbs
+distant lavender field band | 0.55 | 0.2-0.5 | softly waving violet swathes
+twilight gradient sky band | 0.85 | 0.3-0.7 | deep peach-rose horizon wash
+distant cypress grove silhouette | 0.7 | 0.2-0.5 | dark slender pointed forms
+softly lit garden hedge backdrop | 0.7 | 0.3-0.7 | dense glossy boxwood shape
+limestone garden wall behind | 0.6 | 0.2-0.5 | warm aged carved masonry
+dusk-lit countryside hills | 0.65 | 0.3-0.6 | hazy purple-blue silhouette
+trailing wisteria curtain backdrop | 0.55 | 0.2-0.5 | falling lavender bloom drape
+distant villa rooftop run | 0.5 | 0.15-0.4 | warm tile-roofed cluster
+fireflies in evening air | 0.4 | 0.1-0.3 | scattered tiny light pinpoints
+moon rising on horizon | 0.45 | 0.05-0.15 | pale silvery disc
+softly lit topiary tree | 0.55 | 0.2-0.5 | dark sculpted leaf form

@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+horseshoe arch keystone detail | 0.7 | 0.1-0.3 | softly chiseled pointed plaster
+geometric zellige tile border | 0.85 | 0.1-0.3 | densely set glazed shapes
+carved plaster muqarnas niche | 0.55 | 0.1-0.3 | white honeycomb stucco corner
+inlaid bone tabletop pattern | 0.55 | 0.1-0.3 | thin pale geometric strips
+dark cedar door with metal nails | 0.65 | 0.1-0.3 | richly studded heavy timber
+arabic calligraphy painted band | 0.55 | 0.05-0.2 | softly flowing dark script
+brass-pierced ceiling lamp | 0.65 | 0.05-0.2 | softly polished pendulous shade
+mosaic-rimmed floor drain channel | 0.5 | 0.05-0.15 | small tile-edged groove
+hand-painted cedar ceiling beam | 0.6 | 0.1-0.3 | richly motif-coated wood
+pointed alcove window opening | 0.5 | 0.1-0.3 | softly carved arched recess
+turquoise tile threshold strip | 0.55 | 0.05-0.15 | bright glazed lower band
+hand-forged window grille | 0.5 | 0.05-0.15 | dark twisted iron rod

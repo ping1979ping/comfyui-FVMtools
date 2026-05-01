@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+humid warm jungle air | 1.0 | - | -
+soft canopy filtered light | 0.9 | - | -
+brief tropical downpour | 0.65 | - | -
+fragrant petrichor after rain | 0.6 | - | -
+calm misty rainforest stillness | 0.8 | - | -
+hot still tropical afternoon | 0.7 | - | -
+gentle breeze rustling leaves | 0.85 | - | -
+distant rumble of thunder | 0.5 | - | -
+dripping post-rain canopy | 0.6 | - | -
+clear bright tropical patch | 0.55 | - | -

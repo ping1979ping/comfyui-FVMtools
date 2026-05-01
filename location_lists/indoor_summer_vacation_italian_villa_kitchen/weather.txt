@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+bright dry tuscan day | 1.0 | - | -
+warm dusty summer air | 0.85 | - | -
+hot afternoon stillness | 0.8 | - | -
+soft breeze through shutters | 0.8 | - | -
+heavy summer rain outside | 0.4 | - | -
+hazy heat shimmer | 0.6 | - | -
+clear cool morning air | 0.65 | - | -
+overcast soft daylight | 0.45 | - | -
+cicada-warm afternoon | 0.65 | - | -
+gentle late-day cool | 0.6 | - | -

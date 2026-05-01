@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+bright sunny coastal day outside | 1.0 | - | -
+soft sea breeze through doors | 0.9 | - | -
+hazy warm humid afternoon | 0.65 | - | -
+salt-tinged light air | 0.7 | - | -
+brief coastal rain shower outside | 0.45 | - | -
+calm bright stillness | 0.8 | - | -
+fragrant coastal breeze | 0.75 | - | -
+overcast soft daylight | 0.5 | - | -
+warm sun-warmed interior air | 0.85 | - | -
+clear cool morning air | 0.6 | - | -

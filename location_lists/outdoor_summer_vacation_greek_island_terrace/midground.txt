@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+whitewashed terrace railing | 1.0 | 0.2-0.5 | softly chalky lime-washed surface
+cobalt blue painted wooden door | 0.65 | 0.1-0.3 | weather-cracked bright pigment
+clay pithos planter on terrace | 0.7 | 0.1-0.3 | warm hand-thrown earthen jar
+trailing bougainvillea pergola | 0.75 | 0.15-0.4 | timber arbor under magenta drape
+white-painted wooden pergola | 0.7 | 0.15-0.4 | softly peeling sun-bleached beams
+small marble bistro table | 0.6 | 0.05-0.2 | smooth veined stone top
+white-washed garden wall | 0.7 | 0.2-0.5 | thickly coated curved render
+arched doorway in white wall | 0.55 | 0.1-0.3 | simply rounded plaster opening
+tall potted lemon tree | 0.55 | 0.1-0.3 | glossy dark green and yellow fruit
+weathered wooden church bench | 0.5 | 0.1-0.3 | softly silvered timber
+meandering whitewashed step | 0.6 | 0.1-0.3 | bright limewashed stone
+hanging string of ceramic eyes | 0.45 | 0.05-0.15 | small painted blue evil-eye charms

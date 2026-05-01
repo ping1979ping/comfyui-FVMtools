@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+soft gauze curtain corner | 0.7 | 0.1-0.3 | sheer flowing white veil
+plush velvet throw pillow | 0.75 | 0.05-0.2 | richly tufted deep jewel tone
+out-of-focus brass lantern glow | 0.6 | 0.05-0.15 | warm blurred amber light
+vintage leather suitcase tag | 0.5 | 0.02-0.08 | aged rough hide label
+patterned kilim cushion edge | 0.6 | 0.05-0.15 | geometric red-orange weave
+out-of-focus crystal decanter | 0.5 | 0.03-0.1 | blurred faceted clear glass
+warm wool tasseled blanket fold | 0.6 | 0.05-0.15 | richly woven bohemian stripe
+small persian tea glass | 0.5 | 0.02-0.06 | gilded clear cut crystal
+tassel cord on curtain tie-back | 0.45 | 0.03-0.08 | soft braided silk twist
+out-of-focus flickering candle | 0.55 | 0.02-0.06 | blurred warm flame point
+old leather-bound book stack | 0.5 | 0.05-0.15 | aged tooled gilt spines
+small brass incense burner | 0.4 | 0.02-0.06 | softly polished pierced metal

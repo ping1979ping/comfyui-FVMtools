@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+shimmering pool water surface | 0.95 | 0.2-0.5 | rippling aqua reflective water
+out-of-focus champagne flute | 0.65 | 0.03-0.1 | blurred slim crystal stem
+sliced citrus garnish | 0.5 | 0.02-0.06 | bright glossy yellow wheel
+poolside lounger cushion edge | 0.75 | 0.1-0.3 | softly piped white cushion
+white parasol shadow stripe | 0.65 | 0.1-0.3 | crisp dark canvas band
+out-of-focus chrome lounger frame | 0.5 | 0.05-0.15 | blurred bright metal arc
+silver cocktail tumbler | 0.55 | 0.03-0.1 | softly polished metal shaker
+out-of-focus white tile pattern | 0.6 | 0.05-0.2 | blurred glossy bright squares
+spray of bird-of-paradise bloom | 0.55 | 0.05-0.15 | bright orange-blue flower spike
+small lit candle in glass | 0.5 | 0.02-0.06 | warm soft flame globe
+sleek sunglasses on towel | 0.55 | 0.02-0.08 | glossy black acetate frame
+splash droplets in air | 0.45 | 0.05-0.15 | clear bead-like falling drops

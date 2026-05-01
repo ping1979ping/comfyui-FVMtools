@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright maritime sky | 1.0 | - | -
+gentle harbor breeze | 0.9 | - | -
+scattered fluffy cumulus | 0.85 | - | -
+salt-misted warm air | 0.75 | - | -
+hot still summer afternoon | 0.7 | - | -
+high thin cirrus streaks | 0.55 | - | -
+brief passing squall | 0.4 | - | -
+hazy humid afternoon | 0.55 | - | -
+soft offshore evening breeze | 0.7 | - | -
+calm glassy water stillness | 0.65 | - | -

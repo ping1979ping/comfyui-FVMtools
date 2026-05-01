@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+teak deck plank seam | 0.95 | 0.15-0.4 | warm caulked dark line
+chrome bow pulpit rail | 0.7 | 0.1-0.3 | gleaming bright tubing
+varnished mahogany toe rail | 0.65 | 0.1-0.3 | richly glossed warm wood
+glass-paneled cabin window | 0.7 | 0.1-0.3 | tinted reflective panel
+white fiberglass hull strake | 0.7 | 0.15-0.4 | smooth shaped gelcoat ridge
+chrome handrail along coachroof | 0.65 | 0.1-0.3 | polished bright tube
+white pontoon walkway edge | 0.65 | 0.1-0.3 | low smooth concrete plank
+mooring bollard on dock | 0.55 | 0.05-0.15 | painted dark steel post
+flag halyard line on mast | 0.5 | 0.05-0.15 | thin taut white rope
+swim ladder folded on stern | 0.5 | 0.05-0.15 | brushed stainless rungs
+brushed stainless winch base | 0.55 | 0.05-0.15 | gleaming low drum
+varnished cockpit grab rail | 0.55 | 0.05-0.15 | richly oiled wood loop

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+ivory canvas tent wall fabric | 1.0 | 0.6-1.0 | softly billowing heavy cotton
+glowing canvas with sunlit translucency | 0.85 | 0.4-0.9 | warm honey-toned diffuse glow
+canvas pole-supported peaked ceiling | 0.85 | 0.3-0.7 | tautly stretched cream cloth
+hand-knotted oriental rug expanse | 0.8 | 0.3-0.7 | deep red intricate woven pattern
+dark walnut wooden tent floor | 0.7 | 0.3-0.7 | richly oiled smooth plank
+exposed wooden roof-peak beam | 0.7 | 0.3-0.6 | dark stained timber span
+trompe loeil wood-paneled accent wall | 0.45 | 0.2-0.5 | painted softly aged faux grain
+folded canvas door flap tied open | 0.7 | 0.2-0.5 | thick rumpled cream cotton
+hanging gauze mosquito net curtain | 0.7 | 0.3-0.6 | sheer flowing white veil
+brass-trimmed canvas ceiling vent | 0.55 | 0.1-0.3 | small framed canvas opening
+pendant moroccan lamp shadow | 0.55 | 0.2-0.5 | intricate pierced patterned light
+deep velvet curtain backdrop | 0.55 | 0.2-0.5 | heavy plush burgundy drape

@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+log cabin notched corner joint | 0.85 | 0.1-0.3 | hand-hewn rounded log ends
+weathered porch beam corbel | 0.65 | 0.05-0.15 | softly carved timber bracket
+shingled cabin roof eave | 0.7 | 0.1-0.3 | layered weathered cedar shakes
+log-edged porch step rise | 0.75 | 0.05-0.2 | round timber stair fronts
+cast iron porch swing chain | 0.55 | 0.02-0.08 | dark sturdy metal links
+horizontal log siding seam | 0.85 | 0.15-0.4 | warm stacked timber wall
+softly chinked log gap | 0.65 | 0.05-0.15 | white mortar fill stripe
+turned wooden newel post | 0.5 | 0.05-0.15 | richly turned timber knob
+red painted screen door | 0.55 | 0.1-0.3 | softly chipped glossy paint
+wrought iron lantern hook | 0.5 | 0.02-0.08 | dark scrolled small mount
+old hand-forged door hinge | 0.45 | 0.02-0.06 | dark hand-shaped strap
+weathered cedar shingle siding | 0.6 | 0.1-0.3 | layered split timber overlap

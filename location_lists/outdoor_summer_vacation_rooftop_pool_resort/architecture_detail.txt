@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+frameless glass railing panel | 0.85 | 0.15-0.4 | clear flat structural panel
+brushed stainless top rail | 0.7 | 0.05-0.15 | softly polished metal cap
+smooth concrete pool coping | 0.85 | 0.1-0.3 | softly polished pale slab
+white tile pool waterline | 0.7 | 0.1-0.3 | densely set glossy mosaic
+recessed deck spotlight | 0.5 | 0.02-0.06 | small brushed brass ring
+chrome cabana support post | 0.55 | 0.05-0.15 | softly polished bright tube
+modern angular planter rim | 0.6 | 0.05-0.15 | softly polished pale slab
+smooth poured concrete deck | 0.85 | 0.2-0.5 | softly polished pale flat
+glass-and-steel windscreen panel | 0.55 | 0.1-0.3 | clear panel with thin frame
+tiered planter step edge | 0.5 | 0.05-0.15 | softly aged stone band
+infinity weir overflow trough | 0.55 | 0.05-0.15 | smooth dark slim channel
+modern fire ribbon strip | 0.45 | 0.05-0.15 | thin glowing flame line

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+woven willow picnic basket | 1.0 | 0.1-0.3 | tight country basketry
+gingham checked picnic blanket | 0.95 | 0.3-0.6 | bright printed cotton plaid
+softly waving lavender row | 1.0 | 0.3-0.7 | densely planted purple stems
+weathered wooden crate as table | 0.6 | 0.05-0.2 | softly silvered split timber
+tall vintage straw bicycle | 0.5 | 0.1-0.3 | softly aged cream metalwork
+small wooden folding stool | 0.55 | 0.05-0.15 | softly weathered split timber
+arrangement of cut lavender stems | 0.7 | 0.05-0.15 | grey-purple fragrant bunch
+clay urn brimming with blooms | 0.55 | 0.05-0.2 | warm hand-thrown earthen jar
+softly trampled grass path | 0.7 | 0.15-0.4 | flattened tan-green strip
+flower-press wooden book | 0.45 | 0.05-0.15 | softly worn timber boards
+woven straw insulated cooler | 0.55 | 0.1-0.3 | golden plaited fiber bag
+spread of small ceramic bowls | 0.7 | 0.05-0.2 | hand-thrown glazed clay

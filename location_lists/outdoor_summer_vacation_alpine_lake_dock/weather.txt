@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear high-altitude blue sky | 1.0 | - | -
+scattered fair-weather cumulus | 0.85 | - | -
+gentle alpine breeze | 0.85 | - | -
+mirror-still air over lake | 0.7 | - | -
+brief alpine shower passing | 0.45 | - | -
+high thin cirrus veil | 0.55 | - | -
+warm dry mountain air | 0.7 | - | -
+soft morning mist on water | 0.55 | - | -
+sun breaking through clouds | 0.65 | - | -
+dramatic distant thunderhead | 0.4 | - | -

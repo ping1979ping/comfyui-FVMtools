@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear deep aegean blue sky | 1.0 | - | -
+dry warm meltemi breeze | 0.85 | - | -
+hot sunny stillness | 0.8 | - | -
+high cirrus wisps | 0.55 | - | -
+sea-salt scented air | 0.7 | - | -
+hazy heat shimmer | 0.55 | - | -
+brief brief afternoon shower | 0.35 | - | -
+soft balmy evening | 0.75 | - | -
+dust-warmed afternoon | 0.55 | - | -
+clear cool dawn breeze | 0.6 | - | -

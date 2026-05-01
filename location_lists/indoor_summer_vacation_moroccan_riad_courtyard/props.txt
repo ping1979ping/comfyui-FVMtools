@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+silver moroccan teapot | 0.85 | 0.03-0.1 | richly engraved bright metal
+glass tea cup with gold rim | 0.8 | 0.02-0.08 | gilded clear cut crystal
+bowl of fresh mint leaves | 0.7 | 0.03-0.1 | glossy bright green sprigs
+small ornate sugar bowl | 0.55 | 0.02-0.08 | hammered ornate brass dish
+embroidered silk scarf draped | 0.65 | 0.05-0.15 | richly flowing patterned weave
+woven straw market basket | 0.6 | 0.05-0.2 | golden plaited fibers
+hand-painted ceramic tagine | 0.65 | 0.05-0.15 | tall pointed glazed lid
+plate of pastries with honey | 0.55 | 0.03-0.1 | golden flaky drizzled stack
+hand-carved wooden chess set | 0.4 | 0.03-0.1 | dark inlaid figural pieces
+silver hand mirror | 0.5 | 0.02-0.08 | richly engraved bright metal
+brass argan oil bottle | 0.55 | 0.02-0.08 | softly polished narrow flask
+red leather pouf with tassels | 0.65 | 0.05-0.2 | richly stitched warm hide

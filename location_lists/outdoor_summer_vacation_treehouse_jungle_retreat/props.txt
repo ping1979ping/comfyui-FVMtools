@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+mug of jungle herbal tea | 0.7 | 0.03-0.1 | rough hand-thrown earthen
+field journal with pen | 0.6 | 0.03-0.1 | scuffed warm hide cover
+bamboo flute on cushion | 0.45 | 0.03-0.1 | smooth golden hollow stem
+woven rattan tray with fruit | 0.7 | 0.05-0.15 | golden plaited fibers
+oversized straw sun hat | 0.7 | 0.05-0.15 | softly braided golden plait
+brass kerosene lantern | 0.7 | 0.05-0.15 | softly polished old metal
+cotton mosquito netting bundle | 0.55 | 0.05-0.2 | gauzy soft white fabric
+woven jungle hammock pillow | 0.6 | 0.05-0.15 | softly piped tropical print
+old leather binoculars | 0.5 | 0.03-0.1 | rich aged brown hide
+small sketchbook with pencil | 0.55 | 0.03-0.1 | softly worn paper covers
+bowl of fresh tropical fruits | 0.65 | 0.05-0.15 | bright pineapple and mango chunks
+fragrant jasmine flower garland | 0.5 | 0.03-0.1 | tiny white starry bloom string

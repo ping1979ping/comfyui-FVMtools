@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright mid-morning daylight | 1.0 | - | -
+warm late afternoon shaft | 0.95 | - | -
+soft hazy noon | 0.85 | - | -
+golden hour through windows | 0.95 | - | -
+amber pre-evening glow | 0.85 | - | -
+candle-lit early evening | 0.7 | - | -
+deep blue twilight | 0.6 | - | -
+calm dawn diffused light | 0.55 | - | -
+cool overcast daylight | 0.55 | - | -
+warm pink dusk filtered | 0.65 | - | -

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+dappled noon palm light | 0.85 | - | -
+warm late afternoon | 1.0 | - | -
+soft mid-morning glow | 0.9 | - | -
+golden hour shaft | 0.95 | - | -
+amber pre-evening warmth | 0.85 | - | -
+hazy bright midday | 0.7 | - | -
+calm pink dusk | 0.65 | - | -
+soft hour before sunset | 0.85 | - | -
+warm dawn diffused light | 0.55 | - | -
+twilight blue hour | 0.5 | - | -

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+worn dock plank edge | 0.95 | 0.15-0.4 | weathered grey timber grain
+mooring rope coiled on dock | 0.7 | 0.05-0.15 | thick natural hemp twist
+wet footprints on wood | 0.55 | 0.05-0.2 | darkened damp plank patches
+small lapping water ripples | 0.85 | 0.1-0.3 | soft concentric reflections
+tuft of meadow grass at edge | 0.6 | 0.05-0.15 | wispy bright green blades
+out-of-focus pine bough | 0.55 | 0.05-0.2 | blurred dark green needles
+scattered pine cones | 0.5 | 0.02-0.1 | softly textured woody scales
+rust-spotted iron dock cleat | 0.6 | 0.02-0.08 | weathered dark metal
+yellow buttercup flowers | 0.55 | 0.05-0.15 | small glossy yellow petals
+moss patch on dock corner | 0.5 | 0.02-0.1 | bright soft cushion green
+splash droplets mid-air | 0.4 | 0.05-0.15 | clear bead-like water marks
+flat skipping stone | 0.45 | 0.02-0.06 | smooth grey river pebble

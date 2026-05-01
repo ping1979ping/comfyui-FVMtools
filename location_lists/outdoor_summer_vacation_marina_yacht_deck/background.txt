@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+deep blue marina water | 1.0 | 0.4-0.8 | rippling navy reflective surface
+forest of yacht masts in slips | 0.95 | 0.4-0.9 | tall white slender vertical lines
+distant coastal town promenade | 0.7 | 0.3-0.7 | small clustered pastel buildings
+craggy mediterranean headland | 0.6 | 0.3-0.6 | sun-warmed rocky outcrop
+white luxury motor cruiser nearby | 0.8 | 0.3-0.6 | smooth glossy fiberglass hull
+distant breakwater pier | 0.6 | 0.2-0.5 | low grey concrete arm
+cumulus clouds over harbor | 0.85 | 0.4-0.8 | piled bright white shapes
+distant superyacht silhouette | 0.5 | 0.2-0.5 | sleek tiered white form
+dock pontoon walkway run | 0.85 | 0.3-0.7 | low floating wooden planking
+flag-lined harbor entrance | 0.5 | 0.15-0.4 | small triangular bunting strings
+distant ferry on horizon | 0.45 | 0.1-0.3 | small white boxy ship
+soft pastel sky band | 0.8 | 0.4-0.8 | gradient peach-blue wash

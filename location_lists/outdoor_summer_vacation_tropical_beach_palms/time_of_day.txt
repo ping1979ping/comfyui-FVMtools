@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late golden afternoon | 1.0 | - | -
+soft mid-morning light | 0.9 | - | -
+warm midday tropical sun | 0.85 | - | -
+hazy noon glare | 0.7 | - | -
+pink dusk afterglow | 0.7 | - | -
+early sunset over water | 0.75 | - | -
+soft hour before sunset | 0.85 | - | -
+dappled palm-shadowed noon | 0.7 | - | -
+warm dawn pastel light | 0.6 | - | -
+twilight blue hour | 0.5 | - | -

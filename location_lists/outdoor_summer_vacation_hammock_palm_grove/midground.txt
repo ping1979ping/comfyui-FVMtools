@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+slung cotton woven hammock | 1.0 | 0.3-0.6 | softly draped striped weave
+two leaning coconut palm trunks | 0.95 | 0.2-0.5 | ringed fibrous brown bark
+bleached driftwood log on sand | 0.6 | 0.05-0.2 | weathered silver-grey grain
+woven palm shade umbrella | 0.55 | 0.1-0.3 | dry shaggy frond layers
+small wooden side table | 0.6 | 0.05-0.2 | softly weathered split timber
+thick coconut husk pile | 0.5 | 0.05-0.2 | dry brown husk fibers
+clay garden water jar | 0.5 | 0.05-0.15 | warm hand-thrown earthen jar
+woven palm-leaf floor mat | 0.65 | 0.1-0.3 | tight pandanus weave
+soft sand patch under hammock | 0.85 | 0.15-0.4 | finely rippled pale grain
+curling fiddlehead fern cluster | 0.55 | 0.05-0.15 | bright green coiled tips
+thick green bamboo cluster | 0.5 | 0.1-0.3 | tall ringed hollow culms
+scattered pink hibiscus blossom | 0.55 | 0.05-0.15 | bright crimson five-petal flowers

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+sprig of bougainvillea bloom | 0.75 | 0.05-0.15 | papery vivid magenta bracts
+out-of-focus blue door corner | 0.5 | 0.05-0.15 | blurred cobalt panel
+cluster of pink oleander | 0.55 | 0.05-0.15 | glossy small five-pointed flowers
+cracked whitewashed step edge | 0.7 | 0.1-0.3 | softly chipped limewash
+trailing jasmine vine | 0.55 | 0.05-0.15 | tiny white starry blooms
+sun-warmed marble corner | 0.6 | 0.1-0.3 | smooth pale veined stone
+dried lavender sprig | 0.45 | 0.03-0.1 | grey-purple seed heads
+out-of-focus ouzo glass | 0.5 | 0.03-0.1 | blurred clear short tumbler
+small olive leaf cluster | 0.6 | 0.05-0.15 | silvery narrow leaves
+ceramic blue evil-eye charm | 0.5 | 0.02-0.08 | glossy painted ward
+tiny lizard on warm wall | 0.35 | 0.02-0.06 | mottled grey-green skin
+sprig of fresh oregano | 0.5 | 0.03-0.1 | tiny green leaf clusters

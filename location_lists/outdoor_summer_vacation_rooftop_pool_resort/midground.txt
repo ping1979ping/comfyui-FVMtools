@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+infinity-edge swimming pool | 1.0 | 0.3-0.6 | mirror-still aqua water
+white tiled pool surround | 0.85 | 0.2-0.5 | smooth glossy bright tile
+pair of teak sun loungers | 0.85 | 0.15-0.4 | richly oiled slatted timber
+white canvas cabana with curtains | 0.7 | 0.15-0.4 | tautly stretched flowing cloth
+glass-railed rooftop edge | 0.85 | 0.2-0.5 | clear panel and metal frame
+modern rooftop bar counter | 0.7 | 0.15-0.4 | slick polished concrete top
+clusters of tall potted plants | 0.7 | 0.1-0.3 | softly arching green forms
+chrome-framed daybed with cushions | 0.6 | 0.15-0.4 | softly piped smooth white
+sculptural concrete planter row | 0.6 | 0.15-0.4 | smooth angular pale shapes
+geometric outdoor sculpture | 0.45 | 0.05-0.15 | softly polished metallic form
+white parasol with chrome stand | 0.7 | 0.1-0.3 | tautly stretched canvas dome
+tiered concrete fountain feature | 0.5 | 0.1-0.3 | softly cascading clear water

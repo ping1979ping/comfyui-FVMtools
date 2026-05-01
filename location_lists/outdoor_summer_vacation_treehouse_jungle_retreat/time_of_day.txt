@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft mid-morning canopy light | 0.95 | - | -
+warm late afternoon shaft | 1.0 | - | -
+dappled jungle noon | 0.9 | - | -
+golden hour through canopy | 0.95 | - | -
+amber pre-evening warmth | 0.85 | - | -
+candle-lit early evening | 0.8 | - | -
+deep blue twilight | 0.7 | - | -
+misty pre-dawn glow | 0.65 | - | -
+night with lantern lights | 0.7 | - | -
+hazy filtered noon | 0.7 | - | -

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+woven straw market tote | 0.7 | 0.05-0.2 | golden plaited fibers
+folded canvas slipcovers stack | 0.55 | 0.05-0.2 | softly creased cream weave
+ceramic vase of pampas grass | 0.7 | 0.05-0.15 | tall feathered tan plumes
+glass hurricane candle holder | 0.65 | 0.03-0.1 | clear faceted tall vase
+coastal coffee-table book pile | 0.65 | 0.05-0.15 | softly worn glossy covers
+woven seagrass tray on ottoman | 0.65 | 0.05-0.15 | golden plaited round dish
+rope-handled glass jug | 0.55 | 0.03-0.1 | clear glass with twine
+softly polished silver tray | 0.5 | 0.03-0.1 | gleaming bright thin disc
+linen cushion with shells embroidery | 0.55 | 0.05-0.15 | softly stitched cream weave
+small driftwood sculpture | 0.5 | 0.03-0.1 | softly silvered abstract form
+chunky cable knit blanket | 0.7 | 0.05-0.2 | softly textured loose cream knit
+woven wicker magazine basket | 0.55 | 0.05-0.15 | golden plaited shallow tray

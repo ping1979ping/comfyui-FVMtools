@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+four-poster canopy bed inside tent | 1.0 | 0.3-0.6 | richly turned dark wood frame
+plush quilted bed coverlet | 0.85 | 0.2-0.5 | softly puffed cream cotton
+campaign-style writing desk | 0.6 | 0.15-0.4 | brass-cornered teak surface
+folding director chair pair | 0.7 | 0.1-0.3 | dark wood and canvas seat
+vintage steamer travel trunk | 0.65 | 0.1-0.3 | scuffed leather-bound corners
+woven moroccan pouf seat | 0.6 | 0.05-0.2 | richly stitched leather hide
+brass-bound storage chest | 0.55 | 0.1-0.3 | rich tooled hide and metal
+hand-knotted persian floor rug | 0.7 | 0.2-0.5 | layered intricate red weave
+small marble-topped side table | 0.55 | 0.05-0.2 | smooth pale veined surface
+hanging lantern from beam | 0.7 | 0.05-0.2 | pierced warm metal frame
+brass-trimmed armoire wardrobe | 0.5 | 0.1-0.3 | dark polished colonial form
+upholstered campaign stool | 0.5 | 0.05-0.15 | softly tufted dark velvet

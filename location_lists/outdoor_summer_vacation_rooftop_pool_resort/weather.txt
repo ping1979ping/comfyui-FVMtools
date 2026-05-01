@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright urban sky | 1.0 | - | -
+gentle high-altitude breeze | 0.85 | - | -
+hot still summer afternoon | 0.7 | - | -
+hazy heat shimmer over city | 0.65 | - | -
+soft warm balmy evening | 0.85 | - | -
+high cirrus over towers | 0.6 | - | -
+brief sudden city downpour | 0.4 | - | -
+sun-warmed concrete air | 0.8 | - | -
+calm clear evening | 0.8 | - | -
+distant heat lightning | 0.4 | - | -

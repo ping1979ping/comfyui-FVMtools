@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+palm-thatched roof corner | 0.75 | 0.1-0.3 | layered dry frond bundles
+weathered teak deck planks | 0.7 | 0.15-0.4 | richly oiled sun-aged grain
+white-painted wooden balustrade | 0.6 | 0.1-0.3 | gently chipped glossy paint
+bamboo post veranda support | 0.65 | 0.1-0.3 | golden hollow ringed pole
+woven palm wall panel | 0.55 | 0.1-0.3 | tight diagonal frond weave
+rope-tied pavilion truss | 0.5 | 0.1-0.3 | knotted natural sisal joints
+coral stone lower wall | 0.5 | 0.1-0.3 | pitted bleached masonry
+open shutters with louvers | 0.55 | 0.1-0.3 | thin painted timber slats
+hanging shell wind chime | 0.5 | 0.05-0.15 | softly clinking pale shells
+weathered boardwalk plank | 0.6 | 0.15-0.4 | softly silvered grain
+tiki-style carved post | 0.4 | 0.05-0.2 | softly carved warm hardwood
+canvas sail awning corner | 0.5 | 0.1-0.3 | tautly stretched off-white cloth

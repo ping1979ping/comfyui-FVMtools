@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+cluster of dark grapes on vine | 0.85 | 0.05-0.15 | glossy heavy purple bunches
+trailing grape leaves | 0.7 | 0.05-0.15 | green five-lobed foliage
+bottle of red wine on table | 0.75 | 0.03-0.1 | dark glass and cork
+out-of-focus wine glass with red | 0.6 | 0.03-0.1 | blurred ruby filled bowl
+hunk of crusty country bread | 0.6 | 0.05-0.15 | softly cracked golden crust
+spray of lavender sprigs | 0.55 | 0.05-0.15 | grey-purple fragrant heads
+out-of-focus straw hat brim | 0.6 | 0.05-0.15 | blurred braided fiber edge
+warm tuscan flagstone | 0.85 | 0.15-0.4 | warm uneven slate slabs
+small green olives in bowl | 0.55 | 0.03-0.1 | glossy bright fruits
+sprig of fresh basil | 0.55 | 0.03-0.1 | bright glossy green leaves
+out-of-focus oil decanter | 0.55 | 0.03-0.1 | blurred clear amber glass
+warm crumbled stone wall corner | 0.6 | 0.1-0.3 | softly chipped pale masonry

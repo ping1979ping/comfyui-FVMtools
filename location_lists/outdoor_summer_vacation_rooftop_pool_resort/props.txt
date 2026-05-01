@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bottle of chilled champagne | 0.8 | 0.03-0.1 | dark green dewy glass
+two crystal champagne flutes | 0.75 | 0.03-0.1 | clear slender stemware
+oversized white sun hat | 0.8 | 0.05-0.15 | softly floppy straw weave
+designer cat-eye sunglasses | 0.8 | 0.02-0.08 | glossy black acetate frame
+silver cocktail shaker set | 0.6 | 0.03-0.1 | softly polished bright metal
+luxe rolled bath towel stack | 0.65 | 0.05-0.2 | softly piled fluffy cotton
+chic leather pool tote | 0.65 | 0.05-0.2 | softly polished cream hide
+glass cocktail with citrus | 0.7 | 0.03-0.1 | bright drink and rim wedge
+silver-handled fashion magazine | 0.55 | 0.03-0.1 | softly creased glossy cover
+white silk sarong wrap | 0.6 | 0.05-0.2 | softly flowing draped silk
+small pool float donut shape | 0.45 | 0.05-0.15 | smooth glossy vinyl ring
+brushed brass beach lantern | 0.5 | 0.05-0.15 | softly polished warm metal

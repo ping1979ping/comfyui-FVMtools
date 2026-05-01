@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+palm trunk hammock anchor knot | 0.85 | 0.05-0.15 | thick rope coiled around trunk
+small carved wooden tag plaque | 0.45 | 0.02-0.06 | softly worn timber sign
+rope-tied sisal trunk wrap | 0.55 | 0.05-0.15 | knotted natural sisal binding
+woven palm-leaf gate panel | 0.5 | 0.1-0.3 | tight diagonal frond weave
+bamboo pole anchor strut | 0.55 | 0.05-0.15 | golden ringed hollow stem
+hand-carved wooden welcome sign | 0.4 | 0.05-0.15 | softly chiseled tiki motif
+rough coral stone path edge | 0.55 | 0.1-0.3 | pitted bleached masonry strip
+woven thatch lean-to corner | 0.45 | 0.1-0.3 | dry grass bundle layers
+hand-tied bamboo fence run | 0.5 | 0.1-0.3 | thin tied dry stalks
+rope swing harness loop | 0.5 | 0.05-0.15 | thick natural twisted hemp
+palm-leaf cordage knot | 0.45 | 0.02-0.08 | woven natural plait tie
+weathered wooden marker post | 0.4 | 0.05-0.15 | softly silvered split timber

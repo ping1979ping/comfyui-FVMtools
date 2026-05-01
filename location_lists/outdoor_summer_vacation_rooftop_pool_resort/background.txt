@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+cityscape skyline of glass towers | 1.0 | 0.4-0.9 | reflective glass and steel grid
+distant urban skyline horizon | 0.85 | 0.3-0.7 | clustered tall geometric forms
+hazy harbor band beyond city | 0.6 | 0.2-0.5 | softly distant blue strip
+soft pastel evening sky | 0.85 | 0.4-0.8 | gradient peach-blue wash
+distant glass tower with lights | 0.7 | 0.3-0.6 | pinpoint glowing window grid
+modern metallic skyscraper face | 0.65 | 0.2-0.5 | gleaming silvery glass curtain
+distant rooftop helipad | 0.4 | 0.05-0.15 | small white circular pad
+backlit infinity-edge skyline | 0.7 | 0.3-0.6 | mirrored cityscape water reflection
+rooftop garden tree silhouette | 0.55 | 0.15-0.4 | dark sculpted leafy form
+high cumulus drift over city | 0.7 | 0.3-0.7 | soft white piled volumes
+distant glowing harbor lights | 0.55 | 0.2-0.5 | scattered pinpoint city sparkle
+elevated cable bridge silhouette | 0.4 | 0.1-0.3 | thin suspended cable arc

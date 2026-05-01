@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+silver-handled cutlery set | 0.85 | 0.03-0.1 | softly polished bright metal
+crystal wine decanter | 0.7 | 0.03-0.1 | richly faceted lead glass
+bottle of vintage red wine | 0.8 | 0.03-0.1 | dark labeled tall glass
+linen napkin draped over arm | 0.7 | 0.05-0.15 | softly pressed cream weave
+small porcelain dessert dish | 0.55 | 0.03-0.1 | glossy thin scrolled rim
+crystal water carafe | 0.6 | 0.03-0.1 | richly faceted clear glass
+spray of cut hydrangea | 0.55 | 0.05-0.15 | soft round blue bloom heads
+brass candle snuffer | 0.45 | 0.02-0.06 | softly polished pole-mounted bell
+guest place card holder | 0.5 | 0.02-0.06 | small carved wooden stand
+woven straw fan | 0.5 | 0.03-0.1 | golden plaited paddle shape
+silk evening shawl draped | 0.65 | 0.05-0.2 | richly flowing patterned weave
+bouquet of garden lavender | 0.55 | 0.05-0.15 | grey-purple fragrant heads

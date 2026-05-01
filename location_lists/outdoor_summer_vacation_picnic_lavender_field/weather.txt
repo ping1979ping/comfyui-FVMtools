@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+bright dry provence sky | 1.0 | - | -
+warm fragrant lavender breeze | 0.95 | - | -
+hot still afternoon | 0.75 | - | -
+hazy heat shimmer | 0.6 | - | -
+piled cumulus drifting | 0.85 | - | -
+brief summer thunder shower | 0.4 | - | -
+cicada-warm afternoon | 0.7 | - | -
+soft balmy evening cool | 0.7 | - | -
+clear cool morning air | 0.6 | - | -
+high thin cirrus streaks | 0.5 | - | -

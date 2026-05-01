@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue summer sky | 1.0 | - | -
+gentle lake breeze | 0.9 | - | -
+mirror-still water air | 0.7 | - | -
+hazy warm humid afternoon | 0.6 | - | -
+brief lakeside shower | 0.5 | - | -
+soft morning mist on lake | 0.65 | - | -
+warm dry afternoon stillness | 0.8 | - | -
+fragrant pine-scented air | 0.7 | - | -
+calm starry evening air | 0.6 | - | -
+distant rumble of thunder | 0.4 | - | -

@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+larch dock support post | 0.85 | 0.1-0.3 | weathered ringed timber
+iron mooring ring on post | 0.65 | 0.02-0.08 | rust-darkened forged metal
+boathouse double swing doors | 0.55 | 0.1-0.3 | painted weather-cracked wood
+swiss-style carved bargeboard | 0.5 | 0.1-0.25 | scrolled detailed timber edge
+shingle roof corner of cabin | 0.6 | 0.1-0.3 | layered weathered cedar shakes
+log cabin notched corner | 0.55 | 0.1-0.3 | hand-hewn rounded log ends
+stone retaining wall section | 0.55 | 0.1-0.3 | dry-stacked rough granite
+diving board over water | 0.45 | 0.05-0.15 | white painted plank end
+rope handrail along dock | 0.5 | 0.1-0.3 | thick twisted natural rope
+wooden ladder into lake | 0.55 | 0.05-0.2 | smoothly worn timber rungs
+metal lantern hung from post | 0.45 | 0.05-0.15 | aged black iron frame
+boathouse painted name board | 0.4 | 0.05-0.15 | hand-painted weathered timber

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+enamel coffee mug | 0.85 | 0.02-0.08 | softly chipped white finish
+cozy cable-knit lap blanket | 0.75 | 0.05-0.2 | softly textured cream wool
+acoustic guitar leaning | 0.5 | 0.05-0.2 | warm spruce wood top
+paperback adventure novel | 0.65 | 0.03-0.1 | softly creased cover
+bug-spray spray bottle | 0.4 | 0.02-0.06 | smooth labeled tube
+woven willow basket of berries | 0.55 | 0.05-0.15 | tight basketry with red fruit
+old kerosene lantern | 0.6 | 0.05-0.15 | softly aged warm metal
+checkered red picnic cloth | 0.6 | 0.05-0.2 | bright printed cotton plaid
+cast iron skillet | 0.45 | 0.05-0.15 | dark seasoned pan
+fishing rod and tackle box | 0.55 | 0.05-0.2 | slender bamboo and metal
+mason jar of lemonade | 0.65 | 0.02-0.08 | clear lightly beaded glass
+old polaroid camera | 0.45 | 0.03-0.1 | softly worn boxy plastic

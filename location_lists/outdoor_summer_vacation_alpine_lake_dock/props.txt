@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+striped cotton swim towel | 0.85 | 0.05-0.2 | softly worn loop pile
+woven straw sun hat | 0.7 | 0.05-0.15 | golden plaited fibers
+wooden lake oar leaning | 0.6 | 0.05-0.2 | varnished blade and shaft
+enamel coffee mug | 0.65 | 0.02-0.08 | softly chipped white finish
+glass mason jar lemonade | 0.55 | 0.02-0.1 | clear lightly beaded glass
+paperback book on dock | 0.55 | 0.03-0.1 | softly bent cover
+woven picnic basket | 0.6 | 0.05-0.2 | tight willow weave
+canvas duffel bag | 0.55 | 0.05-0.2 | softly creased waxed cotton
+wide-brim straw fishing hat | 0.5 | 0.05-0.15 | rough plait with leather band
+old rod and reel leaning | 0.5 | 0.05-0.2 | slender bamboo and brass
+acoustic guitar by chair | 0.4 | 0.05-0.2 | warm spruce wood top
+small leather camera | 0.5 | 0.02-0.08 | rich worn brown leather

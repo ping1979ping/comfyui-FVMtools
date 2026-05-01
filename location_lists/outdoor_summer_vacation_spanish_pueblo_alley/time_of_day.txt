@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday sun | 0.85 | - | -
+warm late afternoon | 1.0 | - | -
+soft mid-morning light | 0.9 | - | -
+golden hour shaft | 0.95 | - | -
+amber pre-evening glow | 0.85 | - | -
+twilight string-light hour | 0.7 | - | -
+calm dawn over alley | 0.55 | - | -
+hot siesta noon glare | 0.7 | - | -
+soft pink dusk band | 0.65 | - | -
+night with lantern lights | 0.6 | - | -

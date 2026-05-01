@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft mid-morning canvas glow | 0.95 | - | -
+warm late afternoon shaft | 0.95 | - | -
+candle-lit early evening | 0.9 | - | -
+bright midday filtered sun | 0.7 | - | -
+amber late-day warmth | 0.85 | - | -
+golden hour through canvas | 0.95 | - | -
+deep blue twilight | 0.7 | - | -
+cool dawn diffused light | 0.6 | - | -
+night-time lantern glow | 0.8 | - | -
+hot bright noon outside | 0.55 | - | -

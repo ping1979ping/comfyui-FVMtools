@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+warm late afternoon | 1.0 | - | -
+soft mid-morning light | 0.9 | - | -
+golden hour over vines | 0.95 | - | -
+amber pre-dinner glow | 0.9 | - | -
+candle-lit evening | 0.7 | - | -
+hazy bright midday | 0.7 | - | -
+calm pink dusk | 0.75 | - | -
+warm dawn over fields | 0.6 | - | -
+hot tuscan noon | 0.7 | - | -
+twilight blue hour | 0.55 | - | -

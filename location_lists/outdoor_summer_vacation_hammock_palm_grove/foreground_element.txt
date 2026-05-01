@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dappled hammock weave shadow | 0.85 | 0.1-0.3 | criss-cross diamond pattern
+out-of-focus palm frond | 0.7 | 0.05-0.2 | blurred green feathered blade
+soft foreground sand patch | 0.85 | 0.15-0.4 | finely rippled pale grain
+scattered fallen frangipani | 0.55 | 0.03-0.12 | creamy waxy fallen petals
+out-of-focus hibiscus bloom | 0.5 | 0.05-0.15 | blurred crimson petal mass
+small spiral seashell | 0.4 | 0.02-0.06 | softly polished pale whorl
+tropical book face-down | 0.55 | 0.03-0.1 | softly creased paperback cover
+curling rope edge of hammock | 0.65 | 0.05-0.15 | softly knotted thick cotton
+warm tropical leaf shadow | 0.75 | 0.1-0.3 | crisp cut-out leaf silhouette
+green fern frond tip | 0.5 | 0.03-0.1 | bright glossy serrated edge
+small lizard on warm sand | 0.35 | 0.02-0.06 | mottled green-brown tiny form
+out-of-focus coconut drink | 0.5 | 0.03-0.1 | blurred green sphere with straw

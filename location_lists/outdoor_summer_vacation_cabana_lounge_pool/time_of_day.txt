@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday resort sun | 1.0 | - | -
+warm late afternoon | 0.95 | - | -
+soft mid-morning glow | 0.9 | - | -
+golden hour over deck | 0.95 | - | -
+amber pre-evening warmth | 0.85 | - | -
+fiery resort sunset | 0.85 | - | -
+hot bleached noon | 0.75 | - | -
+soft hour before sunset | 0.9 | - | -
+twilight blue hour | 0.55 | - | -
+calm pre-evening glow | 0.8 | - | -

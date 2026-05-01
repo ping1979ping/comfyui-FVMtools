@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+woven willow grape basket | 0.8 | 0.05-0.2 | tight country basketry
+linen tablecloth corner | 0.7 | 0.05-0.2 | softly creased natural weave
+bottle of barolo wine | 0.7 | 0.03-0.1 | dark tall glass and label
+two crystal wine glasses | 0.7 | 0.03-0.1 | clear delicate stemware
+wooden cheese board with knife | 0.6 | 0.05-0.15 | warm oiled olivewood slab
+wedge of pecorino cheese | 0.55 | 0.03-0.1 | crystalline pale rind
+woven straw harvest hat | 0.7 | 0.05-0.15 | golden plaited fibers
+linen apron with smudges | 0.6 | 0.05-0.2 | softly stained natural weave
+hand-thrown ceramic pitcher | 0.65 | 0.03-0.1 | warm glazed clay
+small leather wine journal | 0.45 | 0.03-0.1 | richly aged dark hide
+bunch of fresh thyme tied | 0.55 | 0.03-0.1 | tiny grey-green leaves
+glass jar of preserved figs | 0.5 | 0.03-0.1 | clear glass with dark fruit

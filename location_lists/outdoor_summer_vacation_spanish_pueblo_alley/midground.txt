@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+worn cobblestone alley floor | 1.0 | 0.3-0.7 | uneven warm rounded stones
+clustered terracotta wall planters | 0.85 | 0.15-0.4 | warm pot row with green
+heavy wooden tavern door | 0.7 | 0.1-0.3 | iron-studded dark timber
+wrought iron window grille | 0.7 | 0.1-0.3 | dark scrolled forged bars
+trailing bougainvillea cascade | 0.75 | 0.15-0.4 | dense magenta paper bracts
+small wrought iron balcony | 0.65 | 0.1-0.3 | dark fretwork bracket
+narrow whitewashed step run | 0.6 | 0.1-0.3 | bright limewashed risers
+cafe table on cobble | 0.55 | 0.1-0.3 | small marble round top
+woven rush chair pair | 0.5 | 0.05-0.2 | tan plaited seat backs
+hand-painted ceramic plaque | 0.55 | 0.05-0.15 | small bright tile sign
+trailing jasmine over arch | 0.6 | 0.1-0.3 | tiny white starry blooms
+laundry hanging across alley | 0.55 | 0.1-0.3 | bright billowing fabric line

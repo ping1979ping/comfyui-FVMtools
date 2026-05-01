@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+heavy oak farmhouse table | 1.0 | 0.3-0.6 | thickly planked oiled grain
+white ceramic farmhouse sink | 0.7 | 0.15-0.4 | softly chipped glossy enamel
+rustic wooden kitchen island | 0.7 | 0.2-0.5 | softly scarred chestnut top
+pair of ladder-back rush chairs | 0.65 | 0.15-0.4 | woven seagrass seats
+painted hutch with plates | 0.6 | 0.2-0.5 | softly aged sage finish
+hanging copper pots and pans | 0.7 | 0.1-0.3 | hammered burnished metal
+wood-fired stove front | 0.55 | 0.15-0.4 | sooted warm cast iron
+glazed terracotta urn | 0.55 | 0.1-0.3 | warm honey-glazed clay
+basket of fresh produce | 0.7 | 0.1-0.25 | woven willow with vegetables
+hanging garlic and pepper braid | 0.6 | 0.05-0.2 | papery dried clusters
+ceramic olive oil amphora | 0.55 | 0.05-0.2 | smooth glazed earthenware
+herb-laden wooden shelf | 0.65 | 0.1-0.3 | bunches of dried green

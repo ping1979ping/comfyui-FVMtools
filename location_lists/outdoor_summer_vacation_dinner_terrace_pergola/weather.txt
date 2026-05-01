@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm balmy summer evening | 1.0 | - | -
+gentle warm breeze | 0.85 | - | -
+fragrant rose-scented air | 0.7 | - | -
+clear evening sky | 0.9 | - | -
+soft starry stillness | 0.7 | - | -
+distant heat lightning | 0.4 | - | -
+hazy summer warmth | 0.6 | - | -
+crisp post-rain freshness | 0.5 | - | -
+fireflies-warm air | 0.55 | - | -
+high thin cirrus streaks | 0.5 | - | -

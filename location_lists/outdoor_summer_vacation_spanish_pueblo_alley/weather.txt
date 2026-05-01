@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright andalusian sky | 1.0 | - | -
+hot dry summer afternoon | 0.85 | - | -
+soft breeze through alley | 0.8 | - | -
+warm dusty siesta stillness | 0.7 | - | -
+brief sudden summer downpour | 0.4 | - | -
+hazy heat shimmer | 0.6 | - | -
+high thin cirrus streaks | 0.5 | - | -
+sun-baked stone air | 0.85 | - | -
+balmy fragrant evening | 0.7 | - | -
+clear cool morning air | 0.6 | - | -

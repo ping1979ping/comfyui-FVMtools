@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+twilight string-light hour | 1.0 | - | -
+candle-lit evening | 1.0 | - | -
+late golden hour glow | 0.9 | - | -
+fiery sunset behind hills | 0.85 | - | -
+deep blue hour after sunset | 0.85 | - | -
+warm pink dusk | 0.8 | - | -
+night with star sky | 0.7 | - | -
+soft pre-dinner amber | 0.85 | - | -
+moonlit late evening | 0.55 | - | -
+last light before dark | 0.8 | - | -

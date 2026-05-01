@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bottle of chilled champagne | 0.8 | 0.03-0.1 | dark green dewy glass
+two crystal champagne flutes | 0.75 | 0.03-0.1 | clear slender stemware
+oversized white sun hat | 0.85 | 0.05-0.15 | softly floppy straw weave
+dark cat-eye sunglasses | 0.75 | 0.02-0.08 | glossy black acetate frame
+striped boat shoes pair | 0.6 | 0.03-0.1 | leather and canvas blend
+woven beach bag with towel | 0.7 | 0.05-0.2 | golden raffia and terry
+silver-handled hairbrush | 0.45 | 0.02-0.08 | polished gleaming metal
+small leather valise | 0.55 | 0.05-0.2 | softly aged tan hide
+gold chain-link belt coiled | 0.45 | 0.02-0.06 | softly polished metallic curls
+nautical brass spyglass | 0.55 | 0.03-0.1 | richly polished warm metal
+harbor map rolled up | 0.5 | 0.02-0.08 | softly creased paper tube
+crystal cocktail tumbler | 0.6 | 0.02-0.08 | faceted clear lowball

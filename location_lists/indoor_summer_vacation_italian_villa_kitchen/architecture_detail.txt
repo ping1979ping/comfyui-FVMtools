@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+heavy timber lintel above door | 0.7 | 0.1-0.3 | dark oiled hand-hewn beam
+arched stone alcove niche | 0.6 | 0.1-0.3 | rough limestone curve
+wrought iron pot hook bracket | 0.55 | 0.02-0.1 | dark forged twist
+deep-set casement window | 0.7 | 0.15-0.4 | thick whitewashed reveal
+hand-painted tile backsplash | 0.65 | 0.1-0.3 | glossy patterned majolica
+wooden shutter folded open | 0.6 | 0.1-0.3 | sage painted slatted timber
+ceramic chimney hood | 0.55 | 0.1-0.3 | white-plastered tapered form
+warm terracotta floor seam | 0.7 | 0.15-0.4 | warm clay tile and grout
+carved wooden corbel | 0.45 | 0.05-0.15 | softly scrolled timber
+painted ceiling beam stencil | 0.45 | 0.1-0.3 | faded floral motif on wood

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bowl of fresh tomatoes | 0.8 | 0.05-0.15 | glossy bright red skins
+loaf of crusty rustic bread | 0.7 | 0.05-0.15 | softly cracked golden crust
+linen tea towel draped | 0.7 | 0.05-0.15 | softly creased natural weave
+bottle of olive oil | 0.7 | 0.03-0.1 | clear glass and amber liquid
+fresh basil sprig in glass | 0.65 | 0.03-0.1 | bright glossy green leaves
+out-of-focus copper pan handle | 0.55 | 0.05-0.15 | blurred warm brushed metal
+half-sliced lemon on board | 0.55 | 0.03-0.1 | bright glossy citrus pulp
+ceramic bowl of olives | 0.55 | 0.03-0.1 | glossy purple-green fruits
+stoneware salt cellar | 0.5 | 0.02-0.08 | softly thrown rough clay
+splash of red wine in glass | 0.5 | 0.03-0.1 | rich translucent ruby
+bunch of fresh rosemary | 0.55 | 0.03-0.1 | spiky deep green needles
+stack of patterned ceramic plates | 0.55 | 0.05-0.15 | hand-painted blue rim

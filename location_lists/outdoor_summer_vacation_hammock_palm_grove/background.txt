@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+dense feathery palm canopy | 1.0 | 0.5-1.0 | layered green frond curtain
+dappled sunlit grove understory | 0.85 | 0.4-0.8 | bright dappled shadowed foliage
+distant ocean glimpse through palms | 0.65 | 0.2-0.5 | bright aqua shimmer slivers
+golden sand path through grove | 0.7 | 0.3-0.6 | soft pale meandering trail
+soft pastel sky band | 0.7 | 0.3-0.6 | gradient peach-aqua wash
+clusters of green coconuts above | 0.7 | 0.2-0.5 | dark rounded heavy fruit
+flowering plumeria backdrop | 0.55 | 0.2-0.5 | scattered creamy bloom dots
+trailing climbing vine wall | 0.65 | 0.3-0.6 | dense glossy dark green
+hibiscus flower-flecked thicket | 0.55 | 0.2-0.5 | scarlet bloom-dotted greenery
+sun-bleached fallen log line | 0.5 | 0.15-0.4 | softly silvered horizontal piece
+distant grove of banana trees | 0.5 | 0.2-0.5 | wide glossy green leaves
+softly out-of-focus tropical light | 0.85 | 0.4-0.8 | warm honey-toned diffuse glow

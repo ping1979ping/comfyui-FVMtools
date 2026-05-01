@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+golden bushveld sunrise | 0.85 | - | -
+warm mid-morning glow | 0.85 | - | -
+hot midday safari light | 0.7 | - | -
+late afternoon amber | 1.0 | - | -
+fiery sundowner hour | 0.95 | - | -
+soft dusk over plains | 0.8 | - | -
+cool early-evening blue | 0.65 | - | -
+dawn over savanna | 0.7 | - | -
+hazy afternoon glare | 0.65 | - | -
+twilight just after sunset | 0.6 | - | -

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+oversized white linen sectional | 1.0 | 0.3-0.6 | softly slipcovered piped weave
+weathered driftwood coffee table | 0.85 | 0.15-0.4 | softly silvered split timber
+woven jute area rug expanse | 0.85 | 0.3-0.7 | thick tan plaited natural fiber
+rattan accent armchair pair | 0.8 | 0.15-0.4 | golden plaited fiber back
+white-painted wooden console | 0.65 | 0.1-0.3 | softly chipped glossy paint
+large potted bird-of-paradise | 0.65 | 0.1-0.3 | tall arching glossy leaves
+woven seagrass storage basket | 0.7 | 0.05-0.2 | golden plaited tall barrel
+long wooden farmhouse trestle | 0.55 | 0.15-0.4 | thickly planked oiled grain
+glass-and-iron lantern pendant | 0.6 | 0.05-0.2 | clear paneled warm metal frame
+white slipcovered bench seat | 0.55 | 0.15-0.4 | softly piped cream weave
+trio of capiz-shell pendants | 0.5 | 0.05-0.2 | iridescent flat shell discs
+woven lampshade floor lamp | 0.55 | 0.05-0.2 | golden plaited fiber drum

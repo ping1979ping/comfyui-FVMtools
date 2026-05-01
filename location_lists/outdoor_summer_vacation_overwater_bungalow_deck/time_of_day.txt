@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft mid-morning glow | 0.9 | - | -
+bright midday lagoon sun | 0.85 | - | -
+warm late afternoon | 1.0 | - | -
+golden hour over lagoon | 0.95 | - | -
+fiery tropical sunset | 0.95 | - | -
+pink twilight afterglow | 0.75 | - | -
+cool blue post-sunset | 0.55 | - | -
+dawn over reef | 0.65 | - | -
+hazy noon glare | 0.7 | - | -
+calm pre-evening hour | 0.8 | - | -

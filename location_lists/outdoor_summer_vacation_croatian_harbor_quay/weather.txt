@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright adriatic sky | 1.0 | - | -
+warm dry summer afternoon | 0.85 | - | -
+gentle harbor breeze | 0.9 | - | -
+salt-misted balmy air | 0.7 | - | -
+hazy heat shimmer over water | 0.55 | - | -
+high thin cirrus streaks | 0.5 | - | -
+brief sudden squall | 0.4 | - | -
+sun-baked stone air | 0.8 | - | -
+soft fragrant pine breeze | 0.7 | - | -
+calm glassy water stillness | 0.6 | - | -

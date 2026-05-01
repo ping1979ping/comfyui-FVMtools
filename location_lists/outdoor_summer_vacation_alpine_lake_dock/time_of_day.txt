@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+calm early morning light | 0.95 | - | -
+crisp mid-morning sun | 0.9 | - | -
+bright midday alpine glare | 0.7 | - | -
+warm late afternoon | 1.0 | - | -
+soft golden hour | 0.95 | - | -
+pink alpenglow on peaks | 0.7 | - | -
+cool blue twilight | 0.55 | - | -
+hazy noon over water | 0.7 | - | -
+post-rain bright daylight | 0.55 | - | -
+clear cool dusk | 0.6 | - | -

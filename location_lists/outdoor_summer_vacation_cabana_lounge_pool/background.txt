@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+resort pool deck stretching back | 1.0 | 0.4-0.9 | warm pale stone expanse
+distant tropical garden hedge | 0.85 | 0.3-0.7 | dense glossy green wall
+clusters of resort palms | 0.85 | 0.3-0.7 | tall feathery frond canopies
+white-painted poolside columns | 0.65 | 0.2-0.5 | smooth bright fluted shafts
+distant resort villa rooftops | 0.6 | 0.2-0.5 | warm clay-tile clusters
+softly aqua tropical sky | 0.85 | 0.3-0.7 | bright clear gradient blue
+distant blue ocean band | 0.55 | 0.2-0.5 | bright reflective water strip
+fountain feature in distance | 0.55 | 0.15-0.4 | softly cascading clear plume
+cluster of patrons distantly | 0.4 | 0.05-0.2 | soft figure silhouettes
+pool-bar pavilion in distance | 0.55 | 0.15-0.4 | thatched-roof small structure
+trailing bougainvillea wall | 0.65 | 0.2-0.5 | dense magenta paper bracts
+mounted resort flag pole | 0.4 | 0.05-0.15 | tall thin pole and pennant

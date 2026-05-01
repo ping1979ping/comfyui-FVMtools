@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+worn flagstone surface | 0.95 | 0.15-0.4 | warm aged uneven stone
+coiled white mooring rope | 0.85 | 0.05-0.2 | softly twisted natural fiber
+out-of-focus sangria glass | 0.55 | 0.03-0.1 | blurred glass with red drink
+gentle harbor water ripple | 0.85 | 0.1-0.3 | bright dappled aqua reflections
+out-of-focus sailing boat hull | 0.5 | 0.05-0.15 | blurred painted curved side
+sprig of lavender on table | 0.5 | 0.03-0.1 | grey-purple fragrant heads
+small spiky sea urchin shell | 0.4 | 0.02-0.06 | softly dried purple husk
+out-of-focus iron bollard | 0.55 | 0.05-0.15 | blurred warm forged post
+small lit candle in glass | 0.45 | 0.02-0.06 | warm soft flame globe
+old folded paper map corner | 0.5 | 0.02-0.08 | softly creased tan paper
+seagull silhouette overhead | 0.4 | 0.02-0.06 | small dark winged shape
+fresh cut citrus wedge | 0.55 | 0.02-0.06 | bright glossy yellow slice

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+worn porch plank edge | 0.95 | 0.15-0.4 | weathered grey timber grain
+out-of-focus mug of coffee | 0.7 | 0.03-0.1 | blurred warm enamel cylinder
+soft knitted throw fold | 0.7 | 0.05-0.2 | softly textured cream wool
+out-of-focus pine bough | 0.55 | 0.05-0.2 | blurred dark green needles
+mason jar with wildflowers | 0.6 | 0.03-0.12 | clear glass with bright bouquet
+small cluster of pine cones | 0.45 | 0.02-0.1 | softly textured woody scales
+chipped enamel kettle | 0.5 | 0.05-0.15 | softly scuffed white finish
+out-of-focus paperback book | 0.6 | 0.03-0.1 | blurred soft creased cover
+hanging dragonfly wind chime | 0.4 | 0.03-0.1 | small tinkling pierced metal
+warm log porch shadow stripe | 0.7 | 0.1-0.3 | crisp diagonal dark band
+sprig of yellow daisies | 0.5 | 0.03-0.1 | small bright petal heads
+out-of-focus rocking chair arm | 0.5 | 0.05-0.15 | blurred painted timber

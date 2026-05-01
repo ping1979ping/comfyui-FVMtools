@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm dry bushveld day outside | 0.9 | - | -
+gentle breeze rippling canvas | 0.85 | - | -
+hot still afternoon | 0.7 | - | -
+soft pattering rain on canvas | 0.5 | - | -
+heavy downpour on roof | 0.4 | - | -
+calm cool evening | 0.7 | - | -
+sun-warmed canvas air | 0.85 | - | -
+distant thunder rumbling | 0.45 | - | -
+clear cool dawn outside | 0.6 | - | -
+light dusty wind passing | 0.5 | - | -

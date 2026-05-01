@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+slender white cabana support post | 0.85 | 0.05-0.15 | softly polished bright shaft
+softly draped curtain rail | 0.75 | 0.05-0.15 | brushed brass slim track
+white tile pool waterline | 0.7 | 0.1-0.3 | densely set glossy mosaic
+warm travertine stone deck | 0.85 | 0.2-0.5 | softly aged pale tile
+recessed tile drainage strip | 0.5 | 0.05-0.15 | small tile-edged groove
+gold-trim cabana valance | 0.55 | 0.05-0.15 | softly draped piped band
+softly carved column scroll | 0.5 | 0.05-0.15 | softly aged decorative top
+recessed deck lighting strip | 0.5 | 0.05-0.15 | thin softly glowing band
+modern angular planter rim | 0.55 | 0.05-0.15 | softly polished pale slab
+poolside concrete coping | 0.7 | 0.1-0.3 | softly polished pale slab
+brushed brass railing post | 0.55 | 0.05-0.15 | softly polished warm tube
+trellised vine archway | 0.5 | 0.1-0.3 | timber under green drape

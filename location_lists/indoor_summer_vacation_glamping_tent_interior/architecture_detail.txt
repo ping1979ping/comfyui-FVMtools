@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+heavy canvas seam stitching | 0.75 | 0.1-0.3 | thick double-row binding
+brass tent pole tip cap | 0.65 | 0.02-0.08 | softly polished warm metal
+canvas tie-down loop with rope | 0.55 | 0.05-0.15 | thick cotton tape and twist
+wood-grain trim on canvas seam | 0.5 | 0.05-0.15 | painted faux finish strip
+rope-laced tent door hem | 0.6 | 0.05-0.2 | thick eyelet and twine
+brass corner reinforcement | 0.5 | 0.02-0.08 | small tarnished plate
+heavy canvas door zipper run | 0.5 | 0.05-0.15 | dark sturdy toothed line
+hand-stitched leather corner | 0.5 | 0.02-0.08 | rich saddle-brown thick hide
+oriental rug tasseled edge | 0.7 | 0.05-0.15 | densely knotted cream fringe
+tent peak timber join | 0.5 | 0.05-0.15 | hand-shaped warm beam crook
+canvas flap tie ribbon | 0.55 | 0.02-0.08 | softly knotted cream cotton
+guy-rope tensioner stake | 0.45 | 0.02-0.06 | metal cleat and rope

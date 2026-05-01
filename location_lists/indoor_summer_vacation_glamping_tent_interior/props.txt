@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+vintage leather travel trunk | 0.75 | 0.05-0.2 | richly tooled tan hide
+pith safari helmet on stand | 0.55 | 0.05-0.15 | softly aged cork-textured shell
+leather-bound journal with pen | 0.7 | 0.03-0.1 | rich worn dark hide
+crystal whiskey decanter | 0.65 | 0.03-0.1 | richly faceted lead glass
+two heavy lowball glasses | 0.6 | 0.02-0.08 | thick clear cut crystal
+brass-and-leather binoculars | 0.55 | 0.03-0.1 | richly polished warm metal
+vintage map of the region | 0.55 | 0.03-0.12 | softly creased aged paper
+silver hairbrush set | 0.5 | 0.02-0.08 | richly engraved bright metal
+woven moroccan tea tray | 0.6 | 0.05-0.15 | hand-hammered brass disc
+loose silk scarf draped | 0.6 | 0.05-0.15 | richly flowing patterned weave
+brass french press coffee pot | 0.55 | 0.03-0.1 | softly polished warm cylinder
+bowl of fresh stone fruit | 0.5 | 0.05-0.15 | glossy peach and plum mix

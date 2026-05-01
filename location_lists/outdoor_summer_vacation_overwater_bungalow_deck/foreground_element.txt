@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+worn teak deck plank | 0.95 | 0.15-0.4 | warm parallel oiled lines
+glittering water surface ripple | 0.85 | 0.1-0.3 | bright dappled aqua reflections
+out-of-focus thatched fringe | 0.6 | 0.05-0.15 | blurred dry frond edge
+plumeria flower on deck | 0.55 | 0.03-0.1 | creamy waxy five-petal bloom
+spiral pink seashell | 0.4 | 0.02-0.08 | softly polished shell whorl
+splash from ladder dripping | 0.5 | 0.05-0.15 | clear bead-like falling drops
+out-of-focus hibiscus petal | 0.5 | 0.05-0.15 | blurred crimson bloom
+woven palm-fiber doormat | 0.5 | 0.05-0.15 | rough natural plait texture
+cocktail glass with paper umbrella | 0.55 | 0.03-0.1 | clear faceted glass and parasol
+warm wet footprint on deck | 0.55 | 0.05-0.2 | darkened damp plank patches
+small sea turtle silhouette below | 0.35 | 0.05-0.15 | dark shape under water
+trailing braided rope tassel | 0.5 | 0.03-0.1 | softly knotted natural fiber

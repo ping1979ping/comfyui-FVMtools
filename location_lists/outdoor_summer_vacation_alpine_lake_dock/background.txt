@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+snow-capped peaks above horizon | 1.0 | 0.5-1.0 | sharp white-grey ridge silhouette
+deep glacial lake surface | 1.0 | 0.5-0.9 | mirror-still emerald water
+dense pine and larch slopes | 0.95 | 0.5-1.0 | dark layered conifer canopy
+high wildflower meadow band | 0.65 | 0.3-0.7 | bright green flower-flecked grass
+thin waterfall on far cliff | 0.55 | 0.2-0.5 | slender white silver thread
+wooden boathouse on far shore | 0.55 | 0.2-0.5 | small gabled timber silhouette
+piled cumulus over peaks | 0.85 | 0.4-0.9 | soft white piled formations
+hazy distant valley layers | 0.7 | 0.3-0.7 | softly receding atmospheric bands
+rocky scree slope below ridge | 0.6 | 0.3-0.6 | grey loose stony texture
+distant rowboat on water | 0.45 | 0.1-0.4 | tiny dark elongated dot
+moss-edged shoreline rocks | 0.7 | 0.3-0.7 | greenish damp boulder line
+chalet rooftops in tree gap | 0.5 | 0.2-0.5 | tiny dark gabled forms

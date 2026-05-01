@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+gleaming yacht teak deck | 1.0 | 0.3-0.6 | warm caulked plank lines
+chrome stanchion lifeline rail | 0.9 | 0.1-0.3 | polished bright metal posts
+white fiberglass cabin coachroof | 0.75 | 0.2-0.5 | smooth gelcoat shell
+varnished wooden helm console | 0.55 | 0.1-0.3 | richly glossed brightwork
+furled white sail on boom | 0.55 | 0.15-0.4 | tightly bound dacron cloth
+chrome anchor windlass on bow | 0.55 | 0.05-0.2 | gleaming polished casting
+canvas bimini sun shade | 0.65 | 0.15-0.4 | taut navy stretched fabric
+moored neighboring yacht hull | 0.7 | 0.15-0.4 | smooth glossy white side
+cleat with coiled mooring line | 0.7 | 0.05-0.15 | bright metal and rope
+cushioned cockpit seating bench | 0.65 | 0.1-0.3 | softly piped white vinyl
+swim platform at stern | 0.55 | 0.1-0.3 | low teak swim shelf
+inflatable tender lashed on deck | 0.45 | 0.05-0.2 | grey rubber pontoon

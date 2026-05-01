@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+soft blue stripe throw pillow | 0.85 | 0.05-0.15 | crisp navy and white weave
+out-of-focus white linen curtain | 0.7 | 0.1-0.3 | softly billowing sheer cloth
+chunky knit cream throw fold | 0.7 | 0.05-0.2 | softly textured loose knit
+sea glass and shell decor bowl | 0.6 | 0.03-0.1 | mixed pale frosted fragments
+out-of-focus rattan chair edge | 0.6 | 0.05-0.15 | blurred plaited fiber back
+coastal coffee-table book stack | 0.65 | 0.05-0.15 | softly worn glossy spines
+small driftwood candle holder | 0.55 | 0.03-0.1 | softly silvered split form
+out-of-focus glass vase | 0.5 | 0.03-0.1 | blurred clear elegant glass
+single white rose in vase | 0.5 | 0.03-0.1 | soft velvety cream petals
+softly fringed throw blanket | 0.65 | 0.05-0.2 | softly tasseled cream edge
+spray of white hydrangeas | 0.55 | 0.05-0.15 | soft round cream bloom heads
+out-of-focus rope-twist mirror | 0.45 | 0.03-0.1 | blurred natural braid frame

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday aegean sun | 0.85 | - | -
+warm mid-morning light | 0.9 | - | -
+late afternoon golden | 1.0 | - | -
+fiery aegean sunset | 0.95 | - | -
+soft dusk afterglow | 0.8 | - | -
+pink twilight hour | 0.65 | - | -
+clear dawn over caldera | 0.6 | - | -
+hot bleached noon | 0.7 | - | -
+soft hour before sunset | 0.85 | - | -
+cool blue post-sunset | 0.55 | - | -

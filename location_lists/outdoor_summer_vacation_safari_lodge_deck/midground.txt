@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+raised wooden lodge deck | 1.0 | 0.3-0.6 | sun-darkened hardwood plank
+thatched-roof gazebo corner | 0.7 | 0.15-0.4 | thick layered dry grass
+weathered safari directors chair | 0.6 | 0.05-0.2 | canvas seat and dark wood
+infinity plunge pool edge | 0.55 | 0.1-0.3 | smooth tile and water lip
+acacia trunk near deck | 0.7 | 0.1-0.3 | rough thorny pale bark
+freestanding canvas tent face | 0.55 | 0.15-0.4 | taut khaki cotton walls
+stone fire boma ring | 0.55 | 0.1-0.3 | dry-stacked warm boulder ring
+clump of yellow grass tufts | 0.7 | 0.1-0.25 | tall golden seed heads
+bushveld termite mound | 0.5 | 0.05-0.2 | warm sculpted earth tower
+wooden-railed lookout corner | 0.6 | 0.1-0.3 | rough lashed timber rail
+hanging wooden bird feeder | 0.45 | 0.05-0.15 | carved suspended wood
+woven reed privacy screen | 0.55 | 0.1-0.3 | thin tied dry stalks

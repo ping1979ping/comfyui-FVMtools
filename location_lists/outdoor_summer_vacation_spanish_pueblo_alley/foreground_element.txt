@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+sprig of bougainvillea bloom | 0.75 | 0.05-0.15 | papery vivid magenta bracts
+trailing geranium leaf | 0.6 | 0.05-0.15 | softly scalloped green foliage
+warm cobblestone curve | 0.85 | 0.15-0.4 | rounded sun-warmed stone
+out-of-focus wrought iron grille | 0.55 | 0.05-0.15 | blurred dark forged bars
+hand-painted tile street number | 0.55 | 0.02-0.08 | small glossy ceramic plaque
+fan-shaped paper abanico | 0.55 | 0.03-0.1 | painted folded paper blades
+out-of-focus sangria pitcher | 0.5 | 0.03-0.1 | blurred glass with red drink
+limewashed wall corner | 0.7 | 0.1-0.3 | softly chipped bright stucco
+brass door knocker hand | 0.45 | 0.02-0.08 | warm aged sculpted metal
+small black wrought iron lantern | 0.55 | 0.02-0.06 | dark scrolled hanging shape
+clay flowerpot on step | 0.55 | 0.05-0.15 | warm hand-thrown earthenware
+sunlit shadow stripe on wall | 0.7 | 0.1-0.3 | crisp diagonal dark band

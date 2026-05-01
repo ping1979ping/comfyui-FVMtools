@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+luxury white draped cabana | 1.0 | 0.3-0.6 | tautly stretched flowing canvas
+plush cabana daybed with pillows | 0.95 | 0.2-0.5 | softly piped white cushions
+turquoise resort pool surface | 0.85 | 0.2-0.5 | rippling bright aqua water
+striped poolside lounger | 0.85 | 0.15-0.4 | softly worn navy and white
+white tiled pool surround | 0.85 | 0.2-0.5 | smooth glossy bright tile
+woven rope sun chair | 0.55 | 0.05-0.2 | tan plaited fiber back
+metal-frame side table | 0.65 | 0.05-0.2 | brushed gold rounded base
+ice bucket on stand | 0.55 | 0.05-0.15 | brushed brass cylinder
+parasol shading lounger | 0.7 | 0.1-0.3 | tautly stretched canvas dome
+plant-filled rattan urn | 0.6 | 0.05-0.2 | golden plaited fiber jar
+scattered tropical floor cushions | 0.55 | 0.05-0.2 | softly piped white poufs
+small built-in pool fountain | 0.5 | 0.1-0.3 | smooth tiled cascade panel

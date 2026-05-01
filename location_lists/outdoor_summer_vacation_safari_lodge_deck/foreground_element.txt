@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+worn deck plank edge | 0.95 | 0.15-0.4 | sun-greyed timber grain
+acacia thorn branch tip | 0.55 | 0.05-0.15 | thin spiked greyish twig
+out-of-focus mosquito netting | 0.5 | 0.05-0.2 | gauzy soft white blur
+animal-print scatter cushion | 0.55 | 0.05-0.15 | soft printed cotton blur
+dried baobab seed pod | 0.45 | 0.02-0.08 | velvety brown hairy shell
+golden grass blade tuft | 0.7 | 0.05-0.15 | wispy dry strands
+copper-rimmed gin glass blur | 0.5 | 0.03-0.1 | softly faceted glass
+warm rusty soil patch | 0.6 | 0.05-0.2 | finely cracked red dust
+tribal-pattern blanket fold | 0.5 | 0.05-0.15 | softly woven striped wool
+small lantern silhouette | 0.45 | 0.03-0.1 | dark warm metal frame
+weathered binoculars edge | 0.5 | 0.03-0.1 | rubberized worn black case
+acacia-flower yellow puff | 0.4 | 0.02-0.08 | tiny pollen-like cluster

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+calm early morning lake light | 1.0 | - | -
+soft mid-morning warmth | 0.9 | - | -
+warm late afternoon | 0.95 | - | -
+golden hour over water | 0.95 | - | -
+amber pre-evening glow | 0.85 | - | -
+soft pink dusk | 0.8 | - | -
+deep blue twilight | 0.65 | - | -
+hazy bright midday | 0.65 | - | -
+crisp clear noon | 0.7 | - | -
+moonlit calm evening | 0.5 | - | -

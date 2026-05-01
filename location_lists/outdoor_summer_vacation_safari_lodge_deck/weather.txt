@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright savanna sky | 1.0 | - | -
+dry hot bushveld air | 0.9 | - | -
+faint dust haze drifting | 0.7 | - | -
+piled cumulus over plains | 0.85 | - | -
+distant brewing thunderhead | 0.5 | - | -
+warm dry afternoon breeze | 0.85 | - | -
+brief sudden bushveld rain | 0.4 | - | -
+hazy smoke-tinted air | 0.5 | - | -
+clear cool dawn air | 0.7 | - | -
+soft sundowner stillness | 0.75 | - | -

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+calm reflective lake surface | 1.0 | 0.4-0.9 | mirror-still navy water plane
+distant pine-clad far shoreline | 0.95 | 0.4-0.9 | dark layered conifer band
+mist-veiled distant hills | 0.7 | 0.3-0.6 | hazy blue receding silhouettes
+small wooden pier in distance | 0.55 | 0.1-0.3 | thin slender silhouette
+distant rowing boat on water | 0.45 | 0.05-0.15 | tiny dark elongated form
+cumulus cloud bank over hills | 0.85 | 0.3-0.7 | piled bright white shapes
+bright pastel dusk band | 0.7 | 0.3-0.6 | gradient peach-rose wash
+distant wooden boathouse silhouette | 0.5 | 0.1-0.3 | small painted cabin form
+flock of geese on horizon | 0.4 | 0.05-0.15 | scattered tiny v-pattern
+sunlit lake reed band shoreline | 0.65 | 0.2-0.5 | golden grassy edge strip
+fishing dock in tree gap | 0.5 | 0.1-0.3 | thin wooden silhouette
+bright morning glow over water | 0.7 | 0.3-0.7 | soft warm hazy diffused

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wraparound wooden cabin porch | 1.0 | 0.3-0.6 | weathered timber plank surface
+two adirondack chairs facing water | 0.9 | 0.15-0.4 | richly painted slat-back forms
+log-cabin porch railing | 0.85 | 0.15-0.4 | softly silvered notched timber
+red cedar log support post | 0.8 | 0.1-0.3 | rich warm timber column
+hanging porch swing seat | 0.65 | 0.1-0.3 | softly chained slatted bench
+wooden side table with mug | 0.65 | 0.05-0.2 | softly weathered split timber
+lakeside fire pit ring | 0.5 | 0.1-0.3 | charred grey rock circle
+woven hammock between posts | 0.55 | 0.1-0.3 | softly draped striped weave
+porch staircase down to lawn | 0.55 | 0.1-0.3 | weathered timber treads
+canoe leaning against railing | 0.55 | 0.1-0.3 | smoothly painted hull
+clay flower pot with herbs | 0.6 | 0.05-0.15 | warm hand-thrown earthen jar
+red lakeside life-ring on hook | 0.45 | 0.05-0.15 | rope-wrapped bright donut

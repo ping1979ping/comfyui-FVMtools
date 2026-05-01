@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+flowing white cabana curtain | 0.95 | 0.15-0.4 | softly billowing sheer cotton
+tropical fruit cocktail glass | 0.7 | 0.03-0.1 | bright drink and rim wedge
+out-of-focus pool-water sparkle | 0.85 | 0.1-0.3 | bright dappled aqua reflections
+cushion edge with piping | 0.75 | 0.05-0.2 | softly polished crisp seam
+out-of-focus brass tray | 0.55 | 0.05-0.15 | blurred gleaming warm metal
+hibiscus flower in glass vase | 0.55 | 0.03-0.1 | bright crimson five-petal bloom
+silver champagne ice bucket | 0.55 | 0.05-0.15 | softly polished beaded metal
+striped lounger cushion edge | 0.7 | 0.05-0.15 | softly worn navy-white stripe
+small lit candle in hurricane | 0.5 | 0.02-0.06 | warm soft flame globe
+out-of-focus parasol fringe | 0.55 | 0.05-0.15 | blurred soft tassel edge
+splash droplets at pool edge | 0.4 | 0.05-0.15 | clear bead-like falling drops
+designer flip-flops on tile | 0.55 | 0.03-0.1 | glossy strap and rubber

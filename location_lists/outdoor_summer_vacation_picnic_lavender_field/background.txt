@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+endless lavender field rows | 1.0 | 0.5-1.0 | softly waving violet swathes
+distant rolling provence hills | 0.85 | 0.4-0.9 | hazy blue-purple receding layers
+golden wheat field band | 0.65 | 0.2-0.5 | softly waving tawny grain
+distant stone provencal farmhouse | 0.7 | 0.2-0.5 | warm small ochre buildings
+tall sentinel cypress trees | 0.65 | 0.2-0.5 | dark slender pointed silhouettes
+piled cumulus over fields | 0.85 | 0.4-0.8 | bright white round volumes
+soft pastel sky band | 0.85 | 0.3-0.7 | gradient peach-blue wash
+distant clay-tile rooftop run | 0.55 | 0.15-0.4 | warm rounded terracotta cluster
+flock of bees over flowers | 0.5 | 0.05-0.2 | scattered tiny dark dots
+distant olive grove silhouette | 0.6 | 0.2-0.5 | silvery gnarled treetops
+hazy heat-shimmer horizon | 0.55 | 0.3-0.6 | softly amber atmospheric band
+single tree silhouette in field | 0.5 | 0.1-0.3 | dark rounded canopy form

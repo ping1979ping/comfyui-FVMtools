@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+heavy chestnut pergola crossbeam | 0.85 | 0.15-0.4 | sun-silvered split timbers
+softly aged stone column base | 0.7 | 0.1-0.3 | warm carved limestone block
+flagstone-paved terrace seam | 0.85 | 0.2-0.5 | warm uneven slate slabs
+ornate iron pergola corbel | 0.55 | 0.05-0.15 | dark scrolled forged bracket
+low ornamental balustrade | 0.55 | 0.1-0.3 | softly aged turned posts
+warm clay tile drip edge | 0.55 | 0.05-0.2 | warm rounded terracotta rows
+hand-forged candle bracket | 0.6 | 0.02-0.08 | dark twisted iron mount
+old timber rafter end | 0.55 | 0.05-0.15 | softly silvered hand-hewn beam
+chestnut pergola joinery peg | 0.45 | 0.02-0.06 | warm sturdy wooden pin
+wrought iron string-light hook | 0.5 | 0.02-0.06 | dark twisted small mount
+limestone floor seam line | 0.65 | 0.1-0.3 | warm aged grout band
+carved stone garden urn corner | 0.55 | 0.05-0.15 | softly aged limestone scroll

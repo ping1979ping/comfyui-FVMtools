@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+low palm frond casting shadow | 0.8 | 0.05-0.2 | softly drooping green blade
+cluster of frangipani blossoms | 0.55 | 0.03-0.12 | creamy waxy petals
+warm tropical sand patch | 0.95 | 0.2-0.5 | finely rippled pale grain
+small tide-washed seashells | 0.6 | 0.02-0.1 | smooth iridescent fragments
+sand dollar half-buried | 0.4 | 0.02-0.08 | softly bleached porcelain disc
+out-of-focus hibiscus bloom | 0.5 | 0.05-0.15 | blurred crimson petal
+foreground dune grass tuft | 0.6 | 0.05-0.15 | wispy bleached blades
+spiral pink conch shell | 0.45 | 0.03-0.1 | softly polished shell whorl
+green coconut sliced open | 0.4 | 0.05-0.15 | smooth pale flesh and husk
+soft palm-shadow stripe | 0.7 | 0.1-0.3 | dappled cool sand bands
+washed-up coral fragment | 0.4 | 0.02-0.08 | porous bone-white branch
+trailing morning glory vine | 0.45 | 0.05-0.15 | small purple bell flowers

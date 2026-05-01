@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright tropical sky | 1.0 | - | -
+gentle warm tropical breeze | 0.9 | - | -
+hot still resort afternoon | 0.75 | - | -
+hazy humid air | 0.65 | - | -
+warm balmy stillness | 0.85 | - | -
+sun-warmed tile air | 0.8 | - | -
+brief resort rain shower | 0.4 | - | -
+high thin cirrus streaks | 0.55 | - | -
+soft offshore evening breeze | 0.7 | - | -
+fragrant flowery breeze | 0.65 | - | -

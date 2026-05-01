@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bleached driftwood log on sand | 0.7 | 0.1-0.3 | weathered silver-grey grain
+leaning coconut palm trunk | 0.9 | 0.15-0.4 | ringed fibrous brown bark
+beached outrigger canoe | 0.55 | 0.1-0.3 | softly painted aged hull
+woven palm-thatch beach umbrella | 0.7 | 0.15-0.35 | dry shaggy frond layers
+low coral rock outcrop | 0.6 | 0.1-0.3 | porous pitted limestone
+clump of sea grape shrubs | 0.65 | 0.1-0.3 | rounded glossy green leaves
+shallow tide pool with ripples | 0.55 | 0.1-0.3 | mirrored thin water film
+clusters of pink conch shells | 0.5 | 0.05-0.2 | softly chipped smooth shell
+sandy footpath through palms | 0.6 | 0.1-0.3 | gently scuffed pale sand
+fallen coconut clusters on ground | 0.55 | 0.05-0.2 | dry brown husk fibers
+weathered rope swing on palm | 0.45 | 0.05-0.2 | sun-faded twisted hemp
+bamboo lifeguard tower base | 0.4 | 0.1-0.3 | aged tied bamboo poles

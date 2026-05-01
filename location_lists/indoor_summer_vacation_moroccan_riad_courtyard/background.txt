@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+intricate zellige tile mosaic wall | 1.0 | 0.5-1.0 | densely patterned glazed geometric tilework
+carved cedar latticework screen | 0.8 | 0.4-0.9 | dark intricately fretted hardwood panel
+hand-carved plaster arch alcove | 0.85 | 0.3-0.7 | white deeply chiseled stucco
+rose-pink riad upper wall | 0.75 | 0.4-0.8 | softly mottled hand-applied plaster
+golden brass lantern back wall | 0.55 | 0.2-0.5 | pierced metallic warm accents
+horseshoe-arched gallery opening | 0.7 | 0.3-0.6 | rounded pointed plaster arch
+patterned tile riser staircase | 0.55 | 0.2-0.5 | small bright decorated stair faces
+ornate carved cedar ceiling | 0.7 | 0.3-0.7 | painted geometric beam pattern
+star-shaped pierced lantern shadow | 0.55 | 0.2-0.5 | dancing pinpoint light pattern
+glazed turquoise fountain backdrop | 0.5 | 0.2-0.5 | bright tilework basin wall
+deep red plastered accent niche | 0.55 | 0.2-0.5 | softly mottled rich pigment
+hand-painted moroccan plate display | 0.55 | 0.2-0.5 | clustered glazed colorful disks

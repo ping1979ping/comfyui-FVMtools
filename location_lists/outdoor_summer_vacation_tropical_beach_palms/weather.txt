@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright tropical sky | 1.0 | - | -
+scattered fluffy cumulus | 0.9 | - | -
+warm sea breeze ruffling palms | 0.85 | - | -
+hazy humid afternoon | 0.65 | - | -
+brief passing rain shower | 0.45 | - | -
+warm balmy stillness | 0.7 | - | -
+soft offshore trade wind | 0.7 | - | -
+gentle salt-misted air | 0.6 | - | -
+sun shower rainbow | 0.4 | - | -
+high thin cirrus streaks | 0.55 | - | -

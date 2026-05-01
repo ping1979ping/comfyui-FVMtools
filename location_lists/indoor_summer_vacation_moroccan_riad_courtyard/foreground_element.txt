@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+ornate gilt tea glass | 0.7 | 0.03-0.1 | gilded clear cut crystal
+out-of-focus brass lantern glow | 0.65 | 0.05-0.15 | warm blurred amber light
+silver mint tea pot pouring | 0.6 | 0.05-0.15 | softly polished engraved metal
+small bowl of dates and figs | 0.55 | 0.03-0.1 | glossy dark sticky fruits
+embroidered tassel cushion corner | 0.7 | 0.05-0.15 | richly stitched silk twist
+out-of-focus zellige tile pattern | 0.65 | 0.05-0.2 | blurred bright geometric mosaic
+fragrant rose petals scattered | 0.5 | 0.03-0.1 | soft velvety pink flakes
+gold-embroidered slipper toe | 0.5 | 0.02-0.08 | softly pointed leather curl
+out-of-focus pierced lantern shadow | 0.55 | 0.05-0.2 | dappled patterned light
+stack of berber wool blankets | 0.55 | 0.05-0.15 | richly piled cream stripes
+small ceramic incense burner | 0.5 | 0.02-0.06 | softly thrown glazed clay
+bunch of fresh mint sprig | 0.55 | 0.03-0.1 | glossy bright green leaves

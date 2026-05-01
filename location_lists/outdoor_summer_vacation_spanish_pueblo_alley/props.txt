@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+woven straw market basket | 0.85 | 0.05-0.2 | golden plaited fibers
+hand-painted folding fan | 0.7 | 0.03-0.1 | colorful printed paper blades
+flamenco-style polka dot scarf | 0.55 | 0.05-0.15 | bright red dotted weave
+clay sangria pitcher | 0.65 | 0.03-0.12 | hand-thrown glazed warm body
+wide-brim sun hat | 0.85 | 0.05-0.15 | softly braided cream straw
+ornate iron house key ring | 0.5 | 0.02-0.06 | dark heavy forged metal
+bowl of fresh oranges | 0.55 | 0.05-0.15 | glossy bright citrus skins
+plate of olives and almonds | 0.55 | 0.03-0.1 | mixed glossy snacks
+red rose tucked in hair | 0.5 | 0.02-0.06 | soft velvety crimson petals
+woven leather espadrilles | 0.6 | 0.03-0.1 | tan plaited rope soles
+hand-painted ceramic platter | 0.55 | 0.05-0.15 | glossy scrolled motifs
+small vintage camera | 0.4 | 0.02-0.08 | brushed metal body
