@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+distressed jeans | 0.7 | 0.1-0.3 | denim
+slouchy trousers | 0.6 | 0.2-0.4 | linen,cotton
+paint-splattered pants | 0.5 | 0.1-0.3 | cotton
+rolled-cuff jeans | 0.5 | 0.2-0.4 | denim
+relaxed studio-pants | 0.5 | 0.2-0.4 | cotton
+artist's trousers | 0.5 | 0.1-0.3 | cotton
+wide-leg pants | 0.4 | 0.2-0.4 | linen
+cropped boho-pants | 0.4 | 0.1-0.3 | cotton
+black skinny-jeans | 0.4 | 0.2-0.4 | denim
+patched-knee jeans | 0.4 | 0.1-0.3 | denim

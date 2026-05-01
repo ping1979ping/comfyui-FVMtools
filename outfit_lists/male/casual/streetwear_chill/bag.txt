@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+skate backpack | 0.70 | 0.1-0.3 | canvas,nylon
+shoulder sling | 0.55 | 0.1-0.3 | nylon,canvas
+side pouch | 0.40 | 0.1-0.3 | nylon
+chest rig pouch | 0.35 | 0.1-0.3 | nylon,polyester
+strap pack | 0.35 | 0.1-0.3 | canvas,nylon
+camera bag | 0.30 | 0.1-0.3 | nylon

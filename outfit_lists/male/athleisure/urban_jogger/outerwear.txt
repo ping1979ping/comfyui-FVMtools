@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+varsity jacket | 0.45 | 0.0-0.3 | wool-mix,split-suede
+streetwear bomber | 0.50 | 0.0-0.3 | rubberized-textile,wool-mix
+
+# mid-casual
+puffer jacket | 0.55 | 0.0-0.3 | rubberized-textile,techweave
+techwear shell | 0.50 | 0.1-0.3 | techweave,rubberized-textile
+cropped windbreaker | 0.45 | 0.0-0.3 | techweave,rubberized-textile
+oversized hoodie jacket | 0.50 | 0.0-0.3 | french-loop,midweight-knit
+zip-up track jacket | 0.55 | 0.0-0.3 | techweave,midweight-knit
+work jacket | 0.40 | 0.1-0.3 | wool-mix,techweave
+hooded anorak | 0.45 | 0.0-0.3 | techweave,rubberized-textile

@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+button-down shirt | 0.8 | 0.4-0.6 | cotton,poplin,linen
+fitted polo | 0.6 | 0.4-0.6 | cotton,merino wool
+henley | 0.5 | 0.4-0.5 | cotton,flannel
+crew neck pullover | 0.5 | 0.4-0.6 | merino wool,cashmere,cotton
+oxford shirt | 0.7 | 0.5-0.6 | cotton,poplin
+roll-sleeve shirt | 0.4 | 0.4-0.5 | cotton,flannel
+slim sweater | 0.4 | 0.4-0.6 | merino wool,cashmere
+casual button-up | 0.5 | 0.4-0.5 | cotton,flannel
+v-neck tee | 0.3 | 0.4-0.5 | cotton
+chambray shirt | 0.5 | 0.4-0.5 | cotton
+short-sleeve camp shirt | 0.4 | 0.4-0.5 | cotton,linen

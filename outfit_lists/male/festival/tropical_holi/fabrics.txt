@@ -1,0 +1,22 @@
+# format: fabric_name | formality | family | weight
+
+# tropical basics
+cotton | 0.15 | natural | light
+linen | 0.2 | natural | light
+rayon | 0.1 | casual | light
+
+# specials
+mesh | 0.1 | casual | light
+
+# structured
+leather | 0.25 | tough | medium
+rubber | 0.05 | sporty | medium
+
+# accessories
+metal | 0.2 | accessory | light
+plastic | 0.05 | sporty | light
+wood | 0.1 | natural | light
+shell | 0.1 | natural | light
+jute | 0.1 | natural | light
+straw | 0.1 | natural | light
+nylon | 0.15 | sporty | light

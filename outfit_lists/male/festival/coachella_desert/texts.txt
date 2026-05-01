@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"DESERT" | 0.2 | top | western font
+"OASIS" | 0.2 | top | boho lettering
+"WANDER" | 0.2 | top | handwritten script
+"SUNCHILD" | 0.15 | top | western font
+"FREE" | 0.2 | top,headwear | tie-dye lettering
+"WILD WEST" | 0.15 | top | western font
+"NOMAD" | 0.2 | top | boho lettering
+"COYOTE" | 0.15 | top | western font
+"DUSTBOWL" | 0.1 | top | distressed lettering
+"GOLDEN HOUR" | 0.15 | top | retro script

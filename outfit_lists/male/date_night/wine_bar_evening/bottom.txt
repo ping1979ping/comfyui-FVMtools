@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+chinos | 0.7 | 0.4-0.6 | cotton,twill
+tailored trousers | 0.7 | 0.5-0.7 | wool blend,twill
+dark indigo jeans | 0.6 | 0.4-0.6 | denim
+slim trousers | 0.6 | 0.4-0.6 | cotton,twill
+needlecord pants | 0.4 | 0.4-0.6 | corduroy
+flat-front trousers | 0.5 | 0.5-0.7 | wool blend,cotton
+slim dress pants | 0.5 | 0.5-0.7 | wool blend,twill
+straight-leg pants | 0.5 | 0.4-0.6 | cotton,twill
+washed black jeans | 0.4 | 0.4-0.5 | denim
+ribbed cord trousers | 0.4 | 0.4-0.6 | corduroy

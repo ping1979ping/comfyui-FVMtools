@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white powder-stained sneakers | 0.75 | 0.0-0.2 | cotton,rubber
+strappy sandals | 0.55 | 0.0-0.2 | leather
+flip flops | 0.55 | 0.0-0.1 | rubber
+slip-on espadrilles | 0.45 | 0.1-0.3 | jute
+huaraches sandals | 0.45 | 0.0-0.2 | leather
+classic plimsolls | 0.40 | 0.0-0.2 | cotton,rubber
+embroidered jutti shoes | 0.40 | 0.1-0.3 | leather
+beach water shoes | 0.35 | 0.0-0.2 | mesh,rubber
+woven sandals | 0.45 | 0.0-0.2 | jute
+canvas low-tops | 0.45 | 0.0-0.2 | cotton

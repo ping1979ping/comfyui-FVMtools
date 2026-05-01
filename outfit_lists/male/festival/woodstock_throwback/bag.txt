@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+fringed shoulder bag | 0.55 | 0.0-0.2 | suede
+embroidered messenger | 0.50 | 0.1-0.3 | cotton
+patchwork sling pack | 0.45 | 0.0-0.2 | cotton
+woven hippie tote | 0.45 | 0.0-0.2 | cotton,jute
+brown saddlebag | 0.40 | 0.1-0.3 | leather
+small belt pouch | 0.40 | 0.0-0.2 | leather

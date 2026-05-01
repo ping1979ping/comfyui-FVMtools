@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+big logo | 0.6 | top | 0.0-0.3
+puff print | 0.5 | top | 0.0-0.3
+all-over graphic | 0.5 | top | 0.0-0.3
+back hit print | 0.4 | top | 0.0-0.3
+tie-dye wash | 0.4 | top | 0.0-0.3
+bootleg graphic | 0.4 | top | 0.0-0.3
+color-block panel | 0.4 | top,outerwear | 0.0-0.3
+oversized number | 0.3 | top | 0.0-0.3
+camo wash | 0.3 | top,bottom,outerwear | 0.0-0.3
+acid wash | 0.3 | bottom,outerwear | 0.0-0.3
+checkered tile | 0.3 | top,bottom | 0.0-0.3
+flame motif | 0.3 | top | 0.0-0.3

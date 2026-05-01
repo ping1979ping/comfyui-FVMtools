@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+LED goggles | 0.50 | 0.0-0.3 | synthetic,metal
+cyber visor | 0.40 | 0.0-0.3 | synthetic,metal
+neon belt | 0.45 | 0.0-0.3 | synthetic,metal
+spike collar | 0.40 | 0.0-0.3 | metal,faux leather
+reflective armband | 0.40 | 0.0-0.3 | synthetic
+tech bracelet | 0.45 | 0.0-0.3 | metal,synthetic
+glow choker | 0.35 | 0.0-0.3 | synthetic
+chrome chains | 0.50 | 0.0-0.4 | metal

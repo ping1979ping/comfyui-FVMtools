@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+embellished fanny pack | 0.60 | 0.0-0.2 | sequin
+metallic crossbody | 0.50 | 0.1-0.3 | lurex
+glitter belt bag | 0.55 | 0.0-0.2 | sequin
+sparkle mini-backpack | 0.45 | 0.0-0.2 | polyester,sequin
+disco shimmer pouch | 0.40 | 0.0-0.2 | satin
+foil-finish chest bag | 0.40 | 0.0-0.2 | polyester

@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+round sunglasses | 0.75 | 0.0-0.4 | metal,plastic
+woven belt | 0.50 | 0.1-0.4 | leather
+diver watch | 0.55 | 0.1-0.4 | metal
+beaded bracelet | 0.45 | 0.0-0.3 | wood
+conch pendant | 0.35 | 0.0-0.2 | shell
+braided friendship band | 0.30 | 0.0-0.2 | cotton
+silver chain necklace | 0.35 | 0.1-0.4 | metal
+canvas belt | 0.30 | 0.0-0.2 | cotton
+neckerchief | 0.25 | 0.1-0.4 | viscose
+signet ring | 0.30 | 0.2-0.5 | metal

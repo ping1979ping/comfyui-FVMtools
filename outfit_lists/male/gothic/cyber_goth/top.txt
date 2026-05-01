@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neon mesh top | 0.55 | 0.0-0.3 | mesh
+cyber tank | 0.50 | 0.0-0.3 | cotton,mesh
+UV reactive shirt | 0.45 | 0.0-0.3 | synthetic,mesh
+holographic top | 0.40 | 0.0-0.4 | synthetic
+strapped harness top | 0.35 | 0.0-0.3 | synthetic,faux leather
+glow stripe shirt | 0.45 | 0.0-0.3 | synthetic,cotton
+tech ribbed top | 0.40 | 0.1-0.4 | synthetic
+electric mesh shirt | 0.35 | 0.0-0.3 | mesh
+neon paneled tee | 0.45 | 0.0-0.3 | cotton,synthetic
+fishnet undershirt | 0.40 | 0.0-0.3 | mesh

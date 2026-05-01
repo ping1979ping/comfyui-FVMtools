@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+waterproof parka | 0.65 | 0.0-0.2 | nylon
+mud-stained anorak | 0.55 | 0.0-0.2 | nylon
+oversized waxed jacket | 0.45 | 0.1-0.3 | wax-canvas
+faded barbour-style coat | 0.40 | 0.1-0.3 | wax-canvas
+army surplus jacket | 0.50 | 0.0-0.2 | cotton
+zip-up rain shell | 0.55 | 0.0-0.2 | nylon
+rugged fleece jacket | 0.50 | 0.0-0.2 | fleece
+patchwork denim jacket | 0.40 | 0.0-0.2 | denim

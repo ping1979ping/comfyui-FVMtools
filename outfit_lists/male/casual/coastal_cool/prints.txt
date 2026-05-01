@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tropical palm | 0.5 | top | 0.1-0.4
+hibiscus motif | 0.4 | top | 0.1-0.4
+nautical stripe | 0.5 | top | 0.2-0.4
+seashell motif | 0.3 | top | 0.1-0.4
+wave pattern | 0.4 | top,bottom | 0.1-0.4
+fish scale graphic | 0.3 | top | 0.1-0.4
+sail-boat embroidery | 0.3 | top,outerwear | 0.2-0.4
+faded color block | 0.4 | top,bottom | 0.1-0.4
+sun-bleached wash | 0.4 | top,bottom | 0.1-0.4
+horizon stripe | 0.4 | top | 0.1-0.4
+small anchor motif | 0.3 | top,headwear | 0.2-0.4
+sea-glass tones | 0.3 | top,bottom | 0.1-0.4

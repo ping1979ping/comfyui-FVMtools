@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white deck shorts | 0.75 | 0.2-0.5 | cotton
+tailored boat shorts | 0.65 | 0.2-0.5 | cotton,viscose
+chino shorts | 0.65 | 0.1-0.4 | cotton
+short swim trunks | 0.60 | 0.0-0.2 | nylon,polyester
+yacht-cut trousers | 0.45 | 0.3-0.6 | cotton,viscose
+performance sailing shorts | 0.50 | 0.0-0.3 | nylon,polyester
+slim navy shorts | 0.55 | 0.1-0.4 | cotton
+cropped sailor pants | 0.40 | 0.2-0.5 | cotton

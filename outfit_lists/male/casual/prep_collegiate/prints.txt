@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+rugby stripes | 0.5 | top | 0.2-0.5
+school crest | 0.4 | top,outerwear | 0.2-0.5
+varsity letter | 0.4 | top,outerwear,headwear | 0.1-0.4
+tartan check | 0.4 | top,outerwear,bottom | 0.2-0.5
+oxford weave | 0.4 | top | 0.3-0.5
+gingham check | 0.4 | top | 0.2-0.5
+fair isle motif | 0.3 | top,outerwear | 0.2-0.5
+herringbone weave | 0.3 | outerwear,bottom | 0.3-0.5
+small embroidered emblem | 0.4 | top,outerwear | 0.2-0.5
+windowpane check | 0.3 | top,outerwear | 0.3-0.5
+preppy crest | 0.3 | top,headwear | 0.2-0.5
+nautical anchor motif | 0.3 | top | 0.2-0.5

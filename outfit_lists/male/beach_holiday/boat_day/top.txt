@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+striped breton tee | 0.75 | 0.1-0.4 | cotton
+classic polo | 0.70 | 0.2-0.5 | cotton,polyester
+sailing technical shirt | 0.55 | 0.0-0.3 | polyester
+white short-sleeve button-up | 0.65 | 0.2-0.5 | cotton
+performance pullover | 0.55 | 0.1-0.3 | polyester
+nautical henley | 0.55 | 0.1-0.4 | cotton,modal
+breezy boat shirt | 0.60 | 0.1-0.4 | cotton,viscose
+quarter-zip knit | 0.50 | 0.2-0.5 | cotton,modal
+crisp navy tee | 0.55 | 0.0-0.2 | cotton
+short-sleeve regatta polo | 0.55 | 0.2-0.5 | cotton,polyester

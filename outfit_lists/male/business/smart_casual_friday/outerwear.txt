@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+unstructured blazer | 0.75 | 0.5-0.8 | wool,cotton
+casual sport coat | 0.70 | 0.5-0.8 | wool,linen
+relaxed cardigan | 0.50 | 0.4-0.6 | wool,cashmere
+quilted vest | 0.45 | 0.3-0.6 | polyester,nylon
+soft outer jacket | 0.45 | 0.4-0.6 | suede
+field jacket | 0.55 | 0.3-0.6 | cotton
+classic trucker jacket | 0.40 | 0.3-0.5 | denim
+smart bomber jacket | 0.50 | 0.4-0.6 | polyester
+summer-weight blazer | 0.55 | 0.4-0.7 | linen
+shawl-collar cardigan | 0.45 | 0.4-0.6 | wool

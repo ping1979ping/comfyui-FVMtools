@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+cargo trousers | 0.7 | 0.2-0.4 | cotton,hemp
+travel pants | 0.7 | 0.2-0.4 | cotton,hemp
+weathered field-jeans | 0.6 | 0.2-0.4 | denim
+zip-off trekking-pants | 0.5 | 0.2-0.4 | cotton
+roll-cuff explorer-pants | 0.5 | 0.2-0.4 | cotton,hemp
+utility shorts | 0.5 | 0.1-0.3 | cotton
+expedition jeans | 0.5 | 0.2-0.4 | denim
+weathered chinos | 0.4 | 0.2-0.4 | cotton
+patched trousers | 0.4 | 0.2-0.4 | cotton
+journey shorts | 0.4 | 0.1-0.3 | cotton,hemp

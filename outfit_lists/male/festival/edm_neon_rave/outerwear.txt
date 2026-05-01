@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+reflective windbreaker | 0.55 | 0.0-0.2 | nylon,polyester
+chrome bomber | 0.40 | 0.1-0.3 | vinyl,polyester
+neon track jacket | 0.50 | 0.0-0.2 | polyester
+mesh harness vest | 0.30 | 0.0-0.2 | mesh
+holographic puffer | 0.35 | 0.0-0.2 | nylon
+laser cut hoodie | 0.45 | 0.0-0.2 | cotton
+strap utility vest | 0.30 | 0.0-0.2 | nylon

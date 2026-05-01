@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+gingham check | 0.55 | top | 0.3-0.7
+small-scale plaid | 0.50 | top,outerwear | 0.4-0.7
+subtle micro-print | 0.40 | top | 0.4-0.7
+tattersall pattern | 0.40 | top | 0.5-0.7
+solid pastel | 0.45 | top | 0.4-0.7
+solid charcoal | 0.55 | bottom,outerwear | 0.5-0.8
+breton stripe | 0.40 | top | 0.3-0.6
+houndstooth pattern | 0.35 | outerwear | 0.5-0.8
+faded chambray | 0.40 | top | 0.4-0.6
+solid heather grey | 0.50 | top,bottom | 0.4-0.7

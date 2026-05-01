@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mandala motif | 0.4 | top,bag | 0.0-0.3
+lotus emblem | 0.35 | top,headwear | 0.0-0.3
+om symbol | 0.3 | top | 0.0-0.3
+tonal watercolor | 0.45 | top,bottom,outerwear | 0.0-0.3
+calm gradient wash | 0.4 | top,bottom,outerwear | 0.0-0.2
+sacred geometry | 0.3 | top,outerwear | 0.0-0.3
+botanical line drawing | 0.3 | top,bag | 0.0-0.3
+zen brushstroke | 0.3 | top,outerwear | 0.0-0.3
+ethereal cloud print | 0.25 | top,bottom | 0.0-0.2
+mineral dye effect | 0.35 | top,bottom,outerwear | 0.0-0.2
+sunrise gradient | 0.3 | top,outerwear | 0.0-0.2

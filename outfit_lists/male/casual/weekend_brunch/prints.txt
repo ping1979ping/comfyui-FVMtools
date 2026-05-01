@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+breton stripes | 0.5 | top | 0.2-0.5
+gingham check | 0.4 | top,outerwear | 0.2-0.5
+windowpane check | 0.3 | top,outerwear | 0.2-0.5
+small floral spray | 0.3 | top | 0.2-0.5
+herringbone weave | 0.3 | top,outerwear | 0.3-0.5
+nautical stripe | 0.4 | top | 0.2-0.5
+seersucker stripe | 0.3 | top,bottom | 0.2-0.5
+candy stripe | 0.3 | top | 0.1-0.4
+pinstripe pattern | 0.3 | bottom,outerwear | 0.3-0.5
+muted plaid | 0.4 | top,outerwear | 0.2-0.5
+small dot | 0.2 | top | 0.2-0.5
+pastel color block | 0.3 | top,outerwear | 0.2-0.5

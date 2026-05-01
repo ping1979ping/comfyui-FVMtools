@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+tailored trousers | 0.7 | 0.5-0.7 | wool blend,twill
+slim chinos | 0.6 | 0.4-0.6 | cotton,twill
+relaxed pleated pants | 0.5 | 0.4-0.6 | cotton,twill
+dark indigo jeans | 0.5 | 0.4-0.6 | denim
+wide-leg trousers | 0.4 | 0.4-0.6 | wool blend,cotton
+cropped pants | 0.5 | 0.4-0.6 | cotton,twill
+straight-cut trousers | 0.5 | 0.5-0.7 | wool blend,twill
+loose-fit pants | 0.4 | 0.4-0.6 | cotton,twill
+high-rise trousers | 0.4 | 0.5-0.7 | wool blend
+slim dress pants | 0.5 | 0.5-0.7 | wool blend,twill

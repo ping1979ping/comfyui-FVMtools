@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+festival lanyard | 0.65 | 0.0-0.2 | nylon
+mud-stained wristbands | 0.55 | 0.0-0.1 | cotton,plastic
+classic round shades | 0.50 | 0.0-0.2 | metal,plastic
+bandana neckscarf | 0.45 | 0.0-0.2 | cotton
+beaded necklace | 0.35 | 0.0-0.2 | wood
+chunky watch | 0.35 | 0.1-0.3 | metal
+canvas wallet chain | 0.30 | 0.0-0.2 | metal
+worn leather belt | 0.45 | 0.0-0.2 | leather
+festival pin badges | 0.40 | 0.0-0.2 | metal
+fingerless mitts | 0.30 | 0.0-0.2 | wool

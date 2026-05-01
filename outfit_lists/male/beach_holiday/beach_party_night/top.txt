@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+unbuttoned silk shirt | 0.65 | 0.2-0.5 | viscose
+neon graphic tee | 0.55 | 0.0-0.2 | cotton
+metallic mesh top | 0.40 | 0.1-0.4 | polyester
+sheer button-up | 0.50 | 0.1-0.4 | viscose
+fitted muscle tee | 0.55 | 0.0-0.2 | cotton
+short-sleeve party shirt | 0.65 | 0.1-0.4 | viscose,rayon
+cropped tank | 0.45 | 0.0-0.2 | cotton
+sequined party top | 0.35 | 0.2-0.5 | polyester
+mesh muscle tee | 0.40 | 0.0-0.2 | polyester
+unbuttoned camp shirt | 0.55 | 0.1-0.4 | viscose,rayon

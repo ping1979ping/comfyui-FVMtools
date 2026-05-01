@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+zip-up training jacket | 0.65 | 0.1-0.3 | polyester,nylon
+performance windbreaker | 0.55 | 0.1-0.3 | nylon,polyester
+soft pullover jacket | 0.55 | 0.1-0.3 | fleece
+puffer-style vest | 0.40 | 0.1-0.3 | nylon,polyester
+warm-up coat | 0.40 | 0.1-0.3 | polyester,nylon
+half-zip pullover jacket | 0.45 | 0.1-0.3 | fleece,polyester
+sherpa-lined jacket | 0.35 | 0.1-0.3 | fleece
+gym shell | 0.35 | 0.1-0.3 | nylon,polyester

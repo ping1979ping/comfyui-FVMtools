@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+neon track pants | 0.65 | 0.0-0.2 | polyester
+reflective joggers | 0.55 | 0.0-0.2 | polyester,nylon
+acid wash shorts | 0.50 | 0.0-0.2 | denim
+holographic shorts | 0.45 | 0.0-0.2 | vinyl,polyester
+techno cargo pants | 0.50 | 0.0-0.2 | nylon
+mesh-panel athletic shorts | 0.45 | 0.0-0.2 | mesh,polyester
+laser-stripe trousers | 0.40 | 0.0-0.2 | polyester
+glow-trim joggers | 0.45 | 0.0-0.2 | polyester
+chrome metallic pants | 0.30 | 0.0-0.2 | vinyl
+ripped neon shorts | 0.45 | 0.0-0.2 | denim

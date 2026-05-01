@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+power tie | 0.95 | 0.7-1.0 | silk
+red statement tie | 0.65 | 0.7-1.0 | silk
+navy striped tie | 0.75 | 0.7-1.0 | silk
+sharp pocket square | 0.70 | 0.8-1.0 | silk
+silver cufflinks | 0.55 | 0.8-1.0 | metal
+luxury wristwatch | 0.85 | 0.7-1.0 | metal,leather
+sharp tie clip | 0.45 | 0.7-1.0 | metal
+business belt | 0.85 | 0.7-1.0 | leather
+collar bar | 0.30 | 0.8-1.0 | metal
+power bowtie | 0.20 | 0.8-1.0 | silk
+slim wallet | 0.50 | 0.6-0.9 | leather
+business cardholder | 0.55 | 0.7-1.0 | leather

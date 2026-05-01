@@ -1,0 +1,18 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+french-terry | 0.2 | casual | medium
+bamboo | 0.3 | natural | light
+modal | 0.3 | natural | light
+
+# mid fabrics
+merino | 0.45 | natural | medium
+knit | 0.3 | sporty | light
+suede | 0.5 | luxury | medium
+
+# special materials
+shell | 0.3 | sporty | light
+canvas | 0.25 | casual | medium
+leather | 0.55 | luxury | medium
+acetate | 0.45 | luxury | light
+wadding | 0.2 | casual | medium

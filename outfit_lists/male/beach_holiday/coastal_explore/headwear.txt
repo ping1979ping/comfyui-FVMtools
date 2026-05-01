@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wide-brim safari hat | 0.55 | 0.0-0.3 | cotton,nylon
+ventilated bucket hat | 0.55 | 0.0-0.2 | nylon,polyester
+trucker cap | 0.45 | 0.0-0.2 | cotton,polyester
+performance sun cap | 0.45 | 0.0-0.3 | polyester
+neck-cape cap | 0.35 | 0.0-0.3 | nylon,polyester

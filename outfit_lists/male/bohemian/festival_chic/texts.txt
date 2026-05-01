@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FESTIVAL" | 0.2 | top | psychedelic font
+"FREE SPIRIT" | 0.2 | top | boho lettering
+"GROOVY" | 0.15 | top | retro psychedelic
+"GOOD VIBES" | 0.2 | top | handwritten script
+"WILD CHILD" | 0.15 | top | rustic lettering
+"DREAMER" | 0.15 | top | watercolor text
+"PEACE" | 0.2 | top | boho lettering
+"LOVE & MUSIC" | 0.15 | top | psychedelic font

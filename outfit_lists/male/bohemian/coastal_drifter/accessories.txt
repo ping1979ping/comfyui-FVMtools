@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+shell pendant | 0.7 | 0.1-0.3 | cotton
+puka-bead necklace | 0.6 | 0.1-0.3 | cotton,hemp
+braided wristband | 0.6 | 0.1-0.3 | hemp,cotton
+sea-glass charm | 0.5 | 0.1-0.3 | cotton
+woven hip-belt | 0.5 | 0.1-0.3 | hemp
+coral pendant | 0.4 | 0.1-0.3 | cotton
+salt-bleached bracelet | 0.4 | 0.1-0.3 | hemp
+driftwood-charm necklace | 0.4 | 0.1-0.3 | cotton
+anchor pendant | 0.3 | 0.2-0.4 | leather
+sun-faded sunglasses | 0.5 | 0.1-0.3 | cotton

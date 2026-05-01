@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+abstract motif | 0.3 | top | 0.4-0.7
+geometric pattern | 0.3 | top | 0.4-0.7
+tonal block | 0.3 | top | 0.4-0.7
+fine windowpane | 0.2 | top | 0.5-0.7
+subtle pinstripe | 0.3 | top | 0.5-0.7
+embossed grain | 0.3 | accessories | 0.4-0.8
+brushed texture | 0.3 | top | 0.4-0.6
+graphic line motif | 0.2 | top | 0.4-0.6
+matte finish | 0.3 | top | 0.4-0.7
+sculptural texture | 0.2 | top | 0.4-0.7
+contrast color block | 0.3 | top | 0.4-0.6

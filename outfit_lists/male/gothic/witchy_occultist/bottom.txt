@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+loose ritual trousers | 0.50 | 0.0-0.4 | linen,cotton
+flowing mystic pants | 0.45 | 0.0-0.4 | cotton,linen
+draped wide-leg trousers | 0.45 | 0.1-0.5 | linen,cotton
+fitted occult pants | 0.45 | 0.1-0.5 | cotton,wool
+slim warlock trousers | 0.50 | 0.1-0.5 | wool,cotton
+embroidered slacks | 0.40 | 0.2-0.6 | wool,cotton
+soft draped pants | 0.40 | 0.1-0.5 | linen,cotton

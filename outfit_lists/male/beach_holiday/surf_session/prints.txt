@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+surf brand logo | 0.6 | top | 0.0-0.2
+wave graphic | 0.5 | top,bottom | 0.0-0.2
+camo pattern | 0.4 | top,bottom | 0.0-0.2
+checkerboard design | 0.4 | top,bottom | 0.0-0.2
+tribal motif | 0.35 | top | 0.0-0.2
+hibiscus pattern | 0.35 | top,bottom | 0.0-0.2
+shark silhouette | 0.3 | top | 0.0-0.2
+splatter graphic | 0.3 | top,bottom | 0.0-0.2
+faded gradient | 0.4 | top,bottom | 0.0-0.2
+sun-bleached fade | 0.4 | top,bottom | 0.0-0.2

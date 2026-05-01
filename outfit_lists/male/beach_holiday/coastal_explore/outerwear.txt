@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+packable rain shell | 0.50 | 0.0-0.3 | nylon
+sun hoodie | 0.55 | 0.0-0.3 | polyester
+field vest | 0.40 | 0.1-0.4 | cotton,nylon
+unbuttoned overshirt | 0.40 | 0.0-0.3 | cotton
+fleece pullover | 0.35 | 0.0-0.3 | polyester
+ventilated safari jacket | 0.30 | 0.1-0.4 | cotton,nylon

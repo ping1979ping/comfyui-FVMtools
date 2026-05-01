@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shearling-lined coat | 0.55 | 0.2-0.4 | leather
+heavy peacoat | 0.50 | 0.3-0.5 | knit
+quilted barn coat | 0.50 | 0.2-0.4 | cotton
+wax-cotton field coat | 0.45 | 0.2-0.4 | cotton
+soft pullover jacket | 0.55 | 0.1-0.3 | fleece
+heavy chore coat | 0.50 | 0.2-0.4 | cotton
+puffer outer | 0.50 | 0.1-0.3 | nylon,polyester
+shawl-collar jacket | 0.40 | 0.3-0.5 | knit,cotton
+toggle duffle coat | 0.30 | 0.3-0.5 | knit
+brushed overshirt | 0.50 | 0.2-0.4 | cotton,flannel

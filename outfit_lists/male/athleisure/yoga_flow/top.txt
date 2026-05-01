@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+soft tank | 0.55 | 0.0-0.1 | bamboo-blend,modal-knit
+breathable tee | 0.65 | 0.0-0.2 | bamboo-blend,modal-knit
+loose muscle vest | 0.40 | 0.0-0.1 | bamboo-blend,modal-knit
+
+# mid-casual
+fitted long-sleeve | 0.50 | 0.0-0.2 | bamboo-blend,modal-knit
+draped studio top | 0.45 | 0.0-0.2 | modal-knit,viscose-blend
+relaxed pullover | 0.40 | 0.0-0.2 | modal-knit,viscose-blend
+flow shirt | 0.50 | 0.0-0.2 | bamboo-blend,modal-knit
+mindfulness henley | 0.40 | 0.0-0.2 | bamboo-blend,modal-knit
+asymmetric studio top | 0.30 | 0.0-0.2 | modal-knit,viscose-blend
+warm-up sweatshirt | 0.45 | 0.0-0.2 | organic-loop,bamboo-blend

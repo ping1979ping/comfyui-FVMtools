@@ -1,0 +1,8 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+subtle micro-check | 0.45 | top,bottom | 0.6-0.9
+fine windowpane | 0.40 | top,outerwear | 0.6-0.9
+narrow stripes | 0.50 | top | 0.6-0.9
+solid charcoal | 0.55 | outerwear,bottom | 0.7-1.0
+solid navy | 0.55 | outerwear,bottom | 0.7-1.0
+minimal pinstripe | 0.40 | bottom,outerwear | 0.7-1.0
+traveler check pattern | 0.35 | outerwear | 0.6-0.9

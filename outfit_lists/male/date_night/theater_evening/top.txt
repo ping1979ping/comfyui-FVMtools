@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+formal dress shirt | 0.8 | 0.6-0.7 | cotton,poplin,silk
+slim-fit shirt | 0.6 | 0.5-0.7 | cotton,poplin
+classic dress shirt | 0.7 | 0.6-0.7 | cotton,poplin
+turtleneck | 0.5 | 0.5-0.7 | cashmere,merino wool
+silk-front shirt | 0.4 | 0.6-0.7 | silk
+fine-knit pullover | 0.4 | 0.5-0.7 | cashmere,merino wool
+wing-tip collar shirt | 0.4 | 0.6-0.7 | cotton,poplin
+mock neck top | 0.3 | 0.5-0.7 | cashmere,merino wool
+pleated tuxedo shirt | 0.4 | 0.6-0.7 | cotton,poplin
+fine ribbed pullover | 0.3 | 0.5-0.7 | cashmere,merino wool

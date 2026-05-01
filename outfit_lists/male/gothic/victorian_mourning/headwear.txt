@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+top hat | 0.45 | 0.4-0.8 | velvet,satin
+mourning crepe band | 0.30 | 0.4-0.8 | silk,wool
+bowler hat | 0.30 | 0.3-0.7 | wool
+veiled hat | 0.20 | 0.4-0.8 | silk,lace

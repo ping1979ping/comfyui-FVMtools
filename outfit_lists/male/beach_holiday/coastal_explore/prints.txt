@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+camo pattern | 0.5 | top,bottom | 0.0-0.3
+topographic map design | 0.45 | top,bottom | 0.0-0.3
+contour line graphic | 0.4 | top | 0.0-0.3
+expedition logo | 0.45 | top | 0.0-0.3
+fish silhouette pattern | 0.35 | top | 0.0-0.3
+mountain wave motif | 0.4 | top | 0.0-0.3
+explorer brand graphic | 0.4 | top | 0.0-0.3
+horizon block stripe | 0.4 | top | 0.0-0.3
+faded sun bleach | 0.4 | top,bottom | 0.0-0.3
+nautical chart pattern | 0.35 | top | 0.0-0.3

@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ritual ankle boots | 0.50 | 0.0-0.4 | leather,suede
+laced witch boots | 0.55 | 0.0-0.4 | leather
+soft suede boots | 0.50 | 0.0-0.4 | suede
+embroidered slippers | 0.40 | 0.2-0.6 | velvet,silk
+buckled mystic boots | 0.50 | 0.0-0.4 | leather
+pointed warlock boots | 0.45 | 0.1-0.5 | leather
+soft moccasin boots | 0.40 | 0.0-0.4 | suede

@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+relaxed sweatpants | 0.55 | 0.0-0.2 | french-loop,midweight-knit
+baggy joggers | 0.50 | 0.0-0.2 | french-loop,midweight-knit
+
+# mid-casual
+cargo joggers | 0.55 | 0.1-0.3 | techweave,midweight-knit
+techwear pants | 0.50 | 0.1-0.3 | techweave,midweight-knit
+parachute pants | 0.40 | 0.1-0.3 | techweave,midweight-knit
+slim-tapered joggers | 0.55 | 0.1-0.3 | french-loop,techweave
+streetwear shorts | 0.45 | 0.0-0.2 | french-loop,midweight-knit
+utility joggers | 0.45 | 0.1-0.3 | techweave,midweight-knit
+overdyed sweats | 0.40 | 0.0-0.2 | french-loop,midweight-knit

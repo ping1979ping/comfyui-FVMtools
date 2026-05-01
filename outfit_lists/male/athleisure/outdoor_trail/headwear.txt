@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+boonie hat | 0.45 | 0.0-0.2 | synthetic,brushed-cotton
+trail cap | 0.55 | 0.0-0.2 | synthetic,brushed-cotton
+
+# mid-casual
+fleece beanie | 0.40 | 0.0-0.3 | fleece-knit,merino-blend
+brimmed sun hat | 0.30 | 0.0-0.2 | brushed-cotton,synthetic

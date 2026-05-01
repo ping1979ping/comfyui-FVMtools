@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sling chest bag | 0.55 | 0.0-0.3 | techweave,woven-textile
+techwear pouch | 0.50 | 0.0-0.3 | techweave,rubberized-textile
+
+# mid-casual
+oversized tote | 0.45 | 0.0-0.3 | woven-textile,split-suede
+roll-top backpack | 0.45 | 0.0-0.3 | techweave,rubberized-textile
+modular hip pack | 0.40 | 0.0-0.3 | techweave,webbing-strap
+multi-pocket pack | 0.45 | 0.0-0.3 | techweave,webbing-strap
+crossbody satchel | 0.40 | 0.0-0.3 | woven-textile,split-suede
+streetwear duffel | 0.40 | 0.0-0.3 | woven-textile,techweave

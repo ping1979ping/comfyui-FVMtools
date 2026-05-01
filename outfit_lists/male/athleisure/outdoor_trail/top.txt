@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+hiking tee | 0.60 | 0.0-0.2 | merino-blend,synthetic
+trail running shirt | 0.55 | 0.0-0.2 | synthetic,merino-blend
+sleeveless climber top | 0.30 | 0.0-0.2 | synthetic,spandex
+
+# mid-casual
+sun-hoody | 0.55 | 0.0-0.3 | synthetic,merino-blend
+hooded base layer | 0.50 | 0.0-0.3 | merino-blend,synthetic
+flannel overshirt | 0.45 | 0.1-0.4 | brushed-cotton,wool-blend
+quarter-zip thermal | 0.50 | 0.0-0.3 | merino-blend,fleece-knit
+trekker henley | 0.40 | 0.0-0.3 | brushed-cotton,merino-blend
+ridge-line shirt | 0.45 | 0.1-0.4 | brushed-cotton,synthetic
+windproof pullover | 0.40 | 0.0-0.3 | softshell,fleece-knit

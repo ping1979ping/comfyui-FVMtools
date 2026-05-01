@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+flowing romantic cape | 0.55 | 0.2-0.6 | velvet,silk
+embroidered overcoat | 0.50 | 0.2-0.6 | wool,velvet
+draped shawl wrap | 0.40 | 0.1-0.5 | wool,silk
+ornate frock coat | 0.45 | 0.3-0.7 | velvet,wool
+hooded ritual cloak | 0.40 | 0.1-0.5 | wool,velvet
+soft brocade jacket | 0.40 | 0.3-0.7 | brocade,silk
+romantic tailcoat | 0.40 | 0.4-0.8 | wool,silk
+caped overcoat | 0.40 | 0.2-0.6 | wool,velvet

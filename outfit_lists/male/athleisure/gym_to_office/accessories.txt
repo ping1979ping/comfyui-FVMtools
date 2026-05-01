@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sport towel | 0.30 | 0.0-0.2 | bamboo,modal
+hydration sleeve | 0.25 | 0.0-0.2 | shell
+
+# mid-casual
+slim wallet | 0.50 | 0.2-0.5 | leather,suede
+dress belt | 0.55 | 0.3-0.6 | leather
+braided bracelet | 0.30 | 0.1-0.4 | leather
+office sunglasses | 0.40 | 0.2-0.5 | acetate,leather
+analog watch | 0.55 | 0.2-0.5 | leather,suede
+silicone band | 0.25 | 0.0-0.2 | shell
+laptop sleeve | 0.40 | 0.2-0.5 | shell,leather
+tonal lanyard | 0.20 | 0.1-0.4 | shell,suede

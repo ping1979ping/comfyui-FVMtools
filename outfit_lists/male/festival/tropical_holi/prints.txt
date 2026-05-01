@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+rainbow color splash | 0.65 | top,bottom | 0.0-0.3
+powder dust splatter | 0.60 | top,bottom | 0.0-0.3
+tropical floral pattern | 0.50 | top | 0.0-0.3
+ethnic embroidery | 0.45 | top,outerwear,bag | 0.1-0.3
+mandala motif | 0.40 | top,bag | 0.0-0.3
+rangoli pattern | 0.35 | top,bag | 0.0-0.3
+beaded detail | 0.35 | accessories,bag | 0.0-0.3
+mirror work detail | 0.30 | top,bag | 0.1-0.3
+elephant motif | 0.30 | top | 0.1-0.3
+ikat weave pattern | 0.30 | top,bottom | 0.1-0.3

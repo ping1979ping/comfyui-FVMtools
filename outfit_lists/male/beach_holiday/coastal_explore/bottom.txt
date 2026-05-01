@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+zip-off cargo shorts | 0.65 | 0.0-0.3 | nylon
+hiking shorts | 0.65 | 0.0-0.3 | nylon,polyester
+trail trunks | 0.55 | 0.0-0.2 | nylon,polyester
+cargo shorts | 0.60 | 0.0-0.3 | cotton
+quick-dry trousers | 0.50 | 0.0-0.3 | nylon,polyester
+relaxed safari pants | 0.50 | 0.1-0.4 | cotton
+adventure trunks | 0.50 | 0.0-0.2 | nylon,polyester
+amphibious shorts | 0.55 | 0.0-0.3 | nylon,polyester

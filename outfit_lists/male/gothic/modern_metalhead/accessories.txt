@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+spiked wristband | 0.55 | 0.0-0.3 | metal,faux leather
+silver chain necklace | 0.50 | 0.0-0.3 | metal
+bullet belt | 0.45 | 0.0-0.3 | metal
+skull ring set | 0.50 | 0.0-0.3 | metal
+studded armband | 0.45 | 0.0-0.3 | metal,faux leather
+heavy chain wallet | 0.40 | 0.0-0.3 | metal
+fingerless biker gloves | 0.40 | 0.0-0.3 | faux leather
+pentagram pendant | 0.40 | 0.0-0.3 | metal
+inverted cross necklace | 0.40 | 0.0-0.3 | metal
+spiked choker | 0.35 | 0.0-0.3 | metal,faux leather

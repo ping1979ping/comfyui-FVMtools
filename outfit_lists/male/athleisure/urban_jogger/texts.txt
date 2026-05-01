@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"CITY" | 0.2 | top | bold block letters
+"BLOCK" | 0.2 | top | bold industrial
+"STREET" | 0.2 | top | impact font
+"NIGHT RUN" | 0.15 | top | clean modern font
+"METRO" | 0.2 | top | minimal sans-serif
+"CONCRETE" | 0.15 | top | bold block letters
+"AVENUE" | 0.15 | top | clean modern font
+"BOROUGH" | 0.15 | top | impact font
+"GRAFFITI" | 0.15 | top | brushed display
+"MIDNIGHT" | 0.15 | top | bold industrial
+"DOWNTOWN" | 0.15 | top | impact font

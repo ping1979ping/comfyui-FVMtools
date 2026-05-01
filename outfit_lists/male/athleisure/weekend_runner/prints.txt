@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+reflective stripe | 0.55 | top,bottom,outerwear,footwear | 0.0-0.3
+race-bib graphic | 0.3 | top | 0.0-0.2
+gradient fade | 0.35 | top,bottom,outerwear | 0.0-0.3
+race number | 0.25 | top | 0.0-0.2
+tonal pace stripe | 0.4 | top,bottom | 0.0-0.3
+performance logo | 0.5 | top,headwear,bag | 0.0-0.3
+neon accent | 0.3 | top,outerwear,footwear | 0.0-0.2
+heat-map graphic | 0.2 | top,outerwear | 0.0-0.2
+contour line motif | 0.25 | top,outerwear | 0.0-0.3
+mileage marker | 0.2 | top | 0.0-0.2
+splatter texture | 0.2 | top,outerwear | 0.0-0.2

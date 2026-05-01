@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+opera cape | 0.55 | 0.4-0.8 | velvet,satin
+ornate frock coat | 0.50 | 0.4-0.8 | brocade,silk
+crimson-lined cape | 0.50 | 0.4-0.8 | velvet,silk
+embroidered tailcoat | 0.45 | 0.5-0.9 | wool,silk
+ornate dinner jacket | 0.45 | 0.4-0.8 | velvet,silk
+gilded smoking jacket | 0.40 | 0.3-0.7 | velvet,brocade
+gothic tuxedo coat | 0.45 | 0.5-0.9 | wool,silk
+high-collar overcoat | 0.45 | 0.3-0.7 | wool,velvet

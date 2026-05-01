@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+heavyweight zip hoodie | 0.60 | 0.0-0.2 | heavyweight-knit,sherpa-loop
+sherpa pullover | 0.55 | 0.0-0.2 | sherpa-loop,heavyweight-knit
+
+# mid-casual
+plush robe | 0.50 | 0.0-0.2 | terry-pile,sherpa-loop
+quilted house jacket | 0.45 | 0.0-0.2 | quilt-fill,modal-soft
+cardigan wrap | 0.45 | 0.0-0.2 | heavyweight-knit,modal-soft
+puff-vest | 0.40 | 0.0-0.2 | quilt-fill,sherpa-loop
+fleece-lined kimono | 0.30 | 0.0-0.2 | sherpa-loop,modal-soft
+cozy shawl | 0.30 | 0.0-0.2 | heavyweight-knit,sherpa-loop
+heavy cardigan | 0.40 | 0.0-0.2 | heavyweight-knit,sherpa-loop

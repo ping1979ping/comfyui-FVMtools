@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+neon glow stripe | 0.55 | top,bottom | 0.0-0.3
+holographic shimmer | 0.50 | top,outerwear,accessories | 0.0-0.2
+laser-cut detail | 0.40 | top,outerwear | 0.0-0.3
+glitch graphic | 0.45 | top | 0.0-0.2
+geometric pattern | 0.40 | top,bottom | 0.0-0.2
+reflective tape stripe | 0.50 | top,outerwear,bottom | 0.0-0.3
+electric paint splatter | 0.40 | top | 0.0-0.2
+psychedelic swirl | 0.40 | top | 0.0-0.2
+neon piping | 0.35 | outerwear,bottom | 0.0-0.3
+chrome metallic detail | 0.35 | top,bag | 0.0-0.3
+LED-trim accent | 0.30 | top,outerwear | 0.0-0.2

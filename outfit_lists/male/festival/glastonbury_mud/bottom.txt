@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+muddy jeans | 0.65 | 0.0-0.2 | denim
+khaki cargo pants | 0.60 | 0.0-0.2 | cotton
+camo trousers | 0.45 | 0.0-0.2 | cotton
+worn corduroy pants | 0.40 | 0.1-0.3 | corduroy
+weathered work trousers | 0.45 | 0.0-0.2 | cotton
+rolled-up canvas trousers | 0.45 | 0.0-0.2 | cotton
+scruffy track pants | 0.45 | 0.0-0.2 | polyester
+faded shorts | 0.40 | 0.0-0.2 | cotton
+relaxed combat trousers | 0.45 | 0.0-0.2 | cotton
+old-school sweatpants | 0.40 | 0.0-0.2 | cotton,fleece

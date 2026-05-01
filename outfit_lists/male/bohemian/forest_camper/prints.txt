@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+plaid pattern | 0.5 | top | 0.2-0.4
+moss camo | 0.4 | top,outerwear | 0.1-0.4
+pine-tree motif | 0.4 | top | 0.1-0.4
+woodsman stripes | 0.4 | top | 0.1-0.4
+faded forest-graphic | 0.4 | top | 0.1-0.4
+antler graphic | 0.3 | top | 0.0-0.3
+camp-logo print | 0.3 | top,outerwear | 0.1-0.4
+foliage motif | 0.3 | top | 0.1-0.4
+woodland patch | 0.3 | top,outerwear | 0.1-0.4
+hatchet motif | 0.3 | top | 0.0-0.3

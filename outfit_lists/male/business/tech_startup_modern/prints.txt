@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid jet black | 0.70 | top,bottom,outerwear | 0.3-0.8
+solid heather grey | 0.60 | top,bottom | 0.3-0.7
+solid white | 0.55 | top | 0.3-0.7
+minimalist logo print | 0.45 | top | 0.3-0.6
+subtle tonal pattern | 0.40 | top,outerwear | 0.4-0.7
+modern color-block | 0.40 | top,outerwear | 0.3-0.6
+solid navy | 0.55 | bottom,outerwear | 0.4-0.8
+faded heather marl | 0.40 | top | 0.3-0.6
+techwear pattern | 0.35 | outerwear,bottom | 0.3-0.5
+gradient line print | 0.30 | top | 0.3-0.5

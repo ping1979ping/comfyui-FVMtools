@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+spiked mohawk band | 0.20 | 0.0-0.3 | synthetic,metal
+cyber bandana | 0.25 | 0.0-0.3 | synthetic
+neon respirator mask | 0.20 | 0.0-0.3 | synthetic
+LED headband | 0.20 | 0.0-0.3 | synthetic

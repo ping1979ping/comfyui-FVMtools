@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SUMMIT" | 0.2 | top | bold block letters
+"TRAIL" | 0.25 | top | athletic font
+"WILD" | 0.2 | top | bold industrial
+"EXPLORE" | 0.2 | top | clean modern font
+"NORTH" | 0.15 | top | minimal sans-serif
+"BACKCOUNTRY" | 0.1 | top | bold block letters
+"PEAK" | 0.2 | top | bold industrial
+"RIDGE" | 0.15 | top | impact font
+"OFF GRID" | 0.15 | top | bold block letters
+"BASE CAMP" | 0.1 | top | impact font
+"4000FT" | 0.15 | top | minimal sans-serif

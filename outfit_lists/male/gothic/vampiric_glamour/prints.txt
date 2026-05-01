@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ornate damask | 0.45 | top,outerwear | 0.3-0.8
+silver thread embroidery | 0.4 | top,outerwear | 0.3-0.8
+crimson rose motif | 0.4 | top,accessories | 0.3-0.8
+gilded baroque pattern | 0.4 | top,outerwear | 0.4-0.8
+fang emblem | 0.3 | top,accessories | 0.2-0.7
+ornate filigree | 0.4 | top,outerwear | 0.3-0.8
+crimson-lined trim | 0.45 | outerwear | 0.3-0.7
+heraldic crest | 0.3 | top,outerwear | 0.4-0.8
+ruby drop motif | 0.3 | top,accessories | 0.4-0.8
+ornate chalice emblem | 0.25 | top,accessories | 0.3-0.7
+embroidered serpent | 0.3 | top,outerwear | 0.3-0.7
+gilded scroll motif | 0.3 | top,outerwear | 0.4-0.8

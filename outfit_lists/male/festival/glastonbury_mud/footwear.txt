@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wellies boots | 0.80 | 0.0-0.2 | rubber
+muddy combat boots | 0.65 | 0.0-0.2 | leather
+hiking boots | 0.55 | 0.0-0.2 | leather,rubber
+worn sneakers | 0.50 | 0.0-0.2 | cotton,rubber
+chelsea ankle boots | 0.40 | 0.1-0.3 | leather
+weathered work boots | 0.45 | 0.0-0.2 | leather
+gum-sole hi-tops | 0.40 | 0.0-0.2 | cotton,rubber
+classic plimsolls | 0.35 | 0.0-0.2 | cotton,rubber
+slip-on canvas shoes | 0.35 | 0.0-0.2 | cotton
+trail running shoes | 0.40 | 0.0-0.2 | mesh,rubber

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+subtle pinstripe | 0.3 | top | 0.5-0.7
+fine herringbone | 0.3 | top | 0.5-0.7
+satin sheen | 0.3 | top | 0.5-0.8
+tonal jacquard | 0.3 | top | 0.5-0.7
+fine windowpane | 0.2 | top | 0.5-0.7
+shadow stripe | 0.3 | top | 0.5-0.7
+embossed grain | 0.3 | accessories | 0.4-0.8
+delicate dot | 0.2 | top | 0.4-0.6
+glossy luster | 0.2 | top | 0.5-0.8
+fine micro check | 0.2 | top | 0.4-0.6
+metallic accent | 0.15 | top | 0.5-0.8

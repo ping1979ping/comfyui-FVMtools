@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+mala beads | 0.40 | 0.0-0.2 | wood-bead,resin-bead
+woven bracelet | 0.35 | 0.0-0.2 | hemp-weave,wood-bead
+
+# mid-casual
+yoga mat strap | 0.50 | 0.0-0.2 | hemp-weave,recycled-shell
+water bottle | 0.55 | 0.0-0.2 | recycled-shell,foam-cushion
+aromatherapy roller | 0.30 | 0.0-0.2 | recycled-shell
+meditation cushion | 0.30 | 0.0-0.2 | organic-loop,foam-cushion
+resistance band | 0.40 | 0.0-0.2 | elastane-blend,foam-cushion
+slim wallet | 0.35 | 0.0-0.2 | plant-leather,hemp-weave
+mindful watch | 0.40 | 0.0-0.2 | plant-leather,wood-bead
+ear-pod case | 0.35 | 0.0-0.2 | plant-leather,recycled-shell

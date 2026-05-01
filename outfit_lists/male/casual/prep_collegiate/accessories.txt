@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heritage watch | 0.65 | 0.3-0.5 | metal,leather
+wayfarer sunglasses | 0.55 | 0.2-0.5 | plastic
+striped grosgrain belt | 0.45 | 0.2-0.4 | canvas
+woven leather belt | 0.55 | 0.3-0.5 | leather
+silk repp tie | 0.30 | 0.3-0.5 | cotton
+bow tie | 0.25 | 0.3-0.5 | cotton
+crested cufflinks | 0.20 | 0.4-0.5 | metal
+varsity scarf | 0.30 | 0.2-0.4 | knit,cotton
+penny watch fob | 0.20 | 0.3-0.5 | metal,leather

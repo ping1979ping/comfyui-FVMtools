@@ -1,0 +1,16 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+zip-front cardigan | 0.40 | 0.1-0.4 | merino,french-terry
+overshirt jacket | 0.50 | 0.2-0.5 | bamboo,modal
+
+# mid-casual
+travel blazer | 0.55 | 0.3-0.6 | merino,modal
+unstructured suit jacket | 0.40 | 0.4-0.7 | merino,modal
+quilted vest | 0.35 | 0.1-0.4 | shell,wadding
+city raincoat | 0.45 | 0.2-0.5 | shell,modal
+bomber jacket | 0.50 | 0.1-0.4 | shell,suede
+field coat | 0.35 | 0.3-0.6 | shell,modal
+hooded shell jacket | 0.55 | 0.1-0.4 | shell,modal
+softshell parka | 0.30 | 0.2-0.5 | shell,wadding

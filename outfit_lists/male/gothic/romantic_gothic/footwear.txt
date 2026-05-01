@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+laced ankle boots | 0.55 | 0.1-0.5 | leather
+buckle riding boots | 0.50 | 0.1-0.5 | leather
+soft suede boots | 0.45 | 0.1-0.5 | suede
+romantic dress boots | 0.50 | 0.2-0.6 | leather,suede
+embroidered slippers | 0.35 | 0.3-0.7 | velvet,silk
+tall pirate boots | 0.45 | 0.0-0.4 | leather
+ornate winklepickers | 0.40 | 0.2-0.6 | leather

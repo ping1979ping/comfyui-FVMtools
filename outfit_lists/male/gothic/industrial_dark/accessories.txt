@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+spiked dog collar | 0.45 | 0.0-0.3 | metal,faux leather
+heavy chain necklace | 0.50 | 0.0-0.3 | metal
+buckled wrist cuff | 0.45 | 0.0-0.3 | metal,faux leather
+respirator mask | 0.40 | 0.0-0.3 | synthetic,metal
+fingerless tactical gloves | 0.45 | 0.0-0.3 | synthetic,faux leather
+bullet-belt utility | 0.40 | 0.0-0.3 | metal
+industrial harness | 0.40 | 0.0-0.3 | faux leather,metal
+strapped armband | 0.40 | 0.0-0.3 | faux leather,synthetic
+metal-tipped chains | 0.45 | 0.0-0.3 | metal
+biohazard pendant | 0.35 | 0.0-0.3 | metal

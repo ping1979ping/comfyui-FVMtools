@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+none | 0.7 | 0.4-0.7 | cotton
+slim wallet | 0.15 | 0.4-0.7 | leather
+card holder | 0.05 | 0.4-0.7 | leather
+small messenger | 0.05 | 0.4-0.6 | leather,cotton
+crossbody pouch | 0.05 | 0.4-0.6 | leather,cotton
+phone sleeve | 0.05 | 0.4-0.6 | leather
+tote | 0.05 | 0.4-0.5 | cotton
+weekender carryall | 0.03 | 0.4-0.5 | cotton,leather

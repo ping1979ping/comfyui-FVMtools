@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+heathered melange | 0.55 | top,bottom,outerwear | 0.0-0.2
+tonal stripe | 0.45 | top,bottom,outerwear | 0.0-0.2
+solid muted color | 0.6 | top,bottom,outerwear | 0.0-0.2
+embroidered minimal logo | 0.4 | top,outerwear,bag | 0.0-0.2
+soft tie-dye | 0.3 | top,bottom | 0.0-0.2
+quilt-stitch detail | 0.35 | outerwear,bag | 0.0-0.2
+ribbed-knit texture | 0.45 | top,bottom,outerwear | 0.0-0.2
+warm earth tone | 0.5 | top,bottom,outerwear | 0.0-0.2
+faded-pastel block | 0.35 | top,bottom,outerwear | 0.0-0.2
+self-stripe pattern | 0.3 | top,bottom | 0.0-0.2
+hand-drawn doodle | 0.25 | top | 0.0-0.2

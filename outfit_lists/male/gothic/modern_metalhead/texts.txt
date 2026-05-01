@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"DEATH" | 0.25 | top | metal band font
+"INFERNO" | 0.25 | top,outerwear | heavy blackletter
+"WRATH" | 0.2 | top | cracked text
+"BLOODLUST" | 0.2 | top | distressed metal
+"VENGEANCE" | 0.2 | top,outerwear | distressed gothic
+"DOOM" | 0.25 | top | metal band font
+"REAPER" | 0.25 | top | metal band font
+"PHANTOM" | 0.2 | top | gothic font
+"CHAOS" | 0.25 | top | distressed gothic
+"OBLIVION" | 0.2 | top | runic font
+"CRYPT" | 0.15 | top | metal band font
+"BURIED" | 0.15 | top | distressed text

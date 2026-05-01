@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+hooded ritual cloak | 0.60 | 0.1-0.5 | wool,cotton
+draped witch cape | 0.55 | 0.2-0.6 | velvet,wool
+embroidered occult robe | 0.50 | 0.2-0.6 | wool,velvet
+flowing ceremonial coat | 0.45 | 0.2-0.6 | wool,velvet
+asymmetric mystic coat | 0.45 | 0.1-0.5 | wool,cotton
+caped sigil overcoat | 0.45 | 0.2-0.6 | wool,velvet
+ankle-length warlock coat | 0.45 | 0.2-0.6 | wool
+soft fringed shawl | 0.35 | 0.0-0.4 | wool,cotton

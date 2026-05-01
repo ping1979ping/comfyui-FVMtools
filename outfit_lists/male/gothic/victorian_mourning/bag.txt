@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+gentleman briefcase | 0.25 | 0.3-0.7 | leather
+ornate clutch | 0.20 | 0.4-0.8 | velvet,silk
+doctor satchel | 0.25 | 0.3-0.7 | leather
+carpet bag | 0.20 | 0.3-0.7 | wool,leather
+embroidered pouch | 0.25 | 0.3-0.7 | velvet,satin
+small mourning purse | 0.20 | 0.4-0.8 | velvet,silk

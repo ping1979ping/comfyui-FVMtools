@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+canvas duffel | 0.50 | 0.1-0.4 | cotton
+weekend tote | 0.40 | 0.1-0.4 | cotton
+crossbody pouch | 0.35 | 0.0-0.3 | leather
+small backpack | 0.30 | 0.0-0.2 | nylon
+dry pack | 0.35 | 0.0-0.2 | nylon
+sail bag | 0.30 | 0.0-0.2 | cotton,polyester
+yacht briefcase | 0.20 | 0.3-0.6 | leather
+roll-top sack | 0.25 | 0.0-0.2 | nylon

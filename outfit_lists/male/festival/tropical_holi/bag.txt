@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+woven shoulder bag | 0.55 | 0.0-0.2 | jute,cotton
+embroidered tote | 0.50 | 0.1-0.3 | cotton
+small ethnic crossbody | 0.50 | 0.0-0.2 | cotton
+beach drawstring sack | 0.45 | 0.0-0.2 | cotton
+mini ethnic backpack | 0.40 | 0.0-0.2 | cotton
+color-stained fanny pack | 0.45 | 0.0-0.2 | nylon
+beaded sling pouch | 0.35 | 0.0-0.2 | cotton,wood

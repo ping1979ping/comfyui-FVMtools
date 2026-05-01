@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flat-front suit trousers | 0.95 | 0.8-1.0 | wool
+pleated suit trousers | 0.65 | 0.8-1.0 | wool
+tailored dress trousers | 0.85 | 0.8-1.0 | wool,cashmere
+cuffed suit trousers | 0.55 | 0.8-1.0 | wool
+slim-cut dress trousers | 0.70 | 0.7-1.0 | wool
+high-rise trousers | 0.50 | 0.8-1.0 | wool
+classic-cut trousers | 0.80 | 0.8-1.0 | wool
+straight-leg trousers | 0.60 | 0.7-0.9 | wool
+fine-pinstripe trousers | 0.55 | 0.8-1.0 | wool
+fine-twill trousers | 0.60 | 0.8-1.0 | wool

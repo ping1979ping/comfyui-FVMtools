@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+worn cowboy boots | 0.55 | 0.1-0.3 | leather
+huaraches | 0.50 | 0.0-0.2 | leather
+slip-on sneakers | 0.55 | 0.0-0.2 | cotton,rubber
+desert sandals | 0.55 | 0.0-0.2 | leather
+chukka boots | 0.40 | 0.1-0.3 | suede
+canvas hi-tops | 0.45 | 0.0-0.2 | cotton
+dust-kicker low-tops | 0.45 | 0.0-0.2 | cotton,rubber
+strappy slides | 0.35 | 0.0-0.2 | leather,rubber
+moccasin shoes | 0.30 | 0.1-0.3 | suede
+espadrille loafers | 0.30 | 0.1-0.3 | jute,cotton

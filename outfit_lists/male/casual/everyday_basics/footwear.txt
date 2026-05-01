@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+low-top sneakers | 0.90 | 0.1-0.4 | canvas,leather
+plimsoll shoes | 0.50 | 0.1-0.3 | canvas
+casual loafers | 0.40 | 0.3-0.5 | leather
+slip-on shoes | 0.55 | 0.2-0.4 | canvas,leather
+basic trainers | 0.55 | 0.1-0.3 | mesh,rubber
+court sneakers | 0.50 | 0.1-0.3 | leather,canvas
+boat-style shoes | 0.30 | 0.3-0.5 | leather,canvas
+walking shoes | 0.40 | 0.1-0.2 | mesh,rubber
+white sneakers | 0.65 | 0.1-0.4 | leather,canvas
+hi-top sneakers | 0.40 | 0.1-0.3 | canvas,leather

@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+woodsman rucksack | 0.7 | 0.1-0.3 | canvas,hemp
+forager satchel | 0.6 | 0.2-0.4 | leather,canvas
+weathered duffel | 0.5 | 0.1-0.3 | canvas
+camp messenger | 0.5 | 0.2-0.4 | canvas
+trail crossbody | 0.4 | 0.2-0.4 | leather
+patched hip-pouch | 0.4 | 0.1-0.3 | canvas,leather
+forester sling | 0.4 | 0.1-0.3 | hemp,cotton
+moss-toned tote | 0.3 | 0.1-0.3 | hemp

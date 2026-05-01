@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+mourning frock coat | 0.55 | 0.4-0.8 | wool,velvet
+tailcoat | 0.50 | 0.5-0.9 | wool,silk
+funereal cape | 0.40 | 0.4-0.8 | wool,velvet
+Inverness cloak | 0.40 | 0.3-0.7 | wool
+caped overcoat | 0.45 | 0.3-0.7 | wool,velvet
+greatcoat | 0.45 | 0.3-0.7 | wool
+opera cape | 0.35 | 0.5-0.9 | velvet,satin

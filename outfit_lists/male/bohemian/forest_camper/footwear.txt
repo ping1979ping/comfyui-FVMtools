@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+hiking boots | 0.7 | 0.2-0.4 | leather,suede
+weathered work-boots | 0.6 | 0.2-0.4 | leather
+forester chukkas | 0.5 | 0.2-0.4 | suede
+moccasin trail-shoes | 0.5 | 0.2-0.4 | suede,leather
+camp slip-ons | 0.4 | 0.1-0.3 | canvas
+woodsman boots | 0.5 | 0.2-0.4 | leather
+trail sneakers | 0.4 | 0.1-0.3 | canvas
+patched ankle-boots | 0.4 | 0.2-0.4 | leather,suede

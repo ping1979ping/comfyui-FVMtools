@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+beach sandals | 0.8 | 0.1-0.3 | leather
+woven slip-ons | 0.6 | 0.1-0.3 | hemp,canvas
+boat shoes | 0.5 | 0.2-0.4 | leather,canvas
+flip-flops | 0.5 | 0.1-0.3 | leather
+rope-soled espadrilles | 0.5 | 0.2-0.4 | canvas,cotton
+huarache-style sandals | 0.4 | 0.1-0.3 | leather
+salt-faded sneakers | 0.4 | 0.1-0.3 | canvas
+barefoot-style minimalist | 0.3 | 0.1-0.3 | leather

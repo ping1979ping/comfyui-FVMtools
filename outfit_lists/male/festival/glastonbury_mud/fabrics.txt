@@ -1,0 +1,24 @@
+# format: fabric_name | formality | family | weight
+
+# muddy basics
+cotton | 0.15 | natural | light
+denim | 0.2 | tough | heavy
+nylon | 0.15 | sporty | light
+polyester | 0.15 | sporty | light
+
+# specials
+wax-canvas | 0.25 | tough | heavy
+fleece | 0.1 | sporty | medium
+wool | 0.3 | natural | medium
+corduroy | 0.2 | natural | medium
+
+# structured
+leather | 0.25 | tough | medium
+rubber | 0.05 | sporty | medium
+mesh | 0.1 | casual | light
+
+# accessories
+metal | 0.2 | accessory | light
+plastic | 0.05 | sporty | light
+acrylic | 0.1 | sporty | light
+wood | 0.1 | natural | light

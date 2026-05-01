@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+worn high-tops | 0.6 | 0.1-0.3 | canvas
+chelsea boots | 0.6 | 0.2-0.4 | suede,leather
+slip-on canvas-shoes | 0.5 | 0.1-0.3 | canvas
+beaten-up sneakers | 0.5 | 0.1-0.3 | canvas
+artsy oxfords | 0.4 | 0.2-0.4 | leather,suede
+desert boots | 0.4 | 0.2-0.4 | suede
+moccasin slip-ons | 0.4 | 0.2-0.4 | suede
+combat-style boots | 0.4 | 0.2-0.4 | leather

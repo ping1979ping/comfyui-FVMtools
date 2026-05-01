@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+luxury watch | 0.7 | 0.5-0.7 | leather
+slim formal belt | 0.6 | 0.5-0.7 | leather
+classic pocket square | 0.6 | 0.5-0.7 | silk
+classic neck-tie | 0.6 | 0.6-0.7 | silk
+bow tie | 0.4 | 0.6-0.7 | silk
+cufflinks | 0.5 | 0.6-0.7 | leather
+tie bar | 0.4 | 0.5-0.7 | leather
+lapel pin | 0.4 | 0.6-0.7 | leather
+boutonniere | 0.3 | 0.6-0.7 | cotton
+shirt studs | 0.3 | 0.6-0.7 | leather
+white opera gloves | 0.2 | 0.6-0.7 | cotton

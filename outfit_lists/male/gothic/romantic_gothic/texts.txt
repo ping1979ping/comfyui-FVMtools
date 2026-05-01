@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"AMOURETTE" | 0.2 | top | ornate calligraphy
+"BELOVED" | 0.2 | top | romantic script
+"FOREVER" | 0.2 | top | ornate calligraphy
+"HEART OF NIGHT" | 0.2 | top,outerwear | gothic calligraphy
+"ROMANCE" | 0.15 | top | flowing script
+"YEARNING" | 0.15 | top | romantic script
+"MOONLIT" | 0.2 | top | ornate calligraphy
+"DEAREST" | 0.15 | top | romantic script
+"POET'S SOUL" | 0.15 | top | flowing calligraphy
+"VESPERAL" | 0.15 | top | gothic calligraphy

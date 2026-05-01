@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ruffled poet shirt | 0.55 | 0.1-0.5 | cotton,silk
+billowing sleeve shirt | 0.50 | 0.1-0.5 | cotton,silk
+embroidered blouse | 0.50 | 0.2-0.6 | silk,cotton
+flounced bohemian shirt | 0.45 | 0.1-0.5 | cotton
+high-collared romantic shirt | 0.50 | 0.2-0.6 | silk,cotton
+gathered cuff shirt | 0.45 | 0.1-0.5 | cotton,silk
+pirate-style shirt | 0.45 | 0.1-0.5 | cotton
+ornate frilled shirt | 0.45 | 0.2-0.6 | silk,cotton
+draped poet blouse | 0.45 | 0.2-0.6 | silk
+soft cravat shirt | 0.40 | 0.2-0.6 | silk,cotton

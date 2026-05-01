@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mourning embroidery | 0.4 | top,outerwear | 0.3-0.7
+funereal lace trim | 0.4 | top,outerwear | 0.3-0.7
+silver thread filigree | 0.3 | top,outerwear | 0.4-0.8
+weeping willow motif | 0.3 | top,outerwear | 0.3-0.7
+black rose detail | 0.4 | top,accessories | 0.3-0.7
+ornate damask | 0.3 | top,outerwear | 0.4-0.8
+gothic crucifix emblem | 0.3 | top,accessories | 0.3-0.7
+raven feather motif | 0.3 | top,outerwear | 0.3-0.7
+ornate frill detail | 0.4 | top | 0.3-0.7
+funeral ribbon | 0.3 | top,accessories | 0.3-0.7
+ivory lace inlay | 0.25 | top | 0.4-0.8
+mourning band | 0.4 | accessories | 0.3-0.7

@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+strapped tactical jacket | 0.55 | 0.0-0.3 | synthetic,faux leather
+buckled biker coat | 0.50 | 0.0-0.4 | faux leather
+industrial trench | 0.45 | 0.0-0.4 | synthetic,canvas
+slick long coat | 0.45 | 0.0-0.4 | PVC
+militant utility jacket | 0.45 | 0.0-0.3 | canvas,synthetic
+chained moto jacket | 0.45 | 0.0-0.3 | faux leather
+heavy-duty parka | 0.40 | 0.0-0.3 | synthetic
+distressed worker coat | 0.40 | 0.0-0.3 | canvas,cotton

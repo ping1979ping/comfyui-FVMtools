@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+glitter detail | 0.60 | top,outerwear,accessories | 0.0-0.3
+sequin embellishment | 0.55 | top,bottom,outerwear | 0.0-0.3
+holographic shimmer | 0.50 | top,bag | 0.0-0.3
+foil metallic finish | 0.45 | top,bottom | 0.0-0.3
+rhinestone studs | 0.45 | top,outerwear | 0.0-0.3
+star burst pattern | 0.35 | top | 0.0-0.3
+disco ball motif | 0.30 | top | 0.0-0.3
+gold leaf detail | 0.35 | top,accessories | 0.0-0.3
+ombre shimmer | 0.35 | top,bottom | 0.0-0.3
+sparkle confetti | 0.40 | top | 0.0-0.3

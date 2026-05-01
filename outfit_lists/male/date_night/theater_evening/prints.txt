@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+subtle pinstripe | 0.3 | top | 0.5-0.7
+fine herringbone | 0.3 | top | 0.5-0.7
+satin sheen | 0.3 | top | 0.6-0.8
+silken luster | 0.3 | top | 0.6-0.8
+tonal jacquard | 0.3 | top | 0.5-0.7
+fine birdseye | 0.2 | top | 0.5-0.7
+windowpane motif | 0.2 | top | 0.5-0.7
+shadow stripe | 0.3 | top | 0.5-0.7
+embossed grain | 0.3 | accessories | 0.5-0.8
+plisse texture | 0.2 | top | 0.6-0.8
+classic damask motif | 0.2 | top | 0.6-0.7
+formal jacquard weave | 0.2 | top | 0.6-0.8

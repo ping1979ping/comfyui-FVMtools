@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized cardigan | 0.6 | 0.2-0.4 | cotton,crochet
+worn denim-jacket | 0.5 | 0.2-0.4 | denim
+unstructured blazer | 0.5 | 0.3-0.4 | linen,cotton
+artist's coat | 0.4 | 0.2-0.4 | cotton,canvas
+patched-elbow cardigan | 0.4 | 0.2-0.4 | crochet,cotton
+moto jacket | 0.4 | 0.2-0.4 | leather
+slouchy waistcoat | 0.3 | 0.2-0.4 | cotton,linen
+gallery vest | 0.3 | 0.2-0.4 | cotton

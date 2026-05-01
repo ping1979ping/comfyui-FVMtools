@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+bone pendant | 0.6 | 0.1-0.3 | hemp,cotton
+woodsman knife-sheath | 0.5 | 0.2-0.4 | leather
+beaded leather-bracelet | 0.5 | 0.1-0.3 | leather
+forager belt | 0.5 | 0.2-0.4 | leather
+acorn-charm necklace | 0.4 | 0.1-0.3 | cotton
+moss-stone ring | 0.4 | 0.2-0.4 | leather
+braided rope-bracelet | 0.4 | 0.1-0.3 | hemp
+camp-style bandolier | 0.3 | 0.1-0.3 | leather,canvas
+antler pendant | 0.4 | 0.1-0.3 | leather
+trail-bead amulet | 0.3 | 0.1-0.3 | hemp,cotton

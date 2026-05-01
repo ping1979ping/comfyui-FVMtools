@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+heritage paisley | 0.5 | top | 0.1-0.4
+70s geometric | 0.5 | top | 0.0-0.3
+old-world embroidery | 0.4 | top,outerwear | 0.1-0.4
+faded ethnic-pattern | 0.4 | top | 0.1-0.4
+vintage damask | 0.4 | top | 0.2-0.4
+caravan motif | 0.4 | top | 0.1-0.4
+distressed plaid | 0.3 | top | 0.1-0.4
+heirloom block-print | 0.3 | top | 0.1-0.4
+70s argyle | 0.3 | top,outerwear | 0.1-0.4
+patchwork sampler | 0.3 | top,outerwear | 0.1-0.4
+yellowed map-graphic | 0.3 | top | 0.1-0.4

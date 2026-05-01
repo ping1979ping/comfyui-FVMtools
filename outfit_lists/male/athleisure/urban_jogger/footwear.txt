@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+chunky sneakers | 0.60 | 0.0-0.3 | woven-textile,split-suede
+retro runners | 0.55 | 0.0-0.3 | woven-textile,split-suede
+
+# mid-casual
+high-top kicks | 0.45 | 0.1-0.3 | split-suede,woven-textile
+limited-edition trainers | 0.40 | 0.1-0.3 | woven-textile,split-suede
+urban runners | 0.55 | 0.0-0.3 | woven-textile,split-suede
+chunky dad shoes | 0.45 | 0.0-0.3 | woven-textile,split-suede
+techwear boots | 0.35 | 0.1-0.3 | rubberized-textile,split-suede
+basketball-style sneakers | 0.45 | 0.0-0.3 | woven-textile,split-suede
+slip-on streets | 0.35 | 0.0-0.2 | woven-textile,split-suede

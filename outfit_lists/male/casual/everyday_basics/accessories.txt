@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+minimal wristwatch | 0.65 | 0.2-0.5 | metal,rubber
+classic sunglasses | 0.60 | 0.1-0.4 | plastic
+classic strap belt | 0.55 | 0.2-0.4 | leather
+wove wristband | 0.30 | 0.1-0.2 | rubber,leather
+silver chain | 0.25 | 0.1-0.3 | metal
+woven bracelet | 0.30 | 0.1-0.3 | leather
+slim wallet chain | 0.20 | 0.1-0.3 | metal

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+subtle stripe | 0.3 | top | 0.4-0.7
+small check | 0.3 | top | 0.4-0.7
+gingham pattern | 0.2 | top | 0.4-0.5
+tonal weave | 0.3 | top | 0.4-0.7
+chambray texture | 0.2 | top | 0.4-0.5
+mini polka dot | 0.15 | top | 0.4-0.6
+heather melange | 0.3 | top | 0.4-0.6
+embossed grain | 0.3 | accessories | 0.4-0.7
+ribbed knit | 0.3 | top | 0.4-0.6
+windowpane motif | 0.2 | top | 0.5-0.7
+fine stripe | 0.3 | top | 0.4-0.7

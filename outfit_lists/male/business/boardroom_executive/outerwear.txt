@@ -1,0 +1,14 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bespoke suit jacket | 0.95 | 0.8-1.0 | wool
+custom-tailored blazer | 0.85 | 0.8-1.0 | wool
+peak-lapel jacket | 0.75 | 0.8-1.0 | wool
+double-breasted suit jacket | 0.65 | 0.8-1.0 | wool
+three-piece suit jacket | 0.70 | 0.8-1.0 | wool
+luxury overcoat | 0.55 | 0.8-1.0 | cashmere
+formal vest | 0.55 | 0.8-1.0 | wool
+hand-tailored waistcoat | 0.50 | 0.9-1.0 | wool
+chesterfield overcoat | 0.45 | 0.9-1.0 | cashmere
+formal tuxedo jacket | 0.30 | 0.9-1.0 | wool
+classic notch-lapel jacket | 0.80 | 0.8-1.0 | wool

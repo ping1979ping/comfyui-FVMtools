@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+wide-brim witch hat | 0.45 | 0.0-0.4 | wool,velvet
+ritual hood | 0.30 | 0.0-0.4 | wool,velvet
+ornate circlet | 0.25 | 0.1-0.5 | metal
+horned headpiece | 0.20 | 0.0-0.4 | metal,bone

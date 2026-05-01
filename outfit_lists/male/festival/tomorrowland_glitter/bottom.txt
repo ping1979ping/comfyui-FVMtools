@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shimmer trousers | 0.60 | 0.1-0.3 | satin
+metallic gold pants | 0.50 | 0.0-0.2 | lurex
+glitter-streaked shorts | 0.50 | 0.0-0.2 | cotton,sequin
+sparkle joggers | 0.45 | 0.0-0.2 | polyester,sequin
+rhinestone-trim jeans | 0.40 | 0.1-0.3 | denim
+foil-print pants | 0.45 | 0.0-0.2 | polyester,foil
+shimmer track shorts | 0.45 | 0.0-0.2 | polyester
+silver disco trousers | 0.35 | 0.1-0.3 | satin
+bedazzled cargos | 0.35 | 0.0-0.2 | cotton
+glamour skinnies | 0.30 | 0.1-0.3 | denim

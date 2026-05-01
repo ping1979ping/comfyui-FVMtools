@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+casual button-up | 0.75 | 0.3-0.5 | cotton
+short sleeve shirt | 0.65 | 0.2-0.4 | cotton
+breton tee | 0.55 | 0.2-0.4 | cotton,jersey
+soft polo top | 0.65 | 0.3-0.5 | cotton,jersey
+linen shirt | 0.60 | 0.3-0.5 | cotton
+camp collar shirt | 0.55 | 0.2-0.4 | cotton
+fine gauge sweater | 0.50 | 0.3-0.5 | knit,cotton
+relaxed tee | 0.55 | 0.1-0.3 | cotton,jersey
+chambray shirt | 0.55 | 0.3-0.5 | cotton
+cardigan top | 0.40 | 0.3-0.5 | knit,cotton
+striped sailor shirt | 0.45 | 0.2-0.4 | cotton,jersey

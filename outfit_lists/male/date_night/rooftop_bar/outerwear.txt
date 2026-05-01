@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+unstructured blazer | 0.7 | 0.5-0.7 | wool blend,cotton,twill
+biker jacket | 0.5 | 0.4-0.6 | leather
+bomber | 0.4 | 0.4-0.6 | leather,suede
+trench coat | 0.3 | 0.5-0.7 | cotton,twill
+double-breasted blazer | 0.3 | 0.5-0.7 | wool blend
+shirt jacket | 0.4 | 0.4-0.5 | cotton
+soft overshirt | 0.3 | 0.4-0.6 | suede
+cardigan | 0.4 | 0.4-0.6 | merino wool,cashmere
+summer-weight blazer | 0.4 | 0.4-0.6 | linen,cotton

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mini crossbody | 0.50 | 0.1-0.4 | leather
+sling pouch | 0.45 | 0.0-0.3 | nylon
+fanny pack | 0.55 | 0.0-0.3 | nylon,polyester
+metallic clutch | 0.30 | 0.2-0.5 | polyester
+chain shoulder bag | 0.30 | 0.2-0.5 | leather
+holographic mini bag | 0.30 | 0.1-0.4 | polyester
+small backpack | 0.30 | 0.0-0.2 | nylon
+beach pouch | 0.30 | 0.0-0.2 | nylon

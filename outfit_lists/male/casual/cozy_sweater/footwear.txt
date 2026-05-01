@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic chukka boots | 0.65 | 0.3-0.5 | leather
+suede desert boots | 0.55 | 0.2-0.4 | leather
+shearling-lined boots | 0.45 | 0.2-0.4 | leather
+duck boots | 0.40 | 0.1-0.3 | leather,rubber
+hiking-style boots | 0.40 | 0.1-0.3 | leather,mesh
+moc-toe boots | 0.45 | 0.2-0.4 | leather
+penny loafers | 0.40 | 0.3-0.5 | leather
+slipper-style mocs | 0.35 | 0.1-0.3 | leather
+classic sneakers | 0.50 | 0.2-0.4 | leather,canvas
+service boots | 0.40 | 0.2-0.4 | leather,rubber

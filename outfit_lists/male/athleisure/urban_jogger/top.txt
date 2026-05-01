@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+boxy graphic tee | 0.55 | 0.0-0.2 | midweight-knit,french-loop
+oversized longsleeve | 0.50 | 0.0-0.2 | midweight-knit,french-loop
+streetwear vest | 0.30 | 0.0-0.2 | midweight-knit,techweave
+
+# mid-casual
+hooded sweatshirt | 0.65 | 0.1-0.3 | french-loop,midweight-knit
+half-zip mock | 0.50 | 0.1-0.3 | french-loop,techweave
+crewneck sweatshirt | 0.55 | 0.1-0.3 | french-loop,midweight-knit
+cropped hoodie | 0.40 | 0.0-0.2 | french-loop,midweight-knit
+techwear shirt | 0.45 | 0.1-0.3 | techweave,midweight-knit
+zip-mock pullover | 0.40 | 0.1-0.3 | techweave,french-loop
+cargo overshirt | 0.35 | 0.1-0.3 | techweave,midweight-knit

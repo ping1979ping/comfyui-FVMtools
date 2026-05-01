@@ -1,0 +1,23 @@
+# format: fabric_name | formality | family | weight
+
+# folk basics
+cotton | 0.15 | natural | light
+linen | 0.2 | natural | light
+denim | 0.2 | tough | heavy
+corduroy | 0.2 | natural | medium
+
+# folk specials
+wool | 0.3 | natural | medium
+tweed | 0.35 | luxury | heavy
+suede | 0.25 | tough | medium
+
+# structured
+leather | 0.25 | tough | medium
+rubber | 0.05 | sporty | medium
+
+# accessories
+metal | 0.2 | accessory | light
+wood | 0.1 | natural | light
+hemp | 0.1 | natural | light
+jute | 0.1 | natural | light
+straw | 0.1 | natural | light

@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fleece pullover | 0.55 | 0.0-0.2 | fleece-knit,softshell
+windshell jacket | 0.55 | 0.0-0.2 | softshell,synthetic
+
+# mid-casual
+hardshell jacket | 0.55 | 0.0-0.3 | gore-tex,softshell
+technical hoody | 0.50 | 0.0-0.3 | softshell,fleece-knit
+insulated puffer | 0.55 | 0.0-0.3 | down-fill,synthetic
+midweight puffy | 0.50 | 0.0-0.3 | synthetic,down-fill
+rain shell | 0.50 | 0.0-0.3 | gore-tex,synthetic
+trail vest | 0.40 | 0.0-0.3 | down-fill,softshell
+mountain parka | 0.35 | 0.1-0.4 | gore-tex,synthetic

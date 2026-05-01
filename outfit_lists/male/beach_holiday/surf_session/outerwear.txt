@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+faded zip hoodie | 0.55 | 0.0-0.2 | cotton,polyester
+unbuttoned flannel | 0.40 | 0.0-0.2 | cotton
+windbreaker shell | 0.40 | 0.0-0.2 | nylon,polyester
+poncho changing robe | 0.35 | 0.0-0.2 | cotton
+zip-up board jacket | 0.30 | 0.0-0.2 | nylon,polyester
+oversized terry pullover | 0.30 | 0.0-0.2 | cotton

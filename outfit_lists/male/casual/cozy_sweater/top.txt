@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky pullover | 0.80 | 0.2-0.4 | knit,cotton
+cable-knit jumper | 0.75 | 0.2-0.4 | knit,cotton
+shawl-collar pullover | 0.55 | 0.3-0.5 | knit,cotton
+turtleneck top | 0.60 | 0.3-0.5 | knit,cotton
+mock neck pullover | 0.55 | 0.2-0.4 | knit,cotton
+fisherman jumper | 0.55 | 0.2-0.4 | knit,cotton
+crew neck pullover | 0.65 | 0.2-0.4 | knit,cotton
+quarter-zip pullover | 0.50 | 0.2-0.4 | knit,fleece
+fair-isle jumper | 0.40 | 0.2-0.4 | knit,cotton
+ribbed pullover | 0.50 | 0.2-0.4 | knit,cotton
+heavy waffle henley | 0.45 | 0.2-0.4 | cotton,jersey
+brushed base layer shirt | 0.45 | 0.2-0.4 | cotton,flannel

@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+top hat | 0.40 | 0.4-0.8 | velvet,satin
+ornate beret | 0.25 | 0.3-0.7 | velvet
+crimson-lined fedora | 0.25 | 0.3-0.7 | wool,silk
+gilded woven cap | 0.20 | 0.4-0.8 | brocade

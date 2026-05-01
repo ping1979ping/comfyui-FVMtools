@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bomber jacket | 0.45 | 0.1-0.4 | polyester,nylon
+sequined jacket | 0.30 | 0.2-0.5 | polyester
+mesh hoodie | 0.30 | 0.0-0.3 | polyester
+unbuttoned overshirt | 0.40 | 0.1-0.4 | viscose
+cropped windbreaker | 0.30 | 0.0-0.3 | nylon
+satin track jacket | 0.30 | 0.1-0.4 | polyester

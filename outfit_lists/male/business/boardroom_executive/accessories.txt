@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+luxury formal tie | 0.95 | 0.8-1.0 | silk
+hand-rolled pocket square | 0.70 | 0.8-1.0 | silk
+gold cufflinks | 0.65 | 0.8-1.0 | metal
+platinum cufflinks | 0.50 | 0.9-1.0 | metal
+luxury wristwatch | 0.90 | 0.8-1.0 | metal,leather
+silver tie clip | 0.55 | 0.8-1.0 | metal
+gold tie pin | 0.45 | 0.8-1.0 | metal
+formal bowtie | 0.35 | 0.9-1.0 | silk
+luxury dress belt | 0.85 | 0.8-1.0 | leather
+collar pin | 0.30 | 0.9-1.0 | metal
+heirloom signet ring | 0.40 | 0.8-1.0 | metal
+luxury fountain pen | 0.45 | 0.8-1.0 | metal

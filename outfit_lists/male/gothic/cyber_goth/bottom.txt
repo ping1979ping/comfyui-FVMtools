@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+vinyl-coated pants | 0.55 | 0.0-0.3 | PVC
+neon striped trousers | 0.45 | 0.0-0.4 | synthetic,cotton
+cargo with reflective straps | 0.45 | 0.0-0.3 | cotton,synthetic
+rave bondage trousers | 0.40 | 0.0-0.3 | PVC,faux leather
+slick skinny pants | 0.50 | 0.0-0.4 | vinyl
+techwear joggers | 0.45 | 0.0-0.3 | synthetic
+holographic shorts | 0.30 | 0.0-0.3 | synthetic
+glow trim trousers | 0.40 | 0.0-0.3 | synthetic

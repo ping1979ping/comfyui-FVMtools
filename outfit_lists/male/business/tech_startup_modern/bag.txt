@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+modern backpack | 0.75 | 0.3-0.6 | nylon,polyester
+slim laptop sleeve | 0.65 | 0.4-0.7 | nylon,leather
+tech messenger bag | 0.60 | 0.4-0.7 | nylon,leather
+hybrid commuter bag | 0.50 | 0.4-0.7 | nylon,polyester
+minimalist sling bag | 0.45 | 0.3-0.6 | nylon
+designer tote | 0.40 | 0.4-0.7 | leather,canvas
+techwear waistpack | 0.40 | 0.3-0.5 | nylon,polyester
+roll-top backpack | 0.45 | 0.3-0.6 | nylon

@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+patent oxfords | 0.55 | 0.4-0.8 | leather
+buckled dress boots | 0.50 | 0.3-0.7 | leather
+opera pumps | 0.45 | 0.5-0.9 | leather,satin
+embroidered slippers | 0.40 | 0.4-0.8 | velvet,silk
+silver-tipped boots | 0.45 | 0.3-0.7 | leather
+gilded dress shoes | 0.40 | 0.4-0.8 | brocade,leather
+winklepicker boots | 0.45 | 0.3-0.7 | leather

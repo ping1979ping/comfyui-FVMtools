@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+combat boots | 0.65 | 0.0-0.3 | leather,faux leather
+worn motorcycle boots | 0.55 | 0.0-0.3 | leather
+steel-toe boots | 0.50 | 0.0-0.3 | leather
+high-top sneakers | 0.45 | 0.0-0.3 | canvas,faux leather
+black work boots | 0.45 | 0.0-0.3 | leather
+buckle stomper boots | 0.45 | 0.0-0.3 | faux leather
+scuffed combat shoes | 0.40 | 0.0-0.3 | faux leather

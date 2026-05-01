@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+faded baseball cap | 0.55 | 0.0-0.2 | cotton,polyester
+brimmed surf hat | 0.50 | 0.0-0.2 | nylon,polyester
+floppy bucket hat | 0.45 | 0.0-0.2 | cotton
+trucker cap | 0.45 | 0.0-0.2 | cotton,polyester
+sun-faded beanie | 0.30 | 0.0-0.2 | cotton

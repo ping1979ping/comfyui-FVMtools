@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+festival pendant | 0.7 | 0.1-0.3 | leather,cotton
+beaded layered-necklaces | 0.6 | 0.1-0.3 | hemp,cotton
+multiple bracelets | 0.6 | 0.1-0.3 | hemp,cotton
+mirror-trim sash | 0.5 | 0.1-0.3 | cotton
+metal cuff-bracelet | 0.5 | 0.2-0.4 | leather
+toe-ring set | 0.4 | 0.1-0.3 | leather
+nose-chain | 0.3 | 0.1-0.3 | cotton
+festival arm-band | 0.4 | 0.1-0.3 | hemp
+shell-trim choker | 0.4 | 0.1-0.3 | cotton,hemp
+glow-bead necklace | 0.4 | 0.1-0.3 | cotton

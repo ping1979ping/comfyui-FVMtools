@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+unstructured blazer | 0.6 | 0.5-0.6 | wool blend,cotton,twill
+biker jacket | 0.5 | 0.4-0.6 | leather
+bomber | 0.4 | 0.4-0.6 | leather,suede
+field jacket | 0.4 | 0.4-0.5 | cotton,twill
+cardigan | 0.4 | 0.4-0.5 | merino wool,cashmere
+overshirt | 0.5 | 0.4-0.5 | cotton,flannel
+quilted vest | 0.3 | 0.4-0.5 | cotton
+trucker jacket | 0.4 | 0.4-0.5 | denim
+shacket | 0.4 | 0.4-0.5 | cotton,flannel
+harrington jacket | 0.3 | 0.4-0.5 | cotton,twill

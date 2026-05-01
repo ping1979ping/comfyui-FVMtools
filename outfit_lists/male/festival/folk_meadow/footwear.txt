@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+worn brogues | 0.50 | 0.1-0.3 | leather
+tan ankle boots | 0.55 | 0.1-0.3 | leather
+canvas plimsolls | 0.50 | 0.0-0.2 | cotton,rubber
+woven folk shoes | 0.40 | 0.1-0.3 | leather,jute
+desert chukka boots | 0.45 | 0.1-0.3 | suede
+classic wingtips | 0.30 | 0.2-0.4 | leather
+strappy sandals | 0.40 | 0.0-0.2 | leather
+hand-stitched moccasins | 0.40 | 0.1-0.3 | suede
+folk clogs | 0.30 | 0.1-0.3 | wood,leather
+walking trainers | 0.40 | 0.0-0.2 | cotton,rubber

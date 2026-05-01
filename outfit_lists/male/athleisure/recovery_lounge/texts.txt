@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"REST DAY" | 0.25 | top | clean modern font
+"RECOVER" | 0.25 | top | minimal sans-serif
+"COZY" | 0.2 | top | clean modern font
+"SUNDAY" | 0.2 | top | brushed display
+"OFF DUTY" | 0.2 | top | minimal sans-serif
+"UNWIND" | 0.2 | top | clean modern font
+"SLEEP MODE" | 0.15 | top | minimal sans-serif
+"REFUEL" | 0.2 | top | clean modern font
+"NAP" | 0.2 | top | brushed display
+"DECOMPRESS" | 0.15 | top | minimal sans-serif
+"SOFT LIFE" | 0.15 | top | brushed display

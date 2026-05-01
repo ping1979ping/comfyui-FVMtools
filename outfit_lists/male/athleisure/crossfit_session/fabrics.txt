@@ -1,0 +1,14 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+dri-blend | 0.15 | sporty | light
+tri-blend | 0.15 | casual | light
+spandex-blend | 0.1 | sporty | light
+canvas-weave | 0.2 | casual | medium
+nylon-webbing | 0.2 | sporty | light
+
+# special materials
+engineered-textile | 0.15 | sporty | light
+rubber-armor | 0.2 | sporty | medium
+grain-leather | 0.5 | luxury | medium
+windshell-fabric | 0.2 | sporty | light

@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+khaki chinos | 0.80 | 0.3-0.5 | cotton
+dark wash jeans | 0.65 | 0.2-0.4 | denim
+flat front trousers | 0.55 | 0.3-0.5 | cotton
+seersucker pants | 0.40 | 0.3-0.5 | cotton
+cuffed shorts | 0.50 | 0.2-0.4 | cotton
+nantucket-red pants | 0.30 | 0.3-0.5 | cotton
+corduroy pants | 0.45 | 0.3-0.5 | cotton
+five-pocket pants | 0.50 | 0.3-0.5 | cotton
+linen-blend trousers | 0.40 | 0.3-0.5 | cotton

@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flowing ritual shirt | 0.50 | 0.1-0.5 | linen,cotton
+draped occult tunic | 0.50 | 0.1-0.5 | cotton,linen
+embroidered sigil shirt | 0.45 | 0.2-0.6 | cotton,linen
+loose mystic blouse | 0.45 | 0.1-0.5 | linen,silk
+high-necked warlock shirt | 0.45 | 0.2-0.6 | cotton,silk
+asymmetric ritual top | 0.40 | 0.1-0.5 | cotton,linen
+hooded long-sleeve shirt | 0.45 | 0.0-0.4 | cotton
+draped shadow tunic | 0.45 | 0.1-0.5 | linen,cotton
+embroidered moon shirt | 0.40 | 0.1-0.5 | linen,cotton
+witchy poet blouse | 0.40 | 0.1-0.5 | cotton,silk

@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+daypack | 0.60 | 0.0-0.2 | synthetic,softshell
+hip pack | 0.40 | 0.0-0.2 | synthetic,softshell
+
+# mid-casual
+trekking backpack | 0.55 | 0.0-0.3 | synthetic,softshell
+hydration pack | 0.50 | 0.0-0.3 | synthetic,softshell
+summit pack | 0.40 | 0.0-0.3 | synthetic,softshell
+roll-top dry bag | 0.35 | 0.0-0.3 | synthetic,gore-tex
+chalk bag | 0.30 | 0.0-0.2 | brushed-cotton,synthetic

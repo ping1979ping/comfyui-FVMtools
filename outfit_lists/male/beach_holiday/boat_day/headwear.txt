@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+captain's cap | 0.55 | 0.2-0.5 | cotton
+boat baseball cap | 0.55 | 0.0-0.3 | cotton,polyester
+panama hat | 0.50 | 0.2-0.5 | cotton
+performance visor | 0.40 | 0.0-0.2 | polyester
+floppy bucket hat | 0.40 | 0.0-0.2 | cotton

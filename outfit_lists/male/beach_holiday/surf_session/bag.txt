@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+board sock | 0.45 | 0.0-0.2 | polyester
+wetsuit duffel | 0.40 | 0.0-0.2 | polyester,nylon
+mesh gear bag | 0.40 | 0.0-0.2 | polyester
+drawstring sack | 0.40 | 0.0-0.2 | nylon
+small backpack | 0.35 | 0.0-0.2 | nylon,polyester
+roll-top dry pack | 0.30 | 0.0-0.2 | nylon
+waxed sling bag | 0.25 | 0.0-0.2 | cotton

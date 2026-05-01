@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+heavy combat boots | 0.65 | 0.0-0.3 | leather,faux leather
+steel-toe industrial boots | 0.55 | 0.0-0.3 | leather
+buckled stomper boots | 0.50 | 0.0-0.3 | faux leather
+tactical mid-boots | 0.50 | 0.0-0.3 | synthetic,faux leather
+worn military boots | 0.45 | 0.0-0.3 | leather
+chunky platform boots | 0.45 | 0.0-0.3 | faux leather
+distressed work boots | 0.45 | 0.0-0.3 | leather

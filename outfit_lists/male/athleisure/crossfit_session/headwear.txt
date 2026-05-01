@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+training sweatband | 0.40 | 0.0-0.1 | spandex-blend,tri-blend
+flat-bill cap | 0.50 | 0.0-0.2 | tri-blend,canvas-weave
+
+# mid-casual
+unstructured trainer cap | 0.45 | 0.0-0.2 | tri-blend,canvas-weave
+do-rag bandana | 0.30 | 0.0-0.1 | tri-blend,spandex-blend

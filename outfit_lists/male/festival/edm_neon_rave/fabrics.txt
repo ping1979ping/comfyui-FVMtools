@@ -1,0 +1,21 @@
+# format: fabric_name | formality | family | weight
+
+# rave basics
+polyester | 0.15 | sporty | light
+nylon | 0.15 | sporty | light
+cotton | 0.15 | natural | light
+mesh | 0.1 | casual | light
+
+# rave specials
+vinyl | 0.2 | tough | medium
+leather | 0.25 | tough | medium
+
+# accessories
+metal | 0.2 | accessory | light
+plastic | 0.05 | sporty | light
+acrylic | 0.1 | sporty | light
+
+# extras
+denim | 0.2 | tough | heavy
+jersey | 0.1 | casual | light
+knit | 0.15 | casual | light

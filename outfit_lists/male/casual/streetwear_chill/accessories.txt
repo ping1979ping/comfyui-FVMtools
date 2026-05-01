@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+digital watch | 0.55 | 0.1-0.3 | rubber,plastic
+shield sunglasses | 0.55 | 0.1-0.3 | plastic
+silver chain | 0.55 | 0.1-0.3 | metal
+bandana wrap | 0.30 | 0.1-0.3 | cotton
+crossbody chain | 0.30 | 0.1-0.3 | metal
+trucker belt | 0.40 | 0.1-0.3 | leather,canvas
+beaded bracelet | 0.30 | 0.1-0.3 | plastic,metal
+puffer earwarmer | 0.20 | 0.1-0.2 | nylon

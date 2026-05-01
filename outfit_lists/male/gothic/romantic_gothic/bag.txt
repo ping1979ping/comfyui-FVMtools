@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+embroidered pouch | 0.30 | 0.1-0.5 | velvet,silk
+ribbon-tied satchel | 0.25 | 0.1-0.5 | velvet,silk
+romantic shoulder bag | 0.25 | 0.1-0.5 | suede,leather
+ornate clutch | 0.20 | 0.3-0.7 | velvet,silk
+small drawstring purse | 0.25 | 0.0-0.4 | velvet,silk
+poet messenger bag | 0.20 | 0.1-0.5 | suede

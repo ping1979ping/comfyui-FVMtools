@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+duffel | 0.45 | 0.0-0.2 | shell,leather
+shoe pouch | 0.30 | 0.0-0.2 | shell
+
+# mid-casual
+commuter backpack | 0.65 | 0.1-0.4 | shell,leather
+laptop briefcase | 0.55 | 0.3-0.6 | leather,shell
+weekender bag | 0.40 | 0.1-0.4 | leather,shell
+slim messenger | 0.50 | 0.2-0.5 | leather,shell
+roll-top tote | 0.35 | 0.1-0.4 | shell,suede
+hybrid gym bag | 0.45 | 0.0-0.3 | shell,leather

@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+training shorts | 0.70 | 0.0-0.1 | dri-blend,tri-blend
+WOD shorts | 0.55 | 0.0-0.1 | dri-blend,tri-blend
+lifting shorts | 0.45 | 0.0-0.1 | dri-blend,tri-blend
+
+# mid-casual
+compression shorts | 0.55 | 0.0-0.2 | spandex-blend,dri-blend
+metcon shorts | 0.55 | 0.0-0.2 | dri-blend,tri-blend
+weight-room joggers | 0.50 | 0.0-0.2 | tri-blend,dri-blend
+flex-waist trainers | 0.45 | 0.0-0.2 | dri-blend,spandex-blend
+seven-inch trainers | 0.45 | 0.0-0.1 | dri-blend,tri-blend
+training tights | 0.40 | 0.0-0.2 | spandex-blend,dri-blend

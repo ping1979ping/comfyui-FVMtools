@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+silver pendant | 0.6 | 0.2-0.4 | leather
+chunky ring | 0.6 | 0.1-0.3 | leather
+artist's wristwatch | 0.5 | 0.2-0.4 | leather
+beaded bracelet | 0.5 | 0.1-0.3 | hemp,cotton
+graphic pin | 0.5 | 0.1-0.3 | cotton
+studded wrap-bracelet | 0.4 | 0.2-0.4 | leather
+woven scarf | 0.4 | 0.1-0.3 | cotton
+ink-stained satchel-strap | 0.3 | 0.1-0.3 | cotton
+choker chain | 0.3 | 0.1-0.3 | leather
+arty thumb-ring | 0.4 | 0.1-0.3 | leather

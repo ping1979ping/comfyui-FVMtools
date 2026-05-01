@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+recovery slides | 0.70 | 0.0-0.1 | foam-rubber,terry-pile
+plush slippers | 0.60 | 0.0-0.1 | shearling,terry-pile
+
+# mid-casual
+moccasins | 0.40 | 0.0-0.2 | suede-finish,shearling
+slip-on house shoes | 0.45 | 0.0-0.1 | terry-pile,shearling
+indoor sneakers | 0.40 | 0.0-0.2 | knit-upper,foam-rubber
+clog-style mules | 0.35 | 0.0-0.1 | foam-rubber,shearling
+plush booties | 0.30 | 0.0-0.1 | shearling,terry-pile
+recovery sneakers | 0.45 | 0.0-0.2 | foam-rubber,knit-upper
+sock-style slippers | 0.30 | 0.0-0.1 | knit-upper,terry-pile

@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+classic blazer | 0.7 | 0.5-0.7 | wool blend,twill
+double-breasted blazer | 0.5 | 0.6-0.7 | wool blend
+dinner jacket | 0.4 | 0.6-0.7 | wool blend
+evening jacket | 0.4 | 0.6-0.7 | wool blend
+overcoat | 0.4 | 0.5-0.7 | wool blend,cashmere
+peacoat | 0.3 | 0.5-0.7 | wool blend
+trench coat | 0.3 | 0.5-0.7 | cotton,twill
+single-button blazer | 0.4 | 0.5-0.7 | wool blend
+soft jacket | 0.3 | 0.4-0.6 | suede
+unstructured sportcoat | 0.4 | 0.5-0.7 | wool blend,cotton

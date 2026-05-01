@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+travel blazer | 0.85 | 0.7-0.9 | wool,polyester
+unstructured blazer | 0.70 | 0.6-0.8 | cotton,linen
+two-piece suit jacket | 0.75 | 0.7-1.0 | wool
+packable sport coat | 0.55 | 0.6-0.8 | polyester
+classic blazer | 0.80 | 0.7-1.0 | wool
+lightweight trench | 0.45 | 0.6-0.8 | cotton,polyester
+travel-friendly overcoat | 0.40 | 0.7-0.9 | wool,polyester
+quilted business jacket | 0.35 | 0.5-0.7 | polyester,nylon
+soft-shoulder blazer | 0.55 | 0.6-0.9 | wool
+lightweight raincoat | 0.40 | 0.6-0.8 | polyester,nylon

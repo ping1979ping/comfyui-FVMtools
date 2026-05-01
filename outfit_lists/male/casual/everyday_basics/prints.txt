@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid block | 0.5 | top,bottom | 0.1-0.6
+small stripes | 0.5 | top,bottom | 0.1-0.5
+basic logo | 0.4 | top | 0.0-0.4
+classic plaid | 0.4 | top,outerwear | 0.1-0.5
+heather pattern | 0.4 | top | 0.1-0.4
+contrast trim | 0.3 | top,outerwear | 0.1-0.4
+pocket detail | 0.3 | top | 0.1-0.4
+chest emblem | 0.3 | top,outerwear,headwear | 0.1-0.5
+muted tone | 0.4 | top,bottom | 0.1-0.5
+crew band | 0.3 | top | 0.1-0.4
+small graphic | 0.3 | top | 0.0-0.4

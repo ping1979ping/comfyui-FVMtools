@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+overnight tote | 0.50 | 0.0-0.2 | quilt-fill,modal-soft
+recovery duffel | 0.55 | 0.0-0.2 | quilt-fill,modal-soft
+
+# mid-casual
+plush travel bag | 0.40 | 0.0-0.2 | quilt-fill,terry-pile
+toiletry pouch | 0.45 | 0.0-0.2 | terry-pile,modal-soft
+laundry tote | 0.35 | 0.0-0.2 | terry-pile,modal-soft
+robe-storage bag | 0.30 | 0.0-0.2 | terry-pile,quilt-fill
+soft weekender | 0.40 | 0.0-0.2 | quilt-fill,modal-soft
+slipper carry pouch | 0.30 | 0.0-0.2 | terry-pile,modal-soft

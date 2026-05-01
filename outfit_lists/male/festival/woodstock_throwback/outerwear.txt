@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+fringed suede vest | 0.55 | 0.0-0.2 | suede
+afghan-style coat | 0.40 | 0.1-0.3 | wool,sheepskin
+embroidered open jacket | 0.40 | 0.1-0.3 | cotton
+patchwork denim jacket | 0.50 | 0.0-0.2 | denim
+openwork knit vest | 0.30 | 0.1-0.3 | crochet
+folk-style poncho | 0.35 | 0.1-0.3 | wool
+bohemian kimono robe | 0.30 | 0.1-0.3 | rayon
+tasseled fringed jacket | 0.35 | 0.1-0.3 | suede

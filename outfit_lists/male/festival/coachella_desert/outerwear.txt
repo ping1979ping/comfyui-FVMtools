@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+fringed vest | 0.45 | 0.0-0.2 | suede
+open chambray overshirt | 0.40 | 0.1-0.3 | cotton
+embroidered gilet | 0.35 | 0.1-0.3 | cotton
+worn jean jacket | 0.45 | 0.1-0.3 | denim
+unstructured linen blazer | 0.25 | 0.2-0.4 | linen
+patchwork kimono | 0.30 | 0.1-0.3 | rayon,cotton
+oversized poncho | 0.25 | 0.1-0.3 | wool
+sleeveless utility shacket | 0.30 | 0.1-0.3 | cotton
+tasseled biker waistcoat | 0.25 | 0.1-0.3 | suede
+loose duster coat | 0.20 | 0.1-0.3 | linen,cotton

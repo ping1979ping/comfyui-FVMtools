@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silver sparkle sneakers | 0.65 | 0.0-0.2 | sequin,rubber
+glitter platform boots | 0.50 | 0.0-0.2 | sequin,leather
+metallic chelsea boots | 0.45 | 0.1-0.3 | leather
+rhinestone-trim hi-tops | 0.45 | 0.0-0.2 | cotton,rubber
+gold disco loafers | 0.35 | 0.1-0.3 | leather
+shimmer slip-ons | 0.45 | 0.0-0.2 | sequin
+shimmer chunky trainers | 0.50 | 0.0-0.2 | polyester,rubber
+foil-finish runners | 0.40 | 0.0-0.2 | polyester,rubber
+glamour platform shoes | 0.35 | 0.1-0.3 | leather
+glitzy oxford shoes | 0.30 | 0.2-0.4 | leather

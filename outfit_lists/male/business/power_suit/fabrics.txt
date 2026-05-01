@@ -1,0 +1,10 @@
+# format: fabric_name | formality | family | weight
+
+wool | 0.9 | natural | medium
+cashmere | 0.95 | natural | medium
+silk | 0.9 | natural | light
+cotton | 0.7 | natural | medium
+leather | 0.8 | animal | medium
+metal | 0.8 | accessories | light
+mohair | 0.85 | natural | light
+tweed | 0.85 | natural | heavy

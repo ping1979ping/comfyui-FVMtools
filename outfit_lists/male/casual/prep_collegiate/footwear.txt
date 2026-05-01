@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+penny loafers | 0.65 | 0.3-0.5 | leather
+saddle shoes | 0.40 | 0.3-0.5 | leather
+boat-style mocs | 0.55 | 0.3-0.5 | leather,canvas
+suede bucks | 0.45 | 0.3-0.5 | leather
+classic low-tops | 0.50 | 0.2-0.4 | canvas
+weejun moccasin | 0.45 | 0.3-0.5 | leather
+chukka boots | 0.40 | 0.3-0.5 | leather
+court tennis shoes | 0.55 | 0.2-0.4 | leather
+oxfords | 0.30 | 0.3-0.5 | leather

@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+bucket hat | 0.50 | 0.0-0.3 | woven-textile,techweave
+short-brim cap | 0.45 | 0.0-0.3 | woven-textile,techweave
+
+# mid-casual
+slouchy beanie | 0.45 | 0.0-0.3 | wool-mix,french-loop
+flat-brim snap | 0.40 | 0.0-0.3 | woven-textile,wool-mix

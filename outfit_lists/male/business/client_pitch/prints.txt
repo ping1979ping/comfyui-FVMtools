@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+sharp pinstripe | 0.55 | bottom,outerwear | 0.7-1.0
+power red accent | 0.45 | top,outerwear | 0.7-1.0
+solid jet black | 0.55 | outerwear,bottom | 0.7-1.0
+solid charcoal | 0.55 | outerwear,bottom | 0.7-1.0
+solid navy | 0.60 | outerwear,bottom | 0.7-1.0
+fine windowpane | 0.40 | outerwear | 0.7-0.9
+subtle herringbone weave | 0.40 | outerwear,bottom | 0.7-1.0
+diagonal-stripe pattern | 0.35 | top | 0.7-0.9
+narrow chalk-stripe | 0.35 | bottom,outerwear | 0.7-1.0
+power-tie diagonal | 0.30 | top | 0.7-1.0

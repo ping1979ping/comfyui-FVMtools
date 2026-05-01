@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flow shorts | 0.55 | 0.0-0.1 | bamboo-blend,elastane-blend
+loose studio shorts | 0.45 | 0.0-0.1 | bamboo-blend,modal-knit
+
+# mid-casual
+yoga joggers | 0.60 | 0.0-0.2 | bamboo-blend,modal-knit
+movement leggings | 0.50 | 0.0-0.2 | elastane-blend,modal-knit
+drawstring pants | 0.55 | 0.0-0.2 | organic-loop,bamboo-blend
+wide-leg pants | 0.45 | 0.0-0.2 | modal-knit,viscose-blend
+relaxed studio sweats | 0.50 | 0.0-0.2 | organic-loop,modal-knit
+half-tights | 0.35 | 0.0-0.2 | elastane-blend,modal-knit
+seamless pants | 0.40 | 0.0-0.2 | elastane-blend,modal-knit

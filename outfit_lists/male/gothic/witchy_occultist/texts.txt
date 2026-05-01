@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"COVEN" | 0.2 | top | runic font
+"HEX" | 0.25 | top | runic font
+"OCCULT" | 0.25 | top | mystical script
+"WITCHCRAFT" | 0.2 | top,outerwear | gothic calligraphy
+"SHADOW" | 0.2 | top | runic font
+"HEXED" | 0.2 | top | mystical script
+"CRYSTALS" | 0.15 | top | runic font
+"MOON CHILD" | 0.15 | top | mystical script
+"INVOKE" | 0.15 | top,outerwear | runic font
+"SPELLBOUND" | 0.15 | top | gothic calligraphy
+"BLACK MAGIC" | 0.15 | top,outerwear | runic font
+"RITUAL" | 0.2 | top | runic font

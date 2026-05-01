@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+singlet vest | 0.50 | 0.0-0.1 | dri-knit,microfiber
+short-sleeve running shirt | 0.65 | 0.0-0.2 | dri-knit,microfiber
+sleeveless training top | 0.40 | 0.0-0.1 | dri-knit,microfiber
+
+# mid-casual
+long-sleeve base layer | 0.55 | 0.1-0.3 | dri-knit,microfiber
+running half-zip | 0.50 | 0.1-0.3 | dri-knit,microfiber
+compression top | 0.45 | 0.0-0.2 | spandex,microfiber
+breathable raglan | 0.50 | 0.0-0.2 | dri-knit,microfiber
+seamless tee | 0.40 | 0.0-0.2 | spandex,microfiber
+trail jersey | 0.35 | 0.0-0.2 | dri-knit,microfiber
+hooded running top | 0.40 | 0.1-0.3 | dri-knit,microfiber

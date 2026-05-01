@@ -1,0 +1,21 @@
+# format: fabric_name | formality | family | weight
+
+# glitter basics
+cotton | 0.15 | natural | light
+satin | 0.3 | luxury | light
+polyester | 0.15 | sporty | light
+
+# glitter specials
+sequin | 0.4 | luxury | light
+lurex | 0.4 | luxury | light
+foil | 0.3 | luxury | light
+mesh | 0.1 | casual | light
+
+# structured
+leather | 0.25 | tough | medium
+denim | 0.2 | tough | heavy
+rubber | 0.05 | sporty | medium
+
+# accessories
+metal | 0.2 | accessory | light
+plastic | 0.05 | sporty | light

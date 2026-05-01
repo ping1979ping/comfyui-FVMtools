@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized sunglasses | 0.65 | 0.0-0.4 | plastic
+LED bracelet | 0.40 | 0.0-0.2 | plastic
+chunky chain necklace | 0.50 | 0.1-0.4 | metal
+glitter face gem | 0.40 | 0.0-0.3 | plastic
+rave bandana | 0.40 | 0.0-0.3 | cotton
+fingerless gloves | 0.30 | 0.1-0.4 | cotton
+silver bracelet | 0.40 | 0.1-0.4 | metal
+neon wristband | 0.45 | 0.0-0.2 | rubber
+hoop earring | 0.35 | 0.1-0.4 | metal
+glow stick necklace | 0.35 | 0.0-0.2 | plastic
+puka choker | 0.30 | 0.0-0.2 | shell

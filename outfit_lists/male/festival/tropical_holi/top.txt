@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+color-splattered white tee | 0.85 | 0.0-0.2 | cotton
+plain white kurta | 0.65 | 0.1-0.3 | cotton
+powder-stained tank | 0.65 | 0.0-0.2 | cotton
+loose tropical shirt | 0.55 | 0.0-0.2 | rayon,cotton
+rainbow-splash tee | 0.60 | 0.0-0.2 | cotton
+embroidered tunic | 0.45 | 0.1-0.3 | cotton
+dye-soaked muscle shirt | 0.50 | 0.0-0.2 | cotton
+white airy camp shirt | 0.45 | 0.1-0.3 | linen
+short-sleeve cabana shirt | 0.50 | 0.0-0.2 | rayon
+holi-stained vest | 0.40 | 0.0-0.2 | cotton
+loose ethnic shirt | 0.45 | 0.1-0.3 | cotton

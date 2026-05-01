@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aviator sunglasses | 0.75 | 0.0-0.3 | metal,plastic
+turquoise pendant | 0.50 | 0.1-0.3 | metal
+beaded bracelet stack | 0.45 | 0.0-0.2 | wood,bone
+woven friendship band | 0.40 | 0.0-0.1 | cotton
+silver bolo tie | 0.30 | 0.2-0.4 | metal,leather
+boho ring set | 0.40 | 0.1-0.3 | metal
+plumed earring | 0.30 | 0.1-0.3 | feather
+studded wrist cuff | 0.45 | 0.0-0.2 | leather
+chain necklace | 0.40 | 0.0-0.2 | metal
+coyote tooth pendant | 0.25 | 0.1-0.3 | bone

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ruffled poet shirt | 0.50 | 0.1-0.5 | cotton,silk
+high-collar shirt | 0.55 | 0.2-0.6 | cotton,silk
+pleated dress shirt | 0.50 | 0.3-0.7 | cotton,silk
+mourning jabot blouse | 0.45 | 0.4-0.8 | silk,satin
+embroidered cravat shirt | 0.45 | 0.3-0.7 | silk,satin
+ascot collar shirt | 0.40 | 0.3-0.7 | silk
+funereal black waistcoat | 0.50 | 0.4-0.8 | silk,wool
+mourning vest | 0.45 | 0.3-0.7 | silk,wool
+ruffled cuff shirt | 0.45 | 0.2-0.6 | cotton,silk
+button-up collar shirt | 0.45 | 0.2-0.5 | cotton
+gentleman shirt | 0.40 | 0.3-0.6 | silk,cotton

@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+plush hoodie | 0.65 | 0.0-0.2 | sherpa-loop,heavyweight-knit
+lounge tee | 0.55 | 0.0-0.2 | pima-blend,modal-soft
+crew sweatshirt | 0.55 | 0.0-0.2 | sherpa-loop,heavyweight-knit
+
+# mid-casual
+oversized pullover | 0.55 | 0.0-0.2 | heavyweight-knit,sherpa-loop
+waffle henley | 0.50 | 0.0-0.2 | waffle-knit,pima-blend
+soft long-sleeve | 0.50 | 0.0-0.2 | pima-blend,modal-soft
+heavy thermal | 0.40 | 0.0-0.2 | waffle-knit,heavyweight-knit
+cabin pullover | 0.40 | 0.0-0.2 | heavyweight-knit,sherpa-loop
+robe wrap top | 0.30 | 0.0-0.2 | terry-pile,modal-soft
+sleep tee | 0.45 | 0.0-0.2 | pima-blend,modal-soft

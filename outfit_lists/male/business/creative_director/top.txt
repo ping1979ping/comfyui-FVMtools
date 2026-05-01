@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+black turtleneck | 0.85 | 0.6-0.9 | wool,cashmere
+designer crew tee | 0.70 | 0.4-0.7 | cotton
+fine-knit pullover | 0.65 | 0.5-0.8 | wool,cashmere
+artistic graphic shirt | 0.50 | 0.4-0.7 | cotton
+relaxed dress shirt | 0.60 | 0.6-0.8 | cotton,linen
+breathable button-down | 0.65 | 0.5-0.8 | linen
+roll-neck sweater | 0.60 | 0.6-0.8 | wool,cashmere
+boxy-fit shirt | 0.55 | 0.5-0.7 | cotton,linen
+artist smock | 0.40 | 0.3-0.6 | cotton,linen
+high-end concert tee | 0.45 | 0.3-0.6 | cotton
+draped blouse | 0.50 | 0.6-0.9 | silk
+cropped knit top | 0.40 | 0.4-0.7 | wool

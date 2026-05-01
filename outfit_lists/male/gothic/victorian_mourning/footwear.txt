@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+button-up boots | 0.55 | 0.3-0.7 | leather
+mourning oxfords | 0.55 | 0.4-0.8 | leather
+spat-covered shoes | 0.40 | 0.4-0.8 | leather,wool
+Victorian dress boots | 0.50 | 0.3-0.7 | leather
+laced ankle boots | 0.55 | 0.2-0.6 | leather
+brogue boots | 0.45 | 0.3-0.7 | leather
+silver-buckled shoes | 0.40 | 0.4-0.8 | leather

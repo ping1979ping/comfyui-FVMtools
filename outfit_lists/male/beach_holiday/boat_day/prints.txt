@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+nautical stripe pattern | 0.7 | top | 0.1-0.5
+anchor motif | 0.5 | top | 0.1-0.4
+sailboat graphic | 0.4 | top | 0.1-0.4
+yacht club crest | 0.4 | top | 0.2-0.5
+flag signal pattern | 0.35 | top | 0.1-0.4
+lighthouse design | 0.3 | top | 0.1-0.4
+compass rose motif | 0.3 | top | 0.1-0.4
+rope knot pattern | 0.3 | top,bottom | 0.1-0.4
+helm wheel graphic | 0.25 | top | 0.1-0.4
+horizon block stripe | 0.3 | top | 0.1-0.4

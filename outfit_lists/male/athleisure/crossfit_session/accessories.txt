@@ -1,0 +1,17 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+lifting belt | 0.55 | 0.0-0.2 | grain-leather,nylon-webbing
+wrist wraps | 0.55 | 0.0-0.2 | spandex-blend,nylon-webbing
+hand grips | 0.45 | 0.0-0.2 | grain-leather,rubber-armor
+
+# mid-casual
+knee sleeves | 0.45 | 0.0-0.2 | spandex-blend,rubber-armor
+elbow sleeves | 0.35 | 0.0-0.2 | spandex-blend,rubber-armor
+chalk pouch | 0.40 | 0.0-0.2 | canvas-weave,nylon-webbing
+training gloves | 0.40 | 0.0-0.2 | grain-leather,spandex-blend
+weight-lifting straps | 0.40 | 0.0-0.2 | nylon-webbing,grain-leather
+shaker bottle | 0.50 | 0.0-0.2 | rubber-armor,nylon-webbing
+heart-rate band | 0.40 | 0.0-0.2 | spandex-blend,rubber-armor
+training watch | 0.55 | 0.0-0.2 | rubber-armor,nylon-webbing

@@ -1,0 +1,10 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.3 | natural | medium
+linen | 0.3 | natural | light
+suede | 0.3 | animal | medium
+leather | 0.3 | animal | medium
+hemp | 0.2 | natural | medium
+canvas | 0.2 | natural | heavy
+gauze | 0.2 | natural | light
+denim | 0.3 | natural | heavy
+crochet | 0.2 | natural | medium

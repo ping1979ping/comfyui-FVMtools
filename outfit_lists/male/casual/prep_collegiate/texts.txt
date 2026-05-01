@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VARSITY" | 0.25 | top | vintage print
+"ATHLETICS" | 0.2 | top | bold sans-serif
+"CAMPUS" | 0.2 | top | retro block
+"CLASS OF" | 0.2 | top | clean modern
+"PROPERTY OF" | 0.2 | top | retro block
+"COLLEGIATE" | 0.15 | top | vintage print
+"CREW" | 0.2 | top,headwear | bold sans-serif
+"BOATHOUSE" | 0.15 | top | clean modern
+"REGATTA" | 0.15 | top | retro font
+"OXFORD" | 0.15 | top | retro block
+"YACHT" | 0.15 | top,headwear | clean modern
+"PREP" | 0.2 | top | retro block

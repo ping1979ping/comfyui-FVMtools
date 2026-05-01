@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ankle-strap sandals | 0.7 | 0.1-0.3 | leather
+festival boots | 0.6 | 0.2-0.4 | suede,leather
+slip-on sneakers | 0.5 | 0.1-0.3 | canvas,cotton
+braided sandals | 0.5 | 0.1-0.3 | leather
+high-top sneakers | 0.4 | 0.1-0.3 | canvas
+beaded sandals | 0.4 | 0.1-0.3 | leather
+fringed boots | 0.4 | 0.2-0.4 | suede
+woven slip-ons | 0.3 | 0.2-0.4 | hemp,canvas

@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+drawstring shorts | 0.65 | 0.1-0.3 | rayon,viscose
+chino shorts | 0.65 | 0.1-0.4 | cotton
+tailored shorts | 0.60 | 0.2-0.5 | cotton,viscose
+elastic-waist beach pants | 0.50 | 0.1-0.3 | viscose,modal
+short swim trunks | 0.55 | 0.0-0.2 | nylon,polyester
+pleated dressy shorts | 0.50 | 0.2-0.5 | cotton,viscose
+cropped pants | 0.45 | 0.2-0.5 | cotton,viscose
+slim cargo shorts | 0.50 | 0.1-0.4 | cotton

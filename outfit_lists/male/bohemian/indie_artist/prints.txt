@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+abstract brushstroke | 0.5 | top | 0.1-0.4
+indie-band graphic | 0.5 | top | 0.0-0.3
+sketchy line-art | 0.4 | top | 0.1-0.4
+paint splatter | 0.4 | top | 0.0-0.3
+typographic poster | 0.4 | top | 0.1-0.4
+ink-blot motif | 0.3 | top | 0.0-0.3
+gallery print | 0.3 | top,outerwear | 0.1-0.4
+faded photo-graphic | 0.3 | top | 0.0-0.3
+collage pattern | 0.3 | top | 0.1-0.4
+distressed graphic | 0.3 | top | 0.0-0.3

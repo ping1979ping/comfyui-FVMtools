@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+breezy cardigan | 0.5 | 0.2-0.4 | cotton,crochet
+salt-washed shirt-jacket | 0.5 | 0.2-0.4 | linen,cotton
+beach kimono | 0.4 | 0.1-0.3 | gauze,cotton
+sun-faded blazer | 0.3 | 0.3-0.4 | linen
+open knit-vest | 0.4 | 0.2-0.4 | crochet
+sailor-stripe wrap | 0.3 | 0.2-0.4 | cotton
+weathered windbreaker | 0.3 | 0.1-0.3 | cotton
+breezy poncho | 0.3 | 0.1-0.3 | cotton,hemp

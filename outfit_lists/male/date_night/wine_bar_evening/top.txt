@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+button-down shirt | 0.7 | 0.4-0.7 | cotton,poplin
+crew neck pullover | 0.6 | 0.4-0.7 | merino wool,cashmere
+turtleneck | 0.6 | 0.5-0.7 | cashmere,merino wool
+roll-neck pullover | 0.5 | 0.5-0.7 | cashmere,merino wool
+fitted polo | 0.4 | 0.4-0.6 | cotton,merino wool
+oxford shirt | 0.5 | 0.4-0.6 | cotton,poplin
+slim-fit shirt | 0.6 | 0.5-0.7 | cotton,poplin
+v-neck pullover | 0.4 | 0.4-0.6 | merino wool,cashmere
+heavyweight overshirt | 0.4 | 0.4-0.6 | flannel,cotton
+ribbed knit pullover | 0.4 | 0.4-0.6 | merino wool,cashmere
+chambray button-down | 0.4 | 0.4-0.6 | cotton

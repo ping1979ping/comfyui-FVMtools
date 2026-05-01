@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+embellished bomber | 0.55 | 0.1-0.3 | sequin
+metallic gold jacket | 0.45 | 0.1-0.3 | lurex
+glitter cape | 0.30 | 0.0-0.2 | cotton,sequin
+shimmer trench | 0.30 | 0.1-0.3 | satin
+rhinestone-studded blazer | 0.35 | 0.2-0.4 | satin
+foil bomber jacket | 0.40 | 0.1-0.3 | foil,polyester
+sparkle hoodie | 0.40 | 0.0-0.2 | cotton,sequin
+glitter mesh shrug | 0.30 | 0.0-0.2 | mesh

@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oxford shoes | 0.95 | 0.8-1.0 | leather
+cap-toe oxfords | 0.85 | 0.8-1.0 | leather
+wholecut oxfords | 0.65 | 0.8-1.0 | leather
+plain-toe bluchers | 0.55 | 0.7-0.9 | leather
+monk-strap shoes | 0.60 | 0.7-1.0 | leather
+double-monk shoes | 0.50 | 0.7-1.0 | leather
+patent dress shoes | 0.45 | 0.8-1.0 | leather
+brogue oxfords | 0.55 | 0.7-1.0 | leather
+semi-brogue shoes | 0.50 | 0.7-1.0 | leather
+ankle dress boots | 0.40 | 0.7-0.9 | leather

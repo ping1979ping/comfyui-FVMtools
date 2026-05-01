@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+fine pinstripe pattern | 0.65 | bottom,outerwear | 0.8-1.0
+chalk-stripe pattern | 0.50 | bottom,outerwear | 0.8-1.0
+solid jet black | 0.65 | outerwear,bottom | 0.9-1.0
+solid charcoal | 0.65 | outerwear,bottom | 0.8-1.0
+solid midnight navy | 0.65 | outerwear,bottom | 0.8-1.0
+glen plaid pattern | 0.40 | outerwear,bottom | 0.8-1.0
+prince of wales check | 0.40 | outerwear,bottom | 0.8-1.0
+nailhead pattern | 0.40 | outerwear,bottom | 0.8-1.0
+sharkskin sheen | 0.45 | outerwear,bottom | 0.8-1.0
+birdseye pattern | 0.40 | outerwear,bottom | 0.8-1.0
+herringbone weave | 0.45 | outerwear,bottom | 0.8-1.0

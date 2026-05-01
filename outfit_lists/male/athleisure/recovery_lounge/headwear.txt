@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sleep cap | 0.40 | 0.0-0.2 | modal-soft,pima-blend
+plush beanie | 0.45 | 0.0-0.2 | sherpa-loop,heavyweight-knit
+
+# mid-casual
+warm hood | 0.30 | 0.0-0.2 | sherpa-loop,heavyweight-knit
+soft headband | 0.35 | 0.0-0.2 | terry-pile,modal-soft

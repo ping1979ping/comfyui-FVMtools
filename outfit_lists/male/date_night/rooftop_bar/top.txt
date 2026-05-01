@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+slim-fit shirt | 0.7 | 0.5-0.7 | cotton,poplin
+band-collar shirt | 0.5 | 0.4-0.6 | cotton,poplin
+short-sleeve resort shirt | 0.5 | 0.4-0.6 | cotton,linen
+fitted polo | 0.6 | 0.4-0.6 | cotton,merino wool
+crew neck pullover | 0.4 | 0.5-0.7 | merino wool,cashmere
+fine-knit top | 0.4 | 0.5-0.7 | merino wool,cashmere
+breezy camp shirt | 0.4 | 0.4-0.5 | cotton,linen
+button-down shirt | 0.7 | 0.4-0.6 | cotton,poplin
+mock neck tee | 0.4 | 0.4-0.6 | cotton,merino wool
+guayabera shirt | 0.3 | 0.4-0.5 | cotton,linen
+relaxed overshirt | 0.4 | 0.4-0.5 | cotton

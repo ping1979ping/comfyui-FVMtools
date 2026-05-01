@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+warm-up zip jacket | 0.55 | 0.0-0.2 | dri-blend,tri-blend
+training pullover | 0.50 | 0.0-0.2 | tri-blend,dri-blend
+
+# mid-casual
+hooded warm-up | 0.55 | 0.0-0.2 | tri-blend,dri-blend
+quarter-zip warm-up | 0.50 | 0.0-0.2 | dri-blend,tri-blend
+sleeveless training hoodie | 0.40 | 0.0-0.2 | tri-blend,dri-blend
+gym shell | 0.40 | 0.0-0.2 | windshell-fabric,dri-blend
+strength wrap top | 0.35 | 0.0-0.2 | dri-blend,spandex-blend
+zip vest | 0.40 | 0.0-0.2 | windshell-fabric,tri-blend
+training bomber | 0.30 | 0.0-0.2 | windshell-fabric,tri-blend

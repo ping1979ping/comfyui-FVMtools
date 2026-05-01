@@ -1,0 +1,22 @@
+# format: fabric_name | formality | family | weight
+
+# desert basics
+cotton | 0.15 | natural | light
+denim | 0.2 | tough | heavy
+linen | 0.2 | natural | light
+
+# desert specials
+suede | 0.25 | tough | medium
+crochet | 0.15 | casual | light
+rayon | 0.1 | casual | light
+
+# structured
+leather | 0.25 | tough | medium
+jersey | 0.1 | casual | light
+
+# accessories
+metal | 0.2 | accessory | light
+wood | 0.1 | natural | light
+bone | 0.1 | natural | light
+feather | 0.1 | natural | light
+jute | 0.1 | natural | light

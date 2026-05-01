@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+french-cuff dress shirt | 0.95 | 0.8-1.0 | cotton,silk
+spread-collar dress shirt | 0.90 | 0.8-1.0 | cotton
+tab-collar shirt | 0.55 | 0.8-1.0 | cotton
+cutaway-collar shirt | 0.65 | 0.8-1.0 | cotton
+poplin dress shirt | 0.80 | 0.7-1.0 | cotton
+twill dress shirt | 0.75 | 0.7-1.0 | cotton
+oxford button-up | 0.60 | 0.7-0.9 | cotton
+fine-stripe dress shirt | 0.70 | 0.8-1.0 | cotton
+broadcloth shirt | 0.55 | 0.7-1.0 | cotton
+pinpoint dress shirt | 0.50 | 0.8-1.0 | cotton
+herringbone dress shirt | 0.45 | 0.8-1.0 | cotton

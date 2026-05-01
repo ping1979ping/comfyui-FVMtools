@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+patched backpack | 0.30 | 0.0-0.3 | cotton,denim
+band merch tote | 0.25 | 0.0-0.3 | cotton
+crossbody pouch | 0.25 | 0.0-0.3 | cotton,faux leather
+chained sling bag | 0.25 | 0.0-0.3 | faux leather
+studded shoulder bag | 0.20 | 0.0-0.3 | faux leather
+worn duffel | 0.20 | 0.0-0.3 | cotton,canvas
+small messenger | 0.20 | 0.0-0.3 | canvas

@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flat cap | 0.55 | 0.1-0.3 | wool
+woven boater hat | 0.45 | 0.1-0.3 | straw
+folk knit beanie | 0.45 | 0.0-0.2 | wool
+braided headband | 0.30 | 0.0-0.2 | cotton

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim messenger | 0.40 | 0.2-0.5 | leather
+canvas tote | 0.45 | 0.1-0.4 | cotton
+woven market basket | 0.35 | 0.0-0.3 | straw
+crossbody pouch | 0.30 | 0.0-0.3 | leather
+small backpack | 0.30 | 0.0-0.2 | polyester,nylon
+weekend duffel | 0.30 | 0.1-0.4 | leather
+beach pack | 0.25 | 0.0-0.2 | polyester,nylon
+folding shopper | 0.25 | 0.0-0.2 | nylon

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+woven tote | 0.45 | 0.1-0.4 | straw,cotton
+canvas duffel | 0.35 | 0.0-0.3 | cotton,polyester
+crossbody pouch | 0.30 | 0.0-0.3 | leather,polyester
+small backpack | 0.30 | 0.0-0.2 | polyester,nylon
+drawstring sack | 0.30 | 0.0-0.1 | polyester,nylon
+beach pack | 0.25 | 0.0-0.2 | polyester,nylon
+folding cooler tote | 0.25 | 0.0-0.2 | polyester,nylon
+rattan satchel | 0.20 | 0.1-0.3 | straw

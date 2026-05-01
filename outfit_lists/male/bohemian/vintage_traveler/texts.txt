@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VINTAGE" | 0.2 | top | weathered text
+"HERITAGE" | 0.2 | top | rustic lettering
+"CARAVAN" | 0.15 | top | hand-carved font
+"GRAND TOUR" | 0.15 | top | compass rose script
+"WAYFARER" | 0.2 | top | rustic lettering
+"OLD WORLD" | 0.15 | top | weathered serif
+"NOSTALGIA" | 0.15 | top | retro script
+"YESTERYEAR" | 0.15 | top | weathered text

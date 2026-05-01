@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WANDERER" | 0.2 | top | weathered text
+"DESERT" | 0.2 | top | hand-carved font
+"DRIFTER" | 0.2 | top | rustic lettering
+"MIRAGE" | 0.15 | top | weathered text
+"SAGEBRUSH" | 0.15 | top | hand-carved font
+"DUSTY TRAILS" | 0.15 | top | rustic lettering
+"HORIZON" | 0.2 | top | compass rose script
+"NOMAD" | 0.2 | top | hand-carved font

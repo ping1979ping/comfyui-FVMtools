@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+chelsea boots | 0.7 | 0.5-0.7 | leather,suede
+loafers | 0.7 | 0.5-0.7 | leather,suede
+horsebit slippers | 0.4 | 0.5-0.7 | leather,suede
+dress shoes | 0.5 | 0.6-0.7 | leather
+minimal sneakers | 0.4 | 0.4-0.5 | leather
+penny moccasins | 0.4 | 0.5-0.7 | leather
+monk strap shoes | 0.4 | 0.5-0.7 | leather
+brogues | 0.4 | 0.5-0.7 | leather
+patent dress shoes | 0.3 | 0.6-0.7 | leather

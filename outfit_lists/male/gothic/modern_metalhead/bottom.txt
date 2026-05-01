@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ripped black jeans | 0.65 | 0.0-0.3 | denim
+slim biker pants | 0.55 | 0.0-0.3 | denim,faux leather
+faded skinny jeans | 0.55 | 0.0-0.3 | denim
+distressed cargo pants | 0.45 | 0.0-0.3 | cotton
+chained trousers | 0.45 | 0.0-0.3 | cotton,denim
+black combat trousers | 0.45 | 0.0-0.3 | cotton
+worn motorcycle pants | 0.40 | 0.0-0.3 | faux leather

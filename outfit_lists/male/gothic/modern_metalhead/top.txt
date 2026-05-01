@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+band tee | 0.65 | 0.0-0.3 | cotton
+sleeveless metal shirt | 0.55 | 0.0-0.3 | cotton
+graphic tour shirt | 0.55 | 0.0-0.3 | cotton
+distressed black tee | 0.50 | 0.0-0.3 | cotton
+hooded sweatshirt | 0.45 | 0.0-0.3 | cotton
+ripped tank | 0.45 | 0.0-0.3 | cotton
+long-sleeve metal shirt | 0.45 | 0.0-0.3 | cotton
+flannel overshirt | 0.40 | 0.0-0.3 | cotton,wool
+biker tank | 0.40 | 0.0-0.3 | cotton
+cut-off vest | 0.45 | 0.0-0.3 | denim,faux leather
+patch-covered shirt | 0.40 | 0.0-0.3 | cotton

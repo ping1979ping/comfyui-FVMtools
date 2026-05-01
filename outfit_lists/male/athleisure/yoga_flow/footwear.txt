@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+toe-spacer slides | 0.40 | 0.0-0.1 | foam-cushion,plant-leather
+yoga-studio slip-ons | 0.50 | 0.0-0.2 | bamboo-blend,plant-leather
+
+# mid-casual
+minimalist sneakers | 0.55 | 0.0-0.2 | bamboo-blend,plant-leather
+recovery sandals | 0.45 | 0.0-0.1 | foam-cushion,plant-leather
+soft-sole flats | 0.40 | 0.0-0.2 | bamboo-blend,plant-leather
+earth-toned sandals | 0.30 | 0.0-0.2 | cork,plant-leather
+flexible trainers | 0.45 | 0.0-0.2 | bamboo-blend,plant-leather
+hemp slip-ons | 0.35 | 0.0-0.2 | hemp-weave,plant-leather
+woven mules | 0.30 | 0.0-0.2 | hemp-weave,plant-leather

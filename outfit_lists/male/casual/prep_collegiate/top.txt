@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oxford button-down | 0.80 | 0.3-0.5 | cotton
+striped rugby top | 0.60 | 0.2-0.4 | cotton,jersey
+classic polo | 0.75 | 0.3-0.5 | cotton,jersey
+v-neck pullover sweater | 0.55 | 0.3-0.5 | knit,cotton
+cable-knit jumper | 0.50 | 0.3-0.5 | knit,cotton
+pique polo top | 0.55 | 0.3-0.5 | cotton,jersey
+varsity tee | 0.55 | 0.2-0.4 | cotton,jersey
+crew jumper | 0.50 | 0.3-0.5 | knit,cotton
+turtleneck top | 0.40 | 0.3-0.5 | knit,cotton
+gingham shirt | 0.55 | 0.3-0.5 | cotton
+chambray button-up | 0.50 | 0.3-0.5 | cotton

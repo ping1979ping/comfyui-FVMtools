@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+woven crossbody | 0.60 | 0.0-0.2 | jute,cotton
+small belt pouch | 0.55 | 0.0-0.2 | leather
+hippie shoulder satchel | 0.45 | 0.0-0.2 | cotton,suede
+fringed sling pack | 0.45 | 0.0-0.2 | suede
+sand canvas backpack | 0.40 | 0.0-0.2 | cotton
+embroidered tote | 0.35 | 0.1-0.3 | cotton
+dust mini-backpack | 0.40 | 0.0-0.2 | nylon
+bandolier strap bag | 0.35 | 0.0-0.2 | leather

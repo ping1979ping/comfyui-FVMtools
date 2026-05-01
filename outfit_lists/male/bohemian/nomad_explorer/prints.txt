@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+faded map-graphic | 0.4 | top | 0.1-0.4
+weathered patchwork | 0.4 | top,outerwear | 0.1-0.4
+tribal motif | 0.4 | top | 0.1-0.4
+compass-rose graphic | 0.4 | top | 0.1-0.4
+sun-faded stripes | 0.3 | top | 0.1-0.4
+expedition logo | 0.3 | top,outerwear | 0.1-0.4
+arrow motif | 0.3 | top | 0.1-0.4
+journey badge | 0.3 | top,outerwear | 0.1-0.4
+weathered camo | 0.3 | top,outerwear | 0.1-0.4
+trail-mark embroidery | 0.3 | top | 0.1-0.4

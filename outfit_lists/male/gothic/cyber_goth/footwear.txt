@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+chunky platform sneakers | 0.55 | 0.0-0.3 | synthetic
+neon stomper boots | 0.50 | 0.0-0.4 | faux leather,synthetic
+cyber platform shoes | 0.45 | 0.0-0.4 | faux leather,synthetic
+LED sole boots | 0.40 | 0.0-0.3 | synthetic
+strapped tech boots | 0.45 | 0.0-0.4 | faux leather,synthetic
+buckled platforms | 0.45 | 0.1-0.4 | faux leather
+reflective trainers | 0.35 | 0.0-0.3 | synthetic
+techno stomper boots | 0.40 | 0.0-0.3 | faux leather,synthetic

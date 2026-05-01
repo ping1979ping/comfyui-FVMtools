@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"COMMUTE" | 0.15 | top | clean modern font
+"HUSTLE" | 0.2 | top | bold block letters
+"OFFICE HOURS" | 0.1 | top | minimal sans-serif
+"WORK READY" | 0.1 | top | clean modern font
+"DESK TO GYM" | 0.1 | top | minimal sans-serif
+"DRIVEN" | 0.2 | top | bold block letters
+"FOCUSED" | 0.2 | top | clean modern font
+"PERFORM" | 0.2 | top | minimal sans-serif
+"MERIDIAN" | 0.15 | top | serif modern
+"AGENDA" | 0.15 | top | clean modern font

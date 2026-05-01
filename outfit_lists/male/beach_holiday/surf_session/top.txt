@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rashguard | 0.85 | 0.0-0.2 | nylon,polyester
+short-sleeve surf top | 0.75 | 0.0-0.2 | nylon,polyester
+wetsuit jacket | 0.55 | 0.0-0.2 | neoprene
+boardsport tee | 0.65 | 0.0-0.2 | cotton,polyester
+loose performance shirt | 0.60 | 0.0-0.2 | polyester
+bare chest | 0.55 | 0.0-0.1 | cotton
+sleeveless surf vest | 0.50 | 0.0-0.2 | nylon,polyester
+zip-up surf top | 0.55 | 0.0-0.2 | nylon,polyester
+faded surf brand tee | 0.55 | 0.0-0.2 | cotton
+lycra long-sleeve | 0.65 | 0.0-0.2 | nylon,polyester

@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"COASTAL" | 0.25 | top | vintage print
+"SAIL" | 0.2 | top | clean modern
+"OCEAN" | 0.2 | top | handwritten script
+"BEACH" | 0.25 | top | retro block
+"SALT LIFE" | 0.2 | top,headwear | playful font
+"SURF" | 0.25 | top | retro block
+"WAVES" | 0.2 | top | handwritten script
+"MARINA" | 0.15 | top | clean modern
+"HARBOR" | 0.15 | top | retro font
+"REEF" | 0.15 | top | bold sans-serif
+"TIDE" | 0.15 | top | handwritten script
+"SHORELINE" | 0.15 | top | clean modern

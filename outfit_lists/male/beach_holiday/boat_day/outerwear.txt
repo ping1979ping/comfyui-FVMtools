@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+navy blazer | 0.40 | 0.3-0.6 | cotton,viscose
+sailing jacket | 0.45 | 0.0-0.3 | nylon,polyester
+quarter-zip pullover | 0.40 | 0.1-0.4 | cotton,modal
+draped sweater over shoulders | 0.30 | 0.2-0.5 | cotton,modal
+hooded windbreaker | 0.30 | 0.0-0.2 | nylon,polyester
+breton cardigan | 0.25 | 0.2-0.4 | cotton

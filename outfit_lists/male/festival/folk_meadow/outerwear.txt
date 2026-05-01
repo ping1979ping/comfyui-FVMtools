@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+embroidered folk waistcoat | 0.55 | 0.1-0.3 | wool
+classic tweed jacket | 0.45 | 0.2-0.4 | tweed
+patched chore coat | 0.50 | 0.1-0.3 | cotton
+herringbone gilet | 0.40 | 0.1-0.3 | wool
+suede waistcoat | 0.40 | 0.1-0.3 | suede
+loose cardigan | 0.45 | 0.1-0.3 | wool
+worn trench coat | 0.30 | 0.2-0.4 | cotton
+folk-pattern blanket cape | 0.30 | 0.1-0.3 | wool

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+casual button-up | 0.85 | 0.4-0.7 | cotton
+relaxed oxford shirt | 0.75 | 0.4-0.7 | cotton
+quarter-zip pullover | 0.65 | 0.4-0.7 | wool,cotton
+fine-knit polo | 0.70 | 0.4-0.7 | cotton,jersey
+roll-sleeve dress shirt | 0.55 | 0.5-0.7 | cotton,linen
+crewneck sweater | 0.60 | 0.5-0.8 | wool,cashmere
+long-sleeve henley | 0.50 | 0.3-0.6 | cotton
+casual chambray shirt | 0.55 | 0.4-0.6 | cotton
+fine-gauge cardigan | 0.45 | 0.5-0.7 | wool,cashmere
+striped breton tee | 0.45 | 0.3-0.6 | cotton
+v-neck pullover | 0.50 | 0.5-0.8 | wool,cashmere
+flannel button-down | 0.40 | 0.3-0.6 | cotton

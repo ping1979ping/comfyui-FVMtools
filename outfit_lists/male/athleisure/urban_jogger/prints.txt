@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+oversized graphic | 0.5 | top,outerwear | 0.0-0.3
+back-print artwork | 0.45 | top,outerwear | 0.0-0.3
+glitch graphic | 0.3 | top,outerwear | 0.0-0.3
+streetwear logo | 0.55 | top,headwear,bag | 0.0-0.3
+sticker-style patches | 0.3 | top,outerwear,bag | 0.0-0.3
+varsity numerals | 0.3 | top,outerwear | 0.0-0.3
+chrome-text accent | 0.3 | top,outerwear | 0.0-0.3
+acid-wash effect | 0.25 | top,bottom | 0.0-0.3
+all-over print | 0.35 | top,bottom,outerwear | 0.0-0.3
+techwear paneling | 0.4 | top,bottom,outerwear | 0.1-0.3
+mock-tape graphic | 0.25 | top,outerwear | 0.0-0.3
+postcard graphic | 0.25 | top | 0.0-0.3

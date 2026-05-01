@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport watch | 0.65 | 0.1-0.3 | rubber,plastic
+performance sunglasses | 0.55 | 0.1-0.3 | plastic
+sweat headband | 0.40 | 0.1-0.2 | cotton
+crew socks | 0.55 | 0.1-0.3 | cotton,polyester
+training gloves | 0.30 | 0.1-0.3 | leather,mesh
+arm sleeve | 0.25 | 0.1-0.2 | nylon,polyester
+silicone bracelet | 0.30 | 0.1-0.2 | rubber
+sport belt strap | 0.25 | 0.1-0.3 | nylon

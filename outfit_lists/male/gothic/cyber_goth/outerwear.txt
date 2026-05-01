@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neon trim jacket | 0.50 | 0.0-0.4 | faux leather,synthetic
+cyber bomber | 0.45 | 0.0-0.4 | synthetic
+holographic windbreaker | 0.40 | 0.0-0.3 | synthetic
+techwear shell | 0.40 | 0.0-0.4 | synthetic
+strapped harness vest | 0.35 | 0.0-0.3 | faux leather,synthetic
+reflective parka | 0.30 | 0.1-0.4 | synthetic
+slick overcoat | 0.35 | 0.1-0.4 | PVC
+UV biker jacket | 0.40 | 0.0-0.3 | faux leather

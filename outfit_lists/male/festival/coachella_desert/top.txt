@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sun-bleached tank | 0.75 | 0.0-0.2 | cotton,jersey
+desert tee | 0.70 | 0.0-0.2 | cotton
+washed henley | 0.55 | 0.0-0.2 | cotton,jersey
+tied flannel shirt | 0.50 | 0.0-0.2 | cotton
+embroidered peasant top | 0.45 | 0.1-0.3 | cotton
+unbuttoned camp shirt | 0.55 | 0.0-0.2 | rayon,cotton
+boho kaftan tunic | 0.35 | 0.1-0.3 | cotton,gauze
+graphic muscle shirt | 0.45 | 0.0-0.2 | cotton
+faded poncho top | 0.30 | 0.1-0.3 | wool
+openwork vest top | 0.30 | 0.1-0.3 | crochet
+loose paisley shirt | 0.40 | 0.0-0.2 | rayon,cotton

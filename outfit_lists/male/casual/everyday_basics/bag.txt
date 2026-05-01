@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+day backpack | 0.75 | 0.1-0.3 | canvas,nylon
+shoulder satchel | 0.40 | 0.2-0.4 | canvas,nylon
+gym duffel | 0.35 | 0.1-0.2 | nylon,polyester
+crossbody sling | 0.30 | 0.1-0.3 | nylon,canvas
+drawstring sack | 0.25 | 0.1-0.2 | nylon,polyester
+laptop carrier | 0.30 | 0.2-0.4 | canvas,nylon
+tote carryall | 0.25 | 0.2-0.4 | canvas

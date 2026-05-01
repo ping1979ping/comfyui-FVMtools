@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tactical cap | 0.30 | 0.0-0.3 | synthetic,cotton
+respirator hood | 0.25 | 0.0-0.3 | synthetic
+militant beanie | 0.30 | 0.0-0.3 | wool,synthetic
+strapped balaclava | 0.20 | 0.0-0.3 | synthetic

@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+powder-stained shorts | 0.70 | 0.0-0.2 | cotton
+white drawstring pants | 0.60 | 0.1-0.3 | cotton
+tropical print shorts | 0.55 | 0.0-0.2 | rayon
+wide-leg breezy trousers | 0.45 | 0.1-0.3 | linen
+dye-soaked joggers | 0.45 | 0.0-0.2 | cotton
+loose dhoti pants | 0.35 | 0.1-0.3 | cotton
+white kurta-pajama bottoms | 0.40 | 0.1-0.3 | cotton
+relaxed beach shorts | 0.55 | 0.0-0.2 | rayon
+ethnic print pants | 0.35 | 0.1-0.3 | cotton
+relaxed pull-on shorts | 0.50 | 0.0-0.2 | cotton

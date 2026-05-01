@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cutoff shorts | 0.70 | 0.0-0.2 | denim
+relaxed chinos | 0.45 | 0.1-0.3 | cotton
+drawstring lounge pants | 0.50 | 0.1-0.3 | linen
+cargo shorts | 0.55 | 0.0-0.2 | cotton
+distressed slim jeans | 0.45 | 0.1-0.3 | denim
+bohemian wide leg pants | 0.35 | 0.1-0.3 | cotton,rayon
+washed out shorts | 0.55 | 0.0-0.2 | cotton
+patterned beach shorts | 0.40 | 0.0-0.2 | rayon
+sand-colored joggers | 0.35 | 0.0-0.2 | cotton,polyester
+relaxed harem pants | 0.30 | 0.1-0.3 | cotton

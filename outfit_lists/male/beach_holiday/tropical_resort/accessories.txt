@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aviator sunglasses | 0.80 | 0.0-0.4 | metal,plastic
+diver watch | 0.55 | 0.1-0.4 | metal
+braided bracelet | 0.40 | 0.0-0.2 | leather
+puka choker | 0.30 | 0.0-0.1 | shell
+woven belt | 0.40 | 0.2-0.4 | leather
+gold chain | 0.30 | 0.1-0.3 | metal
+beaded anklet | 0.25 | 0.0-0.1 | wood
+signet ring | 0.30 | 0.2-0.5 | metal
+silk pocket square | 0.20 | 0.3-0.5 | rayon,viscose
+conch pendant | 0.30 | 0.0-0.2 | shell

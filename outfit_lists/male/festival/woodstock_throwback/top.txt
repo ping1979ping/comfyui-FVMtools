@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tie-dye long-sleeve | 0.75 | 0.0-0.2 | cotton
+groovy graphic tee | 0.70 | 0.0-0.2 | cotton
+embroidered peasant shirt | 0.55 | 0.1-0.3 | cotton
+fringed open vest | 0.45 | 0.0-0.2 | suede
+wide-collar disco shirt | 0.45 | 0.1-0.3 | rayon
+70s ringer tee | 0.55 | 0.0-0.2 | cotton
+psychedelic print shirt | 0.55 | 0.0-0.2 | rayon,cotton
+lace-up tunic | 0.35 | 0.1-0.3 | cotton
+hippie hand-painted tank | 0.45 | 0.0-0.2 | cotton
+openwork vest top | 0.35 | 0.1-0.3 | crochet
+folk-style embroidered top | 0.40 | 0.1-0.3 | cotton

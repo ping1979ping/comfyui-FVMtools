@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+pentagram print | 0.4 | top,accessories | 0.0-0.4
+moon phase pattern | 0.45 | top,outerwear | 0.0-0.4
+occult sigil | 0.45 | top,accessories | 0.0-0.4
+celestial embroidery | 0.4 | top,outerwear | 0.1-0.5
+hexagram emblem | 0.4 | top,accessories | 0.0-0.4
+mystic rune motif | 0.4 | top,outerwear | 0.0-0.4
+ornate raven motif | 0.35 | top,outerwear | 0.1-0.5
+serpent print | 0.35 | top,accessories | 0.0-0.4
+all-seeing eye | 0.4 | top,accessories | 0.0-0.4
+zodiac symbol | 0.35 | top,outerwear | 0.0-0.4
+silver thread embroidery | 0.35 | top,outerwear | 0.2-0.6
+mystic hand emblem | 0.3 | top,accessories | 0.0-0.4

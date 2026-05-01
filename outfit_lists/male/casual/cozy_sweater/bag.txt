@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+waxed canvas pack | 0.55 | 0.2-0.4 | canvas
+heritage messenger | 0.40 | 0.2-0.4 | leather,canvas
+field rucksack | 0.50 | 0.1-0.3 | canvas,nylon
+cabin duffel | 0.40 | 0.1-0.3 | canvas
+heritage knapsack | 0.40 | 0.2-0.4 | leather
+shearling pouch | 0.30 | 0.2-0.4 | leather

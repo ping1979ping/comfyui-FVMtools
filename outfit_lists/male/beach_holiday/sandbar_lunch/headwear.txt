@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+panama hat | 0.55 | 0.2-0.5 | straw
+sun hat | 0.45 | 0.0-0.3 | cotton
+five-panel cap | 0.40 | 0.0-0.2 | cotton
+flat cap | 0.30 | 0.1-0.4 | cotton
+woven boater | 0.30 | 0.2-0.4 | straw

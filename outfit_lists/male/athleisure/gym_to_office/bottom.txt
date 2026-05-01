@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tapered training pants | 0.55 | 0.0-0.2 | french-terry,modal
+sweat shorts | 0.40 | 0.0-0.1 | french-terry,bamboo
+
+# mid-casual
+commuter pants | 0.65 | 0.2-0.5 | merino,modal
+slim travel trousers | 0.55 | 0.2-0.5 | merino,modal
+flat-front chinos | 0.45 | 0.3-0.6 | bamboo,modal
+performance dress pants | 0.40 | 0.3-0.6 | merino,modal
+hybrid joggers | 0.60 | 0.1-0.4 | french-terry,modal
+relaxed lounge pants | 0.30 | 0.0-0.2 | bamboo,modal
+tapered office pants | 0.50 | 0.3-0.6 | merino,modal

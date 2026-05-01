@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+hydration vest | 0.55 | 0.0-0.2 | ripstop,microfiber
+running waistpack | 0.50 | 0.0-0.2 | ripstop,spandex
+
+# mid-casual
+race-day backpack | 0.45 | 0.0-0.3 | ripstop,microfiber
+slim runner pouch | 0.40 | 0.0-0.2 | ripstop,microfiber
+roll-top sport bag | 0.35 | 0.0-0.3 | ripstop,microfiber
+phone armband holder | 0.30 | 0.0-0.2 | spandex,silicone
+trail pack | 0.40 | 0.0-0.2 | ripstop,microfiber
+foldable tote | 0.30 | 0.0-0.2 | ripstop,microfiber

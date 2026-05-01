@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+folk embroidery | 0.55 | top,outerwear,bag | 0.1-0.3
+floral meadow pattern | 0.45 | top | 0.0-0.3
+herringbone weave | 0.40 | bottom,outerwear | 0.1-0.3
+folk cross-stitch | 0.45 | top,bag | 0.1-0.3
+patched detail | 0.45 | top,bottom,outerwear | 0.0-0.3
+muted check | 0.45 | top,outerwear | 0.1-0.3
+woven stripe | 0.40 | top,bag | 0.0-0.3
+hand-stitched accent | 0.40 | top,outerwear | 0.1-0.3
+folk-knit pattern | 0.35 | outerwear | 0.1-0.3
+botanical motif | 0.30 | top | 0.0-0.3

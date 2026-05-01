@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+biohazard symbol | 0.4 | top,outerwear | 0.0-0.3
+industrial gear motif | 0.4 | top | 0.0-0.3
+buckled detail | 0.5 | outerwear,bottom | 0.0-0.3
+strapped harness motif | 0.4 | top,outerwear | 0.0-0.3
+distressed details | 0.5 | top,bottom,outerwear | 0.0-0.3
+factory stencil | 0.4 | top | 0.0-0.3
+caution stripe | 0.4 | top,bottom | 0.0-0.3
+chain detail | 0.4 | accessories,bottom | 0.0-0.3
+militant emblem | 0.3 | top,outerwear | 0.0-0.3
+oily stain effect | 0.3 | top,bottom | 0.0-0.3
+mechanical motif | 0.3 | top,outerwear | 0.0-0.3
+riveted detail | 0.4 | outerwear,accessories | 0.0-0.3

@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bell-bottom flared jeans | 0.65 | 0.1-0.3 | denim
+ribbed flares | 0.50 | 0.1-0.3 | corduroy
+high-waisted bell trousers | 0.45 | 0.1-0.3 | polyester
+tie-dye jeans | 0.50 | 0.0-0.2 | denim
+patchwork bottoms | 0.45 | 0.0-0.2 | cotton
+worn brown flares | 0.45 | 0.1-0.3 | cotton
+groovy striped pants | 0.40 | 0.1-0.3 | polyester
+embroidered jeans | 0.40 | 0.1-0.3 | denim
+hippie patched cargos | 0.40 | 0.0-0.2 | cotton
+airy flared trousers | 0.35 | 0.1-0.3 | linen

@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+soft sweatpants | 0.65 | 0.0-0.2 | heavyweight-knit,sherpa-loop
+lounge shorts | 0.50 | 0.0-0.2 | pima-blend,modal-soft
+
+# mid-casual
+oversized joggers | 0.55 | 0.0-0.2 | sherpa-loop,heavyweight-knit
+plush trousers | 0.45 | 0.0-0.2 | sherpa-loop,heavyweight-knit
+thermal pants | 0.40 | 0.0-0.2 | waffle-knit,heavyweight-knit
+recovery leggings | 0.40 | 0.0-0.2 | compression-blend,modal-soft
+sleep pants | 0.45 | 0.0-0.2 | pima-blend,modal-soft
+drawstring lounge | 0.50 | 0.0-0.2 | modal-soft,pima-blend
+relaxed terry pants | 0.40 | 0.0-0.2 | terry-pile,modal-soft

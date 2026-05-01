@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"INDIE" | 0.2 | top | distressed serif
+"ARTIST" | 0.2 | top | handwritten script
+"STUDIO" | 0.15 | top | typewriter font
+"GALLERY" | 0.15 | top | gallery serif
+"CREATE" | 0.2 | top | brushstroke font
+"OFF-BEAT" | 0.15 | top | distressed sans
+"ANALOG" | 0.15 | top | typewriter font
+"VINYL" | 0.2 | top | retro print

@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+linen cap | 0.45 | 0.2-0.4 | cotton,polyester
+panama-style hat | 0.35 | 0.2-0.4 | canvas
+flat newsboy | 0.30 | 0.2-0.4 | cotton
+soft brim cap | 0.40 | 0.2-0.4 | cotton

@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+utility belt pouch | 0.30 | 0.0-0.3 | synthetic,faux leather
+neon sling pack | 0.25 | 0.0-0.3 | synthetic
+holographic hip pack | 0.25 | 0.0-0.3 | synthetic
+cyber backpack | 0.25 | 0.0-0.4 | synthetic
+strapped chest rig | 0.20 | 0.0-0.3 | faux leather,synthetic
+techwear satchel | 0.25 | 0.1-0.4 | synthetic
+reflective messenger | 0.20 | 0.0-0.3 | synthetic
+glow trim crossbody | 0.25 | 0.0-0.3 | synthetic

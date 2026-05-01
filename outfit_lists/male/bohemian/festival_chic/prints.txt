@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+psychedelic swirl | 0.5 | top | 0.0-0.3
+tie-dye burst | 0.5 | top | 0.0-0.3
+mandala motif | 0.4 | top | 0.0-0.4
+paisley pattern | 0.4 | top | 0.1-0.4
+mirror embellishment | 0.4 | top,outerwear | 0.1-0.4
+geometric tribal | 0.4 | top | 0.1-0.4
+neon abstract | 0.3 | top | 0.0-0.3
+festival graphic | 0.4 | top | 0.0-0.3
+sequin trim | 0.3 | outerwear,accessories | 0.0-0.4
+fringe accent | 0.4 | outerwear,accessories | 0.0-0.4
+beaded trim | 0.3 | accessories | 0.0-0.3
+metallic-thread embroidery | 0.3 | top | 0.1-0.4

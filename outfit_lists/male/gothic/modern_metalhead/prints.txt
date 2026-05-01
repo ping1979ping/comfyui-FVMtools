@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+band logo | 0.5 | top,outerwear | 0.0-0.3
+album cover art | 0.4 | top | 0.0-0.3
+flaming skull motif | 0.4 | top,outerwear | 0.0-0.3
+demonic emblem | 0.4 | top | 0.0-0.3
+pentagram print | 0.4 | top,accessories | 0.0-0.3
+tour patches | 0.5 | outerwear,top | 0.0-0.3
+distressed details | 0.5 | top,bottom | 0.0-0.3
+metal band emblem | 0.5 | top,outerwear | 0.0-0.3
+spiked detail | 0.4 | accessories,outerwear | 0.0-0.3
+inverted cross emblem | 0.4 | top,accessories | 0.0-0.3
+biohazard symbol | 0.3 | top | 0.0-0.3
+chain detail | 0.4 | accessories,bottom | 0.0-0.3

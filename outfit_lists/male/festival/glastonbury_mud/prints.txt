@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+band logo | 0.55 | top | 0.0-0.2
+distressed wash | 0.50 | top,bottom,outerwear | 0.0-0.2
+mud splatter detail | 0.45 | top,bottom | 0.0-0.2
+camouflage pattern | 0.40 | top,bottom,outerwear | 0.0-0.2
+faded slogan | 0.40 | top | 0.0-0.2
+patches detail | 0.35 | outerwear,bag | 0.0-0.2
+checkered pattern | 0.35 | top | 0.0-0.2
+worn graphic | 0.45 | top | 0.0-0.2
+ripped detail | 0.40 | top,bottom | 0.0-0.2
+faded stripes | 0.35 | top | 0.0-0.2
+festival print | 0.30 | top | 0.0-0.2

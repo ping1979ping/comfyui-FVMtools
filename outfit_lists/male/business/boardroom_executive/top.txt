@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+french-cuff dress shirt | 0.95 | 0.8-1.0 | cotton
+spread-collar dress shirt | 0.90 | 0.8-1.0 | cotton
+bespoke white shirt | 0.85 | 0.9-1.0 | cotton
+luxury poplin shirt | 0.75 | 0.8-1.0 | cotton
+fine-thread dress shirt | 0.80 | 0.8-1.0 | cotton
+formal pleated-front shirt | 0.55 | 0.8-1.0 | cotton
+sky-blue dress shirt | 0.70 | 0.8-1.0 | cotton
+luxury herringbone shirt | 0.55 | 0.8-1.0 | cotton
+cutaway-collar shirt | 0.65 | 0.8-1.0 | cotton
+bespoke striped shirt | 0.60 | 0.8-1.0 | cotton
+fine pinpoint shirt | 0.55 | 0.8-1.0 | cotton

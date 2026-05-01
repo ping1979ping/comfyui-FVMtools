@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sleeveless box tee | 0.55 | 0.0-0.1 | dri-blend,tri-blend
+loose tank | 0.50 | 0.0-0.1 | tri-blend,dri-blend
+cropped muscle vest | 0.35 | 0.0-0.1 | dri-blend,tri-blend
+
+# mid-casual
+short-sleeve workout shirt | 0.65 | 0.0-0.2 | dri-blend,tri-blend
+compression long-sleeve | 0.45 | 0.0-0.2 | spandex-blend,dri-blend
+training raglan | 0.50 | 0.0-0.2 | dri-blend,tri-blend
+ribbed strength shirt | 0.40 | 0.0-0.2 | tri-blend,spandex-blend
+WOD top | 0.50 | 0.0-0.2 | dri-blend,tri-blend
+performance henley | 0.40 | 0.0-0.2 | tri-blend,spandex-blend
+heather muscle tee | 0.45 | 0.0-0.2 | tri-blend,dri-blend

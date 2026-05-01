@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GLASTO" | 0.25 | top,headwear | rough block
+"FESTIVAL" | 0.2 | top | distressed lettering
+"MUD" | 0.2 | top | distressed lettering
+"WORTHY" | 0.15 | top | classic block
+"PYRAMID" | 0.15 | top | bold block
+"SOMERSET" | 0.15 | top | classic block
+"PEACE" | 0.2 | top,headwear | handwritten script
+"LEGEND" | 0.2 | top | rough block
+"SURVIVOR" | 0.15 | top | distressed lettering
+"LOST" | 0.15 | top | handwritten script

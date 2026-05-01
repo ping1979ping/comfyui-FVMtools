@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+striped breton shirt | 0.70 | 0.1-0.4 | cotton
+short-sleeve resort shirt | 0.65 | 0.2-0.5 | cotton,viscose
+breezy henley | 0.55 | 0.1-0.3 | cotton,modal
+classic polo | 0.60 | 0.2-0.5 | cotton,polyester
+ribbed knit tee | 0.50 | 0.1-0.3 | cotton,modal
+crisp short-sleeve button-up | 0.65 | 0.2-0.5 | viscose
+sailor stripe shirt | 0.55 | 0.1-0.4 | cotton
+boxy crew tee | 0.50 | 0.0-0.2 | cotton
+tucked-in pique top | 0.45 | 0.2-0.5 | cotton,polyester

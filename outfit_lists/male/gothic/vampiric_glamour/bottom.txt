@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tailored dress trousers | 0.55 | 0.3-0.7 | wool,silk
+slim formal slacks | 0.55 | 0.4-0.8 | wool,silk
+brocade-woven pants | 0.45 | 0.4-0.8 | brocade
+satin-striped trousers | 0.45 | 0.4-0.8 | wool,silk
+fitted dandy trousers | 0.45 | 0.3-0.7 | wool
+tuxedo trousers | 0.45 | 0.5-0.9 | wool,silk
+ornate evening pants | 0.40 | 0.4-0.8 | wool,silk

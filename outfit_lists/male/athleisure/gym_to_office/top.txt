@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+performance tee | 0.55 | 0.0-0.2 | merino,bamboo
+tailored sweatshirt | 0.45 | 0.0-0.2 | french-terry,modal
+ribbed undershirt | 0.30 | 0.0-0.2 | bamboo,modal
+
+# mid-casual
+half-zip pullover | 0.65 | 0.1-0.4 | merino,french-terry
+fitted henley | 0.55 | 0.1-0.4 | bamboo,modal,merino
+tech polo | 0.60 | 0.2-0.5 | merino,bamboo
+mock-neck shirt | 0.50 | 0.2-0.5 | merino,modal
+button-front knit shirt | 0.40 | 0.3-0.6 | merino,modal
+crew sweater | 0.45 | 0.2-0.5 | merino,french-terry
+boxy commuter tee | 0.35 | 0.0-0.3 | bamboo,modal

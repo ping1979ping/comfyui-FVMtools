@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+hibiscus pattern | 0.5 | top,bottom | 0.0-0.4
+palm frond design | 0.5 | top,bottom | 0.0-0.4
+batik motif | 0.4 | top | 0.1-0.4
+coral reef graphic | 0.35 | top | 0.0-0.3
+horizon stripe | 0.4 | top | 0.1-0.4
+fish silhouette pattern | 0.3 | top | 0.0-0.3
+tropical fruit motif | 0.35 | top,bottom | 0.0-0.3
+seashell scatter | 0.3 | top,bottom | 0.0-0.3
+sunset gradient | 0.3 | top | 0.0-0.3
+geometric tile pattern | 0.25 | top | 0.1-0.4

@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+bamboo-blend | 0.2 | natural | light
+modal-knit | 0.2 | natural | light
+elastane-blend | 0.1 | sporty | light
+organic-loop | 0.2 | natural | medium
+
+# special materials
+viscose-blend | 0.3 | natural | light
+hemp-weave | 0.25 | natural | medium
+plant-leather | 0.4 | luxury | medium
+foam-cushion | 0.15 | sporty | light
+cork | 0.2 | natural | light
+wood-bead | 0.25 | natural | light
+resin-bead | 0.25 | casual | light
+recycled-shell | 0.2 | sporty | light

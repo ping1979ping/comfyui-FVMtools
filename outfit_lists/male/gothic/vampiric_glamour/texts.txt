@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NOSFERATU" | 0.2 | top | gothic font
+"NOCTURNAL" | 0.2 | top | medieval script
+"IMMORTAL" | 0.2 | top | ornate calligraphy
+"BLOODLINE" | 0.2 | top,outerwear | gothic font
+"CRIMSON HEIR" | 0.2 | top | ornate calligraphy
+"DRACULA" | 0.15 | top | blackletter
+"ETERNAL" | 0.2 | top | blackletter
+"DARK ROYALTY" | 0.15 | top,outerwear | ornate calligraphy
+"COUNT" | 0.15 | top | ornate calligraphy
+"NIGHTBORN" | 0.15 | top | gothic font

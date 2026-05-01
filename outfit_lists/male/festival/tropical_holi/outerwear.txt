@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+light kimono shrug | 0.45 | 0.0-0.2 | rayon,cotton
+embroidered nehru jacket | 0.40 | 0.1-0.3 | cotton
+sleeveless waistcoat | 0.35 | 0.1-0.3 | cotton
+loose cotton overshirt | 0.45 | 0.0-0.2 | cotton
+patterned beach robe | 0.30 | 0.0-0.2 | rayon
+ethnic vest | 0.40 | 0.1-0.3 | cotton

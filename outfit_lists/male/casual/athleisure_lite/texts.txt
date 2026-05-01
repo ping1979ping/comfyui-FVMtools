@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"TRAIN" | 0.25 | top | bold sans-serif
+"PRO" | 0.2 | top,headwear | bold sans-serif
+"GYM" | 0.25 | top,headwear | retro block
+"RUN" | 0.2 | top,headwear | bold sans-serif
+"SPORT" | 0.2 | top | clean modern
+"NO DAYS OFF" | 0.2 | top | bold sans-serif
+"PUSH" | 0.2 | top | retro block
+"GRIND" | 0.2 | top | bold sans-serif
+"REPS" | 0.15 | top | bold sans-serif
+"ATHLETE" | 0.2 | top | clean modern
+"FUEL" | 0.15 | top | bold sans-serif
+"PACE" | 0.15 | top | clean modern

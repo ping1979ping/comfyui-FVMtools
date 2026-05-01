@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+reflective fanny pack | 0.65 | 0.0-0.2 | nylon
+holographic crossbody | 0.55 | 0.0-0.2 | vinyl
+mini techno backpack | 0.50 | 0.0-0.2 | polyester
+chrome belt bag | 0.45 | 0.0-0.2 | vinyl
+mesh hydration pack | 0.40 | 0.0-0.2 | mesh,nylon
+neon sling bag | 0.45 | 0.0-0.2 | polyester
+chest harness pouch | 0.35 | 0.0-0.2 | nylon
+glow drawstring bag | 0.40 | 0.0-0.2 | polyester

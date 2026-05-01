@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+festival shorts | 0.7 | 0.1-0.3 | cotton,hemp
+loose harem-pants | 0.6 | 0.1-0.3 | cotton,gauze
+drawstring shorts | 0.6 | 0.1-0.3 | cotton
+patterned trousers | 0.5 | 0.2-0.4 | cotton
+relaxed festival-jeans | 0.5 | 0.2-0.4 | denim
+cropped festival-pants | 0.5 | 0.2-0.4 | cotton,linen
+wide-leg flowy-trousers | 0.4 | 0.2-0.4 | linen,cotton
+patchwork shorts | 0.4 | 0.1-0.3 | cotton
+ripped festival-jeans | 0.4 | 0.2-0.4 | denim
+embroidered shorts | 0.3 | 0.1-0.3 | embroidered cotton,cotton

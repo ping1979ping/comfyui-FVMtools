@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic satchel | 0.45 | 0.3-0.5 | leather
+woven tote | 0.40 | 0.2-0.4 | canvas
+weekend duffel | 0.40 | 0.2-0.4 | canvas
+small briefcase | 0.30 | 0.3-0.5 | leather
+shoulder pouch | 0.35 | 0.2-0.4 | canvas,nylon
+soft messenger | 0.40 | 0.2-0.4 | canvas
+linen bag | 0.30 | 0.2-0.4 | canvas

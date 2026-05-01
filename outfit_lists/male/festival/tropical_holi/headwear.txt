@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+color-stained bandana | 0.60 | 0.0-0.2 | cotton
+straw sunhat | 0.50 | 0.0-0.2 | straw
+floral crown | 0.45 | 0.0-0.2 | none
+embroidered turban | 0.35 | 0.1-0.3 | cotton
+linen headwrap | 0.35 | 0.0-0.2 | linen

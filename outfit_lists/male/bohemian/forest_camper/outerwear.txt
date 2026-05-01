@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+plaid shirt-jacket | 0.6 | 0.2-0.4 | cotton
+woodsman vest | 0.6 | 0.2-0.4 | cotton,canvas
+forager parka | 0.5 | 0.1-0.3 | cotton,canvas
+camp cardigan | 0.5 | 0.2-0.4 | crochet,cotton
+patched field-coat | 0.4 | 0.2-0.4 | cotton,canvas
+trail anorak | 0.4 | 0.1-0.3 | cotton,canvas
+quilted forester-jacket | 0.4 | 0.2-0.4 | cotton
+weathered woods-poncho | 0.3 | 0.1-0.3 | hemp,cotton

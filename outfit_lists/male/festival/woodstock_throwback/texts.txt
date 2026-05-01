@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PEACE" | 0.25 | top,headwear | groovy font
+"LOVE" | 0.25 | top | groovy font
+"GROOVY" | 0.2 | top | psychedelic font
+"WOODSTOCK" | 0.25 | top | retro 70s font
+"FREEDOM" | 0.2 | top | groovy font
+"FAR OUT" | 0.2 | top | psychedelic font
+"VIBES" | 0.2 | top | retro 70s font
+"FLOWER POWER" | 0.2 | top | floral lettering
+"DREAM" | 0.15 | top | handwritten script
+"FREE LOVE" | 0.15 | top | groovy font

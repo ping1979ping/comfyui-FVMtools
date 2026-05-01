@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+mock neck top | 0.6 | 0.5-0.7 | cashmere,merino wool,cotton
+turtleneck | 0.6 | 0.5-0.7 | cashmere,merino wool
+band-collar shirt | 0.5 | 0.4-0.7 | cotton,poplin
+oversized button-down | 0.5 | 0.4-0.6 | cotton,poplin
+fitted polo | 0.4 | 0.4-0.6 | cotton,merino wool
+crew neck pullover | 0.5 | 0.5-0.7 | merino wool,cashmere
+fine-knit pullover | 0.5 | 0.5-0.7 | merino wool,cashmere
+slim-fit shirt | 0.5 | 0.5-0.7 | cotton,poplin
+asymmetric overshirt | 0.3 | 0.4-0.6 | cotton
+minimalist tee | 0.4 | 0.4-0.5 | cotton
+ribbed knit top | 0.4 | 0.4-0.6 | merino wool,cashmere

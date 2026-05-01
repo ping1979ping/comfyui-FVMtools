@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+strapped harness shirt | 0.50 | 0.0-0.3 | faux leather,synthetic
+distressed combat top | 0.55 | 0.0-0.3 | cotton,canvas
+utility vest | 0.50 | 0.0-0.3 | canvas,synthetic
+buckled tactical shirt | 0.45 | 0.0-0.3 | synthetic,canvas
+ribbed mesh undershirt | 0.40 | 0.0-0.3 | mesh
+militant black tee | 0.50 | 0.0-0.3 | cotton
+torn mesh top | 0.40 | 0.0-0.3 | mesh
+asymmetric techno shirt | 0.40 | 0.0-0.3 | synthetic
+gas mask hood top | 0.35 | 0.0-0.3 | synthetic
+chained industrial shirt | 0.40 | 0.0-0.3 | cotton,faux leather
+worn factory tee | 0.40 | 0.0-0.3 | cotton

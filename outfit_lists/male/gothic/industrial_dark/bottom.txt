@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tactical cargo pants | 0.55 | 0.0-0.3 | cotton,synthetic
+buckled bondage trousers | 0.50 | 0.0-0.3 | faux leather,cotton
+combat pants | 0.55 | 0.0-0.3 | cotton,canvas
+strapped industrial trousers | 0.45 | 0.0-0.3 | synthetic,cotton
+distressed work pants | 0.45 | 0.0-0.3 | cotton,denim
+vinyl-coated tactical pants | 0.45 | 0.0-0.3 | PVC
+chained cargo trousers | 0.40 | 0.0-0.3 | cotton

@@ -1,0 +1,16 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+midweight-knit | 0.2 | casual | medium
+french-loop | 0.15 | casual | medium
+techweave | 0.2 | sporty | light
+
+# special materials
+woven-textile | 0.2 | casual | medium
+split-suede | 0.5 | luxury | medium
+rubberized-textile | 0.25 | sporty | medium
+wool-mix | 0.4 | natural | heavy
+sterling-silver | 0.55 | luxury | light
+resin-bead | 0.3 | casual | light
+acetate | 0.45 | luxury | light
+webbing-strap | 0.15 | sporty | light

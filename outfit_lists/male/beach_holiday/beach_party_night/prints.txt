@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+neon graphic | 0.6 | top,bottom | 0.0-0.3
+metallic foil pattern | 0.5 | top | 0.2-0.5
+glow-in-dark motif | 0.4 | top | 0.0-0.3
+graffiti splash | 0.45 | top,bottom | 0.0-0.3
+holographic sheen | 0.4 | top,bottom | 0.1-0.4
+geometric flash | 0.4 | top | 0.0-0.3
+laser stripe | 0.4 | top,bottom | 0.0-0.3
+neon palm motif | 0.45 | top,bottom | 0.0-0.3
+sunset rave gradient | 0.4 | top | 0.0-0.3
+hibiscus rave pattern | 0.4 | top,bottom | 0.0-0.3

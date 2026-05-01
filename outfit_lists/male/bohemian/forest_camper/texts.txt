@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FOREST" | 0.2 | top | hand-carved font
+"WOODSMAN" | 0.2 | top | rustic lettering
+"CAMP" | 0.2 | top | weathered text
+"WILD WOODS" | 0.15 | top | hand-carved font
+"FORAGER" | 0.15 | top | rustic lettering
+"TRAILSIDE" | 0.15 | top | weathered text
+"NORTH WOODS" | 0.15 | top | compass rose script
+"OFF THE GRID" | 0.15 | top | weathered text

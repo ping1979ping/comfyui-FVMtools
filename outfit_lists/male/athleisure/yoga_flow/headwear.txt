@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+soft headband | 0.45 | 0.0-0.2 | bamboo-blend,elastane-blend
+slouchy beanie | 0.35 | 0.0-0.2 | organic-loop,bamboo-blend
+
+# mid-casual
+hair tie wrap | 0.30 | 0.0-0.2 | elastane-blend,modal-knit
+woven hat | 0.30 | 0.0-0.2 | hemp-weave,bamboo-blend

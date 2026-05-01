@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+light blazer | 0.50 | 0.3-0.5 | cotton
+unstructured sport coat | 0.45 | 0.3-0.5 | cotton
+chore coat | 0.50 | 0.2-0.4 | cotton
+jean trucker | 0.55 | 0.2-0.4 | denim
+harrington jacket | 0.40 | 0.2-0.4 | cotton,polyester
+overshirt | 0.50 | 0.2-0.4 | cotton,flannel
+linen blazer | 0.30 | 0.3-0.5 | cotton
+soft cardigan jacket | 0.35 | 0.3-0.5 | knit,cotton
+shawl collar wrap | 0.30 | 0.3-0.5 | knit,cotton

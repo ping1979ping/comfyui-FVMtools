@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+formal trousers | 0.8 | 0.6-0.7 | wool blend,worsted wool
+tuxedo pants | 0.5 | 0.6-0.7 | wool blend
+suit pants | 0.7 | 0.6-0.7 | wool blend,worsted wool
+pleated dress pants | 0.5 | 0.5-0.7 | wool blend
+flat-front dress pants | 0.6 | 0.5-0.7 | wool blend,twill
+slim-cut dress pants | 0.5 | 0.5-0.7 | wool blend
+straight-leg trousers | 0.5 | 0.5-0.7 | wool blend,twill
+high-rise trousers | 0.4 | 0.5-0.7 | wool blend
+tapered formal pants | 0.5 | 0.5-0.7 | wool blend

@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flat-sole trainers | 0.65 | 0.0-0.2 | engineered-textile,rubber-armor
+cross-training shoes | 0.65 | 0.0-0.2 | engineered-textile,rubber-armor
+
+# mid-casual
+weightlifting shoes | 0.45 | 0.0-0.2 | engineered-textile,rubber-armor
+sled-push trainers | 0.40 | 0.0-0.2 | engineered-textile,rubber-armor
+metcon kicks | 0.55 | 0.0-0.2 | engineered-textile,rubber-armor
+deadlift slippers | 0.30 | 0.0-0.1 | rubber-armor,canvas-weave
+hybrid lifters | 0.45 | 0.0-0.2 | engineered-textile,rubber-armor
+high-top trainers | 0.40 | 0.0-0.2 | engineered-textile,rubber-armor
+chalk-stained trainers | 0.30 | 0.0-0.2 | engineered-textile,canvas-weave

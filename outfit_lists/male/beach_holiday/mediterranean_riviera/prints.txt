@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+breton stripes | 0.6 | top | 0.1-0.5
+nautical anchor motif | 0.4 | top | 0.1-0.4
+sailboat pattern | 0.35 | top | 0.1-0.4
+lemon design | 0.35 | top | 0.0-0.3
+olive branch motif | 0.3 | top | 0.1-0.4
+seashell pattern | 0.3 | top,bottom | 0.0-0.3
+mosaic tile design | 0.25 | top | 0.1-0.4
+amalfi coast scene | 0.25 | top | 0.1-0.4
+fish motif | 0.25 | top | 0.0-0.3
+horizon ombre | 0.25 | top | 0.0-0.3

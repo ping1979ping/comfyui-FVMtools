@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+trail backpack | 0.60 | 0.0-0.3 | nylon,polyester
+roll-top dry pack | 0.50 | 0.0-0.2 | nylon
+sling chest bag | 0.45 | 0.0-0.3 | nylon
+hydration pack | 0.45 | 0.0-0.3 | nylon
+hip pack | 0.45 | 0.0-0.3 | nylon,polyester
+rugged duffel | 0.30 | 0.0-0.3 | polyester
+mesh dry sack | 0.30 | 0.0-0.2 | polyester
+camera shoulder bag | 0.30 | 0.0-0.3 | nylon

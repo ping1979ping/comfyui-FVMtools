@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+field jacket | 0.6 | 0.2-0.4 | cotton,canvas
+expedition vest | 0.5 | 0.2-0.4 | cotton,canvas
+travel waistcoat | 0.5 | 0.2-0.4 | cotton,linen
+weathered coat | 0.4 | 0.2-0.4 | cotton,canvas
+tribal-trim jacket | 0.4 | 0.2-0.4 | cotton
+patched parka | 0.3 | 0.2-0.4 | cotton,canvas
+duster wrap | 0.4 | 0.2-0.4 | cotton,linen
+explorer windbreaker | 0.3 | 0.1-0.3 | cotton

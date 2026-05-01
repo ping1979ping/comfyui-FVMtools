@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+designer watch | 0.6 | 0.4-0.7 | leather
+slim belt | 0.5 | 0.4-0.7 | leather
+sculptural ring | 0.3 | 0.4-0.7 | leather
+chain necklace | 0.3 | 0.4-0.6 | cotton
+tinted sunglasses | 0.4 | 0.4-0.6 | cotton
+pocket square | 0.3 | 0.5-0.7 | silk,cotton
+art-piece brooch | 0.2 | 0.5-0.7 | leather
+slim scarf | 0.3 | 0.4-0.6 | merino wool,silk
+braided wristband | 0.3 | 0.4-0.6 | leather
+bold cuff | 0.2 | 0.4-0.6 | leather
+oversized signet | 0.2 | 0.4-0.7 | leather

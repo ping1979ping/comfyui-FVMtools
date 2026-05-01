@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+southwest pattern | 0.5 | top | 0.1-0.4
+sun-faded stripes | 0.4 | top | 0.1-0.4
+adobe-tone block-design | 0.4 | top | 0.1-0.4
+tribal motif | 0.4 | top | 0.1-0.4
+weathered patchwork | 0.3 | top,outerwear | 0.1-0.4
+dust-streaked dye | 0.3 | top | 0.0-0.3
+arrow motif | 0.3 | top | 0.1-0.4
+fringe trim | 0.3 | outerwear,accessories | 0.0-0.4
+beaded edging | 0.3 | accessories | 0.0-0.3
+sandblasted texture | 0.3 | top | 0.1-0.4
+desert ikat | 0.2 | top | 0.1-0.4

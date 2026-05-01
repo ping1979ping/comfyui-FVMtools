@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+heritage carpet-bag | 0.6 | 0.2-0.4 | cotton,canvas
+vintage briefcase | 0.5 | 0.2-0.4 | leather
+old-world satchel | 0.5 | 0.2-0.4 | leather
+weathered duffel | 0.5 | 0.1-0.3 | canvas,leather
+caravan trunk-bag | 0.4 | 0.2-0.4 | leather
+heritage tote | 0.4 | 0.2-0.4 | hemp
+70s shoulder-bag | 0.4 | 0.1-0.3 | leather,suede
+embroidered traveler-pouch | 0.3 | 0.1-0.3 | embroidered cotton

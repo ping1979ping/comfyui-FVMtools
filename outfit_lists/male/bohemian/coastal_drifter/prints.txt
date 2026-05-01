@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+sailor stripes | 0.5 | top | 0.1-0.4
+faded palm-motif | 0.5 | top | 0.0-0.3
+seashell pattern | 0.4 | top | 0.1-0.4
+nautical anchor | 0.4 | top | 0.1-0.4
+sun-bleached gradient | 0.4 | top | 0.0-0.3
+wave-print | 0.4 | top | 0.0-0.4
+salt-washed dye | 0.3 | top | 0.0-0.3
+rope-knot motif | 0.3 | top | 0.1-0.4
+coastal abstract | 0.3 | top | 0.0-0.3
+fish-scale pattern | 0.3 | top | 0.1-0.4

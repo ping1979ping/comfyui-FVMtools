@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heritage watch | 0.55 | 0.2-0.4 | metal,leather
+horn-rim sunglasses | 0.40 | 0.2-0.4 | plastic
+chunky scarf | 0.65 | 0.2-0.4 | knit,cotton
+ribbed hand warmers | 0.30 | 0.1-0.3 | knit,cotton
+sturdy belt | 0.55 | 0.2-0.4 | leather
+woolen mittens | 0.30 | 0.1-0.3 | knit
+plaid neck wrap | 0.35 | 0.2-0.4 | cotton,flannel

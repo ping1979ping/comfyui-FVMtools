@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic necktie | 0.95 | 0.8-1.0 | silk
+striped formal tie | 0.75 | 0.8-1.0 | silk
+solid sheen tie | 0.65 | 0.8-1.0 | silk
+patterned tie | 0.55 | 0.7-1.0 | silk
+silver tie clip | 0.55 | 0.8-1.0 | metal
+gold cufflinks | 0.65 | 0.8-1.0 | metal
+silver cufflinks | 0.60 | 0.8-1.0 | metal
+folded pocket square | 0.70 | 0.8-1.0 | silk
+luxury wristwatch | 0.85 | 0.7-1.0 | metal
+dress belt | 0.85 | 0.7-1.0 | leather
+lapel pin | 0.30 | 0.8-1.0 | metal
+collar bar | 0.20 | 0.8-1.0 | metal

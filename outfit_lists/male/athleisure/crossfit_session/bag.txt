@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+gym duffel | 0.65 | 0.0-0.2 | canvas-weave,nylon-webbing
+training pack | 0.55 | 0.0-0.2 | canvas-weave,nylon-webbing
+
+# mid-casual
+shoe compartment duffel | 0.50 | 0.0-0.2 | canvas-weave,nylon-webbing
+sling pack | 0.40 | 0.0-0.2 | canvas-weave,nylon-webbing
+chalk-bucket bag | 0.30 | 0.0-0.2 | canvas-weave,nylon-webbing
+medicine-ball tote | 0.30 | 0.0-0.2 | canvas-weave,nylon-webbing
+strength backpack | 0.45 | 0.0-0.2 | canvas-weave,nylon-webbing
+hybrid kit bag | 0.40 | 0.0-0.2 | canvas-weave,nylon-webbing

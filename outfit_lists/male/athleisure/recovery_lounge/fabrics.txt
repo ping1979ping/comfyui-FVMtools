@@ -1,0 +1,18 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+sherpa-loop | 0.15 | casual | medium
+heavyweight-knit | 0.2 | casual | heavy
+pima-blend | 0.2 | natural | light
+modal-soft | 0.2 | natural | light
+waffle-knit | 0.2 | casual | medium
+
+# special materials
+terry-pile | 0.15 | casual | medium
+shearling | 0.4 | luxury | medium
+suede-finish | 0.45 | luxury | medium
+foam-rubber | 0.1 | sporty | medium
+knit-upper | 0.15 | sporty | light
+quilt-fill | 0.2 | casual | medium
+compression-blend | 0.15 | sporty | light
+ceramic | 0.4 | luxury | heavy

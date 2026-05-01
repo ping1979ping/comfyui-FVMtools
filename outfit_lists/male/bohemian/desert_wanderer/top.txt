@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sun-bleached henley | 0.7 | 0.2-0.4 | cotton,hemp
+dusty open-collar shirt | 0.7 | 0.2-0.4 | linen,chambray
+loose pullover | 0.6 | 0.2-0.4 | linen,cotton
+sand-toned tunic | 0.5 | 0.1-0.3 | linen,cotton,gauze
+weathered button-down | 0.6 | 0.2-0.4 | linen,chambray
+rolled-sleeve shirt | 0.6 | 0.2-0.4 | cotton,linen
+tribal-trim shirt | 0.4 | 0.2-0.4 | cotton,embroidered cotton
+adobe-hued henley | 0.4 | 0.1-0.3 | cotton,hemp
+dust-streaked tee | 0.5 | 0.1-0.3 | cotton,hemp
+collarless button | 0.4 | 0.2-0.4 | linen,cotton
+desert-faded pullover | 0.3 | 0.2-0.4 | linen,gauze
+rolled-cuff shirt | 0.4 | 0.2-0.4 | linen,chambray

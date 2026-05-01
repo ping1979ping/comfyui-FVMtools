@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tactical backpack | 0.30 | 0.0-0.3 | synthetic,canvas
+chest rig pouch | 0.30 | 0.0-0.3 | synthetic,faux leather
+utility hip pack | 0.25 | 0.0-0.3 | canvas,synthetic
+strapped sling pack | 0.25 | 0.0-0.3 | synthetic
+industrial messenger | 0.25 | 0.0-0.3 | canvas
+buckled leg pouch | 0.25 | 0.0-0.3 | faux leather,synthetic
+heavy-duty duffel | 0.20 | 0.0-0.3 | canvas,synthetic

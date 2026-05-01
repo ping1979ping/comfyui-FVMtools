@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"DECAY" | 0.25 | top | distressed stencil
+"INDUSTRIAL" | 0.2 | top,outerwear | factory stencil
+"FALLOUT" | 0.25 | top | hazard font
+"COLLAPSE" | 0.2 | top | distressed stencil
+"WASTELAND" | 0.2 | top,outerwear | factory stencil
+"TOXIC" | 0.25 | top | hazard font
+"UNIT 0" | 0.15 | top | factory stencil
+"BLACKOUT" | 0.2 | top | distressed stencil
+"WARZONE" | 0.2 | top | military stencil
+"SCRAP" | 0.15 | top | factory stencil

@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+heritage cardigan | 0.6 | 0.2-0.4 | cotton,crochet
+70s denim-jacket | 0.5 | 0.2-0.4 | denim
+old-world waistcoat | 0.5 | 0.2-0.4 | cotton,linen
+vintage poncho | 0.4 | 0.2-0.4 | hemp,cotton
+embroidered grandpa-vest | 0.4 | 0.2-0.4 | cotton
+heritage blazer | 0.4 | 0.3-0.4 | linen,cotton
+caravan wrap | 0.3 | 0.2-0.4 | cotton,hemp
+patched heritage-jacket | 0.3 | 0.2-0.4 | cotton,denim

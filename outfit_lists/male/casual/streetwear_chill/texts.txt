@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VIBES" | 0.3 | top | bold sans-serif
+"EST 1999" | 0.2 | top | retro block
+"WORLD" | 0.2 | top | bold sans-serif
+"NYC" | 0.25 | top,headwear | retro block
+"YOUTH" | 0.2 | top | bold sans-serif
+"REAL ONES" | 0.2 | top | retro block
+"OFF DUTY" | 0.2 | top | clean modern
+"24/7" | 0.2 | top,headwear | bold sans-serif
+"KEEP IT" | 0.15 | top | retro block
+"NO SLEEP" | 0.2 | top | bold sans-serif
+"SAFE TRAVELS" | 0.15 | top | clean modern
+"HEAVY HITTERS" | 0.15 | top | retro block

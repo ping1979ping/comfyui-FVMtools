@@ -1,0 +1,13 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+mesh | 0.1 | sporty | light
+cotton | 0.2 | natural | medium
+synthetic | 0.2 | tough | medium
+PVC | 0.15 | tough | medium
+
+# mid-range fabrics
+faux leather | 0.25 | tough | medium
+
+# special materials
+metal | 0.5 | luxury | heavy

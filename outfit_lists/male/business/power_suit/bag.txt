@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+executive briefcase | 0.85 | 0.8-1.0 | leather
+attache case | 0.65 | 0.8-1.0 | leather
+slim portfolio | 0.55 | 0.8-1.0 | leather
+document folder | 0.45 | 0.8-1.0 | leather
+classic dispatch case | 0.40 | 0.8-1.0 | leather
+top-handle satchel | 0.35 | 0.7-0.9 | leather
+hard-sided briefcase | 0.45 | 0.8-1.0 | leather
+soft-sided portfolio | 0.40 | 0.7-0.9 | leather

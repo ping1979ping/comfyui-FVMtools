@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+topographic lines | 0.4 | top,outerwear,bag | 0.0-0.3
+mountain silhouette | 0.35 | top,outerwear,headwear | 0.0-0.3
+camo pattern | 0.3 | top,bottom,outerwear,bag | 0.0-0.3
+plaid check | 0.3 | top,outerwear | 0.1-0.4
+forest gradient | 0.25 | top,outerwear | 0.0-0.3
+sunbleached panel | 0.25 | top,outerwear | 0.0-0.3
+expedition badge | 0.35 | top,outerwear,bag | 0.0-0.3
+contour map graphic | 0.3 | top,outerwear,bag | 0.0-0.3
+park-service patch | 0.25 | top,outerwear,headwear | 0.0-0.3
+weatherproof seam-tape | 0.2 | outerwear | 0.0-0.3
+ridge-route graphic | 0.2 | top,outerwear | 0.0-0.3
+earth-tone block | 0.3 | top,bottom,outerwear | 0.0-0.3

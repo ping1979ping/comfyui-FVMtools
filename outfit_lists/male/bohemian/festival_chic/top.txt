@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embroidered festival-shirt | 0.7 | 0.2-0.4 | embroidered cotton,cotton
+sleeveless tunic | 0.6 | 0.1-0.3 | cotton,gauze
+loose tank | 0.6 | 0.1-0.3 | cotton,hemp
+peasant-style top | 0.5 | 0.2-0.4 | gauze,cotton
+open-weave shirt | 0.5 | 0.2-0.4 | crochet,cotton
+relaxed festival-tee | 0.6 | 0.1-0.3 | cotton,hemp
+boho-trim henley | 0.5 | 0.2-0.4 | cotton
+embellished pullover | 0.4 | 0.2-0.4 | embroidered cotton,cotton
+mesh-trim tank | 0.4 | 0.1-0.3 | cotton
+festival kaftan | 0.4 | 0.1-0.3 | gauze,muslin
+patterned tee | 0.5 | 0.1-0.3 | cotton
+sleeveless henley | 0.4 | 0.1-0.3 | cotton,hemp

@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+yoga mat carrier | 0.65 | 0.0-0.2 | hemp-weave,recycled-shell
+studio tote | 0.55 | 0.0-0.2 | hemp-weave,plant-leather
+
+# mid-casual
+soft drawstring bag | 0.40 | 0.0-0.2 | hemp-weave,recycled-shell
+foldable backpack | 0.40 | 0.0-0.2 | recycled-shell,hemp-weave
+mat-and-block carry | 0.35 | 0.0-0.2 | hemp-weave,recycled-shell
+crossbody pouch | 0.40 | 0.0-0.2 | recycled-shell,plant-leather
+bamboo-handle tote | 0.30 | 0.0-0.2 | hemp-weave,plant-leather

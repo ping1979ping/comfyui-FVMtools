@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mud-splattered tee | 0.70 | 0.0-0.2 | cotton
+worn band shirt | 0.70 | 0.0-0.2 | cotton
+flannel overshirt | 0.55 | 0.0-0.2 | cotton,wool
+faded long-sleeve | 0.55 | 0.0-0.2 | cotton
+striped rugby shirt | 0.40 | 0.0-0.2 | cotton
+mismatched layered tee | 0.50 | 0.0-0.2 | cotton
+distressed graphic tee | 0.55 | 0.0-0.2 | cotton
+loose henley | 0.45 | 0.0-0.2 | cotton,wool
+rain-soaked tank | 0.35 | 0.0-0.1 | cotton
+classic slogan tee | 0.50 | 0.0-0.2 | cotton
+crew neck sweatshirt | 0.45 | 0.0-0.2 | cotton,fleece

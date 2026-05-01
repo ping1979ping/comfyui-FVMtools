@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BASS" | 0.25 | top | neon font
+"RAVE" | 0.25 | top,headwear | rave lettering
+"NEON" | 0.25 | top | neon font
+"PULSE" | 0.2 | top | LED display font
+"DROP" | 0.2 | top | digital glitch
+"TECHNO" | 0.2 | top | futuristic font
+"VOLT" | 0.15 | top | neon font
+"SHOCK" | 0.15 | top | digital glitch
+"GLOW" | 0.2 | top,headwear | neon font
+"FREQUENCY" | 0.1 | top | LED display font

@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BRUNCH" | 0.2 | top | retro font
+"COFFEE" | 0.2 | top | handwritten script
+"SUNDAY" | 0.2 | top | retro font
+"SLOW" | 0.15 | top | clean modern
+"MIMOSA" | 0.15 | top | playful font
+"AVOCADO" | 0.15 | top | handwritten script
+"CHEERS" | 0.2 | top | retro block
+"LATTE" | 0.15 | top | playful font
+"YACHT CLUB" | 0.15 | top,headwear | vintage print
+"COASTAL" | 0.2 | top | clean modern
+"ROSE" | 0.15 | top | handwritten script
+"PALM" | 0.2 | top | retro block

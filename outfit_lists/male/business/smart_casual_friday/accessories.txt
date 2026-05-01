@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+casual strap watch | 0.85 | 0.4-0.8 | leather,metal
+woven belt | 0.55 | 0.3-0.6 | leather
+braided belt | 0.45 | 0.3-0.6 | leather
+casual dress belt | 0.75 | 0.5-0.8 | leather
+printed pocket square | 0.50 | 0.5-0.8 | cotton
+knit tie | 0.40 | 0.5-0.7 | wool,silk
+casual sunglasses | 0.55 | 0.3-0.7 | metal
+beaded bracelet | 0.30 | 0.3-0.5 | metal
+designer reading glasses | 0.40 | 0.4-0.7 | metal
+slim cardholder | 0.45 | 0.4-0.7 | leather
+woven-strap watch | 0.35 | 0.3-0.6 | canvas,metal
+casual bowtie | 0.20 | 0.5-0.7 | silk,cotton

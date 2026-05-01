@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PACE" | 0.2 | top | minimal sans-serif
+"MILES" | 0.2 | top | clean modern font
+"5K" | 0.15 | top | bold block letters
+"10K" | 0.15 | top | bold block letters
+"MARATHON" | 0.15 | top | athletic font
+"FINISH LINE" | 0.1 | top | impact font
+"RUNNER" | 0.2 | top | minimal sans-serif
+"TEMPO" | 0.2 | top | clean modern font
+"SUNRISE RUN" | 0.1 | top | minimal sans-serif
+"NEGATIVE SPLIT" | 0.1 | top | clean modern font
+"LONG RUN" | 0.15 | top | clean modern font

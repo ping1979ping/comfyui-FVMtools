@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+basic crew tee | 0.90 | 0.1-0.4 | cotton,jersey
+plain v-neck shirt | 0.70 | 0.1-0.3 | cotton,jersey
+classic polo | 0.65 | 0.3-0.5 | cotton,jersey
+soft henley top | 0.55 | 0.2-0.4 | cotton,jersey
+button-up shirt | 0.55 | 0.2-0.5 | cotton
+pullover hoodie | 0.65 | 0.1-0.3 | fleece,cotton
+crew sweatshirt | 0.60 | 0.2-0.4 | cotton,fleece
+ribbed tank top | 0.40 | 0.1-0.3 | cotton,jersey
+long sleeve top | 0.55 | 0.2-0.4 | cotton,jersey
+pocket tee | 0.55 | 0.1-0.3 | cotton,jersey
+stripe shirt | 0.45 | 0.2-0.4 | cotton
+oxford button-down | 0.50 | 0.3-0.5 | cotton

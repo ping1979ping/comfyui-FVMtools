@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WARM" | 0.2 | top | retro block
+"COZY" | 0.2 | top | handwritten script
+"COTTAGE" | 0.2 | top | vintage print
+"FIRESIDE" | 0.15 | top | retro font
+"CABIN" | 0.2 | top,headwear | vintage print
+"LODGE" | 0.2 | top,headwear | retro block
+"NORTH" | 0.2 | top | bold sans-serif
+"PINE" | 0.15 | top | clean modern
+"WOODSMAN" | 0.15 | top | retro font
+"MOUNTAIN" | 0.2 | top | vintage print
+"HEARTH" | 0.15 | top | handwritten script
+"BREW" | 0.2 | top | playful font

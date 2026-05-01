@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored chinos | 0.75 | 0.3-0.5 | cotton
+washed jeans | 0.75 | 0.2-0.4 | denim
+linen pants | 0.50 | 0.3-0.5 | cotton
+tailored shorts | 0.55 | 0.2-0.4 | cotton
+seersucker pants | 0.30 | 0.3-0.5 | cotton
+slim trousers | 0.50 | 0.3-0.5 | cotton
+cropped chinos | 0.45 | 0.2-0.4 | cotton
+five-pocket pants | 0.45 | 0.2-0.4 | cotton
+relaxed jeans | 0.55 | 0.2-0.4 | denim
+bermuda shorts | 0.40 | 0.2-0.4 | cotton

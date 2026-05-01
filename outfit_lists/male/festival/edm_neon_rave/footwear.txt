@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky white sneakers | 0.70 | 0.0-0.2 | leather,rubber
+LED light-up sneakers | 0.55 | 0.0-0.2 | polyester,rubber
+glow trainers | 0.50 | 0.0-0.2 | polyester,rubber
+chrome high-tops | 0.40 | 0.0-0.2 | vinyl
+neon platform sneakers | 0.45 | 0.0-0.2 | polyester
+techno boots | 0.35 | 0.0-0.2 | leather,rubber
+holographic slides | 0.30 | 0.0-0.2 | vinyl
+mesh-panel runners | 0.50 | 0.0-0.2 | mesh,rubber
+reflective hi-tops | 0.40 | 0.0-0.2 | polyester,rubber
+sock trainers | 0.35 | 0.0-0.2 | knit,rubber

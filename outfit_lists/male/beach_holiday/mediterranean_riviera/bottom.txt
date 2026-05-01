@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored shorts | 0.70 | 0.2-0.5 | cotton,viscose
+short swim trunks | 0.65 | 0.0-0.2 | nylon,polyester
+chino shorts | 0.60 | 0.1-0.4 | cotton
+cropped trousers | 0.55 | 0.2-0.5 | cotton,viscose
+white deck shorts | 0.50 | 0.2-0.5 | cotton,polyester
+pleated resort shorts | 0.45 | 0.2-0.5 | cotton,viscose
+relaxed beach pants | 0.40 | 0.2-0.4 | viscose,modal
+slim swim shorts | 0.55 | 0.0-0.2 | nylon,polyester

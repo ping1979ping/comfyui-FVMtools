@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+silver fang pendant | 0.50 | 0.2-0.7 | metal
+ruby brooch | 0.50 | 0.4-0.8 | metal
+ornate cufflinks | 0.50 | 0.4-0.8 | metal
+soft cravat tie | 0.50 | 0.3-0.7 | silk
+silver pocket watch | 0.45 | 0.3-0.7 | metal
+ornate signet ring | 0.50 | 0.3-0.7 | metal
+black evening gloves | 0.45 | 0.4-0.8 | leather,silk
+ebony walking cane | 0.40 | 0.4-0.8 | metal,wood
+gilded chalice pendant | 0.30 | 0.3-0.7 | metal
+crimson silk pocket square | 0.45 | 0.4-0.8 | silk

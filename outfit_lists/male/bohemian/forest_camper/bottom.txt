@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+woodsman trousers | 0.7 | 0.2-0.4 | cotton,hemp
+forager pants | 0.6 | 0.2-0.4 | cotton
+weathered camp-jeans | 0.6 | 0.2-0.4 | denim
+patched trail-pants | 0.5 | 0.2-0.4 | cotton
+cargo trousers | 0.6 | 0.2-0.4 | cotton,hemp
+moss-toned chinos | 0.5 | 0.2-0.4 | cotton
+relaxed forester-pants | 0.5 | 0.2-0.4 | cotton,hemp
+camp shorts | 0.4 | 0.1-0.3 | cotton
+roll-cuff jeans | 0.4 | 0.2-0.4 | denim
+woods-style breeches | 0.3 | 0.2-0.4 | cotton

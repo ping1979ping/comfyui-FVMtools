@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WOD" | 0.25 | top | bold block letters
+"AMRAP" | 0.2 | top | bold industrial
+"BOX" | 0.2 | top | impact font
+"FRAN" | 0.15 | top | bold block letters
+"MURPH" | 0.15 | top | bold industrial
+"PR" | 0.2 | top | impact font
+"FORGED" | 0.2 | top | bold industrial
+"BARBELL CLUB" | 0.15 | top | bold block letters
+"CHALK UP" | 0.15 | top | impact font
+"REPS" | 0.2 | top | bold industrial
+"NO QUIT" | 0.15 | top | bold block letters
+"SQUAT EVERY DAY" | 0.1 | top | impact font

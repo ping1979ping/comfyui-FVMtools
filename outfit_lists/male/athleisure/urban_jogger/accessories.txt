@@ -1,0 +1,17 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+chain necklace | 0.40 | 0.0-0.3 | sterling-silver
+beaded bracelet | 0.30 | 0.0-0.2 | resin-bead
+
+# mid-casual
+crossbody pouch | 0.50 | 0.1-0.3 | techweave,split-suede
+oversized sunglasses | 0.55 | 0.1-0.3 | acetate,sterling-silver
+techwear watch | 0.55 | 0.1-0.3 | resin-bead,sterling-silver
+canvas wristlet | 0.30 | 0.0-0.2 | woven-textile
+silver pendant | 0.35 | 0.0-0.3 | sterling-silver
+techwear belt | 0.45 | 0.1-0.3 | webbing-strap,resin-bead
+fingerless gloves | 0.30 | 0.0-0.2 | split-suede,woven-textile
+sock-cuff straps | 0.25 | 0.0-0.2 | webbing-strap
+phone-clip lanyard | 0.30 | 0.0-0.2 | webbing-strap,resin-bead

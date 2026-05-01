@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+plaid flannel-shirt | 0.7 | 0.2-0.4 | cotton
+moss-green henley | 0.7 | 0.1-0.3 | cotton,hemp
+woodsman pullover | 0.6 | 0.2-0.4 | cotton,hemp
+campsite button-down | 0.6 | 0.2-0.4 | cotton
+weathered woods-tee | 0.6 | 0.1-0.3 | cotton
+bark-toned tunic | 0.5 | 0.2-0.4 | linen,cotton
+forager shirt | 0.5 | 0.2-0.4 | cotton,linen
+patched outdoor-shirt | 0.4 | 0.2-0.4 | cotton
+mossy thermal | 0.5 | 0.1-0.3 | cotton,hemp
+camp-style henley | 0.5 | 0.1-0.3 | cotton
+woodsman pullover-tee | 0.4 | 0.1-0.3 | cotton
+trail flannel | 0.4 | 0.2-0.4 | cotton

@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport sunglasses | 0.80 | 0.0-0.3 | plastic
+rugged adventure watch | 0.65 | 0.0-0.3 | plastic,rubber
+paracord bracelet | 0.50 | 0.0-0.2 | nylon
+compass on cord | 0.40 | 0.0-0.3 | metal
+binoculars on strap | 0.35 | 0.0-0.3 | metal
+buff neck gaiter | 0.50 | 0.0-0.3 | polyester
+utility belt | 0.40 | 0.0-0.3 | nylon
+multi-tool clip | 0.30 | 0.0-0.2 | metal
+hydration pack tube | 0.30 | 0.0-0.2 | plastic
+sunscreen stick on cord | 0.35 | 0.0-0.2 | plastic
+conch pendant | 0.30 | 0.0-0.2 | shell

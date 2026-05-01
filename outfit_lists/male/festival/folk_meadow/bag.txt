@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+woven shoulder bag | 0.55 | 0.0-0.2 | jute,cotton
+classic satchel | 0.50 | 0.1-0.3 | leather
+embroidered tote | 0.45 | 0.1-0.3 | cotton
+hand-stitched messenger | 0.45 | 0.1-0.3 | cotton
+folk-pattern crossbody | 0.40 | 0.1-0.3 | wool
+canvas rucksack | 0.45 | 0.0-0.2 | cotton
+small leather pouch | 0.40 | 0.1-0.3 | leather

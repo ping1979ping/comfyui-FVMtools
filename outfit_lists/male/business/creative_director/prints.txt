@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+abstract art print | 0.50 | top,outerwear | 0.4-0.7
+asymmetric color-blocking | 0.45 | top,outerwear | 0.5-0.8
+hand-drawn motif | 0.40 | top | 0.4-0.7
+bold geometric | 0.45 | top,outerwear | 0.4-0.7
+solid jet black | 0.65 | top,bottom,outerwear | 0.5-0.9
+solid ivory | 0.50 | top,outerwear | 0.5-0.9
+brushstroke pattern | 0.40 | top | 0.4-0.7
+designer logo print | 0.35 | top,outerwear | 0.4-0.7
+minimal line drawing | 0.40 | top | 0.4-0.7
+tonal stripe | 0.40 | top,outerwear | 0.5-0.8

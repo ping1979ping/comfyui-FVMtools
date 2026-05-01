@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+face glitter | 0.65 | 0.0-0.1 | none
+star-shaped sunglasses | 0.55 | 0.0-0.2 | plastic
+chunky gold chain | 0.55 | 0.1-0.3 | metal
+rhinestone choker | 0.40 | 0.1-0.3 | metal
+disco gloves | 0.35 | 0.0-0.2 | sequin
+sparkle wristband | 0.45 | 0.0-0.1 | sequin
+glitter eye-makeup detail | 0.50 | 0.0-0.1 | none
+metallic temporary tattoo | 0.40 | 0.0-0.1 | foil
+embellished scarf | 0.30 | 0.1-0.3 | sequin
+gold ring stack | 0.40 | 0.1-0.3 | metal

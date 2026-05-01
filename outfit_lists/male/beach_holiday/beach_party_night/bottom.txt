@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim swim shorts | 0.60 | 0.0-0.2 | nylon,polyester
+fitted shorts | 0.65 | 0.1-0.4 | cotton,viscose
+drawstring shorts | 0.55 | 0.1-0.4 | viscose,rayon
+cropped party pants | 0.50 | 0.2-0.5 | viscose
+neon trunks | 0.50 | 0.0-0.2 | nylon,polyester
+short tailored shorts | 0.55 | 0.2-0.5 | cotton
+glittery shorts | 0.30 | 0.1-0.4 | polyester
+loose drawstring trousers | 0.45 | 0.1-0.4 | viscose,rayon

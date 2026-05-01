@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+running shorts | 0.70 | 0.0-0.1 | dri-knit,microfiber
+split-leg shorts | 0.50 | 0.0-0.1 | dri-knit,microfiber
+half-tights | 0.40 | 0.0-0.2 | spandex,microfiber
+
+# mid-casual
+training tights | 0.55 | 0.0-0.2 | spandex,microfiber
+compression leggings | 0.50 | 0.0-0.2 | spandex,microfiber
+running joggers | 0.55 | 0.1-0.3 | dri-knit,microfiber
+five-inch shorts | 0.55 | 0.0-0.1 | dri-knit,microfiber
+seven-inch shorts | 0.50 | 0.0-0.1 | dri-knit,microfiber
+warm-up pants | 0.40 | 0.1-0.3 | dri-knit,microfiber

@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+hiking sandals | 0.70 | 0.0-0.3 | rubber,nylon
+sport sandals | 0.65 | 0.0-0.3 | rubber,nylon
+trail runners | 0.55 | 0.0-0.3 | polyester,rubber
+water shoes | 0.55 | 0.0-0.2 | nylon,rubber
+amphibious shoes | 0.50 | 0.0-0.2 | nylon,rubber
+slide sandals | 0.45 | 0.0-0.2 | rubber
+canvas low-tops | 0.40 | 0.0-0.3 | cotton
+lightweight boots | 0.35 | 0.1-0.4 | leather

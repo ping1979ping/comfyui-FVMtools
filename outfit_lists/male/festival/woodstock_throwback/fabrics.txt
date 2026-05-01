@@ -1,0 +1,25 @@
+# format: fabric_name | formality | family | weight
+
+# 70s basics
+cotton | 0.15 | natural | light
+denim | 0.2 | tough | heavy
+polyester | 0.15 | sporty | light
+corduroy | 0.2 | natural | medium
+linen | 0.2 | natural | light
+
+# 70s specials
+suede | 0.25 | tough | medium
+crochet | 0.15 | casual | light
+rayon | 0.1 | casual | light
+sheepskin | 0.3 | tough | heavy
+wool | 0.3 | natural | medium
+
+# structured
+leather | 0.25 | tough | medium
+rubber | 0.05 | sporty | medium
+
+# accessories
+metal | 0.2 | accessory | light
+wood | 0.1 | natural | light
+hemp | 0.1 | natural | light
+jute | 0.1 | natural | light

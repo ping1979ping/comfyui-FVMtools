@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+quartz pendant | 0.55 | 0.0-0.4 | metal,crystal
+silver ankh necklace | 0.50 | 0.0-0.4 | metal
+moon-and-stars choker | 0.45 | 0.0-0.4 | metal
+sigil ring set | 0.50 | 0.0-0.4 | metal
+amulet pouch | 0.45 | 0.0-0.4 | velvet,silk
+ornate bone bracelet | 0.40 | 0.0-0.4 | bone,metal
+chain belt with charms | 0.40 | 0.0-0.4 | metal
+ritual gauntlets | 0.40 | 0.1-0.5 | leather,suede
+hexagram pendant | 0.40 | 0.0-0.4 | metal
+ornate raven brooch | 0.40 | 0.1-0.5 | metal

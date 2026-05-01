@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic fedora | 0.10 | 0.8-1.0 | felt
+homburg | 0.08 | 0.8-1.0 | felt
+trilby hat | 0.07 | 0.7-0.9 | felt

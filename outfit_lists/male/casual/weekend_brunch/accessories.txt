@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dress watch | 0.65 | 0.3-0.5 | metal
+tortoise sunglasses | 0.65 | 0.2-0.4 | plastic
+woven belt | 0.55 | 0.2-0.4 | leather
+silk pocket square | 0.30 | 0.3-0.5 | cotton
+slim tie | 0.25 | 0.3-0.5 | cotton
+brimmed straw | 0.30 | 0.2-0.4 | canvas
+suede loafer belt | 0.30 | 0.3-0.5 | leather
+sterling ring | 0.25 | 0.2-0.4 | metal

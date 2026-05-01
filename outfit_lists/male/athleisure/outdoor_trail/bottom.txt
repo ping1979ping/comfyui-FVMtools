@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+hiking shorts | 0.60 | 0.0-0.2 | softshell,synthetic
+trail shorts | 0.55 | 0.0-0.2 | synthetic,spandex
+
+# mid-casual
+convertible pants | 0.45 | 0.0-0.3 | softshell,synthetic
+ridge pants | 0.55 | 0.0-0.3 | softshell,synthetic
+climbing trousers | 0.50 | 0.0-0.3 | brushed-cotton,spandex
+alpine pants | 0.50 | 0.0-0.3 | softshell,fleece-knit
+cargo trekkers | 0.45 | 0.0-0.3 | brushed-cotton,synthetic
+roll-up bush pants | 0.35 | 0.0-0.3 | brushed-cotton,synthetic
+trail tights | 0.30 | 0.0-0.2 | spandex,synthetic

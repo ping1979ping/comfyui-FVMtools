@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+waterproof drybag | 0.60 | 0.0-0.2 | nylon
+classic rucksack | 0.55 | 0.0-0.2 | cotton,nylon
+army surplus shoulder bag | 0.50 | 0.0-0.2 | cotton
+oversized tote bag | 0.40 | 0.0-0.2 | cotton
+mud-splattered fanny pack | 0.50 | 0.0-0.2 | nylon
+rolled blanket sling | 0.30 | 0.0-0.2 | wool
+small chest pouch | 0.40 | 0.0-0.2 | nylon
+camping daypack | 0.45 | 0.0-0.2 | nylon

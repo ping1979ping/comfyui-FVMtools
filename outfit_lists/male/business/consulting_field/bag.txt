@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rolling laptop case | 0.65 | 0.6-0.9 | nylon,polyester
+backpack briefcase | 0.55 | 0.6-0.8 | nylon,leather
+business tote | 0.50 | 0.6-0.9 | leather
+travel duffel | 0.45 | 0.5-0.7 | nylon,canvas
+slim laptop sleeve | 0.55 | 0.6-0.9 | leather,nylon
+weekender bag | 0.40 | 0.5-0.7 | leather,canvas
+hybrid messenger | 0.50 | 0.6-0.8 | leather,nylon
+client-pitch portfolio | 0.45 | 0.7-1.0 | leather

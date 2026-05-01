@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+romantic rose motif | 0.45 | top,outerwear | 0.1-0.5
+ornate scroll embroidery | 0.4 | top,outerwear | 0.2-0.6
+filigree detail | 0.4 | top,accessories | 0.2-0.6
+weeping willow motif | 0.3 | top,outerwear | 0.2-0.6
+black floral pattern | 0.4 | top | 0.1-0.5
+heart and dagger emblem | 0.3 | top | 0.0-0.4
+ornate vine pattern | 0.35 | top,outerwear | 0.2-0.6
+ribbon trim | 0.4 | top,accessories | 0.0-0.4
+gothic poetry script | 0.3 | top | 0.1-0.5
+silver thread filigree | 0.3 | top,outerwear | 0.3-0.7
+moonlit motif | 0.3 | top,outerwear | 0.1-0.5
+romantic crest | 0.3 | top,outerwear | 0.2-0.6

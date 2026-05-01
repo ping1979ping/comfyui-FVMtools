@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+smartwatch | 0.85 | 0.3-0.7 | metal,polyester
+minimalist watch | 0.75 | 0.4-0.8 | metal,leather
+modern eyeglasses | 0.65 | 0.3-0.8 | metal
+sleek belt | 0.65 | 0.4-0.7 | leather
+designer sneaker laces | 0.30 | 0.3-0.5 | nylon
+modern lanyard | 0.45 | 0.3-0.6 | nylon
+wireless earbuds case | 0.40 | 0.3-0.6 | polyester
+slim cardholder | 0.55 | 0.4-0.7 | leather
+silver chain bracelet | 0.30 | 0.3-0.6 | metal
+modern signet ring | 0.25 | 0.3-0.6 | metal
+techwear watch strap | 0.35 | 0.3-0.5 | nylon,polyester
+modern sunglasses | 0.55 | 0.3-0.7 | metal

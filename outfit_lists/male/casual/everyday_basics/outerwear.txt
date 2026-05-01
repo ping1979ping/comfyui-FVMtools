@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pullover hoody | 0.65 | 0.1-0.3 | fleece,cotton
+zip-front jacket | 0.55 | 0.2-0.4 | nylon,polyester
+classic jean jacket | 0.65 | 0.2-0.4 | denim
+trucker jacket | 0.45 | 0.2-0.4 | denim
+field coat | 0.35 | 0.3-0.5 | cotton
+light bomber | 0.45 | 0.2-0.4 | nylon,polyester
+zip hoody | 0.55 | 0.1-0.3 | fleece,cotton
+unlined shacket | 0.40 | 0.2-0.4 | cotton,flannel
+shell windbreaker | 0.35 | 0.1-0.3 | nylon,polyester
+quilted vest | 0.30 | 0.2-0.3 | nylon,polyester

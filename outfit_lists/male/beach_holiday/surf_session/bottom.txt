@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+board shorts | 0.90 | 0.0-0.2 | nylon,polyester
+performance trunks | 0.75 | 0.0-0.2 | nylon,polyester
+short wetsuit bottoms | 0.55 | 0.0-0.2 | neoprene
+quick-dry shorts | 0.70 | 0.0-0.2 | nylon,polyester
+mid-length surf trunks | 0.70 | 0.0-0.2 | nylon,polyester
+boardies | 0.65 | 0.0-0.2 | nylon,polyester
+sun-faded swim shorts | 0.55 | 0.0-0.2 | nylon,polyester

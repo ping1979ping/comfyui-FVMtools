@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# formal
+pocket watch | 0.55 | 0.3-0.7 | metal
+silver mourning brooch | 0.45 | 0.4-0.8 | metal
+walking cane | 0.40 | 0.4-0.8 | metal,wood
+black armband | 0.50 | 0.3-0.7 | wool,silk
+soft cravat tie | 0.50 | 0.3-0.7 | silk
+mourning gloves | 0.50 | 0.3-0.7 | leather,silk
+signet ring | 0.45 | 0.3-0.7 | metal
+monocle | 0.30 | 0.4-0.8 | metal,glass
+silver cross pendant | 0.45 | 0.2-0.6 | metal
+ornate cufflinks | 0.40 | 0.4-0.8 | metal

@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky sneakers | 0.80 | 0.1-0.3 | leather,mesh
+skate shoes | 0.65 | 0.1-0.3 | canvas,leather
+basketball shoes | 0.55 | 0.1-0.3 | leather,mesh
+trail runners | 0.45 | 0.1-0.3 | mesh,rubber
+dad sneakers | 0.55 | 0.1-0.3 | leather,mesh
+running shoes | 0.50 | 0.1-0.2 | mesh,rubber
+slides | 0.40 | 0.1-0.2 | rubber
+hi-top kicks | 0.45 | 0.1-0.3 | canvas,leather
+classic court shoes | 0.50 | 0.1-0.3 | leather
+gum-sole sneakers | 0.40 | 0.1-0.3 | canvas,leather

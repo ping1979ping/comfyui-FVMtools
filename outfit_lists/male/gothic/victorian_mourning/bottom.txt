@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tailored breeches | 0.50 | 0.3-0.7 | wool,cotton
+pinstripe trousers | 0.55 | 0.3-0.7 | wool
+mourning slacks | 0.50 | 0.3-0.7 | wool
+striped cigarette pants | 0.45 | 0.2-0.6 | wool,cotton
+formal black trousers | 0.55 | 0.4-0.8 | wool,silk
+funeral knickerbockers | 0.30 | 0.3-0.7 | wool
+high-waisted dress pants | 0.45 | 0.3-0.7 | wool

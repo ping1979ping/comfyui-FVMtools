@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky platform sandals | 0.50 | 0.1-0.4 | rubber,leather
+strap sandals | 0.55 | 0.1-0.4 | leather
+fashion slides | 0.50 | 0.0-0.2 | rubber
+white sneakers | 0.55 | 0.1-0.4 | cotton,polyester
+flip-flops | 0.45 | 0.0-0.1 | rubber
+loafers | 0.40 | 0.2-0.5 | leather
+metallic slip-ons | 0.30 | 0.2-0.5 | leather
+ankle boots | 0.30 | 0.2-0.5 | leather

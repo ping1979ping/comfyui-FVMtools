@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+trail runners | 0.65 | 0.0-0.2 | engineered-mesh,synthetic
+approach shoes | 0.50 | 0.0-0.2 | suede-leather,engineered-mesh
+
+# mid-casual
+mid hiking boots | 0.55 | 0.0-0.3 | suede-leather,engineered-mesh
+low-cut hikers | 0.50 | 0.0-0.3 | engineered-mesh,suede-leather
+waterproof boots | 0.40 | 0.0-0.3 | full-grain-leather,gore-tex
+waterproof sneakers | 0.45 | 0.0-0.3 | gore-tex,engineered-mesh
+hybrid trail boots | 0.40 | 0.0-0.3 | suede-leather,gore-tex
+camp slippers | 0.35 | 0.0-0.2 | brushed-cotton,fleece-knit
+backcountry shoes | 0.45 | 0.0-0.3 | engineered-mesh,suede-leather

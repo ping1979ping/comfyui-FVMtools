@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+drawstring lounge trousers | 0.65 | 0.1-0.3 | linen
+worn corduroys | 0.50 | 0.1-0.3 | corduroy
+relaxed canvas trousers | 0.55 | 0.0-0.2 | cotton
+straight-leg jeans | 0.50 | 0.1-0.3 | denim
+folk-pattern trousers | 0.40 | 0.1-0.3 | wool
+rolled-up walking pants | 0.45 | 0.0-0.2 | cotton
+herringbone trousers | 0.35 | 0.2-0.4 | wool
+loose meadow shorts | 0.45 | 0.0-0.2 | cotton
+patched workwear pants | 0.40 | 0.0-0.2 | cotton
+plain pull-on slacks | 0.40 | 0.1-0.3 | cotton

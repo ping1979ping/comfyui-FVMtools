@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mirrored sunglasses | 0.75 | 0.0-0.2 | plastic
+sport watch | 0.55 | 0.0-0.2 | plastic,rubber
+surf leash on ankle | 0.55 | 0.0-0.2 | nylon
+puka choker | 0.45 | 0.0-0.2 | shell
+braided cord necklace | 0.40 | 0.0-0.2 | cotton
+zinc nose paint | 0.50 | 0.0-0.2 | plastic
+silicone wristband | 0.40 | 0.0-0.2 | rubber
+water-resistant wallet strap | 0.30 | 0.0-0.2 | neoprene
+hemp anklet | 0.30 | 0.0-0.2 | cotton
+woven thumb ring | 0.25 | 0.0-0.2 | metal

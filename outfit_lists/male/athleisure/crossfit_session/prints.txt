@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+box-gym crest | 0.4 | top,headwear,bag | 0.0-0.3
+barbell graphic | 0.4 | top | 0.0-0.2
+WOD lettering | 0.3 | top | 0.0-0.2
+heather speckle | 0.5 | top,bottom,outerwear | 0.0-0.3
+performance camo | 0.3 | top,bottom,outerwear | 0.0-0.3
+strength badge | 0.35 | top,outerwear,headwear | 0.0-0.3
+flag-and-eagle motif | 0.25 | top,outerwear | 0.0-0.2
+chalk-dust pattern | 0.25 | top,bottom | 0.0-0.2
+arrow stripe | 0.3 | top,bottom,outerwear | 0.0-0.3
+neon trim | 0.3 | top,outerwear,footwear | 0.0-0.2
+blocked color panels | 0.4 | top,bottom,outerwear | 0.0-0.3

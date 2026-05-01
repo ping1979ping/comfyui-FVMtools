@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BASIC" | 0.2 | top | bold sans-serif
+"CLASSIC" | 0.2 | top | retro font
+"EVERYDAY" | 0.15 | top | clean modern
+"SIMPLE" | 0.2 | top | casual sans-serif
+"PLAIN" | 0.15 | top | bold sans-serif
+"NORMAL" | 0.15 | top | clean modern
+"RAW" | 0.2 | top | retro block
+"REAL" | 0.15 | top | bold sans-serif
+"NO LOGO" | 0.15 | top | clean modern
+"OG" | 0.2 | top,headwear | retro block
+"STAPLE" | 0.15 | top | clean modern
+"DAILY" | 0.2 | top | casual sans-serif

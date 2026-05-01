@@ -1,0 +1,19 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+synthetic | 0.15 | sporty | light
+spandex | 0.1 | sporty | light
+softshell | 0.2 | sporty | medium
+brushed-cotton | 0.2 | natural | medium
+fleece-knit | 0.15 | casual | medium
+
+# special materials
+merino-blend | 0.3 | natural | medium
+gore-tex | 0.25 | sporty | medium
+suede-leather | 0.5 | luxury | medium
+full-grain-leather | 0.55 | luxury | heavy
+down-fill | 0.25 | casual | light
+engineered-mesh | 0.15 | sporty | light
+aluminum | 0.5 | luxury | heavy
+foam-grip | 0.15 | sporty | light
+paracord | 0.2 | sporty | light

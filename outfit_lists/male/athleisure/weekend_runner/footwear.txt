@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neutral road shoes | 0.65 | 0.0-0.2 | engineered-knit,microfiber
+stability runners | 0.50 | 0.0-0.2 | engineered-knit,microfiber
+
+# mid-casual
+plated racers | 0.45 | 0.0-0.2 | engineered-knit,microfiber
+foam-cushioned trainers | 0.55 | 0.0-0.2 | engineered-knit,microfiber
+tempo runners | 0.50 | 0.0-0.2 | engineered-knit,microfiber
+recovery slides | 0.40 | 0.0-0.1 | foam,microfiber
+lightweight flats | 0.35 | 0.0-0.2 | engineered-knit,microfiber
+hybrid trainers | 0.45 | 0.0-0.3 | engineered-knit,microfiber
+carbon-plate racers | 0.30 | 0.0-0.2 | engineered-knit,microfiber

@@ -1,0 +1,13 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+dri-knit | 0.1 | sporty | light
+microfiber | 0.15 | sporty | light
+spandex | 0.1 | sporty | light
+ripstop | 0.2 | sporty | light
+
+# special materials
+engineered-knit | 0.15 | sporty | light
+foam | 0.1 | sporty | light
+silicone | 0.15 | sporty | light
+acetate | 0.4 | luxury | light

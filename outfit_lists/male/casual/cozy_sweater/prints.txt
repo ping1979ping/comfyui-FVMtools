@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+cable stitch | 0.5 | top,outerwear | 0.2-0.5
+fair isle motif | 0.5 | top,outerwear | 0.2-0.5
+nordic snowflake | 0.4 | top,outerwear,headwear | 0.2-0.5
+ribbed texture | 0.5 | top | 0.2-0.5
+herringbone weave | 0.4 | outerwear,bottom | 0.3-0.5
+chunky aran stitch | 0.5 | top,outerwear | 0.2-0.5
+plaid check | 0.5 | top,outerwear | 0.2-0.5
+windowpane check | 0.3 | outerwear | 0.3-0.5
+heather marled tone | 0.5 | top,outerwear | 0.2-0.5
+buffalo check | 0.4 | top,outerwear | 0.1-0.4
+elbow patch detail | 0.3 | top,outerwear | 0.2-0.5
+deer motif | 0.3 | top | 0.2-0.5

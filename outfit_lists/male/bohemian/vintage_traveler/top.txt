@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+old-world button-down | 0.7 | 0.2-0.4 | linen,cotton
+70s henley | 0.6 | 0.2-0.4 | cotton
+heritage open-collar | 0.6 | 0.2-0.4 | linen,chambray
+retro pullover | 0.6 | 0.2-0.4 | cotton,hemp
+tweedy waistcoat-shirt | 0.4 | 0.3-0.4 | cotton
+embroidered grandpa-shirt | 0.5 | 0.2-0.4 | embroidered cotton,cotton
+faded poet-shirt | 0.4 | 0.2-0.4 | gauze,cotton
+heritage tunic | 0.4 | 0.1-0.3 | linen,cotton
+turn-of-century shirt | 0.4 | 0.2-0.4 | linen,cotton
+70s collar shirt | 0.5 | 0.2-0.4 | cotton
+weathered grandpa-tee | 0.5 | 0.1-0.3 | cotton,hemp
+caravan-style top | 0.4 | 0.2-0.4 | cotton,linen

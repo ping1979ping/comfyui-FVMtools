@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+camp collar shirt | 0.70 | 0.1-0.4 | rayon,viscose
+short-sleeve button-up | 0.65 | 0.1-0.4 | cotton,viscose
+relaxed pullover tee | 0.55 | 0.0-0.2 | cotton
+loose henley | 0.50 | 0.0-0.3 | cotton,modal
+short-sleeve knit polo | 0.55 | 0.1-0.4 | cotton
+roomy resort shirt | 0.55 | 0.1-0.4 | viscose,rayon
+breezy oxford | 0.50 | 0.2-0.5 | cotton
+cabana button-up | 0.50 | 0.1-0.4 | rayon,viscose
+linen-blend shirt | 0.55 | 0.1-0.4 | cotton,viscose
+crew tee | 0.50 | 0.0-0.2 | cotton

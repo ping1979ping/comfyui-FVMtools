@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+premium white sneakers | 0.85 | 0.3-0.6 | leather
+minimalist runners | 0.70 | 0.3-0.5 | nylon,leather
+designer high-tops | 0.55 | 0.3-0.5 | leather
+clean court sneakers | 0.75 | 0.4-0.7 | leather
+chelsea boots | 0.60 | 0.5-0.8 | leather,suede
+slip-on casual shoes | 0.50 | 0.3-0.5 | leather,canvas
+soft chukka boots | 0.45 | 0.4-0.7 | suede
+modern loafers | 0.55 | 0.5-0.7 | leather
+zero-drop running shoes | 0.40 | 0.3-0.5 | nylon
+sleek mules | 0.30 | 0.4-0.6 | leather

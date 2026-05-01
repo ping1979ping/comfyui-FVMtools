@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ruffled poet shirt | 0.55 | 0.2-0.6 | silk,satin
+embroidered dress shirt | 0.50 | 0.3-0.7 | silk,satin
+high collar blouse | 0.50 | 0.3-0.7 | silk
+ornate jabot shirt | 0.45 | 0.4-0.8 | silk,satin
+plunging V-neck shirt | 0.45 | 0.2-0.6 | silk,satin
+gilded ornate vest | 0.50 | 0.4-0.8 | brocade,silk
+pleated dandy shirt | 0.45 | 0.3-0.7 | silk,cotton
+ornate ascot shirt | 0.40 | 0.3-0.7 | silk,satin
+crimson-lined waistcoat | 0.50 | 0.4-0.8 | silk,brocade
+gothic tuxedo shirt | 0.45 | 0.5-0.9 | silk,satin

@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mirrored sunglasses | 0.65 | 0.0-0.2 | metal,plastic
+beaded mala necklace | 0.55 | 0.1-0.3 | wood
+woven friendship band | 0.50 | 0.0-0.1 | cotton
+brass cuff bracelet | 0.40 | 0.1-0.3 | metal
+floral garland | 0.45 | 0.0-0.2 | none
+festival face paint | 0.55 | 0.0-0.1 | none
+scallop necklace | 0.40 | 0.0-0.2 | shell
+embroidered scarf | 0.35 | 0.1-0.3 | cotton
+toe ring set | 0.30 | 0.0-0.2 | metal
+hand henna tattoo | 0.50 | 0.0-0.2 | none

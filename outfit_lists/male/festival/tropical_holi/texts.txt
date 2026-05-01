@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"HOLI" | 0.3 | top,headwear | hindi-style font
+"COLOR" | 0.25 | top | rainbow font
+"FESTIVAL" | 0.2 | top | hindi-style font
+"VIBES" | 0.2 | top | brush script
+"JOY" | 0.2 | top | rainbow font
+"DHOLI" | 0.15 | top | hindi-style font
+"RANGOLI" | 0.15 | top | hindi-style font
+"BHANG" | 0.15 | top | brush script
+"NAMASTE" | 0.2 | top | hindi-style font
+"SHANTI" | 0.15 | top | hindi-style font

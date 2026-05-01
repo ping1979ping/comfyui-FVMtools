@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+hibiscus motif | 0.5 | top,bottom | 0.0-0.4
+palm leaf design | 0.5 | top,bottom | 0.0-0.4
+toucan print | 0.3 | top | 0.0-0.3
+pineapple pattern | 0.3 | top,bottom | 0.0-0.3
+banana leaf design | 0.4 | top | 0.0-0.4
+parrot motif | 0.25 | top | 0.0-0.3
+mango print | 0.2 | top | 0.0-0.3
+coconut palm pattern | 0.4 | top,bottom | 0.0-0.4
+sunset gradient | 0.3 | top | 0.0-0.3
+tiki design | 0.2 | top | 0.0-0.2

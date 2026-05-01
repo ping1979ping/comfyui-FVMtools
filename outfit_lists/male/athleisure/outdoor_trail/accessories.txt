@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+trekking poles | 0.30 | 0.0-0.2 | aluminum,foam-grip
+sun gaiter | 0.40 | 0.0-0.2 | synthetic,spandex
+
+# mid-casual
+gloves | 0.40 | 0.0-0.3 | softshell,fleece-knit
+sport sunglasses | 0.55 | 0.0-0.3 | acetate,foam-grip
+gaiters | 0.30 | 0.0-0.3 | softshell,synthetic
+multi-tool pouch | 0.30 | 0.0-0.2 | synthetic,full-grain-leather
+compass holder | 0.20 | 0.0-0.2 | synthetic,full-grain-leather
+expedition watch | 0.50 | 0.0-0.3 | aluminum,foam-grip
+paracord bracelet | 0.30 | 0.0-0.2 | paracord,aluminum
+neck buff | 0.45 | 0.0-0.2 | merino-blend,synthetic

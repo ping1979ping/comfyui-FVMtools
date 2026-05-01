@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+round wire-frame glasses | 0.55 | 0.1-0.3 | metal
+braided leather bracelet | 0.50 | 0.0-0.2 | leather
+wooden bead necklace | 0.50 | 0.0-0.2 | wood
+folk-knit scarf | 0.45 | 0.1-0.3 | wool
+hand-carved pendant | 0.40 | 0.1-0.3 | wood
+woven friendship band | 0.45 | 0.0-0.1 | hemp
+classic pocket watch | 0.30 | 0.2-0.4 | metal
+embroidered handkerchief | 0.35 | 0.1-0.3 | cotton
+folk-style brooch | 0.30 | 0.1-0.3 | metal
+worn leather belt | 0.50 | 0.1-0.3 | leather

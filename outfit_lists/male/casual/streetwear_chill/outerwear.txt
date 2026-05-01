@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized hoody | 0.75 | 0.1-0.3 | fleece,cotton
+puffer jacket | 0.55 | 0.1-0.3 | nylon,polyester
+varsity coat | 0.45 | 0.1-0.3 | cotton
+half-zip anorak | 0.40 | 0.1-0.3 | nylon,polyester
+trucker shirt-jac | 0.50 | 0.1-0.3 | denim
+windbreaker shell | 0.45 | 0.1-0.3 | nylon,polyester
+soft pullover jacket | 0.45 | 0.1-0.3 | fleece
+crew sweatshirt | 0.55 | 0.1-0.3 | fleece,cotton
+shell vest | 0.30 | 0.1-0.3 | nylon,polyester

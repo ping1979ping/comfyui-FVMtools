@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+ornate cross pendant | 0.50 | 0.1-0.5 | metal
+silver rose brooch | 0.45 | 0.2-0.6 | metal
+soft cravat tie | 0.50 | 0.2-0.6 | silk
+filigree ring set | 0.45 | 0.1-0.5 | metal
+romantic pocket watch | 0.40 | 0.2-0.6 | metal
+heart locket | 0.40 | 0.1-0.5 | metal
+black ribbon choker | 0.40 | 0.0-0.4 | silk
+embroidered gauntlets | 0.40 | 0.2-0.6 | leather,silk
+ornate signet ring | 0.40 | 0.2-0.6 | metal
+ribbon-tied wristband | 0.35 | 0.0-0.4 | silk,cotton

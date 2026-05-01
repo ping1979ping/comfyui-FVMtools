@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aviator sunglasses | 0.65 | 0.2-0.4 | metal,plastic
+dive watch | 0.55 | 0.2-0.4 | metal,rubber
+shell necklace | 0.40 | 0.1-0.3 | plastic
+woven friendship band | 0.30 | 0.1-0.3 | cotton
+braided cord belt | 0.40 | 0.2-0.4 | cotton
+braided rope bracelet | 0.35 | 0.1-0.3 | leather
+straw fan | 0.20 | 0.1-0.3 | canvas
+sea-glass ring | 0.20 | 0.1-0.3 | metal

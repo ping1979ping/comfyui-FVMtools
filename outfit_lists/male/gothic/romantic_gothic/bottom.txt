@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+slim black trousers | 0.55 | 0.1-0.5 | cotton,wool
+bohemian pants | 0.45 | 0.0-0.4 | cotton
+flowing wide-leg trousers | 0.40 | 0.1-0.5 | cotton,silk
+fitted breeches | 0.45 | 0.2-0.6 | cotton,wool
+laced romantic pants | 0.40 | 0.1-0.5 | cotton
+soft draped trousers | 0.40 | 0.1-0.5 | silk,cotton
+tailored romantic slacks | 0.45 | 0.2-0.6 | wool,cotton

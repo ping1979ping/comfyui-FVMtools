@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+running watch | 0.65 | 0.0-0.2 | silicone,foam
+arm sleeve | 0.30 | 0.0-0.2 | spandex,microfiber
+
+# mid-casual
+hydration belt | 0.40 | 0.0-0.2 | ripstop,microfiber
+chest strap | 0.35 | 0.0-0.2 | spandex,foam
+calf sleeves | 0.30 | 0.0-0.2 | spandex,microfiber
+running gloves | 0.30 | 0.0-0.2 | spandex,microfiber
+neck buff | 0.40 | 0.0-0.2 | microfiber,spandex
+sport sunglasses | 0.55 | 0.0-0.3 | acetate,silicone
+heart-rate monitor | 0.30 | 0.0-0.2 | silicone,foam
+reflective armband | 0.35 | 0.0-0.2 | spandex,silicone

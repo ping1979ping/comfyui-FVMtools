@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+compass pendant | 0.6 | 0.1-0.3 | leather
+explorer wristwatch | 0.6 | 0.2-0.4 | leather
+beaded amulet | 0.5 | 0.1-0.3 | hemp,cotton
+worn cuff-bracelet | 0.5 | 0.2-0.4 | leather
+utility belt | 0.5 | 0.2-0.4 | leather
+talisman pendant | 0.4 | 0.1-0.3 | leather,cotton
+braided wrap | 0.4 | 0.1-0.3 | hemp
+arrow-charm necklace | 0.4 | 0.1-0.3 | leather
+travel-stone bead-strand | 0.3 | 0.1-0.3 | hemp
+multi-tool clip | 0.3 | 0.1-0.3 | leather

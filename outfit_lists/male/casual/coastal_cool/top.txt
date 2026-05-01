@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+camp collar shirt | 0.75 | 0.2-0.4 | cotton
+linen button-up | 0.70 | 0.2-0.4 | cotton
+short sleeve resort shirt | 0.65 | 0.2-0.4 | cotton,polyester
+soft tee | 0.65 | 0.1-0.3 | cotton,jersey
+breton stripe top | 0.55 | 0.2-0.4 | cotton,jersey
+guayabera-style shirt | 0.40 | 0.2-0.4 | cotton
+ribbed tank | 0.45 | 0.1-0.3 | cotton,jersey
+v-neck top | 0.45 | 0.1-0.3 | cotton,jersey
+overshirt top | 0.40 | 0.2-0.4 | cotton
+poolside polo | 0.55 | 0.2-0.4 | cotton,jersey
+fishing-style shirt | 0.40 | 0.2-0.4 | cotton,polyester

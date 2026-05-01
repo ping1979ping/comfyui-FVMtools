@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GLITCH" | 0.25 | top | digital font
+"OVERLOAD" | 0.2 | top | techno font
+"NEON DEATH" | 0.2 | top,outerwear | cyber font
+"VOID" | 0.2 | top | distressed digital
+"STATIC" | 0.2 | top | glitch font
+"TOXIC" | 0.2 | top | hazard font
+"PROTOCOL" | 0.15 | top,outerwear | techno font
+"REWIRED" | 0.15 | top | digital font
+"CYBER WRAITH" | 0.2 | top | gothic digital
+"PURGE" | 0.2 | top | techno font

@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SHINE" | 0.25 | top | disco font
+"GLITTER" | 0.25 | top,headwear | sparkle font
+"GLOW UP" | 0.2 | top | metallic font
+"DISCO" | 0.2 | top | retro disco font
+"SPARKLE" | 0.2 | top | sparkle font
+"DAZZLE" | 0.15 | top | metallic font
+"FAME" | 0.15 | top | bold gold font
+"PARTY" | 0.2 | top | disco font
+"LIMELIGHT" | 0.15 | top | retro disco font
+"TWINKLE" | 0.1 | top | sparkle font
