@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+natural cork yoga mat | 1.0 | 0.1-0.4 | softly textured plant fiber
+warm oak hardwood floor | 0.9 | 0.2-0.5 | sealed honey-toned planks
+hand-knotted wool rug | 0.7 | 0.1-0.4 | thick natural pile
+pale ash wide-plank flooring | 0.75 | 0.2-0.5 | softly limed grain
+seagrass woven floor mat | 0.65 | 0.2-0.5 | tight braided natural fiber
+charcoal cotton dhurrie rug | 0.55 | 0.1-0.4 | flat hand-woven panel
+walnut hardwood plank floor | 0.65 | 0.2-0.5 | rich sealed grain
+tatami straw mat block | 0.6 | 0.1-0.4 | tightly bound rush surface
+soft beige jute area rug | 0.65 | 0.1-0.4 | coarse looped fiber
+cream-toned shaggy wool rug | 0.5 | 0.1-0.4 | deep tufted plush
+distressed wide-plank pine floor | 0.55 | 0.2-0.5 | softly worn timber
+neutral linen floor cushion edge | 0.5 | 0.0-0.2 | softly creased natural cloth

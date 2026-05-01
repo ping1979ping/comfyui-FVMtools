@@ -15,7 +15,7 @@ from core.location_engine import (
 )
 
 
-REQUIRED_SETS = ["urban_brutalist", "beach_mediterranean", "studio_minimal"]
+REQUIRED_SETS = ["outdoor_urban_brutalist", "outdoor_beach_mediterranean", "indoor_studio_minimal"]
 REQUIRED_FILES = [
     "background.txt",
     "midground.txt",
@@ -69,15 +69,15 @@ def test_files_parse_clean(set_name):
 
 
 def test_seed_determinism():
-    a = generate_location_records(seed=42, location_set="urban_brutalist")
-    b = generate_location_records(seed=42, location_set="urban_brutalist")
+    a = generate_location_records(seed=42, location_set="outdoor_urban_brutalist")
+    b = generate_location_records(seed=42, location_set="outdoor_urban_brutalist")
     assert a == b
 
 
 def test_different_seeds_diverge_within_one_set():
     seen = set()
     for s in range(0, 30):
-        rec = generate_location_records(seed=s, location_set="urban_brutalist")
+        rec = generate_location_records(seed=s, location_set="outdoor_urban_brutalist")
         # Tuple of selected names per element → fingerprint of the draw
         fp = tuple(sorted((k, e["name"]) for k, e in rec["elements"].items()))
         seen.add(fp)
@@ -97,7 +97,7 @@ def test_default_enables_produce_fragments(set_name):
 
 def test_background_fragment_carries_ambient_token():
     rec = generate_location_records(
-        seed=5, location_set="urban_brutalist",
+        seed=5, location_set="outdoor_urban_brutalist",
         element_enables={k: (k == "background") for k in ELEMENT_ORDER},
     )
     assert "background" in rec["elements"]
@@ -106,7 +106,7 @@ def test_background_fragment_carries_ambient_token():
 
 def test_foreground_fragment_carries_shadow_token():
     rec = generate_location_records(
-        seed=5, location_set="urban_brutalist",
+        seed=5, location_set="outdoor_urban_brutalist",
         element_enables={k: (k == "foreground_element") for k in ELEMENT_ORDER},
     )
     assert "foreground_element" in rec["elements"]
@@ -115,7 +115,7 @@ def test_foreground_fragment_carries_shadow_token():
 
 def test_atmosphere_fragments_have_no_tokens():
     rec = generate_location_records(
-        seed=5, location_set="urban_brutalist",
+        seed=5, location_set="outdoor_urban_brutalist",
         element_enables={k: (k in {"time_of_day", "weather"}) for k in ELEMENT_ORDER},
     )
     for elem_id in ("time_of_day", "weather"):
@@ -138,7 +138,7 @@ def _gen_node():
 
 def _common_args():
     return dict(
-        location_set="urban_brutalist", seed=42,
+        location_set="outdoor_urban_brutalist", seed=42,
         enable_background=True, enable_midground=False,
         enable_architecture_detail=False, enable_props=False,
         enable_foreground_element=True,

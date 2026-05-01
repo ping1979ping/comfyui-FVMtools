@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+wooden trekking pole | 0.8 | 0.02-0.1 | smooth oiled hickory shaft
+canvas daypack on shoulder | 0.85 | 0.05-0.2 | softly worn waxed cotton
+brass compass on lanyard | 0.55 | 0.02-0.08 | polished rounded metal
+enamel water bottle | 0.7 | 0.02-0.1 | softly chipped white coating
+folded topographic map | 0.5 | 0.02-0.08 | softly creased paper
+worn leather hiking boots | 0.85 | 0.02-0.12 | scuffed conditioned leather
+field notebook with pencil | 0.5 | 0.02-0.08 | weathered cardboard cover
+small foraging basket | 0.45 | 0.02-0.08 | woven willow basketry
+trail snack tin | 0.5 | 0.02-0.08 | scratched aluminum surface
+binoculars on neck strap | 0.5 | 0.02-0.08 | rubberized dark housing
+wide-brim canvas trail hat | 0.6 | 0.02-0.1 | rumpled waxed cotton
+folding pocket knife open | 0.45 | 0.02-0.08 | brushed steel and bone handle
+woven wool hiking blanket roll | 0.5 | 0.02-0.1 | tight tartan weave

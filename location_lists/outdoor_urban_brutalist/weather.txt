@@ -7,3 +7,8 @@ after-rain damp surfaces | 0.75 | - | -
 dry concrete glare | 0.85 | - | -
 flat grey diffused sky | 0.8 | - | -
 cool dry breeze clarity | 0.65 | - | -
+faint city haze drift | 0.7 | - | -
+light morning mist between blocks | 0.6 | - | -
+crisp post-rain reflection sheen | 0.75 | - | -
+distant industrial steam plume | 0.5 | - | -
+muted overcast low-light | 0.7 | - | -

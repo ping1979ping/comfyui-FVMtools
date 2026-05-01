@@ -7,3 +7,9 @@ white marble plinth | 0.55 | 0.05-0.2 | cool veined surface
 dark vinyl flooring | 0.7 | 0.1-0.3 | softly reflective coating
 sweep transition to backdrop | 0.85 | 0.1-0.3 | unbroken curving plane
 brushed steel shooting riser | 0.4 | 0.05-0.2 | satin metallic finish
+seamless infinity sweep base | 0.85 | 0.1-0.3 | smooth continuous curve
+matte black studio platform | 0.55 | 0.05-0.2 | deep absorbent coating
+chalky white painted floor | 0.6 | 0.1-0.3 | flat lime-washed surface
+faintly textured fabric floor | 0.5 | 0.1-0.3 | soft cotton-canvas weave
+warm bleached oak parquet | 0.45 | 0.1-0.3 | pale sealed wood grain
+softly worn linoleum sheet | 0.5 | 0.1-0.3 | subtly mottled vinyl

@@ -7,3 +7,8 @@ thin scattered clouds | 0.8 | - | -
 warm dry Mediterranean breeze visible | 0.75 | - | -
 soft humid sea air | 0.7 | - | -
 faint salt mist drifting inland | 0.6 | - | -
+sirocco-warm hazy stillness | 0.6 | - | -
+high cirrus wisps over sea | 0.7 | - | -
+gentle onshore wind | 0.8 | - | -
+crystalline post-storm clarity | 0.65 | - | -
+soft golden afternoon haze | 0.85 | - | -

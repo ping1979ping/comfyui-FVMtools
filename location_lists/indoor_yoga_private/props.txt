@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+cork yoga block | 0.85 | 0.02-0.1 | warm grainy natural surface
+neutral linen bolster cushion | 0.8 | 0.05-0.2 | softly creased cylindrical pillow
+brass singing bowl with mallet | 0.65 | 0.02-0.08 | softly polished gold tone
+mala beads on wooden tray | 0.55 | 0.02-0.08 | smooth strung sandalwood
+ceramic incense burner | 0.6 | 0.02-0.08 | matte unglazed earthenware
+thick cotton meditation cushion | 0.75 | 0.02-0.1 | tufted natural weave
+small glass water carafe | 0.55 | 0.02-0.08 | clear smooth vessel
+folded wool blanket roll | 0.65 | 0.02-0.1 | softly piled natural fiber
+brass oil lamp on small dish | 0.5 | 0.02-0.08 | glinting hammered brass
+potted snake plant | 0.6 | 0.02-0.1 | matte green stiff leaves
+woven yoga strap loop | 0.5 | 0.02-0.08 | flat cotton webbing
+small wooden bowl with stones | 0.45 | 0.02-0.08 | smooth turned olive wood
+beeswax pillar candle | 0.55 | 0.02-0.08 | softly textured natural wax

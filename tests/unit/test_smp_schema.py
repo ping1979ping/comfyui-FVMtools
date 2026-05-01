@@ -72,7 +72,7 @@ def test_outfit_dict_roundtrip():
 
 def test_location_dict_roundtrip():
     e = LocationElement(name="concrete wall", coverage=0.7, layer="background")
-    loc = LocationDict(set_name="urban_brutalist", seed=1, elements={"background": e})
+    loc = LocationDict(set_name="outdoor_urban_brutalist", seed=1, elements={"background": e})
     p = loc.model_dump()
     assert p["elements"]["background"]["layer"] == "background"
 
@@ -118,7 +118,7 @@ def test_prompt_dict_full():
                 garments={"top": GarmentEntry(name="blazer", color_role="primary")},
             )
         },
-        location=LocationDict(set_name="urban_brutalist"),
+        location=LocationDict(set_name="outdoor_urban_brutalist"),
         palette=ColorPalette(garment_colors={"primary": "burgundy"}),
     )
     payload = pd.model_dump()

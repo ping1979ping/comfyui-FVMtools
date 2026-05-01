@@ -95,7 +95,7 @@ def test_outfit_block_palette_summary_is_csv():
 
 def _location(seed=42, **overrides):
     args = dict(
-        location_set="urban_brutalist", seed=seed,
+        location_set="outdoor_urban_brutalist", seed=seed,
         enable_background=True, enable_midground=False,
         enable_architecture_detail=False, enable_props=False,
         enable_foreground_element=True,
@@ -125,7 +125,7 @@ def test_location_block_emits_valid_json():
     parsed = json.loads(location_json)
     assert "location" in parsed
     assert "elements" in parsed["location"]
-    assert parsed["location"]["set_name"] == "urban_brutalist"
+    assert parsed["location"]["set_name"] == "outdoor_urban_brutalist"
 
 
 def test_location_block_resolves_atmosphere_tokens():
@@ -143,7 +143,7 @@ def test_location_block_seed_determinism():
 
 
 def test_location_block_three_sets_all_work():
-    for set_name in ("urban_brutalist", "beach_mediterranean", "studio_minimal"):
+    for set_name in ("outdoor_urban_brutalist", "outdoor_beach_mediterranean", "indoor_studio_minimal"):
         loc_json, _, _ = _location(seed=1, location_set=set_name)
         parsed = json.loads(loc_json)
         assert parsed["location"]["set_name"] == set_name

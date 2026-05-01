@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+white trail blaze on bark | 0.85 | 0.0-0.1 | crisp painted rectangle
+weathered wooden trail sign | 0.7 | 0.05-0.15 | carved hand-painted board
+rusted old fence wire wrap | 0.55 | 0.0-0.1 | spiraled corroded strand
+mossy stone wall corner | 0.6 | 0.05-0.15 | velvet green over hewn rock
+old iron gate hinge | 0.5 | 0.0-0.1 | flaked rust on dark metal
+carved trail post arrow | 0.55 | 0.0-0.1 | shallow chiseled wood
+weather-bleached fallen branch | 0.65 | 0.0-0.15 | silvery cracked grain
+lichen-spotted boulder face | 0.7 | 0.05-0.15 | mottled chartreuse bloom
+rusted barbed wire remnant | 0.45 | 0.0-0.1 | corroded twisted strand
+spider web in morning light | 0.5 | 0.0-0.1 | fine silvery thread radial
+shed antler caught in moss | 0.4 | 0.0-0.1 | bone-white branched form
+twisted vine over branch | 0.55 | 0.0-0.15 | woody coiled climber

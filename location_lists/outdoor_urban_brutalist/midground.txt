@@ -9,3 +9,9 @@ angular concrete buttress | 0.6 | 0.2-0.5 | bush-hammered texture
 modernist planter wall | 0.75 | 0.2-0.5 | smooth grey precast
 geometric concrete kiosk | 0.5 | 0.2-0.4 | polished sealed surface
 sunken plaza wall | 0.65 | 0.3-0.6 | weathered streaked patina
+sculptural concrete fin row | 0.55 | 0.2-0.5 | sharp parallel reveals
+exposed concrete staircase | 0.7 | 0.2-0.5 | board-formed treads
+cylindrical vent shaft | 0.5 | 0.1-0.3 | smooth grey precast tube
+brutalist civic signage wall | 0.6 | 0.2-0.5 | recessed aluminum lettering on raw concrete
+elevated walkway underside | 0.55 | 0.2-0.5 | smooth poured underside with drip line
+modular residential balcony stack | 0.6 | 0.2-0.5 | repeating projecting volumes

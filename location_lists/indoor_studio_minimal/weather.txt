@@ -6,3 +6,8 @@ soft atmospheric haze | 0.7 | - | -
 subtle diffused smoke | 0.6 | - | -
 hint of theatrical fog | 0.5 | - | -
 crisp neutral studio atmosphere | 0.95 | - | -
+controlled hazer machine output | 0.7 | - | -
+backlit dust particles drifting | 0.6 | - | -
+faint cool ventilated air | 0.85 | - | -
+gentle air-conditioned stillness | 0.9 | - | -
+soft warm interior calm | 0.8 | - | -

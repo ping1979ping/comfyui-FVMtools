@@ -131,7 +131,7 @@ def test_clothing_builder_two_subjects():
 
 def test_environment_builder_attaches_location():
     from nodes.smp.builders.environment_builder import FVM_SMP_EnvironmentBuilder
-    loc = {"set_name": "studio_minimal", "elements": {}}
+    loc = {"set_name": "indoor_studio_minimal", "elements": {}}
     out, = FVM_SMP_EnvironmentBuilder().build(loc)
     assert out["location"] == loc
 
@@ -296,7 +296,7 @@ def test_full_pipeline_generators_to_serialize():
     )
     outfit_dict, _ = FVM_SMP_OutfitCombiner().combine(outfit_raw, palette)
     location_raw, _ = FVM_SMP_LocationGenerator().generate(
-        location_set="urban_brutalist", seed=42,
+        location_set="outdoor_urban_brutalist", seed=42,
         enable_background=True, enable_midground=False,
         enable_architecture_detail=False, enable_props=False,
         enable_foreground_element=True,

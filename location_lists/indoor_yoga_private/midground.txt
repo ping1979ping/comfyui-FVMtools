@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low wooden meditation altar | 0.75 | 0.2-0.5 | warm sealed pine surface
+rattan room divider screen | 0.65 | 0.3-0.6 | open lattice natural fiber
+hanging tapestry above bench | 0.6 | 0.2-0.5 | woven cotton with subtle pattern
+tall potted areca palm | 0.7 | 0.2-0.5 | feathery fronds against wall
+sliding glass door to garden | 0.6 | 0.3-0.6 | clean panelled glazing
+floating wood shelf with candles | 0.65 | 0.1-0.4 | sealed oak plank
+softly lit alcove niche | 0.6 | 0.2-0.5 | warm shadowed recess
+draped white muslin curtain | 0.7 | 0.3-0.6 | softly billowing translucent cloth
+woven wall hanging | 0.55 | 0.2-0.5 | knotted macrame fiber
+low bookshelf with neat stacks | 0.5 | 0.2-0.5 | matte oak case
+framed botanical print row | 0.55 | 0.1-0.4 | softly muted pressed leaves
+small ceramic stoneware vase | 0.5 | 0.1-0.3 | matte hand-thrown pot

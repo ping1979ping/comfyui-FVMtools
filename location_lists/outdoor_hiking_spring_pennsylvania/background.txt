@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rolling Appalachian ridge in spring haze | 1.0 | 0.5-1.0 | hazy blue-violet layered silhouette
+young beech forest canopy | 0.9 | 0.6-1.0 | soft chartreuse leaf cover
+mountain laurel thicket on slope | 0.75 | 0.5-0.9 | densely tangled glossy foliage
+hemlock-shaded ravine | 0.7 | 0.5-0.9 | deep shadowed dark green wall
+exposed shale outcrop | 0.7 | 0.4-0.8 | layered grey weathered rock
+distant valley pasture below | 0.65 | 0.4-0.8 | patchwork green farmland
+mossy boulder field | 0.6 | 0.4-0.8 | rounded lichen-tinted stones
+fog-veiled distant ridge | 0.6 | 0.4-0.8 | soft milky atmospheric layer
+oak and maple mixed canopy | 0.85 | 0.6-1.0 | dappled sun-broken green
+spring-flowering dogwood understory | 0.7 | 0.4-0.8 | white bract clusters in shadow
+wide stream through trees | 0.55 | 0.3-0.7 | reflective dark ribbon
+old stone wall along ridgeline | 0.5 | 0.3-0.7 | weathered drystone masonry

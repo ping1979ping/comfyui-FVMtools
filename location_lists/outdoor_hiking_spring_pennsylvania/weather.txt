@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+light spring drizzle drifting | 0.7 | - | -
+thin ridge fog among trees | 0.75 | - | -
+fresh post-rain cool air | 0.85 | - | -
+gentle breeze through new leaves | 0.9 | - | -
+warm humid spring stillness | 0.8 | - | -
+clearing sky after morning shower | 0.7 | - | -
+crisp cool morning mist | 0.85 | - | -
+distant rumble of thunder | 0.5 | - | -
+soft humid forest haze | 0.75 | - | -
+mild sun-warmed afternoon air | 0.85 | - | -

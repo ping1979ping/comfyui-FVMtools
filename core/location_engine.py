@@ -155,7 +155,7 @@ def _build_fragment(element_id: str, name: str, texture: Optional[str]) -> str:
 # ─── generator ──────────────────────────────────────────────────────────
 
 
-def generate_location_records(seed: int, location_set: str = "urban_brutalist",
+def generate_location_records(seed: int, location_set: str = "outdoor_urban_brutalist",
                                element_enables: Optional[dict[str, bool]] = None,
                                color_tone: Optional[str] = None) -> dict:
     """Pick one entry per enabled element, build prompt fragments with tokens.

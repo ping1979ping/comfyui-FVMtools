@@ -7,3 +7,8 @@ soft morning daylight | 0.85 | - | -
 overcast slate-blue afternoon | 0.8 | - | -
 crisp early dusk | 0.7 | - | -
 high-noon harsh sunlight | 0.75 | - | -
+cold blue morning shade | 0.7 | - | -
+twilight sodium lamp glow | 0.65 | - | -
+overcast dusk grey-out | 0.7 | - | -
+late afternoon raking light | 0.8 | - | -
+diffuse winter daylight | 0.6 | - | -

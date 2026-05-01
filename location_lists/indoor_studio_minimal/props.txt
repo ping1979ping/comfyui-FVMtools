@@ -8,3 +8,9 @@ draped neutral textile | 0.65 | 0.05-0.2 | softly folded weave
 slim chrome posing bar | 0.4 | 0.02-0.1 | mirrored metallic sheen
 single tall stem in glass vessel | 0.45 | 0.02-0.1 | translucent glossy surface
 low minimalist bench | 0.55 | 0.04-0.18 | matte lacquered finish
+folded muslin square | 0.6 | 0.03-0.15 | softly creased natural cloth
+geometric paper sculpture | 0.4 | 0.02-0.1 | crisp folded paper edges
+travertine plinth block | 0.5 | 0.03-0.15 | porous warm stone
+acrylic transparent cube | 0.45 | 0.02-0.1 | clear smooth panels
+single white tulip in cylinder | 0.4 | 0.02-0.08 | velvety petal sheen
+brushed brass posing rod | 0.45 | 0.02-0.1 | softly polished gold tone

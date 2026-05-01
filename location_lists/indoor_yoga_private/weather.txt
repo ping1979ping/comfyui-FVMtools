@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm calm interior air | 1.0 | - | -
+gentle incense haze drift | 0.7 | - | -
+soft humid sauna-like warmth | 0.55 | - | -
+fresh ventilated cool stillness | 0.8 | - | -
+faintly fragrant lavender air | 0.65 | - | -
+quiet morning meditative calm | 0.85 | - | -
+softly heated underfloor warmth | 0.7 | - | -
+crisp clean indoor freshness | 0.8 | - | -
+gentle steam from hot tea | 0.5 | - | -
+muted hush of still air | 0.85 | - | -

@@ -7,3 +7,8 @@ warm late-afternoon honey light | 0.9 | - | -
 soft pre-dawn pastel | 0.7 | - | -
 twilight blue hour | 0.75 | - | -
 early morning sidelight off the water | 0.8 | - | -
+hazy noon glare off whitewash | 0.85 | - | -
+amber dusk over distant ridge | 0.75 | - | -
+clear afternoon overhead sun | 0.8 | - | -
+soft after-sunset pink afterglow | 0.7 | - | -
+mid-morning cobalt brightness | 0.85 | - | -

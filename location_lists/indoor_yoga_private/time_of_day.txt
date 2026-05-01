@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft golden morning light | 1.0 | - | -
+warm late afternoon glow | 0.9 | - | -
+gentle pre-dawn hush light | 0.8 | - | -
+diffused midday window light | 0.85 | - | -
+amber sunset spill | 0.75 | - | -
+calm overcast diffusion | 0.8 | - | -
+twilight blue interior dim | 0.65 | - | -
+candlelit evening warmth | 0.75 | - | -
+mid-morning bright softness | 0.85 | - | -
+quiet dusk fading light | 0.7 | - | -

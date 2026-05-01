@@ -9,3 +9,9 @@ angular concrete plinth | 0.75 | 0.0-0.2 | smooth precast finish
 stepped seating ledge | 0.8 | 0.1-0.3 | bush-hammered top
 sunken pit edge | 0.55 | 0.1-0.3 | rough cast lip
 modernist threshold slab | 0.6 | 0.0-0.2 | polished grey surface
+weathered cobble inset path | 0.55 | 0.1-0.3 | irregular precast units
+poured concrete ramp | 0.7 | 0.1-0.3 | brushed broom-finished surface
+recessed rainwater channel | 0.5 | 0.0-0.2 | sharp narrow incision
+broad concrete causeway | 0.6 | 0.1-0.3 | aggregate-troweled finish
+exposed paving slab grid | 0.7 | 0.1-0.3 | clean joint lines on grey precast
+puddle on weathered concrete | 0.5 | 0.0-0.2 | dark glassy reflective patch

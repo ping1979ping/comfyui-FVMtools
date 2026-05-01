@@ -9,3 +9,9 @@ shallow tide pool | 0.65 | 0.0-0.3 | glassy mirrored film over wet sand
 scattered seashells in sand | 0.6 | 0.0-0.2 | brittle calcified fragments
 trailing shadow of overhead palms | 0.55 | 0.1-0.4 | crisp hard-edged shade pattern
 low rosemary scrub at the dune edge | 0.5 | 0.0-0.3 | silvery aromatic foliage
+worn limestone slab path | 0.6 | 0.1-0.3 | sun-warmed pale stone
+bleached coral fragment scatter | 0.45 | 0.0-0.2 | crystalline rough surface
+beach grass tuft cluster | 0.55 | 0.1-0.3 | wind-bent silvery blades
+salt-crusted rope coil | 0.45 | 0.0-0.2 | crystallized braided fiber
+weathered terracotta shard pile | 0.4 | 0.0-0.2 | crumbled red clay edges
+gentle wet sand foam line | 0.6 | 0.1-0.4 | bubbling translucent edge

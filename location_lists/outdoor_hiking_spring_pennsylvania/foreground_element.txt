@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+muddy dirt hiking trail | 1.0 | 0.2-0.5 | soft churned damp earth
+fallen oak leaves over moss | 0.85 | 0.1-0.4 | layered russet litter
+exposed shale step | 0.75 | 0.1-0.3 | flat layered grey rock
+gnarled tree root over trail | 0.7 | 0.1-0.3 | knotted woody mass
+patch of trillium and violets | 0.65 | 0.1-0.3 | scattered low blooms
+spring grass and wood sorrel | 0.7 | 0.1-0.3 | tender new green sprouts
+small puddle in trail dip | 0.6 | 0.0-0.2 | dark glassy water patch
+loose granite scree | 0.55 | 0.1-0.3 | broken pale rock fragments
+clump of wood ferns | 0.65 | 0.1-0.3 | soft feathery fronds
+fresh deer tracks in mud | 0.5 | 0.0-0.2 | crisp cloven imprints
+patch of running club moss | 0.55 | 0.1-0.3 | low evergreen creeper
+weathered boardwalk plank section | 0.5 | 0.1-0.3 | sun-greyed timber treads

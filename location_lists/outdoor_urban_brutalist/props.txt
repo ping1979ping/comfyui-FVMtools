@@ -9,3 +9,9 @@ geometric drainage grate | 0.65 | 0.0-0.1 | dark cast iron mesh
 modernist light bollard | 0.7 | 0.0-0.15 | matte aluminum housing
 angular planter cube | 0.6 | 0.0-0.2 | precast aggregate finish
 solitary metal mast | 0.5 | 0.0-0.1 | powder-coated dark grey
+public art steel sculpture | 0.55 | 0.0-0.15 | corten weathering surface
+geometric trash receptacle | 0.5 | 0.0-0.1 | matte cast iron block
+welded grate over service shaft | 0.6 | 0.0-0.1 | deep iron lattice
+brutalist information pylon | 0.5 | 0.0-0.15 | raw cast monolith
+old industrial vent stack | 0.45 | 0.0-0.1 | rust-streaked galvanized steel
+sturdy cast-iron tree pit grate | 0.5 | 0.0-0.1 | dark perforated panel

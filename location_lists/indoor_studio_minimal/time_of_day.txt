@@ -7,3 +7,8 @@ soft beauty-dish key | 0.9 | - | -
 rim-lit dramatic setup | 0.75 | - | -
 even diffused fashion lighting | 0.95 | - | -
 dramatic single-source key | 0.7 | - | -
+warm tungsten interior glow | 0.7 | - | -
+cold daylight-balanced fill | 0.8 | - | -
+clamshell beauty lighting | 0.85 | - | -
+butterfly pattern setup | 0.7 | - | -
+split-light moody contrast | 0.65 | - | -

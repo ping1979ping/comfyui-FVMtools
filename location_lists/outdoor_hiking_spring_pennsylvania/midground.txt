@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+switchback dirt trail bend | 0.85 | 0.2-0.5 | packed earth with worn stones
+dense fern carpet cluster | 0.8 | 0.2-0.5 | feathery green spring fronds
+moss-draped fallen log | 0.7 | 0.2-0.5 | velvety green over rotted wood
+trailside laurel branch | 0.75 | 0.2-0.5 | glossy serrated leaves
+exposed root web on slope | 0.7 | 0.2-0.5 | gnarled timber knots
+weathered split-rail fence | 0.55 | 0.2-0.5 | softly silvered chestnut wood
+trail blaze paint on tree | 0.65 | 0.0-0.2 | crisp white rectangle
+clearing with wildflower patches | 0.6 | 0.2-0.5 | scattered violet and trillium
+spring-fed seep across stones | 0.55 | 0.1-0.3 | wet glistening rock
+overhanging rhododendron arch | 0.6 | 0.2-0.5 | tunnel of dark glossy leaves
+small wooden footbridge | 0.55 | 0.2-0.5 | weathered plank rail
+low ridge cairn marker | 0.5 | 0.1-0.3 | stacked grey shale stones

@@ -9,3 +9,9 @@ geometric panel facade | 0.85 | 0.5-1.0 | precast panel seams with shadow gaps
 monolithic stairwell tower | 0.6 | 0.4-0.8 | rough bush-hammered surface
 recessed concrete colonnade | 0.7 | 0.5-0.9 | smooth board-formed planks
 overpass underbelly skyline | 0.5 | 0.6-1.0 | stained weathered grey wash
+sunken plaza concrete amphitheater | 0.55 | 0.5-0.9 | cast aggregate stepped surface
+ribbed brutalist parking garage | 0.6 | 0.5-1.0 | repeating vertical fins
+exposed-aggregate apartment block | 0.7 | 0.6-1.0 | pebbled grey panel grid
+weathered Soviet-era cultural hall | 0.55 | 0.5-0.9 | stained sculpted relief
+twin concrete chimney stacks | 0.5 | 0.5-1.0 | striated raw cylindrical mass
+elevated motorway viaduct | 0.55 | 0.5-1.0 | stained smooth-cast piers

@@ -7,3 +7,9 @@ key-light gradient | 0.75 | 0.05-0.15 | smoothly graded falloff
 edge falloff into shadow | 0.7 | 0.03-0.12 | velvety tonal drop
 subtle grid-spot pattern | 0.45 | 0.02-0.1 | softly hexagonal bloom
 flag-cut hard edge | 0.5 | 0.02-0.1 | sharp linear cutoff
+soft fresnel halo | 0.55 | 0.02-0.12 | concentric luminous rings
+ring-light catchlight halo | 0.5 | 0.02-0.1 | even circular glow
+egg-crate pattern shadow | 0.45 | 0.02-0.1 | regular grid silhouette
+hair-light kicker streak | 0.6 | 0.02-0.1 | sharp bright accent
+backdrop seam shadow line | 0.5 | 0.02-0.1 | thin vertical reveal
+practical lamp glow patch | 0.4 | 0.02-0.1 | warm domed highlight

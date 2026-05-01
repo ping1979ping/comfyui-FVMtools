@@ -9,3 +9,9 @@ wrought iron balcony railing | 0.7 | 0.05-0.2 | curling black scrollwork with ru
 sun-bleached wooden door | 0.65 | 0.05-0.2 | flaked azure paint over weathered grain
 whitewashed bell niche | 0.55 | 0.05-0.2 | softly curved lime finish
 ceramic majolica tile inset | 0.5 | 0.0-0.15 | glazed hand-painted pattern
+hand-painted house number plaque | 0.6 | 0.0-0.1 | weathered ceramic tile
+weathered olive wood beam | 0.55 | 0.05-0.2 | knotty silvered grain
+clay drainage spout in wall | 0.5 | 0.0-0.1 | sun-baked roughcast
+bougainvillea trailing over arch | 0.7 | 0.05-0.2 | clusters of papery magenta bracts
+deep-set window with iron grille | 0.6 | 0.05-0.2 | pale stucco around dark scrollwork
+sun-flaked azure paint patch | 0.55 | 0.0-0.15 | crackled pigment layers

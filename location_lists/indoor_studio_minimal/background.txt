@@ -9,3 +9,8 @@ sage seamless paper roll | 0.55 | 0.6-0.95 | muted velvety surface
 hand-painted muslin backdrop | 0.7 | 0.7-1.0 | mottled canvas weave
 smooth gradient wall | 0.65 | 0.8-1.0 | softly graduated tone
 matte black void | 0.5 | 0.8-1.0 | light-swallowing depth
+soft cream linen drape | 0.7 | 0.7-1.0 | gently rumpled woven fabric
+warm taupe seamless paper roll | 0.65 | 0.7-1.0 | matte neutral finish
+brushed plaster studio wall | 0.6 | 0.8-1.0 | softly textured chalky surface
+deep navy painted backdrop | 0.55 | 0.8-1.0 | velvet matte pigment
+pale ivory color-block panel | 0.6 | 0.7-1.0 | smooth lacquered sheen

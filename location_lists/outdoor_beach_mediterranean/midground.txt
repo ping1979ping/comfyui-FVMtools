@@ -9,3 +9,9 @@ sun-faded harbor steps | 0.75 | 0.2-0.5 | smooth-trodden ochre treads
 pergola draped with grapevines | 0.7 | 0.3-0.6 | dappled leafy canopy on aged timber
 clustered hillside dwellings | 0.65 | 0.3-0.6 | stacked pastel cubes with painted shutters
 weathered seaside balustrade | 0.6 | 0.2-0.5 | turned stone columns with salt-frosted patina
+sun-bleached wooden pier | 0.7 | 0.3-0.6 | salt-cracked plank grain
+mossy stone steps to the water | 0.55 | 0.2-0.5 | lichen-tinged limestone
+overgrown lemon tree row | 0.6 | 0.2-0.5 | glossy citrus foliage with ripe yellow fruit
+ribboned fishing nets on stand | 0.5 | 0.1-0.3 | knotted weatherworn cord
+old harbor lantern post | 0.5 | 0.1-0.3 | rust-spotted iron with cracked glass
+arched stone gateway | 0.55 | 0.2-0.5 | warm chiseled limestone block

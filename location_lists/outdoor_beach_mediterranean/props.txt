@@ -9,3 +9,9 @@ linen towel draped over a chair | 0.7 | 0.05-0.2 | softly creased loose-weave cl
 wicker picnic basket | 0.65 | 0.05-0.2 | looping rattan plait
 glass bottle of olive oil | 0.55 | 0.0-0.15 | clear emerald liquid behind smudged glaze
 rope-handled canvas tote | 0.5 | 0.0-0.15 | sun-faded heavy duck cloth
+oversized straw sun hat | 0.7 | 0.0-0.15 | loosely woven natural fiber
+weathered fishing buoy | 0.5 | 0.0-0.15 | flaked painted glass float
+ceramic pitcher with citrus | 0.55 | 0.0-0.15 | glazed terracotta surface
+sun-faded striped beach towel | 0.65 | 0.05-0.2 | softly worn cotton weave
+small woven olive basket | 0.5 | 0.0-0.15 | tightly twisted reed
+seasoned wooden oar leaning | 0.45 | 0.0-0.15 | salt-cracked grain

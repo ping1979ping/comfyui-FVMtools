@@ -104,7 +104,7 @@ def outfit():
 @pytest.fixture
 def location():
     return {
-        "set_name": "urban_brutalist",
+        "set_name": "outdoor_urban_brutalist",
         "elements": {
             "background": {
                 "prompt_fragment": "monolithic concrete facade, raw poured surface, illuminated by warm amber afternoon",
@@ -407,7 +407,7 @@ def test_e2e_smp_outfit_combiner_into_assembler():
     outfit_dict, _ = FVM_SMP_OutfitCombiner().combine(outfit_raw, palette)
 
     location_raw, _ = FVM_SMP_LocationGenerator().generate(
-        location_set="urban_brutalist", seed=42,
+        location_set="outdoor_urban_brutalist", seed=42,
         enable_background=True, enable_midground=False,
         enable_architecture_detail=False, enable_props=False,
         enable_foreground_element=True,
