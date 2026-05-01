@@ -58,6 +58,7 @@ app.registerExtension({
 
             const folderMap = new Map();
             const itemsSymbol = Symbol("items");
+            console.log(`[fvm_combo_tree] buildTree start: ${items.length} entries, has_slash=${hasSlash}`);
 
             for (const item of items) {
                 const value = item.getAttribute("data-value") || "";
@@ -103,9 +104,12 @@ app.registerExtension({
                     folderEl.style.paddingLeft = `${level * 10 + 5}px`;
                     parent.appendChild(folderEl);
 
+                    // All levels open by default until folder UX is verified.
+                    // After verification we can re-enable collapsed-by-default at level>0.
                     const child = $el("div.fvm-combo-folder-contents", {
-                        style: { display: "none" },
+                        style: { display: "block" },
                     });
+                    folderEl.querySelector(".fvm-combo-folder-arrow").textContent = "▼";
                     const innerItems = content.get(itemsSymbol) || [];
                     for (const it of innerItems) {
                         it.style.paddingLeft = `${(level + 1) * 10 + 14}px`;
@@ -113,6 +117,8 @@ app.registerExtension({
                     }
                     insertStructure(child, content, level + 1);
                     parent.appendChild(child);
+
+                    console.log(`[fvm_combo_tree] folder='${folderName}' level=${level} direct_items=${innerItems.length} child_html_len=${child.innerHTML.length}`);
 
                     folderEl.addEventListener("click", (e) => {
                         e.stopPropagation();
