@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+throwing axe on table | 0.95 | 0.05-0.15 | hickory handle steel head
+hatchet stuck in target | 0.85 | 0.05-0.15 | wood handle chipped blade
+beer can in hand | 0.8 | 0.02-0.1 | printed aluminum cylinder
+crumpled napkin pile | 0.5 | 0.02-0.05 | soft printed paper
+pint of stout glass | 0.7 | 0.02-0.1 | beaded condensation glass
+score sheet on clipboard | 0.65 | 0.02-0.08 | thin printed paper
+small wood splinter pile | 0.55 | 0.02-0.05 | rough timber chips
+bag of jerky open | 0.55 | 0.02-0.08 | crinkled foil pouch
+leather work glove | 0.6 | 0.05-0.1 | thick stitched hide
+shot glass with whiskey | 0.55 | 0.02-0.05 | thick clear vessel
+basket of pretzels | 0.5 | 0.05-0.1 | golden braided dough
+sharpening stone block | 0.5 | 0.02-0.05 | gray gritty mineral

@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+mat storage cubby shelving | 0.9 | 0.2-0.5 | warm wood compartments
+prop bin with bolsters | 0.85 | 0.15-0.4 | woven natural baskets
+freestanding wood ballet barre | 0.65 | 0.15-0.4 | smooth turned timber
+hanging rope wall row | 0.55 | 0.15-0.4 | thick cotton cord
+incense altar shelf | 0.7 | 0.1-0.3 | carved wood and brass
+small water cooler stand | 0.6 | 0.1-0.3 | molded plastic dispenser
+folded blanket stack pile | 0.85 | 0.1-0.3 | softly piled wool weave
+class schedule chalk board | 0.6 | 0.1-0.3 | matte slate and frame
+clay diffuser pedestal stand | 0.55 | 0.1-0.3 | unglazed earthenware
+carved wood meditation buddha | 0.55 | 0.1-0.3 | smooth dark grained timber
+window-side plant cluster | 0.7 | 0.15-0.4 | matte green leaves
+yoga wheel rack assembly | 0.55 | 0.1-0.3 | painted wood frame
+small front-desk reception unit | 0.55 | 0.15-0.4 | reclaimed wood top

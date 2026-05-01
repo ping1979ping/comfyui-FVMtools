@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+polished maple lane stretching deep | 1.0 | 0.7-1.0 | glossy lacquered wood grain
+neon striped back wall | 0.9 | 0.6-1.0 | glowing painted retro pattern
+illuminated pin deck end wall | 0.85 | 0.5-0.9 | bright laminated panel
+purple carpet seating area | 0.8 | 0.5-0.9 | speckled commercial loop pile
+black light glowing wall mural | 0.7 | 0.6-1.0 | uv-reactive painted graphic
+score monitor screen wall | 0.75 | 0.4-0.8 | matte plastic display banks
+ball return console bank | 0.7 | 0.4-0.7 | scuffed molded plastic shell
+wood paneled bowler seating bench | 0.65 | 0.4-0.8 | warm worn timber
+lane divider gutter rails | 0.85 | 0.4-0.8 | smooth painted metal
+overhead pin animation screen | 0.6 | 0.3-0.7 | bright digital projection
+patterned bowling carpet floor | 0.75 | 0.5-0.9 | busy commercial woven loop
+acoustic ceiling tile field | 0.6 | 0.5-0.9 | dimpled white panel grid

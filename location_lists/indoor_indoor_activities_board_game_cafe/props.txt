@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+acrylic polyhedral dice | 0.95 | 0.02-0.05 | translucent printed faces
+shuffled deck of cards | 0.9 | 0.05-0.1 | smooth printed paperboard
+wooden meeple game token | 0.85 | 0.02-0.05 | painted small figure
+ceramic latte mug | 0.85 | 0.05-0.08 | matte glazed stoneware
+small game rule book | 0.7 | 0.05-0.1 | printed bound paper
+plate of flaky pastries | 0.6 | 0.05-0.15 | golden baked dough
+small score notebook | 0.6 | 0.05-0.08 | spiral-bound paper
+hourglass turn timer | 0.55 | 0.02-0.05 | wood-framed glass
+small wooden meeple set | 0.65 | 0.02-0.05 | painted wood figures
+loose hex tiles spread | 0.55 | 0.05-0.1 | printed cardboard pieces
+folded paper score sheet | 0.55 | 0.02-0.08 | thin printed paper
+small espresso cup saucer | 0.6 | 0.02-0.05 | glazed porcelain
+plush dice cushion | 0.5 | 0.02-0.08 | soft printed fabric
+event flyer printed page | 0.5 | 0.02-0.08 | small printed paper

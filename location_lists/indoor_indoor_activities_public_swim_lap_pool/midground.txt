@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+floating lane divider rope | 1.0 | 0.3-0.6 | colored plastic disc chain
+starting block platform | 0.85 | 0.15-0.4 | painted fiberglass podium
+elevated lifeguard chair | 0.85 | 0.15-0.4 | painted steel frame
+pool ladder rail set | 0.8 | 0.1-0.3 | brushed stainless tubing
+clock for lap timing | 0.85 | 0.1-0.3 | large dial wall mounted
+kickboard storage rack | 0.75 | 0.15-0.4 | metal frame with foam boards
+pool noodle bin assembly | 0.65 | 0.15-0.4 | wire basket with foam tubes
+shower-rinse station post | 0.7 | 0.1-0.3 | painted steel pipe
+diving block row | 0.65 | 0.15-0.4 | fiberglass starting podiums
+flutter board hook wall | 0.55 | 0.15-0.4 | metal pegs and boards
+spectator bleacher seating | 0.65 | 0.2-0.5 | painted aluminum bench
+flotation belt hook wall | 0.55 | 0.1-0.3 | wall pegs and webbing
+overhead pull-rope flag line | 0.7 | 0.1-0.3 | hung colored pennants

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+riveted brass-paneled wall | 1.0 | 0.7-1.0 | hammered aged metal
+exposed copper pipe wall network | 0.9 | 0.6-1.0 | tarnished tubular metal
+victorian patterned wallpaper | 0.85 | 0.6-1.0 | faded damask print
+weathered brick laboratory wall | 0.85 | 0.6-1.0 | aged warm masonry
+dark stained wood-panel wall | 0.8 | 0.5-0.9 | deep oiled timber grain
+leather-bound book wall shelving | 0.7 | 0.5-0.9 | worn embossed spines
+tarnished mirror panel wall | 0.6 | 0.5-0.9 | mottled silvered glass
+clockwork gear mounted wall | 0.7 | 0.5-0.9 | bronze toothed wheels
+boiler-room iron plate wall | 0.65 | 0.5-0.9 | bolted dark metal sheets
+dim gas-lamp lit corridor wall | 0.65 | 0.5-0.9 | painted shadowed plaster
+ornate carved wood paneling | 0.6 | 0.5-0.9 | dark fielded timber
+faded blueprint pinned wall | 0.55 | 0.4-0.8 | aged printed paper

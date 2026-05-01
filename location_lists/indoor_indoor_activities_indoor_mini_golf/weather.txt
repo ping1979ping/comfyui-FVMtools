@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+windowless climate-controlled course air | 1.0 | - | -
+faint haze of fog-machine atmosphere | 0.65 | - | -
+cool conditioned warehouse interior | 0.85 | - | -
+rainy night driving guests inside | 0.7 | - | -
+hot summer day cool inside | 0.6 | - | -
+snowy day past lobby windows | 0.55 | - | -
+sunny afternoon past lobby | 0.5 | - | -
+overcast weekend past entry | 0.5 | - | -
+crisp autumn evening past doors | 0.5 | - | -
+foggy night past entry hall | 0.45 | - | -

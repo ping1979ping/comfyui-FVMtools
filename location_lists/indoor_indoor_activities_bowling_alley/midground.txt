@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+ball return rack assembly | 0.95 | 0.2-0.5 | glossy painted metal frame
+illuminated overhead score console | 0.85 | 0.2-0.5 | bright plastic housing
+seating bench cluster | 0.8 | 0.2-0.5 | molded plastic and wood
+ball storage carousel | 0.85 | 0.15-0.4 | colorful smooth resin spheres
+foul line sensor bar | 0.75 | 0.1-0.3 | thin embedded strip
+bowling ball cleaner station | 0.55 | 0.1-0.3 | scuffed steel housing
+shoe rental counter edge | 0.6 | 0.2-0.5 | laminated countertop
+lane number light box | 0.7 | 0.1-0.3 | glowing printed panel
+hanging promotional banner | 0.55 | 0.1-0.3 | vinyl printed cloth
+arcade cabinet row corner | 0.5 | 0.2-0.5 | scuffed plastic with screens
+food service hatch window | 0.5 | 0.1-0.3 | metal trimmed counter
+neon cocktail menu sign | 0.55 | 0.1-0.3 | glowing tube glass
+trash and ball cleaner stand | 0.5 | 0.1-0.3 | scratched stainless metal

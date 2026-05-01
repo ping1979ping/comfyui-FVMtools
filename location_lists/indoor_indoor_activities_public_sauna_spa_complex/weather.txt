@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+humid steam-rich sauna interior | 1.0 | - | -
+warm dry cedar-scented air | 0.95 | - | -
+cool plunge-pool fresh interior | 0.7 | - | -
+softly steamed corridor air | 0.8 | - | -
+rainy day past spa lobby | 0.6 | - | -
+snowy day past lobby glazing | 0.6 | - | -
+sunny day past spa lobby | 0.5 | - | -
+overcast afternoon past lobby | 0.55 | - | -
+crisp autumn day past entry | 0.55 | - | -
+foggy morning past lobby glass | 0.5 | - | -

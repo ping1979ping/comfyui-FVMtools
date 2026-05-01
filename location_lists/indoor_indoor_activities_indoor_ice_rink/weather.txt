@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cold dry rink-arena interior air | 1.0 | - | -
+faint mist hovering over ice | 0.85 | - | -
+chilled steady arena conditioning | 0.9 | - | -
+rainy night past arena lobby | 0.65 | - | -
+snowy weekend past lobby doors | 0.7 | - | -
+sunny day past lobby entry | 0.5 | - | -
+overcast afternoon past entry | 0.55 | - | -
+crisp autumn evening past doors | 0.55 | - | -
+foggy night past lobby glazing | 0.5 | - | -
+hot summer day cool inside arena | 0.6 | - | -

@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wall-mounted ballet barre rail | 0.95 | 0.2-0.5 | smooth turned timber
+freestanding portable barre | 0.7 | 0.15-0.4 | varnished wood and metal
+piano in corner | 0.6 | 0.15-0.4 | polished black lacquer
+portable speaker stand | 0.7 | 0.1-0.3 | matte plastic housing
+folded chair stack near wall | 0.65 | 0.1-0.3 | metal and plastic chairs
+dance bag pile on bench | 0.7 | 0.1-0.3 | soft printed canvas
+class schedule whiteboard | 0.6 | 0.1-0.3 | white melamine and frame
+stretching mat floor zone | 0.7 | 0.2-0.5 | thick padded surface
+water bottle station table | 0.6 | 0.1-0.3 | folding plastic top
+prop trunk in corner | 0.55 | 0.1-0.3 | varnished wood case
+costume rack on wheels | 0.55 | 0.15-0.4 | chrome bar and fabric
+floor-mounted speaker monitor | 0.6 | 0.1-0.3 | black mesh housing
+small mirror trolley cart | 0.5 | 0.1-0.3 | wheeled metal frame

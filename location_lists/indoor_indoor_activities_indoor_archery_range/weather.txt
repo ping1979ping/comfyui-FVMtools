@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+windowless conditioned range air | 1.0 | - | -
+cool dry steady interior | 0.9 | - | -
+rainy day past loading bay | 0.6 | - | -
+sunny day past lobby doors | 0.5 | - | -
+overcast weekend past entry | 0.55 | - | -
+hot summer day cool inside | 0.55 | - | -
+snowy night past entry | 0.5 | - | -
+foggy morning past door | 0.45 | - | -
+crisp autumn evening at entrance | 0.5 | - | -
+warm conditioned interior steady | 0.8 | - | -

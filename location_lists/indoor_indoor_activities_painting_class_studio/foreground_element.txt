@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+wooden palette with paint dabs | 0.95 | 0.05-0.2 | varnished wood with thick pigment
+loaded paint-brush in hand | 0.95 | 0.05-0.15 | bristle brush and wood handle
+paint tube squeezed half-empty | 0.85 | 0.02-0.08 | dented metal tube
+glass jar of cloudy water | 0.85 | 0.05-0.1 | translucent vessel
+small sketchbook open | 0.75 | 0.05-0.15 | bound paper pages
+blank stretched canvas | 0.7 | 0.1-0.3 | tightly stretched cotton
+pencil with sharpened tip | 0.6 | 0.02-0.05 | thin wood and graphite
+paint-stained rag pile | 0.65 | 0.05-0.1 | softly stained cotton
+painters apron worn | 0.65 | 0.05-0.2 | canvas with paint smears
+small charcoal stick | 0.6 | 0.02-0.05 | brittle blackened twig
+half-finished still-life painting | 0.7 | 0.1-0.3 | wet pigment on canvas
+small palette knife | 0.6 | 0.02-0.08 | thin steel blade with handle

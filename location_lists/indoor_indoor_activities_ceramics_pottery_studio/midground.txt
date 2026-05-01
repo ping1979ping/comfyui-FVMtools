@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+pottery wheel on stand | 1.0 | 0.2-0.5 | spinning steel-and-plaster bat
+slab roller workbench | 0.85 | 0.2-0.5 | weathered wood and steel
+drying-rack shelving unit | 0.9 | 0.2-0.5 | rough wooden tiered shelves
+clay-storage barrel cluster | 0.85 | 0.15-0.4 | plastic bins with clay bags
+glaze-bucket shelf row | 0.8 | 0.15-0.4 | painted plastic vessels
+small electric kiln unit | 0.65 | 0.15-0.4 | soft-brick lined firing chamber
+slab-and-tool workbench | 0.85 | 0.2-0.5 | scarred plywood top
+wedging concrete slab table | 0.7 | 0.1-0.3 | smooth poured surface
+bisque-ware drying shelf row | 0.85 | 0.2-0.5 | rows of unfired pots
+sink with reclaim sediment trap | 0.75 | 0.15-0.4 | scarred stainless basin
+glaze-test tile wall display | 0.55 | 0.15-0.4 | small varied glazed squares
+plaster-mold cast storage shelf | 0.55 | 0.15-0.4 | dusty soft white forms
+small bench grinder station | 0.5 | 0.1-0.3 | painted steel pedestal

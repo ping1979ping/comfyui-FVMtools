@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+friday night race league | 1.0 | - | -
+saturday night peak heats | 0.95 | - | -
+weekend afternoon family race | 0.9 | - | -
+post-work casual session | 0.85 | - | -
+weekday lunch corporate event | 0.7 | - | -
+sunday tournament afternoon | 0.8 | - | -
+late evening endurance race | 0.75 | - | -
+midweek practice evening | 0.75 | - | -
+weekday early afternoon quiet | 0.6 | - | -
+holiday season private booking | 0.7 | - | -

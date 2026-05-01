@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm cozy cafe interior air | 1.0 | - | -
+rainy day driving guests inside | 0.85 | - | -
+soft natural light through window | 0.75 | - | -
+overcast afternoon diffuse glow | 0.7 | - | -
+sunny morning beam in cafe | 0.7 | - | -
+snowy day past cafe window | 0.65 | - | -
+golden hour evening light | 0.65 | - | -
+crisp autumn afternoon outside | 0.6 | - | -
+breezy spring afternoon outside | 0.55 | - | -
+foggy morning past cafe glazing | 0.5 | - | -

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed steel roof truss | 0.9 | 0.4-0.8 | painted heavy beam
+high warehouse ceiling height | 0.9 | 0.5-0.9 | vast painted steel deck
+suspended sign banner overhead | 0.65 | 0.1-0.3 | printed vinyl cloth
+catwalk inspection platform | 0.55 | 0.2-0.5 | grated steel walkway
+exposed ductwork along ceiling | 0.7 | 0.2-0.5 | spiral galvanized metal
+bright led floodlight rig | 0.85 | 0.2-0.5 | aluminum housing
+emergency exit signage glow | 0.65 | 0.05-0.2 | green plastic housing
+yellow safety stripe floor band | 0.85 | 0.1-0.3 | bold painted line
+floor anchor bolt grid | 0.65 | 0.1-0.3 | embedded steel hardware
+sprinkler pipe ceiling run | 0.65 | 0.1-0.3 | red painted metal pipe
+mezzanine viewing rail | 0.55 | 0.2-0.5 | painted steel pipe

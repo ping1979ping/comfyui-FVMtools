@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+low acoustic drop ceiling | 0.85 | 0.4-0.8 | dimpled tiled panel grid
+exposed structural truss girder | 0.55 | 0.3-0.7 | painted heavy steel
+recessed track lighting strip | 0.85 | 0.2-0.5 | brushed aluminum housing
+fluorescent tube ceiling fixture | 0.7 | 0.3-0.6 | flat plastic diffuser
+neon trim along wall edge | 0.7 | 0.2-0.5 | glowing tube glass
+mirrored wall panel section | 0.5 | 0.2-0.5 | reflective glass
+checkerboard floor border tile | 0.55 | 0.2-0.5 | glossy ceramic squares
+concrete column wrapped in carpet | 0.5 | 0.2-0.5 | tufted commercial pile
+exposed lane mechanism vent | 0.5 | 0.1-0.3 | painted metal grille
+patterned wall vinyl band | 0.55 | 0.2-0.5 | printed laminate sheet
+overhead air duct run | 0.55 | 0.2-0.5 | painted galvanized metal
+disco ball above seating | 0.45 | 0.1-0.3 | mirrored faceted sphere

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+soft dove gray painted wall | 1.0 | 0.7-1.0 | smooth matte pigment
+floor-to-ceiling mirror wall | 0.85 | 0.6-1.0 | reflective glass panel
+warm wood plank accent wall | 0.8 | 0.6-1.0 | smooth blonde grain
+bamboo slat partition wall | 0.7 | 0.5-0.9 | linear timber cane
+sheer linen curtain wall | 0.65 | 0.5-0.9 | softly draped natural cloth
+mandala painted feature wall | 0.6 | 0.5-0.9 | matte muted pigment
+exposed white brick wall | 0.55 | 0.5-0.9 | painted warm masonry
+pale sage textured plaster | 0.7 | 0.6-1.0 | softly troweled finish
+muted lavender accent wall | 0.55 | 0.5-0.9 | matte calm pigment
+stained wood beam ceiling backdrop | 0.6 | 0.5-0.9 | warm timber grain
+beige cork tile feature wall | 0.55 | 0.5-0.9 | warm porous granular surface
+white shiplap painted boards | 0.6 | 0.5-0.9 | crisp grooved planking

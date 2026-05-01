@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+dark carpet patterned floor | 0.9 | 0.4-0.8 | dense busy-print pile
+recessed colored ceiling downlight | 0.9 | 0.2-0.5 | tinted glass diffuser
+mirror-tile ceiling section | 0.65 | 0.3-0.7 | reflective glass squares
+acoustic baffle wall trim | 0.75 | 0.2-0.5 | upholstered absorber strip
+neon tube ceiling perimeter | 0.85 | 0.2-0.5 | glowing colored glass
+black-painted ceiling field | 0.7 | 0.4-0.8 | matte sealed surface
+disco ball mount and motor | 0.6 | 0.05-0.2 | small motor housing
+emergency exit signage glow | 0.55 | 0.05-0.2 | green plastic housing
+ceiling speaker grille flush | 0.7 | 0.05-0.2 | black mesh disc
+floor speaker bracket bolt | 0.5 | 0.05-0.2 | painted steel hardware
+sound-locked door frame trim | 0.55 | 0.1-0.3 | padded metal jamb

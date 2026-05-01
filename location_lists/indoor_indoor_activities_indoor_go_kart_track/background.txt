@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+stacked tire barrier wall | 1.0 | 0.6-1.0 | weathered rubber rings
+painted concrete track wall | 0.95 | 0.6-1.0 | sealed industrial surface
+sponsor banner draped wall | 0.85 | 0.5-0.9 | printed vinyl cloth
+warehouse corrugated metal wall | 0.85 | 0.6-1.0 | ribbed painted steel
+overhead steel mesh barrier | 0.8 | 0.5-0.9 | woven galvanized wire
+checkered finish-line painted wall | 0.7 | 0.4-0.8 | bold black-and-white pigment
+neon glow accent wall section | 0.65 | 0.4-0.8 | tube-light strip on paint
+black sealed concrete back wall | 0.7 | 0.5-0.9 | matte poured surface
+spectator viewing glass wall | 0.7 | 0.5-0.9 | clear thick safety glass
+red-painted barrier wall stretch | 0.7 | 0.5-0.9 | glossy sealed pigment
+exposed brick perimeter wall | 0.55 | 0.5-0.9 | sealed warm masonry
+graphic mural racing wall | 0.55 | 0.4-0.8 | painted bold motif

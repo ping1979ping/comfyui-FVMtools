@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+painted aluminum putter | 0.95 | 0.05-0.15 | painted metal shaft
+neon yellow golf ball | 0.9 | 0.02-0.05 | smooth dimpled plastic
+small printed scorecard | 0.85 | 0.05-0.08 | thin printed paper
+golf pencil short | 0.85 | 0.02-0.05 | tiny rounded wood pencil
+plastic ball-pickup bucket | 0.7 | 0.05-0.1 | molded colored plastic
+hole-number flag small | 0.85 | 0.05-0.08 | printed cloth on pole
+glowstick bracelet | 0.6 | 0.02-0.05 | luminous tube
+party event wristband | 0.7 | 0.02-0.05 | printed tyvek strip
+souvenir drink cup | 0.55 | 0.05-0.1 | waxed printed cardboard
+ice cream waffle cone | 0.5 | 0.05-0.1 | crisp baked dough cone
+small kids putter | 0.55 | 0.05-0.1 | short painted shaft
+painted prop fish lure | 0.45 | 0.02-0.05 | small molded plastic
+crumpled candy wrapper | 0.5 | 0.02-0.05 | foil printed packet
+folded course map | 0.5 | 0.02-0.08 | printed paper page

@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+upright arcade cabinet row | 1.0 | 0.3-0.7 | colorful printed laminate
+pinball machine glowing flank | 0.85 | 0.2-0.5 | painted backbox glass
+skee-ball lane bank | 0.7 | 0.2-0.5 | varnished wood ramp
+crane claw machine cabinet | 0.7 | 0.15-0.4 | clear glass with toys
+prize redemption counter | 0.7 | 0.2-0.5 | laminated glass display
+change machine kiosk | 0.6 | 0.1-0.3 | brushed steel housing
+basketball hoop arcade game | 0.6 | 0.15-0.4 | netted backboard frame
+air hockey table | 0.65 | 0.15-0.4 | smooth perforated surface
+foosball table cabinet | 0.55 | 0.15-0.4 | varnished wood box
+dance pad cabinet machine | 0.55 | 0.15-0.4 | metal step platform
+photo booth curtained station | 0.5 | 0.15-0.4 | velvet curtain enclosure
+ticket eater counter machine | 0.55 | 0.1-0.3 | yellow plastic shell
+shooting gallery cabinet | 0.5 | 0.15-0.4 | painted plastic with light gun

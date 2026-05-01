@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+black-painted arcade back wall | 1.0 | 0.7-1.0 | matte sealed surface
+neon grid wallpaper feature | 0.9 | 0.6-1.0 | glowing printed pattern
+purple cabinet-row backdrop | 0.85 | 0.6-1.0 | molded plastic shells
+checkered carpet floor field | 0.8 | 0.5-0.9 | dense patterned commercial pile
+glowing crt monitor wall | 0.7 | 0.5-0.9 | flickering phosphor screen array
+retro pixel mural wall | 0.7 | 0.5-0.9 | painted blocky graphic
+black light glowing splatter wall | 0.65 | 0.5-0.9 | uv-reactive painted splash
+mirrored disco wall section | 0.55 | 0.5-0.9 | reflective glass tiles
+red leather padded booth wall | 0.6 | 0.5-0.9 | tufted vinyl upholstery
+chrome-trim cabinet row backdrop | 0.7 | 0.5-0.9 | brushed metallic edge
+exposed warehouse painted wall | 0.5 | 0.5-0.9 | sealed concrete masonry
+prize counter glass display wall | 0.6 | 0.4-0.8 | clear panes with shelving

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+windowless climate-controlled interior | 1.0 | - | -
+rainy night outside seen through entry | 0.6 | - | -
+snowy evening glimpsed at door | 0.5 | - | -
+sunny day glimpsed past lobby | 0.55 | - | -
+overcast weekend afternoon outside | 0.6 | - | -
+heat wave humid lobby air | 0.5 | - | -
+crisp autumn evening at entrance | 0.55 | - | -
+cool air-conditioned lane interior | 0.85 | - | -
+foggy parking lot through doors | 0.45 | - | -
+indoor warmth contrasting cold outside | 0.6 | - | -

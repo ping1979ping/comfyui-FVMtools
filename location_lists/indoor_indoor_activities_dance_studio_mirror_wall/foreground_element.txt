@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+pink ballet pointe shoe | 0.9 | 0.05-0.15 | satin and ribbon
+folded leg warmer pair | 0.7 | 0.05-0.15 | ribbed knit fabric
+rosin box on floor | 0.55 | 0.02-0.1 | wood box with crumbly resin
+water bottle on barre | 0.8 | 0.05-0.15 | translucent plastic vessel
+soft ballet slipper | 0.7 | 0.05-0.15 | leather and elastic
+hair pin tin open | 0.55 | 0.02-0.08 | small metal container
+sweat towel draped on barre | 0.65 | 0.05-0.15 | soft cotton terry
+choreographer notebook open | 0.5 | 0.05-0.15 | spiral-bound paper
+folded chiffon skirt | 0.5 | 0.05-0.15 | sheer flowing fabric
+elastic resistance band | 0.55 | 0.05-0.15 | stretchy printed loop
+dance bag with strap open | 0.55 | 0.05-0.2 | soft printed canvas
+crumpled tissue near mat | 0.5 | 0.02-0.05 | soft white paper

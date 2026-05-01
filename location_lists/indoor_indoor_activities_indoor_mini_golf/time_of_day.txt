@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+friday night blacklight peak | 1.0 | - | -
+saturday afternoon family rush | 0.95 | - | -
+sunday late-morning crowd | 0.8 | - | -
+weekday after-school crowd | 0.85 | - | -
+weeknight birthday party | 0.85 | - | -
+post-work date-night booking | 0.85 | - | -
+late evening adult session | 0.75 | - | -
+midweek slow afternoon | 0.6 | - | -
+holiday-week peak booking | 0.85 | - | -
+weekend tournament evening | 0.7 | - | -

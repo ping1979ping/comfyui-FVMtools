@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-work evening class | 1.0 | - | -
+saturday morning workshop | 0.95 | - | -
+weekday afternoon studio time | 0.9 | - | -
+sunday afternoon open studio | 0.85 | - | -
+late evening glaze night | 0.75 | - | -
+weekday lunchtime quick session | 0.7 | - | -
+midweek youth class | 0.7 | - | -
+weekend kids workshop | 0.7 | - | -
+early morning quiet practice | 0.65 | - | -
+weekend firing-day kiln watch | 0.7 | - | -

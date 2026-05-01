@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+artificial-turf hole green | 1.0 | 0.4-0.8 | dense green plastic fiber
+themed obstacle windmill prop | 0.85 | 0.15-0.4 | painted spinning blade structure
+themed castle obstacle prop | 0.8 | 0.2-0.5 | painted foam-cast facade
+small ramp-and-loop obstacle | 0.75 | 0.15-0.4 | painted molded fiberglass
+themed pirate-ship obstacle | 0.7 | 0.15-0.4 | painted wood plank prop
+glowing tube tunnel pass | 0.7 | 0.15-0.4 | uv-reactive painted bore
+themed dinosaur statue prop | 0.6 | 0.15-0.4 | painted sculpted resin
+themed volcano cone prop | 0.6 | 0.15-0.4 | painted molded foam cone
+hole flag with number plate | 0.85 | 0.05-0.2 | thin printed flag and pole
+fence-style course divider | 0.8 | 0.15-0.4 | painted wood pickets
+score-keeper kiosk small | 0.55 | 0.1-0.3 | painted wood booth
+themed wood arch span prop | 0.55 | 0.15-0.4 | painted plank crossing
+themed waterfall feature prop | 0.55 | 0.15-0.4 | painted resin with lights

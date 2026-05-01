@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+cedar-plank sauna wall | 1.0 | 0.7-1.0 | warm tongue-and-groove timber
+pale travertine tile spa wall | 0.85 | 0.6-1.0 | softly veined natural stone
+glass-block steam-room wall | 0.7 | 0.5-0.9 | translucent textured panel
+limestone-tiled corridor wall | 0.8 | 0.5-0.9 | softly grained pale stone
+soft-lit cove glow back wall | 0.7 | 0.5-0.9 | pooled glow on plaster
+warm bamboo slat partition wall | 0.65 | 0.5-0.9 | linear timber cane
+muted-sand painted wall | 0.7 | 0.5-0.9 | matte sealed pigment
+mosaic-tile feature wall | 0.55 | 0.5-0.9 | small varied glazed pieces
+glazed terracotta tile wall | 0.55 | 0.5-0.9 | glossy warm ceramic
+soft-grey marble lounge wall | 0.6 | 0.5-0.9 | softly veined stone
+hammam-style domed alcove wall | 0.55 | 0.5-0.9 | softly plastered niche
+heated tile bench backdrop wall | 0.65 | 0.4-0.8 | glossy warm tile surface

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed steel roof truss | 0.95 | 0.4-0.8 | painted heavy beam
+high-bay metal halide lamp | 0.95 | 0.2-0.5 | aluminum reflector dome
+overhead arena scoreboard frame | 0.75 | 0.2-0.5 | painted truss housing
+exposed ductwork ceiling run | 0.7 | 0.2-0.5 | spiral galvanized metal
+plexi-glass top edge cap | 0.85 | 0.1-0.3 | yellow plastic capping
+ice-edge dasher kick-plate | 0.95 | 0.1-0.3 | yellow painted board base
+catwalk inspection rail above | 0.55 | 0.2-0.5 | grated steel walkway
+emergency exit signage glow | 0.65 | 0.05-0.2 | green plastic housing
+spectator-aisle painted stripe | 0.55 | 0.1-0.3 | bold painted floor line
+zamboni-bay floor drain grate | 0.5 | 0.05-0.2 | recessed steel grille
+overhead loudspeaker bracket | 0.6 | 0.05-0.2 | black mesh housing

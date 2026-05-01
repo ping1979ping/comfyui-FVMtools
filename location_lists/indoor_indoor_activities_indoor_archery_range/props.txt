@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+laminated recurve bow | 0.95 | 0.1-0.25 | varnished wood limb
+fletched carbon arrow | 0.9 | 0.05-0.15 | smooth shaft with vanes
+leather quiver | 0.85 | 0.05-0.15 | stitched belt sleeve
+leather finger tab | 0.7 | 0.02-0.05 | small supple hide patch
+forearm rigid guard | 0.7 | 0.02-0.08 | molded leather strap
+chest mesh guard | 0.55 | 0.05-0.15 | woven elastic netting
+metal release aid trigger | 0.55 | 0.02-0.05 | small mechanical body
+small bow sight | 0.55 | 0.02-0.05 | aluminum frame and lens
+arrow nock pack | 0.55 | 0.02-0.05 | small plastic baggie
+bow stringer rope | 0.55 | 0.02-0.05 | braided cord
+target paper face | 0.85 | 0.05-0.1 | printed concentric circles
+clipboard score sheet | 0.6 | 0.02-0.08 | thin printed paper
+bow wax stick | 0.5 | 0.02-0.05 | small wax tube
+folded shooting glove | 0.5 | 0.02-0.08 | stitched leather

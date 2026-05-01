@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+speckled bowling ball blue | 0.9 | 0.05-0.15 | glossy swirled resin
+scuffed red rental shoe | 0.85 | 0.05-0.15 | worn leather and rubber
+plastic score keypad | 0.7 | 0.05-0.15 | rubberized worn buttons
+pitcher of light beer | 0.55 | 0.05-0.15 | beaded translucent plastic
+basket of seasoned fries | 0.55 | 0.05-0.15 | crumpled paper liner
+neon cocktail in plastic cup | 0.5 | 0.05-0.1 | clear ridged vessel
+chalk shoe powder bag | 0.5 | 0.02-0.08 | soft cloth pouch
+team logo printed shirt | 0.5 | 0.05-0.15 | smooth polyester knit
+crumpled paper score sheet | 0.5 | 0.02-0.08 | thin printed paper
+tray of cheese nachos | 0.5 | 0.05-0.15 | greasy paper boat
+black wrist guard support | 0.45 | 0.02-0.08 | stretchy neoprene weave
+plastic ball polishing cloth | 0.45 | 0.02-0.08 | soft microfiber towel
+arcade ticket roll | 0.45 | 0.02-0.08 | curled red paper strip
+fizzy soda fountain cup | 0.55 | 0.05-0.1 | waxed printed cardboard

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+friday evening game-night peak | 1.0 | - | -
+saturday afternoon casual play | 0.95 | - | -
+sunday lazy late-morning | 0.85 | - | -
+weekday post-work session | 0.85 | - | -
+weekday lunchtime quick game | 0.7 | - | -
+weeknight tournament evening | 0.75 | - | -
+late evening final closing hour | 0.7 | - | -
+saturday late-morning brunch | 0.85 | - | -
+midweek afternoon quiet | 0.65 | - | -
+weekend birthday party booking | 0.7 | - | -

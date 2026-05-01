@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+dim warm tavern interior air | 1.0 | - | -
+cold winter night past entry | 0.7 | - | -
+rainy night outside doors | 0.7 | - | -
+overcast afternoon glimpsed at door | 0.55 | - | -
+sunny weekend past lobby | 0.5 | - | -
+crisp autumn evening at entry | 0.6 | - | -
+foggy night past warehouse door | 0.5 | - | -
+snowy night past entry doors | 0.55 | - | -
+hot summer evening past door | 0.5 | - | -
+cool conditioned warehouse air | 0.8 | - | -

@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+free-standing archery target stand | 1.0 | 0.2-0.5 | layered foam block
+shooting line floor strip | 0.85 | 0.1-0.3 | painted bold stripe
+bow rack along wall | 0.9 | 0.15-0.4 | wood-slot vertical holder
+quiver stand with arrows | 0.85 | 0.1-0.3 | upright cylindrical tube
+range-officer raised platform | 0.6 | 0.15-0.4 | painted steel deck
+arrow recovery cart | 0.65 | 0.1-0.3 | wheeled metal frame
+distance marker line set | 0.7 | 0.1-0.3 | painted floor decals
+spectator bench row | 0.6 | 0.15-0.4 | wood plank seating
+score table small unit | 0.55 | 0.1-0.3 | folding metal top
+target replacement stack | 0.6 | 0.1-0.3 | rolled paper tubes
+gear-rental counter edge | 0.55 | 0.15-0.4 | laminated wood top
+small first-aid station box | 0.5 | 0.05-0.2 | wall-mounted plastic case
+hanging numbered lane sign | 0.7 | 0.05-0.2 | small printed plate

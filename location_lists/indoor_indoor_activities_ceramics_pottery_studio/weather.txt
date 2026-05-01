@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool damp studio interior air | 1.0 | - | -
+warm kiln-radiated firing-day air | 0.7 | - | -
+soft north light through window | 0.85 | - | -
+overcast afternoon diffuse glow | 0.75 | - | -
+sunny morning beam through glazing | 0.7 | - | -
+rainy day past studio window | 0.7 | - | -
+snowy day past studio glazing | 0.55 | - | -
+golden evening light through window | 0.6 | - | -
+crisp autumn afternoon outside | 0.55 | - | -
+humid summer studio session | 0.55 | - | -

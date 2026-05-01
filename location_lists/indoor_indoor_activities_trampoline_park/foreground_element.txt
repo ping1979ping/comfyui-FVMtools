@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bright grippy jump sock | 0.95 | 0.05-0.1 | rubber-dotted knit
+foam dodgeball pile | 0.8 | 0.05-0.15 | spongy bright color
+basketball at edge | 0.6 | 0.05-0.1 | pebbled rubber sphere
+water bottle on bench | 0.7 | 0.02-0.1 | translucent plastic vessel
+event wristband on arm | 0.85 | 0.02-0.05 | printed tyvek strip
+crumpled waiver paper | 0.55 | 0.02-0.05 | thin printed sheet
+small foam cube held | 0.6 | 0.05-0.1 | dense colored foam
+sweat towel folded | 0.55 | 0.05-0.15 | soft cotton terry
+half-eaten birthday cupcake | 0.5 | 0.02-0.08 | frosted soft pastry
+juice pouch with straw | 0.55 | 0.02-0.05 | printed foil pouch
+hair scrunchie on wrist | 0.55 | 0.02-0.05 | soft elastic fabric loop
+pile of arcade tickets | 0.5 | 0.02-0.05 | crinkled red paper

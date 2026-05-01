@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+vr headset on stand | 0.95 | 0.05-0.2 | matte plastic with foam liner
+hand-controller pair | 0.95 | 0.05-0.15 | molded plastic with grip
+sanitizing wipe canister | 0.65 | 0.02-0.08 | printed plastic tub
+disposable hygiene face cover | 0.65 | 0.02-0.05 | thin nonwoven fabric
+charging cable coiled | 0.7 | 0.02-0.08 | rubber-coated wire
+event wristband on arm | 0.8 | 0.02-0.05 | printed tyvek strip
+small water bottle | 0.6 | 0.02-0.1 | translucent plastic vessel
+glow-stick bracelet | 0.5 | 0.02-0.05 | luminous tube
+crumpled napkin pile | 0.5 | 0.02-0.05 | soft printed paper
+microfiber lens cloth | 0.55 | 0.02-0.05 | soft woven cloth
+small ticket receipt slip | 0.5 | 0.02-0.05 | thin printed paper
+energy drink slim can | 0.5 | 0.02-0.08 | aluminum printed cylinder

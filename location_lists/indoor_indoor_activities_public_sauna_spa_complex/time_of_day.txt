@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-work evening detox slot | 1.0 | - | -
+saturday afternoon spa day | 0.95 | - | -
+sunday morning relaxation hour | 0.9 | - | -
+weekday lunchtime quick session | 0.75 | - | -
+weeknight late-evening unwind | 0.85 | - | -
+holiday-week peak booking | 0.85 | - | -
+saturday late-night session | 0.75 | - | -
+weekday afternoon quiet slot | 0.7 | - | -
+sunday evening dusk session | 0.75 | - | -
+early morning members hour | 0.7 | - | -

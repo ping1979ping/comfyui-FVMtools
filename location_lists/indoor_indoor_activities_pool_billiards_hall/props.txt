@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+striped solid pool ball | 0.95 | 0.05-0.1 | glossy resin sphere
+blue chalk cube | 0.9 | 0.02-0.08 | dusty soft mineral
+polished wooden cue stick | 0.95 | 0.1-0.25 | varnished smooth wood
+triangle wood ball rack | 0.75 | 0.05-0.15 | varnished frame
+amber whiskey tumbler | 0.7 | 0.02-0.08 | cut crystal vessel
+draft pint of stout | 0.7 | 0.02-0.1 | beaded condensation glass
+notched mechanical cue rest | 0.5 | 0.05-0.15 | shaped wood support
+pool table felt brush | 0.5 | 0.02-0.08 | soft bristled tool
+small cigar with band | 0.45 | 0.02-0.08 | rolled tobacco leaf
+basket of soft pretzels | 0.55 | 0.05-0.1 | golden braided baked dough
+folded cocktail napkin | 0.55 | 0.02-0.08 | soft printed paper
+cue tip chalk holder | 0.5 | 0.02-0.08 | small leather pouch
+shot glass with bourbon | 0.55 | 0.02-0.08 | clear thick-walled vessel
+betting cash on rail | 0.45 | 0.02-0.08 | folded printed currency

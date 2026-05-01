@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed steel roof girder | 0.85 | 0.4-0.8 | painted heavy beam
+high-bay metal halide lamp | 0.85 | 0.2-0.5 | aluminum reflector dome
+overhead ductwork run | 0.7 | 0.2-0.5 | spiral galvanized metal
+catwalk inspection rail above | 0.55 | 0.2-0.5 | grated steel walkway
+painted concrete floor slab | 0.95 | 0.4-0.8 | glossy sealed surface
+yellow safety stripe band | 0.8 | 0.1-0.3 | bold painted line
+floor drain grate metal | 0.55 | 0.05-0.2 | recessed steel grille
+loudspeaker bracket on wall | 0.6 | 0.05-0.2 | black mesh housing
+overhead camera mounted boom | 0.55 | 0.05-0.2 | small black housing
+exposed sprinkler pipe run | 0.6 | 0.1-0.3 | red painted metal pipe

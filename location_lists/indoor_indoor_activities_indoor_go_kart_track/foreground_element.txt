@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+racing helmet on bench | 0.95 | 0.05-0.15 | glossy painted shell
+rib-protector vest hanging | 0.7 | 0.05-0.15 | padded ballistic nylon
+race suit zipped half open | 0.65 | 0.1-0.25 | nomex woven fabric
+neck brace foam ring | 0.6 | 0.05-0.1 | dense padded foam
+racing gloves on rail | 0.7 | 0.05-0.1 | leather and mesh
+lap-time printout slip | 0.6 | 0.02-0.08 | thin printed paper
+half-eaten energy bar | 0.5 | 0.02-0.08 | crinkled foil wrapper
+sports drink bottle | 0.55 | 0.02-0.1 | translucent plastic vessel
+race-day waiver clipboard | 0.55 | 0.05-0.1 | printed paper on board
+trophy on staging shelf | 0.5 | 0.05-0.1 | gold-tone plastic on base
+race numbered armband | 0.5 | 0.02-0.08 | printed elastic strap
+balaclava head sock folded | 0.55 | 0.02-0.08 | soft knit fabric

@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+riveted iron ceiling beam | 0.85 | 0.4-0.8 | bolted dark metal
+exposed copper piping run | 0.9 | 0.3-0.7 | tarnished tubular metal
+patterned tin ceiling tile | 0.7 | 0.4-0.8 | embossed aged metal
+ornate gas lamp wall sconce | 0.85 | 0.1-0.3 | filigreed brass fixture
+heavy iron strap door hinge | 0.7 | 0.05-0.2 | hand-forged dark metal
+leaded glass transom panel | 0.6 | 0.1-0.3 | colored geometric panes
+ceiling cog mechanism mounted | 0.6 | 0.1-0.3 | bronze toothed wheel
+arched stone doorway | 0.55 | 0.2-0.5 | aged carved masonry
+ornate carved crown molding | 0.55 | 0.2-0.5 | dark stained profile
+worn parquet floor pattern | 0.6 | 0.4-0.8 | inlaid wood blocks
+small porthole-style window | 0.5 | 0.1-0.3 | brass-rimmed glass
+exposed wood ceiling joist | 0.55 | 0.3-0.7 | rough dark timber beam

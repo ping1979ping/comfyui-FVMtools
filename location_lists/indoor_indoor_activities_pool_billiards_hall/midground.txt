@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+green felt billiards table | 1.0 | 0.4-0.8 | smooth napped wool
+high-top wooden bar table | 0.7 | 0.2-0.5 | dark stained pub timber
+cue stick rack on wall | 0.85 | 0.15-0.4 | polished varnished wood
+illuminated low pendant lamp | 0.85 | 0.2-0.5 | green stained glass
+leather-padded bar stool row | 0.75 | 0.2-0.5 | tufted dark hide
+chalk holder shelf wall mount | 0.7 | 0.1-0.3 | small wood box
+oak service bar counter | 0.7 | 0.2-0.5 | varnished thick timber
+trophy display cabinet | 0.55 | 0.15-0.4 | glass and dark wood
+dart board station nearby | 0.55 | 0.1-0.3 | bristle cork target
+jukebox cabinet glow | 0.5 | 0.1-0.3 | chrome and bubbled glass
+score chalkboard wall mount | 0.6 | 0.1-0.3 | dusty matte slate
+neon pool league sign | 0.55 | 0.1-0.3 | glowing tube glass
+tall potted ficus tree corner | 0.55 | 0.15-0.4 | matte green leaves

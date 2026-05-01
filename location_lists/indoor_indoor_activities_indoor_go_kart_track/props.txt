@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+glossy racing helmet | 0.95 | 0.05-0.15 | painted hard shell
+padded rib protector vest | 0.75 | 0.05-0.15 | ballistic nylon weave
+nomex driving suit | 0.7 | 0.05-0.2 | woven fire-resistant fabric
+leather racing gloves | 0.7 | 0.05-0.1 | stitched palm and mesh
+foam neck brace | 0.6 | 0.05-0.08 | dense protective padding
+balaclava head sock | 0.6 | 0.02-0.08 | soft knit fabric
+laminated lap-time card | 0.6 | 0.02-0.08 | printed plastic sheet
+race timing transponder | 0.55 | 0.02-0.05 | small plastic puck
+sports energy drink bottle | 0.6 | 0.05-0.1 | translucent plastic vessel
+checkered flag souvenir | 0.5 | 0.05-0.1 | printed cloth
+small podium trophy | 0.5 | 0.05-0.1 | gold-tone plastic on plinth
+race waiver clipboard | 0.55 | 0.05-0.1 | printed paper on board
+reflective race number band | 0.5 | 0.02-0.08 | printed elastic strap
+race-event entry wristband | 0.55 | 0.02-0.05 | printed tyvek strip

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+friday night peak hours | 1.0 | - | -
+weekend afternoon family rush | 0.9 | - | -
+saturday late-night gaming | 0.95 | - | -
+weekday after-school crowd | 0.85 | - | -
+sunday birthday party time | 0.75 | - | -
+midweek casual evening | 0.75 | - | -
+late evening tournament hour | 0.8 | - | -
+early evening warm-up time | 0.7 | - | -
+weekday lunch slow period | 0.6 | - | -
+midnight closing shift | 0.7 | - | -

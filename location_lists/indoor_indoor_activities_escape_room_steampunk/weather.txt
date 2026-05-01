@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+windowless dim climate-controlled chamber | 1.0 | - | -
+faint smoke-machine fog atmosphere | 0.8 | - | -
+cool damp cellar-like interior air | 0.75 | - | -
+rainy night past the entry hall | 0.6 | - | -
+sunny day glimpsed through lobby | 0.45 | - | -
+overcast evening past doors | 0.55 | - | -
+crisp autumn night at entrance | 0.55 | - | -
+warm conditioned chamber air | 0.7 | - | -
+humid summer evening inside | 0.55 | - | -
+foggy night outside the lobby | 0.5 | - | -

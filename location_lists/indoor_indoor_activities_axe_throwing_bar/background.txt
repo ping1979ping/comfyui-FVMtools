@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+raw plywood lane back wall | 1.0 | 0.7-1.0 | rough chipped timber surface
+softwood target backstop wall | 0.95 | 0.6-1.0 | hatched scarred end-grain
+chain-link lane divider | 0.85 | 0.5-0.9 | woven galvanized wire
+black painted barn wood wall | 0.85 | 0.5-0.9 | weathered shiplap planking
+exposed brick warehouse wall | 0.75 | 0.5-0.9 | aged warm masonry
+chalkboard score wall area | 0.7 | 0.4-0.8 | dusty matte black slate
+raw industrial concrete wall | 0.7 | 0.5-0.9 | sealed poured surface
+dim tavern bar back wall | 0.75 | 0.5-0.9 | dark stained timber
+neon sign accent wall | 0.6 | 0.4-0.8 | glowing tube glass
+rustic burlap-draped wall | 0.55 | 0.5-0.9 | rough woven jute cloth
+metal corrugated lane wall | 0.6 | 0.5-0.9 | ribbed painted steel
+sponsor banner backed wall | 0.55 | 0.4-0.8 | printed vinyl cloth

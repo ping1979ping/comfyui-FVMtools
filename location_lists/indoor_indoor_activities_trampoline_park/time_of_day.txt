@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+saturday afternoon birthday party | 1.0 | - | -
+friday evening teen jump | 0.9 | - | -
+weekend morning family hour | 0.9 | - | -
+weekday after-school crowd | 0.85 | - | -
+sunday late-morning open jump | 0.8 | - | -
+post-work fitness session | 0.7 | - | -
+toddler-time weekday morning | 0.7 | - | -
+late evening adult dodgeball | 0.7 | - | -
+midweek slow afternoon | 0.6 | - | -
+holiday week peak booking | 0.85 | - | -

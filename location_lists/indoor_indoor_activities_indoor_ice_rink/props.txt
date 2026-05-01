@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+composite hockey stick | 0.9 | 0.1-0.2 | woven composite shaft
+black rubber puck | 0.95 | 0.02-0.05 | dense flat disc
+laced figure skate | 0.85 | 0.05-0.1 | leather boot and steel blade
+laced hockey skate | 0.85 | 0.05-0.1 | molded plastic and steel blade
+padded hockey glove | 0.75 | 0.05-0.1 | stitched leather
+glossy hockey helmet | 0.75 | 0.05-0.1 | painted hard shell
+small puck drawstring bag | 0.55 | 0.05-0.1 | canvas pouch
+soft knit beanie hat | 0.6 | 0.05-0.08 | ribbed knit fabric
+sweat towel folded | 0.6 | 0.05-0.1 | soft cotton terry
+small water squeeze bottle | 0.7 | 0.05-0.08 | translucent plastic vessel
+hot-cocoa concession cup | 0.55 | 0.05-0.08 | waxed cardboard
+hand warmer pouch | 0.5 | 0.02-0.05 | soft cloth packet
+event entry ticket stub | 0.55 | 0.02-0.05 | thin printed paper
+team logo printed scarf | 0.55 | 0.05-0.15 | knit printed wool

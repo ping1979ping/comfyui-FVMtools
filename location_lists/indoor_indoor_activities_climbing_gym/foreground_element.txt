@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+colorful resin climbing hold | 0.95 | 0.05-0.2 | gritty pigmented rubber
+chalk bag with strap | 0.9 | 0.05-0.15 | dusty canvas pouch
+climbing harness on hook | 0.8 | 0.05-0.2 | nylon webbing assembly
+coiled dynamic rope | 0.75 | 0.1-0.3 | braided colorful cord
+rubber climbing shoe pair | 0.85 | 0.05-0.15 | sticky rubber and leather
+locking carabiner clip | 0.7 | 0.02-0.1 | brushed aluminum hardware
+white chalk dust pile | 0.6 | 0.02-0.1 | powdery soft mineral
+quickdraw set hanging | 0.55 | 0.05-0.15 | webbing and metal clips
+training brush for holds | 0.55 | 0.02-0.08 | stiff plastic bristles
+crumpled water bottle | 0.5 | 0.02-0.08 | translucent plastic vessel
+energy bar wrapper | 0.5 | 0.02-0.08 | crinkled foil packaging
+finger tape roll | 0.6 | 0.02-0.08 | woven cotton fabric strip

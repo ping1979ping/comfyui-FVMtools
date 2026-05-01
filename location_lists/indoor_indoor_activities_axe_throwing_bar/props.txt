@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+hickory-handled throwing axe | 0.95 | 0.05-0.15 | wood handle steel head
+small camp hatchet | 0.8 | 0.05-0.1 | stout wood handle blade
+chalk piece for scoring | 0.7 | 0.02-0.05 | soft white mineral
+beer can branded printed | 0.8 | 0.02-0.1 | aluminum printed cylinder
+pint glass of dark ale | 0.7 | 0.02-0.08 | beaded condensation glass
+shot glass with bourbon | 0.6 | 0.02-0.05 | thick clear vessel
+leather work glove pair | 0.6 | 0.05-0.1 | stitched thick hide
+sharpening stone block | 0.55 | 0.02-0.05 | gritty gray mineral
+clipboard with score sheet | 0.6 | 0.05-0.1 | printed paper on board
+basket of pub pretzels | 0.55 | 0.05-0.1 | golden braided dough
+jerky pouch open | 0.5 | 0.02-0.08 | crinkled foil packet
+flannel jacket on stool | 0.55 | 0.05-0.15 | brushed plaid cotton
+team safety waiver page | 0.55 | 0.02-0.08 | printed paper sheet
+team trophy small statue | 0.5 | 0.05-0.1 | painted plastic figure

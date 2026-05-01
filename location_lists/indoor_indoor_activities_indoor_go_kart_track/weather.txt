@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+faint exhaust haze in track air | 1.0 | - | -
+warm rubber-scented interior | 0.9 | - | -
+cool industrial conditioned air | 0.8 | - | -
+rainy night outside loading bay | 0.6 | - | -
+sunny day past loading dock | 0.5 | - | -
+cold winter air past entry | 0.55 | - | -
+overcast afternoon outside | 0.55 | - | -
+hot summer outside cool inside | 0.55 | - | -
+foggy night past warehouse door | 0.45 | - | -
+crisp autumn evening outside | 0.5 | - | -

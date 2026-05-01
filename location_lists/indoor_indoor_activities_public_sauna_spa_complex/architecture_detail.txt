@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+heated tile floor surface | 0.95 | 0.4-0.8 | glossy warm ceramic
+soft cove-lighting recess strip | 0.9 | 0.2-0.5 | hidden led glow
+domed plaster ceiling alcove | 0.6 | 0.3-0.7 | softly painted curved surface
+small skylight oculus opening | 0.55 | 0.05-0.2 | translucent glass disc
+recessed soft pendant light | 0.85 | 0.1-0.3 | brushed metal shade
+warm wood ceiling slat field | 0.7 | 0.4-0.8 | linear timber boards
+wall-mounted brushed sconce | 0.65 | 0.05-0.2 | softly lit metal fixture
+small mosaic-tile floor border | 0.55 | 0.1-0.3 | small glazed pieces
+floor drain grate stone | 0.7 | 0.05-0.2 | recessed natural stone
+wall-mounted teak shelf bracket | 0.55 | 0.05-0.2 | warm carved wood
+small porthole window pane | 0.5 | 0.1-0.3 | brass-rimmed glass

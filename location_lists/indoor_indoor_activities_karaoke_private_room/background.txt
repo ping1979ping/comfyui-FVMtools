@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+deep maroon padded wall | 1.0 | 0.7-1.0 | tufted vinyl upholstery
+black-painted feature wall | 0.85 | 0.6-1.0 | matte sealed surface
+neon glowing tube wall accent | 0.9 | 0.5-0.9 | bright tube glass
+sound-baffle padded panel wall | 0.85 | 0.5-0.9 | upholstered acoustic foam
+mirrored disco wall section | 0.7 | 0.5-0.9 | reflective glass tiles
+glittered patterned accent wall | 0.65 | 0.5-0.9 | sparkly textured surface
+deep purple velvet drape wall | 0.7 | 0.5-0.9 | softly draped plush fabric
+glossy enamel painted booth wall | 0.65 | 0.5-0.9 | reflective sealed pigment
+star-print wallpaper feature | 0.55 | 0.5-0.9 | printed metallic motif
+karaoke logo backlit wall | 0.55 | 0.4-0.8 | glowing printed graphic
+black-acoustic foam treated wall | 0.65 | 0.5-0.9 | wedged sound-absorbing foam
+gold-glitter accent wall stretch | 0.5 | 0.5-0.9 | textured shimmering surface

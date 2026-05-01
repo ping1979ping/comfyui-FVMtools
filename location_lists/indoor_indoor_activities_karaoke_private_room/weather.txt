@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+windowless climate-controlled booth air | 1.0 | - | -
+faint smoke-machine fog atmosphere | 0.7 | - | -
+warm humid party-room interior | 0.7 | - | -
+cool air-conditioned booth steady | 0.8 | - | -
+rainy night past lobby doors | 0.6 | - | -
+snowy night past entry hall | 0.5 | - | -
+sunny day glimpsed past lobby | 0.45 | - | -
+overcast evening past entry | 0.5 | - | -
+crisp autumn night past doors | 0.5 | - | -
+foggy night past lobby glazing | 0.45 | - | -

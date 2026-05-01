@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+satin pink pointe shoe | 0.9 | 0.05-0.15 | smooth ribbon and satin
+soft leather ballet slipper | 0.8 | 0.05-0.1 | supple stitched leather
+ribbed leg warmer pair | 0.7 | 0.05-0.15 | knit stretchy fabric
+rosin box block | 0.55 | 0.02-0.05 | crumbly resin in wood box
+clear water bottle | 0.8 | 0.05-0.1 | translucent plastic vessel
+soft cotton sweat towel | 0.7 | 0.05-0.1 | terry woven cloth
+spiral choreography notebook | 0.55 | 0.05-0.1 | ringed bound paper
+chiffon practice skirt | 0.55 | 0.05-0.15 | sheer flowing fabric
+small hairpin tin | 0.55 | 0.02-0.05 | metal lidded container
+elastic theraband loop | 0.55 | 0.05-0.1 | stretchy printed rubber
+satin ribbon hair tie | 0.5 | 0.02-0.05 | smooth glossy band
+ballet barre stretching strap | 0.5 | 0.02-0.08 | flat woven cotton
+canvas dance bag printed | 0.6 | 0.05-0.15 | soft printed cloth
+chalk-bag style hand pad | 0.45 | 0.02-0.05 | dusty cloth pouch

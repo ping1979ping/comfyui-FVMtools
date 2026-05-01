@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+low black-painted ceiling | 0.85 | 0.4-0.8 | flat sealed surface
+chrome track lighting strip | 0.85 | 0.2-0.5 | brushed aluminum housing
+neon tube ceiling perimeter | 0.85 | 0.2-0.5 | glowing colored glass
+disco ball above floor | 0.65 | 0.05-0.2 | mirrored faceted sphere
+exposed black ductwork run | 0.7 | 0.2-0.5 | painted steel pipe
+recessed colored downlight | 0.7 | 0.2-0.5 | tinted glass diffuser
+checkered floor border tile | 0.6 | 0.2-0.5 | glossy ceramic squares
+mirror disco wall accent | 0.55 | 0.2-0.5 | reflective glass facets
+arcade speaker wall mount | 0.55 | 0.05-0.2 | black mesh grille
+chrome corner trim band | 0.5 | 0.1-0.3 | polished metal strip
+column wrapped in cabinet decals | 0.5 | 0.1-0.3 | glossy printed laminate

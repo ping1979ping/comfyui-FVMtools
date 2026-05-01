@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+friday night peak booking | 1.0 | - | -
+saturday late-night party slot | 0.95 | - | -
+post-work happy hour booking | 0.9 | - | -
+weekday late-evening session | 0.85 | - | -
+sunday afternoon casual booking | 0.7 | - | -
+midnight closing party hour | 0.85 | - | -
+weeknight birthday booking | 0.8 | - | -
+holiday season office party | 0.8 | - | -
+midweek slow afternoon | 0.55 | - | -
+late-evening corporate event | 0.75 | - | -

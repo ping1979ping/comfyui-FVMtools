@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+joystick with ball top | 0.95 | 0.05-0.15 | smooth plastic sphere
+red arcade button cluster | 0.9 | 0.05-0.15 | glossy molded plastic
+quarter coin in slot | 0.85 | 0.02-0.08 | metal milled coin
+arcade token cup | 0.7 | 0.05-0.15 | brassy plated rounds
+loose ticket strip pile | 0.7 | 0.05-0.15 | crinkled red paper
+plush prize on rail | 0.6 | 0.05-0.15 | soft pile fabric
+soda can on cabinet | 0.55 | 0.02-0.1 | aluminum printed surface
+pinball plunger handle | 0.55 | 0.05-0.15 | chrome rod with knob
+score card paper slip | 0.55 | 0.02-0.08 | thin printed paper
+half-eaten pizza slice | 0.5 | 0.05-0.15 | glistening melted cheese
+glow-stick bracelet | 0.5 | 0.02-0.08 | soft luminous tube
+crumpled candy wrapper | 0.5 | 0.02-0.08 | foil printed packet

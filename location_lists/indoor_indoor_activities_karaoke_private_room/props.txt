@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+handheld wireless microphone | 0.95 | 0.05-0.1 | brushed metal grille
+song selection tablet | 0.85 | 0.05-0.1 | glossy glass screen
+karaoke remote handset | 0.75 | 0.05-0.08 | molded plastic with buttons
+neon cocktail in stem glass | 0.75 | 0.05-0.08 | translucent fluid
+plastic shot glass with neon liquid | 0.65 | 0.02-0.05 | clear molded vessel
+sequined party hat | 0.6 | 0.05-0.1 | shiny embellished fabric
+glittered cocktail umbrella | 0.6 | 0.02-0.05 | small paper parasol
+glowstick bracelet | 0.6 | 0.02-0.05 | luminous tube
+plate of seasoned fries | 0.55 | 0.05-0.1 | golden fried potato
+small bowl of mixed nuts | 0.55 | 0.02-0.05 | ceramic dish
+synthetic costume wig | 0.5 | 0.05-0.15 | colored fiber strands
+colorful feather boa | 0.55 | 0.05-0.15 | fluffy fringed cord
+metal serving tray | 0.55 | 0.05-0.1 | brushed steel platter
+foil party crown | 0.5 | 0.02-0.08 | shiny printed cardboard

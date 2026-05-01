@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+windowless climate-controlled arcade air | 1.0 | - | -
+cool dry steady booth interior | 0.9 | - | -
+rainy night driving guests inside | 0.7 | - | -
+hot summer day cool inside | 0.6 | - | -
+overcast afternoon past lobby | 0.55 | - | -
+sunny day glimpsed past entry | 0.5 | - | -
+snowy night past lobby doors | 0.55 | - | -
+foggy night past warehouse door | 0.45 | - | -
+crisp autumn evening past doors | 0.5 | - | -
+warm humid summer interior | 0.5 | - | -

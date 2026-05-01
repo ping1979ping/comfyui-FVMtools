@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+high-bay metal halide lamp | 0.85 | 0.2-0.5 | aluminum reflector dome
+exposed steel roof truss | 0.85 | 0.4-0.8 | painted heavy beam
+aqua-tile cove base trim | 0.85 | 0.1-0.3 | glossy curved ceramic
+gutter overflow channel rim | 0.95 | 0.1-0.3 | recessed tiled trough
+non-slip pool deck floor | 0.95 | 0.4-0.8 | matte textured ceramic
+emergency stop button column | 0.55 | 0.05-0.2 | red plastic mushroom button
+wall-mounted depth marker tile | 0.85 | 0.05-0.2 | painted ceramic numerals
+ventilation duct ceiling run | 0.7 | 0.2-0.5 | spiral galvanized metal
+glass-block window panel | 0.55 | 0.2-0.5 | translucent textured pane
+lane number plaque tile | 0.7 | 0.05-0.15 | painted glazed ceramic
+ceiling-mounted speaker grille | 0.55 | 0.05-0.2 | white plastic housing

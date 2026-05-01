@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+humid chlorinated natatorium air | 1.0 | - | -
+warm steam rising over surface | 0.85 | - | -
+cool air-conditioned deck breeze | 0.7 | - | -
+sunny day glow through clerestory | 0.75 | - | -
+overcast diffuse light through glass | 0.65 | - | -
+rainy day past clerestory windows | 0.6 | - | -
+snowy weekend past glazing | 0.55 | - | -
+golden afternoon glow on water | 0.6 | - | -
+crisp autumn morning past glass | 0.55 | - | -
+foggy morning past clerestory | 0.5 | - | -

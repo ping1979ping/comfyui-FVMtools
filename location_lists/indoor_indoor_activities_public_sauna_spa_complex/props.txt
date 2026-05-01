@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+rolled spa towel | 0.95 | 0.05-0.15 | softly piled cotton terry
+wooden sauna ladle | 0.9 | 0.05-0.08 | turned smooth timber
+small wooden water bucket | 0.8 | 0.05-0.1 | warm timber staves
+folded waffle bathrobe | 0.85 | 0.05-0.15 | textured cotton weave
+ceramic herbal tea cup | 0.7 | 0.05-0.08 | glazed stoneware
+glass eucalyptus oil bottle | 0.65 | 0.02-0.05 | clear small vessel
+small river-stone stack | 0.6 | 0.05-0.08 | smooth dark mineral
+fluffy slipper pair | 0.7 | 0.05-0.1 | soft terry weave
+loofah natural pad | 0.55 | 0.02-0.05 | rough fiber sheet
+ceramic water carafe | 0.65 | 0.05-0.08 | glazed stoneware
+small honey treatment jar | 0.5 | 0.02-0.05 | clear glass vessel
+fresh aloe leaf | 0.5 | 0.02-0.05 | thick succulent blade
+sandalwood incense stick | 0.55 | 0.02-0.05 | thin scented wand
+silk-tassel hair-tie band | 0.5 | 0.02-0.05 | smooth fringed fabric

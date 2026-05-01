@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm dry climate-controlled studio air | 1.0 | - | -
+soft natural light through window | 0.85 | - | -
+overcast afternoon diffuse glow | 0.7 | - | -
+sunny morning beam in studio | 0.8 | - | -
+rainy day outside the windows | 0.7 | - | -
+snowy weekend past the doors | 0.55 | - | -
+golden hour evening light | 0.65 | - | -
+crisp autumn morning light | 0.6 | - | -
+humid summer studio session | 0.6 | - | -
+breezy spring afternoon outside | 0.5 | - | -

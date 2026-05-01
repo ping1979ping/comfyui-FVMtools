@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+paint-splattered concrete floor | 0.95 | 0.4-0.8 | matte stained surface
+exposed wood ceiling joist | 0.7 | 0.3-0.7 | rough sawn timber beam
+overhead fluorescent linear bar | 0.85 | 0.2-0.5 | flat plastic diffuser
+large north-light window frame | 0.85 | 0.2-0.5 | painted wood sash
+suspended track-lighting strip | 0.7 | 0.2-0.5 | brushed aluminum housing
+exposed steel roof truss | 0.55 | 0.3-0.7 | painted heavy beam
+small wood-framed chalkboard | 0.55 | 0.1-0.3 | matte slate in frame
+exposed ductwork high above | 0.6 | 0.2-0.5 | spiral galvanized metal
+floor drain grate near sink | 0.55 | 0.05-0.2 | recessed steel grille
+emergency eye-wash station | 0.55 | 0.05-0.2 | green plastic basin
+crown molding decorative band | 0.5 | 0.1-0.3 | painted profile trim

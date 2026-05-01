@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+friday night peak booking | 1.0 | - | -
+saturday late-night gaming | 0.95 | - | -
+post-work evening session | 0.9 | - | -
+weekday after-school slot | 0.85 | - | -
+sunday afternoon casual booking | 0.8 | - | -
+weekday lunchtime quick play | 0.65 | - | -
+weeknight birthday party | 0.8 | - | -
+late evening esports tournament | 0.75 | - | -
+midweek slow afternoon | 0.55 | - | -
+holiday-week peak booking | 0.85 | - | -

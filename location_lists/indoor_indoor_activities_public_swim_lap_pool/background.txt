@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+aqua-tiled pool perimeter wall | 1.0 | 0.7-1.0 | glossy ceramic squares
+white tiled changing-area wall | 0.85 | 0.6-1.0 | smooth glazed ceramic
+turquoise water expanse | 1.0 | 0.5-0.9 | rippled chlorinated surface
+glass-block clerestory wall | 0.7 | 0.5-0.9 | translucent textured panels
+painted aquatic mural wall | 0.7 | 0.5-0.9 | glossy painted graphic
+exposed natatorium girder wall | 0.75 | 0.5-0.9 | painted heavy steel
+spectator gallery viewing wall | 0.65 | 0.5-0.9 | painted concrete with rail
+pale blue painted concrete wall | 0.85 | 0.6-1.0 | sealed mineral pigment
+non-slip pool deck tiled floor | 0.95 | 0.5-0.9 | textured matte ceramic
+lifeguard chair backdrop wall | 0.6 | 0.4-0.8 | painted steel structure
+white-painted plaster wall | 0.7 | 0.5-0.9 | smooth sealed surface
+diving block wall area | 0.6 | 0.4-0.8 | painted concrete platform

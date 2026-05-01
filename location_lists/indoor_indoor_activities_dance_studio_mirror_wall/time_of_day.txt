@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-work evening class | 1.0 | - | -
+saturday morning kids ballet | 0.9 | - | -
+weekday afternoon rehearsal | 0.85 | - | -
+sunday performance prep | 0.8 | - | -
+late evening pro company practice | 0.75 | - | -
+early morning warm-up class | 0.75 | - | -
+weekday lunch quick session | 0.65 | - | -
+midweek youth class | 0.75 | - | -
+saturday afternoon workshop | 0.75 | - | -
+recital dress rehearsal evening | 0.7 | - | -

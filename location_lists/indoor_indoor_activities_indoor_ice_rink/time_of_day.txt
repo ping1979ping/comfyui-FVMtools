@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+friday night public skate | 1.0 | - | -
+saturday morning learn-to-skate | 0.95 | - | -
+weekday evening league hockey | 0.95 | - | -
+sunday afternoon family skate | 0.85 | - | -
+weekday afternoon practice | 0.8 | - | -
+weeknight figure-skating session | 0.75 | - | -
+late evening tournament hour | 0.75 | - | -
+midweek youth team practice | 0.75 | - | -
+holiday-week peak skate | 0.85 | - | -
+early morning quiet practice | 0.7 | - | -

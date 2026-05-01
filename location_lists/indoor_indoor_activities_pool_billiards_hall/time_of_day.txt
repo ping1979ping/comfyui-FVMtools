@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late evening league night | 1.0 | - | -
+weekend midnight session | 0.95 | - | -
+post-work happy hour | 0.95 | - | -
+weekday afternoon quiet game | 0.75 | - | -
+saturday night peak crowd | 0.95 | - | -
+friday tournament evening | 0.9 | - | -
+sunday afternoon casual play | 0.75 | - | -
+late night closing shift hour | 0.8 | - | -
+weekday lunch slow hours | 0.65 | - | -
+early evening warm-up time | 0.8 | - | -

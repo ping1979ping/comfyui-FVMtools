@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wood-target bullseye on stand | 1.0 | 0.3-0.6 | concentric scarred rings
+chain-link safety cage frame | 0.95 | 0.3-0.6 | painted steel and wire
+axe rack on lane wall | 0.9 | 0.15-0.4 | wood-pegged tool holder
+high-top wooden bar table | 0.7 | 0.15-0.4 | dark stained timber
+score chalkboard on stand | 0.75 | 0.15-0.4 | matte slate in frame
+beer keg-pour station | 0.6 | 0.15-0.4 | brushed metal counter
+leather barstool row | 0.6 | 0.15-0.4 | tufted dark hide
+wood pallet wall accent | 0.55 | 0.15-0.4 | rough reclaimed planking
+trophy mantel shelf | 0.5 | 0.1-0.3 | rough timber ledge
+small wood-stove corner | 0.5 | 0.1-0.3 | matte black cast iron
+edison-bulb pendant cluster | 0.7 | 0.15-0.4 | filament glass and brass
+rustic wood reception counter | 0.55 | 0.15-0.4 | reclaimed timber slab
+flannel-coat hook row | 0.55 | 0.1-0.3 | iron pegs on plank

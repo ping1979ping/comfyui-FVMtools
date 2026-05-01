@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+open board game laid out | 0.95 | 0.1-0.3 | printed cardboard surface
+colorful dice cluster on table | 0.9 | 0.02-0.08 | translucent acrylic cubes
+playing card hand spread | 0.85 | 0.05-0.15 | smooth printed paperboard
+ceramic latte mug | 0.85 | 0.05-0.1 | matte glazed stoneware
+pile of game tokens scattered | 0.75 | 0.05-0.15 | painted wood and plastic bits
+plate of pastries half-eaten | 0.6 | 0.05-0.15 | flaky golden baked dough
+small notebook with rules | 0.55 | 0.05-0.1 | spiral-bound paper
+deck of cards tucked in box | 0.6 | 0.05-0.1 | printed paperboard sleeve
+hourglass timer for turn | 0.55 | 0.02-0.08 | wood-framed glass timer
+crumpled napkin near drink | 0.5 | 0.02-0.05 | soft printed paper
+score pad with pencil | 0.55 | 0.02-0.08 | thin printed paper
+small character meeple piece | 0.6 | 0.02-0.05 | painted wooden figure

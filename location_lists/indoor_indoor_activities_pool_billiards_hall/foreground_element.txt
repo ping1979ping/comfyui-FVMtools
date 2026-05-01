@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+striped pool ball cluster | 0.95 | 0.05-0.15 | glossy resin sphere
+chalk cube blue square | 0.9 | 0.02-0.08 | dusty soft mineral
+wooden cue stick polished | 0.95 | 0.1-0.3 | varnished smooth shaft
+tumbler of amber whiskey | 0.7 | 0.02-0.1 | clear cut crystal
+pint glass of dark ale | 0.7 | 0.02-0.1 | beaded condensation glass
+triangle ball rack | 0.7 | 0.05-0.15 | varnished wood frame
+crumpled cocktail napkin | 0.55 | 0.02-0.08 | soft printed paper
+lit cigar in tray | 0.5 | 0.02-0.08 | glowing leaf cylinder
+half-eaten pretzel basket | 0.5 | 0.05-0.1 | golden braided baked dough
+notched cue rest stick | 0.5 | 0.05-0.15 | varnished wood with notch
+scorekeeping clipboard | 0.5 | 0.02-0.08 | thin printed paper
+felt brush for table | 0.5 | 0.02-0.08 | soft bristled wood handle

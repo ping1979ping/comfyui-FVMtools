@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+evening dimmed gas-lamp glow | 1.0 | - | -
+weekend afternoon team booking | 0.9 | - | -
+friday night corporate event | 0.85 | - | -
+saturday peak booking slot | 0.95 | - | -
+sunday late afternoon slot | 0.75 | - | -
+weekday post-work hour | 0.85 | - | -
+late evening final session | 0.8 | - | -
+midweek family booking | 0.7 | - | -
+weekday lunch hour run | 0.6 | - | -
+holiday season special event | 0.7 | - | -

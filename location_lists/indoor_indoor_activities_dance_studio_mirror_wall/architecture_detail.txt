@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+sprung wood plank flooring | 0.95 | 0.4-0.8 | glossy varnished grain
+recessed track ceiling lighting | 0.9 | 0.2-0.5 | brushed aluminum housing
+exposed black ceiling girder | 0.55 | 0.3-0.7 | painted heavy steel
+white acoustic ceiling tile | 0.65 | 0.4-0.8 | dimpled panel grid
+floor-mounted barre bracket | 0.85 | 0.05-0.2 | brushed metal hardware
+mirror seam vertical line | 0.85 | 0.4-0.8 | thin glass joint
+window with frosted glaze | 0.55 | 0.2-0.5 | translucent textured pane
+crown molding white band | 0.5 | 0.1-0.3 | painted profile trim
+floor heat vent grille | 0.55 | 0.05-0.2 | brushed metal louver
+wall-mounted speaker bracket | 0.55 | 0.05-0.2 | painted steel frame
+small built-in alcove shelf | 0.5 | 0.1-0.3 | painted plaster recess

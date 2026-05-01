@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning sunrise class | 1.0 | - | -
+midday lunchtime flow | 0.8 | - | -
+post-work evening session | 0.95 | - | -
+weekend morning vinyasa | 0.95 | - | -
+late evening yin practice | 0.85 | - | -
+weekday quiet afternoon | 0.7 | - | -
+sunday restorative dusk class | 0.8 | - | -
+saturday afternoon workshop | 0.75 | - | -
+pre-dawn ashtanga group | 0.65 | - | -
+late afternoon kids class | 0.6 | - | -

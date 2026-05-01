@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+freshly thrown clay vessel on bat | 0.95 | 0.05-0.15 | wet smooth gray clay
+wood throwing rib tool | 0.85 | 0.02-0.08 | shaped curved wood
+loop trimming tool | 0.85 | 0.02-0.08 | bent wire on wood handle
+sponge for shaping | 0.7 | 0.02-0.08 | soft natural pore
+small water bowl | 0.85 | 0.02-0.1 | shallow ceramic dish
+clay needle tool | 0.7 | 0.02-0.05 | thin steel point in wood
+splash apron hung | 0.7 | 0.05-0.2 | canvas with clay smears
+glaze-dipped tile sample | 0.6 | 0.02-0.08 | glossy small glazed square
+small notebook with sketches | 0.55 | 0.05-0.1 | spiral-bound sketch paper
+clay-smeared rag pile | 0.55 | 0.05-0.1 | softly stained cotton
+small caliper tool | 0.55 | 0.02-0.08 | thin metal arms
+fresh slab of clay | 0.6 | 0.05-0.15 | flat damp gray clay sheet

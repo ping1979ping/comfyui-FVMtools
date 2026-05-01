@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+padded foam-pit wall section | 1.0 | 0.6-1.0 | dense vinyl-covered cushion
+neon-painted side wall | 0.9 | 0.6-1.0 | glowing bright pigment
+black-painted high ceiling | 0.85 | 0.5-0.9 | matte sealed warehouse
+graphic mural wall splash | 0.85 | 0.5-0.9 | painted bold motif
+rubber bumper wall padding | 0.95 | 0.5-0.9 | thick vinyl-covered foam
+warning stripe yellow wall band | 0.7 | 0.4-0.8 | painted bold caution stripe
+glow-in-dark patterned wall | 0.65 | 0.5-0.9 | uv-reactive painted shapes
+warehouse corrugated metal wall | 0.6 | 0.5-0.9 | ribbed painted steel
+black mesh trampoline expanse | 0.95 | 0.5-0.9 | woven taut spring fabric
+spectator viewing window wall | 0.65 | 0.4-0.8 | clear thick safety glass
+red padded barrier wall stretch | 0.7 | 0.5-0.9 | vinyl-wrapped cushion
+bright sponsor banner wall | 0.55 | 0.4-0.8 | printed vinyl cloth

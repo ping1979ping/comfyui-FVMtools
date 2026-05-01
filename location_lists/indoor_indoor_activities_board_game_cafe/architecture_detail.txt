@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+warm wood plank flooring | 0.9 | 0.4-0.8 | smooth oiled grain
+exposed timber ceiling beam | 0.6 | 0.3-0.7 | rough sawn natural wood
+suspended edison-bulb pendant | 0.85 | 0.2-0.5 | filament glass and brass
+patterned tin ceiling tile | 0.55 | 0.3-0.7 | embossed painted metal
+arched cafe doorway opening | 0.55 | 0.1-0.3 | painted plaster trim
+small tiled floor border | 0.5 | 0.1-0.3 | patterned encaustic tile
+wood-framed hanging chalkboard | 0.65 | 0.1-0.3 | matte slate panel
+small wall sconce lamp | 0.65 | 0.05-0.2 | brass cast metal
+crown molding decorative band | 0.5 | 0.1-0.3 | painted profile trim
+floor heat vent grille | 0.55 | 0.05-0.2 | brushed metal louver
+window with painted lettering | 0.55 | 0.1-0.3 | hand-lettered glass pane

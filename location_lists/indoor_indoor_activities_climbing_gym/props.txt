@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bright chalk-covered crimp hold | 0.95 | 0.05-0.15 | gritty pigmented rubber
+worn rubber climbing shoe | 0.9 | 0.05-0.15 | sticky soled and leather
+canvas chalk bag | 0.9 | 0.05-0.1 | dusty drawstring pouch
+nylon climbing harness | 0.8 | 0.05-0.15 | webbed buckled assembly
+coiled dynamic rope length | 0.75 | 0.1-0.25 | braided sheath cord
+locking pear carabiner | 0.7 | 0.02-0.08 | brushed aluminum gate
+roll of athletic finger tape | 0.7 | 0.02-0.08 | woven cotton spool
+brush for cleaning holds | 0.55 | 0.02-0.08 | stiff plastic bristles
+guidebook for routes | 0.5 | 0.05-0.1 | printed bound paper
+foam roller for warmups | 0.55 | 0.05-0.15 | dense ribbed cylinder
+resistance band loop | 0.55 | 0.05-0.1 | stretchy rubber strip
+hangboard training tool | 0.5 | 0.05-0.15 | sanded wood form
+liquid chalk bottle | 0.55 | 0.02-0.08 | smooth plastic vessel
+rolled-up training journal | 0.45 | 0.02-0.08 | soft printed paper

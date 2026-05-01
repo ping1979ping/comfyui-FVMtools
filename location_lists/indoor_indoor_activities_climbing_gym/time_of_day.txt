@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-work evening rush | 1.0 | - | -
+weekday lunch break session | 0.85 | - | -
+saturday morning bouldering peak | 0.95 | - | -
+late afternoon route setting day | 0.7 | - | -
+sunday family climb time | 0.8 | - | -
+early morning weekday quiet | 0.75 | - | -
+midweek youth team practice | 0.7 | - | -
+weekend competition evening | 0.7 | - | -
+late evening training closing hour | 0.7 | - | -
+weekday afternoon lull | 0.7 | - | -

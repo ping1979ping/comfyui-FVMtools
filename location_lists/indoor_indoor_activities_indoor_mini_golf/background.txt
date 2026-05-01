@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+black-light glowing mural wall | 1.0 | 0.6-1.0 | uv-reactive painted graphic
+neon painted course-perimeter wall | 0.95 | 0.6-1.0 | bright fluorescent pigment
+artificial turf carpeted wall | 0.7 | 0.5-0.9 | dense green plastic fiber
+themed castle facade wall | 0.7 | 0.5-0.9 | painted foam-cast masonry
+glow-in-dark splash wall | 0.85 | 0.6-1.0 | luminous reactive paint
+rocky cave-themed wall section | 0.65 | 0.5-0.9 | sculpted painted foam
+warehouse painted black ceiling backdrop | 0.65 | 0.5-0.9 | matte sealed surface
+themed pirate ship side wall | 0.55 | 0.5-0.9 | painted wood plank facade
+giant whimsical-flower wall accent | 0.6 | 0.5-0.9 | painted oversized petal motif
+glow-blue tunnel wall stretch | 0.55 | 0.5-0.9 | uv-reactive painted tube
+graphic blacklight starfield wall | 0.7 | 0.6-1.0 | reactive painted dots
+themed jungle leaf-print wall | 0.55 | 0.5-0.9 | painted bold foliage motif

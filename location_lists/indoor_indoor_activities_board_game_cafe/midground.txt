@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+board-game shelving unit packed | 1.0 | 0.3-0.6 | colorful packed boxes
+sturdy wooden game table | 0.95 | 0.3-0.6 | varnished thick top
+mismatched dining chair set | 0.85 | 0.2-0.5 | painted wood frames
+cafe counter espresso bar | 0.7 | 0.2-0.5 | warm wood with chrome
+small reading-nook armchair | 0.65 | 0.15-0.4 | tufted upholstered fabric
+bookshelf adjacent to games | 0.7 | 0.2-0.5 | warm wood with novels
+hanging blackboard menu | 0.7 | 0.15-0.4 | matte slate framed
+small game-rental kiosk | 0.55 | 0.15-0.4 | painted wood booth
+plush bench seating cluster | 0.6 | 0.2-0.5 | velvet cushioned upholstery
+potted fiddle-leaf fig tree | 0.55 | 0.15-0.4 | matte green large leaves
+illustrated game-night sign frame | 0.55 | 0.1-0.3 | wood-framed printed graphic
+display case for rare games | 0.55 | 0.15-0.4 | glass and dark wood
+hand-painted seating booth divider | 0.5 | 0.15-0.4 | painted bold motif

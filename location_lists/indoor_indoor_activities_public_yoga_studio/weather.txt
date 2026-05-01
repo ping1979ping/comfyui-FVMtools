@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm radiant heated room air | 1.0 | - | -
+cool soft natural light filtering | 0.85 | - | -
+gentle rain heard on window | 0.75 | - | -
+sunny morning glow in space | 0.8 | - | -
+overcast afternoon soft light | 0.7 | - | -
+snowy day quiet stillness | 0.6 | - | -
+humid hot yoga conditions | 0.7 | - | -
+breezy spring afternoon outside | 0.55 | - | -
+crisp autumn morning light | 0.6 | - | -
+golden hour evening glow | 0.7 | - | -

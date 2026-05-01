@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+team-bench dasher gate | 0.95 | 0.2-0.5 | painted hinged board
+penalty-box small enclosure | 0.85 | 0.15-0.4 | painted board with bench
+goal-net frame and mesh | 0.95 | 0.15-0.4 | red painted steel and netting
+center-faceoff line marker | 0.85 | 0.1-0.3 | bold painted ice line
+zamboni resurfacer machine | 0.65 | 0.15-0.4 | painted metal cab and tank
+referee bench small unit | 0.55 | 0.1-0.3 | painted steel frame
+scoreboard mounted high | 0.7 | 0.15-0.4 | bright led panel
+spectator-bench seating row | 0.85 | 0.2-0.5 | painted plastic bench
+warm-up bench team area | 0.85 | 0.15-0.4 | rubber matting and bench
+skate-rental counter station | 0.6 | 0.15-0.4 | laminated wood top
+cone-and-puck training pile | 0.6 | 0.1-0.3 | small bright plastic cones
+locker-room bench cluster | 0.55 | 0.15-0.4 | varnished wood and steel
+team-flag hanging banner | 0.55 | 0.1-0.3 | printed cloth on cord

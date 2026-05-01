@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning lap swim | 1.0 | - | -
+weekday lunchtime quick laps | 0.85 | - | -
+post-work evening swim | 0.95 | - | -
+saturday morning family swim | 0.9 | - | -
+sunday afternoon open swim | 0.85 | - | -
+weekday afternoon kids lessons | 0.8 | - | -
+late evening masters practice | 0.8 | - | -
+midday senior aqua class | 0.75 | - | -
+weekend competition meet | 0.75 | - | -
+late afternoon team training | 0.8 | - | -

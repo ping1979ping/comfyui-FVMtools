@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bowling ball on rack | 0.9 | 0.05-0.2 | glossy swirled resin sphere
+laced rental bowling shoe | 0.85 | 0.05-0.15 | scuffed leather and rubber
+score keypad console | 0.7 | 0.05-0.2 | worn rubberized buttons
+plastic pitcher of soda | 0.55 | 0.05-0.15 | clear translucent vessel
+half-eaten basket of fries | 0.5 | 0.05-0.15 | crumpled checkered paper
+cup of beer in plastic | 0.6 | 0.05-0.15 | beaded condensation surface
+spare ball on return | 0.65 | 0.05-0.15 | swirled marbled resin
+team scorecard printout | 0.5 | 0.05-0.1 | thin printed paper
+foul stick chalk pouch | 0.5 | 0.02-0.1 | soft cloth bag
+roll of arcade tickets | 0.45 | 0.02-0.1 | crinkled red paper coil
+basket of nachos with cheese | 0.5 | 0.05-0.15 | greasy cardboard tray
+crumpled napkins on bench | 0.5 | 0.02-0.1 | soft white paper

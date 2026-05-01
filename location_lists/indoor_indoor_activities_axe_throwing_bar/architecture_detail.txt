@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed wood ceiling joist | 0.85 | 0.3-0.7 | rough sawn timber beam
+edison bulb pendant cord | 0.85 | 0.2-0.5 | braided cloth-wrapped wire
+sealed concrete poured floor | 0.85 | 0.4-0.8 | matte ground surface
+black painted overhead duct | 0.7 | 0.2-0.5 | painted steel pipe
+exposed brick column wrap | 0.55 | 0.2-0.5 | aged warm masonry
+metal scaffold safety rail | 0.7 | 0.1-0.3 | painted steel pipe
+sliding barn door track | 0.6 | 0.1-0.3 | black hardware on wall
+caged wall light fixture | 0.6 | 0.05-0.2 | painted metal cage
+exposed sprinkler pipe run | 0.6 | 0.1-0.3 | red painted metal pipe
+emergency exit sign glow | 0.55 | 0.05-0.2 | green plastic housing
+rough plywood wainscot panel | 0.5 | 0.2-0.5 | unfinished sheet board

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+mini-golf putter on tee | 0.95 | 0.05-0.2 | painted aluminum shaft
+neon golf ball on turf | 0.9 | 0.02-0.05 | smooth dimpled plastic
+score card with stub pencil | 0.85 | 0.05-0.1 | thin printed paper and small pencil
+hole flag near cup | 0.8 | 0.05-0.15 | thin printed cloth on pole
+small bucket of golf balls | 0.7 | 0.05-0.1 | plastic basket with spheres
+soft drink in souvenir cup | 0.6 | 0.05-0.1 | printed waxed cardboard
+glow-stick bracelet | 0.55 | 0.02-0.05 | luminous plastic tube
+event entry wristband | 0.7 | 0.02-0.05 | printed tyvek strip
+half-eaten ice cream cone | 0.5 | 0.05-0.1 | melting soft serve
+crumpled candy wrapper | 0.5 | 0.02-0.05 | foil printed packet
+small kid putter | 0.55 | 0.05-0.15 | short painted shaft
+party balloon string | 0.5 | 0.02-0.05 | latex sphere on ribbon

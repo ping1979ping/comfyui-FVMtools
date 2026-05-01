@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+go-kart staging row | 0.95 | 0.3-0.6 | painted molded fiberglass
+pit lane garage opening | 0.85 | 0.2-0.5 | rolling steel door
+race control raised booth | 0.7 | 0.15-0.4 | glass and painted steel
+checkered flag stand | 0.65 | 0.1-0.3 | hung patterned cloth
+overhead lap timer board | 0.85 | 0.2-0.5 | bright led display
+spectator bench seating row | 0.7 | 0.2-0.5 | painted metal frame
+helmet rental rack wall | 0.75 | 0.15-0.4 | metal pegs and helmets
+racing suit hook row | 0.65 | 0.15-0.4 | wall-mounted hooks with suits
+fuel station bay corner | 0.55 | 0.1-0.3 | painted concrete pad
+mechanic toolbox cart | 0.55 | 0.1-0.3 | red painted steel
+gridded starting line markers | 0.7 | 0.1-0.3 | painted stripe surface
+sponsor logo column wrap | 0.55 | 0.1-0.3 | printed vinyl decal
+chain-link spectator fence | 0.6 | 0.2-0.5 | woven galvanized wire

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ball-top arcade joystick | 0.95 | 0.05-0.15 | smooth plastic sphere
+glossy red arcade button | 0.9 | 0.02-0.08 | molded plastic dome
+brass arcade token | 0.85 | 0.02-0.08 | milled plated metal
+roll of redemption tickets | 0.8 | 0.05-0.1 | crinkled red paper coil
+plush prize teddy bear | 0.65 | 0.05-0.15 | soft pile fabric
+neon green soda can | 0.55 | 0.02-0.08 | printed aluminum
+slice of pepperoni pizza | 0.55 | 0.05-0.15 | glistening melted cheese
+glow-stick wristband | 0.55 | 0.02-0.08 | soft luminous tube
+crumpled candy bar wrapper | 0.55 | 0.02-0.08 | foil packet
+quarter coin stack | 0.7 | 0.02-0.08 | milled silver metal
+high-score card slip | 0.55 | 0.02-0.08 | thin printed paper
+chrome pinball plunger | 0.6 | 0.05-0.1 | polished steel rod
+pixelated retro game module | 0.5 | 0.02-0.08 | glossy plastic shell
+small fountain drink cup | 0.55 | 0.05-0.1 | waxed printed cardboard

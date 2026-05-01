@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late evening league hours | 1.0 | - | -
+weekend afternoon family time | 0.9 | - | -
+midnight glow bowling session | 0.85 | - | -
+early evening happy hour | 0.85 | - | -
+weekday lunch slow period | 0.7 | - | -
+saturday night peak hours | 0.95 | - | -
+sunday morning birthday party | 0.7 | - | -
+friday night cosmic bowling | 0.9 | - | -
+late night closing shift | 0.65 | - | -
+post-work casual league | 0.8 | - | -

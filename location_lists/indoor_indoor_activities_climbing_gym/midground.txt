@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+auto-belay device bank | 0.85 | 0.2-0.5 | sleek aluminum housing
+hangboard training rig | 0.8 | 0.15-0.4 | grippy resin holds on wood
+campus board structure | 0.7 | 0.2-0.5 | rough wooden rungs
+freestanding boulder feature | 0.85 | 0.3-0.6 | painted multi-faceted form
+chalk bucket stand cluster | 0.85 | 0.1-0.3 | crusty canvas pots
+rope coil bin assembly | 0.75 | 0.15-0.4 | wire mesh basket
+route-setter scaffold rig | 0.55 | 0.2-0.5 | metal pipe scaffold
+gym member bench row | 0.7 | 0.2-0.5 | rough plywood seating
+weight rack stationed nearby | 0.6 | 0.15-0.4 | painted steel frame
+gear rental hatch counter | 0.55 | 0.15-0.4 | laminated wood top
+warm-up stretching pad zone | 0.65 | 0.2-0.5 | thick padded mat
+clipboard route-info kiosk | 0.55 | 0.1-0.3 | painted plywood stand
+pull-up bar truss frame | 0.6 | 0.15-0.4 | painted heavy steel

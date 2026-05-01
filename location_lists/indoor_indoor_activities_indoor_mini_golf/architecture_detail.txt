@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+black-painted ceiling field | 0.95 | 0.5-0.9 | matte sealed warehouse
+overhead blacklight tube fixture | 0.9 | 0.2-0.5 | violet glowing tube
+exposed steel ceiling girder | 0.6 | 0.3-0.7 | painted heavy beam
+glow-paint floor pathway stripe | 0.85 | 0.1-0.3 | painted reactive line
+ceiling-mounted theme spotlight | 0.85 | 0.1-0.3 | colored led housing
+suspended themed decoration above | 0.6 | 0.15-0.4 | painted molded prop
+emergency exit signage glow | 0.6 | 0.05-0.2 | green plastic housing
+sealed concrete sub-floor | 0.7 | 0.4-0.8 | matte ground surface
+small ceiling speaker grille | 0.6 | 0.05-0.2 | white plastic disc
+exposed sprinkler pipe run | 0.55 | 0.1-0.3 | red painted metal pipe
+ceiling fan with painted blades | 0.5 | 0.1-0.3 | painted metal blade
+themed archway over hole entry | 0.65 | 0.15-0.4 | painted molded prop

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+unrolled purple yoga mat | 0.95 | 0.1-0.3 | grippy ribbed rubber
+cork yoga block pair | 0.9 | 0.05-0.15 | warm grainy natural surface
+linen bolster cushion | 0.85 | 0.05-0.2 | softly creased cylindrical pillow
+folded wool blanket | 0.85 | 0.05-0.2 | softly piled natural fiber
+brass singing bowl with mallet | 0.6 | 0.05-0.1 | softly polished gold tone
+ceramic incense burner | 0.6 | 0.05-0.1 | matte unglazed earthenware
+copper water bottle | 0.65 | 0.05-0.1 | hammered metallic surface
+woven yoga strap loop | 0.6 | 0.02-0.1 | flat cotton webbing
+small tea cup on tray | 0.5 | 0.05-0.1 | smooth ceramic vessel
+beeswax pillar candle | 0.6 | 0.05-0.1 | softly textured natural wax
+wooden mala beads necklace | 0.55 | 0.02-0.08 | smooth strung sandalwood
+small towel rolled up | 0.6 | 0.05-0.1 | soft cotton terry

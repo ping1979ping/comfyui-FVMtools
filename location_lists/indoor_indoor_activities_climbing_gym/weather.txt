@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool dry climate-controlled gym air | 1.0 | - | -
+warm humid pre-summer interior | 0.6 | - | -
+crisp winter air leaking past entry | 0.55 | - | -
+rainy day driving members indoors | 0.7 | - | -
+sunny weekend outside the doors | 0.55 | - | -
+gray overcast afternoon outside | 0.6 | - | -
+hot summer day cool gym contrast | 0.55 | - | -
+snowy weekend outside seen at lobby | 0.5 | - | -
+foggy morning glimpsed at entrance | 0.45 | - | -
+breezy autumn day past doors | 0.5 | - | -

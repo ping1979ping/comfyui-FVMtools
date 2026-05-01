@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+deep burgundy painted wall | 1.0 | 0.7-1.0 | velvety matte pigment
+forest green felt-lined wall panel | 0.8 | 0.6-1.0 | soft napped fabric
+dark wood wainscot wall | 0.85 | 0.6-1.0 | rich oiled timber grain
+mirrored bar back wall | 0.75 | 0.5-0.9 | reflective glass panel
+neon beer sign back wall | 0.7 | 0.4-0.8 | glowing tube glass
+exposed brick tavern wall | 0.7 | 0.5-0.9 | aged warm masonry
+patterned vintage wallpaper | 0.6 | 0.5-0.9 | flocked velvety print
+black painted ceiling backdrop | 0.55 | 0.5-0.9 | matte dark sealed wood
+gold-framed billiards portrait wall | 0.55 | 0.5-0.9 | richly hung paintings
+dark plaid carpeted floor area | 0.6 | 0.5-0.9 | dense patterned weave
+amber glass partition | 0.5 | 0.4-0.8 | textured translucent panel
+oak paneled card-room wall | 0.6 | 0.5-0.9 | warm fielded timber

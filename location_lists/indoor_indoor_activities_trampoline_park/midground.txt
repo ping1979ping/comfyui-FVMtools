@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+connected trampoline grid bay | 1.0 | 0.4-0.8 | woven black mesh array
+foam-cube pit zone | 0.9 | 0.2-0.5 | colorful dense cubes
+slam-dunk basketball lane | 0.7 | 0.15-0.4 | hoop and trampoline ramp
+dodgeball court trampoline arena | 0.65 | 0.2-0.5 | gridded mesh field
+ninja-warrior obstacle course | 0.7 | 0.2-0.5 | painted padded structures
+launching wall climb section | 0.6 | 0.15-0.4 | textured padded ramp
+foam-block stacking play area | 0.55 | 0.15-0.4 | soft pile of cubes
+referee tower standpoint | 0.55 | 0.1-0.3 | elevated metal platform
+party-room glass partition | 0.55 | 0.15-0.4 | clear panes with frame
+locker bench cluster | 0.65 | 0.15-0.4 | colorful metal compartments
+spectator bleacher row | 0.6 | 0.2-0.5 | painted aluminum bench
+trampoline frame edge padding | 0.85 | 0.2-0.5 | thick vinyl cushion roll
+inflatable airbag landing zone | 0.55 | 0.15-0.4 | tensioned vinyl bladder

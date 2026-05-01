@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-work evening league | 1.0 | - | -
+saturday morning practice | 0.95 | - | -
+weekday lunch quick session | 0.7 | - | -
+sunday afternoon family lesson | 0.8 | - | -
+weekday afternoon coaching | 0.8 | - | -
+late evening private booking | 0.7 | - | -
+weekend tournament afternoon | 0.85 | - | -
+midweek youth team practice | 0.75 | - | -
+early morning quiet training | 0.7 | - | -
+holiday-week intensive session | 0.65 | - | -

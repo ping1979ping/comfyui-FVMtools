@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cedar-tiered sauna bench | 1.0 | 0.3-0.6 | warm grained timber
+electric sauna heater stove | 0.85 | 0.15-0.4 | metal box of glowing stones
+relaxation lounge daybed row | 0.85 | 0.2-0.5 | upholstered pale fabric
+plunge-pool tile basin | 0.75 | 0.2-0.5 | glazed cool ceramic vessel
+hammam heated tile slab | 0.65 | 0.2-0.5 | warm glazed stone surface
+steam-room glass door frame | 0.7 | 0.1-0.3 | brushed metal with seal
+robe-hook wall row | 0.75 | 0.15-0.4 | brushed metal pegs
+soft-lit niche shelf with stones | 0.55 | 0.1-0.3 | softly lit stacked rocks
+spa reception counter low | 0.55 | 0.15-0.4 | warm wood and stone
+small foot-soak tile basin | 0.5 | 0.1-0.3 | glazed ceramic vessel
+chilled water dispenser stand | 0.65 | 0.1-0.3 | brushed metal cylinder
+small lounge side table | 0.55 | 0.1-0.3 | turned dark timber
+fireplace stone alcove | 0.5 | 0.15-0.4 | dry-stack stacked stone

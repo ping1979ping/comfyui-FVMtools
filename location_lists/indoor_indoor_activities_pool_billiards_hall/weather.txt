@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+dim smoky climate-controlled hall air | 1.0 | - | -
+rainy night outside seen at door | 0.7 | - | -
+cold winter night past entry | 0.6 | - | -
+sunny day glimpsed past lobby | 0.5 | - | -
+overcast evening outside windows | 0.6 | - | -
+warm summer night past doors | 0.6 | - | -
+crisp autumn evening at entrance | 0.55 | - | -
+cool conditioned tavern interior | 0.85 | - | -
+foggy parking glimpsed from door | 0.45 | - | -
+snowy night past tavern entry | 0.5 | - | -

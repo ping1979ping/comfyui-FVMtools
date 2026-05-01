@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-work evening class | 1.0 | - | -
+saturday morning workshop | 0.95 | - | -
+weekday afternoon open studio | 0.85 | - | -
+sunday afternoon paint social | 0.8 | - | -
+weekday lunchtime quick class | 0.7 | - | -
+weeknight figure-drawing session | 0.8 | - | -
+weekend kids painting class | 0.75 | - | -
+midweek youth art class | 0.7 | - | -
+late evening final closing slot | 0.65 | - | -
+holiday-week intensive workshop | 0.65 | - | -
