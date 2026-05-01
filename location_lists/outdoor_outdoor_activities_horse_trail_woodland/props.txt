@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+leather english riding helmet | 0.95 | 0.05-0.15 | velvet covered hard shell
+worn riding gloves | 0.85 | 0.02-0.08 | supple soft leather palm
+tall riding boots | 0.95 | 0.05-0.2 | polished smooth leather
+breeches with knee patches | 0.95 | 0.1-0.3 | snug stretchable fabric
+leather riding crop in hand | 0.65 | 0.02-0.08 | thin braided shaft
+saddle with stirrup leathers | 1.0 | 0.1-0.3 | tooled smooth hide
+saddle pad blanket | 0.95 | 0.1-0.3 | woven wool textile
+bridle with snaffle bit | 0.95 | 0.05-0.2 | fine leather strap
+horsehair tail and mane | 0.95 | 0.1-0.3 | flowing coarse strands
+saddle bag clipped behind | 0.55 | 0.05-0.15 | weathered leather pouch
+canteen on saddle horn | 0.55 | 0.02-0.08 | brass-banded canvas-covered flask
+small first-aid pouch | 0.45 | 0.02-0.06 | red sealed pack
+broad-brim trail hat alternative | 0.5 | 0.05-0.15 | woven straw weave
+trail map in pouch | 0.55 | 0.02-0.06 | folded laminated paper

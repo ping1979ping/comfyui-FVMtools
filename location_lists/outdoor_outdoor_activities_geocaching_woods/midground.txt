@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+hidden cache nestled in roots | 0.85 | 0.05-0.2 | small camouflaged container
+mossy hollow log opening | 0.75 | 0.1-0.3 | dark cavity in green
+fallen branch pile cluster | 0.7 | 0.2-0.5 | tangled woody mass
+exposed root tangle on bank | 0.75 | 0.2-0.5 | gnarled timber web
+clearing with scattered ferns | 0.7 | 0.2-0.5 | feathery green carpet
+weathered split-rail fence | 0.5 | 0.2-0.5 | softly silvered chestnut wood
+trail blaze paint on bark | 0.7 | 0.05-0.15 | crisp colored rectangle
+fellow geocacher searching | 0.55 | 0.1-0.3 | crouched bright figure
+small wooden trail bridge | 0.5 | 0.1-0.3 | weathered plank deck
+abandoned moss-covered stump | 0.7 | 0.1-0.3 | velvet-topped flat butt
+spring-fed seep across stones | 0.55 | 0.1-0.3 | wet glistening rock
+weather-stained boulder face | 0.65 | 0.2-0.5 | mottled grey weathered stone
+old stone wall corner | 0.5 | 0.2-0.5 | hewn lichen-spotted blocks

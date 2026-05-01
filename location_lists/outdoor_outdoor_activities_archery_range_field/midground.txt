@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+row of bullseye paper targets | 1.0 | 0.3-0.6 | concentric ringed faces
+foam target butt stand | 0.95 | 0.2-0.5 | dense layered block
+fellow archer at adjacent lane | 0.8 | 0.1-0.3 | upright drawing figure
+range safety yellow flag | 0.65 | 0.05-0.2 | bright fluttering banner
+3D foam animal target | 0.6 | 0.2-0.5 | molded life-sized shape
+shooting line painted on ground | 0.85 | 0.1-0.3 | crisp white stripe
+distance marker stake | 0.85 | 0.05-0.2 | numbered painted post
+arrow-stopping back stop berm | 0.7 | 0.3-0.6 | mounded earth wall
+spent arrow scattered in grass | 0.7 | 0.05-0.2 | bright fletched shafts
+cluster of arrows in target | 0.85 | 0.1-0.3 | grouped fletched ends
+quiver stand on ground | 0.7 | 0.05-0.2 | tubular ground-anchor rack
+range whistle on lanyard | 0.55 | 0.0-0.1 | small bright pea-whistle

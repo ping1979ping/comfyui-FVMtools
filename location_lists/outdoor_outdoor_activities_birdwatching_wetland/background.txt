@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+vast reedy marshland expanse | 1.0 | 0.5-1.0 | tall golden tipped reeds
+distant flock of wading birds | 0.75 | 0.2-0.5 | scattered tiny silhouettes
+hazy distant tree line | 0.85 | 0.4-0.8 | soft blue-green wooded backdrop
+open mirror water channel | 0.85 | 0.3-0.7 | calm reflective ribbon
+distant heron in stillness | 0.6 | 0.05-0.2 | upright distant figure
+sun-shafted cloud opening | 0.85 | 0.4-0.8 | bright tunneled light
+cattail-edged shoreline | 0.85 | 0.3-0.7 | dense brown-tipped stand
+distant duck-blind hut | 0.55 | 0.1-0.3 | small camouflaged structure
+wide open marsh sky | 0.95 | 0.5-1.0 | pale cobalt expanse
+distant flying skein of geese | 0.5 | 0.1-0.3 | V-formation silhouettes
+reflective shallow pond | 0.7 | 0.3-0.6 | flat mirror-still water
+distant willow grove | 0.55 | 0.2-0.5 | dark drooping cluster

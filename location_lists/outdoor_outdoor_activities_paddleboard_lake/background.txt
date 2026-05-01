@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant wooded shoreline | 1.0 | 0.5-1.0 | dark green tree line
+mirror-still lake horizon | 0.95 | 0.5-1.0 | flat reflective expanse
+hazy mountain backdrop | 0.75 | 0.4-0.8 | soft blue layered ridges
+small island with pines | 0.7 | 0.3-0.7 | pointed evergreen cluster
+distant cabin among trees | 0.55 | 0.2-0.5 | tiny weathered wood structure
+opposite cove with reeds | 0.7 | 0.4-0.8 | golden tipped marsh edge
+wide open sky over water | 0.95 | 0.5-1.0 | pale cobalt expanse
+faint distant kayakers | 0.4 | 0.2-0.5 | thin paddling silhouettes
+forested headland point | 0.7 | 0.3-0.7 | dark green wooded jut
+floating dock far across | 0.5 | 0.2-0.5 | small distant plank deck
+gradient morning mist on lake | 0.8 | 0.4-0.8 | soft milky atmospheric layer
+sunlit ripple band on water | 0.85 | 0.4-0.8 | glittering bright streak
+distant sailboat on horizon | 0.4 | 0.2-0.5 | tiny white triangle
+shoreline cliff face | 0.5 | 0.3-0.6 | striated pale rock

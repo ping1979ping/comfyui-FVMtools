@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant cross-country course terrain | 1.0 | 0.5-1.0 | rolling green-grass landscape
+hazy distant ridge | 0.7 | 0.3-0.7 | soft blue layered profile
+forested park boundary line | 0.85 | 0.4-0.8 | dark green wooded backdrop
+sweeping open field expanse | 0.95 | 0.4-0.8 | shorn green grassy plain
+sunlit cloud-shadow patches | 0.7 | 0.3-0.7 | shifting dappled patches
+distant runner ahead on course | 0.7 | 0.05-0.2 | small bright moving figure
+fence-line course boundary | 0.65 | 0.2-0.5 | thin posted boundary
+patchy autumn maple grove | 0.75 | 0.3-0.6 | mottled red-orange canopy
+distant park spectator group | 0.6 | 0.1-0.3 | colorful huddled figures
+gently sloping pasture | 0.85 | 0.4-0.8 | softly mounded green
+distant rolling hills | 0.7 | 0.3-0.6 | soft layered backdrop
+flagged distance marker line | 0.55 | 0.05-0.15 | bright fluttering banners

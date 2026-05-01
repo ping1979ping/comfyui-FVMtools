@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant offshore breakers rolling | 1.0 | 0.5-1.0 | rhythmic curling lines
+hazy coastal headland | 0.8 | 0.4-0.8 | blue-grey distant promontory
+wide open ocean horizon | 1.0 | 0.5-1.0 | flat indigo expanse
+distant offshore island silhouette | 0.5 | 0.2-0.5 | thin dark profile
+sunlit ocean glitter band | 0.95 | 0.4-0.8 | bright sparkling streak
+distant pier silhouette | 0.55 | 0.2-0.5 | thin parallel pilings
+coastal cliff backdrop | 0.7 | 0.4-0.8 | weathered tan stratified rock
+palm-line beach behind sand | 0.65 | 0.3-0.6 | dark fronded crown line
+offshore boats dotting horizon | 0.5 | 0.2-0.5 | tiny distant hulls
+windswept dune line | 0.7 | 0.3-0.7 | rounded pale sand mounds
+hazy salt-air horizon | 0.85 | 0.4-0.8 | softly veiled atmospheric blue
+distant flock of pelicans | 0.5 | 0.2-0.4 | gliding silhouettes
+sunset cloud bank distant | 0.6 | 0.3-0.7 | golden-rimmed cumulus

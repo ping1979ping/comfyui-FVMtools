@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+cast iron mooring bollard | 0.85 | 0.0-0.1 | dark cylindrical post
+brass cleat horn | 0.95 | 0.0-0.05 | polished gleaming alloy
+weather-bleached dock ladder | 0.65 | 0.05-0.15 | rusted rail rungs
+hand-painted boat name on stern | 0.85 | 0.05-0.1 | painted lettering on hull
+slip number painted plate | 0.7 | 0.0-0.05 | painted metal plate
+faded harbor regulations sign | 0.55 | 0.05-0.15 | painted wooden plank
+ring fender mounted bracket | 0.55 | 0.0-0.05 | rusted welded ring
+yacht club crest on burgee | 0.65 | 0.0-0.05 | embroidered fabric flag
+weathered tide-staff marker | 0.55 | 0.0-0.1 | painted gauge column
+salt-encrusted hatch hinge | 0.65 | 0.0-0.05 | corroded brass plate

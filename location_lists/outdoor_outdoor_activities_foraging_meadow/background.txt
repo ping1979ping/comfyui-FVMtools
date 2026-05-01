@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rolling wildflower meadow expanse | 1.0 | 0.5-1.0 | golden-green floral plain
+distant tree line at field edge | 0.9 | 0.4-0.8 | dark green wooded backdrop
+hazy distant hills | 0.7 | 0.3-0.7 | soft blue rolling profile
+sun-warmed open pasture | 0.85 | 0.4-0.8 | golden grassy expanse
+patchy cloud-shadow on meadow | 0.7 | 0.3-0.7 | shifting dappled patches
+distant farm fence boundary | 0.65 | 0.3-0.6 | thin posted wooden line
+old apple orchard remnant | 0.5 | 0.2-0.5 | scattered gnarled fruit trees
+tall reedy stream-side band | 0.6 | 0.3-0.6 | golden tipped waterway edge
+gentle slope rising to ridge | 0.7 | 0.3-0.6 | softly mounded green
+distant grazing cattle | 0.45 | 0.1-0.3 | tiny browsing silhouettes
+broad scattered hardwoods | 0.7 | 0.3-0.7 | broad-spreading dark canopy
+white birch grove fringe | 0.55 | 0.2-0.5 | bright pale-trunked cluster

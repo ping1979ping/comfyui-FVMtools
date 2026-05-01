@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+strong steady offshore wind | 1.0 | - | -
+warm humid coastal air | 0.85 | - | -
+gusty unpredictable crosswind | 0.65 | - | -
+distant tropical squall | 0.5 | - | -
+fresh post-rain salty freshness | 0.75 | - | -
+overcast moody grey ocean | 0.7 | - | -
+warm sun-soaked afternoon | 0.95 | - | -
+crisp early autumn breeze | 0.75 | - | -
+soft passing cumulus clouds | 0.85 | - | -
+windy offshore session day | 0.95 | - | -

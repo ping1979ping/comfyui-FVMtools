@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant tree line behind targets | 1.0 | 0.5-1.0 | dark green wooded backdrop
+open mowed field expanse | 0.95 | 0.4-0.8 | shorn green grassy plain
+hazy hill silhouette beyond | 0.7 | 0.3-0.7 | soft blue rolling profile
+grouped pine wind-break row | 0.75 | 0.4-0.8 | dark conifer cluster
+distant range scoring shed | 0.6 | 0.2-0.5 | weathered wooden hut
+pasture fence line in distance | 0.7 | 0.3-0.6 | thin posted boundary
+gentle slope rising beyond targets | 0.65 | 0.3-0.7 | softly mounded green
+distant herd of deer in field | 0.45 | 0.1-0.3 | tiny browsing silhouettes
+pale overcast cloud blanket | 0.75 | 0.4-0.8 | flat diffused grey wash
+sun-tinted backdrop netting | 0.55 | 0.3-0.6 | tensioned dark mesh
+distant farmhouse roof | 0.4 | 0.1-0.3 | tiny red gabled top
+oak grove on field edge | 0.7 | 0.3-0.6 | broad-spreading dark canopy

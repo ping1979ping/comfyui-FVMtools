@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+adjustable carbon paddle | 1.0 | 0.05-0.2 | matte composite shaft
+PFD life vest worn | 0.85 | 0.05-0.2 | quilted buoyant nylon
+ankle leash tether | 0.85 | 0.02-0.08 | coiled urethane cord
+neoprene water shoes | 0.75 | 0.02-0.1 | snug stretchable rubber
+drybag with valuables | 0.75 | 0.05-0.15 | rolled-top vinyl pouch
+polarized lake sunglasses | 0.85 | 0.02-0.06 | dark reflective lens
+broad-brim sun hat | 0.8 | 0.02-0.1 | woven straw weave
+sunscreen tube clipped | 0.6 | 0.02-0.06 | white plastic squeeze bottle
+small waterproof phone case | 0.65 | 0.02-0.06 | clear sealed pouch
+water bottle in deck holder | 0.7 | 0.02-0.08 | translucent plastic flask
+quick-dry rashguard top | 0.85 | 0.05-0.2 | smooth lycra sleeve
+hand pump for inflatable | 0.45 | 0.02-0.1 | red cylinder shaft
+fishing rod across board | 0.4 | 0.05-0.15 | thin segmented graphite
+small dry-pack with snacks | 0.5 | 0.02-0.08 | sealed nylon pouch

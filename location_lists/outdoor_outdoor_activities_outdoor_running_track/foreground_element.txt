@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+vulcanized rubber track surface | 1.0 | 0.3-0.6 | textured red granular
+fresh spike imprints | 0.85 | 0.05-0.15 | small dotted depressions
+trampled chalk powder line | 0.7 | 0.05-0.15 | white powdery smear
+tape line at start | 0.7 | 0.0-0.05 | thin colored ribbon
+sun-warmed track lane | 0.85 | 0.2-0.5 | bright striped band
+shadow of running stride | 0.7 | 0.1-0.3 | dappled dark figure outline
+fallen spike-bag on grass | 0.5 | 0.05-0.15 | small mesh sack
+splatter of grit on calf | 0.7 | 0.05-0.15 | scattered dark dots
+splash of sweat on rubber | 0.6 | 0.05-0.1 | small dark damp marks
+small puddle in lane | 0.45 | 0.0-0.1 | dark glassy water

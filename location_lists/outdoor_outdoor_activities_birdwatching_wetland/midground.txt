@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+raised wooden boardwalk path | 0.85 | 0.2-0.5 | weathered plank deck
+viewing platform with railing | 0.7 | 0.2-0.5 | low timber-fenced lookout
+patch of yellow iris bloom | 0.65 | 0.1-0.3 | bright sword-like leaves
+small wading shorebird | 0.7 | 0.05-0.15 | thin-legged speckled form
+cluster of lily pads | 0.7 | 0.1-0.3 | flat green disks
+fellow birder with binoculars | 0.6 | 0.1-0.3 | scope-pointing figure
+beaver-cut willow stump | 0.5 | 0.05-0.15 | gnawed pencil-pointed end
+floating duckweed mat | 0.7 | 0.1-0.3 | bright green skim
+exposed mudflat bank | 0.65 | 0.2-0.5 | dark glistening soft earth
+distant kingfisher on perch | 0.5 | 0.0-0.05 | small bright-blue dot
+weathered information panel | 0.55 | 0.05-0.15 | painted laminated sign
+moss-streaked log over water | 0.55 | 0.1-0.3 | velvet green over wood

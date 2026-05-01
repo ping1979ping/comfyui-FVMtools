@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+handheld GPS device | 1.0 | 0.05-0.15 | rugged sealed display
+small log-book pencil | 0.7 | 0.02-0.06 | wooden writing stub
+geocache trade trinket | 0.65 | 0.02-0.06 | small plastic toy
+swag bag pouch | 0.55 | 0.02-0.08 | small zippered sack
+trekking pole in hand | 0.7 | 0.05-0.2 | telescoping carbon shaft
+daypack on shoulders | 0.95 | 0.05-0.2 | mesh-paneled ripstop
+hiking boots over leaves | 0.95 | 0.05-0.2 | scuffed conditioned leather
+field notebook with pencil | 0.6 | 0.02-0.06 | weathered cardboard cover
+compact tweezers tool | 0.55 | 0.02-0.04 | small steel pinch
+travel-bug tag on chain | 0.5 | 0.02-0.04 | aluminum stamped disc
+headlamp clipped on cap | 0.55 | 0.02-0.06 | small bright LED unit
+flexible inspection mirror | 0.4 | 0.02-0.05 | tiny shaft and disc
+folded trail map sleeve | 0.55 | 0.02-0.06 | laminated paper square
+small flashlight in pocket | 0.55 | 0.02-0.06 | metal cylindrical body

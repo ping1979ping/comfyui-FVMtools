@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm windless field morning | 0.95 | - | -
+gentle crosswind across range | 0.85 | - | -
+warm summer afternoon stillness | 0.85 | - | -
+distant thunderstorm building | 0.5 | - | -
+fresh post-rain coolness | 0.75 | - | -
+overcast still grey day | 0.75 | - | -
+crisp early autumn coolness | 0.8 | - | -
+mild stable high pressure | 0.9 | - | -
+gusty unpredictable wind | 0.6 | - | -
+warm sun-soaked clear sky | 0.85 | - | -

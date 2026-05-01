@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+chalk bag at hip | 0.95 | 0.02-0.1 | brushed canvas pouch
+climbing harness with gear loops | 0.95 | 0.05-0.2 | reinforced webbing
+set of cams on bandolier | 0.85 | 0.02-0.12 | brushed alloy lobes
+helmet on head | 0.8 | 0.02-0.1 | hard polymer shell
+rope coil over shoulder | 0.85 | 0.05-0.2 | bright braided nylon
+nut tool clipped to harness | 0.55 | 0.02-0.06 | thin steel hook
+locking carabiner at belay | 0.85 | 0.02-0.08 | machined alloy gate
+belay device on harness | 0.85 | 0.02-0.08 | grooved metal tube
+quickdraw set on rack | 0.85 | 0.02-0.1 | paired bright biners
+guidebook open on slab | 0.55 | 0.02-0.1 | softly creased pages
+approach pack at base | 0.75 | 0.05-0.2 | abraded ripstop fabric
+hydration bladder hose | 0.6 | 0.02-0.06 | flexible drink tube
+finger tape roll | 0.55 | 0.02-0.06 | tight white spool
+brushed climbing shoe pair | 0.85 | 0.02-0.12 | downturned rubber edge

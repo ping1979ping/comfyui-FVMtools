@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool crisp riding morning | 0.9 | - | -
+gentle breeze through trees | 0.85 | - | -
+warm dry summer afternoon | 0.85 | - | -
+post-rain damp trail freshness | 0.75 | - | -
+hazy humid forest air | 0.7 | - | -
+distant thunderstorm building | 0.45 | - | -
+overcast moody cool day | 0.7 | - | -
+fall crisp leaf-strewn breeze | 0.75 | - | -
+mild stable high pressure | 0.85 | - | -
+light drifting drizzle | 0.5 | - | -

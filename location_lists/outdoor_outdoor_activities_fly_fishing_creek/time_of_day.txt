@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft pre-dawn pearl creek light | 0.85 | - | -
+warm early morning hatch light | 1.0 | - | -
+bright midday sparkle on water | 0.9 | - | -
+golden late afternoon glow | 0.95 | - | -
+amber evening rise light | 0.95 | - | -
+dappled high-noon canopy light | 0.85 | - | -
+overcast trout-friendly day | 0.85 | - | -
+post-sunset purple afterlight | 0.65 | - | -
+shaded canyon dim afternoon | 0.7 | - | -
+soft diffused post-rain light | 0.75 | - | -

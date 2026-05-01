@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday volleyball sun | 1.0 | - | -
+warm late-morning court light | 0.95 | - | -
+golden afternoon court light | 0.95 | - | -
+amber pre-sunset court glow | 0.95 | - | -
+post-sunset purple afterlight | 0.7 | - | -
+overcast diffused beach light | 0.7 | - | -
+hazy mid-afternoon brightness | 0.85 | - | -
+sun-soaked tropical noon | 0.95 | - | -
+twilight bright stadium-light dim | 0.6 | - | -
+warm early morning sand glow | 0.85 | - | -

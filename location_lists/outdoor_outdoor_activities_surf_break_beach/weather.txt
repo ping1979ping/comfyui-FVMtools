@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+salty offshore breeze | 0.95 | - | -
+warm humid coastal air | 0.85 | - | -
+clean glassy morning conditions | 0.95 | - | -
+distant tropical squall | 0.5 | - | -
+gusty onshore chop | 0.65 | - | -
+overcast moody grey ocean | 0.75 | - | -
+fresh post-rain salty freshness | 0.75 | - | -
+warm sun-soaked afternoon | 0.9 | - | -
+cool early autumn breeze | 0.75 | - | -
+soft passing cumulus clouds | 0.8 | - | -

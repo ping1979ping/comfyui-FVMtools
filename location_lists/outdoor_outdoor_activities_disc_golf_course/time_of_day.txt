@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright early morning course light | 1.0 | - | -
+warm late-morning play light | 0.95 | - | -
+midday flat fairway light | 0.85 | - | -
+golden afternoon side-lighting | 0.95 | - | -
+amber pre-sunset glow | 0.85 | - | -
+overcast diffused course light | 0.85 | - | -
+hazy mid-afternoon brightness | 0.85 | - | -
+shaded woodland dim light | 0.7 | - | -
+soft post-rain diffused light | 0.7 | - | -
+cool early dawn pearl light | 0.65 | - | -

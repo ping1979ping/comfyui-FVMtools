@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+painted lane line on rubber | 1.0 | 0.3-0.6 | crisp white stripe
+starting block wedges | 0.7 | 0.05-0.15 | angled plastic platforms
+lane number stenciled | 0.85 | 0.0-0.1 | white painted digit
+fellow runner sprinting ahead | 0.75 | 0.1-0.3 | bright stride figure
+hurdle obstacle line | 0.55 | 0.1-0.3 | tall white-barred frames
+field-event throwing circle | 0.5 | 0.1-0.3 | painted ring on concrete
+runners on warm-up jog | 0.65 | 0.1-0.3 | scattered moving figures
+high-jump landing pad | 0.5 | 0.1-0.3 | thick blue cushion mat
+weatherbeaten infield bench | 0.55 | 0.05-0.15 | painted metal seat
+trash and water station | 0.55 | 0.05-0.15 | clustered cooler containers
+relay baton in lane | 0.55 | 0.0-0.05 | colored short rod
+chalk-marked starting line | 0.7 | 0.05-0.15 | white powdery streak

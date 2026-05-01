@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+cool crisp morning race light | 1.0 | - | -
+warm late-morning course sun | 0.9 | - | -
+midday flat course light | 0.85 | - | -
+golden afternoon side-lighting | 0.9 | - | -
+amber pre-sunset glow | 0.7 | - | -
+overcast diffused course light | 0.85 | - | -
+hazy mid-afternoon brightness | 0.85 | - | -
+soft post-rain diffused light | 0.75 | - | -
+cool autumn morning blue light | 0.85 | - | -
+shaded tree-line dim light | 0.65 | - | -

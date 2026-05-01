@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+shoulder-strap disc bag | 1.0 | 0.1-0.3 | padded canvas tote
+stack of plastic discs | 1.0 | 0.05-0.15 | bright stacked platters
+disc golf-grip glove | 0.65 | 0.02-0.06 | mesh-paneled fingertips
+sport sunglasses | 0.85 | 0.02-0.06 | sleek wraparound lens
+broad-brim sun hat | 0.85 | 0.02-0.1 | woven canvas brim
+cargo athletic shorts | 0.95 | 0.05-0.2 | technical pocketed panel
+trail-running shoes | 0.95 | 0.05-0.2 | breathable mesh upper
+small water bottle in bag | 0.85 | 0.02-0.06 | translucent plastic flask
+chalk bag at hip | 0.55 | 0.02-0.06 | brushed canvas pouch
+disc retrieval pole | 0.45 | 0.05-0.15 | telescoping carbon shaft
+score-card pencil clip | 0.65 | 0.02-0.04 | small steel clip
+mini scoring marker disc | 0.6 | 0.0-0.04 | small bright disc
+folded course map sleeve | 0.7 | 0.02-0.06 | laminated paper sheet
+team disc-club shirt | 0.85 | 0.05-0.2 | breathable polyester

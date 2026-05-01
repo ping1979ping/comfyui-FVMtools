@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool damp woodland morning | 0.95 | - | -
+gentle breeze through leaves | 0.85 | - | -
+warm humid summer stillness | 0.8 | - | -
+fresh post-rain cool air | 0.85 | - | -
+distant thunder rumble | 0.5 | - | -
+soft humid forest haze | 0.8 | - | -
+overcast still grey day | 0.75 | - | -
+crisp autumn leaf-strewn breeze | 0.85 | - | -
+mild sun-warmed afternoon | 0.85 | - | -
+light drifting forest mist | 0.75 | - | -

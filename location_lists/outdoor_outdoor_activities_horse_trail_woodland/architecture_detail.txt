@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted trail blaze on tree | 0.85 | 0.0-0.1 | crisp colored rectangle
+weathered carved trail post | 0.7 | 0.05-0.15 | shallow chiseled wood
+old stone trail mile-marker | 0.55 | 0.0-0.1 | weathered rough block
+worn hitching rail post | 0.55 | 0.05-0.15 | silvered hardwood beam
+rusted old fence wire wrap | 0.5 | 0.0-0.1 | spiraled corroded strand
+hand-burned trail name sign | 0.55 | 0.05-0.15 | scorched wood lettering
+mossy stone bridge abutment | 0.55 | 0.05-0.15 | velvet green over hewn rock
+weathered iron gate hinge | 0.5 | 0.0-0.05 | flaked rust on dark metal
+faded trail register box | 0.45 | 0.0-0.05 | small wooden case
+weathered horseshoe nail in post | 0.5 | 0.0-0.05 | rusted square spike

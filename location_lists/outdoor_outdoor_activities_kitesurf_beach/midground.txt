@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+inflated kite canopy aloft | 1.0 | 0.3-0.6 | crescent fabric arc
+trailing kite control lines | 1.0 | 0.2-0.5 | parallel angled cords
+fellow kitesurfer in lineup | 0.85 | 0.1-0.3 | bright distant figure
+spraying wake behind board | 0.95 | 0.2-0.5 | airborne white droplet veil
+incoming wave with whitecap | 0.85 | 0.2-0.5 | curling foaming crest
+launch assistant on shore | 0.55 | 0.1-0.3 | crouched figure with bar
+distant launching kite party | 0.65 | 0.05-0.2 | clustered colorful crescents
+windsock indicator on pole | 0.65 | 0.0-0.1 | bright striped fabric tube
+beach lifeguard tower | 0.5 | 0.05-0.15 | painted wooden stand
+sandbar shallow zone | 0.7 | 0.2-0.5 | bright pale water patch
+trailing rooster-tail spray | 0.85 | 0.2-0.5 | upthrown white plume
+launch-line tied to anchor | 0.55 | 0.1-0.3 | tensioned rope to stake

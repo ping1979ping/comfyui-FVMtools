@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+camouflaged cache container | 0.95 | 0.0-0.05 | bark-covered small box
+faded log-book inside cache | 0.85 | 0.0-0.05 | small notebook bundle
+old painted blaze on bark | 0.7 | 0.0-0.05 | faded colored patch
+rusted nail in old stump | 0.5 | 0.0-0.05 | corroded protruding spike
+hand-carved trail-marker post | 0.55 | 0.05-0.15 | shallow chiseled wood
+weather-bleached fallen branch | 0.65 | 0.05-0.15 | silvery cracked grain
+moss-coated stone wall edge | 0.55 | 0.05-0.15 | velvet over hewn rock
+plastic camo tape strip | 0.55 | 0.0-0.05 | green wrapped band
+old iron survey marker | 0.45 | 0.0-0.05 | rusted embedded disc
+hidden magnetic micro cache | 0.65 | 0.0-0.03 | small metallic capsule

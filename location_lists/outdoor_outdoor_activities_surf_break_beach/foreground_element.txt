@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+surfboard nose under arm | 1.0 | 0.2-0.5 | glossy fiberglass tip
+foamy water rushing over rails | 0.95 | 0.2-0.5 | aerated white slipstream
+splash droplets on chest | 0.85 | 0.05-0.2 | beaded glistening water
+wet wax-textured deck | 0.85 | 0.1-0.3 | bumpy traction surface
+fin sweep below the board | 0.7 | 0.05-0.2 | glassy underwater blade
+trailing leash cord behind | 0.85 | 0.05-0.2 | coiled bright urethane
+sea spray in face | 0.85 | 0.05-0.2 | airborne salty mist
+wet shaggy hair sticking | 0.85 | 0.05-0.2 | dripping glossy strands
+hand brushing wave face | 0.7 | 0.05-0.15 | wet open palm
+sun-glinting wet rail edge | 0.7 | 0.05-0.15 | bright reflective arc

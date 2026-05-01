@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+inflated wing canopy overhead | 0.95 | 0.3-0.6 | colorful nylon arch
+sloped meadow grass run | 1.0 | 0.3-0.6 | golden alpine grassy slope
+fellow paraglider running out | 0.65 | 0.1-0.3 | colorful figure on foot
+windsock indicator on pole | 0.85 | 0.05-0.2 | bright striped fabric tube
+takeoff cliff edge dropoff | 0.85 | 0.2-0.5 | abrupt grass-meadow lip
+launching pilot inflating wing | 0.7 | 0.2-0.5 | crouched figure with cords
+risers tensioning above pilot | 0.95 | 0.2-0.5 | parallel angled lines
+unfurled glider on grass | 0.85 | 0.2-0.5 | spread fabric panel
+small cluster of wildflowers | 0.65 | 0.1-0.3 | scattered bright blooms
+weathered launch site sign | 0.55 | 0.05-0.15 | painted instructional board
+distant sailplane overhead | 0.4 | 0.05-0.15 | small silver crescent
+spectator group at edge | 0.5 | 0.1-0.3 | colorful huddled figures

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday track light | 1.0 | - | -
+warm early-morning track sun | 0.95 | - | -
+golden afternoon side-lighting | 0.9 | - | -
+amber pre-sunset track glow | 0.85 | - | -
+overcast diffused track light | 0.85 | - | -
+hazy mid-afternoon brightness | 0.85 | - | -
+twilight stadium-light dim | 0.65 | - | -
+soft post-rain diffused light | 0.7 | - | -
+cool autumn morning blue light | 0.8 | - | -
+shaded backstraight dim light | 0.55 | - | -

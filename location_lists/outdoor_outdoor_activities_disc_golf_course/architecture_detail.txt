@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+basket pole hole-number plate | 1.0 | 0.0-0.05 | painted numbered placard
+concrete tee pad edge | 0.95 | 0.05-0.15 | crisp formed slab seam
+hand-painted course map kiosk | 0.6 | 0.05-0.15 | painted wooden stand
+basket chain assembly hardware | 0.95 | 0.0-0.05 | machined gleaming clamps
+sponsor logo on basket band | 0.7 | 0.0-0.05 | stenciled colored mark
+wood-burned hole-name sign | 0.7 | 0.05-0.15 | scorched wood lettering
+yardage marker post | 0.55 | 0.0-0.1 | painted numbered stake
+plastic mando flagging tape | 0.7 | 0.0-0.05 | bright tied ribbon strip
+trail blaze paint on bark | 0.55 | 0.0-0.05 | crisp colored rectangle
+volunteer-build plaque | 0.45 | 0.0-0.05 | small wooden tag

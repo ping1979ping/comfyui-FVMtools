@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+deck rigging bungee cord | 0.85 | 0.05-0.15 | shock cord lattice
+grab loop at bow | 0.85 | 0.0-0.1 | reinforced webbing handle
+drainage scupper hole | 0.6 | 0.0-0.05 | molded plastic vent
+brand decal on hull | 0.75 | 0.0-0.05 | vinyl sticker mark
+foot brace adjuster track | 0.65 | 0.0-0.05 | recessed alloy slot
+rescue throw bag handle | 0.55 | 0.0-0.05 | bright loop strap
+river warning sign on cliff | 0.5 | 0.05-0.1 | painted metal plate
+hull seam reinforcement strip | 0.55 | 0.0-0.05 | molded plastic ridge
+named class-rapid signage | 0.45 | 0.0-0.1 | etched wood plaque
+emergency strobe mount | 0.4 | 0.0-0.05 | small bright clip

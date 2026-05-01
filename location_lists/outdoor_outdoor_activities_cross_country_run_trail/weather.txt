@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool crisp running morning | 1.0 | - | -
+gentle steady course breeze | 0.95 | - | -
+warm humid race-day stillness | 0.7 | - | -
+fresh post-rain damp coolness | 0.85 | - | -
+overcast moody grey day | 0.85 | - | -
+crisp autumn leaf-strewn breeze | 0.85 | - | -
+distant thunder rumble | 0.5 | - | -
+mild sun-warmed afternoon | 0.85 | - | -
+gusty unpredictable wind | 0.65 | - | -
+soft passing cumulus clouds | 0.8 | - | -

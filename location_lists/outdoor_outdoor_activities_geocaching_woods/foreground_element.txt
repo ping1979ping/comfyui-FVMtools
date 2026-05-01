@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+leafy forest floor litter | 1.0 | 0.3-0.6 | russet curled leaf carpet
+exposed gnarled tree root | 0.85 | 0.1-0.3 | woody ridged knot
+patch of velvet moss | 0.85 | 0.1-0.3 | low emerald growth
+fallen acorn cluster | 0.6 | 0.05-0.2 | brown nut scatter
+fresh deer track imprint | 0.55 | 0.05-0.15 | crisp cloven mark
+small mushroom cluster | 0.55 | 0.05-0.15 | rounded cream caps
+patch of running ground cedar | 0.55 | 0.05-0.2 | low evergreen creeper
+worn dirt path underfoot | 0.85 | 0.2-0.5 | softly trampled brown earth
+fallen pine cone scatter | 0.7 | 0.05-0.2 | scaled brown ovoid pieces
+splintered birch bark fragment | 0.55 | 0.05-0.15 | papery white peel
+small puddle in trail dip | 0.5 | 0.0-0.15 | dark mirrored water
+sun-glinting fallen leaf | 0.7 | 0.05-0.2 | bright angled shape

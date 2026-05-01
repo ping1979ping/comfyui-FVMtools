@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+dense mixed hardwood forest | 1.0 | 0.5-1.0 | layered green canopy wall
+distant moss-covered rock outcrop | 0.7 | 0.3-0.7 | velvet-shrouded grey ledge
+sun-shafted forest gap | 0.85 | 0.4-0.8 | bright tunneled light
+hemlock-shaded ravine ahead | 0.7 | 0.4-0.8 | dark green canyon
+tangled wild rhododendron | 0.65 | 0.3-0.6 | densely glossy thicket
+distant abandoned stone foundation | 0.5 | 0.2-0.5 | weathered ruined wall
+deer-browsed shrub line | 0.55 | 0.3-0.6 | low cropped foliage
+hazy distant ridge | 0.7 | 0.3-0.7 | soft blue layered profile
+old logging road remnant | 0.5 | 0.2-0.5 | overgrown bench scar
+spring-fed creek in valley | 0.55 | 0.2-0.5 | reflective dark ribbon
+distant fallen old-growth | 0.5 | 0.2-0.5 | massive weathered log
+mossy boulder grouping | 0.65 | 0.3-0.6 | rounded velvet stones
+oak-maple mixed canopy | 0.85 | 0.5-0.9 | dappled green shade

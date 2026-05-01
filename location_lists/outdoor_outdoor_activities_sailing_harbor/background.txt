@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+forest of distant sailboat masts | 1.0 | 0.5-1.0 | tall pale crisscrossing spars
+hazy distant coastal hills | 0.8 | 0.3-0.7 | soft blue rolling profile
+historic stone harbor wall | 0.85 | 0.4-0.8 | weathered grey ashlar masonry
+distant lighthouse tower | 0.55 | 0.1-0.3 | striped slender column
+sparkling open bay water | 0.95 | 0.4-0.8 | flat shimmering expanse
+distant moored yachts at anchor | 0.85 | 0.4-0.8 | scattered white hulls
+weathered fish-market roof | 0.45 | 0.2-0.5 | dark gabled wooden top
+breakwater jetty stretching out | 0.7 | 0.3-0.6 | low concrete arm
+hazy salt-air horizon | 0.85 | 0.4-0.8 | softly veiled atmospheric blue
+distant offshore island | 0.5 | 0.2-0.5 | thin dark profile
+soaring gull flock | 0.55 | 0.05-0.2 | bright wheeling silhouettes
+sunset cloud bank distant | 0.65 | 0.3-0.6 | golden-rimmed cumulus

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+woven willow foraging basket | 1.0 | 0.05-0.2 | tightly woven willow
+small folding pocket knife | 0.85 | 0.02-0.06 | brushed steel and bone handle
+field guide book open | 0.85 | 0.05-0.15 | soft-bound illustrated pages
+canvas apron over clothes | 0.75 | 0.05-0.2 | aproned worn cotton
+worn leather work gloves | 0.85 | 0.02-0.08 | supple soft hide
+broad-brim straw foraging hat | 0.85 | 0.05-0.15 | woven loose weave
+small linen herb pouch | 0.75 | 0.02-0.08 | tied drawstring sack
+plant identification card deck | 0.5 | 0.02-0.06 | laminated photo cards
+hand-pruners on belt | 0.55 | 0.02-0.06 | spring-loaded clipper
+small sharpening stone | 0.45 | 0.02-0.04 | rectangular coarse block
+foraging bag on shoulder | 0.7 | 0.05-0.15 | canvas tote
+small water bottle in basket | 0.65 | 0.02-0.06 | translucent plastic flask
+notebook with sketches | 0.5 | 0.02-0.06 | softly creased pages
+hand lens magnifier | 0.5 | 0.02-0.04 | brass folding loupe

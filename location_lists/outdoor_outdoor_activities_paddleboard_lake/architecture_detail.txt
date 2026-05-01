@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+D-ring tie-down on board | 0.9 | 0.0-0.1 | stainless welded loop
+deck handle webbing strap | 0.85 | 0.0-0.1 | reinforced nylon grip
+fin box at board tail | 0.8 | 0.0-0.1 | recessed slotted plate
+bungee cargo cord crisscross | 0.85 | 0.05-0.15 | shock cord lattice
+hand-painted board logo | 0.65 | 0.0-0.1 | vinyl decal on rail
+brand stencil on paddle blade | 0.7 | 0.0-0.05 | screen-printed mark
+weathered dock cleat | 0.5 | 0.0-0.05 | cast iron horn
+inflation valve cap | 0.55 | 0.0-0.05 | recessed plastic disc
+warning safety sticker | 0.45 | 0.0-0.05 | yellow vinyl tag
+nose bumper rubber edge | 0.55 | 0.0-0.05 | flexible black trim

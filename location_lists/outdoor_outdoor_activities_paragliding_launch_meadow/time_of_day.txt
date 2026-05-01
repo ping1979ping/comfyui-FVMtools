@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday thermal light | 1.0 | - | -
+warm late-morning launch sun | 0.95 | - | -
+golden late-afternoon glow | 0.95 | - | -
+amber pre-sunset launch light | 0.85 | - | -
+overcast diffused launch day | 0.7 | - | -
+hazy mid-afternoon brightness | 0.85 | - | -
+soft post-cloud diffused light | 0.7 | - | -
+shaded shoulder dim light | 0.55 | - | -
+clear cold alpine morning | 0.85 | - | -
+sharp post-storm clarity | 0.7 | - | -

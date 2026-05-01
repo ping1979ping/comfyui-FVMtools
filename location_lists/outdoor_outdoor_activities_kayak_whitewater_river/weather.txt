@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool damp river-canyon air | 0.95 | - | -
+warm humid summer stillness | 0.8 | - | -
+gentle downstream breeze | 0.8 | - | -
+distant thunderstorm warning | 0.45 | - | -
+fresh post-rain coolness | 0.75 | - | -
+overcast moody grey day | 0.7 | - | -
+mild stable high pressure | 0.85 | - | -
+spray-mist hovering on water | 0.85 | - | -
+crisp early autumn coolness | 0.7 | - | -
+strong upstream gusts | 0.6 | - | -

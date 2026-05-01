@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear cool dry climbing air | 0.95 | - | -
+gentle ridge breeze | 0.85 | - | -
+light passing alpine clouds | 0.8 | - | -
+distant building thunderhead | 0.5 | - | -
+warm sun on south face | 0.85 | - | -
+crisp post-storm freshness | 0.7 | - | -
+hazy summer atmosphere | 0.7 | - | -
+cool damp shaded air | 0.6 | - | -
+gusty exposed summit wind | 0.6 | - | -
+mild stable high pressure | 0.85 | - | -

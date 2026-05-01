@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+weathered carved field marker | 0.55 | 0.0-0.1 | shallow chiseled stone
+old stone wall corner | 0.55 | 0.05-0.15 | weathered drystone masonry
+rusted barbed wire strand | 0.5 | 0.0-0.05 | corroded twisted strand
+hand-burned warning sign | 0.5 | 0.0-0.1 | scorched wooden plank
+small wooden basket handle | 0.65 | 0.0-0.05 | woven bent willow
+property line iron rod | 0.45 | 0.0-0.05 | rusted protruding pin
+preservation plaque on post | 0.4 | 0.0-0.05 | bronze engraved tablet
+hand-carved boundary post | 0.5 | 0.05-0.15 | shaped weathered timber
+old wooden trail-blaze marker | 0.55 | 0.0-0.1 | weathered painted plank
+faded preservation placard | 0.45 | 0.0-0.05 | brass embossed nameplate
+rusted gate hinge fragment | 0.45 | 0.0-0.05 | corroded forged metal

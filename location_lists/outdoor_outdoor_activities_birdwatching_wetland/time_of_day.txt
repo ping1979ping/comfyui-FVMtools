@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft pre-dawn pearl light | 1.0 | - | -
+warm early morning marsh glow | 1.0 | - | -
+midday flat marsh light | 0.85 | - | -
+golden afternoon reedy light | 0.9 | - | -
+amber evening flock-light | 0.95 | - | -
+overcast diffused marsh light | 0.85 | - | -
+hazy mid-afternoon brightness | 0.8 | - | -
+twilight cool reedy dim | 0.7 | - | -
+soft post-rain diffused light | 0.85 | - | -
+shaded reed-edge dim light | 0.7 | - | -

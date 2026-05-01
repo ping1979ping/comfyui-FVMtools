@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant disc golf basket on hill | 1.0 | 0.1-0.3 | metal-chained target structure
+forested course boundary | 1.0 | 0.5-1.0 | dense green wooded backdrop
+hazy distant ridge | 0.65 | 0.3-0.7 | soft blue layered profile
+sweeping fairway clearing | 0.95 | 0.4-0.8 | mowed open grass corridor
+distant hole tee pad | 0.6 | 0.05-0.2 | small concrete platform
+patchwork meadow expanse | 0.7 | 0.3-0.7 | quilted multi-toned green
+distant player throwing disc | 0.7 | 0.05-0.2 | mid-throw bright figure
+weathered course-map kiosk | 0.55 | 0.05-0.15 | painted wooden stand
+distant pine grove | 0.85 | 0.4-0.8 | dark needled spire row
+sun-shafted forest gap | 0.85 | 0.4-0.8 | bright tunneled light
+old logging clearing | 0.5 | 0.2-0.5 | regrowth scrub line
+distant park bench | 0.55 | 0.05-0.15 | small slatted timber seat

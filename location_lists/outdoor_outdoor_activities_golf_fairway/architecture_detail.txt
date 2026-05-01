@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+red flagstick on green | 0.95 | 0.0-0.1 | bright fabric on fiberglass
+ball washer station | 0.6 | 0.0-0.1 | small painted post box
+yardage plate in fairway | 0.85 | 0.0-0.05 | brass-engraved disc in turf
+tee box numbered marker | 0.85 | 0.0-0.1 | painted stone block
+distance plaque on cart path | 0.65 | 0.0-0.05 | inlaid metal plate
+bridge railing over creek | 0.55 | 0.05-0.15 | painted iron handrail
+hole-name sign at tee | 0.85 | 0.05-0.1 | painted carved wood
+white rope and stake | 0.55 | 0.0-0.05 | low painted boundary
+sprinkler valve head | 0.6 | 0.0-0.05 | small green plastic disc
+divot-mix sand bottle holder | 0.55 | 0.0-0.05 | small bright cylinder

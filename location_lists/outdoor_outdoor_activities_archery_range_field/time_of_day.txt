@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning shooting light | 1.0 | - | -
+late-morning warm field glow | 0.95 | - | -
+midday flat field light | 0.85 | - | -
+golden afternoon side-lighting | 0.9 | - | -
+amber pre-sunset glow | 0.85 | - | -
+overcast diffused range light | 0.85 | - | -
+hazy mid-afternoon brightness | 0.8 | - | -
+shaded backstop dim light | 0.55 | - | -
+soft post-rain diffused light | 0.7 | - | -
+cool early morning blue light | 0.7 | - | -

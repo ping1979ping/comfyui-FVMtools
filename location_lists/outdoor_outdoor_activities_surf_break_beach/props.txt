@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+shortboard surfboard | 1.0 | 0.2-0.5 | glossy fiberglass slab
+ankle leash tether | 1.0 | 0.05-0.2 | coiled urethane cord
+neoprene wetsuit zipper | 0.95 | 0.05-0.2 | sealed YKK fastener
+wax bar in pocket | 0.65 | 0.02-0.06 | crumbly white block
+zinc oxide on cheeks | 0.7 | 0.02-0.06 | thick pasty white smear
+polarized water sunglasses | 0.55 | 0.02-0.06 | dark amber lens
+neoprene boots | 0.45 | 0.02-0.1 | snug rubber footwear
+surf hood with thermal lining | 0.45 | 0.02-0.1 | snug black neoprene
+boardshorts knot at waist | 0.7 | 0.05-0.15 | quick-dry tied panel
+wetsuit hooded balaclava | 0.4 | 0.02-0.1 | tight neoprene cap
+ear plug at hair | 0.5 | 0.02-0.04 | small flexible cap
+small surf watch | 0.55 | 0.02-0.06 | rugged digital face

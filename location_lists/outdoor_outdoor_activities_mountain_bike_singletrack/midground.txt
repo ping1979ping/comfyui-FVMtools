@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bermed corner banked turn | 0.9 | 0.2-0.5 | sculpted dirt wall
+wooden trail bridge over creek | 0.7 | 0.2-0.5 | weathered plank deck
+rooty technical section | 0.85 | 0.2-0.5 | gnarled timber web
+loose rock garden chunder | 0.75 | 0.2-0.5 | jumbled angular stones
+flowy dirt jump line | 0.7 | 0.2-0.5 | sculpted lip and landing
+fern-walled trail tunnel | 0.7 | 0.2-0.5 | feathery green corridor
+log ride skinny feature | 0.55 | 0.2-0.5 | smoothed timber beam
+dirt drop ledge edge | 0.7 | 0.2-0.5 | crumbly worn lip
+trailside braap dust cloud | 0.65 | 0.1-0.3 | airborne tan haze
+fellow rider on trail | 0.65 | 0.1-0.3 | helmeted figure on bike
+trail signage at junction | 0.6 | 0.05-0.2 | painted directional post
+mossy fallen log obstacle | 0.6 | 0.1-0.3 | green-furred timber
+small wooden ramp feature | 0.55 | 0.1-0.3 | reinforced plank lift
+worn skid mark on dirt | 0.65 | 0.1-0.3 | streaked tire trace

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant tree-lined fairway curve | 1.0 | 0.5-1.0 | dark green border canopy
+sweeping manicured fairway | 1.0 | 0.4-0.8 | uniformly mowed bright green
+distant flag on green | 0.95 | 0.05-0.2 | bright fluttering pennant
+hazy distant clubhouse roof | 0.55 | 0.1-0.3 | tile-roofed structure
+rolling fairway elevation | 0.85 | 0.4-0.8 | softly mounded green hills
+distant pond water hazard | 0.7 | 0.2-0.5 | reflective dark patch
+sand bunker cluster ahead | 0.85 | 0.3-0.6 | bright tan crater patches
+forest of distant pines | 0.7 | 0.4-0.8 | dark needled spire row
+distant motorized golf cart | 0.5 | 0.05-0.2 | small white moving vehicle
+out-of-bounds fence line | 0.55 | 0.2-0.5 | thin posted boundary
+sunlit course skyline | 0.85 | 0.4-0.8 | bright pale cloud expanse
+distant fairway marker tree | 0.65 | 0.05-0.2 | landmark broad-canopy tree

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+steep canyon walls above river | 1.0 | 0.5-1.0 | striated grey-orange rock
+distant whitewater rapid ahead | 0.85 | 0.4-0.8 | broken foaming line
+forested gorge slope | 0.8 | 0.4-0.8 | dense green canopy wall
+exposed cliff bluff | 0.7 | 0.4-0.8 | weathered stratified stone
+distant misty waterfall | 0.55 | 0.2-0.5 | thin white plunge ribbon
+upstream calm pool reflection | 0.7 | 0.4-0.8 | dark mirror surface
+distant kayakers in eddy | 0.55 | 0.2-0.5 | bright distant boats
+hazy river bend curving away | 0.85 | 0.4-0.8 | meandering silver thread
+boulder-strewn bank apron | 0.75 | 0.3-0.7 | jumbled grey rock
+sun-dappled river canyon gap | 0.8 | 0.4-0.8 | bright tunneled light
+overhanging cottonwood trees | 0.7 | 0.3-0.7 | drooping silvered foliage
+distant rafting party | 0.45 | 0.2-0.5 | colorful tiny boat cluster

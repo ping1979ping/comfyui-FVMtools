@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday whitewater light | 1.0 | - | -
+warm late-morning canyon sun | 0.95 | - | -
+golden afternoon downstream light | 0.9 | - | -
+shaded canyon cool light | 0.85 | - | -
+amber pre-sunset glow | 0.8 | - | -
+overcast paddling-friendly day | 0.85 | - | -
+hazy mid-afternoon brightness | 0.8 | - | -
+soft post-rain diffused light | 0.7 | - | -
+dappled high-noon water sparkle | 0.85 | - | -
+cool early morning blue light | 0.65 | - | -

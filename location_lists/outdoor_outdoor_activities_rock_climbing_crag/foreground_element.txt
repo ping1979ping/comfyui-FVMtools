@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+textured rock slab underfoot | 1.0 | 0.2-0.5 | gritty crystalline surface
+chalked fingerhold edge | 0.9 | 0.05-0.2 | pale dusted lip
+twin climbing rope through device | 0.85 | 0.1-0.3 | bright tensioned cord
+loose chalk dust cloud | 0.7 | 0.05-0.2 | airborne white powder
+scattered fallen leaves on ledge | 0.5 | 0.05-0.2 | dry curled litter
+patch of moss on shaded crack | 0.6 | 0.05-0.2 | velvet green fuzz
+gear sling across torso | 0.85 | 0.1-0.3 | cordura strap with metal
+worn approach shoe edge | 0.7 | 0.05-0.2 | sticky rubber sole
+broken lichen flake on stone | 0.55 | 0.05-0.15 | mottled crusty bloom
+small puddle in rock pocket | 0.45 | 0.0-0.15 | dark glassy water
+scuffed boulder underfoot | 0.7 | 0.1-0.3 | abraded grey surface
+fresh tape wrapped fingers | 0.65 | 0.05-0.15 | white athletic tape

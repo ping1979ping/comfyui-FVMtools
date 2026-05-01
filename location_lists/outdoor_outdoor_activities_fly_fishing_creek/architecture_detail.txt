@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+barbed hook fly tied on tippet | 0.85 | 0.0-0.05 | tiny feathered lure
+brass tippet ring | 0.7 | 0.0-0.05 | small gleaming loop
+hand-knotted leader connection | 0.7 | 0.0-0.05 | tight overhand twist
+rusted creek crossing footbridge | 0.5 | 0.05-0.15 | weathered iron beam
+faded creel basket weave | 0.55 | 0.0-0.1 | woven willow texture
+hand-engraved reel foot | 0.5 | 0.0-0.05 | etched anodized alloy
+brass split-shot weight | 0.55 | 0.0-0.05 | small rounded pellet
+scuffed rod ferrule wrap | 0.6 | 0.0-0.05 | colored thread band
+catch-and-release sign | 0.45 | 0.0-0.1 | painted wooden plaque
+old wading staff brass tip | 0.45 | 0.0-0.05 | tarnished metal cap

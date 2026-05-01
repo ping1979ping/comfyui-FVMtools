@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted lane-number marker | 0.85 | 0.0-0.1 | stenciled white digit
+range-warning red flag pole | 0.6 | 0.0-0.1 | bright fabric on staff
+range rules signboard | 0.7 | 0.05-0.15 | painted laminated panel
+wood-trim shelter awning edge | 0.55 | 0.05-0.15 | sun-greyed timber
+backstop netting mesh seam | 0.6 | 0.05-0.15 | tensioned dark netting
+wooden bench end-cap | 0.5 | 0.0-0.1 | weathered timber leg
+yardage stencil on grass | 0.55 | 0.0-0.1 | sprayed white digit
+target frame wood post | 0.85 | 0.05-0.15 | weathered upright timber
+weathered metal lane stake | 0.55 | 0.0-0.05 | rusted protruding pin
+sponsor banner zip-tie | 0.5 | 0.0-0.05 | small black plastic strap
+hand-burned trail name sign | 0.55 | 0.05-0.15 | scorched wood lettering

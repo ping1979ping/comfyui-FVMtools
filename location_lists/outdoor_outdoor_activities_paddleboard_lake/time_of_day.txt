@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+calm glassy sunrise light | 1.0 | - | -
+warm mid-morning lake glow | 0.95 | - | -
+midday sparkling sunlight | 0.9 | - | -
+golden afternoon water light | 0.9 | - | -
+amber late-day glow | 0.85 | - | -
+post-sunset purple afterlight | 0.65 | - | -
+soft pre-dawn pearl light | 0.7 | - | -
+hazy summer noon brightness | 0.85 | - | -
+overcast diffused lake light | 0.75 | - | -
+dappled lakeshore tree shade | 0.7 | - | -

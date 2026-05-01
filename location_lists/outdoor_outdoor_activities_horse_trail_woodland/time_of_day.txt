@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+dewy morning canopy light | 1.0 | - | -
+soft mid-morning sun through trees | 0.95 | - | -
+late afternoon golden ridge light | 0.9 | - | -
+overcast woodland noon | 0.8 | - | -
+amber early evening glow | 0.85 | - | -
+pre-dawn cool blue hush | 0.7 | - | -
+high midday dappled forest light | 0.85 | - | -
+hazy mid-afternoon brightness | 0.75 | - | -
+twilight grey-green dim | 0.6 | - | -
+softly diffused post-rain light | 0.75 | - | -

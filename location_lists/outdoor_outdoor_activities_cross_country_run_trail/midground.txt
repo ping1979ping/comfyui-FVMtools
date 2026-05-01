@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+mowed grass cross-country path | 1.0 | 0.3-0.6 | tightly cropped strip
+distance-marker stake | 0.85 | 0.05-0.15 | painted numbered post
+trampled muddy section | 0.7 | 0.1-0.3 | dark damp churned earth
+hill ascent with banner | 0.7 | 0.2-0.5 | rising slope with bunting
+fellow runner in stride | 0.75 | 0.05-0.2 | mid-stride bright figure
+trailside spectator cheering | 0.65 | 0.05-0.2 | colorful shouting figure
+small wooden footbridge | 0.55 | 0.1-0.3 | weathered plank deck
+course direction-arrow sign | 0.85 | 0.05-0.15 | painted directional board
+flagged corner turn pylon | 0.7 | 0.05-0.15 | bright orange cone
+trampled grass underfoot | 0.85 | 0.2-0.5 | flattened green strip
+patch of muddy puddle | 0.55 | 0.0-0.15 | dark glassy water
+small judging tent at corner | 0.5 | 0.1-0.3 | striped fabric awning

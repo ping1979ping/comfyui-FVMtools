@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+whitewater kayak helmet | 1.0 | 0.05-0.2 | composite reinforced shell
+PFD whitewater life jacket | 1.0 | 0.05-0.2 | high-flotation panel vest
+neoprene spray skirt | 0.95 | 0.05-0.2 | stretchy snug rubber
+bent-shaft whitewater paddle | 1.0 | 0.05-0.2 | reinforced fiberglass blade
+neoprene paddling gloves | 0.7 | 0.02-0.1 | snug textured grip
+rescue throw bag at hip | 0.65 | 0.02-0.08 | bright stuff sack
+river knife on PFD | 0.55 | 0.02-0.06 | sheathed serrated blade
+whistle on shoulder strap | 0.6 | 0.02-0.04 | small bright pea-whistle
+neoprene paddling shorts | 0.85 | 0.05-0.2 | snug stretch rubber
+splash jacket sleeve | 0.85 | 0.05-0.2 | sealed taped seam
+nose plug at neck | 0.5 | 0.02-0.04 | small clip device
+breakdown paddle stowed | 0.4 | 0.02-0.1 | segmented backup shaft
+small drybag clipped | 0.55 | 0.02-0.08 | rolled vinyl pouch
+GoPro on helmet | 0.55 | 0.02-0.06 | small sealed cube

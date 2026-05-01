@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+chain-laden disc golf basket | 1.0 | 0.1-0.3 | hanging metal chains in pole
+concrete tee pad slab | 0.95 | 0.2-0.5 | flat grey concrete rectangle
+mando designation tree | 0.65 | 0.05-0.15 | flagged sentinel trunk
+fellow player teeing off | 0.7 | 0.1-0.3 | mid-throw bright figure
+trail through woods between holes | 0.85 | 0.2-0.5 | trodden leaf-strewn path
+hand-painted hole-number sign | 0.85 | 0.05-0.15 | painted wooden post
+mossy fallen log obstacle | 0.65 | 0.1-0.3 | green-furred timber
+trampled fairway run-up | 0.85 | 0.1-0.3 | bare-grass strip
+fellow player retrieving disc | 0.7 | 0.05-0.15 | crouched figure
+distance arrow signpost | 0.65 | 0.05-0.15 | painted directional plaque
+small wooden footbridge | 0.55 | 0.1-0.3 | weathered plank deck
+patch of trailside ferns | 0.6 | 0.1-0.3 | feathery green carpet

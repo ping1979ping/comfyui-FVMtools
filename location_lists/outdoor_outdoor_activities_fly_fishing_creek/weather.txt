@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool damp creek-edge air | 0.95 | - | -
+gentle morning hatch breeze | 0.85 | - | -
+warm humid summer stillness | 0.8 | - | -
+fresh post-rain cool freshness | 0.85 | - | -
+distant thunder rumble | 0.5 | - | -
+light drifting creek mist | 0.85 | - | -
+overcast still grey day | 0.8 | - | -
+crisp early autumn coolness | 0.8 | - | -
+warm sun-soaked riffle air | 0.85 | - | -
+soft passing cumulus clouds | 0.75 | - | -

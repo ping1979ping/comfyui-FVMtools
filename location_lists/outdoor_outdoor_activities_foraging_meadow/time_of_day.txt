@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+dewy morning meadow light | 1.0 | - | -
+warm late-morning sun on field | 0.95 | - | -
+soft mid-morning grass-glow | 0.95 | - | -
+golden afternoon side-light | 0.95 | - | -
+amber early-evening haze | 0.85 | - | -
+overcast diffused meadow noon | 0.8 | - | -
+hazy mid-afternoon brightness | 0.85 | - | -
+soft post-rain diffused light | 0.75 | - | -
+twilight cool evening dim | 0.6 | - | -
+pre-dawn pearl pasture light | 0.7 | - | -

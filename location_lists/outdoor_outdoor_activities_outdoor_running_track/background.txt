@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant rubberized track curve | 1.0 | 0.4-0.8 | red oval lane band
+distant grandstand bleacher rows | 0.85 | 0.3-0.7 | tiered metal seating
+hazy distant mountain ridge | 0.5 | 0.2-0.5 | soft blue layered profile
+sweeping infield green | 0.95 | 0.4-0.8 | tightly mowed grass expanse
+distant goalpost crossbar | 0.45 | 0.05-0.15 | tall yellow vertical posts
+team training equipment shed | 0.5 | 0.1-0.3 | painted metal wall
+distant team in formation | 0.65 | 0.1-0.3 | clustered figures running
+field-house brick wall | 0.55 | 0.2-0.5 | red masonry backdrop
+distant scoreboard panel | 0.55 | 0.05-0.15 | bright LED illuminated screen
+flagpole with banner | 0.5 | 0.0-0.1 | tall pale aluminum staff
+distant track-edge fence | 0.7 | 0.3-0.6 | thin chain-link boundary
+sunlit stadium light bank | 0.55 | 0.05-0.15 | tall floodlight cluster

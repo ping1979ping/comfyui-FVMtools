@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dense wildflower clump | 1.0 | 0.2-0.5 | mixed bloom mass
+plucked stem of yarrow | 0.85 | 0.05-0.2 | feathery white head
+cluster of wild garlic shoots | 0.7 | 0.1-0.3 | tender green spears
+tall meadow grass blades | 0.95 | 0.2-0.5 | leaning amber stalks
+patch of wild strawberries | 0.7 | 0.1-0.3 | small red dotted clusters
+fresh chickweed mat | 0.6 | 0.1-0.3 | low spreading green
+hand reaching into foliage | 0.75 | 0.1-0.3 | open palm among stems
+buzzing bumblebee on bloom | 0.55 | 0.05-0.15 | fuzzy yellow-black shape
+dewy spider web on grass | 0.55 | 0.05-0.15 | silvered radial threads
+scattered pollen dust on petals | 0.6 | 0.05-0.15 | yellow powder coat
+trampled grass underfoot | 0.85 | 0.2-0.5 | flattened green carpet

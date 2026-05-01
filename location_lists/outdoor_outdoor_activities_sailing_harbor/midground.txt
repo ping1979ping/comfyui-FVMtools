@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+moored sailboat at slip | 1.0 | 0.3-0.6 | white fiberglass hull beside dock
+floating wooden dock walkway | 0.95 | 0.3-0.6 | weathered plank platform
+fellow sailor on neighboring boat | 0.65 | 0.05-0.15 | distant figure on deck
+mooring lines tensioned | 0.95 | 0.05-0.2 | thick parallel ropes
+fender bumpers along hull | 0.85 | 0.05-0.15 | white cylindrical buffers
+small launch tender | 0.55 | 0.1-0.3 | inflatable dinghy beside
+fish-stand seagulls perched | 0.5 | 0.05-0.15 | white waterfowl cluster
+weathered piling row | 0.85 | 0.1-0.3 | salt-stained timber posts
+floating channel marker buoy | 0.65 | 0.05-0.2 | bright cylinder buoy
+fellow boats motoring out | 0.55 | 0.1-0.3 | distant white wake hulls
+sunlit ripple band on water | 0.85 | 0.2-0.5 | sparkling water surface
+sailboat with sails up | 0.7 | 0.2-0.5 | bright triangular canvas

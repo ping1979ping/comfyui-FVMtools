@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+graphite fly rod | 1.0 | 0.05-0.2 | matte dark tapered shaft
+classic clicker fly reel | 0.95 | 0.02-0.08 | machined anodized alloy
+fly box open in hand | 0.85 | 0.02-0.1 | foam-lined plastic case
+breathable chest waders | 0.95 | 0.1-0.3 | matte technical fabric
+felt-soled wading boot | 0.95 | 0.05-0.2 | grippy gummed sole
+landing net at hip | 0.85 | 0.05-0.2 | wooden frame with mesh
+creel basket on shoulder | 0.55 | 0.05-0.15 | woven willow weave
+polarized creek sunglasses | 0.85 | 0.02-0.06 | dark amber lens
+floppy fishing hat | 0.8 | 0.02-0.1 | weathered canvas brim
+forceps clipped to vest | 0.7 | 0.02-0.06 | stainless surgical clamp
+nippers on retractor | 0.75 | 0.02-0.06 | small steel cutter
+fishing vest with patches | 0.85 | 0.05-0.2 | fly-pinned canvas weave
+spool of tippet material | 0.65 | 0.02-0.06 | clear plastic disc
+streamside hip flask | 0.4 | 0.02-0.06 | engraved stainless slim

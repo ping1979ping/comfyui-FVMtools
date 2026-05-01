@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+regulation volleyball net taut | 1.0 | 0.2-0.5 | strung black mesh band
+white boundary line in sand | 0.95 | 0.2-0.5 | painted thin webbing strip
+opposing player at net | 0.85 | 0.1-0.3 | bright athletic figure
+official referee tower | 0.55 | 0.1-0.3 | tall stand chair structure
+spectator beach chairs | 0.65 | 0.1-0.3 | low collapsible canvas seats
+side antenna rod on net | 0.85 | 0.05-0.15 | striped vertical pole
+trampled sand dig zone | 0.85 | 0.2-0.5 | churned imprinted patch
+beach toy crate | 0.45 | 0.05-0.15 | colorful plastic basket
+small water cooler at side | 0.6 | 0.05-0.15 | bright orange plastic jug
+fellow team huddling | 0.65 | 0.1-0.3 | clustered upright figures
+score-flip card stand | 0.55 | 0.05-0.15 | numbered hinged board
+sun-shading umbrella court-side | 0.6 | 0.1-0.3 | bright canopy disc

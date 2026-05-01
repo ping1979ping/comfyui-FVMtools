@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+paddler gliding across water | 0.85 | 0.2-0.5 | upright figure on board
+wake ripple trail behind board | 0.85 | 0.2-0.5 | spreading V-shaped lines
+floating buoy marker | 0.6 | 0.05-0.2 | bright bobbing sphere
+reed bed along shore | 0.7 | 0.2-0.5 | golden tipped cluster
+lily pad cluster on surface | 0.6 | 0.1-0.3 | flat green disks
+fellow paddleboarders nearby | 0.6 | 0.2-0.5 | standing distant figures
+shoreline overhanging branch | 0.65 | 0.1-0.3 | drooping green limb
+small fishing skiff anchored | 0.45 | 0.1-0.3 | weathered hull silhouette
+floating dock with ladder | 0.6 | 0.1-0.3 | weathered plank platform
+sunlit ripple patch nearby | 0.85 | 0.2-0.5 | sparkling water surface
+swimming duck family | 0.5 | 0.05-0.2 | small dark waterfowl
+launch ramp at shoreline | 0.55 | 0.1-0.3 | concrete ramp into water
+reflection of sky on water | 0.95 | 0.3-0.7 | mirrored cloud and blue

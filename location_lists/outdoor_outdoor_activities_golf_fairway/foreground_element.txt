@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+short-cut fairway grass | 1.0 | 0.2-0.5 | uniformly bright blades
+fresh ball mark divot | 0.85 | 0.05-0.15 | torn turf brown patch
+white teed golf ball | 0.85 | 0.0-0.05 | bright dimpled sphere
+spent broken wooden tee | 0.65 | 0.0-0.05 | small brown peg
+splash of bunker sand | 0.7 | 0.05-0.2 | airborne tan grit
+fellow caddy bag at feet | 0.7 | 0.05-0.15 | tall standing bag
+mowing stripe pattern | 0.95 | 0.2-0.5 | alternating shade lines
+sun-glinting clubface | 0.7 | 0.05-0.15 | bright polished metal
+patch of casual water | 0.5 | 0.0-0.15 | dark glassy puddle
+short-mowed approach apron | 0.85 | 0.2-0.5 | tightly cropped grass

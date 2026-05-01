@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear stable high-pressure day | 0.9 | - | -
+sharp cold ridge wind | 0.85 | - | -
+swirling summit cloud cap | 0.6 | - | -
+gusty rime-frosting blast | 0.55 | - | -
+distant thunder rumble below | 0.45 | - | -
+crisp post-storm visibility | 0.7 | - | -
+brief whiteout snow flurry | 0.45 | - | -
+warm calm summer summit air | 0.7 | - | -
+chilled shaded north-side breeze | 0.7 | - | -
+fast-moving cumulus over peaks | 0.7 | - | -

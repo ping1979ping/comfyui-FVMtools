@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday wind-session sun | 1.0 | - | -
+warm early-afternoon ocean light | 0.95 | - | -
+golden late-afternoon glow | 0.95 | - | -
+amber sunset session glow | 0.95 | - | -
+post-sunset purple afterlight | 0.65 | - | -
+overcast moody beach day | 0.75 | - | -
+hazy mid-afternoon brightness | 0.85 | - | -
+sun-soaked tropical noon | 0.9 | - | -
+twilight session dim light | 0.55 | - | -
+warm late-morning beach glow | 0.95 | - | -

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright early morning sun | 1.0 | - | -
+mid-morning forest light | 0.95 | - | -
+late afternoon golden glow | 0.85 | - | -
+dappled high noon canopy light | 0.85 | - | -
+overcast trail-friendly day | 0.8 | - | -
+amber pre-sunset ride light | 0.8 | - | -
+cool blue early dawn | 0.65 | - | -
+hazy mid-afternoon brightness | 0.75 | - | -
+shaded forest dim light | 0.7 | - | -
+post-rain freshly-lit trail | 0.7 | - | -

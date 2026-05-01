@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+stainless expansion bolt hanger | 0.85 | 0.0-0.1 | gleaming machined plate
+weathered piton remnant | 0.55 | 0.0-0.1 | rusted forged iron blade
+chalked tick mark on hold | 0.8 | 0.0-0.1 | small white dash
+fixed rappel station webbing | 0.7 | 0.0-0.1 | faded nylon loops
+route marker plaque | 0.5 | 0.0-0.1 | brass embossed nameplate
+old cord remnant in crack | 0.5 | 0.0-0.1 | sunbleached frayed strand
+fixed rebar threading bolt | 0.45 | 0.0-0.05 | rusted protruding pin
+vintage bolt hanger plate | 0.5 | 0.0-0.05 | faded steel diamond
+trail register at crag base | 0.4 | 0.0-0.1 | weathered metal tube
+guide flag tape on tree | 0.5 | 0.0-0.05 | faded ribbon strip

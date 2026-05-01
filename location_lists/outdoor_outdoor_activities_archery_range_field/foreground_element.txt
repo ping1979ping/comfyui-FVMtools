@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+mowed lawn under feet | 1.0 | 0.2-0.5 | shorn green blade carpet
+trampled grass shooting line | 0.85 | 0.1-0.3 | flattened patch
+fallen broken arrow | 0.55 | 0.05-0.15 | snapped shaft segment
+scattered fletching feathers | 0.55 | 0.05-0.15 | small bright vanes
+worn dirt bare-spot patch | 0.7 | 0.1-0.3 | exposed brown earth
+fellow archer's footprint | 0.65 | 0.05-0.15 | imprinted boot tread
+stray dandelion bloom | 0.6 | 0.05-0.15 | scattered yellow flowers
+range marker chalk dust | 0.5 | 0.05-0.15 | white powdery streak
+sun-warmed flat path stones | 0.55 | 0.05-0.2 | embedded smooth slabs
+small grass clipping pile | 0.55 | 0.05-0.15 | drying green windrow

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+kite leading-edge inflation valve | 0.85 | 0.0-0.05 | small recessed nozzle
+brand decal on kite canopy | 0.85 | 0.05-0.15 | screen-printed mark
+chicken-loop safety release | 0.85 | 0.0-0.05 | bright pull-tab clip
+boost-bar hand grip wrap | 0.85 | 0.0-0.05 | foam-padded cylinder
+weather-stained beach warning sign | 0.5 | 0.05-0.15 | painted wooden plank
+launch-line anchor stake | 0.55 | 0.0-0.05 | screw-in plastic peg
+brand stencil on board fin | 0.7 | 0.0-0.05 | screen-printed mark
+harness hook safety latch | 0.85 | 0.0-0.05 | machined metal latch
+fin box recessed slot | 0.85 | 0.0-0.05 | molded plastic socket
+launch zone rule placard | 0.5 | 0.05-0.15 | painted laminated panel

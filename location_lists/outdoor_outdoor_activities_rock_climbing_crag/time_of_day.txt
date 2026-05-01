@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+crisp alpine morning light | 1.0 | - | -
+warm late-morning sun on crag | 0.9 | - | -
+golden afternoon side-lighting | 0.85 | - | -
+shaded north-face cool light | 0.8 | - | -
+amber sunset glow on summit | 0.75 | - | -
+overcast climbing-friendly noon | 0.8 | - | -
+pre-dawn approach blue hour | 0.7 | - | -
+hazy midday brightness | 0.75 | - | -
+late afternoon long shadow light | 0.8 | - | -
+softly diffused post-rain light | 0.65 | - | -

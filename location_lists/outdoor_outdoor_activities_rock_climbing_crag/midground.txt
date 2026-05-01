@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bolted sport route line | 0.85 | 0.2-0.5 | metal hardware glinting up wall
+hanging trad rope sweep | 0.8 | 0.2-0.5 | bright cordage arc
+chalked handhold sequence | 0.85 | 0.1-0.4 | pale white smudges on rock
+roof crack splitting overhang | 0.75 | 0.2-0.5 | dark fissure through ceiling
+crash pad cluster below boulder | 0.65 | 0.2-0.5 | thick foam mat stack
+belay ledge with stance | 0.85 | 0.2-0.5 | flat narrow rock platform
+dangling quickdraws on bolts | 0.75 | 0.1-0.3 | colored slings clipped
+fixed anchor at top of pitch | 0.7 | 0.1-0.3 | bolted chain rings
+worn approach trail to base | 0.7 | 0.2-0.5 | scuffed dirt switchback
+cluster of climbers on route | 0.6 | 0.2-0.5 | small bright figures on wall
+gear-laden harness on figure | 0.8 | 0.1-0.3 | clinking metal rack
+spotting partner below boulder | 0.55 | 0.1-0.3 | upraised crouched stance
+ropebag flaked on slab | 0.6 | 0.1-0.3 | coiled bright nylon
+shaded base camp area | 0.55 | 0.2-0.5 | scattered packs and ropes

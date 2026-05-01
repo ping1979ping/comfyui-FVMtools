@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+salty harbor breeze | 1.0 | - | -
+warm humid coastal stillness | 0.85 | - | -
+gentle ripple-making breeze | 0.95 | - | -
+distant tropical squall | 0.5 | - | -
+fresh post-rain salty freshness | 0.8 | - | -
+overcast moody grey day | 0.7 | - | -
+crisp early autumn coolness | 0.75 | - | -
+warm sun-soaked afternoon | 0.9 | - | -
+gusty offshore wind | 0.7 | - | -
+soft passing cumulus clouds | 0.85 | - | -

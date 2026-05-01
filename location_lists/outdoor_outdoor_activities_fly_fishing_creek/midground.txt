@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+riffle running over stones | 0.95 | 0.3-0.6 | broken white-tipped flow
+deep undercut bank pool | 0.8 | 0.2-0.5 | dark glassy water shadow
+midstream boulder break | 0.85 | 0.2-0.5 | wet rounded grey rock
+fallen log spanning channel | 0.7 | 0.2-0.5 | mossy water-soaked timber
+overhanging trout-shading branch | 0.8 | 0.2-0.5 | drooping leafy limb
+gravelly tailout stretch | 0.85 | 0.2-0.5 | speckled small stone bed
+rising trout dimple on water | 0.5 | 0.05-0.2 | small concentric ring
+reed-edged side eddy | 0.65 | 0.2-0.5 | golden tipped marsh edge
+small wading angler upstream | 0.55 | 0.1-0.3 | distant rod-tipping figure
+slick green algae-covered rock | 0.65 | 0.1-0.3 | wet emerald patch
+shallow gravel run | 0.85 | 0.2-0.5 | bright sun-glinting bed
+fly line laid on water | 0.85 | 0.05-0.2 | thin colored arc

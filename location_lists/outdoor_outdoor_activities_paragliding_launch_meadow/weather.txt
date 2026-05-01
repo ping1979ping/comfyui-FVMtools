@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+ideal mild thermal day | 1.0 | - | -
+gentle steady ridge breeze | 0.95 | - | -
+clear stable high-pressure | 0.9 | - | -
+distant thunderhead building | 0.4 | - | -
+fast-moving cumulus overhead | 0.7 | - | -
+warm sun-soaked launch air | 0.9 | - | -
+crisp post-storm visibility | 0.7 | - | -
+swirling crosswind gust | 0.55 | - | -
+overcast still launch day | 0.55 | - | -
+strong steady upslope wind | 0.85 | - | -

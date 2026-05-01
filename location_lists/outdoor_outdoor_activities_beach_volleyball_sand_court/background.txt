@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant ocean horizon line | 1.0 | 0.5-1.0 | flat indigo expanse
+hazy coastal palm tree row | 0.85 | 0.4-0.8 | dark fronded crown line
+distant beachgoer crowd | 0.7 | 0.3-0.7 | scattered tiny figures
+adjacent volleyball court | 0.85 | 0.3-0.7 | tan rectangular sand zone
+sweeping dune behind court | 0.7 | 0.3-0.6 | rounded pale sand mound
+distant lifeguard tower | 0.55 | 0.05-0.2 | painted wooden stand
+sunlit ocean glitter band | 0.85 | 0.3-0.6 | bright sparkling streak
+parked beach umbrellas | 0.7 | 0.2-0.5 | scattered colorful canopies
+distant pier silhouette | 0.4 | 0.1-0.3 | thin parallel pilings
+hazy salt-air horizon | 0.85 | 0.4-0.8 | softly veiled atmospheric blue
+distant beach bonfire pit | 0.4 | 0.1-0.3 | small rocky ring
+soaring gull flock | 0.55 | 0.05-0.2 | bright wheeling silhouettes

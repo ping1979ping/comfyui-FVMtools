@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+twin-tip kiteboard underfoot | 1.0 | 0.2-0.5 | bright fiberglass bottom
+splash droplets across deck | 0.95 | 0.05-0.2 | scattered glistening beads
+control bar in hands | 1.0 | 0.05-0.15 | foam-padded horizontal bar
+trailing harness hook bar | 0.85 | 0.05-0.15 | curved metal hook
+foamy water rushing over edges | 0.95 | 0.2-0.5 | aerated white slipstream
+spray plume in face | 0.85 | 0.05-0.2 | airborne salty mist
+wet shaggy hair sticking | 0.75 | 0.05-0.15 | dripping glossy strands
+fin sweep below board | 0.7 | 0.05-0.2 | glassy underwater blade
+sand scattered on board | 0.55 | 0.05-0.15 | tan grit sprinkle
+splash droplets on chest | 0.7 | 0.05-0.2 | beaded glistening water

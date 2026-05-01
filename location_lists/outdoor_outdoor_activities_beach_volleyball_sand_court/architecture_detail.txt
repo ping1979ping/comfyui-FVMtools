@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+net tensioning ratchet strap | 0.85 | 0.0-0.05 | machined alloy clamp
+boundary anchor sand stake | 0.75 | 0.0-0.05 | screw-in plastic peg
+brand stencil on volleyball | 0.85 | 0.0-0.05 | screen-printed mark
+striped antenna marker top | 0.85 | 0.0-0.05 | red-white painted pole
+sponsor banner zip-tie | 0.55 | 0.0-0.05 | small black plastic strap
+referee stand step bracket | 0.5 | 0.0-0.05 | rusted welded plate
+yardage line tape pin | 0.55 | 0.0-0.03 | small metal pin
+sponsor logo on net top | 0.65 | 0.0-0.05 | embroidered fabric strip
+sand court rules placard | 0.45 | 0.05-0.1 | painted laminated board
+hand-painted court number | 0.5 | 0.0-0.1 | stenciled digit

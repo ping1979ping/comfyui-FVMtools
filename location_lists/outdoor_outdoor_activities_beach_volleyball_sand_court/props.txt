@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+regulation beach volleyball | 1.0 | 0.05-0.15 | colorful paneled leather sphere
+athletic two-piece swim attire | 0.95 | 0.1-0.3 | snug stretchable fabric
+unisex sport sunglasses | 0.85 | 0.02-0.06 | sleek wraparound lens
+visor with team logo | 0.7 | 0.02-0.06 | open-top brim band
+zinc oxide stripe on cheek | 0.75 | 0.02-0.04 | thick pasty white smear
+elastic hair tie | 0.7 | 0.0-0.04 | small fabric loop
+elastic finger tape | 0.55 | 0.0-0.04 | white athletic tape strip
+sport water bottle | 0.85 | 0.02-0.06 | translucent plastic flask
+team windbreaker draped | 0.5 | 0.05-0.15 | technical zipped layer
+beach towel slung | 0.7 | 0.05-0.2 | thick cotton terry
+GPS sport watch | 0.7 | 0.02-0.04 | rugged digital face
+ankle wrap support | 0.55 | 0.02-0.06 | elastic compression band
+small chalk bag for grip | 0.45 | 0.02-0.05 | brushed canvas pouch
+sport towel headband | 0.6 | 0.02-0.04 | woven knit strip

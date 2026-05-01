@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+forested mountain ridge in distance | 1.0 | 0.5-1.0 | layered green canopy silhouette
+sweeping aspen-clad slope | 0.85 | 0.5-0.9 | shimmering pale-trunked grove
+distant trail network on hillside | 0.7 | 0.3-0.7 | thin scarred earth lines
+cresting open meadow ridge | 0.75 | 0.4-0.8 | golden grassy expanse
+deep wooded ravine drop-off | 0.7 | 0.4-0.8 | shadowed dark green fall
+exposed scree side hill | 0.65 | 0.3-0.7 | loose pale rock slope
+coniferous canopy receding | 0.85 | 0.5-0.9 | dense needled green wall
+distant valley town glimpse | 0.5 | 0.3-0.6 | tiny rooftops in haze
+hazy overlapping ridges | 0.85 | 0.4-0.8 | atmospheric blue layers
+sun-dappled forest gap | 0.8 | 0.4-0.8 | broken light through trees
+old logging cut horizon | 0.5 | 0.3-0.6 | regrowth scrub line
+ridgetop singletrack thread | 0.7 | 0.3-0.7 | thin worn earth ribbon
+high alpine meadow horizon | 0.55 | 0.3-0.7 | wildflower studded openness
+distant lake far below | 0.45 | 0.2-0.5 | reflective patch

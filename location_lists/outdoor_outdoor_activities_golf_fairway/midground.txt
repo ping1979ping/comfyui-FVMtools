@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+manicured fairway grass band | 1.0 | 0.3-0.6 | striped mowing pattern
+fairway sand bunker edge | 0.95 | 0.2-0.5 | crisp tan crater rim
+yardage marker stake | 0.85 | 0.05-0.15 | colored painted post
+fellow golfer addressing ball | 0.75 | 0.1-0.3 | upright stance figure
+fairway divot patch | 0.85 | 0.05-0.2 | torn turf brown spot
+golf cart on path | 0.75 | 0.05-0.2 | white-roofed small vehicle
+trimmed bermuda rough edge | 0.85 | 0.2-0.5 | longer ragged border
+fairway sprinkler head | 0.6 | 0.0-0.05 | small recessed disc
+caddy with bag at distance | 0.55 | 0.05-0.15 | shouldered figure
+neat green-side bunker | 0.85 | 0.2-0.5 | curved tan sand patch
+beverage cart in distance | 0.45 | 0.05-0.15 | small bright vehicle
+rope-and-stake gallery | 0.5 | 0.1-0.3 | low painted boundary

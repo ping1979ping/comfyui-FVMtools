@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+clear cold alpine sunrise | 1.0 | - | -
+brilliant midday summit sun | 0.95 | - | -
+golden afternoon ridge light | 0.9 | - | -
+amber alpenglow on peaks | 0.85 | - | -
+pre-dawn cold blue hour | 0.85 | - | -
+hazy mid-afternoon brightness | 0.75 | - | -
+sharp post-storm clarity | 0.7 | - | -
+late-day low contrast light | 0.7 | - | -
+soft post-cloud diffused light | 0.65 | - | -
+twilight alpine purple dim | 0.6 | - | -

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+mountaineering helmet | 0.95 | 0.05-0.2 | hard polymer shell
+ice axe in hand | 0.85 | 0.05-0.2 | shaped alloy head and shaft
+crampons on boots | 0.7 | 0.05-0.2 | spiked steel framework
+alpine harness with gear | 0.85 | 0.05-0.2 | reinforced webbing
+locking carabiner on rope | 0.85 | 0.02-0.08 | machined alloy gate
+glacier glasses with leather | 0.85 | 0.02-0.06 | tinted side-shielded lens
+buff neck gaiter | 0.7 | 0.02-0.1 | stretchable knit tube
+softshell mountain jacket | 0.95 | 0.1-0.3 | breathable woven membrane
+double mountaineering boot | 0.95 | 0.05-0.2 | insulated rigid leather
+trekking pole pair | 0.85 | 0.05-0.2 | telescoping carbon shaft
+summit camera in hand | 0.65 | 0.02-0.06 | compact metal body
+hydration thermos flask | 0.6 | 0.02-0.08 | brushed insulated stainless
+guidebook in pack flap | 0.45 | 0.02-0.06 | folded laminated topo
+GPS unit clipped on pack | 0.55 | 0.02-0.06 | sealed rugged display

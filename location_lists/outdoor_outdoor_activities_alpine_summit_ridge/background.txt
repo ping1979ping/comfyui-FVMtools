@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+panoramic snow-capped mountain range | 1.0 | 0.6-1.0 | white-tipped dark peaks
+distant glacier valley below | 0.85 | 0.4-0.8 | bluish ice tongue
+endless ridgeline procession | 0.9 | 0.5-1.0 | overlapping rocky spines
+deep blue alpine sky | 1.0 | 0.5-1.0 | saturated cobalt expanse
+hanging cirque amphitheater | 0.7 | 0.4-0.8 | curved rock bowl
+scree slope descending | 0.8 | 0.4-0.8 | grey pebbled apron
+distant turquoise tarn | 0.55 | 0.2-0.5 | bright glacial water patch
+clouds below summit level | 0.75 | 0.4-0.8 | white sea of mist
+faint distant climbers on snow | 0.4 | 0.2-0.5 | tiny dark dots on white
+exposed gneiss buttress | 0.65 | 0.4-0.8 | banded grey crystalline
+sun-lit far summit pyramid | 0.75 | 0.3-0.7 | bright triangular peak
+windswept cornice edge | 0.6 | 0.2-0.5 | curled snow lip
+distant mountaineering hut | 0.4 | 0.1-0.3 | tiny stone roof
+high alpine meadow far below | 0.55 | 0.3-0.6 | green patch in valley

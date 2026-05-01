@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool damp marsh morning | 1.0 | - | -
+gentle reedy breeze | 0.95 | - | -
+warm humid summer stillness | 0.85 | - | -
+fresh post-rain cool air | 0.85 | - | -
+distant thunder rumble | 0.55 | - | -
+light drifting marsh mist | 0.85 | - | -
+overcast still grey day | 0.85 | - | -
+crisp early autumn coolness | 0.8 | - | -
+mild sun-warmed afternoon | 0.85 | - | -
+soft humid wetland haze | 0.85 | - | -

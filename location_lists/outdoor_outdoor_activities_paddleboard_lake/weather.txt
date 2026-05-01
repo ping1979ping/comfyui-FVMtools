@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm windless lake morning | 1.0 | - | -
+gentle ripple-making breeze | 0.85 | - | -
+warm humid summer stillness | 0.85 | - | -
+distant thunderhead building | 0.45 | - | -
+fresh post-rain cool air | 0.75 | - | -
+light drifting morning mist | 0.8 | - | -
+overcast still grey day | 0.65 | - | -
+crisp early autumn coolness | 0.7 | - | -
+warm sun-soaked afternoon | 0.9 | - | -
+soft passing cumulus clouds | 0.8 | - | -

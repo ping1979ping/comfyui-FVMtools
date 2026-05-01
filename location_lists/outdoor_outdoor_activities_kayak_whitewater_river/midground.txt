@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+frothing whitewater wave train | 0.95 | 0.3-0.6 | broken foaming standing waves
+exposed midstream boulder | 0.9 | 0.2-0.5 | wet rounded grey rock
+hydraulic hole below ledge | 0.7 | 0.2-0.5 | recirculating frothy pit
+calm eddy line edge | 0.85 | 0.2-0.5 | swirling current boundary
+rooster tail off rock | 0.75 | 0.1-0.3 | upthrown white plume
+strong current tongue downstream | 0.95 | 0.2-0.5 | smooth glassy V-channel
+shallow rocky shoal | 0.7 | 0.2-0.5 | broken pale stone bed
+overhanging strainer branch | 0.55 | 0.1-0.3 | submerged tangled limb
+fellow paddler in rapid | 0.7 | 0.1-0.3 | bright kayaking figure
+foam pile downstream of drop | 0.85 | 0.1-0.3 | white frothy mass
+waterworn slot canyon channel | 0.6 | 0.2-0.5 | smoothed sculpted rock
+spraying splash off bow | 0.85 | 0.1-0.3 | airborne droplet veil

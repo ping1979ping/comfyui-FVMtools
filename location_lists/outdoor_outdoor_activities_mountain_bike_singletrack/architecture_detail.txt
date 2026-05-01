@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted trail blaze on tree | 0.85 | 0.0-0.1 | crisp colored rectangle
+metal trail difficulty marker | 0.7 | 0.0-0.1 | enameled diamond plaque
+weathered bridge handrail | 0.55 | 0.05-0.15 | sun-greyed timber rail
+stone armoring along trail | 0.6 | 0.05-0.15 | embedded flat slab edges
+trailbuilder rebar pin | 0.45 | 0.0-0.05 | rusted protruding steel
+worn split-rail trail fence | 0.5 | 0.05-0.15 | silvered chestnut beam
+old logging road remnant cut | 0.5 | 0.05-0.15 | overgrown bench scar
+plywood ramp transition seam | 0.55 | 0.0-0.1 | scuffed weather-grey board
+trail map kiosk panel | 0.45 | 0.05-0.15 | laminated printed board
+yellow caution warning sign | 0.4 | 0.0-0.1 | bright triangular plate

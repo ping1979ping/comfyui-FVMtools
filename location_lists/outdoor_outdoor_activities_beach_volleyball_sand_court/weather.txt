@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+salty offshore breeze | 0.95 | - | -
+warm humid coastal stillness | 0.85 | - | -
+gentle ripple-making breeze | 0.85 | - | -
+distant tropical squall | 0.45 | - | -
+fresh post-rain coolness | 0.7 | - | -
+overcast moody grey day | 0.6 | - | -
+warm sun-soaked afternoon | 0.95 | - | -
+gusty onshore wind | 0.65 | - | -
+soft passing cumulus clouds | 0.85 | - | -
+mild stable high pressure | 0.95 | - | -
