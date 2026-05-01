@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wide-brim adventure hat | 0.60 | 0.0-0.2 | cotton,nylon
+trucker cap | 0.55 | 0.0-0.2 | cotton,polyester
+bucket cap | 0.50 | 0.0-0.2 | cotton,nylon
+buff-style headwrap | 0.40 | 0.0-0.2 | polyester
+visor cap | 0.40 | 0.0-0.2 | cotton,polyester

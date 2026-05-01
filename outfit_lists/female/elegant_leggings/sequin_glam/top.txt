@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sparkling tank | 0.80 | 0.5-0.8 | satin,silk
+glittering bodysuit | 0.70 | 0.5-0.8 | jersey
+beaded camisole | 0.65 | 0.5-0.8 | silk
+embellished bustier | 0.65 | 0.5-0.8 | satin
+shimmer wrap top | 0.60 | 0.5-0.7 | silk
+crystal-trim halter | 0.55 | 0.5-0.8 | satin
+draped party blouse | 0.55 | 0.5-0.7 | silk,satin
+metallic cami | 0.55 | 0.5-0.7 | satin
+beaded off-shoulder | 0.50 | 0.5-0.8 | silk
+shimmery cropped sweater | 0.45 | 0.4-0.7 | natural
+glittered halter | 0.50 | 0.5-0.8 | satin
+embellished tank | 0.55 | 0.5-0.8 | satin

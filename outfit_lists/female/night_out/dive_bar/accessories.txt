@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# silver hoop earrings | 0.65 | 0.2-0.5 | metal
+#color# layered chain necklaces | 0.60 | 0.2-0.5 | metal
+#color# studded leather belt | 0.55 | 0.2-0.5 | metal
+#color# stacked rings | 0.55 | 0.2-0.5 | metal
+#color# spike choker | 0.45 | 0.2-0.5 | leather,metal
+#color# wrist cuff | 0.45 | 0.2-0.5 | leather,metal
+#color# beaded friendship bracelets | 0.40 | 0.2-0.4 | cotton

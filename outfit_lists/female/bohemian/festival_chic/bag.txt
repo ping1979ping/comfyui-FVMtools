@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+fringe crossbody | 0.7 | 0.2-0.4 | suede,leather
+mini backpack | 0.6 | 0.1-0.3 | leather,suede
+holographic clutch | 0.5 | 0.1-0.3 | mesh,satin
+tassel pouch | 0.5 | 0.1-0.3 | suede,raw silk
+beaded sling | 0.4 | 0.2-0.4 | cotton,raw silk
+woven tote | 0.5 | 0.2-0.4 | hemp,cotton
+glitter bumbag | 0.5 | 0.1-0.3 | mesh,satin
+embroidered drawstring bag | 0.4 | 0.1-0.3 | cotton,raw silk
+mirrored sling | 0.3 | 0.1-0.3 | cotton,velvet

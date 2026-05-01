@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+crystal hair clip | 0.2 | 0.6-0.8 | metal
+embellished headband | 0.15 | 0.6-0.8 | metal,charmeuse
+sparkly hair pin | 0.15 | 0.6-0.8 | metal
+rhinestone barrette | 0.1 | 0.6-0.8 | metal

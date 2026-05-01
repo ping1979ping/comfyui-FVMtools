@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# designer chain crossbody | 0.75 | 0.5-0.8 | leather,metal
+#color# satin envelope clutch | 0.70 | 0.5-0.8 | silk
+#color# beaded mini pouch | 0.50 | 0.5-0.8 | sequin
+#color# velvet evening clutch | 0.55 | 0.5-0.8 | silk
+#color# crocodile-embossed minaudiere | 0.45 | 0.5-0.8 | leather
+#color# quilted shoulder bag | 0.55 | 0.5-0.7 | leather
+#color# small chain wristlet | 0.40 | 0.5-0.7 | metal,leather

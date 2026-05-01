@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+architectural pumps | 0.5 | 0.5-0.7 | suede,patent
+chunky-heel boots | 0.4 | 0.4-0.6 | leather,suede
+pointed-toe flats | 0.5 | 0.4-0.6 | leather,suede
+loafers | 0.6 | 0.4-0.6 | leather,suede
+mules | 0.5 | 0.4-0.6 | leather,suede
+sculpted heel sandals | 0.4 | 0.5-0.7 | leather,suede
+chelsea boots | 0.4 | 0.3-0.5 | leather
+square-toe heels | 0.5 | 0.5-0.7 | leather,suede
+minimal sandals | 0.4 | 0.4-0.6 | leather

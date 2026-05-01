@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+wave pattern | 0.50 | top,bottom | 0.0-0.3
+tropical print | 0.45 | top,bottom | 0.0-0.3
+faded tie-dye pattern | 0.45 | top,bottom | 0.0-0.3
+surf brand graphic | 0.40 | top | 0.0-0.3
+hibiscus motif | 0.35 | top,bottom | 0.0-0.3
+neon block colors | 0.35 | top,bottom | 0.0-0.3
+checkered pattern | 0.35 | top,bottom | 0.0-0.3
+shark silhouette | 0.30 | top | 0.0-0.3
+ombre wave effect | 0.35 | top,bottom | 0.0-0.3
+palm tree silhouette | 0.30 | top,bottom,bag | 0.0-0.3

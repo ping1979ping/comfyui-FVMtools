@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+camo pattern | 0.40 | top,bottom | 0.0-0.3
+topographic line print | 0.35 | top,bottom | 0.0-0.3
+mountain silhouette graphic | 0.35 | top | 0.0-0.3
+faded tie-dye pattern | 0.35 | top,bottom | 0.0-0.3
+geometric outdoor pattern | 0.35 | top,bottom | 0.0-0.3
+neon block colors | 0.30 | top,bottom | 0.0-0.2
+adventure brand graphic | 0.35 | top | 0.0-0.3
+wildlife silhouette | 0.30 | top | 0.0-0.3
+gradient ombre effect | 0.30 | top,bottom | 0.0-0.3
+trail map motif | 0.25 | top,bag | 0.0-0.3

@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BOO" | 0.20 | top | spooky font
+"GROOVY" | 0.20 | top | retro print
+"RAWR" | 0.15 | top | jungle font
+"SHIVER ME TIMBERS" | 0.10 | top | pirate print
+"DISCO" | 0.20 | top | metallic block
+"FAIRY DUST" | 0.15 | top | sparkle script
+"WICKED" | 0.15 | top | gothic font
+"CARNIVAL" | 0.15 | top | circus print

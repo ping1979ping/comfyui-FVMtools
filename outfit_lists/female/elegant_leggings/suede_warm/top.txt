@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cashmere turtleneck | 0.80 | 0.4-0.7 | natural
+chunky knit sweater | 0.70 | 0.4-0.7 | natural
+ribbed pullover | 0.70 | 0.4-0.7 | natural
+fitted mock-neck | 0.65 | 0.4-0.7 | jersey,natural
+fine-knit camisole | 0.60 | 0.4-0.7 | natural
+warm wrap top | 0.55 | 0.5-0.7 | natural
+draped knit blouse | 0.50 | 0.4-0.7 | natural
+oversized rust sweater | 0.55 | 0.3-0.6 | natural
+cropped knit | 0.55 | 0.4-0.7 | natural
+caramel cami | 0.50 | 0.4-0.7 | silk
+fitted knit tee | 0.50 | 0.3-0.6 | natural

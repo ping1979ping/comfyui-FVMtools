@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sweatband | 0.50 | 0.0-0.2 | cotton,nylon
+running gloves | 0.40 | 0.0-0.3 | spandex,nylon
+sport sunglasses | 0.55 | 0.0-0.3 | metal,polycarbonate
+GPS watch | 0.55 | 0.0-0.3 | metal
+heart-rate strap | 0.40 | 0.0-0.2 | spandex,nylon
+
+# mid-casual
+arm sleeves | 0.40 | 0.1-0.3 | spandex,nylon
+hydration belt | 0.45 | 0.0-0.2 | nylon
+calf compression sleeves | 0.40 | 0.0-0.2 | spandex,nylon

@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# crystal-embellished platforms | 0.75 | 0.3-0.6 | sequin,satin
+#color# rhinestone strappy heels | 0.70 | 0.4-0.7 | satin,metal
+#color# feather-trimmed mules | 0.50 | 0.4-0.6 | feather,satin
+#color# metallic platform pumps | 0.65 | 0.3-0.6 | metal,satin
+#color# diamante slingbacks | 0.55 | 0.4-0.7 | satin,sequin
+#color# fringed dance heels | 0.45 | 0.3-0.6 | suede,satin
+#color# clear PVC stilettos | 0.50 | 0.3-0.6 | acrylic,metal

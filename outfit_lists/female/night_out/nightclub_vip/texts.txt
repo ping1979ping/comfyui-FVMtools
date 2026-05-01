@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PRIVE" | 0.10 | bag | minimal serif
+"MEMBERS ONLY" | 0.10 | top | discreet sans
+"ATELIER" | 0.10 | bag | thin elegant
+"NOIR" | 0.10 | top | bold serif
+"VIP LIST" | 0.10 | top | sleek modern

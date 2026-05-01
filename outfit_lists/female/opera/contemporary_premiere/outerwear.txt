@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# dramatic floor-length cape | 0.65 | 0.8-1.0 | crepe,silk
+#color# avant-garde structured jacket | 0.50 | 0.7-1.0 | crepe,wool
+#color# bold oversized blazer | 0.55 | 0.7-1.0 | wool,crepe
+#color# fluid statement shawl | 0.70 | 0.6-0.9 | silk,chiffon
+#color# architectural bolero | 0.45 | 0.7-1.0 | crepe,satin
+#color# dramatic feathered jacket | 0.40 | 0.8-1.0 | silk
+#color# longline duster overcoat | 0.45 | 0.7-1.0 | crepe,silk
+#color# sculptural opera cape | 0.45 | 0.7-1.0 | crepe,silk

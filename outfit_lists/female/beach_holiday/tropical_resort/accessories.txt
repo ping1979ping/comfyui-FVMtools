@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized sunglasses | 0.80 | 0.0-0.3 | plastic
+cat-eye sunglasses | 0.50 | 0.0-0.3 | plastic
+seashell necklace | 0.55 | 0.0-0.2 | shell
+puka chain choker | 0.40 | 0.0-0.2 | shell
+gold anklet | 0.45 | 0.0-0.2 | metal
+beaded bracelet | 0.45 | 0.0-0.2 | metal
+hoop earrings | 0.50 | 0.0-0.3 | metal
+flower hair clip | 0.40 | 0.0-0.2 | plastic
+seashell hair pin | 0.30 | 0.0-0.2 | shell
+woven belt | 0.35 | 0.1-0.3 | straw,cotton
+beaded waist chain | 0.25 | 0.0-0.2 | metal
+layered pendant | 0.40 | 0.0-0.3 | metal,shell

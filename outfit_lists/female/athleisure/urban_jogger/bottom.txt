@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+cargo joggers | 0.55 | 0.0-0.2 | cotton,nylon
+slim joggers | 0.65 | 0.0-0.2 | cotton,polyester
+oversized sweats | 0.50 | 0.0-0.2 | cotton,fleece
+biker shorts | 0.45 | 0.0-0.2 | spandex,nylon
+
+# mid-casual
+parachute pants | 0.50 | 0.1-0.3 | nylon,polyester
+cargo pants | 0.55 | 0.1-0.3 | cotton,nylon
+flare joggers | 0.45 | 0.1-0.3 | cotton,polyester
+wide-leg sweats | 0.45 | 0.0-0.2 | cotton,fleece
+high-waist tights | 0.50 | 0.0-0.2 | spandex,nylon

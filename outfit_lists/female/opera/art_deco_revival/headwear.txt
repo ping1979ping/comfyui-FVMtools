@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# jeweled flapper headband | 0.75 | 0.7-1.0 | metal
+#color# feathered art deco headpiece | 0.65 | 0.7-1.0 | silk
+#color# beaded forehead band | 0.55 | 0.7-1.0 | metal
+#color# turban-style head wrap | 0.40 | 0.7-1.0 | silk
+#color# crystal hair tiara | 0.45 | 0.8-1.0 | metal

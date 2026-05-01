@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized blazer | 0.6 | 0.5-0.7 | wool blend,crepe
+sculptural coat | 0.4 | 0.5-0.7 | wool blend
+cocoon coat | 0.3 | 0.5-0.7 | wool blend
+boxy jacket | 0.4 | 0.4-0.6 | wool blend,crepe
+duster coat | 0.4 | 0.5-0.7 | wool blend
+asymmetric blazer | 0.3 | 0.5-0.7 | crepe,wool blend
+oversized overshirt | 0.3 | 0.4-0.6 | linen
+draped cardigan | 0.3 | 0.4-0.6 | wool blend,cashmere

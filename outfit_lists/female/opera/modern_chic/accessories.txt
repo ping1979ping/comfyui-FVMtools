@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# jewelry
+sleek geometric earrings | 0.75 | 0.7-1.0 | metal
+minimalist gold cuff | 0.65 | 0.6-0.9 | metal
+modern statement necklace | 0.55 | 0.7-1.0 | metal
+sculptural ear cuffs | 0.50 | 0.7-1.0 | metal
+architectural diamond studs | 0.65 | 0.7-1.0 | metal
+slim diamond bangle | 0.55 | 0.7-1.0 | metal
+single-stone pendant | 0.55 | 0.6-0.9 | metal
+minimalist signet ring | 0.40 | 0.6-0.9 | metal
+
+# other
+sleek leather gloves | 0.30 | 0.7-1.0 | leather
+modern hair clip | 0.40 | 0.6-0.9 | metal

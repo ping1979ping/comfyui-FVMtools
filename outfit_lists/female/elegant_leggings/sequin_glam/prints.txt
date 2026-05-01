@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+all-over sparkle | 0.65 | top,bottom,bag | 0.5-0.8
+shimmer finish | 0.60 | top,bottom,outerwear | 0.4-0.7
+metallic finish | 0.55 | top,bottom,bag,footwear | 0.4-0.7
+rhinestone detail | 0.55 | top,accessories,bag | 0.5-0.8
+crystal trim | 0.50 | top,bag,footwear | 0.5-0.8
+holographic shimmer | 0.40 | bottom,footwear | 0.4-0.7
+glitter coating | 0.50 | bottom,footwear | 0.4-0.7
+beaded accents | 0.40 | top,bag | 0.5-0.7
+disco finish | 0.40 | bottom,bag | 0.4-0.7

@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# vinyl mini skirt | 0.70 | 0.3-0.5 | sequin
+#color# leather hot pants | 0.55 | 0.3-0.5 | sequin
+#color# bodycon mini | 0.75 | 0.3-0.6 | jersey,satin
+#color# sequined micro skirt | 0.55 | 0.3-0.6 | sequin
+#color# high-waist disco pants | 0.50 | 0.3-0.6 | satin,vinyl
+#color# mesh-panel mini | 0.45 | 0.3-0.5 | mesh,jersey
+#color# fringed mini skirt | 0.40 | 0.3-0.6 | suede,leather
+#color# wet-look skinny pants | 0.45 | 0.3-0.6 | vinyl
+#color# cutout mini skirt | 0.50 | 0.3-0.5 | jersey,vinyl

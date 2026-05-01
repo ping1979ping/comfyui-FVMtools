@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ruffled prairie blouse | 0.8 | 0.2-0.4 | cotton,linen
+high-neck victorian top | 0.7 | 0.2-0.4 | cotton,raw silk
+puff-sleeve blouse | 0.7 | 0.2-0.4 | cotton,gauze
+buttoned milkmaid top | 0.6 | 0.2-0.4 | cotton,linen
+lace-trimmed blouse | 0.6 | 0.2-0.4 | cotton,gauze
+cottagecore tunic | 0.6 | 0.2-0.4 | cotton,linen
+romantic camisole | 0.5 | 0.1-0.3 | cotton,raw silk
+square-neck top | 0.5 | 0.2-0.4 | cotton,linen
+embroidered yoke blouse | 0.5 | 0.2-0.4 | cotton,linen
+smocked bodice | 0.5 | 0.2-0.4 | cotton,gauze
+ribbon-tie blouse | 0.4 | 0.2-0.4 | cotton,raw silk

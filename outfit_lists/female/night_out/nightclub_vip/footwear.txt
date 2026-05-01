@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pointed-toe pumps | 0.75 | 0.5-0.8 | leather,satin
+#color# strappy stilettos | 0.70 | 0.5-0.8 | satin,suede
+#color# patent ankle boots | 0.55 | 0.4-0.7 | silk
+#color# crystal-strap sandals | 0.50 | 0.5-0.8 | satin,metal
+#color# velvet platform heels | 0.50 | 0.5-0.8 | silk
+#color# sleek over-the-knee boots | 0.45 | 0.4-0.7 | leather,suede
+#color# satin slingbacks | 0.55 | 0.5-0.8 | silk

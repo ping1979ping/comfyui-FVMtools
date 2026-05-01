@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# bold sculptural headpiece | 0.40 | 0.8-1.0 | metal
+#color# avant-garde hair clip | 0.45 | 0.7-1.0 | metal
+#color# dramatic feather fascinator | 0.40 | 0.8-1.0 | silk
+#color# crystal headband | 0.45 | 0.7-1.0 | metal

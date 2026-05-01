@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+delicate watch | 0.55 | 0.0-0.4 | metal
+casual sunglasses | 0.55 | 0.0-0.3 | acetate
+silk scarf | 0.45 | 0.1-0.4 | satin
+simple stud earrings | 0.45 | 0.0-0.3 | metal
+beaded bracelet | 0.40 | 0.0-0.3 | wood,metal
+
+# mid-casual
+delicate necklace | 0.45 | 0.1-0.3 | metal
+small hoops | 0.40 | 0.1-0.3 | metal
+hair scarf | 0.40 | 0.0-0.3 | cotton,satin

@@ -1,0 +1,15 @@
+# format: fabric_name | formality | family | weight
+charmeuse | 0.7 | synthetic | light
+crepe | 0.6 | mixed | light
+chiffon | 0.6 | synthetic | light
+georgette | 0.6 | synthetic | light
+tulle | 0.7 | synthetic | light
+jersey | 0.4 | synthetic | light
+suede | 0.5 | animal | medium
+patent | 0.6 | synthetic | medium
+wool blend | 0.6 | natural | medium
+cashmere | 0.7 | natural | medium
+velvet | 0.7 | mixed | medium
+faux-fur | 0.7 | synthetic | medium
+pearl | 0.7 | natural | light
+metal | 0.5 | mixed | medium

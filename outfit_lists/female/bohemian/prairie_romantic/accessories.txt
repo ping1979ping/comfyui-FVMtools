@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ribbon choker | 0.7 | 0.1-0.3 | velvet,satin
+cameo brooch | 0.6 | 0.2-0.4 | resin,metal
+pearl necklace | 0.6 | 0.2-0.4 | metal
+delicate locket | 0.5 | 0.2-0.4 | metal
+romantic drop earrings | 0.6 | 0.2-0.4 | metal,resin
+stacked rings | 0.5 | 0.1-0.3 | metal
+charm bracelet | 0.5 | 0.1-0.3 | metal
+embroidered handkerchief | 0.4 | 0.2-0.4 | cotton,linen
+ribbon hair tie | 0.5 | 0.0-0.3 | satin,velvet
+floral pin | 0.4 | 0.1-0.3 | resin,cotton

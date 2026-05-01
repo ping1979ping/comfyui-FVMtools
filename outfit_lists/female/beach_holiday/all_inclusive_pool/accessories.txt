@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized sunglasses | 0.80 | 0.0-0.3 | plastic
+mirrored aviators | 0.55 | 0.0-0.3 | plastic,metal
+gold hoop earrings | 0.55 | 0.0-0.3 | metal
+delicate anklet | 0.50 | 0.0-0.2 | metal
+beaded bracelet | 0.45 | 0.0-0.2 | metal
+seashell pendant | 0.45 | 0.0-0.2 | shell
+waterproof watch | 0.50 | 0.0-0.3 | plastic,rubber
+body chain | 0.40 | 0.0-0.3 | metal
+pool float ring | 0.35 | 0.0-0.1 | plastic
+woven fan | 0.30 | 0.0-0.2 | straw

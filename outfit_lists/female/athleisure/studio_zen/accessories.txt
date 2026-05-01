@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+yoga headband | 0.50 | 0.0-0.2 | cotton,bamboo
+hair tie | 0.50 | 0.0-0.2 | cotton,nylon
+mala beads | 0.45 | 0.0-0.3 | wood
+crystal pendant | 0.40 | 0.0-0.3 | metal
+woven bracelet | 0.40 | 0.0-0.2 | cotton
+
+# mid-casual
+zen ring | 0.35 | 0.1-0.3 | metal
+small hoops | 0.35 | 0.1-0.4 | metal
+hair scarf | 0.40 | 0.0-0.3 | cotton,modal

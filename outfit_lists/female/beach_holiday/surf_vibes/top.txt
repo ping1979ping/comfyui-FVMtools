@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport bikini top | 0.70 | 0.0-0.1 | nylon,polyester
+zipped rashguard | 0.65 | 0.0-0.2 | neoprene,polyester
+long-sleeve rashguard | 0.60 | 0.0-0.2 | neoprene,polyester
+crop rashguard | 0.55 | 0.0-0.2 | polyester,nylon
+wetsuit top | 0.50 | 0.0-0.2 | neoprene
+sport bandeau | 0.55 | 0.0-0.1 | nylon,polyester
+high-neck bikini top | 0.55 | 0.0-0.1 | nylon,polyester
+racerback sport top | 0.55 | 0.0-0.2 | nylon,polyester
+sleeveless surf shirt | 0.50 | 0.0-0.2 | polyester
+faded graphic tee | 0.50 | 0.0-0.2 | cotton
+oversized tank | 0.45 | 0.0-0.2 | cotton
+cropped hoodie | 0.40 | 0.0-0.2 | cotton,polyester

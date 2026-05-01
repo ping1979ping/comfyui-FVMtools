@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# feathered hair piece | 0.40 | 0.3-0.6 | feather
+#color# rhinestone tiara | 0.30 | 0.4-0.7 | metal
+#color# crystal hair pins | 0.30 | 0.4-0.7 | metal
+#color# showgirl plume headdress | 0.25 | 0.3-0.6 | feather,metal
+#color# sparkle headband | 0.35 | 0.3-0.6 | sequin

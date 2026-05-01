@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+vintage band tee | 0.8 | 0.1-0.3 | cotton
+oversized graphic shirt | 0.7 | 0.1-0.3 | cotton
+crochet blouse | 0.6 | 0.2-0.4 | cotton,raw silk
+flowy peasant blouse | 0.6 | 0.2-0.4 | cotton,gauze
+striped knit top | 0.5 | 0.1-0.3 | cotton,wool
+ribbed tank | 0.5 | 0.1-0.3 | cotton,modal
+artsy printed tee | 0.6 | 0.1-0.3 | cotton
+loose tunic | 0.5 | 0.2-0.4 | cotton,linen
+embellished blouse | 0.4 | 0.2-0.4 | cotton,chiffon
+patchwork blouse | 0.4 | 0.2-0.4 | cotton,denim
+button-up flannel | 0.5 | 0.1-0.3 | cotton
+cropped knitwear | 0.4 | 0.1-0.3 | wool,cotton

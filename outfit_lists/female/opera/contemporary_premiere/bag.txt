@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sculptural minaudiere | 0.75 | 0.7-1.0 | metal
+#color# bold geometric clutch | 0.70 | 0.7-1.0 | leather,metal
+#color# avant-garde box clutch | 0.60 | 0.7-1.0 | metal,leather
+#color# metallic chain-strap bag | 0.55 | 0.7-1.0 | leather,metal
+#color# crystal-embellished clutch | 0.55 | 0.8-1.0 | satin
+#color# architectural rigid clutch | 0.50 | 0.7-1.0 | leather,metal
+#color# fluid pouch clutch | 0.45 | 0.6-0.9 | satin,leather
+#color# bold envelope statement clutch | 0.50 | 0.7-1.0 | leather,satin

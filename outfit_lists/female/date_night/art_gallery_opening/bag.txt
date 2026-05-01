@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+structured tote | 0.5 | 0.4-0.6 | leather,suede
+sculptural clutch | 0.5 | 0.5-0.7 | leather,suede
+geometric box bag | 0.4 | 0.5-0.7 | leather
+small top-handle bag | 0.5 | 0.4-0.6 | leather,suede
+minimal crossbody | 0.5 | 0.4-0.6 | leather,suede
+abstract-shape bag | 0.3 | 0.5-0.7 | leather
+modernist clutch | 0.4 | 0.5-0.7 | leather,suede
+slim shoulder bag | 0.4 | 0.4-0.6 | leather

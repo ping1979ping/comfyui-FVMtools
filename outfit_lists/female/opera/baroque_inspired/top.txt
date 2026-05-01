@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# ornate corset bodice | 0.75 | 0.8-1.0 | brocade,satin
+#color# embroidered baroque bodice | 0.70 | 0.8-1.0 | brocade,silk
+#color# gilded brocade bodice | 0.65 | 0.8-1.0 | brocade,silk
+#color# bejeweled high-neck bodice | 0.60 | 0.8-1.0 | silk,satin
+#color# ornate puff-sleeve bodice | 0.55 | 0.8-1.0 | silk,brocade
+#color# regal off-shoulder bodice | 0.65 | 0.8-1.0 | brocade,silk
+#color# pearl-encrusted bodice | 0.55 | 0.8-1.0 | silk,satin
+#color# baroque sweetheart bodice | 0.55 | 0.8-1.0 | brocade,silk
+#color# ornate bell-sleeve bodice | 0.45 | 0.8-1.0 | silk,brocade
+#color# golden-trimmed corseted top | 0.55 | 0.8-1.0 | brocade,satin

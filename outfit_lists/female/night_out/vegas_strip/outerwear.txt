@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# feather boa | 0.60 | 0.3-0.6 | sequin
+#color# sequined bolero | 0.45 | 0.4-0.7 | sequin
+#color# metallic kimono | 0.40 | 0.4-0.6 | satin,metal
+#color# faux-fur stole | 0.45 | 0.5-0.7 | faux_fur
+#color# crystal-fringed cape | 0.30 | 0.4-0.7 | sequin,metal
+#color# sparkle cropped jacket | 0.40 | 0.4-0.6 | sequin

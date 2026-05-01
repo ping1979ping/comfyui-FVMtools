@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+greek-letter motif | 0.4 | top,outerwear | 0.1-0.3
+varsity logo | 0.4 | top,outerwear | 0.1-0.3
+tie-dye wash | 0.4 | top,bottom | 0.1-0.3
+graphic slogan | 0.4 | top | 0.1-0.3
+distressed wash | 0.3 | bottom | 0.1-0.3
+school colors stripe | 0.3 | top,outerwear,accessories | 0.1-0.3
+checkered pattern | 0.3 | top,bottom | 0.1-0.3
+mascot illustration | 0.3 | top,outerwear | 0.1-0.3
+flame motif | 0.2 | top,bottom | 0.1-0.3
+camo pattern | 0.2 | top,bottom,bag | 0.0-0.3

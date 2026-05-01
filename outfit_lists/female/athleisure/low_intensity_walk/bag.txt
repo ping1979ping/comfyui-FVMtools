@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+canvas tote | 0.55 | 0.0-0.3 | cotton
+crossbody pouch | 0.50 | 0.0-0.3 | nylon,polyester
+small belt bag | 0.50 | 0.0-0.2 | nylon,polyester
+
+# mid-casual
+hobo bag | 0.45 | 0.1-0.4 | canvas,faux-leather
+tote with pockets | 0.45 | 0.0-0.3 | canvas,cotton
+sleek crossbody | 0.45 | 0.1-0.4 | nylon,faux-leather

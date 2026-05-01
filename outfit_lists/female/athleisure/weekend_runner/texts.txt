@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"RUN" | 0.25 | top | minimal sans-serif
+"PACE" | 0.2 | top | bold block letters
+"MILES" | 0.2 | top | clean modern font
+"5K" | 0.15 | top | bold block letters
+"FINISHER" | 0.15 | top | athletic font
+"ENDURE" | 0.2 | top | minimal bold
+"GO" | 0.2 | top | bold block letters
+"DISTANCE" | 0.15 | top | sporty condensed

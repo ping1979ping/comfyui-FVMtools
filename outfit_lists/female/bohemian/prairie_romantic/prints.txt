@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ditsy floral | 0.7 | top,bottom,bag | 0.1-0.4
+gingham check | 0.5 | top,bottom | 0.1-0.4
+romantic toile | 0.4 | top,bottom,outerwear | 0.2-0.5
+ribbon trim | 0.6 | top,bottom,outerwear | 0.1-0.4
+lace inset | 0.6 | top,outerwear | 0.1-0.4
+delicate eyelet | 0.5 | top,bottom | 0.1-0.4
+romantic floral motif | 0.5 | top,bottom,bag | 0.1-0.4
+victorian damask | 0.4 | top,outerwear | 0.2-0.5
+hand-stitched embroidery | 0.5 | top,outerwear,bag | 0.1-0.4
+pastoral scene | 0.3 | top,outerwear | 0.1-0.4
+small polka dot | 0.4 | top,bottom | 0.1-0.4

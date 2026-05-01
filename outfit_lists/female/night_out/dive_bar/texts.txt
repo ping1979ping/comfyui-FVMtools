@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WHISKEY" | 0.20 | top | grunge stencil
+"LAST CALL" | 0.20 | top | bold rough
+"DIVE BAR" | 0.20 | top | rough sans
+"OPEN MIC" | 0.15 | top | typewriter
+"JUKEBOX" | 0.15 | top | retro neon
+"NEON" | 0.15 | top | hand-drawn
+"BOTTOMS UP" | 0.15 | top | bar block
+"NIGHT SHIFT" | 0.15 | top | grunge condensed

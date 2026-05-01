@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+running shorts | 0.65 | 0.0-0.2 | polyester,nylon
+2-in-1 shorts | 0.50 | 0.0-0.2 | polyester,nylon,spandex
+compression shorts | 0.45 | 0.0-0.2 | spandex,nylon
+running tights | 0.60 | 0.0-0.2 | spandex,nylon
+
+# mid-casual
+running capris | 0.50 | 0.1-0.3 | spandex,nylon
+track pants | 0.45 | 0.1-0.3 | polyester,nylon
+fitted joggers | 0.45 | 0.1-0.3 | polyester,nylon
+trail tights | 0.40 | 0.1-0.3 | spandex,nylon

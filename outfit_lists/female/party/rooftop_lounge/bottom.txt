@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide-leg trousers | 0.55 | 0.4-0.6 | polyester,wool
+#color# slip skirt | 0.55 | 0.4-0.6 | satin,silk
+#color# bodycon midi | 0.55 | 0.4-0.6 | jersey
+#color# flared dress pants | 0.45 | 0.4-0.6 | polyester,wool
+#color# pleated mini | 0.50 | 0.4-0.6 | chiffon,satin
+#color# midi skirt | 0.55 | 0.4-0.6 | chiffon,silk
+#color# tailored shorts | 0.45 | 0.4-0.6 | linen,polyester
+#color# split-hem trousers | 0.40 | 0.4-0.6 | polyester
+#color# liquid culottes | 0.40 | 0.4-0.6 | satin
+#color# ruched midi | 0.45 | 0.4-0.6 | jersey,satin

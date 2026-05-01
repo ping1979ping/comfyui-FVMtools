@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floaty duster | 0.55 | 0.5-0.7 | chiffon
+gauzy kimono | 0.45 | 0.4-0.7 | silk
+evening robe | 0.50 | 0.5-0.7 | silk
+net overlay coat | 0.40 | 0.4-0.7 | mesh
+sheer-trim blazer | 0.45 | 0.5-0.7 | natural
+diaphanous wrap | 0.40 | 0.5-0.7 | chiffon
+satin-trim cape | 0.40 | 0.5-0.7 | satin

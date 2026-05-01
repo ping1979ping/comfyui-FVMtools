@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# clean column-cut bodice | 0.75 | 0.6-0.9 | crepe,satin
+#color# minimal halter bodice | 0.65 | 0.6-0.9 | crepe,satin
+#color# refined bandeau bodice | 0.60 | 0.6-0.9 | crepe,satin
+#color# simple v-neck bodice | 0.65 | 0.6-0.9 | crepe,satin
+#color# clean-line strapless bodice | 0.60 | 0.6-0.9 | crepe,satin
+#color# minimal one-shoulder bodice | 0.55 | 0.6-0.9 | crepe,satin
+#color# elegant slip-style top | 0.65 | 0.5-0.8 | silk,satin
+#color# refined sleeveless bodice | 0.55 | 0.6-0.9 | crepe,silk
+#color# bias-cut camisole | 0.50 | 0.5-0.8 | silk,crepe
+#color# minimal turtleneck top | 0.45 | 0.6-0.9 | crepe,wool

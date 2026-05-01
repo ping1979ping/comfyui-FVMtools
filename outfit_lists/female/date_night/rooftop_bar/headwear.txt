@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sleek hair clip | 0.15 | 0.5-0.7 | metal
+slim headband | 0.1 | 0.4-0.6 | satin,silk
+decorative pins | 0.1 | 0.5-0.7 | metal
+crystal barrette | 0.1 | 0.5-0.7 | metal

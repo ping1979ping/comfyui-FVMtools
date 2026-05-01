@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+graphic tee | 0.55 | 0.0-0.2 | cotton,jersey
+boxy crop | 0.45 | 0.0-0.2 | cotton,jersey
+oversized longline | 0.50 | 0.0-0.2 | cotton,jersey
+ribbed bodysuit | 0.45 | 0.0-0.3 | spandex,nylon
+sport bra | 0.45 | 0.0-0.2 | spandex,nylon
+
+# mid-casual
+hoodie | 0.55 | 0.1-0.3 | cotton,fleece
+zip pullover | 0.45 | 0.1-0.3 | nylon,polyester
+mock-neck top | 0.45 | 0.1-0.3 | spandex,nylon
+streetwear tee | 0.55 | 0.1-0.3 | cotton,jersey
+half-zip top | 0.40 | 0.1-0.3 | nylon,polyester

@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# bauble bracelet stack | 0.55 | 0.0-0.2 | beaded
+#color# small hoop earrings | 0.55 | 0.1-0.3 | metal
+#color# layered necklaces | 0.50 | 0.1-0.3 | metal
+#color# friendship anklet | 0.40 | 0.0-0.2 | beaded
+#color# campus lanyard | 0.30 | 0.0-0.2 | polyester
+#color# sunglasses on chain | 0.35 | 0.1-0.3 | metal,polyester
+#color# stud earrings | 0.45 | 0.1-0.3 | metal

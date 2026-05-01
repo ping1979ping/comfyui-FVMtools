@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flip-flops | 0.75 | 0.0-0.1 | rubber
+slide sandals | 0.70 | 0.0-0.2 | rubber
+flat sandals | 0.65 | 0.0-0.2 | leather,rubber
+poolside slides | 0.60 | 0.0-0.1 | rubber
+foam slip-ons | 0.50 | 0.0-0.1 | rubber
+strappy sandals | 0.45 | 0.1-0.3 | leather
+espadrille flats | 0.45 | 0.1-0.3 | cotton,straw
+woven slides | 0.45 | 0.0-0.2 | straw,leather
+metallic slides | 0.40 | 0.0-0.3 | leather,metal
+barefoot anklet | 0.30 | 0.0-0.1 | metal,cotton

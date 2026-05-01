@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# midi skirt | 0.70 | 0.4-0.6 | chiffon,cotton
+#color# wide-leg trousers | 0.50 | 0.4-0.6 | linen,cotton
+#color# pleated skirt | 0.55 | 0.4-0.6 | chiffon,polyester
+#color# culottes | 0.45 | 0.4-0.6 | linen,cotton
+#color# tea-length skirt | 0.50 | 0.4-0.6 | chiffon,silk
+#color# capri pants | 0.40 | 0.3-0.5 | cotton,linen
+#color# tiered maxi | 0.50 | 0.4-0.6 | cotton,chiffon
+#color# bermuda shorts | 0.35 | 0.3-0.5 | linen,cotton
+#color# a-line skirt | 0.55 | 0.4-0.6 | cotton,linen
+#color# straight-leg pants | 0.40 | 0.4-0.6 | linen

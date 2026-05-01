@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized beach tote | 0.70 | 0.0-0.2 | cotton,mesh
+pool tote | 0.60 | 0.0-0.2 | cotton,nylon
+fishnet bag | 0.50 | 0.0-0.1 | mesh
+woven woven bag | 0.55 | 0.0-0.2 | straw
+canvas bag | 0.50 | 0.0-0.2 | cotton
+clear molded tote | 0.40 | 0.0-0.2 | plastic
+small wristlet | 0.40 | 0.0-0.3 | cotton,nylon
+fringe shoulder bag | 0.35 | 0.0-0.3 | cotton

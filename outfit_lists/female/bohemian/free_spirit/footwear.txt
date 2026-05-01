@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+strappy sandals | 0.7 | 0.1-0.3 | leather,suede
+moccasins | 0.6 | 0.1-0.3 | suede,leather
+barefoot anklets | 0.5 | 0.0-0.3 | cotton,macrame
+woven slip-ons | 0.5 | 0.1-0.3 | hemp,cotton
+soft ankle boots | 0.5 | 0.2-0.4 | suede
+huarache sandals | 0.5 | 0.1-0.3 | leather
+beaded thongs | 0.4 | 0.1-0.3 | leather,cotton
+fringed loafers | 0.4 | 0.2-0.4 | suede
+canvas espadrilles | 0.5 | 0.1-0.3 | hemp,jute
+toe-ring sandals | 0.4 | 0.0-0.3 | leather

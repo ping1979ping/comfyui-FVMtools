@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tailored leather blazer | 0.55 | 0.4-0.7 | silk
+#color# velvet smoking jacket | 0.45 | 0.5-0.8 | silk
+#color# faux-fur shrug | 0.40 | 0.5-0.7 | faux_fur
+#color# sequined kimono | 0.30 | 0.5-0.7 | sequin,silk
+#color# silk wrap coat | 0.30 | 0.5-0.8 | satin

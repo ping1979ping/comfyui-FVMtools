@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embroidered tunic | 0.8 | 0.2-0.4 | cotton,raw silk
+folk blouse | 0.7 | 0.2-0.4 | cotton,linen
+ethnic kurta top | 0.7 | 0.2-0.4 | cotton,raw silk
+beaded peasant blouse | 0.6 | 0.2-0.4 | cotton,gauze
+mirrored bodice | 0.5 | 0.2-0.4 | cotton,velvet
+huipil-style top | 0.5 | 0.2-0.4 | cotton,linen
+tribal vest top | 0.4 | 0.1-0.3 | suede,cotton
+woven crop | 0.4 | 0.1-0.3 | cotton,hemp
+sashiko-stitched blouse | 0.4 | 0.2-0.4 | cotton,linen
+ikat blouse | 0.5 | 0.2-0.4 | cotton,raw silk
+banarasi-style top | 0.4 | 0.2-0.4 | raw silk,cotton
+batik-print top | 0.5 | 0.2-0.4 | cotton,rayon

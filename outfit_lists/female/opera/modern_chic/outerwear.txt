@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# minimalist cashmere wrap | 0.70 | 0.6-0.9 | cashmere
+#color# sleek tuxedo blazer | 0.55 | 0.7-1.0 | wool,crepe
+#color# fluid silk shawl | 0.75 | 0.6-0.9 | silk,chiffon
+#color# modern asymmetric cape | 0.50 | 0.7-1.0 | crepe,silk
+#color# longline duster coat | 0.45 | 0.7-1.0 | crepe,silk
+#color# architectural bolero | 0.40 | 0.7-1.0 | crepe
+#color# minimalist evening coat | 0.50 | 0.7-1.0 | crepe,satin
+#color# fitted cropped jacket | 0.35 | 0.7-0.9 | crepe,wool

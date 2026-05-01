@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FRESHMAN" | 0.15 | top | varsity print
+"SENIOR YEAR" | 0.15 | top | varsity print
+"GAME DAY" | 0.20 | top | block letters
+"CAMPUS" | 0.20 | top | bold sans-serif
+"LIT" | 0.20 | top | graffiti
+"SQUAD GOALS" | 0.15 | top | hand lettered
+"FRAT NIGHT" | 0.15 | top | block letters
+"DORM LIFE" | 0.10 | top | hand lettered
+"WEEKEND" | 0.20 | top | varsity print

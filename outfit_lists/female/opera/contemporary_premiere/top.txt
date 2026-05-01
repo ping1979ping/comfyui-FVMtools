@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# avant-garde sculptural bodice | 0.55 | 0.7-1.0 | crepe,satin
+#color# bold cutout bustier | 0.60 | 0.7-1.0 | satin,crepe
+#color# dramatic one-shoulder bodice | 0.65 | 0.7-1.0 | crepe,satin
+#color# asymmetric ruffled bodice | 0.55 | 0.7-1.0 | silk,organza
+#color# corset-style bustier with ties | 0.50 | 0.7-1.0 | satin,crepe
+#color# plunging halter bodice | 0.60 | 0.7-1.0 | satin,crepe
+#color# statement puff-sleeve top | 0.50 | 0.7-1.0 | taffeta,organza
+#color# bias-cut deep-v bodice | 0.55 | 0.7-1.0 | silk,satin
+#color# illusion mesh-paneled bodice | 0.45 | 0.7-1.0 | crepe,organza
+#color# architectural strapless bodice | 0.50 | 0.7-1.0 | crepe,satin
+#color# draped grecian bodice | 0.55 | 0.7-1.0 | silk,chiffon

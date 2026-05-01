@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pearl strand | 0.55 | 0.5-0.7 | beaded
+#color# diamond studs | 0.55 | 0.5-0.7 | metal
+#color# tennis bracelet | 0.45 | 0.5-0.7 | metal
+#color# delicate pendant | 0.50 | 0.5-0.7 | metal
+#color# drop earrings | 0.50 | 0.5-0.7 | metal
+#color# slim watch | 0.40 | 0.5-0.7 | metal
+#color# pocket scarf | 0.30 | 0.5-0.7 | silk

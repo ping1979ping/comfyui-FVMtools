@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bandeau bikini top | 0.70 | 0.0-0.1 | nylon,polyester
+halter bikini top | 0.65 | 0.0-0.1 | nylon,polyester
+triangle bikini top | 0.70 | 0.0-0.1 | nylon,polyester
+ruffled bikini top | 0.45 | 0.0-0.1 | nylon,polyester
+crop top | 0.60 | 0.0-0.2 | cotton,linen,crochet
+halter | 0.55 | 0.0-0.2 | crochet,cotton
+off-shoulder blouse | 0.50 | 0.1-0.3 | cotton,linen
+peasant blouse | 0.45 | 0.1-0.3 | cotton,linen
+wrap top | 0.50 | 0.1-0.3 | linen,cotton
+flowy camisole | 0.55 | 0.1-0.3 | viscose,linen
+sleeveless tunic | 0.40 | 0.1-0.3 | linen,cotton
+ruched bandeau | 0.40 | 0.0-0.1 | nylon,polyester
+tube top | 0.45 | 0.0-0.2 | cotton,viscose
+bralette | 0.50 | 0.0-0.2 | cotton,crochet
+tied front shirt | 0.45 | 0.1-0.3 | linen,cotton

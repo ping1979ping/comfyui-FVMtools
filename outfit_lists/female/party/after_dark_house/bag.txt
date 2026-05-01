@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# rave fanny pack | 0.65 | 0.1-0.3 | nylon
+#color# holographic mini | 0.50 | 0.2-0.4 | metallic
+#color# transparent crossbody | 0.45 | 0.2-0.4 | vinyl
+#color# fluffy pouch | 0.35 | 0.1-0.3 | faux_fur
+#color# chain-strap micro | 0.40 | 0.2-0.4 | metal
+#color# led-strap belt bag | 0.30 | 0.2-0.4 | nylon,polyester
+#color# tech harness pouch | 0.30 | 0.2-0.4 | nylon

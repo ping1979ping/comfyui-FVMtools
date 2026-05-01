@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fitness ring | 0.50 | 0.0-0.3 | metal
+sleek smartwatch | 0.55 | 0.0-0.4 | metal
+hair scrunchie | 0.50 | 0.0-0.2 | satin,cotton
+delicate stud earrings | 0.45 | 0.0-0.3 | metal
+sport headband | 0.45 | 0.0-0.2 | nylon,spandex
+
+# mid-casual
+minimal hoops | 0.40 | 0.1-0.3 | metal
+delicate chain | 0.40 | 0.1-0.3 | metal
+modern shades | 0.45 | 0.1-0.4 | acetate

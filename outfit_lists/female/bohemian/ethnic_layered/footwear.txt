@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embroidered juttis | 0.7 | 0.2-0.4 | cotton,raw silk
+beaded mules | 0.5 | 0.2-0.4 | cotton,leather
+woven huaraches | 0.5 | 0.1-0.3 | leather
+ethnic flats | 0.5 | 0.2-0.4 | cotton,leather
+mojari shoes | 0.5 | 0.2-0.4 | leather
+peasant clogs | 0.4 | 0.2-0.4 | leather
+ankle wrap sandals | 0.5 | 0.1-0.3 | leather
+beaded sandals | 0.4 | 0.1-0.3 | leather
+tassel slippers | 0.4 | 0.1-0.3 | cotton,raw silk

@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.3 | natural | medium
+denim | 0.3 | natural | medium
+corduroy | 0.3 | natural | medium
+gauze | 0.2 | natural | light
+chiffon | 0.4 | synthetic | light
+suede | 0.3 | animal | medium
+leather | 0.3 | animal | medium
+wool | 0.4 | animal | medium
+hemp | 0.2 | natural | medium
+rayon | 0.3 | synthetic | light
+raw silk | 0.4 | natural | light
+velvet | 0.4 | mixed | medium
+faux fur | 0.4 | synthetic | medium
+cork | 0.3 | natural | medium
+metal | 0.4 | mineral | light
+resin | 0.4 | synthetic | light

@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# faux fur shrug | 0.30 | 0.2-0.4 | faux_fur
+#color# pvc jacket | 0.25 | 0.2-0.4 | vinyl
+#color# net kimono | 0.30 | 0.2-0.4 | mesh
+#color# light-up vest | 0.20 | 0.2-0.4 | polyester
+#color# reflective windbreaker | 0.30 | 0.2-0.4 | nylon,polyester

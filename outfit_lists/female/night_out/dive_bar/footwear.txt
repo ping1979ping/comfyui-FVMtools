@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# combat boots | 0.75 | 0.2-0.5 | leather
+#color# beat-up sneakers | 0.55 | 0.2-0.4 | canvas
+#color# chunky platform boots | 0.55 | 0.2-0.5 | leather
+#color# studded ankle boots | 0.50 | 0.2-0.5 | leather
+#color# scuffed converse-style sneakers | 0.50 | 0.2-0.4 | canvas
+#color# pointed-toe ankle booties | 0.40 | 0.2-0.5 | leather,suede

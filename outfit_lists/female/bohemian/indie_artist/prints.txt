@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+band logo | 0.6 | top | 0.0-0.3
+graphic illustration | 0.5 | top,outerwear,bag | 0.0-0.3
+abstract paint splatter | 0.5 | top,bottom | 0.0-0.3
+vintage typography | 0.5 | top | 0.0-0.3
+floral embroidery | 0.4 | top,outerwear,bag | 0.1-0.4
+patchwork blocks | 0.4 | bottom,outerwear,bag | 0.1-0.4
+striped pattern | 0.4 | top,bottom | 0.1-0.4
+checkered grid | 0.4 | top,bottom,outerwear | 0.1-0.3
+hand-drawn motif | 0.4 | top,bag | 0.0-0.3
+tie-dye swirls | 0.3 | top,bottom | 0.0-0.3

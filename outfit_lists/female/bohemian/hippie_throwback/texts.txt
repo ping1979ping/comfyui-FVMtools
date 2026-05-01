@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PEACE" | 0.25 | top | groovy bubble
+"LOVE" | 0.25 | top | groovy
+"WOODSTOCK" | 0.2 | top | psychedelic
+"GROOVY" | 0.2 | top | 70s bubble
+"FAR OUT" | 0.2 | top | psychedelic
+"FLOWER POWER" | 0.2 | top | groovy bubble
+"HIPPIE" | 0.15 | top | retro
+"GOOD VIBES" | 0.2 | top | 70s

@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pearl drop earrings | 0.70 | 0.5-0.8 | metal
+#color# delicate gold chain | 0.60 | 0.5-0.8 | metal
+#color# crystal bracelet | 0.50 | 0.5-0.8 | metal
+#color# cocktail signet ring | 0.40 | 0.5-0.8 | metal
+#color# velvet ribbon choker | 0.40 | 0.5-0.7 | metal
+#color# diamond stud earrings | 0.55 | 0.5-0.8 | metal
+#color# slim cuff bracelet | 0.30 | 0.5-0.7 | metal

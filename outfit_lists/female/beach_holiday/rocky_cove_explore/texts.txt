@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"EXPLORE" | 0.20 | top | bold sans
+"COASTAL TRAIL" | 0.20 | top | block letters
+"WILD COAST" | 0.20 | top | bold serif
+"OFF GRID" | 0.20 | top | distressed
+"SEEK ADVENTURE" | 0.15 | top | bold sans
+"COVE CHASER" | 0.15 | top | retro outdoor

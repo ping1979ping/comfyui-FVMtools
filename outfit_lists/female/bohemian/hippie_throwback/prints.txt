@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+psychedelic swirl | 0.7 | top,bottom,outerwear | 0.0-0.3
+tie-dye spiral | 0.6 | top,bottom | 0.0-0.3
+flower power motif | 0.6 | top,bottom,bag | 0.0-0.3
+peace-sign motif | 0.5 | top,bag,outerwear | 0.0-0.3
+groovy paisley | 0.5 | top,bottom,bag | 0.1-0.4
+70s geometric | 0.5 | top,bottom | 0.0-0.3
+mushroom motif | 0.4 | top,bag | 0.0-0.3
+sun and moon | 0.4 | top,bottom | 0.0-0.3
+patchwork blocks | 0.4 | bottom,outerwear,bag | 0.1-0.4
+fringed trim | 0.5 | top,outerwear,bag | 0.0-0.3
+zodiac symbols | 0.3 | top,bag | 0.0-0.3

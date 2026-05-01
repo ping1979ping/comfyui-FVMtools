@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# midi tutu | 0.60 | 0.4-0.6 | tulle
+#color# pleated skirt | 0.55 | 0.4-0.6 | chiffon,satin
+#color# liquid slip skirt | 0.55 | 0.4-0.6 | satin
+#color# wide-leg dress trousers | 0.45 | 0.5-0.7 | wool,polyester
+#color# bodycon midi | 0.55 | 0.4-0.6 | jersey,satin
+#color# tiered party skirt | 0.45 | 0.4-0.6 | chiffon,tulle
+#color# plush flares | 0.40 | 0.4-0.6 | velvet
+#color# sparkle hot pants | 0.40 | 0.3-0.5 | sequin
+#color# pleated mini | 0.50 | 0.3-0.5 | chiffon,satin
+#color# embellished palazzo | 0.40 | 0.5-0.7 | satin,polyester

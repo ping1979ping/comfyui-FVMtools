@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+seamless ribbing | 0.4 | top,bottom | 0.0-0.3
+contour panel | 0.4 | top,bottom | 0.0-0.3
+solid pastel | 0.5 | top,bottom,outerwear | 0.0-0.4
+sage tone | 0.4 | top,bottom | 0.0-0.4
+muted blush | 0.4 | top,bottom | 0.0-0.4
+sculpting seams | 0.4 | top,bottom | 0.0-0.3
+butter-soft finish | 0.4 | top,bottom | 0.0-0.3
+crossover detail | 0.3 | top,bottom | 0.0-0.3
+cutout detail | 0.3 | top | 0.0-0.3
+tonal stitching | 0.4 | top,bottom | 0.0-0.4

@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flower crown | 0.7 | 0.0-0.3 | cotton,resin
+straw bonnet | 0.6 | 0.2-0.4 | straw,cotton
+ribbon headband | 0.6 | 0.0-0.3 | satin,velvet
+romantic veil | 0.4 | 0.2-0.4 | gauze,chiffon

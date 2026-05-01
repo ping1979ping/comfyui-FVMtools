@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mini backpack | 0.65 | 0.3-0.5 | leather
+crossbody sling | 0.65 | 0.3-0.6 | leather
+sleek belt bag | 0.55 | 0.3-0.6 | leather
+sport tote | 0.50 | 0.3-0.5 | natural
+small pouch | 0.45 | 0.3-0.5 | leather
+streamlined shoulder bag | 0.50 | 0.3-0.6 | leather
+chic gym bag | 0.40 | 0.3-0.5 | natural

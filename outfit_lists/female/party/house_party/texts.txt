@@ -1,0 +1,8 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VIBES" | 0.20 | top | bold sans-serif
+"WEEKEND" | 0.20 | top | retro print
+"GOOD TIMES" | 0.15 | top | cursive script
+"FRIDAY MOOD" | 0.15 | top | bold sans-serif
+"NO PLANS" | 0.15 | top | retro print
+"HOMEMADE FUN" | 0.10 | top | varsity print
+"CHILL" | 0.20 | top | block letters

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tropical leaf print | 0.50 | top,bottom | 0.0-0.3
+hibiscus motif | 0.45 | top,bottom | 0.0-0.3
+cocktail icon pattern | 0.35 | top,accessories | 0.0-0.3
+pineapple motif | 0.35 | top,bottom | 0.0-0.3
+flamingo silhouette | 0.30 | top,bottom | 0.0-0.3
+pool tile pattern | 0.30 | top,bottom | 0.0-0.3
+ombre effect | 0.40 | top,bottom | 0.0-0.4
+polka dots | 0.35 | top,bottom | 0.0-0.4
+nautical stripes | 0.40 | top,bottom | 0.1-0.4
+floral print | 0.40 | top,bottom | 0.0-0.4

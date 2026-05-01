@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ditsy floral | 0.5 | top,bottom | 0.3-0.6
+gingham check | 0.4 | top,bottom | 0.3-0.6
+breton stripes | 0.4 | top | 0.3-0.6
+small polka dots | 0.4 | top | 0.3-0.6
+pastel watercolor | 0.3 | top | 0.3-0.6
+broderie anglaise | 0.3 | top | 0.4-0.6
+soft tie-dye | 0.3 | top | 0.3-0.5
+gauzy embroidery | 0.3 | top | 0.4-0.6
+washed denim | 0.4 | bottom | 0.3-0.5
+provencal motif | 0.3 | top | 0.3-0.6

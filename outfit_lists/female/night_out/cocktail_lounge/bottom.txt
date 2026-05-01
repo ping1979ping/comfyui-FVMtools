@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pencil cocktail skirt | 0.70 | 0.5-0.8 | satin,velvet
+#color# midi wrap skirt | 0.55 | 0.5-0.8 | silk,satin
+#color# pleated midi skirt | 0.50 | 0.5-0.8 | chiffon,silk
+#color# satin tuxedo trousers | 0.55 | 0.5-0.8 | silk
+#color# velvet cigarette pants | 0.50 | 0.5-0.8 | silk
+#color# wide-leg crepe pants | 0.45 | 0.5-0.8 | silk
+#color# tailored cropped pants | 0.50 | 0.5-0.7 | crepe,satin
+#color# bias-cut midi skirt | 0.50 | 0.5-0.8 | silk,satin
+#color# mid-thigh A-line skirt | 0.55 | 0.5-0.7 | satin,velvet
+#color# high-waist palazzo pants | 0.40 | 0.5-0.8 | chiffon,silk

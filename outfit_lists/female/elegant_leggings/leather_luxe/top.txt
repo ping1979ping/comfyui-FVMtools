@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+corset top | 0.70 | 0.4-0.7 | satin,velvet
+fitted turtleneck | 0.75 | 0.4-0.7 | jersey
+draped camisole | 0.65 | 0.5-0.7 | silk
+draped blouse | 0.60 | 0.5-0.7 | silk,satin
+sheer mock-neck | 0.50 | 0.4-0.7 | chiffon
+fitted bodysuit | 0.60 | 0.4-0.7 | jersey
+oversized shirt | 0.55 | 0.4-0.6 | silk
+draped halter | 0.50 | 0.4-0.7 | satin,silk
+cropped cami | 0.55 | 0.4-0.7 | silk
+ribbed tank | 0.55 | 0.4-0.7 | jersey
+sleek cropped sweater | 0.55 | 0.4-0.7 | natural
+draped wrap top | 0.50 | 0.4-0.7 | silk

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowing kimono | 0.50 | 0.0-0.2 | cotton,viscose
+sheer cover-up | 0.55 | 0.0-0.2 | mesh,viscose
+knit-style duster | 0.40 | 0.0-0.2 | crochet
+long kaftan | 0.45 | 0.1-0.3 | linen
+beach robe | 0.40 | 0.0-0.2 | cotton,viscose
+embroidered tunic | 0.35 | 0.1-0.3 | cotton,linen
+fringe shawl | 0.30 | 0.0-0.2 | cotton,viscose
+sheer shrug | 0.30 | 0.1-0.3 | mesh,viscose
+boho cardigan | 0.30 | 0.1-0.3 | crochet,cotton
+batik wrap | 0.30 | 0.0-0.2 | viscose,cotton

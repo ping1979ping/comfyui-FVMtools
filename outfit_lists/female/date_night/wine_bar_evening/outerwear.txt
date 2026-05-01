@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+trench coat | 0.5 | 0.5-0.7 | wool blend,cotton
+fitted blazer | 0.6 | 0.5-0.7 | wool blend,crepe
+moto jacket | 0.4 | 0.4-0.6 | leather,suede
+duster coat | 0.4 | 0.5-0.7 | wool blend
+oversized cardigan | 0.4 | 0.4-0.6 | cashmere,wool blend
+camel coat | 0.4 | 0.5-0.7 | wool blend,cashmere
+draped wrap | 0.3 | 0.5-0.7 | cashmere,charmeuse
+shacket | 0.3 | 0.4-0.6 | wool blend

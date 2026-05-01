@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+diamante sparkle | 0.70 | top,bottom,accessories | 0.3-0.7
+mirror-tile reflection | 0.55 | top,bag | 0.3-0.7
+metallic gold sheen | 0.65 | top,bottom,bag | 0.4-0.7
+showgirl plumes | 0.50 | top,outerwear | 0.3-0.6
+neon casino motif | 0.40 | top,bag | 0.3-0.5
+liquid silver finish | 0.55 | top,bottom | 0.4-0.7
+crystal cluster | 0.60 | top,accessories | 0.4-0.7
+dice and card motif | 0.30 | bag,accessories | 0.3-0.5
+all-over fringe | 0.40 | top,bottom | 0.3-0.6
+showgirl beaded panel | 0.50 | top,outerwear | 0.4-0.7

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+caramel tone | 0.55 | top,bottom,outerwear | 0.4-0.7
+warm camel | 0.55 | bottom,outerwear,bag | 0.4-0.7
+brushed texture | 0.50 | bottom,outerwear | 0.4-0.7
+matte finish | 0.55 | bottom,top | 0.4-0.7
+chocolate hue | 0.45 | bottom,outerwear | 0.4-0.7
+amber tone | 0.40 | top,accessories | 0.4-0.7
+warm taupe | 0.45 | top,outerwear | 0.4-0.7
+soft fawn | 0.40 | outerwear,top | 0.4-0.7
+plain russet | 0.40 | outerwear,top | 0.4-0.7

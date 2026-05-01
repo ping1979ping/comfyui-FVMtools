@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SUNSHINE" | 0.20 | top | flowing script
+"WANDERLUST" | 0.20 | top | boho serif
+"SEASIDE" | 0.20 | top | classic serif
+"OCEAN AIR" | 0.15 | top | flowing script
+"SUN KISSED" | 0.20 | top | bold script
+"GOLDEN HOUR" | 0.15 | top | refined serif

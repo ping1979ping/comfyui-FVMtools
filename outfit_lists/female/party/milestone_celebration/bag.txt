@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pearl clutch | 0.55 | 0.4-0.6 | beaded,satin
+#color# crystal minaudiere | 0.50 | 0.4-0.6 | beaded
+#color# chain-strap shoulder | 0.50 | 0.4-0.6 | faux_leather
+#color# evening envelope | 0.45 | 0.4-0.6 | satin
+#color# bow-trim purse | 0.35 | 0.4-0.6 | satin,velvet
+#color# bauble wristlet | 0.40 | 0.4-0.6 | beaded
+#color# embroidered pouch | 0.35 | 0.4-0.6 | beaded,satin
+#color# heart-shaped clutch | 0.30 | 0.3-0.5 | satin,velvet

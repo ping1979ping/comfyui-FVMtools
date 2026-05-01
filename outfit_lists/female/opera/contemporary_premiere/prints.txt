@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+abstract painterly motif | 0.30 | top,bottom | 0.7-1.0
+bold geometric pattern | 0.25 | top,bottom | 0.7-1.0
+metallic foil accent | 0.30 | top,outerwear | 0.7-1.0
+asymmetric color-block | 0.30 | top,bottom | 0.7-1.0
+modern sequin scatter | 0.30 | top,bottom | 0.7-1.0
+sculptural pleat detail | 0.25 | top,bottom | 0.7-1.0
+abstract brushstroke motif | 0.25 | top,outerwear | 0.7-1.0
+oversized polka motif | 0.20 | top,outerwear | 0.6-0.9
+modern jacquard weave | 0.30 | top,bottom | 0.7-1.0
+dramatic ombre fade | 0.30 | top,bottom | 0.7-1.0

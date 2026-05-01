@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# rave shorts | 0.75 | 0.1-0.3 | sequin,jersey
+#color# bike shorts | 0.55 | 0.1-0.3 | jersey,polyester
+#color# pvc mini | 0.50 | 0.2-0.4 | vinyl
+#color# fishnet leggings | 0.45 | 0.2-0.4 | mesh
+#color# rave booty shorts | 0.55 | 0.1-0.3 | sequin,jersey
+#color# pleated tennis skirt | 0.40 | 0.1-0.3 | polyester
+#color# hologram skirt | 0.45 | 0.2-0.4 | metallic
+#color# cargo rave pants | 0.40 | 0.1-0.3 | nylon,polyester
+#color# cyber leggings | 0.45 | 0.2-0.4 | jersey,mesh
+#color# chainmail mini-skirt | 0.35 | 0.2-0.4 | metal

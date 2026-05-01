@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# distressed cutoffs | 0.75 | 0.1-0.3 | denim
+#color# mini skirt | 0.65 | 0.2-0.4 | denim,jersey
+#color# yoga shorts | 0.45 | 0.1-0.3 | jersey,polyester
+#color# pleated tennis skirt | 0.50 | 0.2-0.4 | polyester
+#color# low-rise jeans | 0.55 | 0.1-0.3 | denim
+#color# ruched mini | 0.50 | 0.2-0.4 | jersey
+#color# wide-leg sweats | 0.40 | 0.0-0.2 | cotton,fleece
+#color# joggers | 0.35 | 0.0-0.2 | cotton,polyester
+#color# party shorts | 0.50 | 0.2-0.4 | denim,jersey
+#color# bodycon mini | 0.50 | 0.2-0.4 | jersey

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# crystal-encrusted clutch | 0.80 | 0.4-0.7 | sequin,metal
+#color# feathered evening pouch | 0.50 | 0.4-0.6 | feather,satin
+#color# metallic minaudiere | 0.55 | 0.4-0.7 | metal,satin
+#color# rhinestone wristlet | 0.55 | 0.3-0.6 | sequin
+#color# fringed mini bag | 0.40 | 0.3-0.5 | suede
+#color# mirror-mosaic clutch | 0.45 | 0.4-0.7 | metal,sequin
+#color# beaded chain bag | 0.50 | 0.4-0.6 | sequin,metal
+#color# disco-ball novelty bag | 0.35 | 0.3-0.6 | metal,sequin

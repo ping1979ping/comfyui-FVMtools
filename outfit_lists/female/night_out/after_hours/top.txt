@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sleek bodysuit | 0.75 | 0.3-0.6 | jersey,mesh
+#color# ribbed crop top | 0.60 | 0.3-0.5 | jersey
+#color# sheer mesh top | 0.55 | 0.3-0.5 | jersey
+#color# leather corset | 0.55 | 0.3-0.6 | satin
+#color# long-sleeve cutout top | 0.55 | 0.3-0.6 | jersey,mesh
+#color# strapless tube blouse | 0.50 | 0.3-0.6 | satin,jersey
+#color# asymmetric cropped tank | 0.50 | 0.3-0.5 | jersey
+#color# bonded second-skin top | 0.55 | 0.3-0.6 | jersey,vinyl
+#color# fitted backless top | 0.50 | 0.3-0.6 | satin,silk
+#color# minimal halter | 0.55 | 0.3-0.6 | satin,jersey
+#color# hooded crop pullover | 0.45 | 0.3-0.5 | jersey,cotton

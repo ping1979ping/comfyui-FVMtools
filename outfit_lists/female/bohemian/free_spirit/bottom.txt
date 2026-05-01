@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flowing maxi skirt | 0.8 | 0.2-0.4 | cotton,gauze,chiffon
+wide-leg pants | 0.7 | 0.2-0.4 | linen,cotton
+harem pants | 0.6 | 0.1-0.3 | cotton,gauze
+flared trousers | 0.6 | 0.2-0.4 | cotton,linen
+patchwork skirt | 0.5 | 0.2-0.4 | cotton,linen
+tiered ruffle skirt | 0.5 | 0.2-0.4 | cotton,gauze
+loose drawstring pants | 0.5 | 0.1-0.3 | cotton,linen,hemp
+breezy palazzo | 0.5 | 0.2-0.4 | linen,chiffon
+gypsy skirt | 0.5 | 0.2-0.4 | cotton,gauze
+relaxed culottes | 0.4 | 0.2-0.4 | linen,cotton
+flowing wrap skirt | 0.4 | 0.2-0.4 | cotton,raw silk

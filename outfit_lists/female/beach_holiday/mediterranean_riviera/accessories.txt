@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+retro sunglasses | 0.80 | 0.0-0.3 | plastic
+cat-eye sunglasses | 0.55 | 0.0-0.3 | plastic
+pearl necklace | 0.45 | 0.2-0.4 | shell
+gold chain | 0.55 | 0.1-0.4 | metal
+delicate bracelet | 0.45 | 0.1-0.3 | metal
+drapey neckscarf | 0.40 | 0.1-0.4 | silk,viscose
+gold hoop earrings | 0.55 | 0.1-0.4 | metal
+designer belt | 0.40 | 0.2-0.4 | leather
+elegant wristwatch | 0.40 | 0.2-0.4 | metal
+statement ring | 0.35 | 0.1-0.4 | metal
+chic anklet | 0.35 | 0.0-0.2 | metal

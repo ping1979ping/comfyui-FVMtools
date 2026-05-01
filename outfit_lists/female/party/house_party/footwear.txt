@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sneakers | 0.70 | 0.1-0.3 | canvas,leather
+#color# block heels | 0.55 | 0.3-0.5 | leather,suede
+#color# ankle boots | 0.50 | 0.2-0.4 | leather,suede
+#color# strappy sandals | 0.45 | 0.3-0.5 | leather
+#color# slip-on flats | 0.40 | 0.2-0.4 | leather,canvas
+#color# platform mules | 0.35 | 0.3-0.5 | leather,suede
+#color# kitten heels | 0.30 | 0.3-0.5 | leather

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+small floral | 0.4 | top,bottom | 0.3-0.6
+thin stripes | 0.4 | top | 0.3-0.6
+gingham check | 0.3 | top | 0.3-0.5
+polka dots | 0.3 | top | 0.3-0.5
+plaid pattern | 0.3 | top,outerwear | 0.3-0.6
+tonal embroidery | 0.3 | top | 0.3-0.6
+washed effect | 0.4 | bottom | 0.3-0.5
+subtle texture | 0.3 | top,outerwear | 0.3-0.6
+ditsy print | 0.3 | top | 0.3-0.5
+pinstripe detail | 0.2 | bottom,outerwear | 0.4-0.6

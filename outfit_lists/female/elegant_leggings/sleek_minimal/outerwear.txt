@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+camel overcoat | 0.65 | 0.5-0.7 | natural
+tailored blazer | 0.65 | 0.5-0.7 | natural
+longline coat | 0.55 | 0.5-0.7 | natural
+clean-line trench | 0.50 | 0.5-0.7 | natural
+boyfriend blazer | 0.55 | 0.4-0.6 | natural
+unstructured cardigan | 0.45 | 0.3-0.6 | natural
+duster coat | 0.40 | 0.5-0.7 | natural
+streamlined parka | 0.30 | 0.3-0.5 | natural

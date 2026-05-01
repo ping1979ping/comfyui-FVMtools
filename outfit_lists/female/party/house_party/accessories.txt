@@ -1,0 +1,9 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# layered necklace | 0.55 | 0.2-0.4 | metal
+#color# hoop earrings | 0.65 | 0.1-0.3 | metal
+#color# stack rings | 0.45 | 0.1-0.3 | metal
+#color# stud earrings | 0.50 | 0.1-0.3 | metal
+#color# anklet | 0.30 | 0.1-0.3 | metal
+#color# wrist cuff | 0.35 | 0.2-0.4 | metal

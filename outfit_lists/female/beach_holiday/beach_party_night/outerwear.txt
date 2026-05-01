@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer kimono | 0.45 | 0.0-0.2 | mesh,viscose
+sequined jacket | 0.40 | 0.2-0.4 | polyester
+fringe shawl | 0.35 | 0.1-0.3 | suede,viscose
+metallic bolero | 0.30 | 0.1-0.3 | polyester
+fluid wrap | 0.40 | 0.1-0.3 | silk,viscose
+beaded cape | 0.30 | 0.2-0.4 | polyester,cotton
+open-knit duster | 0.35 | 0.1-0.3 | mesh
+embroidered shrug | 0.35 | 0.1-0.3 | cotton,viscose
+glitter cardigan | 0.30 | 0.1-0.3 | polyester
+neon open-knit cover-up | 0.30 | 0.0-0.2 | mesh

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beaded blouse | 0.75 | 0.5-0.8 | silk,satin
+embroidered camisole | 0.70 | 0.5-0.7 | silk
+jewel-trim bodysuit | 0.65 | 0.5-0.8 | jersey
+sequinned tank | 0.65 | 0.5-0.8 | satin
+lace-paneled blouse | 0.65 | 0.4-0.7 | lace
+crystal-detail halter | 0.55 | 0.5-0.8 | satin
+ornate bustier | 0.55 | 0.5-0.7 | satin,velvet
+pearl-encrusted top | 0.50 | 0.5-0.8 | silk
+brocade cropped top | 0.55 | 0.5-0.7 | satin
+embellished off-shoulder | 0.55 | 0.5-0.8 | silk
+beaded wrap top | 0.50 | 0.5-0.7 | silk
+ornate halter | 0.50 | 0.5-0.8 | satin

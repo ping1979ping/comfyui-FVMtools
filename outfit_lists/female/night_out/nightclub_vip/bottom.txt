@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# leather pencil skirt | 0.70 | 0.4-0.7 | silk
+#color# satin bodycon mini | 0.75 | 0.5-0.8 | jersey
+#color# velvet cigarette pants | 0.55 | 0.5-0.8 | silk
+#color# silk wide-leg trousers | 0.50 | 0.5-0.8 | satin
+#color# mid-thigh slip skirt | 0.60 | 0.5-0.8 | silk,satin
+#color# tailored crepe shorts | 0.45 | 0.5-0.7 | silk
+#color# beaded mini skirt | 0.55 | 0.5-0.8 | sequin
+#color# high-slit maxi skirt | 0.50 | 0.5-0.8 | silk,satin

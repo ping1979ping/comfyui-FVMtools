@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+cropped blazer | 0.5 | 0.5-0.7 | crepe,wool blend
+moto jacket | 0.4 | 0.4-0.6 | leather,suede
+sheer kimono | 0.3 | 0.4-0.6 | chiffon,silk
+draped wrap | 0.3 | 0.5-0.7 | silk,cashmere
+fitted blazer | 0.5 | 0.5-0.7 | crepe,wool blend
+cropped cardigan | 0.3 | 0.4-0.6 | cashmere,wool blend
+pashmina wrap | 0.2 | 0.5-0.7 | cashmere,silk

@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# minimal pointed-toe pumps | 0.95 | 0.6-0.9 | leather,satin
+#color# clean strappy sandals | 0.80 | 0.6-0.9 | leather,satin
+#color# refined kitten heels | 0.65 | 0.5-0.8 | leather,satin
+#color# barely-there heeled sandals | 0.65 | 0.6-0.9 | leather,satin
+#color# simple square-toe pumps | 0.55 | 0.6-0.9 | leather
+#color# slingback heels | 0.55 | 0.6-0.9 | leather,satin
+#color# block-heel court shoes | 0.45 | 0.5-0.8 | leather
+#color# minimal mule heels | 0.40 | 0.5-0.8 | leather

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+waterproof dry bag | 0.65 | 0.0-0.2 | nylon,plastic
+canvas backpack | 0.55 | 0.0-0.2 | cotton
+roll-top tote | 0.45 | 0.0-0.2 | nylon
+open-weave duffel | 0.50 | 0.0-0.1 | mesh
+oversized beach tote | 0.55 | 0.0-0.2 | cotton,mesh
+hemp shoulder bag | 0.40 | 0.0-0.2 | cotton
+crossbody surf pouch | 0.40 | 0.0-0.2 | nylon
+small wristlet | 0.35 | 0.0-0.2 | nylon

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# braided tote | 0.55 | 0.3-0.5 | straw
+#color# wicker basket | 0.40 | 0.3-0.5 | wicker
+#color# canvas crossbody | 0.45 | 0.3-0.5 | canvas
+#color# tote satchel | 0.40 | 0.4-0.6 | leather
+#color# embroidered pouch | 0.35 | 0.4-0.6 | cotton,linen
+#color# pearl-handled clutch | 0.30 | 0.5-0.7 | satin,beaded
+#color# woven bucket | 0.30 | 0.3-0.5 | raffia
+#color# bauble mini | 0.30 | 0.4-0.6 | beaded

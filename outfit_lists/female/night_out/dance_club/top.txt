@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sequined crop top | 0.80 | 0.3-0.6 | sequin,mesh
+#color# halter bralette | 0.70 | 0.3-0.6 | satin,jersey
+#color# mesh long-sleeve top | 0.60 | 0.3-0.6 | sequin
+#color# strappy bodysuit | 0.65 | 0.3-0.6 | jersey,mesh
+#color# tube top | 0.55 | 0.3-0.5 | satin,jersey
+#color# one-shoulder cutout top | 0.55 | 0.3-0.6 | jersey,mesh
+#color# corset bustier | 0.60 | 0.3-0.6 | satin,vinyl
+#color# off-shoulder dance top | 0.50 | 0.3-0.6 | jersey,mesh
+#color# crop tank with chains | 0.45 | 0.3-0.5 | jersey,metal
+#color# backless cami | 0.55 | 0.3-0.6 | satin,silk
+#color# cropped mesh shirt | 0.50 | 0.3-0.5 | sequin
+#color# bandeau crop | 0.45 | 0.3-0.5 | jersey,satin

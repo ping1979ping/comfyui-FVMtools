@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+walking shoes | 0.65 | 0.0-0.3 | mesh,nylon
+slip-on flats | 0.50 | 0.0-0.3 | canvas,cotton
+comfort sandals | 0.50 | 0.0-0.2 | rubber,foam
+
+# mid-casual
+casual loafers | 0.45 | 0.2-0.4 | suede,canvas
+canvas sneakers | 0.55 | 0.0-0.3 | cotton
+white trainers | 0.50 | 0.1-0.4 | mesh,nylon
+ballet flats | 0.40 | 0.2-0.4 | suede,satin

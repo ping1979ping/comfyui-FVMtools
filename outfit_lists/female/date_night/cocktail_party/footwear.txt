@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+strappy stilettos | 0.7 | 0.6-0.8 | suede,charmeuse
+classic pumps | 0.6 | 0.5-0.7 | suede,patent
+slingback heels | 0.5 | 0.5-0.7 | suede
+ankle-strap heels | 0.5 | 0.5-0.7 | suede,charmeuse
+embellished sandals | 0.4 | 0.6-0.8 | charmeuse
+metallic heels | 0.4 | 0.5-0.7 | suede
+peep-toe pumps | 0.4 | 0.5-0.7 | suede,charmeuse
+T-strap heels | 0.4 | 0.6-0.8 | suede,charmeuse

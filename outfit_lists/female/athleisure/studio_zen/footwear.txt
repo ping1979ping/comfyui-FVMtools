@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flip flops | 0.40 | 0.0-0.1 | rubber
+yoga slides | 0.45 | 0.0-0.1 | rubber,nylon
+woven flats | 0.45 | 0.1-0.3 | cotton,jute
+
+# mid-casual
+canvas slip-ons | 0.50 | 0.0-0.3 | cotton
+minimalist trainers | 0.55 | 0.0-0.3 | mesh,nylon
+woven sandals | 0.45 | 0.1-0.3 | jute,cotton

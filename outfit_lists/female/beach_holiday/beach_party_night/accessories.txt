@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+statement earrings | 0.65 | 0.1-0.4 | metal
+chunky chain necklace | 0.55 | 0.1-0.4 | metal
+glow stick bracelets | 0.40 | 0.0-0.2 | plastic
+body chain | 0.50 | 0.0-0.3 | metal
+crystal choker | 0.45 | 0.1-0.4 | metal
+LED bangles | 0.30 | 0.0-0.2 | plastic
+glitter face gems | 0.40 | 0.0-0.2 | plastic
+oversized hoop earrings | 0.55 | 0.0-0.3 | metal
+beaded waist chain | 0.40 | 0.0-0.3 | metal
+tinted retro sunglasses | 0.50 | 0.0-0.3 | plastic
+metallic temporary tattoos | 0.30 | 0.0-0.2 | metal
+shimmer arm cuff | 0.35 | 0.1-0.3 | metal

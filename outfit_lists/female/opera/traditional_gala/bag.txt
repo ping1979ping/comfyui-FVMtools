@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# embroidered evening clutch | 0.95 | 0.8-1.0 | satin,silk
+#color# beaded heirloom evening bag | 0.75 | 0.8-1.0 | silk,satin
+#color# crystal minaudiere | 0.60 | 0.9-1.0 | metal
+#color# gilded box clutch | 0.55 | 0.8-1.0 | metal
+#color# pearl-trimmed evening clutch | 0.50 | 0.8-1.0 | satin
+#color# vintage envelope clutch | 0.55 | 0.7-1.0 | satin,leather
+#color# embroidered drawstring purse | 0.40 | 0.7-1.0 | silk
+#color# damask-pattern clutch | 0.40 | 0.8-1.0 | brocade,silk

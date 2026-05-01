@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+athletic shorts | 0.65 | 0.0-0.2 | polyester,nylon
+sport bikini bottoms | 0.60 | 0.0-0.1 | nylon,polyester
+hiking shorts | 0.60 | 0.0-0.2 | nylon,cotton
+denim cutoffs | 0.55 | 0.0-0.2 | cotton
+quick-dry shorts | 0.55 | 0.0-0.2 | polyester,nylon
+cargo shorts | 0.45 | 0.0-0.2 | cotton,nylon
+board shorts | 0.55 | 0.0-0.2 | nylon,polyester
+trail-ready leggings | 0.40 | 0.0-0.2 | polyester,nylon
+high-waisted shorts | 0.45 | 0.0-0.2 | cotton,nylon
+ripped shorts | 0.40 | 0.0-0.2 | cotton

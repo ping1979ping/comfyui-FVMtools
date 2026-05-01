@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+abstract watercolor | 0.4 | top,bottom | 0.4-0.6
+metallic-foil accent | 0.4 | top,accessories,bag | 0.4-0.7
+geometric line motif | 0.3 | top,bottom | 0.4-0.6
+tonal jacquard | 0.3 | top,bottom | 0.4-0.7
+small-scale floral | 0.3 | top,bottom,bag | 0.4-0.6
+crystal-bead detail | 0.3 | top,accessories | 0.4-0.7
+abstract brush stroke | 0.3 | top,bottom | 0.4-0.6
+subtle pinstripe | 0.3 | top,bottom | 0.4-0.7
+shimmer overlay | 0.3 | top,accessories | 0.4-0.7
+art deco motif | 0.2 | top,accessories,bag | 0.4-0.7

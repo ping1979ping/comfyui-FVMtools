@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# jewelry
+single diamond stud earrings | 0.80 | 0.5-0.9 | metal
+delicate gold chain | 0.75 | 0.5-0.9 | metal
+slim minimal bangle | 0.65 | 0.5-0.9 | metal
+single-stone pendant | 0.65 | 0.5-0.9 | metal
+delicate hoop earrings | 0.55 | 0.5-0.9 | metal
+simple band ring | 0.50 | 0.5-0.9 | metal
+fine wire bracelet | 0.45 | 0.5-0.9 | metal
+ear cuff | 0.40 | 0.5-0.9 | metal
+
+# other
+sleek wristwatch | 0.40 | 0.5-0.8 | metal
+minimal hair clip | 0.35 | 0.5-0.8 | metal

@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# trucker cap | 0.30 | 0.2-0.4 | cotton,mesh
+#color# slouchy beanie | 0.25 | 0.2-0.4 | knit
+#color# bandana headband | 0.30 | 0.2-0.5 | cotton

@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+yoga bra | 0.55 | 0.0-0.2 | spandex,nylon
+seamless tank | 0.50 | 0.0-0.2 | nylon,spandex
+loose tank | 0.45 | 0.0-0.2 | cotton,modal
+cropped tee | 0.45 | 0.0-0.2 | cotton,modal
+ribbed cami | 0.40 | 0.0-0.2 | modal,spandex
+
+# mid-casual
+long-sleeve top | 0.55 | 0.1-0.3 | modal,bamboo,cotton
+wrap top | 0.45 | 0.1-0.3 | modal,bamboo
+draped tunic | 0.40 | 0.1-0.4 | modal,bamboo
+flowy blouse | 0.40 | 0.2-0.5 | rayon,modal
+zen tee | 0.45 | 0.1-0.3 | bamboo,cotton

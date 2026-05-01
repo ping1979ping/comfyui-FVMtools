@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+crystal-embellished heels | 0.75 | 0.5-0.8 | satin
+beaded pumps | 0.65 | 0.5-0.8 | satin
+ornate strappy heels | 0.60 | 0.5-0.8 | satin
+jewel-clasp slingbacks | 0.55 | 0.5-0.8 | satin
+embroidered mules | 0.50 | 0.5-0.7 | satin
+pearl-detail pumps | 0.50 | 0.5-0.7 | satin
+ornamented evening sandals | 0.55 | 0.5-0.8 | satin
+silver heels | 0.55 | 0.4-0.7 | leather
+gold pumps | 0.50 | 0.4-0.7 | leather

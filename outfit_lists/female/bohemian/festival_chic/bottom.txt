@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+denim cutoffs | 0.8 | 0.1-0.3 | cotton
+high-waisted shorts | 0.6 | 0.1-0.3 | denim,cotton
+flared bell-bottoms | 0.6 | 0.2-0.4 | denim,cotton,velvet
+tiered mini skirt | 0.6 | 0.1-0.3 | cotton,gauze,chiffon
+sequined miniskirt | 0.5 | 0.1-0.3 | mesh,chiffon
+fringe shorts | 0.5 | 0.1-0.3 | suede,denim
+embroidered hot pants | 0.4 | 0.1-0.3 | denim,cotton
+metallic leggings | 0.4 | 0.1-0.3 | mesh,spandex
+gypsy maxi skirt | 0.6 | 0.2-0.4 | cotton,chiffon,gauze
+tie-dye joggers | 0.4 | 0.1-0.3 | cotton
+glittery palazzo pants | 0.4 | 0.2-0.4 | chiffon,raw silk
+boho mini shorts | 0.5 | 0.1-0.3 | denim,cotton

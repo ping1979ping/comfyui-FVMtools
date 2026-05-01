@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# fanny pack | 0.50 | 0.0-0.2 | nylon
+#color# mini backpack | 0.55 | 0.1-0.3 | nylon,canvas
+#color# crossbody pouch | 0.50 | 0.1-0.3 | nylon,canvas
+#color# tote bag | 0.40 | 0.0-0.2 | canvas
+#color# wristlet | 0.45 | 0.2-0.4 | faux_leather
+#color# bumbag | 0.35 | 0.0-0.2 | nylon
+#color# party clutch | 0.30 | 0.2-0.4 | satin,faux_leather
+#color# duck-cloth sling | 0.30 | 0.0-0.2 | canvas

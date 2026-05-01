@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ornate scrollwork motif | 0.40 | top,bottom | 0.8-1.0
+gilded floral brocade pattern | 0.40 | top,bottom | 0.8-1.0
+royal damask weave | 0.35 | top,bottom | 0.8-1.0
+baroque medallion motif | 0.35 | top,bottom,outerwear | 0.8-1.0
+ornate gold thread embroidery | 0.35 | top,outerwear | 0.8-1.0
+pearl-beaded floral motif | 0.30 | top,bottom | 0.8-1.0
+intricate jacquard weave | 0.35 | top,bottom | 0.8-1.0
+embroidered acanthus motif | 0.25 | top,outerwear | 0.8-1.0
+heraldic emblem motif | 0.20 | top,outerwear | 0.8-1.0
+gilded vine embroidery | 0.30 | top,bottom | 0.8-1.0

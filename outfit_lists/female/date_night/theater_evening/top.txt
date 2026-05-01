@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+silk blouse | 0.7 | 0.5-0.7 | charmeuse,crepe
+pleated blouse | 0.5 | 0.5-0.7 | crepe,georgette
+high-neck top | 0.5 | 0.6-0.8 | crepe,jersey
+draped camisole | 0.5 | 0.5-0.7 | charmeuse
+fluted-sleeve blouse | 0.4 | 0.5-0.7 | crepe,chiffon
+tied-neck blouse | 0.5 | 0.5-0.7 | crepe,georgette
+cap-sleeve top | 0.4 | 0.5-0.7 | crepe,jersey
+embellished top | 0.4 | 0.6-0.8 | tulle,crepe
+fitted shell | 0.5 | 0.5-0.7 | crepe,jersey
+elegant blouse | 0.5 | 0.5-0.7 | charmeuse,crepe
+beaded blouse | 0.3 | 0.6-0.8 | tulle

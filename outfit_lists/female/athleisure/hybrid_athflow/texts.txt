@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FLOW" | 0.2 | top | flowing script
+"FUSE" | 0.15 | top | clean modern font
+"BLEND" | 0.15 | top | minimal sans-serif
+"HYBRID" | 0.2 | top | clean modern font
+"FORM" | 0.2 | top | minimal bold
+"LIFT" | 0.2 | top | athletic font
+"MOVE" | 0.2 | top | clean modern font
+"SCULPT" | 0.15 | top | minimal bold

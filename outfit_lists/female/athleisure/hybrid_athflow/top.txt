@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sculpting bra | 0.50 | 0.0-0.2 | spandex,nylon
+flow tank | 0.50 | 0.0-0.2 | modal,spandex
+cropped tee | 0.50 | 0.0-0.2 | cotton,modal
+seamless top | 0.45 | 0.0-0.2 | nylon,spandex
+draped tank | 0.40 | 0.0-0.3 | modal,rayon
+
+# mid-casual
+mock-neck pullover | 0.50 | 0.1-0.3 | spandex,modal
+half-zip top | 0.50 | 0.1-0.3 | nylon,polyester
+wrap top | 0.45 | 0.1-0.4 | modal,bamboo
+fitted long-sleeve | 0.50 | 0.1-0.3 | nylon,spandex
+draped tee | 0.45 | 0.1-0.3 | modal,rayon

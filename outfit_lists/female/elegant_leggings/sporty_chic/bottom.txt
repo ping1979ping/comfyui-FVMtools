@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-performance leggings | 0.85 | 0.3-0.6 | jersey
+high-waisted leggings | 0.85 | 0.3-0.6 | jersey
+seamless leggings | 0.75 | 0.3-0.6 | jersey
+side-striped leggings | 0.65 | 0.3-0.6 | jersey
+mesh-panel leggings | 0.55 | 0.3-0.6 | jersey
+compression leggings | 0.65 | 0.3-0.6 | jersey
+contour-stitched leggings | 0.55 | 0.3-0.6 | jersey
+ankle-zip leggings | 0.50 | 0.3-0.6 | jersey
+cropped active leggings | 0.55 | 0.3-0.6 | jersey
+sleek track leggings | 0.55 | 0.3-0.6 | jersey

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+art deco geometric motif | 0.40 | top,bottom | 0.7-1.0
+sunburst pattern | 0.30 | top,bottom | 0.7-1.0
+chevron beadwork | 0.30 | top,bottom | 0.7-1.0
+fan-shaped motif | 0.30 | top,outerwear | 0.7-1.0
+metallic geometric pattern | 0.30 | top,bottom | 0.7-1.0
+sequined zigzag motif | 0.25 | top,bottom | 0.7-1.0
+beaded floral medallion | 0.30 | top,outerwear | 0.7-1.0
+gilded scrollwork motif | 0.25 | top,outerwear | 0.7-1.0
+diamond-grid embroidery | 0.25 | top,bottom | 0.7-1.0
+peacock-feather motif | 0.20 | top,outerwear | 0.7-1.0

@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"COACHELLA" | 0.2 | top | bold festival
+"GOOD VIBES" | 0.25 | top | handwritten
+"FESTIVAL" | 0.2 | top | psychedelic
+"WILD" | 0.2 | top | boho lettering
+"DREAMER" | 0.2 | top | watercolor
+"NAMASTE" | 0.15 | top | handwritten
+"GYPSY" | 0.15 | top | organic
+"FREE SOUL" | 0.15 | top | flowing

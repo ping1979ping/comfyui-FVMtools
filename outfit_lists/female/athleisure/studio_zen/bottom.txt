@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+yoga leggings | 0.65 | 0.0-0.2 | spandex,nylon
+high-waist leggings | 0.60 | 0.0-0.2 | spandex,nylon
+flare pants | 0.50 | 0.0-0.3 | modal,bamboo
+wide-leg pants | 0.50 | 0.1-0.4 | modal,bamboo,rayon
+
+# mid-casual
+harem pants | 0.40 | 0.1-0.3 | modal,bamboo
+cropped joggers | 0.45 | 0.1-0.3 | cotton,modal
+relaxed pants | 0.45 | 0.2-0.4 | modal,rayon
+loose shorts | 0.35 | 0.0-0.2 | cotton,modal
+tapered trousers | 0.40 | 0.2-0.5 | modal,rayon

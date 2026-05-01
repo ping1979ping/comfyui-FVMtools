@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flash tattoos | 0.7 | 0.0-0.3 | metal
+layered chokers | 0.7 | 0.1-0.3 | cotton,leather
+glitter face gems | 0.6 | 0.0-0.3 | resin
+feather earrings | 0.6 | 0.1-0.3 | leather,cotton
+beaded body chain | 0.5 | 0.0-0.3 | cotton,metal
+arm cuffs | 0.5 | 0.1-0.3 | leather,suede
+ankle wraps | 0.5 | 0.1-0.3 | suede,cotton
+stacked rings | 0.6 | 0.1-0.3 | metal
+tassel earrings | 0.5 | 0.2-0.4 | raw silk,cotton
+mirrored sunglasses | 0.7 | 0.0-0.3 | resin
+hair gems | 0.5 | 0.0-0.3 | resin
+crystal pendant | 0.5 | 0.1-0.3 | leather,cotton

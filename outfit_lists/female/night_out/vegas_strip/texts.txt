@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VEGAS" | 0.20 | top,bag | bold marquee
+"JACKPOT" | 0.15 | top | casino bold
+"VIVA" | 0.15 | top | retro neon
+"HIGH ROLLER" | 0.15 | top | gilded serif
+"LUCKY" | 0.15 | top | playful script
+"SHOWGIRL" | 0.12 | top | art deco

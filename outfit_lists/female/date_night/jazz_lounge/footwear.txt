@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+classic pumps | 0.7 | 0.5-0.7 | suede,patent
+slingback pumps | 0.5 | 0.5-0.7 | suede,patent
+ankle-strap heels | 0.6 | 0.5-0.7 | suede,satin
+T-strap heels | 0.5 | 0.6-0.8 | suede,satin
+mary janes | 0.4 | 0.5-0.7 | suede,patent
+mules | 0.4 | 0.4-0.6 | suede,satin
+peep-toe pumps | 0.4 | 0.5-0.7 | suede,satin
+kitten heels | 0.4 | 0.5-0.7 | suede,satin
+strappy stilettos | 0.5 | 0.5-0.7 | suede,satin

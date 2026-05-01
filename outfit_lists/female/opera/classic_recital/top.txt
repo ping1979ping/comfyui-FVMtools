@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# elegant scoop-neck bodice | 0.70 | 0.6-0.9 | silk,satin
+#color# modest high-neck blouse | 0.65 | 0.6-0.9 | silk,satin,chiffon
+#color# pleated draped bodice | 0.60 | 0.6-0.9 | silk,chiffon
+#color# refined boatneck top | 0.60 | 0.6-0.9 | silk,satin
+#color# tailored long-sleeve bodice | 0.55 | 0.6-0.9 | silk,crepe
+#color# subtle off-shoulder bodice | 0.50 | 0.6-0.9 | silk,satin
+#color# ruffled cap-sleeve blouse | 0.45 | 0.6-0.8 | silk,chiffon
+#color# fitted three-quarter-sleeve top | 0.50 | 0.6-0.9 | silk,crepe
+#color# elegant wrap blouse | 0.45 | 0.5-0.8 | silk,satin
+#color# refined cowl-neck top | 0.45 | 0.6-0.9 | silk,satin

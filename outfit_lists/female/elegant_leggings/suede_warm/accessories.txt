@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knit infinity scarf | 0.55 | 0.3-0.6 | natural
+warm cashmere wrap | 0.45 | 0.4-0.7 | natural
+fringed scarf | 0.45 | 0.3-0.6 | natural
+gold rope chain | 0.50 | 0.4-0.7 | metal
+amber drop earrings | 0.45 | 0.4-0.7 | metal
+caramel waist belt | 0.55 | 0.4-0.7 | leather
+horn-style cuff | 0.40 | 0.3-0.6 | metal
+woven bracelet | 0.40 | 0.3-0.6 | natural
+tortoise sunglasses | 0.45 | 0.3-0.6 | metal

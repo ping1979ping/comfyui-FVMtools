@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+athletic bikini top | 0.65 | 0.0-0.1 | nylon,polyester
+sport bralette | 0.60 | 0.0-0.2 | nylon,polyester
+zipped rashguard | 0.60 | 0.0-0.2 | neoprene,polyester
+quick-dry tee | 0.55 | 0.0-0.2 | polyester
+sleeveless hiking top | 0.55 | 0.0-0.2 | polyester,nylon
+faded tank | 0.55 | 0.0-0.2 | cotton
+crop tank | 0.50 | 0.0-0.2 | cotton,polyester
+moisture-wick shirt | 0.50 | 0.0-0.2 | polyester
+sport bandeau | 0.45 | 0.0-0.1 | nylon,polyester
+adventure tank | 0.45 | 0.0-0.2 | cotton,polyester
+long-sleeve sun shirt | 0.50 | 0.0-0.2 | polyester

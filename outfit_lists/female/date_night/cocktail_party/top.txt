@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sequinned top | 0.6 | 0.6-0.8 | tulle,jersey
+fitted bodysuit | 0.6 | 0.5-0.7 | jersey,modal
+strapless bustier | 0.5 | 0.6-0.8 | crepe,tulle
+beaded camisole | 0.5 | 0.6-0.8 | charmeuse
+shoulder-baring blouse | 0.5 | 0.5-0.7 | crepe,georgette
+fluted-sleeve top | 0.5 | 0.5-0.7 | crepe,georgette
+asymmetric top | 0.5 | 0.5-0.7 | crepe,jersey
+draped halter | 0.5 | 0.6-0.8 | charmeuse,crepe
+mock-neck shell | 0.4 | 0.5-0.7 | jersey,crepe
+embellished tank | 0.4 | 0.6-0.8 | tulle
+shimmery blouse | 0.5 | 0.6-0.8 | charmeuse

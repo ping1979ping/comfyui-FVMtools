@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embroidered jacket | 0.7 | 0.2-0.4 | cotton,raw silk
+mirror-work shawl | 0.6 | 0.2-0.4 | cotton,raw silk
+afghan vest | 0.6 | 0.2-0.4 | suede,wool
+brocade kimono | 0.5 | 0.2-0.4 | raw silk
+folkloric coat | 0.5 | 0.2-0.4 | wool,cotton
+poncho wrap | 0.5 | 0.2-0.4 | cotton,wool
+sashiko-stitched jacket | 0.4 | 0.2-0.4 | cotton,linen
+beaded cape | 0.4 | 0.2-0.4 | cotton,raw silk
+embroidered duster | 0.4 | 0.2-0.4 | cotton,linen

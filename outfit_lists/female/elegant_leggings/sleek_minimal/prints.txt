@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+solid neutral | 0.70 | top,bottom,outerwear | 0.4-0.7
+tonal stitching | 0.40 | top,bottom | 0.4-0.7
+matte finish | 0.50 | bottom,top | 0.4-0.7
+clean monochrome | 0.55 | top,bottom,outerwear | 0.4-0.7
+soft greyscale | 0.40 | top,bottom,outerwear | 0.4-0.7
+plain ivory | 0.40 | top,outerwear | 0.5-0.7
+plain black | 0.55 | top,bottom,outerwear | 0.4-0.7
+plain camel | 0.40 | outerwear,top | 0.5-0.7
+unprinted | 0.50 | top,bottom | 0.4-0.7
+muted taupe | 0.35 | top,outerwear | 0.4-0.7

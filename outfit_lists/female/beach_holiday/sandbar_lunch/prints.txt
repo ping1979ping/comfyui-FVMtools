@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+boho floral pattern | 0.50 | top,bottom | 0.0-0.4
+delicate ditsy floral | 0.45 | top,bottom | 0.1-0.4
+ikat motif | 0.35 | top,bottom | 0.0-0.3
+paisley pattern | 0.40 | top,bottom | 0.0-0.4
+abstract watercolor | 0.40 | top,bottom | 0.1-0.4
+embroidered border pattern | 0.40 | top,bottom | 0.1-0.4
+shell motif | 0.30 | top,accessories | 0.0-0.3
+sun motif | 0.30 | top,bottom | 0.0-0.3
+soft tie-dye effect | 0.35 | top | 0.0-0.3
+folk-art pattern | 0.30 | top,bottom | 0.1-0.4

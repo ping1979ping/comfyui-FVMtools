@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# plumed mask | 0.40 | 0.3-0.5 | feather
+#color# pearl choker | 0.45 | 0.3-0.5 | beaded
+#color# layered chains | 0.40 | 0.3-0.5 | metal
+#color# costume gloves | 0.30 | 0.3-0.5 | satin,velvet
+#color# statement earrings | 0.50 | 0.3-0.5 | metal
+#color# brooch pin | 0.30 | 0.3-0.5 | metal
+#color# arm cuff | 0.30 | 0.3-0.5 | metal

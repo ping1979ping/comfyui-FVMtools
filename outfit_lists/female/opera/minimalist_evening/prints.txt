@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid matte finish | 0.50 | top,bottom | 0.5-0.9
+tone-on-tone weave | 0.30 | top,bottom | 0.5-0.9
+subtle ribbed texture | 0.25 | top,bottom | 0.5-0.8
+matte-shine contrast | 0.25 | top,bottom | 0.6-0.9
+clean color-block panel | 0.25 | top,bottom | 0.6-0.9
+discreet jacquard texture | 0.20 | top,outerwear | 0.6-0.9
+subtle pleat detail | 0.20 | top,bottom | 0.6-0.9
+soft ombre fade | 0.20 | top,bottom | 0.6-0.9
+plain weave finish | 0.40 | top,bottom | 0.5-0.8
+muted matte texture | 0.30 | top,outerwear | 0.5-0.9

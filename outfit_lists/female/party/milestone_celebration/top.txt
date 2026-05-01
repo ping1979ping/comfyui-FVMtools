@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# spangled bustier | 0.70 | 0.4-0.6 | sequin
+#color# pearl-trimmed blouse | 0.55 | 0.4-0.6 | beaded,satin
+#color# sparkle bodysuit | 0.55 | 0.4-0.6 | sequin,jersey
+#color# sash-tied top | 0.50 | 0.4-0.6 | satin
+#color# bardot blouse | 0.50 | 0.4-0.6 | chiffon,satin
+#color# embellished tank | 0.55 | 0.4-0.6 | beaded,jersey
+#color# ruffled crop | 0.45 | 0.3-0.5 | chiffon,satin
+#color# halter sequined | 0.50 | 0.4-0.6 | sequin,satin
+#color# net camisole | 0.45 | 0.4-0.6 | tulle,satin
+#color# crystal-detail top | 0.45 | 0.4-0.6 | beaded,satin
+#color# ribbon-laced bodice | 0.40 | 0.4-0.6 | satin,velvet
+#color# puff-sleeve glitter top | 0.45 | 0.4-0.6 | sequin,chiffon

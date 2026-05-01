@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embroidered satchel | 0.7 | 0.2-0.4 | cotton,raw silk
+woven tote | 0.6 | 0.1-0.3 | hemp,cotton
+fringed crossbody | 0.6 | 0.1-0.3 | suede,leather
+patchwork bag | 0.5 | 0.1-0.3 | cotton,denim
+mirror-work purse | 0.5 | 0.1-0.3 | cotton,velvet
+nomadic backpack | 0.5 | 0.1-0.3 | suede,cotton
+coin purse | 0.4 | 0.0-0.3 | leather,cotton
+tasseled pouch | 0.4 | 0.1-0.3 | suede,raw silk

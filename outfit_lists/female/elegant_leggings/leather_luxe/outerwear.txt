@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped biker jacket | 0.80 | 0.4-0.7 | leather
+moto jacket | 0.75 | 0.3-0.6 | leather
+trench coat | 0.55 | 0.5-0.7 | leather
+longline coat | 0.50 | 0.5-0.7 | leather
+shearling-collar jacket | 0.45 | 0.4-0.6 | leather
+oversized motorcycle jacket | 0.55 | 0.3-0.6 | leather
+fitted aviator | 0.50 | 0.3-0.6 | leather
+studded jacket | 0.40 | 0.3-0.6 | leather

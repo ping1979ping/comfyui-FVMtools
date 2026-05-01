@@ -1,0 +1,15 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.4 | natural | medium
+linen | 0.5 | natural | light
+poplin | 0.5 | natural | light
+denim | 0.3 | natural | medium
+modal | 0.4 | mixed | light
+georgette | 0.6 | synthetic | light
+charmeuse | 0.7 | synthetic | light
+suede | 0.5 | animal | medium
+leather | 0.5 | animal | medium
+canvas | 0.3 | natural | medium
+straw | 0.4 | natural | light
+wool blend | 0.6 | natural | medium
+acetate | 0.4 | synthetic | light
+metal | 0.5 | mixed | medium

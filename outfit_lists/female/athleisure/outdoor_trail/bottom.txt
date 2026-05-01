@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+hiking shorts | 0.55 | 0.0-0.2 | nylon,polyester
+trail leggings | 0.55 | 0.0-0.2 | spandex,nylon
+trekking shorts | 0.50 | 0.0-0.2 | nylon,polyester
+quick-dry shorts | 0.45 | 0.0-0.2 | nylon,polyester
+
+# mid-casual
+convertible pants | 0.50 | 0.1-0.3 | nylon,polyester
+trail pants | 0.55 | 0.1-0.3 | nylon,polyester
+cargo hiking pants | 0.50 | 0.1-0.3 | nylon,polyester
+softshell pants | 0.45 | 0.1-0.3 | nylon,polyester
+hiking capris | 0.40 | 0.1-0.3 | nylon,polyester

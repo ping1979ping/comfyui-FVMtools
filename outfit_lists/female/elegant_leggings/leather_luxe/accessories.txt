@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silver chain belt | 0.55 | 0.4-0.7 | metal
+wide structured waist belt | 0.65 | 0.4-0.7 | leather
+studded waist belt | 0.50 | 0.3-0.6 | leather
+chunky hoops | 0.55 | 0.4-0.7 | metal
+oversized statement earrings | 0.45 | 0.5-0.7 | metal
+chain choker | 0.50 | 0.4-0.7 | metal
+biker-style cuff | 0.40 | 0.3-0.6 | metal
+silver bangle stack | 0.40 | 0.3-0.6 | metal
+black sunglasses | 0.50 | 0.3-0.6 | metal
+edgy ring set | 0.45 | 0.4-0.7 | metal

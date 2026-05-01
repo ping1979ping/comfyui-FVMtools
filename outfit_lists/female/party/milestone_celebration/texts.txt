@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BIRTHDAY GIRL" | 0.20 | top | sparkle script
+"BRIDE-TO-BE" | 0.15 | top | romantic script
+"BACHELORETTE" | 0.15 | top | rhinestone font
+"FINALLY 21" | 0.15 | top | sparkle script
+"DIRTY THIRTY" | 0.10 | top | bold sans-serif
+"FORTY AND FABULOUS" | 0.10 | top | metallic script
+"GRADUATE" | 0.10 | top | calligraphy
+"MS TO MRS" | 0.10 | top | romantic script
+"SWEET SIXTEEN" | 0.10 | top | sparkle script
+"GUEST OF HONOR" | 0.10 | top | elegant cursive

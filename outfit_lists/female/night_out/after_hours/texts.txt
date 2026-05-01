@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"AFTER HOURS" | 0.20 | top | bold modern
+"03:00 AM" | 0.15 | top | digital mono
+"NO SLEEP" | 0.15 | top | grunge sans
+"OFFLINE" | 0.15 | top | tech mono
+"NIGHTSHIFT" | 0.15 | top | sleek bold
+"INSOMNIA" | 0.12 | top | minimal serif

@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+platform sandals | 0.7 | 0.1-0.3 | cork,leather
+clogs | 0.6 | 0.1-0.3 | leather
+fringed boots | 0.6 | 0.1-0.3 | suede
+huarache sandals | 0.5 | 0.0-0.3 | leather
+woven flats | 0.5 | 0.1-0.3 | hemp,cotton
+70s knee-high boots | 0.5 | 0.2-0.4 | leather,suede
+moccasins | 0.5 | 0.1-0.3 | suede
+chunky platforms | 0.5 | 0.1-0.3 | cork,leather
+gladiator sandals | 0.4 | 0.1-0.3 | leather
+go-go boots | 0.4 | 0.1-0.3 | leather

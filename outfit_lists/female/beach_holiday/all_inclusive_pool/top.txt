@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+triangle bikini top | 0.70 | 0.0-0.1 | nylon,polyester
+ruffled bikini top | 0.55 | 0.0-0.1 | nylon,polyester
+push-up bikini top | 0.55 | 0.0-0.1 | nylon,polyester
+underwire swim top | 0.50 | 0.0-0.1 | nylon,polyester
+bandeau top | 0.55 | 0.0-0.1 | nylon,polyester
+halter neck swim top | 0.55 | 0.0-0.1 | nylon,polyester
+tankini top | 0.50 | 0.0-0.2 | nylon,polyester
+one-piece swim top | 0.45 | 0.0-0.2 | nylon,polyester
+strapless tube top | 0.45 | 0.0-0.2 | cotton,polyester
+crop tank | 0.45 | 0.0-0.2 | cotton
+sleeveless blouse | 0.50 | 0.1-0.3 | cotton,linen
+ruched bandeau | 0.45 | 0.0-0.1 | nylon,polyester
+sporty crop bralette | 0.45 | 0.0-0.2 | polyester,cotton

@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+walking shorts | 0.55 | 0.0-0.2 | cotton,polyester
+relaxed sweats | 0.55 | 0.0-0.2 | cotton,fleece
+soft leggings | 0.55 | 0.0-0.2 | cotton,spandex
+elastic shorts | 0.45 | 0.0-0.2 | cotton,polyester
+
+# mid-casual
+loose joggers | 0.55 | 0.1-0.3 | cotton,fleece
+straight pants | 0.45 | 0.1-0.4 | cotton,linen
+bermuda shorts | 0.45 | 0.0-0.3 | cotton,linen
+casual chinos | 0.40 | 0.2-0.4 | cotton
+cropped trousers | 0.45 | 0.1-0.4 | cotton,linen

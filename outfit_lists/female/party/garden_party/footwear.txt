@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# espadrilles | 0.65 | 0.3-0.5 | canvas,jute
+#color# block heels | 0.55 | 0.4-0.6 | leather,suede
+#color# strappy sandals | 0.60 | 0.4-0.6 | leather
+#color# flat sandals | 0.50 | 0.3-0.5 | leather
+#color# wedge heels | 0.45 | 0.4-0.6 | jute,leather
+#color# ballet flats | 0.40 | 0.3-0.5 | leather,canvas
+#color# kitten heels | 0.40 | 0.4-0.6 | leather,satin

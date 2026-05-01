@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+nautical stripes | 0.55 | top,bottom | 0.1-0.4
+breton pattern | 0.40 | top | 0.1-0.4
+floral print | 0.40 | top,bottom | 0.0-0.4
+lemon motif | 0.30 | top,bottom,bag | 0.0-0.3
+gingham check | 0.30 | top,bottom | 0.1-0.4
+polka dots | 0.30 | top,bottom | 0.0-0.4
+classic monogram | 0.25 | top,bag | 0.2-0.4
+geometric tile pattern | 0.25 | top,bottom | 0.1-0.4
+seashell motif | 0.25 | top,accessories | 0.0-0.3
+nautical anchor | 0.25 | top | 0.1-0.4

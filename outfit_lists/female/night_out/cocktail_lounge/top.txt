@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cami blouse | 0.75 | 0.5-0.8 | silk,satin
+#color# off-shoulder cocktail blouse | 0.70 | 0.5-0.8 | silk,chiffon
+#color# halter cocktail top | 0.65 | 0.5-0.8 | satin,silk
+#color# wrap blouse | 0.60 | 0.5-0.7 | silk,satin
+#color# bustier corset top | 0.55 | 0.5-0.8 | satin,velvet
+#color# draped cowl-neck blouse | 0.55 | 0.5-0.8 | silk,chiffon
+#color# bow-tie collar blouse | 0.45 | 0.5-0.8 | silk,satin
+#color# square-neck cropped blouse | 0.50 | 0.5-0.7 | silk,satin
+#color# pleated chiffon blouse | 0.40 | 0.5-0.8 | silk
+#color# beaded camisole | 0.45 | 0.6-0.8 | silk,sequin
+#color# velvet corset bodice | 0.40 | 0.5-0.8 | satin
+#color# asymmetric one-shoulder top | 0.45 | 0.5-0.8 | silk,jersey

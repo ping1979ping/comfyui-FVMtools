@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+hibiscus print | 0.50 | top,bottom | 0.0-0.3
+tropical leaf print | 0.55 | top,bottom,bag | 0.0-0.3
+palm frond print | 0.45 | top,bottom,bag | 0.0-0.3
+floral print | 0.50 | top,bottom | 0.0-0.4
+tribal pattern | 0.30 | top,bottom | 0.0-0.3
+exotic bird print | 0.25 | top | 0.0-0.3
+parrot print | 0.20 | top | 0.0-0.3
+banana leaf print | 0.30 | top,bottom | 0.0-0.3
+ombre sunset effect | 0.35 | top,bottom | 0.0-0.4
+toucan motif | 0.20 | top,accessories | 0.0-0.3
+pineapple print | 0.30 | top,bottom | 0.0-0.3

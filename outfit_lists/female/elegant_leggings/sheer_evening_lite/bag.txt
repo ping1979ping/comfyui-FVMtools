@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+minaudiere | 0.55 | 0.6-0.7 | satin
+beaded evening bag | 0.55 | 0.5-0.7 | satin
+soft clutch | 0.65 | 0.5-0.7 | satin
+crystal evening clutch | 0.50 | 0.5-0.7 | satin
+delicate wristlet | 0.45 | 0.4-0.7 | satin
+chain-strap evening pouch | 0.45 | 0.5-0.7 | satin
+small envelope clutch | 0.50 | 0.5-0.7 | satin

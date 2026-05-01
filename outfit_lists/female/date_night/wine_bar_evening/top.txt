@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+silky blouse | 0.7 | 0.5-0.7 | charmeuse,crepe
+fitted turtleneck | 0.5 | 0.4-0.6 | jersey,cashmere
+draped camisole | 0.6 | 0.5-0.7 | charmeuse
+button-down silk shirt | 0.5 | 0.5-0.7 | charmeuse,crepe
+ribbed knit top | 0.5 | 0.4-0.6 | cashmere,wool blend
+fluted-sleeve blouse | 0.5 | 0.5-0.7 | crepe,georgette
+mock-neck top | 0.5 | 0.4-0.6 | jersey,cashmere
+slim cardigan-tee | 0.4 | 0.4-0.6 | cashmere,wool blend
+v-neck blouse | 0.5 | 0.5-0.7 | crepe,charmeuse
+sleeveless shell | 0.4 | 0.5-0.7 | crepe,jersey
+boatneck sweater | 0.4 | 0.4-0.6 | cashmere,wool blend

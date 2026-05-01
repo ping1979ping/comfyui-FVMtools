@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pearl earrings | 0.55 | 0.4-0.6 | beaded
+#color# delicate necklace | 0.50 | 0.3-0.5 | metal
+#color# stack bangles | 0.40 | 0.3-0.5 | metal
+#color# cocktail ring | 0.35 | 0.4-0.6 | metal
+#color# floral brooch | 0.25 | 0.4-0.6 | metal
+#color# silk scarf | 0.30 | 0.3-0.5 | silk
+#color# bauble bracelet | 0.40 | 0.3-0.5 | beaded

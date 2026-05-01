@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# spangled bustier | 0.65 | 0.3-0.5 | sequin
+#color# ruffled blouse | 0.55 | 0.3-0.5 | chiffon,satin
+#color# corset top | 0.60 | 0.3-0.5 | velvet,satin
+#color# fringe top | 0.50 | 0.3-0.5 | suede,polyester
+#color# disco halter | 0.55 | 0.3-0.5 | metallic,satin
+#color# pirate-style blouse | 0.40 | 0.3-0.5 | linen,cotton
+#color# net-sleeve top | 0.45 | 0.3-0.5 | mesh,jersey
+#color# plush wrap top | 0.50 | 0.4-0.6 | velvet
+#color# off-shoulder peasant blouse | 0.45 | 0.3-0.5 | linen,cotton
+#color# spangled bodysuit | 0.55 | 0.3-0.5 | sequin,jersey
+#color# sailor crop | 0.35 | 0.2-0.4 | cotton
+#color# vintage halter | 0.50 | 0.3-0.5 | satin,polyester

@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PARIS" | 0.10 | top | elegant serif
+"NEON" | 0.10 | top | bold modern
+"NIGHT" | 0.10 | top | sleek sans-serif
+"CITY" | 0.10 | top | minimal modern
+"SKYLINE" | 0.10 | top | thin sans-serif

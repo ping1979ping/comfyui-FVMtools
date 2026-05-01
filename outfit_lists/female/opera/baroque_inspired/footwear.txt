@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# baroque embellished pumps | 0.90 | 0.8-1.0 | satin,brocade
+#color# ornate buckled court heels | 0.75 | 0.8-1.0 | satin,leather
+#color# gilded heeled sandals | 0.65 | 0.8-1.0 | satin,leather
+#color# pearl-encrusted heels | 0.60 | 0.8-1.0 | satin
+#color# embroidered pointed-toe pumps | 0.55 | 0.8-1.0 | satin,brocade
+#color# crystal-trimmed slippers | 0.50 | 0.8-1.0 | satin,silk
+#color# vintage court-style heels | 0.55 | 0.7-1.0 | satin,leather
+#color# bejeweled bow-detail pumps | 0.50 | 0.8-1.0 | satin

@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+abstract brushstroke | 0.4 | top,bottom | 0.4-0.7
+color-block design | 0.4 | top,bottom | 0.4-0.7
+minimal monochrome | 0.5 | top,bottom | 0.5-0.7
+geometric grid | 0.3 | top,bottom | 0.4-0.7
+modernist motif | 0.3 | top,bag | 0.5-0.7
+ink-blot pattern | 0.2 | top | 0.4-0.7
+asymmetric pattern | 0.3 | top,bottom | 0.5-0.7
+matte texture | 0.4 | top,outerwear | 0.4-0.7
+solid statement-hue | 0.5 | top,bottom | 0.4-0.7

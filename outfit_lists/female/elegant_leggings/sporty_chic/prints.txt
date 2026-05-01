@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+side stripes | 0.55 | bottom,outerwear | 0.3-0.6
+contrast piping | 0.50 | bottom,outerwear,top | 0.3-0.6
+mesh inserts | 0.45 | bottom,top | 0.3-0.6
+sleek logo | 0.40 | top,bag,accessories | 0.3-0.5
+color block | 0.45 | top,bottom,outerwear | 0.3-0.6
+matte finish | 0.50 | bottom,top | 0.3-0.6
+plain charcoal | 0.50 | top,bottom,outerwear | 0.3-0.6
+plain navy | 0.45 | top,bottom,outerwear | 0.3-0.6
+plain black | 0.55 | top,bottom,outerwear | 0.3-0.6
+clean monochrome | 0.45 | top,bottom | 0.3-0.6

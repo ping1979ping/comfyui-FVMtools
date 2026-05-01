@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+chunky sneakers | 0.65 | 0.0-0.3 | mesh,nylon
+retro runners | 0.55 | 0.0-0.3 | mesh,nylon
+high-top kicks | 0.50 | 0.1-0.3 | canvas,cotton
+
+# mid-casual
+designer trainers | 0.50 | 0.1-0.4 | nylon,mesh
+slip-on sneakers | 0.45 | 0.0-0.3 | canvas,cotton
+chunky platform | 0.45 | 0.1-0.3 | nylon,mesh
+running mules | 0.35 | 0.0-0.2 | foam,rubber

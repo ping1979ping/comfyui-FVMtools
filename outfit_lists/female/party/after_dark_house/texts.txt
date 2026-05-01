@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"RAVE" | 0.25 | top | neon block
+"4AM" | 0.20 | top | digital lcd
+"CYBER" | 0.20 | top | techno font
+"BASS DROP" | 0.15 | top | electric font
+"GLOW" | 0.20 | top | neon cursive
+"SECRET RAVE" | 0.10 | top | underground stencil
+"PLUR" | 0.20 | top | rainbow block
+"KEEP DANCING" | 0.15 | top | neon script

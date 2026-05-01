@@ -1,0 +1,8 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WALK" | 0.2 | top | minimal sans-serif
+"EASY" | 0.2 | top | clean modern font
+"SLOW" | 0.15 | top | minimal sans-serif
+"STROLL" | 0.15 | top | flowing script
+"REST DAY" | 0.2 | top | minimal sans-serif
+"WEEKEND" | 0.15 | top | flowing script
+"GENTLE" | 0.15 | top | minimal bold

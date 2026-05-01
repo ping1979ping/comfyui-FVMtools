@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+gold pendant necklace | 0.6 | 0.3-0.6 | metal
+small hoops | 0.7 | 0.3-0.6 | metal
+stud earrings | 0.6 | 0.3-0.6 | metal
+delicate bracelet | 0.5 | 0.3-0.6 | metal
+slim watch | 0.4 | 0.3-0.6 | leather,metal
+stacked rings | 0.4 | 0.3-0.6 | metal
+layered necklaces | 0.4 | 0.3-0.6 | metal
+woven belt | 0.4 | 0.3-0.5 | leather
+thin scarf | 0.2 | 0.3-0.6 | cotton,modal
+ankle bracelet | 0.2 | 0.3-0.5 | metal

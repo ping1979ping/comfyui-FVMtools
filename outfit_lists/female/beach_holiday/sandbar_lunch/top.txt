@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowing peasant blouse | 0.60 | 0.1-0.4 | cotton,linen
+drapey camisole | 0.55 | 0.0-0.3 | linen
+ruffled crop top | 0.55 | 0.1-0.3 | cotton,linen
+sleeveless tunic | 0.55 | 0.1-0.4 | linen,cotton
+knit-style bralette | 0.45 | 0.0-0.2 | crochet
+cropped wrap top | 0.50 | 0.1-0.3 | linen,cotton
+embroidered blouse | 0.50 | 0.1-0.4 | cotton,linen
+puff-sleeve top | 0.50 | 0.1-0.4 | cotton,linen
+button-front tank | 0.45 | 0.0-0.3 | linen,cotton
+off-shoulder shirt | 0.50 | 0.1-0.3 | linen,cotton
+drapey camisole | 0.45 | 0.1-0.4 | silk
+boho top | 0.45 | 0.1-0.3 | cotton,linen

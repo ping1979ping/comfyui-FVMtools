@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+performance cap | 0.50 | 0.0-0.3 | polyester,nylon
+wide hairband | 0.45 | 0.0-0.2 | nylon,spandex
+
+# mid-casual
+five-panel cap | 0.40 | 0.0-0.3 | nylon,cotton
+soft beanie | 0.40 | 0.0-0.2 | cotton,fleece

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tonal pattern | 0.4 | top,bottom | 0.0-0.4
+mandala print | 0.3 | top | 0.1-0.4
+lotus motif | 0.25 | top | 0.1-0.4
+tie-dye | 0.3 | top,bottom | 0.0-0.3
+ombre gradient | 0.3 | top,bottom | 0.1-0.4
+botanical print | 0.3 | top | 0.1-0.4
+minimal stripe | 0.3 | top,bottom | 0.1-0.4
+solid block | 0.4 | top,bottom,outerwear | 0.0-0.5
+subtle texture | 0.35 | top,bottom | 0.0-0.4
+moon phase | 0.2 | top | 0.1-0.4
+sun motif | 0.2 | top | 0.1-0.4

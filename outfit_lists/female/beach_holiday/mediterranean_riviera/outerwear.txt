@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+long kaftan | 0.45 | 0.1-0.3 | silk,viscose
+tailored blazer | 0.45 | 0.2-0.4 | linen
+sheer beach dress | 0.45 | 0.0-0.2 | viscose,mesh
+cropped cardigan | 0.35 | 0.2-0.4 | cotton
+elegant cover-up | 0.50 | 0.0-0.2 | viscose,cotton
+embroidered tunic | 0.40 | 0.1-0.3 | cotton,linen
+scarf wrap | 0.30 | 0.1-0.3 | silk,viscose
+tailored vest | 0.30 | 0.2-0.4 | linen,cotton
+breezy duster | 0.35 | 0.1-0.3 | cotton,viscose
+pinstripe overshirt | 0.30 | 0.2-0.4 | cotton,linen

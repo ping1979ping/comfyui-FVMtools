@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+multi-tool watch | 0.55 | 0.0-0.3 | metal
+polarized sunglasses | 0.55 | 0.0-0.3 | acetate,polycarbonate
+buff neck gaiter | 0.50 | 0.0-0.2 | polyester,nylon
+trekking poles | 0.40 | 0.0-0.2 | metal
+trail gloves | 0.40 | 0.0-0.3 | nylon,leather
+
+# mid-casual
+compass clip | 0.40 | 0.0-0.3 | metal
+paracord bracelet | 0.40 | 0.0-0.2 | nylon

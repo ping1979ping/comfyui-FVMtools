@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+soft baseball cap | 0.50 | 0.0-0.3 | cotton
+straw sun hat | 0.40 | 0.1-0.4 | cotton
+
+# mid-casual
+beret | 0.35 | 0.2-0.4 | wool,cotton
+visor | 0.40 | 0.0-0.2 | nylon,cotton

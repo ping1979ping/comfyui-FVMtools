@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+gypsy headscarf | 0.8 | 0.1-0.3 | cotton,raw silk
+coin headpiece | 0.5 | 0.0-0.3 | metal,cotton
+turban wrap | 0.5 | 0.2-0.4 | cotton,velvet
+braided headband | 0.4 | 0.0-0.3 | cotton,raw silk
+floral garland | 0.4 | 0.0-0.3 | cotton

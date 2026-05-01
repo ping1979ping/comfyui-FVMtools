@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pearl strand | 0.55 | 0.4-0.6 | beaded
+#color# crystal drop earrings | 0.55 | 0.4-0.6 | metal,beaded
+#color# milestone pendant | 0.45 | 0.3-0.5 | metal
+#color# stack bangles | 0.40 | 0.3-0.5 | metal
+#color# corsage wristlet | 0.30 | 0.3-0.5 | fabric
+#color# birthday badge | 0.25 | 0.2-0.4 | metal
+#color# ribbon choker | 0.35 | 0.3-0.5 | satin

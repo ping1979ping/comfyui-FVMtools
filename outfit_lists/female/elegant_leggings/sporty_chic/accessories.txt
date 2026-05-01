@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sleek sport watch | 0.65 | 0.3-0.6 | metal
+fitness tracker | 0.55 | 0.3-0.5 | metal
+small stud earrings | 0.55 | 0.3-0.6 | metal
+slim chain | 0.50 | 0.3-0.6 | metal
+sport sunglasses | 0.55 | 0.3-0.5 | metal
+narrow waist belt | 0.40 | 0.3-0.6 | leather
+silver hoops | 0.45 | 0.3-0.6 | metal

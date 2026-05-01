@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+small shoulder bag | 0.6 | 0.4-0.6 | leather,suede
+chain bag | 0.5 | 0.5-0.7 | leather
+top-handle bag | 0.5 | 0.5-0.7 | leather,suede
+crossbody pouch | 0.4 | 0.4-0.6 | leather,suede
+mini bucket bag | 0.4 | 0.4-0.6 | leather,suede
+envelope clutch | 0.4 | 0.5-0.7 | leather,suede
+slim wallet bag | 0.3 | 0.4-0.6 | leather
+saddle bag | 0.4 | 0.4-0.6 | leather,suede

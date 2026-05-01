@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+peasant blouse | 0.8 | 0.2-0.4 | cotton,embroidered cotton,gauze
+crochet top | 0.7 | 0.1-0.3 | cotton,raw silk
+crop top | 0.7 | 0.1-0.3 | cotton,gauze,chiffon
+fringed halter top | 0.6 | 0.1-0.3 | suede,cotton,raw silk
+sequined bralette | 0.5 | 0.1-0.3 | mesh,chiffon
+mirrored tunic | 0.6 | 0.2-0.4 | cotton,gauze
+beaded camisole | 0.5 | 0.1-0.3 | chiffon,silk,raw silk
+embroidered crop | 0.6 | 0.1-0.3 | cotton,gauze
+tassel-trim blouse | 0.5 | 0.2-0.4 | cotton,linen
+glittery off-shoulder top | 0.4 | 0.1-0.3 | mesh,chiffon
+boho bodysuit | 0.4 | 0.1-0.3 | mesh,cotton
+metallic crop top | 0.4 | 0.1-0.3 | mesh,chiffon
+flowy kimono blouse | 0.5 | 0.2-0.4 | chiffon,raw silk

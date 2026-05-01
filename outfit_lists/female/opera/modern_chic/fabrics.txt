@@ -1,0 +1,10 @@
+# format: fabric_name | formality | family | weight
+silk | 0.7 | luxury | light
+satin | 0.7 | luxury | light
+chiffon | 0.6 | luxury | light
+crepe | 0.7 | luxury | light
+organza | 0.7 | luxury | light
+cashmere | 0.7 | luxury | medium
+wool | 0.6 | classic | medium
+leather | 0.6 | luxury | medium
+metal | 0.8 | luxury | heavy

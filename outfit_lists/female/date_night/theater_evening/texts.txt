@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"OPERA" | 0.10 | top | classic serif
+"BRAVO" | 0.10 | top | elegant serif
+"ENCORE" | 0.10 | top | classic serif
+"PREMIERE" | 0.10 | top | sleek serif
+"BALLET" | 0.10 | top | thin serif

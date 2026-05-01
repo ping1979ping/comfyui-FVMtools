@@ -1,0 +1,8 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GYPSY" | 0.25 | top | folk lettering
+"NOMAD" | 0.2 | top | tribal font
+"TRAVELER" | 0.2 | top | rustic
+"WANDER" | 0.2 | top | handwritten
+"WILD HEART" | 0.15 | top | folk script
+"NOMADIC SOUL" | 0.15 | top | folkloric
+"GYPSY HEART" | 0.15 | top | organic cursive

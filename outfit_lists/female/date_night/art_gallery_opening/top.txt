@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+asymmetric blouse | 0.6 | 0.5-0.7 | crepe,georgette
+sculptural top | 0.5 | 0.5-0.7 | crepe,neoprene
+high-neck sleeveless top | 0.6 | 0.5-0.7 | crepe,jersey
+oversized button-down | 0.5 | 0.4-0.6 | poplin,cotton
+draped blouse | 0.6 | 0.5-0.7 | crepe,charmeuse
+fitted bodysuit | 0.5 | 0.5-0.7 | jersey,modal
+architectural top | 0.4 | 0.5-0.7 | crepe,neoprene
+mock-neck shell | 0.5 | 0.5-0.7 | crepe,jersey
+boxy crop top | 0.4 | 0.4-0.6 | crepe,cotton
+fluted-hem top | 0.4 | 0.5-0.7 | crepe,georgette
+poet blouse | 0.4 | 0.4-0.6 | poplin,georgette

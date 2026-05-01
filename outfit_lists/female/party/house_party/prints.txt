@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+small floral motif | 0.4 | top,bottom | 0.2-0.5
+striped pattern | 0.4 | top,bottom | 0.1-0.5
+tie-dye wash | 0.3 | top,bottom | 0.1-0.4
+graphic logo | 0.4 | top | 0.1-0.3
+checkered pattern | 0.3 | top,bottom,bag | 0.2-0.4
+abstract swirl | 0.3 | top,accessories | 0.2-0.4
+animal print | 0.3 | top,bottom,bag | 0.3-0.5
+star motif | 0.2 | top,accessories | 0.1-0.4
+neon accent stripe | 0.3 | top,accessories | 0.2-0.4
+distressed wash | 0.3 | bottom | 0.1-0.3

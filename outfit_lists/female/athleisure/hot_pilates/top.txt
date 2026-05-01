@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+high-neck bra | 0.55 | 0.0-0.2 | spandex,nylon
+strappy bra | 0.55 | 0.0-0.2 | spandex,nylon
+cropped tank | 0.55 | 0.0-0.2 | spandex,nylon
+ribbed bra | 0.50 | 0.0-0.2 | nylon,spandex
+seamless crop | 0.50 | 0.0-0.2 | nylon,spandex
+backless tank | 0.45 | 0.0-0.2 | spandex,nylon
+
+# mid-casual
+fitted long-sleeve | 0.45 | 0.1-0.3 | spandex,nylon
+mock-neck crop | 0.45 | 0.1-0.3 | spandex,nylon
+square-neck top | 0.40 | 0.1-0.3 | nylon,spandex

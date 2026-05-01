@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NAMASTE" | 0.2 | top | flowing script
+"BREATHE" | 0.25 | top | minimal sans-serif
+"OM" | 0.2 | top | calligraphic
+"FLOW" | 0.2 | top | flowing script
+"PEACE" | 0.15 | top | minimal sans-serif
+"BALANCE" | 0.15 | top | clean modern font
+"INHALE" | 0.15 | top | minimal sans-serif
+"PRESENT" | 0.1 | top | minimal bold

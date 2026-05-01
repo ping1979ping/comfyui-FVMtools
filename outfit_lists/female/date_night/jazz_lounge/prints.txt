@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+art-deco motif | 0.4 | top,accessories | 0.6-0.9
+sequin embellishment | 0.4 | top,accessories | 0.6-0.9
+beaded fringe | 0.3 | top,bottom | 0.6-0.8
+metallic accent | 0.3 | top,accessories | 0.5-0.8
+pearl detailing | 0.3 | top,accessories | 0.5-0.8
+geometric beading | 0.3 | top | 0.6-0.8
+shimmer effect | 0.4 | top | 0.5-0.8
+crystal embellishment | 0.3 | top,accessories | 0.6-0.9
+solid jewel-tone | 0.4 | top,bottom | 0.5-0.7

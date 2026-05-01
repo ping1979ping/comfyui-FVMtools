@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# fluid camisole | 0.65 | 0.5-0.7 | silk,satin
+#color# pleated blouse | 0.55 | 0.5-0.7 | chiffon,silk
+#color# wrap blouse | 0.60 | 0.5-0.7 | silk,satin
+#color# bow-neck blouse | 0.50 | 0.5-0.7 | chiffon,silk
+#color# cowl-neck top | 0.55 | 0.5-0.7 | satin,jersey
+#color# liquid shirt | 0.55 | 0.5-0.7 | satin
+#color# cap-sleeve blouse | 0.50 | 0.5-0.7 | silk,chiffon
+#color# fitted bodysuit | 0.50 | 0.5-0.7 | jersey,satin
+#color# v-neck blouse | 0.55 | 0.5-0.7 | silk,chiffon
+#color# embellished shell | 0.45 | 0.5-0.7 | beaded,satin
+#color# sleeveless turtleneck | 0.40 | 0.5-0.7 | jersey,silk
+#color# pearl-trimmed top | 0.40 | 0.5-0.7 | beaded,satin

@@ -1,0 +1,21 @@
+# format: fabric_name | formality | family | weight
+
+cotton | 0.3 | natural | light
+linen | 0.4 | natural | light
+chiffon | 0.5 | synthetic | light
+silk | 0.7 | natural | light
+modal | 0.4 | synthetic | light
+polyester | 0.3 | synthetic | light
+crochet | 0.4 | natural | light
+leather | 0.5 | natural | medium
+suede | 0.5 | natural | medium
+satin | 0.6 | synthetic | light
+canvas | 0.2 | natural | medium
+straw | 0.3 | natural | light
+jute | 0.3 | natural | medium
+wicker | 0.3 | natural | light
+raffia | 0.3 | natural | light
+beaded | 0.5 | embellished | light
+tulle | 0.5 | synthetic | light
+fabric | 0.3 | natural | light
+metal | 0.5 | accessories | light

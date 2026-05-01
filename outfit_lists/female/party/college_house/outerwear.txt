@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# varsity jacket | 0.40 | 0.1-0.3 | wool,polyester
+#color# oversized hoodie | 0.45 | 0.0-0.2 | cotton,fleece
+#color# rugged jacket | 0.40 | 0.1-0.3 | denim
+#color# bomber | 0.30 | 0.1-0.3 | nylon,polyester
+#color# campus zip-up | 0.30 | 0.0-0.2 | cotton,fleece

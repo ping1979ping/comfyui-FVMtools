@@ -1,0 +1,16 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+crossover leggings | 0.55 | 0.0-0.2 | spandex,nylon
+high-rise shorts | 0.50 | 0.0-0.2 | spandex,nylon
+flowy shorts | 0.50 | 0.0-0.3 | modal,rayon
+flare leggings | 0.50 | 0.0-0.3 | nylon,spandex
+ribbed shorts | 0.45 | 0.0-0.2 | nylon,spandex
+
+# mid-casual
+fluid wide-leg pants | 0.50 | 0.1-0.4 | modal,rayon
+bootcut yoga pants | 0.50 | 0.1-0.3 | nylon,spandex
+relaxed jogger | 0.45 | 0.1-0.3 | cotton,modal
+matching set bottom | 0.50 | 0.1-0.3 | nylon,spandex
+flow culottes | 0.40 | 0.1-0.4 | modal,rayon

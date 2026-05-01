@@ -1,0 +1,8 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SKYLINE" | 0.15 | top | art deco
+"GOLDEN HOUR" | 0.15 | top | elegant script
+"COCKTAILS" | 0.15 | top | metallic cursive
+"PENTHOUSE" | 0.10 | top | art deco
+"LOUNGE" | 0.15 | top | retro serif
+"CITY LIGHTS" | 0.10 | top | neon cursive
+"AFTER WORK" | 0.10 | top | refined script

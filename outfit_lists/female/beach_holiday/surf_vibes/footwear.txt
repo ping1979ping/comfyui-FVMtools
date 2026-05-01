@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flip-flops | 0.80 | 0.0-0.1 | rubber
+slide sandals | 0.65 | 0.0-0.2 | rubber
+water shoes | 0.55 | 0.0-0.1 | neoprene,rubber
+wetsuit booties | 0.45 | 0.0-0.2 | neoprene
+canvas sneakers | 0.50 | 0.0-0.2 | cotton,rubber
+beach barefoot | 0.40 | 0.0-0.1 | cotton
+sport sandals | 0.55 | 0.0-0.2 | rubber,nylon
+foam slides | 0.40 | 0.0-0.1 | rubber
+woven beach slippers | 0.35 | 0.0-0.2 | straw,cotton
+ankle anklet | 0.30 | 0.0-0.1 | metal,cotton

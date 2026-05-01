@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# led bracelets | 0.55 | 0.1-0.3 | polyester
+#color# kandi cuff stack | 0.50 | 0.1-0.3 | beaded
+#color# choker collar | 0.45 | 0.2-0.4 | metal
+#color# body chain harness | 0.40 | 0.2-0.4 | metal
+#color# glitter face gems | 0.45 | 0.2-0.4 | beaded
+#color# layered chain belt | 0.35 | 0.2-0.4 | metal
+#color# cyber goggles | 0.30 | 0.2-0.4 | metal,polyester

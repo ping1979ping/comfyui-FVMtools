@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+oversized graphic | 0.5 | top | 0.0-0.3
+streetwear logo | 0.5 | top,headwear,bag | 0.0-0.4
+brand monogram | 0.4 | top,bag | 0.1-0.4
+camo pattern | 0.4 | top,bottom,outerwear | 0.0-0.3
+tie-dye | 0.4 | top,bottom | 0.0-0.3
+checker pattern | 0.4 | top,bottom | 0.0-0.3
+graffiti graphic | 0.3 | top,outerwear | 0.0-0.3
+photo print | 0.3 | top | 0.0-0.3
+varsity number | 0.3 | top | 0.1-0.3
+neon accent | 0.3 | top,bottom,outerwear | 0.0-0.3
+color-block panel | 0.4 | top,bottom,outerwear | 0.0-0.3

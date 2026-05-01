@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+silk camisole | 0.7 | 0.5-0.7 | satin,charmeuse
+fitted bodysuit | 0.5 | 0.5-0.7 | jersey,modal
+draped blouse | 0.6 | 0.5-0.7 | crepe,georgette
+beaded top | 0.5 | 0.6-0.8 | tulle,crepe
+high-neck blouse | 0.5 | 0.5-0.7 | charmeuse,crepe
+sequinned tank | 0.4 | 0.6-0.8 | tulle
+keyhole top | 0.4 | 0.5-0.7 | crepe,charmeuse
+asymmetric blouse | 0.5 | 0.5-0.7 | crepe,georgette
+mock-neck top | 0.4 | 0.5-0.7 | jersey,charmeuse
+fluted top | 0.4 | 0.5-0.7 | crepe,georgette
+shimmering camisole | 0.5 | 0.6-0.8 | charmeuse

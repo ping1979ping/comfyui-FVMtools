@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# bold high-slit gown skirt | 0.85 | 0.7-1.0 | satin,crepe
+#color# dramatic mermaid gown skirt | 0.75 | 0.7-1.0 | satin,crepe
+#color# voluminous tulle gown skirt | 0.65 | 0.7-1.0 | organza,silk
+#color# avant-garde asymmetric skirt | 0.55 | 0.7-1.0 | crepe,silk
+#color# fluid bias gown skirt | 0.65 | 0.7-1.0 | satin,silk
+#color# wide-leg statement trousers | 0.55 | 0.7-1.0 | crepe,silk
+#color# sculptural ball gown skirt | 0.55 | 0.8-1.0 | taffeta,organza
+#color# tiered dramatic gown skirt | 0.50 | 0.7-1.0 | organza,silk
+#color# fitted column gown skirt | 0.65 | 0.7-1.0 | crepe,satin
+#color# trumpet-flare gown skirt | 0.50 | 0.7-1.0 | satin

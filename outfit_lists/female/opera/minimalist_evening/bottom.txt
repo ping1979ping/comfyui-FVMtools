@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# minimal column gown skirt | 1.00 | 0.6-0.9 | crepe,satin
+#color# clean bias-cut gown skirt | 0.75 | 0.6-0.9 | silk,satin
+#color# refined slim midi skirt | 0.55 | 0.5-0.8 | crepe,satin
+#color# elegant pencil-cut skirt | 0.55 | 0.5-0.8 | crepe,satin
+#color# tailored straight trousers | 0.55 | 0.6-0.9 | crepe,wool
+#color# wide-leg minimal trousers | 0.50 | 0.6-0.9 | crepe,silk
+#color# fluid floor-length skirt | 0.65 | 0.6-0.9 | silk,satin
+#color# clean-line A-line skirt | 0.40 | 0.5-0.8 | crepe,satin
+#color# minimal slip skirt | 0.50 | 0.5-0.8 | silk,satin

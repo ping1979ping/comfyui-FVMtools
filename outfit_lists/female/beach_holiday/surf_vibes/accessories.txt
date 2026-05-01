@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport sunglasses | 0.80 | 0.0-0.3 | plastic
+strap retainer | 0.40 | 0.0-0.2 | nylon
+puka chain choker | 0.50 | 0.0-0.2 | shell
+hemp bracelet | 0.50 | 0.0-0.2 | cotton
+waterproof watch | 0.55 | 0.0-0.3 | plastic,rubber
+shark tooth necklace | 0.40 | 0.0-0.2 | shell
+braided ankle bracelet | 0.40 | 0.0-0.2 | cotton
+zinc nose stripe | 0.45 | 0.0-0.1 | plastic
+beaded surf bracelet | 0.40 | 0.0-0.2 | shell
+small hoop earrings | 0.35 | 0.0-0.2 | metal
+seashell pendant | 0.40 | 0.0-0.2 | shell

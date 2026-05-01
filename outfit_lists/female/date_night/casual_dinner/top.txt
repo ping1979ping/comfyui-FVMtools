@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+fitted tee | 0.7 | 0.3-0.5 | cotton,jersey
+button-down shirt | 0.8 | 0.4-0.6 | cotton,linen,chambray
+ribbed tank | 0.6 | 0.3-0.5 | jersey,modal
+boatneck top | 0.5 | 0.4-0.6 | jersey,cotton
+soft sweater | 0.6 | 0.4-0.6 | cashmere,wool blend
+slim henley | 0.5 | 0.3-0.5 | cotton,jersey
+cropped tee | 0.5 | 0.3-0.5 | jersey,modal
+v-neck tee | 0.6 | 0.3-0.5 | cotton,modal
+flutter-sleeve top | 0.5 | 0.4-0.6 | chiffon,georgette
+tucked-in tee | 0.5 | 0.3-0.5 | cotton,jersey
+western shirt | 0.4 | 0.3-0.5 | chambray,cotton

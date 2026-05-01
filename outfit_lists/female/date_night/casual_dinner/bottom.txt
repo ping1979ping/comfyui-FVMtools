@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+dark wash jeans | 0.8 | 0.3-0.5 | denim
+straight-leg pants | 0.6 | 0.4-0.6 | cotton,wool blend
+midi skirt | 0.6 | 0.4-0.6 | cotton,crepe
+slim chinos | 0.5 | 0.3-0.5 | cotton
+A-line skirt | 0.5 | 0.4-0.6 | cotton,crepe
+high-rise jeans | 0.6 | 0.3-0.5 | denim
+ankle pants | 0.5 | 0.4-0.6 | cotton,crepe
+flowy midi skirt | 0.4 | 0.4-0.6 | chiffon,georgette
+relaxed trousers | 0.4 | 0.4-0.6 | wool blend,cotton
+black skinny jeans | 0.6 | 0.3-0.5 | denim

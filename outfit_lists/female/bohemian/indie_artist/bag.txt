@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+canvas tote | 0.7 | 0.1-0.3 | cotton
+vintage leather satchel | 0.6 | 0.2-0.4 | suede
+crossbody pouch | 0.5 | 0.1-0.3 | leather,cotton
+artsy printed tote | 0.5 | 0.1-0.3 | cotton
+embroidered shoulder bag | 0.4 | 0.2-0.4 | cotton,raw silk
+mini backpack | 0.5 | 0.1-0.3 | leather,canvas
+patchwork pouch | 0.4 | 0.1-0.3 | cotton,denim
+boho bucket bag | 0.4 | 0.2-0.4 | suede,leather

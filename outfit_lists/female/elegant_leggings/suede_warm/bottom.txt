@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+soft-touch leggings | 0.85 | 0.5-0.7 | suede
+brushed leggings | 0.80 | 0.4-0.7 | suede
+fitted leggings | 0.75 | 0.4-0.7 | suede
+high-waisted leggings | 0.80 | 0.4-0.7 | suede
+matte leggings | 0.65 | 0.4-0.7 | suede
+plush leggings | 0.55 | 0.5-0.7 | suede
+caramel leggings | 0.65 | 0.4-0.7 | suede
+camel leggings | 0.65 | 0.4-0.7 | suede
+chocolate leggings | 0.55 | 0.4-0.7 | suede
+warm-tone leggings | 0.55 | 0.4-0.7 | suede

@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# flowy midi skirt | 0.70 | 0.4-0.7 | chiffon,silk
+#color# wide-leg linen trousers | 0.60 | 0.4-0.7 | silk
+#color# bias-cut slip skirt | 0.55 | 0.4-0.7 | silk,satin
+#color# tailored shorts | 0.55 | 0.4-0.6 | linen,cotton
+#color# pleated flared skirt | 0.50 | 0.4-0.7 | chiffon
+#color# culottes | 0.45 | 0.4-0.6 | crepe,linen
+#color# A-line midi skirt | 0.55 | 0.4-0.7 | satin,silk
+#color# high-waist palazzo pants | 0.50 | 0.4-0.7 | chiffon,silk

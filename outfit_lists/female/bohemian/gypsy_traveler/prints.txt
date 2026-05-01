@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mirror embellishment | 0.6 | top,outerwear,bottom,bag | 0.1-0.4
+folk embroidery | 0.6 | top,outerwear,bag | 0.1-0.5
+paisley pattern | 0.5 | top,bottom,bag | 0.1-0.4
+ethnic motif | 0.5 | top,bottom | 0.1-0.4
+nomadic motif | 0.4 | top,bottom | 0.1-0.4
+tribal motif | 0.4 | top,bottom | 0.1-0.4
+patchwork blocks | 0.5 | top,bottom,bag | 0.1-0.4
+beaded trim | 0.4 | top,outerwear,bag | 0.1-0.4
+coin trim | 0.4 | top,outerwear,bag | 0.0-0.4
+ikat weave | 0.3 | top,bottom | 0.1-0.4
+folkloric border | 0.4 | top,bottom,outerwear | 0.1-0.4

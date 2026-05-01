@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# linen blazer | 0.50 | 0.4-0.7 | silk
+#color# silk kimono wrap | 0.45 | 0.4-0.7 | chiffon
+#color# cropped knit cardigan | 0.40 | 0.4-0.6 | silk
+#color# light trench | 0.30 | 0.4-0.6 | cotton
+#color# embroidered shawl | 0.35 | 0.4-0.7 | silk

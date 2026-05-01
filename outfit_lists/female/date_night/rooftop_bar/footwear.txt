@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+strappy heels | 0.7 | 0.5-0.7 | leather,satin
+stiletto sandals | 0.6 | 0.5-0.7 | leather,satin
+platform heels | 0.5 | 0.5-0.7 | leather,suede
+block heel sandals | 0.5 | 0.4-0.6 | leather,suede
+mules | 0.5 | 0.4-0.6 | leather,satin,suede
+ankle-strap heels | 0.5 | 0.5-0.7 | leather,satin
+slingback heels | 0.4 | 0.5-0.7 | leather,satin
+metallic sandals | 0.4 | 0.5-0.7 | leather
+peep-toe heels | 0.3 | 0.5-0.7 | leather,satin

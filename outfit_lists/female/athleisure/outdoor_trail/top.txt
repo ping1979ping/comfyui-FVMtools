@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+hiking tank | 0.55 | 0.0-0.2 | polyester,nylon
+moisture-wicking tee | 0.55 | 0.0-0.2 | polyester,nylon
+quick-dry tank | 0.50 | 0.0-0.2 | polyester,nylon
+sport bra | 0.45 | 0.0-0.2 | nylon,spandex
+
+# mid-casual
+sun-protection long-sleeve | 0.55 | 0.1-0.3 | polyester,nylon
+half-zip base layer | 0.50 | 0.1-0.3 | polyester,merino
+trekking shirt | 0.50 | 0.1-0.3 | nylon,polyester
+button-up hiking shirt | 0.45 | 0.1-0.4 | nylon,polyester
+fitted thermal | 0.45 | 0.1-0.3 | merino,polyester

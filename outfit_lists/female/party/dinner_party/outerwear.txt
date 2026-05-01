@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tailored blazer | 0.45 | 0.5-0.7 | wool,polyester
+#color# cropped jacket | 0.30 | 0.5-0.7 | wool,satin
+#color# plush bolero | 0.25 | 0.5-0.7 | velvet
+#color# liquid shawl | 0.25 | 0.5-0.7 | silk
+#color# tuxedo blazer | 0.30 | 0.5-0.7 | wool,satin

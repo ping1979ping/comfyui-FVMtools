@@ -1,0 +1,10 @@
+# format: fabric_name | formality | family | weight
+
+sequined | 0.7 | synthetic | light
+satin | 0.7 | synthetic | light
+silk | 0.7 | natural | light
+faux_fur | 0.6 | synthetic | heavy
+leather | 0.6 | animal | medium
+jersey | 0.4 | knit | light
+natural | 0.6 | natural | medium
+metal | 0.5 | accessories | light

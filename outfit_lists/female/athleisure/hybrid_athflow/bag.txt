@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+yoga sling | 0.50 | 0.0-0.2 | nylon,cotton
+mini sport bag | 0.50 | 0.0-0.3 | nylon,polyester
+matching crossbody | 0.45 | 0.0-0.3 | nylon,polyester
+
+# mid-casual
+medium duffel | 0.45 | 0.0-0.3 | nylon,polyester
+sleek tote | 0.45 | 0.1-0.4 | nylon,canvas
+hybrid backpack | 0.45 | 0.0-0.3 | nylon,polyester

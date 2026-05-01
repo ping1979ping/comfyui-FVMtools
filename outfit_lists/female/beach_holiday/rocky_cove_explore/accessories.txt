@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport sunglasses | 0.80 | 0.0-0.3 | plastic
+strap retainer | 0.45 | 0.0-0.2 | nylon
+sport watch | 0.55 | 0.0-0.3 | plastic,rubber
+hemp bracelet | 0.45 | 0.0-0.2 | cotton
+small carabiner | 0.35 | 0.0-0.2 | metal
+buff neck gaiter | 0.40 | 0.0-0.2 | polyester
+hydration belt | 0.30 | 0.0-0.2 | nylon
+small compass pendant | 0.30 | 0.0-0.2 | metal
+trekking glove | 0.30 | 0.0-0.2 | polyester
+beaded ankle string | 0.35 | 0.0-0.2 | cotton

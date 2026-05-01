@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# jewelry
+diamond chandelier earrings | 0.90 | 0.8-1.0 | metal
+heirloom diamond necklace | 0.80 | 0.8-1.0 | metal
+pearl strand necklace | 0.85 | 0.7-1.0 | metal
+diamond tennis bracelet | 0.70 | 0.8-1.0 | metal
+emerald cocktail ring | 0.55 | 0.8-1.0 | metal
+ruby drop earrings | 0.45 | 0.8-1.0 | metal
+sapphire pendant | 0.45 | 0.8-1.0 | metal
+diamond brooch | 0.50 | 0.8-1.0 | metal
+opera diamond bracelet | 0.50 | 0.8-1.0 | metal
+
+# other
+opera-length white gloves | 0.65 | 0.8-1.0 | satin,silk
+ornate hand fan | 0.30 | 0.8-1.0 | silk
+mother-of-pearl opera glasses | 0.40 | 0.8-1.0 | metal
+ornate hair comb | 0.55 | 0.7-1.0 | metal

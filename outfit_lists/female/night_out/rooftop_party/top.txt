@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# silk camisole blouse | 0.75 | 0.4-0.7 | satin
+#color# linen wrap top | 0.55 | 0.4-0.6 | silk
+#color# off-shoulder breezy blouse | 0.65 | 0.4-0.7 | chiffon,silk
+#color# sleeveless cowl-neck top | 0.55 | 0.4-0.7 | silk,jersey
+#color# halter cami | 0.60 | 0.4-0.7 | satin,silk
+#color# cropped peplum top | 0.50 | 0.4-0.7 | crepe,silk
+#color# flutter-sleeve blouse | 0.50 | 0.4-0.7 | chiffon
+#color# tie-front cropped blouse | 0.55 | 0.4-0.6 | linen,cotton
+#color# embroidered tunic | 0.45 | 0.4-0.6 | cotton,silk
+#color# beaded sleeveless top | 0.50 | 0.5-0.7 | sequin,silk
+#color# square-neck cami | 0.55 | 0.4-0.7 | satin,silk

@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+peasant blouse | 0.8 | 0.2-0.4 | cotton,gauze
+gypsy blouse | 0.7 | 0.2-0.4 | cotton,raw silk
+embroidered tunic | 0.7 | 0.2-0.4 | cotton,linen
+traveler smock | 0.6 | 0.2-0.4 | cotton,linen
+folkloric blouse | 0.6 | 0.2-0.4 | cotton,raw silk
+caftan top | 0.5 | 0.2-0.4 | gauze,cotton
+billowy shirt | 0.5 | 0.2-0.4 | cotton,linen
+cropped vest top | 0.4 | 0.1-0.3 | suede,velvet
+beaded blouse | 0.5 | 0.2-0.4 | cotton,raw silk
+mirror-work blouse | 0.5 | 0.2-0.4 | cotton,raw silk
+nomadic tunic | 0.5 | 0.2-0.4 | cotton,linen
+ruched halter | 0.4 | 0.1-0.3 | cotton,gauze

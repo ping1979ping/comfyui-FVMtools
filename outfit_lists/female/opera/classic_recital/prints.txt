@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+classic floral motif | 0.30 | top,bottom | 0.6-0.9
+subtle paisley | 0.25 | top,outerwear | 0.5-0.8
+delicate lace overlay | 0.35 | top,bottom | 0.6-0.9
+refined jacquard weave | 0.30 | top,bottom,outerwear | 0.6-0.9
+small dotted pattern | 0.20 | top,bottom | 0.5-0.8
+classic stripe motif | 0.20 | top,bottom | 0.5-0.8
+embroidered floral accent | 0.25 | top,outerwear | 0.6-0.9
+tone-on-tone weave | 0.30 | top,bottom | 0.5-0.9
+heritage brocade pattern | 0.25 | top,outerwear | 0.7-0.9
+delicate vine embroidery | 0.20 | top,bottom | 0.6-0.9

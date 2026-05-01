@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ankle boots | 0.7 | 0.2-0.4 | leather
+mary janes | 0.6 | 0.2-0.4 | leather
+ballet flats | 0.6 | 0.2-0.4 | leather,satin
+victorian booties | 0.5 | 0.2-0.4 | leather
+strappy sandals | 0.5 | 0.1-0.3 | leather
+romantic ribbon flats | 0.5 | 0.2-0.4 | satin,cotton
+button-up boots | 0.4 | 0.2-0.4 | leather
+embroidered loafers | 0.4 | 0.2-0.4 | leather,cotton
+oxford shoes | 0.4 | 0.2-0.4 | leather

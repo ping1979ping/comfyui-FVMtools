@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# chandelier crystal earrings | 0.75 | 0.4-0.7 | metal
+#color# multi-strand statement necklace | 0.65 | 0.4-0.7 | metal
+#color# rhinestone choker | 0.55 | 0.3-0.6 | metal
+#color# stacked tennis bracelets | 0.55 | 0.4-0.7 | metal
+#color# oversized cocktail ring | 0.50 | 0.4-0.7 | metal
+#color# crystal anklet | 0.35 | 0.3-0.5 | metal
+#color# body chain harness | 0.40 | 0.3-0.6 | metal

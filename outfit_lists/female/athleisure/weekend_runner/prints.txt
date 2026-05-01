@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+reflective accent | 0.5 | top,bottom,outerwear,footwear | 0.0-0.4
+neon stripe | 0.4 | top,bottom,outerwear | 0.0-0.3
+race number | 0.3 | top | 0.0-0.3
+performance logo | 0.4 | top,headwear,bag | 0.0-0.4
+color-block panel | 0.4 | top,bottom,outerwear | 0.0-0.4
+mesh insert | 0.3 | top,bottom | 0.0-0.3
+fade gradient | 0.3 | top,bottom | 0.0-0.4
+ventilation mesh | 0.3 | top | 0.0-0.3
+gps map graphic | 0.2 | top | 0.1-0.4
+finish-line graphic | 0.2 | top | 0.0-0.3
+trail map graphic | 0.2 | top | 0.0-0.3

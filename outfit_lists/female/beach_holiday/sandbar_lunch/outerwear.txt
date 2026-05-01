@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+long kaftan | 0.50 | 0.1-0.3 | linen
+flowy kimono | 0.50 | 0.0-0.3 | cotton,viscose
+embroidered tunic | 0.45 | 0.1-0.3 | cotton,linen
+sheer beach robe | 0.45 | 0.0-0.2 | viscose,mesh
+lightweight cardigan | 0.40 | 0.1-0.3 | cotton
+cropped denim jacket | 0.35 | 0.1-0.3 | cotton
+scarf wrap | 0.35 | 0.1-0.3 | silk
+fringe shawl | 0.35 | 0.0-0.3 | cotton,viscose
+knit-style duster | 0.40 | 0.0-0.2 | crochet

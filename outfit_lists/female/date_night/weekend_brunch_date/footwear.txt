@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ballet flats | 0.7 | 0.3-0.6 | leather,suede
+white sneakers | 0.6 | 0.3-0.5 | canvas,leather
+espadrilles | 0.5 | 0.3-0.5 | canvas
+loafers | 0.5 | 0.4-0.6 | leather,suede
+slingback flats | 0.4 | 0.4-0.6 | leather,suede
+block-heel sandals | 0.5 | 0.3-0.5 | leather,suede
+mules | 0.4 | 0.4-0.6 | leather,suede
+ankle boots | 0.4 | 0.3-0.5 | leather,suede
+slide sandals | 0.4 | 0.3-0.5 | leather
+mary-jane flats | 0.3 | 0.4-0.6 | leather,suede

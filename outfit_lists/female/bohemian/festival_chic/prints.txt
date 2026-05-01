@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mirror embellishment | 0.5 | top,bottom,bag | 0.1-0.4
+holographic shimmer | 0.5 | top,bottom,outerwear | 0.0-0.3
+sequined panels | 0.5 | top,bottom,outerwear | 0.0-0.3
+mandala motif | 0.4 | top,bottom | 0.0-0.4
+tie-dye swirls | 0.5 | top,bottom | 0.0-0.3
+metallic sheen | 0.4 | top,bottom,outerwear | 0.0-0.3
+beaded fringe | 0.4 | top,outerwear,bag | 0.1-0.4
+floral embroidery | 0.5 | top,outerwear,bag | 0.1-0.4
+ethnic motif | 0.4 | top,bottom | 0.1-0.4
+psychedelic swirl | 0.4 | top,bottom | 0.0-0.3
+star pattern | 0.3 | top,bottom | 0.0-0.3
+tribal motif | 0.3 | top,bottom | 0.1-0.4

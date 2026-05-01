@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+low ponytail | 0.20 | 0.4-0.7 | natural
+slim hair clip | 0.15 | 0.4-0.7 | metal
+narrow headband | 0.10 | 0.4-0.7 | silk
+sleek bun | 0.15 | 0.4-0.7 | natural

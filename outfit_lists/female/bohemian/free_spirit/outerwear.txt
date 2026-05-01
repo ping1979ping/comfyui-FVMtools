@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flowing kimono | 0.7 | 0.2-0.4 | chiffon,raw silk
+crochet duster | 0.6 | 0.2-0.4 | cotton,raw silk
+fringed shawl | 0.6 | 0.2-0.4 | cotton,raw silk
+loose poncho | 0.5 | 0.2-0.4 | cotton,hemp
+draped cardigan | 0.5 | 0.2-0.4 | cotton,linen
+embroidered vest | 0.4 | 0.2-0.4 | cotton,suede
+tasseled wrap | 0.5 | 0.2-0.4 | cotton,raw silk
+breezy duster | 0.4 | 0.2-0.4 | gauze,cotton
+patchwork jacket | 0.4 | 0.2-0.4 | cotton,denim

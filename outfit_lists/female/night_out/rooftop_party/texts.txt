@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"Skyline" | 0.10 | top | airy serif
+"Sunset" | 0.10 | top | flowing script
+"Aperol" | 0.10 | bag | retro italic
+"Golden Hour" | 0.10 | top | thin elegant
+"Above" | 0.08 | top | minimal sans

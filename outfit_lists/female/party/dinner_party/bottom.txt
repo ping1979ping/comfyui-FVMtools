@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pencil skirt | 0.65 | 0.5-0.7 | wool,polyester
+#color# tailored trousers | 0.55 | 0.5-0.7 | wool,polyester
+#color# midi skirt | 0.55 | 0.5-0.7 | satin,silk
+#color# wide-leg dress pants | 0.50 | 0.5-0.7 | wool,polyester
+#color# liquid slip skirt | 0.55 | 0.5-0.7 | silk,satin
+#color# pleated trousers | 0.45 | 0.5-0.7 | wool,polyester
+#color# a-line midi skirt | 0.50 | 0.5-0.7 | satin,wool
+#color# cigarette pants | 0.45 | 0.5-0.7 | wool,polyester
+#color# plush flares | 0.40 | 0.5-0.7 | velvet
+#color# straight column skirt | 0.40 | 0.5-0.7 | wool,satin

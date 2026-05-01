@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid jewel-tone | 0.4 | top,bottom | 0.5-0.8
+classic monochrome | 0.4 | top,bottom | 0.5-0.7
+subtle jacquard | 0.3 | top,outerwear | 0.5-0.8
+delicate beading | 0.3 | top,accessories | 0.6-0.8
+muted brocade | 0.3 | top,outerwear | 0.6-0.8
+pearl trim | 0.2 | top,accessories | 0.6-0.8
+embroidered detail | 0.3 | top | 0.5-0.8
+tone-on-tone | 0.4 | top,bottom | 0.5-0.7
+small geometric | 0.3 | top | 0.5-0.7

@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heeled ankle boots | 0.75 | 0.4-0.7 | leather
+knee-high boots | 0.65 | 0.4-0.7 | leather
+court pumps | 0.60 | 0.5-0.7 | leather
+block-heel ankle boots | 0.60 | 0.4-0.6 | leather
+slouchy boots | 0.55 | 0.3-0.6 | leather
+warm-tone mules | 0.50 | 0.4-0.7 | leather
+caramel pumps | 0.55 | 0.5-0.7 | leather
+brown loafers | 0.45 | 0.3-0.6 | leather
+camel ankle boots | 0.55 | 0.4-0.6 | leather

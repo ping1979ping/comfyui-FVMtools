@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# rave bra top | 0.70 | 0.2-0.4 | sequin,jersey
+#color# fishnet top | 0.55 | 0.2-0.4 | mesh
+#color# cyber halter | 0.55 | 0.2-0.4 | metallic,jersey
+#color# strappy bralette | 0.60 | 0.2-0.4 | jersey,mesh
+#color# cropped tank | 0.55 | 0.2-0.4 | jersey,cotton
+#color# hologram tee | 0.50 | 0.2-0.4 | metallic,polyester
+#color# laser-cut crop | 0.45 | 0.2-0.4 | mesh,jersey
+#color# reflective bodysuit | 0.50 | 0.2-0.4 | metallic,jersey
+#color# chainmail mini | 0.40 | 0.2-0.4 | metal,mesh
+#color# uv-active singlet | 0.45 | 0.2-0.4 | jersey,polyester
+#color# bandeau bra | 0.45 | 0.2-0.4 | jersey,sequin
+#color# net-sleeve crop | 0.40 | 0.2-0.4 | mesh,jersey

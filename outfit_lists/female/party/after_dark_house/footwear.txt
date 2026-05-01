@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# chunky platform boots | 0.65 | 0.2-0.4 | faux_leather,vinyl
+#color# rave sneakers | 0.55 | 0.1-0.3 | mesh,polyester
+#color# led-trim platforms | 0.45 | 0.2-0.4 | faux_leather,polyester
+#color# combat boots | 0.45 | 0.2-0.4 | faux_leather
+#color# fluffy boots | 0.40 | 0.2-0.4 | faux_fur
+#color# pvc thigh-high boots | 0.40 | 0.2-0.4 | vinyl
+#color# hologram trainers | 0.35 | 0.1-0.3 | metallic,mesh

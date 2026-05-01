@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sequined bandeau | 0.55 | 0.1-0.3 | polyester,nylon
+metallic crop top | 0.60 | 0.1-0.3 | polyester
+backless halter | 0.55 | 0.1-0.4 | silk,polyester
+bustier top | 0.50 | 0.1-0.4 | satin,polyester
+neon open-knit top | 0.45 | 0.1-0.3 | mesh,polyester
+strapless luxe top | 0.45 | 0.1-0.4 | silk
+cropped tube top | 0.55 | 0.0-0.2 | polyester,cotton
+tied-front blouse | 0.45 | 0.1-0.3 | viscose,silk
+glittered tank | 0.40 | 0.0-0.3 | polyester
+fringe halter | 0.40 | 0.1-0.3 | suede,polyester
+sheer open-knit blouse | 0.40 | 0.1-0.3 | mesh
+ruched luxe camisole | 0.45 | 0.1-0.4 | silk
+asymmetric cropped blouse | 0.40 | 0.1-0.3 | polyester,silk
+beaded bralette | 0.40 | 0.1-0.3 | cotton,polyester

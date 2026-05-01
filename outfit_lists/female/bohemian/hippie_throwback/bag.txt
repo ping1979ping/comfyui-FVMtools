@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+fringed crossbody | 0.7 | 0.1-0.3 | suede,leather
+patchwork tote | 0.6 | 0.1-0.3 | denim,cotton
+hippie shoulder bag | 0.6 | 0.0-0.3 | cotton,hemp
+embroidered pouch | 0.5 | 0.1-0.3 | cotton,raw silk
+woven sling | 0.5 | 0.0-0.3 | hemp,cotton
+70s leather satchel | 0.5 | 0.2-0.4 | leather
+psychedelic clutch | 0.4 | 0.0-0.3 | cotton,velvet
+beaded mini bag | 0.4 | 0.1-0.3 | cotton

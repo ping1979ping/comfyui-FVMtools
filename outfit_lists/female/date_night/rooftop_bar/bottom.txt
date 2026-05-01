@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+high-waisted shorts | 0.5 | 0.4-0.6 | crepe,cotton
+mini skirt | 0.6 | 0.4-0.6 | crepe,cotton
+midi skirt | 0.6 | 0.5-0.7 | satin,crepe
+slim trousers | 0.6 | 0.5-0.7 | crepe,wool blend
+wide-leg pants | 0.5 | 0.4-0.7 | crepe,wool blend
+asymmetric skirt | 0.4 | 0.5-0.7 | satin,silk
+flared pants | 0.4 | 0.5-0.7 | crepe,jersey
+slip skirt | 0.5 | 0.5-0.7 | satin,silk
+high-rise trousers | 0.5 | 0.5-0.7 | crepe,wool blend

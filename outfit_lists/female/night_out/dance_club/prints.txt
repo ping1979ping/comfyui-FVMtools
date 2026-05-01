@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+holographic finish | 0.65 | top,bottom,bag | 0.3-0.6
+neon glow | 0.55 | top,bottom | 0.3-0.5
+disco-ball sparkle | 0.50 | top,bag,accessories | 0.3-0.6
+electric color-block | 0.50 | top,bottom | 0.3-0.6
+laser stripe | 0.40 | top,outerwear | 0.3-0.5
+metallic snake motif | 0.35 | top,bag | 0.3-0.6
+glitter splatter | 0.45 | top,accessories | 0.3-0.5
+chrome sheen | 0.45 | top,bag,accessories | 0.3-0.6
+strobe geometric | 0.40 | top,bottom | 0.3-0.5
+liquid metal effect | 0.35 | top,bottom,bag | 0.3-0.6

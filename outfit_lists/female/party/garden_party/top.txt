@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# floral blouse | 0.75 | 0.4-0.6 | chiffon,cotton
+#color# wrap top | 0.60 | 0.4-0.6 | linen,cotton
+#color# off-shoulder peasant blouse | 0.55 | 0.3-0.5 | linen,cotton
+#color# eyelet camisole | 0.50 | 0.4-0.6 | cotton
+#color# puff-sleeve blouse | 0.55 | 0.4-0.6 | cotton,linen
+#color# halter neck top | 0.50 | 0.4-0.6 | linen,silk
+#color# button-down shirt | 0.45 | 0.4-0.6 | linen,cotton
+#color# scoopneck tee | 0.40 | 0.3-0.5 | cotton,modal
+#color# tie-front blouse | 0.45 | 0.4-0.6 | linen,chiffon
+#color# embroidered tunic | 0.50 | 0.4-0.6 | cotton,linen
+#color# bardot top | 0.45 | 0.4-0.6 | chiffon
+#color# scalloped tank | 0.40 | 0.3-0.5 | cotton

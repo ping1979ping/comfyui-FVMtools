@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+flowy peasant blouse | 0.8 | 0.2-0.4 | cotton,gauze
+loose tunic | 0.7 | 0.2-0.4 | cotton,linen,gauze
+tie-front blouse | 0.6 | 0.2-0.4 | cotton,chiffon
+crochet halter | 0.5 | 0.1-0.3 | cotton,raw silk
+off-shoulder smock | 0.6 | 0.2-0.4 | cotton,gauze
+embroidered blouse | 0.6 | 0.2-0.4 | cotton,linen
+batwing top | 0.4 | 0.2-0.4 | chiffon,raw silk
+draped wrap top | 0.5 | 0.2-0.4 | chiffon,raw silk
+bell-sleeve blouse | 0.6 | 0.2-0.4 | cotton,gauze
+free-flow camisole | 0.4 | 0.1-0.3 | chiffon,raw silk
+flowing kaftan top | 0.5 | 0.2-0.4 | cotton,gauze
+breezy halter | 0.5 | 0.1-0.3 | cotton,linen

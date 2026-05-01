@@ -1,0 +1,14 @@
+# format: fabric_name | formality | family | weight
+
+cotton | 0.15 | natural | light
+linen | 0.2 | natural | light
+silk | 0.4 | luxury | light
+viscose | 0.2 | natural | light
+crochet | 0.15 | casual | light
+mesh | 0.1 | casual | light
+straw | 0.1 | natural | light
+rubber | 0.05 | sporty | light
+leather | 0.2 | tough | medium
+metal | 0.15 | accessory | light
+plastic | 0.05 | sporty | light
+shell | 0.1 | natural | light

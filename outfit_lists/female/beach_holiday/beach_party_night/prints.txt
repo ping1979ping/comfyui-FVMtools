@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+holographic shimmer | 0.45 | top,bottom | 0.0-0.3
+neon abstract pattern | 0.40 | top,bottom | 0.0-0.3
+metallic gradient | 0.45 | top,bottom | 0.1-0.4
+disco shimmer | 0.40 | top,bottom | 0.1-0.3
+ombre sunset effect | 0.40 | top,bottom | 0.0-0.4
+psychedelic swirl | 0.30 | top,bottom | 0.0-0.3
+animal pattern | 0.35 | top,bottom,bag | 0.1-0.4
+glitter overlay | 0.40 | top,bottom | 0.0-0.3
+neon stripes | 0.30 | top,bottom | 0.0-0.3
+star burst pattern | 0.25 | top,accessories | 0.0-0.3

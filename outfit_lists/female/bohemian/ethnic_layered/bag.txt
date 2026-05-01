@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+embroidered potli | 0.7 | 0.2-0.4 | cotton,raw silk
+mirror-work tote | 0.6 | 0.1-0.3 | cotton,velvet
+ikat clutch | 0.5 | 0.2-0.4 | cotton,raw silk
+woven sling | 0.5 | 0.1-0.3 | hemp,cotton
+beaded crossbody | 0.5 | 0.1-0.3 | cotton,raw silk
+brocade purse | 0.4 | 0.2-0.4 | raw silk
+folkloric satchel | 0.5 | 0.2-0.4 | cotton,leather
+tassel pouch | 0.4 | 0.1-0.3 | cotton,raw silk
+patola-print bag | 0.4 | 0.2-0.4 | raw silk

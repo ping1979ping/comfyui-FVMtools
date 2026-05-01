@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# classic envelope clutch | 0.90 | 0.6-0.9 | satin,leather
+#color# refined evening clutch | 0.80 | 0.6-0.9 | satin,silk
+#color# pearl-trimmed evening bag | 0.55 | 0.7-0.9 | satin
+#color# elegant top-handle bag | 0.50 | 0.5-0.8 | leather
+#color# classic chain-strap clutch | 0.55 | 0.6-0.9 | satin,leather
+#color# refined frame clutch | 0.45 | 0.6-0.9 | satin
+#color# small leather pochette | 0.40 | 0.5-0.8 | leather

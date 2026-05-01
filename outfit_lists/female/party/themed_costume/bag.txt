@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tasseled clutch | 0.45 | 0.3-0.5 | suede,polyester
+#color# vintage handbag | 0.40 | 0.3-0.5 | faux_leather
+#color# bauble purse | 0.35 | 0.3-0.5 | beaded,satin
+#color# disco minaudiere | 0.35 | 0.3-0.5 | metallic,sequin
+#color# fringe pouch | 0.30 | 0.3-0.5 | suede
+#color# theater pouch | 0.25 | 0.3-0.5 | velvet,satin
+#color# costume satchel | 0.25 | 0.3-0.5 | faux_leather
+#color# fairytale basket | 0.20 | 0.2-0.4 | wicker,canvas

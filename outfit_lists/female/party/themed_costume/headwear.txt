@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# plumed headpiece | 0.30 | 0.3-0.5 | feather
+#color# disco headband | 0.25 | 0.3-0.5 | sequin,satin
+#color# pirate bandana | 0.20 | 0.2-0.4 | cotton
+#color# tiara crown | 0.25 | 0.4-0.6 | metal
+#color# witch hat | 0.15 | 0.3-0.5 | velvet,polyester
+#color# flapper headband | 0.25 | 0.3-0.5 | satin,sequin

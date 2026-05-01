@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# liquid camisole | 0.65 | 0.4-0.6 | silk,satin
+#color# wrap-front blouse | 0.55 | 0.4-0.6 | silk,chiffon
+#color# strapless bandeau | 0.50 | 0.3-0.5 | satin,jersey
+#color# halter neck top | 0.55 | 0.4-0.6 | satin,silk
+#color# off-shoulder blouse | 0.55 | 0.4-0.6 | chiffon,satin
+#color# slip cami | 0.55 | 0.3-0.5 | satin,silk
+#color# fitted bodysuit | 0.50 | 0.4-0.6 | jersey,satin
+#color# corset top | 0.45 | 0.4-0.6 | satin,velvet
+#color# asymmetric crop | 0.45 | 0.3-0.5 | jersey,satin
+#color# backless top | 0.50 | 0.4-0.6 | satin,silk
+#color# bardot blouse | 0.45 | 0.4-0.6 | chiffon
+#color# crystal-strap cami | 0.40 | 0.4-0.6 | satin,beaded

@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# faux fur stole | 0.40 | 0.4-0.6 | faux_fur
+#color# plush bolero | 0.30 | 0.4-0.6 | velvet
+#color# embellished cape | 0.25 | 0.5-0.7 | satin,beaded
+#color# evening trench | 0.25 | 0.5-0.7 | satin
+#color# sparkle blazer | 0.30 | 0.4-0.6 | sequin

@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sleek halter bodice | 0.65 | 0.7-1.0 | satin,crepe
+#color# minimalist column-cut bodice | 0.70 | 0.7-1.0 | crepe,satin
+#color# one-shoulder bodice | 0.65 | 0.7-1.0 | crepe,satin
+#color# asymmetric draped bodice | 0.60 | 0.7-1.0 | silk,crepe
+#color# cutout strapless bodice | 0.55 | 0.7-1.0 | crepe,satin
+#color# plunging deep-v bodice | 0.50 | 0.7-1.0 | silk,crepe
+#color# modern bandeau bodice | 0.50 | 0.7-1.0 | crepe,satin
+#color# architectural off-shoulder bodice | 0.55 | 0.7-1.0 | crepe,silk
+#color# fluid slip top | 0.55 | 0.6-0.9 | silk,satin
+#color# corseted bustier with sheer panels | 0.45 | 0.7-1.0 | crepe,organza

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# graphic tee | 0.80 | 0.1-0.3 | cotton
+#color# cropped tank | 0.65 | 0.1-0.3 | jersey,cotton
+#color# tube top | 0.55 | 0.2-0.4 | jersey,satin
+#color# bandeau bra | 0.50 | 0.2-0.4 | jersey
+#color# fitted bodysuit | 0.50 | 0.2-0.4 | jersey,mesh
+#color# party tank | 0.55 | 0.2-0.4 | jersey,cotton
+#color# halter crop | 0.50 | 0.2-0.4 | jersey,satin
+#color# slogan tee | 0.55 | 0.1-0.3 | cotton
+#color# strappy bralette | 0.45 | 0.2-0.4 | jersey,mesh
+#color# layered cami | 0.40 | 0.2-0.4 | satin,jersey
+#color# off-shoulder crop | 0.45 | 0.2-0.4 | jersey,cotton
+#color# baby tee | 0.50 | 0.1-0.3 | cotton

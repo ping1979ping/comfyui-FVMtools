@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tone-on-tone weave | 0.35 | top,bottom | 0.6-0.9
+subtle metallic sheen | 0.30 | top,bottom | 0.7-1.0
+geometric line motif | 0.25 | top,bottom | 0.7-1.0
+abstract minimalist pattern | 0.25 | top,outerwear | 0.7-1.0
+matte-shine contrast | 0.30 | top,bottom | 0.7-1.0
+clean color-block panels | 0.25 | top,bottom | 0.7-1.0
+discreet jacquard texture | 0.25 | top,outerwear | 0.7-1.0
+modern stripe accent | 0.20 | top,outerwear | 0.6-0.9
+asymmetric paneling | 0.20 | top,bottom | 0.7-1.0
+solid matte finish | 0.40 | top,bottom | 0.6-1.0

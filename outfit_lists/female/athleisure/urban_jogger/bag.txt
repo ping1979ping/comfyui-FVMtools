@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+chest rig | 0.50 | 0.0-0.3 | nylon,polyester
+fanny pack | 0.55 | 0.0-0.2 | nylon,polyester
+mini sling | 0.50 | 0.0-0.3 | nylon,polyester
+
+# mid-casual
+designer crossbody | 0.45 | 0.2-0.5 | nylon,faux-leather
+streetwear backpack | 0.50 | 0.0-0.3 | nylon,polyester
+shoulder duffel | 0.40 | 0.0-0.3 | nylon,canvas

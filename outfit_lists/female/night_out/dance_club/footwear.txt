@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# platform stilettos | 0.75 | 0.3-0.6 | vinyl,leather
+#color# strappy dance heels | 0.70 | 0.3-0.6 | satin,leather
+#color# thigh-high boots | 0.55 | 0.3-0.6 | vinyl,leather
+#color# chunky platform sandals | 0.50 | 0.3-0.6 | leather,vinyl
+#color# glitter-finish heels | 0.55 | 0.3-0.6 | satin
+#color# ankle-strap club heels | 0.65 | 0.3-0.6 | leather,satin
+#color# holographic boots | 0.40 | 0.3-0.5 | vinyl

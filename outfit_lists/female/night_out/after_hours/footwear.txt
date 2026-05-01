@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# chunky platform sneakers | 0.55 | 0.3-0.5 | leather,canvas
+#color# pointed-toe ankle boots | 0.65 | 0.3-0.6 | leather,suede
+#color# slim knee-high boots | 0.55 | 0.3-0.6 | leather,suede
+#color# sock heel ankle boots | 0.50 | 0.3-0.6 | jersey,leather
+#color# strappy minimal heels | 0.55 | 0.4-0.6 | satin,leather
+#color# combat-style boots | 0.45 | 0.3-0.5 | leather
+#color# patent stiletto pumps | 0.50 | 0.4-0.6 | jersey

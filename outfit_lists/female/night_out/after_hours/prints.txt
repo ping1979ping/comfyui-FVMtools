@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+matte black finish | 0.65 | top,bottom,outerwear | 0.3-0.6
+tonal monochrome | 0.55 | top,bottom | 0.3-0.6
+subtle reflective stripe | 0.40 | top,outerwear | 0.3-0.5
+techwear paneling | 0.40 | top,bottom,outerwear | 0.3-0.5
+glossy lacquer accent | 0.40 | bag,footwear | 0.3-0.6
+minimal logo print | 0.35 | top,bag | 0.3-0.5
+asymmetric color-block | 0.40 | top,bottom | 0.3-0.6
+brushed metal accent | 0.30 | bag,accessories | 0.3-0.6
+charcoal gradient | 0.35 | top,bottom | 0.3-0.5
+laser-cut detail | 0.30 | top,bag | 0.3-0.6

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+muted jewel-tone | 0.55 | top,bottom,outerwear | 0.5-0.8
+subtle metallic sheen | 0.45 | top,accessories,bag | 0.5-0.8
+delicate pearl trim | 0.30 | top,bag | 0.5-0.8
+fine pinstripe | 0.30 | bottom,outerwear | 0.5-0.8
+discreet polka dots | 0.25 | top,bottom | 0.5-0.7
+crystal-embellished detail | 0.35 | top,accessories | 0.5-0.8
+tonal floral motif | 0.35 | top,bottom | 0.5-0.7
+art-deco geometry | 0.30 | top,bag | 0.5-0.8
+embossed monogram | 0.25 | bag,accessories | 0.5-0.8
+lacquered finish | 0.30 | bag,accessories | 0.5-0.8

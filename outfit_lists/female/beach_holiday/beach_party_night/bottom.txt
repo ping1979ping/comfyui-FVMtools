@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sequined mini skirt | 0.55 | 0.1-0.3 | polyester
+metallic shorts | 0.45 | 0.1-0.3 | polyester,nylon
+high-rise denim shorts | 0.50 | 0.0-0.2 | cotton
+flowy maxi skirt | 0.45 | 0.1-0.3 | viscose,silk
+asymmetric mini | 0.45 | 0.1-0.3 | polyester,silk
+bodycon midi skirt | 0.40 | 0.2-0.4 | polyester,viscose
+slit-cut maxi | 0.45 | 0.2-0.4 | viscose,silk
+fringe miniskirt | 0.40 | 0.1-0.3 | suede,polyester
+shiny shorts | 0.45 | 0.1-0.3 | satin,polyester
+open-knit wrap skirt | 0.40 | 0.1-0.3 | mesh
+glittered bottoms | 0.40 | 0.0-0.2 | polyester
+fluid pareo | 0.40 | 0.0-0.3 | silk,viscose

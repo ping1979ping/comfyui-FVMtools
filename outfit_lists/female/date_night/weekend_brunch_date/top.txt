@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+puff-sleeve blouse | 0.6 | 0.4-0.6 | cotton,poplin
+flowy peasant top | 0.5 | 0.3-0.5 | cotton,linen
+ribbed knit top | 0.5 | 0.3-0.5 | cotton,modal
+tied-front blouse | 0.5 | 0.4-0.6 | poplin,linen
+crewneck tee | 0.6 | 0.3-0.5 | cotton,modal
+button-up shirt | 0.6 | 0.4-0.6 | poplin,linen
+square-neck top | 0.5 | 0.4-0.6 | cotton,poplin
+camp-collar shirt | 0.4 | 0.3-0.5 | poplin,linen
+boatneck tee | 0.4 | 0.3-0.5 | cotton,modal
+flutter-sleeve blouse | 0.5 | 0.4-0.6 | poplin,georgette
+poet-style blouse | 0.4 | 0.4-0.6 | linen

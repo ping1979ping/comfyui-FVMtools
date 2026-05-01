@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VINO" | 0.10 | top | retro serif
+"TOAST" | 0.10 | top | classic serif
+"BORDEAUX" | 0.10 | top | elegant serif
+"SALUT" | 0.10 | top | thin script
+"CHEERS" | 0.10 | top | minimal sans-serif

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+soft floral motif | 0.55 | top,bottom | 0.4-0.7
+botanical embroidery | 0.40 | top,bag | 0.4-0.7
+pastel watercolor | 0.45 | top,bottom | 0.4-0.6
+subtle metallic shimmer | 0.40 | top,accessories | 0.4-0.7
+woven raffia texture | 0.35 | bag,footwear | 0.4-0.6
+delicate beaded trim | 0.35 | top,bag | 0.4-0.7
+abstract sunset gradient | 0.40 | top | 0.4-0.6
+tonal stripes | 0.35 | top,bottom | 0.4-0.6
+small polka dots | 0.30 | top,bottom | 0.4-0.6
+boho geometric | 0.30 | top,bag | 0.4-0.6

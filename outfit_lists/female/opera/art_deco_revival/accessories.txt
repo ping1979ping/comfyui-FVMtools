@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# jewelry
+long pearl rope necklace | 0.85 | 0.7-1.0 | metal
+geometric drop earrings | 0.75 | 0.7-1.0 | metal
+art deco cuff bracelet | 0.65 | 0.7-1.0 | metal
+diamond chandelier earrings | 0.60 | 0.7-1.0 | metal
+geometric brooch | 0.55 | 0.7-1.0 | metal
+multi-strand pearl choker | 0.50 | 0.7-1.0 | metal
+jeweled cocktail ring | 0.55 | 0.7-1.0 | metal
+beaded statement necklace | 0.50 | 0.7-1.0 | metal
+
+# other
+elbow-length opera gloves | 0.55 | 0.7-1.0 | satin,silk
+ostrich feather fan | 0.30 | 0.8-1.0 | silk
+beaded long cigarette holder | 0.20 | 0.7-1.0 | metal
+art deco hair comb | 0.55 | 0.7-1.0 | metal

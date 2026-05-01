@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# beaded flapper-style bodice | 0.70 | 0.7-1.0 | silk,satin
+#color# fringed drop-waist bodice | 0.55 | 0.7-1.0 | silk,satin
+#color# scoop-back v-neck bodice | 0.60 | 0.7-1.0 | silk,satin
+#color# embellished cap-sleeve bodice | 0.55 | 0.7-1.0 | silk,satin
+#color# beaded straight-line bodice | 0.65 | 0.7-1.0 | silk,satin
+#color# geometric-pattern halter bodice | 0.50 | 0.7-1.0 | silk,satin
+#color# sequined cocktail bodice | 0.55 | 0.7-1.0 | silk,satin
+#color# pearl-adorned sleeveless bodice | 0.50 | 0.7-1.0 | silk,satin
+#color# scalloped-hem boatneck top | 0.45 | 0.7-1.0 | silk,satin
+#color# faux-fur trimmed bodice | 0.40 | 0.7-1.0 | silk,faux_fur

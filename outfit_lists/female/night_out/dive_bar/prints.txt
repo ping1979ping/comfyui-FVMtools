@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+band logo graphic | 0.70 | top | 0.2-0.5
+distressed wash | 0.60 | top,bottom,outerwear | 0.2-0.5
+plaid pattern | 0.45 | top,bottom,outerwear | 0.2-0.5
+skull motif | 0.40 | top,bag | 0.2-0.5
+faded tie-dye | 0.35 | top | 0.2-0.4
+patches and pins | 0.40 | outerwear,bag | 0.2-0.4
+worn camo | 0.30 | top,bottom | 0.2-0.4
+splatter paint | 0.30 | top,outerwear | 0.2-0.4
+vintage logo print | 0.45 | top,bag | 0.2-0.5
+ripped detail | 0.55 | top,bottom | 0.2-0.5

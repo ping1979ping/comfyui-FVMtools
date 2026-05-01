@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+soft hair scarf | 0.15 | 0.4-0.6 | charmeuse,cashmere
+slim headband | 0.1 | 0.4-0.6 | charmeuse,velvet
+small hair pin | 0.15 | 0.4-0.7 | metal
+elegant barrette | 0.1 | 0.5-0.7 | metal

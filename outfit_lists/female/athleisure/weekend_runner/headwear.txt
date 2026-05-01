@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+running cap | 0.55 | 0.0-0.3 | polyester,nylon
+performance visor | 0.45 | 0.0-0.3 | polyester,nylon
+
+# mid-casual
+mesh-back cap | 0.50 | 0.0-0.3 | polyester,mesh
+thermal beanie | 0.40 | 0.1-0.3 | polyester,fleece

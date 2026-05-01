@@ -1,0 +1,8 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BLOOM" | 0.25 | top | floral script
+"ROMANCE" | 0.2 | top | victorian
+"WILDFLOWER" | 0.2 | top | romantic cursive
+"DAYDREAM" | 0.2 | top | flowing script
+"LOVE" | 0.15 | top | calligraphy
+"PETAL" | 0.15 | top | floral
+"COTTAGE" | 0.15 | top | romantic

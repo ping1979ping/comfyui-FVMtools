@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+worn ankle boots | 0.7 | 0.2-0.4 | leather,suede
+gladiator sandals | 0.6 | 0.1-0.3 | leather
+moccasins | 0.5 | 0.1-0.3 | suede
+camel boots | 0.5 | 0.2-0.4 | leather
+embroidered slippers | 0.5 | 0.1-0.3 | cotton,raw silk
+woven flats | 0.5 | 0.1-0.3 | hemp,cotton
+peasant clogs | 0.4 | 0.2-0.4 | leather
+beaded sandals | 0.4 | 0.1-0.3 | leather

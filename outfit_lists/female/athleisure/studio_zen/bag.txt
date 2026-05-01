@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+yoga mat carrier | 0.50 | 0.0-0.2 | cotton,canvas
+canvas tote | 0.50 | 0.0-0.2 | cotton
+woven shoulder bag | 0.45 | 0.1-0.3 | jute,cotton
+
+# mid-casual
+soft hobo bag | 0.40 | 0.1-0.3 | cotton,canvas
+small crossbody | 0.40 | 0.1-0.3 | nylon,cotton
+drawstring bag | 0.40 | 0.0-0.2 | cotton,canvas

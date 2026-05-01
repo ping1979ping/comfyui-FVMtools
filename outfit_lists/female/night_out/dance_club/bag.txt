@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# mini chain crossbody | 0.75 | 0.3-0.6 | leather,metal
+#color# sequined wristlet | 0.55 | 0.3-0.6 | sequin
+#color# holographic mini bag | 0.50 | 0.3-0.5 | vinyl
+#color# fanny pack with chains | 0.45 | 0.3-0.5 | leather,metal
+#color# clear acrylic clutch | 0.40 | 0.3-0.6 | sequin
+#color# small disco pouch | 0.45 | 0.3-0.6 | sequin,metal
+#color# vinyl mini tote | 0.40 | 0.3-0.5 | sequin

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral brocade pattern | 0.35 | top,bottom | 0.8-1.0
+damask motif | 0.30 | top,bottom | 0.8-1.0
+ornate jacquard weave | 0.30 | top,bottom,outerwear | 0.7-1.0
+heirloom lace overlay | 0.40 | top,bottom | 0.7-1.0
+beaded floral embroidery | 0.35 | top,bottom | 0.8-1.0
+sequin scrollwork | 0.30 | top,bottom | 0.8-1.0
+metallic thread embroidery | 0.30 | top,outerwear | 0.8-1.0
+crystal scatter pattern | 0.25 | top,bottom | 0.9-1.0
+embroidered medallion motif | 0.25 | top,outerwear | 0.7-1.0
+tone-on-tone damask | 0.25 | top,bottom | 0.7-1.0
+pearl-beaded vine pattern | 0.20 | top,bottom | 0.8-1.0

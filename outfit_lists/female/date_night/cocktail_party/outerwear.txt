@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+cropped jacket | 0.4 | 0.5-0.7 | crepe,wool blend
+fitted blazer | 0.5 | 0.5-0.7 | crepe,wool blend
+soft stole | 0.4 | 0.6-0.8 | faux-fur
+sequinned bolero | 0.3 | 0.6-0.8 | tulle
+draped wrap | 0.3 | 0.5-0.7 | charmeuse,cashmere
+embellished cape | 0.2 | 0.6-0.8 | crepe

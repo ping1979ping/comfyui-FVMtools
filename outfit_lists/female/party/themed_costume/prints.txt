@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+sequin detail | 0.5 | top,accessories,bag | 0.3-0.6
+fringe trim | 0.4 | top,bottom,bag | 0.3-0.5
+star burst motif | 0.3 | top,accessories | 0.3-0.5
+psychedelic swirl | 0.3 | top,bottom | 0.3-0.5
+gothic damask | 0.2 | top,bottom | 0.4-0.6
+skull motif | 0.2 | top,accessories | 0.3-0.5
+playing card motif | 0.2 | top,bag | 0.3-0.5
+zodiac symbol | 0.2 | top,accessories | 0.3-0.5
+tropical luau | 0.3 | top,bottom | 0.2-0.4
+lace overlay | 0.3 | top | 0.3-0.6

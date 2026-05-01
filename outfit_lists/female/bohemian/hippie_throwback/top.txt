@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+tie-dye tee | 0.8 | 0.0-0.3 | cotton
+fringed halter top | 0.7 | 0.1-0.3 | cotton,suede
+peasant blouse | 0.7 | 0.2-0.4 | cotton,gauze
+crochet bralette | 0.6 | 0.0-0.3 | cotton
+flared bell-sleeve top | 0.6 | 0.2-0.4 | cotton,raw silk
+psychedelic print shirt | 0.6 | 0.0-0.3 | cotton,rayon
+woodstock tunic | 0.5 | 0.1-0.3 | cotton,gauze
+patchwork shirt | 0.5 | 0.1-0.3 | cotton,denim
+70s flowy blouse | 0.6 | 0.2-0.4 | cotton,gauze
+hippie tank | 0.5 | 0.0-0.3 | cotton
+flower-print top | 0.6 | 0.0-0.3 | cotton,rayon
+groovy striped tee | 0.5 | 0.0-0.3 | cotton

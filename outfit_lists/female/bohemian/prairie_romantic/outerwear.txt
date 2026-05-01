@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+knit cardigan | 0.7 | 0.2-0.4 | wool,cotton
+ruffled shawl | 0.6 | 0.2-0.4 | cotton,gauze
+velvet jacket | 0.5 | 0.2-0.4 | velvet
+embroidered duster | 0.5 | 0.2-0.4 | cotton,linen
+romantic capelet | 0.5 | 0.2-0.4 | wool,cotton
+tweed blazer | 0.4 | 0.2-0.4 | tweed
+gauzy wrap | 0.5 | 0.2-0.4 | gauze,cotton
+victorian coat | 0.4 | 0.2-0.4 | wool,velvet
+floral kimono | 0.4 | 0.2-0.4 | chiffon,raw silk
+patchwork shawl | 0.4 | 0.2-0.4 | cotton,wool

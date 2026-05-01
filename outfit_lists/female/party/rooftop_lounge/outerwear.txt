@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# longline blazer | 0.40 | 0.4-0.6 | polyester,wool
+#color# liquid trench | 0.30 | 0.4-0.6 | satin
+#color# cropped jacket | 0.30 | 0.3-0.5 | polyester,satin
+#color# liquid shawl | 0.25 | 0.4-0.6 | silk
+#color# duster cardigan | 0.25 | 0.3-0.5 | knit,modal

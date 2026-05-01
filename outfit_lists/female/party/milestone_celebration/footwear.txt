@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# crystal pumps | 0.55 | 0.4-0.6 | satin,beaded
+#color# strappy stilettos | 0.55 | 0.4-0.6 | satin,faux_leather
+#color# embellished sandals | 0.50 | 0.4-0.6 | beaded,satin
+#color# block heel slingbacks | 0.45 | 0.4-0.6 | satin,faux_leather
+#color# pearl-trim flats | 0.35 | 0.4-0.6 | beaded,satin
+#color# evening platforms | 0.45 | 0.4-0.6 | satin
+#color# bow pumps | 0.35 | 0.4-0.6 | satin

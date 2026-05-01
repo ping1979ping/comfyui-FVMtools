@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"POOLSIDE" | 0.20 | top | bold script
+"VACATION MODE" | 0.20 | top | block letters
+"SUN AND FUN" | 0.20 | top | flowing script
+"DRINKS UP" | 0.15 | top | bold serif
+"OUT OF OFFICE" | 0.20 | top | classic serif
+"RESORT READY" | 0.15 | top | bold sans

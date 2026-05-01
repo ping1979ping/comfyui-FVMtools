@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# distressed denim shorts | 0.75 | 0.2-0.4 | cotton
+#color# ripped skinny jeans | 0.70 | 0.2-0.5 | denim
+#color# faux-leather mini skirt | 0.60 | 0.2-0.5 | leather
+#color# cargo mini skirt | 0.50 | 0.2-0.4 | cotton
+#color# vintage cutoffs | 0.65 | 0.2-0.4 | denim
+#color# studded mini skirt | 0.50 | 0.2-0.5 | leather,denim
+#color# black skinny pants | 0.55 | 0.2-0.5 | denim,jersey
+#color# plaid mini skirt | 0.45 | 0.2-0.4 | flannel,cotton

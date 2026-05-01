@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# classic A-line midi skirt | 0.75 | 0.6-0.9 | silk,satin
+#color# elegant tea-length skirt | 0.70 | 0.6-0.9 | chiffon,silk
+#color# refined column gown skirt | 0.85 | 0.7-0.9 | silk,satin,crepe
+#color# pleated midi skirt | 0.55 | 0.6-0.9 | silk,chiffon
+#color# tailored dress trousers | 0.50 | 0.6-0.9 | wool,crepe
+#color# refined pencil skirt | 0.55 | 0.5-0.8 | crepe,satin
+#color# flowing chiffon midi skirt | 0.55 | 0.6-0.9 | chiffon,silk
+#color# elegant bias-cut skirt | 0.55 | 0.6-0.9 | silk,crepe
+#color# wide-leg dress trousers | 0.40 | 0.6-0.9 | crepe,silk

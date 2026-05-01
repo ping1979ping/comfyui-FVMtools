@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beaded evening bag | 0.65 | 0.5-0.8 | satin
+crystal-embellished clutch | 0.60 | 0.5-0.8 | satin
+metallic clutch | 0.65 | 0.4-0.7 | leather,satin
+minaudiere | 0.50 | 0.6-0.8 | satin
+glittery wristlet | 0.50 | 0.4-0.7 | satin
+chain-strap evening bag | 0.50 | 0.5-0.7 | satin
+disco-style mini bag | 0.40 | 0.4-0.7 | leather

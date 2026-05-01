@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"AMORE" | 0.20 | top | elegant script
+"DOLCE VITA" | 0.20 | top | classic serif
+"COTE D AZUR" | 0.15 | top | refined serif
+"PORTOFINO" | 0.15 | top | elegant serif
+"CIAO BELLA" | 0.20 | top | flowing script
+"VIVE LA MER" | 0.15 | top | classic serif

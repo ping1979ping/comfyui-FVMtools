@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+biker chain bag | 0.65 | 0.4-0.7 | leather
+studded crossbody | 0.55 | 0.4-0.7 | leather
+quilted handbag | 0.55 | 0.4-0.7 | leather
+moto pouch | 0.50 | 0.3-0.6 | leather
+glossy clutch | 0.50 | 0.5-0.7 | leather
+chained shoulder bag | 0.55 | 0.4-0.7 | leather
+boxy top-handle | 0.45 | 0.5-0.7 | leather
+patent envelope | 0.40 | 0.5-0.7 | leather

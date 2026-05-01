@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+cross-trainers | 0.55 | 0.0-0.3 | mesh,nylon
+flexible runners | 0.55 | 0.0-0.3 | mesh,nylon
+slip-on trainers | 0.45 | 0.0-0.3 | mesh,canvas
+
+# mid-casual
+studio sneakers | 0.50 | 0.1-0.3 | mesh,nylon
+training shoes | 0.55 | 0.0-0.3 | mesh,nylon
+recovery foam slides | 0.45 | 0.0-0.2 | foam,rubber

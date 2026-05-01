@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+handwoven bag | 0.65 | 0.0-0.3 | straw
+canvas tote | 0.55 | 0.0-0.2 | cotton
+tanned crossbody | 0.50 | 0.1-0.4 | leather
+small bucket bag | 0.45 | 0.1-0.3 | leather,straw
+boho fringe bag | 0.40 | 0.0-0.3 | cotton,leather
+rattan handbag | 0.45 | 0.1-0.3 | straw
+embroidered shoulder bag | 0.40 | 0.0-0.3 | cotton
+mini envelope clutch | 0.35 | 0.1-0.3 | leather,cotton

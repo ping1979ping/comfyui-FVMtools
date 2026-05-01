@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+midi sundress skirt | 0.5 | 0.3-0.5 | cotton,linen
+high-waisted jeans | 0.7 | 0.3-0.5 | denim
+A-line skirt | 0.6 | 0.4-0.6 | cotton,poplin
+relaxed trousers | 0.5 | 0.4-0.6 | cotton
+wide-leg crop pants | 0.5 | 0.4-0.6 | cotton,poplin
+flowy midi skirt | 0.5 | 0.4-0.6 | poplin,georgette
+slim chinos | 0.4 | 0.3-0.5 | cotton
+short A-line skirt | 0.4 | 0.3-0.5 | denim
+paperbag-waist pants | 0.4 | 0.4-0.6 | cotton,poplin
+tiered midi skirt | 0.4 | 0.4-0.6 | cotton

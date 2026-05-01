@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+round wire glasses | 0.6 | 0.1-0.4 | metal,resin
+vintage cameo necklace | 0.5 | 0.2-0.4 | resin,metal
+indie ring stack | 0.6 | 0.1-0.3 | metal
+choker | 0.5 | 0.1-0.3 | leather,velvet
+artsy enamel pin | 0.5 | 0.0-0.3 | metal,resin
+tiny hoop earrings | 0.6 | 0.1-0.3 | metal
+mismatched earrings | 0.5 | 0.1-0.3 | metal,resin
+pendant chain | 0.5 | 0.1-0.3 | metal,leather
+beaded bracelet | 0.5 | 0.1-0.3 | cotton,resin
+silk neck scarf | 0.4 | 0.2-0.4 | chiffon

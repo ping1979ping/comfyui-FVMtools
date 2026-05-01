@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# ornate embroidered clutch | 0.90 | 0.8-1.0 | brocade,satin
+#color# baroque pearl-encrusted bag | 0.70 | 0.8-1.0 | satin
+#color# gilded minaudiere | 0.60 | 0.8-1.0 | metal
+#color# regal box clutch | 0.55 | 0.8-1.0 | metal,brocade
+#color# tasseled drawstring purse | 0.50 | 0.7-1.0 | silk,brocade
+#color# ornate frame clutch | 0.55 | 0.8-1.0 | satin,brocade
+#color# embroidered drawstring evening bag | 0.45 | 0.7-1.0 | brocade,silk
+#color# crystal-encrusted clutch | 0.50 | 0.8-1.0 | satin

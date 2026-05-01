@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+caramel top-handle bag | 0.65 | 0.4-0.7 | leather
+slouchy hobo | 0.55 | 0.3-0.6 | leather
+camel crossbody | 0.60 | 0.4-0.7 | leather
+warm-tone tote | 0.55 | 0.4-0.7 | leather
+fringed shoulder bag | 0.45 | 0.3-0.6 | leather
+chocolate satchel | 0.50 | 0.4-0.7 | leather
+soft pouch | 0.40 | 0.3-0.6 | leather
+amber clutch | 0.40 | 0.5-0.7 | leather

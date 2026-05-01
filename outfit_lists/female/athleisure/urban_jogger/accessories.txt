@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+chain necklace | 0.50 | 0.1-0.4 | metal
+hoop earrings | 0.50 | 0.1-0.4 | metal
+oversized shades | 0.55 | 0.1-0.4 | metal,acetate
+chunky watch | 0.45 | 0.1-0.4 | metal
+bandana | 0.40 | 0.0-0.3 | cotton
+
+# mid-casual
+chunky rings | 0.45 | 0.1-0.4 | metal
+sporty sunglasses | 0.45 | 0.0-0.3 | acetate
+beaded necklace | 0.35 | 0.1-0.3 | metal,wood

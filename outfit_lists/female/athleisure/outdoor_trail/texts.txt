@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WILD" | 0.2 | top | bold serif
+"EXPLORE" | 0.25 | top | minimal sans-serif
+"TRAIL" | 0.2 | top | adventure font
+"PEAK" | 0.2 | top | bold block letters
+"WANDER" | 0.2 | top | flowing script
+"NORTH" | 0.15 | top | bold serif
+"ROAM" | 0.2 | top | minimal sans-serif
+"ELEVATE" | 0.15 | top | clean modern font
+"SUMMIT" | 0.15 | top | adventure font

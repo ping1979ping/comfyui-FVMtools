@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"Aperitivo" | 0.10 | top | art deco
+"Champagne" | 0.10 | bag | elegant script
+"Mood" | 0.10 | top | minimal serif
+"Lounge" | 0.10 | bag | thin sans
+"After Eight" | 0.08 | top | classic serif

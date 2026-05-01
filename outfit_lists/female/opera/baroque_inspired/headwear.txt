@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# ornate jeweled crown | 0.55 | 0.9-1.0 | metal
+#color# baroque pearl tiara | 0.55 | 0.8-1.0 | metal
+#color# gilded hair comb | 0.55 | 0.7-1.0 | metal
+#color# feathered baroque headpiece | 0.45 | 0.8-1.0 | silk
+#color# ornate hair pins | 0.55 | 0.7-1.0 | metal

@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# fringed drop-waist gown skirt | 0.85 | 0.7-1.0 | silk,satin
+#color# beaded flapper gown skirt | 0.85 | 0.7-1.0 | silk,satin
+#color# tiered fringe skirt | 0.65 | 0.7-1.0 | silk,satin
+#color# straight-line columnar gown skirt | 0.75 | 0.7-1.0 | silk,satin
+#color# scalloped-hem midi skirt | 0.55 | 0.6-0.9 | silk,satin
+#color# pleated tea-length skirt | 0.55 | 0.6-0.9 | silk,chiffon
+#color# embellished bias gown skirt | 0.60 | 0.7-1.0 | silk,satin
+#color# wide-leg evening trousers | 0.45 | 0.7-1.0 | silk,satin
+#color# tassel-trimmed gown skirt | 0.45 | 0.7-1.0 | silk,satin

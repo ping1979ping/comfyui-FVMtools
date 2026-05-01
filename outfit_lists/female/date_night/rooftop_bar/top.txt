@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+strappy camisole | 0.8 | 0.5-0.7 | silk,satin
+halter top | 0.6 | 0.5-0.7 | silk,satin,jersey
+asymmetric top | 0.5 | 0.5-0.7 | crepe,silk
+backless top | 0.4 | 0.5-0.7 | silk,satin
+draped blouse | 0.6 | 0.5-0.7 | silk,chiffon,crepe
+cropped blouse | 0.5 | 0.5-0.7 | silk,crepe
+fitted bodysuit | 0.6 | 0.4-0.7 | jersey,modal
+off-shoulder blouse | 0.5 | 0.5-0.7 | chiffon,crepe
+ruched top | 0.5 | 0.4-0.6 | jersey,satin
+sleeveless turtleneck | 0.4 | 0.5-0.7 | jersey,modal
+silky tank | 0.6 | 0.5-0.7 | silk,satin

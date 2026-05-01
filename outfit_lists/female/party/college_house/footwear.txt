@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# party sneakers | 0.65 | 0.1-0.3 | mesh,canvas
+#color# chunky platform sandals | 0.50 | 0.2-0.4 | faux_leather
+#color# combat boots | 0.45 | 0.2-0.4 | faux_leather
+#color# slide sandals | 0.40 | 0.0-0.2 | rubber,polyester
+#color# block heel boots | 0.40 | 0.2-0.4 | faux_leather,suede
+#color# casual sneakers | 0.50 | 0.0-0.2 | canvas
+#color# strappy heels | 0.35 | 0.2-0.4 | faux_leather

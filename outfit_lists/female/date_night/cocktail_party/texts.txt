@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GLAM" | 0.10 | top | bold modern
+"CHEERS" | 0.10 | top | playful script
+"SPARKLE" | 0.10 | top | shiny serif
+"FETE" | 0.10 | top | elegant serif
+"VIP" | 0.10 | top | bold sans-serif

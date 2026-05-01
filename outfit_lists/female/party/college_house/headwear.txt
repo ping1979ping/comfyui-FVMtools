@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# baseball cap | 0.30 | 0.0-0.2 | cotton
+#color# trucker cap | 0.20 | 0.0-0.2 | cotton,mesh
+#color# bucket hat | 0.25 | 0.1-0.3 | cotton
+#color# beanie | 0.20 | 0.0-0.2 | wool,cotton
+#color# scrunchie wrap | 0.30 | 0.1-0.3 | satin

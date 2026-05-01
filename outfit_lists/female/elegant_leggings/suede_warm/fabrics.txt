@@ -1,0 +1,8 @@
+# format: fabric_name | formality | family | weight
+
+suede | 0.6 | animal | medium
+natural | 0.6 | natural | medium
+leather | 0.6 | animal | medium
+silk | 0.7 | natural | light
+jersey | 0.4 | knit | light
+metal | 0.5 | accessories | light

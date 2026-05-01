@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# strapless bustier bodice | 0.70 | 0.8-1.0 | silk,satin,taffeta
+#color# fitted corset top | 0.65 | 0.8-1.0 | silk,satin,brocade
+#color# off-shoulder draped bodice | 0.70 | 0.7-1.0 | silk,satin
+#color# beaded sweetheart bodice | 0.55 | 0.8-1.0 | silk,satin
+#color# embroidered halter bodice | 0.50 | 0.8-1.0 | silk,satin
+#color# high-neck bodice with cape sleeves | 0.45 | 0.7-1.0 | silk,satin,chiffon
+#color# v-neck draped bodice | 0.55 | 0.7-1.0 | silk,satin
+#color# illusion-neck embellished bodice | 0.45 | 0.8-1.0 | silk,organza
+#color# scalloped lace bodice | 0.50 | 0.7-1.0 | lace,silk
+#color# crystal-encrusted bodice | 0.40 | 0.9-1.0 | silk,satin

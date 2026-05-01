@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+race-day shoes | 0.55 | 0.0-0.2 | mesh,nylon
+cushioned trainers | 0.65 | 0.0-0.3 | mesh,nylon
+stability runners | 0.55 | 0.0-0.3 | mesh,nylon
+
+# mid-casual
+trail runners | 0.50 | 0.0-0.3 | mesh,nylon,rubber
+lightweight racers | 0.50 | 0.0-0.3 | mesh,nylon
+recovery slides | 0.40 | 0.0-0.2 | foam,rubber

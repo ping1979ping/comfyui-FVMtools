@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+handwoven bag | 0.65 | 0.0-0.2 | straw
+oversized beach tote | 0.65 | 0.0-0.2 | cotton,mesh
+rattan handbag | 0.50 | 0.1-0.3 | straw
+canvas tote | 0.50 | 0.0-0.2 | cotton
+bamboo handle bag | 0.40 | 0.1-0.3 | straw
+shell-trimmed clutch | 0.30 | 0.1-0.3 | cotton,shell
+knit-style shoulder bag | 0.40 | 0.0-0.2 | crochet
+fishnet bag | 0.35 | 0.0-0.1 | mesh
+fringe crossbody | 0.30 | 0.1-0.3 | cotton,leather

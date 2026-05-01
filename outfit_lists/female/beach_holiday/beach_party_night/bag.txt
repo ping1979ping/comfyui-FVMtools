@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sequined clutch | 0.55 | 0.2-0.4 | polyester
+metallic mini bag | 0.55 | 0.1-0.4 | leather,metal
+fringe bag | 0.40 | 0.1-0.3 | suede,leather
+beaded crossbody | 0.45 | 0.1-0.3 | cotton,plastic
+neon wristlet | 0.35 | 0.0-0.3 | polyester,plastic
+chain shoulder bag | 0.40 | 0.2-0.4 | leather,metal
+glittered envelope clutch | 0.35 | 0.2-0.4 | polyester
+mini bucket bag | 0.35 | 0.1-0.3 | leather

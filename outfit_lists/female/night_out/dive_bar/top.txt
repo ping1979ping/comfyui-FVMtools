@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# graphic band tee | 0.85 | 0.2-0.5 | cotton
+#color# cropped tank top | 0.70 | 0.2-0.5 | cotton,jersey
+#color# fishnet long-sleeve | 0.55 | 0.2-0.5 | mesh
+#color# distressed muscle tee | 0.55 | 0.2-0.5 | cotton
+#color# vintage rock tee | 0.65 | 0.2-0.5 | cotton
+#color# sleeveless flannel shirt | 0.45 | 0.2-0.4 | cotton
+#color# tube top with chains | 0.50 | 0.2-0.5 | jersey,metal
+#color# studded crop top | 0.50 | 0.2-0.5 | cotton,leather
+#color# vintage concert tee | 0.60 | 0.2-0.5 | cotton
+#color# tied knot crop tee | 0.55 | 0.2-0.5 | cotton
+#color# mesh layering shirt | 0.45 | 0.2-0.4 | cotton

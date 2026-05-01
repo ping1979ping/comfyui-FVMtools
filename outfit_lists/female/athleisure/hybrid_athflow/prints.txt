@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+seamless ribbing | 0.4 | top,bottom | 0.0-0.3
+matching set tonal | 0.5 | top,bottom | 0.0-0.4
+sage tone | 0.4 | top,bottom | 0.0-0.4
+muted neutral | 0.5 | top,bottom,outerwear | 0.0-0.4
+contour seams | 0.4 | top,bottom | 0.0-0.3
+ombre fade | 0.3 | top,bottom | 0.0-0.4
+butter-soft finish | 0.4 | top,bottom | 0.0-0.3
+crossover detail | 0.3 | bottom | 0.0-0.3
+mesh accent | 0.3 | top | 0.0-0.3
+minimal logo | 0.3 | top,headwear,bag | 0.1-0.4

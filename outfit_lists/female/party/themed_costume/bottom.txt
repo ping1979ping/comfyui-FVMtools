@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tutu skirt | 0.55 | 0.3-0.5 | tulle
+#color# flared bell-bottoms | 0.50 | 0.3-0.5 | polyester,denim
+#color# pleated mini | 0.50 | 0.3-0.5 | chiffon,satin
+#color# ruffled tiered skirt | 0.45 | 0.3-0.5 | chiffon,polyester
+#color# faux leather pants | 0.45 | 0.3-0.5 | faux_leather
+#color# crushed flares | 0.40 | 0.4-0.6 | velvet
+#color# circle skirt | 0.50 | 0.2-0.4 | cotton,polyester
+#color# fringe miniskirt | 0.40 | 0.3-0.5 | suede,polyester
+#color# disco shorts | 0.45 | 0.3-0.5 | metallic,satin
+#color# harem pants | 0.30 | 0.3-0.5 | chiffon,polyester

@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+layered tiered skirt | 0.7 | 0.2-0.4 | cotton,gauze
+embroidered palazzo | 0.6 | 0.2-0.4 | linen,cotton
+ethnic wrap skirt | 0.6 | 0.2-0.4 | cotton,raw silk
+sarong skirt | 0.6 | 0.1-0.3 | cotton,rayon
+banded harem pants | 0.5 | 0.1-0.3 | cotton
+churidar pants | 0.5 | 0.2-0.4 | cotton,raw silk
+ikat-pattern trousers | 0.4 | 0.2-0.4 | cotton,raw silk
+mirror-work skirt | 0.5 | 0.2-0.4 | cotton,velvet
+patola-style skirt | 0.4 | 0.2-0.4 | raw silk,cotton
+woven wrap pants | 0.4 | 0.1-0.3 | cotton,hemp
+brocade midi skirt | 0.4 | 0.2-0.4 | raw silk

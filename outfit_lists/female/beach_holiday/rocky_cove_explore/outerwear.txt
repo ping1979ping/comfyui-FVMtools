@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+lightweight windbreaker | 0.55 | 0.0-0.2 | nylon,polyester
+zip-up hoodie | 0.50 | 0.0-0.2 | cotton,polyester
+quick-dry pullover | 0.45 | 0.0-0.2 | polyester
+wetsuit vest | 0.40 | 0.0-0.2 | neoprene
+packable rain jacket | 0.45 | 0.0-0.2 | nylon
+flannel overshirt | 0.40 | 0.0-0.2 | cotton
+fleece-lined jacket | 0.35 | 0.0-0.2 | polyester
+sun-protective shirt | 0.40 | 0.0-0.2 | polyester

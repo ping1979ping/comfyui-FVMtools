@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# birthday tiara | 0.30 | 0.3-0.5 | metal,beaded
+#color# bride-to-be sash | 0.20 | 0.3-0.5 | satin
+#color# floral crown | 0.25 | 0.4-0.6 | fabric
+#color# pearl headband | 0.25 | 0.4-0.6 | beaded
+#color# veil clip | 0.15 | 0.4-0.6 | tulle
+#color# milestone sash band | 0.20 | 0.3-0.5 | satin

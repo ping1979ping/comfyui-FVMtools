@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+beaded accents | 0.65 | top,bottom,bag | 0.5-0.8
+crystal sprinkle | 0.55 | top,bag,footwear | 0.5-0.8
+ornate embroidery | 0.55 | top,bottom,outerwear | 0.5-0.8
+pearl trim | 0.50 | top,accessories,bag | 0.5-0.8
+brocade pattern | 0.50 | top,bottom,outerwear | 0.5-0.7
+opulent jacquard | 0.45 | bottom,outerwear | 0.5-0.7
+jewel detail | 0.55 | top,bag,accessories | 0.5-0.8
+ornamental trim | 0.50 | top,bottom | 0.5-0.7
+luxe metallic finish | 0.50 | top,bottom,bag | 0.5-0.7

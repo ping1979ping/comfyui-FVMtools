@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"MUSE" | 0.10 | top | minimal sans-serif
+"AVANT" | 0.10 | top | thin modern
+"BAUHAUS" | 0.10 | top | geometric sans-serif
+"DADA" | 0.10 | top | bold modern
+"GALERIE" | 0.10 | top | thin sans-serif

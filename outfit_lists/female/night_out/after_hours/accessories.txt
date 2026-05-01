@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# minimalist hoop earrings | 0.65 | 0.3-0.6 | metal
+#color# slim chain choker | 0.55 | 0.3-0.6 | metal
+#color# stacked rings | 0.50 | 0.3-0.6 | metal
+#color# thin watch | 0.45 | 0.3-0.6 | metal
+#color# delicate ear cuff | 0.45 | 0.3-0.6 | metal
+#color# slim wrist cuff | 0.40 | 0.3-0.6 | leather,metal
+#color# layered fine chains | 0.55 | 0.3-0.6 | metal

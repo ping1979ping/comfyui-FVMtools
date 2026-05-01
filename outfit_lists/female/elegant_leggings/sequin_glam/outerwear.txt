@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped sparkle blazer | 0.65 | 0.5-0.7 | satin
+glitter coat | 0.50 | 0.5-0.7 | satin
+faux-fur cape | 0.55 | 0.5-0.7 | faux_fur
+shimmery duster | 0.45 | 0.5-0.7 | satin
+embellished bolero | 0.40 | 0.5-0.7 | satin
+metallic trench | 0.40 | 0.5-0.7 | satin
+short faux-fur jacket | 0.50 | 0.4-0.7 | faux_fur

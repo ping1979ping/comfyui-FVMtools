@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bikini bottoms | 0.75 | 0.0-0.1 | nylon,polyester
+high-waisted swim bottoms | 0.55 | 0.0-0.1 | nylon,polyester
+tied side bottoms | 0.55 | 0.0-0.1 | nylon,polyester
+boyleg bottoms | 0.50 | 0.0-0.1 | nylon,polyester
+ruched bottoms | 0.45 | 0.0-0.1 | nylon,polyester
+swim skirt | 0.45 | 0.0-0.2 | nylon,polyester
+poolside shorts | 0.50 | 0.0-0.2 | cotton,polyester
+summer shorts | 0.50 | 0.0-0.2 | linen
+mini skirt | 0.45 | 0.1-0.3 | cotton,linen
+flowing pareo | 0.55 | 0.0-0.2 | viscose,cotton
+sarong wrap | 0.55 | 0.0-0.2 | cotton,linen

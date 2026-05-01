@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+topographic pattern | 0.4 | top,bag,outerwear | 0.0-0.4
+camo print | 0.4 | top,bottom,outerwear | 0.0-0.3
+forest motif | 0.3 | top,outerwear | 0.0-0.3
+mountain graphic | 0.3 | top,headwear,bag | 0.0-0.3
+earth tone | 0.5 | top,bottom,outerwear | 0.0-0.4
+moss accent | 0.3 | top,bottom | 0.0-0.3
+trail-blaze graphic | 0.3 | top,outerwear | 0.0-0.3
+ranger badge | 0.3 | top,headwear,outerwear | 0.0-0.4
+sunset gradient | 0.3 | top,bag | 0.0-0.3
+weather-resistant coating | 0.3 | outerwear | 0.0-0.4
+ripstop pattern | 0.3 | bottom,outerwear,bag | 0.0-0.3

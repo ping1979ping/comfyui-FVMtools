@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sequin micro skirt | 0.75 | 0.3-0.6 | satin
+#color# fringed dance shorts | 0.55 | 0.3-0.5 | suede,satin
+#color# metallic bodycon mini | 0.70 | 0.4-0.6 | satin,jersey
+#color# rhinestone-trimmed pants | 0.45 | 0.4-0.7 | satin
+#color# beaded mini skirt | 0.60 | 0.4-0.6 | sequin,satin
+#color# high-slit maxi skirt | 0.50 | 0.5-0.7 | satin,silk
+#color# sparkle leggings | 0.45 | 0.3-0.5 | jersey,sequin
+#color# satin tuxedo trousers | 0.40 | 0.5-0.7 | sequin
+#color# feather-trimmed mini | 0.45 | 0.4-0.6 | feather,satin

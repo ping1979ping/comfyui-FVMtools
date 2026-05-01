@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BRUNCH" | 0.10 | top | playful script
+"MIMOSA" | 0.10 | top | retro script
+"SUNDAY" | 0.10 | top | minimal sans-serif
+"COFFEE" | 0.10 | top | bold lowercase
+"PASTEL" | 0.10 | top | thin sans-serif
+"CAFE" | 0.10 | top | classic serif

@@ -1,0 +1,8 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PARADISE" | 0.20 | top | bold retro
+"ALOHA" | 0.25 | top | tropical script
+"BEACH BABE" | 0.20 | top | bold block letters
+"ISLAND TIME" | 0.20 | top | retro script
+"VITAMIN SEA" | 0.20 | top | flowing script
+"SUMMER LOVIN" | 0.15 | top | retro script
+"RESORT LIFE" | 0.15 | top | bold serif

@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+midi skirt | 0.55 | 0.1-0.4 | linen
+high-waisted shorts | 0.55 | 0.0-0.3 | cotton,linen
+flowy maxi skirt | 0.50 | 0.1-0.3 | viscose,linen
+wrap skirt | 0.55 | 0.1-0.3 | cotton,linen
+wide-leg pants | 0.45 | 0.2-0.4 | linen,cotton
+tailored shorts | 0.50 | 0.1-0.3 | linen,cotton
+A-line skirt | 0.45 | 0.1-0.4 | cotton,linen
+beach pareo | 0.50 | 0.0-0.2 | viscose,cotton
+midi pleated skirt | 0.40 | 0.2-0.4 | viscose,cotton
+relaxed culottes | 0.40 | 0.1-0.3 | linen,cotton
+knit-style shorts | 0.40 | 0.0-0.2 | crochet

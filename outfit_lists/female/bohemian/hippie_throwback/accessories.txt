@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+peace-sign pendant | 0.7 | 0.0-0.3 | metal,leather
+round 70s sunglasses | 0.7 | 0.0-0.3 | resin
+beaded headband | 0.6 | 0.0-0.3 | cotton,leather
+layered love beads | 0.6 | 0.0-0.3 | cotton
+flower power pin | 0.5 | 0.0-0.3 | resin,metal
+fringed belt | 0.5 | 0.1-0.3 | suede,leather
+yin-yang necklace | 0.5 | 0.0-0.3 | metal
+ankle bells | 0.4 | 0.0-0.3 | metal,cotton
+mood ring | 0.5 | 0.0-0.3 | metal,resin
+beaded choker | 0.5 | 0.0-0.3 | cotton
+hoop earrings | 0.6 | 0.1-0.3 | metal
+arm bangles | 0.5 | 0.1-0.3 | metal

@@ -1,0 +1,8 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# breezy cardigan | 0.40 | 0.4-0.6 | linen
+#color# cropped blazer | 0.35 | 0.4-0.6 | linen,cotton
+#color# crochet shawl | 0.30 | 0.3-0.5 | crochet,cotton
+#color# light kimono | 0.30 | 0.3-0.5 | chiffon,cotton
+#color# pastel cardigan | 0.30 | 0.3-0.5 | cotton,modal

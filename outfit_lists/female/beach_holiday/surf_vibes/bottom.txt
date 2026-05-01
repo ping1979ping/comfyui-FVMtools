@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+board shorts | 0.75 | 0.0-0.2 | nylon,polyester
+sport bikini bottoms | 0.70 | 0.0-0.1 | nylon,polyester
+high-leg surf bottoms | 0.55 | 0.0-0.1 | nylon,polyester
+wetsuit shorts | 0.55 | 0.0-0.2 | neoprene
+denim cutoffs | 0.55 | 0.0-0.2 | cotton
+tied side bottoms | 0.45 | 0.0-0.1 | nylon,polyester
+ripped denim shorts | 0.45 | 0.0-0.2 | cotton
+boyleg bottoms | 0.50 | 0.0-0.1 | nylon,polyester
+relaxed jersey shorts | 0.40 | 0.0-0.2 | cotton
+quick-dry shorts | 0.50 | 0.0-0.2 | polyester,nylon

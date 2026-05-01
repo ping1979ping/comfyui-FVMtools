@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+sculptural earrings | 0.6 | 0.5-0.7 | metal
+geometric pendant | 0.5 | 0.4-0.7 | metal
+oversized cuff | 0.4 | 0.5-0.7 | metal
+abstract brooch | 0.4 | 0.5-0.7 | metal
+minimal hoops | 0.5 | 0.4-0.7 | metal
+modernist ring | 0.4 | 0.5-0.7 | metal
+narrow waist belt | 0.4 | 0.4-0.6 | leather
+art-frame eyewear | 0.4 | 0.4-0.6 | acetate
+asymmetric necklace | 0.4 | 0.5-0.7 | metal
+slim cuff | 0.3 | 0.4-0.7 | metal

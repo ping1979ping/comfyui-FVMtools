@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# platform boots | 0.55 | 0.3-0.5 | faux_leather,satin
+#color# go-go boots | 0.45 | 0.3-0.5 | faux_leather
+#color# strappy gladiator sandals | 0.40 | 0.3-0.5 | faux_leather
+#color# disco platforms | 0.50 | 0.3-0.5 | metallic
+#color# ballet slippers | 0.35 | 0.2-0.4 | satin
+#color# mary janes | 0.40 | 0.3-0.5 | faux_leather
+#color# costume heels | 0.45 | 0.3-0.5 | satin,faux_leather

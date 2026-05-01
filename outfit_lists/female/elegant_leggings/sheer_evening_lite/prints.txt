@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+translucent panel | 0.55 | bottom,top | 0.4-0.7
+gauzy overlay | 0.50 | top,bottom,outerwear | 0.4-0.7
+fine net texture | 0.50 | bottom,top | 0.4-0.7
+soft shimmer | 0.45 | top,outerwear | 0.4-0.7
+delicate floral embroidery | 0.40 | top,outerwear | 0.5-0.7
+beaded accents | 0.40 | top,bag | 0.5-0.7
+sheer side stripe | 0.35 | bottom | 0.4-0.7
+nude-tone wash | 0.45 | top,bottom | 0.4-0.7
+crystal sprinkle | 0.30 | top,bag | 0.5-0.7

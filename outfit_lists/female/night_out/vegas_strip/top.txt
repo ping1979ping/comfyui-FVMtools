@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# rhinestone-studded bustier | 0.80 | 0.4-0.7 | satin,sequin
+#color# fringed showgirl top | 0.65 | 0.3-0.6 | sequin,satin
+#color# mirror-disc halter | 0.55 | 0.4-0.7 | sequin,metal
+#color# beaded showgirl bra-top | 0.60 | 0.3-0.6 | sequin,mesh
+#color# feathered crop top | 0.50 | 0.4-0.6 | feather,satin
+#color# crystal-mesh long-sleeve | 0.55 | 0.4-0.7 | mesh,sequin
+#color# sequined wrap blouse | 0.55 | 0.4-0.7 | sequin,silk
+#color# metallic deep-V camisole | 0.60 | 0.4-0.7 | satin,metal
+#color# corset with fringe trim | 0.50 | 0.4-0.7 | satin,suede
+#color# cropped sequin tank | 0.65 | 0.3-0.6 | satin
+#color# beaded one-shoulder top | 0.50 | 0.4-0.7 | sequin,silk

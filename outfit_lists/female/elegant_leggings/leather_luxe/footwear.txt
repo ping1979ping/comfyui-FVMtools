@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knee-high stiletto boots | 0.70 | 0.4-0.7 | leather
+heeled ankle boots | 0.70 | 0.4-0.7 | leather
+over-the-knee boots | 0.55 | 0.4-0.7 | leather
+pointed-toe heels | 0.65 | 0.4-0.7 | leather
+ankle strap stilettos | 0.55 | 0.4-0.7 | leather
+combat boots with heel | 0.45 | 0.3-0.6 | leather
+patent stilettos | 0.50 | 0.4-0.7 | leather
+chunky platform boots | 0.40 | 0.3-0.6 | leather
+biker-inspired boots | 0.45 | 0.3-0.6 | leather
+moto-buckle heels | 0.40 | 0.4-0.7 | leather

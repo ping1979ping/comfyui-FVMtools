@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+neon glow accent | 0.5 | top,bottom,accessories | 0.1-0.4
+holographic shimmer | 0.4 | top,bottom,bag | 0.2-0.5
+glitch graphic | 0.3 | top,accessories | 0.1-0.4
+laser-cut detail | 0.3 | top,bottom | 0.2-0.4
+psychedelic swirl | 0.3 | top,bottom | 0.1-0.4
+uv-reactive splash | 0.3 | top,accessories | 0.1-0.4
+chrome finish | 0.3 | top,bag,accessories | 0.2-0.4
+binary code motif | 0.2 | top,accessories | 0.1-0.4
+star-burst pattern | 0.3 | top,accessories | 0.2-0.5

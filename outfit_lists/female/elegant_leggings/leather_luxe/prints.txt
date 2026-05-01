@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+glossy finish | 0.65 | bottom,footwear,bag,outerwear | 0.4-0.7
+wet-look finish | 0.55 | bottom,footwear | 0.3-0.7
+matte black | 0.65 | bottom,top,outerwear | 0.4-0.7
+crocodile embossed | 0.45 | bottom,bag,footwear | 0.5-0.7
+snake print | 0.40 | bottom,footwear,bag | 0.4-0.7
+studded detail | 0.40 | outerwear,bag,accessories | 0.3-0.6
+zipper detail | 0.45 | outerwear,bottom | 0.3-0.6
+metallic finish | 0.40 | top,accessories,bag | 0.4-0.7
+biker patches | 0.30 | outerwear | 0.3-0.5
+panel piecing | 0.35 | outerwear,bottom | 0.4-0.7

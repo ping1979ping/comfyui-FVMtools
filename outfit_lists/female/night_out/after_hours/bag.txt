@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# small crossbody pouch | 0.65 | 0.3-0.6 | leather,nylon
+#color# minimalist baguette | 0.60 | 0.3-0.6 | leather,satin
+#color# sleek belt bag | 0.50 | 0.3-0.5 | leather,nylon
+#color# zippered mini tote | 0.45 | 0.3-0.5 | leather,canvas
+#color# structured shoulder bag | 0.55 | 0.4-0.6 | leather
+#color# tech-fabric sling | 0.40 | 0.3-0.5 | nylon
+#color# hard-shell mini case | 0.35 | 0.3-0.6 | acrylic,metal

@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waisted bikini bottoms | 0.60 | 0.0-0.2 | nylon,polyester
+classic bikini bottoms | 0.55 | 0.0-0.1 | nylon,polyester
+tailored shorts | 0.55 | 0.1-0.3 | linen,cotton
+white wide pants | 0.50 | 0.2-0.4 | linen
+wide-leg trousers | 0.45 | 0.2-0.4 | linen,viscose
+A-line midi skirt | 0.45 | 0.2-0.4 | cotton,linen
+pleated skirt | 0.40 | 0.2-0.4 | cotton,viscose
+bermuda shorts | 0.40 | 0.1-0.3 | cotton,linen
+maxi skirt | 0.40 | 0.1-0.3 | linen,viscose
+chic capris | 0.40 | 0.2-0.4 | cotton,linen
+fluid sarong | 0.45 | 0.0-0.2 | silk,viscose

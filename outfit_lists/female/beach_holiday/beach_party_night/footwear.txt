@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+strappy heels | 0.65 | 0.2-0.4 | leather,satin
+metallic stilettos | 0.50 | 0.2-0.4 | leather,metal
+ankle-tie sandals | 0.55 | 0.1-0.3 | leather
+gladiator heels | 0.40 | 0.2-0.4 | leather
+platform sandals | 0.45 | 0.1-0.3 | leather,rubber
+glittered flats | 0.40 | 0.1-0.3 | polyester,leather
+heeled mules | 0.40 | 0.2-0.4 | leather,satin
+embellished sandals | 0.40 | 0.1-0.3 | leather,metal
+metallic flats | 0.40 | 0.0-0.3 | leather
+chunky platform heels | 0.35 | 0.1-0.3 | leather
+flat sandals | 0.45 | 0.0-0.2 | leather

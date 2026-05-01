@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+translucent blouse | 0.75 | 0.4-0.7 | chiffon
+net-knit top | 0.70 | 0.4-0.7 | mesh
+sheer long-sleeve | 0.70 | 0.4-0.7 | chiffon,mesh
+gauzy camisole | 0.60 | 0.5-0.7 | chiffon
+draped see-through top | 0.55 | 0.5-0.7 | chiffon
+slip top | 0.60 | 0.5-0.7 | silk
+beaded blouse | 0.45 | 0.5-0.7 | mesh
+veiled wrap top | 0.50 | 0.5-0.7 | chiffon
+gossamer halter | 0.45 | 0.5-0.7 | chiffon
+off-shoulder blouse | 0.55 | 0.5-0.7 | chiffon
+diaphanous tank | 0.50 | 0.4-0.7 | chiffon
+floaty cami | 0.55 | 0.4-0.7 | silk

@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"JAZZ" | 0.10 | top | art-deco
+"BLUES" | 0.10 | top | retro serif
+"VINYL" | 0.10 | top | vintage script
+"SUPPER CLUB" | 0.10 | top | art-deco
+"MIDNIGHT" | 0.10 | top | elegant script

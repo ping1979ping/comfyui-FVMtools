@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oversized hoodie | 0.55 | 0.0-0.2 | cotton,fleece
+varsity jacket | 0.45 | 0.1-0.4 | wool,nylon
+bomber | 0.50 | 0.1-0.4 | nylon,polyester
+
+# mid-casual
+puffer | 0.50 | 0.1-0.3 | nylon,polyester
+windbreaker | 0.55 | 0.0-0.3 | nylon,polyester
+track jacket | 0.55 | 0.1-0.3 | polyester,nylon
+denim jacket | 0.40 | 0.1-0.4 | cotton

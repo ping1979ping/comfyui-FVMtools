@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+gypsy maxi skirt | 0.8 | 0.2-0.4 | cotton,gauze,chiffon
+patchwork skirt | 0.7 | 0.2-0.4 | cotton,linen
+tiered ruffle skirt | 0.6 | 0.2-0.4 | cotton,gauze
+flared trousers | 0.5 | 0.2-0.4 | cotton,linen
+nomadic harem pants | 0.6 | 0.1-0.3 | cotton,linen
+wrap skirt | 0.5 | 0.2-0.4 | cotton,raw silk
+embroidered palazzo | 0.5 | 0.2-0.4 | linen,cotton
+fringed bottoms | 0.4 | 0.1-0.3 | suede
+mirrored mini skirt | 0.4 | 0.1-0.3 | cotton,velvet
+boho midi skirt | 0.5 | 0.2-0.4 | cotton,gauze

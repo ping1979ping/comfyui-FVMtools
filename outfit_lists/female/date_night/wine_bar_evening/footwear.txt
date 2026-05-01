@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+ankle boots | 0.7 | 0.4-0.6 | leather,suede
+classic pumps | 0.6 | 0.5-0.7 | suede,patent
+loafers | 0.5 | 0.4-0.6 | leather,suede
+mules | 0.5 | 0.4-0.6 | leather,suede
+block-heel boots | 0.5 | 0.4-0.6 | leather,suede
+slingback heels | 0.4 | 0.5-0.7 | suede,patent
+mary janes | 0.4 | 0.4-0.6 | leather,suede
+chelsea boots | 0.4 | 0.4-0.6 | leather
+pointed-toe flats | 0.4 | 0.4-0.6 | leather,suede

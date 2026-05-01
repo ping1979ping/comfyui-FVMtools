@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+statement earrings | 0.7 | 0.5-0.7 | metal
+layered necklaces | 0.5 | 0.4-0.7 | metal
+gold cuff | 0.4 | 0.5-0.7 | metal
+chain bracelet | 0.4 | 0.4-0.7 | metal
+delicate choker | 0.4 | 0.5-0.7 | metal
+hoop earrings | 0.6 | 0.4-0.7 | metal
+stacked rings | 0.4 | 0.4-0.7 | metal
+slim belt | 0.3 | 0.4-0.6 | leather
+body chain | 0.2 | 0.5-0.7 | metal
+shimmery clutch chain | 0.2 | 0.5-0.7 | metal

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mirror embellishment | 0.6 | top,outerwear,bottom,bag | 0.1-0.4
+folk embroidery | 0.6 | top,outerwear,bag | 0.1-0.5
+paisley pattern | 0.5 | top,bottom,bag | 0.1-0.4
+ikat weave | 0.5 | top,bottom,bag | 0.1-0.4
+batik dye | 0.4 | top,bottom | 0.1-0.4
+patola motif | 0.4 | top,bottom,outerwear | 0.2-0.5
+ethnic medallion | 0.4 | top,bottom | 0.1-0.4
+sashiko stitching | 0.3 | top,outerwear | 0.1-0.4
+banarasi weave | 0.3 | top,outerwear | 0.2-0.5
+tribal geometry | 0.4 | top,bottom | 0.1-0.4
+woven brocade trim | 0.4 | top,outerwear,bag | 0.2-0.5

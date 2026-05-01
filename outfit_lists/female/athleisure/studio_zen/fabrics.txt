@@ -1,0 +1,18 @@
+# format: fabric_name | formality | family | weight
+
+# zen fabrics
+bamboo | 0.15 | natural | light
+modal | 0.2 | natural | light
+cotton | 0.2 | natural | medium
+rayon | 0.25 | natural | light
+nylon | 0.15 | sporty | light
+spandex | 0.1 | sporty | light
+mesh | 0.1 | sporty | light
+canvas | 0.2 | natural | medium
+jute | 0.2 | natural | medium
+rubber | 0.1 | sporty | medium
+straw | 0.3 | natural | light
+
+# special materials
+metal | 0.5 | luxury | heavy
+wood | 0.3 | natural | light

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+zip-up cropped jacket | 0.55 | 0.0-0.3 | nylon,polyester
+soft pullover | 0.50 | 0.0-0.2 | cotton,modal
+matching jacket | 0.50 | 0.1-0.3 | nylon,spandex
+
+# mid-casual
+draped cardigan | 0.45 | 0.1-0.3 | modal,bamboo
+half-zip pullover | 0.50 | 0.1-0.3 | nylon,polyester
+puffer vest | 0.45 | 0.0-0.3 | nylon,polyester
+hooded shell | 0.40 | 0.1-0.3 | nylon,polyester

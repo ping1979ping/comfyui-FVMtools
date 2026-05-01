@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white sneakers | 0.80 | 0.3-0.6 | leather
+sleek trainers | 0.75 | 0.3-0.6 | leather
+chunky sneakers | 0.55 | 0.3-0.5 | leather
+running-style trainers | 0.55 | 0.3-0.5 | natural
+high-top sneakers | 0.45 | 0.3-0.5 | leather
+metallic running shoes | 0.40 | 0.3-0.5 | natural
+slip-on sneakers | 0.50 | 0.3-0.5 | natural
+heeled trainers | 0.40 | 0.4-0.6 | leather
+sport-style ankle boots | 0.45 | 0.4-0.6 | leather

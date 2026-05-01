@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+embellished bolero | 0.65 | 0.5-0.8 | satin
+ornate jacket | 0.60 | 0.5-0.7 | satin,velvet
+brocade blazer | 0.60 | 0.5-0.7 | satin
+beaded cape | 0.50 | 0.5-0.8 | satin
+opulent overcoat | 0.50 | 0.5-0.7 | velvet
+embroidered duster | 0.45 | 0.5-0.7 | silk
+plush evening jacket | 0.45 | 0.5-0.7 | faux_fur

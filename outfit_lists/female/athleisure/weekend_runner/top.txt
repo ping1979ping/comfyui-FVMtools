@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+running bra | 0.55 | 0.0-0.1 | spandex,nylon,polyester
+racerback tank | 0.55 | 0.0-0.2 | mesh,polyester,spandex
+ventilated tee | 0.55 | 0.0-0.2 | polyester,mesh
+cropped tank | 0.45 | 0.0-0.2 | nylon,spandex
+seamless top | 0.45 | 0.0-0.2 | nylon,spandex
+
+# mid-casual
+long-sleeve running tee | 0.55 | 0.1-0.3 | polyester,nylon
+half-zip pullover | 0.45 | 0.1-0.3 | polyester,nylon
+fitted base layer | 0.45 | 0.1-0.3 | polyester,spandex
+windbreak shirt | 0.40 | 0.1-0.3 | nylon,polyester

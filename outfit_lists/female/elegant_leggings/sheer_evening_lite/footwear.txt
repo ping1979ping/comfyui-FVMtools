@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+strappy heeled sandals | 0.75 | 0.5-0.7 | satin
+pointed-toe heels | 0.70 | 0.5-0.7 | satin
+ankle strap stilettos | 0.65 | 0.5-0.7 | satin
+clear-vinyl pumps | 0.55 | 0.5-0.7 | satin
+mule heels | 0.55 | 0.5-0.7 | satin
+delicate slingbacks | 0.50 | 0.5-0.7 | satin
+crystal-trim heels | 0.50 | 0.5-0.7 | satin
+sheer-mesh heels | 0.45 | 0.4-0.7 | mesh
+silver evening sandals | 0.50 | 0.5-0.7 | leather
+nude pumps | 0.55 | 0.5-0.7 | leather

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+sequin detail | 0.5 | top,accessories,bag | 0.4-0.7
+pearl-bead detail | 0.4 | top,accessories,bag | 0.4-0.7
+crystal scatter | 0.4 | top,accessories | 0.4-0.7
+embroidered floral | 0.4 | top,bottom | 0.4-0.7
+ribbon-bow detail | 0.3 | top,accessories,bag | 0.3-0.6
+heart-print pattern | 0.3 | top,accessories | 0.3-0.5
+star scatter | 0.3 | top,accessories | 0.3-0.6
+gold-foil accent | 0.3 | top,bag | 0.4-0.7
+laser-cut floral | 0.3 | top,bottom | 0.4-0.6
+butterfly motif | 0.2 | top,accessories | 0.3-0.5

@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+layered necklaces | 0.7 | 0.1-0.3 | cotton,leather
+feather earrings | 0.6 | 0.1-0.3 | leather
+stacked rings | 0.6 | 0.1-0.3 | metal
+beaded anklet | 0.6 | 0.0-0.3 | cotton,hemp
+crystal pendant | 0.6 | 0.1-0.3 | leather,cotton
+woven bracelet | 0.6 | 0.0-0.3 | cotton,hemp
+hair feathers | 0.5 | 0.0-0.3 | cotton,leather
+moonstone choker | 0.5 | 0.1-0.3 | leather,cotton
+dreamcatcher pendant | 0.5 | 0.0-0.3 | leather,macrame
+toe rings | 0.4 | 0.0-0.3 | metal
+arm bangles | 0.5 | 0.1-0.3 | metal,cotton
+nose ring | 0.4 | 0.0-0.3 | metal

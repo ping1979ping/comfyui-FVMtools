@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beaded-trim leggings | 0.80 | 0.5-0.8 | satin
+embroidered leggings | 0.75 | 0.5-0.8 | satin,velvet
+high-waisted leggings | 0.80 | 0.4-0.7 | satin,velvet
+jewel-detail leggings | 0.65 | 0.5-0.8 | satin
+ornate-side leggings | 0.55 | 0.5-0.7 | satin
+pearl-accent leggings | 0.55 | 0.5-0.8 | satin
+brocade-pattern leggings | 0.55 | 0.5-0.7 | satin
+crystal-stripe leggings | 0.50 | 0.5-0.8 | satin
+opulent leggings | 0.55 | 0.5-0.7 | velvet,satin
+sumptuous leggings | 0.50 | 0.5-0.7 | velvet

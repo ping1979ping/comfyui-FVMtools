@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# evening clutch | 0.60 | 0.4-0.6 | satin
+#color# chain shoulder mini | 0.55 | 0.4-0.6 | leather
+#color# top-handle micro | 0.45 | 0.4-0.6 | leather
+#color# leather envelope | 0.45 | 0.4-0.6 | leather
+#color# bauble wristlet | 0.40 | 0.4-0.6 | beaded
+#color# plush pouch | 0.35 | 0.4-0.6 | velvet
+#color# crescent shoulder | 0.40 | 0.4-0.6 | leather,satin
+#color# pearl-handled clutch | 0.30 | 0.4-0.6 | beaded,satin

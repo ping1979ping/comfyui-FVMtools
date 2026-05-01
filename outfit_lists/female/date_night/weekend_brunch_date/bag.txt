@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+crossbody bag | 0.7 | 0.3-0.6 | leather,suede
+straw tote | 0.5 | 0.3-0.5 | straw
+woven shoulder bag | 0.5 | 0.3-0.5 | straw,canvas
+small bucket bag | 0.4 | 0.3-0.5 | leather,suede
+mini top-handle bag | 0.4 | 0.4-0.6 | leather,suede
+everyday tote | 0.4 | 0.3-0.5 | canvas
+slim crossbody | 0.4 | 0.3-0.5 | leather
+saddle bag | 0.3 | 0.4-0.6 | leather,suede

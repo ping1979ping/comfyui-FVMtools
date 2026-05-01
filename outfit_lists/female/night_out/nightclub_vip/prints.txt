@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+deep jewel-tone | 0.55 | top,bottom,outerwear | 0.5-0.8
+subtle metallic gleam | 0.50 | top,accessories,bag | 0.5-0.8
+crystal-embellished trim | 0.45 | top,accessories | 0.5-0.8
+quilted diamond pattern | 0.35 | bag,outerwear | 0.5-0.8
+designer monogram | 0.30 | bag,accessories | 0.5-0.8
+glossy lacquer finish | 0.40 | bag,accessories | 0.5-0.8
+tonal embroidery | 0.30 | top,bottom | 0.5-0.8
+art-deco geometry | 0.30 | top,bag | 0.5-0.8
+soft animal-tone motif | 0.25 | top,bottom,bag | 0.5-0.7
+beaded panel detail | 0.40 | top,bag | 0.5-0.8

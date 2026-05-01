@@ -1,0 +1,15 @@
+# format: fabric_name | formality | family | weight
+
+# performance fabrics
+mesh | 0.1 | sporty | light
+nylon | 0.15 | sporty | light
+polyester | 0.2 | sporty | light
+spandex | 0.1 | sporty | light
+fleece | 0.1 | casual | medium
+cotton | 0.2 | natural | medium
+rubber | 0.1 | sporty | medium
+foam | 0.1 | sporty | light
+
+# special materials
+metal | 0.5 | luxury | heavy
+polycarbonate | 0.4 | tech | light

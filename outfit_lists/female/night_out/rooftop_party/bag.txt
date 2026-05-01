@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# small chain crossbody | 0.65 | 0.4-0.7 | leather,metal
+#color# straw clutch | 0.50 | 0.4-0.6 | jute
+#color# beaded mini pouch | 0.50 | 0.4-0.7 | sequin,silk
+#color# leather wristlet | 0.45 | 0.4-0.6 | silk
+#color# raffia tote | 0.40 | 0.4-0.6 | jute
+#color# satin envelope clutch | 0.55 | 0.4-0.7 | silk
+#color# embroidered pouch | 0.40 | 0.4-0.6 | cotton,silk

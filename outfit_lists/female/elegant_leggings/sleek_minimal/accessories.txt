@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim watch | 0.65 | 0.4-0.7 | metal
+fine gold chain | 0.60 | 0.4-0.7 | metal
+small stud earrings | 0.70 | 0.4-0.7 | metal
+narrow waist belt | 0.55 | 0.4-0.7 | leather
+delicate ring | 0.50 | 0.4-0.7 | metal
+single bangle | 0.40 | 0.4-0.7 | metal
+fine huggie hoops | 0.50 | 0.4-0.7 | metal

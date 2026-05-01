@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+wide-leg trousers | 0.7 | 0.5-0.7 | crepe,wool blend
+cropped flares | 0.4 | 0.5-0.7 | crepe
+tapered trousers | 0.5 | 0.5-0.7 | crepe,wool blend
+A-line midi skirt | 0.5 | 0.5-0.7 | crepe
+column skirt | 0.4 | 0.5-0.7 | crepe,wool blend
+slim trousers | 0.5 | 0.5-0.7 | crepe,wool blend
+asymmetric skirt | 0.4 | 0.5-0.7 | crepe,charmeuse
+high-waisted trousers | 0.5 | 0.5-0.7 | crepe,wool blend
+pleated culottes | 0.4 | 0.5-0.7 | crepe
+sculptural skirt | 0.3 | 0.5-0.7 | neoprene,crepe

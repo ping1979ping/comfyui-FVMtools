@@ -1,0 +1,2 @@
+# format: text_content | probability | compatible_slots | font_hint
+# Modern chic — minimal text

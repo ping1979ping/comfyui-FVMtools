@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# voluminous court gown skirt | 0.95 | 0.8-1.0 | brocade,taffeta
+#color# ornate embroidered ball gown skirt | 0.85 | 0.8-1.0 | brocade,satin
+#color# tiered baroque gown skirt | 0.65 | 0.8-1.0 | taffeta,satin
+#color# gilded floor-length gown skirt | 0.75 | 0.8-1.0 | brocade,satin
+#color# ruffled cathedral-train gown skirt | 0.55 | 0.9-1.0 | satin,taffeta
+#color# pleated regal gown skirt | 0.55 | 0.8-1.0 | brocade,silk
+#color# embellished panier-style gown skirt | 0.45 | 0.9-1.0 | brocade,taffeta
+#color# bell-shaped court gown skirt | 0.55 | 0.8-1.0 | taffeta,satin
+#color# ornate trumpet gown skirt | 0.50 | 0.8-1.0 | brocade,satin

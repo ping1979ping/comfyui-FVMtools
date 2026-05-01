@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WEEKEND" | 0.10 | top | minimal sans-serif
+"AMORE" | 0.10 | top | romantic script
+"HELLO" | 0.10 | top | clean lowercase
+"VINTAGE" | 0.10 | top | retro serif
+"CIAO" | 0.10 | top | playful script
+"BONJOUR" | 0.10 | top | classic serif

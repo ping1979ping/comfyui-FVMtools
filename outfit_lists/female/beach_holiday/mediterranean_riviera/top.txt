@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+striped boat-neck top | 0.65 | 0.1-0.4 | cotton,linen
+classic breton top | 0.55 | 0.1-0.4 | cotton
+white blouse | 0.65 | 0.1-0.4 | cotton,linen
+drapey camisole | 0.55 | 0.1-0.4 | silk,viscose
+tailored bandeau | 0.55 | 0.0-0.2 | nylon,polyester
+elegant halter top | 0.55 | 0.0-0.3 | nylon,silk
+button-up shirt | 0.50 | 0.1-0.4 | linen,cotton
+off-shoulder blouse | 0.55 | 0.1-0.3 | linen,cotton
+ruched bustier | 0.45 | 0.1-0.3 | cotton,silk
+summer tank | 0.55 | 0.0-0.2 | linen
+cropped polo | 0.45 | 0.1-0.3 | cotton
+embroidered tunic top | 0.40 | 0.1-0.3 | cotton,linen
+fitted bralette | 0.50 | 0.0-0.2 | cotton,polyester
+collared sleeveless top | 0.45 | 0.1-0.4 | linen,cotton

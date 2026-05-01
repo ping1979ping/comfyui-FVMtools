@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# strappy stilettos | 0.65 | 0.4-0.6 | satin,leather
+#color# block heel sandals | 0.55 | 0.4-0.6 | leather,suede
+#color# ankle-strap heels | 0.50 | 0.4-0.6 | leather,satin
+#color# pointed-toe pumps | 0.45 | 0.4-0.6 | leather,suede
+#color# square-toe mules | 0.40 | 0.3-0.5 | leather,suede
+#color# slingback heels | 0.45 | 0.4-0.6 | leather
+#color# wedge espadrilles | 0.30 | 0.3-0.5 | jute,canvas
