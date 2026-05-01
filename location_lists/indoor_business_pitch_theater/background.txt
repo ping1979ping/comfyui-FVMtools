@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+deep grey acoustic theater wall | 1.0 | 0.7-1.0 | dense fabric panel
+illuminated startup logo backdrop | 0.95 | 0.6-1.0 | spotlit branded panel
+dimly lit slate panel wall | 0.85 | 0.6-1.0 | matte dark grey surface
+black painted backstage wall | 0.85 | 0.6-1.0 | flat absorbing finish
+projection screen with pitch deck | 0.95 | 0.5-1.0 | bright matte projection face
+seated investor row in shadow | 0.85 | 0.5-0.9 | dim seated outlines
+suspended judging panel sign | 0.7 | 0.4-0.8 | hanging printed banner
+charcoal velvet curtain backdrop | 0.7 | 0.5-0.9 | heavy plush drape
+warm wood-toned theater wall | 0.65 | 0.6-1.0 | grained timber panel
+side-lit accent curtain wall | 0.6 | 0.5-0.9 | spotlit fabric
+distant exit door silhouette | 0.55 | 0.2-0.5 | dim doorway shape
+illuminated event title signboard | 0.7 | 0.4-0.8 | backlit branded panel

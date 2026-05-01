@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+drop ceiling tile grid | 0.85 | 0.3-0.7 | recessed white panels
+overhead truss-mounted spotlights | 0.95 | 0.2-0.5 | matte black rigging
+wall-mounted seal medallion | 0.6 | 0.05-0.2 | gilded carved emblem
+recessed cove uplighting | 0.7 | 0.2-0.5 | hidden warm glow line
+side wall acoustic panels | 0.75 | 0.2-0.5 | fabric-wrapped diffusers
+exit door glowing sign | 0.65 | 0.05-0.15 | red illuminated panel
+floor cable snake cover | 0.85 | 0.1-0.3 | rubber yellow tray
+press riser floor markings | 0.7 | 0.05-0.2 | gaffer-taped position marks
+ceiling-mounted speaker box | 0.6 | 0.05-0.15 | matte black enclosure
+flush wall power outlet bank | 0.5 | 0.05-0.15 | mounted multi-socket plate

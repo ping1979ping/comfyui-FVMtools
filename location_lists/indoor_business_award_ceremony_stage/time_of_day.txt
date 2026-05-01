@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early evening pre-show arrival | 0.85 | - | -
+opening curtain prime time | 1.0 | - | -
+mid-show major awards block | 1.0 | - | -
+late evening final award reveal | 0.95 | - | -
+post-show winners lap | 0.85 | - | -
+dimmed-house focused stage moment | 0.95 | - | -
+intermission lighter house lights | 0.7 | - | -
+late night after-party transition | 0.7 | - | -
+broadcast prime live-to-tape window | 0.85 | - | -
+windowless venue sustained dim cue | 0.95 | - | -

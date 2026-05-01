@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+dark mahogany paneled wall | 1.0 | 0.7-1.0 | rich vertical timber grain
+floor-to-ceiling law library shelf wall | 0.95 | 0.6-1.0 | tight bound book spines
+tall narrow office window | 0.8 | 0.4-0.8 | clear glazed pane
+cream wainscoted upper wall | 0.7 | 0.6-1.0 | painted plaster above panel
+deep burgundy leather wall covering | 0.65 | 0.6-1.0 | tufted padded leather
+framed law firm crest panel | 0.7 | 0.4-0.8 | gilded emblem on wall
+dark walnut bookcase wall | 0.85 | 0.6-1.0 | grained closed cabinet
+muted green papered wall | 0.6 | 0.6-1.0 | subtle damask pattern
+distant courthouse skyline view | 0.5 | 0.3-0.7 | hazy distant facades
+neutral warm grey painted wall | 0.7 | 0.6-1.0 | smooth matte finish
+shoji-style frosted glass partition | 0.55 | 0.4-0.8 | etched glass divider
+oil portrait of senior partner | 0.65 | 0.3-0.7 | painted framed canvas

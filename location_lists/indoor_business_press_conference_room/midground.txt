@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+press briefing podium | 1.0 | 0.3-0.6 | dark stained wood lectern
+multi-microphone podium cluster | 1.0 | 0.1-0.3 | mass of news mics
+front row seated press corps | 0.95 | 0.4-0.8 | tightly packed audience
+press riser camera tier | 0.9 | 0.3-0.6 | tiered metal-framed deck
+flanking flagpole stand | 0.8 | 0.1-0.3 | tall freestanding flag
+boom microphone overhead | 0.7 | 0.05-0.2 | extended foam-tipped boom
+side aisle reporter standing | 0.75 | 0.2-0.5 | uniformed press silhouette
+stenographer at side desk | 0.55 | 0.1-0.3 | small typing setup
+flanking aide silhouette | 0.6 | 0.1-0.3 | dim figure beside podium
+press camera tripod cluster | 0.9 | 0.2-0.5 | matte black telescoping legs
+overhead light truss frame | 0.75 | 0.2-0.5 | bolted lighting rig
+elevated cameraman platform | 0.65 | 0.2-0.5 | raised metal-framed deck

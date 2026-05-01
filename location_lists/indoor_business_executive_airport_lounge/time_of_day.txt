@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+pre-dawn red-eye departure | 0.7 | - | -
+early morning first flight | 0.95 | - | -
+mid-morning departure window | 0.9 | - | -
+midday connecting wait | 0.85 | - | -
+afternoon long-haul boarding | 0.8 | - | -
+late afternoon transit wait | 0.75 | - | -
+golden hour through tarmac window | 0.7 | - | -
+evening international departure | 0.85 | - | -
+late evening overnight wait | 0.7 | - | -
+overnight delayed flight | 0.6 | - | -

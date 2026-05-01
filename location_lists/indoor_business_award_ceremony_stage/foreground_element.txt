@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+held metallic award statuette | 1.0 | 0.05-0.2 | gleaming sculpted figure
+folded acceptance speech card | 0.95 | 0.05-0.15 | crisp folded paper
+handheld stage microphone | 0.95 | 0.03-0.12 | mesh metal head
+sealed envelope of winners | 0.85 | 0.04-0.12 | embossed paper card
+ceremony program booklet | 0.85 | 0.05-0.15 | thick printed booklet
+event lanyard with credential | 0.75 | 0.02-0.1 | woven nylon strap
+diamond stud earring detail | 0.6 | 0.01-0.04 | faceted brilliant
+silk pocket square | 0.6 | 0.02-0.06 | folded glossy fabric
+handheld presenter clicker | 0.6 | 0.02-0.08 | matte plastic shell
+embossed nomination card | 0.75 | 0.02-0.08 | gold-foiled cardstock
+clutch evening purse held | 0.6 | 0.05-0.15 | beaded glossy fabric
+black tie bowtie at collar | 0.75 | 0.03-0.1 | satin silk knot

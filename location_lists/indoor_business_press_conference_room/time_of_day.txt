@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+morning press briefing | 1.0 | - | -
+mid-morning announcement window | 0.95 | - | -
+midday news conference | 0.9 | - | -
+post-lunch statement | 0.8 | - | -
+afternoon press call | 0.95 | - | -
+late afternoon breaking news briefing | 0.85 | - | -
+early evening update | 0.75 | - | -
+evening live broadcast hour | 0.75 | - | -
+late evening urgent statement | 0.6 | - | -
+windowless room consistent lighting | 0.95 | - | -

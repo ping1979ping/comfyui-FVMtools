@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+linen-draped round brunch table | 1.0 | 0.4-0.8 | crisp white tablecloth
+white-painted bistro chair cluster | 1.0 | 0.3-0.6 | wrought iron framed seat
+freestanding canopy event tent | 0.85 | 0.4-0.8 | tensioned white peaked fabric
+buffet brunch service station | 0.85 | 0.3-0.6 | linen-skirted long table
+freestanding outdoor bar setup | 0.75 | 0.2-0.5 | sleek wood-paneled counter
+service waiter passing platter | 0.8 | 0.05-0.2 | held silver tray
+freestanding coffee-and-tea cart | 0.7 | 0.1-0.3 | wheeled brass trolley
+floral garland centerpiece | 0.8 | 0.1-0.3 | trailing fresh stems
+welcome registration table | 0.75 | 0.2-0.5 | linen-draped check-in
+small string ensemble cluster | 0.6 | 0.2-0.5 | musicians with stands
+guest standing networking cluster | 0.95 | 0.4-0.8 | grouped silhouettes
+freestanding sponsor signage stand | 0.65 | 0.1-0.3 | upright printed board
+patio heater on lawn | 0.55 | 0.1-0.3 | tall freestanding radiator

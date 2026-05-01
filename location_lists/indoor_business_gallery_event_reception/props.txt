@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+floral bar arrangement | 0.85 | 0.05-0.15 | dense fresh stems
+silver canape tray | 0.85 | 0.05-0.15 | polished metal platter
+chilled wine bucket on stand | 0.8 | 0.05-0.2 | glistening silver bucket
+event branded bottle | 0.75 | 0.02-0.08 | embossed glass vessel
+folded event program stack | 0.85 | 0.05-0.15 | glossy folded sheets
+sponsor branded coaster | 0.65 | 0.02-0.06 | embossed disc
+illuminated acrylic logo block | 0.6 | 0.05-0.15 | glowing cube sign
+small artist talk script | 0.55 | 0.05-0.15 | thin printed sheaf
+guest book on pedestal | 0.7 | 0.05-0.15 | leather-bound volume
+felt-tip signing pen on book | 0.65 | 0.02-0.06 | slim marker
+small floral table arrangement | 0.65 | 0.05-0.15 | fresh stem cluster
+gallery audio guide stand | 0.6 | 0.1-0.3 | rack of devices
+press camera kit case | 0.55 | 0.05-0.15 | padded black case

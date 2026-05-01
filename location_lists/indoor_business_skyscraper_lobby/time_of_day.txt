@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning arrival rush | 1.0 | - | -
+mid-morning steady traffic | 0.9 | - | -
+midday lunchtime flow | 0.85 | - | -
+post-lunch quieter window | 0.75 | - | -
+afternoon visitor pickup | 0.85 | - | -
+late afternoon departure surge | 0.9 | - | -
+early evening tenant exit | 0.8 | - | -
+evening cleaner shift quiet | 0.55 | - | -
+late evening night security | 0.5 | - | -
+golden hour through atrium glass | 0.7 | - | -

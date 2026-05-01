@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+red-eye overnight cruise | 1.0 | - | -
+post-takeoff dusk | 0.85 | - | -
+mid-flight mood-lit darkness | 0.95 | - | -
+sunrise approach window glow | 0.85 | - | -
+mid-day cruise daylight | 0.9 | - | -
+late afternoon descent light | 0.8 | - | -
+pre-landing breakfast service | 0.85 | - | -
+post-meal dimmed sleep cycle | 0.9 | - | -
+boarding ground time bright cabin | 0.7 | - | -
+golden hour through window shade | 0.75 | - | -

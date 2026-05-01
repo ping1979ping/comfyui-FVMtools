@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+held crystal whisky tumbler | 1.0 | 0.03-0.1 | heavy faceted lowball
+held cocktail martini glass | 0.95 | 0.03-0.1 | clear conical bowl
+embossed bar menu card | 0.85 | 0.05-0.15 | leather-padded folder
+held smartphone with deal screen | 0.85 | 0.03-0.1 | glossy glass screen
+black cocktail napkin folded | 0.85 | 0.02-0.06 | softly draped tissue
+held leather wallet | 0.7 | 0.05-0.15 | grained dark leather
+gold-rimmed champagne flute | 0.75 | 0.03-0.1 | clear crystal with band
+silk pocket square | 0.7 | 0.02-0.06 | folded glossy fabric
+embossed business card stack | 0.75 | 0.02-0.08 | thick textured cardstock
+slim leather portfolio folio | 0.65 | 0.05-0.15 | grained dark cover
+gold-toned wristwatch detail | 0.75 | 0.02-0.06 | metallic linked band
+held cigar tip glow | 0.55 | 0.02-0.06 | small ember

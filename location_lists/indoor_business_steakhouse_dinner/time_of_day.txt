@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early evening reservation | 0.9 | - | -
+peak dinner hour | 1.0 | - | -
+late evening lingering courses | 0.95 | - | -
+post-dinner nightcap hour | 0.85 | - | -
+mid-evening main course service | 1.0 | - | -
+candlelit dim atmosphere all evening | 0.95 | - | -
+business lunch peak window | 0.7 | - | -
+post-work cocktail period | 0.85 | - | -
+closing hour quiet table | 0.6 | - | -
+private dining late night | 0.7 | - | -

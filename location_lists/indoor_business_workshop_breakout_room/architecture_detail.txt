@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed open ceiling grid | 0.85 | 0.3-0.6 | painted ductwork lattice
+suspended LED panel light | 0.95 | 0.2-0.5 | glowing rectangular fixture
+acoustic tile ceiling | 0.7 | 0.3-0.6 | perforated white tile
+recessed cove uplight | 0.7 | 0.2-0.5 | hidden warm glow
+ceiling-mounted projector | 0.7 | 0.05-0.15 | small angled box
+floor power outlet pop-up | 0.85 | 0.05-0.15 | inset metal hatch
+flush ceiling smoke detector | 0.55 | 0.02-0.06 | small white disc
+glass panel sliding door | 0.7 | 0.2-0.5 | clear framed slider
+exposed support i-beam column | 0.6 | 0.2-0.5 | painted steel column
+inset ceiling vent diffuser | 0.7 | 0.05-0.15 | square louvered grille

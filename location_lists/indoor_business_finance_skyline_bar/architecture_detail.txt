@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+suspended brass pendant fixture | 0.95 | 0.1-0.3 | hanging glowing globe
+coffered dark wood ceiling | 0.85 | 0.3-0.6 | recessed timber grid
+recessed cove warm uplighting | 0.85 | 0.2-0.5 | hidden glow line
+brass-rim ceiling skylight | 0.55 | 0.1-0.3 | overhead clear pane
+brass foot-rail along bar | 0.85 | 0.05-0.2 | polished horizontal bar
+deep skirting trim baseboard | 0.65 | 0.05-0.2 | grained dark baseboard
+ornate cornice molding | 0.7 | 0.2-0.5 | ornate plaster trim
+art deco column wrapping | 0.65 | 0.2-0.5 | fluted vertical pillar
+floor recessed accent uplighting | 0.6 | 0.05-0.15 | glowing floor strip
+mirrored ceiling band detail | 0.55 | 0.1-0.3 | reflective trim band

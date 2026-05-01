@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+cocktail hour early evening | 1.0 | - | -
+seated dinner mid-evening | 1.0 | - | -
+golden hour reception light | 0.7 | - | -
+program speeches evening | 0.95 | - | -
+late evening dance hour | 0.9 | - | -
+midnight nightcap lingering | 0.7 | - | -
+post-toast dessert service | 0.85 | - | -
+evening awards segment | 0.85 | - | -
+windowless ballroom sustained dim light | 0.9 | - | -
+late evening farewell departures | 0.65 | - | -

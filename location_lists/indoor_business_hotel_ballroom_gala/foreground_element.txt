@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+champagne flute in hand | 1.0 | 0.03-0.1 | clear stemmed crystal
+embossed gala invitation card | 0.85 | 0.04-0.12 | gold foil pressed paper
+black tie bowtie at collar | 0.85 | 0.03-0.1 | satin silk knot
+clutch evening purse held | 0.8 | 0.05-0.15 | beaded glossy fabric
+folded cloth dinner napkin | 0.85 | 0.04-0.12 | crisp linen fold
+silver dessert fork mid-air | 0.7 | 0.02-0.06 | polished sterling tines
+gala name place card | 0.8 | 0.02-0.08 | calligraphed cardstock
+gold-rimmed wine glass held | 0.8 | 0.03-0.1 | crystal with metallic band
+diamond stud earring detail | 0.6 | 0.01-0.04 | faceted brilliant
+framed table number stand | 0.75 | 0.03-0.1 | gilded small frame
+gala program booklet | 0.7 | 0.05-0.15 | thick printed booklet
+small calligraphed menu card | 0.7 | 0.04-0.1 | scripted paper card

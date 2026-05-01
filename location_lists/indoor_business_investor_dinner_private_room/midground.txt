@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+oval private dining table set | 1.0 | 0.4-0.8 | crisp draped white linen
+high-backed velvet dining chair | 1.0 | 0.3-0.6 | tufted plush seat
+intimate eight-seat round table | 0.85 | 0.4-0.8 | gathered seating arrangement
+flickering tapered taper-lit centerpiece | 0.9 | 0.1-0.3 | branched candleholder
+private sommelier cart | 0.7 | 0.1-0.3 | wheeled bottle trolley
+mounted private screen on wall | 0.65 | 0.2-0.5 | flat black display
+small adjacent service podium | 0.65 | 0.1-0.3 | dark wood stand
+silver wine cooler stand | 0.7 | 0.05-0.2 | tall metal bucket
+intimate buffet sideboard | 0.6 | 0.2-0.5 | linen-skirted credenza
+flanking folded napkin tower | 0.65 | 0.05-0.15 | linen architectural fold
+small framed table number stand | 0.55 | 0.03-0.1 | gilded small frame
+adjacent diner silhouette | 0.7 | 0.2-0.5 | dim companion outline
+private chef plating station | 0.55 | 0.1-0.3 | small finishing trolley

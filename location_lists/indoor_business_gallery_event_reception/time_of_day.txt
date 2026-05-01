@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early evening private view | 1.0 | - | -
+opening night cocktail hour | 1.0 | - | -
+mid-evening peak reception | 0.95 | - | -
+late evening lingering crowd | 0.85 | - | -
+post-talk reception hour | 0.85 | - | -
+press preview late afternoon | 0.8 | - | -
+closing hour winding down | 0.7 | - | -
+collector preview pre-opening | 0.7 | - | -
+corporate after-hours hire | 0.7 | - | -
+windowless gallery sustained gallery light | 0.85 | - | -

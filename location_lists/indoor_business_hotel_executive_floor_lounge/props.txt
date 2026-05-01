@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+orchid arrangement on side table | 0.85 | 0.05-0.15 | waxy white blooms
+folded cashmere throw on chair | 0.75 | 0.05-0.15 | soft brushed knit
+chilled water bottle with logo | 0.8 | 0.02-0.08 | embossed glass vessel
+fresh fruit display platter | 0.7 | 0.05-0.2 | glossy mixed produce
+leather coaster on table | 0.75 | 0.02-0.06 | embossed disc
+crystal whisky decanter | 0.7 | 0.05-0.15 | faceted heavy glass
+folded magazine stack | 0.75 | 0.05-0.15 | glossy cover stack
+metallic tray of pastries | 0.7 | 0.05-0.15 | polished serving tray
+small gold-rimmed nut bowl | 0.65 | 0.02-0.06 | shallow ceramic dish
+charging port on table | 0.75 | 0.02-0.06 | inset metal socket
+floral spray in tall vase | 0.65 | 0.05-0.2 | sculptural floral arrangement
+designer luggage tag on bag | 0.6 | 0.02-0.06 | leather hangtag
+cocktail napkin with crest | 0.7 | 0.02-0.06 | embossed pressed cotton

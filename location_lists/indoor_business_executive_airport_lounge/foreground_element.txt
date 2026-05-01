@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+leather-bound boarding pass folder | 0.85 | 0.04-0.12 | grained pebbled leather
+premium frequent flyer card | 0.8 | 0.02-0.08 | metallic embossed card
+slim wireless laptop on lap | 0.85 | 0.1-0.25 | brushed aluminum lid
+porcelain espresso cup in saucer | 0.8 | 0.03-0.1 | glazed white ceramic
+crystal champagne flute held | 0.75 | 0.03-0.1 | clear cut crystal
+folded financial newspaper | 0.7 | 0.05-0.15 | crisp newsprint
+luxury leather carry-on handle | 0.7 | 0.05-0.2 | rolled leather grip
+premium passport in hand | 0.65 | 0.02-0.08 | embossed cover
+silver-rimmed reading glasses | 0.6 | 0.02-0.08 | polished metal frame
+noise-cancelling over-ear headphones | 0.7 | 0.05-0.15 | matte plastic earcup
+gold-tipped fountain pen | 0.55 | 0.02-0.06 | lacquered slim barrel
+embossed lounge access card | 0.65 | 0.02-0.08 | glossy printed plastic

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+pressed tin steakhouse ceiling | 0.85 | 0.3-0.6 | embossed metallic squares
+warm brass pendant fixture | 0.95 | 0.1-0.3 | hanging glowing globe
+coffered dark wood ceiling beam | 0.7 | 0.2-0.5 | exposed timber framing
+patterned figured carpet | 0.8 | 0.4-0.8 | woven floral motif
+crown molding cornice trim | 0.75 | 0.2-0.5 | painted plaster band
+arched alcove doorway | 0.6 | 0.1-0.3 | curved framed opening
+brass wall sconce fixture | 0.85 | 0.05-0.15 | small glowing shade
+fluted column wood support | 0.55 | 0.1-0.3 | grooved timber post
+dark wood baseboard trim | 0.7 | 0.05-0.2 | rich grained skirting
+stained glass partition window | 0.55 | 0.1-0.3 | leaded amber pane

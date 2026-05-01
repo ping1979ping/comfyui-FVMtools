@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+reclaimed timber log cabin wall | 1.0 | 0.7-1.0 | weathered horizontal logs
+floor-to-ceiling lake view window | 0.95 | 0.5-0.9 | clear plate glass
+fieldstone fireplace hearth wall | 0.95 | 0.6-1.0 | rough mortared rounded stone
+warm cedar planked wall | 0.85 | 0.6-1.0 | rich vertical timber grain
+oversized wood-clad gable wall | 0.8 | 0.6-1.0 | cathedral peaked planks
+exposed timber post-and-beam wall | 0.85 | 0.5-0.9 | thick squared rafters
+soft wool tapestry hung wall | 0.65 | 0.5-0.9 | woven thick textile
+distant landscaped grounds through window | 0.7 | 0.4-0.8 | hazy green view
+warm amber-stained plank wall | 0.7 | 0.6-1.0 | richly oiled timber
+deep charcoal stained shiplap wall | 0.65 | 0.6-1.0 | tightly fitted dark planks
+cabin window with lakeside view | 0.65 | 0.4-0.8 | glazed framed pane
+adjacent cabin lounge space glimpse | 0.6 | 0.3-0.7 | warmly lit interior

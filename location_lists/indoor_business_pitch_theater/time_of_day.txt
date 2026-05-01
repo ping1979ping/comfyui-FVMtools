@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+morning pitch round | 0.85 | - | -
+mid-morning showcase block | 0.9 | - | -
+midday lunch break pitch | 0.7 | - | -
+afternoon investor session | 1.0 | - | -
+late afternoon final round | 0.95 | - | -
+early evening winners announcement | 0.85 | - | -
+evening demo day showcase | 0.85 | - | -
+late evening networking after | 0.65 | - | -
+windowless theater consistent dim light | 0.95 | - | -
+mid-pitch spotlight focused moment | 0.95 | - | -

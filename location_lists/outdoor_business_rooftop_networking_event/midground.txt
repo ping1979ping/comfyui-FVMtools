@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cocktail high-top reception table | 1.0 | 0.3-0.6 | tall draped column
+modern outdoor lounge seating | 0.9 | 0.3-0.6 | weather-resistant cushion
+freestanding outdoor bar setup | 0.9 | 0.3-0.6 | sleek metal counter
+networking guest cluster | 0.95 | 0.4-0.8 | grouped silhouettes
+catering buffet station | 0.75 | 0.2-0.5 | linen-skirted table
+elevated DJ deck platform | 0.55 | 0.1-0.3 | small raised stage
+outdoor planter with grasses | 0.8 | 0.2-0.5 | tall ornamental fronds
+patio heater tower | 0.75 | 0.1-0.3 | freestanding flame column
+canvas event awning above | 0.7 | 0.3-0.6 | tensioned overhead fabric
+freestanding sponsor signage | 0.65 | 0.1-0.3 | upright printed board
+service waiter passing tray | 0.75 | 0.05-0.2 | held silver platter
+modular bench seating | 0.6 | 0.2-0.5 | low slatted timber
+welcome registration podium | 0.7 | 0.1-0.3 | small standing desk

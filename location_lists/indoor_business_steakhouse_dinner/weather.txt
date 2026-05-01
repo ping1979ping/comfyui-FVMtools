@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm dim candlelit interior | 1.0 | - | -
+faintly smoky char-grilled aroma | 0.95 | - | -
+cool conditioned dining room | 0.85 | - | -
+hushed murmuring soundscape | 0.95 | - | -
+warm leather-and-wood scented air | 0.85 | - | -
+cool draft from kitchen pass | 0.6 | - | -
+gentle clinking flatware ambience | 0.85 | - | -
+warmly perfumed cigar lounge air | 0.55 | - | -
+slightly stuffy packed dining room | 0.65 | - | -
+crisp pre-service quiet atmosphere | 0.6 | - | -

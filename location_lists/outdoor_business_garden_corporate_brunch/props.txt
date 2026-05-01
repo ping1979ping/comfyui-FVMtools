@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+low floral table arrangement | 0.95 | 0.1-0.3 | dense fresh blooms
+silver canape platter | 0.85 | 0.05-0.15 | polished metal tray
+chilled champagne in ice bucket | 0.85 | 0.05-0.2 | glistening silver bucket
+glass beverage dispenser | 0.75 | 0.05-0.2 | clear vessel with spigot
+calligraphed name place card | 0.85 | 0.02-0.08 | small scripted card
+folded linen napkin in fold | 0.85 | 0.04-0.12 | softly pressed cloth
+small ceramic salt cellar | 0.6 | 0.02-0.06 | shallow glazed dish
+tiered pastry display stand | 0.85 | 0.1-0.3 | layered serving stand
+woven flower bouquet on bar | 0.7 | 0.05-0.15 | mixed garden stems
+seating chart easel | 0.65 | 0.1-0.3 | framed printed board
+welcome step-and-repeat banner | 0.6 | 0.2-0.5 | logo-printed backdrop
+small votive candle in glass | 0.55 | 0.02-0.06 | flickering glass cup
+fresh fruit display platter | 0.75 | 0.05-0.2 | glossy mixed produce

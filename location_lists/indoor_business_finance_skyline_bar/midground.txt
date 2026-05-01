@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long polished marble bar top | 1.0 | 0.4-0.8 | veined slab surface
+high-back velvet barstool | 1.0 | 0.3-0.6 | tufted velvet seat
+backlit glowing glass shelving | 0.95 | 0.3-0.6 | mirrored bottle display
+small intimate cocktail booth | 0.85 | 0.3-0.6 | curved leather banquette
+adjacent bar patron silhouette | 0.85 | 0.2-0.5 | suited dim outline
+mixologist working silhouette | 0.85 | 0.1-0.3 | dim figure behind bar
+low-slung club lounge sofa | 0.7 | 0.3-0.6 | smooth aniline leather
+brushed brass cocktail table | 0.8 | 0.2-0.5 | satin metallic plate
+small DJ booth setup | 0.55 | 0.1-0.3 | low table with deck
+service waiter passing tray | 0.75 | 0.05-0.2 | held silver platter
+freestanding bar caddy on counter | 0.65 | 0.05-0.15 | lacquered organizer
+private skybox lounge alcove | 0.6 | 0.3-0.6 | enclosed booth
+high-top bar communal table | 0.75 | 0.3-0.6 | tall round laminate top

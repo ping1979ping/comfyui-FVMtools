@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+step-and-repeat sponsor logo wall | 1.0 | 0.7-1.0 | tightly tiled vinyl print
+deep blue press backdrop curtain | 0.9 | 0.6-1.0 | smoothly stretched fabric
+official seal mounted center wall | 0.8 | 0.4-0.8 | carved emblematic crest
+charcoal felt-paneled rear wall | 0.75 | 0.6-1.0 | dense vertical felt fluting
+flag-flanked center wall | 0.8 | 0.5-0.9 | hanging vertical flag
+white painted briefing wall | 0.7 | 0.6-1.0 | smooth matte finish
+neutral grey gradient backdrop | 0.7 | 0.6-1.0 | softly gradient paint
+illuminated agency name signage | 0.7 | 0.4-0.8 | backlit metal lettering
+dark wood paneled briefing wall | 0.65 | 0.6-1.0 | rich grain veneer
+distant press riser silhouette | 0.7 | 0.3-0.7 | tiered camera platform
+seated press corps shadow row | 0.85 | 0.5-0.9 | dim seated outlines
+clear flag pole mount wall | 0.55 | 0.3-0.6 | brass mounted bracket

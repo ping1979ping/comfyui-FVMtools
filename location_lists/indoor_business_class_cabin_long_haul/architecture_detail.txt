@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+curved cabin overhead ceiling | 1.0 | 0.4-0.8 | smooth molded composite
+sculpted overhead bin door | 0.95 | 0.3-0.7 | hinged matte panel
+LED mood-lit ceiling cove | 0.9 | 0.3-0.6 | softly glowing strip
+oval portal window frame | 0.85 | 0.1-0.3 | rounded molded ring
+recessed cabin air vent | 0.8 | 0.1-0.3 | small adjustable nozzle
+pillar between window pairs | 0.7 | 0.2-0.5 | structural cabin rib
+flush emergency exit signage | 0.6 | 0.05-0.15 | glowing tile sign
+seat-row aisle marker light | 0.65 | 0.05-0.15 | embedded floor point
+forward galley bulkhead wall | 0.7 | 0.3-0.6 | composite divider
+overhead console oxygen mask panel | 0.55 | 0.1-0.3 | recessed compartment door

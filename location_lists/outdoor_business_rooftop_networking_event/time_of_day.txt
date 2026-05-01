@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late afternoon golden arrival | 0.85 | - | -
+early evening cocktail hour | 1.0 | - | -
+sunset rooftop magic hour | 0.95 | - | -
+twilight blue hour reception | 0.95 | - | -
+mid-evening peak networking | 0.9 | - | -
+late evening drinks lingering | 0.85 | - | -
+night-lit panorama hour | 0.8 | - | -
+post-dinner nightcap | 0.7 | - | -
+moonlit late night farewell | 0.6 | - | -
+crisp early evening pre-event setup | 0.6 | - | -

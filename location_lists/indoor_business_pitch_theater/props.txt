@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bottled water on stool | 0.85 | 0.02-0.08 | glossy plastic bottle
+laptop open on side stand | 0.85 | 0.05-0.15 | matte aluminum shell
+demo prototype on plinth | 0.85 | 0.05-0.15 | spotlit object
+printed pitch deck stack | 0.8 | 0.05-0.15 | glossy folded sheets
+stage rigging gaffer tape strip | 0.6 | 0.02-0.08 | matte black tape line
+press camera tripod at side | 0.65 | 0.1-0.3 | matte black telescoping legs
+session timer countdown screen | 0.85 | 0.05-0.15 | glowing digital readout
+investor scoring tablet | 0.7 | 0.05-0.15 | glass touchscreen
+sponsor banner pull-up stand | 0.65 | 0.1-0.3 | retractable banner roll
+clear acrylic award plaque | 0.55 | 0.05-0.15 | engraved transparent block
+small whiteboard easel | 0.5 | 0.1-0.3 | wheeled marker board
+microphone stand foot | 0.85 | 0.05-0.15 | weighted metal base
+event branded coffee cup | 0.6 | 0.02-0.06 | printed paper cup

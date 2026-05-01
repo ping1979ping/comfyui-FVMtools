@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+strung overhead bistro lights | 1.0 | 0.3-0.6 | warm point light strands
+glass parapet edge railing | 0.9 | 0.3-0.6 | clear frameless panels
+composite deck floor tile | 0.85 | 0.4-0.8 | grey woodgrain board
+metal railing top cap | 0.7 | 0.1-0.3 | brushed steel band
+rooftop HVAC enclosure | 0.6 | 0.1-0.3 | louvered metal box
+exposed concrete parapet wall | 0.65 | 0.2-0.5 | board-formed grey surface
+modular planter divider | 0.7 | 0.2-0.5 | tall corten steel box
+overhead retractable canopy frame | 0.55 | 0.2-0.5 | aluminum truss arms
+cantilevered shade structure | 0.6 | 0.2-0.5 | angular tensile sail
+rooftop signage masthead | 0.5 | 0.1-0.3 | branded raised letters

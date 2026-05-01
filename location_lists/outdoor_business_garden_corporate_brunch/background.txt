@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+manicured estate garden hedge | 1.0 | 0.6-1.0 | densely clipped boxwood
+distant flowering rose pergola | 0.9 | 0.5-0.9 | climbing pink rose canopy
+manor house facade backdrop | 0.85 | 0.5-0.9 | warm stone-clad elevation
+columned veranda colonnade | 0.8 | 0.4-0.8 | white classical columns
+distant ornamental fountain | 0.75 | 0.4-0.8 | tiered stone water feature
+patterned stone garden wall | 0.7 | 0.5-0.9 | aged warm masonry
+sunlit lawn expanse | 0.85 | 0.4-0.8 | manicured fresh turf
+deep green cypress hedge row | 0.75 | 0.5-0.9 | tall vertical evergreen
+flowering wisteria draped arbor | 0.7 | 0.4-0.8 | trailing purple blossoms
+ornamental flower border bed | 0.85 | 0.4-0.8 | dense color-mixed planting
+distant garden statuary | 0.6 | 0.3-0.7 | weathered stone figure
+estate ironwork garden gate | 0.6 | 0.3-0.7 | scrolled wrought iron

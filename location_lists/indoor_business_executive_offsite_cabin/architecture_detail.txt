@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+cathedral peaked timber ceiling | 0.95 | 0.4-0.8 | exposed angled rafters
+massive central roof spine beam | 0.9 | 0.2-0.5 | thick squared timber
+exposed iron strap fastener | 0.7 | 0.05-0.15 | dark forged bracket
+wrought iron chandelier ring | 0.85 | 0.2-0.5 | branched dark metal frame
+raised stone fireplace mantel | 0.85 | 0.2-0.5 | thick reclaimed timber slab
+wide-plank wood flooring | 0.95 | 0.4-0.8 | wide oiled timber boards
+exposed stone chimney column | 0.7 | 0.2-0.5 | rough stacked masonry
+double-height window mullion grid | 0.7 | 0.3-0.6 | dark divided pane lattice
+exposed iron rivet beam joinery | 0.55 | 0.05-0.15 | hammered metal connection
+recessed warm cove lighting | 0.6 | 0.2-0.5 | hidden warm glow

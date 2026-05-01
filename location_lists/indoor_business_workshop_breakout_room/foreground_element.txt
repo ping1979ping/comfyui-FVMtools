@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+held dry-erase marker | 1.0 | 0.02-0.06 | matte plastic barrel
+stack of bright post-it pads | 0.95 | 0.05-0.15 | small square pads
+slim laptop on lap | 0.9 | 0.1-0.25 | brushed aluminum lid
+held smartphone with notes | 0.85 | 0.03-0.1 | glossy glass screen
+spiral notebook in hand | 0.85 | 0.05-0.15 | wire-bound notebook
+takeaway coffee cup | 0.85 | 0.03-0.1 | corrugated paper sleeve
+event lanyard with name tag | 0.85 | 0.02-0.1 | woven nylon strap
+folded workshop handout | 0.85 | 0.05-0.15 | crisp printed bond
+cluster of held sharpie set | 0.7 | 0.04-0.12 | thick marker pile
+held rolled flipchart sheet | 0.7 | 0.05-0.15 | rolled large paper
+sticky-note in hand mid-place | 0.85 | 0.02-0.06 | bright square slip
+held water bottle | 0.75 | 0.02-0.08 | clear plastic vessel

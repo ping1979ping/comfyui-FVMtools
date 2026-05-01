@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+leather-bound hotel keycard folder | 0.85 | 0.04-0.12 | grained pebbled leather
+slim wireless laptop on lap | 0.9 | 0.1-0.25 | brushed aluminum lid
+porcelain espresso cup in saucer | 0.85 | 0.03-0.1 | glazed white china
+crystal champagne flute held | 0.75 | 0.03-0.1 | clear cut crystal
+folded financial broadsheet | 0.75 | 0.05-0.15 | crisp newsprint
+luxury overcoat draped over arm | 0.6 | 0.1-0.25 | softly draping wool
+slim leather portfolio held | 0.7 | 0.05-0.15 | grained dark cover
+silver-rimmed reading glasses | 0.65 | 0.02-0.08 | polished metal frame
+held smartphone with itinerary | 0.85 | 0.03-0.1 | glossy glass screen
+gold-tipped fountain pen | 0.6 | 0.02-0.06 | lacquered slim barrel
+embossed lounge access card | 0.7 | 0.02-0.08 | glossy printed plastic
+held warm tea cup and saucer | 0.7 | 0.03-0.1 | glazed porcelain pair

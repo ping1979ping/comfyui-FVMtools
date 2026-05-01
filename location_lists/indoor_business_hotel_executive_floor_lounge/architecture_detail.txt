@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+double-height vaulted lounge ceiling | 0.85 | 0.3-0.7 | smooth gypsum plaster
+recessed warm cove lighting | 0.95 | 0.2-0.5 | hidden glow line
+stained walnut ceiling beam | 0.7 | 0.2-0.5 | rich linear timber
+polished marble floor inlay | 0.75 | 0.3-0.6 | veined stone slab
+brass column collar trim | 0.6 | 0.1-0.3 | satin gold band
+linear suspended pendant tube | 0.85 | 0.2-0.5 | hanging glowing rod
+glass clerestory upper window | 0.65 | 0.2-0.5 | clear horizontal pane
+suspended decorative metal mobile | 0.55 | 0.1-0.3 | abstract bronze form
+dark stained skirting trim | 0.7 | 0.05-0.2 | grained baseboard
+floating staircase to upper deck | 0.5 | 0.2-0.5 | cantilevered stone tread

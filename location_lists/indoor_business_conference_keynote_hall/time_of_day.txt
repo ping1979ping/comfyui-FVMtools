@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+morning keynote opening session | 1.0 | - | -
+late morning plenary | 0.85 | - | -
+midday session under house lights | 0.8 | - | -
+post-lunch keynote | 0.75 | - | -
+afternoon featured talk | 0.85 | - | -
+late afternoon panel session | 0.7 | - | -
+early evening closing keynote | 0.7 | - | -
+evening awards portion | 0.6 | - | -
+late evening fireside chat | 0.55 | - | -
+windowless interior anytime lighting | 0.95 | - | -
+break time house lights raised | 0.65 | - | -

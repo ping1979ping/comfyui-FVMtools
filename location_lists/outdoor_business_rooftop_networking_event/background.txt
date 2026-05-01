@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant downtown skyline panorama | 1.0 | 0.6-1.0 | layered glass tower silhouettes
+glowing skyline at dusk | 0.9 | 0.6-1.0 | warm orange-purple wash
+glass parapet rooftop railing | 0.95 | 0.4-0.8 | clear frameless panel
+neighboring high-rise facade | 0.85 | 0.5-0.9 | gridded glass curtain
+distant illuminated bridge | 0.7 | 0.4-0.8 | strung point lights
+deep blue evening urban sky | 0.85 | 0.5-1.0 | gradient open sky
+hazy city horizon line | 0.8 | 0.4-0.8 | soft atmospheric layer
+adjacent rooftop terrace below | 0.65 | 0.3-0.7 | distant lit deck
+floodlit rooftop architectural feature | 0.7 | 0.3-0.7 | spotlit angular form
+illuminated office tower windows | 0.8 | 0.4-0.8 | scattered lit cells
+distant river or harbor view | 0.6 | 0.3-0.7 | reflective dark band
+twilight cloud band on horizon | 0.65 | 0.4-0.8 | streaked pastel cloud

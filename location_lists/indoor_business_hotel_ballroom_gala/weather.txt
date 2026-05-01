@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm candlelit interior atmosphere | 1.0 | - | -
+cool conditioned ballroom climate | 0.9 | - | -
+faintly perfumed floral air | 0.85 | - | -
+warm crowded gala ambience | 0.9 | - | -
+hushed murmuring soundscape | 0.85 | - | -
+cool draft from open service door | 0.55 | - | -
+warm spotlit dance floor heat | 0.7 | - | -
+slightly stuffy packed dance floor | 0.6 | - | -
+crisp pre-dinner lounge air | 0.7 | - | -
+faintly sweet dessert-course air | 0.6 | - | -

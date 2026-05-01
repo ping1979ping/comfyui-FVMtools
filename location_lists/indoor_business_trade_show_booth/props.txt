@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+product sample on plinth | 0.95 | 0.05-0.15 | spotlit display object
+bowl of branded candy | 0.8 | 0.05-0.15 | shallow ceramic dish
+booth-branded water bottle | 0.85 | 0.02-0.08 | printed plastic bottle
+demo headset for visitors | 0.65 | 0.05-0.15 | foam-padded earcup
+giveaway tote bag stack | 0.75 | 0.1-0.3 | folded canvas stack
+clipboard with sign-up sheet | 0.7 | 0.05-0.15 | acrylic clip board
+small floral arrangement on counter | 0.55 | 0.05-0.15 | fresh stem cluster
+brand video reel on tablet | 0.7 | 0.05-0.15 | playing screen loop
+LED-lit acrylic logo block | 0.7 | 0.05-0.15 | glowing cube sign
+hanging product cutaway model | 0.6 | 0.1-0.3 | suspended cross-section
+press kit folder | 0.65 | 0.05-0.15 | embossed card folder
+charging cable bundle | 0.6 | 0.05-0.15 | coiled black cords
+trade show floor map kiosk | 0.55 | 0.05-0.15 | printed standing board

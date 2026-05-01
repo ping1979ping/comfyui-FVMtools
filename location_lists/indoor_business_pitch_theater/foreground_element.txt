@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+handheld presenter clicker | 0.95 | 0.02-0.1 | matte plastic shell
+lapel microphone clipped | 0.95 | 0.01-0.05 | tiny black foam tip
+held smartphone with deck | 0.85 | 0.03-0.1 | glossy glass screen
+folded pitch script in hand | 0.85 | 0.05-0.15 | crisp folded paper
+pitch event lanyard on chest | 0.9 | 0.02-0.1 | woven nylon strap
+slim leather notepad held | 0.7 | 0.05-0.15 | grained cover
+silver pen held mid-gesture | 0.7 | 0.02-0.06 | polished metal barrel
+embossed pitch program card | 0.65 | 0.04-0.12 | textured cardstock
+event speaker badge on lanyard | 0.85 | 0.02-0.08 | glossy printed insert
+held water bottle | 0.75 | 0.02-0.08 | clear plastic vessel
+folded judge scoring sheet | 0.7 | 0.05-0.15 | printed bond paper
+spotlight flare in lens | 0.7 | 0.05-0.2 | glowing soft light bloom

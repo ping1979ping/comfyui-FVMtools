@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low-slung tan leather lounge sofa | 1.0 | 0.4-0.8 | smooth aniline leather
+brushed brass cocktail table | 0.85 | 0.2-0.5 | satin metallic plate
+single high-backed armchair | 0.8 | 0.3-0.6 | tufted fabric upholstery
+self-serve buffet counter | 0.75 | 0.3-0.6 | polished stone slab
+champagne service bar back | 0.7 | 0.3-0.6 | mirrored bottle shelving
+private workstation cubicle | 0.7 | 0.3-0.6 | felt-paneled booth
+freestanding luggage valet | 0.6 | 0.1-0.3 | brushed metal frame
+flat panel flight info screen | 0.75 | 0.2-0.5 | glossy black display
+modern barstool at counter | 0.65 | 0.2-0.5 | leather and metal seat
+glass-topped coffee table | 0.7 | 0.2-0.5 | clear thick glass
+rolling beverage cart | 0.55 | 0.1-0.3 | mirrored chrome trolley
+host concierge podium | 0.65 | 0.1-0.4 | dark stained wood stand
+floor-standing reading lamp | 0.6 | 0.1-0.3 | tall slim matte lamp

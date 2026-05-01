@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned cabin air | 1.0 | - | -
+quiet hum of cruise engines | 0.95 | - | -
+slightly dry pressurized atmosphere | 0.95 | - | -
+hushed sleeping cabin acoustic | 0.85 | - | -
+faintly chilled aisle draft | 0.7 | - | -
+warm pooled spotlight zone | 0.7 | - | -
+gentle continuous airflow | 0.85 | - | -
+faint scent of warm meal service | 0.7 | - | -
+mild turbulence rumble | 0.55 | - | -
+calm smooth cruise stillness | 0.8 | - | -

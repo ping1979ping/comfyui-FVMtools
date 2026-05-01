@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned atrium air | 1.0 | - | -
+crisp filtered lobby climate | 0.95 | - | -
+faint draft from revolving door | 0.75 | - | -
+hushed acoustic interior | 0.9 | - | -
+warm pooled spotlight zone | 0.65 | - | -
+brisk morning entrance gust | 0.7 | - | -
+echoing footsteps on stone floor | 0.85 | - | -
+faint scent of cleaning polish | 0.6 | - | -
+hum of HVAC system | 0.8 | - | -
+quietly buzzing tenant flow | 0.75 | - | -

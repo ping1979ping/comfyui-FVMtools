@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning continental breakfast | 0.95 | - | -
+mid-morning departure window | 0.85 | - | -
+midday transit pause | 0.8 | - | -
+afternoon meeting period | 0.85 | - | -
+late afternoon tea service | 0.85 | - | -
+golden hour through panoramic glass | 0.85 | - | -
+early evening cocktail hour | 0.95 | - | -
+evening hors d'oeuvres reception | 0.9 | - | -
+late evening nightcap | 0.8 | - | -
+overnight quiet hours | 0.55 | - | -

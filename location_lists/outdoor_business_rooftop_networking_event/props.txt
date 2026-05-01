@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+floral bar centerpiece | 0.85 | 0.05-0.15 | dense fresh stems
+silver canape tray | 0.8 | 0.05-0.15 | polished metal platter
+chilled champagne in ice bucket | 0.85 | 0.05-0.2 | glistening silver bucket
+votive candle in glass | 0.85 | 0.02-0.08 | flickering glass cup
+wood chip cigar lounge ash tray | 0.5 | 0.02-0.08 | shallow stone bowl
+sponsor branded coaster | 0.7 | 0.02-0.06 | embossed cardstock disc
+wireless speaker on table | 0.65 | 0.05-0.15 | matte cylinder unit
+small cocktail menu card | 0.7 | 0.04-0.1 | printed paper card
+folded event napkin stack | 0.7 | 0.05-0.15 | cocktail tissue stack
+table number stand on bar | 0.6 | 0.03-0.1 | small framed sign
+charcuterie display board | 0.65 | 0.1-0.3 | wooden serving slab
+guest seating chart easel | 0.55 | 0.1-0.3 | framed printed board
+welcome step-and-repeat banner | 0.7 | 0.2-0.5 | logo-printed backdrop

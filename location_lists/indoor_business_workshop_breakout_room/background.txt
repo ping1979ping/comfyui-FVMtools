@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+bright white-painted breakout wall | 1.0 | 0.7-1.0 | smooth matte plaster
+glass-walled meeting room divider | 0.95 | 0.6-1.0 | clear frameless panel
+warm felt-paneled accent wall | 0.85 | 0.6-1.0 | dense vertical felt fluting
+exposed light-grey concrete wall | 0.8 | 0.6-1.0 | board-formed grey surface
+movable acoustic divider panel | 0.75 | 0.5-0.9 | wheeled fabric partition
+mounted whiteboard surface wall | 0.95 | 0.6-1.0 | smooth marker-streaked surface
+warm natural maple paneled wall | 0.7 | 0.6-1.0 | grained light timber
+mid-tone teal painted accent wall | 0.7 | 0.6-1.0 | flat saturated paint
+distant open-plan office through glass | 0.7 | 0.4-0.8 | hazy figure activity
+chalk-painted matte black wall | 0.6 | 0.6-1.0 | absorbing chalkboard surface
+patterned graphic mural wall | 0.65 | 0.5-0.9 | painted geometric shapes
+soft pearl-grey carpeted partition | 0.6 | 0.5-0.9 | dense low-pile fiber

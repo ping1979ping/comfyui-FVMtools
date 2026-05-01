@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low-profile executive lounge sofa | 1.0 | 0.4-0.8 | smooth aniline upholstery
+brushed brass cocktail table | 0.85 | 0.2-0.5 | satin metallic plate
+high-backed swivel armchair | 0.8 | 0.3-0.6 | tufted fabric upholstery
+self-serve continental buffet | 0.75 | 0.3-0.6 | polished stone slab
+honor bar back counter | 0.85 | 0.3-0.6 | mirrored shelving wall
+private working alcove | 0.75 | 0.3-0.6 | felt-paneled booth
+freestanding magazine valet | 0.6 | 0.1-0.3 | brass framed rack
+glass-topped occasional table | 0.7 | 0.2-0.5 | clear thick glass
+modern barstool at counter | 0.65 | 0.2-0.5 | leather and metal seat
+private workstation pod | 0.7 | 0.3-0.6 | enclosed clear booth
+rolling tea service trolley | 0.55 | 0.1-0.3 | mirrored chrome cart
+host concierge podium | 0.7 | 0.1-0.4 | dark stained wood stand
+floor-standing reading lamp | 0.7 | 0.1-0.3 | tall slim matte lamp

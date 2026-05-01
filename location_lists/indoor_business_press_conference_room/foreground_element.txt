@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+handheld reporter microphone | 1.0 | 0.05-0.15 | foam-tipped mesh head
+pressed credentials lanyard on neck | 0.95 | 0.02-0.1 | woven nylon strap
+press pass laminated badge | 0.95 | 0.02-0.08 | glossy printed insert
+folded press release sheet | 0.9 | 0.05-0.15 | crisp printed bond paper
+held digital recorder | 0.85 | 0.03-0.1 | slim matte handheld
+held smartphone recording | 0.85 | 0.03-0.1 | glossy glass screen
+spiral press notepad in hand | 0.85 | 0.05-0.15 | wire-bound notebook
+held pen mid-note | 0.85 | 0.02-0.06 | polished metal barrel
+camera body in foreground | 0.85 | 0.1-0.25 | matte black dslr
+folded official statement card | 0.7 | 0.04-0.12 | thick textured cardstock
+clip-on lapel microphone | 0.7 | 0.01-0.05 | tiny black foam tip
+flash bulb burst flare | 0.7 | 0.05-0.2 | bright soft light bloom

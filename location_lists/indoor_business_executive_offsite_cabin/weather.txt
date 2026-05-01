@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm fireside crackling atmosphere | 1.0 | - | -
+faint scent of woodsmoke | 0.9 | - | -
+cool fresh cabin morning air | 0.85 | - | -
+hushed retreat quiet ambience | 0.95 | - | -
+cozy warm interior climate | 0.95 | - | -
+faintly resinous cedar scent | 0.8 | - | -
+cool draft from window vent | 0.6 | - | -
+warm pooled fireplace heat zone | 0.85 | - | -
+crisp clear cabin daylight | 0.7 | - | -
+gently humming radiant heating | 0.7 | - | -

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stemmed wine glass held | 1.0 | 0.03-0.1 | clear cut crystal
+embossed event invitation card | 0.9 | 0.04-0.12 | thick textured cardstock
+gallery exhibition catalog | 0.9 | 0.05-0.15 | softcover printed booklet
+event lanyard with name tag | 0.9 | 0.02-0.1 | woven nylon strap
+held smartphone with art shot | 0.85 | 0.03-0.1 | glossy glass screen
+small canape on cocktail napkin | 0.85 | 0.02-0.06 | bite-sized garnish
+folded gallery floor map | 0.7 | 0.05-0.15 | printed fold-out paper
+held business card stack | 0.8 | 0.02-0.08 | thick textured cardstock
+small black cocktail napkin | 0.85 | 0.02-0.06 | folded soft tissue
+audio guide handheld device | 0.6 | 0.05-0.15 | slim rectangular module
+gold-rimmed champagne flute | 0.75 | 0.03-0.1 | clear stemware band
+slim leather portfolio held | 0.55 | 0.05-0.15 | grained leather cover

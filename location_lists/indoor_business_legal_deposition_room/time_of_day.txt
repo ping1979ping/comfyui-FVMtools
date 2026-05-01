@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning deposition start | 0.95 | - | -
+mid-morning testimony block | 1.0 | - | -
+late morning continuing testimony | 0.95 | - | -
+midday break recess | 0.65 | - | -
+post-lunch deposition resumes | 0.9 | - | -
+afternoon extended testimony | 0.95 | - | -
+late afternoon final cross | 0.85 | - | -
+early evening session ending | 0.7 | - | -
+overcast day soft window light | 0.7 | - | -
+windowless interior consistent lighting | 0.7 | - | -

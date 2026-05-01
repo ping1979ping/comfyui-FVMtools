@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+shimmering metallic fringe stage curtain | 1.0 | 0.7-1.0 | cascading metallic strands
+deep purple draped stage backdrop | 0.95 | 0.6-1.0 | heavy pleated velour
+illuminated awards logo wall | 0.95 | 0.6-1.0 | spotlit branded panel
+dazzling LED video panel wall | 0.9 | 0.6-1.0 | tightly gridded glowing display
+gold metallic mirror backdrop | 0.85 | 0.6-1.0 | reflective metallic sheets
+black sparkle-fabric stage drape | 0.8 | 0.6-1.0 | densely sequined fabric
+deep burgundy velvet backdrop | 0.75 | 0.6-1.0 | richly pleated heavy cloth
+sponsor logo step-and-repeat panel | 0.85 | 0.5-0.9 | tiled vinyl print
+distant audience silhouettes in dark | 0.85 | 0.5-0.9 | dim crowd outlines
+crystal-laden backdrop scrim | 0.7 | 0.5-0.9 | suspended jewel curtain
+softly lit gradient drop | 0.75 | 0.6-1.0 | washed colored drape
+distant stage wing curtain | 0.7 | 0.4-0.8 | dark side fabric

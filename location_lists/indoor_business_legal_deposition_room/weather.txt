@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned conference room air | 1.0 | - | -
+hushed tense quiet ambience | 1.0 | - | -
+crisp filtered conditioned air | 0.9 | - | -
+warm pooled lamp zone | 0.7 | - | -
+slightly stuffy long-session air | 0.7 | - | -
+quiet hum of HVAC | 0.85 | - | -
+focused attentive interior climate | 0.95 | - | -
+faintly leather-scented atmosphere | 0.65 | - | -
+gently buzzing recording electronics | 0.6 | - | -
+cool draft from rear vents | 0.55 | - | -

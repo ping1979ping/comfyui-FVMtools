@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late morning brunch arrival | 1.0 | - | -
+midday peak brunch service | 1.0 | - | -
+early afternoon coffee course | 0.95 | - | -
+mid-afternoon dessert lingering | 0.85 | - | -
+late afternoon farewell mingling | 0.8 | - | -
+golden hour lawn light | 0.85 | - | -
+early evening warm light | 0.7 | - | -
+mid-morning pre-event setup | 0.65 | - | -
+overcast soft daylight ambience | 0.75 | - | -
+dappled tree-shaded brunch light | 0.85 | - | -

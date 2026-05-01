@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm dim candlelit interior | 1.0 | - | -
+hushed conspiratorial murmur | 1.0 | - | -
+faintly perfumed floral air | 0.85 | - | -
+cool conditioned dining climate | 0.85 | - | -
+warm wood-and-leather scented air | 0.85 | - | -
+gentle clinking flatware ambience | 0.9 | - | -
+slightly stuffy intimate room air | 0.65 | - | -
+faintly sweet dessert-course air | 0.6 | - | -
+quietly humming HVAC | 0.7 | - | -
+focused private dining atmosphere | 0.95 | - | -

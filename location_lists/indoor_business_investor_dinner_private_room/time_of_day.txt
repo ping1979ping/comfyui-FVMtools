@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early evening reception aperitif | 0.95 | - | -
+peak dinner hour | 1.0 | - | -
+mid-evening main course service | 1.0 | - | -
+late evening lingering courses | 0.95 | - | -
+post-dinner nightcap hour | 0.9 | - | -
+candlelit dim atmosphere all evening | 0.95 | - | -
+pre-dinner cocktail period | 0.85 | - | -
+post-toast dessert service | 0.9 | - | -
+late night term sheet review | 0.7 | - | -
+private dining late night | 0.75 | - | -

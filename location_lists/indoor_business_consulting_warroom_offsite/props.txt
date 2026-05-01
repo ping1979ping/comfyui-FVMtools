@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+scattered marker cap pile | 0.8 | 0.02-0.08 | small plastic caps
+crumpled napkin pile | 0.7 | 0.05-0.15 | wadded paper tissue
+empty energy drink can row | 0.75 | 0.05-0.15 | aluminum can lineup
+shared snack bowl | 0.85 | 0.05-0.15 | open chip bowl
+cardboard pizza box stack | 0.7 | 0.05-0.15 | corrugated takeout pile
+takeout container cluster | 0.75 | 0.05-0.15 | mixed plastic boxes
+giant printed timeline scroll | 0.7 | 0.1-0.3 | rolled long paper
+strewn business card pile | 0.65 | 0.02-0.08 | scattered crisp cards
+banker box of project files | 0.7 | 0.05-0.2 | cardboard archive box
+scattered USB stick collection | 0.6 | 0.02-0.06 | small plastic sticks
+flexible task lamp on table | 0.65 | 0.05-0.15 | adjustable arm fixture
+masking tape roll on table | 0.65 | 0.02-0.06 | small adhesive roll
+project burndown chart printout | 0.65 | 0.05-0.15 | printed graph sheet

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning strategy session | 0.95 | - | -
+mid-morning workshop block | 1.0 | - | -
+midday working lunch | 0.85 | - | -
+afternoon breakout session | 0.95 | - | -
+late afternoon synthesis hour | 0.9 | - | -
+golden hour through windows | 0.85 | - | -
+early evening fireside review | 0.9 | - | -
+evening dinner debrief | 0.85 | - | -
+late evening fireside discussion | 0.8 | - | -
+overcast cloudy cabin daylight | 0.7 | - | -

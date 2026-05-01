@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+bright white gallery wall | 1.0 | 0.7-1.0 | smooth matte painted plaster
+mounted oversized canvas artwork | 0.95 | 0.4-0.8 | painted textured surface
+spot-lit framed photographic prints | 0.9 | 0.4-0.8 | gridded gallery hanging
+exposed industrial concrete wall | 0.8 | 0.6-1.0 | board-formed grey surface
+matte black gallery feature wall | 0.75 | 0.6-1.0 | flat absorbing finish
+floor-to-ceiling glass partition | 0.7 | 0.5-0.9 | clear frameless glass
+distant adjoining gallery glimpse | 0.7 | 0.3-0.7 | softly lit room beyond
+exposed pipe industrial gallery wall | 0.65 | 0.5-0.9 | painted steel beam wall
+warm white-painted curator wall | 0.85 | 0.6-1.0 | smooth painted finish
+suspended cloth gallery scrim | 0.55 | 0.4-0.8 | softly draped fabric
+exposed ceiling track lighting wall | 0.7 | 0.5-0.9 | rail-mounted spotlights
+deep slate-grey accent wall | 0.65 | 0.6-1.0 | matte saturated paint

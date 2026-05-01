@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+slim wireless laptop on tray | 0.9 | 0.1-0.25 | brushed aluminum lid
+crystal champagne flute on tray | 0.85 | 0.03-0.1 | clear stemmed crystal
+porcelain meal plate served | 0.9 | 0.1-0.25 | glazed white china
+folded amenity kit pouch | 0.85 | 0.05-0.15 | embossed leather flap
+noise-cancelling over-ear headphones | 0.95 | 0.05-0.15 | matte plastic earcup
+warm folded cabin blanket | 0.8 | 0.1-0.3 | soft brushed knit
+slim cabin slipper pair | 0.7 | 0.05-0.15 | terry fabric loop
+embossed boarding pass folder | 0.75 | 0.04-0.12 | grained leather holder
+held passport in hand | 0.65 | 0.02-0.08 | embossed cover
+warm ceramic espresso cup | 0.75 | 0.03-0.1 | glazed porcelain
+crisp menu card on tray | 0.85 | 0.04-0.12 | thick printed paper
+sleep mask folded on shelf | 0.65 | 0.03-0.1 | satin elastic strap

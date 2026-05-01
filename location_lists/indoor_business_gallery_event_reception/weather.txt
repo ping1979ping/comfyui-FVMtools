@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned gallery climate | 1.0 | - | -
+hushed murmuring soundscape | 0.95 | - | -
+crisp filtered conditioned air | 0.9 | - | -
+warm pooled spotlight zones | 0.85 | - | -
+slightly humid packed crowd ambience | 0.65 | - | -
+faintly perfumed reception air | 0.8 | - | -
+quiet hum of HVAC | 0.8 | - | -
+cool draft from entry doors | 0.55 | - | -
+focused attentive viewing atmosphere | 0.85 | - | -
+faintly buzzing event electronics | 0.6 | - | -

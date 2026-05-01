@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned breakout air | 1.0 | - | -
+buzzing collaborative ambience | 0.95 | - | -
+crisp filtered conditioned air | 0.9 | - | -
+warmly lit focused interior | 0.85 | - | -
+faint coffee-and-marker scent | 0.85 | - | -
+hum of HVAC and laptops | 0.85 | - | -
+slightly stuffy intense-session air | 0.65 | - | -
+cool draft from rear vents | 0.55 | - | -
+energetic attentive climate | 0.95 | - | -
+fresh post-break refreshed air | 0.65 | - | -

@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+decanted bordeaux on table | 0.85 | 0.05-0.15 | crystal pouring vessel
+small flickering votive candle | 0.95 | 0.02-0.08 | glass holder warm flame
+silver bread basket lined | 0.8 | 0.05-0.15 | linen-lined metal basket
+cut glass salt cellar | 0.7 | 0.02-0.06 | small faceted dish
+butter rosette on dish | 0.7 | 0.02-0.06 | small molded pat
+chilled seafood tower | 0.6 | 0.1-0.3 | tiered ice display
+embossed leather check folder | 0.85 | 0.05-0.15 | dark leather presenter
+glass-rim charger plate | 0.85 | 0.05-0.15 | polished pewter disc
+small floral table arrangement | 0.7 | 0.05-0.15 | low fresh stems
+ice bucket with chiller | 0.65 | 0.05-0.15 | polished silver bucket
+thick wine list booklet | 0.85 | 0.05-0.15 | leather padded volume
+silver ash receptacle | 0.5 | 0.02-0.06 | small polished bowl
+cigar box on side table | 0.5 | 0.05-0.15 | dark wood case

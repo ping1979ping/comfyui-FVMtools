@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+overhead aluminum truss grid | 0.95 | 0.3-0.6 | bolted lattice framework
+rigged spotlight cluster | 0.9 | 0.2-0.5 | clamped stage lights
+hanging directional aisle sign | 0.75 | 0.1-0.3 | suspended printed flag
+exposed convention hall ductwork | 0.7 | 0.2-0.5 | painted industrial pipe
+booth corner column wrap | 0.7 | 0.1-0.3 | printed graphic cylinder
+cable raceway floor cover | 0.65 | 0.1-0.3 | rubber yellow tray
+suspended booth number sign | 0.7 | 0.05-0.15 | hanging rectangular plate
+ceiling-mounted speaker box | 0.55 | 0.05-0.15 | matte black enclosure
+illuminated booth header sign | 0.85 | 0.2-0.5 | backlit brand band
+modular booth corner trim | 0.6 | 0.1-0.3 | aluminum extrusion

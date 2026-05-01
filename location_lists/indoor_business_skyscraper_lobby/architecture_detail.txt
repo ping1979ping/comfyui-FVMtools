@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+triple-height atrium ceiling | 0.9 | 0.3-0.7 | smooth white plaster expanse
+suspended sculptural pendant cluster | 0.8 | 0.2-0.5 | hanging glowing globes
+polished terrazzo lobby floor | 0.85 | 0.4-0.8 | speckled stone aggregate
+floating cantilevered mezzanine | 0.7 | 0.2-0.5 | jutting concrete edge
+exposed concrete structural column | 0.65 | 0.2-0.5 | board-formed grey surface
+recessed linear ceiling light | 0.85 | 0.2-0.5 | inset glowing slot
+glass mezzanine balustrade | 0.6 | 0.2-0.5 | clear frameless panel
+polished bronze door pull | 0.6 | 0.05-0.15 | elongated metallic handle
+floor signal compass inlay | 0.5 | 0.1-0.3 | brass-inlaid stone star
+seamless flush ceiling vent | 0.55 | 0.05-0.15 | hidden trim slot

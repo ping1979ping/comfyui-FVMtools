@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned theater interior | 1.0 | - | -
+warm pooled spotlight heat | 0.95 | - | -
+charged electric anticipation | 1.0 | - | -
+hushed pre-announcement quiet | 0.95 | - | -
+distant haze-machine atmospheric layer | 0.7 | - | -
+faintly stuffy packed auditorium | 0.7 | - | -
+crisp filtered conditioned air | 0.85 | - | -
+gently humming stage rigging | 0.65 | - | -
+roaring applause swell ambience | 0.95 | - | -
+cool draft from rear vents | 0.55 | - | -

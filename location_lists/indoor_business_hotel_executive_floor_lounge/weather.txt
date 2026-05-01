@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool filtered conditioned interior | 1.0 | - | -
+quietly humming HVAC ambience | 0.9 | - | -
+warm cozy lounge atmosphere | 0.95 | - | -
+faint scent of fresh coffee | 0.85 | - | -
+hushed acoustic interior | 0.95 | - | -
+muted distant city ambience | 0.7 | - | -
+crisp clean conditioned air | 0.85 | - | -
+soft ambient temperate climate | 0.85 | - | -
+slightly cool premium atmosphere | 0.75 | - | -
+faintly perfumed lounge air | 0.7 | - | -

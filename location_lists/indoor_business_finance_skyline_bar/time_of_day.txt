@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-work cocktail hour | 1.0 | - | -
+early evening market close drink | 1.0 | - | -
+twilight blue hour panorama | 0.95 | - | -
+mid-evening peak bar period | 1.0 | - | -
+late evening lingering nightcap | 0.95 | - | -
+midnight last-call hour | 0.85 | - | -
+post-dinner deal close | 0.85 | - | -
+golden hour through skyline glass | 0.7 | - | -
+moonlit late night quiet bar | 0.75 | - | -
+overnight closing hour wind-down | 0.6 | - | -

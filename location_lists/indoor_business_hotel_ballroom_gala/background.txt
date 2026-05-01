@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+ornate gilded ballroom wall panel | 1.0 | 0.7-1.0 | gold-leafed plaster relief
+heavy crimson silk wall drape | 0.9 | 0.6-1.0 | richly pleated glossy fabric
+ivory damask papered wall | 0.85 | 0.7-1.0 | embossed tone-on-tone pattern
+mirrored ballroom wall panels | 0.8 | 0.6-1.0 | reflective beveled glass
+champagne satin draped backdrop | 0.85 | 0.6-1.0 | softly cascading sheen
+deep burgundy painted wainscot wall | 0.7 | 0.6-1.0 | matte rich pigment
+arched alcove with fresco panel | 0.65 | 0.5-0.9 | painted classical scene
+illuminated stage backdrop with monogram | 0.8 | 0.5-0.9 | spotlit branded panel
+floor-to-ceiling pleated stage curtain | 0.75 | 0.6-1.0 | heavy velvet drape
+distant grand entrance archway | 0.7 | 0.4-0.8 | molded plaster framing
+gold-bordered cream wall | 0.7 | 0.6-1.0 | smooth painted surface
+candlelit alcove niche | 0.6 | 0.4-0.8 | warm glowing recess

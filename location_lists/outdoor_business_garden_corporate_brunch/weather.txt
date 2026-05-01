@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+mild sunny garden day | 1.0 | - | -
+gentle warm spring breeze | 0.95 | - | -
+fresh blooming garden scent | 0.95 | - | -
+soft dappled sunlight ambience | 0.9 | - | -
+clear bright blue sky day | 0.85 | - | -
+warm midday sun pooled zones | 0.85 | - | -
+faintly humid garden atmosphere | 0.7 | - | -
+cool shaded pergola pocket | 0.75 | - | -
+buzzing distant insect chorus | 0.8 | - | -
+softly overcast garden day | 0.7 | - | -

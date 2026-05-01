@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+visitor security badge clipped on | 1.0 | 0.02-0.08 | printed plastic card
+slim leather briefcase handle | 0.85 | 0.05-0.15 | rolled leather grip
+folded broadsheet newspaper held | 0.7 | 0.05-0.15 | crisp newsprint
+takeaway coffee cup with sleeve | 0.85 | 0.03-0.1 | corrugated paper sleeve
+smartphone in palm | 0.85 | 0.03-0.1 | glossy glass screen
+rolling carry-on luggage handle | 0.65 | 0.05-0.15 | extended metal stem
+laminated keycard on lanyard | 0.8 | 0.02-0.08 | glossy printed insert
+folded wool overcoat over arm | 0.7 | 0.1-0.25 | softly draping fabric
+silver pen clipped to pocket | 0.6 | 0.02-0.06 | polished metal barrel
+embossed business card stack | 0.75 | 0.02-0.08 | thick textured cardstock
+slim portfolio folder under arm | 0.65 | 0.05-0.15 | grained leather cover
+gold-toned wristwatch detail | 0.6 | 0.02-0.06 | metallic linked band

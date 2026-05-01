@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+show floor opening rush | 1.0 | - | -
+mid-morning peak traffic | 0.95 | - | -
+late morning quieter window | 0.7 | - | -
+midday lunch slowdown | 0.7 | - | -
+early afternoon rebound | 0.85 | - | -
+mid-afternoon visitor peak | 0.9 | - | -
+late afternoon winding down | 0.75 | - | -
+closing hour final demos | 0.7 | - | -
+post-show breakdown evening | 0.55 | - | -
+windowless hall consistent lighting | 0.95 | - | -

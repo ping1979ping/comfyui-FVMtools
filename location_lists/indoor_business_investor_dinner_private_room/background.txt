@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+deep emerald upholstered private dining wall | 1.0 | 0.7-1.0 | tufted padded fabric
+hand-painted floral mural wall | 0.85 | 0.6-1.0 | painted botanical scene
+bookmatched marble feature wall | 0.85 | 0.6-1.0 | symmetric veined stone
+heavy patterned wallpapered wall | 0.8 | 0.6-1.0 | embossed floral motif
+warm cognac leather panel wall | 0.75 | 0.6-1.0 | quilted padded leather
+smoked-mirror dining backdrop | 0.7 | 0.5-0.9 | tinted reflective panel
+arched alcove with framed art | 0.7 | 0.4-0.8 | curved framed niche
+deep oxblood lacquered wall | 0.7 | 0.6-1.0 | high-gloss painted finish
+gold-leafed accent wall | 0.6 | 0.6-1.0 | metallic foiled surface
+distant private corridor through doorway | 0.55 | 0.3-0.7 | softly lit hall beyond
+silk damask papered wall | 0.7 | 0.6-1.0 | tone-on-tone pattern
+warm rose-gold metallic wall finish | 0.55 | 0.6-1.0 | soft metallic sheen

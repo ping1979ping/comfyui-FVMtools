@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+crystal red wine glass held | 1.0 | 0.03-0.1 | clear rounded bowl
+gold-rimmed steak knife | 0.95 | 0.03-0.1 | polished serrated blade
+linen dinner napkin draped | 0.9 | 0.05-0.15 | softly draped white cloth
+dry-aged steak on plate | 0.95 | 0.1-0.3 | seared crusted slab
+crystal water tumbler held | 0.85 | 0.03-0.1 | heavy cut glass
+silver oyster fork beside plate | 0.6 | 0.02-0.06 | small polished tines
+folded leatherette menu in hand | 0.85 | 0.05-0.15 | embossed leather cover
+small bread plate edge | 0.8 | 0.04-0.12 | white china rim
+chilled martini glass held | 0.7 | 0.03-0.1 | clear conical bowl
+silver pepper mill in hand | 0.65 | 0.04-0.1 | tall wooden grinder
+slim leather wallet held | 0.6 | 0.05-0.15 | grained dark leather
+embossed wine list in hand | 0.7 | 0.05-0.15 | thick padded cover

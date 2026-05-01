@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning kickoff | 0.9 | - | -
+mid-morning sprint block | 1.0 | - | -
+midday working lunch | 0.85 | - | -
+afternoon synthesis push | 1.0 | - | -
+late afternoon review | 0.95 | - | -
+early evening crunch hour | 0.95 | - | -
+evening late-night push | 0.9 | - | -
+late evening final stretch | 0.85 | - | -
+overnight burning midnight oil | 0.7 | - | -
+windowless room sustained lighting | 0.85 | - | -

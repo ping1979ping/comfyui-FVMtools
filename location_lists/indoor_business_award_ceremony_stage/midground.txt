@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+raised awards stage platform | 1.0 | 0.4-0.8 | carpeted glossy deck
+acrylic awards lectern | 0.95 | 0.2-0.5 | clear angled panel
+glittering award statuette on plinth | 0.9 | 0.05-0.2 | metallic sculptural form
+tall floor microphone stand | 0.85 | 0.05-0.2 | matte black slim pole
+raised winner reveal plinth | 0.8 | 0.1-0.3 | spotlit pedestal
+front row VIP seating | 0.85 | 0.4-0.8 | upholstered glamorous chairs
+stage step risers flanking | 0.7 | 0.2-0.5 | matte black carpeted steps
+floor-mounted teleprompter | 0.7 | 0.1-0.3 | reflective angled glass
+camera operator on jib | 0.7 | 0.1-0.3 | extended boom arm
+elevated press riser at rear | 0.6 | 0.2-0.5 | metal-framed tier
+flanking presenter podium | 0.65 | 0.2-0.5 | secondary lectern
+nominee table cluster front | 0.75 | 0.3-0.6 | round fabric-draped tables
+floral flanking arrangement column | 0.7 | 0.1-0.3 | dense fresh blooms

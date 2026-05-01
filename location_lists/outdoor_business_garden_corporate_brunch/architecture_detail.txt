@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+strung overhead bistro lights | 0.9 | 0.3-0.6 | warm point light strands
+flowering pergola overhead beam | 0.85 | 0.3-0.6 | climbing vine canopy
+flagstone garden path | 0.85 | 0.3-0.6 | irregular paved stone
+white tent peak ceiling | 0.7 | 0.4-0.8 | tensioned fabric canopy
+ornamental wrought iron arbor | 0.6 | 0.2-0.5 | scrolled metal arch
+low garden border stone wall | 0.7 | 0.2-0.5 | dry-stacked stone edge
+manicured hedge archway | 0.65 | 0.2-0.5 | trimmed green tunnel
+classical garden column | 0.55 | 0.1-0.3 | weathered stone pillar
+crushed gravel garden path | 0.75 | 0.2-0.5 | pale crunching stones
+ornamental garden urn pedestal | 0.6 | 0.1-0.3 | carved stone vessel

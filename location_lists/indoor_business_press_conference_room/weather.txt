@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned briefing room air | 1.0 | - | -
+warm pooled spotlight heat | 0.85 | - | -
+crisp filtered conditioned air | 0.9 | - | -
+quietly tense charged ambience | 0.95 | - | -
+slightly stuffy packed-room air | 0.7 | - | -
+hum of HVAC system | 0.8 | - | -
+warm camera-light pooled zone | 0.75 | - | -
+cool draft from rear vents | 0.55 | - | -
+focused attentive interior climate | 0.95 | - | -
+faintly buzzing recording electronics | 0.65 | - | -

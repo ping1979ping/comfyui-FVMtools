@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+round banquet table with linen | 1.0 | 0.4-0.8 | crisp white tablecloth
+tall floral centerpiece arrangement | 0.95 | 0.2-0.5 | dense premium blooms
+chiavari gold ballroom chair | 0.9 | 0.3-0.6 | gilded frame with cushion
+elevated gala stage platform | 0.8 | 0.3-0.6 | carpeted raised deck
+acrylic gala speaker lectern | 0.75 | 0.1-0.3 | clear angled panel
+dance floor parquet inlay | 0.7 | 0.4-0.8 | herringbone wood tile
+cocktail high-top reception table | 0.7 | 0.2-0.5 | tall draped column
+VIP head table dais | 0.65 | 0.3-0.6 | elongated draped surface
+service buffet station | 0.65 | 0.2-0.5 | linen-skirted table
+string quartet performer cluster | 0.55 | 0.2-0.5 | chairs and stands
+tall candelabrum centerpiece | 0.7 | 0.1-0.3 | branched gold metal
+silver charger plate at place setting | 0.85 | 0.05-0.15 | polished metallic disc
+ice sculpture display | 0.5 | 0.1-0.3 | carved frosted block

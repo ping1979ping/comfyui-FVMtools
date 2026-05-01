@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+curved aircraft cabin sidewall | 1.0 | 0.6-1.0 | molded composite panel
+oval cabin window with shade | 0.95 | 0.3-0.7 | rounded portal pane
+suite privacy divider panel | 0.9 | 0.5-0.9 | tall sliding partition
+champagne textured cabin wall | 0.8 | 0.6-1.0 | softly grained composite
+warm wood-veneer cabin trim | 0.85 | 0.5-0.9 | rich linear veneer
+muted taupe cabin upholstery wall | 0.75 | 0.6-1.0 | tightly stretched fabric
+forward galley curtain | 0.65 | 0.3-0.7 | softly draping cloth
+overhead bin cabinet face | 0.95 | 0.4-0.8 | matte plastic shell
+suite pod outer shell | 0.85 | 0.6-1.0 | sculpted molded form
+mood-lit cabin ceiling wash | 0.85 | 0.4-0.8 | softly glowing curve
+patterned cabin carpeted aisle wall | 0.6 | 0.3-0.7 | dense looped fiber
+suite door open showing aisle | 0.65 | 0.3-0.7 | hinged sliding panel

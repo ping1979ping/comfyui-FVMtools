@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned exhibition hall air | 1.0 | - | -
+warm crowded foot-traffic atmosphere | 0.85 | - | -
+faintly stuffy packed-aisle air | 0.75 | - | -
+buzzing energetic floor ambience | 0.95 | - | -
+hum of distant demo speakers | 0.8 | - | -
+cool draft along aisles | 0.6 | - | -
+warm pooled spotlight heat | 0.65 | - | -
+fresh-coffee scented break-period air | 0.6 | - | -
+slightly dry hall climate | 0.7 | - | -
+quietly humming overhead vents | 0.7 | - | -

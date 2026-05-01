@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+handheld presenter clicker | 0.85 | 0.02-0.1 | matte plastic shell
+lapel microphone clipped to jacket | 0.9 | 0.01-0.05 | tiny black foam tip
+laminated speaker badge on lanyard | 0.8 | 0.02-0.08 | glossy printed card
+folded keynote notes in hand | 0.7 | 0.05-0.15 | crisp bond paper
+sleek smartphone in palm | 0.65 | 0.03-0.1 | glossy glass screen
+handheld stage microphone | 0.75 | 0.03-0.12 | mesh metal head
+event lanyard with name tag | 0.85 | 0.02-0.1 | woven nylon strap
+silver pen tucked in hand | 0.6 | 0.02-0.06 | polished metal barrel
+slim leather portfolio under arm | 0.6 | 0.05-0.15 | grained leather cover
+stage spotlight flare in lens | 0.7 | 0.05-0.2 | glowing soft light bloom
+folded reading glasses held | 0.5 | 0.02-0.08 | thin metal rims
+embossed keynote program card | 0.6 | 0.04-0.12 | textured cardstock

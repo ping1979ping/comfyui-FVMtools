@@ -1,0 +1,16 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+show floor visitor lanyard | 1.0 | 0.02-0.1 | woven nylon strap
+trade show name badge | 0.95 | 0.02-0.08 | printed plastic insert
+glossy product brochure | 0.9 | 0.05-0.15 | high-gloss folded sheet
+branded swag tote bag | 0.85 | 0.1-0.3 | woven canvas strap
+pen branded with company logo | 0.8 | 0.02-0.06 | smooth plastic barrel
+folded show floor map | 0.7 | 0.05-0.15 | printed fold-out paper
+demo tablet handed across | 0.75 | 0.05-0.15 | glass touchscreen
+business card stack in hand | 0.85 | 0.02-0.08 | crisp printed cardstock
+QR code scan card | 0.7 | 0.02-0.06 | matte printed insert
+giveaway stress ball | 0.55 | 0.02-0.06 | matte foam sphere
+folded sales one-pager | 0.7 | 0.04-0.12 | printed glossy sheet
+show floor coffee cup | 0.7 | 0.03-0.08 | printed paper cup
+lapel exhibitor badge | 0.75 | 0.02-0.06 | clipped plastic card

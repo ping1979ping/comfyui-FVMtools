@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+morning workshop kickoff | 1.0 | - | -
+mid-morning ideation block | 1.0 | - | -
+midday working lunch | 0.85 | - | -
+post-lunch breakout block | 0.95 | - | -
+mid-afternoon synthesis hour | 0.95 | - | -
+late afternoon retro session | 0.85 | - | -
+early evening wrap-up | 0.7 | - | -
+evening continuing late session | 0.65 | - | -
+overcast day soft window light | 0.7 | - | -
+windowless space sustained office light | 0.85 | - | -

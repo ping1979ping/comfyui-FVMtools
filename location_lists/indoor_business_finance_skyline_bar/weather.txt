@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm dim ambient bar interior | 1.0 | - | -
+hushed conspiratorial murmur | 0.95 | - | -
+faintly smoky cigar-scented air | 0.7 | - | -
+cool conditioned skyline-view climate | 0.9 | - | -
+gentle clinking glassware ambience | 0.95 | - | -
+warm pooled spotlight zones | 0.85 | - | -
+soft jazz-scored atmosphere | 0.85 | - | -
+slightly stuffy peak-hour air | 0.7 | - | -
+faintly perfumed cocktail-bar air | 0.75 | - | -
+quiet hum of HVAC system | 0.7 | - | -

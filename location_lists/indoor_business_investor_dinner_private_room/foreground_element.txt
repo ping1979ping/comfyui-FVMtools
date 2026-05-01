@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+held crystal red wine glass | 1.0 | 0.03-0.1 | clear rounded bowl
+embossed multi-course menu card | 0.95 | 0.04-0.12 | gold-foil pressed cardstock
+linen dinner napkin draped | 0.95 | 0.05-0.15 | softly draped fabric
+silver dessert spoon mid-air | 0.7 | 0.02-0.06 | polished sterling
+held printed term sheet | 0.75 | 0.05-0.15 | crisp printed bond
+calligraphed name place card | 0.85 | 0.02-0.08 | small scripted card
+held espresso cup and saucer | 0.7 | 0.03-0.1 | glazed white porcelain
+small gold cufflink detail | 0.55 | 0.01-0.04 | small metallic disc
+clutch evening purse held | 0.55 | 0.05-0.15 | beaded glossy fabric
+slim leather investor folio | 0.7 | 0.05-0.15 | grained dark cover
+gold-rimmed water goblet | 0.85 | 0.03-0.1 | crystal with metallic band
+small printed pitch leaflet | 0.55 | 0.04-0.1 | folded glossy sheet

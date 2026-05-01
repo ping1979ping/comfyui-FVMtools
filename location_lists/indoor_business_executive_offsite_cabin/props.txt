@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stack of split firewood logs | 0.85 | 0.05-0.2 | rough cut timber pile
+poured concrete coaster set | 0.65 | 0.02-0.06 | matte grey disc
+rustic clay water carafe | 0.7 | 0.03-0.1 | matte stoneware vessel
+cluster of pillar candles | 0.85 | 0.05-0.15 | thick wax columns
+small folded wool throw | 0.7 | 0.05-0.15 | cabled knit textile
+ceramic snack bowl | 0.65 | 0.03-0.1 | matte glazed dish
+brass-framed bookend pair | 0.6 | 0.05-0.15 | polished metal bookends
+hardback strategy book stack | 0.7 | 0.05-0.15 | embossed cover spines
+glass insulated water carafe | 0.7 | 0.03-0.1 | clear vessel
+small spruce branch arrangement | 0.7 | 0.05-0.15 | fresh fragrant evergreen
+hand-thrown ceramic vase | 0.65 | 0.05-0.15 | textured glazed vessel
+cluster of presentation post-its on wall | 0.65 | 0.1-0.3 | bright sticky-note grid
+woven leather coaster | 0.55 | 0.02-0.06 | small leather disc

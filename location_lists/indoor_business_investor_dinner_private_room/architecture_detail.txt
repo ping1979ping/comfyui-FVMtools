@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+ornate ceiling rose medallion | 0.85 | 0.1-0.3 | radiating plaster ornament
+crystal chandelier centered overhead | 0.95 | 0.2-0.5 | cascading prismatic crystals
+crown molding cornice trim | 0.9 | 0.2-0.5 | painted plaster band
+patterned figured carpet | 0.85 | 0.4-0.8 | dense woven motif
+chair rail molding band | 0.7 | 0.1-0.3 | mid-height trim
+wall sconce flickering pair | 0.85 | 0.05-0.15 | glowing antique fixture
+arched private doorway | 0.7 | 0.1-0.3 | curved framed entry
+dark wood baseboard skirting | 0.7 | 0.05-0.2 | richly grained baseboard
+ornate brass door pull | 0.6 | 0.05-0.15 | polished metallic handle
+ceiling cove uplighting | 0.65 | 0.2-0.5 | hidden warm glow

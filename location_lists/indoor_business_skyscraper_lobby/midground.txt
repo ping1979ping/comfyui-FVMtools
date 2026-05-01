@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long curved reception desk | 1.0 | 0.4-0.8 | polished stone facade
+glass turnstile speedgate row | 0.95 | 0.3-0.6 | frosted glass blades
+bank of mirrored elevator doors | 0.9 | 0.3-0.6 | polished metal panel
+freestanding visitor kiosk | 0.7 | 0.1-0.3 | upright touchscreen tower
+modern lobby seating cluster | 0.7 | 0.2-0.5 | low fabric benches
+oversized lobby art sculpture | 0.7 | 0.2-0.5 | abstract metal form
+security guard standing post | 0.65 | 0.1-0.3 | uniformed silhouette
+glass-walled meeting pod | 0.65 | 0.2-0.5 | enclosed clear booth
+polished stone information plinth | 0.6 | 0.1-0.3 | low square pedestal
+tall potted ficus tree | 0.7 | 0.2-0.5 | dense glossy foliage
+lobby digital info totem | 0.65 | 0.1-0.3 | upright glowing screen
+floor-recessed welcome runner | 0.6 | 0.3-0.6 | dense logo carpet inset

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm summer evening | 0.95 | - | -
+mild breezy rooftop air | 0.9 | - | -
+cool autumn evening crispness | 0.85 | - | -
+soft warm uplit ambience | 0.95 | - | -
+hazy city heat lingering | 0.7 | - | -
+gentle elevated wind gusts | 0.8 | - | -
+distant traffic hum from below | 0.75 | - | -
+faintly humid still evening | 0.65 | - | -
+fresh cool post-rain rooftop air | 0.6 | - | -
+warm patio heater pooled zone | 0.7 | - | -

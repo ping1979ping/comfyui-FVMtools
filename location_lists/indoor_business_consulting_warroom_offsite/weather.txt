@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool conditioned project room air | 1.0 | - | -
+slightly stuffy long-session ambience | 0.85 | - | -
+faintly stale takeout-scented air | 0.7 | - | -
+hum of HVAC and laptops | 0.9 | - | -
+warm pooled task-lamp zone | 0.7 | - | -
+buzzing focused crunch atmosphere | 0.95 | - | -
+crisp filtered conditioned air | 0.8 | - | -
+cool draft from rear vents | 0.55 | - | -
+charged tense work climate | 0.95 | - | -
+faint coffee-scented working air | 0.8 | - | -

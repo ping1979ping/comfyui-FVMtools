@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+freestanding sculpture plinth | 1.0 | 0.2-0.5 | white acrylic pedestal
+gallery cocktail high-top table | 0.9 | 0.2-0.5 | tall round laminate
+freestanding bar reception counter | 0.85 | 0.3-0.6 | sleek minimal counter
+event guest cluster | 0.95 | 0.4-0.8 | mingling silhouettes
+catering canape station | 0.75 | 0.2-0.5 | small linen-skirted table
+small artist talk podium | 0.65 | 0.1-0.3 | minimal angled lectern
+freestanding gallery info card | 0.7 | 0.05-0.2 | placard on slim stand
+mid-room sculpture installation | 0.7 | 0.3-0.6 | abstract central form
+service waiter passing tray | 0.7 | 0.05-0.2 | held silver platter
+gallery bench seating | 0.65 | 0.2-0.5 | low minimal slab
+event registration table | 0.7 | 0.2-0.5 | linen-draped check-in
+freestanding price list panel | 0.6 | 0.1-0.3 | slim acrylic stand
+small DJ booth setup | 0.5 | 0.1-0.3 | low table with deck

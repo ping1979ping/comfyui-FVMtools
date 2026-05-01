@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+oversized crystal chandelier | 1.0 | 0.2-0.5 | cascading prismatic crystals
+coffered ornate ceiling panel | 0.85 | 0.3-0.7 | gilded recessed grid
+fluted classical column | 0.75 | 0.2-0.5 | grooved cream pillar
+carved cornice molding | 0.8 | 0.2-0.5 | ornate plaster trim
+parquet ballroom floor pattern | 0.75 | 0.3-0.7 | inlaid wood star
+arched grand doorway frame | 0.7 | 0.2-0.5 | molded plaster arch
+gilded ceiling medallion rose | 0.65 | 0.1-0.3 | radiating gold ornament
+balcony mezzanine balustrade | 0.55 | 0.2-0.5 | turned stone railing
+sconce-lit pilaster | 0.6 | 0.1-0.3 | wall-flat decorative column
+mirrored door reveal | 0.5 | 0.05-0.15 | beveled glass insert

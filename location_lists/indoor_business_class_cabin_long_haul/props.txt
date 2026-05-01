@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+linen napkin folded on tray | 0.9 | 0.05-0.15 | crisply pressed cloth
+silver flatware setting on tray | 0.9 | 0.05-0.15 | polished gleaming utensils
+bottled mineral water | 0.85 | 0.02-0.08 | embossed glass bottle
+hot towel rolled on dish | 0.75 | 0.02-0.08 | warm damp cotton roll
+warm bread basket | 0.7 | 0.05-0.15 | woven small basket
+tiered amenity tray | 0.65 | 0.05-0.15 | small lacquered box
+folded cabin slipper bag | 0.7 | 0.05-0.15 | drawstring fabric pouch
+small condiment dish set | 0.65 | 0.02-0.08 | pair of porcelain ramekins
+stowed cabin shoe pair | 0.55 | 0.05-0.15 | leather lace-up
+inflight magazine in seat pocket | 0.85 | 0.05-0.15 | glossy thin booklet
+small bottle of cabin moisturizer | 0.6 | 0.02-0.06 | tube tipped on side
+charging port on console | 0.85 | 0.02-0.06 | inset USB socket

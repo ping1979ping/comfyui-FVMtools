@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+climate-controlled cool interior | 1.0 | - | -
+slightly warm under stage lights | 0.8 | - | -
+crisp filtered conditioned air | 0.85 | - | -
+dimmed house atmosphere | 0.9 | - | -
+neutral conference room ambience | 0.95 | - | -
+faintly stuffy packed-room air | 0.6 | - | -
+cool draft from rear vents | 0.55 | - | -
+warm spotlight pooled heat | 0.7 | - | -
+quiet hum of HVAC | 0.75 | - | -
+fresh post-break refreshed air | 0.6 | - | -
