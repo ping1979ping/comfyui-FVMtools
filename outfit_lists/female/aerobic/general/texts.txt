@@ -10,4 +10,7 @@
 "NO LIMITS" | 0.15 | top | bold block letters
 "LET'S GO" | 0.15 | top | clean modern font
 "GRIND" | 0.15 | top | bold block letters
-"STRONGER" | 0.15 | top | athletic font
+"HARDER" | 0.15 | top | athletic font
+"repeat" | 0.15 | top | athletic font
+"do it." | 0.15 | top | italic font
+"discipline" | 0.15 | top | gothic font

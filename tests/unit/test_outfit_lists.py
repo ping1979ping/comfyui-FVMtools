@@ -1,5 +1,6 @@
 """Unit tests for core/outfit_lists.py — garment, fabric, and harmony loading."""
 
+import os
 import pytest
 from core.outfit_lists import (load_garments, load_fabrics, load_fabric_harmony,
                                get_available_sets, get_list_file_path,
@@ -18,7 +19,8 @@ class TestGetAvailableSets:
 
     def test_contains_general_female(self):
         sets = get_available_sets()
-        assert "general_female" in sets
+        # After hierarchy migration, the slug is the POSIX path under outfit_lists/.
+        assert "female/general/general" in sets
 
     def test_returns_sorted(self):
         sets = get_available_sets()
@@ -38,8 +40,9 @@ class TestGetListFilePath:
         assert isinstance(path, str)
 
     def test_contains_outfit_set_and_slot(self):
+        # Legacy slug "general_female" resolves to hierarchical path.
         path = get_list_file_path("general_female", "top")
-        assert "general_female" in path
+        assert ("general_female" in path) or ("female/general/general" in path.replace(os.sep, "/"))
         assert "top.txt" in path
 
 

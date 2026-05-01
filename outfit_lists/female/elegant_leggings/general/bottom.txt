@@ -2,12 +2,12 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 leggings | 0.90 | 0.4-0.7 | leather,satin,velvet
-high-waisted leggings | 0.85 | 0.4-0.7 | leather,satin,velvet,suede
+high-waisted leggings | 0.85 | 0.4-0.7 | leather,satin,velvet,suede, animalprint
 glossy black leggings | 0.75 | 0.4-0.7 | leather,satin
 slim-fit leggings | 0.70 | 0.5-0.7 | satin,jersey
 plush leggings | 0.55 | 0.5-0.7 | velvet
 soft-touch leggings | 0.50 | 0.5-0.7 | suede
-faux-finish leggings | 0.65 | 0.4-0.6 | leather
+faux-finish leggings | 0.65 | 0.4-0.6 | leather, animalprint
 metallic-sheen leggings | 0.55 | 0.4-0.6 | satin
 ponte-knit leggings | 0.50 | 0.5-0.7 | jersey
 lace-inset leggings | 0.45 | 0.4-0.6 | jersey,satin
@@ -15,7 +15,7 @@ mesh-panel leggings | 0.40 | 0.3-0.6 | jersey,satin
 sheer-paneled leggings | 0.35 | 0.3-0.6 | jersey,satin
 wet-look leggings | 0.55 | 0.3-0.6 | satin,leather
 stirrup leggings | 0.35 | 0.4-0.6 | jersey,leather
-crocodile-embossed leggings | 0.40 | 0.5-0.7 | leather
-snake-embossed leggings | 0.35 | 0.4-0.7 | leather
+crocodile-embossed leggings | 0.40 | 0.5-0.7 | leather , animalprint
+snake-embossed leggings | 0.35 | 0.4-0.7 | leather, animalprint
 zippered leggings | 0.45 | 0.4-0.6 | leather
 side-striped leggings | 0.35 | 0.4-0.6 | jersey,satin
