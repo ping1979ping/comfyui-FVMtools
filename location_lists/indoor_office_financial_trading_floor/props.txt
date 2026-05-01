@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+padded over-ear trading headset | 0.95 | 0.02-0.08 | soft-foam earpad mic
+multi-line trading desk telephone | 0.95 | 0.02-0.1 | matte black multi-button handset
+ceramic bank-branded coffee mug | 0.85 | 0.02-0.05 | glazed corporate-emblem cup
+scattered trade-ticket printout | 0.85 | 0.02-0.1 | stapled confirmation slip pile
+ranked-pen brass desk-set | 0.65 | 0.02-0.05 | marble-base nib stand
+ergonomic vertical wrist-rest mouse | 0.7 | 0.02-0.05 | tilted-grip plastic mouse
+plastic water-bottle rank | 0.85 | 0.02-0.08 | row of disposable bottles
+clipped trader ID badge | 0.85 | 0.02-0.05 | lanyard photo-card identifier
+hand-bound market-research folio | 0.6 | 0.02-0.08 | leather-tied report binder
+desk-corner stress-ball | 0.55 | 0.02-0.05 | soft squeezable foam sphere
+framed market-milestone certificate | 0.55 | 0.02-0.08 | matted gilt-frame document
+brass nameplate desk-sign | 0.65 | 0.02-0.05 | engraved polished plaque
+digital-pocket-calculator unit | 0.65 | 0.02-0.05 | boxy desk arithmetic machine
+rolling-tape paper printer-roll | 0.5 | 0.02-0.05 | narrow receipt-style paper roll

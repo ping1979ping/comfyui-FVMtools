@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+communal kitchen island counter | 1.0 | 0.3-0.6 | butcher-block timber surface
+mismatched lounge chair cluster | 0.9 | 0.3-0.6 | varied upholstered seating
+edison-bulb pendant cluster | 0.95 | 0.2-0.5 | exposed amber filament bulbs
+exposed ductwork and conduit run | 0.9 | 0.2-0.5 | matte silver spiral pipes
+soundproofed phone booth pod | 0.8 | 0.2-0.5 | felt-lined upright cabin
+communal long-table workstation | 0.85 | 0.3-0.6 | raw-edge wood plank top
+rolling whiteboard divider | 0.7 | 0.2-0.5 | framed wheeled marker board
+modular cube shelving unit | 0.7 | 0.2-0.5 | open metal-grid shelving
+velvet retro sofa centerpiece | 0.65 | 0.2-0.5 | tufted jewel-toned upholstery
+communal espresso bar setup | 0.75 | 0.2-0.4 | chrome semi-pro machine
+hanging swing chair | 0.55 | 0.1-0.3 | rope-suspended rattan basket
+workshop event-stage corner | 0.55 | 0.2-0.4 | low platform with stool seat
+ping-pong communal table | 0.6 | 0.3-0.5 | blue-paint regulation top

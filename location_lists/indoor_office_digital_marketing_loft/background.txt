@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+wide-monitor wall dashboard array | 1.0 | 0.7-1.0 | tiled glowing screen panel
+conversion-funnel-graphic whiteboard wall | 0.95 | 0.7-1.0 | marker-drawn flow diagram
+KPI-grid sticky-note marketing wall | 0.95 | 0.7-1.0 | neon-paper square layer
+painted-brand-color accent wall | 0.85 | 0.7-1.0 | bold corporate-pigment paint
+growth-chart annotated whiteboard wall | 0.85 | 0.7-1.0 | marker-drawn line graph
+ad-creative gallery print wall | 0.7 | 0.6-1.0 | framed campaign-print row
+backlit acrylic logo wall | 0.65 | 0.6-0.9 | softly glowing brand panel
+white-painted gallery loft wall | 0.85 | 0.7-1.0 | matte clean designer surface
+polished concrete shell loft wall | 0.7 | 0.7-1.0 | smooth troweled cement
+framed-screenshot campaign wall | 0.65 | 0.6-0.9 | ranked successful-ad print
+painted A-B-test-comparison wall | 0.6 | 0.6-0.9 | side-by-side variant chart
+audience-persona printout wall | 0.65 | 0.6-0.9 | framed customer-archetype print

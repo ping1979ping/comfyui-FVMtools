@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+vintage industrial wrench-set tray | 0.7 | 0.02-0.08 | ranked cast-metal tools
+riveted-steel mug on desk | 0.85 | 0.02-0.05 | patinated metal coffee cup
+salvaged-factory clock face on stand | 0.6 | 0.02-0.08 | industrial-face timepiece
+vintage drafting-pencil tin | 0.7 | 0.02-0.05 | metal-cased pencil set
+hand-bound industrial-design folio | 0.7 | 0.02-0.08 | leather-tied paper journal
+salvaged brass desk-bell | 0.55 | 0.02-0.05 | domed polished signal bell
+vintage typewriter on warehouse desk | 0.7 | 0.02-0.08 | cast-iron mechanical machine
+industrial-style desk lamp | 0.85 | 0.02-0.08 | swing-arm metal-shade fixture
+brass nameplate machinist sign | 0.55 | 0.02-0.05 | engraved polished plaque
+vintage gear-and-cog paperweight | 0.55 | 0.02-0.05 | cast-iron mechanism piece
+rolled-blueprint pile on desk | 0.7 | 0.02-0.1 | stacked drawing tubes
+salvaged glass-shade desk lamp | 0.6 | 0.02-0.08 | amber-glass industrial lamp
+vintage-style binoculars on shelf | 0.45 | 0.02-0.05 | leather-cased optical pair
+hand-stamped riveted-leather portfolio | 0.55 | 0.02-0.08 | studded grain-leather cover

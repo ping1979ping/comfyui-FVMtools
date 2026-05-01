@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+multi-screen trader workstation cluster | 1.0 | 0.3-0.6 | stacked four-monitor rig
+ergonomic high-back trader chair | 0.95 | 0.2-0.5 | mesh-back swivel seat
+ranked rolling trader desks | 0.95 | 0.3-0.6 | ganged trading workstations
+LED-ticker scoreboard above floor | 0.85 | 0.2-0.4 | ceiling-mounted scrolling band
+glass-walled trader-pit enclosure | 0.7 | 0.2-0.5 | frameless glass partition
+ranked phone-bank desk-row | 0.85 | 0.2-0.5 | row of headset desk stations
+rolling printer-and-stock-paper cart | 0.6 | 0.1-0.3 | wheeled commercial printer
+supervisor pod elevated platform | 0.7 | 0.2-0.4 | small raised glass-walled cabin
+communal water-and-coffee bar | 0.65 | 0.1-0.3 | stainless utility counter
+rolling whiteboard market-tracker | 0.6 | 0.2-0.4 | wheeled marker board
+server-cabinet rack-row enclosure | 0.7 | 0.2-0.4 | ranked-blade transparent cabinet
+communal news-feed display monitor | 0.7 | 0.1-0.3 | tilted live-broadcast screen

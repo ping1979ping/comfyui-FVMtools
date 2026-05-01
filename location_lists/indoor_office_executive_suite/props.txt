@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+crystal whisky decanter on tray | 0.85 | 0.02-0.08 | cut-faceted leaded glass
+matched pair cut-crystal tumblers | 0.75 | 0.02-0.05 | etched diamond-cut sides
+vintage fountain pen on holder | 0.7 | 0.02-0.05 | lacquered barrel with gold nib
+leather-bound day planner | 0.75 | 0.02-0.08 | embossed grain-leather cover
+brass globe paperweight | 0.65 | 0.02-0.05 | polished sphere on stand
+hand-rolled cigar in glass humidor | 0.55 | 0.02-0.08 | cedar-lined display box
+antique brass desk-bell | 0.55 | 0.02-0.05 | domed polished signal bell
+framed family portrait silver | 0.7 | 0.02-0.08 | engraved silver photo frame
+monogrammed leather portfolio | 0.65 | 0.02-0.08 | stitched embossed folio
+brass and onyx desk pen-set | 0.65 | 0.02-0.05 | marble-base pen rest
+vintage rotary brass telephone | 0.6 | 0.02-0.08 | polished cradled handset
+crystal ashtray on side table | 0.5 | 0.02-0.05 | etched leaded-glass dish
+hardbound corporate annual report | 0.55 | 0.02-0.08 | matte black bound volume
+brass nameplate desk sign | 0.7 | 0.02-0.05 | engraved polished plaque

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+blue-grey carpet tile floor | 1.0 | 0.3-0.6 | flat low-pile commercial weave
+anti-static raised computer floor | 0.7 | 0.3-0.6 | modular squared panel floor
+polished vinyl plank flooring | 0.65 | 0.3-0.6 | subtle wood-print sheen
+desk-edge laminate surface | 0.85 | 0.1-0.4 | matte white worktop edge
+ergonomic anti-fatigue desk mat | 0.55 | 0.1-0.3 | soft cushioned vinyl pad
+rolling chair caster on carpet | 0.7 | 0.05-0.2 | matte black wheeled base
+cable-routing floor channel cover | 0.55 | 0.1-0.3 | flush brushed-metal strip
+commercial entry mat tile | 0.6 | 0.1-0.3 | ribbed dark walk-off textile
+speckled commercial linoleum floor | 0.55 | 0.3-0.6 | flecked vinyl sheet
+mid-grey area carpet runner | 0.65 | 0.2-0.5 | tightly looped commercial pile
+white painted concrete sub-floor edge | 0.5 | 0.1-0.3 | smooth sealed cement
+low cable-management raceway strip | 0.5 | 0.05-0.2 | flat plastic cover band

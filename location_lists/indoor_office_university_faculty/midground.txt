@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+paper-stack-covered writing desk | 1.0 | 0.3-0.6 | deep-stained academic desk
+tall ranked thesis-volume shelf | 0.95 | 0.3-0.6 | leather-bound case-bound books
+oversized leather wingback chair | 0.85 | 0.3-0.5 | tufted oxblood hide armchair
+rolling library ladder | 0.7 | 0.2-0.4 | rail-mounted hardwood ladder
+brass green-shade desk lamp | 0.85 | 0.1-0.3 | polished hammered banker post
+paper-pile drift on every surface | 1.0 | 0.2-0.5 | stacked academic-print piles
+globe-stand on ornate base | 0.55 | 0.1-0.3 | antique colored sphere
+framed-thesis-defense memento | 0.6 | 0.1-0.3 | matted gilt-frame document
+ranked academic-journal bound issues | 0.75 | 0.2-0.5 | leather-bound journal volumes
+low-table research notes sprawl | 0.7 | 0.1-0.3 | scattered handwritten paper
+ranked field-research artifact display | 0.55 | 0.1-0.3 | small curated study pieces
+ornamental bronze bust on plinth | 0.5 | 0.1-0.3 | patinated cast-bronze figure

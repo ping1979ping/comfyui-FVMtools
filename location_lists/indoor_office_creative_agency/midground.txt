@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+eames-style lounge chair pair | 0.95 | 0.2-0.5 | molded plywood with leather
+designer pendant lamp cluster | 0.9 | 0.1-0.3 | sculptural ribbed-glass globes
+low slatted-wood bench centerpiece | 0.7 | 0.2-0.5 | linear-slat seating element
+rolling project mood-board | 0.85 | 0.2-0.5 | wheeled fabric pinboard
+modular shelving with knickknacks | 0.8 | 0.2-0.5 | open-grid shelf with curios
+curated coffee-table book stack | 0.75 | 0.1-0.3 | oversized matte-cover volumes
+vintage typewriter on side-table | 0.6 | 0.1-0.3 | cast-iron mechanical machine
+woven-rattan accent armchair | 0.65 | 0.2-0.4 | open weave shell seat
+low-slung suede modular sofa | 0.7 | 0.3-0.5 | soft brushed-fiber upholstery
+designer drafting easel | 0.7 | 0.2-0.4 | tilted-board adjustable stand
+brass-frame magazine rack | 0.55 | 0.1-0.3 | ranked glossy lookbook rack
+oversized abstract sculpture | 0.55 | 0.1-0.3 | matte ceramic curving form

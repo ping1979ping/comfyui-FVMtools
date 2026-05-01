@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+crystal whiskey decanter on cart | 0.95 | 0.02-0.08 | cut-faceted leaded-glass vessel
+etched coupe cocktail-glass set | 0.85 | 0.02-0.05 | diamond-cut crystal stemware
+crystal ashtray on side-table | 0.85 | 0.02-0.05 | etched leaded-glass dish
+hand-rolled cigar in cedar box | 0.7 | 0.02-0.05 | wooden lined cigar humidor
+vintage rotary brass telephone | 0.85 | 0.02-0.08 | polished cradled handset
+brass-and-onyx cigarette-case | 0.55 | 0.02-0.05 | polished etched metal case
+vintage typewriter on side-table | 0.85 | 0.02-0.08 | cast-iron mechanical machine
+brass martini-shaker set | 0.7 | 0.02-0.05 | polished cocktail tools
+leather-bound campaign-pitch folio | 0.65 | 0.02-0.08 | embossed grain-leather cover
+vintage zippo-style lighter | 0.55 | 0.02-0.05 | polished metal flip lighter
+hand-bound ad-mockup folio | 0.7 | 0.02-0.08 | matted print-page binder
+brass nameplate desk-sign | 0.6 | 0.02-0.05 | engraved polished plaque
+smoked-glass paperweight | 0.5 | 0.02-0.05 | tinted leaded-glass orb
+ranked-pen brass desk-set | 0.6 | 0.02-0.05 | marble-base nib stand

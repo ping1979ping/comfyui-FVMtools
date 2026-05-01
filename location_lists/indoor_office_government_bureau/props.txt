@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+rubber-stamp date-marker | 0.85 | 0.02-0.05 | wood-handle inked stamp
+ink-pad case open red | 0.65 | 0.02-0.05 | felt-pad metal tin
+3-ring binder labeled spine | 0.95 | 0.02-0.1 | stiff cardstock binder
+manila folder file-pile | 0.95 | 0.02-0.1 | matte tan paperboard stack
+government ID-card pile | 0.6 | 0.02-0.05 | stack of laminated cards
+rolodex card-wheel | 0.65 | 0.02-0.05 | rotating index-card holder
+brown-paper interoffice envelope | 0.7 | 0.02-0.08 | string-tie kraft envelope
+calculator with paper-tape roll | 0.6 | 0.02-0.05 | boxy desk adding machine
+vintage typewriter on desk | 0.55 | 0.02-0.08 | cast-iron mechanical machine
+ceramic mug with bureau seal | 0.65 | 0.02-0.05 | glazed agency-emblem cup
+scuffed plastic in-tray | 0.85 | 0.02-0.08 | ranked stacking paper trays
+ballpoint pen-cup cluster | 0.7 | 0.02-0.05 | plastic cup of bic pens
+paperclip magnetic dispenser | 0.55 | 0.02-0.05 | small metal-base holder
+staff-photo identification badge | 0.55 | 0.02-0.05 | lanyard-clip photo card

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+row of identical hot-desks | 1.0 | 0.3-0.6 | matte laminate workstation surface
+dual-monitor cluster on each desk | 0.95 | 0.2-0.5 | thin-bezel matte screens
+planter trough between aisles | 0.8 | 0.2-0.5 | satin-finish trough with greenery
+cluster of mesh-back ergonomic chairs | 0.9 | 0.3-0.6 | breathable woven mesh
+drop-ceiling fluorescent panel grid | 0.95 | 0.3-0.6 | diffused acrylic light tiles
+glass-walled focus phone booth | 0.7 | 0.2-0.5 | frosted-glass enclosure
+printer-and-scanner bay station | 0.6 | 0.2-0.4 | brushed metal multifunction unit
+collaborative round-table pod | 0.7 | 0.2-0.5 | white laminate disc top
+coffee-and-water station counter | 0.7 | 0.2-0.4 | stainless commercial counter
+mounted flat-screen status display | 0.65 | 0.1-0.3 | wall-fixed dashboard panel
+low planter row of pothos vines | 0.7 | 0.2-0.4 | trailing matte foliage
+sliding-glass conference room edge | 0.6 | 0.2-0.5 | framed glazing into meeting room

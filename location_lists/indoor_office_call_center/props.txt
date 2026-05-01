@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+padded over-ear agent headset | 1.0 | 0.02-0.08 | soft-foam earpad mic
+call-script binder open on desk | 0.85 | 0.02-0.1 | ringed dialogue-page binder
+ceramic agent-mug coffee | 0.85 | 0.02-0.05 | glazed cup with cooled coffee
+clipped-on agent ID badge | 0.85 | 0.02-0.05 | lanyard photo-card identifier
+agent-incentive coupon stack | 0.5 | 0.02-0.05 | perforated paper voucher pile
+snack-bag wrapper crinkle | 0.65 | 0.02-0.05 | torn chip-bag remnant
+plastic water-bottle rank | 0.85 | 0.02-0.08 | row of disposable bottles
+highlighter pen-set cluster | 0.6 | 0.02-0.05 | fluorescent marker collection
+printed customer-record printout | 0.7 | 0.02-0.08 | stapled dossier sheet
+desk-corner motivational mug | 0.5 | 0.02-0.05 | slogan-printed glazed cup
+call-button squeaky stress toy | 0.55 | 0.02-0.05 | soft squeezable foam ball
+hand-warming heater-fan unit | 0.4 | 0.02-0.08 | small plastic blower box
+photo-of-pet desk frame | 0.55 | 0.02-0.05 | small thin-edge frame
+agent-of-month plaque | 0.5 | 0.02-0.05 | engraved acrylic award

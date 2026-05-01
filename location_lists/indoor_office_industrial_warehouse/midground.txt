@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+riveted-steel desk on cast legs | 1.0 | 0.3-0.6 | patinated steel surface
+vintage machinist task chair | 0.85 | 0.2-0.5 | leather-back swivel
+salvaged industrial pendant cage | 0.95 | 0.1-0.3 | wire-cage bulb fixture
+vintage metal-locker rank | 0.85 | 0.2-0.5 | ranked riveted storage
+salvaged wood-and-pipe shelving unit | 0.8 | 0.2-0.5 | industrial reclaimed-wood shelves
+riveted-leather industrial armchair | 0.7 | 0.2-0.4 | studded weathered hide armchair
+rolling steel utility cart | 0.7 | 0.2-0.4 | wheeled metal supply trolley
+salvaged gear-style table base | 0.55 | 0.2-0.4 | cast-iron mechanism foot
+hanging steel chain partition | 0.5 | 0.2-0.4 | industrial-chain divider
+salvaged factory-clock on wall | 0.7 | 0.05-0.2 | large industrial-face timepiece
+vintage anvil-base side-table | 0.55 | 0.1-0.3 | cast iron mechanical base
+rolling iron pipe-frame coat-rack | 0.6 | 0.1-0.3 | wheeled industrial pipe rack

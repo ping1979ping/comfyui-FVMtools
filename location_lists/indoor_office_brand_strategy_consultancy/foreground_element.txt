@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished concrete strategy floor | 1.0 | 0.3-0.6 | smooth troweled grey slab
+low-pile flatweave geometric rug | 0.7 | 0.2-0.5 | graphic-print wool weave
+warm-honey-oak strategy-floor plank | 0.85 | 0.3-0.6 | matte sealed timber plank
+polished-resin-sealed cement floor | 0.6 | 0.3-0.6 | glossy epoxy-coated cement
+scattered-sticky-note paper drift | 0.85 | 0.05-0.2 | tossed-neon-paper accumulation
+rolling caster on concrete floor | 0.85 | 0.05-0.2 | matte black wheeled base
+modular-table laminate edge | 0.85 | 0.1-0.3 | matte commercial-grade work surface
+scattered brand-deck-printout drift | 0.85 | 0.05-0.2 | loose printed-strategy page
+ribbed walk-off entry-mat strip | 0.5 | 0.1-0.3 | ribbed dark commercial textile
+rolling whiteboard-cart wheel base | 0.6 | 0.05-0.15 | small commercial caster
+painted-strategy-trim floor-band stripe | 0.55 | 0.05-0.15 | bold tape-stripe band
+modular-acoustic-panel-base edge | 0.55 | 0.05-0.15 | felt-wrapped panel toe

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rank of low cubicle-divider walls | 1.0 | 0.7-1.0 | fabric-paneled half-height partitions
+motivational-poster bullpen wall | 0.95 | 0.7-1.0 | framed slogan-print row
+neon supervisor-station signage wall | 0.7 | 0.6-0.9 | softly glowing colored letters
+painted call-queue dashboard wall | 0.85 | 0.6-1.0 | wall-mounted monitor row
+scuffed off-white painted bullpen wall | 0.85 | 0.7-1.0 | matte commercial finish
+framed performance-leaderboard wall | 0.7 | 0.6-1.0 | ranked agent-stat printouts
+foam-padded acoustic-baffle wall | 0.7 | 0.6-0.9 | fabric-wrapped sound panel
+dot-grid acoustic-tile wall | 0.65 | 0.6-0.9 | perforated softboard panel
+brand-color painted accent wall | 0.6 | 0.6-1.0 | bold corporate-pigment paint
+printed-script reference wall | 0.6 | 0.6-0.9 | ranked dialogue-script sheet
+painted incentive-thermometer wall | 0.55 | 0.6-0.9 | vinyl progress-graphic
+dingy-grey divider-tile wall | 0.7 | 0.6-0.9 | low-pile fabric panel

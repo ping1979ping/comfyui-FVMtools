@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished concrete startup floor | 1.0 | 0.3-0.6 | sealed grey troweled cement
+colorful play-mat foam tile floor | 0.65 | 0.2-0.5 | interlocking primary-color squares
+scuffed wide-plank pine floor | 0.7 | 0.3-0.6 | softly worn timber planks
+painted-line floor wayfinding stripe | 0.6 | 0.05-0.2 | bold yellow tape lane
+standing-desk anti-fatigue mat | 0.75 | 0.1-0.3 | cushioned pad on floor
+scattered phone-charger cable run | 0.6 | 0.05-0.2 | tangled cable pile
+low-pile carpet office tile floor | 0.65 | 0.3-0.6 | flat commercial weave
+rolling chair on castor wheel | 0.7 | 0.05-0.2 | matte black plastic base
+bean-bag deflated edge floor | 0.55 | 0.1-0.3 | slumped fabric pile
+pizza-box stack on floor corner | 0.4 | 0.05-0.15 | stacked greasy paperboard
+athletic-tape painted hallway band | 0.4 | 0.1-0.3 | neon-colored guide stripe
+bare polished epoxy floor section | 0.7 | 0.3-0.6 | glossy resin coating

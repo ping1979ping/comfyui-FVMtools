@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+walnut bar cart with whiskey decanter | 1.0 | 0.2-0.5 | wheeled mid-century drinks trolley
+leather chesterfield sofa center | 0.95 | 0.3-0.6 | tufted bridle-leather couch
+brass smoker stand pedestal | 0.85 | 0.1-0.3 | polished tray-base ashtray stand
+rotary brass telephone on table | 0.85 | 0.1-0.3 | polished cradled handset
+vintage typewriter on desk | 0.85 | 0.1-0.3 | cast-iron mechanical machine
+teak credenza behind desk | 0.75 | 0.2-0.5 | warm-grained mid-century cabinet
+eames-style swivel chair | 0.75 | 0.2-0.4 | molded plywood with leather
+ranked-vinyl jazz record shelf | 0.6 | 0.1-0.3 | leather-bound LP collection
+ornate brass standing globe | 0.55 | 0.1-0.3 | polished sphere on stand
+vintage cocktail glasses on tray | 0.65 | 0.1-0.3 | etched-crystal coupe set
+tufted leather wingback armchair | 0.7 | 0.2-0.5 | buttoned-back armchair
+low-slung tufted ottoman | 0.6 | 0.1-0.3 | buttoned hide footstool

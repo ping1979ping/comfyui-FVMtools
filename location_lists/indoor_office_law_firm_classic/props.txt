@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+brass-and-onyx desk pen-stand | 0.85 | 0.02-0.05 | marble-base nib holder
+leather-bound case file stack | 0.9 | 0.02-0.1 | embossed gilt-edged folders
+vintage gavel on wood block | 0.55 | 0.02-0.05 | carved hardwood ceremonial mallet
+brass desk magnifying-glass | 0.6 | 0.02-0.05 | polished hand lens
+crystal whisky tumbler set | 0.65 | 0.02-0.05 | etched diamond-cut glasses
+hand-blown glass paperweight | 0.7 | 0.02-0.05 | swirled colored sphere
+leather-cornered ledger book | 0.8 | 0.02-0.08 | marbled-edge bound register
+brass nameplate desk sign | 0.75 | 0.02-0.05 | engraved polished plaque
+hand-rolled cigar in cedar humidor | 0.5 | 0.02-0.05 | wooden lined display box
+antique inkwell well-and-pen | 0.55 | 0.02-0.05 | etched-glass with quill
+framed firm-history photograph | 0.6 | 0.02-0.1 | sepia gilt-frame portrait
+leather-strap document tube | 0.55 | 0.02-0.08 | buckled cylindrical case
+etched-crystal awards trophy | 0.6 | 0.02-0.08 | engraved leaded-glass plaque
+monogrammed leather coaster | 0.5 | 0.02-0.05 | embossed hide round

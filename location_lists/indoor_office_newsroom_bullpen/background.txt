@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+framed front-page archive wall | 1.0 | 0.7-1.0 | ranked vintage-print newspaper page
+deadline-whiteboard tracker wall | 0.95 | 0.7-1.0 | marker-drawn assignment grid
+scuffed off-white bullpen wall | 0.85 | 0.7-1.0 | matte aged eggshell finish
+painted-press-club accent wall | 0.7 | 0.7-1.0 | matte muted institutional pigment
+ranked vintage typewriter on shelf wall | 0.7 | 0.6-1.0 | ranked cast-iron machines
+dark-stained newsroom-hub paneled wall | 0.7 | 0.7-1.0 | deeply lacquered hardwood face
+yellowed clipping bulletin-board wall | 0.85 | 0.7-1.0 | tacked memo-and-clipping layer
+framed press-photographer print wall | 0.7 | 0.6-1.0 | ranked photojournalism print
+painted-mid-grey bullpen wall | 0.85 | 0.7-1.0 | matte commercial pigment
+scattered news-clippings collage wall | 0.65 | 0.6-0.9 | tossed magazine-tear layer
+hand-stenciled press-banner wall | 0.55 | 0.6-0.9 | faded vintage-paint logo
+dark-walnut newsroom-managing-editor wall | 0.6 | 0.7-1.0 | deeply burnished wood face

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ceramic warm-glazed coffee mug | 0.95 | 0.02-0.08 | softly glossy artisanal cup
+vintage-style brass desk lamp | 0.85 | 0.02-0.1 | polished hammered fluted post
+cozy crochet blanket folded | 0.7 | 0.02-0.1 | softly piled chunky-knit textile
+framed family snapshot photo | 0.85 | 0.02-0.08 | matted gilt-frame domestic image
+scattered houseplant-care notes | 0.55 | 0.02-0.05 | small handwritten reminders
+vintage clock on home shelf | 0.65 | 0.02-0.05 | small face-and-stand timepiece
+scented soy-candle in jar | 0.7 | 0.02-0.05 | frosted-glass home candle
+hand-thrown pottery pen-cup | 0.65 | 0.02-0.05 | softly glazed ceramic vessel
+knit cup-sleeve coffee cozy | 0.5 | 0.02-0.05 | softly piled wool sleeve
+vintage-style desk planner | 0.7 | 0.02-0.08 | matte-cover paper diary
+woven-rattan tissue-box cover | 0.45 | 0.02-0.05 | open-weave domestic case
+framed pressed-flower botanical | 0.55 | 0.02-0.08 | softly glazed natural display
+ceramic-base spider-plant pot | 0.7 | 0.02-0.08 | softly green trailing leaves
+home-desk leather coaster set | 0.55 | 0.02-0.05 | stitched grain-leather rounds

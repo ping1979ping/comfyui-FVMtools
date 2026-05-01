@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+drop-ceiling fluorescent panel grid | 1.0 | 0.1-0.3 | diffused acrylic light tiles
+recessed downlight halo | 0.7 | 0.05-0.15 | soft circular pool of light
+ceiling speaker public-address dot | 0.7 | 0.02-0.08 | small flush-mounted disk
+emergency-exit sign glow | 0.7 | 0.02-0.08 | green LED-letter glow
+supervisor-window glass reveal | 0.55 | 0.05-0.15 | framed glazing into pod
+ceiling air-supply diffuser | 0.7 | 0.05-0.15 | white louvered grille
+painted column-corner reveal | 0.55 | 0.02-0.1 | scuffed plaster-edge corner
+metal-mesh return-air grille | 0.55 | 0.02-0.1 | louvered-vent panel
+ceiling smoke-detector dot | 0.55 | 0.02-0.05 | small white sensor disk
+queue-status backlit sign | 0.6 | 0.02-0.1 | softly glowing wait-time panel
+painted ceiling-edge shadow line | 0.5 | 0.02-0.1 | subtle plaster reveal
+inset cove-light strip | 0.5 | 0.02-0.1 | thin LED accent line

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ceramic strategy-consultancy mug | 0.85 | 0.02-0.05 | branded-emblem glazed cup
+ranked-pen-and-marker desk-set | 0.85 | 0.02-0.05 | compartmented pen-cup holder
+scattered-sticky-note pile | 0.95 | 0.02-0.1 | neon paper-square pile
+hand-bound strategy-deck folio | 0.85 | 0.02-0.08 | leather-tied paper-binder
+multi-button mechanical keyboard | 0.7 | 0.02-0.08 | backlit clacky-key board
+rolling-laptop docking-station unit | 0.7 | 0.02-0.05 | compact black hub
+scattered-cohort-chart printout | 0.85 | 0.02-0.1 | loose printed-graph page
+ergonomic vertical wrist-rest mouse | 0.65 | 0.02-0.05 | tilted-grip plastic mouse
+oversize over-ear monitoring headset | 0.7 | 0.02-0.08 | padded studio-set
+highlighter rainbow-pen set | 0.7 | 0.02-0.05 | fluorescent-marker collection
+rolling-tape paper-printer roll | 0.5 | 0.02-0.05 | narrow receipt-style paper roll
+portable-power-bank charger pack | 0.6 | 0.02-0.05 | small lithium-pack brick
+hand-thrown small succulent pot | 0.65 | 0.02-0.05 | matte clay-base vessel
+ranked-printed-strategy-handout pile | 0.65 | 0.02-0.08 | stapled strategy-page pile

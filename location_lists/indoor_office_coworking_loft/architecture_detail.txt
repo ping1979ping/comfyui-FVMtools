@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed steel I-beam ceiling | 0.95 | 0.1-0.3 | riveted painted girder
+warehouse skylight grid above | 0.85 | 0.1-0.3 | industrial wired-glass panels
+naked filament edison pendant | 0.9 | 0.05-0.15 | bare bulb on cord
+exposed conduit junction box | 0.65 | 0.02-0.1 | metal raceway corner
+vintage factory-window frame | 0.75 | 0.05-0.2 | black-mullion multi-pane window
+salvaged industrial door hinge | 0.55 | 0.02-0.08 | heavy cast-iron pivot
+brick arch reveal opening | 0.7 | 0.05-0.2 | softly curved masonry threshold
+riveted column-foot detail | 0.6 | 0.02-0.1 | bolted steel base plate
+track-light spotlight cluster | 0.7 | 0.02-0.1 | adjustable rail-mounted heads
+painted ceiling-pipe routing | 0.75 | 0.05-0.15 | color-coded utility runs
+exposed concrete column edge | 0.65 | 0.05-0.15 | rough grey structural face
+salvaged mill-window mullion | 0.6 | 0.05-0.15 | weathered wood divider

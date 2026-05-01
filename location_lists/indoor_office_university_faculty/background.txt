@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+dark-stained oak academic paneled wall | 1.0 | 0.7-1.0 | deeply lacquered hardwood face
+ranked thesis-volume bookshelf wall | 0.95 | 0.7-1.0 | leather-bound spine grid
+framed-diploma certificate display wall | 0.9 | 0.7-1.0 | rows of gold-edged frames
+dusty old-book spine ranked wall | 0.85 | 0.7-1.0 | softly aged leather covers
+paneled raised-frame boiserie | 0.7 | 0.7-1.0 | carved layered wood profile
+dark forest-green papered wall | 0.7 | 0.7-1.0 | softly patterned silken paper
+hand-stenciled academic motto wall | 0.55 | 0.6-0.9 | delicately gold-leafed motif
+chalkboard formula-covered wall | 0.85 | 0.6-1.0 | softly chalk-dusted slate
+ranked academic-journal binder wall | 0.7 | 0.6-1.0 | ranked journal-issue spine
+framed historical campus map wall | 0.55 | 0.6-0.9 | softly aged engraved chart
+burgundy painted study accent wall | 0.65 | 0.7-1.0 | matte rich pigment
+dark mahogany wainscot wall | 0.7 | 0.6-1.0 | smooth burnished hardwood

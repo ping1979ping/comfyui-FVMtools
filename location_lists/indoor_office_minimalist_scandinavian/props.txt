@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+white ceramic minimalist mug | 0.95 | 0.02-0.05 | matte glazed nordic cup
+hand-thrown small ceramic vase | 0.85 | 0.02-0.05 | matte clay-paired vessel
+nordic linen-cover notebook | 0.85 | 0.02-0.08 | natural-weave bound journal
+scandinavian wooden pen holder | 0.7 | 0.02-0.05 | softly grained pencil cup
+ceramic candle holder warm wax | 0.7 | 0.02-0.05 | matte clay-base candle
+nordic single-stem flower-vase | 0.6 | 0.02-0.05 | thin-glass clear stem
+hardbound monograph designer book | 0.75 | 0.02-0.08 | matte-cover scandi folio
+woven-rattan tissue-box cover | 0.55 | 0.02-0.05 | open-weave domestic case
+warm wool throw blanket folded | 0.7 | 0.02-0.1 | softly piled chunky-knit textile
+ceramic pebble paperweight pair | 0.55 | 0.02-0.05 | smooth clay rounded pair
+nordic-design desk planner | 0.7 | 0.02-0.08 | matte-cover paper diary
+hand-thrown small succulent pot | 0.7 | 0.02-0.05 | matte clay-base vessel
+scandinavian-style picture frame | 0.55 | 0.02-0.05 | thin pale-wood frame
+hand-bound nordic stationery set | 0.5 | 0.02-0.05 | natural-paper card set

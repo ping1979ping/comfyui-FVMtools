@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cozy domestic writing desk | 1.0 | 0.3-0.5 | warm-stained home desk surface
+upholstered wingback reading chair | 0.85 | 0.2-0.5 | softly piled fabric armchair
+tall leafy fiddle-leaf fig | 0.8 | 0.2-0.4 | broad glossy green leaves
+warm sconce-lit alcove nook | 0.75 | 0.2-0.4 | softly amber wall-light pool
+low domestic bookshelf with stacks | 0.85 | 0.2-0.5 | matte oak case with home reads
+cozy throw blanket draped chair | 0.75 | 0.1-0.3 | softly piled chunky-knit textile
+woven storage basket cluster | 0.7 | 0.1-0.3 | natural-fiber lidded baskets
+vintage ladder-back accent chair | 0.6 | 0.2-0.4 | rush-seat pinewood frame
+framed kid-drawing display | 0.6 | 0.1-0.3 | cluster of childlike art
+rustic wooden ladder shelf | 0.55 | 0.2-0.4 | leaning slatted display unit
+comfy cushioned window seat | 0.7 | 0.2-0.4 | padded built-in nook
+vintage standing brass floor lamp | 0.65 | 0.1-0.3 | tall antique fluted post

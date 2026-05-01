@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+standing-desk row dashboard cluster | 1.0 | 0.3-0.6 | adjustable-height desks
+multi-monitor analytics workstation | 0.95 | 0.3-0.6 | stacked-screen marketing rig
+rolling whiteboard funnel-tracker | 0.85 | 0.2-0.5 | wheeled marker board
+cold-brew tap kitchenette nook | 0.7 | 0.2-0.4 | stainless kegerator and shelf
+communal long-table workstation | 0.85 | 0.3-0.6 | raw-edge wood plank top
+ranked sticky-note ideation grid | 0.95 | 0.2-0.5 | wall-mounted neon-paper layer
+rolling laptop cart stand | 0.6 | 0.2-0.4 | wheeled docking trolley
+daylight-bright video-recording corner | 0.6 | 0.2-0.4 | ring-light tripod setup
+rolling project-mood-board | 0.7 | 0.2-0.5 | wheeled fabric pinboard
+communal espresso bar setup | 0.7 | 0.2-0.4 | chrome semi-pro machine
+digital-screen rotating-banner display | 0.6 | 0.1-0.3 | wall-mounted ad-loop screen
+plush meeting nook lounge corner | 0.65 | 0.2-0.4 | sectional sofa and lamp setup

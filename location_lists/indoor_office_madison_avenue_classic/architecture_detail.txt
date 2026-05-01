@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+starburst sunburst wall clock | 0.7 | 0.02-0.1 | metallic-rayed retro timepiece
+warm pendant lamp halo | 0.85 | 0.05-0.15 | amber-toned overhead glow
+brass picture-light strip | 0.7 | 0.02-0.08 | tube fixture polished post
+painted mid-century cove ceiling | 0.7 | 0.05-0.15 | softly curved plaster reveal
+brass sconce bullet-shade halo | 0.75 | 0.02-0.08 | directional polished cone
+recessed cove uplighting glow | 0.6 | 0.02-0.1 | warm hidden ceiling-edge wash
+amber-tinted window-glaze panel | 0.6 | 0.05-0.15 | softly hazed colored glass
+painted column-corner edge reveal | 0.55 | 0.02-0.1 | softly accented plaster edge
+starburst mid-century chandelier | 0.6 | 0.05-0.15 | rayed-arm ornate fixture
+teak panel wall-corner edge | 0.55 | 0.02-0.1 | warm grain corner reveal
+brass sliding-door track strip | 0.5 | 0.02-0.08 | polished metal rail
+painted mid-century ceiling-cove halo | 0.5 | 0.02-0.1 | softly accented edge wash

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+frosted-glass boardroom partition wall | 1.0 | 0.7-1.0 | softly diffused panel surface
+painted-corporate-blue accent wall | 0.85 | 0.7-1.0 | matte navy pigment paint
+dark-walnut paneled boardroom wall | 0.85 | 0.7-1.0 | deeply lacquered hardwood face
+backlit company-logo accent wall | 0.7 | 0.6-0.9 | softly glowing brand panel
+acoustic-fabric padded panel wall | 0.7 | 0.6-0.9 | sound-dampening textile wrap
+polished-granite reception accent wall | 0.6 | 0.6-1.0 | veined honed dark stone
+painted-monochrome neutral grey wall | 0.85 | 0.7-1.0 | matte cool-pigment finish
+frameless wall-mounted screen wall | 0.85 | 0.6-1.0 | thin-bezel matte panel
+ranked-board-portrait gallery wall | 0.6 | 0.6-0.9 | framed corporate-leader print
+painted-corporate-burgundy accent wall | 0.6 | 0.7-1.0 | matte rich-pigment paint
+etched-glass company-values wall | 0.55 | 0.6-0.9 | softly inlaid lettering
+frameless mirror accent wall section | 0.55 | 0.6-0.9 | thin-edge reflective panel

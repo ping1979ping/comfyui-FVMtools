@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+beige-painted bureau partition wall | 1.0 | 0.7-1.0 | matte institutional pigment
+grey filing-cabinet rank wall | 0.95 | 0.7-1.0 | ranked metal storage face
+government-grey carpet-tile baseband | 0.8 | 0.6-0.9 | low-pile commercial textile
+painted cinder-block shell wall | 0.85 | 0.7-1.0 | rough painted masonry blocks
+dot-matrix printout pinned wall | 0.7 | 0.6-0.9 | fan-fold tractor-feed paper
+yellowed bulletin-board notice wall | 0.85 | 0.6-1.0 | tacked memo-and-form layer
+government-poster regulation wall | 0.7 | 0.6-0.9 | printed compliance-poster grid
+scuffed off-white painted wall | 0.85 | 0.7-1.0 | matte aged eggshell finish
+ranked metal binder-shelf wall | 0.7 | 0.6-1.0 | shelved 3-ring institutional binders
+muted institutional-green wainscot | 0.6 | 0.7-1.0 | matte mid-century pigment
+wood-grain laminate cubicle divider wall | 0.8 | 0.6-0.9 | fake-veneer panel
+framed organizational-chart wall | 0.65 | 0.6-0.9 | boxed hierarchical diagram

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ceramic mug with logo print | 0.85 | 0.02-0.08 | glossy artisanal glazed
+vintage-camera display piece | 0.55 | 0.02-0.05 | boxy retro film camera
+oversized art book monograph | 0.85 | 0.02-0.1 | thick matte-cover folio
+designer pen-and-pencil holder | 0.75 | 0.02-0.05 | sculptural marble cup
+hand-thrown ceramic pot planter | 0.7 | 0.02-0.08 | matte clay vessel with greenery
+scattered fabric-swatch swatchbook | 0.7 | 0.02-0.08 | fanned color sample strip
+brass scissor-and-ruler set | 0.55 | 0.02-0.05 | polished antique cutting tools
+mood-board print-out fan layout | 0.85 | 0.02-0.1 | scattered curated page
+designer postcard rack | 0.5 | 0.02-0.08 | rotating print display
+color-pencil rainbow tin set | 0.7 | 0.02-0.05 | ranked artist pencils
+mid-century brass desk-clock | 0.55 | 0.02-0.05 | small face-and-stand timepiece
+vintage atlas open on table | 0.5 | 0.02-0.08 | softly aged map page
+polaroid-print clip-string | 0.6 | 0.02-0.08 | string of pinned photo prints
+hand-bound sketchbook stack | 0.65 | 0.02-0.08 | leather-tied paper journal

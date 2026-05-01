@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rank of beige fabric cubicles | 1.0 | 0.3-0.6 | fabric-paneled office cubes
+grey metal filing cabinet stack | 0.95 | 0.3-0.6 | drawered institutional storage
+bulky CRT-style monitor cluster | 0.65 | 0.2-0.4 | deep-cabinet glass display
+reception-window bulletproof glass | 0.6 | 0.2-0.4 | thick laminated security pane
+rolling task-chair on castor | 0.85 | 0.2-0.5 | fabric-back swivel chair
+supply-room metal shelving rank | 0.7 | 0.2-0.5 | stamped-steel deep-shelf rack
+clipboard rack against wall | 0.55 | 0.1-0.3 | row of hung paper boards
+rolling cart with binder stacks | 0.65 | 0.2-0.4 | wheeled metal storage cart
+waiting-area linked-chair row | 0.7 | 0.2-0.5 | ganged plastic-shell seat row
+ticket-number queue display | 0.6 | 0.1-0.3 | wall-mounted LED counter
+dot-matrix line-printer station | 0.55 | 0.1-0.3 | fan-fold paper-feed unit
+staff number-take dispenser | 0.55 | 0.1-0.3 | wall-mounted ticket peeler

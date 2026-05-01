@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+large polished mahogany executive desk | 1.0 | 0.3-0.6 | deep lacquered hardwood plane
+leather chesterfield wingback chair | 0.95 | 0.3-0.5 | tufted brown bridle leather
+ornate persian wool rug center | 0.85 | 0.3-0.6 | intricate hand-knotted pile
+tall stained-glass standing globe | 0.6 | 0.2-0.4 | antique colored glass orb
+crystal whisky decanter set on cart | 0.75 | 0.1-0.3 | cut-faceted glassware
+brass desk lamp with green shade | 0.8 | 0.1-0.3 | polished hammered brass post
+antique grandfather clock cabinet | 0.65 | 0.2-0.4 | burnished brass-faced timepiece
+velvet upholstered visitor armchair pair | 0.75 | 0.2-0.5 | soft tufted seat backs
+oversized leather-bound atlas on stand | 0.55 | 0.1-0.3 | embossed gilt-edged volume
+ornamental bronze bust on plinth | 0.55 | 0.1-0.3 | patinated cast bronze figure
+inlaid wood credenza behind desk | 0.7 | 0.2-0.5 | marquetry-paneled cabinet
+tall potted ficus tree | 0.7 | 0.2-0.5 | dense glossy dark foliage

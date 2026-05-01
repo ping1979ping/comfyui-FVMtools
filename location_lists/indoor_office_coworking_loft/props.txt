@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+kombucha-tap counter dispenser | 0.7 | 0.02-0.08 | stainless tap with wood handle
+hand-thrown ceramic mug | 0.85 | 0.02-0.08 | wobbly artisanal glazed clay
+vintage typewriter on shelf | 0.5 | 0.02-0.08 | cast-iron mechanical machine
+scattered sticky notes cluster | 0.85 | 0.02-0.1 | neon paper squares pinned
+succulent in concrete pot | 0.8 | 0.02-0.08 | cast cement with spiked plant
+vinyl record on turntable | 0.55 | 0.02-0.08 | matte black spinning platter
+woven macrame plant hanger | 0.6 | 0.02-0.1 | knotted cotton-cord cradle
+communal chalk basket | 0.5 | 0.02-0.05 | wicker tray with chalk sticks
+retro polaroid camera prop | 0.45 | 0.02-0.05 | boxy vintage instant camera
+sticker-covered laptop lid | 0.7 | 0.02-0.1 | decal-plastered notebook shell
+ceramic pour-over coffee set | 0.6 | 0.02-0.08 | matte hand-thrown filter cone
+clipboard with event flyer stack | 0.55 | 0.02-0.08 | wood-backed paper stack
+communal coat-hook board | 0.55 | 0.02-0.1 | row of brass wall pegs
+rolled-up yoga mat by door | 0.4 | 0.02-0.08 | tightly bound rubber roll

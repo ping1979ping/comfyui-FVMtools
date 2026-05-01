@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished-concrete warehouse floor | 1.0 | 0.3-0.6 | smooth troweled grey slab
+epoxy-painted utility floor | 0.85 | 0.3-0.6 | glossy bold-color resin coating
+salvaged-timber wide-plank floor | 0.8 | 0.3-0.6 | knotted weathered hardwood
+industrial steel-mesh-grate floor | 0.65 | 0.3-0.6 | openwork patinated metal
+vintage metal-locker base edge | 0.6 | 0.05-0.15 | scuffed riveted toe-kick
+riveted-steel desk-edge surface | 0.85 | 0.1-0.3 | patinated steel work plane
+scattered vintage tool-set scatter | 0.55 | 0.05-0.15 | tossed industrial wrench pile
+rolling utility-cart wheel base | 0.6 | 0.05-0.15 | small industrial caster
+painted-yellow safety-line stripe | 0.55 | 0.05-0.15 | bold tape-stripe band
+riveted-leather chair-seat edge | 0.55 | 0.1-0.3 | studded weathered hide cushion
+oxidized-rust patina-floor patch | 0.55 | 0.05-0.15 | weathered metal patch
+rough-concrete pour-edge reveal | 0.6 | 0.05-0.15 | raw cast structural edge

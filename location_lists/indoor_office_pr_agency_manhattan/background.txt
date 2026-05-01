@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+framed-magazine-cover press wall | 1.0 | 0.7-1.0 | ranked glossy-cover gallery row
+painted-pink fashion-PR accent wall | 0.85 | 0.7-1.0 | matte blush-pigment paint
+backlit acrylic logo wall | 0.7 | 0.6-0.9 | softly glowing brand panel
+dark-stained PR-conference paneled wall | 0.7 | 0.7-1.0 | deeply lacquered hardwood face
+white-painted gallery PR wall | 0.85 | 0.7-1.0 | matte clean designer surface
+painted-glossy-black PR-wall section | 0.7 | 0.7-1.0 | high-gloss dark paint
+framed-press-clipping wall display | 0.85 | 0.7-1.0 | ranked clipped-feature print
+velvet-tufted Manhattan-suite wall | 0.55 | 0.6-1.0 | buttoned-back hide upholstery
+scattered vintage-poster gallery wall | 0.6 | 0.6-1.0 | framed graphic-print row
+painted-rose-gold metallic-band wall | 0.55 | 0.6-0.9 | softly metallic-pigment band
+painted-Manhattan-skyline mural wall | 0.55 | 0.6-1.0 | softly illustrated cityscape
+acoustic-fabric padded suite-wall | 0.6 | 0.6-0.9 | sound-dampening textile wrap

@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+crisp early morning office light | 1.0 | - | -
+bright mid-morning sun spill | 0.95 | - | -
+warm late afternoon glow | 0.85 | - | -
+golden hour window light | 0.8 | - | -
+diffused overcast daylight | 0.85 | - | -
+quiet pre-meeting morning calm | 0.75 | - | -
+amber sunset reflection on glass | 0.7 | - | -
+twilight blue dusk hush | 0.65 | - | -
+after-hours lamp-lit warmth | 0.7 | - | -
+midday fluorescent brightness | 0.85 | - | -
+late-night glow from monitors | 0.6 | - | -

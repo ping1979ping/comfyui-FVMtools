@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished concrete studio floor | 1.0 | 0.3-0.6 | smooth troweled grey slab
+warm honey-oak studio floor | 0.85 | 0.3-0.6 | matte sealed timber plank
+epoxy-sealed workshop resin floor | 0.7 | 0.3-0.6 | glossy bold-color resin
+scattered tracing-paper drift | 0.85 | 0.05-0.2 | loose tossed translucent sheet
+scale-model base-plinth edge | 0.7 | 0.05-0.2 | foam-board model-base
+drafting-table angled surface edge | 0.85 | 0.1-0.4 | pale-laminate inclined plane
+scale-ruler scattered set | 0.6 | 0.02-0.08 | triangular drafting rulers
+foam-block off-cut pile | 0.55 | 0.05-0.15 | scattered carving remnants
+rolled-blueprint pile on floor | 0.7 | 0.05-0.2 | stacked tube paper
+low warm-grey carpet-tile floor | 0.6 | 0.3-0.6 | looped commercial weave
+plywood subfloor exposed edge | 0.5 | 0.05-0.15 | warm grained sheet
+rolling caster on concrete | 0.6 | 0.05-0.15 | matte chair-base wheel

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+leather chesterfield wingback chair | 1.0 | 0.3-0.6 | tufted oxblood bridle leather
+tall folio file cabinet rank | 0.9 | 0.3-0.6 | dark-stained file storage
+brass banker desk lamp center | 0.95 | 0.1-0.3 | green-glass shade hammered post
+law-volumes book stack pile | 0.8 | 0.2-0.4 | ranked leather-bound case books
+partner-grade walnut writing desk | 0.95 | 0.3-0.6 | deep-stained hardwood plane
+globe stand on ornate base | 0.6 | 0.1-0.3 | antique colored sphere
+ornate leather-topped library table | 0.7 | 0.2-0.5 | embossed-tooled leather surface
+tufted leather guest-chair pair | 0.85 | 0.2-0.5 | buttoned-back hide armchairs
+brass-and-glass display cabinet | 0.6 | 0.2-0.4 | polished case with awards
+mahogany credenza behind desk | 0.7 | 0.2-0.5 | lacquered cabinet drawer-front
+rolling wood library ladder | 0.55 | 0.2-0.4 | rail-mounted hardwood ladder
+scales-of-justice bronze sculpture | 0.6 | 0.1-0.3 | patinated metal balance figure

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+government-grey linoleum floor | 1.0 | 0.3-0.6 | speckled flat institutional sheet
+beige-grey carpet-tile floor | 0.9 | 0.3-0.6 | low-pile commercial weave
+scuffed vinyl-tile chequer floor | 0.7 | 0.3-0.6 | alternating dingy square pattern
+ribbed walk-off entrance mat | 0.65 | 0.1-0.3 | ribbed dark commercial textile
+polished resin-sealed cement floor | 0.6 | 0.3-0.6 | glossy institutional sub-floor
+plastic chair-mat under desk | 0.55 | 0.1-0.3 | clear vinyl-pad floor protector
+metal cabinet-base kick-plate | 0.55 | 0.05-0.15 | scuffed institutional metal toe
+worn-pile broadloom carpet edge | 0.6 | 0.2-0.5 | flattened commercial carpet
+metal cubicle-base raceway | 0.5 | 0.05-0.15 | flush-mounted utility duct
+rubber chair-leg base | 0.5 | 0.02-0.08 | small caster-foot tip
+scattered paper drift-pile | 0.5 | 0.05-0.15 | loose sheet accumulation
+flat institutional doormat strip | 0.55 | 0.1-0.3 | rectangular textile band

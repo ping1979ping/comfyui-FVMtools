@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished concrete designer floor | 1.0 | 0.3-0.6 | smooth troweled grey slab
+flatweave geometric pattern rug | 0.85 | 0.2-0.5 | graphic-print wool weave
+warm honey-oak hardwood floor | 0.8 | 0.3-0.6 | matte sealed timber grain
+epoxy-painted creative-zone floor | 0.6 | 0.3-0.6 | glossy bold-color resin
+vintage moroccan low-pile rug | 0.65 | 0.2-0.5 | softly faded knotted wool
+low slatted-wood bench edge | 0.65 | 0.1-0.3 | linear oak slat surface
+matte black studio table edge | 0.7 | 0.1-0.4 | powder-coated steel top
+velvet pouf cushion edge | 0.55 | 0.1-0.3 | soft jewel-toned upholstery
+scattered fabric-swatch book pile | 0.6 | 0.05-0.15 | stacked sample binders
+loose mood-board print scatter | 0.6 | 0.05-0.15 | tossed printed pages
+walnut tone end-table edge | 0.55 | 0.1-0.3 | sealed mid-century wood
+brass-leg side-table base | 0.5 | 0.05-0.15 | polished slim metal post

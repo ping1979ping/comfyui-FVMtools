@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished concrete loft floor | 1.0 | 0.3-0.6 | smooth troweled grey slab
+vintage persian-style runner rug | 0.7 | 0.2-0.5 | softly faded pattern weave
+reclaimed timber wide-plank floor | 0.85 | 0.3-0.6 | knotted weathered hardwood
+painted concrete with sealer sheen | 0.75 | 0.3-0.6 | glossy epoxy-coated cement
+vintage-pattern kilim rug edge | 0.6 | 0.1-0.4 | flat-woven geometric panel
+leather pouf cushion edge | 0.55 | 0.1-0.3 | stitched buttery hide
+communal-table walnut top | 0.8 | 0.1-0.4 | oiled rich-grained timber
+rolling laptop-cart wheel base | 0.55 | 0.05-0.2 | small caster on concrete
+low woven jute floor mat | 0.6 | 0.2-0.5 | coarse looped natural fiber
+painted floor wayfinding line | 0.5 | 0.05-0.2 | bold yellow tape stripe
+recycled rubber floor mat | 0.55 | 0.1-0.3 | flecked dark vulcanized pad
+loft-style stage-platform edge | 0.5 | 0.1-0.3 | plywood-built low riser

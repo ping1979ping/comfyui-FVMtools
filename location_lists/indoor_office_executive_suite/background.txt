@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+walnut-paneled wood wainscoting wall | 1.0 | 0.7-1.0 | rich rosette-grain hardwood
+deep burgundy painted accent wall | 0.85 | 0.7-1.0 | matte velvety pigment
+tall bookshelf wall of leather volumes | 0.9 | 0.7-1.0 | ranked spine-grained tomes
+mahogany raised-panel boiserie | 0.8 | 0.7-1.0 | polished raised-frame wood
+framed abstract oil painting wall | 0.75 | 0.6-1.0 | lacquered canvas with brush impasto
+dark forest-green damask wallpaper | 0.7 | 0.7-1.0 | subtly patterned silken paper
+brass-trimmed glass display cabinet wall | 0.65 | 0.6-1.0 | polished brass mullions
+tall navy velvet drapery panel | 0.7 | 0.7-1.0 | softly piled luxurious velvet
+imported marble slab feature wall | 0.7 | 0.6-1.0 | veined polished stone
+hand-painted equestrian portrait wall | 0.6 | 0.6-1.0 | softly aged oil canvas
+dark coffered ceiling-edge soffit | 0.6 | 0.6-0.9 | deeply shadowed wood beams
+framed corporate award wall display | 0.65 | 0.6-0.9 | polished plaque grid

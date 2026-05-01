@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ceramic mug with growth-chart print | 0.85 | 0.02-0.08 | glossy artisanal-glazed cup
+multi-button mechanical keyboard | 0.85 | 0.02-0.08 | backlit clacky-key board
+rainbow-stack sticky-note pile | 0.95 | 0.02-0.1 | neon paper square pile
+highlighter rainbow-pen set | 0.85 | 0.02-0.05 | row of fluorescent markers
+portable-power-bank charger | 0.7 | 0.02-0.05 | small lithium-pack brick
+scattered campaign-mockup printout | 0.7 | 0.02-0.1 | loose printed ad-comp
+ergonomic vertical mouse | 0.65 | 0.02-0.05 | tilted-grip plastic mouse
+oversize over-ear monitoring headphones | 0.75 | 0.02-0.08 | padded studio-set
+brand-team t-shirt pile | 0.6 | 0.02-0.1 | folded printed cotton shirts
+ranked desk-pen-and-marker holder | 0.7 | 0.02-0.05 | compartmented pen cup
+printout-leaderboard clipboard | 0.6 | 0.02-0.08 | wood-backed paper-stack pad
+plastic water-bottle rank | 0.7 | 0.02-0.08 | row of disposable bottles
+rolling timer-bell tabletop | 0.5 | 0.02-0.05 | small mechanical countdown bell
+hand-thrown ceramic small planter | 0.65 | 0.02-0.08 | matte clay-paired vessel

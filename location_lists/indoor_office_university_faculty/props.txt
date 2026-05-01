@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+hardbound thesis-defense volume | 0.9 | 0.02-0.08 | leather-tied academic folio
+ink-stained fountain pen on stand | 0.8 | 0.02-0.05 | lacquered barrel with gold nib
+ceramic faculty-coffee mug | 0.85 | 0.02-0.05 | glazed academic-emblem cup
+stack of student term papers | 0.95 | 0.02-0.1 | stapled essay-printout pile
+brass desk magnifying-glass | 0.55 | 0.02-0.05 | polished hand lens
+vintage typewriter on side-table | 0.55 | 0.02-0.08 | cast-iron mechanical machine
+framed academic-honors certificate | 0.65 | 0.02-0.08 | matted gilt-frame parchment
+hand-bound research notebook | 0.85 | 0.02-0.08 | leather-tied journal
+ornate brass desk-clock | 0.55 | 0.02-0.05 | small face-and-stand timepiece
+crystal whisky tumbler | 0.5 | 0.02-0.05 | etched diamond-cut glass
+hand-bound dissertation copy | 0.7 | 0.02-0.08 | leather-bound case-volume
+scattered red grading-pen cluster | 0.6 | 0.02-0.05 | fluorescent marker collection
+hand-blown glass paperweight | 0.55 | 0.02-0.05 | swirled colored sphere
+framed alma-mater pennant | 0.5 | 0.02-0.08 | felt triangular banner

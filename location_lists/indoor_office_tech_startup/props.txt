@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+rubber-duck debugging companion | 0.7 | 0.02-0.05 | yellow squeaky bath toy
+mechanical keyboard with RGB lights | 0.9 | 0.02-0.08 | backlit clacky-key board
+tangle of energy-drink cans | 0.75 | 0.02-0.1 | scattered aluminum cans
+snack-jar of gummy candy | 0.7 | 0.02-0.08 | glass jar of sugary treats
+plush startup-mascot toy | 0.6 | 0.02-0.08 | soft branded stuffed character
+stack of pizza-night napkins | 0.5 | 0.02-0.05 | crumpled paper napkin pile
+oversize noise-cancelling headphones | 0.85 | 0.02-0.08 | padded over-ear set
+hackathon-winner trophy | 0.5 | 0.02-0.08 | engraved acrylic award
+branded swag t-shirt pile | 0.55 | 0.02-0.1 | folded printed cotton shirts
+ergonomic vertical mouse | 0.6 | 0.02-0.05 | tilted-grip plastic mouse
+post-it sticky notes cluster | 0.95 | 0.02-0.1 | neon paper square stack
+kombucha bottle on desk | 0.55 | 0.02-0.05 | amber glass beverage bottle
+tangled phone-charger nest | 0.7 | 0.02-0.08 | knotted cable pile
+highlighter pen rainbow set | 0.55 | 0.02-0.05 | row of fluorescent markers

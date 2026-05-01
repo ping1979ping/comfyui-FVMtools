@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long oval boardroom conference table | 1.0 | 0.3-0.6 | deeply lacquered hardwood plane
+ranked leather swivel-chair set | 0.95 | 0.3-0.6 | buttoned-back hide armchair row
+ceiling-mounted projector unit | 0.85 | 0.1-0.3 | compact white video projector
+ranked chrome water-carafe set | 0.85 | 0.05-0.2 | polished tray-carafe cluster
+frameless wall-mounted display screen | 0.85 | 0.2-0.4 | thin-bezel matte large screen
+conference-call hub-phone center | 0.85 | 0.05-0.2 | starfish-style audio device
+rolling presentation easel | 0.7 | 0.2-0.4 | wheeled tilted-board
+low credenza-cabinet rear wall | 0.7 | 0.2-0.5 | lacquered cabinet drawer-front
+polished marble centerpiece sculpture | 0.55 | 0.05-0.2 | ornamental veined-stone form
+rolling refreshment-cart side | 0.7 | 0.2-0.4 | wheeled drinks trolley
+supervisor-pen and notepad set | 0.85 | 0.1-0.3 | ranked-leather notepad strip
+flat-folded boardroom-document binder | 0.7 | 0.05-0.2 | ranked-leather folio strip

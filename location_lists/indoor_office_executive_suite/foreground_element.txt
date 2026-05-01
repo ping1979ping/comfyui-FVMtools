@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+deep persian wool rug edge | 1.0 | 0.2-0.5 | thick hand-knotted pile
+dark walnut hardwood plank floor | 0.95 | 0.3-0.6 | rich oiled hardwood grain
+inlaid parquetry floor pattern | 0.7 | 0.3-0.6 | geometric wood marquetry
+polished marble border floor band | 0.65 | 0.2-0.5 | veined honed stone
+oxblood leather chair seat edge | 0.7 | 0.1-0.3 | deeply tufted hide
+brass nailhead trim chair edge | 0.55 | 0.05-0.15 | polished domed studs
+deep brown desk surface edge | 0.85 | 0.1-0.4 | lacquered hardwood plane
+low velvet ottoman cushion | 0.6 | 0.1-0.3 | soft tufted upholstery
+antique brass coal-bucket on hearth | 0.5 | 0.05-0.15 | patinated hammered metal
+dark tobacco leather fender bench | 0.55 | 0.1-0.3 | buttoned curved seat
+ornate fringed rug tassel edge | 0.55 | 0.05-0.15 | twisted silk-wool fringe
+hand-stitched leather desk blotter | 0.65 | 0.05-0.15 | saddle-stitched hide pad

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+white-painted gallery studio wall | 1.0 | 0.7-1.0 | matte clean designer surface
+blueprint-pinned cork-strip wall | 0.95 | 0.7-1.0 | softly textured cork sheet
+ranked flat-file blueprint cabinet wall | 0.85 | 0.7-1.0 | shallow-drawer storage face
+polished concrete shell studio wall | 0.85 | 0.7-1.0 | smooth troweled cement
+painted black accent column wall | 0.65 | 0.7-1.0 | matte charcoal eggshell
+light beech veneer accent panel | 0.7 | 0.6-1.0 | smooth pale wood face
+steel-framed partition wall | 0.75 | 0.6-1.0 | black-mullion glass divider
+ranked-print elevation drawing wall | 0.75 | 0.6-1.0 | framed building-elevation sheet
+perforated metal screen wall | 0.6 | 0.6-0.9 | fine punched aluminum
+hand-sketched concept-drawing wall | 0.7 | 0.6-1.0 | softly inked architectural sketch
+plywood-clad workshop accent wall | 0.6 | 0.6-1.0 | warm grain-faced sheet
+warm walnut veneer studio wall | 0.65 | 0.6-1.0 | smooth flat-grained timber

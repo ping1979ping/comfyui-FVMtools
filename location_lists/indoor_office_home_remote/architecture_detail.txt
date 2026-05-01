@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted ceiling-edge crown molding | 0.85 | 0.05-0.15 | carved subtle profile band
+vintage cottage-window mullion | 0.85 | 0.05-0.2 | white-painted divided pane
+warm pendant home-fixture halo | 0.8 | 0.05-0.15 | amber circular bloom
+painted picture-rail strip | 0.65 | 0.02-0.1 | thin domestic shelf-line
+plastered cottage doorway threshold | 0.6 | 0.05-0.15 | softly rounded plaster edge
+warm wall-sconce candle halo | 0.7 | 0.02-0.1 | amber pooled wall light
+dappled morning leaf shadow | 0.75 | 0.05-0.15 | softly flickering pattern
+painted recessed bookshelf-niche reveal | 0.65 | 0.05-0.15 | warm shadowed cabinet recess
+hand-painted door-frame detail | 0.55 | 0.02-0.1 | softly accented painted edge
+warm cottage skylight diffusion | 0.55 | 0.05-0.15 | softly diffused overhead glow
+painted radiator-grille reveal | 0.5 | 0.02-0.08 | ribbed-cast iron pattern
+warm window-sill plant ledge | 0.6 | 0.05-0.15 | softly lit potted-plant row

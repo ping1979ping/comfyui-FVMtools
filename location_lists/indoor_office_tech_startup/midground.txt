@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+ping-pong table center room | 0.95 | 0.3-0.6 | blue regulation tournament top
+beanbag corner cluster | 0.9 | 0.2-0.5 | slouchy filled fabric sacks
+kombucha-tap kitchenette nook | 0.75 | 0.2-0.4 | stainless kegerator and shelf
+standing-desk row workstation | 0.95 | 0.3-0.6 | adjustable height frames
+beanie-wearing coder cluster setup | 0.75 | 0.2-0.5 | headphone-clad workstation row
+snack-bar communal counter | 0.85 | 0.2-0.4 | open shelves of cereal and granola
+hammock corner relaxation spot | 0.55 | 0.2-0.4 | slung canvas net between posts
+scooter-and-bike parking zone | 0.55 | 0.2-0.4 | lined parking strip with vehicles
+cluster of code-displaying monitors | 0.95 | 0.2-0.5 | dark-theme syntax-colored screens
+nap-pod recline corner | 0.5 | 0.2-0.4 | enclosed shell relaxation chair
+foosball table side feature | 0.65 | 0.2-0.5 | rod-mounted player figurines
+pet-friendly dog-bed corner | 0.55 | 0.1-0.3 | padded canvas mat under desk

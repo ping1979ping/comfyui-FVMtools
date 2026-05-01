@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+warm pale-ash wide-plank floor | 1.0 | 0.3-0.6 | softly limed grain
+low-pile cream wool area rug | 0.85 | 0.2-0.5 | softly brushed weave
+warm honey-pine wide-plank floor | 0.8 | 0.3-0.6 | matte sealed warm timber
+polished concrete minimal floor | 0.7 | 0.3-0.6 | smooth troweled grey slab
+oak-veneer desk-surface edge | 0.9 | 0.1-0.3 | matte sealed scandi worktop
+low-pile wool throw rug edge | 0.6 | 0.1-0.4 | soft-piled textured edge
+ceramic-base lamp-foot edge | 0.55 | 0.05-0.15 | softly glazed clay vessel
+painted-soft-mint floor band | 0.4 | 0.1-0.3 | matte cool-pigment paint
+knit floor-cushion edge | 0.55 | 0.05-0.2 | chunky-knit textured cushion
+hand-thrown ceramic pot edge | 0.5 | 0.05-0.15 | matte clay-paired vessel
+leather pouf cushion edge | 0.55 | 0.1-0.3 | stitched buttery hide
+warm pale-grained timber-table edge | 0.6 | 0.1-0.3 | smooth blonde grained surface

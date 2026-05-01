@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+polished chrome water carafe | 0.95 | 0.02-0.08 | satin-finish metal vessel
+crystal cut tumbler set | 0.85 | 0.02-0.05 | etched diamond-cut glasses
+ranked-leather agenda notepad | 0.85 | 0.02-0.05 | stitched-edge paper-pad
+brass-and-onyx desk pen-set | 0.7 | 0.02-0.05 | marble-base pen rest
+hand-bound corporate-strategy folio | 0.7 | 0.02-0.08 | embossed leather-tied report
+conference-call starfish phone | 0.85 | 0.02-0.08 | starfish-style audio device
+ranked-microphone desk-mic set | 0.55 | 0.02-0.05 | thin-base recording mic
+crystal awards-trophy display | 0.6 | 0.02-0.08 | engraved leaded-glass plaque
+hand-rolled cigar in cedar humidor | 0.45 | 0.02-0.05 | wooden lined cigar humidor
+brass nameplate desk-sign | 0.65 | 0.02-0.05 | engraved polished plaque
+ceramic boardroom-coffee mug | 0.7 | 0.02-0.05 | glazed corporate-emblem cup
+polished-stone center-piece sculpture | 0.5 | 0.02-0.05 | veined honed mineral form
+hand-bound corporate-bylaws volume | 0.55 | 0.02-0.08 | leather-bound case-volume
+ranked-microphone clip-on lavalier | 0.45 | 0.02-0.05 | small clip-mic device

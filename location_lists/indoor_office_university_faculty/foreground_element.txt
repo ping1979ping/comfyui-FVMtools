@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+academic-burgundy persian rug edge | 0.95 | 0.3-0.6 | thick hand-knotted pile
+dark-stained walnut hardwood floor | 0.95 | 0.3-0.6 | rich oiled grained timber
+worn-pine wide-plank academic floor | 0.7 | 0.3-0.6 | softly knotted warm timber
+scattered thesis-page paper drift | 0.85 | 0.05-0.2 | loose printed page accumulation
+oxblood leather chair-seat edge | 0.75 | 0.1-0.3 | deeply tufted hide cushion
+gilt-stamped book spine pile | 0.75 | 0.05-0.2 | embossed gilt-titled spine stack
+green-felt blotter pad surface | 0.7 | 0.1-0.3 | leather-edged pad
+ink-stained writing-desk surface | 0.7 | 0.1-0.3 | softly aged academic plane
+brass nailhead chair-trim edge | 0.55 | 0.05-0.15 | polished domed studs
+worn-pile broadloom carpet edge | 0.6 | 0.2-0.5 | softly faded commercial weave
+inlaid border parquetry floor | 0.6 | 0.3-0.6 | geometric wood marquetry
+scattered notebook-pile floor edge | 0.55 | 0.05-0.15 | stacked academic notebook

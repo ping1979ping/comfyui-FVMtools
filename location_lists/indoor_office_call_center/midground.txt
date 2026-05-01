@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rank of identical agent cubicles | 1.0 | 0.3-0.6 | fabric-paneled identical cubes
+headset-on-hook desk station | 0.95 | 0.1-0.3 | padded over-ear set on hook
+dual-screen monitor cluster | 0.95 | 0.2-0.5 | thin-bezel matte screens
+scoreboard-monitor on stand | 0.75 | 0.1-0.3 | tilted live-stat display
+supervisor pod elevated platform | 0.7 | 0.2-0.4 | small raised glass-walled cabin
+rolling task-chair row | 0.95 | 0.2-0.5 | fabric-back caster swivel
+plastic-tray paperwork sorter | 0.7 | 0.1-0.3 | ranked agent inbox
+snack-vending machine corner | 0.55 | 0.1-0.3 | lit vending appliance
+water-cooler dispenser station | 0.65 | 0.1-0.3 | tall plastic jug-cooler
+rolling whiteboard score-tracker | 0.65 | 0.2-0.4 | wheeled marker-board
+breakroom microwave kitchenette corner | 0.55 | 0.2-0.4 | small appliance niche
+queue-light tower stand | 0.55 | 0.05-0.2 | stacked colored signal tower

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rank of identical reporter desks | 1.0 | 0.3-0.6 | matte-laminate ganged workstations
+vintage typewriter on every desk | 0.85 | 0.1-0.3 | cast-iron mechanical machine
+brass banker desk-lamp center | 0.85 | 0.1-0.3 | polished hammered green-shade post
+rolling task-chair on castor | 0.85 | 0.2-0.5 | fabric-back swivel chair
+rolling editor's desk pod | 0.7 | 0.2-0.4 | wheeled large-format editing table
+ranked filing-cabinet rank | 0.85 | 0.2-0.5 | drawered news-archive storage
+rolling-cart with newsprint stack | 0.65 | 0.1-0.3 | wheeled paper-stack cart
+rolling-news-feed monitor cluster | 0.75 | 0.1-0.3 | tilted live-broadcast screen
+rolling whiteboard story-tracker | 0.7 | 0.2-0.4 | wheeled marker-board
+communal coffee-and-doughnut nook | 0.75 | 0.1-0.3 | snack-and-pot kitchenette
+vintage rotary phone on desk | 0.7 | 0.05-0.15 | polished cradled handset
+rolling mail-cart bin | 0.55 | 0.1-0.3 | wheeled paper-collection bin

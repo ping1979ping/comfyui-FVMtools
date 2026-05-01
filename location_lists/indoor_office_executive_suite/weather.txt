@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+controlled climate cool air | 1.0 | - | -
+steady hum of HVAC ventilation | 0.85 | - | -
+dry conditioned office stillness | 0.9 | - | -
+faint hint of brewed coffee | 0.7 | - | -
+neutral filtered indoor air | 0.95 | - | -
+subtle warmth from sun-heated glazing | 0.65 | - | -
+crisp recirculated freshness | 0.8 | - | -
+muted hush of carpet dampening | 0.7 | - | -
+faint citrus cleaning scent | 0.55 | - | -
+calm electric ambient quiet | 0.85 | - | -
+light paper-and-toner scent | 0.6 | - | -

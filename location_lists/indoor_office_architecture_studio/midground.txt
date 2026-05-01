@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+tilted drafting table center room | 1.0 | 0.3-0.6 | pale-laminate adjustable surface
+foam-board scale-model display | 0.95 | 0.2-0.5 | small carved miniature buildings
+daylight drafting-lamp arm | 0.9 | 0.1-0.3 | articulated white-shade lamp
+ranked flat-file blueprint chest | 0.95 | 0.2-0.5 | shallow-drawer wide cabinet
+rolling material-sample cart | 0.75 | 0.2-0.5 | wheeled wooden sample tray
+ranked-shelf model-block storage | 0.7 | 0.2-0.5 | open-grid foam-board shelf
+studio plotter-printer station | 0.7 | 0.2-0.4 | wide-format printing machine
+ranked tracing-paper roll cluster | 0.65 | 0.2-0.4 | leaning paper-roll bundle
+project-presentation pinboard rack | 0.75 | 0.2-0.5 | wheeled fabric panel
+low industrial-style workbench | 0.7 | 0.2-0.5 | warm-timber bench surface
+oversized base-plan light-table | 0.6 | 0.2-0.4 | back-lit transparent surface
+ranked-blueprint roll-tube rack | 0.6 | 0.2-0.4 | vertical pigeon-hole drawing storage

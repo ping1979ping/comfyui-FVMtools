@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed ceiling air-duct line | 0.85 | 0.1-0.3 | matte spiral metal pipe
+track-light row above desks | 0.9 | 0.05-0.15 | rail of adjustable spots
+ceiling-mounted projector unit | 0.7 | 0.02-0.1 | compact white video projector
+exposed wood roof-truss | 0.7 | 0.05-0.2 | raw timber framing element
+warehouse industrial pendant cage | 0.7 | 0.05-0.15 | wire-cage bulb fixture
+ceiling-mounted speaker cluster | 0.55 | 0.02-0.08 | small black flush units
+painted brand-color trim band | 0.6 | 0.05-0.15 | bold accent paint stripe
+frameless glass meeting-room edge | 0.7 | 0.05-0.2 | minimal-frame glazing
+ceiling smoke-detector dot | 0.55 | 0.02-0.05 | small white sensor disk
+colorful ductwork accent paint | 0.6 | 0.05-0.15 | bold-painted utility pipe
+exposed conduit raceway corner | 0.65 | 0.02-0.1 | color-coded electrical run
+LED strip ambient cove light | 0.6 | 0.05-0.15 | thin glowing accent line

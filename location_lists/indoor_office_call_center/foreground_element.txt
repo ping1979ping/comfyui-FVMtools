@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+low-pile bullpen carpet floor | 1.0 | 0.3-0.6 | looped commercial weave
+scuffed-vinyl tile floor | 0.85 | 0.3-0.6 | speckled flat sheet
+rubber chair-mat under cubicle | 0.7 | 0.1-0.3 | clear plastic floor protector
+flat institutional-grey carpet edge | 0.85 | 0.3-0.6 | low-pile commercial textile
+painted floor-line wayfinding | 0.55 | 0.05-0.15 | yellow tape-stripe band
+scattered phone-cable run | 0.6 | 0.05-0.15 | tangled pulled cabling
+rolling chair caster on carpet | 0.8 | 0.05-0.2 | matte black wheeled base
+desk-edge laminate worktop | 0.85 | 0.1-0.3 | matte commercial-grade work surface
+plastic phone-handset cradle | 0.55 | 0.02-0.08 | matte black handset cup
+scattered call-script paper drift | 0.6 | 0.05-0.15 | loose printed dialogue sheet
+commercial walk-off entrance mat | 0.5 | 0.1-0.3 | ribbed dark textile
+flush flooring-cable raceway | 0.55 | 0.05-0.15 | flat plastic cover band

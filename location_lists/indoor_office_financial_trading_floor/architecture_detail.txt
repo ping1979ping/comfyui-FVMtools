@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+recessed troffer fluorescent panel | 1.0 | 0.1-0.3 | diffused acrylic light tile
+ceiling-mounted news-feed monitor | 0.7 | 0.05-0.15 | wall-fixed broadcast screen
+track-light spotlight rail | 0.7 | 0.05-0.15 | row of adjustable spots
+LED ticker scrolling band | 0.85 | 0.1-0.3 | amber-text horizontal display
+ceiling speaker public-address dot | 0.7 | 0.02-0.08 | small flush-mounted disk
+emergency exit-sign glow | 0.7 | 0.02-0.08 | softly green LED letters
+frameless glass partition reveal | 0.7 | 0.05-0.2 | minimal-frame glazing
+recessed cove uplighting halo | 0.6 | 0.02-0.1 | warm hidden ceiling-edge wash
+ceiling-edge plaster shadow | 0.55 | 0.02-0.1 | subtly graded reveal line
+painted column-corner reveal | 0.55 | 0.02-0.1 | softly accented plaster edge
+HVAC supply diffuser grille | 0.7 | 0.05-0.15 | white louvered ceiling vent
+ceiling smoke-detector dot | 0.55 | 0.02-0.05 | small white sensor disk

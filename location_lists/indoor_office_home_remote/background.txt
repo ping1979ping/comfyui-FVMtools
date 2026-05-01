@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+warm cream painted home wall | 1.0 | 0.7-1.0 | matte soft-toned domestic finish
+eclectic bookshelf-stack home wall | 0.95 | 0.7-1.0 | mixed-spine ranked volumes
+framed family-photo gallery wall | 0.8 | 0.6-1.0 | diverse frame cluster arrangement
+soft sage painted home study wall | 0.75 | 0.7-1.0 | matte calming pigment
+vintage floral wallpaper accent | 0.7 | 0.7-1.0 | softly faded botanical paper
+warm beige textured wall | 0.85 | 0.7-1.0 | subtly mottled wash finish
+woven-tapestry hung-flat wall | 0.65 | 0.6-1.0 | softly draped patterned cloth
+muted dusty-rose accent wall | 0.65 | 0.7-1.0 | matte calm dusty-pigment
+hand-painted mural feature wall | 0.55 | 0.6-1.0 | softly illustrated scene
+domestic peg-rail coat-hook wall | 0.6 | 0.6-0.9 | shaker-style wood rail
+warm honey-tone wood-paneled study wall | 0.7 | 0.7-1.0 | softly grained warm planks
+framed botanical print row wall | 0.7 | 0.6-0.9 | matted pressed-leaf studies

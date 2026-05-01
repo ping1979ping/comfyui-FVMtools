@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+scattered notebook-and-pen pile | 0.95 | 0.02-0.1 | stacked reporter spirals
+vintage rolodex card-wheel | 0.85 | 0.02-0.05 | rotating index-card holder
+ceramic newsroom coffee-mug | 0.95 | 0.02-0.05 | glazed cup with cold coffee
+crumpled paper-ball waste pile | 0.85 | 0.02-0.08 | tossed-page wad cluster
+vintage typewriter on desk | 0.85 | 0.02-0.1 | cast-iron mechanical machine
+yellow-pad reporter notepad | 0.85 | 0.02-0.05 | lined-paper steno pad
+ranked-pen press-set | 0.7 | 0.02-0.05 | ballpoint-pen cup holder
+press-pass clipped ID badge | 0.7 | 0.02-0.05 | lanyard photo-card identifier
+hand-bound interview-notes folio | 0.6 | 0.02-0.08 | leather-tied paper-journal
+ranked-headline mockup printout | 0.7 | 0.02-0.1 | stacked first-page draft
+camera-and-flash press kit | 0.55 | 0.02-0.08 | small body-and-strap compact camera
+ranked-microphone-stand desk-mic | 0.5 | 0.02-0.05 | small clip-base recording mic
+hand-marked editorial-style guide | 0.55 | 0.02-0.08 | matte-cover bound reference book
+framed pulitzer-style award | 0.5 | 0.02-0.08 | engraved gilt-frame plaque

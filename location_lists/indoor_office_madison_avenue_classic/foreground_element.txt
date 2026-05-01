@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+tufted leather sofa-seat edge | 0.95 | 0.1-0.4 | buttoned bridle-leather cushion
+warm walnut hardwood floor | 0.95 | 0.3-0.6 | rich oiled grained timber
+deep-pile shag carpet edge | 0.7 | 0.2-0.5 | longer-pile mid-century carpet
+smoked-glass coffee-table edge | 0.85 | 0.1-0.3 | tinted plate-glass top
+brass-leg side-table base | 0.7 | 0.05-0.15 | polished slim metal post
+low-pile geometric mid-century rug | 0.65 | 0.2-0.5 | graphic-print wool weave
+crystal ashtray with cigar stub | 0.6 | 0.02-0.08 | etched leaded-glass dish
+teak end-table surface edge | 0.7 | 0.1-0.3 | warm grain-faced wood
+tufted leather ottoman footstool edge | 0.55 | 0.1-0.3 | buttoned hide cushion
+polished marble desk surface edge | 0.55 | 0.1-0.3 | veined honed stone plane
+scattered ad-mockup paper drift | 0.6 | 0.05-0.15 | stacked print-comp pages
+wide-plank pine cottage floor | 0.55 | 0.3-0.6 | softly knotted warm timber

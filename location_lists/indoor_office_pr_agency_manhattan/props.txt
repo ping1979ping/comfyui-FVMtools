@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ceramic Manhattan-PR coffee mug | 0.85 | 0.02-0.05 | branded-emblem glazed cup
+designer-pen and notepad set | 0.85 | 0.02-0.05 | ranked-leather notepad strip
+scattered glossy-lookbook stack | 0.95 | 0.02-0.1 | tossed magazine-cover pile
+hand-bound press-kit folio | 0.85 | 0.02-0.08 | embossed designer folio
+multi-line designer desk-phone | 0.85 | 0.02-0.1 | matte multi-button handset
+crystal-cut champagne flute pair | 0.7 | 0.02-0.05 | etched-leaded crystal stemware
+polished-rose-gold paperweight | 0.6 | 0.02-0.05 | softly metallic small object
+scattered fabric-swatch fan | 0.7 | 0.02-0.05 | fanned color sample strip
+designer perfume-bottle display | 0.55 | 0.02-0.05 | sculptural-glass scent vessel
+rolling-press-camera tripod set | 0.5 | 0.02-0.08 | small-foot press camera
+hand-bound Manhattan-PR client folio | 0.7 | 0.02-0.08 | ranked-leather paper-binder
+designer scented soy-candle in jar | 0.7 | 0.02-0.05 | frosted-glass scented candle
+brass nameplate executive sign | 0.65 | 0.02-0.05 | engraved polished plaque
+ceramic Manhattan-floral arrangement | 0.65 | 0.02-0.08 | softly glazed clay-vessel
