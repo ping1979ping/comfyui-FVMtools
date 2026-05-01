@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+storybook gabled village backdrop | 1.0 | 0.5-0.9 | clustered snow-roofed houses
+glittering tree-lined boulevard | 0.95 | 0.4-0.8 | warmly lit branch canopy
+old town silhouette against sky | 0.85 | 0.3-0.6 | dark rooftop horizon
+ridge towering above town | 0.7 | 0.3-0.6 | jagged white peak silhouette
+valley church bathed in light | 0.7 | 0.3-0.6 | illuminated steeple far off
+snow-blanketed plaza paving | 0.95 | 0.4-0.8 | white-dusted cobble surface
+distant frozen river bend | 0.6 | 0.3-0.6 | ribbon of pale ice
+illuminated bridge across stream | 0.65 | 0.3-0.6 | arched warm-lit span
+overhead inky starlit sky | 0.85 | 0.3-0.7 | deep dark with pinpoint lights
+backdrop of bare-leaf trees | 0.85 | 0.4-0.8 | leafless dark vertical cluster
+distant carolers gathering | 0.55 | 0.2-0.4 | cluster of bundled figures
+warm-glowing distant chalets | 0.85 | 0.3-0.6 | soft yellow window squares

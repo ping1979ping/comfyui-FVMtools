@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+lunchtime sunny midday | 1.0 | - | -
+afternoon golden glow | 0.95 | - | -
+late afternoon long shadows | 0.85 | - | -
+sunset over peaks | 0.85 | - | -
+brunch hour late morning | 0.85 | - | -
+hazy noon glare | 0.8 | - | -
+twilight after last run | 0.7 | - | -
+midmorning crisp light | 0.85 | - | -
+post-lunch lull | 0.85 | - | -
+late-arriving dinner hour | 0.65 | - | -

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bluebird midmorning | 1.0 | - | -
+crisp early afternoon | 0.95 | - | -
+golden alpenglow on peaks | 0.85 | - | -
+late afternoon long shadows | 0.8 | - | -
+soft overcast midday | 0.85 | - | -
+first lift dawn light | 0.75 | - | -
+hazy noon sun glare | 0.7 | - | -
+twilight after last run | 0.6 | - | -
+midmorning fresh tracks hour | 0.85 | - | -
+lunch break midday | 0.8 | - | -

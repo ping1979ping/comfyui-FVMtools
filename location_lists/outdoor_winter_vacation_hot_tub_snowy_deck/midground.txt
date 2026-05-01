@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cedar barrel hot tub | 1.0 | 0.4-0.8 | banded round timber vessel
+snow-dusted timber deck planks | 0.95 | 0.4-0.8 | white-flecked board surface
+deck rail piled with snow | 0.85 | 0.3-0.6 | timber post with white cap
+cedar-walled changing nook | 0.7 | 0.2-0.5 | small enclosed shelter
+pile of folded towels on bench | 0.85 | 0.2-0.5 | stacked terry cloth
+deck-mounted lantern post | 0.85 | 0.2-0.4 | timber pole with iron lantern
+snow-clearing path to tub | 0.85 | 0.3-0.6 | shoveled narrow trough
+overhead string-light strand | 0.85 | 0.3-0.6 | warm bulb chain across deck
+plank pergola structure | 0.7 | 0.3-0.6 | overhead timber lattice
+small side table for drinks | 0.7 | 0.1-0.3 | round timber surface
+snow-mounded chiminea | 0.55 | 0.2-0.4 | terracotta beehive heater
+firepit ring on far deck | 0.6 | 0.2-0.5 | iron bowl with embers

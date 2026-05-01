@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+steel grip clamp on cable | 1.0 | 0.2-0.5 | thick mechanical assembly
+chairlift tower lattice strut | 0.95 | 0.3-0.7 | painted galvanized cross-brace
+suspension yoke pivot pin | 0.85 | 0.1-0.3 | thick steel bolt joint
+weathered seat foam edge | 0.85 | 0.2-0.4 | padded vinyl rim
+safety bar pivot hinge | 0.95 | 0.05-0.15 | metal locking joint
+overhead enclosure visor lip | 0.7 | 0.2-0.5 | tinted plexiglass edge
+tower roller wheel cluster | 0.75 | 0.1-0.3 | parallel cable wheels
+red painted tower number | 0.7 | 0.05-0.15 | bold numeric placard
+underseat metal frame | 0.85 | 0.2-0.5 | welded support bars
+weatherproof seat bolt heads | 0.65 | 0.05-0.15 | rusted hardware dots

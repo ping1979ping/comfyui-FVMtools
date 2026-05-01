@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low-slung platform bed | 1.0 | 0.4-0.8 | plush quilt-topped frame
+reindeer pelt draped at bed foot | 0.95 | 0.3-0.6 | thick layered fur
+plush armchair facing window | 0.85 | 0.3-0.6 | padded upholstered seat
+knit blanket pile on chair | 0.85 | 0.2-0.5 | chunky wool stack
+small woodstove on slate pad | 0.85 | 0.3-0.6 | matte black potbelly
+stack of birch logs by stove | 0.85 | 0.2-0.4 | white-barked round pile
+side table with table lamp | 0.85 | 0.2-0.4 | warm shaded glow
+cocoa thermos on tray | 0.7 | 0.1-0.3 | metal cylinder with tray
+sheepskin floor pad | 0.75 | 0.2-0.5 | fluffy white mat
+folding telescope on tripod | 0.6 | 0.2-0.4 | brass tube on wood legs
+hot tub barrel beside window | 0.55 | 0.3-0.6 | round timber soaking vessel
+heavy curtain pulled aside | 0.7 | 0.2-0.5 | draped wool fabric panel

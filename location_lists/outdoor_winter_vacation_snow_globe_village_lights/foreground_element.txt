@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+drifting snowflakes mid-air | 1.0 | 0.1-0.3 | suspended white specks
+cobblestone with crisp footprints | 0.95 | 0.2-0.5 | mottled stones with snow tracks
+warm bulb closeup glowing | 0.95 | 0.05-0.15 | filament in clear glass
+small mound of brushed snow | 0.85 | 0.1-0.3 | rough white pile
+sled track curve in snow | 0.7 | 0.1-0.3 | parallel narrow grooves
+dropped wreath on stones | 0.55 | 0.05-0.15 | circular pine ribbon
+candy cane wrapper | 0.55 | 0.05-0.1 | red-and-white striped paper
+woolen mitten on bench | 0.65 | 0.05-0.15 | knitted small glove
+gleam of frost on rail | 0.75 | 0.05-0.15 | crystalline shimmer
+fallen ribbon coil on ground | 0.5 | 0.05-0.1 | satin tossed loop
+small wrapped gift box | 0.55 | 0.05-0.1 | brown paper twine bow
+golden lantern halo glow | 0.85 | 0.05-0.15 | soft amber light ring

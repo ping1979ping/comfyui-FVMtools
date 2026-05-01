@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+old-fashioned cast iron gas lamp | 1.0 | 0.2-0.4 | curved black with glowing globe
+strung festoon-light canopy overhead | 0.95 | 0.4-0.8 | warm bulb constellation chain
+tall illuminated village tree | 0.95 | 0.3-0.7 | conifer with sparkling lights
+red-painted horse-drawn sleigh | 0.7 | 0.3-0.6 | carriage with bell harness
+snow-mounded fountain centerpiece | 0.75 | 0.2-0.5 | rounded stone bowl
+festively wreathed lamppost | 0.85 | 0.2-0.4 | greenery and ribbon
+illuminated nativity scene | 0.6 | 0.2-0.5 | small lit figural display
+wooden bench dusted with snow | 0.85 | 0.2-0.4 | weathered slats with white cap
+timber arch entrance with garland | 0.7 | 0.3-0.6 | greenery-bound timber span
+brass church bell on stand | 0.55 | 0.1-0.3 | polished tarnished metal
+candle-lit window box | 0.7 | 0.1-0.3 | small framed flickers
+hand-painted welcome arch | 0.65 | 0.2-0.5 | scrolled timber portal

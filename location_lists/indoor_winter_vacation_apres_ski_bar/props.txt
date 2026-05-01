@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+cocktail shaker on counter | 0.85 | 0.05-0.15 | brushed steel cylinder
+wooden cribbage board | 0.6 | 0.05-0.15 | small grid with pegs
+cigar in glass ashtray | 0.55 | 0.05-0.1 | smoldering rolled leaves
+brass bar bell | 0.5 | 0.05-0.1 | small ringing dome
+deck of well-worn cards | 0.65 | 0.05-0.1 | softened patterned stack
+empty bottle line with corks | 0.7 | 0.1-0.3 | spent glass row
+guitar leaning in corner | 0.55 | 0.1-0.3 | acoustic with worn finish
+table jukebox on stand | 0.5 | 0.1-0.2 | chromed selector unit
+salt and pepper shakers pair | 0.7 | 0.05-0.1 | small glass shakers
+woven tapas basket of bread | 0.55 | 0.05-0.15 | wicker holding slices
+napkin caddy with stack | 0.7 | 0.05-0.15 | metal frame with paper
+chalk pot beside menu | 0.65 | 0.05-0.1 | small dish of stubs

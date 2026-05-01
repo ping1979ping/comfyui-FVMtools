@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+steaming bowl of soup on bench | 0.95 | 0.05-0.15 | broth with rising vapor
+hand-warmed enamel mug | 0.95 | 0.05-0.15 | speckled metal cup of cocoa
+fresh boot prints in snow | 0.95 | 0.1-0.3 | clear deep impressions
+splintered firewood chunks | 0.85 | 0.05-0.15 | rough split log fragments
+gloves on porch rail | 0.85 | 0.05-0.15 | padded paired wrist guards
+snow shovel head in drift | 0.7 | 0.05-0.15 | aluminum scoop in white
+ice axe leaning on post | 0.65 | 0.05-0.15 | metal-headed alpine tool
+crampon set on bench | 0.55 | 0.05-0.15 | spiked metal frames
+melted patch around boots | 0.7 | 0.05-0.2 | wet darker spot in white
+trail map open on bench | 0.7 | 0.05-0.15 | folded waterproof paper
+small candle lantern flickering | 0.75 | 0.05-0.15 | tin pierced housing
+brass thermos cup steaming | 0.7 | 0.05-0.15 | metal cup with vapor

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long polished timber bar counter | 1.0 | 0.4-0.8 | thick lacquered slab top
+row of leather upholstered bar stools | 0.95 | 0.3-0.6 | tufted cognac seats
+heavy timber high-top tables | 0.85 | 0.3-0.6 | rough plank surfaces
+chunky wooden benches | 0.8 | 0.3-0.6 | timber slat seating
+brass beer tap tower cluster | 0.85 | 0.2-0.4 | gleaming spouts on counter
+festive pine garland over bar | 0.7 | 0.2-0.5 | greenery with warm lights
+wood-burning iron stove in corner | 0.7 | 0.2-0.4 | black potbelly heater
+chalkboard easel of specials | 0.7 | 0.2-0.4 | a-frame with menu writing
+crowded hanging glass rack | 0.85 | 0.2-0.5 | inverted stemware overhead
+dance floor area with timber boards | 0.55 | 0.3-0.6 | open cleared space
+DJ table with mixer console | 0.5 | 0.2-0.4 | turntables on stand
+old-fashioned cash register | 0.55 | 0.1-0.3 | brass mechanical till

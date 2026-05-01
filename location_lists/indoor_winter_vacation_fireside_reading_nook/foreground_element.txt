@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+open hardback book in lap | 0.95 | 0.05-0.2 | leather-bound with pages
+steaming cup of tea on table | 0.95 | 0.05-0.15 | porcelain cup with vapor
+half-emptied wine glass | 0.7 | 0.05-0.15 | ruby liquid in clear stem
+folded reading glasses on book | 0.85 | 0.05-0.1 | thin tortoiseshell frames
+woolen blanket corner thrown | 0.85 | 0.1-0.3 | rumpled chunky knit
+embers glowing in grate | 0.95 | 0.1-0.3 | bright orange coal mass
+brass bookmark sticking out | 0.7 | 0.05-0.1 | thin metal tassel marker
+slipper-shod foot on stool | 0.7 | 0.1-0.3 | shearling lined leather
+saucer with shortbread | 0.65 | 0.05-0.15 | small plate with cookies
+quill or pen on paper | 0.55 | 0.05-0.1 | feather or modern instrument
+candle stub in brass holder | 0.7 | 0.05-0.1 | melted wax remnant
+small bowl of dried lavender | 0.55 | 0.05-0.1 | purple bud cluster

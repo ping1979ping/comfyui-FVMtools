@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-slope late afternoon | 1.0 | - | -
+warm-lit early evening | 0.95 | - | -
+deep night by firelight | 0.85 | - | -
+twilight blue hour | 0.9 | - | -
+quiet midmorning | 0.85 | - | -
+midnight nightcap hour | 0.75 | - | -
+sundown over piste | 0.85 | - | -
+overcast afternoon | 0.85 | - | -
+pre-dinner gathering hour | 0.85 | - | -
+morning coffee hour | 0.7 | - | -

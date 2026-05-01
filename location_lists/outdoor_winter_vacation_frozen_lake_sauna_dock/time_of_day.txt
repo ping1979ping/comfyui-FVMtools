@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+twilight blue hour over ice | 1.0 | - | -
+late afternoon golden glow | 0.9 | - | -
+deep night lit by lantern | 0.95 | - | -
+overcast midday hush | 0.85 | - | -
+crisp early morning | 0.85 | - | -
+aurora-lit late night | 0.7 | - | -
+dusk descending | 0.85 | - | -
+pre-dawn stillness | 0.7 | - | -
+post-soak late hour | 0.85 | - | -
+mid-afternoon hush | 0.8 | - | -

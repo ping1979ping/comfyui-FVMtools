@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+deep polar night | 1.0 | - | -
+candlelit late evening | 1.0 | - | -
+midnight stillness | 0.95 | - | -
+late twilight blue hour | 0.85 | - | -
+arctic afternoon dim | 0.85 | - | -
+hushed predawn | 0.7 | - | -
+late dawn glow through entry | 0.7 | - | -
+softly lit early evening | 0.85 | - | -
+evening tour hour | 0.85 | - | -
+morning checkout hour | 0.7 | - | -

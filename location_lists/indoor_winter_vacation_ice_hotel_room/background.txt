@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+carved ice block wall | 1.0 | 0.7-1.0 | translucent crystalline mass
+sculpted snow-pack interior wall | 0.9 | 0.6-1.0 | densely packed white surface
+domed ice ceiling vault | 0.85 | 0.5-0.9 | smooth rounded crystal arch
+illuminated ice block backdrop | 0.85 | 0.5-0.9 | softly lit blue-glowing pane
+carved frost niche alcove | 0.75 | 0.4-0.8 | recessed curved ice cavity
+ice corridor receding deeper | 0.7 | 0.4-0.7 | narrowing gleaming passage
+backlit ice mosaic panel | 0.7 | 0.4-0.7 | patterned glowing crystal blocks
+frost-veiled rear wall | 0.65 | 0.5-0.9 | hazy frozen surface
+ice column flanking far wall | 0.7 | 0.3-0.6 | thick polished pillar
+sculpted snow archway opening | 0.65 | 0.3-0.6 | rounded white passageway
+deep cobalt-lit ice expanse | 0.6 | 0.5-0.9 | softly glowing blue mass
+intricate carved relief in ice | 0.55 | 0.3-0.6 | bas-relief crystal pattern

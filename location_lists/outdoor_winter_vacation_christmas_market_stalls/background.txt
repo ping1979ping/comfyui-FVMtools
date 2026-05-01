@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+row of timber market huts | 1.0 | 0.5-0.9 | painted wooden chalets in line
+illuminated old town hall | 0.85 | 0.3-0.7 | gothic stone facade glowing
+gabled merchant houses backdrop | 0.85 | 0.4-0.8 | stepped roof silhouettes
+giant decorated christmas tree | 0.95 | 0.4-0.8 | tall conifer spangled lights
+cathedral spire above rooftops | 0.7 | 0.3-0.6 | tall slate pinnacle
+fairground carousel in distance | 0.65 | 0.3-0.5 | colorful spinning structure
+ferris wheel above market | 0.6 | 0.3-0.6 | circular illuminated ring
+crowd-filled market lanes | 0.85 | 0.4-0.8 | dense moving figures in coats
+festive arch entrance gate | 0.7 | 0.3-0.5 | greenery-bound timber span
+distant snow-dusted park trees | 0.75 | 0.3-0.6 | bare lit branches
+brick gabled facade glowing | 0.65 | 0.3-0.6 | warm-lit historic wall
+overhead string-light canopy | 0.95 | 0.3-0.7 | bulb constellation overhead

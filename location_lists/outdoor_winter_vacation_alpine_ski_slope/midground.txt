@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+groomed piste edge with markers | 1.0 | 0.4-0.8 | ribbed packed snow
+red and yellow piste boundary poles | 0.9 | 0.3-0.6 | bright fiberglass shafts
+snow fence along slope side | 0.75 | 0.3-0.7 | wooden slatted barrier
+crash pad wrapped lift tower | 0.7 | 0.3-0.5 | padded blue cylinder
+slope direction signpost | 0.65 | 0.2-0.5 | metal arrow markers
+snow-laden conifer cluster | 0.85 | 0.4-0.8 | heavy white-frosted branches
+piste groomer parked at edge | 0.55 | 0.3-0.6 | red snowcat tracked vehicle
+trail map kiosk on platform | 0.5 | 0.2-0.4 | wooden information stand
+moguled section of slope | 0.7 | 0.4-0.8 | bumpy carved snow
+small ski jump kicker | 0.5 | 0.2-0.5 | shaped snow ramp
+freshly stamped piste with corduroy | 0.85 | 0.4-0.8 | parallel groomer lines
+race gate flags fluttering | 0.5 | 0.2-0.5 | red and blue plastic panels

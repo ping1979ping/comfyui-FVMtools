@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+snow-block joint seam line | 1.0 | 0.3-0.6 | compacted white interface
+key-block keystone at apex | 0.85 | 0.2-0.5 | wedge-cut top crown
+inward sloping wall taper | 0.95 | 0.4-0.8 | curved corbeled rise
+small carved candle niche | 0.95 | 0.2-0.5 | hollowed white pocket
+rounded entry archway | 0.85 | 0.2-0.5 | tunnel mouth opening
+hand-tooled chisel marks | 0.7 | 0.2-0.5 | textured surface striations
+embedded LED light strand | 0.7 | 0.2-0.4 | warm glow ribbon line
+small ventilation slot | 0.7 | 0.05-0.15 | narrow upper opening
+fur-lined threshold edge | 0.65 | 0.1-0.3 | hide laid across opening
+recessed sleeping platform edge | 0.85 | 0.3-0.6 | shaped white shelf rim

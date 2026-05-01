@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+light powdery snowfall | 1.0 | - | -
+crisp clear cold air | 0.95 | - | -
+gentle drifting flakes | 0.9 | - | -
+overcast pewter sky | 0.85 | - | -
+biting wind across rink | 0.7 | - | -
+heavy fat-flake snow | 0.7 | - | -
+calm windless cold | 0.85 | - | -
+soft mist near floodlights | 0.65 | - | -
+ice crystals near floodlights | 0.7 | - | -
+frosty halo glow | 0.75 | - | -

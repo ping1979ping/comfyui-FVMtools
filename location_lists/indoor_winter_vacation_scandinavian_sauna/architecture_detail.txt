@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+tongue-and-groove wall joint | 1.0 | 0.3-0.7 | tight interlocked plank seam
+exposed knot detail in plank | 0.95 | 0.2-0.5 | dark grain whirls
+heater stone retaining cage | 0.95 | 0.2-0.5 | wire basket holding rocks
+slatted floor gap line | 0.9 | 0.3-0.6 | parallel narrow grooves
+recessed light strip channel | 0.85 | 0.2-0.5 | warm linear glow line
+shaped bench front edge | 0.95 | 0.3-0.6 | rounded plank lip
+small ventilation grille | 0.7 | 0.05-0.15 | slatted timber vent
+hand-routed corner trim | 0.7 | 0.1-0.3 | softened plank edge
+plank-clad ceiling joint | 0.85 | 0.3-0.7 | linear board seams
+inset shower control plate | 0.5 | 0.05-0.15 | small metal valve panel

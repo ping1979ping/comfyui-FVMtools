@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+magic hour blue twilight | 1.0 | - | -
+warm-lit early evening | 0.95 | - | -
+overcast snowy midday | 0.9 | - | -
+dawn over rooftops | 0.75 | - | -
+late night quiet hour | 0.7 | - | -
+midmorning crisp light | 0.85 | - | -
+sunset behind ridge | 0.75 | - | -
+hush before dawn | 0.6 | - | -
+early evening market hour | 0.9 | - | -
+post-mass quiet hour | 0.65 | - | -

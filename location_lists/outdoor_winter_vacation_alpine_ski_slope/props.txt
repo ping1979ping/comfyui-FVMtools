@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+abandoned single ski upright | 0.75 | 0.1-0.3 | sleek topsheet with bindings
+crossed pair of snowboards | 0.7 | 0.1-0.3 | overlapping graphic decks
+rolled trail map on bench | 0.5 | 0.05-0.15 | folded waterproof paper
+piste marker flag on stand | 0.7 | 0.1-0.3 | bright pennant on aluminum
+bundled chairlift safety bar | 0.55 | 0.1-0.3 | metal padded crossbar
+snow shovel leaning on post | 0.6 | 0.1-0.2 | aluminum scoop with handle
+piste warning sandwich board | 0.65 | 0.1-0.3 | painted wooden a-frame
+race start wand in holder | 0.5 | 0.05-0.15 | hinged metal trigger arm
+patrol toboggan parked at edge | 0.55 | 0.1-0.3 | orange rescue sled
+piste salt bag near pole | 0.4 | 0.05-0.15 | woven plastic sack
+spare goggles dangling from pole | 0.5 | 0.05-0.15 | mirrored lens strap
+piste corduroy brush rake | 0.45 | 0.05-0.15 | wide metal grooming tool

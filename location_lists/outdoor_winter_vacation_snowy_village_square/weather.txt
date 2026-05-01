@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+gentle snowfall drifting down | 1.0 | - | -
+heavy fat-flake snow | 0.85 | - | -
+crisp clear cold air | 0.9 | - | -
+overcast pewter sky | 0.85 | - | -
+light freezing mist | 0.7 | - | -
+calm windless cold | 0.85 | - | -
+flurry of fine snow | 0.8 | - | -
+brief sun break through clouds | 0.7 | - | -
+ice crystal sparkle in air | 0.7 | - | -
+snow squall briefly heavy | 0.7 | - | -

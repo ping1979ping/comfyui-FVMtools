@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+timber sauna hut on shore | 1.0 | 0.4-0.7 | dark stained log cabin
+weathered wooden dock extending onto ice | 0.95 | 0.3-0.7 | snow-dusted plank walkway
+ice plunge hole cut in lake | 0.85 | 0.2-0.4 | dark rectangular opening
+bench beside sauna door | 0.8 | 0.2-0.4 | timber slat seat
+ladder descending into ice hole | 0.75 | 0.1-0.3 | metal rung climb
+chimney pipe steaming from sauna | 0.85 | 0.2-0.4 | dark stack with rising vapor
+firewood stack against wall | 0.85 | 0.2-0.5 | split log pile
+hand-cut snow path to dock | 0.7 | 0.3-0.6 | shoveled narrow trough
+small wooden changing hut | 0.6 | 0.2-0.4 | tiny weathered shed
+ice-fishing tip-up flag | 0.5 | 0.1-0.2 | small red marker on stick
+hot tub barrel on deck | 0.6 | 0.2-0.4 | round timber soaking vessel
+suspended drying rack with towels | 0.55 | 0.1-0.3 | hung linen above bench

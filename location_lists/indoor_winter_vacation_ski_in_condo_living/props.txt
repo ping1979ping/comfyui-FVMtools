@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+cluster of pillar candles on tray | 0.85 | 0.1-0.3 | varied height wax columns
+folded fleece blanket stack | 0.85 | 0.1-0.3 | thick cozy pile
+empty ski boot pair on mat | 0.85 | 0.1-0.3 | sturdy plastic shells
+coffee table photography book | 0.85 | 0.05-0.15 | oversized hardcover
+small ceramic vase with branches | 0.7 | 0.05-0.15 | sculptural twig arrangement
+tray of espresso cups | 0.7 | 0.05-0.15 | small white paired ceramics
+woolen knit pouf | 0.65 | 0.1-0.3 | cable-knit ottoman
+silver ice bucket with bottle | 0.7 | 0.1-0.2 | metal cooler with glass neck
+small wooden tray with dice | 0.55 | 0.05-0.1 | game piece set
+brass cocktail shaker | 0.6 | 0.05-0.15 | polished cylinder
+sculptural wooden bowl | 0.65 | 0.05-0.15 | turned timber vessel
+folded cashmere wrap | 0.7 | 0.1-0.3 | soft draped fabric piece

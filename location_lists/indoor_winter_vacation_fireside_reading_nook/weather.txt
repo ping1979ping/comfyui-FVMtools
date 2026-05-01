@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy snowfall outside | 1.0 | - | -
+calm cold night beyond | 0.95 | - | -
+overcast pewter daylight | 0.85 | - | -
+rain-snow mix on glass | 0.65 | - | -
+gentle drifting flakes outside | 0.9 | - | -
+howling blizzard outside | 0.7 | - | -
+clear starry winter sky beyond | 0.7 | - | -
+fog pressing against panes | 0.7 | - | -
+ice crystals on outer pane | 0.85 | - | -
+snow piling on outer sill | 0.85 | - | -

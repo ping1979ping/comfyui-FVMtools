@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+pair of figure skates on bench | 0.95 | 0.1-0.3 | white leather with blades
+pair of hockey skates lying | 0.8 | 0.1-0.3 | black leather with steel
+hockey stick leaning on boards | 0.65 | 0.1-0.3 | taped wooden shaft
+small training cone | 0.6 | 0.05-0.15 | bright orange marker
+skate blade guard pair | 0.75 | 0.05-0.15 | red rubber clip-ons
+warming hand-warmer pouch | 0.6 | 0.05-0.1 | small cloth packet
+snack tray with churros | 0.65 | 0.1-0.2 | paper holder with sticks
+festive striped scarf hung | 0.65 | 0.1-0.3 | knitted pattern strip
+disposable cup of mulled wine | 0.7 | 0.05-0.15 | dented paper with steam
+puck on ice surface | 0.55 | 0.05-0.1 | small black rubber disc
+pair of woolen earmuffs | 0.6 | 0.05-0.1 | fluffy headband
+roll of skate laces | 0.55 | 0.05-0.1 | bundled cord

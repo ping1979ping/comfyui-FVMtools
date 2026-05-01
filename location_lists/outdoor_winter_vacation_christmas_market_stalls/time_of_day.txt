@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+magical blue twilight | 1.0 | - | -
+warm-lit early evening | 1.0 | - | -
+peak crowd dinner hour | 0.95 | - | -
+late night closing hour | 0.7 | - | -
+overcast afternoon | 0.9 | - | -
+sunset behind rooftops | 0.85 | - | -
+dawn quiet opening | 0.55 | - | -
+midmorning bustling | 0.75 | - | -
+weekend evening rush | 0.95 | - | -
+mid-afternoon family hour | 0.85 | - | -

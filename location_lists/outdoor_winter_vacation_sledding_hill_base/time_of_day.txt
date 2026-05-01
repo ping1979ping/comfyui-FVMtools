@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday sunshine | 1.0 | - | -
+late afternoon long shadows | 0.95 | - | -
+overcast saturday midday | 0.9 | - | -
+golden sunset on slope | 0.85 | - | -
+crisp morning fresh tracks | 0.85 | - | -
+twilight blue hour | 0.7 | - | -
+floodlit early evening | 0.65 | - | -
+peak weekend afternoon | 0.95 | - | -
+mid-afternoon family hour | 0.95 | - | -
+pre-sunset slope time | 0.85 | - | -

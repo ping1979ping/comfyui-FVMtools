@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear starry arctic night | 1.0 | - | -
+shimmering aurora outside | 1.0 | - | -
+heavy snowfall against glass | 0.85 | - | -
+frost forming on outer pane | 0.9 | - | -
+calm subzero stillness | 0.95 | - | -
+howling polar wind | 0.7 | - | -
+overcast pewter daytime | 0.7 | - | -
+ice crystals drifting in air | 0.75 | - | -
+silent polar night cold | 0.95 | - | -
+ice crystals dancing in beam | 0.7 | - | -

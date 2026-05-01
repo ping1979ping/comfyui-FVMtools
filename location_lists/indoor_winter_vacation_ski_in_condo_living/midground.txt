@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low-slung modular sectional sofa | 1.0 | 0.4-0.8 | grey upholstered modular form
+oversized chunky knit throw | 0.9 | 0.2-0.4 | pile of cable-knit fabric
+sheepskin armchair lounge | 0.85 | 0.3-0.6 | fluffy cream pelt seat
+slim glass coffee table | 0.85 | 0.3-0.5 | clear floating slab
+gas fireplace with flat front | 0.85 | 0.3-0.5 | linear black panel with flame
+shaggy area rug underfoot | 0.85 | 0.4-0.8 | thick neutral fiber pile
+chrome-and-leather barstool | 0.7 | 0.2-0.4 | sleek metal-framed seat
+floor-standing pendant lamp | 0.85 | 0.2-0.4 | tall arched dome shade
+cantilevered floating shelf | 0.7 | 0.2-0.5 | minimal wall-hung plank
+ski boot drying rack station | 0.7 | 0.2-0.4 | mounted heated grid
+oversized pouf footrest | 0.7 | 0.2-0.4 | round padded ottoman
+sliding glass door panel | 0.7 | 0.3-0.6 | full-height clear track door

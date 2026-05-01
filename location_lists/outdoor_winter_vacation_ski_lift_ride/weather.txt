@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bluebird sky | 1.0 | - | -
+light powder snowfall | 0.85 | - | -
+breezy alpine gusts | 0.85 | - | -
+heavy fat-flake snow | 0.7 | - | -
+biting cold dry air | 0.9 | - | -
+high cirrus thin clouds | 0.7 | - | -
+flat light overcast | 0.7 | - | -
+fog band passing across | 0.65 | - | -
+icy frost on cable hangers | 0.85 | - | -
+snow squall passing across | 0.7 | - | -

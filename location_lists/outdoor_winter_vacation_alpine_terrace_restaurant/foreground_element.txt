@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+steaming bowl of goulash | 0.95 | 0.05-0.15 | red broth with rising vapor
+glass mug of beer | 0.95 | 0.05-0.15 | golden frothy lager
+plate of rosti and sausage | 0.85 | 0.05-0.15 | crisp golden potato cake
+fondue pot bubbling | 0.7 | 0.05-0.2 | melted cheese in iron vessel
+bottle of schnapps on ice | 0.7 | 0.05-0.15 | clear with frost-rimed glass
+folded napkin under utensils | 0.7 | 0.05-0.1 | linen with knife and fork
+sunglasses on table | 0.85 | 0.05-0.15 | mirrored lens frames
+lit cigarette in ashtray | 0.55 | 0.05-0.1 | smoldering paper roll
+crumbs scattered on plank | 0.6 | 0.05-0.1 | small bread bits
+glass of vin chaud | 0.85 | 0.05-0.15 | spiced red drink steaming
+torn baguette piece | 0.7 | 0.05-0.15 | crusty bread chunk
+sun cream tube on table | 0.55 | 0.05-0.1 | small white cylinder

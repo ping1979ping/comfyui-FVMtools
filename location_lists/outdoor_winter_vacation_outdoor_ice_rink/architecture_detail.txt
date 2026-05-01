@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted rink board panel | 1.0 | 0.3-0.6 | bright red and white plywood
+metal handrail along boards | 0.85 | 0.2-0.4 | tubular steel grip
+warming hut shingled eaves | 0.85 | 0.2-0.4 | snow-laden wood tile edge
+floodlight mast bracket | 0.75 | 0.1-0.3 | dark welded mounting
+festive arch carved trim | 0.75 | 0.2-0.5 | scrolled timber detail
+rubber-matted entry path | 0.85 | 0.3-0.6 | grooved black walkway
+drainage channel along perimeter | 0.6 | 0.2-0.5 | metal grated trough
+banner pole anchor base | 0.65 | 0.1-0.3 | bolted iron foot
+ornate festive light bracket | 0.7 | 0.1-0.3 | curving lamp arm
+weathered timber bench leg | 0.85 | 0.1-0.3 | turned timber support

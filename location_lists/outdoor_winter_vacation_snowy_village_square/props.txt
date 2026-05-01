@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+red ribboned wreath on door | 0.9 | 0.1-0.3 | circular pine and ribbon
+wooden sled leaning on wall | 0.75 | 0.1-0.3 | red painted runners
+basket of roasted chestnuts | 0.6 | 0.1-0.2 | wicker holding charred shells
+strand of warm festoon lights | 0.95 | 0.2-0.5 | drape of soft glow bulbs
+carved wooden nutcracker figure | 0.55 | 0.05-0.15 | painted soldier shape
+brass church bell on stand | 0.5 | 0.05-0.15 | polished tarnished metal
+hand-drawn shop chalk menu | 0.75 | 0.1-0.3 | black slate with chalk text
+festive red ribbon bow | 0.7 | 0.05-0.15 | satin tied loops
+candle in tin lantern | 0.7 | 0.05-0.15 | flickering light in pierced metal
+heap of festive parcels | 0.55 | 0.1-0.3 | wrapped paper with strings
+hand-painted village sign post | 0.6 | 0.1-0.3 | timber arrow placards
+broom leaning on shop step | 0.55 | 0.05-0.15 | straw-bristled wood handle

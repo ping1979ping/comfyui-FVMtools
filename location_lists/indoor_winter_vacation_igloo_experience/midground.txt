@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+raised snow sleeping platform | 1.0 | 0.4-0.8 | broad packed white shelf
+reindeer pelt covering platform | 0.95 | 0.3-0.7 | thick layered hide
+expedition sleeping bag laid out | 0.95 | 0.3-0.6 | down-puffed wrap
+fur-draped low snow bench | 0.85 | 0.3-0.5 | hide on white seat
+small ice block side table | 0.7 | 0.2-0.4 | frozen cube next to bed
+candle in snow-cut niche | 0.95 | 0.1-0.3 | flickering wick in white pocket
+brass storm lantern hung | 0.85 | 0.1-0.3 | tarnished metal with flame
+sheepskin pad on snow seat | 0.85 | 0.2-0.4 | fluffy white cushion
+woolen tartan blanket bundle | 0.85 | 0.2-0.4 | folded plaid stack
+small fur rug at foot of bed | 0.7 | 0.2-0.4 | hide laid on snow
+hand-carved snow stool | 0.65 | 0.2-0.4 | small white pedestal
+LED ribbon light along base | 0.7 | 0.2-0.4 | warm glowing line

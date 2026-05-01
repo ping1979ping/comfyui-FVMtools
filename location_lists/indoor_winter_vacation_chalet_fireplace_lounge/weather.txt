@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy snowfall outside windows | 1.0 | - | -
+howling alpine blizzard | 0.85 | - | -
+calm cold night outside | 0.9 | - | -
+soft drifting flakes through pane | 0.9 | - | -
+overcast gray daylight | 0.85 | - | -
+clear starry winter night | 0.75 | - | -
+fog pressing against window | 0.65 | - | -
+wind-rattled shutters audible | 0.7 | - | -
+ice crystals on outer pane | 0.85 | - | -
+snow piling on windowsill | 0.85 | - | -

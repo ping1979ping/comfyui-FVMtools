@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+ice shavings curl on surface | 0.9 | 0.05-0.15 | thin white curls
+fresh skate blade tracks | 0.95 | 0.2-0.5 | parallel curved scratches
+abandoned skate guard | 0.7 | 0.05-0.15 | red plastic blade cover
+lost wool mitten on ice edge | 0.65 | 0.05-0.1 | small knitted glove
+puddle at rink boards | 0.65 | 0.05-0.15 | shallow wet patch
+hot cocoa cup on ledge | 0.85 | 0.05-0.15 | paper cup with lid
+crumpled napkin near bench | 0.5 | 0.05-0.1 | small white wad
+fresh slush ridge against boards | 0.75 | 0.1-0.3 | piled scraped ice
+candy cane wrapper | 0.5 | 0.05-0.1 | red-and-white striped paper
+ticket stub on ground | 0.55 | 0.05-0.1 | small printed admission slip
+spectator hand on board railing | 0.6 | 0.05-0.15 | gloved fingers gripping wood

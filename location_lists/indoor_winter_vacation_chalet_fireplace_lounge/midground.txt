@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+oversized leather chesterfield sofa | 1.0 | 0.4-0.8 | tufted cognac leather
+sheepskin draped armchair | 0.9 | 0.3-0.6 | shaggy white fleece
+heavy timber coffee table | 0.85 | 0.3-0.6 | thick slab top
+woven kilim area rug | 0.85 | 0.4-0.8 | red and ochre patterned weave
+log holder beside hearth | 0.8 | 0.2-0.4 | iron cradle stacked timber
+tall iron candelabra stand | 0.7 | 0.2-0.4 | black wrought iron
+plush wool throw blanket pile | 0.85 | 0.2-0.4 | chunky cable-knit
+side table with table lamp | 0.75 | 0.2-0.4 | turned wood and parchment shade
+floor pouf in shearling | 0.7 | 0.2-0.4 | round fluffy ottoman
+bookshelf with leather spines | 0.65 | 0.3-0.6 | aged tooled covers
+oversized iron fire screen | 0.7 | 0.2-0.5 | mesh framed barrier
+woven bear-skin rug on floor | 0.55 | 0.3-0.6 | full-pelt long fur

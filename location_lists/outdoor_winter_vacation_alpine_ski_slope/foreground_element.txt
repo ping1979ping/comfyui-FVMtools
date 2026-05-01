@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+pair of ski poles planted in snow | 0.9 | 0.1-0.3 | aluminum shafts in powder
+parked carving skis on snowbank | 0.85 | 0.1-0.3 | glossy fiberglass topsheet
+snowboard edge stuck upright | 0.75 | 0.1-0.3 | painted deck graphics
+goggles resting on snow | 0.6 | 0.05-0.15 | tinted lens with foam
+helmet on packed mound | 0.55 | 0.05-0.15 | matte-finished hardshell
+fresh boot prints in snow | 0.85 | 0.1-0.3 | crisp deep impressions
+chunk of broken slope ice | 0.5 | 0.05-0.2 | translucent shard cluster
+piste marker pole base | 0.7 | 0.1-0.2 | striped warning band
+small mound of pushed snow | 0.7 | 0.1-0.3 | sculpted soft pile
+ski wax tin lying in snow | 0.4 | 0.05-0.1 | small circular metal can
+edge spray crystals in air | 0.6 | 0.05-0.2 | airborne glittering ice
+discarded chairlift ticket strip | 0.45 | 0.05-0.1 | small printed plastic tag

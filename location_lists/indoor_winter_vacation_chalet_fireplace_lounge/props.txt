@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+iron fireplace bellows | 0.7 | 0.05-0.15 | leather-and-wood pump
+stack of split firewood logs | 0.95 | 0.2-0.5 | rough bark-edged rounds
+wicker basket of pine cones | 0.7 | 0.1-0.3 | woven holding clustered cones
+heavy cast iron fire tongs | 0.8 | 0.05-0.2 | long black forged tool
+brass kettle on hearth | 0.65 | 0.1-0.2 | polished metal vessel
+folded wool blanket stack | 0.85 | 0.1-0.3 | tartan plaid pile
+hand-knit afghan thrown over chair | 0.75 | 0.1-0.3 | chunky multicolor weave
+ceramic tea pot with strainer | 0.6 | 0.05-0.15 | hand-glazed earthen vessel
+small carved wooden bear figure | 0.55 | 0.05-0.1 | rustic whittled keepsake
+deck of cards in case | 0.5 | 0.05-0.1 | small leather sleeve
+chess board mid-game on table | 0.55 | 0.1-0.3 | black-and-white inlaid squares
+woven log carrier sling | 0.6 | 0.1-0.2 | canvas with leather handles

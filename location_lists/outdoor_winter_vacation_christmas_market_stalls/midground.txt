@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+painted timber stall facade | 1.0 | 0.4-0.8 | colorful chalet front
+mulled wine kiosk barrel-front | 0.95 | 0.3-0.6 | rounded painted wood
+sausage grill stall with smoke | 0.9 | 0.3-0.6 | iron grate with rising vapor
+gingerbread display vitrine | 0.85 | 0.2-0.5 | glass case of decorated cookies
+roasted chestnut cart | 0.85 | 0.2-0.5 | tin barrel on wheels
+ornament-stacked craft stall | 0.85 | 0.3-0.6 | shelved glittering trinkets
+candle-vendor stall counter | 0.8 | 0.2-0.5 | rows of pillar wax forms
+nutcracker carving stall | 0.7 | 0.2-0.5 | display of carved soldiers
+hot crepe pan stall | 0.7 | 0.2-0.5 | round griddle with cook
+wreath weaving display | 0.7 | 0.2-0.5 | hanging pine circles
+toy stall with wooden trains | 0.6 | 0.2-0.5 | shelved painted toys
+woolen hat and scarf stall | 0.7 | 0.2-0.5 | colorful knit display

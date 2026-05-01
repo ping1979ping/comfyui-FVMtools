@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+deep wingback armchair | 1.0 | 0.4-0.7 | high-backed velvet upholstered
+small fireplace with iron grate | 0.95 | 0.3-0.6 | brick hearth with flames
+heavy footstool ottoman | 0.85 | 0.2-0.4 | low padded stool
+brass floor lamp arc | 0.85 | 0.2-0.4 | curved polished metal
+small side table with stack | 0.95 | 0.2-0.4 | round timber surface
+woolen throw draped over chair | 0.9 | 0.2-0.4 | tartan plaid swag
+oriental patterned rug underfoot | 0.85 | 0.4-0.8 | rich red and gold weave
+bookcart of recent reads | 0.7 | 0.2-0.4 | small wheeled timber stand
+inset window seat with cushion | 0.7 | 0.3-0.5 | recessed alcove with pad
+brass log bin beside hearth | 0.75 | 0.2-0.4 | hammered metal cylinder
+small writing desk in corner | 0.55 | 0.3-0.5 | dark timber tabletop
+hourglass on mantel | 0.6 | 0.05-0.15 | sand timer in wood frame

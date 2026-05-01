@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy snowfall outside | 1.0 | - | -
+calm cold night beyond | 0.95 | - | -
+fogged window from heat | 0.95 | - | -
+condensation streaking glass | 0.85 | - | -
+overcast gray daylight | 0.85 | - | -
+arctic blizzard outside | 0.7 | - | -
+clear starry winter sky beyond | 0.7 | - | -
+frost forming on outer pane | 0.85 | - | -
+steamy interior contrast | 0.95 | - | -
+occasional draft from doorway | 0.7 | - | -

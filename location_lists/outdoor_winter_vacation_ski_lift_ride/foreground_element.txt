@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+ski tips dangling below seat | 0.95 | 0.1-0.3 | curved fiberglass noses
+gloved hand on safety bar | 0.95 | 0.05-0.15 | padded fingers gripping metal
+goggles on helmet peak | 0.95 | 0.05-0.15 | mirrored lens with strap
+rime frost on bar surface | 0.85 | 0.05-0.15 | crystalline white coating
+ski pole strap closeup | 0.85 | 0.05-0.1 | nylon loop with grip
+helmet strap buckle | 0.75 | 0.05-0.1 | small clip closure
+breath cloud visible | 0.85 | 0.05-0.2 | white exhale plume
+small icicle on hanger | 0.65 | 0.05-0.1 | tapered frost spike
+fluttering jacket cuff | 0.7 | 0.05-0.15 | wind-blown fabric edge
+snowboard nose visible | 0.7 | 0.05-0.15 | curved deck tip
+neck-warmer pulled up | 0.7 | 0.05-0.15 | knit fabric circle
+ski boot toe in binding | 0.85 | 0.1-0.3 | hard plastic shell

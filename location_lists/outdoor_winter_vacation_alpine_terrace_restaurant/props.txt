@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ski helmet on table edge | 0.85 | 0.05-0.15 | matte hardshell shape
+goggles strap on chair | 0.85 | 0.05-0.15 | mirrored lens with band
+folded ski gloves | 0.85 | 0.05-0.15 | padded paired wrist guards
+woolen scarf draped on chair | 0.85 | 0.1-0.3 | plaid knitted strip
+tall pilsner glass | 0.85 | 0.05-0.15 | tapered clear vessel
+small glass of liqueur | 0.7 | 0.05-0.1 | tiny stemmed pour
+metal water carafe | 0.65 | 0.05-0.15 | brushed steel pitcher
+basket of bread rolls | 0.85 | 0.1-0.2 | wicker holding crusty bread
+cheese platter with knife | 0.7 | 0.1-0.3 | wooden board with wedges
+shot tray of jagermeister | 0.6 | 0.05-0.15 | small dark glass row
+cowbell bell decoration | 0.65 | 0.05-0.15 | brass tarnished hanging bell
+ski tip showing above rack | 0.85 | 0.1-0.3 | curved fiberglass nose

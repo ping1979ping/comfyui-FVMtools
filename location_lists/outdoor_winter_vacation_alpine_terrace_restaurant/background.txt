@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+panoramic alpine summit panorama | 1.0 | 0.5-1.0 | jagged white peak skyline
+distant glacier valley below | 0.85 | 0.4-0.8 | layered ice mass receding
+snow-bowl slopes descending | 0.85 | 0.4-0.8 | wide white open inclines
+cluster of lift towers across valley | 0.7 | 0.3-0.6 | distant steel tower line
+blue sky cloud-streaked above peaks | 0.85 | 0.4-0.8 | deep azure with cirrus wisps
+distant ski lodge facade | 0.7 | 0.3-0.6 | timber building seen across slope
+chairlift line passing terrace | 0.7 | 0.3-0.6 | cable curve overhead
+rocky cliff band | 0.7 | 0.3-0.6 | grey weathered stone face
+distant powder bowl | 0.65 | 0.3-0.6 | sweeping untouched expanse
+cornice line above | 0.6 | 0.3-0.6 | wind-sculpted overhanging snow
+distant ridge crest | 0.7 | 0.3-0.6 | jagged white skyline
+sun-flooded slope below | 0.85 | 0.4-0.8 | bright white open run

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+pressed tin ceiling tile | 1.0 | 0.3-0.7 | embossed metallic squares
+ornate wood window mullion | 0.95 | 0.2-0.5 | divided pane frame
+herringbone parquet flooring | 0.85 | 0.4-0.8 | dark interlocking timber
+brass kickplate at door | 0.7 | 0.05-0.2 | polished metal strip
+crown molding along ceiling | 0.85 | 0.2-0.5 | curved decorative trim
+beaded wainscot panel detail | 0.75 | 0.3-0.6 | half-height linear groove
+counter with brass foot rail | 0.75 | 0.2-0.4 | polished horizontal pipe
+arched doorway opening | 0.65 | 0.2-0.4 | curved interior portal
+small tile mosaic floor inlay | 0.6 | 0.2-0.4 | patterned ceramic detail
+ornate cast iron radiator | 0.7 | 0.1-0.3 | painted finned column

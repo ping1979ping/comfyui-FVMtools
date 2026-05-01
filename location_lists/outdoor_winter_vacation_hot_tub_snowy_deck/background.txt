@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+snow-laden conifer forest backdrop | 1.0 | 0.6-1.0 | heavy white-frosted dark green
+distant alpine peak skyline | 0.85 | 0.4-0.8 | jagged white-capped crests
+chalet wall behind deck | 0.9 | 0.4-0.8 | stained timber facade
+deep snowdrift slope behind | 0.85 | 0.4-0.8 | sweeping white bank
+clear starry mountain sky | 0.7 | 0.4-0.8 | dark with pinpoint lights
+distant illuminated village glow | 0.6 | 0.3-0.6 | warm distant cluster
+curtain of falling fresh snow | 0.7 | 0.4-0.8 | dense flake screen
+icicle-fringed roof eaves above | 0.85 | 0.3-0.6 | pendant frost spike row
+fence line buried in snow | 0.65 | 0.3-0.6 | white-capped wooden barrier
+winter-bare aspen grove | 0.7 | 0.4-0.8 | white-trunked vertical cluster
+heavy snowfall on backdrop | 0.85 | 0.4-0.8 | drifting flake atmosphere
+distant ridgeline at sunset | 0.65 | 0.3-0.6 | golden-tinged dark silhouette

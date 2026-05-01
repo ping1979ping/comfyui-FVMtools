@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed timber ceiling beam | 1.0 | 0.3-0.7 | dark hewn structural log
+massive stone hearth opening | 0.95 | 0.3-0.6 | rough mortared archway
+heavy iron door hinges visible | 0.8 | 0.1-0.3 | hand-forged black strap
+carved timber mantel slab | 0.9 | 0.2-0.5 | thick rough-edged shelf
+deep alcove window seat | 0.7 | 0.3-0.6 | recessed cushioned bench
+herringbone parquet flooring | 0.7 | 0.4-0.8 | dark interlocking timber
+log post structural column | 0.75 | 0.2-0.5 | round peeled timber
+arched stone doorway opening | 0.6 | 0.2-0.5 | rough fitted lintel
+wrought iron chandelier hanging | 0.8 | 0.2-0.5 | black antler-style frame
+stone tile hearth pad | 0.85 | 0.2-0.5 | flagstone slab in front of fire

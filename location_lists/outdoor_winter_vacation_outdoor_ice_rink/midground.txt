@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+freshly resurfaced ice surface | 1.0 | 0.5-0.9 | smooth gleaming wet sheen
+low wooden rink boards perimeter | 0.95 | 0.3-0.6 | painted timber barrier
+arena entrance gate timber | 0.85 | 0.2-0.4 | hinged plank doorway
+zamboni resurfacer parked at edge | 0.55 | 0.2-0.5 | red box-shaped machine
+warming hut next to rink | 0.85 | 0.3-0.6 | small timber service building
+skate rental window with counter | 0.75 | 0.2-0.4 | open service hatch
+bench-lined boot-up area | 0.85 | 0.3-0.6 | row of timber seating
+festive arch over entry | 0.75 | 0.2-0.5 | greenery and ribbon span
+tall pole-mounted floodlight | 0.85 | 0.2-0.4 | stadium lamp on mast
+festive food cart at perimeter | 0.65 | 0.2-0.4 | painted wooden wagon
+banner billboard above rink | 0.6 | 0.2-0.4 | printed vinyl sign
+hot cocoa stand kiosk | 0.7 | 0.2-0.4 | small painted hut with counter

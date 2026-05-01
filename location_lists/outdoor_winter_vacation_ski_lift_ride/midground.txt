@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+quad chairlift seat with bar | 1.0 | 0.4-0.7 | padded bench with crossbar
+bubble enclosure overhead | 0.7 | 0.3-0.6 | tinted plexiglass dome
+chairlift cable line | 0.95 | 0.3-0.6 | thin curving steel
+suspension hanger yoke | 0.95 | 0.2-0.5 | thick metal pivot arm
+adjacent chair coming up | 0.85 | 0.2-0.5 | another seat on opposite line
+steel chairlift tower passing | 0.95 | 0.3-0.6 | painted galvanized lattice
+heat seat warming pad | 0.7 | 0.2-0.4 | padded bench surface
+piste markers visible below | 0.7 | 0.2-0.5 | bright fiberglass shafts
+groomed slope tracks below | 0.95 | 0.3-0.7 | corduroy combed snow
+gondola cabin on parallel line | 0.55 | 0.2-0.5 | enclosed glass bubble
+foot rest bar | 0.85 | 0.1-0.3 | metal underseat support
+weathercheck bauble dangling | 0.55 | 0.05-0.15 | small ribbon trinket

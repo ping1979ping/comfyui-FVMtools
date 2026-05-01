@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+magical blue twilight | 1.0 | - | -
+warm-lit late evening | 1.0 | - | -
+deep starlit night | 0.95 | - | -
+late afternoon golden hour | 0.85 | - | -
+midnight under stars | 0.85 | - | -
+predawn quiet hour | 0.7 | - | -
+lantern-lit dinner hour | 0.85 | - | -
+overcast snowy day | 0.7 | - | -
+post-dinner soak hour | 0.9 | - | -
+pre-bedtime relaxation | 0.85 | - | -

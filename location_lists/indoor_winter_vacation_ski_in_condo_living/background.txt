@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+floor-to-ceiling slope-view glazing | 1.0 | 0.5-0.9 | wide clear panel onto piste
+modern timber slat accent wall | 0.95 | 0.5-0.9 | linear vertical board pattern
+matte charcoal-painted wall | 0.85 | 0.6-1.0 | flat dark moody surface
+exposed concrete column wall | 0.7 | 0.4-0.8 | smooth grey raw finish
+warm white stone fireplace surround | 0.85 | 0.5-0.9 | sleek pale slab
+double-height vaulted ceiling | 0.85 | 0.5-0.9 | sloped timber-clad above
+mirrored side wall reflecting room | 0.7 | 0.4-0.8 | smoked glass plane
+chevron timber feature wall | 0.7 | 0.5-0.9 | herringbone plank pattern
+oversized ski lifestyle photo print | 0.65 | 0.3-0.6 | large framed mountain image
+hidden door panel flush wall | 0.6 | 0.3-0.6 | matte uninterrupted plane
+backdrop of alpine slope view through window | 0.85 | 0.5-0.9 | white piste seen through glass
+brushed steel feature panel | 0.55 | 0.4-0.7 | warm metallic flat surface

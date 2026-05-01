@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy snowfall against glazing | 1.0 | - | -
+clear cold blue sky beyond | 0.85 | - | -
+calm windless cold | 0.85 | - | -
+gentle drifting flakes outside | 0.9 | - | -
+overcast pewter daylight | 0.85 | - | -
+howling blizzard outside | 0.7 | - | -
+condensation on outer glass | 0.7 | - | -
+soft fog pressing against pane | 0.65 | - | -
+ice crystals on outer glazing | 0.85 | - | -
+snow piling on outer ledge | 0.85 | - | -

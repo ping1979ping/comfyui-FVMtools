@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+light powdery snowfall | 1.0 | - | -
+clear cold sunny sky | 0.95 | - | -
+overcast grey ceiling | 0.85 | - | -
+gentle drifting flakes | 0.9 | - | -
+biting cold wind | 0.7 | - | -
+calm windless cold | 0.85 | - | -
+heavy fat-flake snow | 0.7 | - | -
+brief sun break clouds | 0.7 | - | -
+ice crystal glitter in air | 0.7 | - | -
+snow squall passing through | 0.7 | - | -

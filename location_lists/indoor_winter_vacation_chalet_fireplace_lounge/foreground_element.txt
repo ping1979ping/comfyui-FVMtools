@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+steaming mug of cocoa on table | 0.9 | 0.05-0.15 | ceramic with marshmallow froth
+open hardcover novel face down | 0.8 | 0.05-0.15 | cracked spine paper pages
+tossed wool blanket corner | 0.85 | 0.1-0.3 | rumpled chunky knit
+log poker iron leaning | 0.7 | 0.05-0.2 | long forged black rod
+half-empty mulled wine glass | 0.7 | 0.05-0.15 | ruby liquid clear stem
+wood matchbox on table edge | 0.65 | 0.05-0.1 | small printed cardboard
+fluffy slipper kicked off | 0.6 | 0.05-0.15 | shearling lined leather
+embers glowing in iron grate | 0.85 | 0.1-0.3 | bright orange coal mass
+playing cards fanned on table | 0.55 | 0.05-0.15 | scattered patterned backs
+crystal whiskey tumbler | 0.6 | 0.05-0.1 | cut-glass amber pour
+small bowl of pine nuts | 0.5 | 0.05-0.1 | rustic ceramic with seeds
+folded reading glasses on book | 0.5 | 0.05-0.1 | thin tortoiseshell frames

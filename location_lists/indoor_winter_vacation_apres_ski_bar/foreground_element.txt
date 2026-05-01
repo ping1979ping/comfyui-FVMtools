@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+beer stein with foaming head | 0.95 | 0.05-0.15 | heavy glass mug full
+mulled wine in clear cup | 0.9 | 0.05-0.15 | spiced dark liquid
+shot glass with schnapps | 0.85 | 0.05-0.1 | small clear with amber
+half-eaten pretzel on board | 0.7 | 0.05-0.15 | salted twisted bread
+coaster with bar logo | 0.85 | 0.05-0.1 | round printed pulpboard
+bottle opener on counter | 0.65 | 0.05-0.1 | metal lever shape
+peanuts spilling from bowl | 0.55 | 0.05-0.1 | scattered roasted shells
+edge of leather bar stool | 0.85 | 0.1-0.3 | tufted seat curve
+melted candle stub in holder | 0.65 | 0.05-0.1 | drippy wax remnant
+forgotten lift pass on counter | 0.6 | 0.05-0.1 | printed plastic card
+fresh lime wedge on rim | 0.55 | 0.05-0.1 | bright green slice
+crumpled paper napkin | 0.55 | 0.05-0.1 | soft tossed white square

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+heavy timber decking plank joint | 1.0 | 0.3-0.7 | parallel weathered boards
+carved chalet eave bracket | 0.85 | 0.2-0.5 | scrolled timber detail
+wrought iron deck railing | 0.85 | 0.2-0.4 | dark scrolled balustrade
+shingled overhang roof edge | 0.85 | 0.2-0.5 | overlapping snow-laden tiles
+stone-faced terrace wall | 0.8 | 0.2-0.5 | rough mortared backdrop
+log post structural column | 0.7 | 0.2-0.4 | round peeled timber
+hewn timber beam bracket | 0.75 | 0.2-0.4 | corbelled support detail
+heavy bench leg detail | 0.85 | 0.1-0.3 | turned timber support
+arched chalet doorway | 0.65 | 0.2-0.4 | rounded timber portal
+plank stair tread edge | 0.7 | 0.2-0.4 | rounded board step

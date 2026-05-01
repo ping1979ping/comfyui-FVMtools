@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+stone-and-timber alpine hut | 1.0 | 0.4-0.8 | rough masonry with timber roof
+plank-built hut entry porch | 0.95 | 0.3-0.6 | snow-laden timber overhang
+stacked firewood bin against wall | 0.95 | 0.2-0.4 | covered split log pile
+weathered timber hut bench | 0.85 | 0.2-0.5 | snow-dusted slat seat
+metal stovepipe steaming from roof | 0.95 | 0.2-0.4 | dark stack with rising vapor
+hand-painted hut placard sign | 0.85 | 0.1-0.3 | timber name board
+ski rack against hut wall | 0.85 | 0.3-0.6 | timber slot frame
+bootbrush mat at door | 0.85 | 0.05-0.15 | bristled walking pad
+oil lantern hung on porch beam | 0.85 | 0.1-0.3 | tarnished metal lamp
+small map kiosk on post | 0.7 | 0.2-0.4 | wooden weatherproof display
+shoveled snow bank around hut | 0.85 | 0.3-0.6 | mounded white drift wall
+firepit ring nearby | 0.55 | 0.2-0.4 | iron bowl with embers

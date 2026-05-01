@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+steaming mug of mulled wine | 0.95 | 0.05-0.15 | ceramic with rising vapor
+paper cone of roasted chestnuts | 0.85 | 0.05-0.15 | twisted paper holding shells
+sausage on paper plate | 0.85 | 0.05-0.15 | grilled link with mustard
+gingerbread heart on string | 0.85 | 0.05-0.15 | iced decorated cookie
+sugar dust on stall counter | 0.7 | 0.05-0.15 | sprinkled white powder
+folded printed market map | 0.55 | 0.05-0.1 | small paper guide
+hot waffle on napkin | 0.7 | 0.05-0.15 | golden gridded pastry
+discarded paper cup | 0.6 | 0.05-0.1 | dented printed vessel
+candle stub on counter | 0.65 | 0.05-0.1 | melted wax remnant
+sprinkle of pine needles | 0.6 | 0.05-0.1 | scattered green tips
+small star ornament dangling | 0.7 | 0.05-0.15 | glittering pointed shape
+cookie crumbs on tray | 0.55 | 0.05-0.1 | scattered brown bits

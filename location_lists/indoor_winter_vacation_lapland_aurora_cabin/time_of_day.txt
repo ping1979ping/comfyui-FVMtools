@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+deep aurora-lit night | 1.0 | - | -
+late evening firelight glow | 0.95 | - | -
+polar afternoon dusk | 0.9 | - | -
+midnight stargazing hour | 0.95 | - | -
+twilight blue hour | 0.85 | - | -
+arctic late dawn | 0.7 | - | -
+hushed predawn | 0.7 | - | -
+candlelit early evening | 0.85 | - | -
+evening tea hour | 0.85 | - | -
+silent late hour | 0.85 | - | -

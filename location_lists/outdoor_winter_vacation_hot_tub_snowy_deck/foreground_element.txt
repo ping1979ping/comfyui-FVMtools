@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dense steam rolling off hot tub | 1.0 | 0.2-0.5 | thick warm vapor cloud
+champagne flute on tub edge | 0.85 | 0.05-0.15 | tall stem with bubbles
+folded towel on tub rim | 0.95 | 0.1-0.3 | rolled cotton bundle
+fresh flakes settling on water | 0.85 | 0.1-0.3 | scattered melting white specks
+snow shovel leaning on rail | 0.65 | 0.1-0.3 | aluminum scoop on post
+lit candle in storm jar | 0.75 | 0.05-0.15 | glass with dancing flame
+fluffy bathrobe draped on rail | 0.8 | 0.1-0.3 | thick terry cloth piece
+boot prints in deck snow | 0.85 | 0.1-0.3 | clear deep impressions
+ice cube floating on tub | 0.55 | 0.05-0.1 | clear small block
+slippers paired on plank | 0.7 | 0.05-0.15 | shearling foot pair
+small bowl of orange peel | 0.5 | 0.05-0.1 | citrus rind in dish
+melted patch on snow | 0.7 | 0.1-0.3 | wet darker spot in white

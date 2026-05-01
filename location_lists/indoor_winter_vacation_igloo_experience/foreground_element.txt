@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+frosty exhale visible in air | 0.95 | 0.05-0.2 | white breath plume
+flickering candle flame | 0.95 | 0.05-0.15 | warm glowing wick
+fur cuff on parka sleeve | 0.85 | 0.05-0.15 | thick fluffy ruff trim
+tossed fur throw edge | 0.85 | 0.1-0.3 | rumpled hide curve
+warm cup of berry tea | 0.85 | 0.05-0.15 | dark liquid in metal cup
+glass bottle of glogg | 0.7 | 0.05-0.15 | dark liquid in clear vessel
+woolen mitten on shelf | 0.85 | 0.05-0.15 | knitted paired glove
+boot prints in inner snow | 0.7 | 0.1-0.3 | shallow tracks in compacted white
+felt hat on bench | 0.65 | 0.05-0.15 | small wool cap
+hand-warmer pouch glowing | 0.55 | 0.05-0.1 | small heated cloth packet
+small piece of compacted snow chunk | 0.6 | 0.05-0.1 | broken white block fragment
+folded scarf on bag | 0.65 | 0.05-0.15 | knitted strip on pack

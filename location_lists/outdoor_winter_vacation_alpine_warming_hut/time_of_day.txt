@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late afternoon golden glow | 1.0 | - | -
+warm-lit early evening | 0.95 | - | -
+midday sun-flooded | 0.95 | - | -
+sunset alpenglow on peaks | 0.9 | - | -
+crisp morning arrival | 0.85 | - | -
+twilight blue hour | 0.85 | - | -
+midnight under stars | 0.6 | - | -
+overcast flat-light midday | 0.85 | - | -
+midmorning rest stop | 0.85 | - | -
+pre-descent late hour | 0.85 | - | -

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy snow against windows | 1.0 | - | -
+blizzard battering panes | 0.8 | - | -
+icy gust through entry door | 0.85 | - | -
+calm cold night beyond | 0.9 | - | -
+fogged windows from heat | 0.95 | - | -
+condensation streaking glass | 0.85 | - | -
+clear starry cold night | 0.7 | - | -
+wind howling outside | 0.75 | - | -
+snow piled on outer sill | 0.85 | - | -
+occasional icy gust as door swings | 0.8 | - | -

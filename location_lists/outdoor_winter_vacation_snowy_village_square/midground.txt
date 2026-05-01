@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+decorated village christmas tree | 1.0 | 0.3-0.6 | tall conifer with warm lights
+wrought iron lamp post | 0.9 | 0.2-0.4 | curved black with frosted globe
+wooden bench dusted with snow | 0.85 | 0.2-0.4 | weathered slats with white cap
+horse-drawn sleigh waiting | 0.65 | 0.3-0.6 | red-painted carriage with bells
+snow-covered fountain basin | 0.75 | 0.2-0.5 | rounded stone bowl
+festive evergreen garland strung | 0.85 | 0.3-0.6 | swag of pine and ribbon
+pile of cleared snow at curb | 0.85 | 0.2-0.5 | mounded white drift
+small ice rink in plaza | 0.55 | 0.3-0.6 | smooth oval frozen surface
+mulled wine kiosk wagon | 0.7 | 0.2-0.5 | painted barrel-front cart
+shop sandwich board on snow | 0.7 | 0.1-0.3 | a-frame chalkboard
+village well covered in snow | 0.5 | 0.2-0.4 | stone ring with capped roof
+parked vintage bicycle leaning | 0.55 | 0.1-0.3 | snow-flecked steel frame

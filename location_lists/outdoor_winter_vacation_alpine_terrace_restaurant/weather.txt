@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bluebird alpine sky | 1.0 | - | -
+gentle snowfall drifting | 0.85 | - | -
+crisp cold sun glare | 0.95 | - | -
+high cirrus thin clouds | 0.7 | - | -
+breezy alpine gusts | 0.75 | - | -
+soft midday haze | 0.7 | - | -
+overcast flat light | 0.7 | - | -
+biting cold dry air | 0.7 | - | -
+warm sun-warmed stillness | 0.85 | - | -
+snow squall briefly heavy | 0.7 | - | -

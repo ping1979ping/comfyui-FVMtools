@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bluebird midmorning ride | 1.0 | - | -
+late afternoon last lift | 0.95 | - | -
+sunset golden hour ride | 0.9 | - | -
+crisp first lift dawn | 0.85 | - | -
+overcast flat midday | 0.85 | - | -
+hazy noon glare | 0.75 | - | -
+twilight final descent | 0.7 | - | -
+post-lunch midafternoon | 0.85 | - | -
+midmorning fresh ascent | 0.95 | - | -
+pre-lunch ride | 0.85 | - | -

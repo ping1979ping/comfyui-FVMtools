@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+abandoned plastic sled | 0.95 | 0.1-0.3 | bright disc shape on snow
+fresh sled track curving | 0.95 | 0.2-0.5 | parallel grooves in white
+small mound of brushed snow | 0.85 | 0.1-0.3 | rough white pile
+discarded woolen mitten | 0.7 | 0.05-0.15 | small knitted glove
+broken sled rope handle | 0.55 | 0.05-0.1 | frayed cord remnant
+boot prints in deep snow | 0.95 | 0.1-0.3 | clear deep impressions
+half-finished snowman cluster | 0.65 | 0.1-0.3 | rounded white stack
+hot cocoa cup tipped on snow | 0.6 | 0.05-0.1 | brown-stained paper rim
+candy wrapper on snow | 0.55 | 0.05-0.1 | bright crinkled foil
+small snowball shaped | 0.7 | 0.05-0.1 | round packed ice ball
+crumpled flier on ground | 0.5 | 0.05-0.1 | wet folded paper
+fresh snow spray frozen | 0.7 | 0.05-0.2 | suspended airborne crystals

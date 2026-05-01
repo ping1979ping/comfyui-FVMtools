@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+cozy late evening | 1.0 | - | -
+deep night by firelight | 0.95 | - | -
+quiet afternoon snowy gloom | 0.9 | - | -
+early morning hearth glow | 0.85 | - | -
+twilight after sunset | 0.85 | - | -
+midnight reading hour | 0.7 | - | -
+hushed midmorning | 0.7 | - | -
+candlelit dinner hour | 0.65 | - | -
+post-dinner late hour | 0.85 | - | -
+pre-lunch lull | 0.65 | - | -

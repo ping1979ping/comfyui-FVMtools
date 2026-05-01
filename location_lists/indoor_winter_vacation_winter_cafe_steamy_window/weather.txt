@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy snowfall against windows | 1.0 | - | -
+condensation streaking glass | 1.0 | - | -
+fogged window panes from heat | 1.0 | - | -
+overcast pewter outside | 0.85 | - | -
+gentle drifting flakes outside | 0.95 | - | -
+biting wind beyond door | 0.75 | - | -
+calm cold beyond glass | 0.85 | - | -
+icy gust on door open | 0.7 | - | -
+ice crystals on outer pane | 0.85 | - | -
+snow piling on outer sill | 0.85 | - | -

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+little ceramic creamer pitcher | 0.85 | 0.05-0.1 | small white spouted vessel
+sugar bowl with tongs | 0.85 | 0.05-0.1 | white dish with cubes
+glass jar of cinnamon sticks | 0.7 | 0.05-0.1 | brown bark cylinders
+small glass bud vase | 0.7 | 0.05-0.1 | single bloom in clear vessel
+worn leather menu folder | 0.7 | 0.05-0.15 | softened cover with pages
+folded silver cutlery in napkin | 0.85 | 0.05-0.15 | wrapped tableware bundle
+brass bell on counter | 0.6 | 0.05-0.1 | small ringing dome
+glass jar of biscuits | 0.7 | 0.05-0.15 | clear vessel of cookies
+chalk pot with stubs | 0.6 | 0.05-0.1 | small dish of writing chalk
+folded woolen plaid throw | 0.7 | 0.1-0.3 | tartan over banquette
+deck of postcards on stand | 0.55 | 0.05-0.1 | rack of printed cards
+copper sugar pourer | 0.55 | 0.05-0.1 | warm metal spout

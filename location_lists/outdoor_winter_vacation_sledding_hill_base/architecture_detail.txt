@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted run-out warning placard | 1.0 | 0.2-0.4 | metal sign on post
+weathered hay bale binding twine | 0.85 | 0.2-0.5 | rough golden strap loop
+snow fence wooden slat | 0.85 | 0.3-0.6 | vertical lath barrier
+warming hut shingled eave | 0.7 | 0.2-0.4 | snow-laden timber lip
+rough timber bench leg | 0.85 | 0.1-0.3 | turned timber support
+rope barrier post anchor | 0.7 | 0.1-0.3 | bolted iron foot
+weathered hill marker sign | 0.65 | 0.1-0.3 | painted plywood placard
+metal trash bin lid | 0.65 | 0.05-0.15 | round dark cap
+sled rack timber slot | 0.65 | 0.2-0.4 | rough timber holder
+weathered nail head in plank | 0.6 | 0.05-0.1 | rusted metal dot

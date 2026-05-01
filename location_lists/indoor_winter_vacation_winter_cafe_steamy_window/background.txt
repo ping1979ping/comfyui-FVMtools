@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+steamed-up cafe window pane | 1.0 | 0.5-1.0 | foggy translucent glass
+chalk-painted menu board wall | 0.95 | 0.4-0.8 | dark slate with handwritten text
+exposed warm brick interior wall | 0.9 | 0.5-0.9 | aged textured masonry
+shelved coffee bean jar wall | 0.85 | 0.4-0.8 | rows of glass canisters
+warm cream painted plaster wall | 0.85 | 0.6-1.0 | smooth pale finish
+gallery of framed prints | 0.7 | 0.3-0.6 | clustered art on wall
+moss-green tiled wainscot | 0.65 | 0.4-0.8 | glossy small ceramic squares
+copper-clad backbar wall | 0.6 | 0.4-0.7 | hammered warm metal
+shelved book wall corner | 0.65 | 0.3-0.6 | leather-bound spine cluster
+window with hand-drawn snowflake | 0.85 | 0.3-0.6 | finger-traced clear pattern in fog
+warm pendant-lit ceiling | 0.85 | 0.3-0.6 | hanging globe lamps overhead
+soft brass railing strip wall | 0.55 | 0.2-0.5 | thin polished line

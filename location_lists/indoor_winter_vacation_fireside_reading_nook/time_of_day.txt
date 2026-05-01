@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+quiet late evening | 1.0 | - | -
+deep night by firelight | 0.95 | - | -
+overcast snowy afternoon | 0.95 | - | -
+midnight reading hour | 0.9 | - | -
+twilight blue hour | 0.85 | - | -
+hushed predawn | 0.75 | - | -
+midmorning soft light | 0.85 | - | -
+candlelit hour | 0.85 | - | -
+post-dinner reading hour | 0.95 | - | -
+sunday afternoon hush | 0.85 | - | -

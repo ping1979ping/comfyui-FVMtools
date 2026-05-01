@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+gentle drifting snowfall | 1.0 | - | -
+heavy fat-flake snow | 0.85 | - | -
+clear cold starlit air | 0.95 | - | -
+calm windless cold | 0.95 | - | -
+biting alpine breeze | 0.7 | - | -
+overcast pewter sky | 0.7 | - | -
+fresh blizzard outside ring | 0.65 | - | -
+crisp dry subzero air | 0.85 | - | -
+snow piling on deck rails | 0.85 | - | -
+occasional gust scattering flakes | 0.7 | - | -

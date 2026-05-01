@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+deeply subzero still air | 1.0 | - | -
+frost forming on surfaces | 0.95 | - | -
+arctic chill seeping in | 0.95 | - | -
+breath visible as fog | 1.0 | - | -
+faint draft from corridor | 0.7 | - | -
+silent windless cold | 0.95 | - | -
+distant blizzard muffled | 0.65 | - | -
+crystalline air sharpness | 0.85 | - | -
+ambient cold radiance | 0.95 | - | -
+cathedral-like hush | 0.85 | - | -

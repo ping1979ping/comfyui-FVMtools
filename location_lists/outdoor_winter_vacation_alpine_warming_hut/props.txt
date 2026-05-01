@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+split firewood neat bundle | 0.95 | 0.1-0.3 | tied roughened logs
+metal soup pot on outdoor stove | 0.7 | 0.1-0.2 | dark dented vessel
+tin mug rack with cups | 0.75 | 0.1-0.3 | hung metal hooks
+ice axe leaning by door | 0.7 | 0.1-0.3 | metal-headed tool
+coil of climbing rope | 0.55 | 0.1-0.3 | bundled colored cord
+wool socks drying on rail | 0.65 | 0.05-0.15 | thick paired knit
+thermos flask on bench | 0.85 | 0.05-0.15 | metal vacuum cylinder
+hand-knit balaclava on hook | 0.7 | 0.05-0.15 | woolen face mask
+woolen mittens paired | 0.85 | 0.05-0.15 | knitted hide pair
+folded route topo map | 0.7 | 0.05-0.15 | printed waterproof sheet
+weathered hiking pole pair | 0.7 | 0.1-0.3 | telescoping aluminum shaft
+hatchet stuck in chopping block | 0.6 | 0.05-0.15 | small axe in timber stump

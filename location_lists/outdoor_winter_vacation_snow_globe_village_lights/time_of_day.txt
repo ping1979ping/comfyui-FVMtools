@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+deep magical blue twilight | 1.0 | - | -
+warm-lit early evening | 1.0 | - | -
+late night quiet hour | 0.85 | - | -
+post-dinner stroll hour | 0.95 | - | -
+sundown over rooftops | 0.85 | - | -
+midnight stillness | 0.8 | - | -
+predawn quiet | 0.7 | - | -
+softly lit dinner hour | 0.85 | - | -
+pre-dinner stroll hour | 0.95 | - | -
+post-mass evening | 0.85 | - | -

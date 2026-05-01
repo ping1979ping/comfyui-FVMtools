@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+reindeer pelt folded at bed foot | 0.95 | 0.1-0.3 | thick layered fur
+ice-carved drinking goblet | 0.85 | 0.05-0.15 | faceted crystal cup
+bottle of vodka chilling on ice | 0.7 | 0.05-0.15 | glass on frozen tray
+fur mittens placed on bed | 0.65 | 0.05-0.15 | fluffy paired hide gloves
+woolen tartan blanket folded | 0.75 | 0.1-0.3 | plaid stacked weave
+small lantern with flickering flame | 0.85 | 0.05-0.15 | tin pierced housing
+brass tea kettle in niche | 0.55 | 0.05-0.15 | polished vessel with spout
+carved bone hairpin set | 0.5 | 0.05-0.1 | smooth ivory-colored picks
+silver hipflask on ice ledge | 0.55 | 0.05-0.1 | engraved metal vessel
+hand-stitched fur slippers | 0.6 | 0.05-0.15 | soft hide pair
+glass bottle of birch water | 0.55 | 0.05-0.1 | pale clear liquid bottle
+woven sami patterned bag | 0.5 | 0.05-0.15 | embroidered hide pouch

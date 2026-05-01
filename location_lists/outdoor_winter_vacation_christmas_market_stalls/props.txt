@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+basket of clementines | 0.85 | 0.05-0.15 | wicker holding orange citrus
+stack of decorated gingerbread | 0.85 | 0.1-0.3 | piped iced layered cookies
+display jar of candied almonds | 0.85 | 0.1-0.2 | glass cylinder of nuts
+strung popcorn garland | 0.6 | 0.1-0.3 | white draped chain
+hand-carved wooden angel | 0.7 | 0.05-0.15 | small painted figure
+rack of beeswax candles | 0.85 | 0.1-0.3 | golden tapered cylinders
+sausage spit on rotisserie | 0.7 | 0.1-0.3 | mounted skewer rod
+tray of sliced spice cake | 0.65 | 0.05-0.15 | dark slab cuts
+ladle in mulled wine pot | 0.85 | 0.05-0.15 | long-handled scoop
+embroidered linen towel | 0.6 | 0.05-0.15 | folded patterned cloth
+glittered glass ornaments box | 0.7 | 0.1-0.2 | divided tray of baubles
+hand-blown glass star | 0.55 | 0.05-0.1 | translucent pointed bauble

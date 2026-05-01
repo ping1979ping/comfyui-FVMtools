@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bluebird alpine sky | 1.0 | - | -
+gentle drifting snowfall | 0.85 | - | -
+biting alpine wind | 0.85 | - | -
+calm windless cold | 0.85 | - | -
+heavy fat-flake snow | 0.7 | - | -
+overcast pewter sky | 0.85 | - | -
+hazy noon glare | 0.7 | - | -
+brief sun break clouds | 0.7 | - | -
+snow squall passing through | 0.7 | - | -
+crystalline cold radiance | 0.85 | - | -

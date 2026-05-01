@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+dovetailed log corner joint | 1.0 | 0.2-0.5 | notched timber overlap
+shingled hut roof edge | 0.95 | 0.2-0.5 | snow-laden wood tile overhang
+stone-mortared lower wall | 0.85 | 0.3-0.7 | rough fieldstone masonry
+porch beam corbel bracket | 0.85 | 0.2-0.4 | scrolled timber detail
+heavy timber door slab | 0.85 | 0.2-0.4 | thick plank construction
+black iron stovepipe joint | 0.85 | 0.1-0.3 | metal seam at exit
+weathered eave with icicles | 0.85 | 0.2-0.4 | hanging frost spike row
+deeply weathered window shutter | 0.7 | 0.1-0.3 | painted slat panel
+hand-forged iron door latch | 0.7 | 0.05-0.15 | dark forged fitting
+chimney stone flashing detail | 0.65 | 0.1-0.3 | mortared masonry edge

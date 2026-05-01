@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+birch leaf vihta switch bundle | 0.95 | 0.1-0.3 | tied leafy whisk
+folded white sauna sheet | 0.95 | 0.1-0.3 | linen cotton square
+woolen felt sauna hat | 0.9 | 0.05-0.15 | pointed cap shape
+wooden water dipper | 0.95 | 0.05-0.15 | shaped scoop with handle
+glass bottle of essential oil | 0.65 | 0.05-0.1 | small dark dropper bottle
+small wooden drinks tray | 0.55 | 0.05-0.15 | shallow timber rectangle
+ceramic mug of birch water | 0.7 | 0.05-0.15 | pale liquid in earthen cup
+clay bowl of sea salt scrub | 0.65 | 0.05-0.15 | rough ceramic with paste
+folded cotton bath towel | 0.85 | 0.1-0.3 | terry cloth stack
+loose sea sponge | 0.55 | 0.05-0.1 | natural beige pore mass
+hairbrush with wooden handle | 0.5 | 0.05-0.1 | turned timber with bristles
+small carved wooden mug | 0.6 | 0.05-0.1 | turned timber cup

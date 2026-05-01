@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+frosty exhale visible in air | 0.95 | 0.05-0.2 | white breath plume
+ice champagne flute on bedside | 0.85 | 0.05-0.15 | sculpted crystal stem
+tossed fur throw edge | 0.85 | 0.1-0.3 | rumpled hide curve
+flickering candle flame closeup | 0.85 | 0.05-0.15 | warm glowing wick tip
+drip of meltwater on surface | 0.5 | 0.05-0.1 | small clear bead
+edge of fur-lined parka draped | 0.7 | 0.1-0.3 | thick collar with ruff
+ice cube on tray closeup | 0.55 | 0.05-0.1 | clear faceted block
+boot prints in dusted floor | 0.65 | 0.1-0.3 | shallow tracks in light snow
+hanging crystal pendant ice tip | 0.6 | 0.05-0.15 | sharp tapered spike
+warm cup of birch tea | 0.6 | 0.05-0.15 | pale liquid in carved holder
+small carved ice trinket | 0.5 | 0.05-0.1 | tiny frozen figurine
+fur cuff on draped sleeve | 0.55 | 0.05-0.15 | dense fluffy trim

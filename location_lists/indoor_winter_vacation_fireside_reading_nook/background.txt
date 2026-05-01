@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+floor-to-ceiling bookshelf wall | 1.0 | 0.6-1.0 | dense rows of leather spines
+warm ochre painted plaster wall | 0.85 | 0.6-1.0 | soft hand-troweled finish
+rough brick chimney breast | 0.85 | 0.5-0.9 | aged warm masonry
+oak panelled library wall | 0.85 | 0.6-1.0 | dark glossy timber
+embroidered wall tapestry | 0.7 | 0.4-0.8 | thick patterned weave
+narrow leaded glass window | 0.7 | 0.3-0.6 | small diamond panes
+deep cream parchment-toned wall | 0.7 | 0.6-1.0 | smooth pale paint
+shelved curiosity wall niche | 0.65 | 0.3-0.6 | small glass-fronted display
+deep burgundy painted accent | 0.55 | 0.4-0.8 | matte rich pigment
+gallery of small framed prints | 0.65 | 0.3-0.6 | clustered art arrangement
+deep indigo paint backdrop | 0.55 | 0.5-0.9 | dark moody saturated tone
+heavy curtain pulled aside | 0.7 | 0.3-0.6 | velvet draped panel

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+cozy late afternoon | 1.0 | - | -
+warm-lit early evening | 0.95 | - | -
+quiet midmorning hour | 0.95 | - | -
+overcast snowy midday | 0.9 | - | -
+twilight blue hour | 0.85 | - | -
+late breakfast hour | 0.85 | - | -
+post-lunch lull | 0.8 | - | -
+sundown closing hour | 0.7 | - | -
+mid-afternoon coffee hour | 0.95 | - | -
+pre-closing hour | 0.75 | - | -

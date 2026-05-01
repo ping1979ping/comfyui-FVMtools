@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+picture-perfect drifting snowfall | 1.0 | - | -
+heavy fat-flake snow | 0.85 | - | -
+crisp clear cold air | 0.9 | - | -
+calm windless cold | 0.95 | - | -
+soft halo glow on lights | 0.95 | - | -
+gentle freezing mist | 0.7 | - | -
+overcast pewter sky | 0.7 | - | -
+glittery ice-crystal air | 0.75 | - | -
+glittery ice-sparkle air | 0.85 | - | -
+soft snow halo on lights | 0.95 | - | -

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+steam billowing from stones | 0.95 | 0.1-0.3 | dense rising white cloud
+ladle pouring water mid-stream | 0.85 | 0.05-0.15 | arcing clear pour
+folded white linen sheet | 0.85 | 0.1-0.3 | crumpled cotton bundle
+beads of sweat on board | 0.65 | 0.05-0.1 | small clear droplets
+birch leaves resting on bench | 0.7 | 0.05-0.15 | green flat-leaved cluster
+wood backrest grip closeup | 0.6 | 0.05-0.15 | smooth shaped timber
+copper bowl of water | 0.65 | 0.05-0.15 | warm metal vessel pour
+honey-colored knot in plank | 0.7 | 0.05-0.1 | dark grain whorl detail
+felt cap on bench | 0.7 | 0.05-0.15 | small pointed wool hat
+sand grains in hourglass | 0.6 | 0.05-0.1 | flowing pale stream
+glistening damp plank surface | 0.85 | 0.1-0.3 | wet sheen on wood
+woolen seat pad on bench | 0.55 | 0.05-0.15 | small folded fleece

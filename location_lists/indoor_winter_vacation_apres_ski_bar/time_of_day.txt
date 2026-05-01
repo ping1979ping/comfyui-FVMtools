@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-slope late afternoon | 1.0 | - | -
+warm-lit early evening | 1.0 | - | -
+peak rowdy night | 0.9 | - | -
+late night last call | 0.8 | - | -
+quiet sunday opening hour | 0.65 | - | -
+mid-evening band hour | 0.85 | - | -
+sundown golden window light | 0.8 | - | -
+small hours after closing | 0.55 | - | -
+post-ski dusk | 0.95 | - | -
+breakfast brunch hour | 0.55 | - | -

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+gentle snowfall drifting | 1.0 | - | -
+heavy fat-flake snow | 0.9 | - | -
+crisp clear cold air | 0.85 | - | -
+overcast pewter sky | 0.85 | - | -
+mild winter mist | 0.7 | - | -
+calm cold stillness | 0.85 | - | -
+biting wind through lanes | 0.7 | - | -
+foggy halo on lights | 0.75 | - | -
+snow piling on stall roofs | 0.9 | - | -
+gusty cold passing through lanes | 0.7 | - | -

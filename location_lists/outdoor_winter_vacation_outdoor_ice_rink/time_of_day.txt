@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+magical blue twilight | 1.0 | - | -
+floodlit early evening | 1.0 | - | -
+late afternoon low light | 0.85 | - | -
+late night skating session | 0.85 | - | -
+overcast saturday midday | 0.85 | - | -
+sunset glow over plaza | 0.8 | - | -
+dawn opening hour | 0.55 | - | -
+crisp midmorning | 0.75 | - | -
+post-skating evening | 0.85 | - | -
+midmorning warm-up hour | 0.75 | - | -

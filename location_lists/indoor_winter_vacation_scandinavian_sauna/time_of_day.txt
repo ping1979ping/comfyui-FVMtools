@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late evening soak hour | 1.0 | - | -
+midnight quiet session | 0.85 | - | -
+early morning warm-up | 0.85 | - | -
+afternoon hush session | 0.8 | - | -
+post-skiing late afternoon | 0.95 | - | -
+twilight relaxation hour | 0.9 | - | -
+predawn stillness | 0.7 | - | -
+candlelit evening | 0.75 | - | -
+early morning warm-up hour | 0.7 | - | -
+pre-dinner relaxation | 0.85 | - | -

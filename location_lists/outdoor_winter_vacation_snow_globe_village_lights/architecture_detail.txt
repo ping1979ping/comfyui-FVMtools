@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+ornate cast iron lamp finial | 1.0 | 0.1-0.3 | scrolled crowned top
+wreath bow ribbon detail | 0.95 | 0.1-0.3 | satin tied loops
+weathered cobblestone seam | 0.95 | 0.3-0.7 | rounded patterned setts
+overhanging snow-laden eave | 0.85 | 0.2-0.4 | thick white-capped fascia
+carved wooden window shutter | 0.85 | 0.2-0.4 | painted slat panel
+festive evergreen swag | 0.95 | 0.2-0.5 | dense pine bough loop
+arched stone doorway frame | 0.75 | 0.2-0.4 | rusticated portal trim
+gilded shop sign bracket | 0.75 | 0.1-0.3 | scrolled iron arm
+clay tile roof edge with snow | 0.85 | 0.2-0.4 | overlapping terracotta with white
+stone bridge balustrade | 0.6 | 0.2-0.4 | carved post-and-rail edge

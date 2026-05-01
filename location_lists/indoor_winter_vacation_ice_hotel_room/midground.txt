@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+ice-block bed platform | 1.0 | 0.4-0.8 | massive solid frozen base
+reindeer pelt covering bed | 0.95 | 0.3-0.7 | thick cream-and-brown fur
+arctic sleeping bag laid out | 0.9 | 0.3-0.6 | down-puffed wrap
+fur-draped ice bench | 0.8 | 0.3-0.5 | hide on frozen seat
+ice nightstand carved block | 0.75 | 0.2-0.4 | small frozen cube
+candle in carved ice holder | 0.85 | 0.1-0.3 | glowing wick in crystal niche
+sheepskin throw on bed corner | 0.75 | 0.2-0.5 | soft fleecy mound
+hanging icicle chandelier | 0.7 | 0.2-0.5 | clustered pendant ice spikes
+ice sculpture centerpiece | 0.7 | 0.2-0.4 | carved frozen figure
+LED color-changing wall niche | 0.65 | 0.2-0.4 | recessed glow chamber
+ice stool beside bed | 0.6 | 0.1-0.3 | small frozen pedestal
+fur-lined ice chair | 0.6 | 0.2-0.4 | hide-draped block seat

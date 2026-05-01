@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm subzero stillness | 1.0 | - | -
+light snowfall drifting | 0.9 | - | -
+crisp clear cold sky | 0.85 | - | -
+overcast grey ceiling | 0.85 | - | -
+bitter dry windless air | 0.85 | - | -
+wisps of ground fog over ice | 0.7 | - | -
+gentle breeze across lake | 0.7 | - | -
+heavy snow burying landscape | 0.6 | - | -
+frosty hoarfrost on planks | 0.85 | - | -
+glittery air with ice crystals | 0.7 | - | -
