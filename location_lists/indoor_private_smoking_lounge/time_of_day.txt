@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+amber sconce lit late evening | 1.0 | - | -
+moody warm midnight | 0.95 | - | -
+firelit dusk warm | 0.9 | - | -
+single brass lamp glow | 0.95 | - | -
+late afternoon dim filtered | 0.75 | - | -
+tobacco hazy evening warm | 0.95 | - | -
+overcast quiet afternoon | 0.7 | - | -
+twilight blue beyond drapes | 0.6 | - | -
+predawn quiet cool dim | 0.45 | - | -
+candlelit late hour | 0.7 | - | -

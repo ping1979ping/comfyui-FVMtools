@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright outside skylight | 0.95 | - | -
+softly overcast outside | 0.85 | - | -
+gentle rain on skylight glass | 0.65 | - | -
+drifting snow seen through skylight | 0.55 | - | -
+sunny crisp day outside | 0.85 | - | -
+foggy soft morning beyond | 0.5 | - | -
+springtime shower outside | 0.55 | - | -
+heavy autumn rain on glass | 0.5 | - | -
+muggy summer haze beyond | 0.4 | - | -
+windy day rattling skylight | 0.45 | - | -

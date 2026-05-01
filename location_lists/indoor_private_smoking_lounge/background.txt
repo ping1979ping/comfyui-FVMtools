@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+tobacco brown leather quilted wall | 1.0 | 0.7-1.0 | softly tufted patinated hide
+chocolate brown suede panel wall | 0.85 | 0.7-1.0 | softly napped warm material
+amber painted plaster wall | 0.85 | 0.7-1.0 | softly washed warm pigment
+deep cognac coloured fabric wall | 0.8 | 0.6-1.0 | softly draped lustrous cloth
+aged copper patina sheet wall | 0.7 | 0.6-1.0 | softly oxidized warm metal
+chestnut wood cigar humidor wall | 0.85 | 0.6-1.0 | richly grained dark hardwood
+bronze metallic foiled wall | 0.6 | 0.6-1.0 | softly burnished warm metallic
+caramel velvet quilted wall panel | 0.7 | 0.6-1.0 | softly piled lustrous fabric
+vintage smoke yellowed wallpaper | 0.65 | 0.6-1.0 | softly aged ornate pattern
+deep rust painted plaster wall | 0.7 | 0.6-1.0 | softly washed earthy pigment
+warm cigar band collage wall | 0.55 | 0.5-0.9 | crisply pasted printed paper
+auburn leather button tufted wall | 0.7 | 0.6-1.0 | richly studded warm hide

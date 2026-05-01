@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+amber lamplit deep evening | 1.0 | - | -
+banker lamp warm reading glow | 0.95 | - | -
+afternoon dim filtered light | 0.85 | - | -
+firelit warm dusk | 0.9 | - | -
+moody late night single lamp | 0.85 | - | -
+overcast quiet midday | 0.7 | - | -
+golden hour through tall window | 0.8 | - | -
+predawn cool dim light | 0.5 | - | -
+twilight blue beyond panes | 0.7 | - | -
+candlelit study late night | 0.7 | - | -

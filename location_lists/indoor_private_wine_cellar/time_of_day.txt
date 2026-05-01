@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+dim cellar amber sconce | 1.0 | - | -
+candlelit warm tasting | 0.95 | - | -
+single pendant lamp glow | 0.95 | - | -
+moody dark afternoon | 0.8 | - | -
+late evening warm dim | 0.85 | - | -
+backlit shelf glow | 0.75 | - | -
+predawn cellar quiet dim | 0.6 | - | -
+midday filtered slit light | 0.55 | - | -
+firelit warm cellar evening | 0.55 | - | -
+soft blue dim morning filtering | 0.5 | - | -

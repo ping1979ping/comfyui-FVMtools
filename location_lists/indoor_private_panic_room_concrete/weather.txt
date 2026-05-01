@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+sealed environment quiet | 1.0 | - | -
+distant muffled noise outside | 0.7 | - | -
+faint vibration from above | 0.6 | - | -
+silent fortified isolation | 0.95 | - | -
+faint air circulation hum | 0.85 | - | -
+distant alarm muffled | 0.55 | - | -
+filtered air dry stable | 0.85 | - | -
+muffled distant thunder | 0.5 | - | -
+distant footsteps muffled | 0.45 | - | -
+totally insulated stillness | 0.85 | - | -

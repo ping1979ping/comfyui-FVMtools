@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+ivory silk bed throw folded | 0.9 | 0.1-0.3 | softly cascading lustrous fabric
+embroidered linen pillow stack | 0.85 | 0.05-0.2 | crisply pressed white cotton
+heavy damask bedspread | 0.85 | 0.2-0.4 | richly woven patterned cloth
+brass table lamp on nightstand | 0.8 | 0.05-0.15 | softly polished antique brass
+porcelain vase with peonies | 0.7 | 0.05-0.15 | smoothly glazed white ceramic
+sterling silver framed photographs | 0.6 | 0.02-0.1 | softly reflective polished metal
+beveled crystal perfume tray | 0.55 | 0.05-0.15 | sharply faceted clear glass
+folded cashmere throw at footboard | 0.7 | 0.05-0.2 | softly piled fine wool
+silver candlestick pair lit | 0.5 | 0.02-0.1 | softly polished tarnished metal
+floral chintz seat cushion | 0.55 | 0.05-0.15 | gently printed cotton cloth

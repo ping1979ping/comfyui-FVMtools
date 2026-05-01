@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+clipboard with checklist | 0.65 | 0.02-0.05 | crisply printed paper sheets
+emergency whistle on lanyard | 0.55 | 0.01-0.02 | softly polished metal
+hard plastic bin with batteries | 0.7 | 0.02-0.08 | smoothly enameled rugged plastic
+folded paper map of building | 0.55 | 0.02-0.05 | softly creased printed paper
+steel toolbox locked | 0.7 | 0.05-0.1 | softly powder coated black metal
+fire extinguisher mounted | 0.85 | 0.02-0.08 | smoothly enameled red metal
+binoculars on small shelf | 0.55 | 0.02-0.05 | softly powder coated black plastic
+satellite phone in cradle | 0.6 | 0.02-0.05 | smoothly enameled rugged plastic
+single ammo box closed | 0.5 | 0.02-0.08 | softly painted military metal
+glow sticks pack opened | 0.55 | 0.01-0.04 | softly translucent flexible plastic
+clock with battery backup | 0.7 | 0.02-0.05 | smoothly enameled minimal face
+electrical breaker panel | 0.65 | 0.05-0.15 | softly painted utility metal box

@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+heavy steel security door | 1.0 | 0.2-0.4 | crisply riveted thick plate
+wall of monitor security screens | 0.95 | 0.25-0.5 | crisply framed glowing displays
+steel cot bunk bed pair | 0.7 | 0.2-0.4 | smoothly powder coated frame
+metal supplies storage cabinet | 0.85 | 0.15-0.3 | crisply painted enameled steel
+small steel desk with phone | 0.85 | 0.15-0.3 | smoothly powder coated workspace
+hardened communication console | 0.85 | 0.15-0.3 | crisply machined matte metal
+emergency air filtration unit | 0.85 | 0.1-0.25 | softly painted utility steel
+wall mounted weapon rack | 0.55 | 0.15-0.3 | crisply welded matte steel
+chemical toilet enclosure | 0.65 | 0.1-0.25 | smoothly painted utility metal
+medical supply cabinet | 0.75 | 0.15-0.3 | smoothly painted white steel

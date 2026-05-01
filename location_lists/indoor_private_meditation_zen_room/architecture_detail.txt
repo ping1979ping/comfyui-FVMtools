@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+dark stained wood floor wide plank | 0.95 | 0.4-0.8 | richly grained warm timber
+exposed dark wood ceiling beams | 0.85 | 0.1-0.3 | softly aged grained timber
+shoji paper sliding doors | 0.95 | 0.2-0.5 | softly translucent fibrous lattice
+recessed tokonoma alcove | 0.85 | 0.1-0.25 | smoothly plastered display niche
+woven tatami mat floor area | 0.75 | 0.4-0.8 | softly woven dense rush
+slatted wood ranma transom | 0.6 | 0.05-0.15 | crisply slatted carved wood
+small low entry doorway | 0.55 | 0.05-0.15 | smoothly framed dark wood
+exposed paper lantern overhead | 0.65 | 0.05-0.15 | softly translucent paper globe
+stone floor entry threshold | 0.6 | 0.05-0.15 | softly textured grey slab
+recessed wall niche shelves | 0.7 | 0.05-0.15 | smoothly carved minimal alcove

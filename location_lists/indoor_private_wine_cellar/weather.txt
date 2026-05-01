@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool damp cellar interior | 1.0 | - | -
+muffled thunder above | 0.6 | - | -
+heavy rain heard above | 0.7 | - | -
+quiet still air cellar | 0.85 | - | -
+faint draft from gate | 0.5 | - | -
+muffled storm beyond walls | 0.55 | - | -
+deep quiet winter chill | 0.7 | - | -
+softly humid summer cellar | 0.6 | - | -
+quiet snow muffled above | 0.5 | - | -
+faint outside breeze through slit | 0.45 | - | -

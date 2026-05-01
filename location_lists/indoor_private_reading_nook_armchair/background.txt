@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+cream painted built in shelving wall | 1.0 | 0.7-1.0 | softly painted wood panels
+soft sage painted nook wall | 0.9 | 0.7-1.0 | matte chalky pigment
+warm honey oak panelled wall | 0.85 | 0.7-1.0 | warmly grained timber
+floral wallpapered cottage wall | 0.85 | 0.6-1.0 | softly printed paper pattern
+muted blue painted plaster wall | 0.8 | 0.7-1.0 | smoothly washed cool pigment
+tongue and groove painted plank wall | 0.75 | 0.6-1.0 | crisply slatted painted wood
+bookcase backing alcove wall | 0.85 | 0.6-1.0 | richly stacked book spines
+warm beige limewashed wall | 0.7 | 0.6-1.0 | softly mottled mineral finish
+botanical mural painted wall | 0.55 | 0.5-0.9 | softly brushed leafy pattern
+striped wallpaper soft tones | 0.65 | 0.6-1.0 | crisply printed thin lines
+beadboard painted upper wall | 0.75 | 0.6-1.0 | crisply slatted painted wood
+muted ochre painted nook wall | 0.6 | 0.6-1.0 | softly washed warm pigment

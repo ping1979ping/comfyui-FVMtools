@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy rain on factory glass | 0.85 | - | -
+clear cold city day outside | 0.85 | - | -
+overcast urban grey | 0.95 | - | -
+snow drifting against panes | 0.65 | - | -
+fog rolling past windows | 0.6 | - | -
+windy autumn afternoon outside | 0.65 | - | -
+storm clouds gathering outside | 0.6 | - | -
+clear blue winter outside | 0.6 | - | -
+muggy summer haze outside | 0.45 | - | -
+sleet ticking against glass | 0.5 | - | -

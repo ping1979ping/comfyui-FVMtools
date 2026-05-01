@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+beadboard painted wainscot wall | 1.0 | 0.6-1.0 | crisply slatted painted wood
+soft sage painted upper wall | 0.9 | 0.6-1.0 | matte chalky pigment
+botanical wallpapered wall above wainscot | 0.85 | 0.5-0.9 | softly printed paper pattern
+shiplap horizontal plank wall | 0.85 | 0.6-1.0 | warmly grained painted timber
+pale blue painted tongue and groove | 0.75 | 0.6-1.0 | softly aged painted boards
+subway tiled half height wall | 0.85 | 0.4-0.8 | crisply glazed ceramic rectangles
+warm cream lime washed wall | 0.7 | 0.6-1.0 | softly mottled mineral finish
+floral chintz wallpapered wall | 0.7 | 0.5-0.9 | gently printed cottage paper
+exposed cottage stone wall | 0.6 | 0.5-0.9 | softly mortared rough stone
+pale pink painted plaster wall | 0.6 | 0.6-1.0 | smoothly washed soft pigment
+vintage tin ceiling on wall | 0.5 | 0.5-0.9 | softly stamped patinated metal
+muted yellow painted wall | 0.55 | 0.6-1.0 | softly chalky cottage finish

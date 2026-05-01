@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bamboo dipper ladle | 0.6 | 0.02-0.05 | warmly grained pale cane
+stack of dark hand towels | 0.8 | 0.05-0.15 | softly piled charcoal cotton
+small wooden steam bucket | 0.55 | 0.02-0.08 | warmly grained natural cedar
+slate stone soap on dish | 0.7 | 0.01-0.04 | smoothly carved dark slab
+glass spray bottle of essential oil | 0.7 | 0.01-0.04 | softly translucent amber glass
+black ceramic ice bowl | 0.5 | 0.02-0.05 | smoothly glazed dark ceramic
+dark loofah pad on hook | 0.65 | 0.02-0.05 | softly textured natural fiber
+small smooth river stone tray | 0.55 | 0.02-0.05 | softly rounded polished pebbles
+eucalyptus oil amber dropper | 0.65 | 0.01-0.03 | softly translucent warm glass
+folded waffle weave wrap | 0.6 | 0.05-0.1 | softly textured cotton
+black slate coaster set | 0.5 | 0.01-0.03 | softly cleft dark stone
+hot stone tray for therapy | 0.55 | 0.02-0.05 | smoothly polished basalt rounds

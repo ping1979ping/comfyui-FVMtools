@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+monogrammed silver cigarette case | 0.65 | 0.01-0.03 | softly engraved polished metal
+ostrich plume in vase tall | 0.55 | 0.05-0.15 | softly downy plumed display
+gold compact mirror open | 0.75 | 0.01-0.04 | softly burnished engraved metal
+silver hand mirror filigree | 0.7 | 0.02-0.05 | richly worked polished metal
+satin lined hat box round | 0.65 | 0.05-0.15 | smoothly papered round container
+black satin opera shoes pair | 0.6 | 0.02-0.08 | softly lustrous lacquered fabric
+bronze nude statuette | 0.55 | 0.02-0.08 | softly patinated cast metal
+crystal cocktail shaker | 0.55 | 0.02-0.05 | sharply faceted clear glass
+old hollywood telephone gold | 0.5 | 0.02-0.08 | softly polished warm metal
+silk handkerchief embroidered | 0.55 | 0.01-0.03 | softly draped lustrous cloth
+deco enamel pillbox | 0.5 | 0.01-0.02 | smoothly glazed colored metal
+ivory cigarette holder long | 0.45 | 0.01-0.02 | smoothly polished bone shaft

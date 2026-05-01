@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+billiard lamp bright over table | 1.0 | - | -
+amber sconce lit late evening | 0.95 | - | -
+firelit warm dusk | 0.9 | - | -
+moody dim midnight | 0.9 | - | -
+afternoon dim filtered light | 0.7 | - | -
+warm tobacco haze evening | 0.85 | - | -
+overcast quiet daytime | 0.65 | - | -
+single hanging bulb late | 0.75 | - | -
+twilight blue beyond drapes | 0.6 | - | -
+predawn quiet cool light | 0.45 | - | -

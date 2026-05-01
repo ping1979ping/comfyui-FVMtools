@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright outside frosted glass | 0.95 | - | -
+softly overcast outside | 0.85 | - | -
+gentle rain on skylight | 0.7 | - | -
+softly falling snow beyond | 0.55 | - | -
+foggy steam beyond pane | 0.65 | - | -
+sunny crisp day outside | 0.8 | - | -
+springtime light shower beyond | 0.55 | - | -
+heavy autumn rain outside | 0.5 | - | -
+muggy summer haze outside | 0.45 | - | -
+windy day rattling skylight | 0.4 | - | -

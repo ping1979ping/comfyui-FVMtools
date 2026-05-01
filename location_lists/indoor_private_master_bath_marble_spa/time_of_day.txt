@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning through frosted glass | 1.0 | - | -
+soft midday diffuse light | 0.9 | - | -
+warm afternoon golden glow | 0.85 | - | -
+candlelit relaxing evening | 0.95 | - | -
+backlit cove glowing dusk | 0.85 | - | -
+predawn cool blue light | 0.55 | - | -
+moody dim evening | 0.75 | - | -
+midmorning skylight beam | 0.85 | - | -
+soft warm late evening | 0.8 | - | -
+twilight ambient through window | 0.7 | - | -

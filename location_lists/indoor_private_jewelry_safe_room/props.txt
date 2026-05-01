@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+jeweler loupe on velvet | 0.85 | 0.01-0.02 | softly polished engraved metal
+white gloved hand cloth folded | 0.7 | 0.02-0.05 | softly draped clean cotton
+small diamond grading scope | 0.7 | 0.02-0.05 | smoothly polished black housing
+appraisal certificate folder | 0.65 | 0.05-0.1 | softly creased printed paper
+tiny gold scale digital | 0.65 | 0.02-0.05 | smoothly polished clear pan
+silk pouches stacked velvet | 0.7 | 0.05-0.1 | softly draped lustrous bags
+small inventory ledger book | 0.7 | 0.02-0.05 | softly bound aged hide cover
+electronic key card holder | 0.6 | 0.01-0.03 | smoothly enameled black plastic
+crystal magnifier on dish | 0.55 | 0.01-0.03 | smoothly polished clear glass
+black satin display tray | 0.85 | 0.02-0.05 | softly napped lustrous fabric
+small diamond grading paper folded | 0.55 | 0.01-0.02 | crisply folded white paper
+locked metal storage box | 0.6 | 0.05-0.1 | softly powder coated dark metal

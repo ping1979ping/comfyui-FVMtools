@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+billiard balls racked triangle | 1.0 | 0.05-0.1 | smoothly polished glossy resin
+cue stick on edge of table | 0.95 | 0.05-0.15 | smoothly grained tapered wood
+cube of blue chalk on rail | 0.85 | 0.01-0.02 | softly powdered compressed pigment
+crystal whiskey tumbler half full | 0.85 | 0.02-0.05 | sharply faceted clear glass
+brass framed prize photograph | 0.7 | 0.05-0.15 | softly burnished metal frame
+cigar in glass ashtray | 0.7 | 0.02-0.05 | softly glowing rolled tobacco
+folded tartan throw on sofa | 0.7 | 0.05-0.15 | softly woven plaid wool
+stack of leather bound rule books | 0.55 | 0.02-0.05 | softly aged tooled hide
+silver bowl of mixed nuts | 0.6 | 0.02-0.05 | softly polished engraved metal
+brass dart board mounted | 0.55 | 0.05-0.15 | softly polished warm metal

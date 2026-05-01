@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+book matched white marble slab wall | 1.0 | 0.7-1.0 | softly veined polished stone
+calacatta gold marble panel wall | 0.9 | 0.7-1.0 | richly veined warm stone
+honed grey limestone wall | 0.8 | 0.6-1.0 | matte softly textured stone
+travertine slab cladding | 0.8 | 0.6-1.0 | softly pitted cream stone
+polished onyx backlit panel | 0.6 | 0.5-0.9 | translucently glowing veined stone
+satin nickel inlay marble wall | 0.55 | 0.5-0.9 | crisply lined polished stone
+bookmatched arabescato wall | 0.7 | 0.6-1.0 | dramatically veined cool stone
+cream stone mosaic wall | 0.7 | 0.6-1.0 | crisply tiled small chips
+warm beige porcelain slab wall | 0.7 | 0.6-1.0 | smoothly polished large format
+ribbed white plaster wall | 0.65 | 0.6-1.0 | softly fluted hand finished
+brushed brass framed marble panel | 0.6 | 0.5-0.9 | softly polished metal trim
+polished pearl glass mosaic wall | 0.55 | 0.5-0.9 | softly iridescent tiny tile

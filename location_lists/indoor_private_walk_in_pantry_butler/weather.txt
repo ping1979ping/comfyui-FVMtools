@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright outside frosted glass | 0.95 | - | -
+softly overcast outside | 0.85 | - | -
+gentle rain on small window | 0.75 | - | -
+sunny crisp day outside | 0.8 | - | -
+heavy summer rain outside | 0.6 | - | -
+softly falling snow beyond | 0.6 | - | -
+foggy soft morning beyond | 0.55 | - | -
+windy autumn day outside | 0.55 | - | -
+muggy summer haze outside | 0.5 | - | -
+springtime drizzle beyond | 0.55 | - | -

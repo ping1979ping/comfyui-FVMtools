@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright spring day outside | 0.95 | - | -
+softly overcast country grey | 0.85 | - | -
+gentle rain on cottage panes | 0.85 | - | -
+heavy summer rain outside | 0.65 | - | -
+softly falling snow on sill | 0.65 | - | -
+foggy meadow morning beyond | 0.6 | - | -
+windy autumn day outside | 0.6 | - | -
+sunny crisp winter outside | 0.65 | - | -
+muggy garden haze outside | 0.45 | - | -
+springtime drizzle beyond | 0.6 | - | -

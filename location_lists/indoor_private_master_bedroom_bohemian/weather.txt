@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear hot summer day outside | 0.95 | - | -
+balmy evening with breeze in fabrics | 0.85 | - | -
+gentle rain on terrace beyond | 0.7 | - | -
+dusty windy afternoon outside | 0.6 | - | -
+overcast warm grey outside | 0.7 | - | -
+cool desert night beyond windows | 0.65 | - | -
+spring shower beyond shutters | 0.55 | - | -
+crisp clear winter outside | 0.55 | - | -
+foggy soft morning beyond opening | 0.5 | - | -
+monsoon downpour outside | 0.5 | - | -

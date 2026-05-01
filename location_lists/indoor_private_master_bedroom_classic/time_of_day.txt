@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft golden morning through curtains | 1.0 | - | -
+warm late afternoon side light | 0.9 | - | -
+diffuse overcast midday | 0.85 | - | -
+amber lamplit evening | 0.95 | - | -
+candlelit night warm glow | 0.7 | - | -
+predawn cool blue light | 0.55 | - | -
+twilight blue hour through windows | 0.7 | - | -
+warm sconce lit dusk | 0.75 | - | -
+midmorning soft north light | 0.8 | - | -
+late evening single bedside lamp | 0.7 | - | -

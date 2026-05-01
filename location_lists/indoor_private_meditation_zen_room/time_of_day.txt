@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+predawn quiet blue meditation | 1.0 | - | -
+soft sunrise through paper screens | 0.95 | - | -
+diffuse midday filtered shoji light | 0.9 | - | -
+golden hour warm screen glow | 0.85 | - | -
+candlelit incense evening | 0.85 | - | -
+moonlit night through paper | 0.75 | - | -
+overcast still afternoon | 0.85 | - | -
+twilight blue silent dusk | 0.85 | - | -
+late evening single lantern | 0.75 | - | -
+dappled morning through screens | 0.85 | - | -

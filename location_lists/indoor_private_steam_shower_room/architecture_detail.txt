@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+linear slot floor drain | 0.95 | 0.05-0.15 | crisply slotted polished metal
+sloped wet room floor | 0.95 | 0.5-0.85 | smoothly polished dark stone
+recessed shower niche carved | 0.9 | 0.05-0.15 | smoothly hewn dark stone
+ceiling steam diffusion vents | 0.85 | 0.05-0.15 | crisply machined polished metal
+heated stone bench detail | 0.75 | 0.1-0.25 | smoothly polished warm stone
+recessed strip lighting cove | 0.8 | 0.1-0.3 | softly diffused glowing channel
+small high frosted window | 0.55 | 0.05-0.15 | softly translucent etched pane
+dark stone floor pebble inset | 0.6 | 0.1-0.25 | densely set rounded river stones
+steam control panel inset | 0.7 | 0.02-0.05 | crisply machined polished metal
+ventilation grille polished | 0.6 | 0.02-0.05 | crisply slotted dark metal

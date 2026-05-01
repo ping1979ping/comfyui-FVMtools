@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+dark slate slab wall | 1.0 | 0.7-1.0 | softly cleft riven stone
+black basalt tiled wall | 0.9 | 0.7-1.0 | smoothly honed dark stone
+charcoal pebble mosaic wall | 0.85 | 0.6-1.0 | densely set rounded stones
+dark green soapstone wall | 0.7 | 0.6-1.0 | softly mottled cool stone
+matte black porcelain slab wall | 0.8 | 0.6-1.0 | smoothly polished large format
+teak slat wall panels | 0.7 | 0.6-1.0 | richly grained warm timber
+dark concrete poured wall | 0.75 | 0.6-1.0 | smoothly board formed grey
+black and white veined marble wall | 0.7 | 0.6-1.0 | dramatically veined cool stone
+brushed bronze mesh feature wall | 0.55 | 0.5-0.9 | softly woven warm metal
+volcanic stone tiled wall | 0.65 | 0.6-1.0 | softly pitted dark rock
+dark grey limewashed wall | 0.65 | 0.6-1.0 | softly mottled mineral finish
+glass mosaic deep blue wall | 0.55 | 0.5-0.9 | softly iridescent tiny tile

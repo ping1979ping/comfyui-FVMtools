@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+elaborate ceiling crown moulding | 0.9 | 0.1-0.3 | crisply carved painted plaster
+classical white pilaster columns | 0.7 | 0.1-0.25 | smoothly fluted painted wood
+arched recessed wall niche | 0.7 | 0.05-0.2 | softly shadowed plaster curve
+dentil moulded door surround | 0.75 | 0.05-0.15 | crisply detailed painted woodwork
+herringbone oak parquet floor | 0.85 | 0.4-0.8 | warmly grained patterned wood
+oversized panelled door | 0.7 | 0.1-0.25 | smoothly painted moulded wood
+classical ceiling medallion | 0.65 | 0.05-0.15 | richly cast plaster ornament
+tall sash windows with mullions | 0.7 | 0.15-0.3 | crisply painted divided panes
+fireplace with marble surround | 0.6 | 0.1-0.25 | softly veined cool stone
+deep skirting board moulding | 0.85 | 0.05-0.15 | crisply painted profiled wood

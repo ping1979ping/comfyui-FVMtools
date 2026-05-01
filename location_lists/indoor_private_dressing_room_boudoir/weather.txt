@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy rain on tall windows | 0.85 | - | -
+storm dramatic outside | 0.65 | - | -
+softly overcast atmospheric | 0.85 | - | -
+clear starry night beyond | 0.75 | - | -
+foggy night beyond lace | 0.7 | - | -
+windy night fluttering drapes | 0.6 | - | -
+softly falling snow beyond | 0.6 | - | -
+sunny crisp afternoon outside | 0.65 | - | -
+muggy summer night outside | 0.45 | - | -
+springtime drizzle beyond | 0.5 | - | -

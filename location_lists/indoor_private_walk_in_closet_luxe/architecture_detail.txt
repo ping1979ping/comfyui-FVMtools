@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+coffered ceiling with crown moulding | 0.9 | 0.15-0.4 | crisply detailed painted woodwork
+inlaid parquet patterned floor | 0.85 | 0.4-0.8 | richly grained geometric hardwood
+mirrored ceiling panel | 0.55 | 0.2-0.5 | smoothly reflective polished glass
+classical pilaster column detail | 0.7 | 0.05-0.2 | crisply fluted painted plaster
+backlit cove ceiling lighting | 0.85 | 0.1-0.3 | softly diffused glowing recess
+panelled door with mirror inset | 0.7 | 0.1-0.25 | crisply framed reflective glass
+brass kickplate base trim | 0.65 | 0.05-0.15 | softly polished warm metal strip
+recessed display niche | 0.7 | 0.05-0.15 | softly illuminated painted alcove
+arched doorway opening | 0.55 | 0.05-0.15 | smoothly curved painted plaster
+travertine stone floor inlay | 0.55 | 0.3-0.7 | softly veined cream stone

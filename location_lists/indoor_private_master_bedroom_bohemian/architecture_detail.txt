@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed dark wood ceiling beams | 0.85 | 0.1-0.3 | warmly aged grained timber
+arched moroccan doorway opening | 0.7 | 0.1-0.25 | smoothly stuccoed curved plaster
+terracotta tiled floor | 0.85 | 0.4-0.8 | warmly fired clay paving
+carved wooden window screen | 0.65 | 0.1-0.25 | intricately latticed dark hardwood
+recessed plaster wall niche | 0.75 | 0.05-0.15 | softly curved painted plaster
+unfinished plaster ceiling | 0.7 | 0.2-0.5 | hand-floated soft texture
+hand carved wooden door frame | 0.65 | 0.05-0.15 | richly worked aged timber
+arabic calligraphy painted frieze | 0.45 | 0.05-0.15 | softly brushed pigmented script
+small bullseye window | 0.5 | 0.05-0.15 | smoothly plastered round opening
+patterned cement tile floor | 0.55 | 0.4-0.8 | crisply printed encaustic

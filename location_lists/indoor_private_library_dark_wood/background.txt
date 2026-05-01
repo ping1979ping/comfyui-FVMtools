@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+floor to ceiling mahogany bookshelves | 1.0 | 0.7-1.0 | richly polished dark hardwood
+walnut paneled wall | 0.9 | 0.7-1.0 | warmly grained polished timber
+deep oxblood painted wall | 0.8 | 0.6-1.0 | softly chalky rich pigment
+dark green leather upholstered wall | 0.7 | 0.5-0.9 | softly tufted patinated hide
+forest green damask wallpapered wall | 0.75 | 0.6-1.0 | softly raised flocked print
+oak panelled bookshelf wall | 0.85 | 0.7-1.0 | richly grained warm timber
+deep navy painted plaster wall | 0.7 | 0.6-1.0 | smoothly washed dark pigment
+burgundy silk wall covering | 0.6 | 0.6-1.0 | softly draped lustrous cloth
+ebony lacquered cabinetry wall | 0.65 | 0.6-1.0 | mirror polished deep finish
+exposed dark stone wall | 0.6 | 0.6-1.0 | richly mortared aged masonry
+tooled leather wall panels | 0.55 | 0.5-0.9 | richly embossed patterned hide
+dark teak slatted feature wall | 0.6 | 0.6-1.0 | warmly grained polished timber

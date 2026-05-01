@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+zafu round meditation cushion black | 0.95 | 0.05-0.15 | softly piled tufted dark fabric
+zabuton flat mat under cushion | 0.9 | 0.1-0.25 | softly piled dense cotton
+brass standing buddha small | 0.7 | 0.05-0.1 | softly polished aged metal
+white lotus in shallow stone bowl | 0.7 | 0.05-0.1 | smoothly carved grey stone
+incense stick smoldering in holder | 0.9 | 0.02-0.05 | softly drifting curling smoke
+single white orchid stem | 0.7 | 0.05-0.1 | softly waxen delicate petals
+black tea bowl with whisk | 0.7 | 0.05-0.1 | softly glazed irregular ceramic
+prayer beads on small dish | 0.8 | 0.02-0.05 | smoothly strung sandalwood
+folded dark linen meditation shawl | 0.65 | 0.05-0.15 | softly draped natural cloth
+small bronze bell with striker | 0.75 | 0.02-0.05 | softly polished aged metal

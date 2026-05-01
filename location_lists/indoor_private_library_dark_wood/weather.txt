@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+rain streaking tall windows | 0.95 | - | -
+thunderstorm distant rumble outside | 0.7 | - | -
+clear cold winter outside | 0.85 | - | -
+softly overcast grey day | 0.9 | - | -
+heavy snow piling on sills | 0.65 | - | -
+foggy autumn morning beyond | 0.7 | - | -
+windy storm rattling shutters | 0.6 | - | -
+sunny crisp day outside | 0.65 | - | -
+muggy summer haze outside | 0.4 | - | -
+springtime drizzle beyond glass | 0.55 | - | -

@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low platform bed steel frame | 0.95 | 0.3-0.55 | crisply welded blackened metal
+reclaimed wood headboard slab | 0.85 | 0.25-0.5 | richly grained aged timber
+metal locker style nightstand | 0.85 | 0.1-0.25 | crisply painted enameled steel
+black cast iron pipe bedframe | 0.75 | 0.3-0.5 | softly blackened plumbing pipe
+aged leather club chair | 0.7 | 0.15-0.3 | softly cracked patinated hide
+factory cart turned coffee table | 0.7 | 0.1-0.25 | warmly weathered timber and steel
+metal mesh wardrobe | 0.65 | 0.15-0.3 | crisply gridded dark steel
+concrete cube nightstand | 0.6 | 0.1-0.25 | smoothly cast grey aggregate
+edison bulb sconce lit | 0.85 | 0.05-0.15 | softly glowing exposed filament
+steel framed full length mirror | 0.7 | 0.15-0.3 | crisply welded matte black

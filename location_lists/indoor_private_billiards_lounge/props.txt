@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+cigar humidor wooden box open | 0.7 | 0.05-0.1 | richly grained polished wood
+silver cigar cutter on tray | 0.6 | 0.01-0.02 | softly polished engraved metal
+old brass card holder | 0.55 | 0.02-0.05 | softly polished tarnished metal
+crystal decanter set on cart | 0.85 | 0.05-0.15 | sharply faceted clear glass
+leather bound betting book | 0.6 | 0.02-0.05 | softly aged tooled hide
+poker chip stack on small table | 0.65 | 0.02-0.08 | smoothly stacked colored discs
+old fashioned darts in board | 0.55 | 0.02-0.05 | softly bristled flighted metal
+small bronze billiard player figurine | 0.55 | 0.02-0.05 | softly patinated cast metal
+silver match striker on cart | 0.5 | 0.01-0.02 | softly polished tarnished metal
+embossed playing card deck | 0.6 | 0.01-0.03 | crisply printed pressed cardstock
+old leather pouch of marbles | 0.45 | 0.02-0.05 | softly cracked patinated hide
+glass ashtray with cigar band | 0.65 | 0.02-0.05 | sharply faceted clear glass

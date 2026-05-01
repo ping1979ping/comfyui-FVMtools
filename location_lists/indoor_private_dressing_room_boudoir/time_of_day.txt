@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+candlelit warm evening | 1.0 | - | -
+silk shaded lamp dim glow | 0.95 | - | -
+amber late afternoon | 0.85 | - | -
+moonlit night through drapes | 0.75 | - | -
+rose tinted golden hour | 0.9 | - | -
+moody dim midnight | 0.8 | - | -
+firelit warm dusk | 0.7 | - | -
+predawn cool dim filter | 0.45 | - | -
+twilight blue with lamp glow | 0.65 | - | -
+late afternoon dappled | 0.7 | - | -

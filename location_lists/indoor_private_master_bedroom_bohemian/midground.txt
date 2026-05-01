@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low rattan platform bed | 0.95 | 0.3-0.55 | warmly woven natural cane
+carved indian wood headboard | 0.85 | 0.3-0.5 | richly worked dark teak
+vintage kilim covered ottoman | 0.85 | 0.1-0.25 | flatly woven patterned wool
+moroccan brass tray table | 0.75 | 0.1-0.25 | softly hammered etched metal
+peacock rattan armchair | 0.7 | 0.15-0.3 | intricately woven natural cane
+carved teak chest at footboard | 0.7 | 0.15-0.3 | richly grained dark hardwood
+mismatched antique wooden nightstands | 0.85 | 0.1-0.25 | warmly aged painted wood
+hammock chair on macrame rope | 0.55 | 0.15-0.3 | knotted thick cotton cord
+floor cushion stack | 0.75 | 0.1-0.25 | softly piled patterned cotton
+draped canopy bed frame | 0.6 | 0.3-0.6 | gently flowing sheer cloth

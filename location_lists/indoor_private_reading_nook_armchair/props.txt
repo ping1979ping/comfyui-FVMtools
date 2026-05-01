@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+leather bookmark in book | 0.7 | 0.01-0.03 | softly aged tooled hide
+small wooden writing tablet | 0.6 | 0.02-0.05 | warmly grained polished wood
+notebook with pen on table | 0.75 | 0.02-0.05 | softly bound aged paper
+fountain pen dark resin | 0.65 | 0.01-0.03 | smoothly lacquered slim barrel
+porcelain teapot small | 0.75 | 0.05-0.1 | smoothly glazed white ceramic
+small dish with sugar cubes | 0.55 | 0.01-0.03 | softly crystallized white blocks
+vintage typewriter on shelf | 0.5 | 0.05-0.1 | softly enameled cast metal
+ball of yarn with needles | 0.6 | 0.02-0.05 | softly piled wool ball
+small handwritten letter unfolded | 0.55 | 0.01-0.03 | softly creased aged paper
+ceramic vase of dried lavender | 0.7 | 0.02-0.08 | softly bundled fragrant stems
+small hourglass timer | 0.5 | 0.01-0.03 | smoothly polished clear glass
+old photograph in small frame | 0.6 | 0.02-0.05 | softly aged sepia paper

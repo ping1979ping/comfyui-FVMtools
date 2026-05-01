@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+wide plank painted wood floor | 0.9 | 0.4-0.8 | softly aged painted boards
+hexagonal mosaic tile floor | 0.7 | 0.4-0.8 | crisply tiled small ceramic
+exposed ceiling rafters painted | 0.6 | 0.15-0.3 | softly grained painted timber
+pressed tin ceiling tiles | 0.6 | 0.2-0.5 | softly stamped patinated metal
+small cottage casement window | 0.85 | 0.1-0.25 | crisply painted divided panes
+deep painted skirting board | 0.85 | 0.05-0.15 | crisply profiled painted wood
+arched doorway with transom | 0.5 | 0.05-0.15 | softly curved painted plaster
+chair rail painted detail | 0.75 | 0.05-0.15 | crisply moulded painted wood
+floor heat register grate | 0.55 | 0.02-0.05 | softly painted cast iron
+plank ceiling painted white | 0.6 | 0.2-0.5 | softly grained painted boards

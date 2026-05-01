@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+professional billiards table center | 1.0 | 0.4-0.65 | softly napped emerald felt
+heavy mahogany cue rack wall | 0.95 | 0.15-0.3 | richly polished dark hardwood
+oxblood leather chesterfield sofa | 0.85 | 0.25-0.5 | softly tufted aged hide
+brass billiards pendant overhead | 0.95 | 0.15-0.3 | softly polished warm metal
+green leather wingback chair pair | 0.85 | 0.2-0.4 | softly studded patinated hide
+small mahogany side tables pair | 0.85 | 0.1-0.25 | smoothly polished dark wood
+deco bar cabinet against wall | 0.7 | 0.2-0.4 | richly grained dark wood
+upholstered ottoman footstool | 0.6 | 0.05-0.15 | softly piled tufted velvet
+old fashioned scoreboard mounted | 0.7 | 0.1-0.2 | warmly grained painted wood
+freestanding bronze ash stand | 0.55 | 0.05-0.15 | softly polished tarnished metal

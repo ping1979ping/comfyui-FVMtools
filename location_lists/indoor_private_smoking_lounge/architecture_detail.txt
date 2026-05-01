@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+pressed copper ceiling tiles | 0.85 | 0.2-0.5 | softly stamped patinated metal
+deep coffered wooden ceiling | 0.75 | 0.2-0.5 | richly grained dark timber
+herringbone parquet warm floor | 0.85 | 0.4-0.8 | warmly grained patterned wood
+ornate carved warm cornice | 0.8 | 0.05-0.15 | crisply detailed dark woodwork
+deep warm skirting moulding | 0.85 | 0.05-0.15 | crisply profiled warm wood
+fluted bronze pilaster column | 0.6 | 0.05-0.15 | crisply ribbed warm metal
+brass fireplace surround small | 0.6 | 0.1-0.25 | softly polished warm metal
+arched alcove with humidor | 0.7 | 0.1-0.25 | softly curved warm panelling
+heavy velvet draped curtains amber | 0.7 | 0.15-0.4 | richly piled cascading fabric
+recessed wall sconce niche | 0.75 | 0.05-0.15 | softly diffused warm glow

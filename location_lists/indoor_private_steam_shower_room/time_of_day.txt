@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+dim chromotherapy red glow | 1.0 | - | -
+soft blue chromotherapy light | 0.95 | - | -
+warm green chromotherapy hue | 0.85 | - | -
+amber dim spa lighting | 0.95 | - | -
+moody dark evening | 0.85 | - | -
+purple chromotherapy ambient | 0.7 | - | -
+candlelit dim warm | 0.7 | - | -
+single overhead spot light | 0.75 | - | -
+backlit niche only glow | 0.7 | - | -
+predawn dim cool light | 0.5 | - | -

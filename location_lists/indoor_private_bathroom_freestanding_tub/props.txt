@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+old apothecary glass bottle | 0.7 | 0.01-0.04 | softly aged thick glass
+woven willow basket of toiletries | 0.7 | 0.05-0.15 | warmly woven natural willow
+ironstone soap dish | 0.65 | 0.01-0.03 | smoothly glazed white ceramic
+boar bristle hairbrush set | 0.55 | 0.02-0.05 | warmly grained turned wood
+vintage glass perfume bottle | 0.65 | 0.01-0.03 | softly clear etched glass
+folded antique linen towel | 0.7 | 0.02-0.08 | softly pressed flax weave
+floral porcelain trinket dish | 0.55 | 0.01-0.03 | smoothly glazed painted ceramic
+brass chamber stick candle | 0.6 | 0.02-0.05 | softly polished tarnished metal
+small framed botanical print | 0.7 | 0.05-0.15 | crisply printed mounted paper
+copper water dipper hanging | 0.5 | 0.02-0.05 | softly hammered warm metal
+sprig of dried lavender in vase | 0.65 | 0.02-0.05 | softly fragrant dried stems
+small hooked rug at tub | 0.7 | 0.05-0.15 | softly piled wool loops

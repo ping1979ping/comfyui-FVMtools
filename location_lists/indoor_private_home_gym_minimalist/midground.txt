@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+modern weight bench center floor | 0.95 | 0.15-0.3 | softly padded black vinyl
+power rack squat cage | 0.9 | 0.25-0.5 | softly powder coated black steel
+treadmill commercial grade | 0.85 | 0.2-0.4 | smoothly enameled metal frame
+stationary bike modern design | 0.8 | 0.15-0.3 | smoothly enameled black metal
+rowing machine slim design | 0.75 | 0.2-0.4 | warmly grained wood rail
+cable crossover machine | 0.7 | 0.25-0.5 | softly powder coated black steel
+free weight rack hex dumbbells | 0.85 | 0.15-0.3 | softly textured black rubber
+plyo box stack cubes | 0.7 | 0.1-0.25 | softly padded black vinyl
+yoga area corner mat space | 0.7 | 0.15-0.3 | softly textured rubber surface
+mounted pull up bar wall | 0.8 | 0.1-0.25 | softly powder coated steel tube

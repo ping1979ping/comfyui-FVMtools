@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft afternoon reading light | 1.0 | - | -
+warm late afternoon golden glow | 0.95 | - | -
+amber lamplit cozy evening | 0.95 | - | -
+overcast soft midday | 0.9 | - | -
+dappled morning through window | 0.9 | - | -
+twilight blue cozy hour | 0.8 | - | -
+firelit warm dusk | 0.75 | - | -
+predawn quiet cool light | 0.55 | - | -
+late evening single lamp | 0.85 | - | -
+sunny crisp morning beam | 0.8 | - | -

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+velvet covered jewelry box | 0.85 | 0.02-0.08 | softly napped lined fabric
+crystal cut decanter on island | 0.65 | 0.02-0.08 | sharply faceted clear glass
+silver hand mirror laid on tray | 0.65 | 0.02-0.05 | softly polished engraved metal
+vintage perfume atomizer | 0.7 | 0.01-0.05 | smoothly enameled hand bulb
+ivory backed hairbrush | 0.6 | 0.01-0.05 | smoothly polished bone handle
+fresh peony bouquet in vase | 0.8 | 0.02-0.1 | softly velvety lush petals
+champagne flute glass on tray | 0.55 | 0.01-0.05 | sharply pulled clear stem
+rolled silk gloves in drawer | 0.5 | 0.01-0.05 | softly draped lustrous fabric
+designer fragrance candle lit | 0.75 | 0.02-0.08 | softly textured scented wax
+polished agate coaster set | 0.55 | 0.01-0.05 | sharply sliced banded stone
+folded tissue paper in drawer | 0.5 | 0.02-0.05 | softly creased thin paper
+faceted crystal door knob | 0.55 | 0.01-0.03 | sharply prismatic cut glass

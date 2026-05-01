@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stack of well-loved hardback books | 0.95 | 0.05-0.15 | softly creased aged paper
+folded knitted throw blanket | 0.95 | 0.1-0.25 | softly piled chunky wool
+ceramic mug of tea steaming | 0.9 | 0.02-0.05 | smoothly glazed warm ceramic
+small embroidered pillow on chair | 0.85 | 0.05-0.15 | softly stitched cotton cover
+reading glasses on book pile | 0.85 | 0.02-0.05 | smoothly polished slim frames
+small framed family photo | 0.65 | 0.05-0.1 | softly grained painted frame
+vase of garden flowers fresh | 0.7 | 0.05-0.15 | softly velvety mixed petals
+soft cashmere lap blanket | 0.7 | 0.1-0.25 | softly piled fine wool
+woven rattan basket of yarn | 0.55 | 0.05-0.15 | warmly woven natural cane
+small dish of biscuits on saucer | 0.6 | 0.02-0.05 | softly textured baked surface

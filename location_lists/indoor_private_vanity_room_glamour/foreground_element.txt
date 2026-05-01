@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+scattered makeup brushes in cup | 0.95 | 0.05-0.1 | softly bristled fluffy heads
+gold tube lipstick collection | 0.9 | 0.05-0.1 | smoothly polished metallic case
+crystal perfume bottle on tray | 0.95 | 0.05-0.15 | sharply faceted clear glass
+pink ostrich feather boa | 0.6 | 0.05-0.15 | softly downy plumed fluff
+silver hand mirror | 0.7 | 0.02-0.05 | softly polished engraved metal
+faux pearl necklace draped | 0.7 | 0.05-0.15 | smoothly strung glossy beads
+silk dressing gown on hanger | 0.7 | 0.1-0.25 | softly draped lustrous fabric
+gilded jewelry tree with rings | 0.85 | 0.05-0.15 | softly burnished branching metal
+vanity tray with lotion pumps | 0.85 | 0.05-0.15 | softly polished mirrored surface
+pink rose bouquet in crystal vase | 0.8 | 0.05-0.15 | softly velvety lush petals

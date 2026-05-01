@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+vaulted brick barrel ceiling | 0.95 | 0.3-0.6 | warmly aged weathered masonry
+stone slab flagstone floor | 0.95 | 0.4-0.8 | softly textured grey slabs
+arched stone doorway | 0.85 | 0.1-0.25 | softly mortared curved stone
+recessed wall niche shelves | 0.85 | 0.1-0.3 | smoothly carved alcove
+exposed wood ceiling beams | 0.75 | 0.15-0.3 | richly grained dark timber
+small basement window slit | 0.55 | 0.05-0.1 | softly translucent narrow pane
+iron sconce bracket on wall | 0.75 | 0.02-0.08 | softly forged dark wrought iron
+old terracotta tile floor | 0.65 | 0.4-0.8 | warmly aged fired clay
+wrought iron ceiling chandelier | 0.65 | 0.1-0.25 | softly forged candelabra
+heavy planked old door | 0.7 | 0.1-0.25 | richly aged grained timber

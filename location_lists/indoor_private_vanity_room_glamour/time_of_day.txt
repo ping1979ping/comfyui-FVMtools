@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bulb lit bright vanity glow | 1.0 | - | -
+morning soft pink ambient | 0.9 | - | -
+afternoon warm side light | 0.85 | - | -
+warm chandelier lit evening | 0.85 | - | -
+backlit cove glow dusk | 0.8 | - | -
+amber lamplit late evening | 0.75 | - | -
+midday bright light | 0.85 | - | -
+predawn dim accent only | 0.45 | - | -
+twilight blue with bulb mirror | 0.65 | - | -
+golden hour rose tint | 0.85 | - | -

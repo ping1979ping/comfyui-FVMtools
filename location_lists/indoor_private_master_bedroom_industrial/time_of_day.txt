@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+cool morning through factory windows | 1.0 | - | -
+edison bulb warm evening | 0.95 | - | -
+midday harsh raking light | 0.85 | - | -
+moody late afternoon shadow | 0.8 | - | -
+dim industrial dusk | 0.75 | - | -
+single hanging bulb night | 0.85 | - | -
+overcast grey daytime | 0.85 | - | -
+predawn dim grey light | 0.6 | - | -
+amber sodium glow through panes | 0.6 | - | -
+cold blue early morning | 0.65 | - | -

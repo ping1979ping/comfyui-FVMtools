@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+floor to ceiling shelving units | 1.0 | 0.4-0.7 | crisply painted slatted wood
+butler pantry counter with sink | 0.95 | 0.2-0.4 | softly polished marble slab
+glass front upper cabinets row | 0.95 | 0.3-0.55 | crisply framed clear panes
+narrow ladder wooden | 0.7 | 0.1-0.25 | warmly grained polished wood
+small built in wine refrigerator | 0.7 | 0.1-0.25 | crisply enameled stainless front
+warm wood butcher block island | 0.65 | 0.15-0.3 | richly grained polished hardwood
+free standing storage cart | 0.7 | 0.15-0.3 | smoothly painted enameled steel
+overhead pot rack hanging | 0.7 | 0.15-0.3 | softly polished warm metal bar
+small desk planning station | 0.6 | 0.15-0.3 | smoothly painted wood top
+glass display canister tower | 0.7 | 0.1-0.25 | smoothly polished clear glass

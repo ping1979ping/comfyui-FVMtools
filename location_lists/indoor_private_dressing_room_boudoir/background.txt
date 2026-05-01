@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+deep crimson velvet draped wall | 1.0 | 0.7-1.0 | softly piled lustrous fabric
+dusty rose silk fabric panel wall | 0.9 | 0.7-1.0 | softly draped lustrous cloth
+burgundy fleur de lis wallpaper | 0.85 | 0.6-1.0 | softly raised flocked print
+black lace overlay on rose wall | 0.7 | 0.5-0.9 | finely worked openwork pattern
+plum painted plaster wall | 0.8 | 0.7-1.0 | smoothly washed deep pigment
+antique rose tone mirror tile wall | 0.7 | 0.5-0.9 | softly antiqued reflective glass
+copper rose metallic wall | 0.6 | 0.6-1.0 | softly burnished warm metallic
+deep purple velvet panel wall | 0.7 | 0.6-1.0 | richly piled lustrous fabric
+embossed damask burgundy wall | 0.7 | 0.6-1.0 | softly raised patterned cloth
+black flocked velvet wallpaper | 0.6 | 0.6-1.0 | softly napped patterned fabric
+champagne silk pleated wall | 0.7 | 0.6-1.0 | softly draped lustrous fabric
+muted mauve painted wall | 0.65 | 0.6-1.0 | smoothly washed soft pigment

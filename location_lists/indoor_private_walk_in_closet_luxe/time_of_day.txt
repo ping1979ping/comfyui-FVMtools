@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright cabinet downlights mid morning | 1.0 | - | -
+soft ambient afternoon | 0.85 | - | -
+warm chandelier lit evening | 0.95 | - | -
+backlit ceiling diffuse glow | 0.9 | - | -
+midday display lighting | 0.9 | - | -
+amber lamplit dusk | 0.8 | - | -
+cool morning through skylight | 0.7 | - | -
+late evening soft cove light | 0.8 | - | -
+predawn dim accent only | 0.5 | - | -
+twilight blue with chandelier | 0.65 | - | -

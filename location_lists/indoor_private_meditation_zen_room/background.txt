@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+dark stained shou sugi ban wall | 1.0 | 0.7-1.0 | charred deeply textured cedar
+washi paper sliding door wall | 0.95 | 0.6-1.0 | softly translucent fibrous panels
+dark ink wash painted plaster wall | 0.85 | 0.7-1.0 | softly brushed deep grey pigment
+exposed dark cedar plank wall | 0.85 | 0.7-1.0 | richly grained warm timber
+zen rock garden gravel niche wall | 0.6 | 0.5-0.9 | finely raked smooth pebbles
+muted indigo dyed cloth wall panel | 0.7 | 0.6-1.0 | softly draped natural cloth
+rough textured tadelakt plaster | 0.7 | 0.6-1.0 | softly polished hand troweled
+dark slate cleft tile wall | 0.7 | 0.6-1.0 | softly cleft riven stone
+charcoal painted minimalist wall | 0.65 | 0.6-1.0 | smoothly washed deep pigment
+woven bamboo mat panel wall | 0.65 | 0.6-1.0 | softly woven natural cane
+dark concrete tea house wall | 0.6 | 0.6-1.0 | smoothly board formed grey
+moss green washed plaster wall | 0.55 | 0.6-1.0 | softly mottled mineral pigment

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+old apothecary scale brass | 0.6 | 0.02-0.08 | softly polished engraved metal
+vintage tin recipe box | 0.65 | 0.02-0.05 | softly enameled printed metal
+wooden rolling pin on counter | 0.75 | 0.02-0.05 | smoothly grained polished wood
+ceramic mixing bowl set | 0.85 | 0.05-0.1 | smoothly glazed white ceramic
+glass milk bottle with cream | 0.6 | 0.02-0.05 | smoothly clear glass cylinder
+chalkboard menu sign small | 0.7 | 0.05-0.1 | softly chalked dark slate
+brass kitchen scale | 0.55 | 0.02-0.05 | softly polished engraved metal
+striped cotton apron hung | 0.65 | 0.05-0.15 | softly draped cotton cloth
+small basket of fresh eggs | 0.55 | 0.02-0.08 | softly woven willow basket
+copper measuring cup nest | 0.7 | 0.02-0.05 | softly polished warm metal
+glass jar of preserved lemons | 0.55 | 0.02-0.05 | smoothly clear glass jar
+wooden cutting board worn | 0.7 | 0.05-0.15 | warmly grained scored timber

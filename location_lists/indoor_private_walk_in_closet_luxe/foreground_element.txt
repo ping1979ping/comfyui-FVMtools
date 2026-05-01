@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+displayed designer handbag row | 0.95 | 0.1-0.3 | softly polished pebbled leather
+luxury silk scarf draped on rail | 0.8 | 0.05-0.15 | softly draped lustrous fabric
+crystal perfume bottle collection | 0.85 | 0.05-0.15 | sharply faceted clear glass
+velvet jewelry tray with rings | 0.85 | 0.05-0.15 | softly napped lined fabric
+folded cashmere sweater stack | 0.85 | 0.1-0.25 | softly piled fine wool
+glass display dome over watch | 0.65 | 0.02-0.08 | smoothly polished clear glass
+silk hat box stack | 0.65 | 0.05-0.15 | smoothly papered round box
+embroidered slippers on shelf | 0.6 | 0.02-0.08 | softly stitched silk fabric
+displayed designer shoes row | 0.95 | 0.1-0.3 | softly polished pebbled leather shoes
+ostrich feather boa on hook | 0.5 | 0.05-0.15 | softly downy plumed fluff

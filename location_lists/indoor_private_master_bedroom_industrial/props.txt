@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+vintage typewriter on shelf | 0.6 | 0.02-0.08 | softly enameled cast metal
+cast iron alarm clock | 0.65 | 0.02-0.05 | softly burnished aged metal
+stack of design magazines | 0.7 | 0.02-0.08 | crisply printed glossy paper
+copper measuring cup set | 0.5 | 0.02-0.05 | softly polished warm metal
+mason jar with pencils | 0.65 | 0.01-0.05 | smoothly glazed clear glass
+worn leather valet tray | 0.55 | 0.02-0.05 | softly cracked patinated hide
+brass key collection on hook | 0.5 | 0.01-0.05 | softly tarnished aged metal
+aged industrial gear sculpture | 0.55 | 0.02-0.08 | richly oxidized cast iron
+black framed factory blueprint | 0.6 | 0.05-0.15 | crisply printed mounted paper
+small concrete planter with succulent | 0.7 | 0.02-0.08 | smoothly cast grey aggregate
+worn baseball glove on shelf | 0.4 | 0.02-0.05 | softly cracked aged leather
+old radio on side table | 0.5 | 0.02-0.08 | softly enameled bakelite case

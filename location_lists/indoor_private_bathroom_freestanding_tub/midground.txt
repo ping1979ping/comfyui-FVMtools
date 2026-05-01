@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+clawfoot freestanding cast iron tub | 1.0 | 0.3-0.55 | smoothly enameled white interior
+copper double slipper tub | 0.7 | 0.3-0.55 | softly hammered warm metal
+vintage pedestal porcelain sink | 0.85 | 0.15-0.3 | smoothly glazed white ceramic
+antique repurposed dresser vanity | 0.75 | 0.2-0.4 | warmly aged painted wood
+oval gilt framed wall mirror | 0.75 | 0.1-0.25 | softly burnished gold leaf
+wicker laundry hamper | 0.7 | 0.1-0.2 | warmly woven natural rattan
+linen draped privacy screen | 0.55 | 0.15-0.3 | softly draped pleated cloth
+cottage style wood toilet | 0.65 | 0.1-0.25 | crisply painted enameled wood seat
+small upholstered slipper chair | 0.55 | 0.1-0.2 | gently floral printed cotton
+brass towel ring on wall | 0.7 | 0.02-0.08 | softly polished antique brass

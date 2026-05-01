@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+four poster mahogany bed frame | 0.95 | 0.3-0.6 | richly polished dark hardwood
+upholstered ivory headboard | 0.9 | 0.3-0.5 | softly tufted button velvet
+carved walnut dresser | 0.85 | 0.2-0.4 | warmly grained ornate timber
+matched mahogany nightstand pair | 0.9 | 0.1-0.3 | smoothly lacquered wood
+ivory bench at foot of bed | 0.75 | 0.1-0.25 | softly piled tufted upholstery
+antique gilt framed mirror | 0.7 | 0.15-0.3 | softly burnished gold leaf
+cream slipcovered armchair | 0.7 | 0.15-0.3 | gently rumpled linen fabric
+mahogany writing desk against wall | 0.6 | 0.15-0.3 | smoothly polished hardwood
+tall walnut chest of drawers | 0.65 | 0.15-0.3 | richly grained timber
+silk upholstered chaise lounge | 0.5 | 0.15-0.3 | softly draped lustrous fabric

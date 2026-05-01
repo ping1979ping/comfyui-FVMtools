@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+sealed climate stable interior | 1.0 | - | -
+quiet vault no exterior heard | 0.95 | - | -
+muffled distant thunder | 0.5 | - | -
+softly humming ventilation | 0.85 | - | -
+totally insulated stillness | 0.85 | - | -
+faint air circulation hum | 0.7 | - | -
+distant muffled rain heard | 0.55 | - | -
+silent fortified isolation | 0.85 | - | -
+filtered air dry stable | 0.85 | - | -
+distant building hum stable | 0.6 | - | -

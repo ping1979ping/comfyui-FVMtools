@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+checkerboard floor pattern tile | 0.85 | 0.4-0.8 | crisply tiled black and white
+herringbone brick floor pattern | 0.7 | 0.4-0.8 | warmly fired clay paving
+exposed wood ceiling beams | 0.7 | 0.1-0.3 | warmly grained painted timber
+small frosted glass window | 0.7 | 0.05-0.15 | softly translucent etched pane
+brass cup pull cabinet hardware | 0.85 | 0.05-0.1 | softly polished warm metal
+deep painted skirting board | 0.85 | 0.05-0.15 | crisply profiled painted wood
+arched doorway opening pantry | 0.6 | 0.05-0.15 | softly curved painted plaster
+recessed cabinet under lighting | 0.85 | 0.05-0.15 | softly diffused warm glow
+beadboard ceiling planks | 0.6 | 0.2-0.5 | crisply slatted painted wood
+swinging door with porthole | 0.5 | 0.1-0.25 | smoothly painted wood with round glass

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+silver cigar cutter scissor | 0.85 | 0.01-0.03 | softly polished engraved metal
+brass match holder long | 0.7 | 0.01-0.03 | softly polished warm metal
+crystal ice bucket with tongs | 0.8 | 0.05-0.1 | sharply faceted clear glass
+cut crystal whiskey decanter | 0.95 | 0.05-0.15 | sharply faceted clear glass
+cigar punch tool small | 0.55 | 0.01-0.02 | smoothly polished metal
+small leather appointment book | 0.55 | 0.01-0.04 | softly aged tooled hide
+glass humidor hygrometer | 0.65 | 0.01-0.03 | smoothly polished round glass
+fountain pen on small note pad | 0.5 | 0.01-0.04 | smoothly lacquered slim barrel
+cedar humidor liner box | 0.65 | 0.05-0.1 | warmly grained aromatic wood
+brass bell call pull | 0.5 | 0.01-0.03 | softly polished tarnished metal
+bowl of mixed nuts on tray | 0.6 | 0.02-0.05 | softly polished engraved metal
+old hardback memoir on side table | 0.6 | 0.02-0.05 | softly aged tooled hide

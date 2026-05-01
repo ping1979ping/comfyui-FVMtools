@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+vintage globe paperweight | 0.7 | 0.01-0.03 | softly polished brass sphere
+fountain pen on leather blotter | 0.75 | 0.02-0.05 | smoothly lacquered slim barrel
+brass desk magnifier glass | 0.7 | 0.02-0.05 | softly polished aged metal
+inkwell crystal cut | 0.65 | 0.01-0.03 | sharply faceted clear glass
+old chess set on side table | 0.65 | 0.05-0.15 | smoothly carved bone pieces
+brass letter opener engraved | 0.55 | 0.01-0.03 | softly burnished warm metal
+stack of antique journals | 0.7 | 0.02-0.08 | softly creased aged paper
+old astronomical instrument | 0.5 | 0.02-0.08 | richly engraved patinated brass
+silver tray with cigar humidor | 0.55 | 0.05-0.1 | softly polished engraved metal
+single malt whiskey bottle | 0.65 | 0.01-0.04 | softly amber translucent glass
+small bronze figurine of horse | 0.5 | 0.02-0.05 | softly patinated cast metal
+embossed leather portfolio | 0.55 | 0.02-0.05 | richly tooled patinated hide

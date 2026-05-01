@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+ivory damask wallpapered wall | 1.0 | 0.7-1.0 | softly patterned silk weave
+cream upholstered tufted wall panel | 0.9 | 0.6-1.0 | gently buttoned velvet
+pale dove gray painted wall | 0.85 | 0.7-1.0 | smooth eggshell finish
+ivory wainscot paneled wall | 0.85 | 0.6-1.0 | crisply moulded painted wood
+warm beige grasscloth wall covering | 0.75 | 0.7-1.0 | woven natural fiber texture
+soft champagne silk wall fabric | 0.7 | 0.6-1.0 | subtly lustrous draped cloth
+muted sage painted wall | 0.7 | 0.6-1.0 | matte chalky pigment
+pale blush wallpapered wall | 0.65 | 0.6-1.0 | softly floral printed paper
+warm taupe linen wall covering | 0.75 | 0.6-1.0 | gently woven natural cloth
+heavy ivory drape behind bed | 0.7 | 0.6-1.0 | richly cascading lined silk
+moulded ivory plaster wall | 0.65 | 0.6-1.0 | hand-finished smooth plaster
+classical pale blue painted wall | 0.6 | 0.6-1.0 | softly washed flat paint

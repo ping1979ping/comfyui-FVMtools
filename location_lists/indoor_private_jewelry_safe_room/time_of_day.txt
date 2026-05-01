@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright display lighting always on | 1.0 | - | -
+backlit glass cases glow | 0.95 | - | -
+diffuse cove ceiling ambient | 0.95 | - | -
+chandelier crystal warm evening | 0.85 | - | -
+single spot on featured piece | 0.85 | - | -
+amber accent dim hour | 0.7 | - | -
+midday display lighting | 0.85 | - | -
+late evening showcase glow | 0.8 | - | -
+backlit cabinet only night | 0.7 | - | -
+predawn dim accent only | 0.55 | - | -

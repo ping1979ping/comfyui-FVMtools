@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+cream lacquered cabinetry wall | 1.0 | 0.7-1.0 | smoothly glossy painted finish
+champagne mirrored back wall | 0.85 | 0.6-1.0 | softly antiqued reflective glass
+ivory upholstered cabinet door panels | 0.85 | 0.6-1.0 | gently buttoned tufted velvet
+walnut veneer fitted joinery | 0.9 | 0.7-1.0 | richly grained polished hardwood
+glass fronted display cabinetry | 0.85 | 0.6-1.0 | smoothly polished clear panes
+soft taupe felt lined wall | 0.7 | 0.6-1.0 | softly napped wool fabric
+mother of pearl inlay panel wall | 0.5 | 0.5-0.9 | iridescently shimmering shell mosaic
+pale rose gold metallic wall finish | 0.6 | 0.6-1.0 | softly brushed warm metal sheet
+patterned damask wallpapered alcove | 0.6 | 0.5-0.9 | softly raised flocked print
+black lacquered glossy cabinet wall | 0.55 | 0.6-1.0 | mirror polished deep finish
+ivory boiserie panelled wall | 0.75 | 0.6-1.0 | crisply moulded carved wood
+champagne silk fabric wall panels | 0.65 | 0.6-1.0 | softly draped lustrous cloth

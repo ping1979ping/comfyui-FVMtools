@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low altar shrine table | 1.0 | 0.15-0.3 | richly grained dark hardwood
+black tatami platform low | 0.95 | 0.25-0.5 | softly woven dark rush mat
+small stone buddha statue | 0.85 | 0.1-0.2 | softly carved aged grey stone
+hanging scroll calligraphy | 0.85 | 0.1-0.25 | softly inked rice paper
+sand garden box low table | 0.75 | 0.15-0.3 | finely raked white sand
+dark wood meditation bench | 0.85 | 0.1-0.25 | smoothly polished dark teak
+cast iron tea ceremony brazier | 0.65 | 0.1-0.2 | softly patinated dark cast iron
+shoji folding screen | 0.7 | 0.15-0.3 | softly translucent lattice paper
+small pond fountain in stone | 0.5 | 0.1-0.2 | softly trickling carved stone
+seiza stool low wood | 0.7 | 0.05-0.15 | smoothly grained dark wood

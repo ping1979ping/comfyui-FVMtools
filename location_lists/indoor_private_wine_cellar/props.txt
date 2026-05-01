@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+silver wine corkscrew classic | 0.7 | 0.01-0.04 | softly polished engraved metal
+brass wine pourer aerator | 0.6 | 0.01-0.03 | softly polished warm metal
+cheese wedge on wood board | 0.6 | 0.05-0.1 | softly aged crusted rind
+small basket of cured meats | 0.55 | 0.05-0.1 | softly textured aged charcuterie
+faded antique wine map framed | 0.6 | 0.05-0.15 | softly creased printed paper
+glass thermometer on rack | 0.6 | 0.01-0.02 | smoothly clear slim tube
+brass wine bottle tag set | 0.55 | 0.02-0.05 | softly polished engraved tags
+oak wine box with foam inserts | 0.55 | 0.05-0.15 | warmly grained natural pine
+wax sealed wine bottle | 0.65 | 0.02-0.05 | softly dripped colored wax
+single grape cluster ornament | 0.5 | 0.02-0.05 | softly cast pewter cluster
+silver tasting spoon | 0.5 | 0.01-0.02 | softly polished engraved metal
+old leather wine bottle wrap | 0.5 | 0.02-0.05 | softly cracked patinated hide

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+steam fog inside chamber | 1.0 | - | -
+heavy condensation on glass | 0.95 | - | -
+gentle rain heard outside | 0.65 | - | -
+muffled thunder beyond walls | 0.45 | - | -
+soft outside grey overcast filtering | 0.55 | - | -
+dim outside winter day | 0.5 | - | -
+clear quiet outside | 0.6 | - | -
+warm humid summer beyond | 0.55 | - | -
+cool dry winter beyond | 0.5 | - | -
+softly diffused outdoor light | 0.55 | - | -

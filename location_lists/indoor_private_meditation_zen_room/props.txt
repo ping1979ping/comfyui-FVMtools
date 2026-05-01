@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bronze meditation bell | 0.8 | 0.02-0.05 | softly polished tarnished metal
+small stack of sutra books | 0.65 | 0.02-0.05 | softly creased rice paper
+ceramic incense bowl with ash | 0.85 | 0.02-0.05 | softly glazed dark ceramic
+ink stone with brush set | 0.7 | 0.02-0.05 | smoothly carved dark slate
+dried bamboo stem in vase | 0.6 | 0.02-0.08 | softly grained dried cane
+small hand carved wood mala | 0.7 | 0.01-0.03 | smoothly turned dark beads
+brass tea pot kyusu | 0.65 | 0.02-0.08 | softly polished hammered metal
+unglazed clay tea cup pair | 0.7 | 0.02-0.05 | softly textured matte earthenware
+single zen pebble paperweight | 0.65 | 0.01-0.02 | smoothly polished river stone
+fan painted with cherry blossom | 0.55 | 0.02-0.05 | softly painted folded paper
+dried persimmon decoration | 0.5 | 0.01-0.03 | softly wrinkled aged fruit
+small wood gong on stand | 0.55 | 0.02-0.05 | smoothly carved hollow wood

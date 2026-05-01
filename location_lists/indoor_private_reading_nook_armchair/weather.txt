@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+gentle rain on bay window | 1.0 | - | -
+softly overcast outside | 0.9 | - | -
+clear bright autumn outside | 0.85 | - | -
+heavy rain pouring outside | 0.75 | - | -
+softly falling snow on sill | 0.85 | - | -
+foggy soft morning beyond | 0.7 | - | -
+windy autumn rustling outside | 0.7 | - | -
+sunny crisp winter outside | 0.7 | - | -
+muggy summer haze outside | 0.45 | - | -
+springtime drizzle beyond pane | 0.65 | - | -

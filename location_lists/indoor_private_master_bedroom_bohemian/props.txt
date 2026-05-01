@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stack of well-worn paperback novels | 0.7 | 0.02-0.08 | softly creased printed paper
+hand carved wooden incense holder | 0.7 | 0.02-0.05 | warmly grained turned wood
+brass tea pot on tray | 0.65 | 0.02-0.08 | softly hammered patinated metal
+clay pot with hanging pothos plant | 0.8 | 0.05-0.15 | matte unglazed earthenware
+amethyst geode chunk on shelf | 0.6 | 0.02-0.08 | sharply crystalline purple stone
+hand woven prayer flag string | 0.55 | 0.05-0.2 | softly flapping printed cotton
+beeswax taper candles in holder | 0.65 | 0.02-0.08 | softly textured natural wax
+embroidered fabric lampshade | 0.6 | 0.05-0.15 | richly stitched printed cotton
+small enamel painted box | 0.55 | 0.01-0.05 | smoothly glazed colorful metal
+carved sandalwood elephant figurine | 0.5 | 0.02-0.05 | smoothly polished aromatic wood
+hanging air plant in glass orb | 0.55 | 0.02-0.08 | smoothly blown clear glass
+tarot card deck on table | 0.5 | 0.01-0.05 | crisply printed cardstock

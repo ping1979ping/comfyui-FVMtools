@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+hollywood bulb lit vanity mirror | 1.0 | 0.2-0.4 | crisply gridded warm bulbs
+mirrored vanity dressing table | 0.95 | 0.25-0.5 | softly antiqued reflective glass
+pink velvet upholstered stool | 0.9 | 0.1-0.2 | softly piled tufted fabric
+glass shelf perfume display | 0.85 | 0.2-0.4 | smoothly polished clear panes
+gold framed full length mirror | 0.85 | 0.15-0.3 | softly burnished metallic frame
+acrylic clear vanity chair | 0.65 | 0.1-0.2 | smoothly cast clear lucite
+pink satin chaise lounge | 0.6 | 0.15-0.3 | softly draped lustrous fabric
+champagne velvet ottoman bench | 0.7 | 0.1-0.2 | richly piled lustrous fabric
+mirrored chest of drawers | 0.75 | 0.15-0.3 | softly antiqued reflective glass
+art deco fan back armchair | 0.6 | 0.15-0.3 | softly piled velvet seating

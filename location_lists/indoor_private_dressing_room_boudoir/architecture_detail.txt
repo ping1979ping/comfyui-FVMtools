@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+ornate carved ceiling cornice | 0.9 | 0.1-0.3 | crisply detailed gilt plaster
+rococo ceiling medallion gilt | 0.75 | 0.1-0.25 | richly cast gilded ornament
+herringbone parquet floor warm | 0.85 | 0.4-0.8 | warmly grained patterned wood
+gilt accent crown moulding | 0.8 | 0.05-0.15 | softly burnished metallic edge
+velvet draped curtains floor length | 0.85 | 0.15-0.4 | richly piled cascading fabric
+arched alcove with plaster detail | 0.6 | 0.1-0.25 | smoothly curved painted plaster
+panelled door with carved detail | 0.7 | 0.1-0.25 | richly worked painted wood
+small bay window upholstered seat | 0.55 | 0.1-0.25 | softly piled tufted velvet
+gilded ceiling rose center | 0.7 | 0.05-0.15 | richly burnished cast plaster
+deep painted skirting | 0.75 | 0.05-0.15 | crisply profiled painted wood

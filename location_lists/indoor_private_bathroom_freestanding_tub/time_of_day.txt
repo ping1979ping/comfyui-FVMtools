@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft cottage morning sun | 1.0 | - | -
+warm late afternoon glow | 0.9 | - | -
+midday country diffuse light | 0.85 | - | -
+candlelit evening soak | 0.95 | - | -
+amber sconce lit dusk | 0.85 | - | -
+predawn dim cool light | 0.5 | - | -
+twilight blue through window | 0.7 | - | -
+midmorning bright sunlight | 0.85 | - | -
+late evening warm glow | 0.75 | - | -
+firelit winter night | 0.55 | - | -

@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+diamond necklace on velvet bust | 1.0 | 0.05-0.15 | sharply faceted brilliant gems
+ring tray with diamond solitaires | 0.95 | 0.05-0.1 | softly napped lined fabric
+gold bracelet collection on tree | 0.85 | 0.05-0.15 | softly burnished warm metal
+emerald earring pair on stand | 0.85 | 0.02-0.05 | sharply faceted green gems
+black leather watch roll open | 0.85 | 0.05-0.15 | softly cracked patinated hide
+strung pearl rope on display | 0.7 | 0.05-0.15 | smoothly strung glossy beads
+loupe and tweezers on velvet | 0.7 | 0.02-0.05 | softly polished engraved metal
+silk lined ring box stack | 0.7 | 0.05-0.15 | softly napped lined fabric
+gold tiara on velvet pillow | 0.6 | 0.05-0.1 | softly burnished warm metal crown
+sapphire pendant on chain | 0.65 | 0.02-0.05 | sharply faceted blue gem

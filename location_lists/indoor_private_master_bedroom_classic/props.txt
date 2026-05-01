@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+leather bound book stack | 0.7 | 0.02-0.08 | softly aged tooled hide
+porcelain tea cup on saucer | 0.6 | 0.02-0.06 | smoothly glazed delicate ceramic
+crystal water decanter pair | 0.55 | 0.02-0.08 | sharply faceted clear glass
+silver hand mirror | 0.5 | 0.02-0.06 | softly polished engraved metal
+embroidered lace handkerchief | 0.5 | 0.01-0.05 | finely worked openwork cloth
+antique pocket watch on chain | 0.45 | 0.02-0.05 | softly burnished case brass
+cut glass jewelry box | 0.6 | 0.02-0.06 | sharply prismatic faceted crystal
+folded silk dressing gown | 0.55 | 0.05-0.15 | softly draped lustrous fabric
+brass framed family portrait | 0.55 | 0.02-0.08 | softly burnished metal frame
+ivory backed hairbrush | 0.5 | 0.01-0.05 | smoothly polished bone handle
+fresh cut roses in cut glass vase | 0.65 | 0.02-0.1 | softly velvety petals
+porcelain trinket dish with rings | 0.55 | 0.01-0.05 | smoothly glazed painted ceramic

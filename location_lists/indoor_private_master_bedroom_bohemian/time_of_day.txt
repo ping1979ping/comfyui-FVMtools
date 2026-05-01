@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+warm hazy afternoon through fabric | 1.0 | - | -
+golden hour amber glow | 0.95 | - | -
+soft morning filtered through curtains | 0.9 | - | -
+candlelit warm evening | 0.85 | - | -
+lantern glowing dusk | 0.8 | - | -
+incense smoky midnight | 0.6 | - | -
+predawn quiet blue | 0.5 | - | -
+midday warm shadow patterns | 0.75 | - | -
+late afternoon dappled light | 0.8 | - | -
+firelit late evening | 0.6 | - | -

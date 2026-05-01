@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+natural sea sponge in dish | 0.7 | 0.02-0.05 | softly textured porous fiber
+white pillar candle lit | 0.85 | 0.02-0.08 | softly textured natural wax
+wooden bath caddy with book | 0.65 | 0.05-0.15 | warmly grained teak slats
+silver hand cream tube | 0.6 | 0.01-0.04 | smoothly polished metal cylinder
+crystal jar of bath salts | 0.75 | 0.02-0.08 | sharply faceted clear glass
+folded face cloth stack | 0.65 | 0.02-0.08 | softly woven cotton terry
+brass small wastebasket | 0.55 | 0.02-0.08 | softly polished warm metal
+rolled paper bath bombs | 0.55 | 0.02-0.05 | softly crumbly compressed powder
+ceramic toothbrush holder | 0.7 | 0.01-0.04 | smoothly glazed white ceramic
+small terracotta pot of jasmine | 0.55 | 0.02-0.08 | matte unglazed earthenware
+fluted glass tumbler | 0.65 | 0.01-0.03 | sharply ribbed clear glass
+white linen napkin folded | 0.55 | 0.02-0.05 | crisply pressed cotton

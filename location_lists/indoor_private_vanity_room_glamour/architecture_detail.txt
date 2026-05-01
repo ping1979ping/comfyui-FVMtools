@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+art deco crown moulding | 0.85 | 0.1-0.3 | crisply detailed painted plaster
+mirrored ceiling panel center | 0.65 | 0.2-0.5 | smoothly reflective polished glass
+backlit cove ceiling perimeter | 0.85 | 0.1-0.3 | softly diffused glowing recess
+pink marble floor inlay | 0.7 | 0.4-0.8 | softly veined warm stone
+herringbone parquet floor light | 0.8 | 0.4-0.8 | warmly grained patterned wood
+sunburst medallion ceiling | 0.6 | 0.1-0.25 | crisply cast plaster ornament
+gold trim ceiling moulding | 0.7 | 0.05-0.15 | softly burnished metallic edge
+bay window seat alcove | 0.55 | 0.1-0.25 | softly upholstered curved nook
+panelled door with mirror inset | 0.7 | 0.1-0.25 | crisply framed reflective glass
+arched alcove with shelves | 0.6 | 0.1-0.25 | smoothly curved painted plaster

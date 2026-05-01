@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+cool led strip ambient | 1.0 | - | -
+red emergency lighting active | 0.85 | - | -
+single overhead fluorescent | 0.95 | - | -
+backup battery dim glow | 0.8 | - | -
+flashlight only no power | 0.7 | - | -
+fluorescent flickering low | 0.65 | - | -
+emergency lockdown amber | 0.7 | - | -
+monitor screens cool glow | 0.85 | - | -
+green night vision tint | 0.55 | - | -
+dim minimal overnight | 0.75 | - | -

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+gentle rain pattering on screens | 1.0 | - | -
+softly overcast still day | 0.95 | - | -
+clear quiet outside | 0.85 | - | -
+sunny crisp dawn outside | 0.8 | - | -
+softly falling snow beyond | 0.75 | - | -
+foggy mountain morning beyond | 0.75 | - | -
+windy bamboo rustling outside | 0.7 | - | -
+heavy rain steady outside | 0.7 | - | -
+springtime petals drifting outside | 0.6 | - | -
+muggy summer cicada outside | 0.55 | - | -

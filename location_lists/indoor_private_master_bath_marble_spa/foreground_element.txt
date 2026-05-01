@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stack of folded white spa towels | 0.95 | 0.05-0.15 | softly piled plush cotton
+brass faucet wall mounted | 0.9 | 0.02-0.08 | softly polished warm metal
+white orchid in marble pot | 0.8 | 0.05-0.15 | smoothly veined cool stone
+amber glass bath oil bottle | 0.75 | 0.02-0.08 | softly translucent warm glass
+silver tray with rolled towels | 0.7 | 0.05-0.15 | softly polished engraved metal
+crystal soap dispenser | 0.7 | 0.02-0.08 | sharply faceted clear glass
+white waffle weave bathrobe hung | 0.7 | 0.1-0.25 | softly textured cotton
+brass framed botanical print | 0.6 | 0.05-0.15 | crisply pressed paper print
+ceramic vase with eucalyptus | 0.7 | 0.05-0.15 | smoothly glazed white ceramic
+folded sheepskin bath rug | 0.65 | 0.1-0.25 | softly piled long fleece

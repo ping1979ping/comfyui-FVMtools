@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+white painted shelving wall | 1.0 | 0.7-1.0 | smoothly painted wood panels
+beadboard painted pantry wall | 0.95 | 0.7-1.0 | crisply slatted painted wood
+subway tile half height wall | 0.85 | 0.4-0.8 | crisply glazed ceramic rectangles
+cream painted plaster wall | 0.85 | 0.7-1.0 | smoothly washed soft pigment
+soft sage painted upper wall | 0.8 | 0.6-1.0 | matte chalky pigment
+white shaker cabinet front wall | 0.95 | 0.7-1.0 | crisply moulded painted doors
+butter yellow painted wall | 0.65 | 0.6-1.0 | softly washed warm pigment
+warm honey wood panelled wall | 0.7 | 0.6-1.0 | warmly grained timber
+grey painted bin storage wall | 0.7 | 0.6-1.0 | softly washed cool pigment
+glass front cabinetry wall | 0.85 | 0.6-1.0 | crisply framed clear panes
+checkerboard tiled backsplash wall | 0.55 | 0.4-0.8 | crisply tiled glazed pattern
+muted blue painted pantry wall | 0.6 | 0.6-1.0 | softly washed cool pigment

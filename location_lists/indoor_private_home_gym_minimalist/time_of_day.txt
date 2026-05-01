@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning energizing light | 1.0 | - | -
+cool midday training light | 0.9 | - | -
+warm late afternoon glow | 0.85 | - | -
+amber evening session lamp lit | 0.85 | - | -
+predawn cool blue motivation | 0.85 | - | -
+overcast bright daytime | 0.85 | - | -
+sunny crisp morning beam | 0.9 | - | -
+twilight ambient through glass | 0.7 | - | -
+late night focused single light | 0.7 | - | -
+midmorning bright direct | 0.85 | - | -

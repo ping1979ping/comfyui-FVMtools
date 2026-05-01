@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stacked water bottle case | 0.95 | 0.1-0.25 | smoothly polished translucent plastic
+mre ration boxes stack | 0.85 | 0.1-0.25 | crisply printed cardboard
+emergency blanket folded mylar | 0.85 | 0.05-0.15 | softly metallic foil sheet
+heavy duty flashlight on shelf | 0.85 | 0.02-0.08 | softly polished black aluminum
+red emergency phone handset | 0.7 | 0.02-0.08 | smoothly enameled bright plastic
+first aid kit hard case | 0.85 | 0.05-0.15 | crisply printed white plastic
+gas mask hung on hook | 0.7 | 0.05-0.15 | softly textured rubber straps
+hand crank radio on table | 0.65 | 0.02-0.08 | softly enameled rugged housing
+night vision goggles in case | 0.6 | 0.02-0.05 | softly powder coated dark plastic
+keypad locked safe panel | 0.85 | 0.05-0.15 | crisply machined matte steel

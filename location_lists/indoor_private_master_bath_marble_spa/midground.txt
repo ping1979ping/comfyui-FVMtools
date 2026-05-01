@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+freestanding sculptural soaking tub | 0.95 | 0.2-0.45 | smoothly cast white stone composite
+double marble vanity counter | 0.95 | 0.25-0.5 | richly veined polished slab
+floating walnut vanity cabinet | 0.85 | 0.2-0.4 | smoothly grained dark hardwood
+rainfall shower glass enclosure | 0.85 | 0.2-0.4 | crisply framed clear panes
+backlit framed bathroom mirror | 0.9 | 0.15-0.3 | softly glowing edge lit glass
+polished chrome towel ladder | 0.7 | 0.05-0.15 | softly mirror polished metal
+tufted velvet vanity stool | 0.6 | 0.05-0.15 | softly piled buttoned fabric
+brass framed full length mirror | 0.65 | 0.15-0.3 | softly polished warm metal frame
+double pedestal sink basin | 0.6 | 0.15-0.3 | smoothly glazed white porcelain
+marble topped bathroom island | 0.55 | 0.15-0.3 | richly veined cool stone slab

@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+curved kidney shape vanity desk | 1.0 | 0.25-0.5 | softly skirted draped fabric
+trifold deco vanity mirror | 0.95 | 0.2-0.4 | crisply framed beveled glass
+ivory tufted vanity bench | 0.95 | 0.1-0.2 | softly piled buttoned silk
+art deco fan back armchair | 0.85 | 0.15-0.3 | richly piled velvet seating
+satin draped ivory chaise | 0.7 | 0.15-0.3 | smoothly lustrous silk drape
+mirrored skirted dressing table | 0.85 | 0.25-0.5 | softly antiqued reflective glass
+deco brass floor lamp | 0.85 | 0.1-0.2 | softly polished warm metal stem
+silver leafed armoire | 0.65 | 0.2-0.4 | softly burnished metallic finish
+deco crystal bar cart | 0.6 | 0.1-0.2 | softly polished mirrored shelves
+black grand piano in corner | 0.45 | 0.2-0.4 | mirror polished ebony lacquer

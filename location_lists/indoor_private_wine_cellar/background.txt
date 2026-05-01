@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+aged stone vault wall | 1.0 | 0.7-1.0 | richly mortared rough masonry
+exposed brick barrel ceiling | 0.95 | 0.6-1.0 | warmly weathered aged kiln-fired
+reclaimed oak wine rack panel wall | 0.95 | 0.7-1.0 | richly grained dark hardwood
+limewashed cellar wall | 0.8 | 0.6-1.0 | softly mottled cream finish
+dark slate cellar wall | 0.75 | 0.6-1.0 | softly cleft riven stone
+rough cut limestone block wall | 0.85 | 0.6-1.0 | softly textured aged stone
+patinated copper panel wall | 0.6 | 0.5-0.9 | softly oxidized warm metal
+glass enclosure rear wall | 0.8 | 0.5-0.9 | smoothly polished clear pane
+reclaimed barrel stave wall | 0.75 | 0.6-1.0 | richly stained curved oak
+dark plaster cellar wall | 0.7 | 0.6-1.0 | softly mottled mineral finish
+exposed cellar tufa stone | 0.65 | 0.6-1.0 | softly pitted volcanic stone
+weathered oak plank wall | 0.7 | 0.6-1.0 | richly aged grained timber

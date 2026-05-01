@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stacked rubber medicine balls | 0.85 | 0.05-0.15 | softly textured matte rubber
+folded white gym towels stack | 0.85 | 0.05-0.15 | softly piled cotton terry
+chrome water bottle on bench | 0.85 | 0.02-0.05 | softly polished cool metal
+foam roller pair on floor | 0.85 | 0.05-0.15 | softly textured dense foam
+black resistance band looped | 0.75 | 0.02-0.08 | softly stretched matte rubber
+yoga mat rolled up vertical | 0.85 | 0.05-0.15 | softly textured rubber sheet
+weighted jump rope coiled | 0.7 | 0.02-0.05 | smoothly cabled black cord
+chalk bowl on rack | 0.65 | 0.02-0.05 | softly dusted white powder
+black wall mounted clock | 0.7 | 0.02-0.05 | smoothly enameled minimal face
+small towel bar with face cloth | 0.65 | 0.02-0.05 | softly polished metal rod

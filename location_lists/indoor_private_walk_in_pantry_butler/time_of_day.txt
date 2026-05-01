@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning prep light | 1.0 | - | -
+warm late afternoon glow | 0.85 | - | -
+midday fluorescent task light | 0.85 | - | -
+amber under cabinet evening | 0.95 | - | -
+cool overcast bright daytime | 0.85 | - | -
+golden hour through frosted glass | 0.85 | - | -
+twilight blue ambient | 0.65 | - | -
+predawn dim cool light | 0.55 | - | -
+sunny crisp morning beam | 0.85 | - | -
+late evening single bulb | 0.75 | - | -

@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stacked weck glass jars | 1.0 | 0.1-0.25 | smoothly polished clear glass
+labeled flour and sugar canisters | 0.95 | 0.1-0.25 | softly chalked handwritten tags
+woven storage baskets row | 0.9 | 0.15-0.3 | warmly woven natural willow
+neatly stacked white dinnerware | 0.85 | 0.1-0.25 | smoothly glazed white ceramic
+copper pot row gleaming | 0.85 | 0.1-0.25 | softly hammered warm metal
+folded white linen tea towels | 0.7 | 0.05-0.1 | softly piled cotton terry
+hanging dried herb bunches | 0.65 | 0.05-0.15 | softly bundled aromatic stems
+glass spice jar collection | 0.85 | 0.05-0.15 | smoothly polished clear glass
+small chalkboard inventory list | 0.7 | 0.05-0.15 | softly chalked dark slate
+ceramic crock with utensils | 0.7 | 0.02-0.08 | smoothly glazed white ceramic

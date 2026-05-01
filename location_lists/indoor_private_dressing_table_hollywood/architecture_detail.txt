@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+deco stepped ceiling cornice | 0.85 | 0.1-0.3 | crisply layered painted plaster
+sunburst ceiling medallion | 0.75 | 0.1-0.25 | softly burnished metallic ornament
+art deco fluted pilaster | 0.7 | 0.05-0.2 | crisply ribbed painted plaster
+black lacquer skirting board | 0.7 | 0.05-0.15 | mirror polished deep finish
+inlaid marble floor pattern | 0.7 | 0.4-0.8 | softly veined cool stone
+parquet de versailles oak floor | 0.7 | 0.4-0.8 | richly grained square pattern
+backlit deco sconce niche | 0.75 | 0.1-0.3 | softly diffused frosted glass
+curved arched doorway opening | 0.6 | 0.05-0.15 | smoothly stepped painted plaster
+deco inlay floor border | 0.6 | 0.1-0.25 | crisply tiled brass and stone
+mirrored deco trim wall band | 0.55 | 0.1-0.25 | softly polished beveled mirror

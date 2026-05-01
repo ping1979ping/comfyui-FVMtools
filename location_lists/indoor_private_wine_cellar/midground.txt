@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+floor to ceiling wine bottle racks | 1.0 | 0.4-0.7 | richly grained oak slots
+oak barrel stack on cradle | 0.85 | 0.2-0.4 | warmly stained banded staves
+small cellar tasting table | 0.85 | 0.15-0.3 | richly grained reclaimed wood
+leather club chair pair | 0.7 | 0.15-0.3 | softly cracked patinated hide
+glass front display cabinet | 0.7 | 0.15-0.3 | crisply framed clear panes
+wrought iron candelabrum | 0.7 | 0.1-0.2 | softly forged dark metal
+oak topped tasting island | 0.65 | 0.15-0.3 | richly grained polished wood
+old wooden ladder against shelf | 0.55 | 0.1-0.2 | warmly weathered aged timber
+metal mesh cellar gate | 0.6 | 0.1-0.25 | softly forged dark wrought iron
+hanging copper pendant lamp | 0.85 | 0.05-0.15 | softly polished warm metal

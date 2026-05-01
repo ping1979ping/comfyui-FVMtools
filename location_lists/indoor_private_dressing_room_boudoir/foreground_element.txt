@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+silk lingerie draped on chaise | 0.9 | 0.05-0.15 | softly draped lustrous fabric
+black lace robe on hook | 0.85 | 0.1-0.25 | finely worked openwork pattern
+satin slipper pair on rug | 0.7 | 0.02-0.08 | softly lustrous silk fabric
+velvet jewelry roll open | 0.75 | 0.05-0.15 | softly napped lined fabric
+crystal perfume atomizer set | 0.85 | 0.05-0.1 | sharply faceted clear glass
+strung pearl ropes on stand | 0.8 | 0.05-0.1 | smoothly strung glossy beads
+silk corset on dress form | 0.7 | 0.1-0.25 | softly laced lustrous fabric
+ostrich feather plume in vase | 0.65 | 0.05-0.15 | softly downy plumed display
+red velvet rose petals scattered | 0.55 | 0.05-0.15 | softly velvety strewn petals
+gilt framed nude oil painting | 0.6 | 0.1-0.25 | richly varnished oil paint

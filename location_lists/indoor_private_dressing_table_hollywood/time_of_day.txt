@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+deco sconce warm evening | 1.0 | - | -
+silver moonlit night | 0.85 | - | -
+amber lamplit dusk | 0.95 | - | -
+soft afternoon side light | 0.85 | - | -
+golden hour through silk drapes | 0.9 | - | -
+candlelit late night | 0.7 | - | -
+midmorning bright light | 0.75 | - | -
+predawn cool blue light | 0.5 | - | -
+twilight blue with sconces | 0.7 | - | -
+backlit alcove only glow | 0.7 | - | -

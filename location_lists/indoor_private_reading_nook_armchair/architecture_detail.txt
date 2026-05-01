@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+bay window with mullions | 0.95 | 0.15-0.4 | crisply painted divided panes
+arched recessed nook alcove | 0.85 | 0.2-0.5 | softly curved painted plaster
+wide painted plank floor | 0.85 | 0.4-0.8 | softly aged grained timber
+decorative ceiling crown moulding | 0.75 | 0.05-0.15 | crisply moulded painted plaster
+small fireplace mantel nearby | 0.7 | 0.1-0.25 | softly carved painted wood
+deep skirting board moulding | 0.85 | 0.05-0.15 | crisply profiled painted wood
+panelled door with knob | 0.65 | 0.1-0.25 | smoothly painted moulded wood
+exposed wood ceiling beam | 0.55 | 0.1-0.25 | warmly grained painted timber
+chair rail painted detail | 0.7 | 0.05-0.15 | crisply moulded painted wood
+braided rag rug on floor | 0.7 | 0.1-0.3 | softly piled woven cloth coil

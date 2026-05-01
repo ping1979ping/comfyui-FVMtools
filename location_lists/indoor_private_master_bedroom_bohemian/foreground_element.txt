@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+embroidered suzani throw pillow | 0.9 | 0.05-0.15 | richly stitched silk thread
+patchwork quilt bedspread | 0.85 | 0.2-0.4 | softly piled mixed cotton patches
+fringed wool blanket folded | 0.85 | 0.1-0.25 | warmly tasseled woven cloth
+strung jasmine garland over bed | 0.5 | 0.05-0.15 | softly delicate fresh flowers
+beaded curtain doorway tie back | 0.55 | 0.05-0.2 | smoothly strung wooden beads
+brass moroccan lantern hanging | 0.75 | 0.05-0.15 | intricately pierced softly glowing metal
+embroidered indian dupatta draped | 0.65 | 0.1-0.25 | softly flowing mirror-worked cloth
+woven pom pom edged throw | 0.7 | 0.1-0.25 | softly tasseled wool weave
+dreamcatcher above bed | 0.6 | 0.05-0.15 | softly feathered woven hoop
+crystal cluster on side table | 0.6 | 0.02-0.08 | sharply faceted natural quartz

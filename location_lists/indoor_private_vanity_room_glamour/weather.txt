@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright outside curtains | 0.95 | - | -
+softly overcast outside | 0.85 | - | -
+gentle rain streaking panes | 0.7 | - | -
+sunny crisp afternoon outside | 0.8 | - | -
+foggy soft beyond glass | 0.55 | - | -
+softly falling snow beyond | 0.55 | - | -
+windy day outside curtains | 0.5 | - | -
+heavy rain on glass | 0.55 | - | -
+muggy summer haze outside | 0.4 | - | -
+springtime shower beyond glass | 0.55 | - | -

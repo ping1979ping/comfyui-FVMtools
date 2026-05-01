@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy rain on tall windows | 0.85 | - | -
+distant thunder rumbling | 0.7 | - | -
+softly overcast atmospheric | 0.85 | - | -
+clear cold autumn outside | 0.75 | - | -
+softly falling snow beyond | 0.65 | - | -
+foggy noir night outside | 0.7 | - | -
+windy storm outside curtains | 0.6 | - | -
+sunny crisp afternoon outside | 0.5 | - | -
+muggy summer night outside | 0.45 | - | -
+springtime drizzle beyond | 0.5 | - | -

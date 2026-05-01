@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+vintage powder compact open | 0.7 | 0.01-0.04 | softly enameled metal case
+gold plated tweezers set | 0.55 | 0.01-0.03 | smoothly polished warm metal
+pink feather makeup puff | 0.65 | 0.01-0.04 | softly downy fluffed plumage
+crystal trinket dish with hairpins | 0.7 | 0.02-0.05 | sharply faceted clear glass
+glass nail polish bottle row | 0.85 | 0.05-0.1 | softly translucent colored liquid
+hair dryer in pink retro design | 0.55 | 0.05-0.15 | smoothly enameled curved plastic
+gold hand fan ornamental | 0.5 | 0.02-0.08 | softly burnished metallic blades
+pink rhinestone tiara on stand | 0.55 | 0.02-0.05 | sharply prismatic faceted gems
+faux fur stole on stool | 0.6 | 0.05-0.15 | softly piled luxurious fluff
+small glass cake stand with cosmetics | 0.65 | 0.05-0.1 | smoothly polished clear glass
+pink ribbon tied gift box | 0.55 | 0.02-0.05 | crisply printed glossy paper
+gilded picture frame photo | 0.55 | 0.02-0.08 | softly burnished metallic edge

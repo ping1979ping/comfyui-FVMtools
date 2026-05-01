@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cognac leather club chair pair | 1.0 | 0.25-0.5 | softly studded patinated hide
+walk in glass humidor cabinet | 0.95 | 0.25-0.5 | crisply framed clear panes
+brass pedestal smoking ashtray | 0.95 | 0.05-0.15 | softly polished tarnished metal
+small mahogany side tables pair | 0.85 | 0.1-0.25 | smoothly polished dark wood
+deco brass bar cart wheeled | 0.8 | 0.15-0.3 | softly polished warm metal frame
+caramel velvet ottoman | 0.7 | 0.05-0.15 | softly piled tufted fabric
+chesterfield leather sofa amber | 0.75 | 0.25-0.45 | softly tufted patinated hide
+freestanding cigar tower display | 0.75 | 0.15-0.3 | warmly grained polished wood
+brass standing floor lamp | 0.85 | 0.1-0.2 | softly polished tarnished metal
+pivoting reading lectern stand | 0.55 | 0.05-0.15 | smoothly polished warm wood

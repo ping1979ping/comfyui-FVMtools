@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+heart rate monitor watch | 0.7 | 0.01-0.02 | smoothly polished black face
+black weight lifting gloves pair | 0.7 | 0.02-0.05 | softly textured grip leather
+spray sanitizer bottle on bench | 0.75 | 0.01-0.03 | smoothly polished clear plastic
+black yoga block pair | 0.7 | 0.02-0.05 | softly textured dense foam
+small pump bottle of liniment | 0.55 | 0.01-0.02 | smoothly polished amber glass
+boxing gloves hung on hook | 0.6 | 0.05-0.1 | softly padded black leather
+weight plate pin holder | 0.55 | 0.02-0.05 | smoothly machined matte steel
+small fan portable on stand | 0.65 | 0.05-0.15 | smoothly enameled black blade housing
+gym bag on bench end | 0.65 | 0.05-0.15 | softly textured ballistic nylon
+fitness magazine on shelf | 0.5 | 0.02-0.05 | crisply printed glossy paper
+bluetooth speaker portable | 0.65 | 0.02-0.05 | smoothly enameled fabric mesh
+small protein shaker bottle | 0.6 | 0.01-0.03 | smoothly polished translucent plastic
