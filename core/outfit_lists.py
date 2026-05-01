@@ -1,6 +1,7 @@
 """Loads garment, fabric, and harmony data from .txt list files."""
 
 import os
+from typing import Optional
 
 from .config import get_config, _get_project_root
 
@@ -16,32 +17,101 @@ def _get_lists_path():
 
 
 def get_available_sets():
-    """Scan outfit_lists/ for subdirectories and return sorted names.
+    """Scan outfit_lists/ recursively for outfit sets.
 
-    Returns: list of str, e.g. ["business_female", "business_male", "general_female", "general_male"]
+    A directory is a "set" if it contains fabrics.txt (the structural anchor
+    file every outfit set has). Returned names are POSIX-form paths relative
+    to outfit_lists/ root, supporting both flat legacy slugs ("casual_female")
+    and hierarchical paths ("female/casual/general"). Hidden (.) and private
+    (_) dirs are skipped.
     """
     lists_path = _get_lists_path()
     if not os.path.isdir(lists_path):
         return []
 
     sets = []
-    for entry in os.listdir(lists_path):
-        full_path = os.path.join(lists_path, entry)
-        if os.path.isdir(full_path):
-            sets.append(entry)
-
+    for dirpath, dirnames, filenames in os.walk(lists_path):
+        dirnames[:] = [d for d in dirnames
+                       if not d.startswith("_") and not d.startswith(".")]
+        if "fabrics.txt" in filenames:
+            rel = os.path.relpath(dirpath, lists_path)
+            if rel != ".":
+                sets.append(rel.replace(os.sep, "/"))
+            dirnames.clear()
     return sorted(sets)
+
+
+def _resolve_legacy_outfit_slug(outfit_set: str, lists_path: str) -> Optional[str]:
+    """Map an old flat slug like 'business_female_dress' to its new hierarchical
+    path 'female/business/dress' if disk has it. Used as fallback so saved
+    workflow JSONs from before the hierarchy migration keep working.
+
+    Pattern: legacy slugs always contain 'female' or 'male' as a token. Tokens
+    before gender = style; tokens after gender = sub-variant (defaults to
+    'general' if absent). Multiple plausible style/sub splits are tried; the
+    first one that resolves to an existing directory is returned.
+    """
+    if "/" in outfit_set:
+        return None
+    tokens = outfit_set.split("_")
+    if "female" in tokens:
+        gender = "female"
+    elif "male" in tokens:
+        gender = "male"
+    else:
+        return None
+    gender_idx = tokens.index(gender)
+    combined = tokens[:gender_idx] + tokens[gender_idx + 1:]
+    if not combined:
+        return None
+    candidates = []
+    if len(combined) == 1:
+        candidates.append(f"{gender}/{combined[0]}/general")
+        candidates.append(f"{gender}/{combined[0]}")
+    else:
+        for split_at in range(1, len(combined)):
+            style = "_".join(combined[:split_at])
+            sub = "_".join(combined[split_at:])
+            candidates.append(f"{gender}/{style}/{sub}")
+        candidates.append(f"{gender}/{'_'.join(combined)}/general")
+    for cand in candidates:
+        if os.path.isdir(os.path.join(lists_path, cand)):
+            return cand
+    return None
+
+
+def _resolve_outfit_path(outfit_set: str, filename: str) -> Optional[str]:
+    """Resolve a (outfit_set, filename) pair to an absolute file path.
+
+    Tries the direct path first; if missing, applies the legacy slug fallback.
+    Returns None if neither resolves to an existing file.
+    """
+    lists_path = _get_lists_path()
+    direct = os.path.join(lists_path, outfit_set, filename)
+    if os.path.isfile(direct):
+        return direct
+    legacy = _resolve_legacy_outfit_slug(outfit_set, lists_path)
+    if legacy is None:
+        return None
+    fallback = os.path.join(lists_path, legacy, filename)
+    if os.path.isfile(fallback):
+        return fallback
+    return None
 
 
 def get_list_file_path(outfit_set, slot_name):
     """Returns absolute path to the .txt file for a given outfit set and slot.
 
     Args:
-        outfit_set: e.g. "general_female"
+        outfit_set: e.g. "general_female" or "female/general/default"
         slot_name: e.g. "top" or "fabrics"
 
-    Returns: str — absolute path to the .txt file
+    Returns: str — absolute path to the .txt file (existing or planned).
+    Resolves legacy flat slugs to their hierarchical equivalent when possible.
     """
+    resolved = _resolve_outfit_path(outfit_set, f"{slot_name}.txt")
+    if resolved is not None:
+        return resolved
     lists_path = _get_lists_path()
     return os.path.join(lists_path, outfit_set, f"{slot_name}.txt")
 
@@ -56,10 +126,8 @@ def load_garments(slot_name, outfit_set="general_female"):
     Returns: list of dicts:
     [{"name": "t-shirt", "probability": 0.85, "formality": (0.0, 0.3), "fabrics": ["cotton", "jersey"]}, ...]
     """
-    lists_path = _get_lists_path()
-    file_path = os.path.join(lists_path, outfit_set, f"{slot_name}.txt")
-
-    if not os.path.isfile(file_path):
+    file_path = _resolve_outfit_path(outfit_set, f"{slot_name}.txt")
+    if file_path is None:
         return []
 
     garments = []
@@ -104,10 +172,8 @@ def load_fabrics(outfit_set="general_female"):
 
     Returns: dict {"cotton": {"formality": 0.3, "family": "natural", "weight": "light"}, ...}
     """
-    lists_path = _get_lists_path()
-    file_path = os.path.join(lists_path, outfit_set, "fabrics.txt")
-
-    if not os.path.isfile(file_path):
+    file_path = _resolve_outfit_path(outfit_set, "fabrics.txt")
+    if file_path is None:
         return {}
 
     fabrics = {}
@@ -145,10 +211,8 @@ def load_prints(outfit_set="general_female"):
     [{"name": "floral print", "probability": 0.5, "slots": ["top","bottom"], "formality": (0.1, 0.6)}, ...]
     If prints.txt doesn't exist, returns empty list.
     """
-    lists_path = _get_lists_path()
-    file_path = os.path.join(lists_path, outfit_set, "prints.txt")
-
-    if not os.path.isfile(file_path):
+    file_path = _resolve_outfit_path(outfit_set, "prints.txt")
+    if file_path is None:
         return []
 
     prints = []
@@ -188,10 +252,8 @@ def load_texts(outfit_set="general_female"):
     [{"text": '"REBEL"', "probability": 0.3, "slots": ["top"], "font": "gothic font"}, ...]
     If texts.txt doesn't exist, returns empty list.
     """
-    lists_path = _get_lists_path()
-    file_path = os.path.join(lists_path, outfit_set, "texts.txt")
-
-    if not os.path.isfile(file_path):
+    file_path = _resolve_outfit_path(outfit_set, "texts.txt")
+    if file_path is None:
         return []
 
     texts = []

@@ -15,7 +15,7 @@ from core.location_engine import (
 )
 
 
-REQUIRED_SETS = ["outdoor_urban_brutalist", "outdoor_beach_mediterranean", "indoor_studio_minimal"]
+REQUIRED_SETS = ["outdoor/urban/brutalist", "outdoor/beach/mediterranean", "indoor/studio/minimal"]
 REQUIRED_FILES = [
     "background.txt",
     "midground.txt",

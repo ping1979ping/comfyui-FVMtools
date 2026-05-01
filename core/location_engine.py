@@ -61,16 +61,56 @@ def _location_lists_root() -> str:
 
 
 def get_available_location_sets() -> list[str]:
-    """Return location set directory names available on disk (sorted)."""
+    """Return location set names available on disk (sorted, POSIX-form).
+
+    Recursive scan: a directory is a "set" if it contains background.txt.
+    Returned names are paths relative to location_lists/ root with forward
+    slashes (e.g. "indoor/business/skyscraper_lobby" or legacy flat
+    "outdoor_urban_brutalist"). Hidden (.) and private (_) dirs are skipped.
+    """
     root = _location_lists_root()
     if not os.path.isdir(root):
         return []
     sets = []
-    for entry in sorted(os.listdir(root)):
-        full = os.path.join(root, entry)
-        if os.path.isdir(full) and not entry.startswith("_") and not entry.startswith("."):
-            sets.append(entry)
-    return sets
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames
+                       if not d.startswith("_") and not d.startswith(".")]
+        if "background.txt" in filenames:
+            rel = os.path.relpath(dirpath, root)
+            if rel != ".":
+                sets.append(rel.replace(os.sep, "/"))
+            dirnames.clear()
+    return sorted(sets)
+
+
+def _resolve_legacy_slug(location_set: str, root: str) -> Optional[str]:
+    """Map an old flat slug like 'indoor_business_skyscraper_lobby' to its
+    new hierarchical path 'indoor/business/skyscraper_lobby' if disk has it.
+
+    Used as a fallback so saved workflow JSONs from before the hierarchy
+    migration keep working. Returns the resolved POSIX path or None.
+    """
+    if "/" in location_set:
+        return None
+    for prefix in ("indoor_", "outdoor_"):
+        if not location_set.startswith(prefix):
+            continue
+        scope = prefix.rstrip("_")
+        tail = location_set[len(prefix):]
+        # Collapse stale double-prefix: indoor_indoor_activities_X → activities_X
+        if tail.startswith(scope + "_"):
+            tail = tail[len(scope) + 1:]
+        tokens = tail.split("_")
+        for split_at in range(1, len(tokens)):
+            cat = "_".join(tokens[:split_at])
+            rest = "_".join(tokens[split_at:])
+            candidate = f"{scope}/{cat}/{rest}"
+            if os.path.isdir(os.path.join(root, candidate)):
+                return candidate
+        candidate = f"{scope}/{tail}"
+        if os.path.isdir(os.path.join(root, candidate)):
+            return candidate
+    return None
 
 
 # ─── parsing ──────────────────────────────────────────────────────────
@@ -101,7 +141,12 @@ def load_location_elements(element_id: str, location_set: str) -> list[dict]:
     root = _location_lists_root()
     path = os.path.join(root, location_set, f"{element_id}.txt")
     if not os.path.isfile(path):
-        return []
+        legacy = _resolve_legacy_slug(location_set, root)
+        if legacy is None:
+            return []
+        path = os.path.join(root, legacy, f"{element_id}.txt")
+        if not os.path.isfile(path):
+            return []
 
     entries = []
     with open(path, "r", encoding="utf-8") as f:
@@ -155,7 +200,7 @@ def _build_fragment(element_id: str, name: str, texture: Optional[str]) -> str:
 # ─── generator ──────────────────────────────────────────────────────────
 
 
-def generate_location_records(seed: int, location_set: str = "outdoor_urban_brutalist",
+def generate_location_records(seed: int, location_set: str = "outdoor/urban/brutalist",
                                element_enables: Optional[dict[str, bool]] = None,
                                color_tone: Optional[str] = None) -> dict:
     """Pick one entry per enabled element, build prompt fragments with tokens.

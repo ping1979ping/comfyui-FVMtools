@@ -53,10 +53,24 @@ def test_at_least_one_set_discovered():
     assert ALL_SETS, "no location sets discovered on disk"
 
 
+def _set_scope(set_name: str) -> str:
+    """Return 'indoor' or 'outdoor' based on slug leading segment.
+
+    Supports both legacy flat slugs ('indoor_office_corporate_open_plan') and
+    hierarchical slugs ('indoor/office/corporate_open_plan'). Returns '' if
+    neither prefix matches.
+    """
+    if set_name.startswith("indoor_") or set_name.startswith("indoor/"):
+        return "indoor"
+    if set_name.startswith("outdoor_") or set_name.startswith("outdoor/"):
+        return "outdoor"
+    return ""
+
+
 @pytest.mark.parametrize("set_name", ALL_SETS)
 def test_set_has_indoor_or_outdoor_prefix(set_name):
-    assert set_name.startswith("indoor_") or set_name.startswith("outdoor_"), (
-        f"set '{set_name}' missing indoor_/outdoor_ prefix"
+    assert _set_scope(set_name), (
+        f"set '{set_name}' missing indoor/outdoor prefix (flat or hierarchical)"
     )
 
 
@@ -130,12 +144,11 @@ def test_no_banlist_violations(set_name, fname):
     """Indoor sets must not reference outdoor-only landscape tokens, and vice versa."""
     element_id = fname.replace(".txt", "")
     entries = load_location_elements(element_id, set_name)
-    if set_name.startswith("indoor_"):
+    scope = _set_scope(set_name)
+    if scope == "indoor":
         banlist = INDOOR_BANLIST
-        scope = "indoor"
     else:
         banlist = OUTDOOR_BANLIST
-        scope = "outdoor"
     for e in entries:
         lname = e["name"].lower()
         for token in banlist:
