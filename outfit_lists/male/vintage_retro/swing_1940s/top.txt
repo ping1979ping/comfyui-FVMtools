@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+crew tee | 0.40 | 0.0-0.2 | cotton
+work shirt | 0.45 | 0.0-0.3 | cotton,denim
+brushed shirt | 0.45 | 0.1-0.4 | flannel
+
+# mid-casual
+spearpoint-collar shirt | 0.55 | 0.2-0.6 | cotton
+twill shirt | 0.50 | 0.2-0.6 | gabardine
+striped dress shirt | 0.50 | 0.2-0.6 | cotton
+fitted knit pullover | 0.45 | 0.1-0.4 | wool
+brushed button-up | 0.45 | 0.1-0.4 | flannel
+
+# formal
+white dress shirt | 0.55 | 0.5-0.9 | cotton,silk
+striped dress shirt | 0.40 | 0.5-0.9 | chalkstripe
+worsted-weave dress shirt | 0.45 | 0.5-0.8 | worsted

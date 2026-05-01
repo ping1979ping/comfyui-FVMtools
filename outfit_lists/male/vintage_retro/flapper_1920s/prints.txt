@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+art deco motif | 0.4 | top,accessories | 0.3-0.7
+boater stripes | 0.4 | top,outerwear | 0.1-0.5
+herringbone motif | 0.4 | outerwear,bottom | 0.3-0.7
+houndstooth motif | 0.3 | top,outerwear | 0.3-0.7
+windowpane check | 0.3 | top,outerwear | 0.3-0.7
+chalkstripe motif | 0.3 | outerwear,bottom | 0.5-0.9
+glen check | 0.3 | outerwear | 0.4-0.8
+fair-isle motif | 0.3 | top | 0.1-0.5
+paisley print | 0.3 | accessories | 0.4-0.8
+foulard motif | 0.3 | accessories | 0.5-0.9

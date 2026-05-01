@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+target motif | 0.4 | top,outerwear | 0.1-0.5
+op art swirls | 0.4 | top | 0.1-0.5
+checkerboard pattern | 0.4 | top,outerwear | 0.2-0.6
+mod stripes | 0.4 | top | 0.1-0.5
+houndstooth motif | 0.3 | top,outerwear | 0.3-0.7
+windowpane check | 0.3 | top,outerwear | 0.3-0.7
+geometric blocks | 0.3 | top | 0.2-0.6
+dotty pattern | 0.2 | top | 0.1-0.5
+psychedelic swirls | 0.3 | top | 0.1-0.4
+floral motif | 0.2 | top | 0.1-0.5

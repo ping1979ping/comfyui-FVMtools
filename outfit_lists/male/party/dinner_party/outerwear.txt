@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tuxedo jacket | 0.55 | 0.6-0.7 | wool
+#color# fine wool blazer | 0.55 | 0.5-0.7 | wool
+#color# velvet dinner jacket | 0.50 | 0.5-0.7 | velvet
+#color# dinner waistcoat | 0.40 | 0.5-0.7 | wool
+#color# satin shawl-collar jacket | 0.45 | 0.6-0.7 | silk
+#color# cashmere overcoat | 0.35 | 0.5-0.7 | wool
+#color# refined sport coat | 0.45 | 0.5-0.7 | wool
+#color# formal vest | 0.40 | 0.5-0.7 | wool
+#color# black-tie jacket | 0.45 | 0.6-0.7 | wool

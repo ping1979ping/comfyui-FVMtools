@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+NX era duty trousers in earth blue | 0.95 | 0.0-0.9 | nomex,polyester
+flight crew jumpsuit pants matched to top | 0.75 | 0.2-0.7 | nomex,polyester
+formal envoy dress trousers with side stripe | 0.50 | 0.7-1.0 | wool,satin
+ambassador ceremonial slacks | 0.45 | 0.8-1.0 | satin,wool
+NX era utility cargo pants | 0.60 | 0.0-0.5 | nomex,canvas
+diplomatic mission slacks with creased front | 0.55 | 0.3-0.8 | wool,polyester
+captain duty trousers with rank stripe | 0.65 | 0.3-0.8 | nomex,polyester
+shore leave casual chinos | 0.30 | 0.0-0.3 | cotton
+formal mess parade trousers | 0.40 | 0.8-1.0 | wool,satin

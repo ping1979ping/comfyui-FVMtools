@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ceremonial chrome circlet with floating gem | 0.55 | 0.6-1.0 | metal,holographic
+iridescent diplomatic cap with chrome insignia | 0.50 | 0.5-0.9 | holographic,satin
+hooded ambassador cowl with embroidered glyphs | 0.45 | 0.5-0.9 | satin,silk
+fiber-optic crown with chrome edging | 0.45 | 0.6-1.0 | metal_mesh,plastic

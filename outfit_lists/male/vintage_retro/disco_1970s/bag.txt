@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fringed shoulder bag | 0.30 | 0.1-0.4 | suede,leather
+woven satchel | 0.30 | 0.0-0.4 | knit
+
+# mid-casual
+messenger pouch | 0.35 | 0.3-0.6 | suede
+saddle bag | 0.30 | 0.3-0.6 | leather
+
+# formal
+plush clutch | 0.20 | 0.6-0.9 | velvet
+patent portfolio | 0.25 | 0.5-0.8 | leather

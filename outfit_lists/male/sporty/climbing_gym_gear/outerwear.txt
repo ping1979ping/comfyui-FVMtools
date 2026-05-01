@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cozy pullover | 0.65 | 0.0-0.2 | fleece
+#color# softshell jacket | 0.60 | 0.0-0.2 | nylon,polyester
+#color# climbing hoodie | 0.65 | 0.0-0.2 | cotton,fleece
+#color# down-insulated vest | 0.45 | 0.1-0.3 | nylon
+#color# light puffer | 0.50 | 0.1-0.3 | nylon
+#color# windshell | 0.55 | 0.0-0.2 | nylon
+#color# half-zip pullover | 0.55 | 0.0-0.2 | fleece
+#color# rain shell | 0.40 | 0.0-0.2 | nylon

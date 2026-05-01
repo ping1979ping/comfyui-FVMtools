@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+team sponsor logos | 0.7 | top,outerwear | 0.0-0.3
+race kit graphics | 0.6 | top,bottom | 0.0-0.2
+national flag | 0.4 | top,headwear | 0.0-0.2
+brand wordmark | 0.5 | top,outerwear,bag | 0.0-0.3
+mountain stage badge | 0.3 | top | 0.0-0.2
+peloton chevron | 0.4 | top,outerwear | 0.0-0.2
+contrasting side panel | 0.5 | top,bottom | 0.0-0.2
+reflective stripe | 0.5 | top,outerwear,footwear | 0.0-0.3
+country jersey stripe | 0.4 | top | 0.0-0.2
+race number patch | 0.3 | top | 0.0-0.2
+abstract speedline | 0.4 | top,outerwear | 0.0-0.2

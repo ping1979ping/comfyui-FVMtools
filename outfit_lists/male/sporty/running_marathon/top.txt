@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# running singlet | 0.90 | 0.0-0.1 | polyester,mesh
+#color# performance running tee | 0.90 | 0.0-0.1 | polyester
+#color# sleeveless race vest | 0.75 | 0.0-0.1 | polyester
+#color# long-sleeve running top | 0.65 | 0.0-0.2 | polyester
+#color# compression shirt | 0.55 | 0.0-0.1 | spandex
+#color# featherweight tee | 0.70 | 0.0-0.2 | polyester,nylon
+#color# breathable mesh shirt | 0.65 | 0.0-0.1 | mesh
+#color# half-zip running top | 0.55 | 0.0-0.2 | polyester
+#color# elite race singlet | 0.65 | 0.0-0.1 | polyester
+#color# reflective running tee | 0.60 | 0.0-0.2 | polyester

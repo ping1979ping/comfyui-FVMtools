@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# slim dress shirt | 0.65 | 0.4-0.6 | cotton,silk
+#color# silky lounge shirt | 0.60 | 0.4-0.6 | silk
+#color# fitted polo | 0.55 | 0.3-0.5 | cotton,jersey
+#color# luxe henley | 0.50 | 0.4-0.6 | cotton
+#color# minimal turtleneck | 0.45 | 0.4-0.6 | wool
+#color# city button-up | 0.55 | 0.4-0.6 | cotton
+#color# satin party top | 0.50 | 0.4-0.6 | silk
+#color# refined camp shirt | 0.55 | 0.3-0.5 | cotton
+#color# sleek crewneck | 0.50 | 0.4-0.6 | cotton,jersey
+#color# cropped lounge top | 0.40 | 0.3-0.5 | jersey
+#color# evening fitted shirt | 0.50 | 0.4-0.6 | silk
+#color# sheer party shirt | 0.40 | 0.4-0.6 | polyester

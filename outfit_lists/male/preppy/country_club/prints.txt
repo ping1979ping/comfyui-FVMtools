@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+argyle pattern | 0.45 | top,outerwear | 0.3-0.7
+nautical stripes | 0.30 | top | 0.2-0.6
+embroidered crest | 0.40 | top,outerwear | 0.4-0.8
+diamond pattern | 0.35 | top,outerwear | 0.3-0.7
+pinstripe pattern | 0.30 | bottom | 0.5-0.8
+gingham check | 0.35 | top | 0.3-0.6
+plaid pattern | 0.40 | top,outerwear | 0.3-0.7
+madras check | 0.30 | top,bottom | 0.2-0.5
+houndstooth pattern | 0.30 | outerwear | 0.4-0.8
+windowpane check | 0.30 | outerwear | 0.4-0.8

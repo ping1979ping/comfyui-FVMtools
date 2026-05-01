@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# golf carry bag | 0.65 | 0.0-0.3 | nylon
+#color# stand bag | 0.70 | 0.0-0.3 | nylon,polyester
+#color# tour staff bag | 0.50 | 0.1-0.4 | leather
+#color# weekend kit duffel | 0.55 | 0.0-0.3 | leather,canvas
+#color# range tote | 0.45 | 0.0-0.3 | canvas
+#color# shoe bag | 0.45 | 0.0-0.3 | nylon
+#color# valuables pouch | 0.40 | 0.0-0.3 | nylon
+#color# club day pack | 0.45 | 0.1-0.4 | leather

@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sneakers | 0.80 | 0.2-0.4 | leather,canvas
+#color# high-tops | 0.55 | 0.2-0.4 | leather,canvas
+#color# slip-on shoes | 0.40 | 0.2-0.4 | canvas
+#color# basketball shoes | 0.45 | 0.2-0.3 | leather
+#color# skate shoes | 0.50 | 0.2-0.3 | canvas,suede
+#color# retro trainers | 0.55 | 0.2-0.4 | leather,suede
+#color# chunky sneakers | 0.40 | 0.2-0.4 | leather
+#color# casual loafers | 0.35 | 0.4-0.5 | leather,suede
+#color# desert boots | 0.30 | 0.3-0.5 | suede
+#color# athletic runners | 0.45 | 0.2-0.3 | polyester

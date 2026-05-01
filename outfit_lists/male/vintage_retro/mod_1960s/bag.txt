@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+canvas satchel | 0.30 | 0.0-0.3 | cotton
+record bag | 0.30 | 0.1-0.4 | cotton
+
+# mid-casual
+slim hide satchel | 0.35 | 0.3-0.6 | leather
+mod messenger bag | 0.30 | 0.2-0.5 | leather
+
+# formal
+slim briefcase | 0.30 | 0.5-0.8 | leather
+attache case | 0.25 | 0.6-0.9 | leather

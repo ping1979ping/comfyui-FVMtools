@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+loose skate jeans | 0.8 | 0.0-0.3 | denim
+khaki chinos | 0.5 | 0.0-0.3 | cotton,twill
+worn cargo shorts | 0.5 | 0.0-0.2 | cotton,ripstop,nylon,twill
+board shorts | 0.4 | 0.0-0.1 | polyester,nylon
+washed dickies | 0.6 | 0.0-0.3 | twill,cotton
+faded jeans | 0.6 | 0.0-0.3 | denim
+sweat shorts | 0.4 | 0.0-0.2 | cotton,fleece
+relaxed work pants | 0.4 | 0.0-0.3 | twill,canvas

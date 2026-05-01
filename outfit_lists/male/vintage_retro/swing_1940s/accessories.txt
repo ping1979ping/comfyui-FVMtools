@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+work suspenders | 0.40 | 0.0-0.3 | leather,cotton
+hide belt | 0.45 | 0.0-0.4 | leather
+
+# mid-casual
+classic suspenders | 0.45 | 0.2-0.6 | leather
+round eyeglasses | 0.40 | 0.2-0.6 | metal
+pocket watch chain | 0.40 | 0.3-0.7 | metal
+bow tie | 0.35 | 0.3-0.7 | silk
+
+# formal
+silken necktie | 0.55 | 0.5-0.9 | silk
+silken pocket square | 0.45 | 0.5-0.9 | silk
+gold tie clip | 0.35 | 0.5-0.9 | metal
+gold cufflinks | 0.30 | 0.5-0.9 | metal
+silver tie bar | 0.30 | 0.5-0.9 | metal

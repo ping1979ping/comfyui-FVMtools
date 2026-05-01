@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bow tie | 0.55 | 0.6-0.7 | metal
+necktie | 0.50 | 0.5-0.7 | metal
+silk pocket square | 0.50 | 0.5-0.7 | metal
+luxury watch | 0.55 | 0.5-0.7 | metal
+cufflinks | 0.45 | 0.6-0.7 | metal
+formal lapel pin | 0.35 | 0.5-0.7 | metal
+silk scarf | 0.30 | 0.5-0.7 | metal
+tie bar | 0.35 | 0.5-0.7 | metal
+elegant ring | 0.30 | 0.5-0.7 | metal
+formal belt | 0.40 | 0.5-0.7 | leather
+formal suspenders | 0.30 | 0.6-0.7 | metal

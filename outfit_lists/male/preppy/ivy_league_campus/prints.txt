@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+embroidered crest | 0.55 | top,outerwear | 0.3-0.8
+varsity letter | 0.45 | top,outerwear | 0.1-0.4
+team logo | 0.40 | top,outerwear | 0.1-0.4
+argyle pattern | 0.45 | top,outerwear | 0.3-0.7
+plaid pattern | 0.45 | top,outerwear | 0.3-0.7
+herringbone weave | 0.40 | outerwear | 0.4-0.8
+houndstooth pattern | 0.35 | outerwear | 0.4-0.8
+windowpane check | 0.35 | outerwear | 0.4-0.8
+striped repp | 0.35 | accessories | 0.4-0.7
+diamond pattern | 0.35 | top | 0.3-0.7
+gingham check | 0.30 | top | 0.3-0.6

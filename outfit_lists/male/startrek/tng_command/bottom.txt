@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+starfleet command duty trousers in black | 0.95 | 0.0-0.9 | spandex,lycra
+fitted bridge officer pants | 0.80 | 0.3-0.9 | spandex,lycra
+captain dress trousers with gold side stripe | 0.55 | 0.7-1.0 | satin,lycra
+command jumpsuit pants seamless to top | 0.70 | 0.2-0.8 | spandex,lycra
+admiral formal slacks with command piping | 0.40 | 0.8-1.0 | satin,lycra
+duty pants with utility belt loops | 0.50 | 0.0-0.6 | spandex,nylon
+off-duty lounge slacks in black | 0.30 | 0.0-0.3 | cotton,jersey
+command athletic trousers for ship recreation | 0.25 | 0.0-0.2 | cotton,jersey
+tapered uniform trousers with sharp crease | 0.65 | 0.3-0.9 | spandex,lycra
+field assignment cargo trousers | 0.35 | 0.0-0.4 | nylon,cotton

@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tennis sweater | 0.65 | 0.1-0.4 | merino,wool
+cable-knit pullover | 0.55 | 0.1-0.4 | merino,wool,cashmere
+v-neck pullover | 0.50 | 0.2-0.5 | merino,wool,cashmere
+cricket pullover | 0.55 | 0.1-0.5 | merino,wool
+windbreaker | 0.40 | 0.1-0.3 | nylon,polyester
+warm-up jacket | 0.45 | 0.1-0.3 | nylon,polyester
+match jacket | 0.40 | 0.1-0.3 | nylon,polyester
+
+# mid-casual
+shawl-collar cardigan | 0.45 | 0.2-0.5 | merino,wool
+cricket blazer | 0.40 | 0.3-0.6 | hopsack,wool
+
+# formal
+navy blazer | 0.45 | 0.4-0.8 | hopsack,worsted

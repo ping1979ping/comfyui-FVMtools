@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+borg drone tool servomotor pack | 0.40 | 0.0-0.6 | metal,plastic
+biomechanical drone backpack regenerator | 0.45 | 0.0-0.7 | metal,rubber
+collective drone power core bag | 0.35 | 0.0-0.6 | metal,nylon
+borg assimilation tubule storage hip pouch | 0.30 | 0.0-0.6 | rubber,metal
+drone hardware pack on flank | 0.35 | 0.0-0.6 | metal,nylon
+borg severed component carrier | 0.30 | 0.0-0.6 | nylon,metal
+drone manipulator arm carrying case | 0.25 | 0.0-0.5 | metal
+biomech servomotor satchel | 0.30 | 0.0-0.6 | metal,plastic

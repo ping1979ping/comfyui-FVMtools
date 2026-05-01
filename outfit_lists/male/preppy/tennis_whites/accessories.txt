@@ -1,0 +1,20 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+sweat band | 0.50 | 0.1-0.3 | terry
+wrist band | 0.45 | 0.1-0.3 | terry
+sport watch | 0.55 | 0.1-0.5 | metal,silicone
+braided belt | 0.40 | 0.2-0.5 | leather
+ribbon belt | 0.40 | 0.2-0.5 | grosgrain
+woven belt | 0.40 | 0.2-0.5 | leather
+
+# mid-casual
+classic belt | 0.50 | 0.3-0.7 | leather
+court bracelet | 0.30 | 0.2-0.5 | leather
+dress watch | 0.45 | 0.3-0.7 | metal,leather
+
+# formal
+striped tie | 0.30 | 0.5-0.8 | silk,grosgrain
+pocket square | 0.25 | 0.5-0.8 | silk,linen
+signet ring | 0.25 | 0.4-0.8 | metal

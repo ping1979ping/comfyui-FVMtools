@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic loafers | 0.65 | 0.4-0.6 | leather
+white sneakers | 0.75 | 0.3-0.5 | leather,canvas
+boat shoes | 0.45 | 0.3-0.5 | leather,suede
+espadrilles | 0.40 | 0.3-0.5 | canvas,jute
+driving shoes | 0.45 | 0.4-0.6 | suede
+penny loafers | 0.50 | 0.4-0.6 | leather
+horsebit loafers | 0.45 | 0.5-0.7 | leather
+chukka boots | 0.40 | 0.4-0.6 | suede,leather
+slip-on sneakers | 0.45 | 0.3-0.5 | canvas
+braided sandals | 0.30 | 0.2-0.4 | leather

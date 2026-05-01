@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+graphic tee | 0.40 | 0.0-0.3 | cotton
+ringer tee | 0.40 | 0.0-0.3 | cotton
+fitted polo | 0.45 | 0.1-0.4 | cotton,knit
+turtleneck shirt | 0.45 | 0.1-0.5 | knit,cotton
+
+# mid-casual
+wide-collar shirt | 0.55 | 0.2-0.6 | polyester,cotton
+disco shirt | 0.55 | 0.2-0.6 | polyester,satin
+butterfly-collar shirt | 0.50 | 0.2-0.6 | polyester
+deep-V pullover | 0.45 | 0.2-0.5 | knit
+patterned shirt | 0.50 | 0.2-0.6 | polyester,cotton
+
+# formal
+silky dress shirt | 0.50 | 0.4-0.8 | silk,satin
+metallic shirt | 0.45 | 0.5-0.9 | lurex,polyester
+sequined top | 0.40 | 0.5-0.9 | sequin

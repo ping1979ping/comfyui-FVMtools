@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+plain white tee | 0.50 | 0.0-0.2 | cotton
+greaser tee | 0.45 | 0.0-0.3 | cotton
+bowling shirt | 0.50 | 0.1-0.4 | cotton
+loop-collar shirt | 0.45 | 0.1-0.4 | cotton
+
+# mid-casual
+camp-collar shirt | 0.55 | 0.2-0.5 | cotton
+twill shirt | 0.50 | 0.2-0.6 | gabardine
+fitted button-up | 0.55 | 0.2-0.6 | cotton
+ricky jacket-shirt | 0.45 | 0.2-0.5 | gabardine
+brushed button-up | 0.45 | 0.1-0.4 | flannel
+varsity sweater | 0.45 | 0.2-0.5 | knit
+
+# formal
+spread-collar dress shirt | 0.50 | 0.4-0.8 | cotton,silk
+sharp dress shirt | 0.40 | 0.5-0.8 | sharkskin

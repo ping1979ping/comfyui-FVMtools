@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+fitted designer tee | 0.7 | 0.0-0.3 | cotton,jersey
+luxe pullover | 0.6 | 0.1-0.4 | cotton,fleece
+silk-blend shirt | 0.5 | 0.1-0.4 | polyester
+ribbed turtleneck | 0.5 | 0.1-0.4 | cotton,polyester
+slim polo shirt | 0.5 | 0.1-0.4 | cotton,polyester
+fashion crewneck | 0.5 | 0.0-0.3 | cotton,fleece
+fitted long sleeve | 0.5 | 0.0-0.3 | cotton,jersey
+button-up dress shirt | 0.4 | 0.1-0.4 | cotton,polyester
+cashmere-blend sweater | 0.4 | 0.1-0.4 | polyester
+designer graphic tee | 0.5 | 0.0-0.3 | cotton,jersey

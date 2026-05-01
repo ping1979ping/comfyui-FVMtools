@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chrome bowl helmet with face shield | 0.50 | 0.3-0.7 | metal,plastic
+mod beret with chrome insignia | 0.40 | 0.3-0.7 | nylon,satin
+oversized chrome sunglasses with rhinestone arms | 0.55 | 0.2-0.6 | plastic,metal
+chrome headband with geometric trim | 0.40 | 0.2-0.6 | metal,satin

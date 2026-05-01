@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flared jeans | 0.50 | 0.0-0.3 | denim
+bell-bottom jeans | 0.50 | 0.0-0.3 | denim
+corduroy flares | 0.45 | 0.1-0.4 | cotton
+
+# mid-casual
+flared trousers | 0.55 | 0.2-0.6 | polyester,cotton
+high-waisted slacks | 0.50 | 0.3-0.6 | polyester,wool
+checked flares | 0.45 | 0.2-0.5 | polyester
+plush flares | 0.40 | 0.3-0.7 | velvet
+
+# formal
+glossy trousers | 0.45 | 0.5-0.8 | satin,polyester
+metallic flares | 0.40 | 0.5-0.9 | lurex

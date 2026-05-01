@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+crew sweatshirt | 0.55 | 0.1-0.4 | fleece,jersey
+varsity tee | 0.50 | 0.1-0.3 | jersey,pima
+hooded pullover | 0.45 | 0.1-0.3 | fleece,jersey
+polo shirt | 0.65 | 0.2-0.5 | pique,jersey
+rugby top | 0.40 | 0.1-0.4 | jersey
+
+# mid-casual
+oxford shirt | 0.70 | 0.3-0.7 | poplin,broadcloth
+chambray shirt | 0.45 | 0.2-0.5 | denim,broadcloth
+turtleneck | 0.45 | 0.3-0.6 | merino,cashmere
+cable-knit pullover | 0.55 | 0.3-0.6 | merino,cashmere
+shetland sweater | 0.50 | 0.3-0.6 | wool,merino
+
+# formal
+button-down shirt | 0.65 | 0.4-0.8 | poplin,broadcloth
+spread collar shirt | 0.50 | 0.5-0.8 | poplin,broadcloth

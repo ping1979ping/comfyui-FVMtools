@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+worn wallet | 0.80 | 0.2-0.5 | leather
+chain wallet | 0.45 | 0.2-0.4 | metal,leather
+phone holster | 0.30 | 0.2-0.5 | leather,nylon
+slim card holder | 0.40 | 0.2-0.5 | leather
+utility pouch | 0.30 | 0.2-0.4 | canvas
+small messenger | 0.30 | 0.2-0.5 | canvas,leather
+hip pack | 0.30 | 0.2-0.4 | nylon
+bifold wallet | 0.65 | 0.2-0.5 | leather

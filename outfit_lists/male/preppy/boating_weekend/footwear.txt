@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+boat shoes | 0.80 | 0.1-0.4 | leather,suede
+deck shoes | 0.70 | 0.1-0.4 | leather,suede
+white sneakers | 0.50 | 0.1-0.3 | canvas,leather
+espadrilles | 0.45 | 0.1-0.3 | canvas,jute
+slip-on sneakers | 0.40 | 0.1-0.3 | canvas,leather
+sailing sneakers | 0.40 | 0.1-0.3 | canvas
+
+# mid-casual
+driving moccasins | 0.50 | 0.2-0.5 | leather,suede
+penny loafers | 0.50 | 0.3-0.7 | leather,suede
+
+# formal
+oxford shoes | 0.30 | 0.5-0.8 | leather

@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized blazer | 0.6 | 0.1-0.4 | polyester,twill
+designer puffer | 0.6 | 0.0-0.2 | nylon,polyester
+cropped bomber | 0.5 | 0.0-0.3 | nylon,polyester,leather
+luxe trench | 0.4 | 0.1-0.4 | cotton,polyester
+shearling-collar coat | 0.4 | 0.1-0.4 | leather
+wool overcoat | 0.4 | 0.1-0.4 | polyester
+designer hoodie | 0.5 | 0.0-0.2 | cotton,fleece
+varsity-style jacket | 0.4 | 0.0-0.3 | leather,cotton,twill

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+city skyline | 0.5 | top,outerwear | 0.0-0.3
+borough graphic | 0.4 | top,headwear | 0.0-0.3
+graffiti tag | 0.5 | top,outerwear | 0.0-0.3
+subway map | 0.3 | top,bag | 0.0-0.3
+street photography | 0.3 | top,outerwear | 0.0-0.3
+brand logo | 0.5 | top,headwear,bag | 0.0-0.4
+distressed details | 0.4 | top,bottom | 0.0-0.3
+embroidered logo | 0.4 | top,headwear,outerwear | 0.1-0.4
+oversized print | 0.4 | top,outerwear | 0.0-0.2
+typography graphic | 0.4 | top | 0.0-0.3

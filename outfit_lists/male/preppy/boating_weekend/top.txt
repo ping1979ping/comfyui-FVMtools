@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+striped polo | 0.65 | 0.1-0.4 | pique,jersey
+breton-stripe shirt | 0.55 | 0.1-0.4 | jersey,pima
+crew neck tee | 0.50 | 0.1-0.3 | jersey,pima
+short sleeve polo | 0.55 | 0.1-0.4 | pique,jersey
+camp collar shirt | 0.55 | 0.2-0.5 | poplin,broadcloth
+hawaiian shirt | 0.40 | 0.1-0.3 | poplin,viscose
+chambray shirt | 0.50 | 0.2-0.5 | denim,broadcloth
+
+# mid-casual
+oxford shirt | 0.55 | 0.3-0.6 | poplin,broadcloth
+summer shirt | 0.45 | 0.3-0.6 | seersucker
+fisherman pullover | 0.40 | 0.2-0.5 | merino,wool
+
+# formal
+spread collar shirt | 0.40 | 0.5-0.8 | poplin,broadcloth

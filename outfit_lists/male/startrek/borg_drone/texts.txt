@@ -1,0 +1,5 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"3 of 9" | 0.25 | accessories | hex display font
+"RESISTANCE IS FUTILE" | 0.15 | top | engraved metal font
+"COLLECTIVE" | 0.20 | accessories | block font

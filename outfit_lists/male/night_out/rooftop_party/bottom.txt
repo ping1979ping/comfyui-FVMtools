@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped chinos | 0.70 | 0.4-0.6 | cotton
+drawstring trousers | 0.55 | 0.3-0.5 | linen
+slim chinos | 0.65 | 0.4-0.6 | cotton
+white slim trousers | 0.50 | 0.4-0.6 | cotton,linen
+beige chinos | 0.55 | 0.4-0.6 | cotton
+tailored shorts | 0.45 | 0.3-0.5 | cotton,linen
+slim jeans | 0.55 | 0.3-0.5 | denim
+summer striped pants | 0.30 | 0.4-0.6 | seersucker
+pleated trousers | 0.40 | 0.4-0.6 | cotton,linen
+relaxed-fit chinos | 0.45 | 0.3-0.5 | cotton

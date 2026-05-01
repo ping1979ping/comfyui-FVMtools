@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+gold chain | 0.5 | 0.0-0.3 | cotton
+luxury watch | 0.5 | 0.0-0.3 | leather,nylon
+designer rings | 0.4 | 0.0-0.3 | cotton
+collab lanyard | 0.4 | 0.0-0.2 | nylon,polyester
+brand belt | 0.4 | 0.0-0.3 | leather,canvas,nylon
+luxe sunglasses | 0.5 | 0.0-0.3 | nylon
+silicone wristband | 0.3 | 0.0-0.2 | cotton
+crystal earring | 0.3 | 0.0-0.2 | cotton

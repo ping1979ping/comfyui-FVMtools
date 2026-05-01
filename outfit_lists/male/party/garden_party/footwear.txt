@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# loafers | 0.65 | 0.4-0.6 | leather,suede
+#color# boat shoes | 0.55 | 0.4-0.5 | leather
+#color# espadrilles | 0.50 | 0.3-0.5 | canvas
+#color# white sneakers | 0.55 | 0.3-0.5 | canvas,leather
+#color# tassel slip-ons | 0.45 | 0.4-0.6 | leather,suede
+#color# driving moccasins | 0.45 | 0.4-0.6 | leather,suede
+#color# brogue shoes | 0.50 | 0.4-0.6 | leather
+#color# court plimsolls | 0.45 | 0.3-0.5 | canvas
+#color# penny loafers | 0.50 | 0.4-0.6 | leather
+#color# dress sneakers | 0.40 | 0.4-0.6 | leather

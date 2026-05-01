@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+DS9 tactical security vest with magazine pouches | 0.65 | 0.0-0.6 | nylon,kevlar
+chief security long coat with operations gold trim | 0.45 | 0.2-0.7 | nylon,wool
+formal officer overcoat | 0.40 | 0.7-1.0 | satin,wool
+station patrol jacket with department patch | 0.55 | 0.2-0.7 | nylon,spandex
+breach assault armor vest | 0.40 | 0.0-0.5 | kevlar,nylon
+constable duty jacket with shoulder strap | 0.50 | 0.2-0.7 | nylon,spandex
+runabout flight jacket with mission patches | 0.45 | 0.2-0.7 | nylon,leather
+ceremonial security tunic with sash | 0.30 | 0.7-1.0 | satin
+formal mess dress overcoat with medals | 0.35 | 0.7-1.0 | wool,satin
+field commander duty cloak | 0.30 | 0.5-0.9 | wool,nylon

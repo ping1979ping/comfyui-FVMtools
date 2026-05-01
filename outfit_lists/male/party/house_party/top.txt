@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# graphic tee | 0.80 | 0.2-0.4 | cotton,jersey
+#color# printed shirt | 0.70 | 0.3-0.5 | cotton,polyester
+#color# henley shirt | 0.55 | 0.3-0.4 | cotton,jersey
+#color# crewneck top | 0.60 | 0.2-0.4 | cotton,jersey
+#color# slogan tee | 0.65 | 0.2-0.4 | cotton,jersey
+#color# vintage band tee | 0.55 | 0.2-0.4 | cotton,jersey
+#color# polo top | 0.45 | 0.3-0.5 | cotton,jersey
+#color# button-down shirt | 0.60 | 0.4-0.5 | cotton,polyester
+#color# camp collar shirt | 0.50 | 0.3-0.5 | cotton,polyester
+#color# striped tee | 0.45 | 0.2-0.4 | cotton,jersey
+#color# muscle tank | 0.30 | 0.2-0.3 | cotton,jersey
+#color# longsleeve top | 0.40 | 0.3-0.5 | cotton,jersey
+#color# pocket tee | 0.50 | 0.2-0.4 | cotton,jersey
+#color# baseball jersey top | 0.35 | 0.2-0.4 | polyester

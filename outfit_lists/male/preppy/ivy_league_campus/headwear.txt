@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+baseball cap | 0.30 | 0.1-0.3 | poplin
+campus cap | 0.25 | 0.1-0.3 | poplin
+beanie | 0.25 | 0.1-0.4 | merino,wool
+flat cap | 0.25 | 0.3-0.5 | tweed,hopsack
+fedora | 0.20 | 0.4-0.6 | felt,wool

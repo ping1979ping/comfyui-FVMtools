@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+campus shorts | 0.45 | 0.1-0.3 | twill,poplin
+tailored shorts | 0.45 | 0.2-0.4 | twill,poplin
+relaxed jeans | 0.40 | 0.1-0.3 | denim
+straight chinos | 0.65 | 0.3-0.6 | twill,poplin
+
+# mid-casual
+flat-front chinos | 0.65 | 0.3-0.6 | twill,poplin
+khaki pants | 0.55 | 0.3-0.6 | twill,poplin
+heritage pants | 0.40 | 0.3-0.6 | corduroy
+cuffed trousers | 0.45 | 0.3-0.7 | wool,gabardine
+
+# formal
+dress trousers | 0.50 | 0.5-0.8 | gabardine,worsted
+grey slacks | 0.40 | 0.5-0.8 | flannel,worsted

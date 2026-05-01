@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mission backpack with helmet clip | 0.55 | 0.1-0.6 | nylon,kevlar
+sample collection satchel | 0.45 | 0.1-0.5 | nylon,leather
+sling utility bag with patches | 0.55 | 0.0-0.5 | nylon,neoprene
+chrome-clasp briefcase | 0.30 | 0.5-0.9 | leather,metal_mesh
+hip pouch with mission crest | 0.50 | 0.0-0.5 | nylon,leather
+shoulder duffel with reinforced strap | 0.45 | 0.1-0.5 | nylon,kevlar
+oxygen-cell pouch with chrome clip | 0.45 | 0.1-0.6 | nylon,plastic
+chrome-rimmed tool case with shoulder strap | 0.40 | 0.1-0.6 | leather,metal_mesh

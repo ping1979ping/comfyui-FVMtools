@@ -1,0 +1,5 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"USS VOYAGER" | 0.25 | accessories | block font
+"NCC-74656" | 0.20 | accessories | stencil font
+"SCIENCE DIVISION" | 0.15 | top | bold block font

@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+field research kit shoulder bag | 0.50 | 0.0-0.6 | nylon,leather
+specimen collection case | 0.45 | 0.0-0.5 | plastic,nylon
+delta quadrant survey backpack | 0.45 | 0.0-0.5 | nylon
+duty officer satchel in science blue | 0.40 | 0.0-0.6 | nylon,leather
+science research case in hand | 0.35 | 0.3-0.8 | leather
+EV expedition pack with hydration | 0.35 | 0.0-0.4 | nylon,plastic
+formal aide briefcase | 0.25 | 0.7-1.0 | leather
+sample vial bandolier across chest | 0.30 | 0.0-0.5 | nylon
+shore leave duffel | 0.30 | 0.0-0.3 | nylon

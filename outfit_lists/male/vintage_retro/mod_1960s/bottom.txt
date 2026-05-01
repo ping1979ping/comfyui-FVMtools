@@ -1,0 +1,16 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+slim cropped jeans | 0.45 | 0.0-0.3 | denim
+hipster cords | 0.40 | 0.1-0.4 | corduroy
+
+# mid-casual
+slim trousers | 0.55 | 0.2-0.6 | wool,cotton
+ankle-length slacks | 0.50 | 0.2-0.6 | wool,cotton
+checked trousers | 0.45 | 0.2-0.5 | wool
+hipster pants | 0.45 | 0.2-0.5 | cotton,twill
+
+# formal
+mohair-blend trousers | 0.45 | 0.4-0.8 | mohair
+sharp tailored trousers | 0.50 | 0.4-0.8 | wool

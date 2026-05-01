@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floating polygon necklace with chrome chain | 0.55 | 0.1-0.5 | metal,plastic
+cybernetic glove with avatar display | 0.55 | 0.0-0.5 | metal,neoprene
+chunky chrome arm rings stacked | 0.50 | 0.0-0.4 | metal
+iridescent ear cuff with floating gem | 0.45 | 0.0-0.5 | holographic,metal
+glitch-print fingerless gloves with chrome studs | 0.55 | 0.0-0.4 | leather,mesh
+voxel-print utility belt with chrome buckle | 0.55 | 0.0-0.5 | nylon,leather
+iridescent wrist cuff with reactive panel | 0.50 | 0.0-0.5 | holographic,plastic
+chunky chrome chest emblem with floating particle | 0.45 | 0.1-0.5 | metal,plastic
+neon-glow ring stack on knuckles | 0.45 | 0.0-0.4 | metal,plastic
+LED hair clip arranged in row | 0.40 | 0.0-0.4 | plastic,metal

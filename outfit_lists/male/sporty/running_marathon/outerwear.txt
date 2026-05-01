@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# packable wind shell | 0.65 | 0.0-0.2 | nylon
+#color# running rain jacket | 0.55 | 0.0-0.2 | nylon
+#color# zip-up running hoodie | 0.55 | 0.0-0.2 | polyester
+#color# arm warmers | 0.55 | 0.0-0.1 | spandex
+#color# light running vest | 0.55 | 0.0-0.2 | nylon
+#color# half-zip pullover | 0.55 | 0.0-0.2 | polyester
+#color# thermal running jacket | 0.45 | 0.0-0.2 | polyester,fleece
+#color# space blanket cape | 0.30 | 0.0-0.1 | mylar

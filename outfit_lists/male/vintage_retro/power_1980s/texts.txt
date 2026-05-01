@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"MTV" | 0.2 | top | bold neon font
+"WALL STREET" | 0.15 | top | sharp serif
+"WORK HARD" | 0.15 | top | power font
+"YUPPIE" | 0.15 | top | bold sans serif
+"MIAMI VICE" | 0.2 | top | neon script
+"NEON" | 0.25 | top | neon glow font
+"RAD" | 0.2 | top | airbrush font
+"TOTALLY" | 0.15 | top | bold neon font
+"GREED IS GOOD" | 0.1 | top | sharp serif
+"POWER LUNCH" | 0.15 | top | bold serif
+"BOSS" | 0.2 | top | power font
+"1985" | 0.2 | top | digital font
+"MAX HEADROOM" | 0.15 | top | airbrush font

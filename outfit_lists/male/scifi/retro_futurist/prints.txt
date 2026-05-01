@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+geometric color-block panel | 0.65 | top,bottom,outerwear | 0.2-0.7
+chrome ring motif | 0.55 | top,outerwear | 0.3-0.7
+op-art swirl pattern | 0.50 | top | 0.2-0.6
+mod target circle | 0.50 | top,outerwear | 0.2-0.6
+chrome stripe accent | 0.55 | top,bottom,outerwear | 0.2-0.7
+space-age starburst | 0.45 | top,outerwear | 0.3-0.7
+peter pan collar trim | 0.45 | top,outerwear | 0.4-0.8
+chrome chevron motif | 0.50 | top,bottom | 0.2-0.6
+A-line color block | 0.50 | top,bottom,outerwear | 0.2-0.7
+geometric grid wash | 0.40 | top,bottom | 0.2-0.6

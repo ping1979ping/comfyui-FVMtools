@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+crest emblem | 0.6 | top,headwear,bag | 0.1-0.4
+country club logo | 0.6 | top,headwear,bag,outerwear | 0.1-0.4
+argyle pattern | 0.5 | top,outerwear,footwear | 0.1-0.4
+windowpane check | 0.4 | top,bottom | 0.1-0.4
+tonal stripe | 0.5 | top | 0.1-0.4
+houndstooth | 0.3 | top,outerwear,bottom | 0.1-0.4
+tartan plaid | 0.3 | top,outerwear,bottom | 0.1-0.4
+brand wordmark | 0.5 | top,headwear,bag | 0.0-0.3
+horizontal contrast band | 0.4 | top | 0.1-0.4
+geometric mini-print | 0.3 | top | 0.1-0.4

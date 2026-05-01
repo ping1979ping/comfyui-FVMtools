@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+embroidered crest | 0.55 | top,outerwear | 0.2-0.7
+court motif | 0.40 | top,accessories | 0.1-0.5
+racquet patch | 0.35 | top,outerwear | 0.1-0.4
+striped repp | 0.40 | accessories | 0.3-0.7
+nautical stripes | 0.35 | top | 0.2-0.5
+team logo | 0.40 | top,outerwear | 0.1-0.4
+cricket stripes | 0.35 | outerwear | 0.2-0.5
+v-stripe trim | 0.40 | outerwear,top | 0.1-0.5
+pin-dot pattern | 0.30 | top | 0.3-0.6
+embroidered emblem | 0.35 | top,outerwear | 0.2-0.6

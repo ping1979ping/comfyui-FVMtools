@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silver chain | 0.75 | 0.2-0.5 | metal
+chunky pendant | 0.45 | 0.2-0.5 | metal
+stud earring | 0.40 | 0.2-0.5 | metal
+multi-ring stack | 0.45 | 0.2-0.5 | metal
+black wristband | 0.40 | 0.2-0.5 | nylon
+glow stick bracelet | 0.30 | 0.0-0.3 | plastic
+choker collar | 0.30 | 0.2-0.5 | leather
+spiked bracelet | 0.30 | 0.2-0.5 | metal
+mirrored shades | 0.45 | 0.2-0.5 | metal,plastic
+chunky belt | 0.55 | 0.3-0.5 | leather
+chrome bangle | 0.30 | 0.2-0.5 | metal

@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# warmup jacket | 0.65 | 0.0-0.2 | polyester,nylon
+#color# zip-up hoodie | 0.60 | 0.0-0.2 | fleece,cotton
+#color# shooting shirt | 0.55 | 0.0-0.1 | polyester
+#color# glossy team jacket | 0.45 | 0.0-0.2 | satin
+#color# tearaway warmup top | 0.50 | 0.0-0.2 | polyester
+#color# pullover hoodie | 0.55 | 0.0-0.2 | fleece,cotton
+#color# letterman varsity jacket | 0.40 | 0.1-0.3 | wool,leather
+#color# track top | 0.50 | 0.0-0.2 | polyester
+#color# windbreaker | 0.45 | 0.0-0.2 | nylon

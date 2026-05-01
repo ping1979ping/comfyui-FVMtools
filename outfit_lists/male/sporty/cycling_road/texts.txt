@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PELOTON" | 0.25 | top | sport serif
+"WATTS" | 0.25 | top | bold typography
+"KOM" | 0.25 | top,headwear | bold stencil
+"BREAKAWAY" | 0.20 | top | sport serif
+"GRAND TOUR" | 0.20 | top | varsity font
+"ATTACK" | 0.20 | top | industrial bold
+"#42" | 0.20 | top | jersey number font
+"ECHELON" | 0.20 | top | sport serif
+"ROULEUR" | 0.15 | top | sport serif
+"PURE GRIT" | 0.20 | top | rugged serif
+"SUFFER WELL" | 0.20 | top | bold stencil
+"CHASING WHEELS" | 0.15 | top | sport serif
+"ALPE TIME" | 0.15 | top | varsity font

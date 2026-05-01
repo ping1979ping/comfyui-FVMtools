@@ -1,0 +1,16 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+parka | 0.45 | 0.1-0.4 | cotton
+harrington jacket | 0.50 | 0.1-0.4 | cotton
+jean jacket | 0.40 | 0.0-0.3 | denim
+
+# mid-casual
+slim mod blazer | 0.55 | 0.3-0.6 | wool,mohair
+checked sport coat | 0.45 | 0.3-0.6 | wool
+mohair-blend sport jacket | 0.45 | 0.3-0.7 | mohair
+
+# formal
+three-button suit jacket | 0.50 | 0.5-0.9 | wool,mohair
+plush evening blazer | 0.40 | 0.6-0.9 | velvet

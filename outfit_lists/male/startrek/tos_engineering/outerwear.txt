@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+engineering technical apron with tool loops | 0.50 | 0.0-0.5 | canvas,leather
+TOS field service jacket in gold | 0.45 | 0.2-0.7 | polyester,nylon
+mess dress overcoat with rank cuff | 0.35 | 0.7-1.0 | wool,satin
+chief engineer duty vest with insulation | 0.40 | 0.2-0.6 | nylon,canvas
+warp core radiation smock | 0.30 | 0.0-0.4 | canvas
+classic Kirk-style command wraparound jacket | 0.30 | 0.5-0.9 | velour,satin
+TOS away party windbreaker | 0.40 | 0.0-0.5 | nylon
+formal mess parade cape | 0.25 | 0.8-1.0 | satin,wool
+shipboard utility coverall jacket | 0.45 | 0.0-0.4 | cotton,canvas

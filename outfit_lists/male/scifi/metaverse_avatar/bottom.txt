@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+baggy pixel-art cargo with chunky cuffs | 0.70 | 0.0-0.4 | nylon,neoprene
+glitch-pattern leggings with reactive stripe | 0.65 | 0.0-0.4 | spandex,mesh
+voxel-print joggers with chrome cuff | 0.65 | 0.0-0.4 | nylon,neoprene
+iridescent shorts with floating polygon trim | 0.55 | 0.0-0.4 | holographic,spandex
+oversized parachute pants with avatar tag | 0.55 | 0.0-0.3 | nylon,mesh
+fitted iridescent leggings with neon outline | 0.55 | 0.1-0.5 | holographic,spandex
+chunky utility shorts with magnetic pouches | 0.55 | 0.0-0.4 | nylon,neoprene
+asymmetric pixel kilt with chrome belt | 0.40 | 0.1-0.5 | nylon,metal_mesh
+sheer mesh tights under cyber shorts | 0.45 | 0.0-0.3 | mesh,spandex
+particle-print joggers with glow hem | 0.55 | 0.0-0.4 | spandex,nylon

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mountain silhouette | 0.6 | top,outerwear,headwear | 0.0-0.3
+topographic line pattern | 0.4 | top,outerwear | 0.0-0.3
+boulder graphic | 0.4 | top,bag | 0.0-0.2
+crag map | 0.3 | top | 0.0-0.2
+carabiner icon | 0.3 | top,headwear | 0.0-0.2
+climbing brand logo | 0.6 | top,outerwear,bag,headwear | 0.0-0.3
+chalk handprint | 0.3 | top | 0.0-0.2
+expedition badge | 0.4 | top,outerwear | 0.0-0.2
+geometric peaks | 0.4 | top,outerwear | 0.0-0.3
+abstract crack pattern | 0.3 | top | 0.0-0.2
+route number stencil | 0.3 | top | 0.0-0.2

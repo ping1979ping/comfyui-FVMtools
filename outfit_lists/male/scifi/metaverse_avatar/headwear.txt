@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+VR avatar headset with chrome frame | 0.60 | 0.0-0.6 | plastic,metal
+oversized cyber cap with floating particle | 0.50 | 0.0-0.4 | nylon,plastic
+iridescent visor with pixel HUD | 0.55 | 0.0-0.5 | holographic,plastic
+chunky pixel beanie with glow stripe | 0.40 | 0.0-0.3 | mesh,nylon
+iridescent earband with neon nodes | 0.40 | 0.0-0.4 | holographic,plastic

@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GROOVY" | 0.2 | top | psychedelic font
+"DISCO" | 0.25 | top | neon sign font
+"FUNK" | 0.2 | top | retro bubble font
+"BOOGIE" | 0.2 | top | disco glitter font
+"PEACE" | 0.2 | top | hippie script
+"LOVE" | 0.2 | top | hippie script
+"SUPERFLY" | 0.15 | top | psychedelic font
+"FOXY" | 0.15 | top | disco glitter font
+"STUDIO 54" | 0.15 | top | neon sign font
+"LET'S DANCE" | 0.15 | top | retro bubble font
+"FAR OUT" | 0.15 | top | psychedelic font
+"NIGHT FEVER" | 0.15 | top | neon sign font
+"DYNAMITE" | 0.15 | top | retro bubble font

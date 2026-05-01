@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+pinstripe motif | 0.4 | top,outerwear,bottom | 0.4-0.9
+chalkstripe motif | 0.3 | outerwear,bottom | 0.5-0.9
+windowpane check | 0.3 | top,outerwear | 0.3-0.7
+houndstooth motif | 0.4 | top,outerwear | 0.3-0.7
+glen check | 0.3 | outerwear | 0.4-0.8
+herringbone motif | 0.4 | outerwear | 0.3-0.7
+gingham check | 0.3 | top | 0.1-0.5
+floral tie print | 0.2 | accessories | 0.4-0.8
+paisley print | 0.2 | accessories | 0.4-0.8
+foulard motif | 0.3 | accessories | 0.5-0.9

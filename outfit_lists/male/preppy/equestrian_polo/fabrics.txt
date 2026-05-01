@@ -1,0 +1,26 @@
+# format: fabric_name | formality | family | weight
+pique | 0.25 | natural | medium
+jersey | 0.2 | natural | light
+pima | 0.3 | natural | light
+poplin | 0.35 | natural | light
+broadcloth | 0.4 | natural | medium
+twill | 0.4 | natural | medium
+gabardine | 0.55 | natural | medium
+worsted | 0.65 | natural | medium
+hopsack | 0.6 | natural | medium
+moleskin | 0.4 | natural | medium
+tweed | 0.6 | natural | heavy
+wool | 0.5 | natural | heavy
+merino | 0.5 | luxury | medium
+cashmere | 0.8 | luxury | medium
+silk | 0.85 | luxury | light
+waxed-cotton | 0.4 | natural | medium
+canvas | 0.2 | natural | medium
+leather | 0.45 | tough | heavy
+suede | 0.4 | tough | medium
+velvet | 0.6 | luxury | medium
+felt | 0.4 | natural | medium
+nylon | 0.2 | synthetic | light
+polyester | 0.2 | synthetic | light
+metal | 0.5 | luxury | heavy
+straw | 0.3 | natural | light

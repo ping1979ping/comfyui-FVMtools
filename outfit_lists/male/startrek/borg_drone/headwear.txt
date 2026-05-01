@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+borg ocular processor visor | 0.50 | 0.0-1.0 | metal,plastic
+drone cranial integration helm | 0.40 | 0.0-1.0 | metal
+biomech head exoskeletal frame | 0.35 | 0.0-1.0 | metal,plastic
+collective interlink scalp grid | 0.30 | 0.0-1.0 | metal

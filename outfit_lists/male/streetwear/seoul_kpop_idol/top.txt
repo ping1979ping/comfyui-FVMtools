@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+cropped pullover | 0.6 | 0.0-0.2 | cotton,fleece
+oversized statement tee | 0.7 | 0.0-0.3 | cotton,jersey
+fitted long sleeve | 0.5 | 0.0-0.2 | cotton,jersey
+designer crewneck | 0.5 | 0.0-0.2 | cotton,fleece
+tucked white tee | 0.6 | 0.0-0.3 | cotton,jersey
+silk-blend shirt | 0.4 | 0.1-0.4 | polyester
+net layered top | 0.4 | 0.0-0.2 | mesh,polyester
+button-down with vest | 0.4 | 0.1-0.4 | cotton,polyester
+fitted polo | 0.4 | 0.1-0.4 | cotton,polyester
+ribbed turtleneck | 0.4 | 0.1-0.4 | cotton,polyester

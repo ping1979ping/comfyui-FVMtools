@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+gps running watch | 0.85 | 0.0-0.2 | rubber,plastic
+#color# heart-rate strap | 0.55 | 0.0-0.1 | nylon,plastic
+#color# race bib | 0.65 | 0.0-0.1 | paper
+#color# hydration belt | 0.50 | 0.0-0.1 | nylon
+#color# sweat-wicking sleeves | 0.45 | 0.0-0.1 | spandex
+#color# running gloves | 0.40 | 0.0-0.2 | spandex
+#color# headlamp | 0.30 | 0.0-0.1 | plastic
+#color# energy gel pouch | 0.40 | 0.0-0.1 | nylon
+#color# reflective vest | 0.45 | 0.0-0.1 | nylon
+#color# sunglasses | 0.55 | 0.0-0.2 | plastic

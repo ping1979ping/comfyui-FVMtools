@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+chore coat | 0.40 | 0.0-0.3 | cotton
+airy sport coat | 0.40 | 0.1-0.4 | linen
+
+# mid-casual
+norfolk jacket | 0.45 | 0.2-0.5 | tweed
+heritage sport coat | 0.50 | 0.3-0.7 | tweed
+heritage jacket | 0.45 | 0.3-0.7 | herringbone
+boater stripe blazer | 0.45 | 0.2-0.5 | cotton,linen
+
+# formal
+three-piece suit jacket | 0.55 | 0.5-0.9 | wool,worsted
+striped suit jacket | 0.45 | 0.5-0.9 | chalkstripe
+morning coat | 0.40 | 0.7-0.9 | wool
+overcoat | 0.45 | 0.5-0.9 | wool

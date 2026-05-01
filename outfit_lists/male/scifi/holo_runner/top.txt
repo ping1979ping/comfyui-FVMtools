@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+iridescent racing shirt with shoulder cutouts | 0.80 | 0.1-0.5 | holographic,spandex
+fitted aero top with reactive panels | 0.75 | 0.2-0.6 | spandex,neoprene
+sleeveless speed bodysuit with chrome zipper | 0.70 | 0.1-0.5 | spandex,holographic
+mesh-paneled long-sleeve with glow seams | 0.60 | 0.0-0.4 | mesh,spandex
+high-neck compression shirt with circuit lines | 0.65 | 0.1-0.5 | spandex,neoprene
+iridescent singlet with cross-back straps | 0.55 | 0.1-0.5 | holographic,spandex
+zipped racer jersey with rank stripe | 0.60 | 0.2-0.6 | neoprene,nylon
+fitted compression vest with reactive light strip | 0.50 | 0.0-0.4 | spandex,mesh
+asymmetric one-shoulder racer | 0.55 | 0.1-0.5 | spandex,holographic
+cropped windbreaker with chrome zipper | 0.55 | 0.0-0.4 | nylon,neoprene
+ribbed performance turtleneck | 0.50 | 0.1-0.5 | spandex,mesh

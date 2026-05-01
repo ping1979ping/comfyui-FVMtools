@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"HOOPS" | 0.30 | top,headwear | varsity font
+"COURT KING" | 0.25 | top | bold block letters
+"23" | 0.30 | top | jersey number font
+"BALL OUT" | 0.25 | top | athletic font
+"SHOOTERS" | 0.20 | top | jersey font
+"PICKUP" | 0.20 | top | varsity bold
+"RUN IT BACK" | 0.20 | top | athletic block
+"GAME 7" | 0.20 | top | jersey number font
+"NOTHING BUT NET" | 0.20 | top | varsity font
+"STREETBALL" | 0.25 | top,headwear | bold block letters
+"BUCKETS" | 0.20 | top | jersey font
+"HOOP DREAMS" | 0.20 | top | athletic font
+"TRIPLE DOUBLE" | 0.15 | top | varsity bold

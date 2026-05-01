@@ -1,0 +1,22 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+cotton | 0.2 | natural | medium
+denim | 0.2 | tough | heavy
+flannel | 0.3 | natural | medium
+
+# mid-range fabrics
+gabardine | 0.45 | natural | medium
+herringbone | 0.5 | natural | heavy
+suede | 0.4 | tough | medium
+leather | 0.45 | tough | heavy
+wool | 0.5 | natural | heavy
+tweed | 0.55 | natural | heavy
+
+# formal fabrics
+silk | 0.85 | luxury | light
+worsted | 0.65 | luxury | medium
+chalkstripe | 0.7 | luxury | medium
+
+# special materials
+metal | 0.5 | luxury | heavy

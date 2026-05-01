@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim suit pants | 0.75 | 0.5-0.7 | wool,polyester
+black evening trousers | 0.70 | 0.5-0.7 | wool,polyester
+shiny dress pants | 0.55 | 0.4-0.6 | polyester
+crisp white trousers | 0.45 | 0.4-0.6 | cotton,linen
+dark slim jeans | 0.55 | 0.3-0.5 | denim
+tailored chinos | 0.50 | 0.4-0.6 | cotton
+metallic-thread trousers | 0.30 | 0.4-0.6 | polyester,lurex
+pleated dress pants | 0.45 | 0.5-0.7 | wool
+slim black jeans | 0.50 | 0.3-0.5 | denim

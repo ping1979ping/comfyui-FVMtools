@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+riding boots | 0.65 | 0.2-0.6 | leather
+paddock boots | 0.55 | 0.2-0.5 | leather
+chelsea boots | 0.50 | 0.3-0.6 | leather,suede
+field boots | 0.50 | 0.2-0.6 | leather
+
+# mid-casual
+penny loafers | 0.45 | 0.3-0.7 | leather,suede
+country brogues | 0.45 | 0.3-0.7 | leather,suede
+desert boots | 0.40 | 0.2-0.5 | suede,leather
+
+# formal
+oxford shoes | 0.40 | 0.5-0.8 | leather
+cap-toe shoes | 0.40 | 0.5-0.8 | leather
+double-monk straps | 0.35 | 0.5-0.8 | leather

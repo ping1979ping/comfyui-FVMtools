@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+batleth blade strapped across back | 0.85 | 0.0-1.0 | metal
+mekleth dagger on hip | 0.70 | 0.0-1.0 | metal
+klingon house sigil pendant on chest | 0.80 | 0.2-1.0 | metal
+disruptor pistol holstered on belt | 0.65 | 0.0-0.8 | metal,plastic
+warrior trophy belt of fang teeth | 0.55 | 0.0-0.8 | leather,metal
+klingon imperial pin on collar | 0.60 | 0.3-1.0 | metal
+chancellor sash across torso | 0.40 | 0.7-1.0 | satin
+warrior battle scar makeup on cheek | 0.50 | 0.0-1.0 | plastic
+ceremonial gauntlet with spike studs | 0.55 | 0.2-1.0 | metal,leather
+warrior wrist communicator | 0.45 | 0.2-0.8 | metal,plastic
+high council ring with crest | 0.30 | 0.5-1.0 | metal
+klingon dishonor scar tracery | 0.35 | 0.0-0.8 | plastic

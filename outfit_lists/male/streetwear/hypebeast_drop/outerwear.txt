@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+limited-edition puffer | 0.7 | 0.0-0.2 | nylon,polyester
+collab bomber | 0.6 | 0.0-0.3 | nylon,polyester,leather
+hyped windbreaker | 0.5 | 0.0-0.2 | nylon,ripstop,polyester
+designer hoodie | 0.6 | 0.0-0.2 | cotton,fleece
+varsity-style jacket | 0.4 | 0.0-0.3 | leather,cotton,twill
+flight jacket | 0.4 | 0.0-0.3 | nylon,polyester
+zip-up shell | 0.4 | 0.0-0.2 | nylon,ripstop

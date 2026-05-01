@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GREASE" | 0.2 | top | rockabilly script
+"ROUTE 66" | 0.2 | top | retro font
+"HOT ROD" | 0.2 | top | hot rod lettering
+"BOWLING LEAGUE" | 0.15 | top | bowling shirt font
+"DRIVE-IN" | 0.15 | top | retro neon
+"DINER" | 0.2 | top | diner font
+"ROCK AND ROLL" | 0.15 | top | rockabilly script
+"CADILLAC" | 0.15 | top | hot rod lettering
+"VARSITY" | 0.2 | top | varsity font
+"FLAT TOP" | 0.15 | top | retro font
+"DRAG STRIP" | 0.15 | top | hot rod lettering

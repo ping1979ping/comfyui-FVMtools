@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SWING TIME" | 0.2 | top | swing era script
+"HEPCAT" | 0.15 | top | jazz font
+"JITTERBUG" | 0.15 | top | swing era script
+"BIG BAND" | 0.2 | top | jazz font
+"HARLEM" | 0.15 | top | jazz font
+"JIVE" | 0.2 | top | swing era script
+"VICTORY" | 0.15 | top | military stencil
+"USO" | 0.15 | top | military stencil
+"HEY DADDIO" | 0.15 | top | swing era script
+"BROADWAY" | 0.15 | top | art deco font
+"COTTON CLUB" | 0.15 | top | jazz font
+"DUKE" | 0.15 | top | swing era script
+"BOOGIE WOOGIE" | 0.15 | top | jazz font

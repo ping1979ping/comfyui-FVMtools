@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tailored shorts | 0.55 | 0.2-0.4 | poplin,twill
+striped shorts | 0.45 | 0.2-0.4 | seersucker
+madras shorts | 0.40 | 0.2-0.4 | poplin
+nantucket reds | 0.40 | 0.2-0.4 | twill
+
+# mid-casual
+flat-front chinos | 0.65 | 0.3-0.6 | twill,poplin
+linen trousers | 0.55 | 0.3-0.6 | linen-blend
+white trousers | 0.50 | 0.3-0.6 | twill,linen-blend
+cuffed trousers | 0.45 | 0.3-0.6 | linen-blend,twill
+striped pants | 0.45 | 0.3-0.6 | seersucker
+
+# formal
+dress trousers | 0.45 | 0.5-0.8 | gabardine,worsted

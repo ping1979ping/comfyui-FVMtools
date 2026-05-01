@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+minimal watch | 0.55 | 0.4-0.6 | metal
+silver chain | 0.45 | 0.3-0.5 | metal
+designer sunglasses | 0.50 | 0.3-0.5 | metal
+sleek belt | 0.45 | 0.4-0.6 | leather
+luxury ring | 0.35 | 0.4-0.6 | metal
+slim tie | 0.30 | 0.4-0.6 | metal
+pocket square | 0.35 | 0.4-0.6 | metal
+ear stud | 0.30 | 0.3-0.5 | metal
+city pendant | 0.35 | 0.3-0.5 | metal
+minimalist bracelet | 0.30 | 0.3-0.5 | metal

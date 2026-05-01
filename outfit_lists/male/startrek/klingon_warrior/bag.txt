@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+warrior battle satchel of trophies | 0.45 | 0.0-0.6 | leather,metal
+klingon imperial dispatch pouch | 0.40 | 0.3-0.8 | leather
+warrior raid sack across shoulder | 0.40 | 0.0-0.5 | leather,canvas
+qoH duty hip pouch | 0.45 | 0.0-0.6 | leather
+ceremonial tribute coffer in hand | 0.30 | 0.7-1.0 | metal,leather
+warrior expedition rucksack | 0.35 | 0.0-0.5 | leather,canvas
+disruptor cell bandolier pouch | 0.40 | 0.0-0.7 | leather,metal
+high council document carrier | 0.25 | 0.7-1.0 | leather

@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heavy armored combat boots with magnetic soles | 0.85 | 0.2-0.7 | leather,kevlar
+distressed tactical boots with patched repairs | 0.70 | 0.0-0.5 | leather,neoprene
+torn surplus boots with bandage wrap | 0.55 | 0.0-0.3 | leather,mesh
+fitted recon boots with shin guard | 0.65 | 0.2-0.6 | leather,kevlar
+soot-stained boots with chrome buckle | 0.55 | 0.1-0.5 | leather,metal_mesh
+hooded ankle boots with magnetic strap | 0.50 | 0.1-0.5 | leather,neoprene
+buckled moto boots with reinforced toe | 0.60 | 0.1-0.5 | leather,kevlar

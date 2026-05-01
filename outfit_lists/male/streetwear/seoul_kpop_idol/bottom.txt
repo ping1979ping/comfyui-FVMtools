@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+slim tailored pants | 0.6 | 0.1-0.4 | polyester,twill
+designer jeans | 0.6 | 0.0-0.3 | denim
+cropped trousers | 0.5 | 0.1-0.4 | polyester,twill,corduroy
+wide-fit slacks | 0.5 | 0.1-0.4 | polyester,twill
+fitted joggers | 0.4 | 0.0-0.2 | cotton,fleece,polyester
+distressed black jeans | 0.5 | 0.0-0.3 | denim
+pleated dress pants | 0.4 | 0.1-0.4 | polyester,twill
+luxe sweatpants | 0.4 | 0.0-0.2 | cotton,fleece

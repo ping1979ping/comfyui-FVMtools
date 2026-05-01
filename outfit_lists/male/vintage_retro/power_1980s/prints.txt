@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+neon geometric | 0.4 | top,outerwear | 0.0-0.4
+memphis pattern | 0.4 | top,outerwear | 0.0-0.4
+zigzag motif | 0.4 | top | 0.0-0.4
+acid-wash effect | 0.3 | top,outerwear,bottom | 0.0-0.3
+preppy crest | 0.3 | top | 0.2-0.5
+pinstripe motif | 0.3 | outerwear,bottom | 0.5-0.9
+checkered grid | 0.3 | top | 0.1-0.4
+splatter print | 0.3 | top | 0.0-0.3
+power stripes | 0.3 | top,accessories | 0.4-0.8
+graffiti motif | 0.2 | top | 0.0-0.3

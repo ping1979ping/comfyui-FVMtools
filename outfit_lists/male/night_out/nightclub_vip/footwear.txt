@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+designer sneakers | 0.75 | 0.3-0.5 | leather,canvas
+chelsea boots | 0.70 | 0.4-0.7 | leather,suede
+patent oxfords | 0.45 | 0.5-0.7 | leather
+high-end trainers | 0.55 | 0.3-0.5 | leather,mesh
+sleek loafers | 0.55 | 0.5-0.7 | leather
+zip-side boots | 0.45 | 0.4-0.6 | leather
+horsebit loafers | 0.45 | 0.5-0.7 | leather
+glossy black boots | 0.40 | 0.4-0.6 | leather
+chukka boots | 0.40 | 0.4-0.6 | suede
+luxury logo sneakers | 0.45 | 0.3-0.5 | leather

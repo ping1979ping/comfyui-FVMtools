@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cowboy boots | 0.55 | 0.3-0.5 | leather
+#color# pirate boots | 0.45 | 0.3-0.5 | leather
+#color# disco platform shoes | 0.50 | 0.4-0.6 | sequin
+#color# superhero boots | 0.45 | 0.3-0.5 | polyester
+#color# retro trainers | 0.55 | 0.2-0.4 | suede
+#color# greaser creepers | 0.40 | 0.2-0.4 | suede
+#color# medieval ankle boots | 0.40 | 0.3-0.5 | suede
+#color# sailor deck shoes | 0.40 | 0.3-0.4 | canvas
+#color# astronaut moon boots | 0.40 | 0.3-0.5 | nylon
+#color# pop-star high-tops | 0.45 | 0.3-0.5 | leather

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wod duffel | 0.70 | 0.0-0.1 | nylon,polyester
+#color# training backpack | 0.65 | 0.0-0.2 | nylon,polyester
+#color# kit bag | 0.55 | 0.0-0.1 | nylon
+#color# gear sling | 0.45 | 0.0-0.1 | nylon
+#color# rucksack | 0.55 | 0.0-0.2 | canvas,nylon
+#color# shoe pouch | 0.40 | 0.0-0.1 | nylon
+#color# water bottle holder | 0.40 | 0.0-0.1 | nylon
+#color# tactical gym bag | 0.50 | 0.0-0.1 | nylon

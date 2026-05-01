@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ambassador formal frock coat with diplomatic sash | 0.45 | 0.8-1.0 | wool,satin
+NX flight jacket with mission patches | 0.60 | 0.2-0.7 | nylon,leather
+diplomatic envoy long coat in navy | 0.50 | 0.5-1.0 | wool
+captain expedition parka | 0.40 | 0.0-0.5 | nylon
+formal mess parade tailcoat | 0.35 | 0.8-1.0 | wool,satin
+NX era utility vest with sample loops | 0.45 | 0.0-0.5 | nylon,canvas
+ambassador ceremonial cape with gold trim | 0.30 | 0.8-1.0 | satin,wool
+shore leave bomber jacket | 0.30 | 0.0-0.4 | leather,nylon

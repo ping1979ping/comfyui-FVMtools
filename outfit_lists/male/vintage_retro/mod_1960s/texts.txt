@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"MOD" | 0.25 | top | bold sans serif
+"BRIT POP" | 0.2 | top | retro font
+"SWING" | 0.2 | top | bold sans serif
+"CARNABY" | 0.15 | top | mod typeface
+"YEAH YEAH" | 0.2 | top | retro font
+"SCOOTER" | 0.15 | top | retro font
+"LONDON 66" | 0.15 | top | bold sans serif
+"BRIGHTON" | 0.15 | top | retro font
+"TARGET" | 0.2 | top | bold sans serif
+"60s" | 0.2 | top | mod typeface

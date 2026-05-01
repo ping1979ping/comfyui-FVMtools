@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+starfleet command jumpsuit top with red shoulders | 0.95 | 0.2-0.9 | spandex,lycra
+captain duty uniform top with four rank pips | 0.85 | 0.3-0.9 | spandex,lycra
+command division tunic with maroon yoke | 0.80 | 0.2-0.8 | spandex,lycra
+first officer uniform top with three rank pips | 0.75 | 0.3-0.9 | spandex,lycra
+command red turtleneck undershirt visible at collar | 0.70 | 0.2-0.7 | cotton,jersey
+bridge officer duty top with badge on chest | 0.85 | 0.2-0.9 | spandex,lycra
+captain dress jacket with gold piping and medals | 0.55 | 0.8-1.0 | satin,lycra
+formal admiral tunic with command trim | 0.45 | 0.8-1.0 | satin,lycra
+two-piece command duty top with belted waist | 0.60 | 0.3-0.8 | spandex,lycra
+command duty shirt with rolled sleeves | 0.40 | 0.0-0.4 | cotton,jersey
+captain off-duty pullover in command red | 0.35 | 0.0-0.3 | jersey,cotton
+fitted command top with shoulder yoke detail | 0.65 | 0.3-0.8 | spandex,lycra

@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+nautical stripes | 0.65 | top,outerwear | 0.1-0.7
+breton stripes | 0.55 | top | 0.1-0.5
+anchor pattern | 0.40 | top,accessories | 0.2-0.6
+sailboat pattern | 0.35 | top,bottom | 0.2-0.5
+rope pattern | 0.30 | accessories | 0.2-0.6
+embroidered crest | 0.35 | top,outerwear | 0.4-0.8
+flag pattern | 0.30 | top,bag | 0.2-0.5
+maritime motif | 0.30 | top,outerwear | 0.3-0.7
+windowpane check | 0.25 | outerwear | 0.4-0.8

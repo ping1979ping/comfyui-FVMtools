@@ -1,0 +1,16 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oversized brushed shirt | 0.55 | 0.0-0.3 | flannel
+jean jacket | 0.50 | 0.0-0.3 | denim
+biker jacket | 0.50 | 0.0-0.3 | leather
+cozy pullover | 0.40 | 0.0-0.2 | fleece
+cord jacket | 0.40 | 0.1-0.4 | corduroy
+puffy windbreaker | 0.40 | 0.0-0.3 | nylon
+
+# mid-casual
+worn-out blazer | 0.40 | 0.2-0.5 | wool
+
+# formal
+slim suit jacket | 0.40 | 0.5-0.8 | wool

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# college tee | 0.75 | 0.2-0.3 | cotton,jersey
+#color# fraternity sweater | 0.55 | 0.2-0.4 | cotton
+#color# campus hoodie | 0.65 | 0.2-0.3 | cotton,jersey
+#color# slogan tank | 0.45 | 0.2-0.3 | cotton,jersey
+#color# vintage sports tee | 0.55 | 0.2-0.3 | cotton,jersey
+#color# pong tournament shirt | 0.50 | 0.2-0.3 | cotton
+#color# graphic crewneck | 0.55 | 0.2-0.4 | cotton,jersey
+#color# longsleeve campus tee | 0.50 | 0.2-0.4 | cotton,jersey
+#color# raglan baseball top | 0.45 | 0.2-0.3 | cotton,jersey
+#color# party tank top | 0.40 | 0.2-0.3 | cotton,jersey
+#color# muscle shirt | 0.35 | 0.2-0.3 | cotton,jersey
+#color# basketball jersey | 0.40 | 0.2-0.3 | polyester

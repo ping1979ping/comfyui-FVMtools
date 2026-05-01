@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+mood ring | 0.30 | 0.1-0.4 | metal
+peace pendant | 0.30 | 0.1-0.4 | metal
+wide hide belt | 0.40 | 0.1-0.4 | leather
+puka shell necklace | 0.30 | 0.0-0.3 | knit
+
+# mid-casual
+gold chain | 0.45 | 0.2-0.6 | metal
+medallion necklace | 0.45 | 0.2-0.7 | metal
+oversized aviators | 0.50 | 0.2-0.6 | metal
+chunky ring | 0.35 | 0.2-0.6 | metal
+wide tie | 0.40 | 0.3-0.7 | polyester,silk
+
+# formal
+gold cufflinks | 0.30 | 0.5-0.9 | metal
+glossy bow tie | 0.30 | 0.6-0.9 | satin

@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"ROLAND" | 0.20 | top,headwear | classic serif
+"OPEN" | 0.25 | top | bold serif
+"GRAND SLAM" | 0.25 | top | sport serif
+"ACE" | 0.25 | top,headwear | bold typography
+"MATCH POINT" | 0.20 | top | sport serif
+"BREAK POINT" | 0.20 | top | sport serif
+"DEUCE" | 0.20 | top | classic serif
+"CLAY KING" | 0.20 | top | sport serif
+"SET POINT" | 0.20 | top | sport serif
+"TIE BREAK" | 0.15 | top | sport serif
+"WIMBLEDON" | 0.20 | top,headwear | classic serif
+"COURT 1" | 0.20 | top | classic serif
+"BACKHAND" | 0.15 | top | sport serif

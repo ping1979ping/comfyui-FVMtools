@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky platform boots with LED soles | 0.70 | 0.0-0.4 | rubber,neoprene
+buckled combat boots with glow piping | 0.65 | 0.0-0.5 | leather,kevlar
+knee-high biker boots with chrome heel | 0.55 | 0.2-0.6 | leather,metal_mesh
+neon-laced sneakers with reactive sole | 0.60 | 0.0-0.3 | mesh,rubber
+ankle boots with iridescent finish | 0.50 | 0.1-0.5 | holographic,leather
+transparent heeled boots with neon trim | 0.40 | 0.2-0.5 | plastic,leather
+high-top wedge sneakers with circuit print | 0.45 | 0.0-0.3 | mesh,rubber
+knee-high vinyl boots with chrome buckles | 0.50 | 0.1-0.5 | plastic,neoprene
+spiked moto boots with metal plates | 0.45 | 0.1-0.5 | leather,metal_mesh
+glitch-pattern slip-ons with neon laces | 0.40 | 0.0-0.3 | mesh,nylon

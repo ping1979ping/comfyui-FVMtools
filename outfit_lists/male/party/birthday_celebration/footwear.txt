@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# party sneakers | 0.65 | 0.2-0.4 | leather,canvas
+#color# casual loafers | 0.50 | 0.3-0.5 | leather,suede
+#color# slip-ons | 0.45 | 0.2-0.4 | canvas
+#color# desert boots | 0.40 | 0.3-0.5 | suede
+#color# chukka boots | 0.40 | 0.3-0.5 | suede
+#color# lace-up sneakers | 0.55 | 0.2-0.4 | canvas,leather
+#color# moccasins | 0.35 | 0.3-0.5 | leather
+#color# court shoes | 0.40 | 0.2-0.4 | canvas
+#color# brogues | 0.35 | 0.4-0.5 | leather
+#color# casual boots | 0.40 | 0.3-0.5 | leather

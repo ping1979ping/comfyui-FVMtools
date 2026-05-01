@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"26.2" | 0.30 | top | bold typography
+"FINISHER" | 0.25 | top | classic serif
+"PR CHASER" | 0.20 | top | bold typography
+"PACE MAKER" | 0.20 | top | sport serif
+"NEW YORK" | 0.20 | top,headwear | classic serif
+"BOSTON" | 0.20 | top,headwear | classic serif
+"LONDON" | 0.20 | top,headwear | classic serif
+"CHICAGO" | 0.20 | top,headwear | classic serif
+"BERLIN" | 0.15 | top,headwear | classic serif
+"RUN HAPPY" | 0.20 | top | bold typography
+"MILES NOT MINUTES" | 0.20 | top | sport serif
+"NEGATIVE SPLITS" | 0.15 | top | sport serif
+"SUB 3" | 0.20 | top | bold typography

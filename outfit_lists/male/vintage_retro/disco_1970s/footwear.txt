@@ -1,0 +1,16 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+platform sneakers | 0.40 | 0.0-0.3 | cotton,suede
+earth shoes | 0.40 | 0.1-0.4 | suede
+
+# mid-casual
+platform boots | 0.55 | 0.2-0.6 | leather,suede
+platform loafers | 0.50 | 0.3-0.6 | leather
+Cuban-heel boots | 0.50 | 0.3-0.6 | leather,suede
+two-tone disco shoes | 0.45 | 0.3-0.7 | leather
+
+# formal
+patent platform shoes | 0.45 | 0.5-0.8 | leather
+metallic disco shoes | 0.40 | 0.5-0.9 | leather

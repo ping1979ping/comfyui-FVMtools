@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+quilted vest | 0.50 | 0.2-0.5 | nylon,polyester
+quilted jacket | 0.55 | 0.2-0.5 | nylon,polyester
+hacking jacket | 0.45 | 0.3-0.7 | tweed,wool
+field coat | 0.45 | 0.2-0.5 | waxed-cotton
+
+# mid-casual
+hunting blazer | 0.50 | 0.4-0.8 | tweed,wool
+sport coat | 0.45 | 0.4-0.8 | tweed,hopsack
+shooting jacket | 0.40 | 0.3-0.7 | tweed
+cardigan | 0.40 | 0.2-0.5 | merino,cashmere
+
+# formal
+covert coat | 0.40 | 0.5-0.8 | wool
+chesterfield coat | 0.35 | 0.5-0.8 | wool,cashmere

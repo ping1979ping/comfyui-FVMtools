@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized voxel puffer with chunky panels | 0.70 | 0.0-0.4 | nylon,neoprene
+iridescent windbreaker with avatar print | 0.65 | 0.1-0.5 | holographic,nylon
+asymmetric glitch-print jacket with chrome zipper | 0.60 | 0.1-0.5 | neoprene,nylon
+sheer mesh duster with neon outline | 0.45 | 0.0-0.4 | mesh,nylon
+chunky polygon vest with magnetic clasps | 0.55 | 0.0-0.4 | neoprene,nylon
+iridescent kimono with floating particles | 0.45 | 0.2-0.6 | holographic,satin
+hooded cyber poncho with avatar tag | 0.50 | 0.0-0.4 | nylon,mesh
+cropped voxel bomber with chunky cuffs | 0.55 | 0.1-0.5 | nylon,neoprene
+chrome-edged shrug with reactive panel | 0.50 | 0.1-0.5 | metal_mesh,neoprene

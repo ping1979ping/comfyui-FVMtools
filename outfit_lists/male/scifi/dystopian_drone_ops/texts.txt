@@ -1,0 +1,8 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"WASTELAND" | 0.25 | top,outerwear | distressed stencil
+"UNIT 47" | 0.25 | top,outerwear | military stencil
+"FALLOUT" | 0.20 | top | scratched serif
+"BLACK OPS" | 0.20 | top,outerwear | bold stencil
+"REBEL" | 0.20 | top,accessories | spray-paint font
+"DECON" | 0.15 | top,outerwear | warning hazard font

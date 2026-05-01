@@ -1,0 +1,20 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+braided belt | 0.50 | 0.2-0.5 | leather
+woven belt | 0.45 | 0.2-0.5 | leather
+ribbon belt | 0.40 | 0.2-0.5 | grosgrain
+braided bracelet | 0.40 | 0.1-0.4 | rope
+sailing watch | 0.55 | 0.2-0.6 | metal,silicone
+sun glasses | 0.50 | 0.1-0.5 | acetate
+
+# mid-casual
+classic belt | 0.55 | 0.3-0.7 | leather
+anchor tie | 0.30 | 0.4-0.7 | silk
+nautical scarf | 0.30 | 0.3-0.6 | silk
+
+# formal
+printed tie | 0.30 | 0.5-0.8 | silk
+pocket square | 0.30 | 0.5-0.8 | silk,linen
+signet ring | 0.25 | 0.4-0.8 | metal

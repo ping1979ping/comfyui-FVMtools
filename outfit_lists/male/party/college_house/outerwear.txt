@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# college zip-up | 0.55 | 0.2-0.3 | cotton,jersey
+#color# fraternity letterman | 0.45 | 0.2-0.4 | wool
+#color# campus pullover | 0.50 | 0.2-0.3 | cotton,jersey
+#color# windbreaker | 0.40 | 0.2-0.3 | nylon
+#color# track top | 0.40 | 0.2-0.3 | polyester
+#color# beat denim jacket | 0.45 | 0.2-0.4 | denim
+#color# college bomber | 0.40 | 0.2-0.4 | nylon
+#color# campus sweatshirt | 0.50 | 0.2-0.3 | cotton,jersey
+#color# overshirt | 0.35 | 0.2-0.4 | cotton

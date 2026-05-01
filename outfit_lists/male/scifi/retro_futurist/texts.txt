@@ -1,0 +1,8 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"APOLLO" | 0.25 | top,outerwear | retro chrome serif
+"COSMOS" | 0.20 | top | space-age italic
+"ORBIT" | 0.20 | top | rounded mod font
+"ZONE 5" | 0.20 | top,accessories | mod stencil font
+"VECTOR" | 0.15 | top | retro chrome font
+"MOD" | 0.15 | top,outerwear | bold uppercase

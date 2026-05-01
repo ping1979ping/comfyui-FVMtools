@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# birthday party hat | 0.30 | 0.2-0.4 | felt
+#color# snapback cap | 0.25 | 0.2-0.4 | cotton
+#color# fun bucket hat | 0.20 | 0.2-0.4 | cotton
+#color# party crown | 0.15 | 0.2-0.4 | felt

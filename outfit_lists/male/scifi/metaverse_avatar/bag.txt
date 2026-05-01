@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized voxel backpack with chunky straps | 0.65 | 0.0-0.4 | nylon,neoprene
+iridescent crossbody with floating chain | 0.50 | 0.1-0.5 | holographic,satin
+glitch-print sling with chrome buckle | 0.55 | 0.0-0.4 | nylon,plastic
+chunky pixel hip pouch with neon trim | 0.50 | 0.0-0.4 | nylon,neoprene
+iridescent fanny pack with avatar tag | 0.45 | 0.0-0.4 | holographic,nylon
+chrome-edged messenger with reactive panel | 0.45 | 0.1-0.5 | metal_mesh,nylon
+floating polygon clutch on chain | 0.35 | 0.2-0.6 | holographic,satin
+chunky cyber tote with magnetic clasps | 0.45 | 0.0-0.4 | neoprene,nylon

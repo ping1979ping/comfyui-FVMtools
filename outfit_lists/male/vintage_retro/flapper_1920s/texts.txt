@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"JAZZ AGE" | 0.2 | top | art deco font
+"GATSBY" | 0.2 | top | art deco font
+"SPEAKEASY" | 0.15 | top | art deco font
+"CHICAGO" | 0.15 | top | jazz font
+"BEE'S KNEES" | 0.15 | top | art deco font
+"CAT'S MEOW" | 0.15 | top | art deco font
+"PROHIBITION" | 0.15 | top | art deco font
+"DAPPER" | 0.2 | top | art deco font
+"GIN JOINT" | 0.15 | top | jazz font
+"COTTON CLUB" | 0.15 | top | jazz font
+"PARIS 1925" | 0.15 | top | art deco font
+"MR" | 0.15 | top | art deco font

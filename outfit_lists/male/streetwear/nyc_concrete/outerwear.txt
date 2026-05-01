@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+black bomber | 0.6 | 0.0-0.3 | nylon,polyester,leather
+dark puffer | 0.7 | 0.0-0.2 | nylon,polyester
+black overshirt | 0.5 | 0.0-0.3 | cotton,flannel
+biker-style jacket | 0.4 | 0.0-0.3 | leather
+heavy parka | 0.4 | 0.0-0.2 | nylon,polyester
+shell windbreaker | 0.4 | 0.0-0.2 | nylon,ripstop
+trench-style coat | 0.3 | 0.0-0.3 | cotton,polyester
+quilted vest | 0.3 | 0.0-0.2 | nylon,polyester

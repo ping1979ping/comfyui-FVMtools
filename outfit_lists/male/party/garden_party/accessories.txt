@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pocket square | 0.50 | 0.4-0.6 | metal
+floral lapel pin | 0.45 | 0.4-0.6 | metal
+silver watch | 0.55 | 0.4-0.6 | metal
+braided belt | 0.45 | 0.4-0.6 | leather
+sunglasses | 0.55 | 0.3-0.5 | metal
+slim tie | 0.40 | 0.4-0.6 | metal
+tortoise glasses | 0.35 | 0.4-0.6 | metal
+preppy bracelet | 0.30 | 0.3-0.5 | metal
+boutonniere | 0.30 | 0.4-0.6 | metal
+silk pocket scarf | 0.35 | 0.4-0.6 | metal
+woven belt | 0.40 | 0.4-0.6 | leather

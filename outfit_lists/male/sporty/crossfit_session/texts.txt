@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WOD" | 0.30 | top,headwear | bold stencil
+"AS RX" | 0.25 | top | bold stencil
+"PR" | 0.25 | top | bold typography
+"GO HEAVY" | 0.25 | top | industrial bold
+"AMRAP" | 0.20 | top | bold stencil
+"BOX LIFE" | 0.20 | top,headwear | varsity font
+"FORGED" | 0.20 | top | rugged serif
+"TRAIN HARD" | 0.25 | top | bold block letters
+"DEADLIFT" | 0.20 | top | bold typography
+"BARBELL CLUB" | 0.20 | top | varsity font
+"FRAN" | 0.15 | top | stencil
+"21-15-9" | 0.20 | top | stencil
+"BUILT" | 0.20 | top | industrial bold

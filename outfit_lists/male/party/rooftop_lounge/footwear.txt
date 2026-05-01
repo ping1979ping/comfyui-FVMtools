@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# minimal loafers | 0.60 | 0.4-0.6 | leather,suede
+#color# city sneakers | 0.55 | 0.3-0.5 | leather
+#color# sleek chelsea boots | 0.50 | 0.4-0.6 | leather,suede
+#color# city slip-ons | 0.45 | 0.4-0.6 | leather
+#color# dress sneakers | 0.50 | 0.4-0.6 | leather
+#color# polished derbies | 0.45 | 0.4-0.6 | leather
+#color# pointed boots | 0.40 | 0.4-0.6 | leather
+#color# evening loafers | 0.45 | 0.4-0.6 | leather,velvet
+#color# minimal trainers | 0.45 | 0.3-0.5 | leather
+#color# sleek monk straps | 0.35 | 0.4-0.6 | leather

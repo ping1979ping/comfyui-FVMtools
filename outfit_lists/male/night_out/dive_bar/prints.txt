@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+faded band logo | 0.65 | top | 0.2-0.4
+plaid pattern | 0.55 | top,outerwear | 0.2-0.5
+pearl-snap detail | 0.40 | top | 0.2-0.5
+distressed graphic | 0.55 | top | 0.2-0.4
+camo pattern | 0.30 | outerwear,bottom | 0.2-0.4
+patchwork detail | 0.30 | outerwear | 0.2-0.4
+worn-in fade | 0.50 | top,bottom | 0.2-0.4
+embroidered patch | 0.40 | outerwear | 0.2-0.4
+selvedge accent | 0.30 | bottom | 0.3-0.5
+ringer stripe | 0.30 | top | 0.2-0.4

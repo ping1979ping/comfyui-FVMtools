@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+science blue communicator badge | 0.95 | 0.0-1.0 | metal
+chief science rank pips on collar | 0.85 | 0.2-1.0 | metal
+type-3 tricorder with extended sensor pack | 0.70 | 0.0-0.7 | plastic,metal
+specimen sample vials in chest pouch | 0.50 | 0.0-0.5 | plastic
+research duty PADD with star charts | 0.55 | 0.2-0.8 | plastic
+delta quadrant field analyzer | 0.45 | 0.0-0.6 | plastic,metal
+science officer pen-style scanner | 0.50 | 0.0-0.6 | metal,plastic
+formal service ribbons across chest | 0.35 | 0.7-1.0 | satin,metal
+science ID lanyard around neck | 0.30 | 0.0-0.7 | nylon,plastic
+spectrograph optical eyepiece on temple | 0.30 | 0.0-0.6 | plastic,metal
+type-2 phaser holstered on hip | 0.40 | 0.0-0.5 | plastic,metal

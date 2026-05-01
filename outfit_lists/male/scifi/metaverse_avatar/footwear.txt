@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky voxel sneakers with LED soles | 0.75 | 0.0-0.4 | rubber,neoprene
+iridescent high-tops with reactive sole | 0.65 | 0.0-0.4 | holographic,rubber
+oversized pixel boots with chrome accents | 0.55 | 0.1-0.5 | rubber,metal_mesh
+chunky platform runners with glow trim | 0.55 | 0.0-0.4 | rubber,mesh
+glitch-print slip-ons with neon laces | 0.50 | 0.0-0.3 | mesh,nylon
+iridescent ankle boots with avatar tag | 0.45 | 0.1-0.5 | holographic,leather
+chrome-edged trainers with circuit print | 0.50 | 0.0-0.4 | mesh,metal_mesh
+chunky moto boots with reactive plate | 0.45 | 0.1-0.5 | leather,rubber

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+Voyager science division top with blue shoulders | 0.95 | 0.2-0.8 | spandex,lycra
+gray-shouldered uniform with science blue undershirt | 0.85 | 0.3-0.8 | spandex,lycra
+chief science officer duty top | 0.80 | 0.3-0.8 | spandex,lycra
+research lab coat over duty top | 0.65 | 0.0-0.6 | cotton,lycra
+astrophysics duty jumpsuit top | 0.70 | 0.2-0.7 | spandex,lycra
+formal science tunic with division trim | 0.50 | 0.7-1.0 | satin,lycra
+field research duty top with sample loops | 0.55 | 0.0-0.5 | nylon,cotton
+delta quadrant survey top | 0.60 | 0.2-0.7 | spandex,lycra
+science blue turtleneck under uniform | 0.55 | 0.2-0.7 | jersey,cotton
+fitted bridge officer science top | 0.65 | 0.3-0.8 | spandex,lycra
+ship internal recreation pullover | 0.30 | 0.0-0.3 | jersey,cotton
+formal officer science tunic with epaulettes | 0.40 | 0.7-1.0 | satin,lycra

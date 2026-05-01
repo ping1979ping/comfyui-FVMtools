@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+captain away team satchel in command red | 0.35 | 0.0-0.6 | nylon,leather
+diplomatic envoy briefcase | 0.30 | 0.5-0.9 | leather
+command duty pouch on belt | 0.40 | 0.0-0.6 | nylon,leather
+captain personal log case | 0.25 | 0.0-0.5 | leather
+shore leave duffel | 0.30 | 0.0-0.4 | nylon
+admiral document portfolio | 0.25 | 0.6-1.0 | leather
+landing party equipment sling | 0.35 | 0.0-0.5 | nylon
+formal aide case in matte black | 0.20 | 0.7-1.0 | leather

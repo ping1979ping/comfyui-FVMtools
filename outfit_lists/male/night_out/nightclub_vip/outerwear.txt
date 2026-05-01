@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+unstructured designer blazer | 0.65 | 0.5-0.7 | wool
+sleek bomber | 0.55 | 0.3-0.5 | nylon,satin
+fitted moto jacket | 0.55 | 0.3-0.5 | leather
+overcoat | 0.40 | 0.5-0.7 | wool,cashmere
+double-breasted jacket | 0.45 | 0.5-0.7 | wool
+plush sport coat | 0.40 | 0.5-0.7 | velvet
+shearling-collar jacket | 0.30 | 0.3-0.5 | leather,shearling
+patterned blazer | 0.40 | 0.5-0.7 | wool
+glossy track jacket | 0.35 | 0.3-0.5 | polyester

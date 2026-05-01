@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+Voyager duty boots in matte black | 0.95 | 0.0-0.9 | leather,rubber
+science officer ankle boots | 0.75 | 0.2-0.8 | leather,rubber
+formal science dress shoes | 0.45 | 0.7-1.0 | leather
+delta quadrant survey boots | 0.50 | 0.0-0.5 | leather,rubber
+research lab shoes with anti-static soles | 0.55 | 0.0-0.5 | leather,rubber
+ship internal recreation slippers | 0.25 | 0.0-0.2 | jersey
+formal officer oxfords | 0.40 | 0.7-1.0 | leather
+field expedition boots | 0.45 | 0.0-0.5 | leather,rubber
+duty service boots | 0.65 | 0.2-0.8 | leather,rubber

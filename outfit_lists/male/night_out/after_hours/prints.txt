@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tonal pattern | 0.45 | top | 0.3-0.6
+worn-in fade | 0.50 | top,bottom | 0.2-0.5
+dark stripe | 0.35 | top | 0.3-0.6
+subtle shimmer | 0.30 | top,accessories | 0.3-0.6
+faded graphic | 0.45 | top | 0.2-0.5
+all-black blackout | 0.50 | top,bottom,outerwear | 0.3-0.6
+muted pinstripe | 0.30 | bottom,outerwear | 0.4-0.7
+distressed accent | 0.40 | bottom,outerwear | 0.2-0.5
+embossed detail | 0.20 | accessories | 0.3-0.6
+herringbone weave | 0.25 | outerwear | 0.4-0.7

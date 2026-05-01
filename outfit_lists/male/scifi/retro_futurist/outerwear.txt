@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured mod blazer with chrome buttons | 0.65 | 0.4-0.8 | satin,silk
+A-line space-age coat with chrome trim | 0.60 | 0.4-0.8 | satin,nylon
+chrome-belted trench in vinyl finish | 0.55 | 0.3-0.7 | vinyl,satin
+boxy mod jacket with peter pan collar | 0.55 | 0.4-0.8 | satin,silk
+sleeveless chrome-edged tabard | 0.45 | 0.2-0.6 | metal_mesh,satin
+hooded space-age cape with chrome closures | 0.50 | 0.3-0.7 | satin,nylon
+geometric color-block jacket with chrome ring | 0.55 | 0.3-0.7 | satin,nylon
+fitted mod overcoat with shoulder rings | 0.55 | 0.4-0.8 | satin,nylon

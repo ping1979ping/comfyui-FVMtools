@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tailored chinos | 0.75 | 0.4-0.6 | cotton
+#color# pastel trousers | 0.55 | 0.4-0.6 | cotton
+#color# linen shorts | 0.50 | 0.3-0.5 | cotton
+#color# light slacks | 0.55 | 0.4-0.6 | cotton
+#color# cuffed chinos | 0.55 | 0.4-0.6 | cotton
+#color# garden khakis | 0.55 | 0.4-0.6 | cotton
+#color# cropped trousers | 0.45 | 0.4-0.6 | cotton
+#color# bermuda shorts | 0.50 | 0.3-0.5 | cotton
+#color# slim chinos | 0.50 | 0.4-0.6 | cotton
+#color# pleated trousers | 0.40 | 0.4-0.6 | wool
+#color# preppy shorts | 0.45 | 0.3-0.5 | cotton

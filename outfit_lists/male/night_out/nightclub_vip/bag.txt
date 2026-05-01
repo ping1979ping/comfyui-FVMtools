@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+designer wallet | 0.75 | 0.4-0.7 | leather
+luxe card holder | 0.55 | 0.4-0.7 | leather
+small designer crossbody | 0.40 | 0.3-0.6 | leather
+mini messenger | 0.30 | 0.4-0.6 | leather
+phone wallet | 0.55 | 0.3-0.6 | leather
+chest harness bag | 0.30 | 0.3-0.5 | nylon,leather
+sling bag | 0.35 | 0.3-0.5 | nylon,leather
+slim attache | 0.30 | 0.5-0.7 | leather

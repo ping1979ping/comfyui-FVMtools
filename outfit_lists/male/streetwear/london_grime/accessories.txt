@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+gold chain | 0.6 | 0.0-0.3 | cotton
+black sports watch | 0.4 | 0.0-0.3 | leather,nylon
+silver rings | 0.4 | 0.0-0.3 | cotton
+balaclava | 0.4 | 0.0-0.2 | cotton,fleece
+neck snood | 0.3 | 0.0-0.2 | cotton,fleece
+black sunglasses | 0.4 | 0.0-0.3 | nylon
+sport socks | 0.4 | 0.0-0.2 | cotton
+worn belt | 0.3 | 0.0-0.3 | leather,canvas,nylon

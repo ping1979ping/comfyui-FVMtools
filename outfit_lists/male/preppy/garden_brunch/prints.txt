@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral pattern | 0.55 | top,accessories | 0.2-0.6
+gingham check | 0.50 | top,bottom | 0.2-0.6
+seersucker stripes | 0.50 | top,bottom,outerwear | 0.2-0.6
+madras check | 0.45 | top,bottom | 0.2-0.5
+embroidered crest | 0.40 | top,outerwear | 0.4-0.8
+pin-dot pattern | 0.35 | top,accessories | 0.3-0.7
+botanical motif | 0.40 | top,accessories | 0.2-0.6
+striped repp | 0.35 | accessories | 0.3-0.7
+windowpane check | 0.30 | outerwear | 0.4-0.8
+plaid pattern | 0.30 | top,outerwear | 0.3-0.6

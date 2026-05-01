@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+metallic finish | 0.45 | top,outerwear,accessories | 0.3-0.7
+glossy lacquer | 0.45 | top,outerwear | 0.3-0.7
+embossed monogram | 0.35 | bag,accessories | 0.3-0.7
+all-black blackout | 0.55 | top,bottom,outerwear | 0.3-0.7
+subtle shimmer | 0.35 | top,accessories | 0.3-0.7
+designer logo | 0.40 | top,bag,accessories | 0.3-0.6
+tonal pattern | 0.30 | top | 0.4-0.7
+herringbone weave | 0.30 | outerwear | 0.5-0.8
+gold accent | 0.30 | accessories | 0.3-0.7
+animal-print accent | 0.20 | accessories,outerwear | 0.3-0.6

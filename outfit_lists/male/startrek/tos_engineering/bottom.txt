@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+TOS service trousers in black | 0.95 | 0.0-0.9 | polyester,wool
+classic engineering work pants | 0.80 | 0.0-0.6 | cotton,canvas
+mess dress trousers with side stripe | 0.50 | 0.7-1.0 | wool,satin
+TOS jumpsuit pants for shift duty | 0.65 | 0.2-0.7 | polyester,cotton
+fitted operations slacks | 0.60 | 0.3-0.8 | polyester,wool
+heavy duty engine room overalls | 0.40 | 0.0-0.4 | canvas,cotton
+shore leave casual chinos | 0.30 | 0.0-0.3 | cotton
+formal officer trousers with crease | 0.45 | 0.7-1.0 | wool,satin
+service trousers with reinforced knee | 0.50 | 0.0-0.5 | cotton,canvas

@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+fashion bucket hat | 0.5 | 0.0-0.2 | cotton,nylon,canvas
+designer fitted cap | 0.5 | 0.0-0.2 | cotton,polyester
+ribbed beanie | 0.5 | 0.0-0.2 | cotton,jersey,fleece
+beret | 0.3 | 0.1-0.4 | polyester

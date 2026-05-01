@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+worn skate backpack | 0.5 | 0.0-0.2 | nylon,canvas,polyester
+classic shoulder bag | 0.4 | 0.0-0.3 | canvas,nylon,leather
+hip pack | 0.3 | 0.0-0.2 | nylon,polyester
+small sling pack | 0.3 | 0.0-0.2 | nylon,polyester
+worn duffle | 0.3 | 0.0-0.3 | canvas,nylon
+camera pouch | 0.3 | 0.0-0.2 | canvas,nylon

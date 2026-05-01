@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# panama hat | 0.40 | 0.4-0.6 | felt
+#color# straw boater | 0.30 | 0.4-0.6 | felt
+#color# flat cap | 0.30 | 0.4-0.6 | wool
+#color# garden bucket hat | 0.20 | 0.3-0.5 | cotton

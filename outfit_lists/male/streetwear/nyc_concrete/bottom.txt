@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+black skinny jeans | 0.6 | 0.0-0.3 | denim
+relaxed black pants | 0.6 | 0.0-0.3 | cotton,twill
+dark cargo pants | 0.6 | 0.0-0.3 | cotton,ripstop,nylon,twill
+black joggers | 0.5 | 0.0-0.2 | cotton,fleece,polyester
+straight-leg trousers | 0.5 | 0.0-0.3 | cotton,twill
+ripped black jeans | 0.5 | 0.0-0.3 | denim
+work pants | 0.4 | 0.0-0.3 | twill,canvas
+worker shorts | 0.3 | 0.0-0.2 | twill,canvas

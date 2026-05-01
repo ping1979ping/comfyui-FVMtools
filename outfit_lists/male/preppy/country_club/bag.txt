@@ -1,0 +1,15 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+tote bag | 0.40 | 0.2-0.5 | canvas
+golf carryall | 0.35 | 0.2-0.4 | nylon,leather
+weekender holdall | 0.35 | 0.2-0.5 | leather,canvas
+
+# mid-casual
+classic satchel | 0.40 | 0.3-0.6 | leather
+messenger bag | 0.35 | 0.3-0.6 | leather,canvas
+
+# formal
+attache case | 0.35 | 0.5-0.8 | leather
+slim portfolio | 0.30 | 0.5-0.8 | leather

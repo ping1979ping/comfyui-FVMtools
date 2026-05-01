@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# weightlifting belt | 0.60 | 0.0-0.1 | leather
+#color# wrist wraps | 0.65 | 0.0-0.1 | cotton,nylon
+#color# lifting straps | 0.55 | 0.0-0.1 | nylon
+#color# hand grips | 0.50 | 0.0-0.1 | leather
+sports watch | 0.55 | 0.0-0.2 | rubber,plastic
+#color# headband | 0.45 | 0.0-0.1 | cotton
+#color# elbow sleeve | 0.40 | 0.0-0.1 | neoprene
+#color# chalk bag | 0.45 | 0.0-0.1 | canvas
+#color# jump rope | 0.35 | 0.0-0.1 | plastic
+#color# towel | 0.50 | 0.0-0.1 | cotton

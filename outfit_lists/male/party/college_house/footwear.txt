@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# beat-up sneakers | 0.65 | 0.2-0.3 | canvas,leather
+#color# flip-flops | 0.40 | 0.2-0.3 | nylon
+#color# slides | 0.45 | 0.2-0.3 | nylon
+#color# campus running shoes | 0.50 | 0.2-0.3 | polyester
+#color# skate shoes | 0.55 | 0.2-0.3 | canvas,suede
+#color# basketball high-tops | 0.45 | 0.2-0.3 | leather,canvas
+#color# old trainers | 0.50 | 0.2-0.3 | leather
+#color# cheap canvas shoes | 0.45 | 0.2-0.3 | canvas
+#color# party slip-ons | 0.40 | 0.2-0.3 | canvas

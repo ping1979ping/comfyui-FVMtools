@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+black graphic tee | 0.8 | 0.0-0.3 | cotton,jersey
+oversized hoodie | 0.7 | 0.0-0.2 | cotton,fleece
+heavyweight pullover | 0.5 | 0.0-0.2 | cotton,fleece
+ribbed thermal | 0.5 | 0.0-0.2 | cotton,jersey
+boxy crewneck | 0.5 | 0.0-0.2 | cotton,fleece
+classic black tee | 0.7 | 0.0-0.3 | cotton,jersey
+relaxed long sleeve | 0.5 | 0.0-0.2 | cotton,jersey
+dark hoodie | 0.6 | 0.0-0.2 | cotton,fleece
+zip-up sweatshirt | 0.5 | 0.0-0.2 | cotton,fleece
+button-front shirt | 0.4 | 0.0-0.3 | cotton,flannel

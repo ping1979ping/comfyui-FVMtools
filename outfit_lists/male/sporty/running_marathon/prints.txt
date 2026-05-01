@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+race event logo | 0.6 | top,headwear,bag | 0.0-0.2
+city marathon graphic | 0.5 | top,outerwear | 0.0-0.2
+race number | 0.4 | top | 0.0-0.1
+mileage marker | 0.3 | top | 0.0-0.2
+elevation profile graphic | 0.3 | top | 0.0-0.2
+reflective accent | 0.6 | top,outerwear,footwear,bottom | 0.0-0.2
+silhouette runner | 0.4 | top | 0.0-0.2
+finisher medal graphic | 0.3 | top | 0.0-0.2
+brand wordmark | 0.5 | top,outerwear,headwear,bag | 0.0-0.2
+neon accent stripe | 0.5 | top,bottom,outerwear | 0.0-0.2
+splash dot graphic | 0.3 | top | 0.0-0.2

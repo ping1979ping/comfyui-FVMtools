@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# climbing pants | 0.85 | 0.0-0.2 | cotton,nylon
+#color# stretch boulder pants | 0.80 | 0.0-0.2 | nylon,spandex
+#color# climbing shorts | 0.75 | 0.0-0.2 | cotton,nylon
+#color# jogger pants | 0.65 | 0.0-0.2 | cotton,polyester
+#color# tapered training pants | 0.60 | 0.0-0.2 | nylon
+#color# board shorts | 0.50 | 0.0-0.1 | polyester
+#color# loose gym shorts | 0.55 | 0.0-0.1 | cotton,polyester
+#color# cropped trousers | 0.45 | 0.0-0.2 | cotton
+#color# rugged crag pants | 0.45 | 0.0-0.2 | canvas
+#color# slim trainers | 0.50 | 0.0-0.2 | nylon,spandex

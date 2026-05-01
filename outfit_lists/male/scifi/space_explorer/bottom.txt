@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mission cargo pants with thigh pockets | 0.80 | 0.1-0.6 | nylon,kevlar
+EVA suit pants with reinforced knees | 0.75 | 0.2-0.7 | kevlar,carbon_fiber
+fitted flight trousers with rank stripe | 0.70 | 0.3-0.7 | neoprene,nylon
+thermal compression leggings | 0.65 | 0.1-0.5 | spandex,mesh
+utility shorts with magnetic clips | 0.45 | 0.0-0.4 | nylon,mesh
+zip-leg pressurized pants | 0.60 | 0.2-0.6 | kevlar,nylon
+captain trousers with chrome piping | 0.50 | 0.5-0.9 | satin,nylon
+cargo joggers with reflective stripe | 0.60 | 0.1-0.5 | nylon,neoprene
+fitted moon-walk gaiter pants | 0.50 | 0.1-0.5 | neoprene,kevlar
+flight deck overalls with utility belt | 0.55 | 0.1-0.5 | nylon,kevlar

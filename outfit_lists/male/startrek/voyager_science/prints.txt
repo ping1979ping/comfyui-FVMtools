@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+science blue shoulder yoke | 0.50 | top | 0.2-0.8
+Voyager intrepid class emblem | 0.40 | top,outerwear | 0.2-0.8
+chief science rank pip pattern | 0.35 | top | 0.3-0.9
+delta quadrant expedition patch | 0.30 | top,outerwear | 0.0-0.6
+astrophysics division stripe | 0.30 | top | 0.3-0.8
+research lab coat insignia | 0.30 | outerwear | 0.0-0.7
+formal science trim pattern | 0.25 | outerwear | 0.7-1.0
+sleeve research mission patches | 0.30 | top,outerwear | 0.0-0.6
+ceremonial science epaulette | 0.20 | top,outerwear | 0.7-1.0
+star chart motif overlay | 0.25 | top | 0.2-0.7

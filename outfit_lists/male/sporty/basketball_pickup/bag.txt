@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# hoops duffel | 0.70 | 0.0-0.1 | nylon,polyester
+#color# court backpack | 0.65 | 0.0-0.1 | nylon,polyester
+#color# drawstring sack | 0.60 | 0.0-0.1 | nylon,polyester
+#color# ball carry bag | 0.50 | 0.0-0.1 | nylon
+#color# team duffel | 0.55 | 0.0-0.1 | polyester
+#color# shoe tote | 0.40 | 0.0-0.1 | nylon
+#color# court sling | 0.35 | 0.0-0.1 | nylon,polyester
+#color# locker bag | 0.45 | 0.0-0.1 | polyester

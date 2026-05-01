@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+canvas plimsolls | 0.40 | 0.0-0.3 | cotton
+button-up boots | 0.40 | 0.1-0.4 | leather
+
+# mid-casual
+two-tone spectator shoes | 0.55 | 0.3-0.7 | leather
+brogue shoes | 0.50 | 0.3-0.7 | leather
+captoe boots | 0.45 | 0.2-0.5 | leather
+buckskin oxfords | 0.40 | 0.3-0.6 | suede
+
+# formal
+patent oxfords | 0.45 | 0.6-0.9 | leather
+opera pumps | 0.35 | 0.7-0.9 | leather,satin
+wingtip dress shoes | 0.45 | 0.5-0.8 | leather

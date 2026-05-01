@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"DINNER" | 0.15 | top | elegant serif
+"GALA" | 0.15 | top | elegant serif
+"SOIREE" | 0.15 | top | elegant serif
+"GUEST" | 0.10 | top | elegant serif
+"HOST" | 0.10 | top | elegant serif
+"REFINED" | 0.10 | top | elegant serif
+"EVENING" | 0.15 | top | elegant serif
+"FORMAL" | 0.10 | top | elegant serif

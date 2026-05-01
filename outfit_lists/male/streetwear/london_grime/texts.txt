@@ -1,0 +1,16 @@
+# format: text_content | probability | compatible_slots | font_hint
+"LONDON" | 0.3 | top,headwear | bold block letters
+"UK" | 0.3 | top,headwear | bold block letters
+"GRIME" | 0.3 | top,outerwear | gothic font
+"BARS" | 0.25 | top | graffiti style
+"BLOCK" | 0.25 | top | distressed print
+"ENDZ" | 0.2 | top | graffiti style
+"CRUDLEY" | 0.15 | top | gothic font
+"MAN LIKE" | 0.2 | top | graffiti style
+"OI" | 0.2 | top | bold block letters
+"GRT BRTN" | 0.2 | top | distressed print
+"ROAD" | 0.25 | top | graffiti style
+"FAM" | 0.2 | top | playful font
+"HUSTLE" | 0.25 | top | graffiti style
+"REAL" | 0.2 | top | distressed print
+"DEPP" | 0.15 | top | gothic font

@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+gold pendant | 0.5 | 0.0-0.3 | cotton
+luxury watch | 0.6 | 0.1-0.4 | leather,nylon
+designer rings | 0.4 | 0.0-0.3 | cotton
+fashion sunglasses | 0.6 | 0.0-0.3 | nylon
+luxe leather belt | 0.5 | 0.1-0.4 | leather,canvas,nylon
+silk pocket square | 0.3 | 0.1-0.4 | polyester
+designer bracelet | 0.4 | 0.0-0.3 | cotton
+fine cuff link | 0.3 | 0.1-0.4 | cotton
+italian-style scarf | 0.3 | 0.1-0.4 | polyester

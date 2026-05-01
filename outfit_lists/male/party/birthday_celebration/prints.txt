@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+confetti splash | 0.40 | top,accessories | 0.2-0.5
+balloon motif | 0.30 | top | 0.2-0.4
+star burst | 0.30 | top,accessories | 0.2-0.5
+celebration graphic | 0.35 | top | 0.2-0.5
+candles motif | 0.25 | top | 0.2-0.4
+party streamer | 0.25 | top,accessories | 0.2-0.4
+big number print | 0.30 | top | 0.2-0.4
+sparkle accent | 0.30 | top,accessories | 0.3-0.5
+cake graphic | 0.25 | top | 0.2-0.4
+party logo | 0.25 | top | 0.2-0.5

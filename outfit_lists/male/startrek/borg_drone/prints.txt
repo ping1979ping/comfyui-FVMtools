@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+borg cube hexagonal panel pattern | 0.45 | top,outerwear | 0.0-1.0
+collective drone designation hex code | 0.40 | top | 0.0-1.0
+biomechanical circuitry tracery | 0.50 | top,outerwear | 0.0-1.0
+borg assimilation tubule vein motif | 0.40 | top,outerwear | 0.0-1.0
+drone exoskeletal plate seam pattern | 0.45 | top,outerwear | 0.0-1.0
+collective conduit overlay | 0.35 | top,outerwear | 0.0-1.0
+borg corrosion damage decals | 0.30 | top,outerwear | 0.0-0.7
+servo housing rivet pattern | 0.30 | top,outerwear | 0.0-1.0
+biomech-organic gradient blend | 0.35 | top,outerwear | 0.0-1.0
+queen drone insignia engraving | 0.20 | outerwear | 0.5-1.0

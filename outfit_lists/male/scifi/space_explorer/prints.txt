@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+mission crest patch | 0.60 | top,outerwear | 0.2-0.8
+star fleet insignia | 0.50 | top,outerwear | 0.3-0.8
+nebula color-wash | 0.35 | top,outerwear | 0.1-0.6
+constellation map print | 0.40 | top,bottom | 0.2-0.6
+reflective stripe accent | 0.55 | top,bottom,outerwear | 0.1-0.6
+hex tech grid | 0.40 | top,outerwear | 0.2-0.6
+mission patches in row | 0.45 | outerwear | 0.2-0.7
+star chart embroidery | 0.30 | top,outerwear | 0.4-0.8
+zero-gravity test stripe | 0.40 | top,outerwear | 0.1-0.5
+mission-clock chrome motif | 0.35 | top,outerwear | 0.2-0.6

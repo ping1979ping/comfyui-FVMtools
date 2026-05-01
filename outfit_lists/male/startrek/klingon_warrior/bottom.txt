@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+klingon warrior battle trousers in black | 0.95 | 0.2-1.0 | leather,wool
+imperial defense force tactical pants | 0.80 | 0.3-0.9 | leather,nylon
+klingon ceremonial trouser with house stripe | 0.55 | 0.7-1.0 | wool,satin
+warrior leather breeches | 0.70 | 0.0-0.7 | leather
+klingon battle leggings with greaves | 0.65 | 0.2-0.9 | leather,metal
+qoH duty trousers reinforced at knee | 0.60 | 0.2-0.7 | leather,wool
+warrior off-duty lounge trousers | 0.30 | 0.0-0.3 | wool,cotton
+klingon imperial guard plated leg coverings | 0.50 | 0.5-1.0 | metal,leather
+high council formal trouser in black | 0.40 | 0.8-1.0 | wool,satin
+warrior expedition cargo trousers | 0.45 | 0.0-0.5 | leather,canvas

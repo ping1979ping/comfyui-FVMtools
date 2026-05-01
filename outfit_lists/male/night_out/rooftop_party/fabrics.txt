@@ -1,0 +1,16 @@
+# format: fabric_name | formality | family | weight
+
+cotton | 0.4 | natural | medium
+linen | 0.4 | natural | light
+silk | 0.7 | natural | light
+seersucker | 0.4 | natural | light
+poplin | 0.5 | natural | light
+chambray | 0.4 | natural | light
+denim | 0.3 | natural | heavy
+canvas | 0.4 | natural | medium
+jersey | 0.3 | knit | light
+merino | 0.5 | natural | light
+suede | 0.5 | animal | medium
+leather | 0.5 | animal | medium
+rayon | 0.4 | synthetic | light
+straw | 0.3 | natural | light

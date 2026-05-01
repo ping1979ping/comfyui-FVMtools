@@ -1,0 +1,8 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"AVATAR" | 0.25 | top | pixel font
+"RESPAWN" | 0.20 | top,outerwear | glitch font
+"NPC" | 0.20 | top | bold sans
+"LVL UP" | 0.20 | top | retro arcade font
+"PIXEL" | 0.15 | top,outerwear | chunky pixel font
+"AFK" | 0.15 | top | bold uppercase

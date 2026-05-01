@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+communicator badge in command position on chest | 0.95 | 0.0-1.0 | metal
+four rank pips on collar denoting captain | 0.85 | 0.2-1.0 | metal
+type-2 phaser holstered on hip | 0.50 | 0.0-0.6 | plastic,metal
+captain ceremonial dirk at side | 0.30 | 0.7-1.0 | metal
+admiral service ribbons in rows | 0.45 | 0.7-1.0 | satin,metal
+duty PADD device in hand | 0.40 | 0.2-0.8 | plastic
+command ring signet on right hand | 0.25 | 0.5-1.0 | metal
+flag officer collar braid | 0.35 | 0.7-1.0 | metal
+captain wristwatch chronometer | 0.30 | 0.0-0.8 | metal
+ready room coffee mug | 0.20 | 0.0-0.3 | plastic

@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+chunky black trainers | 0.7 | 0.0-0.3 | leather,mesh,nylon
+classic running trainers | 0.6 | 0.0-0.2 | mesh,nylon,leather
+gazelle-style sneakers | 0.5 | 0.0-0.2 | leather,jersey
+black high-tops | 0.5 | 0.0-0.2 | canvas,leather
+football trainers | 0.4 | 0.0-0.2 | leather,mesh
+work-style boots | 0.4 | 0.0-0.3 | leather
+white sneakers | 0.5 | 0.0-0.3 | leather,mesh

@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+faded zip-up hoodie | 0.6 | 0.0-0.2 | cotton,fleece
+washed denim jacket | 0.5 | 0.0-0.3 | denim
+worn windbreaker | 0.5 | 0.0-0.2 | nylon,ripstop,polyester
+varsity coach jacket | 0.4 | 0.0-0.2 | nylon,polyester
+vintage flight jacket | 0.4 | 0.0-0.3 | nylon,polyester
+work jacket | 0.4 | 0.0-0.3 | canvas,twill
+puffer vest | 0.3 | 0.0-0.2 | nylon,polyester

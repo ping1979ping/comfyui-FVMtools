@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+collab snapback | 0.6 | 0.0-0.2 | cotton,polyester
+designer fitted cap | 0.5 | 0.0-0.2 | cotton,polyester
+hyped beanie | 0.5 | 0.0-0.2 | cotton,jersey,fleece
+brand bucket hat | 0.5 | 0.0-0.2 | cotton,nylon,canvas

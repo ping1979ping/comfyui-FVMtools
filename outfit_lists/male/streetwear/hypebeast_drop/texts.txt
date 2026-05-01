@@ -1,0 +1,16 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SUPREME" | 0.3 | top | bold block letters
+"OFF-WHITE" | 0.25 | top | distressed print
+"BAPE" | 0.2 | top,headwear | bold block letters
+"HYPE" | 0.3 | top,outerwear | gothic font
+"DROP" | 0.3 | top | bold block letters
+"LIMITED" | 0.25 | top,outerwear | gothic font
+"EXCLUSIVE" | 0.2 | top | distressed print
+"FW24" | 0.2 | top | industrial font
+"COLLAB" | 0.2 | top,outerwear | bold block letters
+"COLLECTION" | 0.15 | top | gothic font
+"LOGO" | 0.2 | top,headwear | bold block letters
+"BRAND" | 0.2 | top | gothic font
+"CULT" | 0.15 | top | distressed print
+"VAULT" | 0.15 | top | industrial font
+"GRAIL" | 0.2 | top | gothic font

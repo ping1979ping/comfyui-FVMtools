@@ -1,0 +1,16 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NYC" | 0.35 | top,headwear | bold block letters
+"BROOKLYN" | 0.25 | top,outerwear | gothic font
+"BRONX" | 0.25 | top,headwear | gothic font
+"QUEENS" | 0.25 | top | bold block letters
+"HARLEM" | 0.25 | top,outerwear | gothic font
+"EMPIRE" | 0.2 | top | gothic font
+"SUBWAY" | 0.2 | top | industrial font
+"5 BORO" | 0.2 | top | bold block letters
+"CONCRETE" | 0.25 | top,outerwear | distressed print
+"HUSTLE" | 0.25 | top | graffiti style
+"GRIND" | 0.2 | top | stencil font
+"STREET" | 0.3 | top | distressed print
+"BIG APPLE" | 0.2 | top | bold block letters
+"UPTOWN" | 0.2 | top | gothic font
+"DOWNTOWN" | 0.2 | top | gothic font

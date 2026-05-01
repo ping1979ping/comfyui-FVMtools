@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# linen button-up | 0.75 | 0.4-0.6 | cotton
+#color# pastel polo | 0.65 | 0.4-0.6 | cotton,jersey
+#color# floral camp shirt | 0.60 | 0.4-0.6 | cotton
+#color# striped oxford | 0.55 | 0.4-0.6 | cotton
+#color# breezy henley | 0.50 | 0.3-0.5 | cotton,jersey
+#color# short-sleeve dress shirt | 0.55 | 0.4-0.6 | cotton
+#color# tropical print shirt | 0.55 | 0.4-0.5 | cotton
+#color# preppy v-neck top | 0.50 | 0.4-0.6 | cotton,jersey
+#color# garden plaid shirt | 0.45 | 0.4-0.6 | cotton
+#color# crisp white tee | 0.40 | 0.3-0.5 | cotton,jersey
+#color# pinstripe button-up | 0.45 | 0.4-0.6 | cotton
+#color# pastel knit top | 0.45 | 0.4-0.6 | cotton,jersey
+#color# garden gingham shirt | 0.50 | 0.4-0.6 | cotton

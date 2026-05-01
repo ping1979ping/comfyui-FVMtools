@@ -1,0 +1,12 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+mod beanie | 0.30 | 0.1-0.4 | knit
+flat cap | 0.35 | 0.1-0.4 | wool
+
+# mid-casual
+trilby hat | 0.35 | 0.3-0.7 | wool
+
+# formal
+slim brim fedora | 0.30 | 0.4-0.8 | wool

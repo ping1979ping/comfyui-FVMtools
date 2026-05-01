@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+iridescent ceremonial cape with floating shoulder pieces | 0.70 | 0.6-1.0 | holographic,satin
+high-collar ambassador overcoat with chrome epaulettes | 0.65 | 0.6-1.0 | satin,silk
+flowing embassy robe with embroidered glyphs | 0.60 | 0.6-1.0 | silk,satin
+sculpted chrome-edged stole with fiber-optic trim | 0.55 | 0.5-0.9 | metal_mesh,satin
+sheer ceremonial overlay with floating gem | 0.50 | 0.5-0.9 | mesh,holographic
+fitted ambassador blazer with chrome buttons | 0.60 | 0.5-0.9 | satin,nylon
+hooded iridescent mantle with chrome closures | 0.55 | 0.5-0.9 | holographic,satin
+draped one-shoulder ceremonial cloak | 0.50 | 0.6-1.0 | satin,silk

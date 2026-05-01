@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+TOS engineering delta insignia pin | 0.90 | 0.0-1.0 | metal
+service rank stripes on cuff | 0.85 | 0.2-1.0 | metal
+classic flip-open communicator on hip | 0.65 | 0.0-0.7 | plastic,metal
+type-1 phaser pistol on belt | 0.50 | 0.0-0.6 | plastic,metal
+engineer toolbelt with hyperspanners | 0.55 | 0.0-0.5 | leather,metal
+chief medical officer wrist scanner | 0.30 | 0.0-0.6 | plastic,metal
+TOS service ribbons across chest | 0.35 | 0.7-1.0 | satin,metal
+ready light pen-style scanner | 0.40 | 0.0-0.6 | metal,plastic
+shipboard chronometer wristband | 0.30 | 0.0-0.8 | metal
+service ID lanyard around neck | 0.25 | 0.0-0.6 | nylon,plastic

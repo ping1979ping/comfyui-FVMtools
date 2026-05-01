@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aero sprint sneakers with reactive sole | 0.85 | 0.0-0.4 | mesh,rubber
+chrome-laced racing shoes with glow trim | 0.70 | 0.0-0.4 | mesh,nylon
+high-top runners with circuit print | 0.60 | 0.0-0.4 | mesh,rubber
+iridescent slip-ons with chrome accents | 0.50 | 0.0-0.3 | holographic,rubber
+mid-cut speed boots with reinforced toe | 0.55 | 0.1-0.5 | leather,nylon
+neon-edge running shoes with mesh vents | 0.60 | 0.0-0.3 | mesh,rubber
+streamlined trainers with magnetic strap | 0.55 | 0.1-0.5 | mesh,neoprene

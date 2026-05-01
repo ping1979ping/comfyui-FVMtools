@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aero racing tights with reactive light strips | 0.80 | 0.1-0.5 | spandex,neoprene
+fitted track pants with chrome piping | 0.70 | 0.1-0.5 | nylon,neoprene
+iridescent compression shorts | 0.60 | 0.0-0.4 | holographic,spandex
+mesh-paneled racing leggings | 0.65 | 0.1-0.5 | mesh,spandex
+zipped speed pants with glow seams | 0.60 | 0.2-0.6 | spandex,neoprene
+cargo runner shorts with magnetic clips | 0.55 | 0.0-0.4 | nylon,mesh
+asymmetric racing tights with circuit print | 0.55 | 0.1-0.5 | spandex,holographic
+high-cut speed shorts with chrome trim | 0.50 | 0.0-0.4 | spandex,mesh
+fitted aero joggers with reflective stripe | 0.60 | 0.1-0.5 | nylon,neoprene
+streamlined leggings with iridescent finish | 0.55 | 0.1-0.5 | holographic,spandex

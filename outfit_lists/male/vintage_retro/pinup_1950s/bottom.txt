@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+cuffed jeans | 0.55 | 0.0-0.3 | denim
+selvedge pants | 0.45 | 0.0-0.3 | denim
+chinos | 0.50 | 0.1-0.4 | cotton
+
+# mid-casual
+high-waisted slacks | 0.55 | 0.2-0.6 | wool,gabardine
+pleated slacks | 0.50 | 0.3-0.7 | wool
+hollywood-waist trousers | 0.45 | 0.3-0.7 | gabardine,wool
+peg-leg trousers | 0.40 | 0.2-0.6 | wool
+
+# formal
+sharp slacks | 0.45 | 0.5-0.8 | sharkskin
+tailored dress trousers | 0.50 | 0.4-0.8 | wool

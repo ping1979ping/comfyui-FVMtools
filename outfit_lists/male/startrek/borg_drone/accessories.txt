@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+borg ocular implant over right eye | 0.90 | 0.0-1.0 | metal,plastic
+drone facial assimilation tubule | 0.85 | 0.0-1.0 | rubber,metal
+borg cranial cortical node | 0.80 | 0.0-1.0 | metal
+biomechanical hand prosthetic with manipulator | 0.75 | 0.0-1.0 | metal,plastic
+drone neural transceiver behind ear | 0.70 | 0.0-1.0 | metal,plastic
+borg assimilation tubule extension from wrist | 0.65 | 0.0-1.0 | rubber,metal
+drone integrated phaser arm cannon | 0.55 | 0.0-1.0 | metal,plastic
+collective ID hexadecimal designation tag | 0.60 | 0.0-1.0 | metal
+borg severed digit prosthetic | 0.45 | 0.0-1.0 | metal
+drone subdermal cabling visible at temple | 0.65 | 0.0-1.0 | rubber,metal
+biomech respirator vent at throat | 0.55 | 0.0-1.0 | metal,plastic
+borg drone interlink cranial helmet | 0.50 | 0.0-1.0 | metal

@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+hide belt | 0.45 | 0.0-0.4 | leather
+bandana | 0.30 | 0.0-0.3 | cotton
+chain wallet | 0.35 | 0.0-0.3 | metal
+
+# mid-casual
+horn-rim glasses | 0.45 | 0.2-0.6 | metal
+slim suspenders | 0.35 | 0.2-0.6 | leather
+varsity letterman pin | 0.30 | 0.1-0.4 | metal
+
+# formal
+silken necktie | 0.50 | 0.4-0.8 | silk
+bow tie | 0.35 | 0.5-0.9 | silk
+silver tie clip | 0.30 | 0.5-0.8 | metal
+gold cufflinks | 0.30 | 0.5-0.9 | metal

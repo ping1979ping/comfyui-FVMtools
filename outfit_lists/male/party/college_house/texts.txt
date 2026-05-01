@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"CAMPUS" | 0.20 | top | varsity block
+"GO TEAM" | 0.20 | top | varsity block
+"CLASS OF" | 0.15 | top | varsity block
+"FRAT" | 0.20 | top | varsity block
+"DORM LIFE" | 0.15 | top | varsity block
+"KEG STAND" | 0.15 | top | retro lettering
+"PONG" | 0.20 | top | bold print
+"COLLEGE" | 0.20 | top | varsity block
+"BRO" | 0.15 | top | bold print
+"WEEKEND" | 0.15 | top | retro lettering

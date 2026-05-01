@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+sponsor patches | 0.6 | top,outerwear | 0.0-0.3
+country flag | 0.4 | top,headwear | 0.0-0.2
+club crest | 0.5 | top,headwear,bag | 0.1-0.4
+crocodile emblem | 0.4 | top | 0.0-0.3
+laurel wreath | 0.3 | top | 0.1-0.4
+classic stripe | 0.5 | top,bag | 0.0-0.3
+contrast collar trim | 0.5 | top | 0.0-0.3
+brand wordmark | 0.5 | top,headwear,bag | 0.0-0.3
+geometric tennis graphic | 0.3 | top | 0.0-0.2
+tournament patch | 0.4 | top | 0.0-0.3
+abstract court line | 0.3 | top | 0.0-0.2

@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white sneakers | 0.75 | 0.1-0.4 | canvas,leather
+tennis shoes | 0.70 | 0.1-0.4 | canvas,leather
+court trainers | 0.60 | 0.1-0.4 | mesh,canvas
+plimsolls | 0.50 | 0.1-0.3 | canvas
+white plimsolls | 0.45 | 0.1-0.3 | canvas
+slip-on sneakers | 0.40 | 0.1-0.3 | canvas,leather
+classic trainers | 0.45 | 0.1-0.3 | canvas,leather
+
+# mid-casual
+penny loafers | 0.45 | 0.3-0.7 | leather,suede
+boat shoes | 0.45 | 0.2-0.4 | leather,suede
+
+# formal
+oxford shoes | 0.30 | 0.5-0.8 | leather

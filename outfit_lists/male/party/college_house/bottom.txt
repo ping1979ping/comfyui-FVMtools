@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# distressed jeans | 0.60 | 0.2-0.4 | denim
+#color# cargo shorts | 0.55 | 0.2-0.3 | cotton
+#color# joggers | 0.55 | 0.2-0.3 | cotton,polyester
+#color# basketball shorts | 0.50 | 0.2-0.3 | polyester
+#color# baggy jeans | 0.50 | 0.2-0.4 | denim
+#color# chino shorts | 0.45 | 0.2-0.4 | cotton
+#color# sweatpants | 0.55 | 0.2-0.3 | cotton
+#color# board shorts | 0.40 | 0.2-0.3 | polyester
+#color# slim jeans | 0.50 | 0.2-0.4 | denim
+#color# track pants | 0.40 | 0.2-0.3 | polyester

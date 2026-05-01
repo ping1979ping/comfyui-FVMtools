@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# slim chinos | 0.65 | 0.3-0.5 | cotton
+#color# party trousers | 0.50 | 0.3-0.5 | cotton
+#color# slim jeans | 0.65 | 0.3-0.5 | denim
+#color# tailored shorts | 0.45 | 0.2-0.4 | cotton
+#color# stretch chinos | 0.55 | 0.3-0.5 | cotton
+#color# dark jeans | 0.55 | 0.3-0.5 | denim
+#color# casual trousers | 0.50 | 0.3-0.5 | cotton
+#color# joggers | 0.40 | 0.2-0.4 | cotton
+#color# bermuda shorts | 0.40 | 0.2-0.4 | cotton
+#color# tapered pants | 0.40 | 0.3-0.5 | cotton
+#color# cropped chinos | 0.40 | 0.3-0.5 | cotton

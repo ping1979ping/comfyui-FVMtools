@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized bomber | 0.6 | 0.0-0.3 | nylon,polyester
+patchwork jacket | 0.6 | 0.0-0.3 | cotton,flannel,denim
+techwear shell | 0.5 | 0.0-0.2 | nylon,ripstop
+oversized hoodie jacket | 0.5 | 0.0-0.2 | cotton,fleece
+kimono-cut overcoat | 0.4 | 0.0-0.3 | cotton,polyester
+windbreaker | 0.5 | 0.0-0.2 | nylon,ripstop,polyester
+shearling-trim coat | 0.3 | 0.0-0.3 | leather
+quilted vest | 0.4 | 0.0-0.2 | nylon,polyester

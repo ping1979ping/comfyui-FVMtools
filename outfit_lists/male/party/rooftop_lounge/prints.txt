@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+satin sheen | 0.35 | top,accessories | 0.4-0.7
+minimal monogram | 0.30 | top,accessories | 0.4-0.6
+city stripe | 0.30 | top | 0.4-0.6
+subtle tonal print | 0.30 | top | 0.4-0.6
+rooftop skyline | 0.20 | top | 0.4-0.6
+elegant geometric | 0.25 | top,accessories | 0.4-0.6
+embossed accent | 0.25 | accessories | 0.4-0.6
+abstract motif | 0.25 | top | 0.4-0.6
+neon outline | 0.20 | top | 0.3-0.5
+luxe shimmer | 0.25 | top,accessories | 0.4-0.7

@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tailored trousers | 0.65 | 0.4-0.6 | wool
+#color# slim chinos | 0.55 | 0.3-0.5 | cotton
+#color# cropped slacks | 0.50 | 0.4-0.6 | wool
+#color# dark fitted jeans | 0.55 | 0.3-0.5 | denim
+#color# pleated trousers | 0.45 | 0.4-0.6 | wool
+#color# city dress pants | 0.50 | 0.4-0.6 | wool
+#color# slim dress pants | 0.55 | 0.4-0.6 | wool
+#color# tapered chinos | 0.50 | 0.3-0.5 | cotton
+#color# evening trousers | 0.50 | 0.4-0.6 | wool
+#color# minimal black slacks | 0.45 | 0.4-0.6 | wool

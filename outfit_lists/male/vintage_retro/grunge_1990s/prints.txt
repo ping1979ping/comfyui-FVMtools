@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+plaid pattern | 0.5 | top,outerwear | 0.0-0.4
+band logo graphic | 0.5 | top | 0.0-0.3
+tartan motif | 0.4 | top,outerwear | 0.0-0.4
+checkered grid | 0.3 | top,outerwear | 0.0-0.4
+distressed text | 0.3 | top | 0.0-0.3
+faded floral | 0.3 | top | 0.0-0.3
+skull graphic | 0.3 | top | 0.0-0.3
+tie-dye motif | 0.3 | top | 0.0-0.3
+striped pattern | 0.3 | top | 0.0-0.4
+graphic concert poster | 0.4 | top | 0.0-0.3

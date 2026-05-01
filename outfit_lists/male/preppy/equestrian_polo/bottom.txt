@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white breeches | 0.60 | 0.2-0.5 | twill,gabardine
+riding breeches | 0.55 | 0.2-0.5 | twill,gabardine
+field pants | 0.45 | 0.2-0.5 | twill,moleskin
+chinos | 0.55 | 0.3-0.6 | twill,poplin
+
+# mid-casual
+flat-front trousers | 0.50 | 0.3-0.6 | twill,gabardine
+heritage pants | 0.45 | 0.3-0.6 | moleskin
+country trousers | 0.45 | 0.3-0.7 | tweed,moleskin
+
+# formal
+dress trousers | 0.50 | 0.5-0.8 | gabardine,worsted
+tailored slacks | 0.45 | 0.5-0.8 | gabardine,worsted

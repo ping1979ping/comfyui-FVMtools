@@ -1,0 +1,16 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SEOUL" | 0.3 | top,headwear | bold block letters
+"GANGNAM" | 0.25 | top | gothic font
+"DAEBAK" | 0.25 | top | playful font
+"OPPA" | 0.2 | top | playful font
+"서울" | 0.25 | top,outerwear | brush stroke
+"강남" | 0.2 | top | brush stroke
+"K-IDOL" | 0.25 | top,outerwear | bold block letters
+"FANCY" | 0.2 | top | playful font
+"BIAS" | 0.2 | top | bold block letters
+"STAGE" | 0.2 | top,outerwear | gothic font
+"AESTHETIC" | 0.2 | top | minimal sans-serif
+"MUSE" | 0.2 | top | minimal sans-serif
+"DREAM" | 0.2 | top | playful font
+"SHINE" | 0.2 | top | playful font
+"VOGUE" | 0.15 | top | minimal sans-serif

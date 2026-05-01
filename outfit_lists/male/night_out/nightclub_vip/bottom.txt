@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim black jeans | 0.80 | 0.3-0.5 | denim
+tailored evening trousers | 0.70 | 0.5-0.7 | wool,polyester
+black designer trousers | 0.65 | 0.4-0.7 | wool,polyester
+dark slim jeans | 0.65 | 0.3-0.5 | denim
+glossy dress pants | 0.45 | 0.4-0.6 | polyester
+charcoal slim chinos | 0.50 | 0.4-0.6 | cotton
+coated black jeans | 0.40 | 0.4-0.6 | denim
+cropped suit pants | 0.40 | 0.5-0.7 | wool
+midnight slim trousers | 0.45 | 0.5-0.7 | wool

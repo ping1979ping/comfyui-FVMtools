@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+anime graphic | 0.6 | top,outerwear | 0.0-0.3
+katakana lettering | 0.5 | top,outerwear | 0.0-0.3
+manga panels | 0.4 | top,bag | 0.0-0.3
+cherry blossom motif | 0.4 | top,outerwear | 0.0-0.3
+neon graphic | 0.4 | top,outerwear | 0.0-0.3
+tie-dye effect | 0.3 | top,bottom | 0.0-0.3
+brand collab logo | 0.4 | top,headwear,bag | 0.0-0.4
+oversized graphic | 0.3 | top,outerwear | 0.0-0.2
+abstract splatter | 0.3 | top,outerwear | 0.0-0.3
+patchwork details | 0.4 | top,bottom,outerwear | 0.0-0.3

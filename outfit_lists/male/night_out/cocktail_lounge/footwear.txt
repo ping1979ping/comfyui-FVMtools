@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic oxfords | 0.65 | 0.5-0.7 | leather
+chelsea boots | 0.70 | 0.4-0.7 | leather,suede
+penny loafers | 0.55 | 0.5-0.7 | leather
+opera slippers | 0.35 | 0.5-0.7 | velvet
+chukka boots | 0.45 | 0.4-0.6 | suede
+monk strap shoes | 0.40 | 0.5-0.7 | leather
+derby shoes | 0.45 | 0.5-0.7 | leather
+wholecut shoes | 0.30 | 0.5-0.7 | leather
+horsebit loafers | 0.35 | 0.5-0.7 | leather
+patent oxfords | 0.30 | 0.5-0.7 | leather

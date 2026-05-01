@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical assault pack with antenna | 0.65 | 0.1-0.6 | nylon,kevlar
+distressed sling bag with patched repairs | 0.55 | 0.0-0.4 | nylon,leather
+torn surplus duffel with rope strap | 0.50 | 0.0-0.3 | nylon,mesh
+ammo crate satchel with chrome clasp | 0.50 | 0.1-0.5 | leather,metal_mesh
+hip pouch with magnetic flap | 0.55 | 0.1-0.5 | nylon,leather
+soot-stained backpack with bandage wrap | 0.45 | 0.0-0.3 | nylon,neoprene
+chrome-rimmed scout case with shoulder strap | 0.40 | 0.2-0.6 | leather,metal_mesh

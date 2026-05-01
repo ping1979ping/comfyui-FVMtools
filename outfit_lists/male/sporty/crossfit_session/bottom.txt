@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# training shorts | 0.90 | 0.0-0.1 | polyester
+#color# wod shorts | 0.85 | 0.0-0.1 | polyester
+#color# compression shorts | 0.70 | 0.0-0.1 | spandex
+#color# squat-proof tights | 0.55 | 0.0-0.1 | spandex,nylon
+#color# 7-inch lifting shorts | 0.75 | 0.0-0.1 | polyester
+#color# loose mesh shorts | 0.65 | 0.0-0.1 | mesh
+#color# joggers | 0.55 | 0.0-0.2 | cotton,polyester
+#color# fitted training pants | 0.50 | 0.0-0.2 | polyester
+#color# board-style shorts | 0.55 | 0.0-0.1 | polyester

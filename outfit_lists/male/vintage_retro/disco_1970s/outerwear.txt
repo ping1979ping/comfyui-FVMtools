@@ -1,0 +1,16 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+jean jacket | 0.40 | 0.0-0.3 | denim
+fringed jacket | 0.40 | 0.1-0.4 | suede,leather
+shearling-collar jacket | 0.40 | 0.1-0.4 | leather
+
+# mid-casual
+wide-lapel blazer | 0.50 | 0.3-0.6 | polyester,velvet
+safari jacket | 0.45 | 0.2-0.5 | cotton
+patterned blazer | 0.45 | 0.3-0.6 | polyester
+
+# formal
+plush blazer | 0.50 | 0.5-0.8 | velvet
+glossy tuxedo jacket | 0.45 | 0.6-0.9 | satin

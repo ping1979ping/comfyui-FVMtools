@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical helmet with HUD visor | 0.65 | 0.2-0.7 | kevlar,plastic
+distressed combat goggles with cracked lens | 0.55 | 0.0-0.4 | leather,plastic
+hooded face cowl with breathing filter | 0.55 | 0.0-0.5 | neoprene,mesh
+torn bandana wrapped over forehead | 0.50 | 0.0-0.3 | mesh,nylon
+chrome-plated half-mask with respirator | 0.45 | 0.1-0.5 | metal,plastic

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+psychedelic swirls | 0.4 | top | 0.1-0.5
+paisley print | 0.4 | top | 0.2-0.6
+geometric shapes | 0.4 | top | 0.2-0.6
+op art pattern | 0.3 | top | 0.2-0.6
+floral motif | 0.3 | top | 0.1-0.5
+groovy print | 0.4 | top | 0.1-0.4
+disco glitter | 0.3 | top | 0.4-0.9
+metallic shimmer | 0.3 | top | 0.5-0.9
+stars and lightning | 0.3 | top | 0.2-0.6
+patchwork pattern | 0.2 | top,outerwear | 0.1-0.4
+butterfly motif | 0.2 | top | 0.1-0.5

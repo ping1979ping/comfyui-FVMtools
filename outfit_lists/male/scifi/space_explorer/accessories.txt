@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wrist comm with mission clock | 0.70 | 0.2-0.8 | metal,plastic
+helmet ring collar with seal | 0.55 | 0.3-0.7 | metal,rubber
+mission utility belt with tools | 0.65 | 0.1-0.6 | nylon,leather
+shoulder rank patch with chrome pin | 0.50 | 0.3-0.8 | metal
+oxygen-line clip on shoulder | 0.45 | 0.2-0.7 | plastic,metal
+gloves with reinforced knuckles | 0.50 | 0.1-0.6 | leather,kevlar
+chrome dog tags with mission ID | 0.45 | 0.0-0.6 | metal
+holstered sidearm on thigh | 0.40 | 0.1-0.5 | plastic,metal
+captain shoulder cord with chrome ferrule | 0.30 | 0.5-0.9 | satin,metal
+chrome shoulder beacon with mission code | 0.45 | 0.2-0.7 | metal,plastic

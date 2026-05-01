@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neon shades | 0.50 | 0.0-0.3 | metal
+sweat wristband | 0.30 | 0.0-0.2 | knit
+chunky digital watch | 0.45 | 0.0-0.3 | metal
+
+# mid-casual
+power belt | 0.45 | 0.2-0.6 | leather
+gold chain necklace | 0.40 | 0.2-0.6 | metal
+brick-style mobile | 0.30 | 0.3-0.6 | metal
+preppy suspenders | 0.35 | 0.2-0.6 | leather
+
+# formal
+power tie | 0.55 | 0.5-0.9 | silk
+silken pocket square | 0.40 | 0.5-0.9 | silk
+gold tie bar | 0.35 | 0.5-0.9 | metal
+gold cufflinks | 0.35 | 0.5-0.9 | metal

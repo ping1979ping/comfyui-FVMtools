@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wrist-mounted holographic communicator | 0.65 | 0.0-0.7 | metal,plastic
+glowing neon collar choker | 0.55 | 0.0-0.5 | plastic,metal
+fingerless biker gloves with chrome studs | 0.55 | 0.0-0.5 | leather,mesh
+cybernetic arm sleeve with glow lines | 0.50 | 0.0-0.6 | metal,neoprene
+utility belt with glow-strip pouches | 0.60 | 0.0-0.5 | nylon,leather
+chrome chain harness over chest | 0.40 | 0.1-0.5 | metal
+hexagonal stud earring with neon insert | 0.40 | 0.1-0.6 | metal,plastic
+LED ear cuffs in stack | 0.40 | 0.0-0.4 | plastic,metal
+holstered taser on thigh | 0.45 | 0.0-0.5 | plastic,metal
+augmented reality contact glow | 0.50 | 0.0-0.7 | plastic
+spiked chrome wrist cuffs stacked | 0.40 | 0.1-0.5 | metal,leather

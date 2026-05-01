@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim wallet | 0.70 | 0.4-0.7 | leather
+small crossbody | 0.40 | 0.3-0.5 | canvas,leather
+summer tote | 0.35 | 0.3-0.5 | canvas
+phone wallet | 0.50 | 0.3-0.6 | leather
+woven beach bag | 0.30 | 0.2-0.4 | straw
+hip pack | 0.35 | 0.2-0.4 | nylon
+card holder | 0.50 | 0.4-0.7 | leather
+mini messenger | 0.30 | 0.4-0.6 | canvas,leather

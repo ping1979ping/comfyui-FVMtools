@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aero windbreaker with reactive panels | 0.70 | 0.0-0.5 | nylon,neoprene
+cropped racing jacket with chrome zipper | 0.65 | 0.1-0.5 | nylon,holographic
+hooded speed shell with glow seams | 0.60 | 0.0-0.4 | nylon,neoprene
+iridescent track jacket with mesh vents | 0.55 | 0.1-0.5 | holographic,mesh
+sleeveless racing shrug with reactive strip | 0.50 | 0.0-0.4 | spandex,neoprene
+chrome-trim bomber with rank stripe | 0.55 | 0.2-0.6 | nylon,neoprene
+iridescent vest with magnetic clasps | 0.50 | 0.1-0.5 | holographic,nylon
+hooded mesh-overlay jacket | 0.45 | 0.0-0.4 | mesh,nylon
+zipped windrunner with chrome piping | 0.55 | 0.1-0.5 | nylon,neoprene

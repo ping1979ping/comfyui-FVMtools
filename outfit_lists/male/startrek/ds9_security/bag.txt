@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tactical breach pack with grappling gear | 0.45 | 0.0-0.5 | nylon,kevlar
+security duty pouch on hip | 0.55 | 0.0-0.6 | nylon,leather
+runabout away mission satchel | 0.40 | 0.0-0.5 | nylon
+chief security manifest case | 0.35 | 0.3-0.8 | leather
+constable patrol sling pack | 0.40 | 0.0-0.5 | nylon
+ammo bandolier across chest | 0.35 | 0.0-0.4 | nylon,leather
+formal dispatch portfolio | 0.30 | 0.6-1.0 | leather
+field comms relay backpack | 0.30 | 0.0-0.4 | nylon,plastic

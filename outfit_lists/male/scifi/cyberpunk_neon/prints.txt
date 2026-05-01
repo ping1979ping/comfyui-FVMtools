@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+glowing circuit board pattern | 0.55 | top,bottom | 0.0-0.5
+neon stripe accent | 0.60 | top,bottom,outerwear | 0.0-0.5
+hexagonal tech grid | 0.45 | top,outerwear | 0.1-0.5
+glitch pixel print | 0.45 | top,bottom | 0.0-0.4
+holographic color-shift | 0.40 | top,outerwear | 0.2-0.6
+cyberpunk graffiti tag | 0.40 | top,outerwear | 0.0-0.4
+fractal grid pattern | 0.35 | top,bottom | 0.1-0.5
+chrome geometric print | 0.35 | top | 0.2-0.6
+sacred-geometry holo motif | 0.30 | top,outerwear | 0.2-0.6
+binary code stripe | 0.35 | top,bottom | 0.0-0.4

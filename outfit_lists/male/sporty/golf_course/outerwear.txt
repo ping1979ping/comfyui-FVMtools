@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# golf vest | 0.65 | 0.1-0.4 | polyester,wool
+#color# v-neck pullover | 0.65 | 0.1-0.4 | wool,cotton
+#color# zip-up wind shell | 0.55 | 0.1-0.3 | nylon
+#color# argyle pullover | 0.55 | 0.1-0.4 | wool
+#color# light rain jacket | 0.50 | 0.1-0.3 | nylon
+#color# cardigan sweater | 0.45 | 0.1-0.4 | wool
+#color# packable golf jacket | 0.55 | 0.1-0.3 | polyester,nylon
+#color# performance fleece | 0.50 | 0.0-0.3 | fleece

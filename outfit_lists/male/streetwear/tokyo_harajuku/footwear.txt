@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+chunky platform sneakers | 0.7 | 0.0-0.3 | leather,mesh,nylon
+split-toe shoes | 0.4 | 0.0-0.2 | canvas,jersey
+high-top sneakers | 0.6 | 0.0-0.2 | canvas,leather
+geta-inspired sandals | 0.2 | 0.0-0.1 | canvas
+runner trainers | 0.5 | 0.0-0.2 | mesh,nylon,leather
+strapped boots | 0.4 | 0.0-0.3 | leather,canvas
+slip-on shoes | 0.3 | 0.0-0.2 | canvas,jersey
+trekking sneakers | 0.4 | 0.0-0.3 | mesh,nylon,leather

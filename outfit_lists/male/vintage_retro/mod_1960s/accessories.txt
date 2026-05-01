@@ -1,0 +1,17 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+slim hide belt | 0.40 | 0.1-0.4 | leather
+striped scarf | 0.30 | 0.1-0.4 | knit,wool
+
+# mid-casual
+wayfarer sunglasses | 0.50 | 0.2-0.6 | metal
+chunky watch | 0.40 | 0.2-0.6 | metal
+slim tie | 0.50 | 0.3-0.7 | silk,wool
+target pin badge | 0.30 | 0.1-0.5 | metal
+
+# formal
+cravat | 0.30 | 0.5-0.8 | silk
+silken pocket square | 0.30 | 0.5-0.8 | silk
+silver tie clip | 0.30 | 0.5-0.8 | metal

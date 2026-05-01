@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+bold graphic | 0.40 | top | 0.2-0.5
+slogan print | 0.30 | top | 0.2-0.5
+band logo | 0.25 | top | 0.2-0.4
+streetwear graphic | 0.35 | top | 0.2-0.4
+retro logo | 0.30 | top | 0.2-0.5
+pop art motif | 0.25 | top | 0.2-0.5
+neon accent | 0.25 | top,accessories | 0.2-0.5
+checkerboard motif | 0.20 | top | 0.2-0.4
+tie-dye effect | 0.20 | top | 0.2-0.4
+arcade pattern | 0.15 | top | 0.2-0.4

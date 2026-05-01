@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim wallet | 0.70 | 0.4-0.7 | leather
+money clip | 0.55 | 0.4-0.7 | metal
+card holder | 0.50 | 0.4-0.7 | leather
+clutch pouch | 0.40 | 0.5-0.7 | leather
+designer crossbody | 0.40 | 0.4-0.6 | leather
+phone wallet | 0.50 | 0.4-0.6 | leather
+mini messenger | 0.30 | 0.4-0.6 | leather
+poker chip case | 0.25 | 0.3-0.6 | leather
+slim attache | 0.30 | 0.5-0.7 | leather

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+command division duty jacket with rank insignia | 0.65 | 0.3-0.8 | spandex,lycra
+captain field coat with shoulder strap | 0.45 | 0.2-0.6 | nylon,spandex
+admiral formal overcoat with gold piping | 0.40 | 0.7-1.0 | satin,lycra
+away team tactical vest in command red | 0.50 | 0.2-0.6 | nylon,spandex
+captain dress cape clipped at shoulder | 0.30 | 0.8-1.0 | satin
+command bridge jacket with collar pips | 0.55 | 0.3-0.8 | spandex,lycra
+ceremonial sash across chest | 0.35 | 0.7-1.0 | satin
+captain duty vest with utility loops | 0.40 | 0.0-0.5 | nylon
+formal admiral cape lined in scarlet | 0.30 | 0.8-1.0 | satin
+flag officer mantle with braided trim | 0.35 | 0.8-1.0 | satin

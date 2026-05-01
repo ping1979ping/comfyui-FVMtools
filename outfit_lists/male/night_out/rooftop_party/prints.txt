@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tropical print | 0.55 | top,outerwear | 0.3-0.6
+breezy stripe | 0.55 | top,bottom | 0.3-0.6
+floral pattern | 0.40 | top | 0.3-0.5
+gingham check | 0.40 | top,bottom | 0.3-0.6
+seersucker stripe | 0.40 | top,bottom,outerwear | 0.3-0.6
+abstract print | 0.35 | top | 0.3-0.5
+subtle texture | 0.30 | top,outerwear | 0.4-0.7
+solid pastel | 0.50 | top,bottom | 0.3-0.6
+nautical motif | 0.30 | top | 0.3-0.5
+sun-faded color | 0.35 | top,bottom | 0.3-0.5
+palm-leaf print | 0.35 | top | 0.3-0.5

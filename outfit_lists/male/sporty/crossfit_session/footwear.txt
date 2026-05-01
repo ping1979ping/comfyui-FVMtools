@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cross-training shoes | 0.90 | 0.0-0.1 | mesh,rubber
+#color# weightlifting shoes | 0.65 | 0.0-0.1 | leather,rubber
+#color# flat-sole lifters | 0.55 | 0.0-0.1 | leather,rubber
+#color# stability trainers | 0.70 | 0.0-0.1 | mesh,rubber
+#color# rope-climb sneakers | 0.60 | 0.0-0.1 | leather,rubber
+#color# minimalist trainers | 0.55 | 0.0-0.1 | mesh,rubber
+#color# crew socks | 0.80 | 0.0-0.1 | cotton
+#color# compression high socks | 0.60 | 0.0-0.1 | spandex
+#color# knee sleeves | 0.55 | 0.0-0.1 | neoprene

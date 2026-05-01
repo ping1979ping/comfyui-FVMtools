@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# slim jeans | 0.75 | 0.3-0.5 | denim
+#color# dark jeans | 0.70 | 0.3-0.5 | denim
+#color# distressed jeans | 0.55 | 0.2-0.4 | denim
+#color# chinos | 0.65 | 0.3-0.5 | cotton
+#color# joggers | 0.50 | 0.2-0.4 | cotton,polyester
+#color# cargo pants | 0.45 | 0.2-0.4 | cotton
+#color# tapered trousers | 0.40 | 0.4-0.5 | cotton,polyester
+#color# straight-leg jeans | 0.55 | 0.3-0.5 | denim
+#color# casual shorts | 0.30 | 0.2-0.3 | cotton
+#color# track pants | 0.35 | 0.2-0.3 | polyester
+#color# skinny jeans | 0.50 | 0.3-0.5 | denim

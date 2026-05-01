@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wristband | 0.85 | 0.0-0.2 | cotton
+#color# headband | 0.70 | 0.0-0.2 | cotton,polyester
+#color# tennis sunglasses | 0.60 | 0.0-0.2 | plastic
+sports watch | 0.55 | 0.0-0.3 | rubber,plastic
+#color# overgrip tape | 0.55 | 0.0-0.1 | rubber
+#color# vibration dampener | 0.40 | 0.0-0.1 | rubber
+#color# towel | 0.50 | 0.0-0.2 | cotton
+#color# chain bracelet | 0.30 | 0.0-0.2 | metal
+#color# arm sleeve | 0.40 | 0.0-0.2 | spandex

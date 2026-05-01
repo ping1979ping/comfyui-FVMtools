@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aero racing visor with HUD overlay | 0.55 | 0.1-0.6 | plastic,metal
+streamlined cap with chrome trim | 0.45 | 0.0-0.4 | nylon,plastic
+perforated racing band with reactive strip | 0.45 | 0.0-0.4 | mesh,plastic
+iridescent earband with glow nodes | 0.40 | 0.0-0.5 | holographic,plastic

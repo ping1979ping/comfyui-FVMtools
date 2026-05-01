@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rugged trucker jacket | 0.75 | 0.2-0.5 | denim
+biker-style jacket | 0.55 | 0.3-0.5 | leather
+trucker jacket | 0.55 | 0.2-0.5 | denim,canvas
+rugged chore coat | 0.50 | 0.3-0.5 | canvas
+worn flight jacket | 0.45 | 0.3-0.5 | nylon,leather
+field jacket | 0.45 | 0.3-0.5 | cotton,canvas
+hooded zip-up | 0.45 | 0.2-0.4 | fleece,cotton
+quilted vest | 0.30 | 0.2-0.4 | nylon,polyester
+shearling-lined coat | 0.30 | 0.3-0.5 | leather,shearling

@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+operations gold shoulder yoke | 0.50 | top | 0.2-0.8
+DS9 station emblem badge | 0.40 | top,outerwear | 0.2-0.8
+chief security rank arrow stripes | 0.35 | top | 0.3-0.9
+tactical division black-on-gray pattern | 0.30 | top,outerwear | 0.0-0.6
+runabout designation stencil | 0.25 | outerwear | 0.0-0.5
+constable arm chevrons | 0.30 | top | 0.2-0.7
+operations sleeve stripe | 0.30 | top | 0.3-0.8
+formal mess dress trim pattern | 0.25 | outerwear | 0.7-1.0
+ceremonial sash motif | 0.20 | outerwear | 0.7-1.0
+breach unit patch on shoulder | 0.30 | top,outerwear | 0.0-0.6

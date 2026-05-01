@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+worn moto jacket | 0.65 | 0.3-0.5 | leather
+wrinkled blazer | 0.55 | 0.4-0.6 | wool,cotton
+overcoat | 0.45 | 0.4-0.6 | wool,cashmere
+faded trucker jacket | 0.45 | 0.3-0.5 | denim
+trench coat | 0.40 | 0.4-0.6 | cotton,gabardine
+loose bomber | 0.45 | 0.3-0.5 | nylon,cotton
+unstructured blazer | 0.50 | 0.4-0.6 | wool,linen
+hooded zip-up | 0.40 | 0.2-0.4 | fleece,cotton
+shearling-collar coat | 0.30 | 0.3-0.5 | leather,shearling

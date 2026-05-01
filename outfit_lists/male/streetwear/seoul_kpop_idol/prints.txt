@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+brand logo | 0.5 | top,headwear,bag | 0.0-0.4
+embroidered detail | 0.5 | top,headwear,outerwear | 0.1-0.4
+hangul lettering | 0.4 | top,outerwear | 0.0-0.3
+subtle monogram | 0.4 | top,bottom,outerwear,bag | 0.1-0.4
+oversized graphic | 0.4 | top,outerwear | 0.0-0.3
+floral motif | 0.3 | top,outerwear | 0.0-0.3
+metallic accent | 0.3 | top,outerwear | 0.0-0.3
+artsy graphic | 0.3 | top,outerwear | 0.0-0.3
+crystal embellishment | 0.3 | top,outerwear | 0.0-0.3
+minimalist line art | 0.3 | top | 0.0-0.3

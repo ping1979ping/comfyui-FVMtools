@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wristband | 0.65 | 0.0-0.1 | cotton
+#color# headband | 0.60 | 0.0-0.1 | cotton,polyester
+#color# arm sleeve | 0.55 | 0.0-0.1 | spandex,nylon
+#color# leg sleeve | 0.40 | 0.0-0.1 | spandex
+#color# mouthguard strap | 0.30 | 0.0-0.1 | rubber
+sports watch | 0.50 | 0.0-0.2 | rubber,plastic
+#color# finger tape | 0.35 | 0.0-0.1 | cotton
+#color# towel | 0.45 | 0.0-0.1 | cotton
+#color# chain necklace | 0.40 | 0.0-0.2 | metal

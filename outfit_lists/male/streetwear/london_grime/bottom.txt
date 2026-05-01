@@ -1,0 +1,9 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+tracksuit bottoms | 0.8 | 0.0-0.2 | polyester,nylon
+slim joggers | 0.6 | 0.0-0.2 | cotton,fleece,polyester
+black skinnies | 0.5 | 0.0-0.3 | denim
+cargo trousers | 0.5 | 0.0-0.3 | cotton,ripstop,nylon,twill
+loose jeans | 0.5 | 0.0-0.3 | denim
+black work trousers | 0.4 | 0.0-0.3 | twill,canvas
+sweat shorts | 0.3 | 0.0-0.2 | cotton,fleece

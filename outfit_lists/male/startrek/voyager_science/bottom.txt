@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+Voyager duty trousers in black | 0.95 | 0.0-0.9 | spandex,lycra
+fitted science officer pants | 0.80 | 0.3-0.8 | spandex,lycra
+formal science dress trousers with blue stripe | 0.45 | 0.7-1.0 | satin,lycra
+field survey cargo pants | 0.55 | 0.0-0.5 | nylon,cotton
+delta quadrant expedition slacks | 0.50 | 0.2-0.7 | nylon,spandex
+research lab trousers | 0.45 | 0.0-0.5 | cotton,jersey
+duty pants with sample pouch | 0.40 | 0.0-0.6 | spandex,nylon
+fitted bridge officer trousers | 0.65 | 0.3-0.8 | spandex,lycra
+ship internal lounge pants | 0.30 | 0.0-0.3 | cotton,jersey

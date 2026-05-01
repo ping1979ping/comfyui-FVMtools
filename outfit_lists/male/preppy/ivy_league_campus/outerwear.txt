@@ -1,0 +1,19 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+varsity jacket | 0.50 | 0.1-0.4 | melton,leather
+letterman coat | 0.40 | 0.1-0.4 | melton,leather
+quilted vest | 0.40 | 0.2-0.4 | nylon,polyester
+shawl-collar cardigan | 0.50 | 0.2-0.5 | merino,wool
+crewneck cardigan | 0.45 | 0.2-0.5 | merino,wool
+
+# mid-casual
+sport coat | 0.55 | 0.4-0.7 | tweed,hopsack
+herringbone blazer | 0.50 | 0.4-0.7 | tweed,hopsack
+campus blazer | 0.50 | 0.4-0.8 | hopsack,worsted
+
+# formal
+navy blazer | 0.55 | 0.4-0.8 | hopsack,worsted
+chesterfield coat | 0.40 | 0.5-0.8 | wool,cashmere
+camel topcoat | 0.40 | 0.5-0.8 | camelhair,wool

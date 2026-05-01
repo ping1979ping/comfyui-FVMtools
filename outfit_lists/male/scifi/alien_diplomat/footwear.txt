@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ceremonial dress boots with chrome clasps | 0.70 | 0.6-1.0 | leather,satin
+iridescent ankle boots with floating gem | 0.55 | 0.5-0.9 | holographic,leather
+chrome-toe formal shoes with embroidered detail | 0.60 | 0.6-1.0 | leather,satin
+fitted embassy boots with chrome piping | 0.55 | 0.5-0.9 | leather,metal_mesh
+mid-calf ceremonial boots with fiber-optic trim | 0.50 | 0.5-0.9 | leather,satin
+chrome-buckled dress shoes with sheer overlay | 0.50 | 0.6-1.0 | leather,mesh

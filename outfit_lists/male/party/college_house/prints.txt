@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+greek letters | 0.40 | top,accessories | 0.2-0.4
+campus logo | 0.40 | top,accessories | 0.2-0.3
+sports number | 0.35 | top | 0.2-0.3
+keg motif | 0.25 | top | 0.2-0.3
+red cup graphic | 0.25 | top | 0.2-0.3
+varsity letters | 0.35 | top | 0.2-0.4
+mascot graphic | 0.30 | top,accessories | 0.2-0.3
+beer pong art | 0.20 | top | 0.2-0.3
+arch logo | 0.30 | top | 0.2-0.4
+faded graphic | 0.30 | top | 0.2-0.3

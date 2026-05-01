@@ -1,0 +1,4 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# costume bags rare

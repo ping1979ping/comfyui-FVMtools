@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+klingon warrior battle boots with metal greaves | 0.95 | 0.2-1.0 | leather,metal
+imperial defense force combat boots | 0.85 | 0.2-0.9 | leather,rubber
+klingon ceremonial high boots in black | 0.60 | 0.7-1.0 | leather,satin
+warrior off-duty soft boots | 0.45 | 0.0-0.4 | leather
+qoH patrol shoe with reinforced toe | 0.55 | 0.2-0.7 | leather,rubber
+high council formal court boots | 0.40 | 0.8-1.0 | leather,satin
+klingon imperial sentry plated boots | 0.50 | 0.5-1.0 | metal,leather
+warrior raid stomping boots | 0.65 | 0.0-0.6 | leather,rubber

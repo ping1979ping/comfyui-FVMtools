@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral motif | 0.40 | top | 0.4-0.6
+gingham check | 0.30 | top | 0.4-0.6
+pastel stripe | 0.35 | top | 0.4-0.6
+preppy crest | 0.25 | top,accessories | 0.4-0.6
+small polka dot | 0.25 | top,accessories | 0.4-0.6
+botanical print | 0.30 | top | 0.4-0.6
+seersucker stripe | 0.30 | top | 0.4-0.6
+herringbone weave | 0.25 | top,accessories | 0.4-0.6
+windowpane check | 0.25 | top | 0.4-0.6
+paisley accent | 0.25 | accessories | 0.4-0.6

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# light blazer | 0.55 | 0.4-0.6 | cotton
+#color# unstructured sportcoat | 0.45 | 0.4-0.6 | cotton,wool
+#color# preppy cardigan | 0.45 | 0.4-0.6 | cotton
+#color# garden vest | 0.40 | 0.4-0.6 | cotton
+#color# linen overshirt | 0.45 | 0.3-0.5 | cotton
+#color# pastel knit pullover | 0.40 | 0.4-0.5 | cotton
+#color# safari jacket | 0.35 | 0.4-0.5 | cotton
+#color# seersucker blazer | 0.40 | 0.4-0.6 | cotton
+#color# club blazer | 0.40 | 0.4-0.6 | wool
+#color# garden waistcoat | 0.35 | 0.4-0.6 | cotton

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+brand logo | 0.7 | top,headwear,bag | 0.0-0.4
+embroidered logo | 0.6 | top,headwear,outerwear | 0.1-0.4
+collab graphic | 0.5 | top,outerwear | 0.0-0.3
+co-branded artwork | 0.5 | top,outerwear | 0.0-0.3
+limited edition mark | 0.4 | top,outerwear | 0.0-0.3
+oversized branding | 0.4 | top,outerwear | 0.0-0.3
+all-over monogram | 0.4 | top,bottom,outerwear,bag | 0.0-0.3
+box logo | 0.5 | top | 0.0-0.3
+holographic graphic | 0.3 | top,outerwear | 0.0-0.3
+limited drop tag | 0.3 | top | 0.0-0.3

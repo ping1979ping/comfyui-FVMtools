@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim black jeans | 0.80 | 0.3-0.5 | denim
+skinny black trousers | 0.65 | 0.4-0.6 | polyester
+black cargo pants | 0.55 | 0.3-0.5 | cotton,nylon
+techwear pants | 0.50 | 0.3-0.5 | nylon,polyester
+coated skinny jeans | 0.45 | 0.4-0.6 | denim
+fitted joggers | 0.45 | 0.3-0.5 | polyester,jersey
+parachute trousers | 0.40 | 0.3-0.5 | nylon
+ripped slim jeans | 0.50 | 0.3-0.5 | denim
+shiny club pants | 0.35 | 0.4-0.6 | polyester
+tapered cargos | 0.45 | 0.3-0.5 | cotton,nylon

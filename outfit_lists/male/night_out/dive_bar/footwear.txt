@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scuffed work boots | 0.75 | 0.2-0.5 | leather
+classic high-tops | 0.65 | 0.2-0.4 | canvas
+roughed-out boots | 0.55 | 0.2-0.5 | leather,suede
+lace-up boots | 0.55 | 0.2-0.5 | leather
+white sneakers | 0.55 | 0.2-0.4 | canvas,leather
+chukka boots | 0.45 | 0.3-0.5 | suede,leather
+moccasins | 0.35 | 0.3-0.5 | leather,suede
+combat boots | 0.45 | 0.2-0.4 | leather
+chelsea boots | 0.50 | 0.3-0.6 | leather,suede
+low-top slip-ons | 0.40 | 0.2-0.4 | canvas

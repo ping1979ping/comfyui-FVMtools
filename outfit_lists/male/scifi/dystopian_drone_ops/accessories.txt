@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bandolier with shotgun shells | 0.65 | 0.0-0.5 | leather,metal
+distressed utility belt with magnetic pouches | 0.65 | 0.1-0.6 | leather,nylon
+holstered sidearm on thigh | 0.60 | 0.0-0.5 | plastic,metal
+chrome dog tags with combat ID | 0.50 | 0.0-0.5 | metal
+torn arm wrap with circuit pattern | 0.55 | 0.0-0.4 | mesh,spandex
+gas-mask filter on chest harness | 0.50 | 0.1-0.5 | plastic,rubber
+fingerless tactical gloves with reinforced knuckles | 0.65 | 0.0-0.5 | leather,kevlar
+chrome wrist beacon with cracked screen | 0.50 | 0.0-0.5 | metal,plastic
+ammo pouch belt across torso | 0.55 | 0.1-0.5 | leather,nylon
+soot-smudged neck wrap with patch | 0.45 | 0.0-0.3 | mesh,nylon

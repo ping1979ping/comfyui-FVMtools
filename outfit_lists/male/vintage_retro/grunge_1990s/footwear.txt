@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+combat boots | 0.55 | 0.0-0.3 | leather
+chuck taylors | 0.50 | 0.0-0.2 | cotton
+skate sneakers | 0.45 | 0.0-0.2 | suede,cotton
+work boots | 0.40 | 0.0-0.3 | leather
+
+# mid-casual
+chukkas | 0.45 | 0.2-0.5 | suede
+docker boots | 0.40 | 0.2-0.4 | leather
+
+# formal
+plain hide oxfords | 0.40 | 0.5-0.8 | leather

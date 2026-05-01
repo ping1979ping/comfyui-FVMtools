@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized graphic tee | 0.8 | 0.0-0.3 | cotton,jersey
+layered tee | 0.6 | 0.0-0.2 | cotton,jersey
+cropped hoodie | 0.6 | 0.0-0.2 | cotton,fleece
+zip-up rashguard | 0.4 | 0.0-0.2 | mesh,polyester
+asymmetric top | 0.4 | 0.0-0.3 | cotton,jersey
+patchwork shirt | 0.5 | 0.0-0.3 | cotton,flannel
+layered net top | 0.4 | 0.0-0.2 | mesh,polyester
+oversized button-up | 0.5 | 0.0-0.3 | cotton,flannel
+tie-dye long sleeve | 0.5 | 0.0-0.2 | cotton,jersey
+mock neck shirt | 0.4 | 0.0-0.3 | cotton,jersey

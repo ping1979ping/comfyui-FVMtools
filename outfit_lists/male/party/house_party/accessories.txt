@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chain necklace | 0.45 | 0.2-0.5 | metal
+silver watch | 0.55 | 0.3-0.5 | metal
+beaded bracelet | 0.40 | 0.2-0.4 | metal
+casual rings | 0.30 | 0.2-0.4 | metal
+sunglasses | 0.35 | 0.2-0.4 | metal
+wristband | 0.30 | 0.2-0.4 | cotton
+shoelace charm | 0.20 | 0.2-0.4 | metal
+ear stud | 0.30 | 0.2-0.4 | metal
+pendant necklace | 0.35 | 0.2-0.5 | metal
+friendship bracelet | 0.25 | 0.2-0.4 | cotton
+beanie pin | 0.15 | 0.2-0.4 | metal

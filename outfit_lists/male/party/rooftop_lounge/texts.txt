@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"ROOFTOP" | 0.15 | top | minimal sans
+"CITY" | 0.15 | top | minimal sans
+"SKYLINE" | 0.15 | top | minimal sans
+"LOUNGE" | 0.15 | top | elegant serif
+"NIGHT" | 0.15 | top | minimal sans
+"PENTHOUSE" | 0.10 | top | elegant serif
+"SUNSET" | 0.15 | top | minimal sans
+"ELEVATED" | 0.10 | top | minimal sans

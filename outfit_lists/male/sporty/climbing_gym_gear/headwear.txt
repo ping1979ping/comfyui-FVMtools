@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# trucker cap | 0.55 | 0.0-0.2 | cotton,mesh
+#color# beanie | 0.50 | 0.0-0.2 | acrylic,wool
+#color# bandana cap | 0.40 | 0.0-0.2 | cotton
+#color# climbing helmet | 0.30 | 0.0-0.1 | plastic
+#color# wide-brim sun cap | 0.40 | 0.0-0.2 | nylon

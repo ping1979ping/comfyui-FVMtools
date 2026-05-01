@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+klingon empire trefoil emblem | 0.50 | top,outerwear | 0.2-1.0
+warrior house sigil crest | 0.45 | top,outerwear | 0.2-1.0
+klingon imperial banner pattern | 0.35 | outerwear | 0.5-1.0
+warrior battle scar tracery | 0.30 | top | 0.0-0.7
+klingon ridged-plate armor pattern | 0.40 | top,outerwear | 0.2-1.0
+high council black-on-gold trim | 0.25 | outerwear | 0.7-1.0
+warrior trophy fang motif | 0.30 | top,outerwear | 0.0-0.7
+ceremonial blood-red drip pattern | 0.25 | outerwear | 0.5-1.0
+klingon ancient rune engraving | 0.25 | top,outerwear | 0.3-1.0
+chancellor regalia gold filigree | 0.20 | outerwear | 0.8-1.0

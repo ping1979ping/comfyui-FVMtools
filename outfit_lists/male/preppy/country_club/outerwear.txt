@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+quilted vest | 0.45 | 0.2-0.4 | nylon,polyester
+windbreaker | 0.40 | 0.2-0.4 | nylon,polyester
+v-neck pullover | 0.55 | 0.2-0.5 | merino,cashmere,pima
+cardigan | 0.50 | 0.2-0.5 | merino,cashmere,pima
+half-zip pullover | 0.50 | 0.2-0.5 | merino,pima
+
+# mid-casual
+golf jacket | 0.45 | 0.3-0.6 | nylon,polyester
+sweater vest | 0.45 | 0.3-0.6 | merino,cashmere
+
+# formal
+navy blazer | 0.60 | 0.4-0.8 | hopsack,worsted
+sport coat | 0.50 | 0.4-0.8 | hopsack,worsted
+double-breasted blazer | 0.40 | 0.5-0.8 | hopsack,worsted

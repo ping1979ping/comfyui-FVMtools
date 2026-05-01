@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white polo | 0.85 | 0.1-0.5 | pique,jersey,mesh
+tennis polo | 0.75 | 0.1-0.4 | pique,jersey,mesh
+short sleeve polo | 0.65 | 0.1-0.4 | pique,jersey
+crew neck tee | 0.55 | 0.1-0.3 | jersey,pima
+court shirt | 0.50 | 0.1-0.4 | pique,jersey
+match top | 0.45 | 0.1-0.3 | jersey,pima
+cricket pullover | 0.45 | 0.2-0.5 | merino,wool
+
+# mid-casual
+oxford shirt | 0.45 | 0.3-0.6 | poplin,broadcloth
+cable-knit pullover | 0.45 | 0.3-0.6 | merino,cashmere
+
+# formal
+dress shirt | 0.35 | 0.5-0.8 | poplin,broadcloth

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+klingon warrior shoulder mantle with metal studs | 0.65 | 0.2-1.0 | leather,metal
+imperial defense force long battle coat | 0.50 | 0.3-0.9 | leather,wool
+klingon ceremonial cape of the warrior caste | 0.40 | 0.7-1.0 | satin,wool
+high council black formal robe | 0.35 | 0.8-1.0 | satin,wool
+warrior bandolier of disruptor cells | 0.55 | 0.0-0.7 | leather,metal
+klingon imperial sentry pauldron set | 0.50 | 0.5-1.0 | metal
+qoH duty surcoat with house badge | 0.45 | 0.2-0.7 | leather,wool
+warrior expedition fur-trimmed coat | 0.40 | 0.0-0.5 | leather,wool
+naval bridge officer tunic-coat | 0.45 | 0.3-0.8 | leather,wool
+ceremonial pauldron with chained skulls | 0.30 | 0.5-1.0 | metal,leather

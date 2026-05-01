@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+saddle shoes | 0.45 | 0.1-0.4 | leather
+chuck taylors | 0.40 | 0.0-0.3 | cotton
+penny loafers | 0.45 | 0.2-0.5 | leather
+
+# mid-casual
+creeper shoes | 0.50 | 0.2-0.6 | suede,leather
+two-tone spectator shoes | 0.50 | 0.3-0.7 | leather
+chukka boots | 0.45 | 0.2-0.5 | suede
+engineer boots | 0.45 | 0.1-0.4 | leather
+
+# formal
+wingtip oxfords | 0.45 | 0.5-0.8 | leather
+cap-toe dress shoes | 0.40 | 0.5-0.8 | leather

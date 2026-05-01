@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+TOS engineering gold tunic with delta insignia | 0.95 | 0.2-0.8 | velour,polyester
+classic operations red shirt with chevron stripes | 0.85 | 0.2-0.8 | velour,polyester
+chief engineer duty top with sleeve braids | 0.80 | 0.3-0.8 | velour,polyester
+TOS workshirt in service red | 0.75 | 0.0-0.6 | cotton,polyester
+TOS gold service tunic with rank stripes on cuff | 0.70 | 0.3-0.9 | velour,polyester
+classic three-quarter sleeve duty top | 0.65 | 0.2-0.8 | velour,polyester
+formal mess dress jacket in green | 0.40 | 0.8-1.0 | satin
+TOS off-duty turtleneck under tunic | 0.50 | 0.0-0.5 | jersey,cotton
+engineering coverall top with reinforced panels | 0.45 | 0.0-0.4 | cotton,canvas
+TOS captain wraparound green tunic | 0.35 | 0.5-0.9 | velour,satin

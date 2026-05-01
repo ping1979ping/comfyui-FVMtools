@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wod tee | 0.85 | 0.0-0.1 | polyester,cotton
+#color# muscle tank | 0.85 | 0.0-0.1 | cotton
+#color# stringer vest | 0.70 | 0.0-0.1 | cotton
+#color# performance training tee | 0.80 | 0.0-0.1 | polyester,mesh
+#color# compression shirt | 0.65 | 0.0-0.1 | spandex,nylon
+#color# sleeveless workout top | 0.75 | 0.0-0.1 | polyester
+#color# cutoff training shirt | 0.60 | 0.0-0.1 | cotton
+#color# fitted athletic shirt | 0.65 | 0.0-0.2 | polyester
+#color# loose box tee | 0.65 | 0.0-0.1 | cotton
+#color# sweat-wicking henley | 0.50 | 0.0-0.2 | polyester,cotton
+#color# tight performance vest | 0.55 | 0.0-0.1 | spandex

@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white shorts | 0.75 | 0.1-0.4 | poplin,twill,mesh
+tennis shorts | 0.70 | 0.1-0.4 | poplin,twill,mesh
+court shorts | 0.55 | 0.1-0.4 | poplin,mesh
+pleated shorts | 0.45 | 0.2-0.5 | poplin,twill
+
+# mid-casual
+white trousers | 0.65 | 0.3-0.6 | twill,linen-blend
+cricket slacks | 0.40 | 0.3-0.6 | flannel
+cricket trousers | 0.50 | 0.3-0.6 | twill,flannel
+flat-front chinos | 0.45 | 0.3-0.6 | twill,poplin
+
+# formal
+dress trousers | 0.40 | 0.5-0.8 | gabardine,worsted

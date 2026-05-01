@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+barbell graphic | 0.6 | top,bag,headwear | 0.0-0.2
+flag patch | 0.4 | top,bag | 0.0-0.2
+wod board lettering | 0.4 | top | 0.0-0.2
+box gym logo | 0.6 | top,headwear,bag,outerwear | 0.0-0.3
+skull and barbell | 0.3 | top | 0.0-0.2
+performance graphic | 0.4 | top | 0.0-0.3
+chalked numbers | 0.3 | top | 0.0-0.2
+camo accent panel | 0.3 | top,bottom,outerwear | 0.0-0.2
+torn typography | 0.3 | top | 0.0-0.2
+geometric stripe | 0.4 | top,bottom,outerwear | 0.0-0.3
+hex pattern | 0.3 | top,outerwear | 0.0-0.3

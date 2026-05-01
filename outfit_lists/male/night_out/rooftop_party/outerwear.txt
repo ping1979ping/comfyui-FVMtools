@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+unstructured summer blazer | 0.65 | 0.4-0.6 | linen
+lightweight bomber | 0.55 | 0.3-0.5 | cotton,nylon
+summer striped jacket | 0.40 | 0.4-0.6 | seersucker
+patterned blazer | 0.40 | 0.4-0.6 | cotton,linen
+overshirt | 0.50 | 0.3-0.5 | cotton,linen
+summer trucker jacket | 0.30 | 0.4-0.6 | suede
+crisp white jacket | 0.40 | 0.4-0.6 | cotton
+camp-collar overshirt | 0.45 | 0.3-0.5 | cotton,linen
+double-breasted blazer | 0.30 | 0.5-0.7 | cotton,linen

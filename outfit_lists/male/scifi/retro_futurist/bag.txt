@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chrome-clasp box satchel | 0.55 | 0.3-0.7 | leather,metal_mesh
+A-line vinyl messenger with chrome ring | 0.50 | 0.2-0.6 | vinyl,leather
+chrome-trim briefcase | 0.50 | 0.4-0.8 | leather,metal_mesh
+mod hip pouch with chrome buckle | 0.45 | 0.2-0.6 | leather,nylon
+geometric color-block crossbody | 0.45 | 0.2-0.6 | nylon,leather
+chrome-handle dispatch bag | 0.40 | 0.3-0.7 | leather,metal_mesh
+fitted vinyl portfolio with chrome zipper | 0.40 | 0.3-0.7 | vinyl,nylon

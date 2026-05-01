@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+NX era duty boots in matte black | 0.95 | 0.0-0.9 | leather,rubber
+formal envoy dress shoes | 0.50 | 0.7-1.0 | leather
+ambassador ceremonial oxfords | 0.45 | 0.8-1.0 | leather
+flight crew zippered ankle boots | 0.70 | 0.2-0.7 | leather,rubber
+diplomatic mission loafers | 0.40 | 0.4-0.8 | leather
+NX captain duty boots with side strap | 0.65 | 0.3-0.8 | leather,rubber
+formal officer slip-on shoes | 0.40 | 0.7-1.0 | leather
+shore leave casual sneakers | 0.30 | 0.0-0.3 | cotton,rubber
+NX era ankle work boots | 0.60 | 0.0-0.6 | leather,rubber

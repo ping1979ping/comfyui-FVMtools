@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# golf polo | 0.95 | 0.1-0.4 | polyester,cotton
+#color# performance polo shirt | 0.90 | 0.1-0.4 | polyester
+#color# striped golf polo | 0.75 | 0.1-0.4 | polyester
+#color# quarter-zip pullover | 0.75 | 0.1-0.4 | polyester
+#color# long-sleeve golf shirt | 0.65 | 0.1-0.3 | polyester,cotton
+#color# fitted clubhouse polo | 0.70 | 0.1-0.4 | polyester
+#color# mock-neck shirt | 0.55 | 0.1-0.3 | polyester
+#color# pique knit polo | 0.65 | 0.1-0.4 | cotton,polyester
+#color# breathable golf tee | 0.50 | 0.0-0.2 | polyester
+#color# heritage rugby polo | 0.55 | 0.1-0.4 | cotton

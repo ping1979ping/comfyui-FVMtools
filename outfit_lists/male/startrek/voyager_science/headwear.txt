@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+magnification spectro visor across eyes | 0.20 | 0.0-0.6 | metal,plastic
+formal science officer cap | 0.18 | 0.7-1.0 | wool,satin
+field expedition wide brim hat | 0.15 | 0.0-0.4 | canvas
+EV survey hood pulled back | 0.20 | 0.0-0.4 | nylon

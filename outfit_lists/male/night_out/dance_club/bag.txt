@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sling bag | 0.65 | 0.2-0.5 | nylon,polyester
+mini crossbody | 0.55 | 0.2-0.5 | nylon
+techwear pouch | 0.50 | 0.2-0.5 | nylon
+chest harness bag | 0.35 | 0.2-0.5 | nylon
+phone holster | 0.40 | 0.2-0.5 | nylon,leather
+hip pack | 0.55 | 0.2-0.5 | nylon
+slim wallet | 0.60 | 0.3-0.6 | leather
+zip pouch | 0.40 | 0.2-0.5 | nylon

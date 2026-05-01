@@ -1,0 +1,16 @@
+# format: text_content | probability | compatible_slots | font_hint
+"MILANO" | 0.3 | top,headwear | gothic font
+"ITALIA" | 0.3 | top | bold block letters
+"BELLA" | 0.2 | top | playful font
+"DOLCE" | 0.2 | top | minimal sans-serif
+"AMORE" | 0.2 | top | playful font
+"VITA" | 0.2 | top | minimal sans-serif
+"FIRENZE" | 0.2 | top | gothic font
+"ROMA" | 0.25 | top | gothic font
+"CHIC" | 0.25 | top,outerwear | minimal sans-serif
+"MODA" | 0.25 | top | minimal sans-serif
+"VOGUE" | 0.2 | top | minimal sans-serif
+"COUTURE" | 0.2 | top | gothic font
+"LUXE" | 0.25 | top,outerwear | minimal sans-serif
+"ARTE" | 0.2 | top | brush stroke
+"CIAO" | 0.25 | top | playful font

@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+engineering gold delta emblem | 0.45 | top | 0.2-0.8
+TOS rank chevron stripes on cuff | 0.40 | top | 0.3-0.9
+service-section division color block | 0.35 | top | 0.2-0.7
+sleeve braid pattern in service gold | 0.30 | top,outerwear | 0.5-1.0
+NCC hull number stencil | 0.25 | top | 0.2-0.6
+constellation class chevron motif | 0.20 | top,outerwear | 0.3-0.8
+classic delta arrowhead repeat | 0.25 | top | 0.2-0.7
+service-stripe accent on shoulder | 0.30 | top | 0.3-0.8
+formal mess dress brocade detail | 0.20 | outerwear | 0.7-1.0
+warp coil schematic patch | 0.20 | outerwear,top | 0.0-0.5

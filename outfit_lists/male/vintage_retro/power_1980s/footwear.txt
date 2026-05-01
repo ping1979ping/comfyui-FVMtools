@@ -1,0 +1,16 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+high-top sneakers | 0.50 | 0.0-0.3 | cotton,leather
+neon trainers | 0.40 | 0.0-0.3 | polyester
+boat shoes | 0.45 | 0.1-0.4 | leather
+
+# mid-casual
+penny loafers | 0.50 | 0.3-0.6 | leather
+tassel loafers | 0.45 | 0.4-0.7 | leather
+cowboy-style boots | 0.40 | 0.2-0.5 | leather,suede
+
+# formal
+power oxfords | 0.50 | 0.5-0.9 | leather
+patent dress shoes | 0.40 | 0.6-0.9 | leather

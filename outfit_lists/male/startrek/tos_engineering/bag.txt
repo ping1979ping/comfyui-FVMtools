@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+engineer field tool roll | 0.45 | 0.0-0.5 | leather,canvas
+TOS away mission pouch | 0.35 | 0.0-0.6 | nylon,leather
+service satchel for landing parties | 0.30 | 0.0-0.5 | nylon
+hyperspanner caddy clipped to belt | 0.40 | 0.0-0.5 | metal,leather
+mess kit holdall | 0.25 | 0.0-0.4 | canvas
+warp diagnostic case | 0.30 | 0.0-0.6 | metal,plastic
+shore leave grip sack | 0.30 | 0.0-0.3 | canvas
+service crewman duffel | 0.35 | 0.0-0.5 | canvas,nylon

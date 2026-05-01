@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# fine dress shirt | 0.75 | 0.5-0.7 | cotton,silk
+#color# tuxedo shirt | 0.50 | 0.6-0.7 | cotton
+#color# luxe button-down | 0.65 | 0.5-0.7 | cotton,silk
+#color# evening blouse | 0.45 | 0.5-0.7 | silk
+#color# pintuck dress shirt | 0.50 | 0.5-0.7 | cotton
+#color# satin sheen shirt | 0.50 | 0.5-0.7 | silk
+#color# crisp french-cuff shirt | 0.55 | 0.5-0.7 | cotton
+#color# elegant turtleneck | 0.45 | 0.5-0.7 | wool
+#color# refined banded-collar top | 0.45 | 0.5-0.7 | cotton
+#color# luxury knit | 0.40 | 0.5-0.7 | wool
+#color# wing-collar dress shirt | 0.40 | 0.6-0.7 | cotton
+#color# evening dress top | 0.40 | 0.6-0.7 | silk

@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim hydration pack with neon strap | 0.65 | 0.0-0.5 | nylon,neoprene
+aero sling bag with chrome zipper | 0.55 | 0.0-0.4 | nylon,plastic
+iridescent fanny pack with chain | 0.40 | 0.0-0.4 | holographic,nylon
+mesh-pocket racing pouch | 0.45 | 0.0-0.4 | mesh,nylon
+chrome-clasp belt pack with glow trim | 0.45 | 0.0-0.5 | nylon,leather
+streamlined backpack with reactive panel | 0.45 | 0.0-0.4 | nylon,neoprene
+neon-edge crossbody with chrome buckle | 0.40 | 0.0-0.4 | nylon,plastic

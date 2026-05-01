@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+hyped sneakers | 0.8 | 0.0-0.3 | leather,mesh,nylon
+collab high-tops | 0.7 | 0.0-0.2 | canvas,leather
+limited basketball shoes | 0.6 | 0.0-0.2 | leather,mesh,nylon
+designer runners | 0.5 | 0.0-0.2 | mesh,nylon,leather
+lifestyle sneakers | 0.5 | 0.0-0.2 | leather,mesh
+designer slides | 0.3 | 0.0-0.1 | nylon,polyester

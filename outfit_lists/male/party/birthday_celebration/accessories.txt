@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+birthday badge | 0.55 | 0.2-0.4 | metal
+party hat | 0.40 | 0.2-0.4 | metal
+silver watch | 0.50 | 0.3-0.5 | metal
+festive sunglasses | 0.45 | 0.2-0.4 | metal
+balloon pin | 0.30 | 0.2-0.4 | metal
+chain necklace | 0.40 | 0.2-0.4 | metal
+party rings | 0.30 | 0.2-0.4 | metal
+celebration sash | 0.30 | 0.2-0.4 | polyester
+fun bracelet | 0.30 | 0.2-0.4 | metal

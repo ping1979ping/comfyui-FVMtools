@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+klingon warrior chest cuirass with house emblem | 0.95 | 0.2-1.0 | leather,metal
+imperial defense force armored chestplate | 0.85 | 0.3-1.0 | metal,leather
+klingon battle harness over bare chest | 0.80 | 0.0-0.7 | leather,metal
+qoH duty tunic in dark crimson | 0.70 | 0.2-0.6 | wool,leather
+klingon ceremonial robe of warrior caste | 0.50 | 0.7-1.0 | wool,satin
+warrior brigandine with overlapping plates | 0.75 | 0.2-0.9 | metal,leather
+klingon ridged-shoulder battle vest | 0.65 | 0.2-0.8 | leather,metal
+high council ceremonial tunic in black | 0.45 | 0.8-1.0 | satin,wool
+klingon imperial guard cuirass with sigil | 0.60 | 0.5-1.0 | metal,leather
+warrior off-duty leather vest | 0.40 | 0.0-0.4 | leather
+klingon ridged collar mantle top | 0.55 | 0.3-0.8 | leather,wool
+warrior naval bridge tunic | 0.50 | 0.3-0.8 | leather,wool

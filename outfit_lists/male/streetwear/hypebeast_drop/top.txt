@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+box-logo tee | 0.8 | 0.0-0.3 | cotton,jersey
+oversized graphic tee | 0.7 | 0.0-0.2 | cotton,jersey
+hyped pullover | 0.6 | 0.0-0.2 | cotton,fleece
+collab tee | 0.6 | 0.0-0.2 | cotton,jersey
+sports jersey top | 0.4 | 0.0-0.2 | mesh,polyester
+limited-edition crewneck | 0.5 | 0.0-0.2 | cotton,fleece
+heavyweight tee | 0.5 | 0.0-0.2 | cotton,jersey
+zip pullover | 0.4 | 0.0-0.2 | cotton,fleece
+ringer tee | 0.4 | 0.0-0.2 | cotton,jersey
+long sleeve drop | 0.5 | 0.0-0.2 | cotton,jersey

@@ -1,0 +1,16 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ripped jeans | 0.55 | 0.0-0.2 | denim
+baggy jeans | 0.50 | 0.0-0.3 | denim
+faded jeans | 0.45 | 0.0-0.3 | denim
+cargo pants | 0.45 | 0.0-0.3 | cotton
+cord pants | 0.40 | 0.1-0.4 | corduroy
+
+# mid-casual
+straight chinos | 0.45 | 0.2-0.5 | cotton
+dark slacks | 0.40 | 0.3-0.6 | wool
+
+# formal
+slim trousers | 0.45 | 0.4-0.7 | wool

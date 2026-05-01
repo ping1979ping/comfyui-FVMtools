@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wrist tracker with chrome bezel | 0.75 | 0.0-0.6 | metal,plastic
+heart-rate chest strap with neon glow | 0.55 | 0.0-0.4 | spandex,plastic
+chrome arm sleeve with circuit print | 0.55 | 0.0-0.5 | metal,spandex
+racing gloves with reactive grip | 0.50 | 0.1-0.5 | leather,mesh
+hip race-belt with magnetic pouch | 0.55 | 0.0-0.5 | nylon,leather
+chrome shin guards with glow trim | 0.40 | 0.1-0.5 | metal,plastic
+energy gel holster with chrome clip | 0.45 | 0.0-0.4 | plastic,nylon
+chrome bib number on chest | 0.40 | 0.0-0.4 | plastic,metal

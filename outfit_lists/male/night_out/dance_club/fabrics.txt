@@ -1,0 +1,14 @@
+# format: fabric_name | formality | family | weight
+
+jersey | 0.3 | knit | light
+cotton | 0.4 | natural | medium
+mesh | 0.2 | synthetic | light
+nylon | 0.3 | synthetic | light
+polyester | 0.4 | synthetic | medium
+denim | 0.4 | natural | heavy
+leather | 0.5 | animal | medium
+modal | 0.3 | knit | light
+lurex | 0.4 | synthetic | light
+pvc | 0.3 | synthetic | medium
+acrylic | 0.3 | synthetic | medium
+metal | 0.4 | accessories | light

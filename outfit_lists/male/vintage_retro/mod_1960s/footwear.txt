@@ -1,0 +1,16 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+desert boots | 0.50 | 0.1-0.4 | suede
+plimsolls | 0.40 | 0.0-0.3 | cotton
+
+# mid-casual
+Chelsea boots | 0.55 | 0.2-0.6 | leather,suede
+Cuban-heel boots | 0.50 | 0.2-0.6 | leather
+loafers | 0.50 | 0.3-0.6 | leather
+winklepickers | 0.45 | 0.2-0.6 | leather
+
+# formal
+sleek dress shoes | 0.45 | 0.5-0.8 | leather
+patent oxfords | 0.40 | 0.6-0.9 | leather

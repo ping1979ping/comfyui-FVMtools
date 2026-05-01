@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+hawaiian print | 0.4 | top | 0.0-0.4
+bowling shirt graphic | 0.4 | top | 0.0-0.3
+hot rod motif | 0.3 | top | 0.0-0.3
+nautical anchor | 0.3 | top | 0.1-0.4
+gingham check | 0.3 | top | 0.1-0.5
+plaid pattern | 0.4 | top,outerwear | 0.2-0.6
+houndstooth motif | 0.3 | top,outerwear | 0.3-0.7
+varsity stripes | 0.3 | top | 0.1-0.4
+diner palms | 0.2 | top | 0.0-0.3
+greaser flames | 0.3 | top | 0.0-0.3

@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+designer sneakers | 0.7 | 0.0-0.3 | leather,mesh,nylon
+chunky platform shoes | 0.6 | 0.0-0.3 | leather,mesh,nylon
+chelsea-style boots | 0.5 | 0.1-0.4 | leather
+loafer-style shoes | 0.4 | 0.1-0.4 | leather
+luxe high-tops | 0.5 | 0.0-0.2 | canvas,leather
+runners with reflective trim | 0.4 | 0.0-0.2 | mesh,nylon,leather
+slip-on dress shoes | 0.3 | 0.1-0.4 | leather

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+skull motif | 0.30 | top | 0.2-0.5
+star pattern | 0.30 | top,accessories | 0.3-0.6
+lightning bolt | 0.30 | top | 0.3-0.6
+tropical print | 0.35 | top | 0.3-0.5
+neon stripe | 0.30 | top | 0.3-0.5
+pirate flag motif | 0.20 | top | 0.3-0.5
+retro flame | 0.25 | top | 0.3-0.5
+superhero emblem | 0.30 | top | 0.3-0.5
+cosmic galaxy print | 0.25 | top | 0.3-0.5
+disco glitter swirl | 0.30 | top,accessories | 0.4-0.7
+medieval crest | 0.20 | top,accessories | 0.3-0.5

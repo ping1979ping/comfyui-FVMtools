@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# flared trousers | 0.55 | 0.3-0.5 | polyester
+#color# pirate breeches | 0.45 | 0.3-0.5 | cotton
+#color# cowboy jeans | 0.55 | 0.3-0.5 | denim
+#color# disco bell-bottoms | 0.60 | 0.4-0.6 | polyester
+#color# medieval hose | 0.40 | 0.3-0.5 | cotton
+#color# superhero tights | 0.40 | 0.3-0.5 | polyester
+#color# retro plaid pants | 0.50 | 0.3-0.5 | wool
+#color# sailor wide pants | 0.40 | 0.3-0.4 | cotton
+#color# spaceman trousers | 0.40 | 0.3-0.5 | polyester
+#color# greaser jeans | 0.55 | 0.2-0.4 | denim
+#color# costume shorts | 0.35 | 0.2-0.4 | cotton
+#color# 80s neon pants | 0.50 | 0.3-0.5 | polyester

@@ -1,0 +1,8 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"NASA-X" | 0.30 | top,outerwear | block stencil font
+"CAPT. DRAKE" | 0.25 | top | embroidered serif
+"MISSION 47" | 0.25 | top,outerwear | bold sans font
+"ARES IV" | 0.20 | top,outerwear | military stencil
+"FLIGHT CREW" | 0.20 | top | thin uppercase font
+"O2-LINK" | 0.15 | accessories | LCD font

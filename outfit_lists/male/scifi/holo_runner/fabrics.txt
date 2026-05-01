@@ -1,0 +1,12 @@
+# format: fabric_name | formality | family | weight
+
+neoprene | 0.3 | synthetic | medium
+spandex | 0.2 | synthetic | light
+mesh | 0.1 | synthetic | light
+nylon | 0.2 | synthetic | light
+holographic | 0.5 | futuristic | light
+metal_mesh | 0.6 | futuristic | medium
+leather | 0.4 | tough | medium
+rubber | 0.1 | tough | medium
+plastic | 0.2 | tech | light
+metal | 0.5 | tech | heavy

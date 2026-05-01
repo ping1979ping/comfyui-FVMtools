@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+white shorts | 0.55 | 0.1-0.4 | poplin,twill
+deck shorts | 0.55 | 0.1-0.4 | poplin,twill
+nantucket reds | 0.45 | 0.2-0.4 | twill
+swim trunks | 0.30 | 0.1-0.3 | nylon,polyester
+
+# mid-casual
+white trousers | 0.55 | 0.3-0.6 | twill,linen-blend
+sailing pants | 0.45 | 0.3-0.5 | twill,nylon
+khaki pants | 0.55 | 0.3-0.6 | twill,poplin
+flat-front chinos | 0.55 | 0.3-0.6 | twill,poplin
+
+# formal
+navy trousers | 0.50 | 0.5-0.8 | gabardine,worsted

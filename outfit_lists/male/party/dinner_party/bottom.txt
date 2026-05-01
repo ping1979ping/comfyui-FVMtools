@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tuxedo trousers | 0.55 | 0.6-0.7 | wool
+#color# tailored slacks | 0.70 | 0.5-0.7 | wool
+#color# pleated dress pants | 0.50 | 0.5-0.7 | wool
+#color# fine wool trousers | 0.55 | 0.5-0.7 | wool
+#color# slim dress pants | 0.55 | 0.5-0.7 | wool
+#color# satin-stripe trousers | 0.45 | 0.6-0.7 | wool
+#color# evening trousers | 0.50 | 0.5-0.7 | wool
+#color# refined chinos | 0.45 | 0.5-0.6 | cotton
+#color# pinstripe trousers | 0.45 | 0.5-0.7 | wool
+#color# tapered dress pants | 0.45 | 0.5-0.7 | wool

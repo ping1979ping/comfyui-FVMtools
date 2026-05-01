@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+starfleet duty boots in polished black | 0.95 | 0.0-0.9 | leather,rubber
+captain dress shoes with command rank | 0.55 | 0.7-1.0 | leather
+bridge officer ankle boots | 0.75 | 0.2-0.8 | leather,rubber
+admiral formal oxfords | 0.45 | 0.8-1.0 | leather
+away mission tactical boots | 0.45 | 0.0-0.5 | leather,rubber
+off-duty deck slippers | 0.25 | 0.0-0.2 | jersey
+recreation hall trainers | 0.30 | 0.0-0.3 | mesh,rubber
+formal command boots with gold trim | 0.40 | 0.7-1.0 | leather
+duty oxfords with hidden zipper | 0.50 | 0.3-0.8 | leather
+landing party hiking boots | 0.35 | 0.0-0.4 | leather,rubber

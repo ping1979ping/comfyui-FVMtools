@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized pixel-art tee with chunky sleeves | 0.70 | 0.0-0.4 | spandex,mesh
+iridescent chest harness with floating particles | 0.55 | 0.1-0.5 | holographic,spandex
+glitch-print bodysuit with reactive panels | 0.65 | 0.1-0.5 | spandex,neoprene
+fitted cyber tee with avatar tag | 0.60 | 0.0-0.4 | spandex,mesh
+asymmetric voxel jacket-shirt with chrome zipper | 0.55 | 0.1-0.5 | neoprene,holographic
+sleeveless emote shirt with reactive emoji panel | 0.55 | 0.0-0.4 | spandex,mesh
+oversized hoodie with avatar print | 0.65 | 0.0-0.4 | neoprene,nylon
+iridescent jersey with floating polygon | 0.50 | 0.1-0.5 | holographic,spandex
+chrome-trimmed compression top with skin-cutouts | 0.50 | 0.2-0.5 | spandex,metal_mesh
+sheer mesh layered tee with neon outline | 0.50 | 0.0-0.4 | mesh,spandex
+particle-effect long-sleeve with glow seams | 0.55 | 0.1-0.5 | spandex,holographic

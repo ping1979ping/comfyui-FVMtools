@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BIRTHDAY BOY" | 0.25 | top | bold party
+"HAPPY BIRTHDAY" | 0.25 | top | bold party
+"30" | 0.15 | top | giant numeral
+"40" | 0.15 | top | giant numeral
+"50" | 0.10 | top | giant numeral
+"PARTY TIME" | 0.20 | top | bold party
+"CELEBRATE" | 0.20 | top | retro lettering
+"MAKE A WISH" | 0.15 | top | retro lettering
+"CHEERS" | 0.20 | top | bold party
+"ANOTHER YEAR" | 0.15 | top | retro lettering

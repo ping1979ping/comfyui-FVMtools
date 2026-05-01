@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# running cap | 0.75 | 0.0-0.2 | polyester
+#color# featherweight visor | 0.55 | 0.0-0.1 | polyester
+#color# beanie | 0.40 | 0.0-0.2 | acrylic
+#color# headband | 0.50 | 0.0-0.1 | polyester,cotton
+#color# buff neck gaiter | 0.40 | 0.0-0.1 | polyester

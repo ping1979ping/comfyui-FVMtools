@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# road cycling shoes | 0.90 | 0.0-0.1 | leather,nylon
+#color# carbon-sole race shoes | 0.80 | 0.0-0.1 | leather,carbon
+#color# clip-in pedal shoes | 0.75 | 0.0-0.1 | leather
+#color# triathlon cycling shoes | 0.55 | 0.0-0.1 | nylon
+#color# winter cycling boots | 0.40 | 0.0-0.1 | leather,nylon
+#color# cycling socks | 0.85 | 0.0-0.1 | polyester,nylon
+#color# tall race socks | 0.70 | 0.0-0.1 | polyester
+#color# overshoes | 0.45 | 0.0-0.1 | neoprene

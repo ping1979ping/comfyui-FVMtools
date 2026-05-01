@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ambassador formal homburg hat | 0.18 | 0.7-1.0 | wool
+NX flight cap | 0.20 | 0.2-0.6 | cotton
+diplomatic envoy fedora | 0.15 | 0.5-1.0 | wool
+formal mess officer cap with brim | 0.18 | 0.7-1.0 | wool,satin

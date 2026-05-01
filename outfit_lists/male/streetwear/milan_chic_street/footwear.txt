@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+luxe leather sneakers | 0.7 | 0.0-0.3 | leather,mesh
+chelsea boots | 0.5 | 0.1-0.4 | leather
+designer loafers | 0.5 | 0.1-0.4 | leather
+italian dress shoes | 0.4 | 0.1-0.4 | leather
+minimalist white sneakers | 0.6 | 0.0-0.3 | leather
+ankle-cut boots | 0.4 | 0.1-0.4 | leather
+slip-on espadrilles | 0.3 | 0.0-0.3 | canvas,jersey
+suede driving shoes | 0.3 | 0.1-0.4 | leather

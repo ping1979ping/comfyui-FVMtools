@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+NX-01 mission patch on shoulder | 0.95 | 0.0-1.0 | polyester,metal
+captain rank patch on chest | 0.85 | 0.2-1.0 | polyester,metal
+diplomatic envoy lapel pin | 0.55 | 0.5-1.0 | metal
+ambassador credential portfolio in hand | 0.40 | 0.7-1.0 | leather
+EM-33 plasma pistol on hip | 0.50 | 0.0-0.6 | plastic,metal
+NX era handheld scanner | 0.65 | 0.0-0.7 | plastic,metal
+universal translator pin on collar | 0.55 | 0.0-0.8 | metal,plastic
+duty PADD with diplomatic notes | 0.45 | 0.2-0.8 | plastic
+flight crew chronometer wristwatch | 0.40 | 0.0-0.8 | metal
+diplomatic ceremonial medallion on chain | 0.35 | 0.7-1.0 | metal
+formal earth flag pin on lapel | 0.30 | 0.7-1.0 | metal

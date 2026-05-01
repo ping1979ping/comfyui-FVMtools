@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+NX-01 mission emblem on chest | 0.45 | top,outerwear | 0.2-0.8
+earth united flag patch | 0.35 | top,outerwear | 0.2-0.8
+captain rank box pattern | 0.40 | top | 0.3-0.9
+diplomatic envoy crest motif | 0.35 | top,outerwear | 0.6-1.0
+NX era division stripe | 0.30 | top | 0.2-0.7
+ambassador ceremonial brocade | 0.25 | outerwear | 0.7-1.0
+flight crew shoulder taping | 0.30 | top,outerwear | 0.2-0.7
+formal mess parade trim | 0.25 | outerwear | 0.8-1.0
+mission patch collection on sleeve | 0.30 | outerwear | 0.0-0.6
+ambassador braid pattern | 0.20 | outerwear | 0.7-1.0

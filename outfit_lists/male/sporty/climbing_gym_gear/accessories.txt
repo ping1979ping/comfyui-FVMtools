@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# chalk bag | 0.85 | 0.0-0.1 | canvas
+#color# climbing harness | 0.50 | 0.0-0.1 | nylon
+#color# wristband | 0.45 | 0.0-0.1 | cotton
+#color# finger tape | 0.50 | 0.0-0.1 | cotton
+#color# beaded bracelet | 0.35 | 0.0-0.2 | wood
+sports watch | 0.55 | 0.0-0.2 | rubber,plastic
+#color# climbing belt | 0.40 | 0.0-0.2 | nylon
+#color# bandana | 0.40 | 0.0-0.2 | cotton
+#color# carabiner clip | 0.35 | 0.0-0.1 | metal

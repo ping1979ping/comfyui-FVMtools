@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+acid-wash jeans | 0.50 | 0.0-0.3 | denim
+parachute pants | 0.45 | 0.0-0.3 | nylon
+high-waisted jeans | 0.45 | 0.0-0.3 | denim
+
+# mid-casual
+pleated chinos | 0.50 | 0.2-0.5 | cotton
+parachute trousers | 0.40 | 0.1-0.4 | nylon
+high-waisted slacks | 0.55 | 0.3-0.6 | wool,polyester
+breezy trousers | 0.45 | 0.3-0.6 | linen
+
+# formal
+double-pleated dress pants | 0.50 | 0.5-0.8 | wool
+shiny tuxedo trousers | 0.40 | 0.6-0.9 | satin
+tailored power slacks | 0.50 | 0.5-0.9 | wool

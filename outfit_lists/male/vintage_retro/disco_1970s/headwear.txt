@@ -1,0 +1,12 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+floppy hat | 0.30 | 0.1-0.4 | suede,velvet
+wide-brim fedora | 0.35 | 0.2-0.6 | wool,velvet
+
+# mid-casual
+disco headband | 0.30 | 0.2-0.6 | polyester
+
+# formal
+glossy top hat | 0.20 | 0.5-0.9 | satin

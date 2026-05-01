@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# pirate ruffled shirt | 0.55 | 0.3-0.5 | cotton
+#color# disco glitter shirt | 0.60 | 0.4-0.6 | sequin
+#color# cowboy western shirt | 0.50 | 0.3-0.5 | cotton
+#color# superhero costume top | 0.55 | 0.3-0.5 | polyester
+#color# retro 70s shirt | 0.55 | 0.3-0.5 | polyester
+#color# sailor striped top | 0.45 | 0.3-0.4 | cotton
+#color# medieval tunic | 0.45 | 0.3-0.5 | cotton
+#color# 80s neon mesh top | 0.55 | 0.3-0.5 | polyester
+#color# halloween graphic shirt | 0.55 | 0.2-0.4 | cotton
+#color# tropical hawaiian shirt | 0.65 | 0.3-0.5 | polyester
+#color# greaser tee | 0.50 | 0.2-0.4 | cotton
+#color# rockstar shimmer top | 0.50 | 0.4-0.6 | sequin
+#color# vampire ruffle blouse | 0.40 | 0.4-0.6 | polyester
+#color# space astronaut top | 0.40 | 0.3-0.5 | polyester

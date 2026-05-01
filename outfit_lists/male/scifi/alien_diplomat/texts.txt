@@ -1,0 +1,8 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"AMBASSADOR" | 0.25 | top,outerwear | embroidered serif
+"EMBASSY OF XYR" | 0.20 | top,outerwear | ceremonial script
+"DELEGATE" | 0.20 | top | bold serif
+"COUNCIL" | 0.20 | top,accessories | engraved chrome font
+"ENVOY" | 0.20 | top | flowing italic
+"FEDERATION" | 0.15 | top,outerwear | ceremonial sans

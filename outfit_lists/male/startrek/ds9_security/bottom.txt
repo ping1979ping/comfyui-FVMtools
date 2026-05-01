@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+DS9 duty trousers in black | 0.95 | 0.0-0.9 | spandex,lycra
+tactical security pants with thigh holster strap | 0.75 | 0.0-0.6 | nylon,spandex
+station service slacks with side stripe | 0.65 | 0.3-0.8 | spandex,lycra
+constable cargo pants with magazine pouches | 0.55 | 0.0-0.5 | nylon,cotton
+formal dress trousers with operations gold piping | 0.45 | 0.7-1.0 | satin,lycra
+field assignment combat trousers | 0.50 | 0.0-0.5 | nylon,canvas
+runabout pilot flight pants | 0.45 | 0.2-0.7 | spandex,nylon
+fitted bridge officer trousers | 0.60 | 0.3-0.8 | spandex,lycra
+duty pants with utility belt | 0.55 | 0.0-0.6 | spandex,nylon
+infirmary scrub trousers | 0.30 | 0.0-0.4 | cotton,jersey

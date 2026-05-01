@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+engineer welding visor flipped up | 0.20 | 0.0-0.5 | metal,plastic
+service crewman cap | 0.15 | 0.2-0.7 | cotton
+TOS dress mess hat | 0.18 | 0.7-1.0 | wool,satin
+work bandana around forehead | 0.20 | 0.0-0.3 | cotton

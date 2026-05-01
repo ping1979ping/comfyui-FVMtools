@@ -1,0 +1,16 @@
+# format: text_content | probability | compatible_slots | font_hint
+"HARAJUKU" | 0.3 | top,outerwear | bold block letters
+"TOKYO" | 0.3 | top,headwear | gothic font
+"SHIBUYA" | 0.25 | top | distressed print
+"渋谷" | 0.2 | top | brush stroke
+"カワイイ" | 0.2 | top | playful font
+"原宿" | 0.2 | top,outerwear | brush stroke
+"NEO" | 0.2 | top | bold block letters
+"FUTURE" | 0.2 | top,outerwear | gothic font
+"DREAM" | 0.2 | top | playful font
+"NEON" | 0.25 | top | graffiti style
+"VIBE" | 0.25 | top | bold block letters
+"WAVE" | 0.2 | top | brush stroke
+"GLITCH" | 0.15 | top | industrial font
+"KAWAII" | 0.2 | top | playful font
+"PIXEL" | 0.15 | top | industrial font

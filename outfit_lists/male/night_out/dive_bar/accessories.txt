@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+worn belt | 0.65 | 0.2-0.5 | leather
+beanie | 0.45 | 0.2-0.4 | acrylic,wool
+field watch | 0.55 | 0.2-0.5 | metal,canvas
+bandana | 0.30 | 0.2-0.4 | cotton
+chunky ring | 0.35 | 0.2-0.5 | metal
+chain wallet | 0.30 | 0.2-0.4 | metal,leather
+trucker cap | 0.40 | 0.2-0.4 | cotton,foam
+black wristband | 0.25 | 0.2-0.5 | nylon
+beaded bracelet | 0.30 | 0.2-0.5 | wood
+sunglasses | 0.30 | 0.2-0.4 | metal,plastic

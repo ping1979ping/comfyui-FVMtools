@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+designer crossbody | 0.5 | 0.0-0.3 | nylon,leather,canvas
+collab backpack | 0.5 | 0.0-0.2 | nylon,canvas,polyester
+luxe sling | 0.4 | 0.0-0.2 | nylon,polyester
+hyped fanny pack | 0.4 | 0.0-0.2 | nylon,polyester
+brand duffel | 0.3 | 0.0-0.2 | nylon,canvas
+limited tote | 0.3 | 0.0-0.3 | canvas

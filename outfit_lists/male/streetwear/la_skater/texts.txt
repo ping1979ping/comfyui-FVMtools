@@ -1,0 +1,16 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VENICE" | 0.3 | top,headwear | bold block letters
+"LA" | 0.3 | top,headwear | bold block letters
+"WEST COAST" | 0.25 | top,outerwear | distressed print
+"VIBES" | 0.25 | top | graffiti style
+"SOCAL" | 0.25 | top | bold block letters
+"PACIFIC" | 0.2 | top | gothic font
+"CRUISIN" | 0.2 | top | graffiti style
+"WAVES" | 0.2 | top | brush stroke
+"PALMS" | 0.2 | top | playful font
+"SUNSET" | 0.2 | top | playful font
+"SHRED" | 0.25 | top,outerwear | distressed print
+"GRINDING" | 0.2 | top | graffiti style
+"BOARDS" | 0.2 | top | bold block letters
+"DOGTOWN" | 0.15 | top,outerwear | gothic font
+"OLLIE" | 0.2 | top | graffiti style

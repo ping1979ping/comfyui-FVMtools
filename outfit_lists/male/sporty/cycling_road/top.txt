@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cycling jersey | 0.95 | 0.0-0.2 | polyester,spandex
+#color# pro team jersey | 0.85 | 0.0-0.2 | polyester
+#color# aero race jersey | 0.80 | 0.0-0.2 | polyester,spandex
+#color# long-sleeve cycling top | 0.70 | 0.0-0.2 | polyester,spandex
+#color# sleeveless climbing jersey | 0.65 | 0.0-0.1 | polyester
+#color# base layer | 0.75 | 0.0-0.1 | merino wool,polyester
+#color# zip-up cycling top | 0.70 | 0.0-0.2 | polyester
+#color# wind-resistant jersey | 0.55 | 0.0-0.2 | polyester,nylon
+#color# training jersey | 0.65 | 0.0-0.2 | polyester
+#color# fitted race jersey | 0.65 | 0.0-0.2 | spandex,polyester

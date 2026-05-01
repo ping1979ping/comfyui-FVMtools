@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+collarless undershirt | 0.40 | 0.0-0.3 | cotton
+boater stripe shirt | 0.45 | 0.1-0.4 | cotton,linen
+work shirt | 0.40 | 0.0-0.3 | cotton
+
+# mid-casual
+detachable-collar shirt | 0.55 | 0.2-0.6 | cotton
+banded-collar shirt | 0.50 | 0.2-0.5 | cotton
+striped dress shirt | 0.50 | 0.3-0.7 | cotton
+fair-isle pullover | 0.40 | 0.1-0.4 | knit,wool
+cricket pullover | 0.45 | 0.2-0.5 | knit
+
+# formal
+wing-collar dress shirt | 0.50 | 0.5-0.9 | cotton
+formal pleated shirt | 0.45 | 0.6-0.9 | cotton,silk
+striped dress shirt | 0.40 | 0.5-0.9 | chalkstripe

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+research lab coat with starfleet science insignia | 0.65 | 0.2-0.7 | cotton,lycra
+delta quadrant expedition jacket | 0.50 | 0.0-0.5 | nylon,spandex
+formal science overcoat with blue trim | 0.40 | 0.7-1.0 | satin,wool
+EV survey vest with sample loops | 0.45 | 0.0-0.5 | nylon
+chief science duty jacket | 0.55 | 0.3-0.8 | spandex,lycra
+formal mess dress overcoat | 0.35 | 0.7-1.0 | wool,satin
+astrophysics observation parka | 0.40 | 0.0-0.4 | nylon
+ceremonial science tunic with sash | 0.30 | 0.7-1.0 | satin
+field research smock with reinforced elbows | 0.45 | 0.0-0.5 | cotton,canvas
+delta survey rain coat | 0.30 | 0.0-0.4 | nylon

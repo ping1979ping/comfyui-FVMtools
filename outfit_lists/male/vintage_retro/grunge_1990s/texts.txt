@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GRUNGE" | 0.2 | top | distressed font
+"NIRVANA" | 0.15 | top | grunge band font
+"PEARL JAM" | 0.15 | top | grunge band font
+"SOUNDGARDEN" | 0.15 | top | grunge band font
+"MTV UNPLUGGED" | 0.15 | top | distressed font
+"SEATTLE" | 0.2 | top | grunge band font
+"WHATEVER" | 0.2 | top | distressed font
+"SLACKER" | 0.2 | top | grunge font
+"NO RULES" | 0.15 | top | distressed font
+"TEEN SPIRIT" | 0.15 | top | grunge band font
+"SK8" | 0.15 | top | skater font
+"SUB POP" | 0.15 | top | grunge band font
+"X-FILES" | 0.1 | top | sci-fi font

@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flared mod trousers with chrome stripe | 0.65 | 0.3-0.7 | satin,nylon
+fitted vinyl pants with chrome belt | 0.60 | 0.2-0.6 | vinyl,nylon
+chrome-piped slacks with high waistband | 0.55 | 0.4-0.8 | satin,silk
+geometric color-block trousers | 0.55 | 0.3-0.7 | satin,nylon
+mod kilt with chrome ring belt | 0.40 | 0.3-0.7 | satin,spandex
+catsuit pants with chrome zipper | 0.55 | 0.2-0.6 | spandex,vinyl
+high-waisted bell-bottoms with chrome trim | 0.55 | 0.3-0.7 | satin,nylon
+fitted space-age trousers with side stripe | 0.60 | 0.3-0.7 | nylon,satin
+ribbed chrome-edged leggings | 0.50 | 0.2-0.6 | spandex,satin
+A-line shift trousers with chrome ring | 0.50 | 0.3-0.7 | satin,nylon

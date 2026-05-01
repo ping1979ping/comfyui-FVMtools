@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+NX era duty jumpsuit top with shoulder zipper | 0.95 | 0.2-0.8 | nomex,polyester
+captain mission top in earth blue | 0.80 | 0.3-0.8 | nomex,polyester
+NX-01 chief diplomat tunic | 0.75 | 0.5-1.0 | wool,satin
+formal envoy dress jacket with rank patch | 0.55 | 0.7-1.0 | satin,wool
+NX era undershirt visible at zipper neck | 0.65 | 0.2-0.7 | cotton,jersey
+ambassador formal cravat top | 0.40 | 0.8-1.0 | satin,silk
+flight crew duty coverall top | 0.70 | 0.2-0.7 | nomex,cotton
+diplomatic envoy waistcoat over shirt | 0.50 | 0.7-1.0 | wool,satin
+NX command center duty top | 0.65 | 0.3-0.8 | nomex,polyester
+shore leave casual henley | 0.30 | 0.0-0.3 | cotton,jersey

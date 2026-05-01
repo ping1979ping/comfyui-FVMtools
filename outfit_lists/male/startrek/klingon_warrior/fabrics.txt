@@ -1,0 +1,11 @@
+# format: fabric_name | formality | family | weight
+
+leather | 0.5 | tough | medium
+metal | 0.5 | tech | heavy
+wool | 0.6 | natural | medium
+satin | 0.8 | luxury | light
+nylon | 0.2 | synthetic | light
+canvas | 0.2 | tough | heavy
+cotton | 0.2 | natural | medium
+rubber | 0.1 | tough | medium
+plastic | 0.3 | tech | light

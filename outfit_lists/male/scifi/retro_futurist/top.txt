@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mod-style chrome turtleneck shell | 0.70 | 0.3-0.7 | satin,metal_mesh
+A-line sleeveless tunic with chrome zipper | 0.65 | 0.3-0.7 | satin,nylon
+mod cropped shirt with chrome rings | 0.60 | 0.2-0.6 | satin,spandex
+fitted bouffant-sleeve blouse with chrome cuffs | 0.55 | 0.4-0.8 | satin,silk
+boxy chrome-trim shirt with peter pan collar | 0.55 | 0.4-0.8 | satin,silk
+chrome-belted shift shirt in space-age cut | 0.60 | 0.3-0.7 | satin,nylon
+sleeveless catsuit shirt with chrome zipper | 0.55 | 0.2-0.6 | spandex,vinyl
+high-collar mod jumpsuit shirt | 0.55 | 0.3-0.7 | nylon,satin
+geometric color-block top with chrome ring | 0.50 | 0.2-0.6 | satin,spandex
+puff-shoulder space tunic | 0.50 | 0.3-0.7 | satin,silk
+ribbed chrome-edged turtleneck | 0.55 | 0.3-0.7 | spandex,satin

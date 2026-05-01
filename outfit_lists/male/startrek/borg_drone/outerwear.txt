@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+borg cube alcove regeneration shroud | 0.55 | 0.0-0.7 | nylon,rubber
+biomechanical drone back exoskeleton | 0.75 | 0.0-1.0 | metal,plastic
+borg drone shoulder cannon mount | 0.60 | 0.0-0.9 | metal
+collective drone cape of cabling | 0.45 | 0.0-0.8 | rubber,metal
+borg assimilator manipulator arms | 0.55 | 0.0-1.0 | metal,plastic
+drone heavy plating mantle | 0.50 | 0.0-1.0 | metal
+borg cube tactical drone harness | 0.60 | 0.0-0.9 | metal,nylon
+biomech drone thoracic exo-frame | 0.65 | 0.0-1.0 | metal,plastic
+borg severed cable drape | 0.40 | 0.0-0.9 | rubber
+queen drone ceremonial mantle | 0.30 | 0.5-1.0 | metal,satin

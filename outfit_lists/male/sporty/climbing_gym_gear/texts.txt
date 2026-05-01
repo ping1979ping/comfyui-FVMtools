@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SEND IT" | 0.25 | top | bold block letters
+"BETA" | 0.20 | top,headwear | stencil
+"CRUSHING" | 0.20 | top | varsity font
+"PROJECT" | 0.20 | top | bold typography
+"FLASH" | 0.20 | top | athletic font
+"ONSIGHT" | 0.20 | top | bold block letters
+"V10" | 0.20 | top | stencil
+"5.13" | 0.15 | top | stencil
+"CRAG LIFE" | 0.25 | top,headwear | rugged serif
+"VERTICAL" | 0.20 | top | bold block letters
+"GRIP IT" | 0.20 | top | athletic font
+"DIRTBAG" | 0.15 | top | rugged serif
+"CHALK UP" | 0.20 | top | bold block letters

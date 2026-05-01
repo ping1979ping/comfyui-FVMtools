@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WEEKEND" | 0.2 | top | bold print
+"FRIDAY MOOD" | 0.2 | top | retro lettering
+"NO RULES" | 0.15 | top | graffiti
+"VIBE" | 0.2 | top | bold print
+"CHILL" | 0.2 | top | retro lettering
+"SQUAD" | 0.15 | top | bold print
+"LATE NIGHT" | 0.15 | top | neon block
+"HOMIES" | 0.15 | top | graffiti
+"HYPE" | 0.2 | top | bold print
+"GOOD TIMES" | 0.15 | top | retro lettering

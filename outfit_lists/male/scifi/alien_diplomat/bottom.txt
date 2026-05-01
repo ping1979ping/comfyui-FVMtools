@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowing ceremonial trousers with chrome piping | 0.70 | 0.5-1.0 | satin,silk
+iridescent dress pants with floating panel | 0.65 | 0.5-0.9 | holographic,satin
+fitted ambassador slacks with chrome stripe | 0.65 | 0.5-0.9 | satin,nylon
+draped ceremonial wrap skirt with embroidered glyphs | 0.45 | 0.6-1.0 | silk,satin
+sheer overlay trousers with chrome boning | 0.50 | 0.5-0.9 | mesh,satin
+high-waisted formal pants with chrome ring belt | 0.60 | 0.5-0.9 | satin,silk
+jeweled side-stripe trousers with floating gem | 0.50 | 0.6-1.0 | satin,metal_mesh
+asymmetric wrap pants with chrome clasps | 0.55 | 0.5-0.9 | satin,holographic

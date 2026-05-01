@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+embroidered glyph motif | 0.65 | top,outerwear | 0.5-1.0
+iridescent color-shift wash | 0.60 | top,outerwear | 0.5-0.9
+fiber-optic stripe accent | 0.55 | top,bottom,outerwear | 0.5-0.9
+chrome filigree pattern | 0.55 | top,outerwear | 0.6-1.0
+floating-gem cluster motif | 0.50 | top,outerwear | 0.6-1.0
+ceremonial crest emblem | 0.55 | top,outerwear | 0.5-1.0
+constellation embroidery | 0.50 | top,outerwear | 0.6-1.0
+chrome chevron with gem accent | 0.45 | top,outerwear | 0.5-0.9
+sacred-geometry holo motif | 0.45 | top,outerwear | 0.5-0.9
+diplomatic seal print | 0.50 | top,outerwear | 0.6-1.0

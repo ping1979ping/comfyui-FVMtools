@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+
+cotton | 0.4 | natural | medium
+denim | 0.3 | natural | heavy
+flannel | 0.3 | natural | medium
+jersey | 0.3 | knit | light
+canvas | 0.4 | natural | heavy
+fleece | 0.3 | knit | medium
+chambray | 0.4 | natural | light
+poplin | 0.4 | natural | light
+wool | 0.5 | natural | medium
+acrylic | 0.3 | synthetic | medium
+leather | 0.5 | animal | medium
+suede | 0.5 | animal | medium
+shearling | 0.5 | animal | heavy
+nylon | 0.3 | synthetic | light
+metal | 0.4 | accessories | light

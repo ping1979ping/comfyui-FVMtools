@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rumpled dress shirt | 0.70 | 0.4-0.6 | cotton,poplin
+loosened button-up | 0.65 | 0.4-0.6 | cotton,poplin
+fitted black shirt | 0.70 | 0.3-0.5 | satin,polyester
+slim henley | 0.55 | 0.3-0.5 | jersey,cotton
+fine-knit pullover | 0.45 | 0.4-0.6 | merino,cashmere
+graphic tee | 0.50 | 0.2-0.4 | jersey,cotton
+slim band-collar shirt | 0.50 | 0.4-0.6 | cotton,poplin
+black turtleneck | 0.40 | 0.5-0.7 | merino,cashmere
+worn fitted tee | 0.55 | 0.2-0.4 | jersey,cotton
+unbuttoned shimmer shirt | 0.40 | 0.3-0.5 | satin
+mock-neck tee | 0.45 | 0.4-0.6 | jersey,modal
+oversized sweater | 0.35 | 0.3-0.5 | merino,cashmere

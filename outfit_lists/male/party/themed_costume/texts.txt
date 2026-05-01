@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"AHOY" | 0.2 | top | pirate script
+"DISCO" | 0.2 | top | retro lettering
+"YEEHAW" | 0.15 | top | western font
+"HERO" | 0.2 | top | bold comic
+"GROOVY" | 0.2 | top | 70s lettering
+"BOO" | 0.15 | top | spooky font
+"SPACE" | 0.15 | top | sci-fi font
+"PARTY ON" | 0.2 | top | retro lettering
+"COSTUME" | 0.15 | top | bold print
+"DRESS UP" | 0.15 | top | bold print

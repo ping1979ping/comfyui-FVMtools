@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+luxury chronograph | 0.85 | 0.3-0.7 | metal
+chunky chain | 0.55 | 0.3-0.6 | metal
+diamond stud earring | 0.40 | 0.3-0.6 | metal
+pinky ring | 0.45 | 0.3-0.6 | metal
+designer shades | 0.50 | 0.3-0.6 | metal,plastic
+luxe dress belt | 0.65 | 0.4-0.7 | leather
+chrome bracelet | 0.40 | 0.3-0.6 | metal
+classic pocket square | 0.30 | 0.5-0.7 | silk
+slim necktie | 0.25 | 0.5-0.7 | silk
+gold pendant | 0.35 | 0.3-0.6 | metal
+designer cufflinks | 0.30 | 0.5-0.7 | metal

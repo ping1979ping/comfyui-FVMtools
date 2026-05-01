@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+patch-covered crossbody | 0.5 | 0.0-0.3 | nylon,leather,canvas
+mini messenger | 0.4 | 0.0-0.3 | canvas,nylon,leather
+plush mascot bag | 0.3 | 0.0-0.2 | polyester
+techwear sling | 0.4 | 0.0-0.2 | nylon,polyester
+chunky backpack | 0.4 | 0.0-0.2 | nylon,canvas,polyester
+hip pouch | 0.3 | 0.0-0.2 | nylon,polyester
+shoulder pouch | 0.3 | 0.0-0.2 | nylon,leather
+buckled tote | 0.3 | 0.0-0.3 | canvas,leather

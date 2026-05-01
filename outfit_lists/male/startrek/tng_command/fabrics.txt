@@ -1,0 +1,12 @@
+# format: fabric_name | formality | family | weight
+
+spandex | 0.3 | synthetic | light
+lycra | 0.4 | synthetic | light
+nylon | 0.2 | synthetic | light
+satin | 0.8 | luxury | light
+cotton | 0.2 | natural | medium
+jersey | 0.1 | casual | light
+leather | 0.5 | tough | medium
+rubber | 0.1 | tough | medium
+metal | 0.5 | tech | heavy
+plastic | 0.3 | tech | light

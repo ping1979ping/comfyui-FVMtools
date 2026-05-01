@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cycling rain jacket | 0.65 | 0.0-0.2 | nylon
+#color# packable wind vest | 0.70 | 0.0-0.2 | nylon
+#color# thermal cycling jacket | 0.60 | 0.0-0.2 | polyester,fleece
+#color# gilet | 0.65 | 0.0-0.2 | nylon
+#color# arm warmers | 0.60 | 0.0-0.1 | spandex
+#color# leg warmers | 0.50 | 0.0-0.1 | spandex
+#color# softshell ride jacket | 0.55 | 0.0-0.2 | nylon
+#color# rain cape | 0.40 | 0.0-0.2 | nylon

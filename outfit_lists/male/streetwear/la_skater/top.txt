@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+washed graphic tee | 0.8 | 0.0-0.2 | cotton,jersey
+oversized vintage tee | 0.7 | 0.0-0.2 | cotton,jersey
+skate brand pullover | 0.6 | 0.0-0.2 | cotton,fleece
+worn pocket tee | 0.5 | 0.0-0.2 | cotton,jersey
+faded long sleeve | 0.5 | 0.0-0.2 | cotton,jersey
+checkered button-up | 0.5 | 0.0-0.3 | flannel,cotton
+muscle tank | 0.3 | 0.0-0.1 | cotton,jersey
+striped polo | 0.3 | 0.0-0.3 | cotton,polyester
+distressed crewneck | 0.5 | 0.0-0.2 | cotton,fleece
+worn-in shirt | 0.4 | 0.0-0.3 | cotton,flannel

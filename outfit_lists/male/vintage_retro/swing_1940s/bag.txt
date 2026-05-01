@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+canvas duffel | 0.30 | 0.0-0.3 | cotton
+hide rucksack | 0.30 | 0.0-0.3 | leather
+
+# mid-casual
+gladstone bag | 0.30 | 0.3-0.6 | leather
+weekender bag | 0.30 | 0.2-0.5 | leather
+
+# formal
+classic briefcase | 0.35 | 0.5-0.9 | leather
+attache case | 0.30 | 0.6-0.9 | leather

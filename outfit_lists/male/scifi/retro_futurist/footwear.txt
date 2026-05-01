@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chrome-toe go-go boots | 0.70 | 0.3-0.7 | vinyl,leather
+white space-age ankle boots | 0.65 | 0.3-0.7 | leather,vinyl
+chrome-buckled mod loafers | 0.55 | 0.4-0.8 | leather,satin
+fitted vinyl boots with chrome zipper | 0.55 | 0.2-0.6 | vinyl,leather
+mid-calf mod boots with chrome heel | 0.55 | 0.3-0.7 | leather,metal_mesh
+peter pan strap shoes with chrome buckle | 0.50 | 0.4-0.8 | leather,satin
+chrome-trimmed dress shoes | 0.50 | 0.5-0.9 | leather,satin
+A-line wedge shoes with chrome ring | 0.45 | 0.3-0.7 | leather,vinyl

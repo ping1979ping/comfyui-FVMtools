@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# party bomber | 0.50 | 0.3-0.5 | nylon
+#color# casual blazer | 0.45 | 0.3-0.5 | cotton
+#color# zip-up hoodie | 0.45 | 0.2-0.4 | cotton,jersey
+#color# jean jacket | 0.50 | 0.3-0.5 | denim
+#color# overshirt | 0.40 | 0.3-0.5 | cotton
+#color# birthday cardigan | 0.35 | 0.3-0.5 | cotton
+#color# trucker jacket | 0.40 | 0.3-0.5 | denim
+#color# light pullover | 0.35 | 0.2-0.4 | cotton,jersey
+#color# party windbreaker | 0.35 | 0.2-0.4 | nylon

@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scuffed chelsea boots | 0.70 | 0.3-0.5 | leather,suede
+broken-in sneakers | 0.65 | 0.2-0.5 | leather,canvas
+zip-side boots | 0.50 | 0.4-0.6 | leather
+slim derby shoes | 0.45 | 0.4-0.6 | leather
+penny loafers | 0.45 | 0.4-0.6 | leather
+chukka boots | 0.45 | 0.3-0.5 | suede
+worn dress shoes | 0.40 | 0.4-0.6 | leather
+high-tops | 0.45 | 0.2-0.4 | canvas,leather
+boots-and-jeans loafer | 0.30 | 0.4-0.6 | leather
+black combat boots | 0.40 | 0.3-0.5 | leather

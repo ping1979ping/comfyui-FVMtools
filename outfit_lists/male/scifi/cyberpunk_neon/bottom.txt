@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waisted cargo pants with glow-strip seams | 0.75 | 0.0-0.4 | neoprene,nylon
+skin-tight leggings with circuit pattern | 0.70 | 0.0-0.3 | spandex,mesh
+iridescent kilt with chrome belt | 0.40 | 0.0-0.3 | holographic,spandex
+ripped mesh tights under shorts | 0.45 | 0.0-0.3 | mesh,spandex
+fitted vinyl pants with glow stitching | 0.55 | 0.1-0.5 | plastic,neoprene
+asymmetric wrap pants with neon edge | 0.45 | 0.2-0.5 | satin,holographic
+biker shorts with reactive light strips | 0.55 | 0.0-0.3 | spandex,neoprene
+buckled moto pants with knee accents | 0.60 | 0.1-0.5 | leather,neoprene
+pleated tech shorts with glow hem | 0.40 | 0.1-0.4 | nylon,spandex
+cargo joggers with magnetic pocket flaps | 0.65 | 0.0-0.4 | nylon,neoprene
+torn jeans under fishnet layer | 0.40 | 0.0-0.3 | mesh,spandex
+fitted iridescent flares with chrome cuff | 0.45 | 0.3-0.6 | holographic,satin

@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+black combat boots | 0.7 | 0.0-0.3 | leather,canvas
+dark high-tops | 0.6 | 0.0-0.2 | canvas,leather
+black sneakers | 0.6 | 0.0-0.3 | leather,mesh,nylon
+chunky black trainers | 0.5 | 0.0-0.3 | leather,mesh,nylon
+work boots | 0.4 | 0.0-0.3 | leather
+black skate shoes | 0.5 | 0.0-0.2 | canvas,leather
+runner trainers | 0.4 | 0.0-0.2 | mesh,nylon,leather

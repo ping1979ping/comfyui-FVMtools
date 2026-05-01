@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# hydration vest | 0.65 | 0.0-0.1 | nylon
+#color# running waist pack | 0.60 | 0.0-0.1 | nylon
+#color# race kit duffel | 0.50 | 0.0-0.2 | nylon,polyester
+#color# small ride pouch | 0.45 | 0.0-0.1 | nylon
+#color# armband phone holder | 0.55 | 0.0-0.1 | spandex
+#color# lightweight backpack | 0.50 | 0.0-0.2 | nylon
+#color# drawstring kit sack | 0.50 | 0.0-0.1 | nylon
+#color# expo swag tote | 0.40 | 0.0-0.2 | canvas

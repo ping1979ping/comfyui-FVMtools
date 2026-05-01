@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+luxury watch | 0.85 | 0.4-0.7 | metal,leather
+gold chain | 0.65 | 0.3-0.6 | metal
+diamond pinky ring | 0.40 | 0.4-0.7 | metal
+flashy cufflinks | 0.45 | 0.5-0.7 | metal
+lustrous pocket square | 0.50 | 0.5-0.7 | satin
+slim black bow tie | 0.40 | 0.5-0.7 | satin
+designer sunglasses | 0.55 | 0.3-0.5 | metal,plastic
+gold tie bar | 0.30 | 0.5-0.7 | metal
+crocodile belt | 0.55 | 0.4-0.7 | leather
+chunky bracelet | 0.40 | 0.3-0.6 | metal
+diamond stud earring | 0.30 | 0.3-0.6 | metal
