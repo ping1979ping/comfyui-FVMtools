@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+ceiling pendant light dimmed | 0.65 | 0.05-0.2 | warm glowing fixture
+crown molding ceiling trim | 0.55 | 0.05-0.15 | decorative ceiling line
+bay window with cushion seat | 0.5 | 0.1-0.3 | recessed seating nook
+beadboard wall paneling section | 0.5 | 0.2-0.5 | vertical narrow plank wall
+fireplace mantel along wall | 0.65 | 0.2-0.5 | trimmed shelf above hearth
+gas fireplace with flames | 0.6 | 0.2-0.5 | glass-fronted fire box
+recessed ceiling speaker grilles | 0.5 | 0.05-0.15 | round mounted speakers
+arched doorway opening | 0.5 | 0.1-0.3 | curved wall passage
+crown of bookshelves built-in | 0.55 | 0.2-0.5 | floor-to-ceiling display
+recessed dimmer switch panel | 0.5 | 0.05-0.1 | wall-mounted controls
+decorative ceiling medallion | 0.45 | 0.05-0.15 | round plaster ornament

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cozy warm interior | 1.0 | - | -
+oven-warmed kitchen air | 0.95 | - | -
+diffused daylight through window | 0.85 | - | -
+calm still indoor air | 0.9 | - | -
+mild interior comfort | 0.85 | - | -
+overcast soft window light | 0.7 | - | -
+sun-streaked through curtains | 0.75 | - | -
+faint cooking aroma in air | 0.85 | - | -
+warm bulb-lit ambient interior | 0.85 | - | -
+even ambient cozy light | 0.85 | - | -

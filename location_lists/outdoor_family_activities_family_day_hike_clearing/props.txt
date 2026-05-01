@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+durable hiking boots laced | 1.0 | 0.1-0.25 | leather rugged trail footwear
+quick-dry hiking pants | 0.85 | 0.2-0.5 | nylon convertible trousers
+moisture-wicking athletic shirt | 0.85 | 0.2-0.5 | breathable synthetic top
+ball cap or wide-brim hat | 0.85 | 0.05-0.15 | sun protection headwear
+adjustable trekking poles | 0.65 | 0.05-0.2 | telescoping walking poles
+hydration backpack with hose | 0.7 | 0.2-0.5 | water-bladder daypack
+neck buff or bandana | 0.6 | 0.05-0.15 | tube fabric neck wrap
+fleece pullover jacket | 0.55 | 0.2-0.5 | warm zip-up layer
+kid's small daypack | 0.65 | 0.1-0.3 | toddler-sized backpack
+bug net hat | 0.45 | 0.05-0.15 | mesh-covered head guard
+compass on lanyard | 0.55 | 0.05-0.1 | navigational tool
+trail-snack zippered pouch | 0.55 | 0.05-0.15 | small carry pouch
+nature journal sketchbook | 0.5 | 0.05-0.15 | spiral-bound notebook
+plant identification card pack | 0.5 | 0.05-0.1 | guide card deck

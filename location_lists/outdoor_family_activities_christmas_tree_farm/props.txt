@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+red plaid earflap hat | 0.85 | 0.05-0.15 | wool flap winter cap
+oversized puffer jacket | 0.85 | 0.1-0.3 | quilted insulated coat
+toddler sled rope dragging | 0.65 | 0.1-0.25 | red plastic snow sled
+wreath being held up | 0.7 | 0.1-0.3 | circular evergreen ring
+strand of LED string lights | 0.55 | 0.05-0.2 | twinkle bulb wire
+holly berry sprig in pocket | 0.45 | 0.05-0.1 | red berry green leaf clip
+folded measuring tape | 0.5 | 0.05-0.1 | retractable yellow ruler
+camera with strap | 0.6 | 0.05-0.15 | DSLR or instant camera
+wagon full of pumpkins leftover | 0.35 | 0.1-0.25 | autumn carryover gourds
+polaroid photo just developed | 0.5 | 0.05-0.1 | square white-bordered print
+felt elf hat on child | 0.5 | 0.05-0.15 | red pointed costume cap
+hand-knit mittens dangling | 0.6 | 0.05-0.15 | yarn finger covers
+festive paper hot drink cup | 0.55 | 0.05-0.15 | seasonal printed cup
+small jar of local honey for sale | 0.4 | 0.05-0.1 | glass farm-store jar

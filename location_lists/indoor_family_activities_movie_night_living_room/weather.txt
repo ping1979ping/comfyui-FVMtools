@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cozy heated interior | 1.0 | - | -
+dimmed warm bulb glow | 0.95 | - | -
+rainy night outside windows | 0.6 | - | -
+calm still air inside | 0.9 | - | -
+soft flickering screen light | 0.95 | - | -
+drawn curtains darkness | 0.85 | - | -
+mild interior climate | 0.85 | - | -
+warm winter night indoors | 0.7 | - | -
+quiet thunderstorm muffled outside | 0.4 | - | -
+even ambient cinema lighting | 0.85 | - | -

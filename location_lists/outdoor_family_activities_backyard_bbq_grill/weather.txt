@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear summer sky | 1.0 | - | -
+warm with light breeze | 0.9 | - | -
+partly cloudy afternoon | 0.75 | - | -
+hazy humid summer day | 0.7 | - | -
+mild evening with high cirrus | 0.65 | - | -
+calm dry warm weather | 0.85 | - | -
+distant thunderhead on horizon | 0.4 | - | -
+soft gusts rustling leaves | 0.6 | - | -
+glowing clear evening | 0.7 | - | -
+warm dry no wind | 0.7 | - | -

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear hot summer sky | 1.0 | - | -
+warm with light breeze | 0.95 | - | -
+hazy humid warm day | 0.9 | - | -
+blazing midday heat | 0.85 | - | -
+partly cloudy warm afternoon | 0.8 | - | -
+calm dry summer weather | 0.85 | - | -
+distant heat shimmer | 0.6 | - | -
+gentle warm breeze | 0.85 | - | -
+puffy clouds passing overhead | 0.7 | - | -
+warm dry sunny afternoon | 0.9 | - | -

@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+closed-off neighborhood block | 1.0 | 0.5-1.0 | barricaded asphalt thoroughfare
+row of suburban porches | 0.85 | 0.4-0.8 | painted residential row
+strung overhead bunting flags | 0.85 | 0.3-0.6 | colorful triangular pennants
+tall maple trees lining street | 0.8 | 0.4-0.8 | broad shade canopy
+distant block barricade saw horses | 0.65 | 0.2-0.5 | striped wooden barriers
+party banner stretched over street | 0.7 | 0.3-0.7 | painted block-party sign
+red brick row houses | 0.55 | 0.4-0.8 | masonry rowhomes
+neighborhood trees in summer leaf | 0.75 | 0.4-0.8 | dense green foliage
+clear sunny block sky | 0.85 | 0.5-1.0 | bright blue overhead
+distant DJ booth setup | 0.55 | 0.2-0.5 | speaker rig and equipment
+balloon arch entry to block | 0.5 | 0.3-0.6 | colorful sphere arch
+neighborhood association sign | 0.45 | 0.1-0.3 | mounted welcome placard
+power line silhouettes overhead | 0.5 | 0.05-0.2 | thin overhead wires

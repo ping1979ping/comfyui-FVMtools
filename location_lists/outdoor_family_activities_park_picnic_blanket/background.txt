@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+wide open public park lawn | 1.0 | 0.6-1.0 | expansive trimmed grass field
+distant playground equipment | 0.7 | 0.3-0.7 | colorful steel play structure
+mature shade tree canopy | 0.85 | 0.5-1.0 | broad layered green leaves
+park pathway curving away | 0.65 | 0.3-0.7 | paved meandering walkway
+duck pond glinting beyond grass | 0.6 | 0.3-0.7 | reflective still water surface
+distant park gazebo pavilion | 0.55 | 0.2-0.5 | wooden hexagonal shelter
+park bench in tree shade | 0.65 | 0.2-0.5 | painted slatted seat
+clusters of other family groups | 0.55 | 0.2-0.5 | distant blanket gatherings
+flowering cherry tree in bloom | 0.55 | 0.3-0.7 | pale pink blossom canopy
+city skyline behind treeline | 0.45 | 0.2-0.5 | distant building silhouette
+park lamppost row | 0.5 | 0.2-0.5 | tall iron lighting standards
+soccer pitch in distance | 0.4 | 0.2-0.5 | green marked field
+clear summer afternoon sky | 0.85 | 0.4-1.0 | bright blue with light cloud

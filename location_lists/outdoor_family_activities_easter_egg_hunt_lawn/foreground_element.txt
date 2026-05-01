@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bright pink plastic egg in hand | 1.0 | 0.05-0.15 | colorful hollow ovoid
+chocolate egg foil-wrapped | 0.85 | 0.05-0.15 | metallic-foil candy
+mini marshmallow chick | 0.65 | 0.05-0.1 | pastel sugar-rolled chick
+jelly bean handful | 0.7 | 0.05-0.1 | colorful sugary beans
+small stuffed bunny toy | 0.65 | 0.05-0.2 | plush rabbit figure
+chocolate bunny in foil | 0.6 | 0.05-0.15 | sculpted candy rabbit
+blue plastic egg cracked open | 0.7 | 0.05-0.15 | sphere split with treats
+yellow basket handle held | 0.85 | 0.1-0.25 | woven grip carrier
+flower crown on hair | 0.55 | 0.05-0.15 | floral headband
+egg-decorating brush | 0.6 | 0.05-0.1 | small dye-applied brush
+hard-boiled egg dyed pink | 0.65 | 0.05-0.1 | dyed real chicken egg
+plastic bunny ear headband | 0.6 | 0.05-0.15 | costume rabbit ears
+spring pastel ribbon | 0.55 | 0.05-0.15 | curling decoration
+finger smudged with dye | 0.5 | 0.05-0.05 | colored fingertip

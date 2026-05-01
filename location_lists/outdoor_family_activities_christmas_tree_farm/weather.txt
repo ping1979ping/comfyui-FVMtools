@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+light powdery snowfall | 0.95 | - | -
+overcast cold winter sky | 1.0 | - | -
+crisp clear cold day | 0.8 | - | -
+flurries drifting in air | 0.75 | - | -
+gentle wind with snow dust | 0.7 | - | -
+heavy snow on ground only | 0.8 | - | -
+fresh snow no wind | 0.7 | - | -
+slushy thaw afternoon | 0.5 | - | -
+icy still winter air | 0.7 | - | -
+breath visibly fogging cold | 0.85 | - | -

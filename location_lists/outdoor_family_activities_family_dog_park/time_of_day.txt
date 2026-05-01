@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-morning park hour | 1.0 | - | -
+late morning dog session | 0.95 | - | -
+early afternoon visit | 0.9 | - | -
+mid-afternoon warm light | 0.85 | - | -
+late afternoon long shadows | 0.85 | - | -
+just before sunset glow | 0.75 | - | -
+post-sunset blue hour | 0.6 | - | -
+weekend morning hour | 0.85 | - | -
+overcast soft daylight | 0.7 | - | -
+golden warm late day | 0.85 | - | -

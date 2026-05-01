@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+cracked egg in measuring cup | 0.85 | 0.05-0.2 | yellow yolk in liquid
+sifted flour cloud on board | 0.85 | 0.1-0.3 | airborne white powder
+wooden spoon in batter | 0.85 | 0.05-0.2 | wood handle in mix
+hand kneading dough ball | 0.85 | 0.1-0.3 | floury hands in soft dough
+silicone spatula scraping bowl | 0.8 | 0.05-0.2 | curved rubber tool
+chocolate chip pile spilled | 0.75 | 0.05-0.2 | dark chip cluster
+butter stick partly unwrapped | 0.7 | 0.05-0.15 | yellow block with paper
+brown sugar packed in cup | 0.7 | 0.05-0.15 | molded amber sugar
+vanilla bottle being poured | 0.65 | 0.05-0.15 | brown liquid stream
+whisk laden with whipped egg | 0.7 | 0.05-0.15 | wire whisk with froth
+recipe card stained with batter | 0.55 | 0.05-0.15 | spotted handwritten card
+oven mitt holding hot pan | 0.7 | 0.1-0.25 | quilted heat-protective glove
+finished frosted cupcake held | 0.75 | 0.05-0.2 | swirled icing topped treat
+sprinkle jar tipping out | 0.7 | 0.05-0.15 | colorful sugar bits cascade

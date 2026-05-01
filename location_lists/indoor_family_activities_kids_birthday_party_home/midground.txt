@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+dining table covered in party tablecloth | 1.0 | 0.4-0.8 | printed disposable cover
+tiered birthday cake centerpiece | 0.95 | 0.2-0.5 | frosted layered confection
+clusters of helium balloons tied to chairs | 0.9 | 0.3-0.7 | floating latex bunch
+party hat stack on table | 0.7 | 0.1-0.3 | conical paper crowns
+gift pile stacked nearby | 0.85 | 0.2-0.5 | wrapped boxes with bows
+cupcake tower on stand | 0.7 | 0.2-0.4 | tiered iced small cakes
+folding chairs around table | 0.7 | 0.3-0.6 | metal-framed seats
+pinata stand area | 0.55 | 0.2-0.4 | open hanging zone
+paper plate stack with napkins | 0.85 | 0.1-0.3 | themed disposable settings
+cooler tub of juice boxes | 0.6 | 0.1-0.3 | iced beverage container
+play area rug with toys | 0.55 | 0.3-0.6 | patterned soft floor cover
+indoor mini soft play structure | 0.4 | 0.3-0.7 | inflatable bouncy castle
+craft activity station table | 0.55 | 0.2-0.5 | crafts and stickers spread

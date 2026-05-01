@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late afternoon family ride | 1.0 | - | -
+early evening cool ride | 0.9 | - | -
+mid-morning weekend ride | 0.85 | - | -
+midday quick spin | 0.65 | - | -
+post-school afternoon ride | 0.85 | - | -
+just before sunset glow | 0.85 | - | -
+post-sunset golden hour | 0.7 | - | -
+soft early-evening shadows | 0.8 | - | -
+weekend morning sun | 0.8 | - | -
+breezy afternoon ride hour | 0.85 | - | -

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+orange and black striped sweater | 0.7 | 0.1-0.3 | seasonal autumn pullover
+witch hat as costume | 0.65 | 0.1-0.25 | pointed black felt hat
+plastic kid skeleton costume top | 0.5 | 0.1-0.3 | bone-printed shirt
+oversized cozy hoodie | 0.7 | 0.1-0.3 | pumpkin-orange pullover
+fingerless cutting gloves | 0.55 | 0.05-0.15 | grip-textured work gloves
+sticker-decorated face | 0.5 | 0.05-0.1 | cheek-pasted halloween motif
+trick-or-treat candy bucket | 0.7 | 0.1-0.25 | plastic pumpkin pail
+glow stick necklace | 0.55 | 0.05-0.15 | luminous tube jewelry
+rubber bat hanging on porch | 0.55 | 0.05-0.15 | dangling spooky bat
+fake cobweb stretched on bush | 0.65 | 0.1-0.3 | stringy stretched fluff
+plastic orange goblet cup | 0.5 | 0.05-0.15 | costume drinkware
+small black cauldron prop | 0.5 | 0.1-0.25 | plastic witch pot
+flannel shirt over costume | 0.65 | 0.1-0.3 | plaid casual layer
+spooky themed apron | 0.5 | 0.1-0.25 | printed bone or ghost apron

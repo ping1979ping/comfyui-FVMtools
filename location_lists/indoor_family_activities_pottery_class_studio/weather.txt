@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm steady studio air | 1.0 | - | -
+diffused window daylight | 0.85 | - | -
+mild interior climate | 0.9 | - | -
+slight kiln warmth in air | 0.7 | - | -
+cool studio basement air | 0.6 | - | -
+fresh breeze through cracked window | 0.55 | - | -
+ambient warm-bulb glow | 0.85 | - | -
+overcast filtered light | 0.7 | - | -
+warm interior workshop air | 0.85 | - | -
+quiet still ceramic studio air | 0.9 | - | -

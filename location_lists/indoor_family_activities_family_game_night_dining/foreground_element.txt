@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dice rolling on board | 1.0 | 0.05-0.15 | tumbling cube projectile
+hand reaching for game piece | 0.85 | 0.05-0.2 | fingers grasping token
+rainbow colored game tokens | 0.85 | 0.05-0.2 | small plastic player markers
+deck of cards being shuffled | 0.7 | 0.05-0.15 | card stream blur
+chess piece in mid-move | 0.55 | 0.05-0.15 | wooden carved figure
+score pad with handwritten tally | 0.8 | 0.05-0.15 | filled scorecard sheet
+sharpened pencil rolling | 0.65 | 0.05-0.1 | wooden writing tool
+small bowl of mixed nuts | 0.7 | 0.05-0.15 | snack container
+glass of soda fizzing | 0.7 | 0.05-0.15 | bubbly clear drink
+chocolate covered candy bowl | 0.6 | 0.05-0.15 | wrapped sweets bowl
+poker chip stack tipped | 0.5 | 0.05-0.15 | colorful cylindrical chips
+dictionary open for word check | 0.55 | 0.05-0.2 | reference book pages
+playing card flipped face up | 0.7 | 0.05-0.15 | revealed card image
+small wooden tile with letter | 0.65 | 0.05-0.1 | single Scrabble piece

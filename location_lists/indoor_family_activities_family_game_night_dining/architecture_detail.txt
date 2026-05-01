@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+dining room ceiling chandelier | 0.7 | 0.05-0.2 | hanging multi-bulb fixture
+crown molding above wall | 0.6 | 0.05-0.15 | painted decorative trim
+dining buffet hutch corner | 0.6 | 0.1-0.3 | wooden cabinet edge
+window with sash trim | 0.6 | 0.1-0.3 | framed pane window
+wainscoting wall trim | 0.55 | 0.1-0.3 | painted plank lower wall
+arched dining doorway | 0.45 | 0.1-0.3 | curved wall opening
+baseboards along walls | 0.55 | 0.05-0.15 | painted floor trim
+ornate dimmer switch plate | 0.5 | 0.05-0.1 | wall-mounted controls
+ceiling medallion ornament | 0.45 | 0.05-0.15 | round plaster decoration
+electrical outlet on wall | 0.45 | 0.05-0.1 | socket cover
+hardwood-look wood floor visible | 0.6 | 0.1-0.3 | natural plank flooring
+recessed lighting fixture corner | 0.45 | 0.05-0.15 | ceiling can light

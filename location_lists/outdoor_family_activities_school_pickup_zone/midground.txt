@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+yellow school bus at curb | 1.0 | 0.3-0.7 | iconic painted bus
+parent SUVs in pickup line | 0.85 | 0.4-0.8 | queued waiting vehicles
+crosswalk striped paint | 0.85 | 0.3-0.6 | painted street zebra
+sidewalk along school front | 0.9 | 0.3-0.7 | concrete pedestrian path
+parent loop drive curve | 0.8 | 0.4-0.8 | curving school driveway
+crossing guard standing post | 0.55 | 0.1-0.3 | reflective vest figure
+benches outside school doors | 0.6 | 0.2-0.5 | painted slatted seats
+backpack pile on ground | 0.55 | 0.1-0.3 | stacked colorful schoolbags
+clusters of kids leaving school | 0.75 | 0.3-0.6 | walking child group blur
+school pickup numbered signs | 0.5 | 0.2-0.5 | printed parent placards
+school bike rack with bikes | 0.55 | 0.2-0.5 | metal hooped rack
+traffic cones in pickup zone | 0.5 | 0.1-0.3 | orange road markers
+metal handrail along walk | 0.55 | 0.2-0.5 | painted pipe rail
+white painted curb edge | 0.6 | 0.2-0.5 | painted boundary line

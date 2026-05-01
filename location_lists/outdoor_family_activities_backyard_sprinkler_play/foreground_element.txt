@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+water droplets mid-air spray | 1.0 | 0.1-0.3 | suspended water beads
+soaked kid swimsuit | 0.85 | 0.1-0.3 | wet bright bathing suit
+plastic squirt water gun | 0.7 | 0.05-0.2 | colorful pump water shooter
+water balloon poised in hand | 0.65 | 0.05-0.15 | filled colorful balloon
+popsicle dripping melt | 0.85 | 0.05-0.15 | colorful frozen treat
+beach towel wrapped around shoulders | 0.7 | 0.1-0.3 | striped damp terry towel
+small bucket of water | 0.65 | 0.05-0.2 | plastic water-toting pail
+sopping wet kid hair | 0.75 | 0.1-0.25 | flat wet strands
+goggles on head | 0.55 | 0.05-0.1 | rubber-strapped swim goggles
+big cup of lemonade with straw | 0.6 | 0.05-0.15 | cold drink cup
+sticky popsicle juice on hand | 0.6 | 0.05-0.1 | red drip stain
+dripping garden hose nozzle | 0.7 | 0.05-0.15 | spray-end hose attachment
+flip-flop sandals on grass | 0.55 | 0.05-0.1 | rubber thong footwear
+pruney wet fingers | 0.55 | 0.05-0.1 | wrinkled water-soaked skin

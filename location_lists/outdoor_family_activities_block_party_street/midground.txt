@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long folding banquet tables in street | 1.0 | 0.4-0.8 | end-to-end potluck table
+folding chair clusters | 0.85 | 0.3-0.6 | banquet seating
+neighborhood potluck spread | 0.95 | 0.3-0.6 | varied dish array
+DJ table with speakers | 0.65 | 0.2-0.5 | music gear setup
+giant inflatable bouncy castle | 0.6 | 0.3-0.7 | air-filled play structure
+face painting station | 0.6 | 0.2-0.5 | small painter table with mirrors
+chalk-drawn hopscotch on street | 0.7 | 0.2-0.5 | colorful drawn pavement game
+food truck pulled up at curb | 0.55 | 0.3-0.7 | stationary vendor truck
+fire engine open house display | 0.4 | 0.3-0.7 | parked red engine showcase
+big galvanized drink tub iced | 0.7 | 0.1-0.3 | huge ice-filled drinks tub
+charcoal grill smoking nearby | 0.7 | 0.2-0.5 | grill puffing smoke
+folding lawn games stations | 0.6 | 0.2-0.5 | cornhole and ladder ball
+oversized lawn chess set | 0.5 | 0.2-0.5 | giant playable pieces
+strung block-wide twinkle lights | 0.65 | 0.2-0.5 | warm bulb cafe strands

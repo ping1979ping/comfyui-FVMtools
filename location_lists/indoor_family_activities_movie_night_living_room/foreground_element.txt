@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+big bowl of fluffy popcorn | 1.0 | 0.1-0.3 | mounded buttery popped corn
+remote control held in hand | 0.85 | 0.05-0.15 | black plastic device
+glass of soda with ice | 0.75 | 0.05-0.15 | dark bubbly cold drink
+candy box of theater chocolates | 0.7 | 0.05-0.15 | branded box of sweets
+mug of hot cocoa | 0.7 | 0.05-0.15 | ceramic mug with marshmallows
+bowl of mixed candy | 0.65 | 0.05-0.2 | colorful sweets spread
+pizza slice on plate | 0.6 | 0.05-0.2 | cheese-topped pie wedge
+nacho chips in bowl with cheese | 0.55 | 0.05-0.2 | tortilla chips with melted topping
+plush throw pillow hugged | 0.7 | 0.1-0.25 | soft cushion clutched
+dimmed lamp warm light | 0.6 | 0.05-0.15 | low-wattage bulb glow
+pet curled on lap | 0.5 | 0.1-0.25 | soft napping cat or dog
+movie ticket stub on table | 0.4 | 0.05-0.1 | torn printed paper slip
+reading glasses perched low | 0.55 | 0.05-0.1 | folded vision frames
+fuzzy slipper feet on rug | 0.6 | 0.1-0.25 | plush warm footwear

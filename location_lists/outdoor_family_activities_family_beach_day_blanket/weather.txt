@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny ocean weather | 1.0 | - | -
+warm with strong sea breeze | 0.95 | - | -
+hot humid summer haze | 0.85 | - | -
+partly cloudy passing puffs | 0.75 | - | -
+gusty coastal wind | 0.6 | - | -
+mild gentle breeze | 0.85 | - | -
+post-storm clearing sky | 0.5 | - | -
+distant heat shimmer | 0.5 | - | -
+salt spray on air | 0.7 | - | -
+warm dry pleasant conditions | 0.9 | - | -

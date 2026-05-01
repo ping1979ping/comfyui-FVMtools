@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bicycle helmet strapped on head | 1.0 | 0.1-0.25 | foam-padded protective helmet
+bike handlebar with grip | 0.9 | 0.1-0.25 | rubber grip with control levers
+bicycle bell ring | 0.7 | 0.05-0.1 | small chrome alert bell
+front bike basket with treats | 0.7 | 0.1-0.25 | woven basket on handlebars
+water bottle in cage | 0.7 | 0.05-0.15 | plastic squeeze bottle
+gloved hand on grip | 0.55 | 0.05-0.15 | padded cycling glove
+streamlined kid water bottle | 0.55 | 0.05-0.15 | cartoon-printed bottle
+bike speedometer dial | 0.45 | 0.05-0.1 | small mounted gauge
+chain ring with grease | 0.55 | 0.05-0.15 | metal cog chain link
+spoke reflector glinting | 0.6 | 0.05-0.1 | small disc reflectors
+bike pedal under foot | 0.7 | 0.05-0.15 | grippy pedal platform
+flag on tall fiber pole | 0.5 | 0.05-0.2 | high-vis kid bike flag
+sunglasses on rider face | 0.65 | 0.05-0.15 | tinted shade glasses
+freezer pop in hand | 0.45 | 0.05-0.15 | tubular plastic ice treat

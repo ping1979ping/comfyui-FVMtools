@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue school day sky | 0.95 | - | -
+partly cloudy mild day | 0.85 | - | -
+crisp cool autumn weather | 0.8 | - | -
+overcast neutral school day | 0.75 | - | -
+light rain with umbrellas | 0.55 | - | -
+warm spring afternoon | 0.7 | - | -
+cold winter pickup with snow | 0.5 | - | -
+breezy fall school day | 0.7 | - | -
+hot end-of-school summer | 0.5 | - | -
+calm dry mild conditions | 0.85 | - | -

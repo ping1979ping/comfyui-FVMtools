@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+backyard sliding glass door | 0.8 | 0.1-0.3 | aluminum framed glass panel
+wooden deck railing balusters | 0.75 | 0.1-0.3 | vertical painted spindles
+patio paver edge transition | 0.7 | 0.1-0.3 | stone-to-grass border line
+exterior outlet on house wall | 0.5 | 0.05-0.15 | weatherproof socket cover
+rain gutter downspout corner | 0.6 | 0.05-0.2 | painted metal drainage tube
+exterior porch ceiling fan | 0.45 | 0.05-0.2 | mounted blade fixture
+attached pergola crossbeams | 0.55 | 0.1-0.3 | parallel timber rafters
+garden hose reel on wall | 0.5 | 0.05-0.2 | wound rubber tubing spool
+backyard gate latch hardware | 0.5 | 0.05-0.15 | metal lever fastener
+outdoor wall sconce light | 0.55 | 0.05-0.15 | lantern style fixture
+deck post cap detail | 0.5 | 0.05-0.15 | pyramid topped wooden cap
+brick chimney seen above roof | 0.4 | 0.05-0.2 | red masonry stack

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late morning winter light | 1.0 | - | -
+midday overcast brightness | 0.85 | - | -
+early afternoon soft sun | 0.9 | - | -
+late afternoon golden hour | 0.85 | - | -
+just before dusk pink sky | 0.7 | - | -
+gray flat winter daylight | 0.8 | - | -
+post-sunset cold blue hour | 0.55 | - | -
+mid-morning frosty sun | 0.7 | - | -
+dim early evening with lights | 0.6 | - | -
+crisp full daylight | 0.75 | - | -

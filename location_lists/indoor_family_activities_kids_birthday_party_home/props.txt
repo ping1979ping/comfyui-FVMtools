@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+themed party hat with elastic | 0.95 | 0.05-0.15 | colorful conical crown
+paper streamer ribbon strand | 0.85 | 0.1-0.3 | crepe twisted strand
+party blower noisemaker | 0.85 | 0.05-0.15 | rolling paper tube horn
+toddler sippy cup | 0.65 | 0.05-0.15 | spill-proof drink cup
+goody bag party favor | 0.85 | 0.1-0.25 | filled small gift sack
+plush toy gift unwrapped | 0.65 | 0.1-0.25 | soft stuffed animal
+rolled gift wrap remnant | 0.7 | 0.05-0.15 | torn paper scrap
+greeting card open with handwriting | 0.7 | 0.05-0.15 | folded illustrated card
+craft sticker sheet | 0.6 | 0.05-0.15 | peeling cartoon stickers
+glitter glue tube | 0.55 | 0.05-0.1 | sparkly art supply
+stuffed mascot character | 0.55 | 0.1-0.25 | themed plush figure
+themed paper napkin | 0.7 | 0.05-0.15 | printed disposable napkin
+disposable camera novelty | 0.5 | 0.05-0.1 | plastic single-use camera
+balloon dog twist sculpture | 0.6 | 0.05-0.15 | shaped latex animal art

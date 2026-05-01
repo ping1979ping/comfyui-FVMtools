@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+curb concrete edge | 0.7 | 0.05-0.2 | poured edge of street
+storm drain grate at curb | 0.55 | 0.05-0.15 | metal sewer cover
+fire hydrant on corner | 0.6 | 0.05-0.15 | red painted utility post
+streetlight with banner pole | 0.6 | 0.1-0.3 | mounted residential pole
+manhole cover | 0.5 | 0.05-0.15 | round metal disc
+neighborhood mailbox | 0.55 | 0.05-0.15 | painted box on post
+porch column close-up | 0.55 | 0.1-0.3 | painted square pillar
+sidewalk seam line | 0.55 | 0.1-0.25 | concrete expansion joint
+crosswalk striped paint | 0.55 | 0.1-0.3 | painted street zebra
+signpost no parking placard | 0.5 | 0.05-0.15 | mounted street sign
+brick steps to porch | 0.55 | 0.1-0.3 | masonry stoop
+wooden saw-horse barricade | 0.55 | 0.1-0.3 | striped traffic barrier

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-afternoon party hour | 1.0 | - | -
+late afternoon with warm window light | 0.9 | - | -
+early evening lit interior | 0.8 | - | -
+midday with daylight pouring in | 0.7 | - | -
+post-cake dusk lighting | 0.65 | - | -
+overhead lamp lit room | 0.85 | - | -
+soft late morning light | 0.6 | - | -
+evening with candles on cake | 0.85 | - | -
+dimmed lights for cake moment | 0.85 | - | -
+warm interior bulb glow | 0.9 | - | -

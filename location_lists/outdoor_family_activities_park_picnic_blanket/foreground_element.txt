@@ -1,0 +1,16 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bunch of green grapes on plate | 0.85 | 0.05-0.2 | translucent fruit cluster
+sliced baguette in basket | 0.8 | 0.05-0.2 | crusty round-cut bread
+glass bottle of sparkling water | 0.65 | 0.05-0.2 | beaded clear bottle
+mason jar of lemonade | 0.7 | 0.05-0.2 | clear glass with lemon slice
+ripe strawberries in bowl | 0.8 | 0.05-0.2 | red berry cluster
+brie wheel with knife | 0.6 | 0.05-0.15 | soft white-rind cheese round
+plastic cup of fruit punch | 0.6 | 0.05-0.15 | colorful drink cup
+sandwich on parchment paper | 0.75 | 0.05-0.2 | wrapped sliced loaf bite
+small wildflower bouquet | 0.6 | 0.05-0.15 | hand-picked daisy bunch
+open paperback novel | 0.55 | 0.05-0.15 | folded page paper book
+plastic salad serving fork | 0.6 | 0.05-0.1 | utensil with greens
+napkin folded on plate | 0.65 | 0.05-0.15 | cloth or paper square
+chocolate chip cookie pile | 0.7 | 0.05-0.15 | golden round baked treats

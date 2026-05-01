@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+expansive grandparents' country lawn | 1.0 | 0.6-1.0 | broad green sloping field
+white tent canopy stretched wide | 0.85 | 0.4-0.8 | rented event canopy fabric
+old farmhouse in background | 0.8 | 0.4-0.8 | painted clapboard two-story home
+distant orchard fruit trees | 0.6 | 0.3-0.7 | rounded green tree row
+gravel rural driveway curve | 0.55 | 0.3-0.6 | crushed stone vehicle path
+stone garden wall along edge | 0.55 | 0.3-0.6 | stacked field stone border
+mature shade tree cluster | 0.85 | 0.4-0.9 | broad sheltering oak crowns
+wildflower meadow at margins | 0.6 | 0.3-0.7 | patchy tall grass blooms
+clear midday country sky | 0.8 | 0.5-1.0 | open bright blue with cloud
+neighboring pasture with cows | 0.45 | 0.3-0.6 | grazing livestock field
+swing set in distance | 0.5 | 0.2-0.5 | metal frame play structure
+white wooden gazebo across lawn | 0.55 | 0.3-0.6 | painted hex shelter
+rural fence line of split rails | 0.55 | 0.3-0.6 | weathered horizontal rails

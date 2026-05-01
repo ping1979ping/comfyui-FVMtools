@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+striped beach blanket spread on sand | 1.0 | 0.4-0.8 | colorful cotton ground spread
+large beach umbrella canopy | 0.9 | 0.3-0.7 | tilted shade umbrella
+cooler chest with iced drinks | 0.85 | 0.2-0.5 | molded plastic ice chest
+sand castle in progress | 0.75 | 0.2-0.5 | moulded sand turret structure
+folding low beach chairs | 0.85 | 0.3-0.6 | sling fabric short chairs
+beach bag with towels | 0.85 | 0.2-0.4 | woven tote with bunched cloth
+inflatable float donut | 0.65 | 0.2-0.5 | round vinyl water tube
+beach paddleball set | 0.55 | 0.1-0.3 | wooden paddle game gear
+boogie board leaning on chair | 0.55 | 0.2-0.4 | foam ride-the-wave board
+shovel and bucket in sand | 0.75 | 0.1-0.25 | colorful kid sand toys
+shade-tent half-pop-up cabana | 0.55 | 0.3-0.6 | small fabric beach shelter
+red lifeguard tower distant | 0.4 | 0.1-0.3 | painted wooden seat platform
+beach volleyball net | 0.4 | 0.2-0.5 | strung sand court mesh
+patterned beach sarong drying | 0.55 | 0.1-0.3 | hung wrap fabric

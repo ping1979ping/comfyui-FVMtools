@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+bright lush summer lawn | 1.0 | 0.6-1.0 | thick green emerald grass
+backyard wooden privacy fence | 0.85 | 0.4-0.8 | tall vertical board barrier
+suburban back of house | 0.7 | 0.4-0.8 | painted clapboard exterior
+flowering hedge along property | 0.6 | 0.3-0.7 | clustered green shrub row
+mature backyard maple trees | 0.75 | 0.4-0.9 | broad leafy canopy
+distant garden shed | 0.55 | 0.2-0.5 | painted small outbuilding
+clear bright summer sky | 0.95 | 0.4-1.0 | open blue overhead
+swing set at far end | 0.5 | 0.2-0.5 | metal frame play structure
+neighbor's house roofline | 0.55 | 0.3-0.6 | distant gable silhouette
+rose bush in bloom | 0.55 | 0.3-0.6 | red flowering shrub
+trampoline silhouette beyond | 0.5 | 0.2-0.5 | round bouncing structure
+back porch with screen door | 0.6 | 0.3-0.6 | painted veranda back of house
+hanging porch flower basket | 0.5 | 0.2-0.5 | spilled bloom basket

@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+electric pottery wheel station | 1.0 | 0.3-0.6 | spinning metal wheel head
+wedging table with slab of clay | 0.85 | 0.3-0.6 | timber prep surface with clay
+ceramic kiln at far end | 0.6 | 0.2-0.5 | metal-clad firing chamber
+slab roller machine | 0.55 | 0.2-0.4 | flat-pressing canvas roller
+turntable banding wheel | 0.7 | 0.1-0.3 | small rotating metal disc
+shared communal worktable | 0.85 | 0.3-0.6 | group plywood table
+stool seating around wheels | 0.75 | 0.2-0.5 | wooden student stools
+plastic bucket of water at wheel | 0.85 | 0.1-0.3 | sloshing tool-rinse bucket
+plaster bat on wheelhead | 0.7 | 0.1-0.25 | chalky disc support
+mound of wedged clay block | 0.85 | 0.1-0.3 | grey moist clay heap
+drying board with class pots | 0.7 | 0.3-0.6 | stained plank with vessels
+glaze dipping bucket lineup | 0.6 | 0.2-0.4 | tubs of colored glaze slip
+spray glaze fume hood | 0.4 | 0.2-0.5 | metal canopy ventilation
+clay extruder mounted | 0.5 | 0.1-0.3 | hand-crank shape extruder

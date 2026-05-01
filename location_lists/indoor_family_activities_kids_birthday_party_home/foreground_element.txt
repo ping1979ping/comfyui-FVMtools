@@ -1,0 +1,16 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+candle flames on cake top | 1.0 | 0.05-0.2 | flickering wax flame row
+slice of cake on plate | 0.85 | 0.1-0.25 | layered frosted wedge
+small hand reaching for cupcake | 0.75 | 0.1-0.25 | child fingers grabbing treat
+juice box with straw | 0.85 | 0.05-0.15 | cardboard drink with attached tube
+party noisemaker horn | 0.7 | 0.05-0.15 | rolled paper blower
+confetti mid-toss in air | 0.7 | 0.1-0.3 | scattered colorful paper bits
+single helium balloon close up | 0.65 | 0.1-0.25 | shiny inflated sphere
+ribbon of present being unwrapped | 0.65 | 0.05-0.15 | torn glossy gift wrap
+gift bow on box top | 0.7 | 0.05-0.15 | curled ribbon decoration
+icing covered finger | 0.7 | 0.05-0.15 | sugary smear on hand
+plastic party fork | 0.6 | 0.05-0.1 | small disposable utensil
+gummy candy handful | 0.6 | 0.05-0.15 | colorful chewy sweets
+sparkler candle lit on cake | 0.65 | 0.05-0.2 | bright sparking firework wick

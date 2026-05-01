@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning baking light | 0.85 | - | -
+mid-morning kitchen warmth | 1.0 | - | -
+late morning sunlit prep | 0.95 | - | -
+midday bright kitchen | 0.85 | - | -
+early afternoon baking session | 0.85 | - | -
+mid-afternoon golden warmth | 0.8 | - | -
+late afternoon waning daylight | 0.7 | - | -
+evening with overhead lights | 0.7 | - | -
+soft cloudy morning light | 0.7 | - | -
+warm glowing kitchen at dusk | 0.6 | - | -

@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+large rectangular dining table | 1.0 | 0.4-0.8 | dark wood tabletop
+upholstered dining chairs around | 0.85 | 0.3-0.6 | seated cushioned chairs
+board game laid out flat | 1.0 | 0.3-0.7 | unfolded printed game board
+neat stack of board game boxes | 0.85 | 0.2-0.5 | piled cardboard game boxes
+tray of snacks centered | 0.85 | 0.2-0.5 | platter of munchies
+playing card deck spread | 0.75 | 0.1-0.3 | scattered face-up cards
+wine glass and pitcher | 0.55 | 0.05-0.2 | adult drinkware
+ice bucket with bottle | 0.5 | 0.05-0.2 | chilled drink container
+party-sized chip bowl | 0.7 | 0.1-0.3 | wide ceramic bowl
+score sheet pad and pencil | 0.85 | 0.05-0.2 | gridded notepad
+dice cup with dice | 0.7 | 0.05-0.15 | leather cup of cubes
+timer hourglass on table | 0.55 | 0.05-0.15 | sand-running timer
+dining table runner cloth | 0.65 | 0.2-0.5 | woven decorative strip
+folded napkin under place setting | 0.6 | 0.05-0.15 | cloth napkin square

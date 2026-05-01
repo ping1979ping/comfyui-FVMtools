@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+post-dinner game start | 1.0 | - | -
+early evening warm hour | 0.95 | - | -
+mid-evening lively peak | 0.95 | - | -
+late evening continued play | 0.85 | - | -
+weekend afternoon games | 0.8 | - | -
+overhead lamp lit room | 0.95 | - | -
+post-dessert game time | 0.85 | - | -
+night time dimmed table | 0.85 | - | -
+pre-bed game wind-down | 0.65 | - | -
+warm bulb-lit interior | 0.9 | - | -

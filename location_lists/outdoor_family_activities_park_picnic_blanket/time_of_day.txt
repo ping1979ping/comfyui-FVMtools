@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late morning bright sun | 0.85 | - | -
+midday warm overhead light | 0.9 | - | -
+early afternoon dappled shade | 1.0 | - | -
+mid-afternoon golden warmth | 0.95 | - | -
+late afternoon long shadows | 0.85 | - | -
+just before sunset glow | 0.7 | - | -
+soft cloudy daylight | 0.75 | - | -
+warm evening before dusk | 0.7 | - | -
+gentle hazy summer noon | 0.75 | - | -
+breezy mid-morning sun | 0.7 | - | -

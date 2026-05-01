@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted white picket fence | 0.7 | 0.1-0.3 | slat fence boundary
+cobblestone path edge | 0.55 | 0.1-0.3 | rounded stone walking border
+white wood arbor archway | 0.6 | 0.1-0.3 | curved entry trellis
+gazebo column close-up | 0.55 | 0.1-0.3 | painted hexagon post
+painted yard ornament rabbit | 0.5 | 0.05-0.15 | concrete bunny statue
+flower bed brick edge | 0.55 | 0.05-0.15 | masonry garden border
+hand-painted hunt welcome sign | 0.65 | 0.1-0.25 | folksy hand-lettered placard
+metal weather vane silhouette | 0.4 | 0.05-0.15 | rooster iron arrow
+exterior porch wreath | 0.55 | 0.05-0.15 | spring floral door wreath
+garden gnome figurine | 0.45 | 0.05-0.1 | small ornamental statue
+garden bench wooden slats | 0.55 | 0.1-0.3 | painted plank seat
+hose bib spigot on wall | 0.4 | 0.05-0.1 | mounted faucet

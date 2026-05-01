@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rolling hills of evergreen tree rows | 1.0 | 0.6-1.0 | uniform conifer corduroy pattern
+distant red barn farm structure | 0.85 | 0.4-0.8 | weathered painted clapboard
+snow-dusted pine plantation rows | 0.75 | 0.5-1.0 | frosted needle expanse
+gray winter overcast sky | 0.85 | 0.5-1.0 | flat soft luminous cloud cover
+wooden split rail farm fence line | 0.7 | 0.4-0.8 | rustic horizontal log rails
+distant farmhouse with chimney smoke | 0.7 | 0.4-0.8 | painted gable with rising plume
+bare hardwood tree silhouettes beyond | 0.65 | 0.4-0.8 | leafless branching framework
+field of cut tree stumps | 0.55 | 0.3-0.7 | scattered low timber rounds
+snow-covered open meadow | 0.6 | 0.4-0.8 | smooth white ground sheet
+distant rolling Pennsylvania hills | 0.7 | 0.4-0.8 | layered grayed slope
+trimmed Fraser fir trees in rows | 0.85 | 0.5-1.0 | conical green shaped trees
+patchy snow on muddy farm path | 0.5 | 0.3-0.7 | mixed brown-white ground
+red sleigh ride trail markers | 0.4 | 0.2-0.5 | painted distance posts

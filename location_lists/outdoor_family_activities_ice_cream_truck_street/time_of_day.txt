@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-afternoon hot summer | 1.0 | - | -
+late afternoon warm light | 0.95 | - | -
+early evening cooling hour | 0.85 | - | -
+midday peak sun | 0.85 | - | -
+just before sunset glow | 0.75 | - | -
+post-school afternoon hour | 0.85 | - | -
+weekend mid-afternoon | 0.85 | - | -
+hazy summer noon | 0.7 | - | -
+golden warm late day | 0.85 | - | -
+warm early evening | 0.7 | - | -

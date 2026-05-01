@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+backyard sliding glass door | 0.7 | 0.1-0.3 | aluminum framed glass slider
+exterior wall hose spigot | 0.6 | 0.05-0.15 | mounted faucet bib
+wooden deck railing | 0.65 | 0.1-0.3 | painted plank handrail
+back porch step | 0.6 | 0.1-0.25 | painted wooden tread
+gutter downspout corner | 0.5 | 0.05-0.15 | metal drainage tube
+exterior outlet weatherproof | 0.5 | 0.05-0.15 | covered wall socket
+back door screen panel | 0.55 | 0.1-0.3 | meshed swinging door
+gable roof overhang | 0.5 | 0.1-0.3 | shingled roof edge
+backyard patio paver edge | 0.55 | 0.1-0.3 | stone-to-grass border
+painted shed door close-up | 0.4 | 0.05-0.2 | colored utility door
+backyard gate latch | 0.45 | 0.05-0.1 | metal closure
+wall-mounted hose reel | 0.5 | 0.05-0.2 | wound hose spool

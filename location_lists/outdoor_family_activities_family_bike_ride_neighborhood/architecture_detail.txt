@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+residential house front porch | 0.7 | 0.1-0.3 | covered front entry stoop
+mailbox at end of driveway | 0.65 | 0.05-0.2 | painted post box
+fire hydrant on corner | 0.55 | 0.05-0.15 | red painted utility post
+streetlight standard pole | 0.6 | 0.1-0.3 | mounted residential lamp
+storm drain grate curbside | 0.5 | 0.05-0.15 | metal sewer cover
+stop sign mounted | 0.6 | 0.05-0.15 | red octagon sign
+crosswalk countdown signal | 0.45 | 0.05-0.15 | pedestrian indicator
+neighborhood entrance monument sign | 0.5 | 0.1-0.3 | brick subdivision marker
+white painted picket gate | 0.55 | 0.1-0.3 | yard entry gate
+brick front retaining wall | 0.5 | 0.1-0.25 | low garden masonry edge
+garden gnome in flower bed | 0.4 | 0.05-0.1 | small ornamental figurine
+porch ceiling fan slow turn | 0.4 | 0.05-0.15 | overhead blade fixture

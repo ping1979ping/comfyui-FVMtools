@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+bright spring grass lawn | 1.0 | 0.6-1.0 | tender green new grass
+flowering pink dogwood trees | 0.85 | 0.4-0.8 | white-pink flower bract canopy
+spring tulip bed colorful | 0.75 | 0.3-0.6 | rows of pink-yellow blooms
+suburban church or community lawn | 0.6 | 0.4-0.8 | painted clapboard public building
+rolling lawn slope with daffodils | 0.7 | 0.4-0.8 | yellow flower carpet
+white painted gazebo nearby | 0.55 | 0.3-0.6 | hexagonal painted shelter
+forsythia bush yellow blooms | 0.65 | 0.3-0.6 | golden flowering shrub
+pastel painted house exterior | 0.55 | 0.4-0.8 | painted clapboard color
+flower-filled garden border | 0.65 | 0.3-0.7 | mixed pastel blooms
+clear soft spring sky | 0.85 | 0.5-1.0 | pale washed blue
+white wooden swing set | 0.5 | 0.2-0.5 | painted family swing
+neighbor's flowering hedge | 0.55 | 0.3-0.6 | bright shrub border
+distant playground edge | 0.45 | 0.2-0.5 | colorful equipment

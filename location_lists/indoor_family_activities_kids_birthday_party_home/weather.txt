@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cozy interior warmth | 1.0 | - | -
+bright daylight through windows | 0.85 | - | -
+softly diffused natural light | 0.8 | - | -
+calm still indoor air | 0.95 | - | -
+warm bulb-lit ambient room | 0.9 | - | -
+cool air conditioned interior | 0.65 | - | -
+mild draft from open window | 0.5 | - | -
+even ambient light | 0.85 | - | -
+festive bright atmosphere | 0.9 | - | -
+indoor calm climate | 0.85 | - | -

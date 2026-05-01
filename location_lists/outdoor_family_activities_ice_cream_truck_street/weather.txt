@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear hot summer day | 1.0 | - | -
+warm humid haze | 0.9 | - | -
+sunny dry warmth | 0.95 | - | -
+partly cloudy mild | 0.75 | - | -
+gentle warm breeze | 0.85 | - | -
+heat shimmer above pavement | 0.7 | - | -
+calm dry summer air | 0.85 | - | -
+hazy still afternoon | 0.7 | - | -
+warm dry no wind | 0.8 | - | -
+soft passing puff cloud | 0.65 | - | -

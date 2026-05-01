@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+front porch column post | 0.85 | 0.1-0.3 | painted square pillar
+porch handrail with balusters | 0.75 | 0.1-0.3 | spindle railing
+porch ceiling fan light fixture | 0.5 | 0.05-0.15 | mounted overhead fan
+front door brass knocker | 0.5 | 0.05-0.1 | metal door fixture
+house number on siding | 0.55 | 0.05-0.1 | mounted address digits
+gable roofline above porch | 0.6 | 0.1-0.3 | triangular eaves edge
+porch step concrete edge | 0.7 | 0.1-0.3 | poured stoop level
+mailbox slot in door | 0.4 | 0.05-0.1 | bronze envelope drop
+exterior porch sconce light | 0.6 | 0.05-0.15 | mounted carriage lantern
+shutter beside front door | 0.55 | 0.1-0.25 | wooden window frame
+weathered welcome plaque | 0.5 | 0.05-0.15 | painted hung sign
+porch screen door silhouette | 0.5 | 0.1-0.3 | meshed swinging door

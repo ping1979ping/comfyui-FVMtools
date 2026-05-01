@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+sandy plastic sand-castle bucket | 0.85 | 0.05-0.2 | colorful pail with sand
+sandy small shovel | 0.85 | 0.05-0.15 | plastic kid digging tool
+seashell collection in palm | 0.75 | 0.05-0.15 | gathered varied shells
+ice pop melting in hand | 0.7 | 0.05-0.15 | dripping frozen treat
+sandwich on parchment | 0.65 | 0.05-0.2 | wrapped sliced lunch
+sliced watermelon wedge | 0.7 | 0.05-0.2 | pink fruit triangle
+sunscreen squeeze bottle | 0.7 | 0.05-0.15 | white plastic SPF tube
+sunglasses on towel edge | 0.65 | 0.05-0.1 | folded shaded eyewear
+floppy sun hat brim | 0.7 | 0.1-0.25 | wide woven shading hat
+goggles around neck | 0.55 | 0.05-0.1 | rubber-strapped swim goggles
+beach ball mid-bounce | 0.55 | 0.1-0.25 | colorful inflated sphere
+sandy bare feet | 0.7 | 0.05-0.2 | sand-coated toes
+cold drink can with droplets | 0.6 | 0.05-0.15 | beaded aluminum beverage
+half-eaten popsicle | 0.55 | 0.05-0.15 | colorful frozen stick

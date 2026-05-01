@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+sun-dappled woodland clearing | 1.0 | 0.5-1.0 | grass meadow with broken light
+deciduous tree cluster surrounding | 0.95 | 0.5-1.0 | broad leafy framing canopy
+distant rolling green hills | 0.7 | 0.4-0.8 | layered slope silhouette
+wildflower meadow patch | 0.7 | 0.3-0.7 | scattered bloom field
+mossy fallen log along edge | 0.6 | 0.2-0.5 | weathered downed timber
+rocky outcrop visible | 0.55 | 0.2-0.5 | layered grey stone face
+distant lake glinting | 0.5 | 0.2-0.5 | reflective water glimpse
+sun-flecked grass meadow floor | 0.85 | 0.5-1.0 | dappled green ground cover
+clear blue sky beyond canopy | 0.85 | 0.4-1.0 | open overhead sky
+fern-bordered clearing edges | 0.55 | 0.3-0.6 | feathery green undergrowth
+quiet bird perched on branch | 0.45 | 0.05-0.15 | small distant bird
+butterfly fluttering through | 0.5 | 0.05-0.1 | yellow swallowtail
+distant blue ridge profile | 0.55 | 0.3-0.6 | hazy distant slope

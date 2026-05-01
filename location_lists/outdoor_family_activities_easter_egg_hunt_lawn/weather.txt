@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright spring day | 1.0 | - | -
+mild warm spring sun | 0.95 | - | -
+partly cloudy gentle day | 0.85 | - | -
+soft puffy clouds passing | 0.8 | - | -
+post-rain crisp clear sky | 0.6 | - | -
+gentle spring breeze | 0.85 | - | -
+overcast soft spring sky | 0.65 | - | -
+calm dry pleasant air | 0.9 | - | -
+mild morning chill | 0.55 | - | -
+warm spring afternoon | 0.85 | - | -

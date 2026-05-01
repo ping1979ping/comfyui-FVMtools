@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late afternoon golden light | 1.0 | - | -
+early evening warm sun | 0.9 | - | -
+midday bright overhead sun | 0.7 | - | -
+just before sunset glow | 0.85 | - | -
+post-sunset blue hour | 0.6 | - | -
+dusk with bistro lights on | 0.7 | - | -
+mid-morning sunlit patio | 0.5 | - | -
+hazy summer afternoon | 0.65 | - | -
+soft early-evening shadow | 0.7 | - | -
+twilight backyard ambience | 0.55 | - | -

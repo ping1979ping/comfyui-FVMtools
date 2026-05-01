@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue summer sky | 1.0 | - | -
+warm dry pleasant day | 0.95 | - | -
+partly cloudy with light breeze | 0.8 | - | -
+soft gentle breeze | 0.75 | - | -
+high thin cirrus streaks | 0.65 | - | -
+mild calm weather | 0.85 | - | -
+hazy warm afternoon | 0.7 | - | -
+puffy cumulus clouds passing | 0.7 | - | -
+cool spring sunny day | 0.65 | - | -
+warm summery still air | 0.85 | - | -

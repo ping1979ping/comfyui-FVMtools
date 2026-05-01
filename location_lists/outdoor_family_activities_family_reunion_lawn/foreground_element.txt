@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+family tree printed scroll | 0.6 | 0.05-0.2 | rolled genealogy diagram
+disposable plate piled with food | 0.85 | 0.05-0.2 | mixed-cuisine paper plate
+red plastic punch cup | 0.8 | 0.05-0.15 | translucent disposable cup
+slice of grandma's pie | 0.75 | 0.05-0.2 | flaky-crust homemade pie
+name tag sticker on shirt | 0.7 | 0.05-0.1 | handwritten white label
+photo album turned page | 0.6 | 0.05-0.2 | bound printed family pictures
+group photo printed copies | 0.55 | 0.05-0.15 | reunion souvenir prints
+chicken drumstick on plate | 0.6 | 0.05-0.15 | golden fried piece
+deviled egg halves | 0.6 | 0.05-0.15 | yellow-filled white halves
+scoop of macaroni salad | 0.6 | 0.05-0.15 | creamy pasta side
+glass of sweet iced tea | 0.65 | 0.05-0.15 | beaded amber drink
+piece of homemade cornbread | 0.55 | 0.05-0.15 | golden crumbly square
+corn on the cob with butter | 0.65 | 0.05-0.2 | yellow buttered ear
+reunion souvenir keychain | 0.45 | 0.05-0.1 | small printed memento

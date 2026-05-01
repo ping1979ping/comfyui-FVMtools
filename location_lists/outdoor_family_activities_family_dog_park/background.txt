@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+fenced dog park enclosure | 1.0 | 0.4-0.8 | chain-link surround barrier
+patchy dog-park grass | 0.95 | 0.5-1.0 | trampled green ground
+distant scattered playing dogs | 0.85 | 0.3-0.7 | varied breed silhouettes
+shaded tree corner | 0.7 | 0.3-0.6 | mature canopy shade
+double-gate entrance vestibule | 0.65 | 0.2-0.5 | airlock-style gate area
+distant dog owners standing | 0.7 | 0.2-0.5 | grouped human figures
+park signage with rules | 0.55 | 0.1-0.3 | mounted regulation board
+agility equipment far end | 0.55 | 0.2-0.5 | weave poles and tunnel
+water station with bowls | 0.55 | 0.2-0.4 | spigot and bowls
+benches around perimeter | 0.65 | 0.2-0.5 | wooden seating along fence
+small dog area separation fence | 0.5 | 0.2-0.5 | secondary chain barrier
+parking lot beyond fence | 0.5 | 0.2-0.5 | distant car spaces
+clear sunny park sky | 0.85 | 0.4-1.0 | bright open blue

@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stainless steel grill spatula | 0.9 | 0.05-0.2 | long flat metal blade
+basting brush with sauce | 0.7 | 0.05-0.15 | bristled wooden handle tool
+red plastic ketchup bottle | 0.7 | 0.05-0.15 | squeeze bottle with cap
+yellow mustard squeeze bottle | 0.65 | 0.05-0.15 | bright plastic condiment
+bowl of potato salad | 0.7 | 0.1-0.25 | creamy chunky side dish
+platter of raw burger patties | 0.75 | 0.1-0.25 | seasoned ground beef rounds
+ear of grilled corn on cob | 0.65 | 0.05-0.2 | char-marked yellow kernels
+glass pitcher of lemonade | 0.7 | 0.1-0.25 | sweating clear pitcher
+tall cup of iced tea | 0.6 | 0.05-0.15 | beaded cold beverage glass
+grill tongs reaching for meat | 0.85 | 0.1-0.25 | long scissor-action tool
+paper plate stack on table edge | 0.6 | 0.05-0.15 | thin disposable plate column
+hot dog buns split open | 0.65 | 0.1-0.25 | soft golden split rolls
+bowl of green salad | 0.6 | 0.1-0.25 | leafy mixed greens
+slice of watermelon wedge | 0.65 | 0.05-0.2 | pink rind-edged fruit triangle

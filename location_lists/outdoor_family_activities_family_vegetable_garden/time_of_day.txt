@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning dewy garden | 1.0 | - | -
+mid-morning warm light | 0.95 | - | -
+late morning sun | 0.85 | - | -
+midday bright overhead | 0.7 | - | -
+early afternoon harvest | 0.85 | - | -
+mid-afternoon golden | 0.85 | - | -
+late afternoon long shadows | 0.85 | - | -
+just before sunset glow | 0.75 | - | -
+overcast soft light | 0.7 | - | -
+hazy summer noon | 0.65 | - | -

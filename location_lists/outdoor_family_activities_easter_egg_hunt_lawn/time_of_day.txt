@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-morning spring light | 1.0 | - | -
+late morning Sunday brunch hour | 0.95 | - | -
+midday spring brightness | 0.85 | - | -
+early afternoon bright spring | 0.9 | - | -
+mid-afternoon golden warmth | 0.75 | - | -
+just before sunset glow | 0.55 | - | -
+overcast spring soft light | 0.7 | - | -
+hazy spring noon | 0.65 | - | -
+crisp early morning hunt | 0.7 | - | -
+gentle early-evening light | 0.6 | - | -

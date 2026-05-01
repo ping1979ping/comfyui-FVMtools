@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+reusable water bottle in hand | 1.0 | 0.05-0.2 | metal insulated bottle
+trail mix bag torn open | 0.85 | 0.05-0.15 | mixed nuts and dried fruit
+granola bar wrapper | 0.7 | 0.05-0.1 | foil-packaged snack
+apple half-eaten | 0.65 | 0.05-0.15 | red round fruit
+sandwich wrapped in foil | 0.7 | 0.05-0.15 | aluminum-wrapped lunch
+small orange clementine | 0.55 | 0.05-0.1 | bright citrus
+binocular pair held up | 0.55 | 0.05-0.15 | dual optics tube
+camera around neck | 0.55 | 0.05-0.15 | DSLR or compact camera
+small wildflower picked | 0.6 | 0.05-0.1 | hand-held bloom
+acorn in palm | 0.55 | 0.05-0.05 | small nut seed
+bug spray bottle | 0.55 | 0.05-0.1 | aerosol can repellent
+sunscreen tube partly used | 0.55 | 0.05-0.1 | white plastic SPF tube
+field guide leaf identification | 0.5 | 0.05-0.15 | held open guide
+walking stick in hand | 0.65 | 0.05-0.2 | natural wood staff

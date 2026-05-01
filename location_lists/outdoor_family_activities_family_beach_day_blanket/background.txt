@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+ocean horizon line | 1.0 | 0.4-0.9 | wide turquoise water plane
+distant rolling surf waves | 0.95 | 0.3-0.8 | breaking white-cap swells
+sand dunes with grass | 0.65 | 0.3-0.6 | rolling vegetated mounds
+distant pier silhouette | 0.55 | 0.2-0.5 | wooden pile structure
+seaside cliff at one end | 0.45 | 0.3-0.6 | layered sandstone wall
+coastal lighthouse far off | 0.35 | 0.1-0.3 | distant white pillar
+parasailers above ocean | 0.4 | 0.1-0.3 | colorful kite specks
+clear summer sky over water | 0.95 | 0.4-1.0 | bright blue overhead
+puffy cumulus clouds horizon | 0.7 | 0.3-0.6 | scattered white cloud puffs
+seagulls wheeling over surf | 0.65 | 0.1-0.3 | scattered bird silhouettes
+distant swimmers in surf | 0.55 | 0.1-0.3 | tiny figures in water
+boardwalk railing top | 0.5 | 0.2-0.5 | wooden top rail glimpse
+sailboat far from coast | 0.45 | 0.1-0.3 | tiny triangular sail

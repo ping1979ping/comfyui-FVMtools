@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late afternoon block party | 1.0 | - | -
+early evening warm hour | 0.95 | - | -
+mid-afternoon kickoff | 0.9 | - | -
+just before sunset glow | 0.85 | - | -
+post-sunset blue hour | 0.7 | - | -
+dusk with twinkle lights | 0.85 | - | -
+weekend midday summer | 0.7 | - | -
+evening with grills lit | 0.85 | - | -
+golden warm light hour | 0.9 | - | -
+hot peak afternoon | 0.7 | - | -

@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+clay-coated hands on spinning pot | 1.0 | 0.1-0.3 | wet clay-streaked fingers
+small wooden rib tool | 0.85 | 0.05-0.15 | shaped wood rib
+sponge dripping with slip | 0.75 | 0.05-0.15 | wet ceramic sponge
+wire cutting tool stretched | 0.7 | 0.05-0.15 | thin twisted cutting wire
+needle stylus tool | 0.65 | 0.05-0.1 | pointed metal pin
+loop trimming tool | 0.7 | 0.05-0.15 | curved metal loop end
+bowl of murky tool water | 0.75 | 0.05-0.2 | grey ceramic-residue water
+cup of fresh slip slurry | 0.65 | 0.05-0.15 | thin liquid clay
+brush loaded with underglaze | 0.65 | 0.05-0.15 | colored ceramic paint brush
+dripping glazed test tile | 0.55 | 0.05-0.15 | colorful coated chip
+finished mug being held | 0.8 | 0.1-0.25 | curing thrown mug shape
+pottery throwing wedge of clay | 0.7 | 0.05-0.2 | grey moist plug
+sketched pottery design notebook | 0.55 | 0.05-0.15 | drawn ceramic plans
+clay-stained smock pocket | 0.65 | 0.05-0.15 | dusted apron pouch

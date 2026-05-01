@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+curb with painted yellow line | 0.7 | 0.05-0.2 | concrete edge marking
+storm drain grate at curbside | 0.55 | 0.05-0.15 | metal sewer cover
+fire hydrant on corner | 0.6 | 0.05-0.15 | red painted utility post
+streetlight standard pole | 0.55 | 0.1-0.25 | mounted residential lamp
+sidewalk crack patch lines | 0.6 | 0.1-0.3 | filled concrete seams
+neighborhood stop sign | 0.55 | 0.05-0.15 | red octagon mounted
+crosswalk striped paint | 0.5 | 0.1-0.3 | painted street zebra
+power line above street | 0.5 | 0.05-0.2 | thin overhead wires
+wrought iron porch railing | 0.5 | 0.1-0.25 | scrolled black metal
+front yard gate fence | 0.5 | 0.1-0.25 | painted slat barrier
+neighborhood mailbox post | 0.55 | 0.05-0.15 | painted box on stake
+utility pole tar-coated | 0.5 | 0.1-0.3 | dark wooden post

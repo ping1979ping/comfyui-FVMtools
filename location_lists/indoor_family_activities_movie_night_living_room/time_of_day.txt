@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early evening movie start | 1.0 | - | -
+post-dinner cinema time | 0.95 | - | -
+late evening dim lights | 0.95 | - | -
+night with curtains closed | 0.9 | - | -
+darkened blue-screen lit room | 0.85 | - | -
+pre-bedtime late hour | 0.7 | - | -
+weekend afternoon dimmed | 0.7 | - | -
+post-sunset cozy hour | 0.85 | - | -
+twilight lounging time | 0.65 | - | -
+midnight cinema crawl | 0.55 | - | -

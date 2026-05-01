@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+dog harness with handle | 0.85 | 0.1-0.3 | padded body harness
+embroidered dog collar | 0.7 | 0.05-0.1 | name-stitched strap
+matching family dog t-shirt | 0.55 | 0.1-0.3 | printed family-pup graphic top
+poop scoop tool | 0.6 | 0.05-0.15 | extending scoop
+treat clicker combo | 0.5 | 0.05-0.1 | training tool
+roll of poop bags pocket | 0.7 | 0.05-0.1 | green roll dispenser
+dog backpack with snacks | 0.5 | 0.05-0.2 | doggy daypack
+bandana around neck | 0.7 | 0.05-0.15 | folded printed scarf
+sun visor for owner | 0.55 | 0.05-0.15 | shade brim cap
+running shoes for owner | 0.7 | 0.05-0.15 | athletic sneaker
+travel water bowl collapsible | 0.6 | 0.05-0.15 | foldable silicone bowl
+pet tag with phone number | 0.55 | 0.05-0.05 | small metal ID disc
+sport sunglasses | 0.55 | 0.05-0.1 | wraparound shades
+adventure scarf for dog | 0.45 | 0.05-0.15 | colorful pet bandana

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+crisp cool autumn air | 1.0 | - | -
+overcast fall sky | 0.85 | - | -
+breezy with falling leaves | 0.85 | - | -
+clear cold autumn day | 0.8 | - | -
+foggy autumn dusk | 0.6 | - | -
+chilly evening with mist | 0.7 | - | -
+calm dry fall conditions | 0.8 | - | -
+light drizzle mid-afternoon | 0.5 | - | -
+brisk wind through trees | 0.7 | - | -
+cool still spooky air | 0.85 | - | -

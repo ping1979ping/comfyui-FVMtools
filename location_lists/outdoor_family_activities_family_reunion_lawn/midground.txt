@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long folding banquet table line | 1.0 | 0.4-0.8 | end-to-end plastic banquet tables
+folding metal chairs in rows | 0.85 | 0.3-0.7 | banquet seating
+buffet table with foil pans | 0.9 | 0.3-0.6 | warming tray spread
+giant lawn games set out | 0.7 | 0.3-0.6 | oversized jenga and connect-4
+volleyball net stretched between poles | 0.6 | 0.2-0.5 | mesh game divider
+horseshoes pit area dug | 0.5 | 0.2-0.4 | sandy stake target
+photo welcome banner stretched | 0.65 | 0.2-0.5 | printed reunion banner
+beverage station with dispensers | 0.8 | 0.2-0.5 | iced drink jug array
+dessert table with frosted cake | 0.75 | 0.2-0.5 | sweets platter spread
+gift table with name tags | 0.55 | 0.2-0.4 | wrapped item collection
+big galvanized tub of ice | 0.65 | 0.1-0.3 | iced beverage trough
+folded program leaflets at entry | 0.5 | 0.05-0.15 | printed reunion handouts
+clusters of relatives mid-conversation | 0.65 | 0.2-0.5 | gathered group blur
+old patchwork picnic blanket | 0.55 | 0.2-0.5 | hand-stitched fabric throw

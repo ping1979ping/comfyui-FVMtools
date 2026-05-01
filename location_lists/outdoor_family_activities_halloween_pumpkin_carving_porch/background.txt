@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+front porch ceiling beadboard | 1.0 | 0.4-0.8 | painted plank overhead
+clapboard house exterior siding | 0.95 | 0.5-1.0 | painted horizontal lap boards
+front door with autumn wreath | 0.8 | 0.3-0.6 | painted door with leaf wreath
+porch lattice railing screening | 0.55 | 0.3-0.6 | crossed wood grid panel
+distant suburban autumn street | 0.7 | 0.3-0.7 | leaf-strewn road
+mature autumn-color trees | 0.85 | 0.5-1.0 | red-orange foliage canopy
+neighbor's house silhouette | 0.55 | 0.2-0.5 | distant residential structure
+flickering jack-o-lantern row | 0.85 | 0.3-0.7 | lit pumpkin lineup
+strung halloween lights along porch | 0.7 | 0.3-0.6 | orange purple bulb strand
+fake spiderweb on railing | 0.65 | 0.3-0.7 | cottony stretched filaments
+hanging skeleton decoration | 0.55 | 0.2-0.5 | plastic bone figure
+inflatable ghost lawn decor | 0.5 | 0.3-0.7 | air-blown spooky figure
+fall harvest cornstalk bundle | 0.65 | 0.2-0.5 | dried tied stalks

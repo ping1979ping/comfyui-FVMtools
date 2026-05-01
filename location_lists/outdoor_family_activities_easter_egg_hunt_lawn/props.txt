@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+pastel Sunday Easter dress | 0.85 | 0.2-0.5 | flowing spring dress
+clip-on bow tie | 0.55 | 0.05-0.1 | small dress accessory
+white dress shoes | 0.65 | 0.05-0.15 | patent leather kid shoe
+sun hat with ribbon | 0.65 | 0.05-0.15 | wide-brim straw hat
+pastel cardigan sweater | 0.65 | 0.1-0.3 | spring knit layer
+matching family Easter outfits | 0.6 | 0.2-0.5 | coordinated spring wear
+small purse bag | 0.55 | 0.05-0.15 | toddler crossbody bag
+floral hair bow clip | 0.55 | 0.05-0.05 | spring hairpiece
+white tights or knee socks | 0.55 | 0.05-0.15 | pale legwear
+camera with flash | 0.55 | 0.05-0.15 | family-photo camera
+suspenders on toddler boy | 0.45 | 0.05-0.15 | pastel shoulder straps
+clip-on flower brooch | 0.45 | 0.05-0.05 | small floral pin
+spring umbrella floral print | 0.45 | 0.1-0.3 | unfurled bloom-printed parasol
+event participant ribbon | 0.5 | 0.05-0.1 | printed satin ribbon

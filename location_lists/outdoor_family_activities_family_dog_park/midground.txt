@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+family dog mid-run after ball | 1.0 | 0.2-0.5 | playful canine in motion
+golden retriever fetching | 0.7 | 0.2-0.5 | tan furry dog with ball
+small terrier sprinting | 0.55 | 0.1-0.3 | small wiry dog
+labrador chasing toy | 0.6 | 0.2-0.5 | yellow lab in motion
+agility weave poles | 0.55 | 0.2-0.4 | upright pole row
+dog tunnel apparatus | 0.5 | 0.2-0.4 | colorful canvas tube
+plastic kiddie pool for dogs | 0.55 | 0.2-0.5 | round wading water tub
+ball thrower long-handle | 0.7 | 0.05-0.15 | plastic chucker scoop
+park bench occupied by family | 0.65 | 0.2-0.5 | seated owners
+dog water bowl ceramic | 0.65 | 0.05-0.15 | refilled water dish
+poo bag dispenser station | 0.55 | 0.05-0.15 | mounted bag holder
+agility teeter board | 0.5 | 0.2-0.4 | balance see-saw plank
+fire hydrant decoration | 0.5 | 0.05-0.2 | painted prop hydrant
+trash and recycle bin pair | 0.55 | 0.1-0.3 | side-by-side park bins

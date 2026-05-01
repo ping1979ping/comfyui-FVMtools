@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+apron-front farmhouse sink | 0.85 | 0.1-0.3 | exposed white porcelain front
+under-cabinet LED strip light | 0.7 | 0.05-0.2 | warm glow band fixture
+glass-front upper cabinet door | 0.7 | 0.1-0.3 | transparent paneled cupboard
+crown molding above cabinets | 0.55 | 0.05-0.15 | painted decorative trim
+window frame with sill | 0.7 | 0.1-0.3 | painted casement opening
+ceiling pot rack hanging fixture | 0.55 | 0.05-0.2 | suspended cookware mount
+pendant light over island | 0.75 | 0.1-0.25 | hung dome shade lamp
+electrical outlet on backsplash | 0.55 | 0.05-0.1 | wall socket cover
+range hood vent above stove | 0.7 | 0.1-0.3 | metal extraction canopy
+baseboard along wall | 0.55 | 0.05-0.15 | painted floor trim
+exposed ceiling wood beam | 0.45 | 0.1-0.3 | rustic timber overhead
+butcher block end grain detail | 0.5 | 0.05-0.15 | end-grain checker pattern

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cozy heated interior | 1.0 | - | -
+warm bulb-lit ambience | 0.95 | - | -
+calm still indoor air | 0.95 | - | -
+rainy night outside | 0.55 | - | -
+snowy night through window | 0.5 | - | -
+mild interior climate | 0.9 | - | -
+candle-warmth still air | 0.55 | - | -
+soft diffused indoor light | 0.85 | - | -
+even ambient warm light | 0.9 | - | -
+indoor cozy festive air | 0.85 | - | -

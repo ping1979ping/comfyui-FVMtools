@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+tree-lined suburban street | 1.0 | 0.5-1.0 | mature shade trees over road
+neighborhood houses with lawns | 0.95 | 0.5-1.0 | clapboard residential row
+white picket fences along yards | 0.65 | 0.3-0.7 | painted slat front fences
+distant neighborhood park entrance | 0.55 | 0.2-0.5 | green space gateway
+quiet curving residential street | 0.85 | 0.5-1.0 | low-traffic asphalt road
+suburban cul-de-sac end | 0.55 | 0.3-0.6 | rounded street terminus
+flowering ornamental trees in yards | 0.6 | 0.4-0.8 | spring-blooming dogwood lining
+neighbor walking dog ahead | 0.45 | 0.1-0.3 | distant pedestrian figure
+mailbox row at curbside | 0.55 | 0.2-0.5 | painted-post mailbox lineup
+sidewalk concrete path | 0.85 | 0.4-0.8 | poured pedestrian walkway
+bushes and shrubs front yards | 0.7 | 0.3-0.7 | trimmed greenery
+basketball hoop in driveway | 0.5 | 0.1-0.3 | residential portable hoop
+late afternoon warm sky | 0.85 | 0.4-1.0 | golden warm overhead sky

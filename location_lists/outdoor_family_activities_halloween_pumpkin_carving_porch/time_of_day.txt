@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late afternoon autumn light | 0.95 | - | -
+just before dusk orange glow | 1.0 | - | -
+twilight pumpkin glow | 0.95 | - | -
+post-sunset blue hour | 0.85 | - | -
+night with porch lit | 0.9 | - | -
+early evening fall warmth | 0.9 | - | -
+mid-afternoon crisp light | 0.7 | - | -
+gray overcast autumn day | 0.65 | - | -
+moonlit halloween night | 0.65 | - | -
+candlelit evening atmosphere | 0.85 | - | -

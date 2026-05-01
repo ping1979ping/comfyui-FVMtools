@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm summer day | 1.0 | - | -
+partly cloudy with breeze | 0.85 | - | -
+hazy humid summer afternoon | 0.75 | - | -
+calm dry pleasant weather | 0.9 | - | -
+high cirrus streaks above | 0.65 | - | -
+soft passing puffy clouds | 0.7 | - | -
+distant rumble of summer storm | 0.4 | - | -
+gentle wind through trees | 0.7 | - | -
+warm dry no wind | 0.8 | - | -
+mild evening cooling air | 0.65 | - | -

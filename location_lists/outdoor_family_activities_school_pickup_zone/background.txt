@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+elementary school brick facade | 1.0 | 0.5-1.0 | red institutional masonry
+school district mascot mural | 0.6 | 0.4-0.8 | painted painted school colors
+school name lettered sign above doors | 0.85 | 0.4-0.7 | metal mounted lettering
+flagpole with American flag | 0.7 | 0.2-0.5 | tall pole with flag waving
+playground in distance | 0.65 | 0.3-0.7 | colorful play equipment
+parking lot with parent cars | 0.75 | 0.4-0.8 | rows of waiting vehicles
+school zone signage on poles | 0.7 | 0.3-0.6 | yellow caution roadside signs
+trees lining the parent loop | 0.7 | 0.3-0.7 | mature shade tree row
+clock tower above school | 0.45 | 0.2-0.5 | small institutional turret
+chain-link schoolyard fence | 0.6 | 0.3-0.7 | woven steel mesh barrier
+crossing guard stop sign | 0.55 | 0.2-0.4 | hand-held octagon sign
+basketball hoop on court | 0.45 | 0.2-0.5 | mounted backboard
+suburban street beyond fence | 0.55 | 0.3-0.6 | residential road glimpse

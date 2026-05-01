@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+oversized sectional sofa | 1.0 | 0.4-0.8 | upholstered modular seating
+pile of throw cushions | 0.85 | 0.2-0.5 | mixed soft pillow cluster
+chunky knit blanket draped | 0.85 | 0.2-0.5 | bulky woven throw
+wooden coffee table center | 0.85 | 0.3-0.6 | low timber surface
+shag area rug underfoot | 0.7 | 0.4-0.8 | plush deep-pile floor cover
+recliner armchair off to side | 0.55 | 0.2-0.5 | overstuffed leaning chair
+giant beanbag floor seat | 0.55 | 0.2-0.4 | slumpy fabric cushion
+TV media console below screen | 0.7 | 0.3-0.6 | low cabinet stand
+basket of remote controls | 0.6 | 0.05-0.15 | woven container of remotes
+tray with snacks on table | 0.85 | 0.1-0.3 | platter of movie nibbles
+floor pouf cube extra seat | 0.55 | 0.1-0.3 | tufted cube ottoman
+ottoman with feet up | 0.65 | 0.2-0.5 | upholstered footrest
+floor lamp dimly lit | 0.7 | 0.1-0.3 | tall standing light
+side table with mug | 0.65 | 0.05-0.2 | small end-side surface

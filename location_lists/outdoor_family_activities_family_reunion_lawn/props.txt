@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+custom-printed reunion t-shirt | 0.95 | 0.1-0.3 | matching family tee design
+straw cowboy hat passed down | 0.55 | 0.05-0.15 | woven brim worn cap
+floral summer sundress | 0.65 | 0.1-0.3 | printed cotton summer wear
+softball mitt on chair | 0.45 | 0.05-0.15 | leather catcher's glove
+acoustic guitar leaning on tree | 0.5 | 0.1-0.25 | wooden stringed instrument
+camera with lanyard strap | 0.6 | 0.05-0.15 | DSLR around neck
+whiteboard reunion family schedule | 0.5 | 0.1-0.3 | written event timeline
+mason jar candle centerpiece | 0.55 | 0.05-0.15 | glass jar with wax
+braided friendship bracelet | 0.5 | 0.05-0.1 | woven thread band
+sun hat with floral band | 0.55 | 0.05-0.15 | wide-brim summer hat
+worn leather Bible on table | 0.4 | 0.05-0.15 | family heirloom book
+embroidered apron hanging | 0.5 | 0.05-0.15 | stitched personal apron
+wicker porch rocker | 0.5 | 0.1-0.25 | woven seat rocking chair
+cooler tote with name marker | 0.6 | 0.1-0.25 | personalized iced container

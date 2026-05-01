@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+wooden boardwalk plank section | 0.65 | 0.1-0.3 | weathered timber walkway
+beach access stairway down | 0.55 | 0.1-0.3 | sandy wooden steps
+public restroom cinder block | 0.5 | 0.1-0.3 | painted utility building
+beach trash can mounted | 0.45 | 0.05-0.15 | metal beach receptacle
+warning sign for rip currents | 0.5 | 0.05-0.15 | painted advisory placard
+wooden pier piling close-up | 0.45 | 0.1-0.3 | barnacled timber post
+shower rinse station post | 0.5 | 0.05-0.15 | mounted shower nozzle
+seawall stone retaining edge | 0.55 | 0.1-0.3 | mortared rock barrier
+chain-link beach fence section | 0.4 | 0.1-0.25 | boundary wire mesh
+boardwalk bench facing surf | 0.55 | 0.1-0.25 | painted plank seat
+beach access ramp painted | 0.5 | 0.1-0.3 | accessible boardwalk slope

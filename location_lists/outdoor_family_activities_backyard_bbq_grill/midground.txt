@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+charcoal kettle grill on patio | 1.0 | 0.3-0.6 | rounded black enameled dome
+gas grill on rolling cart | 0.85 | 0.3-0.6 | stainless steel boxy unit
+flagstone patio surface | 0.85 | 0.4-0.8 | irregular flat stone slabs
+wooden picnic table with benches | 0.8 | 0.3-0.7 | planked timber surface
+folding camp chairs in semicircle | 0.75 | 0.3-0.6 | woven nylon sling seats
+red and white checkered tablecloth | 0.7 | 0.2-0.5 | gingham pattern cotton drape
+cooler chest with ice | 0.7 | 0.2-0.5 | molded plastic insulated box
+paved brick patio area | 0.6 | 0.4-0.8 | herringbone brickwork
+freestanding outdoor umbrella | 0.55 | 0.2-0.5 | canvas canopy on metal pole
+inflatable kiddie pool on lawn | 0.45 | 0.2-0.5 | round vinyl water basin
+wooden deck platform with railing | 0.65 | 0.3-0.7 | varnished plank decking
+citronella torch posts in lawn | 0.5 | 0.2-0.5 | bamboo flame torches
+folding table with serving platters | 0.7 | 0.2-0.5 | white plastic banquet table
+string of bistro lights overhead | 0.65 | 0.2-0.5 | warm bulb cafe lights

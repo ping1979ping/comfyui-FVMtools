@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear summer block weather | 1.0 | - | -
+warm with light breeze | 0.95 | - | -
+hazy humid summer haze | 0.8 | - | -
+partly cloudy mild day | 0.8 | - | -
+calm dry pleasant air | 0.9 | - | -
+gentle warm gust | 0.7 | - | -
+puffy cloud passing | 0.7 | - | -
+distant rumble of summer storm | 0.4 | - | -
+warm dry no wind | 0.8 | - | -
+soft summer evening | 0.85 | - | -

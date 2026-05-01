@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+soft fleece pajama set | 0.85 | 0.1-0.3 | cozy patterned sleep wear
+oversized hoodie sweatshirt | 0.75 | 0.1-0.3 | loose pullover top
+matching family pjs | 0.55 | 0.2-0.5 | coordinated lounge sets
+fluffy fuzzy bathrobe | 0.55 | 0.2-0.5 | plush wrap robe
+chunky striped wool socks | 0.65 | 0.05-0.15 | thick patterned hose
+movie poster framed nearby | 0.5 | 0.1-0.25 | printed film promo
+gaming controller on table | 0.5 | 0.05-0.1 | molded plastic remote
+DVD case stack | 0.5 | 0.05-0.15 | piled disc cases
+streaming subscription guide booklet | 0.4 | 0.05-0.1 | paper viewing list
+ceramic snack bowl | 0.7 | 0.05-0.15 | small chip-and-dip vessel
+roll of paper towels | 0.5 | 0.05-0.15 | white tear-off roll
+plush stuffed animal in lap | 0.55 | 0.1-0.25 | soft toy figure
+wireless headphones nearby | 0.45 | 0.05-0.1 | over-ear audio set
+candle in glass jar lit | 0.6 | 0.05-0.15 | flickering scented wax

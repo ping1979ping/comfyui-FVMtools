@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+scattered colorful plastic eggs | 1.0 | 0.3-0.7 | bright pastel sphere clusters
+woven Easter basket on lawn | 0.95 | 0.1-0.3 | wicker collecting basket
+giant Easter egg display | 0.55 | 0.2-0.5 | oversized decorative egg
+bunny mascot costume figure | 0.5 | 0.2-0.5 | plush adult-size rabbit suit
+hidden egg in flower bed | 0.85 | 0.05-0.2 | egg nestled in petals
+folding event registration table | 0.55 | 0.2-0.4 | small banquet sign-in table
+prize bag distribution station | 0.55 | 0.1-0.3 | stack of goody bags
+painted egg-decorating booth | 0.55 | 0.2-0.5 | craft activity stand
+hay bale seating | 0.55 | 0.2-0.5 | stacked dried straw
+colorful spring banner | 0.65 | 0.2-0.5 | printed Easter sign
+toddler push-along grass cart | 0.45 | 0.1-0.3 | small kid wagon
+egg-filled basket treasure pile | 0.7 | 0.1-0.3 | found egg collection
+parent watching from bench | 0.55 | 0.1-0.3 | seated adult figure
+flower crown headband display | 0.5 | 0.05-0.15 | decorated head wreath

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+red barn double doors | 0.8 | 0.1-0.3 | painted timber slab portal
+hand-painted farm welcome sign | 0.85 | 0.1-0.25 | folksy hand-lettered board
+weathered cupola atop barn roof | 0.5 | 0.05-0.2 | small ornamental roof tower
+metal weather vane silhouette | 0.5 | 0.05-0.15 | rooster-shaped iron arrow
+white-painted picket gate entrance | 0.55 | 0.1-0.25 | slatted swinging gate
+strand of outdoor festival lights | 0.7 | 0.1-0.25 | warm bulb string row
+wooden hayride loading platform | 0.55 | 0.1-0.3 | raised plank step
+chalkboard tree price sign | 0.65 | 0.05-0.2 | hand-written slate listing
+red star ornament hung on barn | 0.55 | 0.05-0.15 | metal Pennsylvania star
+covered porch overhang of shop | 0.6 | 0.1-0.3 | shingle-roofed extension
+painted barn quilt panel | 0.5 | 0.05-0.15 | geometric folk pattern square

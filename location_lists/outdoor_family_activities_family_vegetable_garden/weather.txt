@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear summer sunny day | 1.0 | - | -
+warm with light breeze | 0.95 | - | -
+overcast soft growing weather | 0.75 | - | -
+post-rain damp earth | 0.7 | - | -
+hazy humid summer | 0.7 | - | -
+mild calm pleasant | 0.85 | - | -
+puffy clouds drifting | 0.7 | - | -
+slight wind through stalks | 0.7 | - | -
+warm dry conditions | 0.85 | - | -
+gentle drizzle on plants | 0.5 | - | -

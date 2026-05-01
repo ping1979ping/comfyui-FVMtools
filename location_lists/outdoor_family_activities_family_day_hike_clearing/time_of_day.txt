@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-morning hiking light | 1.0 | - | -
+late morning warm sun | 0.95 | - | -
+midday hike rest | 0.85 | - | -
+early afternoon dappled light | 0.95 | - | -
+mid-afternoon golden warmth | 0.85 | - | -
+late afternoon long shadows | 0.8 | - | -
+just before sunset descent | 0.65 | - | -
+overcast soft daylight | 0.65 | - | -
+crisp morning hike start | 0.85 | - | -
+gentle dawn early sun | 0.6 | - | -

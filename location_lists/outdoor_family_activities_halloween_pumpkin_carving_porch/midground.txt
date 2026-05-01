@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+assortment of pumpkins on porch | 1.0 | 0.3-0.7 | varied orange gourd cluster
+folding card table for carving | 0.85 | 0.3-0.6 | cloth-covered work surface
+old newspaper spread covering | 0.85 | 0.3-0.7 | print-covered drop cloth
+bowl of pumpkin guts and seeds | 0.85 | 0.1-0.3 | stringy orange contents
+small pumpkin-carving toolkit | 0.85 | 0.1-0.3 | scoop and serrated tools
+hay bale seating | 0.65 | 0.2-0.5 | dried straw stacked block
+porch rocking chair pulled up | 0.6 | 0.2-0.5 | wooden curved chair
+mum flowers in pots | 0.7 | 0.2-0.5 | round chrysanthemum bunches
+basket of mini pumpkins | 0.7 | 0.1-0.3 | small gourd assortment
+template printouts for carving | 0.65 | 0.05-0.2 | paper carving stencils
+bucket of orange paint | 0.45 | 0.05-0.2 | paint can with brush
+painted gourds for decoration | 0.55 | 0.1-0.3 | colorful decorated gourds
+indian corn bundle decoration | 0.55 | 0.1-0.3 | dried multicolor corn
+fall-themed welcome mat | 0.65 | 0.1-0.3 | autumn doormat

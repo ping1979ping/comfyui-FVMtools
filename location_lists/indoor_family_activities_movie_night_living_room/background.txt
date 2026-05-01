@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+large flat-screen wall-mounted TV | 1.0 | 0.4-0.8 | glossy black screen with movie scene
+neutral painted living room wall | 0.85 | 0.5-1.0 | matte beige interior pigment
+gallery wall of family pictures | 0.7 | 0.4-0.8 | framed photo cluster
+floor-to-ceiling drawn curtains | 0.75 | 0.5-1.0 | heavy darkening drapes
+exposed brick accent wall | 0.55 | 0.5-0.9 | aged red masonry
+wallpapered feature wall | 0.6 | 0.5-0.9 | patterned printed paper
+built-in floating shelves | 0.7 | 0.4-0.8 | wooden mounted shelves
+console table behind sofa | 0.6 | 0.3-0.7 | low display table
+warm-toned wood paneling | 0.55 | 0.5-0.9 | natural plank wall
+soft glow string lights along wall | 0.65 | 0.3-0.7 | warm bulb fairy lights
+projector screen pulled down | 0.5 | 0.4-0.8 | white retractable cinema screen
+hung tapestry textile artwork | 0.5 | 0.3-0.7 | woven fabric mural
+display cabinet with mementos | 0.55 | 0.3-0.7 | glass-fronted curiosity case

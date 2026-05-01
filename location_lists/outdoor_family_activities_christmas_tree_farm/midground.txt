@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+freshly cut Christmas trees stacked | 1.0 | 0.3-0.7 | piled bound conifer logs
+red wooden cashier hut booth | 0.8 | 0.2-0.5 | painted small farm kiosk
+hayride wagon hitched to tractor | 0.75 | 0.3-0.6 | wooden flatbed trailer
+green John Deere style tractor | 0.65 | 0.2-0.5 | painted small farm machine
+tree netting baler machine | 0.7 | 0.2-0.4 | metal wrapping cone device
+wheelbarrow with cut tree | 0.7 | 0.2-0.5 | single-wheel hauling cart
+hot cocoa stand booth | 0.7 | 0.2-0.5 | painted refreshment kiosk
+firepit ring with logs | 0.65 | 0.2-0.5 | stone circle with stacked wood
+twine and saw rental table | 0.6 | 0.2-0.5 | wooden trestle with tools
+gravel parking strip with cars | 0.55 | 0.2-0.5 | crushed stone vehicle row
+wreath crafting workbench | 0.6 | 0.2-0.5 | timber assembly table
+candy cane striped poles row | 0.55 | 0.2-0.5 | painted decorative posts
+strung garland between posts | 0.6 | 0.2-0.5 | green roping with red bows
+festively decorated farm sign | 0.65 | 0.2-0.4 | painted hand-lettered placard

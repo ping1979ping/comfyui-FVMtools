@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late morning gathering light | 0.85 | - | -
+midday sunlit reunion | 0.95 | - | -
+early afternoon long warmth | 1.0 | - | -
+mid-afternoon golden glow | 0.95 | - | -
+late afternoon long shadows | 0.85 | - | -
+just before evening sunset | 0.75 | - | -
+post-sunset golden hour | 0.7 | - | -
+dusk with string lights on | 0.65 | - | -
+soft cloudy daylight | 0.65 | - | -
+hazy hot summer noon | 0.7 | - | -

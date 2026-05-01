@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+red kite string ascending | 0.55 | 0.05-0.2 | thin line to sky
+soft toddler stuffed bunny | 0.6 | 0.05-0.15 | plush soft animal
+inflated rubber ball | 0.6 | 0.05-0.2 | bouncy colorful sphere
+soap bubble wand and jar | 0.55 | 0.05-0.15 | dripping hoop and bottle
+park frisbee lying flat | 0.55 | 0.05-0.15 | plastic flying disc
+toddler tricycle nearby | 0.4 | 0.1-0.25 | three-wheeled riding toy
+sun parasol open over blanket | 0.55 | 0.2-0.5 | round shade umbrella
+striped towel folded on grass | 0.55 | 0.05-0.15 | rectangular cotton towel
+camera phone on stand | 0.5 | 0.05-0.1 | small device propped up
+dog leash trailing | 0.45 | 0.05-0.15 | nylon strap line
+pair of running shoes set aside | 0.55 | 0.05-0.15 | athletic sneakers
+small wireless speaker | 0.55 | 0.05-0.1 | round portable audio
+sketched chalk hopscotch on path | 0.4 | 0.1-0.25 | drawn pavement game

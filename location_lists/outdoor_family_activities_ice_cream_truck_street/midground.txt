@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bright painted ice cream truck | 1.0 | 0.4-0.8 | colorful boxy vending vehicle
+ice cream menu board on truck | 0.95 | 0.2-0.5 | painted illustrated menu
+serving window of truck open | 0.95 | 0.2-0.5 | hatched dispensing window
+painted mascot character on side | 0.7 | 0.3-0.6 | cartoon truck art
+loudspeaker on truck roof | 0.65 | 0.05-0.15 | mounted music speaker
+small line of waiting kids | 0.85 | 0.3-0.6 | queued children figures
+freezer compartment behind window | 0.6 | 0.1-0.3 | frosted dispensing freezer
+tip jar on counter | 0.55 | 0.05-0.15 | clear cash collection jar
+painted price list on side | 0.65 | 0.1-0.3 | hand-painted item costs
+truck wheel detail closeup | 0.55 | 0.1-0.3 | rubber tire and rim
+truck side window decals | 0.6 | 0.1-0.25 | colorful applied stickers
+folded cash bills on counter | 0.5 | 0.05-0.15 | money pile
+small step stool to reach | 0.45 | 0.05-0.15 | child step
+parked bicycles of waiting kids | 0.55 | 0.2-0.5 | small bikes leaning

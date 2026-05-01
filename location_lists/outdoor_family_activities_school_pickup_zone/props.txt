@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+handmade name parent placard | 0.6 | 0.1-0.25 | child-decorated parent sign
+school district hoodie sweatshirt | 0.7 | 0.1-0.3 | pulled-on logo top
+parent's tote bag overflowing | 0.65 | 0.1-0.25 | stuffed mom-life carryall
+field trip permission slip | 0.55 | 0.05-0.15 | school paper held up
+rolled poster project | 0.55 | 0.05-0.2 | tubed school assignment
+class trophy small | 0.4 | 0.05-0.15 | gold-plated achievement award
+kid scooter folded | 0.55 | 0.1-0.3 | handlebar wheeled toy
+mom's coffee travel mug | 0.65 | 0.05-0.15 | insulated commuter cup
+yellow student safety vest | 0.5 | 0.1-0.25 | reflective junior vest
+school chorus singer outfit | 0.4 | 0.1-0.3 | uniform performance attire
+art smock in hand | 0.5 | 0.05-0.2 | painty kid coverall
+folded class group photo | 0.45 | 0.05-0.1 | printed class picture
+teacher's sticker reward | 0.55 | 0.05-0.1 | small affirmation badge
+school spirit pom-pom | 0.45 | 0.05-0.15 | colorful cheer fluff

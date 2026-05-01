@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+apron with grill humor slogan | 0.8 | 0.1-0.3 | cotton chef-style cover
+cornhole bean bag toss boards | 0.6 | 0.2-0.5 | painted wooden lawn game
+soccer ball on grass | 0.55 | 0.05-0.15 | hexagon-paneled play ball
+frisbee disc mid-toss | 0.5 | 0.05-0.15 | flat plastic flying disc
+bluetooth portable speaker | 0.6 | 0.05-0.15 | small cylindrical audio device
+rolled-up sun lounger towel | 0.55 | 0.05-0.2 | folded striped beach towel
+basket of wrapped silverware | 0.6 | 0.1-0.25 | utensils in napkin bundles
+plastic squirt water gun | 0.45 | 0.05-0.15 | colorful kid water blaster
+beaded bracelet on wrist | 0.4 | 0.05-0.1 | strung casual jewelry
+flip-flop sandals near chair | 0.55 | 0.05-0.15 | rubber thong footwear
+dad's grilling glove mitt | 0.6 | 0.05-0.15 | heat-resistant padded mitt
+beverage cooler bag tote | 0.55 | 0.1-0.25 | insulated zippered carrier
+backyard horseshoe stake set | 0.4 | 0.1-0.25 | metal pitching ring game
+sunglasses on table edge | 0.55 | 0.05-0.1 | folded shaded eyewear

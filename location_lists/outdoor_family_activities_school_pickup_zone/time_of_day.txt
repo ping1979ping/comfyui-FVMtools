@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-afternoon school dismissal | 1.0 | - | -
+late afternoon pickup hour | 0.95 | - | -
+3pm school bell time | 0.9 | - | -
+early afternoon early release | 0.7 | - | -
+midday half-day pickup | 0.55 | - | -
+morning drop-off light | 0.7 | - | -
+8am morning bell hour | 0.7 | - | -
+late morning school recess | 0.6 | - | -
+post-bell golden warmth | 0.85 | - | -
+crisp morning back-to-school | 0.75 | - | -

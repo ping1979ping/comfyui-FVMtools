@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+painted dining room wall warm tone | 1.0 | 0.6-1.0 | matte interior pigment
+gallery wall of family portraits | 0.7 | 0.4-0.8 | framed picture cluster
+dining room buffet hutch | 0.7 | 0.4-0.8 | wooden display cabinet
+patterned wallpaper feature wall | 0.55 | 0.5-0.9 | repeated print paper
+dining chandelier overhead | 0.85 | 0.3-0.7 | hanging multi-arm light
+heavy drawn drapes window | 0.65 | 0.3-0.7 | dark fabric pull curtains
+floor-to-ceiling bookshelves | 0.55 | 0.4-0.8 | timber book wall
+wood-paneled wainscoting half-wall | 0.5 | 0.3-0.6 | painted plank lower wall
+mounted china display cabinet | 0.55 | 0.3-0.6 | glass-doored heirloom case
+warm pendant ceiling lamp | 0.65 | 0.2-0.5 | suspended dome lamp
+oil painting of landscape | 0.5 | 0.2-0.5 | framed scenic art
+crown molding ceiling trim | 0.55 | 0.3-0.7 | painted decorative line

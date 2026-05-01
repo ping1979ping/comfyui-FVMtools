@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+leafy lettuce row in bed | 1.0 | 0.3-0.6 | crinkly green leaf cluster
+tomato cages with red fruit | 0.95 | 0.3-0.7 | wire towers with hanging tomatoes
+pepper plants in row | 0.75 | 0.2-0.5 | green leafy bushy plants
+zucchini sprawling on ground | 0.7 | 0.2-0.5 | huge leaves and green fruit
+bean teepee pole structure | 0.6 | 0.2-0.5 | bamboo teepee climbing beans
+strawberry patch in bed | 0.65 | 0.2-0.5 | red-fruited green crowns
+herb garden cluster | 0.7 | 0.2-0.4 | mixed aromatic foliage
+watering can on path | 0.85 | 0.05-0.2 | metal spouted vessel
+basket of harvested vegetables | 0.85 | 0.1-0.3 | wicker basket with mixed produce
+small wheelbarrow with tools | 0.7 | 0.2-0.5 | single-wheeled cart
+gardening kneeler pad | 0.6 | 0.05-0.2 | foam knee cushion
+garden hose coiled neatly | 0.6 | 0.1-0.3 | green coiled tube
+seed packet stakes labeling beds | 0.7 | 0.1-0.3 | row of marker labels
+upended flower pots stacked | 0.5 | 0.1-0.25 | terracotta pot pile

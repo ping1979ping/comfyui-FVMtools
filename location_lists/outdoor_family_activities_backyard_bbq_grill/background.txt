@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+suburban backyard wooden privacy fence | 1.0 | 0.6-1.0 | weathered vertical cedar planks
+mature deciduous backyard trees | 0.9 | 0.5-1.0 | layered green leafy canopy
+neighbor's two-story house roofline | 0.7 | 0.4-0.8 | distant shingled gable silhouette
+flowering hydrangea hedge along fence | 0.65 | 0.4-0.8 | clustered blue-pink blossom mass
+manicured lawn rolling toward fence | 0.85 | 0.5-1.0 | uniform short cropped grass
+white painted picket fence section | 0.55 | 0.3-0.7 | crisply painted slat row
+pergola structure with climbing vine | 0.6 | 0.4-0.8 | timber lattice wrapped in greenery
+backyard garden shed in corner | 0.55 | 0.3-0.7 | painted clapboard utility cottage
+tall arborvitae privacy hedge | 0.6 | 0.4-0.8 | dense conifer wall
+small clapboard house exterior | 0.7 | 0.4-0.9 | painted horizontal siding
+suburban evening sky over rooftops | 0.75 | 0.5-1.0 | gradient warm dusk sky
+distant power line silhouette | 0.4 | 0.3-0.6 | thin dark wire across horizon
+clematis covered trellis backdrop | 0.5 | 0.3-0.7 | flowering purple climber screen

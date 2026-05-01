@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+trail marker post painted blaze | 0.7 | 0.05-0.15 | colored painted marker
+wooden trail interpretive sign | 0.65 | 0.1-0.3 | mounted park placard
+rustic park footbridge plank | 0.5 | 0.1-0.3 | timber crossing planks
+stone steps uphill | 0.5 | 0.1-0.3 | placed flat treads
+hand-railed wooden bridge | 0.45 | 0.1-0.3 | painted plank crossing
+cairn at trail intersection | 0.5 | 0.05-0.15 | piled stone marker
+park entry stone monument | 0.45 | 0.1-0.3 | masonry entry pillar
+backcountry campsite sign | 0.4 | 0.05-0.15 | mounted sign post
+old log lean-to shelter glimpse | 0.4 | 0.1-0.3 | rustic timber roof
+weathered park bench | 0.5 | 0.1-0.25 | wooden plank seat
+notched wood blaze marker | 0.45 | 0.05-0.1 | tree-mounted plate
+park map kiosk panel | 0.5 | 0.1-0.25 | wooden map shelter

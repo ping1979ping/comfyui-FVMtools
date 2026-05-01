@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+suburban residential street view | 1.0 | 0.5-1.0 | low-traffic asphalt road
+neighborhood houses with stoops | 0.85 | 0.4-0.8 | painted clapboard residences
+mature deciduous shade trees | 0.85 | 0.4-0.9 | broad leafy canopy
+white picket front yards | 0.55 | 0.3-0.6 | painted slat fences
+chain-link fenced corner lot | 0.5 | 0.3-0.6 | woven steel mesh barrier
+distant cul-de-sac end | 0.5 | 0.3-0.6 | rounded street terminus
+sidewalk cement strip | 0.85 | 0.4-0.8 | poured pedestrian path
+street with painted center line | 0.7 | 0.3-0.6 | yellow road marking
+hot afternoon sky | 0.85 | 0.5-1.0 | bright humid blue
+flowering crape myrtle tree | 0.55 | 0.3-0.6 | pink summer bloom
+parked cars along curb | 0.65 | 0.3-0.7 | row of residential cars
+neighborhood mailbox cluster | 0.5 | 0.2-0.5 | grouped post boxes
+distant playing children silhouettes | 0.5 | 0.2-0.4 | small figures playing

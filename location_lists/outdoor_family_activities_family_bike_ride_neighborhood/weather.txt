@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny weather | 1.0 | - | -
+mild warm pleasant breeze | 0.9 | - | -
+partly cloudy mild day | 0.85 | - | -
+crisp cool fall conditions | 0.7 | - | -
+soft puffy clouds passing | 0.75 | - | -
+hazy warm summer evening | 0.7 | - | -
+calm dry comfortable air | 0.85 | - | -
+gentle wind in face | 0.7 | - | -
+post-rain damp pavement | 0.55 | - | -
+warm late-spring weather | 0.8 | - | -

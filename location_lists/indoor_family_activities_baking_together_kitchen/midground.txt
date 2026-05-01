@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+butcher block kitchen island | 1.0 | 0.4-0.8 | thick wooden prep surface
+flour-dusted marble work slab | 0.85 | 0.3-0.7 | cool veined stone counter
+stand mixer with dough hook | 0.85 | 0.2-0.5 | enameled motor base appliance
+wall-mounted oven door open | 0.65 | 0.2-0.5 | hot interior with rack
+glass mixing bowl with dough | 0.85 | 0.2-0.5 | clear bowl with rising dough
+ceramic mixing bowl set | 0.7 | 0.2-0.5 | nested baking bowls
+cooling rack lined with cookies | 0.85 | 0.2-0.5 | wire rack baked goods
+muffin tin in oven | 0.7 | 0.2-0.4 | metal cup baking pan
+rolling pin on dusty counter | 0.85 | 0.05-0.2 | wooden cylindrical roller
+sheet pan of risen rolls | 0.7 | 0.2-0.5 | parchment-lined puffy buns
+electric kettle steaming nearby | 0.6 | 0.1-0.3 | hot water countertop kettle
+parchment-lined sheet tray | 0.75 | 0.2-0.5 | white-papered baking tray
+KitchenAid bowl with whipped cream | 0.65 | 0.1-0.3 | metal bowl frothy peaks
+piping bag stand and tips | 0.6 | 0.1-0.25 | upright pastry tool stand

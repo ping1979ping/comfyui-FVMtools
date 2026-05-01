@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late morning workshop session | 0.9 | - | -
+midday studio class | 0.95 | - | -
+early afternoon class hour | 1.0 | - | -
+mid-afternoon working glow | 0.85 | - | -
+late afternoon raking light | 0.8 | - | -
+evening studio session | 0.75 | - | -
+window-lit overcast day | 0.7 | - | -
+overhead lamp dominated lighting | 0.85 | - | -
+soft daylight mixed with bulbs | 0.85 | - | -
+dim studio at end of class | 0.5 | - | -

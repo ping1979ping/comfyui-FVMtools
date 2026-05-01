@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bright graphic kid t-shirt | 0.85 | 0.1-0.3 | cartoon-printed casual top
+denim shorts cuffed | 0.7 | 0.1-0.3 | rolled cotton bottoms
+flip-flop rubber sandals | 0.85 | 0.05-0.15 | thong footwear
+sunglasses on top of head | 0.65 | 0.05-0.1 | folded frames
+sticky kid hands wiped on shirt | 0.7 | 0.05-0.1 | smeared treat residue
+crumpled couple of dollars | 0.7 | 0.05-0.15 | held cash wad
+neighborhood kid backpack | 0.5 | 0.1-0.25 | strapped colorful pack
+roll of quarters | 0.55 | 0.05-0.1 | wrapped coin tube
+jellies plastic sandals | 0.5 | 0.05-0.15 | translucent kid sandals
+ankle socks with patterns | 0.5 | 0.05-0.1 | short patterned socks
+striped tank top | 0.6 | 0.1-0.3 | summer sleeveless shirt
+floppy fishing-style hat | 0.55 | 0.05-0.15 | wide brim summer hat
+bright string ankle bracelet | 0.4 | 0.05-0.05 | woven thread band
+wallet with velcro flap | 0.5 | 0.05-0.1 | kid-sized wallet

@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+colorful kid backpack on shoulder | 1.0 | 0.1-0.3 | strapped patterned schoolbag
+art project paper rolled in hand | 0.7 | 0.05-0.2 | rolled child drawing
+lunchbox swinging from hand | 0.85 | 0.05-0.2 | insulated colorful container
+juice pouch with straw | 0.7 | 0.05-0.15 | foil drink pouch
+kid clutching teddy bear | 0.55 | 0.1-0.25 | plush soft animal
+school folder with worksheets | 0.6 | 0.05-0.2 | papers in patterned binder
+jacket tied around waist | 0.6 | 0.05-0.2 | tied-on coat layer
+report card envelope | 0.45 | 0.05-0.15 | sealed paper envelope
+half-eaten granola bar | 0.6 | 0.05-0.15 | wrapper-rip snack
+permission slip waving | 0.55 | 0.05-0.15 | folded school paper
+keychain on backpack zipper | 0.6 | 0.05-0.1 | hanging dangle decoration
+sticker on cheek from school | 0.5 | 0.05-0.1 | gold star award
+crayon in fist | 0.5 | 0.05-0.1 | colored wax stick
+note from teacher pinned | 0.45 | 0.05-0.15 | clipped index card

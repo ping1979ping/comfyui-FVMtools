@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+raised wooden garden bed rows | 1.0 | 0.5-1.0 | timber-framed planter beds
+backyard greenhouse glass small | 0.55 | 0.3-0.6 | gridded glazing structure
+tall corn stalk row | 0.7 | 0.4-0.8 | green vertical leafy stalks
+chicken-wire garden fence | 0.7 | 0.3-0.7 | hexagonal mesh barrier
+sunflower row tall | 0.7 | 0.4-0.8 | yellow-bloom giant flowers
+trellised tomato vines | 0.85 | 0.4-0.8 | climbing vines on stakes
+old wooden compost bin | 0.55 | 0.2-0.5 | weathered wood box
+dirt path between beds | 0.85 | 0.4-0.8 | bare earth walking strip
+fruit tree at garden edge | 0.55 | 0.3-0.6 | apple or pear tree
+backyard garden shed | 0.6 | 0.3-0.6 | painted small outbuilding
+clear summer sky | 0.85 | 0.4-1.0 | bright blue overhead
+painted garden gate | 0.55 | 0.2-0.5 | wooden swinging entry
+distant pollinator wildflower bed | 0.55 | 0.3-0.6 | scattered colorful blooms

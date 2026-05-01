@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bright kid swimsuit wet | 1.0 | 0.1-0.3 | colorful soaked bathing suit
+blue swim trunks | 0.7 | 0.1-0.3 | patterned wet shorts
+neon arm floaties | 0.55 | 0.1-0.25 | inflatable arm bands
+striped towel cape style | 0.7 | 0.1-0.3 | terry cloth wrap
+flip-flop rubber sandals | 0.7 | 0.05-0.15 | thong footwear
+sun hat with strap | 0.55 | 0.05-0.15 | floppy summer cap
+SPF sunscreen tube | 0.65 | 0.05-0.15 | white plastic sunblock
+pool noodle around waist | 0.55 | 0.1-0.25 | foam float tube
+goggles on forehead | 0.55 | 0.05-0.1 | rubber strap eyewear
+bucket of water balloons | 0.7 | 0.1-0.25 | filled balloon container
+plastic kid sand-shovel | 0.5 | 0.05-0.15 | colorful digging tool
+soggy stuffed animal forgotten | 0.4 | 0.05-0.15 | wet plush toy
+sticker on wet cheek | 0.45 | 0.05-0.05 | small kid decoration
+elastic hair tie | 0.45 | 0.05-0.05 | rubber band

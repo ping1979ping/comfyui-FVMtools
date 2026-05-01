@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ruffled cotton baking apron | 1.0 | 0.1-0.3 | stitched ruffle work cover
+tied bandana hair wrap | 0.6 | 0.05-0.15 | folded fabric headband
+dusted floury cheek smudge | 0.65 | 0.05-0.1 | white powder mark on skin
+stack of recipe cards held | 0.7 | 0.05-0.15 | handwritten index cards
+old grandmother's cookbook | 0.65 | 0.1-0.25 | worn hardcover bound book
+silicone oven mitts pair | 0.7 | 0.05-0.2 | flexible heat-resistant gloves
+embroidered tea towel folded | 0.65 | 0.05-0.15 | decorative kitchen cloth
+mug of warm coffee nearby | 0.7 | 0.05-0.15 | ceramic steaming drink
+rolled-up sleeve cuff | 0.55 | 0.05-0.1 | cuffed shirt fabric
+tied half-apron with pocket | 0.65 | 0.1-0.25 | waist-tied work pouch
+flour shaker tin | 0.6 | 0.05-0.15 | perforated dispenser cylinder
+small kitchen scale | 0.65 | 0.05-0.15 | digital weighing platform
+striped dish towel on shoulder | 0.6 | 0.05-0.15 | draped striped cotton
+piping bag with star tip | 0.65 | 0.05-0.2 | pastry decorating tool

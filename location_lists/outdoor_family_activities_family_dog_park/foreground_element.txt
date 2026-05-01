@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dog leash trailing on ground | 1.0 | 0.05-0.2 | nylon retracted leash strap
+tennis ball slobber-coated | 0.95 | 0.05-0.1 | yellow felt fuzzy ball
+rubber chew toy | 0.7 | 0.05-0.15 | brightly colored chewy
+treat pouch on hip | 0.7 | 0.05-0.15 | belt-mounted treat bag
+dog tag jingling close | 0.65 | 0.05-0.05 | small ID metal disc
+clicker training device | 0.55 | 0.05-0.1 | small handheld clicker
+folded paper leash bag | 0.6 | 0.05-0.1 | rolled poo bag
+collar with bone tag | 0.7 | 0.05-0.1 | leather strap with charm
+tug toy rope chew | 0.6 | 0.05-0.15 | knotted braided rope
+biscuits in palm | 0.6 | 0.05-0.1 | dog-shaped treats
+muddy paws on grass | 0.55 | 0.05-0.15 | dirty pads on green
+ball thrower in hand | 0.7 | 0.05-0.15 | scoop chucker held
+dog water bottle squeeze | 0.55 | 0.05-0.15 | drink-on-go bottle
+tug-of-war frisbee | 0.55 | 0.05-0.15 | flexible flying disc

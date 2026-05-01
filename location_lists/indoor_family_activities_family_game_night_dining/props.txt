@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+cozy cardigan sweater | 0.7 | 0.1-0.3 | knit button-up layer
+striped pajama top | 0.55 | 0.1-0.3 | plaid lounging shirt
+bright reading glasses | 0.65 | 0.05-0.1 | colorful frame eyewear
+pencil tucked behind ear | 0.55 | 0.05-0.05 | wooden writing instrument
+score keeper notepad in lap | 0.65 | 0.05-0.15 | spiral writing pad
+laughter-tear tissue | 0.4 | 0.05-0.1 | crumpled white paper tissue
+trivia question card stack | 0.65 | 0.05-0.15 | numbered question cards
+sand timer 60-second | 0.6 | 0.05-0.15 | mini hourglass
+mug of coffee or cocoa | 0.7 | 0.05-0.15 | ceramic warm beverage
+ceramic snack bowl | 0.7 | 0.05-0.15 | small dish of munchies
+folded throw blanket on chair | 0.6 | 0.1-0.3 | draped knit cover
+cozy slippers under chair | 0.55 | 0.05-0.15 | plush warm footwear
+bowl of buttered popcorn | 0.65 | 0.1-0.25 | mounded popped corn
+phone face down on table | 0.55 | 0.05-0.1 | screen-down silenced device

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-morning beach arrival | 0.85 | - | -
+late morning bright sun | 0.95 | - | -
+midday peak sun overhead | 0.9 | - | -
+early afternoon hot light | 1.0 | - | -
+mid-afternoon golden warmth | 0.95 | - | -
+late afternoon long shadows | 0.85 | - | -
+just before sunset golden glow | 0.85 | - | -
+post-sunset blue hour | 0.6 | - | -
+hazy summer noon | 0.7 | - | -
+breezy morning beach hour | 0.7 | - | -

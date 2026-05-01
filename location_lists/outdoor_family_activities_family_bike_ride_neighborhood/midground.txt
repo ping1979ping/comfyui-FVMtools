@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+family bike formation on street | 1.0 | 0.4-0.8 | row of parents and kids on bikes
+kids' bike with training wheels | 0.7 | 0.2-0.5 | small bike with stabilizers
+adult cruiser bicycle | 0.85 | 0.2-0.5 | upright comfort bike
+mountain bike with knobby tires | 0.7 | 0.2-0.5 | rugged off-road bicycle
+bike trailer carrying toddler | 0.55 | 0.2-0.5 | enclosed pull-behind seat
+streamers on handlebars | 0.7 | 0.05-0.15 | colorful flowing tassels
+training wheels in a tilt | 0.55 | 0.05-0.2 | small support wheels
+bike lane painted on road | 0.55 | 0.2-0.5 | green-painted lane marker
+shared sidewalk pedestrian zone | 0.6 | 0.2-0.5 | concrete walkway side
+neighborhood crossing intersection | 0.55 | 0.2-0.5 | four-way road meeting
+rear bike rack with packs | 0.55 | 0.05-0.2 | strapped cargo platform
+attached child bike seat | 0.5 | 0.1-0.3 | molded plastic kid carrier
+yellow speed bump in road | 0.5 | 0.1-0.3 | painted hump on asphalt
+neighborhood lemonade stand | 0.45 | 0.2-0.5 | kid's plywood beverage booth

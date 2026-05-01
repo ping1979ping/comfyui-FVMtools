@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+ripe tomato in dirty hand | 1.0 | 0.05-0.2 | red juicy globe in palm
+green bean held in fingers | 0.7 | 0.05-0.15 | slim pod legume
+small garden trowel | 0.85 | 0.05-0.15 | rust-spotted hand spade
+muddy gardening gloves | 0.85 | 0.1-0.25 | dirt-stained canvas gloves
+freshly pulled carrot with greens | 0.75 | 0.05-0.2 | orange root with leafy top
+leaf with caterpillar | 0.5 | 0.05-0.1 | green leaf with insect
+pruning shears in hand | 0.7 | 0.05-0.15 | curved-blade clippers
+seedling in plastic pot | 0.65 | 0.05-0.15 | tiny young plant
+strawberry plucked off vine | 0.7 | 0.05-0.15 | red small berry
+clipped basil sprig | 0.6 | 0.05-0.15 | green herb leaves
+sunflower seed packet | 0.55 | 0.05-0.1 | printed paper envelope
+zucchini being harvested | 0.65 | 0.05-0.2 | dark green long squash
+yellow flower of squash | 0.55 | 0.05-0.15 | trumpet-shaped bloom
+cherry tomato cluster on vine | 0.7 | 0.05-0.2 | grouped red fruits
