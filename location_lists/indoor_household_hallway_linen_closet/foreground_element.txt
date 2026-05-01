@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+painted plank flooring | 1.0 | 0.4-0.9 | softly worn boards
+narrow runner rug | 0.85 | 0.3-0.7 | woven cloth strip
+small step stool nearby | 0.65 | 0.05-0.15 | painted timber
+folded washcloth small stack | 0.85 | 0.05-0.15 | small terry pile
+linen sachet on shelf | 0.85 | 0.05-0.1 | embroidered pouch
+labeled tin canister | 0.7 | 0.05-0.1 | painted small box
+glass jar of cotton balls | 0.65 | 0.05-0.1 | clear lidded vessel
+folded blanket pile | 0.85 | 0.1-0.25 | softly draped textiles
+extra pillow on shelf | 0.85 | 0.05-0.15 | soft padded form
+spare hanger bundle | 0.7 | 0.05-0.15 | matched velvet pile
+folded apron set | 0.6 | 0.05-0.15 | washed cotton drapes
+small wicker basket | 0.85 | 0.1-0.25 | natural reed weave

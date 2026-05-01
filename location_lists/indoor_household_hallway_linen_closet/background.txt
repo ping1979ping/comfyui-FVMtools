@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+floor-to-ceiling shelving wall | 1.0 | 0.7-1.0 | painted timber boards
+deep open shelves with linens | 0.95 | 0.6-1.0 | stacked folded textiles
+beadboard back closet wall | 0.85 | 0.5-0.9 | painted vertical planking
+white painted plain plaster | 0.9 | 0.6-1.0 | smooth matte paint
+narrow tall painted door | 0.85 | 0.4-0.7 | flush painted leaf
+warm gray painted wall | 0.7 | 0.5-0.9 | softly matte finish
+patterned wallpaper interior | 0.65 | 0.4-0.8 | softly faded print
+sliding pocket door wall | 0.7 | 0.4-0.6 | flush painted leaf
+shelf-edge labeled fronts | 0.7 | 0.3-0.6 | small placard strips
+small overhead transom slot | 0.55 | 0.2-0.4 | divided pane band

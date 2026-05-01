@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+backyard wood fence panels | 1.0 | 0.5-0.9 | weathered timber slats
+neighboring shed structure | 0.85 | 0.4-0.7 | painted clapboard wall
+mature backyard hedge | 0.85 | 0.4-0.7 | dense clipped foliage
+distant tree canopy line | 0.95 | 0.4-0.8 | layered green silhouette
+open sky beyond yard | 0.95 | 0.4-0.9 | open daylight expanse
+trellised pole-bean wall | 0.85 | 0.4-0.7 | climbing leafy vines
+ivy-clad fence panel | 0.7 | 0.3-0.6 | trailing leafy cover
+small greenhouse structure | 0.6 | 0.3-0.6 | clear glazed walls
+flowering perennial border | 0.85 | 0.3-0.6 | colorful blooming patch
+neighboring backyard view | 0.7 | 0.3-0.6 | softly distant houses

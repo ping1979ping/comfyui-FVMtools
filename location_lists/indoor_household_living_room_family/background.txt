@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+warm beige painted wall | 1.0 | 0.7-1.0 | softly matte pigment
+shiplap accent feature wall | 0.85 | 0.5-0.9 | overlapped board joint
+gallery photo arrangement wall | 0.85 | 0.5-0.9 | mixed framed prints
+exposed brick fireplace wall | 0.75 | 0.5-0.9 | aged warm masonry
+painted built-in bookcase wall | 0.85 | 0.5-0.9 | painted shelving cubbies
+soft cream paneled wall | 0.8 | 0.6-1.0 | profiled wainscot
+patterned wallpaper feature | 0.65 | 0.4-0.8 | softly faded print
+sliding patio door wall | 0.7 | 0.4-0.8 | clean glazed panels
+warm gray plaster wall | 0.8 | 0.6-1.0 | subtly mottled finish
+sage painted wall | 0.65 | 0.5-0.9 | softly chalky pigment
+exposed timber post wall | 0.6 | 0.4-0.8 | rough-sawn structural
+window seat back wall | 0.7 | 0.4-0.7 | recessed cushioned alcove

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright shop morning light | 0.9 | - | -
+fluorescent task lit interior | 1.0 | - | -
+midday window slot brightness | 0.8 | - | -
+warm late-afternoon glow | 0.75 | - | -
+overcast diffused daylight | 0.8 | - | -
+evening overhead lit | 0.85 | - | -
+night project lamp pool | 0.75 | - | -
+weekend afternoon brightness | 0.8 | - | -
+early morning quiet light | 0.7 | - | -
+dim dusk shop hush | 0.65 | - | -

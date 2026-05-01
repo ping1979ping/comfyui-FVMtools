@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright skies outside | 0.85 | - | -
+gentle rain on small window | 0.8 | - | -
+overcast diffused light | 0.85 | - | -
+muggy summer air | 0.6 | - | -
+crisp autumn outdoor brightness | 0.7 | - | -
+quiet snowy backdrop | 0.6 | - | -
+calm humid stillness | 0.7 | - | -
+cool spring breeze through vent | 0.7 | - | -
+hazy warm afternoon | 0.65 | - | -
+distant thunder rumble | 0.5 | - | -

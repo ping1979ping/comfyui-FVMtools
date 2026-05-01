@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+vintage suitcase leather strap | 0.8 | 0.05-0.2 | aged tanned hide
+old framed portrait photo | 0.75 | 0.05-0.15 | sepia-toned print
+boxed Christmas ornaments | 0.85 | 0.1-0.25 | tissue-wrapped baubles
+yellowed paperback novel | 0.7 | 0.05-0.15 | aged printed pages
+broken table lamp | 0.6 | 0.05-0.15 | dusty ceramic base
+mothball-scented quilt | 0.65 | 0.1-0.25 | folded patchwork cloth
+old typewriter case | 0.55 | 0.05-0.15 | hardshell carry case
+empty picture frame stack | 0.7 | 0.1-0.25 | leaning ornate edges
+boxed childhood letters | 0.6 | 0.05-0.15 | tied paper bundle
+dusty record album crate | 0.65 | 0.1-0.25 | cardboard sleeves
+old vacuum cleaner | 0.55 | 0.1-0.25 | upright dusty unit
+forgotten music box | 0.55 | 0.05-0.1 | small ornate wood

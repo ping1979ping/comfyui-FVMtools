@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted shelf brackets | 1.0 | 0.2-0.5 | white profiled metal
+recessed ceiling downlight | 0.85 | 0.1-0.3 | flush trim aperture
+profiled crown molding | 0.85 | 0.1-0.3 | painted decorative edge
+adjustable shelf pin holes | 0.85 | 0.05-0.15 | drilled timber row
+narrow door casing trim | 0.95 | 0.1-0.3 | painted profiled edge
+chair-rail trim band | 0.6 | 0.1-0.3 | painted profile line
+custom labeled cubby plates | 0.7 | 0.05-0.15 | small name placards
+profiled cabinet face frames | 0.7 | 0.2-0.5 | classic shaker rails
+shelf-edge LED strip | 0.7 | 0.1-0.3 | warm linear glow
+recessed wall niche shelf | 0.6 | 0.1-0.3 | painted inset cubby

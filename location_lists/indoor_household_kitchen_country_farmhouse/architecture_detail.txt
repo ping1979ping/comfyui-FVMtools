@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed ceiling beams | 1.0 | 0.3-0.7 | rough-sawn timber
+plate rail along upper wall | 0.85 | 0.2-0.5 | painted display ledge
+chair rail trim midway | 0.8 | 0.1-0.3 | profiled wood molding
+cottage-style window mullions | 0.85 | 0.2-0.5 | small divided panes
+painted tongue-and-groove ceiling | 0.7 | 0.3-0.6 | linear board pattern
+deep window sill ledge | 0.75 | 0.1-0.3 | thick painted shelf
+cast iron stove flue pipe | 0.65 | 0.1-0.3 | matte black metal
+profiled cabinet face frames | 0.8 | 0.2-0.5 | classic shaker rails
+hand-forged door pulls | 0.75 | 0.05-0.15 | dark iron hardware
+pressed tin ceiling panels | 0.6 | 0.3-0.6 | embossed metal squares

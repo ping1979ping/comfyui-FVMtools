@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright utility morning light | 1.0 | - | -
+mid-morning soft glow | 0.9 | - | -
+midday clean brightness | 0.9 | - | -
+warm afternoon spill | 0.8 | - | -
+overcast diffused daylight | 0.85 | - | -
+evening overhead lit | 0.8 | - | -
+late-night appliance glow | 0.6 | - | -
+early dusk fade | 0.65 | - | -
+fluorescent task brightness | 0.75 | - | -
+soft window-only daylight | 0.85 | - | -

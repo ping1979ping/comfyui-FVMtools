@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+bin slat front planks | 0.95 | 0.3-0.6 | weathered horizontal boards
+bin lid hinge hardware | 0.85 | 0.05-0.15 | painted iron joint
+bin corner post profile | 0.95 | 0.2-0.5 | rough timber column
+fence top cap board | 0.85 | 0.1-0.3 | painted shaped edge
+wire mesh frame staples | 0.7 | 0.05-0.15 | small metal fasteners
+exposed ground hardware-cloth | 0.6 | 0.1-0.3 | wire base layer
+bin removable front slat | 0.85 | 0.1-0.3 | slide-in board
+adjacent fence batten board | 0.85 | 0.4-0.8 | vertical timber slat
+gutter downspout end | 0.65 | 0.1-0.3 | painted metal pipe
+small painted bin label | 0.55 | 0.05-0.15 | weathered wood placard

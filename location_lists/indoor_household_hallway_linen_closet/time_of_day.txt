@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+flush ceiling bulb glow | 1.0 | - | -
+soft mid-morning dim | 0.75 | - | -
+midday hallway-lit interior | 0.8 | - | -
+warm afternoon spill | 0.7 | - | -
+overcast dim diffusion | 0.75 | - | -
+evening overhead lit | 0.85 | - | -
+late-night dim glow | 0.7 | - | -
+shelf-edge LED brightness | 0.7 | - | -
+soft early dawn dim | 0.65 | - | -
+flashlight beam pool | 0.55 | - | -

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stacked detergent pods jar | 0.8 | 0.05-0.15 | clear lidded glass
+fabric softener bottle | 0.75 | 0.05-0.15 | plastic colored vessel
+clothespin in painted bin | 0.7 | 0.05-0.15 | small wood pegs
+mesh delicates bag hanging | 0.65 | 0.05-0.15 | soft fine net
+spray-bottle stain remover | 0.7 | 0.05-0.1 | trigger nozzle plastic
+folded ironing cloth | 0.6 | 0.05-0.15 | smooth pressed pad
+wicker hamper with lid | 0.7 | 0.1-0.25 | woven natural reed
+hanger rack of empty hangers | 0.8 | 0.1-0.25 | matched velvet finish
+small succulent on shelf | 0.65 | 0.05-0.1 | concrete planter pot
+patterned wall calendar | 0.55 | 0.05-0.15 | printed monthly grid
+sock pair clipped to line | 0.6 | 0.05-0.15 | small drying clip
+linen sachet on shelf | 0.55 | 0.05-0.1 | embroidered pouch

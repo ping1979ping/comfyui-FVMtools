@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright morning outside | 0.95 | - | -
+gentle rain on bay window | 0.85 | - | -
+overcast cozy mood | 0.85 | - | -
+warm summer breeze | 0.7 | - | -
+crisp autumn brightness | 0.85 | - | -
+quiet snowfall beyond glass | 0.7 | - | -
+breezy spring fresh openness | 0.8 | - | -
+calm dry afternoon | 0.85 | - | -
+hazy summer warmth | 0.7 | - | -
+distant rumble of thunder | 0.5 | - | -

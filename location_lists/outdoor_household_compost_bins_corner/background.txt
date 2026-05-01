@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+weathered wood-fence corner | 1.0 | 0.6-1.0 | overlapping timber slats
+overgrown shrubbery flank | 0.95 | 0.4-0.8 | dense leafy growth
+neighboring yard tree line | 0.85 | 0.4-0.7 | layered green canopy
+back of garage exterior | 0.7 | 0.4-0.7 | painted clapboard wall
+ivy-clad fence panel | 0.85 | 0.4-0.8 | trailing leafy cover
+gravel path leading to bins | 0.7 | 0.3-0.5 | small stone surface
+mature backyard hedge | 0.85 | 0.4-0.7 | dense clipped foliage
+small garden shed corner | 0.65 | 0.3-0.5 | weathered cedar siding
+exposed open sky beyond | 0.85 | 0.3-0.7 | open daylight expanse
+nearby raised garden bed | 0.7 | 0.3-0.5 | timber-edged soil patch

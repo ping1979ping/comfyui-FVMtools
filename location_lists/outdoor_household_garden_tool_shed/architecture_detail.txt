@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+shed door iron hinges | 0.95 | 0.05-0.2 | painted strap hardware
+shed door latch hook | 0.85 | 0.05-0.1 | small iron clasp
+exposed roof rafters inside | 0.85 | 0.3-0.6 | rough timber slope
+small gable end vent | 0.7 | 0.05-0.2 | painted louver slot
+shed window divided sashes | 0.85 | 0.1-0.3 | painted small panes
+peeling paint on trim | 0.7 | 0.05-0.2 | softly worn finish
+exposed nail-head boards | 0.65 | 0.05-0.2 | scattered rusted points
+worn cedar shingle siding | 0.85 | 0.3-0.6 | aged overlapping shakes
+chunky pegboard hooks | 0.85 | 0.1-0.3 | painted metal pegs
+small chimney stovepipe | 0.5 | 0.1-0.3 | matte black flue

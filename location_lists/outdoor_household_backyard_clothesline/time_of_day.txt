@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning drying light | 1.0 | - | -
+warm late-morning sun | 0.95 | - | -
+midday strong drying light | 0.95 | - | -
+warm afternoon glow | 0.9 | - | -
+golden late-day spill | 0.85 | - | -
+overcast diffused softness | 0.75 | - | -
+clear mid-morning brightness | 0.95 | - | -
+pre-dusk fade | 0.7 | - | -
+breezy after-rain clearing | 0.7 | - | -
+hazy summer afternoon | 0.8 | - | -

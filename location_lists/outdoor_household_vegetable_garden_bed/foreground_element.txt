@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+mulched garden path | 1.0 | 0.4-0.9 | shredded fibrous covering
+crumbly garden soil | 0.95 | 0.3-0.7 | dark earthy crumb
+flagstone stepping pavers | 0.7 | 0.3-0.6 | flat irregular slabs
+ripe tomato cluster on vine | 0.95 | 0.05-0.2 | red glossy fruit
+fresh leafy lettuce row | 0.95 | 0.1-0.3 | crisp green rosettes
+basket of just-picked produce | 0.85 | 0.1-0.25 | woven natural tray
+small hand trowel in dirt | 0.85 | 0.05-0.1 | metal blade timber grip
+knee-pad cushion on ground | 0.7 | 0.05-0.15 | small foam pad
+watering can on path | 0.85 | 0.05-0.15 | metal spout vessel
+pair of dirty garden gloves | 0.85 | 0.05-0.15 | dirty fabric pair
+ladybug on leaf | 0.55 | 0.05-0.1 | small spotted insect
+fallen leaves at bed edge | 0.7 | 0.05-0.2 | dry colorful scatter

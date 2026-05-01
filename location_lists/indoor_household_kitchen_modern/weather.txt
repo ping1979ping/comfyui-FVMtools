@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright outdoor skies | 0.9 | - | -
+soft overcast diffusion | 0.85 | - | -
+gentle rain on windows | 0.7 | - | -
+muggy summer air through screen | 0.6 | - | -
+calm cool indoor stillness | 0.95 | - | -
+crisp autumn brightness | 0.7 | - | -
+hazy cloudless warmth | 0.7 | - | -
+quiet snowy backdrop | 0.55 | - | -
+breezy spring openness | 0.7 | - | -
+dim rainy afternoon mood | 0.65 | - | -

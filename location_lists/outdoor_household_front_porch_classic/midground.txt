@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+porch swing on chains | 1.0 | 0.4-0.7 | painted wood seat
+two rocking chairs paired | 0.95 | 0.3-0.6 | painted spindle frames
+small wicker side table | 0.95 | 0.2-0.4 | natural woven surface
+hanging basket of flowers | 0.95 | 0.2-0.5 | trailing colorful blooms
+console table along wall | 0.7 | 0.3-0.5 | narrow painted surface
+porch potted plant cluster | 0.95 | 0.3-0.6 | tiered terracotta vessels
+freestanding lantern stand | 0.7 | 0.1-0.3 | tall metal candle holder
+folded outdoor rug | 0.7 | 0.3-0.6 | woven all-weather pad
+hanging porch flag | 0.7 | 0.2-0.4 | colorful printed cloth
+small bench beside door | 0.75 | 0.3-0.5 | weathered timber seat
+porch ceiling fan | 0.7 | 0.2-0.4 | wood blade slow rotation
+small garden gnome figure | 0.55 | 0.05-0.15 | painted ceramic figure

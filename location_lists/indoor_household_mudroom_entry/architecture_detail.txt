@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+profiled crown molding | 0.85 | 0.1-0.3 | painted decorative edge
+tall baseboard trim | 0.9 | 0.1-0.3 | painted wide skirting
+chair rail midway band | 0.8 | 0.1-0.3 | profiled wood molding
+profiled chunky hooks | 0.95 | 0.1-0.3 | turned painted pegs
+deep window sill ledge | 0.75 | 0.1-0.3 | thick painted shelf
+arched cubby openings | 0.65 | 0.2-0.4 | softly rounded recess
+flush ceiling fixture | 0.85 | 0.1-0.3 | painted pendant cap
+front door transom panel | 0.7 | 0.2-0.4 | divided glass strip
+beadboard ceiling planks | 0.65 | 0.3-0.6 | painted board grid
+custom labeled cubby plates | 0.65 | 0.05-0.15 | small name placards

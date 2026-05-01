@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy rain heard outside | 0.85 | - | -
+overcast still atmosphere | 0.85 | - | -
+cold winter chill | 0.85 | - | -
+muggy summer humidity | 0.75 | - | -
+calm dry afternoon | 0.85 | - | -
+distant thunder rumble | 0.7 | - | -
+sump pump activity hum | 0.6 | - | -
+breezy spring vent flow | 0.6 | - | -
+snowfall above ground | 0.65 | - | -
+hazy still warmth | 0.65 | - | -

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+framed seasonal print | 0.7 | 0.1-0.25 | matted wall art
+woven storage basket | 0.85 | 0.1-0.25 | natural reed weave
+ceramic key bowl | 0.8 | 0.05-0.15 | small rounded dish
+small chalkboard sign | 0.7 | 0.05-0.15 | painted slate panel
+table lamp with shade | 0.7 | 0.05-0.15 | rounded ceramic base
+hooks loaded with bags | 0.85 | 0.1-0.25 | mixed strap layers
+folded throw on bench | 0.7 | 0.05-0.15 | knitted draped cloth
+boot brush mat | 0.7 | 0.05-0.15 | bristled scrubbing pad
+hanging mirror frame | 0.7 | 0.1-0.25 | painted profiled glass
+small entry stool | 0.65 | 0.05-0.15 | painted timber seat
+wall calendar pinned | 0.55 | 0.05-0.15 | printed paper sheet
+hanging plant on hook | 0.6 | 0.05-0.15 | cascading pot

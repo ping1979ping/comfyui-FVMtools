@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+T-bar clothesline crossarm | 1.0 | 0.2-0.5 | painted metal cross
+turn-tightener at post | 0.85 | 0.05-0.15 | small crank fitting
+pulley clothesline wheel | 0.7 | 0.05-0.15 | small mounted pulley
+fence post cap profile | 0.85 | 0.1-0.3 | painted shaped top
+gravel path edging strip | 0.7 | 0.1-0.3 | metal border line
+fence panel batten board | 0.85 | 0.4-0.8 | vertical timber slat
+small garden gate hinge | 0.7 | 0.05-0.15 | painted iron joint
+backyard string lights | 0.65 | 0.2-0.5 | hung bulb strand
+prop stick notched fork | 0.55 | 0.05-0.15 | crude timber Y
+laundry-line tension turnbuckle | 0.65 | 0.05-0.15 | small painted hardware

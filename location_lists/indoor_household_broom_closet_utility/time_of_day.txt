@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+flush ceiling bulb glow | 1.0 | - | -
+mid-morning soft glow | 0.7 | - | -
+midday clean brightness | 0.7 | - | -
+warm afternoon spill | 0.65 | - | -
+overcast diffused mood | 0.7 | - | -
+evening overhead lit | 0.85 | - | -
+late-night dim glow | 0.7 | - | -
+soft early dawn dim | 0.65 | - | -
+fluorescent task brightness | 0.85 | - | -
+flashlight beam pool | 0.6 | - | -

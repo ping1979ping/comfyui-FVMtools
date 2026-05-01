@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright skies outside | 0.85 | - | -
+gentle rain on small window | 0.7 | - | -
+overcast diffused mood | 0.85 | - | -
+muggy summer stillness | 0.6 | - | -
+crisp autumn brightness | 0.7 | - | -
+quiet snowfall beyond glass | 0.6 | - | -
+calm humid evening | 0.65 | - | -
+breezy spring fresh air | 0.7 | - | -
+hazy warm afternoon | 0.65 | - | -
+dim rainy mood | 0.7 | - | -

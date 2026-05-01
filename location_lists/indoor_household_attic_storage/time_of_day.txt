@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+dim morning gable light | 0.85 | - | -
+midday slatted dust beams | 0.85 | - | -
+warm afternoon shaft of light | 0.85 | - | -
+overcast dim diffusion | 0.85 | - | -
+golden late-day glow | 0.75 | - | -
+twilight shadowed hush | 0.85 | - | -
+bare bulb yellow glow | 0.9 | - | -
+deep night shadow | 0.7 | - | -
+flashlight beam pool | 0.7 | - | -
+soft early dawn dim | 0.7 | - | -

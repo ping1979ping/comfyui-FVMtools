@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+painted concrete slab floor | 1.0 | 0.4-0.9 | sealed gray surface
+unpainted poured concrete floor | 0.85 | 0.4-0.9 | rough cured gray
+small entry mat | 0.7 | 0.05-0.2 | textured rubber pad
+coiled garden hose | 0.65 | 0.05-0.2 | green rubber loop
+labeled storage box stack | 0.9 | 0.2-0.5 | layered cardboard pile
+floor drain center | 0.75 | 0.05-0.15 | round metal grate
+plastic storage tote on floor | 0.85 | 0.1-0.25 | clear lidded box
+litter box for cat | 0.55 | 0.05-0.15 | low plastic tray
+work boots beside step | 0.6 | 0.05-0.15 | scuffed leather pair
+push broom on floor | 0.7 | 0.05-0.15 | wide bristle head
+folded tarp pile | 0.6 | 0.05-0.2 | blue plastic stack
+spare tire on floor | 0.5 | 0.05-0.15 | rubber rim wheel

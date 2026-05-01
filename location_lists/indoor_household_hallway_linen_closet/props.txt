@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+folded sheet set with ribbon | 0.95 | 0.05-0.2 | tied bundle
+woven storage basket | 0.95 | 0.1-0.25 | natural reed weave
+spare pillow in case | 0.85 | 0.05-0.2 | soft rectangular form
+folded fluffy bath towel | 0.95 | 0.1-0.25 | crisp terry stack
+small linen sachet | 0.85 | 0.05-0.1 | embroidered pouch
+glass jar of cotton swabs | 0.65 | 0.05-0.1 | clear lidded vessel
+hanger pile clean clothes | 0.7 | 0.1-0.25 | layered fabric items
+folded children-bedding set | 0.7 | 0.05-0.15 | small printed cotton
+spare bath rug rolled | 0.7 | 0.05-0.15 | tightly bound cloth
+extra hanger set | 0.85 | 0.05-0.15 | matched velvet finish
+labeled spice tin set | 0.55 | 0.05-0.1 | painted small canisters
+hanging shoe organizer | 0.6 | 0.1-0.25 | fabric pocket strip

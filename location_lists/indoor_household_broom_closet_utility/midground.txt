@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+upright vacuum cleaner unit | 1.0 | 0.3-0.6 | tall plastic body
+mop in bucket on floor | 0.95 | 0.2-0.4 | painted plastic pail
+broom leaning against wall | 1.0 | 0.2-0.4 | tall wood handle
+duster on hook | 0.85 | 0.1-0.3 | feathered cleaning tool
+ironing board folded vertical | 0.75 | 0.2-0.4 | padded cloth top
+narrow shelving column | 0.95 | 0.4-0.7 | open painted shelves
+storage bin column | 0.85 | 0.3-0.5 | stacked plastic boxes
+hanging cleaning caddy | 0.85 | 0.1-0.3 | handled supply tote
+folded step stool | 0.7 | 0.1-0.3 | painted timber frame
+hanging dustpan and brush | 0.85 | 0.1-0.3 | clipped pair of tools

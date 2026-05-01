@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+hex tile flooring | 1.0 | 0.4-0.9 | small white tiles black grout
+patterned cement tile floor | 0.7 | 0.4-0.9 | bold geometric print
+woven bath rug pair | 0.95 | 0.2-0.5 | tufted absorbent cloth
+folded fluffy towel stack | 0.95 | 0.1-0.3 | crisp terry pile
+glass jar of cotton balls | 0.75 | 0.05-0.15 | clear lidded vessel
+ceramic soap pump bottle | 0.85 | 0.05-0.15 | rounded glazed dispenser
+toothbrush cup with brushes | 0.85 | 0.05-0.15 | clear ceramic vessel
+small woven storage basket | 0.85 | 0.1-0.25 | natural reed weave
+folded washcloth set | 0.85 | 0.05-0.15 | small terry stack
+plant in ceramic pot | 0.7 | 0.05-0.2 | cascading greenery
+toy duck on tub edge | 0.7 | 0.05-0.1 | yellow rubber form
+small step stool for kids | 0.7 | 0.05-0.15 | painted plastic step

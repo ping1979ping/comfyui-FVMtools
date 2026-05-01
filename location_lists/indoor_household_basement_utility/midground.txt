@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+water heater tank column | 0.95 | 0.3-0.6 | tall enamel cylinder
+furnace utility box | 0.95 | 0.4-0.7 | painted metal cabinet
+electrical breaker panel | 0.95 | 0.2-0.4 | gray metal door
+washer dryer back zone | 0.7 | 0.3-0.6 | side-by-side appliances
+metal utility shelving rows | 0.95 | 0.4-0.8 | stacked storage racks
+laundry sink basin tub | 0.8 | 0.2-0.5 | molded plastic tub
+freezer chest unit | 0.85 | 0.3-0.5 | top-load white box
+dehumidifier on floor | 0.85 | 0.2-0.4 | square plastic unit
+plastic storage bin tower | 0.85 | 0.3-0.6 | clear lidded boxes
+work tool bench against wall | 0.7 | 0.3-0.5 | freestanding worktop
+sump pump pit cover | 0.65 | 0.1-0.3 | round lid plate
+furnace ductwork branching | 0.85 | 0.3-0.6 | sheet metal trunks

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+painted plank flooring | 1.0 | 0.4-0.9 | softly worn boards
+durable vinyl utility floor | 0.85 | 0.4-0.9 | matte sheet covering
+small entry mat | 0.75 | 0.1-0.3 | textured rubber pad
+spray bottle on shelf | 0.85 | 0.05-0.1 | trigger nozzle plastic
+folded cleaning rag | 0.85 | 0.05-0.15 | crumpled small cloth
+trash bag roll | 0.7 | 0.05-0.15 | plastic perforated tube
+floor scrubber pad pile | 0.65 | 0.05-0.15 | small foam pads
+small pegboard on door back | 0.75 | 0.1-0.3 | painted hole panel
+hanging apron on hook | 0.65 | 0.05-0.15 | washed cotton drape
+broom handle row | 0.85 | 0.1-0.3 | leaning tall sticks
+small wastebasket | 0.7 | 0.05-0.15 | painted metal pail
+spill kit container | 0.6 | 0.05-0.15 | plastic lidded box

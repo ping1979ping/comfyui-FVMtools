@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+copper kettle on stovetop | 0.8 | 0.05-0.15 | hammered warm metal
+ceramic mixing bowl set | 0.85 | 0.1-0.25 | nested stoneware
+wooden rolling pin on board | 0.75 | 0.05-0.15 | smooth turned timber
+vintage scale on counter | 0.7 | 0.05-0.15 | cream enamel face
+glass cake stand with dome | 0.7 | 0.05-0.15 | clear pressed pedestal
+bunches of garlic and onions | 0.7 | 0.05-0.2 | woven plait strings
+patterned ceramic plates | 0.8 | 0.1-0.25 | hand-painted edges
+butter crock with lid | 0.65 | 0.05-0.15 | small stoneware jar
+woven bread basket | 0.75 | 0.05-0.2 | natural reed weave
+canning jars with preserves | 0.8 | 0.1-0.25 | rows of glass jars
+tin canister set | 0.7 | 0.05-0.2 | painted vintage labels
+chipped enamelware mugs | 0.65 | 0.05-0.15 | softly worn finish

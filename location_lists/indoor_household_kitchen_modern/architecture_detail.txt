@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+recessed ceiling downlights | 1.0 | 0.2-0.5 | flush trimless apertures
+slim shadow-gap baseboard | 0.85 | 0.1-0.3 | minimal trim line
+under-cabinet LED strip | 0.9 | 0.1-0.3 | warm linear glow
+flush integrated handles | 0.85 | 0.1-0.3 | recessed grip channels
+bulkhead-free ceiling line | 0.7 | 0.2-0.5 | uninterrupted plaster
+toe-kick reveal beneath cabinets | 0.8 | 0.1-0.2 | shadowed undercut
+suspended cooktop hood housing | 0.75 | 0.1-0.3 | clean ceiling mount
+oversized window above sink | 0.85 | 0.2-0.5 | slim black frame
+glass display cabinet trim | 0.6 | 0.1-0.3 | thin metal mullions
+integrated soap dispenser port | 0.6 | 0.05-0.15 | flush counter fitting

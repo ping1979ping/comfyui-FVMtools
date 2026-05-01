@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+matte white slab cabinetry wall | 1.0 | 0.7-1.0 | smooth handleless lacquer
+quartz waterfall island side | 0.9 | 0.6-1.0 | softly veined polished slab
+full-height tile backsplash wall | 0.85 | 0.6-1.0 | large-format matte porcelain
+charcoal painted accent wall | 0.7 | 0.5-0.9 | velvety mineral pigment
+floor-to-ceiling pantry doors | 0.8 | 0.6-1.0 | tall flush wood panels
+glass sliding patio door | 0.7 | 0.5-0.9 | clean polished glazing
+dove grey shaker cabinet wall | 0.75 | 0.6-1.0 | softly painted timber
+warm walnut veneer wall units | 0.8 | 0.6-1.0 | linear continuous grain
+subway tiled cooking alcove | 0.65 | 0.5-0.9 | crisp glossy ceramic
+exposed concrete feature wall | 0.6 | 0.5-0.9 | softly mottled grey slab
+floating open shelving wall | 0.7 | 0.5-0.9 | slim oak ledges over white
+mirrored splashback panel | 0.55 | 0.4-0.8 | reflective polished surface

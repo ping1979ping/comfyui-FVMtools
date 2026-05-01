@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished oak plank flooring | 1.0 | 0.4-0.9 | wide engineered boards
+large-format porcelain tile floor | 0.85 | 0.4-0.9 | matte stone-look squares
+counter edge cutting board | 0.8 | 0.1-0.3 | thick end-grain wood
+fruit bowl on island | 0.85 | 0.05-0.2 | shallow ceramic dish
+linen runner across counter | 0.7 | 0.1-0.3 | softly draped natural cloth
+counter-top espresso machine | 0.75 | 0.1-0.25 | brushed steel housing
+pendant light cluster | 0.8 | 0.1-0.3 | matte black metal shades
+counter stools at island | 0.85 | 0.2-0.5 | cushioned leather seats
+herbs in planter pots | 0.7 | 0.05-0.2 | small terracotta vessels
+open cookbook on stand | 0.55 | 0.05-0.15 | spread paper pages
+folded tea towel on rail | 0.7 | 0.05-0.15 | crisp linen weave
+ceramic utensil crock | 0.65 | 0.05-0.15 | tall cylindrical jar

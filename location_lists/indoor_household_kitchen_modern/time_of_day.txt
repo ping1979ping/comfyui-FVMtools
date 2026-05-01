@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning kitchen light | 1.0 | - | -
+soft mid-morning glow | 0.9 | - | -
+warm afternoon spill | 0.85 | - | -
+golden late-day light | 0.8 | - | -
+overcast diffused daylight | 0.85 | - | -
+evening pendant-lit warmth | 0.85 | - | -
+early dusk soft fade | 0.7 | - | -
+under-cabinet night glow | 0.7 | - | -
+clear midday brightness | 0.85 | - | -
+calm twilight ambience | 0.65 | - | -

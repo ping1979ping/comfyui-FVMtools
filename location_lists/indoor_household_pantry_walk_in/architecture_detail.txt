@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+recessed ceiling downlights | 0.95 | 0.2-0.5 | flush trimless apertures
+painted shelf brackets | 0.9 | 0.2-0.5 | white profiled metal
+under-shelf LED strips | 0.85 | 0.1-0.3 | warm linear glow
+sliding pocket door | 0.75 | 0.2-0.5 | flush painted leaf
+profiled crown molding | 0.7 | 0.1-0.3 | classic painted edge
+custom cubby niche row | 0.7 | 0.2-0.5 | painted square slots
+chalkboard label frames | 0.7 | 0.05-0.2 | small slate insets
+adjustable shelf pin holes | 0.65 | 0.05-0.15 | drilled timber row
+glass-fronted display panels | 0.6 | 0.2-0.4 | thin metal mullions
+profiled cabinet face frames | 0.7 | 0.2-0.5 | classic shaker rails

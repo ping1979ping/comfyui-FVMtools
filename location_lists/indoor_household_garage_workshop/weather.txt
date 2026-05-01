@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright outdoor day | 0.85 | - | -
+heavy rain drumming roof | 0.75 | - | -
+overcast still atmosphere | 0.85 | - | -
+hot summer humid air | 0.7 | - | -
+crisp autumn cool brightness | 0.75 | - | -
+cold winter shop chill | 0.7 | - | -
+muggy thunderstorm threat | 0.55 | - | -
+breezy spring openness | 0.7 | - | -
+calm dry afternoon | 0.85 | - | -
+distant snow outside | 0.6 | - | -

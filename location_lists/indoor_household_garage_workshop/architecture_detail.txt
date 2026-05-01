@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed ceiling joists | 0.95 | 0.3-0.7 | rough-sawn timber
+hanging fluorescent shop lights | 0.95 | 0.2-0.5 | linear suspended fixtures
+exposed conduit run | 0.85 | 0.1-0.3 | metal piping along wall
+service door to house | 0.75 | 0.2-0.4 | painted utility leaf
+floor drain in slab | 0.65 | 0.05-0.15 | round grate cover
+overhead garage door track | 0.8 | 0.1-0.3 | painted metal rail
+electrical subpanel box | 0.75 | 0.05-0.2 | grey metal cabinet
+exposed rafter tie beams | 0.65 | 0.2-0.5 | linear timber spans
+rolled-up hose reel | 0.65 | 0.1-0.3 | mounted coil spool
+ventilation exhaust fan | 0.6 | 0.05-0.2 | round wall fitting

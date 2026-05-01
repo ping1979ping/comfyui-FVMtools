@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+leaning rake and hoe set | 1.0 | 0.3-0.5 | wood-handled garden tools
+shovel against shed wall | 0.95 | 0.2-0.4 | long timber handle
+wheelbarrow parked outside | 0.95 | 0.3-0.6 | painted metal tub
+work bench inside shed | 0.85 | 0.4-0.7 | rough timber top
+hanging coil of garden hose | 0.95 | 0.2-0.4 | green rubber loop
+stack of clay flowerpots | 0.95 | 0.2-0.4 | terracotta tiered pile
+ladder leaning on wall | 0.7 | 0.2-0.4 | wood rung pair
+push lawnmower parked | 0.7 | 0.2-0.5 | painted metal deck
+trug basket of bulbs | 0.7 | 0.1-0.3 | woven natural tray
+shelf of seed packets | 0.85 | 0.2-0.4 | colorful small envelopes
+hanging gardening apron | 0.7 | 0.1-0.3 | washed canvas drape
+small potting bench | 0.85 | 0.3-0.5 | open work surface

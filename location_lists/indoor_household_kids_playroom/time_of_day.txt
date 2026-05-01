@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright cheerful morning | 1.0 | - | -
+soft mid-morning play light | 0.95 | - | -
+warm afternoon sun | 0.9 | - | -
+golden late-day spill | 0.8 | - | -
+overcast diffused softness | 0.85 | - | -
+evening lamp-lit warmth | 0.85 | - | -
+twilight bedtime hush | 0.75 | - | -
+night-light glow | 0.85 | - | -
+clear midday brightness | 0.9 | - | -
+soft early dawn dim | 0.65 | - | -

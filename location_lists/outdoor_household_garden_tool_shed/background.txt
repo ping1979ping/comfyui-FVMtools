@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+weathered cedar shed wall | 1.0 | 0.6-1.0 | aged silvery shingle
+painted shed siding panel | 0.95 | 0.6-1.0 | softly worn paint
+backyard fence behind shed | 0.85 | 0.4-0.8 | weathered timber slats
+overgrown shrubbery flank | 0.85 | 0.4-0.7 | dense leafy growth
+small shed window pane | 0.85 | 0.3-0.6 | divided glass squares
+hung tool wall inside | 0.95 | 0.5-0.9 | pegged rough planks
+pitched shed roof inside | 0.85 | 0.4-0.8 | rough rafter slope
+gravel surround behind shed | 0.7 | 0.3-0.6 | small stone bed
+ivy-clad shed exterior wall | 0.7 | 0.4-0.8 | trailing leafy cover
+small flower bed at base | 0.7 | 0.3-0.6 | colorful planted strip

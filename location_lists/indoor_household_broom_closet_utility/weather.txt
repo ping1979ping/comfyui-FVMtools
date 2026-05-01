@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright outside | 0.7 | - | -
+overcast still atmosphere | 0.85 | - | -
+muggy summer humidity | 0.65 | - | -
+crisp autumn brightness | 0.7 | - | -
+calm dry afternoon | 0.85 | - | -
+heavy rain heard outside | 0.7 | - | -
+breezy spring vent flow | 0.6 | - | -
+distant thunder rumble | 0.5 | - | -
+hazy still warmth | 0.65 | - | -
+quiet snowfall outside | 0.55 | - | -

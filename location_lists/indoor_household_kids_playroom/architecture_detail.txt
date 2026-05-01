@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+profiled chair-rail trim | 0.85 | 0.1-0.3 | painted wood molding
+tall baseboard skirting | 0.85 | 0.1-0.3 | painted wide trim
+casement window frames | 0.85 | 0.2-0.5 | painted divided sashes
+recessed ceiling downlights | 0.9 | 0.2-0.5 | flush trim apertures
+star or cloud ceiling shapes | 0.65 | 0.2-0.5 | painted decorative motifs
+crown molding ceiling line | 0.75 | 0.1-0.3 | profiled painted edge
+cubby door labeled bins | 0.7 | 0.2-0.5 | painted slot doors
+deep window sill ledge | 0.75 | 0.1-0.3 | thick painted shelf
+wall-mounted name letters | 0.65 | 0.05-0.2 | painted alphabet decor
+arched cubby openings | 0.55 | 0.2-0.4 | softly rounded recess

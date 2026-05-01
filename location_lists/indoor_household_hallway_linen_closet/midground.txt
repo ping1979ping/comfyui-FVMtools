@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+stacked folded sheet sets | 1.0 | 0.4-0.7 | smooth pressed cotton piles
+folded towel column | 0.95 | 0.3-0.6 | crisp terry stack
+woven storage basket row | 0.95 | 0.3-0.6 | natural reed bins
+labeled tote bin tier | 0.85 | 0.3-0.5 | painted handled boxes
+hanging garment bag | 0.7 | 0.2-0.4 | zipped fabric cover
+slim drawer base unit | 0.7 | 0.3-0.5 | painted shallow drawers
+shoe rack low shelf | 0.65 | 0.2-0.4 | open slatted ledge
+extra blanket roll pile | 0.85 | 0.2-0.4 | rolled folded cloth
+small step stool | 0.7 | 0.1-0.3 | painted timber
+hanging caddy slim | 0.7 | 0.1-0.3 | mounted fabric pouch
+overhead luggage shelf | 0.6 | 0.3-0.6 | tall ledge surface
+folded duvet stack top shelf | 0.7 | 0.2-0.5 | plump comforter pile

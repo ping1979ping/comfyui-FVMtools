@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+profiled crown molding | 0.85 | 0.1-0.3 | painted decorative edge
+tall baseboard trim | 0.9 | 0.1-0.3 | painted wide skirting
+chair rail tile band | 0.85 | 0.1-0.3 | profiled trim line
+recessed shower niche | 0.85 | 0.1-0.3 | tiled inset shelf
+exhaust fan vent grille | 0.85 | 0.05-0.15 | small ceiling fitting
+exposed pipe valve trim | 0.7 | 0.05-0.15 | chrome plumbing fitting
+sconce light flanking mirror | 0.85 | 0.1-0.3 | wall-mounted fixtures
+window casing painted frame | 0.7 | 0.1-0.3 | profiled timber edge
+beadboard ceiling planks | 0.6 | 0.3-0.6 | painted board grid
+recessed ceiling downlights | 0.85 | 0.2-0.5 | flush trim apertures

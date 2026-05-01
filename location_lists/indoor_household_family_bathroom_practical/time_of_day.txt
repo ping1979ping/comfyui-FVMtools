@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning routine light | 1.0 | - | -
+soft mid-morning glow | 0.85 | - | -
+midday clean brightness | 0.9 | - | -
+warm afternoon spill | 0.8 | - | -
+overcast diffused daylight | 0.85 | - | -
+evening sconce-lit warmth | 0.9 | - | -
+twilight bath-time hush | 0.85 | - | -
+night soft dim glow | 0.7 | - | -
+early dawn quiet dim | 0.7 | - | -
+calm midday softness | 0.85 | - | -

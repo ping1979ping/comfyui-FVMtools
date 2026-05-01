@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+old metal watering can | 0.95 | 0.05-0.15 | weathered painted vessel
+seed jar set with labels | 0.85 | 0.1-0.25 | clear lidded glass
+small hand trowel | 0.95 | 0.05-0.1 | wooden handle metal blade
+pruning shears on bench | 0.95 | 0.05-0.1 | spring-hinged blades
+twine ball on shelf | 0.85 | 0.05-0.1 | natural fiber bundle
+small flower pots row | 0.95 | 0.1-0.25 | terracotta tiered
+spray bottle of fertilizer | 0.7 | 0.05-0.1 | trigger nozzle plastic
+mason jar of nails | 0.7 | 0.05-0.1 | clear lidded glass
+gardening gloves dirty | 0.85 | 0.05-0.15 | leather palm pair
+sun hat on hook | 0.85 | 0.05-0.15 | woven straw brim
+small chalkboard label | 0.7 | 0.05-0.15 | painted slate panel
+empty seed packets | 0.7 | 0.05-0.1 | small printed envelopes

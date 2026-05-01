@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft early morning light | 1.0 | - | -
+warm mid-morning glow | 0.9 | - | -
+bright midday sun | 0.85 | - | -
+golden late-day spill | 0.85 | - | -
+overcast diffused softness | 0.9 | - | -
+twilight cooling fade | 0.7 | - | -
+dawn dewy stillness | 0.85 | - | -
+hazy afternoon glow | 0.8 | - | -
+post-rain bright clearing | 0.8 | - | -
+calm dusk hush | 0.7 | - | -

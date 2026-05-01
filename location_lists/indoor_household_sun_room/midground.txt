@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wicker armchair pair | 0.95 | 0.4-0.7 | natural woven seats
+upholstered chaise lounge | 0.8 | 0.3-0.6 | cushioned recline form
+small round side table | 0.85 | 0.2-0.4 | painted timber surface
+freestanding plant stand cluster | 0.95 | 0.3-0.6 | tall tiered planters
+window seat bench cushioned | 0.85 | 0.3-0.6 | built-in padded bench
+rattan coffee table | 0.85 | 0.3-0.5 | woven natural top
+hanging plant rail overhead | 0.7 | 0.3-0.6 | suspended planter row
+freestanding floor lamp | 0.7 | 0.2-0.4 | tall slim stand
+two-seat wicker sofa | 0.7 | 0.3-0.6 | natural woven frame
+ceiling fan slow turn | 0.7 | 0.2-0.4 | wood blade slow rotation
+folding screen privacy | 0.55 | 0.3-0.5 | latticed panel divider
+breakfast bistro table | 0.65 | 0.2-0.4 | small round metal top

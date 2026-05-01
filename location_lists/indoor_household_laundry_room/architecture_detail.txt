@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+flush ceiling LED panel | 0.95 | 0.2-0.5 | bright diffused light
+exposed dryer vent duct | 0.7 | 0.05-0.2 | flexible silver pipe
+floor drain grate | 0.7 | 0.05-0.15 | brushed metal cover
+wire shelving brackets | 0.75 | 0.1-0.3 | painted steel supports
+pegboard organization wall | 0.7 | 0.2-0.5 | painted hole-grid panel
+pocket door to hallway | 0.65 | 0.2-0.5 | sliding flush leaf
+wall-mounted utility outlet | 0.7 | 0.05-0.15 | exposed junction box
+plumbing supply lines exposed | 0.6 | 0.05-0.15 | chrome fitting pair
+crown molding trim line | 0.55 | 0.1-0.3 | profiled white edge
+recessed niche over washer | 0.6 | 0.1-0.3 | tiled inset bay

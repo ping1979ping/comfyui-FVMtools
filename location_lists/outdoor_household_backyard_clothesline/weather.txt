@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny breezy day | 1.0 | - | -
+gentle steady drying breeze | 0.95 | - | -
+warm summer dry air | 0.95 | - | -
+crisp autumn dry breeze | 0.85 | - | -
+high cloud overcast | 0.7 | - | -
+muggy still day | 0.6 | - | -
+distant rain threat | 0.55 | - | -
+strong gusty wind | 0.7 | - | -
+cool spring fresh air | 0.85 | - | -
+calm warm afternoon | 0.85 | - | -

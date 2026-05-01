@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+central narrow counter run | 0.95 | 0.4-0.8 | butcher block top
+floor-to-ceiling shelving unit | 1.0 | 0.5-0.9 | open painted timber
+hanging basket ladder rack | 0.7 | 0.3-0.6 | sliding library system
+deep drawer base cabinet | 0.85 | 0.3-0.6 | painted pull-out fronts
+rolling step stool kick | 0.7 | 0.2-0.4 | spring-loaded round step
+appliance garage shelf | 0.7 | 0.3-0.5 | tucked appliance niche
+hanging utensil bar overhead | 0.65 | 0.2-0.5 | brushed steel rail
+storage island prep block | 0.6 | 0.3-0.6 | freestanding worktop
+wine rack column | 0.6 | 0.2-0.5 | timber slot pattern
+canned goods tier stand | 0.7 | 0.2-0.5 | wire stepped rack
+overhead cabinet glass fronts | 0.7 | 0.3-0.5 | clear paned doors
+broom hook rail | 0.6 | 0.2-0.5 | mounted hook strip

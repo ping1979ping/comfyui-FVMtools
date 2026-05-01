@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+dim window-only morning | 0.85 | - | -
+fluorescent bright daytime | 1.0 | - | -
+afternoon faint window glow | 0.8 | - | -
+overcast dim diffusion | 0.85 | - | -
+evening overhead lit | 0.85 | - | -
+night bare bulb pool | 0.85 | - | -
+flashlight task beam | 0.7 | - | -
+late-night appliance hum glow | 0.7 | - | -
+dim dusk fade | 0.7 | - | -
+soft midday slot light | 0.75 | - | -

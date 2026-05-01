@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+double sink vanity counter | 0.95 | 0.4-0.7 | painted cabinetry top
+single sink vanity unit | 0.95 | 0.3-0.6 | painted cabinet base
+freestanding tub center | 0.85 | 0.3-0.6 | enamel oval form
+combined tub-shower zone | 0.95 | 0.4-0.7 | tiled curtain bay
+glass enclosed shower stall | 0.75 | 0.3-0.5 | clear panel framed
+tall storage linen tower | 0.85 | 0.3-0.5 | painted closed cabinet
+toilet beside vanity | 0.95 | 0.2-0.4 | white porcelain unit
+mounted towel ladder rack | 0.7 | 0.2-0.4 | painted rung frame
+medicine cabinet over sink | 0.85 | 0.2-0.4 | mirrored hinged door
+small vanity stool | 0.6 | 0.1-0.3 | upholstered round seat
+freestanding hamper bin | 0.7 | 0.2-0.4 | woven lidded basket
+counter-mounted cup holder | 0.6 | 0.05-0.15 | small ceramic vessel

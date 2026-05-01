@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+cream beadboard wainscot wall | 1.0 | 0.7-1.0 | painted vertical planking
+exposed brick chimney breast | 0.85 | 0.6-1.0 | aged warm masonry
+floral patterned wallpaper above rail | 0.75 | 0.5-0.9 | softly faded print
+painted timber plank wall | 0.85 | 0.6-1.0 | softly limewashed grain
+stone hearth surround | 0.7 | 0.5-0.9 | rough quarried block
+open shelving on plaster wall | 0.8 | 0.5-0.9 | softly chalky finish
+gingham curtain over window | 0.7 | 0.4-0.8 | small woven check
+hutch cabinet against wall | 0.75 | 0.5-0.9 | painted distressed timber
+vintage tile splashback | 0.65 | 0.4-0.8 | hand-glazed irregular squares
+sage green painted cabinetry wall | 0.8 | 0.6-1.0 | softly worn paint
+butter yellow plaster wall | 0.6 | 0.5-0.9 | warm matte finish
+weathered barnwood plank wall | 0.65 | 0.5-0.9 | knotted reclaimed timber

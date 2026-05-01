@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright entry morning | 1.0 | - | -
+soft mid-morning glow | 0.85 | - | -
+warm afternoon arrival light | 0.85 | - | -
+golden late-day spill | 0.75 | - | -
+overcast diffused softness | 0.85 | - | -
+evening overhead lit | 0.85 | - | -
+late-night sconce glow | 0.7 | - | -
+clear midday brightness | 0.85 | - | -
+early dusk fade | 0.7 | - | -
+soft transom-lit interior | 0.7 | - | -

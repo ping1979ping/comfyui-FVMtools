@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright hallway light | 0.7 | - | -
+overcast still atmosphere | 0.85 | - | -
+muggy summer humidity | 0.6 | - | -
+calm dry afternoon | 0.85 | - | -
+crisp autumn cool air | 0.7 | - | -
+hazy still warmth | 0.65 | - | -
+distant thunder rumble | 0.5 | - | -
+breezy spring fresh air | 0.65 | - | -
+quiet snowy backdrop | 0.6 | - | -
+heavy rain heard outside | 0.7 | - | -

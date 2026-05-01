@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+heavy rain on roof boards | 0.95 | - | -
+overcast still atmosphere | 0.85 | - | -
+hot summer attic stillness | 0.8 | - | -
+cold winter chill | 0.85 | - | -
+distant thunder rumble | 0.7 | - | -
+calm dry afternoon | 0.8 | - | -
+breezy gable ventilation | 0.6 | - | -
+snowfall on roof above | 0.7 | - | -
+hazy stale warmth | 0.7 | - | -
+dim rainy mood | 0.85 | - | -

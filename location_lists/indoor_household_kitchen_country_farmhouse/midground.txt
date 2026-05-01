@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+freestanding farmhouse table | 1.0 | 0.4-0.8 | scrubbed pine top
+apron-front porcelain sink | 0.95 | 0.3-0.7 | white enamel basin
+enamel cookstove range | 0.85 | 0.3-0.7 | cream porcelain front
+butcher block prep island | 0.8 | 0.4-0.7 | thick laminated maple
+painted dresser with plates | 0.8 | 0.4-0.8 | open display shelves
+ladderback dining chairs | 0.85 | 0.3-0.6 | rush-woven seats
+hanging pot rack overhead | 0.75 | 0.3-0.5 | iron rail with copper
+country-style bench at table | 0.7 | 0.3-0.6 | weathered timber slab
+kitchen window seat nook | 0.65 | 0.3-0.6 | cushioned built-in
+freestanding pie safe cupboard | 0.6 | 0.3-0.6 | punched tin doors
+breakfast hutch with glass doors | 0.7 | 0.4-0.7 | painted glazed top
+woven rag rug runner | 0.7 | 0.2-0.5 | braided multi-color cloth

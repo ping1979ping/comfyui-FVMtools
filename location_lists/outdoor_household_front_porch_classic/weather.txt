@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny breezy day | 0.95 | - | -
+gentle steady summer breeze | 0.95 | - | -
+heavy summer rain | 0.85 | - | -
+overcast diffused light | 0.85 | - | -
+crisp autumn dry afternoon | 0.95 | - | -
+quiet snowfall drifting | 0.8 | - | -
+muggy still afternoon | 0.7 | - | -
+distant thunder rumble | 0.7 | - | -
+hazy warm afternoon | 0.75 | - | -
+breezy spring fresh openness | 0.85 | - | -

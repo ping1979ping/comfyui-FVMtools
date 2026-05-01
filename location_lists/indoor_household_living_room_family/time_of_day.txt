@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright family morning | 1.0 | - | -
+soft mid-morning glow | 0.9 | - | -
+warm afternoon spill | 0.9 | - | -
+golden late-day light | 0.85 | - | -
+overcast diffused softness | 0.8 | - | -
+evening lamp-lit warmth | 0.95 | - | -
+twilight cozy fade | 0.8 | - | -
+night lamp pool ambience | 0.85 | - | -
+firelit hearth glow | 0.7 | - | -
+calm dusk hush | 0.75 | - | -

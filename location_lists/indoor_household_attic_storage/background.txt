@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+unfinished plywood sheathing | 1.0 | 0.7-1.0 | grainy panel boards
+exposed insulation between rafters | 0.95 | 0.6-1.0 | pink fiberglass batts
+weathered timber rafter slope | 0.95 | 0.6-1.0 | rough-sawn structural
+painted plank end wall | 0.7 | 0.5-0.9 | softly worn paint
+brick chimney pass-through | 0.7 | 0.4-0.8 | aged warm masonry
+stacked storage box wall | 0.85 | 0.5-0.9 | layered cardboard pile
+gable end small window | 0.8 | 0.3-0.6 | divided pane glass
+peeling wallpaper remnant | 0.5 | 0.3-0.6 | softly faded paper
+unpainted drywall section | 0.55 | 0.4-0.8 | taped joint surface
+shadowed eaves recess | 0.85 | 0.5-0.9 | deep dark slope
+trunk-stacked back wall | 0.75 | 0.4-0.8 | layered weathered chests

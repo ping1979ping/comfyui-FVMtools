@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+mason jar row of preserves | 0.95 | 0.1-0.3 | clear sealed glass
+canned goods stacked tier | 0.9 | 0.1-0.3 | metal can rows
+labeled spice jar set | 0.85 | 0.1-0.25 | matched glass containers
+woven storage baskets | 0.85 | 0.1-0.25 | natural reed weave
+flour and sugar canisters | 0.85 | 0.1-0.25 | matching enamel set
+oil and vinegar bottles | 0.75 | 0.05-0.15 | clear stoppered glass
+paper towel roll on holder | 0.7 | 0.05-0.15 | mounted dispenser bar
+cookbook stack on shelf | 0.7 | 0.1-0.25 | hardback volumes
+folded linen tea towels | 0.7 | 0.05-0.15 | crisp cotton stack
+wine bottle row | 0.65 | 0.1-0.25 | dark glass cylinders
+hanging garlic braid | 0.6 | 0.05-0.15 | dried bulb plait
+small kitchen scale | 0.65 | 0.05-0.15 | cream enamel face

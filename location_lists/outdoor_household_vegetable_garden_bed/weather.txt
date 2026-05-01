@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny growing day | 0.95 | - | -
+gentle rain watering plants | 0.95 | - | -
+overcast diffused mood | 0.85 | - | -
+muggy summer warmth | 0.85 | - | -
+crisp autumn dry breeze | 0.85 | - | -
+breezy spring fresh air | 0.95 | - | -
+calm dewy morning | 0.95 | - | -
+distant thunder rumble | 0.65 | - | -
+hazy warm afternoon | 0.8 | - | -
+post-rain humid stillness | 0.85 | - | -

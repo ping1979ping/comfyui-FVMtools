@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+painted plain plaster wall | 1.0 | 0.7-1.0 | smooth matte paint
+beadboard back closet wall | 0.85 | 0.6-1.0 | painted vertical planking
+unpainted drywall section | 0.75 | 0.5-0.9 | taped joint surface
+narrow tall painted door | 0.95 | 0.4-0.7 | flush painted leaf
+hooks-and-pegs back wall | 0.95 | 0.5-0.9 | painted board with pegs
+slim shelf wall above pegs | 0.85 | 0.3-0.6 | painted ledge
+tile splash strip lower wall | 0.6 | 0.3-0.6 | small ceramic squares
+warm gray painted wall | 0.7 | 0.6-1.0 | softly matte finish
+overhead shelf back wall | 0.85 | 0.4-0.7 | tall ledge surface
+floor-mounted broom holder rail | 0.7 | 0.3-0.6 | clamp grip strip

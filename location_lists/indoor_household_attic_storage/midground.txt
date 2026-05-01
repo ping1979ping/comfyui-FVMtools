@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+stacked storage trunks | 1.0 | 0.4-0.8 | weathered timber chests
+labeled cardboard box pile | 0.95 | 0.4-0.8 | brown packing cartons
+draped sheet over furniture | 0.85 | 0.3-0.6 | softly fallen white cloth
+old wooden dresser piece | 0.7 | 0.3-0.5 | softly worn finish
+plastic storage bin tower | 0.85 | 0.3-0.6 | clear lidded boxes
+forgotten rocking chair | 0.6 | 0.2-0.5 | weathered timber frame
+hanging garment bags | 0.7 | 0.3-0.5 | zipped fabric covers
+old steamer trunk | 0.75 | 0.2-0.4 | leather strapped chest
+abandoned dress form | 0.55 | 0.1-0.3 | cloth-padded torso
+holiday decoration boxes | 0.85 | 0.3-0.6 | seasonal labeled cartons
+old picture frame stack | 0.65 | 0.1-0.3 | leaning artwork pile
+free-hanging lightbulb | 0.7 | 0.1-0.2 | bare pendant fitting

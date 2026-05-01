@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+soft pastel painted wall | 1.0 | 0.7-1.0 | smooth matte pigment
+patterned wallpaper feature | 0.85 | 0.5-0.9 | playful repeated motif
+chalkboard accent wall | 0.85 | 0.4-0.8 | matte slate surface
+crisp white painted wall | 0.85 | 0.6-1.0 | smooth eggshell finish
+mural-painted feature wall | 0.7 | 0.5-0.9 | hand-painted scene
+pegboard storage wall | 0.7 | 0.4-0.8 | painted hole-grid panel
+shiplap accent feature wall | 0.7 | 0.5-0.9 | overlapped board joint
+warm sage painted wall | 0.7 | 0.5-0.9 | softly chalky pigment
+gallery kid-art collage wall | 0.85 | 0.4-0.8 | mixed framed prints
+soft yellow painted wall | 0.7 | 0.5-0.9 | warm matte finish
+window with cheerful curtain | 0.7 | 0.3-0.6 | printed bright cloth

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright outside | 0.85 | - | -
+gentle rain on frosted pane | 0.8 | - | -
+overcast diffused light | 0.85 | - | -
+muggy summer humidity | 0.7 | - | -
+crisp autumn brightness | 0.75 | - | -
+quiet snowy backdrop | 0.6 | - | -
+breezy spring vent flow | 0.7 | - | -
+hazy warm afternoon | 0.7 | - | -
+calm dry evening | 0.85 | - | -
+distant thunder rumble | 0.5 | - | -

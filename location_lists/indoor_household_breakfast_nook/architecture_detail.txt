@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+profiled chair-rail trim | 0.85 | 0.1-0.3 | painted wood molding
+tall baseboard skirting | 0.9 | 0.1-0.3 | painted wide trim
+casement window mullions | 0.95 | 0.2-0.5 | painted divided sashes
+crown molding ceiling line | 0.85 | 0.1-0.3 | profiled painted edge
+window seat sill ledge | 0.85 | 0.1-0.3 | thick painted shelf
+arched bay window opening | 0.7 | 0.2-0.5 | curved structural frame
+wall sconce flanking nook | 0.7 | 0.05-0.2 | small mounted lamps
+small picture rail line | 0.65 | 0.1-0.3 | thin painted edge
+flush ceiling pendant cap | 0.85 | 0.1-0.3 | painted ceiling plate
+deep window sill ledges | 0.8 | 0.1-0.3 | thick painted shelves

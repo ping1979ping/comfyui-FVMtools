@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low play table center | 1.0 | 0.4-0.7 | painted wood top
+toy storage cubby unit | 1.0 | 0.4-0.8 | painted compartment cubes
+tiny child chair pair | 0.95 | 0.2-0.4 | colorful molded forms
+beanbag seating cluster | 0.85 | 0.3-0.5 | soft slouched cushions
+art easel on stand | 0.85 | 0.2-0.4 | tall painted timber
+toy kitchen play set | 0.7 | 0.3-0.5 | colorful plastic appliances
+reading nook teepee | 0.7 | 0.3-0.5 | tented fabric cone
+low bookshelf row | 0.95 | 0.3-0.6 | painted open shelves
+dress-up wardrobe rail | 0.65 | 0.2-0.5 | child-height clothes bar
+craft supply trolley | 0.7 | 0.2-0.4 | wheeled tiered cart
+play tent corner setup | 0.7 | 0.3-0.5 | colorful fabric pop-up
+soft mat play zone | 0.85 | 0.4-0.7 | foam interlocking squares

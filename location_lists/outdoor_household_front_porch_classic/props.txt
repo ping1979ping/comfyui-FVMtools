@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ceramic pitcher of lemonade | 0.85 | 0.05-0.15 | rounded glazed vessel
+glass pair of tumblers | 0.7 | 0.05-0.1 | clear faceted cups
+woven outdoor cushion | 0.95 | 0.1-0.25 | textured all-weather cloth
+small garden flag | 0.7 | 0.05-0.15 | colorful printed cloth
+hanging wind chime | 0.85 | 0.05-0.15 | suspended metal rods
+folded checkered blanket | 0.85 | 0.05-0.2 | softly draped pattern
+basket of magazines | 0.65 | 0.05-0.15 | woven contained pile
+bird feeder on hook | 0.7 | 0.1-0.25 | wood and seed cylinder
+small wreath on door | 0.85 | 0.1-0.25 | woven seasonal ring
+seasonal pumpkin display | 0.7 | 0.1-0.25 | rounded orange gourd
+pair of dirty work shoes | 0.65 | 0.05-0.15 | scuffed leather pair
+hanging American flag | 0.7 | 0.2-0.4 | striped colorful cloth

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+stacked front-load washer dryer | 1.0 | 0.4-0.8 | brushed appliance fronts
+side-by-side machines on pedestals | 0.9 | 0.4-0.8 | matte enamel finish
+counter spanning over machines | 0.85 | 0.3-0.6 | folding workspace top
+deep utility sink basin | 0.85 | 0.3-0.5 | white acrylic tub
+hanging rod for drip-dry items | 0.85 | 0.3-0.6 | chrome rail run
+folding table island | 0.65 | 0.3-0.6 | freestanding work top
+ironing board folded against wall | 0.65 | 0.2-0.5 | padded cloth top
+laundry sorting bin row | 0.85 | 0.3-0.6 | stacked woven baskets
+broom and mop storage cubby | 0.7 | 0.2-0.5 | tall slim niche
+overhead drying rack pulley | 0.6 | 0.3-0.5 | timber slat suspension
+wall-mounted folding station | 0.65 | 0.3-0.5 | drop-down work shelf
+upper cabinets with detergents | 0.85 | 0.3-0.6 | painted closed doors

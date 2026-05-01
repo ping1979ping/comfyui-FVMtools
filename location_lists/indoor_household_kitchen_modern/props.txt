@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+cast iron skillet on cooktop | 0.8 | 0.05-0.15 | matte black seasoned iron
+glass canisters with grains | 0.75 | 0.1-0.25 | clear stacked vessels
+ceramic salt and pepper pair | 0.7 | 0.05-0.15 | rounded matte glaze
+modern kettle on counter | 0.7 | 0.05-0.15 | brushed steel body
+chef knife on magnetic rail | 0.65 | 0.05-0.15 | polished blade strip
+ceramic dish drying rack | 0.65 | 0.1-0.25 | stacked stoneware plates
+glass olive oil cruet | 0.7 | 0.05-0.15 | clear slim bottle
+stand mixer on counter | 0.6 | 0.1-0.25 | enameled curved housing
+small succulent in concrete pot | 0.7 | 0.05-0.15 | sculpted grey planter
+recipe tablet on stand | 0.55 | 0.05-0.15 | propped glass screen
+folded apron on hook | 0.6 | 0.05-0.15 | washed cotton drape
+hanging pot rail with utensils | 0.6 | 0.1-0.25 | brushed steel hooks

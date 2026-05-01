@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+central kitchen island block | 1.0 | 0.5-0.9 | crisp engineered stone top
+breakfast bar overhang counter | 0.85 | 0.4-0.8 | sleek extended slab
+double-bowl undermount sink run | 0.9 | 0.4-0.8 | brushed stainless basin
+induction cooktop counter zone | 0.85 | 0.3-0.7 | smooth black ceramic glass
+built-in wall oven stack | 0.8 | 0.3-0.7 | brushed steel facade
+tall integrated refrigerator column | 0.85 | 0.4-0.8 | flush paneled tower
+range hood over cooktop | 0.8 | 0.3-0.6 | brushed steel canopy
+peninsula counter return | 0.7 | 0.4-0.7 | continuous stone top
+dining counter pendant zone | 0.8 | 0.3-0.6 | trio of hung lights
+glass-fronted upper cabinet bay | 0.65 | 0.3-0.6 | clear paned doors
+coffee station alcove counter | 0.65 | 0.3-0.6 | tucked appliance ledge
+prep zone with butcher block insert | 0.6 | 0.3-0.6 | warm wood inlay

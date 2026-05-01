@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+painted clapboard house siding | 1.0 | 0.6-1.0 | overlapping wood boards
+front door panel painted | 1.0 | 0.4-0.7 | profiled painted leaf
+divided porch column row | 0.95 | 0.4-0.8 | turned painted timbers
+white painted railing balustrade | 0.95 | 0.3-0.6 | turned spindle row
+porch ceiling painted soft blue | 0.95 | 0.3-0.7 | painted board panels
+neighbor street view beyond | 0.85 | 0.3-0.7 | softly distant houses
+mature front yard trees | 0.85 | 0.4-0.7 | leafy canopy cover
+brick foundation skirt | 0.7 | 0.3-0.6 | aged warm masonry
+white shingled exterior wall | 0.7 | 0.5-0.9 | painted cedar shakes
+flowering vine on column | 0.7 | 0.2-0.5 | trailing leafy greenery

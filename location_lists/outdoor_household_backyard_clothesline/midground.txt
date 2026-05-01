@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+T-shaped clothesline post pair | 1.0 | 0.4-0.8 | painted metal frame
+wash hung along line | 1.0 | 0.4-0.8 | layered fabric drying
+large white sheets pegged | 0.95 | 0.3-0.6 | softly billowing cotton
+basket on grass below | 0.95 | 0.2-0.4 | woven willow tray
+hanging shirts row | 0.85 | 0.3-0.5 | mixed fabric drape
+folded laundry pile beside | 0.85 | 0.2-0.4 | crisp pressed stack
+clothespin bag on line | 0.95 | 0.05-0.2 | small fabric pouch
+prop stick under line | 0.7 | 0.05-0.2 | timber support pole
+nearby garden bench | 0.65 | 0.2-0.5 | weathered timber seat
+push-cart laundry trolley | 0.65 | 0.2-0.4 | rolling fabric bag
+small step stool on grass | 0.55 | 0.05-0.15 | painted timber
+nearby flower bed border | 0.7 | 0.3-0.6 | colorful blooming patch

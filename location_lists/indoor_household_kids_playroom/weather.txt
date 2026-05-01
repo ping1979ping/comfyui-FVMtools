@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny outside | 0.9 | - | -
+gentle rain on windows | 0.85 | - | -
+overcast cozy mood | 0.85 | - | -
+muggy summer warmth | 0.65 | - | -
+crisp autumn brightness | 0.8 | - | -
+heavy snowfall outside | 0.7 | - | -
+breezy spring fresh air | 0.8 | - | -
+calm dry afternoon | 0.85 | - | -
+hazy summer warmth | 0.7 | - | -
+distant thunder rumble | 0.55 | - | -

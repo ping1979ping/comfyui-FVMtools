@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stacked storybook collection | 0.95 | 0.1-0.25 | hardback colorful spines
+plush teddy bear on bed | 0.9 | 0.05-0.2 | soft fuzzy fur
+art supplies in jars | 0.85 | 0.1-0.25 | crayons in clear glass
+hanging mobile decor | 0.8 | 0.1-0.25 | suspended paper shapes
+framed alphabet poster | 0.85 | 0.1-0.25 | painted letter chart
+wall-hung art display strip | 0.85 | 0.2-0.5 | clipped paper line
+toy musical instrument | 0.7 | 0.05-0.15 | bright plastic body
+kids drawing on wall | 0.85 | 0.05-0.2 | taped colorful paper
+plush bean bag character | 0.7 | 0.1-0.25 | shaped soft cushion
+glow night-light unit | 0.7 | 0.05-0.1 | soft shaped lamp
+labeled organizing baskets | 0.85 | 0.1-0.25 | woven sorted bins
+hanging swing chair | 0.55 | 0.2-0.4 | suspended hammock seat

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+flush ceiling LED panel | 0.95 | 0.2-0.5 | bright diffused light
+painted shelf brackets | 0.95 | 0.2-0.5 | white profiled metal
+exposed plumbing supply line | 0.6 | 0.05-0.15 | chrome fitting pair
+floor drain in slab | 0.55 | 0.05-0.15 | round grate cover
+overhead vent grille | 0.65 | 0.05-0.15 | small ceiling fitting
+narrow door casing trim | 0.9 | 0.1-0.3 | painted profiled edge
+chunky utility hooks | 0.95 | 0.1-0.3 | painted metal pegs
+exposed shelf cleat | 0.7 | 0.1-0.3 | wall-mounted ledge support
+small switch plate | 0.7 | 0.05-0.1 | painted square cover
+recessed wall niche shelf | 0.65 | 0.1-0.3 | painted inset cubby

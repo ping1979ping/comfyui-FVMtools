@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+soft mowed grass lawn | 1.0 | 0.5-0.9 | trimmed green pasture
+gravel path strip | 0.7 | 0.3-0.6 | crunchy small stones
+flagstone stepping pavers | 0.65 | 0.3-0.6 | flat irregular slabs
+laundry basket woven | 0.95 | 0.1-0.3 | natural reed weave
+clothespin scattered bag | 0.85 | 0.05-0.15 | small wood pegs
+folded sheet pile on grass | 0.85 | 0.1-0.25 | crisp pressed cotton
+fallen pin on grass | 0.7 | 0.05-0.1 | small wood peg
+garden hose coiled | 0.7 | 0.05-0.15 | green rubber loop
+small bird-bath birds | 0.55 | 0.05-0.1 | drinking sparrows
+patch of dandelions | 0.7 | 0.05-0.15 | small yellow blooms
+worn lawn edge | 0.7 | 0.1-0.25 | mossy bare strip
+small wicker hamper | 0.7 | 0.05-0.2 | woven lidded basket

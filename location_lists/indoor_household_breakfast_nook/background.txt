@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+cheerful patterned wallpaper | 1.0 | 0.6-1.0 | small repeated motif
+bay window glazed wall | 0.95 | 0.5-0.9 | divided pane bay
+beadboard wainscot wall | 0.85 | 0.5-0.9 | painted vertical planking
+soft yellow painted wall | 0.85 | 0.6-1.0 | warm matte pigment
+white shiplap accent wall | 0.7 | 0.5-0.9 | overlapped board joint
+chair-rail divided wall | 0.8 | 0.5-0.9 | painted upper papered lower
+window seat alcove back | 0.85 | 0.4-0.8 | recessed cushioned bay
+exposed brick accent wall | 0.6 | 0.4-0.8 | aged warm masonry
+sage painted wall | 0.7 | 0.5-0.9 | softly chalky pigment
+floor-to-ceiling window | 0.7 | 0.4-0.7 | clean glazed panel
+small framed art collage wall | 0.7 | 0.4-0.8 | mixed gallery prints

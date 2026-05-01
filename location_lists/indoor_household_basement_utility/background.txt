@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+unfinished concrete block wall | 1.0 | 0.7-1.0 | rough gray masonry
+painted poured concrete wall | 0.85 | 0.6-1.0 | softly chalky surface
+exposed brick foundation wall | 0.7 | 0.5-0.9 | aged red masonry
+unpainted drywall section | 0.75 | 0.5-0.9 | taped joint surface
+exposed framing stud bay | 0.85 | 0.5-0.9 | rough timber slots
+half-finished paneled wall | 0.6 | 0.4-0.8 | partial board cover
+small high egress window | 0.85 | 0.3-0.6 | small frosted slot
+utility box wall niche | 0.7 | 0.3-0.6 | recessed metal panel
+metal shelving back wall | 0.85 | 0.5-0.9 | stacked utility racks
+sump pit corner wall | 0.6 | 0.3-0.6 | painted concrete recess

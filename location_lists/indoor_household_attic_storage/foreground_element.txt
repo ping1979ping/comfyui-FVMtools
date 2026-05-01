@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dusty plywood floor boards | 1.0 | 0.4-0.9 | gritty pale grain
+narrow attic floor planks | 0.85 | 0.4-0.9 | softly worn timber
+floor boards with dust | 0.9 | 0.4-0.9 | fine pale powder layer
+old book stack on floor | 0.75 | 0.05-0.2 | yellowed page edges
+abandoned doll on box | 0.55 | 0.05-0.15 | softly faded fabric
+folded vintage rug roll | 0.7 | 0.1-0.25 | tightly bound cloth cylinder
+tattered children-art portfolio | 0.55 | 0.05-0.15 | weathered paper folder
+dust motes on floor | 0.85 | 0.05-0.2 | fine drifting particles
+old suitcase on floor | 0.75 | 0.05-0.2 | leather hardcase
+spare lampshade on chest | 0.6 | 0.05-0.15 | dust-coated cone
+toy chest open with toys | 0.55 | 0.1-0.25 | softly faded objects
+folded baby crib parts | 0.5 | 0.1-0.25 | dismantled wood pieces

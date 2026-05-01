@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear country morning | 0.9 | - | -
+gentle rain on panes | 0.75 | - | -
+overcast pastoral mood | 0.85 | - | -
+warm summer breeze through window | 0.7 | - | -
+crisp autumn day outside | 0.75 | - | -
+quiet snowfall beyond glass | 0.65 | - | -
+hazy harvest afternoon | 0.7 | - | -
+cool spring stillness | 0.8 | - | -
+calm overcast warmth | 0.85 | - | -
+breezy clear afternoon | 0.7 | - | -

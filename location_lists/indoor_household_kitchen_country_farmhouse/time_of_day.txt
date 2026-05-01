@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft early breakfast light | 1.0 | - | -
+warm mid-morning glow | 0.9 | - | -
+buttery afternoon sun | 0.85 | - | -
+golden late-day spill | 0.8 | - | -
+overcast diffused softness | 0.8 | - | -
+evening lamp-lit warmth | 0.85 | - | -
+candlelit dinner hush | 0.7 | - | -
+clear midday brightness | 0.85 | - | -
+twilight cooling fade | 0.65 | - | -
+dawn quiet stillness | 0.7 | - | -

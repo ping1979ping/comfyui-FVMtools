@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+warm engineered wood floor | 1.0 | 0.4-0.9 | wide oak boards
+patterned area rug | 0.9 | 0.4-0.9 | bold woven motif
+linen tablecloth draped | 0.85 | 0.3-0.6 | softly creased natural cloth
+ceramic coffee mug pair | 0.95 | 0.05-0.15 | rounded glazed cups
+breakfast plate with toast | 0.85 | 0.1-0.25 | white ceramic dish
+glass juice pitcher | 0.7 | 0.05-0.15 | clear faceted vessel
+linen napkin folded | 0.85 | 0.05-0.15 | softly creased cloth
+fresh fruit bowl | 0.85 | 0.05-0.2 | rounded ceramic dish
+small flower vase | 0.85 | 0.05-0.15 | clear cylindrical glass
+folded newspaper on table | 0.7 | 0.05-0.15 | spread paper sheets
+table runner across center | 0.7 | 0.1-0.25 | woven natural cloth
+toast rack on table | 0.6 | 0.05-0.1 | small metal rack

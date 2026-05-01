@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+white subway tile wall | 1.0 | 0.7-1.0 | glossy ceramic squares
+beadboard wainscot wall | 0.95 | 0.5-0.9 | painted vertical planking
+soft blue painted wall | 0.85 | 0.6-1.0 | matte calm pigment
+half-tile half-paint wall | 0.85 | 0.5-0.9 | tiled lower painted upper
+hex tile feature wall | 0.7 | 0.4-0.8 | small ceramic cells
+shiplap accent wall | 0.7 | 0.5-0.9 | overlapped board joint
+patterned cement tile wall | 0.65 | 0.4-0.8 | bold geometric print
+warm gray painted wall | 0.85 | 0.6-1.0 | softly matte finish
+mirrored back wall above sink | 0.8 | 0.4-0.8 | reflective glass plane
+window with frosted glass | 0.7 | 0.3-0.6 | textured privacy pane
+tiled feature niche | 0.6 | 0.3-0.6 | inset accent recess

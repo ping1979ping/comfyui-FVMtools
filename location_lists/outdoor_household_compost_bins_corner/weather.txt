@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny dry day | 0.85 | - | -
+gentle rain on bin lids | 0.85 | - | -
+overcast diffused mood | 0.95 | - | -
+muggy summer warmth | 0.85 | - | -
+crisp autumn dry breeze | 0.95 | - | -
+breezy spring fresh air | 0.85 | - | -
+calm dewy morning | 0.85 | - | -
+distant thunder rumble | 0.65 | - | -
+hazy warm afternoon | 0.75 | - | -
+post-rain humid stillness | 0.85 | - | -

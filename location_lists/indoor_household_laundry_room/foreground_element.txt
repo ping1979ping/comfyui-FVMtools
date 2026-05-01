@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+hex tile utility flooring | 1.0 | 0.4-0.9 | small white tiles black grout
+patterned cement tile floor | 0.8 | 0.4-0.9 | bold geometric print
+woven bath mat at sink | 0.7 | 0.1-0.3 | tufted absorbent cloth
+folded towel stack on counter | 0.85 | 0.1-0.3 | crisp white terry
+laundry basket on floor | 0.95 | 0.1-0.3 | woven seagrass weave
+detergent bottle on counter | 0.85 | 0.05-0.15 | tall plastic vessel
+glass jar with clothespins | 0.7 | 0.05-0.15 | clear lidded vessel
+folded sheet pile on top | 0.7 | 0.1-0.25 | smooth pressed cotton
+hanging wire mesh basket | 0.6 | 0.05-0.2 | painted metal grid
+small step stool nearby | 0.6 | 0.05-0.15 | painted timber
+ironing spray bottle | 0.55 | 0.05-0.1 | clear plastic mister
+laundry hamper on wheels | 0.7 | 0.1-0.3 | rolling fabric bag

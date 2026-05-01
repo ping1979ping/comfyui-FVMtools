@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft early morning light | 0.95 | - | -
+mid-morning cool brightness | 0.9 | - | -
+warm afternoon glow | 0.85 | - | -
+calm midday softness | 0.9 | - | -
+overcast diffused light | 0.85 | - | -
+evening pendant glow | 0.85 | - | -
+late-night under-shelf gleam | 0.7 | - | -
+soft dusk fade | 0.7 | - | -
+LED-only task brightness | 0.8 | - | -
+warm lamp-lit interior | 0.8 | - | -
