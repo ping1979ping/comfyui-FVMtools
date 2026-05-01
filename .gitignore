@@ -7,3 +7,16 @@ dist/
 build/
 .eggs/
 troubleshooting/
+
+# User-authored JB Builder wildcards. The directory itself is tracked
+# via .gitkeep so a fresh clone has a target for the INI default, but
+# every user file inside is ignored — `git pull` never overwrites local
+# wildcard text. To share wildcards with the repo, commit them under a
+# different tracked path and point wildcards.ini at it.
+/wildcards/*
+!/wildcards/.gitkeep
+
+# Optional local override for the wildcards path. Drop a personal
+# wildcards.ini.local next to wildcards.ini and the user can keep
+# their own path setting without conflicting with future pulls.
+/wildcards.ini.local

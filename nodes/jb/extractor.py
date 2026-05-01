@@ -1,6 +1,6 @@
 """FVM_JB_Extractor — recursive key search + dot-path lookup.
 
-Two lookup modes auto-selected by the ``category`` value:
+Three lookup modes auto-selected by the ``category`` value:
 
   Single key  (``"face"``)        → recursive depth-first search through
                                      every nested dict; returns the FIRST
@@ -10,17 +10,27 @@ Two lookup modes auto-selected by the ``category`` value:
                                      Returns ``{c: value}`` (wrapped under
                                      the LAST segment).
 
+  Multi       (``"face, hair"``    → run each category separately and
+   newline   /  ``"face\\nhair"``)   combine the results into a single
+   /comma   /                       dict keyed by each match's last
+   /semicolon)                      segment. Any category not found is
+                                     silently skipped; ``found=True`` as
+                                     long as at least one matched.
+
   Empty       (``""``)             → returns the whole input unwrapped.
 
   Examples
   --------
   Input::
 
-      {"character_1": {"face": {"age": "twenties", "eyes": "amber"}}}
+      {"character_1": {"face": {"age": "twenties", "eyes": "amber"},
+                        "hair": {"colour": "blonde"}}}
 
   category="face" → ``{"face": {"age": "twenties", "eyes": "amber"}}``
-  category="character_1.face" → same as above.
-  category="character_1" → ``{"character_1": {...}}``.
+  category="face, hair" →
+      ``{"face": {"age": "twenties", "eyes": "amber"},
+        "hair": {"colour": "blonde"}}``
+  category="character_1.face" → same as ``face``.
 
 Missing key → empty outputs + ``found=False``.
 """
@@ -84,6 +94,36 @@ def _resolve_category(payload, category: str):
     return found, val, (cat if found else None)
 
 
+def _split_categories(category: str) -> list[str]:
+    """Split user-entered categories on common separators.
+
+    Newlines, commas, and semicolons all act as separators so the user
+    can type ``face, hair`` or write each category on its own line in a
+    multiline widget without thinking about it. Dots inside a category
+    are preserved — they're dot-path segments, not separators.
+    """
+    if not isinstance(category, str) or not category.strip():
+        return []
+    cleaned = category.replace("\r", "\n").replace(";", "\n").replace(",", "\n")
+    return [c.strip() for c in cleaned.split("\n") if c.strip()]
+
+
+def _merge_into(combined: dict, key: str, value):
+    """Slot ``value`` under ``key`` in ``combined``.
+
+    If both the existing and incoming values are dicts the keys are
+    merged shallowly (incoming wins on direct collisions). Otherwise the
+    incoming value replaces the existing one.
+    """
+    existing = combined.get(key)
+    if isinstance(existing, dict) and isinstance(value, dict):
+        merged = dict(existing)
+        merged.update(value)
+        combined[key] = merged
+    else:
+        combined[key] = value
+
+
 class FVM_JB_Extractor:
     """Pull a named subtree out of a JSON string by recursive key search."""
 
@@ -93,14 +133,19 @@ class FVM_JB_Extractor:
     RETURN_NAMES = ("raw_json", "string", "found")
     OUTPUT_NODE = False
     DESCRIPTION = (
-        "Pulls a named subtree out of a JSON string.\n\n"
+        "Pulls one or more named subtrees out of a JSON string.\n\n"
         "Modes — auto-selected by the category value:\n"
         "  • single key   → recursive search through every nesting level,\n"
         "                   returns the first match wrapped as {key: value}.\n"
         "  • dot-path     → strict descent (e.g. 'character_1.hosiery'),\n"
         "                   returns {last_segment: value}.\n"
+        "  • multi        → comma / newline / semicolon separated list;\n"
+        "                   each category is resolved independently and\n"
+        "                   the results are merged into one {key: value}\n"
+        "                   dict. Categories that aren't found are\n"
+        "                   skipped silently.\n"
         "  • empty        → returns the whole input unwrapped.\n\n"
-        "Missing key → empty outputs and found=False."
+        "found=True if at least one category matched."
     )
 
     @classmethod
@@ -108,7 +153,9 @@ class FVM_JB_Extractor:
         return {
             "required": {
                 "json_input":    ("STRING", {"forceInput": True}),
-                "category":      ("STRING", {"default": ""}),
+                # Multiline so the user can list categories on separate
+                # lines as well as comma-separated on one line.
+                "category":      ("STRING", {"default": "", "multiline": True}),
                 "output_format": (list(ALL_FORMATS), {"default": "loose_keys"}),
             },
         }
@@ -118,11 +165,29 @@ class FVM_JB_Extractor:
         if not isinstance(parsed, (dict, list)):
             return ("", "", False)
 
-        found, value, wrap_key = _resolve_category(parsed, category)
-        if not found:
-            return ("", "", False)
+        cats = _split_categories(category)
 
-        out_obj = {wrap_key: value} if wrap_key is not None else value
+        if not cats:
+            # Empty category → the whole input unwrapped (legacy behavior).
+            out_obj = parsed
+        elif len(cats) == 1:
+            found, value, wrap_key = _resolve_category(parsed, cats[0])
+            if not found:
+                return ("", "", False)
+            out_obj = {wrap_key: value} if wrap_key is not None else value
+        else:
+            # Multi-category — resolve each and merge into one dict.
+            combined: dict = {}
+            any_found = False
+            for cat in cats:
+                found, value, wrap_key = _resolve_category(parsed, cat)
+                if not found or wrap_key is None:
+                    continue
+                any_found = True
+                _merge_into(combined, wrap_key, value)
+            if not any_found:
+                return ("", "", False)
+            out_obj = combined
 
         if isinstance(out_obj, (dict, list)):
             raw = emit_strict_json(out_obj, indent=2)

@@ -406,6 +406,39 @@ try:
         ok = _jb_catalog.delete_entry(category, name)
         return web.json_response({"success": ok})
 
+    # ── JB wildcards routes ──
+
+    from .core.jb import wildcards as _jb_wildcards
+
+    @PromptServer.instance.routes.get("/fvmtools/jb-wildcards")
+    async def _list_jb_wildcards(request):
+        """Flat list of every wildcard's slash-path (e.g. ``outfits/colors``)."""
+        return web.json_response({"wildcards": _jb_wildcards.list_all()})
+
+    @PromptServer.instance.routes.get("/fvmtools/jb-wildcard")
+    async def _get_jb_wildcard(request):
+        name = request.rel_url.query.get("name", "")
+        text = _jb_wildcards.read_wildcard(name)
+        if text is None:
+            return web.json_response({"error": "not found"}, status=404)
+        return web.json_response({"name": name, "text": text})
+
+    @PromptServer.instance.routes.post("/fvmtools/jb-wildcard")
+    async def _save_jb_wildcard(request):
+        body = await request.json()
+        name = body.get("name", "")
+        text = body.get("text", "")
+        ok = _jb_wildcards.write_wildcard(name, text)
+        if not ok:
+            return web.json_response({"error": "invalid name"}, status=400)
+        return web.json_response({"success": True})
+
+    @PromptServer.instance.routes.delete("/fvmtools/jb-wildcard")
+    async def _delete_jb_wildcard(request):
+        name = request.rel_url.query.get("name", "")
+        ok = _jb_wildcards.delete_wildcard(name)
+        return web.json_response({"success": ok})
+
     NODE_CLASS_MAPPINGS = {
         "PersonSelector": PersonSelector,
         "PersonSelectorMulti": PersonSelectorMulti,

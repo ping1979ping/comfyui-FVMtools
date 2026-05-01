@@ -252,11 +252,12 @@ def emit_strict_json(obj: Any, indent: int | None = 2) -> str:
 def emit_loose_keys(obj: Any, level: int = 0, _indent: int = 2) -> str:
     """Loose-keys output for SD/CLIP encoders.
 
-    Strips **all** ``"`` characters from string values — both the JSON-
-    syntactic surrounding quotes and any literal quote characters that
-    were embedded in the content (e.g. text overlays in data files like
-    ``"NO LIMITS"`` from texts.txt). Object/array structure is still
-    emitted with ``{}`` / ``[]`` / commas; only key + value text is bare.
+    Object / array structure is still emitted with ``{}`` / ``[]`` /
+    commas, but keys are written without surrounding ``"`` and string
+    values are emitted **verbatim** — any ``"`` characters in the
+    user's content are preserved (they're treated as content, not as
+    JSON syntax). Only the structural JSON quotes that would wrap keys
+    and values are dropped.
 
     Note: this format is NOT designed to round-trip back through
     ``parse_input`` — it's a one-way emit for encoder consumption.
@@ -271,10 +272,7 @@ def emit_loose_keys(obj: Any, level: int = 0, _indent: int = 2) -> str:
     if isinstance(obj, (int, float)):
         return json.dumps(obj)
     if isinstance(obj, str):
-        # Raw — no surrounding quotes. Strip all `"` chars from the value
-        # itself too: the user's rule is "no quotation marks anywhere in
-        # the loose_keys string output".
-        return obj.replace('"', "")
+        return obj
 
     if isinstance(obj, list):
         if not obj:
@@ -296,15 +294,14 @@ def emit_loose_keys(obj: Any, level: int = 0, _indent: int = 2) -> str:
     return json.dumps(obj, default=str, ensure_ascii=False)
 
 
-_BAREWORD_RE = None
-
-
 def _bare_key(key: str) -> str:
-    """Emit a key without quotes if it's a safe bareword, else fall back to JSON."""
-    global _BAREWORD_RE
-    if _BAREWORD_RE is None:
-        import re
-        _BAREWORD_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_-]*$")
-    if _BAREWORD_RE.match(key):
-        return key
-    return json.dumps(key, ensure_ascii=False)
+    """Emit a key bare — never wrapped in surrounding ``"``.
+
+    The key text is passed through verbatim. Spaces, slashes, hyphens
+    and embedded ``"`` characters all survive: a key like
+    ``jerrigibb woman`` emits as ``jerrigibb woman``, and a key like
+    ``weird "label"`` emits as ``weird "label"``. The format isn't
+    round-trippable, so we don't try to make it parseable as strict
+    JSON — consistency with what the user typed wins.
+    """
+    return key
