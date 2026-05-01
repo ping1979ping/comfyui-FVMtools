@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+windproof gilet | 0.60 | 0.0-0.2 | nylon,polyester
+packable rain jacket | 0.50 | 0.0-0.2 | nylon,polyester
+thermal cycling jacket | 0.45 | 0.0-0.2 | polyester,nylon
+arm warmers | 0.55 | 0.0-0.1 | spandex,polyester
+knee warmers | 0.50 | 0.0-0.1 | spandex,polyester
+soft-shell winter jacket | 0.30 | 0.0-0.2 | nylon,polyester
+mid-layer fleece | 0.40 | 0.0-0.2 | fleece,polyester

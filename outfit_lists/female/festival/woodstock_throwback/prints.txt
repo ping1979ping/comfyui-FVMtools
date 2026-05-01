@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tie-dye swirl | 0.70 | top,bottom | 0.1-0.3
+psychedelic pattern | 0.60 | top,bottom | 0.1-0.3
+peace sign motif | 0.55 | top,accessories | 0.1-0.3
+patchwork detail | 0.55 | bottom,outerwear,bag | 0.1-0.3
+fringe trim | 0.55 | top,outerwear,bag | 0.1-0.3
+sunflower print | 0.45 | top,bottom | 0.1-0.3
+batik motif | 0.45 | top,bottom | 0.1-0.3
+mandala swirl | 0.45 | top,bottom | 0.1-0.3
+embroidered florals | 0.50 | top,outerwear | 0.1-0.3
+beaded embellishment | 0.40 | top,accessories,bag | 0.1-0.3
+groovy lettering | 0.40 | top | 0.1-0.3

@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored trousers | 0.80 | 0.6-0.9 | wool,polyester
+pencil skirt | 0.75 | 0.6-0.9 | wool,polyester
+straight-leg pants | 0.70 | 0.6-0.9 | wool,polyester
+midi a-line skirt | 0.55 | 0.6-0.9 | wool,polyester
+wide-leg pants | 0.55 | 0.6-0.9 | wool,polyester,crepe
+cropped pants | 0.50 | 0.5-0.8 | wool,polyester
+dark indigo jeans | 0.40 | 0.4-0.7 | denim
+midi pleated skirt | 0.45 | 0.5-0.8 | polyester,chiffon
+slim chinos | 0.45 | 0.5-0.7 | cotton
+high-waist pants | 0.65 | 0.6-0.9 | wool,polyester

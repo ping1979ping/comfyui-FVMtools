@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"KAWAII" | 0.5 | top | bubble font
+"HARAJUKU" | 0.4 | top,outerwear | pastel marker
+"SUGAR" | 0.3 | top | bubble font
+"TOKYO" | 0.4 | top,headwear | bold condensed
+"BABY" | 0.3 | top | bubble font
+"DREAM" | 0.4 | top | pastel marker
+"ANGEL" | 0.4 | top,outerwear | gothic font
+"NEKO" | 0.3 | top | bubble font
+"LOLITA" | 0.3 | top | victorian script
+"POP" | 0.4 | top,headwear | bubble font

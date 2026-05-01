@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+ornate damask | 0.55 | top,bottom,outerwear | 0.4-0.9
+baroque print | 0.50 | top,bottom | 0.4-0.9
+crystal-beaded detail | 0.55 | top,bottom | 0.5-1.0
+ornate scrollwork | 0.45 | top,outerwear | 0.5-0.9
+ruby-jeweled detail | 0.40 | top,accessories | 0.5-1.0
+dripping motif | 0.30 | top | 0.3-0.7
+embroidered fang motif | 0.25 | top,accessories | 0.3-0.7
+gilded brocade | 0.45 | top,outerwear | 0.5-0.9
+sequined detail | 0.45 | top,bottom | 0.5-0.9
+ornate floral burnout | 0.40 | top,bottom | 0.4-0.8
+deep red embroidery | 0.40 | top,outerwear | 0.4-0.9
+beaded fringe detail | 0.35 | top,outerwear | 0.5-0.9

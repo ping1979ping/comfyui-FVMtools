@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oversized flannel shirt | 0.60 | 0.1-0.3 | flannel
+distressed denim jacket | 0.55 | 0.1-0.3 | denim
+biker jacket | 0.55 | 0.1-0.4 | leather
+windbreaker shell | 0.40 | 0.1-0.3 | nylon
+oversized cardigan | 0.50 | 0.1-0.4 | knit,wool
+
+# mid-casual
+shearling-collar coat | 0.40 | 0.2-0.6 | denim,shearling
+plaid overcoat | 0.45 | 0.2-0.6 | wool
+varsity bomber | 0.40 | 0.1-0.4 | nylon,wool
+
+# formal
+minimalist trench | 0.45 | 0.3-0.7 | gabardine,cotton
+slip dress duster | 0.40 | 0.4-0.7 | satin,polyester

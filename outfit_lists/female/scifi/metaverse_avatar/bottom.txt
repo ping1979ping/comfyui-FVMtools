@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waisted glitch-print leggings | 0.70 | 0.0-0.4 | spandex,mesh
+voxel-block mini skirt with chrome belt | 0.55 | 0.0-0.4 | holographic,spandex
+oversized pixel cargo pants | 0.60 | 0.0-0.4 | nylon,neoprene
+fitted shorts with reactive emoji print | 0.55 | 0.0-0.3 | spandex,mesh
+holographic flared pants with chrome cuff | 0.50 | 0.1-0.5 | holographic,satin
+asymmetric skort with floating particle hem | 0.45 | 0.1-0.4 | spandex,holographic
+fishnet leggings under cyber shorts | 0.45 | 0.0-0.3 | mesh,spandex
+neon-trimmed biker shorts | 0.55 | 0.0-0.3 | spandex,neoprene
+fitted iridescent flares | 0.50 | 0.1-0.5 | holographic,spandex
+chunky pixel-block mini skirt | 0.50 | 0.0-0.4 | spandex,satin

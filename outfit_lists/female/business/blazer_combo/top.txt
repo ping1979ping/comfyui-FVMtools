@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tucked-in blouse | 0.80 | 0.6-0.9 | silk,cotton,chiffon
+button-down shirt | 0.80 | 0.6-0.9 | cotton,linen
+fitted shell top | 0.70 | 0.6-0.9 | silk,cotton
+fine-knit pullover | 0.65 | 0.5-0.8 | cashmere,wool
+ribbed turtleneck | 0.55 | 0.5-0.8 | cashmere,wool,cotton
+silky camisole | 0.50 | 0.5-0.8 | silk,polyester
+classic t-shirt | 0.45 | 0.4-0.7 | cotton
+mock-neck top | 0.55 | 0.5-0.8 | cotton,jersey
+draped blouse | 0.55 | 0.6-0.9 | silk,chiffon
+striped boatneck | 0.45 | 0.5-0.7 | cotton
+crewneck sweater | 0.50 | 0.5-0.8 | cashmere,wool,cotton

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+brand logo | 0.7 | top,headwear,bag | 0.1-0.4
+embroidered crest | 0.5 | top,headwear,outerwear | 0.1-0.4
+stripe tape detail | 0.5 | top,bottom,outerwear | 0.1-0.3
+oversized monogram | 0.5 | top,outerwear | 0.1-0.3
+camo pattern | 0.4 | top,bottom,outerwear,bag | 0.1-0.3
+graffiti graphic | 0.4 | top,outerwear | 0.1-0.3
+union jack motif | 0.3 | top,headwear | 0.1-0.3
+reflective trim | 0.4 | outerwear,bag | 0.1-0.3
+checker pattern | 0.3 | top,bottom,accessories | 0.1-0.3
+album art graphic | 0.4 | top | 0.1-0.3

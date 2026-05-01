@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neon mesh top | 0.65 | 0.0-0.3 | mesh
+fishnet long-sleeve | 0.60 | 0.0-0.3 | mesh
+holographic crop | 0.55 | 0.0-0.3 | PVC,vinyl
+reflective tank top | 0.50 | 0.0-0.3 | vinyl
+cropped tech tee | 0.50 | 0.0-0.3 | cotton,mesh
+
+# mid-casual
+cyber harness top | 0.55 | 0.1-0.4 | PVC,leather
+strap bodysuit | 0.55 | 0.1-0.4 | PVC,vinyl
+LED-trimmed crop | 0.40 | 0.1-0.4 | PVC,vinyl
+laced cyber bustier | 0.50 | 0.1-0.4 | PVC,leather
+cutout bodysuit | 0.50 | 0.1-0.4 | PVC,vinyl
+techwear tunic | 0.45 | 0.1-0.4 | cotton,mesh
+buckled rave top | 0.45 | 0.0-0.3 | PVC,vinyl

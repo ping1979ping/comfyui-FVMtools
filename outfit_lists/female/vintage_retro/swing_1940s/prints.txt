@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+polka dot pattern | 0.5 | top,bottom | 0.2-0.6
+cherry print | 0.3 | top | 0.1-0.4
+gingham pattern | 0.4 | top,bottom | 0.1-0.4
+floral tea print | 0.5 | top,bottom | 0.2-0.6
+houndstooth pattern | 0.4 | top,bottom,outerwear | 0.3-0.7
+pinstripe pattern | 0.4 | bottom,outerwear | 0.4-0.8
+nautical stripes | 0.4 | top,bottom | 0.2-0.5
+plaid pattern | 0.4 | top,bottom,outerwear | 0.2-0.6
+windowpane check | 0.3 | top,outerwear | 0.3-0.7
+ditsy floral | 0.4 | top,bottom | 0.2-0.5

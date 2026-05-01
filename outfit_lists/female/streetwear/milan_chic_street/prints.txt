@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+designer monogram | 0.7 | top,bag,headwear | 0.1-0.4
+embroidered logo | 0.6 | top,headwear,outerwear | 0.1-0.4
+fine pinstripe | 0.4 | bottom,outerwear | 0.1-0.4
+houndstooth pattern | 0.4 | top,outerwear | 0.1-0.4
+animal print | 0.4 | top,bottom,bag | 0.1-0.4
+gold hardware detail | 0.5 | bag,accessories | 0.1-0.4
+floral motif | 0.4 | top,bottom | 0.1-0.4
+geometric pattern | 0.4 | top,outerwear | 0.1-0.4
+quilted detail | 0.4 | bag,outerwear | 0.1-0.4
+chain detail | 0.5 | bag,accessories | 0.1-0.4
+windowpane check | 0.3 | bottom,outerwear | 0.1-0.4

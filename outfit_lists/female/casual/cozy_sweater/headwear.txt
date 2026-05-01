@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky knit beanie | 0.70 | 0.1-0.3 | knit,wool
+pom-pom beanie | 0.50 | 0.1-0.3 | knit,wool
+ear-warmer headband | 0.40 | 0.1-0.3 | knit,fleece
+fuzzy bucket hat | 0.30 | 0.1-0.3 | sherpa,polyester
+slouchy beanie | 0.50 | 0.1-0.3 | knit,wool

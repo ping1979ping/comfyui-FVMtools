@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+penny loafers | 0.70 | 0.3-0.5 | leather,suede
+classic loafers | 0.70 | 0.3-0.5 | leather,suede
+saddle shoes | 0.50 | 0.3-0.5 | leather,canvas
+ballet flats | 0.60 | 0.3-0.5 | leather,satin
+boat-style shoes | 0.55 | 0.2-0.4 | suede,leather
+classic white sneakers | 0.65 | 0.2-0.4 | canvas,leather
+oxford-style shoes | 0.50 | 0.3-0.5 | leather,suede
+chelsea boots | 0.50 | 0.3-0.5 | leather,suede
+mary jane flats | 0.45 | 0.3-0.5 | leather,satin
+canvas tennis shoes | 0.55 | 0.2-0.4 | canvas,cotton

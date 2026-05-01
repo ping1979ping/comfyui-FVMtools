@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+travel-friendly blouse | 0.80 | 0.6-0.9 | polyester,silk
+wrinkle-resistant shirt | 0.80 | 0.6-0.9 | polyester,cotton
+stretchy button-down | 0.70 | 0.6-0.9 | cotton,polyester
+fine-knit pullover | 0.65 | 0.5-0.8 | wool,cashmere
+fitted shell top | 0.65 | 0.6-0.9 | polyester,silk
+classic blouse | 0.65 | 0.6-0.9 | silk,polyester
+mock-neck top | 0.55 | 0.6-0.9 | polyester,jersey
+half-sleeve blouse | 0.55 | 0.5-0.8 | polyester,silk
+ribbed turtleneck | 0.50 | 0.5-0.8 | wool,cotton
+sleeveless shell | 0.55 | 0.5-0.8 | silk,polyester

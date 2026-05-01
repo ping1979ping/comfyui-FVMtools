@@ -1,0 +1,21 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+crystal pendant | 0.70 | 0.0-0.4 | metal
+moon-shaped pendant | 0.60 | 0.0-0.4 | metal
+herb pouch | 0.40 | 0.0-0.3 | cotton,leather
+
+# mid-casual
+pentagram necklace | 0.55 | 0.1-0.5 | metal
+stacked crystal rings | 0.55 | 0.1-0.5 | metal
+talisman bracelet | 0.55 | 0.1-0.5 | metal,leather
+ornate ring | 0.55 | 0.2-0.6 | metal
+runic earrings | 0.40 | 0.2-0.6 | metal
+
+# formal
+chandelier earrings | 0.50 | 0.4-0.8 | metal
+ornate amulet | 0.55 | 0.4-0.8 | metal
+crystal headchain | 0.40 | 0.4-0.8 | metal
+spell-book locket | 0.40 | 0.3-0.7 | metal
+ritual gloves | 0.35 | 0.4-0.8 | velvet,silk

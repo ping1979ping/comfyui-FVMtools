@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+psychedelic swirl | 0.6 | top,bottom | 0.1-0.6
+paisley print | 0.5 | top,bottom,bag | 0.1-0.5
+bohemian floral | 0.5 | top,bottom | 0.1-0.5
+tie-dye pattern | 0.4 | top,bottom | 0.1-0.4
+geometric retro | 0.5 | top,bottom | 0.2-0.6
+disco ball motif | 0.3 | top | 0.4-0.9
+animal print | 0.4 | top,outerwear | 0.3-0.8
+glitter print | 0.4 | top,bottom | 0.4-0.9
+patchwork pattern | 0.4 | top,bottom,outerwear | 0.1-0.5
+sunburst pattern | 0.3 | top,outerwear | 0.2-0.6
+zigzag chevron | 0.4 | top,bottom | 0.2-0.6
+70s abstract | 0.4 | top,bottom | 0.2-0.6

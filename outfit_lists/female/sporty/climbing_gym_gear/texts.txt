@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SEND IT" | 0.3 | top | bold block letters
+"BETA" | 0.2 | top | tech mono
+"V8 OR DIE" | 0.2 | top | bold block letters
+"CRUX" | 0.2 | top,headwear | bold block letters
+"FLASH" | 0.2 | top | tech mono
+"PROJECT" | 0.2 | top | bold block letters
+"DYNO" | 0.15 | top | dynamic font
+"ON-SIGHT" | 0.2 | top | tech mono
+"CHALK UP" | 0.25 | top,headwear | playful script
+"CRAG LIFE" | 0.2 | top,headwear | playful script
+"REDPOINT" | 0.15 | top | bold block letters

@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knit scarf | 0.65 | 0.1-0.4 | knit,wool
+fleece neck warmer | 0.45 | 0.1-0.3 | fleece,polyester
+warm gloves | 0.55 | 0.1-0.3 | knit,wool
+mittens | 0.40 | 0.1-0.3 | knit,wool
+oversized scarf wrap | 0.55 | 0.2-0.5 | knit,wool
+layered necklace | 0.40 | 0.2-0.4 | metal
+small stud earrings | 0.45 | 0.2-0.4 | metal
+chunky ring | 0.40 | 0.1-0.3 | metal
+soft hair clip | 0.35 | 0.1-0.3 | plastic,metal

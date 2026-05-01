@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+short-sleeve golf polo | 0.85 | 0.1-0.3 | pique_knit,polyester
+sleeveless golf polo | 0.70 | 0.1-0.3 | pique_knit,polyester
+quarter-zip golf top | 0.60 | 0.1-0.3 | polyester,merino_blend
+fitted course shirt | 0.55 | 0.1-0.3 | polyester,spandex
+mock-neck golf shirt | 0.50 | 0.1-0.3 | polyester,spandex
+collared performance top | 0.65 | 0.1-0.3 | pique_knit,polyester
+breathable fairway tee | 0.50 | 0.0-0.3 | polyester,jersey_knit
+sleeveless mock top | 0.45 | 0.1-0.3 | polyester,spandex
+cap-sleeve course top | 0.40 | 0.1-0.3 | polyester,spandex
+classic country-club polo | 0.55 | 0.1-0.3 | pique_knit,polyester

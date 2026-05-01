@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-impact training bra | 0.80 | 0.0-0.1 | spandex,nylon
+cropped wod tank | 0.75 | 0.0-0.1 | spandex,polyester
+racerback workout tank | 0.70 | 0.0-0.1 | polyester,jersey_knit
+muscle-cut training tee | 0.55 | 0.0-0.1 | cotton_blend,polyester
+fitted compression top | 0.55 | 0.0-0.1 | spandex,nylon
+seamless training tank | 0.50 | 0.0-0.1 | seamless_knit,spandex
+short-sleeve burpee tee | 0.50 | 0.0-0.1 | polyester,jersey_knit
+twisted-front crop top | 0.45 | 0.0-0.1 | spandex,polyester
+sleeveless wod tee | 0.55 | 0.0-0.1 | cotton_blend,polyester
+mesh-back tank | 0.55 | 0.0-0.1 | polyester,nylon
+high-neck training top | 0.40 | 0.0-0.1 | spandex,nylon

@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+anime character graphic | 0.7 | top,outerwear | 0.0-0.3
+pastel rainbow gradient | 0.6 | top,bottom,outerwear | 0.0-0.3
+kawaii mascot | 0.6 | top,bag,headwear | 0.0-0.3
+heart pattern | 0.5 | top,bottom | 0.0-0.3
+star sparkle motif | 0.5 | top,accessories | 0.0-0.3
+plaid pattern | 0.5 | bottom,outerwear | 0.0-0.3
+floral cluster | 0.4 | top,bottom | 0.0-0.3
+glitter detail | 0.4 | top,accessories,bag | 0.0-0.3
+ribbon graphic | 0.4 | top,headwear | 0.0-0.3
+cherry motif | 0.3 | top,bag | 0.0-0.3
+sticker collage | 0.3 | bag,outerwear | 0.0-0.3
+candy stripe | 0.3 | top,bottom | 0.0-0.3

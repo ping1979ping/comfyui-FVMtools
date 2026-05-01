@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+team kit graphic | 0.7 | top,bottom,outerwear | 0.0-0.2
+sponsor logos | 0.6 | top,outerwear | 0.0-0.2
+peloton stripe | 0.5 | top,bottom | 0.0-0.2
+country champion bands | 0.3 | top | 0.0-0.2
+brand wordmark | 0.5 | top,headwear,bag | 0.0-0.2
+gradient panel | 0.4 | top,bottom,outerwear | 0.0-0.2
+diagonal contrast block | 0.4 | top,bottom | 0.0-0.2
+reflective strip | 0.5 | top,bottom,outerwear | 0.0-0.2
+mountain stage graphic | 0.2 | top | 0.0-0.2
+race year graphic | 0.3 | top,headwear | 0.0-0.2
+neon flame pattern | 0.2 | top,bottom | 0.0-0.2

@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oversized band tee | 0.60 | 0.1-0.3 | cotton,jersey
+ripped tank top | 0.50 | 0.1-0.3 | cotton
+checkered button-up | 0.55 | 0.1-0.4 | flannel
+slip camisole | 0.50 | 0.1-0.4 | satin
+worn vintage tee | 0.55 | 0.1-0.3 | cotton
+
+# mid-casual
+chunky knit pullover | 0.50 | 0.2-0.5 | knit,wool
+fitted ribbed turtleneck | 0.50 | 0.2-0.5 | knit
+mesh long-sleeve | 0.45 | 0.1-0.4 | mesh,polyester
+crop cardigan | 0.45 | 0.2-0.5 | knit
+
+# formal
+silk slip blouse | 0.45 | 0.4-0.7 | silk
+minimalist shell top | 0.50 | 0.4-0.7 | rayon,silk

@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+shirtwaist blouse | 0.55 | 0.2-0.5 | cotton,linen
+gibson girl blouse | 0.55 | 0.2-0.5 | cotton,lawn
+peasant chemise | 0.40 | 0.1-0.4 | cotton,linen
+tucked bodice | 0.50 | 0.2-0.5 | cotton
+
+# mid-casual
+high-collar blouse | 0.55 | 0.3-0.7 | cotton,silk
+puff-sleeve blouse | 0.55 | 0.3-0.7 | cotton,silk
+pintucked shirtwaist | 0.50 | 0.3-0.7 | cotton,silk
+ruffled jabot blouse | 0.45 | 0.4-0.7 | silk,lace
+
+# formal
+embroidered evening bodice | 0.55 | 0.5-0.9 | silk,lace
+beaded reception top | 0.45 | 0.5-0.9 | sequin,silk
+lace high-neck blouse | 0.50 | 0.5-0.9 | lace,silk
+pigeon-front bodice | 0.50 | 0.5-0.9 | silk,lace

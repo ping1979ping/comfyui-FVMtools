@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized bow | 0.6 | 0.0-0.3 | satin,polyester
+beret | 0.5 | 0.1-0.3 | wool blend,cotton
+beanie | 0.4 | 0.0-0.2 | cotton,fleece
+animal-ear hood | 0.4 | 0.0-0.3 | fleece,cotton
+mini top hat | 0.3 | 0.0-0.3 | wool blend,satin

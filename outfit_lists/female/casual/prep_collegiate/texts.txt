@@ -1,0 +1,12 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+"VARSITY" | 0.25 | top,outerwear | varsity font
+"ACADEMY" | 0.20 | top | serif font
+"COLLEGE" | 0.20 | top | varsity font
+"EST. 1892" | 0.20 | top,outerwear | serif font
+"PREP" | 0.20 | top | clean sans-serif
+"YACHT CLUB" | 0.15 | top | serif font
+"IVY" | 0.20 | top | classic serif
+"CAMPUS" | 0.20 | top | varsity font
+"SCHOLAR" | 0.15 | top | classic serif

@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pleated golf skort | 0.85 | 0.1-0.3 | polyester,spandex
+A-line course skirt | 0.65 | 0.1-0.3 | polyester,spandex
+golf bermuda shorts | 0.55 | 0.1-0.3 | polyester,cotton_twill
+slim-fit golf pants | 0.60 | 0.1-0.3 | polyester,cotton_twill
+performance capri pants | 0.45 | 0.1-0.3 | polyester,spandex
+straight-leg fairway pants | 0.40 | 0.1-0.3 | polyester,cotton_twill
+ribbed-waist golf shorts | 0.50 | 0.1-0.3 | polyester,spandex
+flat-front course shorts | 0.45 | 0.1-0.3 | polyester,cotton_twill
+mid-rise tour skirt | 0.50 | 0.1-0.3 | polyester,spandex

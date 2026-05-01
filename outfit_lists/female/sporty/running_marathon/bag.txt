@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+hydration vest | 0.65 | 0.0-0.1 | nylon,spandex
+race day drop bag | 0.50 | 0.0-0.1 | nylon,polyester
+slim running belt | 0.55 | 0.0-0.1 | spandex,nylon
+ultralight backpack | 0.35 | 0.0-0.2 | nylon,polyester
+arm sleeve phone pouch | 0.45 | 0.0-0.1 | spandex,nylon
+gear duffel | 0.30 | 0.0-0.2 | nylon,polyester
+expo tote | 0.25 | 0.0-0.2 | nylon,cotton

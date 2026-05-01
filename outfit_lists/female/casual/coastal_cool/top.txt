@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+linen-blend tank | 0.75 | 0.2-0.4 | linen,cotton
+breezy peasant top | 0.60 | 0.2-0.4 | linen,cotton
+relaxed boatneck tee | 0.65 | 0.2-0.4 | cotton,jersey
+crochet halter top | 0.50 | 0.1-0.3 | crochet,cotton
+linen-blend button-up | 0.65 | 0.3-0.5 | linen,cotton
+flowy cami | 0.55 | 0.2-0.4 | rayon,cotton
+gauzy long-sleeve top | 0.50 | 0.2-0.4 | linen,cotton
+striped breton tee | 0.65 | 0.2-0.4 | cotton,jersey
+oversized pareo top | 0.40 | 0.1-0.3 | rayon,cotton
+swim cover-up tunic | 0.45 | 0.1-0.3 | cotton,rayon
+shoulder-tie top | 0.50 | 0.2-0.4 | linen,cotton
+crochet bralette top | 0.40 | 0.1-0.3 | crochet,cotton

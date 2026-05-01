@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GLITCH" | 0.40 | top | distressed text
+"CYBER" | 0.35 | top | techno
+"NEON" | 0.30 | top | techno
+"VOID" | 0.30 | top | dripping text
+"404" | 0.30 | top | techno
+"SYSTEM ERROR" | 0.25 | top | techno
+"REBOOT" | 0.20 | top | techno
+"OVERLOAD" | 0.20 | top | distressed text
+"BIOHAZARD" | 0.20 | top,accessories | techno
+"FRAGMENT" | 0.20 | top | glitch text
+"TRANSMISSION" | 0.15 | top | techno
+"DIGITAL DEMON" | 0.20 | top | glitch text

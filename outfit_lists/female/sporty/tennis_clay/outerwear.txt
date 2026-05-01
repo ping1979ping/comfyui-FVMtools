@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+warm-up zip jacket | 0.55 | 0.1-0.3 | polyester,nylon
+court windbreaker | 0.45 | 0.1-0.3 | nylon,polyester
+sleeveless warm-up vest | 0.30 | 0.1-0.3 | polyester,nylon
+classic tennis cardigan | 0.35 | 0.1-0.3 | cotton_terry,polyester
+quarter-zip pullover | 0.40 | 0.1-0.3 | polyester,nylon
+hooded warm-up | 0.30 | 0.0-0.2 | polyester,nylon

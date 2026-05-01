@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+truck driver jacket | 0.8 | 0.1-0.3 | denim
+oversized hoodie | 0.8 | 0.0-0.3 | cotton,fleece
+varsity jacket | 0.6 | 0.1-0.3 | wool blend,leather
+cropped windbreaker | 0.5 | 0.0-0.3 | nylon,ripstop
+flannel shacket | 0.6 | 0.1-0.3 | cotton,wool blend
+zip-up hoodie | 0.6 | 0.0-0.3 | cotton,fleece
+bomber jacket | 0.5 | 0.1-0.3 | nylon,polyester

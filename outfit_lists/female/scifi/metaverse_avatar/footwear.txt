@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized chunky sneakers with reactive sole | 0.75 | 0.0-0.4 | mesh,rubber
+holographic platform boots with chrome heel | 0.60 | 0.1-0.5 | holographic,leather
+voxel-style high tops with glow laces | 0.60 | 0.0-0.3 | mesh,rubber
+chrome cyber boots with floating sole gap | 0.50 | 0.1-0.5 | metal_mesh,leather
+transparent platform shoes with chrome heel | 0.45 | 0.1-0.5 | plastic,leather
+fitted sock boots with iridescent sheen | 0.50 | 0.1-0.4 | spandex,holographic
+chunky pixel-block sandals | 0.40 | 0.0-0.3 | rubber,mesh
+glitch-pattern slip-ons | 0.45 | 0.0-0.3 | mesh,nylon
+oversized cyber boots with reactive panel | 0.55 | 0.1-0.5 | leather,metal_mesh
+chrome-toe sneakers with glow strip | 0.55 | 0.0-0.4 | mesh,rubber

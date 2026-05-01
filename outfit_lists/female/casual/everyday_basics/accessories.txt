@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+simple sunglasses | 0.65 | 0.1-0.4 | plastic
+small stud earrings | 0.55 | 0.2-0.4 | metal
+thin chain necklace | 0.45 | 0.2-0.4 | metal
+classic wristwatch | 0.45 | 0.2-0.5 | metal,leather
+plain belt | 0.50 | 0.2-0.4 | leather,canvas
+basic hair clip | 0.40 | 0.1-0.3 | plastic,metal
+soft scrunchie | 0.45 | 0.1-0.3 | cotton,jersey
+minimal ring | 0.40 | 0.2-0.4 | metal

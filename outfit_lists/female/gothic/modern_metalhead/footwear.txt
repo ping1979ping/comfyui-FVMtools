@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+combat boots | 0.85 | 0.0-0.3 | leather,faux_leather
+chunky sneakers | 0.40 | 0.0-0.3 | cotton
+worn sneakers | 0.30 | 0.0-0.3 | cotton
+
+# mid-casual
+spike-toed boots | 0.55 | 0.1-0.4 | leather,faux_leather
+buckle-strap boots | 0.55 | 0.1-0.4 | leather,faux_leather
+steel-toed boots | 0.65 | 0.1-0.4 | leather
+high-laced boots | 0.50 | 0.1-0.4 | leather,faux_leather
+chain-adorned boots | 0.40 | 0.1-0.4 | leather
+platform creepers | 0.45 | 0.0-0.3 | leather,faux_leather

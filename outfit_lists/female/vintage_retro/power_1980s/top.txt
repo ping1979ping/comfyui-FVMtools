@@ -1,0 +1,20 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oversized sweatshirt | 0.50 | 0.1-0.4 | cotton,fleece
+off-shoulder tee | 0.50 | 0.1-0.4 | cotton,jersey
+neon crop top | 0.45 | 0.1-0.4 | jersey,spandex
+mesh layered shirt | 0.40 | 0.1-0.4 | mesh,cotton
+
+# mid-casual
+shoulder-padded blouse | 0.55 | 0.3-0.7 | polyester,jersey
+ruffled cocktail blouse | 0.50 | 0.3-0.7 | polyester,satin
+power-suit shirt | 0.55 | 0.4-0.8 | polyester,cotton
+bow-collar blouse | 0.50 | 0.4-0.8 | polyester,satin
+
+# formal
+sequined cocktail top | 0.50 | 0.5-0.9 | sequin
+metallic blouse | 0.45 | 0.5-0.9 | lurex,polyester
+peplum top | 0.50 | 0.4-0.8 | polyester,satin
+embellished evening top | 0.45 | 0.5-0.9 | sequin,velvet

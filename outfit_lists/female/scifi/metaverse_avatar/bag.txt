@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floating polygon mini bag at hip | 0.55 | 0.1-0.5 | holographic,satin
+chrome-trimmed crossbody with avatar charm | 0.50 | 0.0-0.5 | leather,metal_mesh
+oversized voxel backpack | 0.55 | 0.0-0.4 | nylon,neoprene
+neon hip pouch with glow strap | 0.55 | 0.0-0.4 | nylon,neoprene
+holographic clutch with chrome chain | 0.45 | 0.2-0.5 | holographic,satin
+transparent messenger with avatar stickers | 0.40 | 0.0-0.4 | plastic,nylon
+chunky chrome belt-bag with avatar tag | 0.45 | 0.0-0.4 | nylon,metal_mesh
+floating sphere pod with chrome ring | 0.40 | 0.1-0.5 | plastic,metal

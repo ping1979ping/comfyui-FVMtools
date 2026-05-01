@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cyberpunk visor with holographic HUD | 0.55 | 0.0-0.5 | plastic,metal
+hooded cowl with neon face strip | 0.45 | 0.0-0.4 | neoprene,mesh
+neural interface band with nodes | 0.50 | 0.0-0.6 | metal,plastic
+augmented reality glasses with chrome frame | 0.55 | 0.0-0.7 | metal,plastic
+glowing neon headphones over hood | 0.45 | 0.0-0.4 | plastic,neoprene

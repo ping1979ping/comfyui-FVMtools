@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+plaid pattern | 0.6 | top,bottom,outerwear | 0.1-0.4
+flannel check | 0.5 | top,outerwear | 0.1-0.3
+band logo print | 0.4 | top | 0.1-0.3
+ditsy floral | 0.5 | top,bottom | 0.1-0.4
+tartan pattern | 0.4 | bottom,outerwear | 0.1-0.4
+tie-dye pattern | 0.4 | top | 0.1-0.3
+camo pattern | 0.3 | bottom,outerwear | 0.1-0.3
+distressed wash | 0.5 | bottom,outerwear | 0.1-0.3
+anarchy print | 0.3 | top | 0.1-0.3
+sunflower print | 0.4 | top,bottom | 0.1-0.4
+abstract grunge | 0.4 | top | 0.1-0.4

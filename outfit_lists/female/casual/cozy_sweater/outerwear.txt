@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+long open cardigan | 0.70 | 0.2-0.4 | knit,wool
+chunky cardigan | 0.75 | 0.2-0.4 | knit,wool
+teddy coat | 0.60 | 0.2-0.4 | sherpa,polyester
+puffer coat | 0.65 | 0.1-0.4 | nylon,polyester
+shearling jacket | 0.45 | 0.2-0.4 | suede,shearling
+quilted jacket | 0.55 | 0.2-0.4 | nylon,polyester
+wool peacoat | 0.45 | 0.4-0.6 | wool,polyester
+zip-front cardigan | 0.55 | 0.2-0.4 | knit,wool
+cozy fleece zip-up | 0.55 | 0.1-0.3 | fleece,polyester

@@ -1,0 +1,14 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+straw boater | 0.50 | 0.2-0.5 | straw
+wide-brim sun hat | 0.45 | 0.2-0.5 | straw
+
+# mid-casual
+plumed picture hat | 0.55 | 0.4-0.8 | feather,velvet
+toque hat | 0.45 | 0.4-0.7 | velvet,silk
+
+# formal
+ostrich-trimmed hat | 0.50 | 0.6-0.9 | feather,velvet
+jeweled aigrette | 0.35 | 0.6-0.9 | metal

@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+basketball shorts | 0.90 | 0.0-0.2 | polyester,jersey_knit
+mesh practice shorts | 0.75 | 0.0-0.2 | polyester,jersey_knit
+long-cut hoop shorts | 0.65 | 0.0-0.2 | polyester,jersey_knit
+warmup tear-aways | 0.40 | 0.0-0.2 | polyester,nylon
+compression undershorts | 0.55 | 0.0-0.1 | spandex,nylon
+biker shorts | 0.45 | 0.0-0.2 | spandex,polyester
+sweat shorts | 0.50 | 0.0-0.2 | cotton_blend,polyester
+court joggers | 0.40 | 0.0-0.2 | polyester,nylon
+team-stripe shorts | 0.55 | 0.0-0.2 | polyester,jersey_knit

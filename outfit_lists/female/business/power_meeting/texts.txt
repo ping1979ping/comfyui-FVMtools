@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BOARD" | 0.06 | accessories | engraved serif
+"EXEC" | 0.08 | accessories | engraved serif
+"CHAIR" | 0.05 | accessories | classic serif
+"PARTNER" | 0.05 | accessories | engraved serif
+"DIRECTOR" | 0.06 | accessories | classic serif

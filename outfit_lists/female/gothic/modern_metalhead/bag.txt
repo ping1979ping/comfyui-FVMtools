@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+spiked backpack | 0.60 | 0.0-0.3 | leather,faux_leather
+patch-covered tote | 0.50 | 0.0-0.3 | cotton,denim
+chain crossbody | 0.45 | 0.0-0.3 | leather,faux_leather
+
+# mid-casual
+studded messenger | 0.40 | 0.1-0.4 | leather,faux_leather
+buckled rucksack | 0.45 | 0.1-0.4 | leather,faux_leather
+gig-flyer pouch | 0.30 | 0.0-0.3 | cotton
+biker fanny pack | 0.40 | 0.0-0.3 | leather,faux_leather
+chained clutch | 0.35 | 0.1-0.4 | leather,metal

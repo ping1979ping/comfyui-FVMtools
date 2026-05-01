@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oxford lace-ups | 0.50 | 0.1-0.5 | leather
+saddle shoes | 0.40 | 0.1-0.4 | leather
+spectator pumps | 0.50 | 0.2-0.6 | leather
+
+# mid-casual
+peep-toe heels | 0.55 | 0.3-0.7 | leather,suede
+slingback heels | 0.50 | 0.3-0.7 | leather
+ankle-strap pumps | 0.55 | 0.3-0.7 | leather,suede
+T-strap heels | 0.45 | 0.3-0.7 | leather
+
+# formal
+satin evening shoes | 0.50 | 0.5-0.9 | satin
+sequined pumps | 0.40 | 0.5-0.9 | sequin,leather
+classic court shoes | 0.55 | 0.4-0.8 | leather,suede

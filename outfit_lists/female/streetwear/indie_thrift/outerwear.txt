@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+vintage trucker jacket | 0.8 | 0.1-0.3 | denim
+oversized cardigan | 0.7 | 0.1-0.3 | wool blend,cotton
+shaggy sherpa coat | 0.6 | 0.1-0.3 | faux_fur,fleece
+worn-in moto jacket | 0.5 | 0.1-0.3 | leather
+faded varsity jacket | 0.5 | 0.1-0.3 | wool blend,polyester
+flannel shacket | 0.6 | 0.1-0.3 | cotton,wool blend
+puffy retro jacket | 0.5 | 0.1-0.3 | nylon,polyester
+suede western jacket | 0.4 | 0.1-0.3 | suede

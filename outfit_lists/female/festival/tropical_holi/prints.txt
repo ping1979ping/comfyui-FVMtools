@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+color-powder splash | 0.85 | top,bottom | 0.1-0.3
+rainbow gradient | 0.65 | top,bottom | 0.1-0.3
+tropical floral | 0.65 | top,bottom | 0.1-0.3
+palm leaf print | 0.55 | top,bottom,bag | 0.1-0.3
+hibiscus motif | 0.50 | top,bottom | 0.1-0.3
+batik pattern | 0.50 | top,bottom | 0.1-0.3
+splattered paint | 0.65 | top,bottom | 0.1-0.3
+ombre wash | 0.50 | top,bottom | 0.1-0.3
+tribal trim | 0.45 | top,outerwear | 0.1-0.3
+shell embellishment | 0.45 | accessories,bag | 0.1-0.3
+sunset gradient | 0.50 | top | 0.1-0.3

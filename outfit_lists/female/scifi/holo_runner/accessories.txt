@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+racing wrist comm with split-time display | 0.65 | 0.1-0.6 | metal,plastic
+fingerless racing gloves with chrome knuckles | 0.60 | 0.0-0.5 | spandex,leather
+hydration pack tube clipped to collar | 0.55 | 0.0-0.4 | plastic,nylon
+chrome shin guards with reactive strip | 0.45 | 0.1-0.5 | metal,plastic
+neural racing band with temple sensors | 0.55 | 0.1-0.6 | plastic,metal
+hip-mounted course beacon | 0.40 | 0.1-0.5 | plastic,nylon
+chrome ear studs with course node | 0.40 | 0.0-0.5 | metal
+sweat-wicking sleeves with circuit print | 0.45 | 0.0-0.4 | spandex,mesh
+holstered scanner on thigh | 0.40 | 0.1-0.5 | plastic,metal
+chrome arm sleeve with split-time display | 0.50 | 0.1-0.5 | spandex,metal

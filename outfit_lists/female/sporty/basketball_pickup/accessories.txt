@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sweatband | 0.70 | 0.0-0.2 | cotton_blend,spandex
+arm shooting sleeve | 0.60 | 0.0-0.2 | spandex,nylon
+knee pad | 0.50 | 0.0-0.2 | spandex,nylon
+ankle brace | 0.40 | 0.0-0.2 | spandex,nylon
+mouthguard | 0.30 | 0.0-0.2 | rubber
+finger sleeve | 0.40 | 0.0-0.2 | spandex,nylon
+sport headband | 0.55 | 0.0-0.2 | cotton_blend,spandex
+team chain necklace | 0.30 | 0.0-0.2 | metal_chain
+court watch | 0.40 | 0.0-0.2 | rubber,plastic
+shoot-around towel | 0.35 | 0.0-0.2 | cotton_blend
+elbow pad | 0.30 | 0.0-0.2 | spandex,nylon

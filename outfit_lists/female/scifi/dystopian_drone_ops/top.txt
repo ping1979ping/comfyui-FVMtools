@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+armored tactical bodysuit with utility harness | 0.85 | 0.2-0.7 | neoprene,kevlar
+high-collar combat shirt with chest plate | 0.75 | 0.2-0.7 | kevlar,carbon_fiber
+sleeveless armored vest over compression shirt | 0.70 | 0.2-0.7 | kevlar,spandex
+fitted recon top with shoulder armor | 0.70 | 0.2-0.7 | kevlar,nylon
+distressed thermal long-sleeve | 0.55 | 0.0-0.4 | spandex,mesh
+hooded recon shirt with face cowl | 0.60 | 0.0-0.5 | neoprene,nylon
+ribbed compression base under armor | 0.65 | 0.1-0.6 | spandex,mesh
+buckled tactical halter with rib plates | 0.50 | 0.2-0.6 | kevlar,neoprene
+torn surplus tank with patches | 0.50 | 0.0-0.3 | nylon,mesh
+fitted recon turtleneck with throat plate | 0.55 | 0.2-0.6 | spandex,kevlar
+soot-stained crop with bandage wrap | 0.45 | 0.0-0.3 | mesh,spandex

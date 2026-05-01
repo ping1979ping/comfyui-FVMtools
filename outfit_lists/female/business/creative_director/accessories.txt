@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+statement earrings | 0.75 | 0.5-0.8 | metal,acrylic
+chunky chain necklace | 0.65 | 0.5-0.8 | metal
+artist watch | 0.65 | 0.5-0.9 | metal,leather
+oversized rings | 0.55 | 0.4-0.8 | metal
+sculptural bangle | 0.50 | 0.5-0.8 | metal,acrylic
+designer scarf | 0.50 | 0.5-0.8 | silk
+geometric brooch | 0.40 | 0.6-0.9 | metal
+wide statement belt | 0.55 | 0.5-0.8 | leather
+layered chains | 0.55 | 0.4-0.7 | metal
+mixed-tone cuff | 0.45 | 0.5-0.8 | metal

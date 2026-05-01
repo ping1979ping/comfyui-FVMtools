@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped denim jacket | 0.65 | 0.2-0.4 | denim
+soft cardigan | 0.60 | 0.3-0.5 | knit,cotton
+lightweight blazer | 0.55 | 0.4-0.6 | polyester,linen
+trench coat | 0.45 | 0.4-0.6 | cotton,polyester
+kimono wrap | 0.40 | 0.2-0.4 | rayon,chiffon
+duster cardigan | 0.45 | 0.3-0.5 | knit,rayon
+short trench | 0.40 | 0.4-0.6 | cotton,polyester
+relaxed blazer | 0.45 | 0.4-0.6 | linen,polyester

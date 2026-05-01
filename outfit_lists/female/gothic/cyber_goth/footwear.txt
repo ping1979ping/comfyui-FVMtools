@@ -1,0 +1,16 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neon platform boots | 0.65 | 0.0-0.3 | PVC,vinyl
+chunky rave boots | 0.65 | 0.0-0.3 | PVC,leather
+holographic sneakers | 0.50 | 0.0-0.3 | vinyl
+LED light-up boots | 0.40 | 0.0-0.3 | PVC,vinyl
+
+# mid-casual
+buckled platforms | 0.55 | 0.1-0.4 | PVC,leather
+strap-detail boots | 0.55 | 0.1-0.4 | leather,PVC
+spike-toed platforms | 0.45 | 0.1-0.4 | leather,PVC
+chained ankle boots | 0.45 | 0.1-0.4 | leather,vinyl
+cyber knee-high boots | 0.50 | 0.1-0.4 | PVC,vinyl
+techwear high-tops | 0.40 | 0.0-0.3 | cotton,vinyl

@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+heart-shaped purse | 0.55 | 0.1-0.4 | velvet,satin
+ribbon-strap bag | 0.55 | 0.1-0.4 | satin,velvet
+small bow clutch | 0.50 | 0.1-0.4 | velvet,satin
+
+# mid-casual
+coffin-shaped purse | 0.45 | 0.2-0.5 | velvet,satin
+laced handbag | 0.45 | 0.3-0.6 | satin,lace
+ornate top-handle bag | 0.40 | 0.3-0.6 | velvet,satin
+princess wristlet | 0.40 | 0.3-0.6 | satin,silk
+beaded mini-clutch | 0.35 | 0.4-0.7 | satin,silk

@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WAVES" | 0.3 | top,headwear | playful script
+"SALT LIFE" | 0.25 | top | playful script
+"PIPELINE" | 0.2 | top,headwear | bold block letters
+"DAWN PATROL" | 0.2 | top | playful script
+"BARREL" | 0.15 | top | bold block letters
+"OCEAN MINDED" | 0.2 | top | playful script
+"SURF & SUN" | 0.25 | top,headwear | playful script
+"HANG LOOSE" | 0.25 | top,headwear | playful script
+"LOCAL ONLY" | 0.15 | top,headwear | bold block letters
+"BIKINI WEATHER" | 0.2 | top | playful script

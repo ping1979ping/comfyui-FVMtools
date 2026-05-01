@@ -1,0 +1,10 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+"BASIC" | 0.20 | top | clean sans-serif
+"EVERYDAY" | 0.20 | top | minimal sans-serif
+"SIMPLE" | 0.15 | top | thin sans-serif
+"CLASSIC" | 0.20 | top | serif font
+"NO. 01" | 0.15 | top | bold numerals
+"ESSENTIAL" | 0.20 | top | clean sans-serif
+"PLAIN" | 0.10 | top | thin serif

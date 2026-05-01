@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+draped flowing blouse | 0.80 | 0.6-0.9 | silk,chiffon
+artful asymmetric top | 0.65 | 0.5-0.8 | silk,polyester
+oversized white shirt | 0.75 | 0.5-0.8 | cotton,linen
+fashion-forward bodysuit | 0.55 | 0.5-0.8 | jersey,polyester
+sculptural shoulder top | 0.50 | 0.6-0.9 | crepe,polyester
+fine-knit pullover | 0.65 | 0.5-0.8 | cashmere,wool
+high-neck shell | 0.55 | 0.6-0.9 | silk,polyester
+sheer paneled blouse | 0.45 | 0.5-0.8 | chiffon,silk
+graphic tee | 0.40 | 0.4-0.6 | cotton
+slouchy turtleneck | 0.55 | 0.5-0.8 | cashmere,wool
+mesh-overlay top | 0.40 | 0.4-0.7 | nylon,polyester

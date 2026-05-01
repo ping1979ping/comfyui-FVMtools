@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"23" | 0.3 | top,bottom | jersey number font
+"BALLER" | 0.25 | top | bold block letters
+"HOOPS" | 0.25 | top,headwear | varsity font
+"COURT QUEEN" | 0.2 | top | dynamic font
+"SWISH" | 0.2 | top | impact font
+"GAME 7" | 0.2 | top | varsity font
+"BUCKETS" | 0.2 | top | bold block letters
+"TRIPLE-DOUBLE" | 0.15 | top | tech mono
+"NOTHING BUT NET" | 0.15 | top | dynamic font
+"CITY OF CHAMPS" | 0.15 | top,headwear | varsity font
+"FIRST TEAM" | 0.2 | top | bold block letters

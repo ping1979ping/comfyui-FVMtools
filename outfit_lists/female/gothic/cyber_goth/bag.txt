@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+holographic backpack | 0.55 | 0.0-0.3 | vinyl
+neon mini-pack | 0.50 | 0.0-0.3 | vinyl
+reflective fanny pack | 0.55 | 0.0-0.3 | vinyl
+clear plastic bag | 0.45 | 0.0-0.3 | vinyl,PVC
+
+# mid-casual
+chain-strap rave bag | 0.45 | 0.1-0.4 | metal,vinyl
+buckled techwear sling | 0.50 | 0.1-0.4 | cotton,leather
+strap-detail crossbody | 0.45 | 0.1-0.4 | PVC,leather
+LED-trimmed clutch | 0.30 | 0.1-0.4 | PVC,vinyl

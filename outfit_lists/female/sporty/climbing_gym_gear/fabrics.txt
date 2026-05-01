@@ -1,0 +1,22 @@
+# format: fabric_name | formality | family | weight
+
+# performance stretch
+spandex | 0.1 | sporty | light
+nylon | 0.1 | sporty | light
+polyester | 0.1 | sporty | light
+jersey_knit | 0.1 | sporty | light
+
+# casual
+cotton_blend | 0.15 | natural | medium
+ribbed_knit | 0.15 | natural | medium
+flannel_woven | 0.2 | casual | medium
+fleece | 0.15 | casual | medium
+
+# functional
+rubber | 0.05 | sporty | medium
+plastic | 0.05 | sporty | light
+leatherette | 0.2 | sporty | medium
+mesh | 0.1 | sporty | light
+down_fill | 0.2 | sporty | light
+metal_disc | 0.2 | sporty | light
+rope_braid | 0.1 | natural | light

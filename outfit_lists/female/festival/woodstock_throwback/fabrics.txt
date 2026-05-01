@@ -1,0 +1,22 @@
+# format: fabric_name | formality | family | weight
+
+# hippie basics
+cotton | 0.15 | natural | light
+denim | 0.2 | tough | heavy
+crochet | 0.15 | casual | light
+mesh | 0.1 | casual | light
+
+# hippie specials
+fringe | 0.15 | casual | light
+tie-dye | 0.1 | casual | light
+faux_fur | 0.25 | luxury | medium
+jersey | 0.1 | casual | light
+
+# structured
+leather | 0.25 | tough | medium
+suede | 0.25 | tough | medium
+rubber | 0.05 | sporty | medium
+
+# accessories
+metal | 0.2 | accessory | light
+plastic | 0.05 | sporty | light

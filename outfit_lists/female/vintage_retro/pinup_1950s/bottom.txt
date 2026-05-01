@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+pedal pushers | 0.45 | 0.1-0.4 | cotton,denim
+capri pants | 0.50 | 0.1-0.4 | cotton
+gathered circle skirt | 0.55 | 0.2-0.5 | cotton
+
+# mid-casual
+poodle skirt | 0.45 | 0.2-0.5 | wool,felt
+swing midi skirt | 0.55 | 0.2-0.6 | cotton,rayon
+high-waisted shorts | 0.45 | 0.1-0.4 | denim,cotton
+crinoline skirt | 0.45 | 0.3-0.6 | tulle,cotton
+
+# formal
+wiggle pencil skirt | 0.55 | 0.4-0.8 | wool,satin
+fishtail skirt | 0.40 | 0.5-0.9 | satin,silk
+tailored capris | 0.45 | 0.3-0.6 | wool,gabardine

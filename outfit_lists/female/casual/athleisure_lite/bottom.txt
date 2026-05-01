@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waist leggings | 0.90 | 0.1-0.3 | spandex,nylon
+biker shorts | 0.70 | 0.1-0.3 | spandex,jersey
+flared yoga pants | 0.55 | 0.1-0.3 | spandex,polyester
+ribbed leggings | 0.60 | 0.1-0.3 | spandex,nylon
+joggers | 0.65 | 0.1-0.3 | fleece,cotton
+running shorts | 0.55 | 0.1-0.2 | polyester,nylon
+seamless leggings | 0.55 | 0.1-0.3 | spandex,nylon
+tennis-style skort | 0.45 | 0.1-0.3 | polyester,spandex
+track pants | 0.55 | 0.1-0.3 | polyester,nylon
+capri leggings | 0.40 | 0.1-0.3 | spandex,nylon

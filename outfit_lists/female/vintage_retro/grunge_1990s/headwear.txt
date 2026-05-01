@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+beanie | 0.60 | 0.1-0.3 | knit,wool
+bandana | 0.45 | 0.1-0.3 | cotton
+bucket hat | 0.40 | 0.1-0.3 | nylon,canvas
+
+# mid-casual
+flat-brim cap | 0.40 | 0.1-0.3 | wool
+
+# formal
+silk headscarf | 0.30 | 0.3-0.7 | silk

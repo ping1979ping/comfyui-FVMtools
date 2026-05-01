@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+statement beret | 0.25 | 0.5-0.8 | wool,cashmere
+designer sunglasses | 0.40 | 0.4-0.8 | acetate,metal
+oversized hair clip | 0.25 | 0.5-0.8 | metal,acetate
+printed turban | 0.20 | 0.5-0.8 | silk
+wide-brim hat | 0.20 | 0.5-0.8 | wool,felt

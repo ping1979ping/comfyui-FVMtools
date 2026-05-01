@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+embroidered jacket | 0.55 | 0.2-0.4 | cotton,denim
+woven shrug | 0.55 | 0.1-0.3 | crochet
+folk-style coat | 0.45 | 0.2-0.4 | cotton
+prairie cardigan | 0.50 | 0.2-0.4 | cotton
+patterned poncho | 0.45 | 0.2-0.4 | cotton
+linen blazer | 0.40 | 0.2-0.4 | cotton
+flowy duster | 0.40 | 0.2-0.4 | cotton
+ruffled cape | 0.40 | 0.2-0.4 | cotton,satin
+embroidered shawl | 0.50 | 0.2-0.4 | cotton

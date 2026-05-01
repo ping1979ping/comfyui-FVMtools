@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dried flower crown | 0.85 | 0.1-0.3 | cotton
+ribbon braid tie | 0.55 | 0.1-0.3 | satin
+woven belt | 0.55 | 0.2-0.4 | cotton,leather
+delicate gold chain | 0.55 | 0.2-0.4 | metal
+embroidered choker | 0.50 | 0.1-0.3 | cotton
+small gold hoops | 0.55 | 0.1-0.3 | metal
+flower hair pins | 0.55 | 0.1-0.3 | metal,plastic
+pearl strand | 0.45 | 0.2-0.4 | plastic,metal
+dainty bracelet stack | 0.50 | 0.1-0.3 | metal
+folk-style earrings | 0.50 | 0.2-0.4 | metal
+embroidered armband | 0.40 | 0.1-0.3 | cotton

@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"ACE" | 0.3 | top | varsity font
+"DEUCE" | 0.2 | top | classic serif
+"ROLAND" | 0.2 | top,headwear | classic serif
+"GAME SET MATCH" | 0.25 | top | varsity font
+"40-LOVE" | 0.2 | top | bold block letters
+"COURT QUEEN" | 0.2 | top,headwear | script
+"BREAK POINT" | 0.15 | top | tech mono
+"SLICE & DICE" | 0.15 | top | dynamic font
+"TIEBREAK" | 0.15 | top | bold block letters
+"CLAY SEASON" | 0.2 | top,headwear | classic serif

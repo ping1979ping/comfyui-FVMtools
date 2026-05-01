@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floating chrome ornament with micro-thrusters | 0.50 | 0.6-1.0 | metal
+ambassador chest crest with floating gems | 0.55 | 0.6-1.0 | metal,satin
+chrome choker with embedded crystal | 0.55 | 0.5-0.9 | metal
+elaborate earrings with floating sphere | 0.50 | 0.5-0.9 | metal,plastic
+holographic shoulder ornament with chrome arm | 0.45 | 0.6-1.0 | holographic,metal
+ceremonial sash with embroidered crest | 0.50 | 0.6-1.0 | silk,satin
+crystalline tiara with floating stones | 0.40 | 0.7-1.0 | metal
+chrome cuff bracelets stacked | 0.50 | 0.5-0.9 | metal
+opera-length sheer gloves | 0.45 | 0.6-1.0 | mesh,satin
+delicate chain harness with chrome links | 0.40 | 0.5-0.9 | metal,satin

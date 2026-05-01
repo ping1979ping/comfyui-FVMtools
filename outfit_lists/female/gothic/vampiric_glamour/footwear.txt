@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+stiletto ankle boots | 0.60 | 0.2-0.5 | leather,satin
+sleek heeled boots | 0.55 | 0.2-0.5 | leather
+
+# formal
+crystal-strap stilettos | 0.55 | 0.6-1.0 | satin,velvet
+beaded high heels | 0.55 | 0.6-1.0 | satin,silk
+opulent platform heels | 0.50 | 0.6-1.0 | satin,velvet
+ornate evening heels | 0.55 | 0.6-1.0 | satin,silk
+ribbon-laced stilettos | 0.45 | 0.5-0.9 | satin,silk
+high-heeled long boots | 0.50 | 0.5-0.9 | leather,velvet
+embroidered slippers | 0.35 | 0.6-1.0 | satin,silk

@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"CEO" | 0.10 | accessories | engraved serif
+"BOSS" | 0.08 | accessories | bold sans-serif
+"LEAD" | 0.08 | accessories | clean sans-serif
+"FOUNDER" | 0.06 | accessories | engraved serif
+"EST. 2010" | 0.05 | accessories | classic serif
+"VP" | 0.06 | accessories | bold sans-serif

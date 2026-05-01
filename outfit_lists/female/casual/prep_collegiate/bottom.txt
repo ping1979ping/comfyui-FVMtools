@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pleated tennis skirt | 0.70 | 0.2-0.4 | polyester,cotton
+khaki chinos | 0.70 | 0.3-0.5 | cotton,polyester
+plaid mini skirt | 0.65 | 0.2-0.4 | wool,polyester
+straight-leg trousers | 0.55 | 0.3-0.5 | wool,polyester
+cuffed shorts | 0.50 | 0.2-0.4 | cotton,linen
+A-line midi skirt | 0.55 | 0.3-0.5 | wool,polyester
+cropped trousers | 0.55 | 0.3-0.5 | cotton,polyester
+classic jeans | 0.65 | 0.2-0.4 | denim
+bermuda shorts | 0.45 | 0.2-0.4 | cotton,linen
+pleated trousers | 0.50 | 0.3-0.5 | wool,polyester

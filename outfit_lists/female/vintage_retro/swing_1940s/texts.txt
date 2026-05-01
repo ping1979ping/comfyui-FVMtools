@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VICTORY" | 0.2 | top | varsity font
+"1944" | 0.15 | top | vintage serif
+"USO" | 0.15 | top | military stencil
+"ROSIE" | 0.2 | top | varsity font
+"WE CAN DO IT" | 0.15 | top | poster font
+"SWING" | 0.2 | top | retro script
+"BIG BAND" | 0.15 | top | retro script
+"PIN-UP" | 0.15 | top | vintage serif

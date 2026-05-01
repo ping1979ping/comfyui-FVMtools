@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-rise jeans | 0.75 | 0.2-0.4 | denim
+fleece-lined leggings | 0.70 | 0.1-0.3 | jersey,fleece
+corduroy pants | 0.55 | 0.2-0.4 | corduroy,cotton
+joggers | 0.60 | 0.1-0.2 | fleece,cotton
+wool blend trousers | 0.45 | 0.3-0.5 | wool,polyester
+midi knit skirt | 0.45 | 0.2-0.4 | knit,wool
+lounge pants | 0.55 | 0.1-0.2 | jersey,cotton
+straight-leg jeans | 0.65 | 0.2-0.4 | denim
+flare leggings | 0.50 | 0.1-0.3 | jersey,polyester
+wide-leg corduroy pants | 0.45 | 0.2-0.4 | corduroy,cotton

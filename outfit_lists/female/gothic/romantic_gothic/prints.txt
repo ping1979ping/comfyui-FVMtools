@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+dark rose pattern | 0.55 | top,bottom | 0.2-0.7
+floral lace overlay | 0.55 | top,outerwear | 0.3-0.8
+romantic embroidery | 0.50 | top,outerwear | 0.3-0.8
+ornate scrollwork | 0.40 | top,bottom | 0.4-0.8
+heart-shaped motif | 0.30 | top,accessories | 0.2-0.6
+crystal-beaded detail | 0.40 | top,bottom | 0.5-0.9
+ribbon trim detail | 0.50 | top,bottom | 0.2-0.7
+floral baroque print | 0.40 | top,bottom | 0.4-0.8
+beaded fringe detail | 0.30 | top,outerwear | 0.5-0.9
+butterfly motif | 0.35 | top,accessories | 0.2-0.6
+moonlit vine pattern | 0.30 | top,outerwear | 0.3-0.7

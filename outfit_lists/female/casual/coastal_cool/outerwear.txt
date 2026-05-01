@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+light cardigan | 0.60 | 0.2-0.4 | knit,cotton
+linen-blend blazer | 0.45 | 0.4-0.6 | linen,polyester
+beach kimono | 0.55 | 0.1-0.3 | rayon,chiffon
+chambray overshirt | 0.55 | 0.2-0.4 | cotton,denim
+gauzy cover-up | 0.50 | 0.1-0.3 | cotton,rayon
+striped cotton cardigan | 0.50 | 0.2-0.4 | knit,cotton
+breezy duster | 0.40 | 0.2-0.4 | rayon,linen

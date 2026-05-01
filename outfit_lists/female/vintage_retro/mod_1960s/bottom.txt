@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+mini skirt | 0.60 | 0.1-0.5 | cotton,polyester
+hot pants | 0.40 | 0.1-0.4 | denim,polyester
+hipster jeans | 0.45 | 0.1-0.4 | denim
+
+# mid-casual
+A-line mini | 0.60 | 0.2-0.6 | wool,polyester
+go-go skirt | 0.50 | 0.2-0.5 | vinyl,polyester
+pleated tennis skirt | 0.45 | 0.2-0.5 | wool,polyester
+cigarette pants | 0.50 | 0.3-0.6 | wool,polyester
+
+# formal
+shift dress skirt | 0.50 | 0.4-0.8 | wool,polyester
+patent mini | 0.40 | 0.3-0.7 | leather,vinyl
+mod evening trousers | 0.40 | 0.4-0.8 | satin,polyester

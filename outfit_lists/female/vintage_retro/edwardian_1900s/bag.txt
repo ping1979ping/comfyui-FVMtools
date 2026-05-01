@@ -1,0 +1,16 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+chatelaine purse | 0.40 | 0.2-0.5 | leather
+embroidered pouch | 0.40 | 0.2-0.5 | cotton,silk
+
+# mid-casual
+beaded reticule | 0.55 | 0.3-0.7 | sequin,silk
+mesh chain purse | 0.50 | 0.4-0.7 | metal
+velvet drawstring bag | 0.45 | 0.3-0.7 | velvet
+
+# formal
+gold mesh evening bag | 0.50 | 0.6-0.9 | metal
+embroidered ball reticule | 0.45 | 0.6-0.9 | silk,sequin
+satin envelope purse | 0.45 | 0.5-0.9 | satin

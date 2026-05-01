@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+long mourning skirt | 0.65 | 0.4-0.7 | satin,silk
+ruffled underskirt | 0.50 | 0.4-0.7 | cotton,silk
+bustle skirt | 0.55 | 0.5-0.8 | satin,silk
+
+# formal
+floor-length gown skirt | 0.70 | 0.6-1.0 | satin,silk,velvet
+trained skirt | 0.55 | 0.6-1.0 | velvet,satin
+crinoline skirt | 0.50 | 0.6-1.0 | tulle,satin
+hoop skirt | 0.40 | 0.6-1.0 | tulle,silk
+draped overskirt | 0.45 | 0.5-0.9 | velvet,silk
+high-waist culottes | 0.35 | 0.4-0.7 | satin,silk

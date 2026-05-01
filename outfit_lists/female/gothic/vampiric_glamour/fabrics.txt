@@ -1,0 +1,16 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+mesh | 0.2 | sporty | light
+
+# mid-range fabrics
+leather | 0.45 | tough | heavy
+faux_fur | 0.55 | luxury | heavy
+
+# formal fabrics
+velvet | 0.75 | luxury | medium
+satin | 0.75 | luxury | light
+silk | 0.9 | luxury | light
+
+# special materials
+metal | 0.6 | luxury | heavy

@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+hair clips | 0.7 | 0.0-0.3 | polyester
+mini hoop earrings | 0.6 | 0.1-0.3 | cotton
+pendant necklace | 0.6 | 0.1-0.3 | cotton
+choker necklace | 0.5 | 0.0-0.3 | leather,satin
+slim wide belt | 0.5 | 0.1-0.4 | leather
+bow ribbon | 0.5 | 0.0-0.3 | satin,polyester
+stack rings | 0.5 | 0.1-0.3 | cotton
+oversized sunglasses | 0.5 | 0.1-0.4 | nylon
+fingerless gloves | 0.4 | 0.0-0.3 | leather,cotton
+knee-high socks | 0.5 | 0.0-0.3 | cotton,spandex

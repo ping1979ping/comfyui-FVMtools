@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+pleated mini skirt | 0.8 | 0.1-0.3 | wool blend,polyester
+high-waist wide-leg jeans | 0.7 | 0.1-0.3 | denim
+cargo pants | 0.7 | 0.1-0.3 | cotton,ripstop
+fitted shorts | 0.6 | 0.0-0.3 | cotton,denim
+flared trousers | 0.6 | 0.1-0.4 | polyester,wool blend
+mini wrap skirt | 0.6 | 0.1-0.3 | leather,polyester
+joggers | 0.6 | 0.0-0.3 | cotton,fleece
+straight-leg jeans | 0.6 | 0.1-0.3 | denim
+plaid mini skirt | 0.5 | 0.0-0.3 | wool blend,polyester

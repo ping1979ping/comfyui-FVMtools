@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cycling backpack | 0.55 | 0.0-0.2 | nylon,polyester
+musette feed bag | 0.45 | 0.0-0.1 | cotton_blend,nylon
+bike-frame pouch | 0.50 | 0.0-0.1 | nylon,polyester
+bikepacking handlebar roll | 0.30 | 0.0-0.1 | nylon,polyester
+seat-post saddle pack | 0.55 | 0.0-0.1 | nylon,polyester
+race wheel bag | 0.30 | 0.0-0.2 | nylon,polyester
+slim hydration vest | 0.35 | 0.0-0.1 | nylon,spandex

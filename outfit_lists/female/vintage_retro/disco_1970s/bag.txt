@@ -1,0 +1,17 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fringed shoulder bag | 0.50 | 0.1-0.5 | suede
+patchwork tote | 0.40 | 0.1-0.4 | denim,leather
+crochet bag | 0.45 | 0.1-0.4 | knit
+
+# mid-casual
+saddle bag | 0.50 | 0.2-0.6 | leather
+embroidered hippie pouch | 0.40 | 0.1-0.4 | cotton
+
+# formal
+sequined mini clutch | 0.50 | 0.5-0.9 | sequin
+metallic disco purse | 0.50 | 0.5-0.9 | lurex,satin
+gold chain shoulder bag | 0.45 | 0.5-0.9 | metal,leather
+satin evening pouch | 0.45 | 0.5-0.9 | satin

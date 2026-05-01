@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+heart locket | 0.55 | 0.2-0.6 | metal
+ribbon choker | 0.55 | 0.2-0.6 | satin,silk
+
+# mid-casual
+crystal pendant | 0.45 | 0.3-0.7 | metal
+dangling earrings | 0.50 | 0.3-0.7 | metal
+soft armbands | 0.40 | 0.3-0.6 | satin,silk
+ornate ring | 0.50 | 0.3-0.7 | metal
+
+# formal
+chandelier earrings | 0.55 | 0.5-0.9 | metal
+opera-length gloves | 0.55 | 0.6-1.0 | satin,silk
+beaded necklace | 0.45 | 0.5-0.9 | metal
+crystal tiara | 0.30 | 0.6-1.0 | metal
+delicate hand chain | 0.40 | 0.4-0.8 | metal

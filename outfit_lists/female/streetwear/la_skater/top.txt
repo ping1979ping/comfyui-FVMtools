@@ -1,0 +1,11 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized graphic tee | 0.9 | 0.1-0.3 | cotton,jersey
+boxy band tee | 0.7 | 0.1-0.3 | cotton
+worn-in flannel | 0.7 | 0.1-0.3 | cotton,wool blend
+loose tank | 0.6 | 0.0-0.2 | cotton,jersey
+skate brand hoodie | 0.7 | 0.1-0.3 | cotton,fleece
+cropped baby tee | 0.6 | 0.0-0.2 | cotton,jersey
+oversized longsleeve | 0.6 | 0.1-0.3 | cotton,jersey
+boxy crewneck | 0.6 | 0.1-0.3 | cotton,fleece
+striped longsleeve | 0.5 | 0.1-0.3 | cotton,jersey

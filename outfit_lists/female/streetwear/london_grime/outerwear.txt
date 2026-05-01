@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+puffer jacket | 0.9 | 0.1-0.3 | nylon,polyester
+shell tracksuit jacket | 0.8 | 0.1-0.3 | polyester,nylon
+zip-up hoodie | 0.7 | 0.1-0.3 | cotton,fleece
+heavy parka | 0.6 | 0.1-0.3 | nylon,polyester
+gilet vest | 0.5 | 0.1-0.3 | nylon,polyester
+cropped puffer | 0.5 | 0.1-0.3 | nylon,polyester
+hooded shell | 0.5 | 0.1-0.3 | nylon,ripstop
+quilted bomber | 0.4 | 0.1-0.3 | nylon,polyester

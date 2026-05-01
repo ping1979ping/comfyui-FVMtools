@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+kandi bracelets | 0.85 | 0.1-0.3 | plastic
+LED gloves | 0.65 | 0.1-0.3 | plastic
+glow-stick necklace | 0.65 | 0.1-0.3 | plastic
+fluorescent face paint | 0.70 | 0.1-0.3 | plastic
+neon goggles | 0.55 | 0.1-0.3 | plastic,metal
+cyber leg warmers | 0.50 | 0.1-0.3 | jersey
+glow-stick anklets | 0.45 | 0.1-0.3 | plastic
+mirrored visors | 0.50 | 0.1-0.3 | plastic
+neon body harness | 0.45 | 0.1-0.3 | leather,plastic
+LED earrings | 0.45 | 0.1-0.3 | plastic,metal
+glow paint splatters | 0.55 | 0.1-0.3 | plastic

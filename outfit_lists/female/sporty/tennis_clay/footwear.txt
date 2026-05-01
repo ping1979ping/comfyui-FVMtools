@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+clay court tennis shoes | 0.85 | 0.1-0.3 | mesh,rubber
+all-court tennis shoes | 0.80 | 0.0-0.2 | mesh,rubber
+herringbone-sole shoes | 0.65 | 0.1-0.3 | mesh,rubber
+low-cut tennis trainers | 0.60 | 0.0-0.2 | mesh,rubber
+ankle-support court shoes | 0.45 | 0.0-0.2 | mesh,rubber
+classic white sneakers | 0.40 | 0.1-0.3 | canvas_woven,rubber
+performance court socks | 0.85 | 0.0-0.2 | polyester,spandex

@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+neon bralette | 0.85 | 0.1-0.3 | mesh,jersey
+fluorescent crop | 0.75 | 0.1-0.3 | jersey
+fishnet long-sleeve | 0.65 | 0.1-0.3 | mesh
+cyber harness top | 0.60 | 0.1-0.3 | leather,plastic
+glow body suit | 0.55 | 0.1-0.3 | jersey,plastic
+electric tube top | 0.55 | 0.1-0.3 | jersey
+sheer fishnet shirt | 0.55 | 0.1-0.3 | mesh
+strappy bandeau | 0.55 | 0.1-0.3 | jersey
+graphic rave tee | 0.60 | 0.1-0.3 | cotton
+LED-strip top | 0.45 | 0.1-0.3 | plastic,jersey
+cropped hoodie | 0.50 | 0.1-0.3 | cotton

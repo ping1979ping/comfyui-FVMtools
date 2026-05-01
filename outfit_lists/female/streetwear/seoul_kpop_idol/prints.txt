@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+oversized brand logo | 0.7 | top,headwear,bag | 0.1-0.4
+embroidered crest | 0.6 | top,headwear,outerwear | 0.1-0.4
+plaid pattern | 0.6 | bottom,outerwear | 0.1-0.3
+heart motif | 0.5 | top,bag,accessories | 0.0-0.3
+glitter detail | 0.5 | top,accessories | 0.1-0.3
+star sparkle | 0.5 | top,accessories | 0.0-0.3
+floral cluster | 0.5 | top,bottom | 0.1-0.3
+ribbon bow detail | 0.5 | top,bag,accessories | 0.0-0.3
+checker pattern | 0.4 | top,bottom,accessories | 0.0-0.3
+pearl detail | 0.4 | bag,accessories | 0.1-0.4
+tartan check | 0.4 | bottom,outerwear | 0.1-0.3

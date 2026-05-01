@@ -1,0 +1,14 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+wide-brim witch hat | 0.65 | 0.0-0.4 | wool,cotton
+crystal hairpin | 0.45 | 0.0-0.3 | metal
+
+# mid-casual
+moon-shaped hairpiece | 0.50 | 0.2-0.6 | metal
+draped hood | 0.45 | 0.2-0.5 | velvet,wool
+
+# formal
+ritual circlet | 0.45 | 0.4-0.8 | metal
+ornate witch crown | 0.40 | 0.4-0.8 | metal

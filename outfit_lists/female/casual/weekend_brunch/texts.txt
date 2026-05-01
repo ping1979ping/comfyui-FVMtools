@@ -1,0 +1,11 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+"SUNDAY" | 0.20 | top | cursive font
+"BRUNCH" | 0.20 | top | playful font
+"MIMOSA" | 0.15 | top | handwritten script
+"PARIS" | 0.20 | top | elegant serif
+"CIAO" | 0.20 | top | italic script
+"BONJOUR" | 0.15 | top | cursive font
+"AMORE" | 0.20 | top | romantic script
+"OUI" | 0.15 | top | thin serif

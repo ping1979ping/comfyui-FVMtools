@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wide-brimmed hat | 0.65 | 0.1-0.4 | suede,cotton
+floral headband | 0.55 | 0.1-0.3 | cotton
+woven fedora | 0.45 | 0.1-0.3 | cotton
+silk scarf | 0.40 | 0.1-0.3 | satin
+beaded hairband | 0.35 | 0.1-0.3 | metal,cotton

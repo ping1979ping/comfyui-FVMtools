@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chalk bag | 0.85 | 0.0-0.2 | nylon,fleece
+climbing harness | 0.55 | 0.0-0.2 | nylon,spandex
+finger tape roll | 0.45 | 0.0-0.2 | cotton_blend
+crag sunglasses | 0.40 | 0.0-0.2 | plastic,rubber
+climb belt | 0.40 | 0.0-0.2 | nylon,leatherette
+beta-marker bracelet | 0.30 | 0.0-0.2 | rope_braid
+finger ring | 0.30 | 0.0-0.2 | metal_disc
+hairband headwrap | 0.55 | 0.0-0.2 | cotton_blend,spandex
+small carabiner clip | 0.35 | 0.0-0.2 | metal_disc
+chalk-ball pouch | 0.50 | 0.0-0.2 | nylon,cotton_blend
+sweat towel | 0.40 | 0.0-0.2 | cotton_blend

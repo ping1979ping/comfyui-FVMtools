@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+team logo | 0.7 | top,headwear,bag | 0.0-0.3
+jersey number | 0.8 | top,bottom | 0.0-0.2
+player name back graphic | 0.5 | top | 0.0-0.2
+classic team stripes | 0.5 | top,bottom,outerwear | 0.0-0.2
+city skyline graphic | 0.3 | top | 0.0-0.2
+hoop net graphic | 0.3 | top | 0.0-0.2
+shooter splash graphic | 0.3 | top | 0.0-0.2
+star pattern | 0.4 | top,bottom | 0.0-0.2
+varsity letter block | 0.4 | top,outerwear | 0.0-0.3
+arena graphic | 0.2 | top | 0.0-0.2
+contrast side panel | 0.5 | top,bottom | 0.0-0.2

@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plain baseball cap | 0.55 | 0.1-0.3 | cotton,polyester
+classic beanie | 0.45 | 0.1-0.3 | knit,cotton
+soft headband | 0.30 | 0.1-0.3 | cotton,jersey
+basic bucket hat | 0.30 | 0.1-0.3 | cotton,canvas

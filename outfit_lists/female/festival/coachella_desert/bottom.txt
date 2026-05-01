@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cutoff jean shorts | 0.85 | 0.1-0.3 | denim
+high-waisted briefs | 0.55 | 0.1-0.3 | denim,cotton
+flowing maxi skirt | 0.55 | 0.2-0.4 | cotton
+dusty miniskirt | 0.45 | 0.1-0.3 | suede
+bohemian palazzo pants | 0.40 | 0.2-0.4 | cotton
+embroidered shorts | 0.50 | 0.1-0.3 | cotton
+tribal print sarong | 0.35 | 0.1-0.3 | cotton
+dusty linen culottes | 0.40 | 0.2-0.4 | cotton
+fringed mini skirt | 0.40 | 0.1-0.3 | suede,fringe
+ripped cutoffs | 0.70 | 0.1-0.3 | denim

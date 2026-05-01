@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VINTAGE" | 0.4 | top | distressed print
+"FOREVER" | 0.4 | top | marker style
+"DREAMER" | 0.4 | top | retro script
+"WANDER" | 0.3 | top,outerwear | retro script
+"GOOD VIBES" | 0.4 | top | bubble font
+"MIXTAPE" | 0.3 | top | distressed print
+"ANALOG" | 0.3 | top | typewriter font
+"INDIE" | 0.3 | top,headwear | retro script
+"SOUL" | 0.3 | top | marker style
+"GROOVY" | 0.3 | top | bubble font

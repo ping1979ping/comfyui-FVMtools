@@ -1,0 +1,34 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+cotton | 0.2 | natural | medium
+denim | 0.2 | tough | heavy
+flannel | 0.2 | natural | heavy
+jersey | 0.25 | synthetic | medium
+canvas | 0.2 | tough | medium
+hemp | 0.25 | natural | medium
+mesh | 0.25 | synthetic | light
+knit | 0.25 | casual | medium
+
+# mid-range fabrics
+rayon | 0.4 | synthetic | light
+polyester | 0.4 | synthetic | medium
+nylon | 0.35 | synthetic | light
+spandex | 0.4 | synthetic | light
+leather | 0.45 | tough | heavy
+suede | 0.4 | tough | medium
+patent | 0.45 | tough | medium
+wool | 0.5 | natural | heavy
+gabardine | 0.5 | natural | medium
+shearling | 0.5 | tough | heavy
+rubber | 0.2 | tough | medium
+cork | 0.3 | natural | light
+
+# formal fabrics
+satin | 0.7 | luxury | light
+silk | 0.85 | luxury | light
+velvet | 0.65 | luxury | medium
+
+# special materials
+metal | 0.5 | luxury | heavy
+acrylic | 0.4 | synthetic | medium

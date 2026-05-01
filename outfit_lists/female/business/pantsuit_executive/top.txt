@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored blouse | 0.85 | 0.7-1.0 | silk,cotton,chiffon
+button-down shirt | 0.80 | 0.6-0.9 | cotton,linen
+classic blouse | 0.75 | 0.7-1.0 | silk,chiffon
+fitted shell top | 0.65 | 0.7-0.9 | silk,cotton
+bow-neck blouse | 0.55 | 0.7-1.0 | silk,chiffon
+sleeveless shell | 0.60 | 0.6-0.9 | silk,polyester
+pussy-bow blouse | 0.50 | 0.7-1.0 | silk,chiffon
+crisp poplin shirt | 0.70 | 0.6-0.9 | cotton
+pleated front blouse | 0.45 | 0.7-0.9 | silk,chiffon
+high-neck shell | 0.50 | 0.6-0.9 | silk,polyester
+fine-knit turtleneck | 0.55 | 0.6-0.9 | cashmere,wool
+classic camisole | 0.40 | 0.5-0.8 | silk,polyester

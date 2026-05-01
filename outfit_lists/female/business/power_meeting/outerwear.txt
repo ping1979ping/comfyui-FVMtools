@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+power blazer | 0.95 | 0.8-1.0 | wool
+sharp-shoulder jacket | 0.65 | 0.8-1.0 | wool
+double-breasted blazer | 0.75 | 0.8-1.0 | wool
+structured woven jacket | 0.55 | 0.7-1.0 | tweed
+luxury overcoat | 0.50 | 0.8-1.0 | wool,cashmere
+camel wrap coat | 0.45 | 0.7-1.0 | wool,cashmere
+classic trench | 0.50 | 0.7-0.9 | cotton,polyester
+peplum jacket | 0.40 | 0.8-1.0 | wool

@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped racing jacket with rank stripe | 0.70 | 0.1-0.5 | nylon,neoprene
+hooded windbreaker with reactive panels | 0.65 | 0.0-0.4 | nylon,mesh
+holographic shell jacket with chrome zipper | 0.55 | 0.1-0.5 | holographic,nylon
+fitted track jacket with chrome piping | 0.60 | 0.1-0.5 | neoprene,nylon
+sleeveless aero gilet with vents | 0.50 | 0.1-0.5 | nylon,mesh
+mesh-back lightweight shrug | 0.45 | 0.0-0.4 | mesh,nylon
+chrome-clasp puffer vest | 0.45 | 0.0-0.4 | nylon,neoprene
+mid-zip racing shell with reactive panels | 0.55 | 0.1-0.5 | nylon,neoprene
+half-zip pullover with chrome stripe | 0.55 | 0.0-0.4 | spandex,nylon
+hooded wind cape with reflective hem | 0.45 | 0.1-0.5 | nylon,mesh

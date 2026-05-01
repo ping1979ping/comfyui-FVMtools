@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+baggy jeans | 0.85 | 0.1-0.3 | denim
+wide-leg cargo pants | 0.70 | 0.1-0.3 | cotton,canvas
+parachute pants | 0.55 | 0.1-0.3 | nylon,polyester
+oversized sweatpants | 0.65 | 0.1-0.2 | fleece,cotton
+biker shorts | 0.55 | 0.1-0.3 | jersey,polyester
+ripped boyfriend jeans | 0.60 | 0.1-0.3 | denim
+track pants | 0.55 | 0.1-0.3 | polyester,nylon
+loose-fit jeans | 0.65 | 0.1-0.3 | denim
+mini cargo skirt | 0.45 | 0.1-0.3 | cotton,canvas
+ripped denim shorts | 0.50 | 0.1-0.3 | denim

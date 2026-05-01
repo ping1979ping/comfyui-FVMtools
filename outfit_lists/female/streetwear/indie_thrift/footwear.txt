@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+classic canvas sneakers | 0.8 | 0.1-0.3 | canvas
+worn combat boots | 0.7 | 0.1-0.3 | leather
+mary jane flats | 0.6 | 0.1-0.3 | leather,suede
+chunky retro sneakers | 0.6 | 0.1-0.3 | canvas,mesh
+loafers | 0.5 | 0.1-0.3 | leather
+ankle booties | 0.5 | 0.1-0.3 | leather,suede
+ballet flats | 0.4 | 0.1-0.3 | leather,satin
+clogs | 0.4 | 0.1-0.3 | leather

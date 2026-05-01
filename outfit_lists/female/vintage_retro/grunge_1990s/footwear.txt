@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+combat boots | 0.65 | 0.1-0.4 | leather
+chunky sneakers | 0.55 | 0.1-0.3 | canvas,rubber
+platform sneakers | 0.50 | 0.1-0.4 | canvas,leather
+mary jane heels | 0.45 | 0.2-0.5 | patent
+birkenstocks | 0.40 | 0.1-0.3 | suede,cork
+
+# mid-casual
+chunky loafers | 0.50 | 0.2-0.5 | leather
+knee-high platform boots | 0.50 | 0.1-0.4 | leather
+ankle booties | 0.50 | 0.2-0.6 | leather,suede
+
+# formal
+strappy minimal sandals | 0.40 | 0.4-0.7 | leather
+square-toe pumps | 0.45 | 0.4-0.7 | leather,patent

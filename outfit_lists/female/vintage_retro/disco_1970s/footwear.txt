@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+clogs | 0.45 | 0.1-0.4 | wood,leather
+earth shoes | 0.35 | 0.1-0.3 | leather,suede
+flat sandals | 0.45 | 0.1-0.4 | leather,suede
+
+# mid-casual
+platform sandals | 0.60 | 0.2-0.6 | cork,leather
+knee-high platform boots | 0.55 | 0.2-0.6 | leather,suede
+wedge espadrilles | 0.40 | 0.2-0.5 | canvas
+
+# formal
+disco platform heels | 0.60 | 0.5-0.9 | metallic,leather
+sequined dance shoes | 0.50 | 0.5-0.9 | sequin
+strappy stiletto sandals | 0.45 | 0.5-0.9 | leather,satin
+gold ankle-strap heels | 0.45 | 0.5-0.9 | metal,leather

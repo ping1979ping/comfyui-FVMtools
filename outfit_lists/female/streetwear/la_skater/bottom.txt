@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+baggy jeans | 0.9 | 0.1-0.3 | denim
+loose carpenter pants | 0.8 | 0.1-0.3 | denim,canvas
+relaxed cargos | 0.7 | 0.1-0.3 | cotton,ripstop
+skate shorts | 0.7 | 0.0-0.2 | cotton,canvas
+high-waist mom jeans | 0.6 | 0.1-0.3 | denim
+boyfriend jeans | 0.6 | 0.1-0.3 | denim
+distressed shorts | 0.5 | 0.0-0.2 | denim
+loose chinos | 0.5 | 0.1-0.3 | cotton,canvas
+khaki workpants | 0.5 | 0.1-0.3 | cotton,canvas

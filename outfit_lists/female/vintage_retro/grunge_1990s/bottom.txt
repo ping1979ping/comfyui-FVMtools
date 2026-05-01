@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ripped baggy jeans | 0.60 | 0.1-0.3 | denim
+plaid mini skirt | 0.55 | 0.1-0.3 | wool,polyester
+cargo pants | 0.50 | 0.1-0.4 | cotton,canvas
+overall shorts | 0.40 | 0.1-0.3 | denim
+high-waisted shorts | 0.45 | 0.1-0.3 | denim,cotton
+
+# mid-casual
+slip midi skirt | 0.50 | 0.2-0.5 | satin
+boot-cut jeans | 0.55 | 0.1-0.4 | denim
+A-line midi skirt | 0.45 | 0.2-0.5 | wool,polyester
+velvet leggings | 0.40 | 0.2-0.5 | velvet,spandex
+
+# formal
+minimalist pencil skirt | 0.45 | 0.4-0.7 | wool,polyester
+silk maxi skirt | 0.40 | 0.4-0.7 | silk

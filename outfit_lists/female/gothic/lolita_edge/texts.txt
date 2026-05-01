@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PRINCESS" | 0.30 | top | ornate calligraphy
+"DOLLY" | 0.25 | top | ornate blackletter
+"SWEET POISON" | 0.25 | top | ornate calligraphy
+"DARK SUGAR" | 0.20 | top | dripping text
+"BITTER ROSE" | 0.20 | top | ornate calligraphy
+"LITTLE WIDOW" | 0.20 | top | Victorian gothic
+"PORCELAIN" | 0.20 | top | ornate calligraphy
+"DOLL HOUSE" | 0.20 | top | ornate blackletter
+"CARAMEL CURSE" | 0.15 | top | dripping text
+"TINY DEMON" | 0.20 | top | gothic font

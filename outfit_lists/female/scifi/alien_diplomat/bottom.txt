@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowing iridescent skirt with LED hem | 0.65 | 0.5-1.0 | satin,holographic
+structured high-waisted palazzo trousers | 0.60 | 0.5-0.9 | satin,silk
+floor-length ceremonial gown skirt | 0.55 | 0.6-1.0 | satin,silk
+fitted chrome-piped trousers | 0.55 | 0.5-0.9 | satin,nylon
+asymmetric draped skirt with chrome clasp | 0.50 | 0.5-0.9 | satin,holographic
+embroidered wrap skirt with floating panel | 0.50 | 0.5-0.9 | silk,satin
+fitted high-waisted leggings with embroidered hem | 0.45 | 0.4-0.8 | spandex,satin
+tiered iridescent maxi skirt | 0.45 | 0.5-1.0 | holographic,silk
+embroidered ceremonial trousers with chrome cuff | 0.50 | 0.5-0.9 | satin,silk
+draped chiffon culottes with chrome belt | 0.45 | 0.5-0.9 | silk,satin

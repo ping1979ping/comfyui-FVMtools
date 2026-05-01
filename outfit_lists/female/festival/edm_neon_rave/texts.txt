@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PLUR" | 0.40 | top | rave bubble
+"BASS DROP" | 0.30 | top | electric font
+"NEON" | 0.30 | top,headwear | glow font
+"RAGE" | 0.25 | top | edgy display
+"KANDI" | 0.25 | top | rave bubble
+"VIBE" | 0.25 | top | neon font
+"GLOW" | 0.30 | top | glow font
+"CYBER" | 0.20 | top | digital font
+"HARDSTYLE" | 0.20 | top | bold sans
+"BPM 174" | 0.15 | top | digital font

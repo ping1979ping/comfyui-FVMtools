@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+band graphic | 0.7 | top | 0.1-0.3
+floral motif | 0.6 | top,bottom | 0.1-0.3
+faded wash | 0.6 | top,bottom | 0.1-0.3
+patchwork detail | 0.5 | top,bottom,bag | 0.1-0.3
+plaid pattern | 0.5 | bottom,outerwear | 0.1-0.3
+embroidered patches | 0.5 | top,outerwear,bag | 0.1-0.3
+paisley motif | 0.4 | top,accessories | 0.1-0.3
+ripped detail | 0.5 | top,bottom | 0.1-0.3
+retro stripe | 0.5 | top,bottom | 0.1-0.3
+psychedelic swirl | 0.4 | top | 0.0-0.3
+seventies geometric | 0.4 | top,bottom | 0.1-0.3

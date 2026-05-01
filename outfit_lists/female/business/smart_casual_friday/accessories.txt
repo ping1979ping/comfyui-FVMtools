@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+casual watch | 0.70 | 0.4-0.7 | metal,leather
+hoop earrings | 0.65 | 0.4-0.7 | metal
+layered necklaces | 0.55 | 0.4-0.7 | metal
+stud earrings | 0.65 | 0.4-0.8 | metal
+woven belt | 0.50 | 0.4-0.6 | leather
+patterned bandana | 0.35 | 0.4-0.7 | silk
+stack of bracelets | 0.40 | 0.3-0.6 | metal
+casual sunglasses | 0.45 | 0.3-0.6 | metal,acetate
+delicate ring | 0.50 | 0.4-0.7 | metal

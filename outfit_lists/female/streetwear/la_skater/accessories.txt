@@ -1,0 +1,10 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oval sunglasses | 0.6 | 0.1-0.3 | nylon
+beaded necklace | 0.5 | 0.0-0.3 | cotton
+silver chain | 0.5 | 0.1-0.3 | cotton
+braided wristband | 0.4 | 0.0-0.2 | cotton,leather
+small hoop earrings | 0.5 | 0.1-0.3 | cotton
+crew socks | 0.6 | 0.0-0.2 | cotton,polyester
+braided belt | 0.4 | 0.1-0.3 | leather,canvas
+stack rings | 0.4 | 0.0-0.3 | cotton

@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+surf rashguard | 0.85 | 0.0-0.2 | spandex,nylon
+zip-front rash top | 0.65 | 0.0-0.2 | spandex,nylon
+bikini sport top | 0.75 | 0.0-0.2 | spandex,nylon
+long-sleeve sun shirt | 0.70 | 0.0-0.2 | spandex,nylon
+hooded surf top | 0.45 | 0.0-0.2 | neoprene_smooth,nylon
+tankini top | 0.50 | 0.0-0.2 | spandex,nylon
+short-sleeve rash tee | 0.60 | 0.0-0.2 | spandex,nylon
+sporty bandeau top | 0.40 | 0.0-0.2 | spandex,nylon
+high-neck surf top | 0.45 | 0.0-0.2 | spandex,nylon
+beach crop tee | 0.55 | 0.0-0.2 | cotton_blend,jersey_knit

@@ -1,0 +1,8 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FRIDAY" | 0.20 | top | playful handwriting
+"WEEKEND" | 0.15 | top | retro font
+"COFFEE" | 0.15 | top | handwritten script
+"TGIF" | 0.12 | top | bold sans-serif
+"GOOD VIBES" | 0.18 | top | retro font
+"HELLO" | 0.12 | top | playful font
+"CHILL" | 0.15 | top | handwritten script

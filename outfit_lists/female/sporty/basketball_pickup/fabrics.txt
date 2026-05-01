@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+
+# performance
+polyester | 0.1 | sporty | light
+nylon | 0.1 | sporty | light
+spandex | 0.1 | sporty | light
+jersey_knit | 0.1 | sporty | medium
+
+# classic streetwear
+cotton_blend | 0.15 | natural | medium
+wool_blend | 0.3 | classic | heavy
+leatherette | 0.2 | sporty | medium
+
+# functional
+rubber | 0.05 | sporty | medium
+plastic | 0.05 | sporty | light
+metal_chain | 0.2 | streetwear | light

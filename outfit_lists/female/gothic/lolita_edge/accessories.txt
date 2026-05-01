@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ribbon choker | 0.70 | 0.1-0.4 | satin,silk
+heart locket | 0.50 | 0.1-0.4 | metal
+oversized bow brooch | 0.55 | 0.1-0.4 | satin,velvet
+
+# mid-casual
+ribbon wristlet | 0.55 | 0.2-0.5 | satin,silk
+cameo brooch | 0.45 | 0.3-0.6 | metal
+ornate hairpin | 0.50 | 0.2-0.5 | metal
+key pendant | 0.40 | 0.2-0.5 | metal
+
+# formal
+chandelier earrings | 0.50 | 0.4-0.7 | metal
+beaded glove cuffs | 0.40 | 0.4-0.7 | satin,silk
+ornate parasol | 0.40 | 0.4-0.7 | silk,lace
+princess tiara | 0.30 | 0.4-0.7 | metal

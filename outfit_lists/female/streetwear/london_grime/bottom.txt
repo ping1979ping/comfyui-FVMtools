@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+slim track pants | 0.8 | 0.1-0.3 | polyester,nylon
+loose track bottoms | 0.7 | 0.1-0.3 | polyester,nylon
+baggy jeans | 0.7 | 0.1-0.3 | denim
+cargo pants | 0.6 | 0.1-0.3 | cotton,ripstop
+joggers | 0.7 | 0.1-0.3 | cotton,fleece
+fitted black jeans | 0.6 | 0.1-0.3 | denim,spandex
+relaxed cargos | 0.5 | 0.1-0.3 | cotton,ripstop
+flared track pants | 0.4 | 0.1-0.3 | polyester
+straight-leg jeans | 0.5 | 0.1-0.3 | denim

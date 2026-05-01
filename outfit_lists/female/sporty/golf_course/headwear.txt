@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+golf visor | 0.80 | 0.1-0.3 | polyester,plastic
+classic tour cap | 0.65 | 0.1-0.3 | polyester,cotton_twill
+wide-brim sun hat | 0.30 | 0.1-0.3 | polyester,nylon
+bucket sun hat | 0.30 | 0.1-0.3 | nylon,cotton_twill
+elastic sport headband | 0.35 | 0.0-0.3 | spandex,polyester

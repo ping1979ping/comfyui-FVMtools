@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+fringed waistcoat | 0.55 | 0.1-0.3 | suede,fringe
+embroidered jacket | 0.55 | 0.2-0.4 | cotton,denim
+woven shrug | 0.55 | 0.1-0.3 | crochet
+patched jean jacket | 0.50 | 0.1-0.3 | denim
+flowy kimono | 0.55 | 0.1-0.3 | cotton,mesh
+shaggy faux waistcoat | 0.45 | 0.1-0.3 | faux_fur
+poncho with tassels | 0.45 | 0.2-0.4 | cotton
+sleeveless duster | 0.40 | 0.2-0.4 | cotton,suede
+folk-style cardigan | 0.40 | 0.2-0.4 | cotton

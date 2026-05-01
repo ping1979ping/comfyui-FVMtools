@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+linen-blend pants | 0.70 | 0.2-0.4 | linen,cotton
+denim cutoffs | 0.65 | 0.1-0.3 | denim
+flowy beach skirt | 0.55 | 0.1-0.3 | rayon,cotton
+white wide-leg pants | 0.60 | 0.3-0.5 | linen,cotton
+high-waisted shorts | 0.65 | 0.2-0.4 | denim,cotton
+maxi skirt | 0.50 | 0.2-0.4 | rayon,cotton
+relaxed cropped pants | 0.55 | 0.2-0.4 | linen,cotton
+drawstring shorts | 0.45 | 0.1-0.3 | cotton,linen
+breezy palazzo pants | 0.45 | 0.2-0.4 | rayon,linen
+chambray-style shorts | 0.45 | 0.1-0.3 | cotton,denim

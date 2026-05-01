@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+band logo print | 0.65 | top,outerwear | 0.1-0.3
+muddy splatter | 0.55 | top,bottom,outerwear | 0.1-0.3
+faded graphic | 0.55 | top | 0.1-0.3
+plaid pattern | 0.45 | top,bottom | 0.1-0.3
+camouflage motif | 0.40 | bottom,outerwear,bag | 0.1-0.3
+union jack motif | 0.35 | top,accessories | 0.1-0.3
+distressed wash | 0.55 | top,bottom,outerwear | 0.1-0.3
+slogan text | 0.45 | top,bag | 0.1-0.3
+glow-in-dark detail | 0.30 | top,accessories | 0.1-0.3
+patches | 0.40 | outerwear,bag | 0.1-0.3
+neon stripe | 0.30 | accessories | 0.1-0.3

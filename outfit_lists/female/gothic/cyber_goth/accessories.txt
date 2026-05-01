@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neon goggles | 0.55 | 0.0-0.3 | metal,vinyl
+LED choker | 0.55 | 0.0-0.3 | vinyl,metal
+reflective armbands | 0.55 | 0.0-0.3 | vinyl
+holographic gloves | 0.50 | 0.0-0.3 | PVC,vinyl
+fluffy leg warmers | 0.45 | 0.0-0.3 | faux_fur
+
+# mid-casual
+spiked collar | 0.55 | 0.1-0.4 | metal,leather
+chain harness | 0.50 | 0.1-0.4 | metal
+fingerless cyber gloves | 0.50 | 0.1-0.4 | PVC,vinyl
+metallic ear cuffs | 0.45 | 0.1-0.4 | metal
+buckled belt-harness | 0.50 | 0.1-0.4 | leather,PVC
+techwear utility belt | 0.45 | 0.1-0.4 | cotton,metal
+chunky chain necklace | 0.50 | 0.1-0.4 | metal

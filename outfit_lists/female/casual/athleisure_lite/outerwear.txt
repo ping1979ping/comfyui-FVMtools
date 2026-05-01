@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+zip-front track jacket | 0.65 | 0.1-0.3 | polyester,nylon
+fleece zip-up | 0.65 | 0.1-0.3 | fleece,polyester
+lightweight windbreaker | 0.50 | 0.1-0.3 | nylon,polyester
+half-zip pullover | 0.55 | 0.1-0.3 | fleece,polyester
+performance vest | 0.40 | 0.1-0.3 | nylon,polyester
+oversized hoodie layer | 0.60 | 0.1-0.3 | fleece,cotton
+tech-shell jacket | 0.45 | 0.1-0.3 | nylon,polyester
+quilted active jacket | 0.40 | 0.1-0.3 | nylon,polyester

@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ultralight wind shell | 0.55 | 0.0-0.2 | nylon,polyester
+packable rain jacket | 0.40 | 0.0-0.2 | nylon,polyester
+reflective vest | 0.35 | 0.0-0.2 | polyester,nylon
+arm warmers | 0.30 | 0.0-0.1 | spandex,polyester
+quarter-zip wind top | 0.45 | 0.0-0.2 | nylon,polyester
+race throwaway layer | 0.25 | 0.0-0.1 | polyester,jersey_knit
+soft-shell run jacket | 0.30 | 0.1-0.3 | nylon,polyester

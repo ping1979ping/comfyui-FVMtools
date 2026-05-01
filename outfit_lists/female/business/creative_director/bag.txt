@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+designer tote | 0.80 | 0.5-0.8 | leather,canvas
+sculptural top-handle bag | 0.70 | 0.6-0.9 | leather
+oversized clutch | 0.55 | 0.6-0.9 | leather,suede
+statement crossbody | 0.55 | 0.5-0.8 | leather,suede
+mini structured bag | 0.55 | 0.6-0.9 | leather
+metallic shoulder bag | 0.40 | 0.5-0.8 | leather
+unique bucket bag | 0.45 | 0.5-0.8 | leather,suede
+artist portfolio | 0.45 | 0.6-0.9 | leather,canvas

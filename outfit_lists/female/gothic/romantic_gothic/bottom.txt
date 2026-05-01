@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flowing maxi skirt | 0.55 | 0.2-0.5 | cotton,silk
+asymmetric skirt | 0.45 | 0.2-0.5 | cotton,velvet
+
+# mid-casual
+ruffled tiered skirt | 0.60 | 0.3-0.6 | satin,silk
+velvet maxi | 0.65 | 0.3-0.7 | velvet
+soft tulle skirt | 0.55 | 0.3-0.6 | tulle
+fishtail skirt | 0.50 | 0.4-0.7 | satin,velvet
+draped midi skirt | 0.45 | 0.3-0.6 | satin,silk
+
+# formal
+ballroom gown skirt | 0.55 | 0.6-1.0 | satin,silk
+trained skirt | 0.50 | 0.6-1.0 | satin,velvet
+tulle layer skirt | 0.45 | 0.5-0.9 | tulle,satin
+embroidered ball skirt | 0.40 | 0.6-1.0 | satin,silk

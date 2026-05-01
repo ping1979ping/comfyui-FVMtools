@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+pleated mini skirt | 0.7 | 0.1-0.3 | polyester,wool blend
+ruffled tutu skirt | 0.5 | 0.0-0.3 | tulle,polyester
+baggy cargo pants | 0.6 | 0.1-0.3 | cotton,ripstop
+patchwork jeans | 0.5 | 0.0-0.3 | denim
+layered tulle skirt | 0.4 | 0.0-0.2 | tulle
+high-waist shorts | 0.5 | 0.0-0.2 | denim,cotton
+wide-leg trousers | 0.4 | 0.1-0.3 | polyester,cotton
+suspender skirt | 0.4 | 0.0-0.3 | polyester,wool blend
+striped knee-high socks | 0.6 | 0.0-0.2 | cotton,spandex

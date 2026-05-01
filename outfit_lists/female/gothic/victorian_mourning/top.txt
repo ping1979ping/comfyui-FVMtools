@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+high-neck blouse | 0.55 | 0.3-0.6 | cotton,silk
+ruffled collar shirt | 0.45 | 0.3-0.6 | cotton,satin
+
+# mid-casual
+mourning blouse | 0.65 | 0.4-0.7 | silk,satin
+cameo-pinned shirt | 0.40 | 0.4-0.7 | silk,satin
+puff-sleeve blouse | 0.50 | 0.3-0.6 | cotton,silk
+
+# formal
+buttoned bodice | 0.70 | 0.5-0.9 | satin,silk,velvet
+laced corset top | 0.65 | 0.5-0.9 | satin,velvet
+funeral bustier | 0.55 | 0.6-1.0 | velvet,satin
+widow's gown top | 0.50 | 0.6-1.0 | silk,satin
+beaded bodice | 0.45 | 0.5-0.9 | satin,silk

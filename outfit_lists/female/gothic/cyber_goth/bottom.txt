@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neon-stripe leggings | 0.65 | 0.0-0.3 | cotton,mesh
+holographic mini skirt | 0.55 | 0.0-0.3 | PVC,vinyl
+reflective shorts | 0.50 | 0.0-0.3 | vinyl
+fishnet over-tights | 0.55 | 0.0-0.3 | mesh
+
+# mid-casual
+buckled techwear pants | 0.55 | 0.1-0.4 | cotton,vinyl
+chained mini skirt | 0.50 | 0.1-0.4 | vinyl,PVC
+strap-detail leggings | 0.50 | 0.1-0.4 | PVC,vinyl
+cargo techwear pants | 0.50 | 0.1-0.4 | cotton
+LED-trimmed shorts | 0.40 | 0.0-0.3 | PVC,vinyl
+cutout long pants | 0.45 | 0.1-0.4 | PVC,vinyl
+high-waist cyber trousers | 0.45 | 0.1-0.4 | PVC,leather

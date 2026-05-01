@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+band logo print | 0.65 | top,outerwear | 0.0-0.3
+album cover art | 0.50 | top,outerwear | 0.0-0.3
+skull print | 0.55 | top,accessories | 0.0-0.3
+pentagram print | 0.40 | top,accessories | 0.0-0.3
+distressed details | 0.55 | top,bottom | 0.0-0.3
+patch detail | 0.55 | top,outerwear,bag | 0.0-0.3
+studded detail | 0.50 | top,outerwear,accessories,bag | 0.0-0.3
+chain detail | 0.50 | accessories,bag,bottom | 0.0-0.4
+gore artwork | 0.30 | top | 0.0-0.2
+flame motif | 0.30 | top,outerwear | 0.0-0.3
+goat skull motif | 0.25 | top | 0.0-0.2
+inverted cross emblem | 0.30 | top,accessories | 0.0-0.3
+gothic letter logo | 0.40 | top,outerwear | 0.0-0.3

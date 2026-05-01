@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"RAVE" | 0.30 | top | neon font
+"BPM" | 0.25 | top | digital font
+"BASS" | 0.25 | top | electric font
+"DROP" | 0.20 | top | edm display
+"LIVE FOREVER" | 0.20 | top | neon font
+"UNITY" | 0.20 | top | bold sans
+"EUPHORIA" | 0.25 | top | glow font
+"MAINSTAGE" | 0.20 | top | digital font
+"TOMORROW" | 0.20 | top | futuristic serif
+"ELECTRIC" | 0.20 | top,headwear | electric font
+"PEOPLE OF TOMORROW" | 0.15 | top | neon font

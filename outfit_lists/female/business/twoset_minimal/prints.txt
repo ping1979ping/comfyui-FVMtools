@@ -1,0 +1,6 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid neutral | 0.50 | top,bottom,outerwear | 0.5-0.9
+tonal stripe | 0.20 | top | 0.5-0.8
+subtle texture weave | 0.20 | top,outerwear | 0.5-0.9
+matte color block | 0.25 | top,bottom | 0.5-0.8
+fine pinstripe | 0.15 | bottom,outerwear | 0.6-0.9

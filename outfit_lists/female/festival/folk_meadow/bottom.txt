@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floral midi skirt | 0.80 | 0.2-0.4 | cotton
+prairie maxi skirt | 0.70 | 0.2-0.4 | cotton
+embroidered dirndl | 0.55 | 0.2-0.4 | cotton
+linen culottes | 0.55 | 0.2-0.4 | cotton
+high-waist jeans | 0.55 | 0.1-0.3 | denim
+ruffled mini skirt | 0.55 | 0.2-0.4 | cotton
+gathered tiered skirt | 0.55 | 0.2-0.4 | cotton
+embroidered shorts | 0.45 | 0.2-0.4 | cotton
+flowing trousers | 0.45 | 0.2-0.4 | cotton
+patterned wrap skirt | 0.50 | 0.2-0.4 | cotton

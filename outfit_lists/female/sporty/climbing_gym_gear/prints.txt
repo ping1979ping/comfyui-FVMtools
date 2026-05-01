@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mountain silhouette | 0.4 | top,bag | 0.0-0.2
+topo map graphic | 0.3 | top,bag | 0.0-0.2
+climber stick figure | 0.3 | top | 0.0-0.2
+chalk-mark splatter | 0.3 | top,bottom | 0.0-0.2
+brand wordmark | 0.5 | top,headwear,bag | 0.0-0.2
+gym logo graphic | 0.4 | top,headwear | 0.0-0.2
+geometric color block | 0.4 | top,bottom | 0.0-0.2
+earth-tone gradient | 0.4 | top,bottom | 0.0-0.2
+boulder problem grade chart | 0.2 | top | 0.0-0.2
+abstract route graphic | 0.3 | top | 0.0-0.2
+sunset palette stripes | 0.3 | top,bottom | 0.0-0.2

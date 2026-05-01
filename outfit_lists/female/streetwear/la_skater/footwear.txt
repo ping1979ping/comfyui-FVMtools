@@ -1,0 +1,9 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+classic skate sneakers | 0.9 | 0.1-0.3 | canvas,suede
+slip-on canvas shoes | 0.8 | 0.0-0.3 | canvas
+high-top skate shoes | 0.7 | 0.1-0.3 | canvas,leather
+chunky low-tops | 0.5 | 0.1-0.3 | canvas,mesh
+worn-in sneakers | 0.6 | 0.1-0.3 | canvas,leather
+mule sandals | 0.3 | 0.0-0.2 | leather,suede
+flat slip-ons | 0.4 | 0.0-0.2 | canvas

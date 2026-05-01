@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+stretch climbing pants | 0.80 | 0.0-0.2 | nylon,spandex
+boulder shorts | 0.70 | 0.0-0.2 | cotton_blend,spandex
+high-rise climb leggings | 0.65 | 0.0-0.2 | spandex,nylon
+loose-fit jogger pants | 0.55 | 0.0-0.2 | cotton_blend,spandex
+gusseted climb shorts | 0.55 | 0.0-0.2 | nylon,spandex
+crag harem pants | 0.40 | 0.0-0.2 | cotton_blend,jersey_knit
+biker shorts | 0.50 | 0.0-0.2 | spandex,nylon
+ribbed climb leggings | 0.50 | 0.0-0.2 | ribbed_knit,spandex
+ankle-cuff jogger | 0.45 | 0.0-0.2 | cotton_blend,spandex
+mid-thigh stretch shorts | 0.55 | 0.0-0.2 | nylon,spandex

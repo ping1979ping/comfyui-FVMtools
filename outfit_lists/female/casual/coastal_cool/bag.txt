@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+woven straw tote | 0.70 | 0.2-0.4 | straw,jute
+canvas beach bag | 0.65 | 0.1-0.3 | canvas,cotton
+raffia shoulder bag | 0.55 | 0.2-0.4 | raffia,cotton
+leather crossbody | 0.50 | 0.2-0.4 | leather,suede
+wicker basket bag | 0.45 | 0.2-0.4 | wicker,cotton
+mini bucket bag | 0.45 | 0.2-0.4 | leather,canvas
+crochet shoulder bag | 0.40 | 0.1-0.3 | crochet,cotton

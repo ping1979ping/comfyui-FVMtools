@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+polished loafers | 0.80 | 0.5-0.8 | leather
+minimal white sneakers | 0.75 | 0.4-0.6 | leather
+ballet flats | 0.65 | 0.4-0.7 | leather,suede
+ankle boots | 0.65 | 0.5-0.8 | leather,suede
+mules | 0.55 | 0.4-0.7 | leather,suede
+pointed flats | 0.55 | 0.5-0.8 | leather,suede
+block-heel booties | 0.45 | 0.4-0.7 | leather,suede
+slip-on sneakers | 0.45 | 0.4-0.6 | leather,canvas
+clean-line sandals | 0.40 | 0.4-0.7 | leather
+kitten heels | 0.50 | 0.5-0.8 | leather,suede

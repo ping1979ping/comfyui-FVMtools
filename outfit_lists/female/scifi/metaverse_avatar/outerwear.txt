@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized voxel hoodie with reactive print | 0.70 | 0.0-0.4 | neoprene,nylon
+holographic shell jacket with floating particles | 0.60 | 0.1-0.5 | holographic,nylon
+cropped chrome bomber with avatar patch | 0.55 | 0.1-0.5 | nylon,metal_mesh
+oversized iridescent kimono | 0.50 | 0.1-0.5 | holographic,satin
+mesh-overlay duster with neon piping | 0.50 | 0.1-0.5 | mesh,nylon
+puffer vest with avatar emote print | 0.55 | 0.0-0.4 | nylon,neoprene
+asymmetric cape with floating polygon | 0.45 | 0.2-0.5 | satin,holographic
+transparent rain shell with chrome zip | 0.45 | 0.0-0.4 | plastic,nylon
+chunky cyber parka with reactive hood | 0.55 | 0.0-0.4 | nylon,neoprene
+oversized chrome trench with avatar tag | 0.50 | 0.1-0.5 | nylon,metal_mesh

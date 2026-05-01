@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+neon abstract | 0.5 | top,bottom | 0.1-0.4
+animal print | 0.5 | top,bottom,outerwear,bag | 0.2-0.8
+geometric memphis | 0.5 | top,bottom | 0.2-0.6
+zebra stripes | 0.4 | top,outerwear | 0.2-0.7
+graffiti print | 0.3 | top,bottom | 0.1-0.4
+pop art print | 0.4 | top | 0.1-0.5
+houndstooth pattern | 0.4 | top,bottom,outerwear | 0.4-0.8
+splatter pattern | 0.4 | top,bottom | 0.1-0.4
+checkerboard print | 0.4 | top,bottom | 0.2-0.6
+metallic shimmer | 0.4 | top,bottom | 0.4-0.9
+abstract brushstroke | 0.4 | top,bottom | 0.2-0.6

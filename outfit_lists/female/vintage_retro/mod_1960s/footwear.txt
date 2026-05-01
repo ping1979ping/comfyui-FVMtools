@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+go-go boots | 0.65 | 0.1-0.5 | vinyl,leather
+mary janes | 0.50 | 0.1-0.5 | patent
+loafers | 0.45 | 0.1-0.4 | leather
+
+# mid-casual
+chunky-heel oxfords | 0.50 | 0.2-0.6 | leather
+T-strap pumps | 0.45 | 0.3-0.7 | leather
+white kitten heels | 0.50 | 0.3-0.7 | leather,satin
+patent flats | 0.45 | 0.2-0.6 | leather,vinyl
+
+# formal
+metallic pumps | 0.45 | 0.5-0.9 | metal,leather
+satin evening shoes | 0.45 | 0.5-0.9 | satin
+mod platform heels | 0.40 | 0.4-0.8 | leather

@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized sunglasses | 0.70 | 0.2-0.5 | plastic
+delicate hoop earrings | 0.55 | 0.3-0.5 | metal
+gold pendant necklace | 0.50 | 0.3-0.5 | metal
+stacked bangles | 0.40 | 0.3-0.5 | metal
+slim waist belt | 0.45 | 0.3-0.5 | leather,suede
+patterned silk scarf | 0.35 | 0.3-0.6 | satin,polyester
+minimalist watch | 0.45 | 0.3-0.5 | metal,leather
+dainty anklet | 0.30 | 0.2-0.4 | metal
+small hair claw | 0.40 | 0.2-0.4 | plastic,metal

@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tennis visor | 0.80 | 0.1-0.3 | polyester,plastic
+classic court cap | 0.60 | 0.1-0.3 | polyester,cotton_terry
+wide headband | 0.55 | 0.0-0.2 | spandex,polyester
+sun shield hat | 0.30 | 0.1-0.3 | polyester,nylon

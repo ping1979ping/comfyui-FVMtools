@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+gps watch | 0.85 | 0.0-0.2 | rubber,plastic
+race bib | 0.80 | 0.0-0.1 | paper_fiber
+hydration belt | 0.55 | 0.0-0.1 | nylon,spandex
+handheld water flask | 0.45 | 0.0-0.1 | plastic,nylon
+heart-rate monitor strap | 0.40 | 0.0-0.1 | spandex,plastic
+sunglasses | 0.65 | 0.0-0.2 | plastic,rubber
+gel pouch belt | 0.45 | 0.0-0.1 | nylon,spandex
+running bib safety pins | 0.50 | 0.0-0.1 | metal_mesh
+chip timing strap | 0.35 | 0.0-0.1 | spandex,plastic
+visibility blinker | 0.20 | 0.0-0.1 | plastic

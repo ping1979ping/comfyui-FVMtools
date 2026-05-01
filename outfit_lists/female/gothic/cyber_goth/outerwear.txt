@@ -1,0 +1,16 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+holographic windbreaker | 0.55 | 0.0-0.3 | vinyl
+neon mesh jacket | 0.50 | 0.0-0.3 | mesh
+reflective shell | 0.50 | 0.0-0.3 | vinyl
+techwear hoodie | 0.55 | 0.0-0.3 | cotton
+
+# mid-casual
+strap-detail jacket | 0.50 | 0.1-0.4 | PVC,leather
+cyber trench coat | 0.50 | 0.1-0.4 | PVC,vinyl
+buckled long jacket | 0.45 | 0.1-0.4 | PVC,leather
+oversized cargo coat | 0.45 | 0.1-0.4 | cotton
+LED-trimmed jacket | 0.35 | 0.1-0.4 | PVC,vinyl
+chained bomber | 0.40 | 0.1-0.4 | leather,vinyl

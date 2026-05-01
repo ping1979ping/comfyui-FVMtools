@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+chunky sneakers | 0.9 | 0.1-0.3 | leather,mesh
+high-top sneakers | 0.8 | 0.1-0.3 | canvas,leather
+combat boots | 0.6 | 0.1-0.3 | leather,canvas
+running sneakers | 0.7 | 0.0-0.3 | mesh,nylon
+classic basketball sneakers | 0.7 | 0.1-0.3 | leather,mesh
+platform sneakers | 0.5 | 0.1-0.3 | leather,canvas
+worker boots | 0.4 | 0.1-0.3 | leather
+slip-on canvas shoes | 0.4 | 0.0-0.2 | canvas

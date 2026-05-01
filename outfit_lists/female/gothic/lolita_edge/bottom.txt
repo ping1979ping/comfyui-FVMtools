@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ruffled mini skirt | 0.65 | 0.1-0.4 | cotton,satin
+bell skirt | 0.55 | 0.2-0.5 | cotton,satin
+
+# mid-casual
+cupcake skirt | 0.60 | 0.3-0.6 | tulle,satin
+tiered petticoat skirt | 0.55 | 0.3-0.6 | tulle,satin
+ribbon-laced skirt | 0.55 | 0.3-0.6 | satin,cotton
+pleated mini skirt | 0.50 | 0.2-0.5 | cotton,satin
+fishnet over-leggings | 0.40 | 0.1-0.4 | mesh
+
+# formal
+ballroom skirt | 0.45 | 0.4-0.7 | satin,tulle
+ornate princess skirt | 0.45 | 0.4-0.7 | satin,velvet
+beaded petticoat | 0.40 | 0.4-0.7 | tulle,satin

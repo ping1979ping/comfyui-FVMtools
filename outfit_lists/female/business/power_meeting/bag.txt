@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+luxury structured handbag | 0.90 | 0.8-1.0 | leather
+designer top-handle bag | 0.80 | 0.8-1.0 | leather,suede
+slim portfolio | 0.65 | 0.8-1.0 | leather
+classic envelope clutch | 0.55 | 0.8-1.0 | leather
+boardroom briefcase | 0.65 | 0.8-1.0 | leather
+formal satchel | 0.55 | 0.7-1.0 | leather

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+streamlined running pack with chrome buckle | 0.60 | 0.0-0.5 | nylon,mesh
+hip pouch with reactive strip | 0.55 | 0.0-0.4 | nylon,neoprene
+sling pack with hydration tube | 0.50 | 0.0-0.4 | nylon,mesh
+chest pack with split pouches | 0.45 | 0.0-0.4 | nylon,neoprene
+mini messenger with chrome clasp | 0.40 | 0.1-0.5 | nylon,leather
+slim chrome-clasp belt pack | 0.45 | 0.0-0.4 | nylon,neoprene
+streamlined armband pouch | 0.45 | 0.0-0.4 | spandex,nylon
+race-number satchel with chrome trim | 0.40 | 0.1-0.5 | nylon,leather

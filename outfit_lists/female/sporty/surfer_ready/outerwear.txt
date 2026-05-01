@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shorty wetsuit | 0.50 | 0.0-0.2 | neoprene_smooth,spandex
+spring suit | 0.45 | 0.0-0.2 | neoprene_smooth,spandex
+full-length wetsuit | 0.30 | 0.0-0.2 | neoprene_smooth,spandex
+beach hoodie | 0.55 | 0.0-0.2 | cotton_blend,polyester
+windbreaker pullover | 0.35 | 0.0-0.2 | nylon,polyester
+oversized terry cover-up | 0.40 | 0.0-0.2 | cotton_terry
+zip-front rash jacket | 0.40 | 0.0-0.2 | spandex,nylon

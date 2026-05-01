@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pleated tennis skirt | 0.85 | 0.1-0.3 | polyester,spandex
+flared court skirt | 0.65 | 0.1-0.3 | polyester,spandex
+built-in short skirt | 0.70 | 0.0-0.2 | polyester,spandex
+match-day shorts | 0.55 | 0.0-0.2 | polyester,nylon
+high-waist tennis skort | 0.60 | 0.0-0.2 | polyester,spandex
+ruffle-hem skirt | 0.40 | 0.1-0.3 | polyester,spandex
+compression undershorts | 0.50 | 0.0-0.1 | spandex,nylon
+mid-rise court shorts | 0.45 | 0.0-0.2 | polyester,nylon
+ball-pocket skirt | 0.55 | 0.1-0.3 | polyester,spandex
+A-line tennis skirt | 0.50 | 0.1-0.3 | polyester,spandex

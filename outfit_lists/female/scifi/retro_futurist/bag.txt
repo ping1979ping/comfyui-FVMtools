@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chrome-rimmed boxy clutch | 0.55 | 0.4-0.8 | metal_mesh,satin
+sphere-shaped chrome pod bag with chain | 0.50 | 0.4-0.8 | metal_mesh,satin
+A-line top-handle bag with chrome clasp | 0.50 | 0.4-0.8 | leather,satin
+chrome-chain shoulder bag | 0.50 | 0.3-0.7 | leather,metal_mesh
+geometric box clutch with chrome trim | 0.45 | 0.4-0.8 | satin,metal_mesh
+bucket bag with chrome buckle | 0.40 | 0.3-0.7 | leather,nylon
+chrome-ring round bag with chain strap | 0.50 | 0.4-0.8 | leather,metal_mesh
+sphere-shaped chrome pod with handle | 0.45 | 0.4-0.8 | metal_mesh,satin

@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BELOVED" | 0.20 | top | ornate calligraphy
+"AMOUR" | 0.20 | top | ornate calligraphy
+"NEVERMORE" | 0.20 | top | ancient script
+"ROMANCE" | 0.15 | top | dark calligraphy
+"ENCHANTED" | 0.20 | top | ornate calligraphy
+"ETERNAL" | 0.20 | top | ornate blackletter
+"DARLING" | 0.15 | top | ornate calligraphy
+"MOONLIGHT" | 0.20 | top | dark calligraphy
+"FOREVER" | 0.20 | top,outerwear | ornate blackletter

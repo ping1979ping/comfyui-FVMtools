@@ -1,0 +1,17 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fanny pack | 0.50 | 0.1-0.4 | nylon,canvas
+slouchy hobo bag | 0.45 | 0.2-0.5 | leather,suede
+neon backpack | 0.40 | 0.1-0.3 | nylon
+
+# mid-casual
+quilted chain bag | 0.55 | 0.4-0.8 | leather
+structured tote | 0.50 | 0.3-0.7 | leather
+patent box purse | 0.45 | 0.3-0.7 | leather
+
+# formal
+sequined evening clutch | 0.50 | 0.5-0.9 | sequin
+metallic minaudiere | 0.45 | 0.5-0.9 | metal,satin
+satin envelope clutch | 0.45 | 0.5-0.9 | satin

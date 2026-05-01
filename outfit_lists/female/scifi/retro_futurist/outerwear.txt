@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+A-line silver coat with chrome buttons | 0.65 | 0.4-0.8 | satin,nylon
+short capelet with chrome chain closure | 0.50 | 0.4-0.8 | satin,silk
+mod swing jacket with peter pan collar | 0.55 | 0.4-0.8 | satin,nylon
+fitted chrome-belted trench | 0.55 | 0.3-0.7 | satin,nylon
+boxy bouclé jacket with chrome buttons | 0.50 | 0.4-0.8 | satin,silk
+floor-length space-age cape | 0.40 | 0.5-0.9 | satin,silk
+shrug with chrome shoulder ring | 0.45 | 0.3-0.7 | satin,nylon
+boxy A-line coat with peter pan collar | 0.55 | 0.4-0.8 | satin,silk
+go-go cropped jacket with chrome zipper | 0.55 | 0.3-0.7 | nylon,satin
+mod-style trench with geometric piping | 0.50 | 0.4-0.8 | satin,nylon

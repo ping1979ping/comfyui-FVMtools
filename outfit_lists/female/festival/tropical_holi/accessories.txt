@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+color-powder dust accent | 0.85 | 0.1-0.3 | plastic
+tropical flower lei | 0.65 | 0.1-0.3 | cotton,plastic
+shell necklace | 0.65 | 0.1-0.3 | plastic
+beaded anklet | 0.55 | 0.1-0.3 | metal,plastic
+oversized hoops | 0.55 | 0.1-0.3 | metal
+rainbow body paint | 0.70 | 0.1-0.3 | plastic
+woven shoulder strap | 0.45 | 0.1-0.3 | cotton
+silver toe ring | 0.40 | 0.1-0.3 | metal
+beach choker | 0.45 | 0.1-0.3 | cotton,leather
+arm cuff | 0.45 | 0.1-0.3 | metal
+seashell hairpin | 0.45 | 0.1-0.3 | plastic,metal

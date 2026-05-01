@@ -1,0 +1,13 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+floral print | 0.65 | top,bottom,bag | 0.2-0.6
+ditsy floral | 0.50 | top,bottom | 0.2-0.6
+breton stripe | 0.40 | top | 0.2-0.5
+soft pastel wash | 0.35 | top,bottom | 0.2-0.5
+gingham pattern | 0.40 | top,bottom | 0.2-0.5
+polka dot | 0.35 | top | 0.3-0.6
+abstract watercolor | 0.30 | top,bag | 0.3-0.5
+small geometric | 0.30 | top,bottom | 0.3-0.5
+pastel stripe | 0.40 | top | 0.2-0.5
+dainty paisley | 0.25 | top,accessories | 0.3-0.5

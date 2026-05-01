@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped neon-trimmed tank top | 0.75 | 0.0-0.3 | neoprene,mesh
+asymmetric cutout bodysuit with glow seams | 0.65 | 0.1-0.4 | spandex,neoprene
+fishnet sleeve crop with circuit print | 0.55 | 0.0-0.3 | mesh,spandex
+holographic bralette with strap harness | 0.50 | 0.0-0.3 | holographic,spandex
+oversized hoodie crop with neon piping | 0.60 | 0.0-0.3 | neoprene,nylon
+strappy backless top with glow trim | 0.55 | 0.1-0.4 | spandex,mesh
+transparent vinyl crop with chrome zipper | 0.45 | 0.0-0.3 | plastic,spandex
+ribbed turtleneck with iridescent threads | 0.55 | 0.2-0.5 | spandex,holographic
+buckled corset top with LED lacing | 0.50 | 0.2-0.5 | leather,spandex
+high-collar moto top with neon accents | 0.60 | 0.1-0.5 | leather,neoprene
+sleeveless utility tunic with glow piping | 0.55 | 0.1-0.4 | nylon,neoprene
+draped one-shoulder top with chrome clasp | 0.45 | 0.4-0.7 | satin,holographic
+fitted long-sleeve with reactive panels | 0.65 | 0.2-0.6 | spandex,neoprene
+mesh-overlay halter with pixel print | 0.50 | 0.1-0.4 | mesh,spandex

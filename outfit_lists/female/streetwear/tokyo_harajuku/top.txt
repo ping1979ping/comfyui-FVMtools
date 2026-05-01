@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+pastel cropped tee | 0.8 | 0.0-0.3 | cotton,jersey
+oversized cartoon hoodie | 0.8 | 0.1-0.3 | fleece,cotton
+ruffle blouse | 0.5 | 0.1-0.4 | polyester,cotton
+puff-sleeve top | 0.6 | 0.1-0.3 | cotton,polyester
+mesh longsleeve | 0.5 | 0.0-0.2 | mesh,nylon
+pleated blouse | 0.4 | 0.1-0.4 | polyester
+layered cami | 0.5 | 0.0-0.2 | jersey,cotton
+sailor collar shirt | 0.4 | 0.1-0.3 | cotton,polyester
+mock-neck longsleeve | 0.5 | 0.1-0.3 | jersey,cotton
+glitter mesh top | 0.3 | 0.0-0.2 | mesh,polyester

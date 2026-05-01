@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+golf glove | 0.85 | 0.1-0.3 | leatherette,spandex
+ball marker | 0.55 | 0.1-0.3 | metal_disc
+divot tool | 0.50 | 0.1-0.3 | metal_disc
+sport sunglasses | 0.65 | 0.1-0.3 | plastic,rubber
+range-finder belt clip | 0.40 | 0.1-0.3 | plastic,nylon
+gps watch | 0.55 | 0.1-0.3 | rubber,plastic
+slim leather belt | 0.50 | 0.1-0.3 | leatherette
+country-club bracelet | 0.30 | 0.1-0.3 | metal_disc
+ball pouch clip | 0.40 | 0.1-0.3 | nylon,leatherette
+classic gold studs | 0.30 | 0.1-0.3 | metal_disc

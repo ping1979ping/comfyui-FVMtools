@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+drop-waist skirt | 0.50 | 0.2-0.5 | cotton,silk
+pleated culottes | 0.35 | 0.2-0.5 | silk,cotton
+
+# mid-casual
+tea-length skirt | 0.55 | 0.3-0.6 | silk,satin
+handkerchief hem skirt | 0.45 | 0.3-0.7 | silk,chiffon
+bias cut skirt | 0.50 | 0.4-0.7 | silk,satin
+
+# formal
+beaded skirt | 0.55 | 0.5-0.9 | sequin,silk
+fringed skirt | 0.60 | 0.5-0.9 | sequin,silk
+tiered evening skirt | 0.50 | 0.5-0.9 | chiffon,satin
+art deco column skirt | 0.45 | 0.5-0.9 | satin,velvet
+metallic pleated skirt | 0.40 | 0.5-0.9 | lame,silk

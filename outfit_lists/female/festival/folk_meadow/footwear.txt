@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+strappy meadow sandals | 0.70 | 0.1-0.3 | leather
+woven espadrilles | 0.65 | 0.2-0.4 | cotton
+ankle boots | 0.55 | 0.1-0.3 | leather
+ballet flats | 0.50 | 0.2-0.4 | cotton,leather
+strappy sandals | 0.55 | 0.1-0.3 | leather
+mary-janes | 0.45 | 0.2-0.4 | leather
+soft mules | 0.45 | 0.1-0.3 | suede
+slip-on canvas shoes | 0.50 | 0.1-0.3 | cotton,rubber
+folk-style slippers | 0.40 | 0.1-0.3 | cotton,leather

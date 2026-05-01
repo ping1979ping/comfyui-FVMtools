@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+baggy carpenter pants | 0.8 | 0.1-0.3 | denim,canvas
+wide-leg jeans | 0.8 | 0.1-0.3 | denim
+cargo pants | 0.7 | 0.1-0.3 | cotton,ripstop
+relaxed straight jeans | 0.7 | 0.1-0.3 | denim
+biker shorts | 0.5 | 0.0-0.2 | spandex,nylon
+track pants | 0.6 | 0.0-0.2 | polyester,nylon
+mini wrap skirt | 0.4 | 0.0-0.2 | denim,corduroy
+loose joggers | 0.6 | 0.0-0.2 | cotton,fleece
+high-rise straight jeans | 0.6 | 0.1-0.3 | denim

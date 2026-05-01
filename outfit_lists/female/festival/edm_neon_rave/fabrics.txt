@@ -1,0 +1,18 @@
+# format: fabric_name | formality | family | weight
+
+# rave basics
+mesh | 0.1 | casual | light
+jersey | 0.1 | casual | light
+cotton | 0.15 | natural | light
+
+# rave specials
+plastic | 0.05 | sporty | light
+faux_fur | 0.25 | luxury | medium
+satin | 0.3 | luxury | light
+
+# structured
+leather | 0.25 | tough | medium
+rubber | 0.05 | sporty | medium
+
+# accessories
+metal | 0.2 | accessory | light

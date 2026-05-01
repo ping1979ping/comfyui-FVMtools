@@ -1,0 +1,16 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fringed pouch | 0.55 | 0.0-0.3 | cotton,leather
+herb satchel | 0.55 | 0.0-0.3 | cotton,leather
+woven bag | 0.45 | 0.0-0.3 | cotton
+
+# mid-casual
+embroidered satchel | 0.50 | 0.2-0.5 | cotton,velvet
+crystal-strap clutch | 0.40 | 0.2-0.5 | velvet,satin
+fringed crossbody | 0.45 | 0.1-0.4 | leather
+
+# formal
+ornate ritual bag | 0.45 | 0.4-0.8 | velvet,satin
+ceremonial pouch | 0.40 | 0.4-0.8 | velvet,silk

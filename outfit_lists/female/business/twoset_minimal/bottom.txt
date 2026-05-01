@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+matching set trousers | 0.90 | 0.6-0.9 | crepe,polyester
+matching set midi skirt | 0.65 | 0.6-0.9 | crepe,polyester
+straight-leg pants | 0.75 | 0.6-0.9 | crepe,wool
+wide-leg trousers | 0.70 | 0.6-0.9 | crepe,wool
+slim cigarette pants | 0.65 | 0.6-0.9 | wool,crepe
+column skirt | 0.55 | 0.6-0.9 | crepe,wool
+midi pencil skirt | 0.55 | 0.6-0.9 | crepe,wool
+high-waist trousers | 0.70 | 0.6-0.9 | crepe,wool
+clean-line shorts | 0.40 | 0.5-0.7 | crepe,linen
+ankle pants | 0.55 | 0.5-0.8 | crepe,wool

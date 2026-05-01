@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BIRDIE" | 0.3 | top,headwear | classic serif
+"PAR-TEE" | 0.25 | top | playful script
+"FORE!" | 0.2 | top,headwear | bold block letters
+"PEBBLE BEACH" | 0.2 | top,headwear | classic serif
+"AUGUSTA" | 0.2 | top,headwear | classic serif
+"19TH HOLE" | 0.2 | top | classic serif
+"EAGLE EYE" | 0.15 | top | bold block letters
+"COUNTRY CLUB" | 0.2 | top,headwear | classic serif
+"TEE TIME" | 0.2 | top,headwear | playful script
+"FAIRWAY" | 0.15 | top | classic serif

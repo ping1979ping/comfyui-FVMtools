@@ -1,0 +1,11 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oversized bow | 0.65 | 0.1-0.4 | satin,velvet
+ribbon hairband | 0.60 | 0.1-0.4 | satin,silk
+
+# mid-casual
+ruffled bonnet | 0.50 | 0.2-0.5 | satin,cotton
+laced headdress | 0.45 | 0.3-0.6 | lace,satin
+princess crown | 0.35 | 0.4-0.7 | metal

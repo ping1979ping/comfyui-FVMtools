@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+cardigan with appliques | 0.50 | 0.1-0.4 | wool,knit
+cropped denim jacket | 0.40 | 0.1-0.3 | denim
+windbreaker | 0.35 | 0.1-0.4 | nylon
+
+# mid-casual
+fitted blazer | 0.50 | 0.3-0.7 | wool,gabardine
+bolero jacket | 0.45 | 0.3-0.7 | wool,velvet
+trapeze coat | 0.45 | 0.3-0.7 | wool,gabardine
+
+# formal
+swing coat | 0.50 | 0.4-0.8 | wool,velvet
+fur stole | 0.30 | 0.6-0.9 | faux_fur
+opera coat | 0.35 | 0.6-0.9 | velvet,satin
+boucle jacket | 0.45 | 0.4-0.8 | tweed,wool

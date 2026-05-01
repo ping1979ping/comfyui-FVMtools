@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"IMMORTAL" | 0.30 | top,outerwear | ornate blackletter
+"BLOODLINE" | 0.25 | top | dripping text
+"NIGHTBORN" | 0.25 | top | gothic font
+"CRIMSON" | 0.25 | top | dripping text
+"SANGUINE" | 0.20 | top | ornate calligraphy
+"COUNTESS" | 0.20 | top | Victorian gothic
+"DARK PRINCESS" | 0.20 | top | ornate calligraphy
+"NOSFERATU" | 0.20 | top | blackletter
+"VESPERA" | 0.15 | top | dark calligraphy

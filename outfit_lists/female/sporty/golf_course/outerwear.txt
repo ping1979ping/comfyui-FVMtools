@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+quarter-zip pullover | 0.65 | 0.1-0.3 | merino_blend,polyester
+golf wind vest | 0.55 | 0.1-0.3 | polyester,nylon
+lightweight rain shell | 0.45 | 0.1-0.3 | nylon,polyester
+fairway sweater | 0.40 | 0.1-0.3 | merino_blend,cotton_twill
+soft-shell golf jacket | 0.40 | 0.1-0.3 | nylon,polyester
+button-up cardigan | 0.30 | 0.1-0.3 | merino_blend,cotton_twill

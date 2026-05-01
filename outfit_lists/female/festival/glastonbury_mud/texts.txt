@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GLASTO" | 0.30 | top,headwear | bold sans
+"MUDDY BUT HAPPY" | 0.20 | top | grunge font
+"LEGEND" | 0.20 | top | metal logo
+"PYRAMID STAGE" | 0.15 | top | tour-poster font
+"WORTHY FARM" | 0.15 | top | weathered serif
+"ROCK ON" | 0.20 | top | distressed font
+"CIDER" | 0.15 | top | retro block
+"KEEP ON" | 0.20 | top | hand-stenciled
+"NO SLEEP" | 0.15 | top | grunge font

@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+high-waisted acid-wash jeans | 0.55 | 0.1-0.4 | denim
+neon leggings | 0.50 | 0.1-0.4 | spandex,polyester
+mom jeans | 0.50 | 0.1-0.4 | denim
+parachute pants | 0.40 | 0.1-0.4 | nylon
+
+# mid-casual
+pleated trousers | 0.55 | 0.3-0.7 | polyester,wool
+power skirt | 0.55 | 0.4-0.8 | wool,polyester
+ra-ra ruffle skirt | 0.40 | 0.2-0.5 | polyester,cotton
+bubble mini skirt | 0.45 | 0.3-0.6 | polyester,satin
+
+# formal
+pencil power skirt | 0.55 | 0.5-0.9 | wool,polyester
+sequined cocktail skirt | 0.45 | 0.5-0.9 | sequin
+satin evening trousers | 0.40 | 0.5-0.9 | satin,polyester

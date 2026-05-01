@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slouchy hobo bag | 0.55 | 0.2-0.4 | suede,leather
+oversized tote | 0.65 | 0.2-0.4 | canvas,wool
+quilted shoulder bag | 0.50 | 0.2-0.4 | nylon,polyester
+felted shoulder bag | 0.45 | 0.2-0.4 | wool,polyester
+chunky crossbody | 0.50 | 0.2-0.4 | leather,suede
+small backpack | 0.50 | 0.1-0.3 | canvas,nylon
+puffy zip pouch | 0.30 | 0.1-0.3 | nylon,polyester

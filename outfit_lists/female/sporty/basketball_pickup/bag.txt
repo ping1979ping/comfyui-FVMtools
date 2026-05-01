@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+basketball drawstring bag | 0.65 | 0.0-0.2 | nylon,polyester
+team duffel | 0.60 | 0.0-0.2 | nylon,polyester
+hoops backpack | 0.55 | 0.0-0.2 | nylon,polyester
+ball-carry net | 0.45 | 0.0-0.2 | nylon
+gym tote | 0.40 | 0.0-0.2 | cotton_blend,polyester
+shoe bag | 0.35 | 0.0-0.2 | nylon,polyester
+crossbody court pouch | 0.30 | 0.0-0.2 | nylon,polyester
+jersey carry case | 0.25 | 0.0-0.2 | nylon,polyester

@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+face gems | 0.85 | 0.1-0.4 | plastic
+glitter body shimmer | 0.80 | 0.1-0.4 | plastic
+chunky chain necklace | 0.65 | 0.1-0.4 | metal
+mirrored sunglasses | 0.65 | 0.1-0.4 | plastic,metal
+crystal hair clips | 0.60 | 0.1-0.4 | metal,plastic
+LED bracelet | 0.55 | 0.1-0.4 | plastic
+sparkly choker | 0.55 | 0.1-0.4 | satin,metal
+butterfly clips | 0.50 | 0.1-0.4 | plastic
+holographic harness | 0.45 | 0.1-0.4 | plastic
+gem stickers | 0.55 | 0.1-0.4 | plastic
+chrome cuff | 0.40 | 0.1-0.4 | metal

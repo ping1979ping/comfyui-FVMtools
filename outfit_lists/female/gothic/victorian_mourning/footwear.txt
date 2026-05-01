@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+buttoned boots | 0.55 | 0.3-0.6 | leather
+
+# mid-casual
+ankle boots | 0.60 | 0.3-0.7 | leather,satin
+laced bootlets | 0.55 | 0.4-0.7 | leather
+
+# formal
+heeled granny boots | 0.65 | 0.5-0.9 | leather,satin
+silk-tongue boots | 0.45 | 0.6-1.0 | satin,silk
+mourning slippers | 0.40 | 0.6-1.0 | satin,silk
+pointed-toe boots | 0.50 | 0.5-0.9 | leather
+ribbon-tied heels | 0.40 | 0.6-1.0 | satin,silk
+beaded slippers | 0.35 | 0.6-1.0 | satin

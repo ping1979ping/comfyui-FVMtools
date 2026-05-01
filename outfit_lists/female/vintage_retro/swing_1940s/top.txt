@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+short-sleeve blouse | 0.50 | 0.1-0.4 | cotton,rayon
+button-front shirt | 0.45 | 0.1-0.4 | cotton,rayon
+peasant-sleeve top | 0.40 | 0.1-0.4 | cotton,linen
+
+# mid-casual
+sweetheart neckline blouse | 0.55 | 0.3-0.6 | rayon,cotton
+puff-sleeve top | 0.50 | 0.2-0.6 | cotton,rayon
+shoulder-padded blouse | 0.45 | 0.3-0.7 | rayon,wool
+ruched bodice | 0.50 | 0.4-0.7 | rayon,satin
+
+# formal
+draped evening top | 0.55 | 0.5-0.8 | satin,velvet
+tailored blouse with bow | 0.55 | 0.4-0.8 | rayon,silk
+pleated front blouse | 0.45 | 0.4-0.7 | rayon,silk

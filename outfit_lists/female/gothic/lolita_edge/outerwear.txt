@@ -1,0 +1,16 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+short bolero | 0.55 | 0.2-0.5 | velvet,satin
+ribbon-tied shrug | 0.45 | 0.2-0.5 | satin,lace
+
+# mid-casual
+princess coat | 0.50 | 0.3-0.6 | velvet,satin
+hooded short cape | 0.45 | 0.3-0.6 | velvet,satin
+laced cardigan | 0.45 | 0.2-0.5 | cotton,lace
+
+# formal
+ornate princess coat | 0.50 | 0.4-0.7 | velvet,satin
+beaded cape | 0.40 | 0.4-0.7 | satin,velvet
+ballroom jacket | 0.40 | 0.4-0.7 | satin,velvet

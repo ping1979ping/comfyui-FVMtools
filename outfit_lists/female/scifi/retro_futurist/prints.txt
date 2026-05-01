@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+mod geometric color-block | 0.60 | top,bottom,outerwear | 0.2-0.7
+chrome ring motif | 0.55 | top,outerwear | 0.3-0.7
+op-art black-and-white pattern | 0.50 | top,bottom | 0.2-0.7
+sphere-and-orbit print | 0.45 | top,outerwear | 0.3-0.7
+A-line color-block panel | 0.50 | top,bottom | 0.2-0.6
+chevron stripe accent | 0.45 | top,bottom,outerwear | 0.2-0.6
+atomic starburst motif | 0.40 | top,outerwear | 0.3-0.7
+sphere-and-orbit chrome motif | 0.45 | top,outerwear | 0.3-0.7
+mod color-block panel | 0.55 | top,bottom | 0.2-0.7
+chrome ring repeat print | 0.45 | top,bottom,outerwear | 0.2-0.7

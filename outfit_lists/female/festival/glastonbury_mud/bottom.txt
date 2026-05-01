@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ripped jeans | 0.75 | 0.1-0.3 | denim
+muddy cargo shorts | 0.55 | 0.1-0.3 | cotton
+relaxed trousers | 0.50 | 0.2-0.4 | cotton
+leggings under skirt | 0.45 | 0.1-0.3 | jersey
+distressed jorts | 0.55 | 0.1-0.3 | denim
+combat-style pants | 0.50 | 0.1-0.3 | cotton
+worn corduroys | 0.40 | 0.2-0.4 | cotton
+plaid mini skirt | 0.40 | 0.1-0.3 | cotton
+joggers | 0.50 | 0.1-0.3 | jersey,cotton
+loose dungarees | 0.45 | 0.1-0.3 | denim

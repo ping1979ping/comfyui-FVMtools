@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ribbon-tied flats | 0.45 | 0.2-0.5 | satin,silk
+soft ankle boots | 0.50 | 0.2-0.5 | leather
+
+# mid-casual
+laced ankle boots | 0.55 | 0.3-0.6 | leather
+heeled boots | 0.55 | 0.3-0.6 | leather,velvet
+ribbon-laced heels | 0.50 | 0.4-0.7 | satin,silk
+
+# formal
+beaded heels | 0.50 | 0.6-1.0 | satin,silk
+ornate stilettos | 0.45 | 0.6-1.0 | satin,velvet
+ballroom heels | 0.50 | 0.6-1.0 | satin,silk
+silk ribbon flats | 0.40 | 0.5-0.9 | satin,silk

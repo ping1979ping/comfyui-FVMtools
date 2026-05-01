@@ -1,0 +1,16 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+mini backpack | 0.55 | 0.1-0.3 | nylon,canvas
+fanny pack | 0.45 | 0.1-0.3 | nylon
+crossbody messenger | 0.50 | 0.1-0.4 | canvas,leather
+patchwork tote | 0.40 | 0.1-0.3 | denim
+hemp shoulder pouch | 0.35 | 0.1-0.3 | hemp
+
+# mid-casual
+slouch hobo bag | 0.50 | 0.2-0.5 | leather
+baguette bag | 0.50 | 0.2-0.6 | leather,satin
+
+# formal
+minimalist clutch | 0.45 | 0.4-0.7 | leather,satin

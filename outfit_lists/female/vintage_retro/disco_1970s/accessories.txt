@@ -1,0 +1,20 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+peace sign pendant | 0.45 | 0.1-0.4 | metal
+leather choker | 0.45 | 0.1-0.5 | leather
+mood ring | 0.40 | 0.1-0.4 | metal
+puka shell necklace | 0.40 | 0.1-0.3 | shell
+
+# mid-casual
+oversized aviators | 0.55 | 0.1-0.6 | metal
+hoop earrings | 0.55 | 0.1-0.7 | metal
+wide statement belt | 0.50 | 0.2-0.6 | leather
+fringed scarf | 0.40 | 0.1-0.5 | suede,cotton
+
+# formal
+gold chain necklace | 0.55 | 0.4-0.9 | metal
+sparkle drop earrings | 0.50 | 0.5-0.9 | metal
+disco ball pendant | 0.40 | 0.5-0.9 | metal
+glitter eyeshadow set | 0.30 | 0.4-0.8 | mica

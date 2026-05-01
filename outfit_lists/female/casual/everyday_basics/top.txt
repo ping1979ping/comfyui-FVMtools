@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+basic crew tee | 0.95 | 0.1-0.4 | cotton,jersey
+fitted tank top | 0.75 | 0.1-0.3 | cotton,jersey
+ribbed scoop tee | 0.65 | 0.2-0.4 | knit,cotton
+v-neck top | 0.70 | 0.2-0.4 | cotton,jersey
+long sleeve tee | 0.70 | 0.2-0.4 | cotton,jersey
+classic henley | 0.50 | 0.2-0.4 | cotton,jersey
+button-down shirt | 0.55 | 0.3-0.5 | cotton,linen
+soft pullover | 0.55 | 0.2-0.4 | knit,cotton
+boxy crop tee | 0.50 | 0.1-0.3 | cotton,jersey
+plain pocket tee | 0.55 | 0.1-0.3 | cotton,jersey
+basic turtleneck | 0.40 | 0.3-0.5 | knit,cotton
+pocket polo | 0.35 | 0.3-0.5 | cotton,jersey

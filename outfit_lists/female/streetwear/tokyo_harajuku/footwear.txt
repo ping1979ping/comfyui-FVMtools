@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+platform mary janes | 0.7 | 0.1-0.3 | leather,polyester
+chunky platform sneakers | 0.7 | 0.0-0.3 | mesh,leather
+buckle platforms | 0.6 | 0.1-0.3 | leather
+tall lace-up boots | 0.5 | 0.1-0.3 | leather,canvas
+glitter creepers | 0.4 | 0.0-0.3 | polyester,leather
+ribbon flats | 0.4 | 0.1-0.3 | polyester,satin
+chunky low-tops | 0.5 | 0.0-0.3 | canvas,mesh
+plaid platform boots | 0.4 | 0.0-0.3 | leather

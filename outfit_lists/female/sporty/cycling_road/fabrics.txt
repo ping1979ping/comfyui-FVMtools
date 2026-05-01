@@ -1,0 +1,21 @@
+# format: fabric_name | formality | family | weight
+
+# cycling performance
+polyester | 0.1 | sporty | light
+nylon | 0.1 | sporty | light
+spandex | 0.1 | sporty | light
+jersey_knit | 0.1 | sporty | light
+mesh | 0.1 | sporty | light
+
+# warmth
+merino_blend | 0.2 | natural | medium
+fleece | 0.15 | casual | medium
+neoprene_smooth | 0.15 | sporty | medium
+
+# functional
+rubber | 0.05 | sporty | medium
+plastic | 0.05 | sporty | light
+leatherette | 0.2 | sporty | medium
+carbon_plate | 0.1 | sporty | light
+cotton_blend | 0.15 | natural | medium
+metal_disc | 0.2 | sporty | light

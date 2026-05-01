@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wristband | 0.85 | 0.0-0.2 | cotton_terry,spandex
+sweat band | 0.70 | 0.0-0.2 | cotton_terry,spandex
+sports watch | 0.55 | 0.0-0.2 | rubber,plastic
+court sunglasses | 0.50 | 0.0-0.2 | plastic,rubber
+ponytail tie | 0.80 | 0.0-0.2 | spandex
+overgrip tape | 0.45 | 0.0-0.2 | polyester,rubber
+ankle brace | 0.30 | 0.0-0.2 | spandex,nylon
+elbow sleeve | 0.25 | 0.0-0.2 | spandex,nylon
+match scorekeeper | 0.20 | 0.0-0.2 | plastic
+visor strap | 0.30 | 0.0-0.2 | spandex,nylon

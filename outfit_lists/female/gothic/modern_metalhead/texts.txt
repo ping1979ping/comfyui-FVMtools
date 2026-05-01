@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"DEATH METAL" | 0.40 | top | distressed text
+"BLACK METAL" | 0.35 | top | distressed text
+"HEAVY" | 0.25 | top | gothic font
+"DOOM" | 0.30 | top | distressed text
+"HAIL" | 0.20 | top | blackletter
+"SLAY" | 0.20 | top | distressed text
+"CARNAGE" | 0.20 | top | distressed text
+"WARRIOR" | 0.15 | top | gothic font
+"MOSH PIT" | 0.20 | top | distressed text
+"666" | 0.30 | top,accessories | gothic font
+"INFERNO" | 0.20 | top | blackletter

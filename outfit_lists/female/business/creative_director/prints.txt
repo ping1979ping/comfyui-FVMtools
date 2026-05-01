@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+abstract artwork | 0.30 | top,outerwear | 0.5-0.8
+geometric pattern | 0.30 | top,bottom | 0.5-0.8
+bold color block | 0.30 | top,outerwear | 0.5-0.8
+designer monogram | 0.25 | accessories | 0.5-0.9
+modern floral | 0.25 | top | 0.5-0.8
+animal pattern | 0.25 | top,bottom,outerwear | 0.5-0.8
+metallic shine | 0.20 | top,outerwear | 0.5-0.8
+asymmetric stripes | 0.25 | top,bottom | 0.5-0.8

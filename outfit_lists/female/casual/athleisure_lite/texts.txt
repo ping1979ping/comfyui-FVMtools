@@ -1,0 +1,12 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+"GO" | 0.20 | top | bold sans-serif
+"RUN" | 0.25 | top | athletic block letters
+"STRONG" | 0.20 | top | bold sans-serif
+"FOCUS" | 0.20 | top | minimal sans-serif
+"NO DAYS OFF" | 0.20 | top | varsity font
+"TRAIN" | 0.20 | top | athletic block letters
+"HUSTLE" | 0.20 | top | bold sans-serif
+"MOVE" | 0.20 | top | minimal sans-serif
+"SPORT" | 0.20 | top,headwear | varsity font

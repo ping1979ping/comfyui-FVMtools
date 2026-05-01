@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+peter pan collar blouse | 0.65 | 0.2-0.5 | cotton
+puff-sleeve blouse | 0.60 | 0.2-0.5 | cotton,satin
+ruffled crop | 0.45 | 0.1-0.4 | cotton,satin
+
+# mid-casual
+ribbon-tied bodice | 0.65 | 0.3-0.6 | satin,cotton
+laced lolita top | 0.55 | 0.3-0.6 | satin,cotton
+high-collar blouse | 0.55 | 0.3-0.6 | cotton,satin
+ribboned chemise | 0.50 | 0.2-0.5 | cotton,satin
+yoke-front blouse | 0.50 | 0.3-0.6 | cotton
+
+# formal
+ornate bodice | 0.55 | 0.4-0.7 | satin,velvet
+princess corset top | 0.50 | 0.4-0.7 | satin,velvet
+dolly bustier | 0.45 | 0.4-0.7 | satin,velvet

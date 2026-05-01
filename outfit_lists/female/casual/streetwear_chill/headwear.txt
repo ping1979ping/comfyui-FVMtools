@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+snapback cap | 0.65 | 0.1-0.3 | polyester,cotton
+trucker cap | 0.45 | 0.1-0.3 | mesh,cotton
+beanie cap | 0.55 | 0.1-0.3 | knit,cotton
+bucket hat | 0.50 | 0.1-0.3 | nylon,cotton

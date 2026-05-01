@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+sleek blazer | 0.45 | 0.2-0.5 | satin,velvet
+draped wrap | 0.40 | 0.2-0.5 | satin,silk
+
+# formal
+plush fur stole | 0.55 | 0.5-0.9 | faux_fur,velvet
+opera cape | 0.55 | 0.6-1.0 | satin,velvet
+high-collar coat | 0.50 | 0.5-0.9 | velvet,satin
+floor-length cloak | 0.50 | 0.6-1.0 | velvet,satin
+beaded evening jacket | 0.45 | 0.6-1.0 | satin,silk
+ornate brocade coat | 0.40 | 0.6-1.0 | satin,velvet
+draped evening cape | 0.45 | 0.6-1.0 | satin,silk

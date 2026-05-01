@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+neon windbreaker | 0.65 | 0.1-0.3 | plastic
+shaggy faux jacket | 0.55 | 0.1-0.3 | faux_fur
+fishnet cropped jacket | 0.50 | 0.1-0.3 | mesh
+neon harness | 0.45 | 0.1-0.3 | leather,plastic
+clear vinyl coat | 0.45 | 0.1-0.3 | plastic
+oversized graphic hoodie | 0.55 | 0.1-0.3 | cotton
+fluffy crop jacket | 0.45 | 0.1-0.3 | faux_fur
+fluorescent vest | 0.45 | 0.1-0.3 | plastic
+chrome bomber | 0.40 | 0.1-0.3 | satin,plastic

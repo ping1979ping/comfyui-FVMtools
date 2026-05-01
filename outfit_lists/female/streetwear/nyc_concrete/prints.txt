@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+graffiti tag graphic | 0.6 | top,outerwear | 0.1-0.3
+brand logo | 0.7 | top,headwear,bag | 0.1-0.4
+screen-printed slogan | 0.5 | top | 0.1-0.3
+new york skyline graphic | 0.4 | top,outerwear | 0.1-0.3
+embroidered crest | 0.4 | top,headwear,outerwear | 0.1-0.4
+oversized monogram | 0.4 | top,outerwear | 0.1-0.3
+distressed wash | 0.5 | top,bottom | 0.1-0.3
+checker stripe | 0.3 | top,bottom,accessories | 0.1-0.3
+varsity number | 0.4 | top,outerwear | 0.1-0.3
+patch detail | 0.3 | outerwear,bag | 0.1-0.3

@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+skate brand logo | 0.7 | top,headwear,bag | 0.1-0.3
+band graphic | 0.6 | top | 0.1-0.3
+checker pattern | 0.6 | top,bottom,accessories | 0.0-0.3
+sun-faded wash | 0.5 | top,bottom | 0.1-0.3
+flame motif | 0.4 | top,outerwear | 0.0-0.3
+palm tree graphic | 0.4 | top | 0.0-0.3
+distressed wash | 0.5 | top,bottom | 0.1-0.3
+patch detail | 0.4 | outerwear,bag | 0.1-0.3
+flying eyeball graphic | 0.3 | top | 0.0-0.3
+ripped detail | 0.5 | top,bottom | 0.0-0.3

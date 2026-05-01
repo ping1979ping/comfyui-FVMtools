@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+designer crossbody | 0.8 | 0.1-0.3 | nylon,leather
+sling tech bag | 0.7 | 0.1-0.3 | nylon,polyester
+collab backpack | 0.6 | 0.1-0.3 | nylon,canvas
+mini hype tote | 0.6 | 0.1-0.3 | canvas,cotton
+hype waist pack | 0.6 | 0.0-0.3 | nylon,polyester
+limited duffle | 0.5 | 0.1-0.3 | nylon,canvas
+shoulder logo purse | 0.5 | 0.1-0.3 | leather,nylon

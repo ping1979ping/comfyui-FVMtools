@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+EVA shell jacket with helmet ring | 0.70 | 0.2-0.7 | kevlar,carbon_fiber
+fitted bomber with mission patches | 0.65 | 0.1-0.5 | nylon,neoprene
+long flight coat with embroidered crest | 0.55 | 0.4-0.8 | satin,nylon
+thermal parka with reflective hood | 0.60 | 0.1-0.5 | nylon,neoprene
+utility vest with magnetic pouches | 0.65 | 0.1-0.5 | kevlar,nylon
+captain blazer with chrome buttons | 0.45 | 0.5-0.9 | satin,nylon
+cropped flight jacket with rank stripe | 0.55 | 0.2-0.6 | nylon,neoprene
+hooded thermal poncho | 0.40 | 0.0-0.4 | nylon,mesh
+zipped chrome shell jacket with rank stripe | 0.55 | 0.2-0.6 | nylon,kevlar
+mission cardigan with embroidered crest | 0.45 | 0.2-0.6 | nylon,satin

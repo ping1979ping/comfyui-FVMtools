@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured chrome-plated clutch | 0.50 | 0.6-1.0 | metal_mesh,satin
+iridescent envelope clutch with chrome clasp | 0.50 | 0.5-1.0 | holographic,satin
+sculpted geometric minaudiere | 0.40 | 0.6-1.0 | metal_mesh,satin
+silk pouch with embroidered crest | 0.40 | 0.5-0.9 | silk,satin
+chrome-chain shoulder clutch | 0.45 | 0.5-0.9 | metal_mesh,satin
+tiny floating sphere pod with strap | 0.30 | 0.6-1.0 | plastic,metal
+sculpted crystal-handle pouch | 0.40 | 0.6-1.0 | satin,plastic
+ceremonial book-clutch with chrome corners | 0.40 | 0.5-0.9 | leather,metal_mesh

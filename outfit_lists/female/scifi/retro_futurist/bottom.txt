@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+A-line mini skirt with chrome buttons | 0.65 | 0.2-0.6 | satin,nylon
+high-waisted go-go shorts with chrome belt | 0.60 | 0.2-0.5 | satin,spandex
+fitted catsuit pants with chrome zipper | 0.60 | 0.2-0.6 | spandex,vinyl
+flared trousers with chrome piping | 0.55 | 0.3-0.7 | satin,nylon
+tiered space-age skirt | 0.45 | 0.3-0.7 | satin,silk
+fitted leggings with chrome side stripe | 0.55 | 0.2-0.6 | spandex,satin
+A-line midi skirt with geometric panel | 0.50 | 0.3-0.7 | satin,nylon
+high-waisted cigarette pants | 0.55 | 0.4-0.7 | satin,nylon
+flared culottes with chrome side stripe | 0.50 | 0.3-0.7 | satin,nylon
+fitted A-line shorts with chrome belt | 0.55 | 0.2-0.6 | satin,nylon

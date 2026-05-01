@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+padded cycling shorts | 0.85 | 0.0-0.1 | spandex,nylon
+bib shorts | 0.75 | 0.0-0.1 | spandex,nylon
+3/4 cycling tights | 0.55 | 0.0-0.1 | spandex,nylon
+full-length cycling tights | 0.50 | 0.0-0.1 | spandex,nylon
+thermal bib tights | 0.40 | 0.0-0.1 | spandex,nylon
+aero race shorts | 0.60 | 0.0-0.1 | spandex,nylon
+high-waist bike shorts | 0.55 | 0.0-0.1 | spandex,nylon
+chamois liner shorts | 0.50 | 0.0-0.1 | spandex,nylon
+mid-thigh club shorts | 0.55 | 0.0-0.1 | spandex,nylon

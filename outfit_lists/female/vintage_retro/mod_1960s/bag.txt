@@ -1,0 +1,16 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+PVC shoulder bag | 0.50 | 0.1-0.5 | vinyl
+mod bucket bag | 0.45 | 0.2-0.5 | vinyl,leather
+chain clutch | 0.40 | 0.2-0.6 | metal
+
+# mid-casual
+patent box purse | 0.50 | 0.3-0.7 | leather
+geometric tote | 0.45 | 0.2-0.6 | vinyl,canvas
+top-handle satchel | 0.45 | 0.3-0.7 | leather
+
+# formal
+metallic mini bag | 0.45 | 0.5-0.9 | metal,vinyl
+satin evening clutch | 0.45 | 0.5-0.9 | satin

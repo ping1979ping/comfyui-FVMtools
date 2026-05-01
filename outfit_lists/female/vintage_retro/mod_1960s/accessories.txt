@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oversized sunglasses | 0.55 | 0.1-0.5 | acrylic
+plastic statement earrings | 0.50 | 0.1-0.5 | acrylic
+chain belt | 0.45 | 0.1-0.5 | metal
+
+# mid-casual
+white wrist gloves | 0.45 | 0.3-0.7 | cotton,vinyl
+geometric pendant | 0.50 | 0.2-0.6 | metal
+op-art bangles | 0.45 | 0.2-0.6 | acrylic
+PVC waist belt | 0.40 | 0.2-0.6 | vinyl
+
+# formal
+chunky cuff bracelet | 0.45 | 0.4-0.8 | metal
+mod earring drops | 0.50 | 0.4-0.8 | metal,acrylic
+opaque tights | 0.55 | 0.2-0.7 | nylon
+fishnet stockings | 0.40 | 0.2-0.6 | nylon

@@ -1,0 +1,8 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+horizontal stripes | 0.30 | top | 0.4-0.7
+gingham check | 0.25 | top | 0.4-0.7
+small floral | 0.25 | top,bottom | 0.4-0.7
+polka dots | 0.20 | top | 0.4-0.7
+subtle plaid | 0.30 | outerwear,bottom | 0.4-0.7
+chambray solid | 0.30 | top | 0.4-0.7
+mini geometric | 0.20 | top | 0.4-0.7

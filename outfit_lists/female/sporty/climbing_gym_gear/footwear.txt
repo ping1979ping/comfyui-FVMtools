@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aggressive climbing shoes | 0.85 | 0.0-0.2 | leatherette,rubber
+neutral climbing shoes | 0.70 | 0.0-0.2 | leatherette,rubber
+slipper-style climb shoes | 0.55 | 0.0-0.2 | leatherette,rubber
+moderate down-turned shoes | 0.50 | 0.0-0.2 | leatherette,rubber
+approach shoes | 0.45 | 0.0-0.2 | mesh,rubber
+crag sandals | 0.30 | 0.0-0.2 | rubber,nylon
+no-show climb socks | 0.50 | 0.0-0.2 | cotton_blend,spandex
+sneaker-cut approach shoes | 0.40 | 0.0-0.2 | mesh,rubber

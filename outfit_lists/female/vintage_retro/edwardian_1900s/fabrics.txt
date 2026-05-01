@@ -1,0 +1,26 @@
+# format: fabric_name | formality | family | weight
+
+# casual fabrics
+cotton | 0.2 | natural | medium
+linen | 0.3 | natural | light
+lawn | 0.3 | natural | light
+
+# mid-range fabrics
+wool | 0.5 | natural | heavy
+tweed | 0.55 | natural | heavy
+leather | 0.45 | tough | heavy
+kid | 0.55 | luxury | light
+
+# formal fabrics
+silk | 0.85 | luxury | light
+satin | 0.7 | luxury | light
+velvet | 0.65 | luxury | medium
+chiffon | 0.5 | luxury | light
+lace | 0.55 | luxury | light
+brocade | 0.8 | luxury | medium
+sequin | 0.85 | luxury | medium
+faux_fur | 0.6 | luxury | heavy
+feather | 0.7 | luxury | light
+
+# special materials
+metal | 0.5 | luxury | heavy

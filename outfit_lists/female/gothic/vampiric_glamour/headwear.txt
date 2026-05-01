@@ -1,0 +1,11 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+crystal hairpin | 0.50 | 0.3-0.7 | metal
+
+# formal
+ornate diadem | 0.45 | 0.6-1.0 | metal
+beaded headpiece | 0.45 | 0.6-1.0 | metal,satin
+crimson hair veil | 0.35 | 0.6-1.0 | tulle,silk
+ruby tiara | 0.35 | 0.6-1.0 | metal

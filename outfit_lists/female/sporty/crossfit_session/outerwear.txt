@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped warm-up hoodie | 0.55 | 0.0-0.2 | cotton_blend,polyester
+zip-up training jacket | 0.45 | 0.0-0.2 | polyester,nylon
+oversized box hoodie | 0.50 | 0.0-0.2 | cotton_blend,polyester
+quarter-zip warmup | 0.40 | 0.0-0.2 | polyester,nylon
+sleeveless training hoodie | 0.30 | 0.0-0.1 | cotton_blend,polyester
+long-sleeve thumbhole top | 0.45 | 0.0-0.1 | polyester,spandex

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+racerback singlet | 0.85 | 0.0-0.1 | polyester,jersey_knit
+breathable running tee | 0.80 | 0.0-0.2 | polyester,jersey_knit
+sleeveless race top | 0.70 | 0.0-0.1 | polyester,nylon
+mesh-back tank | 0.65 | 0.0-0.1 | polyester,nylon
+high-support sports bra | 0.60 | 0.0-0.1 | spandex,nylon
+crop running tank | 0.55 | 0.0-0.1 | spandex,polyester
+seamless compression top | 0.50 | 0.0-0.1 | spandex,nylon
+long-sleeve thermal layer | 0.40 | 0.0-0.2 | polyester,merino
+short-sleeve performance shirt | 0.75 | 0.0-0.2 | polyester,jersey_knit
+quarter-zip pullover | 0.45 | 0.1-0.3 | polyester,nylon
+ventilated marathon top | 0.55 | 0.0-0.1 | polyester,nylon
+ultralight tank | 0.60 | 0.0-0.1 | polyester,jersey_knit

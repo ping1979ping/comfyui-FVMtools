@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+round vintage glasses | 0.7 | 0.1-0.3 | nylon
+beaded necklaces | 0.6 | 0.0-0.3 | cotton
+woven friendship bracelets | 0.5 | 0.0-0.2 | cotton
+silk neck scarf | 0.5 | 0.1-0.3 | satin,polyester
+braided belt | 0.5 | 0.1-0.3 | leather,canvas
+small hoop earrings | 0.5 | 0.1-0.3 | cotton
+chunky stack rings | 0.4 | 0.1-0.3 | cotton
+hair pins | 0.4 | 0.0-0.3 | cotton
+ankle socks | 0.5 | 0.0-0.2 | cotton

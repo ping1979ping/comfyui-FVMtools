@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floating avatar tag above shoulder | 0.65 | 0.0-0.6 | plastic
+oversized chrome bracelet with display panel | 0.60 | 0.0-0.6 | metal,plastic
+glow-trim choker with reactive heart | 0.55 | 0.0-0.5 | plastic,metal
+holographic earrings with floating polygon | 0.55 | 0.0-0.6 | metal,holographic
+chrome belt with avatar buckle | 0.55 | 0.1-0.5 | leather,metal_mesh
+particle-effect arm band | 0.50 | 0.0-0.5 | spandex,plastic
+neon ring stack with reactive light | 0.45 | 0.0-0.5 | plastic,metal
+floating emoji bubble at shoulder | 0.45 | 0.0-0.5 | plastic
+chunky cyber gloves with chrome panel | 0.50 | 0.0-0.5 | spandex,metal_mesh
+voxel hairclips arranged in row | 0.40 | 0.0-0.4 | plastic,metal

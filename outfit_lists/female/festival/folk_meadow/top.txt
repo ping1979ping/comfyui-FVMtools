@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+embroidered peasant blouse | 0.80 | 0.2-0.4 | cotton
+folk-style smock top | 0.65 | 0.2-0.4 | cotton
+puff-sleeve blouse | 0.70 | 0.2-0.4 | cotton
+ribbon-tied corset top | 0.55 | 0.2-0.4 | cotton,satin
+woven camisole | 0.55 | 0.1-0.3 | crochet
+ruffled shirt | 0.55 | 0.2-0.4 | cotton
+prairie blouse | 0.60 | 0.2-0.4 | cotton
+folk-embroidered tank | 0.50 | 0.2-0.4 | cotton
+sleeveless folk vest | 0.45 | 0.2-0.4 | cotton
+linen tie-front | 0.55 | 0.2-0.4 | cotton
+lace-trim camisole | 0.45 | 0.2-0.4 | satin

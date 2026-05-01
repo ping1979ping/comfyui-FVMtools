@@ -1,0 +1,9 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+chunky chain necklace | 0.7 | 0.1-0.3 | cotton
+hoop earrings | 0.6 | 0.1-0.3 | cotton
+oversized sunglasses | 0.6 | 0.1-0.3 | nylon
+chunky rings | 0.5 | 0.1-0.3 | cotton
+layered chains | 0.5 | 0.1-0.3 | cotton
+wide belt | 0.4 | 0.1-0.3 | leather,canvas
+gold hoop set | 0.4 | 0.1-0.3 | cotton

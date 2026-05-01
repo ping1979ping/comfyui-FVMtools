@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped sport tank | 0.80 | 0.0-0.2 | cotton_blend,spandex
+loose climbing tee | 0.70 | 0.0-0.2 | cotton_blend,polyester
+bouldering crop top | 0.65 | 0.0-0.2 | cotton_blend,spandex
+high-support climb bra | 0.55 | 0.0-0.2 | spandex,nylon
+ribbed climb tank | 0.50 | 0.0-0.2 | ribbed_knit,spandex
+flowy boulder shirt | 0.55 | 0.0-0.2 | cotton_blend,jersey_knit
+long-sleeve crag tee | 0.45 | 0.0-0.2 | cotton_blend,polyester
+asymmetric tank | 0.40 | 0.0-0.2 | cotton_blend,spandex
+performance climb tee | 0.55 | 0.0-0.2 | polyester,jersey_knit
+sleeveless boulder top | 0.50 | 0.0-0.2 | cotton_blend,spandex

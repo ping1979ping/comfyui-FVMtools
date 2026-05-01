@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oxford button-down | 0.75 | 0.3-0.5 | cotton,polyester
+classic pique polo | 0.70 | 0.2-0.4 | cotton,jersey
+cable-knit pullover | 0.65 | 0.3-0.5 | wool,knit
+crewneck pullover | 0.70 | 0.3-0.5 | wool,knit
+fitted polo shirt | 0.55 | 0.2-0.4 | cotton,jersey
+sleeveless argyle vest | 0.45 | 0.3-0.5 | wool,knit
+varsity letter pullover | 0.55 | 0.2-0.4 | wool,knit
+preppy striped tee | 0.50 | 0.2-0.4 | cotton,jersey
+quarter-zip pullover | 0.55 | 0.2-0.4 | wool,knit
+collared shirt | 0.55 | 0.3-0.5 | cotton,polyester
+scholarly turtleneck | 0.40 | 0.3-0.5 | wool,knit
+school-club polo | 0.45 | 0.2-0.4 | cotton,jersey

@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+western cowboy boots | 0.65 | 0.1-0.3 | leather,suede
+tan ankle boots | 0.55 | 0.1-0.3 | leather
+flat sandals | 0.65 | 0.1-0.3 | leather
+strappy gladiators | 0.50 | 0.1-0.3 | leather
+embellished slip-ons | 0.45 | 0.1-0.3 | cotton,leather
+woven espadrilles | 0.50 | 0.2-0.4 | cotton
+tan booties | 0.40 | 0.1-0.3 | suede
+fringed ankle boots | 0.45 | 0.1-0.3 | suede,fringe
+canvas sneakers | 0.55 | 0.1-0.3 | cotton,rubber
+beaded thong sandals | 0.40 | 0.1-0.3 | leather

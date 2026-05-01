@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"DROP" | 0.4 | top | bold block letters
+"HYPE" | 0.4 | top,headwear | bold condensed
+"LIMITED" | 0.4 | top,outerwear | stencil font
+"EXCLUSIVE" | 0.3 | top | bold block letters
+"COLLAB" | 0.3 | top | distressed print
+"FW24" | 0.3 | top,outerwear | bold condensed
+"OG" | 0.4 | top,headwear | gothic font
+"ARCHIVE" | 0.3 | top | stencil font
+"FLEX" | 0.4 | top | bold condensed

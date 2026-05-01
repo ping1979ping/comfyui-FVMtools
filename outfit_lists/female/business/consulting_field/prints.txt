@@ -1,0 +1,7 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid neutral | 0.45 | top,bottom,outerwear | 0.5-0.9
+fine pinstripe | 0.25 | bottom,outerwear | 0.6-0.9
+subtle check | 0.25 | top,outerwear | 0.5-0.8
+small dot | 0.20 | top | 0.5-0.8
+tonal stripe | 0.20 | top | 0.5-0.8
+herringbone weave | 0.20 | outerwear | 0.6-0.9

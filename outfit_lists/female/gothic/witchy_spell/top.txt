@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flowing peasant blouse | 0.60 | 0.0-0.3 | cotton,linen
+wide-sleeve tunic | 0.55 | 0.0-0.3 | cotton,linen
+crocheted top | 0.45 | 0.0-0.3 | cotton
+
+# mid-casual
+draped wrap top | 0.55 | 0.2-0.5 | cotton,silk
+poet shirt | 0.50 | 0.2-0.5 | cotton,silk
+laced bodice | 0.55 | 0.2-0.5 | cotton,velvet
+bell-sleeve blouse | 0.55 | 0.2-0.5 | cotton,silk
+pentagram-detailed top | 0.40 | 0.1-0.4 | cotton
+
+# formal
+ritual robe top | 0.55 | 0.4-0.8 | velvet,silk
+ornate witch bodice | 0.50 | 0.4-0.8 | velvet,satin
+embroidered ceremonial top | 0.45 | 0.4-0.8 | velvet,silk

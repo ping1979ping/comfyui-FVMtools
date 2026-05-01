@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WITCH" | 0.40 | top | dripping text
+"COVEN" | 0.30 | top | blackletter
+"HEX" | 0.30 | top | gothic font
+"SPELLBOUND" | 0.25 | top | ornate calligraphy
+"OCCULT" | 0.25 | top | ancient script
+"MYSTIC" | 0.25 | top | medieval script
+"MOON CHILD" | 0.25 | top | dark calligraphy
+"BLOOD MOON" | 0.20 | top | dripping text
+"DARK ARTS" | 0.20 | top | gothic font
+"NIGHTSHADE" | 0.20 | top | dark calligraphy
+"BANSHEE" | 0.15 | top | ornate blackletter
+"HEMLOCK" | 0.15 | top | dark calligraphy

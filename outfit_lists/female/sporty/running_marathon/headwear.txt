@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+running visor | 0.65 | 0.0-0.1 | polyester,plastic
+performance cap | 0.70 | 0.0-0.2 | polyester,nylon
+sweatband | 0.55 | 0.0-0.1 | polyester,spandex
+buff neck gaiter | 0.30 | 0.0-0.2 | polyester,spandex
+ear-warmer band | 0.25 | 0.0-0.2 | polyester,spandex

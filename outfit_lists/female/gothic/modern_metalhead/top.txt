@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+band tee | 0.80 | 0.0-0.3 | cotton
+cropped band shirt | 0.65 | 0.0-0.3 | cotton
+ripped tank top | 0.55 | 0.0-0.3 | cotton
+oversized tee | 0.55 | 0.0-0.3 | cotton
+
+# mid-casual
+sleeveless flannel | 0.45 | 0.1-0.4 | cotton,denim
+mesh long-sleeve | 0.50 | 0.1-0.4 | mesh
+fishnet long-sleeve | 0.45 | 0.1-0.4 | mesh
+patch-covered vest | 0.55 | 0.1-0.4 | denim,leather
+studded crop top | 0.40 | 0.1-0.4 | leather,cotton
+spiked bralette | 0.35 | 0.1-0.4 | leather
+
+# formal
+black blazer | 0.30 | 0.4-0.6 | cotton,satin

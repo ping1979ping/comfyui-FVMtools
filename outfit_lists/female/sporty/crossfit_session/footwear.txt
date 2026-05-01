@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cross-training shoes | 0.85 | 0.0-0.1 | mesh,rubber
+flat-sole lifting shoes | 0.55 | 0.0-0.1 | leatherette,rubber
+metcon-style trainers | 0.75 | 0.0-0.1 | mesh,rubber
+hybrid training shoes | 0.60 | 0.0-0.1 | mesh,rubber
+weightlifting heels | 0.40 | 0.0-0.1 | leatherette,rubber
+no-show training socks | 0.70 | 0.0-0.1 | cotton_blend,spandex
+high-cuff workout socks | 0.45 | 0.0-0.1 | cotton_blend,spandex
+deadlift slippers | 0.30 | 0.0-0.1 | cotton_blend,rubber

@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+designer sunglasses | 0.8 | 0.1-0.4 | nylon
+gold chain necklace | 0.6 | 0.1-0.4 | cotton
+small pearl earrings | 0.6 | 0.1-0.4 | cotton
+slim wide belt | 0.5 | 0.1-0.4 | leather,suede
+silk neck scarf | 0.5 | 0.1-0.4 | satin,polyester
+stacked rings | 0.5 | 0.1-0.4 | cotton
+gold hoop earrings | 0.5 | 0.1-0.4 | cotton
+sleek watch | 0.5 | 0.1-0.4 | leather
+chic gloves | 0.4 | 0.1-0.4 | leather,wool blend

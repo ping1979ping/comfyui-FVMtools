@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flowing maxi skirt | 0.65 | 0.0-0.3 | cotton,linen
+patchwork skirt | 0.40 | 0.0-0.3 | cotton
+
+# mid-casual
+asymmetric witch skirt | 0.60 | 0.2-0.5 | cotton,velvet
+tiered gypsy skirt | 0.55 | 0.1-0.4 | cotton,silk
+frayed-hem skirt | 0.45 | 0.0-0.3 | cotton
+draped midi skirt | 0.45 | 0.2-0.5 | velvet,silk
+high-waist witch pants | 0.40 | 0.1-0.4 | cotton
+
+# formal
+ritual long skirt | 0.55 | 0.4-0.8 | velvet,silk
+ornate ceremonial skirt | 0.50 | 0.4-0.8 | velvet,satin
+embroidered floor skirt | 0.45 | 0.4-0.8 | velvet,silk
+trained ritual skirt | 0.40 | 0.5-0.9 | velvet,satin

@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tie-dyed shirt | 0.80 | 0.1-0.3 | cotton,tie-dye
+peasant blouse | 0.70 | 0.1-0.3 | cotton
+woven halter | 0.65 | 0.1-0.3 | crochet
+embroidered tunic | 0.55 | 0.2-0.4 | cotton
+flowing kaftan top | 0.50 | 0.2-0.4 | cotton
+fringed vest top | 0.50 | 0.1-0.3 | suede,fringe
+folk-style blouse | 0.50 | 0.2-0.4 | cotton
+billowy peasant shirt | 0.55 | 0.2-0.4 | cotton
+ribbed crop | 0.45 | 0.1-0.3 | cotton,jersey
+bell-sleeve top | 0.55 | 0.2-0.4 | cotton

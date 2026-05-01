@@ -1,0 +1,21 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+parasol | 0.50 | 0.2-0.6 | cotton,silk
+chatelaine watch | 0.40 | 0.2-0.6 | metal
+lace handkerchief | 0.40 | 0.2-0.6 | lace
+
+# mid-casual
+cameo brooch | 0.55 | 0.3-0.7 | metal
+locket pendant | 0.50 | 0.3-0.7 | metal
+short kid gloves | 0.55 | 0.3-0.7 | leather
+hatpin set | 0.45 | 0.2-0.6 | metal
+
+# formal
+choker pearl collar | 0.55 | 0.6-0.9 | metal
+opera-length gloves | 0.55 | 0.6-0.9 | satin,kid
+diamond stomacher | 0.30 | 0.7-0.9 | metal
+ostrich feather fan | 0.40 | 0.6-0.9 | feather
+beaded reticule chain | 0.35 | 0.5-0.8 | metal
+silk hosiery | 0.50 | 0.4-0.8 | silk

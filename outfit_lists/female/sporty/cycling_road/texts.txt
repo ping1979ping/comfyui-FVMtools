@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PELOTON" | 0.3 | top,headwear | bold block letters
+"GRAN FONDO" | 0.2 | top | classic serif
+"WATTS" | 0.2 | top | tech mono
+"KOM" | 0.2 | top,headwear | bold block letters
+"ALLEZ" | 0.2 | top | racing italic
+"CHASING DROPS" | 0.15 | top | racing italic
+"BREAKAWAY" | 0.2 | top | bold block letters
+"CADENCE" | 0.15 | top | tech mono
+"FULL GAS" | 0.2 | top | impact font
+"CLIMB BABY" | 0.15 | top,headwear | racing italic

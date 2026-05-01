@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+"LESS" | 0.08 | top | minimal serif
+"QUIET" | 0.06 | top | minimal serif
+"MUTED" | 0.05 | accessories | clean sans-serif
+"LINE" | 0.05 | accessories | thin sans-serif
+"FORM" | 0.05 | top | minimal serif

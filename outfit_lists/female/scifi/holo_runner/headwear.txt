@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aerodynamic racing helmet with HUD visor | 0.55 | 0.1-0.6 | plastic,mesh
+chrome racing band with sweat-wick | 0.50 | 0.0-0.4 | spandex,metal
+hooded mesh balaclava | 0.45 | 0.0-0.4 | mesh,spandex
+augmented reality goggles with chrome rim | 0.55 | 0.0-0.6 | metal,plastic

@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"LONDON" | 0.5 | top,headwear | bold block letters
+"OI" | 0.3 | top | gothic font
+"ENDZ" | 0.3 | top | graffiti style
+"CITY OF GOLD" | 0.3 | top,outerwear | distressed print
+"UK" | 0.4 | top,headwear | bold condensed
+"GRIME" | 0.4 | top | gothic font
+"100" | 0.3 | top | bold block letters
+"REAL" | 0.3 | top | stencil font
+"E1" | 0.3 | top,headwear | bold condensed

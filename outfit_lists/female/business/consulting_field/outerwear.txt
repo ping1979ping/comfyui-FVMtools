@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+travel blazer | 0.85 | 0.6-0.9 | polyester,wool
+packable trench coat | 0.55 | 0.5-0.8 | polyester,nylon
+lightweight overcoat | 0.45 | 0.6-0.9 | wool,polyester
+soft-shoulder blazer | 0.65 | 0.6-0.9 | wool,polyester
+wrinkle-free jacket | 0.55 | 0.5-0.8 | polyester
+fine-knit cardigan | 0.50 | 0.5-0.8 | wool,cashmere
+short pea coat | 0.40 | 0.6-0.8 | wool

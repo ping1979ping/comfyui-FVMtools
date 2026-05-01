@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+high-slit skirt | 0.55 | 0.2-0.5 | satin,velvet
+sleek midi skirt | 0.55 | 0.2-0.5 | satin,velvet
+form-fitting trousers | 0.45 | 0.2-0.5 | satin
+
+# formal
+floor-length gown skirt | 0.65 | 0.5-0.9 | satin,velvet
+mermaid skirt | 0.55 | 0.6-1.0 | satin,silk
+trained evening skirt | 0.55 | 0.6-1.0 | satin,velvet
+fishtail gown skirt | 0.50 | 0.6-1.0 | satin,silk
+high-slit ball skirt | 0.50 | 0.6-1.0 | satin,velvet
+draped column skirt | 0.45 | 0.5-0.9 | satin,silk

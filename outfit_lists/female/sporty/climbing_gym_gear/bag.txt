@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rope bag | 0.55 | 0.0-0.2 | nylon,polyester
+crag backpack | 0.65 | 0.0-0.2 | nylon,polyester
+gear haul duffel | 0.50 | 0.0-0.2 | nylon,polyester
+small approach pack | 0.45 | 0.0-0.2 | nylon,polyester
+boulder bucket bag | 0.35 | 0.0-0.2 | nylon,polyester
+hip pack | 0.40 | 0.0-0.2 | nylon,polyester
+gym tote | 0.30 | 0.0-0.2 | cotton_blend,nylon
+shoe pouch | 0.30 | 0.0-0.2 | nylon,polyester

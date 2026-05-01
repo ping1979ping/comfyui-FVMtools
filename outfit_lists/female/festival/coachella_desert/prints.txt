@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+paisley pattern | 0.55 | top,bottom | 0.1-0.4
+tie-dye wash | 0.50 | top,bottom | 0.1-0.3
+ethnic embroidery | 0.45 | top,outerwear | 0.1-0.4
+fringe trim | 0.45 | top,outerwear,bag | 0.1-0.3
+bohemian floral | 0.50 | top,bottom | 0.1-0.3
+faded sunset gradient | 0.35 | top | 0.1-0.3
+beaded detail | 0.35 | top,accessories | 0.1-0.3
+mandala motif | 0.30 | top,bottom | 0.1-0.3
+tribal stripe | 0.35 | top,bottom | 0.1-0.3
+distressed wash | 0.45 | bottom,outerwear | 0.1-0.3
+turquoise stone embellishment | 0.30 | accessories,bag | 0.1-0.3
+sun rays motif | 0.30 | top | 0.1-0.3

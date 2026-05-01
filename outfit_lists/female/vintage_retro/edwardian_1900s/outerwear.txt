@@ -1,0 +1,17 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+walking jacket | 0.50 | 0.2-0.5 | wool,tweed
+duster traveling coat | 0.45 | 0.1-0.4 | linen,cotton
+
+# mid-casual
+tailored bolero | 0.50 | 0.3-0.7 | wool,velvet
+fitted day jacket | 0.55 | 0.3-0.7 | wool,tweed
+edwardian cape | 0.40 | 0.3-0.7 | wool,velvet
+
+# formal
+opera cloak | 0.50 | 0.6-0.9 | velvet,satin
+fur-trimmed mantle | 0.40 | 0.6-0.9 | velvet,faux_fur
+embroidered evening wrap | 0.45 | 0.5-0.9 | silk,velvet
+beaded reception jacket | 0.40 | 0.6-0.9 | sequin,silk

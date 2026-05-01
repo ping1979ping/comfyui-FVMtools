@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+block-heel sandals | 0.65 | 0.3-0.5 | leather,suede
+strappy flats | 0.55 | 0.3-0.5 | leather,suede
+white sneakers | 0.70 | 0.2-0.4 | canvas,leather
+mule slides | 0.50 | 0.3-0.5 | leather,suede
+espadrilles | 0.50 | 0.2-0.4 | canvas,jute
+kitten-heel pumps | 0.40 | 0.4-0.6 | leather,suede
+pointed flats | 0.45 | 0.3-0.5 | leather,suede
+ankle-strap sandals | 0.45 | 0.3-0.5 | leather,suede
+slip-on loafers | 0.50 | 0.3-0.5 | leather,suede
+slingback flats | 0.40 | 0.4-0.6 | leather,suede

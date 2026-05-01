@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fringed shawl | 0.55 | 0.0-0.3 | cotton,wool
+oversized cardigan | 0.50 | 0.0-0.3 | wool,cotton
+draped wrap | 0.45 | 0.0-0.3 | cotton,silk
+
+# mid-casual
+hooded cape | 0.65 | 0.2-0.5 | velvet,wool
+embroidered jacket | 0.45 | 0.2-0.5 | velvet,satin
+crystal-trimmed shawl | 0.40 | 0.2-0.5 | velvet,silk
+
+# formal
+witch's cloak | 0.65 | 0.4-0.8 | velvet,wool
+ritual mantle | 0.55 | 0.5-0.9 | velvet,satin
+floor-length hooded robe | 0.55 | 0.5-0.9 | velvet,silk
+ornate ceremonial cape | 0.45 | 0.5-0.9 | velvet,satin

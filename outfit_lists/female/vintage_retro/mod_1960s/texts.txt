@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"MOD" | 0.25 | top | mod typography
+"TWIGGY" | 0.2 | top | mod typography
+"GO-GO" | 0.2 | top | mod typography
+"SWINGING SIXTIES" | 0.15 | top | mod typography
+"YE-YE" | 0.15 | top | mod typography
+"BIBA" | 0.15 | top | mod typography
+"CARNABY" | 0.15 | top | mod typography
+"1968" | 0.2 | top | mod typography
+"BEAT" | 0.15 | top | mod typography

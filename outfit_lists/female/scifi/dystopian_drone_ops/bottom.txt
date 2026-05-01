@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+armored combat pants with knee plates | 0.85 | 0.2-0.7 | kevlar,neoprene
+recon trousers with thigh holsters | 0.80 | 0.2-0.7 | kevlar,nylon
+tactical cargo pants with mag pouches | 0.75 | 0.1-0.6 | nylon,kevlar
+fitted utility shorts with thigh strap | 0.55 | 0.0-0.4 | nylon,mesh
+distressed cargo joggers with patches | 0.55 | 0.0-0.4 | nylon,neoprene
+fitted recon leggings with shin guards | 0.65 | 0.1-0.5 | spandex,kevlar
+ripped surplus pants with belt loops | 0.50 | 0.0-0.3 | nylon,mesh
+zip-leg pressurized combat trousers | 0.60 | 0.2-0.6 | kevlar,carbon_fiber
+patched salvage trousers with chain belt | 0.55 | 0.0-0.4 | nylon,leather
+fitted thermal liner pants with utility loops | 0.60 | 0.1-0.5 | spandex,neoprene

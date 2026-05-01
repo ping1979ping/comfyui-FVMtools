@@ -1,0 +1,8 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"ASTRO" | 0.25 | top,outerwear | mod retro font
+"GALAXY-A" | 0.20 | top | space-age font
+"ROCKET" | 0.20 | top | atomic-era font
+"SPUTNIK" | 0.15 | top,outerwear | retro stencil
+"MOON BASE" | 0.20 | top,outerwear | sixties block font
+"COSMOS" | 0.15 | top | flowing retro script

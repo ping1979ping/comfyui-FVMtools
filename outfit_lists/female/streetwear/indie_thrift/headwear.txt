@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+beret | 0.6 | 0.1-0.3 | wool blend
+wide-brim hat | 0.5 | 0.1-0.3 | wool blend,canvas
+beanie | 0.5 | 0.0-0.2 | cotton,fleece
+silk hair scarf | 0.5 | 0.1-0.3 | satin,polyester
+worn-in cap | 0.4 | 0.0-0.3 | cotton,canvas

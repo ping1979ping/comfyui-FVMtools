@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waisted jeans | 0.80 | 0.2-0.4 | denim
+flowy midi skirt | 0.60 | 0.3-0.5 | rayon,chiffon
+pleated mini skirt | 0.45 | 0.3-0.5 | cotton,polyester
+wide-leg trousers | 0.55 | 0.3-0.5 | rayon,linen
+paperbag waist pants | 0.45 | 0.3-0.5 | cotton,linen
+denim mini skirt | 0.50 | 0.2-0.4 | denim
+tailored shorts | 0.45 | 0.3-0.5 | cotton,linen
+A-line midi skirt | 0.50 | 0.3-0.5 | cotton,rayon
+cropped trousers | 0.50 | 0.3-0.5 | cotton,polyester
+linen pants | 0.45 | 0.3-0.5 | linen,cotton

@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+dark rose pattern | 0.50 | top,bottom | 0.2-0.6
+ribbon trim detail | 0.65 | top,bottom,outerwear | 0.1-0.6
+heart-shaped motif | 0.45 | top,accessories | 0.1-0.5
+bow detail | 0.55 | top,bottom,accessories | 0.1-0.6
+floral lace overlay | 0.45 | top,outerwear | 0.2-0.6
+crown emblem | 0.30 | top,accessories | 0.2-0.6
+key motif | 0.30 | top,accessories | 0.1-0.5
+strawberry print | 0.30 | top,bottom | 0.1-0.4
+crucifix charm motif | 0.25 | top,accessories | 0.1-0.5
+ornate baroque print | 0.40 | top,bottom | 0.3-0.7
+candy skull print | 0.30 | top | 0.1-0.4
+moon-and-bat print | 0.25 | top | 0.1-0.4

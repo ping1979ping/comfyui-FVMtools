@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+high-waisted trousers | 0.50 | 0.2-0.5 | wool,cotton
+sailor pants | 0.35 | 0.1-0.4 | cotton,wool
+gored skirt | 0.45 | 0.2-0.5 | wool,rayon
+
+# mid-casual
+A-line midi skirt | 0.55 | 0.3-0.7 | wool,rayon
+tea-length swing skirt | 0.55 | 0.3-0.7 | rayon,cotton
+pleated trousers | 0.45 | 0.3-0.6 | wool,gabardine
+fitted pencil skirt | 0.50 | 0.4-0.8 | wool,rayon
+
+# formal
+tailored skirt suit bottom | 0.45 | 0.5-0.8 | wool,gabardine
+evening column skirt | 0.45 | 0.5-0.9 | satin,velvet
+draped midi skirt | 0.45 | 0.4-0.8 | rayon,satin

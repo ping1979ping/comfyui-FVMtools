@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"OFFICE" | 0.10 | accessories | clean sans-serif
+"WORK MODE" | 0.08 | accessories | minimal serif
+"NYC" | 0.10 | accessories | bold sans-serif
+"FOCUS" | 0.08 | accessories | minimal serif
+"MONDAY" | 0.06 | top | playful handwriting
+"BOSS LADY" | 0.08 | accessories | engraved serif

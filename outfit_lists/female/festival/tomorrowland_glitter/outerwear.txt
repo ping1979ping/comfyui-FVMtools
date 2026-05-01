@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+faux fluffy coat | 0.55 | 0.1-0.4 | faux_fur
+metallic bomber | 0.55 | 0.1-0.4 | satin
+holographic jacket | 0.50 | 0.1-0.4 | plastic
+sparkly cardigan | 0.45 | 0.1-0.4 | sequin
+sheer cape | 0.45 | 0.1-0.4 | mesh
+mirrored vest | 0.40 | 0.1-0.4 | plastic
+chainmail shrug | 0.40 | 0.1-0.4 | metal
+sequin-trim blazer | 0.45 | 0.2-0.4 | satin
+shimmer kimono | 0.45 | 0.1-0.4 | satin,mesh
+fuzzy crop jacket | 0.45 | 0.1-0.4 | faux_fur

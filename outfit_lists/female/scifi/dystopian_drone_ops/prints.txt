@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+digital camouflage pattern | 0.65 | top,bottom,outerwear | 0.1-0.6
+hazard stripe accent | 0.55 | top,outerwear | 0.0-0.5
+unit insignia patch | 0.55 | top,outerwear | 0.2-0.6
+soot-streak weathering | 0.50 | top,bottom,outerwear | 0.0-0.4
+torn-flag motif | 0.40 | top,outerwear | 0.0-0.5
+hex tech grid | 0.40 | top,bottom | 0.1-0.5
+warning glyph print | 0.45 | top,outerwear | 0.0-0.5
+ration crate stencil | 0.35 | top,bottom | 0.0-0.4
+faded radiation symbol | 0.35 | top,outerwear | 0.0-0.4
+distressed paint splatter | 0.40 | top,bottom | 0.0-0.4

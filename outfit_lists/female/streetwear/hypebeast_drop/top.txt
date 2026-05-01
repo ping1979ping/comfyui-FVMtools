@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+boxy logo tee | 0.9 | 0.1-0.3 | cotton,jersey
+oversized hoodie | 0.9 | 0.1-0.3 | cotton,fleece
+collab sweatshirt | 0.8 | 0.1-0.3 | cotton,fleece
+limited drop tee | 0.8 | 0.1-0.3 | cotton,jersey
+boxy zip-up | 0.7 | 0.1-0.3 | cotton,fleece
+mock-neck longsleeve | 0.6 | 0.1-0.3 | jersey,polyester
+cropped logo hoodie | 0.6 | 0.1-0.3 | cotton,fleece
+oversized longsleeve | 0.6 | 0.1-0.3 | cotton,jersey
+boxy graphic crewneck | 0.6 | 0.1-0.3 | cotton,fleece
+sport-tech shirt | 0.5 | 0.1-0.3 | polyester,nylon

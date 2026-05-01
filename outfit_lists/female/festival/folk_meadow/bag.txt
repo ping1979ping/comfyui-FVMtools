@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+woven straw bag | 0.75 | 0.1-0.3 | cotton
+embroidered crossbody | 0.60 | 0.2-0.4 | cotton
+folk satchel | 0.55 | 0.2-0.4 | cotton,leather
+small folk pouch | 0.50 | 0.1-0.3 | leather
+flower-print tote | 0.50 | 0.1-0.3 | cotton
+ribbon-trim purse | 0.45 | 0.2-0.4 | satin
+mini wicker basket | 0.45 | 0.1-0.3 | cotton
+beaded clutch | 0.40 | 0.2-0.4 | satin

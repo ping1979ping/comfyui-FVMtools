@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+oversized brand logo | 0.8 | top,headwear,bag | 0.1-0.4
+collab artwork | 0.7 | top,outerwear | 0.1-0.3
+all-over monogram | 0.6 | top,bottom,bag | 0.1-0.4
+holographic detail | 0.5 | top,bag,accessories | 0.1-0.3
+camo pattern | 0.4 | top,bottom,outerwear,bag | 0.1-0.3
+limited edition number | 0.5 | top,outerwear | 0.1-0.3
+reflective tape | 0.5 | outerwear,bag | 0.1-0.3
+embroidered crest | 0.5 | top,headwear,outerwear | 0.1-0.4
+graphic mascot | 0.4 | top | 0.1-0.3
+chain detail | 0.4 | bag,accessories | 0.1-0.3
+flame motif | 0.4 | top,outerwear | 0.0-0.3

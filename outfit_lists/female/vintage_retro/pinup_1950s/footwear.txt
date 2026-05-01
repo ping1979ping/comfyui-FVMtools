@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+canvas sneakers | 0.45 | 0.1-0.3 | canvas
+ballet flats | 0.50 | 0.1-0.4 | leather,suede
+saddle oxfords | 0.45 | 0.1-0.4 | leather
+
+# mid-casual
+Mary Jane heels | 0.55 | 0.3-0.7 | leather,satin
+kitten heels | 0.55 | 0.3-0.7 | leather,suede
+peep-toe pumps | 0.55 | 0.3-0.7 | leather,satin
+slingback heels | 0.50 | 0.3-0.7 | leather
+
+# formal
+classic stiletto pumps | 0.55 | 0.5-0.9 | leather,suede
+satin evening shoes | 0.45 | 0.5-0.9 | satin
+sequined heels | 0.40 | 0.5-0.9 | sequin

@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+weightlifting belt | 0.65 | 0.0-0.1 | leatherette,nylon
+wrist wraps | 0.70 | 0.0-0.1 | cotton_blend,spandex
+training gloves | 0.55 | 0.0-0.1 | leatherette,spandex
+knee sleeves | 0.55 | 0.0-0.1 | spandex,nylon
+hand grips | 0.50 | 0.0-0.1 | leatherette
+fitness tracker | 0.65 | 0.0-0.2 | rubber,plastic
+chalk bag | 0.50 | 0.0-0.1 | nylon,cotton_blend
+elbow sleeves | 0.40 | 0.0-0.1 | spandex,nylon
+hip-thrust pad | 0.30 | 0.0-0.1 | foam,nylon
+hair scrunchie | 0.65 | 0.0-0.1 | spandex,cotton_blend
+finger tape | 0.40 | 0.0-0.1 | cotton_blend

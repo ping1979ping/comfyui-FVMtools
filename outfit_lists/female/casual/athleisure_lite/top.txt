@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ribbed sports tank | 0.80 | 0.1-0.3 | spandex,jersey
+seamless workout top | 0.65 | 0.1-0.3 | spandex,nylon
+cropped athletic tee | 0.70 | 0.1-0.3 | polyester,jersey
+fitted longline tank | 0.60 | 0.1-0.3 | spandex,polyester
+athletic crop tee | 0.65 | 0.1-0.3 | polyester,jersey
+loose performance tee | 0.55 | 0.1-0.3 | polyester,mesh
+mock-neck active top | 0.50 | 0.1-0.3 | spandex,nylon
+quarter-zip pullover | 0.55 | 0.1-0.3 | polyester,fleece
+sports bra layer | 0.50 | 0.1-0.3 | spandex,nylon
+oversized active tee | 0.55 | 0.1-0.3 | cotton,polyester
+ribbed cropped tank | 0.55 | 0.1-0.3 | spandex,jersey

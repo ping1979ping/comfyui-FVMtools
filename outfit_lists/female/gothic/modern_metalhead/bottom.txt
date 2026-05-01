@@ -1,0 +1,16 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+ripped jeans | 0.70 | 0.0-0.3 | denim
+black skinny jeans | 0.65 | 0.0-0.4 | denim
+distressed shorts | 0.40 | 0.0-0.3 | denim
+cargo pants | 0.50 | 0.0-0.3 | cotton
+
+# mid-casual
+leather pants | 0.65 | 0.1-0.4 | leather,faux_leather
+studded shorts | 0.40 | 0.1-0.4 | denim,leather
+chained jeans | 0.50 | 0.1-0.4 | denim
+plaid mini skirt | 0.40 | 0.1-0.4 | cotton
+buckled trousers | 0.45 | 0.1-0.4 | leather,faux_leather
+mesh-overlay leggings | 0.40 | 0.1-0.4 | mesh,cotton

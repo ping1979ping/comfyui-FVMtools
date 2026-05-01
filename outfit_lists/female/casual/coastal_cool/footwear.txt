@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+leather slide sandals | 0.70 | 0.2-0.4 | leather,suede
+canvas espadrilles | 0.60 | 0.2-0.4 | canvas,jute
+boat-style shoes | 0.45 | 0.2-0.4 | suede,leather
+flat thong sandals | 0.55 | 0.1-0.3 | leather,rubber
+white sneakers | 0.65 | 0.2-0.4 | canvas,leather
+woven raffia sandals | 0.45 | 0.2-0.4 | raffia,leather
+flip-flops | 0.55 | 0.0-0.2 | rubber,foam
+ankle-tie sandals | 0.50 | 0.2-0.4 | leather,suede
+braided leather sandals | 0.45 | 0.2-0.4 | leather,suede
+canvas sneakers | 0.55 | 0.1-0.3 | canvas,cotton

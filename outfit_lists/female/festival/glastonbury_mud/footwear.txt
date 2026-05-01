@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+festival wellies | 0.85 | 0.1-0.3 | rubber
+muddy hiking boots | 0.65 | 0.1-0.3 | leather
+combat boots | 0.65 | 0.1-0.3 | leather
+work boots | 0.55 | 0.1-0.3 | leather
+chunky trainers | 0.55 | 0.1-0.3 | cotton,rubber
+duck boots | 0.45 | 0.1-0.3 | leather,rubber
+ankle wellies | 0.50 | 0.1-0.3 | rubber
+worn dr martens | 0.55 | 0.1-0.3 | leather
+canvas high-tops | 0.45 | 0.1-0.3 | cotton,rubber

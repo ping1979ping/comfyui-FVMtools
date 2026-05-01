@@ -1,0 +1,13 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+cable knit texture | 0.65 | top,outerwear,headwear | 0.2-0.5
+fair isle pattern | 0.50 | top,outerwear,headwear | 0.2-0.5
+nordic snowflake motif | 0.40 | top,outerwear | 0.2-0.5
+ribbed knit texture | 0.55 | top,bottom,outerwear | 0.2-0.5
+chunky waffle texture | 0.40 | top,outerwear | 0.2-0.4
+plaid pattern | 0.50 | top,outerwear,bottom | 0.2-0.5
+heather marl | 0.50 | top,outerwear | 0.1-0.4
+two-tone color block | 0.35 | top,outerwear | 0.1-0.4
+striped pattern | 0.40 | top | 0.1-0.5
+buffalo check | 0.35 | top,outerwear | 0.1-0.4

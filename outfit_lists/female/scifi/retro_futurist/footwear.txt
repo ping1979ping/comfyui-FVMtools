@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knee-high go-go boots with chrome heel | 0.75 | 0.2-0.6 | leather,metal_mesh
+fitted chrome-trimmed mary janes | 0.55 | 0.4-0.8 | leather,satin
+white space-age platform boots | 0.65 | 0.2-0.6 | leather,rubber
+chrome ankle boots with cone heel | 0.55 | 0.4-0.8 | leather,metal_mesh
+mod kitten heels with chrome buckle | 0.50 | 0.4-0.8 | leather,satin
+transparent slip-on flats | 0.45 | 0.3-0.7 | plastic,leather
+calf-high lace-up boots with chrome eyelets | 0.50 | 0.3-0.7 | leather,nylon
+chrome-toe go-go boots with side zip | 0.60 | 0.2-0.6 | leather,metal_mesh
+white space-age oxfords | 0.50 | 0.4-0.8 | leather,satin
+chunky platform sandals with chrome buckle | 0.45 | 0.2-0.6 | leather,rubber

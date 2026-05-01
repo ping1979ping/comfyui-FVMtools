@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"DESERT" | 0.25 | top | dusty serif
+"WILDFLOWER" | 0.20 | top | boho lettering
+"NOMAD" | 0.20 | top | weathered font
+"GOLDEN HOUR" | 0.20 | top | flowing cursive
+"FREE" | 0.25 | top,headwear | handwritten script
+"WANDER" | 0.20 | top | sun-bleached font
+"OASIS" | 0.15 | top | desert script
+"SUNCHILD" | 0.20 | top | warm cursive

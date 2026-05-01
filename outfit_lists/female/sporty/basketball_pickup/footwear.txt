@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-top basketball shoes | 0.85 | 0.0-0.2 | leatherette,rubber
+mid-cut hoop shoes | 0.75 | 0.0-0.2 | leatherette,rubber
+low-top court shoes | 0.65 | 0.0-0.2 | leatherette,rubber
+classic retro hoops | 0.55 | 0.0-0.2 | leatherette,rubber
+signature player shoes | 0.50 | 0.0-0.2 | leatherette,rubber
+chunky-sole sneakers | 0.45 | 0.0-0.2 | leatherette,rubber
+crew-length basketball socks | 0.85 | 0.0-0.2 | cotton_blend,spandex
+ankle-support kicks | 0.40 | 0.0-0.2 | leatherette,rubber

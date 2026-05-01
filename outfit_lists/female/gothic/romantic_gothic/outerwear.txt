@@ -1,0 +1,18 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flowing shawl | 0.50 | 0.2-0.5 | silk,lace
+soft shrug | 0.40 | 0.2-0.5 | lace,satin
+draped wrap | 0.40 | 0.2-0.5 | silk
+
+# mid-casual
+hooded cape | 0.55 | 0.3-0.6 | velvet,satin
+embroidered jacket | 0.45 | 0.3-0.7 | satin,velvet
+short bolero | 0.40 | 0.3-0.6 | velvet,lace
+
+# formal
+ballroom cape | 0.55 | 0.6-1.0 | velvet,satin
+floor-length cloak | 0.50 | 0.6-1.0 | velvet,satin
+beaded coat | 0.40 | 0.6-1.0 | satin,silk
+laced overcoat | 0.40 | 0.5-0.9 | velvet,lace

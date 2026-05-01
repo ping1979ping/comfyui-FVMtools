@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"MILANO" | 0.5 | top,headwear | elegant serif
+"AMORE" | 0.4 | top | italic script
+"ITALIA" | 0.4 | top,outerwear | bold serif
+"DOLCE" | 0.3 | top | italic script
+"ROMA" | 0.3 | top,headwear | elegant serif
+"VOGUE" | 0.3 | top | bold serif
+"ELEGANZA" | 0.3 | top | italic script
+"CINQUE TERRE" | 0.3 | top | elegant serif

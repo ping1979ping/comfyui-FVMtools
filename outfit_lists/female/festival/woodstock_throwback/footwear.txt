@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+groovy sandals | 0.70 | 0.1-0.3 | leather
+soft moccasins | 0.55 | 0.1-0.3 | suede
+platform clogs | 0.50 | 0.1-0.3 | leather
+fringed booties | 0.45 | 0.1-0.3 | suede,fringe
+flat thong sandals | 0.55 | 0.1-0.3 | leather
+laced gladiators | 0.45 | 0.1-0.3 | leather
+canvas sneakers | 0.40 | 0.1-0.3 | cotton,rubber
+go-go boots | 0.45 | 0.2-0.4 | leather
+strappy flats | 0.45 | 0.1-0.3 | leather

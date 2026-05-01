@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+delicate floral print | 0.75 | top,bottom | 0.1-0.4
+folk embroidery | 0.70 | top,outerwear | 0.2-0.4
+gingham check | 0.55 | top,bottom | 0.1-0.4
+small ditsy print | 0.55 | top,bottom | 0.1-0.4
+prairie pattern | 0.50 | top,bottom | 0.1-0.4
+ribbon trim | 0.50 | top,accessories | 0.1-0.4
+lace overlay | 0.45 | top | 0.2-0.4
+ruffled detail | 0.45 | top,bottom | 0.2-0.4
+ethnic embroidery | 0.45 | top,outerwear,bag | 0.2-0.4
+pressed flower motif | 0.40 | top,accessories | 0.1-0.4
+sweet pastel gradient | 0.40 | top | 0.1-0.4

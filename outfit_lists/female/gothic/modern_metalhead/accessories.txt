@@ -1,0 +1,17 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+spike bracelet | 0.65 | 0.0-0.3 | metal,leather
+studded belt | 0.70 | 0.0-0.3 | leather,faux_leather
+chunky chain necklace | 0.55 | 0.0-0.3 | metal
+bullet-belt | 0.40 | 0.0-0.3 | leather,metal
+
+# mid-casual
+fingerless gloves | 0.50 | 0.1-0.4 | leather,faux_leather
+upside-down cross pendant | 0.45 | 0.0-0.3 | metal
+wide stack rings | 0.55 | 0.0-0.3 | metal
+spiked choker | 0.55 | 0.1-0.4 | leather,metal
+arm warmers | 0.40 | 0.0-0.3 | cotton,mesh
+chain wallet | 0.35 | 0.0-0.3 | metal,leather
+ear cuffs | 0.40 | 0.1-0.4 | metal

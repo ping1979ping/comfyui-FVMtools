@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized chrome circle earrings | 0.60 | 0.3-0.8 | metal
+chrome-belt with geometric buckle | 0.55 | 0.2-0.7 | leather,metal_mesh
+opera-length chrome gloves | 0.45 | 0.5-0.9 | satin,metal_mesh
+oversized chrome bangle stack | 0.50 | 0.3-0.8 | metal
+chrome choker with geometric pendant | 0.50 | 0.3-0.8 | metal
+chrome-frame cat-eye sunglasses | 0.55 | 0.2-0.7 | metal,plastic
+brooch with floating sphere accent | 0.40 | 0.4-0.8 | metal,plastic
+chrome bracelet stack on forearm | 0.45 | 0.3-0.7 | metal
+satin neck scarf with chrome ring | 0.40 | 0.4-0.8 | silk,metal
+geometric chrome ring set | 0.40 | 0.2-0.7 | metal

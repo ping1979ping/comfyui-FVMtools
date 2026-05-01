@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mourning embroidery | 0.45 | top,outerwear | 0.4-0.8
+floral lament motif | 0.35 | top,bottom | 0.4-0.8
+weeping willow embroidery | 0.30 | top,outerwear | 0.5-0.9
+funeral cross emblem | 0.30 | top,accessories | 0.4-0.8
+laced trim detail | 0.50 | top,bottom,outerwear | 0.4-0.8
+beaded jet pattern | 0.35 | top,bag | 0.5-0.9
+hair-locket motif | 0.20 | accessories | 0.5-0.9
+swirling damask print | 0.40 | top,bottom | 0.4-0.8
+ornate scrollwork | 0.35 | top,outerwear | 0.5-0.9
+ribbon trim detail | 0.45 | top,bottom | 0.3-0.7
+pearl trim detail | 0.30 | top,outerwear | 0.5-0.9
+brocade pattern | 0.30 | top,bottom | 0.5-0.9

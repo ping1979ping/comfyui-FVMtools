@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pleated tennis polo | 0.75 | 0.1-0.3 | pique_knit,polyester
+sleeveless tennis dress | 0.65 | 0.1-0.3 | polyester,spandex
+racerback tennis tank | 0.70 | 0.0-0.2 | polyester,jersey_knit
+cap-sleeve tennis tee | 0.60 | 0.0-0.2 | polyester,jersey_knit
+fitted court top | 0.55 | 0.0-0.2 | spandex,polyester
+ruched-side tank | 0.45 | 0.0-0.2 | spandex,polyester
+collared performance polo | 0.55 | 0.1-0.3 | pique_knit,polyester
+v-neck tennis shirt | 0.50 | 0.0-0.2 | polyester,jersey_knit
+short-sleeve match shirt | 0.65 | 0.0-0.2 | polyester,jersey_knit
+high-neck court tank | 0.40 | 0.0-0.2 | polyester,spandex
+ace performance top | 0.50 | 0.0-0.2 | polyester,jersey_knit

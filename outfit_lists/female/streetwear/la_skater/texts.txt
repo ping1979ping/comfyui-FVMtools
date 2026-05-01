@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"LA" | 0.5 | top,headwear | bold block letters
+"VENICE" | 0.4 | top | distressed print
+"WEST COAST" | 0.4 | top,outerwear | varsity font
+"SKATE OR DIE" | 0.3 | top | graffiti style
+"PALMS" | 0.3 | top | marker style
+"SUNSET" | 0.3 | top | distressed print
+"HOLLYWOOD" | 0.3 | top | varsity font
+"FREE" | 0.3 | top | stencil font
+"WAVES" | 0.3 | top | marker style
+"CALI" | 0.4 | top,headwear | bold block letters

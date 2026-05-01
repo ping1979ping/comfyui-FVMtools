@@ -1,0 +1,14 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+victory rolls bandana | 0.45 | 0.1-0.4 | cotton
+snood net | 0.35 | 0.1-0.4 | rayon
+
+# mid-casual
+fascinator | 0.50 | 0.4-0.8 | satin,velvet
+tilt hat | 0.50 | 0.3-0.7 | wool,velvet
+
+# formal
+pillbox hat | 0.55 | 0.5-0.9 | wool,velvet
+veiled cocktail hat | 0.45 | 0.5-0.9 | velvet,satin

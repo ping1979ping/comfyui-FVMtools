@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+drone control case with strap | 0.55 | 0.1-0.6 | nylon,kevlar
+recon backpack with helmet clip | 0.60 | 0.1-0.5 | nylon,kevlar
+tactical sling bag with mag loops | 0.65 | 0.0-0.5 | nylon,neoprene
+distressed messenger with patches | 0.50 | 0.0-0.4 | nylon,leather
+hip pouch with chrome buckle | 0.55 | 0.0-0.5 | nylon,leather
+shoulder duffel with reinforced strap | 0.45 | 0.1-0.5 | nylon,kevlar
+salvage scrap satchel with chain strap | 0.45 | 0.0-0.4 | nylon,leather
+chest rig pouch set with mag loops | 0.55 | 0.1-0.5 | nylon,kevlar

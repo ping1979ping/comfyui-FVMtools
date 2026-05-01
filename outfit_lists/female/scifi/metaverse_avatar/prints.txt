@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+glitch pixel pattern | 0.60 | top,bottom | 0.0-0.5
+voxel-block geometric print | 0.55 | top,bottom,outerwear | 0.0-0.5
+holographic color-shift wash | 0.55 | top,bottom,outerwear | 0.1-0.5
+floating particle effect | 0.50 | top,outerwear | 0.0-0.5
+emoji burst pattern | 0.45 | top | 0.0-0.4
+avatar tag motif | 0.50 | top,outerwear | 0.0-0.5
+neon outline character print | 0.45 | top | 0.0-0.4
+sacred-geometry holo print | 0.35 | top,bottom | 0.1-0.5
+loading-bar progress motif | 0.40 | top | 0.0-0.4
+inventory-grid checker print | 0.40 | top,bottom | 0.0-0.4

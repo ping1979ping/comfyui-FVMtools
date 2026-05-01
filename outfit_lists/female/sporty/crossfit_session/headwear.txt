@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+trucker cap | 0.55 | 0.0-0.1 | cotton_blend,mesh
+elastic sport headband | 0.65 | 0.0-0.1 | spandex,polyester
+beanie | 0.30 | 0.0-0.2 | cotton_blend
+worn snapback | 0.45 | 0.0-0.1 | cotton_blend,polyester

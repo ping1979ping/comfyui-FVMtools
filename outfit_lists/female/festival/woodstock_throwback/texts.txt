@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PEACE & LOVE" | 0.30 | top | hippie script
+"GROOVY" | 0.25 | top | psychedelic font
+"FLOWER POWER" | 0.25 | top | retro bubble
+"FAR OUT" | 0.20 | top | groovy font
+"WOODSTOCK" | 0.20 | top | retro serif
+"MAKE LOVE" | 0.20 | top | handwritten script
+"HIPPIE" | 0.20 | top | bubbly font
+"SUNCHILD" | 0.20 | top,headwear | warm cursive
+"FREEDOM" | 0.20 | top | retro display

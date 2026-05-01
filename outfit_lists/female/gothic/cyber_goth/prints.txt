@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+holographic shimmer | 0.65 | top,bottom,outerwear,bag | 0.0-0.3
+neon glow detail | 0.60 | top,bottom,accessories | 0.0-0.3
+reflective stripe | 0.55 | top,bottom,outerwear | 0.0-0.3
+LED detail | 0.40 | top,outerwear,accessories | 0.0-0.3
+cyber circuit print | 0.45 | top,outerwear | 0.0-0.4
+strap detail | 0.55 | top,outerwear,bag | 0.0-0.4
+chain detail | 0.55 | accessories,bag | 0.0-0.4
+buckle detail | 0.55 | top,bottom,outerwear | 0.0-0.4
+glitch pattern | 0.40 | top,outerwear | 0.0-0.3
+biohazard symbol | 0.35 | top,accessories | 0.0-0.3
+metallic gradient | 0.45 | top,bottom | 0.0-0.4
+techno grid pattern | 0.40 | top,outerwear | 0.0-0.4

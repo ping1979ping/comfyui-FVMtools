@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flowy blouse | 0.75 | 0.3-0.6 | rayon,chiffon
+puff-sleeve top | 0.65 | 0.3-0.5 | cotton,rayon
+square-neck tee | 0.55 | 0.2-0.4 | cotton,jersey
+ribbed bodysuit | 0.50 | 0.2-0.4 | knit,jersey
+button-front camisole | 0.45 | 0.3-0.5 | rayon,satin
+peplum top | 0.40 | 0.3-0.5 | cotton,rayon
+boat-neck tee | 0.55 | 0.3-0.5 | cotton,jersey
+wrap-style top | 0.50 | 0.3-0.5 | rayon,jersey
+ruffled cami | 0.45 | 0.3-0.5 | rayon,chiffon
+embroidered tunic | 0.40 | 0.3-0.5 | cotton,rayon
+fitted ribbed tee | 0.60 | 0.2-0.4 | knit,cotton

@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"26.2" | 0.4 | top | bold block letters
+"FINISHER" | 0.3 | top | varsity font
+"BOSTON" | 0.25 | top,headwear | classic serif
+"PR OR ELSE" | 0.2 | top | impact font
+"BIB 1979" | 0.2 | top | jersey number font
+"PACE YOURSELF" | 0.2 | top | athletic italic
+"MILE 20" | 0.15 | top | bold block letters
+"RUN HAPPY" | 0.25 | top,headwear | rounded sans
+"NEGATIVE SPLITS" | 0.15 | top | tech mono

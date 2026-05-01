@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+aerodynamic racing sneakers with chrome blade | 0.80 | 0.0-0.4 | mesh,rubber
+holographic high-tops with reactive sole | 0.65 | 0.0-0.4 | holographic,rubber
+fitted parkour boots with grip pads | 0.60 | 0.0-0.4 | mesh,rubber
+chrome-trimmed running shoes with glow laces | 0.65 | 0.0-0.4 | mesh,rubber
+mid-cut speed sneakers with reflective panels | 0.55 | 0.0-0.4 | mesh,nylon
+slip-on aero shoes with chrome accent | 0.50 | 0.0-0.4 | mesh,rubber
+sleek ankle bootees with sock fit | 0.45 | 0.1-0.5 | spandex,rubber
+chrome-blade cleats with reactive heel | 0.55 | 0.1-0.5 | mesh,rubber
+fitted parkour high-tops with chrome lace lock | 0.55 | 0.0-0.4 | mesh,rubber
+streamlined trail shoes with reflective panels | 0.50 | 0.0-0.4 | mesh,nylon

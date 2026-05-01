@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WOD" | 0.3 | top,headwear | bold block letters
+"AMRAP" | 0.2 | top | tech mono
+"FRAN" | 0.2 | top | bold block letters
+"SQUAT MORE" | 0.25 | top | impact font
+"NO REP" | 0.2 | top | tech mono
+"BARBELL CLUB" | 0.25 | top,headwear | varsity font
+"PR DAY" | 0.2 | top | impact font
+"MURPH" | 0.2 | top | bold block letters
+"LIFT HEAVY" | 0.25 | top | impact font
+"GET AFTER IT" | 0.2 | top | bold block letters
+"BOX LIFE" | 0.2 | top,headwear | varsity font

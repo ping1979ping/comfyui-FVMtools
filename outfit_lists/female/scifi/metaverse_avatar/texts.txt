@@ -1,0 +1,9 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"AVATAR_07" | 0.30 | top,outerwear | digital handle font
+"NPC" | 0.20 | top | pixel font
+"LOG ON" | 0.20 | top,accessories | LCD font
+"AFK" | 0.20 | top | pixel font
+"USER01" | 0.20 | top,outerwear | gamer-tag font
+"MV-X" | 0.15 | top,accessories | chrome gradient
+"RESPAWN" | 0.15 | outerwear | glitchy pixel font

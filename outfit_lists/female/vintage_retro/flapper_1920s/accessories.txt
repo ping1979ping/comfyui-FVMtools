@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+long beaded necklace | 0.55 | 0.2-0.7 | metal
+pearl strand | 0.50 | 0.3-0.8 | metal
+
+# mid-casual
+art deco brooch | 0.45 | 0.4-0.8 | metal
+chandelier earrings | 0.45 | 0.4-0.9 | metal
+cigarette holder | 0.30 | 0.4-0.8 | metal
+beaded clutch chain | 0.40 | 0.4-0.7 | metal
+
+# formal
+diamond bracelet | 0.40 | 0.6-0.9 | metal
+feathered fan | 0.35 | 0.6-0.9 | feather,silk
+elbow-length gloves | 0.55 | 0.5-0.9 | satin,lace
+embroidered handkerchief | 0.30 | 0.4-0.7 | silk,lace

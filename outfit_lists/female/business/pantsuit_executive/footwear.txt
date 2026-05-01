@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic pumps | 0.90 | 0.7-1.0 | leather,suede
+pointed-toe heels | 0.85 | 0.7-1.0 | leather,suede
+slingback heels | 0.65 | 0.7-0.9 | leather,suede
+kitten heels | 0.55 | 0.7-0.9 | leather,suede
+block-heel pumps | 0.50 | 0.6-0.9 | leather,suede
+oxford shoes | 0.45 | 0.6-0.9 | leather
+loafers | 0.50 | 0.6-0.8 | leather,suede
+ankle-strap pumps | 0.55 | 0.6-0.9 | leather,suede
+pointed-toe flats | 0.30 | 0.6-0.8 | leather,suede
+high heel pumps | 0.85 | 0.7-1.0 | leather,suede

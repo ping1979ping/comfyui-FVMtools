@@ -1,0 +1,13 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+solid color | 0.85 | top,bottom,outerwear | 0.1-0.6
+thin stripe pattern | 0.45 | top,bottom | 0.2-0.5
+heather marl | 0.40 | top,outerwear | 0.1-0.4
+small dot pattern | 0.30 | top | 0.2-0.5
+pinstripe pattern | 0.25 | bottom,outerwear | 0.3-0.6
+two-tone color block | 0.30 | top,outerwear | 0.1-0.4
+faded wash | 0.50 | bottom | 0.2-0.4
+plaid pattern | 0.30 | top,outerwear | 0.2-0.5
+muted gingham | 0.25 | top | 0.2-0.5
+chambray texture | 0.30 | top,bottom | 0.2-0.5

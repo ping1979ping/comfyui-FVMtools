@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+stand golf bag | 0.85 | 0.1-0.3 | nylon,polyester
+cart golf bag | 0.55 | 0.1-0.3 | nylon,polyester
+ladies tour tote | 0.50 | 0.1-0.3 | leatherette,nylon
+shoe bag | 0.40 | 0.1-0.3 | nylon,polyester
+range pouch | 0.35 | 0.0-0.3 | nylon,polyester
+clubhouse weekender | 0.30 | 0.1-0.3 | leatherette,nylon
+crossbody course bag | 0.30 | 0.1-0.3 | nylon,polyester

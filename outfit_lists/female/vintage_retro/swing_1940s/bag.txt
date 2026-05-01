@@ -1,0 +1,16 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+canvas tote | 0.40 | 0.1-0.4 | cotton
+top-handle satchel | 0.45 | 0.2-0.5 | leather
+
+# mid-casual
+structured day bag | 0.55 | 0.3-0.7 | leather
+envelope clutch | 0.50 | 0.3-0.7 | leather,suede
+box purse | 0.45 | 0.3-0.7 | leather
+
+# formal
+beaded evening clutch | 0.50 | 0.5-0.9 | sequin,satin
+metallic mesh bag | 0.40 | 0.5-0.9 | metal
+satin evening pouch | 0.45 | 0.5-0.9 | satin,velvet

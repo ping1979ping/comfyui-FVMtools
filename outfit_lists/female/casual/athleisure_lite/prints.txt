@@ -1,0 +1,13 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+solid color | 0.85 | top,bottom,outerwear | 0.1-0.4
+two-tone color block | 0.55 | top,bottom,outerwear | 0.1-0.4
+side stripe accent | 0.55 | bottom,outerwear | 0.1-0.4
+brand logo | 0.55 | top,headwear,bag | 0.1-0.4
+ombre wash | 0.40 | top,bottom | 0.1-0.4
+camo pattern | 0.35 | bottom,outerwear,bag | 0.1-0.3
+neon color block | 0.40 | top,outerwear | 0.0-0.3
+heather marl | 0.45 | top,bottom | 0.1-0.4
+geometric pattern | 0.35 | top,bottom | 0.1-0.3
+striped pattern | 0.40 | top,outerwear | 0.1-0.4

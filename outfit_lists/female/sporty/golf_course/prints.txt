@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+country-club crest | 0.6 | top,headwear,bag | 0.1-0.3
+preppy stripes | 0.5 | top,bottom | 0.1-0.3
+argyle pattern | 0.5 | top,bottom | 0.1-0.3
+brand monogram | 0.5 | top,headwear,bag | 0.1-0.3
+fairway floral | 0.3 | top,bottom | 0.1-0.3
+gingham check | 0.3 | top,bottom | 0.1-0.3
+windowpane plaid | 0.3 | top,bottom | 0.1-0.3
+contrast collar tipping | 0.5 | top | 0.1-0.3
+tournament logo | 0.3 | top,headwear,bag | 0.1-0.3
+pastel color block | 0.3 | top,bottom | 0.1-0.3
+classic tartan | 0.2 | top,bottom | 0.1-0.3

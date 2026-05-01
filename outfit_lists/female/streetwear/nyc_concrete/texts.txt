@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NYC" | 0.5 | top,headwear | bold block letters
+"BROOKLYN" | 0.4 | top | varsity font
+"QUEENS" | 0.3 | top | gothic font
+"5TH AVE" | 0.3 | top | distressed print
+"EMPIRE" | 0.3 | top,outerwear | varsity font
+"BX" | 0.3 | top,headwear | bold condensed
+"UPTOWN" | 0.3 | top | graffiti style
+"CITY" | 0.4 | top | bold block letters
+"BOROUGH" | 0.3 | top,outerwear | gothic font

@@ -1,0 +1,19 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+oversized denim jacket | 0.50 | 0.1-0.4 | denim
+windbreaker shell | 0.45 | 0.1-0.4 | nylon
+varsity jacket | 0.40 | 0.1-0.4 | wool,leather
+puffer vest | 0.40 | 0.1-0.4 | nylon
+
+# mid-casual
+power-shoulder blazer | 0.60 | 0.4-0.8 | wool,polyester
+double-breasted coat | 0.50 | 0.4-0.8 | wool,cashmere
+trench coat | 0.50 | 0.3-0.7 | gabardine,cotton
+
+# formal
+faux fur coat | 0.45 | 0.5-0.9 | faux_fur
+sequined bolero | 0.40 | 0.5-0.9 | sequin
+metallic blazer | 0.45 | 0.5-0.9 | lurex,polyester
+opera coat | 0.35 | 0.6-0.9 | velvet

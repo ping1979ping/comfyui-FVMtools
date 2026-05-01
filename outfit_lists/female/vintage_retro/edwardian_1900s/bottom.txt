@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+walking skirt | 0.55 | 0.2-0.5 | cotton,linen
+practical day skirt | 0.50 | 0.2-0.5 | cotton,wool
+
+# mid-casual
+gored a-line skirt | 0.55 | 0.3-0.7 | wool,cotton
+trumpet skirt | 0.50 | 0.4-0.7 | wool,silk
+trained day skirt | 0.45 | 0.4-0.8 | wool,silk
+hobble skirt | 0.40 | 0.4-0.7 | silk,wool
+
+# formal
+trained evening skirt | 0.55 | 0.6-0.9 | silk,satin
+embroidered ball skirt | 0.50 | 0.6-0.9 | silk,satin
+beaded gown skirt | 0.45 | 0.6-0.9 | sequin,satin
+tea gown skirt | 0.45 | 0.5-0.8 | silk,chiffon

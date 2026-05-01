@@ -1,0 +1,14 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+breton stripe | 0.65 | top,bottom | 0.1-0.5
+nautical stripe | 0.55 | top,outerwear | 0.1-0.5
+tropical floral | 0.55 | top,bottom,bag | 0.1-0.5
+palm leaf motif | 0.45 | top,bag | 0.1-0.4
+seashell motif | 0.35 | top,bag,accessories | 0.1-0.4
+faded chambray wash | 0.45 | top,bottom | 0.2-0.4
+sun-bleached pastel | 0.40 | top,bottom | 0.1-0.4
+ocean blue tie-dye | 0.40 | top | 0.0-0.3
+gingham pattern | 0.35 | top,bottom | 0.2-0.5
+white-on-white embroidery | 0.40 | top | 0.2-0.5
+ditsy floral | 0.40 | top,bottom | 0.2-0.5

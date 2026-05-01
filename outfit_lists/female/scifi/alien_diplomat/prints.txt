@@ -1,0 +1,12 @@
+# format: print_name | probability | slot1,slot2 | formality_min-formality_max
+
+embroidered alien glyph pattern | 0.60 | top,bottom,outerwear | 0.5-1.0
+holographic color-shift pattern | 0.55 | top,outerwear | 0.5-0.9
+floating constellation embroidery | 0.50 | top,outerwear | 0.6-1.0
+chrome filigree print | 0.45 | top,outerwear | 0.5-0.9
+ambassador crest motif | 0.50 | top,outerwear | 0.6-1.0
+iridescent gradient wash | 0.50 | top,bottom | 0.5-0.9
+sacred geometry print | 0.40 | top,bottom | 0.5-0.9
+chrome-thread embroidered runes | 0.45 | top,outerwear | 0.5-1.0
+floating-orbit halo motif | 0.40 | top,outerwear | 0.5-0.9
+ceremonial laurel pattern | 0.40 | top,bottom | 0.5-0.9

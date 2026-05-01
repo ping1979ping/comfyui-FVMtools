@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"RAD" | 0.2 | top | bold sans
+"TOTALLY" | 0.2 | top | bubble script
+"NEON" | 0.2 | top | neon sign font
+"VHS" | 0.2 | top | digital font
+"1985" | 0.15 | top | bold sans
+"MALL RAT" | 0.15 | top | bubble script
+"MTV" | 0.2 | top | bold sans
+"VALLEY GIRL" | 0.15 | top | bubble script
+"AEROBICS" | 0.15 | top | bold sans
+"GNARLY" | 0.15 | top | bubble script
+"SYNTHWAVE" | 0.15 | top | digital font

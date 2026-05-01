@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+box gym logo | 0.6 | top,headwear,bag | 0.0-0.2
+barbell graphic | 0.4 | top | 0.0-0.2
+wod name graphic | 0.4 | top | 0.0-0.2
+flag patch | 0.4 | top,headwear | 0.0-0.2
+camo pattern | 0.3 | top,bottom | 0.0-0.2
+splatter graphic | 0.3 | top,bottom | 0.0-0.2
+bold horizontal stripes | 0.4 | top,bottom | 0.0-0.2
+neon contrast block | 0.4 | top,bottom | 0.0-0.2
+muscle anatomy graphic | 0.2 | top | 0.0-0.2
+brand wordmark | 0.5 | top,headwear,bag | 0.0-0.2
+geometric color block | 0.4 | top,bottom | 0.0-0.2

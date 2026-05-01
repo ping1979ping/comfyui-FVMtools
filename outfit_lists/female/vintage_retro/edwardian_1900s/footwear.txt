@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+buttoned boots | 0.60 | 0.2-0.6 | leather
+laced ankle boots | 0.55 | 0.2-0.6 | leather
+walking oxfords | 0.45 | 0.2-0.5 | leather
+
+# mid-casual
+louis-heel pumps | 0.55 | 0.4-0.7 | leather,satin
+two-tone spectator boots | 0.45 | 0.3-0.6 | leather
+buckled day shoes | 0.45 | 0.3-0.6 | leather
+
+# formal
+satin reception heels | 0.55 | 0.6-0.9 | satin,silk
+brocade evening slippers | 0.45 | 0.6-0.9 | brocade,silk
+beaded ball pumps | 0.45 | 0.6-0.9 | sequin,satin

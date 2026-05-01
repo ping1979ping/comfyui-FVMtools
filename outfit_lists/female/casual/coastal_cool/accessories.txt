@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized sunglasses | 0.80 | 0.2-0.5 | plastic
+seashell necklace | 0.50 | 0.1-0.3 | shell,cotton
+puka shell choker | 0.40 | 0.1-0.3 | shell,cotton
+gold layered necklace | 0.55 | 0.2-0.4 | metal
+beaded bracelets | 0.50 | 0.1-0.3 | shell,plastic
+woven anklet | 0.40 | 0.1-0.3 | cotton,shell
+small hoops | 0.55 | 0.2-0.4 | metal
+braided rope belt | 0.40 | 0.1-0.3 | cotton,jute
+straw clutch accessory | 0.30 | 0.2-0.4 | straw,raffia
+hair claw clip | 0.35 | 0.1-0.3 | plastic,metal

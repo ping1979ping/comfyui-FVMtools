@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+
+# performance knits
+polyester | 0.1 | sporty | light
+nylon | 0.1 | sporty | light
+spandex | 0.1 | sporty | light
+jersey_knit | 0.1 | sporty | light
+pique_knit | 0.2 | sporty | medium
+
+# classic
+cotton_terry | 0.2 | natural | medium
+canvas_woven | 0.2 | natural | medium
+
+# functional
+rubber | 0.05 | sporty | medium
+plastic | 0.05 | sporty | light
+mesh | 0.1 | sporty | light

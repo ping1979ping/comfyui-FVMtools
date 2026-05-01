@@ -1,0 +1,13 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+"NYC" | 0.30 | top,headwear | bold block letters
+"REBEL" | 0.25 | top | gothic font
+"SKATE" | 0.25 | top | graffiti style
+"URBAN" | 0.20 | top | bold sans-serif
+"NO RULES" | 0.20 | top | spray paint style
+"MISFIT" | 0.20 | top | distressed font
+"OFF DUTY" | 0.20 | top | bold sans-serif
+"STREET" | 0.25 | top,headwear | varsity font
+"404" | 0.15 | top | pixel font
+"CHAOS" | 0.20 | top | gothic font

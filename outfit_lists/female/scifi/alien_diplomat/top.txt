@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured high-collar ceremonial top with chrome accents | 0.70 | 0.6-1.0 | satin,holographic
+iridescent draped blouse with floating shoulder pieces | 0.65 | 0.6-1.0 | holographic,satin
+sculpted bodice with fiber-optic detailing | 0.60 | 0.5-0.9 | metal_mesh,satin
+asymmetric ceremonial sash top with chrome clasps | 0.55 | 0.5-0.9 | satin,holographic
+high-neck embassy gown top with embroidery | 0.55 | 0.6-1.0 | satin,silk
+sheer iridescent overlay with chrome boning | 0.50 | 0.5-0.9 | holographic,mesh
+fitted ambassador tunic with crest | 0.60 | 0.5-0.9 | satin,nylon
+jeweled bustier with floating gem cluster | 0.45 | 0.6-1.0 | satin,metal_mesh
+flowing wrap blouse with chrome shoulder ring | 0.55 | 0.5-0.9 | satin,silk
+draped one-shoulder ceremonial top | 0.55 | 0.5-1.0 | satin,holographic
+sheer caped top with embroidered glyphs | 0.45 | 0.5-0.9 | silk,mesh

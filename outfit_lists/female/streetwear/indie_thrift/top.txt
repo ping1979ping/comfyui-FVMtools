@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+vintage band tee | 0.9 | 0.1-0.3 | cotton
+worn-in graphic tee | 0.8 | 0.1-0.3 | cotton,jersey
+oversized cardigan | 0.7 | 0.1-0.3 | wool blend,cotton
+thrifted blouse | 0.6 | 0.1-0.3 | cotton,polyester
+fitted ribbed tank | 0.6 | 0.0-0.2 | jersey,spandex
+patchwork sweater | 0.5 | 0.1-0.3 | wool blend,cotton
+crochet top | 0.5 | 0.1-0.3 | cotton
+flannel button-up | 0.6 | 0.1-0.3 | cotton,wool blend
+mock-neck longsleeve | 0.5 | 0.1-0.3 | jersey,cotton
+boxy retro polo | 0.5 | 0.1-0.3 | cotton,jersey
+striped longsleeve | 0.5 | 0.1-0.3 | cotton,jersey

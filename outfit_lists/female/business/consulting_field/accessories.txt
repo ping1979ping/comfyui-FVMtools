@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+practical watch | 0.85 | 0.5-0.9 | metal,leather
+small stud earrings | 0.75 | 0.5-0.9 | metal
+delicate necklace | 0.65 | 0.5-0.8 | metal
+slim belt | 0.65 | 0.5-0.8 | leather
+travel sunglasses | 0.55 | 0.4-0.7 | metal,acetate
+lanyard badge holder | 0.45 | 0.5-0.8 | nylon,leather
+simple bangle | 0.40 | 0.5-0.8 | metal
+hoop earrings | 0.50 | 0.5-0.8 | metal
+plain ring | 0.45 | 0.5-0.8 | metal

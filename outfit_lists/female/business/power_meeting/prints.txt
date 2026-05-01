@@ -1,0 +1,7 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+chalk stripe | 0.30 | bottom,outerwear | 0.7-1.0
+classic pinstripe | 0.30 | top,bottom,outerwear | 0.7-1.0
+herringbone weave | 0.30 | outerwear,bottom | 0.7-1.0
+fine houndstooth | 0.25 | outerwear,bottom | 0.7-1.0
+glen plaid | 0.25 | bottom,outerwear | 0.7-1.0
+solid tonal | 0.40 | top | 0.7-1.0

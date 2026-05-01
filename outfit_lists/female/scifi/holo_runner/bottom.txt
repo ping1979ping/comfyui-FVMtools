@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waisted aero leggings with glow seams | 0.85 | 0.1-0.5 | spandex,neoprene
+fitted speed shorts with chrome trim | 0.70 | 0.0-0.4 | spandex,mesh
+iridescent racing pants with reactive panels | 0.65 | 0.2-0.6 | holographic,spandex
+streamlined biker shorts with light strip | 0.60 | 0.0-0.4 | spandex,neoprene
+cargo joggers with reflective stripe | 0.55 | 0.0-0.4 | nylon,neoprene
+fitted compression tights | 0.65 | 0.1-0.5 | spandex,mesh
+holographic mini skirt over bike shorts | 0.45 | 0.1-0.5 | holographic,spandex
+zip-leg track pants with chrome cuff | 0.55 | 0.1-0.5 | nylon,spandex
+mesh-overlay shorts with glow piping | 0.45 | 0.0-0.3 | mesh,spandex
+fitted track shorts with chrome side stripe | 0.55 | 0.1-0.5 | spandex,nylon

@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+flared jeans | 0.55 | 0.1-0.4 | denim
+hot pants | 0.45 | 0.1-0.4 | polyester,denim
+gauchos | 0.40 | 0.1-0.4 | cotton
+
+# mid-casual
+high-waisted bell bottoms | 0.60 | 0.2-0.5 | denim,polyester
+disco trousers | 0.55 | 0.3-0.7 | polyester,satin
+A-line maxi skirt | 0.50 | 0.2-0.6 | cotton,polyester
+prairie midi skirt | 0.45 | 0.2-0.5 | cotton
+
+# formal
+sequined disco pants | 0.50 | 0.5-0.9 | sequin
+metallic flared trousers | 0.50 | 0.5-0.9 | lurex,polyester
+satin palazzo pants | 0.45 | 0.4-0.8 | satin,polyester
+glitter mini skirt | 0.45 | 0.4-0.8 | sequin,spandex

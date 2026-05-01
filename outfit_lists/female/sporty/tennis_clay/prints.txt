@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+brand crest | 0.6 | top,headwear,bag | 0.1-0.3
+classic stripes | 0.5 | top,bottom | 0.1-0.3
+pleated detail graphic | 0.3 | bottom | 0.1-0.3
+clay-court terracotta gradient | 0.3 | top,bottom | 0.0-0.3
+tournament logo | 0.4 | top,bag | 0.1-0.3
+diagonal accent | 0.3 | top,bottom | 0.0-0.2
+geometric block | 0.3 | top,bottom | 0.0-0.2
+floral court motif | 0.25 | top,bottom | 0.1-0.3
+contrast piping | 0.4 | top,outerwear | 0.1-0.3
+country flag patch | 0.2 | top,headwear | 0.1-0.3
+serve-and-volley graphic | 0.2 | top | 0.0-0.2

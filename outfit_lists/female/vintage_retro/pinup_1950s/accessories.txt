@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neckerchief | 0.45 | 0.1-0.4 | cotton,rayon
+cat-eye sunglasses | 0.55 | 0.1-0.6 | metal
+bakelite bangles | 0.45 | 0.2-0.5 | metal
+
+# mid-casual
+hair bow ribbon | 0.50 | 0.2-0.5 | satin,velvet
+short white gloves | 0.50 | 0.3-0.7 | cotton,leather
+clip-on pearl earrings | 0.55 | 0.3-0.7 | metal
+charm bracelet | 0.45 | 0.2-0.6 | metal
+
+# formal
+single-strand pearls | 0.60 | 0.4-0.8 | metal
+rhinestone brooch | 0.45 | 0.4-0.8 | metal
+elbow-length gloves | 0.45 | 0.6-0.9 | satin
+sheer hosiery | 0.55 | 0.3-0.8 | nylon

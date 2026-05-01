@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"GREASE" | 0.2 | top | retro script
+"PIN-UP" | 0.2 | top | vintage serif
+"BOMBSHELL" | 0.15 | top | retro script
+"ROCKABILLY" | 0.2 | top | retro script
+"SOCK HOP" | 0.15 | top | varsity font
+"DOO WOP" | 0.15 | top | retro script
+"1955" | 0.15 | top | vintage serif
+"DRIVE-IN" | 0.15 | top | neon sign font
+"DOLL FACE" | 0.15 | top | retro script
+"SWEETHEART" | 0.2 | top | retro script

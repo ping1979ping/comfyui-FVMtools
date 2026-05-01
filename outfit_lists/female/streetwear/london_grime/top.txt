@@ -1,0 +1,12 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized hoodie | 0.9 | 0.1-0.3 | cotton,fleece
+boxy graphic tee | 0.8 | 0.1-0.3 | cotton,jersey
+zip-up tracksuit jacket | 0.7 | 0.1-0.3 | polyester,nylon
+crewneck sweatshirt | 0.7 | 0.1-0.3 | cotton,fleece
+ribbed turtleneck | 0.5 | 0.1-0.3 | jersey,wool blend
+cropped longsleeve | 0.5 | 0.0-0.2 | cotton,jersey
+mock-neck baselayer | 0.5 | 0.0-0.3 | spandex,polyester
+oversized polo shirt | 0.5 | 0.1-0.3 | cotton,jersey
+boxy band tee | 0.5 | 0.1-0.3 | cotton
+hooded longsleeve | 0.5 | 0.1-0.3 | cotton,fleece

@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chunky platform boots | 0.75 | 0.1-0.4 | leather,plastic
+glitter sneakers | 0.60 | 0.1-0.4 | cotton,plastic
+metallic ankle boots | 0.55 | 0.1-0.4 | leather
+holographic platforms | 0.50 | 0.1-0.4 | plastic
+strappy heels | 0.45 | 0.1-0.4 | satin,leather
+shiny knee-high boots | 0.45 | 0.1-0.4 | leather,plastic
+sparkly thigh-highs | 0.40 | 0.1-0.4 | satin,plastic
+neon trainers | 0.50 | 0.1-0.4 | cotton,rubber
+chrome ankle boots | 0.40 | 0.1-0.4 | leather
+gem-encrusted sandals | 0.40 | 0.1-0.4 | leather

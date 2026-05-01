@@ -1,0 +1,18 @@
+# fabric database
+# format: fabric_name | formality | family | weight
+
+cotton | 0.3 | natural | medium
+jersey | 0.2 | knit | light
+knit | 0.3 | knit | medium
+canvas | 0.2 | natural | heavy
+fleece | 0.1 | synthetic | heavy
+polyester | 0.2 | synthetic | medium
+nylon | 0.2 | synthetic | light
+spandex | 0.1 | synthetic | light
+mesh | 0.1 | synthetic | light
+rubber | 0.1 | synthetic | medium
+foam | 0.1 | synthetic | light
+elastic | 0.1 | synthetic | light
+leather | 0.4 | animal | medium
+plastic | 0.1 | synthetic | light
+metal | 0.3 | accessories | light

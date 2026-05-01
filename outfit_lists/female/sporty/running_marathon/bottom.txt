@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+split running shorts | 0.85 | 0.0-0.1 | polyester,nylon
+2-in-1 running shorts | 0.75 | 0.0-0.1 | polyester,spandex
+compression tights | 0.70 | 0.0-0.1 | spandex,nylon
+race day briefs | 0.40 | 0.0-0.1 | spandex,polyester
+mid-thigh shorts | 0.65 | 0.0-0.1 | polyester,nylon
+seven-inch run shorts | 0.55 | 0.0-0.1 | polyester,nylon
+capri running tights | 0.50 | 0.0-0.1 | spandex,nylon
+high-waist running leggings | 0.60 | 0.0-0.2 | spandex,polyester
+lightweight track pants | 0.35 | 0.0-0.2 | polyester,nylon
+breezy run skort | 0.30 | 0.0-0.1 | polyester,spandex

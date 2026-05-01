@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+long battered duster with hood | 0.75 | 0.0-0.5 | nylon,leather
+tactical vest with armor plates | 0.80 | 0.1-0.6 | kevlar,nylon
+heavy bomber with patches | 0.70 | 0.0-0.5 | nylon,neoprene
+shoulder cape with armored plates | 0.55 | 0.2-0.6 | kevlar,metal_mesh
+hooded poncho with reflective stripes | 0.50 | 0.0-0.4 | nylon,mesh
+cropped armored shrug | 0.50 | 0.1-0.5 | kevlar,leather
+oversized parka with utility pockets | 0.55 | 0.0-0.4 | nylon,neoprene
+soot-streaked trench with belt | 0.60 | 0.0-0.5 | nylon,leather
+salvaged armored cape with chain clasp | 0.50 | 0.1-0.5 | kevlar,leather
+torn flight jacket with patches | 0.55 | 0.0-0.4 | nylon,neoprene

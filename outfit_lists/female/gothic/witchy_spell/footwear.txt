@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+worn ankle boots | 0.60 | 0.0-0.3 | leather
+soft moccasins | 0.40 | 0.0-0.3 | leather
+
+# mid-casual
+laced witch boots | 0.65 | 0.2-0.5 | leather
+buckled ankle boots | 0.55 | 0.2-0.5 | leather
+pointed-toe boots | 0.55 | 0.2-0.5 | leather
+slouchy knee boots | 0.45 | 0.1-0.4 | leather
+
+# formal
+ornate ritual boots | 0.45 | 0.4-0.8 | leather,velvet
+heeled long boots | 0.45 | 0.4-0.8 | leather,velvet
+embroidered slippers | 0.35 | 0.4-0.8 | satin,silk

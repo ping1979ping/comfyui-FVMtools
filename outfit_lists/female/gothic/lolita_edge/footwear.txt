@@ -1,0 +1,18 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+mary janes | 0.70 | 0.2-0.5 | leather,faux_leather
+platform mary janes | 0.65 | 0.2-0.5 | leather,faux_leather
+buckle flats | 0.50 | 0.2-0.5 | leather,faux_leather
+
+# mid-casual
+ribbon-laced ankle boots | 0.55 | 0.3-0.6 | leather,satin
+chunky platforms | 0.55 | 0.2-0.5 | leather,faux_leather
+heeled mary janes | 0.50 | 0.3-0.6 | leather,satin
+strap-buckle boots | 0.50 | 0.3-0.6 | leather,faux_leather
+
+# formal
+ornate princess heels | 0.40 | 0.4-0.7 | satin,velvet
+beaded mary janes | 0.40 | 0.4-0.7 | satin,leather
+ribbon-bow flats | 0.45 | 0.3-0.6 | satin,silk

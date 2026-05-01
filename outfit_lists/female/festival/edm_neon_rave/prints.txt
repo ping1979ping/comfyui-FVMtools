@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+neon glow accent | 0.75 | top,bottom,accessories | 0.1-0.3
+fluorescent stripe | 0.65 | top,bottom,outerwear | 0.1-0.3
+UV-reactive splatter | 0.60 | top,bottom | 0.1-0.3
+cyber circuit | 0.50 | top,bottom | 0.1-0.3
+holographic shimmer | 0.55 | top,bag,accessories | 0.1-0.3
+electric color block | 0.50 | top,bottom | 0.1-0.3
+laser grid | 0.45 | top,outerwear | 0.1-0.3
+glow checkerboard | 0.45 | top,bottom | 0.1-0.3
+psychedelic neon | 0.50 | top,bottom | 0.1-0.3
+chrome detail | 0.40 | accessories,bag | 0.1-0.3

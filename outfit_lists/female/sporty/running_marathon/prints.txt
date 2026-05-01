@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+race number bib | 0.7 | top | 0.0-0.1
+sponsor logos | 0.5 | top,outerwear | 0.0-0.2
+reflective accents | 0.5 | top,outerwear,footwear | 0.0-0.2
+bold racing stripes | 0.4 | top,bottom,outerwear | 0.0-0.2
+mile marker graphic | 0.2 | top | 0.0-0.1
+country flag | 0.25 | top,headwear | 0.0-0.2
+event year graphic | 0.3 | top | 0.0-0.1
+neon gradient | 0.3 | top,bottom | 0.0-0.2
+chevron pattern | 0.2 | top,bottom | 0.0-0.2
+finisher medal graphic | 0.15 | top | 0.0-0.1
+horizon stripe | 0.25 | top,bottom | 0.0-0.2

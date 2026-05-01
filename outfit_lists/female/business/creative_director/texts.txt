@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"VOGUE" | 0.18 | top | bold serif
+"PARIS" | 0.15 | top | minimal serif
+"STUDIO" | 0.20 | top | clean sans-serif
+"ATELIER" | 0.15 | top | classic serif
+"MUSE" | 0.18 | top | handwritten script
+"AVANT" | 0.12 | top | modern serif
+"COUTURE" | 0.15 | top | classic serif
+"ART" | 0.20 | top | bold sans-serif

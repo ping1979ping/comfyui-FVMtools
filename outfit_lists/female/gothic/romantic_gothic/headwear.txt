@@ -1,0 +1,11 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+flower crown | 0.55 | 0.2-0.6 | silk,velvet
+ribbon hairband | 0.45 | 0.2-0.6 | satin,silk
+
+# formal
+crystal headpiece | 0.45 | 0.5-0.9 | metal
+ornate veil | 0.40 | 0.6-1.0 | tulle,lace
+beaded headband | 0.40 | 0.5-0.9 | satin

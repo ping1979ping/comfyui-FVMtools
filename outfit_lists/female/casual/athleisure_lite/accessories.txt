@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport sunglasses | 0.65 | 0.1-0.3 | plastic
+fitness tracker | 0.70 | 0.1-0.3 | rubber,plastic
+silicone wristband | 0.40 | 0.1-0.2 | rubber,plastic
+sport earbuds case | 0.45 | 0.1-0.3 | plastic,rubber
+hair tie set | 0.55 | 0.1-0.3 | elastic,jersey
+sweat headband strip | 0.40 | 0.1-0.3 | spandex,polyester
+sport ring band | 0.35 | 0.1-0.3 | metal,rubber
+small stud earrings | 0.40 | 0.1-0.3 | metal
+elastic sock cuffs | 0.30 | 0.1-0.2 | elastic,polyester

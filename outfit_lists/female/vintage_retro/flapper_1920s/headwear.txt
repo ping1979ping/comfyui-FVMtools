@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+beaded headband | 0.55 | 0.3-0.7 | sequin,silk
+turban wrap | 0.40 | 0.3-0.7 | silk,velvet
+
+# mid-casual
+cloche hat | 0.65 | 0.3-0.8 | wool,velvet
+feathered headpiece | 0.45 | 0.5-0.9 | feather,satin
+
+# formal
+jeweled tiara | 0.40 | 0.6-0.9 | metal

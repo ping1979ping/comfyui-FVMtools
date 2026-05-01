@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+biker jacket | 0.80 | 0.0-0.3 | leather,faux_leather
+denim battle vest | 0.70 | 0.0-0.3 | denim
+oversized hoodie | 0.55 | 0.0-0.3 | cotton
+zip-up flannel | 0.40 | 0.0-0.3 | cotton
+
+# mid-casual
+spiked jacket | 0.55 | 0.1-0.4 | leather,faux_leather
+patch-covered jacket | 0.65 | 0.1-0.4 | leather,denim
+trench coat | 0.40 | 0.2-0.5 | cotton,leather
+chain-draped vest | 0.45 | 0.1-0.4 | leather,denim
+hooded parka | 0.30 | 0.0-0.3 | cotton

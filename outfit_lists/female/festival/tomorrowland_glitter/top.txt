@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sparkly bralette | 0.80 | 0.1-0.4 | sequin,mesh
+metallic crop | 0.75 | 0.1-0.4 | sequin,satin
+glitter bodysuit | 0.65 | 0.1-0.4 | sequin,mesh
+holographic top | 0.65 | 0.1-0.4 | plastic,satin
+sheer corset | 0.55 | 0.1-0.4 | mesh,satin
+chainmail-look top | 0.50 | 0.1-0.4 | metal,mesh
+embellished bandeau | 0.55 | 0.1-0.4 | sequin
+rhinestone halter | 0.55 | 0.1-0.4 | satin,mesh
+beaded camisole | 0.50 | 0.1-0.4 | satin
+shimmering tube top | 0.55 | 0.1-0.4 | satin
+crystal-trim tank | 0.45 | 0.1-0.4 | jersey,satin

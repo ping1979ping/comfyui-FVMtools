@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+trucker cap | 0.7 | 0.1-0.3 | cotton,mesh
+beanie | 0.5 | 0.0-0.2 | cotton,fleece
+worn-in dad cap | 0.6 | 0.0-0.3 | cotton,canvas
+bandana scarf | 0.4 | 0.0-0.2 | cotton

@@ -1,0 +1,19 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+fringed suede vest | 0.45 | 0.1-0.4 | suede
+denim patchwork jacket | 0.40 | 0.1-0.4 | denim
+afghan coat | 0.35 | 0.1-0.4 | shearling
+poncho | 0.45 | 0.1-0.4 | knit,cotton
+
+# mid-casual
+leather blazer | 0.45 | 0.3-0.7 | leather
+crochet duster | 0.40 | 0.2-0.6 | knit
+maxi cardigan | 0.50 | 0.2-0.6 | knit,wool
+
+# formal
+satin disco jacket | 0.45 | 0.5-0.9 | satin,polyester
+faux fur coat | 0.50 | 0.4-0.9 | faux_fur
+sequined bolero | 0.40 | 0.5-0.9 | sequin
+metallic blazer | 0.40 | 0.5-0.9 | lurex,polyester

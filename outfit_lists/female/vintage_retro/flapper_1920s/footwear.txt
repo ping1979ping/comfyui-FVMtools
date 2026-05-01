@@ -1,0 +1,17 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+T-strap shoes | 0.55 | 0.3-0.7 | leather
+oxford lace-ups | 0.40 | 0.2-0.5 | leather
+ankle strap pumps | 0.45 | 0.3-0.6 | leather,satin
+
+# mid-casual
+Mary Jane heels | 0.55 | 0.4-0.7 | leather,satin
+buckled flats | 0.40 | 0.2-0.5 | leather
+
+# formal
+beaded evening shoes | 0.55 | 0.6-0.9 | sequin,satin
+brocade slippers | 0.40 | 0.5-0.9 | brocade,silk
+satin dance heels | 0.55 | 0.5-0.9 | satin,silk
+metallic pumps | 0.45 | 0.5-0.9 | lame,leather

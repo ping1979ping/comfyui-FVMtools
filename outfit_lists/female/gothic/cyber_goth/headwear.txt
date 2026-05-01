@@ -1,0 +1,11 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+neon-tube wig | 0.45 | 0.0-0.3 | vinyl
+cyber visor | 0.55 | 0.0-0.3 | metal,vinyl
+holographic cap | 0.45 | 0.0-0.3 | vinyl
+LED-trim headband | 0.40 | 0.0-0.3 | vinyl
+
+# mid-casual
+spiked headband | 0.40 | 0.1-0.4 | metal

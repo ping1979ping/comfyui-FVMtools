@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SEOUL" | 0.5 | top,headwear | bold block letters
+"BLACKPINK" | 0.3 | top | bold condensed
+"KOREA" | 0.4 | top,outerwear | varsity font
+"GANGNAM" | 0.3 | top | bold block letters
+"BABY" | 0.3 | top | bubble font
+"LOVE" | 0.4 | top | bubble font
+"GIRLS" | 0.3 | top,headwear | bubble font
+"KPOP" | 0.4 | top | bold condensed
+"DREAM" | 0.4 | top | pastel marker
+"BIAS" | 0.3 | top | bubble font

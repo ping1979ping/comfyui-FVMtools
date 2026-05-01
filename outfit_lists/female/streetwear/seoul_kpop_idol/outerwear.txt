@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+oversized blazer | 0.8 | 0.1-0.4 | wool blend,polyester
+cropped puffer | 0.7 | 0.0-0.3 | nylon,polyester
+varsity jacket | 0.7 | 0.1-0.3 | wool blend,leather
+plaid coat | 0.5 | 0.1-0.4 | wool blend
+cropped trench | 0.5 | 0.1-0.4 | cotton,polyester
+oversized cardigan | 0.6 | 0.1-0.3 | wool blend,cotton
+cropped moto jacket | 0.5 | 0.1-0.3 | leather
+fluffy faux fur coat | 0.5 | 0.1-0.4 | faux_fur
+cropped track jacket | 0.5 | 0.0-0.3 | polyester,nylon

@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+loose camisole | 0.40 | 0.2-0.4 | cotton,silk
+boatneck blouse | 0.45 | 0.2-0.5 | cotton,silk
+
+# mid-casual
+sleeveless shell | 0.50 | 0.3-0.6 | silk,satin
+draped chemise | 0.45 | 0.3-0.6 | silk,satin
+art deco blouse | 0.50 | 0.4-0.7 | silk,velvet
+
+# formal
+beaded bodice | 0.65 | 0.5-0.9 | sequin,silk
+embellished tunic | 0.55 | 0.5-0.9 | sequin,satin,velvet
+fringed top | 0.60 | 0.4-0.8 | sequin,silk
+sequined camisole | 0.55 | 0.5-0.9 | sequin,satin
+metallic blouse | 0.45 | 0.5-0.9 | lame,silk
+lace overlay top | 0.50 | 0.4-0.8 | lace,silk

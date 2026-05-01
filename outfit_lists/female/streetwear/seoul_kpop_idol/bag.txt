@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+mini designer purse | 0.8 | 0.1-0.4 | leather,polyester
+crossbody chain bag | 0.7 | 0.1-0.4 | leather,satin
+mini backpack | 0.6 | 0.1-0.3 | nylon,canvas
+plush charm bag | 0.5 | 0.0-0.3 | polyester,cotton
+trendy tote | 0.5 | 0.1-0.3 | canvas,cotton
+heart-shaped purse | 0.4 | 0.0-0.3 | leather,polyester
+shoulder pouch | 0.5 | 0.0-0.3 | nylon,polyester

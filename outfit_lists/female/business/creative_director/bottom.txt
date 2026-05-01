@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+architectural trousers | 0.75 | 0.6-0.9 | wool,crepe
+wide-leg statement pants | 0.70 | 0.6-0.9 | wool,crepe
+midi pencil skirt | 0.55 | 0.6-0.9 | leather
+designer jeans | 0.55 | 0.4-0.7 | denim
+draped midi skirt | 0.55 | 0.6-0.9 | silk,crepe
+high-waist culottes | 0.50 | 0.5-0.8 | wool,crepe
+slim cropped pants | 0.55 | 0.6-0.9 | wool,crepe
+glossy trousers | 0.50 | 0.6-0.9 | satin,polyester
+asymmetric hem skirt | 0.45 | 0.5-0.8 | crepe,polyester
+sculpted midi skirt | 0.45 | 0.6-0.9 | wool,crepe

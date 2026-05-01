@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floral wreath | 0.75 | 0.1-0.3 | cotton
+straw sun hat | 0.65 | 0.1-0.3 | cotton
+beach bandana | 0.55 | 0.1-0.3 | cotton
+tropical headband | 0.55 | 0.1-0.3 | cotton,plastic
+shell-strung headpiece | 0.40 | 0.1-0.3 | plastic

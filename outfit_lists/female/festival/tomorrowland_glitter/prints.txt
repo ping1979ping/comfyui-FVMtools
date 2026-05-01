@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+holographic shimmer | 0.65 | top,bottom,bag | 0.1-0.4
+metallic foil | 0.60 | top,bottom,outerwear | 0.1-0.4
+glitter dust | 0.65 | top,accessories | 0.1-0.4
+sequin allover | 0.55 | top,bottom | 0.1-0.4
+rainbow chrome | 0.45 | top,bag | 0.1-0.4
+laser print | 0.40 | top,bottom | 0.1-0.4
+star embellishment | 0.45 | top,accessories | 0.1-0.4
+crystal cluster | 0.40 | top,accessories | 0.1-0.4
+neon glow accent | 0.45 | top,accessories | 0.1-0.4
+prismatic gradient | 0.40 | top,bottom | 0.1-0.4
+mirror finish | 0.35 | accessories,bag | 0.1-0.4

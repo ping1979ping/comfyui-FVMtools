@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+turtleneck shell | 0.55 | 0.2-0.5 | cotton,knit
+mod tunic | 0.50 | 0.2-0.5 | cotton,polyester
+boatneck pullover | 0.50 | 0.2-0.5 | cotton,knit
+shift-style blouse | 0.45 | 0.2-0.5 | polyester,cotton
+
+# mid-casual
+mock-neck top | 0.55 | 0.3-0.7 | knit,polyester
+crop polo | 0.40 | 0.2-0.5 | cotton
+geometric color block top | 0.50 | 0.2-0.6 | polyester,cotton
+button-front mini blouse | 0.45 | 0.3-0.6 | polyester,cotton
+
+# formal
+A-line shift bodice | 0.55 | 0.4-0.8 | wool,polyester
+mod cocktail top | 0.50 | 0.4-0.8 | satin,polyester
+twiggy-style shell | 0.45 | 0.4-0.8 | polyester,silk

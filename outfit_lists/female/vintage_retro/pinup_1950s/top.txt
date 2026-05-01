@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# casual
+gingham crop top | 0.45 | 0.1-0.4 | cotton
+halterneck blouse | 0.50 | 0.1-0.4 | cotton,rayon
+tied-front shirt | 0.50 | 0.1-0.4 | cotton
+
+# mid-casual
+sweetheart bustier | 0.55 | 0.3-0.6 | cotton,satin
+peter pan blouse | 0.50 | 0.2-0.6 | cotton,rayon
+fitted cardigan | 0.55 | 0.2-0.6 | wool,knit
+off-shoulder blouse | 0.50 | 0.3-0.6 | cotton,rayon
+
+# formal
+boatneck shell top | 0.50 | 0.4-0.7 | rayon,silk
+twinset sweater | 0.45 | 0.4-0.7 | cashmere,wool
+pleated bodice | 0.50 | 0.4-0.8 | satin,silk

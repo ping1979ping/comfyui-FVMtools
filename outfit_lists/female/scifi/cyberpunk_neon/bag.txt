@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+magnetic hip pouch with neon strap | 0.55 | 0.0-0.5 | nylon,leather
+transparent messenger with neon frame | 0.50 | 0.0-0.4 | plastic,nylon
+sleek backpack with circuit print panel | 0.45 | 0.0-0.4 | nylon,neoprene
+chrome-clasp crossbody with glow trim | 0.45 | 0.1-0.5 | leather,nylon
+fanny pack with reactive light strip | 0.50 | 0.0-0.3 | nylon,neoprene
+holographic mini bag with chain | 0.40 | 0.2-0.5 | holographic,satin
+tactical sling with glow-strip | 0.45 | 0.1-0.5 | nylon,neoprene
+spiked clutch with chrome studs | 0.35 | 0.3-0.6 | leather,metal_mesh
+neon-trim sling pack with chrome zipper | 0.45 | 0.0-0.4 | nylon,neoprene
+mesh-pocket hip pack with glow trim | 0.40 | 0.0-0.4 | mesh,nylon

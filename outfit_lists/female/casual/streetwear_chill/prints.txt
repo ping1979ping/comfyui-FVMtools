@@ -1,0 +1,14 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+graphic print | 0.70 | top,outerwear | 0.0-0.4
+brand logo | 0.55 | top,headwear,bag | 0.1-0.4
+oversized brand logo | 0.50 | top,outerwear | 0.0-0.3
+abstract graphic | 0.50 | top,bag | 0.1-0.4
+camo pattern | 0.45 | bottom,outerwear,bag | 0.1-0.4
+graffiti motif | 0.40 | top,outerwear | 0.0-0.3
+distressed wash | 0.55 | bottom | 0.1-0.3
+bleached wash | 0.40 | bottom,top | 0.1-0.3
+photo print | 0.40 | top | 0.0-0.3
+embroidered patch | 0.40 | outerwear,bottom | 0.1-0.4
+acid wash | 0.35 | bottom | 0.1-0.3

@@ -1,0 +1,9 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"UNIT-13" | 0.30 | top,outerwear | military stencil
+"DRONE OPS" | 0.25 | top,outerwear | block stencil
+"GRID DOWN" | 0.20 | top | distressed stencil
+"WASTELAND" | 0.20 | top,outerwear | weathered serif
+"FALLOUT" | 0.20 | top | bold stencil
+"AREA-X" | 0.15 | top,accessories | warning font
+"NO RESCUE" | 0.15 | outerwear | rough hand-paint

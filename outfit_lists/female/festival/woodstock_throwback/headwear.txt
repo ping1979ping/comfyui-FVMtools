@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floral crown | 0.75 | 0.1-0.3 | cotton
+braided headband | 0.65 | 0.1-0.3 | cotton,leather
+wide floppy hat | 0.55 | 0.1-0.3 | cotton,suede
+beaded headpiece | 0.45 | 0.1-0.3 | metal,cotton
+folk-style scarf wrap | 0.45 | 0.1-0.3 | cotton

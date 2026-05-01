@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+
+# rain basics
+cotton | 0.15 | natural | light
+denim | 0.2 | tough | heavy
+jersey | 0.1 | casual | light
+
+# rain protection
+plastic | 0.05 | sporty | light
+rubber | 0.05 | sporty | medium
+
+# tough
+leather | 0.25 | tough | medium
+
+# accessories
+metal | 0.2 | accessory | light
+mesh | 0.1 | casual | light

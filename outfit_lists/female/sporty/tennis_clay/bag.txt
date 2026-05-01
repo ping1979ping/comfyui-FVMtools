@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+racquet bag | 0.85 | 0.1-0.3 | polyester,nylon
+court tote | 0.60 | 0.1-0.3 | polyester,canvas_woven
+6-pack thermal racquet bag | 0.55 | 0.1-0.3 | polyester,nylon
+backpack racquet carrier | 0.50 | 0.0-0.2 | polyester,nylon
+small clay-day duffel | 0.40 | 0.0-0.2 | polyester,nylon
+shoulder court bag | 0.35 | 0.0-0.2 | polyester,nylon
+ball can holder | 0.25 | 0.0-0.2 | nylon,plastic

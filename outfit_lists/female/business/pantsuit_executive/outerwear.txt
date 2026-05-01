@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+matching suit blazer | 0.95 | 0.8-1.0 | wool,polyester
+double-breasted blazer | 0.65 | 0.8-1.0 | wool
+single-breasted blazer | 0.85 | 0.7-1.0 | wool,polyester
+pinstripe blazer | 0.55 | 0.8-1.0 | wool
+oversized blazer | 0.50 | 0.6-0.9 | wool,polyester
+cropped blazer | 0.45 | 0.6-0.9 | wool,polyester
+structured jacket | 0.55 | 0.7-1.0 | wool,tweed
+structured overcoat | 0.45 | 0.7-1.0 | wool,cashmere
+trench coat | 0.50 | 0.6-0.9 | cotton,polyester

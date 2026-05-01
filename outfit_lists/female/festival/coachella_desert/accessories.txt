@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dried flower crown | 0.65 | 0.1-0.3 | cotton
+layered chain necklaces | 0.65 | 0.1-0.4 | metal
+turquoise ring stack | 0.55 | 0.1-0.3 | metal
+hammered cuff bracelet | 0.45 | 0.1-0.3 | metal
+mirrored aviator glasses | 0.70 | 0.1-0.4 | metal,plastic
+braided choker | 0.45 | 0.1-0.3 | leather
+hip belt | 0.50 | 0.1-0.3 | leather
+beaded anklet | 0.40 | 0.1-0.3 | metal
+feather earrings | 0.55 | 0.1-0.3 | metal
+silver pendant | 0.50 | 0.1-0.3 | metal
+toe ring | 0.30 | 0.1-0.3 | metal

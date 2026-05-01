@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"HOLI" | 0.30 | top | bold display
+"PARADISE" | 0.25 | top | tropical script
+"COLOR ME" | 0.25 | top | playful font
+"ALOHA" | 0.25 | top,headwear | tropical script
+"SUNSHINE" | 0.25 | top | warm cursive
+"VIBES" | 0.20 | top | playful font
+"ISLAND" | 0.20 | top | tropical script
+"GLOW" | 0.20 | top | bright font
+"BLISS" | 0.20 | top | flowing cursive
+"OCEAN" | 0.15 | top | flowing cursive

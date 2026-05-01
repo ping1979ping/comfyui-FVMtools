@@ -1,0 +1,14 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+argyle pattern | 0.65 | top,outerwear | 0.3-0.5
+tartan plaid | 0.65 | bottom,outerwear,accessories | 0.2-0.5
+classic stripe | 0.55 | top,outerwear | 0.2-0.5
+varsity letter motif | 0.55 | top,outerwear | 0.2-0.4
+houndstooth pattern | 0.45 | bottom,outerwear | 0.3-0.6
+gingham pattern | 0.40 | top,bottom | 0.2-0.5
+nautical anchor motif | 0.30 | top,bag | 0.2-0.4
+solid navy color | 0.70 | top,bottom,outerwear | 0.3-0.6
+crest emblem | 0.40 | top,outerwear,bag | 0.2-0.4
+preppy color block | 0.40 | top,outerwear | 0.2-0.4
+windowpane check | 0.35 | bottom,outerwear | 0.3-0.5

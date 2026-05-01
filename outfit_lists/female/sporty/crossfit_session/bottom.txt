@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waist booty shorts | 0.75 | 0.0-0.1 | spandex,nylon
+seamless training leggings | 0.70 | 0.0-0.1 | seamless_knit,spandex
+biker shorts | 0.65 | 0.0-0.1 | spandex,nylon
+cropped wod leggings | 0.55 | 0.0-0.1 | spandex,nylon
+squat-proof leggings | 0.65 | 0.0-0.1 | spandex,nylon
+ribbed training shorts | 0.45 | 0.0-0.1 | ribbed_knit,spandex
+mid-rise compression shorts | 0.55 | 0.0-0.1 | spandex,nylon
+loose training shorts | 0.50 | 0.0-0.1 | polyester,nylon
+3-inch booty shorts | 0.55 | 0.0-0.1 | spandex,nylon
+scrunch-back leggings | 0.50 | 0.0-0.1 | spandex,nylon

@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# mid-casual
+beaded clutch | 0.50 | 0.3-0.6 | satin,silk
+ornate purse | 0.50 | 0.3-0.7 | velvet,satin
+ribbon-tied pouch | 0.45 | 0.3-0.6 | satin,silk
+
+# formal
+embroidered clutch | 0.55 | 0.6-1.0 | satin,silk
+crystal-strap bag | 0.40 | 0.6-1.0 | satin,velvet
+silk evening bag | 0.50 | 0.6-1.0 | satin,silk
+small heart bag | 0.35 | 0.4-0.7 | velvet,satin

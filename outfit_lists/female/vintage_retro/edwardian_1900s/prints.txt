@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+floral print | 0.5 | top,bottom | 0.2-0.6
+pinstripe pattern | 0.4 | top,bottom | 0.3-0.7
+delicate ditsy floral | 0.5 | top | 0.2-0.6
+toile de jouy | 0.3 | top,bottom | 0.3-0.7
+art nouveau motif | 0.4 | top,outerwear | 0.4-0.8
+embroidered medallion | 0.4 | top,bottom | 0.5-0.9
+ribbon trim pattern | 0.3 | top | 0.3-0.7
+pastoral scene print | 0.2 | top,bottom | 0.3-0.7
+lace overlay pattern | 0.5 | top,bottom | 0.4-0.9
+cabbage rose print | 0.3 | top,bottom | 0.2-0.6
+fleur-de-lis pattern | 0.3 | top,outerwear | 0.4-0.8

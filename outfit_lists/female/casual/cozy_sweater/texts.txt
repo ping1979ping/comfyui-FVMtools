@@ -1,0 +1,11 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+"COZY" | 0.25 | top | rounded sans-serif
+"WARM" | 0.20 | top | soft serif
+"SNOW DAY" | 0.20 | top | playful font
+"HOT COCOA" | 0.20 | top | handwritten script
+"FIRESIDE" | 0.15 | top | rustic serif
+"WINTER" | 0.20 | top | bold serif
+"HYGGE" | 0.20 | top | minimal sans-serif
+"STAY IN" | 0.20 | top | handwritten font

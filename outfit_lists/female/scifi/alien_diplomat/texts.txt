@@ -1,0 +1,7 @@
+# format: "text" | probability | slot1,slot2 | font_description
+
+"AMBASSADOR" | 0.20 | top,outerwear | embossed serif font
+"PEACE ENVOY" | 0.15 | top | flowing script
+"COUNCIL" | 0.20 | top,outerwear | classical font
+"DELEGATION" | 0.15 | top | thin elegant font
+"UNITY" | 0.15 | top,accessories | minimal serif

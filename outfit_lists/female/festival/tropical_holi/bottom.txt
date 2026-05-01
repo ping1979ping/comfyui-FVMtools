@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beach shorts | 0.80 | 0.1-0.3 | cotton
+sarong wrap skirt | 0.65 | 0.2-0.4 | cotton
+tropical mini skirt | 0.55 | 0.1-0.3 | cotton
+flowing maxi skirt | 0.55 | 0.2-0.4 | cotton
+tied wrap pants | 0.50 | 0.2-0.4 | cotton
+high-waisted briefs | 0.55 | 0.1-0.3 | cotton,jersey
+loose harem pants | 0.45 | 0.2-0.4 | cotton
+tied front skirt | 0.50 | 0.1-0.3 | cotton
+breezy culottes | 0.45 | 0.2-0.4 | cotton
+linen shorts | 0.55 | 0.1-0.3 | cotton

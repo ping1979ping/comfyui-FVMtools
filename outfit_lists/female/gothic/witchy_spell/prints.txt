@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+pentagram print | 0.55 | top,accessories | 0.0-0.5
+crescent moon motif | 0.55 | top,accessories | 0.0-0.5
+celestial pattern | 0.50 | top,outerwear | 0.0-0.5
+runic symbols | 0.45 | top,bottom,accessories | 0.0-0.5
+occult symbol | 0.45 | top,accessories | 0.0-0.4
+herb illustration | 0.30 | top | 0.0-0.3
+mystic crystal motif | 0.40 | top,accessories | 0.1-0.5
+alchemy chart print | 0.30 | top | 0.0-0.3
+moth print | 0.35 | top,accessories | 0.0-0.4
+tarot card print | 0.30 | top | 0.0-0.4
+spell-circle pattern | 0.35 | top,outerwear | 0.1-0.5
+embroidered eye motif | 0.30 | top,outerwear | 0.2-0.6

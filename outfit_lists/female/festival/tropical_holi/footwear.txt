@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flat thong sandals | 0.80 | 0.1-0.3 | leather
+tropical jelly sandals | 0.55 | 0.1-0.3 | plastic
+braided slides | 0.55 | 0.1-0.3 | leather
+woven espadrilles | 0.55 | 0.2-0.4 | cotton
+strappy beach sandals | 0.65 | 0.1-0.3 | leather
+canvas slip-ons | 0.45 | 0.1-0.3 | cotton,rubber
+flat platform sandals | 0.45 | 0.1-0.3 | leather,rubber
+ankle-tie sandals | 0.50 | 0.1-0.3 | leather
+beaded thong sandals | 0.45 | 0.1-0.3 | leather

@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+op-art pattern | 0.6 | top,bottom | 0.2-0.7
+mod geometric | 0.6 | top,bottom,outerwear | 0.2-0.7
+mondrian color block | 0.5 | top,bottom | 0.3-0.8
+checkerboard print | 0.5 | top,bottom | 0.2-0.6
+psychedelic swirl | 0.4 | top,bottom | 0.1-0.5
+target bullseye | 0.3 | top | 0.1-0.5
+daisy print | 0.5 | top,bottom | 0.1-0.5
+houndstooth pattern | 0.4 | top,bottom,outerwear | 0.3-0.7
+chevron pattern | 0.4 | top,bottom | 0.2-0.6
+abstract floral | 0.4 | top,bottom | 0.2-0.6
+twiggy stripes | 0.4 | top,bottom | 0.1-0.5
