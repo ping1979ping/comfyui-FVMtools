@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+family-board-game stack | 1.0 | 0.05-0.2 | colorful printed boxes
+plaid wool throw blanket | 0.95 | 0.1-0.25 | thick checked weave
+hot-cocoa mug ceramic | 0.95 | 0.05-0.15 | thick stoneware speckled
+storybook hardcover edge | 0.85 | 0.05-0.15 | illustrated cloth-bound
+deck-of-cards stack | 0.85 | 0.05-0.1 | small printed paper deck
+puzzle-pieces scattered | 0.85 | 0.1-0.25 | jigsaw cardboard chunks
+firewood split-log bundle | 0.7 | 0.1-0.25 | rough split timber tied
+plush-fleece pajama set | 0.7 | 0.1-0.25 | soft brushed cotton
+cozy-knit slipper pair | 0.85 | 0.05-0.15 | thick wool stitched
+themed-souvenir lodge mug | 0.55 | 0.05-0.15 | printed insulated tumbler
+small wildlife photo book | 0.55 | 0.05-0.15 | hardcover illustrated
+hot-water kettle stovetop | 0.6 | 0.05-0.2 | enameled spout teapot

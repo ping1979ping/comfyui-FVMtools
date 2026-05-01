@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm summer sky | 1.0 | - | -
+scattered fluffy clouds | 0.85 | - | -
+hazy hot humid air | 0.7 | - | -
+breezy banner-fluttering wind | 0.65 | - | -
+brief summer sprinkle | 0.5 | - | -
+pleasant spring mild | 0.7 | - | -
+slightly muggy late afternoon | 0.6 | - | -
+crisp early autumn cool | 0.6 | - | -
+overcast soft daylight | 0.55 | - | -
+post-shower glistening surfaces | 0.5 | - | -

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+curved acrylic tunnel seam | 1.0 | 0.3-0.6 | thin polished bonded line
+recessed cove ceiling lighting | 0.85 | 0.2-0.5 | soft hidden glow strip
+painted aquatic-themed wall mural | 0.7 | 0.2-0.5 | airbrushed reef scene
+bronze species-info plaque | 0.7 | 0.1-0.25 | engraved relief metal
+themed wave-form ceiling baffle | 0.6 | 0.2-0.4 | rippled acoustic panel
+mosaic-tile floor-edge inlay | 0.55 | 0.1-0.3 | small colored ceramic chips
+backlit acrylic logo panel | 0.65 | 0.1-0.3 | illuminated translucent sign
+brushed-steel access door frame | 0.6 | 0.1-0.25 | stainless rectangular trim
+rope-lit handrail underglow | 0.65 | 0.1-0.25 | embedded LED strip
+porthole-style decorative window | 0.55 | 0.1-0.25 | round riveted faux-frame

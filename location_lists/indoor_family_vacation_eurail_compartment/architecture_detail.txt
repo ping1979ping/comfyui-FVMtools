@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+brass luggage-rack frame | 1.0 | 0.2-0.4 | polished tubular bracket
+varnished wood-trim molding | 0.95 | 0.2-0.4 | grained chair-rail strip
+window-pane double-glaze seam | 0.85 | 0.1-0.25 | bonded glass edge
+brass coat-hook wall mount | 0.85 | 0.05-0.15 | small polished hanger
+sliding-door track channel | 0.85 | 0.1-0.25 | recessed metal slot
+art-deco ceiling cove | 0.7 | 0.15-0.3 | curved plaster trim
+patterned floor-runner edge | 0.7 | 0.2-0.4 | woven deco strip
+seat-arm padded cap | 0.85 | 0.1-0.25 | fabric-covered armrest
+roomette-light pull cord | 0.55 | 0.05-0.15 | beaded chain switch
+window-frame brass clip | 0.7 | 0.05-0.2 | small fitted bracket

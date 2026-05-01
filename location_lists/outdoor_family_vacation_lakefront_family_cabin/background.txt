@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+calm freshwater lake mirror | 1.0 | 0.5-0.9 | reflective dark blue surface
+distant pine-tree shoreline | 0.95 | 0.4-0.8 | dark needled silhouette
+log-built lakefront cabin | 0.95 | 0.4-0.8 | stacked horizontal timber
+rolling distant blue ridges | 0.7 | 0.3-0.6 | layered atmospheric hills
+clear summer sky overhead | 0.85 | 0.4-0.8 | pastel blue clear vault
+dock-attached small boat | 0.7 | 0.2-0.5 | painted aluminum hull
+neighboring cabin glimmer | 0.55 | 0.2-0.4 | distant lit window dot
+gentle reedy lake-edge marsh | 0.7 | 0.3-0.5 | tall green water grass
+weathered split-rail fence row | 0.55 | 0.2-0.4 | grey aged timber posts
+distant sailboat sail tip | 0.5 | 0.1-0.3 | white triangular peak
+shore-side maple-tree row | 0.7 | 0.3-0.5 | broad-leafed seasonal
+loon-call cove inlet | 0.5 | 0.2-0.4 | curved sheltered shore

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wet metal staircase landing | 1.0 | 0.4-0.8 | painted slip-resistant tread
+queue-line guide-rope barrier | 0.95 | 0.3-0.6 | nylon tensioned waiting line
+slide-mouth entry funnel | 0.85 | 0.2-0.5 | wide colored launch lip
+double-tube inflatable raft | 0.85 | 0.2-0.4 | yellow ribbed pvc round
+splash-pad runoff puddle | 0.85 | 0.2-0.5 | shallow rippled water
+rinse-shower pillar nozzle | 0.7 | 0.1-0.3 | painted chrome pipe shower
+themed mascot directional sign | 0.75 | 0.15-0.35 | painted character plate
+attendant lifeguard station | 0.85 | 0.15-0.35 | red-painted raised post
+soaked floor matting | 0.85 | 0.3-0.6 | rubberized non-slip surface
+overhead bucket tip-pour | 0.6 | 0.2-0.4 | giant wooden tipper
+height-check measure sign | 0.85 | 0.1-0.3 | painted height ruler post
+queue-line themed canopy | 0.7 | 0.2-0.5 | shading striped fabric

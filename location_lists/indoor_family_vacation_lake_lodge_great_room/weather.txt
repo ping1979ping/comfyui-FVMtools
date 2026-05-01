@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cozy-warm climate-controlled interior | 1.0 | - | -
+fireplace-radiating warm air | 0.95 | - | -
+softly humid cabin atmosphere | 0.6 | - | -
+faint pine-resin scent | 0.7 | - | -
+dry comfortable still air | 0.85 | - | -
+gentle hvac-circulating breeze | 0.7 | - | -
+slightly stuffy late evening | 0.55 | - | -
+crisp dry winter interior | 0.65 | - | -
+softly heated lodge air | 0.85 | - | -
+pleasantly warm room | 0.85 | - | -

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+orange-pumpkin scattered patch | 1.0 | 0.5-0.9 | rounded ribbed orange globes
+hay-bale seating cluster | 0.95 | 0.3-0.6 | rectangular golden bales
+red-painted tractor display | 0.7 | 0.2-0.5 | farm-equipment red metal
+small-wooden farm cart | 0.85 | 0.2-0.4 | painted child-sized wagon
+themed-petting-zoo pen | 0.7 | 0.2-0.5 | wooden-rail enclosure
+apple-cider stand booth | 0.7 | 0.15-0.3 | painted wooden kiosk
+hayride wagon parked | 0.7 | 0.2-0.5 | flatbed wood-railed cart
+gourd-display table row | 0.85 | 0.2-0.5 | wooden plank surface
+straw-strewn ground path | 0.85 | 0.4-0.7 | loose golden flooring
+admission-booth attendant | 0.55 | 0.1-0.25 | uniformed seated figure
+themed-corn-maze entrance | 0.65 | 0.2-0.5 | tall dried-stalk gateway
+family with children clustered | 0.85 | 0.3-0.6 | bundled visitor groups

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted-flower fresco panel | 1.0 | 0.2-0.4 | Bavarian floral motif
+carved-wood balcony rail | 0.95 | 0.15-0.3 | scrolled timber banister
+heavy-shutter pair plank | 0.85 | 0.1-0.3 | painted vertical board
+flagstone-terrace seam | 0.95 | 0.3-0.6 | irregular grey-stone joint
+themed-archway entry timber | 0.7 | 0.15-0.35 | painted decorative archway
+window-box flower planter | 0.85 | 0.1-0.3 | painted wooden trough
+cuckoo-clock decorative-trim eaves | 0.55 | 0.1-0.25 | painted ornate carving
+rustic copper-clad gutter | 0.65 | 0.1-0.25 | weathered green metal
+stone-retaining-wall capstone | 0.7 | 0.15-0.3 | flat grey-stone topper
+weather-cock rooftop figure | 0.5 | 0.05-0.15 | iron rooster silhouette

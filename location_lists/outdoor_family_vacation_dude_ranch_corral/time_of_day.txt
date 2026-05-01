@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright early-morning chore time | 1.0 | - | -
+warm midday glaring sun | 0.85 | - | -
+golden afternoon glow | 0.95 | - | -
+late-afternoon long shadows | 0.95 | - | -
+amber sunset over plains | 0.95 | - | -
+twilight blue-hour calm | 0.8 | - | -
+dawn dewy paddock | 0.75 | - | -
+hazy bright midday | 0.7 | - | -
+overcast soft daylight | 0.55 | - | -
+star-clear ranch night | 0.7 | - | -

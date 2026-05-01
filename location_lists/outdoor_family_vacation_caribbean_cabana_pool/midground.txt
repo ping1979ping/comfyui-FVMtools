@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+infinity-edge pool basin | 1.0 | 0.4-0.8 | turquoise tiled shallow basin
+white-curtained cabana drape | 0.95 | 0.3-0.6 | flowing linen cover
+striped-umbrella lounger row | 0.95 | 0.4-0.8 | colored canvas shade canopy
+swim-up tiki bar counter | 0.85 | 0.2-0.5 | thatch-roof poolside bar
+themed pool-floats array | 0.85 | 0.2-0.4 | colored pvc inflatables
+foam-noodle pool-toy stack | 0.7 | 0.1-0.3 | bright cylindrical foam pile
+tropical-flower planter line | 0.85 | 0.15-0.35 | colored ceramic bowl row
+poolside-cocktail server tray | 0.7 | 0.05-0.2 | round metal balanced platter
+lifeguard chair raised seat | 0.75 | 0.2-0.5 | white-painted wooden tower
+beach-towel covered lounger | 0.85 | 0.3-0.6 | striped terry-cloth surface
+parasol family table | 0.85 | 0.2-0.5 | round canopy-covered seating
+sun-dial decorative pedestal | 0.5 | 0.05-0.2 | bronze gnomon stone

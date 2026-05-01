@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+resort-branded family towel | 1.0 | 0.1-0.3 | striped terry-cloth woven
+plastic sand-castle bucket set | 0.95 | 0.1-0.25 | bright molded toy stack
+swim-vest toddler float | 0.85 | 0.1-0.25 | foam-padded buckled vest
+floppy kids straw sun-hat | 0.8 | 0.1-0.25 | woven natural straw brim
+sippy cup with reef lid | 0.7 | 0.05-0.15 | molded character plastic
+inflatable flamingo float | 0.75 | 0.15-0.35 | glossy pink pvc tube
+mini snorkel-mask kid set | 0.7 | 0.05-0.2 | colored silicone faceplate
+sunscreen kid-formula tube | 0.85 | 0.05-0.15 | bright labeled plastic bottle
+woven family tote bag | 0.85 | 0.1-0.25 | woven cotton with handles
+resort all-inclusive wristband | 0.9 | 0.05-0.1 | silicone printed band
+kid water-shoe pair | 0.7 | 0.05-0.2 | mesh quick-dry slip-on
+poolside snack-bar tray | 0.6 | 0.05-0.15 | molded cafeteria-style plastic

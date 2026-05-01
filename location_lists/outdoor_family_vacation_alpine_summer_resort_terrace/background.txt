@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant snow-capped alpine peak | 1.0 | 0.5-0.9 | jagged white-tipped silhouette
+verdant high-meadow valley | 0.85 | 0.4-0.8 | bright wildflower carpet
+chalet-style hotel facade | 0.95 | 0.4-0.8 | timber-frame painted wall
+larch-tree slope cluster | 0.85 | 0.4-0.7 | needled green silhouette
+clear blue alpine sky | 0.95 | 0.5-0.9 | pastel high-altitude clear
+distant cable-car gondola line | 0.65 | 0.2-0.4 | sagging steel suspension
+themed mountain-bell tower | 0.6 | 0.2-0.5 | painted timbered face
+distant grazing-cow pasture | 0.65 | 0.3-0.6 | spotted-bovine field
+fluttering Swiss-flag pennant | 0.7 | 0.1-0.3 | red-white square cloth
+distant glacier-fed waterfall | 0.6 | 0.2-0.4 | thin white cascade ribbon
+hiking-trail switchback path | 0.55 | 0.2-0.4 | thin zigzag dirt line
+edelweiss-dotted hill slope | 0.6 | 0.3-0.5 | white star-flower meadow

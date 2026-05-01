@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+resort-branded cabana towel | 1.0 | 0.1-0.3 | striped terry-cloth woven
+woven straw beach bag | 0.95 | 0.1-0.25 | natural fiber tote
+inflatable swan float | 0.85 | 0.15-0.35 | glossy white pvc
+tropical-print sun-hat | 0.85 | 0.1-0.25 | woven natural straw brim
+cocktail-glass tumbler | 0.85 | 0.05-0.15 | thick clear glassware
+sunscreen reef-safe tube | 0.85 | 0.05-0.15 | bright labeled bottle
+mirrored sunglasses pair | 0.85 | 0.05-0.15 | tinted polarized lens
+resort-key card lanyard | 0.85 | 0.05-0.15 | ribbon clipped plastic card
+fruit-platter snack tray | 0.65 | 0.05-0.2 | small plate pineapple chunks
+mini snorkel-mask family kit | 0.6 | 0.05-0.15 | colored silicone faceplate
+woven raffia drink-coaster | 0.7 | 0.05-0.1 | natural fiber circular pad
+rolled-cabana book novel | 0.65 | 0.05-0.15 | softcover paper paperback

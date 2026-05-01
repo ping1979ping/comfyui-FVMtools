@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+curtain-wall floor-to-ceiling window | 1.0 | 0.5-0.9 | mullioned glass tarmac view
+distant parked airliner fuselage | 0.85 | 0.3-0.6 | polished aluminum body
+overhead departures-board screen | 0.85 | 0.3-0.6 | LED-grid scrolling text
+exposed-truss vault ceiling | 0.95 | 0.4-0.8 | painted steel-frame structure
+gate-counter signage panel | 0.85 | 0.2-0.5 | backlit alphanumeric letters
+distant moving-walkway corridor | 0.7 | 0.2-0.5 | rubber treadmill belt span
+banner-ad hung backlit | 0.7 | 0.2-0.5 | printed translucent panel
+duty-free shop facade row | 0.65 | 0.2-0.5 | branded illuminated signage
+chrome railing balcony rim | 0.65 | 0.2-0.4 | polished tube barrier
+distant security-line screening | 0.55 | 0.2-0.4 | grey-clad TSA line
+rotating departures display | 0.7 | 0.15-0.3 | digital LED scroll
+themed welcome-mural wall | 0.5 | 0.2-0.4 | painted destination scene

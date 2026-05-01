@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm tropical day | 1.0 | - | -
+gentle sea-side breeze | 0.95 | - | -
+hazy humid air | 0.7 | - | -
+brief tropical sprinkle | 0.55 | - | -
+post-shower glistening sand | 0.55 | - | -
+scattered fluffy clouds | 0.85 | - | -
+muggy still afternoon | 0.6 | - | -
+fresh trade-wind cooled | 0.8 | - | -
+overcast warm humid | 0.55 | - | -
+sun-broken cloud cover | 0.75 | - | -

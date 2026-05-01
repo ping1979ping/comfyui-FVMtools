@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+mirrored back-bar buffet wall | 1.0 | 0.4-0.8 | reflective polished panel
+warm-tone wallpaper damask | 0.85 | 0.4-0.8 | embossed paisley pattern
+themed travel-poster framed | 0.7 | 0.2-0.5 | printed colorful artwork
+backlit stained-glass partition | 0.6 | 0.2-0.5 | colored leaded panes
+chandelier crystal cluster | 0.85 | 0.2-0.5 | branched glittering hanging
+draped sheer-curtain windows | 0.85 | 0.3-0.6 | flowing ivory linen
+distant breakfast-room facade | 0.7 | 0.3-0.6 | warm-painted dining wall
+brass-trimmed pillar column | 0.7 | 0.2-0.5 | polished cylindrical brass
+themed potted-fern row | 0.65 | 0.2-0.4 | feathery green planters
+hotel-logo wall art | 0.65 | 0.1-0.3 | brushed metal raised letters
+neutral-toned pendant lighting | 0.85 | 0.15-0.35 | small hung warm-bulb
+draped white-linen station | 0.85 | 0.2-0.5 | flowing tablecloth backdrop

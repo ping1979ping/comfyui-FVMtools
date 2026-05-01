@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+teak-plank deck seam | 1.0 | 0.3-0.6 | weathered grooved hardwood
+chrome railing stanchion line | 0.95 | 0.2-0.5 | polished cylindrical metal
+porthole-window round trim | 0.7 | 0.1-0.3 | brass-rimmed riveted glass
+themed pool-deck signage band | 0.7 | 0.1-0.3 | painted directional plate
+wave-form deck-tile pattern | 0.65 | 0.2-0.4 | mosaic blue ripple inlay
+funnel-cone curved housing | 0.5 | 0.2-0.4 | painted aerodynamic shroud
+tile-edged pool coping lip | 0.85 | 0.2-0.4 | glazed ceramic edge
+lifebuoy mounted ring rail | 0.65 | 0.05-0.15 | red-white circular float
+wind-screen glass clip | 0.7 | 0.1-0.25 | stainless bracket fitting
+canopy-shade pole brace | 0.65 | 0.1-0.25 | painted pivoting arm

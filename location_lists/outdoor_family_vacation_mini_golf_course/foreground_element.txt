@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bright golf-ball rolling | 1.0 | 0.05-0.15 | glossy dimpled sphere
+kid-sized putter shaft tip | 0.95 | 0.1-0.25 | colored aluminum stick
+score-card paper edge | 0.95 | 0.05-0.15 | small printed slip
+golf-pencil stub | 0.85 | 0.05-0.1 | short hexagonal yellow
+hole-flag pennant tip | 0.85 | 0.05-0.15 | colored fabric triangle
+sun-cap visor brim | 0.85 | 0.1-0.2 | curved cotton billed shade
+ice-cream cone drip | 0.7 | 0.05-0.15 | melting cream rivulet
+bright bracelet wristband | 0.7 | 0.05-0.1 | tyvek printed strip
+juice-pouch straw poke | 0.65 | 0.05-0.1 | foil-pierced narrow tube
+sticker map-card edge | 0.55 | 0.05-0.1 | adhesive printed paper
+glow-stick promotional band | 0.5 | 0.02-0.08 | colored neon-light tube
+snack-bar napkin crumple | 0.65 | 0.05-0.15 | thin white fold paper

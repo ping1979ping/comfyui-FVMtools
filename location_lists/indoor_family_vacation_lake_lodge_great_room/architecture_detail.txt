@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+log-wall chinking joint | 1.0 | 0.3-0.6 | aged grey caulk seam
+hand-hewn ceiling beam | 0.95 | 0.3-0.6 | adze-marked massive timber
+stone-fireplace mantel-shelf | 0.95 | 0.15-0.3 | thick reclaimed plank
+wrought-iron fireplace tools | 0.7 | 0.05-0.2 | black hammered metal set
+twig-style door handle | 0.65 | 0.05-0.15 | bent natural wood pull
+pendant-chain ceiling fixture | 0.85 | 0.1-0.25 | wrought iron link
+window-frame thick log sash | 0.85 | 0.1-0.3 | timber jamb assembly
+loft-balcony spindle rail | 0.7 | 0.15-0.3 | turned wooden balusters
+hearth-stone raised pad | 0.85 | 0.1-0.25 | flagstone level base
+themed-cabin coat-hook board | 0.7 | 0.1-0.25 | antler hook row

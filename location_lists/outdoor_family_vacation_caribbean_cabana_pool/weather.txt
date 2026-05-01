@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm Caribbean day | 1.0 | - | -
+gentle trade-wind breeze | 0.95 | - | -
+hazy humid afternoon | 0.7 | - | -
+brief tropical shower | 0.55 | - | -
+post-shower glistening tile | 0.6 | - | -
+scattered fluffy clouds | 0.85 | - | -
+muggy still air | 0.65 | - | -
+crisp salt-tinged air | 0.7 | - | -
+overcast warm humid | 0.55 | - | -
+sun-broken cloud cover | 0.75 | - | -

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dripping handrail water bead | 1.0 | 0.05-0.2 | glistening wet rivulet
+goggles strap drape | 0.85 | 0.05-0.15 | rubber-band silicone loop
+inflated tube ribbed handle | 0.85 | 0.1-0.25 | bright pvc grip
+swim-cap drawn forehead | 0.7 | 0.05-0.15 | tight silicone stretch
+park wristband day-pass | 0.85 | 0.05-0.1 | tyvek printed adhesive strip
+soaked ponytail strands | 0.7 | 0.05-0.15 | clinging wet hair
+kid-life-vest buckled strap | 0.85 | 0.1-0.25 | foam-padded nylon
+sunscreen-stripe nose | 0.7 | 0.05-0.1 | white smeared lotion
+dripping eyelashes blink | 0.65 | 0.02-0.08 | water bead clinging
+floating-key waterproof pouch | 0.65 | 0.05-0.15 | clear sealed sleeve
+slip-on sandal toe | 0.7 | 0.05-0.15 | rubber molded shoe
+locker-key wristband charm | 0.65 | 0.05-0.1 | small printed band coil

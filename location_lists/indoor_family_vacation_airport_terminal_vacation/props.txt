@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+rolling hardshell suitcase | 1.0 | 0.15-0.35 | molded ABS shell
+travel-backpack carry-on | 0.95 | 0.1-0.25 | nylon zippered with straps
+neck-pillow U-shape | 0.95 | 0.05-0.2 | fluffy memory foam
+disposable-coffee cup | 0.95 | 0.05-0.15 | waxed paper printed cylinder
+boarding-pass document set | 0.95 | 0.05-0.15 | small printed paper strips
+passport-cover holder | 0.85 | 0.05-0.15 | embossed booklet
+phone-charger cable coil | 0.85 | 0.05-0.1 | wrapped USB cord
+toddler-stroller umbrella fold | 0.85 | 0.1-0.25 | folded fabric frame
+crinkly snack-bag pack | 0.85 | 0.05-0.15 | foil sealed pouch
+travel-mug insulated cup | 0.7 | 0.05-0.15 | metal screw-lid tumbler
+themed-tag luggage charm | 0.55 | 0.02-0.08 | colored printed plastic tag
+toddler-tablet kid-case | 0.7 | 0.05-0.15 | rubberized device cover

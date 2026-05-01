@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning departure rush | 1.0 | - | -
+midday peak boarding window | 0.95 | - | -
+late-afternoon long shadows | 0.8 | - | -
+sunset window-streamed glow | 0.85 | - | -
+night-time concourse fluorescent | 0.85 | - | -
+predawn early-flight quiet | 0.85 | - | -
+mid-evening dim concourse | 0.7 | - | -
+overcast daylight gloom | 0.65 | - | -
+hazy bright midday | 0.7 | - | -
+late-night red-eye dim | 0.7 | - | -

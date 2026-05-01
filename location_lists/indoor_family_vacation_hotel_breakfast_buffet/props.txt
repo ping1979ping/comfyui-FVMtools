@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+family-sized breakfast plate | 1.0 | 0.1-0.25 | white porcelain round
+ceramic coffee-mug pair | 0.95 | 0.05-0.15 | thick stoneware warm-toned
+small pastry-tongs grabber | 0.95 | 0.05-0.15 | steel spring-loaded tool
+chafing-dish lid handle | 0.95 | 0.05-0.15 | polished spherical knob
+juice-glass set | 0.95 | 0.05-0.15 | clear rounded tumbler
+napkin-folded linen square | 0.95 | 0.05-0.15 | crisp pressed cloth
+breakfast-menu card holder | 0.7 | 0.05-0.15 | small acrylic stand
+coffee-cream tiny pitcher | 0.85 | 0.05-0.1 | small porcelain creamer
+themed-mug souvenir | 0.55 | 0.05-0.15 | printed insulated tumbler
+silverware folded set | 0.95 | 0.05-0.15 | bundled steel utensils
+toddler-booster seat plastic | 0.85 | 0.1-0.25 | molded primary-color
+disposable-wipe foil pack | 0.65 | 0.05-0.1 | sealed sachet

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+teak-decked pool surround | 1.0 | 0.4-0.8 | warm weathered hardwood plank
+tiled cruise main pool | 0.95 | 0.4-0.8 | turquoise glazed shallow basin
+striped poolside lounger row | 0.95 | 0.4-0.8 | colored fabric sun-cot rows
+poolside cocktail bar counter | 0.8 | 0.3-0.6 | white painted curved bar
+overhead jumbotron LED screen | 0.7 | 0.3-0.6 | giant color-pixel display
+splash-pad children area | 0.85 | 0.3-0.6 | rubber-tile spray surface
+parasol-shaded family table | 0.85 | 0.2-0.5 | round canopy-covered seating
+hot-tub bubbling spa basin | 0.7 | 0.2-0.4 | round tiled jet-pool
+crew-staff drink waiter | 0.7 | 0.15-0.35 | uniformed tray-bearing figure
+cruise-band live stage area | 0.55 | 0.15-0.3 | small painted platform
+soft-serve ice-cream station | 0.7 | 0.1-0.3 | stainless dispenser unit
+poolside towel-attendant cart | 0.6 | 0.1-0.25 | wheeled stacked cloth pile

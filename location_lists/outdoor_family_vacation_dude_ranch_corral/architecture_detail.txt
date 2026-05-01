@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+split-rail-fence joinery | 1.0 | 0.3-0.6 | mortise-tenon timber
+weathered-barn plank board | 0.95 | 0.3-0.6 | grey-red aged siding
+themed-arch entry timber | 0.85 | 0.15-0.35 | log-rope archway
+horseshoe nailed door | 0.7 | 0.05-0.15 | iron lucky-charm fixture
+weathervane rooftop figure | 0.7 | 0.05-0.15 | iron horse silhouette
+wooden tack-rack peg row | 0.85 | 0.1-0.25 | nailed timber hooks
+ranch-bell hanging post | 0.65 | 0.05-0.2 | bronze rope-pull bell
+hayloft-door wooden hatch | 0.55 | 0.1-0.3 | hinged plank panel
+cattle-guard tube grid | 0.6 | 0.1-0.25 | parallel pipe slats
+arena-rail steel pipe | 0.7 | 0.15-0.3 | painted tube perimeter

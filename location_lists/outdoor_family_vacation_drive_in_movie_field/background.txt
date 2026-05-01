@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+giant outdoor movie screen | 1.0 | 0.5-0.9 | painted white reflective panel
+distant tree-line silhouette | 0.85 | 0.4-0.8 | dark soft seasonal edge
+twilight pastel evening sky | 0.95 | 0.5-0.9 | warm gradient afterglow
+distant projector booth shed | 0.7 | 0.2-0.5 | small painted block building
+neon-lit concession marquee | 0.85 | 0.3-0.6 | glowing tube-letter sign
+parked-car back-windshield row | 0.95 | 0.4-0.8 | reflective glossy panes
+themed retro-letter sign | 0.7 | 0.2-0.5 | colored marquee display
+distant farmland edge field | 0.6 | 0.3-0.6 | open mowed acreage
+star-dotted clear night sky | 0.85 | 0.4-0.8 | dark navy speck-lit
+americana banner flag pole | 0.55 | 0.1-0.3 | red-white-blue cloth flutter
+distant red barn silhouette | 0.5 | 0.2-0.4 | painted board structure
+projector-light cast beam | 0.7 | 0.3-0.6 | dust-glowing white shaft

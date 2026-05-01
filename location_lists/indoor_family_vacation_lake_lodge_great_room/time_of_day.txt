@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late-evening firelit glow | 1.0 | - | -
+warm afternoon window-streamed sun | 0.9 | - | -
+golden-hour amber inside | 0.85 | - | -
+night-time hearth-side calm | 0.95 | - | -
+early-morning dawn through window | 0.75 | - | -
+overcast soft daylight | 0.7 | - | -
+cozy snowy-window winter day | 0.7 | - | -
+dim cloudy interior | 0.6 | - | -
+storm-outside contrast warmth | 0.65 | - | -
+twilight pre-dinner glow | 0.85 | - | -

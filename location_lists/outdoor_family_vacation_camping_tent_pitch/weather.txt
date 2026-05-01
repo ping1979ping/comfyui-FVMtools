@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear cool summer evening | 1.0 | - | -
+mild breezy day | 0.85 | - | -
+overcast cool comfortable | 0.7 | - | -
+brief light rain shower | 0.55 | - | -
+post-rain misty freshness | 0.65 | - | -
+crisp early-fall chill | 0.7 | - | -
+warm humid summer | 0.7 | - | -
+gentle dew-laden morning | 0.75 | - | -
+cool moonlit clear | 0.7 | - | -
+scattered cloud cover | 0.7 | - | -

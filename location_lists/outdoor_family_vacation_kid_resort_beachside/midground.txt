@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+graduated kiddie pool steps | 1.0 | 0.4-0.8 | tiled gentle-slope shallow
+themed splash-pad water arch | 0.85 | 0.3-0.6 | painted spraying loop
+striped-umbrella lounger row | 0.95 | 0.4-0.8 | colorful canvas shade canopy
+sand-castle building zone | 0.8 | 0.3-0.6 | mounded compacted shore
+thatch-roof poolside bar | 0.7 | 0.3-0.6 | bundled palm-leaf canopy
+foam-noodle pool toy stack | 0.7 | 0.2-0.4 | bright cylindrical foam pile
+floating animal-shape inflatable | 0.85 | 0.2-0.5 | glossy pvc colored character
+lifeguard chair raised seat | 0.8 | 0.2-0.5 | white painted wooden tower
+sand-toy bucket scatter | 0.85 | 0.2-0.4 | colorful molded plastic
+shaded family cabana drape | 0.7 | 0.3-0.6 | flowing white linen curtain
+beach-towel covered lounger | 0.85 | 0.3-0.6 | striped terry-cloth surface
+kid-friendly slide ramp | 0.65 | 0.2-0.4 | glossy molded plastic chute

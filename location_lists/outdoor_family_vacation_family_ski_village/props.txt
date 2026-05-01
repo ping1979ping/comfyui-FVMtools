@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+kid-size puffer ski-jacket | 1.0 | 0.15-0.35 | shiny quilted nylon
+chunky wool mitten pair | 0.95 | 0.05-0.2 | thick stitched yarn
+ski-helmet child fit | 0.95 | 0.1-0.25 | molded plastic shell
+toboggan wooden sled | 0.85 | 0.1-0.3 | runner-style curved bench
+gluhwein-mug ceramic | 0.85 | 0.05-0.15 | thick stoneware speckled
+chocolate cocoa-mix packet | 0.7 | 0.05-0.1 | foil sealed sleeve
+pretzel-twist soft snack | 0.7 | 0.05-0.15 | salt-crusted braided dough
+ski-school nametag-pin | 0.7 | 0.02-0.08 | small printed badge
+foot-warmer pocket pack | 0.65 | 0.05-0.1 | small chemical pouch
+backpack family day-bag | 0.85 | 0.1-0.25 | nylon zippered with straps
+helmet-cam mount strap | 0.55 | 0.02-0.08 | small clip-on attachment
+village-souvenir keychain | 0.55 | 0.02-0.08 | molded miniature charm

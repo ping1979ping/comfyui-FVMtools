@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+barn-board weathered siding | 1.0 | 0.3-0.6 | aged grey-red plank
+silo-roof conical cap | 0.7 | 0.1-0.3 | metal pointed peak
+wagon-wheel decorative leaning | 0.85 | 0.1-0.3 | spoked wooden circle
+themed-fence split-rail line | 0.85 | 0.2-0.5 | weathered timber stack
+farm-bell hanging post | 0.65 | 0.05-0.2 | bronze rope-pull bell
+pumpkin-shaped sign post | 0.85 | 0.1-0.25 | painted carved gourd
+hayloft-door wooden hatch | 0.55 | 0.1-0.3 | hinged plank panel
+weathervane rooftop figure | 0.55 | 0.05-0.15 | iron rooster silhouette
+porch-step concrete pad | 0.6 | 0.1-0.25 | weathered grey slab
+themed-arch entry gateway | 0.65 | 0.15-0.35 | painted decorative archway

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late dusk pre-show | 1.0 | - | -
+twilight blue-hour anticipation | 0.95 | - | -
+nighttime feature presentation | 0.95 | - | -
+post-sunset glow fading | 0.85 | - | -
+just-after-dark first reel | 0.85 | - | -
+golden-hour pre-arrival | 0.7 | - | -
+deep-night second feature | 0.75 | - | -
+early-evening setup arrival | 0.7 | - | -
+moonlit late showtime | 0.7 | - | -
+cloudy dim evening | 0.55 | - | -

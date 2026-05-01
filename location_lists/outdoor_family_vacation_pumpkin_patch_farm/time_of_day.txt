@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright crisp morning | 1.0 | - | -
+warm midday autumn glow | 0.9 | - | -
+golden afternoon harvest light | 0.95 | - | -
+late-afternoon long shadows | 0.85 | - | -
+dusk amber-lit field | 0.8 | - | -
+early-morning dewy field | 0.75 | - | -
+hazy bright midday | 0.7 | - | -
+overcast soft daylight | 0.6 | - | -
+post-rain glistening hay | 0.55 | - | -
+sunset pumpkin-warm sky | 0.85 | - | -

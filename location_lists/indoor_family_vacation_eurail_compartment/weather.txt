@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+climate-controlled cabin warmth | 1.0 | - | -
+slightly stuffy compartment | 0.65 | - | -
+gentle hvac-circulating breeze | 0.85 | - | -
+softly humid interior | 0.6 | - | -
+quietly air-conditioned space | 0.85 | - | -
+window-fogged steamy view | 0.55 | - | -
+faintly diesel-tinged air | 0.5 | - | -
+warm cozy still atmosphere | 0.85 | - | -
+cool draft-from-corridor air | 0.6 | - | -
+even-temperature comfortable | 0.85 | - | -

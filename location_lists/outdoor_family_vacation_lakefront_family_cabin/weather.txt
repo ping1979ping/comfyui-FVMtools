@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm summer day | 1.0 | - | -
+gentle lake breeze | 0.95 | - | -
+hazy humid afternoon | 0.7 | - | -
+brief light rain shower | 0.6 | - | -
+post-rain misty freshness | 0.7 | - | -
+crisp early-fall morning | 0.75 | - | -
+warm humid summer | 0.7 | - | -
+dewy still morning | 0.7 | - | -
+overcast cool comfortable | 0.65 | - | -
+scattered cloud cover | 0.7 | - | -

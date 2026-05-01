@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dripping wet swimsuit edge | 1.0 | 0.05-0.2 | clinging soaked fabric
+sand-dusted toddler foot | 0.85 | 0.05-0.15 | grain-coated small toes
+striped beach-towel corner | 0.85 | 0.1-0.25 | terry-cloth bright fringe
+sandcastle bucket overturned | 0.75 | 0.1-0.25 | molded star-shape sand
+floppy sun-hat brim shadow | 0.85 | 0.1-0.25 | curved straw brim edge
+juice-box pouch straw | 0.7 | 0.05-0.15 | foil-pierced narrow tube
+goggles strap drape | 0.7 | 0.05-0.15 | rubber-band silicone loop
+inflatable arm-band float | 0.7 | 0.05-0.2 | bright orange pvc tube
+sunscreen-streaked cheek | 0.7 | 0.05-0.15 | white smeared lotion
+seashell collected handful | 0.65 | 0.05-0.15 | small striped shell cluster
+reusable resort wristband | 0.85 | 0.05-0.1 | silicone printed band
+beach-ball bouncing edge | 0.6 | 0.1-0.2 | colorful inflated panels

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stack of pancake plate | 1.0 | 0.1-0.25 | golden fluffy round stack
+maple-syrup pour drizzle | 0.85 | 0.05-0.2 | glossy amber glistening flow
+coffee-cup steam rim | 0.95 | 0.05-0.15 | warm rising vapor curl
+folded-napkin linen square | 0.85 | 0.05-0.15 | crisp pressed white cloth
+buttered-croissant flake | 0.85 | 0.05-0.15 | golden buttery crumbs
+juice-glass condensation rim | 0.85 | 0.05-0.15 | dewy clear glass
+fork-prong utensil edge | 0.85 | 0.02-0.08 | polished steel narrow tines
+small-jam pot glassware | 0.7 | 0.05-0.1 | tiny preserve jar
+cracker-pack foil corner | 0.65 | 0.05-0.1 | foil sealed sleeve
+toddler-bib velcro tab | 0.65 | 0.05-0.15 | terry-cloth small cover
+salt-shaker glass rim | 0.6 | 0.02-0.08 | small clear shaker top
+pastry-tongs metal grip | 0.7 | 0.05-0.15 | small steel pinching tool

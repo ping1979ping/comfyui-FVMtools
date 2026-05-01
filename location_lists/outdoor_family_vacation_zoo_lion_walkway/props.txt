@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+zoo-branded paper map | 1.0 | 0.05-0.15 | folded printed glossy sheet
+plush lion mascot toy | 0.85 | 0.1-0.25 | tawny synthetic fur stuffed
+souvenir safari hat | 0.7 | 0.1-0.25 | beige canvas wide-brim
+animal sticker activity book | 0.7 | 0.05-0.15 | colorful peel-page paper
+collapsible umbrella stroller | 0.85 | 0.15-0.3 | slim folding aluminum frame
+spill-proof toddler cup | 0.75 | 0.05-0.15 | molded silicone valve top
+animal-print tote bag | 0.7 | 0.1-0.25 | printed cotton canvas
+juice box family pack | 0.7 | 0.05-0.15 | foil-laminated cartons
+zoo passport stamp booklet | 0.55 | 0.05-0.15 | small printed pocket folio
+mini binocular toy pair | 0.6 | 0.05-0.15 | light plastic colored scope
+sunscreen tube pump | 0.7 | 0.05-0.1 | white labeled plastic bottle
+disposable rain poncho pouch | 0.55 | 0.05-0.1 | clear vinyl square pack

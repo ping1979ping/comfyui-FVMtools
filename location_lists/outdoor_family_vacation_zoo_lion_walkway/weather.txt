@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm zoo day | 1.0 | - | -
+breezy mild conditions | 0.85 | - | -
+hazy humid afternoon | 0.7 | - | -
+overcast cool comfortable | 0.65 | - | -
+brief afternoon shower | 0.5 | - | -
+post-rain glistening paths | 0.55 | - | -
+crisp early-fall day | 0.6 | - | -
+warm spring pleasant | 0.7 | - | -
+muggy still air | 0.6 | - | -
+scattered cloud cover | 0.7 | - | -

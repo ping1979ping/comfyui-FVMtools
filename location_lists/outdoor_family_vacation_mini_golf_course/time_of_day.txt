@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright sunny midmorning | 1.0 | - | -
+warm midday peak play | 0.95 | - | -
+golden afternoon glow | 0.9 | - | -
+late-afternoon long shadows | 0.85 | - | -
+dusk softly lit course | 0.85 | - | -
+night blacklight glow play | 0.7 | - | -
+twilight pastel sky | 0.75 | - | -
+overcast soft daylight | 0.6 | - | -
+just-after-rain glistening turf | 0.55 | - | -
+hazy bright midday | 0.7 | - | -

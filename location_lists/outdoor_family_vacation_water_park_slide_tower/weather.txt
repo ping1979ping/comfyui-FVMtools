@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear hot summer day | 1.0 | - | -
+gentle warm breeze | 0.85 | - | -
+hazy humid air | 0.85 | - | -
+brief afternoon downpour | 0.55 | - | -
+post-rain glistening deck | 0.65 | - | -
+scattered fluffy clouds | 0.85 | - | -
+muggy still afternoon | 0.7 | - | -
+sun-broken cloud cover | 0.75 | - | -
+overcast warm humid | 0.6 | - | -
+breezy lifting bunting flags | 0.65 | - | -

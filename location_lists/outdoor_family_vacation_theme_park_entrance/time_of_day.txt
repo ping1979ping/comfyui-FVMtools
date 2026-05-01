@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midmorning park opening | 1.0 | - | -
+sunny midday peak crowd | 0.95 | - | -
+golden afternoon glow | 0.85 | - | -
+late afternoon long shadows | 0.8 | - | -
+sunset cotton-candy sky | 0.75 | - | -
+early-evening lit marquee | 0.85 | - | -
+nighttime fireworks-lit sky | 0.7 | - | -
+dusk pastel afterglow | 0.7 | - | -
+just-after-rain glistening pavement | 0.55 | - | -
+overcast cool light | 0.5 | - | -

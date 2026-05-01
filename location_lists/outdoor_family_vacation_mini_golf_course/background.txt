@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+themed pirate-cove rocky backdrop | 1.0 | 0.5-0.9 | painted faux-stone outcrop
+oversized windmill course feature | 0.85 | 0.3-0.6 | painted spinning wooden vanes
+themed-castle facade prop | 0.8 | 0.3-0.6 | painted plaster turret
+fluttering pennant flag line | 0.75 | 0.3-0.6 | colored triangular bunting
+distant putt-putt building roof | 0.65 | 0.2-0.5 | low-pitch shingled cover
+clear-sky pastel afternoon | 0.85 | 0.4-0.8 | soft hazy summer atmosphere
+themed-shark mascot sculpt | 0.6 | 0.2-0.5 | molded fiberglass character
+faux-volcano peak prop | 0.55 | 0.3-0.6 | painted spray-fountain rock
+distant arcade-pavilion roofline | 0.6 | 0.2-0.5 | bright striped canvas roof
+mature shade-tree edge | 0.75 | 0.3-0.6 | dappled overhead leaf wall
+themed-lighthouse spinning beacon | 0.55 | 0.2-0.5 | painted striped tower
+distant snack-bar building | 0.55 | 0.2-0.4 | painted cottage facade

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright breakfast hour sunlight | 1.0 | - | -
+mid-morning slow lull | 0.85 | - | -
+busy lunch rush | 0.9 | - | -
+late-afternoon coffee break | 0.8 | - | -
+golden window-light dinnertime | 0.85 | - | -
+neon-lit late evening | 0.85 | - | -
+overcast daylight gloom | 0.6 | - | -
+stormy outside contrast | 0.55 | - | -
+post-midnight road-trip stop | 0.7 | - | -
+just-opened quiet diner | 0.7 | - | -

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright sunny morning sail | 1.0 | - | -
+warm midday peak deck | 0.95 | - | -
+golden afternoon glow | 0.9 | - | -
+late-afternoon long shadows | 0.8 | - | -
+sunset over open water | 0.85 | - | -
+twilight pool-lit deck | 0.75 | - | -
+just-after-dawn calm | 0.7 | - | -
+hazy bright midday | 0.7 | - | -
+overcast soft daylight | 0.55 | - | -
+mid-afternoon parasol shade | 0.8 | - | -

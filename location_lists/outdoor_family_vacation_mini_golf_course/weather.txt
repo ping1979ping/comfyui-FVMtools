@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm summer day | 1.0 | - | -
+gentle warm breeze | 0.9 | - | -
+hazy humid air | 0.7 | - | -
+brief afternoon sprinkle | 0.55 | - | -
+post-rain glistening turf | 0.6 | - | -
+scattered fluffy clouds | 0.85 | - | -
+muggy still afternoon | 0.6 | - | -
+crisp early-fall day | 0.7 | - | -
+overcast cool comfortable | 0.6 | - | -
+sun-broken cloud cover | 0.75 | - | -

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+red-vinyl family booth seat | 1.0 | 0.4-0.8 | tufted glossy upholstery
+formica-topped diner table | 0.95 | 0.4-0.8 | speckled laminate surface
+chrome napkin dispenser | 0.9 | 0.1-0.3 | shiny ribbed metal box
+sugar-pourer tabletop jar | 0.85 | 0.05-0.2 | glass cylinder steel cap
+ketchup-mustard bottle pair | 0.85 | 0.05-0.2 | red-yellow squeeze plastic
+laminated diner menu fold | 0.95 | 0.1-0.3 | glossy printed card
+silver salt-pepper shaker set | 0.85 | 0.05-0.15 | small chrome twin tops
+booth-side mini jukebox unit | 0.7 | 0.1-0.25 | chrome tabletop selector
+high-chair toddler tray | 0.85 | 0.15-0.3 | molded plastic booster
+serving-tray waitress stand | 0.65 | 0.1-0.25 | round metal balanced platter
+counter pie display dome | 0.7 | 0.15-0.3 | clear glass cake bell
+coffee carafe pot stand | 0.8 | 0.1-0.25 | glass globe brown handle

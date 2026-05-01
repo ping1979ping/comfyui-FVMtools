@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-morning quiet visit | 1.0 | - | -
+busy midday school-group hour | 0.85 | - | -
+early-afternoon family rush | 0.85 | - | -
+late-afternoon dimmed lighting | 0.75 | - | -
+just-opened gentle calm | 0.75 | - | -
+near-closing emptier hall | 0.6 | - | -
+weekday quiet morning | 0.7 | - | -
+weekend peak crowd | 0.85 | - | -
+post-lunch lull | 0.7 | - | -
+evening special-event hour | 0.55 | - | -

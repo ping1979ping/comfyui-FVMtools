@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright tropical morning | 1.0 | - | -
+warm midday peak sun | 0.95 | - | -
+golden afternoon glow | 0.95 | - | -
+late-afternoon long shadows | 0.85 | - | -
+sunset orange-pink horizon | 0.95 | - | -
+post-sunset pastel afterglow | 0.7 | - | -
+early-morning quiet calm | 0.7 | - | -
+hazy bright midday | 0.7 | - | -
+overcast soft daylight | 0.55 | - | -
+mid-afternoon dappled palms | 0.8 | - | -

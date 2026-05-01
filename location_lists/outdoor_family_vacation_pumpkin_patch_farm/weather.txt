@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+crisp cool autumn day | 1.0 | - | -
+gentle fall breeze | 0.95 | - | -
+overcast cool comfortable | 0.7 | - | -
+brief autumn sprinkle | 0.55 | - | -
+post-rain dewy chill | 0.6 | - | -
+scattered fluffy clouds | 0.85 | - | -
+warm Indian-summer afternoon | 0.7 | - | -
+chilly nip in air | 0.7 | - | -
+crisp dry breeze | 0.8 | - | -
+sun-broken cloud cover | 0.75 | - | -

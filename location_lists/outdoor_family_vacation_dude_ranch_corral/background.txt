@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant red-rock mesa silhouette | 1.0 | 0.5-0.9 | layered orange sandstone
+open-prairie grass plain | 0.95 | 0.4-0.8 | golden dry rolling field
+weathered timber barn structure | 0.95 | 0.4-0.8 | aged grey-red plank
+distant pine-grove edge | 0.7 | 0.3-0.6 | dark needled silhouette
+clear desert-blue sky | 0.85 | 0.4-0.8 | pastel arid atmospheric
+themed wooden ranch arch | 0.85 | 0.3-0.6 | log-and-rope archway entry
+distant horse-pasture field | 0.85 | 0.4-0.7 | open grassy paddock
+farm windmill water-pump tower | 0.7 | 0.2-0.5 | silver-bladed wood frame
+distant bunkhouse cottage | 0.65 | 0.2-0.5 | painted small structure
+weathered cattle-skull mounted | 0.55 | 0.05-0.2 | bleached bone wall accent
+distant cottonwood-tree row | 0.7 | 0.3-0.5 | broad-leafed shimmer
+sage-brush dotted plain | 0.7 | 0.3-0.6 | grey-green low scrub

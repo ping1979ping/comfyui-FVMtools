@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning feeding hour | 1.0 | - | -
+mid-morning active animal time | 0.9 | - | -
+warm midday sun overhead | 0.85 | - | -
+afternoon dappled walkway | 0.85 | - | -
+late-afternoon golden light | 0.75 | - | -
+overcast soft diffused day | 0.65 | - | -
+just-opened cool crisp morning | 0.7 | - | -
+near-closing soft sunset | 0.6 | - | -
+midday hazy bright | 0.7 | - | -
+early-afternoon shadow cast | 0.7 | - | -

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+reinforced glass viewing wall | 1.0 | 0.4-0.8 | crystal-clear thick laminated panel
+lion habitat dry grass den | 0.95 | 0.4-0.8 | sun-bleached straw cover
+faux-rock lion lounging shelf | 0.85 | 0.3-0.6 | smoothed sculpted concrete
+asphalt zoo pathway curve | 0.85 | 0.4-0.8 | sealed grey paving
+educational species placard | 0.9 | 0.2-0.5 | enameled metal display
+guardrail wooden barrier post | 0.85 | 0.3-0.6 | bolted timber spaced rail
+zoo keeper utility cart | 0.5 | 0.15-0.35 | green metal flatbed
+crowd of stroller families | 0.85 | 0.4-0.8 | diverse onlooking visitors
+shaded bench wooden seat | 0.75 | 0.2-0.5 | slatted weathered planks
+themed water dispenser station | 0.55 | 0.15-0.3 | molded refill fountain
+zoo map wayfinding pillar | 0.7 | 0.2-0.4 | colored signage column
+binocular viewfinder stand | 0.55 | 0.1-0.25 | painted coin-operated scope

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+inflatable double-tube raft | 1.0 | 0.15-0.35 | yellow ribbed pvc
+park-rental rubber tube | 0.95 | 0.15-0.3 | bright single-rider donut
+kids life-vest pfd | 0.95 | 0.1-0.25 | foam-padded buckled vest
+striped park towel | 0.85 | 0.1-0.3 | terry-cloth bright fringe
+goggles kid-fit pair | 0.85 | 0.05-0.15 | colored silicone faceplate
+sunscreen kid-formula tube | 0.85 | 0.05-0.15 | bright labeled plastic bottle
+locker-key wristband | 0.85 | 0.05-0.1 | silicone printed band
+flip-flop sandal pair | 0.85 | 0.05-0.2 | rubber thong soles
+waterproof phone pouch | 0.7 | 0.05-0.15 | clear sealed sleeve
+themed-park souvenir cup | 0.65 | 0.05-0.15 | translucent printed plastic
+swim-cap silicone | 0.6 | 0.05-0.15 | smooth stretch dome
+park-map wristband refresher | 0.5 | 0.05-0.1 | tyvek printed strip

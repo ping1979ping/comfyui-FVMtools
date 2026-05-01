@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+log-cabin chinking notch | 1.0 | 0.2-0.5 | aged grey caulk seam
+dock-plank stringer beam | 0.95 | 0.2-0.4 | weathered cross timber
+porch-railing turned baluster | 0.7 | 0.1-0.3 | painted lathe-shaped post
+fieldstone-chimney exterior | 0.65 | 0.2-0.5 | irregular stacked rock
+weathered cedar shake roof | 0.65 | 0.2-0.4 | overlapping wooden shingles
+boathouse roof peak | 0.55 | 0.1-0.3 | low-pitched timber roof
+porch-light hanging fixture | 0.7 | 0.05-0.2 | rustic painted lantern
+shutter-pair window sash | 0.65 | 0.1-0.3 | painted wood-slat covers
+deck-bench builtin frame | 0.65 | 0.15-0.3 | timber joinery seat
+boat-tie cleat fixture | 0.7 | 0.05-0.15 | bolted brass anchor

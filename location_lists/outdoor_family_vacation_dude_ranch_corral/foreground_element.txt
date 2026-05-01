@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+leather-rein hand-grip | 1.0 | 0.05-0.2 | worn braided strap
+cowboy-hat brim shadow | 0.95 | 0.1-0.25 | felted curved billed shade
+denim-jean cuff edge | 0.85 | 0.1-0.25 | dusty woven blue weave
+boot-heel spur edge | 0.85 | 0.05-0.15 | leather scuffed upper
+saddle-horn pommel rim | 0.85 | 0.05-0.15 | leather rounded knob
+leather-glove knuckle ridge | 0.85 | 0.05-0.15 | aged worn-in glove
+bandana neck-knot | 0.85 | 0.05-0.15 | colored cotton printed tie
+horse-mane wind-blown strand | 0.7 | 0.05-0.15 | coarse hair fringe
+bottle-water cap | 0.7 | 0.02-0.08 | small plastic top
+trail-snack zip-bag corner | 0.7 | 0.05-0.15 | clear sealable plastic
+lasso-rope coiled loop | 0.55 | 0.05-0.2 | braided manila circle
+sun-shaded cap brim | 0.65 | 0.05-0.15 | curved cotton billed shade

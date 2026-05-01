@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+moving walkway conveyor floor | 1.0 | 0.4-0.7 | rubberized treadmill surface
+acrylic curved viewing panel | 0.95 | 0.5-0.9 | thick clear bonded glass-like
+educational species touchscreen | 0.75 | 0.2-0.5 | glossy interactive display
+crowd of family viewers | 0.9 | 0.4-0.8 | upward-gazing visitor cluster
+guard-rail brushed steel rail | 0.85 | 0.3-0.6 | polished metal handhold
+illuminated floor strip line | 0.85 | 0.3-0.6 | embedded LED guide path
+themed coral sculpture base | 0.65 | 0.2-0.5 | resin painted reef form
+species placard reading panel | 0.85 | 0.2-0.4 | acrylic printed signboard
+diver-bubble effect projector | 0.55 | 0.1-0.3 | overhead light beam fan
+emergency exit lit signage | 0.7 | 0.1-0.3 | green glowing pictogram
+audio narration speaker grille | 0.7 | 0.1-0.25 | perforated ceiling cover
+photo-op aquarium wall mural | 0.6 | 0.2-0.4 | printed selfie backdrop

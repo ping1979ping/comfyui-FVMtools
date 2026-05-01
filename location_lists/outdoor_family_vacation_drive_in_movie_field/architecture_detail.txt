@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+screen-frame steel truss | 1.0 | 0.2-0.5 | painted lattice support
+projector-booth corrugated wall | 0.7 | 0.15-0.35 | tin sheet panels
+neon-marquee letter housing | 0.85 | 0.15-0.3 | glowing colored tubes
+gravel-parking line stripe | 0.95 | 0.2-0.4 | painted white path
+sound-post bolted base | 0.8 | 0.05-0.2 | flanged concrete footing
+concession-window service slot | 0.7 | 0.1-0.25 | painted hinged opening
+themed-arch entrance gateway | 0.6 | 0.15-0.35 | painted decorative archway
+admission-booth pitched roof | 0.55 | 0.1-0.3 | painted shingled cover
+loudspeaker mount bracket | 0.7 | 0.05-0.2 | painted steel bracket
+overhead string-light line | 0.65 | 0.1-0.3 | bulb-strung warm chain

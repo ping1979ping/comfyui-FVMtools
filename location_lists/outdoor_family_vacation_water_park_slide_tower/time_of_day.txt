@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning park opening | 1.0 | - | -
+midday peak crowded sun | 0.95 | - | -
+mid-afternoon long-line hour | 0.9 | - | -
+golden late-afternoon light | 0.8 | - | -
+warm dusk closing time | 0.65 | - | -
+hazy bright midday | 0.7 | - | -
+overcast cool soft daylight | 0.6 | - | -
+post-sprinkle puddle-glistening | 0.55 | - | -
+just-after-opening quiet | 0.7 | - | -
+post-storm humid afternoon | 0.6 | - | -

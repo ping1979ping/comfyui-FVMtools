@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+striped popcorn bucket rim | 1.0 | 0.1-0.25 | red-white waxed cardboard
+soft-drink cup straw poke | 0.85 | 0.05-0.15 | plastic-pierced narrow tube
+quilted blanket fold corner | 0.85 | 0.1-0.25 | patchwork fabric edge
+candy-box opened flap | 0.85 | 0.05-0.15 | printed cardboard box edge
+flannel-pajama sleeve cuff | 0.7 | 0.1-0.25 | soft brushed cotton weave
+plush-pillow under head | 0.85 | 0.1-0.25 | quilted soft cushion
+popcorn-kernel scattered floor | 0.75 | 0.05-0.15 | tiny golden puffs
+park-pass receipt dashboard | 0.65 | 0.05-0.1 | small printed paper slip
+flashlight-beam grass tip | 0.7 | 0.05-0.15 | cone-lit beam edge
+glow-stick promotional band | 0.6 | 0.05-0.1 | colored neon-light tube
+caramel-corn bag opened | 0.6 | 0.05-0.15 | foil sealed pouch
+sticker activity-book edge | 0.55 | 0.05-0.1 | adhesive printed sheet

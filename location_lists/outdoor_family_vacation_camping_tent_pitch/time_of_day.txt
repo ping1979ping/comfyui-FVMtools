@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late-afternoon golden setup | 1.0 | - | -
+dusk softening light | 0.9 | - | -
+twilight ember glow | 0.85 | - | -
+night campfire darkness | 0.85 | - | -
+early-morning misty dawn | 0.85 | - | -
+sunrise tent-warming light | 0.8 | - | -
+midday warm bright | 0.7 | - | -
+overcast diffused day | 0.6 | - | -
+just-after-storm freshness | 0.55 | - | -
+blue-hour pre-night | 0.7 | - | -

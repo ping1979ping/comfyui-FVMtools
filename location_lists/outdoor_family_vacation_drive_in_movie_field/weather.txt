@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm summer evening | 1.0 | - | -
+gentle balmy breeze | 0.95 | - | -
+muggy still summer night | 0.7 | - | -
+brief evening sprinkle | 0.5 | - | -
+post-rain glistening grass | 0.55 | - | -
+scattered cloud cover | 0.75 | - | -
+crisp early-fall night | 0.7 | - | -
+overcast soft warm | 0.6 | - | -
+cool dry autumn night | 0.7 | - | -
+star-clear dry night | 0.85 | - | -

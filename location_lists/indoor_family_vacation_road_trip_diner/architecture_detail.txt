@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+chrome counter edge band | 1.0 | 0.2-0.5 | polished bright metal lip
+recessed neon cove lighting | 0.85 | 0.15-0.35 | colored tube glow trim
+checkerboard floor tile grid | 0.95 | 0.3-0.6 | black-white square layout
+booth-divider fluted-glass top | 0.75 | 0.15-0.3 | ribbed translucent panel
+stamped-metal ceiling tile | 0.7 | 0.2-0.4 | embossed silver pattern
+brass coat-hook wall row | 0.6 | 0.05-0.2 | small polished hangers
+art-deco trim molding band | 0.55 | 0.1-0.3 | stepped chrome strip
+window-frame painted casing | 0.75 | 0.1-0.3 | aluminum glossy molding
+soda-fountain spigot bank | 0.7 | 0.1-0.25 | chrome row of taps
+themed-wallpaper road-sign print | 0.55 | 0.2-0.4 | repeating retro icons

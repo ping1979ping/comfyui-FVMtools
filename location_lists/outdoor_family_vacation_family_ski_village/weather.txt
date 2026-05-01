@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cold clear winter day | 1.0 | - | -
+gentle snow flurries | 0.85 | - | -
+heavy snowfall conditions | 0.7 | - | -
+overcast cold grey | 0.85 | - | -
+crisp dry alpine air | 0.85 | - | -
+windy blowing-powder day | 0.65 | - | -
+bluebird sun-glittering snow | 0.85 | - | -
+foggy alpine mist | 0.55 | - | -
+freezing still cold air | 0.7 | - | -
+post-storm clean fresh | 0.7 | - | -

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+family dome tent pitched | 1.0 | 0.4-0.8 | bright nylon stretched panels
+ring-stone fire pit | 0.95 | 0.3-0.6 | charred grey bouldered circle
+collapsible camp chair pair | 0.85 | 0.2-0.5 | mesh fabric folding seats
+picnic table planked top | 0.85 | 0.3-0.6 | weathered redwood slab
+camp cooler rectangular box | 0.85 | 0.2-0.4 | molded plastic icebox
+firewood split log stack | 0.8 | 0.2-0.4 | rough split timber pile
+hanging lantern guy-line | 0.7 | 0.2-0.4 | strung warm-glow bulb
+parked family van camper | 0.6 | 0.2-0.5 | painted metal vehicle body
+small dual-burner camp stove | 0.7 | 0.1-0.3 | green steel folded cooker
+clothesline guy-rope drying | 0.65 | 0.2-0.4 | strung damp towel row
+trash hanging bear-bag rope | 0.55 | 0.1-0.3 | knotted nylon cord lift
+toddler camp-cot folding bed | 0.55 | 0.15-0.3 | mesh frame rollaway

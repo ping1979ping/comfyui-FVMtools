@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+climate-controlled cool indoor air | 1.0 | - | -
+slightly humid hall air | 0.7 | - | -
+softly chilled climate | 0.7 | - | -
+even-temperature still atmosphere | 0.85 | - | -
+faint salt-tinged scent air | 0.6 | - | -
+dim damp-feeling ambient | 0.55 | - | -
+gentle hvac-circulating breeze | 0.7 | - | -
+quietly air-conditioned space | 0.85 | - | -
+slightly muffled acoustic feel | 0.6 | - | -
+softly humid filtered indoor | 0.65 | - | -

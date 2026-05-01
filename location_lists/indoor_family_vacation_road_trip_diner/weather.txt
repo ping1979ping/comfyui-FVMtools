@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+climate-controlled warm interior | 1.0 | - | -
+griddle-warmed cozy air | 0.85 | - | -
+softly air-conditioned space | 0.85 | - | -
+window-fogged steamy diner | 0.6 | - | -
+faint coffee-aromatic atmosphere | 0.85 | - | -
+slightly stuffy midday | 0.6 | - | -
+breezy door-open draft | 0.55 | - | -
+humid summer interior | 0.65 | - | -
+cool winter contrast warmth | 0.7 | - | -
+sun-drenched window glare | 0.6 | - | -

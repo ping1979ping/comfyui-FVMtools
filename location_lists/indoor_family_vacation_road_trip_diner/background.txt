@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+retro turquoise tile wainscoting | 1.0 | 0.5-0.9 | glossy ceramic chevron
+vintage neon menu sign | 0.85 | 0.3-0.6 | glowing tube-letter buzz
+chrome-edged service counter | 0.9 | 0.4-0.8 | polished bright metal lip
+framed Americana road posters | 0.75 | 0.3-0.6 | printed faded route maps
+checkerboard linoleum floor | 0.85 | 0.4-0.8 | black-white square pattern
+jukebox marquee lit | 0.75 | 0.3-0.6 | bubble-tube colored panels
+red-vinyl booth bench wall | 0.95 | 0.4-0.8 | tufted glossy upholstery
+window-front view of parking | 0.75 | 0.3-0.7 | plate-glass street outside
+soda-fountain back-bar shelf | 0.8 | 0.3-0.6 | mirrored bottle display
+clock-faced sunburst wall | 0.6 | 0.2-0.4 | gilded metal ray decor
+period painted wall mural | 0.55 | 0.3-0.6 | airbrushed roadside scene
+classic bar-stool back row | 0.75 | 0.3-0.6 | round vinyl chrome stems

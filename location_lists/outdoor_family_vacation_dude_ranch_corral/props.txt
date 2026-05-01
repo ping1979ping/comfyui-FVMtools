@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+woven leather riding saddle | 1.0 | 0.15-0.35 | tooled aged leather
+braided horse-bridle bit | 0.95 | 0.05-0.2 | leather metal-buckled
+felted cowboy-hat | 0.95 | 0.1-0.25 | wide curved brim
+work-glove leather pair | 0.85 | 0.05-0.15 | aged worn-in pair
+bandana neck-tie cloth | 0.85 | 0.05-0.15 | colored printed cotton
+roping-lasso coil | 0.7 | 0.1-0.25 | braided manila rope
+canteen water-flask | 0.85 | 0.05-0.15 | metal canvas-covered
+horseshoe metal souvenir | 0.7 | 0.05-0.15 | iron U-shape
+saddle-bag leather pouch | 0.7 | 0.1-0.25 | tooled-leather pannier
+denim-jacket riding layer | 0.85 | 0.15-0.35 | distressed cotton denim
+boot-spur jingle pair | 0.65 | 0.02-0.08 | metal star wheel
+trail-mix snack pouch | 0.7 | 0.05-0.15 | clear sealable plastic

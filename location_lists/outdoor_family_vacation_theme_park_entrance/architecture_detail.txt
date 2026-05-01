@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+ornate scrollwork archway carving | 1.0 | 0.2-0.5 | gilded relief plasterwork
+themed turret window dormer | 0.8 | 0.2-0.4 | leaded diamond glass pane
+candy-cane striped column | 0.75 | 0.15-0.35 | red-white spiral painted shaft
+fairy-light edge garland | 0.85 | 0.15-0.3 | warm bulb chain trim
+flag-pole rooftop banner | 0.7 | 0.1-0.3 | flapping themed silk
+gold-leaf ornament finial | 0.6 | 0.05-0.2 | metallic gilded peak
+mosaic-tile mural inset | 0.65 | 0.15-0.35 | colored ceramic chip artwork
+themed door knocker oversized | 0.5 | 0.05-0.15 | cast iron decorative ring
+clock tower bell housing | 0.55 | 0.1-0.3 | copper-domed open belfry
+gargoyle-style downspout figure | 0.5 | 0.05-0.15 | weathered cast resin creature

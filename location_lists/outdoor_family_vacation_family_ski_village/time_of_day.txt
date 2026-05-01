@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright crisp morning | 1.0 | - | -
+midday cold sun overhead | 0.85 | - | -
+golden afternoon glow | 0.85 | - | -
+late-afternoon long shadows | 0.85 | - | -
+twilight blue-hour | 0.85 | - | -
+night fairy-lit village | 0.85 | - | -
+overcast diffused day | 0.7 | - | -
+just-after-snowfall fresh light | 0.85 | - | -
+hazy alpine midday | 0.7 | - | -
+early-morning frost glow | 0.7 | - | -

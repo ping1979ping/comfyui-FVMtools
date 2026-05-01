@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wooden boat-launch dock | 1.0 | 0.4-0.8 | weathered grey plank surface
+adirondack chair pair lawn | 0.95 | 0.2-0.5 | painted wide-arm slat seat
+fire-pit ring lakeside | 0.85 | 0.2-0.4 | stacked stone circle
+canoe pulled ashore | 0.85 | 0.2-0.4 | painted aluminum hull
+tied-up paddleboat hull | 0.7 | 0.15-0.3 | small painted craft
+porch-step lake-view stair | 0.85 | 0.2-0.4 | weathered wooden treads
+hammock strung between posts | 0.75 | 0.15-0.3 | woven cotton sling
+floating swim-platform raft | 0.65 | 0.2-0.4 | wood-decked floating square
+firewood split-log stack | 0.7 | 0.15-0.3 | rough split timber pile
+lakeside picnic table | 0.85 | 0.2-0.4 | weathered planked top
+fishing-rod leaning post | 0.7 | 0.05-0.2 | thin tapering rod
+swim-buoy line marker | 0.65 | 0.1-0.25 | bright float ball string

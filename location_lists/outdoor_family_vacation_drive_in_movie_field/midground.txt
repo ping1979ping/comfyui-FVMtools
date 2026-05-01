@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+family minivan tailgate open | 1.0 | 0.4-0.8 | painted metal lifted door
+parked-car SUV row | 0.95 | 0.4-0.8 | painted vehicle backs
+spread blanket on ground | 0.95 | 0.3-0.6 | quilted woven layer
+folding camp chair pair | 0.85 | 0.2-0.5 | mesh fabric folding seats
+inflatable air-mattress padding | 0.65 | 0.2-0.4 | glossy pvc plump pad
+sound-pole speaker post | 0.75 | 0.1-0.3 | painted black metal stand
+concession-walk-up family | 0.85 | 0.2-0.4 | cluster of standing figures
+striped retro picnic basket | 0.7 | 0.1-0.25 | woven wicker handled
+gravel parking row markers | 0.85 | 0.3-0.6 | painted white line strip
+adjacent-car kid-window faces | 0.7 | 0.15-0.3 | small backseat figures
+themed speaker-window hangers | 0.65 | 0.05-0.2 | small box clipped to glass
+ground-cooler family chest | 0.85 | 0.1-0.25 | molded plastic icebox

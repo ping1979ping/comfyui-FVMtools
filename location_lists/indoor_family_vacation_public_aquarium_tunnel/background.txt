@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+curved acrylic tunnel ceiling | 1.0 | 0.7-1.0 | seamless transparent dome
+dim deep-blue water column | 0.95 | 0.6-1.0 | shimmering aquatic backdrop
+silhouetted shark patrol shape | 0.8 | 0.3-0.6 | dark torpedo body outline
+schooling tropical fish swirl | 0.85 | 0.4-0.8 | shimmering silver scale mass
+distant kelp-frond column | 0.7 | 0.3-0.6 | swaying ribbon-like plant
+sea-turtle gliding silhouette | 0.6 | 0.2-0.5 | rounded shell paddle outline
+deep-blue lit acrylic wall | 0.85 | 0.5-0.9 | glowing curved transparent panel
+backlit species mural panel | 0.7 | 0.3-0.6 | illuminated graphic display
+ray gliding overhead shadow | 0.65 | 0.2-0.5 | flat winged silhouette
+gentle bubble-stream column | 0.75 | 0.3-0.6 | rising air pearl chain
+fake reef coral outcrop | 0.7 | 0.3-0.6 | molded resin colored cluster
+backdrop low-glow LED strip | 0.7 | 0.2-0.5 | soft cyan accent lighting

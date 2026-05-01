@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+climate-controlled warm dining | 1.0 | - | -
+softly air-conditioned space | 0.95 | - | -
+faintly coffee-aromatic atmosphere | 0.95 | - | -
+slightly griddle-warmed cozy air | 0.85 | - | -
+gentle hvac-circulating breeze | 0.85 | - | -
+softly humid steamed buffet | 0.7 | - | -
+even-temperature still atmosphere | 0.85 | - | -
+slightly stuffy crowded room | 0.6 | - | -
+warm bread-scented dining | 0.85 | - | -
+quietly filtered indoor | 0.85 | - | -

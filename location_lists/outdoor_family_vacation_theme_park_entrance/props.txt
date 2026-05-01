@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+family fast-pass ticket booklet | 1.0 | 0.05-0.15 | glossy printed coupon stack
+park map paper guide | 0.95 | 0.05-0.2 | folded color-printed sheet
+character autograph book | 0.7 | 0.05-0.15 | padded glitter cover
+disposable poncho packet | 0.6 | 0.05-0.15 | clear vinyl folded square
+collapsible double stroller | 0.85 | 0.15-0.35 | woven nylon canopy frame
+plush mascot stuffed toy | 0.85 | 0.1-0.25 | velvety synthetic fur
+themed sippy cup straw | 0.7 | 0.05-0.15 | molded character lid
+mickey-ear shaped ice cream | 0.7 | 0.05-0.15 | glossy chocolate-dipped novelty
+souvenir penny press coin | 0.5 | 0.02-0.08 | stretched copper oval
+pin-trading lanyard collection | 0.6 | 0.05-0.15 | enamel pin cluster strap
+churro paper sleeve | 0.6 | 0.05-0.15 | greased twisted parchment
+park-branded refillable mug | 0.65 | 0.05-0.15 | translucent printed plastic

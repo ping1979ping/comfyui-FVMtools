@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+handprint-smudged acrylic curve | 1.0 | 0.2-0.5 | clear smeared transparent surface
+toddler pointing-finger silhouette | 0.85 | 0.05-0.2 | small chubby raised hand
+folded aquarium guide map | 0.75 | 0.05-0.15 | glossy printed leaflet
+photo-pass lanyard ribbon | 0.7 | 0.05-0.15 | woven branded strap
+plush shark stuffed tail | 0.7 | 0.05-0.15 | soft grey synthetic fur
+camera phone screen rim | 0.85 | 0.05-0.15 | smooth dark bezel edge
+audio guide handset cord | 0.6 | 0.05-0.15 | curled coiled cable
+souvenir snow-globe miniature | 0.5 | 0.05-0.15 | clear water-filled dome
+guidebook fish-id page | 0.65 | 0.05-0.15 | colored illustrated paper
+disposable juice pouch straw | 0.65 | 0.05-0.1 | foil-pierced narrow tube
+glow-stick promotional bracelet | 0.55 | 0.02-0.1 | colored neon-light tube
+sticker show-and-tell page | 0.5 | 0.05-0.1 | adhesive printed sheet

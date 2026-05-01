@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning sunlit window | 1.0 | - | -
+midday warm window-streamed | 0.95 | - | -
+golden afternoon glow | 0.95 | - | -
+late-afternoon long shadows | 0.85 | - | -
+sunset orange-window passing | 0.85 | - | -
+twilight blue-hour exterior | 0.75 | - | -
+night-time interior lamp-lit | 0.85 | - | -
+overcast soft daylight | 0.7 | - | -
+hazy bright midday | 0.65 | - | -
+just-after-dawn quiet calm | 0.7 | - | -

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bright green astroturf fairway | 1.0 | 0.5-0.9 | tight synthetic grass blade
+low brick course edging | 0.95 | 0.3-0.6 | painted curved border
+hole-cup with red flag | 0.95 | 0.1-0.3 | metal cup colored pennant
+themed water-feature stream | 0.8 | 0.2-0.4 | recirculating shallow trough
+faux-rock obstacle pile | 0.85 | 0.2-0.4 | sculpted resin boulder
+wooden bridge ramp | 0.7 | 0.2-0.4 | slatted plank crossing
+themed dinosaur-statue obstacle | 0.6 | 0.2-0.4 | molded fiberglass figure
+score-card pencil station | 0.85 | 0.1-0.25 | small wooden kiosk
+parent helper crouched | 0.75 | 0.2-0.4 | adult guiding figure
+adjacent-hole players group | 0.85 | 0.3-0.6 | distant putting figures
+golf-ball storage rack | 0.7 | 0.05-0.2 | wire-mesh bin
+spinning windmill vane low | 0.6 | 0.15-0.35 | painted wooden blades

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dripping wet swimsuit edge | 1.0 | 0.05-0.2 | clinging soaked fabric
+striped cruise pool towel | 0.95 | 0.1-0.3 | embroidered terry-cloth corner
+floppy sun-hat brim shadow | 0.85 | 0.1-0.25 | curved straw billed shade
+fruity drink umbrella mini | 0.85 | 0.05-0.15 | tiny paper parasol
+juice-pouch straw poke | 0.7 | 0.05-0.1 | foil-pierced narrow tube
+pool-noodle bright tube | 0.75 | 0.05-0.2 | foam cylindrical edge
+goggles-strap drape | 0.7 | 0.05-0.15 | rubber-band silicone loop
+sunscreen-streaked nose tip | 0.7 | 0.05-0.1 | white smeared lotion
+cruise-key card lanyard | 0.85 | 0.05-0.15 | ribbon clipped plastic card
+frosted-glass cocktail rim | 0.7 | 0.05-0.15 | salt-edged tumbler edge
+slip-on water-shoe toe | 0.65 | 0.05-0.15 | rubber molded shoe
+sunglasses lens reflection | 0.7 | 0.05-0.15 | mirrored polarized lens

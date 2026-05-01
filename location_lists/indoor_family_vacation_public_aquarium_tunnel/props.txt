@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+aquarium printed map booklet | 1.0 | 0.05-0.15 | glossy folded leaflet
+plush sea-turtle souvenir | 0.85 | 0.1-0.25 | soft green synthetic fur
+fish-id sticker activity book | 0.75 | 0.05-0.15 | colorful peel-page paper
+collapsible umbrella stroller | 0.85 | 0.15-0.3 | folded aluminum-frame fabric
+spill-proof toddler bottle | 0.75 | 0.05-0.15 | molded silicone-valve cap
+audio-guide handset device | 0.65 | 0.05-0.15 | rectangular plastic handheld
+reusable family water tumbler | 0.7 | 0.05-0.15 | insulated metal flask
+photo-op printed pass | 0.55 | 0.05-0.1 | small ticket-style card
+glow-bracelet promotional band | 0.55 | 0.02-0.08 | colored neon-light tube
+themed snack pretzel pack | 0.6 | 0.05-0.15 | foil sealed pouch
+souvenir lanyard pin set | 0.55 | 0.05-0.1 | enamel pin cluster strap
+toddler-sized rain jacket | 0.5 | 0.1-0.25 | bright nylon zipped layer

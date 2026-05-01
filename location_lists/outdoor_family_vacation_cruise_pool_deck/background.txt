@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+open horizon over deep water | 1.0 | 0.5-0.9 | endless deep-blue plane
+ship superstructure tower wall | 0.95 | 0.4-0.8 | white-painted steel cliff
+adjacent waterslide spiral form | 0.85 | 0.3-0.6 | bright twisting tube
+funnel exhaust stack peak | 0.7 | 0.2-0.5 | painted curved nautical funnel
+distant island volcanic outline | 0.55 | 0.3-0.6 | hazy purple-grey land mass
+upper-deck jogging-track rail | 0.7 | 0.3-0.6 | painted railing band
+glass-windbreak panel row | 0.85 | 0.3-0.6 | tinted curved transparent shield
+cabin balcony stack rows | 0.85 | 0.4-0.8 | repeated white tiered cells
+bridge wing observation pod | 0.5 | 0.1-0.3 | extended steel platform
+ship-name lettering panel | 0.6 | 0.2-0.5 | bold painted typographic
+parasail tow-line distant boat | 0.5 | 0.2-0.4 | tiny tug pulling sail
+themed funnel logo emblem | 0.6 | 0.1-0.3 | painted bright graphic

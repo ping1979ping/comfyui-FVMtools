@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+ornate park entrance archway | 1.0 | 0.6-1.0 | painted decorative plasterwork
+distant rollercoaster lift hill | 0.85 | 0.4-0.8 | white steel lattice silhouette
+themed castle tower spires | 0.8 | 0.5-0.9 | pastel turret stone painted
+fluttering rainbow banner row | 0.75 | 0.4-0.8 | bright nylon fabric cluster
+overhead tram cable line | 0.6 | 0.3-0.7 | thin steel suspension cable
+sky-blue painted facade buildings | 0.7 | 0.5-0.9 | smooth pastel rendered wall
+striped circus tent peak | 0.55 | 0.3-0.7 | red and white canvas stripes
+distant ferris wheel rim | 0.8 | 0.4-0.8 | colored gondola circle
+themed clock tower face | 0.65 | 0.3-0.6 | gilded ornate roman numerals
+billboard welcome sign painted | 0.75 | 0.4-0.7 | airbrushed cartoon mural
+park map kiosk roof | 0.5 | 0.2-0.5 | shingled wooden canopy
+souvenir shop facade row | 0.7 | 0.4-0.8 | candy-colored wood paneling

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+laminated kid-menu sheet | 1.0 | 0.05-0.2 | glossy printed paper
+crayon-set restaurant pack | 0.95 | 0.05-0.15 | small wax cylinder bundle
+diner coffee mug ceramic | 0.95 | 0.05-0.15 | thick stoneware white
+striped paper milkshake straw | 0.85 | 0.05-0.1 | red-white spiral tube
+metal pie slice server | 0.65 | 0.05-0.15 | triangular wedge tool
+booster-seat plastic seat | 0.7 | 0.1-0.25 | molded primary-colored chair
+road-trip travel pillow | 0.65 | 0.1-0.2 | fluffy U-shape neck rest
+backpack family day-bag | 0.8 | 0.1-0.25 | nylon zippered with straps
+disposable wet-wipe pack | 0.75 | 0.05-0.1 | foil sealed sleeve
+themed retro postcard rack | 0.5 | 0.05-0.15 | spinning wire kiosk
+old-school camera disposable | 0.55 | 0.05-0.1 | cardboard one-time-use box
+state-souvenir keychain | 0.55 | 0.02-0.08 | molded miniature charm

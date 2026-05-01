@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+misty calm dawn lake | 1.0 | - | -
+bright midmorning sunlight | 0.9 | - | -
+warm midday lake glare | 0.85 | - | -
+golden afternoon glow | 0.85 | - | -
+sunset reflective water | 0.95 | - | -
+twilight blue-hour calm | 0.85 | - | -
+night campfire glow | 0.85 | - | -
+overcast soft daylight | 0.65 | - | -
+starlit clear night | 0.7 | - | -
+just-after-rain glistening dock | 0.6 | - | -

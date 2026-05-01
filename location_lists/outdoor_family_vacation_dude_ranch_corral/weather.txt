@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear hot dry day | 1.0 | - | -
+gentle prairie breeze | 0.95 | - | -
+dusty wind-stirred haze | 0.7 | - | -
+brief scattered shower | 0.55 | - | -
+post-rain dampened dust | 0.55 | - | -
+crisp dry early-fall | 0.75 | - | -
+warm humid plains air | 0.6 | - | -
+overcast comfortable day | 0.6 | - | -
+sun-broken cloud cover | 0.75 | - | -
+chilly clear-night air | 0.65 | - | -

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+savanna-themed sculpted rockwork | 1.0 | 0.6-1.0 | tinted gunite faux-stone
+distant giraffe enclosure pasture | 0.7 | 0.3-0.6 | open dry grass field
+tall acacia silhouette tree | 0.85 | 0.4-0.8 | flat-canopy leafy spread
+zoo perimeter wood fence | 0.75 | 0.4-0.7 | weathered split-rail timber
+themed thatch-roofed pavilion | 0.7 | 0.3-0.6 | bundled dry palm thatch
+sky-blue overhead canopy | 0.85 | 0.5-0.9 | clear summer atmospheric layer
+colorful welcome zoo banner | 0.65 | 0.3-0.6 | printed weatherproof vinyl
+distant elephant viewing platform | 0.55 | 0.3-0.6 | raised wooden deck structure
+african-thatch hut display | 0.6 | 0.2-0.5 | mud-walled grass-roofed model
+distant aviary mesh dome | 0.55 | 0.3-0.6 | tensioned steel netting
+educational graphic mural wall | 0.65 | 0.3-0.6 | painted illustrated panels
+shade-grown leafy backdrop | 0.7 | 0.4-0.8 | layered subtropical foliage

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+handprint-marked viewing glass | 1.0 | 0.2-0.5 | smudged transparent pane
+zoo guidebook open page | 0.7 | 0.05-0.15 | glossy folded leaflet
+juice-box straw poke | 0.65 | 0.05-0.1 | foil-pierced narrow tube
+plush lion souvenir tail | 0.7 | 0.05-0.2 | soft synthetic mane fluff
+camera lens hood edge | 0.7 | 0.05-0.15 | matte black ridged plastic
+sun-block cap brim shadow | 0.85 | 0.1-0.25 | curved cotton billed shade
+zoo wristband day-pass | 0.7 | 0.05-0.1 | tyvek printed adhesive strip
+souvenir penny pressed disc | 0.5 | 0.02-0.08 | stretched copper oval
+sticker map-fold corner | 0.5 | 0.05-0.15 | adhesive printed paper edge
+toddler binoculars plastic | 0.6 | 0.05-0.15 | bright kid-sized molded scope
+crinkled snack bag rim | 0.7 | 0.05-0.15 | foil-lined crackly opening
+hand-sanitizer bottle clip | 0.55 | 0.05-0.1 | small clear gel dispenser

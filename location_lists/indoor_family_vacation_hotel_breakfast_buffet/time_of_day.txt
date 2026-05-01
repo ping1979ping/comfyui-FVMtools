@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright early-breakfast hour | 1.0 | - | -
+mid-morning slow lull | 0.95 | - | -
+warm late-breakfast finish | 0.85 | - | -
+golden window-streamed light | 0.85 | - | -
+overcast daylight gloom | 0.65 | - | -
+just-opened buffet quiet | 0.85 | - | -
+closing-buffet last-call | 0.7 | - | -
+hazy bright midday | 0.65 | - | -
+post-rain glistening windows | 0.55 | - | -
+brunch-extension late-morning | 0.85 | - | -

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+climate-controlled concourse air | 1.0 | - | -
+softly air-conditioned space | 0.95 | - | -
+slightly stuffy crowded gate | 0.7 | - | -
+gentle hvac-circulating breeze | 0.85 | - | -
+faintly jet-fuel scented air | 0.5 | - | -
+even-temperature still atmosphere | 0.85 | - | -
+softly hum-vibrating ambient | 0.7 | - | -
+slightly cooled overhead vent | 0.7 | - | -
+quietly filtered indoor | 0.85 | - | -
+warm crowd-radiating space | 0.65 | - | -

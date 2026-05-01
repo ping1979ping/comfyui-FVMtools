@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+faux-rock blended seam line | 1.0 | 0.3-0.6 | tinted gunite color blend
+themed wooden viewing pergola | 0.8 | 0.2-0.5 | rough-sawn timber posts
+bronze species-info plaque | 0.85 | 0.1-0.3 | patinated relief lettering
+sculpted lion paw print embed | 0.65 | 0.05-0.2 | concrete-cast track
+woven reed shade canopy | 0.65 | 0.2-0.4 | bundled palm-leaf thatch
+metal mesh enclosure overhang | 0.7 | 0.15-0.35 | galvanized chain-link span
+fence-post lantern fixture | 0.6 | 0.1-0.25 | rustic painted iron lamp
+educational kiosk roofline | 0.65 | 0.15-0.3 | corrugated tin sheeting
+hand-rail safety barrier rope | 0.7 | 0.05-0.2 | thick braided manila line
+mural divider painted scene | 0.55 | 0.2-0.4 | weathered illustrated panel
