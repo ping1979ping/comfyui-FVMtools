@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# seamless ribbed bra | 0.95 | 0.0-0.1 | spandex,nylon
+#color# longline studio bra | 0.85 | 0.0-0.1 | spandex,nylon
+#color# soft cami top | 0.80 | 0.0-0.2 | modal,spandex
+#color# fitted ribbed tank | 0.85 | 0.0-0.2 | spandex,modal
+#color# cropped studio tee | 0.75 | 0.0-0.2 | cotton,modal
+#color# square-neck bodysuit | 0.65 | 0.0-0.1 | spandex,nylon
+#color# scoopback yoga top | 0.70 | 0.0-0.2 | modal,spandex
+#color# wrap-front studio top | 0.60 | 0.0-0.2 | modal,spandex
+#color# minimal long-sleeve top | 0.65 | 0.0-0.2 | modal,spandex
+#color# cropped pilates pullover | 0.55 | 0.0-0.2 | cotton,modal
+#color# tank with shelf bra | 0.70 | 0.0-0.2 | spandex,modal

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# colorful gym duffel | 0.75 | 0.0-0.2 | nylon,polyester
+#color# embroidered tote | 0.65 | 0.0-0.2 | cotton,canvas
+#color# beaded crossbody pouch | 0.55 | 0.0-0.2 | polyester,plastic
+#color# slim belt bag | 0.70 | 0.0-0.2 | nylon
+#color# drawstring sack | 0.60 | 0.0-0.2 | nylon,cotton
+#color# carnival print sport bag | 0.50 | 0.0-0.2 | polyester,nylon
+#color# mini shoulder pouch | 0.45 | 0.0-0.2 | polyester
+#color# fringed dance pouch | 0.40 | 0.0-0.2 | polyester

@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# zip-up training hoodie | 0.85 | 0.0-0.2 | cotton,fleece
+#color# satin boxing robe | 0.70 | 0.0-0.2 | satin,polyester
+#color# warm-up jacket | 0.65 | 0.0-0.2 | nylon,polyester
+#color# corner pullover | 0.55 | 0.0-0.2 | cotton,fleece
+#color# track jacket | 0.70 | 0.0-0.2 | polyester,nylon
+#color# bomber gym jacket | 0.50 | 0.0-0.2 | nylon,polyester
+#color# half-zip pullover | 0.55 | 0.0-0.2 | polyester,fleece

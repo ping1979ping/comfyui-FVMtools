@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+mineral tie-dye | 0.65 | top,bottom | 0.0-0.2
+solid earth tone | 0.85 | top,bottom,outerwear | 0.0-0.2
+soft gradient | 0.55 | top,bottom | 0.0-0.2
+abstract watercolor | 0.50 | top,bottom | 0.0-0.2
+mandala motif | 0.40 | top,outerwear | 0.0-0.2
+botanical print | 0.45 | top,bottom | 0.0-0.2
+heather marl | 0.55 | top,outerwear | 0.0-0.2
+tonal color-block | 0.55 | top,bottom | 0.0-0.2
+subtle ombre | 0.50 | top,bottom | 0.0-0.2
+ribbed texture | 0.55 | top,bottom | 0.0-0.2

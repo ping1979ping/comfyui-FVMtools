@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# oversized neon windbreaker | 0.75 | 0.0-0.2 | nylon,polyester
+#color# zip-up shellsuit jacket | 0.80 | 0.0-0.2 | nylon,polyester
+#color# off-shoulder sweatshirt | 0.75 | 0.0-0.2 | cotton,fleece
+#color# velour zip jacket | 0.55 | 0.0-0.2 | velour,polyester
+#color# cropped bomber | 0.50 | 0.0-0.2 | nylon,polyester
+#color# satin coach jacket | 0.45 | 0.0-0.2 | satin,polyester
+#color# patchwork track top | 0.50 | 0.0-0.2 | polyester,nylon
+#color# slouchy cardigan | 0.40 | 0.0-0.2 | cotton,acrylic
+#color# warm-up zip top | 0.65 | 0.0-0.2 | polyester,nylon

@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide stretch headband | 0.90 | 0.0-0.1 | nylon,spandex
+#color# cotton sweatband | 0.80 | 0.0-0.1 | cotton
+#color# tied silk scarf | 0.55 | 0.0-0.2 | polyester
+#color# beret cap | 0.40 | 0.0-0.2 | wool,acrylic
+#color# bow hair clip | 0.45 | 0.0-0.2 | satin

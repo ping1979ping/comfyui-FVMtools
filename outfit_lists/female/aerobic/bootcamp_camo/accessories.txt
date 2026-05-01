@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dog tag necklace | 0.55 | 0.0-0.2 | metal
+tactical watch | 0.75 | 0.0-0.2 | metal,silicone
+heart rate strap | 0.50 | 0.0-0.2 | nylon,plastic
+weighted vest | 0.45 | 0.0-0.2 | nylon,polyester
+training gloves | 0.65 | 0.0-0.2 | leather,synthetic
+sweat towel | 0.70 | 0.0-0.2 | cotton
+bootcamp whistle | 0.20 | 0.0-0.2 | plastic
+silicone hair tie | 0.65 | 0.0-0.2 | silicone
+camo bandana | 0.50 | 0.0-0.2 | cotton

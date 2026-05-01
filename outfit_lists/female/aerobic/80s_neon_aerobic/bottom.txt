@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# shiny high-waist tights | 0.95 | 0.0-0.1 | spandex,nylon
+#color# striped footless tights | 0.70 | 0.0-0.1 | spandex,nylon
+#color# bike shorts | 0.65 | 0.0-0.1 | spandex,nylon
+#color# capri tights | 0.60 | 0.0-0.2 | spandex,nylon
+#color# stirrup tights | 0.50 | 0.0-0.1 | spandex,nylon
+#color# high-cut briefs | 0.55 | 0.0-0.1 | spandex,nylon
+#color# wrap skirt | 0.40 | 0.0-0.2 | cotton,polyester
+#color# pleated dance shorts | 0.45 | 0.0-0.1 | polyester,nylon
+#color# baggy sweatpants | 0.55 | 0.0-0.2 | cotton,fleece
+#color# unitard bottom | 0.40 | 0.0-0.1 | spandex,nylon

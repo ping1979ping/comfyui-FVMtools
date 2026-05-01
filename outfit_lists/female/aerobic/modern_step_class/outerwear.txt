@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# zip-front training jacket | 0.85 | 0.0-0.2 | polyester,nylon
+#color# lightweight running pullover | 0.70 | 0.0-0.2 | polyester,mesh
+#color# cropped studio hoodie | 0.75 | 0.0-0.2 | cotton,fleece
+#color# half-zip pullover | 0.65 | 0.0-0.2 | polyester,fleece
+#color# packable performance shell | 0.55 | 0.0-0.2 | nylon,polyester
+#color# breathable mesh jacket | 0.50 | 0.0-0.2 | mesh,polyester
+#color# slim track top | 0.70 | 0.0-0.2 | polyester,nylon
+#color# warm-up vest | 0.40 | 0.0-0.2 | polyester,fleece

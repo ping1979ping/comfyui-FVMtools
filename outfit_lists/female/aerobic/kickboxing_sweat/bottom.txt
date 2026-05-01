@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# muay thai shorts | 0.90 | 0.0-0.1 | satin,polyester
+#color# loose boxing shorts | 0.85 | 0.0-0.1 | polyester,nylon
+#color# compression tights | 0.80 | 0.0-0.2 | spandex,nylon
+#color# fight capris | 0.65 | 0.0-0.2 | spandex,nylon
+#color# bike-length shorts | 0.70 | 0.0-0.1 | spandex,nylon
+#color# loose training shorts | 0.75 | 0.0-0.1 | polyester,nylon
+#color# joggers | 0.55 | 0.0-0.2 | cotton,polyester
+#color# combat trousers | 0.45 | 0.0-0.2 | nylon,polyester
+#color# fitted gym shorts | 0.65 | 0.0-0.1 | spandex,polyester

@@ -1,0 +1,11 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scrunchie set | 0.90 | 0.0-0.2 | nylon,cotton
+hoop earrings | 0.55 | 0.0-0.2 | metal
+fingerless gloves | 0.50 | 0.0-0.2 | cotton,acrylic
+beaded bracelet | 0.40 | 0.0-0.2 | plastic
+hair ribbon | 0.55 | 0.0-0.2 | satin,polyester
+bangle stack | 0.40 | 0.0-0.2 | metal,plastic
+sweat towel | 0.60 | 0.0-0.2 | cotton
+sport watch | 0.45 | 0.0-0.2 | metal

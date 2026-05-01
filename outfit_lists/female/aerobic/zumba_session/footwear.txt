@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# zumba dance sneakers | 0.95 | 0.0-0.2 | mesh,synthetic
+#color# pivot dance shoes | 0.85 | 0.0-0.2 | leather,canvas
+#color# split-sole jazz shoes | 0.70 | 0.0-0.2 | leather,canvas
+#color# salsa heels | 0.45 | 0.0-0.2 | satin,leather
+#color# lightweight studio sneakers | 0.75 | 0.0-0.2 | mesh,knit
+#color# canvas dance flats | 0.55 | 0.0-0.2 | canvas
+#color# ankle dance socks | 0.70 | 0.0-0.1 | cotton,nylon

@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# lightweight zip jacket | 0.65 | 0.0-0.2 | polyester,nylon
+#color# cropped yoga pullover | 0.70 | 0.0-0.2 | cotton,modal
+#color# wrap cardigan | 0.60 | 0.0-0.2 | modal,cotton
+#color# longline studio robe | 0.45 | 0.0-0.2 | modal,cotton
+#color# half-zip pullover | 0.55 | 0.0-0.2 | polyester,fleece
+#color# breathable mesh jacket | 0.50 | 0.0-0.2 | mesh,polyester
+#color# soft wrap shawl | 0.45 | 0.0-0.2 | modal,cotton

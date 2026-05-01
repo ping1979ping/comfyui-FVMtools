@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# slim knit headband | 0.85 | 0.0-0.2 | cotton,spandex
+#color# silk hairband | 0.55 | 0.0-0.2 | satin
+#color# soft jersey wrap | 0.50 | 0.0-0.2 | cotton,modal
+#color# minimalist cap | 0.40 | 0.0-0.2 | cotton

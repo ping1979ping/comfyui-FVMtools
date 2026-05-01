@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# off-shoulder slouch top | 0.80 | 0.0-0.2 | cotton,fleece
+#color# cropped zip jacket | 0.65 | 0.0-0.2 | polyester,nylon
+#color# warm-up dance jacket | 0.60 | 0.0-0.2 | polyester,nylon
+#color# tied-front shirt | 0.55 | 0.0-0.2 | cotton
+#color# lightweight wrap | 0.45 | 0.0-0.2 | cotton,polyester
+#color# bolero shrug | 0.40 | 0.0-0.2 | polyester
+#color# sequined dance jacket | 0.45 | 0.0-0.2 | polyester,sequins

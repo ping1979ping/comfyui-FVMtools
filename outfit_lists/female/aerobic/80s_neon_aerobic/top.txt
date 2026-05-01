@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# high-cut leotard | 0.95 | 0.0-0.1 | spandex,nylon
+#color# thong leotard | 0.55 | 0.0-0.1 | spandex,nylon
+#color# striped tank top | 0.80 | 0.0-0.2 | cotton,polyester
+#color# off-shoulder sweatshirt | 0.85 | 0.0-0.2 | cotton,fleece
+#color# cropped tee | 0.70 | 0.0-0.2 | cotton
+#color# slouchy crop top | 0.65 | 0.0-0.2 | cotton,polyester
+#color# wraparound dance top | 0.50 | 0.0-0.2 | cotton,spandex
+#color# tube top | 0.45 | 0.0-0.1 | spandex,nylon
+#color# striped crop tank | 0.60 | 0.0-0.2 | cotton,polyester
+#color# halter neck top | 0.50 | 0.0-0.1 | spandex,nylon
+#color# scoopneck bodysuit | 0.55 | 0.0-0.1 | spandex,nylon
+#color# v-neck leotard | 0.60 | 0.0-0.1 | spandex,nylon

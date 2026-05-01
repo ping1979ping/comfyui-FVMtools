@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tactical sports bra | 0.90 | 0.0-0.1 | spandex,nylon
+#color# camo crop tank | 0.85 | 0.0-0.2 | cotton,polyester
+#color# combat training tee | 0.80 | 0.0-0.2 | polyester,cotton
+#color# muscle vest | 0.75 | 0.0-0.2 | cotton,polyester
+#color# cropped tank | 0.70 | 0.0-0.2 | cotton,polyester
+#color# performance tee | 0.85 | 0.0-0.2 | polyester,mesh
+#color# fitted training shirt | 0.65 | 0.0-0.2 | spandex,polyester
+#color# strappy sports bra | 0.65 | 0.0-0.1 | spandex,nylon
+#color# long-sleeve compression top | 0.55 | 0.0-0.2 | spandex,polyester
+#color# camo bodysuit | 0.45 | 0.0-0.1 | spandex,nylon

@@ -1,0 +1,9 @@
+# format: text_content | probability | compatible_slots | font_hint
+"breathe" | 0.30 | top | minimal sans
+"flow" | 0.30 | top | minimal sans
+"present" | 0.20 | top | minimal sans
+"align" | 0.25 | top | minimal sans
+"calm" | 0.25 | top | minimal sans
+"reset" | 0.20 | top | minimal sans
+"strong & soft" | 0.15 | top | minimal sans
+"core" | 0.20 | top | minimal sans

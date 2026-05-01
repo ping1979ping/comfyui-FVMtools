@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# camo bomber | 0.75 | 0.0-0.2 | nylon,polyester
+#color# tactical zip hoodie | 0.80 | 0.0-0.2 | cotton,fleece
+#color# performance windbreaker | 0.70 | 0.0-0.2 | nylon,polyester
+#color# field jacket | 0.55 | 0.0-0.2 | canvas,cotton
+#color# half-zip pullover | 0.65 | 0.0-0.2 | polyester,fleece
+#color# warm-up vest | 0.45 | 0.0-0.2 | polyester,fleece
+#color# rugged track top | 0.55 | 0.0-0.2 | polyester,nylon

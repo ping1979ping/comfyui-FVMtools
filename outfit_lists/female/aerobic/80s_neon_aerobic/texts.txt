@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FLASHDANCE" | 0.20 | top | bold retro
+"GO FOR IT" | 0.25 | top | bold block letters
+"AEROBIC QUEEN" | 0.15 | top | sporty condensed
+"FEEL THE BURN" | 0.20 | top | athletic font
+"WORK IT" | 0.20 | top | bold block letters
+"LET'S GET PHYSICAL" | 0.15 | top | retro script
+"NO PAIN NO GAIN" | 0.20 | top | bold block letters
+"MAXIMUM EFFORT" | 0.15 | top | athletic font
+"TOTAL BODY" | 0.15 | top | sporty condensed
+"PUMPED" | 0.15 | top | bold block letters

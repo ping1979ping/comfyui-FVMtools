@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# chunky aerobic sneakers | 0.95 | 0.0-0.2 | mesh,nylon,leather
+#color# high-top trainers | 0.85 | 0.0-0.2 | leather,mesh
+#color# scrunch slouch socks | 0.90 | 0.0-0.1 | cotton,nylon
+#color# leg warmers | 0.80 | 0.0-0.2 | wool,acrylic
+#color# jazz dance shoes | 0.60 | 0.0-0.2 | leather,canvas
+#color# canvas sneakers | 0.55 | 0.0-0.2 | canvas,cotton
+#color# velcro trainers | 0.50 | 0.0-0.2 | leather,mesh
+#color# retro running shoes | 0.65 | 0.0-0.2 | mesh,leather
+#color# ballet flats | 0.30 | 0.0-0.2 | leather,canvas
+#color# striped tube socks | 0.85 | 0.0-0.1 | cotton,nylon

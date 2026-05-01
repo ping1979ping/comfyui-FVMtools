@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+boxing gloves | 0.95 | 0.0-0.2 | leather,synthetic
+hand wraps | 0.90 | 0.0-0.1 | cotton,nylon
+focus mitts | 0.45 | 0.0-0.2 | leather
+mouthguard | 0.40 | 0.0-0.2 | silicone
+shin guards | 0.35 | 0.0-0.2 | synthetic
+heart rate strap | 0.40 | 0.0-0.2 | nylon,plastic
+sweat towel | 0.75 | 0.0-0.2 | cotton
+fight watch | 0.45 | 0.0-0.2 | metal,silicone
+boxing skipping rope | 0.50 | 0.0-0.1 | leather,nylon
+ear guards | 0.20 | 0.0-0.2 | synthetic

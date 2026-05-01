@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+spandex | 0.1 | sporty | light
+nylon | 0.1 | sporty | light
+polyester | 0.15 | sporty | light
+modal | 0.2 | natural | light
+tencel | 0.25 | natural | light
+cotton | 0.15 | natural | medium
+fleece | 0.1 | casual | medium
+canvas | 0.15 | casual | medium
+knit | 0.1 | sporty | light
+synthetic | 0.1 | sporty | light
+leather | 0.4 | luxury | medium
+satin | 0.3 | luxury | light
+linen | 0.3 | natural | medium
+silicone | 0.1 | sporty | light
+metal | 0.5 | luxury | heavy
+glass | 0.3 | luxury | medium

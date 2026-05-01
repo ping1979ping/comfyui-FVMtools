@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cushioned step trainers | 0.95 | 0.0-0.2 | mesh,synthetic
+#color# cross-trainer shoes | 0.90 | 0.0-0.2 | mesh,synthetic
+#color# lightweight studio sneakers | 0.85 | 0.0-0.2 | mesh,knit
+#color# stability training shoes | 0.65 | 0.0-0.2 | mesh,synthetic
+#color# breathable mesh sneakers | 0.70 | 0.0-0.2 | mesh,knit
+#color# low-profile trainers | 0.60 | 0.0-0.2 | knit,synthetic
+#color# performance ankle socks | 0.85 | 0.0-0.1 | cotton,polyester
+#color# compression crew socks | 0.50 | 0.0-0.2 | spandex,polyester

@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# high-impact sports bra | 0.95 | 0.0-0.1 | spandex,nylon
+#color# compression sports bra | 0.90 | 0.0-0.1 | spandex,nylon,polyester
+#color# cropped tank | 0.85 | 0.0-0.2 | polyester,cotton
+#color# cutoff muscle tee | 0.80 | 0.0-0.2 | cotton,polyester
+#color# fitted training tee | 0.75 | 0.0-0.2 | polyester,mesh
+#color# strappy crop bra | 0.65 | 0.0-0.1 | spandex,nylon
+#color# mesh-back tank | 0.65 | 0.0-0.2 | mesh,polyester
+#color# muay thai shirt | 0.55 | 0.0-0.2 | polyester,cotton
+#color# combat tank top | 0.70 | 0.0-0.2 | polyester,mesh
+#color# fight gear vest | 0.50 | 0.0-0.2 | polyester,nylon

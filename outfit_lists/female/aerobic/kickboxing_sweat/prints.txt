@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+camo print | 0.65 | top,bottom,outerwear | 0.0-0.2
+solid color-block | 0.55 | top,bottom,outerwear | 0.0-0.2
+gym brand logo | 0.55 | top,outerwear | 0.0-0.3
+fight number graphic | 0.45 | top | 0.0-0.2
+flame motif | 0.40 | top,bottom | 0.0-0.2
+skull pattern | 0.35 | top | 0.0-0.2
+muay thai script | 0.55 | bottom,top | 0.0-0.2
+diagonal stripes | 0.50 | bottom,outerwear | 0.0-0.2
+team kit graphic | 0.45 | top | 0.0-0.2
+distressed text | 0.40 | top | 0.0-0.2

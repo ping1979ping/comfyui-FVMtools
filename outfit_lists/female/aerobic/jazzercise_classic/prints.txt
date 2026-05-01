@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+classic stripes | 0.75 | top,bottom | 0.0-0.2
+heather marl | 0.55 | top,outerwear | 0.0-0.2
+solid color-block | 0.65 | top,bottom | 0.0-0.2
+polka dot pattern | 0.40 | top,bottom | 0.0-0.2
+floral print | 0.40 | top | 0.0-0.2
+geometric chevron | 0.45 | top,bottom | 0.0-0.2
+retro stripes | 0.55 | top,bottom | 0.0-0.2
+abstract swirl | 0.40 | top | 0.0-0.2
+faded gradient | 0.45 | top,bottom | 0.0-0.2
+dance studio logo | 0.40 | top,outerwear | 0.0-0.3

@@ -1,0 +1,13 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cropped sports bra | 0.95 | 0.0-0.1 | spandex,nylon
+#color# strappy yoga bra | 0.85 | 0.0-0.1 | spandex,nylon
+#color# triangle bralette | 0.75 | 0.0-0.1 | spandex,nylon
+#color# longline studio bra | 0.80 | 0.0-0.1 | spandex,nylon
+#color# scoopback yoga top | 0.70 | 0.0-0.2 | spandex,modal
+#color# halter yoga bra | 0.65 | 0.0-0.1 | spandex,nylon
+#color# fitted ribbed tank | 0.75 | 0.0-0.2 | spandex,modal
+#color# mesh-back top | 0.60 | 0.0-0.2 | mesh,spandex
+#color# strappy yoga tank | 0.65 | 0.0-0.1 | spandex,nylon
+#color# cutout shoulder top | 0.55 | 0.0-0.2 | spandex,nylon

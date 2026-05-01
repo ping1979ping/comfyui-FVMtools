@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FIESTA" | 0.25 | top | bold script
+"BAILA" | 0.30 | top | bold script
+"DANCE FIT" | 0.25 | top | sporty condensed
+"MOVE IT" | 0.25 | top | bold block letters
+"LATIN HEAT" | 0.20 | top | bold script
+"SHAKE IT" | 0.20 | top | bold block letters
+"RHYTHM" | 0.20 | top | bold script
+"SAMBA" | 0.15 | top | bold script
+"SALSA" | 0.20 | top | bold script
+"VIVA LA DANCE" | 0.15 | top | retro script

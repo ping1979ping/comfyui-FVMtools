@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# split-sole jazz shoes | 0.95 | 0.0-0.2 | leather,canvas
+#color# slouch socks | 0.95 | 0.0-0.1 | cotton,nylon
+#color# leg warmers | 0.90 | 0.0-0.2 | wool,acrylic
+#color# canvas dance flats | 0.65 | 0.0-0.2 | canvas
+#color# pivoting jazz boots | 0.60 | 0.0-0.2 | leather
+#color# ballet slippers | 0.50 | 0.0-0.2 | leather,canvas
+#color# low-top sneakers | 0.55 | 0.0-0.2 | mesh,canvas
+#color# thigh-high dance socks | 0.55 | 0.0-0.1 | cotton,nylon

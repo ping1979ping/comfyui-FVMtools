@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# vinyl gym bag | 0.80 | 0.0-0.2 | vinyl,plastic
+#color# nylon duffel | 0.75 | 0.0-0.2 | nylon,polyester
+#color# drawstring sack | 0.60 | 0.0-0.2 | nylon,cotton
+#color# fanny pack | 0.85 | 0.0-0.2 | nylon
+#color# canvas tote | 0.45 | 0.0-0.2 | canvas,cotton
+#color# small shoulder pouch | 0.40 | 0.0-0.2 | nylon,vinyl
+#color# patent gym sack | 0.35 | 0.0-0.2 | vinyl,plastic
+#color# logo sport bag | 0.55 | 0.0-0.2 | nylon,polyester

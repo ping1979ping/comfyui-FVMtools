@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# heavy gym duffel | 0.85 | 0.0-0.2 | nylon,polyester
+#color# fight gear backpack | 0.75 | 0.0-0.2 | nylon,polyester
+#color# rolltop sport bag | 0.55 | 0.0-0.2 | nylon,polyester
+#color# glove pouch | 0.55 | 0.0-0.2 | nylon
+#color# compact belt bag | 0.50 | 0.0-0.2 | nylon
+#color# logo gym tote | 0.45 | 0.0-0.2 | canvas,nylon
+#color# wet-dry training bag | 0.60 | 0.0-0.2 | nylon,polyester

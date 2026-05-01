@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"breathe" | 0.30 | top | minimal sans
+"namaste" | 0.25 | top | retro script
+"flow state" | 0.25 | top | minimal sans
+"inhale exhale" | 0.20 | top | minimal sans
+"stay grounded" | 0.20 | top | minimal sans
+"om" | 0.20 | top | retro script
+"warrior pose" | 0.15 | top | minimal sans
+"let go" | 0.20 | top | minimal sans
+"radiate" | 0.20 | top | minimal sans

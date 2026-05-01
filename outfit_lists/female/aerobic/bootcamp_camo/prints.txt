@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+woodland camo | 0.85 | top,bottom,outerwear | 0.0-0.2
+desert camo | 0.65 | top,bottom,outerwear | 0.0-0.2
+urban camo | 0.55 | top,bottom,outerwear | 0.0-0.2
+digital camo | 0.55 | top,bottom,outerwear | 0.0-0.2
+solid army green | 0.65 | top,bottom | 0.0-0.2
+unit logo | 0.45 | top,outerwear | 0.0-0.3
+flag patch graphic | 0.40 | top,outerwear | 0.0-0.2
+distressed text | 0.45 | top | 0.0-0.2
+side stripe | 0.35 | bottom | 0.0-0.2
+star insignia | 0.35 | top,headwear | 0.0-0.2

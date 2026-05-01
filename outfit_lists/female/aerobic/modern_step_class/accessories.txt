@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silicone hair tie | 0.85 | 0.0-0.2 | silicone
+slim sport watch | 0.70 | 0.0-0.2 | metal,silicone
+fitness tracker band | 0.75 | 0.0-0.2 | silicone
+bluetooth earbuds | 0.65 | 0.0-0.2 | plastic
+seamless scrunchie | 0.80 | 0.0-0.2 | nylon
+performance hair tie pack | 0.60 | 0.0-0.2 | nylon
+microfiber sweat towel | 0.65 | 0.0-0.2 | microfiber
+insulated water bottle | 0.55 | 0.0-0.2 | metal
+yoga block strap | 0.30 | 0.0-0.1 | nylon
+phone armband | 0.40 | 0.0-0.2 | spandex,nylon

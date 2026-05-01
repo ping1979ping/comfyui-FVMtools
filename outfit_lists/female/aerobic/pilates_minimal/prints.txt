@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid neutral | 0.95 | top,bottom,outerwear | 0.0-0.2
+tonal stripes | 0.45 | top,bottom | 0.0-0.2
+heather marl | 0.55 | top,outerwear | 0.0-0.2
+ribbed texture | 0.65 | top,bottom | 0.0-0.2
+subtle gradient | 0.40 | top,bottom | 0.0-0.2
+soft dusty palette | 0.50 | top,bottom | 0.0-0.2
+mineral wash | 0.40 | top,bottom | 0.0-0.2
+small studio logo | 0.35 | top,outerwear | 0.0-0.3
+contour seam | 0.40 | top,bottom | 0.0-0.2
+muted color-block | 0.45 | top,bottom | 0.0-0.2

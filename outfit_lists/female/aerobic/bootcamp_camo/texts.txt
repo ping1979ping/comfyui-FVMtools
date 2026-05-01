@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BOOTCAMP" | 0.30 | top | bold stencil
+"DRILL" | 0.20 | top | bold stencil
+"NO EXCUSES" | 0.25 | top | bold stencil
+"PUSH HARDER" | 0.25 | top | bold block letters
+"DEPLOY" | 0.20 | top | bold stencil
+"COMBAT FIT" | 0.20 | top | bold stencil
+"OUTRUN" | 0.15 | top | athletic font
+"UNIT 7" | 0.15 | top | bold stencil
+"BUILD STRENGTH" | 0.20 | top | athletic font
+"GO HARD" | 0.20 | top | bold block letters

@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"FIGHT" | 0.30 | top | bold block letters
+"KNOCKOUT" | 0.25 | top | bold block letters
+"TKO" | 0.20 | top | bold block letters
+"WARRIOR" | 0.25 | top | gothic font
+"SWEAT IT OUT" | 0.20 | top | athletic font
+"NO MERCY" | 0.20 | top | bold block letters
+"ROUND ONE" | 0.15 | top | athletic font
+"BEAST" | 0.20 | top | bold block letters
+"CHAMP" | 0.20 | top | bold block letters
+"GRIND HARDER" | 0.20 | top | athletic font

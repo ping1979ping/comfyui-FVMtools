@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid color-block | 0.65 | top,bottom,outerwear | 0.0-0.2
+subtle tonal stripes | 0.50 | top,bottom | 0.0-0.2
+abstract gradient | 0.45 | top,bottom | 0.0-0.2
+performance camo | 0.30 | top,bottom | 0.0-0.2
+thin side stripe | 0.55 | bottom,outerwear | 0.0-0.2
+geometric panel | 0.35 | top,bottom | 0.0-0.2
+heather marl texture | 0.55 | top,outerwear | 0.0-0.2
+reflective accent | 0.35 | top,outerwear | 0.0-0.2
+brand logo | 0.40 | top,headwear | 0.0-0.3
+contour lines | 0.30 | top,bottom | 0.0-0.2

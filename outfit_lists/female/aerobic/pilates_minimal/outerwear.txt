@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wrap cardigan | 0.75 | 0.0-0.2 | modal,cotton
+#color# longline lounge robe | 0.55 | 0.0-0.2 | modal,cotton
+#color# cropped studio hoodie | 0.70 | 0.0-0.2 | cotton,fleece
+#color# half-zip soft pullover | 0.65 | 0.0-0.2 | modal,fleece
+#color# minimalist track jacket | 0.55 | 0.0-0.2 | polyester,nylon
+#color# oversized lounge tee | 0.65 | 0.0-0.2 | cotton,modal
+#color# soft kimono wrap | 0.45 | 0.0-0.2 | modal,cotton
+#color# zip-up studio jacket | 0.60 | 0.0-0.2 | cotton,fleece

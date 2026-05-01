@@ -1,0 +1,10 @@
+# format: text_content | probability | compatible_slots | font_hint
+"STEP UP" | 0.25 | top | clean modern font
+"PUSH" | 0.20 | top | bold block letters
+"CARDIO" | 0.20 | top | athletic font
+"STRONGER" | 0.20 | top | bold block letters
+"FOCUS" | 0.20 | top | clean modern font
+"LEVEL UP" | 0.15 | top | athletic font
+"TRAIN" | 0.20 | top | bold block letters
+"daily move" | 0.20 | top | minimal sans
+"+1%" | 0.15 | top | minimal sans

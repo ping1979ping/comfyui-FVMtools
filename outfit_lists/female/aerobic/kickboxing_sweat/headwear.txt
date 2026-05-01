@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide sweat headband | 0.90 | 0.0-0.1 | cotton,nylon
+#color# bandana wrap | 0.65 | 0.0-0.2 | cotton
+#color# logo trucker cap | 0.45 | 0.0-0.2 | mesh,polyester
+#color# beanie | 0.30 | 0.0-0.2 | acrylic,cotton

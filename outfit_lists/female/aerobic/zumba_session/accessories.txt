@@ -1,0 +1,12 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beaded coin belt | 0.85 | 0.0-0.1 | metal,plastic
+hoop earrings | 0.75 | 0.0-0.2 | metal
+stack of bangles | 0.70 | 0.0-0.2 | metal,plastic
+flower hair clip | 0.65 | 0.0-0.2 | plastic
+fringe scarf wrap | 0.55 | 0.0-0.2 | polyester
+ankle bells | 0.45 | 0.0-0.1 | metal
+beaded anklet | 0.40 | 0.0-0.2 | plastic,metal
+silicone hair tie | 0.70 | 0.0-0.2 | silicone
+sweat towel | 0.55 | 0.0-0.2 | cotton

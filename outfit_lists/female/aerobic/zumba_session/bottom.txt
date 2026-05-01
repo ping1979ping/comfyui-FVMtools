@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide-leg dance pants | 0.75 | 0.0-0.2 | polyester,spandex
+#color# fringe hip scarf | 0.85 | 0.0-0.1 | polyester
+#color# ruffle dance shorts | 0.70 | 0.0-0.1 | polyester,nylon
+#color# salsa skirt | 0.70 | 0.0-0.2 | polyester,satin
+#color# flared jazz pants | 0.65 | 0.0-0.2 | spandex,polyester
+#color# high-cut briefs | 0.60 | 0.0-0.1 | spandex,nylon
+#color# capri dance tights | 0.65 | 0.0-0.2 | spandex,nylon
+#color# tropical print shorts | 0.55 | 0.0-0.2 | polyester,cotton
+#color# wraparound dance skirt | 0.55 | 0.0-0.2 | polyester,satin
+#color# bell-bottom workout pants | 0.50 | 0.0-0.2 | spandex,polyester

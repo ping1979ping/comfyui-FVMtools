@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# seamless sports bra | 0.95 | 0.0-0.1 | spandex,nylon
+#color# longline sports bra | 0.85 | 0.0-0.1 | spandex,nylon,polyester
+#color# strappy back sports bra | 0.70 | 0.0-0.1 | spandex,nylon
+#color# fitted racerback tank | 0.90 | 0.0-0.2 | polyester,spandex
+#color# breathable performance tee | 0.80 | 0.0-0.2 | polyester,mesh
+#color# cropped workout tee | 0.75 | 0.0-0.2 | cotton,polyester
+#color# muscle vest | 0.65 | 0.0-0.2 | polyester,mesh
+#color# mesh-back tank | 0.60 | 0.0-0.2 | mesh,polyester
+#color# cutout shoulder top | 0.55 | 0.0-0.2 | spandex,nylon
+#color# compression shirt | 0.70 | 0.0-0.2 | spandex,polyester
+#color# v-neck performance top | 0.55 | 0.0-0.2 | polyester,mesh

@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tactical training boots | 0.75 | 0.0-0.2 | leather,mesh
+#color# trail running shoes | 0.85 | 0.0-0.2 | mesh,synthetic
+#color# cross-trainer sneakers | 0.90 | 0.0-0.2 | mesh,synthetic
+#color# obstacle course shoes | 0.65 | 0.0-0.2 | mesh,synthetic
+#color# combat boots | 0.50 | 0.0-0.2 | leather,canvas
+#color# crew training socks | 0.75 | 0.0-0.1 | cotton,polyester
+#color# compression calf sleeves | 0.45 | 0.0-0.2 | spandex,polyester

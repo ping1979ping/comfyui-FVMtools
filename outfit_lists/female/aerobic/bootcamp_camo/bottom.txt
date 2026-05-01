@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# camo cargo shorts | 0.90 | 0.0-0.2 | cotton,polyester
+#color# tactical training pants | 0.75 | 0.0-0.2 | nylon,polyester
+#color# compression tights | 0.85 | 0.0-0.2 | spandex,nylon
+#color# bike shorts | 0.70 | 0.0-0.1 | spandex,nylon
+#color# camo joggers | 0.65 | 0.0-0.2 | cotton,polyester
+#color# combat capris | 0.60 | 0.0-0.2 | spandex,nylon
+#color# loose training shorts | 0.65 | 0.0-0.1 | polyester,nylon
+#color# pocketed running shorts | 0.55 | 0.0-0.1 | polyester,nylon
+#color# fitted cargo leggings | 0.55 | 0.0-0.2 | spandex,nylon

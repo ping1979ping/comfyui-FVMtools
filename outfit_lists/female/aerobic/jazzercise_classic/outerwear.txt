@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# slouchy dolman sweater | 0.80 | 0.0-0.2 | cotton,acrylic
+#color# off-shoulder fleece pullover | 0.75 | 0.0-0.2 | cotton,fleece
+#color# zip-up dance jacket | 0.65 | 0.0-0.2 | polyester,nylon
+#color# warm-up wrap | 0.55 | 0.0-0.2 | cotton,acrylic
+#color# crochet shrug | 0.40 | 0.0-0.2 | cotton,acrylic
+#color# velour track jacket | 0.55 | 0.0-0.2 | velour,polyester
+#color# cropped cardigan | 0.50 | 0.0-0.2 | cotton,acrylic

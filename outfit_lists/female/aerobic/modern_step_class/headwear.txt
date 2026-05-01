@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# moisture-wicking headband | 0.90 | 0.0-0.1 | polyester,spandex
+#color# slim performance band | 0.75 | 0.0-0.1 | nylon,spandex
+#color# ponytail cap | 0.55 | 0.0-0.2 | polyester,nylon
+#color# trucker mesh cap | 0.45 | 0.0-0.2 | mesh,polyester
