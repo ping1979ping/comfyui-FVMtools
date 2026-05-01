@@ -1,0 +1,10 @@
+# slot: fabrics
+# format: fabric_name
+
+velvet
+silk
+satin
+lace
+mesh
+chiffon
+silk charmeuse

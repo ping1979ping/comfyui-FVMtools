@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+utility bra | 0.90 | 0.2-0.5 | cotton,rayon
+sturdy pointed bra | 0.88 | 0.2-0.5 | cotton,rayon
+plain longline bra | 0.85 | 0.2-0.6 | cotton,rayon
+ration-era bra | 0.82 | 0.2-0.5 | cotton,rayon
+unadorned bullet bra | 0.78 | 0.2-0.5 | cotton,rayon
+basic torpedo bra | 0.75 | 0.2-0.5 | cotton,rayon
+make-do longline | 0.72 | 0.2-0.5 | cotton,rayon
+home-front camisole | 0.68 | 0.2-0.5 | cotton,rayon
+plain corselette | 0.65 | 0.2-0.5 | cotton,rayon
+patched undershirt | 0.55 | 0.2-0.4 | cotton
+ration-stamped bra | 0.50 | 0.2-0.5 | cotton,rayon
+plain full slip top | 0.48 | 0.2-0.5 | rayon,cotton

@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bridal-shower garter belt | 0.92 | 0.2-0.7 | lace,satin
+ruffle-trim panties | 0.85 | 0.1-0.5 | chiffon,lace
+heart-print thong | 0.78 | 0.1-0.5 | mesh,lace
+bow-back briefs | 0.74 | 0.1-0.5 | satin,silk
+coquette tap shorts | 0.70 | 0.2-0.6 | silk,satin
+suspender belt | 0.68 | 0.2-0.7 | lace,satin
+ribbon-tie bridal panties | 0.65 | 0.1-0.5 | satin,silk
+sheer bachelorette thong | 0.60 | 0.1-0.5 | mesh,chiffon
+ruched cheeky briefs | 0.58 | 0.1-0.5 | mesh,lace
+high-waisted bridal briefs | 0.55 | 0.2-0.6 | lace,satin
+beaded garter belt | 0.62 | 0.2-0.7 | lace,pearl
+sheer mini skirt | 0.52 | 0.2-0.6 | tulle,organza
+ribbon-trim boy shorts | 0.50 | 0.1-0.5 | satin,mesh
+ruffle-edge slip skirt | 0.48 | 0.3-0.6 | satin,silk

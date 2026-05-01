@@ -1,0 +1,21 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+studded posture collar | 0.90 | 0.1-0.4 | leather,metal
+spiked O-ring choker | 0.88 | 0.1-0.4 | leather,metal
+classic riding gloves | 0.85 | 0.1-0.4 | leather
+buckled wrist cuffs | 0.82 | 0.1-0.4 | leather,metal
+elbow-length gloves | 0.80 | 0.1-0.4 | leather
+fishnet stockings | 0.78 | 0.1-0.4 | mesh,nylon
+braided whip | 0.72 | 0.1-0.4 | leather
+short riding crop | 0.70 | 0.1-0.4 | leather
+reinforced posture belt | 0.68 | 0.1-0.4 | leather,metal
+spiked arm cuffs | 0.65 | 0.1-0.4 | leather,metal
+buckled ankle restraints | 0.62 | 0.1-0.4 | leather,metal
+chain-link harness | 0.58 | 0.1-0.4 | metal
+silver-studded choker | 0.55 | 0.1-0.4 | leather,metal
+soft-finish wrist gauntlets | 0.52 | 0.1-0.4 | nubuck
+brushed thigh-high stockings | 0.48 | 0.1-0.4 | nylon,mesh
+buckled bicep bands | 0.45 | 0.1-0.4 | leather,metal
+smooth blindfold strap | 0.42 | 0.1-0.4 | satin
+classic flogger | 0.38 | 0.1-0.4 | leather

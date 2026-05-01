@@ -1,0 +1,12 @@
+# slot: fabrics
+# format: fabric_name
+
+silk
+chiffon
+lace
+mesh
+tulle
+organza
+silk charmeuse
+satin
+voile

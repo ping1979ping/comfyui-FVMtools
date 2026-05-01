@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+embroidered pouch in champagne | 0.75 | 0.1-0.4 | silk,satin
+ribbon-tie purse in blush | 0.68 | 0.1-0.4 | silk,satin
+delicate clutch in pale pink | 0.62 | 0.2-0.5 | satin,silk
+floral-print toiletry bag in dusty rose | 0.58 | 0.1-0.4 | silk,satin
+small pearl handbag in nude | 0.52 | 0.2-0.5 | satin,silk
+drawstring pouch in peach | 0.48 | 0.1-0.4 | silk,satin
+scalloped clutch in champagne | 0.45 | 0.2-0.5 | satin,silk

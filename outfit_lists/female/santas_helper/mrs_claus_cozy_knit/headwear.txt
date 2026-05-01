@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Santa hat with fur pompom | 0.95 | 0.3-0.6 | velvet,faux_fur
+red knit beanie with pompom | 0.75 | 0.3-0.5 | wool
+white fur earmuffs | 0.55 | 0.3-0.5 | faux_fur
+red bonnet with white frill | 0.45 | 0.3-0.6 | cotton,satin
+red plaid newsboy cap | 0.40 | 0.3-0.5 | wool
+red headscarf with snowflake pattern | 0.50 | 0.3-0.5 | cotton,wool

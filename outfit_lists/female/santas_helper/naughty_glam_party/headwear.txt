@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Santa hat with fur pompom | 0.95 | 0.3-0.6 | velvet,faux_fur
+red sequin mini Santa hat fascinator | 0.75 | 0.3-0.6 | sequin,faux_fur
+rhinestone reindeer antler headband | 0.60 | 0.3-0.5 | metal
+red glitter elf hat | 0.50 | 0.3-0.5 | sequin
+white faux fur headband with bells | 0.55 | 0.3-0.5 | faux_fur,metal
+red lace bow hair clip | 0.45 | 0.3-0.5 | lace,satin

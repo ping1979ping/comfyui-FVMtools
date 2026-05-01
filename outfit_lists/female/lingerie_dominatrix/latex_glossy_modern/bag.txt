@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+glossy mini bag | 0.78 | 0.1-0.4 | latex
+mirror-finish clutch | 0.72 | 0.2-0.5 | PVC,vinyl
+chrome shoulder bag | 0.68 | 0.1-0.4 | metal,vinyl
+holographic crossbody | 0.62 | 0.1-0.4 | vinyl,PVC
+clear envelope clutch | 0.58 | 0.2-0.5 | PVC
+zipped pouch | 0.55 | 0.1-0.4 | latex,PVC
+liquid-shine bucket bag | 0.50 | 0.1-0.4 | wet-look
+patent top-handle | 0.45 | 0.2-0.5 | patent leather
+glossy backpack | 0.42 | 0.1-0.4 | latex,vinyl
+mesh-paneled tote | 0.38 | 0.2-0.5 | mesh,vinyl

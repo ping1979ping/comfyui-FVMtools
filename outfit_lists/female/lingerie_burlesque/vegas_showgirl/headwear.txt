@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ostrich-plume headdress | 0.92 | 0.2-0.5 | feathers,sequins
+rhinestone showgirl crown | 0.85 | 0.2-0.5 | sequins
+crystal-tiara plume | 0.78 | 0.2-0.5 | sequins,feathers
+gold-sequin showgirl band | 0.65 | 0.2-0.5 | sequins,satin
+plume-tower headpiece | 0.55 | 0.2-0.5 | feathers,sequins
+crystal-burst hair piece | 0.45 | 0.2-0.5 | sequins

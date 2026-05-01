@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# fitted / glam
+red sequin bustier with fur trim | 0.95 | 0.3-0.6 | sequin,faux_fur
+red mesh corset with crystal lacing | 0.85 | 0.3-0.6 | mesh,satin
+red plunge halter top | 0.75 | 0.3-0.6 | satin,sequin
+red bandeau with rhinestone trim | 0.65 | 0.3-0.5 | spandex,sequin
+red one-shoulder crop top | 0.70 | 0.3-0.6 | satin,sequin
+red lace bralette with bell trim | 0.55 | 0.3-0.5 | lace,satin
+red sheer mesh long-sleeve top | 0.60 | 0.3-0.5 | mesh,spandex
+red glittery off-shoulder top | 0.65 | 0.3-0.6 | sequin,satin
+red strapless tube top with bow | 0.55 | 0.3-0.5 | satin,spandex
+
+# dress-style
+red sequin mini dress with fur hem | 0.95 | 0.3-0.6 | sequin,faux_fur
+red bodycon mini dress with cutouts | 0.80 | 0.3-0.6 | spandex,satin
+red mesh slip dress with rhinestones | 0.65 | 0.3-0.6 | mesh,satin
+red wrap mini dress with thigh slit | 0.70 | 0.3-0.6 | satin,spandex

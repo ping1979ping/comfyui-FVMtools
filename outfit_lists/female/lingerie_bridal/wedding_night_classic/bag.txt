@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bridal clutch | 0.88 | 0.3-0.7 | satin,silk
+beaded minaudiere | 0.82 | 0.3-0.7 | pearl,satin
+embroidered evening bag | 0.74 | 0.2-0.7 | lace,satin
+wedding bouquet | 0.80 | 0.2-0.7 | silk
+ribbon-tied purse | 0.60 | 0.2-0.6 | satin,silk
+jeweled evening clutch | 0.62 | 0.3-0.7 | satin,crystal
+drawstring pouch | 0.55 | 0.2-0.6 | silk,satin
+champagne bridal clutch | 0.55 | 0.3-0.7 | satin,silk

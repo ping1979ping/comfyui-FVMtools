@@ -1,0 +1,7 @@
+# slot: fabrics
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+satin | 1.0 | 0.2-0.6 | satin
+nylon | 1.0 | 0.2-0.6 | nylon
+rayon | 1.0 | 0.2-0.6 | rayon
+chiffon | 1.0 | 0.2-0.6 | chiffon

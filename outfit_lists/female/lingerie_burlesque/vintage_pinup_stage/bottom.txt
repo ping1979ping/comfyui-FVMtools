@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waist polka-dot panties | 0.88 | 0.2-0.6 | satin,lace
+ruffle-back pinup panty | 0.85 | 0.2-0.5 | satin,lace
+red high-waist briefs | 0.82 | 0.2-0.6 | satin,lace
+cherry-print tap shorts | 0.78 | 0.3-0.6 | satin,silk
+ruffle-trim retro briefs | 0.72 | 0.2-0.5 | satin,lace
+gingham pinup panty | 0.65 | 0.2-0.5 | mesh,lace
+ribbon-tie tap pants | 0.62 | 0.3-0.6 | satin,silk
+ruffle-edge bloomers | 0.58 | 0.2-0.5 | satin,organza
+polka-dot garter shorts | 0.50 | 0.2-0.5 | satin,lace
+black ruffle high-cut briefs | 0.45 | 0.2-0.5 | lace,satin
+ribbon-side retro briefs | 0.40 | 0.2-0.5 | satin,lace
+red bow-trim tap shorts | 0.38 | 0.3-0.6 | satin,silk

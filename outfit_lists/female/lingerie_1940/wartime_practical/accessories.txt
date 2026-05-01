@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+painted-leg seam | 0.92 | 0.2-0.6 | none
+liquid-stocking leg paint | 0.88 | 0.2-0.6 | none
+plain garter belt 4-strap | 0.85 | 0.2-0.6 | cotton,rayon
+practical opaque stockings | 0.78 | 0.2-0.5 | cotton
+ankle socks | 0.75 | 0.2-0.4 | cotton,wool
+heavy knee socks | 0.72 | 0.2-0.4 | wool
+ration-issue stockings | 0.68 | 0.2-0.5 | rayon,cotton
+home-front headscarf | 0.65 | 0.2-0.5 | cotton,rayon
+factory hairnet | 0.58 | 0.2-0.4 | cotton
+rosie-style bandana tie | 0.55 | 0.2-0.4 | cotton
+plain wedding band | 0.50 | 0.3-0.6 | metal
+service brooch | 0.45 | 0.3-0.6 | metal

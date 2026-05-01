@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+seamed sheer stockings | 0.92 | 0.3-0.6 | nylon
+champagne thigh-highs | 0.88 | 0.3-0.6 | nylon
+6-strap garter belt | 0.85 | 0.3-0.6 | charmeuse,lace
+elbow-length opera gloves | 0.82 | 0.3-0.6 | charmeuse
+brilliant tennis bracelet | 0.78 | 0.3-0.6 | metal,diamond
+multi-strand necklace | 0.75 | 0.3-0.6 | pearl
+brilliant drop earrings | 0.72 | 0.3-0.6 | metal,diamond
+art-deco brooch | 0.68 | 0.3-0.6 | metal,rhinestone
+plumed boa | 0.65 | 0.3-0.6 | feather
+chandelier earrings | 0.62 | 0.3-0.6 | metal,crystal
+champagne marabou stole | 0.58 | 0.3-0.6 | feather
+brilliant cocktail ring | 0.55 | 0.3-0.6 | metal,diamond
+art-deco pendant | 0.50 | 0.3-0.6 | metal

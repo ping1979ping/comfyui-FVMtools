@@ -1,0 +1,19 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bride-to-be sash | 0.92 | 0.1-0.6 | satin,silk
+bachelorette tiara veil | 0.85 | 0.2-0.7 | tulle,lace
+beaded choker | 0.78 | 0.2-0.7 | pearl,satin
+ribbon arm gloves | 0.72 | 0.2-0.7 | lace,silk
+ruffled garter | 0.78 | 0.2-0.6 | lace,satin
+heart-shaped earrings | 0.70 | 0.3-0.7 | pearl,crystal
+fishnet thigh stockings | 0.68 | 0.1-0.5 | nylon
+ankle-tie stockings | 0.62 | 0.1-0.5 | nylon
+jeweled bracelet | 0.65 | 0.3-0.7 | crystal
+heart pendant necklace | 0.60 | 0.3-0.7 | pearl
+beaded ribbon choker | 0.55 | 0.2-0.6 | satin,pearl
+opera-length gloves | 0.52 | 0.3-0.7 | satin,silk
+jeweled hair barrette | 0.50 | 0.3-0.7 | crystal
+ruffled garter ribbon | 0.55 | 0.2-0.6 | silk,satin
+marabou wrist cuffs | 0.45 | 0.1-0.5 | feather
+beaded waist chain | 0.42 | 0.1-0.5 | pearl

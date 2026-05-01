@@ -1,0 +1,9 @@
+leather
+patent leather
+suede
+nubuck
+metal
+elastic
+nylon
+satin
+mesh

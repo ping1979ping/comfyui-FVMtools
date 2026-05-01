@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport-luxe bomber jacket | 0.55 | 0.1-0.5 | scuba,leather
+performance track jacket | 0.52 | 0.1-0.4 | scuba,spandex
+cropped athletic hoodie | 0.50 | 0.1-0.4 | scuba,spandex
+sleek racer jacket | 0.48 | 0.2-0.5 | leather,scuba
+ribbed sport zip jacket | 0.45 | 0.1-0.4 | spandex,scuba
+caged athletic vest | 0.42 | 0.1-0.4 | spandex,elastic
+power-strap windbreaker | 0.38 | 0.1-0.4 | nylon,scuba
+flex-band cropped jacket | 0.35 | 0.1-0.4 | scuba,spandex
+gym-luxe shrug | 0.32 | 0.1-0.4 | spandex,elastic

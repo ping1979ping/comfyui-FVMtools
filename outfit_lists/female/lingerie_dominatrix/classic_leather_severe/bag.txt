@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+studded clutch | 0.78 | 0.2-0.5 | leather
+chain-strap shoulder bag | 0.75 | 0.1-0.5 | leather,metal
+buckled mini satchel | 0.70 | 0.2-0.5 | leather
+patent envelope clutch | 0.65 | 0.2-0.5 | patent leather
+spiked crossbody | 0.60 | 0.1-0.4 | leather,metal
+riveted bucket bag | 0.55 | 0.1-0.4 | leather
+soft-finish top-handle | 0.50 | 0.2-0.5 | nubuck
+brushed shoulder pouch | 0.45 | 0.1-0.4 | suede
+classic tote | 0.42 | 0.2-0.5 | leather
+harness-clipped pouch | 0.38 | 0.1-0.4 | leather,metal

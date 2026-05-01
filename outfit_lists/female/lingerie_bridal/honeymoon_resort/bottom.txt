@@ -1,0 +1,16 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+honeymoon panties | 0.88 | 0.1-0.5 | chiffon,lace
+beach-bridal briefs | 0.82 | 0.1-0.5 | cotton,lace
+resort tap shorts | 0.78 | 0.2-0.6 | silk,satin
+tropical thong | 0.72 | 0.1-0.5 | mesh,lace
+ribbon-tie panties | 0.68 | 0.1-0.5 | satin,silk
+high-cut bridal briefs | 0.65 | 0.1-0.5 | mesh,lace
+poolside boy shorts | 0.60 | 0.1-0.5 | cotton,lace
+beach garter belt | 0.58 | 0.2-0.6 | lace,satin
+sheer honeymoon panties | 0.55 | 0.1-0.5 | mesh,chiffon
+sarong wrap | 0.50 | 0.2-0.6 | chiffon,silk
+ruffle-edge panties | 0.48 | 0.1-0.5 | chiffon,lace
+beach mini wrap | 0.52 | 0.2-0.6 | chiffon,silk
+embroidered briefs | 0.45 | 0.1-0.5 | mesh,lace

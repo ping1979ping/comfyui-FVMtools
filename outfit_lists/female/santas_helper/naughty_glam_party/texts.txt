@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"NAUGHTY" | 0.30 | top | playful script
+"NAUGHTY LIST" | 0.20 | top | playful bold
+"BAD GIRL" | 0.20 | top | playful bold
+"JINGLE THESE" | 0.15 | top | playful script
+"ELF" | 0.15 | top | playful bold
+"SLEIGH ALL DAY" | 0.15 | top | festive script

@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim chain pouch | 0.55 | 0.1-0.5 | leather,scuba
+minimalist micro clutch | 0.50 | 0.2-0.5 | leather,suede
+hairline-strap mini bag | 0.48 | 0.1-0.5 | leather,velvet
+clean-line cardholder pouch | 0.45 | 0.2-0.5 | leather,scuba
+refined slim crossbody | 0.42 | 0.1-0.5 | leather,scuba
+modernist envelope clutch | 0.38 | 0.2-0.5 | scuba,leather

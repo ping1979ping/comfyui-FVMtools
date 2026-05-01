@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim hair cord | 0.50 | 0.1-0.5 | elastic,leather
+hairline headband | 0.45 | 0.1-0.5 | elastic,velvet
+delicate hair chain | 0.42 | 0.1-0.5 | elastic,leather
+minimalist hair cuff | 0.38 | 0.1-0.5 | leather,elastic
+single-strand hair tie | 0.35 | 0.1-0.4 | elastic,leather

@@ -1,0 +1,20 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heavy-duty combat boots | 0.92 | 0.1-0.4 | leather,canvas
+buckled platform boots | 0.88 | 0.1-0.4 | leather,metal
+strapped knee-high boots | 0.85 | 0.1-0.4 | leather,nylon
+chain-strap platform heels | 0.82 | 0.1-0.4 | leather,metal
+clipped tactical boots | 0.80 | 0.1-0.4 | nylon,canvas
+heavy lace-up boots | 0.78 | 0.1-0.4 | leather
+modular thigh-high boots | 0.75 | 0.1-0.4 | nylon,metal
+spiked platform stilettos | 0.72 | 0.1-0.4 | leather,metal
+buckled cage sandals | 0.68 | 0.1-0.4 | leather,metal
+strapped harness pumps | 0.65 | 0.1-0.4 | leather,nylon
+heavy-duty platform stomper boots | 0.62 | 0.1-0.4 | leather,canvas
+chain-wrapped ankle boots | 0.58 | 0.1-0.4 | leather,chain
+scuba-style sock boots | 0.55 | 0.1-0.4 | neoprene,spandex
+clipped cage stilettos | 0.52 | 0.1-0.4 | leather,metal
+strapped gladiator heels | 0.48 | 0.1-0.4 | leather,nylon
+buckled work boots | 0.45 | 0.1-0.4 | leather
+mesh-paneled platform boots | 0.42 | 0.1-0.4 | mesh,leather

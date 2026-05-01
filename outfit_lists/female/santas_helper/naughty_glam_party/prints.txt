@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+red sequin shimmer | 0.65 | top,bottom,outerwear | 0.3-0.6
+white fur trim | 0.60 | top,bottom,headwear,outerwear | 0.3-0.7
+rhinestone scatter | 0.55 | top,bottom,headwear | 0.3-0.6
+glitter coating | 0.50 | top,bottom,outerwear | 0.3-0.6
+candy cane stripes | 0.40 | bottom,headwear | 0.3-0.5
+gold star scatter | 0.35 | top,outerwear | 0.3-0.6
+holographic shimmer | 0.40 | top,bottom | 0.3-0.6
+mistletoe embroidery | 0.30 | top | 0.3-0.5
+crystal bead trim | 0.40 | top,headwear | 0.3-0.6

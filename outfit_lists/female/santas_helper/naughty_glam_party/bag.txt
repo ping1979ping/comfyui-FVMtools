@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red sequin clutch with bow | 0.75 | 0.3-0.6 | sequin
+red glitter mini purse | 0.60 | 0.3-0.5 | sequin,satin
+white fur-trimmed handbag | 0.50 | 0.3-0.5 | faux_fur
+red rhinestone wristlet | 0.50 | 0.3-0.6 | metal,satin
+red heart-shaped clutch | 0.45 | 0.3-0.5 | satin,sequin
+red mini barrel bag with chain | 0.40 | 0.3-0.5 | leather,metal
+red metallic chain shoulder bag | 0.45 | 0.3-0.6 | metal,leather

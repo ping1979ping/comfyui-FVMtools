@@ -1,0 +1,16 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beach honeymoon sandals | 0.88 | 0.1-0.5 | satin,leather
+strappy resort heels | 0.82 | 0.2-0.6 | satin,silk
+crystal-strap sandals | 0.76 | 0.3-0.7 | satin,crystal
+poolside slides | 0.72 | 0.1-0.4 | satin,leather
+tropical wedge heels | 0.68 | 0.2-0.5 | cotton,satin
+ankle-tie wedding sandals | 0.64 | 0.2-0.6 | satin,silk
+embroidered flat sandals | 0.60 | 0.1-0.4 | leather,cotton
+honeymoon stilettos | 0.62 | 0.3-0.6 | satin,silk
+beaded resort heels | 0.55 | 0.2-0.6 | satin,pearl
+seashell-trim sandals | 0.50 | 0.1-0.4 | leather,cotton
+gladiator wedding sandals | 0.48 | 0.2-0.5 | leather,satin
+T-strap bridal sandals | 0.52 | 0.2-0.6 | satin,silk
+beach platform heels | 0.45 | 0.2-0.5 | cotton,satin

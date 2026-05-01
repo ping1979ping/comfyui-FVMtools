@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red high-heel boots with fur trim | 0.90 | 0.3-0.6 | leather,faux_fur
+black knee-high boots | 0.75 | 0.3-0.6 | leather
+red platform heels | 0.55 | 0.3-0.5 | satin,velvet
+green elf-pointed shoes with bells | 0.35 | 0.3-0.5 | velvet
+red ankle boots with white fur cuffs | 0.65 | 0.3-0.5 | leather,faux_fur
+red strappy heels with bow | 0.45 | 0.3-0.5 | satin
+red mary jane heels | 0.50 | 0.3-0.5 | leather,satin
+white fur-lined ankle boots | 0.40 | 0.3-0.5 | leather,faux_fur

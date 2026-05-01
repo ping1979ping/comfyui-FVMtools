@@ -1,0 +1,20 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+glossy panties | 0.90 | 0.1-0.4 | latex
+high-cut briefs | 0.88 | 0.1-0.4 | latex,wet-look
+mirror-finish hotpants | 0.85 | 0.1-0.4 | PVC,vinyl
+zipped mini skirt | 0.82 | 0.2-0.5 | latex,PVC
+liquid-shine leggings | 0.80 | 0.1-0.4 | wet-look,spandex
+chrome-finish thong | 0.78 | 0.1-0.4 | vinyl,PVC
+plunge cheeky brief | 0.75 | 0.1-0.4 | latex
+glossy hotpants | 0.72 | 0.1-0.4 | latex
+high-waisted briefs | 0.68 | 0.2-0.5 | latex,PVC
+zipped pencil skirt | 0.65 | 0.2-0.5 | PVC,vinyl
+strappy cage bottoms | 0.62 | 0.1-0.4 | latex,elastic
+liquid-shine catsuit pants | 0.58 | 0.1-0.4 | wet-look,spandex
+mirror micro skirt | 0.55 | 0.1-0.4 | vinyl,PVC
+sheer mesh briefs | 0.52 | 0.1-0.4 | mesh,elastic
+glossy bike shorts | 0.48 | 0.1-0.4 | latex,wet-look
+stretch compression shorts | 0.45 | 0.1-0.4 | spandex,wet-look
+patent mini skirt | 0.42 | 0.2-0.5 | patent leather

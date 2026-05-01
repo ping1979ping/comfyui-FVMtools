@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bridal robe | 0.88 | 0.2-0.7 | silk,satin
+sheer peignoir | 0.82 | 0.2-0.6 | chiffon,lace
+wedding kimono | 0.74 | 0.2-0.6 | lace,silk
+heirloom dressing gown | 0.68 | 0.2-0.6 | silk,satin
+bridal cape | 0.65 | 0.2-0.7 | tulle,organza
+ribbon-trim robe | 0.60 | 0.2-0.7 | silk,satin
+romantic bed jacket | 0.55 | 0.2-0.6 | chiffon,silk
+embroidered bridal robe | 0.58 | 0.2-0.7 | satin,lace
+wedding-night wrap | 0.52 | 0.1-0.5 | feather,satin
+short bridal robe | 0.50 | 0.2-0.6 | lace,chiffon

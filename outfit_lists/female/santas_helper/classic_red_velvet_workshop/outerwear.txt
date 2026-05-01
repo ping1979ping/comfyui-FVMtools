@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red bolero jacket with fur trim | 0.80 | 0.3-0.6 | velvet,faux_fur
+red cropped cape with white fur collar | 0.60 | 0.3-0.6 | velvet,faux_fur
+green shrug with red trim | 0.40 | 0.3-0.5 | velvet
+white faux fur capelet | 0.65 | 0.3-0.6 | faux_fur
+red suspenders with bell buckles | 0.35 | 0.3-0.5 | satin
+red shrug with white pompom edge | 0.45 | 0.3-0.6 | velvet,faux_fur
+red workshop vest with gold buttons | 0.40 | 0.3-0.5 | velvet,satin

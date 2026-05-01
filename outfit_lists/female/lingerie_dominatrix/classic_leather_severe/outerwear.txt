@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floor-length trench coat | 0.85 | 0.2-0.5 | leather
+classic biker jacket | 0.80 | 0.2-0.5 | leather
+studded moto jacket | 0.75 | 0.1-0.4 | leather
+buckled belted coat | 0.72 | 0.2-0.5 | leather
+harness-strapped jacket | 0.68 | 0.1-0.4 | leather
+patent overcoat | 0.62 | 0.2-0.5 | patent leather
+cropped riding jacket | 0.58 | 0.2-0.5 | leather
+brushed duster | 0.52 | 0.2-0.5 | suede
+soft-finish blazer | 0.45 | 0.2-0.5 | nubuck
+spiked moto jacket | 0.42 | 0.1-0.4 | leather,metal

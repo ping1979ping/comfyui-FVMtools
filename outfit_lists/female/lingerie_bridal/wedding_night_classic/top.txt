@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bridal babydoll | 0.92 | 0.2-0.7 | lace,tulle,chiffon
+heirloom corset | 0.85 | 0.2-0.7 | satin,lace,silk
+sweetheart bustier | 0.80 | 0.2-0.7 | satin,lace
+wedding-night chemise | 0.78 | 0.2-0.6 | silk,chiffon
+balconette bridal bra | 0.74 | 0.1-0.6 | lace,satin
+embroidered bridal corset | 0.72 | 0.2-0.7 | satin,lace
+plunge bridal bra | 0.68 | 0.1-0.6 | satin,lace
+ribbon-laced bustier | 0.65 | 0.2-0.7 | satin,lace
+longline bridal bra | 0.60 | 0.2-0.6 | lace,satin
+bridal bodysuit | 0.62 | 0.2-0.7 | lace,mesh,pearl
+romantic teddy | 0.55 | 0.2-0.6 | lace,chiffon
+heart-neckline bralette | 0.50 | 0.1-0.5 | lace,mesh
+keyhole-back bustier | 0.52 | 0.2-0.6 | satin,lace
+ruffled bridal bodice | 0.48 | 0.2-0.7 | organza,tulle
+bridal camisole | 0.45 | 0.2-0.6 | silk,satin

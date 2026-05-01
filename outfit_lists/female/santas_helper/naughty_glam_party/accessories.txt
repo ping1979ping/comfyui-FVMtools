@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rhinestone choker with bells | 0.65 | 0.3-0.6 | metal,satin
+candy cane glitter earrings | 0.55 | 0.3-0.5 | metal,sequin
+diamante snowflake necklace | 0.60 | 0.3-0.6 | metal
+red satin garter with bow | 0.55 | 0.3-0.5 | satin,lace
+fishnet opera gloves | 0.50 | 0.3-0.5 | nylon,lace
+red lace choker with pendant | 0.55 | 0.3-0.5 | lace,metal
+glitter body chain | 0.45 | 0.3-0.5 | metal
+rhinestone belly chain | 0.40 | 0.3-0.5 | metal
+red glitter clutch wand | 0.30 | 0.3-0.5 |
+red sequin garter belt | 0.45 | 0.3-0.5 | sequin,satin
+red ribbon arm wraps | 0.40 | 0.3-0.5 | satin

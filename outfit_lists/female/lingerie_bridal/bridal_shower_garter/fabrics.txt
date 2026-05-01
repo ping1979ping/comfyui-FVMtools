@@ -1,0 +1,8 @@
+silk
+lace
+satin
+tulle
+chiffon
+pearl
+organza
+mesh

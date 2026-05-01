@@ -1,0 +1,20 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waisted briefs | 0.88 | 0.2-0.5 | leather
+buckled hotpants | 0.85 | 0.1-0.4 | leather
+strapped garter belt | 0.82 | 0.1-0.4 | leather,elastic
+laced-up shorts | 0.80 | 0.1-0.4 | leather
+cage thong harness | 0.78 | 0.1-0.4 | leather,metal
+fitted pencil mini | 0.75 | 0.2-0.5 | leather
+studded briefs | 0.72 | 0.1-0.4 | leather
+riveted hotpants | 0.68 | 0.1-0.4 | leather
+classic garter belt | 0.65 | 0.1-0.4 | leather,elastic
+strappy cage bottoms | 0.62 | 0.1-0.4 | leather,elastic
+suspended chain bottoms | 0.58 | 0.1-0.4 | leather,metal
+mid-rise cigarette pants | 0.55 | 0.2-0.5 | leather
+buckled mini skirt | 0.52 | 0.2-0.5 | leather
+soft-finish shorts | 0.48 | 0.1-0.4 | nubuck
+brushed bondage skirt | 0.45 | 0.1-0.4 | suede
+zipped pencil skirt | 0.42 | 0.2-0.5 | leather,patent leather
+fishnet-paneled briefs | 0.38 | 0.1-0.4 | mesh,elastic

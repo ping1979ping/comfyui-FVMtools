@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scalloped chemise in dusty rose | 0.92 | 0.1-0.4 | lace,mesh
+delicate babydoll in blush | 0.88 | 0.1-0.4 | lace,chiffon
+embroidered slip in nude | 0.85 | 0.1-0.4 | lace,mesh
+sheer bralette in champagne | 0.80 | 0.1-0.4 | mesh,lace
+floral-pattern chemise in pale pink | 0.78 | 0.1-0.4 | lace,tulle
+ribbon-trim slip in peach | 0.72 | 0.1-0.4 | lace,satin
+bow-front bralette in dusty rose | 0.68 | 0.1-0.4 | lace,mesh
+scalloped-edge babydoll in mauve | 0.65 | 0.1-0.4 | lace,chiffon
+delicate camisole in blush | 0.62 | 0.1-0.4 | lace,mesh
+chantilly-trim slip in champagne | 0.58 | 0.1-0.4 | lace,silk
+embroidered bralette in nude | 0.55 | 0.1-0.4 | lace,mesh
+floral-pattern camisole in pale pink | 0.52 | 0.1-0.4 | lace,silk

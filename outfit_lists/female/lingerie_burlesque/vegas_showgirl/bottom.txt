@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rhinestone showgirl briefs | 0.90 | 0.2-0.5 | sequins,satin
+crystal-fringe booty shorts | 0.85 | 0.2-0.5 | sequins,satin
+gold-sequin high briefs | 0.82 | 0.2-0.5 | sequins,satin
+plume-trim showgirl panty | 0.78 | 0.2-0.5 | feathers,satin
+crystal-belt briefs | 0.72 | 0.2-0.5 | sequins,mesh
+rhinestone g-string | 0.68 | 0.1-0.4 | sequins,mesh
+showgirl high-cut briefs | 0.62 | 0.2-0.5 | sequins,satin
+plume-back stage briefs | 0.55 | 0.2-0.5 | feathers,sequins
+crystal-fringe skirt | 0.50 | 0.2-0.5 | sequins,satin
+silver-sequin shorts | 0.45 | 0.2-0.5 | sequins,satin
+gold-mesh briefs | 0.40 | 0.1-0.4 | mesh,sequins
+plume-fringe stage skirt | 0.38 | 0.2-0.5 | feathers,satin

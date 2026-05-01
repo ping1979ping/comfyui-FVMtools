@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim-strap stilettos | 0.90 | 0.1-0.5 | leather,suede
+delicate ankle heels | 0.85 | 0.1-0.5 | leather,suede
+hairline-strap sandals | 0.80 | 0.1-0.5 | leather,elastic
+refined caged pumps | 0.78 | 0.2-0.5 | leather,suede
+single-strap heels | 0.72 | 0.1-0.5 | leather,suede
+modernist pointed pumps | 0.70 | 0.2-0.5 | leather,scuba
+clean-line stilettos | 0.68 | 0.2-0.5 | leather,suede
+barely-there sandals | 0.65 | 0.1-0.5 | leather,elastic
+slim cord heels | 0.60 | 0.1-0.4 | leather,suede
+pared-back ankle heels | 0.55 | 0.2-0.5 | leather,scuba
+fine-strap pumps | 0.50 | 0.2-0.5 | leather,suede

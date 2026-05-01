@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# skirts
+red full midi skirt with white trim | 0.85 | 0.3-0.6 | velvet,faux_fur
+red tartan a-line skirt | 0.65 | 0.3-0.5 | wool
+red knit pencil skirt | 0.55 | 0.3-0.5 | wool
+red corduroy mini skirt | 0.45 | 0.3-0.5 | cotton
+red and white gingham skirt | 0.50 | 0.3-0.5 | cotton
+red tea-length skirt with fur hem | 0.55 | 0.3-0.6 | velvet,faux_fur
+
+# pants / leggings
+red cable-knit leggings | 0.60 | 0.3-0.5 | wool,spandex
+red and white striped tights | 0.55 | 0.3-0.5 | nylon,spandex
+red corduroy bloomers | 0.40 | 0.3-0.5 | cotton
+red knit thigh-high stockings | 0.50 | 0.3-0.5 | wool,nylon
+red plaid skinny pants | 0.45 | 0.3-0.5 | wool,cotton

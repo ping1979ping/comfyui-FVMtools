@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+studded peaked cap | 0.78 | 0.1-0.4 | leather,metal
+classic riding hood | 0.72 | 0.1-0.4 | leather
+buckled half-mask | 0.68 | 0.1-0.4 | leather
+spiked headband | 0.62 | 0.1-0.4 | leather,metal
+smooth blindfold | 0.58 | 0.1-0.4 | satin
+patent visor cap | 0.52 | 0.1-0.4 | patent leather
+laced-up muzzle | 0.48 | 0.1-0.4 | leather,metal
+veiled pillbox hat | 0.42 | 0.2-0.5 | mesh,satin
+soft-finish headband | 0.38 | 0.1-0.4 | nubuck
+chain-draped headpiece | 0.35 | 0.1-0.4 | metal

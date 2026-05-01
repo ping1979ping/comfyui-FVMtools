@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized harness duster | 0.55 | 0.1-0.5 | leather,scuba
+sculptural cropped jacket | 0.52 | 0.2-0.5 | leather,scuba
+labyrinth strap blazer | 0.48 | 0.2-0.5 | leather,scuba
+architectural cape | 0.45 | 0.1-0.4 | scuba,mesh
+prism overlay jacket | 0.42 | 0.2-0.5 | leather,scuba
+caged statement coat | 0.40 | 0.2-0.5 | leather,scuba
+fortress-strap shrug | 0.38 | 0.1-0.4 | leather,elastic
+maximal harness vest | 0.35 | 0.1-0.4 | leather,elastic
+diamond-pattern bolero | 0.32 | 0.1-0.4 | scuba,mesh

@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bachelorette robe | 0.88 | 0.2-0.7 | silk,satin
+sheer ruffle peignoir | 0.82 | 0.2-0.6 | chiffon,lace
+shower-party kimono | 0.74 | 0.2-0.6 | lace,silk
+marabou-trim bolero | 0.65 | 0.2-0.6 | feather,satin
+beaded dressing gown | 0.60 | 0.2-0.6 | silk,pearl
+short bridal-shower robe | 0.58 | 0.2-0.6 | satin,lace
+ribbon-tie peignoir | 0.55 | 0.2-0.6 | chiffon,silk
+fluffy marabou robe | 0.50 | 0.1-0.5 | feather,satin
+embroidered shower robe | 0.52 | 0.2-0.7 | satin,lace

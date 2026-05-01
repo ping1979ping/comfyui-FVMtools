@@ -1,0 +1,9 @@
+latex
+PVC
+vinyl
+wet-look
+spandex
+mesh
+elastic
+metal
+patent leather

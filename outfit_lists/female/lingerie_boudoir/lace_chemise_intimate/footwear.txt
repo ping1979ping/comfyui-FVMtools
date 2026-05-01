@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scallop-trim platform heels in dusty rose | 0.88 | 0.2-0.5 | lace,satin
+delicate stiletto sandals in nude | 0.85 | 0.2-0.5 | satin,silk
+embroidered peep-toe pumps in blush | 0.80 | 0.2-0.5 | lace,satin
+floral-pattern platform heels in pale pink | 0.75 | 0.2-0.5 | lace,satin
+ribbon-tie heels in champagne | 0.72 | 0.2-0.5 | satin,silk
+bow-front platform mules in peach | 0.68 | 0.2-0.5 | satin,silk
+chantilly-overlay platforms in dusty rose | 0.62 | 0.2-0.5 | lace,satin
+delicate ballet flats in nude | 0.58 | 0.2-0.5 | satin,silk
+scallop-edge slides in blush | 0.55 | 0.1-0.4 | lace,satin

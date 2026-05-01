@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plush choker in burgundy | 0.85 | 0.2-0.5 | velvet,satin
+draped opera-length stockings in black | 0.82 | 0.2-0.5 | mesh,nylon
+embossed garter in midnight blue | 0.78 | 0.1-0.4 | velvet,silk
+ribbon-strap garter belt in plum | 0.72 | 0.1-0.4 | satin,silk
+sheer thigh-highs in black | 0.68 | 0.1-0.4 | mesh,nylon
+crushed-pile bow choker in emerald | 0.62 | 0.2-0.5 | velvet,satin
+delicate gold collar | 0.58 | 0.2-0.5 | metal
+embossed cuffs in burgundy | 0.55 | 0.2-0.5 | velvet,silk
+draped sash in midnight blue | 0.52 | 0.2-0.5 | satin,silk
+delicate drop earrings | 0.48 | 0.2-0.5 | metal
+plush wrist cuffs in plum | 0.45 | 0.2-0.5 | velvet,silk
+ribbon ankle bracelet in wine | 0.42 | 0.1-0.4 | satin,silk

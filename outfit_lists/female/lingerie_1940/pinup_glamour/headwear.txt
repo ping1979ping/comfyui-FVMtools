@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+victory rolls | 0.85 | 0.2-0.6 | none
+red-rose hair flower | 0.78 | 0.2-0.5 | silk
+polka-dot bandana | 0.72 | 0.2-0.4 | cotton,rayon
+red headscarf 1940s tie | 0.68 | 0.2-0.5 | rayon
+bow hairband | 0.62 | 0.2-0.5 | satin,rayon
+hair turban pinup | 0.58 | 0.2-0.5 | satin,rayon
+ruffled hair veil | 0.50 | 0.3-0.6 | tulle

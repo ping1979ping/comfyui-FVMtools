@@ -1,0 +1,21 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured underbust corset | 0.90 | 0.2-0.5 | leather,patent leather
+classic harness bra | 0.85 | 0.1-0.4 | leather
+buckled overbust corset | 0.82 | 0.2-0.5 | leather
+strappy cage bralette | 0.80 | 0.1-0.4 | leather,elastic
+spiked chest harness | 0.78 | 0.1-0.4 | leather,metal
+laced-up bustier | 0.75 | 0.2-0.5 | leather,patent leather
+studded longline bra | 0.72 | 0.1-0.4 | leather
+O-ring bondage bra | 0.70 | 0.1-0.4 | leather,metal
+riveted halter top | 0.68 | 0.1-0.4 | leather
+ribbed underbust waspie | 0.65 | 0.2-0.5 | leather,patent leather
+chain-link bralette | 0.62 | 0.1-0.4 | leather,metal
+suspended cup harness | 0.60 | 0.1-0.4 | leather,metal
+matte plunge bralette | 0.55 | 0.1-0.4 | leather
+buckled cropped bustier | 0.52 | 0.2-0.5 | leather
+strapped triangle bra | 0.48 | 0.1-0.4 | leather,elastic
+fitted soft-finish bralette | 0.45 | 0.1-0.4 | nubuck
+brushed strappy crop | 0.42 | 0.1-0.4 | suede
+mesh-paneled corset | 0.38 | 0.2-0.5 | mesh,leather

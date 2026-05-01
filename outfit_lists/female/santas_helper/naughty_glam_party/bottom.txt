@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# skirts
+red sequin mini skirt with fur trim | 0.95 | 0.3-0.6 | sequin,faux_fur
+red micro mini skirt | 0.80 | 0.3-0.5 | satin,spandex
+red leather mini skirt | 0.65 | 0.3-0.5 | leather
+red bodycon midi with thigh slit | 0.55 | 0.3-0.6 | satin,spandex
+red glitter mesh skirt with bows | 0.55 | 0.3-0.5 | mesh,sequin
+red ruffled tutu mini skirt | 0.50 | 0.3-0.5 | tulle,satin
+red pleated cheerleader skirt | 0.50 | 0.3-0.5 | polyester,satin
+
+# pants / shorts
+red glitter hot pants | 0.75 | 0.3-0.5 | sequin,spandex
+red latex booty shorts | 0.55 | 0.3-0.5 | leather,spandex
+red fishnet tights | 0.65 | 0.3-0.5 | nylon,spandex
+candy cane glitter leggings | 0.60 | 0.3-0.5 | spandex,sequin
+red sheer thigh-highs with bow | 0.55 | 0.3-0.5 | nylon,satin

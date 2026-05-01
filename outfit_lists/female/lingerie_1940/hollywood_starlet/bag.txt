@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+beaded minaudiere | 0.78 | 0.3-0.6 | beads,charmeuse
+art-deco evening clutch | 0.72 | 0.3-0.6 | charmeuse
+champagne minaudiere | 0.65 | 0.3-0.6 | charmeuse
+crystal-bead evening bag | 0.58 | 0.3-0.6 | crystal,charmeuse
+embroidered evening minaudiere | 0.50 | 0.3-0.6 | charmeuse
+ivory glamour clutch | 0.45 | 0.3-0.6 | charmeuse

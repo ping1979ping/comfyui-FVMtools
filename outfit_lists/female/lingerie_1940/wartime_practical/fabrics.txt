@@ -1,0 +1,8 @@
+# slot: fabrics
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cotton | 1.0 | 0.2-0.6 | cotton
+rayon | 1.0 | 0.2-0.6 | rayon
+wool | 1.0 | 0.2-0.6 | wool
+flannel | 1.0 | 0.2-0.6 | flannel
+canvas | 1.0 | 0.2-0.6 | canvas

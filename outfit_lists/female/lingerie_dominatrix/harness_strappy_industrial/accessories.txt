@@ -1,0 +1,21 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heavy-duty utility belt | 0.92 | 0.1-0.4 | leather,nylon
+chain-link body harness | 0.90 | 0.1-0.4 | metal,chain
+buckled posture collar | 0.88 | 0.1-0.4 | leather,metal
+strapped wrist cuffs | 0.85 | 0.1-0.4 | leather,nylon
+modular shoulder rig | 0.82 | 0.1-0.4 | nylon,canvas
+spiked O-ring choker | 0.80 | 0.1-0.4 | leather,metal
+clipped tactical gloves | 0.78 | 0.1-0.4 | nylon,leather
+chain-draped waist belt | 0.75 | 0.1-0.4 | metal,chain
+strapped thigh holster | 0.72 | 0.1-0.4 | nylon,leather
+fishnet stockings | 0.70 | 0.1-0.4 | mesh,nylon
+buckled ankle restraints | 0.68 | 0.1-0.4 | leather,metal
+modular bicep bands | 0.65 | 0.1-0.4 | nylon,elastic
+heavy carabiner harness | 0.62 | 0.1-0.4 | metal,nylon
+spiked arm gauntlets | 0.58 | 0.1-0.4 | leather,metal
+strapped utility suspenders | 0.55 | 0.1-0.4 | nylon,elastic
+neoprene compression sleeves | 0.52 | 0.1-0.4 | neoprene,spandex
+chain-linked nipple clamps | 0.48 | 0.1-0.4 | metal,chain
+mesh thigh-highs with clips | 0.45 | 0.1-0.4 | mesh,nylon

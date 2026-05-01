@@ -1,0 +1,19 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+# fitted / cozy
+red knit sweater with white fur collar | 0.95 | 0.3-0.6 | wool,faux_fur
+red cable-knit pullover | 0.85 | 0.3-0.6 | wool
+fair isle nordic sweater | 0.70 | 0.3-0.6 | wool,cotton
+red turtleneck with snowflake pattern | 0.60 | 0.3-0.6 | wool,cotton
+red cardigan with white fur trim | 0.75 | 0.3-0.6 | wool,faux_fur
+red bodice with white apron front | 0.55 | 0.3-0.6 | velvet,cotton
+red gingham blouse with bow | 0.50 | 0.3-0.5 | cotton
+red ribbed mock-neck top | 0.55 | 0.3-0.5 | wool
+red knit cami with crochet edge | 0.45 | 0.3-0.5 | wool,cotton
+
+# dress-style
+red knit sweater dress with fur hem | 0.90 | 0.3-0.6 | wool,faux_fur
+red and white pinafore dress | 0.55 | 0.3-0.5 | cotton
+red gingham picnic dress | 0.45 | 0.3-0.5 | cotton
+mrs claus full skirt dress with apron | 0.65 | 0.3-0.6 | velvet,cotton

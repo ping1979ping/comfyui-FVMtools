@@ -1,0 +1,21 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+elbow-length gloves | 0.90 | 0.1-0.4 | latex,PVC
+glossy O-ring choker | 0.88 | 0.1-0.4 | latex,metal
+shoulder-length gloves | 0.85 | 0.1-0.4 | latex
+zipped wrist cuffs | 0.82 | 0.1-0.4 | PVC,vinyl
+chrome chain harness | 0.80 | 0.1-0.4 | metal
+liquid-shine stockings | 0.78 | 0.1-0.4 | wet-look,spandex
+mirror-finish collar | 0.72 | 0.1-0.4 | PVC,vinyl
+glossy thigh-highs with garters | 0.70 | 0.1-0.4 | latex,elastic
+holographic body chains | 0.68 | 0.1-0.4 | metal
+chrome nipple clamps | 0.65 | 0.1-0.4 | metal
+glossy posture collar | 0.62 | 0.1-0.4 | latex,PVC
+mesh stockings | 0.58 | 0.1-0.4 | mesh,nylon
+zipped armbands | 0.55 | 0.1-0.4 | latex,vinyl
+chrome waist chain | 0.52 | 0.1-0.4 | metal
+spandex compression sleeves | 0.48 | 0.1-0.4 | spandex,wet-look
+glossy garters | 0.45 | 0.1-0.4 | latex,elastic
+mirror-finish belt | 0.42 | 0.2-0.5 | PVC,vinyl
+clear strap harness | 0.38 | 0.1-0.4 | PVC

@@ -1,0 +1,6 @@
+sequins
+feathers
+mesh
+satin
+silk
+velvet

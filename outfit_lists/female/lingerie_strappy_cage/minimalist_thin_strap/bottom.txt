@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+whisper-thin cage thong | 0.90 | 0.1-0.5 | elastic,spandex
+hairline-strap thong | 0.85 | 0.1-0.5 | elastic,spandex
+delicate caged panty | 0.82 | 0.1-0.5 | elastic,micro-mesh
+fine-cord brief | 0.78 | 0.1-0.4 | elastic,spandex
+single-strap minimal thong | 0.75 | 0.1-0.4 | elastic,spandex
+slim cord brief | 0.70 | 0.1-0.4 | elastic,scuba
+modernist caged panty | 0.65 | 0.1-0.4 | elastic,micro-mesh
+clean-line caged thong | 0.62 | 0.1-0.4 | elastic,spandex
+refined skin-tone brief | 0.58 | 0.2-0.5 | scuba,elastic
+pared-back caged panty | 0.52 | 0.1-0.4 | elastic,micro-mesh

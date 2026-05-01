@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slip chemise in champagne | 0.90 | 0.1-0.5 | silk,silk charmeuse
+camisole in pale pink | 0.85 | 0.2-0.5 | silk,silk charmeuse
+sheer babydoll in blush | 0.82 | 0.1-0.4 | chiffon,mesh
+bow-strap camisole in peach | 0.78 | 0.1-0.4 | silk,satin
+ruffle-trim chemise in dusty rose | 0.75 | 0.1-0.4 | chiffon,tulle
+scallop-edge slip in champagne | 0.72 | 0.2-0.5 | silk,silk charmeuse
+delicate bralette in blush | 0.68 | 0.1-0.4 | mesh,lace
+embroidered camisole in pale pink | 0.65 | 0.2-0.5 | silk,satin
+chiffon babydoll in nude | 0.62 | 0.1-0.4 | chiffon,mesh
+ribbon-strap top in peach | 0.58 | 0.2-0.5 | silk,satin
+sleep tank in champagne | 0.55 | 0.2-0.5 | silk,silk charmeuse
+floral-print slip in dusty rose | 0.52 | 0.1-0.4 | silk,satin

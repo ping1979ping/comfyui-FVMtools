@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rhinestone platform heels | 0.92 | 0.2-0.6 | sequins,leather
+gold-glitter strappy heels | 0.88 | 0.2-0.6 | sequins,leather
+silver-sequin stilettos | 0.85 | 0.2-0.6 | sequins,leather
+crystal-strap platforms | 0.80 | 0.2-0.6 | sequins,leather
+plume-trim showgirl heels | 0.75 | 0.2-0.5 | feathers,satin
+rhinestone ankle-strap pumps | 0.70 | 0.2-0.5 | sequins,satin
+gold platform stilettos | 0.65 | 0.2-0.6 | sequins,leather
+crystal-front pumps | 0.60 | 0.2-0.5 | sequins,satin
+showgirl strappy platforms | 0.55 | 0.2-0.5 | leather,sequins
+plume-fringe pumps | 0.48 | 0.2-0.5 | feathers,satin
+silver-strap platforms | 0.42 | 0.2-0.5 | sequins,leather

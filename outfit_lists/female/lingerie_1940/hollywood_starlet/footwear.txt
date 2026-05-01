@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+champagne mule slippers | 0.92 | 0.3-0.6 | leather
+ivory boudoir mules | 0.88 | 0.3-0.6 | leather
+marabou-trim slippers | 0.85 | 0.3-0.6 | leather
+1940s glamour heels | 0.82 | 0.3-0.6 | leather
+peep-toe boudoir mules | 0.78 | 0.3-0.6 | leather
+ostrich-feather mules | 0.75 | 0.3-0.6 | leather
+champagne ankle-strap heels | 0.72 | 0.3-0.6 | leather
+ivory peep-toe pumps | 0.68 | 0.3-0.6 | leather
+embroidered evening mules | 0.65 | 0.3-0.6 | leather
+glamour T-strap pumps | 0.60 | 0.3-0.6 | leather
+ivory bow-front pumps | 0.55 | 0.3-0.6 | leather
+champagne sling-back heels | 0.50 | 0.3-0.6 | leather

@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized halo crown | 0.55 | 0.1-0.5 | leather,elastic
+sculptural head cage | 0.50 | 0.1-0.4 | leather,elastic
+architectural hair piece | 0.48 | 0.1-0.4 | scuba,leather
+labyrinth strap headpiece | 0.45 | 0.1-0.4 | leather,elastic
+prism hair crown | 0.42 | 0.1-0.4 | leather,elastic
+fortress-strap headband | 0.38 | 0.1-0.4 | leather,elastic

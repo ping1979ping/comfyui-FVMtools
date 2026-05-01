@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bridal panties | 0.90 | 0.1-0.6 | lace,silk
+heirloom garter belt | 0.82 | 0.2-0.7 | lace,satin
+tap shorts | 0.78 | 0.2-0.6 | silk,satin
+high-waisted bridal briefs | 0.74 | 0.2-0.6 | lace,satin
+embroidered thong | 0.70 | 0.1-0.5 | lace,silk
+french knickers | 0.66 | 0.2-0.6 | silk,lace
+ruffle-trim panties | 0.60 | 0.1-0.5 | silk,lace
+bridal mini skirt | 0.62 | 0.2-0.7 | tulle,organza
+cheeky bridal briefs | 0.55 | 0.1-0.5 | lace,mesh
+sheer wedding panties | 0.52 | 0.1-0.5 | mesh,chiffon
+ribbon-tie panties | 0.50 | 0.2-0.6 | satin,silk
+heirloom suspender belt | 0.48 | 0.2-0.7 | satin,lace
+boy shorts | 0.45 | 0.1-0.5 | lace,satin
+slip skirt | 0.42 | 0.3-0.6 | satin,silk

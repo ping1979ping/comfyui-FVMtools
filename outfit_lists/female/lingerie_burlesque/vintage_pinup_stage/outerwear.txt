@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red retro robe | 0.85 | 0.3-0.6 | satin,silk
+ribbon-trim kimono | 0.78 | 0.3-0.6 | silk,satin
+ruffle-collar bed jacket | 0.72 | 0.3-0.6 | satin,lace
+embroidered pinup robe | 0.65 | 0.3-0.6 | silk,brocade
+cherry-print bolero | 0.58 | 0.2-0.5 | satin,mesh
+ribbon-front cropped jacket | 0.52 | 0.2-0.5 | satin,sequins
+black bow-trim robe | 0.45 | 0.3-0.6 | satin,lace
+ruffle-edge wrap | 0.40 | 0.3-0.6 | organza,silk
+gingham retro shrug | 0.38 | 0.2-0.5 | mesh,satin

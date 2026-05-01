@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+high-waist cabaret panties | 0.88 | 0.2-0.6 | satin,lace
+ruffle-edge stage briefs | 0.85 | 0.2-0.5 | satin,lace
+ribbon-laced garter belt | 0.82 | 0.2-0.5 | satin,lace
+moulin tap shorts | 0.78 | 0.3-0.6 | satin,silk
+crystal-trim cabaret panty | 0.72 | 0.2-0.5 | sequins,satin
+ruffle-back french knickers | 0.68 | 0.2-0.5 | satin,lace
+black ribbon panty | 0.62 | 0.2-0.6 | lace,satin
+burgundy tap pants | 0.55 | 0.3-0.6 | velvet,satin
+ribbon-side g-string | 0.50 | 0.1-0.4 | sequins,mesh
+ruffle-front bloomers | 0.45 | 0.2-0.5 | satin,organza
+crystal-belt high briefs | 0.40 | 0.2-0.5 | sequins,satin
+ribbon garter shorts | 0.38 | 0.2-0.5 | satin,lace

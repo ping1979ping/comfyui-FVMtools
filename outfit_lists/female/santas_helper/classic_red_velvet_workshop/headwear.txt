@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Santa hat with white fur pompom | 1.00 | 0.3-0.6 | velvet,faux_fur
+small tilted Santa hat on hair clip | 0.65 | 0.3-0.5 | velvet,faux_fur
+red elf hat with jingle bell | 0.45 | 0.3-0.5 | velvet
+red and white striped elf hat | 0.40 | 0.3-0.5 | cotton,velvet
+white fur headband | 0.55 | 0.3-0.5 | faux_fur
+red bow headband | 0.45 | 0.3-0.5 | velvet,satin

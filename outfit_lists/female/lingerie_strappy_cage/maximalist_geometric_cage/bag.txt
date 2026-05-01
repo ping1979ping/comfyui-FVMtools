@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized hard-shell clutch | 0.58 | 0.2-0.5 | scuba,leather
+hexagonal box bag | 0.55 | 0.2-0.5 | leather,scuba
+sculptural statement clutch | 0.52 | 0.2-0.5 | leather,scuba
+architectural caged bag | 0.50 | 0.1-0.5 | leather,scuba
+prism micro tote | 0.48 | 0.1-0.5 | leather,scuba
+fortress-chain crossbody | 0.45 | 0.1-0.4 | leather,scuba
+maximal harness bag | 0.42 | 0.1-0.4 | leather,elastic

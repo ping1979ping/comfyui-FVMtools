@@ -1,0 +1,8 @@
+# slot: fabrics
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+charmeuse | 1.0 | 0.3-0.6 | charmeuse
+crepe | 1.0 | 0.3-0.6 | crepe
+chiffon | 1.0 | 0.3-0.6 | chiffon
+lace | 1.0 | 0.3-0.6 | lace
+nylon | 1.0 | 0.3-0.6 | nylon

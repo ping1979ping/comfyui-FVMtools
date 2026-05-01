@@ -1,0 +1,7 @@
+spandex
+elastic
+scuba
+leather
+nylon
+suede
+mesh

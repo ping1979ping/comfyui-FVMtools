@@ -1,0 +1,18 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bold geometric cage bra | 0.92 | 0.1-0.5 | elastic,leather
+hexagonal harness bralette | 0.88 | 0.1-0.5 | leather,elastic
+sculptural strap bodysuit | 0.85 | 0.1-0.5 | spandex,scuba
+architectural caged top | 0.82 | 0.1-0.5 | scuba,elastic
+multi-tier strap harness | 0.80 | 0.1-0.5 | leather,elastic
+diamond-pattern caged bra | 0.78 | 0.1-0.4 | elastic,leather
+oversized O-ring statement bra | 0.75 | 0.1-0.4 | leather,elastic
+labyrinth strap bralette | 0.72 | 0.1-0.4 | elastic,spandex
+chunky caged bodysuit | 0.70 | 0.2-0.5 | scuba,spandex
+prism harness top | 0.68 | 0.1-0.4 | leather,scuba
+caged statement bralette | 0.65 | 0.1-0.5 | elastic,leather
+maximal cutout caged bra | 0.62 | 0.1-0.4 | spandex,scuba
+crisscross labyrinth top | 0.58 | 0.1-0.4 | elastic,scuba
+fortress-strap caged bra | 0.55 | 0.1-0.4 | leather,elastic
+bold diamond caged top | 0.50 | 0.1-0.4 | scuba,elastic

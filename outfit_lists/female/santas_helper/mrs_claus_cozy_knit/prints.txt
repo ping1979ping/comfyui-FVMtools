@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+white fur trim | 0.65 | top,bottom,headwear,outerwear | 0.3-0.7
+fair isle pattern | 0.45 | top,outerwear | 0.3-0.6
+snowflake pattern | 0.45 | top,bottom,headwear | 0.3-0.6
+red and white plaid | 0.40 | top,bottom,outerwear | 0.3-0.5
+red and green tartan | 0.35 | top,bottom | 0.3-0.5
+gingham check | 0.35 | top,bottom | 0.3-0.5
+holly and berries embroidery | 0.30 | top,outerwear | 0.3-0.6
+nordic snowflake knit | 0.40 | top,outerwear | 0.3-0.6
+white pompom trim | 0.35 | top,bottom,headwear | 0.3-0.6

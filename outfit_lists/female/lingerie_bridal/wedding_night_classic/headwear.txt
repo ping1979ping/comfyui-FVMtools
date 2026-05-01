@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cathedral veil | 0.90 | 0.3-0.7 | tulle,lace
+fingertip veil | 0.84 | 0.2-0.7 | tulle,lace
+jeweled tiara | 0.80 | 0.3-0.7 | crystal
+birdcage veil | 0.70 | 0.2-0.7 | tulle,lace
+beaded headband | 0.65 | 0.2-0.7 | pearl,satin
+embroidered mantilla | 0.55 | 0.3-0.7 | lace

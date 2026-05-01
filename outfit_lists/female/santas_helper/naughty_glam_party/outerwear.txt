@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red bolero with marabou trim | 0.75 | 0.3-0.6 | satin,faux_fur
+white faux fur cropped jacket | 0.70 | 0.3-0.6 | faux_fur
+red sequin shrug | 0.55 | 0.3-0.6 | sequin
+red sheer mesh kimono robe | 0.50 | 0.3-0.5 | mesh,satin
+red glitter cape with fur collar | 0.60 | 0.3-0.6 | sequin,faux_fur
+red strappy harness over top | 0.45 | 0.3-0.5 | leather,satin
+red leather biker jacket | 0.50 | 0.3-0.6 | leather

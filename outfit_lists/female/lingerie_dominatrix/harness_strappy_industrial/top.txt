@@ -1,0 +1,21 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+industrial chest harness | 0.92 | 0.1-0.4 | leather,metal
+strappy cage bralette | 0.88 | 0.1-0.4 | nylon,elastic
+buckled bondage bra | 0.85 | 0.1-0.4 | leather,metal
+heavy-duty utility bra | 0.82 | 0.1-0.4 | canvas,nylon
+O-ring cage top | 0.80 | 0.1-0.4 | leather,metal
+strapped cage bustier | 0.78 | 0.2-0.5 | leather,elastic
+clipped tactical bra | 0.75 | 0.1-0.4 | nylon,metal
+chain-link cage bra | 0.72 | 0.1-0.4 | metal,chain
+modular harness top | 0.70 | 0.1-0.4 | nylon,metal
+strapped underbust cage | 0.68 | 0.2-0.5 | leather,metal
+buckled crop bralette | 0.65 | 0.1-0.4 | leather,elastic
+mesh-paneled cage top | 0.62 | 0.1-0.4 | mesh,nylon
+neoprene compression bra | 0.58 | 0.1-0.4 | neoprene,spandex
+strapped bondage cage | 0.55 | 0.1-0.4 | leather,metal
+canvas utility crop | 0.52 | 0.1-0.4 | canvas
+buckled chain bralette | 0.48 | 0.1-0.4 | metal,chain
+clipped halter cage | 0.45 | 0.1-0.4 | nylon,metal
+strapped O-ring cage | 0.42 | 0.1-0.4 | leather,metal

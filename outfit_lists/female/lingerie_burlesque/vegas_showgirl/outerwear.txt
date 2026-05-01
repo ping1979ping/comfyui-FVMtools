@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ostrich-plume cape | 0.90 | 0.2-0.6 | feathers,satin
+rhinestone showgirl jacket | 0.82 | 0.2-0.5 | sequins,satin
+crystal-fringe shawl | 0.75 | 0.2-0.5 | sequins,mesh
+gold-sequin bolero | 0.68 | 0.2-0.5 | sequins,mesh
+plume-collar stage robe | 0.62 | 0.2-0.5 | feathers,satin
+rhinestone bolero jacket | 0.55 | 0.2-0.5 | sequins,mesh
+ostrich-trim showgirl cape | 0.48 | 0.2-0.5 | feathers,satin
+crystal-back wing harness | 0.42 | 0.2-0.5 | sequins,mesh
+plume-fringe stage cape | 0.38 | 0.2-0.5 | feathers,sequins

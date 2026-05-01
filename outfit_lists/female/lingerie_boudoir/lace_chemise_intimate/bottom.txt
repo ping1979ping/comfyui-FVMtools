@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scalloped briefs in dusty rose | 0.90 | 0.1-0.4 | lace,mesh
+delicate boyshort in blush | 0.85 | 0.1-0.4 | lace,mesh
+embroidered tanga in nude | 0.80 | 0.1-0.4 | lace,mesh
+floral-pattern panties in pale pink | 0.75 | 0.1-0.4 | lace,chiffon
+ribbon-tie briefs in peach | 0.72 | 0.1-0.4 | lace,satin
+bow-back hipster in champagne | 0.68 | 0.1-0.4 | lace,mesh
+sheer thong in nude | 0.65 | 0.1-0.4 | mesh,chiffon
+high-waist briefs in mauve | 0.62 | 0.2-0.5 | lace,mesh
+chantilly-trim panties in dusty rose | 0.58 | 0.1-0.4 | lace,silk
+scalloped-edge tanga in blush | 0.55 | 0.1-0.4 | lace,mesh
+embroidered cheekies in pale pink | 0.52 | 0.1-0.4 | lace,mesh
+floral-pattern hipster in nude | 0.48 | 0.1-0.4 | lace,mesh

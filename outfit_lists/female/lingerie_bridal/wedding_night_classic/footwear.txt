@@ -1,0 +1,16 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bridal stilettos | 0.90 | 0.3-0.7 | satin,silk
+heirloom wedding pumps | 0.84 | 0.3-0.7 | satin,lace
+crystal-strap platforms | 0.78 | 0.3-0.7 | satin,crystal
+ankle-strap wedding heels | 0.72 | 0.3-0.7 | satin,lace
+pointed-toe bridal heels | 0.70 | 0.3-0.7 | satin,silk
+strappy platform heels | 0.68 | 0.2-0.6 | satin,silk
+peep-toe bridal pumps | 0.62 | 0.2-0.6 | satin,lace
+ribbon-laced wedding heels | 0.60 | 0.3-0.7 | satin,silk
+slingback bridal heels | 0.58 | 0.3-0.7 | satin,silk
+crystal-buckle stilettos | 0.55 | 0.3-0.7 | satin,crystal
+bow-front bridal pumps | 0.52 | 0.2-0.6 | satin,silk
+kitten-heel wedding mules | 0.48 | 0.2-0.6 | satin,silk
+T-strap bridal heels | 0.45 | 0.3-0.7 | satin,lace

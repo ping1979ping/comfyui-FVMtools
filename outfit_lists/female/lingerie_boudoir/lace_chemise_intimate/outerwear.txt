@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+scalloped kimono in dusty rose | 0.85 | 0.1-0.4 | lace,silk
+delicate peignoir in blush | 0.80 | 0.1-0.4 | lace,chiffon
+embroidered wrap in nude | 0.75 | 0.1-0.4 | lace,silk
+floral-pattern robe in pale pink | 0.72 | 0.1-0.4 | lace,silk
+sheer cover in champagne | 0.68 | 0.1-0.4 | mesh,chiffon
+chantilly-trim kimono in mauve | 0.62 | 0.2-0.5 | lace,silk
+ribbon-belted wrap in peach | 0.58 | 0.1-0.4 | lace,satin
+short scallop kimono in dusty rose | 0.55 | 0.1-0.4 | lace,silk

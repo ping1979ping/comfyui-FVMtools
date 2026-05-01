@@ -1,0 +1,17 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport-luxe cage thong | 0.90 | 0.1-0.5 | spandex,elastic
+performance strap brief | 0.85 | 0.1-0.5 | spandex,elastic
+high-cut sport panty | 0.82 | 0.1-0.5 | spandex,elastic
+athletic caged thong | 0.80 | 0.1-0.5 | spandex,elastic
+banded sport brief | 0.78 | 0.1-0.4 | spandex,elastic
+crossback strap thong | 0.75 | 0.1-0.4 | spandex,elastic
+power-band caged panty | 0.72 | 0.1-0.4 | elastic,spandex
+gym-luxe brief | 0.68 | 0.1-0.4 | spandex,elastic
+ribbed caged sport brief | 0.65 | 0.1-0.4 | spandex,elastic
+flex-strap thong | 0.62 | 0.1-0.4 | elastic,spandex
+sleek caged hipster | 0.58 | 0.1-0.4 | spandex,scuba
+contouring sport thong | 0.55 | 0.1-0.4 | spandex,elastic
+performance high-cut brief | 0.50 | 0.1-0.4 | spandex,elastic
+compression caged panty | 0.45 | 0.1-0.4 | spandex,scuba

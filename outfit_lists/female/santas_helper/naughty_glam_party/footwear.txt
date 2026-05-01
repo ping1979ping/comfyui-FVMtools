@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red stiletto pumps with rhinestones | 0.90 | 0.3-0.6 | satin,leather
+red platform heels with fur pompom | 0.80 | 0.3-0.6 | leather,faux_fur
+red over-the-knee heeled boots | 0.75 | 0.3-0.6 | leather
+red strappy sandals with crystals | 0.65 | 0.3-0.6 | satin
+red glitter platform boots | 0.60 | 0.3-0.5 | sequin,leather
+red ankle-strap stilettos | 0.55 | 0.3-0.6 | satin,leather
+clear pleaser heels with red bow | 0.45 | 0.3-0.5 | satin
+red thigh-high platform boots | 0.55 | 0.3-0.5 | leather

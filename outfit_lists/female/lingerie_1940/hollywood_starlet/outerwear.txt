@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ivory peignoir 1940s | 0.92 | 0.3-0.6 | chiffon,charmeuse
+champagne dressing gown | 0.88 | 0.3-0.6 | charmeuse
+marabou-trim peignoir | 0.85 | 0.3-0.6 | chiffon,charmeuse
+boudoir robe Hollywood-cut | 0.78 | 0.3-0.6 | charmeuse
+ostrich-feather wrap | 0.75 | 0.3-0.6 | charmeuse
+glamour bed jacket | 0.72 | 0.3-0.6 | charmeuse,lace
+1940s starlet dressing gown | 0.68 | 0.3-0.6 | charmeuse
+embroidered evening robe | 0.62 | 0.3-0.6 | charmeuse
+trailing peignoir Hollywood | 0.55 | 0.3-0.6 | chiffon,charmeuse
+ivory short kimono | 0.50 | 0.3-0.6 | charmeuse

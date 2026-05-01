@@ -1,0 +1,10 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red wool coat with fur collar | 0.80 | 0.3-0.6 | wool,faux_fur
+red knit cardigan with pompoms | 0.70 | 0.3-0.6 | wool
+white shawl with red trim | 0.55 | 0.3-0.6 | wool,faux_fur
+red plaid wrap shawl | 0.50 | 0.3-0.6 | wool
+red apron with frilled edge | 0.60 | 0.3-0.5 | cotton
+red knit shrug with bell buttons | 0.45 | 0.3-0.5 | wool
+mrs claus red overcoat with fur trim | 0.70 | 0.3-0.6 | velvet,faux_fur

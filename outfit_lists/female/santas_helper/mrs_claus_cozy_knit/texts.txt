@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+"MRS CLAUS" | 0.25 | top | elegant serif
+"NICE" | 0.20 | top | elegant serif
+"COZY" | 0.15 | top | playful script
+"MERRY" | 0.15 | top | festive serif
+"JOY" | 0.15 | top | elegant serif
+"HOME SWEET HOME" | 0.10 | top | elegant script

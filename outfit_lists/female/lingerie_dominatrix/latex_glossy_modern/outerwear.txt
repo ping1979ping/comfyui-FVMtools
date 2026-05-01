@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+glossy trench coat | 0.85 | 0.2-0.5 | latex
+mirror-finish jacket | 0.78 | 0.1-0.4 | PVC,vinyl
+zipped catsuit shrug | 0.72 | 0.1-0.4 | latex
+liquid-shine duster | 0.68 | 0.1-0.4 | wet-look,spandex
+chrome cropped jacket | 0.62 | 0.1-0.4 | vinyl,PVC
+glossy cape | 0.58 | 0.1-0.4 | latex
+holographic biker jacket | 0.55 | 0.1-0.4 | vinyl,PVC
+patent overcoat | 0.50 | 0.2-0.5 | patent leather
+mesh-paneled trench | 0.45 | 0.2-0.5 | mesh,latex
+fitted bomber | 0.42 | 0.1-0.4 | PVC,vinyl

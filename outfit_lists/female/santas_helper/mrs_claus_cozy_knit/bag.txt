@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red knit tote with fur trim | 0.70 | 0.3-0.5 | wool,faux_fur
+woven wicker basket with red bow | 0.55 | 0.3-0.5 | cotton
+red plaid handbag | 0.50 | 0.3-0.5 | wool
+white fur-trimmed muff bag | 0.45 | 0.3-0.5 | faux_fur
+red drawstring pouch with bells | 0.40 | 0.3-0.5 | velvet
+brown leather satchel with buckles | 0.40 | 0.3-0.5 | leather

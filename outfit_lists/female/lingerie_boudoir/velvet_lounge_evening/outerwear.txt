@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plush lounge robe in burgundy | 0.92 | 0.2-0.5 | velvet,satin
+draped wrap in midnight blue | 0.88 | 0.2-0.5 | silk charmeuse,satin
+embossed kimono in emerald | 0.82 | 0.2-0.5 | velvet,silk
+ribbon-belted gown in plum | 0.78 | 0.2-0.5 | satin,silk
+crushed-pile dressing coat in wine | 0.75 | 0.2-0.5 | velvet,satin
+short lounge jacket in black | 0.68 | 0.2-0.5 | velvet,satin
+draped peignoir in midnight blue | 0.62 | 0.1-0.4 | chiffon,silk
+embossed evening robe in burgundy | 0.58 | 0.2-0.5 | velvet,satin
+plush short kimono in plum | 0.52 | 0.2-0.5 | velvet,silk

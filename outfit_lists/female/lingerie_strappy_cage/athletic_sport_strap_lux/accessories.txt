@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport-luxe utility harness | 0.85 | 0.1-0.5 | leather,elastic
+performance strap belt | 0.82 | 0.1-0.5 | leather,elastic
+ribbed sock cuffs | 0.78 | 0.1-0.4 | spandex,elastic
+athletic body strap | 0.75 | 0.1-0.4 | leather,elastic
+power-band waist piece | 0.72 | 0.1-0.5 | elastic,leather
+gym-luxe choker | 0.70 | 0.1-0.4 | leather,elastic
+flex-strap thigh harness | 0.68 | 0.1-0.4 | elastic,leather
+contouring chain belt | 0.65 | 0.1-0.5 | leather,elastic
+caged sport collar | 0.62 | 0.1-0.4 | leather,elastic
+banded arm wrap | 0.58 | 0.1-0.4 | spandex,elastic
+performance leg straps | 0.55 | 0.1-0.4 | elastic,leather
+sleek hip strap | 0.52 | 0.1-0.4 | leather,elastic
+sport-luxe wrist cuffs | 0.50 | 0.1-0.5 | leather,elastic

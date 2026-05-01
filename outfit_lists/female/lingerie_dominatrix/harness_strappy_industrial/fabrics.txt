@@ -1,0 +1,9 @@
+metal
+leather
+nylon
+elastic
+canvas
+mesh
+spandex
+chain
+neoprene

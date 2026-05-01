@@ -1,0 +1,13 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heavy-duty tactical helmet | 0.78 | 0.1-0.4 | nylon,metal
+buckled hood | 0.72 | 0.1-0.4 | leather,nylon
+chain-draped headpiece | 0.68 | 0.1-0.4 | metal,chain
+modular fetish mask | 0.62 | 0.1-0.4 | leather,metal
+clipped balaclava | 0.58 | 0.1-0.4 | nylon,spandex
+spiked headband | 0.52 | 0.1-0.4 | leather,metal
+strapped half-mask | 0.48 | 0.1-0.4 | leather,nylon
+neoprene hood | 0.42 | 0.1-0.4 | neoprene,spandex
+mesh balaclava | 0.38 | 0.1-0.4 | mesh,spandex
+canvas utility cap | 0.35 | 0.1-0.4 | canvas

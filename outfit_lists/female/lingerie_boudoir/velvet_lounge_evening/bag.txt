@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plush evening clutch in burgundy | 0.82 | 0.2-0.5 | velvet,satin
+draped pouch in midnight blue | 0.75 | 0.2-0.5 | silk,satin
+embossed minaudiere in emerald | 0.68 | 0.3-0.5 | velvet,satin
+ribbon-tie purse in plum | 0.62 | 0.2-0.5 | satin,silk
+crushed-pile wristlet in wine | 0.55 | 0.2-0.5 | velvet,satin
+beaded clutch in black | 0.48 | 0.3-0.5 | satin,silk

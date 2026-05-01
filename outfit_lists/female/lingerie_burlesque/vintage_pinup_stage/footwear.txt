@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red Mary Jane platforms | 0.92 | 0.2-0.6 | leather,satin
+ankle-bow pinup pumps | 0.88 | 0.2-0.6 | leather,satin
+T-strap retro heels | 0.85 | 0.2-0.6 | leather,suede
+peep-toe pinup pumps | 0.80 | 0.2-0.6 | leather,suede
+black ankle-strap stilettos | 0.75 | 0.2-0.6 | leather,satin
+red bow-front Mary Janes | 0.72 | 0.2-0.6 | leather,satin
+ribbon-tie retro pumps | 0.65 | 0.2-0.5 | satin,leather
+white peep-toe heels | 0.60 | 0.2-0.6 | leather,satin
+polka-dot Mary Janes | 0.55 | 0.2-0.5 | leather,satin
+ruby T-strap pumps | 0.50 | 0.2-0.6 | satin,leather
+black ankle-bow heels | 0.45 | 0.2-0.6 | suede,leather
+white retro pumps | 0.40 | 0.2-0.6 | leather,satin

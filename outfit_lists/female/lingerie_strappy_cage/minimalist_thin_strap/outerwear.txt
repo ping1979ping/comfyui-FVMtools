@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer minimalist duster | 0.55 | 0.1-0.5 | mesh,micro-mesh
+clean-line cropped jacket | 0.50 | 0.2-0.5 | leather,scuba
+refined open cardigan | 0.45 | 0.1-0.4 | mesh,elastic
+modernist cropped blazer | 0.42 | 0.2-0.5 | scuba,leather
+slim wrap robe | 0.40 | 0.1-0.4 | mesh,micro-mesh
+pared-back kimono | 0.38 | 0.1-0.4 | micro-mesh,mesh
+delicate sheer cape | 0.35 | 0.1-0.4 | mesh,micro-mesh
+hairline-trim bolero | 0.32 | 0.1-0.4 | nylon,mesh

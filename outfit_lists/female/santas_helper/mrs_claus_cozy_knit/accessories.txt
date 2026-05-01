@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+red knit scarf with pompom ends | 0.65 | 0.3-0.5 | wool
+white fur muff | 0.55 | 0.3-0.5 | faux_fur
+round wire-frame glasses | 0.50 | 0.3-0.5 | metal
+red knit mittens with snowflake pattern | 0.55 | 0.3-0.5 | wool
+gold pocket watch on chain | 0.35 | 0.3-0.6 | metal
+red apron tie belt | 0.50 | 0.3-0.5 | cotton,satin
+gingerbread man cookie prop | 0.30 | 0.3-0.5 |
+candy cane prop | 0.35 | 0.3-0.5 |
+red ribbon bow brooch | 0.40 | 0.3-0.5 | satin
+white knit arm warmers | 0.45 | 0.3-0.5 | wool

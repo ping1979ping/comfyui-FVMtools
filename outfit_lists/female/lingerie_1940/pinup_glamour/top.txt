@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bullet bra | 0.92 | 0.2-0.6 | satin,rayon
+torpedo bra | 0.90 | 0.2-0.6 | satin,rayon
+cone-stitched bra | 0.85 | 0.2-0.6 | satin,cotton
+longline pointed bra | 0.82 | 0.2-0.6 | satin,rayon
+peek-a-boo bra | 0.78 | 0.2-0.5 | satin,nylon
+sweetheart-neckline bra | 0.75 | 0.2-0.6 | satin,nylon
+ruffled-trim bullet bra | 0.72 | 0.2-0.6 | rayon,satin
+red-bow bullet bra | 0.70 | 0.2-0.5 | satin,nylon
+polka-dot pinup bra | 0.68 | 0.2-0.5 | rayon,cotton
+underwired pointed cup bra | 0.65 | 0.2-0.6 | satin,nylon
+corselette top | 0.62 | 0.3-0.6 | satin,rayon
+embroidered cup bra | 0.55 | 0.2-0.6 | rayon,satin

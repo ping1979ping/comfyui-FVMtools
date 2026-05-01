@@ -1,0 +1,13 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+heavy-duty utility pouch | 0.78 | 0.1-0.4 | canvas,nylon
+modular thigh bag | 0.75 | 0.1-0.4 | nylon,canvas
+chain-strapped clutch | 0.70 | 0.1-0.4 | leather,chain
+buckled crossbody | 0.65 | 0.1-0.4 | leather,metal
+clipped tactical sling | 0.60 | 0.1-0.4 | nylon,canvas
+strapped harness bag | 0.55 | 0.1-0.4 | leather,nylon
+chain-draped shoulder bag | 0.50 | 0.1-0.4 | metal,chain
+spiked mini satchel | 0.45 | 0.1-0.4 | leather,metal
+heavy carabiner pouch | 0.42 | 0.1-0.4 | canvas,metal
+scuba-style fanny pack | 0.38 | 0.1-0.4 | neoprene,nylon

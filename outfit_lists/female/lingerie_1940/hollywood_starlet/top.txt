@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bias-cut slip top | 0.92 | 0.3-0.6 | crepe,charmeuse
+ivory full slip top | 0.88 | 0.3-0.6 | crepe,charmeuse
+champagne bullet bra | 0.85 | 0.3-0.6 | charmeuse,lace
+glamour longline bra | 0.82 | 0.3-0.6 | charmeuse,lace
+peignoir bustier | 0.78 | 0.3-0.6 | chiffon,charmeuse
+boudoir torpedo bra | 0.75 | 0.3-0.6 | charmeuse,lace
+1940s starlet camisole | 0.72 | 0.2-0.6 | crepe,charmeuse
+embroidered bias top | 0.68 | 0.3-0.6 | crepe,charmeuse
+champagne pointed bra | 0.65 | 0.3-0.6 | charmeuse,lace
+glamour corselette top | 0.62 | 0.3-0.6 | charmeuse,lace
+ivory longline bra | 0.58 | 0.3-0.6 | charmeuse,lace
+boudoir cup bra | 0.55 | 0.3-0.6 | charmeuse,lace

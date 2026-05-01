@@ -1,0 +1,12 @@
+# format: fabric_name | formality | family | weight
+sequin | 0.5 | luxury | medium
+faux_fur | 0.4 | luxury | heavy
+satin | 0.4 | luxury | light
+mesh | 0.3 | sheer | light
+spandex | 0.2 | sporty | light
+lace | 0.4 | luxury | light
+nylon | 0.2 | sporty | light
+leather | 0.4 | classic | medium
+tulle | 0.4 | luxury | light
+polyester | 0.3 | sporty | light
+metal | 0.5 | luxury | heavy
