@@ -8,6 +8,9 @@ build/
 .eggs/
 troubleshooting/
 
+# Test-run leftovers when MagicMock objects accidentally end up as paths
+MagicMock/
+
 # User-authored JB Builder wildcards. The directory itself is tracked
 # via .gitkeep so a fresh clone has a target for the INI default, but
 # every user file inside is ignored — `git pull` never overwrites local
