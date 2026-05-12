@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cropped blazer | 0.70 | 0.65-0.9 | crepe,wool
+#color# tuxedo jacket | 0.65 | 0.65-0.9 | wool,satin
+#color# fitted blazer | 0.60 | 0.65-0.9 | crepe,wool
+#color# tailored cape | 0.50 | 0.65-0.9 | crepe,wool
+#color# bolero jacket | 0.50 | 0.65-0.9 | satin,crepe
+#color# plush opera coat | 0.45 | 0.65-0.9 | velvet
+#color# structured shrug | 0.40 | 0.65-0.9 | satin,crepe
+#color# fur-trimmed wrap | 0.40 | 0.65-0.9 | polyester
+#color# evening coat | 0.45 | 0.65-0.9 | wool,satin

@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"LOVE" | 0.10 | accessories | romantic script
+"BLOOM" | 0.08 | accessories | playful handwriting
+"VOWS" | 0.06 | accessories | minimal serif
+"GARDEN" | 0.05 | bag | elegant serif

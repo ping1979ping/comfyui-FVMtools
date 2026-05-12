@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+monochrome solid | 0.55 | top,bottom,outerwear | 0.65-0.9
+fine pinstripe | 0.40 | bottom,outerwear | 0.7-0.9
+subtle check | 0.35 | top,outerwear | 0.65-0.85
+geometric print | 0.35 | top,bottom | 0.65-0.9
+abstract motif | 0.30 | top | 0.65-0.9
+houndstooth | 0.30 | outerwear,bottom | 0.7-0.9
+windowpane check | 0.30 | outerwear | 0.65-0.9
+tonal stripe | 0.30 | top,bottom | 0.65-0.85

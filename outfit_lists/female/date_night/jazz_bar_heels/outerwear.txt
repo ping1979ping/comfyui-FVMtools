@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped moto jacket | 0.65 | 0.55-0.8 | leather
+fitted blazer | 0.60 | 0.55-0.8 | wool,crepe
+draped wrap | 0.55 | 0.55-0.8 | charmeuse,chiffon
+faux-fur stole | 0.55 | 0.6-0.8 | polyester
+short trench coat | 0.45 | 0.55-0.8 | cotton,polyester
+fitted bolero | 0.45 | 0.55-0.8 | crepe,polyester
+cropped trench | 0.40 | 0.55-0.75 | cotton,polyester
+dark overcoat | 0.40 | 0.6-0.8 | wool,polyester

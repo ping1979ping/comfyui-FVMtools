@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+opaque tights | 0.75 | 0.45-0.75 | nylon
+oversized round sunglasses | 0.65 | 0.45-0.75 | acrylic
+geometric drop earrings | 0.60 | 0.45-0.75 | plastic,metal
+chunky bangles | 0.55 | 0.45-0.75 | plastic
+wide statement belt | 0.55 | 0.5-0.75 | leather
+mod choker | 0.50 | 0.45-0.75 | plastic,metal
+graphic chain belt | 0.40 | 0.5-0.75 | metal
+slim watch | 0.45 | 0.5-0.75 | metal
+enamel ring | 0.40 | 0.5-0.75 | metal
+square stud earrings | 0.50 | 0.45-0.75 | metal

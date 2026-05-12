@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured corset top | 0.85 | 0.5-0.75 | satin,polyester
+cropped tank | 0.80 | 0.5-0.75 | cotton,jersey
+fitted bodysuit | 0.75 | 0.5-0.75 | jersey,polyester
+mesh longsleeve | 0.65 | 0.5-0.75 | polyester,nylon
+ribbed crop top | 0.70 | 0.5-0.75 | cotton,jersey
+sheer mesh top | 0.55 | 0.5-0.75 | polyester,nylon
+slim baby tee | 0.65 | 0.5-0.7 | cotton,jersey
+bandeau bralette | 0.55 | 0.5-0.7 | polyester,jersey
+asymmetric crop top | 0.55 | 0.5-0.75 | jersey,polyester
+mock-neck shell | 0.50 | 0.5-0.75 | crepe,polyester
+strappy camisole | 0.55 | 0.5-0.75 | silk,polyester
+leather bustier | 0.50 | 0.55-0.75 | polyester
+fitted graphic tee | 0.60 | 0.5-0.7 | cotton,jersey

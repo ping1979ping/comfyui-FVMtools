@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+envelope clutch | 0.75 | 0.6-0.85 | satin,leather
+chain shoulder bag | 0.70 | 0.6-0.85 | leather,satin
+mini bag | 0.60 | 0.6-0.85 | leather,suede
+top-handle bag | 0.60 | 0.6-0.85 | leather,suede
+evening pouch | 0.55 | 0.6-0.85 | satin,velvet
+beaded minaudiere | 0.50 | 0.6-0.85 | satin,polyester
+box clutch | 0.45 | 0.6-0.85 | satin,velvet
+crocodile-embossed clutch | 0.40 | 0.6-0.85 | leather

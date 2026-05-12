@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"VIP" | 0.12 | bag | bold sans
+"NEON" | 0.10 | top | electric display
+"Glow" | 0.10 | top | glitter script
+"After Hours" | 0.08 | top | bold serif
+"Pulse" | 0.08 | accessories | techno mono

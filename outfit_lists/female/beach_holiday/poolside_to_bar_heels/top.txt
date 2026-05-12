@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped shell top | 0.85 | 0.4-0.65 | cotton,polyester
+fitted crop top | 0.80 | 0.4-0.65 | cotton,viscose
+sleek bralette | 0.70 | 0.4-0.6 | polyester,nylon
+tank top | 0.70 | 0.4-0.65 | cotton,viscose
+ribbed crop tank | 0.65 | 0.4-0.65 | cotton,polyester
+strappy crop top | 0.65 | 0.4-0.65 | viscose,polyester
+fitted shell | 0.60 | 0.45-0.65 | silk,polyester
+cropped halter | 0.55 | 0.4-0.6 | nylon,polyester
+bandeau top | 0.55 | 0.4-0.6 | nylon,polyester
+slip cami | 0.55 | 0.45-0.65 | satin,silk
+ruched crop top | 0.50 | 0.4-0.65 | polyester,viscose
+sheer-overlay shell | 0.45 | 0.5-0.65 | chiffon
+twist-front crop top | 0.50 | 0.4-0.65 | viscose,cotton

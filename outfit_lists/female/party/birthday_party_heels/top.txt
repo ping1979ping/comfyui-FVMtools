@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# ruffled blouse | 0.80 | 0.5-0.75 | chiffon,silk
+#color# bow-tie blouse | 0.75 | 0.5-0.75 | chiffon,silk
+#color# off-shoulder top | 0.70 | 0.5-0.75 | chiffon,satin
+#color# puff-sleeve blouse | 0.70 | 0.5-0.75 | cotton,chiffon
+#color# fitted bodysuit | 0.65 | 0.5-0.75 | jersey,satin
+#color# cropped sweetheart top | 0.65 | 0.5-0.75 | satin,polyester
+#color# halter top | 0.60 | 0.5-0.75 | satin,jersey
+#color# tie-front blouse | 0.55 | 0.5-0.75 | cotton,chiffon
+#color# fluttery camisole | 0.55 | 0.5-0.75 | silk,chiffon
+#color# heart-print tee | 0.50 | 0.5-0.7 | cotton,jersey
+#color# embellished crop top | 0.50 | 0.5-0.75 | satin,beaded
+#color# pussy-bow blouse | 0.50 | 0.5-0.75 | silk,chiffon

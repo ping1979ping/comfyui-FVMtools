@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+heart motif | 0.35 | top,bottom,bag | 0.5-0.75
+playful polka dots | 0.35 | top,bottom | 0.5-0.75
+ditsy floral | 0.30 | top,bottom | 0.5-0.75
+candy stripes | 0.25 | top,bottom | 0.5-0.7
+confetti pattern | 0.30 | top,bag | 0.5-0.75
+balloon motif | 0.20 | top | 0.5-0.7
+star scatter | 0.25 | top,bottom | 0.5-0.75
+sweet pastel gingham | 0.20 | top,bottom | 0.5-0.7

@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped bolero | 0.40 | 0.4-0.65 | silk,viscose
+sheer kimono | 0.35 | 0.4-0.6 | chiffon
+draped wrap | 0.35 | 0.4-0.65 | viscose,chiffon
+fine-knit cardigan | 0.35 | 0.4-0.6 | cotton,viscose
+crochet cover-up | 0.30 | 0.4-0.55 | cotton
+relaxed summer blazer | 0.30 | 0.5-0.65 | linen
+silk-blend kimono jacket | 0.25 | 0.45-0.65 | viscose
+light shawl | 0.25 | 0.4-0.65 | silk,viscose

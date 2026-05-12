@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+tonal jewel-tone | 0.45 | top,bottom,outerwear | 0.6-0.85
+subtle metallic sheen | 0.40 | top,bottom,bag | 0.6-0.85
+delicate pearl trim | 0.35 | top,bag | 0.6-0.85
+tonal floral motif | 0.35 | top,bottom | 0.6-0.85
+crystal-embellished detail | 0.35 | top,accessories,footwear | 0.6-0.85
+art-deco geometry | 0.30 | top,bag | 0.6-0.85
+fine pinstripe | 0.20 | bottom,outerwear | 0.6-0.85
+lacquered finish | 0.30 | bag,accessories | 0.6-0.85

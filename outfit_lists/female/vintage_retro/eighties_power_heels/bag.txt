@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured handbag | 0.80 | 0.55-0.85 | leather
+top-handle bag | 0.75 | 0.55-0.85 | leather,suede
+power tote | 0.65 | 0.55-0.85 | leather
+chain shoulder bag | 0.60 | 0.55-0.85 | leather
+clutch | 0.55 | 0.6-0.85 | satin,leather
+mini bag | 0.50 | 0.55-0.85 | leather,suede
+boxy frame bag | 0.50 | 0.6-0.85 | leather

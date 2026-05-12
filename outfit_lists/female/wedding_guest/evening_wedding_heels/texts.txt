@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"GLOW" | 0.10 | accessories | shimmer serif
+"SHINE" | 0.08 | accessories | bold sans-serif
+"GALA" | 0.08 | bag | elegant serif
+"SPARKLE" | 0.05 | bag | playful script
+"STARLIGHT" | 0.05 | accessories | refined serif

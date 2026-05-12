@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floaty blouse | 0.85 | 0.6-0.85 | chiffon,silk,georgette
+ruffled blouse | 0.75 | 0.6-0.85 | chiffon,silk
+puff-sleeve blouse | 0.70 | 0.6-0.85 | cotton,chiffon
+sweetheart-neck top | 0.65 | 0.6-0.85 | silk,chiffon
+off-shoulder top | 0.65 | 0.6-0.85 | cotton,chiffon
+delicate camisole | 0.65 | 0.6-0.85 | silk,satin
+square-neck blouse | 0.60 | 0.6-0.85 | cotton,silk
+fitted bodice | 0.55 | 0.65-0.85 | silk,satin
+tie-front blouse | 0.55 | 0.6-0.85 | cotton,chiffon
+scalloped-edge top | 0.50 | 0.65-0.85 | cotton,silk
+flutter-sleeve blouse | 0.55 | 0.6-0.85 | chiffon,georgette
+high-neck lace top | 0.45 | 0.65-0.85 | chiffon,cotton

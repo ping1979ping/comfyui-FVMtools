@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sequined mini skirt | 0.90 | 0.75-0.95 | polyester,satin
+metallic mini skirt | 0.85 | 0.75-0.95 | polyester
+mini skirt | 0.85 | 0.7-0.95 | satin,silk
+ruched mini skirt | 0.75 | 0.7-0.95 | satin
+draped mini skirt | 0.70 | 0.75-0.95 | silk,satin
+beaded mini skirt | 0.70 | 0.8-0.95 | polyester,satin
+asymmetric mini skirt | 0.65 | 0.75-0.95 | satin,silk
+shimmer mini skirt | 0.65 | 0.75-0.95 | polyester
+crystal-embellished mini skirt | 0.60 | 0.8-0.95 | polyester
+bandage mini skirt | 0.55 | 0.7-0.9 | polyester
+structured mini skirt | 0.55 | 0.7-0.9 | satin,polyester
+short pencil skirt | 0.50 | 0.7-0.9 | satin,crepe

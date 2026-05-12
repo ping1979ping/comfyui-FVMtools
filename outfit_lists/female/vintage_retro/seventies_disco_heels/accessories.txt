@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer hosiery | 0.65 | 0.5-0.85 | nylon
+gold chain necklace | 0.75 | 0.5-0.85 | metal
+hoop earrings | 0.75 | 0.5-0.85 | metal
+chunky bangles | 0.65 | 0.5-0.85 | metal,plastic
+statement medallion | 0.60 | 0.5-0.85 | metal
+oversized sunglasses | 0.60 | 0.5-0.8 | acrylic
+cocktail ring | 0.55 | 0.5-0.85 | metal
+layered chains | 0.55 | 0.5-0.85 | metal
+wide statement belt | 0.55 | 0.5-0.85 | leather
+glam clutch strap | 0.40 | 0.55-0.85 | metal
+disco choker | 0.45 | 0.5-0.85 | metal

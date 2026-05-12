@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+ombre sunset effect | 0.40 | top,bottom | 0.45-0.7
+tropical floral | 0.35 | top,bottom | 0.45-0.7
+hibiscus motif | 0.30 | top,bottom | 0.45-0.7
+palm frond pattern | 0.30 | top,bottom | 0.45-0.7
+abstract watercolor | 0.30 | top,bottom | 0.45-0.7
+gold metallic shimmer | 0.25 | top,bottom | 0.5-0.7
+fine polka dots | 0.20 | top | 0.45-0.7
+delicate floral motif | 0.30 | top,bottom | 0.45-0.7

@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured bustier | 0.85 | 0.65-0.9 | satin,silk
+sleek wrap top | 0.80 | 0.65-0.9 | crepe,silk
+fitted bodysuit | 0.70 | 0.65-0.9 | jersey,polyester
+sweetheart-neck top | 0.70 | 0.65-0.9 | satin,silk
+halter-neck top | 0.65 | 0.65-0.9 | silk,satin
+one-shoulder top | 0.65 | 0.7-0.9 | silk,crepe
+draped front blouse | 0.60 | 0.65-0.9 | silk,charmeuse
+sleeveless shell | 0.60 | 0.65-0.9 | silk,crepe
+embellished tank top | 0.55 | 0.7-0.9 | satin,silk
+ruched off-shoulder top | 0.55 | 0.65-0.9 | charmeuse,silk
+asymmetric-neck top | 0.50 | 0.7-0.9 | crepe,silk
+fitted high-neck top | 0.55 | 0.65-0.9 | crepe,satin
+beaded camisole | 0.50 | 0.7-0.9 | silk,georgette

@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"RIVIERA" | 0.07 | accessories | elegant serif
+"ESCAPE" | 0.06 | accessories | refined sans
+"VILLA" | 0.05 | top | minimal serif
+"RESORT" | 0.05 | accessories | clean sans-serif

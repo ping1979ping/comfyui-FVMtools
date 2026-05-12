@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored blazer | 0.80 | 0.65-0.9 | wool,crepe
+fitted blazer | 0.70 | 0.65-0.9 | wool,crepe
+cropped blazer | 0.60 | 0.65-0.9 | wool,crepe
+double-breasted blazer | 0.55 | 0.7-0.9 | wool,polyester
+short trench coat | 0.50 | 0.65-0.85 | cotton,polyester
+boucle jacket | 0.50 | 0.65-0.9 | wool,polyester
+belted blazer | 0.45 | 0.65-0.9 | wool,polyester
+sleek wool coat | 0.40 | 0.65-0.85 | wool,cashmere

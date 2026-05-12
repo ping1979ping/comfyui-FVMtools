@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized sunglasses | 0.75 | 0.5-0.75 | plastic
+delicate gold necklace | 0.70 | 0.5-0.75 | metal
+classic watch | 0.65 | 0.5-0.75 | metal,leather
+slim belt | 0.60 | 0.5-0.75 | leather
+hoop earrings | 0.60 | 0.5-0.75 | metal
+stud earrings | 0.55 | 0.5-0.75 | metal
+layered pendant | 0.50 | 0.5-0.75 | metal,shell
+fine neck scarf | 0.45 | 0.5-0.75 | silk
+signet ring | 0.45 | 0.5-0.75 | metal
+beaded bracelet | 0.40 | 0.5-0.7 | metal

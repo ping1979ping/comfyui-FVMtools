@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"POWER" | 0.12 | accessories | bold sans-serif
+"DYNASTY" | 0.08 | accessories | engraved serif
+"GLAMOUR" | 0.08 | top | bold italic
+"EXECUTIVE" | 0.06 | accessories | clean serif
+"AMBITION" | 0.06 | accessories | bold sans-serif

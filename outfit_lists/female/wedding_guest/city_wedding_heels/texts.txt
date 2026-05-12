@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"NYC" | 0.10 | accessories | bold sans-serif
+"METRO" | 0.08 | bag | minimal serif
+"URBAN" | 0.06 | accessories | clean sans-serif
+"REFINED" | 0.05 | accessories | elegant serif

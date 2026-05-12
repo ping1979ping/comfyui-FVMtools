@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sporty sunglasses | 0.65 | 0.4-0.65 | polyester
+hoop earrings | 0.60 | 0.4-0.65 | metal
+sheer hosiery | 0.55 | 0.4-0.65 | nylon
+chunky chain necklace | 0.55 | 0.4-0.65 | metal
+slim belt | 0.55 | 0.4-0.65 | leather
+sport watch | 0.50 | 0.4-0.65 | metal,polyester
+stacked rings | 0.50 | 0.4-0.65 | metal
+ear cuff | 0.45 | 0.4-0.65 | metal
+crew socks | 0.45 | 0.4-0.6 | cotton
+sleek sunglasses | 0.45 | 0.4-0.65 | polyester
+mini pendant necklace | 0.40 | 0.4-0.65 | metal

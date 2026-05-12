@@ -1,0 +1,12 @@
+# slot: prints
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+polka dots | 0.60 | top,bottom,outerwear | 0.5-0.8
+gingham check | 0.50 | top,bottom | 0.5-0.75
+cherry print | 0.35 | top,bottom | 0.5-0.75
+floral motif | 0.45 | top,bottom,outerwear | 0.5-0.8
+rose print | 0.35 | top,bottom | 0.5-0.8
+horizontal stripes | 0.30 | top | 0.5-0.8
+small check | 0.30 | top,bottom | 0.5-0.8
+tropical print | 0.25 | top,bottom | 0.5-0.75
+gingham pattern | 0.30 | top,bottom | 0.5-0.75

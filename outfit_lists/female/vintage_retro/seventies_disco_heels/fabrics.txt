@@ -1,0 +1,18 @@
+# format: fabric_name | formality | family | weight
+
+satin | 0.75 | synthetic | light
+lurex | 0.8 | synthetic | light
+polyester | 0.5 | synthetic | medium
+rayon | 0.55 | synthetic | light
+chiffon | 0.7 | synthetic | light
+crepe | 0.7 | synthetic | medium
+jersey | 0.5 | knit | medium
+sequin | 0.8 | luxury | medium
+leather | 0.7 | animal | medium
+suede | 0.7 | animal | medium
+faux_fur | 0.7 | luxury | heavy
+nylon | 0.5 | synthetic | light
+metal | 0.7 | accessories | light
+acrylic | 0.5 | synthetic | light
+plastic | 0.5 | synthetic | light
+silk | 0.85 | natural | light

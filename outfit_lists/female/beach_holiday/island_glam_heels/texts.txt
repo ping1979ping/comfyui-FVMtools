@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"GLAM" | 0.08 | accessories | bold serif
+"ICON" | 0.07 | accessories | glossy serif
+"DIVA" | 0.06 | accessories | flowing script
+"TROPICAL" | 0.05 | top | elegant serif
+"STARLIGHT" | 0.05 | accessories | refined script

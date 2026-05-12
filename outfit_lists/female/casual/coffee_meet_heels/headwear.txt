@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim headband | 0.15 | 0.45-0.65 | silk,satin
+silk hair scarf | 0.10 | 0.45-0.65 | polyester
+claw clip | 0.10 | 0.4-0.6 | metal
+beret | 0.08 | 0.45-0.65 | wool

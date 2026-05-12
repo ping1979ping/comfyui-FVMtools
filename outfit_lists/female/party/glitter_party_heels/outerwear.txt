@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sequin bolero | 0.55 | 0.55-0.85 | polyester,satin
+#color# metallic cropped jacket | 0.50 | 0.55-0.85 | polyester,satin
+#color# faux-fur shrug | 0.50 | 0.55-0.85 | polyester
+#color# glitter blazer | 0.45 | 0.55-0.85 | polyester,satin
+#color# rhinestone moto jacket | 0.40 | 0.55-0.85 | leather,polyester
+#color# foiled cape | 0.35 | 0.55-0.85 | satin,polyester
+#color# plush tuxedo jacket | 0.35 | 0.55-0.85 | velvet
+#color# embellished bolero | 0.40 | 0.55-0.85 | satin,polyester

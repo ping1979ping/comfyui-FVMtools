@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+relaxed summer blazer | 0.75 | 0.5-0.75 | linen
+classic blazer | 0.70 | 0.55-0.75 | linen,polyester
+cropped blazer | 0.60 | 0.5-0.75 | linen,polyester
+oversized blazer | 0.55 | 0.5-0.75 | linen,polyester
+boyfriend blazer | 0.50 | 0.5-0.75 | linen,polyester
+silk-blend kimono jacket | 0.40 | 0.5-0.7 | viscose
+fine-knit cardigan | 0.40 | 0.5-0.7 | cotton,viscose
+draped shawl | 0.35 | 0.5-0.7 | silk,viscose
+double-breasted summer blazer | 0.35 | 0.6-0.75 | linen

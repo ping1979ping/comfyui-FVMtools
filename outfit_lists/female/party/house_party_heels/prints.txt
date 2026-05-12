@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+abstract motif | 0.25 | top,bottom | 0.45-0.7
+polka dots | 0.25 | top,bottom | 0.45-0.7
+small floral | 0.25 | top,bottom | 0.45-0.7
+animal print | 0.25 | top,bottom,bag | 0.45-0.7
+horizontal stripes | 0.20 | top | 0.45-0.7
+graphic motif | 0.20 | top | 0.45-0.65
+shimmer accent | 0.20 | top,bag | 0.45-0.7

@@ -1,0 +1,13 @@
+# slot: prints
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+leopard print | 0.55 | top,bottom,outerwear | 0.55-0.85
+zebra stripes | 0.45 | top,bottom,outerwear | 0.55-0.85
+windowpane check | 0.50 | outerwear,bottom | 0.55-0.85
+houndstooth | 0.50 | outerwear,bottom | 0.6-0.85
+glen plaid | 0.45 | outerwear,bottom | 0.6-0.85
+bold check | 0.50 | outerwear,bottom | 0.55-0.85
+power pinstripe | 0.45 | outerwear,bottom | 0.6-0.85
+abstract color block | 0.45 | top,outerwear | 0.55-0.85
+metallic shimmer | 0.40 | top,outerwear | 0.55-0.85
+snake print | 0.40 | top,bottom,outerwear | 0.6-0.85

@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+delicate floral motif | 0.40 | top,bottom | 0.5-0.75
+fine pinstripe | 0.30 | bottom,outerwear | 0.5-0.75
+subtle check | 0.25 | top,outerwear | 0.5-0.75
+tropical floral | 0.30 | top,bottom | 0.5-0.7
+palm frond pattern | 0.25 | top,bottom | 0.5-0.7
+horizontal stripes | 0.20 | top | 0.5-0.7
+abstract watercolor | 0.25 | top,bottom | 0.5-0.7

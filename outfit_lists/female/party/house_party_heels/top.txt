@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# fitted crop top | 0.80 | 0.45-0.7 | jersey,cotton
+#color# cami top | 0.75 | 0.45-0.7 | satin,silk
+#color# bodysuit | 0.70 | 0.45-0.7 | jersey,satin
+#color# off-shoulder blouse | 0.65 | 0.45-0.7 | chiffon,satin
+#color# fitted tank | 0.60 | 0.45-0.7 | jersey,cotton
+#color# tie-front blouse | 0.55 | 0.45-0.7 | cotton,chiffon
+#color# wrap blouse | 0.55 | 0.45-0.7 | chiffon,satin
+#color# halter top | 0.55 | 0.45-0.7 | satin,jersey
+#color# fitted button-up shirt | 0.50 | 0.45-0.7 | cotton,polyester
+#color# cropped sweater | 0.50 | 0.45-0.7 | wool,cotton
+#color# slip cami | 0.50 | 0.45-0.7 | satin,silk
+#color# bandeau top | 0.45 | 0.45-0.65 | jersey,satin

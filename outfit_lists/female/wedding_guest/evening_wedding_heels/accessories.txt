@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chandelier earrings | 0.80 | 0.75-0.95 | metal
+crystal pendant necklace | 0.75 | 0.75-0.95 | metal
+diamond-look bracelet | 0.70 | 0.75-0.95 | metal
+sheer hosiery | 0.65 | 0.7-0.95 | nylon
+statement cocktail ring | 0.65 | 0.75-0.95 | metal
+jeweled cuff bracelet | 0.60 | 0.75-0.95 | metal
+crystal-embellished belt | 0.55 | 0.75-0.95 | satin,leather
+glittering choker | 0.50 | 0.75-0.95 | metal
+hair jewels | 0.45 | 0.75-0.95 | metal
+beaded clutch chain | 0.40 | 0.75-0.95 | metal
+fine evening watch | 0.40 | 0.7-0.9 | metal

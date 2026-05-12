@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+statement earrings | 0.75 | 0.55-0.8 | metal
+oversized sunglasses | 0.70 | 0.55-0.8 | plastic
+delicate gold necklace | 0.65 | 0.55-0.8 | metal
+layered pendant | 0.60 | 0.55-0.8 | metal,shell
+hoop earrings | 0.60 | 0.55-0.8 | metal
+slim belt | 0.55 | 0.55-0.8 | leather
+stacked bangles | 0.55 | 0.55-0.8 | metal
+fine waist chain | 0.50 | 0.55-0.8 | metal
+beaded bracelet | 0.50 | 0.55-0.75 | metal
+crystal hair pin | 0.45 | 0.6-0.8 | metal
+embellished choker | 0.45 | 0.55-0.8 | metal

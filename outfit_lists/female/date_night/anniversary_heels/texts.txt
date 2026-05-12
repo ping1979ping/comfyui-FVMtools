@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"FOREVER" | 0.10 | accessories | engraved serif
+"ALWAYS" | 0.08 | accessories | delicate script
+"OURS" | 0.07 | accessories | minimal serif
+"VOWS" | 0.05 | accessories | flowing script
+"ETERNAL" | 0.05 | accessories | engraved serif

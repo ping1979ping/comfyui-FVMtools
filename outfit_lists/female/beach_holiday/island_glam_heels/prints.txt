@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+gold metallic shimmer | 0.45 | top,bottom | 0.55-0.8
+ombre sunset effect | 0.40 | top,bottom | 0.55-0.8
+abstract watercolor | 0.35 | top,bottom | 0.55-0.8
+tropical floral | 0.30 | top,bottom | 0.55-0.75
+delicate floral motif | 0.30 | top,bottom | 0.55-0.8
+crystal embellishment | 0.30 | top,bottom | 0.6-0.8
+animal print | 0.25 | top,bottom | 0.55-0.8
+fine polka dots | 0.20 | top | 0.55-0.75

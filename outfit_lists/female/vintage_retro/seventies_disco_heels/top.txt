@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+halterneck disco top | 0.85 | 0.5-0.85 | satin,lurex
+plunging wrap top | 0.80 | 0.5-0.85 | satin,polyester
+shimmery camisole | 0.75 | 0.5-0.85 | satin,lurex
+deep V-neck blouse | 0.70 | 0.5-0.85 | polyester,rayon
+fitted bodysuit | 0.65 | 0.5-0.8 | jersey,polyester
+off-shoulder glam top | 0.65 | 0.5-0.85 | satin,polyester
+one-shoulder shimmer top | 0.60 | 0.55-0.85 | lurex,polyester
+chiffon blouse | 0.60 | 0.5-0.85 | polyester,rayon
+metallic shell top | 0.55 | 0.55-0.85 | lurex,polyester
+keyhole halter top | 0.55 | 0.5-0.85 | satin,polyester
+sparkle pullover | 0.50 | 0.5-0.85 | lurex,polyester
+tied front blouse | 0.50 | 0.5-0.8 | polyester,rayon

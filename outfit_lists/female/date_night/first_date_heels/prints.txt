@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+ditsy floral | 0.35 | top,bottom | 0.5-0.75
+polka dots | 0.30 | top | 0.5-0.75
+gingham check | 0.25 | top,bottom | 0.5-0.7
+soft stripes | 0.25 | top | 0.5-0.75
+delicate hearts | 0.20 | top | 0.5-0.7
+romantic floral | 0.30 | top | 0.5-0.75
+pastel motif | 0.20 | top | 0.5-0.7

@@ -1,0 +1,11 @@
+# slot: prints
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+geometric pattern | 0.65 | top,bottom,outerwear | 0.45-0.75
+op art swirl | 0.50 | top,bottom | 0.45-0.75
+black and white checkerboard | 0.45 | top,bottom | 0.45-0.75
+psychedelic motif | 0.40 | top,bottom | 0.45-0.7
+bold color block | 0.55 | top,bottom,outerwear | 0.45-0.75
+mod stripes | 0.45 | top,bottom | 0.45-0.75
+daisy print | 0.40 | top,bottom | 0.45-0.75
+square graphic | 0.35 | top | 0.45-0.75

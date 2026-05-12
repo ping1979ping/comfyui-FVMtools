@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured corset top | 0.85 | 0.6-0.85 | satin,polyester
+bustier bodice | 0.75 | 0.6-0.85 | satin,velvet
+silky cami blouse | 0.70 | 0.6-0.85 | silk,satin
+draped blouse | 0.65 | 0.6-0.85 | silk,chiffon
+slip camisole | 0.65 | 0.6-0.8 | silk,satin
+square-neck bustier top | 0.60 | 0.6-0.85 | satin,velvet
+halter neck top | 0.60 | 0.6-0.85 | satin,silk
+asymmetric one-shoulder top | 0.55 | 0.6-0.85 | satin,silk
+fitted shell top | 0.55 | 0.6-0.85 | silk,crepe
+draped cowl-neck top | 0.55 | 0.6-0.85 | silk,satin
+bow-tie collar blouse | 0.45 | 0.6-0.85 | silk,satin
+backless bodice | 0.45 | 0.6-0.85 | satin,polyester

@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mini shoulder bag | 0.75 | 0.5-0.75 | leather
+chain-strap bag | 0.70 | 0.5-0.75 | leather
+crossbody bag | 0.65 | 0.5-0.75 | leather,suede
+studded clutch | 0.55 | 0.5-0.75 | leather
+slim baguette bag | 0.55 | 0.5-0.75 | leather,satin
+mini bucket bag | 0.50 | 0.5-0.7 | leather
+moto belt bag | 0.45 | 0.5-0.7 | leather

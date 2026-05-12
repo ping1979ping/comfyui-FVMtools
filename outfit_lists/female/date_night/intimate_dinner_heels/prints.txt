@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+subtle floral | 0.30 | top | 0.6-0.85
+delicate polka dots | 0.25 | top | 0.6-0.8
+fine pinstripe | 0.20 | bottom,outerwear | 0.6-0.85
+abstract motif | 0.20 | top | 0.6-0.85
+tonal jacquard | 0.25 | top,bottom | 0.65-0.85
+soft watercolor | 0.20 | top | 0.6-0.8
+delicate paisley | 0.20 | top | 0.6-0.85

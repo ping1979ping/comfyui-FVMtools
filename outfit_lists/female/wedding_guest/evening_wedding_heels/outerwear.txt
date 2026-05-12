@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped bolero | 0.55 | 0.75-0.95 | satin,silk
+embellished cape | 0.50 | 0.8-0.95 | satin
+fur-collar shrug | 0.45 | 0.75-0.95 | faux-fur,satin
+sequined jacket | 0.45 | 0.8-0.95 | polyester
+tailored shrug | 0.45 | 0.7-0.9 | crepe,silk
+beaded wrap | 0.40 | 0.8-0.95 | silk
+sheer kimono jacket | 0.40 | 0.7-0.9 | chiffon
+short opera cape | 0.35 | 0.8-0.95 | satin,velvet

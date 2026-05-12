@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+color block panels | 0.35 | top,outerwear | 0.4-0.65
+racing stripes | 0.30 | top,bottom | 0.4-0.65
+side stripe | 0.30 | bottom,outerwear | 0.4-0.65
+sport logo | 0.30 | top,outerwear | 0.4-0.6
+ombre fade | 0.25 | top,bottom | 0.4-0.65
+metallic shimmer | 0.20 | top,bottom | 0.4-0.65
+neon accent | 0.20 | top,outerwear | 0.4-0.6
+camo print | 0.20 | outerwear,bottom | 0.4-0.6

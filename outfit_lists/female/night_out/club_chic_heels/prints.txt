@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+bold metallic sheen | 0.55 | top,bottom,bag,outerwear | 0.55-0.85
+sequin shimmer | 0.50 | top,bottom,bag | 0.55-0.85
+crystal-embellished detail | 0.45 | top,accessories,footwear | 0.55-0.85
+holographic finish | 0.40 | top,bottom,bag | 0.55-0.85
+animal print | 0.40 | top,bottom | 0.55-0.85
+glitter wash | 0.35 | top,accessories | 0.55-0.85
+neon color block | 0.30 | top,bottom | 0.55-0.8
+mirror foil | 0.30 | top,bottom,bag | 0.55-0.85
+laser-cut geometry | 0.25 | top,bottom | 0.55-0.85

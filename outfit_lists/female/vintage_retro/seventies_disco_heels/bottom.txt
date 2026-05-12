@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+wrap mini skirt | 0.85 | 0.5-0.85 | satin,polyester
+ruched mini skirt | 0.80 | 0.5-0.85 | satin,polyester
+draped mini skirt | 0.75 | 0.5-0.85 | satin,polyester
+mini skirt | 0.80 | 0.5-0.85 | satin,lurex,polyester
+shimmery mini skirt | 0.70 | 0.5-0.85 | lurex,polyester
+short A-line skirt | 0.60 | 0.5-0.8 | polyester,rayon
+pleated mini skirt | 0.55 | 0.5-0.85 | polyester,chiffon
+swing mini skirt | 0.50 | 0.5-0.8 | polyester,rayon
+skater mini skirt | 0.45 | 0.5-0.8 | jersey,polyester
+circle mini skirt | 0.45 | 0.5-0.8 | polyester,rayon
+shift mini skirt | 0.40 | 0.5-0.8 | polyester,satin

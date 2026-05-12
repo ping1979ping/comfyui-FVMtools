@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+snake print | 0.30 | bottom,outerwear | 0.5-0.75
+animal print | 0.30 | bottom,outerwear | 0.5-0.75
+graphic print | 0.30 | top | 0.5-0.7
+chain motif | 0.25 | top | 0.5-0.75
+distressed wash | 0.25 | outerwear,bottom | 0.5-0.7
+metallic shimmer | 0.25 | bottom,top | 0.5-0.75
+ombre fade | 0.20 | top,bottom | 0.5-0.7
+abstract splash | 0.20 | top | 0.5-0.7

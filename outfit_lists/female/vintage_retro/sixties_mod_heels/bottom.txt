@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shift mini skirt | 0.85 | 0.45-0.75 | polyester,crepe,wool
+short A-line skirt | 0.85 | 0.45-0.75 | wool,polyester
+mini skirt | 0.80 | 0.45-0.75 | wool,polyester,vinyl
+pleated mini skirt | 0.70 | 0.45-0.75 | polyester,wool
+box-pleat mini skirt | 0.55 | 0.5-0.75 | wool,polyester
+structured mini skirt | 0.55 | 0.5-0.75 | crepe,polyester
+wrap mini skirt | 0.50 | 0.45-0.75 | polyester,rayon
+skater mini skirt | 0.50 | 0.45-0.7 | jersey,polyester
+mock croc mini skirt | 0.40 | 0.5-0.75 | leather
+circle mini skirt | 0.45 | 0.45-0.75 | wool,polyester

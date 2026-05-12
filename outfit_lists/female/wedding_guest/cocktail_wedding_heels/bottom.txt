@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mini skirt | 0.90 | 0.65-0.9 | satin,silk,crepe
+structured mini skirt | 0.80 | 0.65-0.9 | crepe,polyester
+short pencil skirt | 0.75 | 0.7-0.9 | crepe,polyester
+ruched mini skirt | 0.70 | 0.65-0.9 | satin,polyester
+wrap mini skirt | 0.65 | 0.65-0.9 | silk,satin
+pleated mini skirt | 0.65 | 0.65-0.9 | satin,polyester
+draped mini skirt | 0.60 | 0.7-0.9 | silk,satin
+bandage mini skirt | 0.55 | 0.7-0.9 | polyester
+asymmetric mini skirt | 0.55 | 0.7-0.9 | satin,crepe
+short A-line skirt | 0.55 | 0.65-0.9 | crepe,satin
+box-pleat mini skirt | 0.50 | 0.65-0.9 | polyester,crepe

@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mod shift top | 0.80 | 0.45-0.75 | polyester,crepe
+geometric-print blouse | 0.75 | 0.45-0.75 | polyester,rayon
+turtleneck shell | 0.70 | 0.45-0.75 | wool,cashmere,polyester
+boatneck shell top | 0.65 | 0.5-0.75 | rayon,polyester
+mock-neck top | 0.65 | 0.5-0.75 | crepe,polyester
+ribbed pullover | 0.55 | 0.45-0.75 | wool,cashmere
+boxy crop top | 0.55 | 0.45-0.7 | cotton,polyester
+sleeveless shell | 0.60 | 0.5-0.75 | rayon,polyester
+peter pan collar shirt | 0.55 | 0.45-0.75 | cotton,rayon
+keyhole-neck top | 0.50 | 0.45-0.75 | rayon,polyester
+zip-front top | 0.45 | 0.45-0.7 | vinyl,polyester

@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cropped cardigan | 0.65 | 0.5-0.75 | cotton,wool
+#color# fitted blazer | 0.55 | 0.5-0.75 | polyester,crepe
+#color# faux-fur shrug | 0.50 | 0.5-0.75 | polyester
+#color# bow-detail jacket | 0.45 | 0.5-0.75 | satin,polyester
+#color# bolero | 0.45 | 0.5-0.75 | satin,polyester
+#color# tulle cape | 0.40 | 0.5-0.75 | polyester,chiffon
+#color# cropped trench | 0.40 | 0.5-0.75 | cotton,polyester
+#color# pastel cardigan | 0.40 | 0.5-0.75 | cotton,wool
+#color# ruffled jacket | 0.35 | 0.5-0.75 | polyester,chiffon

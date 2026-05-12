@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+butterfly motif | 0.40 | top,bottom | 0.45-0.7
+rhinestone studs | 0.35 | top,bottom | 0.45-0.7
+metallic shimmer | 0.30 | top,bottom | 0.45-0.7
+glitter finish | 0.30 | top,outerwear | 0.45-0.7
+pastel tie-dye | 0.30 | top | 0.45-0.65
+cherry print | 0.25 | top | 0.45-0.65
+bedazzled motif | 0.25 | top,bottom | 0.45-0.7
+faded wash | 0.25 | bottom,outerwear | 0.45-0.65
+holographic finish | 0.25 | top,outerwear | 0.45-0.7
+y2k logo | 0.20 | top | 0.45-0.65

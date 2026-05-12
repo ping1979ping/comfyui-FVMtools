@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"SUNSET" | 0.08 | accessories | flowing script
+"ALOHA" | 0.07 | accessories | playful script
+"GOLDEN HOUR" | 0.06 | top | elegant serif
+"PARADISE" | 0.05 | accessories | retro sans

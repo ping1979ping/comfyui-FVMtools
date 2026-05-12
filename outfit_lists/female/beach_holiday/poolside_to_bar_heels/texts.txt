@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"POOLSIDE" | 0.08 | accessories | playful sans
+"BAR HOUR" | 0.06 | accessories | retro script
+"SUMMER" | 0.07 | top | flowing script
+"MIAMI" | 0.05 | accessories | neon sans
+"VACAY" | 0.05 | top | bubble sans

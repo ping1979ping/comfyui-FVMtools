@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+floral motif | 0.30 | top,bottom | 0.35-0.6
+ditsy floral | 0.25 | top | 0.35-0.6
+polka dots | 0.25 | top | 0.35-0.6
+gingham check | 0.20 | top,bottom | 0.35-0.6
+horizontal stripes | 0.20 | top | 0.35-0.6
+subtle check | 0.20 | top,outerwear | 0.4-0.65
+plaid pattern | 0.18 | outerwear,bottom | 0.4-0.65
+abstract print | 0.15 | top | 0.4-0.65

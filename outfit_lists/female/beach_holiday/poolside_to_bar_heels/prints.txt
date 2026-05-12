@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+tropical floral | 0.40 | top,bottom | 0.4-0.65
+palm frond pattern | 0.35 | top,bottom | 0.4-0.65
+hibiscus motif | 0.30 | top,bottom | 0.4-0.65
+ombre sunset effect | 0.30 | top,bottom | 0.4-0.65
+abstract watercolor | 0.25 | top,bottom | 0.4-0.65
+horizontal stripes | 0.25 | top | 0.4-0.65
+fine polka dots | 0.20 | top | 0.4-0.65
+delicate floral motif | 0.30 | top,bottom | 0.4-0.65

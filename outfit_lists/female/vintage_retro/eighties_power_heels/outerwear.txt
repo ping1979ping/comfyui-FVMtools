@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+power-shoulder blazer | 0.90 | 0.6-0.85 | wool,polyester
+oversized blazer | 0.80 | 0.55-0.85 | wool,polyester
+double-breasted blazer | 0.70 | 0.6-0.85 | wool,polyester
+boucle short jacket | 0.55 | 0.6-0.85 | wool,polyester
+cropped moto jacket | 0.55 | 0.55-0.8 | leather
+faux fur short coat | 0.50 | 0.6-0.85 | faux_fur
+pinstripe blazer | 0.50 | 0.65-0.85 | wool,polyester
+metallic shimmer jacket | 0.40 | 0.55-0.85 | lurex,polyester
+belted short coat | 0.45 | 0.6-0.85 | wool,polyester

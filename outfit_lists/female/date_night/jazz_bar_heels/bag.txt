@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+clutch | 0.80 | 0.55-0.8 | charmeuse,suede
+mini bag | 0.75 | 0.55-0.8 | suede,patent
+chain-strap bag | 0.70 | 0.55-0.8 | charmeuse,suede
+slim shoulder bag | 0.55 | 0.55-0.8 | suede,patent
+top-handle bag | 0.50 | 0.55-0.8 | suede,patent
+crossbody bag | 0.45 | 0.55-0.75 | suede,patent

@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer hosiery | 0.65 | 0.55-0.85 | nylon
+crystal drop earrings | 0.75 | 0.55-0.85 | metal
+rhinestone choker | 0.65 | 0.55-0.85 | metal
+glitter belt | 0.55 | 0.55-0.85 | leather,polyester
+chandelier earrings | 0.60 | 0.55-0.85 | metal
+sparkly bracelet stack | 0.55 | 0.55-0.85 | metal
+embellished hair clip | 0.50 | 0.55-0.85 | metal
+statement cocktail ring | 0.55 | 0.55-0.85 | metal
+beaded shoulder duster earrings | 0.45 | 0.55-0.85 | metal
+metallic anklet | 0.40 | 0.55-0.85 | metal
+rhinestone bracelet | 0.50 | 0.55-0.85 | metal

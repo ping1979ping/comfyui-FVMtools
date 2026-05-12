@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dark glossy blouse | 0.80 | 0.55-0.8 | charmeuse,polyester
+fitted bodysuit | 0.80 | 0.55-0.8 | jersey,polyester
+draped halter | 0.70 | 0.55-0.8 | charmeuse,crepe
+slip camisole | 0.75 | 0.55-0.8 | charmeuse,polyester
+shoulder-baring blouse | 0.65 | 0.55-0.8 | crepe,chiffon
+asymmetric top | 0.65 | 0.55-0.8 | crepe,polyester
+strapless bustier | 0.60 | 0.6-0.8 | crepe,polyester
+mock-neck shell | 0.55 | 0.55-0.8 | jersey,crepe
+fluted-sleeve top | 0.50 | 0.55-0.8 | crepe,chiffon
+sculpted corset top | 0.60 | 0.55-0.8 | polyester
+embellished tank | 0.50 | 0.55-0.8 | tulle,polyester
+beaded camisole | 0.55 | 0.6-0.8 | charmeuse

@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"BIRTHDAY GIRL" | 0.20 | top | playful script
+"CELEBRATE" | 0.12 | top,accessories | bubble font
+"HAPPY" | 0.10 | accessories,bag | rounded sans-serif
+"PARTY" | 0.10 | top,bag | playful script
+"MAKE A WISH" | 0.08 | top | handwriting

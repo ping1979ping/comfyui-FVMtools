@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+all-over sequins | 0.40 | top,bottom,bag | 0.55-0.85
+metallic sheen | 0.35 | top,bottom,outerwear | 0.55-0.85
+crystal embellishments | 0.30 | top,bottom,bag | 0.55-0.85
+glitter overlay | 0.30 | top,bottom,outerwear | 0.55-0.85
+rhinestone scatter | 0.25 | top,bag | 0.55-0.85
+foiled pattern | 0.25 | top,bottom | 0.55-0.85
+disco shine | 0.20 | top,bottom | 0.55-0.85
+beaded motif | 0.20 | top,bag | 0.55-0.85

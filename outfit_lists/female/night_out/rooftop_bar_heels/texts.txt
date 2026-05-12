@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"Skyline" | 0.10 | top | art deco
+"Champagne" | 0.10 | bag | elegant script
+"Golden Hour" | 0.10 | top | classic serif
+"Aperitivo" | 0.08 | top | minimal serif
+"Vista" | 0.06 | bag | thin sans

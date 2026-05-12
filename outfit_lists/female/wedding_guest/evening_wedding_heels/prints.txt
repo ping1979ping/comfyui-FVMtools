@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+all-over sequins | 0.65 | top,bottom | 0.8-0.95
+metallic sheen | 0.60 | top,bottom | 0.75-0.95
+beaded embellishment | 0.55 | top,bottom | 0.8-0.95
+crystal scatter | 0.50 | top,bottom | 0.8-0.95
+shimmer foil | 0.45 | top,bottom | 0.75-0.95
+glitter finish | 0.45 | top,bottom | 0.75-0.95
+ombre gradient | 0.40 | top,bottom | 0.75-0.95
+abstract metallic motif | 0.40 | top,bottom | 0.75-0.95
+deco geometric | 0.35 | top,bottom | 0.8-0.95
+gilded floral | 0.35 | top | 0.8-0.95

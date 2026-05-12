@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pearl earrings | 0.75 | 0.6-0.85 | metal
+delicate necklace | 0.70 | 0.6-0.85 | metal
+sheer hosiery | 0.55 | 0.65-0.85 | nylon
+floral hair pin | 0.50 | 0.6-0.85 | metal
+slim bracelet | 0.50 | 0.6-0.85 | metal
+drop earrings | 0.55 | 0.65-0.85 | metal
+fine ribbon belt | 0.40 | 0.6-0.85 | satin
+layered necklace | 0.40 | 0.6-0.85 | metal
+charm bracelet | 0.35 | 0.6-0.85 | metal
+fine wrist watch | 0.35 | 0.6-0.85 | metal

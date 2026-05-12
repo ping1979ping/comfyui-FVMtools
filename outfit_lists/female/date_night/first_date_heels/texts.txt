@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"HELLO" | 0.10 | accessories | playful handwriting
+"SWEET" | 0.08 | accessories | rounded sans-serif
+"HI" | 0.07 | accessories | cute script
+"LOVE" | 0.06 | accessories | rounded sans-serif

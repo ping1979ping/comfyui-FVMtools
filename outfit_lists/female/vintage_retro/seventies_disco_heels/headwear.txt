@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sparkle headband | 0.30 | 0.5-0.85 | sequin,satin
+glam hair clip | 0.20 | 0.5-0.85 | metal
+sequinned beret | 0.20 | 0.5-0.85 | sequin
+feathered hair piece | 0.15 | 0.55-0.85 | satin

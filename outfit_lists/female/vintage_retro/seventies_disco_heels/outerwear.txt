@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+faux fur jacket | 0.65 | 0.5-0.85 | faux_fur
+cropped bolero | 0.55 | 0.5-0.85 | satin,polyester
+shimmery short jacket | 0.55 | 0.5-0.85 | lurex,polyester
+fringed jacket | 0.45 | 0.5-0.8 | suede,leather
+sequinned bolero | 0.45 | 0.55-0.85 | sequin
+embellished short cape | 0.45 | 0.55-0.85 | satin,polyester
+metallic bomber | 0.40 | 0.5-0.8 | lurex,polyester
+faux fur stole | 0.40 | 0.55-0.85 | faux_fur
+fringe trim jacket | 0.40 | 0.5-0.8 | suede,leather

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tucked-in blouse | 0.80 | 0.5-0.75 | silk,cotton,chiffon
+fitted shell top | 0.75 | 0.5-0.75 | silk,polyester
+slip camisole | 0.70 | 0.5-0.75 | satin,silk
+draped blouse | 0.65 | 0.5-0.75 | silk,chiffon
+button-down shirt | 0.65 | 0.5-0.75 | cotton,linen
+sleeveless shell | 0.60 | 0.5-0.75 | silk,polyester
+peasant-style blouse | 0.55 | 0.5-0.7 | cotton,linen
+wrap-front top | 0.55 | 0.5-0.75 | viscose,silk
+mock-neck shell | 0.50 | 0.55-0.75 | crepe,polyester
+fine-knit shell | 0.50 | 0.5-0.7 | cotton,viscose
+crochet-detail blouse | 0.45 | 0.5-0.7 | cotton
+tied front shirt | 0.50 | 0.5-0.7 | linen,cotton

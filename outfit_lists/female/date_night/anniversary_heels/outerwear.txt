@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+draped evening wrap | 0.65 | 0.65-0.9 | charmeuse,chiffon
+faux-fur stole | 0.55 | 0.65-0.9 | polyester
+fitted bolero | 0.55 | 0.65-0.9 | crepe,polyester
+short tailored overcoat | 0.50 | 0.65-0.9 | wool,polyester
+cropped blazer | 0.50 | 0.65-0.9 | crepe,wool
+opera coat | 0.45 | 0.7-0.9 | wool,polyester
+embellished shrug | 0.45 | 0.65-0.9 | polyester,tulle
+soft shoulder wrap | 0.45 | 0.65-0.9 | charmeuse,chiffon
+double-breasted blazer | 0.40 | 0.7-0.9 | wool,polyester

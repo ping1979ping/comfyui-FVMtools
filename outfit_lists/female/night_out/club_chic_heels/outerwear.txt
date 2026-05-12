@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped moto jacket | 0.55 | 0.55-0.8 | leather
+sleek bomber | 0.50 | 0.55-0.85 | satin,polyester
+cropped blazer | 0.50 | 0.55-0.85 | crepe,polyester
+faux-fur stole | 0.45 | 0.6-0.85 | faux_fur
+draped wrap jacket | 0.40 | 0.55-0.85 | satin,silk
+metallic shrug | 0.40 | 0.55-0.85 | polyester
+brocade bolero | 0.35 | 0.6-0.85 | velvet,satin
+sleek smoking jacket | 0.35 | 0.6-0.85 | velvet,satin

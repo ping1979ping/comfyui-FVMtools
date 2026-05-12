@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped jersey top | 0.85 | 0.4-0.65 | cotton,polyester
+ribbed crop top | 0.85 | 0.4-0.65 | cotton,spandex
+fitted tank top | 0.75 | 0.4-0.6 | jersey,spandex
+sporty bralette | 0.70 | 0.4-0.6 | polyester,spandex
+cropped sweatshirt | 0.65 | 0.4-0.6 | fleece,cotton
+mock-neck crop | 0.65 | 0.4-0.65 | jersey,polyester
+fitted bodysuit | 0.65 | 0.4-0.65 | jersey,spandex
+slim ribbed tank | 0.60 | 0.4-0.6 | cotton,spandex
+zip-up cropped jacket | 0.55 | 0.4-0.65 | polyester,nylon
+slim athletic tee | 0.55 | 0.4-0.6 | cotton,jersey
+longsleeve crop | 0.50 | 0.4-0.65 | jersey,spandex
+cropped polo | 0.45 | 0.4-0.65 | cotton,polyester
+ruched mesh top | 0.50 | 0.4-0.65 | polyester,nylon

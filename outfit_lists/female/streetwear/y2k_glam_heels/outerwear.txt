@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+shrunken denim jacket | 0.80 | 0.45-0.65 | denim
+cropped moto jacket | 0.70 | 0.45-0.7 | leather
+fitted blazer | 0.60 | 0.5-0.7 | wool,polyester
+metallic bomber | 0.55 | 0.45-0.7 | polyester,nylon
+faux fur shrug | 0.55 | 0.45-0.7 | polyester
+shrunken cardigan | 0.50 | 0.45-0.65 | cotton,wool
+cropped puffer | 0.45 | 0.45-0.65 | nylon,polyester
+short trench | 0.40 | 0.45-0.7 | cotton,polyester
+zip track jacket | 0.45 | 0.45-0.65 | polyester,nylon
+sequin cropped jacket | 0.40 | 0.45-0.7 | polyester

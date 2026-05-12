@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"BRUNCH" | 0.10 | top | playful handwriting
+"SUNDAY" | 0.08 | top | playful handwriting
+"AMOUR" | 0.06 | accessories | minimal serif
+"PARIS" | 0.05 | top | elegant script
+"CHEERS" | 0.05 | accessories | clean sans-serif

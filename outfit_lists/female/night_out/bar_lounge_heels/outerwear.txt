@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped blazer | 0.60 | 0.55-0.8 | crepe,polyester
+tailored blazer | 0.55 | 0.6-0.8 | crepe,polyester
+sleek bomber | 0.45 | 0.55-0.8 | satin,polyester
+draped wrap jacket | 0.40 | 0.55-0.8 | silk,satin
+faux-fur stole | 0.35 | 0.6-0.8 | faux_fur
+chiffon kimono wrap | 0.35 | 0.55-0.8 | silk
+short trench | 0.35 | 0.55-0.8 | cotton,polyester
+moto jacket | 0.40 | 0.55-0.8 | leather

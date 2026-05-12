@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+crystal hair tiara | 0.20 | 0.8-0.95 | metal
+jeweled hair pin | 0.20 | 0.75-0.95 | metal
+embellished headband | 0.15 | 0.75-0.95 | satin
+glittering hair clip | 0.15 | 0.75-0.95 | metal
+sequined fascinator | 0.10 | 0.8-0.95 | polyester

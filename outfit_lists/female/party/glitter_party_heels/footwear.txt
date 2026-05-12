@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# crystal-embellished pumps | 0.85 | 0.55-0.85 | satin,leather
+#color# very-high stiletto pumps | 0.80 | 0.55-0.85 | leather,satin
+#color# platform stilettos | 0.75 | 0.55-0.85 | leather,suede
+#color# rhinestone stiletto pumps | 0.70 | 0.55-0.85 | satin,leather
+#color# glitter pumps | 0.70 | 0.55-0.85 | polyester,satin
+#color# metallic pumps | 0.65 | 0.55-0.85 | leather,satin
+#color# ankle-strap pumps | 0.60 | 0.55-0.85 | satin,leather
+#color# bow pumps | 0.55 | 0.55-0.85 | satin,leather
+#color# pointed-toe pumps | 0.55 | 0.55-0.85 | leather,satin
+#color# embellished classic pumps | 0.50 | 0.55-0.85 | leather,satin
+#color# foiled high-heel pumps | 0.50 | 0.55-0.85 | leather,satin
+#color# sparkly mary jane pumps | 0.45 | 0.55-0.85 | satin,leather

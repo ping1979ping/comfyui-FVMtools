@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"AMORE" | 0.08 | accessories | engraved serif
+"TONIGHT" | 0.06 | accessories | delicate script
+"MUSE" | 0.06 | accessories | minimal serif
+"YOURS" | 0.05 | accessories | flowing script

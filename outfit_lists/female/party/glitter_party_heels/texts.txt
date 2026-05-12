@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"SPARKLE" | 0.12 | top,bag | playful script
+"GLAM" | 0.10 | accessories,bag | bold sans-serif
+"VIP" | 0.08 | accessories | engraved serif
+"DISCO" | 0.08 | top | retro disco
+"SHINE" | 0.06 | top,accessories | metallic script

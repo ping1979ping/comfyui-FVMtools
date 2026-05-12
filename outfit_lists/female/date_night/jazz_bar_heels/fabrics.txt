@@ -1,0 +1,17 @@
+# format: fabric_name | formality | family | weight
+
+silk | 0.85 | natural | light
+charmeuse | 0.8 | synthetic | light
+satin | 0.75 | synthetic | light
+crepe | 0.75 | synthetic | medium
+chiffon | 0.7 | synthetic | light
+tulle | 0.75 | synthetic | light
+polyester | 0.55 | synthetic | medium
+wool | 0.75 | natural | medium
+cotton | 0.55 | natural | medium
+jersey | 0.55 | knit | medium
+leather | 0.7 | animal | medium
+suede | 0.7 | animal | medium
+patent | 0.7 | animal | medium
+nylon | 0.5 | synthetic | light
+metal | 0.7 | accessories | light

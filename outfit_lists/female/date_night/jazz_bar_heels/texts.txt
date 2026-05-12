@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"NOIR" | 0.10 | accessories | art deco serif
+"BLUE NOTE" | 0.08 | accessories | art deco serif
+"AFTER HOURS" | 0.07 | accessories | vintage serif
+"VELVET" | 0.06 | accessories | art deco serif
+"MIDNIGHT" | 0.05 | accessories | vintage serif

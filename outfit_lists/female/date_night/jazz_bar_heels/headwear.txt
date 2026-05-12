@@ -1,0 +1,6 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim headband | 0.15 | 0.55-0.8 | charmeuse,satin
+hair barrette | 0.12 | 0.55-0.8 | metal
+beret | 0.10 | 0.55-0.75 | wool

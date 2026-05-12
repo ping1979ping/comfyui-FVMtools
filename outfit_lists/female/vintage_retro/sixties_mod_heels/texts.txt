@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"MOD" | 0.10 | accessories | bold geometric sans
+"GO-GO" | 0.08 | top | retro pop
+"YEAH" | 0.06 | top | bubble font
+"LONDON" | 0.06 | accessories | clean sans-serif

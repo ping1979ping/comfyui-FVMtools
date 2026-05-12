@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+abstract floral | 0.30 | top,bottom | 0.65-0.9
+polka dots | 0.25 | top,bottom | 0.65-0.85
+subtle jacquard | 0.30 | top,bottom,outerwear | 0.65-0.9
+fine lace overlay | 0.25 | top,bottom | 0.65-0.9
+geometric motif | 0.25 | top,bottom | 0.65-0.85
+art deco pattern | 0.25 | top,outerwear | 0.7-0.9
+delicate embroidery | 0.20 | top,bag | 0.65-0.9
+muted abstract | 0.20 | top,bottom | 0.65-0.85

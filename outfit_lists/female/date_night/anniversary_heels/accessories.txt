@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sheer hosiery | 0.75 | 0.65-0.9 | nylon
+chandelier earrings | 0.70 | 0.65-0.9 | metal
+diamond pendant | 0.65 | 0.65-0.9 | metal
+elegant bracelet | 0.60 | 0.65-0.9 | metal
+fine wristwatch | 0.55 | 0.65-0.9 | metal
+slim belt | 0.50 | 0.65-0.9 | leather
+statement ring | 0.55 | 0.65-0.9 | metal
+drop earrings | 0.65 | 0.65-0.9 | metal
+delicate necklace | 0.60 | 0.65-0.9 | metal
+fine neck scarf | 0.35 | 0.65-0.9 | silk,charmeuse
+crystal hair pin | 0.40 | 0.65-0.9 | metal

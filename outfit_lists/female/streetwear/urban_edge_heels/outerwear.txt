@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+biker jacket | 0.85 | 0.5-0.75 | leather
+cropped moto jacket | 0.75 | 0.5-0.75 | leather
+oversized bomber | 0.60 | 0.5-0.7 | nylon,polyester
+fitted blazer | 0.55 | 0.55-0.75 | wool,polyester
+shrunken denim jacket | 0.50 | 0.5-0.7 | denim
+studded jacket | 0.50 | 0.5-0.75 | leather
+cropped trench | 0.45 | 0.55-0.75 | cotton,polyester
+faux fur shrug | 0.35 | 0.5-0.75 | polyester
+hooded windbreaker | 0.35 | 0.5-0.7 | nylon
+edgy chain-trim jacket | 0.40 | 0.55-0.75 | leather

@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+micro crop top | 0.85 | 0.45-0.7 | cotton,jersey
+slim baby tee | 0.80 | 0.45-0.7 | cotton,jersey
+halter top | 0.75 | 0.45-0.7 | satin,polyester
+strappy camisole | 0.70 | 0.45-0.7 | satin,polyester
+shrunken tank | 0.70 | 0.45-0.65 | cotton,spandex
+ribbed micro top | 0.65 | 0.45-0.7 | cotton,spandex
+butterfly top | 0.55 | 0.45-0.65 | polyester,satin
+mesh longsleeve | 0.55 | 0.45-0.7 | polyester,nylon
+asymmetric crop top | 0.55 | 0.45-0.7 | jersey,polyester
+sheer ruched top | 0.50 | 0.45-0.7 | polyester,nylon
+bandeau top | 0.50 | 0.45-0.65 | polyester,spandex
+metallic crop top | 0.50 | 0.45-0.7 | polyester
+glitter tank | 0.45 | 0.45-0.65 | polyester

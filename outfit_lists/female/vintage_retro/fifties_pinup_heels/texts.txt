@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"ROCKABILLY" | 0.10 | accessories | retro script
+"SWEETHEART" | 0.08 | top | playful handwriting
+"PINUP" | 0.08 | accessories | bold serif
+"LOVE" | 0.06 | accessories | curly script

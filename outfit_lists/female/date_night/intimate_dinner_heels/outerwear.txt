@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped blazer | 0.60 | 0.6-0.85 | wool,crepe
+draped wrap | 0.55 | 0.6-0.85 | silk,charmeuse
+fitted moto jacket | 0.45 | 0.6-0.8 | leather
+fine knit shrug | 0.40 | 0.6-0.8 | cashmere,wool
+cropped trench | 0.45 | 0.6-0.8 | cotton,polyester
+soft shoulder wrap | 0.45 | 0.6-0.85 | charmeuse,chiffon
+fitted bolero | 0.40 | 0.6-0.85 | crepe,polyester
+short overcoat | 0.40 | 0.6-0.85 | wool,polyester

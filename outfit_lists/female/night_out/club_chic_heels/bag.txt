@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chain shoulder bag | 0.80 | 0.55-0.85 | leather,satin
+mini crossbody bag | 0.70 | 0.55-0.85 | leather,suede
+embellished wristlet | 0.65 | 0.55-0.85 | satin,polyester
+sleek clutch | 0.65 | 0.55-0.85 | satin,leather
+metallic mini bag | 0.55 | 0.55-0.85 | polyester,leather
+beaded minaudiere | 0.50 | 0.6-0.85 | satin,polyester
+glitter pouch | 0.45 | 0.55-0.85 | polyester

@@ -1,0 +1,8 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"BABY" | 0.12 | top | bubble script
+"ANGEL" | 0.10 | top | bubble script
+"2000" | 0.08 | top | chrome
+"PRINCESS" | 0.07 | top | bubble script
+"Y2K" | 0.06 | top | chrome
+"GLAM" | 0.06 | top | rhinestone

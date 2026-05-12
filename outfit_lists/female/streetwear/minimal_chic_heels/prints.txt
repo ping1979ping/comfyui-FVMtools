@@ -1,0 +1,9 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+solid tone | 0.50 | top,bottom,outerwear | 0.5-0.75
+fine pinstripe | 0.25 | bottom,outerwear | 0.55-0.75
+subtle check | 0.20 | top,outerwear | 0.5-0.75
+tonal stripe | 0.20 | top,bottom | 0.5-0.75
+minimal monogram | 0.15 | top | 0.5-0.7
+clean geometric | 0.15 | top | 0.5-0.7
+muted color block | 0.15 | top,outerwear | 0.5-0.75

@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"GOOD VIBES" | 0.15 | top | playful script
+"WEEKEND" | 0.10 | top,accessories | bold sans-serif
+"VIBES" | 0.08 | top,bag | retro
+"LATE NIGHT" | 0.06 | top | neon font

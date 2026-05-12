@@ -1,0 +1,9 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+crystal minaudiere | 0.85 | 0.8-0.95 | metal
+embellished clutch | 0.80 | 0.75-0.95 | satin
+beaded clutch | 0.75 | 0.75-0.95 | satin
+metallic box clutch | 0.65 | 0.75-0.95 | satin,metal
+mini chain bag | 0.55 | 0.7-0.95 | satin,leather
+glitter wristlet | 0.50 | 0.7-0.9 | satin

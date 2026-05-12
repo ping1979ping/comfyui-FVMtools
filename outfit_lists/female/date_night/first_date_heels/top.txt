@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slip camisole | 0.85 | 0.5-0.75 | charmeuse,polyester
+sweetheart blouse | 0.75 | 0.5-0.75 | crepe,chiffon
+fitted shell top | 0.70 | 0.5-0.75 | silk,crepe
+puff-sleeve blouse | 0.70 | 0.5-0.75 | crepe,chiffon
+ruffle blouse | 0.65 | 0.5-0.75 | chiffon,crepe
+fine-knit pullover | 0.55 | 0.5-0.75 | cashmere,wool
+bow-neck blouse | 0.60 | 0.5-0.75 | silk,chiffon
+ribbed turtleneck | 0.45 | 0.5-0.7 | cashmere,wool
+fitted bodysuit | 0.50 | 0.5-0.7 | jersey,polyester
+mock-neck shell | 0.50 | 0.5-0.75 | crepe,polyester
+asymmetric blouse | 0.45 | 0.55-0.75 | crepe,silk
+shoulder-baring blouse | 0.50 | 0.55-0.75 | crepe,chiffon

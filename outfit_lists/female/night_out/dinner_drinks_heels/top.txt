@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silky cami blouse | 0.80 | 0.6-0.85 | silk,satin
+draped blouse | 0.75 | 0.6-0.85 | silk,chiffon
+tucked-in blouse | 0.70 | 0.6-0.85 | silk,satin,chiffon
+slip camisole | 0.70 | 0.6-0.8 | silk,satin
+fitted shell top | 0.65 | 0.6-0.85 | silk,crepe
+bow-tie collar blouse | 0.55 | 0.6-0.85 | silk,satin
+draped cowl-neck top | 0.60 | 0.6-0.85 | silk,satin,chiffon
+sleeveless shell | 0.55 | 0.6-0.85 | silk,polyester
+fitted bodysuit | 0.50 | 0.6-0.8 | jersey,polyester
+wrap front blouse | 0.55 | 0.6-0.85 | silk,satin
+asymmetric one-shoulder top | 0.45 | 0.6-0.85 | silk,satin
+fine-knit pullover | 0.40 | 0.6-0.8 | cashmere,wool

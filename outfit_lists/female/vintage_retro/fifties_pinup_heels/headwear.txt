@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tied headscarf | 0.30 | 0.5-0.8 | silk
+bandana tied as headband | 0.25 | 0.5-0.75 | cotton
+pillbox hat | 0.20 | 0.55-0.8 | wool,felt
+slim headband | 0.20 | 0.5-0.8 | satin
+floral hair clip | 0.15 | 0.5-0.8 | acrylic

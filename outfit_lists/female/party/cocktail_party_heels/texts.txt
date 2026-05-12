@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"COCKTAIL" | 0.10 | accessories | elegant serif
+"SOIREE" | 0.08 | bag | refined script
+"CIN CIN" | 0.06 | accessories | playful script
+"TOAST" | 0.05 | accessories | minimal serif

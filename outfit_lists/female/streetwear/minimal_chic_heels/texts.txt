@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"CHIC" | 0.08 | top | minimal serif
+"LESS" | 0.06 | top | minimal serif
+"CLEAN" | 0.05 | top | clean sans-serif
+"MUSE" | 0.05 | top | minimal serif

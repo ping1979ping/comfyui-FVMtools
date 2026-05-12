@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bow choker | 0.60 | 0.5-0.75 | satin
+heart pendant necklace | 0.55 | 0.5-0.75 | metal
+sheer hosiery | 0.50 | 0.5-0.75 | nylon
+pearl studs | 0.55 | 0.5-0.75 | metal
+beaded bracelet | 0.50 | 0.5-0.75 | metal
+ribbon hair tie | 0.45 | 0.5-0.75 | satin
+charm bracelet | 0.45 | 0.5-0.75 | metal
+hoop earrings | 0.50 | 0.5-0.75 | metal
+slim belt | 0.45 | 0.5-0.75 | leather,satin
+glitter nail accent | 0.30 | 0.5-0.75 | polyester
+cocktail ring | 0.40 | 0.5-0.75 | metal

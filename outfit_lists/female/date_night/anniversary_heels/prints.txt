@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+tonal jacquard | 0.30 | top,bottom | 0.65-0.9
+metallic shimmer | 0.30 | top,bottom | 0.65-0.9
+delicate beading | 0.30 | top | 0.65-0.9
+subtle damask | 0.25 | top,bottom | 0.7-0.9
+fine pinstripe | 0.20 | bottom | 0.65-0.9
+abstract motif | 0.20 | top | 0.65-0.9
+elegant floral | 0.25 | top | 0.65-0.9
+art deco motif | 0.20 | top | 0.7-0.9

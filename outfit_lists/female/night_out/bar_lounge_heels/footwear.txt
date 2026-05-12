@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+stiletto pumps | 0.90 | 0.55-0.8 | leather,suede,satin
+pointed-toe pumps | 0.80 | 0.55-0.8 | leather,suede,satin
+very-high stiletto pumps | 0.75 | 0.6-0.8 | leather,suede
+ankle-strap pumps | 0.70 | 0.55-0.8 | leather,suede,satin
+high-heel pumps | 0.65 | 0.55-0.8 | leather,suede
+classic pumps | 0.55 | 0.55-0.8 | leather,suede
+almond-toe pumps | 0.50 | 0.55-0.8 | leather,suede
+patent pumps | 0.50 | 0.55-0.8 | leather
+sleek pumps | 0.55 | 0.55-0.8 | leather,suede
+platform stilettos | 0.50 | 0.6-0.8 | leather,suede
+bow pumps | 0.45 | 0.55-0.8 | satin,leather
+court shoes | 0.30 | 0.55-0.8 | leather,suede

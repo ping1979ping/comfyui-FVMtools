@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tucked-in blouse | 0.85 | 0.65-0.9 | silk,crepe
+fitted shell top | 0.80 | 0.65-0.9 | crepe,silk
+sleek wrap top | 0.75 | 0.65-0.9 | crepe,silk
+structured corset top | 0.70 | 0.7-0.9 | satin,crepe
+high-neck blouse | 0.70 | 0.65-0.9 | silk,crepe
+mock-neck shell | 0.65 | 0.65-0.9 | crepe,polyester
+button-down shirt | 0.65 | 0.65-0.85 | cotton,silk
+sleeveless shell | 0.60 | 0.65-0.9 | silk,crepe
+draped blouse | 0.55 | 0.65-0.9 | silk,charmeuse
+fitted bodysuit | 0.55 | 0.65-0.9 | jersey,polyester
+fine-knit shell | 0.50 | 0.65-0.85 | cashmere,wool
+tailored sleeveless top | 0.55 | 0.65-0.9 | crepe,silk

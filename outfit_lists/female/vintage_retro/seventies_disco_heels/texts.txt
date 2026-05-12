@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"DISCO" | 0.12 | top | glitter chrome
+"STUDIO 54" | 0.10 | accessories | metallic serif
+"BOOGIE" | 0.08 | top | groovy bubble
+"GROOVE" | 0.08 | accessories | retro script
+"NIGHT" | 0.06 | accessories | shiny serif

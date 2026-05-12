@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tiny sunglasses | 0.75 | 0.45-0.7 | polyester
+butterfly clips | 0.65 | 0.45-0.65 | polyester
+chunky belt | 0.65 | 0.45-0.7 | leather
+choker necklace | 0.65 | 0.45-0.7 | metal,polyester
+stacked bangles | 0.60 | 0.45-0.7 | metal
+hoop earrings | 0.60 | 0.45-0.7 | metal
+crystal pendant | 0.55 | 0.45-0.7 | metal
+beaded bracelet | 0.50 | 0.45-0.65 | polyester
+arm cuff | 0.45 | 0.45-0.7 | metal
+ankle chain | 0.45 | 0.45-0.65 | metal
+mini hair clips | 0.45 | 0.45-0.65 | metal

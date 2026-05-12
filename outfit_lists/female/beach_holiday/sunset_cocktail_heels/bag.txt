@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+evening clutch | 0.70 | 0.5-0.7 | satin,leather
+mini shoulder bag | 0.65 | 0.45-0.7 | leather,suede
+beaded clutch | 0.55 | 0.5-0.7 | satin
+chain-strap mini bag | 0.55 | 0.45-0.7 | leather
+slim crossbody | 0.50 | 0.45-0.7 | leather,suede
+top-handle mini | 0.45 | 0.5-0.7 | leather
+rattan box clutch | 0.40 | 0.45-0.65 | straw

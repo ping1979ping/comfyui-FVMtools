@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"MUSE" | 0.08 | accessories | minimal serif
+"ART" | 0.07 | accessories | engraved serif
+"GALLERY" | 0.05 | top | minimal serif
+"VOGUE" | 0.05 | accessories | elegant script

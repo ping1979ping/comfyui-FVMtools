@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knotted shirt | 0.80 | 0.35-0.6 | cotton,rayon
+breezy blouse | 0.75 | 0.4-0.65 | rayon,chiffon
+puff-sleeve blouse | 0.65 | 0.4-0.65 | cotton,rayon
+slip camisole | 0.65 | 0.4-0.65 | silk,satin,polyester
+ruffled top | 0.55 | 0.4-0.65 | rayon,chiffon
+square-neck blouse | 0.55 | 0.4-0.65 | cotton,rayon
+wrap-style blouse | 0.55 | 0.4-0.65 | rayon,polyester
+fitted ribbed tee | 0.55 | 0.35-0.55 | cotton,jersey
+button-front camisole | 0.50 | 0.4-0.65 | rayon,satin
+embroidered blouse | 0.45 | 0.4-0.65 | cotton,rayon
+soft tank | 0.45 | 0.35-0.55 | cotton,jersey
+peplum top | 0.40 | 0.4-0.65 | cotton,rayon

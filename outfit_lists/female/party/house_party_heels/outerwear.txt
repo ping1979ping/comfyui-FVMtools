@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# moto jacket | 0.65 | 0.45-0.7 | leather,polyester
+#color# cropped blazer | 0.60 | 0.45-0.7 | polyester,crepe
+#color# fitted denim jacket | 0.55 | 0.45-0.7 | cotton
+#color# bomber jacket | 0.50 | 0.45-0.7 | polyester,satin
+#color# cropped cardigan | 0.50 | 0.45-0.7 | cotton,wool
+#color# oversized shirt jacket | 0.45 | 0.45-0.7 | cotton,polyester
+#color# faux-fur cropped jacket | 0.40 | 0.45-0.7 | polyester
+#color# slim trench | 0.40 | 0.45-0.7 | cotton,polyester

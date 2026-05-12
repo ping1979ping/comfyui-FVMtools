@@ -1,0 +1,6 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"TOAST" | 0.10 | accessories | elegant serif
+"CHEERS" | 0.08 | accessories | bold sans-serif
+"CELEBRATE" | 0.06 | bag | minimal serif
+"AMOUR" | 0.05 | accessories | romantic script

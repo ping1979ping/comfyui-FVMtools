@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rhinestone headband | 0.30 | 0.55-0.85 | metal
+crystal tiara | 0.20 | 0.55-0.85 | metal
+sequin hair clip | 0.25 | 0.55-0.85 | metal
+glitter fascinator | 0.15 | 0.55-0.85 | polyester

@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+subtle check | 0.30 | top,outerwear | 0.5-0.7
+houndstooth | 0.25 | outerwear,bottom | 0.5-0.7
+plaid pattern | 0.25 | outerwear,bottom | 0.45-0.7
+floral motif | 0.20 | top | 0.45-0.65
+polka dots | 0.20 | top | 0.45-0.65
+abstract print | 0.18 | top | 0.5-0.7
+fine pinstripe | 0.20 | bottom,outerwear | 0.5-0.7
+windowpane check | 0.18 | outerwear,bottom | 0.5-0.7

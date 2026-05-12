@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+soft cardigan | 0.70 | 0.35-0.6 | cotton,wool
+cropped cardigan | 0.60 | 0.35-0.6 | cotton,wool
+light blazer | 0.55 | 0.4-0.65 | cotton,linen
+relaxed summer blazer | 0.50 | 0.4-0.65 | linen
+short trench coat | 0.45 | 0.4-0.65 | cotton,polyester
+open-front cardigan | 0.45 | 0.35-0.6 | cotton,wool
+denim jacket | 0.40 | 0.35-0.55 | cotton
+boyfriend blazer | 0.40 | 0.45-0.65 | wool,polyester
+relaxed shirt jacket | 0.35 | 0.35-0.6 | cotton,wool

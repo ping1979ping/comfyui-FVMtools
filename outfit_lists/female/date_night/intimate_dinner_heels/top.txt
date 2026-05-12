@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+silky blouse | 0.85 | 0.6-0.85 | charmeuse,polyester
+draped blouse | 0.75 | 0.6-0.85 | silk,chiffon
+slip camisole | 0.80 | 0.6-0.85 | charmeuse,polyester
+shimmery blouse | 0.70 | 0.6-0.85 | charmeuse,satin
+fluid blouse | 0.65 | 0.6-0.85 | silk,crepe
+draped halter | 0.60 | 0.65-0.85 | charmeuse,crepe
+fitted shell top | 0.65 | 0.6-0.85 | silk,crepe
+mock-neck shell | 0.55 | 0.6-0.85 | crepe,polyester
+beaded camisole | 0.55 | 0.65-0.85 | charmeuse
+cowl-neck top | 0.55 | 0.6-0.85 | silk,charmeuse
+asymmetric blouse | 0.50 | 0.6-0.85 | crepe,silk
+ruched blouse | 0.50 | 0.6-0.85 | charmeuse,polyester

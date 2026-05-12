@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floral fascinator | 0.25 | 0.65-0.85 | silk
+wide-brim sun hat | 0.20 | 0.6-0.8 | straw
+slim headband | 0.15 | 0.6-0.85 | satin,silk
+pearl hair clip | 0.15 | 0.6-0.85 | metal

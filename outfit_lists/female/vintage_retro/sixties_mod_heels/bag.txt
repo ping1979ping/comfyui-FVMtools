@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+boxy frame bag | 0.75 | 0.45-0.75 | leather
+top-handle bag | 0.70 | 0.45-0.75 | leather
+mini bag | 0.65 | 0.45-0.75 | leather,vinyl
+structured handbag | 0.65 | 0.5-0.75 | leather
+mod chain shoulder bag | 0.55 | 0.45-0.75 | leather,vinyl
+clutch | 0.50 | 0.5-0.75 | satin,leather
+plastic frame bag | 0.40 | 0.45-0.7 | plastic
