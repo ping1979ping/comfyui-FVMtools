@@ -1,0 +1,7 @@
+# format: text_content | probability | compatible_slots | font_hint
+
+"COFFEE" | 0.10 | accessories | playful handwriting
+"FRIDAY" | 0.08 | top | playful handwriting
+"HUSTLE" | 0.08 | accessories | minimal serif
+"NYC" | 0.08 | accessories | bold sans-serif
+"WORK" | 0.06 | accessories | clean sans-serif

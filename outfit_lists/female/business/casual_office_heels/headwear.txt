@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+claw clip | 0.25 | 0.4-0.7 | metal
+slim headband | 0.20 | 0.4-0.7 | cotton,satin
+beret | 0.15 | 0.4-0.7 | wool
+baseball cap | 0.10 | 0.3-0.55 | cotton

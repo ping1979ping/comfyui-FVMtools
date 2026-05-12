@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+medium tote | 0.75 | 0.4-0.7 | leather,canvas
+crossbody bag | 0.65 | 0.35-0.65 | leather,suede
+slim shoulder bag | 0.55 | 0.4-0.7 | leather,suede
+top-handle bag | 0.55 | 0.5-0.75 | leather,suede
+hobo bag | 0.45 | 0.35-0.65 | leather,suede
+mini bag | 0.55 | 0.4-0.7 | leather,suede
+structured handbag | 0.45 | 0.5-0.75 | leather
+bucket bag | 0.40 | 0.35-0.65 | leather,canvas

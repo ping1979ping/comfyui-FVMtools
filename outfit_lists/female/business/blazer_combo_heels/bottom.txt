@@ -1,0 +1,14 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mini skirt | 0.85 | 0.55-0.85 | wool,polyester,leather,tweed
+pleated mini skirt | 0.70 | 0.55-0.85 | polyester,chiffon,wool
+short A-line skirt | 0.65 | 0.55-0.85 | wool,polyester,tweed
+short pencil skirt | 0.70 | 0.6-0.85 | wool,polyester,crepe
+wrap mini skirt | 0.60 | 0.55-0.85 | wool,silk,polyester
+box-pleat mini skirt | 0.55 | 0.55-0.85 | wool,polyester
+structured mini skirt | 0.55 | 0.6-0.85 | wool,leather,crepe
+ruched mini skirt | 0.50 | 0.55-0.8 | satin,polyester
+boucle mini skirt | 0.50 | 0.6-0.85 | wool,polyester
+skater mini skirt | 0.45 | 0.55-0.8 | polyester,jersey
+mock croc mini skirt | 0.40 | 0.55-0.85 | leather

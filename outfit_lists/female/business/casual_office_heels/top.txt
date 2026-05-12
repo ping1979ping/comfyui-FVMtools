@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ribbed tee | 0.85 | 0.4-0.7 | cotton,jersey
+fitted t-shirt | 0.75 | 0.4-0.65 | cotton,jersey
+knotted shirt | 0.65 | 0.4-0.7 | cotton,linen
+button-down shirt | 0.65 | 0.5-0.75 | cotton
+slip camisole | 0.70 | 0.45-0.7 | silk,satin,polyester
+fine-knit pullover | 0.65 | 0.45-0.75 | cashmere,wool,cotton
+striped boatneck | 0.55 | 0.4-0.7 | cotton
+crewneck sweater | 0.55 | 0.45-0.75 | cashmere,wool,cotton
+fitted bodysuit | 0.55 | 0.4-0.7 | jersey,polyester
+oversized shirt | 0.55 | 0.4-0.65 | cotton,linen
+ribbed tank | 0.55 | 0.4-0.65 | cotton,jersey
+half-zip pullover | 0.50 | 0.4-0.7 | cotton,jersey
+draped blouse | 0.50 | 0.5-0.75 | silk,chiffon

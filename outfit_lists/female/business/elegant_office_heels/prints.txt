@@ -1,0 +1,10 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+fine pinstripe | 0.35 | bottom,outerwear | 0.75-0.95
+herringbone | 0.30 | outerwear,bottom | 0.75-0.95
+houndstooth | 0.30 | outerwear,bottom | 0.75-0.95
+glen plaid | 0.25 | outerwear,bottom | 0.75-0.95
+windowpane check | 0.20 | outerwear,bottom | 0.7-0.95
+subtle check | 0.20 | top,outerwear | 0.7-0.9
+polka dots | 0.15 | top | 0.7-0.9
+floral motif | 0.15 | top | 0.7-0.9
