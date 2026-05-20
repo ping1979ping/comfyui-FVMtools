@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# rhythmic toe shoes | 0.90 | 0.0-0.2 | leather,canvas
+nude rhythmic half-shoes | 0.80 | 0.0-0.2 | leather
+chalked bare feet | 0.65 | 0.0-0.2 | cotton
+#color# ballet slippers | 0.70 | 0.0-0.2 | leather,canvas
+#color# split-sole dance shoes | 0.65 | 0.0-0.2 | leather,canvas
+nude performance socks | 0.55 | 0.0-0.2 | nylon
+#color# beam slippers | 0.45 | 0.0-0.2 | leather,canvas
+#color# velcro warm-up sneakers | 0.35 | 0.0-0.2 | canvas,polyester

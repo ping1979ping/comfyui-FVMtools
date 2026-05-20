@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# high-pony scrunchie crown | 0.90 | 0.0-0.2 | nylon,satin
+#color# rhinestoned hair bow | 0.80 | 0.0-0.2 | satin,polyester
+#color# wide team headband | 0.55 | 0.0-0.2 | nylon,polyester
+#color# crystal hair clip | 0.55 | 0.0-0.2 | metal,plastic
+#color# sparkle barrette | 0.45 | 0.0-0.2 | metal,plastic

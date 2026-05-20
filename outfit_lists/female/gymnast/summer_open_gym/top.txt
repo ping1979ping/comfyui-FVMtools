@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# strappy tank leotard | 0.95 | 0.0-0.2 | spandex,nylon
+#color# racerback open-back leotard | 0.85 | 0.0-0.2 | spandex,nylon
+#color# crisscross-back leotard | 0.80 | 0.0-0.2 | spandex,nylon
+#color# scoop-neck practice leotard | 0.70 | 0.0-0.2 | spandex,nylon
+#color# cami practice leotard | 0.65 | 0.0-0.2 | spandex,nylon
+#color# cropped sports bra | 0.85 | 0.0-0.2 | spandex,nylon
+#color# breezy workout tank | 0.70 | 0.0-0.2 | cotton,polyester
+#color# tied-front workout tee | 0.60 | 0.0-0.2 | cotton,polyester
+#color# longline sports bra | 0.55 | 0.0-0.2 | spandex,nylon
+#color# panel-cut leotard | 0.60 | 0.0-0.2 | mesh,spandex
+#color# spaghetti-strap leotard | 0.55 | 0.0-0.2 | spandex,nylon

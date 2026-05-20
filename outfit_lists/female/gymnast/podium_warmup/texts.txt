@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BERKS GYMNASTICS" | 0.30 | top,outerwear | bold block letters
+"READING PA" | 0.25 | outerwear | bold block letters
+"WILSON WEST" | 0.25 | outerwear | bold block letters
+"BULLDOGS" | 0.25 | outerwear | bold block letters
+"WYOMISSING" | 0.20 | outerwear | bold block letters
+"TEAM PA" | 0.20 | outerwear | bold block letters
+"REGION 7" | 0.20 | outerwear | clean modern font
+"STATE QUALIFIER" | 0.20 | outerwear | bold block letters
+"PODIUM" | 0.20 | outerwear | bold script
+"CHAMPION" | 0.25 | outerwear | bold script
+"COACHED BY MOM" | 0.15 | outerwear | bold block letters

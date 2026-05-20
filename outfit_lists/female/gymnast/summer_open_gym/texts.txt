@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"SUMMER CAMP" | 0.25 | top,outerwear | retro script
+"OPEN GYM" | 0.25 | top,outerwear | bold block letters
+"TUMBLE" | 0.25 | top | bold block letters
+"FLIP SEASON" | 0.20 | top,outerwear | retro script
+"BERKS COUNTY" | 0.20 | outerwear | bold block letters
+"READING PA" | 0.15 | outerwear | bold block letters
+"BEAM SQUAD" | 0.20 | top,outerwear | bold block letters
+"PRACTICE MODE" | 0.20 | top,outerwear | clean modern font
+"GYM RAT" | 0.20 | top,outerwear | bold block letters
+"WILSON YOUTH" | 0.20 | outerwear | bold block letters

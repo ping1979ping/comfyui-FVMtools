@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# long-sleeve rhythmic leotard | 0.95 | 0.0-0.2 | velvet,spandex
+#color# illusion-sleeve rhythmic leotard | 0.85 | 0.0-0.2 | mesh,spandex
+#color# crystal-encrusted rhythmic leotard | 0.80 | 0.0-0.2 | velvet,spandex
+#color# attached-skirt unitard | 0.75 | 0.0-0.2 | spandex,nylon
+#color# halter rhythmic leotard | 0.65 | 0.0-0.2 | spandex,nylon
+#color# open-back rhythmic leotard | 0.65 | 0.0-0.2 | velvet,spandex
+#color# embellished long-sleeve leotard | 0.75 | 0.0-0.2 | velvet,spandex
+#color# shimmer-overlay rhythmic leotard | 0.70 | 0.0-0.2 | foil,spandex
+#color# floral-applique rhythmic leotard | 0.65 | 0.0-0.2 | velvet,spandex
+#color# ombre rhythmic leotard | 0.60 | 0.0-0.2 | velvet,spandex
+#color# starlet rhythmic leotard | 0.55 | 0.0-0.2 | foil,spandex
+#color# painterly-print rhythmic leotard | 0.55 | 0.0-0.2 | spandex,polyester

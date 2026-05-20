@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PRACTICE" | 0.25 | top,outerwear | bold block letters
+"FLIP" | 0.20 | top | bold block letters
+"TUMBLE" | 0.20 | top,outerwear | bold block letters
+"GYM RAT" | 0.25 | top,outerwear | bold block letters
+"BERKS GYMNASTICS" | 0.20 | top,outerwear | bold block letters
+"READING PA" | 0.15 | outerwear | bold block letters
+"WILSON BULLDOGS" | 0.20 | outerwear | bold block letters
+"GYMNAST" | 0.25 | top,outerwear | clean modern font
+"TRAIN HARD" | 0.20 | top,outerwear | bold block letters
+"BEAM CLUB" | 0.20 | top,outerwear | clean modern font

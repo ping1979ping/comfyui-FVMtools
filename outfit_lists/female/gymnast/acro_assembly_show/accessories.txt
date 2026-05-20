@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+stage makeup | 0.80 | 0.0-0.2 | cotton
+glitter eye shadow | 0.65 | 0.0-0.2 | plastic
+performance lipstick | 0.55 | 0.0-0.2 | plastic
+chalk grips | 0.45 | 0.0-0.2 | leather
+wrist guards | 0.40 | 0.0-0.2 | leather,nylon
+athletic tape on wrists | 0.40 | 0.0-0.2 | cotton
+rhinestone team scrunchie | 0.80 | 0.0-0.2 | nylon,satin
+glitter hair bow | 0.75 | 0.0-0.2 | satin,polyester
+sparkle hair clip | 0.55 | 0.0-0.2 | metal,plastic
+crystal stud earrings | 0.75 | 0.0-0.2 | metal
+beaded bracelet | 0.45 | 0.0-0.2 | plastic,metal
+choker necklace | 0.50 | 0.0-0.2 | velvet,metal

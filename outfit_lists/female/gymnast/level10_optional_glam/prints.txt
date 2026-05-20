@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+all-over rhinestone scatter | 0.80 | top | 0.0-0.2
+foil shimmer overlay | 0.70 | top | 0.0-0.2
+crystal ombre fade | 0.65 | top | 0.0-0.2
+galaxy gradient | 0.55 | top,bottom | 0.0-0.2
+color-block panel | 0.55 | top,bottom | 0.0-0.2
+patriotic stars and stripes | 0.45 | top,outerwear | 0.0-0.2
+shoulder shimmer accent | 0.60 | top | 0.0-0.2
+back keyhole cutout | 0.55 | top | 0.0-0.2
+embroidered team crest | 0.50 | top,outerwear | 0.0-0.2
+diagonal sash detail | 0.55 | top | 0.0-0.2
+holographic finish | 0.55 | top | 0.0-0.2
+flame motif | 0.40 | top | 0.0-0.2

@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# long-sleeve competition leotard | 0.95 | 0.0-0.2 | velvet,spandex
+#color# high-neck long-sleeve leotard | 0.85 | 0.0-0.2 | spandex,nylon
+#color# mock-neck long-sleeve leotard | 0.80 | 0.0-0.2 | velvet,spandex
+#color# 3/4-sleeve compulsory leotard | 0.75 | 0.0-0.2 | spandex,nylon
+#color# crewneck long-sleeve leotard | 0.75 | 0.0-0.2 | velour,spandex
+#color# scoop-back long-sleeve leotard | 0.70 | 0.0-0.2 | spandex,nylon
+#color# keyhole-back compulsory leotard | 0.55 | 0.0-0.2 | spandex,nylon
+#color# patriotic stripe leotard | 0.60 | 0.0-0.2 | spandex,nylon
+#color# two-tone compulsory leotard | 0.70 | 0.0-0.2 | spandex,nylon
+#color# embellished compulsory leotard | 0.65 | 0.0-0.2 | velvet,spandex
+#color# shimmer panel leotard | 0.55 | 0.0-0.2 | foil,spandex
+#color# solid-color compulsory leotard | 0.65 | 0.0-0.2 | spandex,nylon

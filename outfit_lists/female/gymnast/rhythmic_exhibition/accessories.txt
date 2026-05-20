@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+stage makeup | 0.85 | 0.0-0.2 | cotton
+glitter eye shadow | 0.75 | 0.0-0.2 | plastic
+performance lipstick | 0.65 | 0.0-0.2 | plastic
+rhythmic ribbon apparatus | 0.65 | 0.0-0.2 | satin,polyester
+rhythmic hoop apparatus | 0.55 | 0.0-0.2 | plastic
+rhythmic ball apparatus | 0.45 | 0.0-0.2 | rubber
+rhythmic clubs apparatus | 0.40 | 0.0-0.2 | plastic
+rhinestone team scrunchie | 0.85 | 0.0-0.2 | nylon,satin
+glitter hair bow | 0.65 | 0.0-0.2 | satin,polyester
+sparkle hair clip | 0.55 | 0.0-0.2 | metal,plastic
+crystal stud earrings | 0.80 | 0.0-0.2 | metal
+choker necklace | 0.55 | 0.0-0.2 | velvet,metal
+beaded bracelet | 0.45 | 0.0-0.2 | plastic,metal

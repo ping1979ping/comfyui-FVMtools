@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+school crest motif | 0.85 | top,outerwear,bag | 0.0-0.2
+team mascot graphic | 0.80 | top,outerwear,bag | 0.0-0.2
+spirit color-block | 0.70 | top,bottom,outerwear | 0.0-0.2
+varsity stripe | 0.70 | top,outerwear,bottom | 0.0-0.2
+sponsor patch | 0.55 | outerwear,top | 0.0-0.2
+patriotic stars | 0.55 | top,outerwear | 0.0-0.2
+diagonal sash detail | 0.45 | top,outerwear | 0.0-0.2
+heather marl | 0.55 | top,outerwear | 0.0-0.2
+booster club logo | 0.65 | top,outerwear,bag | 0.0-0.2
+contrast piping | 0.50 | top,bottom,outerwear | 0.0-0.2
+tie-dye swirl | 0.40 | top | 0.0-0.2

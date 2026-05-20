@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+team stripe | 0.85 | top,bottom,outerwear | 0.0-0.2
+embroidered team crest | 0.70 | outerwear,top | 0.0-0.2
+color-block panel | 0.65 | top,bottom,outerwear | 0.0-0.2
+patriotic stars | 0.55 | outerwear,top | 0.0-0.2
+contrast piping | 0.55 | top,bottom,outerwear | 0.0-0.2
+tonal logo | 0.50 | outerwear,top | 0.0-0.2
+shoulder shimmer accent | 0.40 | outerwear | 0.0-0.2
+diagonal sash detail | 0.45 | outerwear | 0.0-0.2
+heather marl | 0.40 | top,outerwear | 0.0-0.2
+sponsor patch | 0.45 | outerwear | 0.0-0.2

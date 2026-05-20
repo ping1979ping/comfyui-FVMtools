@@ -1,0 +1,11 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# footed performance tights | 0.80 | 0.0-0.2 | spandex,nylon
+nude convertible tights | 0.85 | 0.0-0.2 | nylon
+#color# footless performance tights | 0.55 | 0.0-0.2 | spandex,nylon
+#color# attached rhythmic skirt | 0.65 | 0.0-0.2 | spandex,polyester
+#color# bun-cut briefs | 0.45 | 0.0-0.2 | spandex,nylon
+nude footed tights | 0.65 | 0.0-0.2 | nylon
+#color# half-foot performance tights | 0.50 | 0.0-0.2 | spandex,nylon
+#color# warm-up track pants | 0.40 | 0.0-0.2 | polyester,nylon

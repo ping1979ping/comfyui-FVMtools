@@ -1,0 +1,14 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WILSON WEST" | 0.35 | top,outerwear | bold block letters
+"BULLDOGS" | 0.35 | top,outerwear | bold block letters
+"BERKS GYMNASTICS" | 0.30 | top,outerwear | bold block letters
+"READING PA" | 0.25 | outerwear | bold block letters
+"WYOMISSING" | 0.20 | outerwear | bold block letters
+"GO BULLDOGS" | 0.30 | top,outerwear | bold script
+"PEP RALLY" | 0.25 | top,outerwear | bold block letters
+"BOOSTER CLUB" | 0.25 | top,outerwear,bag | clean modern font
+"SPIRIT WEEK" | 0.25 | top,outerwear | bold script
+"FRIDAY NIGHT" | 0.20 | top,outerwear | bold script
+"PA PROUD" | 0.20 | top,outerwear | bold block letters
+"GYMNASTICS MOM" | 0.20 | top,outerwear | bold block letters
+"COACH" | 0.15 | top,outerwear | bold block letters

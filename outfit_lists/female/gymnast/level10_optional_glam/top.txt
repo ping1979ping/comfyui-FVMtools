@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# rhinestoned tank leotard | 0.95 | 0.0-0.2 | velvet,spandex
+#color# embellished long-sleeve leotard | 0.90 | 0.0-0.2 | velvet,spandex
+#color# halter-neck competition leotard | 0.80 | 0.0-0.2 | spandex,nylon
+#color# open-back optional leotard | 0.75 | 0.0-0.2 | velvet,spandex
+#color# illusion-neckline leotard | 0.75 | 0.0-0.2 | mesh,spandex
+#color# crystal-encrusted leotard | 0.70 | 0.0-0.2 | velvet,spandex
+#color# shimmer-overlay leotard | 0.70 | 0.0-0.2 | foil,spandex
+#color# strappy-back optional leotard | 0.65 | 0.0-0.2 | spandex,nylon
+#color# galaxy-print competition leotard | 0.60 | 0.0-0.2 | spandex,polyester
+#color# sparkle racerback leotard | 0.70 | 0.0-0.2 | foil,spandex
+#color# ombre competition leotard | 0.65 | 0.0-0.2 | velvet,spandex
+#color# cap-sleeve glam leotard | 0.55 | 0.0-0.2 | velvet,spandex

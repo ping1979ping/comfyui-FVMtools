@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"ELITE" | 0.25 | top,outerwear | bold block letters
+"LEVEL 10" | 0.30 | top,outerwear | clean modern font
+"OPTIONALS" | 0.20 | outerwear | clean modern font
+"BERKS GYMNASTICS" | 0.25 | top,outerwear | bold block letters
+"READING PA" | 0.20 | outerwear | bold block letters
+"WYOMISSING" | 0.20 | outerwear | bold block letters
+"REGION 7" | 0.20 | outerwear | clean modern font
+"EASTERN NATIONALS" | 0.20 | outerwear | bold block letters
+"TEAM USA" | 0.20 | outerwear | bold block letters
+"CHAMPION" | 0.20 | outerwear | bold script
+"PA STATE" | 0.20 | outerwear | bold block letters

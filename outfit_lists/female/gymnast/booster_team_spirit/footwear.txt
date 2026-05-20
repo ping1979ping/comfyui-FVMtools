@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# low-top sneakers | 0.85 | 0.0-0.2 | canvas,polyester
+#color# chunky platform sneakers | 0.70 | 0.0-0.2 | canvas,rubber
+#color# team slides | 0.75 | 0.0-0.2 | rubber,nylon
+crew athletic socks | 0.75 | 0.0-0.2 | cotton,nylon
+white meet socks | 0.55 | 0.0-0.2 | cotton,nylon
+#color# slip-on sneakers | 0.60 | 0.0-0.2 | canvas
+#color# running shoes | 0.65 | 0.0-0.2 | mesh,canvas
+#color# slide sandals | 0.55 | 0.0-0.2 | rubber
+#color# velcro warm-up sneakers | 0.45 | 0.0-0.2 | canvas,polyester
+no-show socks | 0.55 | 0.0-0.2 | cotton,nylon

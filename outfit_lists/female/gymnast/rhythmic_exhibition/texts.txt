@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"RHYTHMIC" | 0.30 | top,outerwear | bold script
+"EXHIBITION" | 0.20 | outerwear | clean modern font
+"GRACE" | 0.20 | top,outerwear | bold script
+"TEAM USA" | 0.20 | outerwear | bold block letters
+"BERKS RHYTHMIC" | 0.20 | top,outerwear | bold block letters
+"READING PA" | 0.15 | outerwear | bold block letters
+"SHOWCASE" | 0.20 | outerwear | bold script
+"PERFORM" | 0.25 | top,outerwear | bold script
+"REGION 7" | 0.15 | outerwear | clean modern font
+"INVITATIONAL" | 0.15 | outerwear | bold block letters

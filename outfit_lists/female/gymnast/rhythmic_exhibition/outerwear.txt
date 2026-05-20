@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# rhythmic warm-up jacket | 0.75 | 0.0-0.2 | polyester,nylon
+#color# wrap performance robe | 0.55 | 0.0-0.2 | satin,polyester
+#color# plush show tracksuit jacket | 0.55 | 0.0-0.2 | velour,polyester
+#color# embellished show jacket | 0.55 | 0.0-0.2 | velvet,polyester
+#color# half-zip pullover | 0.50 | 0.0-0.2 | polyester,fleece
+#color# fitted track jacket | 0.55 | 0.0-0.2 | polyester,spandex
+#color# warm-up wrap | 0.55 | 0.0-0.2 | cotton,acrylic
+#color# zip-up team hoodie | 0.45 | 0.0-0.2 | cotton,fleece
+#color# crystal-trim warm-up jacket | 0.45 | 0.0-0.2 | velvet,polyester

@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# show team duffel | 0.80 | 0.0-0.2 | nylon,canvas
+#color# grip bag | 0.65 | 0.0-0.2 | canvas,leather
+#color# rhinestoned show tote | 0.60 | 0.0-0.2 | polyester,nylon
+#color# leotard travel tote | 0.55 | 0.0-0.2 | canvas,nylon
+#color# drawstring meet bag | 0.50 | 0.0-0.2 | nylon,cotton
+#color# team backpack | 0.55 | 0.0-0.2 | nylon,polyester
+#color# small wrist pouch | 0.40 | 0.0-0.2 | leather,nylon
+#color# costume tote | 0.50 | 0.0-0.2 | canvas,nylon

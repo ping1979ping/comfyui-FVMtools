@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+medal on neck ribbon | 0.85 | 0.0-0.2 | satin,metal
+podium bouquet | 0.55 | 0.0-0.2 | polyester
+team scrunchie | 0.85 | 0.0-0.2 | nylon,cotton
+hair bow | 0.75 | 0.0-0.2 | satin,polyester
+chalk grips | 0.55 | 0.0-0.2 | leather
+wrist guards | 0.45 | 0.0-0.2 | leather,nylon
+athletic tape on wrists | 0.50 | 0.0-0.2 | cotton
+sport hair tie set | 0.75 | 0.0-0.2 | nylon
+small stud earrings | 0.55 | 0.0-0.2 | metal
+sport watch | 0.45 | 0.0-0.2 | metal,plastic
+team pin | 0.55 | 0.0-0.2 | metal
+sweat towel | 0.45 | 0.0-0.2 | cotton

@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WILSON WEST" | 0.25 | top,outerwear | bold block letters
+"BULLDOGS" | 0.25 | top,outerwear | bold block letters
+"EAGLES" | 0.20 | top,outerwear | bold block letters
+"BERKS GYMNASTICS" | 0.20 | top,outerwear | bold block letters
+"PEP RALLY" | 0.20 | top,outerwear | bold block letters
+"ASSEMBLY SHOW" | 0.15 | outerwear | clean modern font
+"PERFORM" | 0.25 | top,outerwear | bold script
+"SHOWTIME" | 0.20 | top,outerwear | bold script
+"READING PA" | 0.15 | outerwear | bold block letters
+"SPIRIT" | 0.20 | top,outerwear | bold script

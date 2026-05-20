@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# oversized practice hoodie | 0.85 | 0.0-0.2 | cotton,fleece
+#color# zip-up team hoodie | 0.75 | 0.0-0.2 | cotton,fleece
+#color# half-zip pullover | 0.65 | 0.0-0.2 | polyester,fleece
+#color# quarter-zip pullover | 0.60 | 0.0-0.2 | polyester,fleece
+#color# fitted track jacket | 0.55 | 0.0-0.2 | polyester,spandex
+#color# cropped practice hoodie | 0.55 | 0.0-0.2 | cotton,fleece
+#color# warm-up wrap | 0.45 | 0.0-0.2 | cotton,acrylic
+#color# bomber warm-up jacket | 0.40 | 0.0-0.2 | nylon,polyester
+#color# cropped windbreaker | 0.40 | 0.0-0.2 | nylon,polyester
+#color# team pullover | 0.55 | 0.0-0.2 | cotton,fleece

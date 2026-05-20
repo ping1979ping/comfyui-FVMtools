@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tearaway warm-up pants | 0.85 | 0.0-0.2 | polyester,nylon
+#color# matching tracksuit pants | 0.85 | 0.0-0.2 | polyester,nylon
+#color# fitted warm-up leggings | 0.75 | 0.0-0.2 | spandex,nylon
+#color# plush tracksuit pants | 0.60 | 0.0-0.2 | velour,polyester
+#color# tapered warm-up joggers | 0.65 | 0.0-0.2 | cotton,polyester
+#color# team warm-up shorts | 0.55 | 0.0-0.2 | polyester,spandex
+#color# capri performance tights | 0.45 | 0.0-0.2 | spandex,nylon
+#color# straight-leg podium pants | 0.55 | 0.0-0.2 | polyester
+#color# convertible warm-up pants | 0.55 | 0.0-0.2 | nylon,polyester
+#color# bike shorts under leo | 0.45 | 0.0-0.2 | spandex,nylon

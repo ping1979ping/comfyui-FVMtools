@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# team backpack | 0.90 | 0.0-0.2 | nylon,polyester
+#color# spirit drawstring sack | 0.75 | 0.0-0.2 | nylon,cotton
+#color# team duffel | 0.70 | 0.0-0.2 | nylon,canvas
+#color# canvas spirit tote | 0.70 | 0.0-0.2 | canvas,cotton
+#color# cross-body bag | 0.55 | 0.0-0.2 | nylon
+clear stadium tote | 0.65 | 0.0-0.2 | plastic,nylon
+#color# mini sling bag | 0.55 | 0.0-0.2 | nylon
+#color# patriotic team duffel | 0.45 | 0.0-0.2 | nylon,canvas
+#color# small wrist pouch | 0.40 | 0.0-0.2 | leather,nylon

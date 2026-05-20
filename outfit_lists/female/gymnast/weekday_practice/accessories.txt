@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chalked palms | 0.85 | 0.0-0.2 | cotton
+chalk grips | 0.75 | 0.0-0.2 | leather
+wrist guards | 0.60 | 0.0-0.2 | leather,nylon
+ankle braces | 0.45 | 0.0-0.2 | nylon
+athletic tape on wrists | 0.65 | 0.0-0.2 | cotton
+sport hair tie set | 0.85 | 0.0-0.2 | nylon
+team scrunchie | 0.80 | 0.0-0.2 | nylon,cotton
+no-slip sport headband | 0.60 | 0.0-0.2 | nylon,spandex
+small stud earrings | 0.45 | 0.0-0.2 | metal
+sport watch | 0.40 | 0.0-0.2 | metal,plastic
+water bottle | 0.65 | 0.0-0.2 | plastic
+sweat towel | 0.55 | 0.0-0.2 | cotton

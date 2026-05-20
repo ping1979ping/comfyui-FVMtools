@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# high-pony scrunchie | 0.90 | 0.0-0.2 | nylon,cotton
+#color# slicked-back bun | 0.85 | 0.0-0.2 | nylon
+#color# wide team headband | 0.60 | 0.0-0.2 | nylon,polyester
+#color# braided headband | 0.45 | 0.0-0.2 | nylon,polyester
+#color# baseball cap | 0.40 | 0.0-0.2 | cotton,polyester

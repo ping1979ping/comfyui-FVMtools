@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# elite team duffel | 0.85 | 0.0-0.2 | nylon,canvas
+#color# grip bag | 0.75 | 0.0-0.2 | canvas,leather
+#color# rhinestoned meet tote | 0.60 | 0.0-0.2 | polyester,nylon
+#color# drawstring meet bag | 0.55 | 0.0-0.2 | nylon,cotton
+#color# leotard travel tote | 0.50 | 0.0-0.2 | canvas,nylon
+#color# team backpack | 0.65 | 0.0-0.2 | nylon,polyester
+clear stadium tote | 0.55 | 0.0-0.2 | plastic,nylon
+#color# small wrist pouch | 0.45 | 0.0-0.2 | leather,nylon
+#color# equipment carryall | 0.40 | 0.0-0.2 | mesh,nylon

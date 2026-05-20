@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# footless performance tights | 0.85 | 0.0-0.2 | spandex,nylon
+#color# footed performance tights | 0.75 | 0.0-0.2 | spandex,nylon
+#color# stirrup tights | 0.50 | 0.0-0.2 | spandex,nylon
+#color# capri performance tights | 0.55 | 0.0-0.2 | spandex,nylon
+#color# bun-cut briefs | 0.45 | 0.0-0.2 | spandex,nylon
+#color# rhinestone-trim shorts | 0.40 | 0.0-0.2 | spandex,nylon
+#color# attached unitard bottom | 0.55 | 0.0-0.2 | spandex,nylon
+#color# wrapped performance skirt | 0.40 | 0.0-0.2 | polyester,spandex
+#color# fitted warm-up leggings | 0.45 | 0.0-0.2 | spandex,nylon

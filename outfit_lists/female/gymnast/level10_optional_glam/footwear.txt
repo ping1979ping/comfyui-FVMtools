@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+chalked bare feet | 0.95 | 0.0-0.2 | cotton
+white meet socks | 0.85 | 0.0-0.2 | cotton,nylon
+nude meet socks | 0.65 | 0.0-0.2 | nylon
+#color# beam slippers | 0.65 | 0.0-0.2 | leather,canvas
+#color# gymnastic half-shoes | 0.55 | 0.0-0.2 | leather,canvas
+#color# trampoline shoes | 0.40 | 0.0-0.2 | canvas
+#color# velcro warm-up sneakers | 0.50 | 0.0-0.2 | canvas,polyester
+#color# low-top trainers | 0.45 | 0.0-0.2 | canvas,polyester
+#color# team slides | 0.50 | 0.0-0.2 | rubber,nylon
+white knee-high socks | 0.40 | 0.0-0.2 | cotton,nylon
