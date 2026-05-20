@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+scratch-ticket roll dispenser | 0.95 | 0.05-0.15 | clear plastic case stack
+Slim Jim jar by register | 0.85 | 0.05-0.1 | plastic counter jar
+gum and mint impulse rack | 0.85 | 0.05-0.15 | small cardboard counter strip
+credit card reader on counter | 0.95 | 0.05-0.1 | small terminal with screen
+"cash only" sign taped to register | 0.5 | 0.02-0.08 | handwritten paper note
+lottery jackpot LED sign | 0.8 | 0.05-0.15 | scrolling red numerals
+beef jerky pack hanging | 0.7 | 0.05-0.1 | foil-bag clip strip
+ice cream chest with stickers | 0.7 | 0.1-0.25 | branded freezer chest
+free-air pressure gauge sign | 0.5 | 0.05-0.1 | small posted notice
+hand sanitizer pump near counter | 0.65 | 0.05-0.1 | small clear pump bottle
+"no shirt no service" decal | 0.55 | 0.02-0.08 | window-stuck vinyl
+cup-lid stack stack | 0.85 | 0.05-0.15 | translucent plastic tower

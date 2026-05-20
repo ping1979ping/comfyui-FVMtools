@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+faded yellow drive-thru arrow | 0.9 | 0.2-0.4 | scuffed pavement marking
+oil-stained asphalt patch | 0.85 | 0.1-0.3 | dark blotch on lane
+crushed paper straw wrapper | 0.45 | 0.05-0.1 | small twisted paper
+empty soda cup with straw | 0.55 | 0.05-0.15 | crushed plastic tumbler
+flattened cardboard kids meal box | 0.4 | 0.05-0.15 | crushed branded carton
+discarded napkin balled up | 0.55 | 0.05-0.1 | crumpled white napkin
+ketchup packet stain on asphalt | 0.45 | 0.05-0.1 | red smear on pavement
+small puddle in lane dip | 0.5 | 0.1-0.2 | shallow standing water
+flattened drink lid | 0.4 | 0.05-0.1 | crushed plastic lid
+abandoned wrapper from taco | 0.5 | 0.05-0.1 | greasy paper wrapper
+cracked pavement seam with weed | 0.75 | 0.1-0.3 | green sprig in crack
+flattened ketchup-stained fries | 0.3 | 0.05-0.1 | trampled food debris

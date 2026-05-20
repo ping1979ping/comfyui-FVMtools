@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+old People magazine on side table | 0.95 | 0.05-0.15 | bent glossy cover
+faded Highlights magazine for kids | 0.7 | 0.05-0.15 | dog-eared illustrated cover
+half-empty disposable water cup | 0.7 | 0.02-0.05 | small paper cone cup
+purse on chair beside | 0.55 | 0.1-0.2 | slumped fabric bag
+clipboard with intake form | 0.7 | 0.1-0.2 | pen clipped to paper
+loose receipt on floor | 0.4 | 0.02-0.05 | small thermal slip
+tissue box mid-pull | 0.65 | 0.05-0.1 | cardboard with sheet sticking out
+empty candy wrapper on chair | 0.4 | 0.02-0.05 | crumpled foil
+hand sanitizer pump on side table | 0.85 | 0.05-0.1 | small clear pump bottle
+abandoned coloring page | 0.5 | 0.05-0.15 | scribbled paper sheet

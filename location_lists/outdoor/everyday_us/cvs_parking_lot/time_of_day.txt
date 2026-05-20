@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+midday harsh sun | 0.9 | - | -
+late afternoon flat light | 0.85 | - | -
+overcast morning | 0.75 | - | -
+weekday lunchtime | 0.75 | - | -
+dusk with lot lights on | 0.65 | - | -
+early evening before close | 0.7 | - | -
+gray cloudy afternoon | 0.75 | - | -
+hazy summer noon | 0.65 | - | -
+post-dawn quiet | 0.4 | - | -

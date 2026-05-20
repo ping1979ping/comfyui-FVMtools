@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+empty plastic lunch tray on table | 0.9 | 0.15-0.3 | beige compartment tray
+crumpled milk carton | 0.7 | 0.05-0.15 | half-folded paper carton
+spilled chocolate milk pool | 0.55 | 0.05-0.15 | sticky drying liquid
+half-eaten pizza slice on tray | 0.7 | 0.1-0.2 | greasy cardboard-thin crust
+ketchup packet smear on table | 0.6 | 0.02-0.08 | red smudged plastic
+opened plastic-wrap sandwich | 0.6 | 0.05-0.15 | crinkled film
+empty chip bag flattened | 0.65 | 0.05-0.1 | foil-lined snack bag
+napkin wad on bench | 0.7 | 0.05-0.1 | wadded thin paper
+plastic fork bent on tray | 0.6 | 0.02-0.08 | snapped clear utensil
+juice box with straw bent | 0.55 | 0.05-0.1 | foil-pouch carton

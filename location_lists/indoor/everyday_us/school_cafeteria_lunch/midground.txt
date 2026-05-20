@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long brown laminate table with benches | 1.0 | 0.4-0.8 | fold-out attached seats
+row of cafeteria tables in perspective | 0.9 | 0.5-0.9 | repeating bench row
+lunch tray pickup counter | 0.8 | 0.3-0.6 | stainless rails
+milk cooler chest | 0.7 | 0.2-0.4 | white refrigerated case
+cashier register stand | 0.7 | 0.2-0.4 | beige laminate kiosk
+condiment station cart | 0.65 | 0.2-0.4 | stainless rolling unit
+trash and tray return zone | 0.8 | 0.2-0.5 | bin row with signage
+microwave row for student use | 0.5 | 0.1-0.3 | stacked white appliances
+fold-out lunch line stanchion | 0.55 | 0.1-0.3 | belt barrier post
+salad bar island | 0.5 | 0.2-0.5 | sneeze-guard topped counter

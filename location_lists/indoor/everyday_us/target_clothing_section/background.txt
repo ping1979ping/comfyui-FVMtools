@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+round rack of women's tops | 1.0 | 0.5-0.9 | dense softgoods on hangers
+back wall hanging-display mural | 0.85 | 0.4-0.8 | oversized product print
+mannequin lineup on platform | 0.85 | 0.3-0.6 | torso forms in coordinated tops
+fitting-room corridor wall | 0.85 | 0.3-0.6 | white painted partition
+clearance-rack wall row | 0.7 | 0.5-0.9 | crammed mixed garments
+A New Day brand signage wall | 0.85 | 0.3-0.6 | white-and-red printed banner
+denim wall folded display | 0.7 | 0.4-0.8 | stacked jeans column
+"Cat & Jack" kids section divider | 0.5 | 0.3-0.6 | bright graphic backdrop
+endcap display of sale tops | 0.85 | 0.3-0.6 | branded fixture facing aisle
+mirrored column between racks | 0.7 | 0.3-0.6 | full-length pillar mirror

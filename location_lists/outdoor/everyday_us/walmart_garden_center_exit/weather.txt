@@ -1,0 +1,12 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+humid summer haze | 0.8 | - | -
+clear hot dry afternoon | 0.75 | - | -
+flat gray overcast | 0.8 | - | -
+muggy post-rain | 0.55 | - | -
+windy with blown sale flags | 0.55 | - | -
+dirty November sky | 0.55 | - | -
+warm spring damp | 0.55 | - | -
+cold dry winter glare | 0.45 | - | -
+hazy pollen-heavy spring | 0.5 | - | -

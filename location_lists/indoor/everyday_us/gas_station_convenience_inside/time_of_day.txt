@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+24-hour fluorescent brightness | 1.0 | - | -
+late-night quiet half-empty | 0.85 | - | -
+early-morning commuter rush | 0.85 | - | -
+mid-morning slow lull | 0.8 | - | -
+lunch hour grab-and-go | 0.85 | - | -
+afternoon school-out crowd | 0.75 | - | -
+evening after-work peak | 0.85 | - | -
+3am graveyard-shift dim | 0.65 | - | -
+flickering tube buzz | 0.65 | - | -
+weekend road-trip stop | 0.75 | - | -

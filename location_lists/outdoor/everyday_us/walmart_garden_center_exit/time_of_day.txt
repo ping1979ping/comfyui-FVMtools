@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday sun | 0.9 | - | -
+late afternoon flat light | 0.8 | - | -
+overcast morning | 0.75 | - | -
+weekend afternoon rush | 0.7 | - | -
+weekday lunchtime quiet | 0.6 | - | -
+hazy summer noon | 0.7 | - | -
+dusk with lot lights humming | 0.55 | - | -
+post-storm afternoon | 0.55 | - | -
+early morning restock hour | 0.45 | - | -

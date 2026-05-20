@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stacked clean trays on cart | 0.85 | 0.1-0.25 | beige compartment plastic
+napkin dispenser on table | 0.85 | 0.05-0.15 | chrome flip-top
+ketchup pump on condiment cart | 0.7 | 0.05-0.15 | stainless lever dispenser
+straw dispenser at counter | 0.65 | 0.05-0.1 | plastic flap box
+salt and pepper shakers | 0.6 | 0.02-0.08 | small glass shakers
+plastic wrapped utensil packs bin | 0.7 | 0.05-0.15 | bin of cellophane packets
+laminated menu sign | 0.7 | 0.05-0.15 | printed plastic-coated paper
+"no cell phones" warning sign | 0.55 | 0.02-0.08 | printer paper taped up
+prom fundraiser flyer on wall | 0.5 | 0.05-0.1 | dog-eared printed sheet
+hand sanitizer pump station | 0.65 | 0.05-0.1 | white pump bottle
+recycling sort signage | 0.6 | 0.05-0.15 | laminated label set
+student bake sale table sign | 0.4 | 0.05-0.15 | marker poster board

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+HOA-uniform black mailbox post | 0.85 | 0.1-0.3 | matching painted metal
+seasonal flag on small yard pole | 0.45 | 0.1-0.2 | faded decorative banner
+yard sign for realty company | 0.4 | 0.1-0.2 | corrugated plastic sign
+yard sign for invisible fence | 0.35 | 0.05-0.15 | small metal sign
+plastic toy left on lawn | 0.4 | 0.05-0.15 | bright forgotten kids toy
+garden hose coiled by spigot | 0.5 | 0.1-0.2 | green vinyl hose coil
+trash toter at curb | 0.65 | 0.1-0.3 | black plastic wheelie bin
+recycling toter at curb | 0.6 | 0.1-0.3 | blue plastic wheelie bin
+small ADT security sign | 0.35 | 0.05-0.15 | metal stake with logo
+solar walkway light | 0.5 | 0.05-0.15 | small plastic stake light
+new tree support stake and strap | 0.5 | 0.05-0.15 | green plastic strap
+plastic kid's chalk bucket on porch | 0.3 | 0.05-0.15 | bright colored bucket

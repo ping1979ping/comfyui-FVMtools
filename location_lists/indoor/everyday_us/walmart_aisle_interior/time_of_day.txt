@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+24-hour bright fluorescent | 1.0 | - | -
+midday peak shopping brightness | 0.9 | - | -
+weekend afternoon crowded light | 0.85 | - | -
+weekday morning lull lighting | 0.85 | - | -
+evening after-work busy | 0.85 | - | -
+late-night restock quiet | 0.7 | - | -
+3am empty aisle dim | 0.6 | - | -
+early-bird senior hours light | 0.65 | - | -
+holiday-rush extra-bright | 0.65 | - | -
+opening-hour first-customer hum | 0.55 | - | -

@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+dusty mauve painted wall | 1.0 | 0.6-1.0 | flat suburban-office paint
+dated wallpaper border at ceiling | 0.7 | 0.1-0.3 | floral patterned vinyl strip
+nature-photo gallery wall | 0.95 | 0.4-0.8 | mass-print framed landscapes
+reception desk with glass partition | 0.95 | 0.3-0.6 | laminate counter with sliding window
+fish tank against wall | 0.55 | 0.3-0.6 | algae-tinged glass aquarium
+beige textured-vinyl wallpaper | 0.7 | 0.5-0.9 | dated grass-cloth print
+kids' corner low partition | 0.85 | 0.3-0.6 | half wall to play nook
+artificial plant in corner | 0.85 | 0.2-0.5 | dusty fake ficus
+"appointment policy" notice wall | 0.6 | 0.2-0.5 | framed laminated rules
+small picture window with blinds | 0.7 | 0.2-0.5 | vinyl horizontal slats

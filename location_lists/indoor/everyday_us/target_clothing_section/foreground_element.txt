@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dropped hanger on floor | 0.85 | 0.05-0.1 | beige plastic with hook
+shirt fallen off hanger | 0.7 | 0.1-0.2 | crumpled top on floor
+red Target basket left in aisle | 0.7 | 0.1-0.2 | small plastic carry basket
+price tag dangling off garment | 0.85 | 0.02-0.05 | white cardstock tag
+shopping cart with two items | 0.6 | 0.1-0.25 | half-loaded carrier
+fitting-room rejects pile on rack | 0.7 | 0.15-0.3 | mounded try-ons
+folded-pants tower askew | 0.6 | 0.1-0.2 | leaning denim stack
+size sticker on hanger crooked | 0.65 | 0.02-0.05 | acrylic disk
+loose receipt on floor | 0.45 | 0.05-0.1 | thermal paper slip
+plastic security tag dropped | 0.5 | 0.02-0.05 | white ink-tag attachment

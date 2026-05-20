@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+box knocked off shelf onto floor | 0.7 | 0.05-0.15 | dented cardboard pack
+price tag dangling off shelf | 0.8 | 0.05-0.1 | yellow plastic flag
+broken plastic packaging on floor | 0.55 | 0.05-0.15 | cracked clamshell
+spilled cereal trail on floor | 0.5 | 0.05-0.15 | scattered grain bits
+empty cart corral edge | 0.55 | 0.1-0.25 | metal corral rail
+shopping basket left in aisle | 0.6 | 0.1-0.2 | plastic handled basket
+fallen receipt on tile | 0.55 | 0.05-0.1 | crumpled register slip
+wet floor caution cone | 0.5 | 0.05-0.15 | yellow plastic A-frame
+loose shrink wrap scrap | 0.5 | 0.05-0.1 | clear plastic film
+shelf gap with empty hooks | 0.6 | 0.1-0.25 | exposed steel pegboard

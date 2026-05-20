@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+home plate worn rubber | 0.85 | 0.05-0.15 | scuffed white plate
+dirt baseline path | 0.95 | 0.3-0.6 | packed clay dirt
+pitcher's rubber on mound | 0.75 | 0.05-0.15 | scuffed white slab
+chain-link dugout fence | 0.85 | 0.3-0.6 | tall mesh enclosure
+dugout bench with peeling paint | 0.7 | 0.2-0.4 | weathered wood bench
+foul pole at field edge | 0.6 | 0.1-0.3 | tall yellow steel pole
+field light pole | 0.7 | 0.2-0.4 | tall steel post with floodlights
+warm-up batting circle painted | 0.55 | 0.05-0.15 | chalk circle on dirt
+infield clay drag pattern | 0.85 | 0.3-0.6 | swept dirt furrows
+worn batter's box outline | 0.65 | 0.05-0.15 | chalked rectangle
+out-of-play yellow line on fence | 0.45 | 0.1-0.3 | yellow plastic strip
+small umpire chair behind plate | 0.3 | 0.05-0.15 | folding metal chair

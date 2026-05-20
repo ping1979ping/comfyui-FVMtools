@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+yellow "rollback" price tag | 1.0 | 0.05-0.15 | bright vinyl shelf flag
+blue Walmart-branded shelf label | 0.85 | 0.05-0.1 | printed plastic edge strip
+clearance red sticker on box | 0.75 | 0.02-0.08 | round adhesive dot
+"as seen on TV" shelf clip-on | 0.5 | 0.05-0.1 | starburst-shaped sign
+hanging snack peg display | 0.65 | 0.1-0.25 | metal hook strip
+cardboard product display unit | 0.7 | 0.2-0.4 | branded floor stand
+out-of-stock empty shelf gap | 0.7 | 0.1-0.25 | open pegboard section
+loyalty app QR code sign | 0.55 | 0.05-0.1 | small acrylic standee
+sale-end-date sticker pile | 0.55 | 0.02-0.08 | small orange dots
+aisle-number overhead sign | 0.9 | 0.05-0.15 | white plastic numerals
+employee vest left on cart | 0.4 | 0.05-0.1 | navy nylon mesh
+plastic divider between products | 0.55 | 0.05-0.1 | clear shelf separator

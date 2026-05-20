@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+HVAC humming dry air | 0.9 | - | -
+winter dry heat from vents | 0.8 | - | -
+summer AC chill | 0.75 | - | -
+muggy spring stuffiness | 0.6 | - | -
+rain visible through hall window | 0.5 | - | -
+snow piling on window ledge | 0.5 | - | -
+overcast grey through glass | 0.7 | - | -
+warm autumn dry air | 0.6 | - | -

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+beige low-pile carpet | 1.0 | 0.4-0.8 | matted nylon loop
+popcorn ceiling overhead | 0.85 | 0.3-0.6 | bumpy textured plaster
+drop-ceiling fan with light | 0.85 | 0.1-0.25 | brushed-nickel paddles
+white painted MDF baseboard | 0.85 | 0.1-0.25 | shoe-trim along carpet
+forced-air return vent on wall | 0.7 | 0.05-0.15 | beige plastic grille
+crown molding seam crooked | 0.55 | 0.05-0.15 | painted wood profile
+thermostat plate on wall | 0.7 | 0.02-0.05 | white plastic touchscreen
+double-hung window with screen | 0.7 | 0.2-0.4 | white vinyl frame
+hollow-core swinging door | 0.55 | 0.2-0.4 | white painted slab
+outlet plate scuffed by sofa | 0.6 | 0.02-0.05 | discolored white plastic

@@ -1,0 +1,12 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+humid summer haze | 0.8 | - | -
+flat gray overcast | 0.85 | - | -
+light drizzle on pavement | 0.55 | - | -
+clear hot dry afternoon | 0.7 | - | -
+dirty November cloud cover | 0.65 | - | -
+melting slush on asphalt | 0.4 | - | -
+windy with blowing trash | 0.45 | - | -
+muggy thunderstorm aftermath | 0.5 | - | -
+cold dry winter sun | 0.5 | - | -

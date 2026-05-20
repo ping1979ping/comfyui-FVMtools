@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+US flag-decal mailbox | 0.5 | 0.05-0.15 | dented metal box
+plastic newspaper delivery tube | 0.55 | 0.05-0.15 | green plastic cylinder
+yard sign for local election | 0.45 | 0.1-0.2 | faded coroplast sign
+yard sign for lawn-care company | 0.4 | 0.05-0.15 | metal stake with logo
+trash toter pulled to curb | 0.6 | 0.1-0.3 | black plastic wheelie bin
+recycling bin overflowing | 0.5 | 0.1-0.3 | blue plastic bin
+yellow school crossing sign | 0.45 | 0.1-0.2 | diamond reflective sign
+abandoned scooter on lawn | 0.35 | 0.1-0.2 | faded plastic kick scooter
+small lost mitten on sidewalk | 0.25 | 0.05-0.1 | faded fabric glove
+sidewalk chalk piece nub | 0.3 | 0.05-0.1 | broken pastel stub
+yard lawn flag on small pole | 0.4 | 0.05-0.15 | seasonal small banner
+faded plastic recycle sticker on toter | 0.5 | 0.05-0.1 | peeling vinyl decal

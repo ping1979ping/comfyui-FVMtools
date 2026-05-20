@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+aluminum bat leaned on fence | 0.4 | 0.05-0.15 | scuffed silver bat
+batting helmet on bench | 0.45 | 0.05-0.15 | scratched plastic helmet
+catcher's gear pile in dugout | 0.3 | 0.1-0.2 | mask and chest pad
+ball bucket on ground | 0.55 | 0.05-0.15 | white plastic bucket
+chalk drag mat leaning | 0.45 | 0.1-0.2 | wood-frame drag tool
+red wheeled field-marking cart | 0.3 | 0.1-0.2 | small chalk-line wheel
+field-rake against fence | 0.4 | 0.05-0.15 | wooden-handled rake
+folding portable scorebook stand | 0.3 | 0.05-0.15 | plastic clipboard stand
+cooler with ice melt drip | 0.5 | 0.1-0.2 | branded sports cooler
+half-filled water jug on bench | 0.45 | 0.05-0.15 | plastic gallon jug
+foul ball net behind plate | 0.55 | 0.2-0.4 | hanging mesh netting
+sports drink crate of empties | 0.35 | 0.05-0.15 | crate of plastic bottles

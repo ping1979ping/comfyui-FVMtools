@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+beige cinder block cafeteria wall | 1.0 | 0.6-1.0 | painted breeze block grid
+school mural on far wall | 0.7 | 0.4-0.8 | acrylic painted scene
+serving line stainless backdrop | 0.85 | 0.5-0.9 | brushed metal counter
+tray-return window in wall | 0.8 | 0.3-0.6 | open dish drop slot
+vending machine row against wall | 0.85 | 0.5-0.9 | backlit branded fronts
+painted half wall with school colors | 0.6 | 0.4-0.7 | latex paint band
+trophy case along wall | 0.5 | 0.3-0.6 | sliding glass front
+folded bleacher wall (gymnatorium) | 0.45 | 0.4-0.8 | wooden slat stack
+exit corridor opening | 0.55 | 0.3-0.6 | double doors with crash bar
+painted block wall with banner | 0.65 | 0.4-0.8 | screen-printed cloth

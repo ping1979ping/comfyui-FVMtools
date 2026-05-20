@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+unmade twin bed with mismatched sheets | 1.0 | 0.4-0.8 | rumpled jersey-knit bedding
+IKEA white laminate desk | 0.85 | 0.3-0.6 | particleboard with scuffs
+desk chair with clothes piled | 0.85 | 0.2-0.4 | swivel chair as laundry rack
+short bookshelf with junk | 0.7 | 0.2-0.5 | cluttered IKEA shelf
+dresser with drawer half-open | 0.7 | 0.2-0.5 | painted MDF chest
+pile of clothes on floor | 0.95 | 0.3-0.6 | mixed laundry mound
+beanbag chair in corner | 0.55 | 0.1-0.3 | slouched fabric bag
+folding closet doors slid open | 0.7 | 0.3-0.6 | bifold louvered panels
+floor-length mirror leaning | 0.7 | 0.2-0.4 | budget framed glass
+nightstand with phone charger | 0.85 | 0.1-0.25 | small painted side table

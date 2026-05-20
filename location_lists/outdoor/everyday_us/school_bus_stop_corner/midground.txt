@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+row of curbside mailboxes | 0.9 | 0.2-0.5 | mixed metal and plastic boxes
+red octagon stop sign on post | 0.95 | 0.2-0.4 | reflective metal sign
+green street name sign | 0.7 | 0.1-0.3 | small reflective rectangle
+fire hydrant painted yellow | 0.6 | 0.1-0.3 | scuffed yellow metal
+storm drain at curb | 0.7 | 0.1-0.3 | rusty steel grate
+crosswalk faded paint | 0.55 | 0.2-0.4 | scuffed white stripes
+parked car at curb | 0.55 | 0.2-0.5 | older sedan
+recycling toter at curb | 0.5 | 0.1-0.3 | blue plastic wheelie bin
+small drainage ditch with grass | 0.5 | 0.2-0.4 | shallow grassy depression
+yellow school zone speed sign | 0.5 | 0.1-0.2 | reflective post sign
+overhead wires sagging | 0.65 | 0.2-0.5 | crisscrossing utility lines
+sidewalk slab seam line | 0.85 | 0.2-0.5 | poured concrete panel joint

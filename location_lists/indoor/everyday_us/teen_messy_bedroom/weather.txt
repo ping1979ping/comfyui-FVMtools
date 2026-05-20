@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+HVAC dry conditioned air | 0.9 | - | -
+summer AC chill running cold | 0.8 | - | -
+winter dry heat from floor vent | 0.85 | - | -
+muggy stuffy with window closed | 0.7 | - | -
+rain visible through bent blinds | 0.7 | - | -
+snow piled outside window | 0.55 | - | -
+overcast grey through curtain | 0.7 | - | -
+warm afternoon sun behind curtain | 0.65 | - | -

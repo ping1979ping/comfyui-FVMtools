@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+HVAC humming dry air | 0.95 | - | -
+winter dry heat from floor vent | 0.85 | - | -
+summer AC chill on full | 0.8 | - | -
+muggy stuffiness mid-summer | 0.65 | - | -
+rain on picture window | 0.7 | - | -
+snow piling outside slider | 0.55 | - | -
+overcast grey through blinds | 0.7 | - | -
+warm afternoon glow through curtain | 0.65 | - | -

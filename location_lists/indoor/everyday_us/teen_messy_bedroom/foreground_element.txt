@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dirty plate with crumbs on desk | 0.85 | 0.05-0.15 | smeared porcelain
+half-empty water bottle on floor | 0.95 | 0.05-0.1 | crinkled plastic
+laptop sticker-bombed open | 0.95 | 0.2-0.4 | matte aluminum lid with decals
+phone face-down on bed | 0.9 | 0.05-0.1 | cracked-case smartphone
+crumpled hoodie tossed on floor | 0.95 | 0.15-0.3 | balled cotton fleece
+single sock on rug | 0.85 | 0.02-0.05 | thin athletic sock
+open notebook with pen on bed | 0.7 | 0.1-0.2 | spiral-bound paper
+cracked phone charger cable | 0.85 | 0.05-0.1 | tangled white wire
+empty LaCroix can on desk | 0.7 | 0.05-0.1 | dented aluminum can
+chip bag crumpled on bed | 0.6 | 0.05-0.1 | foil-lined snack bag

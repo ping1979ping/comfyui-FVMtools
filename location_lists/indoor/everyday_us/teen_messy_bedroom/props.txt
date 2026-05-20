@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+scrunchie pile on dresser | 0.85 | 0.05-0.1 | colorful fabric loops
+makeup brushes in cup | 0.85 | 0.05-0.1 | mixed bristle handles
+stuffed animal on bed | 0.85 | 0.1-0.2 | matted plush fur
+Stanley tumbler on desk | 0.85 | 0.05-0.1 | branded insulated cup
+AirPods case on bedside | 0.85 | 0.02-0.05 | smudged plastic clamshell
+school binder stack on desk | 0.85 | 0.1-0.25 | nylon-covered ring binder
+ring light on tripod folded | 0.7 | 0.1-0.25 | LED-circle on stand
+Polaroid camera on shelf | 0.65 | 0.05-0.1 | retro plastic body
+small succulent in pot | 0.7 | 0.05-0.1 | terracotta with dry soil
+empty Amazon box on floor | 0.85 | 0.1-0.2 | dented branded carton
+deodorant tube on dresser | 0.7 | 0.02-0.05 | plastic stick
+makeup-stained pillow case | 0.7 | 0.1-0.25 | smudged cotton fabric

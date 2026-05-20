@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+HVAC dry conditioned air | 0.9 | - | -
+summer AC chill | 0.8 | - | -
+winter dry heat from vents | 0.75 | - | -
+muggy stuffiness when AC weak | 0.6 | - | -
+rain visible through high window | 0.55 | - | -
+snow piled on outside windowsill | 0.5 | - | -
+overcast grey through clerestory | 0.65 | - | -
+warm afternoon humidity | 0.55 | - | -

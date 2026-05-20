@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+half-eaten Big Mac in box | 0.85 | 0.1-0.2 | greasy clamshell carton
+red fry carton tipped over | 0.85 | 0.1-0.2 | branded paperboard pocket
+spilled fries on tabletop | 0.7 | 0.05-0.15 | scattered golden sticks
+ketchup packet with smear | 0.85 | 0.05-0.1 | torn foil pouch
+soda cup with bent straw | 0.9 | 0.1-0.2 | waxed paper cup
+crumpled burger wrapper | 0.85 | 0.05-0.15 | greasy printed paper
+napkin wad on tray | 0.8 | 0.05-0.1 | wadded thin paper
+McDonald's tray with paper liner | 0.95 | 0.2-0.4 | brown plastic tray
+straw paper torn on table | 0.7 | 0.02-0.05 | shredded thin paper
+salt packet emptied | 0.5 | 0.02-0.05 | tiny torn foil

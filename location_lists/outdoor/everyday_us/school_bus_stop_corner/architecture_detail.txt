@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+scuffed vinyl siding on nearest house | 0.75 | 0.2-0.5 | beige horizontal lap siding
+white vinyl shutter beside window | 0.6 | 0.1-0.3 | weathered plastic shutter
+asphalt shingle roof line | 0.7 | 0.2-0.4 | sun-faded gray shingles
+brick veneer front step | 0.5 | 0.1-0.3 | red masonry with mortar
+weather-beaten porch railing | 0.5 | 0.1-0.3 | white painted wood railing
+chimney with metal cap | 0.45 | 0.1-0.2 | red brick stack
+exposed gutter and downspout | 0.65 | 0.1-0.3 | painted aluminum
+sagging gutter corner | 0.45 | 0.1-0.2 | rust-stained metal
+front porch sconce light | 0.45 | 0.05-0.15 | small wall-mounted fixture
+green house number plaque | 0.4 | 0.05-0.15 | small plastic placard

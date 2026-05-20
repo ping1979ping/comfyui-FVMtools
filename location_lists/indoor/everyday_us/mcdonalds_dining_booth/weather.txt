@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+aggressive AC summer chill | 0.9 | - | -
+warm grease-laden indoor air | 0.85 | - | -
+winter dry heat near vestibule | 0.75 | - | -
+muggy stuffiness near fryer | 0.7 | - | -
+rain on parking-lot window | 0.65 | - | -
+snow piled outside glass | 0.5 | - | -
+overcast grey through window | 0.65 | - | -
+humid summer condensation | 0.55 | - | -

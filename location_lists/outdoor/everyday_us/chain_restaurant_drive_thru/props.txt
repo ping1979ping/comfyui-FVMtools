@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+mobile-order pickup sign on stake | 0.55 | 0.05-0.15 | branded yellow sign
+dumpster fence corner visible | 0.7 | 0.1-0.3 | wood-slat enclosure
+overflowing trash can | 0.7 | 0.1-0.3 | branded dented bin
+sandwich-board promo sign | 0.45 | 0.1-0.2 | bright plastic A-frame
+yellow caution wet floor cone | 0.4 | 0.05-0.15 | scuffed plastic cone
+beverage cooler with logo decal | 0.4 | 0.1-0.3 | branded outdoor cooler
+ATM mounted at drive-thru distance | 0.25 | 0.05-0.15 | branded kiosk
+brand-color trash receptacle lid | 0.55 | 0.05-0.15 | red or yellow swing-top
+exterior security camera with cover | 0.55 | 0.05-0.1 | small dome cam
+yellow concrete bollard with logo | 0.65 | 0.1-0.2 | scuffed painted post
+delivery driver placard on pole | 0.35 | 0.05-0.15 | small mounted sign
+employee outdoor smoke-break ashtray | 0.4 | 0.05-0.15 | sand-filled metal canister

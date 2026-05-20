@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning before bus arrives | 0.9 | - | -
+late afternoon school dismissal | 0.85 | - | -
+quiet weekday midmorning | 0.7 | - | -
+gray morning at 7am | 0.75 | - | -
+overcast afternoon | 0.75 | - | -
+golden hour low sun | 0.55 | - | -
+weekend midday quiet | 0.6 | - | -
+post-rain morning | 0.5 | - | -
+midday flat light | 0.6 | - | -

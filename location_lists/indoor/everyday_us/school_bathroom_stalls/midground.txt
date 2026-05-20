@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+row of porcelain sinks on counter | 1.0 | 0.4-0.8 | yellowed white basins
+stall doors slightly ajar | 0.85 | 0.3-0.6 | painted metal panels
+trash bin overflowing with paper | 0.8 | 0.2-0.4 | dented metal cylinder
+hand dryer mounted between stalls | 0.85 | 0.2-0.4 | beige plastic housing
+paper towel dispenser on wall | 0.85 | 0.2-0.4 | stainless lever box
+sanitary product machine | 0.7 | 0.2-0.4 | beige coin-operated box
+mop bucket forgotten in corner | 0.55 | 0.1-0.3 | yellow plastic with wringer
+ADA-accessible larger stall end | 0.75 | 0.3-0.6 | wider painted door
+diaper changing station folded | 0.5 | 0.2-0.4 | beige wall-mounted unit
+janitor closet door beside stalls | 0.45 | 0.2-0.4 | painted slab door

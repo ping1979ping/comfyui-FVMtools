@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rusted A-frame swing set structure | 1.0 | 0.4-0.8 | rust-streaked steel pipes
+black rubber swing seats hanging | 0.95 | 0.2-0.5 | scuffed rubber strap seats
+faded plastic slide | 0.8 | 0.2-0.5 | sun-bleached yellow plastic
+red metal play structure platform | 0.7 | 0.2-0.5 | rusted painted decking
+wood chip play surface | 0.95 | 0.3-0.6 | weathered mulch ground cover
+chain-link borer fence around playground | 0.6 | 0.2-0.5 | low woven mesh fence
+weathered park picnic table | 0.8 | 0.2-0.5 | warped gray plank table
+metal merry-go-round disc | 0.45 | 0.1-0.3 | rusted spinning platform
+park bench with peeling paint | 0.65 | 0.2-0.4 | flaking painted bench
+rubber ground tiles cracked | 0.4 | 0.2-0.4 | sun-faded play tiles
+small dirt patch worn under swings | 0.85 | 0.1-0.3 | bare scuffed dirt
+hopscotch chalk faded on path | 0.4 | 0.1-0.2 | washed-out chalk grid

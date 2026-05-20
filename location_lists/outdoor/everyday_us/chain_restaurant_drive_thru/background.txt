@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+Taco Bell purple-and-pink restaurant facade | 0.7 | 0.4-0.8 | stucco with branded color band
+Wendy's red-roofed restaurant exterior | 0.65 | 0.4-0.8 | red roof with brick siding
+McDonald's beige facade with golden arches | 0.55 | 0.4-0.8 | stucco with arch signage
+Subway green-and-yellow storefront | 0.45 | 0.3-0.6 | bright corporate color block
+generic fast food building shape | 0.85 | 0.4-0.8 | flat-roofed franchise building
+adjacent parking lot stripe | 0.85 | 0.3-0.6 | striped asphalt
+tall illuminated pylon sign | 0.85 | 0.2-0.4 | branded corporate sign on pole
+distant strip mall row | 0.5 | 0.2-0.5 | low retail beyond lot
+state highway with traffic | 0.55 | 0.2-0.5 | busy multi-lane road
+fast food competitor across street | 0.45 | 0.2-0.5 | rival branded building
+landscape island with shrubs | 0.65 | 0.2-0.4 | small curbed planter
+dumpster fence enclosure behind building | 0.7 | 0.2-0.4 | wood-slat trash corral

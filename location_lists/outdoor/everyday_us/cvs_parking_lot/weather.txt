@@ -1,0 +1,12 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+flat gray overcast | 0.85 | - | -
+humid summer haze | 0.75 | - | -
+clear dry warm day | 0.7 | - | -
+light rain with wet pavement | 0.55 | - | -
+dirty November sky | 0.6 | - | -
+windy with blown debris | 0.45 | - | -
+slush-melt afternoon | 0.4 | - | -
+muggy aftermath of storm | 0.5 | - | -
+cold dry winter glare | 0.5 | - | -

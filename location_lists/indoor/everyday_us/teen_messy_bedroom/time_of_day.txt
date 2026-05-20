@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+afternoon overhead bulb on | 0.85 | - | -
+fairy-light only ambient glow | 0.85 | - | -
+LED color strip pink wash | 0.7 | - | -
+ring-light bright facing bed | 0.7 | - | -
+morning blackout-curtain seam light | 0.7 | - | -
+late-night laptop screen glow | 0.85 | - | -
+window-only overcast dim | 0.7 | - | -
+desk lamp pool of light | 0.7 | - | -
+phone-screen face-uplight | 0.6 | - | -
+midday curtain-filtered glow | 0.75 | - | -

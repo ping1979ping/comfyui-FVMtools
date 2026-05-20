@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+afternoon overhead lamp on | 0.85 | - | -
+evening TV-glow lit room | 0.95 | - | -
+morning light through blinds | 0.85 | - | -
+midday curtain-filtered glow | 0.8 | - | -
+late-night TV-only flicker | 0.85 | - | -
+Sunday afternoon nap dim | 0.7 | - | -
+ceiling-fan light at full | 0.85 | - | -
+floor-lamp only ambient | 0.7 | - | -
+early-evening dusk fade | 0.7 | - | -
+overcast grey through window | 0.7 | - | -

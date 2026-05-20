@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+scuffed vinyl siding on rear wall | 0.85 | 0.3-0.6 | beige horizontal lap siding
+exposed brick foundation course | 0.6 | 0.1-0.3 | painted red masonry
+exterior light fixture caged | 0.5 | 0.05-0.15 | wire-cage wall sconce
+dryer vent with lint trail | 0.55 | 0.05-0.15 | white plastic vent
+HVAC condensate pipe dripping | 0.5 | 0.05-0.15 | small PVC drip line
+chipped paint on dumpster gate | 0.7 | 0.1-0.3 | flaking enclosure paint
+graffiti tag on dumpster lid | 0.4 | 0.1-0.2 | spray paint scrawl
+rusted gutter downspout | 0.65 | 0.1-0.3 | streaked metal pipe
+exposed conduit on wall | 0.5 | 0.1-0.2 | gray PVC piping
+small no-dumping sign on gate | 0.55 | 0.05-0.15 | weathered metal sign

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+dugout corrugated metal roof | 0.65 | 0.2-0.4 | rusted ribbed sheet metal
+peeling paint on bleacher framing | 0.7 | 0.2-0.4 | flaking metal supports
+rusted gate hinge in fence | 0.6 | 0.05-0.15 | crusty steel hinge
+faded sponsor logo on fence banner | 0.65 | 0.1-0.3 | sun-bleached vinyl ad
+weather-beaten wooden bench plank | 0.7 | 0.1-0.3 | warped gray boards
+chain-link gate with padlock | 0.5 | 0.05-0.15 | rusty chain and lock
+exposed concrete dugout footing | 0.5 | 0.1-0.3 | scuffed gray concrete
+field light fixture cluster | 0.55 | 0.1-0.3 | bank of stadium floods
+scoreboard with missing bulb | 0.45 | 0.1-0.3 | weathered painted panel
+metal trash can mounted on post | 0.55 | 0.05-0.15 | dented green metal can

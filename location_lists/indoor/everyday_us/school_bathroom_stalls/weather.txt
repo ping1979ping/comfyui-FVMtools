@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+humid AC running thick air | 0.85 | - | -
+muggy summer stuffiness | 0.75 | - | -
+winter dry heat from vents | 0.7 | - | -
+exhaust fan dry hum | 0.8 | - | -
+condensation on tile from steam | 0.55 | - | -
+rain visible through high window | 0.5 | - | -
+cold draft from cracked window | 0.5 | - | -
+warm autumn dampness | 0.55 | - | -

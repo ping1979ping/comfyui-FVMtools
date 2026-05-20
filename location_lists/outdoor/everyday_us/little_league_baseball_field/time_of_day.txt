@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+midday flat sun on field | 0.85 | - | -
+late afternoon long shadows | 0.85 | - | -
+weekday quiet morning | 0.7 | - | -
+overcast gray afternoon | 0.75 | - | -
+golden hour on infield | 0.7 | - | -
+dusk before field lights | 0.6 | - | -
+post-game empty evening | 0.65 | - | -
+saturday afternoon empty | 0.6 | - | -
+post-rain damp morning | 0.55 | - | -

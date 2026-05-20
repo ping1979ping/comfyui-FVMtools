@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+midday harsh sun | 0.85 | - | -
+late afternoon flat light | 0.8 | - | -
+overcast gray afternoon | 0.85 | - | -
+early morning before pickup | 0.6 | - | -
+dusk with security lights on | 0.65 | - | -
+mid-morning quiet | 0.65 | - | -
+weekend trash-day chaos | 0.55 | - | -
+just after dawn | 0.45 | - | -
+hazy summer noon | 0.6 | - | -

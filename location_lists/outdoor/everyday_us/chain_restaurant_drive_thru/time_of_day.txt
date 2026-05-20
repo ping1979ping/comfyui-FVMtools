@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+midday harsh sun | 0.85 | - | -
+weekday lunchtime | 0.85 | - | -
+late afternoon flat light | 0.8 | - | -
+dusk with menu board glowing | 0.8 | - | -
+nighttime with humming sign | 0.7 | - | -
+overcast gray afternoon | 0.75 | - | -
+early morning breakfast rush | 0.7 | - | -
+hazy summer noon | 0.65 | - | -
+post-rain afternoon | 0.55 | - | -

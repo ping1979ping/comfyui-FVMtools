@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+four-way garment rack island | 0.95 | 0.3-0.6 | metal cross-arm fixture
+torso mannequin on pedestal | 0.85 | 0.2-0.4 | beige fiberglass form
+hanging-rod waterfall display | 0.85 | 0.2-0.5 | sloping arm with tops
+red Target shopping cart parked | 0.85 | 0.15-0.3 | bright plastic with wire
+fitting-room queue stanchion | 0.6 | 0.1-0.3 | belt-barrier post
+fixture with size dividers | 0.85 | 0.1-0.25 | acrylic round disks on rod
+folding-table stacked tees | 0.7 | 0.2-0.4 | white laminate display
+cross-aisle perpendicular path | 0.7 | 0.3-0.6 | open polished-floor strip
+accessory island with handbags | 0.6 | 0.2-0.4 | mid-height display unit
+denim folding table | 0.7 | 0.2-0.4 | stacked column of jeans

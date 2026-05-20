@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+red Coca-Cola crate stack | 0.75 | 0.1-0.3 | branded plastic crates
+ice cooler chest with sign | 0.7 | 0.1-0.3 | white branded freezer
+plastic newspaper box | 0.45 | 0.05-0.15 | weathered orange box
+public payphone leftover | 0.25 | 0.05-0.15 | dusty old payphone shell
+yellow concrete bollard at entry | 0.8 | 0.1-0.2 | scuffed painted post
+trash can with overflow bag | 0.7 | 0.1-0.3 | dented black bin
+flat handcart leaned on wall | 0.4 | 0.05-0.15 | yellow restock cart
+delivery dolly leaned by door | 0.4 | 0.05-0.15 | red two-wheel dolly
+folded sandwich-board sign | 0.4 | 0.1-0.2 | plastic A-frame
+plastic crate of returnable bottles | 0.35 | 0.05-0.15 | crate of empties
+clearance tag sign on stake | 0.4 | 0.05-0.1 | bright yellow signboard
+hand-written help-wanted sign | 0.45 | 0.05-0.1 | sharpie-on-paper sign

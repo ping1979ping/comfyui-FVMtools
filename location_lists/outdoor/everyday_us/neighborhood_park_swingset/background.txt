@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+scraggly park tree line | 0.85 | 0.4-0.8 | mixed deciduous edge
+mature oak tree shading area | 0.65 | 0.3-0.6 | broad-canopied shade tree
+empty park lawn expanse | 0.95 | 0.4-0.8 | tired patchy grass
+chain-link park boundary fence | 0.7 | 0.3-0.6 | woven steel mesh
+parking lot at park edge | 0.55 | 0.2-0.5 | small gravel-asphalt lot
+distant pavilion shelter | 0.5 | 0.2-0.4 | open metal-roofed shelter
+neighbor's back yard fence | 0.45 | 0.2-0.5 | wood privacy fence
+small park sign at entry | 0.55 | 0.1-0.3 | painted wood park sign
+distant baseball diamond | 0.4 | 0.2-0.4 | another field beyond fence
+walking path winding through park | 0.6 | 0.2-0.5 | asphalt pedestrian trail
+faded park trash dumpster behind tree | 0.5 | 0.2-0.4 | green steel bin
+overhead power lines crossing park | 0.5 | 0.2-0.4 | sagging utility wires

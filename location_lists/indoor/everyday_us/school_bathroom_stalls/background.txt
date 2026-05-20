@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+row of beige metal toilet stalls | 1.0 | 0.6-1.0 | scratched powder-coat panels
+cracked tile wall behind sinks | 0.9 | 0.5-0.9 | chipped glazed squares
+mirror wall above sinks | 0.95 | 0.4-0.8 | smudged silvered glass
+salmon pink tile wall | 0.7 | 0.5-0.9 | dated bathroom tile
+mauve tiled bathroom wall | 0.65 | 0.5-0.9 | dingy grouted squares
+exposed cinder block wall painted | 0.7 | 0.4-0.8 | breeze block grid
+graffiti-scratched stall wall | 0.75 | 0.4-0.8 | scratched-in marker tags
+hand dryer mounted wall section | 0.7 | 0.3-0.6 | brushed stainless panel
+window with frosted glass high | 0.5 | 0.2-0.5 | pebbled translucent pane
+half wall divider between sections | 0.55 | 0.3-0.6 | painted block partition

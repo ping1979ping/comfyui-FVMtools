@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+aggressive AC summer chill | 0.85 | - | -
+warm coffee-laden indoor air | 0.85 | - | -
+winter dry heat blast from vents | 0.75 | - | -
+muggy stuffiness near hot dogs | 0.7 | - | -
+rain on front window | 0.7 | - | -
+snow tracked in by boots | 0.65 | - | -
+overcast grey through glass | 0.7 | - | -
+condensation on cold-case doors | 0.7 | - | -

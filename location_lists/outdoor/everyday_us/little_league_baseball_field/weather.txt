@@ -1,0 +1,12 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear dry hot day | 0.8 | - | -
+humid summer haze | 0.8 | - | -
+flat gray overcast | 0.8 | - | -
+muddy post-rain field | 0.55 | - | -
+light drizzle pausing play | 0.45 | - | -
+windy with dust kicked up | 0.55 | - | -
+crisp fall afternoon | 0.55 | - | -
+muggy thunderstorm aftermath | 0.5 | - | -
+cold dry winter wind | 0.4 | - | -

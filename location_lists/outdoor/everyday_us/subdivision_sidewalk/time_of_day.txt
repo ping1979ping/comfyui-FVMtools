@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+quiet weekday morning | 0.85 | - | -
+midday flat sun | 0.85 | - | -
+late afternoon golden tilt | 0.7 | - | -
+weekend midmorning | 0.7 | - | -
+overcast afternoon | 0.75 | - | -
+dusk with porch lights flicking on | 0.55 | - | -
+early evening before dark | 0.6 | - | -
+sunny saturday noon | 0.65 | - | -
+gray weekday after rain | 0.5 | - | -

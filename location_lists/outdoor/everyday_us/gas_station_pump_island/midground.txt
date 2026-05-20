@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+row of fuel pumps under canopy | 1.0 | 0.4-0.8 | scuffed plastic pump housings
+parked pickup truck at pump | 0.7 | 0.3-0.6 | dusty domestic vehicle
+sedan with door open mid-fueling | 0.55 | 0.2-0.5 | sun-faded paint
+air pump and vacuum station | 0.5 | 0.2-0.4 | yellow free-standing unit
+ice freezer chest outside store | 0.6 | 0.2-0.4 | white branded cooler
+propane tank exchange cage | 0.5 | 0.2-0.4 | green metal rack
+windshield squeegee buckets | 0.6 | 0.1-0.3 | grimy black plastic
+overflowing roadside trash can | 0.55 | 0.1-0.3 | dented steel barrel
+parked semi-truck in back corner | 0.4 | 0.3-0.5 | dirty commercial cab
+stained asphalt fueling pad | 0.9 | 0.4-0.8 | oil-blotched dark surface
+delivery truck restocking store | 0.35 | 0.2-0.4 | white box truck
+diesel pump on far island | 0.55 | 0.2-0.4 | larger pump unit

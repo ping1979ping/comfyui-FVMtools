@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+kids meal happy-meal box poster | 0.7 | 0.05-0.15 | glossy printed cardstock
+McCafe sticker on window | 0.7 | 0.05-0.1 | adhesive vinyl decal
+tabletop number stand | 0.85 | 0.05-0.1 | small plastic stake card
+napkin dispenser at booth | 0.85 | 0.05-0.1 | brushed metal flip-top
+straw bin at fountain | 0.85 | 0.05-0.1 | plastic flap dispenser
+lid stack column at drinks | 0.85 | 0.05-0.15 | translucent plastic tower
+QR-code "tell us how we did" card | 0.65 | 0.05-0.1 | small acrylic standee
+high chair stacked nearby | 0.4 | 0.1-0.2 | plastic infant seat
+"caution wet floor" cone | 0.6 | 0.05-0.15 | yellow plastic A-frame
+employee mop on stand | 0.4 | 0.05-0.15 | red plastic bucket
+limited-time promo poster | 0.7 | 0.05-0.15 | branded vinyl banner
+ketchup tray with packets | 0.85 | 0.05-0.15 | paper boat with red packets

@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+beige microfiber sectional sofa | 1.0 | 0.4-0.8 | matted polyester pile
+chunky wood coffee table | 0.85 | 0.2-0.5 | scratched stained-pine top
+TV stand console with shelves | 0.95 | 0.3-0.6 | dark wood-look laminate
+matching beige recliner chair | 0.7 | 0.2-0.4 | worn pleather upholstery
+end table beside sofa | 0.85 | 0.1-0.25 | round-top finished wood
+basket of throw blankets | 0.7 | 0.1-0.25 | sherpa heap in wire bin
+floor lamp with arched neck | 0.6 | 0.1-0.25 | brushed-nickel pole
+ottoman as footrest | 0.65 | 0.1-0.25 | square cushion box
+kids' toy bin in corner | 0.6 | 0.1-0.25 | plastic stacking tote
+gaming console under TV | 0.65 | 0.1-0.25 | matte plastic with cables

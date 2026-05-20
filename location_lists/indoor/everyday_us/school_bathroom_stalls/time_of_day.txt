@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright fluorescent overhead | 1.0 | - | -
+flickering tube light buzz | 0.9 | - | -
+between-class rush brightness | 0.85 | - | -
+lunch break peak use | 0.8 | - | -
+mid-class empty quiet | 0.85 | - | -
+after-school dim half-lit | 0.65 | - | -
+early morning custodian cleaning | 0.55 | - | -
+evening activities low light | 0.5 | - | -
+single tube burned-out dim | 0.6 | - | -
+emergency lights only | 0.3 | - | -

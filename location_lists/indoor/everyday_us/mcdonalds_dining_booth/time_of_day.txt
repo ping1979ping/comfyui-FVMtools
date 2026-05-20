@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright daytime LED interior | 1.0 | - | -
+lunch rush peak fluorescence | 0.95 | - | -
+mid-morning McMuffin crowd light | 0.8 | - | -
+afternoon school-out brightness | 0.85 | - | -
+dinner family-hour glow | 0.85 | - | -
+late-night drive-thru quiet | 0.65 | - | -
+opening early breakfast hum | 0.7 | - | -
+weekend brunch peak | 0.85 | - | -
+holiday-decoration overlay light | 0.55 | - | -
+between-rush half-lit lull | 0.7 | - | -

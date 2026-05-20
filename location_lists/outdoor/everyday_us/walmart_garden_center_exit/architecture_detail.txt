@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+corrugated steel roof over garden center | 0.85 | 0.3-0.6 | painted ribbed sheet metal
+exposed steel structural framing | 0.65 | 0.2-0.4 | painted I-beam columns
+chain-link fence with green wind screen | 0.7 | 0.2-0.5 | woven mesh with vinyl panel
+sun-bleached yellow plastic banner | 0.65 | 0.1-0.3 | faded vinyl sign
+exit gate with chain lock | 0.55 | 0.1-0.3 | gated mesh barrier
+concrete slab floor with control joints | 0.85 | 0.3-0.6 | scuffed concrete pad
+hanging fluorescent shop fixtures | 0.5 | 0.1-0.3 | industrial light tubes
+exterior security camera dome | 0.4 | 0.05-0.15 | small black dome
+weather-stained loading dock door | 0.45 | 0.1-0.3 | painted rollup steel door
+storefront sliding glass exit doors | 0.7 | 0.2-0.4 | smudged glass automatic doors

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+torn black trash bag spilled | 0.75 | 0.1-0.3 | ripped plastic with contents
+cardboard pizza box on ground | 0.55 | 0.05-0.15 | grease-stained brown box
+crushed beer can in gutter | 0.5 | 0.05-0.1 | flattened aluminum can
+broken bottle shards | 0.35 | 0.05-0.1 | scattered glass fragments
+plastic grocery bag snagged on bin | 0.55 | 0.05-0.15 | white plastic bag
+discarded cigarette butt pile | 0.55 | 0.05-0.15 | scattered filters
+greasy stain near dumpster | 0.7 | 0.1-0.3 | dark oily blotch
+crack in pavement with weeds | 0.7 | 0.1-0.3 | scrubby green tufts
+flattened cardboard box | 0.55 | 0.1-0.3 | broken-down brown carton
+small puddle with debris | 0.5 | 0.05-0.15 | murky standing water
+abandoned single shoe | 0.25 | 0.05-0.1 | dirty stray sneaker
+takeout food container | 0.4 | 0.05-0.15 | stained styrofoam clamshell

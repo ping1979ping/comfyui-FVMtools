@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+spilled potting soil on concrete | 0.7 | 0.1-0.3 | scattered dark dirt
+broken plastic plant tag | 0.5 | 0.05-0.1 | snapped white tag
+loose plant pot rolling | 0.45 | 0.05-0.15 | empty black nursery pot
+mulch trail leaking from bag | 0.55 | 0.1-0.2 | scattered bark chips
+broken bag of grass seed | 0.4 | 0.1-0.2 | torn paper bag with spill
+wet concrete from hose drip | 0.55 | 0.1-0.3 | dark damp patch
+yellow caution wet floor cone | 0.4 | 0.05-0.15 | scuffed plastic cone
+trampled cardboard from delivery | 0.5 | 0.1-0.3 | flattened brown cardboard
+flattened cigarette butt | 0.4 | 0.05-0.1 | discarded filter
+abandoned single garden glove | 0.3 | 0.05-0.1 | dirty cloth glove
+yellow painted curb fading | 0.6 | 0.1-0.3 | chipped curb paint
+crack in concrete with weed | 0.55 | 0.05-0.15 | green sprig in seam

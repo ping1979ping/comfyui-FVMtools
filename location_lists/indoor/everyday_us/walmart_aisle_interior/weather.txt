@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+constant HVAC conditioned cool | 0.95 | - | -
+summer aggressive AC chill | 0.85 | - | -
+winter dry heat blowing from vents | 0.75 | - | -
+muggy stuffiness near entrance | 0.6 | - | -
+wet floor from outside rain | 0.6 | - | -
+slush tracked in by carts | 0.5 | - | -
+dry stale recirculated air | 0.8 | - | -
+warm aisle near bakery section | 0.55 | - | -

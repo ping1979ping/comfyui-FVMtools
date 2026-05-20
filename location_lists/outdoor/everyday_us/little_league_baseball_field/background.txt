@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+chain-link backstop fencing | 1.0 | 0.4-0.8 | tall woven steel mesh
+distant outfield fence | 0.85 | 0.3-0.6 | low chain-link with sponsor banners
+green ad banner on outfield fence | 0.6 | 0.2-0.4 | weathered sponsor vinyl
+empty wooden bleachers | 0.9 | 0.3-0.6 | sun-faded plank seating
+park tree line behind field | 0.7 | 0.3-0.6 | scraggly deciduous edge
+distant scoreboard structure | 0.75 | 0.2-0.5 | small panel-faced scoreboard
+parking lot beyond fence | 0.55 | 0.2-0.5 | gravel and asphalt lot
+neighboring practice field | 0.4 | 0.2-0.4 | another diamond in distance
+tan dirt infield expanse | 0.95 | 0.4-0.8 | raked clay-dirt surface
+worn pitcher's mound | 0.85 | 0.1-0.3 | small dirt hill
+faded foul-line painted in grass | 0.75 | 0.2-0.5 | white chalk line
+small concession-stand shack | 0.4 | 0.2-0.4 | painted wood building

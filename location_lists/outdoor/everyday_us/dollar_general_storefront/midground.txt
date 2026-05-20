@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+big yellow sale poster in window | 0.95 | 0.2-0.5 | bright vinyl pricing sign
+window cling for cigarette ads | 0.7 | 0.2-0.4 | static-stuck graphic decal
+ice freezer chest outside door | 0.65 | 0.1-0.3 | branded white freezer
+red soda crate stack outside | 0.7 | 0.1-0.3 | stacked Coca-Cola crates
+beverage display rack outside | 0.55 | 0.1-0.3 | metal wire rack with bottles
+glass storefront entry door | 0.95 | 0.2-0.4 | dirty smudged storefront glass
+plastic bag holding bin entry | 0.5 | 0.05-0.15 | metal bag holder
+small flatbed cart at door | 0.4 | 0.1-0.2 | yellow store cart
+red shopping basket stack | 0.55 | 0.05-0.15 | plastic basket pile
+sandwich-board sale sign | 0.5 | 0.1-0.2 | bright A-frame sign
+parked old sedan at front | 0.5 | 0.2-0.4 | dusty older car
+faded yellow curb at entry | 0.7 | 0.1-0.3 | chipped curb paint

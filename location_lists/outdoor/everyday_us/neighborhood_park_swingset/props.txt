@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+park trash can with bag liner | 0.8 | 0.1-0.3 | dented green metal can
+abandoned plastic bucket | 0.35 | 0.05-0.15 | bright sand-toy bucket
+forgotten kid's jacket on bench | 0.3 | 0.05-0.15 | small bright fabric jacket
+small plastic shovel in chips | 0.4 | 0.05-0.1 | bright sand-toy shovel
+faded park-rules sign | 0.55 | 0.1-0.2 | weathered metal sign
+weathered park map kiosk | 0.35 | 0.1-0.3 | small wooden info stand
+no-dogs sign on fence | 0.45 | 0.05-0.15 | small metal posted sign
+abandoned soccer ball | 0.3 | 0.05-0.1 | dirty deflated ball
+chalk piece left on path | 0.35 | 0.02-0.05 | small pastel nub
+dog poop bag dispenser on post | 0.45 | 0.05-0.15 | green plastic dispenser
+small metal drinking fountain | 0.4 | 0.1-0.2 | scuffed steel hydration unit
+plastic kid's tricycle in grass | 0.25 | 0.1-0.2 | abandoned bright trike

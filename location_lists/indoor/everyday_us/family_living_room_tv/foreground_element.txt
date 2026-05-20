@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+TV remote on coffee table | 1.0 | 0.05-0.1 | smudged black plastic
+crumpled throw blanket on sofa | 0.95 | 0.15-0.3 | rumpled fleece pile
+half-empty water bottle on table | 0.85 | 0.05-0.1 | crinkled plastic bottle
+empty chip bag on couch | 0.7 | 0.05-0.15 | foil snack bag
+slipper kicked off on carpet | 0.7 | 0.05-0.1 | flattened plush slip-on
+sofa cushion askew | 0.85 | 0.15-0.3 | shifted cushion seam
+phone charger snaking across floor | 0.85 | 0.05-0.15 | thin white cable
+half-folded laundry on cushion | 0.7 | 0.15-0.3 | unsorted clothes pile
+empty soda can on side table | 0.7 | 0.02-0.08 | dented aluminum
+remote control battery cover loose | 0.5 | 0.02-0.05 | small black plate

@@ -1,0 +1,12 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear dry blue sky | 0.8 | - | -
+flat gray overcast | 0.8 | - | -
+humid summer haze | 0.65 | - | -
+light drizzle on sidewalk | 0.5 | - | -
+crisp autumn air | 0.55 | - | -
+post-mower dust hanging | 0.4 | - | -
+muggy heat shimmer | 0.5 | - | -
+slush-melt afternoon | 0.35 | - | -
+dirty winter overcast | 0.5 | - | -

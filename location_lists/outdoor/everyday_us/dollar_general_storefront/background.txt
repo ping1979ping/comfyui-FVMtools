@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+yellow Dollar General storefront facade | 1.0 | 0.5-1.0 | yellow stucco with black band
+black-and-yellow Dollar General sign | 0.95 | 0.2-0.5 | branded channel letters
+small strip mall context | 0.55 | 0.3-0.6 | adjacent low retail
+adjacent vape shop storefront | 0.4 | 0.2-0.4 | bright-lit small shop
+laundromat next door | 0.4 | 0.2-0.4 | glass-front store with dryers visible
+gravel-edged parking lot | 0.8 | 0.4-0.8 | asphalt with crumbling edges
+quiet rural state route | 0.55 | 0.2-0.5 | two-lane road past lot
+distant tree line beyond lot | 0.55 | 0.2-0.5 | scraggly woodland edge
+sun-faded pylon sign at street | 0.7 | 0.2-0.4 | tall plastic price sign
+small fenced propane cage | 0.5 | 0.1-0.3 | green metal storage cage
+ATM kiosk near entry | 0.4 | 0.1-0.3 | small standalone kiosk
+adjacent vacant retail unit | 0.4 | 0.2-0.4 | papered-over windows

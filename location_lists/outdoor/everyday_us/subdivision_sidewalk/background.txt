@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+row of identical two-story homes | 0.95 | 0.5-1.0 | beige vinyl-siding houses
+cookie-cutter ranch homes | 0.7 | 0.4-0.8 | uniform low-profile dwellings
+two-car attached garage row | 0.85 | 0.3-0.6 | white paneled garage doors
+manicured front lawn strips | 0.95 | 0.3-0.6 | uniform short grass
+distant cul-de-sac dead end | 0.55 | 0.2-0.5 | curved residential terminus
+HOA-trimmed boxwood hedges | 0.6 | 0.2-0.5 | uniform clipped shrubs
+identical young driveway trees | 0.65 | 0.2-0.4 | thin staked saplings
+white vinyl picket-style fences | 0.4 | 0.2-0.4 | low decorative fencing
+asphalt subdivision road | 0.9 | 0.4-0.8 | smooth gray pavement
+neighbor American flag on porch | 0.5 | 0.1-0.3 | small mounted flag
+overhead utility wires absent buried | 0.55 | 0.2-0.4 | clean sky lines
+HOA development entry stone monument distant | 0.35 | 0.2-0.4 | landscaped stone sign

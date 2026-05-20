@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright fluorescent overhead | 1.0 | - | -
+between-class fluorescent buzz | 0.95 | - | -
+early morning before bell | 0.85 | - | -
+mid-morning hallway lull | 0.8 | - | -
+lunch period emptiness | 0.7 | - | -
+afternoon last-period light | 0.8 | - | -
+after-school dim half-lit | 0.65 | - | -
+evening practice hours lighting | 0.5 | - | -
+flickering tube buzz | 0.6 | - | -
+emergency lights only | 0.3 | - | -

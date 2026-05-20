@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+faded white parking line stripe | 0.9 | 0.1-0.4 | scuffed lane paint
+crack in asphalt with patched tar | 0.8 | 0.1-0.3 | black sealant line
+discarded CVS receipt | 0.55 | 0.05-0.1 | crumpled long paper strip
+flattened red plastic straw | 0.4 | 0.05-0.1 | crushed straw
+abandoned single shopping cart | 0.55 | 0.1-0.3 | red plastic basket cart
+yellow speed bump painted | 0.5 | 0.1-0.3 | scuffed yellow strip
+storm drain grate at curb | 0.6 | 0.05-0.15 | rusty steel grating
+small puddle in lot dip | 0.45 | 0.05-0.15 | shallow muddy water
+broken sunglasses frame | 0.3 | 0.05-0.1 | snapped black plastic
+yellow paint line for cart return | 0.5 | 0.1-0.3 | painted lot marking
+fast food bag blown to curb | 0.5 | 0.05-0.15 | crumpled paper sack
+small weed clump in curb seam | 0.55 | 0.05-0.15 | scrubby green shoots

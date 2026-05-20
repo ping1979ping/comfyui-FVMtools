@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bulletin board with paper flyers | 0.9 | 0.3-0.6 | thumb-tacked cork
+locker bench bolted to floor | 0.7 | 0.2-0.5 | scratched wood slat
+trash can next to lockers | 0.75 | 0.1-0.3 | dented grey plastic
+drinking fountain wall unit | 0.7 | 0.2-0.4 | stainless steel basin
+classroom doorway with window | 0.8 | 0.3-0.6 | wired safety glass pane
+hall pass sign-out clipboard | 0.5 | 0.1-0.3 | hanging metal clip
+hallway intersection turn | 0.6 | 0.3-0.6 | open perspective
+recycling bin beside trash | 0.6 | 0.1-0.3 | blue plastic with sticker
+display case of dusty trophies | 0.55 | 0.3-0.6 | tarnished plate engravings
+janitor's mop bucket left out | 0.5 | 0.1-0.3 | yellow plastic with wringer

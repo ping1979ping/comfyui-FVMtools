@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+red vinyl booth seating row | 1.0 | 0.5-0.9 | cracked-seam red upholstery
+yellow accent wall behind booths | 0.85 | 0.4-0.8 | bright painted backdrop
+McDonald's branded wall mural | 0.75 | 0.4-0.8 | printed photo-vinyl
+self-order kiosk row backdrop | 0.7 | 0.3-0.6 | tall black touchscreens
+drink fountain counter wall | 0.85 | 0.3-0.6 | stainless beverage station
+counter pickup window glow | 0.75 | 0.3-0.6 | backlit menu over counter
+brick veneer accent wall | 0.5 | 0.4-0.7 | reddish thin-brick face
+patterned wallpaper feature | 0.55 | 0.4-0.8 | abstract printed vinyl
+playplace window divider | 0.4 | 0.3-0.6 | glass panel into kids area
+exit corridor with vestibule | 0.5 | 0.3-0.6 | tile-floor double doors

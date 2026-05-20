@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+row of matching upholstered chairs | 1.0 | 0.4-0.8 | tweed-fabric office seating
+side table between chairs | 0.95 | 0.1-0.25 | laminate round end table
+magazine rack on wall | 0.7 | 0.1-0.25 | wire pocket display
+water cooler in corner | 0.85 | 0.1-0.3 | blue-bottle dispenser
+reception counter ahead | 0.85 | 0.3-0.6 | beige laminate L-shape
+clipboard on counter for sign-in | 0.85 | 0.05-0.15 | hanging metal clipboard
+TV on wall mute | 0.7 | 0.1-0.25 | small flat-screen at angle
+kids' table with toys | 0.6 | 0.2-0.4 | low laminate kid-height table
+brochure rack on wall | 0.7 | 0.1-0.25 | clear acrylic pocket holder
+loveseat against far wall | 0.55 | 0.2-0.4 | small two-seat couch

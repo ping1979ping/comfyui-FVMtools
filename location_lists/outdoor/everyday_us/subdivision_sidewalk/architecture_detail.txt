@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+beige vinyl horizontal siding panels | 0.9 | 0.3-0.6 | scuffed lap siding
+gabled roofline with asphalt shingles | 0.75 | 0.2-0.5 | uniform gray shingles
+brick veneer water table | 0.55 | 0.1-0.3 | red masonry with mortar
+white painted window trim | 0.75 | 0.1-0.3 | clean vinyl casing
+attached two-car garage door | 0.85 | 0.2-0.4 | white steel sectional door
+front porch column with stone wrap | 0.45 | 0.1-0.3 | manufactured stone veneer
+HVAC condenser unit at house side | 0.55 | 0.1-0.3 | small beige metal unit
+hose bib on house exterior | 0.4 | 0.05-0.15 | brass spigot on siding
+exterior outlet cover painted | 0.45 | 0.05-0.1 | small plastic flip cover
+small front porch sconce | 0.5 | 0.05-0.15 | wall lantern fixture

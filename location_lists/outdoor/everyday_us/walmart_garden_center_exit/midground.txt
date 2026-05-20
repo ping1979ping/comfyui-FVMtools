@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+stacked pallets of bagged mulch | 0.95 | 0.3-0.6 | shrink-wrapped pallet stacks
+piles of bagged topsoil and compost | 0.85 | 0.3-0.6 | rows of plastic-bagged dirt
+display of plastic garden hoses | 0.6 | 0.2-0.4 | coiled green and orange hoses
+rack of clay terra-cotta pots | 0.55 | 0.2-0.4 | dusty stacked pottery
+wilted bedding plant flats | 0.7 | 0.2-0.4 | leggy annuals in black trays
+faded yellow sale flags strung overhead | 0.7 | 0.2-0.5 | sun-bleached pennant string
+metal shelving with grass seed bags | 0.55 | 0.2-0.4 | wire racks with bagged product
+plastic patio chair display | 0.5 | 0.2-0.4 | resin stackable chairs
+small shrubs in plastic pots | 0.6 | 0.2-0.4 | one-gallon nursery containers
+yellow concrete bollards at exit | 0.7 | 0.1-0.3 | scuffed painted bollards
+shopping cart return corral | 0.7 | 0.1-0.3 | bent steel cart cage
+hose hookup station with reel | 0.4 | 0.1-0.2 | rusted metal hose station

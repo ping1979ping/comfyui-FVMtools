@@ -1,0 +1,11 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+constant HVAC retail cool | 0.95 | - | -
+summer aggressive AC chill | 0.85 | - | -
+winter dry heat blowing | 0.7 | - | -
+muggy stuffiness near entrance | 0.55 | - | -
+wet entrance tile from rain | 0.6 | - | -
+slush tracked in from outside | 0.5 | - | -
+dry recirculated air | 0.85 | - | -
+warm summer entrance gust | 0.5 | - | -

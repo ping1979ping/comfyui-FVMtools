@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+empty blue shopping cart in aisle | 0.85 | 0.15-0.3 | wire mesh with plastic seat
+abandoned cart with one item | 0.6 | 0.1-0.25 | half-loaded carrier
+floor restocking pallet jack | 0.5 | 0.1-0.3 | yellow forks on pallet
+price scanner pole midway | 0.85 | 0.1-0.2 | red kiosk on column
+cross aisle perpendicular row | 0.8 | 0.3-0.6 | opening into next section
+warehouse-style high ceiling reveal | 0.7 | 0.3-0.6 | open metal trusses
+clearance bin island | 0.65 | 0.2-0.4 | wire dump bin
+restocking cart half-loaded | 0.55 | 0.1-0.3 | rolling shelf cart
+ladder leaning on shelf | 0.45 | 0.1-0.25 | yellow rolling step
+black floor-marker arrow | 0.5 | 0.05-0.15 | painted directional decal

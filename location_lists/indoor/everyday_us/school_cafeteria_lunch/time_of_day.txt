@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+fluorescent overhead at full | 1.0 | - | -
+peak lunch-period brightness | 0.95 | - | -
+mid-morning before lunch | 0.7 | - | -
+between-lunch-wave lull | 0.8 | - | -
+early-bird breakfast service | 0.65 | - | -
+late lunch shift quiet | 0.7 | - | -
+after-school empty hall | 0.55 | - | -
+evening event setup lighting | 0.45 | - | -
+flickering fluorescent buzz | 0.6 | - | -
+half-lit cleanup hour | 0.5 | - | -

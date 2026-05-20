@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+massive blue Walmart big-box facade | 0.95 | 0.5-1.0 | beige stucco with blue band
+chain-link garden center enclosure | 0.85 | 0.4-0.8 | tall steel mesh fencing
+distant Walmart name lettering | 0.75 | 0.2-0.5 | mounted channel letters
+adjacent expansive parking lot | 0.85 | 0.4-0.8 | sea of cracked asphalt
+McDonald's sign in far distance | 0.45 | 0.1-0.3 | yellow corporate pylon
+highway overpass behind store | 0.4 | 0.2-0.4 | concrete elevated road
+overflow trailer storage lot | 0.5 | 0.2-0.5 | parked semi-trailers
+wholesale club next door | 0.4 | 0.2-0.5 | adjacent warehouse retail
+flat-roofed loading dock area | 0.55 | 0.2-0.4 | concrete dock with bays
+faded billboard for local realtor | 0.4 | 0.1-0.3 | weathered vinyl print
+sparse landscape mulch beds | 0.6 | 0.2-0.4 | dyed mulch with bare spots
+rusted shopping cart return rack | 0.7 | 0.2-0.4 | bent steel cart corral

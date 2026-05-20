@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+suburban two-story vinyl-sided house | 0.85 | 0.4-0.8 | beige vinyl cladding
+ranch home with attached garage | 0.7 | 0.4-0.8 | low-slung suburban dwelling
+neighboring split-level home | 0.6 | 0.3-0.6 | mixed siding facade
+quiet residential street | 0.9 | 0.4-0.8 | gray asphalt road
+mature front yard trees | 0.75 | 0.3-0.6 | overhanging deciduous branches
+chain-link side yard fence | 0.55 | 0.2-0.5 | woven steel mesh
+distant cul-de-sac curve | 0.5 | 0.2-0.5 | curving residential road
+neighbor mowed lawn | 0.85 | 0.3-0.6 | manicured suburban grass
+overhead utility pole row | 0.75 | 0.2-0.4 | wooden poles with wires
+empty driveway with basketball hoop | 0.55 | 0.2-0.4 | concrete drive with pole hoop
+detached garage at rear | 0.45 | 0.2-0.4 | small outbuilding
+bushes along property line | 0.6 | 0.2-0.4 | trimmed boxwood hedge

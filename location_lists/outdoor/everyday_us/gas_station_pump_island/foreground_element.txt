@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+fuel pump nozzle in holster | 0.85 | 0.1-0.3 | grimy black rubber grip
+yellow concrete bollard at pump base | 0.75 | 0.1-0.3 | scuffed painted concrete
+oil stain on asphalt | 0.85 | 0.1-0.3 | dark blotch on pavement
+discarded receipt on ground | 0.6 | 0.05-0.15 | crumpled white paper
+flattened soda can | 0.5 | 0.05-0.1 | crushed aluminum
+cigarette butt pile near trash can | 0.55 | 0.05-0.15 | scattered filters
+windshield wiper fluid jug | 0.4 | 0.05-0.15 | blue plastic gallon
+chunk of busted curb | 0.45 | 0.1-0.2 | broken concrete edge
+yellow painted parking line faded | 0.7 | 0.1-0.3 | scuffed lane marker
+puddle near drain grate | 0.5 | 0.1-0.3 | iridescent oily water
+empty plastic water bottle | 0.5 | 0.05-0.1 | crushed PET
+small weed in pavement crack | 0.55 | 0.05-0.15 | scrubby green sprig

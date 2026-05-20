@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+discarded mattress against bin | 0.4 | 0.1-0.3 | stained foam mattress
+broken IKEA-style flat-pack chair | 0.35 | 0.1-0.2 | snapped particleboard pieces
+abandoned office chair on its side | 0.35 | 0.1-0.2 | tipped wheeled chair
+busted plastic toter lid | 0.5 | 0.05-0.15 | cracked plastic cover
+overstuffed black trash bag | 0.7 | 0.1-0.3 | bulging garbage sack
+broken-down moving box pile | 0.5 | 0.1-0.3 | flattened cardboard stack
+bicycle frame missing wheels | 0.3 | 0.1-0.2 | rusted stripped bike
+yellow no-parking sign on wall | 0.4 | 0.05-0.15 | metal post sign
+worn rubber-tire wheel chock | 0.35 | 0.05-0.1 | weathered black rubber
+broken bedside lamp discarded | 0.3 | 0.05-0.15 | bent shade with cord
+empty propane grill tank | 0.35 | 0.05-0.15 | dented metal cylinder
+cluster of bagged kitchen trash | 0.7 | 0.1-0.3 | tied white kitchen bags

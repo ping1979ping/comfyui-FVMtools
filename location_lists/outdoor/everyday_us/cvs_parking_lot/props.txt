@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+red CVS plastic shopping cart | 0.7 | 0.1-0.3 | branded plastic basket
+prescription pickup paper bag | 0.4 | 0.05-0.15 | white paper bag with stapled top
+yellow ADA parking sign on post | 0.7 | 0.05-0.15 | reflective blue and white
+no parking fire lane sign | 0.55 | 0.05-0.15 | red and white metal sign
+plastic newspaper box | 0.45 | 0.05-0.15 | weathered orange box
+red painted bollard at entry | 0.55 | 0.1-0.2 | scuffed steel post
+trash can outside doors | 0.7 | 0.05-0.15 | dented black plastic
+seasonal sale sandwich-board sign | 0.4 | 0.05-0.15 | faded plastic A-frame
+discarded CVS minute clinic flyer | 0.4 | 0.05-0.1 | crumpled card stock
+yellow concrete curb stop block | 0.7 | 0.05-0.15 | scuffed painted concrete
+abandoned coffee cup with straw | 0.45 | 0.05-0.1 | crushed plastic tumbler
+red and white ATM mounted at entrance | 0.3 | 0.05-0.15 | branded outdoor kiosk

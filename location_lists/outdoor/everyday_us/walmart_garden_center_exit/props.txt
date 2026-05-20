@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+flatbed cart with handle | 0.65 | 0.1-0.3 | orange Walmart flat cart
+blue plastic shopping cart | 0.75 | 0.1-0.3 | branded Walmart cart
+sale sign on metal stake | 0.55 | 0.05-0.15 | bright yellow signboard
+plastic tarp covering pallet | 0.45 | 0.1-0.3 | blue tarp with bungees
+empty wooden delivery pallet | 0.6 | 0.1-0.3 | scuffed wooden pallet
+broken display rack | 0.35 | 0.1-0.2 | bent wire shelving
+clearance tag on plant flat | 0.45 | 0.05-0.1 | bright yellow sticker
+hose nozzle hanging from rack | 0.35 | 0.05-0.1 | dirty brass sprayer
+faded plant care info sign | 0.45 | 0.05-0.15 | weathered laminated card
+gallon watering can in display | 0.35 | 0.05-0.15 | green plastic can
+stack of red brick paver samples | 0.3 | 0.1-0.2 | clay paver display
+pile of bagged charcoal | 0.4 | 0.1-0.2 | black-printed paper bags

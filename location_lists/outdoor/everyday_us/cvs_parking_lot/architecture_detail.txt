@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+red plastic CVS channel letters | 0.85 | 0.2-0.4 | branded illuminated lettering
+stucco-clad facade with control joints | 0.75 | 0.3-0.6 | textured paint coating
+rooftop HVAC unit visible | 0.55 | 0.1-0.3 | rusted metal box
+sun-faded sale banner over door | 0.6 | 0.1-0.3 | weathered vinyl print
+storefront aluminum window frames | 0.7 | 0.2-0.4 | painted dark aluminum
+overhead branded entry awning | 0.55 | 0.1-0.3 | red metal canopy
+window cling for flu shots | 0.55 | 0.1-0.2 | static-stuck plastic sign
+rooftop downspout running to lot | 0.55 | 0.1-0.3 | painted metal drain pipe
+parking lot light pole with banner | 0.5 | 0.1-0.3 | tall steel post
+fire-lane curb painted red | 0.6 | 0.1-0.3 | faded curb paint

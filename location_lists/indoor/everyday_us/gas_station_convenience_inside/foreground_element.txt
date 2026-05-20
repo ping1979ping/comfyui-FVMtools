@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+scratch-off lottery ticket on floor | 0.7 | 0.05-0.1 | discarded scratched paper
+crumpled receipt by counter | 0.85 | 0.05-0.1 | thermal-print register slip
+spilled coffee drip pool | 0.7 | 0.05-0.1 | brown drying stain
+chip bag tear on display | 0.55 | 0.02-0.08 | foil-lined snack bag
+plastic stir-stick on counter | 0.7 | 0.02-0.05 | thin black thermoplastic
+empty soda cup left on counter | 0.7 | 0.05-0.15 | branded waxed paper cup
+crumpled napkin near hot dogs | 0.7 | 0.05-0.1 | wadded thin paper
+penny on tile floor | 0.4 | 0.01-0.03 | dirty copper coin
+gum wrapper on tile | 0.5 | 0.02-0.05 | shiny foil bit
+"do not enter" cone | 0.4 | 0.05-0.15 | orange plastic A-frame

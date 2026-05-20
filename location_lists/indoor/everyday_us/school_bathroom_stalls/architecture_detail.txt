@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+fluorescent tube light buzzing | 1.0 | 0.2-0.4 | flickering plastic diffuser
+drop ceiling with water-stained tile | 1.0 | 0.3-0.6 | mottled acoustic squares
+small ceramic floor tile | 1.0 | 0.4-0.8 | yellowed grout lines
+cracked grout between tiles | 0.85 | 0.3-0.6 | dirty mortar veins
+floor drain center of room | 0.75 | 0.05-0.1 | rusted grate cover
+mirror with chipped corner | 0.7 | 0.2-0.4 | silver-flaked glass
+exposed plumbing under sink | 0.7 | 0.1-0.25 | chrome P-trap
+sprinkler head from ceiling | 0.5 | 0.02-0.08 | brass nozzle
+exhaust fan vent in ceiling | 0.7 | 0.05-0.15 | dusty louvered grate
+metal stall divider feet bolted | 0.85 | 0.1-0.25 | chrome floor anchors

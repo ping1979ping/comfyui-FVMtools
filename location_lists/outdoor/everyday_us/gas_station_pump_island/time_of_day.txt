@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+harsh midday overhead sun | 0.9 | - | -
+late afternoon flat light | 0.85 | - | -
+overcast gray noon | 0.8 | - | -
+early morning before commute | 0.6 | - | -
+dusk with canopy lights on | 0.7 | - | -
+nighttime with humming fluorescents | 0.65 | - | -
+golden hour on asphalt | 0.5 | - | -
+post-rain gray late afternoon | 0.55 | - | -
+hazy summer noon | 0.7 | - | -

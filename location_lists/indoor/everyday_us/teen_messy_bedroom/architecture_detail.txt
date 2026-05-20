@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+beige builder-grade carpet | 1.0 | 0.4-0.8 | matted low-pile loop
+popcorn ceiling overhead | 0.85 | 0.3-0.6 | bumpy spray-textured plaster
+ceiling fan with dusty blades | 0.7 | 0.1-0.25 | grey-dust coated paddles
+window blinds bent slightly | 0.75 | 0.2-0.5 | white vinyl horizontal slats
+crooked outlet plate on wall | 0.55 | 0.02-0.05 | off-white plastic
+hollow-core slab bedroom door | 0.7 | 0.2-0.4 | white painted thin slab
+baseboard with carpet shadow | 0.85 | 0.1-0.25 | painted MDF trim
+forced-air vent on floor | 0.7 | 0.05-0.1 | beige plastic register
+closet bifold louvered doors | 0.65 | 0.3-0.6 | white painted slats
+single light-switch dimmer plate | 0.55 | 0.02-0.05 | beige plastic switch

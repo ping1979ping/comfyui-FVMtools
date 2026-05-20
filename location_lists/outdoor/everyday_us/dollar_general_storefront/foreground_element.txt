@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+cracked sidewalk slab at entry | 0.95 | 0.2-0.5 | weather-cracked concrete
+weeds in sidewalk crack | 0.8 | 0.1-0.3 | scrubby green sprouts
+discarded receipt strip | 0.5 | 0.05-0.1 | crumpled long paper
+crushed energy drink can | 0.45 | 0.05-0.1 | flattened aluminum
+flattened plastic bottle | 0.45 | 0.05-0.1 | crushed PET
+cigarette butt cluster near door | 0.7 | 0.05-0.15 | scattered filter ends
+scattered receipts in gutter | 0.4 | 0.05-0.15 | wind-blown paper strips
+faded yellow curb paint chip | 0.6 | 0.05-0.15 | flaking paint
+stained concrete at door threshold | 0.65 | 0.05-0.15 | dark scuff marks
+gum spots ground into walk | 0.6 | 0.05-0.1 | small dark blobs
+single penny on the ground | 0.3 | 0.02-0.05 | small copper coin
+abandoned shopping receipt clipboard | 0.25 | 0.05-0.1 | broken plastic clipboard

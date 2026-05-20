@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright daytime LED retail | 1.0 | - | -
+weekday-morning quiet brightness | 0.85 | - | -
+midday weekend crowded light | 0.85 | - | -
+afternoon-school-out shopping | 0.85 | - | -
+evening after-work peak | 0.85 | - | -
+late-night closing-hour dim | 0.6 | - | -
+opening-hour empty aisle | 0.7 | - | -
+holiday-shopping bright | 0.7 | - | -
+slow-Tuesday mid-afternoon | 0.85 | - | -
+just-before-close half-lit | 0.55 | - | -

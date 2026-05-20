@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+scuffed dirt with cleat marks | 0.85 | 0.2-0.4 | packed clay with imprints
+discarded sunflower seed shells | 0.65 | 0.05-0.15 | scattered seed husks
+empty Gatorade bottle in dirt | 0.45 | 0.05-0.15 | crushed sports drink bottle
+forgotten batting glove | 0.4 | 0.05-0.15 | dirty leather glove
+small dirt clod on grass edge | 0.5 | 0.05-0.15 | broken clay chunk
+chalk scuff mark on grass | 0.55 | 0.1-0.3 | smudged white chalk
+flattened paper concession cup | 0.4 | 0.05-0.1 | crushed paper cup
+torn ticket stub on bleacher | 0.3 | 0.05-0.1 | small paper scrap
+abandoned baseball in grass | 0.45 | 0.05-0.1 | scuffed dirty ball
+puddle in dugout corner | 0.4 | 0.1-0.2 | muddy standing water
+weed clump along fence base | 0.65 | 0.1-0.3 | tangled green growth
+broken plastic helmet shard | 0.25 | 0.05-0.1 | cracked plastic piece

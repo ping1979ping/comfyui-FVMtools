@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+red Target bullseye sign | 1.0 | 0.05-0.15 | branded circle decal
+"final sale" rack-topper sign | 0.85 | 0.05-0.15 | red printed cardstock
+"now $5" price flag | 0.85 | 0.05-0.1 | bright vinyl shelf tag
+fitting-room number tag | 0.65 | 0.02-0.05 | red plastic disc
+Stanley-cup endcap display | 0.55 | 0.1-0.25 | branded promo pyramid
+mirror with smudge fingerprints | 0.7 | 0.1-0.25 | streaked silvered glass
+mannequin with bare torso | 0.6 | 0.1-0.25 | beige fiberglass form
+clearance "70% off" round sticker | 0.85 | 0.02-0.08 | yellow adhesive dot
+size acrylic round disk | 0.85 | 0.02-0.05 | clear plastic spacer
+fitting-room "X items max" sign | 0.6 | 0.05-0.1 | small printed plate
+Circle rewards QR code stand | 0.55 | 0.05-0.1 | small acrylic standee
+hanging shoulder-strap purse | 0.6 | 0.05-0.15 | nylon strap loop

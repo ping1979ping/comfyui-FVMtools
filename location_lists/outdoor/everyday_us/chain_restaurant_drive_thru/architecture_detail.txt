@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+EIFS stucco facade panels | 0.85 | 0.3-0.6 | painted synthetic stucco
+brand-color metal awning band | 0.85 | 0.2-0.4 | painted parapet trim
+exposed conduit on facade | 0.55 | 0.05-0.15 | gray painted PVC
+exterior speaker housing weathered | 0.75 | 0.1-0.3 | dirty plastic speaker box
+rooftop HVAC unit visible | 0.55 | 0.1-0.3 | gray metal rooftop box
+illuminated drive-thru lane sign | 0.85 | 0.1-0.3 | branded directional sign
+faded plastic menu panel face | 0.75 | 0.2-0.4 | sun-bleached lightbox face
+clearance bar with hanging chains | 0.5 | 0.05-0.15 | metal warning bar
+window service window with sill | 0.65 | 0.1-0.3 | small payment window
+chipped brick veneer along base | 0.4 | 0.1-0.3 | red weathered masonry

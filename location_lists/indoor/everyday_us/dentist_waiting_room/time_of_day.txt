@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright fluorescent overhead | 1.0 | - | -
+weekday-morning office light | 0.95 | - | -
+mid-morning waiting-room lull | 0.85 | - | -
+lunch-hour empty quiet | 0.75 | - | -
+afternoon after-school crowd | 0.85 | - | -
+late-afternoon last-appointment | 0.7 | - | -
+opening-hour first-patient calm | 0.7 | - | -
+closing-hour half-lit | 0.55 | - | -
+overcast-window-only dim | 0.65 | - | -
+single tube buzzing softly | 0.55 | - | -

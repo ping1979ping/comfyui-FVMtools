@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+corrugated metal canopy underside | 0.85 | 0.3-0.6 | painted white sheet metal
+fluorescent canopy light strips | 0.8 | 0.2-0.4 | recessed tube fixtures
+steel canopy support columns | 0.85 | 0.2-0.5 | painted square posts
+sun-bleached price sign panels | 0.7 | 0.1-0.3 | yellowed plastic backlit
+weathered store entry awning | 0.55 | 0.2-0.4 | metal canopy with branding
+exposed conduit on store wall | 0.5 | 0.1-0.3 | gray PVC piping
+graffiti-scratched glass door | 0.4 | 0.1-0.3 | etched storefront glass
+no smoking warning decal | 0.65 | 0.05-0.15 | red faded vinyl sticker
+emergency shut-off red button | 0.5 | 0.05-0.1 | recessed safety control
+roof-mounted ATM sign | 0.45 | 0.1-0.2 | small lit corporate logo

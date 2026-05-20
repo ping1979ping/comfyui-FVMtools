@@ -1,0 +1,12 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+midday flat sun | 0.85 | - | -
+late afternoon long shadows | 0.85 | - | -
+weekday morning empty | 0.75 | - | -
+overcast gray afternoon | 0.8 | - | -
+golden hour low light | 0.7 | - | -
+dusk before dark | 0.65 | - | -
+quiet school-day afternoon | 0.7 | - | -
+post-rain damp morning | 0.55 | - | -
+weekend midmorning | 0.6 | - | -

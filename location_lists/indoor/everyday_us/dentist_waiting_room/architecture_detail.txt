@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+industrial low-pile commercial carpet | 1.0 | 0.4-0.8 | speckled grey loop
+drop ceiling with acoustic tiles | 1.0 | 0.3-0.6 | white square panels
+recessed fluorescent troffer lighting | 1.0 | 0.2-0.5 | flush ceiling fixture
+white painted MDF baseboard | 0.85 | 0.1-0.25 | scuffed trim along carpet
+HVAC vent in ceiling tile | 0.85 | 0.05-0.15 | aluminum louver
+thermostat plate on wall | 0.7 | 0.02-0.05 | white plastic touchscreen
+sprinkler head from ceiling | 0.6 | 0.02-0.05 | brass nozzle
+emergency exit sign red glow | 0.7 | 0.05-0.1 | illuminated plastic sign
+sliding glass receptionist window | 0.85 | 0.1-0.25 | small framed pass-through
+solid-core swinging treatment door | 0.6 | 0.1-0.25 | painted slab with hardware
