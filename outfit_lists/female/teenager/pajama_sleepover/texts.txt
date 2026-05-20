@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BFFS FOREVER" | 0.30 | top | bubble script
+"SLEEPOVER" | 0.25 | top | bubble script
+"DREAM" | 0.25 | top | soft script
+"BFF" | 0.25 | top | bubble script
+"SLUMBER PARTY" | 0.20 | top,outerwear | bubble script
+"GIRLS NIGHT" | 0.20 | top,outerwear | bubble script
+"SQUAD" | 0.20 | top | varsity block
+"SHHH SLEEPING" | 0.20 | top | soft script
+"GOOD NIGHT" | 0.20 | top | soft script
+"NAP QUEEN" | 0.20 | top | bubble script
+"COZY" | 0.20 | top | soft script
+"XOXO" | 0.20 | top | bubble script

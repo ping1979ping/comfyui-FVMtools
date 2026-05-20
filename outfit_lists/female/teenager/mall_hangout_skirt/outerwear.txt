@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# oversized cardigan | 0.85 | 0.0-0.3 | cotton,acrylic
+#color# cropped zip hoodie | 0.80 | 0.0-0.3 | cotton,fleece
+#color# fitted denim jacket | 0.75 | 0.0-0.3 | denim
+#color# oversized boyfriend sweater | 0.75 | 0.0-0.3 | acrylic,wool
+#color# bomber jacket | 0.65 | 0.0-0.3 | nylon,polyester
+#color# leather moto jacket | 0.55 | 0.0-0.3 | leather
+#color# faux-fur jacket | 0.45 | 0.0-0.3 | acrylic
+#color# baggy oversized hoodie | 0.80 | 0.0-0.3 | cotton,fleece
+#color# tied-waist flannel | 0.60 | 0.0-0.3 | cotton,wool

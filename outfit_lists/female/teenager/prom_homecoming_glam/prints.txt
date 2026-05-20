@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid jewel-tone | 0.85 | top,bottom | 0.4-0.7
+sequin allover sparkle | 0.80 | top | 0.4-0.7
+metallic foil shimmer | 0.65 | top | 0.4-0.7
+beaded accent panel | 0.55 | top | 0.4-0.7
+delicate lace overlay | 0.65 | top,outerwear | 0.4-0.7
+crystal-embellished trim | 0.55 | top | 0.4-0.7
+two-tone ombre | 0.55 | top | 0.4-0.7
+floral applique | 0.50 | top | 0.4-0.7
+satin sheen finish | 0.75 | top,bottom | 0.4-0.7
+soft pastel tone | 0.65 | top | 0.4-0.7
+classic black-tie | 0.60 | top,outerwear | 0.4-0.7

@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+statement chandelier earrings | 0.85 | 0.4-0.7 | metal
+rhinestone tennis bracelet | 0.75 | 0.4-0.7 | metal
+crystal pendant necklace | 0.70 | 0.4-0.7 | metal
+delicate layered necklace | 0.65 | 0.4-0.7 | metal
+sparkle hair clips | 0.65 | 0.4-0.7 | metal
+corsage bracelet | 0.75 | 0.4-0.7 | satin
+elbow-length satin gloves | 0.35 | 0.4-0.7 | satin
+glittery body shimmer | 0.45 | 0.4-0.7 | plastic
+cocktail ring | 0.60 | 0.4-0.7 | metal
+ankle bracelet | 0.45 | 0.4-0.7 | metal
+matching stud earrings | 0.55 | 0.4-0.7 | metal
+crystal hair pin set | 0.60 | 0.4-0.7 | metal

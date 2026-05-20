@@ -1,0 +1,11 @@
+# format: text_content | probability | compatible_slots | font_hint
+"PE" | 0.25 | top | bold block letters
+"WILSON PHYS ED" | 0.20 | top,outerwear | varsity block
+"GYM CLASS" | 0.20 | top | bold block letters
+"TRAIN" | 0.20 | top | bold block letters
+"WEST HIGH ATHLETICS" | 0.20 | outerwear | varsity block
+"TEAM" | 0.20 | top | varsity block
+"WILDCATS" | 0.20 | top,outerwear | varsity block
+"MOVE" | 0.15 | top | bold block letters
+"STRONG" | 0.15 | top | bold script
+"VARSITY" | 0.20 | outerwear | varsity block

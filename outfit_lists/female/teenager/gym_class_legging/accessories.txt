@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sport scrunchie | 0.90 | 0.0-0.2 | nylon
+sweat wristband | 0.55 | 0.0-0.2 | cotton
+fitness tracker | 0.65 | 0.0-0.2 | plastic
+small stud earrings | 0.40 | 0.0-0.2 | metal
+hair elastic stack | 0.70 | 0.0-0.2 | nylon
+gym water bottle | 0.80 | 0.0-0.2 | plastic
+silicone phone strap | 0.45 | 0.0-0.2 | plastic
+friendship bracelet | 0.55 | 0.0-0.2 | cotton
+sports headphones | 0.50 | 0.0-0.2 | plastic
+hair claw clip | 0.50 | 0.0-0.2 | plastic
+small finger ring | 0.35 | 0.0-0.2 | metal

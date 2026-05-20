@@ -1,0 +1,14 @@
+# format: fabric_name | formality | family | weight
+spandex | 0.1 | sporty | light
+nylon | 0.1 | sporty | light
+polyester | 0.15 | sporty | light
+cotton | 0.15 | natural | medium
+linen | 0.25 | natural | light
+mesh | 0.1 | sporty | light
+canvas | 0.15 | casual | medium
+denim | 0.2 | casual | medium
+chiffon | 0.3 | luxury | light
+leather | 0.4 | luxury | medium
+rubber | 0.1 | casual | medium
+plastic | 0.1 | casual | light
+metal | 0.5 | luxury | heavy

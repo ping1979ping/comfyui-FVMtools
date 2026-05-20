@@ -1,0 +1,12 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# cropped cardigan | 0.85 | 0.0-0.3 | cotton,acrylic
+#color# school zip hoodie | 0.80 | 0.0-0.3 | cotton,fleece
+#color# button-up cardigan | 0.70 | 0.0-0.3 | cotton,acrylic
+#color# oversized crewneck sweatshirt | 0.75 | 0.0-0.3 | cotton,fleece
+#color# bomber jacket | 0.55 | 0.0-0.3 | nylon,polyester
+#color# fitted denim jacket | 0.70 | 0.0-0.3 | denim
+#color# letterman-style jacket | 0.50 | 0.0-0.3 | wool,leather
+#color# cozy pullover | 0.60 | 0.0-0.3 | fleece,polyester
+#color# fitted v-neck cardigan | 0.55 | 0.0-0.3 | cotton,acrylic

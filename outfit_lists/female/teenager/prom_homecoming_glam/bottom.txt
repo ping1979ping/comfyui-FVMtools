@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sheer party tights | 0.55 | 0.4-0.7 | nylon,spandex
+#color# fishnet stockings | 0.40 | 0.4-0.7 | nylon
+#color# nude shaping shorts | 0.45 | 0.4-0.7 | spandex
+#color# silky slip underlayer | 0.40 | 0.4-0.7 | satin
+#color# matching mini skirt | 0.35 | 0.4-0.7 | sequin,satin
+#color# embellished mini skirt | 0.30 | 0.4-0.7 | sequin
+#color# layered tulle skirt | 0.30 | 0.4-0.7 | tulle
+#color# pleated cocktail skirt | 0.30 | 0.4-0.7 | satin
+#color# fitted leather mini skirt | 0.25 | 0.4-0.7 | leather

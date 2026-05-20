@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pom-poms | 0.95 | 0.0-0.2 | plastic,polyester
+oversized hair bow | 0.95 | 0.0-0.2 | polyester,satin
+hair scrunchie | 0.80 | 0.0-0.2 | polyester,nylon
+glitter face stickers | 0.55 | 0.0-0.2 | plastic
+small hoop earrings | 0.50 | 0.0-0.2 | metal
+braided friendship bracelet | 0.55 | 0.0-0.2 | cotton
+sweat wristbands | 0.50 | 0.0-0.2 | cotton,nylon
+ribbon hair tie | 0.70 | 0.0-0.2 | polyester,satin
+school spirit beads | 0.65 | 0.0-0.2 | plastic
+team lanyard | 0.45 | 0.0-0.2 | polyester
+sport watch | 0.40 | 0.0-0.2 | rubber,plastic
+glitter eyeliner | 0.45 | 0.0-0.2 | plastic

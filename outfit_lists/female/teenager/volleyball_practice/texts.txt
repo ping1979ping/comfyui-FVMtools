@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"BULLDOGS" | 0.40 | top,outerwear | bold block letters
+"WILSON WEST" | 0.35 | top,outerwear | varsity block
+"VOLLEYBALL" | 0.45 | top,outerwear | bold block letters
+"VARSITY" | 0.35 | top,outerwear | varsity block
+"EAGLES" | 0.30 | top,outerwear | bold block letters
+"READING" | 0.25 | top,outerwear | varsity block
+"PA" | 0.20 | top,outerwear | bold block letters
+"TEAM" | 0.30 | top,outerwear | bold block letters
+"BERKS" | 0.20 | top,outerwear | varsity block
+"#7" | 0.55 | top | large block numerals
+"SPIKE" | 0.20 | top | bold block letters
+"PRACTICE SQUAD" | 0.20 | top,outerwear | bold block letters

@@ -1,0 +1,11 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sherpa-lined boots | 0.85 | 0.0-0.2 | suede,fleece
+#color# foam slides | 0.90 | 0.0-0.2 | rubber
+#color# fuzzy slipper boots | 0.80 | 0.0-0.2 | fleece
+#color# fluffy slip-on slippers | 0.85 | 0.0-0.2 | fleece
+#color# crew socks | 0.95 | 0.0-0.1 | cotton
+#color# slouch socks | 0.65 | 0.0-0.2 | cotton,wool
+#color# low-top sneakers | 0.55 | 0.0-0.2 | canvas
+#color# slip-on canvas shoes | 0.55 | 0.0-0.2 | canvas

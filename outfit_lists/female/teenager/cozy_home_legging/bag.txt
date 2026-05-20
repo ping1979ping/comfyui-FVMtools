@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# slouchy tote | 0.70 | 0.0-0.2 | canvas
+#color# small crossbody bag | 0.65 | 0.0-0.2 | nylon
+#color# mini backpack | 0.60 | 0.0-0.2 | nylon,canvas
+#color# everyday shopper | 0.55 | 0.0-0.2 | canvas
+#color# fuzzy shoulder bag | 0.45 | 0.0-0.2 | fleece
+#color# drawstring sack | 0.50 | 0.0-0.2 | cotton
+#color# belt waist pouch | 0.40 | 0.0-0.2 | nylon

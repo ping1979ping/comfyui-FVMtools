@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide stretch headband | 0.70 | 0.0-0.3 | cotton,spandex
+#color# pre-tied hair bow | 0.75 | 0.0-0.3 | polyester,satin
+#color# baseball cap | 0.55 | 0.0-0.3 | cotton,polyester
+#color# beanie | 0.45 | 0.0-0.3 | acrylic,wool
+#color# silk-feel scrunchie band | 0.60 | 0.0-0.3 | polyester,satin

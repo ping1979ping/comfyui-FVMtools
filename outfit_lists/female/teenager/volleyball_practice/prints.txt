@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+team logo print | 0.85 | top,outerwear,bag | 0.0-0.2
+school mascot graphic | 0.75 | top,outerwear | 0.0-0.2
+varsity stripe | 0.70 | top,bottom,outerwear | 0.0-0.2
+player number print | 0.80 | top | 0.0-0.2
+solid color-block | 0.65 | top,bottom | 0.0-0.2
+side panel stripes | 0.55 | bottom,outerwear | 0.0-0.2
+heather marl | 0.50 | top,outerwear | 0.0-0.2
+volleyball graphic | 0.55 | top,bag | 0.0-0.2
+team chevron | 0.45 | outerwear | 0.0-0.2
+mesh paneling | 0.45 | top,outerwear | 0.0-0.2

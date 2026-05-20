@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# tennis mini skirt | 0.95 | 0.0-0.3 | polyester,spandex
+#color# jean mini skirt | 0.90 | 0.0-0.3 | denim
+#color# pleated mini skirt | 0.85 | 0.0-0.3 | polyester,wool
+#color# a-line jean skirt | 0.75 | 0.0-0.3 | denim
+#color# fitted mini skirt | 0.70 | 0.0-0.3 | cotton,spandex
+#color# pleated plaid skirt | 0.70 | 0.0-0.3 | polyester,wool
+#color# high-waist jean skirt | 0.80 | 0.0-0.3 | denim
+#color# corduroy mini skirt | 0.55 | 0.0-0.3 | cotton
+#color# button-front skirt | 0.55 | 0.0-0.3 | denim,cotton
+#color# ribbed bodycon mini | 0.50 | 0.0-0.3 | cotton,spandex

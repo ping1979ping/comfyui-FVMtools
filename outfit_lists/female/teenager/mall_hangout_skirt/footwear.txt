@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# chunky platform sneakers | 0.90 | 0.0-0.3 | leather,canvas
+#color# ankle boots | 0.85 | 0.0-0.3 | leather,suede
+#color# white low-top sneakers | 0.85 | 0.0-0.3 | leather,canvas
+#color# combat-style boots | 0.65 | 0.0-0.3 | leather
+#color# strappy sandals | 0.55 | 0.0-0.3 | leather
+#color# slide sandals | 0.55 | 0.0-0.3 | rubber,plastic
+#color# block-heel mules | 0.50 | 0.0-0.3 | leather,suede
+#color# ankle-strap heels | 0.40 | 0.0-0.3 | leather
+#color# no-show socks | 0.70 | 0.0-0.3 | cotton,nylon
+#color# slouchy ankle socks | 0.55 | 0.0-0.3 | cotton,nylon

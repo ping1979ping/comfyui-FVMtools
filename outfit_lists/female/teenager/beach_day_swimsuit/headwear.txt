@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# wide-brim straw sun hat | 0.85 | 0.0-0.2 | canvas
+#color# bucket hat | 0.80 | 0.0-0.2 | cotton
+#color# visor cap | 0.55 | 0.0-0.2 | polyester
+#color# baseball cap | 0.55 | 0.0-0.2 | cotton
+#color# tied head scarf | 0.50 | 0.0-0.2 | polyester
+#color# floppy beach hat | 0.55 | 0.0-0.2 | canvas

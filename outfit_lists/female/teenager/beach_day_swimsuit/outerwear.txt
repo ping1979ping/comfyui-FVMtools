@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# crochet beach cover-up | 0.80 | 0.0-0.2 | cotton
+#color# sheer kaftan cover-up | 0.75 | 0.0-0.2 | chiffon
+#color# oversized linen shirt | 0.70 | 0.0-0.2 | linen
+#color# button-up cabana shirt | 0.65 | 0.0-0.2 | cotton,linen
+#color# tied-front beach shirt | 0.60 | 0.0-0.2 | cotton
+#color# light hooded zip-up | 0.55 | 0.0-0.2 | cotton
+#color# jean shirt jacket | 0.50 | 0.0-0.2 | denim
+#color# breezy mesh cover-up | 0.50 | 0.0-0.2 | mesh

@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# slouchy beanie | 0.75 | 0.0-0.2 | wool,acrylic
+#color# soft headband | 0.65 | 0.0-0.2 | cotton
+#color# baseball cap | 0.55 | 0.0-0.2 | cotton
+#color# fuzzy ear-warmer band | 0.50 | 0.0-0.2 | fleece
+#color# silk-print hair scarf | 0.40 | 0.0-0.2 | polyester

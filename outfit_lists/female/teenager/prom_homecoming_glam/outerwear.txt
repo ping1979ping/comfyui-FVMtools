@@ -1,0 +1,11 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# elegant shawl wrap | 0.65 | 0.4-0.7 | satin
+#color# faux-fur stole | 0.60 | 0.4-0.7 | acrylic
+#color# cropped bolero jacket | 0.50 | 0.4-0.7 | satin
+#color# sheer chiffon cape | 0.45 | 0.4-0.7 | chiffon
+#color# beaded shrug | 0.45 | 0.4-0.7 | sequin
+#color# long opera coat | 0.40 | 0.4-0.7 | satin,wool
+#color# delicate overlay shrug | 0.45 | 0.4-0.7 | lace
+#color# velvety blazer | 0.50 | 0.4-0.7 | velvet

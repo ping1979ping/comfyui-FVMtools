@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"WILSON WEST" | 0.40 | top,outerwear | varsity block
+"BULLDOGS" | 0.35 | top,outerwear | varsity block
+"READING HIGH" | 0.30 | top,outerwear | varsity block
+"VARSITY" | 0.40 | top,outerwear | varsity block
+"BERKS" | 0.25 | top,outerwear | varsity block
+"EAGLES" | 0.30 | top,outerwear | bold block letters
+"PA" | 0.25 | top,outerwear | bold block letters
+"TEEN" | 0.20 | top | bold script
+"PROM 2026" | 0.25 | top,outerwear | bold script
+"CLASS OF 27" | 0.25 | top,outerwear | varsity block
+"HOMECOMING" | 0.20 | top,outerwear | bold script
+"BFF" | 0.20 | top | bold script

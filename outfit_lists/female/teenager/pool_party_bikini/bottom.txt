@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# string bikini bottom | 0.95 | 0.0-0.2 | spandex,nylon
+#color# tied-side bikini bottom | 0.90 | 0.0-0.2 | spandex,nylon
+#color# high-waist bikini bottom | 0.80 | 0.0-0.2 | spandex,nylon
+#color# cheeky-cut bikini bottom | 0.85 | 0.0-0.2 | spandex,nylon
+#color# ruched-back bikini bottom | 0.70 | 0.0-0.2 | spandex,nylon
+#color# brazilian-cut bottom | 0.65 | 0.0-0.2 | spandex,nylon
+#color# scoop-front bikini bottom | 0.70 | 0.0-0.2 | spandex,nylon
+#color# v-cut bikini bottom | 0.60 | 0.0-0.2 | spandex,nylon
+#color# beaded trim bikini bottom | 0.45 | 0.0-0.2 | spandex,nylon
+#color# boyshort swim bottom | 0.55 | 0.0-0.2 | spandex,nylon

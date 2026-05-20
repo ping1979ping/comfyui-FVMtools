@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+school logo print | 0.70 | top,outerwear,bag | 0.0-0.3
+varsity stripe | 0.60 | top,outerwear | 0.0-0.3
+plaid pattern | 0.65 | bottom,outerwear | 0.0-0.3
+solid color-block | 0.75 | top,bottom,outerwear | 0.0-0.3
+heather marl | 0.55 | top,outerwear | 0.0-0.3
+floral print | 0.50 | top | 0.0-0.3
+striped pattern | 0.60 | top | 0.0-0.3
+band graphic | 0.55 | top | 0.0-0.3
+checkered pattern | 0.45 | bottom,outerwear | 0.0-0.3
+heart graphic | 0.45 | top | 0.0-0.3
+star graphic | 0.40 | top,outerwear | 0.0-0.3

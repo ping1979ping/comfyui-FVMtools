@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# one-piece swimsuit | 0.95 | 0.0-0.2 | spandex,nylon
+#color# scoop-neck one-piece | 0.85 | 0.0-0.2 | spandex,nylon
+#color# halter swim top | 0.85 | 0.0-0.2 | spandex,nylon
+#color# tankini swim top | 0.80 | 0.0-0.2 | spandex,nylon
+#color# triangle bikini top | 0.80 | 0.0-0.2 | spandex,nylon
+#color# bandeau swim top | 0.70 | 0.0-0.2 | spandex,nylon
+#color# sporty crop swim top | 0.75 | 0.0-0.2 | spandex,nylon
+#color# ruffle bikini top | 0.65 | 0.0-0.2 | spandex,nylon
+#color# high-neck swim top | 0.65 | 0.0-0.2 | spandex,nylon
+#color# tied-front bikini top | 0.60 | 0.0-0.2 | spandex,nylon
+#color# strappy one-piece | 0.55 | 0.0-0.2 | spandex,nylon

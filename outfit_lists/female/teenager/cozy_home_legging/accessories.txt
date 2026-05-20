@@ -1,0 +1,14 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+claw hair clip | 0.90 | 0.0-0.2 | plastic
+oversized scrunchie | 0.85 | 0.0-0.2 | cotton
+soft hair tie stack | 0.75 | 0.0-0.2 | nylon
+round wire-frame glasses | 0.40 | 0.0-0.2 | metal
+phone with ring grip | 0.65 | 0.0-0.2 | plastic
+friendship bracelet | 0.55 | 0.0-0.2 | cotton
+small stud earrings | 0.55 | 0.0-0.2 | metal
+beaded charm bracelet | 0.45 | 0.0-0.2 | plastic
+silver chain necklace | 0.50 | 0.0-0.2 | metal
+fuzzy socks | 0.65 | 0.0-0.2 | wool
+plush blanket throw | 0.45 | 0.0-0.2 | fleece

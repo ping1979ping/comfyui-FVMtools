@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# high-top court shoes | 0.95 | 0.0-0.2 | mesh,polyester
+#color# low-top volleyball sneakers | 0.85 | 0.0-0.2 | mesh,polyester
+#color# crew athletic socks | 0.95 | 0.0-0.2 | cotton,nylon
+#color# knee-high athletic socks | 0.70 | 0.0-0.2 | cotton,nylon
+#color# ankle braces | 0.65 | 0.0-0.2 | nylon,spandex
+#color# court trainers | 0.60 | 0.0-0.2 | mesh,polyester
+#color# no-show socks | 0.55 | 0.0-0.2 | cotton,nylon
+#color# slide sandals | 0.40 | 0.0-0.2 | rubber,plastic
+#color# mid-cut volleyball shoes | 0.70 | 0.0-0.2 | mesh,polyester

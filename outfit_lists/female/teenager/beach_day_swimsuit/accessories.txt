@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized sunglasses | 0.90 | 0.0-0.2 | plastic
+shell anklet | 0.65 | 0.0-0.2 | plastic
+silver toe ring | 0.45 | 0.0-0.2 | metal
+beaded layered necklace | 0.65 | 0.0-0.2 | plastic
+puka shell choker | 0.55 | 0.0-0.2 | plastic
+woven friendship bracelet | 0.70 | 0.0-0.2 | cotton
+hoop earrings | 0.50 | 0.0-0.2 | metal
+beach towel | 0.85 | 0.0-0.2 | cotton
+spray sunscreen | 0.65 | 0.0-0.2 | plastic
+sport water bottle | 0.55 | 0.0-0.2 | plastic
+hair scrunchie | 0.60 | 0.0-0.2 | nylon
+beaded ankle chain | 0.45 | 0.0-0.2 | metal

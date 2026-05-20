@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# compression shorts | 0.95 | 0.0-0.2 | spandex,nylon
+#color# scrunch-back shorts | 0.85 | 0.0-0.2 | spandex,nylon
+#color# fitted volleyball shorts | 0.90 | 0.0-0.2 | spandex,polyester
+#color# high-waist practice shorts | 0.80 | 0.0-0.2 | spandex,nylon
+#color# bike shorts | 0.75 | 0.0-0.2 | spandex,nylon
+#color# briefs-cut team shorts | 0.65 | 0.0-0.2 | spandex,polyester
+#color# warm-up pants | 0.55 | 0.0-0.2 | polyester,nylon
+#color# fitted leggings | 0.50 | 0.0-0.2 | spandex,nylon
+#color# capri compression tights | 0.45 | 0.0-0.2 | spandex,nylon

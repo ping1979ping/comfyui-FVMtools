@@ -1,0 +1,12 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# flip-flops | 0.95 | 0.0-0.2 | rubber,plastic
+#color# slide sandals | 0.90 | 0.0-0.2 | rubber,plastic
+#color# strappy beach sandals | 0.75 | 0.0-0.2 | leather,rubber
+#color# jelly sandals | 0.65 | 0.0-0.2 | rubber,plastic
+#color# chunky slide sandals | 0.70 | 0.0-0.2 | rubber,foam
+#color# barefoot | 0.85 | 0.0-0.2 | natural
+#color# ankle-tie sandals | 0.55 | 0.0-0.2 | leather,rubber
+#color# espadrille slides | 0.55 | 0.0-0.2 | canvas
+#color# braided slide sandals | 0.55 | 0.0-0.2 | leather,rubber

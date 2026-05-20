@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+hair scrunchie | 0.90 | 0.0-0.3 | polyester,satin
+small hoop earrings | 0.65 | 0.0-0.3 | metal
+stud earrings | 0.55 | 0.0-0.3 | metal
+braided friendship bracelet | 0.60 | 0.0-0.3 | cotton
+beaded necklace | 0.55 | 0.0-0.3 | plastic
+charm bracelet | 0.50 | 0.0-0.3 | metal
+smart watch | 0.55 | 0.0-0.3 | rubber,plastic
+delicate chain necklace | 0.50 | 0.0-0.3 | metal
+claw hair clip | 0.65 | 0.0-0.3 | plastic
+ribbon bow clip | 0.60 | 0.0-0.3 | polyester,satin
+thin layered rings | 0.45 | 0.0-0.3 | metal
+phone wristlet strap | 0.40 | 0.0-0.3 | polyester

@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# full-length leggings | 0.95 | 0.0-0.2 | spandex,nylon
+#color# high-waist leggings | 0.90 | 0.0-0.1 | spandex,nylon
+#color# capri training tights | 0.75 | 0.0-0.1 | spandex,nylon
+#color# bike shorts | 0.80 | 0.0-0.1 | spandex,nylon
+#color# pocket leggings | 0.70 | 0.0-0.2 | spandex,nylon
+#color# seamless workout tights | 0.65 | 0.0-0.1 | spandex,nylon
+#color# mesh-panel leggings | 0.55 | 0.0-0.1 | spandex,mesh
+#color# loose gym shorts | 0.60 | 0.0-0.2 | polyester
+#color# joggers | 0.55 | 0.0-0.2 | cotton,polyester

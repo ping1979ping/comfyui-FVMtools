@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# fitted graphic tee | 0.95 | 0.0-0.2 | cotton,polyester
+#color# basic crewneck tee | 0.90 | 0.0-0.2 | cotton
+#color# baby tee | 0.85 | 0.0-0.2 | cotton
+#color# cropped fitted tee | 0.80 | 0.0-0.2 | cotton,spandex
+#color# ribbed tank top | 0.75 | 0.0-0.2 | cotton,spandex
+#color# scoopneck tee | 0.80 | 0.0-0.2 | cotton
+#color# fitted long-sleeve top | 0.65 | 0.0-0.2 | cotton,spandex
+#color# button-up oxford shirt | 0.55 | 0.0-0.3 | cotton
+#color# polo shirt | 0.50 | 0.0-0.3 | cotton,polyester
+#color# henley top | 0.45 | 0.0-0.2 | cotton
+#color# tucked-in basic tee | 0.70 | 0.0-0.2 | cotton
+#color# fitted ribbed top | 0.65 | 0.0-0.2 | cotton,spandex

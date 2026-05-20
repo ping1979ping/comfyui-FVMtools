@@ -1,0 +1,14 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# soft sleep tank | 0.95 | 0.0-0.2 | cotton
+#color# fitted sleep tee | 0.90 | 0.0-0.2 | cotton
+#color# camisole sleep top | 0.80 | 0.0-0.2 | satin,polyester
+#color# oversized sleep tee | 0.90 | 0.0-0.2 | cotton
+#color# button-up pajama top | 0.70 | 0.0-0.2 | cotton,satin
+#color# long-sleeve sleep henley | 0.65 | 0.0-0.2 | cotton
+#color# cropped pajama top | 0.65 | 0.0-0.2 | cotton
+#color# graphic boyfriend sleep tee | 0.75 | 0.0-0.2 | cotton
+#color# ribbed pajama tank | 0.70 | 0.0-0.2 | cotton,spandex
+#color# tied-strap sleep top | 0.55 | 0.0-0.2 | satin
+#color# bralette sleep top | 0.50 | 0.0-0.2 | cotton,lace

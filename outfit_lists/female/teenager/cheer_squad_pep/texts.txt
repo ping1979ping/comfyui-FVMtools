@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"CHEER" | 0.55 | top,outerwear | bold block letters
+"BULLDOGS" | 0.40 | top,outerwear | varsity block
+"WILSON WEST" | 0.35 | top,outerwear | varsity block
+"VARSITY" | 0.45 | top,outerwear | varsity block
+"EAGLES" | 0.30 | top,outerwear | bold block letters
+"SQUAD" | 0.40 | top,outerwear | bold block letters
+"PEP" | 0.30 | top | bold block letters
+"GO TEAM" | 0.30 | top,outerwear | bold block letters
+"READING" | 0.25 | top,outerwear | varsity block
+"BERKS" | 0.20 | top,outerwear | varsity block
+"SPIRIT" | 0.30 | top,outerwear | bold script
+"PROM 2026" | 0.15 | top | bold script

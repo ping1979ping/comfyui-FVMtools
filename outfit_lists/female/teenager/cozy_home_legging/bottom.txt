@@ -1,0 +1,12 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# soft lounge leggings | 0.95 | 0.0-0.2 | cotton,spandex
+#color# high-waist leggings | 0.90 | 0.0-0.2 | spandex,cotton
+#color# ribbed lounge leggings | 0.80 | 0.0-0.2 | cotton,spandex
+#color# flared yoga pants | 0.65 | 0.0-0.2 | spandex,polyester
+#color# fleece-lined leggings | 0.60 | 0.0-0.2 | fleece,spandex
+#color# baggy sweatpants | 0.75 | 0.0-0.2 | cotton,fleece
+#color# tapered joggers | 0.65 | 0.0-0.2 | cotton,fleece
+#color# bike shorts | 0.55 | 0.0-0.2 | spandex
+#color# wide-leg lounge pants | 0.50 | 0.0-0.2 | cotton

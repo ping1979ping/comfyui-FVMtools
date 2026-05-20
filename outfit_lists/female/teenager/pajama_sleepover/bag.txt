@@ -1,0 +1,10 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# overnight duffel bag | 0.85 | 0.0-0.2 | canvas,nylon
+#color# slumber party tote | 0.75 | 0.0-0.2 | canvas
+#color# fuzzy mini backpack | 0.65 | 0.0-0.2 | fleece
+#color# small drawstring sack | 0.55 | 0.0-0.2 | cotton
+#color# plush character bag | 0.50 | 0.0-0.2 | fleece
+#color# weekender bag | 0.55 | 0.0-0.2 | canvas
+#color# zip pouch | 0.45 | 0.0-0.2 | nylon

@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knee pads | 0.95 | 0.0-0.2 | foam,spandex
+hair scrunchie | 0.90 | 0.0-0.2 | polyester,nylon
+sweat wristbands | 0.65 | 0.0-0.2 | cotton,nylon
+finger tape | 0.55 | 0.0-0.2 | cotton
+sport watch | 0.50 | 0.0-0.2 | rubber,plastic
+team lanyard | 0.45 | 0.0-0.2 | polyester
+small stud earrings | 0.40 | 0.0-0.2 | metal
+braided friendship bracelet | 0.55 | 0.0-0.2 | cotton
+hair ribbon bow | 0.70 | 0.0-0.2 | polyester,satin
+sweat towel | 0.60 | 0.0-0.2 | cotton
+ankle compression sleeves | 0.50 | 0.0-0.2 | spandex,nylon
+water bottle | 0.65 | 0.0-0.2 | plastic

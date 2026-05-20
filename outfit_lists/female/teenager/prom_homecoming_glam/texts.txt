@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"CLASS OF 2026" | 0.30 | accessories | elegant script
+"PROM 2026" | 0.25 | accessories | elegant script
+"WILSON HOMECOMING" | 0.25 | accessories | elegant script
+"HOMECOMING" | 0.25 | accessories | elegant script
+"SENIOR PROM" | 0.20 | accessories | elegant script
+"BERKS HIGH" | 0.20 | accessories | elegant script
+"FOREVER YOUNG" | 0.15 | accessories | elegant script
+"DANCE THE NIGHT" | 0.15 | accessories | elegant script
+"WILSON WEST 2026" | 0.20 | accessories | elegant script
+"PROM QUEEN" | 0.15 | accessories | elegant script
+"READING PA" | 0.15 | accessories | elegant script

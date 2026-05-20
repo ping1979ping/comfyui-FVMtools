@@ -1,0 +1,11 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+solid pastel | 0.80 | top,bottom | 0.0-0.2
+heather marl | 0.75 | top,outerwear | 0.0-0.2
+soft tie-dye | 0.55 | top | 0.0-0.2
+classic stripes | 0.50 | top | 0.0-0.2
+small floral print | 0.45 | top | 0.0-0.2
+cozy plaid | 0.55 | bottom,outerwear | 0.0-0.2
+checkered pattern | 0.40 | top,outerwear | 0.0-0.2
+faded gradient | 0.40 | top | 0.0-0.2
+two-tone color-block | 0.55 | top,outerwear | 0.0-0.2
+vintage band graphic | 0.50 | top | 0.0-0.2

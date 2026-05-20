@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# short embellished cocktail dress | 0.95 | 0.4-0.7 | sequin,satin
+#color# bodycon mini dress | 0.90 | 0.4-0.7 | satin,spandex
+#color# strapless prom dress | 0.85 | 0.4-0.7 | satin,tulle
+#color# halter party dress | 0.80 | 0.4-0.7 | satin
+#color# one-shoulder mini dress | 0.80 | 0.4-0.7 | satin,sequin
+#color# sweetheart bodice mini dress | 0.75 | 0.4-0.7 | satin,tulle
+#color# beaded fringe mini dress | 0.70 | 0.4-0.7 | sequin
+#color# v-neck slip dress | 0.75 | 0.4-0.7 | satin
+#color# corset-style cocktail dress | 0.65 | 0.4-0.7 | satin,lace
+#color# tulle-skirt mini dress | 0.60 | 0.4-0.7 | tulle,satin
+#color# off-shoulder party dress | 0.65 | 0.4-0.7 | satin
+#color# ruched bodycon dress | 0.60 | 0.4-0.7 | satin,spandex

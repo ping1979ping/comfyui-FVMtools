@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized hoop earrings | 0.75 | 0.0-0.3 | metal
+layered chain necklaces | 0.70 | 0.0-0.3 | metal
+chunky stack rings | 0.65 | 0.0-0.3 | metal
+charm bracelet | 0.55 | 0.0-0.3 | metal
+beaded choker necklace | 0.65 | 0.0-0.3 | plastic
+hair scrunchie | 0.75 | 0.0-0.3 | polyester,satin
+claw hair clip | 0.70 | 0.0-0.3 | plastic
+oversized sunglasses | 0.65 | 0.0-0.3 | plastic
+phone with strap | 0.55 | 0.0-0.3 | plastic
+ankle chain bracelet | 0.45 | 0.0-0.3 | metal
+beaded bracelet stack | 0.55 | 0.0-0.3 | plastic
+small belt | 0.45 | 0.0-0.3 | leather

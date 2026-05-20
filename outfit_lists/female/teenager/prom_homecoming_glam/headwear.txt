@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# crystal tiara | 0.55 | 0.4-0.7 | metal
+#color# delicate hair vine | 0.65 | 0.4-0.7 | metal
+#color# embellished headband | 0.60 | 0.4-0.7 | satin
+#color# floral hair comb | 0.55 | 0.4-0.7 | metal
+#color# pearl hair pins | 0.65 | 0.4-0.7 | metal

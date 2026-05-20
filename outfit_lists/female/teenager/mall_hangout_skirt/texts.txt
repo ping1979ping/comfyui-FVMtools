@@ -1,0 +1,13 @@
+# format: text_content | probability | compatible_slots | font_hint
+"TEEN" | 0.25 | top | bold script
+"VARSITY" | 0.30 | top,outerwear | varsity block
+"BERKS" | 0.20 | top,outerwear | varsity block
+"PA" | 0.20 | top,outerwear | bold block letters
+"READING" | 0.25 | top,outerwear | varsity block
+"BULLDOGS" | 0.25 | top,outerwear | varsity block
+"BFF" | 0.30 | top | bold script
+"CALI" | 0.20 | top | bold script
+"NYC" | 0.20 | top | bold block letters
+"SUNDAY" | 0.20 | top | bold script
+"VIBES" | 0.25 | top | bold script
+"PROM 2026" | 0.20 | top,outerwear | bold script

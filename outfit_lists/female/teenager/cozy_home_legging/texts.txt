@@ -1,0 +1,12 @@
+# format: text_content | probability | compatible_slots | font_hint
+"COZY" | 0.30 | top | soft script
+"LAZY DAY" | 0.25 | top | soft script
+"WEEKEND VIBES" | 0.20 | top | soft script
+"HOME" | 0.20 | top | soft script
+"PSU" | 0.25 | top,outerwear | varsity block
+"WILSON" | 0.20 | top,outerwear | varsity block
+"GOOD VIBES" | 0.20 | top | soft script
+"BE KIND" | 0.20 | top | soft script
+"BERKS COUNTY" | 0.15 | top,outerwear | varsity block
+"STAY SOFT" | 0.20 | top | soft script
+"NAP QUEEN" | 0.20 | top | soft script

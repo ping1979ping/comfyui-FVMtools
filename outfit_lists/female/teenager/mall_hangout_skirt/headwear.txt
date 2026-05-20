@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# claw hair clip | 0.75 | 0.0-0.3 | plastic
+#color# wide stretch headband | 0.65 | 0.0-0.3 | cotton,spandex
+#color# pre-tied bow clip | 0.70 | 0.0-0.3 | polyester,satin
+#color# baseball cap | 0.55 | 0.0-0.3 | cotton,polyester
+#color# tied hair ribbon | 0.65 | 0.0-0.3 | polyester,satin
+#color# bucket hat | 0.45 | 0.0-0.3 | cotton,polyester

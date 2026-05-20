@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# oversized cheer bow | 0.95 | 0.0-0.2 | polyester,satin
+#color# glitter hair bow | 0.80 | 0.0-0.2 | polyester,satin
+#color# pre-tied ribbon clip | 0.70 | 0.0-0.2 | polyester,satin
+#color# wide stretch headband | 0.60 | 0.0-0.2 | nylon,spandex
+#color# spirit ribbon set | 0.55 | 0.0-0.2 | polyester,satin
