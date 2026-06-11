@@ -1679,7 +1679,7 @@ app.registerExtension({
             // rows. ComfyUI calls this on every redraw; we return the host's
             // measured natural content height with a small safety margin.
             const node = this;
-            this.addDOMWidget("jb_rows_host", "div", host, {
+            const domWidget = this.addDOMWidget("jb_rows_host", "div", host, {
                 serialize: false,
                 getHeight: () => {
                     // scrollHeight includes children + padding even when no
@@ -1688,6 +1688,21 @@ app.registerExtension({
                     return h;
                 },
             });
+
+            // Width tracking. The frontend (comfyui-frontend ≥1.44) sizes the
+            // DOM-widget element as ``(widget.width ?? node.width) - 2*margin``.
+            // Our widget's ``width`` gets pinned to its small initial value and
+            // never updates on node resize, so the element (and every row's
+            // text field) stays stuck at the narrow startup width regardless of
+            // how wide the user drags the node. Force ``width`` to always read
+            // ``undefined`` so the layout falls back to the live ``node.width``.
+            try {
+                Object.defineProperty(domWidget, "width", {
+                    configurable: true,
+                    get() { return undefined; },
+                    set() { /* swallow — node.width is the source of truth */ },
+                });
+            } catch (e) { /* ignore — property already non-configurable */ }
 
             // Re-flow the node whenever the host content size changes.
             // Triggers include: rows added/removed, value text wrapping,
