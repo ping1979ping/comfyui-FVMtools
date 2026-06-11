@@ -118,6 +118,30 @@ def _loose_to_strict(text: str) -> str:
 # ─── Rows ↔ dict ───────────────────────────────────────────────────────
 
 
+def _strip_disabled(rows: list[dict]) -> list[dict]:
+    """Drop rows the user switched off, plus their whole indented subtree.
+
+    A row with ``enabled is False`` is excluded together with every
+    following row at a deeper indent (its descendants). Children keep
+    their own ``enabled`` flag in the saved state, so re-enabling a
+    parent restores them — but while the parent is off the entire
+    subtree is omitted from the output.
+    """
+    out: list[dict] = []
+    skip_above: int | None = None  # skip rows with indent > this threshold
+    for row in rows:
+        indent = int(row.get("indent", 0) or 0)
+        if skip_above is not None:
+            if indent > skip_above:
+                continue  # still inside the disabled subtree
+            skip_above = None  # left it — fall through and re-check this row
+        if row.get("enabled") is False:
+            skip_above = indent
+            continue
+        out.append(row)
+    return out
+
+
 def rows_to_dict(rows: Iterable[dict]) -> dict:
     """Convert a row-list with indent levels into a nested dict.
 
@@ -127,8 +151,11 @@ def rows_to_dict(rows: Iterable[dict]) -> dict:
     A row with empty value AND a following row at higher indent → branch.
     A row with empty value and no children → empty string leaf.
     A row with non-empty value → leaf (JSON-parsed if it parses, else string).
+
+    Rows switched off via ``enabled: false`` (and their subtree) are
+    dropped before conversion.
     """
-    rows = list(rows)
+    rows = _strip_disabled(list(rows))
     if not rows:
         return {}
 

@@ -939,6 +939,23 @@ function openSaveTemplateDialog(catalog, payload) {
 
 // ─── helpers ─────────────────────────────────────────────────────────
 
+// Natural content height of the host, measured from its children rather
+// than ``host.scrollHeight``. The frontend forces ``h-full`` on the host,
+// so its own scrollHeight echoes back whatever height the node was dragged
+// to — using it lets the node inflate and never snap back to content. The
+// children (toolbar + row list) keep their natural height regardless, so we
+// sum them plus the host's vertical padding, border and inter-child gaps.
+function measureContentHeight(host) {
+    const cs = getComputedStyle(host);
+    const padV = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0);
+    const borderV = (parseFloat(cs.borderTopWidth) || 0) + (parseFloat(cs.borderBottomWidth) || 0);
+    const gap = parseFloat(cs.rowGap || cs.gap) || 0;
+    const kids = host.children;
+    let inner = padV + borderV + gap * Math.max(0, kids.length - 1);
+    for (const k of kids) inner += k.offsetHeight;
+    return Math.max(60, Math.ceil(inner) + 2);
+}
+
 function rowsToHidden(rows) {
     return JSON.stringify(rows);
 }
@@ -951,6 +968,9 @@ function hiddenToRows(text) {
             key:    r.key || "",
             value:  r.value == null ? "" : String(r.value),
             indent: Math.max(0, parseInt(r.indent ?? 0, 10) || 0),
+            // Off-switch. Absent / true → enabled; only an explicit false
+            // disables the row (and its subtree) — keeps old saves valid.
+            enabled: r.enabled !== false,
         }));
     } catch (e) { /* ignore */ }
     return [];
@@ -961,7 +981,26 @@ function hiddenToRows(text) {
 // cleanly: a branch is an empty-value row followed by children at indent+1,
 // every other row is a leaf with a string value (with JSON literals like
 // numbers / booleans / null parsed back to their native type).
-function rowsToDict(rows) {
+// Drop rows switched off via ``enabled: false`` plus their whole
+// indented subtree. Mirrors Python's ``_strip_disabled`` so saved
+// templates and the live output agree on what's active.
+function stripDisabled(rows) {
+    const out = [];
+    let skipAbove = null;  // skip rows with indent > this threshold
+    for (const row of rows) {
+        const indent = Math.max(0, parseInt(row?.indent ?? 0, 10) || 0);
+        if (skipAbove !== null) {
+            if (indent > skipAbove) continue;
+            skipAbove = null;
+        }
+        if (row && row.enabled === false) { skipAbove = indent; continue; }
+        out.push(row);
+    }
+    return out;
+}
+
+function rowsToDict(rowsIn) {
+    const rows = stripDisabled(rowsIn);
     const root = {};
     const stack = [{ indent: -1, dict: root }];
     for (let i = 0; i < rows.length; i++) {
@@ -1096,10 +1135,32 @@ function buildRowWidget(node) {
         node.setDirtyCanvas(true, true);
     }
 
+    // For each row decide whether it draws as inactive: either it was
+    // switched off itself, or one of its indent-ancestors was (a disabled
+    // parent greys out its whole subtree). Single pass with a stack of the
+    // indents of currently-open disabled ancestors.
+    function computeRowStates(rs) {
+        const states = [];
+        const disabledAncestors = [];  // indent levels of disabled ancestors
+        for (const r of rs) {
+            const indent = Math.max(0, parseInt(r?.indent ?? 0, 10) || 0);
+            while (disabledAncestors.length &&
+                   disabledAncestors[disabledAncestors.length - 1] >= indent) {
+                disabledAncestors.pop();
+            }
+            const inherited = disabledAncestors.length > 0;
+            const selfDisabled = r && r.enabled === false;
+            states.push({ selfDisabled, inherited });
+            if (selfDisabled) disabledAncestors.push(indent);
+        }
+        return states;
+    }
+
     // ── render ─────────────────────────────────────────────────────
     function render() {
         rowList.innerHTML = "";
-        rows.forEach((r, i) => rowList.append(makeRowEl(r, i)));
+        const states = computeRowStates(rows);
+        rows.forEach((r, i) => rowList.append(makeRowEl(r, i, states[i])));
         // Don't pin a fixed height. ComfyUI sizes the DOM widget through
         // the ``getHeight`` callback (which reads ``host.scrollHeight``);
         // pinning here would clip the host when the toolbar wraps to two
@@ -1125,7 +1186,10 @@ function buildRowWidget(node) {
         } catch (e) { /* ignore */ }
     }
 
-    function makeRowEl(row, idx) {
+    function makeRowEl(row, idx, state) {
+        const st = state || { selfDisabled: false, inherited: false };
+        const inactive = st.selfDisabled || st.inherited;
+
         const wrap = document.createElement("div");
         wrap.dataset.rowIdx = String(idx);
         Object.assign(wrap.style, {
@@ -1141,6 +1205,28 @@ function buildRowWidget(node) {
             borderRadius: "1px", flex: "0 0 auto",
         });
         wrap.append(bar);
+
+        // On/off toggle. Click switches this row AND its whole indented
+        // subtree. Children keep their own flag, so re-enabling the parent
+        // brings them back (minus any individually disabled child).
+        const on = row.enabled !== false;
+        const toggle = document.createElement("button");
+        toggle.textContent = on ? "◉" : "○";
+        toggle.title = on
+            ? "Aktiv — Klick deaktiviert diese Zeile + alles Untergeordnete"
+            : "Deaktiviert — Klick aktiviert wieder";
+        Object.assign(toggle.style, {
+            flex: "0 0 22px", height: "22px", padding: "0",
+            background: "transparent", color: on ? "#a6e3a1" : "#6c7086",
+            border: "1px solid #45475a", borderRadius: "4px",
+            cursor: "pointer", fontSize: "12px", userSelect: "none",
+        });
+        toggle.addEventListener("click", () => {
+            row.enabled = !on;
+            render();
+            commit();
+        });
+        wrap.append(toggle);
 
         // Key input
         const keyIn = document.createElement("input");
@@ -1180,6 +1266,15 @@ function buildRowWidget(node) {
         });
         attachDragHandle(menuBtn, wrap, idx);
         wrap.append(menuBtn);
+
+        // Grey out the content of inactive rows (off themselves, or under a
+        // disabled parent). The toggle stays full-strength so it's obvious
+        // how to switch the row back on.
+        if (inactive) {
+            bar.style.opacity = "0.35";
+            keyIn.style.opacity = "0.4";
+            valIn.style.opacity = "0.4";
+        }
 
         return wrap;
     }
@@ -1376,7 +1471,18 @@ function buildRowWidget(node) {
     }
 
     // ── row actions menu (opens on bare ⋮ click without drag) ──────
+    // Only one row-actions menu may be open at a time. Track the live one so
+    // a new open — or any click outside it — tears down the previous menu.
+    let activeRowMenu = null;
+    function closeRowMenu() {
+        if (!activeRowMenu) return;
+        if (activeRowMenu.el.parentNode) document.body.removeChild(activeRowMenu.el);
+        document.removeEventListener("pointerdown", activeRowMenu.dismiss, true);
+        activeRowMenu = null;
+    }
+
     function showRowActions(idx, anchor) {
+        closeRowMenu();  // never stack menus
         const menu = document.createElement("div");
         Object.assign(menu.style, {
             position: "fixed", background: "#1e1e2e", color: "#cdd6f4",
@@ -1431,19 +1537,22 @@ function buildRowWidget(node) {
             item.addEventListener("mouseleave", () => item.style.background = "");
             item.addEventListener("click", () => {
                 fn();
-                if (menu.parentNode) document.body.removeChild(menu);
+                closeRowMenu();
                 render();
             });
             menu.append(item);
         }
         document.body.append(menu);
         const dismiss = (e) => {
-            if (!menu.contains(e.target)) {
-                if (menu.parentNode) document.body.removeChild(menu);
-                document.removeEventListener("mousedown", dismiss);
-            }
+            if (!menu.contains(e.target)) closeRowMenu();
         };
-        setTimeout(() => document.addEventListener("mousedown", dismiss), 10);
+        activeRowMenu = { el: menu, dismiss };
+        // Listen on ``pointerdown`` in the capture phase: ComfyUI calls
+        // preventDefault on the canvas pointer events, which suppresses the
+        // compatibility ``mousedown`` — so the old mousedown listener never
+        // fired for clicks on the graph, leaving menus open and stackable.
+        // pointerdown always fires; capture beats the canvas handler.
+        setTimeout(() => document.addEventListener("pointerdown", dismiss, true), 0);
     }
 
     function moveRow(idx, dir) {
@@ -1681,12 +1790,7 @@ app.registerExtension({
             const node = this;
             const domWidget = this.addDOMWidget("jb_rows_host", "div", host, {
                 serialize: false,
-                getHeight: () => {
-                    // scrollHeight includes children + padding even when no
-                    // explicit min-height is set on the host.
-                    const h = Math.max(60, host.scrollHeight + 8);
-                    return h;
-                },
+                getHeight: () => measureContentHeight(host),
             });
 
             // Width tracking. The frontend (comfyui-frontend ≥1.44) sizes the
@@ -1704,33 +1808,37 @@ app.registerExtension({
                 });
             } catch (e) { /* ignore — property already non-configurable */ }
 
-            // Re-flow the node whenever the host content size changes.
-            // Triggers include: rows added/removed, value text wrapping,
-            // and crucially the toolbar reflowing to one or two lines as
-            // the user resizes the node horizontally. We snap the node
-            // height to ``computeSize()`` each tick so we both grow AND
-            // shrink in sync with the host's natural scrollHeight.
+            // Re-flow the node whenever the *content* size changes: rows
+            // added/removed, or the toolbar wrapping to a second line as the
+            // user narrows the node. We observe the content children (whose
+            // height is the true content height) — NOT the host itself, whose
+            // h-full height echoes the node size and would feed back into an
+            // oscillating loop. Snap to computeSize() only when it actually
+            // differs, so the height settles in one frame instead of crawling.
             try {
                 let raf = 0;
                 const reflow = () => {
                     if (raf) return;
                     raf = requestAnimationFrame(() => {
                         raf = 0;
-                        if (typeof node.onResize === "function") {
-                            node.onResize(node.size);
-                        }
                         try {
                             const c = node.computeSize();
-                            if (c && Array.isArray(c) && node.size) {
+                            if (c && Array.isArray(c) && node.size &&
+                                Math.abs(node.size[1] - c[1]) > 0.5) {
                                 node.size[1] = c[1];
+                                node.setDirtyCanvas(true, true);
                             }
                         } catch (e) { /* ignore */ }
-                        node.setDirtyCanvas(true, true);
                     });
                 };
                 const ro = new ResizeObserver(reflow);
+                // Children → content changes (rows added/removed, toolbar wrap).
+                for (const child of host.children) ro.observe(child);
+                // Host → the user dragging the node smaller (which the frontend
+                // clips without telling us via content). getHeight is now
+                // content-stable, so the diff-guard makes this a one-shot
+                // correction, not the old oscillating loop.
                 ro.observe(host);
-                ro.observe(toolbar);
             } catch (e) { /* ResizeObserver not available — fall through */ }
 
             // Default to a reasonable initial node size.
