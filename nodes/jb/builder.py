@@ -36,7 +36,7 @@ try:
         emit_strict_json,
         rows_to_dict,
     )
-    from ...core.jb.wildcards import resolve_text
+    from ...core.jb.resolve import resolve_leaves as _resolve_leaves
 except ImportError:  # pragma: no cover
     from core.jb.serialize import (
         ALL_FORMATS,
@@ -44,7 +44,7 @@ except ImportError:  # pragma: no cover
         emit_strict_json,
         rows_to_dict,
     )
-    from core.jb.wildcards import resolve_text
+    from core.jb.resolve import resolve_leaves as _resolve_leaves
 
 
 def _is_row_list(payload) -> bool:
@@ -52,28 +52,6 @@ def _is_row_list(payload) -> bool:
     if not isinstance(payload, list) or not payload:
         return False
     return all(isinstance(r, dict) and "key" in r for r in payload)
-
-
-def _resolve_leaves(node, seed, context, path=""):
-    """Walk a dict/list tree and resolve wildcards in every string leaf.
-
-    The leaf's path is mixed into the resolver salt so distinct call
-    sites under the same base seed pick different lines from the same
-    wildcard file. Mutates ``node`` in place when it's a dict/list.
-    """
-    if isinstance(node, dict):
-        for k, v in list(node.items()):
-            sub = f"{path}.{k}" if path else k
-            node[k] = _resolve_leaves(v, seed, context, sub)
-        return node
-    if isinstance(node, list):
-        for i, v in enumerate(node):
-            node[i] = _resolve_leaves(v, seed, context, f"{path}[{i}]")
-        return node
-    if isinstance(node, str) and any(tok in node for tok in ("__", "{", "##")):
-        resolved, _ = resolve_text(node, seed, context, salt=path)
-        return resolved
-    return node
 
 
 class FVM_JB_Builder:

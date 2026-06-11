@@ -35,6 +35,8 @@ try:
     from .nodes.jb.extractor import FVM_JB_Extractor
     from .nodes.jb.outfit_block import FVM_JB_OutfitBlock
     from .nodes.jb.location_block import FVM_JB_LocationBlock
+    from .nodes.jb.ideogram_assembler import FVM_Ideogram_Assembler
+    from .nodes.jb.ideogram_jitter import FVM_Ideogram_BoxJitter
 
     # ── API routes for outfit list editing ──
     import os
@@ -473,6 +475,8 @@ try:
         "FVM_JB_Extractor":           FVM_JB_Extractor,
         "FVM_JB_OutfitBlock":         FVM_JB_OutfitBlock,
         "FVM_JB_LocationBlock":       FVM_JB_LocationBlock,
+        "FVM_Ideogram_Assembler":     FVM_Ideogram_Assembler,
+        "FVM_Ideogram_BoxJitter":     FVM_Ideogram_BoxJitter,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -509,6 +513,8 @@ try:
         "FVM_JB_Extractor":           "JB · Extractor",
         "FVM_JB_OutfitBlock":         "JB · Outfit Block",
         "FVM_JB_LocationBlock":       "JB · Location Block",
+        "FVM_Ideogram_Assembler":     "JB · Ideogram Assembler",
+        "FVM_Ideogram_BoxJitter":     "JB · Ideogram Box Jitter",
     }
 
     WEB_DIRECTORY = "./web/js"

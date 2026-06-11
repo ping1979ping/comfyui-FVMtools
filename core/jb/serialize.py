@@ -276,6 +276,33 @@ def emit_strict_json(obj: Any, indent: int | None = 2) -> str:
     return json.dumps(obj, indent=indent, ensure_ascii=False, default=str)
 
 
+def emit_ideogram(obj: Any, _level: int = 0) -> str:
+    """Ideogram-4-faithful JSON: 4-space indent, scalar arrays kept inline.
+
+    Matches the formatting that KJNodes' Ideogram 4 Prompt Builder emits
+    (so ``bbox``/``color_palette`` arrays stay on one line while objects
+    nest), keeping our assembler/jitter output visually consistent with
+    the node it interoperates with. Key order is preserved.
+    """
+    pad, end = "    " * (_level + 1), "    " * _level
+    if isinstance(obj, str):
+        return json.dumps(obj, ensure_ascii=False)
+    if isinstance(obj, list):
+        if not obj:
+            return "[]"
+        if all(not isinstance(x, (dict, list)) for x in obj):
+            return "[" + ", ".join(emit_ideogram(x, _level) for x in obj) + "]"
+        return ("[\n" + ",\n".join(pad + emit_ideogram(x, _level + 1) for x in obj)
+                + "\n" + end + "]")
+    if isinstance(obj, dict):
+        if not obj:
+            return "{}"
+        items = [pad + json.dumps(k, ensure_ascii=False) + ": "
+                 + emit_ideogram(v, _level + 1) for k, v in obj.items()]
+        return "{\n" + ",\n".join(items) + "\n" + end + "}"
+    return json.dumps(obj, ensure_ascii=False, default=str)
+
+
 def emit_loose_keys(obj: Any, level: int = 0, _indent: int = 2) -> str:
     """Loose-keys output for SD/CLIP encoders.
 
