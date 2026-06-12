@@ -5,10 +5,20 @@ The crop region is expanded to match the target aspect ratio BEFORE resizing,
 so the resize step never distorts the image.
 """
 
+import os
+import time
 import torch
 import numpy as np
 import math
 import cv2
+
+# Env-gated phase profiler (zero overhead when FVM_PROFILE is unset).
+_PROFILE = os.environ.get("FVM_PROFILE", "") not in ("", "0", "false", "False")
+
+
+def _sync():
+    if torch.cuda.is_available():
+        torch.cuda.synchronize()
 
 import comfy.utils
 import comfy.sample
@@ -358,9 +368,14 @@ def inpaint_slot(
         cropped_mask = feather_mask(cropped_mask, mask_blend_pixels)
 
     # Step 7: VAE encode
+    _prof = {"encode": 0.0, "sample": 0.0, "decode": 0.0, "stitch": 0.0}
     device = comfy.model_management.get_torch_device()
     cropped_image_device = cropped_image.to(device)
+    if _PROFILE:
+        _sync(); _e0 = time.perf_counter()
     latent_samples = vae.encode(cropped_image_device[:, :, :, :3])
+    if _PROFILE:
+        _sync(); _prof["encode"] += time.perf_counter() - _e0
 
     # Step 8: Apply denoise gradient (center-to-edge falloff)
     if denoise_gradient > 0:
@@ -421,7 +436,11 @@ def inpaint_slot(
     for iteration in range(repeat):
         if iteration > 0:
             # Re-encode previous result as new latent input (latent cycling)
+            if _PROFILE:
+                _sync(); _e0 = time.perf_counter()
             latent_samples = vae.encode(decoded[:, :, :, :3].to(device))
+            if _PROFILE:
+                _sync(); _prof["encode"] += time.perf_counter() - _e0
 
         # Apply control guidance per round (if provided)
         round_model = model
@@ -472,18 +491,35 @@ def inpaint_slot(
         callback = latent_preview.prepare_callback(model, sigmas.shape[-1] - 1)
         disable_pbar = not comfy.utils.PROGRESS_BAR_ENABLED
 
+        if _PROFILE:
+            _sync(); _s0 = time.perf_counter()
         samples = guider.sample(
             noise, latent_image, sampler_obj, sigmas,
             denoise_mask=noise_mask,
             callback=callback, disable_pbar=disable_pbar, seed=seed + iteration,
         )
         samples = samples.to(comfy.model_management.intermediate_device())
+        if _PROFILE:
+            _sync(); _prof["sample"] += time.perf_counter() - _s0
 
         # VAE decode
+        if _PROFILE:
+            _sync(); _d0 = time.perf_counter()
         decoded = vae.decode(samples)  # [1, tH, tW, C]
+        if _PROFILE:
+            _sync(); _prof["decode"] += time.perf_counter() - _d0
 
     # Step 12: Stitch back
+    if _PROFILE:
+        _sync(); _st0 = time.perf_counter()
     stitched = stitch_back(image, decoded, blend_mask_orig, crop, stitch_info,
                            denoise=denoise)
+    if _PROFILE:
+        _sync(); _prof["stitch"] += time.perf_counter() - _st0
+        tot = sum(_prof.values())
+        print(f"      [profile] encode={_prof['encode']*1000:.0f}ms "
+              f"sample={_prof['sample']*1000:.0f}ms decode={_prof['decode']*1000:.0f}ms "
+              f"stitch={_prof['stitch']*1000:.0f}ms (crop {target_width}x{target_height}, "
+              f"sum={tot*1000:.0f}ms)")
 
     return stitched, decoded
