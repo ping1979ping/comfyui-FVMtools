@@ -10,7 +10,7 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
-from .utils.masker import MaskGenerator, run_sam3_grounding, assign_masks_to_faces, assign_masks_by_body_overlap
+from .utils.masker import MaskGenerator, run_sam3_grounding, sam3_prepare, sam3_ground, assign_masks_to_faces, assign_masks_by_body_overlap
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask
 from .utils.yolo_detector import (
     detect_objects,
@@ -248,8 +248,13 @@ class PersonSelectorSAM3:
         h, w = cur_rgb.shape[:2]
         face_count = len(cur_faces)
 
+        # Encode the image ONCE; ground every prompt against the shared embedding.
+        # (SAM3's vision backbone is the dominant cost — this replaces 4-5 encodes
+        #  of the same image with a single encode.)
+        processor, base_state = sam3_prepare(sam3_config, cur_rgb)
+
         # Step 1: Body masks — assign by face center (primary anchor)
-        body_results = run_sam3_grounding(sam3_config, cur_rgb, "person", threshold=0.15)
+        body_results = sam3_ground(processor, base_state, cur_rgb.shape, "person", threshold=0.15)
         body_assign = assign_masks_to_faces(body_results, cur_faces) if body_results else {}
 
         # Build body_map for overlap-based assignment of other mask types
@@ -261,7 +266,7 @@ class PersonSelectorSAM3:
         mask_results = {"body": (body_results, body_assign)}
         for mask_type in ("face", "head", "hair"):
             prompt, threshold = SAM3_MASK_CONFIG[mask_type]
-            results = run_sam3_grounding(sam3_config, cur_rgb, prompt, threshold=threshold)
+            results = sam3_ground(processor, base_state, cur_rgb.shape, prompt, threshold=threshold)
             if results and body_map:
                 assignment = assign_masks_by_body_overlap(results, body_map, cur_faces)
             elif results:
@@ -275,12 +280,12 @@ class PersonSelectorSAM3:
         aux_assignment = {}
         if aux_preset != "none":
             if aux_preset == "custom" and aux_custom_prompt.strip():
-                aux_results = run_sam3_grounding(sam3_config, cur_rgb, aux_custom_prompt.strip(), threshold=aux_threshold)
+                aux_results = sam3_ground(processor, base_state, cur_rgb.shape, aux_custom_prompt.strip(), threshold=aux_threshold)
             elif aux_preset == "headless_body":
                 pass  # computed below from body - face - hair
             elif aux_preset in AUX_PRESETS and AUX_PRESETS[aux_preset] is not None:
                 prompt, default_thresh = AUX_PRESETS[aux_preset]
-                aux_results = run_sam3_grounding(sam3_config, cur_rgb, prompt, threshold=aux_threshold)
+                aux_results = sam3_ground(processor, base_state, cur_rgb.shape, prompt, threshold=aux_threshold)
             if aux_results and body_map:
                 aux_assignment = assign_masks_by_body_overlap(aux_results, body_map, cur_faces)
             elif aux_results:

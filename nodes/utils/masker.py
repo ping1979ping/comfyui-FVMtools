@@ -453,24 +453,19 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
 
 # ── SAM3 Grounding helpers ──
 
-def run_sam3_grounding(sam3_config, image_rgb, text_prompt, threshold=0.2):
-    """Run SAM3 text-based grounding segmentation.
+def sam3_prepare(sam3_config, image_rgb):
+    """Build/load the SAM3 model and run the vision backbone ONCE for an image.
 
-    Args:
-        sam3_config: dict from LoadSAM3Model (checkpoint_path, bpe_path, etc.)
-        image_rgb: [H, W, 3] uint8 RGB numpy array
-        text_prompt: natural language noun phrase ("person", "face", "hair", etc.)
-        threshold: confidence threshold (0.2 default, lower = more detections)
+    The returned ``base_state`` holds the image embedding (``backbone_out``).
+    Pass it to :func:`sam3_ground` repeatedly to ground multiple text prompts
+    against the SAME image without re-encoding it — the vision backbone is the
+    dominant cost, so this turns N prompts from N encodes into 1.
 
     Returns:
-        list of (mask_np [H,W] float32, score float, bbox [x1,y1,x2,y2]) tuples,
-        sorted by score descending. Empty list if no detections.
+        (processor, base_state) on success, or (None, None) on failure.
     """
     from PIL import Image
     import importlib
-    import gc
-
-    h, w = image_rgb.shape[:2]
 
     try:
         sam3_cache = importlib.import_module(
@@ -485,20 +480,46 @@ def run_sam3_grounding(sam3_config, image_rgb, text_prompt, threshold=0.2):
         if hasattr(processor, 'sync_device_with_model'):
             processor.sync_device_with_model()
 
-        processor.set_confidence_threshold(threshold)
         pil_img = Image.fromarray(image_rgb)
-        state = processor.set_image(pil_img)
+        base_state = processor.set_image(pil_img)  # vision backbone — runs ONCE
+        return processor, base_state
+
+    except Exception as e:
+        print(f"[FVMTools] SAM3 prepare failed: {e}")
+        import traceback
+        traceback.print_exc()
+        return None, None
+
+
+def sam3_ground(processor, base_state, image_shape, text_prompt, threshold=0.2):
+    """Ground a single text prompt against a precomputed image state.
+
+    Reuses ``base_state`` from :func:`sam3_prepare`. A shallow copy is made per
+    call so each prompt's result keys (masks/boxes/scores) stay isolated while
+    the (expensive) image embedding in ``backbone_out`` is shared. Must be called
+    sequentially — results are read before the next call mutates the shared
+    text portion of ``backbone_out``.
+
+    Returns:
+        list of (mask_np [H,W] float32, score float, bbox [x1,y1,x2,y2]) tuples,
+        sorted by score descending. Empty list if no detections.
+    """
+    h, w = image_shape[:2]
+
+    if processor is None or base_state is None:
+        return []
+
+    try:
+        processor.set_confidence_threshold(threshold)
+        state = dict(base_state)  # shallow copy: shares backbone_out, separate result keys
         state = processor.set_text_prompt(text_prompt.strip(), state)
 
         masks = state.get("masks", None)
         boxes = state.get("boxes", None)
         scores = state.get("scores", None)
 
-        # Clean up state
-        del state
-        gc.collect()
-
         if masks is None or len(masks) == 0:
+            print(f"    [SAM3] '{text_prompt}': 0 detections")
             return []
 
         # Ensure float32 (SAM3 may output bfloat16 which numpy/OpenCV can't handle)
@@ -536,6 +557,23 @@ def run_sam3_grounding(sam3_config, image_rgb, text_prompt, threshold=0.2):
         import traceback
         traceback.print_exc()
         return []
+
+
+def run_sam3_grounding(sam3_config, image_rgb, text_prompt, threshold=0.2):
+    """Single-prompt SAM3 grounding (encodes the image, then grounds one prompt).
+
+    Backward-compatible wrapper. For multiple prompts on the same image, call
+    :func:`sam3_prepare` once and :func:`sam3_ground` per prompt to avoid
+    re-encoding the image each time.
+
+    Returns:
+        list of (mask_np [H,W] float32, score float, bbox [x1,y1,x2,y2]) tuples,
+        sorted by score descending. Empty list if no detections.
+    """
+    processor, base_state = sam3_prepare(sam3_config, image_rgb)
+    if processor is None:
+        return []
+    return sam3_ground(processor, base_state, image_rgb.shape, text_prompt, threshold)
 
 
 def assign_masks_to_faces(mask_results, faces):
