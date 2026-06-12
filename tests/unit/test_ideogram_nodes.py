@@ -59,11 +59,14 @@ def test_emit_ideogram_preserves_key_order():
 # ─── Assembler ─────────────────────────────────────────────────────────
 
 
-def _assemble(caption, box_prompts, seed=0, fmt="ideogram", unmatched="keep typed desc", ctx=None):
+def _assemble(caption, box_prompts, seed=0, fmt="ideogram", nested="loose_keys",
+              scene="off", unmatched="keep typed desc", ctx=None):
+    scene_opt = ("on (background/high_level_description/style_description set the scene)"
+                 if scene == "on" else "off (all top-level keys are box slots)")
     return FVM_Ideogram_Assembler().assemble(
         caption_json=caption, box_prompts=json.dumps(box_prompts), seed=seed,
-        output_format=fmt, on_unmatched_box=unmatched,
-        context_from_prompt_generator=ctx)
+        output_format=fmt, nested_desc_format=nested, scene_overrides=scene_opt,
+        on_unmatched_box=unmatched, context_from_prompt_generator=ctx)
 
 
 def test_assembler_metadata():
@@ -95,10 +98,30 @@ def test_assembler_text_field_forces_text_type():
     assert el["type"] == "text" and el["text"] == "HELLO"
 
 
-def test_assembler_reserved_background_override():
+def test_assembler_reserved_background_override_when_scene_on():
     cap = _caption([_el("x")], background="PLACEHOLDER")
-    _, raw, _ = _assemble(cap, {"background": "rainy street", "x": {"desc": "y"}})
+    _, raw, _ = _assemble(cap, {"background": "rainy street", "x": {"desc": "y"}}, scene="on")
     assert json.loads(raw)["compositional_deconstruction"]["background"] == "rainy street"
+
+
+def test_assembler_default_all_top_level_are_box_slots():
+    # Default (scene off): 'background' is NOT a scene override — it's a plain
+    # box slot. The scene background stays from KJ; a box named 'background' fills.
+    cap = _caption([_el("background"), _el("x")], background="KJ_SCENE")
+    _, raw, rep = _assemble(cap, {"background": {"desc": "a filled box"}, "x": {"desc": "y"}})
+    cd = json.loads(raw)["compositional_deconstruction"]
+    assert cd["background"] == "KJ_SCENE"                       # scene untouched
+    assert cd["elements"][0]["desc"] == "a filled box"         # box 'background' filled
+    assert "background" in rep and "x" in rep                  # both matched
+
+
+def test_assembler_scene_on_reserved_not_used_as_box():
+    # With scene on, a box named 'background' is left alone (reserved for scene).
+    cap = _caption([_el("background")], background="OLD")
+    _, raw, _ = _assemble(cap, {"background": "new scene"}, scene="on")
+    cd = json.loads(raw)["compositional_deconstruction"]
+    assert cd["background"] == "new scene"
+    assert cd["elements"][0]["desc"] == "background"           # box untouched
 
 
 def test_assembler_color_palette_capped_at_five():
@@ -130,9 +153,88 @@ def test_assembler_at_prefix_tolerated():
     assert json.loads(raw)["compositional_deconstruction"]["elements"][0]["desc"] == "ok"
 
 
+def test_assembler_bare_string_slot_sets_desc():
+    cap = _caption([_el("woman")])
+    _, raw, _ = _assemble(cap, {"woman": "a tall woman in red"})
+    assert json.loads(raw)["compositional_deconstruction"]["elements"][0]["desc"] == "a tall woman in red"
+
+
+def test_assembler_nested_structure_folds_into_desc():
+    # The user's case: a placeholder replaced by a whole sub-tree (no `desc`
+    # key) → the entire structure is serialised into the box's desc.
+    cap = _caption([_el("woman")])
+    woman = {
+        "age_desc": "48yo", "gender": "female",
+        "hair": {"color": "fiery red", "length": "over-shoulder"},
+        "body": {"build": "fit", "height": "5ft5in"},
+    }
+    _, raw, _ = _assemble(cap, {"woman": woman}, nested="compact_json")
+    desc = json.loads(raw)["compositional_deconstruction"]["elements"][0]["desc"]
+    # compact_json → the desc is itself a JSON string carrying the sub-tree
+    inner = json.loads(desc)
+    assert inner["gender"] == "female"
+    assert inner["hair"]["color"] == "fiery red"
+    assert inner["body"]["height"] == "5ft5in"
+
+
+def test_assembler_nested_loose_keys_default():
+    cap = _caption([_el("woman")])
+    _, raw, _ = _assemble(cap, {"woman": {"gender": "female", "hair": {"color": "red"}}})
+    desc = json.loads(raw)["compositional_deconstruction"]["elements"][0]["desc"]
+    assert "gender: female" in desc and "color: red" in desc  # loose_keys, no quotes
+
+
+def test_assembler_nested_keeps_reserved_fields_alongside():
+    # color_palette is reserved → pulled onto the element; the rest folds to desc.
+    cap = _caption([_el("woman")])
+    sub = {"gender": "female", "color_palette": ["#abcdef"]}
+    _, raw, _ = _assemble(cap, {"woman": sub})
+    el = json.loads(raw)["compositional_deconstruction"]["elements"][0]
+    assert el["color_palette"] == ["#ABCDEF"]
+    assert "gender: female" in el["desc"]
+    assert "color_palette" not in el["desc"]  # reserved key not folded into desc
+
+
+def test_assembler_explicit_desc_wins_over_siblings():
+    cap = _caption([_el("woman")])
+    _, raw, _ = _assemble(cap, {"woman": {"desc": "explicit", "gender": "female"}})
+    assert json.loads(raw)["compositional_deconstruction"]["elements"][0]["desc"] == "explicit"
+
+
+def test_assembler_nested_wildcards_resolve_per_leaf():
+    cap = _caption([_el("woman")])
+    sub = {"hair": {"color": "{red|red} hair"}, "mood": "{calm|calm}"}
+    _, raw, _ = _assemble(cap, {"woman": sub}, seed=2)
+    desc = json.loads(raw)["compositional_deconstruction"]["elements"][0]["desc"]
+    # values resolved per-leaf; wildcard syntax ('|', '{red') gone — structural
+    # loose_keys object braces are expected to remain.
+    assert "red hair" in desc and "calm" in desc
+    assert "|" not in desc and "{red" not in desc
+
+
 def test_assembler_invalid_caption_passthrough():
     prompt, raw, report = _assemble("{not json", {"a": 1})
     assert prompt == "{not json" and "ERROR" in report
+
+
+def test_assembler_loose_keys_box_prompts_warns():
+    # Wiring the Builder's loose-keys `string` (not raw_json) → unparseable;
+    # the box keeps its typed desc and the report flags the mistake loudly.
+    cap = _caption([_el("woman")])
+    loose = "{\n  woman: {\n    desc: a tall woman\n  }\n}"
+    prompt, raw, report = FVM_Ideogram_Assembler().assemble(
+        caption_json=cap, box_prompts=loose, seed=0, output_format="ideogram",
+        nested_desc_format="loose_keys",
+        scene_overrides="off (all top-level keys are box slots)",
+        on_unmatched_box="keep typed desc")
+    assert "WARN" in report and "raw_json" in report
+    assert json.loads(raw)["compositional_deconstruction"]["elements"][0]["desc"] == "woman"
+
+
+def test_assembler_report_lists_box_prompt_keys():
+    cap = _caption([_el("a")])
+    _, _, report = _assemble(cap, {"a": {"desc": "x"}, "b": {"desc": "y"}})
+    assert "box_prompts keys" in report and "'a'" in report and "'b'" in report
 
 
 def test_assembler_ideogram_format_inlines_bbox():
