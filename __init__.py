@@ -266,13 +266,35 @@ try:
             return web.json_response({"error": str(e), "classes": []}, status=500)
         return web.json_response({"classes": classes})
 
+    def _safe_set_dir(root, set_name):
+        """Resolve a (possibly nested, POSIX-form) set name under ``root``.
+
+        Set names are hierarchical paths like ``female/aerobic/general``, so
+        ``/`` is allowed — but we still block traversal (``..``), backslashes
+        and absolute paths, and confirm the resolved dir stays inside ``root``.
+        Returns the absolute dir, or None if the name is unsafe.
+        """
+        if not set_name or "\\" in set_name or os.path.isabs(set_name):
+            return None
+        parts = set_name.split("/")
+        if any(p in ("", "..", ".") for p in parts):
+            return None
+        root_real = os.path.realpath(root)
+        full = os.path.realpath(os.path.join(root_real, *parts))
+        if os.path.commonpath([full, root_real]) != root_real:
+            return None
+        return full
+
+    def _safe_filename(name):
+        """A list filename is a single segment — no path separators / traversal."""
+        return bool(name) and "/" not in name and "\\" not in name and ".." not in name
+
     @PromptServer.instance.routes.get("/fvmtools/outfit-files")
     async def _get_outfit_files(request):
         """List .txt files in an outfit set directory."""
-        outfit_set = request.rel_url.query.get("set", "")
-        if not outfit_set or "/" in outfit_set or "\\" in outfit_set or ".." in outfit_set:
+        set_dir = _safe_set_dir(_get_lists_path(), request.rel_url.query.get("set", ""))
+        if set_dir is None:
             return web.json_response({"error": "invalid set"}, status=400)
-        set_dir = os.path.join(_get_lists_path(), outfit_set)
         if not os.path.isdir(set_dir):
             return web.json_response({"error": "set not found"}, status=404)
         files = sorted(f[:-4] for f in os.listdir(set_dir) if f.endswith(".txt"))
@@ -285,10 +307,10 @@ try:
         filename = request.rel_url.query.get("file", "")
         if not outfit_set or not filename:
             return web.json_response({"error": "missing params"}, status=400)
-        for val in (outfit_set, filename):
-            if "/" in val or "\\" in val or ".." in val:
-                return web.json_response({"error": "invalid path"}, status=400)
-        file_path = os.path.join(_get_lists_path(), outfit_set, f"{filename}.txt")
+        set_dir = _safe_set_dir(_get_lists_path(), outfit_set)
+        if set_dir is None or not _safe_filename(filename):
+            return web.json_response({"error": "invalid path"}, status=400)
+        file_path = os.path.join(set_dir, f"{filename}.txt")
         if not os.path.isfile(file_path):
             return web.json_response({"error": "file not found"}, status=404)
         with open(file_path, "r", encoding="utf-8") as f:
@@ -304,11 +326,10 @@ try:
         content = data.get("content", "")
         if not outfit_set or not filename:
             return web.json_response({"error": "missing params"}, status=400)
-        for val in (outfit_set, filename):
-            if "/" in val or "\\" in val or ".." in val:
-                return web.json_response({"error": "invalid path"}, status=400)
-        file_path = os.path.join(_get_lists_path(), outfit_set, f"{filename}.txt")
-        set_dir = os.path.dirname(file_path)
+        set_dir = _safe_set_dir(_get_lists_path(), outfit_set)
+        if set_dir is None or not _safe_filename(filename):
+            return web.json_response({"error": "invalid path"}, status=400)
+        file_path = os.path.join(set_dir, f"{filename}.txt")
         if not os.path.isdir(set_dir):
             return web.json_response({"error": "set not found"}, status=404)
         with open(file_path, "w", encoding="utf-8") as f:
@@ -323,10 +344,9 @@ try:
 
     @PromptServer.instance.routes.get("/fvmtools/location-files")
     async def _get_location_files(request):
-        location_set = request.rel_url.query.get("set", "")
-        if not location_set or "/" in location_set or "\\" in location_set or ".." in location_set:
+        set_dir = _safe_set_dir(_get_location_lists_path(), request.rel_url.query.get("set", ""))
+        if set_dir is None:
             return web.json_response({"error": "invalid set"}, status=400)
-        set_dir = os.path.join(_get_location_lists_path(), location_set)
         if not os.path.isdir(set_dir):
             return web.json_response({"error": "set not found"}, status=404)
         files = sorted(f[:-4] for f in os.listdir(set_dir) if f.endswith(".txt"))
@@ -338,10 +358,10 @@ try:
         filename = request.rel_url.query.get("file", "")
         if not location_set or not filename:
             return web.json_response({"error": "missing params"}, status=400)
-        for val in (location_set, filename):
-            if "/" in val or "\\" in val or ".." in val:
-                return web.json_response({"error": "invalid path"}, status=400)
-        file_path = os.path.join(_get_location_lists_path(), location_set, f"{filename}.txt")
+        set_dir = _safe_set_dir(_get_location_lists_path(), location_set)
+        if set_dir is None or not _safe_filename(filename):
+            return web.json_response({"error": "invalid path"}, status=400)
+        file_path = os.path.join(set_dir, f"{filename}.txt")
         if not os.path.isfile(file_path):
             return web.json_response({"error": "file not found"}, status=404)
         with open(file_path, "r", encoding="utf-8") as f:
@@ -356,11 +376,10 @@ try:
         content = data.get("content", "")
         if not location_set or not filename:
             return web.json_response({"error": "missing params"}, status=400)
-        for val in (location_set, filename):
-            if "/" in val or "\\" in val or ".." in val:
-                return web.json_response({"error": "invalid path"}, status=400)
-        file_path = os.path.join(_get_location_lists_path(), location_set, f"{filename}.txt")
-        set_dir = os.path.dirname(file_path)
+        set_dir = _safe_set_dir(_get_location_lists_path(), location_set)
+        if set_dir is None or not _safe_filename(filename):
+            return web.json_response({"error": "invalid path"}, status=400)
+        file_path = os.path.join(set_dir, f"{filename}.txt")
         if not os.path.isdir(set_dir):
             return web.json_response({"error": "set not found"}, status=404)
         with open(file_path, "w", encoding="utf-8") as f:
