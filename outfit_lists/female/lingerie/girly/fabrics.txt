@@ -1,0 +1,14 @@
+# slot: fabrics
+# format: fabric_name | formality | family | weight
+microfiber | 0.2 | synthetic | light
+spandex | 0.1 | synthetic | light
+nylon | 0.1 | synthetic | light
+mesh | 0.2 | synthetic | light
+modal | 0.2 | natural | light
+cotton | 0.2 | natural | light
+satin | 0.35 | synthetic | light
+tulle | 0.3 | synthetic | light
+chiffon | 0.4 | natural | light
+silk | 0.5 | natural | light
+velvet | 0.5 | natural | medium
+organza | 0.4 | synthetic | light

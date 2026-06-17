@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# lace bralette | 0.9 | 0.1-0.5 | mesh,satin
+#color# scalloped-lace bralette | 0.85 | 0.1-0.5 | mesh,tulle
+#color# lace bustier | 0.8 | 0.1-0.5 | satin,mesh
+#color# lace longline bra | 0.75 | 0.1-0.5 | mesh,satin
+#color# eyelash-lace bralette | 0.7 | 0.1-0.5 | mesh,tulle
+#color# lace teddy | 0.7 | 0.1-0.5 | mesh,satin
+#color# lace triangle bra | 0.65 | 0.1-0.5 | mesh,nylon
+#color# floral-lace bralette | 0.6 | 0.1-0.5 | mesh,tulle
+#color# lace bodysuit | 0.55 | 0.1-0.5 | mesh,satin
+#color# lace halter bra | 0.5 | 0.1-0.5 | mesh,nylon
+#color# high-neck lace bralette | 0.45 | 0.1-0.5 | mesh,tulle
+#color# lace plunge bra | 0.45 | 0.1-0.5 | mesh,satin

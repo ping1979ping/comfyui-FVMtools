@@ -1,0 +1,9 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# sheer robe | 0.55 | 0.1-0.4 | chiffon,mesh
+#color# kimono wrap | 0.5 | 0.1-0.4 | silk,chiffon
+#color# feather-trim robe | 0.45 | 0.1-0.4 | silk
+#color# short robe | 0.4 | 0.1-0.4 | satin,silk
+#color# ruffle peignoir | 0.35 | 0.1-0.4 | chiffon,tulle
+#color# organza wrap | 0.3 | 0.1-0.4 | organza,chiffon

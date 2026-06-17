@@ -1,0 +1,13 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+thigh-high stockings | 0.7 | 0.2-0.5 | nylon,mesh
+sheer hold-ups | 0.6 | 0.2-0.5 | nylon,mesh
+garter belt | 0.6 | 0.1-0.4 | satin,mesh
+#color# ribbon choker | 0.55 | 0.1-0.4 | satin,silk
+pearl necklace | 0.5 | 0.2-0.5 | satin
+#color# ribbon garter | 0.5 | 0.1-0.4 | satin,silk
+fingerless gloves | 0.35 | 0.1-0.4 | mesh,nylon
+#color# ankle socks | 0.3 | 0.0-0.3 | cotton,nylon
+pearl bracelet | 0.3 | 0.2-0.5 | satin
+body chain | 0.3 | 0.1-0.4 | satin

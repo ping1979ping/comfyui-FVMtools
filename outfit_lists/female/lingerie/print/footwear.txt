@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# strappy heels | 0.7 | 0.2-0.5 | satin,silk
+#color# feather-trim mules | 0.65 | 0.1-0.4 | satin
+#color# peep-toe platforms | 0.6 | 0.2-0.5 | satin,silk
+#color# ankle-strap sandals | 0.55 | 0.2-0.5 | satin
+#color# ribbon-tie heels | 0.5 | 0.2-0.5 | silk,satin
+#color# slide mules | 0.5 | 0.1-0.4 | satin
+#color# stiletto pumps | 0.45 | 0.2-0.5 | satin,silk
+#color# platform heels | 0.45 | 0.2-0.5 | satin
+barefoot | 0.4 | 0.0-0.3 | cotton
+#color# kitten heels | 0.35 | 0.2-0.5 | satin

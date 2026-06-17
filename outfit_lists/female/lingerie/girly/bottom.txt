@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# bow-back briefs | 0.9 | 0.1-0.4 | satin,cotton
+#color# ruffle-trim briefs | 0.85 | 0.1-0.4 | chiffon,cotton
+#color# polka-dot briefs | 0.8 | 0.0-0.4 | cotton,modal
+#color# ribbon-tie briefs | 0.75 | 0.1-0.4 | satin,silk
+#color# heart-print boyshorts | 0.7 | 0.0-0.4 | cotton,modal
+#color# frill-edge briefs | 0.65 | 0.1-0.4 | tulle,cotton
+#color# sweetheart hipster briefs | 0.6 | 0.1-0.4 | satin,cotton
+#color# gingham briefs | 0.55 | 0.0-0.4 | cotton,modal
+#color# daisy-trim thong | 0.5 | 0.1-0.4 | cotton,nylon
+#color# scallop-edge briefs | 0.45 | 0.1-0.4 | satin,modal
