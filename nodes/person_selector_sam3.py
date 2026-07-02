@@ -1,8 +1,10 @@
 """PersonSelectorSAM3 — SAM3-only person selection with text-prompt masks.
 
-Uses SAM3 text grounding exclusively for ALL mask types (body, face, head, hair, aux).
-No BiSeNet, no SAM2, no peeling, no depth-overlap-resolution needed —
+Uses SAM3 text grounding for body, face, head, hair, and aux masks.
+No SAM2, no peeling, no depth-overlap-resolution needed —
 SAM3 grounding produces non-overlapping masks by design.
+BiSeNet runs per face only to derive the facial subtype masks
+(facial_skin/eyes/mouth/neck/accessories), same derivation as PersonSelectorMulti.
 """
 import torch
 import numpy as np
@@ -10,7 +12,9 @@ import cv2
 
 from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
-from .utils.masker import MaskGenerator, run_sam3_grounding, sam3_prepare, sam3_ground, assign_masks_to_faces, assign_masks_by_body_overlap
+from .utils.masker import (MaskGenerator, run_sam3_grounding, sam3_prepare, sam3_ground,
+                           assign_masks_to_faces, assign_masks_by_body_overlap,
+                           MASK_TYPE_LABELS, _clip_labels_to_body)
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask
 from .utils.yolo_detector import (
     detect_objects,
@@ -41,6 +45,9 @@ SAM3_MASK_CONFIG = {
     "hair":  ("hair", 0.40),
 }
 
+# Facial subtype masks derived from BiSeNet parsing (not SAM3-groundable)
+BISENET_SUBTYPES = ["facial_skin", "eyes", "mouth", "neck", "accessories"]
+
 # Preset aux prompts (name → (prompt, threshold))
 AUX_PRESETS = {
     "none":           None,
@@ -57,22 +64,26 @@ AUX_PRESETS = {
 
 
 class PersonSelectorSAM3:
-    """SAM3-only person selector. Uses text grounding for all mask types.
+    """SAM3-only person selector. Uses text grounding for all primary mask types.
 
-    Replaces BiSeNet + SAM2 with pure SAM3 text-prompt segmentation.
-    Non-overlapping masks by design — no peeling or deconfliction needed.
+    Replaces SAM2 with pure SAM3 text-prompt segmentation. Non-overlapping masks
+    by design — no peeling or deconfliction needed. BiSeNet fills the facial
+    subtype masks (facial_skin/eyes/mouth/neck/accessories) per face.
     """
 
     _face_analyzer = None
     _last_det_size = None
+    _bisenet_subtype_warned = False
 
     MAX_REFERENCES = 10
     AUTO_FLOOR = 0.10
 
     DESCRIPTION = (
         "SAM3-powered person selector — uses text grounding for all masks.\n\n"
-        "Produces body, face, head (face+hair), and aux masks per person using\n"
-        "SAM3's natural language segmentation. Non-overlapping masks by design.\n\n"
+        "Produces body, face, head (face+hair), hair, and aux masks per person using\n"
+        "SAM3's natural language segmentation. Non-overlapping masks by design.\n"
+        "Facial subtypes (facial_skin, eyes, mouth, neck, accessories) come from\n"
+        "BiSeNet face parsing — usable as mask_type in the PersonDetailer.\n\n"
         "Aux mask presets: upper/lower body, clothing, hands, feet, arms, legs,\n"
         "headless body, or any custom text prompt.\n\n"
         "Connect LoadSAM3Model → sam3_model. No SAM2 or BiRefNet needed."
@@ -244,9 +255,16 @@ class PersonSelectorSAM3:
     # ── SAM3 Grounding Pipeline ──
 
     def _run_all_sam3_masks(self, sam3_config, cur_rgb, cur_faces, aux_preset, aux_custom_prompt, aux_threshold):
-        """Run SAM3 grounding for all mask types + aux. Returns per-face mask dicts."""
+        """Run SAM3 grounding for all mask types + aux; BiSeNet for facial subtypes.
+
+        Returns:
+            (per_face, aux_stats) — per_face: list of {mask_type: [1,H,W] tensor},
+            aux_stats: {"counts": {fi: 0|1}, "unassigned_mask": [H,W] np.float32,
+                        "unassigned_count": int} for the PERSON_DATA aux contract.
+        """
         h, w = cur_rgb.shape[:2]
         face_count = len(cur_faces)
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
         # Encode the image ONCE; ground every prompt against the shared embedding.
         # (SAM3's vision backbone is the dominant cost — this replaces 4-5 encodes
@@ -362,13 +380,42 @@ class PersonSelectorSAM3:
             else:
                 masks["aux"] = empty_mask(h, w)
 
-            # Fill remaining mask types with empty (PersonDetailer expects all 9)
-            for mt in ["facial_skin", "eyes", "mouth", "neck", "accessories"]:
-                masks[mt] = empty_mask(h, w)
+            # Facial subtypes via BiSeNet, clipped to this person's SAM3 body mask
+            # against cross-person leakage — same derivation as PersonSelectorMulti.
+            try:
+                label_map = MaskGenerator._run_bisenet(cur_rgb, cur_faces[fi], device)
+                body_np = masks["body"][0].cpu().numpy()
+                if body_np.max() > 0.5:
+                    label_map = _clip_labels_to_body(label_map, body_np)
+                for mt in BISENET_SUBTYPES:
+                    mask_np = np.isin(label_map, list(MASK_TYPE_LABELS[mt])).astype(np.float32)
+                    masks[mt] = mask2tensor(mask_np)
+            except Exception as e:
+                if not PersonSelectorSAM3._bisenet_subtype_warned:
+                    print(f"[PersonSelectorSAM3] BiSeNet subtype masks unavailable ({e}) — "
+                          f"{'/'.join(BISENET_SUBTYPES)} stay empty")
+                    PersonSelectorSAM3._bisenet_subtype_warned = True
+                for mt in BISENET_SUBTYPES:
+                    masks[mt] = empty_mask(h, w)
 
             per_face.append(masks)
 
-        return per_face
+        # Aux stats for the PERSON_DATA contract (aux_part_counts / aux_unassigned_masks)
+        aux_counts = {fi: (1 if float(per_face[fi]["aux"].max()) > 0.5 else 0)
+                      for fi in range(face_count)}
+        unassigned_np = np.zeros((h, w), dtype=np.float32)
+        unassigned_count = 0
+        if aux_results:
+            used = set(aux_assignment.values())
+            for mi, (m, score, bbox) in enumerate(aux_results):
+                if mi in used:
+                    continue
+                unassigned_np = np.maximum(unassigned_np, (m > 0.5).astype(np.float32))
+                unassigned_count += 1
+        aux_stats = {"counts": aux_counts, "unassigned_mask": unassigned_np,
+                     "unassigned_count": unassigned_count}
+
+        return per_face, aux_stats
 
     # ── YOLO aux pipeline (optional, replaces SAM3 text-prompt aux) ──
 
@@ -710,7 +757,7 @@ class PersonSelectorSAM3:
                 assignments = {}
 
             # ── SAM3 grounding: all masks at once ──
-            per_face_masks = self._run_all_sam3_masks(
+            per_face_masks, sam3_aux_stats = self._run_all_sam3_masks(
                 sam3_model, cur_rgb, cur_faces, aux_preset, aux_custom_prompt, aux_threshold)
 
             # Build per-ref masks from per-face masks via assignments
@@ -749,6 +796,24 @@ class PersonSelectorSAM3:
                 merged_unassigned = np.maximum(yolo_unassigned, extra_unassigned_acc)
                 aux_unassigned_batches.append(
                     torch.from_numpy(merged_unassigned).unsqueeze(0)  # [1, H, W]
+                )
+            elif aux_preset != "none":
+                # SAM3 text-prompt aux: per-ref counts + unassigned mask
+                # (parity with the YOLO aux pathway above)
+                counts_per_ref = {ri: 0 for ri in range(num_refs)}
+                unassigned_np = sam3_aux_stats["unassigned_mask"]
+                for fi, count in sam3_aux_stats["counts"].items():
+                    if count <= 0:
+                        continue
+                    if fi in fi_to_ri:
+                        counts_per_ref[fi_to_ri[fi]] += count
+                    else:
+                        # aux of an unmatched face folds into unassigned
+                        unassigned_np = np.maximum(
+                            unassigned_np, per_face_masks[fi]["aux"][0].cpu().numpy())
+                aux_part_counts_batches.append(counts_per_ref)
+                aux_unassigned_batches.append(
+                    torch.from_numpy(unassigned_np).unsqueeze(0)  # [1, H, W]
                 )
 
             ref_masks = {mt: [] for mt in MASK_TYPES}
@@ -904,7 +969,6 @@ class PersonSelectorSAM3:
             person_data[f"{mt}_masks"] = final_masks[mt]
         if aux_preset != "none" or use_yolo_aux:
             person_data["aux_masks"] = final_masks["aux"]
-        if use_yolo_aux:
             person_data["aux_part_counts"] = aux_part_counts_batches
             if aux_unassigned_batches:
                 person_data["aux_unassigned_masks"] = torch.cat(aux_unassigned_batches, dim=0)
