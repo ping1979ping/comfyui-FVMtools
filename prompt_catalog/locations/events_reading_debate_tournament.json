@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "classroom desks rearranged with a speaker podium up front and two judge desks with ballots and timers.",
+    "background": "chalkboard with a posted round schedule, american classroom flag in the corner, coats piled on rear desks. {taped paper wall sign with black print \"PHSSL DISTRICT TOURNAMENT\" and subtitle \"Round 3 - Room 214\"|dry-erase board with marker print \"LINCOLN-DOUGLAS PAIRINGS\" and a hand-drawn grid|cafeteria banner with print \"WELCOME DEBATERS\" and subtitle \"Hosted by Berks County Schools\"|}",
+    "props_seating": "podium, flow-pad legal pads, digital timer on the judge desk.",
+    "type": "high school classroom converted into a debate round room, saturday morning.",
+    "floor": "speckled beige linoleum tile."
+  }
+}

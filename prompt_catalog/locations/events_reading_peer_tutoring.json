@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "two-seat study table with open textbooks, graphing calculator and loose worksheets.",
+    "background": "library shelving with labeled spines, a rolling whiteboard covered in algebra notes. {cork bulletin board with cut-paper print \"PEER TUTORING CENTER\" and subtitle \"Math - Science - English\"|laminated door sign with blue print \"TUTORING TODAY 3-5 PM\" and subtitle \"Walk-ins Welcome\"|motivational poster with bold print \"ASK. LEARN. PASS IT ON.\"|}",
+    "props_seating": "rolling whiteboard, stack of practice worksheets, pencil cup.",
+    "type": "learning commons corner of a school library, quiet afternoon.",
+    "floor": "low-pile carpet in heathered gray."
+  }
+}

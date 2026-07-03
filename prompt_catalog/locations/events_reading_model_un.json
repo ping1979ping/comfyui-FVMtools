@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "tiered desks with folded country placards, open laptops and draft resolution papers.",
+    "background": "dais with committee chairs behind name plates, projection screen showing the speakers list. {dais backdrop with print \"BERKS MODEL UNITED NATIONS\" and subtitle \"General Assembly\"|folded country placard with print \"DELEGATION OF NORWAY\"|agenda board with print \"TOPIC: WATER SECURITY\" and a speakers list|}",
+    "props_seating": "gavel on the dais, placard stacks, note-passing box.",
+    "type": "university lecture hall hosting a model UN committee session.",
+    "floor": "tiered floor with dark carpet and step lighting."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "scorer table with flip-number scoreboard, game sheets and a bin of alternating-color pinnies.",
+    "background": "second court beyond a divider curtain, teams warming up, folded bleachers along the wall. {red-colored banner with white college font print \"Reading Baskets\" and subtitle \"Training Days\"|scorer-table skirt with print \"BERKS WINTER CLASSIC\" and subtitle \"Court 2\"|wall poster with print \"TOURNAMENT BRACKET\" and a marker-filled grid|}",
+    "props_seating": "scorer table, ball rack, stack of game sheets.",
+    "type": "multi-court community recreation gym during a weekend tournament.",
+    "floor": "green plastic sport tile court with white lines."
+  }
+}

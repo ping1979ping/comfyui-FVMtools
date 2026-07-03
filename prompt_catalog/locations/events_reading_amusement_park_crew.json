@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "ride queue rails with a shaded canopy, operator podium with a control panel and microphone.",
+    "background": "white wooden coaster structure rising over the midway, string pennants between lamp posts. {ride entrance sign with print \"COMET - CLASSIC WOODEN COASTER\" and a lit arrow border|striped height-check board with print \"YOU MUST BE THIS TALL TO RIDE\"|food stand menu with print \"SWEETS & TREATS\" and chocolate bar graphics|}",
+    "props_seating": "operator podium, queue rails, cooling fan on a pole.",
+    "type": "amusement park midway on a warm summer afternoon.",
+    "floor": "broom-finished concrete midway path."
+  }
+}

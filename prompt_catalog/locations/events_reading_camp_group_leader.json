@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "paint-splattered picnic tables with brush jars, lanyard string bins and drying racks of camper paintings.",
+    "background": "screened pavilion walls looking onto a green field, camp cabins in the distance. {painted plywood sign with brush print \"ARTS & CRAFTS\" and a rainbow handprint border|group flag on a pole with felt print \"CABIN 7 - TIMBERWOLVES\"|daily activity board with marker print \"TODAY: CANOE RACES 3PM\"|}",
+    "props_seating": "drying rack, paint jars, plastic bead organizers.",
+    "type": "screened arts-and-crafts pavilion at a berks county summer camp.",
+    "floor": "worn wooden deck boards flecked with paint."
+  }
+}

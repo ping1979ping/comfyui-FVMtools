@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "college booth with branded tablecloth, brochure fans, pennant flags and a bowl of freebie pens.",
+    "background": "long arena concourse with more booths, roll-up banners and slow-moving crowds of visitors. {step-and-repeat backdrop with print \"BERKS COUNTY COLLEGE FAIR\" and subtitle \"Santander Arena - Fall 2024\"|booth header with print \"PENN STATE BERKS\" and subtitle \"Admissions\"|table sign with print \"CAREER PATHWAYS\" and subtitle \"Ask Me About Internships\"|}",
+    "props_seating": "brochure stand, tote bags with printed logos, freebie pen bowl.",
+    "type": "arena concourse converted into a college fair, fluorescent lighting.",
+    "floor": "sealed gray concrete concourse floor."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "visitor check-in desk with a sign-in tablet, visitor sticker rolls and a small american flag.",
+    "background": "school crest painted on an accent wall, trophy shelf and framed student photos. {wall-mounted welcome sign with print \"WELCOME VISITORS\" beneath a painted school crest|pull-up banner with print \"STUDENT AMBASSADORS\" and subtitle \"Ask Us Anything\"|digital hallway screen with print \"CAMPUS TOUR STARTS 9:00 AM\"|}",
+    "props_seating": "check-in desk, visitor sticker rolls, campus map stand.",
+    "type": "main office lobby of a modern high school, morning.",
+    "floor": "polished light terrazzo."
+  }
+}

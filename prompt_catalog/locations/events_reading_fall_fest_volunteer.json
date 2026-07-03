@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "info booth folding table with event maps, wristband rolls and a cash box, hay bales stacked beside.",
+    "background": "avenue lined with white vendor tents, string-light crossings and a small stage in the distance. {street-spanning banner with print \"WEST READING FALL FEST\" and subtitle \"Penn Avenue - October 2024\"|vendor tent header with print \"INFO BOOTH\"|sandwich board with chalk print \"LIVE MUSIC 2PM - MAIN STAGE\"|}",
+    "props_seating": "hay bales, pumpkin stack, festival map stand.",
+    "type": "pedestrianized main-street festival block on a crisp fall afternoon.",
+    "floor": "asphalt street scattered with a few fallen leaves."
+  }
+}

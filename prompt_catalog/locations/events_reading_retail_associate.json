@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "clothing rounders and a folding table mid-restock with stacked jeans and a sizing chart card.",
+    "background": "fitting room corridor with numbered doors, wall of shelved denim to the ceiling. {suspended department sign with print \"WOMEN'S DENIM\"|red sale sign on a rack with print \"CLEARANCE 40% OFF\"|fitting room entry sign with print \"6 ITEM LIMIT - WE'RE HAPPY TO HELP\"|}",
+    "props_seating": "restock cart, hanger bin, handheld price scanner.",
+    "type": "big-box apparel department on a weekend shift.",
+    "floor": "light gray polished concrete with department carpet islands."
+  }
+}

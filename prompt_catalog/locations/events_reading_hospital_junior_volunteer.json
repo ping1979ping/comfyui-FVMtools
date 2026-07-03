@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "curved information desk with a visitor log, hand-sanitizer stand and wheelchair parked alongside.",
+    "background": "bright lobby atrium with a gift shop window display and people crossing with visitor stickers. {overhead wayfinding sign with print \"MAIN LOBBY - GIFT SHOP - ELEVATORS B\"|brushed-metal wall lettering with print \"READING HOSPITAL\" beside a health-system logo|desk sign with print \"INFORMATION - VOLUNTEERS ON DUTY\"|}",
+    "props_seating": "wheelchair, visitor sticker printer, flower delivery cart.",
+    "type": "hospital main lobby, calm and brightly lit.",
+    "floor": "high-gloss terrazzo with inlaid direction lines."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "long trestle tables of tower PCs and curved monitors, tangled headset cables and mechanical keyboards glowing.",
+    "background": "darkened hall with RGB case lighting, a projector screen with a tournament bracket, pizza box stack. {projector screen with bracket print \"BERKS LAN - ROUND OF 16\"|table tent with print \"STATION 12\"|sponsor banner with print \"GAME FUEL\" and a lightning-bolt logo|}",
+    "props_seating": "tower PCs, monitor rows, pizza boxes on a side table.",
+    "type": "community hall converted into an overnight LAN venue, dim with colored glow.",
+    "floor": "taped-down cable runs across a scuffed hall floor."
+  }
+}

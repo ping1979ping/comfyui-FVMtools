@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "row of folding tables with welcome packets, lanyard trays and bottled water. a few parents talking in small groups.",
+    "background": "glass trophy cases along a painted cinder-block wall, red double doors leading to the gym. {red vinyl banner with white college-serif print \"READING HIGH SCHOOL\" and subtitle \"Welcome Class of 2029\"|white poster board with hand-drawn red arrows and marker print \"FRESHMAN ORIENTATION\" and subtitle \"Start Here\"|red table-skirt sign with white block print \"RED KNIGHTS PRIDE\" and subtitle \"Orientation Day 2025\"|}",
+    "props_seating": "folding table with white tablecloth, stacks of orientation folders, cardboard box of lanyards.",
+    "type": "main lobby of a large american high school, bright morning light through entrance glass.",
+    "floor": "polished terrazzo floor with a red accent stripe."
+  }
+}

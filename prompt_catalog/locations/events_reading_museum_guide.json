@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "stanchion ropes guiding past a display case of painted chests and fraktur documents.",
+    "background": "high gallery hall with picture rails, skylight diffusers and a marble doorway to the next wing. {gallery entry banner with print \"READING PUBLIC MUSEUM\" and subtitle \"Arboretum - Planetarium - Galleries\"|exhibit label plaque with print \"PENNSYLVANIA GERMAN FOLK ART\"|stanchion sign with print \"PLEASE DO NOT TOUCH\"|}",
+    "props_seating": "display case, folding gallery stool, brochure rack.",
+    "type": "classical museum gallery, soft even conservation lighting.",
+    "floor": "polished oak gallery floor with a center runner."
+  }
+}

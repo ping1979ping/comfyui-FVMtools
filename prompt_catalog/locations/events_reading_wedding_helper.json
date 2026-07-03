@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "welcome table with a guestbook, pen stand, favor boxes stacked in neat rows.",
+    "background": "stone castle-style venue facade with ivy, string lights over a terrace of cocktail tables. {welcome easel with calligraphy print \"The Wedding of Emma & Jake - June 14, 2025\"|ornate mirror seating chart with painted print \"FIND YOUR SEAT\"|wooden directional sign with print \"CEREMONY GARDEN\" and a carved arrow|}",
+    "props_seating": "guestbook table, favor boxes, easel stand.",
+    "type": "historic stone venue terrace before the ceremony, golden hour.",
+    "floor": "slate flagstone terrace pavers."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "player pod with a tournament PC, branded chair and a small flag of the team color.",
+    "background": "LED wall washing the stage in blue, caster desk silhouettes and audience seating in the dark. {stage LED wall with print \"READING ESPORTS INVITATIONAL\" and subtitle \"Grand Finals\"|player pod sign with print \"TEAM BERKS BLUE\"|caster desk front panel with glowing print \"LIVE\"|}",
+    "props_seating": "gaming chairs, pod dividers, headset stands.",
+    "type": "esports arena stage under show lighting.",
+    "floor": "black stage decking with cable ramps."
+  }
+}

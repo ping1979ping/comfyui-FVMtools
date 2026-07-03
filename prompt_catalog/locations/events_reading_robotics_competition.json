@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "pit table with an open robot chassis, toolbox drawers, battery chargers and a laptop with wiring diagrams.",
+    "background": "competition field behind polycarbonate walls, bleachers with team color sections, referee in a striped shirt. {stage-truss banner with white print \"FIRST ROBOTICS COMPETITION\" and subtitle \"FMA District Event - Reading 2025\"|pit station header with large number print \"TEAM 5113\" and subtitle \"Pit Crew Only\"|sponsor wall with mixed logo print and center tagline \"STEM STARTS HERE\"|}",
+    "props_seating": "rolling toolbox, robot cart, coiled tether cable.",
+    "type": "indoor arena floor hosting a district robotics competition, loud and bright.",
+    "floor": "gray concrete arena floor with taped pit lanes."
+  }
+}

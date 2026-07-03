@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "front counter with dual registers, straw dispenser and a warming rack of wrapped burgers.",
+    "background": "stainless kitchen line with fry station timers and heat lamps, drive-thru headset hub on the wall. {backlit menu board with photo print \"COMBO MEALS\" and numbered value items|drive-thru window decal with print \"NOW HIRING - FLEXIBLE SHIFTS\"|wall frame with print \"EMPLOYEE OF THE MONTH\" and a small photo grid|}",
+    "props_seating": "register terminals, drink carrier stacks, fry scoop station.",
+    "type": "fast-food restaurant counter area during a steady shift.",
+    "floor": "red quarry tile with anti-slip mats behind the counter."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "white desk cluster with dual monitors, a branded notebook and a swivel chair pulled aside.",
+    "background": "glass-walled meeting room with people around a table, city window light beyond. {glass entry door vinyl with print \"SUITE 300 - MARKETING & DESIGN\"|reception wall with dimensional logo print \"PENN SQUARE PARTNERS\"|whiteboard with print \"SPRINT BOARD\" and columns of sticky notes|}",
+    "props_seating": "dual-monitor workstation, sticky-note wall, watering-needed desk plant.",
+    "type": "open-plan office suite in a downtown building, mid-morning.",
+    "floor": "light gray carpet tiles with a darker walkway strip."
+  }
+}

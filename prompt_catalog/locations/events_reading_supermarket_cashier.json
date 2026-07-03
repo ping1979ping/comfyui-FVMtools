@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "checkout lane with a moving belt, bag carousel and candy rack, a loaded shopping cart waiting.",
+    "background": "grocery aisles receding under fluorescent lights, produce section color in the far corner. {hanging aisle sign with print \"AISLE 7 - CEREAL - COFFEE\"|lighted lane pole with number print \"5\" and subtitle \"LANE OPEN\"|weekly-ad poster with print \"REDNER'S WAREHOUSE MARKETS\" and subtitle \"Fresh Savings Every Day\"|}",
+    "props_seating": "bag carousel, hand basket stack, impulse candy rack.",
+    "type": "regional supermarket checkout area, weekday afternoon.",
+    "floor": "polished white commercial tile with a glossy sheen."
+  }
+}

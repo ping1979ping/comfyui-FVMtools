@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "team bench with folded towels, water cooler with stacked paper cups, rolling ball cart full of volleyballs.",
+    "background": "net stretched across the court, banners of past championship seasons high on the wall. {gym wall banner with print \"LADY KNIGHTS VOLLEYBALL\" and subtitle \"District Champions 2024\"|bench-side sign with block print \"HOME\"|record board with vinyl letter print \"SEASON RECORD 12-4\"|}",
+    "props_seating": "ball cart, water cooler, stat clipboard on the bench.",
+    "type": "high school gymnasium during afternoon practice.",
+    "floor": "honey-toned wood gym floor with fresh court lines."
+  }
+}

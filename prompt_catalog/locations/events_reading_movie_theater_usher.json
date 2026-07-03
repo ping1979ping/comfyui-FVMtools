@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "glass concession counter with a popcorn machine glowing warm, candy rows lit from below.",
+    "background": "carpeted lobby with poster-lined corridor to the auditoriums, velvet ropes at the ticket stand. {internal marquee letter board with print \"NOW SHOWING - IMAX 7:30\"|backlit poster frame standee with print \"COMING SOON\"|concession menu board with print \"LARGE POPCORN $9.50 - FREE REFILLS\"|}",
+    "props_seating": "ticket tear stand, popcorn machine, broom-and-pan kept discreetly at the wall.",
+    "type": "movie theater lobby during an evening showtime rush.",
+    "floor": "dark patterned cinema carpet with subtle sparkle."
+  }
+}

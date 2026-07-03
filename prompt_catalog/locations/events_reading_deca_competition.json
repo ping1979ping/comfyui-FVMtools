@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "hallway prep chairs with competitors reviewing index cards, a staffed check-in table with time slips.",
+    "background": "hotel conference corridor with patterned carpet, sconce lighting and directional totems. {hotel conference banner with print \"STATE CAREER DEVELOPMENT CONFERENCE\" and subtitle \"Hershey, PA 2025\"|role-play room door sign with print \"MARKETING - SERIES EVENT\" and a judge schedule|photo backdrop with a large diamond logo print \"DECA\"|}",
+    "props_seating": "check-in table, easel with room map, water dispenser cart.",
+    "type": "conference hotel corridor between role-play rooms, competition day.",
+    "floor": "densely patterned hotel carpet in blue and gold."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "vendor booth rows with longboxes of comics, banner stands of poster art and a glass pin case.",
+    "background": "arena floor crowded with attendees in colorful costumes, hanging aisle number signs. {concourse banner with print \"BERKS COMIC CON\" and subtitle \"Santander Arena - 2025\"|artist alley table sign with print \"ARTIST ALLEY - TABLE 42\"|photo-op backdrop with comic halftone print \"POW!\" in a starburst|}",
+    "props_seating": "longboxes, banner stands, badge scanner at the aisle.",
+    "type": "arena exhibition floor during a pop-culture convention.",
+    "floor": "broad gray event flooring with taped aisle lines."
+  }
+}

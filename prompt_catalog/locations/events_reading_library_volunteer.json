@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject.",
+    "midground": "wooden book cart loaded with returns, spine labels facing out, a scanning station at the desk corner.",
+    "background": "tall stacks in warm wood, reading tables with green-shaded lamps, arched library windows. {shelf-end sign with print \"YOUNG ADULT FICTION\"|easel poster with print \"SUMMER READING PROGRAM 2025\" and subtitle \"Sign Up Today\"|counter plate with print \"RETURNS\"|}",
+    "props_seating": "book cart, date-due stamp station, display stand of staff picks.",
+    "type": "historic public library main floor, hushed afternoon.",
+    "floor": "parquet wood floor with worn brass edge strips."
+  }
+}
