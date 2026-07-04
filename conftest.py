@@ -17,7 +17,7 @@ def mock_comfy_modules():
         "comfy", "comfy.model_management", "comfy.utils",
         "comfy.sd", "comfy.samplers", "comfy.sample",
         "comfy.model_patcher", "comfy.controlnet",
-        "folder_paths", "server", "execution",
+        "folder_paths", "server", "execution", "latent_preview",
         "impact", "impact.core", "impact.subcore",
         "segment_anything",
     ]

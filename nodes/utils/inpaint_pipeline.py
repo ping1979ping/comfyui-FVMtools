@@ -235,6 +235,19 @@ def _boundary_color_correction(decoded_np, orig_np, mask_np):
     return np.clip(corrected, 0, 1).astype(np.float32)
 
 
+def _flatten_video_frames(decoded):
+    """Normalize VAE-decoded pixels to IMAGE layout [B, H, W, C].
+
+    Video VAEs (e.g. WanVAE behind Wan/Krea checkpoints) decode a single
+    image to [B, T, H, W, C] with T=1, while image VAEs (SDXL, Flux,
+    Z-Image) already return [B, H, W, C]. Mirrors the 5D flatten in core
+    VAEDecode so the stitch/encode paths always see 4D.
+    """
+    if decoded.ndim == 5:
+        return decoded.reshape(-1, decoded.shape[-3], decoded.shape[-2], decoded.shape[-1])
+    return decoded
+
+
 def stitch_back(original_image, decoded_crop, blend_mask_orig, crop, stitch_info,
                 denoise=0.5):
     """Stitch decoded crop back into original image.
@@ -505,7 +518,7 @@ def inpaint_slot(
         # VAE decode
         if _PROFILE:
             _sync(); _d0 = time.perf_counter()
-        decoded = vae.decode(samples)  # [1, tH, tW, C]
+        decoded = _flatten_video_frames(vae.decode(samples))  # [1, tH, tW, C]
         if _PROFILE:
             _sync(); _prof["decode"] += time.perf_counter() - _d0
 
