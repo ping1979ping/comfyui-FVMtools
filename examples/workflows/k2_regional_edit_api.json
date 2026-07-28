@@ -1,0 +1,186 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "krea2\\krea2_turbo_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "Krea 2 transformer"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Qwen3-VL text encoder (type=krea2)"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "Qwen image VAE"
+    }
+  },
+  "10": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Source image"
+    },
+    "inputs": {
+      "image": "example.png",
+      "upload": "image"
+    }
+  },
+  "30": {
+    "class_type": "FVM_K2_Region",
+    "_meta": {
+      "title": "Edit box"
+    },
+    "inputs": {
+      "name": "EditBox",
+      "prompt": "a woman in a bright yellow raincoat",
+      "x": 536,
+      "y": 64,
+      "width": 440,
+      "height": 940,
+      "role": "subject",
+      "priority": 100,
+      "enabled": true
+    }
+  },
+  "31": {
+    "class_type": "FVM_K2_EditLatent",
+    "_meta": {
+      "title": "K2 Edit Latent"
+    },
+    "inputs": {
+      "image": [
+        "10",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "latent_feather": 64,
+      "grow_px": 0,
+      "edit_entire_image": false,
+      "regions": [
+        "30",
+        0
+      ]
+    }
+  },
+  "32": {
+    "class_type": "FVM_K2_Compose",
+    "_meta": {
+      "title": "K2 Compose (edit)"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "clip": [
+        "2",
+        0
+      ],
+      "global_prompt": "candid full body photo in a sunlit park, 35mm, natural light",
+      "negative_prompt": "",
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1,
+      "regions": [
+        "30",
+        0
+      ]
+    }
+  },
+  "33": {
+    "class_type": "FVM_K2_Sampler",
+    "_meta": {
+      "title": "K2 Regional Sampler"
+    },
+    "inputs": {
+      "model": [
+        "32",
+        0
+      ],
+      "positive": [
+        "32",
+        1
+      ],
+      "negative": [
+        "32",
+        2
+      ],
+      "latent": [
+        "31",
+        0
+      ],
+      "plan": [
+        "32",
+        5
+      ],
+      "seed": 3132,
+      "steps": 8,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 0.75
+    }
+  },
+  "34": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "33",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "35": {
+    "class_type": "FVM_K2_EditComposite",
+    "_meta": {
+      "title": "K2 Edit Composite"
+    },
+    "inputs": {
+      "source": [
+        "10",
+        0
+      ],
+      "edited": [
+        "34",
+        0
+      ],
+      "mask": [
+        "31",
+        1
+      ],
+      "composite_feather": 48,
+      "strength": 1.0
+    }
+  },
+  "36": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "35",
+        0
+      ],
+      "filename_prefix": "k2_edited"
+    }
+  }
+}

@@ -536,6 +536,24 @@ try:
         "FVM_Ideogram_BoxJitter":     "JB · Ideogram Box Jitter",
     }
 
+    # ── K2 Lab — Krea 2 regional control suite ──
+    # Eigenständiges Untermodul mit eigener Registrierung, damit ein Fehler dort
+    # den Rest von FVMtools nicht mitreißt.
+    try:
+        from .nodes.k2 import (
+            NODE_CLASS_MAPPINGS as _K2_CLASSES,
+            NODE_DISPLAY_NAME_MAPPINGS as _K2_NAMES,
+        )
+
+        NODE_CLASS_MAPPINGS.update(_K2_CLASSES)
+        NODE_DISPLAY_NAME_MAPPINGS.update(_K2_NAMES)
+        print(f"[FVMtools] K2 Lab: {len(_K2_CLASSES)} Krea-2-Nodes registriert")
+    except Exception as _k2_error:  # pragma: no cover
+        import traceback
+
+        print(f"[FVMtools] K2 Lab konnte nicht geladen werden: {_k2_error}")
+        traceback.print_exc()
+
     WEB_DIRECTORY = "./web/js"
 except ImportError:
     # Running outside ComfyUI context (e.g. pytest) — skip node registration

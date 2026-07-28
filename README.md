@@ -21,8 +21,9 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
 - **Outfit prompt builder** — 40+ themed outfit sets, seed-controlled, with `#color#` tag integration and in-browser list editing
 - **JB (JSON Builder)** — universal JSON-prompt assembly suite. Five nodes: `JB · Outfit Block` and `JB · Location Block` (one-shot combos with built-in palette + Edit List), `JB · Builder` (hand-author a tree of `key:value` rows with indent-based nesting + Insert From Catalog dropdown + Edit Catalog modal), `JB · Stitcher` (deep-merge N JSON fragments under one title, dynamic input slots), and `JB · Extractor` (pull a sub-tree by dot-path). Output is plain string (strict JSON or loose-keys, no-key-quotes form) ready for any CLIPTextEncode. See [JB reference workflow](examples/workflows/jb_v1_minimal.md).
 - **StructPromptMaker (SMP, legacy)** — earlier multi-stage pipeline (Outfit / Color / Location generators, deep-merge Aggregator, regional StructuredPromptAssembler bridging into SAM3 + PersonDetailer, SidecarSaver). 13 nodes; superseded by the JB suite for most use cases but kept fully functional. See [SMP reference workflow](examples/workflows/smp_v1_minimal.md).
+- **K2 Lab (Krea 2 regional control)** — 21 nodes for pixel-space region prompting on Krea 2: a spatial attention router that binds each region's text tokens to the image tokens inside its box, strict regional LoRA routing (two characters, two LoRAs, **one** denoising pass — no crop compositing, works on FP8/INT8 checkpoints), `txtfusion.projector` control incl. exact extraction from projector LoRAs, per-region face refinement, regional editing and K2Lab project import/export. See [K2 Lab guide](documentation/K2_LAB.md).
 - **Configurable model paths** — fallback paths via `outfit_config.ini` when models are in non-standard locations
-- **Zero extra dependencies for Color/Fashion/JB tools** — only numpy (already in ComfyUI). The dict pipelines additionally use pydantic 2 (already in the ComfyUI venv).
+- **Zero extra dependencies for Color/Fashion/JB/K2 tools** — only numpy (already in ComfyUI). The dict pipelines additionally use pydantic 2 (already in the ComfyUI venv).
 
 ---
 
@@ -45,6 +46,7 @@ A comprehensive ComfyUI custom node pack for **face-aware detailing**, **color p
   - [Prompt Color Replace](#9-prompt-color-replace)
 - [Node Reference -- Fashion Tools](#node-reference----fashion-tools)
   - [Outfit Generator](#10-outfit-generator)
+- [K2 Lab -- Krea 2 Regional Control](documentation/K2_LAB.md)
 - [Color Tag Reference](#color-tag-reference)
 - [Outfit Set Customization](#outfit-set-customization)
 - [Z-Image Turbo Compatibility](#z-image-turbo-compatibility)

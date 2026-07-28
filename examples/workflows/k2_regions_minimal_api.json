@@ -1,0 +1,179 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "krea2\\krea2_turbo_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "Krea 2 transformer"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Qwen3-VL text encoder (type=krea2)"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "Qwen image VAE"
+    }
+  },
+  "20": {
+    "class_type": "FVM_K2_Region",
+    "_meta": {
+      "title": "Region: Anna (left)"
+    },
+    "inputs": {
+      "name": "Anna",
+      "prompt": "a blonde woman in a red dress",
+      "x": 48,
+      "y": 64,
+      "width": 440,
+      "height": 940,
+      "role": "subject",
+      "priority": 100,
+      "enabled": true
+    }
+  },
+  "21": {
+    "class_type": "FVM_K2_Region",
+    "_meta": {
+      "title": "Region: Bea (right)"
+    },
+    "inputs": {
+      "regions": [
+        "20",
+        0
+      ],
+      "name": "Bea",
+      "prompt": "a dark-haired woman in a blue coat",
+      "x": 536,
+      "y": 64,
+      "width": 440,
+      "height": 940,
+      "role": "subject",
+      "priority": 99,
+      "enabled": true
+    }
+  },
+  "22": {
+    "class_type": "FVM_K2_Compose",
+    "_meta": {
+      "title": "K2 Compose"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "clip": [
+        "2",
+        0
+      ],
+      "global_prompt": "candid full body photo in a sunlit park, 35mm, natural light",
+      "negative_prompt": "",
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1,
+      "regions": [
+        "21",
+        0
+      ]
+    }
+  },
+  "23": {
+    "class_type": "FVM_K2_Sampler",
+    "_meta": {
+      "title": "K2 Regional Sampler"
+    },
+    "inputs": {
+      "model": [
+        "22",
+        0
+      ],
+      "positive": [
+        "22",
+        1
+      ],
+      "negative": [
+        "22",
+        2
+      ],
+      "latent": [
+        "22",
+        3
+      ],
+      "plan": [
+        "22",
+        5
+      ],
+      "seed": 777,
+      "steps": 8,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "24": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "23",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "25": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "24",
+        0
+      ],
+      "filename_prefix": "k2_regions"
+    }
+  },
+  "26": {
+    "class_type": "FVM_K2_RegionPreview",
+    "_meta": {
+      "title": "Layout check"
+    },
+    "inputs": {
+      "regions": [
+        "21",
+        0
+      ],
+      "width": 1024,
+      "height": 1024,
+      "mode": "field",
+      "falloff_pixels": 128.0,
+      "subject_competition": true,
+      "subject_fill": true
+    }
+  },
+  "27": {
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "26",
+        0
+      ]
+    }
+  }
+}
