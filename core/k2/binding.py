@@ -244,10 +244,16 @@ def bind_plan(
     if emphases and max(e.end for e in emphases) > total:
         raise ValueError("Emphasis-Tokenspanne liegt außerhalb der Konditionierung")
 
+    # Startoffsets brauchen dieselbe rstrip-Behandlung wie Emphasis: Qwen-BPE
+    # hängt ein führendes Leerzeichen an das *folgende* Wort, sonst fällt eine
+    # kurze Phrase auf eine leere Tokenspanne zusammen.
+    def span_start(offset: int) -> int:
+        return prefix_tokens_rstrip(plan.prompt, offset, prefix_tokens, tokenize)
+
     identity_spans = tuple(
         IdentitySpan(
             region_id=region.region_id,
-            start=prefix_tokens(region.identity_char_span[0]),
+            start=span_start(region.identity_char_span[0]),
             end=prefix_tokens(region.identity_char_span[1]),
         )
         for region in plan.regions
@@ -256,7 +262,7 @@ def bind_plan(
     trigger_spans = tuple(
         IdentitySpan(
             region_id=region.region_id,
-            start=prefix_tokens(a),
+            start=span_start(a),
             end=prefix_tokens(b),
         )
         for region in plan.regions
