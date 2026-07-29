@@ -109,6 +109,15 @@ Ohne diese drei Dinge verschiebt jeder Panel-Neuaufbau die Zeichenfläche unter
 dem Mauszeiger — die angeklickte Box wandert dann mit (gemessen: rund 14 px pro
 Mausbewegung).
 
+Aus demselben Grund baut **Tippen** das Eingabepanel nicht neu auf. Würde jeder
+Tastendruck die Oberfläche neu erzeugen, verlöre das Feld nach dem ersten
+Zeichen den Fokus — und alle weiteren Tasten landen dann bei ComfyUI als
+Tastenkürzel statt im Textfeld. Textänderungen schreiben deshalb nur die Daten
+(`persist`), neu gebaut wird ausschließlich bei strukturellen Änderungen:
+Region hinzufügen, löschen, umsortieren, LoRA hinzufügen oder entfernen.
+Zusätzlich werden Tastatur- und Scroll-Ereignisse an der Fensterkante gestoppt,
+damit sie den Graphen dahinter nicht mehr steuern.
+
 | Aktion | Bedienung |
 | --- | --- |
 | Neue Region | Auf freier Fläche aufziehen, oder `+ Region` |

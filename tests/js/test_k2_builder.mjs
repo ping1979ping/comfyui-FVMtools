@@ -14,16 +14,12 @@ const SRC = path.join(HERE, "..", "..", "web", "js", "fvm_k2_builder.js");
 let code = fs.readFileSync(SRC, "utf8");
 code = code.replace(/^import .*$/gm, "");
 code = code.replace(/app\.registerExtension\(\{[\s\S]*\}\);\s*$/m, "");
-code += `
-globalThis.__t = { rescaleRect, rescaleLayout, applyDrag, hitTest, normalizeBox,
-                   readLayout, writeLayout, uniqueName, nextBoxId };
-`;
 
 const app = { api: { addEventListener() {} }, registerExtension() {} };
 const api = { fetchApi: async () => ({ json: async () => ({}) }) };
 // eslint-disable-next-line no-new-func
 new Function("app", "api", code)(app, api);
-const T = globalThis.__t;
+const T = globalThis.__fvmK2Internals;
 
 let passed = 0;
 let failed = 0;
@@ -167,6 +163,114 @@ function near(a, b, eps = 1e-9) { return Math.abs(a - b) <= eps; }
     check("box shape preserved",
         near(layout.boxes[0].rect.w * 1920, layout.boxes[0].rect.h * 1080, 0.5));
     check("same size is a noop", T.rescaleLayout(layout, 1920, 1080) === false);
+}
+
+// ── Fokus-Regression: Tippen darf das Panel nicht neu aufbauen ───────────
+function makeDom() {
+    function makeEl(tag) {
+        const node = {
+            tagName: String(tag).toUpperCase(),
+            style: {}, dataset: {}, children: [], _handlers: {}, _text: "",
+            value: "", title: "", type: "", checked: false,
+            clientWidth: 600, clientHeight: 600,
+            appendChild(child) {
+                if (child && typeof child === "object") {
+                    this.children.push(child);
+                    child.parentNode = this;
+                }
+                return child;
+            },
+            append(...kids) { for (const k of kids) this.appendChild(k); },
+            addEventListener(type, fn) { (this._handlers[type] ||= []).push(fn); },
+            removeEventListener() {},
+            setPointerCapture() {},
+            getBoundingClientRect() { return { left: 0, top: 0, width: 600, height: 600 }; },
+            getContext() { return new Proxy({}, { get: () => () => ({ width: 0 }) }); },
+            focus() { dom.activeElement = this; },
+            dispatch(type, event) { for (const fn of this._handlers[type] || []) fn(event || {}); },
+        };
+        Object.defineProperty(node, "textContent", {
+            get() { return this._text; },
+            set(v) { this._text = v; if (v === "") this.children.length = 0; },
+        });
+        return node;
+    }
+    const dom = {
+        activeElement: null,
+        createElement: makeEl,
+        createTextNode: (text) => ({ tagName: "#text", _text: text, children: [] }),
+        body: makeEl("body"),
+        addEventListener() {},
+        removeEventListener() {},
+    };
+    return dom;
+}
+
+function collect(root, tag, out = []) {
+    for (const child of root.children || []) {
+        if (child.tagName === tag) out.push(child);
+        collect(child, tag, out);
+    }
+    return out;
+}
+
+{
+    const dom = makeDom();
+    globalThis.document = dom;
+    globalThis.window = {
+        devicePixelRatio: 1,
+        addEventListener() {}, removeEventListener() {}, dispatchEvent() {},
+    };
+    globalThis.ResizeObserver = class { observe() {} disconnect() {} };
+    globalThis.requestAnimationFrame = (fn) => { fn(); return 1; };
+    globalThis.cancelAnimationFrame = () => {};
+    globalThis.setTimeout = () => 0;
+    globalThis.clearTimeout = () => {};
+    globalThis.Image = class {};
+    globalThis.MouseEvent = class {};
+    // navigator is getter-only in modern Node — only patch it if writable.
+    try {
+        Object.defineProperty(globalThis, "navigator", {
+            value: { clipboard: null }, configurable: true, writable: true,
+        });
+    } catch (e) { /* ignore */ }
+
+    const layout = {
+        version: 1, canvas: { width: 1024, height: 1024 }, global_loras: [],
+        boxes: [{
+            id: "box-1", name: "Anna", rect: { x: 0.1, y: 0.1, w: 0.3, h: 0.8 },
+            prompt: "a woman", identity_prompt: "", negative_prompt: "",
+            role: "subject", priority: 100, enabled: true, loras: [],
+        }],
+    };
+    const node = {
+        widgets: [
+            { name: "width", value: 1024 },
+            { name: "height", value: 1024 },
+            { name: "layout", value: JSON.stringify(layout), options: {} },
+        ],
+        setDirtyCanvas() {},
+        __fvmK2Refresh() {},
+    };
+
+    const editor = T.createEditor();
+    editor.open(node);
+
+    const before = collect(dom.body, "TEXTAREA");
+    check("editor renders the prompt fields", before.length >= 3, `found ${before.length}`);
+
+    if (before.length) {
+        const field = before[0];
+        field.value = "a woman in a red dress";
+        field.dispatch("input");
+
+        const after = collect(dom.body, "TEXTAREA");
+        check("typing keeps the focused field alive",
+            after.includes(field),
+            "the field was replaced — focus would be lost after one character");
+        check("typed value reaches the layout",
+            JSON.parse(node.widgets[2].value).boxes[0].prompt === "a woman in a red dress");
+    }
 }
 
 console.log(`\n${passed} passed, ${failed} failed`);

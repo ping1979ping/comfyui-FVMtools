@@ -613,6 +613,20 @@ function createEditor() {
     win.append(head, body, foot, grip);
     document.body.append(win);
 
+    // Keep the graph out of the dialog. Even with focus behaving correctly,
+    // keystrokes and wheel events that bubble out of here would drive LiteGraph
+    // (delete node, pan, zoom) instead of the field under the cursor.
+    // Bubble phase only. Stopping in the capture phase would keep the event
+    // from ever reaching the input it was meant for — that kills typing.
+    for (const type of ["keydown", "keyup", "keypress"]) {
+        win.addEventListener(type, (e) => e.stopPropagation(), false);
+    }
+    win.addEventListener("wheel", (e) => e.stopPropagation(), { passive: false });
+    win.addEventListener("contextmenu", (e) => e.stopPropagation());
+    // Do NOT preventDefault here — that would stop inputs from taking focus.
+    win.addEventListener("pointerdown", (e) => e.stopPropagation());
+    win.dataset.captureWheel = "true";
+
     // ─── Window drag / resize ────────────────────────────────────────────
     head.addEventListener("pointerdown", (e) => {
         if (e.target.tagName === "BUTTON" || e.target.tagName === "SELECT") return;
@@ -705,20 +719,44 @@ function createEditor() {
         status.style.color = color || C.faint;
     }
 
-    function commit() {
+    /**
+     * Save without touching the side panel.
+     *
+     * Typing must never rebuild the detail panel: replacing the DOM would tear
+     * the focused input out from under the caret. The field loses focus after
+     * the first character and every following keystroke reaches ComfyUI as a
+     * shortcut instead.
+     */
+    let flushTimer = 0;
+
+    function persist() {
         if (!node) return;
         const width = findWidget(node, "width")?.value || 1024;
         const height = findWidget(node, "height")?.value || 1024;
         data.canvas = { width, height };
-        // Suppress the synthetic mouseup while a drag is running, it would end
-        // the gesture.
-        writeLayout(node, data, Boolean(drag));
+        // The value is written immediately so nothing can be lost, but the
+        // synthetic mouseup that pokes ComfyUI's change tracker is debounced —
+        // firing it on every keystroke would interfere with the UI.
+        writeLayout(node, data, true);
         node.__fvmK2Refresh?.();
+        draw();
+        if (flushTimer) clearTimeout(flushTimer);
+        flushTimer = setTimeout(() => {
+            flushTimer = 0;
+            if (drag) return;
+            try {
+                window.dispatchEvent(new MouseEvent("mouseup", { bubbles: true }));
+            } catch (e) { /* ignore */ }
+        }, 400);
+    }
+
+    /** Save AND rebuild the panel — only for structural changes. */
+    function commit() {
+        persist();
         if (!drag) {
             renderList();
             renderDetail();
         }
-        draw();
     }
 
     // ─── Box operations ──────────────────────────────────────────────────
@@ -910,44 +948,57 @@ function createEditor() {
         enable.checked = box.enabled !== false;
         enable.title = "Include this region. Unchecked keeps it in the layout but "
             + "excludes it from prompt compilation and LoRA routing.";
-        enable.addEventListener("change", () => { box.enabled = enable.checked; commit(); });
+        enable.addEventListener("change", () => {
+            box.enabled = enable.checked;
+            persist();
+            renderList();
+        });
         const enableLabel = el("label", { display: "flex", alignItems: "center", gap: "4px", color: C.muted });
         enableLabel.append(enable, document.createTextNode("enabled"));
         head2.append(swatch, heading, enableLabel);
 
-        const nameRow = labelled("Name", textInput(box.name, (v) => { box.name = v; commit(); },
-            "Human readable label. It appears in the generated spatial instructions "
-            + "('Anna is to the left of Bea'), so keep it short and unique."),
+        // All text fields use persist() + a debounced write. renderList() is
+        // safe to call — it lives in a different container than the focused
+        // field — but renderDetail() must not run while typing.
+        const nameRow = labelled("Name", textInput(box.name, (v) => {
+            box.name = v;
+            persist();
+            renderList();
+        }, "Human readable label. It appears in the generated spatial instructions "
+           + "('Anna is to the left of Bea'), so keep it short and unique."),
             "Region label — must be unique.");
 
-        const roleRow = labelled("Role", selectInput(ROLES, box.role, (v) => { box.role = v; commit(); },
-            "subject: full outside penalty, competes with other subjects.\n"
-            + "background: softer penalty, may feather beyond its box.\n"
-            + "auto: boxes covering >=70% of canvas width become background."),
+        const roleRow = labelled("Role", selectInput(ROLES, box.role, (v) => {
+            box.role = v;
+            persist();
+            renderList();
+        }, "subject: full outside penalty, competes with other subjects.\n"
+           + "background: softer penalty, may feather beyond its box.\n"
+           + "auto: boxes covering >=70% of canvas width become background."),
             "How hard the region is bound.");
 
         const prioRow = labelled("Priority", numberInput(box.priority, (v) => {
             box.priority = Number.isFinite(v) ? v : 100;
-            commit();
+            persist();
         }, "Higher compiles first and claims an ambiguous detected face first. "
            + "It is NOT a strength and NOT an image z-index."),
             "Compile order.");
 
         const promptLabel = el("div", { color: C.muted, font: `11px ${FONT}`, margin: "6px 0 3px" });
         promptLabel.textContent = "Prompt";
-        const prompt = textArea(box.prompt, (v) => { box.prompt = v; commit(); },
+        const prompt = textArea(box.prompt, (v) => { box.prompt = v; persist(); },
             "What should appear inside this box. An empty prompt disables the region.", 3);
 
         const identityLabel = el("div", { color: C.muted, font: `11px ${FONT}`, margin: "6px 0 3px" });
         identityLabel.textContent = "Identity prompt";
-        const identity = textArea(box.identity_prompt, (v) => { box.identity_prompt = v; commit(); },
+        const identity = textArea(box.identity_prompt, (v) => { box.identity_prompt = v; persist(); },
             "Face/identity description. It is attached to the region clause as an "
             + "attribute (', with …'), protected from the projector delta, and "
             + "preferred by K2 Regional Face Detail.", 2);
 
         const negLabel = el("div", { color: C.muted, font: `11px ${FONT}`, margin: "6px 0 3px" });
         negLabel.textContent = "Negative (stored only)";
-        const negative = textArea(box.negative_prompt, (v) => { box.negative_prompt = v; commit(); },
+        const negative = textArea(box.negative_prompt, (v) => { box.negative_prompt = v; persist(); },
             "Region-local negative text. Krea 2 Turbo runs CFG-free and has no "
             + "separate regional negative branch — this is kept for tooling only.", 2);
 
@@ -979,11 +1030,16 @@ function createEditor() {
         enable.type = "checkbox";
         enable.checked = entry.enabled !== false;
         enable.title = "Include this LoRA.";
-        enable.addEventListener("change", () => { entry.enabled = enable.checked; commit(); });
+        enable.addEventListener("change", () => {
+            entry.enabled = enable.checked;
+            persist();
+            renderList();
+        });
 
         const select = selectInput(loraCache || ["None"], entry.name || "None", (v) => {
             entry.name = v;
-            commit();
+            persist();
+            renderList();
         }, "Krea 2 LoRA applied only inside this region. Non-Krea architectures are "
            + "rejected at compose time instead of silently doing nothing.");
         select.style.flex = "1 1 auto";
@@ -996,13 +1052,13 @@ function createEditor() {
 
         const strengthRow = labelled("Strength", numberInput(entry.strength ?? 1.0, (v) => {
             entry.strength = Number.isFinite(v) ? v : 1.0;
-            commit();
+            persist();
         }, "Delta multiplier from -4 to 4. 0 disables the assignment, negative values "
            + "invert the learned delta.", { step: "0.05" }), "LoRA strength.");
 
         const routingRow = labelled("Routing", selectInput(ROUTINGS, entry.routing || "standard", (v) => {
             entry.routing = v;
-            commit();
+            persist();
         }, "standard: gate text-fusion and local main-stream deltas to this box.\n"
            + "character_identity: same isolation plus an explicit identity anchor "
            + "built from the trigger phrase — use it for face/person LoRAs."),
@@ -1010,7 +1066,7 @@ function createEditor() {
 
         const triggerRow = labelled("Trigger", textInput(entry.trigger || "", (v) => {
             entry.trigger = v;
-            commit();
+            persist();
         }, "Activation phrase learned during LoRA training. Required for "
            + "character_identity routing."), "Trigger phrase.");
 
@@ -1099,6 +1155,14 @@ let editor = null;
 function getEditor() {
     if (!editor) editor = createEditor();
     return editor;
+}
+
+// Exposed for the headless test in tests/js/test_k2_builder.mjs.
+if (typeof globalThis !== "undefined") {
+    globalThis.__fvmK2Internals = {
+        rescaleRect, rescaleLayout, applyDrag, hitTest, normalizeBox,
+        readLayout, writeLayout, uniqueName, nextBoxId, createEditor,
+    };
 }
 
 // ─── Extension ───────────────────────────────────────────────────────────
