@@ -417,32 +417,72 @@ function paintLayout(canvas, data, options) {
 
 const HANDLE = 8;
 
-function hitTest(data, nx, ny, aspectW, aspectH) {
+/**
+ * All hits under the cursor, best candidate first.
+ *
+ * A background box covering the whole canvas would otherwise swallow every
+ * click and make the other boxes' handles unreachable. Ranking instead of
+ * "topmost wins" fixes that without a modifier: handles beat body hits, the
+ * selected box beats the rest, and among body hits the SMALLEST box wins — a
+ * full-canvas box can never hide a small one again.
+ *
+ * Alt still steps one level down the list for the rare genuine overlap.
+ */
+function hitCandidates(data, nx, ny, aspectW, aspectH, selectedId) {
     // Handle radius in normalized units so it stays grabbable on any canvas.
     const rx = HANDLE / Math.max(aspectW, 1);
     const ry = HANDLE / Math.max(aspectH, 1);
-    for (let i = data.boxes.length - 1; i >= 0; i -= 1) {
-        const box = data.boxes[i];
+    const hits = [];
+
+    data.boxes.forEach((box, index) => {
         const { x, y, w, h } = box.rect;
         const x2 = x + w;
         const y2 = y + h;
         const near = (a, b, r) => Math.abs(a - b) <= r;
-        const inX = nx >= x - rx && nx <= x2 + rx;
-        const inY = ny >= y - ry && ny <= y2 + ry;
-        if (!inX || !inY) continue;
+        if (nx < x - rx || nx > x2 + rx || ny < y - ry || ny > y2 + ry) return;
         const hrx = Math.min(rx, w / 3);
         const hry = Math.min(ry, h / 3);
-        if (near(nx, x, hrx) && near(ny, y, hry)) return { box, mode: "nw" };
-        if (near(nx, x2, hrx) && near(ny, y, hry)) return { box, mode: "ne" };
-        if (near(nx, x, hrx) && near(ny, y2, hry)) return { box, mode: "sw" };
-        if (near(nx, x2, hrx) && near(ny, y2, hry)) return { box, mode: "se" };
-        if (near(ny, y, hry) && nx >= x && nx <= x2) return { box, mode: "n" };
-        if (near(ny, y2, hry) && nx >= x && nx <= x2) return { box, mode: "s" };
-        if (near(nx, x, hrx) && ny >= y && ny <= y2) return { box, mode: "w" };
-        if (near(nx, x2, hrx) && ny >= y && ny <= y2) return { box, mode: "e" };
-        if (nx >= x && nx <= x2 && ny >= y && ny <= y2) return { box, mode: "move" };
-    }
-    return null;
+
+        let mode = null;
+        if (near(nx, x, hrx) && near(ny, y, hry)) mode = "nw";
+        else if (near(nx, x2, hrx) && near(ny, y, hry)) mode = "ne";
+        else if (near(nx, x, hrx) && near(ny, y2, hry)) mode = "sw";
+        else if (near(nx, x2, hrx) && near(ny, y2, hry)) mode = "se";
+        else if (near(ny, y, hry) && nx >= x && nx <= x2) mode = "n";
+        else if (near(ny, y2, hry) && nx >= x && nx <= x2) mode = "s";
+        else if (near(nx, x, hrx) && ny >= y && ny <= y2) mode = "w";
+        else if (near(nx, x2, hrx) && ny >= y && ny <= y2) mode = "e";
+        else if (nx >= x && nx <= x2 && ny >= y && ny <= y2) mode = "move";
+        if (!mode) return;
+
+        const isHandle = mode !== "move";
+        hits.push({
+            box, mode, index, area: w * h,
+            rank: [
+                isHandle ? 0 : 1,                       // handles first
+                box.id === selectedId ? 0 : 1,          // then the selected box
+                isHandle ? 0 : w * h,                   // then the smallest body
+                -index,                                 // finally the topmost
+            ],
+        });
+    });
+
+    hits.sort((a, b) => {
+        for (let i = 0; i < a.rank.length; i += 1) {
+            if (a.rank[i] !== b.rank[i]) return a.rank[i] - b.rank[i];
+        }
+        return 0;
+    });
+    return hits;
+}
+
+function hitTest(data, nx, ny, aspectW, aspectH, options) {
+    const opts = options || {};
+    const hits = hitCandidates(data, nx, ny, aspectW, aspectH, opts.selectedId);
+    if (!hits.length) return null;
+    // Alt cycles to the next candidate underneath.
+    const index = opts.skipTop ? Math.min(1, hits.length - 1) : 0;
+    return hits[index];
 }
 
 const CURSORS = {
@@ -541,7 +581,11 @@ function createEditor() {
         background: C.bgDeepest, cursor: "crosshair", touchAction: "none",
     });
     canvas.title = "Drag on empty space to draw a new region. Drag a box to move it, "
-        + "its edges or corners to resize. Del removes the selected region.";
+        + "its edges or corners to resize. Del removes the selected region.\n"
+        + "Handles always win over box bodies, and among overlapping bodies the "
+        + "smallest one wins — a full-canvas background box cannot block the others.\n"
+        + "Alt: reach the region underneath.  Ctrl: draw a new box on top of an "
+        + "existing one.";
     canvasPane.append(canvas);
 
     const side = el("div", {
@@ -714,7 +758,12 @@ function createEditor() {
         });
     }
 
+    let lastStatus = "";
+
     function setStatus(text, color) {
+        // Called on every pointermove for the hover hint — skip identical writes.
+        if (text === lastStatus) return;
+        lastStatus = text;
         status.textContent = text;
         status.style.color = color || C.faint;
     }
@@ -824,7 +873,13 @@ function createEditor() {
     canvas.addEventListener("pointerdown", (e) => {
         const rect = canvas.getBoundingClientRect();
         const p = pointerNorm(e, rect);
-        const hit = hitTest(data, p.x, p.y, rect.width, rect.height);
+        // Ctrl/Cmd forces a new box even on top of an existing one — otherwise
+        // a full-canvas background box makes it impossible to draw inside it.
+        const forceDraw = e.ctrlKey || e.metaKey;
+        const hit = forceDraw
+            ? null
+            : hitTest(data, p.x, p.y, rect.width, rect.height,
+                { selectedId, skipTop: e.altKey });
         canvas.setPointerCapture(e.pointerId);
         if (hit) {
             const changedSelection = selectedId !== hit.box.id;
@@ -848,8 +903,16 @@ function createEditor() {
         if (!drag) {
             const rect = canvas.getBoundingClientRect();
             const p = pointerNorm(e, rect);
-            const hit = hitTest(data, p.x, p.y, rect.width, rect.height);
+            if (e.ctrlKey || e.metaKey) {
+                canvas.style.cursor = "crosshair";
+                return;
+            }
+            const hit = hitTest(data, p.x, p.y, rect.width, rect.height,
+                { selectedId, skipTop: e.altKey });
             canvas.style.cursor = hit ? CURSORS[hit.mode] || "move" : "crosshair";
+            // Name the box the click would land on — with overlapping regions
+            // that is the difference between editing and accidentally moving.
+            if (hit) setStatus(`${hit.box.name || "region"} · ${hit.mode}`, C.faint);
             return;
         }
         const p = pointerNorm(e, drag.rect);

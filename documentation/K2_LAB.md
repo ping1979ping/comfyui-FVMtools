@@ -121,11 +121,21 @@ damit sie den Graphen dahinter nicht mehr steuern.
 | Aktion | Bedienung |
 | --- | --- |
 | Neue Region | Auf freier Fläche aufziehen, oder `+ Region` |
+| Neue Region **über** einer bestehenden | `Strg` halten und aufziehen |
 | Verschieben / Größe ändern | Box ziehen bzw. an Kante/Ecke ziehen (8 Griffe) |
 | Auswählen | Klick auf Box oder Listeneintrag |
+| Region **darunter** erreichen | `Alt` halten |
 | Löschen | `✕` in der Liste oder `Entf` bei ausgewählter Region |
 | Gleichmäßig verteilen | `Fit` |
 | Reihenfolge | `↑` in der Liste (bestimmt die Kompilierreihenfolge) |
+
+**Überlappende Regionen.** Eine bildfüllende Hintergrundbox darf die anderen
+nicht blockieren. Statt „oberste Box gewinnt" wird deshalb gewichtet: Griffe
+schlagen Boxflächen, die ausgewählte Region schlägt die übrigen, und unter
+mehreren Flächentreffern gewinnt die **kleinste**. Eine ganzflächige Box kann
+eine kleine damit nie verdecken — `Alt` bleibt für den seltenen echten Fall,
+in dem man wirklich an die Box darunter will. Die Statuszeile unten zeigt
+beim Überfahren, welche Region ein Klick treffen würde.
 
 **LoRAs pro Region.** Im Detailbereich beliebig viele — je mit eigener Stärke,
 Routing-Modus und Trigger-Phrase. Sie landen als regionale Zuweisungen am

@@ -93,14 +93,44 @@ function near(a, b, eps = 1e-9) { return Math.abs(a - b) <= eps; }
     check("edge hit = e", T.hitTest(data, 0.6, 0.4, W, H)?.mode === "e");
     check("outside = miss", T.hitTest(data, 0.9, 0.9, W, H) === null);
 
-    // Topmost box wins so overlapping regions stay selectable.
-    const two = {
+    // A full-canvas background box must not swallow the other regions.
+    const withBackdrop = {
         boxes: [
-            T.normalizeBox({ id: "a", rect: { x: 0.1, y: 0.1, w: 0.5, h: 0.5 } }),
-            T.normalizeBox({ id: "b", rect: { x: 0.3, y: 0.3, w: 0.5, h: 0.5 } }),
+            T.normalizeBox({ id: "subject", rect: { x: 0.3, y: 0.3, w: 0.2, h: 0.2 } }),
+            T.normalizeBox({ id: "backdrop", rect: { x: 0, y: 0, w: 1, h: 1 } }),
         ],
     };
-    check("later box wins in overlap", T.hitTest(two, 0.45, 0.45, W, H)?.box.id === "b");
+    check("small box wins over a full-canvas box",
+        T.hitTest(withBackdrop, 0.4, 0.4, W, H)?.box.id === "subject");
+    check("its handles stay reachable",
+        T.hitTest(withBackdrop, 0.3, 0.3, W, H)?.box.id === "subject"
+        && T.hitTest(withBackdrop, 0.3, 0.3, W, H)?.mode === "nw");
+    check("the backdrop is still selectable where nothing covers it",
+        T.hitTest(withBackdrop, 0.8, 0.8, W, H)?.box.id === "backdrop");
+    check("alt reaches the region underneath",
+        T.hitTest(withBackdrop, 0.4, 0.4, W, H, { skipTop: true })?.box.id === "backdrop");
+
+    // Handles of the selected box outrank another box's body.
+    const overlapping = {
+        boxes: [
+            T.normalizeBox({ id: "a", rect: { x: 0.1, y: 0.1, w: 0.4, h: 0.4 } }),
+            T.normalizeBox({ id: "b", rect: { x: 0.3, y: 0.3, w: 0.4, h: 0.4 } }),
+        ],
+    };
+    const onEdge = T.hitTest(overlapping, 0.5, 0.3, W, H, { selectedId: "a" });
+    check("selected box keeps its handle in an overlap",
+        onEdge?.box.id === "a" && onEdge?.mode !== "move",
+        `got ${onEdge?.box.id}/${onEdge?.mode}`);
+
+    // Equal-size overlap still resolves to the topmost box.
+    const equal = {
+        boxes: [
+            T.normalizeBox({ id: "a", rect: { x: 0.1, y: 0.1, w: 0.5, h: 0.5 } }),
+            T.normalizeBox({ id: "b", rect: { x: 0.2, y: 0.2, w: 0.5, h: 0.5 } }),
+        ],
+    };
+    check("equal sizes fall back to topmost",
+        T.hitTest(equal, 0.4, 0.4, W, H)?.box.id === "b");
 }
 
 // ── Der gemeldete Bug: Layoutwechsel mitten im Ziehen ────────────────────
