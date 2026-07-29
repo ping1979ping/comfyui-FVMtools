@@ -253,6 +253,43 @@ try:
         loras = _fp.get_filename_list("loras")
         return web.json_response({"loras": loras})
 
+    @PromptServer.instance.routes.get("/fvmtools/k2/recent-outputs")
+    async def _get_recent_outputs(request):
+        """Newest rendered images — backdrop source for the K2 Region Builder canvas."""
+        import folder_paths as _fp
+
+        try:
+            limit = max(1, min(64, int(request.rel_url.query.get("limit", "24"))))
+        except ValueError:
+            limit = 24
+
+        root = _fp.get_output_directory()
+        entries = []
+        try:
+            for dirpath, _dirnames, filenames in os.walk(root):
+                for filename in filenames:
+                    if not filename.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
+                        continue
+                    full = os.path.join(dirpath, filename)
+                    try:
+                        mtime = os.path.getmtime(full)
+                    except OSError:
+                        continue
+                    subfolder = os.path.relpath(dirpath, root)
+                    entries.append(
+                        {
+                            "filename": filename,
+                            "subfolder": "" if subfolder == "." else subfolder.replace("\\", "/"),
+                            "type": "output",
+                            "mtime": mtime,
+                        }
+                    )
+        except Exception as error:
+            return web.json_response({"images": [], "error": str(error)})
+
+        entries.sort(key=lambda item: item["mtime"], reverse=True)
+        return web.json_response({"images": entries[:limit]})
+
     @PromptServer.instance.routes.get("/fvmtools/yolo-classes")
     async def _get_yolo_classes(request):
         """Return class names for a YOLO model (used by PersonSelectorMulti aux_label tooltip)."""

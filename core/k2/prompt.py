@@ -296,15 +296,29 @@ def relationship_clause(regions: Sequence[CompiledRegion], height: int) -> str:
     if others and lowest.box.center[1] - sum(others) / len(others) > 0.08 * height:
         ordering += f"; {lowest.name} is positioned below the other subjects"
 
+    # Gleich große Subjekte zusammenfassen. Bei vier Boxen wären das sonst sechs
+    # fast gleichlautende Paar-Sätze, die einander im Prompt verwässern — das
+    # Modell staffelt die Personen dann doch in die Tiefe.
+    equal_pairs = []
     for i, first in enumerate(left_to_right):
         for second in left_to_right[i + 1 :]:
             ratio = first.box.height / second.box.height
             center_delta = abs(first.box.center[1] - second.box.center[1]) / height
             if 0.85 <= ratio <= 1.15 and center_delta <= 0.10:
-                ordering += (
-                    f"; {first.name} and {second.name} are equally large, at the "
-                    "same camera distance, with matching top and bottom levels"
-                )
+                equal_pairs.append((first.name, second.name))
+
+    total_pairs = len(subjects) * (len(subjects) - 1) // 2
+    if equal_pairs and len(equal_pairs) == total_pairs:
+        ordering += (
+            "; all subjects are equally large, stand at the same camera distance "
+            "and share the same top and bottom levels"
+        )
+    else:
+        for first_name, second_name in equal_pairs[:2]:
+            ordering += (
+                f"; {first_name} and {second_name} are equally large, at the "
+                "same camera distance, with matching top and bottom levels"
+            )
 
     depth = []
     for i, front in enumerate(subjects):

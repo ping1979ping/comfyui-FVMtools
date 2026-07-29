@@ -164,9 +164,13 @@ class FVM_K2_RegionFromBBox:
                 "bbox_index": ("INT", {"default": 0, "min": 0, "max": 64,
                                        "tooltip": "Zero-based index into the bbox list. "
                                        "Out-of-range clamps to the last entry."}),
-                "bbox_format": (["auto", "xywh", "xyxy"], {"default": "auto",
-                                "tooltip": "auto guesses from the values (x1>x0 and "
-                                "y1>y0 with plausible magnitudes → xyxy)."}),
+                "bbox_format": (["xyxy", "xywh", "auto"], {"default": "xyxy",
+                                "tooltip": "xyxy = left/top/right/bottom (what YOLO, "
+                                "BOUNDING_BOX and the KJ prompt builder emit).\n"
+                                "xywh = left/top/width/height.\n"
+                                "auto tries xyxy first and only falls back to xywh when "
+                                "that yields an impossible box — it cannot always tell "
+                                "them apart, so set the format explicitly when you know it."}),
                 "reference_width": ("INT", {"default": 1024, "min": 16, "max": 16384,
                                             "tooltip": "Canvas width used to expand "
                                             "normalized coordinates."}),
@@ -237,7 +241,14 @@ class FVM_K2_RegionFromBBox:
             c *= reference_width
             d *= reference_height
 
-        if bbox_format == "xyxy" or (bbox_format == "auto" and c > a and d > b):
+        # 'auto' kann xywh und xyxy nicht sicher unterscheiden — (100,100,400,800)
+        # ist in beiden Lesarten gültig. Deshalb: xyxy bevorzugen (das Format von
+        # BOUNDING_BOX/YOLO/KJ) und nur bei unmöglichem Ergebnis auf xywh fallen.
+        if bbox_format == "xywh":
+            box = PixelBox.from_xywh(a, b, c, d)
+        elif bbox_format == "xyxy":
+            box = PixelBox(a, b, c, d)
+        elif c > a and d > b:
             box = PixelBox(a, b, c, d)
         else:
             box = PixelBox.from_xywh(a, b, c, d)

@@ -60,6 +60,7 @@ genauso, dann lassen sich Quantisierungs- oder Cache-Knoten dazwischenhängen.
 | Knoten | Zweck |
 | --- | --- |
 | `K2 Load Krea 2` | Transformer + Qwen-Encoder + VAE in einem Knoten. |
+| **`K2 Region Builder`** | **Visueller Editor: alle Boxen, ihre Prompts und ihre LoRAs in einer Node.** |
 | `K2 Region` | Eine benannte Box mit Prompt, Identität, Rolle, Priorität. |
 | `K2 Region from BBox` | Region aus Detektor-/KJ-Bounding-Box. |
 | `K2 Region Combine` | Mehrere Regionsketten zusammenführen. |
@@ -84,6 +85,52 @@ genauso, dann lassen sich Quantisierungs- oder Cache-Knoten dazwischenhängen.
 
 ---
 
+## 3a. Der Region Builder
+
+`K2 Region Builder` ersetzt die Kette aus vielen Einzelknoten: eine Node hält
+das komplette Layout und speist `K2 Compose` direkt.
+
+```
+K2 Region Builder ──regions──┐
+       │           ──loras────┤
+       │       ──global_prompt┼──► K2 Compose ──► K2 Regional Sampler
+       │       ──width/height─┘
+```
+
+**Editorfenster.** `Edit layout ⤢` (oder Klick auf die Vorschau) öffnet ein
+losgelöstes Fenster — verschiebbar am Titel, größenverstellbar an der Ecke
+unten rechts, `Esc` schließt. Links die Zeichenfläche, rechts Regionsliste und
+Details der ausgewählten Region.
+
+| Aktion | Bedienung |
+| --- | --- |
+| Neue Region | Auf freier Fläche aufziehen, oder `+ Region` |
+| Verschieben / Größe ändern | Box ziehen bzw. an Kante/Ecke ziehen (8 Griffe) |
+| Auswählen | Klick auf Box oder Listeneintrag |
+| Löschen | `✕` in der Liste oder `Entf` bei ausgewählter Region |
+| Gleichmäßig verteilen | `Fit` |
+| Reihenfolge | `↑` in der Liste (bestimmt die Kompilierreihenfolge) |
+
+**LoRAs pro Region.** Im Detailbereich beliebig viele — je mit eigener Stärke,
+Routing-Modus und Trigger-Phrase. Sie landen als regionale Zuweisungen am
+`loras`-Ausgang und brauchen keinen einzigen zusätzlichen Knoten.
+
+**Hintergrundbild.** `Pull latest` lädt den neuesten Render aus dem
+Ausgabeordner hinter die Zeichenfläche, das Auswahlfeld daneben die letzten 24.
+`Dim` regelt die Helligkeit, damit die Boxkanten lesbar bleiben.
+
+**Seitenverhältnis.** Boxen werden normalisiert gespeichert *und* beim Ändern
+von `width`/`height` formerhaltend umgerechnet: eine quadratische Box bleibt
+quadratisch, ihr relativer Mittelpunkt bleibt erhalten, und passt sie nicht mehr
+in die neue Leinwand, wird sie gleichmäßig verkleinert statt einseitig gestaucht.
+Die Umrechnung ist umkehrbar — 1:1 → 16:9 → 1:1 landet exakt wieder beim
+Ausgangsrechteck.
+
+> Zum Vergleich: der Ideogram-4-Prompt-Builder von KJNodes speichert reine
+> Canvas-Anteile ohne Kompensation. Dort wird aus einer 0.3×0.3-Box beim Wechsel
+> von 1:1 auf 16:9 still ein breites Rechteck, und ein geladenes Hintergrundbild
+> überschreibt zusätzlich `width`/`height` — beides verzieht ein fertiges Layout.
+
 ## 4. Regionen
 
 **Rolle** steuert, wie hart die Region gebunden wird:
@@ -104,15 +151,29 @@ zweites Gesicht in die Region.
 
 ### Prompt-Disziplin
 
-Der globale Prompt beschreibt **die Szene**, nicht die Personen. Steht dort
-„two women", entstehen leicht zwei zusätzliche Personen neben den beiden
-Regionen. Gut:
+Der globale Prompt beschreibt **die Szene**, nicht die Personen — und zwar
+strenger, als man zunächst denkt. Schon ein Gattungsbegriff wie „full body
+photo" genügt, damit das Modell außerhalb der Boxen eine weitere Person malt:
+Bildtoken außerhalb aller Regionen sehen nur den globalen Prompt, und der
+verlangt dann eben eine Person.
+
+Nachgemessen mit drei Regionen, gleicher Seed:
+
+| Globaler Prompt | Ergebnis |
+| --- | --- |
+| `candid full body photo in a sunlit park, 35mm` | 3 Regionen **+ eine zusätzliche Person** im Hintergrund |
+| `a sunlit park lawn with tall trees, 35mm photo, natural light` | genau 3 Personen |
+
+Also:
 
 ```
-global:  candid full body photo in a sunlit park, 35mm, natural light
-Anna:    a blonde woman in a red dress
-Bea:     a dark-haired woman in a blue coat
+global:  a sunlit park lawn with tall trees, 35mm photo, natural light
+Anna:    a woman in a bright red dress, shown full length
+Bea:     a woman in a bright blue coat, shown full length
 ```
+
+Bildausschnitt und Kameradistanz gehören in die **Regionsprompts**
+(„shown full length"), nicht in den globalen Prompt.
 
 ---
 
@@ -282,4 +343,20 @@ Nachvollziehbar geprüft (Messwerte, nicht Augenschein):
   (Alter links, Haarvolumen rechts) wirkten in einem Pass getrennt.
 - **Delta-Statistik** skaliert linear mit der Stärke (rms 0,095 → 0,197 bei 1,0 → 2,0).
 - **Edit-Lokalität**: 234-fach stärkere Änderung innerhalb der Editbox als außerhalb.
-- 93 Unit-Tests unter `tests/unit/test_k2_*.py`.
+- **Region Builder mit 2, 3 und 4 Regionen** gerendert, jeweils mit korrekten
+  Pixelboxen und regionaler LoRA-Zuordnung; das 4er-Layout zusätzlich auf
+  1536×640 mit formerhaltender Umrechnung.
+- 129 Unit-Tests unter `tests/unit/test_k2_*.py`.
+
+### Grenzen bei vielen Regionen
+
+Zwei bis drei Subjekte sitzen zuverlässig. Ab vier schmalen Ganzkörper-Boxen
+wird es eng: Farben und LoRAs bleiben korrekt getrennt, aber das Modell staffelt
+die Personen gern in die Tiefe, statt sie auf gleiche Größe zu bringen. Was hilft:
+
+- Querformat statt 1:1 (mehr Breite pro Box),
+- `inside_strength` ≈ 2.6 und `outside_penalty` ≈ 2.0 (gemessen: bester
+  In-Box-Anteil im Vergleich zu 1.0/1.0 und 1.8/1.5),
+- „shown full length" in jedem Regionsprompt.
+
+Der mitgelieferte `k2_builder_4regions_wide_api.json` nutzt genau diese Werte.

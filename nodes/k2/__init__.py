@@ -6,6 +6,7 @@ Projector-Kontrolle, Gesichtsverfeinerung, regionales Editieren, Upscaling.
 """
 
 from . import (
+    builder,
     compose,
     detail,
     edit,
@@ -21,6 +22,7 @@ from . import (
 _MODULES = (
     loader,
     regions,
+    builder,
     loras,
     projector_nodes,
     compose,

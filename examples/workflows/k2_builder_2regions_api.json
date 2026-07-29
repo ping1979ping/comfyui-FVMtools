@@ -1,0 +1,187 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "krea2\\krea2_turbo_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "Krea 2 transformer"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Qwen3-VL text encoder (type=krea2)"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "Qwen image VAE"
+    }
+  },
+  "19": {
+    "class_type": "FVM_K2_Tuning",
+    "_meta": {
+      "title": "Spatial tuning"
+    },
+    "inputs": {
+      "spatial_enabled": true,
+      "strict_isolation": true,
+      "inside_strength": 1.0,
+      "outside_penalty": 1.0,
+      "falloff_pixels": 96.0,
+      "late_step_scale": 0.35,
+      "subject_competition": true,
+      "subject_fill": true,
+      "spatial_instructions": true,
+      "lora_delta_adaptation": false,
+      "lora_adaptation_gain": 0.35,
+      "fuse_global_loras": true
+    }
+  },
+  "20": {
+    "class_type": "FVM_K2_RegionBuilder",
+    "_meta": {
+      "title": "K2 Region Builder \u2014 2 regions"
+    },
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "global_prompt": "a sunlit park lawn with tall trees, 35mm photo, natural light",
+      "layout": "{\n  \"version\": 1,\n  \"canvas\": {\n    \"width\": 1024,\n    \"height\": 1024\n  },\n  \"boxes\": [\n    {\n      \"id\": \"box-1\",\n      \"name\": \"Anna\",\n      \"rect\": {\n        \"x\": 0.02,\n        \"y\": 0.05,\n        \"w\": 0.47,\n        \"h\": 0.9\n      },\n      \"prompt\": \"a woman in a bright red dress, shown full length\",\n      \"identity_prompt\": \"\",\n      \"negative_prompt\": \"\",\n      \"role\": \"subject\",\n      \"priority\": 100,\n      \"enabled\": true,\n      \"loras\": [\n        {\n          \"name\": \"krea2\\\\helper\\\\slider\\\\age_krea2_loraholic.safetensors\",\n          \"strength\": -1.5,\n          \"routing\": \"standard\",\n          \"trigger\": \"\",\n          \"enabled\": true\n        }\n      ]\n    },\n    {\n      \"id\": \"box-2\",\n      \"name\": \"Bea\",\n      \"rect\": {\n        \"x\": 0.51,\n        \"y\": 0.05,\n        \"w\": 0.47,\n        \"h\": 0.9\n      },\n      \"prompt\": \"a woman in a bright blue coat, shown full length\",\n      \"identity_prompt\": \"\",\n      \"negative_prompt\": \"\",\n      \"role\": \"subject\",\n      \"priority\": 99,\n      \"enabled\": true,\n      \"loras\": [\n        {\n          \"name\": \"krea2\\\\helper\\\\slider\\\\hair_volume_krea2_loraholic.safetensors\",\n          \"strength\": 2.0,\n          \"routing\": \"standard\",\n          \"trigger\": \"\",\n          \"enabled\": true\n        }\n      ]\n    }\n  ],\n  \"global_loras\": []\n}"
+    }
+  },
+  "22": {
+    "class_type": "FVM_K2_Compose",
+    "_meta": {
+      "title": "K2 Compose"
+    },
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "clip": [
+        "2",
+        0
+      ],
+      "global_prompt": [
+        "20",
+        2
+      ],
+      "negative_prompt": "",
+      "width": [
+        "20",
+        3
+      ],
+      "height": [
+        "20",
+        4
+      ],
+      "batch_size": 1,
+      "regions": [
+        "20",
+        0
+      ],
+      "loras": [
+        "20",
+        1
+      ],
+      "tuning": [
+        "19",
+        0
+      ]
+    }
+  },
+  "23": {
+    "class_type": "FVM_K2_Sampler",
+    "_meta": {
+      "title": "K2 Regional Sampler"
+    },
+    "inputs": {
+      "model": [
+        "22",
+        0
+      ],
+      "positive": [
+        "22",
+        1
+      ],
+      "negative": [
+        "22",
+        2
+      ],
+      "latent": [
+        "22",
+        3
+      ],
+      "plan": [
+        "22",
+        5
+      ],
+      "seed": 4711,
+      "steps": 8,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "24": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "23",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "25": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "24",
+        0
+      ],
+      "filename_prefix": "k2_builder_2"
+    }
+  },
+  "26": {
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "Builder report"
+    },
+    "inputs": {
+      "source": [
+        "20",
+        5
+      ]
+    }
+  },
+  "27": {
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "Run report"
+    },
+    "inputs": {
+      "source": [
+        "23",
+        1
+      ]
+    }
+  }
+}
