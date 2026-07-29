@@ -183,12 +183,25 @@ photo" genügt, damit das Modell außerhalb der Boxen eine weitere Person malt:
 Bildtoken außerhalb aller Regionen sehen nur den globalen Prompt, und der
 verlangt dann eben eine Person.
 
-Nachgemessen mit drei Regionen, gleicher Seed:
+Nachgemessen mit **zwei** Regionen (gleiche Boxen, gleicher Seed, gleiche LoRAs;
+Gesichter automatisch per YOLO gezählt) — der globale Prompt ist der einzige
+Unterschied:
 
-| Globaler Prompt | Ergebnis |
+| Globaler Prompt | erzeugte Gesichter |
 | --- | --- |
-| `candid full body photo in a sunlit park, 35mm` | 3 Regionen **+ eine zusätzliche Person** im Hintergrund |
-| `a sunlit park lawn with tall trees, 35mm photo, natural light` | genau 3 Personen |
+| `group portrait photo in a sunlit park, 35mm` | **5** |
+| `candid full body photo of two women in a sunlit park, 35mm` | **3** |
+| `photo of a woman standing in a sunlit park, 35mm` | **3** |
+| `a sunlit park lawn with tall trees, 35mm photo, natural light` | **2** ✅ |
+
+Auch der Singular („a woman") erzeugt eine Person zu viel, und ein Sammelbegriff
+wie „group portrait" gleich drei. Entscheidend ist nicht die Anzahl im Text,
+sondern *ob überhaupt* eine Person darin vorkommt.
+
+Ebenfalls gemessen und **nicht** die Ursache: die Boxgeometrie. Mit Boxen, die
+nur 43 % der Bildbreite abdecken (also 57 % freier Fläche), entstanden bei
+szenischem Prompt trotzdem genau zwei Personen — ebenso mit ganzflächiger
+Hintergrundregion, ohne Ortsangaben oder mit `inside_strength` 2.6.
 
 Also:
 

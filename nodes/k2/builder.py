@@ -47,9 +47,14 @@ class FVM_K2_RegionBuilder:
                            "tooltip": "Output height. Same shape-preserving rescale "
                            "applies."}),
                 "global_prompt": ("STRING", {"multiline": True, "default": "",
-                                  "tooltip": "Scene-wide description. Keep the subjects "
-                                  "out of it — describe them in their boxes, otherwise "
-                                  "the model adds extra people next to the regions."}),
+                                  "tooltip": "Scene ONLY — no people. Describe the "
+                                  "subjects in their boxes instead.\n\n"
+                                  "Image tokens outside every region see only this text, "
+                                  "so any person mentioned here gets drawn there. "
+                                  "Measured with two regions: 'a sunlit park lawn with "
+                                  "tall trees' → 2 faces, 'photo of a woman standing in a "
+                                  "sunlit park' → 3, 'group portrait photo' → 5. Even the "
+                                  "singular adds one too many."}),
                 "layout": ("STRING", {"multiline": True, "default": default_layout_json(),
                            "tooltip": "Layout JSON written by the editor window. The "
                            "frontend hides this widget; you can still edit it by hand "

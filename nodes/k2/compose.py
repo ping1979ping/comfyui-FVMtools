@@ -155,8 +155,12 @@ class FVM_K2_Compose:
                                     "the incoming branch stays untouched."}),
                 "clip": ("CLIP", {"tooltip": "CLIPLoader with type 'krea2' (Qwen3-VL)."}),
                 "global_prompt": ("STRING", {"multiline": True, "default": "",
-                                  "tooltip": "Scene-wide description. Regional clauses are "
-                                  "appended after it."}),
+                                  "tooltip": "Scene-wide description — keep people OUT of "
+                                  "it. Regional clauses are appended after it.\n\n"
+                                  "Image tokens outside every region see only this text, "
+                                  "so a person mentioned here is drawn there. Measured "
+                                  "with two regions: scene-only → 2 faces, '…a woman "
+                                  "standing…' → 3, 'group portrait…' → 5."}),
                 "negative_prompt": ("STRING", {"multiline": True, "default": "",
                                     "tooltip": "Global negative. Krea 2 Turbo runs CFG-free, "
                                     "so this only matters with CFG > 1."}),
