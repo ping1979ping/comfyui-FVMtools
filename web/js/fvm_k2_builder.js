@@ -109,15 +109,18 @@ function readLayout(node) {
     return data;
 }
 
-function writeLayout(node, data) {
+function writeLayout(node, data, silent) {
     const widget = findWidget(node, LAYOUT_WIDGET);
     if (!widget) return;
     widget.value = JSON.stringify(data, null, 2);
     // ComfyUI's change tracker samples on mouseup; canvas drags preventDefault,
-    // so nudge it explicitly or the workflow stays "unmodified".
-    try {
-        window.dispatchEvent(new MouseEvent("mouseup", { bubbles: true }));
-    } catch (e) { /* ignore */ }
+    // so nudge it explicitly or the workflow stays "unmodified". Never during a
+    // drag though — that would cut the gesture short.
+    if (!silent) {
+        try {
+            window.dispatchEvent(new MouseEvent("mouseup", { bubbles: true }));
+        } catch (e) { /* ignore */ }
+    }
     node.setDirtyCanvas?.(true, true);
 }
 
@@ -524,17 +527,25 @@ function createEditor() {
     // Body ───────────────────────────────────────────────────────────────
     const body = el("div", { display: "flex", flex: "1 1 auto", minHeight: "0" });
 
+    // 2/3 canvas, 1/3 inputs. The canvas is absolutely positioned inside its
+    // pane: resizing it must never feed back into the flex layout, otherwise
+    // the ResizeObserver and the canvas chase each other and the whole window
+    // jitters while you click.
     const canvasPane = el("div", {
-        flex: "1 1 auto", minWidth: "0", display: "flex", alignItems: "center",
-        justifyContent: "center", padding: "10px", background: C.bgDeepest,
+        flex: "2 1 0", minWidth: "0", position: "relative", overflow: "hidden",
+        background: C.bgDeepest,
     });
-    const canvas = el("canvas", { background: C.bgDeepest, cursor: "crosshair", touchAction: "none" });
+    const canvas = el("canvas", {
+        position: "absolute", left: "50%", top: "50%",
+        transform: "translate(-50%, -50%)",
+        background: C.bgDeepest, cursor: "crosshair", touchAction: "none",
+    });
     canvas.title = "Drag on empty space to draw a new region. Drag a box to move it, "
         + "its edges or corners to resize. Del removes the selected region.";
     canvasPane.append(canvas);
 
     const side = el("div", {
-        flex: "0 0 400px", display: "flex", flexDirection: "column",
+        flex: "1 1 0", minWidth: "280px", display: "flex", flexDirection: "column",
         borderLeft: `1px solid ${C.border}`, background: C.bg, minHeight: "0",
     });
 
@@ -550,11 +561,15 @@ function createEditor() {
         button("Fit", "Spread all regions evenly across the canvas width.", () => fitBoxes()),
     );
 
+    // overflowY: "scroll" (not "auto") — a scrollbar that appears and vanishes
+    // changes the pane width and would shift the canvas under the cursor.
     const list = el("div", {
-        flex: "0 0 auto", maxHeight: "180px", overflowY: "auto", padding: "6px 8px",
+        flex: "0 0 auto", height: "170px", overflowY: "scroll", padding: "6px 8px",
         borderBottom: `1px solid ${C.border}`,
     });
-    const detail = el("div", { flex: "1 1 auto", overflowY: "auto", padding: "8px 10px", minHeight: "0" });
+    const detail = el("div", {
+        flex: "1 1 auto", overflowY: "scroll", padding: "8px 10px", minHeight: "0",
+    });
 
     side.append(listHead, list, detail);
     body.append(canvasPane, side);
@@ -651,7 +666,13 @@ function createEditor() {
     document.addEventListener("keydown", onKey, true);
 
     // ─── Canvas sizing keeps the real aspect ratio ───────────────────────
-    function fitCanvas() {
+    let lastFit = "";
+
+    function fitCanvas(force) {
+        // Never resize mid-drag: the pointer maths is relative to the rect
+        // captured on pointerdown, so a resize here would drag the box away
+        // from the cursor.
+        if (drag && !force) return;
         const width = findWidget(node, "width")?.value || data.canvas.width || 1024;
         const height = findWidget(node, "height")?.value || data.canvas.height || 1024;
         const availW = Math.max(80, canvasPane.clientWidth - 20);
@@ -660,8 +681,15 @@ function createEditor() {
         let w = availW;
         let h = w / aspect;
         if (h > availH) { h = availH; w = h * aspect; }
-        canvas.style.width = `${Math.round(w)}px`;
-        canvas.style.height = `${Math.round(h)}px`;
+        w = Math.round(w);
+        h = Math.round(h);
+
+        const signature = `${w}x${h}x${width}x${height}`;
+        if (signature === lastFit) { draw(); return; }
+        lastFit = signature;
+
+        canvas.style.width = `${w}px`;
+        canvas.style.height = `${h}px`;
         dimsLabel.textContent = `${width} × ${height}`;
         draw();
     }
@@ -682,15 +710,19 @@ function createEditor() {
         const width = findWidget(node, "width")?.value || 1024;
         const height = findWidget(node, "height")?.value || 1024;
         data.canvas = { width, height };
-        writeLayout(node, data);
+        // Suppress the synthetic mouseup while a drag is running, it would end
+        // the gesture.
+        writeLayout(node, data, Boolean(drag));
         node.__fvmK2Refresh?.();
-        renderList();
-        renderDetail();
+        if (!drag) {
+            renderList();
+            renderDetail();
+        }
         draw();
     }
 
     // ─── Box operations ──────────────────────────────────────────────────
-    function addBox(rect) {
+    function addBox(rect, silent) {
         const id = nextBoxId(data);
         const index = data.boxes.length;
         const box = normalizeBox({
@@ -707,7 +739,9 @@ function createEditor() {
         });
         data.boxes.push(box);
         selectedId = id;
-        commit();
+        // While drawing, committing would rebuild the panel and fire the
+        // synthetic mouseup mid-drag. endDrag() commits once at the end.
+        if (!silent) commit();
         return box;
     }
 
@@ -736,8 +770,13 @@ function createEditor() {
     }
 
     // ─── Canvas interaction ──────────────────────────────────────────────
-    function pointerNorm(e) {
-        const rect = canvas.getBoundingClientRect();
+    /**
+     * Normalized pointer position. During a drag the rect captured on
+     * pointerdown is reused: re-measuring per move would let any layout change
+     * (panel rebuild, scrollbar, window resize) shift the box under the cursor.
+     */
+    function pointerNorm(e, cachedRect) {
+        const rect = cachedRect || canvas.getBoundingClientRect();
         return {
             x: (e.clientX - rect.left) / Math.max(rect.width, 1),
             y: (e.clientY - rect.top) / Math.max(rect.height, 1),
@@ -745,31 +784,37 @@ function createEditor() {
     }
 
     canvas.addEventListener("pointerdown", (e) => {
-        const p = pointerNorm(e);
         const rect = canvas.getBoundingClientRect();
+        const p = pointerNorm(e, rect);
         const hit = hitTest(data, p.x, p.y, rect.width, rect.height);
         canvas.setPointerCapture(e.pointerId);
         if (hit) {
+            const changedSelection = selectedId !== hit.box.id;
             selectedId = hit.box.id;
-            drag = { mode: hit.mode, box: hit.box, start: { ...hit.box.rect }, origin: p };
+            drag = { mode: hit.mode, box: hit.box, start: { ...hit.box.rect }, origin: p, rect };
+            // Only rebuild the side panel when the selection actually changed —
+            // rebuilding on every click is what made the window jump.
+            if (changedSelection) {
+                renderList();
+                renderDetail();
+            }
         } else {
-            const box = addBox({ x: p.x, y: p.y, w: 0, h: 0 });
-            drag = { mode: "draw", box, start: { ...box.rect }, origin: p };
+            const box = addBox({ x: p.x, y: p.y, w: 0, h: 0 }, true);
+            drag = { mode: "draw", box, start: { ...box.rect }, origin: p, rect };
         }
-        renderList();
-        renderDetail();
         draw();
         e.preventDefault();
     });
 
     canvas.addEventListener("pointermove", (e) => {
-        const p = pointerNorm(e);
         if (!drag) {
             const rect = canvas.getBoundingClientRect();
+            const p = pointerNorm(e, rect);
             const hit = hitTest(data, p.x, p.y, rect.width, rect.height);
             canvas.style.cursor = hit ? CURSORS[hit.mode] || "move" : "crosshair";
             return;
         }
+        const p = pointerNorm(e, drag.rect);
         drag.box.rect = applyDrag(drag.start, drag.mode, p.x - drag.origin.x, p.y - drag.origin.y);
         draw();
         e.preventDefault();
@@ -1033,8 +1078,17 @@ function createEditor() {
         node = null;
     }
 
+    // Only react to a real pane size change, coalesced into one frame — an
+    // unguarded observer plus fitCanvas() is a feedback loop.
+    let paneSize = "";
+    let fitFrame = 0;
     const observer = new ResizeObserver(() => {
-        if (win.style.display !== "none") fitCanvas();
+        if (win.style.display === "none" || drag) return;
+        const signature = `${canvasPane.clientWidth}x${canvasPane.clientHeight}`;
+        if (signature === paneSize) return;
+        paneSize = signature;
+        if (fitFrame) return;
+        fitFrame = requestAnimationFrame(() => { fitFrame = 0; fitCanvas(); });
     });
     observer.observe(canvasPane);
 

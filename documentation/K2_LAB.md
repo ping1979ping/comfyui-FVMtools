@@ -99,8 +99,15 @@ K2 Region Builder ──regions──┐
 
 **Editorfenster.** `Edit layout ⤢` (oder Klick auf die Vorschau) öffnet ein
 losgelöstes Fenster — verschiebbar am Titel, größenverstellbar an der Ecke
-unten rechts, `Esc` schließt. Links die Zeichenfläche, rechts Regionsliste und
-Details der ausgewählten Region.
+unten rechts, `Esc` schließt. Aufteilung: **2/3 Zeichenfläche links, 1/3
+Eingaben rechts** (Regionsliste oben, Details der Auswahl darunter).
+
+Das Layout ist bewusst starr gehalten: die Zeichenfläche ist absolut in ihrem
+Bereich positioniert, die Seitenspalte hat eine dauerhaft sichtbare Bildlaufleiste,
+und das Referenzrechteck eines Ziehvorgangs wird beim Drücken einmal erfasst.
+Ohne diese drei Dinge verschiebt jeder Panel-Neuaufbau die Zeichenfläche unter
+dem Mauszeiger — die angeklickte Box wandert dann mit (gemessen: rund 14 px pro
+Mausbewegung).
 
 | Aktion | Bedienung |
 | --- | --- |
