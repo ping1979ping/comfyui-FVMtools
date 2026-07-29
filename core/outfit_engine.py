@@ -338,6 +338,52 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
     }
 
 
+# Colour words that appear inside garment names themselves ("white tennis
+# shoes", "khaki shorts"). Prepending a palette colour on top of these produces
+# contradictions like "charcoal-gray canvas white tennis shoes".
+_NAME_COLOR_WORDS = frozenset({
+    "white", "black", "grey", "gray", "navy", "blue", "red", "green", "yellow",
+    "orange", "purple", "pink", "brown", "beige", "cream", "ivory", "tan",
+    "khaki", "olive", "burgundy", "maroon", "charcoal", "silver", "gold",
+    "bronze", "copper", "teal", "turquoise", "lavender", "mint", "coral",
+    "salmon", "mustard", "rust", "camel", "taupe", "indigo", "denim",
+    "off-white", "blush", "nude", "sand", "stone", "slate", "ecru",
+})
+
+
+# "solid color" and friends describe the ABSENCE of a pattern. Emitting them
+# adds a phrase that says nothing ("… tee with solid color") and, on Krea 2,
+# can even push the model towards rendering the words.
+_NOOP_DECORATIONS = frozenset({
+    "solid color", "solid colour", "solid", "plain", "plain color",
+    "plain colour", "none", "no print", "no pattern", "unpatterned",
+})
+
+
+def _is_noop_decoration(decoration: str) -> bool:
+    return (decoration or "").strip().lower() in _NOOP_DECORATIONS
+
+
+def garment_name_has_color(garment_name: str) -> bool:
+    """True when the garment name already states its own colour."""
+    if not garment_name:
+        return False
+    for word in garment_name.replace("-", " ").lower().split():
+        if word.strip(",.") in _NAME_COLOR_WORDS:
+            return True
+    return False
+
+
+def _fabric_already_named(fabric_name: str, garment_name: str) -> bool:
+    """True when the fabric is already part of the garment name.
+
+    Avoids "pistachio-green denim basic denim jacket".
+    """
+    if not fabric_name or not garment_name:
+        return False
+    return fabric_name.lower() in garment_name.lower()
+
+
 def _build_description(color_tag, fabric_name, garment_name, decoration=None):
     """Build a single garment description like '#primary# silk blouse with floral print'.
 
@@ -345,8 +391,20 @@ def _build_description(color_tag, fabric_name, garment_name, decoration=None):
     convention — see ``core/outfit_lists.py:72``), the marker dictates where
     the color token lands; fabric is placed immediately after it. Otherwise
     the color tag is prepended and fabric inserted between color and name.
+
+    Two things are deliberately suppressed, because both produced prompts that
+    contradicted themselves:
+      * the palette colour, when the garment name already names a colour
+        ("white tennis shoes" must not become "charcoal-gray … white tennis shoes")
+      * the fabric, when the name already contains it
+        ("basic denim jacket" must not become "denim basic denim jacket")
+    An explicit ``#color#`` marker always wins — that is the author's intent.
     """
-    fabric_visible = bool(fabric_name) and fabric_name not in INVISIBLE_FABRICS
+    fabric_visible = (
+        bool(fabric_name)
+        and fabric_name not in INVISIBLE_FABRICS
+        and not _fabric_already_named(fabric_name, garment_name)
+    )
 
     if "#color#" in (garment_name or ""):
         pre, post = garment_name.split("#color#", 1)
@@ -360,13 +418,15 @@ def _build_description(color_tag, fabric_name, garment_name, decoration=None):
             pieces.append(post.strip())
         result = " ".join(pieces)
     else:
-        parts = [color_tag]
+        parts = []
+        if not garment_name_has_color(garment_name):
+            parts.append(color_tag)
         if fabric_visible:
             parts.append(fabric_name)
         parts.append(garment_name)
         result = " ".join(parts)
 
-    if decoration:
+    if decoration and not _is_noop_decoration(decoration):
         result = f"{result} with {decoration}"
     return result
 

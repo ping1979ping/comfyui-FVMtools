@@ -23,12 +23,29 @@ from __future__ import annotations
 import json
 from typing import Any, Iterable
 
-OutputFormat = str  # "pretty_json" | "compact_json" | "loose_keys"
+OutputFormat = str  # "pretty_json" | "compact_json" | "loose_keys" | "natural"
 
 PRETTY_JSON   = "pretty_json"
 COMPACT_JSON  = "compact_json"
 LOOSE_KEYS    = "loose_keys"
-ALL_FORMATS   = (PRETTY_JSON, COMPACT_JSON, LOOSE_KEYS)
+NATURAL       = "natural"
+ALL_FORMATS   = (PRETTY_JSON, COMPACT_JSON, LOOSE_KEYS, NATURAL)
+
+# Keys that describe HOW something was generated, not WHAT is in the image.
+# JSON-native models (Ideogram 4) tolerate them; Krea 2 / Qwen reads them as
+# part of the description, so "natural" drops them.
+NON_PROMPT_KEYS = frozenset({
+    "seed", "set_name", "style_preset", "style", "coverage_target", "formality",
+    "effective_formality", "active_slots", "color_role", "color_resolved",
+    "color_tone", "color_mood", "num_colors", "harmony_type", "harmony",
+    "vibrancy", "contrast", "warmth", "is_override", "slot", "region",
+    "region_id", "probability", "version", "canvas", "notes", "id",
+    "palette", "palette_string", "raw_tokens", "hex", "rgb", "hsl",
+})
+
+# When a node already produced a ready-to-read phrase, use only that and skip
+# the pieces it was assembled from.
+PHRASE_KEYS = ("prompt_fragment", "phrase", "sentence", "text_fragment")
 
 
 # ─── Parsing user input ────────────────────────────────────────────────
@@ -269,7 +286,67 @@ def emit(obj: Any, fmt: OutputFormat = PRETTY_JSON) -> str:
         return emit_strict_json(obj, indent=None)
     if fmt == LOOSE_KEYS:
         return emit_loose_keys(obj)
+    if fmt == NATURAL:
+        return emit_natural(obj)
     return emit_strict_json(obj, indent=2)
+
+
+def natural_phrases(obj: Any) -> list[str]:
+    """Collect the describing phrases from a nested structure, in order.
+
+    Keys are dropped, generation metadata is dropped, and where a node already
+    produced a finished phrase only that phrase is kept. Duplicates are removed
+    because the same colour or fabric often appears in several branches.
+    """
+    out: list[str] = []
+
+    def walk(node: Any) -> None:
+        if isinstance(node, dict):
+            for key in PHRASE_KEYS:
+                value = node.get(key)
+                if isinstance(value, str) and value.strip():
+                    out.append(value.strip())
+                    return
+            for key, value in node.items():
+                if key in NON_PROMPT_KEYS or str(key).startswith("_"):
+                    continue
+                walk(value)
+        elif isinstance(node, (list, tuple)):
+            for item in node:
+                walk(item)
+        elif isinstance(node, str):
+            if node.strip():
+                out.append(node.strip())
+        elif isinstance(node, bool) or node is None:
+            return
+        elif isinstance(node, (int, float)):
+            # Bare numbers never describe an image on their own.
+            return
+
+    walk(obj)
+
+    seen: set[str] = set()
+    unique: list[str] = []
+    for phrase in out:
+        key = phrase.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(phrase)
+    return unique
+
+
+def emit_natural(obj: Any, separator: str = ", ", prefix: str = "") -> str:
+    """Plain prose for models that read prompts as language, not as JSON.
+
+    Krea 2 (Qwen3-VL text encoder) has no notion of JSON keys — braces, key
+    names and metadata all become part of the description. This format emits
+    only the describing phrases.
+    """
+    phrases = natural_phrases(obj)
+    if not phrases:
+        return ""
+    return f"{prefix}{separator.join(phrases)}"
 
 
 def emit_strict_json(obj: Any, indent: int | None = 2) -> str:

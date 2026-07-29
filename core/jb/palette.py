@@ -19,9 +19,11 @@ import random
 try:
     from ..palette_engine import generate_palette
     from ..smp.defaults import ATMOSPHERE_TOKEN_MAP, GARMENT_TOKEN_MAP
+    from .color_moods import mood_colors, mood_engine_kwargs
 except ImportError:  # pragma: no cover
     from core.palette_engine import generate_palette
     from core.smp.defaults import ATMOSPHERE_TOKEN_MAP, GARMENT_TOKEN_MAP
+    from core.jb.color_moods import mood_colors, mood_engine_kwargs
 
 
 CANONICAL_ROLES = ("primary", "secondary", "accent",
@@ -70,17 +72,36 @@ def _atmosphere_pair(rng: random.Random, warmth: float) -> tuple[str, str]:
 
 def build_palette(*, seed: int, num_colors: int = 5, harmony_type: str = "auto",
                   style_preset: str = "general", vibrancy: float = 0.5,
-                  contrast: float = 0.5, warmth: float = 0.5) -> dict:
+                  contrast: float = 0.5, warmth: float = 0.5,
+                  color_mood: str = "auto") -> dict:
     """Return a dict with garment_colors, atmosphere_colors, raw_tokens, subs.
 
     ``subs`` is the merged token map ready for fragment substitution
     (covers both garment and atmosphere tokens in a single pass).
+
+    ``color_mood`` replaces the six sliders with one choice. Pool-based moods
+    ("everyday_muted", "neutral_basics", …) bypass the harmony engine entirely
+    and draw from colours people actually wear; engine moods ("bold", "pastel")
+    just preset the sliders. ``auto`` keeps the previous behaviour untouched.
     """
-    result = generate_palette(
-        seed=seed, num_colors=num_colors, harmony_type=harmony_type,
-        style_preset=style_preset, vibrancy=vibrancy, contrast=contrast,
-        warmth=warmth,
-    )
+    engine_kwargs = {
+        "num_colors": num_colors, "harmony_type": harmony_type,
+        "style_preset": style_preset, "vibrancy": vibrancy,
+        "contrast": contrast, "warmth": warmth,
+    }
+    engine_kwargs.update(mood_engine_kwargs(color_mood))
+
+    pool = mood_colors(color_mood, seed, num_colors)
+    if pool is not None:
+        return _palette_from_names(
+            names=pool, seed=seed, color_mood=color_mood,
+            style_preset=style_preset, warmth=warmth, num_colors=num_colors,
+        )
+
+    result = generate_palette(seed=seed, **engine_kwargs)
+    num_colors = engine_kwargs["num_colors"]
+    warmth = engine_kwargs["warmth"]
+    style_preset = engine_kwargs["style_preset"]
 
     # Canonical-role backfill: ensure every role in CANONICAL_ROLES has a
     # color even if the harmony emitted fewer than 6.
@@ -130,12 +151,60 @@ def build_palette(*, seed: int, num_colors: int = 5, harmony_type: str = "auto",
     return {
         "seed":              seed,
         "style":             style_preset,
+        "color_mood":        color_mood,
         "color_tone":        tone,
         "num_colors":        num_colors,
         "garment_colors":    garment_colors,
         "atmosphere_colors": atmosphere_colors,
         "subs":              subs,
         "palette_string":    result["palette_string"],
+        "raw_tokens":        dict(subs),
+    }
+
+
+def _palette_from_names(*, names: list[str], seed: int, color_mood: str,
+                        style_preset: str, warmth: float, num_colors: int) -> dict:
+    """Build the same payload as build_palette from a fixed list of colour names.
+
+    Used by the pool-based moods, which pick real clothing colours instead of
+    computing a hue harmony.
+    """
+    garment_colors: dict[str, str] = {}
+    for index, role in enumerate(CANONICAL_ROLES):
+        garment_colors[role] = names[index % len(names)]
+    # Metallic is the one role a curated pool should not fill with fabric colour.
+    if len(names) >= 2:
+        garment_colors["metallic"] = "brushed silver" if seed % 2 else "warm gold"
+
+    atm_rng = random.Random((seed * 1_000_003) ^ 0xA73B)
+    ambient_light, shadow_tone = _atmosphere_pair(atm_rng, warmth)
+    atmosphere_colors = {"ambient_light": ambient_light, "shadow_tone": shadow_tone}
+
+    subs: dict[str, str] = {}
+    for token, role in GARMENT_TOKEN_MAP.items():
+        if role in garment_colors:
+            subs[token] = garment_colors[role]
+    for token, key in ATMOSPHERE_TOKEN_MAP.items():
+        if key in atmosphere_colors:
+            subs[token] = atmosphere_colors[key]
+
+    if warmth >= 0.66:
+        tone = "warm"
+    elif warmth <= 0.33:
+        tone = "cool"
+    else:
+        tone = "neutral"
+
+    return {
+        "seed":              seed,
+        "style":             style_preset,
+        "color_mood":        color_mood,
+        "color_tone":        tone,
+        "num_colors":        len(names),
+        "garment_colors":    garment_colors,
+        "atmosphere_colors": atmosphere_colors,
+        "subs":              subs,
+        "palette_string":    ", ".join(names),
         "raw_tokens":        dict(subs),
     }
 

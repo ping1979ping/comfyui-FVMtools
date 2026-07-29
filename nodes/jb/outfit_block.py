@@ -23,7 +23,9 @@ try:
     from ...core.outfit_lists import get_available_sets
     from ...core.style_presets import STYLE_PRESETS
     from ...core.jb.palette import build_palette, resolve_tokens
-    from ...core.jb.serialize import ALL_FORMATS, emit, emit_strict_json
+    from ...core.jb.color_moods import MOOD_NAMES, mood_help
+    from ...core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
+                                      emit_natural, emit_strict_json)
     from ...core.smp.defaults import (
         DEFAULT_COLOR_ROLE_BY_SLOT,
         DEFAULT_PERSON_REGIONS,
@@ -35,7 +37,9 @@ except ImportError:  # pragma: no cover
     from core.outfit_lists import get_available_sets
     from core.style_presets import STYLE_PRESETS
     from core.jb.palette import build_palette, resolve_tokens
-    from core.jb.serialize import ALL_FORMATS, emit, emit_strict_json
+    from core.jb.color_moods import MOOD_NAMES, mood_help
+    from core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
+                                   emit_natural, emit_strict_json)
     from core.smp.defaults import (
         DEFAULT_COLOR_ROLE_BY_SLOT,
         DEFAULT_PERSON_REGIONS,
@@ -114,19 +118,41 @@ class FVM_JB_OutfitBlock:
                 "enable_outerwear":   ("BOOLEAN", {"default": False}),
                 "enable_accessories": ("BOOLEAN", {"default": False}),
                 "enable_bag":         ("BOOLEAN", {"default": False}),
-                "print_probability": ("FLOAT", {"default": 0.3, "min": 0.0, "max": 1.0, "step": 0.05}),
-                "text_mode":         (["auto", "quoted", "descriptive", "off"], {"default": "auto"}),
-                # Color section
-                "num_colors":      ("INT", {"default": 5, "min": 2, "max": 8}),
-                "harmony_type":    (_HARMONY_TYPES, {"default": "auto"}),
-                "palette_style":   (sorted(STYLE_PRESETS.keys()), {"default": "general"}),
-                "vibrancy":        ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05}),
-                "contrast":        ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05}),
-                "warmth":          ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05}),
-                "output_format":   (list(ALL_FORMATS), {"default": "loose_keys"}),
+                "print_probability": ("FLOAT", {"default": 0.3, "min": 0.0, "max": 1.0, "step": 0.05,
+                                      "tooltip": "Chance of a pattern per garment. "
+                                      "'solid color' entries are never written into the "
+                                      "prompt — they say nothing."}),
+                "text_mode":         (["auto", "quoted", "descriptive", "off"], {"default": "off",
+                                      "tooltip": "Slogans printed on the garment. Krea 2 "
+                                      "renders quoted text literally onto the clothing, so "
+                                      "'off' is the default; 'quoted' is for Ideogram-style "
+                                      "text rendering."}),
+                # ── Colour ──
+                "color_mood":      (list(MOOD_NAMES), {"default": "everyday_muted",
+                                    "tooltip": mood_help()}),
+                "output_format":   (list(ALL_FORMATS), {"default": "loose_keys",
+                                    "tooltip": "natural: plain prose, no keys and no "
+                                    "metadata — use this for Krea 2 / Qwen text encoders.\n"
+                                    "loose_keys / pretty_json / compact_json: structured, "
+                                    "for Ideogram 4 style JSON prompting."}),
             },
             "optional": {
                 "overrides": ("STRING", {"default": "", "multiline": True}),
+                # Only consulted when color_mood is "auto" (except palette_style
+                # and warmth, which also tint the atmosphere phrases).
+                "num_colors":      ("INT", {"default": 5, "min": 2, "max": 8,
+                                    "tooltip": "How many colours the outfit draws from."}),
+                "harmony_type":    (_HARMONY_TYPES, {"default": "auto",
+                                    "tooltip": "Harmony engine only (color_mood = auto)."}),
+                "palette_style":   (sorted(STYLE_PRESETS.keys()), {"default": "general",
+                                    "tooltip": "Harmony engine only (color_mood = auto)."}),
+                "vibrancy":        ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05,
+                                    "tooltip": "Harmony engine only (color_mood = auto)."}),
+                "contrast":        ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05,
+                                    "tooltip": "Harmony engine only (color_mood = auto)."}),
+                "warmth":          ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05,
+                                    "tooltip": "Warm/cool bias. Also tints the ambient "
+                                    "light and shadow phrases in every mood."}),
             },
         }
 
@@ -134,8 +160,9 @@ class FVM_JB_OutfitBlock:
               enable_headwear, enable_top, enable_bottom, enable_footwear,
               enable_outerwear, enable_accessories, enable_bag,
               print_probability, text_mode,
-              num_colors, harmony_type, palette_style, vibrancy, contrast, warmth,
-              output_format, overrides=""):
+              color_mood="everyday_muted", output_format="loose_keys",
+              overrides="", num_colors=5, harmony_type="auto",
+              palette_style="general", vibrancy=0.5, contrast=0.5, warmth=0.5):
         slot_enables = {
             "headwear":    enable_headwear,
             "top":         enable_top,
@@ -157,14 +184,21 @@ class FVM_JB_OutfitBlock:
         palette = build_palette(
             seed=seed, num_colors=num_colors, harmony_type=harmony_type,
             style_preset=palette_style, vibrancy=vibrancy, contrast=contrast,
-            warmth=warmth,
+            warmth=warmth, color_mood=color_mood,
         )
         subs = palette["subs"]
 
         garments: dict = {}
         for slot, gr in rec["garments"].items():
             region_id = _SLOT_TO_REGION.get(slot, slot)
-            garments[region_id] = _slot_to_garment(gr, region_id, subs)
+            # "top" and "outerwear" share the upper_body region, so writing both
+            # under the same key silently dropped the shirt whenever a jacket was
+            # enabled. Keep the region id for the first (the top) and give the
+            # layer above its own key — existing consumers still read upper_body.
+            key = region_id
+            if key in garments:
+                key = f"{region_id}_{slot}" if slot != region_id else f"{region_id}_2"
+            garments[key] = _slot_to_garment(gr, region_id, subs)
 
         outfit = {
             "outfit": {
@@ -178,5 +212,9 @@ class FVM_JB_OutfitBlock:
         }
 
         outfit_json = emit_strict_json(outfit, indent=2)
-        outfit_string = emit(outfit, output_format)
+        if output_format == NATURAL:
+            # "wearing …" makes the fragment drop straight into a sentence.
+            outfit_string = emit_natural(outfit, prefix="wearing ")
+        else:
+            outfit_string = emit(outfit, output_format)
         return (outfit_json, outfit_string, palette["palette_string"])
