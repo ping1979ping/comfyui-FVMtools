@@ -337,6 +337,68 @@ class TestSurfaceControl:
         assert spread < 0.10, "a grey source must stay neutral when nothing is forced"
 
 
+class TestStyleIsVisible:
+    """style is what carries the surface into the diffusion prompt, so it has to
+    be readable in the node's own output — otherwise an odd render is unexplainable.
+    """
+
+    def _region(self, idx=0, cluster=-1):
+        return {
+            "index": idx, "class": "paper", "batch_index": 0,
+            "bbox": [0, 0, 40, 40], "mask": _rect_mask(),
+            "crop": np.zeros((64, 64, 3), dtype=np.uint8),
+            "cluster_id": cluster, "too_small": False,
+            "slop": {"verdict": "slop", "score": 0.9, "ocr_text": ""},
+            "proposal": None,
+        }
+
+    def test_texts_table_has_a_header_naming_the_columns(self):
+        node = SignTextProposer()
+        out, texts, _ = node.execute(
+            sign_data={"regions": [self._region()], "image_shape": (256, 256), "batch_size": 1},
+            image=torch.rand(1, 256, 256, 3), enabled=False, fallback_texts="paper: NOTIZ")
+        header = texts.splitlines()[0].split("\t")
+        assert header == ["#", "class", "source", "text", "style", "font_hint"]
+
+    def test_texts_table_carries_the_style_column(self):
+        node = SignTextProposer()
+        region = self._region()
+        out, texts, _ = node.execute(
+            sign_data={"regions": [region], "image_shape": (256, 256), "batch_size": 1},
+            image=torch.rand(1, 256, 256, 3), enabled=False, fallback_texts="paper: NOTIZ")
+        # inject a style the way a model answer would, then re-render the table
+        out["regions"][0]["proposal"]["style"] = "black ink on yellow sticky note"
+        out2, texts2, _ = node.execute(
+            sign_data=out, image=torch.rand(1, 256, 256, 3), enabled=False,
+            manual_override="", fallback_texts="paper: NOTIZ")
+        row = texts.splitlines()[1].split("\t")
+        assert len(row) == 6, "every row must fill all six columns"
+
+    def test_style_appears_in_the_report(self):
+        node = SignTextProposer()
+        region = self._region()
+        region["proposal"] = None
+        out, _, _ = node.execute(
+            sign_data={"regions": [region], "image_shape": (256, 256), "batch_size": 1},
+            image=torch.rand(1, 256, 256, 3), enabled=False, fallback_texts="paper: NOTIZ")
+        # a fallback has no style; a cluster sibling inheriting one must show it
+        out["regions"][0]["proposal"]["style"] = "black ink on yellow sticky note"
+        out["regions"][0]["cluster_id"] = 3
+        second = self._region(idx=1, cluster=3)
+        data = {"regions": [out["regions"][0], second],
+                "image_shape": (256, 256), "batch_size": 1}
+        _, _, report = node.execute(
+            sign_data=data, image=torch.rand(1, 256, 256, 3), enabled=False,
+            fallback_texts="paper: NOTIZ")
+        assert "sticky note" in report or "inherits cluster" in report
+
+    def test_empty_region_list_still_yields_no_table(self):
+        node = SignTextProposer()
+        _, texts, _ = node.execute(
+            sign_data={"regions": []}, image=torch.rand(1, 64, 64, 3), enabled=False)
+        assert texts == "", "a header alone would be noise when there is nothing to show"
+
+
 class TestPromptAssembly:
     """The model reports the surface in `style`; the template must not swallow it."""
 

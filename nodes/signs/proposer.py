@@ -235,7 +235,9 @@ class SignTextProposer:
                 inheritedProposal["source"] = "cluster"
                 region["proposal"] = inheritedProposal
                 inherited += 1
-                report.append(f"  #{i + 1} inherits cluster {cid}: {inheritedProposal['text']!r}")
+                report.append(f"  #{i + 1} inherits cluster {cid}: {inheritedProposal['text']!r}"
+                              + (f" [{inheritedProposal['style']}]"
+                                 if inheritedProposal.get("style", "").strip() else ""))
                 continue
 
             proposal = None
@@ -265,6 +267,12 @@ class SignTextProposer:
                     made += 1
                     report.append(f"  #{i + 1} {cls_name}: {proposal['text']!r} "
                                   f"(legible_original={proposal.get('legible_original', 0):.2f})")
+                    # style carries the surface description into the diffusion
+                    # prompt, so it needs to be visible when a result looks off.
+                    if proposal.get("style", "").strip():
+                        report.append(f"        style: {proposal['style']}")
+                    if proposal.get("font_hint", "").strip():
+                        report.append(f"        font:  {proposal['font_hint']}")
                 else:
                     failed += 1
                     report.append(f"  #{i + 1} {cls_name}: model gave nothing ({proposal.get('error')})")
@@ -294,9 +302,21 @@ class SignTextProposer:
                 cluster_cache.setdefault(cid, proposal)
 
         report.append(f"Summary: {made} from the model, {inherited} inherited, {failed} failed")
-        lines = []
+
+        # Tab-separated so it stays readable in a text preview and still splits
+        # cleanly if anyone parses it. style is included because it is what
+        # carries the surface ("black ink on yellow sticky note") into the
+        # diffusion prompt — without it an odd render is hard to explain.
+        lines = ["#\tclass\tsource\ttext\tstyle\tfont_hint"] if regions else []
         for i, r in enumerate(regions):
             p = r.get("proposal") or {}
-            lines.append(f"{i + 1}\t{r.get('class', '?')}\t{p.get('source', '-')}\t{p.get('text', '')}")
+            lines.append("\t".join([
+                str(i + 1),
+                str(r.get("class", "?")),
+                str(p.get("source", "-")),
+                str(p.get("text", "")),
+                str(p.get("style", "")),
+                str(p.get("font_hint", "")),
+            ]))
 
         return (sign_data, "\n".join(lines), "\n".join(report))
