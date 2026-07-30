@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+last skier's tracks setting up | 0.55 | 0.15-0.35 | frozen curves
+sled path worn beside the run | 0.45 | 0.1-0.25 | walkers' groove
+snow cat road switchbacking wide | 0.4 | 0.15-0.3 | packed lane
+powder pillows on the boundary pines | 0.5 | 0.15-0.3 | loaded branches
+lift terminal humming to itself | 0.4 | 0.1-0.2 | idle machinery
+ptarmigan tracks lacing the fence line | 0.35 | 0.03-0.1 | bird stitching
+wind lifting spindrift off the crest | 0.5 | 0.1-0.3 | smoking ridge line
+snowbank seats carved by waiting | 0.4 | 0.05-0.15 | slumped couches
+last chair rocking as it stops | 0.4 | 0.05-0.15 | pendulum settling
+maintenance ski-doo parked | 0.35 | 0.05-0.15 | key-in trust
+moon rising over the far shoulder | 0.4 | 0.1-0.3 | cold lamp

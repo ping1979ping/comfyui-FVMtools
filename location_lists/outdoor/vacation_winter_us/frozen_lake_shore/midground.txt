@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cleared skating patch swept dark | 0.5 | 0.15-0.35 | grey window in the white
+shovel standing in a snow pile | 0.45 | 0.05-0.15 | upright marker
+hockey net dragged onto the ice | 0.4 | 0.1-0.2 | sagging twine
+fox tracks looping the shoreline | 0.45 | 0.05-0.2 | purposeful stitching
+ice angler hunched on a bucket | 0.4 | 0.05-0.15 | patient statue
+snow squall marching across the far end | 0.35 | 0.2-0.4 | grey curtain
+kids testing the shore ice loudness | 0.45 | 0.1-0.25 | stomping chorus
+dog delighted by the slick | 0.45 | 0.05-0.2 | splayed scramble
+bench iced over facing the lake | 0.45 | 0.05-0.15 | glazed slats
+old bubbler hole skinned with new ice | 0.35 | 0.02-0.08 | thin black window
+sled train heading out from shore | 0.35 | 0.1-0.25 | rope caravan

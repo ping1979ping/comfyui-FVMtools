@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+ladder off the dock end | 0.55 | 0.05-0.15 | silver rungs into dark
+towels over the dock rail | 0.5 | 0.05-0.15 | drying flags
+dragonflies stitching the air | 0.5 | 0.05-0.2 | blue needles
+kayak hauled half out | 0.45 | 0.1-0.25 | dripping stern
+fish rising in soft rings | 0.5 | 0.05-0.2 | widening circles
+rope swing over the deep corner | 0.4 | 0.05-0.2 | knotted invitation
+turtle log with a full house | 0.4 | 0.05-0.15 | shell lineup
+water striders dimpling the film | 0.4 | 0.03-0.1 | skating pinpricks
+canoe crossing the cove mouth | 0.35 | 0.1-0.2 | silent paddler
+beaver wake cutting the calm | 0.3 | 0.05-0.15 | V of intent
+firefly meadow at the shore back | 0.35 | 0.1-0.3 | evening sparks

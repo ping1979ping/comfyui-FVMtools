@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+cocoa mugs on the tub edge | 0.5 | 0.01-0.06 | marshmallow rafts
+wool hats worn in the water | 0.5 | 0.02-0.06 | absurd but correct
+towels folded inside the door | 0.45 | 0.02-0.08 | strategic staging
+lantern with a candle stub | 0.4 | 0.01-0.05 | soft flicker
+snowball stockpile within reach | 0.4 | 0.01-0.05 | ambush ready
+slippers waiting under the eave | 0.45 | 0.01-0.05 | dry promise
+book abandoned for the view | 0.35 | 0.01-0.04 | face-down tent
+headlamp on the rail post | 0.35 | 0.01-0.04 | path insurance
+cider thermos wedged in snow | 0.4 | 0.01-0.05 | natural cooler backwards
+icicle harvested as a trophy | 0.35 | 0.01-0.04 | melting sword
+robe belt trailing in the snow | 0.4 | 0.01-0.05 | dropped sash

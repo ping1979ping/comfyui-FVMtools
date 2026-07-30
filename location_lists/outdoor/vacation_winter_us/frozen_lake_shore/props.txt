@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+skates knotted over a shoulder | 0.5 | 0.02-0.06 | blade pair
+thermos planted in the snow | 0.45 | 0.01-0.05 | steam flag
+hockey stick bridge over a crack | 0.4 | 0.01-0.05 | cautious tool
+hand auger leaned on a bucket | 0.35 | 0.01-0.05 | cork-screwed steel
+tip-up flag waiting mid-lake | 0.35 | 0.01-0.04 | spring-loaded promise
+mittens clipped to a jacket | 0.45 | 0.01-0.04 | idiot-string wisdom
+puck lost in a snowbank | 0.4 | 0.01-0.03 | spring discovery
+sled rope frozen stiff | 0.4 | 0.01-0.04 | wire curve
+hand warmers shaken furiously | 0.45 | 0.01-0.03 | pocket heat
+broken shovel handle marking thin ice | 0.35 | 0.01-0.05 | improvised warning
+orange peel bright on the white | 0.35 | 0.01-0.03 | snack evidence

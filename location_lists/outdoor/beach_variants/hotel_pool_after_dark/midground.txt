@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+lone swimmer stitching quiet laps | 0.5 | 0.1-0.25 | rippling seam
+couple whispering in the hot tub | 0.4 | 0.1-0.2 | steam-wrapped voices
+abandoned float turning in the current | 0.5 | 0.05-0.2 | slow clockwork
+moths orbiting the deck lamps | 0.45 | 0.03-0.1 | dusty satellites
+pool cleaner hose breathing on the bottom | 0.4 | 0.05-0.15 | coiled worker
+wet footmarks leading to the gate | 0.45 | 0.05-0.15 | recent departure
+security round passing unhurried | 0.35 | 0.05-0.15 | keyring jingle
+night breeze scalloping the surface | 0.5 | 0.1-0.3 | broken reflections
+towel forgotten on a lounger | 0.45 | 0.03-0.1 | pale rectangle
+ice machine glow from the alcove | 0.4 | 0.05-0.15 | blue-white spill
+bat cutting through the lamp light | 0.35 | 0.02-0.08 | flickering pass

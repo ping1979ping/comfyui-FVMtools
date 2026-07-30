@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+pool leaned over till hair touches water | 0.6 | 0.1-0.25 | close encounter
+starfish arm touched one finger | 0.55 | 0.03-0.1 | gentle contact
+hermit crab walked across a palm | 0.5 | 0.03-0.1 | ticklish march
+anemone poke bet lost | 0.45 | 0.03-0.1 | quick close
+slippery ledge crossed hand in hand | 0.5 | 0.1-0.25 | chain crossing
+find shouted across the shelf | 0.5 | 0.05-0.2 | come-see wave
+sneaker soaked in a misjudged hop | 0.5 | 0.05-0.15 | squelching pride
+bucket tipped back at day's end | 0.45 | 0.05-0.15 | residents returned
+knees dimpled by the rock | 0.45 | 0.05-0.15 | red honeycomb
+camera lowered nearly to the surface | 0.4 | 0.05-0.15 | held breath
+tide race back to shore giggled through | 0.45 | 0.1-0.25 | splashing retreat

@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+flat stone sidearmed down the run | 0.55 | 0.05-0.2 | four-skip pride
+current walked against thigh-deep | 0.55 | 0.1-0.25 | leaning wade
+crawdad held up pinching air | 0.5 | 0.03-0.1 | careful grip
+tube spun slowly mid-drift | 0.45 | 0.1-0.25 | lazy rotation
+cold hole gasped into | 0.5 | 0.05-0.2 | spring-fed shock
+gravel walked barefoot gingerly | 0.5 | 0.05-0.2 | wincing progress
+watermelon slice dripped over the water | 0.45 | 0.03-0.1 | seed-spitting range
+rope swing queue self-organized | 0.4 | 0.1-0.25 | turn debates
+minnow school stood in until nibbled | 0.45 | 0.05-0.15 | ticklish audit
+wet dog dodged too late | 0.45 | 0.05-0.2 | spray radius
+riffle listened to with eyes shut | 0.45 | 0.1-0.25 | white noise bath

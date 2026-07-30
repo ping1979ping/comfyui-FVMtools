@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+kids cannonballing off the raft | 0.6 | 0.1-0.3 | tucked splashes
+toddler zone of ankle water | 0.55 | 0.1-0.3 | bucket brigade
+floats drifting past the rope | 0.5 | 0.1-0.25 | escaping donuts
+sandy towels shaken like flags | 0.5 | 0.05-0.2 | grit clouds
+snapping turtle rumor clearing a corner | 0.35 | 0.05-0.15 | wide berth
+grill smoke drifting from the pavilion | 0.5 | 0.1-0.3 | charcoal ribbons
+minnows schooling in the shallows | 0.45 | 0.05-0.15 | silver flickers
+dad throwing kids in rotation | 0.5 | 0.1-0.25 | launch service
+goose delegation marching the sand | 0.45 | 0.1-0.2 | honking landlords
+swim lesson clinging to the rope | 0.4 | 0.1-0.25 | kickboard row
+dropped ice cream tragedy in progress | 0.4 | 0.03-0.1 | seagull-less mourning

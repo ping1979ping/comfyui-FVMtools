@@ -17,7 +17,7 @@ try:
     )
     from ...core.style_presets import STYLE_PRESETS
     from ...core.jb.palette import (apply_color_overrides, build_palette,
-                                    resolve_tokens)
+                                    resolve_tokens, sync_night_atmosphere)
     from ...core.jb.color_moods import MOOD_NAMES, mood_help
     from ...core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                       emit_natural, emit_strict_json)
@@ -29,7 +29,7 @@ except ImportError:  # pragma: no cover
     )
     from core.style_presets import STYLE_PRESETS
     from core.jb.palette import (apply_color_overrides, build_palette,
-                                 resolve_tokens)
+                                 resolve_tokens, sync_night_atmosphere)
     from core.jb.color_moods import MOOD_NAMES, mood_help
     from core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                    emit_natural, emit_strict_json)
@@ -159,6 +159,11 @@ class FVM_JB_LocationBlock:
             warmth=warmth, color_mood=color_mood,
         )
         apply_color_overrides(palette, color_overrides)
+        # A night time_of_day draw must not keep daylight atmosphere phrases.
+        # Explicit user overrides win over the automatic sync.
+        tod = rec["elements"].get("time_of_day")
+        if tod and not {"ambient_light", "shadow_tone"} & set(color_overrides):
+            sync_night_atmosphere(palette, seed, tod["name"])
         subs = palette["subs"]
 
         elements: dict = {}

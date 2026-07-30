@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+shovel parked mid-job | 0.6 | 0.05-0.2 | leaning worker
+snow fort under construction | 0.45 | 0.1-0.25 | block architecture
+toboggan tipped by the steps | 0.5 | 0.05-0.2 | red curl
+rabbit tracks under the feeder | 0.45 | 0.05-0.15 | hop punctuation
+snow blower cowled in its drift | 0.4 | 0.1-0.2 | defeated machine
+icicles farmed along the shed eave | 0.5 | 0.05-0.2 | growing teeth
+cat refusing the doorstep threshold | 0.4 | 0.02-0.08 | one-paw verdict
+firewood ferried load by load | 0.5 | 0.1-0.25 | sled shuttle
+chickadees swapping at the feeder | 0.45 | 0.03-0.1 | polite rotation
+drift cornice cracking off the roof | 0.4 | 0.1-0.25 | slow-motion calve
+snow-cave entrance glowing faint blue | 0.35 | 0.05-0.15 | kid-sized burrow

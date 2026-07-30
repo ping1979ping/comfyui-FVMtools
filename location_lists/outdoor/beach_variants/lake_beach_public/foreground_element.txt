@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+running start off the raft | 0.55 | 0.1-0.25 | board-rattling launch
+rope ducked under to the deep side | 0.5 | 0.05-0.2 | forbidden crossing
+weeds high-stepped through | 0.5 | 0.05-0.2 | squeamish tiptoe
+towel cocoon on the grass bank | 0.5 | 0.1-0.25 | shivering burrito
+foot rinse hop at the spigot | 0.5 | 0.03-0.1 | one-legged dance
+float claimed with a belly flop | 0.5 | 0.05-0.2 | territorial splash
+minnow cupped for a second | 0.45 | 0.03-0.1 | quick release
+lake gulp mid-laugh regretted | 0.4 | 0.03-0.1 | sputtering recovery
+goose stared down over a sandwich | 0.4 | 0.05-0.15 | tense standoff
+raft king-of-the-hill round | 0.45 | 0.1-0.25 | shoving contest
+sun-warmed shallows walked slowly | 0.5 | 0.1-0.25 | bath-water stretch

@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bare feet at the foam edge | 0.65 | 0.05-0.2 | cold nibble
+name traced big in the wet sand | 0.45 | 0.05-0.2 | stick calligraphy
+stone skipped across a lull | 0.45 | 0.05-0.15 | counting hops
+shell held up against the light | 0.5 | 0.03-0.1 | translucent check
+hair surrendered to the wind | 0.55 | 0.05-0.15 | streaming strands
+sweater sleeves pulled over hands | 0.5 | 0.05-0.15 | evening chill
+long exhale facing the horizon | 0.55 | 0.1-0.3 | shoulders dropping
+dog stick thrown into the surf | 0.4 | 0.1-0.25 | ecstatic retrieve
+jeans rolled two turns too few | 0.45 | 0.05-0.15 | soaked hems
+sand poured from palm to palm | 0.4 | 0.03-0.1 | idle hourglass
+horizon watched without a phone | 0.5 | 0.1-0.3 | pocketed world

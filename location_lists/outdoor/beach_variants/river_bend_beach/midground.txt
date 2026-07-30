@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+camp chairs half in the water | 0.55 | 0.1-0.25 | cooling-seat trick
+cooler anchored in the shallows | 0.5 | 0.05-0.2 | current-chilled
+tube flotilla roped together | 0.45 | 0.1-0.3 | lazy convoy
+kids damming a side trickle | 0.5 | 0.1-0.25 | civil engineering
+rope swing over the deep hole | 0.45 | 0.05-0.2 | tested knot
+fly caster working the riffle tail | 0.4 | 0.1-0.2 | rhythmic loops
+dog swimming a wide circle | 0.45 | 0.05-0.2 | nose-up paddle
+smallmouth flashing off a rock | 0.35 | 0.02-0.08 | bronze turn
+driftwood fort mid-construction | 0.4 | 0.1-0.25 | stacked silver
+crawdad hunt in the gravel | 0.45 | 0.05-0.2 | flipped-stone patrol
+heron lifting off downstream | 0.4 | 0.05-0.15 | slow-motion exit

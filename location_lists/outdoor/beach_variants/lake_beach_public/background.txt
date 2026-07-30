@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+roped swim area dotted with heads | 1.0 | 0.4-0.8 | float-line rectangle
+coarse sand beach on the lake | 0.85 | 0.4-0.7 | trucked-in strip
+far shore of solid trees | 0.7 | 0.25-0.5 | green wall doubled in water
+swim raft crowded at the corner | 0.6 | 0.1-0.3 | tilting takeoffs
+lifeguard chair with an umbrella | 0.55 | 0.1-0.25 | shaded perch
+grass bank of blankets behind the sand | 0.6 | 0.25-0.5 | patchwork slope
+boat launch at the beach end | 0.45 | 0.15-0.3 | concrete tongue
+buoy line ticking in the chop | 0.55 | 0.1-0.25 | white beads
+picnic pavilion under the oaks | 0.5 | 0.2-0.4 | green roof shade
+canoes racked by the launch | 0.45 | 0.1-0.25 | nested hulls
+paddleboarders wobbling out wide | 0.45 | 0.1-0.25 | standing silhouettes

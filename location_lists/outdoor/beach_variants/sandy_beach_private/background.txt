@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+empty sand stretching both ways | 1.0 | 0.5-0.9 | unmarked expanse
+dunes rolling back in grass tufts | 0.8 | 0.25-0.5 | seagrass mounds
+surf running unwatched | 0.8 | 0.3-0.6 | steady white lines
+single set of footprints along the wet sand | 0.6 | 0.1-0.3 | dotted line to nowhere
+driftwood log half buried | 0.55 | 0.1-0.3 | silvered trunk
+headland closing the far view | 0.5 | 0.2-0.4 | hazy bluff
+sky doing most of the talking | 0.7 | 0.4-0.7 | big weather ceiling
+sandpipers working the foam edge | 0.55 | 0.05-0.2 | clockwork sprints
+old fire ring of blackened stones | 0.45 | 0.05-0.2 | charcoaled circle
+tide pools left in the low ripples | 0.45 | 0.1-0.3 | warm shallow mirrors
+beach rose thicket at the dune toe | 0.4 | 0.1-0.3 | pink-dotted green

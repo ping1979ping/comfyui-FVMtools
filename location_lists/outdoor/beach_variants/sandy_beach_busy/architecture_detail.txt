@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+tide line of shell and weed | 0.6 | 0.1-0.3 | wrack ribbon
+soft sand churned by traffic | 0.6 | 0.2-0.45 | ankle-deep churn
+hard wet sand smooth as a floor | 0.55 | 0.2-0.45 | mirror sheen
+dune fence slats half buried | 0.5 | 0.05-0.2 | leaning pickets
+trash barrel ringed by near-misses | 0.45 | 0.05-0.15 | overflow scatter
+access path worn through the dunes | 0.5 | 0.1-0.25 | sandy funnel
+flag poles marking the swim zone | 0.5 | 0.03-0.1 | colored pennants
+sand fleas popping at the wrack | 0.35 | 0.02-0.08 | tiny leaps
+runnels braiding down the slope | 0.45 | 0.1-0.25 | silver threads
+foot-burn hop zone of dry sand | 0.45 | 0.15-0.35 | shimmering heat
+shell crush line under the step | 0.4 | 0.05-0.2 | crunching mosaic

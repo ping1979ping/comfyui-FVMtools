@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+first toe-in sending rings out | 0.6 | 0.05-0.2 | silence breaker
+slow breaststroke keeping the hair dry | 0.5 | 0.1-0.25 | careful glide
+float lain on like furniture | 0.55 | 0.1-0.25 | drifting recliner
+cannonball audience of one dog | 0.5 | 0.05-0.2 | judged entry
+skimmer run around the edge | 0.5 | 0.1-0.25 | leaf patrol
+night swim glow admired from the water | 0.4 | 0.1-0.3 | lit from below
+towel wrapped watching the sunset | 0.5 | 0.1-0.25 | dripping quietly
+handstand contest scored loosely | 0.45 | 0.05-0.2 | legs at angles
+edge sat with legs stirring circles | 0.55 | 0.05-0.2 | idle propellers
+sun-warmed deck lain on to dry | 0.5 | 0.1-0.3 | starfish pose
+lightning bugs watched from the shallows | 0.4 | 0.1-0.25 | chin at water level

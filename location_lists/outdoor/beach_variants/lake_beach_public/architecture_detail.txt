@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+sand ending in a mowed-grass seam | 0.55 | 0.1-0.3 | maintained edge
+gravel path around to the launch | 0.5 | 0.1-0.25 | crunching loop
+lake water tea-colored in the shallows | 0.55 | 0.15-0.35 | tannin amber
+weed line where the sand runs out | 0.5 | 0.1-0.25 | soft green boundary
+rope anchors rusting at the posts | 0.4 | 0.02-0.08 | orange stains
+raft ladder polished by feet | 0.45 | 0.02-0.08 | silver rungs
+foot-rinse spigot by the grass | 0.45 | 0.03-0.1 | dripping ritual
+pavilion posts carved by decades | 0.4 | 0.03-0.1 | initialed history
+lake bottom mapped by toes | 0.45 | 0.1-0.25 | sand then silt then weeds
+buoy rope beard of algae | 0.4 | 0.03-0.1 | green fringe
+shade line of the big oaks | 0.5 | 0.2-0.4 | cool boundary

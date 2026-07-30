@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+toes tested off the ladder | 0.6 | 0.05-0.2 | temperature verdict
+quiet slide in without a splash | 0.5 | 0.1-0.25 | respectful entry
+back float staring at the sky | 0.55 | 0.1-0.3 | ears underwater
+dock boards warm under the back | 0.55 | 0.1-0.3 | sun-stored heat
+line cast toward the lily edge | 0.45 | 0.05-0.2 | soft plop
+loon call answered badly | 0.35 | 0.03-0.1 | laughing failure
+rope swing arc ending in a shriek | 0.4 | 0.1-0.25 | release point
+mug warmed both hands | 0.45 | 0.03-0.1 | morning ritual
+canoe steadied for a shaky boarding | 0.4 | 0.1-0.25 | white-knuckle step
+dragonfly landed on a knee | 0.4 | 0.02-0.08 | held breath
+evening watched from the dock end | 0.55 | 0.1-0.3 | feet in the water

@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bucket brigade of young collectors | 0.55 | 0.1-0.3 | intent expedition
+starfish prised nowhere near loose | 0.45 | 0.03-0.1 | five-point suction
+hermit crab race across a pool floor | 0.45 | 0.03-0.1 | borrowed-shell hustle
+dad ankle-deep pointing things out | 0.5 | 0.1-0.25 | guided tour
+slip caught by a quick arm | 0.45 | 0.05-0.15 | seaweed lesson
+sculpin darting under a ledge | 0.4 | 0.02-0.08 | camouflage failure
+photographer flat on the rock | 0.4 | 0.05-0.15 | macro devotion
+tide chart consulted on a phone | 0.4 | 0.02-0.08 | return-time math
+picnic wedged in a dry hollow | 0.4 | 0.05-0.2 | wind-sheltered spread
+dog forbidden from every pool | 0.4 | 0.05-0.15 | straining leash
+teenager narrating a find | 0.4 | 0.05-0.15 | crowd of two

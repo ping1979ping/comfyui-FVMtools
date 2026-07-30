@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+hazy bright morning over the water | 0.8 | - | -
+harsh midday sun straight overhead | 0.75 | - | -
+late afternoon sun angling low | 0.85 | - | -
+golden hour gilding the water | 0.85 | - | -
+sunset colors stacked on the horizon | 0.8 | - | -
+blue hour with the first stars | 0.6 | - | -
+moonlight silvering the water | 0.5 | - | -
+deep night under a clear sky | 0.45 | - | -
+first light before anyone arrives | 0.6 | - | -
+flat overcast glare off the water | 0.65 | - | -

@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rectangular pool behind the house | 1.0 | 0.4-0.8 | still blue rectangle
+privacy fence wrapping the yard | 0.8 | 0.3-0.55 | tall board wall
+concrete deck with a few loungers | 0.7 | 0.25-0.5 | sun-bleached pair
+diving board with a worn tip | 0.5 | 0.1-0.25 | sandpaper nose
+string lights crossing the patio | 0.5 | 0.1-0.3 | idle bulbs by day
+pool shed tucked in the corner | 0.5 | 0.1-0.25 | filter hum inside
+back porch steps down to the deck | 0.55 | 0.15-0.35 | screen door above
+maple throwing afternoon shade | 0.55 | 0.2-0.4 | leaf-shadow lace
+neighbor rooflines beyond the fence | 0.5 | 0.15-0.35 | shingled horizon
+water so still it doubles the sky | 0.6 | 0.25-0.5 | inverted clouds
+towel line strung post to post | 0.45 | 0.1-0.25 | drying stripes

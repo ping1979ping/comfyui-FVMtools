@@ -329,6 +329,60 @@ class TestLocationOverrides:
         assert "overridden: ambient_light=dim tungsten evening" in out[2]
 
 
+class TestNightAtmosphereSync:
+    """Nacht-Zeitzug darf keine Tageslicht-Ambient-Phrase behalten."""
+
+    SET = "outdoor/beach_variants/sandy_beach_private"
+
+    @staticmethod
+    def build(**extra):
+        from nodes.jb.location_block import FVM_JB_LocationBlock
+        node = FVM_JB_LocationBlock()
+        kwargs = dict(
+            location_set=TestNightAtmosphereSync.SET, seed=41,
+            enable_background=True, enable_midground=False,
+            enable_architecture_detail=False, enable_props=False,
+            enable_foreground_element=False, enable_time_of_day=True,
+            enable_weather=False, color_mood="everyday_muted",
+            output_format="natural",
+        )
+        kwargs.update(extra)
+        return node.build(**kwargs)
+
+    def test_sync_helper_detects_night(self):
+        from core.jb.palette import (_AMBIENT_NIGHT, build_palette,
+                                     sync_night_atmosphere)
+        pal = build_palette(seed=3, color_mood="everyday_muted")
+        assert sync_night_atmosphere(pal, 3, "moonlight silvering the water")
+        assert pal["atmosphere_colors"]["ambient_light"] in _AMBIENT_NIGHT
+        assert pal["subs"]["#ambient_light#"] in _AMBIENT_NIGHT
+        assert "[night atmosphere]" in pal["palette_string"]
+
+    def test_day_and_dusk_phrases_untouched(self):
+        from core.jb.palette import build_palette, sync_night_atmosphere
+        for phrase in ("harsh midday sun straight overhead",
+                       "sunset colors stacked on the horizon",
+                       "dusk with the water gone dark"):
+            pal = build_palette(seed=3, color_mood="everyday_muted")
+            before = pal["subs"]["#ambient_light#"]
+            assert not sync_night_atmosphere(pal, 3, phrase)
+            assert pal["subs"]["#ambient_light#"] == before
+
+    def test_forced_night_time_syncs_the_fragments(self):
+        from core.jb.palette import _AMBIENT_NIGHT
+        out = self.build(overrides="time_of_day: moonlight silvering the water")
+        assert "moonlight silvering the water" in out[1]
+        assert any(a in out[1] for a in _AMBIENT_NIGHT), out[1]
+        assert "daylight" not in out[1]
+
+    def test_explicit_ambient_override_wins_over_sync(self):
+        out = self.build(overrides=(
+            "time_of_day: moonlight silvering the water\n"
+            "palette: ambient_light=orange bonfire glow"))
+        assert "orange bonfire glow" in out[1]
+        assert "[night atmosphere]" not in out[2]
+
+
 class TestColorMoods:
     def test_all_moods_have_a_description(self):
         for name, spec in COLOR_MOODS.items():

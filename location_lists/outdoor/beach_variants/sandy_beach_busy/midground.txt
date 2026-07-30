@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+family camp of chairs and coolers | 0.8 | 0.2-0.4 | claimed territory
+sandcastle city under construction | 0.6 | 0.1-0.3 | dribbled towers
+umbrella leaning with the wind | 0.65 | 0.1-0.3 | tilted canvas
+paddleball game staked out | 0.5 | 0.1-0.3 | back-and-forth pock
+cooler wagon dragged past | 0.5 | 0.1-0.25 | fat-wheeled hauler
+toddler at the foam edge | 0.55 | 0.05-0.2 | knee-deep bravery
+boogie boards planted like fins | 0.5 | 0.1-0.25 | leashed row
+seagull raid on an open bag | 0.5 | 0.05-0.2 | wing chaos
+sun shelter half collapsed | 0.45 | 0.1-0.25 | flapping panel
+walker threading the towel maze | 0.55 | 0.1-0.3 | careful steps
+surf fisherman off to one side | 0.35 | 0.1-0.25 | planted rod

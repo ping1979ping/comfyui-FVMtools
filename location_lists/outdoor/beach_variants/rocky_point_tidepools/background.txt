@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rock shelf running out to the point | 1.0 | 0.5-0.9 | table of wet stone
+pools scattered like dropped mirrors | 0.85 | 0.3-0.6 | sky pieces everywhere
+families bent over the water windows | 0.6 | 0.2-0.4 | pointing clusters
+surf working the shelf edge | 0.7 | 0.2-0.45 | white surge line
+headland lighthouse-less and bare | 0.45 | 0.15-0.35 | wind-scoured hump
+gulls loitering for dropped finds | 0.5 | 0.1-0.25 | opportunist line
+weed-slick channels between pools | 0.55 | 0.15-0.35 | green glass runs
+low tide stretching the playground | 0.6 | 0.3-0.6 | exposed acreage
+kids hopping pool to pool | 0.55 | 0.15-0.35 | shrieking parkour
+parking pull-off above the rocks | 0.4 | 0.1-0.25 | guardrail glint
+mainland cliffs curving away | 0.5 | 0.2-0.4 | receding walls

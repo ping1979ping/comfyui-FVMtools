@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+light breeze riffling the surface | 0.8 | - | -
+humid summer air | 0.65 | - | -
+dead calm mirror water | 0.6 | - | -
+gusts dragging cat's paws across | 0.5 | - | -
+damp air under the shore trees | 0.55 | - | -
+heavy still air before a storm | 0.45 | - | -
+drizzle dimpling the shallows | 0.35 | - | -
+dragonfly-thick warm air | 0.5 | - | -
+cool air pooling near the water | 0.5 | - | -
+thin high cloud | 0.6 | - | -

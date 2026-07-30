@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning before the rush | 0.7 | - | -
+harsh noon glare off the deck | 0.75 | - | -
+long hot afternoon | 0.85 | - | -
+late sun stretching the shadows | 0.8 | - | -
+dusk with the water gone dark | 0.55 | - | -
+night with the pool glowing from below | 0.5 | - | -
+deep night with the deck empty | 0.4 | - | -
+first light on undisturbed water | 0.5 | - | -
+overcast flat brightness | 0.6 | - | -
+last hour before closing | 0.55 | - | -

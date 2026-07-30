@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+river shoes drying on a log | 0.5 | 0.02-0.06 | drip row
+skipping-stone stockpile curated | 0.45 | 0.01-0.05 | flat elite
+snorkel mask for the deep hole | 0.4 | 0.01-0.05 | fogged lens
+towels draped on willow limbs | 0.45 | 0.03-0.1 | branch laundry
+crawdad in a clear cup | 0.4 | 0.01-0.04 | temporary celebrity
+sunscreen standing in a shoe | 0.4 | 0.01-0.04 | sand-free trick
+watermelon cooling in the shallows | 0.4 | 0.02-0.08 | green buoy
+found antler bleached pale | 0.3 | 0.01-0.04 | river treasure
+rope coil for the swing repair | 0.35 | 0.01-0.05 | fresh knots
+sandwich bag of trail mix | 0.4 | 0.01-0.04 | shared rations
+paddle jammed upright as a marker | 0.35 | 0.01-0.05 | camp flag

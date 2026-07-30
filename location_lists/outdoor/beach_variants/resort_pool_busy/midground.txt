@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cannonball contest at the deep end | 0.55 | 0.1-0.3 | judged splashes
+float traffic jam mid-pool | 0.55 | 0.15-0.35 | vinyl gridlock
+server weaving with a loaded tray | 0.5 | 0.1-0.25 | balanced circus
+kids chain-diving for rings | 0.5 | 0.1-0.25 | bubbling relay
+sunscreen assembly line on a lounger | 0.5 | 0.1-0.25 | family production
+marco polo drifting out of bounds | 0.45 | 0.1-0.3 | eyes-shut wandering
+towel flicked at a sibling | 0.45 | 0.05-0.15 | snap war
+lifeguard rotating stations | 0.45 | 0.05-0.15 | whistle handoff
+belly flop absorbed with honor | 0.45 | 0.05-0.15 | red-chested bow
+pool noodle sword duel | 0.45 | 0.05-0.2 | foam fencing
+napper defended by an eye mask | 0.4 | 0.05-0.15 | oblivious island

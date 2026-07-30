@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+quiet slip into the glowing water | 0.6 | 0.1-0.25 | barely a ripple
+back float under the night sky | 0.55 | 0.1-0.3 | ears full of hum
+steam parted with a slow arm | 0.5 | 0.05-0.2 | ghost-swimming
+whisper carrying across the water | 0.45 | 0.05-0.15 | conspirators' pool
+underwater glide lit blue-green | 0.5 | 0.1-0.25 | glowing passage
+hot tub eased into by degrees | 0.45 | 0.05-0.2 | hissing breath
+wet hair pushed back under the lamps | 0.5 | 0.03-0.15 | slicked shine
+towel hugged against the night air | 0.5 | 0.05-0.2 | shivering pause
+pool edge sat on with a drink | 0.5 | 0.05-0.2 | legs in the glow
+midnight lap counted to nobody | 0.45 | 0.1-0.25 | private race
+gate closed softly behind | 0.45 | 0.05-0.15 | considerate exit

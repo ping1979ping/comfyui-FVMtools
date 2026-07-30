@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+first glide wobbled then trusted | 0.55 | 0.1-0.25 | ankle negotiation
+ice stared through hands-cupped | 0.5 | 0.05-0.15 | window to the dark
+crack boom flinched at then laughed off | 0.5 | 0.05-0.2 | nervous humor
+snow shoved clear with a boot sweep | 0.5 | 0.05-0.2 | widening the rink
+stone slid whirring for distance | 0.45 | 0.05-0.2 | curling minimalism
+breath fog thick as speech bubbles | 0.5 | 0.03-0.12 | visible words
+mitten wiped across a runny nose | 0.45 | 0.02-0.08 | winter honesty
+skate laces yanked tight with teeth | 0.4 | 0.03-0.1 | frozen-finger workaround
+penguin shuffle across a slick patch | 0.5 | 0.05-0.2 | dignity traded
+sunset colors read off the ice | 0.45 | 0.1-0.3 | pink mirror
+hot drink passed glove to glove | 0.45 | 0.03-0.1 | shared thaw

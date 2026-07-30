@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+wide sandy beach packed with umbrellas | 1.0 | 0.5-0.9 | color-dotted crowd field
+surf line rolling in sets | 0.85 | 0.3-0.6 | white foam bands
+lifeguard chair above the crowd | 0.7 | 0.1-0.3 | tall white frame
+dune line fencing the back | 0.6 | 0.2-0.4 | grass-topped ridge line
+boardwalk silhouettes far off | 0.5 | 0.15-0.35 | railing and rooftops
+swimmers bobbing between the flags | 0.65 | 0.2-0.4 | heads in the swell
+horizon stacked with haze | 0.6 | 0.25-0.5 | sea-sky blur
+kite wobbling over the beach | 0.45 | 0.05-0.2 | diving diamond
+towel patchwork to the waterline | 0.7 | 0.3-0.6 | quilted crowd ground
+jetty rocks at the beach end | 0.45 | 0.15-0.35 | dark boulder arm
+gull squadrons riding the breeze | 0.55 | 0.1-0.3 | white scatter

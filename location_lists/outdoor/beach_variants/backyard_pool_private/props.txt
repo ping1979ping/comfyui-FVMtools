@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+goggles on the pool edge | 0.5 | 0.01-0.05 | drip-drying
+sunscreen and a rolled towel on a chair | 0.55 | 0.02-0.08 | ready kit
+pool test strips tube by the shed | 0.35 | 0.01-0.04 | ritual chemistry
+diving rings stacked on a step | 0.5 | 0.02-0.06 | rainbow quoits
+noodle collection in a barrel | 0.5 | 0.03-0.1 | faded bouquet
+radio on the porch rail | 0.4 | 0.01-0.05 | ballgame murmur
+citronella torches ringing the deck | 0.4 | 0.03-0.1 | unlit til dusk
+popsicle sticks on a napkin | 0.4 | 0.01-0.04 | afternoon evidence
+dog ball waterlogged and prized | 0.45 | 0.01-0.04 | soggy treasure
+book folded over a chair arm | 0.45 | 0.01-0.05 | pool-side pause
+lemonade sweating on the steps | 0.45 | 0.01-0.05 | condensation ring

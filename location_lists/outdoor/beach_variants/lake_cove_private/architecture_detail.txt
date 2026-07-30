@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+dock boards gapped and springy | 0.55 | 0.1-0.3 | flexing walk
+post rings worn by decades of rope | 0.4 | 0.02-0.08 | polished grooves
+water so clear the rocks layer down | 0.5 | 0.2-0.4 | drowned staircase
+pine needles rafting the corners | 0.45 | 0.05-0.15 | drifting mats
+sap beads on the dock rail | 0.35 | 0.02-0.06 | amber pearls
+drop-off visible as a color line | 0.5 | 0.1-0.3 | green to black
+frog plop punctuation | 0.45 | 0.02-0.08 | shoreline exits
+moss carpeting the north rocks | 0.45 | 0.1-0.25 | deep pile
+old anchor chain into the weeds | 0.3 | 0.02-0.08 | rusted disappearance
+cattail stand guarding the inlet | 0.45 | 0.1-0.3 | brown pokers
+morning spider lines silvering the rail | 0.4 | 0.03-0.1 | dew-strung harps

@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+still cove ringed by hemlocks | 1.0 | 0.5-0.9 | dark green bowl
+weathered dock reaching out | 0.8 | 0.2-0.45 | grey planks on posts
+water black-green and glassy | 0.75 | 0.3-0.6 | depth without color
+far point hiding the main lake | 0.55 | 0.2-0.4 | wooded arm
+rowboat tied nose-in | 0.55 | 0.1-0.3 | patient tether
+boulder shore instead of beach | 0.55 | 0.2-0.4 | mossy shoulders
+cabin roof through the trees | 0.45 | 0.1-0.3 | cedar shakes
+heron statue-still on a deadhead | 0.4 | 0.03-0.1 | grey sentinel
+lily pads cornering the shallows | 0.5 | 0.15-0.35 | green tile floor
+mist pocket lingering late | 0.4 | 0.15-0.35 | slow to burn off
+loon surfacing without a ripple | 0.35 | 0.03-0.1 | black-and-white check

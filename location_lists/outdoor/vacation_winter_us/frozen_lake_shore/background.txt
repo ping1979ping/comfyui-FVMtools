@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+white lake plain to the far shore | 1.0 | 0.5-0.9 | wind-packed snow over ice
+dark treeline ringing the shore | 0.75 | 0.25-0.5 | spruce silhouette wall
+ice heaved into shore ridges | 0.6 | 0.15-0.35 | tilted blue plates
+snow dunes sculpted across the ice | 0.55 | 0.2-0.45 | wind-carved waves
+far shacks of ice fishermen | 0.4 | 0.1-0.25 | scattered dots
+cattails locked in at the inlet | 0.5 | 0.15-0.3 | frozen pokers
+cloud shadows crossing the white | 0.5 | 0.25-0.5 | traveling grey
+pressure crack wandering out | 0.45 | 0.1-0.3 | dark lightning line
+boarded summer dock iced in | 0.5 | 0.15-0.3 | locked-in pilings
+island pines wearing snow coats | 0.45 | 0.15-0.3 | offshore hummock
+low sun dragging long blue shadows | 0.55 | 0.25-0.5 | stretched forms

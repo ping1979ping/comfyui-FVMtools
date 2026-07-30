@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+pools zoned by depth and life | 0.55 | 0.15-0.35 | layered neighborhoods
+coralline pink crusting the rims | 0.45 | 0.05-0.15 | rosy stone lace
+surge slot too wide to hop | 0.45 | 0.05-0.15 | respected gap
+mussel mat quilting the mid-shelf | 0.5 | 0.15-0.3 | blue-black quilt
+sea lettuce flags in the drains | 0.45 | 0.05-0.15 | bright green streamers
+barnacles closing as the water falls | 0.4 | 0.05-0.15 | tiny trapdoors
+non-slip friction of dry rock | 0.45 | 0.1-0.25 | grippy patches
+treacherous sheen of the wet slopes | 0.5 | 0.1-0.25 | tested carefully
+sand pockets floored in old shell | 0.4 | 0.05-0.15 | crushed white beds
+tide creeping back up the channels | 0.5 | 0.15-0.35 | quiet reclaim
+limpet scars ringing empty seats | 0.35 | 0.03-0.1 | home ovals

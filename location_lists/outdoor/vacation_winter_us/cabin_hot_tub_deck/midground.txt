@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+robes hung on hooks by the door | 0.6 | 0.1-0.25 | waiting warmth
+snow shoveled into a path | 0.6 | 0.15-0.3 | walled walkway
+boots steaming on the mat | 0.5 | 0.05-0.15 | melting crust
+cover shell propped against the rail | 0.5 | 0.1-0.25 | frosted clamshell
+snow sliding off a branch in a whump | 0.45 | 0.05-0.2 | powder burst
+deer prints stitching the yard | 0.45 | 0.05-0.2 | dotted lines
+sled parked nose-in a drift | 0.4 | 0.05-0.15 | day's veteran
+thermometer needle deep in the blue | 0.4 | 0.01-0.05 | honest cold
+snowman supervising from the yard | 0.4 | 0.05-0.15 | stick-armed guard
+lantern path lights half buried | 0.45 | 0.05-0.15 | glowing mounds
+owl calling from the dark treeline | 0.35 | 0.03-0.1 | question marks

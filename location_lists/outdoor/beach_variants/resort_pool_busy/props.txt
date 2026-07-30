@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+frozen drink sweating on a ledge | 0.55 | 0.02-0.06 | umbrella garnish
+goggles collection by a family camp | 0.5 | 0.02-0.06 | strap pile
+inflatable unicorn on patrol | 0.5 | 0.03-0.12 | absurd majesty
+paperback fattening with humidity | 0.45 | 0.01-0.05 | deck-chair novel
+waterproof speaker doing too much | 0.4 | 0.01-0.05 | contested playlist
+dive rings glinting on the bottom | 0.5 | 0.02-0.08 | scattered targets
+kids' crocs in a bright heap | 0.5 | 0.02-0.06 | molded pile
+aloe bottle standing by | 0.4 | 0.01-0.04 | evening forecast
+room key card in a sandal | 0.45 | 0.01-0.03 | classic hiding spot
+snack basket down to crumbs | 0.45 | 0.01-0.05 | fry graveyard
+wet footmarks evaporating in rows | 0.5 | 0.05-0.2 | vanishing trail

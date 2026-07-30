@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+shoes wedged safe in a dry crack | 0.5 | 0.02-0.06 | above the spray
+towel spread on the flat boulder | 0.5 | 0.03-0.1 | corner-weighted
+found buoy fragment faded pink | 0.35 | 0.01-0.05 | wave-worn foam
+snorkel mask drying on a rock | 0.4 | 0.01-0.05 | drips in the sun
+crab claw abandoned by a gull | 0.35 | 0.01-0.03 | orange pincer
+sketchbook wedged under a stone | 0.3 | 0.01-0.05 | wind-safe pages
+rope end frayed into a mop | 0.35 | 0.01-0.05 | ship's castoff
+sea urchin test balanced whole | 0.3 | 0.01-0.03 | fragile lantern
+water shoes drip-drying toe-up | 0.4 | 0.01-0.05 | rubber pair
+lunch tin defended from gulls | 0.4 | 0.02-0.06 | latched box
+walking stick parked in a crevice | 0.35 | 0.01-0.05 | trusted third leg

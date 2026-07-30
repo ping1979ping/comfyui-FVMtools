@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+empty pool glowing from below | 1.0 | 0.4-0.8 | electric turquoise slab
+deck chairs squared off for the night | 0.8 | 0.25-0.5 | aligned ranks
+hotel windows checkering the dark | 0.7 | 0.25-0.5 | lit and unlit grid
+palm silhouettes gone black | 0.55 | 0.15-0.35 | paper cutouts
+steam curling off the warm water | 0.6 | 0.15-0.35 | slow ghosts
+hot tub simmering in its corner | 0.5 | 0.1-0.25 | ringed jacuzzi glow
+towel hut shuttered | 0.45 | 0.1-0.25 | closed hatch
+underwater lights laddering the lanes | 0.6 | 0.15-0.35 | glowing rungs
+city or stars beyond the fence line | 0.5 | 0.2-0.4 | distant glitter
+umbrella spokes folded like roosting birds | 0.5 | 0.1-0.3 | furled canvas
+night air holding the chlorine close | 0.5 | 0.2-0.4 | heavy scent blanket

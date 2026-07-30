@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+skimmer net leaned on the fence | 0.55 | 0.05-0.2 | long-handled sentinel
+float drifting its own slow lap | 0.55 | 0.1-0.25 | unhurried orbit
+hose topping off the water level | 0.4 | 0.05-0.15 | quiet trickle
+robot cleaner tracing the floor | 0.4 | 0.05-0.15 | humming crawler
+dog stationed at the wet edge | 0.45 | 0.05-0.15 | ball-drop hint
+lounger angled into the last sun | 0.5 | 0.1-0.25 | tracked afternoon
+bug dish floating its catch | 0.35 | 0.02-0.08 | overnight harvest
+sprinkler ticking in the side yard | 0.35 | 0.05-0.15 | lawn duty
+firefly shift starting at the fence | 0.35 | 0.05-0.2 | evening lights
+towel cape drying over a chairback | 0.45 | 0.05-0.15 | superhero off duty
+grill parked within splash range | 0.45 | 0.1-0.25 | dinner ambitions

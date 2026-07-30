@@ -209,6 +209,47 @@ def _palette_from_names(*, names: list[str], seed: int, color_mood: str,
     }
 
 
+_AMBIENT_NIGHT = [
+    "pale moonlight",
+    "faint cool night light",
+    "dim warm light spill",
+    "soft blue night light",
+]
+_SHADOW_NIGHT = [
+    "deep blue night shadows",
+    "soft black shadows",
+    "long dark shadows",
+]
+
+# Markers that identify a drawn time_of_day phrase as night. Deliberately
+# narrow — "dusk"/"sunset" stay on the daylight ambient pools.
+NIGHT_MARKERS = ("night", "moonlight", "moonpath", "moonrise", "after dark",
+                 "first stars", "starlit", "snow-glow")
+
+
+def sync_night_atmosphere(palette: dict, seed: int, time_phrase: str) -> bool:
+    """Swap the daylight ambient/shadow phrases for night ones when the drawn
+    ``time_of_day`` is a night phrase.
+
+    Without this, a natural night draw still rendered "illuminated by
+    balanced natural daylight" — the atmosphere phrases come from the warmth
+    slider, not from the time draw. Deterministic per seed. Returns True if
+    the swap was applied.
+    """
+    low = (time_phrase or "").lower()
+    if not any(marker in low for marker in NIGHT_MARKERS):
+        return False
+    rng = random.Random((seed * 733) ^ 0x51CE)
+    palette["atmosphere_colors"]["ambient_light"] = rng.choice(_AMBIENT_NIGHT)
+    palette["atmosphere_colors"]["shadow_tone"] = rng.choice(_SHADOW_NIGHT)
+    for token, key in ATMOSPHERE_TOKEN_MAP.items():
+        if key in palette["atmosphere_colors"]:
+            palette["subs"][token] = palette["atmosphere_colors"][key]
+    palette["raw_tokens"] = dict(palette["subs"])
+    palette["palette_string"] += "  [night atmosphere]"
+    return True
+
+
 def apply_color_overrides(palette: dict, overrides: dict[str, str]) -> dict:
     """Force specific colour roles over a generated palette, in place.
 

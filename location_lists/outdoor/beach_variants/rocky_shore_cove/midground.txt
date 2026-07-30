@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+flat-topped boulder claimed for sitting | 0.6 | 0.1-0.3 | warm granite throne
+rock pools stepped down the shore | 0.55 | 0.15-0.35 | mirror terraces
+seal head periscoping the entrance | 0.35 | 0.03-0.1 | sleek curious dome
+kelp forest swaying under the surface | 0.45 | 0.15-0.35 | amber shadows
+gull dropping a shell on the rocks | 0.4 | 0.03-0.1 | smash technique
+swimmer's slow circuit of the cove | 0.35 | 0.1-0.25 | quiet crawl
+driftwood jammed in a crevice | 0.45 | 0.05-0.15 | wedged silver limb
+crab pot float washed into a corner | 0.35 | 0.02-0.08 | barnacled sphere
+narrow scramble path down the cliff | 0.45 | 0.1-0.25 | polished handholds
+mussel beds blackening the low rocks | 0.5 | 0.1-0.3 | blue-black crust
+anemones open in the still pools | 0.45 | 0.05-0.15 | green blooms

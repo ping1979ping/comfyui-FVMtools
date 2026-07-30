@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+diving toys sunk on purpose | 0.5 | 0.02-0.08 | bright targets
+inflatable flamingo overstaying | 0.45 | 0.03-0.1 | pink landmark
+zinc-striped noses in every direction | 0.4 | 0.02-0.06 | war paint
+mesh bag of lake toys | 0.5 | 0.02-0.08 | dripping arsenal
+towel clothesline between two oaks | 0.4 | 0.03-0.1 | sagging gallery
+floaties deflating on the grass | 0.45 | 0.02-0.08 | wrinkling arms
+sandy sandwich eaten anyway | 0.45 | 0.01-0.05 | crunch accepted
+goggles on a forehead all day | 0.45 | 0.01-0.04 | red-ringed badge
+minnow trap checked hourly | 0.35 | 0.01-0.05 | wire promise
+lost swim ring rolling down the beach | 0.4 | 0.02-0.08 | wind-powered escape
+grape bunch passed down a towel row | 0.4 | 0.01-0.05 | family conveyor

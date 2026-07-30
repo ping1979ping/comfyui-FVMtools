@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+deck tile too hot for bare feet | 0.55 | 0.15-0.35 | hop-inducing
+infinity edge sheeting over | 0.45 | 0.1-0.25 | glass lip
+underwater bench along one wall | 0.45 | 0.1-0.25 | submerged shelf
+depth tiles worn smooth | 0.4 | 0.03-0.1 | numberless markers
+gutter slots sipping the chop | 0.45 | 0.05-0.15 | rhythmic slurp
+umbrella sockets in the deck | 0.4 | 0.02-0.08 | brass rings
+outdoor shower on a teak square | 0.45 | 0.05-0.15 | rinse ritual
+planter walls doubling as seats | 0.45 | 0.1-0.25 | warm ledges
+towel-corner knots on every lounger | 0.5 | 0.05-0.2 | claim flags
+spa spillway warming the corner | 0.4 | 0.05-0.15 | steady sheet
+palm shadow moving across the water | 0.5 | 0.15-0.35 | swaying lattice

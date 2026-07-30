@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+single sandal under a lounger | 0.4 | 0.01-0.04 | orphan of the day
+folded towel stack left out | 0.45 | 0.02-0.08 | white monolith
+wine glasses by the hot tub rim | 0.35 | 0.01-0.05 | stems in steam
+goggles hanging off a chair arm | 0.4 | 0.01-0.04 | swinging slightly
+room key on a damp towel | 0.4 | 0.01-0.03 | trust or forgetfulness
+float parked against the steps | 0.45 | 0.03-0.1 | nudged by the current
+drink can sweating on the deck | 0.4 | 0.01-0.04 | ring forming
+phone face-down on a lounger | 0.35 | 0.01-0.03 | do not disturb
+pool thermometer bobbing on its cord | 0.4 | 0.01-0.04 | patient float
+ice bucket abandoned mid-melt | 0.35 | 0.01-0.05 | clinking quietly
+moth floating spread-winged | 0.35 | 0.01-0.03 | night casualty

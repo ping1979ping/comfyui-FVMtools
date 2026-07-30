@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+sand-and-gravel bar on the inside bend | 1.0 | 0.5-0.9 | river-sorted crescent
+green water sliding past | 0.85 | 0.3-0.6 | glassy current lanes
+cutbank forest wall opposite | 0.7 | 0.25-0.5 | rooty overhang
+riffle entering at the bar head | 0.6 | 0.15-0.35 | broken sparkle
+swimming hole under the cutbank | 0.6 | 0.2-0.4 | slow deep green
+sycamores leaning over the run | 0.55 | 0.2-0.4 | mottled trunks
+canoe beached bow-up | 0.45 | 0.1-0.25 | aluminum grin
+bluff rising downstream | 0.45 | 0.15-0.35 | layered stone
+gravel shallows shimmering | 0.6 | 0.2-0.4 | knee-deep glitter
+island splitting the flow above | 0.4 | 0.15-0.3 | willow tuft
+swallows strafing the surface | 0.45 | 0.05-0.15 | insect patrol

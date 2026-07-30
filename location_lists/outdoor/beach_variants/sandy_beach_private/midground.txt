@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+one blanket anchored with shoes | 0.6 | 0.1-0.25 | solitary claim
+gull dozing on one leg | 0.45 | 0.03-0.1 | folded lookout
+crab scuttling between holes | 0.4 | 0.02-0.08 | sideways dash
+kelp rope beached in a coil | 0.45 | 0.05-0.2 | rubbery tangle
+distant walker with a dog | 0.45 | 0.05-0.2 | the only company
+wind rippling the dry sand | 0.5 | 0.15-0.35 | traveling shivers
+tern hovering then folding into a dive | 0.4 | 0.03-0.1 | white dart
+beached horseshoe crab shell | 0.35 | 0.02-0.08 | brown helmet
+sand devil spinning briefly | 0.3 | 0.05-0.15 | grit whirl
+low dune shadow creeping out | 0.45 | 0.15-0.35 | evening reach
+single kayak pulled above the line | 0.35 | 0.1-0.2 | resting hull

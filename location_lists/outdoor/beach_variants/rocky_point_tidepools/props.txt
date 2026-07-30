@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+clear bucket of temporary residents | 0.5 | 0.02-0.08 | catch and release
+net on a bamboo handle | 0.45 | 0.01-0.05 | optimistic gear
+sandals in a dry-spot pile | 0.5 | 0.02-0.06 | communal parking
+magnifying jar fogged with use | 0.35 | 0.01-0.04 | breath and salt
+field guide splayed on a rock | 0.35 | 0.01-0.05 | wind-fluttered pages
+juice boxes lined on a ledge | 0.4 | 0.01-0.05 | expedition rations
+crab molt displayed on a palm-sized stone | 0.35 | 0.01-0.03 | perfect ghost
+wet socks abandoned mid-shelf | 0.4 | 0.01-0.04 | strategy change
+phone in a chest pocket at risk | 0.4 | 0.01-0.03 | leaning danger
+band-aid tin for barnacle knees | 0.35 | 0.01-0.04 | expedition medic
+found lure with a rusted hook | 0.3 | 0.01-0.03 | handled carefully

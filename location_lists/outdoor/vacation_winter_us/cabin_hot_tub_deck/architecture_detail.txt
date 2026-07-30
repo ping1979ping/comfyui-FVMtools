@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+deck boards squeaking with frost | 0.5 | 0.1-0.3 | bound crystals
+tub rim ice where splashes froze | 0.5 | 0.03-0.1 | glazed ring
+rail caps carrying perfect snow bars | 0.5 | 0.05-0.2 | knife-edge loaves
+steam-frost feathering the window | 0.5 | 0.05-0.15 | fern patterns
+jets churning the surface hard | 0.55 | 0.1-0.25 | rolling boil
+path salt biting through the ice | 0.4 | 0.03-0.1 | gritty patches
+icicle drips re-freezing mid-fall | 0.4 | 0.02-0.08 | growing spears
+snow squeak underfoot in the cold | 0.5 | 0.05-0.2 | styrofoam song
+tub light shifting through its colors | 0.4 | 0.05-0.2 | slow rainbow
+frozen towel forgotten on the rail | 0.4 | 0.02-0.08 | stiff as a board
+breath and steam merging in clouds | 0.5 | 0.1-0.3 | double vapor

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+fat flakes falling straight down | 0.6 | - | -
+squeaky-cold still air | 0.6 | - | -
+wind-driven flurries stinging | 0.45 | - | -
+thaw drip ticking off the eaves | 0.45 | - | -
+breath hanging in the air | 0.7 | - | -
+clear hard cold | 0.65 | - | -
+snow smell on a rising wind | 0.5 | - | -
+ice fog hugging the ground | 0.4 | - | -
+powder blowing off the roof edge | 0.45 | - | -
+mild spell softening the drifts | 0.4 | - | -

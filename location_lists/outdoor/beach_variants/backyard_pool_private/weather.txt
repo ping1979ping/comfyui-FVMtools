@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+still hot air over the concrete | 0.8 | - | -
+faint chlorine tang in the air | 0.75 | - | -
+breeze rocking the umbrellas | 0.55 | - | -
+humid air thick as a towel | 0.55 | - | -
+evening air cooling fast | 0.5 | - | -
+heat shimmer over the deck | 0.55 | - | -
+distant thunder ending the swim | 0.4 | - | -
+light rain dimpling the pool | 0.35 | - | -
+dry heat that empties the loungers | 0.5 | - | -
+mild air perfect for floating | 0.6 | - | -

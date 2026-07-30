@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+free-form pool packed shoulder to shoulder | 1.0 | 0.4-0.8 | churned turquoise
+lounger ranks three deep | 0.85 | 0.3-0.6 | towel-claimed rows
+swim-up bar under a palm roof | 0.55 | 0.15-0.35 | stools in the water
+palm cluster shading a corner | 0.6 | 0.2-0.4 | rustling umbrella crowns
+water slide corkscrewing in | 0.5 | 0.15-0.35 | squealing delivery
+hotel wings framing the deck | 0.6 | 0.3-0.55 | balcony grids
+towel hut with a queue | 0.5 | 0.1-0.25 | rolled white stacks
+kiddie splash zone fountaining | 0.55 | 0.15-0.35 | mushroom rain
+umbrella field cranked open | 0.6 | 0.25-0.5 | canvas archipelago
+hot tub corner at capacity | 0.45 | 0.1-0.25 | simmering circle
+pool deck shimmering with heat | 0.55 | 0.25-0.5 | wet-print mosaic

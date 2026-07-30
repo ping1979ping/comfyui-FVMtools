@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+groomed slope empty in the last light | 1.0 | 0.5-0.9 | corduroy lanes
+lift chairs hanging dead still | 0.75 | 0.15-0.35 | swaying stopped
+treeline walls channeling the run | 0.7 | 0.25-0.5 | dark spruce banks
+mountain shoulder above the top station | 0.55 | 0.2-0.4 | wind-scoured white
+snow fence rows catching drift | 0.5 | 0.1-0.3 | slatted ranks
+lodge lights warm at the base | 0.5 | 0.15-0.3 | amber windows
+snow gun hibernating under ice | 0.45 | 0.1-0.25 | frozen cannon
+half-buried hay bales at the pylon | 0.45 | 0.05-0.2 | padding mounds
+groomer working a far slope | 0.4 | 0.1-0.25 | crawling lights
+untouched powder stash off the edge | 0.5 | 0.2-0.4 | tempting margin
+first stars over the ridgeline | 0.45 | 0.2-0.4 | early sparks

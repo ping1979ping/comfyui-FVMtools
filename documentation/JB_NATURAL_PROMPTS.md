@@ -218,6 +218,29 @@ For locations the palette line is mostly about `ambient_light` and
 token. Forced and excluded elements consume no RNG (same rule as disabled
 elements), so sibling elements may re-roll when an override is added.
 
+### Beach variants and winter vacation spots
+
+`outdoor/beach_variants` (generator: `scripts/gen_vacation_water_locations.py`)
+covers the shoreline spectrum — sandy ocean beach in a **busy** and a
+**private** variant, rocky cove (private) and tidepool point (busy), public
+lake beach and private lake cove, river bend beach, resort pool (busy),
+private backyard pool, and `hotel_pool_after_dark` as an explicit night set.
+`outdoor/vacation_winter_us` adds the private winter counterparts:
+cabin_hot_tub_deck, frozen_lake_shore, snowed_in_cottage_yard,
+empty_ski_slope_edge.
+
+**Busy vs. private** are separate sets (different content). **Day vs. night**
+lives in each set's `time_of_day` pool — force it with an override
+(`time_of_day: moonlight silvering the water`). Night objects are phrased
+time-neutrally ("fire ring of blackened stones" works day and night), and
+both categories follow the signage-free discipline.
+
+When a night phrase is drawn (or forced), the Location Block now swaps the
+daylight atmosphere phrases for night ones automatically — without this,
+a natural night draw still rendered "illuminated by balanced natural
+daylight". Explicit `palette: ambient_light=…` overrides win over the sync,
+and the palette summary notes `[night atmosphere]` when it fired.
+
 ### Why weather says nothing about light
 
 `time_of_day` and `weather` are drawn independently, so any light-level claim

@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+towel snapped flat against the wind | 0.6 | 0.1-0.25 | double-handed flourish
+sunscreen worked into a shoulder | 0.6 | 0.05-0.2 | white streaks
+hot-sand sprint to the water | 0.55 | 0.1-0.3 | high-kneed dash
+wave braced with a shriek | 0.55 | 0.1-0.3 | arms up
+sand brushed off a sandwich | 0.5 | 0.05-0.15 | losing battle
+umbrella screwed deeper | 0.5 | 0.05-0.2 | two-hand twist
+kid buried to the waist | 0.5 | 0.1-0.25 | patted mound
+hair wrung over one shoulder | 0.55 | 0.05-0.15 | salt twist
+cooler lid raided for a drink | 0.55 | 0.05-0.15 | ice dig
+ball chased into the shallows | 0.5 | 0.1-0.25 | splash pursuit
+squint out to the swimmers | 0.5 | 0.05-0.2 | hand visor

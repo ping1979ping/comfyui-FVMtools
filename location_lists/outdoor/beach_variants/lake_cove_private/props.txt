@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+fishing rod propped on the rail | 0.45 | 0.02-0.08 | line slack
+tackle box open on the boards | 0.4 | 0.02-0.08 | lure trays fanned
+enamel mug on the dock post | 0.45 | 0.01-0.05 | steam in the cool
+life jackets in a faded stack | 0.45 | 0.03-0.1 | sun-bleached pile
+paddle laid along the dock edge | 0.45 | 0.02-0.08 | drip line
+worn deck of cards on a towel | 0.35 | 0.01-0.05 | evening plans
+citronella bucket half burned | 0.4 | 0.01-0.05 | waxy crater
+lantern waiting for dusk | 0.4 | 0.01-0.05 | glass and wick
+frayed rope coiled on a cleat | 0.4 | 0.01-0.05 | working loops
+minnow bucket lidded in the shade | 0.35 | 0.01-0.05 | live cargo
+paperback swollen from dock life | 0.4 | 0.01-0.04 | humidity casualty

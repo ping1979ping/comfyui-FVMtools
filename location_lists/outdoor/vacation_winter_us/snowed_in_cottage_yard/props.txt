@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+snowshoes crossed by the door | 0.45 | 0.02-0.08 | webbed pair
+sled rope in a stiff coil | 0.45 | 0.01-0.05 | frozen spiral
+bird seed scoop in the bin | 0.4 | 0.01-0.04 | buried to the handle
+carrot budgeted for the snowman | 0.4 | 0.01-0.03 | nose in waiting
+mittens drying on the stove-side line | 0.45 | 0.02-0.06 | steaming row
+thermos parked on the porch rail | 0.4 | 0.01-0.05 | steam curl
+snow brush worn to a nub | 0.4 | 0.01-0.04 | car veteran
+kindling basket topped with birch | 0.45 | 0.02-0.08 | paper-bark curls
+salt bucket with a frozen scoop | 0.4 | 0.01-0.05 | chipped free
+lantern for the woodshed run | 0.4 | 0.01-0.05 | swinging glow
+storm chocolate rationed slowly | 0.35 | 0.01-0.03 | foil corner

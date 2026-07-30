@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+flip flops guarding a towel corner | 0.55 | 0.02-0.06 | kicked-off pair
+sunscreen bottle capless in the sand | 0.55 | 0.02-0.06 | gritty nozzle
+bucket and spade abandoned mid-build | 0.5 | 0.02-0.08 | tide-doomed works
+frisbee stuck upright | 0.45 | 0.01-0.05 | quivering disc
+mesh bag of shells started | 0.45 | 0.02-0.06 | curated haul
+paperback tented on a towel | 0.5 | 0.02-0.06 | wind-flipped pages
+goggles half buried | 0.4 | 0.01-0.04 | one lens up
+juice pouch squeezed flat | 0.4 | 0.01-0.04 | straw bent
+sandy phone in a zip bag | 0.4 | 0.01-0.04 | precaution taken
+inflatable ring drifting loose | 0.45 | 0.03-0.1 | escaping toy
+lost shovel at the waterline | 0.4 | 0.01-0.04 | red plastic blade

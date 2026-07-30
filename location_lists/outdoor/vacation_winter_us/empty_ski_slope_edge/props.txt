@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+skis planted X in the snow | 0.5 | 0.02-0.08 | crossed marker
+poles leaned on the fence | 0.45 | 0.01-0.05 | strap tangle
+goggles pushed up dead of use | 0.45 | 0.01-0.04 | mirrored brow
+lone glove atop a fence post | 0.4 | 0.01-0.04 | lost-and-found beacon
+wax scraper in a jacket pocket | 0.35 | 0.01-0.03 | plastic edge
+thermos shared at the overlook | 0.45 | 0.01-0.05 | passed warmth
+boot buckles finally released | 0.45 | 0.01-0.04 | day's-end relief
+trail snack bar frozen solid | 0.4 | 0.01-0.03 | jaw workout
+hand warmers at half power | 0.4 | 0.01-0.03 | fading coals
+helmet hung on a pole grip | 0.4 | 0.01-0.05 | resting shell
+snowball packed on a dare | 0.35 | 0.01-0.04 | pointless ammo

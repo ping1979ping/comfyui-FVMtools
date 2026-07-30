@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+morning mist lifting off the water | 0.75 | - | -
+bright mid morning | 0.8 | - | -
+harsh midday sun on the water | 0.7 | - | -
+lazy late afternoon | 0.85 | - | -
+golden hour across the far shore | 0.85 | - | -
+sunset doubling itself in the water | 0.75 | - | -
+blue hour with a loon calling | 0.5 | - | -
+moonpath laid across the lake | 0.5 | - | -
+deep night full of frog song | 0.45 | - | -
+overcast stillness | 0.6 | - | -

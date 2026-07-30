@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+shovel bite and heave rhythm | 0.6 | 0.1-0.25 | steady excavation
+drift fallen into backwards laughing | 0.5 | 0.1-0.25 | powder crater
+firewood armload chin-steadied | 0.55 | 0.05-0.2 | bark shedding
+icicle snapped off for inspection | 0.5 | 0.03-0.1 | crystal sword
+snow squint into the bright yard | 0.5 | 0.05-0.2 | hand visor
+boot snow stomped off on the step | 0.55 | 0.03-0.12 | ritual thunder
+feeder refilled with numb fingers | 0.45 | 0.03-0.1 | seed spill
+path widened one scoop a day | 0.45 | 0.1-0.25 | siege patience
+snowball packed and reconsidered | 0.45 | 0.03-0.1 | truce held
+frost window scraped for a look out | 0.5 | 0.05-0.15 | fingernail porthole
+deep-snow wade thigh-high | 0.5 | 0.1-0.3 | slow-motion march

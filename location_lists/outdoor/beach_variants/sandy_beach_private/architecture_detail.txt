@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+unbroken tide line down the beach | 0.6 | 0.1-0.3 | continuous wrack ribbon
+wind-ripple corduroy in the dry sand | 0.55 | 0.15-0.35 | fine ridges
+dune scarp cut by the last storm | 0.45 | 0.1-0.25 | bitten edge
+ghost crab holes with fan piles | 0.45 | 0.03-0.1 | excavated sprays
+shell drifts sorted by the swash | 0.5 | 0.05-0.2 | graded windrows
+lone fence post from a lost boundary | 0.35 | 0.02-0.08 | leaning grey stub
+freshwater seep darkening the slope | 0.35 | 0.05-0.15 | glistening fan
+foam globs shivering on the wet sand | 0.4 | 0.03-0.1 | quaking meringue
+sand so dry it squeaks | 0.4 | 0.1-0.3 | singing steps
+swash line redrawn by each wave | 0.5 | 0.1-0.3 | fresh scallops
+storm-tossed buoy stranded high | 0.3 | 0.02-0.08 | barnacled float

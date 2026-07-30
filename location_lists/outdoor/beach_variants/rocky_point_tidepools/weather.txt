@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+steady onshore breeze | 0.85 | - | -
+salt haze softening the distance | 0.7 | - | -
+humid heat pressing down | 0.6 | - | -
+gusts kicking up loose sand | 0.55 | - | -
+spray drifting off the break | 0.55 | - | -
+still sultry air | 0.5 | - | -
+thunderheads stacked far out | 0.45 | - | -
+cool damp air rolling off the water | 0.55 | - | -
+light rain pocking the sand | 0.35 | - | -
+flat calm without a ripple of wind | 0.5 | - | -

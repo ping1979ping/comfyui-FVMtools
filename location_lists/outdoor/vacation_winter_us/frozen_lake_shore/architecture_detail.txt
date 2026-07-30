@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+booming crack rolling under the ice | 0.5 | 0.1-0.3 | whale-song thunder
+clear black ice windows between snow | 0.5 | 0.1-0.3 | bubbles locked mid-rise
+shore stones capped in ice helmets | 0.45 | 0.05-0.2 | glazed cobbles
+frost flowers blooming on new ice | 0.4 | 0.03-0.12 | feather gardens
+wind-polished slick streaks | 0.45 | 0.1-0.3 | mirror lanes
+slush layer hiding under fresh snow | 0.4 | 0.05-0.2 | grey surprise
+ice ridge sheared and refrozen | 0.4 | 0.05-0.2 | broken stacked panes
+reed stems cased in glass | 0.4 | 0.03-0.12 | crystal straws
+snow squeak pitch rising with the cold | 0.45 | 0.05-0.2 | temperature audible
+dock ladder locked in mid-air | 0.35 | 0.02-0.08 | frozen reach
+bubbles stair-stepped down the black | 0.4 | 0.05-0.15 | frozen ascent

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+one pair of shoes above the tide line | 0.5 | 0.02-0.06 | socks tucked in
+water bottle standing in the sand | 0.45 | 0.01-0.05 | half buried base
+found stick for drawing in sand | 0.4 | 0.01-0.04 | wave-smoothed wand
+sea glass pieces pocketed slowly | 0.4 | 0.01-0.04 | frosted gems
+towel rolled as a pillow | 0.45 | 0.02-0.08 | head dent
+hat weighted with a stone | 0.4 | 0.01-0.05 | wind insurance
+binoculars resting on the blanket | 0.35 | 0.01-0.05 | strap coiled
+apple core tossed to the gulls | 0.35 | 0.01-0.03 | instant regret
+whole sand dollar found unbroken | 0.35 | 0.01-0.03 | careful trophy
+thermos wedged upright | 0.4 | 0.01-0.05 | steam curl
+folded chair never unfolded | 0.35 | 0.03-0.1 | optimism on standby

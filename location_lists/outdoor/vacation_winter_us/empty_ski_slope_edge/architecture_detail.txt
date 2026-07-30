@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+corduroy grooves crisp underfoot | 0.55 | 0.15-0.4 | fresh-pressed lines
+ice glaze where the sun hit at noon | 0.5 | 0.1-0.3 | refrozen sheen
+pylon pads scarred by seasons | 0.4 | 0.03-0.1 | patched cushions
+cable sag between towers | 0.45 | 0.05-0.2 | catenary curves
+drift knife-edging the fence tops | 0.45 | 0.05-0.2 | sculpted crests
+boot pack trail hardening to concrete | 0.45 | 0.05-0.2 | stomped stair
+snow squeak sharpening as it cools | 0.45 | 0.05-0.2 | cold audible
+gun whales lined down the pitch | 0.4 | 0.1-0.3 | man-made moguls
+shadow line racing up the slope | 0.5 | 0.2-0.4 | sunset tide
+tower lights blinking on in series | 0.4 | 0.05-0.15 | one-by-one wake
+tracks refrozen into rails | 0.45 | 0.1-0.25 | set grooves

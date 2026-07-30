@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+lounger claimed at dawn defended at noon | 0.55 | 0.1-0.25 | towel diplomacy
+slide exit wiped out with style | 0.5 | 0.05-0.2 | sideways arrival
+drink handed down into the pool | 0.5 | 0.05-0.15 | careful transfer
+sunscreen reapplied under protest | 0.5 | 0.05-0.2 | wriggling target
+float boarded like a walrus | 0.5 | 0.05-0.2 | third attempt
+hot deck crossed on tiptoe | 0.55 | 0.05-0.2 | yelping sprint
+hair slicked back at the wall | 0.5 | 0.03-0.15 | breath caught
+kid launched from joined hands | 0.5 | 0.05-0.2 | catapult service
+shade negotiated by inches | 0.45 | 0.05-0.15 | umbrella politics
+pool bar order mimed over splashing | 0.45 | 0.05-0.15 | held-up fingers
+goggle marks compared like medals | 0.45 | 0.03-0.1 | red-ring pride

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+light cones wavering on the pool floor | 0.55 | 0.15-0.35 | dancing nets
+deck tile cool at last underfoot | 0.5 | 0.1-0.3 | day's heat gone
+gutter slurp louder in the quiet | 0.45 | 0.03-0.1 | rhythmic sips
+handrail beaded with condensation | 0.4 | 0.02-0.08 | cool chrome sweat
+depth shadows stacked in layers | 0.45 | 0.1-0.3 | dark stairsteps
+gate spring loud as a gunshot | 0.4 | 0.02-0.08 | echoing clang
+reflection of the building laid on the water | 0.5 | 0.2-0.4 | trembling twin
+steam fog softening every lamp | 0.5 | 0.1-0.3 | halo effect
+lane rope shadows waving on the floor | 0.4 | 0.05-0.2 | sine curves
+puddles holding their own small lights | 0.45 | 0.05-0.15 | scattered coins
+hot tub timer dial ticking down | 0.35 | 0.01-0.05 | mechanical patience

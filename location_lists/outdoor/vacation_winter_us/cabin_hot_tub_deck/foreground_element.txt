@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+steam-blind shuffle to the tub | 0.6 | 0.1-0.25 | robe clutched
+gasp at the air-to-water swap | 0.6 | 0.05-0.2 | 40-degree leap
+hair frosting white at the tips | 0.5 | 0.03-0.12 | instant aging
+snowball lobbed from the water | 0.45 | 0.05-0.15 | artillery advantage
+shoulders sunk to the chin | 0.55 | 0.1-0.25 | thermostat found
+star search through the steam gaps | 0.5 | 0.1-0.3 | patient tilt
+snow angel dared and regretted | 0.35 | 0.1-0.25 | shrieking return
+toe out to test the deck cold | 0.45 | 0.03-0.1 | instant retreat
+cocoa steam sipped through the vapor | 0.5 | 0.03-0.1 | double warmth
+wet hand hissing on the cold rail | 0.4 | 0.02-0.08 | steam print
+quiet listened to between jets | 0.5 | 0.1-0.3 | winter hush
