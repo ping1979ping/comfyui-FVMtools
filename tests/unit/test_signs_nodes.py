@@ -835,3 +835,48 @@ class TestRegressions:
                                     base_url="http://127.0.0.1:9",
                                     temperature=DEFAULT_TEMPERATURE)
         assert "above the measured cliff" not in report
+
+
+class TestMeasuredCeilings:
+    """Values pinned by live renders on Krea 2 Turbo, not by taste."""
+
+    def test_glyph_denoise_default_is_under_the_safe_ceiling(self):
+        from nodes.signs.detailer import GLYPH_DENOISE_SAFE_MAX
+        default = SignDetailer.INPUT_TYPES()["required"]["glyph_denoise"][1]["default"]
+        assert default <= GLYPH_DENOISE_SAFE_MAX
+        assert GLYPH_DENOISE_SAFE_MAX < 0.65, \
+            "0.65 already produced a ghost copy of the word in a live render"
+
+    def test_turbo_alone_does_not_flag_a_model_as_text_weak(self):
+        """Krea 2 Turbo renders text well; matching on 'turbo' warned against it."""
+        from nodes.signs.detailer import _TEXT_WEAK_HINTS
+        assert "turbo" not in _TEXT_WEAK_HINTS
+        assert any("z-image" in h or "zimage" in h for h in _TEXT_WEAK_HINTS), \
+            "the genuinely text-weak families must still be caught"
+
+    def test_krea2_turbo_config_is_not_warned_about(self):
+        node = SignDetailer()
+
+        class FakeInner:
+            pass
+
+        class FakeModel:
+            def __init__(self):
+                self.model = FakeInner()
+                self.model.model_config = "krea2_turbo_fp8"
+
+        assert node._warn_if_text_weak(FakeModel()) is None
+
+    def test_z_image_is_still_warned_about(self):
+        node = SignDetailer()
+
+        class FakeInner:
+            pass
+
+        class FakeModel:
+            def __init__(self):
+                self.model = FakeInner()
+                self.model.model_config = "z-image turbo lumina2"
+
+        warning = node._warn_if_text_weak(FakeModel())
+        assert warning and "WARNING" in warning

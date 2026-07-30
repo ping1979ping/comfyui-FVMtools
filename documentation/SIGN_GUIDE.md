@@ -164,6 +164,26 @@ Ergebnis sein Farbschema behält. Die Trennung nutzt keinen einfachen Median —
 einem echten Schild decken die Buchstaben nur 10–15 % der Fläche, da läge der Median
 mitten in der Plattenfarbe und beide Werte kämen fast identisch heraus.
 
+### Verifizierte Krea-2-Einstellungen
+
+Live gerendert auf Krea 2 Turbo (`krea2_turbo_fp8` + `qwen3vl_4b_fp8_scaled` +
+`qwen_image_vae`), 8 Steps, cfg 1, `er_sde` / `simple` — die Krea-Standardwerte
+gelten unverändert auch hier:
+
+| `glyph_denoise` | Ergebnis |
+|---|---|
+| 0,35 | Text sauber, aber die Fläche bleibt flach und charakterlos |
+| **0,55** | **bestes Ergebnis** — scharfer Text *und* echtes Material (Emaille, Schrauben, Abnutzung) |
+| 0,65 | eine zweite, schwache Kopie des Wortes erscheint hinter der ersten |
+| 0,70+ | das Schild wird neu erfunden: verzogen, erfundene Beschläge, Schrift verblasst |
+
+Der Detailer warnt oberhalb von 0,60. Der Grund für die Kante: darüber behandelt
+der Sampler die Glyph-Ebene nicht mehr als Vorlage, sondern als groben Anhalt.
+
+Krea 2 macht aus einer flachen Fläche ein glaubwürdiges Objekt — im Testlauf wurde
+aus einem einfarbigen Rechteck ein Emailleschild mit Schrauben in den Ecken und
+verwitterten Kanten. Genau dafür ist der Spielraum zwischen 0,45 und 0,60 da.
+
 ### Modellwahl — nicht optional
 
 **Z-Image Turbo, SDXL und andere textschwache Checkpoints rendern keinen lesbaren

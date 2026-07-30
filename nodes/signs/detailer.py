@@ -38,7 +38,13 @@ SOFTEN_PROMPT = ("out-of-focus printed text, too distant to read, soft blurred l
                  "natural photographic depth of field")
 
 # Text-weak model families: warned about once per run.
-_TEXT_WEAK_HINTS = ("z-image", "zimage", "lumina", "sd15", "sd_15", "sdxl", "turbo")
+_TEXT_WEAK_HINTS = ("z-image", "zimage", "lumina", "sd15", "sd_15", "sdxl")
+
+# Above this the sampler stops treating the typeset layer as a template.
+# Measured on Krea 2 Turbo (8 steps, cfg 1, er_sde/simple): 0.55 gives sharp text
+# with real material, 0.65 adds a ghost copy of the word behind the real one,
+# 0.70+ reinvents the sign entirely (warped shape, invented hardware, faded text).
+GLYPH_DENOISE_SAFE_MAX = 0.60
 
 
 def _fuzzy_match(a, b):
@@ -102,7 +108,13 @@ class SignDetailer:
                     "tooltip": "Typeface for the rendered text. <auto> follows the model's font hint."}),
                 "glyph_denoise": ("FLOAT", {"default": 0.55, "min": 0.0, "max": 1.0, "step": 0.01,
                     "tooltip": "Denoise when glyph guidance is on. Lower keeps the letterforms exact,\n"
-                               "higher blends better into the surface."}),
+                               "higher blends better into the surface.\n\n"
+                               "Measured on Krea 2 Turbo (8 steps, cfg 1, er_sde/simple):\n"
+                               "  0.35  clean text, but the surface stays flat and characterless\n"
+                               "  0.55  best - sharp text AND real material (enamel, screws, wear)\n"
+                               "  0.65  a second ghost copy of the word appears behind the first\n"
+                               "  0.70+ the sign is reinvented: warped, extra hardware, text faded\n"
+                               "Stay at or below 0.60."}),
                 "glyph_strength": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.05,
                     "tooltip": "Opacity of the typeset layer before sampling.\n"
                                "Keep at 1.0: measured, even 0.95 leaves the ORIGINAL garbled\n"
@@ -258,6 +270,14 @@ class SignDetailer:
             eff_glyph_denoise = max(0.0, glyph_denoise - 0.15)
         else:
             eff_strength, eff_glyph_denoise = glyph_strength, glyph_denoise
+
+        if glyph_guidance != "off" and eff_glyph_denoise > GLYPH_DENOISE_SAFE_MAX:
+            msg = (f"WARNING: glyph_denoise {eff_glyph_denoise:.2f} exceeds the measured safe "
+                   f"ceiling of {GLYPH_DENOISE_SAFE_MAX}. Above it the sampler stops treating the "
+                   f"typeset layer as a template: a ghost copy of the word appears behind the "
+                   f"real one, and past ~0.70 the whole sign gets reinvented.")
+            report.append(msg)
+            print(f"[SignDetailer] {msg}")
 
         ink_override = parse_hex_rgb(glyph_ink_color)
         plate_override = parse_hex_rgb(glyph_plate_color)
