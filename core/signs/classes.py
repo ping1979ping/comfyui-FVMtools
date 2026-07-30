@@ -25,7 +25,7 @@ SIGN_CLASSES = {
             "whatever the scene calls for. Do not read the current letters."
         ),
         "prompt_template": (
-            'a sign with the clear legible text "{text}", {style} '
+            'a sign with the clear legible text "{text}", {style}, '
             "crisp high-contrast lettering, sharp typography"
         ),
         "denoise_bias": 0.0,
@@ -40,7 +40,7 @@ SIGN_CLASSES = {
             "Do not read the current letters."
         ),
         "prompt_template": (
-            'a product label printed with the clear text "{text}", {style} '
+            'a product label printed with the clear text "{text}", {style}, '
             "clean printed typography, sharp product photography"
         ),
         "denoise_bias": 0.05,
@@ -56,7 +56,7 @@ SIGN_CLASSES = {
             "letters."
         ),
         "prompt_template": (
-            'clothing with the printed text "{text}", {style} '
+            'clothing with the printed text "{text}", {style}, '
             "screen-printed lettering following the fabric folds"
         ),
         "denoise_bias": -0.05,
@@ -71,7 +71,7 @@ SIGN_CLASSES = {
             "letters."
         ),
         "prompt_template": (
-            'a poster with the bold headline text "{text}", {style} '
+            'a poster with the bold headline text "{text}", {style}, '
             "graphic design layout, clean print typography"
         ),
         "denoise_bias": 0.0,
@@ -88,7 +88,7 @@ SIGN_CLASSES = {
             "the current letters."
         ),
         "prompt_template": (
-            'a screen displaying the crisp text "{text}", {style} '
+            'a screen displaying the crisp text "{text}", {style}, '
             "rendered user interface typography, backlit display"
         ),
         "denoise_bias": -0.05,
@@ -103,7 +103,7 @@ SIGN_CLASSES = {
             "the current letters."
         ),
         "prompt_template": (
-            'a book cover with the title text "{text}", {style} '
+            'a book cover with the title text "{text}", {style}, '
             "printed cover typography, sharp focus"
         ),
         "denoise_bias": 0.0,
@@ -118,7 +118,7 @@ SIGN_CLASSES = {
             "grouping. Do not read the current characters."
         ),
         "prompt_template": (
-            'a vehicle license plate showing the characters "{text}", {style} '
+            'a vehicle license plate showing the characters "{text}", {style}, '
             "embossed plate lettering, high contrast"
         ),
         "denoise_bias": 0.10,
@@ -128,13 +128,18 @@ SIGN_CLASSES = {
         "threshold": 0.28,
         "min_height_px": 24,
         "vlm_instruction": (
-            "Invent wording appropriate to this document - a menu item and "
-            "price, a heading, a short line of body text. Do not read the "
+            "Invent wording appropriate to this piece of paper - a menu item "
+            "and price, a heading, a phone number, a short note. Say in the "
+            "style field what the paper itself is and looks like, for example "
+            "a yellow sticky note or a folded receipt. Do not read the "
             "current letters."
         ),
+        # Deliberately neutral about the medium: this class also covers sticky
+        # notes, receipts and handwriting, so a fixed "printed typography" would
+        # contradict whatever surface the model reports in {style}.
         "prompt_template": (
-            'a printed document showing the text "{text}", {style} '
-            "clean printed typography on paper"
+            'a piece of paper showing the clear text "{text}", {style}, '
+            "legible writing, sharp focus"
         ),
         "denoise_bias": 0.0,
     },
@@ -147,7 +152,7 @@ SIGN_CLASSES = {
             "at most two words. Do not read the current letters."
         ),
         "prompt_template": (
-            'spray-painted graffiti lettering reading "{text}", {style} '
+            'spray-painted graffiti lettering reading "{text}", {style}, '
             "hand-painted wall art, expressive strokes"
         ),
         "denoise_bias": -0.10,
@@ -165,7 +170,7 @@ FALLBACK_CLASS = {
         "the scene. Do not read the current letters."
     ),
     "prompt_template": (
-        'a surface with the clear legible text "{text}", {style} '
+        'a surface with the clear legible text "{text}", {style}, '
         "sharp readable typography"
     ),
     "denoise_bias": 0.0,

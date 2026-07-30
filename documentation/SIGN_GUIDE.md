@@ -198,11 +198,41 @@ versucht, bis `max_attempts` erreicht ist. Ohne OCR-Backend bleibt das stillschw
 
 ---
 
-### Nicht nur den Text, sondern auch den Untergrund
+### Der Untergrund kommt automatisch mit
 
-Die Klassen-Vorlage beschreibt nur die **Schrift**. Willst du auch die Fläche
-verändern — „Telefon Nummer 1234" auf einem gelben Post-it statt auf einem grauen
-Zettel — brauchst du beide Hebel gleichzeitig:
+Das Sprachmodell liefert neben `text` auch ein **`style`**-Feld, und das beschreibt
+Schrift **und** Fläche. Bei einem gelben Post-it mit verkorkster Handschrift kommt
+zurück:
+
+```json
+{"text": "TELEFONNUMMER 123456789", "style": "black ink on yellow sticky note", ...}
+```
+
+`build_prompt` setzt das in die Klassenvorlage ein, das Ergebnis geht so an den Sampler:
+
+```
+a piece of paper showing the clear text "TELEFONNUMMER 123456789",
+black ink on yellow sticky note, legible writing, sharp focus
+```
+
+Du musst dafür **nichts** einstellen — `style` fließt immer in den Prompt. Kommt der
+Untergrund einmal nicht deutlich genug durch, schärf ihn über `class_instructions`
+im Proposer nach:
+
+```
+paper: Sag im style-Feld immer, was für ein Papier das ist - Haftnotiz, Kassenbon,
+       Speisekarte - samt Farbe und Oberfläche.
+```
+
+Die `paper`-Vorlage ist bewusst neutral gehalten (`a piece of paper showing…`), weil
+die Klasse auch Haftnotizen, Kassenbons und Handschrift abdeckt. Ein festes
+„printed typography" würde jedem gemeldeten Untergrund widersprechen.
+
+### Einen anderen Untergrund erzwingen
+
+Das ist der andere Fall: du willst **nicht** das übernehmen, was im Bild ist,
+sondern eine Fläche vorgeben, die es dort noch gar nicht gibt — aus einem grauen
+Schmierzettel ein gelbes Post-it machen. Dann brauchst du beide Hebel gleichzeitig:
 
 | Wo | Was |
 |---|---|

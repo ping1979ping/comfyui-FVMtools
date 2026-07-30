@@ -337,6 +337,55 @@ class TestSurfaceControl:
         assert spread < 0.10, "a grey source must stay neutral when nothing is forced"
 
 
+class TestPromptAssembly:
+    """The model reports the surface in `style`; the template must not swallow it."""
+
+    def test_every_template_separates_style_from_what_follows(self):
+        """Without a separator two phrases merge into nonsense:
+        '...on yellow sticky note clean printed typography on paper'.
+        """
+        from core.signs.classes import SIGN_CLASSES, FALLBACK_CLASS
+        merged = []
+        for name, cfg in list(SIGN_CLASSES.items()) + [("<fallback>", FALLBACK_CLASS)]:
+            tpl = cfg["prompt_template"]
+            if "{style}" not in tpl:
+                continue
+            tail = tpl.split("{style}", 1)[1]
+            if tail.strip() and not tail.lstrip().startswith(","):
+                merged.append(name)
+        assert not merged, f"templates run {{style}} into the next phrase: {merged}"
+
+    def test_style_carries_the_surface_into_the_prompt(self):
+        from core.signs.classes import build_prompt
+        prompt = build_prompt("paper", "Telefon Nummer 1234",
+                              "black ink on yellow sticky note")
+        assert "yellow sticky note" in prompt
+        assert "Telefon Nummer 1234" in prompt
+        assert "note clean" not in prompt and "note legible" not in prompt
+
+    @pytest.mark.parametrize("cls", ["sign", "label", "paper", "screen", "poster"])
+    def test_empty_style_leaves_no_double_separator(self, cls):
+        """Without a language model there is no style, and the prompt must still read."""
+        from core.signs.classes import build_prompt
+        prompt = build_prompt(cls, "OPEN", "")
+        assert ",," not in prompt
+        assert ", ," not in prompt
+        assert "  " not in prompt
+        assert not prompt.strip().endswith(",")
+
+    def test_paper_template_stays_neutral_about_the_medium(self):
+        """The class covers sticky notes, receipts and handwriting too, so a fixed
+        'printed typography' would contradict the surface the model reports."""
+        from core.signs.classes import SIGN_CLASSES
+        tpl = SIGN_CLASSES["paper"]["prompt_template"].lower()
+        assert "printed" not in tpl
+
+    def test_paper_instruction_asks_for_the_surface(self):
+        from core.signs.classes import SIGN_CLASSES
+        low = SIGN_CLASSES["paper"]["vlm_instruction"].lower()
+        assert "style field" in low
+
+
 class TestNodeContracts:
 
     @pytest.mark.parametrize("cls", [SignSelectorSAM3, SignTextProposer, SignDetailer, SignOptions])
