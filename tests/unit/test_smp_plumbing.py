@@ -296,7 +296,7 @@ def test_full_pipeline_generators_to_serialize():
     )
     outfit_dict, _ = FVM_SMP_OutfitCombiner().combine(outfit_raw, palette)
     location_raw, _ = FVM_SMP_LocationGenerator().generate(
-        location_set="outdoor_urban_brutalist", seed=42,
+        location_set="indoor/everyday_us/family_living_room_tv", seed=42,
         enable_background=True, enable_midground=False,
         enable_architecture_detail=False, enable_props=False,
         enable_foreground_element=True,
