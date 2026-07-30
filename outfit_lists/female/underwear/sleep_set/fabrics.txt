@@ -1,0 +1,16 @@
+# fabric database
+# format: fabric_name | formality | family | weight
+
+cotton | 0.2 | natural | light
+modal | 0.25 | synthetic | light
+jersey | 0.2 | natural | light
+microfiber | 0.3 | synthetic | light
+seamless knit | 0.3 | synthetic | light
+ribbed cotton | 0.2 | natural | light
+spandex blend | 0.25 | synthetic | light
+lace | 0.5 | delicate | light
+satin | 0.55 | delicate | light
+mesh | 0.45 | delicate | light
+fleece | 0.1 | synthetic | medium
+flannel | 0.15 | natural | medium
+waffle knit | 0.2 | natural | light

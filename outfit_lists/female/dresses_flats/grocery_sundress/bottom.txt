@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+relaxed cotton sundress | 0.75 | 0.1-0.4 | cotton
+t-shirt dress with a denim jacket tied at the waist | 0.55 | 0.1-0.4 | jersey,denim
+button-front midi dress | 0.55 | 0.1-0.5 | rayon,cotton
+soft jersey midi skirt with a tee | 0.5 | 0.1-0.4 | jersey
+smocked summer dress | 0.5 | 0.1-0.4 | cotton,viscose

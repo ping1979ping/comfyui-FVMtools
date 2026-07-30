@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+small crossbody bag | 0.6 | 0.1-0.7 | leather
+structured shoulder bag | 0.5 | 0.3-0.8 | leather
+compact top-handle bag | 0.4 | 0.3-0.8 | leather
+soft clutch under the arm | 0.3 | 0.4-0.9 | suede
+canvas tote over the shoulder | 0.3 | 0.1-0.5 | canvas

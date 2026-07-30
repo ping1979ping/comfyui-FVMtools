@@ -1,0 +1,9 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+soft t-shirt dress | 0.75 | 0.0-0.3 | jersey,cotton
+oversized shirt dress unbuttoned low | 0.55 | 0.0-0.3 | cotton
+knit lounge dress | 0.6 | 0.0-0.3 | knit,modal
+tank dress to mid-thigh | 0.5 | 0.0-0.3 | jersey
+button-front house dress | 0.5 | 0.0-0.3 | cotton,rayon
+long jersey maxi dress | 0.45 | 0.0-0.3 | jersey

@@ -1,0 +1,7 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+strappy heeled sandals | 0.7 | 0.4-0.9 | leather
+block heel ankle boots | 0.55 | 0.3-0.7 | suede
+classic pumps | 0.5 | 0.4-0.9 | leather
+heeled mules | 0.5 | 0.3-0.7 | suede

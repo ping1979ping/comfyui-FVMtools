@@ -1,0 +1,7 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bare feet | 0.6 | 0.0-0.3 | -
+thick house socks | 0.5 | 0.0-0.3 | knit
+soft slippers | 0.5 | 0.0-0.3 | fleece
+slide sandals by the door | 0.35 | 0.0-0.3 | -

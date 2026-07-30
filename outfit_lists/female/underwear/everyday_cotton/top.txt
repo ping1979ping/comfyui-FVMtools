@@ -1,0 +1,7 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plain cotton bra | 0.8 | 0.0-0.4 | cotton
+soft cotton bralette | 0.65 | 0.0-0.4 | ribbed cotton
+simple wireless bra | 0.6 | 0.0-0.4 | cotton,modal
+cotton crop cami | 0.45 | 0.0-0.4 | ribbed cotton

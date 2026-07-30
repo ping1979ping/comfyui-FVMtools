@@ -1,0 +1,5 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized gym hoodie half zipped | 0.4 | 0.0-0.3 | fleece
+loose tank thrown over | 0.35 | 0.0-0.3 | jersey

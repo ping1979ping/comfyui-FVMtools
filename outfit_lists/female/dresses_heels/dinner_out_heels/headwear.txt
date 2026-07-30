@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+sunglasses pushed up into the hair | 0.5 | 0.1-0.7 | -
+hair down in loose waves | 0.6 | 0.1-0.8 | -
+low ponytail with a ribbon | 0.35 | 0.2-0.7 | -
+claw clip half-up twist | 0.45 | 0.1-0.6 | -
+soft headband | 0.3 | 0.2-0.7 | knit
+hair tucked behind both ears | 0.4 | 0.1-0.8 | -

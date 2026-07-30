@@ -1,0 +1,7 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+ballet flats | 0.7 | 0.2-0.7 | leather
+low wedge pumps | 0.5 | 0.3-0.7 | leather
+mary jane flats | 0.5 | 0.2-0.6 | leather
+flat slingbacks | 0.4 | 0.3-0.7 | leather

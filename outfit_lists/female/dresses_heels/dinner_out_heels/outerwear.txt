@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped leather jacket | 0.45 | 0.3-0.7 | leather
+oversized blazer | 0.45 | 0.3-0.8 | polyester
+denim jacket dressed up | 0.35 | 0.2-0.5 | denim

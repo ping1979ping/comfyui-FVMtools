@@ -1,0 +1,9 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bodycon mini dress | 0.6 | 0.3-0.7 | ponte,jersey
+satin slip dress | 0.5 | 0.4-0.8 | satin
+denim skirt with a going-out top | 0.55 | 0.2-0.5 | denim,chiffon
+wrap mini dress | 0.5 | 0.3-0.7 | viscose,jersey
+sequin-trim skirt with a plain tee | 0.35 | 0.3-0.7 | polyester,jersey
+off-shoulder fitted dress | 0.45 | 0.3-0.7 | ponte

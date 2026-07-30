@@ -1,0 +1,5 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+unbuttoned work blouse | 0.35 | 0.1-0.5 | cotton
+cardigan pulled on for the hallway | 0.3 | 0.0-0.4 | knit

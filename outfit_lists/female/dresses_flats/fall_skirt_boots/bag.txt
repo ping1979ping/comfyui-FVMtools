@@ -1,0 +1,8 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+canvas tote over the shoulder | 0.55 | 0.0-0.5 | canvas
+small crossbody bag | 0.55 | 0.0-0.6 | leather
+backpack worn on one shoulder | 0.35 | 0.0-0.4 | polyester
+reusable shopping bag | 0.3 | 0.0-0.4 | canvas
+diaper bag packed full | 0.25 | 0.0-0.4 | polyester

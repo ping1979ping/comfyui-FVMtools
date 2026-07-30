@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+soft midi skirt with a plain tee | 0.65 | 0.1-0.4 | jersey,viscose
+knee-length denim skirt with a sweatshirt | 0.55 | 0.1-0.4 | denim,cotton
+button-front corduroy skirt with a knit top | 0.5 | 0.1-0.5 | corduroy,knit
+casual shirt dress with the sleeves rolled | 0.55 | 0.1-0.4 | cotton
+tiered maxi skirt with a fitted tee | 0.45 | 0.1-0.4 | viscose,cotton

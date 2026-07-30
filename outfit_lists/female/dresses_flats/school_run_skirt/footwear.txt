@@ -1,0 +1,7 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white leather sneakers | 0.7 | 0.1-0.4 | leather
+low canvas sneakers | 0.6 | 0.1-0.4 | canvas
+ballet flats by the door | 0.45 | 0.1-0.5 | leather
+low chelsea boots | 0.4 | 0.1-0.5 | leather

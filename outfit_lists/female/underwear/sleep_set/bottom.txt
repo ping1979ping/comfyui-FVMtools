@@ -1,0 +1,7 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cotton sleep shorts | 0.7 | 0.0-0.3 | cotton
+plaid pajama shorts | 0.55 | 0.0-0.3 | flannel
+soft modal sleep pants rolled at the waist | 0.45 | 0.0-0.3 | modal
+briefs under the sleep tee | 0.5 | 0.0-0.3 | cotton

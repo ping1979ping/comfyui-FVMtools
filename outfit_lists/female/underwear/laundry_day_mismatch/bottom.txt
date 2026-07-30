@@ -1,0 +1,7 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+mismatched cotton panties | 0.7 | 0.0-0.3 | cotton
+boyshorts from the back of the drawer | 0.55 | 0.0-0.3 | modal
+striped briefs that lost their set | 0.5 | 0.0-0.3 | cotton
+period-safe dark briefs | 0.45 | 0.0-0.3 | microfiber

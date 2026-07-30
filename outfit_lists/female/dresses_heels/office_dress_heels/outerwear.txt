@@ -1,0 +1,7 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+unstructured blazer | 0.55 | 0.4-0.8 | polyester,tweed
+fine knit cardigan kept at the desk | 0.5 | 0.2-0.6 | knit
+trench coat over the arm | 0.35 | 0.4-0.8 | cotton
+cropped jacket | 0.3 | 0.3-0.7 | ponte

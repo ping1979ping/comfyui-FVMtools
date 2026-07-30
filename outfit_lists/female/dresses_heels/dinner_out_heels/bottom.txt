@@ -1,0 +1,9 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slip skirt with a fitted tee | 0.65 | 0.3-0.7 | satin,jersey
+midi dress with a thigh-high slit | 0.55 | 0.4-0.8 | viscose,satin
+little black dress above the knee | 0.6 | 0.4-0.9 | ponte,polyester
+ribbed knit dress | 0.6 | 0.3-0.7 | knit
+denim skirt with a dressy blouse | 0.5 | 0.2-0.5 | denim,chiffon
+satin wrap dress | 0.45 | 0.4-0.8 | satin

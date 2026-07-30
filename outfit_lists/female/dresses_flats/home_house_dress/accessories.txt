@@ -1,0 +1,9 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+small stud earrings | 0.55 | 0.0-0.7 | -
+hair tie around the wrist | 0.4 | 0.0-0.4 | -
+simple watch | 0.4 | 0.1-0.7 | -
+thin pendant necklace | 0.4 | 0.1-0.7 | -
+crossbody phone strap | 0.3 | 0.0-0.5 | polyester
+knotted cotton scarf | 0.2 | 0.1-0.6 | cotton

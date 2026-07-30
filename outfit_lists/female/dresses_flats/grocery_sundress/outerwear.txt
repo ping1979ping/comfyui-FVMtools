@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+light denim jacket | 0.45 | 0.1-0.4 | denim
+thin cardigan against the AC | 0.4 | 0.1-0.4 | knit
+zip-up fleece from the car | 0.3 | 0.0-0.3 | fleece

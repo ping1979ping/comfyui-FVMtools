@@ -1,0 +1,7 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+seamless hipster panties | 0.75 | 0.0-0.5 | seamless knit
+no-show briefs | 0.6 | 0.0-0.5 | microfiber
+laser-cut bikini panties | 0.5 | 0.0-0.5 | microfiber
+smooth high-cut briefs | 0.45 | 0.0-0.5 | modal

@@ -1,0 +1,9 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+solid color | 0.85 | top,bottom | 0.0-1.0
+small heart print | 0.15 | bottom | 0.0-0.4
+tiny star pattern | 0.12 | bottom | 0.0-0.4
+thin stripe | 0.15 | top,bottom | 0.0-0.5
+small floral sprig | 0.15 | bottom | 0.0-0.5
+classic polka dot | 0.12 | top,bottom | 0.0-0.5

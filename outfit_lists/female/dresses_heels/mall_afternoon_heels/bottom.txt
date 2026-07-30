@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+casual skater dress | 0.7 | 0.1-0.5 | jersey,cotton
+t-shirt dress with a knotted waist | 0.6 | 0.1-0.4 | jersey
+denim mini skirt with a soft top | 0.55 | 0.1-0.4 | denim,jersey
+button-front a-line skirt with a tee | 0.5 | 0.1-0.5 | corduroy,cotton
+swing dress above the knee | 0.5 | 0.1-0.5 | rayon,viscose

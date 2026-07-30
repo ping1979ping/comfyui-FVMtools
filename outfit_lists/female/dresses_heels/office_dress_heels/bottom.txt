@@ -1,0 +1,10 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knee-length sheath dress | 0.8 | 0.4-0.8 | ponte,polyester
+knee-length wrap dress | 0.75 | 0.3-0.7 | jersey,viscose
+belted shirt dress above the knee | 0.6 | 0.3-0.7 | cotton,rayon
+pencil skirt with a plain blouse tucked in | 0.6 | 0.4-0.8 | polyester,tweed
+fit-and-flare dress to the knee | 0.55 | 0.3-0.7 | cotton,ponte
+sleeveless shift dress | 0.5 | 0.4-0.8 | ponte,linen
+a-line skirt with a fine knit top | 0.5 | 0.3-0.7 | viscose,knit

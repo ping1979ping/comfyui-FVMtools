@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+short satin robe loosely tied | 0.45 | 0.1-0.6 | satin
+long cardigan worn off one shoulder | 0.3 | 0.0-0.5 | knit
+oversized button-down barely buttoned | 0.35 | 0.0-0.5 | cotton

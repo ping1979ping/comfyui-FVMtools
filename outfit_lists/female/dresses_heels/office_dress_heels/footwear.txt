@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+block heel pumps | 0.8 | 0.3-0.8 | leather
+kitten heel slingbacks | 0.6 | 0.4-0.8 | leather
+low heeled mules | 0.5 | 0.3-0.7 | suede
+classic mid-heel pumps | 0.55 | 0.4-0.9 | leather
+heeled loafers | 0.4 | 0.3-0.7 | leather

@@ -1,0 +1,8 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+small stud earrings | 0.35 | 0.0-0.6 | -
+hair tie around the wrist | 0.4 | 0.0-0.5 | -
+thin everyday necklace kept on | 0.3 | 0.0-0.6 | -
+glasses instead of contacts | 0.35 | 0.0-0.6 | -
+no jewelry at all | 0.4 | 0.0-0.6 | -

@@ -1,0 +1,9 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+midi shirt dress with sheer tights | 0.7 | 0.3-0.7 | cotton,viscose
+knee-length dress over opaque tights | 0.65 | 0.3-0.7 | ponte,jersey
+pleated midi skirt with a fine knit | 0.6 | 0.3-0.7 | polyester,knit
+long a-line skirt with a tucked blouse | 0.5 | 0.3-0.7 | viscose,cotton
+sweater dress over tights | 0.55 | 0.2-0.6 | knit
+column midi dress | 0.45 | 0.3-0.7 | ponte

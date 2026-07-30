@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knee-length floral dress with a modest neckline | 0.7 | 0.3-0.7 | viscose,cotton
+midi wrap dress | 0.6 | 0.3-0.7 | jersey,viscose
+pleated midi skirt with a soft blouse | 0.55 | 0.3-0.7 | chiffon,polyester
+long a-line dress with short sleeves | 0.5 | 0.3-0.7 | rayon,linen
+shirt dress belted at the waist | 0.5 | 0.3-0.7 | cotton

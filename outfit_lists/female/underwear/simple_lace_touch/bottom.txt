@@ -1,0 +1,7 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+lace-waist hipster panties | 0.65 | 0.1-0.6 | lace,cotton
+satin bikini panties | 0.5 | 0.1-0.6 | satin
+mesh-side briefs | 0.45 | 0.1-0.6 | mesh,microfiber
+lace-back cheeky panties | 0.4 | 0.1-0.6 | lace

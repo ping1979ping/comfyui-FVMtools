@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+light denim jacket for the evening | 0.4 | 0.1-0.4 | denim
+crochet cover-up cardigan | 0.3 | 0.1-0.4 | knit
+thin linen overshirt | 0.3 | 0.1-0.5 | linen

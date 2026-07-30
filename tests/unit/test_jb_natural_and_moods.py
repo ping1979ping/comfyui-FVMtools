@@ -24,8 +24,11 @@ from core.jb.serialize import (
 )
 from core.outfit_engine import (
     _build_description,
+    _is_none_garment,
     _is_noop_decoration,
     garment_name_has_color,
+    generate_outfit,
+    generate_outfit_records,
 )
 
 
@@ -76,6 +79,37 @@ class TestFragmentCleanup:
     def test_real_decoration_still_emitted(self):
         out = _build_description("#primary#", "jersey", "crew tee", "floral print")
         assert out.endswith("with floral print")
+
+
+class TestNoneGarmentStub:
+    """Kleider-Sets führen top.txt als "none"-Stub — der darf nie in den
+    Prompt ("#primary# none")."""
+
+    @pytest.mark.parametrize("name", ["none", "None", "NONE", "-", "", "  none  "])
+    def test_stub_names_recognised(self, name):
+        assert _is_none_garment(name)
+
+    @pytest.mark.parametrize("name", ["nonetheless top", "wrap dress", "no-show briefs"])
+    def test_real_names_not_flagged(self, name):
+        assert not _is_none_garment(name)
+
+    @pytest.mark.parametrize("outfit_set", [
+        "female/business/dress",
+        "female/dresses_heels/office_dress_heels",
+        "female/dresses_flats/home_house_dress",
+        "female/underwear/everyday_cotton",
+    ])
+    def test_stub_never_reaches_the_prompt(self, outfit_set):
+        for seed in range(12):
+            r = generate_outfit(seed, outfit_set=outfit_set,
+                                style_preset="general", formality=0.5)
+            assert " none" not in f" {r['outfit_prompt']} ", r["outfit_prompt"]
+
+    def test_records_path_drops_the_stub_too(self):
+        rec = generate_outfit_records(3, outfit_set="female/dresses_heels/office_dress_heels",
+                                      style_preset="general", formality=0.5)
+        for g in rec["garments"].values():
+            assert not _is_none_garment(g["name"])
 
 
 class TestNaturalFormat:

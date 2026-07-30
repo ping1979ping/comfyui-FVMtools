@@ -1,0 +1,7 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+faded sports bra washed soft | 0.6 | 0.0-0.3 | spandex blend
+old comfortable bra with stretched straps | 0.55 | 0.0-0.3 | cotton
+cami with a built-in shelf bra | 0.5 | 0.0-0.3 | jersey
+band tee knotted above the waist | 0.4 | 0.0-0.3 | jersey

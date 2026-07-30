@@ -1,0 +1,7 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+lace-trim bralette | 0.7 | 0.1-0.6 | lace,modal
+satin bralette with thin straps | 0.55 | 0.1-0.6 | satin
+soft cup bra with a lace band | 0.5 | 0.1-0.6 | lace,microfiber
+mesh-panel wireless bra | 0.4 | 0.1-0.6 | mesh,modal

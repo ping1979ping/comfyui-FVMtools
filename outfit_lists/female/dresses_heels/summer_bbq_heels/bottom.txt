@@ -1,0 +1,8 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floral sundress above the knee | 0.75 | 0.1-0.5 | cotton,rayon
+smocked-bodice summer dress | 0.6 | 0.1-0.5 | cotton,viscose
+tiered mini sundress | 0.5 | 0.1-0.4 | cotton,chiffon
+linen wrap skirt with a tank | 0.5 | 0.1-0.5 | linen,jersey
+halter-neck summer dress | 0.45 | 0.1-0.5 | rayon,cotton

@@ -1,0 +1,7 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+low wedge sandals | 0.7 | 0.1-0.5 | suede
+block heel slides | 0.55 | 0.1-0.5 | leather
+espadrille wedges with ankle ties | 0.5 | 0.1-0.5 | canvas
+strappy low heels | 0.45 | 0.2-0.6 | leather

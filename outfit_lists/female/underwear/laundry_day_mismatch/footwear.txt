@@ -1,0 +1,6 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+one sock missing its pair | 0.5 | 0.0-0.3 | cotton
+bare feet on the cool floor | 0.55 | 0.0-0.3 | -
+old slippers flattened at the heel | 0.4 | 0.0-0.3 | fleece

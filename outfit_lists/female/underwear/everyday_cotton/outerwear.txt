@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized worn-in tee half on | 0.35 | 0.0-0.3 | jersey
+open flannel shirt | 0.3 | 0.0-0.3 | flannel
+waffle knit robe untied | 0.3 | 0.0-0.4 | waffle knit

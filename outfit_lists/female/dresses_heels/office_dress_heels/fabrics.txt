@@ -1,0 +1,19 @@
+# fabric database
+# format: fabric_name | formality | family | weight
+
+cotton | 0.3 | natural | medium
+jersey | 0.2 | natural | light
+denim | 0.3 | natural | heavy
+knit | 0.3 | natural | medium
+polyester | 0.25 | synthetic | light
+rayon | 0.35 | synthetic | light
+viscose | 0.4 | synthetic | light
+linen | 0.45 | natural | light
+ponte | 0.45 | synthetic | medium
+chiffon | 0.55 | synthetic | light
+leather | 0.4 | natural | heavy
+suede | 0.45 | natural | medium
+lace | 0.5 | delicate | light
+satin | 0.55 | delicate | light
+corduroy | 0.3 | natural | heavy
+tweed | 0.5 | natural | heavy

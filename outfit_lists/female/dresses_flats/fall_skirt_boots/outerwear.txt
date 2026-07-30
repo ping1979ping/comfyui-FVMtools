@@ -1,0 +1,7 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+long wool coat | 0.5 | 0.3-0.7 | tweed
+chunky knit cardigan | 0.55 | 0.1-0.5 | knit
+quilted barn jacket | 0.45 | 0.1-0.5 | cotton
+puffer vest over a turtleneck | 0.4 | 0.1-0.4 | polyester

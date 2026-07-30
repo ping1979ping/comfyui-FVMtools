@@ -1,0 +1,7 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plain cotton briefs | 0.8 | 0.0-0.4 | cotton
+cotton hipster panties | 0.7 | 0.0-0.4 | cotton
+high-waist cotton briefs | 0.5 | 0.0-0.4 | cotton
+cotton bikini panties | 0.55 | 0.0-0.4 | cotton

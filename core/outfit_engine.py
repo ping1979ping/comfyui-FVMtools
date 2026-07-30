@@ -27,6 +27,15 @@ DEFAULT_COLOR_TAGS = {
 # Fabrics that should NOT appear in the prompt text
 INVISIBLE_FABRICS = {"metal", "plastic", "rubber"}
 
+# Placeholder garments that mean "this slot stays empty" — dress sets keep a
+# stub top.txt ("none") because the dress lives in the bottom slot. Without
+# this filter the stub leaked into prompts as "#primary# none".
+_NONE_GARMENTS = frozenset({"none", "-", ""})
+
+
+def _is_none_garment(name) -> bool:
+    return not name or str(name).strip().lower() in _NONE_GARMENTS
+
 
 def generate_outfit(seed, outfit_set="general_female", style_preset="general", formality=0.5,
                     coverage=0.5, slot_enables=None, overrides=None,
@@ -148,9 +157,10 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
                 decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                               texts_list, print_probability, text_mode)
 
-            desc = _build_description(color_tag, fabric_name, garment_name, decoration)
-            descriptions.append(desc)
-            details.append(f"{slot}:{garment_name}:{fabric_name or 'none'}:{color_tag}")
+            if not _is_none_garment(garment_name):
+                desc = _build_description(color_tag, fabric_name, garment_name, decoration)
+                descriptions.append(desc)
+                details.append(f"{slot}:{garment_name}:{fabric_name or 'none'}:{color_tag}")
             continue
 
         # Auto-generate
@@ -178,6 +188,9 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
         # Pick decoration (print/text)
         decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                       texts_list, print_probability, text_mode)
+
+        if _is_none_garment(chosen_garment["name"]):
+            continue  # placeholder slot (rng already consumed above)
 
         color_tag = color_tag_for(
             slot, fabric_name, DEFAULT_COLOR_TAGS.get(slot, "#primary#"))
@@ -284,16 +297,17 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
             else:
                 decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                               texts_list, print_probability, text_mode)
-            fragment = _build_description(color_tag, fabric_name, garment_name, decoration)
-            garments_out[slot] = {
-                "slot": slot,
-                "name": garment_name,
-                "fabric": fabric_name,
-                "color_tag": color_tag,
-                "decoration": decoration,
-                "prompt_fragment": fragment,
-                "is_override": True,
-            }
+            if not _is_none_garment(garment_name):
+                fragment = _build_description(color_tag, fabric_name, garment_name, decoration)
+                garments_out[slot] = {
+                    "slot": slot,
+                    "name": garment_name,
+                    "fabric": fabric_name,
+                    "color_tag": color_tag,
+                    "decoration": decoration,
+                    "prompt_fragment": fragment,
+                    "is_override": True,
+                }
             continue
 
         garments = all_garments.get(slot, [])
@@ -315,6 +329,9 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
 
         decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                       texts_list, print_probability, text_mode)
+
+        if _is_none_garment(chosen_garment["name"]):
+            continue  # placeholder slot (rng already consumed above)
 
         color_tag = color_tag_for(
             slot, fabric_name, DEFAULT_COLOR_TAGS.get(slot, "#primary#"))
@@ -370,7 +387,7 @@ def _is_noop_decoration(decoration: str) -> bool:
 # as nonsense ("grey bare feet", "navy messy bun").
 _COLORLESS_ITEMS = (
     "bare feet", "barefoot", "bare legs", "no bag", "no jewellery", "no jewelry",
-    "messy bun", "hair clipped", "hair tied", "hair down", "ponytail",
+    "messy bun", "hair clipped", "hair tie", "hair tied", "hair down", "ponytail",
     "in hand", "hood pulled up", "hood up", "nothing",
 )
 

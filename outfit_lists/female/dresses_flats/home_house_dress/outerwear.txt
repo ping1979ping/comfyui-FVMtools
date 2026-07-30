@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized cardigan | 0.5 | 0.0-0.3 | knit
+boyfriend flannel worn open | 0.4 | 0.0-0.3 | cotton
+zip hoodie half on | 0.35 | 0.0-0.3 | fleece

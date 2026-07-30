@@ -1,0 +1,7 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+quilted vest | 0.45 | 0.1-0.4 | polyester
+denim jacket | 0.45 | 0.1-0.4 | denim
+long open cardigan | 0.45 | 0.1-0.4 | knit
+rain shell grabbed off the hook | 0.3 | 0.0-0.3 | polyester

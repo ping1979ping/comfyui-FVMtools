@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+waffle knit robe hanging open | 0.4 | 0.0-0.3 | waffle knit
+comforter pulled around the shoulders | 0.3 | 0.0-0.3 | -
+long cardigan over the pajamas | 0.3 | 0.0-0.3 | knit

@@ -1,0 +1,5 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bare feet | 0.65 | 0.0-0.5 | -
+sheer ankle socks with a lace cuff | 0.3 | 0.0-0.5 | -

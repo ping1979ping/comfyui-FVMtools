@@ -1,0 +1,7 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+smooth t-shirt bra | 0.85 | 0.0-0.5 | microfiber
+seamless wireless bra | 0.6 | 0.0-0.5 | seamless knit
+molded-cup everyday bra | 0.55 | 0.0-0.5 | microfiber,modal
+plain nude bra | 0.5 | 0.0-0.5 | microfiber

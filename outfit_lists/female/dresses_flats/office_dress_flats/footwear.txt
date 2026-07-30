@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pointed-toe ballet flats | 0.7 | 0.3-0.7 | leather
+leather loafers | 0.65 | 0.3-0.7 | leather
+low chelsea boots | 0.5 | 0.2-0.6 | leather
+white leather sneakers kept clean | 0.45 | 0.1-0.5 | leather
+mary jane flats | 0.4 | 0.3-0.7 | leather

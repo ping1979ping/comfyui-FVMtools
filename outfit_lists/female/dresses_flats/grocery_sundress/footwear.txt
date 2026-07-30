@@ -1,0 +1,8 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+white tennis shoes | 0.7 | 0.1-0.4 | canvas
+low-top canvas sneakers | 0.6 | 0.1-0.4 | canvas
+flat slide sandals | 0.55 | 0.1-0.4 | leather
+ballet flats worn soft | 0.4 | 0.1-0.5 | leather
+birkenstock-style sandals | 0.45 | 0.1-0.4 | suede

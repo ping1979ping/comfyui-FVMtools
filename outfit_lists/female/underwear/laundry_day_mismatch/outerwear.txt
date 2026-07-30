@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+boyfriend flannel with rolled sleeves | 0.4 | 0.0-0.3 | flannel
+towel worn as a cape between loads | 0.25 | 0.0-0.3 | -
+zip hoodie with nothing matching | 0.35 | 0.0-0.3 | fleece

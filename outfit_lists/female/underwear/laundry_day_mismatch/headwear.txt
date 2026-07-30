@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+messy bun with loose strands | 0.55 | 0.0-0.5 | -
+hair down and sleep-tangled | 0.45 | 0.0-0.5 | -
+low ponytail | 0.4 | 0.0-0.5 | -
+claw clip holding hair up | 0.4 | 0.0-0.5 | -
+scrunchie on a loose bun | 0.35 | 0.0-0.5 | -
+headband pushing hair back | 0.25 | 0.0-0.5 | knit

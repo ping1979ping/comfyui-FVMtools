@@ -1,0 +1,7 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+seamless boyshorts | 0.7 | 0.0-0.4 | seamless knit
+athletic bikini briefs | 0.6 | 0.0-0.4 | microfiber
+compression shorts worn as underwear | 0.5 | 0.0-0.4 | spandex blend
+high-waist seamless briefs | 0.45 | 0.0-0.4 | seamless knit
