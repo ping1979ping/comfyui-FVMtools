@@ -23,3 +23,4 @@ MagicMock/
 # wildcards.ini.local next to wildcards.ini and the user can keep
 # their own path setting without conflicting with future pulls.
 /wildcards.ini.local
+.mcp.json

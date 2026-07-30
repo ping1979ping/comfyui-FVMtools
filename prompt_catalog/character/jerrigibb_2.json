@@ -1,0 +1,30 @@
+{
+  "jerrigibb women": {
+    "age_desc": "48yo",
+    "gender": "female ",
+    "ethnicity_tag": "german austrian",
+    "skin": "smooth skin, subtle freckles, natural skin, fair skin",
+    "expression": "confindent happy gaze",
+    "hair": {
+      "color": "dyed blonde",
+      "length": "long hair",
+      "style": "wavy, center-parted",
+      "details": "healthy shine"
+    },
+    "body": {
+      "build": "fit dlbody",
+      "height": "average height, 5ft5in",
+      "breast size": "36 DD"
+    },
+    "pose": {
+      "pose action": "dynamic posing"
+    },
+    "legs": {
+      "legwear": "__color/nylon_color__ stockings. ffsstockings.",
+      "legwear_fabric": "shiny nylon with sheer-effect, semi-opaque with 60 denier."
+    },
+    "shoe": {
+      "fit-form": "closetoe pumps with toe-cleavage."
+    }
+  }
+}

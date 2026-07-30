@@ -1,0 +1,33 @@
+{
+  "jerrigibb women": {
+    "age_desc": "48yo",
+    "gender": "female ",
+    "ethnicity_tag": "german austrian",
+    "skin": "smooth skin, subtle freckles, natural skin, fair skin",
+    "expression": "confindent happy gaze",
+    "hair": {
+      "color": "dyed blonde",
+      "length": "long hair",
+      "style": "wavy, center-parted",
+      "details": "healthy shine"
+    },
+    "body": {
+      "build": "fit dlbody",
+      "height": "average height, 5ft5in",
+      "legs": {
+        "leg shape": "defined calves, bold thighs",
+        "stockings": "wearing dark semi-transparent stockings, ffsstockings with backseam",
+        "legwear": "__color/nylon_color__ stockings, 30den",
+        "shoes": {
+          "show_type": "high heels by Louboutain, hotchick100 with 100mm heels.",
+          "shoe_brand": "Louboutain",
+          "shoe color": "{black|grey|pink|nude|animal print}"
+        }
+      },
+      "breast size": "36 DD"
+    },
+    "pose": {
+      "pose action": "dynamic"
+    }
+  }
+}

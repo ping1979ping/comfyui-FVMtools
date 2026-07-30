@@ -1,0 +1,15 @@
+{
+  "girls appearance": {
+    "subject": "15yo 3lin girl",
+    "feeling": "{%2%happy times laughing|%2%smiling broadly|%1% blowing a kiss|%1% mouth open|%1%suprised}",
+    "legs_pose": "{crossed legs|sitting in m-pose|legs spread|legs together|one leg up in the air}",
+    "body_pose": "{sitting|standing|laying down|on all fours from {%1%front|%1%side|%2%behind}}",
+    "certificate": "light blue papersheet with \"Elin Rhineheart\" handwritten in curlyfont on it",
+    "bodytype": "fit athletic petite body slightly toned"
+  },
+  "hair": {
+    "color": "blonde",
+    "style": "she is wearing {strict bun|ponytail|braided ponytail|open long hair|high ponytail with scrunchy} hairstyle."
+  },
+  "photo composition": "{selfie with pink iphone12| selfie| professional}"
+}

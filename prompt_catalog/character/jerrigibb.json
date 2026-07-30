@@ -1,0 +1,20 @@
+{
+  "jerrigibb women": {
+    "age_desc": "48yo",
+    "gender": "female",
+    "ethnicity_tag": "german austrian",
+    "skin": "smooth skin, subtle freckles, natural skin, fair skin",
+    "expression": "confindent happy gaze",
+    "hair": {
+      "color": "dyed blonde",
+      "length": "over-shoulder",
+      "style": "wavy, center-parted",
+      "details": "healthy shine"
+    },
+    "body": {
+      "build": "fit dlbody",
+      "height": "average height, 5ft5in",
+      "legs": "defined calves, bold thighs"
+    }
+  }
+}

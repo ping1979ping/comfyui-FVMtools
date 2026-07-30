@@ -1,0 +1,10 @@
+{
+  "location": {
+    "foreground": "subject",
+    "midground": "{light wood parquet|green plastic gym|blue gymnastic mat} floor of a used gym hall.",
+    "background": "empty gym hall. {small {red|black|blue|green|white} banner with {\"WILSON WEST\"|\"BERKS\"|\"GYMNASTIC\"|\"Reading,PA\"|} in {college serif|graffity|round|sans-serif|stamped} font. |}",
+    "props_seating": "##round bar stool with a single matte metal leg and round black leather cushion, metal bar foot rest attached with four bars.##",
+    "type": "old gym hall of a middle school",
+    "floor": ""
+  }
+}
