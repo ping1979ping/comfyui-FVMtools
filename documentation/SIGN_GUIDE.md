@@ -198,6 +198,41 @@ versucht, bis `max_attempts` erreicht ist. Ohne OCR-Backend bleibt das stillschw
 
 ---
 
+### Nicht nur den Text, sondern auch den Untergrund
+
+Die Klassen-Vorlage beschreibt nur die **Schrift**. Willst du auch die Fläche
+verändern — „Telefon Nummer 1234" auf einem gelben Post-it statt auf einem grauen
+Zettel — brauchst du beide Hebel gleichzeitig:
+
+| Wo | Was |
+|---|---|
+| `prompt_suffix` in den **Sign Options** | beschreibt die Fläche für das Diffusionsmodell |
+| `glyph_plate_color` im **Detailer** | malt sie schon in der Glyph-Ebene |
+| `glyph_ink_color` im **Detailer** | passende Schriftfarbe dazu |
+
+```
+prompt_suffix:     on a bright yellow post-it note stuck to the wall,
+                   slight paper curl at one corner, soft drop shadow,
+                   matte paper texture
+glyph_plate_color: #ffe680
+glyph_ink_color:   #3a3630
+```
+
+Nur den Prompt zu ändern reicht nicht: `glyph_autocolor` leitet die Farben aus dem
+**Original** ab, die Glyph-Ebene wäre also weiter grau und würde das Modell in
+Richtung des alten Untergrunds ziehen. Umgekehrt reicht auch die Farbe allein nicht
+— dann steht ein gelbes Rechteck im Init-Latent, während der Prompt von Papier
+redet. Der Detailer weist im `report` darauf hin, wenn du eine Plattenfarbe setzt,
+aber den `prompt_suffix` leer lässt.
+
+Die Farbfelder verstehen `#ffe680`, `ffe680`, `#fe8` und `255,230,128`. Leer heißt
+„aus dem Bild ableiten".
+
+Damit SAM3 die **ganze** Fläche maskiert und nicht nur die Schriftzeile, hilft ein
+passender Prompt in `custom_prompts`, etwa `post-it note:0.3` oder `sticky note:0.3`.
+
+---
+
 ## 4 · Sign Options
 
 Hält die Widget-Liste des Detailers beherrschbar. Per-Klasse-Denoise

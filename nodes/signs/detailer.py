@@ -30,7 +30,7 @@ try:  # relative inside ComfyUI's loader, absolute under pytest
     from ...core.signs.classes import build_prompt, get_class
 except ImportError:
     from core.signs.classes import build_prompt, get_class
-from .options import SIGN_DEFAULTS
+from .options import SIGN_DEFAULTS, parse_hex_rgb
 
 
 # Prompt used when a region is below the legibility floor and soften is chosen.
@@ -111,6 +111,16 @@ class SignDetailer:
                                "the old surface shading."}),
                 "glyph_autocolor": ("BOOLEAN", {"default": True,
                     "tooltip": "Sample ink and plate colour from the original sign so the replacement keeps its scheme."}),
+                "glyph_plate_color": ("STRING", {"default": "",
+                    "tooltip": "Force the SURFACE colour of the typeset layer. Empty = use the\n"
+                               "colour sampled from the original.\n"
+                               "Accepts '#ffe680', 'ffe680', '#fe8' or '255,230,128'.\n"
+                               "Use this when you want a different surface than the one in the\n"
+                               "picture — a yellow post-it, a white plate, a green road sign —\n"
+                               "and describe that surface in the Sign Options prompt_suffix too."}),
+                "glyph_ink_color": ("STRING", {"default": "",
+                    "tooltip": "Force the LETTER colour of the typeset layer. Empty = sampled.\n"
+                               "Same formats as the plate colour."}),
                 "too_small_policy": (["soften", "skip", "render"], {"default": "soften",
                     "tooltip": "Regions below the legibility floor.\n"
                                "soften: render as believable out-of-focus text (recommended)\n"
@@ -179,7 +189,8 @@ class SignDetailer:
         return new_w, new_h
 
     def _apply_glyph(self, image_hwc, region, text, font_choice, strength,
-                     autocolor, uppercase, margin_ratio):
+                     autocolor, uppercase, margin_ratio,
+                     ink_override=None, plate_override=None):
         """Composite typeset text onto the image inside the region mask.
 
         Returns (new_image, glyph_rgb_preview) or (image, None) when nothing was drawn.
@@ -197,6 +208,12 @@ class SignDetailer:
         if autocolor:
             rgb_u8 = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
             ink, plate = estimate_text_colors(rgb_u8, mask_np)
+        # Explicit colours win over the estimate — this is how you ask for a
+        # surface the picture does not contain yet (a yellow post-it, say).
+        if ink_override is not None:
+            ink = ink_override
+        if plate_override is not None:
+            plate = plate_override
 
         try:
             glyph_rgb, alpha = render_glyph_layer(
@@ -218,7 +235,8 @@ class SignDetailer:
     def execute(self, images, sign_data, model, clip, vae, seed, steps, denoise,
                 sampler_name, scheduler, target_width, target_height, max_upscale,
                 glyph_guidance="init", glyph_font="<auto>", glyph_denoise=0.55,
-                glyph_strength=0.85, glyph_autocolor=True, too_small_policy="soften",
+                glyph_strength=1.0, glyph_autocolor=True,
+                glyph_plate_color="", glyph_ink_color="", too_small_policy="soften",
                 cluster_mode="shared_seed", verify_after="off", verify_similarity=0.60,
                 max_attempts=2, mask_expand_pixels=4, mask_blend_pixels=16,
                 detail_daemon_enabled=False, detail_amount=0.0,
@@ -240,6 +258,19 @@ class SignDetailer:
             eff_glyph_denoise = max(0.0, glyph_denoise - 0.15)
         else:
             eff_strength, eff_glyph_denoise = glyph_strength, glyph_denoise
+
+        ink_override = parse_hex_rgb(glyph_ink_color)
+        plate_override = parse_hex_rgb(glyph_plate_color)
+        for label, raw, parsed in (("glyph_ink_color", glyph_ink_color, ink_override),
+                                   ("glyph_plate_color", glyph_plate_color, plate_override)):
+            if raw and raw.strip() and parsed is None:
+                msg = f"WARNING: could not parse {label}={raw!r} — falling back to the sampled colour"
+                report.append(msg)
+                print(f"[SignDetailer] {msg}")
+        if plate_override is not None and not opts["prompt_suffix"]:
+            report.append("NOTE: a plate colour is forced but prompt_suffix is empty — the typeset "
+                          "layer will carry the new surface colour while the prompt still describes "
+                          "the old surface. Describe the surface in Sign Options prompt_suffix.")
 
         result = images.clone()
         refined_crops = []
@@ -284,6 +315,8 @@ class SignDetailer:
                     use_glyph = False
                 else:
                     prompt = build_prompt(cls_name, text, proposal.get("style", ""))
+                    if opts["prompt_suffix"]:
+                        prompt = f"{prompt}, {opts['prompt_suffix']}"
                     use_glyph = glyph_guidance != "off"
                     base_denoise = eff_glyph_denoise if use_glyph else denoise
                     region_denoise = base_denoise + get_class(cls_name)["denoise_bias"]
@@ -312,7 +345,8 @@ class SignDetailer:
                     if use_glyph and text:
                         work_image, glyph_rgb = self._apply_glyph(
                             current, region, text, glyph_font, eff_strength,
-                            glyph_autocolor, opts["uppercase"], opts["margin_ratio"])
+                            glyph_autocolor, opts["uppercase"], opts["margin_ratio"],
+                            ink_override=ink_override, plate_override=plate_override)
                         if glyph_rgb is not None and attempt == 0:
                             glyph_previews.append(torch.from_numpy(
                                 np.clip(glyph_rgb, 0, 1).astype(np.float32)))

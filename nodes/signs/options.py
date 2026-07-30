@@ -23,7 +23,38 @@ SIGN_DEFAULTS = {
     "class_skip": set(),
     "uppercase": False,
     "margin_ratio": 0.08,
+    "prompt_suffix": "",
 }
+
+
+def parse_hex_rgb(value, fallback=None):
+    """Parse '#ffe680', 'ffe680' or '255,230,128' into an (r, g, b) 0-255 tuple.
+
+    Returns ``fallback`` for anything unparseable, including an empty string —
+    an empty override means 'leave it to the automatic estimate'.
+    """
+    if not value or not str(value).strip():
+        return fallback
+    text = str(value).strip().lstrip("#")
+
+    if "," in text:
+        parts = [p.strip() for p in text.split(",")]
+        if len(parts) != 3:
+            return fallback
+        try:
+            rgb = tuple(int(float(p)) for p in parts)
+        except (ValueError, TypeError):
+            return fallback
+        return tuple(max(0, min(255, c)) for c in rgb)
+
+    if len(text) == 3:                       # shorthand #fe8
+        text = "".join(c * 2 for c in text)
+    if len(text) != 6:
+        return fallback
+    try:
+        return tuple(int(text[i:i + 2], 16) for i in (0, 2, 4))
+    except ValueError:
+        return fallback
 
 
 def _parse_class_map(spec, cast=float):
@@ -87,12 +118,20 @@ class SignOptions:
                     "tooltip": "Force glyph rendering to uppercase — helps on street signs and plates."}),
                 "margin_ratio": ("FLOAT", {"default": 0.08, "min": 0.0, "max": 0.4, "step": 0.01,
                     "tooltip": "Padding between the rendered text and the edge of the sign."}),
+                "prompt_suffix": ("STRING", {"default": "", "multiline": True,
+                    "tooltip": "Appended to every region's prompt — this is where you describe the\n"
+                               "SURFACE, not the text. The class template only covers the lettering.\n"
+                               "Example: 'on a bright yellow post-it note, slight paper curl,\n"
+                               "soft drop shadow, matte paper texture'.\n"
+                               "Pair it with the plate colour override in the Detailer so the\n"
+                               "typeset layer already carries that surface colour."}),
             },
         }
 
     def execute(self, cfg, negative_prompt, context_expand_factor, output_padding,
                 mask_fill_holes, denoise_progression, steps_progression,
-                class_denoise, skip_classes, uppercase, margin_ratio):
+                class_denoise, skip_classes, uppercase, margin_ratio,
+                prompt_suffix=""):
         known = set(all_class_names())
         skip = {c.strip().lower() for c in (skip_classes or "").split(",") if c.strip()}
         unknown = skip - known
@@ -111,4 +150,5 @@ class SignOptions:
             "class_skip": skip & known,
             "uppercase": uppercase,
             "margin_ratio": margin_ratio,
+            "prompt_suffix": (prompt_suffix or "").strip(),
         },)

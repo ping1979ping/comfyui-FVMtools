@@ -290,6 +290,25 @@ try:
         entries.sort(key=lambda item: item["mtime"], reverse=True)
         return web.json_response({"images": entries[:limit]})
 
+    @PromptServer.instance.routes.get("/fvmtools/sign-default-prompt")
+    async def _get_sign_default_prompt(request):
+        """Serve the Sign Text Proposer's stock system prompt.
+
+        The reset button fetches it instead of shipping a copy in the JS, so the
+        two can never drift apart — the prompt is tuned against measured model
+        behaviour and a stale duplicate would quietly undo that.
+        """
+        try:
+            from .nodes.utils.lmstudio_client import (
+                DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE,
+            )
+        except Exception as e:
+            return web.json_response({"error": str(e)}, status=500)
+        return web.json_response({
+            "system_prompt": DEFAULT_SYSTEM_PROMPT,
+            "temperature": DEFAULT_TEMPERATURE,
+        })
+
     @PromptServer.instance.routes.get("/fvmtools/yolo-classes")
     async def _get_yolo_classes(request):
         """Return class names for a YOLO model (used by PersonSelectorMulti aux_label tooltip)."""

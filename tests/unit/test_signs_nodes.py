@@ -262,6 +262,81 @@ class TestOptions:
         assert needed <= set(SIGN_DEFAULTS)
 
 
+class TestSurfaceControl:
+    """Rendering the text AND the surface it sits on (a yellow post-it, say)."""
+
+    @pytest.mark.parametrize("raw,expected", [
+        ("#ffe680", (255, 230, 128)),
+        ("ffe680", (255, 230, 128)),
+        ("#FFE680", (255, 230, 128)),
+        ("#fe8", (255, 238, 136)),
+        ("255,230,128", (255, 230, 128)),
+        (" 255 , 230 , 128 ", (255, 230, 128)),
+    ])
+    def test_parse_hex_rgb_accepted_forms(self, raw, expected):
+        from nodes.signs.options import parse_hex_rgb
+        assert parse_hex_rgb(raw) == expected
+
+    @pytest.mark.parametrize("raw", ["", "   ", None, "nonsense", "#12345", "1,2", "1,2,3,4"])
+    def test_parse_hex_rgb_rejects_junk(self, raw):
+        from nodes.signs.options import parse_hex_rgb
+        assert parse_hex_rgb(raw) is None
+
+    def test_parse_hex_rgb_honours_the_fallback(self):
+        from nodes.signs.options import parse_hex_rgb
+        assert parse_hex_rgb("", fallback=(1, 2, 3)) == (1, 2, 3)
+
+    def test_parse_hex_rgb_clamps_out_of_range_triplets(self):
+        from nodes.signs.options import parse_hex_rgb
+        assert parse_hex_rgb("300,-20,128") == (255, 0, 128)
+
+    def test_options_carries_the_prompt_suffix(self):
+        node = SignOptions()
+        (opts,) = node.execute(
+            cfg=1.0, negative_prompt="", context_expand_factor=1.3, output_padding=32,
+            mask_fill_holes=True, denoise_progression="", steps_progression="",
+            class_denoise="", skip_classes="", uppercase=False, margin_ratio=0.08,
+            prompt_suffix="  on a bright yellow post-it note  ")
+        assert opts["prompt_suffix"] == "on a bright yellow post-it note"
+
+    def test_prompt_suffix_defaults_to_empty(self):
+        assert SIGN_DEFAULTS["prompt_suffix"] == ""
+
+    def test_detailer_exposes_both_colour_overrides(self):
+        req = SignDetailer.INPUT_TYPES()["required"]
+        for name in ("glyph_plate_color", "glyph_ink_color"):
+            assert name in req and req[name][0] == "STRING"
+            assert req[name][1]["default"] == "", "an empty override must mean 'sample it'"
+
+    def test_apply_glyph_prefers_the_override_over_the_sample(self):
+        """The forced colour is what makes a grey scrap become a yellow post-it."""
+        node = SignDetailer()
+        img = torch.full((200, 300, 3), 0.55)
+        region = {"index": 0, "class": "paper", "mask": _rect_mask(200, 300, 40, 40, 260, 160),
+                  "proposal": {"font_hint": ""}}
+        out, glyph = node._apply_glyph(
+            img, region, "Telefon Nummer 1234", "<auto>", 1.0,
+            autocolor=True, uppercase=False, margin_ratio=0.1,
+            ink_override=(20, 20, 20), plate_override=(255, 230, 128))
+        assert glyph is not None
+        painted = out.numpy()[60:140, 60:240].reshape(-1, 3)
+        # the forced plate is markedly warmer than the grey it replaced
+        assert painted[:, 0].mean() > painted[:, 2].mean() + 0.15
+
+    def test_apply_glyph_without_overrides_keeps_the_sampled_scheme(self):
+        node = SignDetailer()
+        img = torch.full((200, 300, 3), 0.55)
+        region = {"index": 0, "class": "paper", "mask": _rect_mask(200, 300, 40, 40, 260, 160),
+                  "proposal": {"font_hint": ""}}
+        out, glyph = node._apply_glyph(
+            img, region, "TEST", "<auto>", 1.0,
+            autocolor=True, uppercase=False, margin_ratio=0.1)
+        assert glyph is not None
+        painted = out.numpy()[60:140, 60:240].reshape(-1, 3)
+        spread = abs(painted[:, 0].mean() - painted[:, 2].mean())
+        assert spread < 0.10, "a grey source must stay neutral when nothing is forced"
+
+
 class TestNodeContracts:
 
     @pytest.mark.parametrize("cls", [SignSelectorSAM3, SignTextProposer, SignDetailer, SignOptions])
