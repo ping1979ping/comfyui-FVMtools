@@ -116,12 +116,15 @@ def test_no_duplicate_names_within_file(set_name, fname):
 @pytest.mark.parametrize("set_name", ALL_SETS)
 @pytest.mark.parametrize("fname", REQUIRED_FILES)
 def test_probability_in_curated_range(set_name, fname):
+    """Weights below 0.05 are almost certainly typos (0.01 vs 0.1) and zero
+    would make the entry dead weight. Deliberately rare entries (0.05-0.3)
+    are legitimate — hand-tuned lists use them to keep variants uncommon."""
     element_id = fname.replace(".txt", "")
     entries = load_location_elements(element_id, set_name)
     for e in entries:
-        assert 0.3 <= e["probability"] <= 1.0, (
+        assert 0.05 <= e["probability"] <= 1.0, (
             f"{set_name}/{fname}: probability {e['probability']} out of "
-            f"curated range [0.3, 1.0] for {e['name']!r}"
+            f"curated range [0.05, 1.0] for {e['name']!r}"
         )
 
 

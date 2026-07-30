@@ -1629,7 +1629,7 @@ def validate(category: str, set_name: str, element: str, body: str) -> list[str]
         names.append(name)
         try:
             p = float(prob)
-            if not 0.3 <= p <= 1.0:
+            if not 0.05 <= p <= 1.0:
                 problems.append(f"probability {p} out of range: {name!r}")
         except ValueError:
             problems.append(f"bad probability: {ln!r}")
