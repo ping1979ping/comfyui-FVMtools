@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+plastic bucket and spade | 0.7 | 0.02-0.1 | faded plastic
+scooter parked against the bench | 0.55 | 0.05-0.15 | scuffed deck
+drinks bottle on the bench | 0.5 | 0.02-0.08 | condensation on plastic
+jacket left on the bench arm | 0.55 | 0.05-0.15 | crumpled shell fabric
+ball resting in the grass | 0.5 | 0.03-0.12 | scuffed panels
+pram bag hooked on the handle | 0.45 | 0.03-0.12 | bulging fabric
+snack packet on the bench | 0.45 | 0.02-0.08 | rolled-down wrapper
+chalk drawing on the path | 0.35 | 0.05-0.15 | faint chalk lines
+lost glove on the fence post | 0.35 | 0.02-0.06 | damp knit
+sand toys scattered in the pit | 0.5 | 0.05-0.15 | sun-bleached plastic
+wet wipes packet half open | 0.3 | 0.02-0.06 | creased plastic

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+laminate living room floor | 0.8 | 0.3-0.6 | scuffed plank laminate
+plain ceiling lamp | 0.7 | 0.05-0.2 | fabric shade
+skirting board along the wall | 0.55 | 0.1-0.25 | painted with scuffs
+light switch by the doorway | 0.5 | 0.03-0.1 | yellowed plastic plate
+socket with cables plugged in | 0.6 | 0.05-0.15 | tangled leads
+window reveal with a deep sill | 0.5 | 0.1-0.3 | painted plaster
+ceiling rose around the light | 0.35 | 0.05-0.15 | moulded plaster
+door architrave by the hall | 0.45 | 0.1-0.25 | chipped paint
+carpet edge meeting the laminate | 0.4 | 0.05-0.2 | metal threshold strip
+picture hook marks on the wall | 0.35 | 0.05-0.15 | filled nail holes
+scuffed corner where the sofa touches | 0.4 | 0.05-0.15 | rubbed paint

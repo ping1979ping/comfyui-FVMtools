@@ -1,0 +1,7 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+solid color | 0.90 | top,bottom,outerwear | 0.1-0.6
+thin stripe pattern | 0.20 | top | 0.1-0.5
+small checked pattern | 0.12 | top,outerwear | 0.2-0.5
+faded washed-out look | 0.18 | top,bottom | 0.1-0.4

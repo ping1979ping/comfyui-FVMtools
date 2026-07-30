@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+rain streaks on the glass | 0.55 | - | -
+misted-up window pane | 0.45 | - | -
+rain drumming on the window | 0.45 | - | -
+wind audible outside | 0.4 | - | -
+damp air after rain | 0.5 | - | -
+dry still air indoors | 0.7 | - | -
+draught from the window frame | 0.4 | - | -
+snow visible outside the window | 0.35 | - | -
+warm close air indoors | 0.5 | - | -
+wet marks tracked in by the door | 0.35 | - | -

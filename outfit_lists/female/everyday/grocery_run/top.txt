@@ -1,0 +1,8 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+plain long sleeve tee | 0.90 | 0.1-0.4 | cotton,jersey
+simple crew sweatshirt | 0.85 | 0.1-0.3 | cotton,fleece
+basic cotton t-shirt | 0.80 | 0.1-0.3 | cotton,jersey
+thin knit jumper | 0.70 | 0.2-0.4 | knit
+striped long sleeve top | 0.55 | 0.1-0.4 | cotton,jersey

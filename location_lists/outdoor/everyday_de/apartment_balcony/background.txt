@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+facade of the opposite block | 1.0 | 0.5-0.9 | rendered wall with small windows
+balcony railing across the view | 0.95 | 0.3-0.7 | painted steel bars
+rooftops beyond the courtyard | 0.65 | 0.2-0.5 | tiled roofs and aerials
+neighbouring balconies in a row | 0.7 | 0.3-0.6 | mixed clutter behind railings
+bare trees in the courtyard | 0.6 | 0.2-0.5 | thin branches
+parked cars below | 0.5 | 0.15-0.4 | dusty roofs
+sky above the roofline | 0.8 | 0.3-0.6 | flat pale cloud
+satellite dishes on the wall | 0.4 | 0.1-0.3 | greyed plastic
+window with a roller shutter | 0.55 | 0.2-0.5 | slatted plastic shutter
+line of washing on a neighbour balcony | 0.45 | 0.1-0.35 | hanging fabric
+distant tram wires | 0.35 | 0.1-0.3 | thin overhead cables

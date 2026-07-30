@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+long supermarket shelving aisle | 1.0 | 0.6-1.0 | packed shelves with price rails
+chiller cabinets along the wall | 0.8 | 0.4-0.8 | glass doors with condensation
+promotional signs overhead | 0.7 | 0.2-0.5 | printed cardboard
+end-of-aisle display stack | 0.7 | 0.3-0.6 | shrink-wrapped cartons
+aisle number sign hanging down | 0.6 | 0.1-0.3 | printed plastic panel
+freezer island in the next aisle | 0.5 | 0.25-0.55 | frosted glass lids
+back wall with staff door | 0.4 | 0.2-0.5 | scuffed swing door
+bakery counter further along | 0.45 | 0.2-0.5 | lit glass front
+shelf gap where stock ran out | 0.55 | 0.15-0.4 | empty metal shelf
+drinks shelving wall | 0.6 | 0.3-0.6 | rows of bottles
+checkout lights in the distance | 0.4 | 0.15-0.4 | glowing number signs

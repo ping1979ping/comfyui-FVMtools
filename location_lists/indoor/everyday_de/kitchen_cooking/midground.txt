@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+laminate worktop with clutter | 1.0 | 0.4-0.8 | scratched light laminate
+gas hob with used pots | 0.9 | 0.2-0.6 | steel grates with cooking marks
+refrigerator covered in magnets | 0.75 | 0.2-0.5 | white enamel under paper notes
+sink full of washing up | 0.8 | 0.2-0.5 | soap film on stacked plates
+small kitchen table with crumbs | 0.7 | 0.3-0.6 | wiped wooden top
+dishwasher door half open | 0.5 | 0.15-0.4 | steel front with a loaded rack
+kettle beside the toaster | 0.75 | 0.1-0.3 | limescaled plastic and chrome
+bin with the lid propped open | 0.55 | 0.15-0.35 | pedal bin with a stretched bag
+microwave on the worktop | 0.6 | 0.15-0.35 | scratched black casing
+drying rack of clean dishes | 0.65 | 0.15-0.35 | plastic-coated wire
+kitchen chair pulled out | 0.55 | 0.2-0.45 | worn seat pad

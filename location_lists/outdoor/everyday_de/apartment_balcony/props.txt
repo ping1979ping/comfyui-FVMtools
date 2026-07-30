@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+watering can in the corner | 0.6 | 0.05-0.15 | faded plastic
+ashtray on the railing | 0.4 | 0.02-0.08 | glass with ash
+laundry pegs on the rack | 0.6 | 0.02-0.1 | mixed plastic pegs
+mug left on the ledge | 0.55 | 0.03-0.1 | chipped ceramic
+plant saucer with rainwater | 0.5 | 0.03-0.1 | algae ring
+empty bottle beside the chair | 0.35 | 0.03-0.1 | dusty glass
+folded towel over the railing | 0.5 | 0.05-0.15 | sun-stiffened cotton
+seed packet on the table | 0.35 | 0.02-0.06 | faded paper
+small trowel in a pot | 0.4 | 0.02-0.08 | soil-crusted blade
+doormat at the balcony door | 0.45 | 0.05-0.15 | bristly worn mat
+cigarette packet on the table | 0.3 | 0.02-0.06 | crumpled card

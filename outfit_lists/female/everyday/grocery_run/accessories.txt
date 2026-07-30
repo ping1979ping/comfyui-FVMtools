@@ -1,0 +1,6 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+hair tie on wrist | 0.55 | 0.1-0.4 | cotton
+small stud earrings | 0.45 | 0.1-0.4 | metal
+plain wristwatch | 0.35 | 0.1-0.5 | metal

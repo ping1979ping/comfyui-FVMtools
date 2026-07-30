@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+flat store lighting throughout | 1.0 | - | -
+quiet early opening hour | 0.7 | - | -
+busy late afternoon | 0.85 | - | -
+after-work rush | 0.8 | - | -
+mid morning lull | 0.75 | - | -
+saturday crowding | 0.7 | - | -
+near closing time | 0.6 | - | -
+lunchtime queueing | 0.65 | - | -
+restocking in progress | 0.55 | - | -
+just after opening | 0.6 | - | -

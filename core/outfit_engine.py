@@ -179,7 +179,8 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
         decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                       texts_list, print_probability, text_mode)
 
-        color_tag = DEFAULT_COLOR_TAGS.get(slot, "#primary#")
+        color_tag = color_tag_for(
+            slot, fabric_name, DEFAULT_COLOR_TAGS.get(slot, "#primary#"))
         desc = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration)
         descriptions.append(desc)
         details.append(f"{slot}:{chosen_garment['name']}:{fabric_name or 'none'}:{color_tag}")
@@ -315,7 +316,8 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
         decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                       texts_list, print_probability, text_mode)
 
-        color_tag = DEFAULT_COLOR_TAGS.get(slot, "#primary#")
+        color_tag = color_tag_for(
+            slot, fabric_name, DEFAULT_COLOR_TAGS.get(slot, "#primary#"))
         fragment = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration)
         garments_out[slot] = {
             "slot": slot,
@@ -364,10 +366,31 @@ def _is_noop_decoration(decoration: str) -> bool:
     return (decoration or "").strip().lower() in _NOOP_DECORATIONS
 
 
+# Entries that are not garments at all. A palette colour in front of them reads
+# as nonsense ("grey bare feet", "navy messy bun").
+_COLORLESS_ITEMS = (
+    "bare feet", "barefoot", "bare legs", "no bag", "no jewellery", "no jewelry",
+    "messy bun", "hair clipped", "hair tied", "hair down", "ponytail",
+    "in hand", "hood pulled up", "hood up", "nothing",
+)
+
+
+def is_colorless_item(garment_name: str) -> bool:
+    """True for entries that describe a state rather than a coloured object."""
+    lowered = (garment_name or "").lower()
+    return any(marker in lowered for marker in _COLORLESS_ITEMS)
+
+
 def garment_name_has_color(garment_name: str) -> bool:
-    """True when the garment name already states its own colour."""
+    """True when the garment name already states its own colour.
+
+    Also true for entries that should never be coloured at all, so the caller
+    only has to ask one question before prepending the palette colour.
+    """
     if not garment_name:
         return False
+    if is_colorless_item(garment_name):
+        return True
     for word in garment_name.replace("-", " ").lower().split():
         if word.strip(",.") in _NAME_COLOR_WORDS:
             return True
@@ -382,6 +405,23 @@ def _fabric_already_named(fabric_name: str, garment_name: str) -> bool:
     if not fabric_name or not garment_name:
         return False
     return fabric_name.lower() in garment_name.lower()
+
+
+# Textile accessories inherit the "metallic" role from the accessories slot,
+# which produced "warm gold knit simple scarf". Only actual jewellery and
+# hardware should read as metal.
+_TEXTILE_FABRICS = frozenset({
+    "cotton", "jersey", "knit", "wool", "fleece", "polyester", "canvas",
+    "denim", "flannel", "corduroy", "terry cloth", "ribbed cotton", "silk",
+    "linen", "softshell", "nylon", "satin", "velvet", "lace", "leather",
+})
+
+
+def color_tag_for(slot: str, fabric_name: str, default_tag: str) -> str:
+    """Swap the metallic role for a wearable colour on textile accessories."""
+    if default_tag == "#metallic#" and (fabric_name or "").lower() in _TEXTILE_FABRICS:
+        return "#accent#"
+    return default_tag
 
 
 def _build_description(color_tag, fabric_name, garment_name, decoration=None):
@@ -402,6 +442,9 @@ def _build_description(color_tag, fabric_name, garment_name, decoration=None):
     """
     fabric_visible = (
         bool(fabric_name)
+        # "-" is the data-file placeholder for "no fabric" (bare feet, a hairstyle);
+        # printing it produced fragments like "navy - bare feet".
+        and fabric_name.strip() not in ("-", "")
         and fabric_name not in INVISIBLE_FABRICS
         and not _fabric_already_named(fabric_name, garment_name)
     )

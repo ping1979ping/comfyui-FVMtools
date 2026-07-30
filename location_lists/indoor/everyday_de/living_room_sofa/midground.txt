@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+worn fabric sofa with cushions | 1.0 | 0.4-0.8 | flattened woven upholstery
+low coffee table with rings | 0.85 | 0.2-0.5 | marked veneer top
+armchair beside the sofa | 0.6 | 0.25-0.55 | sagging seat cushion
+television stand with clutter | 0.7 | 0.2-0.5 | dark wood-look laminate
+laundry basket waiting to be folded | 0.6 | 0.15-0.4 | plastic weave
+rug in front of the sofa | 0.7 | 0.3-0.6 | flattened pile
+side table with a lamp | 0.6 | 0.15-0.4 | scratched top
+stack of magazines on the floor | 0.5 | 0.1-0.3 | curled covers
+child's toys pushed to one side | 0.5 | 0.1-0.35 | scuffed plastic
+folded blanket over the sofa back | 0.7 | 0.15-0.4 | pilled fleece
+footstool used as a table | 0.45 | 0.1-0.3 | worn fabric top

@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+phone raised for a mirror photo | 0.8 | 0.05-0.2 | fingerprint-smeared screen
+toothpaste splashes on the mirror | 0.5 | 0.05-0.15 | dried white specks
+hand adjusting hair in the mirror | 0.65 | 0.1-0.25 | strands between fingers
+towel held against the chest | 0.5 | 0.1-0.3 | damp terry cloth
+water running from the tap | 0.55 | 0.05-0.15 | thin stream
+steam fogging the mirror edge | 0.5 | 0.1-0.3 | soft condensation
+toothbrush raised to the mouth | 0.45 | 0.05-0.15 | wet bristles
+hairdryer held up | 0.4 | 0.05-0.2 | tangled cable
+tube squeezed in one hand | 0.4 | 0.03-0.12 | creased tube
+mirror reflection slightly off-centre | 0.5 | 0.1-0.3 | doubled edge
+hair clip held between the lips | 0.35 | 0.02-0.08 | worn plastic clip

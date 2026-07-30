@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+blanket crumpled on the sofa arm | 0.9 | 0.15-0.35 | pilled fleece
+open laptop on the sofa | 0.6 | 0.1-0.25 | fingerprinted lid
+feet up on the coffee table | 0.55 | 0.1-0.25 | socked feet
+cushion pulled onto the lap | 0.6 | 0.1-0.3 | squashed filling
+mug held in both hands | 0.55 | 0.05-0.2 | steam rising
+remote held towards the television | 0.5 | 0.05-0.15 | worn buttons
+knees drawn up on the seat | 0.5 | 0.1-0.3 | creased trouser fabric
+phone raised for a photo | 0.5 | 0.05-0.15 | reflection in the screen
+cat curled on the cushion | 0.4 | 0.1-0.25 | soft fur
+plate balanced on the arm | 0.4 | 0.05-0.15 | crumbs on the rim
+book held open on the lap | 0.45 | 0.05-0.2 | thumbed pages

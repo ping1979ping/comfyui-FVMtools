@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+wet floor by the entrance | 0.4 | - | -
+no weather visible inside | 0.9 | - | -
+draught from the sliding doors | 0.55 | - | -
+cold draught from the chilled shelves | 0.5 | - | -
+damp air near the entrance | 0.6 | - | -
+umbrellas dripping in the aisle | 0.35 | - | -
+warm air near the bakery | 0.45 | - | -
+condensation on the chiller glass | 0.6 | - | -
+muddy footprints on the floor | 0.35 | - | -
+bright sun at the sliding doors | 0.4 | - | -

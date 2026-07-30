@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+pushing a swing | 0.65 | 0.1-0.3 | chain in hand
+jacket left on the bench | 0.55 | 0.05-0.2 | crumpled shell fabric
+crouching by the sandpit | 0.5 | 0.1-0.3 | knees in the sand
+holding a child's hand | 0.5 | 0.05-0.2 | small fingers
+coffee cup held while watching | 0.5 | 0.05-0.15 | printed sleeve
+phone held low in one hand | 0.5 | 0.05-0.15 | lit screen
+bag on the shoulder while standing | 0.45 | 0.1-0.3 | worn strap
+leaning on the fence rail | 0.45 | 0.1-0.3 | flaking paint
+brushing sand off a knee | 0.4 | 0.05-0.2 | gritty palm
+scooter held by the handlebars | 0.4 | 0.05-0.2 | worn grips
+hair tied back while bending down | 0.35 | 0.05-0.2 | loose strands

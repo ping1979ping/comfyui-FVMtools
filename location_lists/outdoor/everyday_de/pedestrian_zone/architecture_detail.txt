@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+drainage channel in the paving | 0.5 | 0.05-0.2 | worn stone channel
+bollards at the street entrance | 0.55 | 0.05-0.2 | scuffed steel posts
+block paving pattern underfoot | 0.8 | 0.25-0.55 | interlocking pavers
+kerbless flush surface | 0.5 | 0.15-0.4 | level paving
+manhole cover in the paving | 0.45 | 0.03-0.12 | worn cast iron
+shop threshold step | 0.5 | 0.05-0.2 | worn stone lip
+lamp column with a bracket | 0.5 | 0.1-0.3 | painted steel
+tree grille around a trunk | 0.4 | 0.05-0.2 | cast metal grid
+paving sunken near a drain | 0.4 | 0.05-0.2 | dished surface
+downpipe on a shop wall | 0.4 | 0.05-0.2 | painted metal
+weeds between the pavers | 0.4 | 0.03-0.12 | thin green shoots

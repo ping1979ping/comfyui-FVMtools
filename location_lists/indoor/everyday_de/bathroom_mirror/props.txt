@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+toothbrushes in a cup | 0.9 | 0.05-0.15 | plastic mug with limescale
+hairbrush with loose hair | 0.7 | 0.05-0.12 | plastic bristles
+half-used tubes and bottles | 0.85 | 0.05-0.2 | squeezed plastic
+hair tie left on the shelf | 0.55 | 0.02-0.08 | stretched elastic
+soap bar in a dish | 0.6 | 0.02-0.08 | softened edges
+folded flannel over the tap | 0.5 | 0.02-0.08 | damp cotton
+deodorant can on the shelf | 0.55 | 0.03-0.1 | scuffed label
+comb beside the basin | 0.45 | 0.02-0.08 | dusty teeth
+cotton buds in a tub | 0.45 | 0.02-0.08 | clear plastic tub
+razor on the basin edge | 0.45 | 0.02-0.08 | water spots
+hand cream with the lid off | 0.4 | 0.02-0.08 | greasy tube

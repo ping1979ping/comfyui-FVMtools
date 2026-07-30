@@ -1,0 +1,5 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+thick scarf | 0.80 | 0.1-0.4 | knit
+knit gloves | 0.65 | 0.1-0.4 | knit

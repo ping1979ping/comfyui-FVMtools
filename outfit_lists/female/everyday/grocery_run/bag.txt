@@ -1,0 +1,6 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+reusable shopping bag | 0.80 | 0.1-0.4 | canvas,cotton
+worn shoulder bag | 0.60 | 0.2-0.4 | canvas,leather
+small crossbody bag | 0.50 | 0.2-0.5 | polyester

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+remote controls on the table | 0.85 | 0.05-0.15 | worn rubber buttons
+mug on a coaster | 0.75 | 0.05-0.12 | tea-stained rim
+charging cable across the floor | 0.55 | 0.05-0.15 | tangled white cable
+open book left face down | 0.55 | 0.03-0.1 | bent spine
+bowl with a few crumbs | 0.5 | 0.03-0.1 | smeared glaze
+tissue box on the side table | 0.5 | 0.03-0.1 | dented cardboard
+child's drawing on the table | 0.45 | 0.03-0.1 | felt tip on paper
+headphones left on the arm | 0.45 | 0.03-0.1 | cracked ear pad
+glasses folded on the book | 0.5 | 0.02-0.08 | smudged lenses
+half-eaten packet of biscuits | 0.45 | 0.03-0.1 | rolled-down wrapper
+phone face down on the cushion | 0.55 | 0.02-0.08 | scratched case

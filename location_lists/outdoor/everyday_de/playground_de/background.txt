@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+playground with a climbing frame | 1.0 | 0.5-0.9 | weathered timber and rope
+hedge and trees around the edge | 0.85 | 0.3-0.6 | patchy foliage
+apartment blocks beyond | 0.65 | 0.2-0.5 | rendered facades
+football goal at the far end | 0.45 | 0.15-0.4 | bent metal frame
+path leading into the park | 0.6 | 0.2-0.5 | patched asphalt
+low fence around the area | 0.65 | 0.15-0.4 | painted timber rails
+sandpit at the far side | 0.55 | 0.2-0.5 | damp sand
+bare trees behind the frame | 0.6 | 0.25-0.55 | thin branches
+parked cars beyond the hedge | 0.4 | 0.15-0.4 | dusty roofs
+notice board at the entrance | 0.4 | 0.1-0.3 | faded park rules
+open grass area beside | 0.6 | 0.25-0.55 | worn patchy grass

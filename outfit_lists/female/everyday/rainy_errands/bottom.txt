@@ -1,0 +1,5 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+jeans with damp hems | 0.80 | 0.1-0.4 | denim
+practical trousers | 0.65 | 0.1-0.3 | softshell

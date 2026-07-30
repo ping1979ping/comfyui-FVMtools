@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+chopping board with vegetable scraps | 0.85 | 0.05-0.2 | knife-marked wood
+open spice jars | 0.7 | 0.05-0.15 | mismatched screw-top jars
+dish towel over the oven handle | 0.75 | 0.05-0.15 | faded checked cotton
+half-drunk mug of coffee | 0.7 | 0.05-0.15 | stained ceramic
+wooden spoon resting on the hob | 0.65 | 0.05-0.12 | scorched spoon end
+packet of pasta left open | 0.55 | 0.05-0.15 | torn plastic packaging
+bottle of oil beside the hob | 0.6 | 0.05-0.12 | greasy label
+knife block by the worktop | 0.5 | 0.05-0.15 | wooden slots
+shopping list under a magnet | 0.5 | 0.03-0.1 | biro on torn paper
+salt and pepper mills | 0.55 | 0.03-0.1 | worn wooden bodies
+sponge in the sink corner | 0.6 | 0.02-0.08 | frayed yellow sponge

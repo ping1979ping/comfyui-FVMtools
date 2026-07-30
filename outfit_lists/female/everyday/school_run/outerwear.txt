@@ -1,0 +1,6 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+padded winter coat | 0.70 | 0.2-0.4 | polyester
+zip fleece jacket | 0.70 | 0.1-0.3 | fleece
+light rain jacket | 0.55 | 0.1-0.3 | softshell

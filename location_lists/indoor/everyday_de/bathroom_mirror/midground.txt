@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+ceramic basin with taps | 1.0 | 0.2-0.5 | chipped white ceramic
+narrow shelf under the mirror | 0.8 | 0.15-0.4 | crowded glass shelf
+toilet beside the basin | 0.55 | 0.2-0.5 | white ceramic with a worn seat
+washing machine squeezed in | 0.4 | 0.2-0.45 | scuffed white enamel
+laundry basket in the corner | 0.6 | 0.15-0.35 | cracked plastic weave
+bath edge in the frame | 0.5 | 0.2-0.5 | stained enamel rim
+bin beside the basin | 0.5 | 0.05-0.2 | pedal bin with a liner
+stool holding folded towels | 0.4 | 0.1-0.3 | painted wooden top
+scales pushed against the wall | 0.4 | 0.05-0.2 | scratched glass top
+cabinet under the basin | 0.5 | 0.15-0.4 | swollen chipboard door
+bottle of cleaner behind the toilet | 0.35 | 0.05-0.15 | dusty trigger spray

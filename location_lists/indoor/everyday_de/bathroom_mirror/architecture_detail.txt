@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+strip light above the mirror | 0.8 | 0.05-0.2 | plain fluorescent tube
+tiled bathroom floor | 0.75 | 0.2-0.5 | small square tiles
+sealant line around the basin | 0.6 | 0.05-0.15 | discoloured silicone
+extractor grille in the wall | 0.5 | 0.03-0.12 | dusty plastic vent
+tile edge trim | 0.45 | 0.05-0.15 | plastic edging strip
+skirting tiles at the floor | 0.45 | 0.05-0.2 | grouted border
+pull cord for the light | 0.4 | 0.03-0.1 | greyed cord
+grout darkened in the corners | 0.55 | 0.05-0.2 | mildew-marked grout
+door lock with a worn catch | 0.35 | 0.03-0.1 | scratched chrome
+pipe boxing beside the basin | 0.4 | 0.1-0.25 | painted plywood
+limescale ring in the basin | 0.5 | 0.03-0.12 | chalky deposit

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+paper price tags on the rail | 0.85 | 0.05-0.15 | printed yellow labels
+empty cardboard on the floor | 0.55 | 0.05-0.15 | torn box
+promotional wobbler on a shelf | 0.5 | 0.03-0.1 | curled printed card
+receipt dropped in the aisle | 0.4 | 0.02-0.08 | curled thermal paper
+carrier bags stuffed in the trolley | 0.6 | 0.05-0.15 | crumpled plastic
+tin left on the wrong shelf | 0.45 | 0.03-0.1 | dusty lid
+shelf gap label for a missing item | 0.45 | 0.02-0.08 | orange printed strip
+loyalty card held in hand | 0.4 | 0.02-0.08 | scratched plastic
+shopping list on the trolley handle | 0.5 | 0.02-0.08 | biro on paper
+bottle cap on the floor | 0.35 | 0.02-0.06 | scratched plastic cap
+weighing scales at the aisle end | 0.35 | 0.05-0.15 | worn keypad

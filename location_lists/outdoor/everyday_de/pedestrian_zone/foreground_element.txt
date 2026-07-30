@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+shopping bag in each hand | 0.7 | 0.1-0.3 | printed carrier bags
+phone held up for directions | 0.5 | 0.05-0.2 | lit screen
+coat over the forearm | 0.5 | 0.1-0.3 | creased fabric
+pram handle in the near frame | 0.4 | 0.1-0.3 | worn grip
+paper bag from the bakery | 0.5 | 0.05-0.2 | crumpled paper
+sunglasses pushed up into the hair | 0.45 | 0.03-0.12 | scratched lenses
+purse held open in one hand | 0.4 | 0.05-0.15 | worn lining
+bag strap slipping off the shoulder | 0.45 | 0.1-0.3 | webbing strap
+takeaway cup in hand | 0.5 | 0.05-0.15 | printed sleeve
+stepping over the drainage channel | 0.35 | 0.1-0.25 | shoe mid-stride
+hair blown across the face | 0.4 | 0.05-0.2 | loose strands

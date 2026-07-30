@@ -1,0 +1,15 @@
+# fabric database
+# format: fabric_name | formality | family | weight
+
+cotton | 0.3 | natural | medium
+jersey | 0.2 | natural | light
+denim | 0.3 | natural | heavy
+fleece | 0.15 | synthetic | medium
+polyester | 0.25 | synthetic | light
+knit | 0.35 | natural | medium
+canvas | 0.2 | natural | medium
+corduroy | 0.35 | natural | heavy
+flannel | 0.3 | natural | medium
+softshell | 0.25 | synthetic | medium
+terry cloth | 0.15 | natural | medium
+ribbed cotton | 0.25 | natural | light

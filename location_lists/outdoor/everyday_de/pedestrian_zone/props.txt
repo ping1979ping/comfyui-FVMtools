@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+pigeons near a bin | 0.5 | 0.05-0.15 | scruffy feathers
+bin overflowing slightly | 0.5 | 0.05-0.15 | dented metal
+chalk price board outside a café | 0.55 | 0.05-0.2 | smudged chalk
+flyer trodden into the paving | 0.4 | 0.02-0.08 | dirty paper
+bicycle basket with a bag in it | 0.4 | 0.03-0.12 | wire basket
+menu stand by the tables | 0.45 | 0.05-0.15 | laminated card
+coins in a busker's case | 0.3 | 0.02-0.06 | dull metal
+shopping bags leaning on a bench | 0.5 | 0.05-0.2 | printed carrier bags
+cigarette bin on a wall | 0.35 | 0.02-0.08 | stained steel tube
+sale stickers in a window | 0.45 | 0.05-0.15 | bright printed circles
+dog lead tied to a rail | 0.3 | 0.02-0.08 | worn strap

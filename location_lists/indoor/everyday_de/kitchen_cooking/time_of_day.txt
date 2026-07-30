@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+morning light through the window | 0.9 | - | -
+flat late morning light | 0.85 | - | -
+grey overcast midday | 0.9 | - | -
+early afternoon with lights off | 0.8 | - | -
+late afternoon low sun | 0.85 | - | -
+early evening with a lamp on | 0.9 | - | -
+evening under the ceiling light | 0.85 | - | -
+dim light before bed | 0.6 | - | -
+harsh overhead light | 0.7 | - | -
+half dark with one light on | 0.55 | - | -

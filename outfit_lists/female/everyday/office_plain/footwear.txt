@@ -1,0 +1,6 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flat leather shoes | 0.80 | 0.3-0.6 | leather
+plain low ankle boots | 0.60 | 0.3-0.6 | leather
+clean white trainers | 0.45 | 0.2-0.4 | leather

@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+shopping trolley half full | 0.85 | 0.2-0.5 | scuffed steel basket
+pallet of boxed goods mid-aisle | 0.75 | 0.2-0.5 | shrink-wrapped cardboard
+stacked crates of drinks | 0.7 | 0.2-0.5 | plastic crates
+hand basket on the floor | 0.5 | 0.05-0.2 | red plastic handles
+roll cage left by the shelves | 0.5 | 0.2-0.45 | steel mesh sides
+shelf edge with price rails | 0.8 | 0.2-0.5 | printed paper strips
+another shopper further down | 0.55 | 0.15-0.4 | blurred coat
+pallet truck parked to one side | 0.4 | 0.15-0.35 | chipped yellow paint
+cardboard tray of tins | 0.6 | 0.1-0.3 | torn shelf-ready packaging
+wet floor sign mid-aisle | 0.35 | 0.1-0.3 | yellow folding plastic
+special offer bin | 0.5 | 0.15-0.4 | dented metal bin

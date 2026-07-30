@@ -1,0 +1,5 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+rain jacket with hood | 0.95 | 0.1-0.4 | softshell
+transparent rain cape | 0.30 | 0.1-0.3 | plastic

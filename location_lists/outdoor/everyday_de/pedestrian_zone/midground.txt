@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bike racks with locked bikes | 0.75 | 0.2-0.5 | rusted frames
+café tables outside a shop | 0.7 | 0.2-0.5 | folding metal furniture
+planted tub in the middle of the street | 0.65 | 0.1-0.3 | concrete tub
+bench along the paving | 0.6 | 0.15-0.4 | slatted timber
+market stall at the corner | 0.45 | 0.2-0.5 | striped canopy
+bin beside the bench | 0.6 | 0.05-0.2 | dented metal
+A-board with the day's offer | 0.6 | 0.05-0.2 | chalked board
+pram pushed along the street | 0.4 | 0.1-0.3 | worn fabric hood
+delivery trolley by a doorway | 0.4 | 0.1-0.3 | steel frame
+fountain surround in the square | 0.35 | 0.2-0.5 | wet stone rim
+street musician with a case open | 0.3 | 0.1-0.3 | worn instrument case

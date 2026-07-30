@@ -1,0 +1,6 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+flat sandals | 0.80 | 0.1-0.3 | leather
+canvas trainers | 0.70 | 0.1-0.3 | canvas
+simple flip-flops | 0.45 | 0.1-0.2 | rubber

@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+row of shop fronts | 1.0 | 0.5-0.9 | mixed signage and awnings
+paved pedestrian street | 0.95 | 0.4-0.8 | patterned block paving
+church tower further down | 0.45 | 0.15-0.4 | weathered stone
+upper floors above the shops | 0.7 | 0.3-0.6 | rendered facades with windows
+bakery window with trays | 0.5 | 0.2-0.5 | lit glass front
+pharmacy sign projecting out | 0.45 | 0.1-0.3 | illuminated green cross
+crowd further along the street | 0.6 | 0.2-0.5 | blurred coats
+department store entrance | 0.5 | 0.25-0.55 | glass doors
+street narrowing into an alley | 0.4 | 0.2-0.5 | shaded gap
+awnings pulled out over the paving | 0.5 | 0.2-0.5 | striped canvas
+banner strung across the street | 0.35 | 0.1-0.3 | printed vinyl
