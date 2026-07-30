@@ -645,3 +645,81 @@ class TestDegenerateInputs:
         assert quad is not None
         poly = _polygon_mask(quad, mask.shape)
         assert poly[mask > 0.5].all()
+
+
+class TestMaskShapeIsRespected:
+    """SAM3 returns silhouettes, not boxes. The glyph layer must follow them.
+
+    Measured before the fix: an ellipse, a circle and an irregular blob each had
+    20-27% of their own area painted OUTSIDE the mask, because only the bounding
+    quad was used. That puts a rectangular plate into the init latent where a
+    round object stands.
+    """
+
+    @staticmethod
+    def _ellipse(h=260, w=420):
+        m = np.zeros((h, w), np.float32)
+        cv2.ellipse(m, (210, 130), (170, 90), 0, 0, 360, 1.0, -1)
+        return m
+
+    @staticmethod
+    def _circle(h=260, w=420):
+        m = np.zeros((h, w), np.float32)
+        cv2.circle(m, (210, 130), 100, 1.0, -1)
+        return m
+
+    @staticmethod
+    def _blob(h=260, w=420):
+        m = np.zeros((h, w), np.float32)
+        pts = np.array([[40, 60], [300, 40], [380, 120], [350, 220],
+                        [120, 230], [60, 150]], np.int32)
+        cv2.fillPoly(m, [pts], 1.0)
+        return m
+
+    @pytest.mark.parametrize("shape", ["_ellipse", "_circle", "_blob"])
+    def test_no_ink_outside_the_mask(self, shape):
+        mask = getattr(self, shape)()
+        _, alpha = render_glyph_layer("HAUSMARKE", mask)
+        outside = alpha * (mask < 0.5)
+        assert float(outside.max()) == 0.0, \
+            f"{shape}: glyph layer paints outside the silhouette"
+
+    @pytest.mark.parametrize("shape", ["_ellipse", "_circle", "_blob"])
+    def test_still_covers_the_interior(self, shape):
+        """Clipping must not empty the layer out."""
+        mask = getattr(self, shape)()
+        _, alpha = render_glyph_layer("HAUSMARKE", mask)
+        inside = alpha[mask > 0.5]
+        assert float(inside.max()) > 0.9
+        assert float(inside.mean()) > 0.5
+
+    def test_circle_gets_horizontal_text_not_a_diagonal(self):
+        """A circle has no preferred direction; minAreaRect returns ~45 degrees.
+
+        Trusting that angle sets the text diagonally across a round sign.
+        """
+        quad = mask_quad(self._circle())
+        assert quad is not None
+        assert abs(quad_angle(quad)) < 5.0
+
+    def test_a_genuinely_rotated_sign_keeps_its_angle(self):
+        """The square-tolerance shortcut must not flatten real rotations."""
+        m = np.zeros((300, 300), np.float32)
+        cv2.rectangle(m, (60, 130), (240, 175), 1.0, -1)      # clearly oblong
+        rot = cv2.getRotationMatrix2D((150, 150), 25.0, 1.0)
+        m = cv2.warpAffine(m, rot, (300, 300))
+        assert abs(quad_angle(mask_quad(m))) == pytest.approx(25.0, abs=3.0)
+
+    def test_square_tolerance_can_be_disabled(self):
+        quad = mask_quad(self._circle(), square_tolerance=0.0)
+        assert quad is not None  # raw angle kept, whatever it is
+
+    def test_soft_mask_edges_survive_the_clip(self):
+        """A 0-255 mask must be normalised before clamping, or soft edges snap to 1."""
+        m = np.zeros((200, 300), np.float32)
+        cv2.rectangle(m, (40, 60), (260, 140), 255.0, -1)
+        m = cv2.GaussianBlur(m, (31, 31), 0)
+        _, alpha = render_glyph_layer("TEST", m)
+        edge = alpha[(m > 20) & (m < 200)]
+        if edge.size:
+            assert float(edge.max()) < 1.0, "soft mask edge was clamped to full opacity"

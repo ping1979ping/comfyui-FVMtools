@@ -152,6 +152,13 @@ verkorkste Schrift klar lesbar unter der neuen stehen — und landet damit im
 Init-Latent, also genau der Slop, den wir loswerden wollen. Nur senken, wenn du die
 alte Oberflächenschattierung bewusst mitnehmen willst.
 
+Die Glyph-Ebene folgt der **SAM3-Silhouette**, nicht ihrem Begrenzungsrechteck. Bei
+runden Schildern, gewölbten Flaschenetiketten oder eingerissenen Plakaten würde ein
+Rechteck 20–27 % über die Objektfläche hinausragen — und der Sampler bekäme ein
+rechteckiges Schild ins Init-Latent, wo ein rundes steht. Ist die Maske annähernd
+quadratisch, wird der Winkel aus `minAreaRect` verworfen: ein Kreis hat keine
+Vorzugsrichtung, OpenCV liefert dann willkürliche 45° und der Text stünde diagonal.
+
 `glyph_autocolor` liest Schrift- und Grundfarbe aus dem Originalschild, damit das
 Ergebnis sein Farbschema behält. Die Trennung nutzt keinen einfachen Median — auf
 einem echten Schild decken die Buchstaben nur 10–15 % der Fläche, da läge der Median

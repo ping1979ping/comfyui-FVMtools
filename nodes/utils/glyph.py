@@ -101,6 +101,11 @@ MIN_FONT_SIZE = 4
 LINE_GAP_RATIO = 0.15
 DEFAULT_PLATE_RGB = (128, 128, 128)
 DEFAULT_INK_RGB = (255, 255, 255)
+
+# A fitted rectangle this close to square carries no usable rotation: a round
+# sign has no preferred direction, so minAreaRect returns an arbitrary angle
+# (usually 45 degrees). Above this tolerance the angle is trusted.
+SQUARE_TOLERANCE = 0.12
 MIN_QUAD_EDGE = 2.0
 
 # ──── Colour recovery ────
@@ -332,11 +337,17 @@ def _order_quad(points: np.ndarray) -> np.ndarray:
     return np.roll(clockwise, -start, axis=0).astype(np.float32)
 
 
-def mask_quad(mask_2d) -> np.ndarray:
+def mask_quad(mask_2d, square_tolerance: float = SQUARE_TOLERANCE) -> np.ndarray:
     """Fit the tightest rotated rectangle around a mask and return its 4 corners.
 
     Args:
         mask_2d: [H, W] mask, values in [0,1] (or 0-255). numpy array or torch tensor.
+        square_tolerance: when the fitted rectangle is this close to square, its
+            rotation carries no information and is discarded in favour of an
+            axis-aligned box. A circular mask has no preferred direction, so
+            ``minAreaRect`` returns an arbitrary angle — typically 45 degrees,
+            which would set the text diagonally across a round sign. Pass 0 to
+            keep the raw angle.
 
     Returns:
         float32 [4, 2] array of (x, y) corners ordered top-left, top-right,
@@ -359,6 +370,13 @@ def mask_quad(mask_2d) -> np.ndarray:
     (rect_w, rect_h) = rect[1]
     if rect_w < 1.0 or rect_h < 1.0:
         return None
+
+    if square_tolerance > 0:
+        longest, shortest = max(rect_w, rect_h), min(rect_w, rect_h)
+        if longest > 0 and (longest - shortest) / longest <= square_tolerance:
+            x, y, w, h = cv2.boundingRect(points)
+            return _order_quad(np.array(
+                [[x, y], [x + w, y], [x + w, y + h], [x, y + h]], dtype=np.float32))
 
     return _order_quad(cv2.boxPoints(rect))
 
@@ -713,7 +731,19 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
         font_path=font_path, fill=fill, bg=plate,
         margin_ratio=margin_ratio, uppercase=uppercase,
     )
-    return warp_to_quad(block, quad, (out_h, out_w))
+    rgb, alpha = warp_to_quad(block, quad, (out_h, out_w))
+
+    # Clip to the mask itself, not just its bounding quad. SAM3 returns real
+    # silhouettes — a round sign, a curved bottle label, a torn poster — and the
+    # quad always overshoots them (measured: 20-27% of the object's own area for
+    # ellipses, circles and irregular blobs). Painting outside the silhouette puts
+    # a rectangular plate into the init latent where a round object stands, so the
+    # sampler is conditioned on geometry that is not in the picture.
+    clip = arr.astype(np.float32)
+    if float(clip.max()) > 1.0:          # 0-255 mask; normalise BEFORE clamping,
+        clip = clip / 255.0              # otherwise soft edges collapse to 1.0
+    alpha = alpha * np.clip(clip, 0.0, 1.0)
+    return rgb, alpha
 
 
 def composite_glyph(base_rgb: np.ndarray, glyph_rgb: np.ndarray, alpha: np.ndarray,
