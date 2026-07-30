@@ -635,6 +635,40 @@ def normalize_proposal(obj, fallback_text: str = "") -> dict:
 
 # ──── High-level region call ────
 
+# Function words carry no subject, so banning them would only cripple the
+# grammar of the next answer without adding any variety.
+_FILLER_WORDS = frozenset("""
+the a an and or of on in at to for with from by is are be this that these those
+der die das den dem des ein eine einer eines und oder von auf in an zu fur mit
+aus bei ist sind sein diese dieser dieses im am vom zum zur
+""".split())
+
+
+def spent_words(texts, limit: int = 20) -> list:
+    """Content words already used, worst offenders first, upper-cased.
+
+    Ordered by how often a word has been reused, then by recency. With many
+    regions the list hits its limit, and a purely recent-first order drops
+    exactly the word that keeps coming back - "COFFEE" falls out of the window
+    while eight one-off words stay in, so the model returns to it.
+
+    Prices and numbers are dropped: banning "3.50" does nothing useful, and the
+    model reliably sidesteps it by writing 4.50 while keeping the same phrase.
+    """
+    counts, order = {}, {}
+    for position, text in enumerate(list(texts or [])):
+        for raw in re.split(r"[^0-9A-Za-zÄÖÜäöüß\-]+", str(text)):
+            word = raw.strip("-").upper()
+            if len(word) < 3 or word.lower() in _FILLER_WORDS:
+                continue
+            if any(ch.isdigit() for ch in word):
+                continue
+            counts[word] = counts.get(word, 0) + 1
+            order[word] = position
+    ranked = sorted(counts, key=lambda w: (-counts[w], -order[w]))
+    return ranked[:limit]
+
+
 def build_user_prompt(class_name: str = "sign", class_instruction: str = "",
                       scene_hint: str = "", language: str = "auto",
                       neighbor_count: int = 0, has_scene: bool = False,
@@ -667,14 +701,24 @@ def build_user_prompt(class_name: str = "sign", class_instruction: str = "",
 
     used = [t.strip() for t in (avoid_texts or []) if t and t.strip()]
     if used:
-        seen = list(dict.fromkeys(used))[-12:]      # de-duplicate, keep the recent ones
-        listed = ", ".join(f'"{t}"' for t in seen)
-        lines.append(
-            f"Other text in this same picture already reads: {listed}. "
-            f"Your answer must be clearly different from all of those - a "
-            f"different name or wording, not a variation, a translation or a "
-            f"reordering of them. Matching their language and styling is right; "
-            f"repeating their words is not.")
+        seen = list(dict.fromkeys(used))
+        # Listing whole phrases backfires once there are many of them: twelve
+        # variations of "Coffee Break" in the prompt prime the model towards
+        # exactly that phrase. Condense to the content words instead - a short
+        # ban list is a constraint, a long quotation is a suggestion.
+        banned = spent_words(seen)
+        if banned:
+            lines.append(
+                "These words are already used up in this picture and are now "
+                "forbidden: " + ", ".join(banned) + ". Do not use any of them, "
+                "in any spelling, language or word form. Pick a different "
+                "subject entirely - not a variation on the same idea, not the "
+                "same phrase with another number or price.")
+        else:
+            lines.append(
+                "Other text in this picture already reads: "
+                + ", ".join(f'"{t}"' for t in seen[-3:])
+                + ". Your answer must be clearly different.")
 
     lang = (language or "auto").strip()
     if not lang or lang.lower() == "auto":

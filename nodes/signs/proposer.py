@@ -10,6 +10,9 @@ Manual overrides always win over the model. With LM Studio unreachable the node
 still produces usable output from the fallback list instead of failing the run.
 """
 
+import difflib
+import re
+
 import numpy as np
 import torch
 
@@ -22,6 +25,42 @@ try:  # relative inside ComfyUI's loader, absolute under pytest
     from ...core.signs.classes import get_class
 except ImportError:
     from core.signs.classes import get_class
+
+
+def _content_words(text):
+    """Subject-carrying words of a proposal, upper-cased. Numbers dropped."""
+    words = set()
+    for raw in re.split(r"[^0-9A-Za-zÄÖÜäöüß\-]+", str(text or "")):
+        w = raw.strip("-").upper()
+        if len(w) >= 3 and not any(c.isdigit() for c in w):
+            words.add(w)
+    return words
+
+
+def is_too_similar(text, existing, word_overlap=0.6, string_ratio=0.75):
+    """Is this proposal a re-run of one already handed out?
+
+    Two checks, because the model repeats itself in two different ways: it
+    reuses the same subject with a new number ("Coffee Break $3.50" after
+    "Coffee Break $5"), which the word overlap catches, and it reuses the whole
+    phrase with different punctuation, which the string ratio catches.
+    """
+    candidate = _content_words(text)
+    flat = "".join(str(text).upper().split())
+    if not flat:
+        return False
+    for other in existing:
+        other_flat = "".join(str(other).upper().split())
+        if not other_flat:
+            continue
+        if difflib.SequenceMatcher(None, flat, other_flat).ratio() >= string_ratio:
+            return True
+        other_words = _content_words(other)
+        if candidate and other_words:
+            shared = len(candidate & other_words)
+            if shared / min(len(candidate), len(other_words)) >= word_overlap:
+                return True
+    return False
 
 
 def _parse_overrides(spec):
@@ -125,6 +164,12 @@ class SignTextProposer:
                     "tooltip": "Passed through to LM Studio for reproducible proposals"}),
                 "one_call_per_cluster": ("BOOLEAN", {"default": True,
                     "tooltip": "ON: only the cluster representative is sent; siblings inherit its text."}),
+                "variety_retries": ("INT", {"default": 2, "min": 0, "max": 5, "step": 1,
+                    "tooltip": "How often to ask again when the answer repeats text already used\n"
+                               "elsewhere in this picture. 0 = accept the first answer.\n\n"
+                               "The ban list alone does not always land — the model will return\n"
+                               "the same subject with a different price. Each retry says so\n"
+                               "explicitly and uses a different seed."}),
                 "avoid_repeats": ("BOOLEAN", {"default": True,
                     "tooltip": "Tell the model which wording it already used elsewhere in this\n"
                                "picture, so similar-looking motifs get different text.\n\n"
@@ -171,7 +216,7 @@ class SignTextProposer:
     def execute(self, sign_data, image, base_url=DEFAULT_BASE_URL, model_id="", enabled=True,
                 context_mode="crop+scene", scene_hint="", language="auto",
                 temperature=DEFAULT_TEMPERATURE, max_tokens=256, seed=0, one_call_per_cluster=True,
-                avoid_repeats=True,
+                avoid_repeats=True, variety_retries=2,
                 skip_legible=False, timeout=DEFAULT_TIMEOUT, manual_override="",
                 fallback_texts="", system_prompt=None, class_instructions=""):
 
@@ -218,6 +263,7 @@ class SignTextProposer:
         cluster_cache = {}
         fb_cursor = 0
         made, inherited, failed = 0, 0, 0
+        retried, duplicates = 0, 0
         # Wording already used in this picture. Keyed by cluster so siblings can
         # still share a text — only regions that were NOT grouped are pushed apart.
         used_texts = {}          # cluster_id (or -1-index) -> text
@@ -274,23 +320,49 @@ class SignTextProposer:
                 avoid = ([t for k, t in used_texts.items() if k != own_key]
                          if avoid_repeats else None)
 
-                proposal = propose_text(
-                    avoid_texts=avoid,
-                    crop_rgb=region.get("crop"),
-                    scene_rgb=scene,
-                    neighbor_crops=neighbors,
-                    class_name=cls_name,
-                    scene_hint=scene_hint,
-                    language=language,
-                    base_url=base_url,
-                    model_id=model_id,
-                    system_prompt=system_prompt or DEFAULT_SYSTEM_PROMPT,
-                    class_instruction=class_instr.get(cls_name, get_class(cls_name)["vlm_instruction"]),
-                    temperature=temperature,
-                    max_tokens=max_tokens,
-                    seed=seed + i,
-                    timeout=timeout,
-                )
+                base_instruction = class_instr.get(
+                    cls_name, get_class(cls_name)["vlm_instruction"])
+                others = [t for k, t in used_texts.items() if k != own_key]
+
+                # Ask again when the answer is a re-run of one already handed
+                # out. The ban list alone does not always land: the model happily
+                # returns the same subject with a different price.
+                attempts = 1 + (max(0, variety_retries) if avoid_repeats and others else 0)
+                for attempt in range(attempts):
+                    extra = ""
+                    if attempt:
+                        extra = (" You already suggested something too close to text elsewhere "
+                                 "in this picture. Change the SUBJECT completely - a different "
+                                 "kind of notice about a different thing, not the same message "
+                                 "reworded or repriced.")
+                    proposal = propose_text(
+                        avoid_texts=avoid,
+                        crop_rgb=region.get("crop"),
+                        scene_rgb=scene,
+                        neighbor_crops=neighbors,
+                        class_name=cls_name,
+                        scene_hint=scene_hint,
+                        language=language,
+                        base_url=base_url,
+                        model_id=model_id,
+                        system_prompt=system_prompt or DEFAULT_SYSTEM_PROMPT,
+                        class_instruction=base_instruction + extra,
+                        temperature=temperature,
+                        max_tokens=max_tokens,
+                        seed=seed + i + attempt * 7919,
+                        timeout=timeout,
+                    )
+                    candidate = (proposal.get("text") or "").strip()
+                    if not candidate or not others:
+                        break
+                    if not is_too_similar(candidate, others):
+                        break
+                    if attempt < attempts - 1:
+                        retried += 1
+                        report.append(f"  #{i + 1} {candidate!r} repeats earlier text — asking again")
+                    else:
+                        duplicates += 1
+                        report.append(f"  #{i + 1} still repetitive after {attempts} tries: {candidate!r}")
                 if proposal.get("ok") and proposal.get("text", "").strip():
                     made += 1
                     report.append(f"  #{i + 1} {cls_name}: {proposal['text']!r} "
@@ -331,7 +403,12 @@ class SignTextProposer:
                     cluster_cache.setdefault(cid, proposal)
                 used_texts.setdefault(own_key, proposal["text"].strip())
 
-        report.append(f"Summary: {made} from the model, {inherited} inherited, {failed} failed")
+        summary = f"Summary: {made} from the model, {inherited} inherited, {failed} failed"
+        if retried:
+            summary += f", {retried} re-asked for variety"
+        if duplicates:
+            summary += f", {duplicates} still repetitive"
+        report.append(summary)
 
         # Tab-separated so it stays readable in a text preview and still splits
         # cleanly if anyone parses it. style is included because it is what

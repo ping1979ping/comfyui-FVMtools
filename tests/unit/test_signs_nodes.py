@@ -362,10 +362,15 @@ class TestAvoidRepeats:
         seen = []
         counter = {"n": 0}
 
+        # Distinct on purpose: 'TEXT1'/'TEXT2' differ by one character and the
+        # duplicate detector rightly treats them as the same answer.
+        words = ["ALPHA", "BRAVO", "CHARLIE", "DELTA", "ECHO", "FOXTROT"]
+
         def fake_propose(**kwargs):
             seen.append(list(kwargs.get("avoid_texts") or []))
             counter["n"] += 1
-            return {"text": f"TEXT{counter['n']}", "style": "", "font_hint": "",
+            return {"text": words[(counter["n"] - 1) % len(words)],
+                    "style": "", "font_hint": "",
                     "legible_original": 0.0, "confidence": 1.0,
                     "ok": True, "error": None, "source": "vlm"}
 
@@ -380,8 +385,8 @@ class TestAvoidRepeats:
     def test_each_call_learns_the_previous_answers(self, monkeypatch):
         _, seen = self._run(self._regions(3), monkeypatch, avoid_repeats=True)
         assert seen[0] == []
-        assert seen[1] == ["TEXT1"]
-        assert sorted(seen[2]) == ["TEXT1", "TEXT2"]
+        assert seen[1] == ["ALPHA"]
+        assert sorted(seen[2]) == ["ALPHA", "BRAVO"]
 
     def test_flag_off_sends_nothing(self, monkeypatch):
         _, seen = self._run(self._regions(3), monkeypatch, avoid_repeats=False)
