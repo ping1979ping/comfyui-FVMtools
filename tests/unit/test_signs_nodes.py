@@ -484,6 +484,50 @@ class TestRegressions:
                                     base_url="http://127.0.0.1:9", temperature=0.6)
         assert "above the measured cliff" in report
 
+    def test_proposer_does_not_mutate_the_incoming_sign_data(self):
+        """ComfyUI hands the same cached object to every downstream node.
+
+        Two Proposers on one Selector must not overwrite each other's proposals,
+        which is what in-place mutation would cause.
+        """
+        node = SignTextProposer()
+        region = {
+            "index": 0, "class": "sign", "batch_index": 0, "bbox": [0, 0, 40, 40],
+            "mask": _rect_mask(), "crop": np.zeros((64, 64, 3), dtype=np.uint8),
+            "cluster_id": -1, "too_small": False,
+            "slop": {"verdict": "slop", "score": 0.9, "ocr_text": ""},
+            "proposal": None,
+        }
+        upstream = {"regions": [region], "image_shape": (256, 256), "batch_size": 1}
+        image = torch.rand(1, 256, 256, 3)
+
+        out_a, _, _ = node.execute(sign_data=upstream, image=image, enabled=False,
+                                   fallback_texts="sign: FIRST")
+        assert region["proposal"] is None, "the upstream region must be untouched"
+        assert upstream["regions"][0]["proposal"] is None
+
+        out_b, _, _ = node.execute(sign_data=upstream, image=image, enabled=False,
+                                   fallback_texts="sign: SECOND")
+        assert out_a["regions"][0]["proposal"]["text"] == "FIRST", \
+            "the second run must not reach back into the first run's result"
+        assert out_b["regions"][0]["proposal"]["text"] == "SECOND"
+
+    def test_proposer_shares_heavy_values_by_reference(self):
+        """The copy must stay shallow — masks and crops are large."""
+        node = SignTextProposer()
+        mask = _rect_mask()
+        crop = np.zeros((64, 64, 3), dtype=np.uint8)
+        region = {
+            "index": 0, "class": "sign", "batch_index": 0, "bbox": [0, 0, 40, 40],
+            "mask": mask, "crop": crop, "cluster_id": -1, "too_small": False,
+            "slop": {"verdict": "slop", "score": 0.9, "ocr_text": ""}, "proposal": None,
+        }
+        out, _, _ = node.execute(
+            sign_data={"regions": [region], "image_shape": (256, 256), "batch_size": 1},
+            image=torch.rand(1, 256, 256, 3), enabled=False, fallback_texts="sign: X")
+        assert out["regions"][0]["mask"] is mask
+        assert out["regions"][0]["crop"] is crop
+
     def test_proposer_stays_quiet_at_the_safe_temperature(self):
         from nodes.utils.lmstudio_client import DEFAULT_TEMPERATURE
         node = SignTextProposer()

@@ -164,7 +164,13 @@ class SignTextProposer:
                 skip_legible=False, timeout=DEFAULT_TIMEOUT, manual_override="",
                 fallback_texts="", system_prompt=None, class_instructions=""):
 
-        regions = sign_data.get("regions", []) if isinstance(sign_data, dict) else []
+        # Shallow-copy each region before writing proposals into it. ComfyUI hands
+        # every downstream node the SAME cached object, so mutating in place would
+        # let two Proposers on one Selector overwrite each other's texts. The heavy
+        # values (mask, crop) stay shared by reference — nothing mutates them.
+        source_regions = sign_data.get("regions", []) if isinstance(sign_data, dict) else []
+        regions = [dict(r) for r in source_regions]
+        sign_data = {**sign_data, "regions": regions} if isinstance(sign_data, dict) else sign_data
         overrides = _parse_overrides(manual_override)
         fb_keyed, fb_plain = _parse_fallbacks(fallback_texts)
         class_instr = {}

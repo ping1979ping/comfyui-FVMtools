@@ -88,6 +88,14 @@ Ladenzeile in sich stimmig.
 
 **Rangfolge:** `manual_override` > Modellvorschlag > `fallback_texts` > vorhandener OCR-Text.
 
+Die Texte reisen im `SIGN_DATA` weiter: der Proposer legt in jede Region ein
+`proposal`-Dict (`text`, `style`, `font_hint`, `legible_original`, `confidence`,
+`source`), aus dem der Detailer den Zieltext, den Stil für den Prompt und den
+Schriftschnitt zieht. Der Proposer **kopiert** die Regionen dabei, statt das
+eingehende `SIGN_DATA` zu verändern — sonst würden zwei Proposer am selben Selector
+sich gegenseitig überschreiben, weil ComfyUI allen Abnehmern dasselbe Objekt reicht.
+Wer eigene Nodes anschließt, muss also die **zurückgegebenen** Regionen lesen.
+
 `manual_override` nutzt die Nummern aus dem Preview-Bild:
 
 ```
