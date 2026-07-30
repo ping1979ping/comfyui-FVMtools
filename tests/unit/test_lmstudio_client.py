@@ -722,3 +722,48 @@ class TestModuleContract:
         assert "import requests" not in source
         assert "custom_nodes" not in source
         del sys  # keep flake-ish linters quiet
+
+
+class TestAvoidTexts:
+    """Each region is its own request, so the model has no memory of its earlier
+    answers. Measured on four near-identical shopfronts: 1/4 distinct texts
+    without this constraint, 4/4 with it.
+    """
+
+    def test_listed_texts_appear_in_the_prompt(self):
+        p = lc.build_user_prompt(avoid_texts=["BAECKEREI", "APOTHEKE"])
+        assert "BAECKEREI" in p and "APOTHEKE" in p
+        assert "must be clearly different" in p
+
+    def test_no_line_added_without_any(self):
+        for empty in (None, [], ["", "   "]):
+            assert "already reads" not in lc.build_user_prompt(avoid_texts=empty)
+
+    def test_duplicates_collapse(self):
+        p = lc.build_user_prompt(avoid_texts=["OPEN", "OPEN", "OPEN"])
+        assert p.count('"OPEN"') == 1
+
+    def test_long_lists_are_capped(self):
+        many = [f"TEXT{i}" for i in range(40)]
+        p = lc.build_user_prompt(avoid_texts=many)
+        listed = sum(1 for t in many if f'"{t}"' in p)
+        assert listed <= 12, "an unbounded list would crowd out the actual instructions"
+        assert "TEXT39" in p, "the most recent entries are the ones worth keeping"
+
+    def test_the_anti_transcription_rule_still_comes_last(self):
+        """The recency slot must not be taken over by the avoid list."""
+        p = lc.build_user_prompt(avoid_texts=["OPEN"])
+        assert "gibberish" in p.splitlines()[-1].lower() or \
+               "transcribe" in p.splitlines()[-1].lower()
+
+    def test_propose_text_passes_it_through(self, monkeypatch):
+        captured = {}
+
+        def fake_chat(*args, **kwargs):
+            captured["prompt"] = kwargs.get("user_prompt") or args[3]
+            return {"ok": True, "content": '{"text":"NEU"}', "error": None, "raw": None}
+
+        monkeypatch.setattr("nodes.utils.lmstudio_client.chat_vision", fake_chat)
+        lc.propose_text(crop_rgb=np.zeros((8, 8, 3), np.uint8),
+                     avoid_texts=["SCHON VERGEBEN"])
+        assert "SCHON VERGEBEN" in captured["prompt"]

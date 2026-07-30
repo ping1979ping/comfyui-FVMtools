@@ -337,6 +337,80 @@ class TestSurfaceControl:
         assert spread < 0.10, "a grey source must stay neutral when nothing is forced"
 
 
+class TestAvoidRepeats:
+    """Similar motifs must not all get the same text.
+
+    Measured on four near-identical shopfronts against the real model:
+    1/4 distinct texts with the flag off, 4/4 with it on.
+    """
+
+    def _regions(self, n=3, cluster=-1):
+        out = []
+        for i in range(n):
+            out.append({
+                "index": i, "class": "sign", "batch_index": 0,
+                "bbox": [i * 50, 0, i * 50 + 40, 40], "mask": _rect_mask(),
+                "crop": np.zeros((64, 64, 3), dtype=np.uint8),
+                "cluster_id": cluster, "too_small": False,
+                "slop": {"verdict": "slop", "score": 0.9, "ocr_text": ""},
+                "proposal": None,
+            })
+        return out
+
+    def _run(self, regions, monkeypatch, **kw):
+        """Capture the avoid_texts handed to each call."""
+        seen = []
+        counter = {"n": 0}
+
+        def fake_propose(**kwargs):
+            seen.append(list(kwargs.get("avoid_texts") or []))
+            counter["n"] += 1
+            return {"text": f"TEXT{counter['n']}", "style": "", "font_hint": "",
+                    "legible_original": 0.0, "confidence": 1.0,
+                    "ok": True, "error": None, "source": "vlm"}
+
+        monkeypatch.setattr("nodes.signs.proposer.propose_text", fake_propose)
+        monkeypatch.setattr("nodes.signs.proposer.probe",
+                            lambda *a, **k: {"reachable": True, "models": [], "error": None})
+        node = SignTextProposer()
+        data = {"regions": regions, "image_shape": (256, 256), "batch_size": 1}
+        out, _, _ = node.execute(sign_data=data, image=torch.rand(1, 256, 256, 3), **kw)
+        return out, seen
+
+    def test_each_call_learns_the_previous_answers(self, monkeypatch):
+        _, seen = self._run(self._regions(3), monkeypatch, avoid_repeats=True)
+        assert seen[0] == []
+        assert seen[1] == ["TEXT1"]
+        assert sorted(seen[2]) == ["TEXT1", "TEXT2"]
+
+    def test_flag_off_sends_nothing(self, monkeypatch):
+        _, seen = self._run(self._regions(3), monkeypatch, avoid_repeats=False)
+        assert all(s == [] for s in seen)
+
+    def test_cluster_siblings_are_not_pushed_apart(self, monkeypatch):
+        """Within a cluster the SAME text is the point — only strangers differ."""
+        _, seen = self._run(self._regions(3, cluster=7), monkeypatch,
+                            avoid_repeats=True, one_call_per_cluster=False)
+        for s in seen:
+            assert s == [], "a sibling must not be told to avoid its own cluster's text"
+
+    def test_manual_overrides_join_the_avoid_list(self, monkeypatch):
+        """Otherwise the model proposes exactly what you just typed next door."""
+        _, seen = self._run(self._regions(2), monkeypatch,
+                            avoid_repeats=True, manual_override="1: ACHTUNG")
+        assert seen and "ACHTUNG" in seen[0]
+
+    def test_kept_legible_text_joins_the_avoid_list(self, monkeypatch):
+        regions = self._regions(2)
+        regions[0]["slop"] = {"verdict": "clean", "score": 0.1, "ocr_text": "BAHNHOF"}
+        _, seen = self._run(regions, monkeypatch, avoid_repeats=True, skip_legible=True)
+        assert seen and "BAHNHOF" in seen[0]
+
+    def test_default_is_on(self):
+        spec = SignTextProposer.INPUT_TYPES()["required"]["avoid_repeats"]
+        assert spec[0] == "BOOLEAN" and spec[1]["default"] is True
+
+
 class TestStyleIsVisible:
     """style is what carries the surface into the diffusion prompt, so it has to
     be readable in the node's own output — otherwise an odd render is unexplainable.

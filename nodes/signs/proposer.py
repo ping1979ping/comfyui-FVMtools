@@ -125,6 +125,16 @@ class SignTextProposer:
                     "tooltip": "Passed through to LM Studio for reproducible proposals"}),
                 "one_call_per_cluster": ("BOOLEAN", {"default": True,
                     "tooltip": "ON: only the cluster representative is sent; siblings inherit its text."}),
+                "avoid_repeats": ("BOOLEAN", {"default": True,
+                    "tooltip": "Tell the model which wording it already used elsewhere in this\n"
+                               "picture, so similar-looking motifs get different text.\n\n"
+                               "Each region is a separate request — without this the model has no\n"
+                               "memory of its own answers and returns the same name for every\n"
+                               "bottle on a shelf. Raising temperature would also break the tie,\n"
+                               "but brings back transcription of the original gibberish, so the\n"
+                               "variety comes from a constraint instead.\n\n"
+                               "Cluster siblings still share their text — this only separates\n"
+                               "regions that were NOT grouped together."}),
                 "skip_legible": ("BOOLEAN", {"default": False,
                     "tooltip": "ON: regions the selector judged already legible are left untouched."}),
                 "timeout": ("INT", {"default": DEFAULT_TIMEOUT, "min": 5, "max": 600, "step": 5}),
@@ -161,6 +171,7 @@ class SignTextProposer:
     def execute(self, sign_data, image, base_url=DEFAULT_BASE_URL, model_id="", enabled=True,
                 context_mode="crop+scene", scene_hint="", language="auto",
                 temperature=DEFAULT_TEMPERATURE, max_tokens=256, seed=0, one_call_per_cluster=True,
+                avoid_repeats=True,
                 skip_legible=False, timeout=DEFAULT_TIMEOUT, manual_override="",
                 fallback_texts="", system_prompt=None, class_instructions=""):
 
@@ -207,6 +218,9 @@ class SignTextProposer:
         cluster_cache = {}
         fb_cursor = 0
         made, inherited, failed = 0, 0, 0
+        # Wording already used in this picture. Keyed by cluster so siblings can
+        # still share a text — only regions that were NOT grouped are pushed apart.
+        used_texts = {}          # cluster_id (or -1-index) -> text
 
         for i, region in enumerate(regions):
             cls_name = region.get("class", "sign")
@@ -217,6 +231,10 @@ class SignTextProposer:
                     "legible_original": 0.0, "confidence": 1.0,
                     "ok": True, "error": None, "source": "manual",
                 }
+                # A hand-set text is still text in this picture — the model must
+                # not propose the same thing for the region next to it.
+                if overrides[i].strip():
+                    used_texts.setdefault(f"manual{i}", overrides[i].strip())
                 report.append(f"  #{i + 1} manual override: {overrides[i]!r}")
                 continue
 
@@ -226,6 +244,9 @@ class SignTextProposer:
                     "legible_original": 1.0, "confidence": 1.0,
                     "ok": True, "error": None, "source": "kept",
                 }
+                kept_text = region.get("slop", {}).get("ocr_text", "").strip()
+                if kept_text:
+                    used_texts.setdefault(f"kept{i}", kept_text)
                 report.append(f"  #{i + 1} already legible — kept")
                 continue
 
@@ -241,13 +262,20 @@ class SignTextProposer:
                 continue
 
             proposal = None
+            own_key = cid if cid >= 0 else f"solo{i}"
             if use_model:
                 scene = scene_rgb if context_mode != "crop_only" else None
                 neighbors = None
                 if context_mode == "crop+scene+neighbors":
                     neighbors = [n["crop"] for n in self._neighbors(regions, region)]
 
+                # Everything already used in this picture, except this region's
+                # own cluster — siblings are meant to match, strangers are not.
+                avoid = ([t for k, t in used_texts.items() if k != own_key]
+                         if avoid_repeats else None)
+
                 proposal = propose_text(
+                    avoid_texts=avoid,
                     crop_rgb=region.get("crop"),
                     scene_rgb=scene,
                     neighbor_crops=neighbors,
@@ -298,8 +326,10 @@ class SignTextProposer:
             # Only seed the cluster cache with a usable text. Caching an empty
             # proposal would make every sibling inherit the failure instead of
             # getting its own attempt.
-            if cid >= 0 and proposal.get("text", "").strip():
-                cluster_cache.setdefault(cid, proposal)
+            if proposal.get("text", "").strip():
+                if cid >= 0:
+                    cluster_cache.setdefault(cid, proposal)
+                used_texts.setdefault(own_key, proposal["text"].strip())
 
         report.append(f"Summary: {made} from the model, {inherited} inherited, {failed} failed")
 

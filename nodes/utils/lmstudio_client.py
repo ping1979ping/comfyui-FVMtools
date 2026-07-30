@@ -637,8 +637,18 @@ def normalize_proposal(obj, fallback_text: str = "") -> dict:
 
 def build_user_prompt(class_name: str = "sign", class_instruction: str = "",
                       scene_hint: str = "", language: str = "auto",
-                      neighbor_count: int = 0, has_scene: bool = False) -> str:
-    """Compose the per-region user message that accompanies the images."""
+                      neighbor_count: int = 0, has_scene: bool = False,
+                      avoid_texts=None) -> str:
+    """Compose the per-region user message that accompanies the images.
+
+    Args:
+        avoid_texts: wording already used elsewhere in this picture. Each region
+            is a separate request, so without this the model has no memory of its
+            own earlier answers and returns the same words for similar-looking
+            motifs. Raising the temperature would fix the repetition but brings
+            back transcription of the original gibberish, so the variety has to
+            come from a constraint instead of from sampling.
+    """
     lines = [
         f"Region class: {class_name or 'sign'}.",
         "The lettering in this region was produced by an image generator and is "
@@ -654,6 +664,17 @@ def build_user_prompt(class_name: str = "sign", class_instruction: str = "",
         lines.append(
             f"Scene context (setting, language and style only — this does NOT "
             f"tell you the letters): {scene_hint.strip()}")
+
+    used = [t.strip() for t in (avoid_texts or []) if t and t.strip()]
+    if used:
+        seen = list(dict.fromkeys(used))[-12:]      # de-duplicate, keep the recent ones
+        listed = ", ".join(f'"{t}"' for t in seen)
+        lines.append(
+            f"Other text in this same picture already reads: {listed}. "
+            f"Your answer must be clearly different from all of those - a "
+            f"different name or wording, not a variation, a translation or a "
+            f"reordering of them. Matching their language and styling is right; "
+            f"repeating their words is not.")
 
     lang = (language or "auto").strip()
     if not lang or lang.lower() == "auto":
@@ -694,7 +715,7 @@ def propose_text(crop_rgb, scene_rgb=None, neighbor_crops=None,
                  timeout: float = DEFAULT_TIMEOUT,
                  extra_options: dict | None = None,
                  max_image_size: int = DEFAULT_MAX_IMAGE_SIZE,
-                 fallback_text: str = "") -> dict:
+                 fallback_text: str = "", avoid_texts=None) -> dict:
     """Ask the vision model what text belongs in one region.
 
     Images are sent in a fixed order: the crop first, then the whole scene, then
@@ -733,6 +754,7 @@ def propose_text(crop_rgb, scene_rgb=None, neighbor_crops=None,
         language=language,
         neighbor_count=len(neighbors),
         has_scene=scene_rgb is not None,
+        avoid_texts=avoid_texts,
     )
 
     try:
