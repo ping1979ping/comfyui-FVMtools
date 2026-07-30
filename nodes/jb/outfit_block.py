@@ -22,7 +22,8 @@ try:
     from ...core.outfit_presets import OUTFIT_PRESETS
     from ...core.outfit_lists import get_available_sets
     from ...core.style_presets import STYLE_PRESETS
-    from ...core.jb.palette import build_palette, resolve_tokens
+    from ...core.jb.palette import (apply_color_overrides, build_palette,
+                                    resolve_tokens)
     from ...core.jb.color_moods import MOOD_NAMES, mood_help
     from ...core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                       emit_natural, emit_strict_json)
@@ -36,7 +37,8 @@ except ImportError:  # pragma: no cover
     from core.outfit_presets import OUTFIT_PRESETS
     from core.outfit_lists import get_available_sets
     from core.style_presets import STYLE_PRESETS
-    from core.jb.palette import build_palette, resolve_tokens
+    from core.jb.palette import (apply_color_overrides, build_palette,
+                                 resolve_tokens)
     from core.jb.color_moods import MOOD_NAMES, mood_help
     from core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                    emit_natural, emit_strict_json)
@@ -137,7 +139,33 @@ class FVM_JB_OutfitBlock:
                                     "for Ideogram 4 style JSON prompting."}),
             },
             "optional": {
-                "overrides": ("STRING", {"default": "", "multiline": True}),
+                "overrides": ("STRING", {"default": "", "multiline": True,
+                              "tooltip":
+                              "Per-slot overrides plus palette colour forcing. "
+                              "One directive per line — use the Edit Overrides "
+                              "button for a guided editor.\n\n"
+                              "Slot lines (slots: headwear, top, outerwear, "
+                              "bottom, footwear, accessories, bag):\n"
+                              "  top: silk blouse            force garment (first "
+                              "word = fabric when two+ words)\n"
+                              "  top: silk blouse | accent   ...and force its "
+                              "colour role\n"
+                              "  top: silk blouse | accent | floral print   "
+                              "...and force a decoration ('none' = plain)\n"
+                              "  bag: exclude                drop the slot even "
+                              "if enabled\n"
+                              "  top: auto                   explicit default "
+                              "(same as omitting the line)\n"
+                              "  Wildcards pick randomly:  top: {silk|satin} "
+                              "blouse\n\n"
+                              "Palette line — force the colours behind the "
+                              "roles instead of the mood/harmony pick:\n"
+                              "  palette: primary=navy blue, secondary=cream, "
+                              "accent=burnt orange\n"
+                              "  Roles: primary, secondary, accent, neutral, "
+                              "metallic, tertiary, ambient_light, shadow_tone. "
+                              "Unlisted roles keep their generated colour.\n\n"
+                              "Lines starting with # are comments."}),
                 # Only consulted when color_mood is "auto" (except palette_style
                 # and warmth, which also tint the atmosphere phrases).
                 "num_colors":      ("INT", {"default": 5, "min": 2, "max": 8,
@@ -173,6 +201,8 @@ class FVM_JB_OutfitBlock:
             "bag":         enable_bag,
         }
         parsed_overrides = parse_overrides(overrides) if overrides else {}
+        # The palette pseudo-slot is for the palette, not the outfit engine.
+        color_overrides = parsed_overrides.pop("_palette", {})
 
         rec = generate_outfit_records(
             seed=seed, outfit_set=outfit_set, style_preset=style_preset,
@@ -186,6 +216,7 @@ class FVM_JB_OutfitBlock:
             style_preset=palette_style, vibrancy=vibrancy, contrast=contrast,
             warmth=warmth, color_mood=color_mood,
         )
+        apply_color_overrides(palette, color_overrides)
         subs = palette["subs"]
 
         garments: dict = {}

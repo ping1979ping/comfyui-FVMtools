@@ -192,6 +192,71 @@ class TestNaturalFormat:
         assert "set_name" in out and "{" in out
 
 
+class TestPaletteOverrides:
+    """palette:-Zeile im Override-Text → erzwungene Rollenfarben."""
+
+    @staticmethod
+    def parse(text):
+        from core.outfit_parser import parse_overrides
+        return parse_overrides(text)
+
+    def test_palette_line_collected_under_reserved_key(self):
+        ov = self.parse("palette: primary=navy blue, accent=burnt orange")
+        assert ov["_palette"] == {"primary": "navy blue", "accent": "burnt orange"}
+
+    def test_hash_marks_and_case_are_normalised(self):
+        ov = self.parse("Palette: #Primary#=Navy Blue")
+        assert ov["_palette"] == {"primary": "Navy Blue"}
+
+    def test_colors_alias_works(self):
+        assert self.parse("colors: secondary=cream")["_palette"] == {"secondary": "cream"}
+
+    def test_pairs_without_equals_are_ignored(self):
+        ov = self.parse("palette: primary=navy, garbage, =x, empty=")
+        assert ov["_palette"] == {"primary": "navy"}
+
+    def test_slot_lines_unaffected(self):
+        ov = self.parse("top: silk blouse | accent\npalette: primary=navy")
+        assert ov["top"]["garment"] == "blouse"
+        assert ov["top"]["fabric"] == "silk"
+        assert ov["_palette"] == {"primary": "navy"}
+
+    def test_apply_overrides_rewrites_subs_and_summary(self):
+        from core.jb.palette import apply_color_overrides, build_palette
+        pal = build_palette(seed=7, color_mood="everyday_muted")
+        apply_color_overrides(pal, {"primary": "navy blue", "shadow_tone": "inky shadows"})
+        assert pal["garment_colors"]["primary"] == "navy blue"
+        assert pal["subs"]["#primary#"] == "navy blue"
+        assert pal["atmosphere_colors"]["shadow_tone"] == "inky shadows"
+        assert "overridden: primary=navy blue" in pal["palette_string"]
+
+    def test_unknown_roles_are_ignored(self):
+        from core.jb.palette import apply_color_overrides, build_palette
+        pal = build_palette(seed=7, color_mood="everyday_muted")
+        before = dict(pal["garment_colors"])
+        apply_color_overrides(pal, {"bogus_role": "chartreuse"})
+        assert pal["garment_colors"] == before
+        assert "overridden" not in pal["palette_string"]
+
+    def test_outfit_block_applies_palette_override(self):
+        from nodes.jb.outfit_block import FVM_JB_OutfitBlock
+        node = FVM_JB_OutfitBlock()
+        kwargs = dict(
+            outfit_set="female/casual/everyday_basics", seed=10,
+            style_preset="general", formality=0.4, coverage=0.6,
+            enable_headwear=False, enable_top=True, enable_bottom=True,
+            enable_footwear=True, enable_outerwear=False,
+            enable_accessories=False, enable_bag=False,
+            print_probability=0.0, text_mode="off",
+            color_mood="everyday_muted", output_format="natural",
+        )
+        plain = node.build(**kwargs)
+        forced = node.build(**kwargs, overrides="palette: primary=petrol blue")
+        assert plain[1] != forced[1]
+        assert "petrol blue" in forced[1]
+        assert "overridden: primary=petrol blue" in forced[2]
+
+
 class TestColorMoods:
     def test_all_moods_have_a_description(self):
         for name, spec in COLOR_MOODS.items():

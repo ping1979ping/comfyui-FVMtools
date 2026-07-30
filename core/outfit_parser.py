@@ -34,6 +34,22 @@ def parse_overrides(override_string):
         if not slot_name or not spec:
             continue
 
+        # Palette pseudo-slot: force specific colour roles over the generated
+        # palette. "palette: primary=navy blue, accent=burnt orange"
+        # Collected under the reserved key "_palette"; the node pops it before
+        # the dict reaches the outfit engine.
+        if slot_name in ("palette", "colors", "colours"):
+            roles = {}
+            for pair in spec.split(","):
+                role, eq, value = pair.partition("=")
+                role = role.strip().lower().strip("#")
+                value = value.strip()
+                if eq and role and value:
+                    roles[role] = value
+            if roles:
+                result.setdefault("_palette", {}).update(roles)
+            continue
+
         spec_lower = spec.lower()
 
         if spec_lower == "exclude":

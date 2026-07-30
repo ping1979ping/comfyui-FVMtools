@@ -209,6 +209,47 @@ def _palette_from_names(*, names: list[str], seed: int, color_mood: str,
     }
 
 
+def apply_color_overrides(palette: dict, overrides: dict[str, str]) -> dict:
+    """Force specific colour roles over a generated palette, in place.
+
+    ``overrides`` maps role → colour name, e.g. ``{"primary": "navy blue"}``.
+    Garment roles (primary/secondary/accent/neutral/metallic/tertiary) and the
+    two atmosphere keys (ambient_light/shadow_tone) are accepted; unknown
+    roles are ignored so a typo cannot break the build. The ``subs`` token map
+    and ``palette_string`` are updated to match.
+    """
+    if not overrides:
+        return palette
+
+    applied: dict[str, str] = {}
+    for role, value in overrides.items():
+        role = str(role).strip().lower().strip("#")
+        value = str(value).strip()
+        if not role or not value:
+            continue
+        if role in CANONICAL_ROLES:
+            palette["garment_colors"][role] = value
+            applied[role] = value
+        elif role in ("ambient_light", "shadow_tone"):
+            palette["atmosphere_colors"][role] = value
+            applied[role] = value
+
+    if not applied:
+        return palette
+
+    subs = palette["subs"]
+    for token, role in GARMENT_TOKEN_MAP.items():
+        if role in palette["garment_colors"]:
+            subs[token] = palette["garment_colors"][role]
+    for token, key in ATMOSPHERE_TOKEN_MAP.items():
+        if key in palette["atmosphere_colors"]:
+            subs[token] = palette["atmosphere_colors"][key]
+    palette["raw_tokens"] = dict(subs)
+    note = ", ".join(f"{r}={v}" for r, v in applied.items())
+    palette["palette_string"] = f"{palette['palette_string']}  [overridden: {note}]"
+    return palette
+
+
 def resolve_tokens(text: str, subs: dict[str, str]) -> str:
     """Replace every #token# in ``text`` with its mapped value."""
     if not text or not subs:

@@ -140,6 +140,51 @@ refuses to write an under-filled set.
 One trap worth knowing: the indoor banlist matches on substrings, and
 `fridge` contains `ridge`. Use `refrigerator`.
 
+### Archived sets
+
+The editorial categories (skyscraper lobbies, ice hotels, Star Trek uniforms,
+paragliding launches) moved to `location_lists/_archive/` and
+`outfit_lists/female/_archive/`. Discovery skips underscore directories, so
+they disappear from the dropdowns but stay on disk — move a folder back out
+of `_archive/` to reactivate it. Their US/PA everyday replacements live in
+`indoor/{office_us, fitness_us, private_us, vacation_us}` and
+`outdoor/{suburb_pa, town_pa, nature_pa, fitness_us}`
+(generator: `scripts/gen_us_scenario_locations.py`), plus the outfit
+categories `female/{dresses_heels, dresses_flats, underwear}`
+(generator: `scripts/gen_dresses_underwear_sets.py`).
+
+`dresses_heels` is the leg-showing-with-heels group, `dresses_flats` the
+covered/flat counterpart — both run from everyday office to grocery runs
+rather than only fancy occasions. `underwear` is deliberately non-fancy
+(cotton basics, t-shirt bras, sleep sets, laundry-day mismatch) with a single
+slightly nicer `simple_lace_touch`.
+
+---
+
+## 4. Overrides and forcing palette colours
+
+`JB · Outfit Block` has an **Edit Overrides** button that opens a structured
+editor for the `overrides` widget: per-slot rows (auto / custom / exclude,
+fabric, garment, colour role, decoration) and a palette section. Everything
+serialises to the plain-text grammar, so hand-written text round-trips:
+
+```
+top: silk blouse | accent | floral print
+bag: exclude
+palette: primary=navy blue, secondary=cream, accent=burnt orange
+```
+
+The `palette:` line is new — it forces the actual colour behind a role for
+this node. Garments keep their roles (top=primary, bottom=secondary,
+footwear=neutral, accessories=metallic, headwear/bag=accent); you swap what
+the role resolves to. Unlisted roles keep the mood/harmony colour, unknown
+role names are ignored, and the `palette_summary` output notes what was
+overridden. `ambient_light` and `shadow_tone` are also accepted.
+
+Dress sets keep a `none` stub in `top.txt` (the dress lives in the bottom
+slot). The engine drops placeholder garments (`none`, `-`) instead of
+emitting `#primary# none`.
+
 ### Why weather says nothing about light
 
 `time_of_day` and `weather` are drawn independently, so any light-level claim
