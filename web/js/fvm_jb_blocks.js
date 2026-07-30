@@ -570,8 +570,304 @@ function createOverrideModal() {
     };
 }
 
+/* ── Override Editor Modal (Location Block) ────────────────────────────
+ *
+ * Location counterpart: one row per element (auto / custom / exclude and
+ * the forced phrase) plus the same palette section. Serialises to the
+ * grammar core/location_engine.py::parse_location_overrides reads.
+ */
+
+const OV_ELEMENTS = ["background", "midground", "architecture_detail",
+                     "props", "foreground_element", "time_of_day", "weather"];
+
+const OV_LOC_TIPS = {
+    mode:
+        "auto — the engine draws this element from the set's list file " +
+        "(default, writes nothing).\n" +
+        "custom — force the phrase on the right; the element is emitted " +
+        "even when its enable toggle is off.\n" +
+        "exclude — the element never appears, even when its enable toggle " +
+        "is on.",
+    phrase:
+        "The exact phrase used for this element, e.g. " +
+        "'red brick wall with ivy'.\n" +
+        "It replaces the engine's draw verbatim and may contain palette " +
+        "tokens like #ambient_light# — they resolve like any list entry.\n" +
+        "For time_of_day / weather keep the same register as the lists: " +
+        "light belongs to time_of_day, weather describes air and " +
+        "precipitation only.",
+    palette:
+        "Force the actual colour or phrase behind a palette token for THIS " +
+        "node. Location fragments mostly use ambient_light and shadow_tone; " +
+        "the garment roles matter only when a list entry embeds a colour " +
+        "token.\nEmpty fields keep the generated value.",
+};
+
+function createLocationOverrideModal() {
+    const overlay = document.createElement("div");
+    Object.assign(overlay.style, {
+        display: "none", position: "fixed", inset: "0",
+        background: "rgba(0,0,0,0.6)", zIndex: "10000",
+        justifyContent: "center", alignItems: "center",
+    });
+
+    const dialog = document.createElement("div");
+    Object.assign(dialog.style, {
+        background: "#1e1e2e", color: "#cdd6f4", borderRadius: "10px",
+        padding: "16px", width: "740px", maxHeight: "90vh", overflowY: "auto",
+        display: "flex", flexDirection: "column", gap: "12px",
+        boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+        fontFamily: "system-ui, sans-serif", fontSize: "13px",
+    });
+
+    const header = document.createElement("div");
+    Object.assign(header.style, { display: "flex", alignItems: "center", gap: "10px" });
+    const title = document.createElement("span");
+    title.textContent = "Location Overrides";
+    Object.assign(title.style, { fontWeight: "bold", fontSize: "15px", flex: "1" });
+    const helpBtn = document.createElement("button");
+    helpBtn.textContent = "?";
+    helpBtn.title = "Show the full override syntax reference";
+    Object.assign(helpBtn.style, {
+        background: "#313244", color: "#89b4fa", border: "1px solid #45475a",
+        borderRadius: "50%", width: "24px", height: "24px", fontSize: "14px",
+        cursor: "pointer", fontWeight: "bold", lineHeight: "1", padding: "0",
+    });
+    header.append(title, helpBtn);
+
+    const helpPanel = document.createElement("div");
+    helpPanel.style.display = "none";
+    Object.assign(helpPanel.style, {
+        background: "#11111b", border: "1px solid #45475a", borderRadius: "6px",
+        padding: "12px", fontSize: "12px", lineHeight: "1.6", color: "#a6adc8",
+    });
+    helpPanel.innerHTML = `
+        <div style="color:#89b4fa;font-weight:bold;margin-bottom:6px">How overrides work</div>
+        <div>Everything here compiles into the <b>overrides</b> text widget on the node —
+        one directive per line. You can always type that text by hand; this editor just
+        writes it for you. Empty rows / fields write nothing and keep the engine's draw.</div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:10px">Element lines</div>
+        <div style="font-family:monospace;color:#f9e2af">
+        background: red brick wall with ivy<br>
+        time_of_day: golden hour before sunset<br>
+        props: exclude</div>
+        <div>The phrase replaces the engine's draw verbatim and may contain palette tokens
+        (<b>#ambient_light#</b>, <b>#shadow_tone#</b>, <b>#primary#</b>, …).
+        A forced element is emitted even when its enable toggle is off;
+        <b>exclude</b> wins over an enabled toggle.</div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:10px">Palette line</div>
+        <div style="font-family:monospace;color:#f9e2af">
+        palette: ambient_light=dim tungsten evening, shadow_tone=inky shadows</div>
+        <div>Forces the value behind a palette token for this node. Location fragments
+        mostly use the two atmosphere tokens; the garment roles (primary, secondary, …)
+        apply when a list entry embeds a colour token. Roles you don't list keep the
+        colour mood / harmony value.</div>
+
+        <div style="color:#cba6f7;font-weight:bold;margin-top:10px">Register rule</div>
+        <div>Keep light claims in <b>time_of_day</b> and let <b>weather</b> describe only air
+        and precipitation — otherwise the two can contradict
+        ("evening under the ceiling light, bright sun through the window").</div>
+    `;
+    helpBtn.addEventListener("click", () => {
+        helpPanel.style.display = helpPanel.style.display === "none" ? "block" : "none";
+    });
+
+    const sectionTitle = (text, tip) => {
+        const el = document.createElement("div");
+        el.textContent = text;
+        if (tip) el.title = tip;
+        Object.assign(el.style, { fontWeight: "bold", color: "#89b4fa", marginTop: "2px" });
+        return el;
+    };
+    const inputStyle = {
+        background: "#181825", color: "#cdd6f4", border: "1px solid #45475a",
+        borderRadius: "4px", padding: "3px 6px", fontSize: "12px",
+    };
+
+    // ── Element rows ──
+    const elemGrid = document.createElement("div");
+    Object.assign(elemGrid.style, {
+        display: "grid", gridTemplateColumns: "140px 82px 1fr",
+        gap: "4px 6px", alignItems: "center",
+    });
+    [["element", null], ["mode", OV_LOC_TIPS.mode], ["forced phrase", OV_LOC_TIPS.phrase]]
+        .forEach(([h, tip]) => {
+            const el = document.createElement("div");
+            el.textContent = h;
+            if (tip) el.title = tip;
+            Object.assign(el.style, { color: "#6c7086", fontSize: "11px",
+                                      cursor: tip ? "help" : "default" });
+            elemGrid.append(el);
+        });
+
+    const elemRows = {};
+    for (const elem of OV_ELEMENTS) {
+        const label = document.createElement("div");
+        label.textContent = elem;
+        label.style.color = "#cdd6f4";
+
+        const mode = document.createElement("select");
+        mode.title = OV_LOC_TIPS.mode;
+        for (const m of ["auto", "custom", "exclude"]) {
+            const opt = document.createElement("option");
+            opt.value = m; opt.textContent = m;
+            mode.append(opt);
+        }
+        Object.assign(mode.style, { ...inputStyle, cursor: "pointer" });
+
+        const phrase = document.createElement("input");
+        phrase.placeholder = elem === "weather" ? "light drizzle in the air"
+            : elem === "time_of_day" ? "golden hour before sunset"
+            : "red brick wall with ivy";
+        phrase.title = OV_LOC_TIPS.phrase;
+        Object.assign(phrase.style, inputStyle);
+
+        const syncEnabled = () => {
+            const custom = mode.value === "custom";
+            phrase.disabled = !custom;
+            phrase.style.opacity = custom ? "1" : "0.35";
+        };
+        mode.addEventListener("change", syncEnabled);
+        syncEnabled();
+
+        elemGrid.append(label, mode, phrase);
+        elemRows[elem] = { mode, phrase, syncEnabled };
+    }
+
+    // ── Palette section ──
+    const palGrid = document.createElement("div");
+    Object.assign(palGrid.style, {
+        display: "grid", gridTemplateColumns: "repeat(2, 110px 1fr)",
+        gap: "4px 6px", alignItems: "center",
+    });
+    const palInputs = {};
+    // Atmosphere first — it is what location fragments actually use.
+    const palKeys = ["ambient_light", "shadow_tone", ...OV_ROLES];
+    for (const key of palKeys) {
+        const label = document.createElement("div");
+        label.textContent = key.replace("_", " ");
+        label.title = OV_LOC_TIPS.palette;
+        Object.assign(label.style, { color: "#6c7086", fontSize: "11px", cursor: "help" });
+        const input = document.createElement("input");
+        input.placeholder = "(generated)";
+        input.title = OV_LOC_TIPS.palette;
+        Object.assign(input.style, inputStyle);
+        palGrid.append(label, input);
+        palInputs[key] = input;
+    }
+
+    // ── Footer ──
+    const status = document.createElement("div");
+    Object.assign(status.style, { fontSize: "12px", color: "#6c7086", minHeight: "16px" });
+    const btnRow = document.createElement("div");
+    Object.assign(btnRow.style, { display: "flex", gap: "8px", justifyContent: "flex-end" });
+    const btnStyle = {
+        padding: "6px 18px", borderRadius: "6px", border: "none",
+        fontSize: "13px", cursor: "pointer", fontWeight: "bold",
+    };
+    const applyBtn = document.createElement("button");
+    applyBtn.textContent = "Apply";
+    applyBtn.title = "Write these overrides into the node's overrides widget";
+    Object.assign(applyBtn.style, { ...btnStyle, background: "#a6e3a1", color: "#1e1e2e" });
+    const cancelBtn = document.createElement("button");
+    cancelBtn.textContent = "Cancel";
+    Object.assign(cancelBtn.style, { ...btnStyle, background: "#45475a", color: "#cdd6f4" });
+    btnRow.append(applyBtn, cancelBtn);
+
+    dialog.append(
+        header, helpPanel,
+        sectionTitle("Elements", "Force, exclude or leave each element on auto"),
+        elemGrid,
+        sectionTitle("Palette",
+                     "Force the value behind a palette token; empty = generated"),
+        palGrid,
+        status, btnRow,
+    );
+    overlay.append(dialog);
+    document.body.append(overlay);
+
+    let targetWidget = null;
+    let targetNode = null;
+
+    function loadFromText(text) {
+        for (const elem of OV_ELEMENTS) {
+            const r = elemRows[elem];
+            r.mode.value = "auto";
+            r.phrase.value = "";
+            r.syncEnabled();
+        }
+        for (const key of palKeys) palInputs[key].value = "";
+
+        for (let line of (text || "").split("\n")) {
+            line = line.trim();
+            if (!line || line.startsWith("#") || !line.includes(":")) continue;
+            const idx = line.indexOf(":");
+            const key = line.slice(0, idx).trim().toLowerCase();
+            const spec = line.slice(idx + 1).trim();
+            if (!spec) continue;
+
+            if (["palette", "colors", "colours"].includes(key)) {
+                for (const pair of spec.split(",")) {
+                    const eq = pair.indexOf("=");
+                    if (eq < 0) continue;
+                    const role = pair.slice(0, eq).trim().toLowerCase().replace(/#/g, "");
+                    const value = pair.slice(eq + 1).trim();
+                    if (palInputs[role] && value) palInputs[role].value = value;
+                }
+                continue;
+            }
+            const row = elemRows[key];
+            if (!row) continue;
+            const low = spec.toLowerCase();
+            if (low === "exclude") { row.mode.value = "exclude"; }
+            else if (low === "auto") { row.mode.value = "auto"; }
+            else { row.mode.value = "custom"; row.phrase.value = spec; }
+            row.syncEnabled();
+        }
+    }
+
+    function serialize() {
+        const lines = [];
+        for (const elem of OV_ELEMENTS) {
+            const r = elemRows[elem];
+            if (r.mode.value === "exclude") lines.push(`${elem}: exclude`);
+            else if (r.mode.value === "custom" && r.phrase.value.trim())
+                lines.push(`${elem}: ${r.phrase.value.trim()}`);
+        }
+        const pal = palKeys
+            .filter(k => palInputs[k].value.trim())
+            .map(k => `${k}=${palInputs[k].value.trim()}`);
+        if (pal.length) lines.push(`palette: ${pal.join(", ")}`);
+        return lines.join("\n");
+    }
+
+    applyBtn.addEventListener("click", () => {
+        if (!targetWidget) return;
+        targetWidget.value = serialize();
+        targetWidget.callback?.(targetWidget.value);
+        targetNode?.graph?.setDirtyCanvas(true, true);
+        overlay.style.display = "none";
+    });
+    cancelBtn.addEventListener("click", () => { overlay.style.display = "none"; });
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) overlay.style.display = "none"; });
+
+    return {
+        open(node, widget) {
+            targetNode = node;
+            targetWidget = widget;
+            loadFromText(widget ? widget.value : "");
+            status.textContent = "Empty fields keep the engine's draw. " +
+                "Apply writes into the overrides widget.";
+            overlay.style.display = "flex";
+        },
+    };
+}
+
 let modal = null;
 let overrideModal = null;
+let locationOverrideModal = null;
 
 const NODE_CONFIGS = {
     "FVM_JB_OutfitBlock": {
@@ -611,6 +907,14 @@ app.registerExtension({
                 if (!overrideModal) overrideModal = createOverrideModal();
                 const w = node.widgets.find(x => x.name === "overrides");
                 overrideModal.open(node, w);
+            });
+        }
+
+        if (node.comfyClass === "FVM_JB_LocationBlock") {
+            node.addWidget("button", "Edit Overrides", null, () => {
+                if (!locationOverrideModal) locationOverrideModal = createLocationOverrideModal();
+                const w = node.widgets.find(x => x.name === "overrides");
+                locationOverrideModal.open(node, w);
             });
         }
     },

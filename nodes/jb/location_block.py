@@ -13,9 +13,11 @@ try:
     from ...core.location_engine import (
         generate_location_records,
         get_available_location_sets,
+        parse_location_overrides,
     )
     from ...core.style_presets import STYLE_PRESETS
-    from ...core.jb.palette import build_palette, resolve_tokens
+    from ...core.jb.palette import (apply_color_overrides, build_palette,
+                                    resolve_tokens)
     from ...core.jb.color_moods import MOOD_NAMES, mood_help
     from ...core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                       emit_natural, emit_strict_json)
@@ -23,9 +25,11 @@ except ImportError:  # pragma: no cover
     from core.location_engine import (
         generate_location_records,
         get_available_location_sets,
+        parse_location_overrides,
     )
     from core.style_presets import STYLE_PRESETS
-    from core.jb.palette import build_palette, resolve_tokens
+    from core.jb.palette import (apply_color_overrides, build_palette,
+                                 resolve_tokens)
     from core.jb.color_moods import MOOD_NAMES, mood_help
     from core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                    emit_natural, emit_strict_json)
@@ -80,6 +84,30 @@ class FVM_JB_LocationBlock:
                                     "for Ideogram 4 style JSON prompting."}),
             },
             "optional": {
+                "overrides": ("STRING", {"default": "", "multiline": True,
+                              "tooltip":
+                              "Per-element overrides plus palette colour "
+                              "forcing. One directive per line — use the Edit "
+                              "Overrides button for a guided editor.\n\n"
+                              "Element lines (elements: background, midground, "
+                              "architecture_detail, props, foreground_element, "
+                              "time_of_day, weather):\n"
+                              "  background: red brick wall with ivy   force "
+                              "the phrase verbatim (may contain #tokens#)\n"
+                              "  props: exclude                        drop "
+                              "the element even if enabled\n"
+                              "  weather: auto                         "
+                              "explicit default (same as omitting)\n"
+                              "A forced element is active even when its "
+                              "enable toggle is off.\n\n"
+                              "Palette line — force the colours behind the "
+                              "roles instead of the mood/harmony pick:\n"
+                              "  palette: ambient_light=dim tungsten evening, "
+                              "shadow_tone=inky shadows, primary=navy\n"
+                              "  Roles: primary, secondary, accent, neutral, "
+                              "metallic, tertiary, ambient_light, shadow_tone."
+                              " Unlisted roles keep their generated value.\n\n"
+                              "Lines starting with # are comments."}),
                 "color_tone": (["", "warm", "cool", "neutral"], {"default": "",
                                "tooltip": "Overrides the tone derived from the palette."}),
                 "num_colors":      ("INT", {"default": 5, "min": 2, "max": 8,
@@ -103,7 +131,7 @@ class FVM_JB_LocationBlock:
               enable_props, enable_foreground_element,
               enable_time_of_day, enable_weather,
               color_mood="everyday_muted", output_format="loose_keys",
-              color_tone="", num_colors=5, harmony_type="auto",
+              overrides="", color_tone="", num_colors=5, harmony_type="auto",
               palette_style="general", vibrancy=0.5, contrast=0.5, warmth=0.5):
         element_enables = {
             "background":          enable_background,
@@ -114,11 +142,15 @@ class FVM_JB_LocationBlock:
             "time_of_day":         enable_time_of_day,
             "weather":             enable_weather,
         }
+        parsed_overrides = parse_location_overrides(overrides) if overrides else {}
+        # The palette pseudo-slot is for the palette, not the location engine.
+        color_overrides = parsed_overrides.pop("_palette", {})
 
         rec = generate_location_records(
             seed=seed, location_set=location_set,
             element_enables=element_enables,
             color_tone=color_tone or None,
+            overrides=parsed_overrides,
         )
 
         palette = build_palette(
@@ -126,6 +158,7 @@ class FVM_JB_LocationBlock:
             style_preset=palette_style, vibrancy=vibrancy, contrast=contrast,
             warmth=warmth, color_mood=color_mood,
         )
+        apply_color_overrides(palette, color_overrides)
         subs = palette["subs"]
 
         elements: dict = {}

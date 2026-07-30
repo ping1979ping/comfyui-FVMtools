@@ -257,6 +257,78 @@ class TestPaletteOverrides:
         assert "overridden: primary=petrol blue" in forced[2]
 
 
+class TestLocationOverrides:
+    """Element-Overrides + palette:-Zeile am Location Block."""
+
+    SET = "indoor/everyday_us/family_living_room_tv"
+
+    @staticmethod
+    def parse(text):
+        from core.location_engine import parse_location_overrides
+        return parse_location_overrides(text)
+
+    def test_parser_modes_and_palette(self):
+        ov = self.parse("background: red brick wall\nprops: exclude\n"
+                        "weather: auto\npalette: ambient_light=dim tungsten")
+        assert ov["background"] == {"mode": "override", "text": "red brick wall"}
+        assert ov["props"]["mode"] == "exclude"
+        assert ov["weather"]["mode"] == "auto"
+        assert ov["_palette"] == {"ambient_light": "dim tungsten"}
+
+    def test_comments_and_blank_lines_ignored(self):
+        assert self.parse("# comment\n\nno-colon-line\n") == {}
+
+    def test_forced_element_is_verbatim(self):
+        from core.location_engine import generate_location_records
+        rec = generate_location_records(
+            seed=5, location_set=self.SET,
+            overrides={"background": {"mode": "override", "text": "red brick wall"}},
+        )
+        assert rec["elements"]["background"]["name"] == "red brick wall"
+        assert "red brick wall" in rec["elements"]["background"]["prompt_fragment"]
+
+    def test_exclude_wins_over_enable(self):
+        from core.location_engine import generate_location_records
+        rec = generate_location_records(
+            seed=5, location_set=self.SET,
+            element_enables={k: k == "background" for k in
+                             ("background", "midground", "architecture_detail",
+                              "props", "foreground_element", "time_of_day", "weather")},
+            overrides={"background": {"mode": "exclude", "text": None}},
+        )
+        assert "background" not in rec["elements"]
+
+    def test_forced_element_active_even_when_disabled(self):
+        from core.location_engine import generate_location_records
+        rec = generate_location_records(
+            seed=5, location_set=self.SET,
+            element_enables={k: False for k in
+                             ("background", "midground", "architecture_detail",
+                              "props", "foreground_element", "time_of_day", "weather")},
+            overrides={"props": {"mode": "override", "text": "stack of board games"}},
+        )
+        assert rec["elements"]["props"]["name"] == "stack of board games"
+
+    def test_location_block_applies_both_override_kinds(self):
+        from nodes.jb.location_block import FVM_JB_LocationBlock
+        node = FVM_JB_LocationBlock()
+        kwargs = dict(
+            location_set=self.SET, seed=21,
+            enable_background=True, enable_midground=False,
+            enable_architecture_detail=False, enable_props=True,
+            enable_foreground_element=True, enable_time_of_day=True,
+            enable_weather=True, color_mood="everyday_muted",
+            output_format="natural",
+        )
+        out = node.build(**kwargs, overrides=(
+            "background: red brick wall with ivy\n"
+            "props: exclude\n"
+            "palette: ambient_light=dim tungsten evening"))
+        assert "red brick wall with ivy" in out[1]
+        assert "dim tungsten evening" in out[1]
+        assert "overridden: ambient_light=dim tungsten evening" in out[2]
+
+
 class TestColorMoods:
     def test_all_moods_have_a_description(self):
         for name, spec in COLOR_MOODS.items():

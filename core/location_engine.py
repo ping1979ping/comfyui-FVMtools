@@ -200,9 +200,59 @@ def _build_fragment(element_id: str, name: str, texture: Optional[str]) -> str:
 # ─── generator ──────────────────────────────────────────────────────────
 
 
+def parse_location_overrides(override_string: Optional[str]) -> dict:
+    """Parse per-element override lines plus the palette pseudo-slot.
+
+    Format per line: ``element_id: forced phrase`` — the phrase replaces the
+    engine's draw for that element verbatim (it may contain #tokens#).
+    Special values ``exclude`` (drop the element even when enabled) and
+    ``auto`` (explicit default). ``palette: primary=navy, ambient_light=...``
+    collects forced colours under the reserved key ``"_palette"``, same
+    grammar as the outfit overrides.
+
+    Returns: dict {element_id: {"mode": "override"|"exclude"|"auto",
+                                "text": str|None}, "_palette": {role: colour}}
+    """
+    if not override_string or not override_string.strip():
+        return {}
+
+    result: dict = {}
+    for line in override_string.strip().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or ":" not in line:
+            continue
+        key, _, spec = line.partition(":")
+        key = key.strip().lower()
+        spec = spec.strip()
+        if not key or not spec:
+            continue
+
+        if key in ("palette", "colors", "colours"):
+            roles = {}
+            for pair in spec.split(","):
+                role, eq, value = pair.partition("=")
+                role = role.strip().lower().strip("#")
+                value = value.strip()
+                if eq and role and value:
+                    roles[role] = value
+            if roles:
+                result.setdefault("_palette", {}).update(roles)
+            continue
+
+        low = spec.lower()
+        if low == "exclude":
+            result[key] = {"mode": "exclude", "text": None}
+        elif low == "auto":
+            result[key] = {"mode": "auto", "text": None}
+        else:
+            result[key] = {"mode": "override", "text": spec}
+    return result
+
+
 def generate_location_records(seed: int, location_set: str = "indoor/everyday_us/family_living_room_tv",
                                element_enables: Optional[dict[str, bool]] = None,
-                               color_tone: Optional[str] = None) -> dict:
+                               color_tone: Optional[str] = None,
+                               overrides: Optional[dict] = None) -> dict:
     """Pick one entry per enabled element, build prompt fragments with tokens.
 
     Returns: dict {
@@ -213,9 +263,15 @@ def generate_location_records(seed: int, location_set: str = "indoor/everyday_us
     Each record is {name, probability, coverage, texture, layer,
                    prompt_fragment, region_hint}.
 
+    ``overrides`` (from ``parse_location_overrides``): a forced element is
+    emitted verbatim and is active even when its enable is off; ``exclude``
+    drops the element even when its enable is on. Forced/excluded elements
+    consume no RNG — same rule as disabled elements.
+
     Determinism: identical seed + identical inputs → identical dict.
     """
     rng = random.Random(seed)
+    overrides = overrides or {}
 
     if element_enables is None:
         element_enables = {
@@ -232,6 +288,28 @@ def generate_location_records(seed: int, location_set: str = "indoor/everyday_us
 
     # Iterate in canonical order so RNG consumption is stable.
     for element_id in ELEMENT_ORDER:
+        ov = overrides.get(element_id) or {}
+        if ov.get("mode") == "exclude":
+            continue
+        if ov.get("mode") == "override" and (ov.get("text") or "").strip():
+            text = ov["text"].strip()
+            layer = ELEMENT_LAYER.get(element_id, "midground")
+            region_hint_template = DEFAULT_LOCATION_LAYERS.get(element_id, {})
+            elements_out[element_id] = {
+                "name":            text,
+                "probability":     1.0,
+                "coverage":        0.5,
+                "texture":         None,
+                "layer":           layer,
+                "prompt_fragment": _build_fragment(element_id, text, None),
+                "region_hint": {
+                    "region_id":      element_id,
+                    "sam_class_hint": region_hint_template.get("sam_class") or element_id,
+                    "bbox_relative":  region_hint_template.get("bbox"),
+                    "layer_depth":    region_hint_template.get("layer_depth", layer),
+                },
+            }
+            continue
         if not element_enables.get(element_id, False):
             # No RNG draw for disabled elements — keeps determinism predictable
             # at the slot level.

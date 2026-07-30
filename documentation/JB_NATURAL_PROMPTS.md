@@ -185,6 +185,23 @@ Dress sets keep a `none` stub in `top.txt` (the dress lives in the bottom
 slot). The engine drops placeholder garments (`none`, `-`) instead of
 emitting `#primary# none`.
 
+`JB · Location Block` has the same **Edit Overrides** button. Element lines
+force a phrase verbatim (it may contain palette tokens), `exclude` drops an
+element even when its enable toggle is on, and a forced element is emitted
+even when its toggle is off:
+
+```
+background: red brick wall with ivy
+props: exclude
+time_of_day: golden hour before sunset
+palette: ambient_light=dim tungsten evening, shadow_tone=inky shadows
+```
+
+For locations the palette line is mostly about `ambient_light` and
+`shadow_tone`; the garment roles apply when a list entry embeds a colour
+token. Forced and excluded elements consume no RNG (same rule as disabled
+elements), so sibling elements may re-roll when an override is added.
+
 ### Why weather says nothing about light
 
 `time_of_day` and `weather` are drawn independently, so any light-level claim
