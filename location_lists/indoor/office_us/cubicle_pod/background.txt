@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+grey fabric cubicle walls | 1.0 | 0.5-0.9 | pin-pricked woven panels
+row of cubicles down the aisle | 0.85 | 0.4-0.7 | repeating grey partitions
+drop ceiling with light panels | 0.8 | 0.2-0.5 | stained acoustic tiles
+office window with vertical blinds | 0.55 | 0.2-0.5 | dusty tilted slats
+whiteboard wall in the distance | 0.5 | 0.2-0.4 | half-erased marker
+supply cabinet against the wall | 0.5 | 0.15-0.4 | beige steel doors
+printer station along the aisle | 0.55 | 0.2-0.4 | paper trays and toner boxes
+motivational poster in a frame | 0.4 | 0.1-0.25 | faded stock photo
+conference room glass wall beyond | 0.45 | 0.2-0.5 | fingerprinted glass
+coat hooks with hanging jackets | 0.45 | 0.1-0.3 | slumped fabric
+exit sign over the far door | 0.4 | 0.05-0.15 | red glowing letters

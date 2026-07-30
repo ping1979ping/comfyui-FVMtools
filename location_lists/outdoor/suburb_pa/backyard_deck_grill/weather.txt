@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+flat overcast sky | 0.9 | - | -
+humid summer haze | 0.6 | - | -
+light drizzle in the air | 0.55 | - | -
+steady grey rain | 0.45 | - | -
+wet asphalt after a storm | 0.55 | - | -
+clear cold air | 0.6 | - | -
+gusty wind moving the trees | 0.5 | - | -
+cold air with breath visible | 0.4 | - | -
+first flurries not sticking | 0.35 | - | -
+heavy still air before a thunderstorm | 0.4 | - | -

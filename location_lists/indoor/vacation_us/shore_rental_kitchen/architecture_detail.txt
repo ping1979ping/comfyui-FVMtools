@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+sand in the floor grout lines | 0.6 | 0.05-0.2 | swept but back again
+slider track gritty underfoot | 0.5 | 0.03-0.1 | crunching roll
+painted beadboard backsplash | 0.5 | 0.1-0.3 | chipped ridges
+outlet covers hand-painted | 0.35 | 0.02-0.06 | tiny lighthouse motif
+cabinet doors that swell shut | 0.4 | 0.05-0.15 | humid stick
+screen door with a torn corner | 0.45 | 0.05-0.15 | patched square
+rust freckles on the range hood | 0.4 | 0.03-0.1 | salt-air pitting
+window crank missing its handle | 0.35 | 0.02-0.06 | pliers nearby
+vinyl floor bubbled near the slider | 0.4 | 0.05-0.15 | sun-lifted seam
+hooks by the door labeled with names | 0.4 | 0.03-0.1 | sharpie tags
+renter binder on the counter | 0.45 | 0.02-0.08 | laminated house rules

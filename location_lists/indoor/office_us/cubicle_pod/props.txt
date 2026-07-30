@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+sticky notes on the monitor edge | 0.85 | 0.03-0.1 | curled yellow squares
+coffee mug with a company logo | 0.75 | 0.03-0.1 | ring-stained ceramic
+lanyard and badge on the desk | 0.7 | 0.02-0.08 | printed name card
+takeout container in the bin | 0.5 | 0.03-0.1 | grease-marked cardboard
+family photo in a cheap frame | 0.55 | 0.02-0.08 | glossy print
+stress ball by the keyboard | 0.45 | 0.02-0.06 | squeezed foam
+tangle of charging cables | 0.6 | 0.03-0.1 | knotted white and black
+half-eaten bag of pretzels | 0.5 | 0.02-0.08 | rolled-down bag
+desk calendar still on last month | 0.45 | 0.02-0.08 | doodled margins
+hand sanitizer pump bottle | 0.5 | 0.02-0.06 | crusted nozzle
+birthday card standing open | 0.35 | 0.02-0.08 | signed in ballpoint

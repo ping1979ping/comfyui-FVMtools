@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+vinyl floor in faux tile | 0.8 | 0.3-0.6 | worn traffic path
+caulk line darkened at the tub | 0.6 | 0.03-0.1 | mildew shadow
+exhaust fan rattling | 0.55 | 0.03-0.1 | dusty grille
+towel hook overloaded | 0.5 | 0.03-0.1 | four on one hook
+grab bar added to the tub wall | 0.35 | 0.05-0.15 | white powder coat
+sink stopper that never seals | 0.4 | 0.02-0.06 | chained plug
+cabinet door that swings open | 0.4 | 0.05-0.15 | loose magnet
+water stain on the ceiling corner | 0.4 | 0.05-0.15 | ringed patch
+threshold strip to the hallway | 0.4 | 0.02-0.08 | lifted edge
+outlet with a GFCI reset | 0.45 | 0.02-0.06 | test button
+shampoo ring on the tub edge | 0.45 | 0.02-0.08 | soap film circle

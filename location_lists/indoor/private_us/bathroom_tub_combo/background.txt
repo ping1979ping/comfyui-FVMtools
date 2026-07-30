@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+tub and shower combo with vinyl curtain | 1.0 | 0.4-0.8 | printed curtain half drawn
+vanity with a cultured marble top | 0.8 | 0.3-0.6 | toothpaste specks
+medicine cabinet mirror | 0.75 | 0.2-0.5 | corner rust spots
+towel bar with bunched towels | 0.7 | 0.15-0.4 | mismatched colors
+toilet with a fabric lid cover | 0.55 | 0.2-0.4 | dated shag cover
+wall art of seashells | 0.4 | 0.1-0.25 | dollar-store frame
+window of frosted glass | 0.5 | 0.1-0.3 | dusty screen behind
+over-toilet shelf unit | 0.55 | 0.15-0.35 | wobbly white wire
+wallpaper border at the ceiling | 0.4 | 0.1-0.3 | peeling seam
+hamper wedged by the vanity | 0.5 | 0.1-0.3 | lid ajar
+night light in the outlet | 0.45 | 0.02-0.08 | warm glow plug

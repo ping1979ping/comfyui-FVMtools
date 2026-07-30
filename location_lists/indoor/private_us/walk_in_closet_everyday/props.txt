@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+lint roller on the shelf lip | 0.5 | 0.02-0.06 | torn strip hanging
+shoe boxes with photo labels | 0.45 | 0.05-0.15 | printed snapshots
+jewelry hanger of necklaces | 0.5 | 0.03-0.1 | untangled rows
+safety pins in a dish | 0.4 | 0.02-0.05 | mixed sizes
+travel steamer on the floor | 0.4 | 0.03-0.08 | wrapped cord
+gift bags flattened above | 0.45 | 0.05-0.12 | reuse stash
+sticky lint sheets balled up | 0.35 | 0.02-0.05 | missed the basket
+perfume bottles on a tray | 0.45 | 0.02-0.08 | daily two in front
+tote bag of returns | 0.45 | 0.03-0.1 | receipts stapled
+sewing kit tin | 0.35 | 0.02-0.06 | button assortment
+dry cleaning in plastic | 0.45 | 0.1-0.25 | paper-tagged wire hangers

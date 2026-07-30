@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+ball pump with a stuck needle | 0.45 | 0.02-0.06 | garage-shelf resident
+water bottles on the retaining wall | 0.55 | 0.02-0.08 | game-break row
+bluetooth speaker in the garage bay | 0.45 | 0.02-0.08 | echoing playlist
+score kept in chalk tallies | 0.4 | 0.02-0.08 | disputed marks
+hose spray nozzle on the walk | 0.4 | 0.02-0.06 | trigger cracked
+extra ball wedged in the shrubs | 0.4 | 0.02-0.08 | out-of-bounds refuge
+sweatshirts flung on the mailbox | 0.45 | 0.03-0.1 | goalpost markers
+snow shovel not yet stored | 0.35 | 0.03-0.1 | leaning since March
+car wash bucket and mitt | 0.4 | 0.03-0.1 | suds drying
+sponge dart stuck in the gutter | 0.35 | 0.02-0.05 | lost ammo
+freeze pops handed out | 0.4 | 0.02-0.08 | dripping sleeves

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+dry conditioned air | 0.9 | - | -
+wet umbrella drips by the door | 0.4 | - | -
+rain visible through the front glass | 0.5 | - | -
+cold air pushed in by the entrance | 0.45 | - | -
+humid air the AC cannot keep up with | 0.4 | - | -
+slush tracked in on the mats | 0.35 | - | -
+stale recirculated air | 0.6 | - | -
+damp coats drying on chair backs | 0.4 | - | -
+condensation on the front windows | 0.4 | - | -
+no weather visible inside | 0.7 | - | -

@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rubberized track in faded red | 1.0 | 0.4-0.8 | patched lanes
+chain-link fence around the oval | 0.75 | 0.2-0.5 | galvanized diamond mesh
+aluminum bleachers on one side | 0.7 | 0.2-0.45 | rattling risers
+football field inside the oval | 0.7 | 0.3-0.6 | worn hash marks
+press box on stilts | 0.45 | 0.1-0.25 | plywood booth
+scoreboard on poles | 0.55 | 0.1-0.3 | sponsor panels below
+equipment shed by the gate | 0.5 | 0.1-0.25 | padlocked double door
+long jump pit at the straightaway | 0.5 | 0.1-0.25 | sand raked in ridges
+school building beyond the fence | 0.55 | 0.25-0.5 | brick and banks of windows
+flag at the field entrance | 0.45 | 0.05-0.2 | snapping halyard
+tree line past the far curve | 0.55 | 0.25-0.5 | township woods

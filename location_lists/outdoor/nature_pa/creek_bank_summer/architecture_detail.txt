@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+shale ledges stepping into the water | 0.6 | 0.15-0.4 | flat cleaved sheets
+undercut bank with exposed roots | 0.5 | 0.1-0.3 | woven overhang
+water line stain on the rocks | 0.5 | 0.05-0.2 | high-water mark
+crayfish holes in the mud edge | 0.4 | 0.03-0.1 | chimney burrows
+flood debris high in a branch | 0.45 | 0.03-0.12 | plastic flag
+gravel sorted by the current | 0.5 | 0.1-0.3 | fined-to-coarse bands
+moss carpet on the north rocks | 0.5 | 0.05-0.2 | spongy pads
+dragonfly perch stick | 0.4 | 0.02-0.08 | repeat landings
+foam line at the eddy | 0.4 | 0.03-0.12 | slow rotation
+sun-warmed slab at the pool edge | 0.5 | 0.1-0.25 | lizard-flat rock
+old cable anchor in a boulder | 0.3 | 0.02-0.08 | rusted eye bolt

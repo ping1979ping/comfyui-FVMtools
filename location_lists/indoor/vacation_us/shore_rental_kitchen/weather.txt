@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+humid air the window unit fights | 0.6 | - | -
+sticky salt air through the screens | 0.55 | - | -
+thunderstorm heard rolling through | 0.45 | - | -
+rain streaks on the slider glass | 0.5 | - | -
+dry heat radiating from the walkway | 0.5 | - | -
+box fan air moving through the room | 0.6 | - | -
+still muggy evening air | 0.55 | - | -
+breeze lifting the curtain | 0.55 | - | -
+damp towels never quite drying | 0.5 | - | -
+sunscreen and salt smell indoors | 0.5 | - | -

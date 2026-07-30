@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+dumbbell rack with gaps | 0.9 | 0.25-0.5 | mismatched pairs
+flat bench with torn vinyl | 0.75 | 0.2-0.4 | taped corner rip
+squat rack with plates loaded | 0.65 | 0.25-0.5 | rusted collar pins
+plate tree half empty | 0.6 | 0.15-0.35 | scattered change plates
+rowing machine pushed to the wall | 0.5 | 0.2-0.4 | dusty rail
+stability balls in a corral | 0.45 | 0.15-0.3 | half-deflated one
+someone mid-set at the cables | 0.5 | 0.15-0.35 | blurred motion
+mat area with stretching space | 0.6 | 0.25-0.5 | worn blue mats
+spray bottle and towel station | 0.55 | 0.05-0.15 | drip-stained floor
+elliptical with an out-of-order sign | 0.4 | 0.15-0.3 | taped paper note
+kettlebells lined by the mirror | 0.5 | 0.1-0.25 | chipped paint handles

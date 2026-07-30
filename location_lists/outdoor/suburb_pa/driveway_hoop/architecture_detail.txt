@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+driveway crack with grass tuft | 0.55 | 0.05-0.15 | expansion seam
+apron joint at the street | 0.5 | 0.05-0.15 | curb transition
+garage door track and springs | 0.45 | 0.05-0.15 | greased coils
+motion flood over the garage | 0.45 | 0.02-0.08 | double heads
+downspout crossing the driveway edge | 0.4 | 0.03-0.1 | flattened end
+hoop pole padded with a noodle | 0.4 | 0.03-0.1 | zip-tied foam
+paint scuff on the garage frame | 0.4 | 0.02-0.08 | mirror-height mark
+salt stains from winter | 0.4 | 0.05-0.2 | white bloom
+basketball net frayed to threads | 0.45 | 0.03-0.1 | half-detached loops
+seam where new blacktop meets old | 0.45 | 0.05-0.15 | color break
+reflector stake at the corner | 0.35 | 0.02-0.06 | snowplow guide

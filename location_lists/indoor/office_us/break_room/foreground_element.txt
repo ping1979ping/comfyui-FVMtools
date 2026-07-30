@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+stirring coffee with a plastic stick | 0.7 | 0.05-0.15 | swirling creamer
+microwave door held open | 0.55 | 0.05-0.2 | steam rolling out
+lunch container peeled open | 0.6 | 0.05-0.15 | fogged lid in hand
+leaning on the counter mid-story | 0.6 | 0.1-0.3 | ankles crossed
+vending machine buttons pressed | 0.5 | 0.05-0.2 | coil turning
+paper plate carried to the table | 0.5 | 0.05-0.15 | sagging under a slice
+phone scrolled while chewing | 0.55 | 0.05-0.15 | elbow on the table
+mug rinsed at the sink | 0.5 | 0.05-0.15 | water running
+donut box lid lifted for a look | 0.45 | 0.05-0.12 | glaze stuck to cardboard
+chair tipped back on two legs | 0.4 | 0.1-0.25 | hand on the table edge
+ice rattled into a cup | 0.4 | 0.03-0.1 | scoop in the bin

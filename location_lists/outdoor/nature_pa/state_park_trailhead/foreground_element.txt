@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bootlaces cinched on the bumper | 0.6 | 0.05-0.2 | heel-locked wrap
+pack shrugged onto the shoulders | 0.6 | 0.1-0.25 | strap settle
+map photo taken at the board | 0.5 | 0.05-0.15 | phone raised
+first blaze pointed out | 0.5 | 0.05-0.2 | route confirmed
+dog's harness double-checked | 0.45 | 0.05-0.15 | buckle tug
+register signed with the stub pencil | 0.45 | 0.03-0.1 | date and initials
+stretch against the fence rail | 0.5 | 0.05-0.2 | calf lengthened
+water sip before the climb | 0.5 | 0.03-0.1 | bottle tipped
+jacket tied around the waist | 0.5 | 0.05-0.2 | sleeves knotted
+gravel kicked from a tread | 0.4 | 0.03-0.1 | boot tapped on the timber
+trail mouth sized up | 0.5 | 0.1-0.3 | hands on hips

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+key cards on the dresser | 0.65 | 0.02-0.06 | paper sleeve with the room number
+half-empty water bottles | 0.6 | 0.02-0.08 | caps lost
+phone chargers in both outlets | 0.6 | 0.02-0.08 | cords crossing the bed
+gas station snacks piled | 0.55 | 0.03-0.1 | chip bags and jerky
+soda from the vending machine | 0.5 | 0.02-0.08 | ice-flecked can
+do not disturb tag on the handle | 0.5 | 0.02-0.06 | swinging card
+motel notepad and pen | 0.45 | 0.02-0.05 | logo header
+travel toiletry bag by the sink | 0.55 | 0.03-0.1 | hanging hook
+paper coffee cups doubled | 0.45 | 0.02-0.06 | heat sleeve improvised
+road atlas splayed on the bed | 0.35 | 0.05-0.12 | highlighted route
+pillow fort remote pile | 0.4 | 0.02-0.08 | all channels checked

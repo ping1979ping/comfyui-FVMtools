@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed beam ceiling | 0.7 | 0.25-0.5 | hand-hewn marks
+stone chimney face | 0.6 | 0.2-0.4 | mortar smears
+plank floor gaps | 0.55 | 0.15-0.4 | draft lines
+gas lamp fixture converted | 0.4 | 0.03-0.1 | wired sconce
+window frames swollen shut | 0.4 | 0.05-0.15 | painted sashes
+stovepipe through the ceiling plate | 0.55 | 0.05-0.15 | heat-discolored ring
+door with a wooden latch | 0.4 | 0.05-0.12 | leather pull
+chinking cracked between logs | 0.4 | 0.05-0.2 | patched seams
+loft rail of peeled poles | 0.45 | 0.1-0.25 | varnish worn
+thermometer nailed by the door | 0.45 | 0.02-0.06 | analog dial
+outlet strip added along the base | 0.4 | 0.02-0.08 | modern retrofit

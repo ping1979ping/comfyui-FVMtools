@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+pickups nosed to the building | 0.65 | 0.25-0.5 | work-mud flanks
+handicap spots by the ramp | 0.55 | 0.1-0.25 | faded blue paint
+motorcycle pair parked together | 0.45 | 0.1-0.25 | helmets on mirrors
+entrance steps with a railing | 0.6 | 0.1-0.25 | astroturf treads
+newspaper boxes by the door | 0.5 | 0.05-0.15 | auto-trader and county news
+smokers' bench at the corner | 0.4 | 0.05-0.15 | coffee-can ashtray
+delivery van at the side door | 0.45 | 0.15-0.3 | ramp down
+puddles in the low spots | 0.5 | 0.1-0.25 | sky reflections
+state trooper cruiser parked | 0.35 | 0.15-0.3 | coffee stop
+tour bus taking up the back row | 0.3 | 0.2-0.4 | casino day trip
+gull working the lot | 0.4 | 0.05-0.15 | fry scout

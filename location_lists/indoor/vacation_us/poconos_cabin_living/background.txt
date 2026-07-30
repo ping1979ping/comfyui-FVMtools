@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+knotty pine walls | 1.0 | 0.5-0.9 | orange-toned tongue and groove
+wood stove on a slate pad | 0.8 | 0.2-0.4 | black steel with a glass door
+plaid couch with sagging cushions | 0.8 | 0.3-0.6 | flattened arms
+antler decor over the mantel | 0.5 | 0.1-0.3 | dusty mount
+picture window to the trees | 0.7 | 0.3-0.6 | wavy old glass
+board game shelf | 0.6 | 0.15-0.35 | taped box corners
+braided rug on plank floor | 0.65 | 0.25-0.5 | concentric ovals
+kitchenette along the back wall | 0.55 | 0.25-0.5 | two-burner stove
+ladder to a sleeping loft | 0.5 | 0.15-0.35 | worn rungs
+mismatched recliners | 0.55 | 0.2-0.4 | duct-taped corner
+firewood rack inside the door | 0.6 | 0.1-0.3 | split logs and kindling

@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+double-hung rods packed tight | 1.0 | 0.4-0.8 | hangers wedged shoulder to shoulder
+wire shelving above the rods | 0.8 | 0.25-0.5 | sweater stacks slumping
+shoe shelf rows near the floor | 0.7 | 0.2-0.4 | heels toed in with sneakers
+back wall with a full mirror | 0.6 | 0.2-0.45 | outfit-check smudges
+plastic drawer tower in the corner | 0.6 | 0.15-0.35 | labeled masking tape
+hanging garment bags at the end | 0.5 | 0.15-0.3 | zipped formal wear
+belt and scarf hooks inside the door | 0.55 | 0.1-0.25 | layered loops
+overflow tote bins up top | 0.6 | 0.2-0.4 | seasonal swap boxes
+laundry basket on the floor | 0.55 | 0.1-0.3 | try-on rejects
+bare bulb or boob light overhead | 0.55 | 0.05-0.15 | pull chain
+ironing board folded against the wall | 0.4 | 0.1-0.3 | scorched cover

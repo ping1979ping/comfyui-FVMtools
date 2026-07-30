@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+cannonball mid-air off the board | 0.55 | 0.1-0.25 | knees hugged
+towel wrapped shivering at the edge | 0.55 | 0.1-0.25 | lips faintly blue
+sunscreen worked onto a squirming kid | 0.5 | 0.1-0.25 | white war paint
+goggles suctioned into place | 0.5 | 0.03-0.1 | strap snap
+ladder climbed dripping | 0.55 | 0.05-0.2 | water sheet
+lounger dragged into the sun | 0.5 | 0.05-0.2 | legs scraping deck
+slush cup shared with two straws | 0.45 | 0.03-0.1 | brain-freeze pause
+kickboard lap with flutter kicks | 0.5 | 0.1-0.25 | splash rhythm
+adult swim groaned at | 0.45 | 0.05-0.2 | deck exodus
+wet hair slicked back at the wall | 0.5 | 0.05-0.15 | breath caught
+whistle pointed at a runner | 0.45 | 0.05-0.15 | walk enforced

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+to-go cup left on a bumper | 0.45 | 0.02-0.06 | forgotten at the door
+mint toothpicks dropped | 0.35 | 0.02-0.05 | scattered pair
+newspaper tucked under an arm | 0.45 | 0.02-0.08 | folded sports page
+doggie bag carried out | 0.5 | 0.02-0.08 | foil swan maybe
+pie box tied with string | 0.45 | 0.02-0.08 | bakery counter treat
+umbrella dripping in a truck bed | 0.35 | 0.02-0.08 | quick storm
+receipt spike visible in the window | 0.35 | 0.02-0.06 | counter relic
+crumbs tossed to the gull | 0.35 | 0.02-0.08 | against better judgment
+motorcycle gloves on a seat | 0.4 | 0.02-0.06 | fingers curled
+coffee thermos refilled to go | 0.45 | 0.02-0.06 | road ritual
+quarters left in the paper box | 0.35 | 0.02-0.05 | honor system

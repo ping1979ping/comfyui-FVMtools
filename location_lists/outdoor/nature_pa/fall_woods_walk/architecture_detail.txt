@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+leaf layer over the path stones | 0.6 | 0.15-0.4 | slick hidden cobbles
+water bar log across the grade | 0.45 | 0.05-0.15 | half-buried diverter
+wall gap where a gate stood | 0.4 | 0.05-0.2 | rotted post stub
+barbed wire grown into a tree | 0.4 | 0.02-0.08 | swallowed strand
+survey marker on a corner tree | 0.35 | 0.02-0.06 | yellow tag nail
+frost heave in the muck crossing | 0.35 | 0.05-0.15 | ice needle columns
+root flare washed bare | 0.45 | 0.05-0.15 | knuckled grip
+old apple tree from a homestead | 0.4 | 0.1-0.25 | wolf-tree spread
+charcoal flat from a hearth | 0.3 | 0.05-0.2 | black soil circle
+blaze repainted over an old one | 0.4 | 0.02-0.06 | doubled rectangle
+culvert of dry-laid stone | 0.35 | 0.05-0.15 | keystone arch

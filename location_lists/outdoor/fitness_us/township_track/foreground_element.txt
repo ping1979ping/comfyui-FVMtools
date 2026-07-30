@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+laces double-knotted at the line | 0.6 | 0.05-0.15 | pre-run ritual
+watch started into the first stride | 0.6 | 0.05-0.15 | beep and go
+stride opened on the back straight | 0.55 | 0.1-0.3 | relaxed form
+hands on knees after the interval | 0.55 | 0.05-0.2 | recovery fold
+water grabbed on the walk lap | 0.5 | 0.03-0.1 | bottle swing
+hurdle height adjusted | 0.45 | 0.05-0.15 | pin and slide
+baton passed in the exchange zone | 0.4 | 0.05-0.2 | reach and grip
+bleacher step-ups counted | 0.45 | 0.05-0.2 | rhythm climb
+sunset squinted at mid-cooldown | 0.45 | 0.05-0.2 | golden lap
+calf stretched on the curb ring | 0.5 | 0.05-0.15 | heel drop
+splits read off the wrist | 0.5 | 0.03-0.1 | pace math

@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+plain studio wall in warm grey | 1.0 | 0.5-0.9 | matte paint with scuffs
+wall of mirrors on one side | 0.75 | 0.3-0.6 | streak-cleaned glass
+shelf of rolled mats | 0.7 | 0.2-0.45 | mixed colors and wear
+big front window with paper shade | 0.55 | 0.2-0.5 | strip-mall daylight
+corner altar shelf with a plant | 0.5 | 0.1-0.3 | pothos trailing down
+coat hooks by the door | 0.55 | 0.1-0.3 | jackets and tote bags
+cubby shelf full of shoes | 0.6 | 0.15-0.35 | sneakers toed in
+string lights along the ceiling edge | 0.45 | 0.1-0.3 | warm dots
+class schedule board by the door | 0.5 | 0.1-0.25 | dry-erase grid
+folded blankets in a stack | 0.55 | 0.1-0.3 | wool edges aligned
+speaker on a stand in the corner | 0.45 | 0.05-0.15 | cable taped down

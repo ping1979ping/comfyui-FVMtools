@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+amazon box tucked behind a planter | 0.5 | 0.03-0.1 | driver's hiding spot
+citronella candle on the rail | 0.45 | 0.02-0.08 | melted center
+kid's bike dropped on the walk | 0.5 | 0.1-0.25 | wheel still spinning
+watering can by the planters | 0.5 | 0.03-0.1 | faded plastic
+flag football left on the lawn | 0.45 | 0.03-0.1 | dew-damp
+car keys and sunglasses on the rail | 0.4 | 0.02-0.06 | quick errand pause
+halloween or seasonal decor bin | 0.35 | 0.05-0.15 | between-holidays limbo
+iced tea glass sweating on the arm | 0.45 | 0.02-0.08 | lemon wedge
+newspaper in a plastic sleeve | 0.4 | 0.02-0.06 | driveway toss
+dog leash hooked by the door | 0.45 | 0.02-0.08 | walk-ready
+solar path lights along the walk | 0.5 | 0.05-0.15 | tilted stakes

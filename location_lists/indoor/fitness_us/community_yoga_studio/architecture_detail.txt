@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+laminate floor in pale wood-look | 0.85 | 0.3-0.6 | sock-polished sheen
+baseboard heater along the wall | 0.5 | 0.05-0.2 | ticking metal fins
+dimmer switch bank by the door | 0.5 | 0.02-0.08 | taped preset marks
+ceiling fan turning slowly | 0.5 | 0.05-0.15 | wobble at speed one
+drop ceiling painted out black | 0.4 | 0.15-0.4 | sprayed grid
+door with a quiet-close arm | 0.4 | 0.05-0.15 | slow hinge
+window film bubbling at a corner | 0.35 | 0.05-0.15 | peeling frost layer
+column wrapped in rope light | 0.35 | 0.05-0.15 | warm coil
+vent hushed to a whisper | 0.4 | 0.03-0.1 | filter taped over
+threshold strip at the entry | 0.4 | 0.02-0.08 | worn aluminum
+wall clock with a silent sweep | 0.45 | 0.03-0.08 | no ticking

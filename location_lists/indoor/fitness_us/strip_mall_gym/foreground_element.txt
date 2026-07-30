@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dumbbells re-racked with a clank | 0.6 | 0.1-0.25 | knurled handles
+water bottle squeezed mid-gulp | 0.6 | 0.05-0.15 | condensation ring
+phone timer checked between sets | 0.6 | 0.05-0.15 | rest countdown
+towel wiped across the forehead | 0.55 | 0.05-0.15 | damp terry
+mirror check of the form | 0.55 | 0.1-0.3 | focused stare
+headphones adjusted over a cap | 0.5 | 0.05-0.15 | cord tucked
+bench wiped down with spray | 0.5 | 0.05-0.15 | paper towel pass
+plates slid onto the bar | 0.5 | 0.1-0.25 | collar spun tight
+laces retied on one knee | 0.45 | 0.05-0.15 | double knot
+gym bag unzipped on the floor | 0.5 | 0.05-0.2 | straps splayed
+chalk clapped off the palms | 0.4 | 0.05-0.15 | drifting dust

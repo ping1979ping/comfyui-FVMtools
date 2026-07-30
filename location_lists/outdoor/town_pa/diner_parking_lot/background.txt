@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+chrome-edged diner facade | 1.0 | 0.4-0.8 | stainless bands and glass block
+neon OPEN sign buzzing | 0.7 | 0.1-0.25 | red script glow
+gravel lot edge past the asphalt | 0.6 | 0.2-0.45 | potholed transition
+route highway beyond the lot | 0.6 | 0.25-0.5 | passing trucks
+diner windows with booth silhouettes | 0.7 | 0.25-0.5 | venetian blinds half up
+reader board sign on a pole | 0.6 | 0.1-0.3 | scrapple special letters
+dumpster corral at the back | 0.45 | 0.1-0.25 | wooden fence screen
+flag pole by the entrance | 0.45 | 0.05-0.2 | halyard clanking
+propane tank cage at the side | 0.4 | 0.05-0.15 | painted white cage
+farm field across the road | 0.5 | 0.25-0.5 | corn rows to the treeline
+milk crate stack by the kitchen door | 0.45 | 0.05-0.15 | plastic tower

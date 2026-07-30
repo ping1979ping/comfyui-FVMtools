@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear cold air | 0.8 | - | -
+cold air with breath visible | 0.6 | - | -
+gusty wind stripping the leaves | 0.6 | - | -
+flat overcast sky | 0.8 | - | -
+light drizzle in the air | 0.5 | - | -
+damp leaf-mulch smell after rain | 0.55 | - | -
+first flurries not sticking | 0.4 | - | -
+raw wind with a wet edge | 0.45 | - | -
+thin fog burning off late | 0.45 | - | -
+still cold air in the hollow | 0.5 | - | -

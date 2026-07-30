@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+sugar packets spilled by the machine | 0.6 | 0.02-0.08 | torn paper packets
+creamer tubs in a bowl | 0.6 | 0.02-0.08 | mixed flavors
+someone's labeled lunch bag | 0.6 | 0.03-0.1 | sharpie name
+crossword folded on the table | 0.45 | 0.03-0.1 | half-filled squares
+birthday sheet cake remains | 0.4 | 0.05-0.15 | frosting-smeared board
+mug tree with novelty mugs | 0.5 | 0.03-0.1 | mismatched handles
+plastic cutlery cup | 0.55 | 0.02-0.06 | forks nearly out
+salt and pepper shakers | 0.45 | 0.02-0.06 | rice grains in the salt
+menu stack from the pizza place | 0.5 | 0.02-0.08 | dog-eared corners
+tupperware drying upside down | 0.5 | 0.02-0.08 | warped lids
+coffee sign-up sheet on the board | 0.4 | 0.02-0.08 | mostly blank lines

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+dry erase eraser on the tray | 0.55 | 0.02-0.06 | marker-blackened felt
+abandoned coffee cups at seats | 0.6 | 0.03-0.1 | varying fill levels
+agenda printouts at each place | 0.5 | 0.05-0.15 | corner-stapled pages
+remote for the flatscreen | 0.5 | 0.02-0.06 | taped battery cover
+sticky notes stuck to the table | 0.45 | 0.02-0.08 | action items scrawled
+hdmi dongle bowl | 0.45 | 0.02-0.08 | adapter tangle
+name tent cards half collapsed | 0.4 | 0.03-0.1 | folded cardstock
+phone face down mid-meeting | 0.5 | 0.02-0.06 | buzzing against wood
+laser pointer without batteries | 0.35 | 0.02-0.05 | chewed cap
+pizza boxes from a lunch meeting | 0.4 | 0.05-0.15 | grease-spotted lids
+umbrella hooked on a chair | 0.35 | 0.03-0.1 | still damp

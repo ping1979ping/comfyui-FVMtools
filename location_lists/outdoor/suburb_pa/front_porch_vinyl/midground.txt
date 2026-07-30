@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+two rocking chairs on the porch | 0.7 | 0.2-0.45 | weathered resin
+welcome mat at the door | 0.65 | 0.05-0.15 | bristle letters worn
+planters of seasonal flowers | 0.6 | 0.1-0.3 | petunias spilling
+package left by the door | 0.55 | 0.05-0.15 | taped brown box
+porch swing on chains | 0.45 | 0.2-0.4 | drifting slightly
+kids' chalk buckets on the step | 0.45 | 0.05-0.15 | rainbow stubs
+garden hose coiled by the spigot | 0.55 | 0.1-0.25 | kinked green loops
+recycling bin at the curb | 0.5 | 0.1-0.25 | lid flipped back
+mail sticking from the box | 0.5 | 0.03-0.1 | folded flyers
+cat watching from the rail | 0.4 | 0.05-0.15 | tail flicking
+wind chime in the corner | 0.45 | 0.03-0.1 | tangled strings

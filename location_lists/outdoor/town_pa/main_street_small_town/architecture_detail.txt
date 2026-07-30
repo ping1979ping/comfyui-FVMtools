@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+sidewalk slabs heaved by roots | 0.6 | 0.1-0.3 | tilted joints
+curb painted for the fire zone | 0.5 | 0.05-0.15 | yellow chipped stripe
+cornerstone dated 1912 | 0.4 | 0.02-0.08 | carved numerals
+transom windows over the doors | 0.45 | 0.05-0.15 | gold-leaf remnants
+cellar doors in the sidewalk | 0.4 | 0.05-0.15 | steel diamond plate
+brick sidewalk section from restoration | 0.45 | 0.1-0.25 | herringbone patch
+utility pole layered with staples | 0.5 | 0.05-0.15 | flyer archaeology
+storm drain with a painted fish | 0.4 | 0.02-0.08 | watershed stencil
+alley gap between buildings | 0.45 | 0.1-0.3 | dumpster glimpse
+second-story apartments over shops | 0.5 | 0.2-0.4 | AC units in windows
+flag bracket on every other pole | 0.45 | 0.03-0.1 | veterans banners

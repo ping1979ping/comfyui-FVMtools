@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+log settled into the stove | 0.6 | 0.1-0.25 | sparks rising
+quilt pulled over the knees | 0.6 | 0.1-0.3 | couch corner claim
+cocoa mug held in both hands | 0.55 | 0.05-0.15 | marshmallow melt
+puzzle piece tried and rejected | 0.5 | 0.05-0.15 | close but wrong
+cards dealt around the table | 0.5 | 0.1-0.25 | flicked precisely
+boots unlaced at the door | 0.5 | 0.05-0.2 | heel wedged off
+window fog wiped for a look | 0.45 | 0.05-0.15 | palm circle
+guitar strummed quietly | 0.4 | 0.1-0.25 | half-remembered song
+flannel sleeves rolled up | 0.5 | 0.05-0.2 | stove-side warmth
+dog ears scratched absently | 0.45 | 0.05-0.15 | thumping tail
+phone raised for a no-signal check | 0.45 | 0.03-0.1 | one bar hunt

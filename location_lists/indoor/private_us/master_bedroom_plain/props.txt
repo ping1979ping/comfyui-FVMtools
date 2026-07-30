@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+laundry basket of unfolded towels | 0.6 | 0.05-0.2 | warm from the dryer
+deodorant and lotion on the dresser | 0.6 | 0.03-0.1 | mixed caps
+jewelry dish by the mirror | 0.55 | 0.02-0.08 | tangled chains
+charging cable knot | 0.55 | 0.02-0.08 | three cords braided
+receipts and change on the dresser | 0.5 | 0.02-0.08 | pocket dump
+hair dryer on the bed | 0.4 | 0.03-0.1 | cord wrapped loose
+paperback stack on the floor | 0.45 | 0.03-0.1 | leaning tower
+throw pillows shoved aside | 0.55 | 0.05-0.2 | nightly pile
+glasses case on the nightstand | 0.45 | 0.02-0.06 | snapped shut
+dog leash on the door knob | 0.4 | 0.02-0.08 | hanging clip
+lint roller on the dresser | 0.4 | 0.02-0.06 | half-peeled sheet

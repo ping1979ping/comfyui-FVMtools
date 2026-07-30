@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+carts drifted against a curb | 0.55 | 0.1-0.25 | wheels turned
+newspaper boxes in a row | 0.45 | 0.05-0.15 | mixed publications
+handicap ramp with yellow bumps | 0.55 | 0.1-0.2 | truncated domes
+minivan idling for a pickup | 0.5 | 0.15-0.35 | hazards blinking
+folding sign for a phone repair | 0.45 | 0.05-0.15 | arrow flipping
+bike locked to a column | 0.45 | 0.05-0.15 | front wheel gone once
+delivery hand truck by a door | 0.45 | 0.05-0.15 | strapped boxes
+kids waiting outside the karate school | 0.4 | 0.15-0.3 | white gis
+trash can by each column | 0.55 | 0.05-0.15 | dome lids
+puddle mirroring the sign band | 0.45 | 0.1-0.25 | oily sheen
+sale rack rolled outside | 0.45 | 0.1-0.25 | discount tags

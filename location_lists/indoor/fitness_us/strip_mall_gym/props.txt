@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+chalk bucket by the racks | 0.5 | 0.03-0.1 | dusted rim
+lifting belt hung on a peg | 0.5 | 0.03-0.1 | cracked leather
+resistance bands on a hook | 0.55 | 0.03-0.1 | faded colors
+someone's keys and phone on the floor | 0.55 | 0.02-0.08 | screen face up
+shaker bottle on a bench | 0.6 | 0.02-0.08 | protein residue
+gym wipes canister empty | 0.45 | 0.02-0.08 | flap hanging open
+lost earbud case on the desk | 0.35 | 0.02-0.05 | taped label
+foam roller against the wall | 0.55 | 0.03-0.12 | dented ridges
+jump rope coiled on a peg | 0.45 | 0.02-0.08 | worn handles
+clip collars scattered | 0.5 | 0.02-0.06 | spring-loaded pairs
+sweat towel draped on a rack | 0.5 | 0.03-0.1 | gym logo faded

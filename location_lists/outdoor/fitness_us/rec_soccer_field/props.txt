@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+orange slice bag in the cooler | 0.5 | 0.02-0.08 | halftime rite
+shin guards strapped outside socks | 0.5 | 0.02-0.06 | backwards kid
+captain band on a sleeve | 0.4 | 0.02-0.05 | stretched elastic
+clipboard roster in a gust | 0.4 | 0.02-0.06 | pages pinned
+juice pouches in a mesh bag | 0.45 | 0.02-0.08 | straw punch-outs
+spare cleats tied by the laces | 0.45 | 0.02-0.06 | grown-out pair
+bug spray passed down the chairs | 0.45 | 0.02-0.06 | dusk defense
+umbrella clamped to a chair | 0.4 | 0.03-0.1 | sun angle set
+scorebook kept by a parent | 0.4 | 0.02-0.06 | pencil tally
+ball pump needle kit | 0.4 | 0.02-0.05 | pocket rescue
+sweatshirt goalposts for warmups | 0.4 | 0.03-0.1 | improvised drill

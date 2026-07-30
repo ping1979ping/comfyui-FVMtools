@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+mats unrolled in loose rows | 1.0 | 0.4-0.7 | staggered spacing
+cork blocks paired at mat tops | 0.7 | 0.1-0.3 | dented corners
+straps coiled beside mats | 0.6 | 0.05-0.15 | buckle ends
+bolster propped against the wall | 0.55 | 0.1-0.3 | flattened middle
+instructor mat facing the room | 0.6 | 0.15-0.3 | centered alone
+water bottles at mat corners | 0.65 | 0.05-0.15 | assorted steel and plastic
+folding chair for a modified pose | 0.35 | 0.1-0.25 | paint-chipped seat
+fan on a stand oscillating | 0.45 | 0.1-0.25 | ribbon tied to the cage
+diffuser puffing in the corner | 0.4 | 0.05-0.15 | mist curl
+someone settled early in child's pose | 0.45 | 0.1-0.3 | still shape
+towels folded at the mat ends | 0.5 | 0.05-0.15 | rental stack

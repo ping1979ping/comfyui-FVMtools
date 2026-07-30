@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+trekking poles leaned on a bumper | 0.5 | 0.02-0.08 | cork grips
+water bottles lined on a tailgate | 0.55 | 0.02-0.08 | pre-hike ritual
+trail mix bag passed around | 0.5 | 0.02-0.08 | m&m mining
+paper map folded to the section | 0.45 | 0.02-0.08 | crease-worn
+dog leash clipped to a harness | 0.5 | 0.02-0.06 | excited strain
+muddy boots swapped at the car | 0.5 | 0.03-0.1 | sock-footed hop
+granola wrapper pocketed | 0.4 | 0.02-0.05 | pack-it-out habit
+first aid kit in a dry bag | 0.4 | 0.02-0.06 | zipped pouch
+camera with a zoom slung across | 0.4 | 0.02-0.08 | bird hopes
+tick spray applied at the ankles | 0.45 | 0.02-0.08 | sock cuff spritz
+thermos of coffee on the rail | 0.4 | 0.02-0.06 | steam curl

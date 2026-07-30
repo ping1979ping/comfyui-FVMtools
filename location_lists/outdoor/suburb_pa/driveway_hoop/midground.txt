@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+basketball resting against the base | 0.7 | 0.05-0.15 | worn channels
+scooter dropped mid-driveway | 0.5 | 0.05-0.2 | handlebars turned
+sidewalk chalk arrows and games | 0.45 | 0.1-0.3 | hopscotch grid
+trash cans staged for pickup | 0.55 | 0.1-0.25 | lids numbered
+car in the open garage bay | 0.5 | 0.2-0.4 | tail lights inward
+work bench visible in the garage | 0.5 | 0.15-0.35 | pegboard shadowed
+lawn mower parked by the bay | 0.45 | 0.1-0.25 | grass-caked deck
+rebounder net beside the hoop | 0.35 | 0.1-0.25 | return chute
+folding camp chairs for spectators | 0.4 | 0.1-0.25 | cup holders sagging
+dog watching from the storm door | 0.4 | 0.05-0.15 | nose to the glass
+skateboard upside down on the lawn | 0.4 | 0.05-0.15 | wheels still turning

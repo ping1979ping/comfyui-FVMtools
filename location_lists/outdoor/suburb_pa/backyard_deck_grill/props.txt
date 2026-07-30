@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+spatula and tongs on the grill shelf | 0.65 | 0.03-0.1 | grease sheen
+paper plate stack weighted with a rock | 0.5 | 0.02-0.08 | breeze insurance
+ketchup and mustard bottles | 0.55 | 0.02-0.08 | picnic table pair
+bag of buns clipped shut | 0.5 | 0.02-0.08 | squished corner
+wiffle bat in the grass | 0.5 | 0.03-0.1 | cracked barrel
+sunscreen and bug spray on the table | 0.55 | 0.02-0.08 | family defense line
+bluetooth speaker on the rail | 0.5 | 0.02-0.08 | playlist going
+corn hole boards mid-lawn | 0.5 | 0.1-0.25 | bags scattered
+sidewalk chalk on the patio edge | 0.4 | 0.02-0.08 | rain-melted stubs
+fly swatter on a nail | 0.35 | 0.02-0.06 | bent mesh
+garden gloves on the rail | 0.45 | 0.02-0.06 | dirt-crusted palms

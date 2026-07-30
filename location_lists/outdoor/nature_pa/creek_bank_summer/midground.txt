@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+towels spread on warm rocks | 0.6 | 0.1-0.3 | drying flat
+cooler wedged in the shallows | 0.5 | 0.05-0.2 | cans cooling in the current
+kids stacking a stone dam | 0.45 | 0.1-0.3 | busy engineering
+water shoes drying on a log | 0.5 | 0.05-0.15 | neoprene pairs
+folding chair in the shallows | 0.45 | 0.1-0.25 | legs sunk in gravel
+minnow bucket at the edge | 0.35 | 0.03-0.1 | dip net across
+dog shaking off mid-bank | 0.45 | 0.05-0.2 | spray halo
+inner tube beached on the bar | 0.4 | 0.1-0.25 | patched vinyl
+fishing rod propped in a forked stick | 0.4 | 0.05-0.15 | line in the pool
+rope swing over the hole | 0.4 | 0.05-0.2 | knotted polypro
+driftwood pile at the bend | 0.45 | 0.1-0.3 | bleached tangle

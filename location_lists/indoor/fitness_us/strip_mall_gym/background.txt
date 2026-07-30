@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+mirrored wall over the dumbbell rack | 1.0 | 0.4-0.8 | smudged floor-length mirrors
+row of treadmills facing TVs | 0.85 | 0.4-0.7 | worn belts and consoles
+motivational decal on the wall | 0.6 | 0.2-0.4 | peeling vinyl lettering
+cable machine tower | 0.7 | 0.25-0.5 | worn pulleys and pins
+front desk with a check-in scanner | 0.5 | 0.2-0.4 | laminate counter
+storefront glass papered halfway | 0.5 | 0.25-0.5 | sun-faded posters
+wall-mounted fans high up | 0.5 | 0.1-0.25 | dusty cages
+group class room behind glass | 0.45 | 0.2-0.45 | stacked step platforms
+rack of fixed barbells | 0.6 | 0.2-0.4 | chipped chrome sleeves
+TVs on a sports channel | 0.55 | 0.1-0.3 | captions on
+water fountain with bottle filler | 0.5 | 0.1-0.25 | counter ticking

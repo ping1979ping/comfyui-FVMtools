@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+diagonal-parked pickups | 0.65 | 0.2-0.45 | tailgates to the walk
+bench outside the bakery | 0.6 | 0.1-0.3 | dedication plaque
+sandwich board on the sidewalk | 0.6 | 0.05-0.2 | daily special chalk
+bike rack with two bikes | 0.5 | 0.1-0.25 | one helmet clipped
+parking meters at intervals | 0.55 | 0.05-0.2 | coin-only heads
+planter tubs along the curb | 0.55 | 0.1-0.25 | township-maintained
+dog tied outside the coffee shop | 0.45 | 0.05-0.15 | patient sit
+stroller parked by the bench | 0.4 | 0.1-0.25 | brake locked
+newspaper box chained to a post | 0.45 | 0.05-0.12 | county weekly
+mail truck making its loop | 0.4 | 0.1-0.25 | flashers on
+teens clustered by the pizza door | 0.45 | 0.15-0.3 | backpacks dropped

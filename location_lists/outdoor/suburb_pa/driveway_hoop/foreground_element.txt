@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+free throw lined up | 0.65 | 0.1-0.3 | elbow tucked
+rebound chased to the lawn | 0.55 | 0.1-0.3 | bounce off the rim
+crossover dribbled low | 0.5 | 0.1-0.25 | sneaker scrape
+ball spun on a finger | 0.45 | 0.05-0.15 | showing off
+sweat wiped on a shoulder | 0.5 | 0.05-0.15 | mid-game pause
+hoop lowered for the little kids | 0.4 | 0.1-0.25 | crank handle
+horse letters counted on fingers | 0.45 | 0.05-0.15 | h-o-r
+water chugged between games | 0.5 | 0.05-0.15 | bottle crackle
+chalk lines redrawn | 0.4 | 0.05-0.15 | crouched stroke
+garage fridge raided for drinks | 0.4 | 0.05-0.2 | door glow
+buzzer beater called aloud | 0.45 | 0.05-0.2 | three-two-one

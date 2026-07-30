@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning haze | 0.8 | - | -
+bright mid morning | 0.85 | - | -
+flat overcast midday | 0.9 | - | -
+harsh summer noon glare | 0.6 | - | -
+late afternoon long shadows | 0.9 | - | -
+golden hour before sunset | 0.8 | - | -
+dusk with porch lights coming on | 0.7 | - | -
+blue hour after sunset | 0.55 | - | -
+grey november midday | 0.7 | - | -
+school-run morning light | 0.75 | - | -

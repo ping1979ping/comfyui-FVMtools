@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning haze | 0.8 | - | -
+bright mid morning | 0.85 | - | -
+harsh summer noon glare | 0.8 | - | -
+lazy mid afternoon | 0.85 | - | -
+late afternoon long shadows | 0.9 | - | -
+golden hour before sunset | 0.85 | - | -
+dusk with lightning bugs rising | 0.6 | - | -
+long summer evening light | 0.8 | - | -
+flat overcast midday | 0.7 | - | -
+early evening cookout hour | 0.75 | - | -

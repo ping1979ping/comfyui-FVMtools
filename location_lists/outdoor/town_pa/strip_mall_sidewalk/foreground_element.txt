@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+cart wrangled from the corral | 0.55 | 0.1-0.25 | nested yank
+door leaned open with a shoulder | 0.55 | 0.05-0.2 | bags in both hands
+pizza boxes balanced to the car | 0.5 | 0.05-0.2 | chin assist
+kid steered by the hood | 0.45 | 0.05-0.2 | parking lot protocol
+receipt checked against the bags | 0.5 | 0.05-0.15 | walk-and-scan
+gumball cranked and caught | 0.4 | 0.03-0.1 | palm at the chute
+karate belt retied outside | 0.4 | 0.05-0.15 | bow adjusted
+laundry bag hoisted higher | 0.45 | 0.05-0.15 | grip shift
+puddle stepped around | 0.5 | 0.05-0.15 | tightrope curb
+keys fished out at the curb | 0.5 | 0.03-0.1 | pocket dig
+takeout sniffed through the bag | 0.45 | 0.03-0.1 | anticipation

@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cars nosed against the rail | 0.6 | 0.2-0.45 | dusty hatchbacks
+kiosk with permit envelopes | 0.5 | 0.05-0.2 | pencil on a string
+dog watered from a bottle | 0.5 | 0.05-0.15 | cupped-hand bowl
+hikers checking the map board | 0.5 | 0.1-0.3 | finger on the route
+bear-proof trash can | 0.55 | 0.05-0.15 | latched steel lid
+bench made from a split log | 0.45 | 0.1-0.25 | eagle scout plaque
+boot-brush station at the trail mouth | 0.4 | 0.03-0.1 | invasive-species sign
+firewood bundle stack for campers | 0.4 | 0.1-0.25 | shrink-wrapped
+horse rig parked long-ways | 0.3 | 0.2-0.4 | trailer with hay bag
+kayaks strapped on a roof | 0.4 | 0.1-0.25 | foam block rig
+fallen log at the lot edge | 0.45 | 0.1-0.25 | shelf fungus

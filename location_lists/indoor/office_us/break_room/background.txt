@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+break room wall with notices | 1.0 | 0.5-0.9 | cork board and OSHA posters
+counter with coffee maker | 0.9 | 0.3-0.6 | stained laminate
+vending machines side by side | 0.75 | 0.3-0.6 | lit glass fronts
+cabinets over the counter | 0.7 | 0.3-0.6 | mismatched laminate doors
+small window onto the parking lot | 0.5 | 0.15-0.4 | dusty mini blinds
+sink with a drying rack | 0.65 | 0.15-0.4 | water-spotted steel
+wall clock over the door | 0.55 | 0.05-0.15 | plain white face
+white refrigerator with magnets | 0.8 | 0.2-0.5 | passive-aggressive notes taped up
+microwave on the counter | 0.75 | 0.1-0.3 | splattered interior glass
+bulletin board with sign-up sheets | 0.5 | 0.15-0.35 | overlapping flyers
+water cooler in the corner | 0.6 | 0.1-0.3 | blue five-gallon jug

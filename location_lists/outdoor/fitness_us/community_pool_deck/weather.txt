@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+humid summer haze | 0.8 | - | -
+heavy still air before a thunderstorm | 0.5 | - | -
+sudden afternoon downpour passing | 0.4 | - | -
+wet pavement steaming after rain | 0.45 | - | -
+dry heat with a light breeze | 0.7 | - | -
+sticky evening air | 0.6 | - | -
+thin high cloud | 0.6 | - | -
+flat overcast sky | 0.6 | - | -
+gusty wind ahead of a storm front | 0.45 | - | -
+cloudless glare off the water | 0.5 | - | -

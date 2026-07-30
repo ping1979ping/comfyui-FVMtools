@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bed corner with kicked-off throw | 0.8 | 0.2-0.5 | slid to the floor
+phone charger draped over the nightstand | 0.7 | 0.05-0.15 | cable to the outlet
+bench of folded laundry at the foot | 0.55 | 0.15-0.35 | waiting to be put away
+box fan in the window | 0.5 | 0.1-0.3 | humming on high
+slippers kicked apart on the carpet | 0.55 | 0.05-0.15 | flattened heels
+dog bed beside the dresser | 0.4 | 0.1-0.3 | hair-covered cushion
+full-length mirror against the wall | 0.55 | 0.15-0.35 | leaning unhung
+book splayed on the nightstand | 0.5 | 0.03-0.1 | spine cracked
+alarm clock with red digits | 0.5 | 0.03-0.1 | blinking wrong time
+water glass half full | 0.5 | 0.02-0.08 | night stand ring
+cat asleep in the laundry | 0.35 | 0.05-0.2 | curled deep

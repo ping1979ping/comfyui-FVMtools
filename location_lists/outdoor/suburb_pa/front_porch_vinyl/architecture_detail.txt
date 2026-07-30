@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+porch floorboards painted grey | 0.7 | 0.25-0.5 | worn traffic path
+downspout at the porch corner | 0.55 | 0.05-0.15 | splash block below
+storm door closer arm | 0.45 | 0.02-0.08 | hissing cylinder
+doorbell with a camera | 0.5 | 0.02-0.06 | glowing ring
+porch light with a bug halo | 0.45 | 0.03-0.1 | yellowed globe
+step edge painted with grit strip | 0.45 | 0.05-0.12 | anti-slip band
+lattice skirt under the porch | 0.45 | 0.1-0.25 | diamond gaps
+gutter guard sticking up | 0.35 | 0.03-0.1 | lifted mesh
+hose spigot dripping | 0.4 | 0.02-0.06 | rust streak below
+settlement crack in the walk | 0.4 | 0.05-0.15 | ant hill in the joint
+storm door sticker faded | 0.35 | 0.02-0.06 | security company logo

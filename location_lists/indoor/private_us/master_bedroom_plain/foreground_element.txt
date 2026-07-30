@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+comforter pulled straight | 0.6 | 0.15-0.4 | morning fix
+sock balanced on one foot | 0.5 | 0.05-0.15 | getting dressed
+phone checked against the pillow | 0.6 | 0.05-0.2 | face lit
+laundry folded on the bed | 0.6 | 0.1-0.3 | t-shirt mid-fold
+earrings put on at the mirror | 0.5 | 0.05-0.15 | head tilted
+hamper lid pushed down | 0.45 | 0.05-0.15 | overfull press
+blinds cracked for a look outside | 0.5 | 0.05-0.15 | two fingers
+robe belt cinched | 0.5 | 0.1-0.25 | quick knot
+alarm silenced with a slap | 0.45 | 0.03-0.1 | eyes still shut
+lotion worked into the hands | 0.45 | 0.05-0.12 | ring set aside
+dog shooed off the bed | 0.35 | 0.1-0.25 | reluctant hop

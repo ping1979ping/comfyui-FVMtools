@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+plastic loungers in rows | 0.75 | 0.25-0.5 | strap-sagging frames
+family camp of towels and bags | 0.65 | 0.15-0.35 | claimed territory
+kickboards stacked by the lanes | 0.55 | 0.05-0.15 | foam wedges
+umbrella tables with tilted shade | 0.6 | 0.2-0.4 | crank handles
+swim team bags along the fence | 0.5 | 0.1-0.3 | mesh duffels
+puddles on the deck tile | 0.6 | 0.1-0.3 | footprint trails
+snack table under the awning | 0.5 | 0.1-0.25 | pretzel and slush line
+lost goggles bin on the counter | 0.45 | 0.03-0.1 | tangle of straps
+noodles floating loose | 0.55 | 0.05-0.2 | drifting colors
+lap swimmer in the far lane | 0.5 | 0.1-0.25 | steady freestyle
+adirondack chairs for the members | 0.4 | 0.15-0.3 | faded plastic

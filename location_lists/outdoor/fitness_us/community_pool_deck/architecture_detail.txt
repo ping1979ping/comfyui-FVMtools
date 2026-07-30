@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+deck tile with anti-slip texture | 0.6 | 0.15-0.4 | pebbled surface
+gutter grate around the pool lip | 0.55 | 0.05-0.2 | overflow slots
+depth numbers painted on the edge | 0.55 | 0.03-0.1 | 3FT to 9FT
+ladder rails polished bright | 0.5 | 0.03-0.1 | grip-worn chrome
+rope hooks on the fence posts | 0.4 | 0.02-0.08 | coiled spares
+backwash hose run to the drain | 0.4 | 0.05-0.15 | flat-lay canvas
+rules sign with faded lines | 0.5 | 0.05-0.15 | no-running header
+shower head on the locker wall | 0.45 | 0.03-0.1 | rinse-first sign
+expansion joints in the deck | 0.45 | 0.05-0.15 | tar lines
+guard stand bolts rusting | 0.4 | 0.02-0.08 | streaked base
+kiddie gate with a high latch | 0.45 | 0.03-0.1 | parent-height lock

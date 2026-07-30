@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+asphalt driveway with sealant patches | 1.0 | 0.4-0.8 | darker repair strips
+portable hoop with a sand base | 0.85 | 0.2-0.4 | tilted backboard
+garage door with dents at bumper height | 0.7 | 0.3-0.6 | white panels
+minivan parked to one side | 0.6 | 0.25-0.5 | magnet ribbon on the gate
+basketball chalk key drawn | 0.45 | 0.1-0.3 | rain-faded lines
+front lawn edging the blacktop | 0.6 | 0.2-0.45 | trimmed border
+street with parked cars beyond | 0.55 | 0.25-0.5 | quiet residential
+neighbor's driveway hoop across | 0.4 | 0.1-0.3 | rival setup
+basement window wells along the house | 0.4 | 0.1-0.25 | gravel and covers
+oil stain at the parking spot | 0.5 | 0.05-0.2 | absorbent scatter
+mailbox at the driveway mouth | 0.5 | 0.05-0.15 | post leaning

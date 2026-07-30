@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+toothbrush cup crowded | 0.7 | 0.02-0.08 | family bristle mix
+hand soap pump nearly empty | 0.6 | 0.02-0.06 | last inch
+bath bomb bowl by the tub | 0.35 | 0.02-0.08 | pastel spheres
+makeup bag unzipped on the vanity | 0.55 | 0.03-0.1 | spilling brushes
+towel animals nobody refolds | 0.3 | 0.03-0.1 | vacation habit
+box of tissues on the tank | 0.5 | 0.02-0.06 | one pulled up
+contact lens case by the faucet | 0.45 | 0.02-0.05 | left-right lids
+kids' toothpaste with the cap off | 0.45 | 0.02-0.06 | glitter gel
+air freshener spray on the shelf | 0.5 | 0.02-0.06 | linen scent
+hair ties in a soap dish | 0.5 | 0.02-0.06 | stretched spirals
+bathrobe on the door hook | 0.55 | 0.1-0.3 | waffle weave

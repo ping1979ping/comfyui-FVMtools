@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+carpet flattened down the middle | 0.7 | 0.2-0.5 | traffic stripe
+wire shelf shadows on the wall | 0.45 | 0.1-0.3 | grid lines
+rod bracket bent from weight | 0.4 | 0.02-0.08 | sagging center
+door that only opens halfway | 0.4 | 0.05-0.15 | blocked arc
+outlet used for the iron | 0.4 | 0.02-0.06 | single plug
+paint scuffs at hanger height | 0.45 | 0.05-0.15 | rubbed line
+attic hatch in the ceiling | 0.3 | 0.05-0.15 | painted-shut frame
+baseboard dusty behind shoes | 0.4 | 0.03-0.1 | lint drift
+light switch with a dimmer knob | 0.35 | 0.02-0.06 | loose plate
+closet system anchor holes | 0.35 | 0.02-0.08 | old configuration dots
+threshold hump into the bedroom | 0.4 | 0.02-0.08 | carpet transition

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+flannel shirt on a peg | 0.55 | 0.05-0.15 | buffalo check
+percolator on the burner | 0.5 | 0.03-0.1 | blue enamel
+deck of cards mid-shuffle | 0.5 | 0.02-0.08 | worn corners
+firewood carrier of canvas | 0.5 | 0.03-0.1 | bark crumbs
+matches in a mason jar | 0.45 | 0.02-0.06 | strike strip glued
+paperback westerns on the shelf | 0.4 | 0.03-0.1 | yellowed pages
+bug spray by the door | 0.45 | 0.02-0.06 | greasy nozzle
+s'more sticks bundled | 0.45 | 0.02-0.08 | whittled points
+crossword book with a pen | 0.4 | 0.02-0.08 | half done
+board game money sorted | 0.4 | 0.03-0.1 | banker's tray
+wool socks drying on the stove rail | 0.45 | 0.02-0.08 | steaming faintly

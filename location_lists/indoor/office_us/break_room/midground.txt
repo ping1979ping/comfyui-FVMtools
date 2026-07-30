@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+round table with mismatched chairs | 1.0 | 0.3-0.6 | wiped laminate top
+second table pushed to the wall | 0.6 | 0.2-0.5 | folding legs
+coffee pot half full on the burner | 0.8 | 0.05-0.2 | scorched glass carafe
+paper towel roll on the counter | 0.65 | 0.05-0.15 | torn edge hanging
+trash can with a swinging lid | 0.6 | 0.1-0.25 | overfull liner
+box of donuts left open | 0.5 | 0.05-0.15 | one left in the corner
+chair pulled out at an angle | 0.6 | 0.15-0.35 | worn vinyl seat
+lost-and-found box by the door | 0.4 | 0.1-0.25 | tangled umbrellas
+stack of paper cups by the machine | 0.55 | 0.03-0.1 | sleeve half gone
+dish tub with abandoned mugs | 0.5 | 0.05-0.15 | soaking handles
+ice machine growling in the corner | 0.4 | 0.1-0.3 | scuffed steel bin

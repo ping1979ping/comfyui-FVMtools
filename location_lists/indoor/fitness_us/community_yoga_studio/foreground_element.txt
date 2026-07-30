@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+mat unrolled with a flick | 0.6 | 0.1-0.3 | settling flat
+socks pulled off at the ankle | 0.55 | 0.05-0.15 | balanced on one foot
+strap looped around a foot | 0.5 | 0.05-0.2 | stretch in progress
+water bottle set down quietly | 0.5 | 0.03-0.1 | careful placement
+hair twisted up into a knot | 0.55 | 0.05-0.15 | elastic between teeth
+block reached for mid-pose | 0.5 | 0.05-0.15 | fingertips on cork
+blanket folded over the knees | 0.45 | 0.1-0.25 | settling for savasana
+hoodie unzipped before class | 0.5 | 0.1-0.25 | layer coming off
+phone silenced and tucked in a bag | 0.45 | 0.03-0.1 | last check
+wrists stretched against the floor | 0.45 | 0.05-0.15 | fingers spread
+mat wiped down after class | 0.5 | 0.05-0.15 | spray and cloth pass

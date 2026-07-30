@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+coffee table with puzzle in progress | 0.7 | 0.2-0.4 | edge pieces done
+quilt thrown over the couch back | 0.65 | 0.15-0.35 | hand-stitched squares
+space heater as backup | 0.45 | 0.05-0.15 | glowing coils
+card table set for a game | 0.5 | 0.15-0.35 | folding chairs pulled up
+cooler by the kitchenette | 0.5 | 0.1-0.25 | melted ice sloshing
+duffel bags along the wall | 0.55 | 0.1-0.3 | weekend packing
+lantern on the windowsill | 0.45 | 0.03-0.1 | battery powered
+dog stretched by the stove | 0.4 | 0.1-0.3 | twitching asleep
+snow boots drying on a mat | 0.45 | 0.05-0.15 | puddle ring
+marshmallow bag on the counter | 0.4 | 0.02-0.08 | clip sealed
+guitar leaned in the corner | 0.4 | 0.1-0.25 | missing a string

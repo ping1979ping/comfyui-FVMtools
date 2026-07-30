@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+leaf-covered path through hardwoods | 1.0 | 0.4-0.8 | russet and gold drift
+oaks holding brown leaves | 0.7 | 0.3-0.6 | rattling canopy
+maples gone bare at the crown | 0.65 | 0.25-0.5 | grey branch lace
+understory of witch hazel | 0.45 | 0.15-0.35 | late yellow ribbons
+stone wall running into the woods | 0.5 | 0.15-0.35 | farm-era line
+fog hanging in the hollow | 0.45 | 0.2-0.5 | soft grey pool
+deer stand in a distant tree | 0.35 | 0.05-0.15 | plywood platform
+laurel thicket staying green | 0.5 | 0.2-0.4 | leathery leaves
+old woods road grade | 0.5 | 0.2-0.45 | double-rut memory
+posted signs along one edge | 0.4 | 0.05-0.15 | purple paint blazes
+squirrel nest high in a fork | 0.4 | 0.05-0.12 | leaf ball

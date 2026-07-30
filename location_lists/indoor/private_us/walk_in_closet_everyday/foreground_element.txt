@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+hangers slid one by one | 0.7 | 0.1-0.3 | scrape along the rod
+top held up against the chest | 0.65 | 0.1-0.3 | mirror glance
+jeans tugged on mid-hop | 0.55 | 0.1-0.3 | one leg in
+shoe box pulled from the stack | 0.5 | 0.05-0.2 | tower wobbling
+belt threaded through loops | 0.5 | 0.05-0.15 | half-turned
+dress zipped with a reach back | 0.5 | 0.05-0.2 | elbow up
+sweater refolded on the shelf | 0.5 | 0.05-0.15 | sleeves tucked
+heels dangled from two fingers | 0.5 | 0.05-0.15 | deciding
+outfit flat-laid over the basket | 0.45 | 0.1-0.25 | combination test
+phone mirror photo taken | 0.5 | 0.05-0.2 | outfit check
+tags snipped with nail scissors | 0.4 | 0.03-0.1 | new top

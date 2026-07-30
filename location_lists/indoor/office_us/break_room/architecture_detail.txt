@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+vinyl tile floor | 0.8 | 0.3-0.6 | heel-scuffed squares
+drop ceiling with a humming light | 0.7 | 0.15-0.4 | flickering corner panel
+backsplash of plain white tile | 0.55 | 0.1-0.3 | coffee-splashed grout
+outlet crowded with plugs | 0.55 | 0.03-0.1 | adapter stack
+door with a push plate | 0.45 | 0.1-0.25 | worn steel plate
+baseboard peeling at the corner | 0.4 | 0.03-0.12 | lifted vinyl strip
+hand-washing sign over the sink | 0.5 | 0.03-0.1 | laminated printout
+thermostat with a plastic lockbox | 0.4 | 0.03-0.1 | scratched cover
+ceiling vent stained grey | 0.4 | 0.05-0.12 | dust-furred louvers
+window sill with dead flies | 0.3 | 0.03-0.1 | chipped paint
+fire extinguisher in a wall bracket | 0.45 | 0.03-0.1 | inspection tag hanging

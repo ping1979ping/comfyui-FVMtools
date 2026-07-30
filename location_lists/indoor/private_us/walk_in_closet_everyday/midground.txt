@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+dresses grouped at one end | 0.7 | 0.2-0.45 | casual to church order
+jeans folded over hangers | 0.7 | 0.15-0.35 | denim gradient
+work tops separated by color | 0.6 | 0.15-0.35 | rough rainbow
+step stool for the high shelf | 0.5 | 0.05-0.15 | folded flat
+empty hangers bunched at the rod end | 0.6 | 0.05-0.2 | wire and velvet mix
+donation bag half full | 0.5 | 0.1-0.25 | handles tied loose
+hamper of delicates | 0.45 | 0.05-0.2 | mesh wash bags
+boots paired under the dresses | 0.55 | 0.1-0.25 | one pair flopped over
+purse row on the shelf | 0.6 | 0.1-0.3 | stuffed with tissue
+robe on a door hook | 0.5 | 0.1-0.25 | sash dragging
+vacuum kept in the corner | 0.4 | 0.1-0.25 | cord wrapped

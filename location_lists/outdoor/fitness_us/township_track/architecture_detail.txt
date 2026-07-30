@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+lane lines repainted off-register | 0.5 | 0.05-0.2 | doubled edges
+track surface bubbled at a seam | 0.45 | 0.05-0.15 | patch peeling
+gate with a coded padlock | 0.5 | 0.03-0.1 | chain wrap
+bleacher footboards flexing | 0.45 | 0.05-0.15 | oil-canning steel
+curb ring around the infield | 0.5 | 0.05-0.15 | concrete lip
+drainage grate at the low curve | 0.45 | 0.03-0.1 | puddle magnet
+starting line embedded brass | 0.35 | 0.02-0.08 | worn insert
+fence topped with bare tension wire | 0.45 | 0.05-0.15 | no barbs
+light poles dark until friday | 0.5 | 0.05-0.2 | stadium heads
+ticket booth shuttered | 0.4 | 0.05-0.15 | plywood window
+ramp to the bleachers | 0.45 | 0.05-0.15 | painted grip strips

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+sunscreen bottles on every table | 0.6 | 0.02-0.08 | family arsenal
+swim diapers pack by a bag | 0.4 | 0.02-0.06 | poolside supply
+goggles pushed up on foreheads | 0.55 | 0.02-0.06 | red eye rings
+snack-bar pretzel with mustard | 0.45 | 0.02-0.06 | paper boat
+band-aid colored water bottle | 0.4 | 0.02-0.06 | team sticker layer
+whistle twirled on a finger | 0.45 | 0.02-0.06 | guard habit
+flip flops in a pile at the ladder | 0.55 | 0.03-0.1 | mixed sizes
+pool pass lanyards on a table | 0.45 | 0.02-0.06 | laminated photos
+dive rings on the bottom | 0.45 | 0.03-0.1 | wavering colors
+towel snapped in a sibling war | 0.4 | 0.03-0.1 | mid-crack
+paperback swollen with humidity | 0.4 | 0.02-0.06 | deck-chair read

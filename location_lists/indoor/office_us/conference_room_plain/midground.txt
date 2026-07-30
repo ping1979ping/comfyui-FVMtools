@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rolling chairs around the table | 1.0 | 0.3-0.6 | mismatched heights
+chair left turned from the table | 0.6 | 0.15-0.35 | seat still dented
+laptop open at one seat | 0.6 | 0.1-0.25 | lid stickers
+power strip snake across the table | 0.55 | 0.05-0.2 | taped-down cord
+water pitcher on a tray | 0.45 | 0.05-0.15 | sweating glass
+notepad stack at the center | 0.5 | 0.05-0.15 | company letterhead
+markers in the whiteboard tray | 0.6 | 0.03-0.1 | most dried out
+trash can by the credenza | 0.45 | 0.05-0.15 | coffee cups inside
+spare chair against the wall | 0.5 | 0.15-0.35 | odd one out
+projector cart wheeled aside | 0.4 | 0.15-0.3 | cable coiled on top
+box of pastries on the credenza | 0.4 | 0.05-0.15 | picked-over selection

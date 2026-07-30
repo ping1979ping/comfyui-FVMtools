@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+pressure-treated deck boards | 1.0 | 0.4-0.8 | greyed grain and pops
+vinyl privacy fence line | 0.75 | 0.3-0.6 | white panels with green algae streak
+back of the house with a slider | 0.7 | 0.3-0.6 | siding and screen door
+neighbor's above-ground pool over the fence | 0.45 | 0.15-0.35 | blue wall arc
+lawn stretching to the swing set | 0.6 | 0.3-0.6 | mowed stripes fading
+propane grill with a worn cover half off | 0.75 | 0.15-0.35 | grease-stained shelf
+deck rail with solar caps | 0.6 | 0.15-0.35 | dim post lights
+umbrella table with chairs | 0.65 | 0.25-0.5 | crank umbrella tilted
+shed at the yard corner | 0.5 | 0.15-0.35 | plastic ramp
+utility lines crossing the sky | 0.5 | 0.1-0.3 | sagging spans
+flower boxes on the rail | 0.45 | 0.1-0.25 | marigolds leggy

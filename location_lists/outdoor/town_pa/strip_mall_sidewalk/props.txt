@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+abandoned receipt tumbleweed | 0.45 | 0.02-0.06 | wind-rolled curl
+quarters pressed into a gumball turn | 0.4 | 0.02-0.06 | kid's ritual
+pizza boxes carried flat | 0.5 | 0.03-0.1 | steady stack
+laundry basket on a hip | 0.45 | 0.05-0.15 | detergent on top
+helium balloon tied to a stroller | 0.4 | 0.03-0.1 | party-store exit
+flyer stack weighted by a rock | 0.35 | 0.02-0.06 | car-wash fundraiser
+lotto ticket scratched at the trash can | 0.4 | 0.02-0.06 | key-edge shavings
+takeout bag with chopstick flags | 0.45 | 0.02-0.08 | stapled receipt
+energy drink cans on a window sill | 0.4 | 0.02-0.06 | after-practice row
+lost glove on a bollard | 0.35 | 0.02-0.05 | winter orphan
+cart with one bad wheel | 0.5 | 0.05-0.15 | rhythmic clatter

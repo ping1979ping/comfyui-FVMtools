@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+goal mouth worn to dirt | 0.6 | 0.1-0.25 | grassless crescent
+sprinkler heads flush in the turf | 0.4 | 0.02-0.08 | mow-safe caps
+field crown for drainage | 0.35 | 0.1-0.3 | subtle rise
+sideline rut from spectator chairs | 0.4 | 0.05-0.2 | packed strip
+anchor stakes on the portable goals | 0.5 | 0.02-0.08 | safety tie-downs
+mole run ridge at the corner | 0.35 | 0.03-0.12 | soft raised line
+paint wand stripes overspray | 0.4 | 0.03-0.1 | green-on-white fuzz
+bench of splintered planks | 0.45 | 0.05-0.15 | team roost
+trash barrel chained to a post | 0.45 | 0.03-0.1 | rolled rim
+gopher hole flagged with a cone | 0.35 | 0.02-0.08 | ankle warning
+lot gravel migrating into the grass | 0.4 | 0.03-0.12 | edge scatter

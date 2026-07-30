@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+wall-to-wall beige carpet | 0.85 | 0.3-0.6 | vacuum lines fading
+outlet crowded behind the nightstand | 0.5 | 0.02-0.08 | plug stack
+closet track lint at the floor | 0.4 | 0.03-0.1 | dust ridge line
+ceiling fan pull chains | 0.5 | 0.02-0.08 | mismatched fobs
+window sill with a candle | 0.45 | 0.03-0.1 | burned-down jar
+baseboard scuffed by the vacuum | 0.4 | 0.05-0.15 | chipped paint line
+door hinge that squeaks | 0.4 | 0.02-0.06 | painted-over pin
+thermostat in the hallway glow | 0.35 | 0.02-0.08 | lit disc
+carpet edge fraying at the bathroom | 0.35 | 0.03-0.1 | threshold wear
+nail holes from old frames | 0.4 | 0.02-0.08 | unfilled dots
+vent with a sock caught | 0.3 | 0.02-0.08 | floor register

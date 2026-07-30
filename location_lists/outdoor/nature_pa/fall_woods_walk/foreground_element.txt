@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+leaves shuffled ankle-deep | 0.65 | 0.1-0.3 | wading strides
+breath fogged on the cold air | 0.55 | 0.05-0.15 | brief plume
+log crossed with a hand down | 0.5 | 0.1-0.25 | three-point step
+beanie tugged over the ears | 0.5 | 0.05-0.15 | wind response
+leaf caught midair | 0.45 | 0.05-0.15 | lucky snatch
+stone wall sat for a break | 0.5 | 0.1-0.3 | flat capstone seat
+dog called back from a scent | 0.45 | 0.05-0.2 | name and clap
+jacket zipped to the chin | 0.5 | 0.05-0.15 | hollow chill
+photo crouch for the fungus shelf | 0.4 | 0.05-0.15 | low angle hunt
+trail snack split two ways | 0.45 | 0.03-0.1 | half offered
+hands warmed in armpits | 0.45 | 0.05-0.15 | glove regret

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stopwatch on a lanyard | 0.5 | 0.02-0.06 | thumb-worn buttons
+interval workout on a sticky note | 0.4 | 0.02-0.05 | sweat-curled paper
+resistance bands looped on the fence | 0.45 | 0.02-0.08 | color set
+foam roller on the bottom riser | 0.4 | 0.02-0.08 | post-run ritual
+spikes bag by the start | 0.4 | 0.02-0.08 | drawstring sack
+orange slices in a cooler | 0.4 | 0.03-0.1 | halftime tradition
+pinnies drying on the fence | 0.45 | 0.03-0.1 | mesh row
+starting blocks carried out | 0.4 | 0.03-0.1 | awkward armful
+chalk line for the relay zone | 0.4 | 0.02-0.08 | powder stripe
+headphones case on a towel | 0.45 | 0.02-0.06 | lap soundtrack
+whistle heard across the field | 0.45 | 0.02-0.08 | practice cadence

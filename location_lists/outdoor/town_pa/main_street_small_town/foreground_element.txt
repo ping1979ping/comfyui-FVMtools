@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+shop door held for a stranger | 0.55 | 0.05-0.2 | bell over the frame
+window display browsed slowly | 0.55 | 0.1-0.3 | reflection layered
+meter fed with found change | 0.5 | 0.05-0.15 | coin pinch
+coffee sipped walking the block | 0.55 | 0.05-0.2 | unhurried pace
+dog greeted outside the bakery | 0.5 | 0.05-0.2 | ear scratch crouch
+crosswalk waited at the light | 0.5 | 0.1-0.25 | button pressed twice
+pizza slice folded on the walk | 0.45 | 0.05-0.15 | paper plate flex
+flyer read on the pole | 0.45 | 0.05-0.15 | head tilted
+bench sat with a paper | 0.45 | 0.1-0.3 | county news spread
+bakery bag pinched closed | 0.5 | 0.03-0.1 | still warm
+wave through a shop window | 0.45 | 0.05-0.15 | familiar face

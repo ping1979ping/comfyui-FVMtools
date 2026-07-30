@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+strip mall storefront row | 1.0 | 0.5-0.9 | plate glass and sign band
+anchor grocery at the far end | 0.6 | 0.25-0.5 | cart corral out front
+nail salon and pizza signage | 0.65 | 0.2-0.4 | backlit letter boxes
+parking lot stretching out | 0.8 | 0.3-0.6 | faded stall grid
+cart corral mid-lot | 0.6 | 0.1-0.25 | nested carts
+dollar store window posters | 0.55 | 0.15-0.35 | neon price stars
+covered walkway with columns | 0.7 | 0.3-0.6 | painted steel posts
+vacant unit with paper on glass | 0.5 | 0.15-0.35 | for-lease sign
+gumball machines by a door | 0.45 | 0.05-0.15 | quarter-turn row
+laundromat window with folding tables | 0.45 | 0.15-0.35 | fluorescent interior
+chinese takeout menu taped up | 0.5 | 0.05-0.15 | laminated sheet

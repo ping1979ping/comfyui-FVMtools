@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+volleyball net across the court | 0.6 | 0.2-0.5 | slack center
+cart of basketballs | 0.65 | 0.1-0.3 | mixed wear levels
+cones set for drills | 0.55 | 0.1-0.3 | faded orange
+kids in gym class scattered | 0.5 | 0.2-0.5 | motion blur
+folding chairs in a row | 0.45 | 0.15-0.35 | event leftovers
+mat stack by the wall | 0.55 | 0.15-0.35 | blue crash pads
+teacher's rolling cart | 0.4 | 0.1-0.25 | whistle and clipboard
+free throw line worn pale | 0.5 | 0.05-0.2 | repainted stripe
+scorer's table with a mic | 0.4 | 0.1-0.3 | cord taped down
+ball rack of playground balls | 0.5 | 0.1-0.25 | half-flat reds
+pommel horse pushed to a corner | 0.35 | 0.1-0.25 | cracked leather top

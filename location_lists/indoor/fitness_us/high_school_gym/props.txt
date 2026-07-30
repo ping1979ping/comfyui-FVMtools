@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+pinnies in a mesh bag | 0.55 | 0.03-0.1 | faded scrimmage vests
+whistle on a lanyard | 0.5 | 0.02-0.06 | chained clipboard
+attendance clipboard on the stage lip | 0.45 | 0.02-0.08 | curled roster
+lost hoodie on the bleachers | 0.55 | 0.03-0.1 | crumpled sleeve
+water bottles clustered at the wall | 0.6 | 0.03-0.1 | name-taped
+stray sneaker under the bleachers | 0.4 | 0.02-0.06 | missing its pair
+first aid kit on the scorer's table | 0.4 | 0.02-0.06 | scuffed plastic box
+jump ropes on a wall hook | 0.5 | 0.03-0.1 | tangled handles
+floor tape roll left on a chair | 0.4 | 0.02-0.06 | half-used
+pump with a bent needle | 0.45 | 0.02-0.06 | worked loose
+poster for the friday game | 0.5 | 0.03-0.1 | handmade letters

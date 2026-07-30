@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+lane markers painted at the start | 0.6 | 0.05-0.2 | numbered blocks
+hurdles stacked on the infield | 0.55 | 0.1-0.3 | staggered heights
+walkers in the outside lanes | 0.6 | 0.1-0.3 | steady laps
+water bottles on the bottom bleacher | 0.55 | 0.03-0.1 | team row
+soccer goals folded against the fence | 0.45 | 0.1-0.3 | net bundled
+stroller parked track-side | 0.4 | 0.05-0.2 | lap-counting parent
+cones marking a workout ladder | 0.5 | 0.05-0.2 | interval spacing
+kettlebell left by the bleachers | 0.35 | 0.03-0.1 | boot-camp leftovers
+dog tied in the shade | 0.4 | 0.05-0.15 | water bowl set out
+maintenance cart on the infield | 0.4 | 0.1-0.25 | line-painting rig
+high jump mat under a tarp | 0.45 | 0.1-0.3 | bungeed cover

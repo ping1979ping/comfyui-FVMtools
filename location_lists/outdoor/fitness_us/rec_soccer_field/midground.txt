@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+parent chairs along the touchline | 0.75 | 0.15-0.35 | folding armchair row
+cooler wagon parked mid-sideline | 0.55 | 0.05-0.2 | collapsible wagon
+pinnied scrimmage in progress | 0.55 | 0.2-0.5 | mixed sizes
+ball bag spilled at the bench | 0.55 | 0.05-0.2 | numbered balls
+corner flags leaning | 0.45 | 0.03-0.1 | spring-loaded stakes
+coach's whiteboard on the grass | 0.45 | 0.03-0.1 | magnet formation
+toddler sibling with a spare ball | 0.45 | 0.05-0.15 | sideline dribbler
+goalkeeper gloves drying on the net | 0.4 | 0.02-0.08 | velcro open
+dog on a long lead watching | 0.4 | 0.05-0.15 | play-by-play tail
+bikes dumped by the bench | 0.45 | 0.05-0.2 | rode-here pile
+water jug with a spigot | 0.5 | 0.05-0.15 | team refills

@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+long laminate conference table | 1.0 | 0.4-0.8 | wood-look top with cable box
+whiteboard covered in old notes | 0.85 | 0.3-0.6 | ghosted marker layers
+projection screen pulled halfway | 0.6 | 0.25-0.5 | wrinkled matte surface
+glass wall to the hallway | 0.6 | 0.3-0.6 | frosted privacy band
+wall-mounted flatscreen | 0.65 | 0.2-0.45 | cable dangling below
+credenza along the back wall | 0.5 | 0.2-0.45 | stacked handouts
+window with vertical blinds | 0.55 | 0.2-0.5 | half-tilted slats
+company plaque wall | 0.4 | 0.15-0.35 | dusty framed awards
+speakerphone in the table center | 0.6 | 0.05-0.15 | grey three-legged unit
+flip chart easel in the corner | 0.45 | 0.1-0.3 | curled used pages
+clock above the door | 0.5 | 0.05-0.12 | five minutes fast

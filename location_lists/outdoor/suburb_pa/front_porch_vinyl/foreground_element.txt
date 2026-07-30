@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+screen door held with a hip | 0.6 | 0.1-0.25 | groceries balanced
+rocking chair set moving | 0.55 | 0.1-0.3 | heel push
+wave to a passing neighbor | 0.55 | 0.05-0.2 | raised hand
+package scooped off the mat | 0.5 | 0.05-0.2 | label glance
+mail flipped through | 0.5 | 0.05-0.15 | junk sorted out
+hose aimed at the planters | 0.5 | 0.1-0.25 | thumb spray
+sandals kicked off at the door | 0.5 | 0.05-0.15 | toe hook
+chalk drawing admired | 0.4 | 0.1-0.25 | crouched down
+flag straightened on its pole | 0.4 | 0.05-0.15 | bracket adjust
+iced tea sipped on the step | 0.5 | 0.05-0.2 | elbow on knee
+porch light bulb swapped | 0.35 | 0.05-0.15 | tiptoe reach

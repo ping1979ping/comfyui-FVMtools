@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+boogie board leaned in the corner | 0.5 | 0.05-0.2 | wax-scraped deck
+sunglasses collection by the sink | 0.55 | 0.02-0.08 | family assortment
+saltwater taffy box open | 0.45 | 0.02-0.08 | wrappers twisted
+citronella candle tin | 0.45 | 0.02-0.06 | blackened wick
+paper plates in a holder | 0.5 | 0.02-0.08 | wicker frame
+koozies scattered on the counter | 0.5 | 0.02-0.08 | souvenir foam
+crab mallet and picks in a cup | 0.4 | 0.02-0.06 | seasoned wood
+ice pop wrappers balled up | 0.45 | 0.02-0.06 | sticky twist
+disposable camera someone brought | 0.3 | 0.02-0.05 | wind wheel
+lost flip flop under a stool | 0.45 | 0.02-0.06 | orphaned single
+hose-rinsed goggles on the rack | 0.45 | 0.02-0.06 | strap tangle

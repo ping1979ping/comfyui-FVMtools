@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+flat stone skipped down the pool | 0.6 | 0.05-0.2 | four-hop count
+toes tested in the current | 0.6 | 0.05-0.2 | cold verdict
+crayfish lifted for inspection | 0.5 | 0.05-0.15 | pinch-safe grip
+splash war mid-riffle | 0.5 | 0.1-0.3 | double-arm spray
+rope swing arc at the top | 0.4 | 0.1-0.3 | release moment
+towel wrapped against the shade chill | 0.5 | 0.1-0.25 | shoulder bundle
+can fished from the cooler current | 0.45 | 0.03-0.1 | dripping retrieve
+water shoes emptied of gravel | 0.45 | 0.03-0.1 | one-leg balance
+minnow chased with a cup | 0.45 | 0.05-0.15 | quick scoop
+wet hair wrung to one side | 0.5 | 0.05-0.15 | twist and drip
+balance tested rock to rock | 0.55 | 0.1-0.25 | arms out crossing

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+morning light through the blinds | 0.9 | - | -
+flat late morning light | 0.85 | - | -
+grey overcast midday | 0.85 | - | -
+afternoon light across the carpet | 0.85 | - | -
+late afternoon low sun | 0.8 | - | -
+early evening with a lamp on | 0.9 | - | -
+evening under the ceiling fan light | 0.8 | - | -
+dim light before bed | 0.6 | - | -
+tv glow in a dark room | 0.5 | - | -
+half dark with the hall light on | 0.55 | - | -

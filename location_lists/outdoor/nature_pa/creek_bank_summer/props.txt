@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+mesh bag of creek toys | 0.45 | 0.02-0.08 | cups and scoops
+sunscreen tube on a towel | 0.55 | 0.02-0.06 | sand-crusted cap
+sandwich cooler opened on a rock | 0.5 | 0.05-0.12 | wax-paper stack
+bug net leaned on a log | 0.35 | 0.02-0.08 | kid-sized handle
+polarized sunglasses pushed up | 0.4 | 0.02-0.06 | fish-spotting tool
+creek-found brick shard | 0.35 | 0.02-0.05 | rounded edges
+jar of caught minnows | 0.4 | 0.02-0.06 | studied closely
+flip flops parked toe-out | 0.5 | 0.02-0.08 | bank lineup
+walking stick claimed for the day | 0.45 | 0.02-0.08 | perfect height
+snack wrappers pinned by a rock | 0.4 | 0.02-0.06 | wind insurance
+towel cape on a shivering kid | 0.4 | 0.05-0.15 | superhero drape

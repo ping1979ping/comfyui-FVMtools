@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+flat fluorescent light throughout | 1.0 | - | -
+early morning before the rush | 0.7 | - | -
+mid morning lull | 0.75 | - | -
+lunchtime bustle | 0.7 | - | -
+mid afternoon slump | 0.8 | - | -
+late afternoon wind-down | 0.75 | - | -
+early evening shift change | 0.6 | - | -
+daylight mixing with the overheads | 0.7 | - | -
+one bank of lights switched off | 0.45 | - | -
+after-hours near closing | 0.5 | - | -

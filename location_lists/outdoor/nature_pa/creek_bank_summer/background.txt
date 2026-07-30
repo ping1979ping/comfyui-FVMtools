@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+shallow creek over flat shale | 1.0 | 0.4-0.8 | amber water and riffles
+sycamore leaning over the water | 0.7 | 0.2-0.5 | mottled bark
+far bank of rhododendron | 0.6 | 0.25-0.5 | glossy tangled wall
+swimming hole below the riffle | 0.6 | 0.25-0.5 | green-dark pool
+gravel bar mid-creek | 0.6 | 0.2-0.4 | sorted stones
+old stone abutment remnant | 0.4 | 0.1-0.3 | mossy block wall
+hemlock shade on the far side | 0.5 | 0.2-0.45 | deep green dark
+riffle catching the light | 0.6 | 0.15-0.35 | broken sparkle
+path worn down the bank | 0.6 | 0.15-0.35 | root staircase
+railroad grade above the far bank | 0.35 | 0.15-0.35 | ballast line
+cliff swallows working the water | 0.35 | 0.05-0.2 | looping flights

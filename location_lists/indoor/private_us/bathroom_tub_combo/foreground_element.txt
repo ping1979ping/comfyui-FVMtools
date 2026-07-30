@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+steam wiped off the mirror | 0.65 | 0.1-0.25 | palm streak
+towel wrapped hair turban | 0.6 | 0.1-0.25 | tucked twist
+mascara leaned into the mirror | 0.55 | 0.05-0.15 | mouth open slightly
+curtain pulled back with rings scraping | 0.5 | 0.1-0.3 | metallic slide
+toothbrush foam mid-brush | 0.55 | 0.05-0.15 | timer on the phone
+lotion applied at the vanity edge | 0.5 | 0.05-0.15 | one foot on the tub
+towel tucked tight under the arms | 0.55 | 0.1-0.3 | post-shower
+hair dryer aimed upside down | 0.5 | 0.05-0.2 | roots first
+floss wound around fingers | 0.4 | 0.03-0.1 | mirror lean
+bath water tested with a wrist | 0.4 | 0.05-0.15 | faucet running
+face washed over the sink | 0.5 | 0.05-0.15 | dripping cupped hands

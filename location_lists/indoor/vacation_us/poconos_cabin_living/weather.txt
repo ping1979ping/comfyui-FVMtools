@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+rain streaks on the window | 0.55 | - | -
+window unit humming against the heat | 0.5 | - | -
+dry forced-air warmth | 0.6 | - | -
+humid summer air indoors | 0.5 | - | -
+wind audible against the siding | 0.4 | - | -
+snow visible outside the window | 0.35 | - | -
+damp air after a thunderstorm | 0.45 | - | -
+still muggy evening air | 0.45 | - | -
+draught from a leaky window frame | 0.4 | - | -
+dry winter static air | 0.4 | - | -

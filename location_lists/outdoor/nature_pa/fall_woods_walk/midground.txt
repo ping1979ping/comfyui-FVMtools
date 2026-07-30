@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+fallen oak across the path | 0.55 | 0.15-0.35 | step-over trunk
+leaf drifts against the deadfall | 0.6 | 0.15-0.35 | knee-deep pockets
+shagbark hickory trunk | 0.5 | 0.1-0.3 | peeling plates
+grapevine tangle in a gap | 0.45 | 0.1-0.3 | hanging loops
+boulder field patch | 0.45 | 0.15-0.35 | glacial scatter
+spring seep crossing the trail | 0.4 | 0.05-0.2 | black muck strip
+dog ranging ahead | 0.45 | 0.05-0.2 | nose-driven zigzag
+stump shelf of turkey tail fungus | 0.45 | 0.05-0.15 | banded fans
+buck rub on a sapling | 0.4 | 0.03-0.1 | barked scar
+squirrel diggings in the leaves | 0.45 | 0.05-0.15 | fresh excavations
+another walker's red jacket far off | 0.35 | 0.05-0.15 | color through trunks

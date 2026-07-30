@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+commercial carpet in dark swirls | 0.8 | 0.3-0.6 | stain-hiding pattern
+popcorn ceiling with a sprinkler | 0.5 | 0.1-0.3 | painted head
+door with a security latch | 0.6 | 0.05-0.15 | swing bar
+peephole in the door | 0.45 | 0.02-0.06 | brass ring
+window that opens two inches | 0.45 | 0.05-0.15 | safety stop screw
+bathroom light with a fan switch | 0.5 | 0.02-0.08 | loud toggle
+outlet with USB ports | 0.45 | 0.02-0.06 | added faceplate
+mystery thermostat setting | 0.45 | 0.02-0.08 | taped instructions
+baseboard dinged by suitcases | 0.45 | 0.03-0.1 | wheel scuffs
+curtain wand hanging | 0.45 | 0.02-0.08 | plastic baton
+evacuation map on the door | 0.5 | 0.03-0.1 | you-are-here star

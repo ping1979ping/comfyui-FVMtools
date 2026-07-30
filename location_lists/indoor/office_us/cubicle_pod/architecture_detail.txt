@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+carpet tiles in mixed grey | 0.85 | 0.3-0.6 | coffee-stained squares
+cable grommet in the desk | 0.55 | 0.03-0.1 | cords bunched through
+power strip along the baseboard | 0.55 | 0.05-0.15 | daisy-chained plugs
+partition rail with name plate | 0.5 | 0.03-0.12 | sliding plastic tag
+vent grille in the ceiling | 0.5 | 0.05-0.15 | dust-streaked louvers
+scuffed corner guard | 0.4 | 0.05-0.15 | chipped plastic edge
+fluorescent tube flickering | 0.35 | 0.05-0.15 | uneven pale light
+thermostat box on the column | 0.4 | 0.03-0.1 | locked plastic cover
+ethernet jack plate low on the wall | 0.4 | 0.02-0.08 | numbered ports
+ceiling tile with a water stain | 0.45 | 0.05-0.15 | brown ringed corner
+carpet seam lifting at the aisle | 0.35 | 0.05-0.12 | frayed edge

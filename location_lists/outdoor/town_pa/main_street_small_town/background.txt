@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+brick storefronts in a row | 1.0 | 0.5-0.9 | painted lintels and cornices
+angled parking along the curb | 0.8 | 0.3-0.6 | faded stall lines
+awnings over the shop windows | 0.7 | 0.2-0.45 | striped canvas
+church steeple over the roofline | 0.5 | 0.1-0.3 | white spire
+banner across the street for a fair | 0.45 | 0.1-0.3 | vinyl and rope
+lamp posts with hanging baskets | 0.6 | 0.1-0.3 | petunia balls
+pizza shop neon sign | 0.55 | 0.1-0.25 | half-lit letters
+hardware store window display | 0.5 | 0.15-0.35 | seasonal stack
+crosswalk to the square | 0.55 | 0.15-0.35 | brick-inlaid stripes
+war memorial on the corner green | 0.45 | 0.1-0.3 | bronze plaque and wreath
+fire company sign board | 0.5 | 0.1-0.25 | bingo night letters

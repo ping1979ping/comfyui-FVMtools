@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+suitcase zipper strained shut | 0.6 | 0.1-0.25 | knee on the lid
+curtains yanked against the daylight | 0.55 | 0.1-0.3 | gap of glare
+AC dial turned to high | 0.5 | 0.05-0.15 | vents fluttering
+bed flopped onto backwards | 0.55 | 0.15-0.35 | arms out
+ice bucket carried in | 0.5 | 0.05-0.15 | cubes settling
+takeout unpacked on the spread | 0.55 | 0.1-0.25 | foil containers
+key card tapped at the reader | 0.5 | 0.05-0.15 | green light blink
+shoes kicked toward the door | 0.5 | 0.05-0.15 | mid-air laces
+pillow doubled under the head | 0.5 | 0.1-0.25 | tv angle
+phone propped against the lamp | 0.45 | 0.03-0.1 | show queued
+blackout dark checked with a peek | 0.4 | 0.05-0.15 | curtain corner lifted

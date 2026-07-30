@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+marker uncapped at the whiteboard | 0.65 | 0.05-0.15 | mid-diagram
+laptop turned to show the screen | 0.55 | 0.1-0.25 | glare on the display
+chair swiveled toward the window | 0.5 | 0.1-0.3 | listening posture
+handout passed across the table | 0.5 | 0.05-0.15 | reaching arms
+water poured into a paper cup | 0.45 | 0.03-0.1 | pitcher tilted
+notes taken on a legal pad | 0.55 | 0.05-0.15 | pen mid-line
+sleeve pushed up checking a watch | 0.45 | 0.03-0.1 | subtle glance
+phone held under the table edge | 0.45 | 0.03-0.1 | thumb scrolling
+leaning back with hands laced | 0.5 | 0.1-0.3 | chair tilted
+donut balanced on a napkin | 0.4 | 0.03-0.1 | sugar dusting
+cord untangled for the projector | 0.4 | 0.05-0.15 | adapter hunt

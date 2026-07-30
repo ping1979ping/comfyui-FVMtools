@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+door held against the vestibule spring | 0.55 | 0.05-0.2 | bell chime
+step down mid-conversation | 0.5 | 0.1-0.25 | keys already out
+to-go coffee shielded from wind | 0.5 | 0.03-0.1 | lid tested
+truck door swung wide | 0.5 | 0.1-0.3 | one boot up
+pie box carried level | 0.5 | 0.05-0.15 | two-hand care
+stretch after the big breakfast | 0.5 | 0.05-0.2 | belt adjust
+lot gravel crunched across | 0.5 | 0.1-0.25 | unhurried diagonal
+menu board read from the car | 0.4 | 0.05-0.15 | window down
+helmet buckled by the bikes | 0.4 | 0.05-0.15 | strap tug
+wave to the waitress through glass | 0.45 | 0.05-0.15 | regulars' code
+leftover fry stolen from the bag | 0.45 | 0.03-0.1 | passenger tax

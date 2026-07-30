@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+watermelon halved on the counter | 0.5 | 0.1-0.25 | knife mid-slice
+smoothie poured into mixed cups | 0.5 | 0.05-0.15 | pastel pour
+sandy feet rinsed at the door | 0.5 | 0.05-0.2 | hose through the slider
+towel snapped off a shoulder | 0.45 | 0.1-0.25 | heading to the outdoor shower
+sunscreen worked into a shoulder | 0.55 | 0.05-0.15 | white streaks
+cooler packed with ice bags | 0.55 | 0.1-0.25 | cans buried
+hat brim pushed up for a drink | 0.45 | 0.05-0.15 | tan line reveal
+corn shucked into a paper bag | 0.45 | 0.05-0.15 | silk strands flying
+screen door caught before the slam | 0.45 | 0.05-0.15 | practiced reflex
+taffy offered around | 0.4 | 0.03-0.1 | flavor debate
+phone dried against a shirt hem | 0.4 | 0.03-0.1 | splash recovery

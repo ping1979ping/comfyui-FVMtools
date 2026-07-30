@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+glass block corner detail | 0.5 | 0.1-0.25 | lit from inside
+stainless siding seams | 0.55 | 0.1-0.3 | riveted panels
+concrete wheel stops | 0.55 | 0.05-0.15 | rebar showing
+downspout splashing the walk | 0.4 | 0.03-0.1 | painted shut strap
+window AC units at the back | 0.4 | 0.05-0.15 | drip stains
+door with a period handle | 0.45 | 0.03-0.1 | polished dull
+lot lights on wooden poles | 0.5 | 0.05-0.2 | mismatched fixtures
+vestibule with a second door | 0.45 | 0.05-0.15 | draft lock
+painted parking arrows worn | 0.45 | 0.05-0.15 | ghost strokes
+step edge in safety yellow | 0.45 | 0.03-0.1 | fresh coat
+kitchen exhaust fan housing | 0.4 | 0.05-0.12 | grease shadow

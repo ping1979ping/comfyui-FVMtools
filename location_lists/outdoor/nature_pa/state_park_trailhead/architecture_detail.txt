@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+culvert pipe under the entrance road | 0.4 | 0.05-0.15 | corrugated mouth
+lot edge timbers bolted down | 0.5 | 0.05-0.2 | rebar pinned
+signpost with mileage arrows | 0.55 | 0.03-0.1 | routed digits
+trail register box on a post | 0.5 | 0.02-0.08 | hinged lid notebook
+erosion bars across the first climb | 0.5 | 0.05-0.2 | half-buried timbers
+lichen crust on the fence rails | 0.45 | 0.05-0.15 | pale green patches
+carsonite post with rules decals | 0.4 | 0.02-0.08 | flexible marker
+gravel washboard at the entrance | 0.4 | 0.1-0.25 | rippled surface
+pavilion post carved with initials | 0.4 | 0.03-0.1 | decades of layers
+drainage swale along the lot | 0.4 | 0.05-0.2 | leaf-packed channel
+bulletin board staple constellation | 0.45 | 0.03-0.1 | flyer corners

@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+throw-in taken over the head | 0.55 | 0.05-0.2 | feet planted
+cleats stamped clean on the curb | 0.5 | 0.03-0.1 | mud clods
+water bottle squirted over the face | 0.5 | 0.03-0.1 | cooldown blast
+high five line after the final whistle | 0.5 | 0.1-0.3 | good-game train
+chair unfolded with a snap | 0.5 | 0.05-0.15 | sideline setup
+juice pouch stabbed with a straw | 0.45 | 0.02-0.08 | victory sip
+shin guard velcro ripped open | 0.45 | 0.02-0.08 | post-game relief
+ball juggled counting touches | 0.5 | 0.05-0.15 | personal best try
+coach crouched for the huddle | 0.45 | 0.1-0.25 | knee in the grass
+wagon loaded for the walk back | 0.45 | 0.05-0.2 | gear tetris
+sunset squinted into from the lot | 0.45 | 0.05-0.2 | drive-home light

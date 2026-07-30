@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+desk with two monitors | 1.0 | 0.3-0.6 | smudged dark screens
+wheeled office chair | 0.9 | 0.2-0.5 | worn mesh back
+neighboring desk with clutter | 0.7 | 0.2-0.5 | stacked folders and mugs
+rolling file cabinet under the desk | 0.65 | 0.1-0.3 | dented beige steel
+desk phone with coiled cord | 0.6 | 0.05-0.2 | dusty handset
+recycling bin by the partition | 0.5 | 0.05-0.2 | overfilled paper
+space heater under the desk | 0.4 | 0.05-0.15 | scorched grille
+box of copy paper on the floor | 0.5 | 0.1-0.25 | half-opened carton
+keyboard tray pulled out | 0.6 | 0.1-0.3 | crumb-dusted keys
+second chair pulled over | 0.4 | 0.15-0.35 | borrowed from the next pod
+water bottle collection on the desk | 0.5 | 0.05-0.15 | mixed plastic and steel

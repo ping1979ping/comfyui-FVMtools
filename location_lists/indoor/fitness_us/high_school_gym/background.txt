@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+gym wall with painted mascot | 1.0 | 0.4-0.8 | chipped mural paint
+pulled-out bleacher sections | 0.85 | 0.3-0.7 | worn wooden benches
+championship banners on the wall | 0.7 | 0.2-0.5 | felt pennants by decade
+basketball hoop cranked down | 0.75 | 0.2-0.4 | frayed net
+stage at the gym end | 0.5 | 0.25-0.5 | heavy curtain drawn
+high windows with safety grilles | 0.6 | 0.15-0.4 | caged daylight
+wall pads under the hoop | 0.6 | 0.15-0.35 | taped vinyl seams
+scoreboard dark on the wall | 0.6 | 0.1-0.3 | unlit bulbs
+folded lunch tables against the wall | 0.45 | 0.2-0.4 | rolling frames
+rope climb anchored to the ceiling | 0.4 | 0.1-0.3 | knotted end swaying
+divider curtain half drawn | 0.5 | 0.25-0.5 | motorized vinyl wall

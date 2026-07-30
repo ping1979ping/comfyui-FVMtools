@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+suitcase open on the second bed | 0.75 | 0.2-0.4 | clothes erupting
+plastic cups in paper sleeves | 0.5 | 0.03-0.1 | sanitary wraps
+mini refrigerator humming | 0.6 | 0.1-0.25 | door dented
+coffee maker with two pods | 0.6 | 0.05-0.15 | paper cup stack
+phone with a laminated menu card | 0.5 | 0.03-0.1 | pizza delivery ads
+remote wrapped in a paper band | 0.45 | 0.02-0.08 | sanitized label
+desk chair wedged by the window | 0.5 | 0.15-0.3 | rolling on carpet
+takeout bags on the dresser | 0.5 | 0.05-0.2 | napkin overflow
+shoes lined at the door | 0.55 | 0.05-0.15 | road trip pairs
+cooler dragged in from the car | 0.45 | 0.1-0.25 | lid cracked open
+kids' blanket fort on one bed | 0.35 | 0.15-0.4 | pillow walls

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+free little library on a post | 0.45 | 0.03-0.1 | glass-door cabinet
+water bowl outside the shop door | 0.5 | 0.02-0.06 | for the dogs
+chalkboard easel with ice cream flavors | 0.5 | 0.03-0.1 | hand-drawn cone
+lost cat flyer taped to a pole | 0.45 | 0.02-0.06 | phone tabs cut
+scout troop popcorn table | 0.35 | 0.1-0.25 | folding table and sash
+bike leaned unlocked at the curb | 0.4 | 0.05-0.15 | small-town trust
+to-go cup on the bench arm | 0.45 | 0.02-0.06 | sleeve doubled
+event flyers in shop windows | 0.5 | 0.03-0.1 | tape-cornered pages
+quarters fed from a cup holder | 0.4 | 0.02-0.06 | meter ritual
+hose watering the curb planters | 0.4 | 0.03-0.1 | morning shopkeeper
+sidewalk sale rack outside | 0.45 | 0.1-0.25 | clearance tags flipping
