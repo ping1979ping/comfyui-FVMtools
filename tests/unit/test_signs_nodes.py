@@ -484,6 +484,39 @@ class TestRegressions:
                                     base_url="http://127.0.0.1:9", temperature=0.6)
         assert "above the measured cliff" in report
 
+    def test_no_class_instruction_asks_the_model_to_transcribe(self):
+        """The per-class instruction is appended to the anti-transcription system
+        prompt. If it says 'transcribe', the two contradict each other and the
+        model falls back to reading the garbled original — which is how a screen
+        came back as 'SYSTEM READY' and a shirt print as its own gibberish.
+        """
+        from core.signs.classes import SIGN_CLASSES, FALLBACK_CLASS
+        banned = ("transcribe", "read the current", "as it appears",
+                  "exactly as", "as written")
+        offenders = []
+        for name, cfg in list(SIGN_CLASSES.items()) + [("<fallback>", FALLBACK_CLASS)]:
+            low = cfg["vlm_instruction"].lower()
+            # "do not read the current letters" is the opposite instruction
+            for term in banned:
+                if term in low and f"do not {term}" not in low and \
+                        f"never {term}" not in low:
+                    offenders.append(f"{name}: ...{term}...")
+        assert not offenders, "class instructions must not ask for transcription: " + \
+            "; ".join(offenders)
+
+    def test_every_class_instruction_asks_for_invention(self):
+        from core.signs.classes import SIGN_CLASSES, all_class_names
+        for name in all_class_names():
+            low = SIGN_CLASSES[name]["vlm_instruction"].lower()
+            assert any(w in low for w in ("invent", "make up", "work out")), \
+                f"{name} does not tell the model to produce new text"
+
+    def test_screen_class_bans_the_generic_filler(self):
+        """'SYSTEM READY' is the observed failure mode for unreadable screens."""
+        from core.signs.classes import SIGN_CLASSES
+        low = SIGN_CLASSES["screen"]["vlm_instruction"].lower()
+        assert "system ready" in low and "never" in low
+
     def test_proposer_does_not_mutate_the_incoming_sign_data(self):
         """ComfyUI hands the same cached object to every downstream node.
 

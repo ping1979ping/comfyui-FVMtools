@@ -20,8 +20,9 @@ SIGN_CLASSES = {
         "threshold": 0.30,
         "min_height_px": 32,
         "vlm_instruction": (
-            "Transcribe the wording on this sign exactly as a passer-by would "
-            "read it, including street names, shop names and directions."
+            "Invent new wording for this sign that suits the place it "
+            "stands in. A shop name, a street name or a direction - "
+            "whatever the scene calls for. Do not read the current letters."
         ),
         "prompt_template": (
             'a sign with the clear legible text "{text}", {style} '
@@ -34,8 +35,9 @@ SIGN_CLASSES = {
         "threshold": 0.28,
         "min_height_px": 24,
         "vlm_instruction": (
-            "Transcribe the brand name and product wording printed on this "
-            "label, keeping the original line breaks in reading order."
+            "Invent a plausible brand and product wording for this label. "
+            "Make up a brand that could exist but is not a real trademark. "
+            "Do not read the current letters."
         ),
         "prompt_template": (
             'a product label printed with the clear text "{text}", {style} '
@@ -48,8 +50,10 @@ SIGN_CLASSES = {
         "threshold": 0.30,
         "min_height_px": 40,
         "vlm_instruction": (
-            "Transcribe the slogan or logo text printed on the garment, "
-            "ignoring folds, seams and stitching patterns."
+            "Invent a short slogan or wordmark for this garment - one to "
+            "three words that suit the wearer and the setting. Keep it "
+            "something a real shop would print. Do not read the current "
+            "letters."
         ),
         "prompt_template": (
             'clothing with the printed text "{text}", {style} '
@@ -62,8 +66,9 @@ SIGN_CLASSES = {
         "threshold": 0.28,
         "min_height_px": 40,
         "vlm_instruction": (
-            "Transcribe the headline and any secondary lines of this poster, "
-            "starting with the largest and most prominent text."
+            "Invent a headline for this poster that fits the setting, plus "
+            "at most one short secondary line. Do not read the current "
+            "letters."
         ),
         "prompt_template": (
             'a poster with the bold headline text "{text}", {style} '
@@ -76,8 +81,11 @@ SIGN_CLASSES = {
         "threshold": 0.30,
         "min_height_px": 32,
         "vlm_instruction": (
-            "Transcribe the text shown on this screen, including interface "
-            "labels, buttons and status lines."
+            "Work out what device this is, then invent interface text that "
+            "this device would realistically show - an app name, a menu "
+            "entry, a time, a short message. Never fall back on generic "
+            "filler like SYSTEM READY, READY, LOADING or ERROR. Do not read "
+            "the current letters."
         ),
         "prompt_template": (
             'a screen displaying the crisp text "{text}", {style} '
@@ -90,8 +98,9 @@ SIGN_CLASSES = {
         "threshold": 0.30,
         "min_height_px": 32,
         "vlm_instruction": (
-            "Transcribe the title, subtitle and author wording on this cover "
-            "in the order they are printed."
+            "Invent a plausible title for this cover, optionally with an "
+            "author name. Do not use a real published title. Do not read "
+            "the current letters."
         ),
         "prompt_template": (
             'a book cover with the title text "{text}", {style} '
@@ -104,8 +113,9 @@ SIGN_CLASSES = {
         "threshold": 0.35,
         "min_height_px": 20,
         "vlm_instruction": (
-            "Transcribe the character sequence on this license plate exactly, "
-            "keeping separators, spacing and letter case."
+            "Invent a registration in the format of the country the scene "
+            "suggests, with that country's typical letter and digit "
+            "grouping. Do not read the current characters."
         ),
         "prompt_template": (
             'a vehicle license plate showing the characters "{text}", {style} '
@@ -118,8 +128,9 @@ SIGN_CLASSES = {
         "threshold": 0.28,
         "min_height_px": 24,
         "vlm_instruction": (
-            "Transcribe the printed or handwritten wording on this piece of "
-            "paper, keeping the reading order of the lines."
+            "Invent wording appropriate to this document - a menu item and "
+            "price, a heading, a short line of body text. Do not read the "
+            "current letters."
         ),
         "prompt_template": (
             'a printed document showing the text "{text}", {style} '
@@ -132,8 +143,8 @@ SIGN_CLASSES = {
         "threshold": 0.30,
         "min_height_px": 40,
         "vlm_instruction": (
-            "Transcribe the sprayed or handwritten wording, reading stylised "
-            "and overlapping letterforms as best as possible."
+            "Invent a short tag or slogan in the spirit of street writing, "
+            "at most two words. Do not read the current letters."
         ),
         "prompt_template": (
             'spray-painted graffiti lettering reading "{text}", {style} '
@@ -150,8 +161,8 @@ FALLBACK_CLASS = {
     "threshold": DEFAULT_THRESHOLD,
     "min_height_px": DEFAULT_MIN_HEIGHT_PX,
     "vlm_instruction": (
-        "Transcribe any legible written text visible in this region exactly "
-        "as it appears."
+        "Invent short, plausible wording for this surface, suited to "
+        "the scene. Do not read the current letters."
     ),
     "prompt_template": (
         'a surface with the clear legible text "{text}", {style} '
