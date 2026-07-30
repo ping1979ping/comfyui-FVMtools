@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+moss on the shaded foundation | 0.5 | 0.05-0.2 | green skirt
+hose bib dripping into a worn dip | 0.45 | 0.02-0.08 | mud cup
+meter boxes side by side on the wall | 0.5 | 0.05-0.15 | grey domes
+mud line splashed on the siding | 0.45 | 0.05-0.15 | rain spatter
+gravel drip strip along the eave | 0.45 | 0.05-0.2 | stone ribbon
+gate hinge sprung and mended | 0.4 | 0.02-0.08 | wire fix
+cable line looping to the corner | 0.4 | 0.03-0.1 | sagging span
+narrow shade that never lifts | 0.5 | 0.2-0.45 | permanent dusk
+fence post heaved by frost | 0.4 | 0.05-0.15 | leaning stub
+worn path hugging one wall | 0.5 | 0.1-0.3 | bare dirt line
+dryer vent flap mid-flutter | 0.4 | 0.02-0.06 | lint whiskers

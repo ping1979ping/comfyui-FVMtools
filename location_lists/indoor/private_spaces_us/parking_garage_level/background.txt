@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rows of square concrete columns | 1.0 | 0.5-0.9 | board-formed grey concrete
+low concrete ceiling with pipe runs | 0.9 | 0.3-0.6 | sprinkler and conduit lines
+ramp curving up to the next level | 0.7 | 0.25-0.5 | sloped broom-finished concrete
+half-empty parking bays | 0.8 | 0.3-0.6 | oil-shadowed stalls
+open side letting in a strip of daylight | 0.65 | 0.2-0.5 | bright band on the deck
+concrete block stair core | 0.6 | 0.2-0.4 | painted grey masonry
+elevator lobby recess | 0.45 | 0.15-0.35 | brushed steel doors
+far wall fading into gloom | 0.6 | 0.3-0.6 | dark unlit depth
+caged ceiling lights in rows | 0.7 | 0.1-0.3 | wire guards
+ventilation fan set into the wall | 0.5 | 0.1-0.25 | dusty blades behind mesh
+cars clustered near the core | 0.55 | 0.25-0.5 | dusty rooflines

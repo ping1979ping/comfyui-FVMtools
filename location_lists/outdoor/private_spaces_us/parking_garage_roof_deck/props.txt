@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+crushed can wedged at a joint | 0.4 | 0.01-0.05 | sun-faded aluminum
+cigarette ends by the stair door | 0.45 | 0.02-0.06 | break-time midden
+lost scarf caught on the parapet | 0.3 | 0.02-0.06 | flapping tail
+grit swept into wind rows | 0.45 | 0.05-0.15 | natural sorting
+feather pinned by a pebble | 0.35 | 0.01-0.03 | grey curve
+coffee lid without its cup | 0.35 | 0.01-0.04 | rolling disc
+bolt and washer shed by a machine | 0.3 | 0.01-0.03 | rusted pair
+chalk marks from a forgotten game | 0.3 | 0.03-0.1 | rain-softened lines
+zip tie on the cable barrier | 0.3 | 0.01-0.03 | weathered curl
+gull posted on the parapet corner | 0.4 | 0.03-0.1 | lookout duty
+dead leaves gathered at the bulkhead | 0.45 | 0.05-0.15 | crisp drift

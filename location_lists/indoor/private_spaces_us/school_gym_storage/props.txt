@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+whistle on a nail by the door | 0.5 | 0.01-0.05 | chrome pea
+pump with a chewed needle valve | 0.5 | 0.02-0.06 | duct-taped shaft
+stopwatch in a velvet box | 0.35 | 0.01-0.04 | teacher's treasure
+bean bags faded to pastel | 0.45 | 0.03-0.1 | soft little pillows
+rosin bag gone hard | 0.3 | 0.01-0.04 | cracked pouch
+lost sneaker on the mat stack | 0.4 | 0.02-0.06 | single orphan
+jump ropes braided together | 0.5 | 0.03-0.1 | inseparable tangle
+frisbees warped in a pile | 0.4 | 0.02-0.08 | sun-cupped discs
+kickballs wedged behind a beam | 0.4 | 0.02-0.08 | escape artists
+sweatband basket nobody claims | 0.35 | 0.02-0.06 | terry rainbow
+tug rope with a taped middle | 0.4 | 0.05-0.15 | flag long gone

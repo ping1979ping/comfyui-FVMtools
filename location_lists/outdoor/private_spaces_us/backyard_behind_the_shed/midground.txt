@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wheelbarrow tipped against the shed | 0.55 | 0.1-0.25 | rust-freckled tray
+stack of spare fence boards | 0.5 | 0.1-0.25 | silvered lumber
+garden cart with a flat tire | 0.45 | 0.1-0.25 | slumped corner
+chicken wire roll standing | 0.4 | 0.05-0.2 | springy cylinder
+bird bath gone green | 0.4 | 0.05-0.15 | algae bowl
+burn barrel with a mesh lid | 0.35 | 0.1-0.2 | scorched drum
+tomato cages stored in a jumble | 0.45 | 0.1-0.2 | wire cones
+dog exploring the long grass | 0.45 | 0.1-0.25 | nose-down patrol
+step ladder folded flat on nails | 0.4 | 0.1-0.25 | wall-hung rails
+bag of leaves from last fall | 0.45 | 0.1-0.2 | sagging paper sack
+rabbit frozen at the fence gap | 0.35 | 0.03-0.1 | ears up

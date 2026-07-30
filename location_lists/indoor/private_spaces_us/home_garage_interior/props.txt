@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+jar of loose screws on the bench | 0.55 | 0.02-0.06 | mixed hardware
+paint cans stacked by shade of use | 0.5 | 0.05-0.15 | drip-crusted rims
+sports gear tub overflowing | 0.5 | 0.05-0.15 | gloves and balls
+car wash bucket with a stiff mitt | 0.45 | 0.03-0.1 | soap-dried wool
+trickle charger clipped to a battery | 0.35 | 0.02-0.08 | quiet red glow
+work gloves molded to hand shapes | 0.5 | 0.02-0.06 | oil-stiffened leather
+birdseed bag rolled shut | 0.4 | 0.03-0.08 | clipped top
+spare tire leaned on the wall | 0.45 | 0.05-0.15 | deep tread shadow
+fishing rods bundled in a corner | 0.4 | 0.05-0.15 | tangled tips
+radio caked in sawdust | 0.4 | 0.02-0.08 | bent antenna
+holiday bins taped shut | 0.45 | 0.1-0.2 | bulging lids

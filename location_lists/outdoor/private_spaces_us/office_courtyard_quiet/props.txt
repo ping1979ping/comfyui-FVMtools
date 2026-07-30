@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+forgotten cardigan on the bench | 0.4 | 0.02-0.08 | folded arm rest
+coffee cup on the planter edge | 0.45 | 0.02-0.06 | balanced ring
+lunch container lid chasing wind | 0.35 | 0.01-0.05 | skittering disc
+earbud case on the bench slat | 0.35 | 0.01-0.04 | pebble-sized
+hair clip by the bench leg | 0.3 | 0.01-0.03 | claw teeth
+apple core in the gravel | 0.35 | 0.01-0.04 | tidy toss missed
+stone lined up on the planter lip | 0.3 | 0.01-0.04 | idle sorting
+badge reel dropped in the joint | 0.3 | 0.01-0.04 | coiled cord
+pigeon feather on the pavers | 0.35 | 0.01-0.03 | grey curl
+water bottle sweating on the bench | 0.4 | 0.02-0.06 | ring forming
+sandwich wrapper pinned by a shoe | 0.35 | 0.01-0.05 | wind hostage

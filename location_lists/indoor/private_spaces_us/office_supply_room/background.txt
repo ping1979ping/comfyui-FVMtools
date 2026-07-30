@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+steel shelving stacked with paper reams | 1.0 | 0.4-0.7 | white bricks in rows
+copier against the wall mid-cycle | 0.7 | 0.25-0.5 | warm grey bulk
+cabinets with narrow drawers | 0.6 | 0.25-0.45 | dented beige steel
+storage boxes squared on high shelves | 0.7 | 0.25-0.5 | lidded cardboard
+door with a wired-glass slit | 0.5 | 0.1-0.3 | hallway glow through mesh
+folding table for collating | 0.55 | 0.2-0.4 | scratched laminate
+broken chairs gathered in a corner | 0.45 | 0.15-0.3 | stacked seat pans
+window into a dark light-well | 0.4 | 0.1-0.25 | dusty pane
+shelf of mismatched binders | 0.55 | 0.2-0.4 | leaning spines
+old monitors facing the wall | 0.45 | 0.15-0.3 | grey screens
+coat rack of forgotten layers | 0.4 | 0.1-0.25 | abandoned cardigans

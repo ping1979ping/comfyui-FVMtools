@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning before anyone is up | 0.8 | - | -
+bright mid morning | 0.8 | - | -
+flat overcast midday | 0.9 | - | -
+late afternoon long shadows | 0.9 | - | -
+golden hour on the walls | 0.8 | - | -
+dusk settling in | 0.7 | - | -
+blue hour after sunset | 0.55 | - | -
+first lights coming on nearby | 0.5 | - | -
+grey november midday | 0.6 | - | -
+last light on the upper edges | 0.6 | - | -

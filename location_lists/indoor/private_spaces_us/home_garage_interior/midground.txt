@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+lawn mower parked mid-floor | 0.6 | 0.15-0.3 | grass-caked deck
+rolling tool chest with drawers ajar | 0.6 | 0.15-0.3 | sockets glinting
+snow shovels and rakes in a barrel | 0.55 | 0.1-0.25 | handles fanned out
+sawhorses with a half-cut board | 0.45 | 0.15-0.3 | fresh sawdust
+extension cord coiled on a nail | 0.55 | 0.05-0.15 | orange loops
+shop vacuum with a kinked hose | 0.5 | 0.1-0.25 | dust-caked canister
+bag of softener salt slumped open | 0.4 | 0.05-0.15 | white pellets spilling
+folding chairs leaned in a rank | 0.45 | 0.1-0.25 | webbed seats
+cooler stack by the door | 0.45 | 0.1-0.25 | nested lids
+kid's bike with training wheels | 0.45 | 0.1-0.25 | streamers on the grips
+oil pan slid under the car | 0.35 | 0.05-0.15 | black-slicked steel

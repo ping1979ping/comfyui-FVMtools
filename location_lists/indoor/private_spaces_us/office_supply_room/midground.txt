@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cart with squeaking casters | 0.55 | 0.1-0.25 | wobbling shelf
+stack of paper boxes as a step | 0.5 | 0.1-0.25 | crushed corner
+shredder with a full bin | 0.5 | 0.1-0.2 | confetti drift inside
+tub of tangled cables | 0.55 | 0.05-0.15 | grey spaghetti
+spare keyboards shingled in a box | 0.5 | 0.05-0.15 | key rows overlapping
+water cooler jugs lined empty | 0.45 | 0.1-0.2 | blue plastic ranks
+ladder folded against the shelf end | 0.45 | 0.1-0.25 | paint-freckled rungs
+box of holiday decorations | 0.4 | 0.1-0.2 | tinsel escaping
+banker's lamp missing its chain | 0.3 | 0.03-0.1 | brass and green glass
+crate of misdelivered supplies | 0.4 | 0.1-0.2 | still strapped
+fan for the copier heat | 0.4 | 0.05-0.15 | oscillating slowly

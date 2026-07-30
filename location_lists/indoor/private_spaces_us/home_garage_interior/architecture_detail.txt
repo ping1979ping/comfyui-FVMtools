@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+bare stud wall with wiring runs | 0.6 | 0.2-0.45 | exposed framing
+concrete floor with a painted patch | 0.55 | 0.15-0.4 | flaking grey coat
+floor drain in the center slope | 0.4 | 0.02-0.08 | rusted round grate
+single bulb on a pull chain | 0.55 | 0.03-0.1 | swinging cone of light
+door closer on the kitchen door | 0.4 | 0.02-0.08 | hissing arm
+crack radiating from an anchor bolt | 0.4 | 0.03-0.1 | hairline star
+weather strip shredded at the big door | 0.45 | 0.05-0.15 | torn rubber flap
+mouse trap set along the wall | 0.35 | 0.02-0.06 | wooden snap bar
+stained ceiling patch under the bathroom | 0.35 | 0.05-0.15 | ringed drywall
+hose bib poking through the wall | 0.4 | 0.02-0.06 | dripping spigot
+paint drips fossilized on the floor | 0.45 | 0.03-0.1 | speckled history

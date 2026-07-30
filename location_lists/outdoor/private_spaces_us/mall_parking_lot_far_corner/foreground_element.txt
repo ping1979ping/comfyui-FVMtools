@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bags heaved into the trunk | 0.65 | 0.1-0.25 | handle dig
+cart pushed back the long way | 0.55 | 0.1-0.3 | solo trek
+keys blipped from three rows out | 0.55 | 0.05-0.15 | tail lights answering
+door opened wide with no neighbors | 0.5 | 0.1-0.25 | luxury of space
+coat grabbed against the wind | 0.5 | 0.05-0.2 | flapping hem
+phone checked leaning on the car | 0.5 | 0.05-0.2 | one elbow on the roof
+kid buckled without the door dance | 0.45 | 0.1-0.25 | full swing room
+receiptless walk straight to the car | 0.45 | 0.1-0.25 | freehand stride
+puddle looped around mid-row | 0.5 | 0.05-0.2 | wide arc
+gull shooed off the hood | 0.35 | 0.05-0.15 | wing flurry
+mirror wiped with a sleeve | 0.45 | 0.03-0.1 | dew swipe

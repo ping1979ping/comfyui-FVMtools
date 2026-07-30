@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+lost tennis ball in the swale | 0.45 | 0.01-0.04 | grey-green veteran
+pinnie snagged on the fence | 0.4 | 0.02-0.06 | mesh flag
+water bottle standing alone mid-field | 0.4 | 0.01-0.05 | forgotten sentinel
+cleat divots drying in a cluster | 0.45 | 0.03-0.1 | torn crescents
+frisbee on the shed roof | 0.35 | 0.01-0.04 | out of reach
+hair tie in the track gravel | 0.35 | 0.01-0.03 | dusty loop
+practice cone cracked flat | 0.4 | 0.01-0.05 | run-over casualty
+sunflower seed shells by the bleacher | 0.4 | 0.02-0.06 | spit constellation
+feather stuck upright in the turf | 0.35 | 0.01-0.03 | crow calling card
+chewed mouthguard by the bench | 0.3 | 0.01-0.03 | abandoned armor
+jacket forgotten on the top bench | 0.4 | 0.02-0.08 | slumped shape

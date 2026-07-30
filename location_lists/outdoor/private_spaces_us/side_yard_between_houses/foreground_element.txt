@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+squeeze past the AC units | 0.55 | 0.1-0.25 | sideways shuffle
+hose unreeled toward the front | 0.55 | 0.1-0.25 | loops paying out
+trash can walked to the kerb | 0.6 | 0.1-0.3 | tilt and roll
+gate held for the dog | 0.5 | 0.05-0.2 | nose already through
+screen carried flat like a tray | 0.45 | 0.1-0.25 | careful grip
+firewood armload stacked high | 0.45 | 0.05-0.2 | chin clamp
+stepping stones taken in stride | 0.5 | 0.05-0.2 | practiced hops
+barrel lid lifted for a level check | 0.4 | 0.05-0.15 | dark water peek
+tarp corner re-tucked | 0.45 | 0.05-0.15 | bungee stretch
+wall touched ducking the ladder | 0.45 | 0.05-0.15 | low clearance
+cat greeted on the fence line | 0.4 | 0.03-0.12 | offered knuckles

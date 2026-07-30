@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+deck coating worn in the lanes | 0.55 | 0.15-0.4 | grey traffic paths
+drainage scuppers through the parapet | 0.5 | 0.03-0.1 | weep holes
+expansion joints with rubber spines | 0.5 | 0.05-0.2 | ridged strips
+parapet top rounded by weather | 0.45 | 0.05-0.2 | smoothed edge
+rust bleeding at a rail anchor | 0.45 | 0.02-0.08 | orange tears
+bird wire along the bulkhead edge | 0.4 | 0.02-0.08 | thin spikes
+hatch to the mechanical space | 0.35 | 0.03-0.1 | padlocked lid
+wind moaning at the stair door | 0.45 | 0.05-0.15 | gap whistle
+concrete patched in odd rectangles | 0.5 | 0.1-0.25 | shade mismatch
+camera dome on a corner mast | 0.35 | 0.02-0.06 | smoked glass eye
+lichen freckling the parapet | 0.4 | 0.05-0.15 | slow constellations

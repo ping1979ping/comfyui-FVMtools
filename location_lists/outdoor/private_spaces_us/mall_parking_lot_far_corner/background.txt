@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+empty far corner of the lot | 1.0 | 0.5-0.9 | faded stall stripes
+light poles spaced down the rows | 0.8 | 0.15-0.4 | twin heads on tapered masts
+mall roofline low on the horizon | 0.6 | 0.2-0.45 | long beige band
+hedge strip along the boundary | 0.6 | 0.2-0.4 | dusty evergreen wall
+cars clustered far off by the doors | 0.6 | 0.2-0.4 | distant glinting cluster
+cart corral standing alone | 0.55 | 0.1-0.3 | pipe-rail pen
+overflow rows never used | 0.6 | 0.3-0.6 | clean unbroken stripes
+retention pond behind a fence | 0.4 | 0.2-0.4 | reedy bank
+tree islands on mulch mounds | 0.55 | 0.15-0.35 | staked young trunks
+sky taking most of the frame | 0.7 | 0.4-0.7 | wide open ceiling
+service road skirting the lot | 0.45 | 0.15-0.35 | kerbed lane

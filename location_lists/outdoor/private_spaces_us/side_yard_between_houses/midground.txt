@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+ladder stored on wall hooks | 0.5 | 0.15-0.35 | horizontal aluminum
+firewood stacked under the eave | 0.5 | 0.15-0.3 | split rows
+kiddie pool leaned to dry | 0.4 | 0.15-0.3 | dripping shell
+rain barrel under a downspout | 0.45 | 0.1-0.25 | lidded drum
+wheelbarrow parked nose down | 0.45 | 0.1-0.25 | crusted tray
+bags of mulch half used | 0.45 | 0.1-0.2 | folded tops
+dog run wire between posts | 0.35 | 0.1-0.25 | slack line
+bicycle under a tarp | 0.4 | 0.1-0.25 | shrouded shape
+recycling bins nested | 0.5 | 0.1-0.2 | stacked blue
+window screens leaned for cleaning | 0.4 | 0.1-0.25 | mesh row
+cat patrolling the fence top | 0.4 | 0.05-0.15 | balanced walk

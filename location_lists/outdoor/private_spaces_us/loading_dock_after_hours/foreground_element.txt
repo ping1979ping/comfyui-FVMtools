@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+dock edge sat on with legs hanging | 0.55 | 0.1-0.25 | heels drumming
+last pallet nudged square | 0.5 | 0.1-0.2 | boot push
+padlock clicked and tugged | 0.5 | 0.03-0.1 | ritual check
+ramp walked down backwards with a load | 0.4 | 0.1-0.25 | careful steps
+jacket collar up against the night | 0.5 | 0.05-0.2 | cool air
+phone light swept under the trailer | 0.4 | 0.05-0.15 | quick check
+chock kicked under a wheel | 0.45 | 0.05-0.15 | wedge set
+cat offered a bit of sandwich | 0.35 | 0.03-0.1 | shift companion
+gate rolled shut with a shoulder | 0.5 | 0.1-0.25 | rattling travel
+dust slapped off the thighs | 0.45 | 0.05-0.15 | end of shift
+moth waved away from the face | 0.4 | 0.03-0.1 | soft flurry

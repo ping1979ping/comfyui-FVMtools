@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+stack of pallets squared for pickup | 0.65 | 0.15-0.3 | strapped tower
+dock plate leaned by the door | 0.5 | 0.1-0.2 | checker steel sheet
+wheel chocks on a rope | 0.5 | 0.05-0.15 | yellow wedges
+hand truck chained to a rail | 0.45 | 0.05-0.15 | overnight mooring
+shrink wrap scraps balled up | 0.45 | 0.03-0.1 | cloudy tumbleweed
+trailer dropped without its cab | 0.4 | 0.25-0.45 | landing legs down
+puddle mapping the apron slope | 0.5 | 0.1-0.3 | slow mirror
+cat hunting along the wall | 0.35 | 0.05-0.15 | shadow work
+broom against the bumper | 0.45 | 0.03-0.1 | end-of-shift lean
+milk crates stacked by the door | 0.45 | 0.05-0.15 | plastic columns
+moths circling the pole light | 0.45 | 0.03-0.1 | dusty orbit

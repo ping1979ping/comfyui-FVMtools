@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+pallet jack pumped to lift | 0.6 | 0.1-0.25 | handle strokes
+tote slid off at chest height | 0.55 | 0.1-0.2 | controlled drop
+wrap slashed along the seam | 0.5 | 0.05-0.15 | plastic sighing open
+cage rolled leaning into the turn | 0.5 | 0.1-0.3 | mesh rattle
+armful steadied with the chin | 0.5 | 0.05-0.2 | tower discipline
+double doors backed through | 0.5 | 0.1-0.25 | hip push
+top bay scouted from the ladder | 0.45 | 0.1-0.3 | neck craned
+tape gun run around a box | 0.5 | 0.05-0.15 | squealing pass
+gloves snapped on for the glass load | 0.4 | 0.03-0.1 | finger wiggle
+count kept on raised fingers | 0.45 | 0.03-0.1 | silent tally
+pallet corner nudged square | 0.45 | 0.05-0.15 | boot tap

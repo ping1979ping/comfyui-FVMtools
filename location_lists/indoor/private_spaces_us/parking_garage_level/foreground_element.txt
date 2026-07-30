@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+keys fished out mid-stride | 0.65 | 0.05-0.15 | fob in hand
+trunk lifted for the bags | 0.6 | 0.1-0.25 | struts hissing
+footsteps echoing off the deck | 0.55 | 0.1-0.3 | long reverb
+car door held open with a hip | 0.55 | 0.1-0.25 | bags in both hands
+reverse lights flicking on nearby | 0.45 | 0.05-0.2 | white glow on concrete
+phone light swept along the bays | 0.4 | 0.05-0.15 | hunting for the car
+cart pushed toward the elevator | 0.45 | 0.1-0.25 | wheels clattering
+jacket pulled tighter in the chill | 0.5 | 0.05-0.2 | concrete cold
+mirror checked before backing out | 0.45 | 0.05-0.15 | head turned
+parking level counted on fingers | 0.4 | 0.03-0.1 | which floor again
+child's hand held crossing the deck | 0.4 | 0.05-0.15 | short quick steps

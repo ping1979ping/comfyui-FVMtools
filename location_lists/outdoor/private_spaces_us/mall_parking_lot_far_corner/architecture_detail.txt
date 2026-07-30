@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+asphalt fading to grey | 0.6 | 0.3-0.6 | sun-bleached surface
+crack lines filled with tar | 0.55 | 0.1-0.3 | black meanders
+kerb stones chipped at the corner | 0.5 | 0.05-0.15 | broken lips
+drain grate collecting grit | 0.5 | 0.03-0.1 | silted slots
+stall stripes worn to shadows | 0.55 | 0.1-0.3 | ghost grid
+wheel stop out of line | 0.45 | 0.05-0.15 | nudged block
+weeds claiming the expansion joints | 0.5 | 0.05-0.2 | green seams
+mulch washed onto the asphalt | 0.45 | 0.05-0.15 | bark scatter
+pole base with old bump scars | 0.45 | 0.03-0.1 | paint transfers
+kerb ramp to the walkway | 0.4 | 0.05-0.15 | bumpy domes
+oil spots in the popular stalls | 0.45 | 0.05-0.15 | dark medallions

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+tape gun resting on a box | 0.5 | 0.02-0.08 | dried tape tongue
+bubble wrap roll leaning | 0.45 | 0.05-0.15 | popped patches
+old lamp waiting for a new home | 0.45 | 0.05-0.12 | shade askew
+photo albums stacked chin high | 0.4 | 0.05-0.12 | leather spines
+board games wedged sideways | 0.45 | 0.05-0.12 | crushed corners
+yoga mat rolled with a strap | 0.4 | 0.03-0.1 | flaking foam
+gift wrap tubes in a bin | 0.4 | 0.03-0.1 | crushed ends
+winter blanket bag zipped tight | 0.45 | 0.05-0.15 | vacuum-shrunk brick
+loose curtain rings in a bowl | 0.35 | 0.02-0.06 | brass circles
+humidifier with its cord wrapped | 0.4 | 0.03-0.1 | white tank
+sheet music in a crate | 0.3 | 0.03-0.1 | yellowed pages

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+dusty still air | 0.8 | - | -
+cold air off the concrete | 0.7 | - | -
+damp mineral basement air | 0.5 | - | -
+draught under the door | 0.5 | - | -
+rain heard on a metal roof | 0.45 | - | -
+dry heated air from a duct | 0.5 | - | -
+musty cardboard smell | 0.5 | - | -
+humid summer air trapped inside | 0.45 | - | -
+cool air pooling at the floor | 0.5 | - | -
+still air with drifting dust motes | 0.6 | - | -

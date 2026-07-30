@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+dock edge steel worn silver | 0.55 | 0.05-0.15 | polished lip
+bumper bolts bleeding rust | 0.5 | 0.03-0.1 | orange trails
+apron joints packed with grit | 0.5 | 0.05-0.2 | dark seams
+tire scrub marks arcing in | 0.5 | 0.1-0.25 | black sweeps
+downpipe strapped to the block wall | 0.45 | 0.05-0.15 | dented run
+seal brushes around the doors | 0.45 | 0.03-0.1 | worn bristle frames
+steps up the dock side with a rail | 0.5 | 0.05-0.2 | pipe handhold
+paint line marking the trailer path | 0.45 | 0.05-0.2 | faded yellow
+block wall scarred at fork height | 0.45 | 0.05-0.15 | gouged band
+gate wheels rusted on the track | 0.4 | 0.02-0.08 | seized rollers
+night insects ticking at the light | 0.4 | 0.03-0.1 | small collisions

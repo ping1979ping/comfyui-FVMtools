@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+lost hubcap against the wall | 0.45 | 0.02-0.08 | scratched silver dish
+flattened cardboard in a corner | 0.45 | 0.03-0.1 | rain-warped sheet
+coffee cup left on a wheel stop | 0.4 | 0.02-0.06 | dried ring inside
+dropped glove near the stairs | 0.4 | 0.02-0.05 | flattened knit
+loose gravel swept into a pile | 0.4 | 0.03-0.1 | broom lines
+bungee cord hanging off a pipe | 0.35 | 0.02-0.06 | stretched hooks
+crushed water bottle in a bay | 0.4 | 0.02-0.05 | cloudy plastic
+stray cone knocked on its side | 0.45 | 0.03-0.1 | faded orange
+cigarette ends by the stair door | 0.4 | 0.02-0.06 | trodden filters
+snapped umbrella in a corner | 0.35 | 0.02-0.06 | bent ribs
+dusty tarp over a stored boat | 0.3 | 0.1-0.25 | bungeed corners

@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+rusted trowel in the weeds | 0.45 | 0.01-0.05 | lost last season
+cracked plant pots in a heap | 0.5 | 0.03-0.1 | terracotta shards
+hose end without its nozzle | 0.4 | 0.01-0.05 | dribbling thread
+dog bone half buried | 0.4 | 0.01-0.05 | ongoing project
+tennis ball gone grey | 0.45 | 0.01-0.04 | fetch veteran
+glove stiffened over a post | 0.4 | 0.01-0.05 | scarecrow wave
+watering can with a split seam | 0.4 | 0.02-0.06 | weeping side
+brick pile from a project | 0.45 | 0.05-0.12 | mossy stack
+netting bundled from the berry bed | 0.35 | 0.02-0.08 | tangled mist
+frisbee lodged in the vines | 0.35 | 0.01-0.04 | faded disc
+snail shells collected on a stump | 0.3 | 0.01-0.04 | spiral row

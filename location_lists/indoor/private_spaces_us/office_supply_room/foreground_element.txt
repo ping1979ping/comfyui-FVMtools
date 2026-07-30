@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+ream carried under one arm | 0.6 | 0.05-0.15 | dense little load
+copier lid lifted for a jam hunt | 0.55 | 0.1-0.25 | green glow escaping
+drawer eased past its squeak | 0.45 | 0.05-0.15 | slow pull
+cable tub dug through elbow deep | 0.5 | 0.1-0.2 | connector hunt
+box lid pried without the cutter | 0.45 | 0.05-0.15 | tape stretched white
+shelf reached on tiptoe | 0.5 | 0.05-0.2 | fingertip slide
+cart steered around the table | 0.45 | 0.1-0.25 | caster squeal
+pen tested on a palm | 0.45 | 0.02-0.08 | spiral scribble
+armload balanced with a chin | 0.5 | 0.05-0.2 | tower management
+shredder fed one guilty page | 0.4 | 0.05-0.15 | satisfying pull
+light waited out mid-flicker | 0.4 | 0.05-0.15 | patient pause

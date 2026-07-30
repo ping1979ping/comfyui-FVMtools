@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+rack legs in dented guards | 0.55 | 0.05-0.15 | scraped yellow steel
+floor joints filled and refilled | 0.5 | 0.05-0.2 | dark tar lines
+column base ringed with scuffs | 0.5 | 0.05-0.15 | forklift history
+sprinkler heads among the joists | 0.45 | 0.03-0.1 | brass drops
+walls of bare painted block | 0.55 | 0.25-0.5 | grey masonry
+skylight panel of milky plastic | 0.4 | 0.05-0.2 | diffused glow
+door sweep shedding bristles | 0.4 | 0.02-0.08 | brush strip
+chill near the dock seal | 0.45 | 0.1-0.25 | leaking edge
+dust on the top-bay stock | 0.5 | 0.05-0.2 | long-stay layer
+wheel marks curving to the doors | 0.5 | 0.1-0.25 | polished arcs
+emergency light with twin heads | 0.4 | 0.02-0.08 | dusty frog eyes

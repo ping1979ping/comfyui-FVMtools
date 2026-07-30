@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+flat overcast sky | 0.9 | - | -
+light drizzle in the air | 0.5 | - | -
+wet asphalt after a shower | 0.55 | - | -
+clear cold air | 0.6 | - | -
+humid summer haze | 0.55 | - | -
+gusty wind funneled between walls | 0.5 | - | -
+cold air with breath visible | 0.4 | - | -
+thin high cloud | 0.6 | - | -
+heavy still air before a storm | 0.4 | - | -
+puddles shivering in the wind | 0.45 | - | -

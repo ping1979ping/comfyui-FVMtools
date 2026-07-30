@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bike tire pumped with a thumb check | 0.55 | 0.05-0.2 | pressure squeeze
+bin dragged down from the shelf | 0.55 | 0.1-0.25 | dust avalanche
+cobweb waved away from the face | 0.5 | 0.05-0.15 | backhand swipe
+tool lifted off the pegboard | 0.5 | 0.05-0.15 | outline left behind
+big door rolled up by hand | 0.5 | 0.1-0.3 | daylight flooding in
+freezer lid held open for a dig | 0.45 | 0.1-0.2 | frost breath
+sawdust brushed off the bench | 0.45 | 0.05-0.15 | palm sweep
+cord unwound arm over elbow | 0.45 | 0.05-0.15 | practiced loops
+car hood propped for a look | 0.4 | 0.1-0.3 | rod in the catch
+knuckle sucked after a slip | 0.4 | 0.03-0.1 | wrench bite
+paint can pried with a flathead | 0.4 | 0.05-0.12 | rim crack

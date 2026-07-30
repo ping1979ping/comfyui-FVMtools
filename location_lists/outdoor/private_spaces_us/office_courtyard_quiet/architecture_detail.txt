@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+paver joints in a strict grid | 0.55 | 0.15-0.4 | sand-swept lines
+drain channel across the low edge | 0.5 | 0.05-0.15 | slotted steel
+planter corners chipped by carts | 0.45 | 0.03-0.1 | bruised concrete
+mullion shadows laddering the ground | 0.5 | 0.15-0.35 | moving stripes
+tap recessed in a wall box | 0.4 | 0.02-0.08 | brass stub
+grate rings around the trunks | 0.45 | 0.05-0.15 | radial slots
+bench feet bolted to the pavers | 0.4 | 0.02-0.08 | anchor plates
+wind eddy corner collecting leaves | 0.45 | 0.05-0.15 | swirl pocket
+glass reflections doubling the tree | 0.5 | 0.15-0.35 | ghost twin
+lichen starting on the north planter | 0.4 | 0.03-0.1 | pale spots
+paver replaced in a wrong shade | 0.4 | 0.03-0.1 | odd one out

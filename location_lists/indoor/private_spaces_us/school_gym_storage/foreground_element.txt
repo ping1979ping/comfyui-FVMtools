@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+mat dragged with both fists | 0.6 | 0.15-0.3 | vinyl squealing
+cone tower carried like a torch | 0.55 | 0.05-0.2 | chin-high wobble
+ball bin steered by its lip | 0.55 | 0.1-0.25 | one-hand pilot
+net post walked corner to corner | 0.45 | 0.1-0.3 | end-over-end
+hoop stack fanned for the count | 0.45 | 0.05-0.2 | color check
+rope coil shoulder-carried | 0.45 | 0.05-0.2 | heavy loop
+pinnie bag emptied in a heap | 0.5 | 0.05-0.15 | mesh flood
+pump worked with a knee brace | 0.5 | 0.05-0.15 | hissing strokes
+door held for the trolley train | 0.5 | 0.05-0.2 | foot as a stop
+inventory counted on fingers | 0.45 | 0.03-0.1 | lips moving
+sneeze from the chalk drift | 0.4 | 0.03-0.1 | dusty cloud

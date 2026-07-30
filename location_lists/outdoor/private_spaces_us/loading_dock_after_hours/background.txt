@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+raised concrete dock face | 1.0 | 0.4-0.7 | bumper-scarred edge
+roller doors down for the night | 0.85 | 0.3-0.6 | ribbed steel curtains
+empty trailer bay striped by shadow | 0.7 | 0.25-0.5 | oil-stained apron
+rubber dock bumpers in pairs | 0.65 | 0.1-0.25 | chunked black blocks
+bollards guarding the corners | 0.6 | 0.1-0.25 | scraped steel posts
+ramp sloping up to the dock | 0.6 | 0.2-0.4 | broom-rough concrete
+back wall of painted block | 0.65 | 0.3-0.6 | utility grey
+chain-link gate rolled shut | 0.5 | 0.2-0.4 | padlocked track
+dumpster corral swept clean | 0.5 | 0.15-0.3 | fenced pen
+lone pole light over the apron | 0.55 | 0.1-0.3 | wide cone of glow
+weeds along the fence base | 0.5 | 0.1-0.25 | tough green fringe

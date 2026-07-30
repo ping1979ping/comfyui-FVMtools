@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+back wall of the shed | 1.0 | 0.4-0.7 | weathered boards
+fence corner closing the pocket | 0.8 | 0.3-0.6 | grey panel angle
+compost heap in its bin | 0.6 | 0.15-0.35 | dark crumbly layers
+overgrown strip nobody mows | 0.65 | 0.2-0.45 | knee-high seed heads
+firewood rack under a lean-to | 0.55 | 0.2-0.4 | split stack
+neighbor's tree hanging over | 0.55 | 0.2-0.45 | borrowed shade
+brush pile waiting for a permit | 0.45 | 0.15-0.35 | grey tangle
+rain barrel on blocks | 0.45 | 0.1-0.25 | green drum
+old swing frame gone to rust | 0.4 | 0.15-0.35 | naked A-frame
+bare patch where the pool stood | 0.45 | 0.2-0.4 | yellow ring
+vines taking the fence corner | 0.5 | 0.2-0.4 | leafy scramble

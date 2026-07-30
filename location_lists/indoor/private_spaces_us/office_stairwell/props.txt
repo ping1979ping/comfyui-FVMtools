@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+forgotten coffee cup on a step | 0.45 | 0.02-0.06 | cold half inch
+rubber band dropped on a landing | 0.35 | 0.01-0.04 | dusty loop
+hair tie by the rail base | 0.35 | 0.01-0.04 | stretched spiral
+paperclip in a tread corner | 0.3 | 0.01-0.03 | bent wire
+umbrella hooked on the rail | 0.4 | 0.02-0.08 | drip line below
+badge reel clipped and abandoned | 0.3 | 0.01-0.04 | retracted cord
+crumpled tissue near the door | 0.35 | 0.01-0.04 | missed pocket
+salt crystals tracked up in winter | 0.4 | 0.03-0.1 | white scatter
+lanyard draped on a rail post | 0.35 | 0.02-0.06 | dangling clip
+energy bar wrapper folded small | 0.35 | 0.01-0.04 | guilty crease
+single glove on the window ledge | 0.35 | 0.02-0.05 | waiting for its owner

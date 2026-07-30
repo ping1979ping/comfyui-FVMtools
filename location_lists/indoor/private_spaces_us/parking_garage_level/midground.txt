@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+lone car parked nose-in | 0.7 | 0.2-0.4 | dust-filmed paint
+concrete wheel stops in a row | 0.7 | 0.1-0.3 | chipped rebar ends
+shopping cart drifted between bays | 0.5 | 0.1-0.25 | nested wire basket
+puddle under a dripping pipe | 0.5 | 0.05-0.2 | slow ring ripples
+motorcycle tucked beside the core | 0.4 | 0.1-0.25 | cover half slipped off
+column wrapped with a rubber guard | 0.55 | 0.05-0.2 | scuffed black collar
+hose reel cabinet on the wall | 0.4 | 0.05-0.15 | steel box with a glass front
+pallet of salt bags for winter | 0.35 | 0.1-0.25 | shrink-wrapped stack
+sweeper machine parked in a corner | 0.35 | 0.1-0.25 | dusty brushes
+bicycle chained to a rail | 0.45 | 0.05-0.2 | rusted frame
+row of empty bays receding | 0.6 | 0.25-0.5 | repeating stalls

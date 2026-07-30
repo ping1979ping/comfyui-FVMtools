@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+plain cardboard boxes stacked to shoulder height | 1.0 | 0.4-0.7 | taped seams
+spare bed under a dust sheet | 0.7 | 0.3-0.55 | draped ghost shape
+closet with sliding doors half open | 0.6 | 0.25-0.5 | crammed rail visible
+curtains drawn against the day | 0.6 | 0.2-0.45 | glowing fabric edge
+garment rack of off-season coats | 0.6 | 0.2-0.4 | shoulder line of plastic
+ironing board leaned by the wall | 0.5 | 0.1-0.3 | scorched cover
+bookshelf of mismatched spines | 0.5 | 0.2-0.4 | double-stacked rows
+exercise bike used as a hanger | 0.5 | 0.15-0.35 | towel over the bars
+bare walls with pale frame ghosts | 0.5 | 0.25-0.5 | sun-faded outlines
+window with the blind at half | 0.55 | 0.15-0.35 | slatted light
+crib frame waiting in pieces | 0.35 | 0.15-0.3 | bundled rails

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+worn nosing strips on the treads | 0.6 | 0.05-0.2 | smoothed grit tape
+paint drips on the stringer | 0.45 | 0.03-0.1 | ancient runs
+hairline crack chasing the landing | 0.45 | 0.05-0.15 | wandering line
+rail bracket loose at one joint | 0.4 | 0.02-0.06 | rattling collar
+scuffed arc where the door drags | 0.45 | 0.03-0.1 | quarter-circle groove
+wired glass with a stress crack | 0.4 | 0.03-0.1 | starred corner
+riser heights not quite equal | 0.35 | 0.05-0.15 | stumble step
+echoing acoustics off hard faces | 0.5 | 0.1-0.3 | slap-back sound
+hinge painted into stiffness | 0.4 | 0.02-0.06 | groaning swing
+floor level change at the door | 0.4 | 0.02-0.08 | steel threshold
+dust settled on the pipe tops | 0.45 | 0.03-0.1 | grey felt line

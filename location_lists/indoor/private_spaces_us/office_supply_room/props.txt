@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stapler graveyard in a drawer tray | 0.45 | 0.02-0.08 | jammed veterans
+box of loose pens tested and mixed | 0.5 | 0.02-0.08 | chewed caps
+tape rolls threaded on a spindle | 0.45 | 0.02-0.06 | shrinking stack
+scissors tethered with string | 0.4 | 0.01-0.05 | communal pair
+rubber band ball started years ago | 0.4 | 0.01-0.05 | layered sphere
+pushpins in a magnet dish | 0.4 | 0.01-0.05 | bristling colors
+envelope stacks sorted by size | 0.5 | 0.05-0.12 | banded bundles
+toner boxes sealed in plastic | 0.45 | 0.05-0.12 | heavy little bricks
+mug of dried-out highlighters | 0.4 | 0.02-0.06 | capless casualties
+staple remover like a tiny jaw | 0.35 | 0.01-0.04 | sprung teeth
+first aid tin restocked halfway | 0.4 | 0.02-0.06 | bandage ends

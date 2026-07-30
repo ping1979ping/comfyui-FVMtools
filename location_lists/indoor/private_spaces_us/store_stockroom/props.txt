@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+box cutter parked on a rail | 0.5 | 0.01-0.05 | taped handle
+packing tape roll on a wrist | 0.45 | 0.02-0.06 | quick-draw loop
+gloves tucked in an apron pocket | 0.45 | 0.02-0.06 | molded fingers
+strapping offcuts curled on the floor | 0.45 | 0.02-0.08 | plastic ribbons
+broom and long-handled pan set | 0.45 | 0.03-0.1 | leaning pair
+radio murmuring from a shelf | 0.4 | 0.02-0.06 | dusty speaker
+water bottle squadron on a beam | 0.45 | 0.02-0.08 | shift hydration
+banana box repurposed again | 0.45 | 0.05-0.12 | vented ends
+zip ties in a coffee can | 0.4 | 0.01-0.05 | bristling loops
+knee pads dropped at a bay | 0.35 | 0.02-0.06 | scarred shells
+dolly strap coiled like a snake | 0.4 | 0.02-0.06 | hooked ends

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bare fluorescent tube light | 0.9 | - | -
+daylight through a small high window | 0.7 | - | -
+dim light from the door left ajar | 0.6 | - | -
+one tube flickering at the far end | 0.5 | - | -
+single bulb on a pull cord | 0.6 | - | -
+grey daylight not reaching the corners | 0.7 | - | -
+after-hours half darkness | 0.5 | - | -
+morning light in a thin stripe | 0.6 | - | -
+late afternoon slant through the doorway | 0.6 | - | -
+even shadowless work light | 0.7 | - | -

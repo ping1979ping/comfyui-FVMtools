@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+watering can by the spigot | 0.45 | 0.02-0.08 | faded plastic
+dog toy lost in the strip | 0.4 | 0.01-0.05 | chewed ball
+clothes pins clipped to the wire | 0.4 | 0.01-0.05 | weathered wood
+trowel stuck in a mulch bag | 0.4 | 0.01-0.05 | rusted blade
+flower pots stacked by size | 0.45 | 0.03-0.1 | nested terracotta
+sponge dried on the window sill | 0.35 | 0.01-0.04 | stiff yellow
+broom against the gate | 0.4 | 0.02-0.08 | splayed bristles
+paint can under the eave | 0.35 | 0.02-0.06 | rain-ringed lid
+extension cord out a window | 0.35 | 0.02-0.08 | temporary forever
+bird nest tucked on the meter box | 0.35 | 0.02-0.06 | grass cup
+gutter scoop dropped after the job | 0.3 | 0.01-0.04 | leaf-stained plastic

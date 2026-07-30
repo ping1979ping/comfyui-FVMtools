@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+paved courtyard between glass wings | 1.0 | 0.5-0.8 | large format pavers
+low concrete planters of grasses | 0.8 | 0.2-0.45 | feathered clumps
+single bench facing the small tree | 0.7 | 0.15-0.35 | slatted seat
+glass walls reflecting the sky | 0.75 | 0.3-0.6 | mirrored clouds
+young trees in metal grates | 0.6 | 0.15-0.35 | caged trunks
+gravel margin along the walls | 0.55 | 0.15-0.35 | raked stone band
+covered walkway on one side | 0.5 | 0.2-0.4 | column rhythm
+sky rectangle framed by rooflines | 0.6 | 0.25-0.5 | clean-cut opening
+ivy panel softening a blank wall | 0.45 | 0.2-0.4 | trained green grid
+water feature turned off | 0.4 | 0.1-0.3 | still black basin
+moss between the shaded pavers | 0.45 | 0.1-0.25 | green joints

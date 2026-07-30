@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+paper cup rolling in the wind | 0.5 | 0.02-0.06 | hollow scrape
+lost sunglasses on the kerb | 0.4 | 0.01-0.05 | one arm bent
+bungee cord dropped off a roof rack | 0.35 | 0.01-0.05 | hooked coil
+crushed fountain drink at a stall line | 0.4 | 0.02-0.06 | flattened cup
+pigeon feather stuck in the tar | 0.35 | 0.01-0.04 | grey quill
+balloon deflated against the hedge | 0.35 | 0.02-0.06 | wrinkled skin
+hair tie on the asphalt | 0.35 | 0.01-0.03 | dusty loop
+cart wheel cover cracked off | 0.35 | 0.01-0.04 | grey disc
+mitten dropped by the corral | 0.3 | 0.01-0.04 | salt-stained wool
+apple core near the tree island | 0.3 | 0.01-0.04 | browning spiral
+zip tie clipped and dropped | 0.3 | 0.01-0.03 | white curl

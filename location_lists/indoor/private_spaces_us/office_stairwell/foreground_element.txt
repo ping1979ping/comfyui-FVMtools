@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+two steps taken at a time | 0.6 | 0.1-0.3 | hand skimming the rail
+breather taken on a landing | 0.55 | 0.1-0.25 | hand on the hip
+phone call taken in the echo | 0.5 | 0.05-0.2 | lowered voice
+push bar hit with a forearm | 0.5 | 0.05-0.15 | door swinging wide
+heels carried for the climb | 0.4 | 0.05-0.15 | stocking steps
+coffee carried level on the turns | 0.5 | 0.05-0.15 | careful wrist
+stretch against the rail | 0.45 | 0.05-0.2 | calf pulled long
+floor counted under the breath | 0.45 | 0.03-0.1 | three more to go
+jacket shrugged on mid-flight | 0.45 | 0.05-0.2 | sleeve chase
+window glanced through on the turn | 0.45 | 0.05-0.15 | roofline check
+railing drummed absent-mindedly | 0.4 | 0.03-0.1 | ring of the tube

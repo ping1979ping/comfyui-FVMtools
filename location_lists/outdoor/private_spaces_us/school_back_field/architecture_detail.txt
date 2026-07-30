@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+goal mouths worn to bare dirt | 0.55 | 0.1-0.25 | grassless crescents
+fence fabric bellied by climbers | 0.5 | 0.05-0.2 | stretched diamond mesh
+gate posts concreted at an angle | 0.45 | 0.05-0.15 | tilted pair
+sprinkler heads flush in the turf | 0.4 | 0.02-0.08 | brass circles
+track edge blurring into grass | 0.45 | 0.1-0.25 | soft boundary
+brick wall scarred by ball games | 0.5 | 0.1-0.3 | scuffed band
+bleacher feet sunk in the turf | 0.4 | 0.03-0.1 | settled pads
+drain grate in the swale | 0.4 | 0.02-0.08 | leaf-caught slots
+molehills dotting the far corner | 0.4 | 0.05-0.15 | fresh brown domes
+mower stripes bending at the trees | 0.45 | 0.15-0.35 | curved rows
+gap worn under the service gate | 0.4 | 0.03-0.1 | scraped hollow

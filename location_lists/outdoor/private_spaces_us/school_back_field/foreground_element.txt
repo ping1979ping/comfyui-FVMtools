@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+lap walked on the gravel loop | 0.6 | 0.1-0.3 | steady crunch
+ball kicked long against the fence | 0.5 | 0.1-0.25 | rattling mesh
+dew kicked off the toes | 0.45 | 0.05-0.15 | dark shoe tips
+bleacher bench climbed for the view | 0.45 | 0.1-0.25 | rocking riser
+dog let off for a field sprint | 0.45 | 0.1-0.3 | ecstatic laps
+divot pressed back with a heel | 0.4 | 0.03-0.1 | turf repair
+goal frame chinned experimentally | 0.35 | 0.05-0.15 | swinging test
+stone lofted at the backstop | 0.35 | 0.05-0.15 | ringing hit
+grass blade whistled between thumbs | 0.35 | 0.03-0.1 | reedy shriek
+track gravel raked with a shoe | 0.4 | 0.03-0.1 | idle grooves
+wind read off the treeline | 0.4 | 0.1-0.25 | swaying tops

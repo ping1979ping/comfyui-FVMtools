@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+pallet jack resting under a load | 0.65 | 0.1-0.3 | forks sunk in
+hand truck leaned on a bay post | 0.55 | 0.05-0.2 | bent toe plate
+ladder rolling on its track | 0.45 | 0.15-0.35 | hooked rail wheels
+stack of empty totes swaying tall | 0.55 | 0.15-0.3 | nested tower
+apron hung on a bay end | 0.45 | 0.03-0.1 | pocket sagging
+broken pallet set aside | 0.45 | 0.1-0.2 | splintered slats
+floor fan moving the stale air | 0.45 | 0.1-0.2 | ribbons on the cage
+spill kit bucket in its corner | 0.4 | 0.05-0.15 | sealed red lid
+shrink wrap roll on a spindle | 0.5 | 0.05-0.15 | stretched tail
+returns cart of orphaned goods | 0.45 | 0.1-0.25 | mixed jumble
+step stool worn to bare metal | 0.45 | 0.05-0.15 | ribbed platform

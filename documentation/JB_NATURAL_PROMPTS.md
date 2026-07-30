@@ -159,6 +159,22 @@ rather than only fancy occasions. `underwear` is deliberately non-fancy
 (cotton basics, t-shirt bras, sleep sets, laundry-day mismatch) with a single
 slightly nicer `simple_lace_touch`.
 
+### Private spaces (signage-free)
+
+`indoor/private_spaces_us` and `outdoor/private_spaces_us`
+(generator: `scripts/gen_private_spaces_locations.py`) are quiet spots with
+no public traffic — parking garage level and roof deck, mall lot far corner,
+home garage, spare room, office stairwell and supply room, store stockroom,
+school gym storage and back field, side yard, behind the shed, office
+courtyard, loading dock after hours.
+
+Their defining rule: **nothing with lettering on it**. Text encoders render
+every mentioned sign, poster or label as (usually broken) readable text in
+the image, so these sets avoid such objects at the data level. The generator
+enforces a signage banlist on top of the standard curation rules — substring
+matched, which is stricter than it looks: "assigned" contains "sign",
+"cartridge" contains "ridge", "trailer" contains "trail".
+
 ---
 
 ## 4. Overrides and forcing palette colours

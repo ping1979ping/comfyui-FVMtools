@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+bench with room for one more | 0.6 | 0.15-0.3 | worn center slat
+planter edge used as a seat | 0.55 | 0.1-0.25 | polished concrete lip
+sparrows working the paver joints | 0.5 | 0.05-0.2 | hopping pair
+bike leaned by the walkway | 0.4 | 0.1-0.25 | quiet corner spot
+maintenance hose coiled by a tap | 0.35 | 0.05-0.15 | grey spiral
+shade line crossing the court | 0.55 | 0.2-0.45 | moving boundary
+leaves gathered at the drain | 0.45 | 0.05-0.15 | brown drift
+someone stretching after sitting | 0.4 | 0.1-0.25 | arms overhead
+tree shadow cast on the wall | 0.5 | 0.15-0.35 | trembling lace
+umbrella base without its pole | 0.3 | 0.05-0.15 | orphaned disc
+cat from nowhere crossing calmly | 0.3 | 0.05-0.15 | office mystery

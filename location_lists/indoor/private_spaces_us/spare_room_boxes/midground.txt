@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+suitcase pile by size | 0.6 | 0.15-0.35 | nested hard shells
+vacuum parked mid-room | 0.5 | 0.1-0.25 | cord half wound
+sewing machine in a hard case | 0.45 | 0.1-0.2 | latched handle
+folded card table against the bed | 0.45 | 0.15-0.3 | chipped edge
+box overflowing with cables | 0.5 | 0.05-0.15 | grey spaghetti
+mirror leaned face to the wall | 0.45 | 0.15-0.3 | brown paper back
+rolled rugs standing in a corner | 0.45 | 0.15-0.3 | twine-tied columns
+fan waiting for summer | 0.45 | 0.1-0.2 | dust-furred blades
+big stuffed animal on the box stack | 0.4 | 0.1-0.2 | outgrown bear
+picture frames bundled with a strap | 0.4 | 0.1-0.2 | corner protectors
+laundry drying rack half folded | 0.45 | 0.1-0.25 | clipped hinges

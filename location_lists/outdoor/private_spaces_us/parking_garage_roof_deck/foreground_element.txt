@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+hair caught by the rooftop wind | 0.6 | 0.05-0.2 | strands across the face
+lean on the parapet for the view | 0.6 | 0.1-0.3 | forearms on concrete
+jacket zipped against the gust | 0.55 | 0.05-0.2 | collar up
+phone panorama swept slowly | 0.45 | 0.05-0.15 | horizon pass
+coffee shielded from the wind | 0.45 | 0.03-0.1 | lid checked
+deep breath taken at the edge | 0.5 | 0.1-0.25 | shoulders dropping
+sunset watched from the hood | 0.4 | 0.1-0.3 | wind-blown perch
+car spotted from above | 0.45 | 0.05-0.2 | pointing it out
+stretch after the drive | 0.45 | 0.05-0.2 | arms overhead
+grit blinked out of an eye | 0.4 | 0.03-0.1 | knuckle dab
+echo tested down the ramp mouth | 0.35 | 0.05-0.15 | quick shout

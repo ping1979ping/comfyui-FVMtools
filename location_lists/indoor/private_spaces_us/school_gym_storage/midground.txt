@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cart of playground balls half flat | 0.6 | 0.15-0.3 | soft red casualties
+parachute bag slumped in a corner | 0.5 | 0.1-0.25 | rainbow spilling out
+pommel horse under a dust sheet | 0.45 | 0.15-0.3 | draped hulk
+spring board on its side | 0.45 | 0.1-0.25 | carpeted wedge
+bag of pinnies knotted shut | 0.55 | 0.05-0.15 | mesh bundle
+badminton racquets in a barrel | 0.5 | 0.1-0.2 | tangled strings
+floor tape rolls on a spindle | 0.45 | 0.03-0.1 | bright rings
+stack of hoops leaning tall | 0.5 | 0.1-0.25 | nested circles
+scooter boards piled seat to seat | 0.45 | 0.1-0.2 | caster clatter waiting
+first aid bum bag on a hook | 0.4 | 0.02-0.08 | half-zipped
+bases and a pitching rubber in a crate | 0.4 | 0.05-0.15 | scuffed slabs

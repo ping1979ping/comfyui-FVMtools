@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+strapping ribbon curled on the apron | 0.45 | 0.02-0.06 | plastic spiral
+lost glove flattened by tires | 0.4 | 0.01-0.05 | pressed leather
+coffee cup on the dock edge | 0.4 | 0.01-0.05 | night-shift relic
+chalk wedge worn round | 0.35 | 0.01-0.04 | tire marker
+bungee hooked to the rail | 0.35 | 0.01-0.04 | idle stretch
+zip ties clipped in a scatter | 0.35 | 0.01-0.04 | white commas
+pallet splinter pile swept aside | 0.4 | 0.02-0.08 | wood shards
+crushed stone tracked off the verge | 0.4 | 0.02-0.08 | grey scatter
+moth resting under the light | 0.35 | 0.01-0.03 | folded triangle
+rag tied to the gate wire | 0.3 | 0.01-0.04 | faded flag
+bottle cap trodden into the seam | 0.3 | 0.01-0.03 | flattened star

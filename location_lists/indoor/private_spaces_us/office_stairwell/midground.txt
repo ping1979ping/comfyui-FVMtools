@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+handrail post anchored in the tread | 0.55 | 0.05-0.15 | bolted base
+mop bucket parked on a landing | 0.4 | 0.05-0.15 | grey wringer
+stack of ceiling tiles waiting | 0.35 | 0.1-0.2 | chalky corners
+door wedge holding one level open | 0.45 | 0.03-0.1 | rubber cheese
+old chair exiled to a landing | 0.4 | 0.1-0.2 | one wheel missing
+ladder chained under the flight | 0.35 | 0.1-0.2 | padlocked rails
+dust broom leaned in the corner | 0.4 | 0.03-0.1 | flattened bristles
+paint tray dried mid-project | 0.3 | 0.05-0.12 | skinned roller
+window ledge with a dead plant | 0.35 | 0.03-0.1 | crisp leaves
+draft rolling dust at the base | 0.4 | 0.05-0.15 | drifting fluff
+handprints on the push bar | 0.45 | 0.02-0.08 | polished patch

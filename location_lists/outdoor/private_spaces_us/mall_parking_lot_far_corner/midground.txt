@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+single car parked far from all others | 0.6 | 0.15-0.35 | careful owner
+stray cart drifted to the kerb | 0.55 | 0.05-0.2 | wheels turned
+seagulls working the empty rows | 0.45 | 0.05-0.2 | inland scavengers
+puddle stretched across a low row | 0.5 | 0.1-0.3 | sky mirrored
+kerbed island with a young maple | 0.5 | 0.1-0.25 | mulch ring
+delivery van cutting the diagonal | 0.4 | 0.1-0.25 | unhurried route
+skateboarder using the smooth rows | 0.35 | 0.1-0.25 | pushing long lines
+snow pile remnant in spring | 0.3 | 0.1-0.25 | gritty grey heap
+lamp pole base ringed with concrete | 0.5 | 0.05-0.15 | anchor bolts
+line-marking machine parked mid-job | 0.3 | 0.1-0.2 | half-fresh stripe
+wind rolling a paper cup | 0.45 | 0.03-0.1 | hollow rattle

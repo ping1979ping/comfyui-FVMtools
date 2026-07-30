@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+oil stains in the parking bays | 0.7 | 0.05-0.2 | dark soaked patches
+expansion joint crossing the deck | 0.55 | 0.05-0.2 | rubber-filled gap
+drain grate at the low point | 0.5 | 0.03-0.1 | rusted slots
+chipped column corner | 0.55 | 0.03-0.12 | exposed aggregate
+tire scuff arcs at the turn | 0.5 | 0.05-0.2 | black rubber sweeps
+conduit junction boxes overhead | 0.45 | 0.05-0.15 | grey steel fittings
+water stain running down a column | 0.5 | 0.05-0.15 | mineral streak
+patched core hole in the ceiling | 0.35 | 0.02-0.08 | grout circle
+kick plate on the stair door | 0.4 | 0.02-0.08 | dented steel
+hairline cracks in the deck | 0.5 | 0.05-0.2 | meandering lines
+low clearance bar at the ramp | 0.4 | 0.05-0.15 | scraped yellow pipe

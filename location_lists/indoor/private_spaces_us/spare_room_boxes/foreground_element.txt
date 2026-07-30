@@ -1,0 +1,14 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+box flaps torn open for a search | 0.65 | 0.1-0.25 | tape ripped back
+dust sheet lifted for a peek | 0.5 | 0.1-0.25 | slow reveal
+box hefted with a knee assist | 0.55 | 0.1-0.25 | weight test
+sneeze caught in a sleeve | 0.45 | 0.05-0.15 | dust cloud
+coat tried on from the rack | 0.45 | 0.1-0.25 | mirror-less guess
+suitcase zipped around the corner | 0.45 | 0.05-0.2 | knee on the lid
+found photo studied too long | 0.45 | 0.05-0.15 | task forgotten
+stack steadied with a chin | 0.45 | 0.05-0.2 | wobbling tower
+bubble wrap popped absent-mindedly | 0.4 | 0.03-0.1 | double pinch
+rug roll walked corner to corner | 0.4 | 0.1-0.25 | end-over-end
+blind raised for working light | 0.45 | 0.05-0.15 | dust in the beam

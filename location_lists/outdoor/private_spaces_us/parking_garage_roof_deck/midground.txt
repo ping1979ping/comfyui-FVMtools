@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+lone car backed into a corner | 0.55 | 0.15-0.3 | long-stay dust
+pigeons pecking the empty deck | 0.45 | 0.05-0.2 | strutting pair
+puddles in the deck's low spots | 0.5 | 0.1-0.3 | sky pieces
+wind combing grit across the surface | 0.5 | 0.1-0.3 | hissing drift
+hooded figure taking the air | 0.35 | 0.1-0.25 | lunch-break escape
+maintenance cart by the bulkhead | 0.35 | 0.1-0.2 | coiled hoses
+row of solar-light bollards | 0.35 | 0.05-0.2 | dim caps
+snow-melt salt bin strapped shut | 0.35 | 0.05-0.15 | yellow tub
+antenna cluster on the far corner | 0.4 | 0.05-0.2 | guyed masts
+plane crossing high overhead | 0.4 | 0.03-0.1 | thin contrail
+runner using the empty rows | 0.3 | 0.1-0.25 | laps in the open

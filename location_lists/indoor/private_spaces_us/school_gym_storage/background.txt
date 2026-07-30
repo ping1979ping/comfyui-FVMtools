@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+crash mats stacked chest high | 1.0 | 0.4-0.7 | blue vinyl slabs
+ball bins of every code | 0.85 | 0.25-0.5 | rubber and leather spheres
+cone stacks leaning like towers | 0.7 | 0.15-0.35 | faded orange spirals
+folded net posts on a rack | 0.6 | 0.2-0.4 | padded uprights
+caged window high in the wall | 0.55 | 0.1-0.25 | wire-hatched daylight
+hurdles nested in a row | 0.5 | 0.2-0.4 | staggered frames
+gym floor visible through the door | 0.5 | 0.15-0.35 | pale sprung boards
+rope coils on wall pegs | 0.5 | 0.1-0.25 | thick climbing hemp
+beam sections parked on trolleys | 0.45 | 0.2-0.4 | chalk-smudged suede
+block wall painted glossy | 0.6 | 0.3-0.55 | rolled enamel
+stack of relay batons in a crate | 0.45 | 0.05-0.15 | worn aluminum

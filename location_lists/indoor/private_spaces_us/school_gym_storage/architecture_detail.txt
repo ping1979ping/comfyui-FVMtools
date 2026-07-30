@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+concrete floor cool underfoot | 0.6 | 0.25-0.5 | sealed grey
+door wide enough for the trolleys | 0.5 | 0.1-0.3 | double leaf
+wall pegs bent from rope weight | 0.45 | 0.03-0.1 | angled hooks
+ceiling grille over a heater | 0.4 | 0.03-0.1 | ticking fins
+chalk dust settled along the base | 0.45 | 0.05-0.15 | pale drift line
+scuff constellation at cart height | 0.5 | 0.05-0.15 | black nebulae
+hinge squeal known to every class | 0.45 | 0.02-0.08 | two-tone creak
+mesh over the light fittings | 0.45 | 0.03-0.1 | ball-proof cages
+floor plate for the net posts | 0.4 | 0.02-0.08 | brass cover
+paint worn where the mats slide | 0.45 | 0.05-0.15 | bare patch
+draft under the outside door | 0.4 | 0.03-0.1 | leaf-fed gap

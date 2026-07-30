@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+workbench along the back wall | 1.0 | 0.4-0.7 | scarred plywood top
+pegboard of hanging hand tools | 0.85 | 0.25-0.5 | outlines of missing tools
+parked car under a film of dust | 0.6 | 0.3-0.6 | dulled paint
+garage door tracks and coiled springs | 0.7 | 0.2-0.45 | greased steel
+shelving of stacked plastic bins | 0.75 | 0.25-0.5 | lidded tubs in columns
+water heater in the corner | 0.5 | 0.1-0.3 | pipe-wrapped tank
+bikes hung from ceiling hooks | 0.55 | 0.15-0.35 | wheels overhead
+chest freezer against the side wall | 0.5 | 0.15-0.3 | humming white box
+step up to the kitchen door | 0.55 | 0.1-0.3 | worn wooden tread
+window filmed with cobwebs | 0.5 | 0.1-0.25 | grey gauzy corners
+ladder laid across the rafters | 0.5 | 0.15-0.35 | aluminum rails
