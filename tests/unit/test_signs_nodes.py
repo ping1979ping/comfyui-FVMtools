@@ -1,0 +1,495 @@
+"""Unit tests for the Sign Tools node layer (selector / proposer / detailer / options).
+
+These cover the pure helpers and the node contracts. The sampling path itself is
+not exercised here — that needs a real ComfyUI with a loaded model.
+"""
+
+import numpy as np
+import pytest
+import torch
+
+from nodes.signs.selector import (
+    SignSelectorSAM3, _bbox_from_mask, _mask_iou, _short_side_px, _crop_to_canvas,
+    CROP_CANVAS,
+)
+from nodes.signs.proposer import SignTextProposer, _parse_overrides, _parse_fallbacks
+from nodes.signs.detailer import SignDetailer, _fuzzy_match, SOFTEN_PROMPT
+from nodes.signs.options import SignOptions, SIGN_DEFAULTS, _parse_class_map
+from nodes.signs import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+from core.signs.classes import all_class_names
+
+
+def _rect_mask(h=256, w=256, x1=40, y1=60, x2=180, y2=110):
+    m = np.zeros((h, w), dtype=np.float32)
+    m[y1:y2, x1:x2] = 1.0
+    return m
+
+
+class TestSelectorHelpers:
+
+    def test_bbox_from_mask(self):
+        m = _rect_mask()
+        assert _bbox_from_mask(m) == [40, 60, 179, 109]
+
+    def test_bbox_empty_mask_is_none(self):
+        assert _bbox_from_mask(np.zeros((32, 32), dtype=np.float32)) is None
+
+    def test_mask_iou_identical_and_disjoint(self):
+        a = _rect_mask()
+        assert _mask_iou(a, a) == pytest.approx(1.0)
+        b = _rect_mask(x1=200, y1=200, x2=240, y2=240)
+        assert _mask_iou(a, b) == pytest.approx(0.0)
+
+    def test_mask_iou_partial_overlap(self):
+        a = _rect_mask(x1=0, y1=0, x2=100, y2=100)
+        b = _rect_mask(x1=50, y1=0, x2=150, y2=100)
+        assert 0.3 < _mask_iou(a, b) < 0.4
+
+    def test_mask_iou_two_empty_masks_is_zero_not_nan(self):
+        z = np.zeros((16, 16), dtype=np.float32)
+        assert _mask_iou(z, z) == 0.0
+
+    def test_short_side_px_matches_rect_height(self):
+        m = _rect_mask(y1=60, y2=110)  # 50 px tall, 140 px wide
+        assert _short_side_px(m) == pytest.approx(50, abs=2)
+
+    def test_short_side_px_empty_mask(self):
+        assert _short_side_px(np.zeros((32, 32), dtype=np.float32)) == 0
+
+    def test_crop_to_canvas_shape_and_content(self):
+        img = np.zeros((256, 256, 3), dtype=np.uint8)
+        img[60:110, 40:180] = 200
+        crop = _crop_to_canvas(img, [40, 60, 179, 109])
+        assert crop.shape == (CROP_CANVAS, CROP_CANVAS, 3)
+        assert crop.max() > 150, "the bright region must survive the crop"
+
+    def test_crop_to_canvas_degenerate_bbox(self):
+        img = np.zeros((64, 64, 3), dtype=np.uint8)
+        crop = _crop_to_canvas(img, [10, 10, 10, 10])
+        assert crop.shape == (CROP_CANVAS, CROP_CANVAS, 3)
+
+    def test_merge_overlaps_collapses_duplicates(self):
+        node = SignSelectorSAM3()
+        m = _rect_mask()
+        raw = [
+            {"class": "sign", "prompt": "sign", "mask": m, "score": 0.9, "bbox": None},
+            {"class": "poster", "prompt": "poster", "mask": m.copy(), "score": 0.5, "bbox": None},
+        ]
+        kept = node._merge_overlaps(raw, merge_iou=0.5)
+        assert len(kept) == 1
+        assert kept[0]["class"] == "sign", "the higher-scoring detection keeps its class"
+        assert "poster:poster" in kept[0]["also_matched"]
+
+    def test_merge_overlaps_keeps_distinct_regions(self):
+        node = SignSelectorSAM3()
+        raw = [
+            {"class": "sign", "prompt": "sign", "mask": _rect_mask(), "score": 0.9, "bbox": None},
+            {"class": "label", "prompt": "label",
+             "mask": _rect_mask(x1=200, y1=200, x2=250, y2=250), "score": 0.8, "bbox": None},
+        ]
+        assert len(node._merge_overlaps(raw, merge_iou=0.5)) == 2
+
+    def test_collect_prompts_covers_enabled_classes_only(self):
+        node = SignSelectorSAM3()
+        toggles = {f"class_{n}": False for n in all_class_names()}
+        toggles["class_sign"] = True
+        jobs = node._collect_prompts(toggles, "", 1.0)
+        assert jobs and all(j[0] == "sign" for j in jobs)
+
+    def test_collect_prompts_threshold_scale_and_custom(self):
+        node = SignSelectorSAM3()
+        toggles = {f"class_{n}": False for n in all_class_names()}
+        jobs = node._collect_prompts(toggles, "neon sign:0.2", 2.0)
+        assert len(jobs) == 1
+        assert jobs[0][0] == "custom"
+        assert jobs[0][2] == pytest.approx(0.4)
+
+    def test_collect_prompts_threshold_is_clamped(self):
+        node = SignSelectorSAM3()
+        toggles = {f"class_{n}": False for n in all_class_names()}
+        toggles["class_plate"] = True
+        jobs = node._collect_prompts(toggles, "", 2.0)
+        assert all(0.05 <= j[2] <= 0.99 for j in jobs)
+
+    def test_build_regions_flags_too_small(self):
+        node = SignSelectorSAM3()
+        img = np.zeros((256, 256, 3), dtype=np.uint8)
+        thin = _rect_mask(y1=60, y2=68)  # only 8 px tall
+        raw = [{"class": "sign", "prompt": "sign", "mask": thin, "score": 0.9, "bbox": None}]
+        regions = node._build_regions(raw, img, 0, 24, 0.0, None)
+        assert len(regions) == 1
+        assert regions[0]["too_small"] is True
+
+    def test_build_regions_respects_restrict_mask(self):
+        node = SignSelectorSAM3()
+        img = np.zeros((256, 256, 3), dtype=np.uint8)
+        raw = [{"class": "sign", "prompt": "sign", "mask": _rect_mask(), "score": 0.9, "bbox": None}]
+        elsewhere = _rect_mask(x1=200, y1=200, x2=250, y2=250)
+        assert node._build_regions(raw, img, 0, 4, 0.0, elsewhere) == []
+
+    def test_build_regions_area_ratio_gate(self):
+        node = SignSelectorSAM3()
+        img = np.zeros((256, 256, 3), dtype=np.uint8)
+        tiny = _rect_mask(x1=0, y1=0, x2=4, y2=4)
+        raw = [{"class": "sign", "prompt": "sign", "mask": tiny, "score": 0.9, "bbox": None}]
+        assert node._build_regions(raw, img, 0, 1, 0.5, None) == []
+
+    def test_sort_orders(self):
+        node = SignSelectorSAM3()
+        regions = [
+            {"area_px": 10, "score": 0.9, "bbox": [100, 5, 110, 15]},
+            {"area_px": 99, "score": 0.1, "bbox": [5, 100, 15, 110]},
+        ]
+        assert node._sort_regions(regions, "area_desc")[0]["area_px"] == 99
+        assert node._sort_regions(regions, "score_desc")[0]["score"] == 0.9
+        assert node._sort_regions(regions, "left_right")[0]["bbox"][0] == 5
+        assert node._sort_regions(regions, "top_down")[0]["bbox"][1] == 5
+
+    def test_draw_preview_marks_the_image(self):
+        node = SignSelectorSAM3()
+        img = np.zeros((256, 256, 3), dtype=np.uint8)
+        regions = [{
+            "class": "sign", "mask": _rect_mask(), "bbox": [40, 60, 179, 109],
+            "cluster_id": -1, "too_small": False, "height_px": 50,
+            "slop": {"verdict": "clean", "score": 0.1},
+        }]
+        out = node._draw_preview(img, regions)
+        assert out.shape == img.shape
+        assert out.max() > 0, "the preview must actually draw something"
+
+
+class TestProposerHelpers:
+
+    @pytest.mark.parametrize("line,idx,text", [
+        ("3: ACHTUNG", 2, "ACHTUNG"),
+        ("1 = Café Mozart", 0, "Café Mozart"),
+        ("7 OPEN", 6, "OPEN"),
+        ("  2 :  spaced  ", 1, "spaced"),
+    ])
+    def test_parse_overrides_accepted_forms(self, line, idx, text):
+        assert _parse_overrides(line) == {idx: text}
+
+    def test_parse_overrides_ignores_junk(self):
+        assert _parse_overrides("") == {}
+        assert _parse_overrides("# a comment\n\nnot-a-number: x") == {}
+        assert _parse_overrides("0: zero") == {}, "1-based indices only"
+
+    def test_parse_overrides_multiline(self):
+        assert _parse_overrides("1: A\n2: B") == {0: "A", 1: "B"}
+
+    def test_parse_fallbacks_keyed_and_plain(self):
+        keyed, plain = _parse_fallbacks("sign: OPEN\nCLOSED\nlabel: Merlot")
+        assert keyed == {"sign": "OPEN", "label": "Merlot"}
+        assert plain == ["CLOSED"]
+
+    def test_parse_fallbacks_empty(self):
+        assert _parse_fallbacks("") == ({}, [])
+
+    def test_neighbors_returns_closest_first(self):
+        node = SignTextProposer()
+        target = {"bbox": [0, 0, 10, 10]}
+        near = {"bbox": [20, 0, 30, 10]}
+        far = {"bbox": [500, 500, 510, 510]}
+        result = node._neighbors([target, far, near], target, limit=2)
+        assert result[0] is near
+
+
+class TestDetailerHelpers:
+
+    def test_fuzzy_match_exact_and_case_insensitive(self):
+        assert _fuzzy_match("OPEN", "open") == pytest.approx(1.0)
+        assert _fuzzy_match("COFFEE SHOP", "coffeeshop") == pytest.approx(1.0)
+
+    def test_fuzzy_match_unrelated_is_low(self):
+        assert _fuzzy_match("OPEN", "BAHNHOF") < 0.4
+
+    def test_fuzzy_match_empty_is_zero(self):
+        assert _fuzzy_match("", "OPEN") == 0.0
+        assert _fuzzy_match("OPEN", "") == 0.0
+
+    def test_clamp_target_leaves_large_regions_alone(self):
+        node = SignDetailer()
+        region = {"bbox": [0, 0, 512, 512]}
+        assert node._clamp_target(region, 1024, 1024, 8.0) == (1024, 1024)
+
+    def test_clamp_target_shrinks_for_tiny_regions(self):
+        node = SignDetailer()
+        region = {"bbox": [0, 0, 16, 16]}  # 64x upscale to 1024 without a cap
+        tw, th = node._clamp_target(region, 1024, 1024, 8.0)
+        assert tw < 1024 and th < 1024
+        assert tw % 8 == 0 and th % 8 == 0
+        assert tw / 16 == pytest.approx(8.0, abs=0.5)
+
+    def test_clamp_target_never_below_floor(self):
+        node = SignDetailer()
+        region = {"bbox": [0, 0, 2, 2]}
+        tw, th = node._clamp_target(region, 1024, 1024, 1.0)
+        assert tw >= 64 and th >= 64
+
+    def test_soften_prompt_mentions_unreadable(self):
+        assert "read" in SOFTEN_PROMPT.lower()
+
+
+class TestOptions:
+
+    def test_parse_class_map_known_classes_only(self):
+        parsed = _parse_class_map("plate: 0.95\nnonsense: 0.5\ngarment_print: 0.7")
+        assert parsed == {"plate": 0.95, "garment_print": 0.7}
+
+    def test_parse_class_map_bad_values_ignored(self):
+        assert _parse_class_map("plate: not-a-number") == {}
+
+    def test_parse_class_map_empty(self):
+        assert _parse_class_map("") == {}
+
+    def test_execute_returns_merged_dict(self):
+        node = SignOptions()
+        (opts,) = node.execute(
+            cfg=1.5, negative_prompt="bad", context_expand_factor=1.4, output_padding=16,
+            mask_fill_holes=False, denoise_progression="0.8|0.4", steps_progression="8|4",
+            class_denoise="plate: 0.95", skip_classes="screen, bogus",
+            uppercase=True, margin_ratio=0.12,
+        )
+        assert opts["cfg"] == 1.5
+        assert opts["class_denoise"] == {"plate": 0.95}
+        assert opts["class_skip"] == {"screen"}, "unknown class names are dropped"
+        assert opts["uppercase"] is True
+
+    def test_defaults_cover_every_key_the_detailer_reads(self):
+        needed = {"cfg", "negative_prompt", "context_expand_factor", "output_padding",
+                  "mask_fill_holes", "denoise_progression", "steps_progression",
+                  "class_denoise", "class_skip", "uppercase", "margin_ratio"}
+        assert needed <= set(SIGN_DEFAULTS)
+
+
+class TestNodeContracts:
+
+    @pytest.mark.parametrize("cls", [SignSelectorSAM3, SignTextProposer, SignDetailer, SignOptions])
+    def test_required_class_attributes(self, cls):
+        assert cls.CATEGORY.startswith("FVM Tools/Text")
+        assert isinstance(cls.RETURN_TYPES, tuple)
+        assert len(cls.RETURN_NAMES) == len(cls.RETURN_TYPES)
+        assert hasattr(cls, cls.FUNCTION), "FUNCTION must name a real method"
+
+    @pytest.mark.parametrize("cls", [SignSelectorSAM3, SignTextProposer, SignDetailer, SignOptions])
+    def test_input_types_shape(self, cls):
+        spec = cls.INPUT_TYPES()
+        assert "required" in spec
+        for section in ("required", "optional"):
+            for name, definition in spec.get(section, {}).items():
+                assert isinstance(definition, tuple) and len(definition) in (1, 2), \
+                    f"{cls.__name__}.{name} has a malformed input definition"
+
+    def test_selector_exposes_a_toggle_per_class(self):
+        required = SignSelectorSAM3.INPUT_TYPES()["required"]
+        for name in all_class_names():
+            assert f"class_{name}" in required
+            assert required[f"class_{name}"][0] == "BOOLEAN"
+
+    def test_selector_pipes_sign_data_into_proposer_and_detailer(self):
+        assert "SIGN_DATA" in SignSelectorSAM3.RETURN_TYPES
+        assert SignTextProposer.INPUT_TYPES()["required"]["sign_data"][0] == "SIGN_DATA"
+        assert SignDetailer.INPUT_TYPES()["required"]["sign_data"][0] == "SIGN_DATA"
+
+    def test_options_type_matches_detailer_socket(self):
+        assert SignOptions.RETURN_TYPES == ("SIGN_OPTIONS",)
+        assert SignDetailer.INPUT_TYPES()["optional"]["sign_options"][0] == "SIGN_OPTIONS"
+
+    def test_detailer_denoise_default_is_high(self):
+        default = SignDetailer.INPUT_TYPES()["required"]["denoise"][1]["default"]
+        assert default >= 0.8, "low denoise lets the original garbled strokes bleed through"
+
+    def test_glyph_guidance_defaults_on(self):
+        spec = SignDetailer.INPUT_TYPES()["required"]["glyph_guidance"]
+        assert spec[1]["default"] == "init"
+        assert "off" in spec[0]
+
+    def test_registration_mappings_are_consistent(self):
+        assert set(NODE_CLASS_MAPPINGS) == set(NODE_DISPLAY_NAME_MAPPINGS)
+        assert len(NODE_CLASS_MAPPINGS) == 4
+        for key in NODE_CLASS_MAPPINGS:
+            assert key.startswith("FVM_Sign")
+
+
+class TestProposerExecute:
+    """The proposer must work end to end without LM Studio running."""
+
+    def _sign_data(self, n=2):
+        regions = []
+        for i in range(n):
+            regions.append({
+                "index": i, "class": "sign", "batch_index": 0,
+                "bbox": [10 * i, 10, 10 * i + 40, 40],
+                "mask": _rect_mask(), "crop": np.zeros((64, 64, 3), dtype=np.uint8),
+                "cluster_id": -1, "too_small": False,
+                "slop": {"verdict": "slop", "score": 0.9, "ocr_text": "SHOPPINQ"},
+                "proposal": None,
+            })
+        return {"regions": regions, "image_shape": (256, 256), "batch_size": 1}
+
+    def test_disabled_model_uses_fallbacks(self):
+        node = SignTextProposer()
+        data = self._sign_data()
+        image = torch.rand(1, 256, 256, 3)
+        out_data, texts, report = node.execute(
+            sign_data=data, image=image, enabled=False,
+            fallback_texts="sign: OPEN", manual_override="",
+        )
+        assert all(r["proposal"]["text"] == "OPEN" for r in out_data["regions"])
+        assert all(r["proposal"]["source"] == "fallback" for r in out_data["regions"])
+        assert "OPEN" in texts
+
+    def test_manual_override_wins(self):
+        node = SignTextProposer()
+        data = self._sign_data()
+        image = torch.rand(1, 256, 256, 3)
+        out_data, _, _ = node.execute(
+            sign_data=data, image=image, enabled=False,
+            fallback_texts="sign: OPEN", manual_override="1: ACHTUNG",
+        )
+        assert out_data["regions"][0]["proposal"]["text"] == "ACHTUNG"
+        assert out_data["regions"][0]["proposal"]["source"] == "manual"
+        assert out_data["regions"][1]["proposal"]["text"] == "OPEN"
+
+    def test_falls_back_to_ocr_text_when_nothing_else_given(self):
+        node = SignTextProposer()
+        data = self._sign_data(n=1)
+        image = torch.rand(1, 256, 256, 3)
+        out_data, _, _ = node.execute(sign_data=data, image=image, enabled=False)
+        assert out_data["regions"][0]["proposal"]["text"] == "SHOPPINQ"
+
+    def test_skip_legible_keeps_existing_text(self):
+        node = SignTextProposer()
+        data = self._sign_data(n=1)
+        data["regions"][0]["slop"] = {"verdict": "clean", "score": 0.1, "ocr_text": "BAHNHOF"}
+        image = torch.rand(1, 256, 256, 3)
+        out_data, _, _ = node.execute(
+            sign_data=data, image=image, enabled=False, skip_legible=True)
+        assert out_data["regions"][0]["proposal"]["source"] == "kept"
+        assert out_data["regions"][0]["proposal"]["text"] == "BAHNHOF"
+
+    def test_empty_sign_data_is_safe(self):
+        node = SignTextProposer()
+        image = torch.rand(1, 64, 64, 3)
+        out_data, texts, report = node.execute(
+            sign_data={"regions": []}, image=image, enabled=False)
+        assert out_data["regions"] == []
+        assert texts == ""
+        assert "0 region" in report
+
+
+class TestRegressions:
+    """Bugs found by the end-to-end run — locked down so they cannot return."""
+
+    def test_failed_proposal_is_not_cached_for_the_cluster(self):
+        """A region that produced no text must not poison its cluster siblings.
+
+        Seen live: the cluster representative timed out, the empty proposal was
+        cached, and both sibling bottles inherited an empty text and were skipped.
+        """
+        node = SignTextProposer()
+        regions = []
+        for i in range(3):
+            regions.append({
+                "index": i, "class": "label", "batch_index": 0,
+                "bbox": [10 * i, 10, 10 * i + 40, 40], "mask": _rect_mask(),
+                "crop": np.zeros((64, 64, 3), dtype=np.uint8),
+                "cluster_id": 0, "too_small": False,
+                # no OCR text either, so nothing can rescue the first region
+                "slop": {"verdict": "slop", "score": 0.9, "ocr_text": ""},
+                "proposal": None,
+            })
+        image = torch.rand(1, 256, 256, 3)
+        # First region gets nothing (no fallback for its class); the others must
+        # still fall back on their own rather than inheriting the emptiness.
+        out, _, _ = node.execute(
+            sign_data={"regions": regions}, image=image, enabled=False,
+            fallback_texts="", manual_override="2: MERLOT")
+        assert out["regions"][0]["proposal"]["text"] == ""
+        assert out["regions"][1]["proposal"]["text"] == "MERLOT"
+        assert out["regions"][2]["proposal"]["source"] != "cluster" or \
+            out["regions"][2]["proposal"]["text"] != "", \
+            "an empty proposal must never be inherited"
+
+    def test_successful_proposal_is_still_shared_across_the_cluster(self):
+        node = SignTextProposer()
+        regions = []
+        for i in range(3):
+            regions.append({
+                "index": i, "class": "label", "batch_index": 0,
+                "bbox": [0, 0, 40, 40], "mask": _rect_mask(),
+                "crop": np.zeros((64, 64, 3), dtype=np.uint8),
+                "cluster_id": 0, "too_small": False,
+                "slop": {"verdict": "slop", "score": 0.9, "ocr_text": ""},
+                "proposal": None,
+            })
+        image = torch.rand(1, 256, 256, 3)
+        out, _, _ = node.execute(
+            sign_data={"regions": regions}, image=image, enabled=False,
+            fallback_texts="label: RESERVE 2019")
+        texts = [r["proposal"]["text"] for r in out["regions"]]
+        assert texts == ["RESERVE 2019"] * 3
+        assert out["regions"][1]["proposal"]["source"] == "cluster"
+
+    def test_missing_ocr_backend_does_not_mark_everything_as_slop(self):
+        """'OCR is not installed' is not the same finding as 'OCR read nothing'.
+
+        Scoring anyway makes every region look like a pseudo-glyph hit, because an
+        absent backend returns empty text for all of them.
+        """
+        node = SignSelectorSAM3()
+        regions = [{
+            "class": "sign", "mask": _rect_mask(), "bbox": [40, 60, 179, 109],
+            "slop": {"score": 0.0, "verdict": "unknown", "ocr_text": "",
+                     "ocr_conf": 0.0, "signals": {}},
+        }]
+        img = np.zeros((256, 256, 3), dtype=np.uint8)
+        node._score_regions(regions, img, "ocr", "auto", 0.5, has_backend=False)
+        assert regions[0]["slop"]["verdict"] == "unknown"
+        assert regions[0]["slop"]["score"] == 0.0
+        assert regions[0]["slop"]["needs_fix"] is True, \
+            "unknown must still reach the detailer, just not as a confident slop verdict"
+
+    def test_slop_mode_off_marks_regions_clean(self):
+        node = SignSelectorSAM3()
+        regions = [{"class": "sign", "mask": _rect_mask(), "bbox": [0, 0, 10, 10],
+                    "slop": {"score": 0.0, "verdict": "unknown"}}]
+        node._score_regions(regions, np.zeros((256, 256, 3), np.uint8),
+                            "off", "auto", 0.5, has_backend=True)
+        assert regions[0]["slop"]["verdict"] == "clean"
+        assert regions[0]["slop"]["needs_fix"] is False
+
+    def test_glyph_strength_defaults_to_full_coverage(self):
+        """Measured: at 0.95 the original garbled lettering stays clearly readable
+        under the new text and therefore enters the init latent."""
+        spec = SignDetailer.INPUT_TYPES()["required"]["glyph_strength"]
+        assert spec[1]["default"] == 1.0
+
+    def test_proposer_temperature_default_stays_below_the_cliff(self):
+        """Measured cliff, not a slope: 0/6 transcriptions at 0.2, 3/6 at 0.25.
+
+        A widget default above it silently reintroduces the bug where the model
+        returns a spell-corrected version of the gibberish instead of new text.
+        """
+        from nodes.utils.lmstudio_client import DEFAULT_TEMPERATURE
+        assert DEFAULT_TEMPERATURE <= 0.2
+        spec = SignTextProposer.INPUT_TYPES()["required"]["temperature"]
+        assert spec[1]["default"] == DEFAULT_TEMPERATURE
+
+    def test_proposer_warns_when_temperature_is_raised_past_the_cliff(self):
+        node = SignTextProposer()
+        data = {"regions": [], "image_shape": (64, 64), "batch_size": 1}
+        image = torch.rand(1, 64, 64, 3)
+        _, _, report = node.execute(sign_data=data, image=image, enabled=True,
+                                    base_url="http://127.0.0.1:9", temperature=0.6)
+        assert "above the measured cliff" in report
+
+    def test_proposer_stays_quiet_at_the_safe_temperature(self):
+        from nodes.utils.lmstudio_client import DEFAULT_TEMPERATURE
+        node = SignTextProposer()
+        data = {"regions": [], "image_shape": (64, 64), "batch_size": 1}
+        image = torch.rand(1, 64, 64, 3)
+        _, _, report = node.execute(sign_data=data, image=image, enabled=True,
+                                    base_url="http://127.0.0.1:9",
+                                    temperature=DEFAULT_TEMPERATURE)
+        assert "above the measured cliff" not in report

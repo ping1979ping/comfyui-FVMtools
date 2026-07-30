@@ -24,3 +24,7 @@ MagicMock/
 # their own path setting without conflicting with future pulls.
 /wildcards.ini.local
 .mcp.json
+
+# Demo images written by tests/artifacts/*.py. The scripts are tracked so the
+# rendering can be re-verified on any machine; the PNGs they produce are not.
+/tests/artifacts/*.png

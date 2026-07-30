@@ -591,6 +591,23 @@ try:
         print(f"[FVMtools] K2 Lab konnte nicht geladen werden: {_k2_error}")
         traceback.print_exc()
 
+    # ── Sign Tools — SAM3 text-region detection, VLM proposals, glyph-guided re-render ──
+    # Eigenständiges Untermodul wie K2: Fehler hier reißen den Rest nicht mit.
+    try:
+        from .nodes.signs import (
+            NODE_CLASS_MAPPINGS as _SIGN_CLASSES,
+            NODE_DISPLAY_NAME_MAPPINGS as _SIGN_NAMES,
+        )
+
+        NODE_CLASS_MAPPINGS.update(_SIGN_CLASSES)
+        NODE_DISPLAY_NAME_MAPPINGS.update(_SIGN_NAMES)
+        print(f"[FVMtools] Sign Tools: {len(_SIGN_CLASSES)} Text-Repair-Nodes registriert")
+    except Exception as _sign_error:  # pragma: no cover
+        import traceback
+
+        print(f"[FVMtools] Sign Tools konnten nicht geladen werden: {_sign_error}")
+        traceback.print_exc()
+
     WEB_DIRECTORY = "./web/js"
 except ImportError:
     # Running outside ComfyUI context (e.g. pytest) — skip node registration

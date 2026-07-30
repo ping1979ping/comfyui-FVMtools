@@ -5,7 +5,11 @@ import torch.nn.functional as F
 import cv2
 
 import folder_paths
-from ...parsing import BiSeNet
+
+try:
+    from ...parsing import BiSeNet
+except ImportError:
+    from parsing import BiSeNet
 
 try:
     from ...core.config import get_model_path
