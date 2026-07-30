@@ -11,4 +11,4 @@ full-length mirror against the wall | 0.55 | 0.15-0.35 | leaning unhung
 book splayed on the nightstand | 0.5 | 0.03-0.1 | spine cracked
 alarm clock with red digits | 0.5 | 0.03-0.1 | blinking wrong time
 water glass half full | 0.5 | 0.02-0.08 | night stand ring
-cat asleep in the laundry | 0.35 | 0.05-0.2 | curled deep
+laundry basket| 0.35 | 0.05-0.2 | used laundry

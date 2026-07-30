@@ -2,7 +2,7 @@
 # format: name | probability | coverage_range | texture
 
 beige painted living room wall | 1.0 | 0.6-1.0 | flat latex builder paint
-family photo gallery wall | 0.9 | 0.4-0.8 | mismatched dollar-store frames
+family photo gallery wall | 0.1 | 0.4-0.8 | mismatched dollar-store frames
 oversized flat-screen TV mounted | 0.95 | 0.3-0.6 | matte black LCD panel
 tan wallpaper feature wall | 0.55 | 0.4-0.8 | dated textured vinyl
 mauve-painted accent wall | 0.55 | 0.4-0.8 | dusty mauve latex
