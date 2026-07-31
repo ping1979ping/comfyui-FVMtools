@@ -337,6 +337,7 @@ class SignTextProposer:
                                  "reworded or repriced.")
                     proposal = propose_text(
                         avoid_texts=avoid,
+                        max_chars=region.get("text_capacity"),
                         crop_rgb=region.get("crop"),
                         scene_rgb=scene,
                         neighbor_crops=neighbors,

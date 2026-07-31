@@ -703,8 +703,16 @@ def _layout_at_size(font, words: list, inner_w: float, inner_h: float, max_lines
     return None
 
 
-def _fit_text(text: str, inner_w: float, inner_h: float, font_path, max_lines: int):
+def _fit_text(text: str, inner_w: float, inner_h: float, font_path, max_lines: int,
+              target_line_height=None):
     """Binary-search the largest font size whose wrapped layout fits the inner box.
+
+    ``target_line_height`` caps the search at the size the surface already used.
+    Filling the box is right for a headline sign and wrong for everything else: a
+    wine label carries one large number over three lines of small print, and
+    scaling replacement copy to the full box turns it into a poster — long words
+    then no longer fit and get cut off at the edge. When the existing lettering
+    can be measured, it is the better reference than the box.
 
     Returns ``(font, lines)``. Falls back to :data:`MIN_FONT_SIZE` and a best-effort
     wrap when nothing fits, so the caller never has to handle a failure.
@@ -712,6 +720,9 @@ def _fit_text(text: str, inner_w: float, inner_h: float, font_path, max_lines: i
     words = text.split()
     low = MIN_FONT_SIZE
     high = max(MIN_FONT_SIZE, int(inner_h) + 2)
+    if target_line_height:
+        # Cap, not a fixed size: a long replacement still shrinks to fit.
+        high = max(MIN_FONT_SIZE, min(high, int(round(target_line_height * 1.35))))
     best = None
 
     while low <= high:
@@ -733,7 +744,7 @@ def _fit_text(text: str, inner_w: float, inner_h: float, font_path, max_lines: i
 
 def render_text_block(text, width, height, font_path=None, fill=DEFAULT_INK_RGB,
                       bg=(0, 0, 0), margin_ratio=0.08, align="center", max_lines=3,
-                      uppercase=False) -> np.ndarray:
+                      uppercase=False, target_line_height=None) -> np.ndarray:
     """Render text as clean typography, auto-fitted into a ``width`` x ``height`` box.
 
     The point size is found by binary search so the wrapped text fills the box down to
@@ -772,7 +783,8 @@ def render_text_block(text, width, height, font_path=None, fill=DEFAULT_INK_RGB,
     inner_w = max(1.0, width - 2.0 * margin_x)
     inner_h = max(1.0, height - 2.0 * margin_y)
 
-    font, lines = _fit_text(text, inner_w, inner_h, font_path, max_lines)
+    font, lines = _fit_text(text, inner_w, inner_h, font_path, max_lines,
+                            target_line_height=target_line_height)
     line_h = _line_height(font)
     gap = max(1, int(round(line_h * LINE_GAP_RATIO)))
     block_h = len(lines) * line_h + (len(lines) - 1) * gap
@@ -922,6 +934,47 @@ def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = 46,
     return ink.astype(np.float32)
 
 
+def measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance: int = 46):
+    """Typical stroke height of the lettering already on the surface, in pixels.
+
+    Filling the box is wrong for anything but a headline sign. A wine label
+    carries one large number and three lines of small print; scaling replacement
+    copy to the full box turns it into a poster and pushes long words past the
+    edge. The size to match is the size that was there.
+
+    Returns ``None`` when there is nothing measurable to go on.
+    """
+    ink = existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance=tolerance)
+    if ink is None or ink.sum() == 0:
+        return None
+
+    count, _labels, stats, _cent = cv2.connectedComponentsWithStats(
+        ink.astype(np.uint8), connectivity=8)
+    if count <= 1:
+        return None
+
+    heights, areas = [], []
+    for i in range(1, count):
+        h = int(stats[i, cv2.CC_STAT_HEIGHT])
+        a = int(stats[i, cv2.CC_STAT_AREA])
+        if h >= 2 and a >= 4:
+            heights.append(h)
+            areas.append(a)
+    if not heights:
+        return None
+
+    # Weight by area so a stray speck cannot outvote the actual glyphs, and take
+    # the median so one oversized initial or a rule does not drag the estimate.
+    order = np.argsort(heights)
+    heights = np.asarray(heights)[order]
+    areas = np.asarray(areas, dtype=np.float64)[order]
+    cumulative = np.cumsum(areas)
+    if cumulative[-1] <= 0:
+        return None
+    midpoint = np.searchsorted(cumulative, cumulative[-1] / 2.0)
+    return float(heights[min(midpoint, len(heights) - 1)])
+
+
 def quad_fit_error(mask_2d, quad) -> float:
     """Fraction of the mask's area that the fitted quad claims but does not cover.
 
@@ -950,7 +1003,7 @@ CONTOUR_FIT_THRESHOLD = 0.12
 
 def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=None,
                        uppercase=False, margin_ratio=0.08, fit: str = "auto",
-                       cylinder: float = 0.0) -> tuple:
+                       cylinder: float = 0.0, target_line_height=None) -> tuple:
     """Render replacement text onto the sign described by a mask, end to end.
 
     mask -> quad -> correctly sized text block -> perspective warp.
@@ -986,6 +1039,7 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
         text, block_w, block_h,
         font_path=font_path, fill=fill, bg=plate,
         margin_ratio=margin_ratio, uppercase=uppercase,
+        target_line_height=target_line_height,
     )
 
     # A four-corner warp describes a flat plane. When the outline is curved or
@@ -1018,7 +1072,7 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
 
 
 def surface_preserving_alpha(glyph_rgb, alpha, image_rgb, mask_2d, plate_rgb,
-                             grow: int = 3, tolerance: int = 46) -> np.ndarray:
+                             grow=None, tolerance: int = 46) -> np.ndarray:
     """Restrict the glyph layer to the lettering, old and new.
 
     Everything else the surface had — border, frame, texture, whatever shows
@@ -1029,6 +1083,12 @@ def surface_preserving_alpha(glyph_rgb, alpha, image_rgb, mask_2d, plate_rgb,
     old = existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance=tolerance)
     if old is None:
         return alpha
+
+    if grow is None:
+        # Scale with the lettering. A fixed radius smears fine print into blobs
+        # and barely covers the anti-aliasing of large signage.
+        measured = measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance=tolerance)
+        grow = int(max(1, round((measured or 20.0) * 0.14)))
 
     if grow > 0:
         k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (grow * 2 + 1, grow * 2 + 1))

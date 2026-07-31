@@ -12,7 +12,7 @@ import pytest
 
 from nodes.utils.glyph import (
     edge_profiles, warp_to_contour, quad_fit_error, CONTOUR_FIT_THRESHOLD,
-    existing_ink_mask, surface_preserving_alpha,
+    existing_ink_mask, surface_preserving_alpha, measure_ink_height,
     SYSTEM_DEFAULT_LABEL,
     FONT_SEARCH_DIRS,
     composite_glyph,
@@ -970,3 +970,56 @@ class TestSurfacePreservation:
         out = surface_preserving_alpha(None, alpha, np.zeros((60, 60, 3), np.uint8),
                                        m, (0, 0, 0))
         assert np.allclose(out, alpha)
+
+
+class TestSizeMatching:
+    """Scaling replacement copy to fill the box turns a wine label into a poster.
+    The size that belongs there is the size the surface already used.
+    """
+
+    @staticmethod
+    def _label(h=120, w=90):
+        img = np.full((h, w, 3), 200, np.uint8)
+        cv2.putText(img, "500", (14, 40), cv2.FONT_HERSHEY_DUPLEX, 0.9, (40, 30, 25), 2)
+        for i in range(3):                                   # three lines of small print
+            cv2.putText(img, "kleingedruckt", (8, 62 + i * 14),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.22, (60, 50, 45), 1)
+        m = np.ones((h, w), np.float32)
+        return img, m
+
+    def test_measures_the_small_print_not_the_box(self):
+        img, m = self._label()
+        h = measure_ink_height(img, m, (200, 200, 200))
+        assert h is not None
+        assert 4 < h < 40, f"expected stroke-sized, got {h} for a 120px box"
+
+    def test_returns_none_on_a_blank_surface(self):
+        img = np.full((60, 90, 3), 200, np.uint8)
+        assert measure_ink_height(img, np.ones((60, 90), np.float32), (200, 200, 200)) is None
+
+    def test_target_height_shrinks_the_rendered_text(self):
+        big = render_text_block("WEINGUT", 300, 120)
+        small = render_text_block("WEINGUT", 300, 120, target_line_height=18)
+        assert _max_ink_component(small) < _max_ink_component(big) * 0.6
+
+    def test_target_height_is_a_cap_not_a_floor(self):
+        """Long copy must still shrink below the target rather than overflow."""
+        block = render_text_block("EIN SEHR LANGER WEINGUTSNAME AUS DER PFALZ",
+                                  200, 80, target_line_height=60)
+        gray = cv2.cvtColor(block, cv2.COLOR_RGB2GRAY)
+        assert gray.shape == (80, 200)
+        # ink must stay inside the block, i.e. nothing clipped at the edges
+        assert gray[:2, :].std() < 12 and gray[-2:, :].std() < 12
+
+    def test_no_target_reproduces_the_old_behaviour(self):
+        a = render_text_block("OPEN", 300, 120)
+        b = render_text_block("OPEN", 300, 120, target_line_height=None)
+        assert np.array_equal(a, b)
+
+    def test_dilation_scales_with_the_lettering(self):
+        """A fixed radius smears fine print into blobs."""
+        img, m = self._label()
+        rgb, alpha = render_glyph_layer("WEINGUT", m, fill=(40, 30, 25), bg=(200, 200, 200))
+        fine = surface_preserving_alpha(rgb, alpha, img, m, (200, 200, 200))
+        coarse = surface_preserving_alpha(rgb, alpha, img, m, (200, 200, 200), grow=12)
+        assert float((fine > 0.05).sum()) < float((coarse > 0.05).sum())

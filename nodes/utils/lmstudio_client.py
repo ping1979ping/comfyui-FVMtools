@@ -672,7 +672,7 @@ def spent_words(texts, limit: int = 20) -> list:
 def build_user_prompt(class_name: str = "sign", class_instruction: str = "",
                       scene_hint: str = "", language: str = "auto",
                       neighbor_count: int = 0, has_scene: bool = False,
-                      avoid_texts=None) -> str:
+                      avoid_texts=None, max_chars=None) -> str:
     """Compose the per-region user message that accompanies the images.
 
     Args:
@@ -692,6 +692,15 @@ def build_user_prompt(class_name: str = "sign", class_instruction: str = "",
 
     if class_instruction and class_instruction.strip():
         lines.append(class_instruction.strip())
+    if max_chars:
+        # Length is a physical constraint here, not a style preference: text
+        # longer than the surface holds ends up a few pixels per glyph.
+        lines.append(
+            f"HARD LIMIT: at most {int(max_chars)} characters including spaces. "
+            f"This is how much the surface physically holds at its own text size. "
+            f"Going over makes the result unreadable, so shorten the wording - "
+            f"one word instead of three, an abbreviation, a number - rather than "
+            f"exceeding it.")
     if scene_hint and scene_hint.strip():
         # Spelled out because a bare hint reads as "stay faithful to the image"
         # to smaller vision models, which then transcribe the gibberish.
@@ -759,7 +768,7 @@ def propose_text(crop_rgb, scene_rgb=None, neighbor_crops=None,
                  timeout: float = DEFAULT_TIMEOUT,
                  extra_options: dict | None = None,
                  max_image_size: int = DEFAULT_MAX_IMAGE_SIZE,
-                 fallback_text: str = "", avoid_texts=None) -> dict:
+                 fallback_text: str = "", avoid_texts=None, max_chars=None) -> dict:
     """Ask the vision model what text belongs in one region.
 
     Images are sent in a fixed order: the crop first, then the whole scene, then
@@ -799,6 +808,7 @@ def propose_text(crop_rgb, scene_rgb=None, neighbor_crops=None,
         neighbor_count=len(neighbors),
         has_scene=scene_rgb is not None,
         avoid_texts=avoid_texts,
+        max_chars=max_chars,
     )
 
     try:

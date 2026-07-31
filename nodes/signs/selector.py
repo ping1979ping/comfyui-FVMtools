@@ -15,6 +15,7 @@ import torch
 from ..utils.masker import sam3_prepare, sam3_ground
 from ..utils.tensor_utils import tensor2np, empty_mask
 from ..utils.ocr_backend import ocr_region, get_available_backends
+from ..utils.glyph import estimate_text_colors, measure_ink_height
 try:  # relative inside ComfyUI's loader, absolute under pytest
     from ...core.signs.classes import (
         SIGN_CLASSES, all_class_names, get_class, parse_custom_prompts,
@@ -76,6 +77,35 @@ def _short_side_px(mask_np):
         return 0
     (_, _), (w, h), _ = cv2.minAreaRect(largest)
     return int(min(w, h))
+
+
+def _text_capacity(image_rgb, mask_np, bbox, max_lines=3):
+    """Roughly how many characters this region can hold at its own text size.
+
+    Measured from the lettering already present rather than from the box: a wine
+    label is 115px tall but its print is 18px, so the box would promise several
+    times the room the surface really has.
+
+    Returns a character count, clamped to a sane band. Falls back to an estimate
+    from the region height when the existing strokes cannot be measured.
+    """
+    x1, y1, x2, y2 = bbox
+    width = max(1, x2 - x1)
+    height = max(1, y2 - y1)
+
+    line_height = None
+    try:
+        _ink, plate = estimate_text_colors(image_rgb, mask_np)
+        line_height = measure_ink_height(image_rgb, mask_np, plate)
+    except Exception:
+        line_height = None
+    if not line_height or line_height < 2:
+        line_height = max(6.0, height / 3.0)
+
+    # A capital glyph occupies roughly 0.6 of its height in width.
+    per_line = width / max(1.0, line_height * 0.6)
+    lines = min(max_lines, max(1, int(height // (line_height * 1.35))))
+    return int(max(3, min(90, round(per_line * lines))))
 
 
 def _crop_to_canvas(image_rgb, bbox, canvas=CROP_CANVAS, pad_ratio=0.10):
@@ -264,6 +294,13 @@ class SignSelectorSAM3:
             class_min = get_class(det["class"])["min_height_px"]
             too_small = height_px < max(min_height_px, class_min)
 
+            # How much text this region can actually hold at the size its own
+            # lettering uses. Without this the model proposes wording that is
+            # right for the object but far too long for the surface — a 14-letter
+            # name on an 87px label is 6px per glyph, unreadable however well it
+            # is rendered.
+            capacity = _text_capacity(image_rgb, mask_np, bbox)
+
             regions.append({
                 "class": det["class"],
                 "prompt": det["prompt"],
@@ -274,6 +311,7 @@ class SignSelectorSAM3:
                 "area_px": area_px,
                 "height_px": height_px,
                 "too_small": too_small,
+                "text_capacity": capacity,
                 "also_matched": det.get("also_matched", []),
                 "cluster_id": -1,
                 "slop": {"score": 0.0, "verdict": "unknown", "ocr_text": "",

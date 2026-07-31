@@ -22,7 +22,7 @@ from ..utils.inpaint_pipeline import inpaint_slot
 from ..utils.detail_daemon import DD_DEFAULTS
 from ..utils.glyph import (
     discover_fonts, resolve_font, render_glyph_layer, composite_glyph,
-    estimate_text_colors, surface_preserving_alpha,
+    estimate_text_colors, surface_preserving_alpha, measure_ink_height,
 )
 from ..utils.ocr_backend import ocr_region
 from ..utils.tensor_utils import tensor2np
@@ -179,6 +179,16 @@ class SignDetailer:
                                "wrapped around a bottle or can foreshortens away from the viewer.\n"
                                "Only applies to the contour fit. Try 0.4-0.6 for bottle labels,\n"
                                "0 for anything flat."}),
+                "glyph_match_source_size": ("BOOLEAN", {"default": True,
+                    "tooltip": "Set the replacement text at the size the surface already used,\n"
+                               "instead of scaling it to fill the region.\n\n"
+                               "Filling the box is right for a headline sign and wrong for\n"
+                               "everything else. A wine label carries one large number over three\n"
+                               "lines of small print — scaled to the box it becomes a poster, and\n"
+                               "long words no longer fit and get cut off at the edge.\n\n"
+                               "The size is measured from the existing strokes, so it adapts per\n"
+                               "region. It is a cap, not a fixed size: longer replacement text\n"
+                               "still shrinks to fit."}),
                 "glyph_preserve_surface": ("BOOLEAN", {"default": True,
                     "tooltip": "Replace only the lettering, not the whole region.\n\n"
                                "Painting the full masked area with the plate colour erases\n"
@@ -297,7 +307,8 @@ class SignDetailer:
     def _apply_glyph(self, image_hwc, region, text, font_choice, strength,
                      autocolor, uppercase, margin_ratio,
                      ink_override=None, plate_override=None,
-                     fit="auto", cylinder=0.0, preserve_surface=True):
+                     fit="auto", cylinder=0.0, preserve_surface=True,
+                     match_source_size=True):
         """Composite typeset text onto the image inside the region mask.
 
         Returns (new_image, glyph_rgb_preview) or (image, None) when nothing was drawn.
@@ -322,11 +333,18 @@ class SignDetailer:
         if plate_override is not None:
             plate = plate_override
 
+        # Match the size the surface already used. Filling the box turns a wine
+        # label into a poster and pushes long words past the edge.
+        line_height = None
+        if match_source_size:
+            rgb_probe = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
+            line_height = measure_ink_height(rgb_probe, mask_np, plate)
+
         try:
             glyph_rgb, alpha = render_glyph_layer(
                 text=text, mask_2d=mask_np, font_path=font_path,
                 fill=ink, bg=plate, uppercase=uppercase, margin_ratio=margin_ratio,
-                fit=fit, cylinder=cylinder,
+                fit=fit, cylinder=cylinder, target_line_height=line_height,
             )
         except Exception as exc:
             print(f"[SignDetailer] glyph rendering failed for #{region['index'] + 1}: {exc}")
@@ -349,7 +367,8 @@ class SignDetailer:
                 auto_resolution=True,
                 glyph_guidance="init", glyph_font="<auto>", glyph_denoise=0.55,
                 glyph_strength=1.0, glyph_fit="auto", glyph_cylinder=0.0,
-                glyph_preserve_surface=True, glyph_autocolor=True,
+                glyph_preserve_surface=True, glyph_match_source_size=True,
+                glyph_autocolor=True,
                 glyph_plate_color="", glyph_ink_color="", too_small_policy="soften",
                 cluster_mode="shared_seed", verify_after="off", verify_similarity=0.60,
                 max_attempts=2, mask_expand_pixels=4, mask_blend_pixels=16,
@@ -479,7 +498,8 @@ class SignDetailer:
                             glyph_autocolor, opts["uppercase"], opts["margin_ratio"],
                             ink_override=ink_override, plate_override=plate_override,
                             fit=glyph_fit, cylinder=glyph_cylinder,
-                            preserve_surface=glyph_preserve_surface)
+                            preserve_surface=glyph_preserve_surface,
+                            match_source_size=glyph_match_source_size)
                         if glyph_rgb is not None and attempt == 0:
                             glyph_previews.append(torch.from_numpy(
                                 np.clip(glyph_rgb, 0, 1).astype(np.float32)))
