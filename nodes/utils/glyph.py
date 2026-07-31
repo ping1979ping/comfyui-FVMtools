@@ -108,6 +108,17 @@ DEFAULT_INK_RGB = (255, 255, 255)
 SQUARE_TOLERANCE = 0.12
 MIN_QUAD_EDGE = 2.0
 
+# Share of the region's rim a component must occupy before it counts as structure
+# rather than lettering. A frame or painted border wraps most of the way round; a
+# letter reaching the edge of its plate covers a few percent at most.
+BORDER_RIM_SHARE = 0.18
+
+# How far a pixel must sit from the plate colour to count as lettering. Measured
+# on a re-rendered sign: at 46 the faint outer edges of the strokes fall below
+# the threshold and survive into the next pass as ghosting; at 28 they are caught
+# while the frame is still excluded by its rim share (0.0% frame pixels hit).
+DEFAULT_INK_TOLERANCE = 28
+
 # ──── Colour recovery ────
 
 LUMA_WEIGHTS = (0.299, 0.587, 0.114)
@@ -885,7 +896,7 @@ def warp_to_quad(block_rgb, quad, out_shape) -> tuple:
     return warped, alpha
 
 
-def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = 46,
+def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_INK_TOLERANCE,
                       drop_border_touching: bool = True) -> np.ndarray:
     """Where the CURRENT lettering sits inside a region.
 
@@ -919,22 +930,31 @@ def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = 46,
         return np.zeros(arr.shape[:2], np.float32)
 
     if drop_border_touching:
-        # The region's own outline, one pixel thick — anything connected to it is
-        # structure, not text.
+        # A frame runs around the whole region; a letter that happens to reach the
+        # edge only brushes it. Discarding everything that touches at all threw
+        # away 60% of the lettering on a sign whose text nearly spans its width,
+        # and the leftovers then showed through the re-render as ghosting.
+        # So measure HOW MUCH of the rim a component occupies, not whether it
+        # touches at all.
         eroded = cv2.erode(inside, np.ones((3, 3), np.uint8), iterations=1)
         rim = (inside > 0) & (eroded == 0)
+        rim_total = float(rim.sum())
         count, labels = cv2.connectedComponents(ink, connectivity=8)
-        if count > 1:
-            touching = set(np.unique(labels[rim & (ink > 0)]))
-            touching.discard(0)
-            if touching:
-                keep = ~np.isin(labels, list(touching))
+        if count > 1 and rim_total > 0:
+            structural = []
+            for label in range(1, count):
+                component = labels == label
+                share = float((component & rim).sum()) / rim_total
+                if share >= BORDER_RIM_SHARE:
+                    structural.append(label)
+            if structural:
+                keep = ~np.isin(labels, structural)
                 ink = (ink * keep).astype(np.uint8)
 
     return ink.astype(np.float32)
 
 
-def measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance: int = 46):
+def measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_INK_TOLERANCE):
     """Typical stroke height of the lettering already on the surface, in pixels.
 
     Filling the box is wrong for anything but a headline sign. A wine label
@@ -1072,7 +1092,7 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
 
 
 def surface_preserving_alpha(glyph_rgb, alpha, image_rgb, mask_2d, plate_rgb,
-                             grow=None, tolerance: int = 46) -> np.ndarray:
+                             grow=None, tolerance: int = DEFAULT_INK_TOLERANCE) -> np.ndarray:
     """Restrict the glyph layer to the lettering, old and new.
 
     Everything else the surface had — border, frame, texture, whatever shows
