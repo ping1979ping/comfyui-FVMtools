@@ -67,6 +67,13 @@ SCHEDULER_DEFAULT = _pick("simple", comfy.samplers.SCHEDULER_NAMES)
 # 0.70+ reinvents the sign entirely (warped shape, invented hardware, faded text).
 GLYPH_DENOISE_SAFE_MAX = 0.60
 
+# Aspect cap for the auto resolution. VRAM follows the pixel COUNT, not the edge
+# length — 2456x424 costs the same as 1024x1024 — so capping an edge would only
+# throw budget away. What does need bounding is the ratio itself: past roughly
+# 4:1 the short side reaches the latent floor and attention over one very long
+# axis stops paying off.
+AUTO_RESOLUTION_MAX_ASPECT = 4.0
+
 
 def _fuzzy_match(a, b):
     """Similarity of two strings, case- and whitespace-insensitive."""
@@ -120,8 +127,18 @@ class SignDetailer:
                                "default ComfyUI would pick euler, which is not what these\n"
                                "settings were measured against."}),
                 "scheduler": (comfy.samplers.SCHEDULER_NAMES, {"default": SCHEDULER_DEFAULT}),
-                "target_width": ("INT", {"default": 1024, "min": 64, "max": 4096, "step": 8}),
-                "target_height": ("INT", {"default": 1024, "min": 64, "max": 4096, "step": 8}),
+                "auto_resolution": ("BOOLEAN", {"default": True,
+                    "tooltip": "Shape the sampling resolution like the region instead of using\n"
+                               "target_width x target_height literally. Those two then only set\n"
+                               "the pixel BUDGET, so VRAM use stays the same.\n\n"
+                               "A fixed square wastes most of that budget on a wide sign: the crop\n"
+                               "is expanded to 1:1 first, leaving the lettering in a thin band.\n"
+                               "Measured on a 550x95 sign — square 1024 gives the text 1.9x\n"
+                               "upscale, the same budget at the region's own aspect gives 4.5x."}),
+                "target_width": ("INT", {"default": 1024, "min": 64, "max": 4096, "step": 8,
+                    "tooltip": "With auto_resolution on this is half of the pixel budget, not a literal width."}),
+                "target_height": ("INT", {"default": 1024, "min": 64, "max": 4096, "step": 8,
+                    "tooltip": "With auto_resolution on this is half of the pixel budget, not a literal height."}),
                 "max_upscale": ("FLOAT", {"default": 8.0, "min": 1.0, "max": 32.0, "step": 0.5,
                     "tooltip": "Caps how far a small region is blown up before sampling.\n"
                                "Beyond this the model hallucinates detail that breaks on stitch-back."}),
@@ -241,6 +258,31 @@ class SignDetailer:
         new_h = max(64, int(target_h * factor) // 8 * 8)
         return new_w, new_h
 
+    def _resolve_target(self, region, target_w, target_h, max_upscale, auto):
+        """Sampling resolution for this region, shaped like the region itself.
+
+        A fixed square wastes most of the budget on a wide sign: the crop is
+        expanded to a 1:1 aspect before resizing, so the lettering ends up
+        occupying a thin band. Measured on a 550x95 sign — a square 1024 gives the
+        text 1.9x upscale, the same pixel budget spent at the region's own aspect
+        gives 4.5x. Keeping the budget constant means VRAM use does not change.
+        """
+        if not auto:
+            return self._clamp_target(region, target_w, target_h, max_upscale)
+
+        x1, y1, x2, y2 = region["bbox"]
+        crop_w = max(1, x2 - x1)
+        crop_h = max(1, y2 - y1)
+        aspect = crop_w / crop_h
+        # Bound the ratio, then spend the whole budget at that ratio — clipping an
+        # edge instead would quietly hand back the very resolution we are after.
+        aspect = min(max(aspect, 1.0 / AUTO_RESOLUTION_MAX_ASPECT), AUTO_RESOLUTION_MAX_ASPECT)
+        budget = float(target_w) * float(target_h)
+
+        width = max(64, int(round((budget * aspect) ** 0.5)) // 8 * 8)
+        height = max(64, int(round((budget / aspect) ** 0.5)) // 8 * 8)
+        return self._clamp_target(region, width, height, max_upscale)
+
     def _apply_glyph(self, image_hwc, region, text, font_choice, strength,
                      autocolor, uppercase, margin_ratio,
                      ink_override=None, plate_override=None,
@@ -289,6 +331,7 @@ class SignDetailer:
 
     def execute(self, images, sign_data, model, clip, vae, seed, steps, denoise,
                 sampler_name, scheduler, target_width, target_height, max_upscale,
+                auto_resolution=True,
                 glyph_guidance="init", glyph_font="<auto>", glyph_denoise=0.55,
                 glyph_strength=1.0, glyph_fit="auto", glyph_cylinder=0.0,
                 glyph_autocolor=True,
@@ -390,9 +433,10 @@ class SignDetailer:
                 positive_cond = self._encode(clip, prompt) if prompt else (
                     positive_base if positive_base is not None else self._encode(clip, ""))
 
-                tw, th = self._clamp_target(region, target_width, target_height, max_upscale)
+                tw, th = self._resolve_target(region, target_width, target_height,
+                                              max_upscale, auto_resolution)
                 if (tw, th) != (target_width, target_height):
-                    report.append(f"  #{idx + 1} sampling at {tw}x{th} (max_upscale cap)")
+                    report.append(f"  #{idx + 1} sampling at {tw}x{th}")
 
                 # Cluster members share a seed so identical objects stay identical
                 if cluster_mode == "shared_seed" and region.get("cluster_id", -1) >= 0:

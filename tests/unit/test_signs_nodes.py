@@ -880,3 +880,68 @@ class TestMeasuredCeilings:
 
         warning = node._warn_if_text_weak(FakeModel())
         assert warning and "WARNING" in warning
+
+
+class TestAutoResolution:
+    """A fixed square spends most of the pixel budget on context, not on the
+    lettering. Measured on a 550x95 sign: square 1024 gives the text 1.9x
+    upscale, the same budget at the region's own aspect gives 4.5x.
+    """
+
+    def _region(self, w, h):
+        return {"bbox": [0, 0, w, h]}
+
+    def test_wide_sign_gets_a_wide_sampling_box(self):
+        node = SignDetailer()
+        tw, th = node._resolve_target(self._region(550, 95), 1024, 1024, 32.0, True)
+        assert tw > th * 3, f"expected a wide box, got {tw}x{th}"
+
+    def test_tall_region_gets_a_tall_box(self):
+        node = SignDetailer()
+        tw, th = node._resolve_target(self._region(300, 420), 1024, 1024, 32.0, True)
+        assert th > tw
+
+    def test_pixel_budget_is_preserved(self):
+        """VRAM must not change just because the shape did."""
+        node = SignDetailer()
+        budget = 1024 * 1024
+        for w, h in ((550, 95), (300, 420), (90, 65), (400, 400)):
+            tw, th = node._resolve_target(self._region(w, h), 1024, 1024, 32.0, True)
+            assert 0.7 * budget < tw * th < 1.3 * budget, f"{w}x{h} -> {tw}x{th}"
+
+    def test_text_upscale_actually_improves(self):
+        node = SignDetailer()
+        region = self._region(550, 95)
+        fixed_w, fixed_h = node._resolve_target(region, 1024, 1024, 32.0, False)
+        auto_w, auto_h = node._resolve_target(region, 1024, 1024, 32.0, True)
+        assert (auto_w / 550) > 1.8 * (min(fixed_w / 550, fixed_h / 95))
+
+    def test_extreme_banner_has_its_aspect_bounded(self):
+        """Past ~4:1 the short side hits the latent floor; the budget is still spent."""
+        from nodes.signs.detailer import AUTO_RESOLUTION_MAX_ASPECT
+        node = SignDetailer()
+        tw, th = node._resolve_target(self._region(4000, 60), 1024, 1024, 64.0, True)
+        assert tw / th <= AUTO_RESOLUTION_MAX_ASPECT + 0.2
+        assert 0.7 * 1024 * 1024 < tw * th < 1.3 * 1024 * 1024
+
+    def test_dimensions_stay_divisible_by_eight(self):
+        node = SignDetailer()
+        for w, h in ((550, 95), (123, 457), (91, 33), (4000, 60)):
+            tw, th = node._resolve_target(self._region(w, h), 1024, 1024, 32.0, True)
+            assert tw % 8 == 0 and th % 8 == 0, f"{w}x{h} -> {tw}x{th}"
+            assert tw >= 64 and th >= 64
+
+    def test_max_upscale_still_caps_tiny_regions(self):
+        node = SignDetailer()
+        tw, th = node._resolve_target(self._region(16, 16), 1024, 1024, 8.0, True)
+        assert max(tw / 16, th / 16) <= 8.5
+
+    def test_off_reproduces_the_old_behaviour(self):
+        node = SignDetailer()
+        region = self._region(550, 95)
+        assert node._resolve_target(region, 1024, 1024, 32.0, False) == \
+               node._clamp_target(region, 1024, 1024, 32.0)
+
+    def test_default_is_on(self):
+        spec = SignDetailer.INPUT_TYPES()["required"]["auto_resolution"]
+        assert spec[0] == "BOOLEAN" and spec[1]["default"] is True
