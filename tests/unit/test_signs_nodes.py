@@ -317,7 +317,8 @@ class TestSurfaceControl:
         out, glyph = node._apply_glyph(
             img, region, "Telefon Nummer 1234", "<auto>", 1.0,
             autocolor=True, uppercase=False, margin_ratio=0.1,
-            ink_override=(20, 20, 20), plate_override=(255, 230, 128))
+            ink_override=(20, 20, 20), plate_override=(255, 230, 128),
+            preserve_surface=False)
         assert glyph is not None
         painted = out.numpy()[60:140, 60:240].reshape(-1, 3)
         # the forced plate is markedly warmer than the grey it replaced
@@ -330,7 +331,8 @@ class TestSurfaceControl:
                   "proposal": {"font_hint": ""}}
         out, glyph = node._apply_glyph(
             img, region, "TEST", "<auto>", 1.0,
-            autocolor=True, uppercase=False, margin_ratio=0.1)
+            autocolor=True, uppercase=False, margin_ratio=0.1,
+            preserve_surface=False)
         assert glyph is not None
         painted = out.numpy()[60:140, 60:240].reshape(-1, 3)
         spread = abs(painted[:, 0].mean() - painted[:, 2].mean())

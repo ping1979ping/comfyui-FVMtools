@@ -22,7 +22,7 @@ from ..utils.inpaint_pipeline import inpaint_slot
 from ..utils.detail_daemon import DD_DEFAULTS
 from ..utils.glyph import (
     discover_fonts, resolve_font, render_glyph_layer, composite_glyph,
-    estimate_text_colors,
+    estimate_text_colors, surface_preserving_alpha,
 )
 from ..utils.ocr_backend import ocr_region
 from ..utils.tensor_utils import tensor2np
@@ -179,6 +179,17 @@ class SignDetailer:
                                "wrapped around a bottle or can foreshortens away from the viewer.\n"
                                "Only applies to the contour fit. Try 0.4-0.6 for bottle labels,\n"
                                "0 for anything flat."}),
+                "glyph_preserve_surface": ("BOOLEAN", {"default": True,
+                    "tooltip": "Replace only the lettering, not the whole region.\n\n"
+                               "Painting the full masked area with the plate colour erases\n"
+                               "everything the surface had, and the sampler must then invent it\n"
+                               "back from a flat fill. On real photographs that turned a bordered\n"
+                               "enamel oval into a plain white disc, and a curved shop-window\n"
+                               "inscription into a pasted-on banner covering the glass.\n\n"
+                               "On: only the old strokes and the new ones are covered. Parts that\n"
+                               "run into the region's edge — frames, rims, painted borders — are\n"
+                               "recognised as structure and left alone.\n"
+                               "Off: the old full-area behaviour."}),
                 "glyph_autocolor": ("BOOLEAN", {"default": True,
                     "tooltip": "Sample ink and plate colour from the original sign so the replacement keeps its scheme."}),
                 "glyph_plate_color": ("STRING", {"default": "",
@@ -286,7 +297,7 @@ class SignDetailer:
     def _apply_glyph(self, image_hwc, region, text, font_choice, strength,
                      autocolor, uppercase, margin_ratio,
                      ink_override=None, plate_override=None,
-                     fit="auto", cylinder=0.0):
+                     fit="auto", cylinder=0.0, preserve_surface=True):
         """Composite typeset text onto the image inside the region mask.
 
         Returns (new_image, glyph_rgb_preview) or (image, None) when nothing was drawn.
@@ -321,6 +332,10 @@ class SignDetailer:
             print(f"[SignDetailer] glyph rendering failed for #{region['index'] + 1}: {exc}")
             return image_hwc, None
 
+        if preserve_surface:
+            rgb_u8 = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
+            alpha = surface_preserving_alpha(glyph_rgb, alpha, rgb_u8, mask_np, plate)
+
         if alpha is None or float(alpha.max()) <= 0.0:
             return image_hwc, None
 
@@ -334,7 +349,7 @@ class SignDetailer:
                 auto_resolution=True,
                 glyph_guidance="init", glyph_font="<auto>", glyph_denoise=0.55,
                 glyph_strength=1.0, glyph_fit="auto", glyph_cylinder=0.0,
-                glyph_autocolor=True,
+                glyph_preserve_surface=True, glyph_autocolor=True,
                 glyph_plate_color="", glyph_ink_color="", too_small_policy="soften",
                 cluster_mode="shared_seed", verify_after="off", verify_similarity=0.60,
                 max_attempts=2, mask_expand_pixels=4, mask_blend_pixels=16,
@@ -374,6 +389,14 @@ class SignDetailer:
                 msg = f"WARNING: could not parse {label}={raw!r} — falling back to the sampled colour"
                 report.append(msg)
                 print(f"[SignDetailer] {msg}")
+        # Forcing a plate colour means repainting the surface, which is exactly
+        # what preserve_surface refuses to do. Honour the explicit instruction.
+        if plate_override is not None and glyph_preserve_surface:
+            glyph_preserve_surface = False
+            report.append("NOTE: glyph_plate_color is set, so glyph_preserve_surface was turned "
+                          "off for this run — forcing a new surface colour and preserving the old "
+                          "surface are opposite instructions.")
+
         if plate_override is not None and not opts["prompt_suffix"]:
             report.append("NOTE: a plate colour is forced but prompt_suffix is empty — the typeset "
                           "layer will carry the new surface colour while the prompt still describes "
@@ -455,7 +478,8 @@ class SignDetailer:
                             current, region, text, glyph_font, eff_strength,
                             glyph_autocolor, opts["uppercase"], opts["margin_ratio"],
                             ink_override=ink_override, plate_override=plate_override,
-                            fit=glyph_fit, cylinder=glyph_cylinder)
+                            fit=glyph_fit, cylinder=glyph_cylinder,
+                            preserve_surface=glyph_preserve_surface)
                         if glyph_rgb is not None and attempt == 0:
                             glyph_previews.append(torch.from_numpy(
                                 np.clip(glyph_rgb, 0, 1).astype(np.float32)))

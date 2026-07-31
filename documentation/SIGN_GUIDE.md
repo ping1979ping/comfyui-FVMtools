@@ -152,6 +152,22 @@ verkorkste Schrift klar lesbar unter der neuen stehen — und landet damit im
 Init-Latent, also genau der Slop, den wir loswerden wollen. Nur senken, wenn du die
 alte Oberflächenschattierung bewusst mitnehmen willst.
 
+**Nur die Schrift wird ersetzt, nicht die Fläche.** `glyph_preserve_surface`
+(Standard an) übermalt gezielt die alten Buchstaben und setzt die neuen — alles
+andere bleibt stehen. Ohne das wurde die gesamte Maskenfläche mit der Plattenfarbe
+gefüllt, und der Sampler musste Rahmen, Textur und alles Durchscheinende aus einer
+einfarbigen Fläche neu erfinden. An echten Fotos gemessen: aus einem Emailleschild
+mit blauem Doppelrand wurde eine schlichte weiße Scheibe, aus einer geschwungenen
+Schaufensterbeschriftung ein grünes Banner, das Glas und Regale verdeckte.
+
+Die Unterscheidung: Teile, die den **Rand der Region berühren**, sind Struktur —
+Rahmen, Einfassung, Zierlinie. Buchstaben berühren ihn nicht. Am echten Foto sank
+die übermalte Fläche dadurch von 98 % auf 46 %.
+
+Gegenläufig zu `glyph_plate_color`: eine Fläche neu einfärben und die alte Fläche
+erhalten sind entgegengesetzte Anweisungen. Setzt du eine Plattenfarbe, schaltet
+der Detailer den Oberflächenerhalt für diesen Lauf ab und schreibt es in den `report`.
+
 **Gewölbte und ausgefranste Flächen** kann ein Vier-Ecken-Warp grundsätzlich nicht
 abbilden — eine Homographie beschreibt immer eine Ebene. Ein Etikett um eine Flasche
 oder ein zerrissenes Plakat bekommt deshalb einen **spaltenweisen Warp**: für jede

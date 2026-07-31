@@ -873,6 +873,55 @@ def warp_to_quad(block_rgb, quad, out_shape) -> tuple:
     return warped, alpha
 
 
+def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = 46,
+                      drop_border_touching: bool = True) -> np.ndarray:
+    """Where the CURRENT lettering sits inside a region.
+
+    Painting the whole masked area with the plate colour erases everything the
+    surface had: an enamel sign loses its border, a shop window loses the glass
+    and the shelves behind it, and the sampler then has to invent all of it from
+    a flat fill. Seen on real photographs, that turned a bordered oval sign into
+    a plain white disc and a curved window inscription into a pasted-on banner.
+
+    Only the letters need replacing. They are the parts that differ from the
+    plate colour AND do not touch the region's edge — a frame, a rim or a
+    painted border runs into the boundary, glyphs do not.
+
+    Returns a float32 [H, W] mask in 0..1.
+    """
+    arr = _to_numpy_2d(mask_2d)
+    if arr is None or image_rgb is None:
+        return None
+    rgb = _to_float_rgb(image_rgb) * 255.0
+    if rgb.shape[:2] != arr.shape[:2]:
+        arr = cv2.resize(arr, (rgb.shape[1], rgb.shape[0]), interpolation=cv2.INTER_NEAREST)
+
+    scale = 255.0 if float(arr.max()) <= 1.0 else 1.0
+    inside = ((np.clip(arr, 0.0, None) * scale) > 127.0).astype(np.uint8)
+    if inside.sum() == 0:
+        return None
+
+    distance = np.abs(rgb - np.asarray(plate_rgb, np.float32)).max(axis=2)
+    ink = ((distance > tolerance) & (inside > 0)).astype(np.uint8)
+    if ink.sum() == 0:
+        return np.zeros(arr.shape[:2], np.float32)
+
+    if drop_border_touching:
+        # The region's own outline, one pixel thick — anything connected to it is
+        # structure, not text.
+        eroded = cv2.erode(inside, np.ones((3, 3), np.uint8), iterations=1)
+        rim = (inside > 0) & (eroded == 0)
+        count, labels = cv2.connectedComponents(ink, connectivity=8)
+        if count > 1:
+            touching = set(np.unique(labels[rim & (ink > 0)]))
+            touching.discard(0)
+            if touching:
+                keep = ~np.isin(labels, list(touching))
+                ink = (ink * keep).astype(np.uint8)
+
+    return ink.astype(np.float32)
+
+
 def quad_fit_error(mask_2d, quad) -> float:
     """Fraction of the mask's area that the fitted quad claims but does not cover.
 
@@ -966,6 +1015,38 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
         clip = clip / 255.0              # otherwise soft edges collapse to 1.0
     alpha = alpha * np.clip(clip, 0.0, 1.0)
     return rgb, alpha
+
+
+def surface_preserving_alpha(glyph_rgb, alpha, image_rgb, mask_2d, plate_rgb,
+                             grow: int = 3, tolerance: int = 46) -> np.ndarray:
+    """Restrict the glyph layer to the lettering, old and new.
+
+    Everything else the surface had — border, frame, texture, whatever shows
+    through it — is left for the sampler to keep rather than to reinvent.
+    """
+    if alpha is None:
+        return alpha
+    old = existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance=tolerance)
+    if old is None:
+        return alpha
+
+    if grow > 0:
+        k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (grow * 2 + 1, grow * 2 + 1))
+        old = cv2.dilate(old, k, iterations=1)      # cover anti-aliased stroke edges
+
+    # Where the freshly typeset block puts ink, measured against its own plate.
+    new = np.zeros_like(old)
+    if glyph_rgb is not None and glyph_rgb.size:
+        block = glyph_rgb.astype(np.float32)
+        if block.max() <= 1.0:
+            block = block * 255.0
+        diff = np.abs(block - np.asarray(plate_rgb, np.float32)).max(axis=2)
+        new = ((diff > tolerance) & (alpha > 0.05)).astype(np.float32)
+        if grow > 0:
+            new = cv2.dilate(new, np.ones((3, 3), np.uint8), iterations=1)
+
+    paint = np.clip(old + new, 0.0, 1.0)
+    return alpha * paint
 
 
 def composite_glyph(base_rgb: np.ndarray, glyph_rgb: np.ndarray, alpha: np.ndarray,

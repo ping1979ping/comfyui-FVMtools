@@ -12,6 +12,7 @@ import pytest
 
 from nodes.utils.glyph import (
     edge_profiles, warp_to_contour, quad_fit_error, CONTOUR_FIT_THRESHOLD,
+    existing_ink_mask, surface_preserving_alpha,
     SYSTEM_DEFAULT_LABEL,
     FONT_SEARCH_DIRS,
     composite_glyph,
@@ -891,3 +892,81 @@ class TestCurvedAndRaggedShapes:
         rgb, alpha = render_glyph_layer("X", m, fit="contour")
         assert rgb.shape == (self.H, self.W, 3)
         assert alpha.shape == (self.H, self.W)
+
+
+class TestSurfacePreservation:
+    """Painting the whole masked area erases what the surface had. Verified on a
+    real Krea 2 photograph: a bordered enamel oval came back as a plain white
+    disc, and a curved shop-window inscription as a banner covering the glass.
+    Only the lettering should be replaced.
+    """
+
+    @staticmethod
+    def _sign(h=220, w=360):
+        """A bordered plate with lettering — border must survive, letters must not."""
+        img = np.full((h, w, 3), 150, np.uint8)          # wall
+        cv2.rectangle(img, (30, 30), (330, 190), (240, 240, 235), -1)   # plate
+        cv2.rectangle(img, (30, 30), (330, 190), (30, 50, 120), 8)      # blue border
+        cv2.putText(img, "SANE", (90, 130), cv2.FONT_HERSHEY_DUPLEX, 2.0, (30, 50, 120), 5)
+        m = np.zeros((h, w), np.float32)
+        m[30:190, 30:330] = 1.0
+        return img, m
+
+    def test_ink_mask_finds_the_letters(self):
+        img, mask = self._sign()
+        ink = existing_ink_mask(img, mask, (240, 240, 235))
+        assert ink is not None
+        assert ink.sum() > 200, "the lettering must be detected"
+
+    def test_ink_mask_spares_the_border(self):
+        """A frame runs into the region's edge; glyphs do not."""
+        img, mask = self._sign()
+        ink = existing_ink_mask(img, mask, (240, 240, 235))
+        border_band = np.zeros_like(ink, bool)
+        border_band[30:40, 30:330] = True                # top rail of the border
+        assert ink[border_band].sum() < 5, "the border was treated as text"
+
+    def test_ink_mask_without_border_dropping_keeps_it(self):
+        img, mask = self._sign()
+        ink = existing_ink_mask(img, mask, (240, 240, 235), drop_border_touching=False)
+        border_band = np.zeros_like(ink, bool)
+        border_band[30:40, 30:330] = True
+        assert ink[border_band].sum() > 50
+
+    def test_surface_preserving_alpha_covers_far_less(self):
+        img, mask = self._sign()
+        rgb, alpha = render_glyph_layer("WEINHANDEL", mask, fill=(30, 50, 120),
+                                        bg=(240, 240, 235))
+        reduced = surface_preserving_alpha(rgb, alpha, img, mask, (240, 240, 235))
+        full_area = float((alpha > 0.05).sum())
+        kept_area = float((reduced > 0.05).sum())
+        assert kept_area < full_area * 0.8, \
+            f"expected a marked reduction, got {kept_area}/{full_area}"
+        assert kept_area > 0
+
+    def test_surface_preserving_alpha_still_covers_the_new_text(self):
+        """Whatever else is spared, the replacement lettering must be drawn."""
+        img, mask = self._sign()
+        rgb, alpha = render_glyph_layer("WEINHANDEL", mask, fill=(30, 50, 120),
+                                        bg=(240, 240, 235))
+        reduced = surface_preserving_alpha(rgb, alpha, img, mask, (240, 240, 235))
+        ink_of_new = np.abs(rgb * 255 - np.array([240, 240, 235], np.float32)).max(axis=2) > 46
+        drawn = (reduced > 0.05) & ink_of_new & (mask > 0.5)
+        assert drawn.sum() > 100
+
+    def test_empty_mask_is_safe(self):
+        img = np.full((60, 60, 3), 200, np.uint8)
+        assert existing_ink_mask(img, np.zeros((60, 60), np.float32), (200, 200, 200)) is None
+
+    def test_uniform_region_yields_no_ink(self):
+        img = np.full((80, 120, 3), 200, np.uint8)
+        m = np.ones((80, 120), np.float32)
+        ink = existing_ink_mask(img, m, (200, 200, 200))
+        assert ink is not None and float(ink.sum()) == 0.0
+
+    def test_alpha_is_returned_unchanged_when_nothing_can_be_measured(self):
+        m = np.zeros((60, 60), np.float32)
+        alpha = np.ones((60, 60), np.float32)
+        out = surface_preserving_alpha(None, alpha, np.zeros((60, 60, 3), np.uint8),
+                                       m, (0, 0, 0))
+        assert np.allclose(out, alpha)
