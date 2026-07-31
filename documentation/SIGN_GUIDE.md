@@ -153,16 +153,66 @@ Init-Latent, also genau der Slop, den wir loswerden wollen. Nur senken, wenn du 
 alte Oberflächenschattierung bewusst mitnehmen willst.
 
 **Nur die Schrift wird ersetzt, nicht die Fläche.** `glyph_preserve_surface`
-(Standard an) übermalt gezielt die alten Buchstaben und setzt die neuen — alles
-andere bleibt stehen. Ohne das wurde die gesamte Maskenfläche mit der Plattenfarbe
-gefüllt, und der Sampler musste Rahmen, Textur und alles Durchscheinende aus einer
-einfarbigen Fläche neu erfinden. An echten Fotos gemessen: aus einem Emailleschild
-mit blauem Doppelrand wurde eine schlichte weiße Scheibe, aus einer geschwungenen
+(Standard an) tauscht die Buchstaben aus und lässt alles andere stehen. Ohne das
+wurde die gesamte Maskenfläche mit der Plattenfarbe gefüllt, und der Sampler
+musste Rahmen, Textur und alles Durchscheinende aus einer einfarbigen Fläche neu
+erfinden. An echten Fotos gemessen: aus einem Emailleschild mit blauem
+Doppelrand wurde eine schlichte weiße Scheibe, aus einer geschwungenen
 Schaufensterbeschriftung ein grünes Banner, das Glas und Regale verdeckte.
 
-Die Unterscheidung: Teile, die den **Rand der Region berühren**, sind Struktur —
-Rahmen, Einfassung, Zierlinie. Buchstaben berühren ihn nicht. Am echten Foto sank
-die übermalte Fläche dadurch von 98 % auf 46 %.
+### Das Schriftband — warum Striche abdecken nicht reicht
+
+Die erste Fassung übermalte gezielt die alten Buchstaben. Genau daran scheiterte
+der **zweite** Durchgang über dieselbe Fläche: was die Tintenerkennung nicht
+findet — ein blasser Strichrand, ein weggerundeter Buchstabe — bleibt stehen und
+addiert sich über die Durchgänge auf.
+
+Ersetzt wird deshalb nicht Strich für Strich, sondern die **Fläche, auf der
+Schrift steht**. Alte und neue Buchstaben werden zu Blöcken verschmolzen, vom
+Rand der Region zurückgesetzt (dort sitzen Rahmen und Einfassung) und komplett
+geleert. Ein Rest kann nicht überleben, weil nichts einzeln gefunden werden muss.
+
+Geleert heißt nicht „einfarbig zugekleistert": die Fläche wird von ihrem eigenen
+Rand nach innen rekonstruiert, damit Beleuchtung und Verlauf erhalten bleiben.
+
+Ins Band kommt **alles**, was als Tinte erkannt wird, unabhängig von der Höhe.
+Der Versuch, hohe Formen zu schonen (Wasserzeichen, Falten), schonte auch eine
+Überschrift, die dreimal so groß war wie das Kleingedruckte darunter — und die
+überlebte den Durchgang als Geisterschrift. Gemessen über vier Szenen: schonen
+10/12, alles abdecken 12/12. Der Preis ist das Papiermuster unter der Schrift.
+
+### `glyph_surface_restyle` — der Regler für Mehrfach-Bearbeitung
+
+Bisher bekam die **ganze** Region vollen Denoise. Dreimal hintereinander heißt
+drei Generationen Drift: am Emailleschild wanderte das Blau nach Dunkelgrau, der
+Rahmen brach auf. Die Pipeline trennt jetzt zwei Dinge, die vorher dieselbe
+Maske waren: **wo** das Ergebnis eingeblendet wird, und **wie stark** neu
+gerechnet wird (`noise_mask_2d` in `inpaint_slot`).
+
+Vollen Denoise bekommt nur, **wo die neue Schrift steht** — nicht das ganze
+geleerte Band. Das ist der Unterschied zwischen 7 und 11 von 12: gibt man dem
+Modell ein leergefegtes Blatt bei vollem Denoise, schreibt es seine eigenen
+Notizen darauf, und die liest sich wie durchscheinende Altschrift.
+
+| Wert | Wirkung |
+|---|---|
+| 0,0 | Fläche unberührt — treueste Wiederholung |
+| **0,35** | **Standard** — genug, damit eine flache Fläche Material bekommt |
+| 1,0 | altes Verhalten, ganze Region wird neu gerechnet |
+
+### Ein Klumpen darf die Schrift nicht überstimmen
+
+`glyph_match_source_size` misst die Zeilenhöhe flächengewichtet. Ein
+Wasserzeichen oder Aufdruck kommt als **eine** zusammenhängende Form und hat
+mehr Fläche als alle Buchstaben zusammen: an einem gemusterten Pinnwand-Zettel
+gemessen 15 597 von 24 684 Tintenpixeln, Schätzung 171 px für eine Schrift, die
+50 px hoch steht — und der nächste Durchgang setzte sie dreimal zu groß.
+
+Zwei Schranken, beide nötig: keine Form darf mehr wiegen als alle anderen
+zusammen, und keine mehr als ein Viertel der Tintenfläche. Gemessen ergibt das
+54 / 37 / 30 / 30 px gegen Sollwerte von rund 50 / 40 / 30 / 30 — und ändert
+nichts, wo kein Klumpen dominiert. Eine eng gezogene Maske um ein einzelnes Wort
+hat nichts zu überstimmen und behält ihr volles Gewicht.
 
 Gegenläufig zu `glyph_plate_color`: eine Fläche neu einfärben und die alte Fläche
 erhalten sind entgegengesetzte Anweisungen. Setzt du eine Plattenfarbe, schaltet
@@ -393,6 +443,10 @@ Schnitt abgebildet.
 |---|---|---|
 | Neuer Text ist wieder Kauderwelsch | textschwacher Checkpoint | Qwen-Image/Ideogram/Krea 2, oder `init_strong` mit niedrigem `glyph_denoise` |
 | Alte Buchstaben scheinen durch | Denoise zu niedrig | `denoise` ≥ 0.8, oder Glyph Guidance an |
+| Ab dem zweiten Durchgang Reste der Vorschrift | `glyph_preserve_surface` aus | anlassen — sonst wird Strich für Strich gearbeitet |
+| Fläche driftet über mehrere Durchgänge | `glyph_surface_restyle` zu hoch | auf 0,35 oder 0,0 |
+| Modell erfindet zusätzliche Kritzeleien | leergefegte Fläche bei vollem Denoise | `glyph_surface_restyle` senken |
+| Schrift wächst von Durchgang zu Durchgang | Muster/Wasserzeichen als Tinte gezählt | im `report` die gemessene Zeilenhöhe prüfen |
 | Schrift steht waagerecht auf schrägem Schild | Maske zu zerfranst für `minAreaRect` | `mask_expand_pixels` erhöhen, `mask_fill_holes` an |
 | Keine Regionen gefunden | Schwelle zu hoch | `threshold_scale` auf 0.7, `min_height_px` senken |
 | Zu viele Fehltreffer | Schwelle zu niedrig | `threshold_scale` erhöhen, Klassen abschalten, `max_regions` senken |

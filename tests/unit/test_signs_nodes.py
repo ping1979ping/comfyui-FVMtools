@@ -314,7 +314,7 @@ class TestSurfaceControl:
         img = torch.full((200, 300, 3), 0.55)
         region = {"index": 0, "class": "paper", "mask": _rect_mask(200, 300, 40, 40, 260, 160),
                   "proposal": {"font_hint": ""}}
-        out, glyph = node._apply_glyph(
+        out, glyph, _band = node._apply_glyph(
             img, region, "Telefon Nummer 1234", "<auto>", 1.0,
             autocolor=True, uppercase=False, margin_ratio=0.1,
             ink_override=(20, 20, 20), plate_override=(255, 230, 128),
@@ -329,7 +329,7 @@ class TestSurfaceControl:
         img = torch.full((200, 300, 3), 0.55)
         region = {"index": 0, "class": "paper", "mask": _rect_mask(200, 300, 40, 40, 260, 160),
                   "proposal": {"font_hint": ""}}
-        out, glyph = node._apply_glyph(
+        out, glyph, _band = node._apply_glyph(
             img, region, "TEST", "<auto>", 1.0,
             autocolor=True, uppercase=False, margin_ratio=0.1,
             preserve_surface=False)

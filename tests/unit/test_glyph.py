@@ -13,6 +13,7 @@ import pytest
 from nodes.utils.glyph import (
     edge_profiles, warp_to_contour, quad_fit_error, CONTOUR_FIT_THRESHOLD,
     existing_ink_mask, surface_preserving_alpha, measure_ink_height,
+    text_band, reconstruct_surface, glyph_ink_coverage,
     SYSTEM_DEFAULT_LABEL,
     FONT_SEARCH_DIRS,
     composite_glyph,
@@ -1023,3 +1024,143 @@ class TestSizeMatching:
         fine = surface_preserving_alpha(rgb, alpha, img, m, (200, 200, 200))
         coarse = surface_preserving_alpha(rgb, alpha, img, m, (200, 200, 200), grow=12)
         assert float((fine > 0.05).sum()) < float((coarse > 0.05).sum())
+
+
+class TestTextBand:
+    """Covering stroke by stroke can only miss. Covering the AREA the lettering
+    occupies cannot, because nothing has to be found individually — which is what
+    stopped remnants from accumulating over repeated edits.
+    """
+
+    @staticmethod
+    def _sheet(h=260, w=420, watermark=False):
+        """A bordered plate with two words, optionally over a printed pattern."""
+        img = np.full((h, w, 3), 150, np.uint8)
+        cv2.rectangle(img, (30, 30), (390, 230), (240, 240, 235), -1)
+        cv2.rectangle(img, (30, 30), (390, 230), (30, 50, 120), 8)
+        if watermark:
+            # one sprawling shape with more area than every letter together
+            cv2.ellipse(img, (300, 170), (70, 45), 20, 0, 360, (205, 205, 200), -1)
+        cv2.putText(img, "SANE", (70, 120), cv2.FONT_HERSHEY_DUPLEX, 1.6, (30, 50, 120), 4)
+        m = np.zeros((h, w), np.float32)
+        m[30:230, 30:390] = 1.0
+        return img, m
+
+    def test_band_swallows_the_lettering_whole(self):
+        img, mask = self._sheet()
+        ink = existing_ink_mask(img, mask, (240, 240, 235))
+        band = text_band(mask, old_ink=ink, line_height=30)
+        assert band is not None
+        missed = (ink > 0.5) & (band < 0.5)
+        assert missed.sum() <= ink.sum() * 0.02, \
+            "a stroke outside the band survives into the next pass"
+
+    def test_band_keeps_off_the_rim(self):
+        """The frame is structure. It has to come through untouched."""
+        img, mask = self._sheet()
+        band = text_band(mask, old_ink=existing_ink_mask(img, mask, (240, 240, 235)),
+                         line_height=30)
+        rim = np.zeros_like(band, bool)
+        rim[30:38, 30:390] = True
+        assert band[rim].sum() == 0
+
+    def test_band_is_smaller_than_the_region(self):
+        img, mask = self._sheet()
+        band = text_band(mask, old_ink=existing_ink_mask(img, mask, (240, 240, 235)),
+                         line_height=30)
+        assert band.sum() < mask.sum() * 0.75, "banding the whole plate defeats the point"
+
+    def test_a_printed_pattern_is_covered_too(self):
+        """Sparing tall shapes also spared a heading three times the size of the
+        small print, and that heading survived as ghosting. Measured over four
+        scenes: sparing them 10/12, covering everything 11/12."""
+        img, mask = self._sheet(watermark=True)
+        ink = existing_ink_mask(img, mask, (240, 240, 235))
+        band = text_band(mask, old_ink=ink, line_height=30)
+        missed = (ink > 0.5) & (band < 0.5)
+        assert missed.sum() <= ink.sum() * 0.02
+
+    def test_no_lettering_means_no_band(self):
+        blank = np.full((80, 80, 3), 200, np.uint8)
+        mask = _rect_mask(80, 80, 10, 10, 70, 70)
+        assert text_band(mask, old_ink=existing_ink_mask(blank, mask, (200, 200, 200))) is None
+
+    def test_empty_mask_is_safe(self):
+        assert text_band(np.zeros((40, 40), np.float32), old_ink=None) is None
+
+
+class TestOneBlobCannotOutvoteTheLettering:
+    """A watermark, fold or printed pattern arrives as one connected shape with
+    more area than every letter together, and the area-weighted height estimate
+    followed it. Measured: 15597 of 24684 ink pixels in one blob pulled the
+    estimate to 171px for lettering standing about 50px tall.
+    """
+
+    @staticmethod
+    def _with_blob(blob_radius):
+        img = np.full((300, 460, 3), 245, np.uint8)
+        cv2.putText(img, "ABC DEF", (40, 90), cv2.FONT_HERSHEY_DUPLEX, 1.2, (40, 40, 40), 3)
+        if blob_radius:
+            cv2.circle(img, (300, 200), blob_radius, (150, 150, 150), -1)
+        mask = _rect_mask(300, 460, 10, 10, 450, 290)
+        return img, mask
+
+    def test_a_dominating_blob_does_not_set_the_height(self):
+        clean, mask = self._with_blob(0)
+        blobbed, _ = self._with_blob(80)
+        baseline = measure_ink_height(clean, mask, (245, 245, 245))
+        withblob = measure_ink_height(blobbed, mask, (245, 245, 245))
+        assert baseline is not None and withblob is not None
+        assert withblob < baseline * 2.0, \
+            f"the blob set the size: {withblob} against {baseline} without it"
+
+    def test_a_region_without_a_blob_is_unchanged(self):
+        """Measured on three real regions: 39, 35 and 44px before and after."""
+        clean, mask = self._with_blob(0)
+        assert measure_ink_height(clean, mask, (245, 245, 245)) is not None
+
+
+class TestReconstructSurface:
+    """Flooding the cleared area with one flat colour throws away the lighting,
+    and the sampler then has to invent it back."""
+
+    def test_the_gradient_survives_the_wipe(self):
+        gradient = np.tile(np.linspace(60, 200, 240, dtype=np.uint8), (160, 1))
+        img = np.repeat(gradient[..., None], 3, axis=2)
+        band = np.zeros((160, 240), np.float32)
+        band[60:100, 80:160] = 1.0
+        filled = reconstruct_surface(img, band)
+        assert filled is not None
+        left = filled[60:100, 82:92].mean()
+        right = filled[60:100, 148:158].mean()
+        assert right > left + 0.15, "the fill flattened the lighting"
+
+    def test_nothing_to_do_is_not_an_error(self):
+        img = np.full((40, 40, 3), 128, np.uint8)
+        assert reconstruct_surface(img, np.zeros((40, 40), np.float32)) is None
+        assert reconstruct_surface(img, None) is None
+
+
+class TestGlyphInkCoverage:
+    """With the surface kept, only the strokes may be painted — the block's own
+    plate behind them must not be."""
+
+    def test_the_plate_of_the_block_is_not_covered(self):
+        mask = _rect_mask(160, 320, 20, 20, 300, 140)
+        rgb, alpha = render_glyph_layer("HALLO", mask, fill=(20, 20, 20), bg=(240, 240, 240))
+        cov = glyph_ink_coverage(rgb, alpha, (240, 240, 240), (20, 20, 20))
+        assert cov is not None
+        assert cov.max() > 0.8, "the strokes must be fully covered"
+        assert cov.mean() < alpha.mean() * 0.6, "the block's background was painted too"
+
+    def test_missing_input_is_safe(self):
+        assert glyph_ink_coverage(None, None, (0, 0, 0)) is None
+
+    def test_a_single_word_keeps_its_full_weight(self):
+        """A mask drawn tightly round one word has nothing to outvote — capping
+        it against 'all the others' would leave it weighing nothing."""
+        img = np.full((120, 300, 3), 245, np.uint8)
+        cv2.rectangle(img, (20, 40), (280, 90), (40, 40, 40), -1)   # one solid block
+        mask = _rect_mask(120, 300, 10, 20, 290, 110)
+        height = measure_ink_height(img, mask, (245, 245, 245))
+        assert height is not None and height > 30, f"got {height}"

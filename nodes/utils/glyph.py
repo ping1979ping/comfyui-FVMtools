@@ -119,6 +119,32 @@ BORDER_RIM_SHARE = 0.18
 # while the frame is still excluded by its rim share (0.0% frame pixels hit).
 DEFAULT_INK_TOLERANCE = 28
 
+# ──── Text band ────
+#
+# Covering stroke by stroke is what leaves ghosts: whatever the ink detector
+# misses — a faint outer edge, a stroke the size estimate rounded away — stays
+# in the picture and adds to the next pass. Covering the AREA the lettering
+# occupies cannot miss anything, because it does not have to find every stroke.
+
+# How far the band is held back from the region's outline, as a share of the
+# region's short side. A frame or rim lives here; lettering does not.
+BAND_RIM_MARGIN = 0.05
+# Gaps the band bridges, relative to the height of the lettering. Wide enough to
+# close the spaces inside a word, narrow enough to leave separate blocks apart.
+BAND_CLOSE_X = 0.85
+BAND_CLOSE_Y = 0.35
+# Margin around the merged strokes, so anti-aliased edges fall inside the band.
+BAND_GROW = 0.16
+# Fallback lettering height when nothing measurable is on the surface, as a
+# share of the region's short side.
+BAND_FALLBACK_HEIGHT = 0.12
+# Smallest block that can still be lettering, as a share of the lettering height
+# (squared into an area). Below this it is grain, a scratch or a speck.
+BAND_MIN_BLOCK = 0.30
+# How much of the total ink area one connected component may be worth when the
+# lettering height is estimated. See measure_ink_height.
+MAX_COMPONENT_VOTE = 0.25
+
 # ──── Colour recovery ────
 
 LUMA_WEIGHTS = (0.299, 0.587, 0.114)
@@ -988,7 +1014,27 @@ def measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_I
     order = np.argsort(heights)
     heights = np.asarray(heights)[order]
     areas = np.asarray(areas, dtype=np.float64)[order]
+    # ...and cap what a single component may be worth. A watermark, a fold or a
+    # printed pattern comes out as one sprawling blob whose area beats every
+    # letter put together: measured on a patterned noticeboard sheet, one such
+    # blob held 15597 of 24684 ink pixels and pulled the estimate to 171px for
+    # lettering that stands about 50px tall.
+    #
+    # Two guards, and both are needed. No component may outweigh all the others
+    # put together — that alone rescues a blob eight times the size of the
+    # lettering. And none may be worth more than a quarter of the ink — that is
+    # what lands the noticeboard sheet on 54px instead of 71px. Measured across
+    # both together: 54 / 37 / 30 / 30 px against target sizes of roughly
+    # 50 / 40 / 30 / 30, and unchanged wherever no blob dominates.
+    #
+    # A tight mask holding a single word has nothing to outvote, so it keeps its
+    # full weight — capping it against "all the others" would zero it out.
+    if len(areas) > 1:
+        total = areas.sum()
+        areas = np.minimum(areas, np.minimum(total - areas, total * MAX_COMPONENT_VOTE))
     cumulative = np.cumsum(areas)
+    if cumulative[-1] <= 0:
+        return None
     if cumulative[-1] <= 0:
         return None
     midpoint = np.searchsorted(cumulative, cumulative[-1] / 2.0)
@@ -1089,6 +1135,154 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
         clip = clip / 255.0              # otherwise soft edges collapse to 1.0
     alpha = alpha * np.clip(clip, 0.0, 1.0)
     return rgb, alpha
+
+
+def glyph_ink_coverage(glyph_rgb, alpha, plate_rgb, ink_rgb=None) -> np.ndarray:
+    """How much of each pixel the freshly typeset LETTERS cover, 0..1.
+
+    The rendered block carries its own plate colour behind the letters. When the
+    surface underneath is being kept, that background must not be painted on —
+    only the strokes. Measuring the block against its own plate gives exactly
+    that, anti-aliased edges included.
+    """
+    if glyph_rgb is None or alpha is None or not np.asarray(glyph_rgb).size:
+        return None
+    block = np.asarray(glyph_rgb, np.float32)
+    if float(block.max()) <= 1.0:
+        block = block * 255.0
+    plate = np.asarray(plate_rgb, np.float32)
+    distance = np.abs(block - plate).max(axis=2)
+    # Normalise by the ink/plate contrast so a pale grey on white still reads as
+    # full coverage. The floor keeps a near-invisible pairing from exploding.
+    if ink_rgb is None:
+        span = max(float(distance.max()), 1.0)
+    else:
+        span = max(float(np.abs(np.asarray(ink_rgb, np.float32) - plate).max()), 24.0)
+    coverage = np.clip(distance / span, 0.0, 1.0).astype(np.float32)
+    return coverage * np.asarray(alpha, np.float32)
+
+
+def text_band(mask_2d, old_ink=None, new_ink=None, line_height=None,
+              rim_margin=None) -> np.ndarray:
+    """The AREA a region's lettering occupies — old and new merged into blocks.
+
+    Returns a float32 [H, W] mask in 0..1, or ``None`` when there is no
+    lettering to speak of.
+    """
+    arr = _to_numpy_2d(mask_2d)
+    if arr is None:
+        return None
+    scale = 255.0 if float(arr.max()) <= 1.0 else 1.0
+    inside = ((np.clip(arr, 0.0, None) * scale) > 127.0).astype(np.uint8)
+    if inside.sum() == 0:
+        return None
+
+    ys, xs = np.where(inside > 0)
+    short_side = float(min(ys.max() - ys.min() + 1, xs.max() - xs.min() + 1))
+
+    if rim_margin is None:
+        rim_margin = int(max(1, round(short_side * BAND_RIM_MARGIN)))
+    interior = inside
+    if rim_margin > 0:
+        k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (rim_margin * 2 + 1,) * 2)
+        interior = cv2.erode(inside, k, iterations=1)
+    if interior.sum() == 0:                       # region thinner than its own rim
+        interior = inside
+
+    seed = np.zeros(inside.shape, np.uint8)
+    for layer in (old_ink, new_ink):
+        if layer is None:
+            continue
+        layer = np.asarray(layer, np.float32)
+        if layer.shape[:2] != inside.shape[:2] or not layer.size:
+            continue
+        seed |= (layer > 0.05).astype(np.uint8)
+    seed &= (interior > 0).astype(np.uint8)
+    if seed.sum() == 0:
+        return None
+
+    height = float(line_height) if line_height else short_side * BAND_FALLBACK_HEIGHT
+    height = max(4.0, height)
+
+    # Everything found stays in the band, however tall. Excluding the tall
+    # shapes — meant to spare a watermark — also excluded a heading three times
+    # the size of the small print beneath it, and that heading then survived the
+    # pass as ghosting. Measured over the four scenes: sparing them scored 10/12,
+    # covering everything 11/12. The paper pattern under the lettering is lost
+    # in exchange, which is a cosmetic price for a correctness gain.
+    #
+    # The height below only sets how far the band reaches to merge strokes, and
+    # it is taken from the strokes actually present rather than from the type
+    # size: a sheet carrying one heading over four lines of small print has a
+    # small typical size and still needs a band that spans the heading.
+    heights = []
+    count, _labels, stats, _cent = cv2.connectedComponentsWithStats(seed, connectivity=8)
+    for i in range(1, count):
+        if stats[i, cv2.CC_STAT_AREA] >= 4:
+            heights.append(int(stats[i, cv2.CC_STAT_HEIGHT]))
+    if heights:
+        height = max(height, float(np.percentile(heights, 90)))
+    kx = max(1, int(round(height * BAND_CLOSE_X))) | 1
+    ky = max(1, int(round(height * BAND_CLOSE_Y))) | 1
+    band = cv2.morphologyEx(seed, cv2.MORPH_CLOSE,
+                            cv2.getStructuringElement(cv2.MORPH_RECT, (kx, ky)))
+
+    # Solidify: the counters of an 'o' and the gaps between strokes are part of
+    # the block, and leaving them out would leave islands of old surface behind.
+    contours, _ = cv2.findContours(band, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    filled = np.zeros_like(band)
+    cv2.drawContours(filled, contours, -1, 1, cv2.FILLED)
+
+    # Grain, a scratch or a speck of dirt is not lettering, and giving each one
+    # its own little band would erase texture the surface is supposed to keep.
+    # Nothing smaller than a fraction of one letter can be text.
+    floor = max(9.0, (height * BAND_MIN_BLOCK) ** 2)
+    count, labels, stats, _ = cv2.connectedComponentsWithStats(filled, connectivity=8)
+    if count > 1:
+        keep = [i for i in range(1, count) if stats[i, cv2.CC_STAT_AREA] >= floor]
+        filled = np.isin(labels, keep).astype(np.uint8) if keep else np.zeros_like(filled)
+    if filled.sum() == 0:
+        return None
+
+    grow = max(1, int(round(height * BAND_GROW)))
+    filled = cv2.dilate(filled, cv2.getStructuringElement(
+        cv2.MORPH_ELLIPSE, (grow * 2 + 1,) * 2), iterations=1)
+
+    return ((filled > 0) & (interior > 0)).astype(np.float32)
+
+
+def reconstruct_surface(image_rgb, band, radius=None) -> np.ndarray:
+    """Rebuild what is under the lettering from the surface around it.
+
+    Flooding the band with one flat colour throws away the lighting, the
+    gradient across a plate and the grain of the paper, and the sampler then has
+    to invent all of it again — which is how a bordered enamel sign turns into a
+    plain disc. Pulling the surface inward from the band's own edge keeps them.
+
+    Returns float32 [H, W, 3] in 0..1, or ``None`` when there is nothing to do.
+    """
+    if band is None:
+        return None
+    band_np = np.asarray(band, np.float32)
+    if not band_np.size or float(band_np.max()) <= 0.0:
+        return None
+
+    rgb = _to_float_rgb(image_rgb)
+    holes = (band_np > 0.05).astype(np.uint8)
+    if holes.shape[:2] != rgb.shape[:2]:
+        holes = cv2.resize(holes, (rgb.shape[1], rgb.shape[0]), interpolation=cv2.INTER_NEAREST)
+    if holes.sum() == 0:
+        return None
+
+    if radius is None:
+        # Telea walks inward from the boundary, so the reach it needs is the
+        # band's half-thickness, not its length.
+        distance = cv2.distanceTransform(holes, cv2.DIST_L2, 3)
+        radius = int(np.clip(round(float(distance.max()) * 0.75), 3, 24))
+
+    u8 = (np.clip(rgb, 0.0, 1.0) * 255.0).astype(np.uint8)
+    filled = cv2.inpaint(u8, holes, radius, cv2.INPAINT_TELEA)
+    return (filled.astype(np.float32) / 255.0)
 
 
 def surface_preserving_alpha(glyph_rgb, alpha, image_rgb, mask_2d, plate_rgb,

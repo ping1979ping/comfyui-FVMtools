@@ -331,11 +331,18 @@ def inpaint_slot(
     cfg=1.0,
     denoise_gradient=0.0,
     denoise_gradient_mode="linear",
+    noise_mask_2d=None,
 ):
     """Run the full inpaint pipeline for a single masked region.
 
     Args:
         repeat: number of inpaint rounds (latent cycling).
+        noise_mask_2d: optional [H, W] float mask deciding HOW STRONGLY each
+            pixel is re-rendered, while `mask_2d` still decides WHERE the result
+            is blended back and how much context is cropped. Splitting the two
+            lets a region be sampled unevenly — full strength on the lettering,
+            a light touch on the surface around it — without shrinking the crop
+            to the strong part and losing the context that made it match.
         denoise_progression: pipe-separated denoise per round (e.g. "0.5|0.3").
         steps_progression: pipe-separated steps per round (e.g. "6|4").
         When empty, `denoise` and `steps` are used for all rounds.
@@ -377,6 +384,12 @@ def inpaint_slot(
     )
 
     # Step 6: Feather mask for noise masking
+    if noise_mask_2d is not None:
+        # Same crop, same resize — only the values differ, so the strong and the
+        # light part of the region land in exactly the same place as the blend.
+        _, cropped_mask, _ = crop_and_resize(
+            image, noise_mask_2d.to(processed_mask.dtype), crop, target_width, target_height
+        )
     if mask_blend_pixels > 0:
         cropped_mask = feather_mask(cropped_mask, mask_blend_pixels)
 

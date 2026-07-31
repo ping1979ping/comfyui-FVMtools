@@ -28,3 +28,9 @@ MagicMock/
 # Demo images written by tests/artifacts/*.py. The scripts are tracked so the
 # rendering can be re-verified on any machine; the PNGs they produce are not.
 /tests/artifacts/*.png
+
+# Live-run artefacts: scenes, probe previews, masks and captured run logs. The
+# scripts under tests/live are tracked so the runs can be repeated; what they
+# produce is not.
+/tests/live/*.png
+/tests/live/*_run.txt

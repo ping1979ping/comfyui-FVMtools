@@ -7,8 +7,35 @@ LM Studio on :1234. Run them from this directory with the ComfyUI venv.
 |---|---|
 | `make_real.py` | Generates three photographic test scenes with Krea 2 (street, wine shelf, noticeboard). Real material — synthetic rectangles hide the failures that matter. |
 | `krea_run.py` | One full pass over an image. `--set sel.max_regions=24 --set detailer.glyph_denoise=0.45` overrides any widget. |
-| `suite.py` | The acceptance test: text A -> B -> A across four scenes, each result read back by the vision model. Prints a PASS/FAIL table. |
-| `roundtrip.py` | Helper module used by the other two (graph building, upload, judging). |
+| `suite.py` | The acceptance test: text A -> B -> A across four scenes, each result read back by the vision model. Prints a PASS/FAIL table. `--set glyph_surface_restyle=1.0` overrides any detailer widget, which is how one change gets separated from another. |
+| `selector_probe.py` | Selector only, no sampling, so it is cheap. Saves the numbered preview **and every mask**, which is what makes the glyph step replayable offline — the only way to tell a detection problem from a rendering problem. |
+| `roundtrip.py` | Helper module used by the others (graph building, upload, judging). |
+
+The scenes are looked up in this directory first and in `ComfyUI/input` second, so
+a fresh clone does not have to regenerate them. A run that executes **nothing**
+exits 2 — reporting 0/0 as a pass is how a broken harness gets mistaken for a
+working pipeline.
+
+## Change one thing at a time
+
+Two changes went in together once and the score fell from 9/12 to 7/12. Splitting
+them showed one was worth +1 and the other -3; the second, fixed, was worth +1
+more. Whenever a run gets worse, re-run with the parts separated before touching
+anything else:
+
+```
+suite.py --set glyph_surface_restyle=1.0    # band replacement only
+suite.py                                    # everything at its default
+```
+
+Measured on Krea 2 Turbo, seed 11, four scenes x three passes:
+
+| Stand | Ergebnis |
+|---|---|
+| vor dem Umbau | 9/12 |
+| Band + volle Bandmaske im Sampler | 7/12 |
+| nur Band-Ersetzung | 10/12 |
+| Band + Denoise nur auf der neuen Schrift | **11/12** |
 
 ## Restarting ComfyUI 8189
 

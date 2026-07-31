@@ -13,6 +13,7 @@ plausibly out-of-focus lettering, which is what a real photograph looks like.
 
 import difflib
 
+import cv2
 import numpy as np
 import torch
 
@@ -23,7 +24,9 @@ from ..utils.detail_daemon import DD_DEFAULTS
 from ..utils.glyph import (
     discover_fonts, resolve_font, render_glyph_layer, composite_glyph,
     estimate_text_colors, surface_preserving_alpha, measure_ink_height,
+    existing_ink_mask, glyph_ink_coverage, text_band, reconstruct_surface,
 )
+from ..utils.mask_utils import fill_mask_holes_2d
 from ..utils.ocr_backend import ocr_region
 from ..utils.tensor_utils import tensor2np
 try:  # relative inside ComfyUI's loader, absolute under pytest
@@ -73,6 +76,12 @@ GLYPH_DENOISE_SAFE_MAX = 0.60
 # 4:1 the short side reaches the latent floor and attention over one very long
 # axis stops paying off.
 AUTO_RESOLUTION_MAX_ASPECT = 4.0
+
+# Room left around the new strokes for the sampler to work in, as a multiple of
+# the lettering height. Enough that letters get their own shading and edges,
+# little enough that swept-clean surface stays out of reach — handed an empty
+# sheet at full denoise the model writes its own notes on it.
+HOT_ZONE_MARGIN = 0.5
 
 
 def _fuzzy_match(a, b):
@@ -200,6 +209,17 @@ class SignDetailer:
                                "run into the region's edge — frames, rims, painted borders — are\n"
                                "recognised as structure and left alone.\n"
                                "Off: the old full-area behaviour."}),
+                "glyph_surface_restyle": ("FLOAT", {"default": 0.35, "min": 0.0, "max": 1.0, "step": 0.05,
+                    "tooltip": "How much of the denoise the surface AROUND the lettering gets,\n"
+                               "as a fraction. The lettering itself always gets all of it.\n\n"
+                               "This is what makes a second pass over the same sign safe. At 1.0\n"
+                               "the whole plate is re-rendered every time, so three passes means\n"
+                               "three generations of drift — measured on a navy enamel sign, the\n"
+                               "plate walked to dark grey and the border broke up.\n\n"
+                               "0.0  the surface is untouched — most faithful for repeat edits\n"
+                               "0.35 default — enough for a flat synthetic plate to gain material\n"
+                               "1.0  the old behaviour\n"
+                               "Only applies with glyph_preserve_surface on."}),
                 "glyph_autocolor": ("BOOLEAN", {"default": True,
                     "tooltip": "Sample ink and plate colour from the original sign so the replacement keeps its scheme."}),
                 "glyph_plate_color": ("STRING", {"default": "",
@@ -311,7 +331,12 @@ class SignDetailer:
                      match_source_size=True):
         """Composite typeset text onto the image inside the region mask.
 
-        Returns (new_image, glyph_rgb_preview) or (image, None) when nothing was drawn.
+        Returns ``(new_image, glyph_rgb_preview, hot)``. ``hot`` is where the NEW
+        lettering stands, and it is what the caller samples at full strength — the
+        rest of the region gets a fraction of it. Emptied surface must not be
+        included: given free rein over a cleared sheet the model fills it with
+        invented handwriting, which reads exactly like leftover text.
+        ``None`` when the surface is not being kept.
         """
         mask_np = region["mask"]
         img_np = image_hwc.cpu().numpy() if isinstance(image_hwc, torch.Tensor) else image_hwc
@@ -348,17 +373,72 @@ class SignDetailer:
             )
         except Exception as exc:
             print(f"[SignDetailer] glyph rendering failed for #{region['index'] + 1}: {exc}")
-            return image_hwc, None
+            return image_hwc, None, None
 
+        device = image_hwc.device if isinstance(image_hwc, torch.Tensor) else "cpu"
+        band = None
         if preserve_surface:
             rgb_u8 = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
+            coverage = glyph_ink_coverage(glyph_rgb, alpha, plate, ink)
+            band = text_band(mask_np,
+                             old_ink=existing_ink_mask(rgb_u8, mask_np, plate),
+                             new_ink=None if coverage is None else (coverage > 0.15),
+                             line_height=line_height)
+            if band is not None and coverage is not None and float(coverage.max()) > 0.0:
+                # Wipe the whole band first. Covering stroke by stroke is what
+                # left ghosts: every stroke the detector missed stayed in the
+                # picture and the next pass added to it.
+                surface = reconstruct_surface(img_np, band)
+                base = img_np.astype(np.float32)
+                if surface is not None:
+                    keep = band[..., None].astype(np.float32)
+                    base = base * (1.0 - keep) + surface * keep
+                blended = composite_glyph(base, glyph_rgb, coverage, strength=strength)
+                hot = self._hot_zone(coverage, mask_np, line_height)
+                return torch.from_numpy(blended).to(device), glyph_rgb, hot
+            # No usable band — fall back to covering the strokes themselves.
             alpha = surface_preserving_alpha(glyph_rgb, alpha, rgb_u8, mask_np, plate)
+            band = None
 
         if alpha is None or float(alpha.max()) <= 0.0:
-            return image_hwc, None
+            return image_hwc, None, None
 
         blended = composite_glyph(img_np.astype(np.float32), glyph_rgb, alpha, strength=strength)
-        return torch.from_numpy(blended).to(image_hwc.device if isinstance(image_hwc, torch.Tensor) else "cpu"), glyph_rgb
+        return torch.from_numpy(blended).to(device), glyph_rgb, band
+
+    @staticmethod
+    def _hot_zone(coverage, mask_2d, line_height=None):
+        """Where the new lettering stands, with room around it to render into."""
+        if coverage is None:
+            return None
+        strokes = (np.asarray(coverage, np.float32) > 0.15).astype(np.uint8)
+        if strokes.sum() == 0:
+            return None
+        height = float(line_height) if line_height else 20.0
+        pad = max(2, int(round(height * HOT_ZONE_MARGIN)))
+        k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (pad * 2 + 1,) * 2)
+        grown = cv2.dilate(strokes, k, iterations=1).astype(np.float32)
+        region = np.asarray(mask_2d, np.float32)
+        if region.shape[:2] == grown.shape[:2]:
+            grown = grown * (region > 0.5)
+        return grown
+
+    def _split_noise_mask(self, region_mask, hot, restyle, fill_holes=True):
+        """Full denoise where the new text goes, a fraction of it everywhere else.
+
+        Returns ``None`` when there is nothing to split, which leaves the region
+        sampled evenly the way it always was.
+        """
+        if hot is None or restyle >= 1.0:
+            return None
+        base = region_mask
+        if fill_holes:
+            base = fill_mask_holes_2d(base)
+        inside = (base > 0.5).float()
+        hot_t = torch.from_numpy(np.asarray(hot, np.float32))
+        if hot_t.shape != inside.shape:
+            return None
+        return torch.clamp(hot_t + (1.0 - hot_t) * float(restyle), 0.0, 1.0) * inside
 
     # ── Main ──
 
@@ -367,7 +447,8 @@ class SignDetailer:
                 auto_resolution=True,
                 glyph_guidance="init", glyph_font="<auto>", glyph_denoise=0.55,
                 glyph_strength=1.0, glyph_fit="auto", glyph_cylinder=0.0,
-                glyph_preserve_surface=True, glyph_match_source_size=True,
+                glyph_preserve_surface=True, glyph_surface_restyle=0.35,
+                glyph_match_source_size=True,
                 glyph_autocolor=True,
                 glyph_plate_color="", glyph_ink_color="", too_small_policy="soften",
                 cluster_mode="shared_seed", verify_after="off", verify_similarity=0.60,
@@ -491,9 +572,9 @@ class SignDetailer:
 
                 for attempt in range(attempts):
                     work_image = current
-                    glyph_rgb = None
+                    glyph_rgb, hot = None, None
                     if use_glyph and text:
-                        work_image, glyph_rgb = self._apply_glyph(
+                        work_image, glyph_rgb, hot = self._apply_glyph(
                             current, region, text, glyph_font, eff_strength,
                             glyph_autocolor, opts["uppercase"], opts["margin_ratio"],
                             ink_override=ink_override, plate_override=plate_override,
@@ -504,9 +585,19 @@ class SignDetailer:
                             glyph_previews.append(torch.from_numpy(
                                 np.clip(glyph_rgb, 0, 1).astype(np.float32)))
 
+                    region_mask = torch.from_numpy(region["mask"])
+                    noise_mask = self._split_noise_mask(
+                        region_mask, hot, glyph_surface_restyle,
+                        fill_holes=opts["mask_fill_holes"])
+                    if noise_mask is not None and attempt == 0:
+                        share = float((hot > 0.5).sum()) / max(1.0, float((region["mask"] > 0.5).sum()))
+                        report.append(f"  #{idx + 1} new lettering covers {share * 100:.0f}% of the "
+                                      f"region; the rest is sampled at {glyph_surface_restyle:.2f}x")
+
                     stitched, refined = inpaint_slot(
                         image=work_image,
-                        mask_2d=torch.from_numpy(region["mask"]),
+                        mask_2d=region_mask,
+                        noise_mask_2d=noise_mask,
                         model=model,
                         positive_cond=positive_cond,
                         negative_cond=negative_cond,

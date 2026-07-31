@@ -31,7 +31,20 @@ SCENES = [
 ]
 
 
-def render(info, image_name, text, prefix, regions):
+def apply_overrides(widgets, assignments):
+    """`--set glyph_denoise=0.45` on any detailer widget, typed from its default."""
+    for item in assignments:
+        name, _, value = item.partition("=")
+        if name not in widgets:
+            raise SystemExit(f"unknown detailer widget {name!r}")
+        current = widgets[name]
+        widgets[name] = (value.lower() in ("1", "true", "on") if isinstance(current, bool)
+                         else type(current)(value))
+        print(f"  override {name} = {widgets[name]!r}")
+    return widgets
+
+
+def render(info, image_name, text, prefix, regions, overrides=()):
     g = {}
     g["1"] = {"class_type": "LoadImage",
               "inputs": {**R.defaults_for(info, "LoadImage"), "image": image_name}}
@@ -55,6 +68,7 @@ def render(info, image_name, text, prefix, regions):
     det = R.defaults_for(info, "FVM_SignDetailer")
     det.update({"images": ["1", 0], "sign_data": ["4", 0], "model": ["5", 0],
                 "clip": ["6", 0], "vae": ["7", 0], "sign_options": ["8", 0], "seed": 11})
+    apply_overrides(det, overrides)
     g["9"] = {"class_type": "FVM_SignDetailer", "inputs": det}
     g["10"] = {"class_type": "SaveImage", "inputs": {"images": ["9", 0], "filename_prefix": prefix}}
 
@@ -114,6 +128,8 @@ def judge(path, target, box):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", default="")
+    ap.add_argument("--set", action="append", default=[], dest="overrides",
+                    help="detailer widget override, e.g. --set glyph_surface_restyle=1.0")
     args = ap.parse_args()
 
     info = R.api("/object_info", timeout=180)
@@ -123,7 +139,7 @@ def main():
             continue
         print(f"\n{'=' * 66}\n{sc['tag']}  ({sc['image']})")
         try:
-            R.upload(os.path.join(R.OUT, sc["image"]), sc["image"])
+            R.upload(R.scene_path(sc["image"]), sc["image"])
         except Exception as e:
             print(f"  upload failed: {e}")
             continue
@@ -132,7 +148,8 @@ def main():
         steps = []
         for label, target in (("A", a), ("B", b), ("C", a)):
             try:
-                fn, secs = render(info, current, target, f"suite_{sc['tag']}_{label}", sc["regions"])
+                fn, secs = render(info, current, target, f"suite_{sc['tag']}_{label}",
+                                  sc["regions"], args.overrides)
             except Exception as e:
                 print(f"  [{label}] RENDER FAILED: {str(e)[:200]}")
                 steps.append((label, target, None, {"error": "render"}))
@@ -164,6 +181,11 @@ def main():
             print(f"  {tag:8} {label}  {'PASS' if ok else 'FAIL'}  "
                   f"target={target!r} contains={v.get('contains')} ghosting={g}")
     print(f"\n{total_pass}/{total} Durchgaenge bestanden")
+    if total == 0:
+        # Nothing ran. Reporting that as a pass is how a broken harness gets
+        # mistaken for a working pipeline.
+        print("KEIN Durchgang ausgefuehrt — Szenen fehlen oder ComfyUI ist nicht erreichbar")
+        return 2
     return 0 if total_pass == total else 1
 
 

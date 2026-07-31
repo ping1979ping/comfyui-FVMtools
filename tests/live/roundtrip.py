@@ -24,6 +24,18 @@ from nodes.utils.lmstudio_client import chat_vision, parse_json_response
 HOST = "http://127.0.0.1:8189"
 VLM = "qwen3-8b-vl-instruct-abliterated"
 OUT = os.path.dirname(os.path.abspath(__file__))
+# Scenes made by make_real.py are written here, but they are also already
+# sitting in ComfyUI's input folder from the run that made them. Look there
+# too, so a fresh clone does not have to regenerate them.
+COMFY_INPUT = "D:/AI/ComfyUI/ComfyUI/input"
+
+
+def scene_path(name):
+    """Local copy of a test scene, wherever it happens to live."""
+    local = os.path.join(OUT, name)
+    if os.path.exists(local):
+        return local
+    return os.path.join(COMFY_INPUT, name)
 
 JUDGE_SYSTEM = (
     "You inspect a crop of a sign in a rendered image and report what is actually "
