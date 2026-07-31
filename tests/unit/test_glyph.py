@@ -11,6 +11,7 @@ import numpy as np
 import pytest
 
 from nodes.utils.glyph import (
+    edge_profiles, warp_to_contour, quad_fit_error, CONTOUR_FIT_THRESHOLD,
     SYSTEM_DEFAULT_LABEL,
     FONT_SEARCH_DIRS,
     composite_glyph,
@@ -794,3 +795,99 @@ class TestPerspectiveIsPreserved:
         _, alpha = render_glyph_layer("WEINHANDEL", mask)
         assert float((alpha * (mask < 0.5)).max()) == 0.0
         assert float(alpha[mask > 0.5].max()) > 0.9
+
+
+class TestCurvedAndRaggedShapes:
+    """A homography can only describe a flat plane. A label wrapped round a
+    bottle, fabric with folds, or a torn poster needs a column-wise fit —
+    otherwise the text sits dead straight on a bowed surface, or gets chopped
+    off at the edges once the layer is clipped to the mask.
+
+    Measured overshoot of the four-corner fit: 34% of its own area for a bowed
+    bottle label, 23% for a torn poster, ~2% for a flat sign.
+    """
+
+    H, W = 300, 520
+
+    def _bottle(self):
+        m = np.zeros((self.H, self.W), np.float32)
+        for x in range(90, 430):
+            t = (x - 90) / 340.0
+            bow = int(26 * np.sin(np.pi * t))
+            cv2.line(m, (x, 90 + bow), (x, 215 - bow), 1.0, 1)
+        return m
+
+    def _flat(self):
+        m = np.zeros((self.H, self.W), np.float32)
+        cv2.rectangle(m, (90, 90), (430, 215), 1.0, -1)
+        return m
+
+    def test_quad_fit_error_separates_flat_from_curved(self):
+        flat = quad_fit_error(self._flat(), mask_quad(self._flat()))
+        curved = quad_fit_error(self._bottle(), mask_quad(self._bottle()))
+        assert flat < 0.05
+        assert curved > 0.25
+        assert flat < CONTOUR_FIT_THRESHOLD < curved
+
+    def test_edge_profiles_follow_the_bow(self):
+        x_min, x_max, top, bottom = edge_profiles(self._bottle())
+        assert x_min < x_max
+        middle = len(top) // 2
+        # the label bows inward, so the middle is thinner than the ends
+        assert (bottom[middle] - top[middle]) < (bottom[2] - top[2])
+
+    def test_edge_profiles_are_smoothed(self):
+        """Chasing every notch of a torn edge would tear the text apart."""
+        m = self._flat()
+        for x in range(90, 430, 7):        # cut regular notches into the top edge
+            m[90:104, x:x + 3] = 0.0
+        _, _, top, _ = edge_profiles(m)
+        assert float(np.std(np.diff(top))) < 3.0
+
+    def test_edge_profiles_empty_mask(self):
+        assert edge_profiles(np.zeros((40, 40), np.float32)) is None
+
+    def test_contour_warp_stays_inside_the_shape(self):
+        mask = self._bottle()
+        block = render_text_block("RESERVE 2019", 340, 125)
+        _, alpha = warp_to_contour(block, mask, (self.H, self.W))
+        assert float(alpha.max()) > 0.9
+        outside = alpha * (mask < 0.5)
+        assert float(outside.mean()) < 0.02
+
+    def test_contour_warp_bows_with_the_label(self):
+        """Ink near the middle must sit higher than at the ends, like the edge."""
+        mask = self._bottle()
+        block = render_text_block("RESERVE 2019", 340, 125)
+        _, alpha = warp_to_contour(block, mask, (self.H, self.W))
+        cols = np.where(alpha.max(axis=0) > 0.5)[0]
+        first_top = np.argmax(alpha[:, cols[5]] > 0.5)
+        mid_top = np.argmax(alpha[:, cols[len(cols) // 2]] > 0.5)
+        assert mid_top > first_top, "the fit must follow the inward bow"
+
+    def test_cylinder_compresses_towards_the_sides(self):
+        mask = self._flat()
+        block = render_text_block("ABCDEFGH", 340, 125)
+        flat_rgb, _ = warp_to_contour(block, mask, (self.H, self.W), cylinder=0.0)
+        cyl_rgb, _ = warp_to_contour(block, mask, (self.H, self.W), cylinder=0.8)
+        assert not np.allclose(flat_rgb, cyl_rgb), "cylinder must change the sampling"
+
+    def test_auto_picks_contour_for_a_curved_label(self):
+        mask = self._bottle()
+        auto_rgb, auto_a = render_glyph_layer("RESERVE", mask, fit="auto")
+        cont_rgb, cont_a = render_glyph_layer("RESERVE", mask, fit="contour")
+        assert np.allclose(auto_a, cont_a)
+
+    def test_auto_picks_perspective_for_a_flat_sign(self):
+        mask = self._flat()
+        auto_rgb, auto_a = render_glyph_layer("RESERVE", mask, fit="auto")
+        persp_rgb, persp_a = render_glyph_layer("RESERVE", mask, fit="perspective")
+        assert np.allclose(auto_a, persp_a)
+
+    def test_contour_fit_degrades_to_the_quad_when_profiles_fail(self):
+        """A one-pixel sliver has no usable profile; it must not crash or blank."""
+        m = np.zeros((self.H, self.W), np.float32)
+        m[100, 100:200] = 1.0
+        rgb, alpha = render_glyph_layer("X", m, fit="contour")
+        assert rgb.shape == (self.H, self.W, 3)
+        assert alpha.shape == (self.H, self.W)

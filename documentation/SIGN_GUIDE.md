@@ -152,6 +152,33 @@ verkorkste Schrift klar lesbar unter der neuen stehen — und landet damit im
 Init-Latent, also genau der Slop, den wir loswerden wollen. Nur senken, wenn du die
 alte Oberflächenschattierung bewusst mitnehmen willst.
 
+**Gewölbte und ausgefranste Flächen** kann ein Vier-Ecken-Warp grundsätzlich nicht
+abbilden — eine Homographie beschreibt immer eine Ebene. Ein Etikett um eine Flasche
+oder ein zerrissenes Plakat bekommt deshalb einen **spaltenweisen Warp**: für jede
+Bildspalte werden Ober- und Unterkante der Maske abgetastet, und der Textblock wird
+dazwischen eingepasst. Die Grundlinie wölbt sich dann mit dem Etikett und wandert mit
+der Papierkante.
+
+`glyph_fit` steuert das:
+
+| Wert | Wann |
+|---|---|
+| `auto` (Standard) | misst, wie stark ein Vier-Ecken-Fit die Kontur verfehlt, und schaltet ab 12 % um |
+| `perspective` | ebene Schilder — gibt schrägen Flächen ihre Fluchtlinie |
+| `contour` | gewölbte Etiketten, Stofffalten, gerissenes Papier |
+
+Gemessener Fehler des Vier-Ecken-Fits: **34 %** bei einem gewölbten Flaschenetikett,
+**23 %** bei einem gerissenen Plakat, **~2 %** bei einem ebenen Schild — daher die
+Schwelle bei 12 %.
+
+`glyph_cylinder` (0–1) staucht zusätzlich zu den Seiten hin, wie Schrift, die sich um
+eine Flasche wickelt und zum Rand hin perspektivisch verkürzt. Für Flaschenetiketten
+0,4–0,6, für alles Ebene 0.
+
+Die Kantenprofile werden bewusst **geglättet**: ohne das würde der Text jeder Zacke
+einer Risskante folgen und sich zerreißen. Gesucht ist die Drift der Form, nicht ihr
+Rauschen.
+
 **Der Text bekommt eine Fluchtlinie.** Die vier Ecken werden aus der Maskenkontur
 selbst gewonnen, nicht aus `minAreaRect` — das liefert immer ein Rechteck, und
 damit stünde der Text auf einem schräg wegstehenden Schild waagerecht mit

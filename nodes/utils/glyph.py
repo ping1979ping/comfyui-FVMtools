@@ -337,6 +337,122 @@ def _order_quad(points: np.ndarray) -> np.ndarray:
     return np.roll(clockwise, -start, axis=0).astype(np.float32)
 
 
+def edge_profiles(mask_2d, smooth: float = 0.12):
+    """Top and bottom edge of the mask for every occupied column.
+
+    A four-corner fit can only describe a flat plane. A label wrapped round a
+    bottle, or a print following a fold, has edges that bow — and a ragged poster
+    has edges that wander. Sampling the real edges per column is what lets the
+    text follow them.
+
+    The profiles are smoothed on purpose: without it the text would chase every
+    notch in a torn outline and tear itself apart. What we want is the shape's
+    drift, not its noise.
+
+    Returns:
+        ``(x_min, x_max, top, bottom)`` with two float arrays of equal length,
+        or ``None`` when the mask is empty or too narrow to describe.
+    """
+    arr = _to_numpy_2d(mask_2d)
+    if arr is None:
+        return None
+    scale = 255.0 if float(arr.max()) <= 1.0 else 1.0
+    binary = (np.clip(arr, 0.0, None) * scale > 127.0)
+    if not binary.any():
+        return None
+
+    columns = np.where(binary.any(axis=0))[0]
+    if len(columns) < 4:
+        return None
+    x_min, x_max = int(columns[0]), int(columns[-1])
+
+    width = x_max - x_min + 1
+    top = np.empty(width, dtype=np.float32)
+    bottom = np.empty(width, dtype=np.float32)
+    for i, x in enumerate(range(x_min, x_max + 1)):
+        rows = np.where(binary[:, x])[0]
+        if len(rows):
+            top[i], bottom[i] = rows[0], rows[-1]
+        else:                      # a gap inside the shape: bridge it
+            top[i], bottom[i] = np.nan, np.nan
+
+    for profile in (top, bottom):
+        holes = np.isnan(profile)
+        if holes.all():
+            return None
+        if holes.any():
+            profile[holes] = np.interp(np.flatnonzero(holes),
+                                       np.flatnonzero(~holes), profile[~holes])
+
+    window = max(3, int(width * smooth) | 1)
+    if window < width:
+        kernel = np.ones(window, dtype=np.float32) / window
+        pad = window // 2
+        top = np.convolve(np.pad(top, pad, mode="edge"), kernel, mode="valid")
+        bottom = np.convolve(np.pad(bottom, pad, mode="edge"), kernel, mode="valid")
+
+    if float(np.min(bottom - top)) < 2.0:
+        return None
+    return x_min, x_max, top, bottom
+
+
+def warp_to_contour(block_rgb, mask_2d, out_shape, cylinder: float = 0.0):
+    """Fit a rendered text block between the mask's own top and bottom edges.
+
+    Column by column rather than corner to corner, so the baseline bows with a
+    curved label and drifts with a ragged one. ``cylinder`` (0..1) additionally
+    compresses the horizontal sampling towards the sides, the way lettering
+    wrapped around a bottle foreshortens away from the viewer.
+
+    Returns ``(rgb float32 [H, W, 3] 0..1, alpha float32 [H, W])``.
+    """
+    out_h, out_w = int(out_shape[0]), int(out_shape[1])
+    empty = (np.zeros((out_h, out_w, 3), np.float32), np.zeros((out_h, out_w), np.float32))
+
+    profiles = edge_profiles(mask_2d)
+    if profiles is None or block_rgb is None or block_rgb.size == 0:
+        return empty
+    x_min, x_max, top, bottom = profiles
+
+    block = block_rgb.astype(np.float32)
+    if block.max() > 1.0:
+        block = block / 255.0
+    bh, bw = block.shape[:2]
+
+    xs = np.arange(x_min, x_max + 1)
+    u = (xs - x_min) / max(1.0, float(x_max - x_min))
+    if cylinder > 0:
+        # arcsin re-spacing: even steps around a cylinder project to steps that
+        # crowd together at the silhouette edges.
+        centred = np.clip(2.0 * u - 1.0, -1.0, 1.0)
+        wrapped = np.arcsin(centred) / (np.pi / 2.0) * 0.5 + 0.5
+        u = (1.0 - cylinder) * u + cylinder * wrapped
+
+    map_x = np.full((out_h, out_w), -1.0, dtype=np.float32)
+    map_y = np.full((out_h, out_w), -1.0, dtype=np.float32)
+
+    rows = np.arange(out_h, dtype=np.float32)
+    for i, x in enumerate(xs):
+        if x < 0 or x >= out_w:
+            continue
+        y0, y1 = float(top[i]), float(bottom[i])
+        span = y1 - y0
+        if span < 1.0:
+            continue
+        v = (rows - y0) / span
+        inside = (v >= 0.0) & (v <= 1.0)
+        map_x[inside, x] = u[i] * (bw - 1)
+        map_y[inside, x] = v[inside] * (bh - 1)
+
+    covered = map_x >= 0
+    warped = cv2.remap(block, np.where(covered, map_x, 0).astype(np.float32),
+                       np.where(covered, map_y, 0).astype(np.float32),
+                       interpolation=cv2.INTER_LINEAR,
+                       borderMode=cv2.BORDER_REPLICATE)
+    alpha = covered.astype(np.float32)
+    return warped * alpha[..., None], alpha
+
+
 def _corner_quad(binary):
     """The mask's own four corners, or None if it is not convincingly a quad.
 
@@ -757,8 +873,35 @@ def warp_to_quad(block_rgb, quad, out_shape) -> tuple:
     return warped, alpha
 
 
+def quad_fit_error(mask_2d, quad) -> float:
+    """Fraction of the mask's area that the fitted quad claims but does not cover.
+
+    A flat sign scores near zero. A label round a bottle or a torn poster scores
+    high, because a four-corner plane cannot follow a curved or wandering edge.
+    """
+    arr = _to_numpy_2d(mask_2d)
+    if arr is None or quad is None:
+        return 0.0
+    scale = 255.0 if float(arr.max()) <= 1.0 else 1.0
+    binary = (np.clip(arr, 0.0, None) * scale > 127.0)
+    area = float(binary.sum())
+    if area <= 0:
+        return 0.0
+    filled = np.zeros(binary.shape, np.uint8)
+    cv2.fillPoly(filled, [quad.astype(np.int32)], 1)
+    outside = float(((filled > 0) & ~binary).sum())
+    return outside / area
+
+
+# Above this mismatch a four-corner warp is the wrong tool and the column-wise
+# fit takes over. Measured: a flat sign scores ~0.02, a bowed bottle label 0.34,
+# a torn poster 0.23.
+CONTOUR_FIT_THRESHOLD = 0.12
+
+
 def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=None,
-                       uppercase=False, margin_ratio=0.08) -> tuple:
+                       uppercase=False, margin_ratio=0.08, fit: str = "auto",
+                       cylinder: float = 0.0) -> tuple:
     """Render replacement text onto the sign described by a mask, end to end.
 
     mask -> quad -> correctly sized text block -> perspective warp.
@@ -795,7 +938,22 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
         font_path=font_path, fill=fill, bg=plate,
         margin_ratio=margin_ratio, uppercase=uppercase,
     )
-    rgb, alpha = warp_to_quad(block, quad, (out_h, out_w))
+
+    # A four-corner warp describes a flat plane. When the outline is curved or
+    # ragged it cannot follow it, and clipping to the mask would just chop the
+    # text off at the edges instead of bending it. Fall through to the
+    # column-wise fit in that case.
+    mode = fit
+    if mode == "auto":
+        mode = "contour" if quad_fit_error(arr, quad) > CONTOUR_FIT_THRESHOLD else "perspective"
+
+    rgb = alpha = None
+    if mode == "contour":
+        rgb, alpha = warp_to_contour(block, arr, (out_h, out_w), cylinder=cylinder)
+        if float(alpha.max()) <= 0.0:      # profiles unusable — fall back
+            rgb = alpha = None
+    if rgb is None:
+        rgb, alpha = warp_to_quad(block, quad, (out_h, out_w))
 
     # Clip to the mask itself, not just its bounding quad. SAM3 returns real
     # silhouettes — a round sign, a curved bottle label, a torn poster — and the

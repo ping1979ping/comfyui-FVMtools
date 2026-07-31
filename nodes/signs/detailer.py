@@ -147,6 +147,21 @@ class SignDetailer:
                                "lettering clearly readable underneath, and the sampler then has\n"
                                "it in the init latent. Lower this only to deliberately carry over\n"
                                "the old surface shading."}),
+                "glyph_fit": (["auto", "perspective", "contour"], {"default": "auto",
+                    "tooltip": "How the typeset text is fitted onto the region.\n"
+                               "auto: measures how badly a four-corner fit misses the outline\n"
+                               "  and switches to the column-wise fit when it does\n"
+                               "perspective: four corners — correct for flat signs, gives the\n"
+                               "  text a vanishing line when the sign is angled away\n"
+                               "contour: follows the mask's top and bottom edge column by\n"
+                               "  column — for curved labels, folded fabric, torn paper.\n"
+                               "  A flat plane cannot describe those, so the text would\n"
+                               "  otherwise sit dead straight on a bowed surface."}),
+                "glyph_cylinder": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 1.0, "step": 0.05,
+                    "tooltip": "Extra horizontal compression towards the sides, the way lettering\n"
+                               "wrapped around a bottle or can foreshortens away from the viewer.\n"
+                               "Only applies to the contour fit. Try 0.4-0.6 for bottle labels,\n"
+                               "0 for anything flat."}),
                 "glyph_autocolor": ("BOOLEAN", {"default": True,
                     "tooltip": "Sample ink and plate colour from the original sign so the replacement keeps its scheme."}),
                 "glyph_plate_color": ("STRING", {"default": "",
@@ -228,7 +243,8 @@ class SignDetailer:
 
     def _apply_glyph(self, image_hwc, region, text, font_choice, strength,
                      autocolor, uppercase, margin_ratio,
-                     ink_override=None, plate_override=None):
+                     ink_override=None, plate_override=None,
+                     fit="auto", cylinder=0.0):
         """Composite typeset text onto the image inside the region mask.
 
         Returns (new_image, glyph_rgb_preview) or (image, None) when nothing was drawn.
@@ -257,6 +273,7 @@ class SignDetailer:
             glyph_rgb, alpha = render_glyph_layer(
                 text=text, mask_2d=mask_np, font_path=font_path,
                 fill=ink, bg=plate, uppercase=uppercase, margin_ratio=margin_ratio,
+                fit=fit, cylinder=cylinder,
             )
         except Exception as exc:
             print(f"[SignDetailer] glyph rendering failed for #{region['index'] + 1}: {exc}")
@@ -273,7 +290,8 @@ class SignDetailer:
     def execute(self, images, sign_data, model, clip, vae, seed, steps, denoise,
                 sampler_name, scheduler, target_width, target_height, max_upscale,
                 glyph_guidance="init", glyph_font="<auto>", glyph_denoise=0.55,
-                glyph_strength=1.0, glyph_autocolor=True,
+                glyph_strength=1.0, glyph_fit="auto", glyph_cylinder=0.0,
+                glyph_autocolor=True,
                 glyph_plate_color="", glyph_ink_color="", too_small_policy="soften",
                 cluster_mode="shared_seed", verify_after="off", verify_similarity=0.60,
                 max_attempts=2, mask_expand_pixels=4, mask_blend_pixels=16,
@@ -392,7 +410,8 @@ class SignDetailer:
                         work_image, glyph_rgb = self._apply_glyph(
                             current, region, text, glyph_font, eff_strength,
                             glyph_autocolor, opts["uppercase"], opts["margin_ratio"],
-                            ink_override=ink_override, plate_override=plate_override)
+                            ink_override=ink_override, plate_override=plate_override,
+                            fit=glyph_fit, cylinder=glyph_cylinder)
                         if glyph_rgb is not None and attempt == 0:
                             glyph_previews.append(torch.from_numpy(
                                 np.clip(glyph_rgb, 0, 1).astype(np.float32)))
