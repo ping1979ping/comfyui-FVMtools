@@ -119,6 +119,12 @@ BORDER_RIM_SHARE = 0.18
 # while the frame is still excluded by its rim share (0.0% frame pixels hit).
 DEFAULT_INK_TOLERANCE = 28
 
+# The working threshold is this share of the region's own ink-to-plate contrast,
+# with the constant above acting as a ceiling and the floor below stopping a
+# flat region from marking its own noise as lettering.
+INK_TOLERANCE_RATIO = 0.22
+INK_TOLERANCE_FLOOR = 10.0
+
 # ──── Colour recovery ────
 
 LUMA_WEIGHTS = (0.299, 0.587, 0.114)
@@ -925,6 +931,19 @@ def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_IN
         return None
 
     distance = np.abs(rgb - np.asarray(plate_rgb, np.float32)).max(axis=2)
+
+    # Scale the threshold to the region's own contrast. A fixed cut-off is wrong
+    # in both directions: on a washed-out surface it finds nothing, and after a
+    # few re-renders — when the plate has drifted darker — the faint remains of
+    # earlier lettering fall under it and re-emerge in the next pass. Seen in an
+    # A/B/A chain: the text from pass A was merely covered by pass B, then showed
+    # through again in pass C.
+    within = distance[inside > 0]
+    if within.size:
+        span = float(np.percentile(within, 98))
+        tolerance = float(np.clip(span * INK_TOLERANCE_RATIO, INK_TOLERANCE_FLOOR,
+                                  float(tolerance)))
+
     ink = ((distance > tolerance) & (inside > 0)).astype(np.uint8)
     if ink.sum() == 0:
         return np.zeros(arr.shape[:2], np.float32)
