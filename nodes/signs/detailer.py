@@ -40,6 +40,27 @@ SOFTEN_PROMPT = ("out-of-focus printed text, too distant to read, soft blurred l
 # Text-weak model families: warned about once per run.
 _TEXT_WEAK_HINTS = ("z-image", "zimage", "lumina", "sd15", "sd_15", "sdxl")
 
+# Defaults verified by live renders on Krea 2 Turbo (krea2_turbo_fp8 +
+# qwen3vl_4b_fp8_scaled + qwen_image_vae): 8 steps, cfg 1, er_sde / simple.
+# Resolved against the running ComfyUI so a build without er_sde still loads.
+def _pick(name, options, fallback=0):
+    """Prefer `name`, fall back to the first option, never raise.
+
+    Runs at import time, so it has to survive a ComfyUI build without this
+    sampler — and a stubbed comfy.samplers under pytest.
+    """
+    try:
+        if name in options:
+            return name
+        chosen = options[fallback]
+        return chosen if isinstance(chosen, str) else name
+    except (TypeError, IndexError, KeyError):
+        return name
+
+
+SAMPLER_DEFAULT = _pick("er_sde", comfy.samplers.SAMPLER_NAMES)
+SCHEDULER_DEFAULT = _pick("simple", comfy.samplers.SCHEDULER_NAMES)
+
 # Above this the sampler stops treating the typeset layer as a template.
 # Measured on Krea 2 Turbo (8 steps, cfg 1, er_sde/simple): 0.55 gives sharp text
 # with real material, 0.65 adds a ghost copy of the word behind the real one,
@@ -88,12 +109,17 @@ class SignDetailer:
                 "vae": ("VAE",),
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
                 "steps": ("INT", {"default": 8, "min": 1, "max": 100,
-                    "tooltip": "Text needs more steps than faces — 8-20 depending on the model."}),
+                    "tooltip": "8 is the verified value for Krea 2 Turbo, which is distilled —\n"
+                               "more steps over-cook it. Non-distilled models (Krea 2 Raw,\n"
+                               "Qwen-Image) want 15-25."}),
                 "denoise": ("FLOAT", {"default": 0.85, "min": 0.0, "max": 1.0, "step": 0.01,
                     "tooltip": "Used when glyph guidance is off. High on purpose: the old garbled\n"
                                "strokes survive anything below ~0.7."}),
-                "sampler_name": (comfy.samplers.SAMPLER_NAMES,),
-                "scheduler": (comfy.samplers.SCHEDULER_NAMES,),
+                "sampler_name": (comfy.samplers.SAMPLER_NAMES, {"default": SAMPLER_DEFAULT,
+                    "tooltip": "er_sde is the verified pairing for Krea 2. Without an explicit\n"
+                               "default ComfyUI would pick euler, which is not what these\n"
+                               "settings were measured against."}),
+                "scheduler": (comfy.samplers.SCHEDULER_NAMES, {"default": SCHEDULER_DEFAULT}),
                 "target_width": ("INT", {"default": 1024, "min": 64, "max": 4096, "step": 8}),
                 "target_height": ("INT", {"default": 1024, "min": 64, "max": 4096, "step": 8}),
                 "max_upscale": ("FLOAT", {"default": 8.0, "min": 1.0, "max": 32.0, "step": 0.5,

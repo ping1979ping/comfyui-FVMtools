@@ -337,7 +337,62 @@ def _order_quad(points: np.ndarray) -> np.ndarray:
     return np.roll(clockwise, -start, axis=0).astype(np.float32)
 
 
-def mask_quad(mask_2d, square_tolerance: float = SQUARE_TOLERANCE) -> np.ndarray:
+def _corner_quad(binary):
+    """The mask's own four corners, or None if it is not convincingly a quad.
+
+    ``minAreaRect`` always returns a rectangle, so a sign angled away from the
+    camera comes back with both vertical edges the same length — the text then
+    sits perfectly parallel and reads as a sticker pasted on top. Recovering the
+    real corners lets the perspective warp reproduce the foreshortening.
+    """
+    contours, _ = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    if not contours:
+        return None
+    contour = max(contours, key=cv2.contourArea)
+    area = cv2.contourArea(contour)
+    if area < 16:
+        return None
+
+    hull = cv2.convexHull(contour)
+    perimeter = cv2.arcLength(hull, True)
+    if perimeter <= 0:
+        return None
+
+    # Walk epsilon up until the hull collapses to four corners.
+    for step in range(1, 41):
+        approx = cv2.approxPolyDP(hull, perimeter * 0.005 * step, True)
+        if len(approx) == 4:
+            quad = approx.reshape(4, 2).astype(np.float32)
+            # Reject a fit that lost a meaningful part of the shape — a torn or
+            # rounded outline is better served by the bounding rectangle.
+            if cv2.contourArea(quad) >= area * 0.90:
+                return quad
+            return None
+        if len(approx) < 4:
+            return None
+    return None
+
+
+def _is_meaningfully_skewed(quad, tolerance: float = 0.06) -> bool:
+    """Do the opposite edges differ enough to be worth a perspective warp?
+
+    Below the tolerance the quad is a rectangle in all but rounding, and using it
+    would only add jitter to text that should sit straight.
+    """
+    def length(a, b):
+        return float(np.hypot(*(quad[a] - quad[b])))
+
+    top, bottom = length(0, 1), length(3, 2)
+    left, right = length(0, 3), length(1, 2)
+    for near, far in ((top, bottom), (left, right)):
+        longest = max(near, far)
+        if longest > 0 and abs(near - far) / longest > tolerance:
+            return True
+    return False
+
+
+def mask_quad(mask_2d, square_tolerance: float = SQUARE_TOLERANCE,
+              perspective: bool = True) -> np.ndarray:
     """Fit the tightest rotated rectangle around a mask and return its 4 corners.
 
     Args:
@@ -365,6 +420,15 @@ def mask_quad(mask_2d, square_tolerance: float = SQUARE_TOLERANCE) -> np.ndarray
     points = cv2.findNonZero(binary)
     if points is None or len(points) < 3:
         return None
+
+    # A genuinely skewed outline beats any fitted rectangle: it is what gives the
+    # rendered text its vanishing line instead of leaving it flat and parallel.
+    if perspective:
+        corners = _corner_quad(binary)
+        if corners is not None:
+            ordered = _order_quad(corners)
+            if _is_meaningfully_skewed(ordered):
+                return ordered
 
     rect = cv2.minAreaRect(points)
     (rect_w, rect_h) = rect[1]

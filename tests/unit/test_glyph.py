@@ -723,3 +723,74 @@ class TestMaskShapeIsRespected:
         edge = alpha[(m > 20) & (m < 200)]
         if edge.size:
             assert float(edge.max()) < 1.0, "soft mask edge was clamped to full opacity"
+
+
+class TestPerspectiveIsPreserved:
+    """minAreaRect always returns a rectangle, so a sign angled away from the
+    camera got text with both edges the same height — flat, parallel, and reading
+    as a sticker pasted on top. Measured on a 33% foreshortened sign: the fitted
+    box claimed 0% foreshortening and 20% too much area.
+    """
+
+    @staticmethod
+    def _mask(pts, h=300, w=620):
+        m = np.zeros((h, w), np.float32)
+        cv2.fillPoly(m, [np.asarray(pts, np.int32)], 1.0)
+        return m
+
+    ANGLED = [[60, 60], [540, 120], [540, 240], [60, 240]]
+    FLAT = [[60, 80], [540, 80], [540, 215], [60, 215]]
+
+    def test_recovers_the_real_corners_of_an_angled_sign(self):
+        quad = mask_quad(self._mask(self.ANGLED))
+        expected = np.array(self.ANGLED, dtype=np.float32)
+        for corner in expected:
+            assert min(np.hypot(*(q - corner)) for q in quad) < 6.0, \
+                f"corner {corner} not recovered"
+
+    def test_angled_sign_keeps_its_foreshortening(self):
+        quad = mask_quad(self._mask(self.ANGLED))
+        left = np.hypot(*(quad[0] - quad[3]))
+        right = np.hypot(*(quad[1] - quad[2]))
+        assert abs(left - right) / max(left, right) > 0.2, \
+            "the two vertical edges must stay different lengths"
+
+    def test_perspective_off_returns_the_old_rectangle(self):
+        quad = mask_quad(self._mask(self.ANGLED), perspective=False)
+        left = np.hypot(*(quad[0] - quad[3]))
+        right = np.hypot(*(quad[1] - quad[2]))
+        assert abs(left - right) < 2.0
+
+    def test_a_flat_sign_is_not_given_a_fake_skew(self):
+        """Below the tolerance the quad is a rectangle in all but rounding —
+        using it would only add jitter to text that should sit straight."""
+        quad = mask_quad(self._mask(self.FLAT))
+        left = np.hypot(*(quad[0] - quad[3]))
+        right = np.hypot(*(quad[1] - quad[2]))
+        assert abs(left - right) < 2.0
+
+    def test_area_matches_the_real_outline(self):
+        quad = mask_quad(self._mask(self.ANGLED))
+        real_area = cv2.contourArea(np.array(self.ANGLED, np.float32))
+        assert cv2.contourArea(quad) == pytest.approx(real_area, rel=0.05)
+
+    def test_circle_still_gets_a_straight_box(self):
+        """The perspective path must not undo the degenerate-angle fix."""
+        m = np.zeros((260, 420), np.float32)
+        cv2.circle(m, (210, 130), 100, 1.0, -1)
+        assert abs(quad_angle(mask_quad(m))) < 6.0
+
+    def test_irregular_outline_falls_back_to_the_rectangle(self):
+        """A torn poster is not a quad; forcing four corners would clip it."""
+        m = np.zeros((300, 620), np.float32)
+        pts = np.array([[60, 60], [300, 40], [540, 90], [520, 240],
+                        [280, 210], [70, 250]], np.int32)
+        cv2.fillPoly(m, [pts], 1.0)
+        quad = mask_quad(m)
+        assert quad is not None and len(quad) == 4
+
+    def test_glyph_layer_still_clips_to_an_angled_mask(self):
+        mask = self._mask(self.ANGLED)
+        _, alpha = render_glyph_layer("WEINHANDEL", mask)
+        assert float((alpha * (mask < 0.5)).max()) == 0.0
+        assert float(alpha[mask > 0.5].max()) > 0.9

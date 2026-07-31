@@ -152,6 +152,15 @@ verkorkste Schrift klar lesbar unter der neuen stehen — und landet damit im
 Init-Latent, also genau der Slop, den wir loswerden wollen. Nur senken, wenn du die
 alte Oberflächenschattierung bewusst mitnehmen willst.
 
+**Der Text bekommt eine Fluchtlinie.** Die vier Ecken werden aus der Maskenkontur
+selbst gewonnen, nicht aus `minAreaRect` — das liefert immer ein Rechteck, und
+damit stünde der Text auf einem schräg wegstehenden Schild waagerecht mit
+gleichbleibender Buchstabenhöhe. Lesbar, aber wie ein aufgeklebter Sticker. An
+einem um 33 % verjüngten Schild gemessen: das gefittete Rechteck behauptete 0 %
+Verjüngung und 20 % zu viel Fläche. Ist die Maske erkennbar rechteckig (unter 6 %
+Kantenunterschied), bleibt alles gerade — es wird keine Verzerrung erfunden, wo
+keine ist. Abschaltbar über `perspective=False` in `mask_quad`.
+
 Die Glyph-Ebene folgt der **SAM3-Silhouette**, nicht ihrem Begrenzungsrechteck. Bei
 runden Schildern, gewölbten Flaschenetiketten oder eingerissenen Plakaten würde ein
 Rechteck 20–27 % über die Objektfläche hinausragen — und der Sampler bekäme ein
