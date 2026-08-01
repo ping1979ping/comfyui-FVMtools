@@ -17,8 +17,21 @@ SIGN_DEFAULTS = {
     "mask_fill_holes": True,
     "denoise_progression": "",
     "steps_progression": "",
+    # Two jobs. The first half bans fake letterforms. The second half bans EXTRA
+    # writing, and it is there because of what the surface replacement leaves
+    # behind: once the old lettering is cleared, a sheet of paper is mostly
+    # blank, and a model asked for a noticeboard note fills the space back up
+    # with plausible-looking writing. That filler is gibberish again, only it is
+    # the tool's own.
+    # The second half has to name the FILLER without naming text as such. An
+    # earlier version listed "additional text, extra words, second line of
+    # text", and the model duly dropped the first and last letter of the word it
+    # had been asked for: "BAECKEREI" came back "AECKERE" from an init that
+    # carried it in full.
     "negative_prompt": "gibberish, garbled letters, misspelled words, random symbols, "
-                       "warped typography, double exposure text, watermark",
+                       "warped typography, double exposure text, watermark, "
+                       "paragraph of body text, filler writing, "
+                       "handwritten notes in the margin, columns of small print",
     "class_denoise": {},
     "class_skip": set(),
     "uppercase": False,

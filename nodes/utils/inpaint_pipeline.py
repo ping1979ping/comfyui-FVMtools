@@ -390,6 +390,11 @@ def inpaint_slot(
         _, cropped_mask, _ = crop_and_resize(
             image, noise_mask_2d.to(processed_mask.dtype), crop, target_width, target_height
         )
+    # Feathered either way. Handing the sampler a hard-edged noise mask was
+    # measured to be worse than the blur it avoids: at latent resolution the
+    # step becomes an edge the model renders as one, and a navy sign came back
+    # with the word half missing. The strong zone is widened to clear the ramp
+    # instead (see HOT_ZONE_MARGIN).
     if mask_blend_pixels > 0:
         cropped_mask = feather_mask(cropped_mask, mask_blend_pixels)
 

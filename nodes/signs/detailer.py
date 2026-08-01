@@ -81,7 +81,25 @@ AUTO_RESOLUTION_MAX_ASPECT = 4.0
 # the lettering height. Enough that letters get their own shading and edges,
 # little enough that swept-clean surface stays out of reach — handed an empty
 # sheet at full denoise the model writes its own notes on it.
-HOT_ZONE_MARGIN = 0.5
+#
+# At 0.5 the first and last letter of a word were pulled back towards the
+# cleared plate — "BAECKEREI" came back as "AECKERE" from an init that carried
+# it in full. The cause was the pipeline blurring this mask a second time;
+# widening the margin to 1.2 hid it but handed the model so much surface that
+# it repainted a navy plate white. The blur is gone now, so the margin only has
+# to give the letters room to gain an edge.
+#
+# Measured on the navy sign, three passes each: 0.5 loses the first and last
+# letter, 0.6 with the blur removed loses them and adds ghosting, 1.2 keeps the
+# word whole. The cost of 1.2 is that more surface is re-rendered with the
+# lettering, so a plate can shift in tone across repeated passes.
+HOT_ZONE_MARGIN = 1.2
+
+# How much of a region may already have been rewritten by an earlier one before
+# it is left alone. Overlapping detections on one surface otherwise each write
+# their own word into the same place, and the result reads as one scrambled
+# string — measured on a single sign that the selector returned three times.
+OVERLAP_SKIP_SHARE = 0.55
 
 
 def _fuzzy_match(a, b):
@@ -347,10 +365,14 @@ class SignDetailer:
         else:
             font_path = resolve_font(font_hint or get_class(region["class"])["vlm_instruction"])
 
+        # One detection, used for all of it: the colours, the size and the band.
+        # Recomputing it per question turned a 24-second pass into 460.
+        rgb_u8 = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
+        ink_mask = existing_ink_mask(rgb_u8, mask_np, (128, 128, 128))
+
         ink, plate = ((255, 255, 255), (0, 0, 0))
         if autocolor:
-            rgb_u8 = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
-            ink, plate = estimate_text_colors(rgb_u8, mask_np)
+            ink, plate = estimate_text_colors(rgb_u8, mask_np, ink_mask=ink_mask)
         # Explicit colours win over the estimate — this is how you ask for a
         # surface the picture does not contain yet (a yellow post-it, say).
         if ink_override is not None:
@@ -362,8 +384,7 @@ class SignDetailer:
         # label into a poster and pushes long words past the edge.
         line_height = None
         if match_source_size:
-            rgb_probe = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
-            line_height = measure_ink_height(rgb_probe, mask_np, plate)
+            line_height = measure_ink_height(rgb_u8, mask_np, plate, ink_mask=ink_mask)
 
         try:
             glyph_rgb, alpha = render_glyph_layer(
@@ -378,10 +399,9 @@ class SignDetailer:
         device = image_hwc.device if isinstance(image_hwc, torch.Tensor) else "cpu"
         band = None
         if preserve_surface:
-            rgb_u8 = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
             coverage = glyph_ink_coverage(glyph_rgb, alpha, plate, ink)
             band = text_band(mask_np,
-                             old_ink=existing_ink_mask(rgb_u8, mask_np, plate),
+                             old_ink=ink_mask,
                              new_ink=None if coverage is None else (coverage > 0.15),
                              line_height=line_height)
             if band is not None and coverage is not None and float(coverage.max()) > 0.0:
@@ -513,9 +533,25 @@ class SignDetailer:
                 continue
             current = result[b]
 
+            # Two regions on the same surface would each write their own word
+            # into the same place, and the result reads as one scrambled string.
+            # Whatever the selector was asked for, a surface is only rewritten
+            # once here.
+            painted = np.zeros(images.shape[1:3], np.float32)
+
             for region in batch_regions:
                 idx = region.get("index", 0)
                 cls_name = region.get("class", "sign")
+
+                region_np = np.asarray(region["mask"], np.float32)
+                own = float((region_np > 0.5).sum())
+                if own > 0:
+                    taken = float(((region_np > 0.5) & (painted > 0.5)).sum()) / own
+                    if taken > OVERLAP_SKIP_SHARE:
+                        report.append(f"  #{idx + 1} {cls_name}: skipped — {taken * 100:.0f}% of it "
+                                      f"was already rewritten by an earlier region")
+                        skipped += 1
+                        continue
                 proposal = region.get("proposal") or {}
                 text = (proposal.get("text") or "").strip()
 
@@ -643,6 +679,7 @@ class SignDetailer:
 
                 current = stitched
                 if refined is not None:
+                    painted = np.maximum(painted, (region_np > 0.5).astype(np.float32))
                     refined_crops.append(refined)
                     if soften:
                         softened += 1

@@ -119,6 +119,36 @@ BORDER_RIM_SHARE = 0.18
 # while the frame is still excluded by its rim share (0.0% frame pixels hit).
 DEFAULT_INK_TOLERANCE = 28
 
+# Size of the neighbourhood the lettering is measured against, as a multiple of
+# the lettering height. It has to be wider than a stroke so the stroke cannot
+# survive the smoothing, and narrower than the shading so the shading does.
+INK_BACKGROUND_SCALE = 1.6
+# Floor under the ink threshold, as a share of the nominal tolerance, so a blank
+# surface does not turn its own grain into lettering.
+INK_RESPONSE_FLOOR = 0.55
+# Pixels this far in from the region outline are ignored when the threshold is
+# chosen. The outline is a step edge against whatever lies beyond it and answers
+# far more strongly than any stroke.
+INK_RIM_IGNORE = 3
+# Sauvola's sensitivity. Higher keeps less; 0.2 is the value from the paper and
+# behaves well on photographed paper.
+SAUVOLA_K = 0.2
+# How far the second polarity must sit from the surface, relative to the first,
+# before both count as lettering.
+INK_SECOND_POLARITY_SHARE = 0.45
+# Text is a minority of any surface it sits on.
+INK_MAX_COVERAGE = 0.55
+
+# How much of the typeset lettering may fall outside the region's silhouette
+# before the text is pulled in and set again, and how far in each step.
+GLYPH_CLIP_TOLERANCE = 0.02
+GLYPH_MARGIN_STEP = 0.06
+GLYPH_FIT_ATTEMPTS = 5
+# Thickest a stroke may be, as a share of the lettering height, and how much of
+# a shape may exceed it before the shape counts as a blob rather than writing.
+INK_MAX_THICKNESS = 0.35
+INK_FAT_SHARE = 0.30
+
 # ──── Text band ────
 #
 # Covering stroke by stroke is what leaves ghosts: whatever the ink detector
@@ -127,8 +157,17 @@ DEFAULT_INK_TOLERANCE = 28
 # occupies cannot miss anything, because it does not have to find every stroke.
 
 # How far the band is held back from the region's outline, as a share of the
-# region's short side. A frame or rim lives here; lettering does not.
-BAND_RIM_MARGIN = 0.05
+# region's short side.
+#
+# Zero, and deliberately so. The idea was to protect a frame or rim, but
+# existing_ink_mask already drops those by their share of the rim, so the
+# erosion only removed real text — handwriting runs right up to the edge of a
+# sheet of paper. Measured over five regions of a noticeboard, the ink the band
+# covered against the margin used:
+#     0.05  59 / 94 / 78 / 54 / 67 %
+#     0.00  96 / 96 / 97 / 88 / 67 %
+# and the frame of a bordered plate was hit in neither case (0 px).
+BAND_RIM_MARGIN = 0.0
 # Gaps the band bridges, relative to the height of the lettering. Wide enough to
 # close the spaces inside a word, narrow enough to leave separate blocks apart.
 BAND_CLOSE_X = 0.85
@@ -922,8 +961,204 @@ def warp_to_quad(block_rgb, quad, out_shape) -> tuple:
     return warped, alpha
 
 
+def _sauvola_text(gray, window, k=SAUVOLA_K, dynamic_range=128.0) -> np.ndarray:
+    """Sauvola's local threshold — the standard answer to text on uneven paper.
+
+    A plain local mean marks half of every blank area as text, because with no
+    writing nearby the mean sits in the middle of the noise. Sauvola scales the
+    threshold by the local STANDARD DEVIATION as well, so a smooth patch pulls
+    its own threshold away from the surface and stays empty, while a patch that
+    actually contains strokes keeps it close to the mean and picks them up.
+
+    Returns a bool array: True where the pixel is darker than its neighbourhood
+    warrants.
+    """
+    win = max(3, int(window) | 1)
+    g = gray.astype(np.float32)
+    mean = cv2.boxFilter(g, cv2.CV_32F, (win, win), normalize=True,
+                         borderType=cv2.BORDER_REPLICATE)
+    mean_sq = cv2.boxFilter(g * g, cv2.CV_32F, (win, win), normalize=True,
+                            borderType=cv2.BORDER_REPLICATE)
+    std = np.sqrt(np.maximum(mean_sq - mean * mean, 0.0))
+    threshold = mean * (1.0 + k * (std / dynamic_range - 1.0))
+    return g < threshold
+
+
+def local_ink_response(image_rgb, mask_2d, line_height=None) -> np.ndarray:
+    """How strongly each pixel stands out against the surface immediately around it.
+
+    A single plate colour cannot describe a real surface. On a photographed sheet
+    of paper the lighting alone runs from 84 to 202 in luminance, so a global
+    two-colour split separates the bright half of the paper from the shaded half
+    and calls the shaded half ink — measured on a noticeboard, that put the whole
+    replacement band on the wrong side of the sheet while the handwriting was
+    never touched.
+
+    Lettering is instead what a surface cannot smooth away: closing the image
+    removes dark strokes and opening removes light ones, so the difference from
+    each is the writing, whichever way round it runs. Gradients survive both
+    operations and drop out.
+
+    Returns a float32 [H, W] response in 0..255, zero outside the mask.
+    """
+    arr = _to_numpy_2d(mask_2d)
+    if arr is None or image_rgb is None:
+        return None
+    rgb = _to_float_rgb(image_rgb) * 255.0
+    if rgb.shape[:2] != arr.shape[:2]:
+        arr = cv2.resize(arr, (rgb.shape[1], rgb.shape[0]), interpolation=cv2.INTER_NEAREST)
+    scale = 255.0 if float(arr.max()) <= 1.0 else 1.0
+    inside = ((np.clip(arr, 0.0, None) * scale) > 127.0)
+    if inside.sum() == 0:
+        return None
+
+    gray = (rgb * np.asarray(LUMA_WEIGHTS, np.float32)).sum(axis=2).astype(np.float32)
+    # Fill the surface outside the region with its own border value, so a dark
+    # background beyond the edge cannot masquerade as a stroke inside it.
+    filled = gray.copy()
+    if (~inside).any():
+        filled[~inside] = float(np.median(gray[inside]))
+
+    ys, xs = np.where(inside)
+    short_side = float(min(ys.max() - ys.min() + 1, xs.max() - xs.min() + 1))
+    height = float(line_height) if line_height else short_side * BAND_FALLBACK_HEIGHT
+    # Wide enough to bridge a stroke, small enough to follow the shading.
+    k = int(np.clip(round(max(3.0, height * INK_BACKGROUND_SCALE)), 3, 151)) | 1
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
+
+    dark = cv2.morphologyEx(filled, cv2.MORPH_CLOSE, kernel) - filled
+    light = filled - cv2.morphologyEx(filled, cv2.MORPH_OPEN, kernel)
+    response = np.maximum(dark, light)
+    response[~inside] = 0.0
+    return np.clip(response, 0.0, 255.0).astype(np.float32)
+
+
+def _threshold_ink(image_rgb, arr, inside, line_height, tolerance):
+    """Where the lettering is: local binarisation, then the thin-stroke test."""
+    rgb = _to_float_rgb(image_rgb) * 255.0
+    if rgb.shape[:2] != inside.shape[:2]:
+        return None
+
+    # Boolean, not 0/1 integers: further down the mask indexes into the image,
+    # and an integer array would index ROWS instead of selecting pixels. That
+    # silently fed the polarity decision nonsense while a bool-typed test of the
+    # same code answered correctly.
+    inside = np.asarray(inside).astype(bool)
+
+    # Everything here is local, so only the region's own box needs looking at.
+    # Filtering the whole frame per region turned a 24-second pass into 460.
+    full_h, full_w = inside.shape[:2]
+    ys, xs = np.where(inside)
+    if ys.size == 0:
+        return None
+    pad = 8
+    y0, y1 = max(0, ys.min() - pad), min(full_h, ys.max() + 1 + pad)
+    x0, x1 = max(0, xs.min() - pad), min(full_w, xs.max() + 1 + pad)
+    view = np.s_[y0:y1, x0:x1]
+    rgb = rgb[view]
+    inside_full, inside = inside, inside[view]
+
+    gray = (rgb * np.asarray(LUMA_WEIGHTS, np.float32)).sum(axis=2).astype(np.float32)
+    # A dark background beyond the region would be read as one enormous stroke.
+    if (~inside).any():
+        gray = np.where(inside, gray, float(np.median(gray[inside]))).astype(np.float32)
+
+    ys, xs = np.where(inside)
+    short_side = float(min(ys.max() - ys.min() + 1, xs.max() - xs.min() + 1))
+    height = float(line_height) if line_height else short_side * BAND_FALLBACK_HEIGHT
+    window = max(7.0, height * INK_BACKGROUND_SCALE)
+
+    # Run it both ways round: white enamel on navy is as common as pencil on
+    # paper. Which one is the writing cannot be decided by counting pixels —
+    # on an even plate the losing pass finds a handful of specks, and a handful
+    # is fewer than a word, so the specks win and the replacement text is set in
+    # the colour of a speck. Measured on a navy sign: the lettering came back
+    # black on the second pass and scrambled on the third.
+    #
+    # Weigh them by how hard each answer pushes instead. Lettering carries real
+    # contrast over a real number of pixels; grain carries neither.
+    response = local_ink_response(rgb, inside.astype(np.float32), line_height=height)
+    floor = float(tolerance) * INK_RESPONSE_FLOOR
+    strong = inside if response is None else (inside & (response > floor))
+
+    # Not by contrast: a stroke raises the local mean, so the surface just
+    # beside it reads as the opposite polarity and answers just as strongly.
+    # That halo is what made a navy plate come back as its own lettering.
+    # Ink is what sits FURTHEST from the surface in brightness.
+    surface_level = float(np.median(gray[inside]))
+    candidates = []
+    for polarity in (gray, 255.0 - gray):
+        found = _sauvola_text(polarity, window) & strong
+        n = int(found.sum())
+        separation = abs(float(np.median(gray[found])) - surface_level) if n >= 20 else 0.0
+        candidates.append((found, separation, n))
+    candidates.sort(key=lambda c: c[1], reverse=True)
+
+    (best, best_gap, _n), (other, other_gap, _m) = candidates
+    ink = best
+    # Both can be real at once — a sign carrying dark text on a light panel and
+    # light text on a dark one. Take both only when the second genuinely answers.
+    if best_gap > 0 and other_gap >= best_gap * INK_SECOND_POLARITY_SHARE:
+        ink = best | other
+    # Text is a minority of any surface. If a polarity claims most of the region
+    # it has locked on to the surface itself.
+    if ink.sum() > inside.sum() * INK_MAX_COVERAGE:
+        ink = other if other.sum() < best.sum() else best
+    ink = ink.astype(np.uint8)
+
+    # Lettering is thin. A crease, a fold shadow or the edge of a shaded patch
+    # answers as strongly as a pen stroke and cannot be told from one by
+    # contrast alone — but it is many times thicker than any stroke, and that
+    # separates them cleanly. Measured on a photographed sheet, this is what
+    # stopped half the page being taken for writing.
+    if line_height and ink.sum():
+        limit = max(3.0, float(line_height) * INK_MAX_THICKNESS)
+        thickness = cv2.distanceTransform(ink, cv2.DIST_L2, 3)
+        count, labels, stats, _c = cv2.connectedComponentsWithStats(ink, connectivity=8)
+        if count > 1:
+            # Judge each shape by how much of it is thick, not by whether any
+            # point is: a letter may swell at a junction without being a blob.
+            fat_px = np.bincount(labels.ravel(), weights=(thickness > limit).ravel(),
+                                 minlength=count)
+            area = stats[:, cv2.CC_STAT_AREA].astype(np.float64)
+            share = np.divide(fat_px, np.maximum(area, 1.0))
+            fat = np.nonzero(share > INK_FAT_SHARE)[0]
+            fat = fat[fat != 0]
+            if fat.size:
+                ink = (ink * ~np.isin(labels, fat)).astype(np.uint8)
+
+    out = np.zeros(inside_full.shape[:2], np.uint8)
+    out[view] = ink
+    return out
+
+
+def _component_height(ink) -> float:
+    """Typical component height of a binary ink mask, area-weighted."""
+    count, _labels, stats, _cent = cv2.connectedComponentsWithStats(
+        np.asarray(ink, np.uint8), connectivity=8)
+    heights, areas = [], []
+    for i in range(1, count):
+        h = int(stats[i, cv2.CC_STAT_HEIGHT])
+        a = int(stats[i, cv2.CC_STAT_AREA])
+        if h >= 2 and a >= 4:
+            heights.append(h)
+            areas.append(float(a))
+    if not heights:
+        return 0.0
+    order = np.argsort(heights)
+    h = np.asarray(heights)[order]
+    a = np.asarray(areas)[order]
+    if len(a) > 1:
+        total = a.sum()
+        a = np.minimum(a, np.minimum(total - a, total * MAX_COMPONENT_VOTE))
+    c = np.cumsum(a)
+    if c[-1] <= 0:
+        return 0.0
+    return float(h[min(np.searchsorted(c, c[-1] / 2.0), len(h) - 1)])
+
+
 def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_INK_TOLERANCE,
-                      drop_border_touching: bool = True) -> np.ndarray:
+                      drop_border_touching: bool = True, line_height=None) -> np.ndarray:
     """Where the CURRENT lettering sits inside a region.
 
     Painting the whole masked area with the plate colour erases everything the
@@ -950,8 +1185,18 @@ def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_IN
     if inside.sum() == 0:
         return None
 
-    distance = np.abs(rgb - np.asarray(plate_rgb, np.float32)).max(axis=2)
-    ink = ((distance > tolerance) & (inside > 0)).astype(np.uint8)
+    # The neighbourhood the lettering is measured against depends on how tall the
+    # lettering is, and that is only known once it has been found. So find it
+    # roughly first, take the size from what was found, and look again.
+    ink = _threshold_ink(image_rgb, arr, inside, line_height, tolerance)
+    if ink is None:
+        return None
+    if line_height is None:
+        measured = _component_height(ink)
+        if measured:
+            second = _threshold_ink(image_rgb, arr, inside, measured, tolerance)
+            if second is not None and second.sum() > 0:
+                ink = second
     if ink.sum() == 0:
         return np.zeros(arr.shape[:2], np.float32)
 
@@ -980,7 +1225,8 @@ def existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_IN
     return ink.astype(np.float32)
 
 
-def measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_INK_TOLERANCE):
+def measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_INK_TOLERANCE,
+                       ink_mask=None):
     """Typical stroke height of the lettering already on the surface, in pixels.
 
     Filling the box is wrong for anything but a headline sign. A wine label
@@ -990,7 +1236,8 @@ def measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_I
 
     Returns ``None`` when there is nothing measurable to go on.
     """
-    ink = existing_ink_mask(image_rgb, mask_2d, plate_rgb, tolerance=tolerance)
+    ink = ink_mask if ink_mask is not None else existing_ink_mask(
+        image_rgb, mask_2d, plate_rgb, tolerance=tolerance)
     if ink is None or ink.sum() == 0:
         return None
 
@@ -1101,28 +1348,55 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
 
     block_w, block_h = quad_size(quad)
     plate = DEFAULT_PLATE_RGB if bg is None else bg
-    block = render_text_block(
-        text, block_w, block_h,
-        font_path=font_path, fill=fill, bg=plate,
-        margin_ratio=margin_ratio, uppercase=uppercase,
-        target_line_height=target_line_height,
-    )
 
-    # A four-corner warp describes a flat plane. When the outline is curved or
-    # ragged it cannot follow it, and clipping to the mask would just chop the
-    # text off at the edges instead of bending it. Fall through to the
-    # column-wise fit in that case.
     mode = fit
     if mode == "auto":
+        # A four-corner warp describes a flat plane. When the outline is curved
+        # or ragged it cannot follow it, and clipping to the mask would just
+        # chop the text off at the edges instead of bending it.
         mode = "contour" if quad_fit_error(arr, quad) > CONTOUR_FIT_THRESHOLD else "perspective"
 
-    rgb = alpha = None
-    if mode == "contour":
-        rgb, alpha = warp_to_contour(block, arr, (out_h, out_w), cylinder=cylinder)
-        if float(alpha.max()) <= 0.0:      # profiles unusable — fall back
-            rgb = alpha = None
-    if rgb is None:
-        rgb, alpha = warp_to_quad(block, quad, (out_h, out_w))
+    inside = arr.astype(np.float32)
+    if float(inside.max()) > 1.0:
+        inside = inside / 255.0
+    inside_bool = inside > 0.5
+
+    def _lay_out(margin):
+        block = render_text_block(
+            text, block_w, block_h,
+            font_path=font_path, fill=fill, bg=plate,
+            margin_ratio=margin, uppercase=uppercase,
+            target_line_height=target_line_height,
+        )
+        rgb = alpha = None
+        if mode == "contour":
+            rgb, alpha = warp_to_contour(block, arr, (out_h, out_w), cylinder=cylinder)
+            if float(alpha.max()) <= 0.0:          # profiles unusable — fall back
+                rgb = alpha = None
+        if rgb is None:
+            rgb, alpha = warp_to_quad(block, quad, (out_h, out_w))
+        return block, rgb, alpha
+
+    # Letters must never be cut off. The quad can be wider than the silhouette it
+    # was fitted to — a note pinned at a slight angle reads as square, its
+    # rotation is discarded as meaningless, and the axis-aligned box that
+    # replaces it then reaches past the paper. Clipping the layer to the mask
+    # afterwards would take the ends off the word. So check what the warp
+    # actually lands on and pull the text in until it fits.
+    margin = margin_ratio
+    block = rgb = alpha = None
+    for _ in range(GLYPH_FIT_ATTEMPTS):
+        block, rgb, alpha = _lay_out(margin)
+        strokes = (np.abs(rgb.astype(np.float32) * 255.0
+                          - np.asarray(plate, np.float32)).max(axis=2) > DEFAULT_INK_TOLERANCE)
+        strokes &= alpha > 0.05
+        total = float(strokes.sum())
+        if total <= 0:
+            break
+        outside = float((strokes & ~inside_bool).sum()) / total
+        if outside <= GLYPH_CLIP_TOLERANCE:
+            break
+        margin = min(0.45, margin + GLYPH_MARGIN_STEP)
 
     # Clip to the mask itself, not just its bounding quad. SAM3 returns real
     # silhouettes — a round sign, a curved bottle label, a torn poster — and the
@@ -1215,11 +1489,15 @@ def text_band(mask_2d, old_ink=None, new_ink=None, line_height=None,
     # it is taken from the strokes actually present rather than from the type
     # size: a sheet carrying one heading over four lines of small print has a
     # small typical size and still needs a band that spans the heading.
-    heights = []
+    # Two different sizes are needed here. How far the band reaches to merge
+    # strokes has to follow the TALLEST lettering, or a heading falls out of a
+    # band scaled to the small print beneath it. What still counts as lettering
+    # at all has to follow the TYPICAL size, or the smallest print on the sheet
+    # is written off as grain — which on a small region cost a third of the ink.
+    type_height = height
     count, _labels, stats, _cent = cv2.connectedComponentsWithStats(seed, connectivity=8)
-    for i in range(1, count):
-        if stats[i, cv2.CC_STAT_AREA] >= 4:
-            heights.append(int(stats[i, cv2.CC_STAT_HEIGHT]))
+    heights = [int(stats[i, cv2.CC_STAT_HEIGHT]) for i in range(1, count)
+               if stats[i, cv2.CC_STAT_AREA] >= 4]
     if heights:
         height = max(height, float(np.percentile(heights, 90)))
     kx = max(1, int(round(height * BAND_CLOSE_X))) | 1
@@ -1236,7 +1514,7 @@ def text_band(mask_2d, old_ink=None, new_ink=None, line_height=None,
     # Grain, a scratch or a speck of dirt is not lettering, and giving each one
     # its own little band would erase texture the surface is supposed to keep.
     # Nothing smaller than a fraction of one letter can be text.
-    floor = max(9.0, (height * BAND_MIN_BLOCK) ** 2)
+    floor = max(9.0, (type_height * BAND_MIN_BLOCK) ** 2)
     count, labels, stats, _ = cv2.connectedComponentsWithStats(filled, connectivity=8)
     if count > 1:
         keep = [i for i in range(1, count) if stats[i, cv2.CC_STAT_AREA] >= floor]
@@ -1402,7 +1680,7 @@ def _luminance_split(luminance: np.ndarray):
     return selector
 
 
-def estimate_text_colors(image_rgb: np.ndarray, mask_2d: np.ndarray) -> tuple:
+def estimate_text_colors(image_rgb: np.ndarray, mask_2d: np.ndarray, ink_mask=None) -> tuple:
     """Recover a sign's ink and plate colours from the pixels inside its mask.
 
     Splits the masked pixels into a dark and a light cluster on luminance
@@ -1432,6 +1710,49 @@ def estimate_text_colors(image_rgb: np.ndarray, mask_2d: np.ndarray) -> tuple:
 
     scale = 255.0 if float(arr.max()) <= 1.0 else 1.0
     inside = (np.clip(arr, 0.0, None) * scale) > 127.0
+
+    # Ask the ink detector where the strokes are and read both colours straight
+    # off that answer. Splitting the masked pixels by luminance alone cannot
+    # cope with a lit surface: on a photographed sheet running from 84 to 202 it
+    # separated the bright half of the paper from the shaded half and returned
+    # two mid-greys, so the replacement lettering came out barely visible
+    # against its own plate.
+    if ink_mask is None:
+        try:
+            ink_mask = existing_ink_mask(rgb, arr, (128, 128, 128), drop_border_touching=False)
+        except Exception:
+            ink_mask = None
+    if ink_mask is not None:
+        strokes = (ink_mask > 0.5) & inside
+        surface = inside & ~cv2.dilate(strokes.astype(np.uint8),
+                                       np.ones((5, 5), np.uint8), iterations=1).astype(bool)
+        if strokes.sum() >= 24 and surface.sum() >= 24:
+            # The detector may report both polarities at once, which is right for
+            # deciding what to erase and wrong for deciding what colour to write
+            # in: averaging dark writing together with light highlights lands the
+            # replacement text on the plate's own colour. Keep the side that
+            # actually carries the lettering — furthest from the surface, and
+            # with enough pixels to mean it.
+            luma = (rgb * np.asarray(LUMA_WEIGHTS, np.float32)).sum(axis=2)
+            # Against the LOCAL surface, not one level for the whole region: a
+            # photographed sheet runs from 84 to 202 in luminance, so a single
+            # level puts the lit half of the paper on the "lighter than the
+            # surface" side and the writing loses the vote to it.
+            span = max(9, int(round(float(np.sqrt(inside.sum())) * 0.08)) | 1)
+            local = cv2.medianBlur(np.clip(luma, 0, 255).astype(np.uint8), min(span, 99))
+            local = local.astype(np.float32)
+            sides = []
+            for side in (strokes & (luma < local), strokes & (luma >= local)):
+                n = int(side.sum())
+                gap = float(np.abs(luma[side] - local[side]).mean()) if n >= 12 else 0.0
+                sides.append((gap * np.sqrt(n), side, n))
+            sides.sort(key=lambda s: s[0], reverse=True)
+            chosen = sides[0][1] if sides[0][2] >= 12 else strokes
+
+            ink = tuple(int(round(v)) for v in np.median(rgb[chosen], axis=0))
+            plate = tuple(int(round(v)) for v in np.median(rgb[surface], axis=0))
+            return ink, plate
+
     pixels = rgb[inside]
     if pixels.size == 0:
         return fallback

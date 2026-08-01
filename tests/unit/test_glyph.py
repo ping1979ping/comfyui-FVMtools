@@ -1160,7 +1160,97 @@ class TestGlyphInkCoverage:
         """A mask drawn tightly round one word has nothing to outvote — capping
         it against 'all the others' would leave it weighing nothing."""
         img = np.full((120, 300, 3), 245, np.uint8)
-        cv2.rectangle(img, (20, 40), (280, 90), (40, 40, 40), -1)   # one solid block
+        cv2.putText(img, "WORT", (20, 85), cv2.FONT_HERSHEY_DUPLEX, 2.0, (40, 40, 40), 4)
         mask = _rect_mask(120, 300, 10, 20, 290, 110)
         height = measure_ink_height(img, mask, (245, 245, 245))
-        assert height is not None and height > 30, f"got {height}"
+        assert height is not None and height > 20, f"got {height}"
+
+    def test_ink_at_the_sheet_edge_is_covered(self):
+        """Handwriting runs right up to the edge of a sheet. Holding the band
+        back from the outline to protect a frame removed real text instead:
+        measured over five noticeboard regions, the ink covered went
+        59/94/78/54/67 % with a margin against 96/96/97/88/67 % without, and the
+        frame of a bordered plate was hit in neither case."""
+        img = np.full((200, 300, 3), 240, np.uint8)
+        cv2.putText(img, "RAND", (4, 40), cv2.FONT_HERSHEY_DUPLEX, 1.0, (30, 30, 30), 2)
+        mask = _rect_mask(200, 300, 0, 0, 300, 200)
+        ink = existing_ink_mask(img, mask, (240, 240, 240))
+        band = text_band(mask, old_ink=ink, line_height=26)
+        assert band is not None
+        missed = (ink > 0.5) & (band < 0.5)
+        assert missed.sum() <= ink.sum() * 0.05, "text at the edge fell outside the band"
+
+
+class TestLetteringIsNeverCutOff:
+    """The fitted quad can reach past the silhouette it came from — a note pinned
+    at a slight angle reads as square, its rotation is discarded as meaningless,
+    and the axis-aligned box that replaces it hangs over the paper. Clipping the
+    layer to the mask afterwards takes the ends off the word.
+    """
+
+    @staticmethod
+    def _tilted_note(h=260, w=260, angle=12):
+        mask = np.zeros((h, w), np.float32)
+        box = cv2.boxPoints(((w / 2, h / 2), (w * 0.62, h * 0.62), angle))
+        cv2.fillPoly(mask, [box.astype(np.int32)], 1.0)
+        return mask
+
+    def test_the_word_stays_inside_the_paper(self):
+        mask = self._tilted_note()
+        rgb, alpha = render_glyph_layer("TEEKUECHE", mask, fill=(20, 20, 20),
+                                        bg=(240, 240, 240))
+        strokes = (np.abs(rgb * 255 - np.array([240, 240, 240], np.float32)).max(axis=2) > 28)
+        strokes &= alpha > 0.05
+        assert strokes.sum() > 50, "nothing was drawn at all"
+        outside = (strokes & (mask <= 0.5)).sum() / strokes.sum()
+        assert outside <= 0.02, f"{outside * 100:.0f}% of the lettering fell off the note"
+
+    def test_a_long_word_still_lands(self):
+        mask = self._tilted_note()
+        rgb, alpha = render_glyph_layer("SPAETBURGUNDER", mask, fill=(20, 20, 20),
+                                        bg=(240, 240, 240))
+        strokes = (np.abs(rgb * 255 - np.array([240, 240, 240], np.float32)).max(axis=2) > 28)
+        strokes &= alpha > 0.05
+        assert strokes.sum() > 50
+        outside = (strokes & (mask <= 0.5)).sum() / strokes.sum()
+        assert outside <= 0.02, f"{outside * 100:.0f}% of the lettering fell off the note"
+
+
+class TestInkPolarity:
+    """Which way the lettering runs decides what colour the replacement is set
+    in. Getting it wrong once put black text on a navy plate that had carried
+    white, and the pass after that produced two words on top of each other.
+    """
+
+    @staticmethod
+    def _plate(ink_rgb, plate_rgb, gradient=0.0):
+        img = np.zeros((200, 420, 3), np.uint8)
+        img[:, :] = plate_rgb
+        if gradient:
+            ramp = np.linspace(-gradient, gradient, 420, dtype=np.float32)
+            img = np.clip(img.astype(np.float32) + ramp[None, :, None], 0, 255).astype(np.uint8)
+        cv2.putText(img, "SANE", (60, 130), cv2.FONT_HERSHEY_DUPLEX, 2.2, ink_rgb, 5)
+        mask = _rect_mask(200, 420, 10, 10, 410, 190)
+        return img, mask
+
+    @staticmethod
+    def _luma(c):
+        return sum(v * w for v, w in zip(c, (0.299, 0.587, 0.114)))
+
+    def test_light_lettering_on_a_dark_plate(self):
+        img, mask = self._plate((240, 240, 235), (30, 45, 90))
+        ink, plate = estimate_text_colors(img, mask)
+        assert self._luma(ink) > self._luma(plate) + 40, f"ink={ink} plate={plate}"
+
+    def test_dark_lettering_on_a_light_plate(self):
+        img, mask = self._plate((30, 30, 30), (235, 233, 225))
+        ink, plate = estimate_text_colors(img, mask)
+        assert self._luma(ink) < self._luma(plate) - 40, f"ink={ink} plate={plate}"
+
+    def test_a_lit_surface_does_not_flip_it(self):
+        """Across a photographed sheet the lighting alone spans 120 levels. A
+        single brightness level for the whole region then puts the lit half of
+        the paper on the lettering's side of the vote and outnumbers it."""
+        img, mask = self._plate((30, 30, 30), (190, 190, 185), gradient=60)
+        ink, plate = estimate_text_colors(img, mask)
+        assert self._luma(ink) < self._luma(plate) - 30, f"ink={ink} plate={plate}"

@@ -1,8 +1,15 @@
 """Acceptance suite: text there and back again, across every image type.
 
 For each scene: render text A, then B, then A again, feeding each result into the
-next pass. The vision model reads every result back. A pass means the target text
-is what comes out, with no second set of letters showing through.
+next pass. The vision model reads every result back.
+
+A pass needs three things, not one. "The target text arrived" is far too weak a
+bar on its own — it passes a picture that still carries five lines of
+pseudo-writing beside the one word that was replaced, which is the exact failure
+these tools exist to remove. So every result is also put through a census that
+transcribes EVERY piece of text in it and judges each one separately, and any
+invented string counts against the run, whether it survived from the original or
+the pipeline wrote it.
 """
 import argparse
 import json
@@ -17,17 +24,36 @@ sys.path.insert(0, "D:/AI/ComfyUI/ComfyUI/custom_nodes/comfyui-FVMtools")
 import numpy as np
 import cv2
 import roundtrip as R
+import slop_census
 from nodes.utils.lmstudio_client import chat_vision, parse_json_response
 
+# Every text-bearing area gets its own real word. Forcing ONE word onto every
+# region made the pipeline write the same thing on eight bottles, and a census
+# that judges each string on its own rightly calls that filler — a fault of the
+# test, not of the tools. The region counts are set high enough to reach every
+# lettered surface in the scene: a region nobody selects keeps its original
+# pseudo-writing, and that is a visible error like any other.
 SCENES = [
     dict(tag="street", image="real_street.png", hint="european old town street",
-         texts=("WEINHANDEL", "BAECKEREI"), regions=3, box=(40, 260, 380, 760)),
+         regions=4, box=(40, 260, 380, 760),
+         texts=(["WEINHANDEL", "APOTHEKE", "BLUMEN", "BUCHLADEN", "OPTIKER", "METZGEREI"],
+                ["BAECKEREI", "DROGERIE", "KONDITOREI", "FRISEUR", "EISENWAREN", "PAPIER"])),
     dict(tag="shelf", image="real_shelf.png", hint="wine shop shelf",
-         texts=("RIESLING", "SPAETBURGUNDER"), regions=6, box=(445, 585, 215, 1025)),
+         regions=8, box=(445, 585, 215, 1025),
+         texts=(["RIESLING", "SILVANER", "WEISSBURGUNDER", "KERNER", "GUTEDEL",
+                 "TRAMINER", "SCHEUREBE", "ELBLING", "MUELLER THURGAU", "BACCHUS"],
+                ["SPAETBURGUNDER", "DORNFELDER", "TROLLINGER", "LEMBERGER", "REGENT",
+                 "PORTUGIESER", "SCHWARZRIESLING", "ZWEIGELT", "MERLOT", "TAUBERSCHWARZ"])),
     dict(tag="board", image="real_noticeboard.png", hint="office kitchen noticeboard",
-         texts=("RUHETAG", "TEEKUECHE"), regions=5, box=None),
+         regions=7, box=None,
+         texts=(["RUHETAG", "PUTZPLAN", "URLAUB", "MITTAGESSEN", "KAFFEEKASSE",
+                 "EINKAUF", "SPUELDIENST", "BESPRECHUNG"],
+                ["TEEKUECHE", "DIENSTPLAN", "FEIERTAG", "ABENDESSEN", "MILCHKASSE",
+                 "LIEFERUNG", "MUELLDIENST", "SCHULUNG"])),
     dict(tag="synth", image="rt1_scene.png", hint="german shopfront",
-         texts=("WEINHANDEL", "BAECKEREI"), regions=2, box=(60, 280, 120, 740)),
+         regions=1, box=(60, 280, 120, 740),
+         texts=(["WEINHANDEL", "APOTHEKE", "BLUMEN"],
+                ["BAECKEREI", "DROGERIE", "KONDITOREI"])),
 ]
 
 
@@ -44,7 +70,7 @@ def apply_overrides(widgets, assignments):
     return widgets
 
 
-def render(info, image_name, text, prefix, regions, overrides=()):
+def render(info, image_name, texts, prefix, regions, overrides=()):
     g = {}
     g["1"] = {"class_type": "LoadImage",
               "inputs": {**R.defaults_for(info, "LoadImage"), "image": image_name}}
@@ -56,7 +82,8 @@ def render(info, image_name, text, prefix, regions, overrides=()):
     g["3"] = {"class_type": "FVM_SignSelectorSAM3", "inputs": sel}
     prop = R.defaults_for(info, "FVM_SignTextProposer")
     prop.update({"sign_data": ["3", 0], "image": ["1", 0], "enabled": False,
-                 "manual_override": "\n".join(f"{i}: {text}" for i in range(1, regions + 1))})
+                 "manual_override": "\n".join(
+                     f"{i + 1}: {texts[i % len(texts)]}" for i in range(regions))})
     g["4"] = {"class_type": "FVM_SignTextProposer", "inputs": prop}
     g["5"] = {"class_type": "UNETLoader",
               "inputs": {"unet_name": "krea2\\krea2_turbo_fp8.safetensors", "weight_dtype": "default"}}
@@ -105,7 +132,7 @@ JUDGE = (
 )
 
 
-def judge(path, target, box):
+def judge(path, targets, box):
     img = cv2.imread(path)
     if box:
         y0, y1, x0, x1 = box
@@ -117,7 +144,9 @@ def judge(path, target, box):
     res = chat_vision(base_url="http://localhost:1234/v1",
                       model_id="qwen3-8b-vl-instruct-abliterated",
                       system_prompt=JUDGE,
-                      user_prompt=f'The wording should read "{target}". Report the JSON.',
+                      user_prompt="The wording should read one of: "
+                                  + ", ".join(f'"{t}"' for t in targets)
+                                  + ". Report the JSON.",
                       images=[cv2.cvtColor(img, cv2.COLOR_BGR2RGB)],
                       temperature=0.1, max_tokens=300, timeout=240)
     if not res.get("ok"):
@@ -130,6 +159,10 @@ def main():
     ap.add_argument("--only", default="")
     ap.add_argument("--set", action="append", default=[], dest="overrides",
                     help="detailer widget override, e.g. --set glyph_surface_restyle=1.0")
+    ap.add_argument("--fast", action="store_true",
+                    help="skip the slop census — the text swap alone, which is the weak bar")
+    ap.add_argument("--max-slop", type=int, default=0,
+                    help="invented strings tolerated per pass before it counts as failed")
     args = ap.parse_args()
 
     info = R.api("/object_info", timeout=180)
@@ -146,21 +179,30 @@ def main():
         a, b = sc["texts"]
         current = sc["image"]
         steps = []
-        for label, target in (("A", a), ("B", b), ("C", a)):
+        for label, words in (("A", a), ("B", b), ("C", a)):
+            target = words[0]
             try:
-                fn, secs = render(info, current, target, f"suite_{sc['tag']}_{label}",
+                fn, secs = render(info, current, words, f"suite_{sc['tag']}_{label}",
                                   sc["regions"], args.overrides)
             except Exception as e:
                 print(f"  [{label}] RENDER FAILED: {str(e)[:200]}")
                 steps.append((label, target, None, {"error": "render"}))
                 break
             local = R.fetch(fn, os.path.join(R.OUT, f"suite_{sc['tag']}_{label}.png"))
-            v = judge(local, target, sc["box"])
+            v = judge(local, words, sc["box"])
+            if not args.fast:
+                c = slop_census.census(local, rows=2, cols=2, targets=tuple(words))
+                v["slop"] = [i["text"] for i in c["gibberish"]]
+                v["real_words"] = len(c["word"])
             steps.append((label, target, local, v))
             ok = v.get("contains")
             gh = v.get("ghosting")
+            slop = v.get("slop")
             print(f"  [{label}] {target:<16} {secs:5.0f}s  enthalten={ok}  "
-                  f"ghosting={gh}  lesbarkeit={v.get('legibility')}")
+                  f"ghosting={gh}  lesbarkeit={v.get('legibility')}"
+                  + ("" if slop is None else f"  Slop-Glyphen={len(slop)}"))
+            for text in (slop or [])[:8]:
+                print(f"          SLOP {text!r}")
             R.upload(local, f"suite_{sc['tag']}_{label}_in.png")
             current = f"suite_{sc['tag']}_{label}_in.png"
         rows.append((sc["tag"], steps))
@@ -176,10 +218,15 @@ def main():
                 g = float(g)
             except (TypeError, ValueError):
                 g = None
+            slop = v.get("slop")
+            n_slop = None if slop is None else len(slop)
             ok = bool(v.get("contains")) and (g is not None and g <= 0.2)
+            if n_slop is not None:
+                ok = ok and n_slop <= args.max_slop
             total_pass += ok
             print(f"  {tag:8} {label}  {'PASS' if ok else 'FAIL'}  "
-                  f"target={target!r} contains={v.get('contains')} ghosting={g}")
+                  f"target={target!r} contains={v.get('contains')} ghosting={g}"
+                  + ("" if n_slop is None else f" slop={n_slop}"))
     print(f"\n{total_pass}/{total} Durchgaenge bestanden")
     if total == 0:
         # Nothing ran. Reporting that as a pass is how a broken harness gets

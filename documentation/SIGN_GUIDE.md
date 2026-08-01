@@ -200,6 +200,67 @@ Notizen darauf, und die liest sich wie durchscheinende Altschrift.
 | **0,35** | **Standard** — genug, damit eine flache Fläche Material bekommt |
 | 1,0 | altes Verhalten, ganze Region wird neu gerechnet |
 
+### Wo die Schrift steht: lokal messen, nicht global
+
+Der Ausgangspunkt für alles andere ist die Frage, welche Pixel Schrift sind. Ein
+globales Zwei-Farben-Modell (Tinte gegen Platte) beantwortet sie auf echten
+Fotos falsch. An einem abfotografierten Blatt Papier gemessen: die Helligkeit
+läuft **innerhalb** des Blattes von 84 bis 202, allein durch Beleuchtung. Der
+Luminanz-Split trennt dann die helle Hälfte des Papiers von der beschatteten und
+erklärt die beschattete zur Tinte — das Ersetzungsband landete auf der falschen
+Seite des Blattes, während die Handschrift nie angefasst wurde.
+
+Erkannt wird deshalb **lokal**, mit dem Standardverfahren für Text auf ungleich
+ausgeleuchtetem Untergrund (Sauvola): die Schwelle folgt dem lokalen Mittelwert
+*und* der lokalen Streuung. Eine glatte Fläche zieht ihre eigene Schwelle vom
+Untergrund weg und bleibt leer; eine Fläche mit Strichen hält sie nah am
+Mittelwert und nimmt sie mit. Beide Polaritäten werden probiert — weiße Emaille
+auf Blau ist so häufig wie Bleistift auf Papier — und die kleinere der beiden
+Populationen ist die Schrift.
+
+Dazu ein zweites Merkmal: **Schrift ist dünn**. Eine Falte, ein Knick oder die
+Kante eines Schattens antwortet so kräftig wie ein Federstrich und ist über den
+Kontrast nicht davon zu unterscheiden — aber sie ist ein Vielfaches dicker.
+Formen, bei denen mehr als 30 % der Fläche dicker als ein Drittel der
+Zeilenhöhe ist, sind kein Text.
+
+Die Zeilenhöhe wiederum braucht man, um die Nachbarschaft festzulegen, in der
+gemessen wird — und kennt sie erst, wenn die Schrift gefunden ist. Also grob
+suchen, Größe aus dem Fund nehmen, noch einmal suchen.
+
+Welche der beiden Polaritäten die Schrift ist, lässt sich **nicht** über den
+Kontrast entscheiden: ein Strich hebt den lokalen Mittelwert, also antwortet die
+Fläche direkt daneben genauso kräftig. Dieser Halo ließ ein blaues Emailleschild
+sich selbst als Schrift melden — im zweiten Durchgang kam die Schrift schwarz
+statt weiß zurück, im dritten standen zwei Wörter übereinander. Entschieden wird
+über den **Abstand zur Fläche**: Tinte liegt in der Helligkeit am weitesten vom
+Untergrund weg. Melden beide Seiten kräftig, gilt beides als Schrift — ein Schild
+kann dunkle Schrift auf hellem Feld und helle auf dunklem tragen.
+
+Aus derselben Maske kommen auch **Schrift- und Grundfarbe**: Median über die
+Strichpixel gegen Median über den Rest. Vorher lieferte der Luminanz-Split zwei
+Mittelgraus, und die Ersatzschrift stand fast unsichtbar auf ihrer eigenen
+Platte. Für die *Farbe* zählt dabei nur die dominante Seite — beim Löschen darf
+beides weg, aber dunkle Schrift mit hellen Glanzstellen zu mitteln setzt den
+Ersatztext in der Farbe der Platte. Verglichen wird jedes Strichpixel mit seiner
+**lokalen** Umgebung, nicht mit einem Pegel für die ganze Region: über ein
+abfotografiertes Blatt läuft die Helligkeit um 120 Stufen, und ein einziger Pegel
+schlägt die helle Papierhälfte der Schrift zu, die dann überstimmt wird.
+
+Gerechnet wird nur auf dem Begrenzungsrechteck der Region. Über das ganze Bild
+und einmal je Frage gerechnet, wurde aus einem 24-Sekunden-Durchgang einer von
+460 Sekunden; einmal erkennen und überall weiterverwenden bringt ihn zurück.
+
+### Buchstaben werden nie abgeschnitten
+
+Das gefittete Viereck kann über die Silhouette hinausragen, aus der es stammt:
+ein leicht schräg angehefteter Zettel wirkt quadratisch, seine Drehung wird als
+bedeutungslos verworfen, und das achsenparallele Rechteck an ihrer Stelle reicht
+über das Papier hinaus. Die Glyph-Ebene danach auf die Maske zu beschneiden
+würde dem Wort die Enden abnehmen. Stattdessen wird nachgesehen, wie viel der
+gesetzten Schrift tatsächlich außerhalb liegt, und der Text so lange enger
+gesetzt, bis er hineinpasst (höchstens fünf Anläufe).
+
 ### Ein Klumpen darf die Schrift nicht überstimmen
 
 `glyph_match_source_size` misst die Zeilenhöhe flächengewichtet. Ein
