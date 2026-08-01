@@ -154,6 +154,30 @@ def judge(path, targets, box):
     return parse_json_response(res.get("content", "")) or {}
 
 
+def verdict(v, max_slop=0):
+    """PASS, FAIL or ERROR for a single pass.
+
+    ERROR is an outcome of its own and it outranks the other two. A census tile
+    that never answered takes a quarter of the picture out of the count, and the
+    missing quarter surfaces as LESS slop — so a pass with a tile error can be
+    believed neither when it passes nor when it fails. Measured in 4 of 100
+    census runs; one of them turned a stable 13 into a 4, which was then read as
+    an improvement.
+    """
+    if int(v.get("tile_errors") or 0):
+        return "ERROR"
+    try:
+        ghost = float(v.get("ghosting"))
+    except (TypeError, ValueError):
+        return "FAIL"
+    if not v.get("contains") or ghost > 0.2:
+        return "FAIL"
+    slop = v.get("slop")
+    if slop is not None and len(slop) > max_slop:
+        return "FAIL"
+    return "PASS"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", default="")
@@ -192,7 +216,10 @@ def main():
             v = judge(local, words, sc["box"])
             if not args.fast:
                 c = slop_census.census(local, rows=2, cols=2, targets=tuple(words))
-                v["slop"] = [i["text"] for i in c["gibberish"]]
+                v["slop"] = [i["text"] for i in c["slop"]]
+                v["slop_foreign"] = len(c["gibberish"])
+                v["slop_fragment"] = len(c["target_fragment"])
+                v["tile_errors"] = c["tile_errors"]
                 v["real_words"] = len(c["word"])
             steps.append((label, target, local, v))
             ok = v.get("contains")
@@ -200,7 +227,13 @@ def main():
             slop = v.get("slop")
             print(f"  [{label}] {target:<16} {secs:5.0f}s  enthalten={ok}  "
                   f"ghosting={gh}  lesbarkeit={v.get('legibility')}"
-                  + ("" if slop is None else f"  Slop-Glyphen={len(slop)}"))
+                  + ("" if slop is None else
+                     f"  Slop-Glyphen={len(slop)}"
+                     f" (fremd={v['slop_foreign']}, Zielfragment={v['slop_fragment']})"
+                     f"  Kachelfehler={v['tile_errors']}"))
+            if v.get("tile_errors"):
+                print(f"          KACHELFEHLER {v['tile_errors']} — Bildflaeche fehlt "
+                      f"in der Zaehlung; dieser Durchgang ist ERROR, nicht FAIL")
             for text in (slop or [])[:8]:
                 print(f"          SLOP {text!r}")
             R.upload(local, f"suite_{sc['tag']}_{label}_in.png")
@@ -210,6 +243,8 @@ def main():
     print(f"\n{'=' * 66}\nZUSAMMENFASSUNG")
     total_pass = 0
     total = 0
+    total_error = 0
+    lost_tiles = 0
     for tag, steps in rows:
         for label, target, path, v in steps:
             total += 1
@@ -220,19 +255,33 @@ def main():
                 g = None
             slop = v.get("slop")
             n_slop = None if slop is None else len(slop)
-            ok = bool(v.get("contains")) and (g is not None and g <= 0.2)
-            if n_slop is not None:
-                ok = ok and n_slop <= args.max_slop
-            total_pass += ok
-            print(f"  {tag:8} {label}  {'PASS' if ok else 'FAIL'}  "
+            broken = int(v.get("tile_errors") or 0)
+            lost_tiles += broken
+            state = verdict(v, args.max_slop)
+            total_pass += state == "PASS"
+            total_error += state == "ERROR"
+            print(f"  {tag:8} {label}  {state:<5} "
                   f"target={target!r} contains={v.get('contains')} ghosting={g}"
-                  + ("" if n_slop is None else f" slop={n_slop}"))
-    print(f"\n{total_pass}/{total} Durchgaenge bestanden")
+                  + ("" if n_slop is None else f" slop={n_slop}")
+                  + ("" if not broken else f" Kachelfehler={broken}"))
+    print(f"\n{total_pass}/{total} Durchgaenge bestanden"
+          + ("" if not total_error else
+             f", {total_error} ERROR (weder PASS noch FAIL)"))
+    print(f"Kachelfehler: {lost_tiles} in {total_error} von {total} Durchgaengen")
+    if lost_tiles:
+        # A lost tile removes a quarter of a picture from the census, and that
+        # shows up as LESS slop. Two totals are only comparable when both are 0.
+        print("  ACHTUNG: solange Kachelfehler != 0 ist, fehlt Bildflaeche in der "
+              "Zaehlung — diese Gesamtzahl ist NICHT mit einem anderen Lauf "
+              "vergleichbar.")
     if total == 0:
         # Nothing ran. Reporting that as a pass is how a broken harness gets
         # mistaken for a working pipeline.
         print("KEIN Durchgang ausgefuehrt — Szenen fehlen oder ComfyUI ist nicht erreichbar")
         return 2
+    if lost_tiles:
+        # Not "failed" — unmeasured. A caller must not fold this into a score.
+        return 3
     return 0 if total_pass == total else 1
 
 

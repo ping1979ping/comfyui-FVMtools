@@ -25,6 +25,8 @@ from ..utils.glyph import (
     discover_fonts, resolve_font, render_glyph_layer, composite_glyph,
     estimate_text_colors, surface_preserving_alpha, measure_ink_height,
     existing_ink_mask, glyph_ink_coverage, text_band, reconstruct_surface,
+    fallback_line_height, ink_evidence_mask, ink_detection_failed,
+    BAND_GROW,
 )
 from ..utils.mask_utils import fill_mask_holes_2d
 from ..utils.ocr_backend import ocr_region
@@ -250,11 +252,10 @@ class SignDetailer:
                 "glyph_ink_color": ("STRING", {"default": "",
                     "tooltip": "Force the LETTER colour of the typeset layer. Empty = sampled.\n"
                                "Same formats as the plate colour."}),
-                "too_small_policy": (["soften", "skip", "render"], {"default": "soften",
-                    "tooltip": "Regions below the legibility floor.\n"
-                               "soften: render as believable out-of-focus text (recommended)\n"
-                               "skip: leave untouched\n"
-                               "render: try anyway"}),
+                "min_legible_px": ("INT", {"default": 0, "min": 0, "max": 128, "step": 1,
+                    "tooltip": 'Smallest capital height, in pixels, the replacement lettering is typeset at. A floor under glyph_match_source_size, not a gate: a region that cannot carry the word that large still gets it, only smaller. 0 = off.\\n\\nWithout it the new text is bound to the size of the OLD text, and on a defocused label the old text measures 4-6px - so a word was set at 4-5px on a surface that would carry three times that.\\n\\nOff by default. It demonstrably sharpens single words (RIESLING came back clean where it had read IESLIN/SLIN), but a full suite run could not show a gain: larger type in pass A shifts the region layout the selector finds in pass B, which moves words onto other surfaces. Opt in per job, do not switch on blind.'}),
+                "too_small_policy": (["soften", "skip", "render", "erase"], {"default": "soften",
+                    "tooltip": 'Regions the selector flagged below its size gate.\\nsoften: re-render as out-of-focus text - but measured, this invents fresh sharp pseudo-lettering instead of blurring what is there\\nskip: leave untouched\\nrender: try anyway\\nerase: empty the text band and rebuild the surface from its own edge, writing nothing back - no sampler pass runs over the region at all, so there is nothing left that could invent lettering. Take it for a surface too small to carry a readable word: a blank surface is the only outcome a census cannot read words into.\\n\\nsoften is NOT a safe fallback, and this is measured. At denoise 0.35 the pass does not erase the lettering already there, so the model repaints it as its own invention - sharp, transcribable pseudo-text rather than blur. Caught on the wine shelf as TOKL CUBA ANY RODA, TEGLING AVYAT, BUTORT DOATRKR. A census counts that as gibberish, and it is right to: anything legible enough to transcribe is legible fantasy writing.'}),
                 "cluster_mode": (["shared_seed", "independent"], {"default": "shared_seed",
                     "tooltip": "shared_seed renders every member of a cluster with the same seed and prompt,\n"
                                "so a shelf of identical bottles stays identical."}),
@@ -346,7 +347,7 @@ class SignDetailer:
                      autocolor, uppercase, margin_ratio,
                      ink_override=None, plate_override=None,
                      fit="auto", cylinder=0.0, preserve_surface=True,
-                     match_source_size=True):
+                     match_source_size=True, min_legible_px=0, ink_mask=None):
         """Composite typeset text onto the image inside the region mask.
 
         Returns ``(new_image, glyph_rgb_preview, hot)``. ``hot`` is where the NEW
@@ -368,7 +369,8 @@ class SignDetailer:
         # One detection, used for all of it: the colours, the size and the band.
         # Recomputing it per question turned a 24-second pass into 460.
         rgb_u8 = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
-        ink_mask = existing_ink_mask(rgb_u8, mask_np, (128, 128, 128))
+        if ink_mask is None:
+            ink_mask = existing_ink_mask(rgb_u8, mask_np, (128, 128, 128))
 
         ink, plate = ((255, 255, 255), (0, 0, 0))
         if autocolor:
@@ -385,12 +387,22 @@ class SignDetailer:
         line_height = None
         if match_source_size:
             line_height = measure_ink_height(rgb_u8, mask_np, plate, ink_mask=ink_mask)
+            if line_height is None:
+                # Nothing measurable is not permission to fill the box. Dropping
+                # the cap sets the word as tall as the whole plate, and offline
+                # that took a 5px setting to 15-17px in a single pass. Fall back
+                # on the share of the short side the rest of the module already
+                # uses when no height is known; it caps low, and the box still
+                # has the last word. match_source_size=False is untouched — that
+                # widget asks for the box on purpose.
+                line_height = fallback_line_height(mask_np)
 
         try:
             glyph_rgb, alpha = render_glyph_layer(
                 text=text, mask_2d=mask_np, font_path=font_path,
                 fill=ink, bg=plate, uppercase=uppercase, margin_ratio=margin_ratio,
                 fit=fit, cylinder=cylinder, target_line_height=line_height,
+                min_legible_px=min_legible_px,
             )
         except Exception as exc:
             print(f"[SignDetailer] glyph rendering failed for #{region['index'] + 1}: {exc}")
@@ -425,6 +437,71 @@ class SignDetailer:
 
         blended = composite_glyph(img_np.astype(np.float32), glyph_rgb, alpha, strength=strength)
         return torch.from_numpy(blended).to(device), glyph_rgb, band
+
+    def _apply_erase(self, image_hwc, region, ink_mask=None):
+        """Empty the lettering out of a region and rebuild the surface under it.
+
+        No sampler, no prompt, no glyph layer — a pure image operation, and that
+        is the whole point rather than an economy. Every treatment that renders
+        text-shaped structure gets counted as invented writing however blurred
+        it is meant to be; a low-denoise pass does not blur the strokes that are
+        there, it repaints them as the model's own invention, and given a swept
+        surface at high denoise it writes its own notes on it. A surface that
+        cannot carry a readable word therefore has exactly one honest outcome:
+        nothing on it.
+
+        Reuses the two steps :meth:`_apply_glyph` already wipes a band with —
+        :func:`text_band` for the area the lettering occupies, then
+        :func:`reconstruct_surface` to pull the surrounding surface inward over
+        it, which keeps the lighting and the grain that a flat fill throws away.
+
+        ``ink_mask`` lets the caller hand in a detection it has already made,
+        which is also how a region whose ink could not be resolved is emptied:
+        the caller passes :func:`ink_evidence_mask` instead, so the band is
+        seeded from the structure that is demonstrably there rather than from
+        strokes the thresholds failed to name.
+
+        Returns ``(new_image, band)``. ``band`` is ``None`` when there was no
+        lettering to find, and the image then comes back untouched.
+        """
+        mask_np = region["mask"]
+        img_np = image_hwc.cpu().numpy() if isinstance(image_hwc, torch.Tensor) else image_hwc
+        rgb_u8 = (np.clip(img_np, 0, 1) * 255).astype(np.uint8)
+
+        # One detection for all of it, as in _apply_glyph: the band follows the
+        # strokes that are actually there, and their size sets how far it
+        # reaches to merge them into blocks.
+        if ink_mask is None:
+            ink_mask = existing_ink_mask(rgb_u8, mask_np, (128, 128, 128))
+        _ink, plate = estimate_text_colors(rgb_u8, mask_np, ink_mask=ink_mask)
+        line_height = measure_ink_height(rgb_u8, mask_np, plate, ink_mask=ink_mask)
+        if line_height is None:
+            line_height = fallback_line_height(mask_np)
+
+        band = text_band(mask_np, old_ink=ink_mask, new_ink=None,
+                         line_height=line_height)
+        if band is None:
+            return image_hwc, None
+        surface = reconstruct_surface(img_np, band)
+        if surface is None:
+            return image_hwc, None
+
+        # Feather the edge inward. The band is a hard 0/1 mask, so blending on
+        # it puts a step between rebuilt surface and untouched surface, and the
+        # rebuilt patch is a filled contour — which is why the erased area on
+        # SIEGERREBE read as a rectangle pasted over the label. Blurring outward
+        # would do nothing (reconstruct_surface returns the original pixels
+        # outside the band, so there is nothing to fade INTO), so the ramp has to
+        # run inward, and it has to stay inside the margin text_band already
+        # grows past the strokes — BAND_GROW — or it would start uncovering the
+        # very ink the band exists to remove.
+        keep = np.asarray(band, np.float32)
+        reach = max(1, int(round(float(line_height or 20.0) * BAND_GROW)))
+        keep = cv2.GaussianBlur(keep, (reach * 2 + 1,) * 2, 0) * (keep > 0.5)
+        keep = np.clip(keep, 0.0, 1.0)[..., None]
+        blended = img_np.astype(np.float32) * (1.0 - keep) + surface * keep
+        device = image_hwc.device if isinstance(image_hwc, torch.Tensor) else "cpu"
+        return torch.from_numpy(blended).to(device), band
 
     @staticmethod
     def _hot_zone(coverage, mask_2d, line_height=None):
@@ -468,7 +545,7 @@ class SignDetailer:
                 glyph_guidance="init", glyph_font="<auto>", glyph_denoise=0.55,
                 glyph_strength=1.0, glyph_fit="auto", glyph_cylinder=0.0,
                 glyph_preserve_surface=True, glyph_surface_restyle=0.35,
-                glyph_match_source_size=True,
+                glyph_match_source_size=True, min_legible_px=0,
                 glyph_autocolor=True,
                 glyph_plate_color="", glyph_ink_color="", too_small_policy="soften",
                 cluster_mode="shared_seed", verify_after="off", verify_similarity=0.60,
@@ -525,7 +602,7 @@ class SignDetailer:
         result = images.clone()
         refined_crops = []
         glyph_previews = []
-        rendered = skipped = softened = retried = 0
+        rendered = skipped = softened = erased = retried = 0
 
         for b in range(images.shape[0]):
             batch_regions = [r for r in regions if r.get("batch_index", 0) == b]
@@ -560,11 +637,85 @@ class SignDetailer:
                     skipped += 1
                     continue
 
+                # Typeset the region ONCE, and before the policy is decided.
+                # The layer never depended on the sampling attempt — the image
+                # it is drawn on does not change inside that loop — so
+                # re-rendering it per retry only repeated the ink detection.
+                # Pulling it up here is what lets too_small_policy answer for a
+                # word that cannot be set inside the outline without cutting it,
+                # instead of the sampler being handed no guidance at all and
+                # inventing its own lettering.
+                # The ink detection answers three separate questions — where the
+                # old lettering sits, how tall it was, and which band to wipe —
+                # so it is made once here and handed to whichever treatment the
+                # policy picks. It also has to be asked whether it succeeded.
+                # An empty answer on a surface that plainly carries structure is
+                # a detector failure, not an empty surface, and the three things
+                # that go wrong then all go wrong quietly: the band has no seed
+                # so the old writing is never covered, erase returns the image
+                # untouched, and the new word is set straight over the survivor.
+                probe, ink_mask, unresolved = None, None, False
+                if glyph_guidance != "off" and text:
+                    frame = (current.cpu().numpy()
+                             if isinstance(current, torch.Tensor) else current)
+                    probe = (np.clip(frame, 0, 1) * 255).astype(np.uint8)
+                    ink_mask = existing_ink_mask(probe, region["mask"], (128, 128, 128))
+                    unresolved = ink_detection_failed(probe, region["mask"], ink_mask)
+
+                glyph_layer = None
+                if (glyph_guidance != "off" and text
+                        and (not (region.get("too_small") or unresolved)
+                             or too_small_policy == "render")):
+                    glyph_layer = self._apply_glyph(
+                        current, region, text, glyph_font, eff_strength,
+                        glyph_autocolor, opts["uppercase"], opts["margin_ratio"],
+                        ink_override=ink_override, plate_override=plate_override,
+                        fit=glyph_fit, cylinder=glyph_cylinder,
+                        preserve_surface=glyph_preserve_surface,
+                        match_source_size=glyph_match_source_size,
+                        min_legible_px=min_legible_px, ink_mask=ink_mask)
+                # An empty layer is render_glyph_layer's verdict that the word
+                # does not stand inside the silhouette at any legible size. Only
+                # the legibility floor asks for that verdict, so a run with the
+                # floor off never reaches this.
+                unfittable = (glyph_layer is not None and glyph_layer[1] is None
+                              and min_legible_px > 0)
+                if unresolved:
+                    why = ("no lettering could be resolved on this surface, so "
+                           "anything written on it would sit on top of the old")
+                elif unfittable:
+                    why = f"{text!r} does not fit inside the outline at any legible size"
+                else:
+                    why = f"{region.get('height_px', 0)}px"
+
                 soften = False
-                if region.get("too_small"):
+                if region.get("too_small") or unfittable or unresolved:
                     if too_small_policy == "skip":
-                        report.append(f"  #{idx + 1} {cls_name}: {region['height_px']}px — skipped (too small)")
+                        report.append(f"  #{idx + 1} {cls_name}: {why} — skipped (too small)")
                         skipped += 1
+                        continue
+                    if too_small_policy == "erase":
+                        # An unresolved region is erased from the evidence, not
+                        # from the ink mask that just failed on it: the whole
+                        # point is that the surface carries structure the
+                        # thresholds could not name.
+                        seed = ink_mask
+                        if unresolved and probe is not None:
+                            seed = ink_evidence_mask(probe, region["mask"])
+                        current, band = self._apply_erase(current, region,
+                                                          ink_mask=seed)
+                        # Booked as treated either way. The verdict of this
+                        # policy is that no text belongs on this surface, and a
+                        # later region lying on the same one must not overrule
+                        # it by writing one — the overlap ledger is what stops
+                        # that from happening.
+                        painted = np.maximum(painted, (region_np > 0.5).astype(np.float32))
+                        erased += 1
+                        report.append(
+                            f"  #{idx + 1} {cls_name}: {why} — "
+                            + ("erased: surface rebuilt from its own edge, nothing written"
+                               if band is not None else
+                               "erase found no lettering to remove — left untouched"))
                         continue
                     if too_small_policy == "soften":
                         soften = True
@@ -609,14 +760,8 @@ class SignDetailer:
                 for attempt in range(attempts):
                     work_image = current
                     glyph_rgb, hot = None, None
-                    if use_glyph and text:
-                        work_image, glyph_rgb, hot = self._apply_glyph(
-                            current, region, text, glyph_font, eff_strength,
-                            glyph_autocolor, opts["uppercase"], opts["margin_ratio"],
-                            ink_override=ink_override, plate_override=plate_override,
-                            fit=glyph_fit, cylinder=glyph_cylinder,
-                            preserve_surface=glyph_preserve_surface,
-                            match_source_size=glyph_match_source_size)
+                    if use_glyph and text and glyph_layer is not None:
+                        work_image, glyph_rgb, hot = glyph_layer
                         if glyph_rgb is not None and attempt == 0:
                             glyph_previews.append(torch.from_numpy(
                                 np.clip(glyph_rgb, 0, 1).astype(np.float32)))
@@ -693,7 +838,7 @@ class SignDetailer:
             result[b] = current
 
         report.append(f"Summary: {rendered} rendered, {softened} softened, "
-                      f"{skipped} skipped, {retried} retries")
+                      f"{erased} erased, {skipped} skipped, {retried} retries")
 
         if refined_crops:
             size = refined_crops[0].shape[1:3]
@@ -719,5 +864,6 @@ class SignDetailer:
         else:
             glyph_out = torch.zeros(1, 64, 64, 3, dtype=torch.float32)
 
-        print(f"[SignDetailer] {rendered} rendered, {softened} softened, {skipped} skipped")
+        print(f"[SignDetailer] {rendered} rendered, {softened} softened, "
+              f"{erased} erased, {skipped} skipped")
         return (result, crops_out, glyph_out, "\n".join(report))

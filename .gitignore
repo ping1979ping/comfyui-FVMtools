@@ -34,3 +34,8 @@ MagicMock/
 # produce is not.
 /tests/live/*.png
 /tests/live/*_run.txt
+/tests/live/*_serverlog.txt
+/tests/live/*_meta.txt
+/tests/live/*.json
+/tests/live/baseline_unit.txt
+/tests/live/*_census.txt

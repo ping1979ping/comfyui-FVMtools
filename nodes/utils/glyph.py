@@ -138,12 +138,35 @@ SAUVOLA_K = 0.2
 INK_SECOND_POLARITY_SHARE = 0.45
 # Text is a minority of any surface it sits on.
 INK_MAX_COVERAGE = 0.55
+# Below this share of the region the ink mask holds nothing a band could be
+# built from, and above this share of local stroke-like structure the surface
+# plainly carries SOMETHING. Both at once means the detector failed, not that
+# the surface is blank. Measured over the twenty-one regions of the three real
+# scenes: the weakest genuinely lettered region holds 3.16% ink, while a blank
+# plate, a smooth gradient and photographic grain hold 0.00 / 0.22 / 0.00% ink
+# over 0.00 / 0.59 / 0.15% structure. The painted shopfront this pair exists
+# for held 0.52% ink over 33.6% structure.
+INK_UNRESOLVED_SHARE = 0.02
+INK_EVIDENCE_SHARE = 0.10
 
 # How much of the typeset lettering may fall outside the region's silhouette
 # before the text is pulled in and set again, and how far in each step.
 GLYPH_CLIP_TOLERANCE = 0.02
 GLYPH_MARGIN_STEP = 0.06
 GLYPH_FIT_ATTEMPTS = 5
+# Hard cap on the number of lines a sign's copy is wrapped over. Named rather
+# than repeated, because render_glyph_layer has to work out the type size the
+# block will end up at and would silently disagree with it if the two drifted.
+GLYPH_MAX_LINES = 3
+# How far the type is stepped down per attempt when it does not stand wholly
+# inside the region. Only the legibility floor can lift the type above the size
+# the old lettering had, so only it needs this; see render_glyph_layer.
+GLYPH_SHRINK_STEP = 0.85
+# How many times the type may be stepped down before the region is given up as
+# one that cannot carry the word at all. 0.85^32 is 0.0055, so the walk reaches
+# MIN_FONT_SIZE from a cap of 700px — taller than any lettering a frame holds.
+# The MIN_FONT_SIZE guard is what normally ends it; this only bounds it.
+GLYPH_SHRINK_ATTEMPTS = 32
 # Thickest a stroke may be, as a share of the lettering height, and how much of
 # a shape may exceed it before the shape counts as a blob rather than writing.
 INK_MAX_THICKNESS = 0.35
@@ -727,6 +750,41 @@ def _line_height(font) -> int:
         return max(1, int(bbox[3] - bbox[1]))
 
 
+def _cap_height(font) -> float:
+    """Height of the capitals in pixels, measured on the strokes themselves.
+
+    A legibility floor has to be stated in the height a reader actually sees,
+    and that is not the em height: :func:`_line_height` wraps ascent and descent
+    around the letters and runs roughly a third taller, so a floor expressed in
+    em pixels would sit well below the strokes it is meant to protect. "HXM" has
+    neither ascender nor descender past the cap line, so its ink box IS the cap
+    height.
+    """
+    bbox = _line_bbox(font, "HXM")
+    return max(0.0, float(bbox[3] - bbox[1]))
+
+
+def _size_for_cap_height(font_path, cap_px, ceiling) -> int:
+    """Smallest point size whose capitals stand at least ``cap_px`` tall.
+
+    Cap height grows monotonically with the point size, so the binary search is
+    exact. Returns ``ceiling`` when even that does not reach the target - the box
+    still has the last word, this only says what counts as too small.
+    """
+    target = float(cap_px)
+    low = MIN_FONT_SIZE
+    high = max(MIN_FONT_SIZE, int(ceiling))
+    if _cap_height(_load_font(font_path, high)) < target:
+        return high
+    while low < high:
+        mid = (low + high) // 2
+        if _cap_height(_load_font(font_path, mid)) >= target:
+            high = mid
+        else:
+            low = mid + 1
+    return low
+
+
 def _split_balanced(words: list, measure, n_lines: int) -> list:
     """Split words into exactly ``n_lines`` lines, minimising the widest line.
 
@@ -780,7 +838,7 @@ def _layout_at_size(font, words: list, inner_w: float, inner_h: float, max_lines
 
 
 def _fit_text(text: str, inner_w: float, inner_h: float, font_path, max_lines: int,
-              target_line_height=None):
+              target_line_height=None, min_legible_px=0, max_cap_px=None):
     """Binary-search the largest font size whose wrapped layout fits the inner box.
 
     ``target_line_height`` caps the search at the size the surface already used.
@@ -790,6 +848,35 @@ def _fit_text(text: str, inner_w: float, inner_h: float, font_path, max_lines: i
     then no longer fit and get cut off at the edge. When the existing lettering
     can be measured, it is the better reference than the box.
 
+    ``min_legible_px`` puts a floor under that cap, stated as a CAP HEIGHT in
+    pixels. The cap ties the new lettering to the size of the old, and on a
+    defocused label the old lettering measures 4-6px - so a replacement word was
+    typeset at 4-5px cap height on a surface that would carry far more, and the
+    sampler turned those strokes into mush that reads back as a fragment.
+    Measured on the wine shelf: bottle 4 came back a sharp ``RIESLING`` where
+    without the floor it had been ``IESLIN`` / ``SLIN``.
+
+    The floor only ever RAISES the cap, and never forces a size. The box keeps
+    the last word, so a long word on a narrow plate still shrinks below the floor
+    rather than being clipped. ``min_legible_px=0`` disables it and restores the
+    previous behaviour exactly.
+
+    With the floor on, the measured height is converted to a point size by asking
+    the FONT rather than by the 1.35 rule of thumb. 1.35 is 1/0.74, so it only
+    reproduces the size it was handed on a face whose capitals stand at 0.74 of
+    the point size, and the suite runs each pass over the previous pass's output:
+    whatever the conversion gets wrong compounds. Measured over the faces on this
+    machine, cap/size runs 0.65 (Candara, Consolas) to 0.80 (Impact), so the
+    round trip loses 12% per pass on one and GAINS 6-10% on the other. Impact
+    with a 12px floor ratchets 15, 16, 18, 19, 20, 22, 23, 24 and only stops when
+    the box binds — at which point the word stands as tall as the whole plate.
+    Asking the font makes the round trip exact and the loop a fixed point: the
+    same run holds at 15.
+
+    ``max_cap_px`` is a hard ceiling on the cap height, in pixels, applied after
+    everything else. :func:`render_glyph_layer` drives it to shrink a setting
+    that does not stand inside the region's silhouette. ``None`` is off.
+
     Returns ``(font, lines)``. Falls back to :data:`MIN_FONT_SIZE` and a best-effort
     wrap when nothing fits, so the caller never has to handle a failure.
     """
@@ -798,7 +885,20 @@ def _fit_text(text: str, inner_w: float, inner_h: float, font_path, max_lines: i
     high = max(MIN_FONT_SIZE, int(inner_h) + 2)
     if target_line_height:
         # Cap, not a fixed size: a long replacement still shrinks to fit.
-        high = max(MIN_FONT_SIZE, min(high, int(round(target_line_height * 1.35))))
+        capped = max(MIN_FONT_SIZE, min(high, int(round(target_line_height * 1.35))))
+        if min_legible_px and min_legible_px > 0:
+            # Ask the face what size its capitals reach the measured height at,
+            # instead of guessing at 1/0.74. Exact here means the pass-to-pass
+            # loop neither grows nor shrinks the lettering on its own.
+            capped = max(MIN_FONT_SIZE,
+                         min(high, _size_for_cap_height(font_path, target_line_height, high)))
+            # Never lower a cap that already clears the floor, and never reach
+            # past what the box itself allows.
+            floor = _size_for_cap_height(font_path, min_legible_px, high)
+            capped = max(capped, min(high, floor))
+        high = capped
+    if max_cap_px and max_cap_px > 0:
+        high = max(MIN_FONT_SIZE, min(high, _size_for_cap_height(font_path, max_cap_px, high)))
     best = None
 
     while low <= high:
@@ -819,8 +919,9 @@ def _fit_text(text: str, inner_w: float, inner_h: float, font_path, max_lines: i
 
 
 def render_text_block(text, width, height, font_path=None, fill=DEFAULT_INK_RGB,
-                      bg=(0, 0, 0), margin_ratio=0.08, align="center", max_lines=3,
-                      uppercase=False, target_line_height=None) -> np.ndarray:
+                      bg=(0, 0, 0), margin_ratio=0.08, align="center",
+                      max_lines=GLYPH_MAX_LINES, uppercase=False, target_line_height=None,
+                      min_legible_px=0, max_cap_px=None) -> np.ndarray:
     """Render text as clean typography, auto-fitted into a ``width`` x ``height`` box.
 
     The point size is found by binary search so the wrapped text fills the box down to
@@ -837,6 +938,9 @@ def render_text_block(text, width, height, font_path=None, fill=DEFAULT_INK_RGB,
         align: "left", "center" or "right".
         max_lines: hard cap on the number of lines.
         uppercase: upper-case the text before layout (common on signage).
+        target_line_height: the size the surface already used, used as a cap.
+        min_legible_px: floor under that cap, as a cap height in pixels. 0 is off.
+        max_cap_px: hard ceiling on the cap height in pixels. ``None`` is off.
 
     Returns:
         uint8 RGB array of shape [height, width, 3]. Never raises.
@@ -860,7 +964,9 @@ def render_text_block(text, width, height, font_path=None, fill=DEFAULT_INK_RGB,
     inner_h = max(1.0, height - 2.0 * margin_y)
 
     font, lines = _fit_text(text, inner_w, inner_h, font_path, max_lines,
-                            target_line_height=target_line_height)
+                            target_line_height=target_line_height,
+                            min_legible_px=min_legible_px,
+                            max_cap_px=max_cap_px)
     line_h = _line_height(font)
     gap = max(1, int(round(line_h * LINE_GAP_RATIO)))
     block_h = len(lines) * line_h + (len(lines) - 1) * gap
@@ -961,7 +1067,8 @@ def warp_to_quad(block_rgb, quad, out_shape) -> tuple:
     return warped, alpha
 
 
-def _sauvola_text(gray, window, k=SAUVOLA_K, dynamic_range=128.0) -> np.ndarray:
+def _sauvola_text(gray, window, k=SAUVOLA_K, dynamic_range=128.0,
+                  contrast_scale=None) -> np.ndarray:
     """Sauvola's local threshold — the standard answer to text on uneven paper.
 
     A plain local mean marks half of every blank area as text, because with no
@@ -972,6 +1079,13 @@ def _sauvola_text(gray, window, k=SAUVOLA_K, dynamic_range=128.0) -> np.ndarray:
 
     Returns a bool array: True where the pixel is darker than its neighbourhood
     warrants.
+
+    ``contrast_scale`` replaces the local mean as the reference the demanded
+    contrast is measured against: the rule is ``mean - g > scale * k * (1 -
+    std/R)``, and with the default the scale IS the mean, which is Sauvola as
+    published. It has to be settable because this function is also run on an
+    INVERTED image to find light lettering, and inverting silently replaces
+    that reference by ``255 - mean``. See :func:`_threshold_ink`.
     """
     win = max(3, int(window) | 1)
     g = gray.astype(np.float32)
@@ -980,7 +1094,11 @@ def _sauvola_text(gray, window, k=SAUVOLA_K, dynamic_range=128.0) -> np.ndarray:
     mean_sq = cv2.boxFilter(g * g, cv2.CV_32F, (win, win), normalize=True,
                             borderType=cv2.BORDER_REPLICATE)
     std = np.sqrt(np.maximum(mean_sq - mean * mean, 0.0))
-    threshold = mean * (1.0 + k * (std / dynamic_range - 1.0))
+    if contrast_scale is None:
+        threshold = mean * (1.0 + k * (std / dynamic_range - 1.0))
+    else:
+        scale = np.asarray(contrast_scale, np.float32)
+        threshold = mean + scale * (k * (std / dynamic_range - 1.0))
     return g < threshold
 
 
@@ -1086,9 +1204,34 @@ def _threshold_ink(image_rgb, arr, inside, line_height, tolerance):
     # That halo is what made a navy plate come back as its own lettering.
     # Ink is what sits FURTHEST from the surface in brightness.
     surface_level = float(np.median(gray[inside]))
+
+    # The light pass runs on the INVERTED image, and Sauvola scales the contrast
+    # it demands by the local mean of the image it is handed. Inverting turns
+    # that reference into 255 - mean, so on a dark surface the light pass asks
+    # for k * (255 - mean) where the dark pass asks for k * mean. Measured on
+    # the street scene's painted shopfronts: 41.3 grey levels against 7.0, a
+    # 5.9x asymmetry inside a region whose entire range is 6..102. Gilt
+    # lettering on a dark fascia cannot reach that bar. PAXTRES came back as 68
+    # stray pixels of 13006 while the morphological response drew the whole word
+    # cleanly, and with no ink found the band lost its seed, erase became a
+    # no-op and the size cap fell away: one threshold, three symptoms.
+    #
+    # 255 - mean is an artefact of inverting an 8-bit buffer and says nothing
+    # about the surface. What contrast a stroke can carry is set by the light
+    # falling on it, and the local mean is the proxy for that in BOTH
+    # directions. Take whichever reference asks for less, so neither polarity
+    # is harder to satisfy than the other and no surface becomes unreachable
+    # for sitting near an end of the range. On a light surface min() picks the
+    # old value and nothing moves: measured over the wine shelf's ten labels
+    # and the noticeboard's five sheets, every mask comes back bit-identical.
+    box = max(3, int(window) | 1)
+    surface_mean = cv2.boxFilter(gray, cv2.CV_32F, (box, box), normalize=True,
+                                 borderType=cv2.BORDER_REPLICATE)
+    mirror = np.minimum(surface_mean, 255.0 - surface_mean)
+
     candidates = []
-    for polarity in (gray, 255.0 - gray):
-        found = _sauvola_text(polarity, window) & strong
+    for polarity, scale in ((gray, None), (255.0 - gray, mirror)):
+        found = _sauvola_text(polarity, window, contrast_scale=scale) & strong
         n = int(found.sum())
         separation = abs(float(np.median(gray[found])) - surface_level) if n >= 20 else 0.0
         candidates.append((found, separation, n))
@@ -1288,6 +1431,108 @@ def measure_ink_height(image_rgb, mask_2d, plate_rgb, tolerance: int = DEFAULT_I
     return float(heights[min(midpoint, len(heights) - 1)])
 
 
+def fallback_line_height(mask_2d):
+    """Stand-in lettering height for a region whose own lettering cannot be read.
+
+    ``measure_ink_height`` returning ``None`` used to leave the caller with no
+    cap at all, and no cap means the box decides — which sets the word as tall as
+    the whole plate. Reproduced offline: one pass took a 5px setting to 15-17px.
+    Of the two ways to be wrong, guessing too large is the damaging one, because
+    the box still has the last word and a cap that is too small only keeps the
+    replacement modest.
+
+    The stand-in is :data:`BAND_FALLBACK_HEIGHT` of the region's short side —
+    the same figure :func:`local_ink_response`, :func:`_threshold_ink` and
+    :func:`text_band` already fall back to when no height is known, so the whole
+    module answers "how tall is the lettering here" the same way. Checked
+    against the twenty-one measured regions of the three real scenes, where the
+    measured height runs 0.05 to 0.34 of the short side around a median of 0.17:
+    0.12 sits below the median and below thirteen of the twenty-one, so it is a
+    cap that holds rather than one that lifts.
+
+    Returns a float, or ``None`` when the mask is empty.
+    """
+    arr = _to_numpy_2d(mask_2d)
+    if arr is None:
+        return None
+    scale = 255.0 if float(arr.max()) <= 1.0 else 1.0
+    inside = (np.clip(arr, 0.0, None) * scale) > 127.0
+    ys, xs = np.where(inside)
+    if ys.size == 0:
+        return None
+    short_side = float(min(ys.max() - ys.min() + 1, xs.max() - xs.min() + 1))
+    return max(1.0, short_side * BAND_FALLBACK_HEIGHT)
+
+
+def ink_evidence_mask(image_rgb, mask_2d, line_height=None,
+                      tolerance: int = DEFAULT_INK_TOLERANCE):
+    """Where the region carries stroke-like structure, whichever way it runs.
+
+    This is :func:`local_ink_response` above its floor and nothing else: no
+    binarisation, no polarity decision, no thinness test. It therefore answers a
+    strictly weaker question than :func:`existing_ink_mask` — "is anything
+    written here at all" rather than "which pixels are the strokes" — and that is
+    what makes it usable as a check on the stronger answer.
+
+    Returns a float32 [H, W] mask in 0..1, or ``None`` when there is no region.
+    """
+    response = local_ink_response(image_rgb, mask_2d, line_height=line_height)
+    if response is None:
+        return None
+    return (response > float(tolerance) * INK_RESPONSE_FLOOR).astype(np.float32)
+
+
+def ink_detection_failed(image_rgb, mask_2d, ink_mask, evidence=None,
+                         tolerance: int = DEFAULT_INK_TOLERANCE) -> bool:
+    """Did the detector come back empty from a surface that plainly carries text?
+
+    An empty ink mask has two entirely different causes and the pipeline used to
+    treat them alike. On a blank surface it is the right answer and there is
+    nothing to do. On lettering the thresholds could not resolve it is a failure,
+    and treating that as "nothing to do" is the worst available outcome: the band
+    loses its seed so the old writing is never covered, erase hands the image
+    back untouched, and the new word is drawn straight over the surviving
+    original.
+
+    The two are told apart by the evidence rather than by the verdict.
+    :func:`ink_evidence_mask` asks only whether the surface carries stroke-like
+    structure, and it answers yes on the painted shopfronts (33.6% of the region)
+    and no on a blank plate, a smooth gradient or photographic grain
+    (0.00 / 0.59 / 0.15%).
+
+    ``True`` means: do not treat this region as ordinary. Hand it to
+    ``too_small_policy``, which already exists for surfaces that cannot honestly
+    be written on.
+    """
+    arr = _to_numpy_2d(mask_2d)
+    if arr is None or image_rgb is None:
+        return False
+    scale = 255.0 if float(arr.max()) <= 1.0 else 1.0
+    inside = (np.clip(arr, 0.0, None) * scale) > 127.0
+    total = float(inside.sum())
+    if total <= 0:
+        return False
+
+    found = 0.0
+    if ink_mask is not None:
+        ink = np.asarray(ink_mask, np.float32)
+        if ink.shape[:2] == inside.shape[:2]:
+            found = float((ink > 0.0).sum())
+    # The cheap half first. A region that yielded a usable mask needs no second
+    # opinion, and that is every region on the normal path.
+    if found / total >= INK_UNRESOLVED_SHARE:
+        return False
+
+    if evidence is None:
+        evidence = ink_evidence_mask(image_rgb, mask_2d, tolerance=tolerance)
+    if evidence is None:
+        return False
+    ev = np.asarray(evidence, np.float32)
+    if ev.shape[:2] != inside.shape[:2]:
+        return False
+    return float((ev[inside] > 0.0).sum()) / total >= INK_EVIDENCE_SHARE
+
+
 def quad_fit_error(mask_2d, quad) -> float:
     """Fraction of the mask's area that the fitted quad claims but does not cover.
 
@@ -1316,7 +1561,8 @@ CONTOUR_FIT_THRESHOLD = 0.12
 
 def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=None,
                        uppercase=False, margin_ratio=0.08, fit: str = "auto",
-                       cylinder: float = 0.0, target_line_height=None) -> tuple:
+                       cylinder: float = 0.0, target_line_height=None,
+                       min_legible_px=0) -> tuple:
     """Render replacement text onto the sign described by a mask, end to end.
 
     mask -> quad -> correctly sized text block -> perspective warp.
@@ -1331,10 +1577,18 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
             colour (see :func:`estimate_text_colors`).
         uppercase: upper-case the text before layout.
         margin_ratio: padding inside the sign box as a fraction of its size.
+        target_line_height: the size the surface already used, used as a cap.
+        min_legible_px: floor under that cap, as a cap height in pixels. 0 is off.
+            With the floor on, a setting that does not stand inside the mask is
+            stepped down until it does, rather than being clipped at the edge —
+            and when no setting down to :data:`MIN_FONT_SIZE` stands inside, the
+            layer comes back EMPTY so the caller can put the region through its
+            too_small policy. A word is never returned with its ends cut off.
 
     Returns:
         ``(rgb, alpha)`` — float32 [H, W, 3] in 0..1 and float32 [H, W] in 0..1.
-        An empty mask returns zero arrays. Never raises.
+        An empty mask, or text that cannot be set inside the silhouette, returns
+        zero arrays. Never raises.
     """
     arr = _to_numpy_2d(mask_2d)
     if arr is None:
@@ -1361,13 +1615,7 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
         inside = inside / 255.0
     inside_bool = inside > 0.5
 
-    def _lay_out(margin):
-        block = render_text_block(
-            text, block_w, block_h,
-            font_path=font_path, fill=fill, bg=plate,
-            margin_ratio=margin, uppercase=uppercase,
-            target_line_height=target_line_height,
-        )
+    def _warp(block):
         rgb = alpha = None
         if mode == "contour":
             rgb, alpha = warp_to_contour(block, arr, (out_h, out_w), cylinder=cylinder)
@@ -1375,7 +1623,44 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
                 rgb = alpha = None
         if rgb is None:
             rgb, alpha = warp_to_quad(block, quad, (out_h, out_w))
+        return rgb, alpha
+
+    def _lay_out(margin, cap_ceiling=None):
+        block = render_text_block(
+            text, block_w, block_h,
+            font_path=font_path, fill=fill, bg=plate,
+            margin_ratio=margin, max_lines=GLYPH_MAX_LINES, uppercase=uppercase,
+            target_line_height=target_line_height,
+            min_legible_px=min_legible_px,
+            max_cap_px=cap_ceiling,
+        )
+        rgb, alpha = _warp(block)
         return block, rgb, alpha
+
+    def _ink_outside(block):
+        """Share of the LETTERS that lands outside the silhouette, 0..1.
+
+        Stamps the block ink out first and warps THAT, rather than measuring the
+        warped picture against the plate colour, because the warp has an
+        anti-aliased border of its own: at the edge of the quad the plate fades
+        to black, every pixel of that fade differs from the plate, and it is
+        counted as lettering. That border does not shrink when the type does —
+        measured on a tilted plate, 162 pixels outside at EVERY type size from
+        11px down to 3px, so the share only ROSE as the letters got smaller
+        (0.13 -> 0.38) and no amount of shrinking could ever satisfy the test.
+        On the letters alone the same run reads 0.000 throughout, and the one
+        genuinely overhanging case (a diamond, contour mode) falls
+        0.156 -> 0.073 -> 0.002 over two steps.
+        """
+        stamp = np.zeros_like(block)
+        stamp[np.abs(block.astype(np.float32)
+                     - np.asarray(plate, np.float32)).max(axis=2) > DEFAULT_INK_TOLERANCE] = 255
+        w_rgb, w_alpha = _warp(stamp)
+        ink = (np.asarray(w_rgb, np.float32).max(axis=2) > 0.5) & (w_alpha > 0.05)
+        total = float(ink.sum())
+        if total <= 0:
+            return 0.0
+        return float((ink & ~inside_bool).sum()) / total
 
     # Letters must never be cut off. The quad can be wider than the silhouette it
     # was fitted to — a note pinned at a slight angle reads as square, its
@@ -1383,20 +1668,86 @@ def render_glyph_layer(text, mask_2d, font_path=None, fill=DEFAULT_INK_RGB, bg=N
     # replaces it then reaches past the paper. Clipping the layer to the mask
     # afterwards would take the ends off the word. So check what the warp
     # actually lands on and pull the text in until it fits.
+    #
+    # Growing the margin is the wrong lever whenever the type size is set by the
+    # cap rather than by the box: the block is laid out at the SAME size and only
+    # re-centred, so the warp lands on the same pixels and the reading cannot
+    # improve. Measured over all five attempts on a tilted plate, it did not move
+    # at all — 0.347 five times over.
+    #
+    # Only the legibility floor can lift the type above the size the old
+    # lettering had, so it is the only thing that has to answer for a setting the
+    # surface cannot carry — and it answers by stepping the TYPE down until the
+    # letters stand inside, never by letting them be clipped. It also has to
+    # judge that on the letters alone; see _ink_outside for why the reading the
+    # margin walk goes by cannot serve. Without the floor the type is already no
+    # larger than what was there before, so the margin walk is left exactly as it
+    # was, reading included, and a run with the floor off is unchanged.
     margin = margin_ratio
+    ceiling = None
+    if min_legible_px and min_legible_px > 0:
+        probe_w = max(1.0, block_w - 2.0 * block_w * margin_ratio)
+        probe_h = max(1.0, block_h - 2.0 * block_h * margin_ratio)
+        probe, _lines = _fit_text(text, probe_w, probe_h, font_path, GLYPH_MAX_LINES,
+                                  target_line_height=target_line_height,
+                                  min_legible_px=min_legible_px)
+        ceiling = _cap_height(probe) or None
+
     block = rgb = alpha = None
-    for _ in range(GLYPH_FIT_ATTEMPTS):
-        block, rgb, alpha = _lay_out(margin)
-        strokes = (np.abs(rgb.astype(np.float32) * 255.0
-                          - np.asarray(plate, np.float32)).max(axis=2) > DEFAULT_INK_TOLERANCE)
-        strokes &= alpha > 0.05
-        total = float(strokes.sum())
-        if total <= 0:
-            break
-        outside = float((strokes & ~inside_bool).sum()) / total
-        if outside <= GLYPH_CLIP_TOLERANCE:
-            break
-        margin = min(0.45, margin + GLYPH_MARGIN_STEP)
+    if ceiling:
+        # Stepping down is not a budget of five tries, it is the promise that no
+        # word is ever cut off — so it runs until the letters stand inside, or
+        # until there is no lettering left to shrink. Five was not enough on real
+        # material: on the bowed painted shop window of the street scene
+        # (tests/live/st_0_mask2_real_street.png) the setting still had 0.54 of
+        # its ink outside after the fifth attempt, and the clip below then took
+        # 0.47 of the word off the picture. Falling back to the margin walk at
+        # that point made it worse, not better — that walk drops the cap
+        # ceiling again, so the last thing laid out was the LARGEST setting of
+        # the whole run.
+        fitted = False
+        for _ in range(GLYPH_SHRINK_ATTEMPTS):
+            block, rgb, alpha = _lay_out(margin, ceiling)
+            if _ink_outside(block) <= GLYPH_CLIP_TOLERANCE:
+                fitted = True
+                break
+            ceiling = ceiling * GLYPH_SHRINK_STEP
+            if ceiling < float(min_legible_px):
+                # The floor is a stopping line, not just a starting one. Shrinking
+                # past it keeps the promise "never cut a word off" in the letter
+                # and breaks it in the spirit: type below the floor comes back from
+                # the sampler as mush, and the census reads mush as an invented
+                # string. That is measured, and it is why the floor exists at all -
+                # 4-5px settings came back as IESLIN / SLIN for RIESLING. An erased
+                # surface scores nothing; a 5px setting scores one. So a word that
+                # only fits below the floor is not a rescued word, it is the same
+                # failure under another name, and it belongs to too_small_policy.
+                break
+        if not fitted:
+            # Nothing that would still be lettering stands inside this outline.
+            # Hand back an empty layer rather than a word with its ends cut off:
+            # the caller then puts the region through too_small_policy, which is
+            # where "this surface cannot carry a word" belongs. Shrinking cannot
+            # always win — where the quad's centre falls outside the
+            # silhouette, as it does on a crescent, a smaller setting sits MORE
+            # firmly outside — so the walk has to be allowed to fail. Half a
+            # word is the one outcome that is never acceptable: a census reads it
+            # as invented text, indistinguishable from the garble being removed.
+            return (np.zeros((out_h, out_w, 3), dtype=np.float32),
+                    np.zeros((out_h, out_w), dtype=np.float32))
+    else:
+        for _ in range(GLYPH_FIT_ATTEMPTS):
+            block, rgb, alpha = _lay_out(margin, None)
+            strokes = (np.abs(rgb.astype(np.float32) * 255.0
+                              - np.asarray(plate, np.float32)).max(axis=2) > DEFAULT_INK_TOLERANCE)
+            strokes &= alpha > 0.05
+            total = float(strokes.sum())
+            if total <= 0:
+                break
+            outside = float((strokes & ~inside_bool).sum()) / total
+            if outside <= GLYPH_CLIP_TOLERANCE:
+                break
+            margin = min(0.45, margin + GLYPH_MARGIN_STEP)
 
     # Clip to the mask itself, not just its bounding quad. SAM3 returns real
     # silhouettes — a round sign, a curved bottle label, a torn poster — and the
