@@ -1,0 +1,18 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+drinks table with cups and mixers | 0.95 | 0.3-0.5 | cluttered plastic bottle spread
+cooler packed with ice and cans | 0.85 | 0.2-0.4 | frosted plastic ice bin
+bluetooth speaker on desk | 0.85 | 0.2-0.3 | fabric-wrapped glowing box
+cluster of people dancing nearby | 0.8 | 0.3-0.5 | packed moving crowd mass
+futon pushed against wall | 0.6 | 0.3-0.5 | worn cushioned frame seating
+desk chairs pulled into circle | 0.55 | 0.2-0.4 | rolling office chair cluster
+beer pong table set up | 0.7 | 0.3-0.5 | folding table with cup grid
+stacked pizza boxes on desk | 0.75 | 0.2-0.4 | greasy cardboard box stack
+mini refrigerator topped with cups | 0.65 | 0.2-0.4 | compact appliance cup cluster
+laundry hamper shoved into corner | 0.5 | 0.2-0.3 | mesh bag clothing bin
+crowd of people near doorway | 0.7 | 0.3-0.5 | packed bodies at threshold
+folding table with snacks | 0.6 | 0.2-0.4 | spread of bagged chips
+pushed-together desks holding drinks | 0.55 | 0.2-0.4 | cluttered study surface
+overloaded power strip on floor | 0.45 | 0.2-0.3 | tangled cable and outlet block
+couch cushions used as extra seating | 0.5 | 0.2-0.4 | stacked cushion pile

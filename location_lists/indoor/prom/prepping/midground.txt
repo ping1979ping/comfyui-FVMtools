@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+vanity stool pulled close to the mirror | 0.7 | 0.2-0.4 | cushion dented
+shoe boxes stacked by the closet | 0.7 | 0.2-0.4 | lids askew
+ironing board set up in the corner | 0.5 | 0.2-0.4 | steam still rising
+dresser top crowded with bottles | 0.75 | 0.2-0.45 | mismatched caps
+desk chair draped with a cardigan | 0.5 | 0.15-0.35 | sleeve trailing to the floor
+hamper overflowing with rejected outfits | 0.55 | 0.2-0.4 | fabric spilling over the rim
+tripod holding a ring light | 0.4 | 0.15-0.35 | angled toward the mirror
+corsage box open on the dresser | 0.7 | 0.1-0.3 | clear plastic lid propped up
+curling iron stand plugged in | 0.65 | 0.1-0.25 | cord looped over the edge
+jewelry box open on the bed | 0.6 | 0.1-0.3 | compartments picked through
+bench at the foot of the bed | 0.45 | 0.2-0.4 | shoes lined along it
+laundry basket pushed against the wall | 0.4 | 0.15-0.35 | overflow of everyday clothes
+floor lamp angled toward the mirror | 0.4 | 0.15-0.35 | warm bulb glow
+bathroom counter crowded with brushes | 0.55 | 0.2-0.4 | bristles fanned out

@@ -1,0 +1,19 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+stack of cardboard moving boxes | 1.0 | 0.35-0.5 | taped seams labeled by room
+clear plastic storage bins stacked in a column | 0.85 | 0.3-0.5 | snap-lid towers
+mini refrigerator still wrapped in its packaging | 0.75 | 0.3-0.45 | plastic film and foam corners
+rolling desk chair parked at an angle | 0.6 | 0.25-0.4 | mesh back tilted
+floor lamp still boxed against the wall | 0.5 | 0.25-0.4 | flattened carton
+area rug rolled and leaned in the corner | 0.5 | 0.25-0.45 | twine-cinched roll
+collapsible moving dolly folded against the boxes | 0.55 | 0.2-0.35 | rubber wheels visible
+under-bed storage bins pulled halfway out | 0.5 | 0.25-0.4 | stacked shallow drawers
+roommate's mini refrigerator already plugged in and humming | 0.5 | 0.25-0.4 | cord taped to the baseboard
+cardboard wardrobe box standing upright | 0.45 | 0.3-0.5 | metal hanging bar inside
+packed suitcase tower by the closet | 0.5 | 0.25-0.4 | zippered hard shells
+hamper stuffed with unsorted linens | 0.4 | 0.2-0.35 | mesh sides bulging
+desk chair still shrink-wrapped | 0.4 | 0.25-0.4 | plastic sheen
+trunk-style storage container at the foot of the bed | 0.45 | 0.25-0.45 | riveted metal corners
+cooler packed for the drive home | 0.35 | 0.2-0.35 | condensation beading
+stack of flattened moving boxes leaning by the door | 0.45 | 0.2-0.4 | crushed cardboard layers

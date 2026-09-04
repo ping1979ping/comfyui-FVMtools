@@ -1,0 +1,19 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+flattened cardboard sheets covering the floor | 0.85 | 0.2-0.4 | crisscrossed panels
+loose packing peanuts scattered underfoot | 0.5 | 0.1-0.25 | static-clinging foam bits
+bubble wrap sheets crumpled on the tile | 0.55 | 0.1-0.25 | popped air pockets
+dorm tile floor scuffed by dolly wheels | 0.45 | 0.15-0.3 | black rubber streaks
+extension cord snaking across the floor | 0.5 | 0.1-0.25 | coiled slack
+roll of packing tape left on the floor | 0.4 | 0.1-0.2 | dried tape edge
+moving straps coiled near the doorway | 0.4 | 0.1-0.2 | ratcheted buckles
+pile of shoes kicked off by the door | 0.5 | 0.1-0.25 | mismatched sneakers
+plastic mattress wrap peeled onto the floor | 0.45 | 0.1-0.25 | crinkled sheeting
+foam corner protectors dropped near the bed frame | 0.4 | 0.1-0.2 | stripped packaging foam
+box cutter resting on a flattened box | 0.35 | 0.1-0.15 | retracted blade
+hallway light spilling under the propped door | 0.5 | 0.1-0.2 | thin bright line
+price tag stickers peeled and stuck to the floor | 0.35 | 0.1-0.15 | curling adhesive strips
+wheeled dolly tracks pressed into the carpet | 0.4 | 0.1-0.2 | faint parallel lines
+stray zip ties clipped from a box | 0.35 | 0.1-0.15 | short plastic curls
+paper packing sheets crumpled near the bins | 0.4 | 0.1-0.25 | wrinkled newsprint

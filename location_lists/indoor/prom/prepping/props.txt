@@ -1,0 +1,19 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+curling iron still warm | 0.75 | 0.02-0.1 | faint heat shimmer
+makeup brushes fanned on the dresser | 0.75 | 0.02-0.12 | bristles various sizes
+corsage box with a clear lid | 0.7 | 0.02-0.1 | ribbon looped around it
+boutonniere pin case | 0.5 | 0.02-0.06 | small velvet box
+phone propped against the mirror | 0.65 | 0.02-0.08 | screen lit with messages
+shoe boxes with tissue paper | 0.6 | 0.05-0.15 | lids stacked aside
+bobby pin tin left open | 0.55 | 0.02-0.06 | scattered pins
+hairspray can on the dresser | 0.7 | 0.02-0.08 | sticky cap ring
+clutch purse propped on the bed | 0.55 | 0.02-0.1 | rhinestone clasp catching light
+jewelry dish with borrowed earrings | 0.55 | 0.02-0.08 | mismatched pairs
+garment steamer on standby | 0.4 | 0.02-0.1 | water tank half full
+safety pin strip on the dresser | 0.4 | 0.02-0.05 | pins still in the paper
+perfume bottles clustered together | 0.6 | 0.02-0.08 | assorted glass shapes
+hair straightener cord looped | 0.5 | 0.02-0.08 | heat mat beneath it
+disposable camera on the dresser | 0.4 | 0.02-0.06 | wound and ready
+bag of bobby pins spilled open | 0.4 | 0.02-0.06 | plastic bag torn at the seam

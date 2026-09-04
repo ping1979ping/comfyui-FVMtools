@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+bedroom carpet strewn with price tags | 0.7 | 0.15-0.35 | tags snipped loose
+shoe box lid upside down on the floor | 0.6 | 0.1-0.3 | tissue paper spilling out
+bathroom tile scattered with bobby pins | 0.55 | 0.1-0.25 | metallic pins fanned out
+discarded hanger tangle on the rug | 0.5 | 0.1-0.3 | wire hooks crossed
+tissue paper drifted near the bed | 0.5 | 0.1-0.25 | crumpled white sheets
+heel prints pressed into fresh carpet | 0.4 | 0.1-0.25 | vacuum lines disturbed
+bobby pin scatter by the mirror | 0.5 | 0.1-0.2 | small metal glints
+dropped receipt from the shoe store | 0.4 | 0.1-0.2 | curled paper strip
+shoe box tissue crumpled underfoot | 0.45 | 0.1-0.25 | tissue balled loose
+safety pin dropped near the closet | 0.35 | 0.1-0.2 | small silver glint
+bathroom rug damp near the sink | 0.45 | 0.1-0.3 | terrycloth soaked patch
+garment tag clipped off on the floor | 0.4 | 0.1-0.2 | plastic loop cut free

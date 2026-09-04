@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+wide whiteboard wall up front | 1.0 | 0.7-1.0 | matte dry-erase panel
+large pull-down projection screen | 0.95 | 0.6-1.0 | retractable matte white fabric
+painted cinder block side wall | 0.9 | 0.6-0.9 | textured painted block
+built-in acoustic panel wall | 0.7 | 0.5-0.8 | perforated fabric-wrapped panel
+tall clerestory windows along upper wall | 0.6 | 0.5-0.9 | frosted glass strip
+back wall with double exit doors | 0.75 | 0.5-0.8 | painted steel double doors
+dark curtained av blackout wall | 0.5 | 0.5-0.9 | heavy pleated drape
+brick accent wall behind lectern | 0.45 | 0.5-0.8 | exposed red brick
+painted concrete rear wall | 0.65 | 0.6-1.0 | smooth grey concrete
+suspended acoustic ceiling far above | 0.8 | 0.6-1.0 | grid-mounted tile field
+built-in chalkboard sliding panel | 0.4 | 0.5-0.8 | green slate panel
+flat panel display mounted high | 0.55 | 0.4-0.7 | black bezel screen
+lecture hall crest banner wall | 0.4 | 0.4-0.7 | printed vinyl banner
+side wall of built-in cabinetry | 0.5 | 0.5-0.8 | laminate storage doors

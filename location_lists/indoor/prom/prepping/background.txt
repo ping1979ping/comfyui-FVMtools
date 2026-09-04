@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+full-length mirror on closet door | 0.95 | 0.5-0.9 | smudged with hairspray mist
+dress laid flat across the bed | 0.9 | 0.4-0.8 | tissue paper folds beneath it
+suit laid flat across the bed | 0.5 | 0.4-0.8 | garment bag half peeled back
+bedroom window with sheer curtains | 0.7 | 0.3-0.6 | evening light filtering through
+dresser mirror ringed with lights | 0.65 | 0.3-0.6 | bulbs warm and bright
+closet doors thrown wide open | 0.75 | 0.4-0.7 | rejected outfits on hangers
+bathroom vanity mirror | 0.6 | 0.4-0.7 | fogged faintly at the edges
+bedroom wall strung with fairy lights | 0.55 | 0.4-0.7 | warm glow strand
+garment bag hung on the door | 0.6 | 0.3-0.6 | plastic sheeting catching light
+headboard draped with a borrowed shawl | 0.4 | 0.3-0.6 | wrinkled satin trim
+shared bathroom double sinks | 0.45 | 0.4-0.7 | counter crowded with bottles
+bedroom door propped wide open | 0.5 | 0.3-0.6 | hallway light spilling in
+window overlooking the driveway | 0.5 | 0.3-0.6 | car idling below
+bathroom door left ajar | 0.4 | 0.3-0.6 | steam drifting out

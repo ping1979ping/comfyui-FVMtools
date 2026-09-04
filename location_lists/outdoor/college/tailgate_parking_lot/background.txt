@@ -1,0 +1,19 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+distant stadium upper deck structure | 1.0 | 0.6-1.0 | massive concrete and steel tiered bowl
+long rows of parked tailgate trucks | 0.95 | 0.6-1.0 | endless lines of trucks and suvs across asphalt
+stadium light tower array | 0.8 | 0.5-0.9 | tall steel lattice poles with banks of floodlights
+flat asphalt parking lot expanse | 0.9 | 0.6-1.0 | gray pavement stretching toward stadium walls
+hazy september game day sky | 0.75 | 0.5-1.0 | pale blue afternoon backdrop
+scattered fans streaming toward gates | 0.6 | 0.4-0.8 | distant crowd walking in team colors
+stadium gate entrance towers | 0.55 | 0.4-0.7 | brick and glass entry structures
+shade trees bordering the lot | 0.5 | 0.4-0.7 | leafy green canopy along the pavement edge
+elevated press box and scoreboard | 0.6 | 0.4-0.7 | glass box mounted above the stadium rim
+municipal water tower beyond stadium | 0.4 | 0.3-0.6 | painted tank on tall stilts
+brick campus buildings skyline | 0.45 | 0.3-0.6 | collegiate rooftops beyond the lot
+rows of team pennant banners | 0.55 | 0.3-0.6 | team-colored flags lining a walkway
+grill smoke haze drifting over lot | 0.65 | 0.4-0.8 | thin smoke layer hanging over rows of tailgates
+chartered fan buses parked in a row | 0.45 | 0.4-0.7 | line of charter coaches along the lot edge
+distant marching band practice field | 0.4 | 0.3-0.6 | open grass strip beyond the pavement
+overcast pregame cloud ceiling | 0.45 | 0.5-1.0 | flat gray clouds over the stadium

@@ -1,0 +1,18 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+DJ booth stacked with mixing lights | 1.0 | 0.3-0.5 | lit equipment console
+crowded dance floor beneath colored lights | 0.95 | 0.3-0.5 | packed open floor area
+refreshment table with punch bowl | 0.85 | 0.2-0.4 | draped skirted table
+round guest tables with centerpieces | 0.7 | 0.3-0.5 | linen-covered seating cluster
+folding chair row along the wall | 0.6 | 0.2-0.4 | lined banquet seating
+balloon arch near the entrance | 0.55 | 0.2-0.5 | clustered latex sphere arch
+glowing dance floor tile grid | 0.6 | 0.3-0.5 | lit-panel flooring section
+photo booth prop stand corner | 0.5 | 0.2-0.4 | costume prop rack nook
+speaker tower stack beside stage | 0.55 | 0.2-0.4 | tall black PA cabinet pair
+cocktail table cluster with linens | 0.55 | 0.2-0.4 | tall draped standing tables
+chaperone check-in table near wall | 0.45 | 0.2-0.4 | supervised registration table
+gift table with keepsake favors | 0.4 | 0.2-0.4 | small favor display table
+king and queen crowning stage riser | 0.5 | 0.2-0.5 | raised platform with banner
+cotton candy vendor cart on wheels | 0.4 | 0.2-0.4 | vintage rolling treat cart
+coat check rack near the entrance | 0.4 | 0.2-0.4 | hanging garment rail

@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+outlet crowded with chargers | 0.6 | 0.02-0.1 | curling iron and phone cords
+closet track worn smooth | 0.4 | 0.02-0.08 | sliding door groove
+bathroom exhaust fan humming | 0.45 | 0.02-0.08 | steady white noise
+light switch dimmed low | 0.4 | 0.02-0.06 | plate warm to the touch
+window latch left unlocked | 0.35 | 0.02-0.06 | cracked for the evening air
+baseboard scuffed by shoe boxes | 0.4 | 0.02-0.08 | scraped paint line
+mirror frame catching the light | 0.5 | 0.02-0.1 | thin gilt edge
+door hinge creaking open | 0.35 | 0.02-0.06 | often propped wide
+vanity bulb slightly flickering | 0.35 | 0.02-0.08 | one bulb dimmer than the rest
+carpet seam by the closet | 0.35 | 0.02-0.06 | metal transition strip
+bathroom grout lined with powder residue | 0.4 | 0.02-0.08 | fine dust settled
+thermostat nudged warm for hairspray fumes | 0.3 | 0.02-0.06 | dial turned up

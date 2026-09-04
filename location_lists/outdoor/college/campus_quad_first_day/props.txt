@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stack of course syllabus flyers | 0.85 | 0.05-0.15 | crisp white printed handouts
+club recruitment sign-up clipboard | 0.8 | 0.02-0.1 | metal clip and pen tether
+free pizza box stack | 0.6 | 0.05-0.15 | grease-stained cardboard boxes
+branded tote bag giveaway pile | 0.65 | 0.05-0.15 | printed canvas tote stack
+bowl of candy giveaway dish | 0.5 | 0.02-0.1 | plastic bowl wrapped candies
+stray backpack leaned upright | 0.85 | 0.05-0.2 | worn canvas backpack straps
+water bottle on table edge | 0.6 | 0.02-0.1 | condensation-beaded plastic bottle
+locked bike u-lock cluster | 0.7 | 0.02-0.1 | matte black steel shackle
+campus map paper handout | 0.7 | 0.02-0.1 | folded glossy printed sheet
+dorm key lanyard tag | 0.5 | 0.02-0.08 | laminated printed keycard
+reusable coffee cup sleeve | 0.55 | 0.02-0.08 | cardboard-sleeved paper cup
+sunglasses resting on table | 0.45 | 0.02-0.08 | tinted plastic frame pair
+balloon cluster tied to tent | 0.6 | 0.05-0.15 | bright latex balloon bunch
+course schedule printout page | 0.55 | 0.02-0.1 | stapled printed grid sheet

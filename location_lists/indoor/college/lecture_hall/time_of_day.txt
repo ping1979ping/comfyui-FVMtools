@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-morning lecture block | 0.9 | - | -
+early afternoon class session | 0.85 | - | -
+late afternoon fading daylight | 0.6 | - | -
+evening night class session | 0.55 | - | -
+back-to-back class transition light | 0.5 | - | -
+harsh overhead fluorescent glare | 1.0 | - | -
+dim projector-dark mode lighting | 0.6 | - | -
+mid-semester weekday morning | 0.7 | - | -
+first-period early light | 0.45 | - | -
+post-lunch drowsy afternoon | 0.5 | - | -
+pre-exam late evening session | 0.4 | - | -

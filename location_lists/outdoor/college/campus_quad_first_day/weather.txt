@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm late-summer sky | 1.0 | - | -
+scattered fair-weather clouds | 0.85 | - | -
+light breeze rustling banners | 0.7 | - | -
+warm humid late-summer air | 0.65 | - | -
+crisp cool early-autumn air | 0.55 | - | -
+brief passing afternoon shower | 0.4 | - | -
+hazy warm afternoon air | 0.5 | - | -
+gentle gusty campus wind | 0.55 | - | -
+overcast mild daylight | 0.45 | - | -
+post-rain damp pavement air | 0.4 | - | -

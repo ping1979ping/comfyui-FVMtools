@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early saturday morning light | 0.8 | - | -
+crisp midday game day sun | 1.0 | - | -
+late morning tailgate hours | 0.85 | - | -
+early afternoon kickoff light | 0.9 | - | -
+golden hour before night game | 0.6 | - | -
+hazy noon sun | 0.65 | - | -
+dusk pregame tailgate | 0.5 | - | -
+bright late-summer afternoon | 0.75 | - | -
+overcast early morning | 0.45 | - | -
+mid-afternoon sun high overhead | 0.7 | - | -
+cool autumn morning light | 0.55 | - | -

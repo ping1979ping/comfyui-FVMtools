@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late evening dance hour | 1.0 | - | -
+dim after-dark interior lighting | 0.9 | - | -
+nighttime with colored spotlights | 0.95 | - | -
+early evening dusk arrival | 0.6 | - | -
+midnight countdown moment | 0.6 | - | -
+deep night dance peak | 0.85 | - | -
+late night winding down hour | 0.5 | - | -
+blacked-out room lit only by lights | 0.75 | - | -
+post-dinner evening transition | 0.5 | - | -
+pre-dance early evening glow | 0.45 | - | -
+final slow dance late hour | 0.55 | - | -

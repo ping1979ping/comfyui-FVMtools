@@ -1,0 +1,16 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+wall-mounted thermostat unit | 0.6 | 0.02-0.08 | beige plastic housing
+cinderblock grout lines running in rows | 0.55 | 0.05-0.15 | mortar seams
+door closer arm mounted above the frame | 0.45 | 0.02-0.06 | hydraulic hinge bar
+room number placard on the door | 0.5 | 0.02-0.05 | engraved plastic plate
+light switch plate by the entry | 0.45 | 0.02-0.05 | worn toggle switch
+sprinkler head set in the ceiling tile | 0.4 | 0.02-0.05 | recessed brass nozzle
+exposed conduit pipe along the ceiling edge | 0.35 | 0.03-0.08 | painted metal run
+mini blinds with a few bent slats | 0.45 | 0.05-0.15 | uneven slat gaps
+closet door track worn at the roller | 0.4 | 0.02-0.06 | scraped aluminum channel
+power outlet crowded with adapters | 0.5 | 0.02-0.06 | stacked plug heads
+fire alarm strobe unit on the wall | 0.4 | 0.02-0.05 | clear lens cover
+door propped open with a rubber wedge | 0.7 | 0.02-0.06 | worn rubber doorstop
+ceiling tile with a faint water stain | 0.35 | 0.03-0.08 | brown ring mark

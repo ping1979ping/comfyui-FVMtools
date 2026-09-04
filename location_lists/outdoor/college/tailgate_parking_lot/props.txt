@@ -1,0 +1,19 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+team logo koozie on a can | 0.7 | 0.05-0.15 | foam drink sleeve with a school logo
+cornhole bean bags mid-toss | 0.65 | 0.05-0.15 | fabric toss bags in team colors
+grill tongs and spatula set | 0.75 | 0.05-0.2 | long-handled grilling tools
+draped team jersey on a chair | 0.6 | 0.05-0.15 | replica jersey hung over a chair back
+handheld team pennant flag | 0.55 | 0.05-0.15 | small triangular school flag on a stick
+bluetooth speaker on the tailgate | 0.6 | 0.05-0.15 | portable speaker playing pregame music
+stack of red plastic cups | 0.65 | 0.05-0.15 | disposable cup sleeve near the cooler
+platter of grilled bratwurst | 0.7 | 0.1-0.2 | char-marked sausages on a serving tray
+bag of charcoal briquettes | 0.5 | 0.05-0.15 | paper sack leaning against the cooler
+oversized foam finger prop | 0.45 | 0.05-0.15 | foam number one hand for cheering
+school-branded folding chair | 0.65 | 0.05-0.2 | canvas chair printed with a team logo
+football resting on a tailgate | 0.6 | 0.05-0.15 | leather ball set on the truck bed edge
+cooler full of iced drinks | 0.7 | 0.1-0.2 | open cooler packed with cans on ice
+stack of paper plates and napkins | 0.55 | 0.05-0.15 | disposable plate stack with napkins
+hand-lettered game day sign | 0.4 | 0.05-0.15 | cardboard sign with a team slogan
+bottle opener on a lanyard | 0.4 | 0.05-0.1 | keychain opener hanging from a belt loop

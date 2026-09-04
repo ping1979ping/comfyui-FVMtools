@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm crowded interior air | 0.9 | - | -
+hazy fog machine atmosphere | 0.75 | - | -
+calm still indoor climate | 0.7 | - | -
+humid dance-floor warmth | 0.6 | - | -
+air conditioned interior chill | 0.5 | - | -
+shimmering light-filled atmosphere | 0.8 | - | -
+faint perfume and cologne scented air | 0.4 | - | -
+dry crisp indoor air | 0.45 | - | -
+energetic charged party atmosphere | 0.85 | - | -
+cool draft near entrance doors | 0.4 | - | -
+still glittering haze in the air | 0.6 | - | -

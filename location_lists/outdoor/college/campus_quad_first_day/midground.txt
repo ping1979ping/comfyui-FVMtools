@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+welcome week club tent row | 1.0 | 0.3-0.6 | white pop-up canvas canopies
+folding table info booth line | 0.95 | 0.2-0.5 | plastic-topped trestle tables
+campus map kiosk stand | 0.85 | 0.2-0.4 | metal-framed glass display case
+crowded bike rack row | 0.9 | 0.2-0.5 | u-shaped galvanized steel loops
+paved quad crosswalk path | 0.85 | 0.3-0.6 | brick-inlaid concrete walkway
+student union outdoor patio | 0.6 | 0.2-0.5 | umbrella-shaded seating cluster
+sandwich-board directory sign | 0.7 | 0.1-0.3 | chalk-lettered a-frame sign
+planted flower bed border | 0.65 | 0.2-0.4 | mulched marigold and mum bed
+wooden park bench cluster | 0.75 | 0.2-0.4 | slatted teak seating row
+lamppost banner pole line | 0.7 | 0.2-0.4 | fluted cast-iron light standard
+recycling and trash bin pair | 0.6 | 0.1-0.3 | powder-coated metal receptacles
+stone fountain centerpiece basin | 0.55 | 0.2-0.5 | tiered granite water basin
+shuttle bus stop shelter | 0.5 | 0.2-0.4 | glass-paneled aluminum canopy
+low brick planter wall | 0.55 | 0.15-0.35 | stepped brick retaining edge

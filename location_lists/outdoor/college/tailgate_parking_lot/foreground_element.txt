@@ -1,0 +1,20 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+painted white parking space lines | 0.85 | 0.15-0.35 | faded white striping on worn asphalt
+oil-stained asphalt patch | 0.6 | 0.1-0.25 | dark oil stains marking the pavement
+tailgate bed lined with coolers | 0.8 | 0.15-0.4 | pickup bed loaded close-up with drink coolers
+grass median strip between rows | 0.5 | 0.15-0.35 | thin mowed grass divider strip
+gravel overflow lot patch | 0.4 | 0.15-0.35 | loose gravel surface section
+crumpled food wrapper on pavement | 0.45 | 0.1-0.2 | discarded wrapper near a chair leg
+shadow of canopy tent on pavement | 0.5 | 0.15-0.3 | tent shadow cast across the asphalt
+chalk-drawn hopscotch game lines | 0.35 | 0.1-0.25 | faded chalk marks near a tailgate spot
+scattered charcoal briquettes on asphalt | 0.4 | 0.1-0.2 | dropped briquettes near the grill
+painted yellow curb stripe | 0.55 | 0.1-0.3 | painted curb marking the lot boundary
+patch of worn brown grass | 0.4 | 0.1-0.25 | trampled dead grass strip between spaces
+stack of split firewood logs | 0.45 | 0.15-0.3 | bundled logs stacked near the grill
+shallow puddle reflecting light towers | 0.35 | 0.1-0.2 | rainwater pool reflecting stadium lights
+row of empty folding chairs | 0.6 | 0.15-0.35 | unoccupied lawn chairs facing the tailgate
+discarded plastic cup on asphalt | 0.4 | 0.1-0.15 | crushed cup lying on the pavement
+close pickup truck tire and wheel | 0.65 | 0.15-0.3 | tire pressed against the curb edge
+tangle of extension cords on ground | 0.4 | 0.1-0.2 | cords running to the portable grill

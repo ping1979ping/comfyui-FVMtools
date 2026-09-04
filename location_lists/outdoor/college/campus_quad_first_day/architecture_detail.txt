@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+carved stone building cornice | 0.85 | 0.05-0.2 | weathered limestone relief molding
+arched brick window surround | 0.8 | 0.05-0.2 | soldier-course brick voussoir
+engraved cornerstone founding plaque | 0.6 | 0.02-0.1 | bronze cast lettering plate
+copper roof gutter seam | 0.55 | 0.02-0.1 | oxidized green patina metal
+wrought-iron window grille | 0.5 | 0.05-0.15 | scrolled black iron bars
+limestone entry archway keystone | 0.65 | 0.05-0.15 | carved central wedge stone
+ivy tendril climbing brick | 0.6 | 0.05-0.2 | thin green vine tendrils
+university crest carved medallion | 0.7 | 0.02-0.1 | raised stone heraldic emblem
+dormer window shingle detail | 0.45 | 0.02-0.1 | weathered cedar shake trim
+bronze commemorative bell plaque | 0.4 | 0.02-0.08 | cast bronze relief text
+terracotta roof ridge cap | 0.4 | 0.02-0.1 | glazed clay ridge tiles
+brick soldier-course lintel band | 0.5 | 0.02-0.1 | horizontal stacked brick trim

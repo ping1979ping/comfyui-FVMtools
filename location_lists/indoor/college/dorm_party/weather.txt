@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm crowded room air | 0.85 | - | -
+stuffy overheated interior | 0.75 | - | -
+humid packed-room air | 0.6 | - | -
+cool night air from cracked window | 0.5 | - | -
+stale indoor party air | 0.7 | - | -
+condensation-fogged window glass | 0.45 | - | -
+muggy body-heat warmth | 0.55 | - | -
+faint smoky haze in air | 0.4 | - | -
+still recycled dorm air | 0.6 | - | -
+draft from propped-open window | 0.45 | - | -
+sweaty crowded body heat | 0.55 | - | -

@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+steeply raked rows of fold-down seats | 1.0 | 0.3-0.5 | tablet-arm auditorium seating
+wide center aisle staircase | 0.85 | 0.2-0.4 | carpeted stepped aisle
+lectern platform with podium | 0.9 | 0.2-0.4 | raised wood-veneer stand
+instructor's desk and av cart | 0.75 | 0.2-0.4 | rolling equipment cart
+side aisle stairs along wall | 0.6 | 0.2-0.4 | narrow stepped walkway
+tiered seating handrail | 0.65 | 0.2-0.4 | painted metal handrail
+av control booth window | 0.4 | 0.2-0.4 | tinted glass observation slot
+bank of side entry doors | 0.55 | 0.2-0.4 | swing door row
+support column at tier edge | 0.5 | 0.2-0.5 | painted structural column
+wall clock mounted above screen | 0.7 | 0.2-0.3 | round analog clock
+hvac diffuser bank overhead | 0.5 | 0.2-0.4 | linear slot diffuser
+curtain track along av wall | 0.4 | 0.2-0.4 | ceiling-mounted rail
+recessed storage cabinet bank | 0.45 | 0.2-0.4 | built-in laminate cabinets
+stepped landing at aisle midpoint | 0.5 | 0.2-0.4 | carpeted platform landing

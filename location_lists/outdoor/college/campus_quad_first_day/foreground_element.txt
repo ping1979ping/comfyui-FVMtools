@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+herringbone brick paved path | 1.0 | 0.1-0.4 | interlocking clay paver pattern
+sunlit green lawn turf patch | 0.9 | 0.15-0.4 | closely mown fescue blades
+worn concrete sidewalk seam | 0.8 | 0.1-0.3 | jointed grey slab surface
+scattered fallen leaf litter | 0.5 | 0.05-0.2 | early-season dry leaf flecks
+chalk-drawn welcome message | 0.45 | 0.05-0.15 | pastel sidewalk chalk lettering
+mulched garden bed edge | 0.55 | 0.05-0.2 | dark shredded bark mulch
+sun-faded painted crosswalk stripe | 0.6 | 0.05-0.2 | worn yellow paint lines
+packed dirt shortcut trail | 0.4 | 0.05-0.15 | compacted bare earth strip
+scattered wood chip mulch ring | 0.4 | 0.05-0.15 | fresh cedar chip texture
+storm drain grate inset | 0.45 | 0.02-0.1 | cast iron grid cover
+grass-stained walkway edge strip | 0.5 | 0.05-0.2 | worn turf-to-pavement transition
+dropped flyer paper scatter | 0.4 | 0.02-0.1 | crumpled printed paper scraps
+sunlit puddle reflection patch | 0.4 | 0.05-0.15 | glossy rainwater surface sheen
+bike tire skid mark streak | 0.35 | 0.02-0.1 | faint rubber scuff trace

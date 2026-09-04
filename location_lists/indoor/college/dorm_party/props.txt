@@ -1,0 +1,18 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+bluetooth speaker with pulsing light | 0.9 | 0.05-0.15 | glowing fabric-wrapped speaker
+coiled string of fairy lights | 0.6 | 0.05-0.15 | bundled warm light strand
+stack of red plastic cups | 0.9 | 0.05-0.2 | nested disposable cup tower
+handle bottle of cheap liquor | 0.7 | 0.05-0.15 | large glass spirit bottle
+bag of ice on table | 0.6 | 0.05-0.15 | plastic mesh ice bag
+sleeve of plastic cups | 0.55 | 0.05-0.15 | wrapped disposable cup pack
+phone propped up playing music | 0.6 | 0.05-0.1 | upright screen-lit device
+string lights power adapter | 0.4 | 0.02-0.08 | plugged-in transformer block
+half-empty soda bottle | 0.6 | 0.05-0.15 | plastic carbonated drink bottle
+deck of playing cards | 0.45 | 0.05-0.1 | scattered card set
+portable charger tangled in cords | 0.4 | 0.02-0.08 | small battery brick with cable
+glowing lava lamp on shelf | 0.45 | 0.05-0.15 | swirling colored wax light
+string of college pennant flags | 0.5 | 0.05-0.15 | triangular felt banner strand
+bowl of chips on table | 0.55 | 0.05-0.15 | plastic bowl of snacks
+disposable camera on table | 0.4 | 0.02-0.08 | plastic single-use camera

@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday move-in sun | 0.9 | - | -
+early afternoon arrival light | 0.8 | - | -
+late morning move-in bustle | 0.6 | - | -
+golden hour wind-down after unloading | 0.5 | - | -
+midday fluorescent hallway light | 0.6 | - | -
+hazy late-summer afternoon light | 0.55 | - | -
+bright noon daylight through the blinds | 0.6 | - | -
+dusk settling after the last box | 0.4 | - | -
+warm afternoon light slanting through the window | 0.55 | - | -
+overcast move-in morning | 0.4 | - | -
+harsh overhead light at midday | 0.5 | - | -

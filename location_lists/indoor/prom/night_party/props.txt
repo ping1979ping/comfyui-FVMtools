@@ -1,0 +1,18 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+handheld disposable camera novelty | 0.5 | 0.05-0.1 | plastic single-use camera
+glow stick bracelet pile | 0.55 | 0.05-0.15 | neon plastic tube bundle
+crystal punch bowl with ladle | 0.7 | 0.1-0.2 | glass beverage vessel
+tiered dessert display stand | 0.55 | 0.1-0.2 | stacked treat platter
+paper lantern hanging cluster | 0.5 | 0.05-0.15 | round folded paper globe
+printed prom theme banner sign | 0.55 | 0.05-0.15 | vinyl event lettering
+table centerpiece with fairy lights | 0.6 | 0.05-0.15 | small lit floral jar
+king and queen crown props | 0.45 | 0.05-0.1 | rhinestone tiara pair
+fog machine unit on floor | 0.5 | 0.05-0.15 | boxy haze generator
+wireless microphone on stand | 0.4 | 0.05-0.1 | handheld announcement mic
+DJ mixing controller with faders | 0.6 | 0.05-0.15 | electronic sound console
+coiled string of fairy lights | 0.5 | 0.05-0.15 | bundled warm bulb strand
+novelty photo booth prop glasses | 0.45 | 0.05-0.1 | oversized costume eyewear
+balloon weight sandbag anchor | 0.35 | 0.05-0.1 | small fabric anchor pouch
+gift favor bag with ribbon | 0.4 | 0.05-0.1 | small drawstring party sack

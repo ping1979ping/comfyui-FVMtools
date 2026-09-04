@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright late-summer morning light | 1.0 | - | -
+warm early-afternoon sun | 0.9 | - | -
+golden late-afternoon glow | 0.8 | - | -
+hazy midday high sun | 0.75 | - | -
+long shadow early-evening light | 0.6 | - | -
+soft overcast morning light | 0.55 | - | -
+crisp early-september dawn | 0.5 | - | -
+dappled shade under canopy | 0.65 | - | -
+sunset amber campus glow | 0.5 | - | -
+cool blue dusk light | 0.4 | - | -

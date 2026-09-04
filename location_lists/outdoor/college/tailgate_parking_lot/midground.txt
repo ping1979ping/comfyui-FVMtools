@@ -1,0 +1,18 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+pickup truck with open tailgate | 1.0 | 0.3-0.5 | lowered bed loaded with coolers and gear
+suv with rear hatch propped open | 0.9 | 0.3-0.5 | boxy suv parked nose-in with hatch raised
+team-colored canopy tent | 0.95 | 0.3-0.5 | pop-up canopy in school colors
+portable charcoal grill smoking | 0.9 | 0.2-0.4 | barrel-style grill with rising smoke
+propane tailgate grill on cart | 0.7 | 0.2-0.4 | wheeled stainless grill unit
+folding table spread with food | 0.8 | 0.2-0.5 | plastic table loaded with tailgate spread
+circle of folding camp chairs | 0.85 | 0.2-0.4 | webbed lawn chairs arranged around a cooler
+large rolling cooler on wheels | 0.75 | 0.2-0.4 | oversized insulated cooler with wheels
+cornhole boards set up nearby | 0.75 | 0.2-0.5 | painted wooden boards facing each other
+cluster of pop-up canopies | 0.6 | 0.3-0.5 | adjacent tents forming a row
+flatbed trailer converted to bar | 0.4 | 0.2-0.4 | pickup trailer set up with drink coolers
+rv parked at the row's edge | 0.45 | 0.3-0.5 | tailgate motorhome with awning extended
+portable tv on a tailgate stand | 0.4 | 0.2-0.4 | television propped for pregame coverage
+team flag mounted on hitch pole | 0.55 | 0.2-0.4 | tall flag mounted to a truck hitch
+stack of folding tables and chairs | 0.5 | 0.2-0.4 | bundled furniture leaning against a truck bed

@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late night party hours | 0.95 | - | -
+past-midnight gathering | 0.85 | - | -
+dim after-hours dorm light | 0.8 | - | -
+early morning wind-down hour | 0.5 | - | -
+weeknight late-night hangout | 0.6 | - | -
+dark night outside windows | 0.85 | - | -
+small-hours party lull | 0.45 | - | -
+night lit only by lamps | 0.8 | - | -
+late evening turned into night | 0.7 | - | -
+deep night with music still going | 0.6 | - | -
+weekend night into early hours | 0.55 | - | -

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+red plastic cup in hand | 0.95 | 0.1-0.3 | crushed rim disposable cup
+phone flashlight beam cutting through dark | 0.75 | 0.1-0.3 | narrow bright light shaft
+spilled drink puddle on floor | 0.7 | 0.1-0.2 | sticky liquid stain patch
+crushed cup underfoot | 0.65 | 0.1-0.2 | flattened disposable plastic
+tangle of phone charger cords | 0.5 | 0.1-0.2 | knotted cable clump
+scattered bottle caps on floor | 0.55 | 0.1-0.2 | metal disc litter
+shoes kicked off near door | 0.5 | 0.1-0.3 | discarded sneaker pair
+backpack shoved under desk | 0.45 | 0.1-0.3 | slouched canvas bag
+half-eaten pizza slice on plate | 0.6 | 0.1-0.3 | greasy cheese-topped wedge
+dropped napkin on carpet | 0.4 | 0.1-0.2 | crumpled paper square
+melting ice cube on floor | 0.4 | 0.1-0.2 | small clear puddle chip
+dropped glow stick on rug | 0.4 | 0.1-0.2 | bent neon plastic tube

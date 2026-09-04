@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late afternoon light before the dance | 0.85 | - | -
+golden hour through the curtains | 0.8 | - | -
+early evening getting-ready light | 0.9 | - | -
+dusk settling outside the window | 0.7 | - | -
+vanity lights bright against dim dusk | 0.75 | - | -
+blue hour through sheer curtains | 0.6 | - | -
+porch light glow after sunset | 0.55 | - | -
+overcast late afternoon light | 0.5 | - | -
+warm lamp light before the ride arrives | 0.6 | - | -
+last light before the photos | 0.65 | - | -

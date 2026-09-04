@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+hvac dry conditioned air | 0.9 | - | -
+winter draft through propped door | 0.5 | - | -
+muggy pre-storm humidity outside | 0.45 | - | -
+ac chill blast overhead | 0.7 | - | -
+stale recycled classroom air | 0.6 | - | -
+condensation on cold window glass | 0.4 | - | -
+rainy day damp coats smell | 0.5 | - | -
+snow tracked in at entry | 0.4 | - | -
+dry heater air in winter | 0.6 | - | -
+humid late summer afternoon air | 0.45 | - | -
+cool overnight building setback chill | 0.35 | - | -

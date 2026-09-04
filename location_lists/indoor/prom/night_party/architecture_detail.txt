@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed gymnasium ceiling truss beam | 0.6 | 0.05-0.2 | steel rafter structure
+suspended disco ball rig | 0.75 | 0.05-0.15 | mirrored sphere fixture
+wall-mounted uplighting fixture | 0.65 | 0.05-0.15 | colored LED wash light
+glowing exit sign above door | 0.55 | 0.0-0.05 | illuminated red signage
+basketball hoop retracted to ceiling | 0.35 | 0.05-0.15 | folded backboard rig
+ornate ballroom crown molding trim | 0.45 | 0.05-0.15 | plaster ceiling border
+moving head light truss fixture | 0.7 | 0.05-0.2 | rotating gobo beam unit
+crystal chandelier cluster overhead | 0.45 | 0.05-0.15 | hanging glass fixture
+dimmed wall sconce fixture | 0.4 | 0.05-0.1 | mounted amber light
+tasseled curtain tie-back cord | 0.35 | 0.0-0.1 | fabric drapery cord
+angled spotlight beam crossing ceiling | 0.6 | 0.05-0.2 | colored light shaft sweep
+polished parquet floor seam line | 0.4 | 0.0-0.1 | wood plank joint

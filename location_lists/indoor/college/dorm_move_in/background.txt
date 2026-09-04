@@ -1,0 +1,19 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+cinderblock wall painted institutional beige | 1.0 | 0.75-1.0 | rough painted block
+bare extra-long twin mattress on the frame | 0.95 | 0.7-0.95 | plastic-wrapped ticking
+built-in laminate wardrobe unit | 0.8 | 0.65-0.9 | wood-grain veneer
+dorm window with a metal security screen | 0.6 | 0.6-0.85 | mesh grid pattern
+cinderblock wall lined with a corkboard strip | 0.55 | 0.6-0.85 | pinholed surface
+built-in desk and shelf combo unit | 0.75 | 0.65-0.9 | scratched particleboard
+dorm room door open to the hallway | 0.85 | 0.6-0.9 | hallway light spilling in
+roommate's bed already made with bedding | 0.6 | 0.6-0.85 | tucked corners
+closet doors folded open and half empty | 0.55 | 0.6-0.85 | wire hangers swaying
+cinderblock wall with old paint scuffs | 0.5 | 0.65-0.9 | layered paint history
+tall metal wardrobe locker unit | 0.45 | 0.6-0.85 | dented sheet metal
+lofted bunk-style bed frame | 0.5 | 0.65-0.95 | raised steel frame
+dorm mirror mounted on the wall | 0.5 | 0.6-0.8 | streaked reflective glass
+built-in bookshelf column beside the desk | 0.45 | 0.6-0.85 | empty shelf lips
+fire safety placard mounted on the wall | 0.4 | 0.6-0.75 | laminated instructions
+cinderblock corner wall with a faded mascot decal | 0.4 | 0.6-0.8 | peeling vinyl sticker

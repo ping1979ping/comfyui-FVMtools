@@ -1,0 +1,16 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+cinderblock wall texture detail | 0.6 | 0.05-0.15 | rough painted concrete block
+narrow dorm window with blinds | 0.55 | 0.05-0.2 | slatted plastic window cover
+ceiling smoke detector cover | 0.45 | 0.02-0.08 | mounted plastic sensor dome
+fluorescent light panel overhead | 0.6 | 0.05-0.15 | recessed ceiling light grid
+dorm room door with whiteboard | 0.55 | 0.05-0.15 | mounted marker board on door
+built-in closet track lighting | 0.4 | 0.02-0.1 | recessed sliding door rail
+exposed ceiling pipe run | 0.35 | 0.02-0.1 | painted metal conduit line
+wall-mounted thermostat unit | 0.35 | 0.02-0.08 | small plastic control box
+scuffed linoleum floor seam | 0.5 | 0.02-0.1 | worn tile joint line
+narrow hallway light switch | 0.4 | 0.02-0.08 | plastic wall toggle plate
+dorm room number placard | 0.4 | 0.02-0.08 | mounted numbered plate
+popcorn ceiling texture patch | 0.4 | 0.05-0.15 | bumpy sprayed ceiling finish
+cracked paint on cinderblock corner | 0.35 | 0.02-0.1 | chipped painted concrete edge

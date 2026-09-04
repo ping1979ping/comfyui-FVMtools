@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+brick academic building facade | 1.0 | 0.6-1.0 | rust-red running-bond brick
+columned library entrance front | 0.85 | 0.6-1.0 | white-painted classical columns
+wide open quad lawn expanse | 1.0 | 0.6-1.0 | mown green turf field
+ivy-dappled clocktower silhouette | 0.7 | 0.5-0.9 | weathered limestone and copper
+gothic-revival dormitory rooftop line | 0.65 | 0.5-0.9 | slate-shingled steep gables
+mature oak canopy tree row | 0.85 | 0.5-0.9 | dense late-summer green foliage
+welcome week banner archway | 0.8 | 0.4-0.8 | printed vinyl school-color fabric
+distant science building glass wing | 0.55 | 0.4-0.8 | reflective curtain-wall glazing
+flagpole with university flag | 0.7 | 0.3-0.6 | rippling nylon crest fabric
+brick chapel spire backdrop | 0.5 | 0.4-0.7 | pale stone tapered spire
+sprawling student union facade | 0.7 | 0.5-0.9 | tinted glass and brick panel
+wrought-iron campus gate arch | 0.55 | 0.4-0.7 | painted black scrollwork ironwork
+distant parking garage structure | 0.4 | 0.3-0.6 | pale concrete tiered facade
+hillside amphitheater seating tiers | 0.4 | 0.3-0.6 | curved concrete stepped rows

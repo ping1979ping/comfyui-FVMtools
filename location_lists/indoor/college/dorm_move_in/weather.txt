@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm late-summer air | 0.8 | - | -
+humid august afternoon | 0.7 | - | -
+air conditioning still catching up | 0.6 | - | -
+muggy hallway air from propped doors | 0.55 | - | -
+dry conditioned dorm air | 0.5 | - | -
+breeze drifting through the propped door | 0.5 | - | -
+stale elevator air lingering in the hall | 0.4 | - | -
+faint exhaust drifting up from the loading zone | 0.4 | - | -
+sticky late-summer heat | 0.5 | - | -
+cool blast from the window unit | 0.45 | - | -
+hallway draft from doors propped open | 0.45 | - | -

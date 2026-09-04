@@ -1,0 +1,16 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+painted parking space number stencil | 0.6 | 0.05-0.15 | numeral stenciled on the asphalt
+concrete wheel stop block | 0.55 | 0.05-0.15 | painted curb block at a space edge
+chain link fence section | 0.5 | 0.05-0.2 | galvanized mesh fence panel
+light pole base with reflectors | 0.5 | 0.05-0.15 | anchored steel pole base plate
+stadium exterior concrete texture | 0.55 | 0.05-0.2 | ribbed precast concrete panel wall
+drainage grate in the pavement | 0.4 | 0.05-0.1 | metal storm grate set in asphalt
+ticket booth window shutter | 0.4 | 0.05-0.15 | closed metal roll-down shutter
+stadium banner on a fence rail | 0.5 | 0.05-0.2 | vinyl team banner zip-tied to fence
+tailgate lot directional sign post | 0.5 | 0.05-0.15 | metal sign mounted on a painted post
+security camera on light pole | 0.35 | 0.05-0.1 | mounted dome camera bracket
+painted crosswalk stripe detail | 0.45 | 0.05-0.15 | worn white crosswalk paint
+hitch receiver flag mount bracket | 0.4 | 0.05-0.1 | small metal bracket on a truck bumper
+stadium turnstile gate detail | 0.4 | 0.05-0.2 | metal rotating entry turnstile

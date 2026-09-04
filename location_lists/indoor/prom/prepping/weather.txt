@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+mild spring evening air | 0.7 | - | -
+clear evening sky outside the window | 0.65 | - | -
+light breeze through a cracked window | 0.5 | - | -
+warm humid air from the curling iron | 0.6 | - | -
+dry conditioned air indoors | 0.55 | - | -
+faint hairspray haze in the air | 0.55 | - | -
+light rain threatening outside | 0.4 | - | -
+cool early spring chill by the window | 0.45 | - | -
+still calm evening air | 0.5 | - | -
+steamy bathroom air lingering | 0.5 | - | -

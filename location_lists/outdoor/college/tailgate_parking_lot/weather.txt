@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear crisp fall day | 1.0 | - | -
+warm sunny september afternoon | 0.9 | - | -
+cool breezy morning air | 0.75 | - | -
+hazy humid late-summer day | 0.55 | - | -
+partly cloudy game day sky | 0.7 | - | -
+brisk autumn wind gusts | 0.6 | - | -
+overcast with no rain | 0.45 | - | -
+mild dry october weather | 0.65 | - | -
+light drizzle threatening rain | 0.4 | - | -
+sunny with light haze | 0.6 | - | -
+cool evening chill setting in | 0.5 | - | -
