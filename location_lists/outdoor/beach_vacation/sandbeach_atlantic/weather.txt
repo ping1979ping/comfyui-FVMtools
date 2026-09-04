@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+steady onshore Atlantic breeze | 0.85 | - | -
+humid haze softening the shoreline | 0.7 | - | -
+salt spray drifting off the shorebreak | 0.55 | - | -
+gusty wind rattling the dune fence | 0.55 | - | -
+flat calm morning air | 0.5 | - | -
+building afternoon thunderheads offshore | 0.45 | - | -
+cool damp fog rolling off the water | 0.45 | - | -
+bright dry heat with no wind | 0.5 | - | -
+stiff southeast wind ahead of a storm | 0.4 | - | -
+brief afternoon shower passing through | 0.4 | - | -
+sticky humid stillness before a storm | 0.4 | - | -

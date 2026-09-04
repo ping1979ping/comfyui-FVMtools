@@ -1,0 +1,18 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+flip-flops kicked by the door | 0.55 | 0.01-0.05 | rubber pair askew
+sunscreen bottle on the counter | 0.5 | 0.01-0.04 | greasy cap ring
+saltwater taffy box stack | 0.55 | 0.02-0.06 | pastel wax-paper twists
+beach ball rolled against a rack | 0.45 | 0.02-0.06 | inflatable stripes
+surfboard wax bar on display | 0.4 | 0.01-0.03 | coconut-scented block
+snow cone paper cup | 0.5 | 0.01-0.04 | rainbow syrup stain
+postcard rack spinner | 0.5 | 0.02-0.06 | curled corner cards
+bike rental helmet on the handlebar | 0.45 | 0.01-0.04 | strap dangling loose
+souvenir shell bag | 0.4 | 0.01-0.03 | mesh drawstring pouch
+arcade token cup | 0.45 | 0.01-0.03 | brass coin pile
+beach towel draped on a rack | 0.5 | 0.02-0.06 | striped terry cloth
+sun hat on a wire rack | 0.4 | 0.01-0.04 | woven straw brim
+taffy pulling hook display | 0.35 | 0.01-0.03 | stretched candy loop
+sunglasses spinner rack | 0.45 | 0.02-0.06 | mirrored lens rows
+wetsuit hung dripping | 0.4 | 0.01-0.04 | neoprene puddle below

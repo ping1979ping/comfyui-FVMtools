@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright equatorial midday | 1.0 | - | -
+golden late-afternoon glow | 0.95 | - | -
+blazing turquoise-water noon | 0.85 | - | -
+pink-orange Pacific sunset | 0.9 | - | -
+soft tropical dawn light | 0.7 | - | -
+hazy midmorning brightness | 0.75 | - | -
+long shadow late afternoon | 0.8 | - | -
+post-sunset violet afterglow | 0.6 | - | -
+overcast bright daylight | 0.5 | - | -
+sun-dappled palm shade hour | 0.65 | - | -
+clear moonlit beach night | 0.45 | - | -

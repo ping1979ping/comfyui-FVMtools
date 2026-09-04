@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+wide resort beachfront hotel facade | 1.0 | 0.6-0.9 | pastel stuccoed multi-story wall
+turquoise resort bay shallows | 0.95 | 0.6-0.9 | clear glassy tropical water
+row of leaning coconut palms along the back edge | 0.95 | 0.5-0.85 | tall arching frond silhouettes
+pale sand crescent curving toward the point | 0.9 | 0.6-0.9 | fine bleached granular sweep
+calm tropical horizon under soft haze | 0.8 | 0.5-0.8 | sea-sky blur band
+distant catamaran swinging at anchor | 0.5 | 0.2-0.45 | white hulled silhouette
+manicured resort lawn meeting the sand line | 0.55 | 0.3-0.55 | trimmed green border
+thatched beach-bar roofline glimpsed down the shore | 0.45 | 0.2-0.45 | distant bundled palm peak
+resort pier reaching into the shallows | 0.45 | 0.2-0.45 | weathered plank walkway
+low whitewashed property wall along the dunes | 0.4 | 0.15-0.4 | painted masonry border
+line of anchored paddleboards bobbing offshore | 0.4 | 0.15-0.4 | scattered bright hulls
+terraced hillside villas above the bay | 0.4 | 0.2-0.45 | stacked cream rooftops
+resort flagpole trio at the property line | 0.35 | 0.1-0.3 | fluttering pennant row
+bleached wooden lifeguard tower on stilts | 0.55 | 0.2-0.45 | raised white platform

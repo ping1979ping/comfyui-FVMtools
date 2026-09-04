@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright tropical morning over the bay | 1.0 | - | -
+warm midday sun at its peak | 0.85 | - | -
+golden late-afternoon glow on the sand | 0.9 | - | -
+sunset colors layered on the horizon | 0.85 | - | -
+post-sunset pastel afterglow | 0.6 | - | -
+early-morning calm before the chairs fill | 0.65 | - | -
+hazy bright noon glare off the water | 0.7 | - | -
+blue hour with resort lights coming on | 0.55 | - | -
+long afternoon shadows off the umbrellas | 0.75 | - | -
+overcast soft daylight over the resort | 0.5 | - | -
+first light with the sand freshly raked | 0.5 | - | -

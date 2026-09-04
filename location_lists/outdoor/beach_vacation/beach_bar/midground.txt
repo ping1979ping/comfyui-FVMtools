@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+row of barstools planted in the sand | 0.9 | 0.2-0.5 | half-sunk wooden legs
+cooler chest tucked behind the counter | 0.8 | 0.15-0.35 | frost-beaded lid
+fishing net draped along the rafters | 0.6 | 0.15-0.35 | knotted mesh swag
+surfboard rack leaning against a post | 0.55 | 0.15-0.3 | fin-out lineup
+hammock strung between two support posts | 0.5 | 0.1-0.3 | sagging woven rope
+beach umbrella cluster near the bar | 0.6 | 0.15-0.35 | tilted striped canopy
+blender station set on the counter end | 0.55 | 0.1-0.25 | frosted glass jar
+chalkboard specials easel by the entrance | 0.55 | 0.1-0.3 | scrawled daily list
+buoy decorations hung along the eave | 0.5 | 0.1-0.25 | painted round floats
+shell garland strung across the counter | 0.5 | 0.1-0.25 | threaded pale beads
+lounge chairs facing the waterline | 0.55 | 0.15-0.35 | low reclined row
+stacked coconut shells by the blender | 0.45 | 0.1-0.2 | husked brown pile
+sandbag anchors weighting the corner posts | 0.45 | 0.1-0.25 | burlap ballast
+cash box stand at the counter's end | 0.4 | 0.05-0.2 | weathered wooden till

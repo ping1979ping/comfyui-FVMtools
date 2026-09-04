@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+wet non-slip deck surface | 1.0 | 0.15-0.4 | textured gelcoat fiberglass
+salt-spray droplet scatter | 0.85 | 0.1-0.25 | fine misted water beads
+coiled dock rope end | 0.75 | 0.1-0.25 | frayed braided nylon tip
+snorkel mask and fins pair | 0.85 | 0.15-0.3 | rubber-strapped silicone gear
+teak cockpit sole grating | 0.7 | 0.15-0.35 | slatted varnished wood strip
+flip-flop pair kicked aside | 0.7 | 0.1-0.2 | rubber-soled sandal shape
+beach towel draped rail | 0.75 | 0.15-0.3 | striped cotton terry fabric
+life-vest buckle strap edge | 0.7 | 0.1-0.2 | orange nylon clip strap
+sunscreen bottle rolling deck | 0.6 | 0.05-0.15 | slick plastic bottle sheen
+cooler lid water droplets | 0.65 | 0.1-0.2 | condensation-beaded hard plastic
+anchor chain rode pile | 0.5 | 0.1-0.25 | galvanized rusted metal links
+dry-bag rolled top closure | 0.55 | 0.1-0.2 | waterproof vinyl roll-seal
+deck-shoe wet footprint trail | 0.5 | 0.05-0.15 | damp textured tread mark
+bungee-corded gear bag | 0.5 | 0.1-0.2 | stretched elastic strap webbing

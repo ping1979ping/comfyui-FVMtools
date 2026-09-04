@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+hazy bright morning over the rental dock | 0.8 | - | -
+harsh midday sun beating on the sand | 0.85 | - | -
+late afternoon sun angling across the racks | 0.85 | - | -
+golden hour warming the dock planks | 0.85 | - | -
+sunset colors reflecting off wet hulls | 0.75 | - | -
+blue hour as the rental shack closes | 0.55 | - | -
+first light before the rental stand opens | 0.6 | - | -
+flat overcast glare off the water | 0.6 | - | -
+bright noon haze over the launch zone | 0.6 | - | -
+late-day light slanting through the racks | 0.55 | - | -
+dusk settling over the empty dock | 0.5 | - | -

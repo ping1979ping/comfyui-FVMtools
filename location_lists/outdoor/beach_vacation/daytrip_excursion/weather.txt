@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+steady onshore trade wind | 0.8 | - | -
+humid still tropical air | 0.7 | - | -
+light haze over the bay | 0.6 | - | -
+brief afternoon squall | 0.4 | - | -
+calm glassy morning water | 0.65 | - | -
+gusty crossing wind | 0.5 | - | -
+warm drizzle passing through | 0.4 | - | -
+flat calm departure conditions | 0.55 | - | -
+building swell by midday | 0.45 | - | -
+sudden tropical downpour | 0.35 | - | -

@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+golden hour spilling across the deck | 0.85 | - | -
+bright midday glare off the water | 0.7 | - | -
+late afternoon light warming the bar | 0.8 | - | -
+blue dusk settling over the terrace | 0.65 | - | -
+early evening with lights just switched on | 0.6 | - | -
+deep night with string lights glowing | 0.5 | - | -
+soft morning light before the crowd | 0.5 | - | -
+sunset hour crowding the rail | 0.75 | - | -
+overcast midday flattening the shadows | 0.45 | - | -
+last call under a dark sky | 0.4 | - | -
+first light on a still terrace | 0.4 | - | -

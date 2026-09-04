@@ -1,0 +1,18 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+sun-bleached boardwalk planks | 0.9 | 0.1-0.35 | gapped wood grain
+sandy dusting on the sidewalk | 0.8 | 0.05-0.2 | tracked-in beach grains
+faded seashell-inlay crosswalk | 0.45 | 0.1-0.3 | painted shell motif
+flip-flop scuffed pavement | 0.55 | 0.05-0.2 | rubber scuff marks
+melted ice cream drip trail | 0.4 | 0.02-0.08 | sticky sidewalk spot
+bike tire tracks through sand grit | 0.45 | 0.05-0.15 | thin sandy arcs
+boardwalk plank gap with grass tufts | 0.4 | 0.05-0.15 | weeds pushing through
+saltwater taffy wrapper litter | 0.4 | 0.02-0.06 | pastel wax-paper scrap
+faded painted surfboard curb mural | 0.4 | 0.1-0.25 | chipped rainbow stripes
+wet footprints drying on planks | 0.5 | 0.05-0.15 | evaporating outline
+arcade ticket strip dropped | 0.35 | 0.01-0.05 | perforated paper trail
+beach sand tracked into the doorway | 0.5 | 0.05-0.15 | fine grain scatter
+sunscreen smear on the handrail | 0.35 | 0.01-0.05 | greasy fingerprint sheen
+bare feet on warm boards | 0.45 | 0.05-0.15 | sun-warmed wood contact
+popsicle stick dropped on the walk | 0.35 | 0.01-0.04 | melted stain ring

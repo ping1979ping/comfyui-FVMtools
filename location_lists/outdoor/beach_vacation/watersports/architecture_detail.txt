@@ -1,0 +1,16 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+hand-painted rental price board lettering | 0.85 | 0.02-0.08 | chalky faded paint
+dock cleat bolted to the plank edge | 0.6 | 0.01-0.05 | corroded brass fitting
+safety flag pole marking the launch lane | 0.55 | 0.02-0.08 | sun-bleached pennant
+rope fender bumper on the dock post | 0.5 | 0.02-0.08 | woven rubber coil
+jet ski ignition key rack | 0.5 | 0.01-0.05 | numbered hook row
+laminated waiver clipboard hook | 0.45 | 0.01-0.04 | rusted wire hook
+wetsuit hanger bar bolted to the shack wall | 0.5 | 0.02-0.08 | steel pipe rail
+dock plank gap patched with new wood | 0.4 | 0.01-0.05 | mismatched grain
+sun-faded safety instruction decal | 0.55 | 0.01-0.05 | peeling vinyl sticker
+tow harness buckle catching the light | 0.45 | 0.01-0.04 | brushed metal clasp
+rental shack window shutter propped open | 0.5 | 0.02-0.08 | weathered wooden flap
+barnacle crust on the dock piling | 0.4 | 0.01-0.05 | rough grey texture
+life vest size tag fluttering loose | 0.4 | 0.01-0.03 | curled paper tag

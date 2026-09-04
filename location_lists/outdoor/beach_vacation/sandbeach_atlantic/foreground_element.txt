@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+hard-packed wet sand rippled by the tide | 0.85 | 0.15-0.4 | ribbed sheen
+dry loose sand scattered with broken shell | 0.75 | 0.1-0.3 | pale grit scatter
+sea-oat shadows raked across the dune toe | 0.5 | 0.05-0.2 | thin grass stripes
+shallow tidal pool caught in a sand hollow | 0.5 | 0.05-0.2 | glassy puddle
+line of small dark mussel shells at the wrack | 0.5 | 0.05-0.15 | dark shell ribbon
+footpath worn smooth through the dune gap | 0.55 | 0.1-0.3 | packed sandy funnel
+boardwalk plank shadow striping the sand | 0.5 | 0.05-0.2 | ladder of dark bars
+beach-tag pin half buried near a towel | 0.4 | 0.01-0.05 | small enamel disc
+sand fencing shadow raked long at low sun | 0.45 | 0.05-0.2 | slatted stripe pattern
+clumps of dried eelgrass at the tideline | 0.45 | 0.05-0.15 | brown tangled rope
+cool foam lace dissolving into the sand | 0.6 | 0.1-0.3 | fizzing white edge
+sand dollar half-exposed at the waterline | 0.4 | 0.01-0.05 | pale ridged disc
+gull tracks stitched across the wet sand | 0.45 | 0.02-0.1 | three-toe trail
+rippled sandbar exposed at low tide | 0.5 | 0.15-0.35 | corduroy ridges

@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+neat rows of rented lounge chairs | 1.0 | 0.35-0.5 | evenly spaced padded frames
+matching shade umbrellas staked in a grid | 0.95 | 0.3-0.5 | uniform canvas canopy field
+thatched-roof towel hut at the chair rows | 0.8 | 0.2-0.4 | bundled palm-frond kiosk
+beach-vendor stand renting snorkel gear | 0.75 | 0.2-0.4 | wheeled display rack
+resort staff cart stacked with folded towels | 0.65 | 0.2-0.35 | wheeled canvas hamper
+paddleboard rental rack standing upright | 0.55 | 0.2-0.35 | slotted wooden frame
+shaded double cabana with tie-back curtains | 0.6 | 0.25-0.45 | draped white linen bay
+cluster of kayaks lined on the sand | 0.5 | 0.2-0.4 | color-matched hull row
+resort welcome sign on carved wood posts | 0.4 | 0.2-0.3 | routed lettering board
+row of tiki torches along the beach walkway | 0.45 | 0.2-0.3 | bamboo-wrapped posts
+water-sports kiosk with laminated price board | 0.45 | 0.2-0.3 | propped menu placard
+raked-sand path leading up to the pool deck | 0.4 | 0.2-0.3 | combed access lane
+stack of folded pool floats behind the hut | 0.4 | 0.2-0.3 | bundled vinyl rings
+beach wheelchair parked at the boardwalk ramp | 0.3 | 0.2-0.3 | balloon-tired frame

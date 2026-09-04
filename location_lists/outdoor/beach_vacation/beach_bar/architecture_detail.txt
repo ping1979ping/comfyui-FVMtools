@@ -1,0 +1,16 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+bamboo lashings binding the roof frame | 0.6 | 0.03-0.15 | twine-wrapped joints
+hand-painted lettering on the menu board | 0.65 | 0.02-0.1 | uneven brush strokes
+bottle-cap mosaic inlaid in the counter | 0.5 | 0.02-0.12 | pressed metal pattern
+driftwood grain worn smooth by hands | 0.55 | 0.02-0.1 | pale weathered swirl
+tiki torch flame flickering at the tip | 0.55 | 0.01-0.05 | orange wavering point
+string-light bulb glowing warm | 0.55 | 0.01-0.05 | small amber glass
+rope knot cinching a post joint | 0.5 | 0.01-0.06 | tight nautical coil
+nail heads dotting the bar edge | 0.4 | 0.01-0.05 | rusted metal dots
+carved initials scratched into a post | 0.4 | 0.01-0.05 | shallow knife marks
+sun-bleached paint peeling off a sign | 0.45 | 0.02-0.08 | flaking pastel chips
+thatch weave pattern along the eave | 0.5 | 0.03-0.12 | overlapping frond rows
+salt residue crusting the counter varnish | 0.4 | 0.01-0.06 | pale dried film
+rope-wrapped stool leg binding | 0.45 | 0.01-0.05 | spiral-bound joint

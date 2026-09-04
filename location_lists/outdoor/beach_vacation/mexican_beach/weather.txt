@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear tropical high sun | 1.0 | - | -
+warm onshore trade breeze | 0.9 | - | -
+humid still coastal air | 0.65 | - | -
+brief afternoon tropical shower | 0.55 | - | -
+scattered cumulus cloud drift | 0.75 | - | -
+hazy salt-humid horizon | 0.6 | - | -
+gusty pre-storm wind | 0.4 | - | -
+muggy windless afternoon | 0.55 | - | -
+glassy calm turquoise water | 0.7 | - | -
+post-shower steaming pavement | 0.45 | - | -
+light hurricane-season haze | 0.4 | - | -

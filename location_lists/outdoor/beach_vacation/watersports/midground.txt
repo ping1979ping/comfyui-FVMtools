@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+stack of orange life vests on a bench | 0.85 | 0.2-0.4 | piled foam bricks
+jet ski idling at the fuel dock | 0.65 | 0.2-0.45 | low rumbling hull
+paddleboard leaned against the rental counter | 0.7 | 0.15-0.35 | fin-up angle
+coiled tow rope beside the launch ramp | 0.6 | 0.1-0.25 | thick yellow loop
+inflatable banana boat staged on the sand | 0.65 | 0.2-0.45 | segmented yellow hull
+kayak paddles bundled in a barrel | 0.6 | 0.1-0.3 | crossed blade cluster
+parasail harness laid out on a tarp | 0.7 | 0.15-0.35 | buckled straps splayed
+laminated price list clipped to a post | 0.55 | 0.05-0.15 | sun-faded chart
+golf cart loaded with spare life vests | 0.45 | 0.15-0.3 | stacked orange cargo
+fuel canister rack behind the shack | 0.4 | 0.05-0.15 | red plastic jugs
+dock cleat with a tow line looped | 0.5 | 0.05-0.15 | worn brass fitting
+inflatable tube rack drying upright | 0.5 | 0.15-0.3 | sagging ring row
+rental sign-up table with a clipboard | 0.55 | 0.1-0.25 | waiting stack of forms
+spare jet ski key box mounted on a post | 0.4 | 0.05-0.15 | weathered metal case

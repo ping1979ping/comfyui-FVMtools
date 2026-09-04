@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stacked snorkel fins pair | 0.9 | 0.05-0.15 | rubber-bladed swim fin
+hard-shell drink cooler box | 0.9 | 0.1-0.25 | insulated latch-lid cooler
+coiled spare dock line | 0.8 | 0.05-0.2 | tightly wound nylon rope
+orange life-jacket vest | 0.95 | 0.05-0.15 | foam-padded nylon vest
+waterproof dry-bag pack | 0.75 | 0.05-0.15 | roll-top vinyl duffel
+snorkel mask with tube | 0.85 | 0.02-0.1 | clear-lens rubber-strapped mask
+insulated drink koozie can | 0.6 | 0.02-0.08 | neoprene foam sleeve
+striped beach towel roll | 0.75 | 0.05-0.15 | rolled cotton terry cloth
+polarized boating sunglasses | 0.65 | 0.02-0.08 | mirrored wraparound frames
+spare bimini shade clip | 0.5 | 0.02-0.05 | plastic snap-tension fastener
+fishing tackle box latch | 0.5 | 0.02-0.1 | worn plastic hinged case
+waterproof phone floating case | 0.6 | 0.02-0.08 | bright buoyant sealed pouch
+anchor buoy marker float | 0.5 | 0.02-0.1 | round inflatable orange ball
+reef-safe sunscreen tube | 0.6 | 0.02-0.05 | slim labeled plastic bottle

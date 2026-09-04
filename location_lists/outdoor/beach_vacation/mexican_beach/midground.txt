@@ -1,0 +1,18 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+woven hammock strung between palms | 0.95 | 0.2-0.5 | colorful striped cotton weave
+beachfront palapa taco cart | 0.8 | 0.15-0.35 | wheeled wooden grill stand
+row of palapa sun-loungers | 0.9 | 0.3-0.6 | thatch-shaded wooden chairs
+woven palm-frond beach umbrella | 0.85 | 0.2-0.5 | conical thatched shade canopy
+talavera-tiled beach-bar counter | 0.6 | 0.15-0.35 | painted ceramic mosaic front
+jet-ski rental rack | 0.5 | 0.1-0.3 | lined-up watercraft row
+equipale leather-strap chair cluster | 0.5 | 0.1-0.3 | pigskin woven low seating
+iguana sunning on rock | 0.4 | 0.02-0.08 | still spiny grey-green reptile
+beach-vendor blanket display | 0.45 | 0.1-0.25 | spread woven textile wares
+shaded ceviche-stand counter | 0.55 | 0.1-0.25 | glass-topped citrus-marinade display
+banana-boat tow line group | 0.4 | 0.1-0.25 | inflatable yellow tube raft
+volleyball net sagging line | 0.5 | 0.1-0.25 | white cord between posts
+agave landscaping cluster | 0.5 | 0.1-0.3 | spiky blue-grey rosette planting
+moored panga fishing boat | 0.5 | 0.1-0.3 | small painted wooden hull
+snorkel-tour group cluster | 0.45 | 0.1-0.3 | wetsuit-clad huddled swimmers

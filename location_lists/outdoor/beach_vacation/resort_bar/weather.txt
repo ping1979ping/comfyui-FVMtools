@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm onshore breeze across the terrace | 0.8 | - | -
+still humid air over the deck | 0.6 | - | -
+salt-tinged breeze off the water | 0.7 | - | -
+dry heat radiating off the stone | 0.55 | - | -
+light gusts flapping the umbrella canvas | 0.5 | - | -
+mild evening air cooling the rail | 0.55 | - | -
+brief squall clearing the tables | 0.4 | - | -
+hazy tropical humidity | 0.5 | - | -
+clear dry air with a steady breeze | 0.6 | - | -
+sudden downpour drumming the shingled roof | 0.4 | - | -
+gentle sea breeze carrying salt spray | 0.55 | - | -

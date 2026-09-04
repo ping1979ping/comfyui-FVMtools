@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright open-water midday | 1.0 | - | -
+golden late-afternoon crossing | 0.9 | - | -
+early morning departure light | 0.8 | - | -
+sun-glare high noon | 0.85 | - | -
+warm sunset return sail | 0.75 | - | -
+hazy midday glare | 0.7 | - | -
+late-morning bright sail | 0.85 | - | -
+dusky pink evening return | 0.6 | - | -
+crisp early-morning departure | 0.65 | - | -
+overcast bright daylight | 0.55 | - | -

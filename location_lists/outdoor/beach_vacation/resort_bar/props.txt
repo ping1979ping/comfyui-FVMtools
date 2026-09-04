@@ -1,0 +1,18 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+row of liquor bottles catching backlight | 0.85 | 0.03-0.1 | labeled glass ranks
+stack of coupe glasses by the rack | 0.6 | 0.02-0.06 | nested crystal
+cocktail shaker mid-pour | 0.6 | 0.02-0.06 | frosted steel
+bowl of citrus wedges on the counter | 0.5 | 0.02-0.06 | bright garnish pile
+woven cocktail menu propped on the table | 0.5 | 0.02-0.05 | laminated card
+straw beach hat hung on a stool back | 0.45 | 0.02-0.06 | sun-worn brim
+sunglasses folded beside a drink | 0.5 | 0.01-0.04 | tortoiseshell frames
+cocktail umbrella pick in a glass | 0.5 | 0.01-0.03 | paper parasol
+ice bucket sweating on the bar | 0.5 | 0.02-0.06 | frosted metal
+wicker basket of bar snacks | 0.45 | 0.02-0.06 | woven nibble tray
+beach bag slouched against a stool leg | 0.4 | 0.02-0.06 | sandy canvas tote
+tip jar by the register | 0.4 | 0.01-0.03 | jangling coins
+folded beach towel draped on a rail | 0.4 | 0.02-0.06 | rolled terry stripe
+citrus garnish caddy along the bar | 0.45 | 0.01-0.04 | sectioned tray
+bottle opener chained to the counter | 0.4 | 0.01-0.03 | worn brass tool

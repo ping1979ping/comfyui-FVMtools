@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear coastal sunshine | 0.9 | - | -
+salty onshore breeze | 0.85 | - | -
+humid beach-town air | 0.7 | - | -
+light sea haze | 0.6 | - | -
+gusty afternoon wind | 0.55 | - | -
+brief summer shower | 0.4 | - | -
+hot still beach air | 0.6 | - | -
+cool evening sea breeze | 0.55 | - | -
+overcast humid sky | 0.45 | - | -
+sudden coastal squall | 0.35 | - | -
+warm sun after rain | 0.4 | - | -

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+orange life vests stacked in a bin | 0.85 | 0.05-0.15 | piled foam bricks
+coiled tow rope on a metal hook | 0.65 | 0.02-0.08 | thick yellow loop
+parasail harness with buckles undone | 0.6 | 0.02-0.08 | splayed nylon straps
+rental shack pricing sign on an easel | 0.6 | 0.02-0.08 | hand-lettered board
+inflatable banana boat tube deflating slightly | 0.5 | 0.05-0.15 | wrinkled yellow skin
+kayak paddle set leaning in a barrel | 0.55 | 0.02-0.08 | crossed blade pair
+dock cleat with a mooring line looped | 0.5 | 0.01-0.04 | worn brass fitting
+spare jet ski key on a foam float | 0.45 | 0.01-0.03 | bright bobber tag
+sunscreen bottle on the rental counter | 0.5 | 0.01-0.04 | gritty pump top
+laminated safety waiver on a clipboard | 0.5 | 0.01-0.04 | sun-curled pages
+whistle and radio hung on a peg | 0.45 | 0.01-0.03 | dangling lanyard pair
+rope fender bumper hung on the dock rail | 0.4 | 0.02-0.06 | woven rubber coil
+stack of dry bags by the counter | 0.45 | 0.02-0.06 | rolled waterproof bricks
+flip flops lined along the dock edge | 0.4 | 0.01-0.04 | kicked-off row

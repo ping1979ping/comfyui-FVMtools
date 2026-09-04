@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+steady onshore breeze across the rental stand | 0.85 | - | -
+salt spray drifting off the launch dock | 0.7 | - | -
+humid heat pressing over the sand | 0.6 | - | -
+gusty wind flapping the pricing sign | 0.55 | - | -
+still sultry air over the equipment racks | 0.5 | - | -
+choppy wind-driven surf beyond the dock | 0.55 | - | -
+bright glare bouncing off wet hulls | 0.5 | - | -
+light rain pattering on the tarps | 0.4 | - | -
+cool morning haze rolling off the water | 0.5 | - | -
+flat calm without a ripple at the dock | 0.45 | - | -
+thunderheads building far out past the buoys | 0.4 | - | -

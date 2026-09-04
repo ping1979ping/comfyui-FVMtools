@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+sun-bleached boardwalk plank grain | 0.6 | 0.02-0.1 | grey weathered wood
+peeling paint on the lifeguard stand ladder | 0.55 | 0.02-0.08 | chipped white rungs
+rusted bolt heads studding the pier piling | 0.45 | 0.01-0.05 | orange streak stains
+hand-lettered saltwater taffy shop sign | 0.5 | 0.02-0.1 | candy-colored lettering
+laminated beach-tag price chart pinned to the booth | 0.45 | 0.01-0.05 | small printed placard
+barnacle crust ringing a groin boulder | 0.4 | 0.02-0.08 | rough grey texture
+dune fence slat split by salt weather | 0.45 | 0.01-0.05 | cracked picket edge
+brass grommet worked loose on a flag rope | 0.35 | 0.005-0.02 | small metal eyelet
+splintered rail cap on the boardwalk railing | 0.45 | 0.01-0.05 | rough grain edge
+faded beach-badge check numbers stenciled on wood | 0.4 | 0.01-0.05 | painted digit row
+salt-crusted hinge on the cabana door | 0.35 | 0.005-0.02 | white crystalline film
+weathered rope coil looped on a piling | 0.4 | 0.01-0.05 | sun-bleached hank

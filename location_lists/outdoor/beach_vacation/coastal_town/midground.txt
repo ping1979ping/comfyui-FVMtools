@@ -1,0 +1,18 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+ice cream stand walk-up window | 0.85 | 0.2-0.45 | scoop menu chalkboard
+row of beach cruiser bikes parked | 0.9 | 0.25-0.5 | rental tags on handlebars
+sidewalk swimwear racks wheeled out | 0.85 | 0.2-0.45 | bikini tops on hangers
+surfboard display rack outside shop | 0.6 | 0.2-0.4 | waxed boards standing upright
+taffy pulling machine in the window | 0.5 | 0.15-0.35 | rotating candy hooks
+stacked beach umbrellas for rent | 0.55 | 0.2-0.45 | striped canvas bundles
+arcade token change kiosk | 0.5 | 0.15-0.35 | coin dispenser counter
+flip-flop display tower | 0.5 | 0.15-0.35 | rubber soles racked by size
+postcard spinner rack outside | 0.55 | 0.1-0.3 | sun-curled corners
+bike rack overflowing with cruisers | 0.5 | 0.2-0.4 | wire baskets and bells
+snow cone cart under an umbrella | 0.55 | 0.15-0.35 | syrup bottle row
+hermit crab souvenir stand | 0.4 | 0.1-0.25 | painted shell cages stacked
+wetsuit rental rack | 0.45 | 0.15-0.35 | dripping neoprene rows
+beach chair stack for rent | 0.5 | 0.15-0.35 | webbed nylon seats bundled
+surf lesson sign-up booth | 0.4 | 0.1-0.3 | folding table and clipboard

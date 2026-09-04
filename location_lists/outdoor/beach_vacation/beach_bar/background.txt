@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+thatched palapa roof spread overhead | 1.0 | 0.65-1.0 | woven palm-frond canopy
+open ocean horizon beyond the bar | 0.9 | 0.6-0.9 | flat blue expanse
+back-bar shelf lined with liquor bottles | 0.85 | 0.55-0.85 | backlit glass row
+driftwood support posts holding the thatch | 0.8 | 0.5-0.8 | weathered gray timber
+wide stretch of open sand beach | 0.85 | 0.6-1.0 | sun-bleached grain field
+string-light canopy strung pole to pole | 0.75 | 0.5-0.8 | warm bulb garland
+bamboo lattice back wall of the bar | 0.7 | 0.55-0.85 | woven cane screen
+tiki torch row along the roofline | 0.65 | 0.5-0.75 | flame-topped stakes
+distant palm tree line past the dunes | 0.6 | 0.5-0.8 | leaning silhouettes
+sunset sky bleeding over the water | 0.75 | 0.6-0.95 | orange-pink wash
+open-sided pavilion frame against the sky | 0.65 | 0.6-0.9 | post-and-beam skeleton
+hand-painted menu board mounted on the back wall | 0.7 | 0.3-0.6 | chalky lettered plank
+rope-and-post frontage framing the bar | 0.55 | 0.4-0.7 | knotted nautical rail
+straw-fringed roofline against the sky | 0.55 | 0.45-0.75 | dangling thatch tassels

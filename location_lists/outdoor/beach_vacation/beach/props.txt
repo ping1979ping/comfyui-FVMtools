@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stack of rolled resort towels | 0.9 | 0.05-0.15 | tightly wound terry cylinders
+snorkel mask and fin set on the rental rack | 0.8 | 0.05-0.15 | color-coded rubber gear
+laminated rental agreement clipboard | 0.5 | 0.02-0.08 | pen-on-a-string attached
+stack of folded pool noodles | 0.5 | 0.03-0.1 | bright bundled foam rods
+beach-chair reservation flag on a clip | 0.45 | 0.01-0.05 | small numbered pennant
+cooler chest chained to the vendor stand | 0.4 | 0.03-0.1 | padlocked steel loop
+wicker basket of spare sunscreen samples | 0.5 | 0.02-0.08 | woven display tray
+stack of woven sun-hats for rent | 0.45 | 0.03-0.1 | nested straw brims
+inflatable pump left by the rental rack | 0.35 | 0.01-0.04 | foot-pedal bellows
+laminated resort map on a wire stand | 0.4 | 0.02-0.06 | curled plastic sheet
+bundle of pool-float rental tags | 0.35 | 0.01-0.04 | string of paper tickets
+spare umbrella base weights stacked | 0.4 | 0.03-0.1 | concrete-filled discs
+dive-flag buoy coiled by the vendor hut | 0.35 | 0.01-0.05 | red-and-white marker
+tip jar on the towel-hut counter | 0.4 | 0.01-0.04 | glass jar with loose bills

@@ -1,0 +1,18 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+row of jet skis parked on the sand | 1.0 | 0.5-0.85 | color-decaled hull row
+floating rental dock stretching offshore | 0.9 | 0.45-0.8 | weathered plank platform
+wooden paddleboard and kayak rack | 0.9 | 0.35-0.65 | tiered upright stand
+rental shack with painted pricing board | 0.95 | 0.25-0.5 | plywood counter front
+parasail launch platform on the sand | 0.75 | 0.3-0.55 | raised tow ramp
+line of moored personal watercraft | 0.7 | 0.3-0.6 | bobbing hull row
+wide sandy stretch behind the rental stand | 0.85 | 0.4-0.7 | open tan expanse
+life-vest bin wall along the shack | 0.75 | 0.15-0.35 | stacked orange bricks
+banana boat tube tied at the dock cleat | 0.7 | 0.15-0.35 | fat yellow bladder
+surf line beyond the rental stretch | 0.65 | 0.3-0.55 | white foam bands
+distant tow boats idling offshore | 0.6 | 0.15-0.35 | small hull silhouettes
+numbered mooring buoys marking the watercraft lanes | 0.5 | 0.2-0.45 | bobbing colored markers
+horizon hazed by boat wake spray | 0.5 | 0.2-0.4 | sea-sky blur
+wetsuit rack drying in the sun | 0.55 | 0.1-0.25 | dripping neoprene row
+lifeguard tower overlooking the launch zone | 0.5 | 0.1-0.25 | tall white frame

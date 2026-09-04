@@ -1,0 +1,16 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+carved wooden bar edge trim | 0.55 | 0.03-0.1 | routed molding
+brass foot rail along the counter | 0.55 | 0.03-0.1 | polished bar rung
+hanging glass rack joinery overhead | 0.45 | 0.02-0.08 | slotted wood frame
+backlit liquor shelf niches | 0.55 | 0.05-0.15 | recessed glow strips
+teak deck board seams | 0.45 | 0.02-0.06 | tight expansion gaps
+cable-rail balustrade fittings | 0.5 | 0.03-0.1 | taut steel lines
+shingle-edge trim along the roofline | 0.4 | 0.03-0.1 | tucked eave line
+umbrella pole sockets set in the deck | 0.4 | 0.02-0.06 | brass collar rings
+stone coping along the terrace edge | 0.45 | 0.03-0.1 | rounded cap stones
+string-light hooks along the beam | 0.4 | 0.02-0.06 | small hardware row
+bar-top ice well recessed in the counter | 0.45 | 0.03-0.1 | chilled steel trough
+speed rail bolted under the bar lip | 0.4 | 0.02-0.06 | bottle-neck row
+signage plank burned with the bar's name | 0.4 | 0.02-0.08 | branded timber sign

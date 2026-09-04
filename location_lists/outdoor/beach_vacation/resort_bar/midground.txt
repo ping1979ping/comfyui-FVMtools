@@ -1,0 +1,18 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+high cocktail table ringed with wicker stools | 0.85 | 0.2-0.45 | cluster of perches
+glass-topped railing framing the view | 0.6 | 0.15-0.35 | clear guard line
+bartender working the backed counter | 0.6 | 0.15-0.3 | practiced pours
+wicker lounge seating along the rail | 0.55 | 0.2-0.4 | woven low seats
+steps descending toward the pool deck | 0.5 | 0.15-0.35 | terraced stairway
+planter boxes dividing the seating rows | 0.5 | 0.15-0.3 | trimmed greenery line
+second bar counter tucked in the corner | 0.4 | 0.15-0.3 | overflow station
+shade sail stretched between posts | 0.45 | 0.15-0.35 | angled canvas plane
+row of high stools along the counter | 0.6 | 0.15-0.3 | perched silhouettes
+server carrying a tray of cocktails | 0.55 | 0.1-0.25 | balanced garnish
+cluster of standing patrons at the rail | 0.5 | 0.15-0.35 | evening gathering
+potted palm dividing the lounge area | 0.5 | 0.15-0.3 | screening frond
+wooden steps down to the sand path | 0.45 | 0.15-0.3 | beach access stair
+glass rack mounted above the counter | 0.5 | 0.1-0.25 | suspended stemware
+string of market flags along the rail | 0.4 | 0.1-0.25 | fluttering pennants

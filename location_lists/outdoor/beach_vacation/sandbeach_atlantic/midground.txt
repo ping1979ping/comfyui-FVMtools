@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wooden lifeguard stand raised on stilts | 0.9 | 0.25-0.5 | white-and-blue tower
+beach badge check-in booth strung with pins | 0.8 | 0.15-0.35 | pinned metal badges
+dune fence panels stitched along the ridge | 0.75 | 0.15-0.35 | slatted wood zigzag
+cinderblock restroom pavilion near the ramp | 0.45 | 0.1-0.3 | painted block walls
+saltwater taffy cart wheeled onto the sand | 0.5 | 0.1-0.25 | pastel candy stripes
+numbered street-end beach access sign | 0.55 | 0.05-0.15 | white post marker
+outdoor rinse-off shower posts in a row | 0.5 | 0.1-0.25 | grey PVC fixtures
+surf-condition flag snapping on its pole | 0.6 | 0.05-0.15 | color-coded pennant
+striped changing cabana on the sand | 0.45 | 0.1-0.25 | canvas privacy tent
+beach patrol truck parked at the ramp | 0.4 | 0.1-0.3 | sand-tired pickup
+boardwalk bike rack chained full | 0.4 | 0.05-0.2 | tangled spokes
+frozen custard stand shutter propped open | 0.45 | 0.1-0.25 | soft-serve signage
+sea-oat clump anchoring a dune hollow | 0.5 | 0.1-0.3 | tan plume grass
+weathered groin marker post leaning seaward | 0.4 | 0.05-0.15 | barnacle-crusted timber

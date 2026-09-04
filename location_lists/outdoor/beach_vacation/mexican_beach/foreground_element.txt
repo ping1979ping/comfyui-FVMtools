@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+pale-gold sand close-grain texture | 1.0 | 0.2-0.4 | sun-warmed fine granular surface
+turquoise shallow-water ripple | 0.85 | 0.15-0.35 | sun-glinted clear wavelets
+scattered conch shell fragments | 0.6 | 0.05-0.15 | pink-lipped broken pieces
+woven palm-frond shade edge | 0.6 | 0.1-0.25 | dappled thatch shadow pattern
+hammock rope fringe corner | 0.55 | 0.05-0.15 | striped cotton tassel edge
+half-buried starfish shape | 0.45 | 0.03-0.1 | orange textured arm cluster
+lime wedge on ceviche plate | 0.5 | 0.03-0.1 | bright citrus garnish slice
+bare footprints in wet sand | 0.6 | 0.05-0.2 | staggered pressed trail
+drifting sargassum clump | 0.45 | 0.05-0.15 | brown tangled seaweed strand
+woven palm sun-hat brim | 0.6 | 0.1-0.2 | curved natural fiber shade
+salt-rimmed micheladas glass | 0.5 | 0.03-0.1 | frosted chili-salt edge
+beach-towel striped corner | 0.55 | 0.1-0.25 | woven Mexican blanket pattern
+sunscreen-slicked shoulder | 0.5 | 0.03-0.1 | glossy lotion sheen
+hermit crab shell trail | 0.4 | 0.02-0.08 | tiny dragging groove mark

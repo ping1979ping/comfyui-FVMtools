@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+weathered teak decking underfoot | 0.9 | 0.15-0.35 | sun-bleached planks
+polished stone pavers across the terrace | 0.55 | 0.15-0.35 | pale tile grid
+woven sisal matting by the bar | 0.5 | 0.1-0.25 | coarse natural weave
+condensation rings ghosting the counter top | 0.5 | 0.03-0.1 | wet halo trail
+sand tracked in from the beach stair | 0.45 | 0.03-0.1 | gritty scatter
+rope trim edging the deck boards | 0.45 | 0.05-0.15 | nautical border
+non-slip decking near the bar rail | 0.4 | 0.1-0.25 | textured coating
+spilled ice melting between planks | 0.4 | 0.02-0.08 | fading puddle
+shadow lattice cast by the pergola | 0.5 | 0.1-0.3 | slatted pattern
+lime wedge dropped underfoot | 0.4 | 0.01-0.04 | citrus litter
+cocktail napkin caught against a post | 0.4 | 0.01-0.04 | paper flutter
+worn path between tables and rail | 0.45 | 0.05-0.15 | traffic-polished boards
+drink coaster stack slid across the counter | 0.4 | 0.02-0.06 | cork disc pile
+sea spray haze drifting over the low rail | 0.4 | 0.05-0.15 | fine salt mist

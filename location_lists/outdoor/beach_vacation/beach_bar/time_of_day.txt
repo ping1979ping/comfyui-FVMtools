@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+golden hour warming the thatch roof | 0.85 | - | -
+bright midday sun over the bar | 0.75 | - | -
+late afternoon light slanting under the palapa | 0.8 | - | -
+sunset glow pooling behind the bottles | 0.85 | - | -
+blue dusk with the string lights lit | 0.75 | - | -
+deep night lit by torches and bulbs | 0.6 | - | -
+hazy bright morning before the crowd | 0.6 | - | -
+overcast midday flattening the shade | 0.5 | - | -
+first light with the bar still shuttered | 0.4 | - | -
+moonlit night over the quiet counter | 0.45 | - | -

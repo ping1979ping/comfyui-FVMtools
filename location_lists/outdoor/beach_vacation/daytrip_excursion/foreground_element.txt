@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+worn dock planks underfoot | 0.7 | 0.15-0.35 | sun-warmed grey wood
+sandy cove path leading to the water | 0.65 | 0.15-0.35 | packed pale sand
+packed dirt trail switchbacking down | 0.6 | 0.15-0.3 | root-crossed earth
+tide-smoothed rocks at the waterline | 0.55 | 0.1-0.3 | rounded wet stones
+rope handrail bolted into stone | 0.55 | 0.05-0.15 | taut fibrous line
+wet footprints on sun-warmed planks | 0.45 | 0.02-0.08 | dark fading prints
+loose gravel scattered on the trail | 0.45 | 0.1-0.25 | crunching pale chips
+driftwood log marking the path edge | 0.4 | 0.03-0.1 | silvered smooth wood
+shallow tide pool beside the dock | 0.45 | 0.05-0.15 | still clear water
+fallen palm fronds on the trail | 0.45 | 0.05-0.15 | dry brown blades
+scuffed steps carved into rock | 0.5 | 0.1-0.25 | chipped stone edges
+trailside stone cairn marker | 0.35 | 0.02-0.06 | stacked grey rocks

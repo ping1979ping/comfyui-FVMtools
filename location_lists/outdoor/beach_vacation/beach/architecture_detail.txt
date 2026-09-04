@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+carved wooden resort signpost arrow | 0.6 | 0.05-0.15 | routed directional lettering
+bundled palm-thatch eave over the towel hut | 0.85 | 0.1-0.2 | layered dried frond edge
+weathered rope railing along the boardwalk | 0.55 | 0.05-0.15 | salt-bleached hemp coil
+laminated rental price card on a post | 0.5 | 0.02-0.08 | sun-faded plastic sleeve
+numbered brass tag on a lounge-chair arm | 0.45 | 0.01-0.05 | stamped metal disc
+coral-stone border wall coping | 0.5 | 0.05-0.15 | porous cream capstone
+striped canvas valance along the umbrella edge | 0.6 | 0.05-0.15 | scalloped fabric trim
+bamboo pole lashing at the cabana corner | 0.5 | 0.03-0.1 | knotted natural cane
+faded resort logo stitched on umbrella canvas | 0.55 | 0.03-0.1 | embroidered emblem patch
+shell-and-rope wind chime hung at the hut | 0.35 | 0.01-0.05 | dangling bleached strands
+sand-scoured wooden step at the boardwalk ramp | 0.4 | 0.03-0.1 | worn grey plank tread
+small brass bell at the towel-hut counter | 0.35 | 0.01-0.04 | polished service bell

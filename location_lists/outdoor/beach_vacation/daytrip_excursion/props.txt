@@ -1,0 +1,18 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+stack of orange life vests | 0.9 | 0.05-0.15 | bright nylon pile
+rack of dripping snorkel masks | 0.8 | 0.03-0.1 | fogged glass lenses
+bundle of rubber swim fins | 0.65 | 0.03-0.1 | mismatched mesh bag
+waterproof dry bags piled up | 0.6 | 0.03-0.1 | roll-top yellow sacks
+cooler of bottled water | 0.7 | 0.03-0.1 | dripping plastic lid
+clipboard with a passenger manifest | 0.6 | 0.01-0.05 | curling paper sheet
+row of sunscreen bottles | 0.55 | 0.01-0.05 | greasy plastic caps
+inflatable dive flag on a pole | 0.55 | 0.02-0.08 | red and white fabric
+sealed first aid kit | 0.5 | 0.01-0.04 | white plastic case
+folded beach towels in a crate | 0.5 | 0.03-0.1 | striped cotton stack
+underwater camera housing | 0.45 | 0.01-0.03 | clear plastic shell
+mesh bag of pool noodles | 0.4 | 0.02-0.08 | bright foam bundle
+guide's whistle and radio | 0.55 | 0.01-0.02 | clipped to a belt
+stack of laminated reef maps | 0.5 | 0.01-0.04 | curling plastic sheets
+coil of spare mooring rope | 0.45 | 0.02-0.06 | thick braided loop

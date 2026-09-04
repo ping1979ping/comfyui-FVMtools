@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midmorning sun off a calm swell | 0.8 | - | -
+hazy noon glare over the water | 0.7 | - | -
+late afternoon light warming the boardwalk | 0.85 | - | -
+golden hour over the dune grass | 0.85 | - | -
+pink sunset stacking behind the pier | 0.75 | - | -
+blue dusk settling over the shore | 0.55 | - | -
+quiet early morning hush over the sand | 0.5 | - | -
+overcast midday flattening the color | 0.6 | - | -
+hazy summer afternoon thick with humidity | 0.6 | - | -
+boardwalk lights blinking on at dusk | 0.5 | - | -
+moonlit night over the dark swell | 0.4 | - | -

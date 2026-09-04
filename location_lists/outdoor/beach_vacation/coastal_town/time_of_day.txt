@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+hazy summer morning light | 0.75 | - | -
+bright midday boardwalk glare | 0.85 | - | -
+golden hour over the strip | 0.9 | - | -
+neon-lit dusk arcade glow | 0.7 | - | -
+blue hour after the shops close | 0.5 | - | -
+late afternoon beach-crowd light | 0.8 | - | -
+early morning shop-opening light | 0.55 | - | -
+hot midsummer noon haze | 0.6 | - | -
+string-light evening ambiance | 0.6 | - | -
+overcast beach-day light | 0.45 | - | -
+sunset over the pier | 0.65 | - | -

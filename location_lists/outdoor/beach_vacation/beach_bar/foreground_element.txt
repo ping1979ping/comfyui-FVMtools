@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+loose sand floor raked around the stools | 0.7 | 0.15-0.4 | combed grain pattern
+bottle caps scattered near the counter | 0.6 | 0.1-0.25 | pressed metal litter
+footprints tracked across the bar floor | 0.6 | 0.1-0.3 | overlapping shoe prints
+coiled rope resting at the counter base | 0.5 | 0.1-0.25 | looped hemp bundle
+melting ice puddle beneath the cooler | 0.5 | 0.05-0.2 | dark damp patch
+palm frond litter blown against a post | 0.5 | 0.1-0.25 | dry curled fronds
+flip-flop pile kicked off near the stools | 0.55 | 0.05-0.2 | scattered rubber pairs
+sand-dusted floor mat at the entrance | 0.45 | 0.1-0.25 | woven fiber square
+driftwood scraps piled at the edge | 0.45 | 0.1-0.25 | bleached broken branches
+spilled sugar rim dusting the counter edge | 0.4 | 0.05-0.15 | fine white scatter
+crushed shell fragments underfoot | 0.45 | 0.1-0.25 | pale broken bits
+straw drink stirrers dropped in the sand | 0.4 | 0.05-0.15 | thin bent sticks
+wet sand track leading from the surf | 0.45 | 0.1-0.3 | darkened damp trail
+lime wedge rinds tossed near the counter | 0.4 | 0.05-0.15 | curled citrus peel

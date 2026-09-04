@@ -1,0 +1,18 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+cooler stocked with beer bottles | 0.85 | 0.02-0.1 | dripping glass row
+cocktail shaker resting on the counter | 0.65 | 0.01-0.06 | dented steel tumbler
+coconut cup with a bent straw | 0.6 | 0.01-0.05 | husked drinking vessel
+bottle opener dangling on a string | 0.5 | 0.01-0.03 | worn metal hook
+garnish tray of lime wedges | 0.55 | 0.01-0.05 | citrus wheel spread
+bar rag slung over a shoulder | 0.5 | 0.01-0.04 | damp checkered cloth
+row of rum bottles on the shelf | 0.6 | 0.02-0.08 | amber glass lineup
+ice bucket sweating on the counter | 0.5 | 0.01-0.05 | frosted metal pail
+sunglasses left on the counter edge | 0.45 | 0.01-0.03 | dark plastic frames
+napkin stack pinned under a shell | 0.4 | 0.01-0.03 | fluttering paper square
+chalk stub beside the menu board | 0.4 | 0.01-0.02 | worn white nub
+straw hat hung on a post hook | 0.5 | 0.01-0.04 | woven wide brim
+beaded coaster stack by the taps | 0.4 | 0.01-0.03 | woven fiber discs
+hurricane lamp flickering on the counter | 0.5 | 0.01-0.05 | glass-shielded candle
+seashell ashtray at the counter's end | 0.35 | 0.01-0.03 | polished pink shell

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+beach badge clipped to a folded towel | 0.6 | 0.01-0.05 | small enamel pin
+saltwater taffy box tied with ribbon | 0.55 | 0.01-0.05 | waxed paper twist wrap
+woven beach basket packed for the day | 0.5 | 0.02-0.08 | striped rattan weave
+folding beach chair staked in the sand | 0.6 | 0.03-0.1 | aluminum-and-nylon frame
+dune-grass seed head snapped off in the wind | 0.4 | 0.005-0.02 | tan feathery tuft
+boardwalk arcade token dropped in the sand | 0.35 | 0.005-0.02 | brass coin glint
+rolled beach towel stamped with a shore logo | 0.5 | 0.02-0.08 | terry cloth roll
+sunfaded umbrella spike screwed into the sand | 0.5 | 0.02-0.08 | aluminum corkscrew shaft
+cooler strapped shut against the gulls | 0.5 | 0.02-0.1 | hard-shell red lid
+wooden beach-tag check stamp and ink pad | 0.45 | 0.01-0.04 | worn rubber stamper
+mesh sand-shaker bag hung on a chair arm | 0.4 | 0.01-0.04 | loose weave pouch
+paper boardwalk map curled at the corners | 0.4 | 0.01-0.04 | printed shore guide
+saltwater taffy pulling machine behind a shop window | 0.45 | 0.02-0.08 | rotating chrome arms
+sand-crusted flip-flops left by the fence | 0.5 | 0.01-0.04 | gritty rubber soles

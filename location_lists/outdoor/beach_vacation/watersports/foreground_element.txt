@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+wet sand churned by dock traffic | 0.7 | 0.2-0.45 | ankle-deep churn
+rental dock planks bleached by salt | 0.75 | 0.2-0.4 | grey weathered wood
+tow rope coiled loose in the sand | 0.55 | 0.05-0.15 | slack yellow pile
+sand rutted by beached hull skids | 0.55 | 0.1-0.3 | dragged grooves
+puddled seawater on the dock boards | 0.5 | 0.05-0.15 | shallow bright sheen
+scattered life vest straps on the sand | 0.5 | 0.02-0.08 | loose orange webbing
+oil sheen near the fuel dock edge | 0.4 | 0.02-0.08 | thin rainbow film
+footprints tracked between the equipment racks | 0.5 | 0.05-0.2 | overlapping sandy prints
+sand-crusted dock cleat underfoot | 0.45 | 0.01-0.05 | corroded brass eye
+deflated tube patch kit left open | 0.4 | 0.01-0.05 | rubber cement tin
+wet footprints leading to the launch ramp | 0.5 | 0.05-0.15 | dark sandy trail
+sun-bleached rope fibers fraying at the dock | 0.45 | 0.01-0.05 | frayed yellow strands
+loose sand drifted over the ramp base | 0.5 | 0.1-0.3 | wind-blown apron
+hose coiled beside the rinse station | 0.45 | 0.02-0.08 | green coiled loop

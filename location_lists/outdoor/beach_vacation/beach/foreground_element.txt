@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+raked sand groomed each morning | 1.0 | 0.2-0.4 | fine combed furrows
+sun-lounger shadow stripes across the sand | 0.8 | 0.15-0.35 | evenly spaced dark bars
+boardwalk-to-sand transition strip | 0.7 | 0.1-0.3 | weathered plank edge meeting grain
+chair-leg imprints pressed into warm sand | 0.6 | 0.1-0.25 | four-point dimples
+dropped resort wristband half buried | 0.4 | 0.02-0.08 | printed silicone loop
+scattered palm fronds swept into a pile | 0.5 | 0.05-0.2 | dried curled blades
+fine white sand groomed smooth near the hut | 0.7 | 0.15-0.35 | bleached powder texture
+shallow footbath trough at the towel hut | 0.45 | 0.05-0.15 | tiled rinse basin
+sand dollar left on a raked furrow | 0.35 | 0.01-0.05 | pale fluted disc
+stray drink-umbrella toothpick in the sand | 0.35 | 0.01-0.04 | tiny paper parasol
+shell-lined border marking the chair row | 0.45 | 0.05-0.15 | curated white edging
+warm sand darkening near the shoreline wash | 0.6 | 0.15-0.3 | damp gradient band
+flattened patch where a lounger recently stood | 0.4 | 0.1-0.2 | compressed rectangle
+loose price-tag string from a rental float | 0.3 | 0.01-0.04 | curled paper tag

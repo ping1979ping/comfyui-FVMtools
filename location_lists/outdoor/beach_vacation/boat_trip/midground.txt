@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+coiled dock line bundle | 0.9 | 0.2-0.4 | thick braided nylon rope coil
+wall-mounted life-jacket rack | 0.95 | 0.2-0.45 | orange vest hanging row
+cooler wedged against rail | 0.95 | 0.25-0.5 | hard-shell insulated white box
+bench seat with snorkel gear | 0.9 | 0.25-0.5 | cushioned vinyl storage bench
+stainless steel boat railing run | 0.9 | 0.2-0.45 | polished tubular guard rail
+swim platform ladder unit | 0.75 | 0.2-0.4 | folded aluminum step ladder
+anchor windlass deck fitting | 0.6 | 0.15-0.35 | mounted metal winch drum
+captain's helm console station | 0.7 | 0.2-0.45 | wheel and gauge cluster
+shaded cockpit seating bench | 0.75 | 0.2-0.45 | cushioned U-shaped bench
+fishing rod holder rack | 0.55 | 0.15-0.35 | angled tube mount row
+fender bumper cluster hung | 0.6 | 0.15-0.3 | round vinyl protective bumpers
+trampoline netting bow section | 0.6 | 0.2-0.4 | woven mesh netted platform
+bimini support pole frame | 0.7 | 0.15-0.35 | angled chrome tubing brace
+transom swim step ladder | 0.55 | 0.15-0.3 | textured non-slip platform

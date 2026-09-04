@@ -1,0 +1,18 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+turquoise Caribbean-clear shallows | 1.0 | 0.5-0.9 | glass-clear jade-blue water
+powder-white sand expanse | 1.0 | 0.5-0.9 | fine bleached bright grain
+row of palapa-roofed cabanas | 0.9 | 0.3-0.6 | woven palm-thatch peaked roofs
+leaning coconut palm cluster | 0.9 | 0.3-0.7 | tall curved trunk crowns
+cloudless tropical blue sky | 0.85 | 0.4-0.8 | deep saturated dome
+distant coral-reef foam line | 0.55 | 0.2-0.4 | pale breaking ridge offshore
+pastel coral-pink hotel facade | 0.7 | 0.3-0.6 | rendered stucco wall block
+sea-grape thicket tree line | 0.6 | 0.3-0.6 | broad rounded waxy leaves
+low limestone rock outcrop | 0.55 | 0.2-0.5 | porous grey-white karst
+drifting sargassum seaweed line | 0.5 | 0.15-0.35 | brown seasonal windrow band
+distant catamaran sail silhouette | 0.5 | 0.1-0.3 | white twin-hull shape
+papel-picado banner strand | 0.55 | 0.1-0.3 | perforated tissue-paper flags
+thatched beach-bar roofline | 0.65 | 0.2-0.5 | palm-frond peaked silhouette
+gliding pelican formation | 0.45 | 0.05-0.15 | low skimming dark wingbeats
+distant jungle-green headland | 0.5 | 0.2-0.4 | dense tropical foliage mass

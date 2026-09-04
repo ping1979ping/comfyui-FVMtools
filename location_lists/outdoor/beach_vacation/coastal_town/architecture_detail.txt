@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+hand-painted price chalkboard edge | 0.5 | 0.02-0.08 | scalloped chalk border
+string-light socket line overhead | 0.55 | 0.02-0.08 | bulb sockets clipped to eaves
+shop window suncatcher decal | 0.45 | 0.01-0.05 | starfish and anchor stickers
+boardwalk plank end cap | 0.4 | 0.01-0.05 | galvanized bolt head
+weathered paint chip on shutters | 0.45 | 0.02-0.08 | salt-blistered layers
+surf shop sticker-covered door | 0.5 | 0.02-0.08 | overlapping brand decals
+taffy shop striped window trim | 0.45 | 0.02-0.06 | candy-cane painted frame
+arcade marquee bulb row | 0.5 | 0.03-0.1 | half-burned-out chase lights
+rope railing cleat hitch | 0.4 | 0.01-0.04 | figure-eight knot detail
+bike rental price placard | 0.45 | 0.01-0.05 | laminated hourly rates
+rust bleed at a hinge joint | 0.4 | 0.01-0.04 | salt-air corrosion streak
+sun-faded shop awning fringe | 0.5 | 0.02-0.06 | scalloped trim edge

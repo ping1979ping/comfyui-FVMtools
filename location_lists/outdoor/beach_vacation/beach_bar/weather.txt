@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+steady onshore breeze rattling the thatch | 0.85 | - | -
+warm humid air hanging under the roof | 0.7 | - | -
+salt haze softening the horizon | 0.6 | - | -
+still sultry evening air | 0.55 | - | -
+gusts flapping the straw fringe | 0.5 | - | -
+light rain pattering the palm roof | 0.4 | - | -
+dry heat shimmering off the sand | 0.55 | - | -
+cool evening breeze off the water | 0.55 | - | -
+flat calm without a ripple | 0.45 | - | -
+distant thunderheads building offshore | 0.4 | - | -

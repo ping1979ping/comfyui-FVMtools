@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning departure light | 0.8 | - | -
+mid-morning haze over the bay | 0.65 | - | -
+bright midday equatorial sun | 0.85 | - | -
+hazy tropical afternoon light | 0.7 | - | -
+golden hour on the return trip | 0.75 | - | -
+overcast departure morning | 0.5 | - | -
+clear blue-sky excursion day | 0.85 | - | -
+late afternoon sun low over the water | 0.7 | - | -
+humid noon glare | 0.55 | - | -
+soft dawn light at the dock | 0.5 | - | -

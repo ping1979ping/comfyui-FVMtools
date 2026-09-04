@@ -1,0 +1,19 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+backed bar wall stacked with bottles | 1.0 | 0.4-0.75 | glowing shelf tiers
+open ocean horizon past the railing | 0.9 | 0.35-0.65 | hazy blue line
+gabled roof canopy spanning the bar | 0.6 | 0.25-0.5 | shingled timber shade
+resort wing rising behind the terrace | 0.55 | 0.25-0.5 | balconied facade
+stone balustrade tracing the terrace edge | 0.7 | 0.25-0.5 | waist-high border
+market umbrella cluster over the tables | 0.75 | 0.3-0.55 | striped canvas canopy
+sunset sky bleeding over the water | 0.6 | 0.3-0.6 | amber wash
+distant beach strip far below | 0.55 | 0.2-0.4 | pale sliver of sand
+wooden pergola frame over the bar | 0.5 | 0.2-0.45 | slatted beam grid
+terrace edge dropping toward the shore | 0.5 | 0.25-0.5 | vanishing line
+mirrored back-bar glass catching the light | 0.55 | 0.15-0.35 | bottle reflections
+palm crowns swaying past the railing | 0.5 | 0.15-0.35 | feathered fringe
+stacked stone retaining wall below the deck | 0.45 | 0.15-0.35 | terraced masonry
+string-light canopy strung pole to pole | 0.45 | 0.15-0.35 | warm scattered bulbs
+headland silhouette across the bay | 0.4 | 0.15-0.3 | distant landmark
+open-sided lounge pavilion beside the bar | 0.4 | 0.15-0.35 | timber-framed shade

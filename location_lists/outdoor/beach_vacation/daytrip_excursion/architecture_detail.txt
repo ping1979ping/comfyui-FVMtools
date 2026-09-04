@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+weathered rope knot on the rail | 0.55 | 0.02-0.06 | tight figure-eight
+hand-painted trail distance sign | 0.5 | 0.02-0.08 | chipped lettering
+rusted dock cleat bolted to wood | 0.55 | 0.01-0.05 | orange-streaked metal
+carved wooden excursion marker | 0.45 | 0.02-0.06 | routed lettering
+frayed life vest strap buckle | 0.4 | 0.01-0.03 | worn plastic clip
+salt-bleached paint on the hut | 0.5 | 0.05-0.15 | flaking pale blue
+corroded hinge on the gear locker | 0.4 | 0.01-0.03 | rust-streaked joint
+knotted rope ladder rung | 0.35 | 0.01-0.04 | frayed fiber loop
+faded safety notice board | 0.45 | 0.03-0.1 | sun-bleached text
+bamboo lashing on the rail post | 0.4 | 0.01-0.05 | woven cane binding
+worn brass whistle on a lanyard | 0.35 | 0.01-0.03 | dull tarnished metal
+chalk tally mark on the dock post | 0.3 | 0.01-0.03 | scratched white numerals

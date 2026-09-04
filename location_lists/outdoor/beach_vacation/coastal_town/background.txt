@@ -1,0 +1,18 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+pastel surf shop storefronts | 1.0 | 0.6-0.9 | weathered clapboard siding
+boardwalk arcade entrance archway | 0.75 | 0.5-0.8 | flashing marquee bulbs
+swimwear boutique row with awnings | 0.9 | 0.5-0.85 | striped canvas overhangs
+nautical flag bunting overhead | 0.85 | 0.3-0.6 | faded signal-flag triangles
+weathered cedar shingle rooflines | 0.6 | 0.5-0.8 | salt-bleached shakes
+ocean sliver between shopfronts | 0.5 | 0.3-0.6 | hazy blue horizon strip
+distant pier ferris wheel silhouette | 0.45 | 0.3-0.55 | spoked wheel outline
+saltwater taffy shop candy-stripe front | 0.8 | 0.4-0.7 | pink and white stripes
+surf shop mural wave wall | 0.55 | 0.3-0.6 | hand-painted breaking wave
+souvenir shirt racks against the wall | 0.75 | 0.4-0.7 | sun-faded tie-dye stacks
+raised boardwalk guardrail line | 0.6 | 0.4-0.7 | salt-pitted wood posts
+lifeguard tower down the strip | 0.4 | 0.2-0.4 | red and white paint peel
+beach cruiser rental shopfront | 0.7 | 0.4-0.7 | pastel frames in rows
+bright coastal sky with gulls | 0.6 | 0.6-1.0 | wheeling white specks
+string of shop flags snapping | 0.5 | 0.2-0.4 | primary-color pennants

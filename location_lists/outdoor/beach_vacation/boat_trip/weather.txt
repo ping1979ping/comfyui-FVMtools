@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear open-water sunshine | 1.0 | - | -
+steady offshore breeze | 0.95 | - | -
+light salt-spray mist | 0.85 | - | -
+choppy wind-driven swell | 0.7 | - | -
+calm glassy water day | 0.65 | - | -
+scattered fair-weather clouds | 0.8 | - | -
+humid tropical air | 0.7 | - | -
+gusty afternoon crosswind | 0.6 | - | -
+brief passing squall | 0.45 | - | -
+hazy sun-bleached sky | 0.55 | - | -

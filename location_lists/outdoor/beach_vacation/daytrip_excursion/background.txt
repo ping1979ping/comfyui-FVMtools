@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+jungle-fringed cove backing the dock | 0.95 | 0.55-0.95 | dense green wall
+wooden tour dock reaching into turquoise water | 1.0 | 0.5-0.9 | sun-bleached planks
+limestone cliff face rising behind the cove | 0.85 | 0.45-0.8 | pale stacked strata
+rope-rail overlook cut into the cliff edge | 0.7 | 0.25-0.55 | knotted safety line
+distant reef line breaking the swell | 0.65 | 0.3-0.6 | pale turquoise band
+forested headland closing the bay | 0.75 | 0.35-0.7 | dark green shoulder
+anchored tour boats bobbing offshore | 0.8 | 0.25-0.55 | white hulls at rest
+open bay dotted with snorkel buoys | 0.6 | 0.25-0.5 | scattered orange dots
+switchback trail descending through palms | 0.65 | 0.25-0.55 | narrow packed-earth line
+sun-bleached wooden pier pilings | 0.6 | 0.25-0.5 | barnacled support posts
+jungle canopy overhanging the trailhead | 0.7 | 0.3-0.6 | layered green shade
+rocky point sheltering the cove mouth | 0.6 | 0.25-0.5 | dark weathered outcrop
+open ocean horizon beyond the reef | 0.55 | 0.35-0.75 | flat blue line
+tin-roofed guide hut at the dock | 0.55 | 0.2-0.45 | corrugated silver roof

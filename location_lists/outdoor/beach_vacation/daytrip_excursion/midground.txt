@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rope-rail fence along the overlook | 0.75 | 0.15-0.35 | weathered wood posts
+guide's fold-out supply table | 0.85 | 0.15-0.35 | folding metal legs
+stacked life vests at the dock | 0.8 | 0.1-0.3 | orange nylon pile
+coiled mooring line on a cleat | 0.6 | 0.05-0.15 | thick braided rope
+palm-thatch shaded rest area | 0.55 | 0.15-0.35 | woven frond roof
+wooden signpost marking trail distance | 0.55 | 0.05-0.15 | carved arrow marker
+snorkel gear rack under a tarp | 0.6 | 0.1-0.25 | dripping blue tarp
+idling tour boat at the dock edge | 0.55 | 0.15-0.35 | low engine rumble
+rough-cut stone steps up the cliff | 0.6 | 0.15-0.35 | uneven worn treads
+hammock strung between two palms | 0.45 | 0.05-0.15 | sagging woven net
+storage crates stacked at the hut | 0.5 | 0.1-0.25 | weathered plastic bins
+faded flag marking the meeting point | 0.45 | 0.03-0.1 | limp fabric triangle
