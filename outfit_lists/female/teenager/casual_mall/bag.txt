@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# small crossbody bag | 0.90 | 0.15-0.35 | leather,nylon
+#color# quilted shoulder bag | 0.80 | 0.15-0.35 | leather,polyester
+#color# mini top-handle bag | 0.65 | 0.15-0.35 | leather
+#color# belt bag | 0.60 | 0.15-0.35 | nylon,polyester
+#color# canvas mini tote | 0.55 | 0.15-0.35 | canvas,cotton
+#color# mini backpack purse | 0.55 | 0.15-0.35 | nylon,leather
+#color# woven straw-style bag | 0.45 | 0.15-0.35 | canvas
+#color# clear stadium bag | 0.40 | 0.15-0.35 | plastic
+#color# chain-strap shoulder bag | 0.50 | 0.15-0.35 | leather,metal

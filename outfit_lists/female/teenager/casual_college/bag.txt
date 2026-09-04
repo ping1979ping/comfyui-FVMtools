@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# campus backpack | 0.90 | 0.10-0.35 | nylon,canvas
+#color# crossbody bag | 0.75 | 0.10-0.35 | nylon,leather
+#color# canvas tote bag | 0.70 | 0.10-0.35 | canvas,cotton
+#color# drawstring cinch bag | 0.55 | 0.10-0.30 | nylon
+#color# mini backpack | 0.60 | 0.10-0.35 | nylon,canvas
+#color# belt bag | 0.50 | 0.10-0.30 | nylon
+#color# laptop tote | 0.45 | 0.15-0.35 | canvas,leather
+#color# drawstring gym sack | 0.40 | 0.10-0.30 | nylon,canvas
+#color# quilted shoulder bag | 0.35 | 0.15-0.35 | nylon

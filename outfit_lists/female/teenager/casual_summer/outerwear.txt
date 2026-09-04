@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# jean jacket | 0.55 | 0.1-0.3 | denim
+#color# cropped cardigan | 0.50 | 0.1-0.3 | cotton,jersey
+#color# flannel shirt tied at waist | 0.45 | 0.1-0.3 | cotton
+#color# oversized button-down | 0.50 | 0.1-0.3 | chambray,cotton
+#color# lightweight bomber jacket | 0.40 | 0.1-0.3 | cotton,jersey
+#color# breezy shirt jacket | 0.40 | 0.1-0.3 | linen,cotton
+#color# utility jacket | 0.35 | 0.1-0.3 | cotton,canvas
+#color# gauzy kimono wrap | 0.35 | 0.1-0.3 | rayon,cotton
+#color# cropped jean vest | 0.30 | 0.1-0.3 | denim
+#color# hooded zip-up | 0.40 | 0.1-0.3 | cotton,jersey
+#color# tied overshirt | 0.35 | 0.1-0.3 | chambray,cotton
+#color# cropped moto jacket | 0.25 | 0.2-0.3 | leather

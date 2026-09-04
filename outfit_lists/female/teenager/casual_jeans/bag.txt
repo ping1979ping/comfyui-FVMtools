@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# crossbody bag | 0.90 | 0.1-0.3 | canvas,leather
+#color# mini backpack | 0.75 | 0.1-0.3 | canvas,nylon
+#color# everyday tote | 0.60 | 0.1-0.3 | canvas,cotton
+#color# mini shoulder bag | 0.55 | 0.1-0.3 | leather,polyester
+#color# fanny pack | 0.55 | 0.1-0.3 | nylon
+#color# belt bag | 0.50 | 0.1-0.3 | nylon,polyester
+#color# drawstring bag | 0.45 | 0.1-0.3 | canvas,nylon
+#color# small bucket bag | 0.45 | 0.1-0.3 | canvas,leather
+#color# mini messenger bag | 0.40 | 0.1-0.3 | canvas,nylon

@@ -1,0 +1,14 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.15 | natural | medium
+jersey | 0.15 | natural | light
+denim | 0.2 | casual | medium
+linen | 0.25 | natural | light
+rayon | 0.2 | casual | light
+chambray | 0.2 | casual | light
+canvas | 0.15 | casual | medium
+spandex | 0.1 | sporty | light
+straw | 0.15 | natural | light
+leather | 0.4 | luxury | medium
+rubber | 0.1 | casual | medium
+plastic | 0.1 | casual | light
+metal | 0.3 | luxury | light

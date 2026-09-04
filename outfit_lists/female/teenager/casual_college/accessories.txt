@@ -1,0 +1,16 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+campus lanyard with ID badge | 0.55 | 0.15-0.35 | nylon,plastic
+claw hair clip | 0.75 | 0.10-0.30 | plastic
+scrunchie on wrist | 0.70 | 0.10-0.30 | cotton
+stud earrings | 0.55 | 0.15-0.35 | metal
+layered thin necklace | 0.45 | 0.15-0.35 | metal
+friendship bracelet stack | 0.55 | 0.10-0.30 | cotton
+phone with pop grip | 0.55 | 0.10-0.30 | plastic
+round wire-frame glasses | 0.40 | 0.15-0.35 | metal
+keychain charm cluster | 0.45 | 0.10-0.30 | metal,plastic
+insulated water bottle sling | 0.45 | 0.10-0.30 | nylon
+beaded bracelet stack | 0.40 | 0.10-0.30 | plastic
+wristband hair tie | 0.50 | 0.10-0.30 | polyester
+simple wristwatch | 0.35 | 0.20-0.40 | leather,metal

@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized hoodie | 0.90 | 0.1-0.3 | cotton,fleece
+cropped hoodie | 0.55 | 0.1-0.3 | cotton,fleece
+graphic tee | 0.80 | 0.1-0.2 | cotton,jersey
+longline tee | 0.60 | 0.1-0.2 | cotton,jersey
+half-zip pullover | 0.55 | 0.1-0.3 | polyester,fleece
+ribbed tank | 0.50 | 0.1-0.2 | spandex,nylon
+cropped sports bra | 0.55 | 0.1-0.2 | spandex,nylon
+boxy crewneck | 0.60 | 0.1-0.3 | cotton,fleece
+racerback tank | 0.45 | 0.1-0.2 | spandex,nylon
+mock-neck long sleeve | 0.45 | 0.1-0.3 | spandex,nylon
+cropped rugby tee | 0.40 | 0.1-0.3 | cotton,jersey
+oversized sweatshirt | 0.55 | 0.1-0.3 | cotton,fleece
+henley tee | 0.40 | 0.1-0.2 | cotton,jersey

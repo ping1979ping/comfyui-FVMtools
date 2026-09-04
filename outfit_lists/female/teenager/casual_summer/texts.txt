@@ -1,0 +1,30 @@
+# format: text_content | probability | compatible_slots | font_hint
+#
+# Sourcing notes — every place-name wordmark below is real and verifiable (a beach-town
+# souvenir tee worn back home is the "yes" case for lettering — see Decision 1/2 in
+# build-outfit-set.md). This project's home region is Reading / Berks County, PA, and
+# Berks families culturally vacation at the New Jersey Shore each summer, so a shore
+# souvenir tee worn as everyday wear back home is an authentic, well-sourced detail:
+#  * "LBI" is the everyday abbreviation for Long Beach Island, an 18-mile barrier
+#    island in Ocean County, NJ; shore shops there (Coconuts and Tropics, Making
+#    Waves, etc.) sell "LBI"-branded tees, hoodies and sweatshirts as the classic
+#    souvenir line for the island.
+#  * Avalon and Stone Harbor sit together on Seven Mile Island in Cape May County, NJ
+#    — quieter, boutique-shopping Jersey Shore towns (Dune Drive in Avalon, 96th St
+#    in Stone Harbor) that sell their own town-name souvenir apparel.
+#  * Point Pleasant Beach, NJ is home to Jenkinson's Boardwalk; its gift shops
+#    (Aquarium Gifts, Jenkinson's South Gift Shop) sell branded souvenir T-shirts
+#    referencing the boardwalk and the town.
+#  * Cape May, NJ — a Victorian-era shore town and National Historic Landmark — is
+#    one of the most recognized Jersey Shore town names on souvenir tees, sold along
+#    its Washington Street Mall shops.
+# "SUMMER '26" and "SUNKISSED" are generic seasonal prints, not brand marks — no
+# research needed for those (per spec Decision 2).
+
+"LBI" | 0.30 | top,outerwear,bag | retro varsity block lettering
+"AVALON NJ" | 0.20 | top,outerwear | small serif screen print
+"STONE HARBOR" | 0.18 | top,outerwear | small serif screen print
+"POINT PLEASANT BEACH" | 0.15 | top,outerwear | retro script
+"CAPE MAY" | 0.20 | top,outerwear,bag | retro script
+"SUMMER '26" | 0.25 | top | bold retro print
+"SUNKISSED" | 0.20 | top | bold retro print

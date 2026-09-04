@@ -1,0 +1,25 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# graphic tank top | 0.85 | 0.1-0.3 | cotton,jersey
+#color# ribbed tank top | 0.80 | 0.1-0.3 | jersey,cotton
+#color# tube top | 0.55 | 0.1-0.2 | jersey,spandex
+#color# off-shoulder top | 0.65 | 0.1-0.3 | jersey,cotton
+#color# crop top | 0.75 | 0.1-0.3 | cotton,jersey
+#color# halter top | 0.60 | 0.1-0.3 | cotton,rayon
+#color# babydoll top | 0.50 | 0.1-0.3 | cotton,rayon
+#color# tied button-up shirt | 0.55 | 0.1-0.3 | chambray,cotton
+#color# cropped hoodie | 0.45 | 0.1-0.3 | cotton,jersey
+#color# knotted crop top | 0.55 | 0.1-0.3 | cotton,jersey
+#color# ruffle-strap cami | 0.55 | 0.1-0.3 | cotton,rayon
+#color# crochet-trim tank top | 0.45 | 0.1-0.3 | cotton,jersey
+#color# graphic band tee | 0.60 | 0.1-0.3 | cotton,jersey
+#color# striped boatneck tee | 0.55 | 0.1-0.3 | cotton,jersey
+#color# peplum tank top | 0.40 | 0.1-0.3 | jersey,cotton
+#color# cold-shoulder top | 0.45 | 0.1-0.3 | jersey,rayon
+#color# puff-sleeve blouse | 0.45 | 0.2-0.3 | cotton,rayon
+#color# smocked tube top | 0.40 | 0.1-0.2 | cotton,jersey
+
+# dress-style (top+bottom integrated)
+#color# smocked sundress | 0.55 | 0.1-0.3 | cotton,rayon
+#color# tiered sundress | 0.45 | 0.1-0.3 | rayon,cotton

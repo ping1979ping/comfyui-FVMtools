@@ -1,0 +1,16 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# high-waist leggings | 0.85 | 0.10-0.35 | spandex,cotton
+#color# jogger sweatpants | 0.85 | 0.10-0.35 | cotton,fleece
+#color# straight-leg jeans | 0.80 | 0.15-0.40 | denim
+#color# mom jeans | 0.65 | 0.15-0.40 | denim
+#color# ribbed leggings | 0.60 | 0.10-0.35 | cotton,spandex
+#color# relaxed sweatpants | 0.65 | 0.10-0.30 | cotton,fleece
+#color# cargo joggers | 0.55 | 0.15-0.35 | cotton
+#color# bootcut leggings | 0.50 | 0.10-0.35 | spandex,cotton
+#color# wide-leg sweatpants | 0.55 | 0.15-0.35 | cotton,fleece
+#color# skinny jeans | 0.55 | 0.15-0.40 | denim
+#color# fleece-lined leggings | 0.45 | 0.10-0.30 | fleece,spandex
+#color# distressed boyfriend jeans | 0.50 | 0.15-0.40 | denim
+#color# flare leggings | 0.40 | 0.15-0.35 | spandex,cotton

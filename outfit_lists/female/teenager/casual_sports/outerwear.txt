@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+open zip-up jacket | 0.75 | 0.1-0.3 | polyester,nylon
+cropped puffer | 0.55 | 0.1-0.3 | nylon,polyester
+oversized bomber | 0.50 | 0.1-0.3 | nylon,polyester
+windbreaker | 0.60 | 0.1-0.3 | nylon,polyester
+varsity jacket | 0.45 | 0.1-0.4 | wool,nylon
+track jacket | 0.60 | 0.1-0.3 | polyester,nylon
+sherpa-lined zip-up | 0.45 | 0.1-0.3 | fleece,polyester
+utility vest | 0.35 | 0.1-0.3 | nylon,polyester
+denim jacket | 0.35 | 0.1-0.4 | cotton
+quarter-zip pullover | 0.40 | 0.1-0.3 | fleece,polyester
+cropped track jacket | 0.35 | 0.1-0.3 | polyester,nylon
+hooded rain jacket | 0.30 | 0.1-0.3 | nylon,polyester

@@ -1,0 +1,38 @@
+# format: text_content | probability | compatible_slots | font_hint
+#
+# Sourcing notes — every brand wordmark below is a real, verifiable mark, chosen
+# because athletic-brand lettering (hoodie/sweatshirt chest prints, sneaker box
+# script logos) is exactly the kind of everyday teen athleisure-as-streetwear
+# lettering a real person wears out and about, not on a competing athlete:
+#  * Nike, Inc. (Beaverton, OR) uses the "NIKE" wordmark and its "JUST DO IT"
+#    tagline as chest prints on Sportswear-line hoodies and tees.
+#  * adidas AG (Herzogenaurach, Germany) prints its "adidas" wordmark alongside
+#    the three-stripe mark; both appear routinely on Originals-line hoodies.
+#  * Champion (Hanesbrands; Winston-Salem, NC) is famous specifically for the
+#    "CHAMPION" block-letter chest print on its reverse-weave hoodies/sweats —
+#    a wordmark, not a swoosh/stripes-style mark, so it fits chest-print lettering.
+#  * PUMA SE (Herzogenaurach, Germany) prints the "PUMA" wordmark on caps and
+#    track jackets.
+#  * Under Armour, Inc. (Baltimore, MD) uses "UNDER ARMOUR" as a block chest
+#    print on outerwear and bags.
+#  * FILA (Italian heritage brand, US operations in Sparks, MD) is a defining
+#    90s-revival streetwear mark; "FILA" appears in blocky retro lettering on
+#    hoodies and sneaker tongues — heavy current teen/Gen-Z resale/thrift trend.
+#  * New Balance Athletics, Inc. (Boston, MA) prints "NEW BALANCE" on outerwear
+#    and bags, tied to its "NB" sneaker resurgence in teen sneaker culture.
+#  * "BERKS YOUTH SOCCER LEAGUE" is a real regional youth league (Berks County,
+#    PA) — old rec-league merch worn years after playing is a very ordinary
+#    athleisure-as-streetwear item, exactly this set's theme, not sport-in-play.
+#  * "BERKS COUNTY" is a real Pennsylvania county name, used the way "BROOKLYN"
+#    or "NYC" appear as location prints on streetwear (see urban_jogger/texts.txt).
+
+"NIKE" | 0.35 | top,outerwear | bold block chest print
+"JUST DO IT" | 0.15 | top | italic bold slogan print
+"ADIDAS" | 0.30 | top,outerwear | bold sans-serif chest print
+"CHAMPION" | 0.30 | top,outerwear | reverse-weave block letters
+"PUMA" | 0.20 | top,headwear | bold script logo
+"UNDER ARMOUR" | 0.18 | outerwear,bag | bold block letters
+"FILA" | 0.20 | top,outerwear | blocky retro logo
+"NEW BALANCE" | 0.18 | outerwear,bag | bold block letters
+"BERKS YOUTH SOCCER LEAGUE" | 0.15 | outerwear,top | small faded screen print
+"BERKS COUNTY" | 0.15 | top,bag | varsity block

@@ -1,0 +1,30 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every college wordmark below is a real, verifiable institution;
+# unsourced prints (CAMPUS TOUR / CLASS OF 2030 / FRESHMAN / OPEN HOUSE / STATE
+# UNIVERSITY) are generic campus-visit wording with no brand character, so they
+# need no research per the doc's rule:
+#  * Albright College (Reading, PA) traces to 1856 and is Berks County's oldest
+#    institution of higher learning. Mascot: the Lions. School colors: red and
+#    white. Its campus-store crewneck/hoodie print is a standard arched "ALBRIGHT"
+#    wordmark; "ALBRIGHT COLLEGE" and "ALBRIGHT LIONS" are the same family of mark.
+#  * Penn State Berks is a Penn State Commonwealth Campus in Reading, PA
+#    (Tulpehocken Township). Like every Penn State campus it shares the university's
+#    Nittany Lion mascot and blue-and-white color scheme; campus-store apparel
+#    prints "PENN STATE BERKS" in full or the short "PSU BERKS" / "NITTANY LIONS"
+#    forms.
+#  * "STATE UNIVERSITY" is a generic collegiate wordmark style (no specific school
+#    implied) used as secondary national-brand variety — ordinary print, not a mark.
+
+"ALBRIGHT" | 0.28 | top,outerwear | arched collegiate block letters
+"ALBRIGHT COLLEGE" | 0.22 | top,outerwear | arched collegiate serif
+"ALBRIGHT LIONS" | 0.20 | top,outerwear | varsity block lettering
+"PENN STATE BERKS" | 0.24 | top,outerwear | blue collegiate block lettering
+"PSU BERKS" | 0.18 | top,outerwear,headwear | small block lettering
+"NITTANY LIONS" | 0.16 | top,outerwear | arched varsity block
+"STATE UNIVERSITY" | 0.20 | top,outerwear | generic collegiate block letters
+"CAMPUS TOUR" | 0.18 | top,bag | bold sans-serif
+"CLASS OF 2030" | 0.16 | top,outerwear,headwear | collegiate serif numerals
+"FRESHMAN" | 0.15 | top | varsity block
+"OPEN HOUSE" | 0.14 | top,bag | bold sans-serif

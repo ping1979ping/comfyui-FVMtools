@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# oversized denim jacket | 0.75 | 0.15-0.35 | denim
+#color# cropped bomber jacket | 0.70 | 0.15-0.35 | nylon,polyester
+#color# varsity jacket | 0.60 | 0.15-0.35 | wool,leather
+#color# teddy coat | 0.55 | 0.15-0.35 | acrylic,fleece
+#color# puffer vest | 0.60 | 0.15-0.35 | nylon,polyester
+#color# oversized flannel overshirt | 0.55 | 0.15-0.35 | cotton
+#color# cropped denim jacket | 0.55 | 0.15-0.35 | denim
+#color# utility jacket | 0.45 | 0.15-0.35 | cotton,nylon
+#color# chunky knit cardigan | 0.50 | 0.15-0.35 | acrylic,cotton
+#color# windbreaker jacket | 0.45 | 0.15-0.35 | nylon,polyester

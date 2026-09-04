@@ -1,0 +1,16 @@
+# format: fabric_name | formality | family | weight
+cotton | 0.15 | natural | medium
+fleece | 0.10 | casual | medium
+spandex | 0.10 | sporty | light
+denim | 0.20 | casual | medium
+canvas | 0.15 | casual | medium
+rubber | 0.10 | casual | medium
+leather | 0.40 | luxury | medium
+suede | 0.30 | luxury | medium
+mesh | 0.10 | sporty | light
+nylon | 0.10 | sporty | light
+polyester | 0.15 | sporty | light
+wool | 0.30 | natural | heavy
+acrylic | 0.15 | casual | medium
+metal | 0.50 | luxury | heavy
+plastic | 0.10 | casual | light

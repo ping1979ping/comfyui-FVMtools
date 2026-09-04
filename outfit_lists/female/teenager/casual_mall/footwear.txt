@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# retro platform trainers | 0.90 | 0.15-0.35 | leather,canvas
+#color# canvas low-top kicks | 0.85 | 0.15-0.35 | canvas
+#color# slip-on platform sneakers | 0.75 | 0.15-0.35 | canvas,rubber
+#color# classic skate shoes | 0.65 | 0.15-0.35 | canvas,suede
+#color# platform high-top sneakers | 0.60 | 0.15-0.35 | canvas,leather
+#color# pointed-toe flats | 0.55 | 0.15-0.35 | leather
+#color# mary jane flats | 0.50 | 0.15-0.35 | leather
+#color# lug-sole loafers | 0.45 | 0.15-0.35 | leather
+#color# platform pool slides | 0.40 | 0.15-0.35 | rubber,plastic
+#color# scrunched tube socks | 0.60 | 0.15-0.35 | cotton,nylon
+#color# knee-high sport socks | 0.50 | 0.15-0.35 | cotton,nylon

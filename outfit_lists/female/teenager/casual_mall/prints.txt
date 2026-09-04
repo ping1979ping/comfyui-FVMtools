@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+graphic band print | 0.55 | top | 0.15-0.35
+varsity number print | 0.50 | top,outerwear | 0.15-0.35
+smiley face graphic | 0.55 | top | 0.15-0.35
+checkerboard pattern | 0.50 | top,bottom,accessories | 0.15-0.35
+tie-dye wash | 0.45 | top | 0.15-0.35
+cherry print | 0.45 | top,bag | 0.15-0.35
+star graphic | 0.50 | top,accessories | 0.15-0.35
+butterfly graphic | 0.45 | top | 0.15-0.35
+camo pattern | 0.40 | outerwear,bottom | 0.15-0.35
+plaid pattern | 0.40 | outerwear,accessories | 0.15-0.35
+distressed wash | 0.55 | bottom | 0.15-0.35
+glitter accent | 0.35 | top,bag | 0.15-0.35
+heart graphic | 0.40 | top | 0.15-0.35

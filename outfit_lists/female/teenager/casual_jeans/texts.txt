@@ -1,0 +1,45 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every wordmark below is a real, verifiable brand, school or
+# institution mark (jeans + graphic tee is exactly the "mall brand / campus
+# souvenir" case for lettering — see Decision 2 in build-outfit-set.md):
+#  * AMERICAN EAGLE (American Eagle Outfitters, Inc., ticker AEO) is headquartered
+#    at SouthSide Works, Pittsburgh, PA; its stretch/Ne(x)t Level denim line is a
+#    top-selling teen jeans brand in the US mall channel, hence the AE tag on the
+#    bottom slot too.
+#  * AERIE is AEO's sister brand (same Pittsburgh, PA HQ) for everyday loungewear,
+#    crop tops and basics aimed at teens/young adults.
+#  * HOLLISTER CO. is an Abercrombie & Fitch Co. subsidiary, founded 2000, HQ in
+#    New Albany, OH; it targets teens with a Southern California surf-lifestyle
+#    look and a small embroidered seagull/wordmark on the chest.
+#  * PACSUN (Pacific Sunwear) is headquartered in Anaheim, CA, and sells teen and
+#    young-adult streetwear, skate and surf-graphic tees.
+#  * BRANDY MELVILLE is headquartered in Santa Monica, CA; its minimal small
+#    logo and one-size fit made it a dominant Gen-Z brand for crop tops/baby tees.
+#  * LEVI'S (Levi Strauss & Co., San Francisco, CA, founded 1853) is the original
+#    blue-jean maker; Levi Strauss and Jacob Davis patented the riveted-pocket
+#    process in 1873, which is why hangtags read "SINCE 1873." The small leather
+#    patch/red tab sits above the back pocket on the jeans themselves, so it is
+#    placed on the bottom slot, not top.
+#  * READING HIGH SCHOOL (Reading, PA, Reading School District) mascot is the
+#    Red Knights, school colors red/black — this project's own established
+#    regional canon (see prompt_catalog/_source/events_reading_master.psv,
+#    "RED KNIGHTS PRIDE" banner). A hometown tee fits this everyday jeans set.
+#  * WILSON SCHOOL DISTRICT (West Lawn, Berks County, PA) mascot is the
+#    Bulldogs — same regional canon file ("WILSON BULLDOGS" banner).
+#  * VARSITY and BFF are generic prints, not brand marks; no research needed.
+
+"AMERICAN EAGLE" | 0.28 | top,outerwear | small embroidered chest logo
+"AE" | 0.30 | bottom | small woven back-pocket tab
+"HOLLISTER" | 0.25 | top,outerwear | small embroidered seagull chest logo
+"AERIE" | 0.20 | top | small chest script
+"PACSUN" | 0.20 | top | small chest print
+"BRANDY MELVILLE" | 0.18 | top | tiny heart chest print
+"LEVI'S" | 0.30 | bottom | small leather patch above the back pocket
+"READING HIGH" | 0.22 | top,outerwear | varsity block letters
+"RED KNIGHTS" | 0.20 | top,outerwear | varsity block letters
+"WILSON BULLDOGS" | 0.18 | top,outerwear | varsity block letters
+"BERKS" | 0.15 | top | bold block letters
+"VARSITY" | 0.20 | top | varsity block letters
+"BFF" | 0.15 | top | bold script

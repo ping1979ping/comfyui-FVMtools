@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# small crossbody bag | 0.70 | 0.1-0.3 | canvas,cotton
+#color# packable tote bag | 0.60 | 0.1-0.3 | canvas,cotton
+#color# packable woven tote | 0.55 | 0.1-0.3 | straw
+#color# mini backpack | 0.55 | 0.1-0.3 | canvas,cotton
+#color# fanny pack | 0.45 | 0.1-0.3 | cotton,canvas
+#color# drawstring bag | 0.45 | 0.1-0.3 | cotton
+#color# woven shoulder bag | 0.45 | 0.1-0.3 | straw
+#color# crochet mini bag | 0.40 | 0.1-0.3 | cotton
+#color# belt bag | 0.40 | 0.1-0.3 | cotton,canvas
+#color# printed pouch bag | 0.35 | 0.1-0.3 | cotton
+#color# basket bag | 0.35 | 0.1-0.3 | straw

@@ -1,0 +1,14 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# oversized pullover hoodie | 0.85 | 0.1-0.3 | cotton,fleece
+#color# cropped zip hoodie | 0.75 | 0.1-0.3 | cotton,fleece
+#color# graphic hoodie | 0.70 | 0.1-0.3 | cotton,fleece
+#color# flannel shirt | 0.65 | 0.1-0.3 | cotton
+#color# jean jacket | 0.65 | 0.1-0.3 | denim
+#color# tied-waist flannel | 0.55 | 0.1-0.3 | cotton
+#color# oversized cardigan | 0.55 | 0.1-0.3 | cotton,acrylic
+#color# bomber jacket | 0.50 | 0.1-0.3 | nylon,polyester
+#color# zip-up track jacket | 0.50 | 0.1-0.3 | polyester
+#color# varsity jacket | 0.45 | 0.1-0.3 | wool,leather
+#color# puffer vest | 0.45 | 0.1-0.4 | nylon,polyester

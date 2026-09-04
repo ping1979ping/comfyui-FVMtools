@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# oversized university hoodie | 0.90 | 0.10-0.35 | cotton,fleece
+#color# campus crewneck sweatshirt | 0.85 | 0.10-0.35 | cotton,fleece
+#color# cropped hoodie | 0.55 | 0.15-0.35 | cotton,fleece
+#color# baggy graphic tee | 0.70 | 0.10-0.30 | cotton
+#color# long-sleeve waffle top | 0.55 | 0.15-0.35 | cotton
+#color# ribbed tank top | 0.45 | 0.15-0.35 | cotton,spandex
+#color# quarter-zip fleece pullover | 0.55 | 0.20-0.40 | fleece,cotton
+#color# slouchy henley top | 0.50 | 0.15-0.35 | cotton
+#color# half-zip fleece pullover | 0.50 | 0.20-0.40 | fleece
+#color# relaxed pocket tee | 0.60 | 0.10-0.30 | cotton
+#color# varsity-stripe long-sleeve tee | 0.45 | 0.15-0.35 | cotton
+#color# cropped fleece pullover | 0.45 | 0.15-0.35 | fleece,cotton
+#color# soft oversized tee | 0.65 | 0.10-0.30 | cotton
+#color# mock-neck long-sleeve top | 0.40 | 0.20-0.40 | cotton

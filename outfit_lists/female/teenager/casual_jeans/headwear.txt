@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# baseball cap | 0.45 | 0.1-0.3 | cotton,polyester
+#color# claw hair clip | 0.40 | 0.1-0.3 | plastic
+#color# bucket hat | 0.35 | 0.1-0.3 | cotton,polyester
+#color# wide headband | 0.30 | 0.1-0.3 | cotton,spandex
+#color# knit beanie | 0.25 | 0.1-0.3 | acrylic,wool

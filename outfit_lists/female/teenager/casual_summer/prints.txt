@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tie-dye wash | 0.55 | top,bottom,outerwear | 0.1-0.3
+floral print | 0.60 | top,bottom,outerwear | 0.1-0.3
+gingham check | 0.45 | top,bottom | 0.1-0.3
+classic stripes | 0.50 | top,bottom | 0.1-0.3
+polka dot pattern | 0.40 | top,bottom | 0.1-0.3
+solid pastel | 0.65 | top,bottom,outerwear | 0.1-0.3
+tropical print | 0.45 | top,outerwear | 0.1-0.3
+sunset gradient print | 0.35 | top | 0.1-0.3
+checkerboard print | 0.35 | top,bag | 0.1-0.3
+daisy print | 0.40 | top,bottom | 0.1-0.3
+smiley face print | 0.35 | top | 0.1-0.3
+color-block pattern | 0.35 | top,outerwear | 0.1-0.3
+faded wash | 0.40 | bottom,outerwear | 0.1-0.3

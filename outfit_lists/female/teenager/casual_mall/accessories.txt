@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+small hoop earrings | 0.75 | 0.15-0.35 | metal
+delicate layered necklaces | 0.70 | 0.15-0.35 | metal
+delicate stacked rings | 0.70 | 0.15-0.35 | metal
+phone charm | 0.65 | 0.15-0.35 | plastic,metal
+beaded friendship bracelet | 0.60 | 0.15-0.35 | plastic
+butterfly claw clip | 0.60 | 0.15-0.35 | plastic
+wrist scrunchie | 0.55 | 0.15-0.35 | polyester,satin
+tinted sunglasses | 0.55 | 0.15-0.35 | plastic
+pendant necklace | 0.50 | 0.15-0.35 | metal
+chain charm bracelet | 0.50 | 0.15-0.35 | metal
+lip gloss keychain | 0.45 | 0.15-0.35 | plastic
+digital watch | 0.45 | 0.15-0.35 | plastic,metal

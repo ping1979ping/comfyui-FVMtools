@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+color-block panel | 0.60 | top,bottom,outerwear | 0.1-0.3
+tie-dye wash | 0.45 | top,bottom | 0.1-0.3
+heather marl | 0.55 | top,outerwear | 0.1-0.3
+camo print | 0.40 | top,bottom,outerwear | 0.1-0.3
+two-tone panel | 0.50 | top,outerwear | 0.1-0.3
+side stripe accent | 0.45 | bottom,outerwear | 0.1-0.3
+checker pattern | 0.35 | top,bottom | 0.1-0.3
+ombre gradient | 0.35 | top | 0.1-0.3
+retro stripe trim | 0.40 | top,outerwear | 0.1-0.3
+small logo print | 0.40 | top,headwear,bag | 0.1-0.3
+faded wash | 0.35 | top,bottom | 0.1-0.3
+varsity number | 0.30 | top,outerwear | 0.1-0.3

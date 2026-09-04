@@ -1,0 +1,44 @@
+# format: text_content | probability | compatible_slots | font_hint
+#
+# Sourcing notes -- every wordmark below is a real, verifiable mark:
+#  * American Eagle Outfitters is headquartered in Pittsburgh, PA and in
+#    2025-2026 markets itself as the denim destination for Gen Z, calling
+#    itself the #1 jeans brand for Gen Z -- a direct fit for a jeans-based
+#    mall outfit.
+#  * Hollister Co. is Abercrombie & Fitch's teen-focused mall chain,
+#    described by A&F itself as "the quintessential retail brand of the
+#    global teen consumer."
+#  * PacSun (Pacific Sunwear of California) is headquartered in Anaheim, CA
+#    and ran 325 stores across 46 states plus Puerto Rico as of 2025,
+#    selling teen streetwear/lifestyle apparel -- a mall staple since the
+#    1980s.
+#  * Claire's, headquartered in Hoffman Estates, IL, is the classic
+#    teen/tween mall accessories and ear-piercing chain, with small
+#    ~1,000 sq ft stores.
+#  * Brandy Melville (HQ Santa Monica, CA) is the viral one-size-fits-most
+#    teen brand with 130+ stores worldwide; its cursive "Brandy" wordmark
+#    and ribbed quarter-zip pullovers are a defining piece of the 2020s
+#    teen-mall look.
+#  * Broadcasting Square Shopping Center in Wyomissing, Berks County, PA is
+#    a real, currently-operating open-air shopping center -- by its own
+#    materials, the largest in Berks County and the most-visited shopping
+#    center in Pennsylvania -- a plausible local mall-trip destination for
+#    this fictional Reading, PA-area teen. Berks County's old enclosed
+#    malls (Fairgrounds Square, closed 2018; Berkshire Mall, slated for
+#    demolition as of late 2025) are gone, so Broadcasting Square is the
+#    honest current pick.
+#  * "READING PA" echoes the same Berks County local-pride lettering used
+#    in the sibling gymnastics and varsity sets.
+# Generic teen wording needing no research, always fine per the style
+# guide: "MALL RAT", "SQUAD", "TEXT ME".
+
+"AE" | 0.30 | top,bag | small woven tag lettering
+"HOLLISTER" | 0.35 | top,outerwear | varsity block letters across the chest
+"PACSUN" | 0.25 | top,bag | bold block letters
+"CLAIRE'S" | 0.20 | bag,accessories | small printed logo on the bag
+"BRANDY" | 0.30 | top | small cursive script at the hem
+"BROADCASTING SQUARE" | 0.15 | bag | printed shopping-bag logo
+"READING PA" | 0.15 | top,bag | varsity block letters
+"MALL RAT" | 0.25 | top | playful bubble letters
+"SQUAD" | 0.20 | top | bold script
+"TEXT ME" | 0.15 | top | retro block letters

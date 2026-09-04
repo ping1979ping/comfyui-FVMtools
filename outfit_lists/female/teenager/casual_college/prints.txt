@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+college arch print | 0.55 | top,outerwear | 0.10-0.35
+varsity stripe print | 0.50 | top,outerwear | 0.10-0.35
+heather marl | 0.60 | top,outerwear | 0.10-0.35
+small floral print | 0.40 | top | 0.10-0.30
+tie-dye wash | 0.35 | top | 0.10-0.30
+plaid pattern | 0.45 | outerwear,bottom | 0.15-0.35
+camo print | 0.35 | bottom,outerwear | 0.15-0.35
+solid color-block | 0.55 | top,outerwear | 0.10-0.35
+classic stripes | 0.45 | top | 0.10-0.30
+distressed wash | 0.40 | bottom | 0.15-0.40
+checkered pattern | 0.35 | bottom,outerwear | 0.15-0.35
+faded gradient | 0.35 | top | 0.10-0.30
