@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured portrait-collar bodice | 0.75 | 0.80-1.0 | silk,faille
+draped cowl-back bodice | 0.70 | 0.80-1.0 | silk,satin
+fitted boned bodice | 0.65 | 0.85-1.0 | faille,satin
+cap-sleeve portrait bodice | 0.60 | 0.80-1.0 | silk,velvet
+high-neck sheath bodice | 0.55 | 0.85-1.0 | crepe,satin
+off-shoulder draped bodice | 0.65 | 0.80-1.0 | silk,satin,lace
+boat-neck fitted bodice | 0.50 | 0.85-1.0 | faille,silk
+long-sleeve column bodice | 0.55 | 0.85-1.0 | velvet,silk
+bateau-neck structured bodice | 0.45 | 0.85-1.0 | faille,satin
+embroidered portrait bodice | 0.45 | 0.85-1.0 | silk,brocade
+fitted corselet bodice | 0.40 | 0.85-1.0 | satin,faille,lace
+sweetheart structured bodice | 0.50 | 0.80-1.0 | silk,satin
+draped one-shoulder bodice | 0.50 | 0.80-1.0 | satin,crepe
+tailored halter bodice | 0.40 | 0.85-1.0 | faille,velvet

@@ -1,0 +1,15 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+floor-length column gown skirt | 0.80 | 0.80-1.0 | silk,satin
+sweeping trumpet gown skirt | 0.65 | 0.80-1.0 | satin,faille
+structured ball gown skirt | 0.55 | 0.85-1.0 | faille,tulle
+draped godet gown skirt | 0.50 | 0.80-1.0 | crepe,silk
+fitted mermaid gown skirt | 0.45 | 0.85-1.0 | satin,crepe
+pleated empire gown skirt | 0.45 | 0.80-1.0 | silk,crepe
+tailored sheath skirt with train | 0.40 | 0.85-1.0 | faille,satin
+voluminous princess-line gown skirt | 0.40 | 0.85-1.0 | tulle,faille
+box-pleated gown skirt | 0.35 | 0.80-1.0 | faille,crepe
+draped bias-cut gown skirt | 0.45 | 0.80-1.0 | silk,satin
+fishtail gown skirt with train | 0.35 | 0.85-1.0 | satin,crepe
+high-waisted column gown skirt | 0.40 | 0.80-1.0 | silk,faille

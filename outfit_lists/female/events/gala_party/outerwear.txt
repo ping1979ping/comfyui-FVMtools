@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+cropped paillette jacket | 0.55 | 0.75-0.9 | sequin,mesh
+structured evening blazer | 0.50 | 0.75-0.9 | satin,crepe
+chrome bomber jacket | 0.45 | 0.75-0.9 | metallic,leather
+plush-trim wrap | 0.45 | 0.7-0.9 | satin,velvet
+draped opera coat | 0.40 | 0.75-0.9 | satin,silk
+jeweled shoulder wrap | 0.45 | 0.75-0.9 | beaded,satin
+fringe statement wrap | 0.35 | 0.75-0.9 | beaded,mesh
+oversized sheen-lapel blazer | 0.35 | 0.7-0.9 | satin,crepe
+embellished capelet | 0.40 | 0.75-0.9 | sequin,beaded
+liquid-drape kimono coat | 0.35 | 0.7-0.9 | satin,silk
+structured cape wrap | 0.35 | 0.75-0.9 | velvet,satin
+chrome fringe shrug | 0.30 | 0.7-0.9 | metallic,mesh

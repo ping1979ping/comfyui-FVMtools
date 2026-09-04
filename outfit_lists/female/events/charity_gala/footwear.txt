@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+classic pointed-toe pumps | 0.80 | 0.65-0.9 | satin,leather
+block-heel evening pumps | 0.70 | 0.6-0.85 | satin,leather
+matte pointed pumps | 0.60 | 0.6-0.85 | suede
+closed-toe slingback heels | 0.60 | 0.65-0.9 | leather,satin
+low-key ankle-strap heels | 0.55 | 0.6-0.85 | leather
+classic court shoes | 0.55 | 0.65-0.9 | leather
+mary jane evening heels | 0.45 | 0.6-0.85 | leather,satin
+rounded-toe pumps | 0.45 | 0.65-0.9 | leather
+mid-heel dress pumps | 0.50 | 0.6-0.85 | leather,suede
+simple stiletto pumps | 0.50 | 0.65-0.9 | leather,satin
+covered-heel pumps | 0.40 | 0.65-0.9 | satin,leather
+kitten-heel pumps | 0.35 | 0.55-0.8 | suede,leather

@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+tone-on-tone jacquard | 0.35 | top,bottom | 0.65-0.9
+subtle tonal ombre | 0.30 | top,bottom | 0.6-0.85
+delicate embroidered trim | 0.35 | top,outerwear | 0.65-0.9
+soft floral jacquard | 0.30 | top,bottom | 0.65-0.9
+muted brocade weave | 0.30 | outerwear,top | 0.65-0.9
+delicate beadwork trim | 0.30 | top,accessories | 0.7-0.95
+classic solid jewel-tone | 0.40 | top,bottom | 0.65-0.9
+subtle pin-dot texture | 0.25 | top,bottom | 0.6-0.85
+soft damask pattern | 0.25 | outerwear,top | 0.65-0.9
+delicate lace-edge trim | 0.25 | top,bottom | 0.65-0.9
+subtle sheen trim | 0.20 | top,accessories | 0.7-0.95
+soft pastel wash | 0.30 | top,bottom | 0.6-0.85

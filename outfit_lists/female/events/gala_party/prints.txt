@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+liquid-metal sheen | 0.55 | top,bottom,bag | 0.75-0.95
+mirror-chrome finish | 0.50 | top,bottom,footwear,bag | 0.75-0.95
+all-over crystal pave | 0.40 | top,bottom,accessories | 0.75-0.95
+ombre metallic fade | 0.35 | top,bottom | 0.7-0.9
+deep jewel-tone saturation | 0.45 | top,bottom,outerwear | 0.7-0.9
+iridescent shimmer | 0.40 | top,bottom,bag | 0.75-0.95
+tonal sequin scatter | 0.35 | top,bottom | 0.75-0.9
+high-shine lacquer finish | 0.35 | bag,footwear | 0.75-0.9
+graduated beading pattern | 0.30 | top,bottom | 0.75-0.95
+holographic foil sheen | 0.25 | top,bag | 0.7-0.9
+metallic thread weave | 0.30 | top,bottom,outerwear | 0.7-0.9
+gunmetal ombre | 0.25 | top,footwear | 0.75-0.9

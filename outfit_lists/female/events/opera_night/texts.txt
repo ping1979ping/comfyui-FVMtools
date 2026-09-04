@@ -1,0 +1,11 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: this set is built specifically for the classical, old-world
+# opera-house look (structured/draped gowns, opera-length gloves, a velvet or faux-fur
+# stole, pearl and diamond jewelry) rather than the modern red-carpet gala aesthetic --
+# that formality register carries no printed lettering, and dress code for the opera
+# predates logo- and monogram-driven fashion entirely. A monogrammed clutch initial
+# (the one lettering exception this repo allows on eveningwear) already belongs to
+# female/wedding_guest/black_tie_evening; giving opera_night the same device would
+# blur the two sets, so this one intentionally carries zero lettering of any kind.

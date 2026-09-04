@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+jeweled hair comb | 0.30 | 0.80-1.0 | metal
+pearl hairpin set | 0.25 | 0.80-1.0 | metal
+structured hair bow | 0.15 | 0.75-1.0 | velvet,satin
+crystal hair clip | 0.20 | 0.80-1.0 | metal

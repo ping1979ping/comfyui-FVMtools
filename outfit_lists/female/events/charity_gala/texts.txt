@@ -1,0 +1,11 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: this is restrained benefit-dinner formalwear, not red-carpet
+# statement wear — a Tower Health / Reading Hospital gala, a United Way of Berks
+# County benefit dinner, or a Reading Public Museum patron-circle evening calls for
+# a structured gown or elegant midi in a jewel tone or muted pastel with no visible
+# branding at all. Unlike wedding-guest cocktail attire, a donor-gala clutch here
+# carries no monogram either — the intended read is understated and expensive-looking,
+# not personalized or logo'd. No garment or accessory in this set should render
+# printed lettering.

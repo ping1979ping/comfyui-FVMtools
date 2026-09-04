@@ -1,0 +1,14 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored evening jacket | 0.55 | 0.65-0.9 | crepe,satin
+draped evening stole | 0.55 | 0.6-0.85 | silk,chiffon
+structured cropped blazer | 0.50 | 0.6-0.85 | crepe,wool blend
+softly draped wrap | 0.50 | 0.6-0.85 | charmeuse,chiffon
+tailored capelet | 0.45 | 0.65-0.9 | crepe,velvet
+fitted bolero jacket | 0.45 | 0.65-0.9 | crepe,satin
+tailored evening coat | 0.35 | 0.55-0.8 | wool blend
+luxe evening jacket | 0.40 | 0.65-0.9 | velvet,satin
+softly structured shrug | 0.35 | 0.6-0.85 | crepe,charmeuse
+draped evening cape | 0.30 | 0.65-0.9 | crepe,chiffon
+tailored peplum jacket | 0.35 | 0.6-0.85 | crepe,satin

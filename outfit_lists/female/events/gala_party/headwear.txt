@@ -1,0 +1,8 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+crystal hair pin | 0.30 | 0.75-0.95 | metal,beaded
+sculptural hair cuff | 0.25 | 0.75-0.9 | metal
+crystal-embellished headband | 0.20 | 0.75-0.9 | metal,beaded
+sleek hair comb | 0.25 | 0.7-0.9 | metal
+draped hair chain | 0.15 | 0.75-0.9 | metal

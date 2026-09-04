@@ -1,0 +1,11 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: modern high-glamour gala eveningwear (sequin, liquid-satin, and
+# metallic gowns worn for a step-and-repeat / awards-night photo-op) carries no printed
+# lettering. This is red-carpet wear, not sportswear, campus wear, or souvenir apparel —
+# a wordmark on a gown or clutch reads as counterfeit-logo AI slop, not as a real look.
+# The one plausible real-world exception — a tiny engraved or embossed designer nameplate
+# on a clutch's hardware clasp (e.g. a Judith Leiber or Jimmy Choo tag) — is far too small
+# in scale on a full-body photo to render as legible text, so it is not worth modeling
+# as a text entry here.

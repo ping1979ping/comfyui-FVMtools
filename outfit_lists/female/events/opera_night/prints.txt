@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+damask jacquard weave | 0.35 | top,bottom | 0.80-1.0
+floral brocade motif | 0.30 | top,bottom | 0.80-1.0
+metallic thread embroidery | 0.30 | top,outerwear | 0.80-1.0
+tone-on-tone jacquard | 0.30 | top,bottom | 0.75-1.0
+hand-embroidered floral vine | 0.25 | top,bottom | 0.80-1.0
+beaded floral scrollwork | 0.30 | top,bottom | 0.85-1.0
+crystal-beaded medallion motif | 0.25 | top,outerwear | 0.90-1.0
+pearl-beaded vine pattern | 0.20 | top,bottom | 0.85-1.0
+embroidered lattice motif | 0.25 | top,bottom | 0.80-1.0
+moire watermark finish | 0.20 | bottom,outerwear | 0.80-1.0
+subtle self-stripe weave | 0.20 | top,bottom | 0.75-1.0
+baroque scroll embroidery | 0.20 | top,outerwear | 0.85-1.0

@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+oversized crystal hoop earrings | 0.75 | 0.75-0.95 | metal
+statement collar necklace | 0.65 | 0.8-0.95 | metal
+stacked cuff bracelets | 0.55 | 0.75-0.9 | metal
+sculptural cocktail ring | 0.60 | 0.75-0.95 | metal
+chandelier drop earrings | 0.65 | 0.75-0.95 | metal
+fine body chain | 0.35 | 0.75-0.9 | metal
+sculptural ear cuff | 0.40 | 0.7-0.9 | metal
+layered pendant necklace | 0.45 | 0.7-0.9 | metal,beaded
+elbow-length evening gloves | 0.35 | 0.75-0.9 | satin,silk
+crystal choker | 0.50 | 0.75-0.95 | metal,beaded
+wide cuff bangle | 0.45 | 0.7-0.9 | metal
+draped chain belt | 0.30 | 0.7-0.9 | metal

@@ -1,0 +1,7 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+delicate hair comb | 0.20 | 0.65-0.9 | metal
+simple hairpin | 0.15 | 0.6-0.85 | metal
+slim headband | 0.15 | 0.6-0.85 | satin
+small decorative clip | 0.15 | 0.6-0.85 | metal

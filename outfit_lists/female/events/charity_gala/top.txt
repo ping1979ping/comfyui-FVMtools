@@ -1,0 +1,17 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured sheath bodice | 0.75 | 0.65-0.9 | crepe,silk
+draped cowl-neck bodice | 0.65 | 0.65-0.9 | charmeuse,silk
+cap-sleeve fitted bodice | 0.70 | 0.65-0.9 | crepe,satin
+three-quarter sleeve blouse | 0.55 | 0.6-0.85 | crepe,charmeuse
+softly draped wrap bodice | 0.60 | 0.6-0.85 | silk,charmeuse
+boat-neck fitted top | 0.50 | 0.65-0.9 | crepe,satin
+embellished portrait-neck bodice | 0.55 | 0.75-0.95 | beaded,silk
+long-sleeve column blouse | 0.50 | 0.65-0.9 | crepe,charmeuse
+subtly draped halter bodice | 0.45 | 0.65-0.9 | charmeuse,silk
+tailored one-shoulder bodice | 0.45 | 0.7-0.9 | crepe,satin
+embroidered scoop-neck top | 0.40 | 0.7-0.9 | silk,charmeuse
+pleated bateau-neck top | 0.45 | 0.65-0.9 | crepe,chiffon
+structured strapless bodice | 0.40 | 0.75-0.95 | satin,crepe
+draped surplice bodice | 0.45 | 0.65-0.9 | silk,charmeuse

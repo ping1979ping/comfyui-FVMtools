@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+liquid-chrome bodice | 0.85 | 0.75-0.95 | satin,metallic
+fully paillette bodice | 0.80 | 0.75-0.95 | sequin,mesh
+crystal-fringe bodice | 0.65 | 0.75-0.95 | beaded,mesh
+draped cowl-neck top | 0.60 | 0.7-0.9 | satin,silk
+plunge-back halter top | 0.70 | 0.75-0.95 | satin,silk
+structured strapless top | 0.65 | 0.75-0.9 | satin,crepe
+one-shoulder cutout top | 0.60 | 0.7-0.9 | satin,mesh
+fully embellished structured top | 0.55 | 0.75-0.95 | beaded,sequin
+cami-strap slip top | 0.50 | 0.7-0.9 | satin,silk
+keyhole cutout top | 0.50 | 0.7-0.9 | mesh,metallic
+wrap-front sheen top | 0.45 | 0.7-0.9 | lame,satin
+deep-V embellished bodice | 0.55 | 0.75-0.95 | sequin,satin
+off-the-shoulder drape top | 0.45 | 0.7-0.9 | crepe,silk

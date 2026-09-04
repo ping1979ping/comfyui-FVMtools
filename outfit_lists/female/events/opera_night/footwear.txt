@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored court pumps | 0.80 | 0.75-1.0 | satin,leather
+pointed-toe court pumps | 0.70 | 0.75-1.0 | satin,leather
+covered-heel evening pumps | 0.55 | 0.80-1.0 | faille,leather
+low block-heel evening pumps | 0.45 | 0.75-1.0 | satin,leather
+classic kitten-heel pumps | 0.40 | 0.75-0.95 | satin,leather
+dyed-to-match evening pumps | 0.45 | 0.80-1.0 | faille,satin
+covered-button evening pumps | 0.35 | 0.80-1.0 | satin,faille
+slim-strap evening sandals | 0.40 | 0.75-1.0 | satin,leather
+embroidered evening pumps | 0.35 | 0.85-1.0 | silk,leather
+vintage-style buckled pumps | 0.35 | 0.75-1.0 | satin,leather
+peep-toe evening pumps | 0.30 | 0.75-0.95 | satin,leather
+rounded-toe evening pumps | 0.30 | 0.75-1.0 | faille,leather

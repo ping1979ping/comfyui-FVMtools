@@ -1,0 +1,14 @@
+# format: fabric_name | formality | family | weight
+
+silk | 0.85 | natural | light
+velvet | 0.90 | natural | medium
+satin | 0.85 | synthetic | light
+brocade | 0.90 | embellished | medium
+faille | 0.85 | natural | medium
+crepe | 0.80 | natural | light
+leather | 0.60 | animal | medium
+faux_fur | 0.85 | synthetic | heavy
+lace | 0.80 | embellished | light
+tulle | 0.75 | synthetic | light
+metal | 0.85 | accessories | light
+cashmere | 0.80 | natural | medium

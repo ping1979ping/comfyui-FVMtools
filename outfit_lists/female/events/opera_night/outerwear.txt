@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+draped opera stole | 0.70 | 0.80-1.0 | velvet,silk
+plush-trimmed evening wrap | 0.55 | 0.80-1.0 | faux_fur,satin
+tailored opera coat | 0.45 | 0.85-1.0 | faille,satin
+structured evening cape | 0.45 | 0.85-1.0 | velvet,faille
+fitted bolero jacket | 0.50 | 0.80-1.0 | satin,silk
+embroidered evening shawl | 0.55 | 0.80-1.0 | silk,crepe
+draped double-faced stole | 0.45 | 0.80-1.0 | crepe,silk
+quilted opera coat | 0.35 | 0.85-1.0 | faille,velvet
+cropped evening capelet | 0.40 | 0.80-1.0 | velvet,satin
+tailored duster coat | 0.30 | 0.80-1.0 | faille,crepe
+draped shoulder wrap | 0.45 | 0.75-1.0 | cashmere,silk
+plush-collared evening coat | 0.35 | 0.85-1.0 | faux_fur,faille
