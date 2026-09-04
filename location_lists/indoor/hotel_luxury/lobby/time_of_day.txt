@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright sunlit midday arrival | 1.0 | - | -
+gentle golden-hour streaming light | 0.85 | - | -
+golden late-afternoon glow | 0.8 | - | -
+soft early-morning check-in | 0.75 | - | -
+warm mid-morning arrival hour | 0.65 | - | -
+warm late-summer dusk light | 0.65 | - | -
+hazy poolside noon brightness | 0.6 | - | -
+bustling midday check-in rush | 0.6 | - | -
+mellow evening amber glow | 0.55 | - | -
+bright reflected pool-light shimmer | 0.5 | - | -
+soft twilight lobby ambience | 0.45 | - | -
+quiet pre-dawn lobby hush | 0.4 | - | -

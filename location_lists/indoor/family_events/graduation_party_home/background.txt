@@ -1,0 +1,19 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+Congrats Grad banner over doorway | 1.0 | 0.6-1.0 | printed vinyl banner letters
+fireplace mantel draped in banner | 0.9 | 0.6-1.0 | wood mantel with hung bunting
+living room wall with graduation banner | 0.85 | 0.6-1.0 | painted wall behind hung sign
+memory poster board on easel | 0.8 | 0.6-0.9 | corkboard photo collage display
+balloon arch in school colors | 0.8 | 0.6-1.0 | clustered latex sphere backdrop
+dining room wall with pennant bunting | 0.7 | 0.6-0.9 | triangular flag string across wall
+curtained window with afternoon light | 0.6 | 0.6-0.9 | sheer drape over glass pane
+large class year number banner | 0.85 | 0.6-1.0 | printed cardstock cutout numerals
+photo collage wall of school years | 0.7 | 0.6-0.9 | pinned snapshot montage backdrop
+streamers crisscrossed at ceiling | 0.6 | 0.6-0.9 | twisted crepe paper strands
+gold foil fringe curtain drop | 0.5 | 0.6-0.9 | metallic strip cascade
+patterned wallpaper in dining room | 0.45 | 0.6-1.0 | textured neutral print
+framed diploma display on mantel | 0.6 | 0.6-0.9 | wood mantel with certificate frame
+chalkboard with hand-lettered congratulations | 0.5 | 0.6-0.9 | dark slate handwritten sign
+school pennant flags pinned to wall | 0.5 | 0.6-0.9 | felt triangular team flags
+archway wrapped in crepe streamers | 0.45 | 0.6-0.9 | twisted paper wound around frame

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+climate-controlled cool lobby | 1.0 | - | -
+gentle air-conditioned breeze | 0.9 | - | -
+fragrant floral-scented air | 0.85 | - | -
+still filtered indoor calm | 0.7 | - | -
+crisp marble-cooled atmosphere | 0.65 | - | -
+softly perfumed lobby air | 0.6 | - | -
+warm humid summer air-drift | 0.55 | - | -
+faint sea-breeze garden drift | 0.5 | - | -
+faint chlorine-tinged pool air | 0.5 | - | -
+quietly hushed acoustics | 0.45 | - | -

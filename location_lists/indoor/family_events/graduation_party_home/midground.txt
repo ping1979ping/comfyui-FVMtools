@@ -1,0 +1,18 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+dining table with food and snack spread | 1.0 | 0.3-0.5 | platters of finger food arranged
+gift table with cards and presents | 0.95 | 0.3-0.5 | wrapped boxes and envelope pile
+kitchen table snack buffet spread | 0.75 | 0.3-0.5 | assorted appetizer trays
+folding chairs lined against wall | 0.85 | 0.2-0.4 | metal-framed guest seating row
+framed school photos on side table | 0.7 | 0.2-0.4 | assorted picture frame cluster
+sheet cake with cap topper | 0.85 | 0.2-0.4 | frosted rectangular graduation cake
+drink cooler tub of beverages | 0.6 | 0.2-0.4 | iced bottle and can container
+stack of folding chairs by wall | 0.5 | 0.2-0.4 | leaning metal chair bundle
+guest sign-in table with book | 0.55 | 0.2-0.4 | small table with open journal
+card box for gift envelopes | 0.6 | 0.2-0.3 | decorated slotted mailbox stand
+side table with punch bowl | 0.55 | 0.2-0.4 | glass bowl and ladle set
+cluster of balloons tied to chairs | 0.7 | 0.2-0.5 | floating latex bunch anchored
+buffet table with paper plates stacked | 0.7 | 0.2-0.4 | themed disposable plate tower
+coffee table with appetizer trays | 0.5 | 0.2-0.4 | low table snack arrangement
+corner display of trophies and awards | 0.45 | 0.2-0.4 | shelf of school achievement items

@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny summer day | 1.0 | - | -
+warm dry afternoon air | 0.85 | - | -
+partly cloudy with breeze | 0.8 | - | -
+hot humid summer day | 0.65 | - | -
+gentle cooling breeze | 0.75 | - | -
+soft puffy clouds passing | 0.7 | - | -
+calm still summer air | 0.6 | - | -
+mild evening cooling down | 0.55 | - | -
+high thin cloud haze | 0.5 | - | -
+brief afternoon shade clouds | 0.45 | - | -
+light sprinkler mist drifting | 0.4 | - | -

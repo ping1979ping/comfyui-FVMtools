@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+precisely folded towel corner | 0.85 | 0.1-0.3 | crisp plush edge
+polished travertine deck tile | 0.8 | 0.15-0.35 | honed pale stone
+sheer cabana curtain hem drifting | 0.7 | 0.08-0.2 | fine white fabric edge
+infinity edge lip catching light | 0.6 | 0.08-0.25 | glassy overflow rim
+chilled towel roll on a lounger arm | 0.55 | 0.03-0.12 | tightly rolled terry
+teak lounger armrest detail | 0.6 | 0.05-0.15 | oiled wood grain
+rose petals scattered on still water | 0.4 | 0.02-0.08 | floating decorative accent
+shallow reflecting water at the pool edge | 0.55 | 0.1-0.3 | mirror-still shallow film
+manicured lawn edge bordering the deck | 0.5 | 0.08-0.25 | trimmed emerald strip
+polished brass pool ladder rail | 0.55 | 0.03-0.1 | gleaming curved fixture
+sun-warmed stone underfoot | 0.5 | 0.08-0.25 | pale radiant surface
+drifting hibiscus bloom at the tile line | 0.4 | 0.02-0.08 | single bright accent

@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+fresh flower arrangement in a glass vase | 0.6 | 0.02-0.08 | tropical blooms trimmed neat
+welcome fruit plate with tropical fruit | 0.55 | 0.02-0.08 | mango and dragon fruit sliced
+chilled bottle of champagne on ice | 0.45 | 0.02-0.08 | condensation on dark glass
+turndown chocolates on the pillow | 0.5 | 0.01-0.03 | foil-wrapped resort logo
+monogrammed bathrobe folded on the bench | 0.5 | 0.02-0.08 | plush white terry cloth
+scented candle on the nightstand | 0.45 | 0.01-0.04 | soft amber glass jar
+leather-bound resort directory and pen | 0.4 | 0.01-0.03 | embossed gold lettering
+porcelain espresso cups and saucers | 0.45 | 0.02-0.06 | gold rim detailing
+woven resort tote by the closet | 0.35 | 0.02-0.06 | raffia weave with leather trim
+silver ice bucket with tongs | 0.4 | 0.02-0.06 | polished hammered finish
+orchid arrangement on the writing desk | 0.5 | 0.02-0.06 | white blooms in a low bowl
+embroidered do-not-disturb door tag | 0.4 | 0.01-0.03 | tasseled silk cord
+handwritten welcome note on card stock | 0.35 | 0.01-0.03 | resort crest letterhead
+bluetooth speaker on the console shelf | 0.35 | 0.01-0.04 | matte white cylinder

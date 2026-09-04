@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+midday summer party light | 1.0 | - | -
+early afternoon bright sun | 0.9 | - | -
+mid-afternoon golden warmth | 0.85 | - | -
+late afternoon long shadows | 0.75 | - | -
+just before sunset glow | 0.65 | - | -
+golden hour string lights on | 0.6 | - | -
+dusk with lanterns lit | 0.55 | - | -
+bright cloudless late morning | 0.7 | - | -
+hazy hot summer noon | 0.6 | - | -
+soft overcast afternoon light | 0.55 | - | -
+early evening cooling light | 0.5 | - | -

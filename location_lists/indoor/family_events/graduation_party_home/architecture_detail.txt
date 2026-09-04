@@ -1,0 +1,16 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+dining room ceiling light fixture | 0.6 | 0.05-0.2 | mounted pendant or chandelier
+crown molding above wall | 0.5 | 0.05-0.15 | decorative ceiling trim
+window frame with curtain rod | 0.55 | 0.1-0.2 | painted window casing
+archway between living and dining room | 0.55 | 0.1-0.2 | curved wall opening
+baseboard along wall corner | 0.45 | 0.05-0.15 | painted floor trim
+mantel edge with wood trim | 0.55 | 0.05-0.2 | fireplace surround molding
+light switch plate cover | 0.4 | 0.0-0.1 | mounted plastic switch
+electrical outlet on wall | 0.35 | 0.0-0.1 | wall socket cover
+ceiling fan blade above table | 0.4 | 0.05-0.2 | rotating wooden blade
+wood-look wall paneling | 0.45 | 0.1-0.2 | wainscoting panel section
+hanging picture frame nearby | 0.5 | 0.05-0.15 | framed family photo
+doorway trim wrapped in ribbon | 0.5 | 0.05-0.2 | painted casing with bow accent
+staircase railing in background | 0.4 | 0.1-0.2 | wooden banister post

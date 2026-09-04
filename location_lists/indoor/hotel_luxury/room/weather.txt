@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+gentle sea breeze through open balcony doors | 0.6 | - | -
+warm tropical humidity in the air | 0.55 | - | -
+cool air conditioning hush | 0.6 | - | -
+bright clear resort-season sky | 0.7 | - | -
+light afternoon haze over calm water | 0.4 | - | -
+brief warm rain shower passing | 0.4 | - | -
+still humid evening air | 0.5 | - | -
+soft trade wind rustling the sheers | 0.5 | - | -
+dry crisp air-conditioned chill | 0.45 | - | -
+faint salt-tinged breeze indoors | 0.4 | - | -
+calm windless summer afternoon | 0.45 | - | -

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished marble floor expanse | 1.0 | 0.3-0.4 | glossy veined stone reflection
+plush jewel-toned area rug | 0.85 | 0.2-0.4 | patterned woven wool spread
+gleaming reflective floor sheen | 0.75 | 0.2-0.4 | mirror-like polished surface
+inlaid medallion floor pattern | 0.7 | 0.15-0.3 | radiating mosaic stone design
+sunlit floor-light pooling | 0.7 | 0.15-0.3 | warm patterned glow patches
+shadow-cast column reflection | 0.55 | 0.1-0.25 | rippling dark stone shadow
+brass floor-inlay border strip | 0.55 | 0.05-0.15 | polished metal trim line
+terrazzo accent floor band | 0.5 | 0.1-0.25 | flecked colorful stone strip
+potted-palm floor shadow | 0.5 | 0.1-0.2 | fronded silhouette pattern
+woven sisal welcome mat | 0.5 | 0.05-0.15 | textured natural-fiber runner
+low brass floor-lamp base | 0.45 | 0.05-0.15 | rounded polished pedestal foot
+loose rose-petal floor scatter | 0.4 | 0.05-0.1 | strewn fresh petal accents

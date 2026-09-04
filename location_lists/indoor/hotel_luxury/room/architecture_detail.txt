@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+crown molding along the ceiling line | 0.55 | 0.03-0.1 | crisp painted profile
+brushed brass door hardware | 0.6 | 0.02-0.08 | weighted lever handle
+recessed lighting coves along the ceiling | 0.5 | 0.03-0.1 | soft indirect glow channel
+motorized blackout shade track above the drapes | 0.45 | 0.02-0.08 | discreet fabric-wrapped headrail
+French balcony door hardware | 0.5 | 0.02-0.06 | polished brass espagnolette bolt
+built-in room safe with a keypad | 0.45 | 0.02-0.06 | brushed steel faceplate
+bedside USB-C charging ports | 0.5 | 0.01-0.05 | discreetly wired into the lamp base
+marble bathroom vanity backsplash | 0.5 | 0.03-0.1 | veined stone against the mirror
+gold-trimmed light switch plates | 0.4 | 0.01-0.04 | brushed metal surround
+velvet-ribboned do-not-disturb tag | 0.45 | 0.01-0.04 | tasseled hanging cord
+in-room climate control panel | 0.4 | 0.01-0.04 | backlit touch display
+inlaid wood detailing on the closet doors | 0.4 | 0.02-0.08 | subtle marquetry pattern

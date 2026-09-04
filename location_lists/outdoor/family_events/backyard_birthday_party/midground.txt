@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+folding table with birthday cake | 1.0 | 0.3-0.6 | white-clothed party dessert table
+pinata hanging from tree branch | 0.9 | 0.2-0.5 | suspended papier-mache figure
+banner strung between two posts | 0.85 | 0.2-0.5 | printed happy birthday bunting
+gift table piled with presents | 0.8 | 0.2-0.5 | wrapped-box collection surface
+folding chairs arranged in rows | 0.65 | 0.2-0.5 | stacked plastic seating
+cornhole board game set | 0.6 | 0.2-0.5 | angled wooden toss boards
+inflatable bounce castle | 0.55 | 0.3-0.6 | colorful vinyl jump structure
+drink cooler on folding stand | 0.65 | 0.15-0.4 | ice-filled beverage chest
+balloon arch over table | 0.7 | 0.2-0.5 | curved multicolor balloon frame
+sprinkler running on lawn | 0.45 | 0.15-0.4 | spraying water fixture
+picnic table checkered cloth | 0.6 | 0.2-0.5 | patterned vinyl table cover
+row of tiki torches along path | 0.45 | 0.15-0.4 | staked bamboo flame torches
+karaoke speaker on stand | 0.4 | 0.15-0.35 | portable sound system unit
+water balloon toss station | 0.5 | 0.15-0.4 | bucket of filled balloons

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+sunny early afternoon party hour | 1.0 | - | -
+late afternoon with warm window light | 0.85 | - | -
+early evening lit interior | 0.75 | - | -
+midday with daylight pouring in | 0.7 | - | -
+overhead lamp lit dining room | 0.8 | - | -
+soft late morning light | 0.55 | - | -
+golden hour through curtains | 0.65 | - | -
+dimmed lights for cake moment | 0.6 | - | -
+warm interior bulb glow | 0.85 | - | -
+early summer afternoon light | 0.7 | - | -

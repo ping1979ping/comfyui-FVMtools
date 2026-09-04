@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+room service tray on a low ottoman | 0.55 | 0.05-0.15 | polished silver cloche
+pair of monogrammed robes on hooks | 0.6 | 0.1-0.25 | plush white waffle cotton
+armchair and ottoman by the balcony | 0.55 | 0.15-0.35 | linen upholstery in cream
+chilled champagne in a silver ice bucket | 0.5 | 0.05-0.15 | condensation beading the metal
+fresh flower arrangement on the console | 0.6 | 0.05-0.15 | tropical blooms in a low vase
+capsule coffee machine and porcelain cups | 0.55 | 0.05-0.15 | brushed steel and white china
+leather luggage rack with a folded suitcase | 0.5 | 0.1-0.25 | tan leather case half open
+sheer curtain layered behind heavier drapes | 0.5 | 0.15-0.35 | dual-track hardware
+woven area rug beneath the seating group | 0.5 | 0.15-0.35 | natural fiber weave
+decorative throw pillows stacked on the bed | 0.55 | 0.1-0.25 | mixed silk and linen textures
+in-room dining cart wheeled to the balcony | 0.4 | 0.1-0.25 | white linen tablecloth
+bedside pedestal table with a reading lamp | 0.5 | 0.1-0.25 | brushed brass base
+wardrobe safe tucked behind a panel door | 0.4 | 0.05-0.15 | discreet keypad
+low console table beneath the wall television | 0.45 | 0.1-0.25 | lacquered wood finish

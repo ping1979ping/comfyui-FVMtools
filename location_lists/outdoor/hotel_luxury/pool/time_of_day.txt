@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft golden early morning | 0.85 | - | -
+bright still midday | 0.8 | - | -
+warm late afternoon glow | 0.9 | - | -
+long amber sunset light | 0.85 | - | -
+quiet blue dusk | 0.6 | - | -
+calm evening under pool lighting | 0.55 | - | -
+hazy soft midmorning | 0.65 | - | -
+still pre-dawn quiet | 0.4 | - | -
+overcast diffuse daylight | 0.5 | - | -
+deep night with underwater glow | 0.45 | - | -

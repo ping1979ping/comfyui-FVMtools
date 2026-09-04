@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+precisely stacked plush white towel tower | 0.9 | 0.1-0.3 | folded terry columns
+upscale sun loungers in tidy rows | 1.0 | 0.3-0.55 | matching cushioned frames
+sheer-curtained cabana interior | 0.9 | 0.25-0.5 | billowing white fabric
+swim-up bar counter with submerged stools | 0.6 | 0.15-0.35 | polished teak surface
+manicured tropical planter row | 0.7 | 0.2-0.4 | uniform potted palms
+poolside daybed with white linen canopy | 0.75 | 0.2-0.45 | draped four-poster frame
+poolside robe valet stand | 0.5 | 0.08-0.2 | neat terrycloth shelving
+infinity-edge overflow trough | 0.55 | 0.1-0.25 | slender vanishing channel
+private plunge pool nook | 0.5 | 0.15-0.35 | secluded turquoise square
+topiary hedge sculpture row | 0.5 | 0.15-0.3 | trimmed geometric green forms
+teak sun-deck walkway | 0.55 | 0.2-0.4 | honed wooden planking
+quiet reading nook under a pergola | 0.45 | 0.15-0.35 | shaded lattice canopy
+poolside misting fan cluster | 0.4 | 0.08-0.2 | fine cooling vapor
+cascading water wall feature | 0.45 | 0.15-0.35 | sheeting stone curtain

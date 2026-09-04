@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+plush lounge seating cluster | 1.0 | 0.3-0.5 | tufted velvet armchair grouping
+large floral centerpiece arrangement | 0.95 | 0.2-0.4 | oversized tropical bouquet display
+brass bellhop luggage cart | 0.85 | 0.2-0.4 | polished trolley with leather straps
+round marble concierge podium | 0.75 | 0.2-0.4 | freestanding polished stone stand
+low glass coffee-table cluster | 0.85 | 0.15-0.35 | clear-topped brass-legged table
+potted areca-palm row | 0.8 | 0.2-0.4 | tall feathery green planters
+tufted velvet ottoman grouping | 0.75 | 0.15-0.3 | round cushioned footrest cluster
+carved wood bell-desk stand | 0.55 | 0.15-0.3 | ornate freestanding service stand
+brass luggage-trolley stack | 0.55 | 0.15-0.3 | stacked wheeled cart line
+tall pillar-candle arrangement | 0.6 | 0.15-0.3 | clustered flickering wax columns
+rattan lounge daybed pair | 0.55 | 0.2-0.4 | woven resort-style seating
+gilded room-divider screen | 0.5 | 0.15-0.3 | folding ornamental panel
+marble side-table pair | 0.65 | 0.1-0.25 | polished stone accent table
+grand piano lounge corner | 0.45 | 0.2-0.4 | glossy black baby-grand instrument

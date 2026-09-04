@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+plate of snacks close up | 0.85 | 0.1-0.3 | small appetizer selection on plate
+slice of graduation cake on plate | 0.8 | 0.1-0.3 | frosted cake wedge with fork
+graduation cap tassel close up | 0.75 | 0.1-0.3 | dangling gold cord charm
+hand signing a greeting card | 0.6 | 0.1-0.25 | pen resting on open card
+stack of opened greeting cards | 0.65 | 0.1-0.3 | envelopes and cards fanned out
+cup of punch on table edge | 0.6 | 0.1-0.2 | clear plastic cup filled drink
+ribbon from unwrapped gift box | 0.55 | 0.1-0.25 | torn glossy gift wrap curl
+mortarboard cap resting on table | 0.6 | 0.1-0.3 | flat academic cap with tassel
+confetti scattered on tablecloth | 0.5 | 0.1-0.3 | colorful paper bits strewn
+napkin printed with graduation cap | 0.5 | 0.1-0.2 | themed disposable paper napkin
+plastic fork resting on plate | 0.45 | 0.1-0.2 | small disposable utensil
+gift bow on wrapped box top | 0.55 | 0.1-0.25 | curled ribbon decoration
+small paper cup of mints | 0.4 | 0.1-0.2 | candy dish close view
+diploma scroll tied with ribbon | 0.65 | 0.1-0.3 | rolled certificate with cord

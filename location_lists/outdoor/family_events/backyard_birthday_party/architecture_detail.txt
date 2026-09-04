@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+deck railing baluster close-up | 0.6 | 0.05-0.2 | painted wood spindle detail
+wooden fence picket edge | 0.6 | 0.05-0.2 | vertical slat board seam
+backyard gate latch mechanism | 0.5 | 0.05-0.15 | metal hook-and-eye closure
+porch light fixture on wall | 0.55 | 0.05-0.15 | mounted exterior lamp
+patio umbrella pole base | 0.5 | 0.05-0.15 | weighted stand and shaft
+string light hook on eave | 0.55 | 0.05-0.15 | small screw-in cup hook
+house gutter downspout corner | 0.4 | 0.05-0.15 | metal drainage elbow
+window shutter louvered panel | 0.45 | 0.05-0.15 | painted slatted shutter
+rain barrel spigot on stand | 0.4 | 0.05-0.15 | mounted collection tap
+wood trellis panel corner | 0.45 | 0.05-0.15 | crossed lattice frame
+exterior electrical outlet cover | 0.35 | 0.0-0.1 | weatherproof plastic box
+house trim molding edge | 0.4 | 0.05-0.15 | painted wood corner strip

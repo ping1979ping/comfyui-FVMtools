@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+gilded crown-molding trim | 0.9 | 0.05-0.2 | ornate painted relief band
+recessed cove ceiling lighting | 0.8 | 0.05-0.2 | warm hidden linear glow
+carved marble column capital | 0.75 | 0.05-0.15 | fluted acanthus-leaf detail
+decorative wall-sconce fixture | 0.7 | 0.02-0.08 | brass curved light arm
+brass elevator-door panel | 0.7 | 0.05-0.15 | polished etched metal surface
+polished brass door-handle fitting | 0.65 | 0.02-0.08 | curved gleaming hardware
+wrought-iron balcony scrollwork | 0.6 | 0.05-0.15 | curled ornamental metalwork
+veined-marble baseboard trim | 0.6 | 0.02-0.08 | thin polished stone edge
+arched glass-door transom | 0.6 | 0.05-0.15 | fanned decorative window
+gold-leaf ceiling rosette | 0.55 | 0.02-0.08 | ornamental plaster medallion
+brass stair-rail handrail detail | 0.55 | 0.02-0.08 | curved polished banister
+stained-glass skylight accent | 0.5 | 0.05-0.15 | colored geometric pane

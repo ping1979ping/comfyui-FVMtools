@@ -1,0 +1,17 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+scattered pinata candy on grass | 0.85 | 0.1-0.3 | colorful loose wrapped sweets
+confetti scattered across lawn | 0.8 | 0.1-0.3 | bright paper fleck scatter
+paper plate with cake slice | 0.9 | 0.1-0.3 | frosted slice on disposable plate
+deflated balloon on grass | 0.6 | 0.05-0.2 | limp latex balloon shape
+dropped plastic fork | 0.5 | 0.05-0.15 | disposable utensil on ground
+birthday candle stub in frosting | 0.65 | 0.05-0.15 | extinguished wax stick
+sidewalk chalk drawing | 0.5 | 0.1-0.3 | colorful chalk pattern on pavement
+torn wrapping paper scraps | 0.7 | 0.1-0.3 | shredded gift wrap pieces
+spilled juice puddle on grass | 0.45 | 0.05-0.15 | small colored liquid stain
+party favor goodie bag | 0.6 | 0.1-0.25 | small filled paper sack
+grass clippings freshly mown | 0.55 | 0.1-0.3 | short green cut blades
+popped balloon fragments | 0.55 | 0.05-0.2 | shredded rubber pieces
+streamer scraps blown loose | 0.5 | 0.1-0.25 | curled crepe paper strips
+napkin printed with balloons | 0.55 | 0.05-0.15 | disposable paper square

@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+golden hour light through the balcony doors | 0.9 | - | -
+bright tropical midday sun | 0.85 | - | -
+soft morning light across the linens | 0.85 | - | -
+late afternoon glow on the marble | 0.8 | - | -
+warm sunset light through sheer curtains | 0.85 | - | -
+blue hour dusk with lamps lit | 0.7 | - | -
+early evening turndown lighting | 0.75 | - | -
+dim ambient light before sleep | 0.55 | - | -
+hazy midday light filtered by sheers | 0.6 | - | -
+pre-dawn stillness with curtains open | 0.4 | - | -
+clear moonlit night through open doors | 0.45 | - | -

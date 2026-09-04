@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+infinity-edge pool merging with the horizon | 1.0 | 0.6-1.0 | seamless turquoise sheet
+resort-style free-form pool basin | 0.9 | 0.55-0.9 | glassy calm water
+row of private curtained cabana pavilions | 0.95 | 0.4-0.75 | sheer white draped structures
+manicured tropical landscaping border | 0.9 | 0.4-0.7 | sculpted palms and hedges
+champagne-stone hotel wing facade | 0.75 | 0.3-0.6 | polished cream elevation
+swim-up bar pavilion under a slatted roof | 0.6 | 0.15-0.35 | shaded stools half-submerged
+tiered sun terrace descending to the water | 0.55 | 0.25-0.5 | polished stone steps
+adjoining quiet lagoon pool | 0.5 | 0.25-0.5 | still glassy overflow
+distant ocean horizon beyond the pool edge | 0.65 | 0.3-0.6 | hazy blue infinity line
+clipped boxwood hedge perimeter | 0.6 | 0.15-0.35 | dense sculpted green wall
+cloudless pale sky over the resort | 0.55 | 0.3-0.6 | soft gradient blue
+reflecting pool wall of polished stone | 0.5 | 0.15-0.35 | mirrored still surface
+rows of manicured royal palms | 0.7 | 0.25-0.5 | uniform trimmed trunks
+glass balustrade overlooking the coastline | 0.5 | 0.15-0.35 | frameless clear panel
