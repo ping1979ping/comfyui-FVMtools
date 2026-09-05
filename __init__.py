@@ -10,9 +10,11 @@ try:
     from .nodes.palette_from_image import FVM_PaletteFromImage
     from .nodes.outfit_generator import FVM_OutfitGenerator
     from .nodes.person_data_refiner import PersonDataRefiner
+    from .nodes.person_data_filter import PersonDataFilter
     from .nodes.person_detailer_controlnet import PersonDetailerControlNet
     from .nodes.person_detailer_power import PersonDetailerPower
     from .nodes.person_selector_sam3 import PersonSelectorSAM3
+    from .nodes.person_selector_sam3_native import PersonSelectorSAM3Native
 
     # ── SMP (StructPromptMaker) — dict-based structural prompt suite ──
     from .nodes.smp.outfit_generator import FVM_SMP_OutfitGenerator
@@ -527,9 +529,11 @@ try:
         "FVM_PaletteFromImage": FVM_PaletteFromImage,
         "FVM_OutfitGenerator": FVM_OutfitGenerator,
         "PersonDataRefiner": PersonDataRefiner,
+        "PersonDataFilter": PersonDataFilter,
         "PersonDetailerControlNet": PersonDetailerControlNet,
         "PersonDetailerPower": PersonDetailerPower,
         "PersonSelectorSAM3": PersonSelectorSAM3,
+        "PersonSelectorSAM3Native": PersonSelectorSAM3Native,
         # ── SMP (StructPromptMaker) ──
         "FVM_SMP_OutfitGenerator":   FVM_SMP_OutfitGenerator,
         "FVM_SMP_ColorGenerator":    FVM_SMP_ColorGenerator,
@@ -565,9 +569,11 @@ try:
         "FVM_PaletteFromImage": "Palette From Image",
         "FVM_OutfitGenerator": "Outfit Generator",
         "PersonDataRefiner": "Person Data Refiner",
+        "PersonDataFilter": "Person Data Filter",
         "PersonDetailerControlNet": "Person Detailer ControlNet",
         "PersonDetailerPower": "Person Detailer Power",
         "PersonSelectorSAM3": "Person Selector SAM3",
+        "PersonSelectorSAM3Native": "Person Selector SAM3 (native)",
         # ── SMP (StructPromptMaker) — legacy; superseded by the JB suite ──
         "FVM_SMP_OutfitGenerator":   "SMP · Outfit Generator (dict) (legacy)",
         "FVM_SMP_ColorGenerator":    "SMP · Color Generator (dict) (legacy)",

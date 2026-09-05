@@ -14,6 +14,7 @@ from .utils.face_analyzer import FaceAnalyzer
 from .utils.matcher import compute_similarity, aggregate_similarities, build_appearance_matrix
 from .utils.masker import (MaskGenerator, run_sam3_grounding, sam3_prepare, sam3_ground,
                            assign_masks_to_faces, assign_masks_by_body_overlap,
+                           sam3_last_error,
                            MASK_TYPE_LABELS, _clip_labels_to_body)
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask
 from .utils.yolo_detector import (
@@ -695,6 +696,7 @@ class PersonSelectorSAM3:
         sim_values = []
         match_values = []
         per_image_reports = []
+        sam3_failures = []   # SAM3 backend errors, surfaced in the report
 
         for b in range(batch_size):
             single = current_image[b:b+1]
@@ -893,7 +895,12 @@ class PersonSelectorSAM3:
             matched_fis_report = set(fi for fi, sim in assignments.values())
             fi_to_ri_report = {fi: ri for ri, (fi, sim) in assignments.items()}
 
+            _sam3_err = sam3_last_error()
+            if _sam3_err:
+                sam3_failures.append(f"Image {b+1}: {_sam3_err}")
             batch_report_lines = [f"[Image {b+1}/{batch_size}] {face_count} faces, {len(assignments)} matched"]
+            if _sam3_err:
+                batch_report_lines.append(f"> **SAM3 FEHLGESCHLAGEN** - alle Masken leer: {_sam3_err}")
 
             if num_refs > 0 and face_count > 0:
                 # Markdown table header
@@ -1002,6 +1009,15 @@ class PersonSelectorSAM3:
             aux_info = ""
         report_lines = [
             f"## PersonSelectorSAM3",
+        ]
+        if sam3_failures:
+            report_lines += [
+                f"### SAM3 nicht geladen - alle Masken sind leer",
+                f"Die Node hat Gesichter erkannt, aber SAM3 lieferte nichts. "
+                f"Preview ohne Rand/Fuellung und leere Masken sind die Folge, kein Renderfehler.",
+                f"",
+            ] + [f"- {m}" for m in sam3_failures] + [f""]
+        report_lines += [
             f"**{total_faces}** faces | **{num_refs}** refs | **{matched_count}** matched | {_elapsed}s",
             f"",
             f"Threshold: {'Auto' if auto_threshold else threshold} | Aggregation: {aggregation}{aux_info}",

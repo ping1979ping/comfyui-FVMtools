@@ -457,6 +457,194 @@ def generate_all_masks_for_face(cur_rgb, face, device, sam_model, mask_fill_hole
 
 # ── SAM3 Grounding helpers ──
 
+
+# Last SAM3 backend failure, recorded so callers can surface it in a node report
+# instead of leaving it in the console. A failed prepare/ground silently yields
+# empty masks — the node then looks like it worked and the picture looks like a
+# rendering bug. Cleared at the start of every prepare.
+_LAST_SAM3_ERROR = None
+
+
+def sam3_last_error():
+    """Return the last SAM3 prepare/ground failure message, or None."""
+    return _LAST_SAM3_ERROR
+
+
+def _record_sam3_error(msg):
+    global _LAST_SAM3_ERROR
+    _LAST_SAM3_ERROR = msg
+
+class NativeSAM3:
+    """A native ComfyUI SAM3 checkpoint: the MODEL plus its CLIP text encoder.
+
+    Both come out of one CheckpointLoaderSimple -- the SAM3 text encoder ships
+    inside the same checkpoint (comfy/supported_models.py: class SAM3). Passed in
+    place of the comfyui-sam3 extension's SAM3_MODEL_CONFIG; prepare/ground below
+    dispatch on the type, so every existing caller keeps working unchanged.
+    """
+
+    def __init__(self, model, clip, refine_iterations=2):
+        self.model = model
+        self.clip = clip
+        self.refine_iterations = refine_iterations
+
+
+class _NativeState:
+    """Per-image handle: the encoded trunk plus what grounding needs to decode."""
+
+    def __init__(self, sam3, det, clip, device, dtype, image_hwc, refine_iterations):
+        self.sam3 = sam3
+        self.det = det
+        self.clip = clip
+        self.device = device
+        self.dtype = dtype
+        self.image_hwc = image_hwc
+        self.refine_iterations = refine_iterations
+
+
+def _sam3_prepare_native(bundle, image_rgb):
+    """Run the ViTDet trunk ONCE; every prompt is grounded against the result.
+
+    Mirrors comfy/ldm/sam3/detector.py forward_video (lines 570-587), which uses
+    the same trunk-once/ground-many split for its per-frame text detection.
+    """
+    import comfy.model_management
+    import comfy.utils
+
+    try:
+        comfy.model_management.load_model_gpu(bundle.model)
+        device = comfy.model_management.get_torch_device()
+        dtype = bundle.model.model.get_dtype()
+        sam3 = bundle.model.model.diffusion_model
+        det = sam3.detector
+
+        img = torch.from_numpy(image_rgb.astype(np.float32) / 255.0).unsqueeze(0)
+        frame = comfy.utils.common_upscale(
+            img[..., :3].movedim(-1, 1), 1008, 1008, "bilinear", crop="disabled")
+        frame = frame.to(device=device, dtype=dtype)
+
+        trunk_out = det.backbone["vision_backbone"].trunk(frame)
+        state = _NativeState(sam3, det, bundle.clip, device, dtype, img[0],
+                             bundle.refine_iterations)
+        return state, {"trunk": trunk_out}
+    except Exception as e:
+        _record_sam3_error("SAM3 native prepare failed: {}".format(e))
+        print("[FVMTools] SAM3 native prepare failed: {}".format(e))
+        import traceback
+        traceback.print_exc()
+        return None, None
+
+
+def _native_refine(st, coarse_mask, box_xyxy, h, w):
+    """Sharpen a coarse detector mask with the SAM decoder, cropped to the box.
+
+    Port of _refine_mask in comfy_extras/nodes_sam3.py. Without it the detector's
+    own low-resolution masks are used, which are noticeably blockier at the edges.
+    """
+    import comfy.utils
+
+    def _coarse():
+        return (F.interpolate(coarse_mask.unsqueeze(0).unsqueeze(0), size=(h, w),
+                              mode="bilinear", align_corners=False)[0] > 0).float()
+
+    if st.refine_iterations <= 0:
+        return _coarse()
+    try:
+        pad = 0.1
+        x1, y1, x2, y2 = box_xyxy.tolist()
+        bw, bh = x2 - x1, y2 - y1
+        cx1, cy1 = max(0, int(x1 - bw * pad)), max(0, int(y1 - bh * pad))
+        cx2, cy2 = min(w, int(x2 + bw * pad)), min(h, int(y2 + bh * pad))
+        if cx2 <= cx1 or cy2 <= cy1:
+            return _coarse()
+
+        crop = st.image_hwc[cy1:cy2, cx1:cx2, :3]
+        crop_1008 = comfy.utils.common_upscale(
+            crop.unsqueeze(0).movedim(-1, 1), 1008, 1008, "bilinear", crop="disabled")
+        crop_frame = crop_1008.to(device=st.device, dtype=st.dtype)
+
+        mh, mw = coarse_mask.shape[-2:]
+        mx1, my1 = int(cx1 / w * mw), int(cy1 / h * mh)
+        mx2, my2 = int(cx2 / w * mw), int(cy2 / h * mh)
+        if mx2 <= mx1 or my2 <= my1:
+            return _coarse()
+
+        logit = coarse_mask[..., my1:my2, mx1:mx2].unsqueeze(0).unsqueeze(0)
+        for _ in range(st.refine_iterations):
+            coarse_in = F.interpolate(logit, size=(1008, 1008), mode="bilinear",
+                                      align_corners=False)
+            logit = st.sam3.forward_segment(crop_frame, mask_inputs=coarse_in)
+
+        refined = F.interpolate(logit, size=(cy2 - cy1, cx2 - cx1), mode="bilinear",
+                                align_corners=False)
+        full = torch.zeros(1, 1, h, w, device=st.device, dtype=st.dtype)
+        full[:, :, cy1:cy2, cx1:cx2] = refined
+        coarse_full = F.interpolate(coarse_mask.unsqueeze(0).unsqueeze(0), size=(h, w),
+                                    mode="bilinear", align_corners=False)
+        return ((full[0] > 0) | (coarse_full[0] > 0)).float()
+    except Exception:
+        return _coarse()
+
+
+def _sam3_ground_native(st, base_state, image_shape, text_prompt, threshold=0.2):
+    """Ground one text prompt against the cached trunk.
+
+    Returns the same (mask_np, score, bbox_xyxy) tuples as the extension path.
+    """
+    h, w = image_shape[:2]
+    try:
+        prompt = text_prompt.strip()
+        cond = st.clip.encode_from_tokens_scheduled(st.clip.tokenize(prompt))
+        emb = cond[0][0].to(device=st.device, dtype=st.dtype)
+        meta = cond[0][1] if len(cond[0]) > 1 else {}
+        attn = meta.get("attention_mask")
+        if attn is not None:
+            attn = attn.to(st.device)
+        else:
+            attn = torch.ones(emb.shape[0], emb.shape[1], dtype=torch.int64,
+                              device=st.device)
+
+        # forward_from_trunk expects embeddings that ALREADY went through the
+        # resizer -- unlike forward(), which applies it internally.
+        emb = st.det.backbone["language_backbone"]["resizer"](emb)
+        res = st.det.forward_from_trunk(base_state["trunk"], emb, attn.bool())
+
+        # It returns normalized boxes and detector-resolution masks; forward()
+        # rescales both afterwards (detector.py:479-482), so do the same here.
+        boxes = res["boxes"][0].float().cpu()
+        scores = res["scores"][0].float().sigmoid().cpu()
+        masks = res["masks"][0].float()
+
+        keep = scores > threshold
+        if not bool(keep.any()):
+            print("    [SAM3-native] '{}': 0 detections".format(prompt))
+            return []
+        boxes, scores, masks = boxes[keep], scores[keep], masks[keep]
+        order = scores.argsort(descending=True)
+        boxes, scores, masks = boxes[order], scores[order], masks[order]
+        boxes = boxes * torch.tensor([w, h, w, h], dtype=boxes.dtype)
+
+        results = []
+        for i in range(masks.shape[0]):
+            m = _native_refine(st, masks[i], boxes[i], h, w)
+            m_np = m[0].detach().cpu().numpy().astype(np.float32)
+            if m_np.shape != (h, w):
+                m_np = cv2.resize(m_np, (w, h), interpolation=cv2.INTER_NEAREST)
+            results.append((m_np, float(scores[i]), boxes[i].tolist()))
+
+        scores_txt = ", ".join("{:.2f}".format(s) for _, s, _ in results)
+        print("    [SAM3-native] '{}': {} detections [{}]".format(
+            prompt, len(results), scores_txt))
+        return results
+    except Exception as e:
+        _record_sam3_error(
+            "SAM3 native grounding failed for '{}': {}".format(text_prompt, e))
+        print("[FVMTools] SAM3 native grounding failed for '{}': {}".format(text_prompt, e))
+        import traceback
+        traceback.print_exc()
+        return []
+
+
 def sam3_prepare(sam3_config, image_rgb):
     """Build/load the SAM3 model and run the vision backbone ONCE for an image.
 
@@ -471,6 +659,9 @@ def sam3_prepare(sam3_config, image_rgb):
     from PIL import Image
     import importlib
 
+    _record_sam3_error(None)
+    if isinstance(sam3_config, NativeSAM3):
+        return _sam3_prepare_native(sam3_config, image_rgb)
     try:
         sam3_cache = importlib.import_module(
             "custom_nodes.comfyui-sam3.nodes._model_cache"
@@ -489,6 +680,7 @@ def sam3_prepare(sam3_config, image_rgb):
         return processor, base_state
 
     except Exception as e:
+        _record_sam3_error(f"SAM3 prepare failed: {e}")
         print(f"[FVMTools] SAM3 prepare failed: {e}")
         import traceback
         traceback.print_exc()
@@ -512,6 +704,10 @@ def sam3_ground(processor, base_state, image_shape, text_prompt, threshold=0.2):
 
     if processor is None or base_state is None:
         return []
+
+    if isinstance(processor, _NativeState):
+        return _sam3_ground_native(processor, base_state, image_shape,
+                                   text_prompt, threshold)
 
     try:
         processor.set_confidence_threshold(threshold)
@@ -557,6 +753,7 @@ def sam3_ground(processor, base_state, image_shape, text_prompt, threshold=0.2):
         return results
 
     except Exception as e:
+        _record_sam3_error(f"SAM3 grounding failed for '{text_prompt}': {e}")
         print(f"[FVMTools] SAM3 grounding failed for '{text_prompt}': {e}")
         import traceback
         traceback.print_exc()
