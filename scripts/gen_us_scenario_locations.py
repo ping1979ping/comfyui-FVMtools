@@ -160,7 +160,7 @@ sunscreen and salt smell indoors | 0.5 | - | -"""
 
 SETS: dict[str, dict[str, dict[str, str]]] = {
     # ═════════════════════════════ INDOOR ═════════════════════════════
-    "indoor/office_us": {
+    "indoor/american_office": {
         "cubicle_pod": {
             "background": """grey fabric cubicle walls | 1.0 | 0.5-0.9 | pin-pricked woven panels
 row of cubicles down the aisle | 0.85 | 0.4-0.7 | repeating grey partitions
@@ -279,7 +279,7 @@ ice rattled into a cup | 0.4 | 0.03-0.1 | scoop in the bin""",
             "time_of_day": INDOOR_PUBLIC_TIME,
             "weather": INDOOR_PUBLIC_WEATHER,
         },
-        "conference_room_plain": {
+        "plain_conference_room": {
             "background": """long laminate conference table | 1.0 | 0.4-0.8 | wood-look top with cable box
 whiteboard covered in old notes | 0.85 | 0.3-0.6 | ghosted marker layers
 projection screen pulled halfway | 0.6 | 0.25-0.5 | wrinkled matte surface
@@ -339,7 +339,7 @@ cord untangled for the projector | 0.4 | 0.05-0.15 | adapter hunt""",
             "weather": INDOOR_PUBLIC_WEATHER,
         },
     },
-    "indoor/fitness_us": {
+    "indoor/american_fitness_spot": {
         "strip_mall_gym": {
             "background": """mirrored wall over the dumbbell rack | 1.0 | 0.4-0.8 | smudged floor-length mirrors
 row of treadmills facing TVs | 0.85 | 0.4-0.7 | worn belts and consoles
@@ -518,8 +518,8 @@ ball tucked under one arm | 0.5 | 0.05-0.15 | waiting turn""",
             "weather": INDOOR_PUBLIC_WEATHER,
         },
     },
-    "indoor/private_us": {
-        "master_bedroom_plain": {
+    "indoor/private_home_room": {
+        "plain_master_bedroom": {
             "background": """queen bed with a plain comforter | 1.0 | 0.4-0.8 | wrinkled solid color
 dresser with a wide mirror | 0.8 | 0.3-0.6 | clutter along the top
 window with bent mini blinds | 0.7 | 0.2-0.5 | one slat kinked
@@ -578,7 +578,7 @@ dog shooed off the bed | 0.35 | 0.1-0.25 | reluctant hop""",
             "time_of_day": INDOOR_HOME_TIME,
             "weather": INDOOR_HOME_WEATHER,
         },
-        "bathroom_tub_combo": {
+        "bathroom_with_tub_shower_combo": {
             "background": """tub and shower combo with vinyl curtain | 1.0 | 0.4-0.8 | printed curtain half drawn
 vanity with a cultured marble top | 0.8 | 0.3-0.6 | toothpaste specks
 medicine cabinet mirror | 0.75 | 0.2-0.5 | corner rust spots
@@ -637,7 +637,7 @@ face washed over the sink | 0.5 | 0.05-0.15 | dripping cupped hands""",
             "time_of_day": INDOOR_HOME_TIME,
             "weather": INDOOR_HOME_WEATHER,
         },
-        "walk_in_closet_everyday": {
+        "walk_in_closet": {
             "background": """double-hung rods packed tight | 1.0 | 0.4-0.8 | hangers wedged shoulder to shoulder
 wire shelving above the rods | 0.8 | 0.25-0.5 | sweater stacks slumping
 shoe shelf rows near the floor | 0.7 | 0.2-0.4 | heels toed in with sneakers
@@ -697,7 +697,7 @@ tags snipped with nail scissors | 0.4 | 0.03-0.1 | new top""",
             "weather": INDOOR_HOME_WEATHER,
         },
     },
-    "indoor/vacation_us": {
+    "indoor/american_vacation_stay": {
         "interstate_motel_room": {
             "background": """two queen beds with floral spreads | 1.0 | 0.4-0.8 | stiff quilted polyester
 AC unit under the window | 0.85 | 0.15-0.35 | rattling front grille
@@ -757,7 +757,7 @@ blackout dark checked with a peek | 0.4 | 0.05-0.15 | curtain corner lifted""",
             "time_of_day": INDOOR_HOME_TIME,
             "weather": INDOOR_HOME_WEATHER,
         },
-        "poconos_cabin_living": {
+        "poconos_cabin_living_room": {
             "background": """knotty pine walls | 1.0 | 0.5-0.9 | orange-toned tongue and groove
 wood stove on a slate pad | 0.8 | 0.2-0.4 | black steel with a glass door
 plaid couch with sagging cushions | 0.8 | 0.3-0.6 | flattened arms
@@ -877,8 +877,8 @@ phone dried against a shirt hem | 0.4 | 0.03-0.1 | splash recovery""",
         },
     },
     # ═════════════════════════════ OUTDOOR ═════════════════════════════
-    "outdoor/suburb_pa": {
-        "front_porch_vinyl": {
+    "outdoor/pennsylvania_suburb": {
+        "vinyl_sided_front_porch": {
             "background": """vinyl-sided house front | 1.0 | 0.5-0.9 | pale siding with seam lines
 porch posts wrapped in aluminum | 0.8 | 0.2-0.45 | white column sleeves
 front door with a storm door | 0.75 | 0.2-0.4 | glass and screen combo
@@ -937,7 +937,7 @@ porch light bulb swapped | 0.35 | 0.05-0.15 | tiptoe reach""",
             "time_of_day": OUTDOOR_PA_TIME,
             "weather": OUTDOOR_PA_WEATHER,
         },
-        "backyard_deck_grill": {
+        "backyard_deck_with_grill": {
             "background": """pressure-treated deck boards | 1.0 | 0.4-0.8 | greyed grain and pops
 vinyl privacy fence line | 0.75 | 0.3-0.6 | white panels with green algae streak
 back of the house with a slider | 0.7 | 0.3-0.6 | siding and screen door
@@ -996,7 +996,7 @@ sparkler traced in the dusk | 0.35 | 0.05-0.15 | light trail""",
             "time_of_day": OUTDOOR_PA_TIME,
             "weather": OUTDOOR_PA_WEATHER,
         },
-        "driveway_hoop": {
+        "driveway_basketball_hoop": {
             "background": """asphalt driveway with sealant patches | 1.0 | 0.4-0.8 | darker repair strips
 portable hoop with a sand base | 0.85 | 0.2-0.4 | tilted backboard
 garage door with dents at bumper height | 0.7 | 0.3-0.6 | white panels
@@ -1056,8 +1056,8 @@ buzzer beater called aloud | 0.45 | 0.05-0.2 | three-two-one""",
             "weather": OUTDOOR_PA_WEATHER,
         },
     },
-    "outdoor/town_pa": {
-        "main_street_small_town": {
+    "outdoor/pennsylvania_small_town": {
+        "small_town_main_street": {
             "background": """brick storefronts in a row | 1.0 | 0.5-0.9 | painted lintels and cornices
 angled parking along the curb | 0.8 | 0.3-0.6 | faded stall lines
 awnings over the shop windows | 0.7 | 0.2-0.45 | striped canvas
@@ -1235,7 +1235,7 @@ leftover fry stolen from the bag | 0.45 | 0.03-0.1 | passenger tax""",
             "weather": OUTDOOR_PA_WEATHER,
         },
     },
-    "outdoor/nature_pa": {
+    "outdoor/pennsylvania_nature_spot": {
         "state_park_trailhead": {
             "background": """gravel parking lot at the trailhead | 1.0 | 0.4-0.8 | packed limestone chips
 wooden signboard with a trail map | 0.85 | 0.15-0.35 | plexiglass over paper
@@ -1295,7 +1295,7 @@ trail mouth sized up | 0.5 | 0.1-0.3 | hands on hips""",
             "time_of_day": OUTDOOR_PA_TIME,
             "weather": OUTDOOR_PA_WEATHER,
         },
-        "creek_bank_summer": {
+        "summer_creek_bank": {
             "background": """shallow creek over flat shale | 1.0 | 0.4-0.8 | amber water and riffles
 sycamore leaning over the water | 0.7 | 0.2-0.5 | mottled bark
 far bank of rhododendron | 0.6 | 0.25-0.5 | glossy tangled wall
@@ -1414,7 +1414,7 @@ hands warmed in armpits | 0.45 | 0.05-0.15 | glove regret""",
             "weather": OUTDOOR_PA_FALL_WEATHER,
         },
     },
-    "outdoor/fitness_us": {
+    "outdoor/american_fitness_spot": {
         "township_track": {
             "background": """rubberized track in faded red | 1.0 | 0.4-0.8 | patched lanes
 chain-link fence around the oval | 0.75 | 0.2-0.5 | galvanized diamond mesh

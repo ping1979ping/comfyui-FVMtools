@@ -494,9 +494,9 @@ a woman in a bedroom wearing #primary# lace bralette,
 #secondary# silk robe, #secondary# satin panties,
 #neutral# stiletto heels, #metallic# pearl necklace
 ```
-Recommended outfit set: `female_lingerie`
+Recommended outfit set: `_archive/_archive/female_lingerie`
 
-**Tip:** The `female_lingerie` set has ~20 tops (bralettes, corsets, bodysuits, bras) and ~16 bottoms, mixing sheer and opaque pieces. Pair with `coverage: 0.7` to include robes, stockings, and accessories. Disable the `bag` slot for cleaner results.
+**Tip:** The `_archive/_archive/female_lingerie` set has ~20 tops (bralettes, corsets, bodysuits, bras) and ~16 bottoms, mixing sheer and opaque pieces. Pair with `coverage: 0.7` to include robes, stockings, and accessories. Disable the `bag` slot for cleaner results.
 
 ---
 

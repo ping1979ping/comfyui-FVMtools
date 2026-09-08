@@ -15,7 +15,7 @@ from core.location_engine import (
 )
 
 
-REQUIRED_SETS = ["indoor/everyday_us/family_living_room_tv", "outdoor/everyday_us/subdivision_sidewalk", "indoor/everyday_de/kitchen_cooking"]
+REQUIRED_SETS = ["indoor/american_everyday_scene/family_living_room_with_tv", "outdoor/american_everyday_scene/subdivision_sidewalk", "indoor/german_everyday_scene/kitchen_while_cooking"]
 REQUIRED_FILES = [
     "background.txt",
     "midground.txt",
@@ -69,15 +69,15 @@ def test_files_parse_clean(set_name):
 
 
 def test_seed_determinism():
-    a = generate_location_records(seed=42, location_set="indoor/everyday_us/family_living_room_tv")
-    b = generate_location_records(seed=42, location_set="indoor/everyday_us/family_living_room_tv")
+    a = generate_location_records(seed=42, location_set="indoor/american_everyday_scene/family_living_room_with_tv")
+    b = generate_location_records(seed=42, location_set="indoor/american_everyday_scene/family_living_room_with_tv")
     assert a == b
 
 
 def test_different_seeds_diverge_within_one_set():
     seen = set()
     for s in range(0, 30):
-        rec = generate_location_records(seed=s, location_set="indoor/everyday_us/family_living_room_tv")
+        rec = generate_location_records(seed=s, location_set="indoor/american_everyday_scene/family_living_room_with_tv")
         # Tuple of selected names per element → fingerprint of the draw
         fp = tuple(sorted((k, e["name"]) for k, e in rec["elements"].items()))
         seen.add(fp)
@@ -97,7 +97,7 @@ def test_default_enables_produce_fragments(set_name):
 
 def test_background_fragment_carries_ambient_token():
     rec = generate_location_records(
-        seed=5, location_set="indoor/everyday_us/family_living_room_tv",
+        seed=5, location_set="indoor/american_everyday_scene/family_living_room_with_tv",
         element_enables={k: (k == "background") for k in ELEMENT_ORDER},
     )
     assert "background" in rec["elements"]
@@ -106,7 +106,7 @@ def test_background_fragment_carries_ambient_token():
 
 def test_foreground_fragment_carries_shadow_token():
     rec = generate_location_records(
-        seed=5, location_set="indoor/everyday_us/family_living_room_tv",
+        seed=5, location_set="indoor/american_everyday_scene/family_living_room_with_tv",
         element_enables={k: (k == "foreground_element") for k in ELEMENT_ORDER},
     )
     assert "foreground_element" in rec["elements"]
@@ -115,7 +115,7 @@ def test_foreground_fragment_carries_shadow_token():
 
 def test_atmosphere_fragments_have_no_tokens():
     rec = generate_location_records(
-        seed=5, location_set="indoor/everyday_us/family_living_room_tv",
+        seed=5, location_set="indoor/american_everyday_scene/family_living_room_with_tv",
         element_enables={k: (k in {"time_of_day", "weather"}) for k in ELEMENT_ORDER},
     )
     for elem_id in ("time_of_day", "weather"):
@@ -138,7 +138,7 @@ def _gen_node():
 
 def _common_args():
     return dict(
-        location_set="indoor/everyday_us/family_living_room_tv", seed=42,
+        location_set="indoor/american_everyday_scene/family_living_room_with_tv", seed=42,
         enable_background=True, enable_midground=False,
         enable_architecture_detail=False, enable_props=False,
         enable_foreground_element=True,

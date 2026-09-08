@@ -95,7 +95,7 @@ def test_outfit_block_palette_summary_is_csv():
 
 def _location(seed=42, **overrides):
     args = dict(
-        location_set="indoor/everyday_us/family_living_room_tv", seed=seed,
+        location_set="indoor/american_everyday_scene/family_living_room_with_tv", seed=seed,
         enable_background=True, enable_midground=False,
         enable_architecture_detail=False, enable_props=False,
         enable_foreground_element=True,
@@ -125,7 +125,7 @@ def test_location_block_emits_valid_json():
     parsed = json.loads(location_json)
     assert "location" in parsed
     assert "elements" in parsed["location"]
-    assert parsed["location"]["set_name"] == "indoor/everyday_us/family_living_room_tv"
+    assert parsed["location"]["set_name"] == "indoor/american_everyday_scene/family_living_room_with_tv"
 
 
 def test_location_block_resolves_atmosphere_tokens():
@@ -143,7 +143,7 @@ def test_location_block_seed_determinism():
 
 
 def test_location_block_three_sets_all_work():
-    for set_name in ("indoor/everyday_us/family_living_room_tv", "outdoor/everyday_us/subdivision_sidewalk", "indoor/everyday_de/kitchen_cooking"):
+    for set_name in ("indoor/american_everyday_scene/family_living_room_with_tv", "outdoor/american_everyday_scene/subdivision_sidewalk", "indoor/german_everyday_scene/kitchen_while_cooking"):
         loc_json, _, _ = _location(seed=1, location_set=set_name)
         parsed = json.loads(loc_json)
         assert parsed["location"]["set_name"] == set_name

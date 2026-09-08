@@ -249,7 +249,7 @@ def parse_location_overrides(override_string: Optional[str]) -> dict:
     return result
 
 
-def generate_location_records(seed: int, location_set: str = "indoor/everyday_us/family_living_room_tv",
+def generate_location_records(seed: int, location_set: str = "indoor/american_everyday_scene/family_living_room_with_tv",
                                element_enables: Optional[dict[str, bool]] = None,
                                color_tone: Optional[str] = None,
                                overrides: Optional[dict] = None) -> dict:

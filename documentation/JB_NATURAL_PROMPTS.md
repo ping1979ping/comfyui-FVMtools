@@ -133,9 +133,9 @@ otherwise `denim_casual` produced `dark denim blue denim jeans`.
 
 ## 3. Everyday sets
 
-The shipped sets skew towards studio and editorial looks; the `everyday_us`
-locations are good but US-specific (Walmart, CVS, Little League). These are
-the plain-clothes counterpart.
+The shipped sets skew towards studio and editorial looks; the
+`american_everyday_scene` locations are good but US-specific (Walmart, CVS,
+Little League). These are the plain-clothes counterpart.
 
 **`outfit_lists/female/everyday/`** — 8 sets:
 
@@ -144,12 +144,12 @@ grocery_run      home_lounge      school_run       rainy_errands
 gym_commute      weekend_market   office_casual    evening_walk
 ```
 
-**`location_lists/indoor/everyday_de/`** and
-**`location_lists/outdoor/everyday_de/`** — 8 sets:
+**`location_lists/indoor/german_everyday_scene/`** and
+**`location_lists/outdoor/german_everyday_scene/`** — 8 sets:
 
 ```
-indoor:   kitchen_cooking  living_room_sofa  bathroom_mirror  supermarket_aisle_de
-outdoor:  apartment_balcony  bus_stop_de  pedestrian_zone  playground_de
+indoor:   kitchen_while_cooking  living_room_with_sofa  bathroom_mirror  german_supermarket_aisle
+outdoor:  apartment_balcony  german_bus_stop  pedestrian_zone  german_playground
 ```
 
 Sample output with `output_format: natural`, `color_mood: everyday_muted`:
@@ -164,7 +164,7 @@ rainy_errands     wearing grey thin knit jumper, navy denim jeans with damp hems
                   charcoal grey softshell waterproof trainers, taupe polyester
                   shoulder bag held close
 
-bus_stop_de       bare street trees along the kerb, thin trunks, push bike leaning
+german_bus_stop       bare street trees along the kerb, thin trunks, push bike leaning
                   on the shelter, mud on the tyres, stickers on the shelter glass,
                   coat collar pulled up, grey commuter morning, light drizzle
 apartment_balcony distant tram wires, drying rack on the balcony, folding aluminium
@@ -199,13 +199,13 @@ paragliding launches) moved to `location_lists/_archive/` and
 `outfit_lists/female/_archive/`. Discovery skips underscore directories, so
 they disappear from the dropdowns but stay on disk — move a folder back out
 of `_archive/` to reactivate it. Their US/PA everyday replacements live in
-`indoor/{office_us, fitness_us, private_us, vacation_us}` and
-`outdoor/{suburb_pa, town_pa, nature_pa, fitness_us}`
+`indoor/{american_office, american_fitness_spot, private_home_room, american_vacation_stay}`
+and `outdoor/{pennsylvania_suburb, pennsylvania_small_town, pennsylvania_nature_spot, american_fitness_spot}`
 (generator: `scripts/gen_us_scenario_locations.py`), plus the outfit
-categories `female/{dresses_heels, dresses_flats, underwear}`
+categories `female/{dress_with_heels, dress_with_flats, underwear}`
 (generator: `scripts/gen_dresses_underwear_sets.py`).
 
-`dresses_heels` is the leg-showing-with-heels group, `dresses_flats` the
+`dress_with_heels` is the leg-showing-with-heels group, `dress_with_flats` the
 covered/flat counterpart — both run from everyday office to grocery runs
 rather than only fancy occasions. `underwear` is deliberately non-fancy
 (cotton basics, t-shirt bras, sleep sets, laundry-day mismatch) with a single
@@ -213,7 +213,7 @@ slightly nicer `simple_lace_touch`.
 
 ### Private spaces (signage-free)
 
-`indoor/private_spaces_us` and `outdoor/private_spaces_us`
+`indoor/private_space` and `outdoor/private_space`
 (generator: `scripts/gen_private_spaces_locations.py`) are quiet spots with
 no public traffic — parking garage level and roof deck, mall lot far corner,
 home garage, spare room, office stairwell and supply room, store stockroom,
@@ -272,12 +272,12 @@ elements), so sibling elements may re-roll when an override is added.
 
 ### Beach variants and winter vacation spots
 
-`outdoor/beach_variants` (generator: `scripts/gen_vacation_water_locations.py`)
+`outdoor/beach_or_pool_spot` (generator: `scripts/gen_vacation_water_locations.py`)
 covers the shoreline spectrum — sandy ocean beach in a **busy** and a
 **private** variant, rocky cove (private) and tidepool point (busy), public
 lake beach and private lake cove, river bend beach, resort pool (busy),
 private backyard pool, and `hotel_pool_after_dark` as an explicit night set.
-`outdoor/vacation_winter_us` adds the private winter counterparts:
+`outdoor/american_winter_vacation` adds the private winter counterparts:
 cabin_hot_tub_deck, frozen_lake_shore, snowed_in_cottage_yard,
 empty_ski_slope_edge.
 

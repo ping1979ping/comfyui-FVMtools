@@ -17,7 +17,7 @@ except ImportError:  # pragma: no cover
     )
 
 
-_FALLBACK_SETS = ["indoor/everyday_us/family_living_room_tv", "outdoor/everyday_us/subdivision_sidewalk", "indoor/everyday_de/kitchen_cooking"]
+_FALLBACK_SETS = ["indoor/american_everyday_scene/family_living_room_with_tv", "outdoor/american_everyday_scene/subdivision_sidewalk", "indoor/german_everyday_scene/kitchen_while_cooking"]
 
 
 def _location_set_choices() -> list[str]:

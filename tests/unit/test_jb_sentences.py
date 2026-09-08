@@ -34,7 +34,7 @@ PERSON_WORDS = re.compile(r"\b(woman|man|she|he|her|his|female|male|person|weari
 
 def _location(seed=3, **extra):
     args = dict(
-        location_set="indoor/family_events/graduation_party_home", seed=seed,
+        location_set="indoor/family_event/graduation_party_at_home", seed=seed,
         enable_background=True, enable_midground=True,
         enable_architecture_detail=True, enable_props=True,
         enable_foreground_element=True, enable_time_of_day=True,

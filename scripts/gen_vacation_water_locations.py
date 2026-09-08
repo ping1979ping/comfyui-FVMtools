@@ -1,12 +1,12 @@
 """Generator für private Urlaubsorte: Strand-Varianten und Winter-Spots.
 
-outdoor/beach_variants     Strand in allen Spielarten — sandy/rocky, Meer,
+outdoor/beach_or_pool_spot     Strand in allen Spielarten — sandy/rocky, Meer,
                            See, Fluss, öffentlicher und privater Pool.
                            Busy/Private sind SET-Varianten (eigene Inhalte),
                            Tag/Nacht steckt in den time_of_day-Pools und ist
                            damit per Override erzwingbar
                            ("time_of_day: moonlight silvering the water").
-outdoor/vacation_winter_us Private Winterurlaubs-Ecken: Hot-Tub-Deck,
+outdoor/american_winter_vacation Private Winterurlaubs-Ecken: Hot-Tub-Deck,
                            zugefrorener See, eingeschneiter Cottage-Hof,
                            leerer Pistenrand nach Betriebsschluss.
 
@@ -126,8 +126,8 @@ mild spell softening the drifts | 0.4 | - | -"""
 
 
 SETS: dict[str, dict[str, dict[str, str]]] = {
-    "outdoor/beach_variants": {
-        "sandy_beach_busy": {
+    "outdoor/beach_or_pool_spot": {
+        "busy_sandy_beach": {
             "background": """wide sandy beach packed with umbrellas | 1.0 | 0.5-0.9 | color-dotted crowd field
 surf line rolling in sets | 0.85 | 0.3-0.6 | white foam bands
 lifeguard chair above the crowd | 0.7 | 0.1-0.3 | tall white frame
@@ -186,7 +186,7 @@ squint out to the swimmers | 0.5 | 0.05-0.2 | hand visor""",
             "time_of_day": SEA_TIME,
             "weather": SEA_WEATHER,
         },
-        "sandy_beach_private": {
+        "private_sandy_beach": {
             "background": """empty sand stretching both ways | 1.0 | 0.5-0.9 | unmarked expanse
 dunes rolling back in grass tufts | 0.8 | 0.25-0.5 | seagrass mounds
 surf running unwatched | 0.8 | 0.3-0.6 | steady white lines
@@ -304,7 +304,7 @@ pebble pyramid balanced patiently | 0.4 | 0.03-0.1 | fifth stone wobbling""",
             "time_of_day": SEA_TIME,
             "weather": SEA_WEATHER,
         },
-        "rocky_point_tidepools": {
+        "rocky_point_with_tidepools": {
             "background": """rock shelf running out to the point | 1.0 | 0.5-0.9 | table of wet stone
 pools scattered like dropped mirrors | 0.85 | 0.3-0.6 | sky pieces everywhere
 families bent over the water windows | 0.6 | 0.2-0.4 | pointing clusters
@@ -363,7 +363,7 @@ tide race back to shore giggled through | 0.45 | 0.1-0.25 | splashing retreat"""
             "time_of_day": SEA_TIME,
             "weather": SEA_WEATHER,
         },
-        "lake_beach_public": {
+        "public_lake_beach": {
             "background": """roped swim area dotted with heads | 1.0 | 0.4-0.8 | float-line rectangle
 coarse sand beach on the lake | 0.85 | 0.4-0.7 | trucked-in strip
 far shore of solid trees | 0.7 | 0.25-0.5 | green wall doubled in water
@@ -422,7 +422,7 @@ sun-warmed shallows walked slowly | 0.5 | 0.1-0.25 | bath-water stretch""",
             "time_of_day": FRESHWATER_TIME,
             "weather": FRESHWATER_WEATHER,
         },
-        "lake_cove_private": {
+        "private_lake_cove": {
             "background": """still cove ringed by hemlocks | 1.0 | 0.5-0.9 | dark green bowl
 weathered dock reaching out | 0.8 | 0.2-0.45 | grey planks on posts
 water black-green and glassy | 0.75 | 0.3-0.6 | depth without color
@@ -540,7 +540,7 @@ riffle listened to with eyes shut | 0.45 | 0.1-0.25 | white noise bath""",
             "time_of_day": FRESHWATER_TIME,
             "weather": FRESHWATER_WEATHER,
         },
-        "resort_pool_busy": {
+        "busy_resort_pool": {
             "background": """free-form pool packed shoulder to shoulder | 1.0 | 0.4-0.8 | churned turquoise
 lounger ranks three deep | 0.85 | 0.3-0.6 | towel-claimed rows
 swim-up bar under a palm roof | 0.55 | 0.15-0.35 | stools in the water
@@ -599,7 +599,7 @@ goggle marks compared like medals | 0.45 | 0.03-0.1 | red-ring pride""",
             "time_of_day": POOL_TIME,
             "weather": POOL_WEATHER,
         },
-        "backyard_pool_private": {
+        "private_backyard_pool": {
             "background": """rectangular pool behind the house | 1.0 | 0.4-0.8 | still blue rectangle
 privacy fence wrapping the yard | 0.8 | 0.3-0.55 | tall board wall
 concrete deck with a few loungers | 0.7 | 0.25-0.5 | sun-bleached pair
@@ -718,7 +718,7 @@ gate closed softly behind | 0.45 | 0.05-0.15 | considerate exit""",
             "weather": POOL_WEATHER,
         },
     },
-    "outdoor/vacation_winter_us": {
+    "outdoor/american_winter_vacation": {
         "cabin_hot_tub_deck": {
             "background": """snow-loaded deck around the tub | 1.0 | 0.4-0.8 | white-capped rails
 hot tub steaming hard | 0.9 | 0.2-0.4 | rolling vapor column

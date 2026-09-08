@@ -1,0 +1,155 @@
+# rename_sets_map.txt — DRAFT, edit freely before running scripts/rename_sets.py
+#
+# Purpose: directory names are read back mechanically ("_" -> " ") by the JB
+# `sentences` output format:
+#
+#   location:  The scene takes place indoors, it is a <category>, namely the <leaf>.
+#   outfit:    The outfit is a <category> look, in the <leaf> style.
+#              (leaf "general" -> "The outfit is a <category> look.")
+#
+# So every category must be a singular noun phrase that fits "it is a ...",
+# every location leaf a noun phrase that fits "namely the ...", and no
+# country/state codes (_us, _de, _pa) or trailing qualifiers (_inside,
+# _interior, _plain, _busy, _private) may remain.
+#
+# Rule syntax:  old_path => new_path      (POSIX, relative to location_lists/ or
+#               outfit_lists/ — the first segment decides which root)
+#   2 segments  = category rule, moves every set under it
+#   3 segments  = set rule, wins over the category rule for that set
+#   Sets not mentioned keep their name. Lines starting with # are comments.
+#   Delete a line to keep the old name. Change the right side to pick a
+#   different name.
+
+# ═══════════════════════════ LOCATIONS — categories ═══════════════════════════
+indoor/college => indoor/college_scene
+indoor/everyday_de => indoor/german_everyday_scene
+indoor/everyday_us => indoor/american_everyday_scene
+indoor/family_activities => indoor/family_activity
+indoor/family_events => indoor/family_event
+indoor/fitness_us => indoor/american_fitness_spot
+indoor/hotel_luxury => indoor/luxury_hotel
+indoor/household => indoor/household_scene
+indoor/office_us => indoor/american_office
+indoor/private_spaces_us => indoor/private_space
+indoor/private_us => indoor/private_home_room
+indoor/prom => indoor/prom_night
+indoor/vacation_us => indoor/american_vacation_stay
+outdoor/beach_variants => outdoor/beach_or_pool_spot
+outdoor/college => outdoor/college_scene
+outdoor/everyday_de => outdoor/german_everyday_scene
+outdoor/everyday_us => outdoor/american_everyday_scene
+outdoor/family_activities => outdoor/family_activity
+outdoor/family_events => outdoor/family_event
+outdoor/fitness_us => outdoor/american_fitness_spot
+outdoor/hotel_luxury => outdoor/luxury_hotel
+outdoor/household => outdoor/household_scene
+outdoor/nature_pa => outdoor/pennsylvania_nature_spot
+outdoor/private_spaces_us => outdoor/private_space
+outdoor/suburb_pa => outdoor/pennsylvania_suburb
+outdoor/town_pa => outdoor/pennsylvania_small_town
+outdoor/vacation_winter_us => outdoor/american_winter_vacation
+# unchanged: indoor|outdoor/family_vacation, outdoor/beach_vacation
+
+# ═══════════════════════════ LOCATIONS — leaves ═══════════════════════════════
+# (right side already uses the NEW category name)
+indoor/everyday_de/kitchen_cooking => indoor/german_everyday_scene/kitchen_while_cooking
+indoor/everyday_de/living_room_sofa => indoor/german_everyday_scene/living_room_with_sofa
+indoor/everyday_de/supermarket_aisle_de => indoor/german_everyday_scene/german_supermarket_aisle
+indoor/everyday_us/family_living_room_tv => indoor/american_everyday_scene/family_living_room_with_tv
+indoor/everyday_us/gas_station_convenience_inside => indoor/american_everyday_scene/gas_station_convenience_store
+indoor/everyday_us/high_school_hallway_locker => indoor/american_everyday_scene/high_school_locker_hallway
+indoor/everyday_us/school_cafeteria_lunch => indoor/american_everyday_scene/school_cafeteria_at_lunch
+indoor/everyday_us/teen_messy_bedroom => indoor/american_everyday_scene/messy_teen_bedroom
+indoor/everyday_us/walmart_aisle_interior => indoor/american_everyday_scene/walmart_aisle
+indoor/family_activities/baking_together_kitchen => indoor/family_activity/kitchen_while_baking_together
+indoor/family_activities/family_game_night_dining => indoor/family_activity/family_game_night_at_the_dining_table
+indoor/family_activities/kids_birthday_party_home => indoor/family_activity/kids_birthday_party_at_home
+indoor/family_activities/movie_night_living_room => indoor/family_activity/movie_night_in_the_living_room
+indoor/family_activities/pottery_class_studio => indoor/family_activity/pottery_class_in_a_studio
+indoor/family_events/graduation_party_home => indoor/family_event/graduation_party_at_home
+indoor/family_vacation/airport_terminal_vacation => indoor/family_vacation/airport_terminal
+indoor/hotel_luxury/lobby => indoor/luxury_hotel/hotel_lobby
+indoor/hotel_luxury/room => indoor/luxury_hotel/hotel_room
+indoor/household/basement_utility => indoor/household_scene/basement_utility_room
+indoor/household/broom_closet_utility => indoor/household_scene/broom_closet
+indoor/household/family_bathroom_practical => indoor/household_scene/practical_family_bathroom
+indoor/household/kitchen_country_farmhouse => indoor/household_scene/country_farmhouse_kitchen
+indoor/household/kitchen_modern => indoor/household_scene/modern_kitchen
+indoor/household/living_room_family => indoor/household_scene/family_living_room
+indoor/household/pantry_walk_in => indoor/household_scene/walk_in_pantry
+indoor/office_us/conference_room_plain => indoor/american_office/plain_conference_room
+indoor/private_spaces_us/home_garage_interior => indoor/private_space/home_garage
+indoor/private_spaces_us/school_gym_storage => indoor/private_space/school_gym_storage_room
+indoor/private_spaces_us/spare_room_boxes => indoor/private_space/spare_room_full_of_boxes
+indoor/private_us/bathroom_tub_combo => indoor/private_home_room/bathroom_with_tub_shower_combo
+indoor/private_us/master_bedroom_plain => indoor/private_home_room/plain_master_bedroom
+indoor/private_us/walk_in_closet_everyday => indoor/private_home_room/walk_in_closet
+indoor/prom/night_party => indoor/prom_night/prom_night_party
+indoor/prom/prepping => indoor/prom_night/getting_ready_bedroom
+indoor/vacation_us/poconos_cabin_living => indoor/american_vacation_stay/poconos_cabin_living_room
+outdoor/beach_vacation/beach => outdoor/beach_vacation/sandy_beach
+outdoor/beach_vacation/daytrip_excursion => outdoor/beach_vacation/day_trip_excursion
+outdoor/beach_vacation/sandbeach_atlantic => outdoor/beach_vacation/atlantic_sand_beach
+outdoor/beach_vacation/watersports => outdoor/beach_vacation/water_sports_spot
+outdoor/beach_variants/backyard_pool_private => outdoor/beach_or_pool_spot/private_backyard_pool
+outdoor/beach_variants/lake_beach_public => outdoor/beach_or_pool_spot/public_lake_beach
+outdoor/beach_variants/lake_cove_private => outdoor/beach_or_pool_spot/private_lake_cove
+outdoor/beach_variants/resort_pool_busy => outdoor/beach_or_pool_spot/busy_resort_pool
+outdoor/beach_variants/rocky_point_tidepools => outdoor/beach_or_pool_spot/rocky_point_with_tidepools
+outdoor/beach_variants/sandy_beach_busy => outdoor/beach_or_pool_spot/busy_sandy_beach
+outdoor/beach_variants/sandy_beach_private => outdoor/beach_or_pool_spot/private_sandy_beach
+outdoor/college/campus_quad_first_day => outdoor/college_scene/campus_quad_on_the_first_day
+outdoor/everyday_de/bus_stop_de => outdoor/german_everyday_scene/german_bus_stop
+outdoor/everyday_de/playground_de => outdoor/german_everyday_scene/german_playground
+outdoor/family_activities/easter_egg_hunt_lawn => outdoor/family_activity/easter_egg_hunt_on_the_lawn
+outdoor/family_activities/family_beach_day_blanket => outdoor/family_activity/family_beach_day_on_a_blanket
+outdoor/family_activities/family_bike_ride_neighborhood => outdoor/family_activity/family_bike_ride_through_the_neighborhood
+outdoor/family_activities/family_day_hike_clearing => outdoor/family_activity/family_day_hike_at_a_clearing
+outdoor/family_activities/family_reunion_lawn => outdoor/family_activity/family_reunion_on_the_lawn
+outdoor/family_activities/halloween_pumpkin_carving_porch => outdoor/family_activity/halloween_pumpkin_carving_on_the_porch
+outdoor/family_activities/ice_cream_truck_street => outdoor/family_activity/ice_cream_truck_on_the_street
+outdoor/family_activities/park_picnic_blanket => outdoor/family_activity/park_picnic_on_a_blanket
+outdoor/family_vacation/kid_resort_beachside => outdoor/family_vacation/kid_friendly_beachside_resort
+outdoor/hotel_luxury/pool => outdoor/luxury_hotel/hotel_pool
+outdoor/household/front_porch_classic => outdoor/household_scene/classic_front_porch
+outdoor/nature_pa/creek_bank_summer => outdoor/pennsylvania_nature_spot/summer_creek_bank
+outdoor/private_spaces_us/mall_parking_lot_far_corner => outdoor/private_space/far_corner_of_a_mall_parking_lot
+outdoor/private_spaces_us/office_courtyard_quiet => outdoor/private_space/quiet_office_courtyard
+outdoor/suburb_pa/backyard_deck_grill => outdoor/pennsylvania_suburb/backyard_deck_with_grill
+outdoor/suburb_pa/driveway_hoop => outdoor/pennsylvania_suburb/driveway_basketball_hoop
+outdoor/suburb_pa/front_porch_vinyl => outdoor/pennsylvania_suburb/vinyl_sided_front_porch
+outdoor/town_pa/main_street_small_town => outdoor/pennsylvania_small_town/small_town_main_street
+
+# ═══════════════════════════ OUTFITS — categories ═════════════════════════════
+female/dresses_flats => female/dress_with_flats
+female/dresses_heels => female/dress_with_heels
+female/events => female/formal_event
+female/teenager => female/teen
+male/santa => male/santa_claus
+male/scifi => male/sci_fi
+male/startrek => male/star_trek
+# OPTIONAL — reads better ("a boudoir lingerie look") but scatters the lingerie
+# group in the dropdown (no common prefix any more). Delete these 6 lines to
+# keep the lingerie_* clustering; the sentence is then "a lingerie boudoir look".
+female/lingerie_1940 => female/1940s_lingerie
+female/lingerie_boudoir => female/boudoir_lingerie
+female/lingerie_bridal => female/bridal_lingerie
+female/lingerie_burlesque => female/burlesque_lingerie
+female/lingerie_dominatrix => female/dominatrix_lingerie
+female/lingerie_strappy_cage => female/strappy_cage_lingerie
+
+# ═══════════════════════════ OUTFITS — leaves ═════════════════════════════════
+female/business/twoset_heels => female/business/two_piece_set_with_heels
+female/business/twoset_minimal => female/business/minimal_two_piece_set
+female/business/blazer_combo_heels => female/business/blazer_combo_with_heels
+female/teenager/cozy_home_legging => female/teen/cozy_home_leggings
+female/teenager/gym_class_legging => female/teen/gym_class_leggings
+female/gymnastics/meet_competition_leo => female/gymnastics/competition_meet_leotard
+female/gymnastics/practice_training_leo => female/gymnastics/practice_training_leotard
+female/underwear/tshirt_bra_basics => female/underwear/t_shirt_bra_basics
+female/lingerie/toon => female/lingerie/cartoon_print
+
+# ═══════════════════════════ OUTFITS — legacy flat dirs ═══════════════════════
+# Superseded by female/business/* and female/lingerie/*; discovery skips _archive.
+business_female2 => _archive/business_female2
+female_lingerie => _archive/female_lingerie

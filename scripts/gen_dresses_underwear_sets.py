@@ -2,9 +2,9 @@
 
 Drei neue Kategorien, alle im Everyday-Register statt Editorial:
 
-female/dresses_heels/  — Kleider und Röcke, die Bein zeigen, mit Absatz.
+female/dress_with_heels/  — Kleider und Röcke, die Bein zeigen, mit Absatz.
                           Nicht nur fancy: Büro, Kirche, Diner, Mall, BBQ.
-female/dresses_flats/  — Kleider und Röcke ohne Absatz: bedeckte Beine,
+female/dress_with_flats/  — Kleider und Röcke ohne Absatz: bedeckte Beine,
                           Strumpfhosen, Sneaker, Ballerinas. Zuhause, Einkauf,
                           School-Run, Büro in flach.
 female/underwear/      — Alltagsunterwäsche, bewusst überwiegend non-fancy:
@@ -167,7 +167,7 @@ def _set(top, bottom, footwear, outerwear, headwear, accessories, bag,
 
 SETS: dict[str, dict[str, dict[str, str]]] = {
     # ═══════════════ zeigt Bein + High Heels ═══════════════
-    "female/dresses_heels": {
+    "female/dress_with_heels": {
         "office_dress_heels": _set(
             top=NONE_STUB,
             bottom="""knee-length sheath dress | 0.8 | 0.4-0.8 | ponte,polyester
@@ -273,7 +273,7 @@ faux fur short jacket | 0.25 | 0.3-0.7 | polyester""",
             bag=HEELS_BAG, fabrics=DRESS_FABRICS, prints=DRESS_PRINTS),
     },
     # ═══════════════ Kleider/Röcke ohne Absatz ═══════════════
-    "female/dresses_flats": {
+    "female/dress_with_flats": {
         "office_dress_flats": _set(
             top=NONE_STUB,
             bottom="""midi shirt dress with sheer tights | 0.7 | 0.3-0.7 | cotton,viscose
@@ -397,7 +397,7 @@ waffle knit robe untied | 0.3 | 0.0-0.4 | waffle knit""",
             headwear=UNDERWEAR_HEADWEAR, accessories=UNDERWEAR_ACCESSORIES,
             bag=UNDERWEAR_BAG, fabrics=UNDERWEAR_FABRICS,
             prints=UNDERWEAR_PRINTS),
-        "tshirt_bra_basics": _set(
+        "t_shirt_bra_basics": _set(
             top="""smooth t-shirt bra | 0.85 | 0.0-0.5 | microfiber
 seamless wireless bra | 0.6 | 0.0-0.5 | seamless knit
 molded-cup everyday bra | 0.55 | 0.0-0.5 | microfiber,modal

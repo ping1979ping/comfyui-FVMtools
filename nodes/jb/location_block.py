@@ -41,7 +41,7 @@ _HARMONY_TYPES = ["auto", "analogous", "complementary", "split_complementary",
 
 def _location_set_choices() -> list[str]:
     sets = get_available_location_sets()
-    return sets or ["indoor/everyday_us/family_living_room_tv", "outdoor/everyday_us/subdivision_sidewalk", "indoor/everyday_de/kitchen_cooking"]
+    return sets or ["indoor/american_everyday_scene/family_living_room_with_tv", "outdoor/american_everyday_scene/subdivision_sidewalk", "indoor/german_everyday_scene/kitchen_while_cooking"]
 
 
 class FVM_JB_LocationBlock:

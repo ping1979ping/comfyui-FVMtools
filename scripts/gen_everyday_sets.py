@@ -230,8 +230,8 @@ phone kept under sleeve | 0.35 | 0.1-0.3 | -""",
 # ── Location sets ────────────────────────────────────────────────────────
 
 LOCATION_SETS: dict[str, dict[str, dict[str, str]]] = {
-    "indoor/everyday_de": {
-        "kitchen_cooking": {
+    "indoor/german_everyday_scene": {
+        "kitchen_while_cooking": {
             "background": """plain white kitchen wall tiles | 1.0 | 0.5-0.9 | glossy square tiles with grout
 kitchen wall cupboards in light wood | 0.9 | 0.4-0.8 | laminate fronts with simple handles
 window over the sink | 0.75 | 0.2-0.5 | plain glass with roller blind""",
@@ -275,7 +275,7 @@ morning with the light on | 0.85 | - | -
 evening before bed | 0.6 | - | -""",
             "weather": """no weather visible indoors | 0.9 | - | -""",
         },
-        "living_room_sofa": {
+        "living_room_with_sofa": {
             "background": """plain painted living room wall | 1.0 | 0.5-0.9 | flat emulsion in off-white
 shelf with books and photos | 0.85 | 0.3-0.6 | mismatched spines
 window with curtains half open | 0.7 | 0.2-0.5 | plain lined curtains""",
@@ -297,7 +297,7 @@ morning light across the floor | 0.7 | - | -""",
             "weather": """rain against the window | 0.5 | - | -
 overcast light outside | 0.7 | - | -""",
         },
-        "supermarket_aisle_de": {
+        "german_supermarket_aisle": {
             "background": """long supermarket shelving aisle | 1.0 | 0.6-1.0 | packed shelves with price rails
 chiller cabinets along the wall | 0.8 | 0.4-0.8 | glass doors with condensation
 promotional signs overhead | 0.7 | 0.2-0.5 | printed cardboard""",
@@ -391,7 +391,7 @@ open machine door | 0.6 | 0.1-0.2 | rubber seal""",
             "weather": """no weather visible | 0.9 | - | -""",
         },
     },
-    "outdoor/everyday_de": {
+    "outdoor/german_everyday_scene": {
         "apartment_balcony": {
             "background": """facade of the opposite block | 1.0 | 0.5-0.9 | rendered wall with small windows
 balcony railing | 0.95 | 0.3-0.7 | painted steel bars
@@ -413,7 +413,7 @@ early morning shade | 0.7 | - | -""",
 light drizzle | 0.4 | - | -
 cold clear air | 0.5 | - | -""",
         },
-        "bus_stop_de": {
+        "german_bus_stop": {
             "background": """bus shelter with glass panels | 1.0 | 0.4-0.8 | scratched perspex
 street with parked cars | 0.9 | 0.4-0.8 | tarmac with kerbs
 row of houses across the road | 0.7 | 0.3-0.6 | rendered facades""",
@@ -472,7 +472,7 @@ overcast morning | 0.8 | - | -""",
             "weather": """mild and overcast | 0.8 | - | -
 sunny with a light breeze | 0.7 | - | -""",
         },
-        "playground_de": {
+        "german_playground": {
             "background": """playground with climbing frame | 1.0 | 0.5-0.9 | weathered timber and rope
 hedge and trees around the edge | 0.85 | 0.3-0.6 | patchy foliage
 apartment blocks beyond | 0.6 | 0.2-0.5 | rendered facades""",

@@ -564,7 +564,7 @@ The following 40 outfit sets are included. Each set contains curated garment lis
 | `general_male` | All-purpose, full range | Male | 0.0-1.0 |
 | `business_female_skirt` | Business with skirts only (legs visible) | Female | 0.5-1.0 |
 | `business_female_dress` | Business dresses | Female | 0.5-1.0 |
-| `business_female2` | Office, corporate, professional | Female | 0.5-1.0 |
+| `_archive/_archive/business_female2` | Office, corporate, professional | Female | 0.5-1.0 |
 | `business_male` | Office, corporate, professional | Male | 0.5-1.0 |
 | `casual_female` | Everyday relaxed wear | Female | 0.0-0.4 |
 | `casual_male` | Everyday relaxed wear | Male | 0.0-0.4 |
@@ -599,7 +599,7 @@ The following 40 outfit sets are included. Each set contains curated garment lis
 | `sheer_business_female` | Business with sheer/visible bra tops | Female | 0.5-0.9 |
 | `sheer_casual_female` | Casual with sheer/visible bra tops | Female | 0.0-0.4 |
 | `sheer_evening_female` | Evening with sheer/visible bra tops | Female | 0.3-0.8 |
-| `female_lingerie` | Lingerie, bras, bodysuits, robes, stockings | Female | 0.0-0.6 |
+| `_archive/_archive/female_lingerie` | Lingerie, bras, bodysuits, robes, stockings | Female | 0.0-0.6 |
 
 ---
 

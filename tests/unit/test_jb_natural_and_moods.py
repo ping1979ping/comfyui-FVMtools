@@ -95,8 +95,8 @@ class TestNoneGarmentStub:
 
     @pytest.mark.parametrize("outfit_set", [
         "female/business/dress",
-        "female/dresses_heels/office_dress_heels",
-        "female/dresses_flats/home_house_dress",
+        "female/dress_with_heels/office_dress_heels",
+        "female/dress_with_flats/home_house_dress",
         "female/underwear/everyday_cotton",
     ])
     def test_stub_never_reaches_the_prompt(self, outfit_set):
@@ -106,7 +106,7 @@ class TestNoneGarmentStub:
             assert " none" not in f" {r['outfit_prompt']} ", r["outfit_prompt"]
 
     def test_records_path_drops_the_stub_too(self):
-        rec = generate_outfit_records(3, outfit_set="female/dresses_heels/office_dress_heels",
+        rec = generate_outfit_records(3, outfit_set="female/dress_with_heels/office_dress_heels",
                                       style_preset="general", formality=0.5)
         for g in rec["garments"].values():
             assert not _is_none_garment(g["name"])
@@ -260,7 +260,7 @@ class TestPaletteOverrides:
 class TestLocationOverrides:
     """Element-Overrides + palette:-Zeile am Location Block."""
 
-    SET = "indoor/everyday_us/family_living_room_tv"
+    SET = "indoor/american_everyday_scene/family_living_room_with_tv"
 
     @staticmethod
     def parse(text):
@@ -332,7 +332,7 @@ class TestLocationOverrides:
 class TestNightAtmosphereSync:
     """Nacht-Zeitzug darf keine Tageslicht-Ambient-Phrase behalten."""
 
-    SET = "outdoor/beach_variants/sandy_beach_private"
+    SET = "outdoor/beach_or_pool_spot/private_sandy_beach"
 
     @staticmethod
     def build(**extra):

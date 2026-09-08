@@ -77,8 +77,8 @@ damp mild air | 0.7 | - | -"""
 
 
 SETS: dict[str, dict[str, dict[str, str]]] = {
-    "indoor/everyday_de": {
-        "kitchen_cooking": {
+    "indoor/german_everyday_scene": {
+        "kitchen_while_cooking": {
             "background": """plain white kitchen wall tiles | 1.0 | 0.5-0.9 | glossy square tiles with grout
 kitchen wall cupboards in light wood | 0.9 | 0.4-0.8 | laminate fronts with simple handles
 window above the sink | 0.8 | 0.2-0.5 | plain glass with a roller blind
@@ -137,7 +137,7 @@ steam catching the window light | 0.55 | 0.1-0.25 | drifting vapour""",
             "time_of_day": INDOOR_TIME,
             "weather": INDOOR_WEATHER,
         },
-        "living_room_sofa": {
+        "living_room_with_sofa": {
             "background": """plain painted living room wall | 1.0 | 0.5-0.9 | flat emulsion in off-white
 shelf with books and photos | 0.85 | 0.3-0.6 | mismatched spines
 window with curtains half open | 0.8 | 0.2-0.5 | plain lined curtains
@@ -255,7 +255,7 @@ hair clip held between the lips | 0.35 | 0.02-0.08 | worn plastic clip""",
             "time_of_day": INDOOR_TIME,
             "weather": INDOOR_WEATHER,
         },
-        "supermarket_aisle_de": {
+        "german_supermarket_aisle": {
             "background": """long supermarket shelving aisle | 1.0 | 0.6-1.0 | packed shelves with price rails
 chiller cabinets along the wall | 0.8 | 0.4-0.8 | glass doors with condensation
 promotional signs overhead | 0.7 | 0.2-0.5 | printed cardboard
@@ -333,7 +333,7 @@ muddy footprints on the floor | 0.35 | - | -
 bright sun at the sliding doors | 0.4 | - | -""",
         },
     },
-    "outdoor/everyday_de": {
+    "outdoor/german_everyday_scene": {
         "apartment_balcony": {
             "background": """facade of the opposite block | 1.0 | 0.5-0.9 | rendered wall with small windows
 balcony railing across the view | 0.95 | 0.3-0.7 | painted steel bars
@@ -393,7 +393,7 @@ towel shaken out over the railing | 0.4 | 0.1-0.3 | snapping fabric""",
             "time_of_day": OUTDOOR_TIME,
             "weather": OUTDOOR_WEATHER,
         },
-        "bus_stop_de": {
+        "german_bus_stop": {
             "background": """bus shelter with glass panels | 1.0 | 0.4-0.8 | scratched perspex
 street with parked cars | 0.9 | 0.4-0.8 | tarmac with kerbs
 row of houses across the road | 0.75 | 0.3-0.6 | rendered facades
@@ -511,7 +511,7 @@ hair blown across the face | 0.4 | 0.05-0.2 | loose strands""",
             "time_of_day": OUTDOOR_TIME,
             "weather": OUTDOOR_WEATHER,
         },
-        "playground_de": {
+        "german_playground": {
             "background": """playground with a climbing frame | 1.0 | 0.5-0.9 | weathered timber and rope
 hedge and trees around the edge | 0.85 | 0.3-0.6 | patchy foliage
 apartment blocks beyond | 0.65 | 0.2-0.5 | rendered facades

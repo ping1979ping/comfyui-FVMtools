@@ -5,13 +5,13 @@ möglichst NICHTS mit Aufschrift gibt. Text-Encoder wie Krea 2 rendern jedes
 erwähnte Schild, Poster oder Etikett als lesbaren (meist kaputten) Text ins
 Bild; diese Sets vermeiden deshalb Beschriftungen schon auf Datenebene.
 
-indoor/private_spaces_us   parking_garage_level, home_garage_interior,
-                           spare_room_boxes, office_stairwell,
+indoor/private_space   parking_garage_level, home_garage,
+                           spare_room_full_of_boxes, office_stairwell,
                            office_supply_room, store_stockroom,
-                           school_gym_storage
-outdoor/private_spaces_us  mall_parking_lot_far_corner,
+                           school_gym_storage_room
+outdoor/private_space  far_corner_of_a_mall_parking_lot,
                            parking_garage_roof_deck, side_yard_between_houses,
-                           backyard_behind_the_shed, office_courtyard_quiet,
+                           backyard_behind_the_shed, quiet_office_courtyard,
                            loading_dock_after_hours, school_back_field
 
 Der Validator prüft zusätzlich zur Standard-Kuration eine Signage-Banlist
@@ -86,7 +86,7 @@ puddles shivering in the wind | 0.45 | - | -"""
 
 SETS: dict[str, dict[str, dict[str, str]]] = {
     # ═════════════════════════════ INDOOR ═════════════════════════════
-    "indoor/private_spaces_us": {
+    "indoor/private_space": {
         "parking_garage_level": {
             "background": """rows of square concrete columns | 1.0 | 0.5-0.9 | board-formed grey concrete
 low concrete ceiling with pipe runs | 0.9 | 0.3-0.6 | sprinkler and conduit lines
@@ -146,7 +146,7 @@ child's hand held crossing the deck | 0.4 | 0.05-0.15 | short quick steps""",
             "time_of_day": INDOOR_UTILITY_TIME,
             "weather": INDOOR_UTILITY_WEATHER,
         },
-        "home_garage_interior": {
+        "home_garage": {
             "background": """workbench along the back wall | 1.0 | 0.4-0.7 | scarred plywood top
 pegboard of hanging hand tools | 0.85 | 0.25-0.5 | outlines of missing tools
 parked car under a film of dust | 0.6 | 0.3-0.6 | dulled paint
@@ -205,7 +205,7 @@ paint can pried with a flathead | 0.4 | 0.05-0.12 | rim crack""",
             "time_of_day": INDOOR_UTILITY_TIME,
             "weather": INDOOR_UTILITY_WEATHER,
         },
-        "spare_room_boxes": {
+        "spare_room_full_of_boxes": {
             "background": """plain cardboard boxes stacked to shoulder height | 1.0 | 0.4-0.7 | taped seams
 spare bed under a dust sheet | 0.7 | 0.3-0.55 | draped ghost shape
 closet with sliding doors half open | 0.6 | 0.25-0.5 | crammed rail visible
@@ -441,7 +441,7 @@ pallet corner nudged square | 0.45 | 0.05-0.15 | boot tap""",
             "time_of_day": INDOOR_UTILITY_TIME,
             "weather": INDOOR_UTILITY_WEATHER,
         },
-        "school_gym_storage": {
+        "school_gym_storage_room": {
             "background": """crash mats stacked chest high | 1.0 | 0.4-0.7 | blue vinyl slabs
 ball bins of every code | 0.85 | 0.25-0.5 | rubber and leather spheres
 cone stacks leaning like towers | 0.7 | 0.15-0.35 | faded orange spirals
@@ -502,8 +502,8 @@ sneeze from the chalk drift | 0.4 | 0.03-0.1 | dusty cloud""",
         },
     },
     # ═════════════════════════════ OUTDOOR ═════════════════════════════
-    "outdoor/private_spaces_us": {
-        "mall_parking_lot_far_corner": {
+    "outdoor/private_space": {
+        "far_corner_of_a_mall_parking_lot": {
             "background": """empty far corner of the lot | 1.0 | 0.5-0.9 | faded stall stripes
 light poles spaced down the rows | 0.8 | 0.15-0.4 | twin heads on tapered masts
 mall roofline low on the horizon | 0.6 | 0.2-0.45 | long beige band
@@ -739,7 +739,7 @@ sun found in the one open patch | 0.45 | 0.1-0.25 | face tilted up""",
             "time_of_day": OUTDOOR_QUIET_TIME,
             "weather": OUTDOOR_QUIET_WEATHER,
         },
-        "office_courtyard_quiet": {
+        "quiet_office_courtyard": {
             "background": """paved courtyard between glass wings | 1.0 | 0.5-0.8 | large format pavers
 low concrete planters of grasses | 0.8 | 0.2-0.45 | feathered clumps
 single bench facing the small tree | 0.7 | 0.15-0.35 | slatted seat
