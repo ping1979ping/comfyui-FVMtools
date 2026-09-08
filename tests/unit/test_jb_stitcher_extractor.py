@@ -84,7 +84,9 @@ def test_stitcher_array_input_appends():
         input_2='["c"]',
     )
     parsed = json.loads(raw)
-    assert parsed == {"tags": {"__inputs": ["a", "b", "c"]}}
+    # Public key on purpose: '__inputs' was dropped by the natural / sentences
+    # formats' underscore guard (see test_jb_stitcher_formats.py).
+    assert parsed == {"tags": {"inputs": ["a", "b", "c"]}}
 
 
 def test_stitcher_bare_string_input_synthetic_key():
@@ -95,7 +97,7 @@ def test_stitcher_bare_string_input_synthetic_key():
     )
     parsed = json.loads(raw)
     assert parsed["scene"]["location"] == "studio"
-    assert parsed["scene"]["__input2"] == "just a free-text fragment"
+    assert parsed["scene"]["input_2"] == "just a free-text fragment"
 
 
 def test_stitcher_loose_keys_output():

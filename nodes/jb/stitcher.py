@@ -7,10 +7,14 @@ Behavior per the user's brief:
     side auto-spawns the next slot when the previous one is connected.
   - Each connected input is parsed as JSON; objects merge into the
     title's child object via deep-merge (last-wins on scalar collision,
-    but new sub-fields are added recursively); arrays append; bare
-    strings get a synthetic key ``__inputN``.
+    but new sub-fields are added recursively); arrays append under
+    ``inputs``; bare strings land under their slot name (``input_3``).
   - Reuses ``core/smp/merge.deep_merge`` — same semantics the SMP
     Aggregator already uses.
+
+The slot keys are deliberately *not* underscore-prefixed: ``natural`` and
+``sentences`` drop every ``_``-key as generation metadata, and a prose
+fragment parked under ``__input3`` vanished from the output entirely.
 
 Outputs ``raw_json`` (strict) and ``string`` (chosen format).
 """
@@ -22,24 +26,32 @@ import copy
 try:
     from ...core.jb.serialize import (
         ALL_FORMATS,
+        SENTENCES,
         emit,
         emit_strict_json,
         parse_input,
     )
+    from ...core.jb.sentences import emit_sentences
     from ...core.smp.merge import deep_merge
 except ImportError:  # pragma: no cover
     from core.jb.serialize import (
         ALL_FORMATS,
+        SENTENCES,
         emit,
         emit_strict_json,
         parse_input,
     )
+    from core.jb.sentences import emit_sentences
     from core.smp.merge import deep_merge
 
 
 # Maximum number of dynamic optional input slots we declare on the Python
 # side. The JS layer only shows / connects as many as the user needs.
 MAX_INPUTS = 24
+
+# Bucket for array inputs. Public (no underscore) so the natural / sentences
+# formats keep the content; see module docstring.
+ARRAY_KEY = "inputs"
 
 
 class FVM_JB_Stitcher:
@@ -59,8 +71,10 @@ class FVM_JB_Stitcher:
         "Wraps multiple JSON fragments under a single top-level title.\n\n"
         "Each input is parsed as JSON; objects deep-merge into the title's\n"
         "child object (same-level scalar leaves: last input wins; new\n"
-        "sub-fields underneath are added recursively). Arrays append.\n"
-        "Bare strings get a synthetic '__inputN' key.\n\n"
+        "sub-fields underneath are added recursively). Arrays append\n"
+        "under 'inputs'. Bare strings keep their slot name (input_3).\n\n"
+        "output_format 'sentences' writes prose and puts the title in\n"
+        "front: 'character_1: The scene takes place ...'.\n\n"
         "Connect input_1 → the next input slot auto-spawns."
     )
 
@@ -68,7 +82,12 @@ class FVM_JB_Stitcher:
     def INPUT_TYPES(cls):
         required = {
             "title":         ("STRING", {"default": "character_1"}),
-            "output_format": (list(ALL_FORMATS), {"default": "loose_keys"}),
+            "output_format": (list(ALL_FORMATS), {"default": "loose_keys",
+                              "tooltip": "natural / sentences: prose for Krea 2 "
+                              "and Qwen encoders (sentences = full sentences "
+                              "with lead-ins, title prepended). loose_keys / "
+                              "pretty_json / compact_json: structured, for "
+                              "Ideogram 4 style JSON prompting."}),
         }
         optional = {f"input_{i}": ("STRING", {"forceInput": True})
                     for i in range(1, MAX_INPUTS + 1)}
@@ -92,16 +111,28 @@ class FVM_JB_Stitcher:
             if isinstance(parsed, dict):
                 merged = deep_merge(merged, parsed)
             elif isinstance(parsed, list):
-                # Append into a synthetic '__inputs' array — keeps non-merging
+                # Append into the shared array bucket — keeps non-merging
                 # array data accessible without clobbering a dict-merge case.
-                merged.setdefault("__inputs", [])
-                merged["__inputs"].extend(copy.deepcopy(parsed))
+                # If a merged fragment already used that key for something
+                # else, the array goes to its own slot key instead.
+                bucket = merged.get(ARRAY_KEY)
+                if bucket is None:
+                    merged[ARRAY_KEY] = copy.deepcopy(parsed)
+                elif isinstance(bucket, list):
+                    bucket.extend(copy.deepcopy(parsed))
+                else:
+                    merged[f"input_{idx}"] = copy.deepcopy(parsed)
             else:
-                # Scalar / non-JSON string — store under a synthetic key.
-                merged[f"__input{idx}"] = parsed
+                # Scalar / non-JSON string — store under its slot name.
+                merged[f"input_{idx}"] = parsed
 
         title_str = (title or "").strip() or "untitled"
         wrapped = {title_str: merged}
 
-        return (emit_strict_json(wrapped, indent=2),
-                emit(wrapped, output_format))
+        if output_format == SENTENCES:
+            # The title is a label (often a LoRA trigger), not a fact about
+            # the image — it goes in front instead of becoming a sentence.
+            string_out = emit_sentences(merged, prefix=f"{title_str}: ")
+        else:
+            string_out = emit(wrapped, output_format)
+        return (emit_strict_json(wrapped, indent=2), string_out)

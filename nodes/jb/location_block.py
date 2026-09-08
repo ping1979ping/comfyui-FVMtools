@@ -80,6 +80,11 @@ class FVM_JB_LocationBlock:
                 "output_format":   (list(ALL_FORMATS), {"default": "loose_keys",
                                     "tooltip": "natural: plain prose, no keys and no "
                                     "metadata — use this for Krea 2 / Qwen text encoders.\n"
+                                    "sentences: full sentences with lead-ins — 'The "
+                                    "scene takes place indoors, it is a family event, "
+                                    "namely the graduation party at home. The background "
+                                    "is ... The time of day is ...' — also for Krea 2 / "
+                                    "Qwen.\n"
                                     "loose_keys / pretty_json / compact_json: structured, "
                                     "for Ideogram 4 style JSON prompting."}),
             },

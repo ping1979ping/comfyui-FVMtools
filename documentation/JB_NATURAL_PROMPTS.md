@@ -34,6 +34,58 @@ the full structure, so a Stitcher downstream still sees everything.
 Rule of thumb: **`natural` for Krea 2 / Flux / SDXL, `loose_keys` for
 Ideogram 4.**
 
+### `output_format: sentences`
+
+`natural` throws the keys away. `sentences` keeps what they *mean* and writes
+one sentence per fact, so a language-reading encoder knows which phrase is
+the background and which one is the shoes:
+
+```
+The outfit is an everyday look, in the grocery run style. The top is grey
+cotton striped long sleeve top. The bottom is navy denim straight-leg jeans.
+The footwear is charcoal grey canvas simple slip-on trainers. The bag is
+taupe canvas reusable shopping bag.
+
+The scene takes place indoors, it is a family event, namely the graduation
+party at home. The background is living room wall with graduation banner,
+painted wall behind hung sign, illuminated by even overcast daylight. The
+middle ground shows framed school photos on side table, assorted picture
+frame cluster. The props include small congratulations balloon weight,
+ribbon-tied foil accent. In the foreground is plate of snacks close up,
+small appetizer selection on plate, in soft neutral grey shadows. The time
+of day is early evening lit interior. The weather is bright daylight through
+windows.
+```
+
+Everything is mechanical and deterministic (`core/jb/sentences.py`):
+
+- **Intro from the set path.** `indoor/family_event/graduation_party_at_home`
+  becomes *indoors · a family event · the graduation party at home*;
+  `female/business/dress` becomes *a business look, in the dress style*.
+  Underscores turn into spaces, the article follows the vowel rule, the
+  gender segment is dropped — the outfit string describes clothes, never a
+  person (Krea 2 paints an extra one otherwise, see [K2 Lab](K2_LAB.md) §4).
+  A leaf called `general` is omitted. Because the wording *is* the directory
+  name, set slugs follow naming rules — see `/build-location-set` and
+  `/build-outfit-set`.
+- **One lead-in per key.** `background → The background is …`,
+  `midground → The middle ground shows …`, `props → The props include …`,
+  `foreground_element → In the foreground is …`, `upper_body → The top is …`,
+  `lower_body → The bottom is …`, `accessories → The accessories are …`.
+  Unknown keys read `The <key> is …`.
+- **One-piece garments.** Dress sets keep the dress in the bottom slot. A
+  garment whose head noun is a dress, gown, jumpsuit, romper, leotard,
+  swimsuit, chemise, kaftan … is written as `The one-piece garment is …`
+  instead of `The bottom is …`. Head noun only, so *dress shirt* and
+  *bikini top* stay two-piece.
+- **Metadata is dropped**, as in `natural` — plus `formality` and
+  `color_tone`, which say nothing the garment phrases don't already say.
+- **Anything else** (Builder rows, hand-written JSON) gets one sentence per
+  branch: `The face has age twenties and eyes amber. The hair has colour blonde.`
+- **Stitcher** puts the title in front instead of turning it into a sentence:
+  `character_1: The outfit is … The scene takes place …`. Bare prose inputs
+  pass through as their own sentence.
+
 ### Fragment cleanup
 
 Independent of the format, the outfit engine no longer emits contradictory

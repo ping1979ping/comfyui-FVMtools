@@ -21,6 +21,7 @@ from .serialize import (
     rows_to_dict,
     dict_to_rows,
 )
+from .sentences import emit_sentences
 from .catalog import (
     catalog_root,
     list_categories,
@@ -35,6 +36,7 @@ __all__ = [
     "emit",
     "emit_strict_json",
     "emit_loose_keys",
+    "emit_sentences",
     "parse_input",
     "rows_to_dict",
     "dict_to_rows",

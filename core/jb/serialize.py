@@ -23,13 +23,14 @@ from __future__ import annotations
 import json
 from typing import Any, Iterable
 
-OutputFormat = str  # "pretty_json" | "compact_json" | "loose_keys" | "natural"
+OutputFormat = str  # "pretty_json" | "compact_json" | "loose_keys" | "natural" | "sentences"
 
 PRETTY_JSON   = "pretty_json"
 COMPACT_JSON  = "compact_json"
 LOOSE_KEYS    = "loose_keys"
 NATURAL       = "natural"
-ALL_FORMATS   = (PRETTY_JSON, COMPACT_JSON, LOOSE_KEYS, NATURAL)
+SENTENCES     = "sentences"   # prose with lead-ins — see core/jb/sentences.py
+ALL_FORMATS   = (PRETTY_JSON, COMPACT_JSON, LOOSE_KEYS, NATURAL, SENTENCES)
 
 # Keys that describe HOW something was generated, not WHAT is in the image.
 # JSON-native models (Ideogram 4) tolerate them; Krea 2 / Qwen reads them as
@@ -288,6 +289,9 @@ def emit(obj: Any, fmt: OutputFormat = PRETTY_JSON) -> str:
         return emit_loose_keys(obj)
     if fmt == NATURAL:
         return emit_natural(obj)
+    if fmt == SENTENCES:
+        from .sentences import emit_sentences  # local: sentences imports this module
+        return emit_sentences(obj)
     return emit_strict_json(obj, indent=2)
 
 

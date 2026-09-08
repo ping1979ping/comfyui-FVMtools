@@ -135,6 +135,10 @@ class FVM_JB_OutfitBlock:
                 "output_format":   (list(ALL_FORMATS), {"default": "loose_keys",
                                     "tooltip": "natural: plain prose, no keys and no "
                                     "metadata — use this for Krea 2 / Qwen text encoders.\n"
+                                    "sentences: full sentences with lead-ins — 'The "
+                                    "outfit is a business look, in the dress style. "
+                                    "The top is ... The footwear is ...' — also for "
+                                    "Krea 2 / Qwen; no person is mentioned.\n"
                                     "loose_keys / pretty_json / compact_json: structured, "
                                     "for Ideogram 4 style JSON prompting."}),
             },
