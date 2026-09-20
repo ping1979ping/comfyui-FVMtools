@@ -39,3 +39,7 @@ MagicMock/
 /tests/live/*.json
 /tests/live/baseline_unit.txt
 /tests/live/*_census.txt
+
+# Live-Runs erzeugen Szenen, Masken, Logs und Zwischenbilder — teils GB-weise.
+# Komplett ignorieren; die Laeufe werden bei Bedarf neu erzeugt.
+/tests/live/
