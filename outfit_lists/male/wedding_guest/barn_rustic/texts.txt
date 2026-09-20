@@ -1,0 +1,10 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Guest clothing at an American wedding carries no lettering - this file is
+# deliberately near-empty, and no name is invented. Initials on a clutch or a
+# cuff are generic monograms, not brands: the three-initial monogram (first,
+# last enlarged in the middle) is documented US etiquette, kept discreet and
+# tone-on-tone.
+"J.T.M." | 0.25 | top | white-on-white cuff monogram
+"M" | 0.20 | accessories | single embroidered initial in the pocket-square corner

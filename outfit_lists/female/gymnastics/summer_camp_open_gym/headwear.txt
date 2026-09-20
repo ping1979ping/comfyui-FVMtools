@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# scrunchie on a high ponytail | 0.90 | 0.0-0.3 | polyester,satin
+#color# messy bun with a hair tie | 0.70 | 0.0-0.3 | polyester,nylon
+#color# braided ponytail with a ribbon | 0.50 | 0.0-0.3 | polyester,satin
+#color# thin stretch headband | 0.45 | 0.0-0.3 | nylon,spandex
+#color# baseball cap | 0.30 | 0.0-0.3 | cotton,polyester
+#color# claw clip | 0.30 | 0.0-0.3 | plastic

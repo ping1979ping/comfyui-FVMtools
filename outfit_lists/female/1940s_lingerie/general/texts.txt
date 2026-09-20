@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: 1940s rayon and cotton foundation wear; brand names lived on the paper hang-tag
+# and the woven inside label -- printed slogans on underwear are anachronistic here

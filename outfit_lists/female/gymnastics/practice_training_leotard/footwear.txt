@@ -1,0 +1,10 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+bare feet | 0.95 | 0.0-0.3 | -
+#color# grip socks | 0.45 | 0.0-0.3 | cotton,nylon
+#color# ankle socks | 0.45 | 0.0-0.3 | cotton,nylon
+#color# slide sandals | 0.40 | 0.0-0.3 | rubber,plastic
+#color# low-top trainers | 0.30 | 0.0-0.3 | mesh,polyester
+#color# ankle compression sleeves | 0.30 | 0.0-0.3 | spandex,nylon
+#color# fleece-lined bootie slippers | 0.20 | 0.0-0.3 | fleece,polyester

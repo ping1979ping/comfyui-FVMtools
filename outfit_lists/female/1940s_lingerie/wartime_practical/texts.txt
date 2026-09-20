@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: rationed, mended, plain cotton and rayon utility pieces; decoration of any kind
+# is against the whole premise of the sub-setting

@@ -1,0 +1,18 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * JUICY COUTURE (Los Angeles, tracksuit launched 2001) is the defining rhinestone-
+#    lettering brand: crystal "JUICY" across the chest and back, gothic embroidery on
+#    hoodies - now fully revived as Y2K nightlife wear.
+#  * VON DUTCH, ED HARDY and BABY PHAT are the other real Y2K logo-and-rhinestone labels.
+#  * PLAYBOY runs a real licensed apparel programme with the bunny-and-wordmark print.
+#  * HOUSE OF CB is the real London going-out label.
+#  * headwear in this set is only a hair accessory or headpiece, so no entry uses it.
+"JUICY" | 0.24 | top,outerwear | crystal rhinestone script across the chest
+"JUICY COUTURE" | 0.20 | top,outerwear,bag | rhinestone gothic lettering
+"VON DUTCH" | 0.18 | top | Y2K logotype script
+"PLAYBOY" | 0.16 | top | licensed bunny-and-wordmark print
+"ED HARDY" | 0.15 | top | tattoo-style lettering with rhinestones
+"BABY PHAT" | 0.14 | top | Y2K logotype with rhinestones
+"HOUSE OF CB" | 0.14 | top,bag | small woven label lettering

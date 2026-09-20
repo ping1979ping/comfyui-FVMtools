@@ -1,0 +1,16 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * AMIRI (Los Angeles), OFF-WHITE (Milan) and PALM ANGELS (Milan) are the real labels
+#    whose small chest wordmarks appear on a black tee or fine knit under a jacket.
+#  * METALLICA is a real act; a band tee under a blazer is a standard night-out look.
+#  * HARLEY-DAVIDSON (Milwaukee, 1903) runs a licensed apparel line - the bar-and-shield
+#    back print is the classic leather-jacket graphic.
+#  * SLOT NOTE: this set's headwear.txt is empty and bag.txt holds only a small crossbody,
+#    so text is restricted to top and outerwear.
+"AMIRI" | 0.18 | top,outerwear | small tonal wordmark on the chest
+"OFF-WHITE" | 0.16 | top | industrial sans, tone-on-tone
+"PALM ANGELS" | 0.16 | top,outerwear | small block letters at the chest
+"METALLICA" | 0.15 | top | distressed band lettering under a jacket
+"HARLEY-DAVIDSON" | 0.14 | outerwear | bar-and-shield back print on leather

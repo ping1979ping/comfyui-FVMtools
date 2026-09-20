@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: faux-leather and moto styling; coated leather leggings take no screen print, and
+# luxury leather pieces carry their branding on an inside label

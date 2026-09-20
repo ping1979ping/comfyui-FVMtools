@@ -1,0 +1,19 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes:
+#  * POW! / ZAP! / BAM! / WOW! / OOPS! are generic comic-book onomatopoeia lettering,
+#    not brands. This set already carries "speech-bubble bralette" and "comic-print
+#    bralette" garments, so the lettering is the print, not an added logo.
+#  * aerie -- American Eagle Outfitters, Pittsburgh, PA; the "Cotton Logo" novelty
+#    print styles carry the lowercase wordmark on the stretch waistband.
+#  * PINK -- Victoria's Secret & Co., Reynoldsburg, OH; PINK novelty-print boyshorts
+#    carry the word PINK across the signature logo waistband.
+
+"POW!" | 0.30 | top,bottom | comic speech-bubble lettering
+"ZAP!" | 0.26 | top,bottom | comic speech-bubble lettering
+"BAM!" | 0.26 | top,bottom | comic speech-bubble lettering
+"WOW!" | 0.22 | top | comic speech-bubble lettering
+"OOPS!" | 0.18 | bottom | comic speech-bubble lettering
+"aerie" | 0.22 | bottom,top | lowercase wordmark on the stretch waistband
+"PINK" | 0.20 | bottom,top | wordmark printed across the logo waistband

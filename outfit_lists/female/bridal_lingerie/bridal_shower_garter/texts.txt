@@ -1,0 +1,23 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes -- real, verifiable lettering conventions for US bridal/bachelorette
+# intimates. No invented brands:
+#  * Hanky Panky (New York, NY) sells the signature low-rise thong with "BRIDE" in
+#    sparkly cursive and the bridal "I DO" set in all caps on the left hip in
+#    rhinestones. hankypanky.com/collections/bridal
+#  * The House of Bachelorette stocks embroidered "Bride", "Mrs." and "Wifey" panties
+#    and thongs as standard bridal-shower stock.
+#  * "BRIDE TO BE", "TEAM BRIDE", "BRIDE TRIBE", "BRIDE SQUAD" and "FUTURE MRS." are
+#    the standard silk-screened sash phrases sold by the pack for bachelorette parties.
+#  * "JUST MARRIED" and "HONEYMOON" are stock veil / tote lettering.
+# These are generic printed phrases, not protected wordmarks.
+
+"BRIDE TO BE" | 0.40 | accessories,outerwear | silk-screened sash lettering
+"TEAM BRIDE" | 0.35 | accessories,outerwear | silk-screened sash lettering
+"BRIDE TRIBE" | 0.30 | accessories,outerwear | silk-screened sash lettering
+"BRIDE SQUAD" | 0.28 | accessories,outerwear | silk-screened sash lettering
+"BRIDE" | 0.35 | bottom,outerwear | sparkly cursive across the back
+"I DO" | 0.28 | bottom | all-caps rhinestone lettering on the left hip
+"FUTURE MRS." | 0.24 | accessories,outerwear | silk-screened sash lettering
+"MRS." | 0.22 | bottom,outerwear | block lettering across the back

@@ -1,0 +1,25 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every name below is real and verifiable; nothing invented:
+#  * LACOSTE was founded 1933 by tennis champion Rene Lacoste; the crocodile
+#    polo is the tennis-shirt archetype. FILA, HEAD, WILSON and BABOLAT are
+#    real racquet / court-apparel brands.
+#  * USTA (United States Tennis Association) runs the US OPEN at Flushing
+#    Meadows; on-site branded merchandise is a major part of the event.
+#  * WIMBLEDON (The Championships, AELTC) enforces the all-white clothing rule
+#    this set is built on; its green-and-purple merchandise is real.
+#  * MERION CRICKET CLUB (Haverford, PA, founded 1865) is a real Philadelphia
+#    Main Line racquet and lawn-sports club.
+#  * CLUB CHAMPIONSHIP is a generic club-event print, not a mark.
+# Lettering stays small and embroidered here: whites stay whites.
+"LACOSTE" | 0.30 | top,outerwear | small embroidered chest mark
+"FILA" | 0.24 | top,outerwear,headwear | small embroidered chest mark
+"WILSON" | 0.22 | headwear,bag | printed block letters
+"HEAD" | 0.20 | headwear,bag | printed block letters
+"BABOLAT" | 0.15 | bag | printed block letters
+"US OPEN" | 0.25 | top,headwear,bag | condensed sans-serif event lettering
+"USTA" | 0.20 | top,headwear | small block caps
+"WIMBLEDON" | 0.20 | top,outerwear,bag | serif event lettering in green and purple
+"MERION CRICKET CLUB" | 0.22 | top,outerwear | fine serif embroidery over the heart
+"CLUB CHAMPIONSHIP" | 0.18 | top,outerwear | slim engraved serif

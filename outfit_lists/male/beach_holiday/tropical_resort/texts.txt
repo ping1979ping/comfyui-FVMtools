@@ -1,0 +1,21 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * TOMMY BAHAMA (Seattle, 1993) turned the aloha shirt into US resort wear.
+#  * REYN SPOONER is the Hawaii aloha-shirt house known for reverse-print button-downs.
+#  * HILO HATTIE was founded by Clara Haili in 1947 and became the Hawaii tourist
+#    aloha-wear label with flagship stores across the islands.
+#  * KONA BREWING CO (Kailua-Kona HI) and DUKE'S WAIKIKI are real Hawaii businesses
+#    whose logo tees are standard visitor souvenirs.
+#  * MAUI JIM is the Hawaii-founded sunglass brand.
+#  * ALOHA, MAHALO and WAIKIKI HAWAII are generic Hawaiian souvenir prints, not brands.
+"TOMMY BAHAMA" | 0.26 | top,outerwear | small woven label lettering
+"REYN SPOONER" | 0.24 | top | small woven label at the chest
+"ALOHA" | 0.24 | top,headwear | flowing hand-painted script
+"HILO HATTIE" | 0.22 | top,bag | souvenir-shop lettering, faded
+"MAHALO" | 0.20 | top | soft brush lettering
+"KONA BREWING CO" | 0.20 | top,headwear | island-brewery block letters
+"MAUI JIM" | 0.16 | top,headwear | small embroidered wordmark
+"DUKE'S WAIKIKI" | 0.16 | top,bag | vintage beach-restaurant print
+"WAIKIKI HAWAII" | 0.15 | top,headwear | souvenir arch over the chest

@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: in burlesque the lettering belongs to the marquee, the poster and the playbill --
+# never to the costume; rhinestone and plume stage wear is unlettered

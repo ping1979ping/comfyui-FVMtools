@@ -1,0 +1,23 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every name below is real and verifiable; nothing invented:
+#  * YETI, SALT LIFE, GUY HARVEY, COLUMBIA PFG, WEST MARINE and COSTA are real
+#    boating / fishing apparel brands, stocked side by side at coastal
+#    outfitters and Outer Banks tackle shops.
+#  * OBX is the real Outer Banks oval, one of the most reproduced souvenir
+#    marks in the US; NANTUCKET and BLOCK ISLAND souvenir tees are equally
+#    standard harbour-town wear.
+#  * BOSTON WHALER is a real boat builder whose branded cap is common dock wear.
+#  * CREW is a generic crew-shirt print, not a mark.
+"YETI" | 0.28 | headwear,bag,top | printed block letters
+"SALT LIFE" | 0.26 | top,headwear | screen-printed block caps
+"GUY HARVEY" | 0.22 | top | printed signature script over the artwork
+"COLUMBIA PFG" | 0.22 | top,headwear | small printed chest mark
+"WEST MARINE" | 0.18 | top,headwear | small printed block letters
+"COSTA" | 0.18 | headwear | small printed block letters
+"OBX" | 0.24 | top,headwear,bag | oval souvenir lettering
+"NANTUCKET" | 0.20 | top,bag | faded souvenir block print
+"BLOCK ISLAND" | 0.18 | top,bag | faded souvenir block print
+"BOSTON WHALER" | 0.18 | headwear,top | small embroidered chest mark
+"CREW" | 0.20 | top,outerwear | block caps across the chest

@@ -1,0 +1,22 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * DALE OF NORWAY has made knitwear in the village of Dale since 1879 and has designed
+#    the official Olympic and World Championship sweaters for the Norwegian alpine team
+#    since 1956; knit-in lettering across the chest band is its own idiom.
+#  * HELLY HANSEN (Norway, 1877), DEVOLD (Norway, 1853), FJALLRAVEN (Sweden, 1960) and
+#    66 NORTH (Iceland, 1926) are the real Nordic outdoor marks.
+#  * CHENA HOT SPRINGS is the real aurora-viewing resort outside Fairbanks, Alaska;
+#    FAIRBANKS ALASKA and TROMSO NORWAY are the two best-known aurora bases, both with
+#    heavy souvenir-apparel trade.
+#  * "ARCTIC CIRCLE" is a generic crossing-certificate souvenir print, not a brand.
+"DALE OF NORWAY" | 0.26 | top,outerwear | small woven label at the chest
+"HELLY HANSEN" | 0.22 | outerwear,top | small technical sans on the chest
+"FAIRBANKS ALASKA" | 0.20 | top,headwear,bag | souvenir arch over an aurora rule
+"FJALLRAVEN" | 0.20 | outerwear,bag | small arctic-fox label lettering
+"CHENA HOT SPRINGS" | 0.18 | top,headwear | small embroidered lodge name
+"ARCTIC CIRCLE" | 0.18 | top,bag | stamped-certificate caps
+"DEVOLD" | 0.16 | top | tiny knitted-in wordmark
+"66 NORTH" | 0.16 | outerwear,top | small icelandic label lettering
+"TROMSO NORWAY" | 0.16 | top | faded travel-shop lettering

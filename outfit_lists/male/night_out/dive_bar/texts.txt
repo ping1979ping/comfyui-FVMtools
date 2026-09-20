@@ -1,0 +1,28 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * PABST BLUE RIBBON (est. 1844) runs its own merch line (beertees.com/pabst) and is
+#    the archetypal US dive-bar beer; MILLER HIGH LIFE and LONE STAR BEER (Texas) are
+#    licensed graphic-tee staples sold by mainstream retailers.
+#  * JACK DANIEL'S (Lynchburg TN) and HARLEY-DAVIDSON (Milwaukee, 1903) run large
+#    licensed apparel programmes; the Harley bar-and-shield back print is a bar classic.
+#  * METALLICA, AC/DC, RAMONES, MOTORHEAD and WILLIE NELSON are real acts whose tour and
+#    back-print merch is the standard dive-bar tee; concert tees traditionally carry the
+#    tour city/date list on the back.
+#  * CBGB (New York, 1973-2006) and WHISKY A GO GO (Sunset Strip LA, since 1964) are real
+#    venues whose logo shirts are still in wide circulation.
+#  * Slots: top/outerwear/headwear are stocked with band tees, trucker jackets, trucker
+#    caps and beanies. bag here is only wallets and pouches, so no text is placed there.
+"PABST BLUE RIBBON" | 0.28 | top,outerwear,headwear | worn beer-brand block letters
+"MILLER HIGH LIFE" | 0.24 | top,headwear | vintage script over a crest
+"JACK DANIEL'S" | 0.22 | top,outerwear | old-label serif, cracked print
+"HARLEY-DAVIDSON" | 0.22 | top,outerwear | bar-and-shield block letters, back print
+"METALLICA" | 0.22 | top | distressed metal band lettering
+"AC/DC" | 0.20 | top,outerwear | jagged rock logotype, faded
+"RAMONES" | 0.18 | top | seal-and-arch band print
+"CBGB" | 0.18 | top,outerwear | classic club logotype, faded ink
+"MOTORHEAD" | 0.16 | top,outerwear | spiked band lettering, back print
+"WILLIE NELSON" | 0.16 | top | worn country-tour lettering with dates below
+"LONE STAR BEER" | 0.16 | top,headwear | Texas block letters on a trucker cap
+"WHISKY A GO GO" | 0.15 | top | Sunset Strip marquee lettering

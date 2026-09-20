@@ -1,0 +1,23 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * PATAGONIA (Ventura CA, 1973), THE NORTH FACE (San Francisco, 1966), REI CO-OP
+#    (Seattle, 1938) and COLUMBIA (Portland OR, 1938) are the US outdoor marks actually
+#    printed small on the chest of hiking shirts, sun hoodies and packs.
+#  * CAPE HATTERAS NATIONAL SEASHORE (NC, the first US national seashore), CAPE COD
+#    NATIONAL SEASHORE (MA) and POINT REYES NATIONAL SEASHORE (CA) are real National
+#    Park Service units; their visitor-centre souvenir tees are the coastal-hike staple.
+#  * ACADIA NATIONAL PARK (ME) and NATIONAL PARK SERVICE likewise carry real park retail.
+#  * "LEAVE NO TRACE" is the real name of the US outdoor-ethics nonprofit and one of the
+#    most-printed lines in outdoor apparel.
+"PATAGONIA" | 0.28 | top,outerwear,bag | small chest-left wordmark
+"THE NORTH FACE" | 0.25 | top,outerwear | small technical sans on the chest
+"REI CO-OP" | 0.24 | top,headwear,bag | flat embroidered wordmark
+"CAPE HATTERAS NATIONAL SEASHORE" | 0.22 | top,bag | park-service serif, faded souvenir print
+"COLUMBIA" | 0.20 | top,outerwear | small sportswear wordmark
+"CAPE COD NATIONAL SEASHORE" | 0.20 | top | vintage park-poster lettering
+"POINT REYES NATIONAL SEASHORE" | 0.18 | top,bag | park-service serif over a map outline
+"LEAVE NO TRACE" | 0.18 | top,bag | plain outdoor sans, stacked lines
+"ACADIA NATIONAL PARK" | 0.18 | top,headwear | souvenir arch over the chest
+"NATIONAL PARK SERVICE" | 0.15 | top,headwear | small arrowhead-badge lettering

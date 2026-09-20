@@ -1,0 +1,25 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every name below is real and verifiable; nothing invented:
+#  * SAUCON VALLEY COUNTRY CLUB (Bethlehem, PA) publishes its golf-shop brand
+#    list: Peter Millar, Polo Ralph Lauren, Tory Burch, G/FORE, Fairway &
+#    Greene, Greyson, Bobby Jones, Holderness & Bourne. Those marks sit small
+#    on the chest of club polos and quarter-zips.
+#  * MERION GOLF CLUB (Ardmore, PA) and OAKMONT COUNTRY CLUB (PA) are real
+#    championship clubs whose names appear on member and pro-shop wear.
+#  * TITLEIST and FOOTJOY (Acushnet) are the standard cap and glove marks.
+#  * USGA runs the U.S. OPEN; its logo wear is a country-club staple.
+#  * MEMBER-GUEST is a generic club-event print, not a mark.
+"PETER MILLAR" | 0.26 | top,outerwear | small embroidered chest mark
+"POLO RALPH LAUREN" | 0.24 | top,outerwear | small embroidered chest mark
+"TORY BURCH" | 0.20 | top,bag | small printed brand mark
+"TITLEIST" | 0.24 | headwear,bag | printed block letters
+"FOOTJOY" | 0.18 | headwear,accessories | small printed block letters
+"GREYSON" | 0.16 | top,outerwear | small embroidered chest mark
+"SAUCON VALLEY" | 0.22 | top,headwear | fine club embroidery over the heart
+"MERION GOLF CLUB" | 0.20 | top,headwear | fine club embroidery over the heart
+"OAKMONT" | 0.18 | top,headwear | fine club embroidery
+"U.S. OPEN" | 0.20 | top,headwear,bag | serif championship lettering
+"USGA" | 0.16 | headwear,top | small block caps
+"MEMBER-GUEST" | 0.22 | top,outerwear | slim serif with the year beneath

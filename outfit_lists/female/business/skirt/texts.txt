@@ -1,0 +1,10 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Deliberately near-empty: blouse-and-skirt office dress carries no slogans.
+# LONGCHAMP (Le Pliage) and TORY BURCH are real brands whose lettering appears
+# on the bag; the initials are generic monograms. Nothing invented.
+"A.C.M." | 0.25 | bag,accessories | fine engraved monogram
+"E" | 0.18 | bag,top | single initial embroidered at the cuff
+"LONGCHAMP" | 0.18 | bag | small stamped brand lettering
+"TORY BURCH" | 0.15 | bag | small printed brand mark

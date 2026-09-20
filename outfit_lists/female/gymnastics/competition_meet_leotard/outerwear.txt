@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# team warm-up jacket | 0.90 | 0.0-0.3 | polyester,nylon
+#color# zip-up team jacket | 0.80 | 0.0-0.3 | polyester,nylon
+#color# quarter-zip team pullover | 0.60 | 0.0-0.3 | polyester,fleece
+#color# team hoodie | 0.70 | 0.0-0.3 | cotton,fleece
+#color# fitted track jacket | 0.55 | 0.0-0.3 | polyester,nylon
+#color# bomber-style team jacket | 0.45 | 0.0-0.3 | polyester,nylon
+#color# fleece-lined warm-up jacket | 0.50 | 0.0-0.3 | fleece,polyester
+#color# lightweight windbreaker | 0.40 | 0.0-0.3 | nylon,polyester
+#color# oversized meet hoodie | 0.55 | 0.0-0.3 | cotton,fleece
+#color# cropped warm-up jacket | 0.35 | 0.0-0.3 | polyester,spandex

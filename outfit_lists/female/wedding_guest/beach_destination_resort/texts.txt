@@ -1,0 +1,15 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Destination weddings are the one guest setting with genuinely printed text:
+# the welcome tote and the straw-hat band. Every place name below is a real US
+# or Caribbean destination-wedding location (Cabo San Lucas, Tulum, Key West,
+# Nantucket); TEAM BRIDE and I DO CREW are the standard generic party prints.
+# No couple names appear - they would have to be invented.
+"CABO SAN LUCAS" | 0.25 | bag,headwear | breezy sans-serif caps
+"TULUM" | 0.22 | bag,headwear | breezy sans-serif caps
+"KEY WEST" | 0.20 | bag,headwear | faded souvenir block print
+"NANTUCKET" | 0.20 | bag,headwear | faded souvenir block print
+"TEAM BRIDE" | 0.22 | top,bag | bold condensed script
+"I DO CREW" | 0.18 | top,bag | brush script
+"EST. 2026" | 0.16 | bag | thin serif numerals

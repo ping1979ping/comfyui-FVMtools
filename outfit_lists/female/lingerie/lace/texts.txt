@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: classic lace bralettes, bustiers and teddies -- premium lace is unbranded on the
+# face, the label sits inside; a wordmark across lace is not a real garment

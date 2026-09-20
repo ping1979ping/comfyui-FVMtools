@@ -1,0 +1,22 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * The US ice-fishing industry is concentrated in Minnesota: CLAM OUTDOORS is in Rogers
+#    MN, VEXILAR in Bloomington MN, RAPALA in Minnetonka MN, and STRIKEMASTER (owned by
+#    Rapala) and OTTER OUTDOORS are also Minnesota companies. Their caps and hoodies are
+#    the actual clothing worn out on the ice.
+#  * LAKE OF THE WOODS and MILLE LACS are real, heavily fished US ice-fishing lakes whose
+#    resort and bait-shop souvenir apparel is everywhere in the region.
+#  * CARHARTT (Michigan, 1889) and SOREL are the real cold-weather outer marks.
+#  * "UP NORTH" is a genuine Upper-Midwest regional print, not a brand.
+"CLAM OUTDOORS" | 0.24 | top,headwear | flat cap embroidery, worn thread
+"RAPALA" | 0.24 | top,headwear | bold tackle-brand block letters
+"CARHARTT" | 0.22 | top,outerwear,headwear | square-label block letters
+"VEXILAR" | 0.20 | top,outerwear | small electronics-brand wordmark
+"LAKE OF THE WOODS" | 0.20 | top,headwear | souvenir arch over a walleye rule
+"STRIKEMASTER" | 0.18 | top,headwear | condensed auger-brand caps
+"MILLE LACS" | 0.18 | top | faded lake-town lettering
+"UP NORTH" | 0.18 | top,headwear | plain northwoods block letters
+"OTTER OUTDOORS" | 0.16 | top,bag | small embroidered wordmark
+"SOREL" | 0.15 | outerwear,top | small woven label lettering

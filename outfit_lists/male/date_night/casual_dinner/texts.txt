@@ -1,0 +1,17 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# RESTRAINED BY DESIGN: date-night dressing is deliberately plain - the smart-casual
+# convention is a quality unadorned shirt or knit, no chest graphic. Only small,
+# quiet brand marks are realistic here, so all probabilities stay low.
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * PATAGONIA (Ventura CA, 1973) - its small chest-left wordmark is the standard
+#    "quiet" logo tee in US casual dressing.
+#  * LEVI'S (San Francisco, 1853) - the red tab and small logotype on denim outerwear.
+#  * CARHARTT (Michigan, 1889) - the small square label on an overshirt or chore piece.
+#  * CHAMPION (est. 1919) - the small script wordmark on the chest of a casual top.
+"PATAGONIA" | 0.18 | top,outerwear | small chest-left wordmark
+"LEVI'S" | 0.15 | top,outerwear | small red-tab logotype
+"CARHARTT" | 0.15 | top,outerwear | small square-label lettering
+"CHAMPION" | 0.12 | top | small script wordmark on the chest

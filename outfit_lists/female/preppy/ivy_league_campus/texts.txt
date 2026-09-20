@@ -1,0 +1,29 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every name below is a real, verifiable institution or brand;
+# no invented names are used in this file:
+#  * The Ivy League is a real NCAA Division I conference: Harvard (est. 1636),
+#    Yale (1701), Princeton (1746), Penn (1740), Columbia (1754), Brown (1764),
+#    Dartmouth (1769), Cornell (1865). The arched school wordmark and the
+#    CLASS OF year line are the standard campus-bookstore prints.
+#  * CHAMPION Reverse Weave has been the collegiate sweatshirt staple for 80+
+#    years and is still sold with arched school logos in campus stores.
+#  * L.L.BEAN (Freeport, Maine) makes the BOAT AND TOTE, handcrafted in Maine
+#    since 1944 and monogrammed by the factory - a campus-bag fixture.
+#  * HEAD OF THE CHARLES REGATTA (Boston, since 1965) is the largest head race
+#    in the world; its regatta tees are standard crew-team wear.
+#  * BROOKS BROTHERS (New York, 1818) is the oldest US apparel house.
+#  * VARSITY / CREW / ROWING are generic sport prints, not marks.
+"HARVARD" | 0.30 | top,outerwear | arched collegiate block letters
+"YALE" | 0.28 | top,outerwear | arched collegiate block letters
+"PRINCETON" | 0.26 | top,outerwear | arched collegiate block letters
+"DARTMOUTH" | 0.20 | top,outerwear | arched collegiate serif
+"IVY LEAGUE" | 0.22 | top,outerwear,headwear | narrow block caps
+"CLASS OF 2027" | 0.28 | top,outerwear,headwear | collegiate serif numerals
+"VARSITY" | 0.25 | top,outerwear | tackle-twill applique letters
+"CREW" | 0.24 | top,outerwear | tall condensed collegiate caps
+"HEAD OF THE CHARLES" | 0.20 | top,outerwear | condensed regatta race lettering
+"CHAMPION" | 0.22 | top,outerwear | small woven chest label
+"L.L.BEAN" | 0.18 | bag | small printed label on the canvas tote
+"PROPERTY OF PRINCETON ATHLETICS" | 0.16 | top | small block stencil across the chest

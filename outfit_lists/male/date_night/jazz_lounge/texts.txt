@@ -1,0 +1,13 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# DELIBERATELY ALMOST EMPTY: a jazz lounge date means dress shirts, roll-necks and
+# dinner jackets. Printed clothing is genuinely rare, so only two very low-probability
+# entries, both small and discreet.
+#
+# Sourcing notes - both wordmarks are real, verifiable marks:
+#  * BLUE NOTE RECORDS is the jazz label founded 1939; its Reid Miles cover typography is
+#    licensed onto real apparel.
+#  * VILLAGE VANGUARD is the New York jazz club open since 1935 and sells logo merch.
+"BLUE NOTE RECORDS" | 0.12 | top,outerwear | album-cover lettering, small chest print
+"VILLAGE VANGUARD" | 0.10 | top | small club logotype, faded ink

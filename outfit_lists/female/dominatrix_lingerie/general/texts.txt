@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: latex and leather harness work; there is no fabric field to print on, and the only
+# real-world lettering in this niche is explicit and excluded by this list's policy

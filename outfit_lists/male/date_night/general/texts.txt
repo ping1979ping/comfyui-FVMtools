@@ -1,0 +1,12 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# RESTRAINED BY DESIGN: the generic date-night look is a plain button-down, polo or
+# knit. Text is the exception, not the rule - low probabilities throughout.
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * PATAGONIA (Ventura CA, 1973), LEVI'S (San Francisco, 1853) and CHAMPION (est. 1919)
+#    are the everyday US marks that appear small on a casual top or jacket.
+"PATAGONIA" | 0.15 | top,outerwear | small chest-left wordmark
+"LEVI'S" | 0.12 | top,outerwear | small red-tab logotype
+"CHAMPION" | 0.12 | top | small script wordmark on the chest

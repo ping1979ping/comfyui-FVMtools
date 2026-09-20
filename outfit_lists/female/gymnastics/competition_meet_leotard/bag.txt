@@ -1,0 +1,11 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# gym backpack | 0.85 | 0.0-0.3 | polyester,nylon
+#color# team duffel bag | 0.80 | 0.0-0.3 | polyester,nylon
+#color# grip bag | 0.70 | 0.0-0.3 | canvas,nylon
+#color# drawstring meet sack | 0.55 | 0.0-0.3 | nylon,polyester
+#color# monogrammed gear bag | 0.50 | 0.0-0.3 | polyester,canvas
+#color# wheeled competition bag | 0.35 | 0.0-0.3 | polyester,nylon
+#color# small crossbody sling | 0.30 | 0.0-0.3 | nylon,polyester
+#color# clear stadium tote | 0.25 | 0.0-0.3 | plastic

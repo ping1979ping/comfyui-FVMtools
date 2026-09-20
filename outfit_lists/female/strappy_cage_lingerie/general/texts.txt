@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: strap architecture -- the garment is elastic and hardware, with no fabric panel to
+# carry lettering

@@ -1,0 +1,20 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes -- every wordmark below is a real, verifiable mark and appears here
+# on the carrier it really appears on:
+#  * TRADER JOE'S -- Trader Joe's Company, Monrovia, CA. The canvas tote is screen
+#    printed with the wordmark and the house motto "A unique grocery store".
+#  * WHOLE FOODS MARKET -- Whole Foods Market, Austin, TX (Amazon). The natural canvas
+#    tote is emblazoned with "Whole Foods Market" repeated, dark green handles.
+#  * STRAND BOOK STORE / 18 MILES OF BOOKS -- Strand Book Store, 828 Broadway, New
+#    York, NY. The red oval logo and the slogan "18 miles of books" on the cotton
+#    canvas tote is the store's best known object. strandbooks.com
+#  * NIRVANA, METALLICA, RAMONES, AC/DC, LED ZEPPELIN, THE ROLLING STONES -- licensed
+#    band tees are ordinary mainstream retail (Old Navy, Abercrombie, Urban
+#    Outfitters), worn as fashion rather than as concert merch.
+
+"TRADER JOE'S" | 0.30 | bag | screen print on a natural canvas tote
+"A UNIQUE GROCERY STORE" | 0.20 | bag | store motto under the wordmark on a canvas tote
+"WHOLE FOODS MARKET" | 0.26 | bag | repeated green lettering on a natural canvas tote
+"THE ROLLING STONES" | 0.14 | top | licensed band-tee lettering across the chest

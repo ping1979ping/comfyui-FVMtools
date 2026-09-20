@@ -1,0 +1,12 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Business dress carries almost no lettering. Kept to generic monograms plus
+# two real marks that do appear: TUMI (the standard US business-travel case
+# brand, name on a small metal plate) and PATAGONIA, whose logo fleece was the
+# documented corporate uniform until the company dropped co-branding in 2021.
+# Nothing invented.
+"J.M.C." | 0.25 | top | discreet cuff monogram
+"C" | 0.18 | bag | single embossed initial on the case
+"TUMI" | 0.20 | bag | small metal-plate brand lettering
+"PATAGONIA" | 0.15 | outerwear | small embroidered chest mark on the vest

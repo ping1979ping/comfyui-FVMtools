@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# medal on a neck ribbon | 0.85 | 0.0-0.3 | metal,polyester
+#color# stack of medals on neck ribbons | 0.55 | 0.0-0.3 | metal,polyester
+#color# athlete credential on a lanyard | 0.55 | 0.0-0.3 | polyester,plastic
+#color# collectible level pin | 0.45 | 0.0-0.3 | metal
+#color# insulated water bottle | 0.75 | 0.0-0.3 | metal,plastic
+#color# wrist supports | 0.50 | 0.0-0.3 | leather,foam
+chalk-dusted hands | 0.45 | 0.0-0.3 | -
+athletic tape on the wrist | 0.40 | 0.0-0.3 | cotton
+#color# hair tie on the wrist | 0.55 | 0.0-0.3 | polyester,nylon
+small stud earrings | 0.35 | 0.0-0.3 | metal
+#color# phone in a grip case | 0.50 | 0.0-0.3 | plastic,rubber
+#color# team lanyard | 0.45 | 0.0-0.3 | polyester
+#color# stuffed team mascot clipped to the bag | 0.30 | 0.0-0.3 | -
+#color# trophy held in both hands | 0.25 | 0.0-0.3 | metal,plastic
+#color# embroidered level wristband | 0.45 | 0.0-0.3 | cotton,nylon

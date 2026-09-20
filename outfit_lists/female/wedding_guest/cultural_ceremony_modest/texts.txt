@@ -1,0 +1,8 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Deliberately near-empty. Real lettering in this setting would be religious or
+# script-specific and is left out on purpose rather than approximated or
+# invented. Only a neutral metallic-thread monogram remains - generic initials.
+"N.A.K." | 0.20 | bag,accessories | fine metallic-thread monogram
+"A" | 0.15 | bag | single initial in raised gold thread

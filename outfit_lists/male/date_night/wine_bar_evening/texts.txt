@@ -1,0 +1,16 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# RESTRAINED BY DESIGN: wine-bar dressing is oxford shirts and roll-necks. Only small
+# marks are realistic - a winery-tour souvenir or a quiet brand label.
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * NAPA VALLEY (CA), SONOMA COUNTY (CA) and WILLAMETTE VALLEY (OR) are real US wine
+#    regions whose tasting rooms sell logo tees and caps - the standard wine-trip souvenir.
+#  * PATAGONIA (Ventura CA, 1973) supplies the quiet small chest wordmark.
+#  * headwear here is a flat cap or beanie, which is not where a winery cap sits, and bag
+#    is wallets and phone sleeves, so both slots are left out.
+"NAPA VALLEY" | 0.16 | top | small embroidered wordmark
+"SONOMA COUNTY" | 0.14 | top | fine serif, tonal print
+"PATAGONIA" | 0.14 | top,outerwear | small chest-left wordmark
+"WILLAMETTE VALLEY" | 0.12 | top | small winery-tour lettering

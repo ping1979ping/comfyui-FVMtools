@@ -1,0 +1,21 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * BOILER ROOM (London) built a whole merch culture around a plain grotesque wordmark.
+#  * BERGHAIN (Berlin) and TRESOR (Berlin, 1991) are real clubs whose stark black-on-black
+#    shirts are the club-floor uniform.
+#  * DRUMCODE is Adam Beyer's real techno label; AWAKENINGS is the Dutch techno festival.
+#  * FABRIC (London, 1999), MINISTRY OF SOUND (London, 1991), SMARTBAR (Chicago, 1982)
+#    and MOVEMENT DETROIT are real venues/events with dated event merch.
+#  * bag in this set is a sling/harness/holster and accessories are jewellery, so text
+#    stays on top, outerwear and headwear.
+"BOILER ROOM" | 0.26 | top,outerwear | plain grotesque wordmark, small chest print
+"BERGHAIN" | 0.24 | top | stark condensed caps, black on black
+"DRUMCODE" | 0.22 | top,outerwear | hard-techno logotype
+"TRESOR" | 0.20 | top | stencil block letters
+"AWAKENINGS" | 0.20 | top,outerwear | festival print with the year
+"FABRIC" | 0.18 | top | minimal lowercase sans
+"MOVEMENT DETROIT" | 0.18 | top,headwear | event lettering with the year
+"MINISTRY OF SOUND" | 0.16 | top,outerwear | oversized back print
+"SMARTBAR CHICAGO" | 0.16 | top | small club logotype

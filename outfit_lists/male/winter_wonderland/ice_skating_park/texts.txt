@@ -1,0 +1,19 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * U.S. POND HOCKEY CHAMPIONSHIPS is the real annual tournament on LAKE NOKOMIS,
+#    Minneapolis MN (21st edition in 2025), with official merchandise sold through WOW
+#    Factor Sports. The event's own copy calls its players "rink rats".
+#  * BAUER and CCM are the two real hockey equipment brands; RIEDELL (Red Wing MN) is the
+#    real figure-skate maker.
+#  * NHL WINTER CLASSIC is the league's real outdoor game with dated licensed apparel.
+#  * ROCKEFELLER CENTER is the real New York rink with its own shop.
+"U.S. POND HOCKEY CHAMPIONSHIPS" | 0.24 | top,outerwear | distressed varsity block with the year
+"BAUER" | 0.22 | top,outerwear,bag | bold hockey-brand block letters
+"CCM" | 0.20 | top,headwear | three-letter athletic logotype
+"LAKE NOKOMIS" | 0.18 | top,headwear | small embroidered place name
+"NHL WINTER CLASSIC" | 0.18 | top,outerwear | retro varsity caps with the year
+"RINK RAT" | 0.18 | top,headwear | small patch embroidery
+"ROCKEFELLER CENTER" | 0.16 | top,bag | fine art-deco serif
+"RIEDELL" | 0.14 | bag,top | small skate-brand wordmark

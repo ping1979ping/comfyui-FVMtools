@@ -1,0 +1,26 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every name below is real and verifiable; nothing invented:
+#  * NEW YORK YACHT CLUB (1844) and ANNAPOLIS YACHT CLUB are real clubs; the
+#    burgee with the club name embroidered small on the left chest is the
+#    documented member-polo convention (e.g. Team One Newport club polos).
+#  * MOUNT GAY RUM has sponsored regattas since the early 1970s; the red cap
+#    printed with the regatta name and year is sailing's best-known collectible
+#    and marks the wearer as an established sailor.
+#  * NEWPORT BERMUDA RACE (since 1906), BLOCK ISLAND RACE WEEK and the
+#    AMERICA'S CUP are real events with real race merchandise.
+#  * SPERRY (Top-Sider, 1935), HELLY HANSEN and NAUTICA are real marine brands.
+#  * CREW in stencil caps across the back is standard yacht-crew uniform
+#    practice on professional crew polos and tees, not a brand.
+"NEW YORK YACHT CLUB" | 0.26 | top,outerwear | small chest embroidery beneath a burgee
+"ANNAPOLIS YACHT CLUB" | 0.22 | top,outerwear | small chest embroidery beneath a burgee
+"MOUNT GAY RUM" | 0.26 | headwear | printed lettering on the red regatta cap
+"NEWPORT BERMUDA RACE" | 0.24 | top,outerwear | condensed sans-serif race lettering
+"BLOCK ISLAND RACE WEEK" | 0.20 | top,headwear | condensed sans-serif race lettering
+"AMERICA'S CUP" | 0.18 | top,outerwear | serif event lettering
+"CREW" | 0.32 | top,outerwear | bold stencil caps across the back
+"SPERRY" | 0.18 | top,bag | small printed label
+"HELLY HANSEN" | 0.16 | outerwear,bag | small printed chest label
+"NAUTICA" | 0.16 | top,outerwear | small embroidered chest mark
+"NEWPORT" | 0.20 | top,headwear,bag | faded souvenir block print

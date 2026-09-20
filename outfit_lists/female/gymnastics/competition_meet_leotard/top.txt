@@ -1,0 +1,24 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Competition leotard lives in the top slot; bottom.txt carries the over-layer.
+# USAG Women's Rules & Policies: backless / racerback / spaghetti-strap leotards and
+# bare midriffs are INAPPROPRIATE ATTIRE in competition (0.20 deduction after warning),
+# so those cuts live in practice_training_leo, not here.
+
+#color# long-sleeve competition leotard | 0.95 | 0.0-0.3 | velvet,spandex,lycra
+#color# full-sleeve team leotard | 0.80 | 0.0-0.3 | velvet,spandex,lycra
+#color# sleeveless competition leotard | 0.75 | 0.0-0.3 | spandex,lycra,mystique
+#color# mock-neck competition leotard | 0.70 | 0.0-0.3 | velvet,spandex
+#color# rhinestone-studded competition leotard | 0.85 | 0.0-0.3 | velvet,spandex,holographic
+#color# crystal-covered meet leotard | 0.70 | 0.0-0.3 | velvet,mystique
+#color# team leotard with keyhole back | 0.75 | 0.0-0.3 | velvet,spandex
+#color# team leotard with a mesh-filled back | 0.70 | 0.0-0.3 | velvet,spandex
+#color# long-sleeve leotard with sheer sleeves | 0.70 | 0.0-0.3 | velvet,spandex
+#color# ombre-panel competition leotard | 0.60 | 0.0-0.3 | mystique,holographic,spandex
+#color# high-neck competition leotard | 0.55 | 0.0-0.3 | velvet,spandex
+#color# v-neck competition leotard | 0.65 | 0.0-0.3 | velvet,mystique
+#color# tank-strap competition leotard | 0.55 | 0.0-0.3 | spandex,lycra
+#color# glitter-sleeve team leotard | 0.60 | 0.0-0.3 | velvet,spandex
+#color# sublimated-print competition leotard | 0.65 | 0.0-0.3 | spandex,lycra
+#color# quarter-sleeve competition leotard | 0.45 | 0.0-0.3 | velvet,lycra
+#color# ankle-length competition unitard | 0.25 | 0.0-0.3 | spandex,lycra

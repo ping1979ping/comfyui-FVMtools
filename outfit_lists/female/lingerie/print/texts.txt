@@ -1,0 +1,24 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes:
+#  * CALVIN KLEIN -- Calvin Klein Inc. (PVH Corp), New York, NY; logo elastic band at
+#    hip and underbust ("Icon Logo Boyshort", "Modern Cotton Logo-Band Bralette").
+#  * PINK -- Victoria's Secret & Co., Reynoldsburg, OH; PINK printed across the
+#    signature logo waistband of the Cotton Logo Boyshort.
+#  * aerie -- American Eagle Outfitters, Pittsburgh, PA; lowercase wordmark on the
+#    stretch waistband of the Cotton Logo styles.
+#  * SKIMS -- SKIMS Body Inc., Los Angeles, CA; SKIMS logo detail at the elastic
+#    waistband of the underwear line.
+#  * SUNDAY / MONDAY / SATURDAY are days-of-the-week panty lettering, a long-standing
+#    US novelty convention; LOVE and XOXO are generic novelty prints. Not brands.
+
+"CALVIN KLEIN" | 0.28 | top,bottom | logo elastic band at the underbust and hip
+"PINK" | 0.28 | bottom,top | wordmark printed across the logo waistband
+"aerie" | 0.25 | bottom,top | lowercase wordmark on the stretch waistband
+"SUNDAY" | 0.20 | bottom | days-of-the-week lettering across the back
+"MONDAY" | 0.18 | bottom | days-of-the-week lettering across the back
+"SATURDAY" | 0.18 | bottom | days-of-the-week lettering across the back
+"LOVE" | 0.20 | top,bottom | small script print
+"XOXO" | 0.18 | bottom | small print at the back of the waistband
+"SKIMS" | 0.20 | bottom,top | logo detail at the elastic waistband

@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: sheer-panel evening leggings; the panels are the design and there is nothing
+# opaque to carry lettering

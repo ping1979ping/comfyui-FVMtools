@@ -1,0 +1,27 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * JACKSON HOLE Mountain Resort (Teton Village WY) runs an official resort store
+#    (retail.jacksonhole.com) selling logo tees and hoodies; CORBET'S COULOIR is its
+#    world-famous run and the Kings & Queens of Corbet's tee is a real product.
+#  * "ALTA IS FOR SKIERS" is Alta Ski Area's (UT) real slogan, printed on its own hats,
+#    shirts and stickers - Alta is one of three US areas that still bans snowboarders.
+#  * "SKI IT IF YOU CAN" is Mad River Glen's (VT) real, long-running slogan.
+#  * ASPEN SNOWMASS (CO), VAIL (CO) and KILLINGTON (VT) are real resorts with resort-store
+#    logo apparel.
+#  * BURTON (Burlington VT, 1977), PATAGONIA (Ventura CA, 1973), THE NORTH FACE (1966)
+#    and SMARTWOOL are the real brands on the chalet-deck layers.
+#  * "APRES SKI" is a generic ski-lodge print, not a brand.
+"JACKSON HOLE" | 0.28 | top,outerwear,headwear | resort-store block letters over a mountain rule
+"ALTA IS FOR SKIERS" | 0.24 | top,headwear | plain caps, resort-sticker lettering
+"ASPEN SNOWMASS" | 0.24 | top,outerwear | leaf-and-wordmark resort lettering
+"SKI IT IF YOU CAN" | 0.22 | top,outerwear | worn block letters, Mad River Glen slogan
+"PATAGONIA" | 0.22 | top,outerwear,bag | small chest-left wordmark
+"THE NORTH FACE" | 0.22 | outerwear,top | small technical sans on the chest
+"VAIL" | 0.20 | top,headwear | simple resort logotype
+"KILLINGTON" | 0.20 | top,outerwear | bold resort block letters
+"BURTON" | 0.20 | top,outerwear,bag | small snowboard-brand wordmark
+"APRES SKI" | 0.18 | top,headwear | retro seventies ski script
+"CORBET'S COULOIR" | 0.16 | top | faded run-name lettering
+"SMARTWOOL" | 0.16 | top,headwear | tiny knitted-in wordmark

@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+dowel grips on both hands | 0.85 | 0.0-0.3 | leather
+#color# wrist supports | 0.70 | 0.0-0.3 | leather,foam
+chalk-dusted hands | 0.80 | 0.0-0.3 | -
+#color# medal on a neck ribbon | 0.55 | 0.0-0.3 | metal,polyester
+athletic tape on the wrist | 0.45 | 0.0-0.3 | cotton
+#color# grip bag clipped to the wrist | 0.40 | 0.0-0.3 | canvas,nylon
+#color# team lanyard | 0.30 | 0.0-0.3 | polyester
+#color# insulated water bottle | 0.50 | 0.0-0.3 | metal,plastic
+#color# sweat towel | 0.35 | 0.0-0.3 | terry,cotton
+small stud earrings | 0.25 | 0.0-0.3 | metal
+#color# compression knee sleeve | 0.30 | 0.0-0.3 | spandex,nylon
+#color# wristbands under the grips | 0.70 | 0.0-0.3 | cotton,nylon

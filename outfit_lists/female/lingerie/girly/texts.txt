@@ -1,0 +1,20 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes:
+#  * PINK -- Victoria's Secret & Co., Reynoldsburg, OH. PINK logo boyshorts print the
+#    word PINK across the signature logo waistband.
+#  * aerie -- American Eagle Outfitters, Pittsburgh, PA. "Cotton Logo Boybrief" and
+#    "Cotton Logo Bikini" carry the lowercase wordmark on the stretch waistband.
+#  * CALVIN KLEIN -- Calvin Klein Inc. (PVH Corp), New York, NY. Logo elastic band on
+#    the bralette-and-boyshort sets.
+#  * XOXO / LOVE / SWEET / BE MINE are generic novelty-panty prints (Etsy, Walmart
+#    "underwear humor" category), not brands.
+
+"PINK" | 0.30 | bottom,top | wordmark printed across the logo waistband
+"aerie" | 0.26 | bottom,top | lowercase wordmark on the stretch waistband
+"CALVIN KLEIN" | 0.18 | top,bottom | logo elastic band at the underbust and hip
+"XOXO" | 0.25 | bottom | small print at the back of the waistband
+"LOVE" | 0.25 | top,bottom | small heart-script print
+"SWEET" | 0.20 | bottom | small print at the back of the waistband
+"BE MINE" | 0.18 | bottom | conversation-heart lettering

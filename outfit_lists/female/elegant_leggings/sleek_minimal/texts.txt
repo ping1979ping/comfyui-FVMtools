@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: the set is defined by being unadorned -- matte ponte leggings, one fine gold chain,
+# nothing printed; lettering would contradict the whole sub-setting

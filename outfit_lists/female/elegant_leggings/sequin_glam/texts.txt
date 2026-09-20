@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: sequin and metallic party leggings -- there is no flat fabric field to print on,
+# lettering across a sequin surface is an AI artifact, not a garment

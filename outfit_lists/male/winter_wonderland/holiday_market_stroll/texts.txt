@@ -1,0 +1,21 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * CHRISTKINDLMARKET CHICAGO has run at Daley Plaza since 1996 and is the largest
+#    open-air Christmas market in the US, with dated market merchandise.
+#  * BRYANT PARK WINTER VILLAGE (the Bank of America Winter Village, New York) is the real
+#    NYC holiday market; its kiosks sell apparel.
+#  * NUREMBERG CHRISTKINDLESMARKT is the original German market these US ones copy.
+#  * GLUHWEIN is the real market drink whose name is printed on the market's own mugs and
+#    merchandise.
+#  * L.L.BEAN (Freeport ME) and CARHARTT (Michigan, 1889) are the real cold-stroll marks.
+#  * "MERRY CHRISTMAS" and "HO HO HO" are generic knit-in festive prints, not brands.
+"CHRISTKINDLMARKET CHICAGO" | 0.24 | top,bag | market-logo lettering with the year
+"GLUHWEIN" | 0.22 | top,bag | hand-painted market-stall script
+"MERRY CHRISTMAS" | 0.22 | top | knit-in nordic block letters
+"BRYANT PARK WINTER VILLAGE" | 0.20 | top,bag | small event wordmark
+"HO HO HO" | 0.18 | top | bold knit-in lettering across the chest
+"NUREMBERG CHRISTKINDLESMARKT" | 0.18 | top | gothic market lettering
+"L.L.BEAN" | 0.16 | top,outerwear,bag | small script wordmark
+"CARHARTT" | 0.16 | headwear,outerwear | small embroidered cuff lettering

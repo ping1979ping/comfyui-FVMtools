@@ -1,0 +1,23 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Corporate logo-wear on the quarter-zip, vest or polo. Every name is real;
+# nothing invented:
+#  * PATAGONIA branded fleece is the documented 'Midtown uniform'; Google,
+#    JPMorgan and Morgan Stanley handed out logo vests to staff before
+#    Patagonia stopped adding corporate logos in 2021, so these are legacy
+#    pieces still in daily rotation.
+#  * VUORI, LULULEMON, UNTUCKIT and PETER MILLAR are real brands of the US
+#    smart-casual office rotation.
+#  * SALESFORCE and DELOITTE are real employers whose branded quarter-zips
+#    exist in quantity.
+#  * PRESIDENT'S CLUB is the generic US sales-award trip name printed on the
+#    giveaway quarter-zip, not a brand.
+"PATAGONIA" | 0.28 | outerwear,top | small embroidered chest mark
+"VUORI" | 0.20 | top,outerwear | small printed chest mark
+"LULULEMON" | 0.18 | top,outerwear | small printed chest mark
+"UNTUCKIT" | 0.16 | top | small woven chest label
+"PETER MILLAR" | 0.18 | top,outerwear | small embroidered chest mark
+"SALESFORCE" | 0.20 | top,outerwear | small embroidered chest mark
+"DELOITTE" | 0.18 | top,outerwear | small embroidered chest mark
+"PRESIDENT'S CLUB" | 0.20 | top,outerwear | engraved serif with the year beneath

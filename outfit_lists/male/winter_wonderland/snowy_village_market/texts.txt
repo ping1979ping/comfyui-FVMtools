@@ -1,0 +1,21 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * VERMONT COUNTRY STORE is the real "practical and hard-to-find goods" retailer in
+#    Weston and Rockingham VT - the archetypal New England village store.
+#  * KING ARTHUR BAKING CO (Norwich VT, est. 1790), CABOT CREAMERY (VT dairy co-op) and
+#    BEN & JERRY'S (Waterbury VT, 1978) are real Vermont makers with their own shops.
+#  * ACE HARDWARE and TRACTOR SUPPLY CO are the real small-town US retail chains whose
+#    caps and workwear are worn on Main Street.
+#  * CARHARTT (Michigan, 1889) and L.L.BEAN (Freeport ME) are the real outerwear marks.
+#  * STOWE VERMONT is a real village whose souvenir apparel is sold locally.
+"VERMONT COUNTRY STORE" | 0.24 | top,bag | old-fashioned shop serif
+"CARHARTT" | 0.22 | top,outerwear,headwear | square-label block letters
+"KING ARTHUR BAKING CO" | 0.20 | top,bag | heritage bakery lettering
+"ACE HARDWARE" | 0.20 | top,headwear | red block letters, small cap embroidery
+"L.L.BEAN" | 0.20 | top,outerwear,bag | small script wordmark
+"CABOT CREAMERY" | 0.18 | top,headwear | small co-op wordmark
+"BEN & JERRY'S" | 0.18 | top,bag | hand-drawn cheerful lettering
+"TRACTOR SUPPLY CO" | 0.18 | top,outerwear,headwear | worn workwear block letters
+"STOWE VERMONT" | 0.16 | top,headwear | souvenir arch over a mountain rule

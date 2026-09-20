@@ -1,0 +1,21 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Mixed preppy lettering across campus, club and harbour settings; nothing
+# invented. All marks are real: POLO RALPH LAUREN, VINEYARD VINES (Martha's
+# Vineyard, 1998), BROOKS BROTHERS (New York, 1818), LACOSTE (1933), L.L.BEAN
+# (Maine, 1912; Boat and Tote since 1944), TITLEIST. HARVARD and the IVY LEAGUE
+# are real institutions; NEW YORK YACHT CLUB (1844) is a real club. VARSITY,
+# CREW and CLASS OF 2027 are generic collegiate prints, not marks.
+"POLO RALPH LAUREN" | 0.26 | top,outerwear | small embroidered chest mark
+"VINEYARD VINES" | 0.24 | top,outerwear | small printed chest mark
+"LACOSTE" | 0.20 | top | small embroidered chest mark
+"BROOKS BROTHERS" | 0.18 | top,outerwear | small woven chest label
+"L.L.BEAN" | 0.20 | bag | small printed label on the canvas tote
+"HARVARD" | 0.22 | top,outerwear | arched collegiate block letters
+"IVY LEAGUE" | 0.18 | top,outerwear | narrow block caps
+"CLASS OF 2027" | 0.20 | top,outerwear | collegiate serif numerals
+"VARSITY" | 0.22 | top,outerwear | tackle-twill applique letters
+"CREW" | 0.20 | top,outerwear | tall condensed caps
+"NEW YORK YACHT CLUB" | 0.16 | top,outerwear | small chest embroidery beneath a burgee
+"TITLEIST" | 0.18 | headwear,bag | printed block letters

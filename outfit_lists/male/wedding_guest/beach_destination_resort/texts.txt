@@ -1,0 +1,10 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Near-empty on purpose: a male guest's linen shirt and jacket carry no text.
+# The one realistic printed item is the welcome-kit hat band or raffia tote,
+# and the place names used are real destination-wedding locations (Cabo San
+# Lucas, Key West). The cuff monogram is generic initials. Nothing invented.
+"R.C.H." | 0.25 | top | tone-on-tone cuff monogram
+"CABO SAN LUCAS" | 0.18 | bag,headwear | breezy sans-serif on the hat band
+"KEY WEST" | 0.15 | bag,headwear | faded souvenir block print

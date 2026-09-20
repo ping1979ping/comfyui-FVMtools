@@ -1,0 +1,20 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Consulting suiting carries no slogans. What is realistic on a client site,
+# all real and nothing invented:
+#  * VISITOR, CONTRACTOR and ESCORT REQUIRED are the real, generic badge-card
+#    texts on a site lanyard - this set already carries a 'visitor lanyard
+#    badge' accessory.
+#  * TUMI and BRIGGS & RILEY are the real travel-case brands of the consulting
+#    circuit; DELOITTE and ACCENTURE are real firms whose marks appear on the
+#    case and laptop sleeve rather than on the suit.
+#  * The cuff monogram is generic initials, not a brand.
+"VISITOR" | 0.30 | accessories | badge-card block lettering on the lanyard
+"CONTRACTOR" | 0.20 | accessories | badge-card block lettering
+"ESCORT REQUIRED" | 0.14 | accessories | small red badge caps
+"TUMI" | 0.22 | bag | small metal-plate brand lettering
+"BRIGGS & RILEY" | 0.15 | bag | small embossed brand lettering
+"DELOITTE" | 0.18 | bag,top | small printed brand mark
+"ACCENTURE" | 0.15 | bag | small printed brand mark
+"D.P.R." | 0.20 | top | tone-on-tone cuff monogram

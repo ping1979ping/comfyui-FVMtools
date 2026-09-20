@@ -1,0 +1,29 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# The one business setting where lettering is the norm. Every name below is a
+# real company, project, conference or documented slogan - nothing invented:
+#  * GITHUB, DOCKER, STRIPE and the KUBERNETES / LINUX open-source projects all
+#    run real swag stores; their wordmarks are the standard tee and hoodie art.
+#  * AWS RE:INVENT, KUBECON + CLOUDNATIVECON and GITHUB UNIVERSE are real
+#    conferences; every re:Invent 2024 attendee received a branded hoodie, and
+#    badge cards read SPEAKER / ATTENDEE / STAFF on the lanyard.
+#  * MAKE SOMETHING PEOPLE WANT is Y Combinator's real motto, printed on YC
+#    tees since at least 2007.
+#  * IT WORKS ON MY MACHINE and HELLO WORLD are real, mass-produced developer
+#    shirt lines sold by dozens of vendors.
+#  * PATAGONIA fleece carrying a company logo was the documented tech and
+#    finance uniform until Patagonia stopped adding corporate logos in 2021.
+"GITHUB" | 0.28 | top,outerwear,bag | small printed wordmark
+"KUBERNETES" | 0.24 | top,outerwear | small printed wordmark beside the helm mark
+"DOCKER" | 0.22 | top,outerwear | small printed wordmark
+"STRIPE" | 0.20 | top,outerwear | minimal sans-serif wordmark
+"LINUX" | 0.18 | top | plain sans-serif wordmark
+"AWS RE:INVENT" | 0.24 | top,outerwear | condensed conference lettering
+"KUBECON" | 0.20 | top,outerwear | condensed conference lettering
+"GITHUB UNIVERSE" | 0.18 | top,outerwear | condensed conference lettering
+"SPEAKER" | 0.22 | accessories | badge-card block lettering on the lanyard
+"MAKE SOMETHING PEOPLE WANT" | 0.22 | top | plain sans-serif across the chest
+"IT WORKS ON MY MACHINE" | 0.20 | top | flat sans-serif joke line
+"HELLO WORLD" | 0.22 | top | typewriter monospace
+"PATAGONIA" | 0.20 | outerwear | small embroidered chest mark on the vest

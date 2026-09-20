@@ -1,0 +1,18 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * WAFFLE HOUSE runs an official web store (shop.wafflehouse.com) selling adult apparel
+#    and tees; the yellow-block logo shirt is a genuine late-night cult item.
+#  * IN-N-OUT BURGER, DENNY'S, WHITE CASTLE, 7-ELEVEN and DUNKIN' are real US chains with
+#    licensed retro apparel lines - the 4 a.m. diner-stop uniform.
+#  * JAGERMEISTER and PABST BLUE RIBBON (est. 1844) both run real merch programmes and
+#    carry over from the bar earlier in the night.
+"WAFFLE HOUSE" | 0.26 | top,outerwear | yellow block letters, diner-sign lettering
+"IN-N-OUT BURGER" | 0.22 | top,headwear | retro fifties arrow lettering
+"DENNY'S" | 0.20 | top | red diner logotype, faded
+"PABST BLUE RIBBON" | 0.20 | top,headwear | worn beer-brand block letters
+"WHITE CASTLE" | 0.18 | top,headwear | castle-crest block letters
+"JAGERMEISTER" | 0.18 | top,outerwear | gothic label lettering
+"7-ELEVEN" | 0.16 | top | bold convenience-store numerals
+"DUNKIN'" | 0.15 | top,headwear | rounded orange-and-pink logotype

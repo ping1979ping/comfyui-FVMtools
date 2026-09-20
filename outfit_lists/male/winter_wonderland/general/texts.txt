@@ -1,0 +1,15 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * THE NORTH FACE (San Francisco, 1966), PATAGONIA (Ventura CA, 1973), COLUMBIA
+#    (Portland OR, 1938), CARHARTT (Michigan, 1889), L.L.BEAN (Freeport ME), SMARTWOOL
+#    and CANADA GOOSE are the mainstream US winter marks; each appears as a small chest
+#    wordmark, cuff label or arm patch rather than a graphic.
+"THE NORTH FACE" | 0.24 | top,outerwear | small technical sans on the chest
+"PATAGONIA" | 0.24 | top,outerwear | small chest-left wordmark
+"CARHARTT" | 0.22 | top,outerwear,headwear | square-label block letters
+"COLUMBIA" | 0.18 | outerwear,top | small sportswear wordmark
+"L.L.BEAN" | 0.18 | top,outerwear,bag | small script wordmark
+"SMARTWOOL" | 0.15 | top,headwear | tiny knitted-in wordmark
+"CANADA GOOSE" | 0.15 | outerwear | small arm-patch lettering

@@ -1,0 +1,22 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * ULTRA MUSIC FESTIVAL is the Miami electronic festival running since 1999; its dated
+#    festival tees are the standard beach-party-night graphic.
+#  * FULL MOON PARTY is the real recurring Haad Rin beach party whose UV-print tanks are
+#    sold on site and worn worldwide.
+#  * COCO BONGO and SENOR FROG'S are real beach-resort club chains selling logo shirts.
+#  * RED BULL and CORONA are real sponsors of beach and festival events, with branded
+#    merch handed out and sold on site.
+#  * MIAMI and SOUTH BEACH are real places, printed on neon souvenir wear.
+#  * bag here is a clutch/holographic mini bag and accessories are jewellery, so text is
+#    limited to top, outerwear and headwear.
+"ULTRA MUSIC FESTIVAL" | 0.26 | top,outerwear | festival print with the year beneath
+"MIAMI" | 0.24 | top,headwear | neon-outline block letters
+"FULL MOON PARTY" | 0.22 | top | glowing UV-reactive lettering
+"RED BULL" | 0.20 | top,outerwear | bold sponsor block letters
+"COCO BONGO" | 0.18 | top,headwear | club-logo caps in neon ink
+"SENOR FROG'S" | 0.18 | top | cartoon bar-chain lettering
+"CORONA" | 0.18 | top | bold beer-brand wordmark
+"SOUTH BEACH" | 0.16 | top,headwear | retro neon script

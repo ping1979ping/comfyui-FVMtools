@@ -1,0 +1,10 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Deliberately near-empty: business formalwear carries no lettering at all, and
+# no name is invented here. The only realistic text is the traditional
+# monogram - documented US shirt etiquette puts three initials no more than
+# half an inch tall on the cuff, facing outward, plus blind-debossed initials
+# on a leather case. Generic initials, not brand names.
+"E.H.W." | 0.25 | top | white-on-white cuff monogram, half an inch tall
+"H" | 0.18 | bag | single blind-debossed initial on the briefcase

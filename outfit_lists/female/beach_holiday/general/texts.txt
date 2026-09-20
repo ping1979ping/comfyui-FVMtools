@@ -1,0 +1,22 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * ROXY is Quiksilver's real women's line (launched 1990) and the default women's surf
+#    mark in US beach-town shops.
+#  * RON JON SURF SHOP (Cocoa Beach FL) is the self-titled World's Largest Surf Shop and
+#    its souvenir tee is the archetypal US beach shirt.
+#  * SALT LIFE was founded 2003 in Jacksonville Beach FL and began as a decal.
+#  * BILLABONG and O'NEILL (Santa Cruz CA, 1952) are mainstream surf marks.
+#  * FRANKIES BIKINIS (Malibu CA) and VITAMIN A (Laguna Beach CA) are real California
+#    swimwear labels; AERIE is American Eagle's real swim/lounge line.
+#  * "SURF CITY USA" is Huntington Beach CA's registered civic nickname.
+"ROXY" | 0.28 | top,outerwear,bag | small heart-logo wordmark
+"RON JON SURF SHOP" | 0.24 | top,bag | faded souvenir screen print
+"SALT LIFE" | 0.22 | top,headwear,bag | sun-faded script wordmark
+"BILLABONG" | 0.22 | top,outerwear | faded surf-brand wordmark
+"O'NEILL" | 0.18 | top,headwear | small chest-left print
+"FRANKIES BIKINIS" | 0.18 | top | small script label at the chest
+"SURF CITY USA" | 0.16 | top,headwear,bag | retro souvenir lettering
+"VITAMIN A" | 0.16 | top | tiny woven label lettering
+"AERIE" | 0.15 | top,bag | small lowercase logotype

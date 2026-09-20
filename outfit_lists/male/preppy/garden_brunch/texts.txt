@@ -1,0 +1,18 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Kept deliberately short: blouses, straw hats and basket bags in this setting
+# carry embroidery and small brand marks, not slogans.
+# Sourcing notes - every name below is real and verifiable; nothing invented:
+#  * LILLY PULITZER (Palm Beach, 1959) is the real American resort-print house;
+#    its signature script sits inside the pattern itself.
+#  * LONGWOOD GARDENS (Kennett Square, PA) runs a real Garden Shop selling
+#    branded apparel and totes, open without garden admission.
+#  * PHILADELPHIA FLOWER SHOW (Pennsylvania Horticultural Society, since 1829)
+#    runs a real Flower Show Marketplace.
+#  * KENTUCKY DERBY (Churchill Downs) is the hat-and-lettering event of the
+#    American garden-party calendar.
+"LONGWOOD GARDENS" | 0.22 | bag,headwear | fine serif on the tote panel
+"PHILADELPHIA FLOWER SHOW" | 0.18 | bag | thin serif event lettering
+"KENTUCKY DERBY" | 0.18 | headwear,bag | serif event lettering on the hat band
+"POLO RALPH LAUREN" | 0.20 | top,outerwear | small embroidered chest mark

@@ -1,0 +1,23 @@
+# format: text_content | probability | compatible_slots | font_hint
+#
+# Camp and open-gym apparel is the loudest of the four sets: camp tees, clinic shirts,
+# brand practice wear. Brand wordmarks are real (GK Elite of Reading PA, Ozone, Destira,
+# Plum Practicewear, Snowflake Designs); "GOT CHALK" and "GYMNAST CAN FLY" are real
+# TEN-O grip-bag product names.
+
+"SUMMER CAMP 2026" | 0.40 | top,outerwear | bold block letters
+"OPEN GYM" | 0.35 | top,outerwear | bold block letters
+"GYMNASTICS CAMP" | 0.32 | top,outerwear | bold block letters
+"TUMBLING" | 0.25 | top,outerwear | bold block letters
+"EAT SLEEP GYMNASTICS REPEAT" | 0.30 | top,outerwear | bold block letters
+"CHALK UP" | 0.28 | top,outerwear | bold block letters
+"GOT CHALK" | 0.22 | bag,top | bold block letters
+"GYMNAST CAN FLY" | 0.20 | bag,top | bold block letters
+"GK" | 0.35 | top,bottom | small embroidered lettering at the hip
+"PLUM" | 0.28 | top | small woven label at the hip
+"DESTIRA" | 0.25 | top,bottom | small woven label at the hip
+"OZONE" | 0.22 | top,outerwear | small embroidered lettering at the hip
+"USA GYMNASTICS" | 0.25 | top,outerwear,bag | bold block letters
+"CLINIC" | 0.20 | top,outerwear | bold block letters
+"BERKS" | 0.20 | top,outerwear,bag | varsity block
+"READING PA" | 0.18 | top,outerwear,bag | varsity block

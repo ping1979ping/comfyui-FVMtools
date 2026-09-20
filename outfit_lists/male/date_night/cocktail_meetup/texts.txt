@@ -1,0 +1,12 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# DELIBERATELY ALMOST EMPTY: satin-front shirts, turtlenecks and sport coats carry no
+# print. Only a tiny label mark is realistic, so two low-probability entries only.
+#
+# Sourcing notes - both wordmarks are real, verifiable marks:
+#  * AMIRI is Mike Amiri's Los Angeles label.
+#  * SUNSPEL is the English cotton house (est. 1860, Long Eaton) whose small woven label
+#    is the archetype of an unbranded-looking quality knit.
+"AMIRI" | 0.12 | top,outerwear | tiny tonal wordmark at the chest
+"SUNSPEL" | 0.10 | top | small woven label at the chest

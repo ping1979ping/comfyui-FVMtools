@@ -1,0 +1,31 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes -- every wordmark below is a real, verifiable mark, printed or
+# woven into the elastic band exactly where it is placed here:
+#  * CALVIN KLEIN / CK -- Calvin Klein Inc. (PVH Corp), New York, NY. The "Icon Logo
+#    Boyshort" and the "Modern Cotton Logo-Band Bralette" carry the logo embroidered
+#    into the elastic band at the hip and under the bust. calvinklein.us / QD5195.
+#  * PINK -- Victoria's Secret & Co., Reynoldsburg, OH. The PINK "Cotton Logo
+#    Boyshort" has the word PINK printed across its signature logo waistband.
+#  * aerie -- American Eagle Outfitters, Pittsburgh, PA. The "Cotton Logo Boybrief"
+#    and "Cotton Logo Bikini" carry the lowercase wordmark on the stretch waistband.
+#  * alo -- Alo Yoga, Beverly Hills / Los Angeles, CA. Lowercase custom sans wordmark;
+#    the logo intimates line prints it on the bra band and the waistband.
+#  * UNDER ARMOUR / UA -- Under Armour Inc., Baltimore, MD. The "UA Wordmark Strappy
+#    Sportlette" is defined by its wordmark-branded elastic band and straps.
+#  * GYMSHARK -- Gymshark Ltd., Solihull UK, sold throughout the US. The "Waistband
+#    Logo Leggings" repeat the gymshark wordmark all around the elasticated waistband.
+#  * SKIMS -- SKIMS Body Inc., Los Angeles, CA. The underwear line carries a SKIMS
+#    logo detail at the elastic waistband. skims.com/collections/underwear
+#  * NIKE -- Nike Inc., Beaverton, OR. The Indy / Pro bras carry Swoosh-taping
+#    branding on the elasticated underband ("Indy Dri-FIT Swoosh Taping Sports Bra").
+# No invented names in this file -- every entry is a real, checkable mark.
+
+"alo" | 0.30 | top,bottom,outerwear | lowercase wordmark printed across the waistband
+"GYMSHARK" | 0.26 | bottom | wordmark repeated around the elasticated waistband
+"UNDER ARMOUR" | 0.24 | top | wordmark on the elastic underband
+"UA" | 0.20 | top,outerwear | small wordmark at the chest
+"CALVIN KLEIN" | 0.15 | top | logo elastic band at the ribcage
+"CK" | 0.12 | top | small logo band at the ribcage
+"NIKE" | 0.22 | top,bottom | Swoosh-taping wordmark on the elastic band

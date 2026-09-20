@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: vintage pinup stage wear -- polka dot, cherry print and ribbon; the lettering of
+# the era sat on the show poster, not on the garment

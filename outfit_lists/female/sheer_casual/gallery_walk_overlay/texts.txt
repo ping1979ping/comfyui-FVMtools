@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: minimalist gallery styling -- structured leather totes and art-print (not lettered)
+# tees; this is the one sheer_casual sub-set with no lettered carrier

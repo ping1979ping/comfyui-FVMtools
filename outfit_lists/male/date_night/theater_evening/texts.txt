@@ -1,0 +1,13 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# DELIBERATELY ALMOST EMPTY: this set is tuxedo shirts, wing-tip collars and chesterfield
+# coats. Lettering on the clothing itself is effectively nonexistent, so the two entries
+# here sit mostly on the carried item (a program folio), not on a garment.
+#
+# Sourcing notes - both wordmarks are real, verifiable marks:
+#  * PLAYBILL is the real US theatre-program publisher; its yellow-and-black logo appears
+#    on the program every theatregoer carries, and on licensed folios and merch.
+#  * LINCOLN CENTER is the real New York performing-arts complex with its own shop.
+"PLAYBILL" | 0.12 | bag | small yellow-and-black logotype on a program folio
+"LINCOLN CENTER" | 0.08 | top,bag | fine institutional serif, tonal

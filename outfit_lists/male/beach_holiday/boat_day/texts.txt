@@ -1,0 +1,28 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * MOUNT GAY RUM red regatta caps are handed out only to sailors who complete one of
+#    the 200+ Mount Gay-sponsored regattas per year; the tradition started with charter
+#    skippers racing in Newport RI in the early 1970s. It is THE sailing cap.
+#  * NEWPORT BERMUDA RACE (since 1906) and BLOCK ISLAND RACE WEEK are real US ocean
+#    races whose dated crew tees are standard summer wear on the water.
+#  * NEW YORK YACHT CLUB (est. 1844) — club burgee and name sit as small chest embroidery.
+#  * SPERRY (Top-Sider, Paul Sperry, New Haven CT 1935), NAUTICA (US nautical label,
+#    1983), HELLY HANSEN (Norway, 1877) and WEST MARINE (US boating retailer) are the
+#    sailing-wear and chandlery marks actually worn on deck.
+#  * VINEYARD VINES was founded on Martha's Vineyard MA and is the US coastal-prep mark.
+#  * BOSTON WHALER is a real US boat builder; owner caps carry the wordmark.
+#  * "CREW" is a generic crew-shirt print, not a brand.
+"MOUNT GAY RUM" | 0.30 | headwear,top | red regatta-cap embroidery, single line
+"NEWPORT BERMUDA RACE" | 0.25 | top,outerwear | screen-printed serif with the year beneath
+"NAUTICA" | 0.24 | top,outerwear | bold block logotype across the chest
+"NEW YORK YACHT CLUB" | 0.22 | top,outerwear | small embroidered chest text in navy thread
+"SPERRY" | 0.22 | top,headwear | small woven wordmark
+"HELLY HANSEN" | 0.20 | outerwear,top | small technical sans on the chest
+"VINEYARD VINES" | 0.20 | top,headwear | small embroidered script
+"BLOCK ISLAND RACE WEEK" | 0.18 | top,bag | faded event print with the year
+"CREW" | 0.18 | top,outerwear | small block letters on the left chest
+"WEST MARINE" | 0.16 | headwear,bag | flat cap embroidery
+"BOSTON WHALER" | 0.16 | headwear,top | small embroidered boat-brand wordmark
+"ANNAPOLIS MARYLAND" | 0.15 | top,headwear | souvenir arch, faded ink

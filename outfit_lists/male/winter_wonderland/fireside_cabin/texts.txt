@@ -1,0 +1,22 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * FILSON was founded in Seattle in 1897 outfitting Gold Rush prospectors and still
+#    operates there; its embroidered wordmark sits small on chore coats and packs.
+#  * CARHARTT has made workwear since 1889 (Michigan); the square label is its signature.
+#  * PENDLETON Woolen Mills (Portland OR) labels read "Since 1863".
+#  * L.L.BEAN (Freeport, Maine), WOOLRICH (Pennsylvania) and DULUTH TRADING CO are real
+#    US heritage outdoor/workwear houses.
+#  * RED WING SHOES (Red Wing MN, 1905) and STORMY KROMER (Ironwood MI) supply the real
+#    cap marks; YETI (Austin TX) and STANLEY (est. 1913) the real cabin-gear marks.
+"FILSON" | 0.26 | top,outerwear,bag | small embroidered wordmark in cream thread
+"CARHARTT" | 0.26 | top,outerwear,headwear | square-label block letters
+"PENDLETON" | 0.24 | top,outerwear | woven label lettering at the chest
+"L.L.BEAN" | 0.22 | top,outerwear,bag | small script wordmark
+"WOOLRICH" | 0.18 | top,outerwear | small heritage label lettering
+"DULUTH TRADING CO" | 0.18 | top,headwear | worn workwear block letters
+"RED WING SHOES" | 0.16 | headwear,top | trucker-cap patch embroidery
+"YETI" | 0.16 | headwear,bag | flat embroidered wordmark
+"STORMY KROMER" | 0.15 | headwear,top | small heritage cap label
+"STANLEY" | 0.14 | top,bag | hammertone-green label lettering

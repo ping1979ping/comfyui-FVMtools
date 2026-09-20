@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: Vegas showgirl costume is crystal and ostrich plume -- there is no flat surface
+# for lettering, and the name goes on the marquee

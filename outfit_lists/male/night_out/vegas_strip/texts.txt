@@ -1,0 +1,23 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * "WELCOME TO FABULOUS LAS VEGAS" is the wording of the real 1959 Betty Willis sign on
+#    Las Vegas Blvd and the single most-reproduced Vegas souvenir graphic.
+#  * CAESARS PALACE, BELLAGIO, GOLDEN NUGGET, CIRCA LAS VEGAS and BINION'S are real Las
+#    Vegas casino resorts whose gift shops sell logo tees; FREMONT STREET is the real
+#    downtown entertainment district.
+#  * "WHAT HAPPENS HERE STAYS HERE" is the Las Vegas Convention and Visitors Authority's
+#    real 2003 campaign line, printed on souvenir shirts all over the Strip.
+#  * VEGAS GOLDEN KNIGHTS is the city's real NHL franchise; team knitwear is common.
+#  * bag here is wallets/money clips/poker-chip cases, so no text is placed on bag; the
+#    only knit headwear is a beanie, which is where the team mark sits.
+"WELCOME TO FABULOUS LAS VEGAS" | 0.28 | top,outerwear | 1959 neon-sign lettering inside a diamond
+"CAESARS PALACE" | 0.24 | top | roman serif with a laurel rule
+"BELLAGIO" | 0.22 | top | fine italic resort script
+"WHAT HAPPENS HERE STAYS HERE" | 0.20 | top | bold campaign block letters
+"GOLDEN NUGGET" | 0.20 | top | gold marquee block letters
+"FREMONT STREET" | 0.20 | top | vintage neon-sign lettering
+"CIRCA LAS VEGAS" | 0.18 | top,outerwear | retro casino logotype
+"VEGAS GOLDEN KNIGHTS" | 0.16 | top,headwear | team block letters, gold on grey
+"BINION'S" | 0.15 | top | old-west casino serif

@@ -1,0 +1,20 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * RON JON SURF SHOP (Cocoa Beach FL) bills itself the World's Largest Surf Shop and
+#    its souvenir tee is the default US beach-holiday shirt.
+#  * SALT LIFE (founded 2003, Jacksonville Beach FL), QUIKSILVER, BILLABONG, O'NEILL
+#    (Santa Cruz CA, 1952), HURLEY and VANS (Anaheim CA, 1966) are the mainstream surf
+#    marks stocked in every US beach-town shop.
+#  * "SURF CITY USA" is Huntington Beach CA's registered nickname.
+#  * "LIFEGUARD" is a generic beach print, not a brand — no sourcing needed.
+"RON JON SURF SHOP" | 0.28 | top,bag | faded souvenir screen print
+"SALT LIFE" | 0.25 | top,headwear | sun-faded script wordmark
+"QUIKSILVER" | 0.24 | top,outerwear | sun-bleached block logotype
+"BILLABONG" | 0.22 | top | faded surf-brand wordmark
+"VANS" | 0.22 | top,headwear | worn block letters
+"O'NEILL" | 0.20 | top | small chest-left print
+"HURLEY" | 0.18 | top,outerwear | simple bold sans
+"LIFEGUARD" | 0.18 | top | bold block letters across chest and back
+"SURF CITY USA" | 0.16 | top,headwear | retro souvenir lettering

@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: 1940s pinup styling -- the lettering of that era lived on posters and nose art,
+# never on the lingerie itself

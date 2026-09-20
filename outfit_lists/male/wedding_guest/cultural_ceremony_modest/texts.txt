@@ -1,0 +1,7 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Deliberately near-empty. Real lettering in this setting would be religious or
+# script-specific and is left out on purpose rather than approximated or
+# invented. A neutral cuff monogram - generic initials - is the only entry.
+"A.S.K." | 0.20 | top | fine tone-on-tone cuff monogram

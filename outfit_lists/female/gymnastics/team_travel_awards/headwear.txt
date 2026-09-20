@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# scrunchie on a high bun | 0.90 | 0.0-0.3 | polyester,satin
+#color# team hair ribbon | 0.55 | 0.0-0.3 | polyester,satin
+#color# glitter hair bow | 0.45 | 0.0-0.3 | polyester,satin
+#color# baseball cap | 0.35 | 0.0-0.3 | cotton,polyester
+#color# thin stretch headband | 0.30 | 0.0-0.3 | nylon,spandex
+#color# knit beanie | 0.25 | 0.0-0.3 | cotton,fleece

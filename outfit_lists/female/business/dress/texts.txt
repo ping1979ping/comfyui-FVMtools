@@ -1,0 +1,12 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Deliberately near-empty: a business dress carries no lettering. The top slot
+# in this set is 'none' (the dress fills it), so entries sit on bag and
+# accessories. LONGCHAMP (Le Pliage, personalised by the maker) and TORY BURCH
+# are real brands whose lettering appears on the bag; the initials are generic
+# monograms. Nothing invented.
+"A.C.M." | 0.25 | bag,accessories | fine engraved monogram on the clasp
+"M" | 0.18 | bag | single embossed serif initial
+"LONGCHAMP" | 0.18 | bag | small stamped brand lettering
+"TORY BURCH" | 0.15 | bag | small printed brand mark

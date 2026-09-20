@@ -1,0 +1,12 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# DELIBERATELY ALMOST EMPTY: a cocktail lounge is satin-front evening shirts, roll-necks
+# and peak-lapel jackets. Printed lettering on clothing is genuinely rare here, so this
+# file carries only two very low-probability entries - both tiny tonal labels, no graphic.
+#
+# Sourcing notes - both wordmarks are real, verifiable marks:
+#  * AMIRI is Mike Amiri's Los Angeles label; its wordmark appears small on knit tops.
+#  * MEMBERS ONLY is a real US outerwear brand founded in 1975.
+"AMIRI" | 0.12 | top,outerwear | tiny tonal wordmark at the chest
+"MEMBERS ONLY" | 0.10 | outerwear | small embroidered lettering at the chest

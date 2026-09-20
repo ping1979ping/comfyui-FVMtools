@@ -1,0 +1,25 @@
+# format: text_content | probability | compatible_slots | font_hint
+#
+# Practice wear carries brand marks far more openly than a competition leotard —
+# no USAG attire rule applies outside competition. Wordmarks below are real brands:
+# GK Elite (Reading PA), Ozone, Destira, Plum Practicewear, Snowflake Designs,
+# Motionwear, Foxy's. "GYMNAST CAN FLY" and "GOT CHALK" are real TEN-O grip-bag
+# product names. Embroidered level/Xcel wristbands are a real TEN-O catalogue item.
+
+"GK" | 0.40 | top,bottom | small embroidered lettering at the hip
+"PLUM" | 0.35 | top | small woven label at the hip
+"DESTIRA" | 0.30 | top,bottom | small woven label at the hip
+"OZONE" | 0.28 | top,outerwear | small embroidered lettering at the hip
+"MOTIONWEAR" | 0.16 | top | small woven label at the hip
+"FOXY'S" | 0.16 | top | small woven label at the hip
+"SNOWFLAKE DESIGNS" | 0.14 | top,bag | small woven label
+"EAT SLEEP GYMNASTICS REPEAT" | 0.30 | top,outerwear | bold block letters
+"CHALK UP" | 0.28 | top,outerwear | bold block letters
+"GOT CHALK" | 0.22 | bag | bold block letters
+"GYMNAST CAN FLY" | 0.20 | bag | bold block letters
+"GYMNAST" | 0.25 | top,outerwear | bold block letters
+"LEVEL 8" | 0.25 | outerwear,bag,accessories | bold block letters
+"XCEL PLATINUM" | 0.20 | outerwear,bag,accessories | bold block letters
+"TEAM" | 0.30 | outerwear,top | varsity block
+"USA GYMNASTICS" | 0.25 | outerwear,bag | bold block letters
+"BERKS" | 0.18 | outerwear,bag | varsity block

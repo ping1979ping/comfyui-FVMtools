@@ -1,0 +1,15 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+rhinestone chevron | 0.85 | top | 0.0-0.3
+crystal starburst | 0.75 | top | 0.0-0.3
+sublimated ombre gradient | 0.80 | top | 0.0-0.3
+metallic side panels | 0.70 | top | 0.0-0.3
+glitter swirl | 0.65 | top | 0.0-0.3
+sparkle star pattern | 0.55 | top,outerwear | 0.0-0.3
+color-block stripe | 0.60 | top,outerwear,bottom | 0.0-0.3
+crystal shoulder yoke | 0.55 | top | 0.0-0.3
+lace overlay panel | 0.45 | top | 0.0-0.3
+galaxy foil print | 0.50 | top | 0.0-0.3
+embroidered gym logo | 0.65 | outerwear,bag | 0.0-0.3
+piped racing stripe | 0.55 | outerwear,bottom | 0.0-0.3
+american flag motif | 0.30 | top,outerwear | 0.0-0.3
+rhinestone side stripe | 0.60 | top | 0.0-0.3

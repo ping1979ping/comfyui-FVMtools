@@ -1,0 +1,26 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every name below is real and verifiable; nothing invented:
+#  * DEVON HORSE SHOW AND COUNTRY FAIR (Devon, PA) is the oldest and largest
+#    outdoor multi-breed horse show in the United States.
+#  * RADNOR HUNT RACES (Malvern, PA) is a real spring steeplechase benefiting
+#    the Brandywine Conservancy.
+#  * BRANDYWINE POLO CLUB (Toughkenamon, PA) is a real 300-acre club and one of
+#    the oldest polo organisations on the East Coast.
+#  * WINTER EQUESTRIAN FESTIVAL (Wellington, FL) is a real circuit.
+#  * USEF is the United States Equestrian Federation; U.S. POLO ASSN. is the
+#    real apparel brand of the United States Polo Association.
+#  * ARIAT, BARBOUR and CHARLES OWEN (riding helmets) are real outfitters.
+#  * The tall single numeral 1-4 on the jersey back is the real USPA position
+#    number, not an invented graphic.
+"DEVON HORSE SHOW" | 0.26 | top,outerwear,bag | serif event lettering
+"RADNOR HUNT" | 0.24 | top,outerwear | condensed serif caps
+"BRANDYWINE POLO CLUB" | 0.24 | top,bag | fine embroidered serif under a crest
+"3" | 0.30 | top | tall polo-jersey numeral across the back
+"U.S. POLO ASSN." | 0.22 | top,outerwear | small embroidered chest mark
+"USEF" | 0.16 | top,accessories | small block caps
+"ARIAT" | 0.20 | top,outerwear,accessories | small embroidered brand mark
+"BARBOUR" | 0.18 | outerwear | small woven chest label
+"CHARLES OWEN" | 0.14 | headwear | small embossed brand mark on the riding cap
+"WINTER EQUESTRIAN FESTIVAL" | 0.16 | top,outerwear | condensed sans-serif event lettering

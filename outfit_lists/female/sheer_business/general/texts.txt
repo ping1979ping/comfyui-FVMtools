@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: office wear -- sheer-panel blouses over wool suiting; no US workplace dress code
+# tolerates a printed slogan, and the sheer panel itself cannot carry one

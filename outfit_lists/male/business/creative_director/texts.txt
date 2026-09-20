@@ -1,0 +1,23 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Studio, gallery and type-nerd lettering on the tee under the jacket.
+# Every name below is a real organisation, brand, typeface or slogan:
+#  * PANTONE is the real colour-standards company; the chip-card tee is a real
+#    merchandise line. AIGA (American Institute of Graphic Arts, 1914) and
+#    ADOBE are real design institutions.
+#  * ART BASEL, MoMA and the WHITNEY run real shops selling exhibition tees
+#    and totes.
+#  * HELVETICA (Haas / Monotype) and COMIC SANS are real typefaces whose names
+#    are printed on real type-nerd shirts.
+#  * PRINT IS NOT DEAD is the real slogan of the People of Print publishing
+#    house, in print since 2010.
+"PANTONE" | 0.25 | top,bag | colour-chip card lettering
+"AIGA" | 0.20 | top,bag | wide-tracked minimal sans-serif
+"ART BASEL" | 0.22 | top,bag | thin modern serif
+"MoMA" | 0.20 | top,bag | tight uppercase grotesk
+"WHITNEY" | 0.16 | top,bag | wide-tracked minimal sans-serif
+"HELVETICA" | 0.20 | top | oversized type-specimen lettering
+"COMIC SANS" | 0.14 | top | deliberate casual-script joke lettering
+"PRINT IS NOT DEAD" | 0.20 | top,outerwear | letterpress-style slab serif
+"ADOBE" | 0.16 | top | plain sans-serif wordmark

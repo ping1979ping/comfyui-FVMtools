@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: silk charmeuse chemises and morning robes; the only real lettering in this niche
+# is a monogrammed initial, which is not a slogan

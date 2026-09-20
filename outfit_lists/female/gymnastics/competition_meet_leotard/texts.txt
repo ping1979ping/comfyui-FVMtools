@@ -1,0 +1,30 @@
+# format: text_content | probability | compatible_slots | font_hint
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * A full-text search of the USA Gymnastics 2026-27 Women's Rules & Policies finds NO
+#    restriction on logos, advertising, club names or lettering on a competition leotard.
+#    The only branding clause covers shorts/tights: "No embellishments allowed (small
+#    manufacturer's branding allowed)". So gym names in rhinestones on the leo are normal,
+#    and brand marks on the shorts stay small.
+#  * GK Elite (legally Elite Sportswear, L.P.) is headquartered in READING, PA and is the
+#    USAG Official Provider for the Development and Xcel programs through 2029. Its mark
+#    sits small on the left hip of the leotard.
+#  * Pennsylvania is USAG Region 7 (DE, MD, NJ, PA, VA, WV).
+
+"GK" | 0.45 | top,bottom | small embroidered lettering at the hip
+"GK ELITE" | 0.30 | outerwear,bag | small embroidered lettering
+"OZONE" | 0.30 | top,outerwear,bag | small embroidered lettering at the hip
+"ALPHA FACTOR" | 0.16 | top,outerwear | small embroidered lettering at the hip
+"DESTIRA" | 0.16 | top,bottom | small woven label at the hip
+"SNOWFLAKE DESIGNS" | 0.12 | outerwear,bag | small embroidered lettering
+"USA GYMNASTICS" | 0.35 | top,outerwear,bag | bold block letters
+"USAG" | 0.25 | outerwear,bag | bold block letters
+"REGION 7" | 0.25 | top,outerwear | arched varsity block
+"LEVEL 8" | 0.30 | outerwear,bag | bold block letters
+"LEVEL 9" | 0.22 | outerwear,bag | bold block letters
+"XCEL PLATINUM" | 0.25 | outerwear,bag | bold block letters
+"XCEL DIAMOND" | 0.20 | outerwear,bag | bold block letters
+"2026 PA STATE CHAMPIONSHIPS" | 0.28 | top,outerwear | arched varsity block
+"PENNSYLVANIA" | 0.25 | top,outerwear | arched varsity block
+"BERKS" | 0.20 | outerwear,bag | varsity block
+"READING PA" | 0.20 | outerwear,bag | varsity block

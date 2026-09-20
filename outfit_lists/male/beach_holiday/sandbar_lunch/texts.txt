@@ -1,0 +1,21 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * FLORA-BAMA is the legendary honky-tonk beach bar on the Florida/Alabama line at
+#    Perdido Key; it runs its own store (florabamastore.com) selling logo tees and caps.
+#  * SLOPPY JOE'S BAR, Key West FL, runs an official apparel shop (sloppyjoes.com) and
+#    its circle-logo tee is one of the classic Key West souvenirs.
+#  * MARGARITAVILLE and LANDSHARK LAGER are Jimmy Buffett's real brands and the default
+#    beach-bar merch across the US Gulf and Keys.
+#  * CORONA is the beach-bar beer whose branded tees and caps are sold on site.
+#  * TOMMY BAHAMA (founded Seattle 1993) is the US island-resort wear label.
+#  * "OYSTER BAR" and "KEY WEST FLORIDA" are generic sign/souvenir prints, not brands.
+"FLORA-BAMA" | 0.28 | top,headwear | worn beach-bar screen print
+"SLOPPY JOE'S BAR KEY WEST" | 0.26 | top,bag | classic souvenir circle-logo lettering
+"MARGARITAVILLE" | 0.22 | top,headwear | retro island script
+"LANDSHARK LAGER" | 0.20 | top,headwear | beach-bar block letters
+"CORONA" | 0.20 | top | bold beer-brand wordmark
+"TOMMY BAHAMA" | 0.18 | top,outerwear | small woven label lettering
+"KEY WEST FLORIDA" | 0.18 | top,headwear | souvenir arch with a palm rule
+"OYSTER BAR" | 0.15 | top | hand-painted sign lettering

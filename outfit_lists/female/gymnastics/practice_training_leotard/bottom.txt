@@ -1,0 +1,13 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# gymnastics shorts | 0.95 | 0.0-0.3 | spandex,nylon
+#color# fitted training shorts | 0.85 | 0.0-0.3 | spandex,polyester
+#color# high-waist bike shorts | 0.70 | 0.0-0.3 | spandex,nylon
+none | 0.80 | 0.0-1.0 | -
+#color# fitted leggings | 0.55 | 0.0-0.3 | spandex,nylon
+#color# cropped training leggings | 0.45 | 0.0-0.3 | spandex,polyester
+#color# loose sweatshorts | 0.35 | 0.0-0.3 | cotton,fleece
+#color# warm-up pants | 0.35 | 0.0-0.3 | polyester,nylon
+#color# fleece joggers | 0.30 | 0.0-0.3 | fleece,cotton
+#color# scrunch-waist shorts | 0.40 | 0.0-0.3 | spandex,nylon

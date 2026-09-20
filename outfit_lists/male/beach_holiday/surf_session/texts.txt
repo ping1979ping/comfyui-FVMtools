@@ -1,0 +1,27 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * RON JON SURF SHOP, Cocoa Beach FL, is the self-titled "World's Largest Surf Shop"
+#    (52,000 sq ft flagship); its logo tee is the archetypal US beach souvenir shirt.
+#  * QUIKSILVER (US HQ Huntington Beach CA), BILLABONG, O'NEILL (founded Santa Cruz CA
+#    1952 by Jack O'Neill, the wetsuit pioneer), RIP CURL, HURLEY (Costa Mesa CA),
+#    BODY GLOVE and VANS (Anaheim CA, 1966) are the standard surf-shop wall brands.
+#  * SALT LIFE was founded 2003 in Jacksonville Beach FL and started life as a decal.
+#  * CHANNEL ISLANDS is Al Merrick's Santa Barbara CA board shaper label.
+#  * "SURF CITY USA" is Huntington Beach CA's registered civic nickname.
+#  * Slots: this set has top/outerwear/headwear/bag stocked with tees, hoodies, caps,
+#    trucker caps, board socks and gear duffels — all normal carriers for a shop wordmark.
+#    accessories here is jewellery and zinc paint, so no text is placed there.
+"RON JON SURF SHOP" | 0.30 | top,outerwear,bag | faded souvenir screen print arched over the chest
+"QUIKSILVER" | 0.28 | top,outerwear | sun-bleached block logotype
+"O'NEILL" | 0.25 | top,headwear | small chest-left print, cracked ink
+"BILLABONG" | 0.24 | top,outerwear | faded surf-brand wordmark
+"VANS" | 0.22 | top,headwear | worn block letters
+"SALT LIFE" | 0.22 | top,headwear,bag | sun-faded script wordmark
+"HURLEY" | 0.20 | top | simple bold sans across the chest
+"RIP CURL" | 0.18 | top,outerwear | condensed caps, washed-out print
+"SURF CITY USA" | 0.18 | top,headwear | retro seventies souvenir lettering
+"CHANNEL ISLANDS" | 0.15 | top,bag | small shaper-label lettering
+"BODY GLOVE" | 0.15 | top | worn wetsuit-brand block letters
+"COCOA BEACH FLORIDA" | 0.15 | top | souvenir arch with a palm rule

@@ -1,0 +1,18 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Guest attire itself carries no lettering. What does carry printed text at an
+# American wedding weekend is the party and welcome merchandise - generic,
+# mass-produced phrases rather than brands, so no sourcing and no invention:
+#  * TEAM BRIDE, BRIDE SQUAD and I DO CREW are the standard bachelorette /
+#    bridal-party shirt prints sold by every US party-apparel vendor.
+#  * The canvas welcome tote printed with CHEERS, WELCOME, MR & MRS or the
+#    wedding year is standard American wedding-weekend practice.
+# No couple or venue names appear here - they would have to be invented.
+"TEAM BRIDE" | 0.28 | top,bag | bold condensed script
+"BRIDE SQUAD" | 0.22 | top,bag | bold condensed script
+"I DO CREW" | 0.22 | top,bag | brush script
+"CHEERS" | 0.20 | bag | loose brush script
+"WELCOME" | 0.18 | bag | small letterpress-style serif
+"MR & MRS" | 0.18 | bag | fine script
+"EST. 2026" | 0.16 | bag,outerwear | thin serif numerals

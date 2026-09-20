@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: gala and red-carpet dressing; illusion bodices, beading and satin gowns never
+# carry printed lettering

@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: suede and plush knitwear; suede takes no screen print and the set has no
+# athletic carrier for a wordmark

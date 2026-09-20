@@ -1,0 +1,22 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# RESTRAINED BUT NOT EMPTY: gallery dressing is minimal and monochrome, and a printed
+# slogan would be wrong - but the museum-shop tee and tote are a real, specific genre in
+# exactly this crowd. Every entry is an institution wordmark set flat and small.
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * MoMA (Museum of Modern Art, New York) runs the MoMA Design Store; its wordmark tee
+#    and tote are genuine retail items.
+#  * THE MET (Metropolitan Museum of Art, New York), WHITNEY (Whitney Museum of American
+#    Art), GUGGENHEIM, TATE (London) and CENTRE POMPIDOU (Paris) all run museum shops
+#    selling logo apparel and canvas totes.
+#  * ART BASEL is the real art fair; its plain black merch is widely worn in the scene.
+#  * bag in this set includes a canvas tote, which is the natural carrier for these.
+"MoMA" | 0.22 | top,bag | flat grotesque caps, single line
+"THE MET" | 0.20 | top,bag | institutional serif wordmark
+"WHITNEY" | 0.18 | top,bag | plain sans logotype
+"GUGGENHEIM" | 0.16 | top | modernist caps across the chest
+"ART BASEL" | 0.16 | top,bag | plain black grotesque, small print
+"TATE" | 0.14 | top,bag | soft gradient wordmark
+"CENTRE POMPIDOU" | 0.14 | top | thin architectural caps

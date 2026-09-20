@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+embroidered gym logo | 0.85 | outerwear,bag,top | 0.0-0.3
+arched team lettering | 0.80 | outerwear,top | 0.0-0.3
+meet souvenir graphic | 0.75 | top | 0.0-0.3
+piped racing stripe | 0.70 | outerwear,bottom | 0.0-0.3
+color-block stripe | 0.65 | outerwear,bottom,top | 0.0-0.3
+sparkle star pattern | 0.55 | top,outerwear | 0.0-0.3
+rhinestone chevron | 0.55 | top,outerwear | 0.0-0.3
+sublimated ombre gradient | 0.55 | top | 0.0-0.3
+embroidered first name | 0.70 | outerwear,bag | 0.0-0.3
+state outline graphic | 0.45 | top,outerwear | 0.0-0.3
+podium and medal graphic | 0.40 | top | 0.0-0.3
+american flag motif | 0.35 | top,outerwear | 0.0-0.3
+tonal camo print | 0.30 | bottom,outerwear | 0.0-0.3

@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: dressed-up leggings worn with silk blouses, blazers and stilettos -- a printed
+# wordmark on satin or leather leggings reads as fake merch, not as clothing

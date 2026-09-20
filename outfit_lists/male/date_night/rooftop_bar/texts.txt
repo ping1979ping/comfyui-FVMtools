@@ -1,0 +1,18 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# RESTRAINED BY DESIGN: a rooftop-bar date is smart casual - resort shirts, fine knits,
+# unstructured blazers. Chest graphics are out of place, so entries are few and small.
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * APEROL (Padua, 1919) runs a large branded-merch programme; the Aperol Spritz is the
+#    rooftop drink and its branded tee is genuinely worn at these venues.
+#  * THE STANDARD is a real hotel group whose rooftop bars sell logo apparel.
+#  * PATAGONIA (Ventura CA, 1973) and LEVI'S (San Francisco, 1853) supply the small,
+#    quiet chest marks typical of this dress code.
+#  * headwear here is only a panama or flat cap, which does not carry brand text, so no
+#    entry uses the headwear slot.
+"APEROL" | 0.16 | top | bold orange wordmark
+"PATAGONIA" | 0.15 | top,outerwear | small chest-left wordmark
+"THE STANDARD" | 0.14 | top | plain grotesque wordmark
+"LEVI'S" | 0.12 | top,outerwear | small red-tab logotype

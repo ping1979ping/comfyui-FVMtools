@@ -1,0 +1,19 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * APEROL (Padua, 1919) and VEUVE CLICQUOT run large branded-merch programmes - caps,
+#    totes and umbrellas are standard rooftop-bar furniture and giveaway wear.
+#  * CASAMIGOS is the real Clooney/Gerber tequila brand with heavy party-merch presence.
+#  * THE STANDARD is a real hotel group whose rooftop bars sell logo apparel.
+#  * 230 FIFTH (New York), PERCH (Los Angeles) and SKYLARK (New York) are real rooftop
+#    bars.
+#  * bag in this set includes a summer tote and woven beach bag, which is where a drinks
+#    brand tote realistically appears.
+"APEROL" | 0.24 | top,headwear,bag | bold orange wordmark
+"CASAMIGOS" | 0.22 | top,outerwear | small embroidered wordmark
+"VEUVE CLICQUOT" | 0.20 | top,headwear,bag | yellow-label serif
+"THE STANDARD" | 0.20 | top,outerwear | plain grotesque wordmark
+"230 FIFTH" | 0.16 | top | small rooftop-bar lettering
+"SKYLARK" | 0.15 | top | slim neon-outline caps
+"PERCH" | 0.15 | top | minimal lowercase sans

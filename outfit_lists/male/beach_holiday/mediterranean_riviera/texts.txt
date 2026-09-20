@@ -1,0 +1,24 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# DELIBERATELY RESTRAINED: Riviera dressing is polished — breton knits, linen, panama
+# hats. Big chest prints do not belong here, so probabilities are low and every entry
+# is a small woven/embroidered label or a discreet place name.
+#
+# Sourcing notes — every wordmark below is a real, verifiable mark:
+#  * VILEBREQUIN was founded 1971 in Saint-Tropez by Fred Prysquel; it is the Riviera
+#    swim/resort house and its wordmark sits small on the chest.
+#  * ORLEBAR BROWN was launched 2007 in London by Adam Brown (tailored swim shorts).
+#  * SAINT JAMES is the French Normandy knitwear house whose mariniere is the original
+#    breton striped shirt; its mark is a small woven label.
+#  * CLUB 55 is the real Pampelonne beach club at Ramatuelle/Saint-Tropez, open since
+#    1955; its plain logo tee and tote are among the best-known beach-club souvenirs.
+#  * SAINT-TROPEZ, PORTOFINO and CAPRI are real Riviera/Ligurian/Tyrrhenian resort towns
+#    whose names are printed on local resort-shop knitwear and totes.
+"VILEBREQUIN" | 0.22 | top,bag | small embroidered wordmark in tonal thread
+"CLUB 55" | 0.20 | top,bag,headwear | simple sans wordmark, sun-faded
+"ORLEBAR BROWN" | 0.18 | top | tiny woven label lettering
+"SAINT JAMES" | 0.18 | top,outerwear | small woven label at the chest
+"SAINT-TROPEZ" | 0.18 | top,headwear | slim retro serif
+"PORTOFINO" | 0.15 | top | fine serif, single line
+"CAPRI" | 0.15 | top,bag | minimal caps, tonal print

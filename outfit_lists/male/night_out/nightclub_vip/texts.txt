@@ -1,0 +1,20 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# DELIBERATELY RESTRAINED: VIP-table dressing is fitted black shirts, luxe knits and
+# unstructured blazers. Visible text here is only a designer logotype worn small, so
+# probabilities stay low and nothing is a big chest graphic.
+#
+# Sourcing notes - every wordmark below is a real, verifiable mark:
+#  * AMIRI (Mike Amiri, Los Angeles), RHUDE (Rhuigi Villasenor, Los Angeles), PALM ANGELS
+#    (Francesco Ragazzi, Milan), OFF-WHITE (Virgil Abloh, Milan) and CASABLANCA (Charaf
+#    Tajer, Paris) are the real labels whose wordmarks appear on club-night pieces.
+#  * LIV is the real nightclub at the Fontainebleau Miami Beach; its logo merch exists.
+#  * MEMBERS ONLY is a real US outerwear brand (est. 1975), not an invented slogan.
+"AMIRI" | 0.22 | top,outerwear | small tonal wordmark on the chest
+"RHUDE" | 0.20 | top | slim serif logotype
+"PALM ANGELS" | 0.18 | top,outerwear | small block letters at the chest
+"OFF-WHITE" | 0.16 | top | industrial sans, tone-on-tone
+"CASABLANCA" | 0.16 | top | fine luxury serif
+"LIV MIAMI" | 0.15 | top | small club wordmark in gold foil
+"MEMBERS ONLY" | 0.14 | top,outerwear | small embroidered lettering at the chest

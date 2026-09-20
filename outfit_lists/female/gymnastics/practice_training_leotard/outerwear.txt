@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+#color# team hoodie | 0.85 | 0.0-0.3 | cotton,fleece
+#color# zip-up warm-up jacket | 0.75 | 0.0-0.3 | polyester,nylon
+#color# oversized crewneck sweatshirt | 0.70 | 0.0-0.3 | cotton,fleece
+#color# quarter-zip pullover | 0.55 | 0.0-0.3 | polyester,fleece
+#color# cropped hoodie | 0.60 | 0.0-0.3 | cotton,fleece
+#color# fitted track jacket | 0.50 | 0.0-0.3 | polyester,nylon
+#color# lightweight windbreaker | 0.35 | 0.0-0.3 | nylon,polyester
+#color# fleece-lined zip jacket | 0.45 | 0.0-0.3 | fleece,polyester
+#color# open flannel shirt | 0.25 | 0.0-0.3 | cotton
+#color# puffer vest | 0.30 | 0.0-0.3 | nylon,polyester

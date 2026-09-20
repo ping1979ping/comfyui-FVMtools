@@ -1,0 +1,27 @@
+# format: text_content | probability | compatible_slots | font_hint
+#
+# Meet-day travel and awards: the warm-up jacket and the backpack carry the loud text,
+# not the leotard. Verified conventions — gym name arched over "GYMNASTICS" on the back
+# of the jacket; the athlete's FIRST name embroidered on the chest or the backpack
+# (GK Elite sells its Classic Backpack personalised with "team logos and athlete names").
+# Meet-souvenir tees are handed out at the meet itself; USAG's own Meet Organization
+# Guidelines tell organisers to run an event-apparel pro shop on site.
+
+"GYMNASTICS" | 0.50 | outerwear,top,bag | arched varsity block
+"TEAM" | 0.40 | outerwear,top | varsity block
+"USA GYMNASTICS" | 0.35 | outerwear,top,bag | bold block letters
+"REGION 7" | 0.30 | outerwear,top | arched varsity block
+"2026 PA STATE CHAMPIONSHIPS" | 0.35 | top,outerwear | arched varsity block
+"STATE QUALIFIER" | 0.25 | top,outerwear | bold block letters
+"LEVEL 8" | 0.30 | outerwear,bag,accessories | bold block letters
+"LEVEL 9" | 0.22 | outerwear,bag,accessories | bold block letters
+"XCEL PLATINUM" | 0.25 | outerwear,bag,accessories | bold block letters
+"XCEL GOLD" | 0.22 | outerwear,bag,accessories | bold block letters
+"PENNSYLVANIA" | 0.28 | top,outerwear | arched varsity block
+"BERKS COUNTY" | 0.22 | outerwear,bag | varsity block
+"READING PA" | 0.22 | outerwear,bag | varsity block
+"GK ELITE" | 0.20 | outerwear,bag | small embroidered lettering
+"OZONE" | 0.20 | outerwear,bag | small embroidered lettering
+"EMMA" | 0.30 | outerwear,bag | embroidered script
+"AVA" | 0.22 | outerwear,bag | embroidered script
+"OLIVIA" | 0.20 | outerwear,bag | embroidered script

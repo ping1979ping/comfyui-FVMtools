@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+tie-dye wash | 0.90 | top,bottom,outerwear | 0.0-0.3
+rainbow ombre | 0.75 | top | 0.0-0.3
+smiley face graphic | 0.65 | top,outerwear | 0.0-0.3
+galaxy sublimation print | 0.65 | top,bottom | 0.0-0.3
+tropical floral print | 0.60 | top | 0.0-0.3
+neon color-block | 0.70 | top,bottom | 0.0-0.3
+cheetah spot print | 0.55 | top,bottom | 0.0-0.3
+star scatter print | 0.55 | top,outerwear | 0.0-0.3
+watercolor gradient | 0.55 | top | 0.0-0.3
+camp roster graphic on the back | 0.50 | top,outerwear | 0.0-0.3
+holographic shine finish | 0.45 | top | 0.0-0.3
+mesh insert panel | 0.45 | top | 0.0-0.3
+tonal camo print | 0.35 | top,bottom,outerwear | 0.0-0.3

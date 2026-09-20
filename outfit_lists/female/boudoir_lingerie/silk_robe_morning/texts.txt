@@ -1,0 +1,5 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: morning silk robes -- a real one carries at most an embroidered monogram, and a
+# single initial is not a text entry

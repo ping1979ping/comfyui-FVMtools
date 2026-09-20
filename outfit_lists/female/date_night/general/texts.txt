@@ -1,0 +1,12 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+#
+# DELIBERATELY ALMOST EMPTY: this set is silk camisoles, lace tops and wrap coats.
+# Evening dressing of this kind carries no printed lettering at all - the only realistic
+# text is a tiny woven label, so both entries sit at very low probability.
+#
+# Sourcing notes - both wordmarks are real, verifiable marks:
+#  * GANNI is the Copenhagen label (founded 2000) whose small woven label is typical.
+#  * REFORMATION is the Los Angeles label (founded 2009), likewise a discreet seam label.
+"GANNI" | 0.12 | top,outerwear | tiny woven label lettering
+"REFORMATION" | 0.10 | top | small woven label at the seam
