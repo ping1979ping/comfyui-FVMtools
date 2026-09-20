@@ -1,0 +1,736 @@
+{
+ "id": "fvm-batch-reality-sort",
+ "revision": 0,
+ "last_node_id": 99,
+ "last_link_id": 15,
+ "nodes": [
+  {
+   "id": 1,
+   "type": "FVM_BatchLoadImage",
+   "title": "1 · Walk the folder",
+   "pos": [
+    40,
+    120
+   ],
+   "size": [
+    400,
+    300
+   ],
+   "flags": {},
+   "order": 0,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "links": [
+      1,
+      2,
+      11,
+      14
+     ],
+     "slot_index": 0
+    },
+    {
+     "name": "mask",
+     "type": "MASK",
+     "links": null,
+     "slot_index": 1
+    },
+    {
+     "name": "source_path",
+     "type": "STRING",
+     "links": [
+      12
+     ],
+     "slot_index": 2
+    },
+    {
+     "name": "pass_dir",
+     "type": "STRING",
+     "links": [
+      4
+     ],
+     "slot_index": 3
+    },
+    {
+     "name": "fail_dir",
+     "type": "STRING",
+     "links": [
+      5
+     ],
+     "slot_index": 4
+    },
+    {
+     "name": "filename",
+     "type": "STRING",
+     "links": null,
+     "slot_index": 5
+    },
+    {
+     "name": "index",
+     "type": "INT",
+     "links": null,
+     "slot_index": 6
+    },
+    {
+     "name": "total",
+     "type": "INT",
+     "links": null,
+     "slot_index": 7
+    },
+    {
+     "name": "progress",
+     "type": "STRING",
+     "links": null,
+     "slot_index": 8
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_BatchLoadImage"
+   },
+   "widgets_values": [
+    "D:\\\\AI\\\\ComfyUI\\\\ComfyUI\\\\output\\\\2025-12-30\\\\qe-lingerie-solo3\\\\test",
+    "keep",
+    "reject",
+    "stop",
+    "name",
+    false,
+    true,
+    "default"
+   ]
+  },
+  {
+   "id": 2,
+   "type": "FVM_RealityCheck",
+   "title": "2 · Is it physically possible?",
+   "pos": [
+    500,
+    60
+   ],
+   "size": [
+    420,
+    560
+   ],
+   "flags": {},
+   "order": 1,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "link": 1
+    }
+   ],
+   "outputs": [
+    {
+     "name": "passed",
+     "type": "BOOLEAN",
+     "links": [
+      6
+     ],
+     "slot_index": 0
+    },
+    {
+     "name": "failed",
+     "type": "BOOLEAN",
+     "links": null,
+     "slot_index": 1
+    },
+    {
+     "name": "score",
+     "type": "FLOAT",
+     "links": null,
+     "slot_index": 2
+    },
+    {
+     "name": "report",
+     "type": "STRING",
+     "links": [
+      7
+     ],
+     "slot_index": 3
+    },
+    {
+     "name": "json",
+     "type": "STRING",
+     "links": null,
+     "slot_index": 4
+    },
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "links": null,
+     "slot_index": 5
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_RealityCheck"
+   },
+   "widgets_values": [
+    "http://localhost:1234/v1",
+    "qwen3-8b-vl-instruct-abliterated",
+    1,
+    0.5,
+    1,
+    0.1,
+    "median",
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    1024,
+    180,
+    0,
+    "fixed",
+    "pass"
+   ]
+  },
+  {
+   "id": 3,
+   "type": "LoadImage",
+   "title": "Reference face (the intended person)",
+   "pos": [
+    40,
+    470
+   ],
+   "size": [
+    320,
+    320
+   ],
+   "flags": {},
+   "order": 2,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      3
+     ],
+     "slot_index": 0
+    },
+    {
+     "name": "MASK",
+     "type": "MASK",
+     "links": null,
+     "slot_index": 1
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "FACE1510060.jpg",
+    "image"
+   ]
+  },
+  {
+   "id": 4,
+   "type": "PersonSelector",
+   "title": "3 · Is it the right person?",
+   "pos": [
+    500,
+    660
+   ],
+   "size": [
+    400,
+    260
+   ],
+   "flags": {},
+   "order": 3,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "current_image",
+     "type": "IMAGE",
+     "link": 2
+    },
+    {
+     "name": "reference_images",
+     "type": "IMAGE",
+     "link": 3
+    }
+   ],
+   "outputs": [
+    {
+     "name": "similarity",
+     "type": "FLOAT",
+     "links": null,
+     "slot_index": 0
+    },
+    {
+     "name": "match",
+     "type": "BOOLEAN",
+     "links": [
+      8
+     ],
+     "slot_index": 1
+    },
+    {
+     "name": "mask",
+     "type": "MASK",
+     "links": null,
+     "slot_index": 2
+    },
+    {
+     "name": "best_reference",
+     "type": "IMAGE",
+     "links": null,
+     "slot_index": 3
+    },
+    {
+     "name": "face_count",
+     "type": "INT",
+     "links": [
+      9
+     ],
+     "slot_index": 4
+    },
+    {
+     "name": "matched_face_index",
+     "type": "INT",
+     "links": null,
+     "slot_index": 5
+    },
+    {
+     "name": "report",
+     "type": "STRING",
+     "links": null,
+     "slot_index": 6
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "PersonSelector"
+   },
+   "widgets_values": [
+    0.75,
+    "max",
+    "none",
+    true,
+    0,
+    "640"
+   ]
+  },
+  {
+   "id": 5,
+   "type": "FVM_BatchRouter",
+   "title": "4 · Decide the folder",
+   "pos": [
+    980,
+    200
+   ],
+   "size": [
+    380,
+    300
+   ],
+   "flags": {},
+   "order": 4,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "pass_dir",
+     "type": "STRING",
+     "link": 4
+    },
+    {
+     "name": "fail_dir",
+     "type": "STRING",
+     "link": 5
+    },
+    {
+     "name": "gate_a",
+     "type": "BOOLEAN",
+     "link": 6
+    },
+    {
+     "name": "report_in",
+     "type": "STRING",
+     "link": 7
+    },
+    {
+     "name": "gate_b",
+     "type": "BOOLEAN",
+     "link": 8
+    },
+    {
+     "name": "count",
+     "type": "INT",
+     "link": 9
+    }
+   ],
+   "outputs": [
+    {
+     "name": "target_dir",
+     "type": "STRING",
+     "links": [
+      10
+     ],
+     "slot_index": 0
+    },
+    {
+     "name": "passed",
+     "type": "BOOLEAN",
+     "links": null,
+     "slot_index": 1
+    },
+    {
+     "name": "failed",
+     "type": "BOOLEAN",
+     "links": null,
+     "slot_index": 2
+    },
+    {
+     "name": "report",
+     "type": "STRING",
+     "links": [
+      13,
+      15
+     ],
+     "slot_index": 3
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_BatchRouter"
+   },
+   "widgets_values": [
+    "all",
+    "reality",
+    "identity",
+    "extra",
+    1,
+    1,
+    false
+   ]
+  },
+  {
+   "id": 6,
+   "type": "FVM_BatchSaveImage",
+   "title": "5 · File it away",
+   "pos": [
+    1420,
+    200
+   ],
+   "size": [
+    380,
+    260
+   ],
+   "flags": {},
+   "order": 5,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "directory",
+     "type": "STRING",
+     "link": 10
+    },
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "link": 11
+    },
+    {
+     "name": "source_path",
+     "type": "STRING",
+     "link": 12
+    },
+    {
+     "name": "report",
+     "type": "STRING",
+     "link": 13
+    }
+   ],
+   "outputs": [
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "links": null,
+     "slot_index": 0
+    },
+    {
+     "name": "saved_path",
+     "type": "STRING",
+     "links": null,
+     "slot_index": 1
+    },
+    {
+     "name": "written",
+     "type": "BOOLEAN",
+     "links": null,
+     "slot_index": 2
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_BatchSaveImage"
+   },
+   "widgets_values": [
+    "move",
+    "",
+    "keep",
+    95,
+    false,
+    true
+   ]
+  },
+  {
+   "id": 7,
+   "type": "PreviewImage",
+   "title": "Current picture",
+   "pos": [
+    980,
+    560
+   ],
+   "size": [
+    380,
+    320
+   ],
+   "flags": {},
+   "order": 6,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "images",
+     "type": "IMAGE",
+     "link": 14
+    }
+   ],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "PreviewImage"
+   },
+   "widgets_values": []
+  },
+  {
+   "id": 8,
+   "type": "PreviewAny",
+   "title": "Verdict",
+   "pos": [
+    1420,
+    520
+   ],
+   "size": [
+    380,
+    240
+   ],
+   "flags": {},
+   "order": 7,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "source",
+     "type": "*",
+     "link": 15
+    }
+   ],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "PreviewAny"
+   },
+   "widgets_values": []
+  },
+  {
+   "id": 99,
+   "type": "Note",
+   "title": "Read me first",
+   "pos": [
+    40,
+    830
+   ],
+   "size": [
+    520,
+    420
+   ],
+   "flags": {},
+   "order": 99,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "properties": {
+    "text": ""
+   },
+   "widgets_values": [
+    "Batch Tools — sort a folder of renders\n\nQueue this with a run count equal to the number of pictures (or just a big\nnumber — node 1 stops the run when the folder is done).\n\nEach run: node 1 hands out the next picture, node 2 asks the vision model\nwhether it is physically possible, node 4 checks it is the right person and\ncounts the faces, node 5 picks the folder, node 6 moves the file there.\n\nSet-up\n  • node 1 · directory: the folder to work through\n  • node 2 · needs LM Studio running with a VISION model loaded\n  • node 3 · a reference portrait of the person the batch is about\n  • node 6 · mode 'move' tidies the source folder; 'copy' leaves it intact\n\nGates in node 5 (all must pass)\n  gate_a  reality check\n  gate_b  face matches the reference (PersonSelector threshold)\n  count   exactly one face (count_min 1, count_max 1) — this alone catches\n          the duplicated-body renders\n\nMeasured on the 17-image acceptance set: 8 broken pictures rejected, 8 good\nones kept, no false alarms, twice with different seeds.\nRe-run it with tests/live/reality/pipeline_run.py --acceptance"
+   ],
+   "color": "#432",
+   "bgcolor": "#653"
+  }
+ ],
+ "links": [
+  [
+   1,
+   1,
+   0,
+   2,
+   0,
+   "IMAGE"
+  ],
+  [
+   2,
+   1,
+   0,
+   4,
+   0,
+   "IMAGE"
+  ],
+  [
+   3,
+   3,
+   0,
+   4,
+   1,
+   "IMAGE"
+  ],
+  [
+   4,
+   1,
+   3,
+   5,
+   0,
+   "STRING"
+  ],
+  [
+   5,
+   1,
+   4,
+   5,
+   1,
+   "STRING"
+  ],
+  [
+   6,
+   2,
+   0,
+   5,
+   2,
+   "BOOLEAN"
+  ],
+  [
+   7,
+   2,
+   3,
+   5,
+   5,
+   "STRING"
+  ],
+  [
+   8,
+   4,
+   1,
+   5,
+   3,
+   "BOOLEAN"
+  ],
+  [
+   9,
+   4,
+   4,
+   5,
+   4,
+   "INT"
+  ],
+  [
+   10,
+   5,
+   0,
+   6,
+   0,
+   "STRING"
+  ],
+  [
+   11,
+   1,
+   0,
+   6,
+   1,
+   "IMAGE"
+  ],
+  [
+   12,
+   1,
+   2,
+   6,
+   2,
+   "STRING"
+  ],
+  [
+   13,
+   5,
+   3,
+   6,
+   3,
+   "STRING"
+  ],
+  [
+   14,
+   1,
+   0,
+   7,
+   0,
+   "IMAGE"
+  ],
+  [
+   15,
+   5,
+   3,
+   8,
+   0,
+   "STRING"
+  ]
+ ],
+ "groups": [
+  {
+   "id": 1,
+   "title": "Walk the folder",
+   "bounding": [
+    20,
+    40,
+    450,
+    800
+   ],
+   "color": "#3f789e",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 2,
+   "title": "Judge",
+   "bounding": [
+    485,
+    0,
+    450,
+    950
+   ],
+   "color": "#8A8",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 3,
+   "title": "Decide and file",
+   "bounding": [
+    960,
+    140,
+    860,
+    760
+   ],
+   "color": "#b58b2a",
+   "font_size": 24,
+   "flags": {}
+  }
+ ],
+ "config": {},
+ "extra": {
+  "ds": {
+   "scale": 0.7,
+   "offset": [
+    80,
+    40
+   ]
+  }
+ },
+ "version": 0.4
+}
