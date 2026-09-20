@@ -80,24 +80,23 @@ app.registerExtension({
                 ctx.font = "11px Arial";
                 ctx.textAlign = "left";
 
-                const parts = this._pdInfo.split(" | ");
+                // One line per batch image ("Img i/B: ...") + batch total ("Batch: ...")
+                const lines = this._pdInfo.split("\n");
                 const lineH = 14;
                 let y = this.size[1] - 6;
 
-                for (let i = parts.length - 1; i >= 0; i--) {
-                    const part = parts[i].trim();
-                    if (part.includes("no input") || part.includes("no ref") || part.includes("skip")) {
+                for (let i = lines.length - 1; i >= 0; i--) {
+                    const line = lines[i].trim();
+                    if (line.startsWith("Batch:")) {
+                        ctx.fillStyle = "#8cf"; // cyan for the batch total (incl. CN info)
+                    } else if (line.includes("no input") || line.includes("no ref") || line.includes("skip") || line.includes("no aux")) {
                         ctx.fillStyle = "#f88";
-                    } else if (part.startsWith("Generic")) {
-                        ctx.fillStyle = "#ff8";
-                    } else if (part.includes("aux(0)") || part.includes("0 faces")) {
+                    } else if (line.includes("nothing to do") || line.includes("→ 0 refined")) {
                         ctx.fillStyle = "#888";
-                    } else if (part.startsWith("[")) {
-                        ctx.fillStyle = "#8cf"; // cyan for CN info
                     } else {
                         ctx.fillStyle = "#8f8";
                     }
-                    ctx.fillText(part, 10, y);
+                    ctx.fillText(line, 10, y);
                     y -= lineH;
                 }
                 ctx.restore();

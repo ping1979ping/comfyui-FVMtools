@@ -14,6 +14,7 @@ import comfy.samplers
 import folder_paths
 
 from .utils.mask_utils import is_mask_empty, split_mask_to_components
+from .utils.detailer_report import detail_parts_individually, build_status_text
 from .utils.inpaint_pipeline import inpaint_slot
 from .utils.detail_daemon import DD_DEFAULTS
 from .utils.lora_utils import is_z_image_turbo, needs_qkv_conversion, convert_qkv_lora
@@ -235,33 +236,8 @@ class PersonDetailerControlNet:
 
     @staticmethod
     def _build_preview_text(summary, batch_size, num_refinements, elapsed_s=0, cn_info=""):
-        time_suffix = f" | {elapsed_s}s" if elapsed_s > 0 else ""
-        cn_tag = f" [{cn_info}]" if cn_info else ""
-        if not summary:
-            return f"{batch_size} img, {num_refinements} refined{cn_tag}{time_suffix}"
-
-        parts = []
-        for label, info in summary.items():
-            status = info.get("status", "?")
-            mask_type = info.get("mask_type", "?")
-            if status == "ok":
-                if mask_type == "aux":
-                    parts.append(f"{label}: aux({info.get('parts', 0)})")
-                elif "faces" in info:
-                    parts.append(f"{label}: {info['faces']}x {mask_type}")
-                else:
-                    parts.append(f"{label}: {mask_type}")
-            elif status == "no match":
-                parts.append(f"{label}: skip")
-            elif status == "no parts":
-                parts.append(f"{label}: aux(0)")
-            elif status == "no ref":
-                parts.append(f"{label}: no ref")
-            elif status == "empty":
-                parts.append(f"{label}: 0 faces")
-
-        text = " | ".join(parts) if parts else f"{batch_size} img, {num_refinements} refined"
-        return f"{text}{cn_tag}{time_suffix}"
+        return build_status_text([summary] if summary else [], batch_size, num_refinements,
+                                 elapsed_s, cn_info=cn_info)
 
     # ── Main execution ───────────────────────────────────────────────────────
 
@@ -416,6 +392,7 @@ class PersonDetailerControlNet:
         for b in range(batch_size):
             current_image = images[b]
             img_summary = {}
+            refined_before = len(refined_parts)
 
             print(f"\n  [Batch {b+1}/{batch_size}]")
 
@@ -456,22 +433,16 @@ class PersonDetailerControlNet:
                         img_summary[slot["label"]] = {"status": "no parts", "mask_type": "aux", "parts": 0}
                         continue
 
-                    part_count = 0
-                    if "aux_part_counts" in person_data and b < len(person_data["aux_part_counts"]):
-                        part_count = person_data["aux_part_counts"][b].get(ri, 0)
-                    print(f"    {slot['label']} — aux: {part_count} body part(s), detailing...")
-
+                    # Each part gets its own crop; crops are tiled into one preview.
                     cached = slot_cache.get((slot["lora"], slot["lora_strength"], slot["prompt"]))
-                    stitched, refined = self._inpaint_mask(
-                        current_image, aux_mask, slot, **inpaint_kwargs,
-                        cached_model=cached["model"] if cached else None,
-                        cached_cond=cached["cond"] if cached else None)
-                    current_image = stitched
-                    if refined is not None:
-                        refined_parts.append(refined)
-                        refined_ref_parts.append(refined)
-                    img_summary[slot["label"]] = {"status": "ok", "mask_type": "aux", "parts": part_count}
-                    _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts), cn_info=cn_info))
+                    current_image, tile, n_parts = detail_parts_individually(
+                        self._inpaint_mask, current_image, aux_mask, slot, cached, **inpaint_kwargs)
+                    print(f"    {slot['label']} — aux: {n_parts} part(s) detailed individually")
+                    if tile is not None:
+                        refined_parts.append(tile)
+                        refined_ref_parts.append(tile)
+                    img_summary[slot["label"]] = {"status": "ok", "mask_type": "aux", "parts": n_parts}
+                    _send_progress(build_status_text(all_summaries + [img_summary], batch_size, len(refined_parts), cn_info=cn_info))
 
                 else:
                     mask_key = f"{mask_type}_masks"
@@ -495,7 +466,7 @@ class PersonDetailerControlNet:
                         refined_parts.append(refined)
                         refined_ref_parts.append(refined)
                     img_summary[slot["label"]] = {"status": "ok", "mask_type": mask_type}
-                    _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts), cn_info=cn_info))
+                    _send_progress(build_status_text(all_summaries + [img_summary], batch_size, len(refined_parts), cn_info=cn_info))
 
             # Generic slot
             gen_cached = slot_cache.get((generic_lora, generic_lora_strength, generic_prompt))
@@ -507,22 +478,20 @@ class PersonDetailerControlNet:
                     else:
                         unassigned_mask = person_data.get("aux_unassigned_masks")
                         if unassigned_mask is not None and not is_mask_empty(unassigned_mask[b]):
-                            print(f"    Generic — aux: detailing unassigned body parts...")
                             generic_slot = {
                                 "lora": generic_lora, "lora_strength": generic_lora_strength,
                                 "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True),
                                 "rounds": generic_cfg.get("rounds", 1),
                             }
-                            stitched, refined = self._inpaint_mask(
-                                current_image, unassigned_mask[b], generic_slot, **inpaint_kwargs,
-                                cached_model=gen_cached["model"] if gen_cached else None,
-                                cached_cond=gen_cached["cond"] if gen_cached else None)
-                            current_image = stitched
-                            if refined is not None:
-                                refined_parts.append(refined)
-                                refined_gen_parts.append(refined)
-                            img_summary["Generic"] = {"status": "ok", "mask_type": "aux", "parts": 1}
-                            _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts), cn_info=cn_info))
+                            current_image, tile, n_parts = detail_parts_individually(
+                                self._inpaint_mask, current_image, unassigned_mask[b],
+                                generic_slot, gen_cached, **inpaint_kwargs)
+                            print(f"    Generic — aux: {n_parts} unassigned part(s) detailed individually")
+                            if tile is not None:
+                                refined_parts.append(tile)
+                                refined_gen_parts.append(tile)
+                            img_summary["Generic"] = {"status": "ok", "mask_type": "aux", "parts": n_parts}
+                            _send_progress(build_status_text(all_summaries + [img_summary], batch_size, len(refined_parts), cn_info=cn_info))
                         else:
                             print(f"    Generic — aux: no unassigned body parts")
                             img_summary["Generic"] = {"status": "no parts", "mask_type": "aux", "parts": 0}
@@ -563,7 +532,7 @@ class PersonDetailerControlNet:
                                 refined_gen_parts.append(refined)
                         if face_count > 0:
                             img_summary["Generic"] = {"status": "ok", "mask_type": generic_mask_type, "faces": face_count}
-                            _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts), cn_info=cn_info))
+                            _send_progress(build_status_text(all_summaries + [img_summary], batch_size, len(refined_parts), cn_info=cn_info))
                         else:
                             print(f"    Generic — no unmatched faces")
                             img_summary["Generic"] = {"status": "empty", "mask_type": generic_mask_type, "faces": 0}
@@ -600,11 +569,12 @@ class PersonDetailerControlNet:
                                     refined_parts.append(refined)
                                     refined_gen_parts.append(refined)
                             img_summary["Generic"] = {"status": "ok", "mask_type": generic_mask_type, "faces": len(components)}
-                            _send_progress(self._build_preview_text(img_summary, batch_size, len(refined_parts), cn_info=cn_info))
+                            _send_progress(build_status_text(all_summaries + [img_summary], batch_size, len(refined_parts), cn_info=cn_info))
                         else:
                             print(f"    Generic — no unmatched faces")
                             img_summary["Generic"] = {"status": "empty", "mask_type": generic_mask_type, "faces": 0}
 
+            img_summary["_refined"] = len(refined_parts) - refined_before
             results.append(current_image)
             all_summaries.append(img_summary)
 
@@ -614,9 +584,8 @@ class PersonDetailerControlNet:
               (f" (CN: {cn_info})" if cn_info else ""))
         print(f"{'='*60}\n")
 
-        preview_text = self._build_preview_text(
-            all_summaries[0] if all_summaries else {},
-            batch_size, len(refined_parts), _elapsed, cn_info=cn_info)
+        preview_text = build_status_text(
+            all_summaries, batch_size, len(refined_parts), _elapsed, cn_info=cn_info)
 
         output_images = torch.stack(results)
         _empty = torch.zeros((1, 64, 64, 3), dtype=torch.float32)

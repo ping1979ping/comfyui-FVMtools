@@ -183,8 +183,10 @@ class PersonSelectorSAM3Native(PersonSelectorSAM3):
 
         per_batch = []
         unassigned = []
+        part_counts = []
         for b in range(batch_size):
             slots = [np.zeros((h, w), dtype=np.float32) for _ in range(num_refs)]
+            counts = [0] * num_refs
             loose = np.zeros((h, w), dtype=np.float32)
             if b < images.shape[0]:
                 rgb = tensor2np(images[b:b + 1])
@@ -215,20 +217,28 @@ class PersonSelectorSAM3Native(PersonSelectorSAM3):
                         loose = np.maximum(loose, mask_np)
                     else:
                         slots[best_ri] = np.maximum(slots[best_ri], mask_np)
+                        counts[best_ri] += 1
 
             per_batch.append(slots)
             unassigned.append(loose)
+            part_counts.append({ri: counts[ri] for ri in range(num_refs)})
 
         tensors = [[torch.from_numpy(m).unsqueeze(0) for m in slots] for slots in per_batch]
         aux_data = self._pack_aux(person_data, tensors, mask_types, h, w,
-                                  batch_size, num_refs)
+                                  batch_size, num_refs, part_counts=part_counts)
         aux_data["aux_unassigned_masks"] = torch.stack(
             [torch.from_numpy(u) for u in unassigned])
-        preview = self._draw_aux(preview, per_batch[0], unassigned[0], prompt)
+        # Draw per batch frame — tensor2np only reads frame 0, so drawing on the
+        # whole batch at once collapsed the preview to the first image.
+        frames = [self._draw_aux(preview[b:b + 1], per_batch[b], unassigned[b], prompt)
+                  if b < len(per_batch) else preview[b:b + 1]
+                  for b in range(preview.shape[0])]
+        preview = torch.cat(frames, dim=0)
         return aux_data, preview
 
     @staticmethod
-    def _pack_aux(person_data, per_batch_tensors, mask_types, h, w, batch_size, num_refs):
+    def _pack_aux(person_data, per_batch_tensors, mask_types, h, w, batch_size, num_refs,
+                  part_counts=None):
         """Wrap per-slot aux masks in a PERSON_DATA with the same layout as the input."""
         out = {
             "batch_size": batch_size,
@@ -256,7 +266,7 @@ class PersonSelectorSAM3Native(PersonSelectorSAM3):
                  if num_refs else empty_mask(h, w) for b in range(batch_size)]
         out["all_faces_mask"] = torch.cat(union, dim=0)
         out["matched_faces_mask"] = out["all_faces_mask"].clone()
-        out["aux_part_counts"] = [
+        out["aux_part_counts"] = part_counts if part_counts is not None else [
             {ri: int(float(per_batch_tensors[b][ri].max()) > 0.5) for ri in range(num_refs)}
             for b in range(batch_size)
         ]

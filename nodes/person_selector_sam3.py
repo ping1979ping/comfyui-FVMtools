@@ -17,6 +17,7 @@ from .utils.masker import (MaskGenerator, run_sam3_grounding, sam3_prepare, sam3
                            sam3_last_error,
                            MASK_TYPE_LABELS, _clip_labels_to_body)
 from .utils.tensor_utils import tensor2np, tensor2cv2, mask2tensor, np2tensor, empty_mask
+from .utils.detailer_report import split_aux_parts
 from .utils.yolo_detector import (
     detect_objects,
     assign_detections_to_references,
@@ -255,6 +256,29 @@ class PersonSelectorSAM3:
 
     # ── SAM3 Grounding Pipeline ──
 
+    @staticmethod
+    def _assign_aux_multi(mask_results, body_map, min_overlap_px=50):
+        """Assign EVERY aux result to the body it overlaps most.
+
+        Unlike assign_masks_by_body_overlap (one mask per face — right for
+        face/hair/head), aux parts come in multiples per person (hands, feet,
+        arms, legs). Returns {face_idx: [mask_idx, ...]}; results below
+        min_overlap_px with every body stay unassigned.
+        """
+        out = {}
+        for mi, (mask, score, bbox) in enumerate(mask_results):
+            mask_bool = mask > 0.5
+            best_fi, best_ov = None, 0.0
+            for fi, body in body_map.items():
+                if mask.shape != body.shape:
+                    continue
+                ov = float((mask_bool & (body > 0.5)).sum())
+                if ov > best_ov:
+                    best_fi, best_ov = fi, ov
+            if best_fi is not None and best_ov > min_overlap_px:
+                out.setdefault(best_fi, []).append(mi)
+        return out
+
     def _run_all_sam3_masks(self, sam3_config, cur_rgb, cur_faces, aux_preset, aux_custom_prompt, aux_threshold):
         """Run SAM3 grounding for all mask types + aux; BiSeNet for facial subtypes.
 
@@ -305,10 +329,13 @@ class PersonSelectorSAM3:
             elif aux_preset in AUX_PRESETS and AUX_PRESETS[aux_preset] is not None:
                 prompt, default_thresh = AUX_PRESETS[aux_preset]
                 aux_results = sam3_ground(processor, base_state, cur_rgb.shape, prompt, threshold=aux_threshold)
+            # Multi-instance: a person can own several parts (two hands, two legs),
+            # so every result goes to the body it overlaps most — not one per face.
             if aux_results and body_map:
-                aux_assignment = assign_masks_by_body_overlap(aux_results, body_map, cur_faces)
+                aux_assignment = self._assign_aux_multi(aux_results, body_map)
             elif aux_results:
-                aux_assignment = assign_masks_to_faces(aux_results, cur_faces)
+                aux_assignment = {fi: [mi] for fi, mi in
+                                  assign_masks_to_faces(aux_results, cur_faces).items()}
 
         # Build per-face mask dict
         per_face = []
@@ -377,7 +404,10 @@ class PersonSelectorSAM3:
                 print(f"    [headless_body] P{fi+1}: subtract={sub_px}px → result={result_px}px")
                 masks["aux"] = mask2tensor(headless)
             elif fi in aux_assignment:
-                masks["aux"] = mask2tensor(aux_results[aux_assignment[fi]][0])
+                union = np.zeros((h, w), dtype=np.float32)
+                for mi in aux_assignment[fi]:
+                    union = np.maximum(union, aux_results[mi][0].astype(np.float32))
+                masks["aux"] = mask2tensor(union)
             else:
                 masks["aux"] = empty_mask(h, w)
 
@@ -402,12 +432,16 @@ class PersonSelectorSAM3:
             per_face.append(masks)
 
         # Aux stats for the PERSON_DATA contract (aux_part_counts / aux_unassigned_masks)
-        aux_counts = {fi: (1 if float(per_face[fi]["aux"].max()) > 0.5 else 0)
-                      for fi in range(face_count)}
+        aux_counts = {}
+        for fi in range(face_count):
+            if float(per_face[fi]["aux"].max()) <= 0.5:
+                aux_counts[fi] = 0
+            else:
+                aux_counts[fi] = len(aux_assignment.get(fi, [])) or 1  # headless_body = 1
         unassigned_np = np.zeros((h, w), dtype=np.float32)
         unassigned_count = 0
         if aux_results:
-            used = set(aux_assignment.values())
+            used = {mi for mis in aux_assignment.values() for mi in mis}
             for mi, (m, score, bbox) in enumerate(aux_results):
                 if mi in used:
                     continue
@@ -507,7 +541,7 @@ class PersonSelectorSAM3:
 
     def _render_preview(self, current_image, assignments, cur_faces, per_face_masks,
                         h, w, num_refs, ref_depths=None, depth_sort_order="front_last",
-                        depth_np=None):
+                        depth_np=None, aux_unassigned_np=None):
         preview = tensor2np(current_image).copy()
 
         # Determine render order — includes ALL faces (matched + unmatched)
@@ -562,6 +596,57 @@ class PersonSelectorSAM3:
         for ri, fi, depth in render_items:
             color_idx = fi_to_ri.get(fi, fi) if ri < 0 else ri
             preview = _paint_mask(preview, fi, color_idx)
+
+        # Aux overlay: hatched in the owner's colour, every part numbered
+        # ("1.1", "1.2", ...) — the PersonDetailer details each part as its own crop.
+        def _paint_aux(preview, mask_np, color, tag_prefix):
+            parts = split_aux_parts(torch.from_numpy(mask_np.astype(np.float32)))
+            if not parts:
+                return preview
+            binm = mask_np > 0.5
+            stripe = max(4, max(h, w) // 160)
+            diag = np.arange(h, dtype=np.int32)[:, None] + np.arange(w, dtype=np.int32)[None, :]
+            sel = binm & ((diag // stripe) % 2 == 0)
+            pf = preview.astype(np.float32)
+            pf[sel] = pf[sel] * 0.3 + np.array(color, dtype=np.float32) * 0.7
+            preview = pf.astype(np.uint8)
+            thick = max(2, int(2 * max(h, w) / 1000))
+            contours, _ = cv2.findContours(binm.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            cv2.drawContours(preview, contours, -1, (0, 0, 0), thick + 2)
+            cv2.drawContours(preview, contours, -1, color, thick)
+            tag_font = cv2.FONT_HERSHEY_SIMPLEX
+            tag_scale = max(0.4, max(h, w) / 1000.0 * 0.6)
+            for k, part in enumerate(parts, start=1):
+                ys, xs = np.nonzero(part.numpy() > 0.5)
+                if len(xs) == 0:
+                    continue
+                tag = f"{tag_prefix}{k}"
+                cx, cy = int(xs.mean()), int(ys.mean())
+                (tw, tth), _ = cv2.getTextSize(tag, tag_font, tag_scale, 1)
+                cv2.rectangle(preview, (cx - tw // 2 - 2, cy - tth // 2 - 3),
+                              (cx + tw // 2 + 2, cy + tth // 2 + 3), (0, 0, 0), cv2.FILLED)
+                cv2.putText(preview, tag, (cx - tw // 2, cy + tth // 2), tag_font, tag_scale,
+                            color, 1, cv2.LINE_AA)
+            return preview
+
+        painted_aux = np.zeros((h, w), dtype=bool)
+        for fi in range(min(len(cur_faces), len(per_face_masks))):
+            aux = per_face_masks[fi].get("aux")
+            if aux is None or float(aux.max()) <= 0.5:
+                continue
+            aux_np = aux[0].cpu().numpy()
+            if fi in fi_to_ri:
+                ri = fi_to_ri[fi]
+                color, prefix = _PREVIEW_COLORS[ri % len(_PREVIEW_COLORS)], f"{ri + 1}."
+            else:
+                color, prefix = (160, 160, 160), f"P{fi + 1}."
+            preview = _paint_aux(preview, aux_np, color, prefix)
+            painted_aux |= aux_np > 0.5
+        if aux_unassigned_np is not None:
+            # unmatched faces' aux is folded into unassigned — don't paint it twice
+            loose = np.where(painted_aux, 0.0, aux_unassigned_np).astype(np.float32)
+            if float(loose.max()) > 0.5:
+                preview = _paint_aux(preview, loose, (220, 220, 220), "?")
 
         # Labels: every person gets P1..Pn, matched ones show ref number instead
         font = cv2.FONT_HERSHEY_SIMPLEX
@@ -879,7 +964,9 @@ class PersonSelectorSAM3:
                 body_list = [pf["body"] for pf in per_face_masks]
             preview = self._render_preview(single, assignments, cur_faces, per_face_masks,
                                             h, w, num_refs, ref_depths=depths, depth_sort_order=depth_sort_order,
-                                            depth_np=depth_np)
+                                            depth_np=depth_np,
+                                            aux_unassigned_np=(aux_unassigned_batches[-1][0].cpu().numpy()
+                                                               if (use_yolo_aux or aux_preset != "none") else None))
             preview_parts.append(preview)
 
             # Sim/match strings

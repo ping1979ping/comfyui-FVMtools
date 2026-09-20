@@ -168,6 +168,31 @@ class TestPreviewOverlay:
                                     make_person_data(2), preview, "nothing", 0.3)
         assert torch.equal(out, preview)
 
+    def test_batch_preview_keeps_every_frame(self, monkeypatch):
+        """Regression: the overlay used to collapse a batch preview to frame 0."""
+        monkeypatch.setattr(native, "sam3_prepare", lambda _b, _rgb: ("STATE", {}))
+        monkeypatch.setattr(native, "sam3_ground", ground_returning((5, 5, 20, 20)))
+        pd = make_person_data(2)
+        pd["batch_size"] = 3
+        for mt in ("face", "head", "body"):
+            pd[f"{mt}_masks"] = [m.repeat(3, 1, 1) for m in pd[f"{mt}_masks"]]
+        preview = torch.stack([torch.full((H, W, 3), v) for v in (0.1, 0.5, 0.9)])
+        _aux, out = NODE()._build_aux(object(), torch.zeros(3, H, W, 3), pd, preview,
+                                      "necklace", 0.3)
+        assert out.shape == (3, H, W, 3)
+        # outside the aux region every frame keeps its own background
+        for b, v in enumerate((0.1, 0.5, 0.9)):
+            assert abs(float(out[b, 60, 60, 0]) - v) < 0.01
+
+    def test_part_counts_count_every_hit(self, wired):
+        node = NODE()
+        monkeypatch = wired
+        monkeypatch.setattr(native, "sam3_ground",
+                            ground_returning((2, 2, 10, 10), (15, 30, 25, 40)))
+        aux, _p = node._build_aux(object(), torch.zeros(1, H, W, 3), make_person_data(2),
+                                  torch.zeros(1, H, W, 3), "hand", 0.3)
+        assert aux["aux_part_counts"][0] == {0: 2, 1: 0}
+
     def test_overlay_failure_returns_original_preview(self, monkeypatch):
         preview = torch.rand(1, H, W, 3)
         out = NODE._draw_aux(preview, "not-a-list", None, "boom")

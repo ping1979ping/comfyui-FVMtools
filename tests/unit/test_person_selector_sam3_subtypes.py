@@ -183,6 +183,49 @@ class TestAuxStats:
         assert aux_stats["unassigned_mask"][65, 85] == 1.0
         assert aux_stats["unassigned_mask"][65, 15] == 0.0
 
+    def test_multiple_parts_per_person_are_merged(self, sam3_node, one_face, monkeypatch):
+        """Two hands on the same body must BOTH land in that person's aux mask."""
+        hand2 = _region_mask(75, 86, 40, 51)  # second hand, also on the body
+        def _ground(processor, base_state, shape, prompt, threshold=0.3):
+            if prompt == "hand":
+                return [(HAND_IN_NP, 0.8, (10, 60, 21, 71)),
+                        (hand2, 0.8, (40, 75, 51, 86)),
+                        (HAND_OUT_NP, 0.7, (80, 60, 92, 71))]
+            return _fake_sam3_ground(processor, base_state, shape, prompt, threshold)
+        monkeypatch.setattr(psm3, "sam3_ground", _ground)
+        per_face, aux_stats = sam3_node._run_all_sam3_masks(
+            None, CUR_RGB, one_face, "custom", "hand", 0.3)
+        assert per_face[0]["aux"][0, 65, 15] == 1.0
+        assert per_face[0]["aux"][0, 80, 45] == 1.0
+        assert aux_stats["counts"] == {0: 2}
+        assert aux_stats["unassigned_count"] == 1
+
+    def test_parts_split_between_two_people(self):
+        """Each part goes to the body it overlaps most."""
+        left = _region_mask(0, H, 0, 48)
+        right = _region_mask(0, H, 48, W)
+        parts = [(_region_mask(60, 70, 5, 20), 0.9, None),
+                 (_region_mask(60, 70, 25, 40), 0.9, None),
+                 (_region_mask(60, 70, 60, 75), 0.9, None),
+                 (_region_mask(60, 70, 80, 95), 0.9, None)]
+        out = psm3.PersonSelectorSAM3._assign_aux_multi(parts, {0: left, 1: right})
+        assert out == {0: [0, 1], 1: [2, 3]}
+
+    def test_preview_draws_aux_parts(self, sam3_node, one_face):
+        """Preset aux must be visible in the selector preview (was body-only)."""
+        per_face, aux_stats = sam3_node._run_all_sam3_masks(
+            None, CUR_RGB, one_face, "custom", "hand", 0.3)
+        image = torch.zeros(1, H, W, 3)
+        common = dict(assignments={0: (0, 0.9)}, cur_faces=one_face, h=H, w=W, num_refs=1,
+                      depth_sort_order="off")
+        no_aux = [{k: (torch.zeros_like(v) if k == "aux" else v) for k, v in per_face[0].items()}]
+        base = sam3_node._render_preview(image, per_face_masks=no_aux, **common)
+        with_aux = sam3_node._render_preview(image, per_face_masks=per_face,
+                                             aux_unassigned_np=aux_stats["unassigned_mask"], **common)
+        diff = (with_aux - base).abs().sum(dim=-1)[0]
+        assert float(diff[60:71, 10:21].max()) > 0, "assigned hand must be drawn"
+        assert float(diff[60:71, 80:92].max()) > 0, "unassigned hand must be drawn"
+
     def test_no_aux_preset(self, sam3_node, one_face):
         _, aux_stats = sam3_node._run_all_sam3_masks(None, CUR_RGB, one_face, "none", "", 0.3)
         assert aux_stats["counts"] == {0: 0}

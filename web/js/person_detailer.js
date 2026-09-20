@@ -79,23 +79,23 @@ app.registerExtension({
                 ctx.font = "11px Arial";
                 ctx.textAlign = "left";
 
-                const parts = this._pdInfo.split(" | ");
+                // One line per batch image ("Img i/B: ...") + batch total ("Batch: ...")
+                const lines = this._pdInfo.split("\n");
                 const lineH = 14;
                 let y = this.size[1] - 6;
 
-                for (let i = parts.length - 1; i >= 0; i--) {
-                    const part = parts[i].trim();
-                    // Color based on content
-                    if (part.includes("no input") || part.includes("no ref") || part.includes("skip")) {
+                for (let i = lines.length - 1; i >= 0; i--) {
+                    const line = lines[i].trim();
+                    if (line.startsWith("Batch:")) {
+                        ctx.fillStyle = "#8cf"; // cyan for the batch total
+                    } else if (line.includes("no input") || line.includes("no ref") || line.includes("skip") || line.includes("no aux")) {
                         ctx.fillStyle = "#f88"; // red for warnings
-                    } else if (part.startsWith("Generic")) {
-                        ctx.fillStyle = "#ff8"; // yellow for generic
-                    } else if (part.includes("aux(0)") || part.includes("0 faces")) {
+                    } else if (line.includes("nothing to do") || line.includes("→ 0 refined")) {
                         ctx.fillStyle = "#888"; // gray for empty
                     } else {
                         ctx.fillStyle = "#8f8"; // green for active
                     }
-                    ctx.fillText(part, 10, y);
+                    ctx.fillText(line, 10, y);
                     y -= lineH;
                 }
                 ctx.restore();
