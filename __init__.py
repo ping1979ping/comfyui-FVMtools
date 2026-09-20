@@ -40,6 +40,15 @@ try:
     from .nodes.jb.ideogram_assembler import FVM_Ideogram_Assembler
     from .nodes.jb.ideogram_jitter import FVM_Ideogram_BoxJitter
 
+    # ── Music — Cover-Texte: Prosodie messen, Prompt dafuer bauen ──
+    from .nodes.music.lyrics_prosody import FVM_LyricsProsodyAnalyze
+    from .nodes.music.cover_prompt import FVM_CoverLyricsPromptBuilder
+    from .nodes.music.whisper_lines import FVM_WhisperChunksToLyricLines
+    from .nodes.music.song_extend import (
+        FVM_SongExtendSource, FVM_SongExtendSession, FVM_SongExtendPlan,
+        FVM_SongExtendApply, FVM_SongExtendCommit, FVM_SongExtendMerge,
+    )
+
     # ── API routes for outfit list editing ──
     import os
     from aiohttp import web
@@ -71,7 +80,11 @@ try:
         result = {}
         base = lora_path
         # Strip .safetensors extension for .metadata.json pattern
-        stem = lora_path.rsplit(".safetensors", 1)[0] if lora_path.endswith(".safetensors") else lora_path
+        stem = (
+            lora_path.rsplit(".safetensors", 1)[0]
+            if lora_path.endswith(".safetensors")
+            else lora_path
+        )
 
         # Try .metadata.json (written by model manager tools)
         meta_path = stem + ".metadata.json"
@@ -89,7 +102,9 @@ try:
                     model_id = civitai.get("modelId", "")
                     version_id = civitai.get("id", "")
                     if model_id:
-                        result["civitaiUrl"] = f"https://civitai.com/models/{model_id}?modelVersionId={version_id}"
+                        result["civitaiUrl"] = (
+                            f"https://civitai.com/models/{model_id}?modelVersionId={version_id}"
+                        )
                     result["type"] = "LORA"
                 # Preview image
                 for ext in (".jpeg", ".jpg", ".png", ".webp"):
@@ -117,7 +132,9 @@ try:
                 # rgthree stores trainedWords differently
                 trained = info.get("trainedWords", [])
                 if trained and not result.get("triggerWords"):
-                    result["triggerWords"] = [w.get("word", w) if isinstance(w, dict) else w for w in trained]
+                    result["triggerWords"] = [
+                        w.get("word", w) if isinstance(w, dict) else w for w in trained
+                    ]
                 # Links
                 links = info.get("links", [])
                 if links and not result.get("civitaiUrl"):
@@ -140,7 +157,9 @@ try:
         try:
             lora_path = _folder_paths.get_full_path_or_raise("loras", lora_name)
         except Exception:
-            return web.json_response({"error": "lora not found", "file": lora_name}, status=404)
+            return web.json_response(
+                {"error": "lora not found", "file": lora_name}, status=404
+            )
 
         # Check in-memory cache first
         cached = _lora_info_cache.get(f"info:{lora_path}")
@@ -151,7 +170,9 @@ try:
         sidecar = _read_sidecar_metadata(lora_path)
 
         # If sidecar has good data (name + triggerWords or civitaiUrl), use it directly
-        if sidecar.get("name") and (sidecar.get("triggerWords") or sidecar.get("civitaiUrl")):
+        if sidecar.get("name") and (
+            sidecar.get("triggerWords") or sidecar.get("civitaiUrl")
+        ):
             result = {
                 "name": sidecar.get("name", lora_name),
                 "version": sidecar.get("version", ""),
@@ -176,7 +197,9 @@ try:
         try:
             async with _aiohttp.ClientSession() as session:
                 url = f"https://civitai.com/api/v1/model-versions/by-hash/{file_hash}"
-                async with session.get(url, timeout=_aiohttp.ClientTimeout(total=10)) as resp:
+                async with session.get(
+                    url, timeout=_aiohttp.ClientTimeout(total=10)
+                ) as resp:
                     if resp.status != 200:
                         # No CivitAI data — return what we have from sidecar
                         result = {
@@ -197,7 +220,16 @@ try:
                 "name": sidecar.get("name", lora_name),
                 "sha256": file_hash,
                 "error": f"CivitAI request failed: {e}",
-                **{k: sidecar.get(k, "") for k in ("version", "type", "baseModel", "triggerWords", "civitaiUrl")},
+                **{
+                    k: sidecar.get(k, "")
+                    for k in (
+                        "version",
+                        "type",
+                        "baseModel",
+                        "triggerWords",
+                        "civitaiUrl",
+                    )
+                },
             }
             return web.json_response(result)
 
@@ -206,7 +238,11 @@ try:
         trained_words = data.get("trainedWords", [])
         model_id = data.get("modelId", "")
         version_id = data.get("id", "")
-        civitai_url = f"https://civitai.com/models/{model_id}?modelVersionId={version_id}" if model_id else ""
+        civitai_url = (
+            f"https://civitai.com/models/{model_id}?modelVersionId={version_id}"
+            if model_id
+            else ""
+        )
 
         result = {
             "name": model_info.get("name", sidecar.get("name", lora_name)),
@@ -221,7 +257,11 @@ try:
         _lora_info_cache[f"info:{lora_path}"] = result
 
         # Save as sidecar .metadata.json so next lookup is instant
-        stem = lora_path.rsplit(".safetensors", 1)[0] if lora_path.endswith(".safetensors") else lora_path
+        stem = (
+            lora_path.rsplit(".safetensors", 1)[0]
+            if lora_path.endswith(".safetensors")
+            else lora_path
+        )
         meta_path = stem + ".metadata.json"
         if not os.path.isfile(meta_path):
             try:
@@ -252,6 +292,7 @@ try:
     async def _get_loras(request):
         """List available LoRA files for the Power LoRA widget."""
         import folder_paths as _fp
+
         loras = _fp.get_filename_list("loras")
         return web.json_response({"loras": loras})
 
@@ -270,7 +311,9 @@ try:
         try:
             for dirpath, _dirnames, filenames in os.walk(root):
                 for filename in filenames:
-                    if not filename.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
+                    if not filename.lower().endswith(
+                        (".png", ".jpg", ".jpeg", ".webp")
+                    ):
                         continue
                     full = os.path.join(dirpath, filename)
                     try:
@@ -281,7 +324,9 @@ try:
                     entries.append(
                         {
                             "filename": filename,
-                            "subfolder": "" if subfolder == "." else subfolder.replace("\\", "/"),
+                            "subfolder": ""
+                            if subfolder == "."
+                            else subfolder.replace("\\", "/"),
                             "type": "output",
                             "mtime": mtime,
                         }
@@ -302,14 +347,17 @@ try:
         """
         try:
             from .nodes.utils.lmstudio_client import (
-                DEFAULT_SYSTEM_PROMPT, DEFAULT_TEMPERATURE,
+                DEFAULT_SYSTEM_PROMPT,
+                DEFAULT_TEMPERATURE,
             )
         except Exception as e:
             return web.json_response({"error": str(e)}, status=500)
-        return web.json_response({
-            "system_prompt": DEFAULT_SYSTEM_PROMPT,
-            "temperature": DEFAULT_TEMPERATURE,
-        })
+        return web.json_response(
+            {
+                "system_prompt": DEFAULT_SYSTEM_PROMPT,
+                "temperature": DEFAULT_TEMPERATURE,
+            }
+        )
 
     @PromptServer.instance.routes.get("/fvmtools/yolo-classes")
     async def _get_yolo_classes(request):
@@ -318,6 +366,7 @@ try:
         if not model_name or model_name == "none":
             return web.json_response({"classes": []})
         from .nodes.utils.yolo_detector import get_yolo_classes
+
         try:
             classes = get_yolo_classes(model_name)
         except Exception as e:
@@ -402,7 +451,9 @@ try:
 
     @PromptServer.instance.routes.get("/fvmtools/location-files")
     async def _get_location_files(request):
-        set_dir = _safe_set_dir(_get_location_lists_path(), request.rel_url.query.get("set", ""))
+        set_dir = _safe_set_dir(
+            _get_location_lists_path(), request.rel_url.query.get("set", "")
+        )
         if set_dir is None:
             return web.json_response({"error": "invalid set"}, status=400)
         if not os.path.isdir(set_dir):
@@ -535,27 +586,36 @@ try:
         "PersonSelectorSAM3": PersonSelectorSAM3,
         "PersonSelectorSAM3Native": PersonSelectorSAM3Native,
         # ── SMP (StructPromptMaker) ──
-        "FVM_SMP_OutfitGenerator":   FVM_SMP_OutfitGenerator,
-        "FVM_SMP_ColorGenerator":    FVM_SMP_ColorGenerator,
-        "FVM_SMP_OutfitCombiner":    FVM_SMP_OutfitCombiner,
+        "FVM_SMP_OutfitGenerator": FVM_SMP_OutfitGenerator,
+        "FVM_SMP_ColorGenerator": FVM_SMP_ColorGenerator,
+        "FVM_SMP_OutfitCombiner": FVM_SMP_OutfitCombiner,
         "FVM_SMP_LocationGenerator": FVM_SMP_LocationGenerator,
-        "FVM_SMP_LocationCombiner":  FVM_SMP_LocationCombiner,
+        "FVM_SMP_LocationCombiner": FVM_SMP_LocationCombiner,
         "FVM_SMP_StructuredPromptAssembler": FVM_SMP_StructuredPromptAssembler,
-        "FVM_SMP_SAMClassRouter":    FVM_SMP_SAMClassRouter,
-        "FVM_SMP_SubjectBuilder":     FVM_SMP_SubjectBuilder,
-        "FVM_SMP_ClothingBuilder":    FVM_SMP_ClothingBuilder,
+        "FVM_SMP_SAMClassRouter": FVM_SMP_SAMClassRouter,
+        "FVM_SMP_SubjectBuilder": FVM_SMP_SubjectBuilder,
+        "FVM_SMP_ClothingBuilder": FVM_SMP_ClothingBuilder,
         "FVM_SMP_EnvironmentBuilder": FVM_SMP_EnvironmentBuilder,
-        "FVM_SMP_Aggregator":         FVM_SMP_Aggregator,
-        "FVM_SMP_PromptSerialize":    FVM_SMP_PromptSerialize,
-        "FVM_SMP_SidecarSaver":       FVM_SMP_SidecarSaver,
+        "FVM_SMP_Aggregator": FVM_SMP_Aggregator,
+        "FVM_SMP_PromptSerialize": FVM_SMP_PromptSerialize,
+        "FVM_SMP_SidecarSaver": FVM_SMP_SidecarSaver,
         # ── JB (JSON Builder) ──
-        "FVM_JB_Builder":             FVM_JB_Builder,
-        "FVM_JB_Stitcher":            FVM_JB_Stitcher,
-        "FVM_JB_Extractor":           FVM_JB_Extractor,
-        "FVM_JB_OutfitBlock":         FVM_JB_OutfitBlock,
-        "FVM_JB_LocationBlock":       FVM_JB_LocationBlock,
-        "FVM_Ideogram_Assembler":     FVM_Ideogram_Assembler,
-        "FVM_Ideogram_BoxJitter":     FVM_Ideogram_BoxJitter,
+        "FVM_JB_Builder": FVM_JB_Builder,
+        "FVM_JB_Stitcher": FVM_JB_Stitcher,
+        "FVM_JB_Extractor": FVM_JB_Extractor,
+        "FVM_JB_OutfitBlock": FVM_JB_OutfitBlock,
+        "FVM_JB_LocationBlock": FVM_JB_LocationBlock,
+        "FVM_Ideogram_Assembler": FVM_Ideogram_Assembler,
+        "FVM_Ideogram_BoxJitter": FVM_Ideogram_BoxJitter,
+        "FVM_LyricsProsodyAnalyze": FVM_LyricsProsodyAnalyze,
+        "FVM_CoverLyricsPromptBuilder": FVM_CoverLyricsPromptBuilder,
+        "FVM_WhisperChunksToLyricLines": FVM_WhisperChunksToLyricLines,
+        "FVM_SongExtendSource": FVM_SongExtendSource,
+        "FVM_SongExtendSession": FVM_SongExtendSession,
+        "FVM_SongExtendPlan": FVM_SongExtendPlan,
+        "FVM_SongExtendApply": FVM_SongExtendApply,
+        "FVM_SongExtendCommit": FVM_SongExtendCommit,
+        "FVM_SongExtendMerge": FVM_SongExtendMerge,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -575,27 +635,36 @@ try:
         "PersonSelectorSAM3": "Person Selector SAM3",
         "PersonSelectorSAM3Native": "Person Selector SAM3 (native)",
         # ── SMP (StructPromptMaker) — legacy; superseded by the JB suite ──
-        "FVM_SMP_OutfitGenerator":   "SMP · Outfit Generator (dict) (legacy)",
-        "FVM_SMP_ColorGenerator":    "SMP · Color Generator (dict) (legacy)",
-        "FVM_SMP_OutfitCombiner":    "SMP · Outfit Combiner (legacy)",
+        "FVM_SMP_OutfitGenerator": "SMP · Outfit Generator (dict) (legacy)",
+        "FVM_SMP_ColorGenerator": "SMP · Color Generator (dict) (legacy)",
+        "FVM_SMP_OutfitCombiner": "SMP · Outfit Combiner (legacy)",
         "FVM_SMP_LocationGenerator": "SMP · Location Generator (dict) (legacy)",
-        "FVM_SMP_LocationCombiner":  "SMP · Location Combiner (legacy)",
+        "FVM_SMP_LocationCombiner": "SMP · Location Combiner (legacy)",
         "FVM_SMP_StructuredPromptAssembler": "SMP · Structured Prompt Assembler (legacy)",
-        "FVM_SMP_SAMClassRouter":    "SMP · SAM3 Class Router (legacy)",
-        "FVM_SMP_SubjectBuilder":     "SMP · Subject Builder (legacy)",
-        "FVM_SMP_ClothingBuilder":    "SMP · Clothing Builder (legacy)",
+        "FVM_SMP_SAMClassRouter": "SMP · SAM3 Class Router (legacy)",
+        "FVM_SMP_SubjectBuilder": "SMP · Subject Builder (legacy)",
+        "FVM_SMP_ClothingBuilder": "SMP · Clothing Builder (legacy)",
         "FVM_SMP_EnvironmentBuilder": "SMP · Environment Builder (legacy)",
-        "FVM_SMP_Aggregator":         "SMP · Aggregator (legacy)",
-        "FVM_SMP_PromptSerialize":    "SMP · Prompt Serialize (legacy)",
-        "FVM_SMP_SidecarSaver":       "SMP · Sidecar Saver (legacy)",
+        "FVM_SMP_Aggregator": "SMP · Aggregator (legacy)",
+        "FVM_SMP_PromptSerialize": "SMP · Prompt Serialize (legacy)",
+        "FVM_SMP_SidecarSaver": "SMP · Sidecar Saver (legacy)",
         # ── JB (JSON Builder) ──
-        "FVM_JB_Builder":             "JB · Builder",
-        "FVM_JB_Stitcher":            "JB · Stitcher",
-        "FVM_JB_Extractor":           "JB · Extractor",
-        "FVM_JB_OutfitBlock":         "JB · Outfit Block",
-        "FVM_JB_LocationBlock":       "JB · Location Block",
-        "FVM_Ideogram_Assembler":     "JB · Ideogram Assembler",
-        "FVM_Ideogram_BoxJitter":     "JB · Ideogram Box Jitter",
+        "FVM_JB_Builder": "JB · Builder",
+        "FVM_JB_Stitcher": "JB · Stitcher",
+        "FVM_JB_Extractor": "JB · Extractor",
+        "FVM_JB_OutfitBlock": "JB · Outfit Block",
+        "FVM_JB_LocationBlock": "JB · Location Block",
+        "FVM_Ideogram_Assembler": "JB · Ideogram Assembler",
+        "FVM_Ideogram_BoxJitter": "JB · Ideogram Box Jitter",
+        "FVM_LyricsProsodyAnalyze": "Music · Lyrics-Prosodie messen",
+        "FVM_CoverLyricsPromptBuilder": "Music · Cover-Prompt bauen",
+        "FVM_WhisperChunksToLyricLines": "Music · Whisper-Passagen zu Zeilen",
+        "FVM_SongExtendSource": "Music · Verlaengern 1 · Quelle",
+        "FVM_SongExtendSession": "Music · Verlaengern 2 · Session",
+        "FVM_SongExtendPlan": "Music · Verlaengern 3 · Plan",
+        "FVM_SongExtendApply": "Music · Verlaengern 4 · Pruefen",
+        "FVM_SongExtendCommit": "Music · Verlaengern 5 · Anhaengen",
+        "FVM_SongExtendMerge": "Music · Verlaengern 6 · Zusammenfuegen",
     }
 
     # ── K2 Lab — Krea 2 regional control suite ──
@@ -626,7 +695,9 @@ try:
 
         NODE_CLASS_MAPPINGS.update(_SIGN_CLASSES)
         NODE_DISPLAY_NAME_MAPPINGS.update(_SIGN_NAMES)
-        print(f"[FVMtools] Sign Tools: {len(_SIGN_CLASSES)} Text-Repair-Nodes registriert")
+        print(
+            f"[FVMtools] Sign Tools: {len(_SIGN_CLASSES)} Text-Repair-Nodes registriert"
+        )
     except Exception as _sign_error:  # pragma: no cover
         import traceback
 
