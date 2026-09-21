@@ -32,7 +32,7 @@ Hands out the next image each time the graph runs, and remembers how far it got.
 | `pass_subdir` / `fail_subdir` | Subfolders of the source directory, created on demand and passed downstream as absolute paths. |
 | `on_finish` | `stop` ends the run when the folder is done; `loop` forgets the progress and starts over. |
 | `sort_by` | `name` or `modified`. |
-| `include_subdirs` | Walk subfolders too. Dot-folders are always skipped. |
+| `include_subdirs` | Walk subfolders too. Dot-folders and the `pass_subdir`/`fail_subdir` targets are always skipped, so sorted pictures never come back in. |
 | `tracker` | Name of the progress marker. Different names walk the same folder independently. |
 
 Outputs: `image`, `mask`, `source_path`, `pass_dir`, `fail_dir`, `filename`,
@@ -49,7 +49,9 @@ feet, and a counter would skip every other picture. Delete that file to reset by
 hand; the batch is resumable across ComfyUI restarts.
 
 Queue the graph with a high run count — the loader ends the run itself when the
-folder is done, the same way Cancel does.
+folder is done, the same way Cancel does. `loop` only has something to loop over
+while the pictures stay put: once a saver has moved them all away, the folder is
+empty and the run stops.
 
 ### Reality Check (LM Studio)
 
@@ -101,6 +103,26 @@ adding a check you have not wired up yet cannot reject the batch.
 `move` and `copy` hand the original bytes over untouched, so the generator's own
 JPEG is preserved rather than re-encoded. A `report` input is written as a `.txt`
 sidecar next to the picture, so the folder records why each file landed there.
+
+### Batch Save Multi
+
+One source picture, up to eight destinations. `slots` sets how many are shown;
+each slot has an `image_N` input, a `gate_N` input and a `subdir_N` folder
+(relative to `base_dir`, or to the source folder when that is empty; absolute
+paths work too).
+
+- **Variants** — wire the refined picture into `image_1`, leave `image_2`
+  unconnected: slot 2 then copies the original file byte for byte.
+- **Sorting** — wire a detector into `gate_N`: a BOOLEAN, a count (fires above
+  0), or a MASK (fires when at least `mask_min_area` of the pixels are set, e.g.
+  a SAM3 aux mask). `route = all_matches` writes to every slot that fires,
+  `first_match` only to the first. Slots without a gate always write.
+  When gates are wired but none fired, the original goes to `fallback_dir`.
+- **Original** — `keep`, `move`/`copy` to `original_dir`, or `delete` (for good,
+  no recycle bin). This happens last and is skipped when any slot failed, so an
+  error never costs the only copy.
+
+Outputs: `saved_paths` (one per line), `matched`, `matched_count`, `report`.
 
 ### Reality Check Probe
 

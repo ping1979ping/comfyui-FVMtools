@@ -51,6 +51,16 @@ class TestListing:
         assert not any("hidden" in name
                        for name in list_images(folder, include_subdirs=True))
 
+    def test_sort_targets_excluded_when_walking(self, folder):
+        # Pictures sorted into keep/ must not be fed back into the batch.
+        for sub in ("keep", "reject", "extra"):
+            os.makedirs(os.path.join(folder, sub))
+            (open(os.path.join(folder, sub, "x.jpg"), "wb")).write(b"x")
+        names = list_images(folder, include_subdirs=True, exclude_dirs=["keep", "reject/"])
+        assert "keep/x.jpg" not in names
+        assert "reject/x.jpg" not in names
+        assert "extra/x.jpg" in names
+
 
 class TestState:
     def test_roundtrip(self, folder):

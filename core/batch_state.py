@@ -98,21 +98,27 @@ def clear_done(directory, tracker="default"):
     return True
 
 
-def list_images(directory, include_subdirs=False, sort_by="name"):
+def list_images(directory, include_subdirs=False, sort_by="name", exclude_dirs=()):
     """Image files in ``directory``, as paths relative to it, in stable order.
 
     Relative rather than absolute so the state file stays portable and readable,
     and so a moved parent folder does not invalidate a half-finished batch.
+
+    ``exclude_dirs`` names top-level subfolders to skip when walking — the
+    loader's own pass/reject targets, so sorted pictures do not come back in.
     """
     if not os.path.isdir(directory):
         return []
 
     found = []
     if include_subdirs:
+        skip = {os.path.normcase(d.strip().strip("/\\")) for d in exclude_dirs if d and d.strip()}
         for root, dirnames, filenames in os.walk(directory):
             # A batch writes its results into subfolders of its own source
             # directory; walking into them would feed the output back in.
             dirnames[:] = [d for d in dirnames if not d.startswith(".")]
+            if root == directory:
+                dirnames[:] = [d for d in dirnames if os.path.normcase(d) not in skip]
             for filename in filenames:
                 if filename.lower().endswith(IMAGE_EXTENSIONS):
                     full = os.path.join(root, filename)
@@ -140,14 +146,15 @@ def list_images(directory, include_subdirs=False, sort_by="name"):
     return found
 
 
-def next_file(directory, done, include_subdirs=False, sort_by="name", loop=False):
+def next_file(directory, done, include_subdirs=False, sort_by="name", loop=False,
+              exclude_dirs=()):
     """Pick the next file to hand out.
 
     Returns ``(filename, done, wrapped)``. ``filename`` is None when the batch is
     finished and ``loop`` is off. ``wrapped`` reports that the done-list was
     cleared and the batch restarted, so the caller can say so in its status line.
     """
-    available = list_images(directory, include_subdirs, sort_by)
+    available = list_images(directory, include_subdirs, sort_by, exclude_dirs)
     remaining = [name for name in available if name not in done]
 
     wrapped = False
@@ -161,7 +168,7 @@ def next_file(directory, done, include_subdirs=False, sort_by="name", loop=False
     return remaining[0], done, wrapped
 
 
-def progress(directory, done, include_subdirs=False, sort_by="name"):
+def progress(directory, done, include_subdirs=False, sort_by="name", exclude_dirs=()):
     """Counts for the node's status line: ``(processed, total, remaining)``.
 
     ``processed`` is simply how many files have been handed out — so a caller
@@ -171,7 +178,7 @@ def progress(directory, done, include_subdirs=False, sort_by="name"):
     ``total`` counts files still in the directory plus those already moved out,
     so the denominator does not shrink as a move-mode batch empties the folder.
     """
-    available = list_images(directory, include_subdirs, sort_by)
+    available = list_images(directory, include_subdirs, sort_by, exclude_dirs)
     present = set(available)
     moved_away = [name for name in done if name not in present]
     total = len(available) + len(moved_away)

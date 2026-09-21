@@ -20,6 +20,7 @@ gate.
 from .loader import FVM_BatchLoadImage
 from .router import FVM_BatchRouter
 from .saver import FVM_BatchSaveImage
+from .save_multi import FVM_BatchSaveMulti
 from .reality import FVM_RealityCheck, FVM_RealityCheckProbe
 
 
@@ -29,6 +30,7 @@ NODE_CLASS_MAPPINGS = {
     "FVM_RealityCheckProbe": FVM_RealityCheckProbe,
     "FVM_BatchRouter": FVM_BatchRouter,
     "FVM_BatchSaveImage": FVM_BatchSaveImage,
+    "FVM_BatchSaveMulti": FVM_BatchSaveMulti,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -37,6 +39,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "FVM_RealityCheckProbe": "Reality Check Probe",
     "FVM_BatchRouter": "Batch Router",
     "FVM_BatchSaveImage": "Batch Save Image",
+    "FVM_BatchSaveMulti": "Batch Save Multi",
 }
 
 __all__ = [
@@ -45,6 +48,7 @@ __all__ = [
     "FVM_RealityCheckProbe",
     "FVM_BatchRouter",
     "FVM_BatchSaveImage",
+    "FVM_BatchSaveMulti",
     "NODE_CLASS_MAPPINGS",
     "NODE_DISPLAY_NAME_MAPPINGS",
 ]

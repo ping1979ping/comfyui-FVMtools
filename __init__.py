@@ -704,6 +704,47 @@ try:
         print(f"[FVMtools] Sign Tools konnten nicht geladen werden: {_sign_error}")
         traceback.print_exc()
 
+    # ── Batch Tools — folder walker, reality check, pass/reject routing ──
+    try:
+        from .nodes.batch import (
+            NODE_CLASS_MAPPINGS as _BATCH_CLASSES,
+            NODE_DISPLAY_NAME_MAPPINGS as _BATCH_NAMES,
+        )
+
+        NODE_CLASS_MAPPINGS.update(_BATCH_CLASSES)
+        NODE_DISPLAY_NAME_MAPPINGS.update(_BATCH_NAMES)
+        print(f"[FVMtools] Batch Tools: {len(_BATCH_CLASSES)} Batch-Nodes registriert")
+
+        from .nodes.batch.loader import reset_tracker, tracker_status
+
+        @PromptServer.instance.routes.get("/fvmtools/batch/status")
+        async def _get_batch_status(request):
+            """Live counts for the loader's progress bar.
+
+            Read straight from disk so the node shows how far a folder has got
+            without anyone having to queue a run first.
+            """
+            query = request.rel_url.query
+            return web.json_response(tracker_status(
+                query.get("directory", ""),
+                query.get("tracker", "default"),
+                query.get("include_subdirs", "") in ("1", "true", "True"),
+                query.get("sort_by", "name"),
+                exclude_dirs=[d for d in query.get("exclude", "").split("|") if d],
+            ))
+
+        @PromptServer.instance.routes.post("/fvmtools/batch/reset")
+        async def _post_batch_reset(request):
+            """Forget a tracker's progress — the loader's Reset button."""
+            body = await request.json()
+            ok = reset_tracker(body.get("directory", ""), body.get("tracker", "default"))
+            return web.json_response({"success": ok})
+    except Exception as _batch_error:  # pragma: no cover
+        import traceback
+
+        print(f"[FVMtools] Batch Tools konnten nicht geladen werden: {_batch_error}")
+        traceback.print_exc()
+
     WEB_DIRECTORY = "./web/js"
 except ImportError:
     # Running outside ComfyUI context (e.g. pytest) — skip node registration

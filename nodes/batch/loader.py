@@ -148,13 +148,14 @@ class FVM_BatchLoadImage:
         tracker = (tracker or "default").strip() or "default"
         done = get_done(directory, tracker)
 
+        exclude = [pass_subdir or "", fail_subdir or ""]
         filename, done, wrapped = next_file(
             directory, done, include_subdirs=include_subdirs, sort_by=sort_by,
-            loop=on_finish == "loop",
+            loop=on_finish == "loop", exclude_dirs=exclude,
         )
 
         if filename is None:
-            total = len(list_images(directory, include_subdirs, sort_by)) or len(done)
+            total = len(list_images(directory, include_subdirs, sort_by, exclude)) or len(done)
             message = (f"[FVM Batch Load] Finished: all {total} images in "
                        f"{directory} have been handed out (tracker '{tracker}'). "
                        f"Reset the progress in the node to run it again.")
@@ -165,7 +166,8 @@ class FVM_BatchLoadImage:
         image, mask = load_image_file(source_path)
 
         done = set(done) | {filename}
-        position, total, remaining = progress(directory, done, include_subdirs, sort_by)
+        position, total, remaining = progress(directory, done, include_subdirs, sort_by,
+                                              exclude)
         set_done(directory, done, tracker, extra={"last": filename})
 
         pass_dir = os.path.join(directory, (pass_subdir or "").strip()) if pass_subdir.strip() else directory
@@ -202,14 +204,15 @@ def reset_tracker(directory, tracker="default"):
     return clear_done(directory, (tracker or "default").strip() or "default")
 
 
-def tracker_status(directory, tracker="default", include_subdirs=False, sort_by="name"):
+def tracker_status(directory, tracker="default", include_subdirs=False, sort_by="name",
+                   exclude_dirs=()):
     """Counts for the node's status line without running the graph."""
     directory = os.path.abspath(os.path.expanduser((directory or "").strip().strip('"')))
     if not os.path.isdir(directory):
         return {"ok": False, "error": "not a directory", "total": 0,
                 "done": 0, "remaining": 0}
     done = get_done(directory, (tracker or "default").strip() or "default")
-    available = list_images(directory, include_subdirs, sort_by)
+    available = list_images(directory, include_subdirs, sort_by, exclude_dirs)
     moved_away = [name for name in done if name not in set(available)]
     total = len(available) + len(moved_away)
     remaining = len([name for name in available if name not in done])

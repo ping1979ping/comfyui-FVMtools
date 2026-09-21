@@ -23,6 +23,10 @@ async function refreshStatus(node) {
         tracker: String(widgetValue(node, "tracker") || "default"),
         sort_by: String(widgetValue(node, "sort_by") || "name"),
         include_subdirs: widgetValue(node, "include_subdirs") ? "1" : "0",
+        exclude: [widgetValue(node, "pass_subdir"), widgetValue(node, "fail_subdir")]
+            .map((v) => String(v || "").trim())
+            .filter(Boolean)
+            .join("|"),
     });
     try {
         const response = await api.fetchApi(`/fvmtools/batch/status?${params}`);
@@ -142,7 +146,7 @@ app.registerExtension({
 
                 // Re-read the folder whenever the inputs that define it change.
                 const node = this;
-                for (const name of ["directory", "tracker", "sort_by", "include_subdirs"]) {
+                for (const name of ["directory", "tracker", "sort_by", "include_subdirs", "pass_subdir", "fail_subdir"]) {
                     const widget = this.widgets?.find((w) => w.name === name);
                     if (!widget) continue;
                     const callback = widget.callback;
