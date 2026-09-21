@@ -8,6 +8,6 @@
 "PA" | 0.25 | top,outerwear | bold block letters
 "TEEN" | 0.20 | top | bold script
 "PROM 2026" | 0.25 | top,outerwear | bold script
-"CLASS OF 27" | 0.25 | top,outerwear | varsity block
+"CLASS OF 26" | 0.25 | top,outerwear | varsity block
 "HOMECOMING" | 0.20 | top,outerwear | bold script
 "BFF" | 0.20 | top | bold script

@@ -90,6 +90,8 @@ def test_stitcher_array_input_appends():
 
 
 def test_stitcher_bare_string_input_synthetic_key():
+    """Bare strings land under their slot name — an ordinary key, NOT a
+    private '_'-prefixed one, so ``natural`` output keeps them."""
     raw, _ = _stitch(
         "scene",
         input_1='{"location": "studio"}',
@@ -115,16 +117,21 @@ def test_stitcher_loose_keys_output():
     assert '"outfit"' not in string_out
 
 
-def test_stitcher_strips_all_quote_chars_in_loose_keys_output():
-    """User's rule: NO `"` chars in loose_keys output, even ones that were
-    embedded literally in input values."""
+def test_stitcher_preserves_quote_chars_in_loose_keys_output():
+    """Quotes the user typed INSIDE a value are content and survive.
+
+    Same deliberate rule as ``test_emit_loose_keys_preserves_quote_chars_inside_values``
+    (commit d2dda5b, 2026-05-02, reversing cb4d9f0): only the structural
+    JSON quotes around keys and values are dropped.
+    """
     _, string_out = _stitch(
         "outfit",
         output_format="loose_keys",
         input_1='{"label": "tanned european \\"SUPI\\""}',
     )
-    assert '"' not in string_out
-    assert "tanned european SUPI" in string_out
+    assert 'label: tanned european "SUPI"' in string_out
+    assert '"label"' not in string_out
+    assert '"outfit"' not in string_out
 
 
 def test_stitcher_no_inputs_emits_empty_object():
@@ -251,12 +258,13 @@ def test_extractor_string_output_strips_value_quotes():
     assert '"face"' not in string_out
 
 
-def test_extractor_strips_all_quote_chars_in_loose_keys_output():
-    """User's rule: NO `"` chars in loose_keys output anywhere."""
+def test_extractor_preserves_quote_chars_in_loose_keys_output():
+    """Same rule as the stitcher: value-internal quotes are content (d2dda5b)."""
     src = '{"face": {"ethnicity": "tanned european \\"SUPI\\""}}'
     _, string_out, _ = _extract(src, "face")
-    assert '"' not in string_out
-    assert "tanned european SUPI" in string_out
+    assert 'ethnicity: tanned european "SUPI"' in string_out
+    assert '"ethnicity"' not in string_out
+    assert '"face"' not in string_out
 
 
 # ─── Stitcher → Extractor end-to-end ──────────────────────────────────

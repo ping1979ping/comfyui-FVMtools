@@ -17,7 +17,9 @@ class InpaintOptions:
         "- denoise_progression / steps_progression: per-round overrides\n"
         "  Format: values separated by | (e.g. '0.5|0.3' for 2 rounds)\n"
         "  When rounds=1 or empty, PersonDetailer's global denoise/steps are used.\n"
-        "- detail_daemon: enable/disable Detail Daemon per slot"
+        "- detail_daemon: enable/disable Detail Daemon per slot\n"
+        "- delta_clamp: how far a pixel may change when the crop is blended back\n"
+        "- feather_direction: which side of the mask edge mask_blend_pixels ramps on"
     )
 
     @classmethod
@@ -64,6 +66,61 @@ class InpaintOptions:
                            "smooth — follows the exact mask shape using distance transform.\n"
                            "  Best for irregular masks (body parts, accessories).",
             }),
+            "feather_direction": (["both", "inward", "outward"], {
+                "default": "both",
+                "tooltip": "Which side of the mask edge the soft ramp sits on.\n\n"
+                           "Applies to mask_blend_pixels on the Person Detailer node (the\n"
+                           "feather radius), NOT to mask_expand_pixels - expanding still grows\n"
+                           "the mask outward in every direction, in image pixels, before the\n"
+                           "crop is computed. All three modes ramp equally gently; only the\n"
+                           "position of the transition differs.\n\n"
+                           "both - the ramp straddles the boundary, already split evenly:\n"
+                           "  half inside the mask, half outside (0.52 one pixel in, 0.48 one\n"
+                           "  pixel out). Harmless on a compact face mask, because the core is\n"
+                           "  large. On a ring or a strand it hurts twice over: at 32px a hair\n"
+                           "  mask around a face keeps only ~50% of the hair at full strength\n"
+                           "  AND repaints ~24% of the face.\n\n"
+                           "inward - the ramp lies entirely inside the mask. Nothing outside is\n"
+                           "  ever touched. Pick this for hair, accessories, eyes, mouth - any\n"
+                           "  mask wrapped around or next to something that must stay as it is.\n"
+                           "  Costs the outer rim: on a thin mask most of the region ends up in\n"
+                           "  the ramp rather than at full strength, so keep mask_blend_pixels\n"
+                           "  small here. The radius is capped against the mask's own thickness\n"
+                           "  so a wide blend degrades to a narrow one instead of erasing a thin\n"
+                           "  mask - but a capped value is a hint that the number is too big.\n\n"
+                           "outward - the mask core stays fully solid, the ramp lies outside it.\n"
+                           "  The subject is refined at full strength while a band of the\n"
+                           "  surroundings is drawn into the blend. Pick this for face/head/body,\n"
+                           "  where the surroundings are more of the same skin anyway.\n\n"
+                           "Default 'both' keeps existing workflows unchanged."}),
+            "delta_clamp": ("FLOAT", {"default": 0.35, "min": 0.05, "max": 1.0, "step": 0.05,
+                "tooltip": "Maximum change per pixel when the refined crop is blended back.\n\n"
+                           "WHAT IT DOES\n"
+                           "Blending is not a straight paste: for every pixel the difference\n"
+                           "(refined minus original) is measured and capped at this value before\n"
+                           "it is added back. 0.35 means a pixel may move at most 35% of the\n"
+                           "full black-to-white range, no matter what the sampler produced.\n"
+                           "The cap applies at the mask edge and relaxes to unlimited about\n"
+                           "24 px further in, so the seam stays calm while the interior of the\n"
+                           "region gets the refined result in full.\n\n"
+                           "WHY IT EXISTS\n"
+                           "Without a cap, a refine that shifts colour or brightness meets the\n"
+                           "untouched image at the mask border as a hard step - a visible ring\n"
+                           "around the face. The cap keeps that step below the eye's threshold.\n\n"
+                           "WHEN TO RAISE IT\n"
+                           "A capped pixel keeps part of the ORIGINAL value. Where the original\n"
+                           "is very dark and the refined is bright - lashes, mascara, brows,\n"
+                           "stray hair over skin - the leftover shows as grey smears or ghost\n"
+                           "strokes in the blended image, while the 'refined' output preview\n"
+                           "looks clean. That is this cap biting. Raise it or set 1.0.\n\n"
+                           "WHEN TO LOWER IT\n"
+                           "Visible seam, halo or colour ring around the refined region, or the\n"
+                           "refine drifting too far from the rest of the image.\n\n"
+                           "0.35 = default, safe for most faces\n"
+                           "0.15-0.25 = conservative, stays close to the original\n"
+                           "0.60-0.80 = fixes dark-detail ghosting, seam still guarded\n"
+                           "1.00 = no clamping at all (edge protection is then only the\n"
+                           "  feathered blend mask and the boundary colour correction)"}),
             "mask_fill_holes": ("BOOLEAN", {"default": True,
                                              "tooltip": "Fill holes in masks before inpainting (closes gaps in segmentation)"}),
             "context_expand_factor": ("FLOAT", {"default": 1.20, "min": 1.0, "max": 3.0, "step": 0.05,
@@ -153,6 +210,8 @@ class InpaintOptions:
             "negative_prompt": kwargs.get("negative_prompt", ""),
             "denoise_gradient": kwargs.get("denoise_gradient", 0.0),
             "denoise_gradient_mode": kwargs.get("denoise_gradient_mode", "linear"),
+            "delta_clamp": kwargs.get("delta_clamp", 0.35),
+            "feather_direction": kwargs.get("feather_direction", "both"),
             "mask_fill_holes": kwargs["mask_fill_holes"],
             "context_expand_factor": kwargs["context_expand_factor"],
             "output_padding": kwargs["output_padding"],

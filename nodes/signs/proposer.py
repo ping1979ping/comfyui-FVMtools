@@ -13,14 +13,17 @@ still produces usable output from the fallback list instead of failing the run.
 import difflib
 import re
 
-import numpy as np
-import torch
 
 from ..utils.lmstudio_client import (
-    DEFAULT_BASE_URL, DEFAULT_SYSTEM_PROMPT, DEFAULT_TIMEOUT, DEFAULT_TEMPERATURE,
-    propose_text, probe,
+    DEFAULT_BASE_URL,
+    DEFAULT_SYSTEM_PROMPT,
+    DEFAULT_TIMEOUT,
+    DEFAULT_TEMPERATURE,
+    propose_text,
+    probe,
 )
 from ..utils.tensor_utils import tensor2np
+
 try:  # relative inside ComfyUI's loader, absolute under pytest
     from ...core.signs.classes import get_class
 except ImportError:
@@ -136,66 +139,173 @@ class SignTextProposer:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "sign_data": ("SIGN_DATA", {"tooltip": "Regions from Sign Selector SAM3"}),
-                "image": ("IMAGE", {"tooltip": "The same image the selector scanned — used as scene context"}),
-                "base_url": ("STRING", {"default": DEFAULT_BASE_URL,
-                    "tooltip": "LM Studio OpenAI-compatible endpoint"}),
-                "model_id": ("STRING", {"default": "",
-                    "tooltip": "Model id as listed by LM Studio. Empty = use whatever is loaded."}),
-                "enabled": ("BOOLEAN", {"default": True,
-                    "tooltip": "OFF: skip the model entirely and use overrides plus fallbacks only."}),
-                "context_mode": (["crop+scene", "crop_only", "crop+scene+neighbors"], {"default": "crop+scene",
-                    "tooltip": "How much the model sees.\n"
-                               "crop_only is cheapest but invents text that ignores the setting.\n"
-                               "Neighbours help a row of shopfronts stay coherent."}),
-                "scene_hint": ("STRING", {"default": "", "multiline": False,
-                    "tooltip": "Overrides the model's read of the setting, e.g. 'Berlin, 1985' or 'rural Japan'."}),
-                "language": (["auto", "en", "de", "fr", "es", "it", "ja", "zh"], {"default": "auto",
-                    "tooltip": "Language for the proposed text. 'auto' lets the model follow the scene."}),
-                "temperature": ("FLOAT", {"default": DEFAULT_TEMPERATURE, "min": 0.0, "max": 2.0, "step": 0.05,
-                    "tooltip": "Keep at or below 0.2. Measured cliff, not a slope: at 0.2 the model\n"
-                               "never transcribes the garbled original, at 0.25 it does so in half of\n"
-                               "all runs — it lands in the near-miss token neighbourhood and returns\n"
-                               "e.g. 'CAFFEE' because the setting makes that spelling feel authentic.\n"
-                               "Picking the right word for a sign is a low-entropy task; it does not\n"
-                               "benefit from sampling variety."}),
-                "max_tokens": ("INT", {"default": 256, "min": 32, "max": 4096, "step": 32}),
-                "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff,
-                    "tooltip": "Passed through to LM Studio for reproducible proposals"}),
-                "one_call_per_cluster": ("BOOLEAN", {"default": True,
-                    "tooltip": "ON: only the cluster representative is sent; siblings inherit its text."}),
-                "variety_retries": ("INT", {"default": 2, "min": 0, "max": 5, "step": 1,
-                    "tooltip": "How often to ask again when the answer repeats text already used\n"
-                               "elsewhere in this picture. 0 = accept the first answer.\n\n"
-                               "The ban list alone does not always land — the model will return\n"
-                               "the same subject with a different price. Each retry says so\n"
-                               "explicitly and uses a different seed."}),
-                "avoid_repeats": ("BOOLEAN", {"default": True,
-                    "tooltip": "Tell the model which wording it already used elsewhere in this\n"
-                               "picture, so similar-looking motifs get different text.\n\n"
-                               "Each region is a separate request — without this the model has no\n"
-                               "memory of its own answers and returns the same name for every\n"
-                               "bottle on a shelf. Raising temperature would also break the tie,\n"
-                               "but brings back transcription of the original gibberish, so the\n"
-                               "variety comes from a constraint instead.\n\n"
-                               "Cluster siblings still share their text — this only separates\n"
-                               "regions that were NOT grouped together."}),
-                "skip_legible": ("BOOLEAN", {"default": False,
-                    "tooltip": "ON: regions the selector judged already legible are left untouched."}),
-                "timeout": ("INT", {"default": DEFAULT_TIMEOUT, "min": 5, "max": 600, "step": 5}),
-                "manual_override": ("STRING", {"default": "", "multiline": True,
-                    "tooltip": "One per line, 'index: text' using the numbers from the preview.\n"
-                               "Example:\n3: ACHTUNG\n7: Café Mozart\nAlways wins over the model."}),
-                "fallback_texts": ("STRING", {"default": "", "multiline": True,
-                    "tooltip": "Used when the model is unreachable or returns nothing.\n"
-                               "Either 'class: text' lines (sign: OPEN) or a plain list cycled per region."}),
+                "sign_data": (
+                    "SIGN_DATA",
+                    {"tooltip": "Regions from Sign Selector SAM3"},
+                ),
+                "image": (
+                    "IMAGE",
+                    {
+                        "tooltip": "The same image the selector scanned — used as scene context"
+                    },
+                ),
+                "base_url": (
+                    "STRING",
+                    {
+                        "default": DEFAULT_BASE_URL,
+                        "tooltip": "LM Studio OpenAI-compatible endpoint",
+                    },
+                ),
+                "model_id": (
+                    "STRING",
+                    {
+                        "default": "",
+                        "tooltip": "Model id as listed by LM Studio. Empty = use whatever is loaded.",
+                    },
+                ),
+                "enabled": (
+                    "BOOLEAN",
+                    {
+                        "default": True,
+                        "tooltip": "OFF: skip the model entirely and use overrides plus fallbacks only.",
+                    },
+                ),
+                "context_mode": (
+                    ["crop+scene", "crop_only", "crop+scene+neighbors"],
+                    {
+                        "default": "crop+scene",
+                        "tooltip": "How much the model sees.\n"
+                        "crop_only is cheapest but invents text that ignores the setting.\n"
+                        "Neighbours help a row of shopfronts stay coherent.",
+                    },
+                ),
+                "scene_hint": (
+                    "STRING",
+                    {
+                        "default": "",
+                        "multiline": False,
+                        "tooltip": "Overrides the model's read of the setting, e.g. 'Berlin, 1985' or 'rural Japan'.",
+                    },
+                ),
+                "language": (
+                    ["auto", "en", "de", "fr", "es", "it", "ja", "zh"],
+                    {
+                        "default": "auto",
+                        "tooltip": "Language for the proposed text. 'auto' lets the model follow the scene.",
+                    },
+                ),
+                "temperature": (
+                    "FLOAT",
+                    {
+                        "default": DEFAULT_TEMPERATURE,
+                        "min": 0.0,
+                        "max": 2.0,
+                        "step": 0.05,
+                        "tooltip": "Keep at or below 0.2. Measured cliff, not a slope: at 0.2 the model\n"
+                        "never transcribes the garbled original, at 0.25 it does so in half of\n"
+                        "all runs — it lands in the near-miss token neighbourhood and returns\n"
+                        "e.g. 'CAFFEE' because the setting makes that spelling feel authentic.\n"
+                        "Picking the right word for a sign is a low-entropy task; it does not\n"
+                        "benefit from sampling variety.",
+                    },
+                ),
+                "max_tokens": (
+                    "INT",
+                    {"default": 256, "min": 32, "max": 4096, "step": 32},
+                ),
+                "seed": (
+                    "INT",
+                    {
+                        "default": 0,
+                        "min": 0,
+                        "max": 0xFFFFFFFFFFFFFFFF,
+                        "tooltip": "Passed through to LM Studio for reproducible proposals",
+                    },
+                ),
+                "one_call_per_cluster": (
+                    "BOOLEAN",
+                    {
+                        "default": True,
+                        "tooltip": "ON: only the cluster representative is sent; siblings inherit its text.",
+                    },
+                ),
+                "variety_retries": (
+                    "INT",
+                    {
+                        "default": 2,
+                        "min": 0,
+                        "max": 5,
+                        "step": 1,
+                        "tooltip": "How often to ask again when the answer repeats text already used\n"
+                        "elsewhere in this picture. 0 = accept the first answer.\n\n"
+                        "The ban list alone does not always land — the model will return\n"
+                        "the same subject with a different price. Each retry says so\n"
+                        "explicitly and uses a different seed.",
+                    },
+                ),
+                "avoid_repeats": (
+                    "BOOLEAN",
+                    {
+                        "default": True,
+                        "tooltip": "Tell the model which wording it already used elsewhere in this\n"
+                        "picture, so similar-looking motifs get different text.\n\n"
+                        "Each region is a separate request — without this the model has no\n"
+                        "memory of its own answers and returns the same name for every\n"
+                        "bottle on a shelf. Raising temperature would also break the tie,\n"
+                        "but brings back transcription of the original gibberish, so the\n"
+                        "variety comes from a constraint instead.\n\n"
+                        "Cluster siblings still share their text — this only separates\n"
+                        "regions that were NOT grouped together.",
+                    },
+                ),
+                "skip_legible": (
+                    "BOOLEAN",
+                    {
+                        "default": False,
+                        "tooltip": "ON: regions the selector judged already legible are left untouched.",
+                    },
+                ),
+                "timeout": (
+                    "INT",
+                    {"default": DEFAULT_TIMEOUT, "min": 5, "max": 600, "step": 5},
+                ),
+                "manual_override": (
+                    "STRING",
+                    {
+                        "default": "",
+                        "multiline": True,
+                        "tooltip": "One per line, 'index: text' using the numbers from the preview.\n"
+                        "Example:\n3: ACHTUNG\n7: Café Mozart\nAlways wins over the model.",
+                    },
+                ),
+                "fallback_texts": (
+                    "STRING",
+                    {
+                        "default": "",
+                        "multiline": True,
+                        "tooltip": "Used when the model is unreachable or returns nothing.\n"
+                        "Either 'class: text' lines (sign: OPEN) or a plain list cycled per region.",
+                    },
+                ),
             },
             "optional": {
-                "system_prompt": ("STRING", {"default": DEFAULT_SYSTEM_PROMPT, "multiline": True,
-                    "tooltip": "System prompt. Must keep demanding a single JSON object."}),
-                "class_instructions": ("STRING", {"default": "", "multiline": True,
-                    "tooltip": "Per-class extra instruction, 'class: instruction' per line.\n"
-                               "Example: plate: use a German plate format like B-XY 1234"}),
+                "system_prompt": (
+                    "STRING",
+                    {
+                        "default": DEFAULT_SYSTEM_PROMPT,
+                        "multiline": True,
+                        "tooltip": "System prompt. Must keep demanding a single JSON object.",
+                    },
+                ),
+                "class_instructions": (
+                    "STRING",
+                    {
+                        "default": "",
+                        "multiline": True,
+                        "tooltip": "Per-class extra instruction, 'class: instruction' per line.\n"
+                        "Example: plate: use a German plate format like B-XY 1234",
+                    },
+                ),
             },
         }
 
@@ -213,20 +323,43 @@ class SignTextProposer:
         scored.sort(key=lambda t: t[0])
         return [r for _, r in scored[:limit]]
 
-    def execute(self, sign_data, image, base_url=DEFAULT_BASE_URL, model_id="", enabled=True,
-                context_mode="crop+scene", scene_hint="", language="auto",
-                temperature=DEFAULT_TEMPERATURE, max_tokens=256, seed=0, one_call_per_cluster=True,
-                avoid_repeats=True, variety_retries=2,
-                skip_legible=False, timeout=DEFAULT_TIMEOUT, manual_override="",
-                fallback_texts="", system_prompt=None, class_instructions=""):
+    def execute(
+        self,
+        sign_data,
+        image,
+        base_url=DEFAULT_BASE_URL,
+        model_id="",
+        enabled=True,
+        context_mode="crop+scene",
+        scene_hint="",
+        language="auto",
+        temperature=DEFAULT_TEMPERATURE,
+        max_tokens=256,
+        seed=0,
+        one_call_per_cluster=True,
+        avoid_repeats=True,
+        variety_retries=2,
+        skip_legible=False,
+        timeout=DEFAULT_TIMEOUT,
+        manual_override="",
+        fallback_texts="",
+        system_prompt=None,
+        class_instructions="",
+    ):
 
         # Shallow-copy each region before writing proposals into it. ComfyUI hands
         # every downstream node the SAME cached object, so mutating in place would
         # let two Proposers on one Selector overwrite each other's texts. The heavy
         # values (mask, crop) stay shared by reference — nothing mutates them.
-        source_regions = sign_data.get("regions", []) if isinstance(sign_data, dict) else []
+        source_regions = (
+            sign_data.get("regions", []) if isinstance(sign_data, dict) else []
+        )
         regions = [dict(r) for r in source_regions]
-        sign_data = {**sign_data, "regions": regions} if isinstance(sign_data, dict) else sign_data
+        sign_data = (
+            {**sign_data, "regions": regions}
+            if isinstance(sign_data, dict)
+            else sign_data
+        )
         overrides = _parse_overrides(manual_override)
         fb_keyed, fb_plain = _parse_fallbacks(fallback_texts)
         class_instr = {}
@@ -238,27 +371,43 @@ class SignTextProposer:
         report = [f"Sign Text Proposer — {len(regions)} region(s)"]
 
         if enabled and temperature > DEFAULT_TEMPERATURE:
-            warning = (f"WARNING: temperature {temperature:.2f} is above the measured cliff at "
-                       f"{DEFAULT_TEMPERATURE}. Above it the model starts transcribing the garbled "
-                       f"original instead of replacing it (half of all runs at 0.25). Lower it "
-                       f"unless you are deliberately trading correctness for variety.")
+            warning = (
+                f"WARNING: temperature {temperature:.2f} is above the measured cliff at "
+                f"{DEFAULT_TEMPERATURE}. Above it the model starts transcribing the garbled "
+                f"original instead of replacing it (half of all runs at 0.25). Lower it "
+                f"unless you are deliberately trading correctness for variety."
+            )
             report.append(warning)
             print(f"[SignTextProposer] {warning}")
 
-        status = probe(base_url, timeout=5) if enabled else {"reachable": False, "models": [], "error": "disabled"}
+        status = (
+            probe(base_url, timeout=5)
+            if enabled
+            else {"reachable": False, "models": [], "error": "disabled"}
+        )
         if enabled:
             if status.get("reachable"):
                 found = status.get("models", [])
-                report.append(f"LM Studio reachable, {len(found)} model(s): {', '.join(found[:4])}")
+                report.append(
+                    f"LM Studio reachable, {len(found)} model(s): {', '.join(found[:4])}"
+                )
                 if model_id and found and model_id not in found:
-                    report.append(f"WARNING: '{model_id}' is not in the list — LM Studio may reject the call")
+                    report.append(
+                        f"WARNING: '{model_id}' is not in the list — LM Studio may reject the call"
+                    )
             else:
-                report.append(f"LM Studio NOT reachable ({status.get('error')}) — using overrides and fallbacks")
+                report.append(
+                    f"LM Studio NOT reachable ({status.get('error')}) — using overrides and fallbacks"
+                )
         else:
-            report.append("Model disabled by the enabled toggle — using overrides and fallbacks")
+            report.append(
+                "Model disabled by the enabled toggle — using overrides and fallbacks"
+            )
 
         use_model = enabled and status.get("reachable", False)
-        scene_rgb = tensor2np(image[0:1]) if image is not None and image.shape[0] > 0 else None
+        scene_rgb = (
+            tensor2np(image[0:1]) if image is not None and image.shape[0] > 0 else None
+        )
 
         cluster_cache = {}
         fb_cursor = 0
@@ -266,16 +415,21 @@ class SignTextProposer:
         retried, duplicates = 0, 0
         # Wording already used in this picture. Keyed by cluster so siblings can
         # still share a text — only regions that were NOT grouped are pushed apart.
-        used_texts = {}          # cluster_id (or -1-index) -> text
+        used_texts = {}  # cluster_id (or -1-index) -> text
 
         for i, region in enumerate(regions):
             cls_name = region.get("class", "sign")
 
             if i in overrides:
                 region["proposal"] = {
-                    "text": overrides[i], "style": "", "font_hint": "",
-                    "legible_original": 0.0, "confidence": 1.0,
-                    "ok": True, "error": None, "source": "manual",
+                    "text": overrides[i],
+                    "style": "",
+                    "font_hint": "",
+                    "legible_original": 0.0,
+                    "confidence": 1.0,
+                    "ok": True,
+                    "error": None,
+                    "source": "manual",
                 }
                 # A hand-set text is still text in this picture — the model must
                 # not propose the same thing for the region next to it.
@@ -284,11 +438,34 @@ class SignTextProposer:
                 report.append(f"  #{i + 1} manual override: {overrides[i]!r}")
                 continue
 
+            # A surface, not a sign. It still needs a description — the caption
+            # has to say what the clean glass or wall looks like — but it must
+            # not be given a word, and asking the model for one wastes a call and
+            # invites it to invent a shop that then gets painted across a window.
+            if region.get("too_big"):
+                region["proposal"] = {
+                    "text": "",
+                    "style": "",
+                    "font_hint": "",
+                    "legible_original": 0.0,
+                    "confidence": 1.0,
+                    "ok": True,
+                    "error": None,
+                    "source": "surface",
+                }
+                report.append(f"  #{i + 1} surface, not a sign — will be cleared")
+                continue
+
             if skip_legible and region.get("slop", {}).get("verdict") == "clean":
                 region["proposal"] = {
-                    "text": region.get("slop", {}).get("ocr_text", ""), "style": "", "font_hint": "",
-                    "legible_original": 1.0, "confidence": 1.0,
-                    "ok": True, "error": None, "source": "kept",
+                    "text": region.get("slop", {}).get("ocr_text", ""),
+                    "style": "",
+                    "font_hint": "",
+                    "legible_original": 1.0,
+                    "confidence": 1.0,
+                    "ok": True,
+                    "error": None,
+                    "source": "kept",
                 }
                 kept_text = region.get("slop", {}).get("ocr_text", "").strip()
                 if kept_text:
@@ -302,9 +479,14 @@ class SignTextProposer:
                 inheritedProposal["source"] = "cluster"
                 region["proposal"] = inheritedProposal
                 inherited += 1
-                report.append(f"  #{i + 1} inherits cluster {cid}: {inheritedProposal['text']!r}"
-                              + (f" [{inheritedProposal['style']}]"
-                                 if inheritedProposal.get("style", "").strip() else ""))
+                report.append(
+                    f"  #{i + 1} inherits cluster {cid}: {inheritedProposal['text']!r}"
+                    + (
+                        f" [{inheritedProposal['style']}]"
+                        if inheritedProposal.get("style", "").strip()
+                        else ""
+                    )
+                )
                 continue
 
             proposal = None
@@ -317,24 +499,53 @@ class SignTextProposer:
 
                 # Everything already used in this picture, except this region's
                 # own cluster — siblings are meant to match, strangers are not.
-                avoid = ([t for k, t in used_texts.items() if k != own_key]
-                         if avoid_repeats else None)
+                avoid = (
+                    [t for k, t in used_texts.items() if k != own_key]
+                    if avoid_repeats
+                    else None
+                )
 
                 base_instruction = class_instr.get(
-                    cls_name, get_class(cls_name)["vlm_instruction"])
+                    cls_name, get_class(cls_name)["vlm_instruction"]
+                )
                 others = [t for k, t in used_texts.items() if k != own_key]
+
+                # The strongest thing to forbid is what is already painted there.
+                # Told in words not to read the sign, the model still does it: on
+                # this street it returned `SANE PITEI` and `HOTEL RASTOAE`, which
+                # are the original nonsense with a letter shaved off, and they
+                # came back through the pipeline looking like a proposal. The
+                # instruction is a request; this is a check. The region's own OCR
+                # reading joins the ban list, so a transcription trips the retry
+                # that already exists for repeats.
+                eigen = (region.get("slop", {}).get("ocr_text") or "").strip()
+                if eigen:
+                    others = others + [eigen]
+                    if avoid_repeats and avoid is not None:
+                        avoid = avoid + [eigen]
+                # Said out loud, because a ban list with nothing in it looks
+                # exactly like a ban list that did not work.
+                report.append(
+                    f"  #{i + 1} original reading: {eigen!r}"
+                    if eigen
+                    else f"  #{i + 1} original reading: none — OCR gave nothing"
+                )
 
                 # Ask again when the answer is a re-run of one already handed
                 # out. The ban list alone does not always land: the model happily
                 # returns the same subject with a different price.
-                attempts = 1 + (max(0, variety_retries) if avoid_repeats and others else 0)
+                attempts = 1 + (
+                    max(0, variety_retries) if avoid_repeats and others else 0
+                )
                 for attempt in range(attempts):
                     extra = ""
                     if attempt:
-                        extra = (" You already suggested something too close to text elsewhere "
-                                 "in this picture. Change the SUBJECT completely - a different "
-                                 "kind of notice about a different thing, not the same message "
-                                 "reworded or repriced.")
+                        extra = (
+                            " You already suggested something too close to text elsewhere "
+                            "in this picture. Change the SUBJECT completely - a different "
+                            "kind of notice about a different thing, not the same message "
+                            "reworded or repriced."
+                        )
                     proposal = propose_text(
                         avoid_texts=avoid,
                         max_chars=region.get("text_capacity"),
@@ -360,14 +571,50 @@ class SignTextProposer:
                         break
                     if attempt < attempts - 1:
                         retried += 1
-                        report.append(f"  #{i + 1} {candidate!r} repeats earlier text — asking again")
+                        report.append(
+                            f"  #{i + 1} {candidate!r} repeats earlier text — asking again"
+                        )
                     else:
-                        duplicates += 1
-                        report.append(f"  #{i + 1} still repetitive after {attempts} tries: {candidate!r}")
+                        # Asking a fifth time is not a plan. Measured on a street
+                        # of 24 regions: 21 re-asks, and for the small distant
+                        # signs the model returned the SAME word every time —
+                        # `PHARMACY` four times, `TEA ROOM` three — because on a
+                        # 20px illegible crop its vocabulary collapses to the
+                        # most typical shop it knows. The ban list is in the
+                        # prompt and it reads straight past it. So the ban stops
+                        # being a request: take the first word from the fallback
+                        # list that has not been used, and if that runs out, say
+                        # nothing rather than say it twice. Repeated text is one
+                        # of the things this whole exercise exists to remove.
+                        ersatz = next(
+                            (
+                                t
+                                for t in fb_plain
+                                if t.strip() and not is_too_similar(t.strip(), others)
+                            ),
+                            "",
+                        )
+                        if ersatz:
+                            proposal["text"] = ersatz.strip()
+                            proposal["source"] = "fallback-unique"
+                            candidate = ersatz.strip()
+                            report.append(
+                                f"  #{i + 1} model stuck on {candidate!r} after "
+                                f"{attempts} tries — taking unused {ersatz.strip()!r}"
+                            )
+                        else:
+                            duplicates += 1
+                            proposal["text"] = ""
+                            report.append(
+                                f"  #{i + 1} stuck on a repeat after {attempts} tries "
+                                f"and no unused fallback left — left blank"
+                            )
                 if proposal.get("ok") and proposal.get("text", "").strip():
                     made += 1
-                    report.append(f"  #{i + 1} {cls_name}: {proposal['text']!r} "
-                                  f"(legible_original={proposal.get('legible_original', 0):.2f})")
+                    report.append(
+                        f"  #{i + 1} {cls_name}: {proposal['text']!r} "
+                        f"(legible_original={proposal.get('legible_original', 0):.2f})"
+                    )
                     # style carries the surface description into the diffusion
                     # prompt, so it needs to be visible when a result looks off.
                     if proposal.get("style", "").strip():
@@ -376,7 +623,9 @@ class SignTextProposer:
                         report.append(f"        font:  {proposal['font_hint']}")
                 else:
                     failed += 1
-                    report.append(f"  #{i + 1} {cls_name}: model gave nothing ({proposal.get('error')})")
+                    report.append(
+                        f"  #{i + 1} {cls_name}: model gave nothing ({proposal.get('error')})"
+                    )
                     proposal = None
 
             if proposal is None:
@@ -387,9 +636,13 @@ class SignTextProposer:
                 if not text:
                     text = region.get("slop", {}).get("ocr_text", "").strip()
                 proposal = {
-                    "text": text, "style": "", "font_hint": "",
-                    "legible_original": 0.0, "confidence": 0.0,
-                    "ok": bool(text), "error": None,
+                    "text": text,
+                    "style": "",
+                    "font_hint": "",
+                    "legible_original": 0.0,
+                    "confidence": 0.0,
+                    "ok": bool(text),
+                    "error": None,
                     "source": "fallback" if text else "empty",
                 }
                 if text:
@@ -404,7 +657,9 @@ class SignTextProposer:
                     cluster_cache.setdefault(cid, proposal)
                 used_texts.setdefault(own_key, proposal["text"].strip())
 
-        summary = f"Summary: {made} from the model, {inherited} inherited, {failed} failed"
+        summary = (
+            f"Summary: {made} from the model, {inherited} inherited, {failed} failed"
+        )
         if retried:
             summary += f", {retried} re-asked for variety"
         if duplicates:
@@ -418,13 +673,17 @@ class SignTextProposer:
         lines = ["#\tclass\tsource\ttext\tstyle\tfont_hint"] if regions else []
         for i, r in enumerate(regions):
             p = r.get("proposal") or {}
-            lines.append("\t".join([
-                str(i + 1),
-                str(r.get("class", "?")),
-                str(p.get("source", "-")),
-                str(p.get("text", "")),
-                str(p.get("style", "")),
-                str(p.get("font_hint", "")),
-            ]))
+            lines.append(
+                "\t".join(
+                    [
+                        str(i + 1),
+                        str(r.get("class", "?")),
+                        str(p.get("source", "-")),
+                        str(p.get("text", "")),
+                        str(p.get("style", "")),
+                        str(p.get("font_hint", "")),
+                    ]
+                )
+            )
 
         return (sign_data, "\n".join(lines), "\n".join(report))

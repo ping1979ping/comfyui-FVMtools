@@ -573,9 +573,9 @@ class TestNodeContracts:
 
     def test_registration_mappings_are_consistent(self):
         assert set(NODE_CLASS_MAPPINGS) == set(NODE_DISPLAY_NAME_MAPPINGS)
-        assert len(NODE_CLASS_MAPPINGS) == 4
+        assert len(NODE_CLASS_MAPPINGS) == 7
         for key in NODE_CLASS_MAPPINGS:
-            assert key.startswith("FVM_Sign")
+            assert key.startswith(("FVM_Sign", "FVM_Scene"))
 
 
 class TestProposerExecute:

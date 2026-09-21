@@ -3,7 +3,7 @@
 
 large flat-screen wall-mounted TV | 1.0 | 0.4-0.8 | glossy black screen with movie scene
 neutral painted living room wall | 0.85 | 0.5-1.0 | matte beige interior pigment
-gallery wall of family pictures | 0.7 | 0.4-0.8 | framed photo cluster
+gallery wall of family pictures | 0.0 | 0.4-0.8 | framed photo cluster
 floor-to-ceiling drawn curtains | 0.75 | 0.5-1.0 | heavy darkening drapes
 exposed brick accent wall | 0.55 | 0.5-0.9 | aged red masonry
 wallpapered feature wall | 0.6 | 0.5-0.9 | patterned printed paper

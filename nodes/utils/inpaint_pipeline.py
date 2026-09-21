@@ -248,12 +248,34 @@ def _flatten_video_frames(decoded):
     return decoded
 
 
+def _delta_limit_map(mask_np, edge_limit, falloff_px):
+    """Per-pixel ceiling for the stitch delta, tight at the seam, free inside.
+
+    The clamp exists to stop colour jumps where the refined crop meets the
+    untouched image. Applying that same ceiling across the whole mask is what
+    leaves ghosts: a dark original (mascara, lashes, a brow) under bright
+    refined skin needs a delta far beyond the seam budget, and clipping it
+    paints the old dark pixels back in at reduced strength. So the ceiling
+    relaxes to 1.0 (no clamp — deltas live in [-1, 1]) a short distance in.
+    """
+    dist = cv2.distanceTransform((mask_np > 0.5).astype(np.uint8), cv2.DIST_L2, 5)
+    max_dist = float(dist.max())
+    if max_dist <= 0:
+        return None  # nothing solidly inside the mask; caller keeps the flat clamp
+    # A small mask never reaches falloff_px, so scale the ramp to what is there:
+    # the deepest point of any mask is always fully unclamped.
+    reach = max(1.0, min(float(falloff_px), max_dist))
+    ramp = np.clip(dist / reach, 0.0, 1.0)
+    return (edge_limit + (1.0 - edge_limit) * ramp).astype(np.float32)
+
+
 def stitch_back(original_image, decoded_crop, blend_mask_orig, crop, stitch_info,
-                denoise=0.5):
+                denoise=0.5, delta_clamp=0.35, delta_clamp_falloff_px=24):
     """Stitch decoded crop back into original image.
 
-    Uses feathered alpha blend with boundary color correction and delta clamping
-    to prevent visible seams at mask edges.
+    Uses feathered alpha blend with boundary color correction and a
+    distance-scaled delta clamp to prevent visible seams at mask edges without
+    holding back the refined content in the interior.
     """
     x, y = stitch_info["x"], stitch_info["y"]
     actual_w, actual_h = stitch_info["w"], stitch_info["h"]
@@ -283,7 +305,16 @@ def stitch_back(original_image, decoded_crop, blend_mask_orig, crop, stitch_info
 
     # Delta clamping: prevent extreme color jumps at edges
     delta = decoded_actual - orig_region
-    delta = delta.clamp(-0.35, 0.35)
+    edge_limit = float(delta_clamp)
+    if edge_limit < 1.0:
+        limit_np = _delta_limit_map(
+            blend_mask_orig.cpu().numpy(), edge_limit, delta_clamp_falloff_px
+        )
+        if limit_np is None:
+            delta = delta.clamp(-edge_limit, edge_limit)
+        else:
+            limit = torch.from_numpy(limit_np).to(delta.device).unsqueeze(-1)
+            delta = torch.maximum(torch.minimum(delta, limit), -limit)
     result[y:y + actual_h, x:x + actual_w, :] = orig_region + delta * blend_3c
 
     return result
@@ -331,6 +362,8 @@ def inpaint_slot(
     cfg=1.0,
     denoise_gradient=0.0,
     denoise_gradient_mode="linear",
+    delta_clamp=0.35,
+    feather_direction="both",
     noise_mask_2d=None,
 ):
     """Run the full inpaint pipeline for a single masked region.
@@ -355,6 +388,12 @@ def inpaint_slot(
         (stitched_image [H,W,C], refined_crop [1, tH, tW, C])
         or (image, None) if mask is empty
     """
+    # An RGBA image (GLSL/shader nodes, PNG loads that keep transparency) would
+    # survive the VAE — it slices to 3 — and then fail in stitch_back, where a
+    # 3-channel delta meets a 4-channel region. Trim once, up front.
+    if image.shape[-1] > 3:
+        image = image[..., :3]
+
     # Step 1: Mask preprocessing (fill/expand return new tensors, no clone needed)
     processed_mask = mask_2d
     if mask_fill_holes:
@@ -375,8 +414,19 @@ def inpaint_slot(
     x_end = min(x + crop["w"], processed_mask.shape[1])
     y_end = min(y + crop["h"], processed_mask.shape[0])
     blend_mask_orig = processed_mask[y:y_end, x:x_end].clone()
+    # mask_blend_pixels is defined in SAMPLING resolution (target_width/height),
+    # the one fixed frame in the pipeline. The blend mask lives at original
+    # resolution, so the radius is converted back through the crop scale — the
+    # two ramps then cover the same strip of the picture. Before this, the same
+    # number meant two different physical widths: on a 380px crop resized to
+    # 800, a 32px sampler ramp was only ~15px of the image.
+    blend_px_orig = 0
     if mask_blend_pixels > 0:
-        blend_mask_orig = feather_mask(blend_mask_orig, mask_blend_pixels)
+        sampling_scale = target_width / max(1, crop["w"])
+        blend_px_orig = min(256, max(1, int(round(mask_blend_pixels / sampling_scale))))
+        blend_mask_orig = feather_mask(blend_mask_orig, blend_px_orig, feather_direction)
+        print(f"      blend {mask_blend_pixels}px @ {target_width}px sampling "
+              f"= {blend_px_orig}px in the image (crop {crop['w']}px), feather {feather_direction}")
 
     # Step 5: Crop and resize (proportional — AR already matches)
     cropped_image, cropped_mask, stitch_info = crop_and_resize(
@@ -396,7 +446,8 @@ def inpaint_slot(
     # with the word half missing. The strong zone is widened to clear the ramp
     # instead (see HOT_ZONE_MARGIN).
     if mask_blend_pixels > 0:
-        cropped_mask = feather_mask(cropped_mask, mask_blend_pixels)
+        # Already in sampling resolution — used as given.
+        cropped_mask = feather_mask(cropped_mask, mask_blend_pixels, feather_direction)
 
     # Step 7: VAE encode
     _prof = {"encode": 0.0, "sample": 0.0, "decode": 0.0, "stitch": 0.0}
@@ -544,7 +595,7 @@ def inpaint_slot(
     if _PROFILE:
         _sync(); _st0 = time.perf_counter()
     stitched = stitch_back(image, decoded, blend_mask_orig, crop, stitch_info,
-                           denoise=denoise)
+                           denoise=denoise, delta_clamp=delta_clamp)
     if _PROFILE:
         _sync(); _prof["stitch"] += time.perf_counter() - _st0
         tot = sum(_prof.values())

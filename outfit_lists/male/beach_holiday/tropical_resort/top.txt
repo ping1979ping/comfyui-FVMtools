@@ -8,6 +8,6 @@ camp collar shirt | 0.60 | 0.1-0.4 | rayon,viscose
 ringer tee | 0.55 | 0.0-0.2 | cotton
 breezy henley | 0.50 | 0.1-0.3 | cotton,modal
 relaxed pullover tee | 0.50 | 0.0-0.2 | cotton,modal
-bare chest | 0.45 | 0.0-0.1 | cotton
+bare chest | 0.45 | 0.0-0.1 | -
 cabana shirt | 0.45 | 0.2-0.5 | rayon,viscose
 loose tank | 0.40 | 0.0-0.1 | cotton

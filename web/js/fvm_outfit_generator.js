@@ -261,10 +261,32 @@ let editorModal = null;
 
 /* ── Node Extension ── */
 
+// Saved workflows written before `text_probability` existed carry one entry per
+// widget in `widgets_values` — including the buttons this extension appends. A
+// newly added Python widget therefore lands on the slot an old file filled with
+// a button's `null`, and ComfyUI rejects the prompt on `float(None)`. Restore
+// the declared default for any numeric widget that comes back null, so files
+// from before the change keep running without being rebuilt by hand.
+function fvmRepairNullNumericWidgets(node) {
+    const previous = node.onConfigure;
+    node.onConfigure = function (info) {
+        const result = previous ? previous.apply(this, arguments) : undefined;
+        for (const widget of this.widgets || []) {
+            if ((widget.value === null || widget.value === undefined) &&
+                typeof widget.options?.default === "number") {
+                widget.value = widget.options.default;
+            }
+        }
+        return result;
+    };
+}
+
 app.registerExtension({
     name: "FVM.OutfitGenerator",
     async nodeCreated(node) {
         if (node.comfyClass !== "FVM_OutfitGenerator") return;
+
+        fvmRepairNullNumericWidgets(node);
 
         node.addWidget("button", "Copy Override Template", null, () => {
             navigator.clipboard.writeText(

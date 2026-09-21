@@ -121,18 +121,31 @@ class FVM_SMP_OutfitGenerator:
                 "enable_outerwear":   ("BOOLEAN", {"default": False}),
                 "enable_accessories": ("BOOLEAN", {"default": False}),
                 "enable_bag":         ("BOOLEAN", {"default": False}),
-                "print_probability": ("FLOAT", {"default": 0.3, "min": 0.0, "max": 1.0, "step": 0.05}),
-                "text_mode":         (["auto", "quoted", "descriptive", "off"], {"default": "auto"}),
+                "print_probability": ("FLOAT", {"default": 0.3, "min": 0.0, "max": 1.0, "step": 0.05,
+                                      "tooltip": "Chance of a decorative pattern per garment. "
+                                      "Slogans are a separate roll — see text_probability."}),
+                "text_mode":         (["auto", "quoted", "descriptive", "off"], {"default": "auto",
+                                      "tooltip": "Wording of text decorations. How often they "
+                                      "appear is text_probability (default 0.0 = never)."}),
             },
             "optional": {
                 "overrides": ("STRING", {"default": "", "multiline": True}),
+                # Deliberately the LAST widget: ComfyUI restores saved
+                # widgets_values by position, so anything inserted further up
+                # would shift every following value in existing workflows.
+                "text_probability": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 1.0, "step": 0.05,
+                                      "tooltip": "Chance of a slogan per garment, independent of "
+                                      "print_probability. Both add up to the total decoration "
+                                      "chance and keep their ratio when the sum exceeds 1.0. "
+                                      "Inert while text_mode is 'off' or the set has no "
+                                      "texts.txt entries for the slot."}),
             },
         }
 
     def generate(self, outfit_set, seed, style_preset, formality, coverage,
                  enable_headwear, enable_top, enable_bottom, enable_footwear,
                  enable_outerwear, enable_accessories, enable_bag,
-                 print_probability, text_mode, overrides=""):
+                 print_probability, text_mode, overrides="", text_probability=0.0):
         slot_enables = {
             "headwear":    enable_headwear,
             "top":         enable_top,
@@ -154,12 +167,20 @@ class FVM_SMP_OutfitGenerator:
             overrides=parsed_overrides,
             print_probability=print_probability,
             text_mode=text_mode,
+            text_probability=text_probability,
         )
 
         garments: dict = {}
         for slot, gr in rec["garments"].items():
             region_id = _SLOT_TO_REGION.get(slot, slot)
-            garments[region_id] = _slot_to_garment_entry(gr, region_id)
+            # "top" and "outerwear" share the upper_body region, so writing both
+            # under the same key silently dropped the shirt whenever a jacket was
+            # enabled. Keep the region id for the first (the top) and give the
+            # layer above its own key — existing consumers still read upper_body.
+            key = region_id
+            if key in garments:
+                key = f"{region_id}_{slot}" if slot != region_id else f"{region_id}_2"
+            garments[key] = _slot_to_garment_entry(gr, region_id)
 
         outfit_raw = {
             "set_name":        rec["outfit_set"],

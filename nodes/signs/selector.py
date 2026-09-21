@@ -16,15 +16,22 @@ from ..utils.masker import sam3_prepare, sam3_ground
 from ..utils.tensor_utils import tensor2np, empty_mask
 from ..utils.ocr_backend import ocr_region, get_available_backends
 from ..utils.glyph import estimate_text_colors, measure_ink_height
+
 try:  # relative inside ComfyUI's loader, absolute under pytest
     from ...core.signs.classes import (
-        SIGN_CLASSES, all_class_names, get_class, parse_custom_prompts,
+        SIGN_CLASSES,
+        all_class_names,
+        get_class,
+        parse_custom_prompts,
     )
     from ...core.signs.slop import score_slop
     from ...core.signs.cluster import cluster_crops, pick_cluster_representative
 except ImportError:
     from core.signs.classes import (
-        SIGN_CLASSES, all_class_names, get_class, parse_custom_prompts,
+        SIGN_CLASSES,
+        all_class_names,
+        get_class,
+        parse_custom_prompts,
     )
     from core.signs.slop import score_slop
     from core.signs.cluster import cluster_crops, pick_cluster_representative
@@ -32,16 +39,16 @@ except ImportError:
 
 # Preview overlay colours per class (RGB)
 _CLASS_COLORS = {
-    "sign":          (255, 70, 70),
-    "label":         (70, 200, 255),
+    "sign": (255, 70, 70),
+    "label": (70, 200, 255),
     "garment_print": (120, 255, 90),
-    "poster":        (255, 190, 40),
-    "screen":        (180, 120, 255),
-    "book":          (255, 120, 200),
-    "plate":         (250, 250, 250),
-    "paper":         (150, 220, 180),
-    "graffiti":      (255, 140, 60),
-    "custom":        (200, 200, 200),
+    "poster": (255, 190, 40),
+    "screen": (180, 120, 255),
+    "book": (255, 120, 200),
+    "plate": (250, 250, 250),
+    "paper": (150, 220, 180),
+    "graffiti": (255, 140, 60),
+    "custom": (200, 200, 200),
 }
 
 # Crops are padded to this canvas so they can travel as one IMAGE batch.
@@ -58,8 +65,8 @@ def _bbox_from_mask(mask_np):
 
 def _mask_iou(a, b):
     """Intersection-over-union of two float masks."""
-    ab = (a > 0.5)
-    bb = (b > 0.5)
+    ab = a > 0.5
+    bb = b > 0.5
     union = np.logical_or(ab, bb).sum()
     if union == 0:
         return 0.0
@@ -121,7 +128,7 @@ def _crop_to_canvas(image_rgb, bbox, canvas=CROP_CANVAS, pad_ratio=0.10):
     if x2 <= x1 or y2 <= y1:
         return np.zeros((canvas, canvas, 3), dtype=np.uint8)
 
-    patch = image_rgb[y1:y2 + 1, x1:x2 + 1]
+    patch = image_rgb[y1 : y2 + 1, x1 : x2 + 1]
     ph_, pw_ = patch.shape[:2]
     scale = min(canvas / pw_, canvas / ph_)
     nw, nh = max(1, int(pw_ * scale)), max(1, int(ph_ * scale))
@@ -130,7 +137,7 @@ def _crop_to_canvas(image_rgb, bbox, canvas=CROP_CANVAS, pad_ratio=0.10):
 
     out = np.zeros((canvas, canvas, 3), dtype=np.uint8)
     ox, oy = (canvas - nw) // 2, (canvas - nh) // 2
-    out[oy:oy + nh, ox:ox + nw] = resized
+    out[oy : oy + nh, ox : ox + nw] = resized
     return out
 
 
@@ -160,55 +167,185 @@ class SignSelectorSAM3:
         class_toggles = {}
         for name in all_class_names():
             cfg = SIGN_CLASSES[name]
-            class_toggles[f"class_{name}"] = ("BOOLEAN", {
-                "default": True,
-                "tooltip": f"Ground '{name}' — prompts: {', '.join(cfg['sam3_prompts'])} "
-                           f"(default threshold {cfg['threshold']}, min height {cfg['min_height_px']}px)",
-            })
+            class_toggles[f"class_{name}"] = (
+                "BOOLEAN",
+                {
+                    "default": True,
+                    "tooltip": f"Ground '{name}' — prompts: {', '.join(cfg['sam3_prompts'])} "
+                    f"(default threshold {cfg['threshold']}, min height {cfg['min_height_px']}px)",
+                },
+            )
 
         return {
             "required": {
-                "sam3_model": ("SAM3_MODEL_CONFIG", {"tooltip": "SAM3 model from the LoadSAM3Model node"}),
-                "image": ("IMAGE", {"tooltip": "Image(s) to scan for text regions. Batch supported."}),
+                "sam3_model": (
+                    "SAM3_MODEL_CONFIG",
+                    {"tooltip": "SAM3 model from the LoadSAM3Model node"},
+                ),
+                "image": (
+                    "IMAGE",
+                    {"tooltip": "Image(s) to scan for text regions. Batch supported."},
+                ),
                 **class_toggles,
-                "custom_prompts": ("STRING", {"default": "", "multiline": False,
-                    "tooltip": "Extra SAM3 prompts beyond the built-in classes.\n"
-                               "Format: 'neon sign:0.25, bottle label:0.3' — the threshold is optional."}),
-                "threshold_scale": ("FLOAT", {"default": 1.0, "min": 0.3, "max": 2.0, "step": 0.05,
-                    "tooltip": "Multiplies every class's default threshold.\n"
-                               "Below 1.0 finds more (and more false positives), above 1.0 is stricter."}),
-                "min_height_px": ("INT", {"default": 24, "min": 4, "max": 512, "step": 1,
-                    "tooltip": "Global floor for text height in the ORIGINAL image (min-area-rect short side).\n"
-                               "Per-class minimums still apply on top of this."}),
-                "min_area_ratio": ("FLOAT", {"default": 0.0005, "min": 0.0, "max": 0.5, "step": 0.0001,
-                    "tooltip": "Region must cover at least this fraction of the image area."}),
-                "max_regions": ("INT", {"default": 12, "min": 1, "max": 100, "step": 1,
-                    "tooltip": "Cost brake — keeps only the top N regions after sorting."}),
-                "merge_iou": ("FLOAT", {"default": 0.50, "min": 0.0, "max": 1.0, "step": 0.05,
-                    "tooltip": "Two classes hitting the same object are merged above this IoU.\n"
-                               "The higher-scoring detection keeps its class."}),
-                "slop_detection": (["off", "ocr", "vlm", "ocr+vlm"], {"default": "ocr",
-                    "tooltip": "How to judge whether existing lettering is believable.\n"
-                               "- ocr: OCR confidence + dictionary + bigram plausibility\n"
-                               "- vlm: leave the judgement to the Proposer's vision model\n"
-                               "- ocr+vlm: both, combined in the Proposer\n"
-                               "Falls back gracefully when no OCR backend is installed."}),
-                "slop_threshold": ("FLOAT", {"default": 0.50, "min": 0.0, "max": 1.0, "step": 0.05,
-                    "tooltip": "Regions scoring at or above this are marked as needing a re-render."}),
-                "only_slop": ("BOOLEAN", {"default": False,
-                    "tooltip": "ON: drop regions whose text already looks fine. OFF: keep everything and let the Detailer decide."}),
-                "cluster_similar": ("BOOLEAN", {"default": True,
-                    "tooltip": "Group near-identical regions (a shelf of identical bottles) so they share one text decision."}),
-                "cluster_distance": ("FLOAT", {"default": 0.15, "min": 0.01, "max": 0.9, "step": 0.01,
-                    "tooltip": "Lower = stricter grouping. Combines perceptual hash and colour signature."}),
-                "sort_order": (["area_desc", "score_desc", "left_right", "top_down"], {"default": "area_desc",
-                    "tooltip": "Order of regions — also the order in which the Detailer renders them."}),
+                "custom_prompts": (
+                    "STRING",
+                    {
+                        "default": "",
+                        "multiline": False,
+                        "tooltip": "Extra SAM3 prompts beyond the built-in classes.\n"
+                        "Format: 'neon sign:0.25, bottle label:0.3' — the threshold is optional.",
+                    },
+                ),
+                "threshold_scale": (
+                    "FLOAT",
+                    {
+                        "default": 1.0,
+                        "min": 0.3,
+                        "max": 2.0,
+                        "step": 0.05,
+                        "tooltip": "Multiplies every class's default threshold.\n"
+                        "Below 1.0 finds more (and more false positives), above 1.0 is stricter.",
+                    },
+                ),
+                "min_height_px": (
+                    "INT",
+                    {
+                        "default": 24,
+                        "min": 4,
+                        "max": 512,
+                        "step": 1,
+                        "tooltip": "Global floor for text height in the ORIGINAL image (min-area-rect short side).\n"
+                        "Per-class minimums still apply on top of this.",
+                    },
+                ),
+                "min_area_ratio": (
+                    "FLOAT",
+                    {
+                        "default": 0.0005,
+                        "min": 0.0,
+                        "max": 0.5,
+                        "step": 0.0001,
+                        "tooltip": "Region must cover at least this fraction of the image area.",
+                    },
+                ),
+                "max_width_ratio": (
+                    "FLOAT",
+                    {
+                        "default": 0.30,
+                        "min": 0.05,
+                        "max": 1.0,
+                        "step": 0.01,
+                        "tooltip": "Region must be NARROWER than this fraction of the image width.\n"
+                        "SAM3 answers 'where is the writing', and on a shopfront the honest\n"
+                        "answer is sometimes the whole window — the lettering is ON the glass.\n"
+                        "Measured on a street scene: real signs came in at 0.10-0.14 of the\n"
+                        "width, the two shop windows at 0.40 and 0.46. Painting one word\n"
+                        "across a 0.46-wide region does not give you a wide sign, it gives you\n"
+                        "a plank nailed over the shopfront. Above this, the region is not a\n"
+                        "sign and is dropped.",
+                    },
+                ),
+                "max_area_ratio": (
+                    "FLOAT",
+                    {
+                        "default": 0.10,
+                        "min": 0.005,
+                        "max": 1.0,
+                        "step": 0.005,
+                        "tooltip": "Same brake by area, for regions that are wide AND tall.",
+                    },
+                ),
+                "max_regions": (
+                    "INT",
+                    {
+                        "default": 12,
+                        "min": 1,
+                        "max": 100,
+                        "step": 1,
+                        "tooltip": "Cost brake — keeps only the top N regions after sorting.\n"
+                        "Spend it on signs: every window that gets through the size caps\n"
+                        "above costs a slot a real sign then does not get.",
+                    },
+                ),
+                "merge_iou": (
+                    "FLOAT",
+                    {
+                        "default": 0.50,
+                        "min": 0.0,
+                        "max": 1.0,
+                        "step": 0.05,
+                        "tooltip": "Two classes hitting the same object are merged above this IoU.\n"
+                        "The higher-scoring detection keeps its class.",
+                    },
+                ),
+                "slop_detection": (
+                    ["off", "ocr", "vlm", "ocr+vlm"],
+                    {
+                        "default": "ocr",
+                        "tooltip": "How to judge whether existing lettering is believable.\n"
+                        "- ocr: OCR confidence + dictionary + bigram plausibility\n"
+                        "- vlm: leave the judgement to the Proposer's vision model\n"
+                        "- ocr+vlm: both, combined in the Proposer\n"
+                        "Falls back gracefully when no OCR backend is installed.",
+                    },
+                ),
+                "slop_threshold": (
+                    "FLOAT",
+                    {
+                        "default": 0.50,
+                        "min": 0.0,
+                        "max": 1.0,
+                        "step": 0.05,
+                        "tooltip": "Regions scoring at or above this are marked as needing a re-render.",
+                    },
+                ),
+                "only_slop": (
+                    "BOOLEAN",
+                    {
+                        "default": False,
+                        "tooltip": "ON: drop regions whose text already looks fine. OFF: keep everything and let the Detailer decide.",
+                    },
+                ),
+                "cluster_similar": (
+                    "BOOLEAN",
+                    {
+                        "default": True,
+                        "tooltip": "Group near-identical regions (a shelf of identical bottles) so they share one text decision.",
+                    },
+                ),
+                "cluster_distance": (
+                    "FLOAT",
+                    {
+                        "default": 0.15,
+                        "min": 0.01,
+                        "max": 0.9,
+                        "step": 0.01,
+                        "tooltip": "Lower = stricter grouping. Combines perceptual hash and colour signature.",
+                    },
+                ),
+                "sort_order": (
+                    ["area_desc", "score_desc", "left_right", "top_down"],
+                    {
+                        "default": "area_desc",
+                        "tooltip": "Order of regions — also the order in which the Detailer renders them.",
+                    },
+                ),
             },
             "optional": {
-                "restrict_mask": ("MASK", {"tooltip": "Only search inside this mask. Regions must overlap it by 30%+."}),
-                "ocr_backend": (["auto", "onnx", "easyocr", "none"], {"default": "auto",
-                    "tooltip": "OCR engine for slop detection. 'auto' picks the first installed one.\n"
-                               "Missing models degrade to VLM-only judgement, never an error."}),
+                "restrict_mask": (
+                    "MASK",
+                    {
+                        "tooltip": "Only search inside this mask. Regions must overlap it by 30%+."
+                    },
+                ),
+                "ocr_backend": (
+                    ["auto", "onnx", "easyocr", "none"],
+                    {
+                        "default": "auto",
+                        "tooltip": "OCR engine for slop detection. 'auto' picks the first installed one.\n"
+                        "Missing models degrade to VLM-only judgement, never an error.",
+                    },
+                ),
             },
         }
 
@@ -226,7 +363,9 @@ class SignSelectorSAM3:
                 jobs.append((name, prompt, thr))
 
         for prompt, thr in parse_custom_prompts(custom_prompts):
-            jobs.append(("custom", prompt, float(np.clip(thr * threshold_scale, 0.05, 0.99))))
+            jobs.append(
+                ("custom", prompt, float(np.clip(thr * threshold_scale, 0.05, 0.99)))
+            )
         return jobs
 
     def _ground_all(self, sam3_model, image_rgb, jobs):
@@ -239,13 +378,22 @@ class SignSelectorSAM3:
         raw = []
         for class_name, prompt, thr in jobs:
             try:
-                results = sam3_ground(processor, base_state, image_rgb.shape, prompt, threshold=thr)
+                results = sam3_ground(
+                    processor, base_state, image_rgb.shape, prompt, threshold=thr
+                )
             except Exception as exc:  # a single bad prompt must not kill the run
                 print(f"[SignSelector] grounding '{prompt}' failed: {exc}")
                 continue
             for mask_np, score, bbox in results:
-                raw.append({"class": class_name, "prompt": prompt, "mask": mask_np,
-                            "score": float(score), "bbox": bbox})
+                raw.append(
+                    {
+                        "class": class_name,
+                        "prompt": prompt,
+                        "mask": mask_np,
+                        "score": float(score),
+                        "bbox": bbox,
+                    }
+                )
         return raw
 
     def _merge_overlaps(self, raw, merge_iou):
@@ -258,7 +406,9 @@ class SignSelectorSAM3:
             duplicate = False
             for k in kept:
                 if _mask_iou(cand["mask"], k["mask"]) >= merge_iou:
-                    k.setdefault("also_matched", []).append(f"{cand['class']}:{cand['prompt']}")
+                    k.setdefault("also_matched", []).append(
+                        f"{cand['class']}:{cand['prompt']}"
+                    )
                     duplicate = True
                     break
             if not duplicate:
@@ -267,12 +417,22 @@ class SignSelectorSAM3:
 
     # ── Region assembly ──
 
-    def _build_regions(self, raw, image_rgb, batch_index, min_height_px, min_area_ratio,
-                       restrict_np):
+    def _build_regions(
+        self,
+        raw,
+        image_rgb,
+        batch_index,
+        min_height_px,
+        min_area_ratio,
+        restrict_np,
+        max_width_ratio=1.0,
+        max_area_ratio=1.0,
+    ):
         """Turn raw detections into region dicts with geometry and size verdicts."""
         h, w = image_rgb.shape[:2]
         image_area = float(h * w)
         regions = []
+        zu_gross = []
 
         for det in raw:
             mask_np = det["mask"].astype(np.float32)
@@ -290,6 +450,28 @@ class SignSelectorSAM3:
             if area_px / image_area < min_area_ratio:
                 continue
 
+            # Upper bound, and it matters more than the lower one. SAM3 is
+            # answering "where is the writing", and on a shopfront the truthful
+            # answer is the whole window, because the lettering is painted on
+            # the glass. Hand that region on and one word gets stretched across
+            # half the picture — which does not read as a wide sign, it reads as
+            # a plank nailed over the shop. Measured here: signs 0.10-0.14 of
+            # the width, windows 0.40 and 0.46. Dropped out loud, because a
+            # region that vanishes silently looks like SAM3 missed it.
+            #
+            # Flagged, NOT dropped — that was tried and measured on the same
+            # street. Dropping the two windows removed the plank boards and left
+            # the original nonsense on the glass in full view (`SAMYERK`,
+            # `RASTOAE`, `DRO GRERVMM NE`), which fails the whole point: no
+            # pseudo-writing anywhere. A window is not a sign, but it is exactly
+            # where the slop lives. So it is kept and marked, and downstream it
+            # gets cleared instead of lettered.
+            kw = (bbox[2] - bbox[0]) / float(w)
+            ka = area_px / image_area
+            too_big = kw > max_width_ratio or ka > max_area_ratio
+            if too_big:
+                zu_gross.append((bbox, kw, ka))
+
             height_px = _short_side_px(mask_np)
             class_min = get_class(det["class"])["min_height_px"]
             too_small = height_px < max(min_height_px, class_min)
@@ -301,23 +483,36 @@ class SignSelectorSAM3:
             # is rendered.
             capacity = _text_capacity(image_rgb, mask_np, bbox)
 
-            regions.append({
-                "class": det["class"],
-                "prompt": det["prompt"],
-                "score": det["score"],
-                "mask": mask_np,
-                "bbox": bbox,
-                "batch_index": batch_index,
-                "area_px": area_px,
-                "height_px": height_px,
-                "too_small": too_small,
-                "text_capacity": capacity,
-                "also_matched": det.get("also_matched", []),
-                "cluster_id": -1,
-                "slop": {"score": 0.0, "verdict": "unknown", "ocr_text": "",
-                         "ocr_conf": 0.0, "signals": {}},
-                "proposal": None,
-            })
+            regions.append(
+                {
+                    "class": det["class"],
+                    "prompt": det["prompt"],
+                    "score": det["score"],
+                    "mask": mask_np,
+                    "bbox": bbox,
+                    "batch_index": batch_index,
+                    "area_px": area_px,
+                    "height_px": height_px,
+                    "too_small": too_small,
+                    "too_big": too_big,
+                    "text_capacity": capacity,
+                    "also_matched": det.get("also_matched", []),
+                    "cluster_id": -1,
+                    "slop": {
+                        "score": 0.0,
+                        "verdict": "unknown",
+                        "ocr_text": "",
+                        "ocr_conf": 0.0,
+                        "signals": {},
+                    },
+                    "proposal": None,
+                }
+            )
+        for b, kw, ka in zu_gross:
+            print(
+                f"[SignSelector] Flaeche statt Schild, wird geleert: {b} "
+                f"Breite {kw:.2f} Flaeche {ka:.3f} der Leinwand"
+            )
         return regions
 
     def _sort_regions(self, regions, sort_order):
@@ -331,7 +526,9 @@ class SignSelectorSAM3:
 
     # ── Slop scoring ──
 
-    def _score_regions(self, regions, image_rgb, mode, backend, threshold, has_backend=True):
+    def _score_regions(
+        self, regions, image_rgb, mode, backend, threshold, has_backend=True
+    ):
         """Attach OCR readings and a slop score to every region.
 
         With no OCR backend installed the scoring is skipped entirely. Running it
@@ -368,7 +565,9 @@ class SignSelectorSAM3:
         for i, r in enumerate(regions):
             color = _CLASS_COLORS.get(r["class"], (200, 200, 200))
             mask_u8 = (r["mask"] > 0.5).astype(np.uint8)
-            contours, _ = cv2.findContours(mask_u8, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            contours, _ = cv2.findContours(
+                mask_u8, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
+            )
             cv2.drawContours(overlay, contours, -1, color, cv2.FILLED)
             cv2.drawContours(canvas, contours, -1, color, 2)
 
@@ -384,19 +583,46 @@ class SignSelectorSAM3:
 
             (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
             ty = max(th + 4, y1 - 4)
-            cv2.rectangle(canvas, (x1, ty - th - 4), (x1 + tw + 6, ty + 2), (0, 0, 0), cv2.FILLED)
-            cv2.putText(canvas, label, (x1 + 3, ty - 2),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
+            cv2.rectangle(
+                canvas, (x1, ty - th - 4), (x1 + tw + 6, ty + 2), (0, 0, 0), cv2.FILLED
+            )
+            cv2.putText(
+                canvas,
+                label,
+                (x1 + 3, ty - 2),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.5,
+                color,
+                1,
+                cv2.LINE_AA,
+            )
 
         return cv2.addWeighted(overlay, 0.25, canvas, 0.75, 0)
 
     # ── Main ──
 
-    def execute(self, sam3_model, image, custom_prompts="", threshold_scale=1.0,
-                min_height_px=24, min_area_ratio=0.0005, max_regions=12, merge_iou=0.50,
-                slop_detection="ocr", slop_threshold=0.50, only_slop=False,
-                cluster_similar=True, cluster_distance=0.15, sort_order="area_desc",
-                restrict_mask=None, ocr_backend="auto", **kwargs):
+    def execute(
+        self,
+        sam3_model,
+        image,
+        custom_prompts="",
+        threshold_scale=1.0,
+        min_height_px=24,
+        min_area_ratio=0.0005,
+        max_width_ratio=0.30,
+        max_area_ratio=0.10,
+        max_regions=12,
+        merge_iou=0.50,
+        slop_detection="ocr",
+        slop_threshold=0.50,
+        only_slop=False,
+        cluster_similar=True,
+        cluster_distance=0.15,
+        sort_order="area_desc",
+        restrict_mask=None,
+        ocr_backend="auto",
+        **kwargs,
+    ):
 
         batch_size = image.shape[0]
         h, w = int(image.shape[1]), int(image.shape[2])
@@ -404,8 +630,14 @@ class SignSelectorSAM3:
 
         available = get_available_backends()
         effective_backend = "none" if ocr_backend == "none" else ocr_backend
-        if slop_detection in ("ocr", "ocr+vlm") and not available and ocr_backend != "none":
-            print("[SignSelector] no OCR backend installed — slop detection falls back to the vision model")
+        if (
+            slop_detection in ("ocr", "ocr+vlm")
+            and not available
+            and ocr_backend != "none"
+        ):
+            print(
+                "[SignSelector] no OCR backend installed — slop detection falls back to the vision model"
+            )
 
         all_regions = []
         preview_frames = []
@@ -415,7 +647,7 @@ class SignSelectorSAM3:
         ]
 
         for b in range(batch_size):
-            single = image[b:b + 1]
+            single = image[b : b + 1]
             rgb = tensor2np(single)
 
             restrict_np = None
@@ -423,40 +655,63 @@ class SignSelectorSAM3:
                 idx = min(b, restrict_mask.shape[0] - 1)
                 restrict_np = restrict_mask[idx].cpu().numpy().astype(np.float32)
                 if restrict_np.shape != (h, w):
-                    restrict_np = cv2.resize(restrict_np, (w, h), interpolation=cv2.INTER_NEAREST)
+                    restrict_np = cv2.resize(
+                        restrict_np, (w, h), interpolation=cv2.INTER_NEAREST
+                    )
 
             raw = self._ground_all(sam3_model, rgb, jobs)
             raw = self._merge_overlaps(raw, merge_iou)
-            regions = self._build_regions(raw, rgb, b, min_height_px, min_area_ratio, restrict_np)
+            regions = self._build_regions(
+                raw,
+                rgb,
+                b,
+                min_height_px,
+                min_area_ratio,
+                restrict_np,
+                max_width_ratio,
+                max_area_ratio,
+            )
             regions = self._sort_regions(regions, sort_order)[:max_regions]
 
-            self._score_regions(regions, rgb, slop_detection, effective_backend, slop_threshold,
-                                has_backend=bool(available) and ocr_backend != "none")
+            self._score_regions(
+                regions,
+                rgb,
+                slop_detection,
+                effective_backend,
+                slop_threshold,
+                has_backend=bool(available) and ocr_backend != "none",
+            )
 
             if only_slop and slop_detection in ("ocr", "ocr+vlm"):
                 before = len(regions)
                 regions = [r for r in regions if r["slop"].get("needs_fix", True)]
-                report_lines.append(f"  image {b + 1}: dropped {before - len(regions)} already-legible region(s)")
+                report_lines.append(
+                    f"  image {b + 1}: dropped {before - len(regions)} already-legible region(s)"
+                )
 
             # Attach crops, then cluster on them
             for r in regions:
                 r["crop"] = _crop_to_canvas(rgb, r["bbox"])
 
             if cluster_similar and len(regions) > 1:
-                labels = cluster_crops([r["crop"] for r in regions], distance=cluster_distance)
+                labels = cluster_crops(
+                    [r["crop"] for r in regions], distance=cluster_distance
+                )
                 for r, cid in zip(regions, labels):
                     r["cluster_id"] = int(cid)
                 for cid in sorted(set(labels)):
                     members = [i for i, lab in enumerate(labels) if lab == cid]
                     if len(members) > 1:
                         rep_local = pick_cluster_representative(
-                            [regions[i]["crop"] for i in members], [0] * len(members), 0)
+                            [regions[i]["crop"] for i in members], [0] * len(members), 0
+                        )
                         rep = members[rep_local]
                         for i in members:
-                            regions[i]["cluster_rep"] = (i == rep)
+                            regions[i]["cluster_rep"] = i == rep
                         report_lines.append(
                             f"  image {b + 1}: cluster {cid} groups {len(members)} regions "
-                            f"(representative #{rep + 1})")
+                            f"(representative #{rep + 1})"
+                        )
                     else:
                         regions[members[0]]["cluster_rep"] = True
             else:
@@ -470,24 +725,34 @@ class SignSelectorSAM3:
             preview_frames.append(self._draw_preview(rgb, regions))
             small = sum(1 for r in regions if r["too_small"])
             report_lines.append(
-                f"  image {b + 1}: {len(regions)} region(s), {small} below the size gate")
+                f"  image {b + 1}: {len(regions)} region(s), {small} below the size gate"
+            )
             for r in regions:
                 report_lines.append(
                     f"    #{r['index'] + 1} {r['class']:<14} {r['height_px']:>4}px "
                     f"score={r['score']:.2f} slop={r['slop']['score']:.2f} "
-                    f"({r['slop'].get('verdict', '?')}) text={r['slop'].get('ocr_text', '')!r}")
+                    f"({r['slop'].get('verdict', '?')}) text={r['slop'].get('ocr_text', '')!r}"
+                )
 
         # ── Outputs ──
         if all_regions:
             masks = torch.stack([torch.from_numpy(r["mask"]) for r in all_regions])
-            crops = torch.stack([torch.from_numpy(r["crop"].astype(np.float32) / 255.0)
-                                 for r in all_regions])
+            crops = torch.stack(
+                [
+                    torch.from_numpy(r["crop"].astype(np.float32) / 255.0)
+                    for r in all_regions
+                ]
+            )
         else:
             masks = empty_mask(h, w)
             crops = torch.zeros(1, CROP_CANVAS, CROP_CANVAS, 3, dtype=torch.float32)
-            report_lines.append("  no regions found — try lowering threshold_scale or min_height_px")
+            report_lines.append(
+                "  no regions found — try lowering threshold_scale or min_height_px"
+            )
 
-        preview = torch.stack([torch.from_numpy(p.astype(np.float32) / 255.0) for p in preview_frames])
+        preview = torch.stack(
+            [torch.from_numpy(p.astype(np.float32) / 255.0) for p in preview_frames]
+        )
 
         sign_data = {
             "regions": all_regions,
@@ -499,5 +764,7 @@ class SignSelectorSAM3:
         }
 
         report = "\n".join(report_lines)
-        print(f"[SignSelector] {len(all_regions)} region(s) across {batch_size} image(s)")
+        print(
+            f"[SignSelector] {len(all_regions)} region(s) across {batch_size} image(s)"
+        )
         return (sign_data, masks, crops, preview, len(all_regions), report)

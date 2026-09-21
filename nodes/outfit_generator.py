@@ -94,11 +94,12 @@ class FVM_OutfitGenerator:
                     "tooltip": "Allow bags, purses, backpacks.\nSubject to probability roll based on coverage."}),
                 "print_probability": ("FLOAT", {
                     "default": 0.3, "min": 0.0, "max": 1.0, "step": 0.05,
-                    "tooltip": "Chance of adding a decorative pattern or text to each garment.\n\n"
-                               "0.0 = never add prints/text (solid colors only)\n"
+                    "tooltip": "Chance of adding a decorative pattern to each garment.\n\n"
+                               "0.0 = never add prints (solid colors only)\n"
                                "0.3 = occasional prints (default)\n"
-                               "1.0 = every garment gets a print or text decoration\n\n"
-                               "Prints come from prints.txt, text from texts.txt in the outfit set.",
+                               "1.0 = every garment gets a print\n\n"
+                               "Prints come from prints.txt in the outfit set. Slogans are\n"
+                               "a separate roll — see text_probability.",
                 }),
                 "text_mode": (["auto", "quoted", "descriptive", "off"], {
                     "tooltip": "How text decorations appear in prompts.\n\n"
@@ -106,7 +107,9 @@ class FVM_OutfitGenerator:
                                "  Best for ZImage Turbo, Flux2, and other text-aware models.\n\n"
                                "descriptive — generic description, e.g. 'bold text graphic'\n"
                                "  Safe fallback for SD 1.5 / SDXL that can't render text.\n\n"
-                               "off — no text decorations, only visual prints/patterns.",
+                               "off — no text decorations, only visual prints/patterns.\n\n"
+                               "This only picks the wording. How often text appears is\n"
+                               "text_probability, which defaults to 0.0 (= never).",
                 }),
             },
             "optional": {
@@ -133,6 +136,20 @@ class FVM_OutfitGenerator:
                     "tooltip": "Text between garment descriptions.\n"
                                "Default: ', ' — produces 'blouse, pants, boots'",
                 }),
+                # Deliberately the LAST widget: ComfyUI restores saved
+                # widgets_values by position, so anything inserted further up
+                # would shift every following value in existing workflows.
+                "text_probability": ("FLOAT", {
+                    "default": 0.0, "min": 0.0, "max": 1.0, "step": 0.05,
+                    "tooltip": "Chance of printing a slogan on each garment.\n\n"
+                               "Independent of print_probability: the two add up to the\n"
+                               "total decoration chance and keep their ratio when the sum\n"
+                               "goes over 1.0 (0.3 + 0.3 -> 30% prints, 30% texts, 40% plain).\n\n"
+                               "0.0 = never (default — prints behave exactly as before)\n"
+                               "0.2 = every fifth garment carries text\n\n"
+                               "Only has an effect while text_mode is not 'off' and the\n"
+                               "outfit set ships a texts.txt with entries for that slot.",
+                }),
             },
         }
 
@@ -140,7 +157,8 @@ class FVM_OutfitGenerator:
                  enable_headwear, enable_top, enable_outerwear,
                  enable_bottom, enable_footwear, enable_accessories,
                  enable_bag, print_probability=0.3, text_mode="auto",
-                 override_string="", prefix="wearing ", separator=", "):
+                 override_string="", prefix="wearing ", separator=", ",
+                 text_probability=0.0):
 
         slot_enables = {
             "headwear": enable_headwear,
@@ -166,6 +184,7 @@ class FVM_OutfitGenerator:
             separator=separator,
             print_probability=print_probability,
             text_mode=text_mode,
+            text_probability=text_probability,
         )
 
         return (result["outfit_prompt"], result["outfit_details"], result["outfit_info"])

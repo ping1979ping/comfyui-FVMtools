@@ -123,12 +123,14 @@ class FVM_JB_OutfitBlock:
                 "print_probability": ("FLOAT", {"default": 0.3, "min": 0.0, "max": 1.0, "step": 0.05,
                                       "tooltip": "Chance of a pattern per garment. "
                                       "'solid color' entries are never written into the "
-                                      "prompt — they say nothing."}),
+                                      "prompt — they say nothing. Slogans roll separately "
+                                      "— see text_probability."}),
                 "text_mode":         (["auto", "quoted", "descriptive", "off"], {"default": "off",
-                                      "tooltip": "Slogans printed on the garment. Krea 2 "
-                                      "renders quoted text literally onto the clothing, so "
-                                      "'off' is the default; 'quoted' is for Ideogram-style "
-                                      "text rendering."}),
+                                      "tooltip": "Wording of slogans printed on the garment. "
+                                      "Krea 2 renders quoted text literally onto the clothing, "
+                                      "so 'off' is the default; 'quoted' is for Ideogram-style "
+                                      "text rendering. How often a slogan appears is "
+                                      "text_probability (default 0.0 = never)."}),
                 # ── Colour ──
                 "color_mood":      (list(MOOD_NAMES), {"default": "everyday_muted",
                                     "tooltip": mood_help()}),
@@ -185,6 +187,16 @@ class FVM_JB_OutfitBlock:
                 "warmth":          ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05,
                                     "tooltip": "Warm/cool bias. Also tints the ambient "
                                     "light and shadow phrases in every mood."}),
+                # Deliberately the LAST widget: ComfyUI restores saved
+                # widgets_values by position, so anything inserted further up
+                # would shift every following value in existing workflows.
+                "text_probability": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 1.0, "step": 0.05,
+                                    "tooltip": "Chance of a slogan per garment, independent "
+                                    "of print_probability. Both add up to the total "
+                                    "decoration chance and keep their ratio when the sum "
+                                    "exceeds 1.0 (0.3 + 0.3 -> 30% prints, 30% slogans, "
+                                    "40% plain). Inert while text_mode is 'off' or the "
+                                    "outfit set has no texts.txt entries for the slot."}),
             },
         }
 
@@ -194,7 +206,8 @@ class FVM_JB_OutfitBlock:
               print_probability, text_mode,
               color_mood="everyday_muted", output_format="loose_keys",
               overrides="", num_colors=5, harmony_type="auto",
-              palette_style="general", vibrancy=0.5, contrast=0.5, warmth=0.5):
+              palette_style="general", vibrancy=0.5, contrast=0.5, warmth=0.5,
+              text_probability=0.0):
         slot_enables = {
             "headwear":    enable_headwear,
             "top":         enable_top,
@@ -213,6 +226,7 @@ class FVM_JB_OutfitBlock:
             formality=formality, coverage=coverage,
             slot_enables=slot_enables, overrides=parsed_overrides,
             print_probability=print_probability, text_mode=text_mode,
+            text_probability=text_probability,
         )
 
         palette = build_palette(

@@ -111,9 +111,24 @@ class PersonDetailer:
                 "dd_smooth": ("BOOLEAN", {"default": True,
                                            "tooltip": "Smooth the Detail Daemon sigma curve to avoid artifacts"}),
                 "mask_blend_pixels": ("INT", {"default": 32, "min": 0, "max": 128, "step": 1,
-                                               "tooltip": "Gaussian feather radius at mask edges for seamless blending"}),
+                    "tooltip": "Feather radius at the mask edge, measured in SAMPLING pixels "
+                               "(relative to target_width/target_height, the one fixed frame "
+                               "in the pipeline).\n\n"
+                               "The same radius is converted back to image pixels for the "
+                               "blend, so both ramps cover the same strip of the picture. The "
+                               "console prints the conversion, e.g. '32px @ 800px sampling = "
+                               "15px in the image (crop 380px)'.\n\n"
+                               "Which side of the edge the ramp lies on is set by "
+                               "feather_direction in Inpaint Options. On 'both' (the default) "
+                               "the ramp eats into the mask as much as out of it - raise this "
+                               "only as far as the thinnest part of your mask tolerates."}),
                 "mask_expand_pixels": ("INT", {"default": 0, "min": 0, "max": 64, "step": 1,
-                                                "tooltip": "Dilate/expand mask by this many pixels before inpainting"}),
+                    "tooltip": "Dilate the mask by this many IMAGE pixels before anything else "
+                               "happens - before the crop region is computed, before feathering.\n\n"
+                               "Grows the mask outward in every direction, so on a hair or "
+                               "accessory mask it also grows toward the face. Unaffected by "
+                               "feather_direction. Leave at 0 unless the segmentation is "
+                               "clipping the subject."}),
                 "target_width": ("INT", {"default": 800, "min": 64, "max": 4096, "step": 8,
                                           "tooltip": "Width to resize face crops to before sampling"}),
                 "target_height": ("INT", {"default": 1200, "min": 64, "max": 4096, "step": 8,
@@ -221,6 +236,8 @@ class PersonDetailer:
             cfg=cfg,
             denoise_gradient=inpaint_opts.get("denoise_gradient", 0.0),
             denoise_gradient_mode=inpaint_opts.get("denoise_gradient_mode", "linear"),
+            delta_clamp=inpaint_opts.get("delta_clamp", 0.35),
+            feather_direction=inpaint_opts.get("feather_direction", "both"),
         )
         return stitched, refined
 
@@ -249,6 +266,8 @@ class PersonDetailer:
             except Exception:
                 pass
 
+        if images.shape[-1] > 3:
+            images = images[..., :3]   # drop alpha so the whole batch matches
         batch_size = images.shape[0]
         inpaint_opts = inpaint_options or INPAINT_DEFAULTS
         has_aux = "aux_masks" in person_data

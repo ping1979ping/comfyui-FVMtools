@@ -40,7 +40,8 @@ def _is_none_garment(name) -> bool:
 def generate_outfit(seed, outfit_set="general_female", style_preset="general", formality=0.5,
                     coverage=0.5, slot_enables=None, overrides=None,
                     prefix="wearing ", separator=", ",
-                    print_probability=0.3, text_mode="auto"):
+                    print_probability=0.3, text_mode="auto",
+                    text_probability=0.0):
     """Generate a complete outfit description with color tags.
 
     Args:
@@ -53,8 +54,12 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
         overrides: dict from parse_overrides() or None
         prefix: text before outfit
         separator: between garment descriptions
-        print_probability: 0-1 chance of adding print/text decoration per garment
+        print_probability: 0-1 chance of a *print* decoration per garment
         text_mode: "auto"/"quoted"/"descriptive"/"off" — controls text decoration output
+        text_probability: 0-1 chance of a *text* decoration per garment, independent
+            of print_probability. Both add up to the total decoration chance and are
+            normalised proportionally when the sum exceeds 1. Forced to 0 by
+            text_mode="off" and inert when the set has no texts.txt entries.
 
     Returns: dict {
         "outfit_prompt": "wearing #primary# silk blouse, ...",
@@ -155,7 +160,8 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
                 _consume_decoration_rng(rng)  # consume for determinism
             else:
                 decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
-                                              texts_list, print_probability, text_mode)
+                                              texts_list, print_probability, text_mode,
+                                              text_probability)
 
             if not _is_none_garment(garment_name):
                 desc = _build_description(color_tag, fabric_name, garment_name, decoration)
@@ -187,7 +193,8 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
 
         # Pick decoration (print/text)
         decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
-                                      texts_list, print_probability, text_mode)
+                                      texts_list, print_probability, text_mode,
+                                              text_probability)
 
         if _is_none_garment(chosen_garment["name"]):
             continue  # placeholder slot (rng already consumed above)
@@ -212,12 +219,17 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
 
 def generate_outfit_records(seed, outfit_set="general_female", style_preset="general",
                              formality=0.5, coverage=0.5, slot_enables=None,
-                             overrides=None, print_probability=0.3, text_mode="auto"):
+                             overrides=None, print_probability=0.3, text_mode="auto",
+                             text_probability=0.0):
     """Like ``generate_outfit`` but returns rich per-garment records.
 
     Used by the SMP (StructPromptMaker) dict-based pipeline. Same algorithm
     and same RNG consumption order as ``generate_outfit`` so determinism is
     preserved across the V1 string-form and V2 dict-form code paths.
+
+    ``print_probability`` is the per-garment chance of a *print*;
+    ``text_probability`` the independent per-garment chance of a *text*
+    (see ``_pick_decoration`` for the exact split).
 
     Returns: dict {
         "seed": int,
@@ -296,7 +308,8 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
                 _consume_decoration_rng(rng)
             else:
                 decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
-                                              texts_list, print_probability, text_mode)
+                                              texts_list, print_probability, text_mode,
+                                              text_probability)
             if not _is_none_garment(garment_name):
                 fragment = _build_description(color_tag, fabric_name, garment_name, decoration)
                 garments_out[slot] = {
@@ -328,7 +341,8 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
                                    eff_formality, preferred_families)
 
         decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
-                                      texts_list, print_probability, text_mode)
+                                      texts_list, print_probability, text_mode,
+                                              text_probability)
 
         if _is_none_garment(chosen_garment["name"]):
             continue  # placeholder slot (rng already consumed above)
@@ -379,6 +393,21 @@ _NOOP_DECORATIONS = frozenset({
 })
 
 
+# Entries that describe uncovered skin or an absent item. A print or a slogan
+# needs a garment to sit on — "bare chest with \"VANS\" text" reads as a tattoo,
+# and "no bag with floral print" contradicts itself.
+_BARE_ITEMS = (
+    "bare feet", "barefoot", "bare foot", "bare legs", "bare chest",
+    "no bag", "no jewellery", "no jewelry", "nothing",
+)
+
+
+def _is_bare_item(garment_name: str) -> bool:
+    """True when the entry names uncovered skin or an absent item."""
+    lowered = (garment_name or "").lower()
+    return any(marker in lowered for marker in _BARE_ITEMS)
+
+
 def _is_noop_decoration(decoration: str) -> bool:
     return (decoration or "").strip().lower() in _NOOP_DECORATIONS
 
@@ -386,7 +415,8 @@ def _is_noop_decoration(decoration: str) -> bool:
 # Entries that are not garments at all. A palette colour in front of them reads
 # as nonsense ("grey bare feet", "navy messy bun").
 _COLORLESS_ITEMS = (
-    "bare feet", "barefoot", "bare legs", "no bag", "no jewellery", "no jewelry",
+    "bare feet", "bare foot", "barefoot", "bare legs", "bare chest", "no bag",
+    "no jewellery", "no jewelry",
     "messy bun", "hair clipped", "hair tie", "hair tied", "hair down", "ponytail",
     "in hand", "hood pulled up", "hood up", "nothing",
 )
@@ -486,44 +516,74 @@ def _build_description(color_tag, fabric_name, garment_name, decoration=None):
         parts.append(garment_name)
         result = " ".join(parts)
 
-    if decoration and not _is_noop_decoration(decoration):
+    if decoration and not _is_noop_decoration(decoration) and not _is_bare_item(garment_name):
         result = f"{result} with {decoration}"
     return result
 
 
 def _consume_decoration_rng(rng):
     """Consume rng calls that _pick_decoration would use, for determinism."""
-    rng.random()   # print_probability roll
+    rng.random()   # decoration-or-not roll
     rng.random()   # print vs text roll
     rng.random()   # selection roll
 
 
 def _pick_decoration(rng, slot, formality, prints_list, texts_list,
-                     print_probability, text_mode):
+                     print_probability, text_mode, text_probability=0.0):
     """Decide whether to add a print or text decoration to a garment.
 
-    Always consumes exactly 3 rng calls for determinism.
+    ``print_probability`` and ``text_probability`` are independent per-garment
+    chances: with ``p_p + p_t <= 1`` the garment gets a print with probability
+    exactly ``p_p`` and a text with probability exactly ``p_t``. A sum above 1
+    is normalised proportionally (decoration becomes certain, the two branches
+    keep their ratio). ``text_mode="off"`` forces ``p_t = 0`` so the print
+    branch keeps its full chance.
+
+    The two branches never substitute for each other: a text roll that finds no
+    entry for this slot yields no decoration rather than a print, so a caller
+    that sets ``print_probability=0`` really does get zero prints.
+
+    Always consumes exactly 3 rng calls for determinism — the two chances share
+    one "is there a decoration" roll and one split roll, no extra draw.
 
     Returns: decoration string or None
     """
-    # Roll 1: should we add decoration?
+    # Roll 1: is there a decoration at all?
     prob_roll = rng.random()
-    # Roll 2: print vs text (50/50)
+    # Roll 2: print vs text, split proportionally between the two chances
     type_roll = rng.random()
     # Roll 3: selection within candidates (used as index)
     select_roll = rng.random()
 
-    if prob_roll >= print_probability:
+    p_print = max(0.0, float(print_probability))
+    # "off" removes the text branch entirely. Zeroing it here (rather than only
+    # in the use_text test below) keeps the print branch at its full p_print.
+    # ``or 0.0`` also absorbs the None a workflow saved before this parameter
+    # existed can hand us (widgets_values is positional — see the node wrappers).
+    p_text = 0.0 if text_mode == "off" else max(0.0, float(text_probability or 0.0))
+    total = p_print + p_text
+
+    if prob_roll >= min(1.0, total):
         return None
 
-    use_text = type_roll >= 0.5 and text_mode != "off" and texts_list
+    # split == 1.0 (no text chance) means type_roll — always < 1.0 — can never
+    # reach it, so the print branch wins every time, bit-for-bit as before.
+    split = (p_print / total) if total > 0 else 1.0
+
+    # Note: an empty ``texts_list`` must NOT divert into the print branch — a set
+    # without a texts.txt would otherwise turn a pure text request into prints.
+    # It falls through the compatible-slot check below and yields no decoration.
+    use_text = type_roll >= split and text_mode != "off"
 
     if use_text:
         # Filter texts by compatible slot
         compatible = [t for t in texts_list if slot in t["slots"]]
         if not compatible:
-            # Fall back to prints
-            return _select_print(select_roll, slot, formality, prints_list)
+            # No text declares this slot — leave the garment plain. Falling back
+            # to a print here would break the contract the two probabilities
+            # promise: with print_probability=0 the caller asked for no prints,
+            # and a text roll that misses must not smuggle one in.
+            return None
         # Weighted selection using select_roll
         weights = [t["probability"] for t in compatible]
         total = sum(weights)

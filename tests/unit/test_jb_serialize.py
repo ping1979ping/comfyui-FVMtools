@@ -69,21 +69,43 @@ def test_emit_loose_keys_array():
     assert "[" in out and "]" in out
 
 
-def test_emit_loose_keys_quotes_keys_with_special_chars():
-    """Keys with spaces / punctuation are bareword-unsafe → keep quotes."""
+def test_emit_loose_keys_keys_with_special_chars_stay_bare():
+    """Keys emit unquoted regardless of spaces / punctuation.
+
+    Deliberate rule since commit d2dda5b (2026-05-02), which reversed the
+    earlier cb4d9f0 "quote unsafe keys" behavior: *"bare keys emit unquoted
+    regardless of spaces/punctuation"*. loose_keys is a one-way emit for
+    SD/CLIP encoders, never re-parsed — so bareword-safety is irrelevant and
+    matching what the user typed wins. See ``_bare_key``'s docstring.
+    """
     out = emit_loose_keys({"weird key!": "value"})
-    assert '"weird key!"' in out
+    assert "weird key!: value" in out
+    assert '"weird key!"' not in out
+    assert '"' not in out
+
+    # A key that itself contains quotes keeps them as content, too.
+    out2 = emit_loose_keys({'weird "label"': "value"})
+    assert 'weird "label": value' in out2
 
 
-def test_emit_loose_keys_strips_all_quote_chars_from_values():
-    """User's final rule: NO `"` chars anywhere in loose_keys output —
-    even literal quotes embedded in values get stripped."""
+def test_emit_loose_keys_preserves_quote_chars_inside_values():
+    """String values emit verbatim — user-typed `"` chars survive as content.
+
+    Deliberate rule since commit d2dda5b (2026-05-02), whose body states
+    *"string values emit verbatim, preserving user-typed \\" characters"*.
+    It reversed cb4d9f0 ("strip ALL quote chars in loose_keys"), because
+    stripping mangled prompt content such as rendered sign text. Only the
+    *structural* JSON quotes that would wrap a key or a value are dropped.
+    """
     src = {"ethnicity": 'tanned european "SUPI"', "text_overlay": '"NO LIMITS"'}
     out = emit_loose_keys(src)
-    assert '"' not in out
     assert "ethnicity:" in out
-    assert "tanned european SUPI" in out
-    assert "NO LIMITS" in out
+    # Value quotes are content and survive byte-for-byte...
+    assert 'tanned european "SUPI"' in out
+    assert 'text_overlay: "NO LIMITS"' in out
+    # ...while the structural quotes around the KEYS are still gone.
+    assert '"ethnicity"' not in out
+    assert '"text_overlay"' not in out
 
 
 def test_emit_loose_keys_handles_scalars():

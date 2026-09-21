@@ -312,6 +312,12 @@ def natural_phrases(obj: Any) -> list[str]:
                     out.append(value.strip())
                     return
             for key, value in node.items():
+                # Contract for producers: a key starting with "_" marks
+                # private / generation metadata and is dropped together with
+                # its ENTIRE subtree — describing content must never be parked
+                # under such a key. FVM_JB_Stitcher used to store bare prose
+                # fragments under "__inputN" and they disappeared here without
+                # a warning; it now uses the plain slot name ("input_3").
                 if key in NON_PROMPT_KEYS or str(key).startswith("_"):
                     continue
                 walk(value)

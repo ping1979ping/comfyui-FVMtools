@@ -501,7 +501,7 @@ class PersonDataRefiner:
             # Optional SAM-refinement of bbox-only detections (priority: SAM3 → SAM2).
             # Off → bbox rectangles flow through unchanged (today's behavior).
             if aux_yolo_sam_refine and detections:
-                cur_rgb = (single_image.cpu().numpy() * 255).clip(0, 255).astype(np.uint8)
+                cur_rgb = tensor2np(single_image.unsqueeze(0))   # trims RGBA to RGB
                 refined_count = 0
                 for det in detections:
                     if not det.get("is_bbox_only", False):
@@ -593,7 +593,7 @@ class PersonDataRefiner:
 
         for b in range(batch_size):
             single_image = images[b]
-            cur_rgb = (single_image.cpu().numpy() * 255).clip(0, 255).astype(np.uint8)
+            cur_rgb = tensor2np(single_image.unsqueeze(0))   # trims RGBA to RGB
 
             detections = []
             for p in prompts:
