@@ -242,9 +242,14 @@ def _flatten_video_frames(decoded):
     image to [B, T, H, W, C] with T=1, while image VAEs (SDXL, Flux,
     Z-Image) already return [B, H, W, C]. Mirrors the 5D flatten in core
     VAEDecode so the stitch/encode paths always see 4D.
+
+    RGBA VAEs (Qwen Image 2.1) decode 4 channels; the alpha is dropped so the
+    result matches the RGB image it is stitched into.
     """
     if decoded.ndim == 5:
-        return decoded.reshape(-1, decoded.shape[-3], decoded.shape[-2], decoded.shape[-1])
+        decoded = decoded.reshape(-1, decoded.shape[-3], decoded.shape[-2], decoded.shape[-1])
+    if decoded.shape[-1] == 4:
+        decoded = decoded[..., :3]
     return decoded
 
 

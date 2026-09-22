@@ -40,3 +40,10 @@ class TestFlattenVideoFrames:
         out = _flatten_video_frames(decoded)
         bchw = out.permute(0, 3, 1, 2)
         assert bchw.shape == (1, 3, 96, 64)
+
+    def test_rgba_vae_drops_alpha(self):
+        """Qwen Image 2.1 VAE decodes RGBA ([1, 1, H, W, 4]); stitch_back needs RGB."""
+        decoded = torch.rand(1, 1, 96, 64, 4, dtype=torch.float32)
+        out = _flatten_video_frames(decoded)
+        assert out.shape == (1, 96, 64, 3)
+        assert torch.equal(out[0], decoded[0, 0, ..., :3])

@@ -119,6 +119,8 @@ def as_image_batch(decoded):
         decoded = decoded.reshape(batch * frames, *decoded.shape[2:])
     if decoded.ndim == 4 and decoded.shape[-1] not in (1, 3, 4):
         decoded = decoded.movedim(1, -1)
+    if decoded.shape[-1] == 4:  # RGBA-VAE (Qwen Image 2.1): Alpha verwerfen
+        decoded = decoded[..., :3]
     return decoded
 
 
