@@ -267,6 +267,89 @@ def test_extractor_preserves_quote_chars_in_loose_keys_output():
     assert '"face"' not in string_out
 
 
+# ─── Extractor negative list ([NOT] exclusions) ───────────────────────
+
+
+def test_extractor_neg_bare_key_prunes_recursively():
+    """[NOT]key drops that key and its subtree at every depth."""
+    src = '{"c1": {"face": {"eyes": "blue"}, "hair": {"colour": "blonde"}}}'
+    raw, _, found = _extract(src, "c1\n[NOT]hair")
+    assert found is True
+    assert json.loads(raw) == {"c1": {"face": {"eyes": "blue"}}}
+
+
+def test_extractor_neg_dot_path_prunes_exact_only():
+    """[NOT]a.b.c removes only that path, siblings survive."""
+    src = '{"hair": {"colour": "blonde", "length": "long"}}'
+    raw, _, found = _extract(src, "hair\n[NOT]hair.colour")
+    assert found is True
+    assert json.loads(raw) == {"hair": {"length": "long"}}
+
+
+def test_extractor_neg_only_returns_whole_doc_minus_excluded():
+    """Exclusions with no positive line → whole doc minus those keys."""
+    src = '{"face": {"eyes": "blue"}, "nsfw": {"x": 1}, "hair": {"c": "red"}}'
+    raw, _, found = _extract(src, "[NOT]nsfw")
+    assert found is True
+    assert json.loads(raw) == {"face": {"eyes": "blue"}, "hair": {"c": "red"}}
+
+
+def test_extractor_neg_prefix_is_case_insensitive():
+    src = '{"a": {"x": 1}, "b": {"y": 2}}'
+    raw, _, found = _extract(src, "[not]b")
+    assert found is True
+    assert json.loads(raw) == {"a": {"x": 1}}
+
+
+def test_extractor_neg_prefix_tolerates_space():
+    src = '{"a": {"x": 1}, "b": {"y": 2}}'
+    raw, _, found = _extract(src, "[NOT] b")
+    assert found is True
+    assert json.loads(raw) == {"a": {"x": 1}}
+
+
+def test_extractor_neg_recursive_hits_all_depths():
+    """A bare-key exclusion removes the key wherever it appears."""
+    src = '{"c1": {"colour": "red"}, "c2": {"deep": {"colour": "blue"}}}'
+    raw, _, found = _extract(src, "[NOT]colour")
+    assert found is True
+    assert json.loads(raw) == {"c1": {}, "c2": {"deep": {}}}
+
+
+def test_extractor_neg_prunes_positive_to_empty_is_miss():
+    """User's rule: if exclusions empty the result, found=False + empty."""
+    src = '{"hair": {"colour": "blonde"}}'
+    raw, string_out, found = _extract(src, "[NOT]hair")
+    assert found is False
+    assert raw == ""
+    assert string_out == ""
+
+
+def test_extractor_neg_combined_pull_and_drop():
+    src = '{"face": {"eyes": "blue"}, "hair": {"colour": "red", "length": "long"}}'
+    raw, _, found = _extract(src, "face\nhair\n[NOT]hair.colour")
+    assert found is True
+    assert json.loads(raw) == {
+        "face": {"eyes": "blue"},
+        "hair": {"length": "long"},
+    }
+
+
+def test_extractor_neg_dot_path_missing_is_silent_noop():
+    src = '{"hair": {"length": "long"}}'
+    raw, _, found = _extract(src, "hair\n[NOT]hair.colour")
+    assert found is True
+    assert json.loads(raw) == {"hair": {"length": "long"}}
+
+
+def test_extractor_no_negatives_preserves_legacy_behavior():
+    """Without any [NOT] line, behavior is unchanged from before."""
+    src = '{"face": {"eyes": "blue"}}'
+    raw, _, found = _extract(src, "face")
+    assert found is True
+    assert json.loads(raw) == {"face": {"eyes": "blue"}}
+
+
 # ─── Stitcher → Extractor end-to-end ──────────────────────────────────
 
 
@@ -289,3 +372,150 @@ def test_stitcher_then_extractor_roundtrip():
     )
     assert found2 is True
     assert json.loads(raw2) == {"face": {"eyes": "blue"}}
+
+
+# ─── Extractor: collect_all ───────────────────────────────────────────
+
+_LOCATION_DOC = json.dumps({
+    "__input4": {"location": {
+        "set_name": "indoor/family_activities/movie_night_living_room",
+        "seed": 821490257792246,
+        "color_tone": "neutral",
+        "elements": {
+            "background": {"name": "wallpapered feature wall", "coverage": 0.87,
+                           "texture": "patterned printed paper", "layer": "background",
+                           "prompt_fragment": "wallpapered feature wall, patterned printed paper"},
+            "midground": {"name": "shag area rug underfoot", "coverage": 0.5996,
+                          "texture": "plush deep-pile floor cover", "layer": "midground",
+                          "prompt_fragment": "shag area rug underfoot, plush deep-pile floor cover"},
+            "time_of_day": {"name": "post-sunset cozy hour", "coverage": 0.0,
+                            "texture": None, "layer": "atmosphere",
+                            "prompt_fragment": "post-sunset cozy hour"},
+        }}},
+    "__input5": {"outfit": {
+        "top": {"prompt_fragment": "cropped knit sweater"},
+    }},
+})
+
+
+def _extract_all(json_input, category, output_format="loose_keys"):
+    return FVM_JB_Extractor().extract(json_input, category, output_format, True)
+
+
+def test_extractor_collect_all_gathers_every_match():
+    """collect_all returns EVERY prompt_fragment, not just the first."""
+    raw, _, found = _extract_all(_LOCATION_DOC, "prompt_fragment")
+    assert found is True
+    assert json.loads(raw) == {"prompt_fragment": [
+        "wallpapered feature wall, patterned printed paper",
+        "shag area rug underfoot, plush deep-pile floor cover",
+        "post-sunset cozy hour",
+        "cropped knit sweater",
+    ]}
+
+
+def test_extractor_collect_all_loose_keys_is_flat_joined():
+    """loose_keys + collect_all → one encoder-ready comma line, no brackets."""
+    _, string_out, _ = _extract_all(_LOCATION_DOC, "prompt_fragment")
+    assert string_out == (
+        "wallpapered feature wall, patterned printed paper, "
+        "shag area rug underfoot, plush deep-pile floor cover, "
+        "post-sunset cozy hour, cropped knit sweater"
+    )
+    assert "[" not in string_out and "{" not in string_out
+
+
+def test_extractor_collect_all_dot_path_scopes_the_sweep():
+    """All but the last segment is a strict descent — scopes to one slot."""
+    raw, _, found = _extract_all(_LOCATION_DOC, "__input5.prompt_fragment")
+    assert found is True
+    assert json.loads(raw) == {"prompt_fragment": ["cropped knit sweater"]}
+
+
+def test_extractor_collect_all_multi_category_concats_same_wrap_key():
+    """Two scoped paths sharing a last segment append instead of overwriting."""
+    raw, _, found = _extract_all(
+        _LOCATION_DOC, "__input5.prompt_fragment, __input4.location.elements.time_of_day.prompt_fragment"
+    )
+    assert found is True
+    assert json.loads(raw) == {"prompt_fragment": ["cropped knit sweater", "post-sunset cozy hour"]}
+
+
+def test_extractor_collect_all_skips_nulls_and_empties_in_join():
+    """None / empty leaves drop out of the joined line (no ', ,')."""
+    _, string_out, _ = _extract_all(_LOCATION_DOC, "texture")
+    assert string_out == "patterned printed paper, plush deep-pile floor cover"
+
+
+def test_extractor_collect_all_missing_key_reports_not_found():
+    raw, string_out, found = _extract_all(_LOCATION_DOC, "does_not_exist")
+    assert (raw, string_out, found) == ("", "", False)
+
+
+def test_extractor_collect_all_off_keeps_first_match_behavior():
+    """Default stays first-match — no regression for existing workflows."""
+    raw, _, found = _extract(_LOCATION_DOC, "prompt_fragment")
+    assert found is True
+    assert json.loads(raw) == {
+        "prompt_fragment": "wallpapered feature wall, patterned printed paper"}
+
+
+def test_extractor_collect_all_json_format_keeps_list_form():
+    """pretty_json is untouched by the flat-join special case."""
+    _, string_out, _ = _extract_all(_LOCATION_DOC, "prompt_fragment", "pretty_json")
+    assert json.loads(string_out)["prompt_fragment"][0].startswith("wallpapered")
+
+
+def test_extractor_collect_all_multiple_distinct_keys():
+    """Several keys at once, each collected in full under its own wrap key."""
+    raw, _, found = _extract_all(_LOCATION_DOC, "prompt_fragment, layer")
+    assert found is True
+    payload = json.loads(raw)
+    assert len(payload["prompt_fragment"]) == 4
+    assert payload["layer"] == ["background", "midground", "atmosphere"]
+
+
+def test_extractor_with_keys_labels_each_value_by_owner():
+    """with_keys keeps the element name that owns each fragment."""
+    raw, string_out, found = FVM_JB_Extractor().extract(
+        _LOCATION_DOC, "prompt_fragment", "loose_keys", True, True)
+    assert found is True
+    assert json.loads(raw) == {"prompt_fragment": {
+        "background": "wallpapered feature wall, patterned printed paper",
+        "midground": "shag area rug underfoot, plush deep-pile floor cover",
+        "time_of_day": "post-sunset cozy hour",
+        "top": "cropped knit sweater",
+    }}
+    assert string_out == (
+        "background: wallpapered feature wall, patterned printed paper, "
+        "midground: shag area rug underfoot, plush deep-pile floor cover, "
+        "time_of_day: post-sunset cozy hour, "
+        "top: cropped knit sweater"
+    )
+
+
+def test_extractor_with_keys_repeated_owner_collects_into_list():
+    """Two elements with the same name keep both values instead of overwriting."""
+    doc = json.dumps({"a": {"background": {"prompt_fragment": "one"}},
+                      "b": {"background": {"prompt_fragment": "two"}}})
+    raw, string_out, _ = FVM_JB_Extractor().extract(
+        doc, "prompt_fragment", "loose_keys", True, True)
+    assert json.loads(raw) == {"prompt_fragment": {"background": ["one", "two"]}}
+    assert string_out == "background: one, background: two"
+
+
+def test_extractor_with_keys_ignored_without_collect_all():
+    """with_keys is a collect_all modifier — on its own it changes nothing."""
+    a = FVM_JB_Extractor().extract(_LOCATION_DOC, "prompt_fragment", "loose_keys", False, True)
+    b = FVM_JB_Extractor().extract(_LOCATION_DOC, "prompt_fragment", "loose_keys", False, False)
+    assert a == b
+
+
+def test_extractor_collect_all_json_formats_stay_strict_json():
+    """No loose_keys half-syntax in collect_all mode: text or real JSON."""
+    for fmt in ("pretty_json", "compact_json"):
+        _, string_out, _ = FVM_JB_Extractor().extract(
+            _LOCATION_DOC, "prompt_fragment", fmt, True, True)
+        assert json.loads(string_out)["prompt_fragment"]["background"].startswith("wallpapered")
+    _, plain, _ = _extract_all(_LOCATION_DOC, "prompt_fragment")
+    assert "{" not in plain and "[" not in plain and '"' not in plain

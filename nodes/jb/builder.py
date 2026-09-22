@@ -100,11 +100,17 @@ class FVM_JB_Builder:
                 # node. Plain STRING / INT / etc. won't connect — that's
                 # by design (it's a typed dict, not free text).
                 "context_from_prompt_generator": ("DICT", {
-                    "tooltip": "Optional variable bag from an "
-                               "adaptiveprompts PromptGenerator's "
-                               "`context` output. Enables `__^var__` "
-                               "recall of values previously bound with "
-                               "`__name^var__`.",
+                    "tooltip": "Wire the `context` (DICT) output of a Prompt "
+                               "Generator node here — e.g. adaptiveprompts "
+                               "PromptGenerator / PromptGeneratorAdvanced → "
+                               "`context`. A plain Text / String node does NOT "
+                               "work: it can't bind variables and won't connect "
+                               "to this DICT input.\n\n"
+                               "Bind values upstream in the generator's prompt "
+                               "with `{a|b}^VAR` or `__name^VAR__`, then recall "
+                               "them in any row here with `__^VAR__`. Values "
+                               "shared this way stay consistent across all rows "
+                               "(each row otherwise resolves in isolation).",
                 }),
             },
         }

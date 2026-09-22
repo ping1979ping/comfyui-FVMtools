@@ -12,5 +12,5 @@ sparkle hair clip | 0.50 | 0.0-0.2 | metal,plastic
 crystal stud earrings | 0.70 | 0.0-0.2 | metal
 champion medal | 0.55 | 0.0-0.2 | metal
 team pin | 0.35 | 0.0-0.2 | metal
-sport watch | 0.30 | 0.0-0.2 | metal,plastic
+# sport watch | 0.30 | 0.0-0.2 | metal,plastic
 beaded bracelet | 0.40 | 0.0-0.2 | plastic,metal

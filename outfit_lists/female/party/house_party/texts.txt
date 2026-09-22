@@ -2,7 +2,12 @@
 "VIBES" | 0.20 | top | bold sans-serif
 "WEEKEND" | 0.20 | top | retro print
 "GOOD TIMES" | 0.15 | top | cursive script
-"FRIDAY MOOD" | 0.15 | top | bold sans-serif
+"MOOD" | 0.15 | top | bold sans-serif
 "NO PLANS" | 0.15 | top | retro print
-"HOMEMADE FUN" | 0.10 | top | varsity print
+"HOMEMADE" | 0.10 | top | varsity print
 "CHILL" | 0.20 | top | block letters
+"FULL LOVE" | 0.10 | top | retro college print
+"ANGELS" | 0.10 | top | retro college print
+"FUNK U2" | 0.10 | top | bold sans print
+"CORN LOVE" | 0.15 | top | retro print
+"CORNHUB" | 0.15 | top | retro print

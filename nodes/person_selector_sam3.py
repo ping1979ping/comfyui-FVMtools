@@ -713,6 +713,8 @@ class PersonSelectorSAM3:
         _t0 = _time.monotonic()
         det_size_int = int(det_size)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        if current_image.shape[-1] == 4:
+            current_image = current_image[..., :3]
 
         if PersonSelectorSAM3._face_analyzer is None or PersonSelectorSAM3._last_det_size != det_size_int:
             PersonSelectorSAM3._face_analyzer = FaceAnalyzer(det_size_int)

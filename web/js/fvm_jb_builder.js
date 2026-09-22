@@ -515,6 +515,52 @@ function createSyntaxInfoModal() {
         scroll.append(table);
     }
 
+    // Practical how-to for variables — prose complement to the terse token
+    // tables above. Static help text (no user data) so innerHTML is safe here.
+    const howto = document.createElement("div");
+    Object.assign(howto.style, {
+        margin: "14px 0 4px", padding: "10px 12px",
+        background: "#181825", border: "1px solid #45475a",
+        borderRadius: "6px", fontSize: "12px", lineHeight: "1.55",
+        color: "#cdd6f4",
+    });
+    howto.innerHTML = `
+        <div style="color:#89b4fa;font-weight:bold;margin-bottom:6px;">
+            Variables — bind once, reuse the value (recall)
+        </div>
+        <div style="margin-bottom:6px;">
+            <b>Bind</b> a pick to a name with <code style="color:#a6e3a1;">^NAME</code>,
+            then <b>recall</b> it anywhere with
+            <code style="color:#a6e3a1;">__^NAME__</code> — double underscores + caret.
+            A bare <code style="color:#f38ba8;">NAME</code> is just plain text and does nothing.
+        </div>
+        <div style="margin-bottom:6px;color:#f9e2af;white-space:pre-wrap;font-style:italic;">{white|black|tan|red}^COL
+{lace|cotton|nylon|fishnet-mesh}^FAB
+a __^FAB__ dress in __^COL__ with matching __^COL__ gloves</div>
+        <div style="margin-bottom:6px;">
+            Both <code style="color:#a6e3a1;">__^COL__</code> return the <b>same</b> value
+            (one binding → deterministic recall). To bind <i>silently</i> without printing the
+            pick where you declare it, wrap it in a block comment:
+            <code style="color:#a6e3a1;">##{white|black}^COL##</code>.
+        </div>
+        <div style="margin-bottom:6px;">
+            <b style="color:#f9e2af;">Across nodes — you MUST use a Prompt Generator node that
+            has a <code style="color:#a6e3a1;">context</code> output</b>
+            (e.g. adaptiveprompts <i>PromptGenerator</i>). Put the
+            <code style="color:#a6e3a1;">{a|b}^VAR</code> bindings in the generator's prompt,
+            then wire its <code style="color:#a6e3a1;">context</code> (DICT) output into this
+            node's <code style="color:#a6e3a1;">context_from_prompt_generator</code> input.
+            A plain <b style="color:#f38ba8;">Text / String node does NOT work</b> — it neither
+            binds variables nor connects to the DICT input, so recalls come back empty.
+        </div>
+        <div>
+            <b>Inside the Builder:</b> each row resolves in isolation — a value bound in one
+            row is <b>not</b> visible in another. Keep bind + recall in the <b>same row</b>,
+            or bind upstream and pass the context in.
+        </div>
+    `;
+    scroll.append(howto);
+
     const btnRow = document.createElement("div");
     Object.assign(btnRow.style, { display: "flex", justifyContent: "flex-end" });
     const closeBtn = document.createElement("button");
