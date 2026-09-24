@@ -46,10 +46,21 @@ def gate_state(value, mask_min_area=0.001):
 
     BOOLEAN as is, numbers when above zero, masks when at least
     ``mask_min_area`` of the pixels are set, strings unless empty or a spelled
-    out "false". Anything else counts by Python truthiness.
+    out "false". A PERSON_DATA fires when it carries any aux region — assigned
+    to a person or unassigned — so a Person Selector's aux detection can gate
+    directly. Anything else counts by Python truthiness.
     """
     if value is None:
         return None
+    if isinstance(value, dict) and ("num_references" in value or "aux_masks" in value
+                                    or "aux_unassigned_masks" in value):
+        # PERSON_DATA. Only the aux channel counts; one without aux data (the
+        # selector ran with aux off) has found nothing — it must not fall
+        # through to "a non-empty dict is true" and pass every picture.
+        regions = list(value.get("aux_masks") or [])
+        if value.get("aux_unassigned_masks") is not None:
+            regions.append(value["aux_unassigned_masks"])
+        return any(gate_state(region, mask_min_area) for region in regions)
     if isinstance(value, bool):
         return value
     if isinstance(value, (int, float)):
@@ -137,6 +148,12 @@ class FVM_BatchSaveMulti:
                                "original_dir. delete: removed for good (no "
                                "recycle bin).",
                 }),
+                "original_when": (["always", "on_match"], {
+                    "default": "always",
+                    "tooltip": "always: handle the original on every run. "
+                               "on_match: only when at least one gate fired — "
+                               "pictures without a hit stay where they are.",
+                }),
                 "original_dir": ("STRING", {
                     "default": "done",
                     "tooltip": "Target for original = move/copy.",
@@ -170,7 +187,8 @@ class FVM_BatchSaveMulti:
                    "the original.")
 
     def execute(self, slots, route, base_dir, fallback_dir, original, original_dir,
-                format, quality, mask_min_area, overwrite, source_path="", **kwargs):
+                format, quality, mask_min_area, overwrite, source_path="",
+                original_when="always", **kwargs):
         source_path = (source_path or "").strip().strip('"')
         has_source = bool(source_path) and os.path.isfile(source_path)
         base = (base_dir or "").strip().strip('"') or (
@@ -227,8 +245,11 @@ class FVM_BatchSaveMulti:
             else:
                 errors.append("fallback: needs source_path")
 
-        lines.append(self._handle_original(original, original_dir, base, source_path,
-                                           has_source, errors, overwrite))
+        if original_when == "on_match" and not matched:
+            lines.append("original: no gate fired — left in place")
+        else:
+            lines.append(self._handle_original(original, original_dir, base, source_path,
+                                               has_source, errors, overwrite))
 
         report = "\n".join(lines + [f"ERROR {e}" for e in errors])
         for line in report.splitlines():

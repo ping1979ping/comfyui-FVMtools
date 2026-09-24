@@ -161,8 +161,8 @@ class PersonSelectorSAM3Native(PersonSelectorSAM3):
         The aux region is written into EVERY mask type of the returned
         PERSON_DATA, so whatever `mask_type` a downstream PersonDetailer is set
         to, it inpaints the aux region. Assignment to a person is by largest
-        overlap with that person's body mask; a hit that overlaps nobody is
-        dropped from aux_data but still drawn in the preview.
+        overlap with that person's body mask; a hit that overlaps nobody — and
+        every hit when there are no references — goes to aux_unassigned_masks.
         """
         # `or` short-circuits: don't touch images.shape when person_data already
         # carries the size (a dict.get default is evaluated eagerly).
@@ -177,9 +177,13 @@ class PersonSelectorSAM3Native(PersonSelectorSAM3):
         empty = [[empty_mask(h, w) for _ in range(max(num_refs, 0))]
                  for _ in range(batch_size)]
         prompt = (prompt or "").strip()
-        if not prompt or num_refs == 0:
+        if not prompt:
             return self._pack_aux(person_data, empty, mask_types, h, w, batch_size,
                                   num_refs), preview
+        # No reference images is a valid setup (e.g. sorting a folder by what is
+        # in the pictures): there is nobody to assign hits to, so every hit is
+        # "unassigned" — the Detailer's Generic slot with mask_type 'aux' and
+        # Batch Save Multi's gate both read aux_unassigned_masks.
 
         per_batch = []
         unassigned = []

@@ -132,3 +132,47 @@ class TestOriginal:
     def test_missing_source_is_harmless(self, tmp_path):
         out = run("", slots=1, subdir_1=str(tmp_path / "x"), original="delete")
         assert "neither image nor source" in out["report"]
+
+
+class TestPersonDataGate:
+    """SAM3 aux detection wired straight into a gate."""
+
+    def pd(self, assigned=0.0, unassigned=0.0):
+        return {"aux_masks": [mask(assigned)], "aux_unassigned_masks": mask(unassigned)}
+
+    def test_fires_on_unassigned_parts(self):
+        # No reference images: every hit is "unassigned".
+        assert gate_state(self.pd(unassigned=0.05)) is True
+
+    def test_fires_on_assigned_parts(self):
+        assert gate_state(self.pd(assigned=0.05)) is True
+
+    def test_silent_without_parts(self):
+        assert gate_state(self.pd()) is False
+
+    def test_person_data_without_aux_is_silent(self):
+        # Selector ran with aux off: nothing searched, nothing found. This used
+        # to fall through to dict truthiness and pass every picture.
+        assert gate_state({"batch_size": 1, "num_references": 0, "face_masks": []}) is False
+
+    def test_empty_aux_lists_are_silent(self):
+        assert gate_state({"num_references": 0, "aux_masks": []}) is False
+
+    def test_other_dicts_keep_truthiness(self):
+        assert gate_state({"x": 1}) is True
+
+
+class TestOriginalWhen:
+    def test_on_match_leaves_misses_in_place(self, source, tmp_path):
+        out = run(source, slots=1, subdir_1="hit", gate_1=False, fallback_dir="",
+                  original="move", original_when="on_match", original_dir="hit")
+        assert os.path.isfile(source)
+        assert "no gate fired" in out["report"]
+        assert not (tmp_path / "hit").exists()
+
+    def test_on_match_moves_hits(self, source, tmp_path):
+        run(source, slots=1, subdir_1="hit/replaced", gate_1=True, image_1=torch.rand(1, 6, 8, 3),
+            fallback_dir="", original="move", original_when="on_match", original_dir="hit")
+        assert not os.path.exists(source)
+        assert (tmp_path / "hit" / "pic.jpg").is_file()
+        assert (tmp_path / "hit" / "replaced" / "pic.jpg").is_file()

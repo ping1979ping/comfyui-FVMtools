@@ -45,8 +45,12 @@ try:
     from .nodes.music.cover_prompt import FVM_CoverLyricsPromptBuilder
     from .nodes.music.whisper_lines import FVM_WhisperChunksToLyricLines
     from .nodes.music.song_extend import (
-        FVM_SongExtendSource, FVM_SongExtendSession, FVM_SongExtendPlan,
-        FVM_SongExtendApply, FVM_SongExtendCommit, FVM_SongExtendMerge,
+        FVM_SongExtendSource,
+        FVM_SongExtendSession,
+        FVM_SongExtendPlan,
+        FVM_SongExtendApply,
+        FVM_SongExtendCommit,
+        FVM_SongExtendMerge,
     )
 
     # ── API routes for outfit list editing ──
@@ -725,24 +729,48 @@ try:
             without anyone having to queue a run first.
             """
             query = request.rel_url.query
-            return web.json_response(tracker_status(
-                query.get("directory", ""),
-                query.get("tracker", "default"),
-                query.get("include_subdirs", "") in ("1", "true", "True"),
-                query.get("sort_by", "name"),
-                exclude_dirs=[d for d in query.get("exclude", "").split("|") if d],
-            ))
+            return web.json_response(
+                tracker_status(
+                    query.get("directory", ""),
+                    query.get("tracker", "default"),
+                    query.get("include_subdirs", "") in ("1", "true", "True"),
+                    query.get("sort_by", "name"),
+                    exclude_dirs=[d for d in query.get("exclude", "").split("|") if d],
+                )
+            )
 
         @PromptServer.instance.routes.post("/fvmtools/batch/reset")
         async def _post_batch_reset(request):
             """Forget a tracker's progress — the loader's Reset button."""
             body = await request.json()
-            ok = reset_tracker(body.get("directory", ""), body.get("tracker", "default"))
+            ok = reset_tracker(
+                body.get("directory", ""), body.get("tracker", "default")
+            )
             return web.json_response({"success": ok})
     except Exception as _batch_error:  # pragma: no cover
         import traceback
 
         print(f"[FVMtools] Batch Tools konnten nicht geladen werden: {_batch_error}")
+        traceback.print_exc()
+
+    # ── Qwen Image 2.1 ref head detailer — per-person Qwen edit conditioning ──
+    try:
+        from .nodes.qwen_ref_detailer import (
+            NODE_CLASS_MAPPINGS as _QWEN_REF_CLASSES,
+            NODE_DISPLAY_NAME_MAPPINGS as _QWEN_REF_NAMES,
+        )
+
+        NODE_CLASS_MAPPINGS.update(_QWEN_REF_CLASSES)
+        NODE_DISPLAY_NAME_MAPPINGS.update(_QWEN_REF_NAMES)
+        print(
+            f"[FVMtools] Qwen Ref Detailer: {len(_QWEN_REF_CLASSES)} Nodes registriert"
+        )
+    except Exception as _qwen_ref_error:  # pragma: no cover
+        import traceback
+
+        print(
+            f"[FVMtools] Qwen Ref Detailer konnte nicht geladen werden: {_qwen_ref_error}"
+        )
         traceback.print_exc()
 
     WEB_DIRECTORY = "./web/js"

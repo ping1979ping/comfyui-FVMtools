@@ -5,7 +5,7 @@ import { api } from "../../../scripts/api.js";
 // live counts fetched from disk (so the numbers are there before the first run),
 // and a button to forget the progress and start over.
 
-const BAR_HEIGHT = 34;
+const BAR_HEIGHT = 22;
 
 function widgetValue(node, name) {
     return node.widgets?.find((w) => w.name === name)?.value ?? "";
@@ -66,60 +66,66 @@ app.registerExtension({
                     type: "custom",
                     value: "",
                     options: { serialize: false },
-                    computeSize: () => [0, BAR_HEIGHT],
+                    // One widget row. The newer frontend lays custom widgets
+                    // out at row height, so bar and caption share that row —
+                    // text drawn below it used to spill into the Reset button.
+                    computeSize: (width) => [width ?? 0, BAR_HEIGHT],
+                    computeLayoutSize: () => ({ minHeight: BAR_HEIGHT, maxHeight: BAR_HEIGHT, minWidth: 0 }),
                     draw(ctx, node, width, posY) {
                         const state = node._fvmBatch;
-                        const margin = 14;
+                        const margin = 15;
                         const barWidth = width - margin * 2;
-                        const y = posY + 6;
-                        const height = 12;
+                        const y = posY + 2;
+                        const height = BAR_HEIGHT - 4;
+                        const finished = state && !state.error && state.total > 0 && state.remaining === 0;
 
                         ctx.save();
-                        ctx.fillStyle = "#2a2a2a";
+                        ctx.fillStyle = "#222";
                         ctx.beginPath();
-                        ctx.roundRect(margin, y, barWidth, height, 3);
+                        ctx.roundRect(margin, y, barWidth, height, 4);
                         ctx.fill();
 
                         if (state && !state.error && state.total > 0) {
                             const fraction = Math.max(0, Math.min(1, state.fraction || 0));
-                            ctx.fillStyle = state.remaining === 0 ? "#4a8" : "#48a";
+                            ctx.fillStyle = finished ? "#2f6b4f" : "#2f4f6b";
                             ctx.beginPath();
-                            ctx.roundRect(margin, y, Math.max(2, barWidth * fraction), height, 3);
+                            ctx.roundRect(margin, y, Math.max(3, barWidth * fraction), height, 4);
                             ctx.fill();
                         }
                         ctx.strokeStyle = "#555";
                         ctx.lineWidth = 1;
                         ctx.beginPath();
-                        ctx.roundRect(margin, y, barWidth, height, 3);
+                        ctx.roundRect(margin, y, barWidth, height, 4);
                         ctx.stroke();
 
-                        ctx.font = "11px Arial";
-                        ctx.textAlign = "left";
+                        let caption, color;
                         if (!state) {
-                            ctx.fillStyle = "#888";
-                            ctx.fillText("no directory", margin, y + height + 13);
+                            caption = "no directory"; color = "#888";
                         } else if (state.error) {
-                            ctx.fillStyle = "#f88";
-                            ctx.fillText(state.error.slice(0, 60), margin, y + height + 13);
+                            caption = String(state.error).slice(0, 60); color = "#f88";
                         } else {
-                            const percent = state.total
-                                ? Math.round((state.fraction || 0) * 100)
-                                : 0;
-                            ctx.fillStyle = state.remaining === 0 ? "#8f8" : "#ccc";
-                            ctx.fillText(
-                                `${state.position} / ${state.total}  (${percent}%)` +
-                                    (state.remaining === 0 ? "  — finished" : `  · ${state.remaining} left`),
-                                margin,
-                                y + height + 13
-                            );
-                            if (state.filename) {
+                            const percent = state.total ? Math.round((state.fraction || 0) * 100) : 0;
+                            caption = `${state.position} / ${state.total}  (${percent}%)` +
+                                (finished ? "  finished" : `  · ${state.remaining} left`);
+                            color = finished ? "#bfb" : "#ddd";
+                        }
+                        const textY = y + height / 2;
+                        ctx.font = "11px Arial";
+                        ctx.textBaseline = "middle";
+                        ctx.textAlign = "left";
+                        ctx.fillStyle = color;
+                        ctx.fillText(caption, margin + 8, textY);
+                        if (state?.filename) {
+                            const used = ctx.measureText(caption).width + 24;
+                            let name = String(state.filename);
+                            const room = barWidth - used - 8;
+                            while (name.length > 4 && ctx.measureText(name).width > room) {
+                                name = "…" + name.slice(2);
+                            }
+                            if (room > 30) {
                                 ctx.textAlign = "right";
-                                ctx.fillStyle = "#999";
-                                ctx.fillText(
-                                    String(state.filename).slice(-28),
-                                    width - margin,
-                                    y + height + 13
-                                );
+                                ctx.fillStyle = "#aaa";
+                                ctx.fillText(name, width - margin - 8, textY);
                             }
                         }
                         ctx.restore();

@@ -125,6 +125,17 @@ class TestBuildAux:
         assert float(aux["body_masks"][1].max()) == 0.0
         assert float(aux["aux_unassigned_masks"].max()) > 0.5
 
+    def test_no_references_still_finds_hits(self, wired):
+        # Folder sorting runs without reference images: every hit is unassigned.
+        aux, _p = self._run(wired, "tattoo", [(5, 5, 20, 20)], n=0)
+        assert aux["num_references"] == 0
+        assert float(aux["aux_unassigned_masks"].max()) > 0.5
+        assert aux["aux_masks"] == []
+
+    def test_no_references_no_hits_is_empty(self, wired):
+        aux, _p = self._run(wired, "tattoo", [], n=0)
+        assert float(aux["aux_unassigned_masks"].max()) == 0.0
+
     def test_person_data_contract(self, wired):
         aux, _p = self._run(wired, "hat", [(5, 5, 20, 20)])
         for key in ("batch_size", "num_references", "image_height", "image_width",

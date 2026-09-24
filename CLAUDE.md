@@ -601,3 +601,25 @@ EOF
 - [ ] `execute()` gibt immer ein Tuple zurück
 - [ ] Logging/Debug-Prints entfernt oder auf logger umgestellt
 - [ ] requirements.txt aktuell
+
+---
+
+## Git: Schutz vor ComfyUI-Manager "Update All"
+
+`ComfyUI-Manager` aktualisiert bei "Update All" **jedes** Git-Repo unter `custom_nodes/`,
+also auch FVMtools. Sein `git_helper.gitpull()` macht dabei der Reihe nach:
+`git stash` (wenn etwas nicht committet ist) → `fetch` → und wenn nicht vorspulbar:
+Backup-Branch + **`git reset --hard <remote>/main`**. Lokale Commits auf `main` wären weg.
+
+Deshalb ist das Remote hier umgestellt:
+
+| Remote | URL | Zweck |
+|---|---|---|
+| `origin` | `DISABLED://…` (kaputt, Absicht) | Auf das Remote zeigt `branch.main.remote`. Jedes automatische `git pull`/`fetch` scheitert sofort. |
+| `manual` | echte GitHub-URL | Nur für Hand-Arbeit: `git fetch manual`, `git pull manual main`, `git push manual main` |
+
+`git push`/`git pull` ohne Remote-Namen funktionieren **nicht mehr** — immer `manual` angeben.
+
+**Der Stash-Schritt läuft trotzdem**, er passiert vor dem Fetch. Also: vor jedem
+"Update All" committen, und danach `git stash list` und `git log --oneline -3` prüfen.
+Ein Stash ist schon einmal monatelang unbemerkt liegengeblieben (wiederhergestellt in 36ac456).
