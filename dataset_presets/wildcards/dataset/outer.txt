@@ -1,0 +1,17 @@
+# Jackets and coats, worn open over a top.
+__dataset/color__ denim jacket
+__dataset/color__ bomber jacket
+__dataset/color__ field jacket
+__dataset/color__ overshirt
+__dataset/color__ corduroy jacket
+__dataset/color__ wool coat
+__dataset/color__ trench coat
+__dataset/color__ quilted vest
+__dataset/color__ puffer jacket
+__dataset/color__ windbreaker
+__dataset/color__ leather jacket
+__dataset/color__ suede jacket
+__dataset/color__ rain jacket
+__dataset/color__ unstructured blazer
+__dataset/color__ zip-up fleece jacket
+__dataset/color__ chore coat

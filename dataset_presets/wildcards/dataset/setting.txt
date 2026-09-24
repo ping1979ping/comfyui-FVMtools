@@ -1,0 +1,6 @@
+# Background + matching light. Weights = mix ratio studio : indoor : outdoor.
+# Studio keeps the face clean; indoor/outdoor teach the model the character
+# in real surroundings.
+%2%__dataset/setting_studio__
+%3%__dataset/setting_indoor__
+%4%__dataset/setting_outdoor__

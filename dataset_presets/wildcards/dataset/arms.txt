@@ -1,0 +1,16 @@
+# Arm / hand positions for half and full shots. Hands are hard for
+# models, so keep the poses simple and natural.
+arms relaxed at the sides
+arms loosely crossed over the chest
+hands in the front pockets
+one hand in a pocket, the other arm relaxed
+one hand touching the back of the neck
+hands clasped loosely in front of the body
+holding a coffee cup at chest height with both hands
+one hand holding the strap of a shoulder bag
+thumbs hooked into the front pockets
+one hand brushing hair behind the ear
+hands resting on the hips
+fingertips lightly touching the chin
+holding a closed book against the chest
+one hand adjusting the collar

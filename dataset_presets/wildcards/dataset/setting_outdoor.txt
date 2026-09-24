@@ -1,0 +1,1 @@
+__dataset/bg_outdoor__, __dataset/light_outdoor__

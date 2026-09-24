@@ -1,0 +1,7 @@
+# Suffix for realistic photos. Keep neutral: no film filters or heavy
+# grading - the dataset should show true skin and hair colour.
+realistic photograph, natural skin texture, sharp focus on the eyes
+realistic photo taken with an 85mm lens, shallow depth of field, natural colours
+natural candid photograph, true-to-life colours, fine detail in skin and hair
+high-resolution realistic photo, 50mm lens, natural colour rendering
+realistic photograph with subtle background blur and accurate skin tones

@@ -288,7 +288,7 @@ function invalidateWildcards() { wildcardsCache = null; }
  * user navigates with ↑/↓, accepts with Enter/Tab (the partial expands
  * to ``__name__``), and dismisses with Escape or by clicking away.
  */
-function attachWildcardAutocomplete(input) {
+export function attachWildcardAutocomplete(input) {
     let popup = null;
     let items = [];
     let activeIdx = 0;
@@ -330,7 +330,18 @@ function attachWildcardAutocomplete(input) {
         }
         const r = input.getBoundingClientRect();
         popup.style.left = r.left + "px";
-        popup.style.top  = (r.bottom + 2) + "px";
+        let top = r.bottom + 2;
+        if (input.tagName === "TEXTAREA") {
+            // Multi-line: open below the caret's line, not below the box.
+            // Line index counts wrapped lines only approximately — enough
+            // to land near the caret.
+            const cs = getComputedStyle(input);
+            const lh = parseFloat(cs.lineHeight) || (parseFloat(cs.fontSize) || 12) * 1.3;
+            const line = input.value.substring(0, input.selectionStart ?? 0).split("\n").length;
+            top = Math.min(r.bottom, r.top + (parseFloat(cs.paddingTop) || 0)
+                + line * lh - input.scrollTop) + 2;
+        }
+        popup.style.top  = Math.min(top, window.innerHeight - 250) + "px";
         if (activeIdx < 0) activeIdx = 0;
         if (activeIdx >= items.length) activeIdx = items.length - 1;
         popup.innerHTML = "";
@@ -412,7 +423,7 @@ function attachWildcardAutocomplete(input) {
 
 // ─── advanced-prompt syntax reference modal (lazy) ──────────────────
 
-function createSyntaxInfoModal() {
+export function createSyntaxInfoModal() {
     const overlay = document.createElement("div");
     Object.assign(overlay.style, {
         display: "none", position: "fixed", inset: "0",
@@ -586,7 +597,7 @@ a __^FAB__ dress in __^COL__ with matching __^COL__ gloves</div>
 
 // ─── wildcards editor modal (lazy) ───────────────────────────────────
 
-function createWildcardsModal() {
+export function createWildcardsModal() {
     const overlay = document.createElement("div");
     Object.assign(overlay.style, {
         display: "none", position: "fixed", inset: "0",

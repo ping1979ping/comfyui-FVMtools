@@ -1,0 +1,14 @@
+white leather sneakers
+__dataset/color__ canvas low-top sneakers
+__dataset/color__ canvas high-top sneakers
+__dataset/color__ running shoes
+brown leather chelsea boots
+black leather chelsea boots
+suede desert boots
+__dataset/color__ hiking boots
+brown leather loafers
+black leather derby shoes
+__dataset/color__ slip-on shoes
+__dataset/color__ retro trainers
+leather work boots
+__dataset/color__ suede sneakers

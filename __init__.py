@@ -773,6 +773,29 @@ try:
         )
         traceback.print_exc()
 
+    # ── Dataset Prompt List — LoRA-dataset prompts with wildcards ──
+    try:
+        from .nodes.dataset_prompts import (
+            NODE_CLASS_MAPPINGS as _DATASET_CLASSES,
+            NODE_DISPLAY_NAME_MAPPINGS as _DATASET_NAMES,
+            register_routes as _register_dataset_routes,
+        )
+        from .core.dataset_prompts import install_default_wildcards
+
+        _copied = install_default_wildcards()
+        if _copied:
+            print(f"[FVMtools] Dataset-Wildcards installiert: {len(_copied)} Dateien")
+        _register_dataset_routes(PromptServer)
+        NODE_CLASS_MAPPINGS.update(_DATASET_CLASSES)
+        NODE_DISPLAY_NAME_MAPPINGS.update(_DATASET_NAMES)
+    except Exception as _dataset_error:  # pragma: no cover
+        import traceback
+
+        print(
+            f"[FVMtools] Dataset Prompt List konnte nicht geladen werden: {_dataset_error}"
+        )
+        traceback.print_exc()
+
     WEB_DIRECTORY = "./web/js"
 except ImportError:
     # Running outside ComfyUI context (e.g. pytest) — skip node registration

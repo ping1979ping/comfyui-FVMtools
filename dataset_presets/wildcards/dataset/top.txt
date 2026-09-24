@@ -1,0 +1,26 @@
+# Upper-body garments. Plain, no logos, no printed text (text encoders
+# render any lettering). Each line pulls its own colour.
+__dataset/color__ cotton crew-neck T-shirt
+__dataset/color__ V-neck T-shirt
+__dataset/color__ long-sleeve henley shirt
+__dataset/color__ ribbed knit sweater
+__dataset/color__ chunky cable-knit sweater
+__dataset/color__ fine merino crew-neck sweater
+__dataset/color__ turtleneck sweater
+__dataset/color__ hoodie
+__dataset/color__ crew-neck sweatshirt
+__dataset/color__ half-zip fleece pullover
+__dataset/color__ button-up oxford shirt
+__dataset/color__ flannel shirt with a subtle check pattern
+__dataset/color__ linen shirt with rolled sleeves
+__dataset/color__ chambray shirt
+__dataset/color__ corduroy shirt
+__dataset/color__ polo shirt
+__dataset/color__ striped long-sleeve top
+__dataset/color__ waffle-knit long-sleeve top
+__dataset/color__ knitted cardigan over a white T-shirt
+__dataset/color__ rugby shirt
+__dataset/color__ simple tank top
+__dataset/color__ quarter-zip knit sweater
+__dataset/color__ mock-neck long-sleeve top
+__dataset/color__ camp-collar short-sleeve shirt

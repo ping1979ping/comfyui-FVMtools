@@ -1,0 +1,32 @@
+# Muted, camera-friendly garment colours. No neon, no pure primaries -
+# strong colours cast onto the skin and bias the character's skin tone.
+charcoal
+heather grey
+light grey
+navy
+off-white
+white
+black
+washed black
+olive
+sage green
+forest green
+sand
+camel
+oatmeal
+cream
+stone beige
+rust
+terracotta
+burgundy
+brick red
+mustard
+dusty blue
+slate blue
+denim blue
+teal
+chocolate brown
+khaki
+dusty rose
+lavender grey
+petrol blue

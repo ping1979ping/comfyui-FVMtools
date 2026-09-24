@@ -1,0 +1,7 @@
+# Complete outfits for full-body shots (head to feet visible).
+%4%a __dataset/top__, __dataset/bottom__ and __dataset/shoes__
+%3%an open __dataset/outer__ over a __dataset/top__, __dataset/bottom__ and __dataset/shoes__
+a matching __dataset/color__ tracksuit and __dataset/shoes__
+%1%__dataset/color__ work overalls over a white T-shirt and __dataset/shoes__
+a __dataset/color__ knit sweater, __dataset/color__ pleated trousers and brown leather loafers
+a __dataset/color__ hoodie, grey joggers and __dataset/color__ running shoes

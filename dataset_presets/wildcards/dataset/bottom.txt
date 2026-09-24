@@ -1,0 +1,15 @@
+__dataset/color__ straight-leg jeans
+dark indigo slim jeans
+light-wash relaxed jeans
+black jeans
+__dataset/color__ chinos
+__dataset/color__ cargo trousers
+__dataset/color__ joggers
+__dataset/color__ corduroy trousers
+__dataset/color__ tailored wool trousers
+__dataset/color__ wide-leg trousers
+__dataset/color__ linen trousers
+__dataset/color__ track pants
+__dataset/color__ knee-length shorts
+__dataset/color__ pleated trousers
+__dataset/color__ carpenter trousers

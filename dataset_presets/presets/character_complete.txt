@@ -1,0 +1,84 @@
+# ═══ Character LoRA dataset — complete set (72 lines) ═══
+# close 26 · half 24 · full 22. Every line = one fixed angle / gaze /
+# expression / pose. Clothes, background and light come from wildcards,
+# so each variation of a line is a new image.
+# Set "variations" on the node: 72 × 3 ≈ 216 images.
+# Tags: [close] head & shoulders · [half] waist-up / seated · [full] head to feet
+
+# ─── CLOSE: head & shoulders ─────────────────────────────────────────
+[close] Straight-on frontal close portrait of the subject, head and shoulders, face square to the camera with both ears equally visible, direct eye contact, completely neutral expression with relaxed brows and closed lips, wearing __dataset/upper__, __dataset/setting_studio__
+[close] Frontal close portrait of the subject with direct eye contact and a soft closed-mouth smile, head perfectly level, wearing __dataset/upper__, __dataset/setting__
+[close] Extreme close-up of the subject's face from forehead to chin, looking straight into the lens, broad genuine smile with upper teeth visible and cheeks lifted, fine detail in the eyes and skin, __dataset/light_studio__
+[close] Left three-quarter close portrait, head turned about 45 degrees toward the subject's left while both eyes stay visible, looking back at the camera, warm smile with a slight squint around the eyes, wearing __dataset/upper__, __dataset/setting__
+[close] Right three-quarter close portrait, head turned about 45 degrees toward the subject's right with both eyes visible, direct gaze into the lens, __dataset/expression__, wearing __dataset/upper__, __dataset/setting__
+[close] Exact left profile of the subject, head turned 90 degrees so only the left side of the face is visible, gaze straight ahead, calm neutral expression, clear outline of nose, lips and chin, wearing __dataset/upper__, __dataset/setting_studio__
+[close] Exact right profile of the subject, only the right side of the face visible, looking forward into the distance, faint natural smile, ear and jawline clearly visible, wearing __dataset/upper__, __dataset/setting__
+[close] Close portrait from 30 degrees to the subject's left, head only slightly turned, eyes looking past the camera to the left, thoughtful expression with lowered eyelids, wearing __dataset/upper__, __dataset/setting_indoor__
+[close] Close portrait from 30 degrees to the subject's right, eyes turned back toward the camera against the head direction, playful smirk with one mouth corner raised, wearing __dataset/upper__, __dataset/setting_outdoor__
+[close] Close portrait from about 60 degrees to the subject's right, most of the right cheek and ear visible, far eye just visible, gaze toward the camera, surprised expression with raised brows and slightly open mouth, wearing __dataset/upper__, __dataset/setting__
+[close] Close portrait from about 60 degrees to the subject's left, nose line crossing the far cheek, looking slightly downward, sad expression with raised inner eyebrows and lowered mouth corners, wearing __dataset/upper__, __dataset/setting_indoor__
+[close] Close portrait from behind the subject's left shoulder, upper back toward the camera, head turned back over the left shoulder so the face and both eyes are visible, curious expression with raised eyebrows, wearing __dataset/upper__, __dataset/setting__
+[close] Close portrait from behind the subject's right shoulder, head turned back over the right shoulder toward the lens, skeptical look with one eyebrow raised, hair and back of the neck visible, wearing __dataset/upper__, __dataset/setting_outdoor__
+[close] Close portrait from a high camera position looking down at the subject, the subject raising the eyes to meet the lens, head mostly level, soft friendly expression, top of the head and hairline clearly visible, wearing __dataset/upper__, __dataset/setting__
+[close] Close portrait from a low camera position looking up at the face, chin slightly raised, eyes looking down into the lens, determined expression with firm closed lips, underside of the jaw visible, wearing __dataset/upper__, __dataset/setting_outdoor__
+[close] Eye-level frontal close portrait, head facing the camera but eyes looking far to the subject's left without turning the head, worried expression with tense brows, wearing __dataset/upper__, __dataset/setting_studio__
+[close] Eye-level frontal close portrait, head facing the camera but eyes looking far to the subject's right, amused expression with a restrained smile, wearing __dataset/upper__, __dataset/setting__
+[close] Frontal close portrait with the head tilted noticeably toward the subject's left shoulder, direct eye contact, gentle warm smile, wearing __dataset/upper__, __dataset/setting__
+[close] Frontal close portrait with the head tilted toward the subject's right shoulder and eyes looking up toward the camera, shy closed-mouth smile, wearing __dataset/upper__, __dataset/setting_indoor__
+[close] Close portrait with the chin raised and the face angled upward, eyes looking up above the camera, peaceful joyful expression with softened eyes, wearing __dataset/upper__, __dataset/setting_outdoor__
+[close] Close portrait with the chin lowered toward the chest while the eyes look up at the camera, intense angry expression with brows drawn down and jaw tense, wearing __dataset/upper__, __dataset/setting__
+[close] Candid right three-quarter close portrait during genuine laughter, mouth open with teeth visible, eyes partly closed, head thrown slightly back, wearing __dataset/upper__, __dataset/setting_outdoor__
+[close] Frontal close portrait with mild disgust, nose slightly wrinkled, upper lip raised, brows lowered unevenly, wearing __dataset/upper__, __dataset/setting_indoor__
+[close] Left three-quarter close portrait with eyes closed and face relaxed, calm breathing, soft light on the eyelids and lashes, wearing __dataset/upper__, __dataset/setting__
+[close] Frontal close portrait caught in an open-mouthed gasp of surprise, eyebrows high and eyes wide, wearing __dataset/upper__, __dataset/setting_studio__
+[close] Close portrait from slightly below and to the subject's left, looking off-camera to the right, __dataset/expression__, wind moving the hair a little, wearing __dataset/upper__, __dataset/setting_outdoor__
+
+# ─── HALF: waist-up and seated ───────────────────────────────────────
+[half] Waist-up frontal portrait of the subject standing square to the camera, direct eye contact, relaxed neutral expression, __dataset/arms__, wearing __dataset/upper__, __dataset/setting_studio__
+[half] Waist-up portrait with the body turned 45 degrees to the subject's left and the head turned back to the camera, warm smile, __dataset/arms__, wearing __dataset/upper__, __dataset/setting__
+[half] Waist-up portrait with the body turned 45 degrees to the subject's right, head following the body, looking just past the camera, __dataset/expression__, wearing __dataset/upper__, __dataset/setting__
+[half] Waist-up left profile of the subject, body and head facing the subject's left, gaze forward, shoulders relaxed, __dataset/arms__, wearing __dataset/upper__, __dataset/setting_outdoor__
+[half] Waist-up right profile of the subject, looking ahead into the distance, calm expression, posture upright, wearing __dataset/upper__, __dataset/setting_indoor__
+[half] Waist-up view from behind, back toward the camera, head turned over the left shoulder to look at the lens, soft smile, back of the garment and hair clearly visible, wearing __dataset/upper__, __dataset/setting_outdoor__
+[half] Waist-up view from behind the subject's right side, torso facing away, face in profile toward the right, looking down thoughtfully, wearing __dataset/upper__, __dataset/setting__
+[half] Waist-up portrait with the torso turned toward the subject's left while the head snaps back to the camera, excited expression with an open smile, wearing __dataset/upper__, __dataset/setting_outdoor__
+[half] Subject seated at a table seen from the front at eye level, forearms resting on the table, leaning slightly forward, attentive expression, wearing __dataset/upper__, __dataset/setting_indoor__
+[half] Subject seated on a chair in left three-quarter view, one arm on the backrest, relaxed smile toward the camera, wearing __dataset/upper__, __dataset/setting_indoor__
+[half] Seated three-quarter portrait from slightly below, leaning forward with forearms near the thighs, head tilted, tired expression with heavy eyelids, wearing __dataset/upper__, __dataset/setting_indoor__
+[half] Waist-up portrait from a high angle, camera above looking down, subject looking up into the lens, playful expression, __dataset/arms__, wearing __dataset/upper__, __dataset/setting__
+[half] Waist-up portrait from a low angle looking up, subject standing tall with a confident expression and chin level, wearing __dataset/upper__, __dataset/setting_outdoor__
+[half] Waist-up portrait leaning with one shoulder against a wall, body angled toward the subject's right, relaxed content expression, arms loosely crossed, wearing __dataset/upper__, __dataset/setting__
+[half] Waist-up candid of the subject walking toward the camera, mid-step, looking slightly to the side, natural smile, wearing __dataset/upper__, __dataset/setting_outdoor__
+[half] Waist-up frontal portrait laughing with the head turned slightly toward the subject's right, shoulders raised from laughter, wearing __dataset/upper__, __dataset/setting__
+[half] Waist-up left three-quarter portrait, looking down at a coffee cup held in both hands, calm expression, eyelids lowered, wearing __dataset/upper__, __dataset/setting_indoor__
+[half] Waist-up right three-quarter portrait, one hand touching the back of the neck, embarrassed smile, eyes glancing down and away, wearing __dataset/upper__, __dataset/setting__
+[half] Chest-up portrait with the body in right profile and the head turned fully to face the camera, serious focused expression, wearing __dataset/upper__, __dataset/setting_studio__
+[half] Chest-up portrait with the body in left profile and the face turned three-quarter toward the camera, surprised expression, wearing __dataset/upper__, __dataset/setting__
+[half] Subject sitting on outdoor steps seen from a slightly high front angle, elbows on the knees, hands loosely clasped, friendly smile, wearing __dataset/upper__, __dataset/setting_outdoor__
+[half] Waist-up frontal portrait with hands on the hips, determined expression, strong posture, wearing __dataset/upper__, __dataset/setting__
+[half] Waist-up portrait from 60 degrees to the subject's left, subject adjusting the collar with one hand, looking at the camera with a slight smile, wearing __dataset/upper__, __dataset/setting_indoor__
+[half] Waist-up portrait of the subject turning away to the right, shoulders already facing away, head still turned toward the camera, __dataset/expression__, wearing __dataset/upper__, __dataset/setting_outdoor__
+
+# ─── FULL: head to feet ──────────────────────────────────────────────
+[full] Full-body frontal portrait of the subject standing relaxed with weight on one leg, arms at the sides, direct eye contact, neutral expression, whole figure from head to feet in frame, wearing __dataset/outfit__, __dataset/setting_studio__
+[full] Full-body left three-quarter view, body turned 45 degrees to the subject's left, head turned to the camera, soft smile, one hand in a pocket, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body right three-quarter view, body turned 45 degrees to the subject's right, looking ahead past the camera, __dataset/expression__, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body side view walking in exact left profile across the frame, natural arm and leg swing, gaze forward, content expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body side view walking in exact right profile across the frame, mid-stride, looking forward, faint smile, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body view directly from behind, subject standing with the back to the camera, head facing away, arms relaxed, hair and back of the outfit clearly visible, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body view from behind while walking away, subject turning the head back over the right shoulder to look at the camera, gentle smile, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body view from behind and to the left, subject standing and looking back over the left shoulder, curious expression, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body frontal shot of the subject walking toward the camera, mid-stride, relaxed arms, confident expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body shot of the subject sitting on a bench in left three-quarter view, one leg crossed over the other, hands on the knee, friendly expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body shot of the subject sitting on a low wall seen from the front, one leg bent, looking at the camera, relaxed smile, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body shot of the subject crouching with forearms resting on the knees, frontal view at the subject's eye level, calm focused expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body shot of the subject leaning with one shoulder against a wall, right three-quarter view, arms crossed, __dataset/expression__, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body shot from a high camera angle looking down at the subject standing and looking up at the lens, playful expression, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body shot from a low camera angle near the ground looking up, subject standing tall in right three-quarter view, confident expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body shot of the subject sitting cross-legged on the floor, frontal view, hands resting in the lap, warm smile, wearing __dataset/outfit__, __dataset/setting_indoor__
+[full] Full-body shot of the subject walking down a few stairs, left three-quarter view, one hand near the railing, looking down at the steps, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body frontal environmental portrait, relaxed asymmetric stance, head turned toward the subject's right with the eyes following, impatient expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body shot of the subject stretching the arms above the head, frontal view, eyes closed, relaxed smile, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body shot of the subject leaning back against a railing, left profile with the head turned toward the camera, calm expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
+[full] Full-body shot of the subject standing with feet shoulder-width apart and hands in the pockets, exact frontal view, serious expression, wearing __dataset/outfit__, __dataset/setting_indoor__
+[full] Full-body candid of the subject laughing while walking toward the camera at a slight right angle, head tilted, wearing __dataset/outfit__, __dataset/setting__

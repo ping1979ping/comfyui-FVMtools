@@ -1,0 +1,3 @@
+# What is visible in close and half shots: a top, sometimes with a jacket.
+%3%a __dataset/top__
+%2%an open __dataset/outer__ over a __dataset/top__
