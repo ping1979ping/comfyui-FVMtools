@@ -1,0 +1,14 @@
+__dataset/color__ bomber jacket
+__dataset/color__ denim trucker jacket
+__dataset/color__ field jacket
+__dataset/color__ pea coat
+__dataset/color__ tailored overcoat
+__dataset/color__ Harrington jacket
+__dataset/color__ leather biker jacket
+__dataset/color__ unstructured blazer
+__dataset/color__ puffer jacket
+__dataset/color__ chore coat
+__dataset/color__ parka
+__dataset/color__ suede trucker jacket
+__dataset/color__ quilted vest
+__dataset/color__ wool overshirt

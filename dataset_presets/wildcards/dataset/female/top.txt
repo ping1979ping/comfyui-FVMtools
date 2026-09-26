@@ -1,0 +1,21 @@
+# Women's tops. Plain or subtle patterns, no logos or lettering.
+__dataset/color__ silk blouse
+__dataset/color__ satin blouse with a soft collar
+__dataset/color__ puff-sleeve blouse
+__dataset/color__ peasant blouse with gathered neckline
+__dataset/color__ wrap top
+__dataset/color__ fitted ribbed long-sleeve top
+__dataset/color__ square-neck top
+__dataset/color__ scoop-neck T-shirt
+__dataset/color__ fitted turtleneck
+__dataset/color__ off-shoulder knit sweater
+__dataset/color__ cropped cardigan buttoned up
+__dataset/color__ fine-knit V-neck sweater
+__dataset/color__ oversized chunky knit sweater
+__dataset/color__ camisole top
+__dataset/color__ linen button-down shirt, loosely tucked in
+__dataset/color__ striped Breton top
+__dataset/color__ lace-trimmed blouse
+__dataset/color__ ruffled-collar blouse
+__dataset/color__ bodysuit with long sleeves
+__dataset/color__ short-sleeve knit top

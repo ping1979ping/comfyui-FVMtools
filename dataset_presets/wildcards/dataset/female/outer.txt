@@ -1,0 +1,12 @@
+__dataset/color__ cropped denim jacket
+__dataset/color__ belted trench coat
+__dataset/color__ tailored blazer
+__dataset/color__ leather biker jacket
+__dataset/color__ long wool coat
+__dataset/color__ long knit cardigan
+__dataset/color__ teddy coat
+__dataset/color__ quilted jacket
+__dataset/color__ cropped tweed jacket
+__dataset/color__ oversized shirt jacket
+__dataset/color__ suede jacket
+__dataset/color__ rain mac

@@ -163,3 +163,16 @@ def test_tidy_fixes_articles_and_suffix_is_comma_joined():
     )
     it = dp.expand("[close] face", suffix="realistic photo")[0]
     assert it["prompt"] == "face, realistic photo"
+
+
+GENDER_SLOT_RE = re.compile(r"__dataset/(?:female/|male/)?(upper|outfit)__")  # mirrors the JS
+
+
+@pytest.mark.parametrize("prefix", ["female/", "male/"])
+def test_gendered_outfit_slots_resolve(prefix):
+    text = GENDER_SLOT_RE.sub(lambda m: f"__dataset/{prefix}{m.group(1)}__",
+                              dp.read_preset("character_complete"))
+    assert f"__dataset/{prefix}outfit__" in text and "__dataset/outfit__" not in text
+    items = dp.expand(text, variations=5, seed=9)
+    assert not [it["prompt"] for it in items if "__" in it["prompt"]]
+    assert not [it["prompt"] for it in items if re.search(r"\ba [aeiou]", it["prompt"], re.I)]

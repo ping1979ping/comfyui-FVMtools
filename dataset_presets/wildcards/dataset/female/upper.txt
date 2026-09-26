@@ -1,0 +1,4 @@
+# Close and half shots: top, jacket over top, or the neckline of a dress.
+%3%a __dataset/female/top__
+%2%an open __dataset/female/outer__ over a __dataset/female/top__
+%2%a __dataset/female/dress__

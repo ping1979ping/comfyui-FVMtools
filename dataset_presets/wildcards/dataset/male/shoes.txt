@@ -1,0 +1,11 @@
+white leather sneakers
+__dataset/color__ canvas sneakers
+brown leather chelsea boots
+black leather derby shoes
+brown suede loafers
+leather work boots
+suede desert boots
+__dataset/color__ running shoes
+brown leather brogues
+__dataset/color__ suede trainers
+__dataset/color__ hiking boots

@@ -1,0 +1,6 @@
+# Full-body outfits for men.
+%4%a __dataset/male/top__, __dataset/male/bottom__ and __dataset/male/shoes__
+%3%an open __dataset/male/outer__ over a __dataset/male/top__, __dataset/male/bottom__ and __dataset/male/shoes__
+%1%a __dataset/color__ two-piece suit over a white shirt without a tie, with __dataset/male/shoes__
+%1%a matching __dataset/color__ tracksuit with __dataset/color__ running shoes
+%1%__dataset/color__ work overalls over a white T-shirt and leather work boots

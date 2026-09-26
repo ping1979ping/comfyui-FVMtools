@@ -1,0 +1,7 @@
+# Full-body outfits for women.
+%3%a __dataset/female/top__, __dataset/female/bottom__ and __dataset/female/shoes__
+%2%an open __dataset/female/outer__ over a __dataset/female/top__, __dataset/female/bottom__ and __dataset/female/shoes__
+%3%a __dataset/female/dress__ with __dataset/female/shoes__
+%1%a __dataset/female/dress__ under an open __dataset/female/outer__, with __dataset/female/shoes__
+%1%a matching __dataset/color__ knit co-ord set with __dataset/female/shoes__
+%1%a __dataset/color__ jumpsuit with __dataset/female/shoes__

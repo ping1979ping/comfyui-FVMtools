@@ -19,6 +19,6 @@
 [full] Full-body frontal portrait standing relaxed with weight on one leg, arms at the sides, direct eye contact, neutral expression, head to feet in frame, wearing __dataset/outfit__, __dataset/setting_studio__
 [full] Full-body right three-quarter view, body turned 45 degrees to the subject's right, head turned to the camera, soft smile, wearing __dataset/outfit__, __dataset/setting__
 [full] Full-body side view walking in exact left profile, natural arm and leg swing, gaze forward, wearing __dataset/outfit__, __dataset/setting_outdoor__
-[full] Full-body view directly from behind, subject standing with the back to the camera, hair and back of the outfit clearly visible, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body view from behind, subject standing with the back to the camera, head turned slightly toward the subject's right so the face is partly visible in lost profile, cheek, jawline and eyelashes visible, hair and back of the outfit clearly visible, wearing __dataset/outfit__, __dataset/setting__
 [full] Full-body shot of the subject sitting on a bench in left three-quarter view, one leg crossed, friendly expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
 [full] Full-body shot from a low angle, subject walking toward the camera mid-stride, confident expression, wearing __dataset/outfit__, __dataset/setting__

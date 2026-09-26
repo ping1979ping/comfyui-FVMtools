@@ -1,0 +1,12 @@
+white leather sneakers
+__dataset/color__ ballet flats
+__dataset/color__ ankle boots
+__dataset/color__ knee-high boots
+__dataset/color__ block-heel pumps
+__dataset/color__ strappy heeled sandals
+__dataset/color__ flat sandals
+brown leather loafers
+__dataset/color__ mules
+__dataset/color__ espadrilles
+__dataset/color__ heeled ankle boots
+__dataset/color__ canvas sneakers

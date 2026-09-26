@@ -107,7 +107,8 @@ Extra tags are allowed and only serve as bookkeeping.
 | `count` | INT | number of prompts |
 | `listing` | STRING | overview for Show Text |
 
-Toolbar: **Presets ▾** (Load / + Append) · **Save Preset** · **Preview**
+Toolbar: **Presets ▾** (Load / + Append) · **Save Preset** · **Search & Replace**
+(plain or regex, match count, Undo, one-click outfit gender) · **Preview**
 (resolves everything without generating; has a "New Seed" button) ·
 **Wildcards** · **Syntax** · **?**. Typing `__` in the text box opens the
 wildcard autocomplete.
@@ -132,11 +133,14 @@ wildcard autocomplete.
 | `expression` | 18 expressions, described by the face | lines with a free expression |
 | `arms`, `stance` | arm / body posture | half, full |
 | `photo` | realism suffix | suffix |
+| `female/upper`, `female/outfit` | women's clothing: tops, blouses, dresses, skirts, flats/heels (`female/top`, `outer`, `bottom`, `dress`, `shoes`) | instead of `upper` / `outfit` |
+| `male/upper`, `male/outfit` | men's clothing incl. suit look (`male/top`, `outer`, `bottom`, `shoes`) | instead of `upper` / `outfit` |
 
-**Clothes are deliberately unisex, without logos, lettering or headwear.**
-Lettering gets rendered as (broken) text; hats and glasses hide identity
-features. For female characters, add dresses/skirts to `outfit.txt` /
-`bottom.txt`.
+Clothes carry no logos, lettering or headwear: lettering gets rendered as
+(broken) text, hats and glasses hide identity features. The presets use the
+unisex slots; switch them to the gendered lists with **Search & Replace →
+Outfit slots → Female / Male** (rewrites every `__dataset/upper__` /
+`__dataset/outfit__`, and back with *Unisex*).
 
 ### Building your own set
 1. Load a preset, adjust lines, **Save Preset** under your own name.

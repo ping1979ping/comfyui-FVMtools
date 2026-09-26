@@ -1,11 +1,13 @@
 /**
  * FVM_DatasetPromptList — editor toolbar for the prompt_text widget.
  *
- *   [Presets ▾] [Save Preset] [Preview] [Wildcards] [Syntax] [?]
+ *   [Presets ▾] [Save Preset] [Search & Replace] [Preview] [Wildcards] [Syntax] [?]
  *   72 lines · close 26 · half 24 · full 22 · untagged 0
  *
  * - Presets ▾   load (replace) or append a list from dataset_presets/presets/
  * - Save Preset store the current text as a preset
+ * - Search & Replace  swap text / __wildcards__ (plain or regex, undo),
+ *               plus one-click unisex / female / male outfit slots
  * - Preview     resolve all prompts server-side with the current widgets
  * - Wildcards / Syntax / __ autocomplete are shared with the JB Builder.
  */
@@ -16,6 +18,7 @@ import {
     createSyntaxInfoModal,
     createWildcardsModal,
 } from "./fvm_jb_builder.js";
+import { dismissOnOutside } from "./_widgets_common.js";
 
 const NODE_NAME = "FVM_DatasetPromptList";
 const TAG_RE = /^\[([a-zA-Z0-9_ ,\-]+)\]/;
@@ -112,16 +115,150 @@ background and light every time.<br><br>
 <code>__dataset/setting__</code> background + matching light (mix) ·
 <code>__dataset/setting_studio__ / _indoor__ / _outdoor__</code> ·
 <code>__dataset/expression__</code> · <code>__dataset/arms__</code> ·
-<code>__dataset/stance__</code> · <code>__dataset/photo__</code><br><br>
+<code>__dataset/stance__</code> · <code>__dataset/photo__</code><br>Gendered outfits: <code>__dataset/female/upper__</code>, <code>__dataset/female/outfit__</code>, <code>__dataset/male/…__</code> — switch all slots at once with <b>Search &amp; Replace → Outfit slots</b>.<br><br>
 Full guide: <code>documentation/WILDCARDS_GUIDE.md</code>
 </div>`;
+
+// ─── search & replace ───────────────────────────────────────────────
+
+// Outfit slots that differ per gender: unisex __dataset/upper__, female
+// __dataset/female/upper__, male __dataset/male/upper__ (same for outfit).
+const GENDER_SLOT_RE = /__dataset\/(?:female\/|male\/)?(upper|outfit)__/g;
+
+function escapeRegExp(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function buildMatcher(find, useRegex, caseSensitive) {
+    if (!find) return null;
+    const flags = "g" + (caseSensitive ? "" : "i");
+    try {
+        return new RegExp(useRegex ? find : escapeRegExp(find), flags);
+    } catch (e) {
+        return e;   // invalid regex — caller shows the message
+    }
+}
+
+function openSearchReplace(getText, setText) {
+    let undoText = null;
+    const body = document.createElement("div");
+    Object.assign(body.style, { display: "flex", flexDirection: "column", gap: "8px", fontSize: "12.5px" });
+
+    const field = (label, placeholder) => {
+        const wrap = document.createElement("label");
+        Object.assign(wrap.style, { display: "flex", alignItems: "center", gap: "8px" });
+        const span = document.createElement("span");
+        span.textContent = label;
+        span.style.width = "70px";
+        const input = document.createElement("input");
+        input.placeholder = placeholder;
+        Object.assign(input.style, {
+            flex: "1", background: "#11111b", color: "#cdd6f4",
+            border: "1px solid #45475a", borderRadius: "4px", padding: "5px",
+            fontFamily: "Consolas, monospace",
+        });
+        attachWildcardAutocomplete(input);
+        wrap.append(span, input);
+        return { wrap, input };
+    };
+    const find = field("Find", "text, expression or __wildcard__ (type __ for suggestions)");
+    const repl = field("Replace", "new text or __wildcard__ — empty deletes");
+
+    const opts = document.createElement("div");
+    Object.assign(opts.style, { display: "flex", gap: "14px", paddingLeft: "78px" });
+    const check = (label, title) => {
+        const l = document.createElement("label");
+        l.title = title;
+        const c = document.createElement("input");
+        c.type = "checkbox";
+        l.append(c, " " + label);
+        opts.append(l);
+        return c;
+    };
+    const caseBox = check("Case sensitive", "Match upper/lower case exactly");
+    const regexBox = check("Regex", "Find is a regular expression; use $1 in Replace for groups");
+
+    const status = document.createElement("div");
+    Object.assign(status.style, { paddingLeft: "78px", color: "#a6adc8", minHeight: "16px" });
+
+    const quick = document.createElement("div");
+    Object.assign(quick.style, {
+        display: "flex", gap: "6px", alignItems: "center", flexWrap: "wrap",
+        borderTop: "1px solid #313244", paddingTop: "8px",
+    });
+    const qLabel = document.createElement("span");
+    qLabel.textContent = "Outfit slots →";
+    qLabel.title = "Swap every __dataset/upper__ and __dataset/outfit__ slot in one click";
+    quick.append(qLabel);
+
+    function applyText(next, message) {
+        const before = getText();
+        if (next === before) { status.textContent = "nothing changed"; return; }
+        undoText = before;
+        setText(next);
+        status.style.color = "#a6e3a1";
+        status.textContent = message;
+        refreshCount();
+    }
+
+    for (const [label, prefix] of [["Unisex", ""], ["Female", "female/"], ["Male", "male/"]]) {
+        const b = button(label, `Use __dataset/${prefix}upper__ and __dataset/${prefix}outfit__`);
+        b.addEventListener("click", () => {
+            const text = getText();
+            const n = (text.match(GENDER_SLOT_RE) || []).length;
+            applyText(text.replace(GENDER_SLOT_RE, `__dataset/${prefix}$1__`),
+                `${n} outfit slot(s) set to ${label.toLowerCase()}`);
+        });
+        quick.append(b);
+    }
+
+    function refreshCount() {
+        const m = buildMatcher(find.input.value, regexBox.checked, caseBox.checked);
+        status.style.color = "#a6adc8";
+        if (!m) { status.textContent = ""; return; }
+        if (m instanceof Error) { status.style.color = "#f38ba8"; status.textContent = m.message; return; }
+        const n = (getText().match(m) || []).length;
+        status.textContent = `${n} match${n === 1 ? "" : "es"}`;
+    }
+    for (const el of [find.input, caseBox, regexBox]) el.addEventListener("input", refreshCount);
+
+    body.append(find.wrap, repl.wrap, opts, status, quick);
+    openModal("Search & Replace", body, [
+        ["Undo", () => {
+            if (undoText === null) { status.textContent = "nothing to undo"; return; }
+            setText(undoText);
+            undoText = null;
+            status.textContent = "undone";
+            refreshCount();
+        }],
+        ["Replace All", () => {
+            const m = buildMatcher(find.input.value, regexBox.checked, caseBox.checked);
+            if (!m || m instanceof Error) return;
+            const text = getText();
+            const n = (text.match(m) || []).length;
+            // Plain mode inserts the replacement literally ($ has no meaning).
+            const next = regexBox.checked
+                ? text.replace(m, repl.input.value)
+                : text.replace(m, () => repl.input.value);
+            applyText(next, `replaced ${n} match${n === 1 ? "" : "es"}`);
+        }],
+    ]);
+    find.input.focus();
+}
 
 // ─── toolbar ────────────────────────────────────────────────────────
 
 function buildToolbar(node) {
     const w = (name) => node.widgets?.find(x => x.name === name);
     const textW = w("prompt_text");
-    const textEl = textW?.inputEl || textW?.element;
+    // Classic canvas: the widget owns its <textarea> (inputEl). Nodes 2.0
+    // (Vue) renders its own textarea inside [data-node-id] instead, so look
+    // it up at use time — it may not exist yet when the node is created.
+    const findTextEl = () => {
+        const el = textW?.inputEl || textW?.element;
+        if (el instanceof HTMLTextAreaElement) return el;
+        return document.querySelector(`[data-node-id="${node.id}"] textarea`);
+    };
 
     const host = document.createElement("div");
     Object.assign(host.style, {
@@ -132,13 +269,14 @@ function buildToolbar(node) {
     Object.assign(bar.style, { display: "flex", gap: "5px", flexWrap: "wrap" });
     const presetsBtn = button("Presets ▾", "Load or append a saved prompt list");
     const saveBtn = button("Save Preset", "Save the current text as a preset");
+    const replaceBtn = button("Search & Replace", "Find and swap expressions, words or __wildcards__; one-click unisex / female / male outfit slots");
     const previewBtn = button("Preview", "Resolve all prompts with the current settings — no image generation");
     const wildBtn = button("Wildcards", "Edit wildcard files (clothes, backgrounds, light …) — no restart needed");
     const syntaxBtn = button("Syntax", "Wildcard / bracket / variable syntax reference");
     const helpBtn = button("?", "How this node works");
     previewBtn.style.color = "#a6e3a1";
     syntaxBtn.style.color = helpBtn.style.color = "#89b4fa";
-    bar.append(presetsBtn, saveBtn, previewBtn, wildBtn, syntaxBtn, helpBtn);
+    bar.append(presetsBtn, saveBtn, replaceBtn, previewBtn, wildBtn, syntaxBtn, helpBtn);
 
     const stats = document.createElement("div");
     stats.style.color = "#a6adc8";
@@ -148,8 +286,13 @@ function buildToolbar(node) {
     const setText = (t) => {
         if (!textW) return;
         textW.value = t;
-        if (textEl) textEl.value = t;
         textW.callback?.(t);
+        const el = findTextEl();
+        if (el && el.value !== t) {
+            el.value = t;
+            // Vue's v-model only listens to input events on its textarea.
+            el.dispatchEvent(new Event("input", { bubbles: true }));
+        }
         refreshStats();
         node.setDirtyCanvas(true, true);
     };
@@ -158,13 +301,27 @@ function buildToolbar(node) {
         stats.textContent = `${c.total} lines · close ${c.close} · half ${c.half} · full ${c.full}`
             + (c.untagged ? ` · untagged ${c.untagged}` : "");
     }
-    textEl?.addEventListener("input", refreshStats);
-    if (textEl) attachWildcardAutocomplete(textEl);
+    // Autocomplete + live stats for every text field of this node. Called
+    // once per element: directly for the classic textarea, and from the
+    // focusin delegate below for Vue-rendered fields.
+    const attached = new WeakSet();
+    function attach(el) {
+        if (!el || attached.has(el)) return;
+        attached.add(el);
+        attachWildcardAutocomplete(el);
+        el.addEventListener("input", () => setTimeout(refreshStats, 0));
+    }
+    node.__fvmDatasetAttach = attach;
+    const classic = textW?.inputEl;
+    if (classic instanceof HTMLTextAreaElement) attach(classic);
     refreshStats();
 
     // Presets dropdown
+    let closePresetMenu = null;
     presetsBtn.addEventListener("click", async (ev) => {
         ev.stopPropagation();
+        // A second click on the button toggles the open menu closed.
+        if (closePresetMenu) { closePresetMenu(); return; }
         const resp = await api.fetchApi("/fvmtools/dataset-presets");
         const names = resp.ok ? (await resp.json()).presets : [];
         const menu = document.createElement("div");
@@ -175,8 +332,6 @@ function buildToolbar(node) {
             padding: "4px 0", zIndex: "9999", minWidth: "280px",
             boxShadow: "0 4px 12px rgba(0,0,0,0.5)", fontFamily: "monospace", fontSize: "12px",
         });
-        const dismiss = () => { menu.remove(); document.removeEventListener("mousedown", outside); };
-        const outside = (e) => { if (!menu.contains(e.target)) dismiss(); };
         if (!names.length) menu.textContent = "  no presets found";
         for (const name of names) {
             const item = document.createElement("div");
@@ -188,7 +343,7 @@ function buildToolbar(node) {
             const add = button("+ Append", "Add this preset below the current text");
             for (const [b, append] of [[load, false], [add, true]]) {
                 b.addEventListener("click", async () => {
-                    dismiss();
+                    closePresetMenu?.();
                     const res = await api.fetchApi(`/fvmtools/dataset-preset?name=${encodeURIComponent(name)}`);
                     if (!res.ok) return;
                     const t = (await res.json()).text;
@@ -199,7 +354,7 @@ function buildToolbar(node) {
             menu.append(item);
         }
         document.body.append(menu);
-        setTimeout(() => document.addEventListener("mousedown", outside), 0);
+        closePresetMenu = dismissOnOutside(menu, () => { closePresetMenu = null; }, presetsBtn);
     });
 
     // Save preset
@@ -262,6 +417,7 @@ function buildToolbar(node) {
         await runPreview(out);
     });
 
+    replaceBtn.addEventListener("click", () => openSearchReplace(getText, setText));
     wildBtn.addEventListener("click", () => {
         if (!wildcardsModal) wildcardsModal = createWildcardsModal();
         wildcardsModal.open();
@@ -279,6 +435,27 @@ function buildToolbar(node) {
     return { host, refreshStats };
 }
 
+// Nodes 2.0: widgets are Vue components with their own inputs. Attach to a
+// text field of a Dataset Prompt List the first time it gets focus.
+document.addEventListener("focusin", (e) => {
+    const t = e.target;
+    const isText = t instanceof HTMLTextAreaElement
+        || (t instanceof HTMLInputElement && (t.type === "text" || t.type === ""));
+    if (!isText) return;
+    const host = t.closest?.("[data-node-id]");
+    if (!host) return;
+    const id = host.dataset.nodeId;
+    const graphs = [app.canvas?.graph, app.graph].filter(Boolean);
+    let node = null;
+    for (const g of graphs) {
+        node = g.getNodeById?.(id) ?? g.getNodeById?.(Number(id));
+        if (node) break;
+    }
+    if (node && (node.comfyClass === NODE_NAME || node.type === NODE_NAME)) {
+        node.__fvmDatasetAttach?.(t);
+    }
+}, true);
+
 app.registerExtension({
     name: "FVMTools.DatasetPromptList",
     async beforeRegisterNodeDef(nodeType, nodeData) {
@@ -291,7 +468,7 @@ app.registerExtension({
             this.__fvmDatasetRefresh = refreshStats;
             this.addDOMWidget("dataset_toolbar", "div", host, {
                 serialize: false,
-                getHeight: () => 56,
+                getHeight: () => Math.max(56, host.scrollHeight + 6),  // toolbar may wrap
             });
             this.size = [Math.max(this.size?.[0] || 0, 560), Math.max(this.size?.[1] || 0, 520)];
             return r;

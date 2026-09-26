@@ -1,0 +1,3 @@
+# Close and half shots.
+%3%a __dataset/male/top__
+%2%an open __dataset/male/outer__ over a __dataset/male/top__

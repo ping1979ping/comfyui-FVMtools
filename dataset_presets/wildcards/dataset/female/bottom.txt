@@ -1,0 +1,15 @@
+__dataset/color__ high-waisted straight jeans
+light-wash flared jeans
+dark wash skinny jeans
+__dataset/color__ wide-leg trousers
+__dataset/color__ tailored cigarette trousers
+__dataset/color__ linen trousers
+__dataset/color__ pleated midi skirt
+__dataset/color__ A-line knee-length skirt
+__dataset/color__ pencil skirt
+__dataset/color__ satin slip skirt
+__dataset/color__ denim mini skirt
+__dataset/color__ corduroy mini skirt
+__dataset/color__ tailored shorts
+__dataset/color__ leggings
+__dataset/color__ cargo trousers

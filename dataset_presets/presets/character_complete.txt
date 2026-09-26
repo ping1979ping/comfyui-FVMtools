@@ -65,7 +65,7 @@
 [full] Full-body right three-quarter view, body turned 45 degrees to the subject's right, looking ahead past the camera, __dataset/expression__, wearing __dataset/outfit__, __dataset/setting__
 [full] Full-body side view walking in exact left profile across the frame, natural arm and leg swing, gaze forward, content expression, wearing __dataset/outfit__, __dataset/setting_outdoor__
 [full] Full-body side view walking in exact right profile across the frame, mid-stride, looking forward, faint smile, wearing __dataset/outfit__, __dataset/setting_outdoor__
-[full] Full-body view directly from behind, subject standing with the back to the camera, head facing away, arms relaxed, hair and back of the outfit clearly visible, wearing __dataset/outfit__, __dataset/setting__
+[full] Full-body view from behind, subject standing with the back to the camera, head turned slightly toward the subject's left so the face is partly visible in lost profile, cheek, jawline, eyelashes and tip of the nose visible, arms relaxed, hair and back of the outfit clearly visible, wearing __dataset/outfit__, __dataset/setting__
 [full] Full-body view from behind while walking away, subject turning the head back over the right shoulder to look at the camera, gentle smile, wearing __dataset/outfit__, __dataset/setting_outdoor__
 [full] Full-body view from behind and to the left, subject standing and looking back over the left shoulder, curious expression, wearing __dataset/outfit__, __dataset/setting__
 [full] Full-body frontal shot of the subject walking toward the camera, mid-stride, relaxed arms, confident expression, wearing __dataset/outfit__, __dataset/setting_outdoor__

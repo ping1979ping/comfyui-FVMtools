@@ -1,0 +1,12 @@
+__dataset/color__ wrap dress
+__dataset/color__ satin slip dress
+__dataset/color__ ribbed knit midi dress
+__dataset/color__ shirt dress with a belt
+__dataset/color__ sundress with thin straps
+__dataset/color__ sweater dress
+__dataset/color__ tea dress with a small floral print
+__dataset/color__ A-line mini dress
+__dataset/color__ flowing maxi dress
+__dataset/color__ linen summer dress
+__dataset/color__ fitted sheath dress
+__dataset/color__ polka-dot midi dress

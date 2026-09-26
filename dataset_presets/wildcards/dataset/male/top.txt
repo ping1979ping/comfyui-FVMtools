@@ -1,0 +1,19 @@
+# Men's tops. Plain, no logos or lettering.
+__dataset/color__ fitted crew-neck T-shirt
+__dataset/color__ henley shirt
+__dataset/color__ oxford button-down shirt
+__dataset/color__ dress shirt with an open collar
+__dataset/color__ Cuban-collar short-sleeve shirt
+__dataset/color__ grandad-collar linen shirt
+__dataset/color__ flannel shirt with a subtle check pattern
+__dataset/color__ polo shirt
+__dataset/color__ knitted polo
+__dataset/color__ merino crew-neck sweater
+__dataset/color__ chunky shawl-collar cardigan
+__dataset/color__ roll-neck sweater
+__dataset/color__ crew-neck sweatshirt
+__dataset/color__ hoodie
+__dataset/color__ waffle-knit thermal top
+__dataset/color__ denim shirt
+__dataset/color__ rugby shirt
+__dataset/color__ quarter-zip sweater
