@@ -22,6 +22,7 @@
  */
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
+import { dismissOnOutside } from "./_widgets_common.js";
 
 const NODE_NAME = "FVM_JB_Builder";
 const INDENT_PX = 18;
@@ -321,7 +322,7 @@ export function attachWildcardAutocomplete(input) {
             Object.assign(popup.style, {
                 position: "fixed", background: "#1e1e2e", color: "#cdd6f4",
                 border: "1px solid #45475a", borderRadius: "6px",
-                padding: "4px 0", zIndex: "9999",
+                padding: "4px 0", zIndex: "10001",  // above modal overlays (10000)
                 boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
                 maxHeight: "240px", overflowY: "auto", minWidth: "220px",
                 fontFamily: "Consolas, monospace", fontSize: "12px",
@@ -1681,8 +1682,11 @@ function buildRowWidget(node) {
     });
 
     // ── Insert From Catalog dropdown ───────────────────────────────
+    let closeInsertMenu = null;
     insertBtn.addEventListener("click", async (e) => {
         e.preventDefault();
+        // A second click on the button toggles the open menu closed.
+        if (closeInsertMenu) { closeInsertMenu(); return; }
         const cat = await getCatalog();
         const menu = document.createElement("div");
         Object.assign(menu.style, {
@@ -1714,7 +1718,7 @@ function buildRowWidget(node) {
                 item.addEventListener("mouseenter", () => item.style.background = "#313244");
                 item.addEventListener("mouseleave", () => item.style.background = "");
                 item.addEventListener("click", async () => {
-                    document.body.removeChild(menu);
+                    closeInsertMenu?.();
                     const url = `/fvmtools/jb-catalog-entry?category=${encodeURIComponent(category)}&name=${encodeURIComponent(name)}`;
                     const resp = await api.fetchApi(url);
                     const data = await resp.json();
@@ -1729,13 +1733,7 @@ function buildRowWidget(node) {
         }
 
         document.body.append(menu);
-        const dismiss = (e2) => {
-            if (!menu.contains(e2.target)) {
-                if (menu.parentNode) document.body.removeChild(menu);
-                document.removeEventListener("mousedown", dismiss);
-            }
-        };
-        setTimeout(() => document.addEventListener("mousedown", dismiss), 10);
+        closeInsertMenu = dismissOnOutside(menu, () => { closeInsertMenu = null; }, insertBtn);
     });
 
     // ── Edit Catalog modal ─────────────────────────────────────────

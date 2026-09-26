@@ -291,3 +291,41 @@ export function createSeparator(label) {
         },
     };
 }
+
+/**
+ * Close a floating DOM menu on any outside interaction. Listens to
+ * ``pointerdown`` in the capture phase: ComfyUI's canvas calls
+ * preventDefault on pointer events, which suppresses the compatibility
+ * ``mousedown`` — a mousedown listener never sees canvas clicks or drags.
+ * Also closes on wheel (canvas zoom/scroll moves the anchor away from the
+ * fixed-position menu), Escape and window blur. Returns the close function.
+ *
+ * ``anchor`` (the button that opened the menu) is ignored, so its own click
+ * handler can toggle the menu instead of close-then-reopen.
+ */
+export function dismissOnOutside(menu, onClose, anchor = null) {
+    let closed = false;
+    const close = () => {
+        if (closed) return;
+        closed = true;
+        document.removeEventListener("pointerdown", onPointer, true);
+        document.removeEventListener("wheel", onWheel, true);
+        document.removeEventListener("keydown", onKey, true);
+        window.removeEventListener("blur", close);
+        menu.remove();
+        onClose?.();
+    };
+    const outside = (t) => !menu.contains(t) && !(anchor && anchor.contains(t));
+    const onPointer = (e) => { if (outside(e.target)) close(); };
+    const onWheel = (e) => { if (!menu.contains(e.target)) close(); };
+    const onKey = (e) => { if (e.key === "Escape") close(); };
+    // Defer so the click that opened the menu doesn't close it right away.
+    setTimeout(() => {
+        if (closed) return;
+        document.addEventListener("pointerdown", onPointer, true);
+        document.addEventListener("wheel", onWheel, { capture: true, passive: true });
+        document.addEventListener("keydown", onKey, true);
+        window.addEventListener("blur", close);
+    }, 0);
+    return close;
+}

@@ -307,13 +307,14 @@ async function fetchLoraList(force = false) {
         _loraListCache = data.loras || [];
     } catch (e) {
         console.warn("[FVMTools] Failed to fetch lora list:", e);
-        _loraListCache = [];
+        _loraListCache = _loraListCache || [];   // keep the last good list
     }
     return _loraListCache;
 }
 
 function showLoraChooser(event, callback) {
-    fetchLoraList().then(loras => {
+    // Always re-fetch: new LoRA files must show up without a page reload.
+    fetchLoraList(true).then(loras => {
         const items = ["None", ...loras];
         new LiteGraph.ContextMenu(items, {
             event,
@@ -770,6 +771,11 @@ let _lastCanvasMouseEvent = null;
 
 app.registerExtension({
     name: "FVMTools.PersonDetailerPower",
+
+    // Called by the frontend on "Refresh Node Definitions" (R).
+    async refreshComboInNodes() {
+        await fetchLoraList(true);
+    },
 
     async beforeRegisterNodeDef(nodeType, nodeData, appRef) {
         if (nodeData.name !== "PersonDetailerPower") return;
