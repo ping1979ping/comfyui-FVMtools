@@ -307,3 +307,20 @@ class TestChainWiring:
             source_path=source_path, report="")
         assert load(folder)["result"][5] == "b.png"
         assert get_done(folder) == {"a.png", "b.png"}
+
+
+def test_save_image_writes_rgba_as_jpg_with_caption(tmp_path):
+    """GLSL Shader outputs RGBA; JPEG must still be written (alpha dropped)."""
+    import torch
+    from PIL import Image as _Image
+    from nodes.batch.saver import FVM_BatchSaveImage
+
+    rgba = torch.rand(1, 32, 48, 4)
+    out = FVM_BatchSaveImage().execute(
+        str(tmp_path), "save", "close_", "jpg", 95, False, True,
+        image=rgba, report="a caption")
+    image, saved_path, written = out["result"]
+    assert written and saved_path.endswith(".jpg")
+    with _Image.open(saved_path) as im:
+        assert im.mode == "RGB" and im.size == (48, 32)
+    assert open(saved_path[:-4] + ".txt", encoding="utf-8").read() == "a caption"
