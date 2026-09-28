@@ -6,12 +6,14 @@ import re
 def parse_overrides(override_string):
     """Parse multiline override string into per-slot overrides.
 
-    Format per line: slot_name: garment_spec [fabric] | color_tag
+    Format per line: slot_name: garment_spec [fabric] | color_tag [| decoration]
     Special values: 'exclude', 'auto'
+    Empty garment ("bottom: | primary") = mode "style": auto garment, forced
+    colour role / decoration, slot activation unchanged.
     Wildcards: {option1|option2}
 
     Returns: dict {slot_name: {"garment": str|None, "fabric": str|None,
-                                "color_tag": str|None, "mode": "override"|"exclude"|"auto"}}
+                                "color_tag": str|None, "mode": "override"|"style"|"exclude"|"auto"}}
     """
     if not override_string or not override_string.strip():
         return {}
@@ -109,11 +111,18 @@ def parse_overrides(override_string):
             elif len(words) == 1:
                 garment = words[0]
 
+        # No garment but a role and/or decoration ("bottom: | primary"): keep
+        # the auto-picked garment, only restyle it. Unlike "override" this does
+        # not force the slot on — a bag still appears only when rolled.
+        mode = "override" if garment else "style"
+        if mode == "style" and not (color_tag or decoration):
+            continue
+
         result[slot_name] = {
             "garment": garment,
             "fabric": fabric,
             "color_tag": color_tag,
-            "mode": "override",
+            "mode": mode,
             "decoration": decoration,
         }
 

@@ -242,6 +242,24 @@ bag: exclude
 palette: primary=navy blue, secondary=cream, accent=burnt orange
 ```
 
+### Role only — keep the garment, change its colour
+
+Leave the garment empty to restyle whatever the engine picks:
+
+```
+top: | primary
+bottom: | primary
+bag: | secondary
+```
+
+Top and bottom now share the primary colour (a matching set), the bag takes
+the secondary as an accent. Unlike a full override, a role-only line does not
+force the slot on — a bag still appears only when its roll says so. A third
+field works the same way (`bottom: | primary | none` removes prints). In the
+editor: mode **auto** + a colour role, or the **Matching set** button
+(top/bottom/outerwear = primary, headwear/bag = secondary; accessories keep
+their metallic role so jewellery stays silver or gold).
+
 The `palette:` line is new — it forces the actual colour behind a role for
 this node. Garments keep their roles (top=primary, bottom=secondary,
 footwear=neutral, accessories=metallic, headwear/bag=accent); you swap what

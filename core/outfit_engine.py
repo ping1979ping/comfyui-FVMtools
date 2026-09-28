@@ -201,6 +201,10 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
 
         color_tag = color_tag_for(
             slot, fabric_name, DEFAULT_COLOR_TAGS.get(slot, "#primary#"))
+        if ov.get("mode") == "style":
+            color_tag = ov.get("color_tag") or color_tag
+            if ov.get("decoration") is not None:
+                decoration = None if ov["decoration"].lower() == "none" else ov["decoration"]
         desc = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration)
         descriptions.append(desc)
         details.append(f"{slot}:{chosen_garment['name']}:{fabric_name or 'none'}:{color_tag}")
@@ -349,6 +353,10 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
 
         color_tag = color_tag_for(
             slot, fabric_name, DEFAULT_COLOR_TAGS.get(slot, "#primary#"))
+        if ov.get("mode") == "style":
+            color_tag = ov.get("color_tag") or color_tag
+            if ov.get("decoration") is not None:
+                decoration = None if ov["decoration"].lower() == "none" else ov["decoration"]
         fragment = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration)
         garments_out[slot] = {
             "slot": slot,

@@ -212,7 +212,9 @@ const OV_PALETTE_KEYS = [...OV_ROLES, "ambient_light", "shadow_tone"];
 const OV_TIPS = {
     mode:
         "auto — the engine picks this slot from the set's list files " +
-        "(default, writes nothing).\n" +
+        "(default, writes nothing). A colour role or decoration set on an " +
+        "auto row restyles whatever garment the engine picks, without " +
+        "forcing the slot on.\n" +
         "custom — force the garment below; the slot is activated even if " +
         "its probability roll would have skipped it.\n" +
         "exclude — the slot never appears, even when its enable toggle " +
@@ -405,9 +407,14 @@ function createOverrideModal() {
 
         const syncEnabled = () => {
             const custom = mode.value === "custom";
-            for (const el of [fabric, garment, role, deco]) {
+            const styled = custom || mode.value === "auto";
+            for (const el of [fabric, garment]) {
                 el.disabled = !custom;
                 el.style.opacity = custom ? "1" : "0.35";
+            }
+            for (const el of [role, deco]) {
+                el.disabled = !styled;
+                el.style.opacity = styled ? "1" : "0.35";
             }
         };
         mode.addEventListener("change", syncEnabled);
@@ -455,7 +462,15 @@ function createOverrideModal() {
     const cancelBtn = document.createElement("button");
     cancelBtn.textContent = "Cancel";
     Object.assign(cancelBtn.style, { ...btnStyle, background: "#45475a", color: "#cdd6f4" });
-    btnRow.append(applyBtn, cancelBtn);
+    const matchBtn = document.createElement("button");
+    matchBtn.textContent = "Matching set";
+    matchBtn.title = "Top, bottom and outerwear in the same colour (primary); " +
+        "headwear and bag on secondary as accents. Accessories keep their " +
+        "metallic role (jewellery stays silver/gold). Garments stay auto; " +
+        "custom rows keep their garment and only get the role.";
+    Object.assign(matchBtn.style, { ...btnStyle, background: "#313244", color: "#cdd6f4",
+                                    marginRight: "auto" });
+    btnRow.append(matchBtn, applyBtn, cancelBtn);
 
     dialog.append(
         header, helpPanel,
@@ -507,8 +522,9 @@ function createOverrideModal() {
             if (low === "exclude") { row.mode.value = "exclude"; row.syncEnabled(); continue; }
             if (low === "auto")    { row.mode.value = "auto";    row.syncEnabled(); continue; }
 
-            row.mode.value = "custom";
             const parts = spec.split("|").map(p => p.trim());
+            // No garment before the pipe = auto garment, restyled only.
+            row.mode.value = parts[0] ? "custom" : "auto";
             const words = parts[0].split(/\s+/).filter(Boolean);
             if (words.length >= 2) {
                 row.fabric.value = words[0];
@@ -530,13 +546,19 @@ function createOverrideModal() {
                 lines.push(`${slot}: exclude`);
                 continue;
             }
+            const role = r.role.value;
+            const deco = r.deco.value.trim();
+            if (r.mode.value === "auto") {
+                // "slot: | role [| deco]" — auto garment, forced style
+                if (deco)      lines.push(`${slot}: | ${role} | ${deco}`);
+                else if (role) lines.push(`${slot}: | ${role}`);
+                continue;
+            }
             if (r.mode.value !== "custom") continue;
             const garment = r.garment.value.trim();
             if (!garment) continue;
             let spec = r.fabric.value.trim()
                 ? `${r.fabric.value.trim()} ${garment}` : garment;
-            const role = r.role.value;
-            const deco = r.deco.value.trim();
             if (deco)      spec += ` | ${role} | ${deco}`;
             else if (role) spec += ` | ${role}`;
             lines.push(`${slot}: ${spec}`);
@@ -548,6 +570,18 @@ function createOverrideModal() {
         return lines.join("\n");
     }
 
+    matchBtn.addEventListener("click", () => {
+        const roles = { top: "primary", bottom: "primary", outerwear: "primary",
+                        headwear: "secondary", bag: "secondary" };
+        for (const [slot, r] of Object.entries(roles)) {
+            const row = slotRows[slot];
+            if (!row || row.mode.value === "exclude") continue;
+            row.role.value = r;
+            row.syncEnabled();
+        }
+        status.textContent = "Matching set: top/bottom/outerwear = primary, " +
+            "headwear/bag = secondary. Apply to write it.";
+    });
     applyBtn.addEventListener("click", () => {
         if (!targetWidget) return;
         targetWidget.value = serialize();

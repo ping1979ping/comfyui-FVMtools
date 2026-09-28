@@ -72,7 +72,11 @@ def _formality_bucket(value: float) -> str:
 
 def _slot_to_garment(rec: dict, region_id: str, subs: dict[str, str]) -> dict:
     slot = rec["slot"]
-    color_role = DEFAULT_COLOR_ROLE_BY_SLOT.get(slot) or "primary"
+    # The role the garment actually wears (overrides can change it); fall
+    # back to the slot default when the tag isn't a palette role.
+    tag = (rec.get("color_tag") or "").strip("#")
+    color_role = (tag if tag and f"#{tag}#" in subs
+                  else DEFAULT_COLOR_ROLE_BY_SLOT.get(slot) or "primary")
     # Some outfit lists embed a literal '#color#' placement marker in the
     # garment name (see core/outfit_lists.py:72). Strip it from the cosmetic
     # ``name`` field so the JSON output never carries unresolved tokens.
