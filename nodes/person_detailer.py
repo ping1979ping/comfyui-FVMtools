@@ -82,7 +82,7 @@ class PersonDetailer:
         slot_widgets["generic_enabled"] = ("BOOLEAN", {"default": False,
                                                         "tooltip": "Enable detailing for unmatched faces (not assigned to any reference)"})
         slot_widgets["generic_catch_unprocessed"] = ("BOOLEAN", {"default": True,
-                                                                   "tooltip": "ON: detail all faces not processed by active slots (including matched but disabled slots). OFF: only truly unmatched faces from Person Selector Multi."})
+                                                                   "tooltip": "ON: detail everything the active slots leave unprocessed - unmatched faces, faces of disabled slots, and with generic mask_type 'aux' also aux hits assigned to a reference whose slot does not use 'aux' (e.g. a phone in the hand of a person whose slot only details the head). OFF: only truly unmatched faces / unassigned aux hits."})
         slot_widgets["generic_lora"] = (lora_list, {"tooltip": "LoRA to apply for unmatched faces"})
         slot_widgets["generic_lora_strength"] = ("FLOAT", {"default": 1.0, "min": 0.0, "max": 2.0, "step": 0.05,
                                                             "tooltip": "LoRA strength for unmatched faces"})
@@ -145,6 +145,34 @@ class PersonDetailer:
                 "unique_id": "UNIQUE_ID",
             },
         }
+
+    @staticmethod
+    def _generic_aux_mask(person_data, b, num_refs, slots, catch_unprocessed):
+        """Aux region the Generic slot details for image ``b``.
+
+        Always the unassigned hits. With ``catch_unprocessed`` also every hit
+        assigned to a reference that no active aux slot handles — same rule as
+        for faces: Generic takes whatever the active slots leave unprocessed
+        (e.g. a phone in the hand of a person whose slot only does the head).
+        Returns ``(mask or None, number of references whose parts were added)``.
+        """
+        mask = None
+        unassigned = person_data.get("aux_unassigned_masks")
+        if unassigned is not None:
+            mask = unassigned[b].clone()
+        claimed = 0
+        if catch_unprocessed:
+            aux_slots = {s["index"] for s in slots if s["mask_type"] == "aux"}
+            aux_masks = person_data.get("aux_masks") or []
+            for ri in range(min(num_refs, len(aux_masks))):
+                if ri in aux_slots:
+                    continue
+                part = aux_masks[ri][b]
+                if is_mask_empty(part):
+                    continue
+                mask = part.clone() if mask is None else torch.max(mask, part)
+                claimed += 1
+        return mask, claimed
 
     def _get_slot_config(self, slot_key, inpaint_options):
         """Get per-slot config from InpaintOptions or defaults."""
@@ -467,19 +495,24 @@ class PersonDetailer:
                         print(f"    Generic — aux: no detector connected to Person Selector Multi, skip")
                         img_summary["Generic"] = {"status": "no aux data", "mask_type": "aux"}
                     else:
-                        unassigned_mask = person_data.get("aux_unassigned_masks")
-                        if unassigned_mask is not None and not is_mask_empty(unassigned_mask[b]):
+                        gen_aux, n_claimed = self._generic_aux_mask(
+                            person_data, b, num_refs, slots, generic_catch_unprocessed)
+                        if gen_aux is not None and not is_mask_empty(gen_aux):
                             current_image, tile, n_parts = detail_parts_individually(
-                                self._inpaint_mask, current_image, unassigned_mask[b],
+                                self._inpaint_mask, current_image, gen_aux,
                                 generic_slot_cfg, gen_cached, **inpaint_kwargs)
-                            print(f"    Generic — aux: {n_parts} unassigned part(s) detailed individually")
+                            extra = (f", incl. parts of {n_claimed} reference(s) without an aux slot"
+                                     if n_claimed else "")
+                            print(f"    Generic — aux: {n_parts} part(s) detailed individually{extra}")
                             if tile is not None:
                                 refined_parts.append(tile)
                                 refined_gen_parts.append(tile)
                             img_summary["Generic"] = {"status": "ok", "mask_type": "aux", "parts": n_parts}
                             _send_progress(build_status_text(all_summaries + [img_summary], batch_size, len(refined_parts)))
                         else:
-                            print(f"    Generic — aux: no unassigned body parts")
+                            print(f"    Generic — aux: no unassigned body parts"
+                                  + ("" if generic_catch_unprocessed else
+                                     " (catch_unprocessed off: parts assigned to a reference are skipped)"))
                             img_summary["Generic"] = {"status": "no parts", "mask_type": "aux", "parts": 0}
                 else:
                     # Standard generic: unmatched/unprocessed faces

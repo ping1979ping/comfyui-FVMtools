@@ -106,7 +106,7 @@ class PersonDetailerPower(PersonDetailer):
                 "ref_prompt_5": ("STRING", {"multiline": True, "default": "",
                                              "tooltip": "Positive prompt for reference 5"}),
                 "generic_catch_unprocessed": ("BOOLEAN", {"default": True,
-                                                           "tooltip": "ON: detail all unprocessed faces. OFF: only truly unmatched."}),
+                                                           "tooltip": "ON: detail everything the active slots leave unprocessed - unmatched faces, faces of disabled slots, and with generic mask_type 'aux' also aux hits assigned to a reference whose slot does not use 'aux' (e.g. a phone in the hand of a person whose slot only details the head). OFF: only truly unmatched faces / unassigned aux hits."}),
                 "gen_prompt": ("STRING", {"multiline": True, "default": "",
                                           "tooltip": "Positive prompt for generic/unmatched faces"}),
             },
