@@ -4,4 +4,4 @@
 "FOCUS" | 0.08 | accessories | minimal serif
 "BOSS" | 0.08 | accessories | engraved serif
 "WORK" | 0.06 | accessories | clean sans-serif
-"MONDAY" | 0.05 | top | playful handwriting
+"workoholic" | 0.05 | top | playful handwriting
