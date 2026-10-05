@@ -2,7 +2,7 @@
 # format: name | probability | coverage_range | texture
 
 long laminate conference table | 1.0 | 0.4-0.8 | wood-look top with cable box
-whiteboard covered in old notes | 0.85 | 0.3-0.6 | ghosted marker layers
+empty cleaned whiteboard | 0.85 | 0.3-0.6 | ghosted marker layers
 projection screen pulled halfway | 0.6 | 0.25-0.5 | wrinkled matte surface
 glass wall to the hallway | 0.6 | 0.3-0.6 | frosted privacy band
 wall-mounted flatscreen | 0.65 | 0.2-0.45 | cable dangling below
