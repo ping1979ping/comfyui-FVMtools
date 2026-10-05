@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+swivel counter stool row | 1.0 | 0.3-0.5 | red vinyl seats on chrome posts
+tabletop jukebox | 0.9 | 0.2-0.4 | glowing selector with chrome arches
+freestanding wall jukebox | 0.8 | 0.2-0.4 | rainbow bubble tube cabinet
+booth table with napkin dispenser | 0.9 | 0.25-0.5 | speckled laminate top
+milkshake mixer station | 0.7 | 0.15-0.3 | spindle blenders and steel cups
+waitress service pass | 0.65 | 0.2-0.4 | pastel uniform with pad and pencil
+glass cake dome stand | 0.6 | 0.15-0.3 | frosted layer cake on pedestal
+round chrome-legged table | 0.6 | 0.2-0.4 | formica top with bent-metal base
+coffee urn station | 0.55 | 0.15-0.3 | steaming steel brewer on shelf
+short-order griddle line | 0.5 | 0.2-0.4 | sizzling flat-top with spatulas
+cash register counter end | 0.5 | 0.15-0.3 | brass-keyed vintage till
+sidewalk-facing window booth | 0.5 | 0.25-0.45 | bench seats flanking a narrow table

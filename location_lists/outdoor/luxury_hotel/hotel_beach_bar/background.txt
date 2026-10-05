@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+palm-thatched beach bar hut on the sand | 1.0 | 0.4-0.8 | woven frond roof on bamboo posts
+turquoise sea meeting a white sand shoreline | 0.95 | 0.5-0.9 | gentle foam-edged waves
+leaning coconut palms against the sky | 0.85 | 0.3-0.6 | curved trunks and drooping fronds
+rows of striped loungers and parasols on the sand | 0.85 | 0.3-0.6 | colorful canvas and white sand
+hotel resort building rising behind dune grass | 0.6 | 0.2-0.45 | pale facade with terraces
+distant sailboats on the glittering bay | 0.55 | 0.15-0.4 | tiny white triangles
+wooden boardwalk leading to the bar | 0.6 | 0.15-0.35 | weathered planks over sand
+rocky headland closing the private cove | 0.5 | 0.2-0.45 | dark sea-worn boulders
+sunset-lit horizon over calm water | 0.55 | 0.3-0.6 | molten gradient sky
+beachfront fire pit lounge with low seating | 0.45 | 0.15-0.35 | circular stone ring
+fine white sand dunes with sea oats | 0.5 | 0.2-0.45 | rippled soft mounds
+hammocks strung between palm trunks | 0.5 | 0.15-0.35 | woven cotton nets
+tiki torch line lit along the shore | 0.4 | 0.1-0.3 | slender flames at dusk
+wooden jetty stretching into clear shallows | 0.4 | 0.15-0.35 | weathered pier planks

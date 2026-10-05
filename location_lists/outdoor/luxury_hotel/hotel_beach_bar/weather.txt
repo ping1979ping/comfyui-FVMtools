@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear sunny sky with a salty sea breeze | 0.9 | - | -
+gentle trade wind through the palms | 0.8 | - | -
+scattered white clouds over the water | 0.65 | - | -
+calm flat sea and still air | 0.6 | - | -
+hot dry tropical heat | 0.65 | - | -
+sea mist drifting at dawn | 0.35 | - | -
+stiff breeze lifting thatch fringes | 0.4 | - | -
+distant storm clouds on the horizon | 0.3 | - | -
+warm humid evening air | 0.55 | - | -
+brief light tropical rain | 0.3 | - | -

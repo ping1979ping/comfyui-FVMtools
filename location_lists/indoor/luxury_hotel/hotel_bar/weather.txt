@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm cozy interior air | 1.0 | - | -
+softly perfumed cocktail haze | 0.85 | - | -
+gentle air-conditioned hush | 0.8 | - | -
+faint cigar-lounge warmth | 0.6 | - | -
+muted piano-murmured atmosphere | 0.7 | - | -
+cool crisp climate-controlled air | 0.65 | - | -
+distant rain-streaked window | 0.5 | - | -
+citrus-scented lounge air | 0.55 | - | -
+fireplace-warmed stillness | 0.5 | - | -
+quiet low conversation hum | 0.55 | - | -

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool air-conditioned refuge | 0.9 | - | -
+scorching heat outside the window | 0.8 | - | -
+gentle chilled air near display case | 0.7 | - | -
+soft sugary-sweet scented air | 0.85 | - | -
+rainy afternoon on glass | 0.5 | - | -
+steady indoor comfort | 1.0 | - | -
+bright sunshine through windows | 0.75 | - | -
+humid summer stickiness at door | 0.45 | - | -
+waffle-baked warm aroma | 0.7 | - | -
+light snow outside frosted pane | 0.3 | - | -

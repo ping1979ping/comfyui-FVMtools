@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+crisp white tablecloth | 1.0 | 0.3-0.4 | ironed linen with soft folds
+plated eggs benedict | 0.85 | 0.3-0.4 | poached eggs with hollandaise on muffin
+stack of fluffy pancakes | 0.8 | 0.3-0.4 | maple syrup dripping over berries
+basket of warm croissants | 0.75 | 0.2-0.4 | napkin-lined woven bread basket
+fresh fruit plate | 0.75 | 0.2-0.4 | sliced mango and kiwi arrangement
+carpeted dining-room floor | 0.6 | 0.15-0.3 | muted patterned wool broadloom
+sun-dappled tablecloth patch | 0.5 | 0.15-0.3 | window light across linen
+glass of fresh orange juice | 0.55 | 0.15-0.3 | pulpy bright citrus
+parquet floor with chair shadows | 0.5 | 0.05-0.15 | warm wood with soft reflections
+folded cloth napkin and silver | 0.45 | 0.05-0.15 | cutlery on rolled linen

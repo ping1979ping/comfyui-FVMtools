@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+sunny Saturday brunch hour | 1.0 | - | -
+mid-morning coffee rush | 0.9 | - | -
+golden late-afternoon light | 0.85 | - | -
+lazy summer lunch hour | 0.85 | - | -
+early morning just opened | 0.6 | - | -
+dusk with string lights on | 0.7 | - | -
+soft overcast midday | 0.5 | - | -
+evening dinner glow | 0.6 | - | -
+bright noon Sunday | 0.7 | - | -
+quiet Tuesday afternoon | 0.5 | - | -

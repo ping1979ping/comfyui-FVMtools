@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright sparkling midday | 0.8 | - | -
+golden hour glow on the sand | 0.9 | - | -
+fiery orange sunset over the sea | 0.9 | - | -
+soft pink dusk with first torches lit | 0.65 | - | -
+calm early morning light | 0.55 | - | -
+hazy late afternoon | 0.7 | - | -
+twilight blue hour | 0.5 | - | -
+moonlit night with lantern glow | 0.4 | - | -
+mellow mid-morning sun | 0.55 | - | -
+overcast pearly daylight | 0.35 | - | -

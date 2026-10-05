@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm oven-scented air | 1.0 | - | -
+steamy coffee-machine haze | 0.85 | - | -
+cosy heated room against drizzle | 0.75 | - | -
+fogged-up shopfront glass | 0.6 | - | -
+cool draft from opening door | 0.5 | - | -
+sweet vanilla-and-butter aroma | 0.7 | - | -
+rain streaks on window | 0.55 | - | -
+bright sun through front glass | 0.6 | - | -
+still quiet hush of morning | 0.45 | - | -
+snowy winter light outside | 0.4 | - | -

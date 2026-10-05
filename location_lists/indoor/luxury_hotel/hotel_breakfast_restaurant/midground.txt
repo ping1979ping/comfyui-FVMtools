@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rows of set breakfast tables | 1.0 | 0.3-0.5 | white-clothed four-seat tables
+chafing dish buffet trays | 0.95 | 0.3-0.5 | steel warmers of eggs and bacon
+upholstered dining chairs | 0.85 | 0.3-0.5 | cream-cushioned wood seats
+cereal and granola station | 0.7 | 0.2-0.4 | glass dispensers and bowls
+bread and cheese carving board | 0.6 | 0.2-0.4 | wooden slab with cured meats
+round family table | 0.65 | 0.2-0.4 | large circular linen-draped table
+waiter coffee trolley | 0.6 | 0.15-0.35 | rolling silver pot service cart
+juice dispenser row | 0.55 | 0.15-0.35 | glass jars of orange and apple
+fruit pyramid display | 0.5 | 0.15-0.35 | stacked bright seasonal fruit
+potted orchid centerpiece | 0.5 | 0.15-0.3 | white blooms on buffet
+high-chair beside family table | 0.35 | 0.15-0.3 | wooden child seat
+smoked salmon platter | 0.5 | 0.15-0.3 | ice-bedded pink slices with dill

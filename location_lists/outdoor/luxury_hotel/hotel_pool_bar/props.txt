@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+tall frozen pina colada with a pineapple wedge | 0.9 | 0.005-0.03 | creamy topped glass
+tropical punch with orange slice and cherry | 0.7 | 0.005-0.03 | crushed ice in a hurricane glass
+chilled champagne bucket on a stand | 0.5 | 0.005-0.03 | silver bucket with frost
+coconut shell drink with a straw | 0.6 | 0.005-0.025 | hollow husk with a paper umbrella
+cocktail shaker and bar spoon | 0.55 | 0.005-0.02 | polished steel set
+bowl of lime wedges and mint | 0.5 | 0.003-0.02 | fresh green garnish
+white terrycloth pool towel stack | 0.6 | 0.01-0.05 | tidy folded pile
+straw sunhat on a barstool | 0.4 | 0.01-0.04 | wide woven brim
+sunglasses on the bar counter | 0.5 | 0.003-0.015 | dark lenses beside a drink
+bowl of salted tortilla chips with guacamole | 0.5 | 0.005-0.025 | green dip in stone dish
+oversized beach bag with a book | 0.35 | 0.01-0.04 | striped canvas tote
+bottle of sunscreen and a room key | 0.35 | 0.003-0.015 | small items on a tray
+floating tray holding two drinks | 0.4 | 0.01-0.04 | wicker tray on the water
+tiki mug with orchid garnish | 0.4 | 0.005-0.02 | carved ceramic vessel

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+dim smoky warm haze | 0.8 | - | -
+air-conditioned cool draft | 0.7 | - | -
+rainy night outside windows | 0.75 | - | -
+snowy evening glimpsed through glass | 0.6 | - | -
+humid kitchen-warm air | 0.6 | - | -
+steady indoor warmth | 1.0 | - | -
+fryer-scented heavy air | 0.7 | - | -
+bright afternoon glare at door | 0.5 | - | -
+cold gust from opened door | 0.55 | - | -
+stuffy crowded atmosphere | 0.65 | - | -

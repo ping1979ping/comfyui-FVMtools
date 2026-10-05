@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+warm evening cocktail hour | 1.0 | - | -
+dim late-night glow | 0.9 | - | -
+early evening golden dusk | 0.8 | - | -
+soft candlelit nightfall | 0.8 | - | -
+buzzing happy-hour twilight | 0.7 | - | -
+quiet after-midnight stillness | 0.6 | - | -
+blue-hour window glow | 0.6 | - | -
+amber late-afternoon opening | 0.5 | - | -
+moody rainy-evening gloom | 0.45 | - | -
+glittering pre-dinner dusk | 0.5 | - | -

@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+chrome stainless wall banding | 0.85 | 0.05-0.2 | horizontal polished strip
+rounded streamline corner trim | 0.7 | 0.05-0.15 | bullet-shaped aluminum cap
+neon tube sign bracket | 0.65 | 0.02-0.1 | glowing pink and blue glass
+porthole door window | 0.6 | 0.05-0.15 | round glass in swinging kitchen door
+pressed-tin ceiling panels | 0.55 | 0.05-0.2 | cream embossed squares
+pendant dome lamp row | 0.6 | 0.05-0.15 | white enamel shades on cords
+art-deco ceiling fan | 0.5 | 0.05-0.15 | slow brass blades
+glass-block window strip | 0.45 | 0.05-0.15 | frosted translucent squares
+red leather door push-plate | 0.4 | 0.02-0.08 | studded padded panel
+brushed-steel napkin-rail | 0.4 | 0.02-0.08 | slim horizontal bar
+terrazzo threshold strip | 0.4 | 0.02-0.08 | flecked entry edge
+wall-mounted pay phone | 0.35 | 0.02-0.1 | black coin booth fixture

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+soft footprints in the white sand | 0.8 | 0.1-0.3 | fine grains and shallow dents
+foamy wave edge sliding over wet sand | 0.7 | 0.1-0.3 | glassy thin water film
+cocktail on a driftwood table with sea behind | 0.75 | 0.05-0.2 | condensation on a tall glass
+scattered seashells on the sand | 0.55 | 0.03-0.12 | pale spiral shells
+rolled beach towel on a lounger | 0.55 | 0.05-0.15 | thick striped cotton
+frayed thatch edge hanging at the frame | 0.5 | 0.05-0.15 | dried straw strands
+dune grass blades in sharp focus | 0.45 | 0.03-0.12 | thin swaying green
+flip-flops left beside a stool | 0.45 | 0.02-0.08 | rubber soles in sand
+hibiscus flower on the bar rail | 0.4 | 0.02-0.08 | bright petal accent
+coconut with a straw on a wooden plank | 0.45 | 0.03-0.1 | hollow green husk
+wet sand mirror reflecting the sunset | 0.4 | 0.1-0.3 | glossy shoreline sheen
+rope fence post with a knotted line | 0.35 | 0.03-0.1 | thick weathered cord

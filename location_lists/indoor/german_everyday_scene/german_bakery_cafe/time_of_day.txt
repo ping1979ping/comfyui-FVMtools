@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early-morning fresh-bread rush | 1.0 | - | -
+bright mid-morning breakfast hour | 0.9 | - | -
+sunny Saturday morning bustle | 0.8 | - | -
+lazy afternoon coffee-and-cake hour | 0.9 | - | -
+soft grey overcast afternoon | 0.65 | - | -
+golden late-afternoon window light | 0.7 | - | -
+quiet pre-closing late afternoon | 0.5 | - | -
+dim before-opening dawn glow | 0.45 | - | -
+Sunday midday family visit | 0.55 | - | -
+rainy grey morning opening hour | 0.4 | - | -
+mellow late-morning coffee break | 0.5 | - | -

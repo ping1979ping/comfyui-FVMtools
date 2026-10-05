@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long marble cocktail bar counter | 1.0 | 0.3-0.5 | polished stone top with brass rail
+leather bar stool row | 0.95 | 0.3-0.5 | tufted swivel seats on brass bases
+low velvet lounge armchairs | 0.85 | 0.3-0.5 | plush jewel-toned seating pair
+round marble cocktail table | 0.8 | 0.2-0.4 | small tabletop with candle glow
+bartender cocktail station | 0.75 | 0.2-0.4 | shakers and mixing glasses in order
+curved velvet corner booth | 0.65 | 0.2-0.4 | semicircular tufted seating
+baby grand piano nook | 0.55 | 0.15-0.35 | glossy black instrument with lamp
+brass trolley bar cart | 0.6 | 0.15-0.35 | rolling cart of crystal decanters
+tall potted fiddle-leaf plant | 0.5 | 0.15-0.35 | glossy broad leaves in brass pot
+low glass coffee table | 0.55 | 0.15-0.3 | brass-framed table with nut bowls
+standing cocktail high-table | 0.5 | 0.15-0.3 | slim round table with pedestal base
+fireside wingback chair pair | 0.45 | 0.15-0.3 | leather chairs by marble hearth

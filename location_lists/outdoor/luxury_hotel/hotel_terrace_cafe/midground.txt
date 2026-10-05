@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+round marble-top cafe tables with wicker chairs | 1.0 | 0.25-0.5 | cool white stone and cane
+white tablecloths set with silver and linen napkins | 0.8 | 0.2-0.4 | crisp pressed cotton
+waiter in a black vest pouring coffee | 0.65 | 0.1-0.3 | silver pot and porcelain cup
+guests taking afternoon tea on the terrace | 0.65 | 0.15-0.35 | tiered cake stands
+large cream market umbrellas shading the tables | 0.75 | 0.2-0.45 | fringed canvas canopies
+terracotta planters with trailing geraniums | 0.6 | 0.1-0.3 | red and pink blooms
+pastry display cart with fruit tarts | 0.45 | 0.1-0.25 | glass-domed trays
+low stone terrace wall with potted herbs | 0.5 | 0.15-0.3 | rough pale blocks
+cushioned banquette along the garden edge | 0.5 | 0.15-0.35 | striped upholstery
+outdoor espresso bar under an awning | 0.4 | 0.15-0.3 | brass machine and cups
+wrought iron bistro chairs in pairs | 0.55 | 0.15-0.35 | scrolled black frames
+heat lamps standing between tables | 0.35 | 0.05-0.15 | slim bronze towers
+boxwood topiary spheres flanking the steps | 0.45 | 0.1-0.25 | perfect green globes

@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+pastel counter top with napkins | 1.0 | 0.2-0.4 | glossy pink formica surface
+tall banana split in glass boat | 0.85 | 0.15-0.35 | three scoops with cherries
+double-scoop waffle cone | 0.9 | 0.15-0.35 | dripping strawberry and vanilla
+chocolate milkshake with whipped cream | 0.8 | 0.15-0.3 | tall glass with striped straw
+polished checkered floor tile | 0.6 | 0.2-0.4 | black-and-white squares
+sundae with hot fudge | 0.7 | 0.15-0.3 | glass dish with nuts and cherry
+root beer float in frosty mug | 0.65 | 0.1-0.3 | foam spilling over rim
+stainless steel scoop in water well | 0.45 | 0.1-0.25 | chrome scooper by tubs
+paper straw dispenser close-up | 0.4 | 0.1-0.2 | striped straws in glass
+melted drip on counter | 0.4 | 0.1-0.2 | sticky pink puddle

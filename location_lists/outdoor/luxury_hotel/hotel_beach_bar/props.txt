@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+frozen strawberry daiquiri with a lime wheel | 0.8 | 0.005-0.03 | frosty pink glass
+coconut cup with a paper umbrella | 0.7 | 0.005-0.03 | polished husk bowl
+chilled bottle of rose in an ice bucket | 0.5 | 0.005-0.03 | wet silver pail
+woven straw hat on a lounger | 0.55 | 0.01-0.04 | wide soft brim
+oversized round sunglasses on a towel | 0.45 | 0.003-0.015 | glossy dark frames
+stack of striped beach towels | 0.55 | 0.01-0.05 | folded cotton pile
+fresh seafood platter on crushed ice | 0.4 | 0.01-0.04 | pink shrimp and lemon halves
+bowl of fresh mango and papaya | 0.45 | 0.005-0.025 | bright cut fruit
+tiki torch with flickering flame | 0.4 | 0.01-0.04 | bamboo pole and oil wick
+wicker picnic basket with linen cloth | 0.3 | 0.01-0.04 | woven handled hamper
+paperback novel face down on a chair | 0.4 | 0.003-0.015 | bent cover pages
+inflatable flamingo float leaning on a post | 0.3 | 0.01-0.05 | glossy pink vinyl
+bucket of chilled lager bottles | 0.4 | 0.005-0.025 | beaded cold glass
+sunscreen tube and flip-flops | 0.35 | 0.003-0.02 | colorful small items

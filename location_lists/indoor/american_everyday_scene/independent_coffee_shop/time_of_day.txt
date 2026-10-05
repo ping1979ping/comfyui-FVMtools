@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning coffee rush | 1.0 | - | -
+soft overcast mid-morning calm | 0.85 | - | -
+sunny early-afternoon lull | 0.8 | - | -
+golden late-afternoon window glow | 0.8 | - | -
+quiet early-opening hush | 0.6 | - | -
+warm evening open-mic lighting | 0.55 | - | -
+gray drizzly afternoon dimness | 0.5 | - | -
+Saturday brunch bustle | 0.55 | - | -
+dusk streetlight glow outside | 0.45 | - | -
+closing-time lamp-lit stillness | 0.4 | - | -

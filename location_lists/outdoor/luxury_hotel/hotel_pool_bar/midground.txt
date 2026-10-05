@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+submerged barstools with bartender mixing cocktails | 1.0 | 0.25-0.5 | woven seats half underwater
+guests sitting in the pool at the bar edge | 0.8 | 0.2-0.45 | wet shoulders and raised glasses
+bar counter with blenders and garnish trays | 0.85 | 0.2-0.4 | polished wet-top teak
+shaded rattan daybeds with plump cushions | 0.7 | 0.2-0.45 | striped linen throw pillows
+upholstered pool-deck loungers in neat rows | 0.7 | 0.25-0.5 | white cushions and teak frames
+private cabana with a curtained entrance | 0.65 | 0.2-0.4 | tied back sheer panels
+tall potted palms along the deck | 0.55 | 0.15-0.35 | glossy green fronds in stone planters
+ceramic cocktail tables with umbrella shade | 0.5 | 0.1-0.3 | small round tops and parasols
+waiter carrying a tray of frozen drinks | 0.5 | 0.1-0.25 | tall glasses with fruit skewers
+shallow sun shelf with lounge chairs in water | 0.5 | 0.2-0.4 | ankle-deep turquoise ledge
+ice cream and smoothie cart on the deck | 0.4 | 0.1-0.25 | striped awning and chrome handles
+towel service hut with stacked terry | 0.45 | 0.1-0.25 | neatly rolled white bundles
+tiki-style grass-skirt bar shade | 0.35 | 0.15-0.3 | tied dried reeds
+hammock slung between two palm trunks | 0.35 | 0.1-0.25 | woven rope net

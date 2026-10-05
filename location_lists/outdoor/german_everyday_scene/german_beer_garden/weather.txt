@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm sunny breezy air | 1.0 | - | -
+dappled shade under leaves | 0.9 | - | -
+light overcast bright sky | 0.6 | - | -
+muggy pre-thunderstorm heat | 0.4 | - | -
+gentle warm evening breeze | 0.7 | - | -
+clear blue sky | 0.8 | - | -
+scattered cumulus clouds | 0.5 | - | -
+sudden shower drips from leaves | 0.3 | - | -
+cool autumn crisp air | 0.4 | - | -
+leaves rustling in wind | 0.5 | - | -

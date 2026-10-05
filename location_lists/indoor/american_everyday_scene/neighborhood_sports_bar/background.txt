@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+wall of mounted flat-screen TVs | 1.0 | 0.6-1.0 | glowing sports broadcasts
+long wooden bar with beer taps | 0.95 | 0.6-1.0 | dark varnished counter and chrome tap tower
+backlit liquor shelf wall | 0.85 | 0.5-0.9 | glowing amber bottle rows
+neon beer-sign cluster | 0.85 | 0.4-0.8 | buzzing colored tube lights
+pennant-covered brick wall | 0.75 | 0.5-0.9 | faded team flags on red brick
+framed signed jersey display | 0.7 | 0.4-0.8 | glass-fronted memorabilia wall
+dark paneled ceiling with fans | 0.7 | 0.5-0.9 | slow paddle fans over dim wood
+scoreboard-style specials chalkboard | 0.65 | 0.3-0.7 | hand-lettered wing prices
+corner pool-table alcove | 0.7 | 0.4-0.8 | green felt under hanging lamp
+glass-front beer cooler wall | 0.6 | 0.4-0.8 | frosted bottles in cold light

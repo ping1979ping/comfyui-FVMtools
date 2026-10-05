@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+coffered dark-wood ceiling | 0.85 | 0.05-0.2 | recessed beam grid with warm light
+brass pendant globe lamp | 0.8 | 0.05-0.2 | glowing round suspended fixture
+art-deco fan-shaped wall sconce | 0.75 | 0.05-0.2 | gold radiating glass shade
+mirrored column cladding | 0.7 | 0.05-0.15 | smoked glass-wrapped pillar
+carved crown-molding ledge | 0.65 | 0.05-0.15 | shadowed ornate plaster band
+black-iron wine-rack frame | 0.6 | 0.05-0.15 | angular metal bottle lattice
+velvet-padded door panel | 0.55 | 0.02-0.08 | studded leather entry surface
+antique brass foot-rail bracket | 0.55 | 0.02-0.08 | curved mounting fitting
+etched-glass partition screen | 0.5 | 0.02-0.08 | frosted geometric patterned pane
+bronze ceiling medallion | 0.45 | 0.02-0.08 | round dark relief plaque
+marble-capped half wall | 0.5 | 0.02-0.08 | low veined stone divider
+oak-and-brass shelving bracket | 0.4 | 0.02-0.08 | slim polished support arm

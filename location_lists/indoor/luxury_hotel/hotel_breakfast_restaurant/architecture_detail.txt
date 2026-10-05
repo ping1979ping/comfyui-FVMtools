@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+grand ceiling chandelier | 0.8 | 0.05-0.2 | crystal tiers over dining floor
+plaster ceiling rose | 0.65 | 0.05-0.2 | ornate relief medallion
+tall window drapery swag | 0.6 | 0.05-0.2 | gathered cream silk valance
+heat-lamp pendant rail | 0.6 | 0.05-0.15 | warm copper lights over buffet
+wainscot dado paneling | 0.6 | 0.05-0.15 | white painted lower wall boards
+brass buffet-rail trim | 0.55 | 0.05-0.15 | polished tray-slide edge
+arched dining-room doorway | 0.55 | 0.02-0.08 | molded entry to lobby
+glass cloche warmer lid | 0.45 | 0.02-0.08 | domed cover over hot dishes
+patterned carpet border | 0.4 | 0.02-0.08 | woven edge band
+column base with fluted plinth | 0.45 | 0.02-0.08 | painted pillar foot
+wall-mounted candle sconce | 0.5 | 0.02-0.08 | soft shaded brass light
+etched-glass buffet sneeze guard | 0.5 | 0.02-0.08 | clear angled shield

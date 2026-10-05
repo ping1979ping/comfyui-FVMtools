@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+scalloped pastel awning valance | 0.6 | 0.05-0.2 | mint canvas edge
+chrome counter trim strip | 0.7 | 0.03-0.1 | polished edge banding
+globe pendant lamps | 0.75 | 0.05-0.15 | frosted white spheres
+tufted vinyl booth backing | 0.55 | 0.05-0.15 | button-pleated red panel
+beveled mirror panel | 0.6 | 0.05-0.15 | antique silvered glass
+wood-and-glass entry door | 0.5 | 0.05-0.15 | brass push plate and bell
+stamped tin ceiling tile | 0.5 | 0.05-0.2 | cream repeating pattern
+curved glass display-case front | 0.65 | 0.05-0.15 | slanted frosted panel
+painted pink wainscot band | 0.55 | 0.05-0.15 | rounded glossy lower wall
+ornate wall clock | 0.4 | 0.02-0.08 | round white-faced timepiece
+terrazzo floor border | 0.35 | 0.03-0.1 | speckled stone edge

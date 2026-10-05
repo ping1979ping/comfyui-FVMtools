@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long wooden beer tables | 1.0 | 0.3-0.5 | rows of scrubbed pine
+folding benches in rows | 0.95 | 0.3-0.5 | sturdy plank seating
+families sharing a table | 0.7 | 0.3-0.5 | adults and kids with food
+friends raising beer mugs | 0.7 | 0.2-0.4 | one-litre glass Mass clinking
+waitress in dirndl | 0.6 | 0.2-0.4 | carrying trays of mugs
+radish and pretzel platters | 0.6 | 0.15-0.3 | wooden boards with Brezel
+red-checked parasol cluster | 0.5 | 0.2-0.4 | fabric sunshades
+chestnut tree trunks | 0.8 | 0.2-0.4 | thick rough-barked columns
+beer barrel standing tables | 0.45 | 0.15-0.3 | oak kegs as tables
+brass band on small stage | 0.35 | 0.2-0.4 | players in traditional costume
+self-service queue at kiosk | 0.5 | 0.2-0.4 | people with empty mugs
+rotisserie chicken stand | 0.4 | 0.15-0.3 | golden birds on spit

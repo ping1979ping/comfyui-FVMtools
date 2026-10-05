@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft golden breakfast morning | 0.85 | - | -
+bright sunny late morning | 0.8 | - | -
+warm lazy afternoon tea light | 0.9 | - | -
+glowing golden hour | 0.85 | - | -
+rosy sunset over the water | 0.7 | - | -
+blue dusk with lanterns lit | 0.55 | - | -
+dappled midday shade | 0.6 | - | -
+hazy early morning calm | 0.5 | - | -
+overcast pearly daylight | 0.35 | - | -
+candlelit evening on the terrace | 0.4 | - | -

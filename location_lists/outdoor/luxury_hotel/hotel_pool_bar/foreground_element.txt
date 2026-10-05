@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+condensation-beaded cocktail glass on the bar edge | 0.9 | 0.1-0.3 | frosted glass with a paper umbrella
+wet bar counter top with water droplets | 0.8 | 0.15-0.35 | glossy teak
+rippling pool water at the lower frame | 0.75 | 0.15-0.4 | clear caustic light patterns
+half-submerged barstool seat | 0.65 | 0.08-0.2 | wet woven cushion
+scattered hibiscus petals floating on the water | 0.5 | 0.03-0.12 | red and pink drifting blooms
+sun-warmed wet pool deck stones | 0.55 | 0.1-0.3 | dark damp pavers
+hand holding a frozen daiquiri | 0.5 | 0.05-0.15 | cold sugared rim
+fruit garnish tray with pineapple wedges | 0.5 | 0.05-0.15 | bright cut citrus
+rolled striped towel on the pool edge | 0.5 | 0.05-0.15 | thick cotton ridges
+dripping bare feet on the step ladder | 0.35 | 0.03-0.1 | wet skin and chrome rail
+leaf of a monstera plant at the frame edge | 0.4 | 0.05-0.15 | broad glossy leaf
+paper cocktail menu on a wet tray | 0.35 | 0.02-0.08 | card dotted with water

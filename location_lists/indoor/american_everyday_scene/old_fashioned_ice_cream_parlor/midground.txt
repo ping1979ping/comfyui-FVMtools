@@ -1,0 +1,13 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+row of chrome-and-red counter stools | 1.0 | 0.3-0.5 | round swivel vinyl seats
+small round marble-top table | 0.85 | 0.25-0.45 | white pedestal with wire chairs
+booth with cherry-red seats | 0.8 | 0.25-0.45 | tufted vinyl benches
+waffle cone display stand | 0.8 | 0.15-0.35 | stacked golden cones in glass jar
+server in paper hat and apron | 0.75 | 0.2-0.4 | soda jerk scooping ice cream
+milkshake mixer station | 0.7 | 0.15-0.35 | chrome spindle blenders
+candy jar shelf | 0.6 | 0.2-0.4 | glass jars of gumdrops and licorice
+kids with sundaes at table | 0.65 | 0.2-0.4 | families sharing banana splits
+old-fashioned scale and register | 0.45 | 0.15-0.3 | brass cash register at counter
+sprinkles and toppings bar | 0.7 | 0.2-0.4 | metal bins of syrup and nuts

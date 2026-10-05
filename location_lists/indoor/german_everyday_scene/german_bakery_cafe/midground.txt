@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+round marble cafe tables | 1.0 | 0.3-0.5 | small white-topped bistro tables
+bentwood cafe chair cluster | 0.95 | 0.3-0.5 | dark curved wooden seats
+coffee-and-cake table setting | 0.9 | 0.2-0.4 | cake plates, cups and silver forks
+cushioned corner bench booth | 0.7 | 0.3-0.5 | green upholstered wall seating
+tiered cake stand display | 0.7 | 0.15-0.35 | glass plates of fruit torte
+standing newspaper rack | 0.5 | 0.15-0.3 | wooden holder with folded daily papers
+bread basket trolley | 0.55 | 0.2-0.4 | wicker baskets of Broetchen
+potted geranium window sill | 0.5 | 0.15-0.3 | red blooms in clay pots
+elderly regulars at corner table | 0.45 | 0.2-0.4 | chatting over coffee and Streuselkuchen
+queue of customers at counter | 0.55 | 0.2-0.4 | people waiting with paper bags
+umbrella stand by the door | 0.4 | 0.1-0.25 | tall metal holder with wet umbrellas
+pastry cart with doilies | 0.45 | 0.2-0.35 | lace-lined silver serving trolley
+wooden high-top table pair | 0.4 | 0.2-0.35 | standing table with coffee cups

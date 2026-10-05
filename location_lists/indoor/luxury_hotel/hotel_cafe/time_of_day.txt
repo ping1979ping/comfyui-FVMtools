@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright mid-morning cafe light | 1.0 | - | -
+soft early-morning opening | 0.85 | - | -
+sunny late-morning brunch hour | 0.85 | - | -
+golden afternoon tea glow | 0.75 | - | -
+hazy lazy-noon sunshine | 0.7 | - | -
+mellow mid-afternoon calm | 0.6 | - | -
+low late-afternoon sunbeams | 0.55 | - | -
+quiet pre-opening dawn | 0.4 | - | -
+overcast soft-daylight midday | 0.5 | - | -
+cool closing-hour dusk | 0.35 | - | -

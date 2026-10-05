@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+silver tray with espresso cups | 0.7 | 0.005-0.03 | small white porcelain
+porcelain teapot with floral pattern | 0.55 | 0.005-0.025 | painted gilded rim
+glass cake dome with lemon tart | 0.45 | 0.01-0.04 | clear dome over a pale tart
+vintage newspaper folded on a chair | 0.35 | 0.005-0.025 | soft gray pages
+bottle of chilled prosecco with two flutes | 0.5 | 0.005-0.03 | frosted green bottle
+bread basket with linen cloth | 0.45 | 0.005-0.025 | warm crusty rolls
+small bud vase with a single tulip | 0.5 | 0.003-0.015 | slim glass stem
+leather guest book on a stand | 0.3 | 0.01-0.04 | bound dark cover
+wide-brim sun hat on a chair back | 0.4 | 0.01-0.04 | woven ribbon band
+sugar bowl with silver tongs | 0.4 | 0.003-0.015 | cubes in polished dish
+bowl of fresh berries and cream | 0.45 | 0.005-0.025 | red strawberries
+brass candle lantern on the table | 0.35 | 0.005-0.025 | small flame in glass
+fine bone china cups on saucers | 0.55 | 0.005-0.03 | thin white rims
+cashmere shawl draped over a chair | 0.3 | 0.01-0.04 | soft cream wool

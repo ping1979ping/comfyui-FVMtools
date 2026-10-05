@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+arched window mullion | 0.85 | 0.05-0.2 | slim black-iron frame
+globe pendant light cluster | 0.8 | 0.05-0.2 | warm suspended glass bulbs
+pressed-tin ceiling panel | 0.7 | 0.05-0.2 | white embossed metal tile
+ceiling fan with wooden blades | 0.65 | 0.05-0.15 | slowly turning vintage fixture
+glazed subway-tile backsplash | 0.65 | 0.05-0.15 | glossy white rectangular tile
+curved terrazzo counter edge | 0.6 | 0.05-0.15 | speckled stone rounded lip
+iron wall-bracket shelf | 0.55 | 0.02-0.08 | slim black support with plants
+beveled-glass door panel | 0.5 | 0.02-0.08 | etched entry with brass push-plate
+cornice with plaster dentils | 0.5 | 0.02-0.08 | small carved cream moulding
+skylight beam shadow | 0.45 | 0.02-0.08 | slatted light across ceiling
+wicker pendant lampshade | 0.45 | 0.02-0.08 | woven natural dome fixture
+oak wainscot paneling | 0.5 | 0.02-0.08 | low pale board wall trim

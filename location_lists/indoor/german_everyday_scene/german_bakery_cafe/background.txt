@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+glass pastry display counter | 1.0 | 0.6-1.0 | gleaming case of layered cakes
+wall of wooden bread shelves | 0.95 | 0.6-1.0 | racks of crusty rye loaves
+chalkboard menu wall | 0.85 | 0.5-0.9 | hand-lettered white chalk prices
+street-facing shopfront window | 0.85 | 0.5-0.9 | bright glass with painted bakery lettering
+cream tiled back wall | 0.75 | 0.5-0.9 | glossy white subway tile with green border
+open stone-oven bakery kitchen | 0.6 | 0.4-0.8 | glowing arched oven behind counter
+rustic beamed plaster ceiling | 0.7 | 0.5-0.9 | whitewashed walls with dark timber beams
+pale-green painted paneling | 0.6 | 0.4-0.8 | vintage wainscot with brass hooks
+vintage cash register station | 0.55 | 0.3-0.6 | brass-keyed till beside coffee machine
+espresso machine back bar | 0.65 | 0.4-0.7 | chrome portafilter machine with cup stacks
+framed old-town photograph wall | 0.5 | 0.3-0.6 | black-and-white prints in thin frames
+glass bell-jar cookie shelf | 0.45 | 0.3-0.6 | domed jars of shortbread and pretzels

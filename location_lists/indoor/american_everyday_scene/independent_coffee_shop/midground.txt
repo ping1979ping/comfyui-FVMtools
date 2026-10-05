@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+mismatched wooden cafe chairs | 1.0 | 0.3-0.5 | vintage painted seats around small tables
+reclaimed-wood ordering counter | 0.9 | 0.3-0.5 | scarred butcher-block top with tip jar
+barista pulling espresso shots | 0.8 | 0.2-0.4 | apron and portafilter at the machine
+small round marble cafe table | 0.85 | 0.2-0.4 | cold white stone on cast-iron base
+worn leather armchair corner | 0.7 | 0.2-0.4 | cracked caramel seat with floor lamp
+long communal farm table | 0.65 | 0.25-0.5 | wide planks with laptops and mugs
+pour-over brewing station | 0.6 | 0.15-0.3 | glass cones on gooseneck kettle stand
+window-bar counter seats | 0.6 | 0.2-0.4 | stools facing the street glass
+vinyl record player shelf | 0.4 | 0.15-0.3 | turntable with crates of albums
+coffee roaster machine | 0.45 | 0.2-0.4 | small drum roaster with hopper
+board-game shelf nook | 0.4 | 0.15-0.3 | worn boxes stacked beside a bench
+tall potted fiddle-leaf fig | 0.5 | 0.15-0.3 | big glossy leaves in clay pot

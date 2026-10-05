@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+hot clear tropical sky | 0.9 | - | -
+light warm sea breeze | 0.8 | - | -
+scattered puffy cumulus clouds | 0.65 | - | -
+still humid air | 0.55 | - | -
+dry sunny heat | 0.7 | - | -
+palm fronds swaying in the wind | 0.5 | - | -
+thin haze over the horizon | 0.45 | - | -
+brief passing tropical shower | 0.3 | - | -
+warm balmy evening air | 0.6 | - | -
+bright cloudless blue | 0.85 | - | -

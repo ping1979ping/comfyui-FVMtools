@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+cosy early-evening after-work crowd | 1.0 | - | -
+lively Friday night | 0.9 | - | -
+quiet late-afternoon lull | 0.7 | - | -
+warm lamp-lit dusk | 0.8 | - | -
+deep night closing-time haze | 0.55 | - | -
+sleepy weekday midday lunch | 0.6 | - | -
+Sunday morning Fruehschoppen | 0.5 | - | -
+dim rainy-afternoon gloom | 0.45 | - | -
+football-night packed evening | 0.4 | - | -
+slow mid-afternoon weekday emptiness | 0.4 | - | -

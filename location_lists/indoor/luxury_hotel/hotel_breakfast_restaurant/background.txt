@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+sweeping buffet counter line | 1.0 | 0.6-1.0 | long white-linen serving spread
+tall garden-view windows | 0.95 | 0.6-1.0 | bright sunlit glazed panels
+live omelet cooking station | 0.8 | 0.6-1.0 | chef under heat lamps with griddle
+pastry and bread display wall | 0.8 | 0.5-0.9 | baskets of rolls on tiered shelves
+cream-draped wall columns | 0.7 | 0.5-0.9 | soft fabric-wrapped pillars
+glass-roofed atrium dining hall | 0.65 | 0.5-0.9 | airy bright high ceiling
+open juice and fruit bar | 0.7 | 0.4-0.8 | iced bowls of cut melon and berries
+warm wood-paneled breakfast room | 0.6 | 0.4-0.8 | honey oak wall cladding
+terrace doors to garden | 0.55 | 0.4-0.8 | open glass leading outside
+pale-yellow wallpapered wall | 0.5 | 0.3-0.6 | subtle damask-patterned paper
+copper-hooded kitchen pass | 0.45 | 0.3-0.6 | gleaming open service window
+mirrored wall reflecting dining room | 0.4 | 0.3-0.6 | large gilt-framed glass

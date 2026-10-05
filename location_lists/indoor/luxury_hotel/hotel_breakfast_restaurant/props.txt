@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+silver coffee pot | 0.9 | 0.05-0.15 | polished spouted pitcher
+white teapot with cup | 0.7 | 0.05-0.15 | china service with saucer
+glass jam jar with spoon | 0.6 | 0.05-0.15 | strawberry preserves
+butter dish with knife | 0.55 | 0.05-0.15 | cool pale curls on plate
+cereal bowl with milk | 0.55 | 0.05-0.1 | flakes in white china
+salt and pepper shakers | 0.5 | 0.05-0.1 | small glass pair
+steel serving tongs | 0.55 | 0.05-0.1 | hanging from chafing dish
+honey jar with dipper | 0.5 | 0.02-0.08 | golden jar with wooden stick
+yogurt parfait glass | 0.55 | 0.02-0.08 | layered granola and berries
+small vase with fresh tulips | 0.5 | 0.02-0.08 | colorful stems on table
+folded breakfast menu card | 0.4 | 0.02-0.08 | printed cream card
+toaster conveyor | 0.4 | 0.02-0.05 | steel bread-toasting machine
+egg cup with spoon | 0.4 | 0.02-0.05 | soft-boiled egg in porcelain
+sugar packet caddy | 0.35 | 0.02-0.05 | small ceramic holder

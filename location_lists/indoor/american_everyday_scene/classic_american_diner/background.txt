@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+long chrome-edged lunch counter | 1.0 | 0.6-1.0 | polished steel trim over formica
+red vinyl booth row | 0.95 | 0.6-1.0 | glossy tufted seats along windows
+checkerboard black-and-white tile | 0.8 | 0.5-0.9 | glossy square floor grid
+large storefront window glass | 0.8 | 0.5-0.9 | painted gold lettering over street view
+glowing pie display case | 0.75 | 0.4-0.8 | lit rotating shelves of whole pies
+pass-through kitchen window | 0.7 | 0.4-0.8 | heat lamps and order wheel
+neon open sign wall | 0.65 | 0.3-0.6 | glowing red script tubing
+back-bar mirror panel | 0.6 | 0.4-0.7 | etched glass behind milkshake mixers
+vintage enamel menu board | 0.55 | 0.3-0.6 | letter-pegged white prices
+turquoise tiled half-wall | 0.5 | 0.4-0.7 | glazed pastel ceramic wainscot
+retro record-sleeve wall display | 0.4 | 0.3-0.6 | framed 1950s album covers

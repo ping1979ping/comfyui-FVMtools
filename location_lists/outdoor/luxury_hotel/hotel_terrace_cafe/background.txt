@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+sweeping sea view past the terrace balustrade | 0.9 | 0.5-0.9 | glittering blue expanse
+manicured hotel garden with clipped hedges and roses | 0.9 | 0.45-0.8 | tidy green parterre
+terraced cafe overlooking a sunlit bay | 0.85 | 0.4-0.75 | stone steps and white umbrellas
+wisteria-draped pergola over the terrace | 0.7 | 0.25-0.55 | hanging lilac clusters
+grand cream hotel facade with arched windows | 0.7 | 0.3-0.6 | pale stone and shutters
+olive and cypress trees on the hillside | 0.6 | 0.25-0.5 | silver leaves and dark spires
+lemon trees in terracotta pots along the wall | 0.5 | 0.15-0.35 | bright yellow fruit
+rolling vineyard slopes beyond the garden | 0.45 | 0.25-0.5 | parallel green rows
+distant harbor with moored yachts | 0.5 | 0.2-0.45 | white hulls in still water
+fountain courtyard framed by climbing jasmine | 0.5 | 0.2-0.45 | trickling stone basin
+glass-roofed conservatory annex with potted palms | 0.35 | 0.2-0.4 | iron frame and glass panes
+lake panorama in soft haze | 0.3 | 0.25-0.5 | blue layered distance
+cobbled promenade lined with lanterns | 0.4 | 0.15-0.35 | smooth old stones
+rose-covered stone wall in bloom | 0.5 | 0.2-0.4 | pink climbing blossoms

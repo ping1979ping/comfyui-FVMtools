@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+sunny summer afternoon after school | 1.0 | - | -
+warm Saturday family outing | 0.9 | - | -
+golden late-afternoon sunbeams | 0.8 | - | -
+after-dinner dessert hour | 0.8 | - | -
+sleepy Sunday late morning | 0.5 | - | -
+early evening neon glow | 0.7 | - | -
+hot noon lunchtime rush | 0.7 | - | -
+opening hour quiet | 0.4 | - | -
+dusk with lights on | 0.6 | - | -
+end-of-day closing time | 0.4 | - | -

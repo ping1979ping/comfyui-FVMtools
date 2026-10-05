@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+thatched palapa roof with exposed rafters | 0.7 | 0.05-0.2 | woven dried palm fronds
+curved built-in pool bar seating ledge | 0.6 | 0.03-0.15 | submerged tiled bench
+mosaic tile bar facade in blue and white | 0.55 | 0.03-0.12 | glazed handmade squares
+rope-wrapped teak support posts | 0.55 | 0.02-0.1 | thick sisal windings
+black iron lantern hung from a beam | 0.45 | 0.01-0.06 | glass panes and flickering candle
+hanging wooden bar sign with painted lettering | 0.4 | 0.01-0.05 | weathered painted board
+glass-fronted bottle display niche | 0.45 | 0.02-0.08 | backlit shelves
+slatted timber ceiling with fans | 0.5 | 0.03-0.12 | rotating paddle blades
+stepped pool entry with brass handrails | 0.5 | 0.02-0.1 | polished curved metal
+wrought iron bar railing | 0.35 | 0.02-0.08 | scrolled black bars
+pool-level underwater LED strip | 0.4 | 0.01-0.05 | soft aqua glow
+cabana curtain rod with linen rings | 0.4 | 0.01-0.06 | white cloth gathered

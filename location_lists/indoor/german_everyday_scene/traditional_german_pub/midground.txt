@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+round Stammtisch table | 1.0 | 0.3-0.5 | heavy oak with brass regulars sign
+worn wooden pub chairs | 0.9 | 0.3-0.5 | high-backed seats with scuffed legs
+bar stools along counter | 0.9 | 0.3-0.5 | leather-topped swivel seats
+group of men drinking beer | 0.65 | 0.3-0.5 | seated regulars with half-litre glasses
+long communal bench table | 0.7 | 0.3-0.5 | scrubbed wood with coasters
+barkeeper pouring a Pils | 0.7 | 0.2-0.4 | tapping a tall slim glass
+corner booth with cushions | 0.55 | 0.3-0.5 | red upholstered bench and table
+dartboard alcove | 0.4 | 0.15-0.3 | cork board with brass-ringed scoring
+slot-machine corner | 0.35 | 0.15-0.3 | blinking coin gaming cabinet
+coat rack by the entrance | 0.45 | 0.1-0.25 | wooden stand with wool jackets
+standing high table | 0.4 | 0.15-0.3 | round bar-height table
+waitress carrying beer trays | 0.5 | 0.2-0.35 | apron and several full glasses
+sausage-and-sauerkraut plates on table | 0.5 | 0.15-0.3 | steaming hearty dishes

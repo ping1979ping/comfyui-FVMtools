@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+patterned encaustic floor tile | 1.0 | 0.3-0.4 | geometric blue-and-cream cement tile
+cappuccino with latte art | 0.9 | 0.3-0.4 | frothy leaf pattern in white cup
+plate of almond croissants | 0.85 | 0.3-0.4 | flaky golden pastries dusted with sugar
+linen napkin and cutlery | 0.75 | 0.2-0.4 | folded cloth with silver fork
+sunbeam floor patch | 0.7 | 0.2-0.4 | warm window light on tiles
+glass of orange juice | 0.6 | 0.15-0.3 | bright fresh-squeezed citrus
+small saucer with sugar cubes | 0.55 | 0.15-0.3 | white china dish
+checkerboard marble floor | 0.55 | 0.15-0.3 | black-and-white stone squares
+open pastry menu card | 0.4 | 0.05-0.15 | typed cream card on table
+cinnamon-dusted espresso saucer | 0.45 | 0.05-0.15 | tiny cup with biscotti

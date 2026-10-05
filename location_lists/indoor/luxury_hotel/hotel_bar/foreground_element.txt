@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished dark herringbone floor | 1.0 | 0.3-0.4 | glossy parquet with lamp reflections
+chilled coupe glass | 0.9 | 0.3-0.4 | frosted stem glass with garnish
+cocktail napkin and coaster | 0.8 | 0.3-0.4 | embossed paper square on marble
+bowl of spiced nuts | 0.75 | 0.2-0.4 | small silver dish of warm almonds
+flickering votive candle | 0.7 | 0.2-0.4 | amber glass holder with soft flame
+patterned oriental runner rug | 0.6 | 0.15-0.3 | worn crimson-and-navy woven pile
+brass bar rail edge | 0.55 | 0.15-0.3 | curved gleaming footrest bar
+marble bar-top reflection | 0.5 | 0.15-0.3 | glossy surface mirroring bottle glow
+black-and-white tile border | 0.45 | 0.05-0.15 | checkered stone floor inlay
+dropped cherry garnish pick | 0.35 | 0.05-0.15 | tiny silver skewer on counter

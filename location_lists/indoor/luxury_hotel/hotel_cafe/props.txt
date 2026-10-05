@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+white porcelain coffee cup | 0.9 | 0.05-0.15 | warm espresso with crema
+silver sugar bowl and tongs | 0.6 | 0.05-0.15 | small gleaming tabletop set
+stacked macaron tower | 0.65 | 0.05-0.15 | pastel round biscuits on stand
+glass cake dome | 0.6 | 0.05-0.15 | tall cover over fruit tart
+small bud vase with daisies | 0.6 | 0.05-0.1 | white petals in clear glass
+butter and jam ramekins | 0.55 | 0.05-0.1 | tiny pots of preserves
+tiered afternoon-tea stand | 0.5 | 0.05-0.1 | three-level china tray of pastries
+steel milk pitcher | 0.55 | 0.02-0.08 | frothing jug beside machine
+paper coffee bag | 0.4 | 0.02-0.08 | kraft sack of roasted beans
+vintage chalk sandwich board | 0.4 | 0.02-0.08 | easel menu with drawn flourishes
+wooden stirring stick jar | 0.35 | 0.02-0.08 | tumbler of thin sticks
+folded morning newspaper | 0.5 | 0.02-0.05 | creased broadsheet on table
+brass table-number stand | 0.35 | 0.02-0.05 | small numbered marker
+croissant paper bag | 0.45 | 0.02-0.05 | grease-spotted bakery sack

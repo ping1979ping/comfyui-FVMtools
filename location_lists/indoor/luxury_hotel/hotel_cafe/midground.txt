@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+small round marble cafe tables | 1.0 | 0.3-0.5 | white stone tops on iron bases
+bentwood cafe chair pairs | 0.95 | 0.3-0.5 | curved dark-wood seats
+chrome espresso machine | 0.85 | 0.3-0.5 | gleaming steaming barista station
+pastry trolley | 0.75 | 0.2-0.4 | tiered cart of tarts and macarons
+cushioned window-seat bench | 0.7 | 0.2-0.4 | striped upholstered nook seating
+tall potted olive tree | 0.6 | 0.2-0.4 | silvery leaves in terracotta tub
+communal reading table | 0.55 | 0.15-0.35 | long oak surface with lamps
+barista pour-over bar | 0.6 | 0.15-0.35 | glass kettles and ceramic drippers
+rattan lounge chair pair | 0.55 | 0.15-0.35 | woven armchairs with linen cushions
+newspaper rack stand | 0.45 | 0.15-0.3 | wooden holder with folded papers
+sidewalk-style bistro table set | 0.5 | 0.15-0.3 | slim round table with two chairs
+hanging fern planter row | 0.4 | 0.15-0.3 | trailing green baskets overhead

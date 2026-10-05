@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+fragrant coffee-scented air | 1.0 | - | -
+warm yeasty bakery aroma | 0.9 | - | -
+cool air-conditioned calm | 0.7 | - | -
+gentle steam-misted warmth | 0.65 | - | -
+soft murmured conversation hum | 0.7 | - | -
+breezy open-door freshness | 0.55 | - | -
+cozy rain-pattering window | 0.5 | - | -
+sun-warmed glass stillness | 0.55 | - | -
+buttery vanilla-sweet haze | 0.5 | - | -
+crisp clean morning air | 0.5 | - | -

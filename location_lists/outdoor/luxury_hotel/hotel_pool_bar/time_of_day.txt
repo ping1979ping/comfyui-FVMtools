@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright high noon sun | 0.85 | - | -
+warm golden late afternoon | 0.9 | - | -
+orange sunset glow over the pool | 0.85 | - | -
+soft lilac dusk | 0.6 | - | -
+lively evening under string lights | 0.6 | - | -
+hazy early afternoon | 0.65 | - | -
+gentle mid-morning light | 0.55 | - | -
+deep night with glowing pool lights | 0.4 | - | -
+pink twilight after sunset | 0.5 | - | -
+soft overcast daylight | 0.4 | - | -

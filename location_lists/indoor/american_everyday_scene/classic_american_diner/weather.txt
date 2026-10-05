@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+warm grease-scented air | 1.0 | - | -
+steamy coffee-laden warmth | 0.85 | - | -
+cool air-conditioned hum | 0.7 | - | -
+muggy summer window glare | 0.55 | - | -
+cozy winter condensation on glass | 0.55 | - | -
+faint maple-syrup sweetness | 0.5 | - | -
+rain streaking the storefront | 0.45 | - | -
+still late-night calm | 0.45 | - | -
+snowy street seen through window | 0.4 | - | -
+bustling clatter of dishes | 0.5 | - | -

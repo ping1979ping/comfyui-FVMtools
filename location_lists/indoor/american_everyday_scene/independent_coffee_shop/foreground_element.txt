@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+scuffed concrete floor | 0.9 | 0.3-0.4 | polished gray slab with stains
+worn herringbone wood floor | 0.8 | 0.2-0.4 | faded warm planks
+reclaimed table surface rings | 0.8 | 0.2-0.4 | scratched wood with mug marks
+foam-art latte on saucer | 0.6 | 0.1-0.2 | leaf pattern in creamy surface
+faded vintage rug runner | 0.55 | 0.15-0.3 | threadbare Persian pattern
+window sunlight patch | 0.6 | 0.15-0.3 | warm rectangles on floorboards
+dog water bowl by door | 0.35 | 0.05-0.1 | steel dish on small mat
+spilled coffee-bean scatter | 0.4 | 0.05-0.15 | dark glossy beans on counter
+laptop and notebook spread | 0.5 | 0.15-0.3 | open screen beside scribbled pages
+tiled counter ledge | 0.45 | 0.1-0.2 | hand-painted ceramic tiles
+slate tip-jar shelf | 0.35 | 0.05-0.15 | handwritten thank-you label
+condensation ring on glass | 0.3 | 0.05-0.1 | wet circle on pane edge

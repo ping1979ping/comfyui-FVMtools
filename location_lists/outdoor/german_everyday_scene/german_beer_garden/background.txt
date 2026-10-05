@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+canopy of chestnut trees | 1.0 | 0.6-1.0 | broad green leaves dappling sun
+gravel courtyard ground | 0.9 | 0.5-0.9 | pale pebbles under open sky
+brewery building facade | 0.8 | 0.5-0.9 | whitewashed wall with blue-white trim
+tall hedge boundary | 0.6 | 0.4-0.8 | clipped green privet
+half-timbered inn wall | 0.6 | 0.4-0.8 | exposed dark beams and plaster
+rolling Bavarian hills beyond | 0.5 | 0.4-0.7 | distant green meadow slopes
+church steeple above trees | 0.5 | 0.3-0.6 | onion dome over rooftops
+beer kiosk serving hatch | 0.7 | 0.4-0.7 | wooden counter with menu board
+stone garden wall | 0.5 | 0.4-0.7 | moss-flecked masonry
+string lights across canopy | 0.55 | 0.3-0.6 | bulbs strung between trunks
+river bank with willows | 0.4 | 0.3-0.6 | slow water behind garden
+blue-white striped awning | 0.55 | 0.3-0.6 | fabric over service area

@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+carved oak ceiling beam | 0.8 | 0.0-0.2 | dark chamfered timber
+brass-and-porcelain tap handles | 0.8 | 0.0-0.1 | row of branded lever pulls
+wrought-iron chandelier | 0.65 | 0.0-0.15 | candle-style bulbs on rings
+stained-glass lamp shade | 0.55 | 0.0-0.1 | coloured glass over bar
+panelled wooden door | 0.5 | 0.0-0.15 | heavy studded entry
+carved corbel bracket | 0.45 | 0.0-0.1 | scrolled timber support
+bay window with lace curtain | 0.5 | 0.0-0.15 | cafe-length half-curtain
+embossed leather wall covering | 0.35 | 0.0-0.15 | dark patterned panel
+wall-mounted pewter sconce | 0.55 | 0.0-0.1 | small shaded light
+tiled stove surround | 0.4 | 0.0-0.15 | glazed green squares
+nicotine-aged plaster ceiling | 0.5 | 0.0-0.2 | amber-stained white
+fretwork room divider | 0.4 | 0.0-0.15 | cut wooden lattice screen

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+Sunday afternoon game day | 1.0 | - | -
+Friday happy-hour rush | 0.9 | - | -
+late-night overtime crowd | 0.8 | - | -
+Monday night football evening | 0.85 | - | -
+weekday lunch lull | 0.6 | - | -
+playoff Saturday afternoon | 0.8 | - | -
+quiet pre-opening afternoon | 0.4 | - | -
+post-game last call hour | 0.6 | - | -
+early evening dinner crowd | 0.7 | - | -
+midnight closing time | 0.4 | - | -

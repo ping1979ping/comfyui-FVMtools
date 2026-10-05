@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm sunny day | 1.0 | - | -
+light breeze rustling awning | 0.8 | - | -
+bright blue cloudless sky | 0.85 | - | -
+hazy humid summer afternoon | 0.6 | - | -
+partly cloudy with soft shade | 0.75 | - | -
+cool crisp autumn morning | 0.6 | - | -
+light drizzle under awning | 0.4 | - | -
+fall leaves drifting by | 0.45 | - | -
+mild spring day with blossoms | 0.7 | - | -
+gentle golden haze | 0.5 | - | -
