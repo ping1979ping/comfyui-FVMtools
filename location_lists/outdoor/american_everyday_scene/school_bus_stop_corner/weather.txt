@@ -10,3 +10,4 @@ crisp autumn air | 0.55 | - | -
 windy with rattling leaves | 0.5 | - | -
 slush-melt morning | 0.4 | - | -
 muggy summer day | 0.6 | - | -
+cold foggy morning | 0.5 | - | -

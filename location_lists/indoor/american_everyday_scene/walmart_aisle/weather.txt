@@ -9,3 +9,5 @@ wet floor from outside rain | 0.6 | - | -
 slush tracked in by carts | 0.5 | - | -
 dry stale recirculated air | 0.8 | - | -
 warm aisle near bakery section | 0.55 | - | -
+cold draft from freezer aisle | 0.5 | - | -
+faint floor-cleaner smell in cool air | 0.45 | - | -

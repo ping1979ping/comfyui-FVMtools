@@ -9,3 +9,5 @@ rain visible through small window | 0.65 | - | -
 snow piling on outside ledge | 0.55 | - | -
 overcast grey through blinds | 0.7 | - | -
 warm afternoon dry stillness | 0.7 | - | -
+faint antiseptic mint smell in cool air | 0.5 | - | -
+quiet drone of white-noise machine | 0.45 | - | -

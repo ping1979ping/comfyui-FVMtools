@@ -9,3 +9,5 @@ wet entrance tile from rain | 0.6 | - | -
 slush tracked in from outside | 0.5 | - | -
 dry recirculated air | 0.85 | - | -
 warm summer entrance gust | 0.5 | - | -
+faint new-fabric smell in cool air | 0.5 | - | -
+soft overhead music in dry chill | 0.45 | - | -

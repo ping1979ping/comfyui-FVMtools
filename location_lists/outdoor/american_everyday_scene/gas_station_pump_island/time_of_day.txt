@@ -10,3 +10,4 @@ nighttime with humming fluorescents | 0.65 | - | -
 golden hour on asphalt | 0.5 | - | -
 post-rain gray late afternoon | 0.55 | - | -
 hazy summer noon | 0.7 | - | -
+late night under canopy glare | 0.5 | - | -

@@ -10,3 +10,4 @@ windy with rattling sign | 0.55 | - | -
 muggy storm aftermath | 0.5 | - | -
 slush-melt afternoon | 0.4 | - | -
 cold dry winter glare | 0.5 | - | -
+dusty dry wind across the gravel | 0.45 | - | -

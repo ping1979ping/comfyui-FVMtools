@@ -10,3 +10,4 @@ windy with blown debris | 0.45 | - | -
 slush-melt afternoon | 0.4 | - | -
 muggy aftermath of storm | 0.5 | - | -
 cold dry winter glare | 0.5 | - | -
+bright hazy sun with heat glare off cars | 0.55 | - | -

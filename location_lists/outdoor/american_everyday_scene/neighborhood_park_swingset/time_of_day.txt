@@ -10,3 +10,4 @@ dusk before dark | 0.65 | - | -
 quiet school-day afternoon | 0.7 | - | -
 post-rain damp morning | 0.55 | - | -
 weekend midmorning | 0.6 | - | -
+early morning with dew on grass | 0.45 | - | -

@@ -9,3 +9,5 @@ rain visible through bent blinds | 0.7 | - | -
 snow piled outside window | 0.55 | - | -
 overcast grey through curtain | 0.7 | - | -
 warm afternoon sun behind curtain | 0.65 | - | -
+stale laundry smell in closed room | 0.5 | - | -
+warm electronics heat from gaming console | 0.45 | - | -

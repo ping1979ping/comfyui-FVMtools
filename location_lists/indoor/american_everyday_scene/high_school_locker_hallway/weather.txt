@@ -9,3 +9,5 @@ rain visible through hall window | 0.5 | - | -
 snow piling on window ledge | 0.5 | - | -
 overcast grey through glass | 0.7 | - | -
 warm autumn dry air | 0.6 | - | -
+stale gym-sock smell in warm air | 0.5 | - | -
+echoing slam of lockers in dry air | 0.45 | - | -

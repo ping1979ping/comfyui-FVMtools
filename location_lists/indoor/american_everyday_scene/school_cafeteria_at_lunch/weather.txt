@@ -9,3 +9,5 @@ rain visible through high window | 0.55 | - | -
 snow piled on outside windowsill | 0.5 | - | -
 overcast grey through clerestory | 0.65 | - | -
 warm afternoon humidity | 0.55 | - | -
+warm tray-food smell and loud echo | 0.5 | - | -
+steamy kitchen heat drifting from serving line | 0.45 | - | -

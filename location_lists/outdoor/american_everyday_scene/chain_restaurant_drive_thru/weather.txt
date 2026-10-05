@@ -10,3 +10,4 @@ windy with blowing wrappers | 0.55 | - | -
 muggy storm aftermath | 0.55 | - | -
 slush-melt afternoon | 0.4 | - | -
 cold dry winter glare | 0.5 | - | -
+heavy rain on the speaker lane | 0.4 | - | -

@@ -10,3 +10,4 @@ dirty November sky | 0.65 | - | -
 clear hot dry day | 0.55 | - | -
 slush-melt afternoon | 0.4 | - | -
 cold dry winter glare | 0.45 | - | -
+stagnant sticky heat with trash odor haze | 0.5 | - | -

@@ -9,3 +9,5 @@ rain on front window | 0.7 | - | -
 snow tracked in by boots | 0.65 | - | -
 overcast grey through glass | 0.7 | - | -
 condensation on cold-case doors | 0.7 | - | -
+buzzing fluorescent hum with stale coffee smell | 0.5 | - | -
+draft of cold air at door chime | 0.45 | - | -

@@ -10,3 +10,4 @@ hazy summer noon | 0.7 | - | -
 dusk with lot lights humming | 0.55 | - | -
 post-storm afternoon | 0.55 | - | -
 early morning restock hour | 0.45 | - | -
+mid-morning garden rush | 0.6 | - | -

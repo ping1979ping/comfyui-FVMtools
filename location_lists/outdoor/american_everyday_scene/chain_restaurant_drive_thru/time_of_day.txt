@@ -10,3 +10,4 @@ overcast gray afternoon | 0.75 | - | -
 early morning breakfast rush | 0.7 | - | -
 hazy summer noon | 0.65 | - | -
 post-rain afternoon | 0.55 | - | -
+mid-afternoon lull | 0.5 | - | -

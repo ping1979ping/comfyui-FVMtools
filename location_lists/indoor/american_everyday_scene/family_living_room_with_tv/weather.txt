@@ -9,3 +9,5 @@ rain on picture window | 0.7 | - | -
 snow piling outside slider | 0.15 | - | -
 overcast grey through blinds | 0.7 | - | -
 warm afternoon glow through curtain | 0.65 | - | -
+cozy blanket warmth from heater | 0.5 | - | -
+faint smell of popcorn and warm carpet | 0.45 | - | -

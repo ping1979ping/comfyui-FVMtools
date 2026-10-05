@@ -3,7 +3,7 @@
 
 wet floor patch reflecting light | 0.85 | 0.15-0.3 | shiny puddle on tile
 crumpled paper towel on floor | 0.85 | 0.05-0.15 | balled brown paper
-toilet paper trail at stall base | 0.6 | 0.05-0.15 | unspooled tissue
+toilet paper streamer at stall base | 0.6 | 0.05-0.15 | unspooled tissue
 backpack against sink counter | 0.65 | 0.1-0.25 | nylon strap pile
 hairband forgotten by sink | 0.55 | 0.02-0.05 | thin elastic loop
 gum stuck to mirror corner | 0.5 | 0.02-0.08 | hardened grey wad

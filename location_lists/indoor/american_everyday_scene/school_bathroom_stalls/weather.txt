@@ -9,3 +9,5 @@ condensation on tile from steam | 0.55 | - | -
 rain visible through high window | 0.5 | - | -
 cold draft from cracked window | 0.5 | - | -
 warm autumn dampness | 0.55 | - | -
+lingering disinfectant smell in damp air | 0.5 | - | -
+echoing drip from leaky faucet | 0.45 | - | -

@@ -10,3 +10,4 @@ dirty November sky | 0.6 | - | -
 windy with rustling chains | 0.6 | - | -
 muggy storm aftermath | 0.5 | - | -
 cold dry winter glare | 0.45 | - | -
+warm spring breeze with pollen | 0.55 | - | -

@@ -10,3 +10,4 @@ post-mower dust hanging | 0.4 | - | -
 muggy heat shimmer | 0.5 | - | -
 slush-melt afternoon | 0.35 | - | -
 dirty winter overcast | 0.5 | - | -
+warm breezy day with drifting seed fluff | 0.45 | - | -
