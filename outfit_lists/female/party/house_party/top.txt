@@ -2,7 +2,7 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 #color# crop top | 0.80 | 0.2-0.4 | cotton,jersey
-#color# graphic tee | 0.70 | 0.1-0.3 | cotton
+#color# tee with abstract geometric graphic | 0.70 | 0.1-0.3 | cotton
 #color# tank top | 0.65 | 0.1-0.3 | cotton,modal
 #color# off-shoulder blouse | 0.55 | 0.3-0.5 | satin,chiffon
 #color# bodysuit | 0.50 | 0.3-0.5 | jersey,mesh

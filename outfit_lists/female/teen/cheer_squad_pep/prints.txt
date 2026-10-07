@@ -1,6 +1,6 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
 school mascot graphic | 0.85 | top,outerwear | 0.0-0.2
-team logo print | 0.80 | top,outerwear,bag | 0.0-0.2
+team shield emblem print | 0.80 | top,outerwear,bag | 0.0-0.2
 varsity chevron | 0.75 | top,bottom,outerwear | 0.0-0.2
 pleated stripe | 0.70 | bottom | 0.0-0.2
 glitter foil graphic | 0.60 | top,outerwear | 0.0-0.2

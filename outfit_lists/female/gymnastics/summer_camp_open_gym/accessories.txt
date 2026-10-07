@@ -11,7 +11,7 @@ braided friendship bracelet | 0.55 | 0.0-0.3 | cotton
 athletic tape on the wrist | 0.45 | 0.0-0.3 | cotton
 #color# sweat towel | 0.45 | 0.0-0.3 | terry,cotton
 small stud earrings | 0.30 | 0.0-0.3 | metal
-#color# name tag on a lanyard | 0.40 | 0.0-0.3 | polyester,plastic
+#color# plain blank name card on a lanyard | 0.40 | 0.0-0.3 | polyester,plastic
 #color# fitness tracker band | 0.30 | 0.0-0.3 | rubber,plastic
 #color# sunglasses pushed up on the head | 0.25 | 0.0-0.3 | plastic,metal
 #color# wristbands under the grips | 0.55 | 0.0-0.3 | cotton,nylon

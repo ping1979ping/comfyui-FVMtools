@@ -2,7 +2,7 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 # casual
-boxy graphic tee | 0.55 | 0.0-0.2 | midweight-knit,french-loop
+boxy tee with abstract linework graphic | 0.55 | 0.0-0.2 | midweight-knit,french-loop
 oversized longsleeve | 0.50 | 0.0-0.2 | midweight-knit,french-loop
 streetwear vest | 0.30 | 0.0-0.2 | midweight-knit,techweave
 

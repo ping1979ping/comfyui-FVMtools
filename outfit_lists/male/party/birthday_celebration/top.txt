@@ -1,7 +1,7 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-#color# birthday graphic tee | 0.65 | 0.2-0.4 | cotton,jersey
+#color# birthday tee with balloon and confetti graphic | 0.65 | 0.2-0.4 | cotton,jersey
 #color# party shirt | 0.65 | 0.3-0.5 | cotton
 #color# celebration polo | 0.55 | 0.3-0.5 | cotton,jersey
 #color# fun printed shirt | 0.55 | 0.3-0.5 | cotton
@@ -9,8 +9,8 @@
 #color# button-up dress shirt | 0.55 | 0.4-0.5 | cotton
 #color# ringer tee | 0.45 | 0.2-0.4 | cotton,jersey
 #color# henley party top | 0.45 | 0.3-0.4 | cotton,jersey
-#color# slogan crewneck | 0.50 | 0.2-0.4 | cotton,jersey
+#color# plain crewneck with tonal stripe | 0.50 | 0.2-0.4 | cotton,jersey
 #color# striped party top | 0.45 | 0.3-0.5 | cotton
 #color# camp collar shirt | 0.50 | 0.3-0.5 | cotton
 #color# longsleeve henley | 0.40 | 0.3-0.5 | cotton,jersey
-#color# graphic v-neck | 0.40 | 0.2-0.4 | cotton,jersey
+#color# v-neck with abstract brushstroke graphic | 0.40 | 0.2-0.4 | cotton,jersey

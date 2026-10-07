@@ -1,6 +1,6 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-designer monogram | 0.5 | top,bottom,outerwear,bag | 0.1-0.4
-brand logo | 0.5 | top,headwear,bag | 0.1-0.4
+designer monogram "{A|M|S|V}" | 0.5 | top,bottom,outerwear,bag | 0.1-0.4
+small abstract brand emblem | 0.5 | top,headwear,bag | 0.1-0.4
 embroidered emblem | 0.5 | top,headwear,outerwear | 0.1-0.4
 italian crest | 0.4 | top,outerwear | 0.1-0.4
 subtle pinstripe | 0.4 | top,bottom,outerwear | 0.1-0.4

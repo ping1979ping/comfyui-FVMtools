@@ -2,7 +2,7 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 navy blazer | 0.65 | 0.3-0.5 | cotton
-varsity-letter coat | 0.45 | 0.2-0.4 | cotton,knit
+varsity coat with chenille letter "{A|M|S}" | 0.45 | 0.2-0.4 | cotton,knit
 quilted barn coat | 0.40 | 0.3-0.5 | cotton
 windbreaker shell | 0.40 | 0.2-0.4 | nylon,polyester
 peacoat | 0.30 | 0.3-0.5 | knit

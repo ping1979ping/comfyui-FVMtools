@@ -1,7 +1,7 @@
 # slot: headwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-#color# university baseball cap | 0.75 | 0.10-0.35 | cotton
+#color# baseball cap with small abstract crest | 0.75 | 0.10-0.35 | cotton
 #color# slouchy beanie | 0.65 | 0.10-0.30 | wool,acrylic
 #color# dad cap | 0.55 | 0.10-0.35 | cotton
 #color# knit beanie | 0.45 | 0.10-0.30 | acrylic,wool

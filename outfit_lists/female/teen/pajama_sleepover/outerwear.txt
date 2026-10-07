@@ -6,6 +6,6 @@
 #color# soft satin-feel robe | 0.60 | 0.0-0.2 | satin
 #color# slouchy cardigan | 0.65 | 0.0-0.2 | acrylic,cotton
 #color# teddy sherpa jacket | 0.60 | 0.0-0.2 | fleece
-#color# college pullover | 0.55 | 0.0-0.2 | cotton,fleece
+#color# striped-rib pullover | 0.55 | 0.0-0.2 | cotton,fleece
 #color# zip-front fleece | 0.55 | 0.0-0.2 | fleece
 #color# long open kimono robe | 0.50 | 0.0-0.2 | satin

@@ -5,4 +5,4 @@
 #color# performance visor | 0.70 | 0.0-0.2 | polyester
 #color# bandana | 0.45 | 0.0-0.2 | cotton
 #color# bucket hat | 0.40 | 0.0-0.2 | cotton
-#color# club cap | 0.50 | 0.1-0.4 | cotton
+#color# classic panel cap | 0.50 | 0.1-0.4 | cotton

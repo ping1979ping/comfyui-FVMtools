@@ -1,5 +1,5 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-oversized brand logo | 0.7 | top,headwear,bag | 0.1-0.4
+oversized abstract geometric brand emblem | 0.7 | top,headwear,bag | 0.1-0.4
 embroidered crest | 0.6 | top,headwear,outerwear | 0.1-0.4
 plaid pattern | 0.6 | bottom,outerwear | 0.1-0.3
 heart motif | 0.5 | top,bag,accessories | 0.0-0.3

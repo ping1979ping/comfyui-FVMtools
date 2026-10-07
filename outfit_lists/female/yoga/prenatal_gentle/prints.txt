@@ -7,5 +7,5 @@ ruched side detail | 0.45 | top,bottom | 0.0-0.2
 soft tonal stripes | 0.30 | top,bottom | 0.0-0.3
 subtle dot print | 0.25 | top,bottom | 0.0-0.2
 neutral marble effect | 0.25 | top,bottom | 0.0-0.2
-mama lettering motif | 0.25 | top | 0.0-0.3
+lettering motif reading "MAMA" | 0.25 | top | 0.0-0.3
 washed tie-dye | 0.25 | top,bottom | 0.0-0.2

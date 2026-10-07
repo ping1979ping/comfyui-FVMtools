@@ -7,5 +7,5 @@
 #color# longline puffer jacket | 0.55 | 0.0-0.2 | nylon
 #color# soft sherpa pullover | 0.65 | 0.0-0.2 | fleece
 #color# slouchy open cardigan | 0.60 | 0.0-0.2 | acrylic,cotton
-#color# college sweatshirt | 0.65 | 0.0-0.2 | cotton,fleece
+#color# plain crewneck sweatshirt | 0.65 | 0.0-0.2 | cotton,fleece
 #color# fleece zip jacket | 0.55 | 0.0-0.2 | fleece

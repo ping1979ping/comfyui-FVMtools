@@ -9,6 +9,6 @@
 #color# racerback cropped tank | 0.80 | 0.0-0.2 | cotton,polyester
 #color# long-sleeve practice top | 0.55 | 0.0-0.2 | polyester,spandex
 #color# bow-back cheer top | 0.70 | 0.0-0.2 | polyester,spandex
-#color# crop tee with school logo | 0.75 | 0.0-0.2 | cotton
+#color# crop tee with school crest emblem | 0.75 | 0.0-0.2 | cotton
 #color# fitted scoopneck tank | 0.70 | 0.0-0.2 | cotton,spandex
 #color# uniform shell top | 0.85 | 0.0-0.2 | polyester,spandex

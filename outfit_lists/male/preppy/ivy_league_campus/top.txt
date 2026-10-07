@@ -3,7 +3,7 @@
 
 # casual
 crew sweatshirt | 0.55 | 0.1-0.4 | fleece,jersey
-varsity tee | 0.50 | 0.1-0.3 | jersey,pima
+striped varsity tee | 0.50 | 0.1-0.3 | jersey,pima
 hooded pullover | 0.45 | 0.1-0.3 | fleece,jersey
 polo shirt | 0.65 | 0.2-0.5 | pique,jersey
 rugby top | 0.40 | 0.1-0.4 | jersey

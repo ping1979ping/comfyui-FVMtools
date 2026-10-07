@@ -1,7 +1,7 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-#color# fitted graphic tee | 0.95 | 0.0-0.2 | cotton,polyester
+#color# fitted tee with abstract wave graphic | 0.95 | 0.0-0.2 | cotton,polyester
 #color# basic crewneck tee | 0.90 | 0.0-0.2 | cotton
 #color# baby tee | 0.85 | 0.0-0.2 | cotton
 #color# cropped fitted tee | 0.80 | 0.0-0.2 | cotton,spandex

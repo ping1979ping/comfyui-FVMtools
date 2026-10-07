@@ -1,7 +1,7 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
 embroidered crest | 0.55 | top,outerwear | 0.3-0.8
-varsity letter | 0.45 | top,outerwear | 0.1-0.4
-team logo | 0.40 | top,outerwear | 0.1-0.4
+varsity letter "{A|M|S}" | 0.45 | top,outerwear | 0.1-0.4
+team abstract animal-head emblem | 0.40 | top,outerwear | 0.1-0.4
 argyle pattern | 0.45 | top,outerwear | 0.3-0.7
 plaid pattern | 0.45 | top,outerwear | 0.3-0.7
 herringbone weave | 0.40 | outerwear | 0.4-0.8

@@ -2,7 +2,7 @@
 small floral motif | 0.4 | top,bottom | 0.2-0.5
 striped pattern | 0.4 | top,bottom | 0.1-0.5
 tie-dye wash | 0.3 | top,bottom | 0.1-0.4
-graphic logo | 0.4 | top | 0.1-0.3
+graphic abstract emblem | 0.4 | top | 0.1-0.3
 checkered pattern | 0.3 | top,bottom,bag | 0.2-0.4
 abstract swirl | 0.3 | top,accessories | 0.2-0.4
 animal print | 0.3 | top,bottom,bag | 0.3-0.5

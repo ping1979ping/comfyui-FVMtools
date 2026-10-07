@@ -9,5 +9,5 @@
 #color# pastel knit pullover | 0.40 | 0.4-0.5 | cotton
 #color# safari jacket | 0.35 | 0.4-0.5 | cotton
 #color# seersucker blazer | 0.40 | 0.4-0.6 | cotton
-#color# club blazer | 0.40 | 0.4-0.6 | wool
+#color# blazer with small abstract crest | 0.40 | 0.4-0.6 | wool
 #color# garden waistcoat | 0.35 | 0.4-0.6 | cotton

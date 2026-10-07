@@ -2,7 +2,7 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 # casual
-varsity jacket | 0.45 | 0.0-0.3 | wool-mix,split-suede
+striped-rib varsity jacket with leather sleeves | 0.45 | 0.0-0.3 | wool-mix,split-suede
 streetwear bomber | 0.50 | 0.0-0.3 | rubberized-textile,wool-mix
 
 # mid-casual

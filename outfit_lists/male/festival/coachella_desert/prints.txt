@@ -9,5 +9,5 @@ tribal stripe | 0.35 | top,bottom | 0.0-0.3
 distressed wash | 0.45 | bottom,outerwear | 0.1-0.3
 turquoise embellishment | 0.30 | accessories,bag | 0.1-0.3
 sun rays motif | 0.30 | top | 0.0-0.3
-washed band logo | 0.30 | top | 0.0-0.2
+washed band lightning-bolt emblem | 0.30 | top | 0.0-0.2
 cactus graphic | 0.25 | top | 0.0-0.2

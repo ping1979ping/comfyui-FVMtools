@@ -1,5 +1,5 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-band graphic | 0.7 | top | 0.1-0.3
+abstract band artwork | 0.7 | top | 0.1-0.3
 floral motif | 0.6 | top,bottom | 0.1-0.3
 faded wash | 0.6 | top,bottom | 0.1-0.3
 patchwork detail | 0.5 | top,bottom,bag | 0.1-0.3

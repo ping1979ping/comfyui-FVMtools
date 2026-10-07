@@ -1,7 +1,7 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
 rugby stripes | 0.5 | top | 0.2-0.5
 school crest | 0.4 | top,outerwear | 0.2-0.5
-varsity letter | 0.4 | top,outerwear,headwear | 0.1-0.4
+varsity letter "{A|M|S}" | 0.4 | top,outerwear,headwear | 0.1-0.4
 tartan check | 0.4 | top,outerwear,bottom | 0.2-0.5
 oxford weave | 0.4 | top | 0.3-0.5
 gingham check | 0.4 | top | 0.2-0.5

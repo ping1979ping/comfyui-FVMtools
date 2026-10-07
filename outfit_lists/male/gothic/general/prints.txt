@@ -10,7 +10,7 @@ distressed details | 0.5 | top,bottom | 0.0-0.3
 occult symbol | 0.2 | top,accessories | 0.0-0.2
 bat print | 0.2 | top | 0.0-0.2
 spider web print | 0.2 | top,accessories | 0.0-0.2
-band logo | 0.3 | top | 0.0-0.2
+angular abstract band emblem | 0.3 | top | 0.0-0.2
 baroque print | 0.2 | top | 0.2-0.5
 raven embroidery | 0.2 | top,outerwear | 0.1-0.4
 skull and crossbones | 0.2 | top,accessories | 0.0-0.2

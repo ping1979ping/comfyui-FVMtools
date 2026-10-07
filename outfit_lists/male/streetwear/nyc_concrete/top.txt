@@ -1,6 +1,6 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
-black graphic tee | 0.8 | 0.0-0.3 | cotton,jersey
+black tee with bold abstract graphic | 0.8 | 0.0-0.3 | cotton,jersey
 oversized hoodie | 0.7 | 0.0-0.2 | cotton,fleece
 heavyweight pullover | 0.5 | 0.0-0.2 | cotton,fleece
 ribbed thermal | 0.5 | 0.0-0.2 | cotton,jersey

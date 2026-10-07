@@ -3,7 +3,7 @@
 
 # casual
 biker jacket | 0.55 | 0.0-0.3 | leather
-varsity jacket | 0.45 | 0.1-0.4 | wool,leather
+striped-rib varsity jacket with leather sleeves | 0.45 | 0.1-0.4 | wool,leather
 jean jacket | 0.40 | 0.0-0.3 | denim
 windbreaker | 0.40 | 0.1-0.4 | cotton
 

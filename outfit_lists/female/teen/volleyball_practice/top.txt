@@ -1,9 +1,9 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-#color# fitted team jersey | 0.95 | 0.0-0.2 | polyester,spandex
+#color# fitted striped jersey | 0.95 | 0.0-0.2 | polyester,spandex
 #color# sleeveless volleyball jersey | 0.90 | 0.0-0.2 | polyester,spandex
-#color# v-neck team shirt | 0.80 | 0.0-0.2 | polyester,cotton
+#color# v-neck color-block sport shirt | 0.80 | 0.0-0.2 | polyester,cotton
 #color# fitted practice tee | 0.85 | 0.0-0.2 | cotton,polyester
 #color# cropped warm-up top | 0.70 | 0.0-0.2 | polyester,spandex
 #color# racerback tank | 0.75 | 0.0-0.2 | polyester,spandex

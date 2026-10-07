@@ -2,9 +2,9 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 # casual
-band tee | 0.65 | 0.0-0.3 | cotton
+band tee with "{ECHO|VOID|PULSE}" logo | 0.65 | 0.0-0.3 | cotton
 sleeveless metal shirt | 0.55 | 0.0-0.3 | cotton
-graphic tour shirt | 0.55 | 0.0-0.3 | cotton
+abstract artwork tour shirt | 0.55 | 0.0-0.3 | cotton
 distressed black tee | 0.50 | 0.0-0.3 | cotton
 hooded sweatshirt | 0.45 | 0.0-0.3 | cotton
 ripped tank | 0.45 | 0.0-0.3 | cotton

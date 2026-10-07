@@ -10,4 +10,4 @@ collared performance top | 0.65 | 0.1-0.3 | pique_knit,polyester
 breathable fairway tee | 0.50 | 0.0-0.3 | polyester,jersey_knit
 sleeveless mock top | 0.45 | 0.1-0.3 | polyester,spandex
 cap-sleeve course top | 0.40 | 0.1-0.3 | polyester,spandex
-classic country-club polo | 0.55 | 0.1-0.3 | pique_knit,polyester
+classic polo with small embroidered palm emblem | 0.55 | 0.1-0.3 | pique_knit,polyester

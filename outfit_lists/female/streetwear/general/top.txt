@@ -9,4 +9,4 @@ off-shoulder sweatshirt | 0.4 | 0.0-0.3 | cotton,fleece
 tank top | 0.5 | 0.0-0.2 | cotton,jersey
 cropped hoodie | 0.5 | 0.0-0.2 | cotton,fleece
 tube top | 0.3 | 0.0-0.2 | jersey,spandex,velour
-band tee | 0.4 | 0.0-0.2 | cotton
+band tee with "{ECHO|VOID|PULSE}" logo | 0.4 | 0.0-0.2 | cotton

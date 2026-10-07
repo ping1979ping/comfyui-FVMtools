@@ -2,7 +2,7 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 oversized denim jacket | 0.70 | 0.2-0.4 | denim
-varsity jacket | 0.55 | 0.1-0.3 | wool,leather
+striped-rib varsity jacket with leather sleeves | 0.55 | 0.1-0.3 | wool,leather
 puffer jacket | 0.65 | 0.1-0.4 | nylon,polyester
 zip-up track jacket | 0.55 | 0.1-0.3 | polyester,nylon
 oversized hoodie layer | 0.65 | 0.1-0.3 | fleece,cotton

@@ -8,7 +8,7 @@ cropped windbreaker | 0.40 | 0.2-0.4 | nylon,polyester
 
 # mid-casual
 fitted cardigan | 0.55 | 0.3-0.6 | cashmere,wool,knit
-country club blazer | 0.50 | 0.3-0.7 | wool,linen
+country club blazer with small abstract crest | 0.50 | 0.3-0.7 | wool,linen
 golf pullover | 0.45 | 0.3-0.6 | wool,knit
 
 # formal

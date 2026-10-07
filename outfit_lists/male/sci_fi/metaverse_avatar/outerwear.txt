@@ -7,6 +7,6 @@ asymmetric glitch-print jacket with chrome zipper | 0.60 | 0.1-0.5 | neoprene,ny
 sheer mesh duster with neon outline | 0.45 | 0.0-0.4 | mesh,nylon
 chunky polygon vest with magnetic clasps | 0.55 | 0.0-0.4 | neoprene,nylon
 iridescent kimono with floating particles | 0.45 | 0.2-0.6 | holographic,satin
-hooded cyber poncho with avatar tag | 0.50 | 0.0-0.4 | nylon,mesh
+hooded cyber poncho with small glowing geometric tag | 0.50 | 0.0-0.4 | nylon,mesh
 cropped voxel bomber with chunky cuffs | 0.55 | 0.1-0.5 | nylon,neoprene
 chrome-edged shrug with reactive panel | 0.50 | 0.1-0.5 | metal_mesh,neoprene

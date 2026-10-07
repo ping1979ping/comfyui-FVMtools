@@ -2,7 +2,7 @@
 argyle pattern | 0.5 | top,outerwear | 0.3-0.7
 country crest emblem | 0.4 | top,outerwear | 0.3-0.7
 nautical stripes | 0.4 | top,bottom | 0.2-0.6
-monogram print | 0.3 | bag,accessories | 0.3-0.7
+monogram print "{A|M|S}" | 0.3 | bag,accessories | 0.3-0.7
 gingham check | 0.4 | top,bottom | 0.2-0.6
 plaid pattern | 0.5 | top,bottom,outerwear | 0.3-0.7
 embroidered emblem | 0.3 | top,outerwear | 0.4-0.8

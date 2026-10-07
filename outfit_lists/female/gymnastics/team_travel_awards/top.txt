@@ -7,11 +7,11 @@
 #color# long-sleeve team leotard | 0.75 | 0.0-0.3 | velvet,spandex
 #color# team leotard with a matching scrunchie | 0.65 | 0.0-0.3 | velvet,spandex
 #color# tank leotard | 0.60 | 0.0-0.3 | spandex,lycra
-#color# team meet t-shirt | 0.80 | 0.0-0.3 | cotton,polyester
+#color# meet t-shirt with color-block sleeves | 0.80 | 0.0-0.3 | cotton,polyester
 #color# oversized meet souvenir tee | 0.70 | 0.0-0.3 | cotton
-#color# fitted team tank top | 0.55 | 0.0-0.3 | cotton,polyester
-#color# long-sleeve team shirt | 0.55 | 0.0-0.3 | cotton,polyester
-#color# cropped team tee | 0.50 | 0.0-0.3 | cotton
+#color# fitted striped tank top | 0.55 | 0.0-0.3 | cotton,polyester
+#color# long-sleeve striped sport shirt | 0.55 | 0.0-0.3 | cotton,polyester
+#color# cropped striped tee | 0.50 | 0.0-0.3 | cotton
 #color# fitted performance tee | 0.45 | 0.0-0.3 | polyester,spandex
-#color# team polo shirt | 0.30 | 0.0-0.3 | cotton,polyester
+#color# color-block polo shirt | 0.30 | 0.0-0.3 | cotton,polyester
 #color# tank leotard under a zip jacket | 0.55 | 0.0-0.3 | spandex,lycra

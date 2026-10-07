@@ -1,7 +1,7 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 oversized graphic tee | 0.9 | 0.1-0.3 | cotton,jersey
-boxy logo hoodie | 0.8 | 0.1-0.3 | fleece,cotton
+boxy hoodie with chest logo reading "{NOVA|ORBIT|ZENITH}" | 0.8 | 0.1-0.3 | fleece,cotton
 cropped sweatshirt | 0.7 | 0.1-0.3 | fleece,cotton
 ribbed tank | 0.6 | 0.0-0.2 | spandex,jersey
 oversized longsleeve | 0.7 | 0.1-0.3 | cotton,jersey

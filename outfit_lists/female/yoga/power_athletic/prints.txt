@@ -3,7 +3,7 @@ color-block panels | 0.50 | top,bottom,outerwear | 0.0-0.3
 mesh side inserts | 0.50 | top,bottom | 0.0-0.2
 reflective stripes | 0.40 | top,bottom,outerwear | 0.0-0.2
 side stripe panel | 0.45 | top,bottom | 0.0-0.3
-brand logo bold | 0.40 | top,bottom,outerwear | 0.0-0.3
+bold abstract brand emblem | 0.40 | top,bottom,outerwear | 0.0-0.3
 camo print | 0.30 | top,bottom,outerwear | 0.0-0.3
 tonal gradient | 0.30 | top,bottom | 0.0-0.2
 geometric pattern | 0.30 | top,bottom | 0.0-0.3

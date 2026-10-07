@@ -10,4 +10,4 @@ chief medical officer wrist scanner | 0.30 | 0.0-0.6 | plastic,metal
 TOS service ribbons across chest | 0.35 | 0.7-1.0 | satin,metal
 ready light pen-style scanner | 0.40 | 0.0-0.6 | metal,plastic
 shipboard chronometer wristband | 0.30 | 0.0-0.8 | metal
-service ID lanyard around neck | 0.25 | 0.0-0.6 | nylon,plastic
+service lanyard with blank ID card around neck | 0.25 | 0.0-0.6 | nylon,plastic

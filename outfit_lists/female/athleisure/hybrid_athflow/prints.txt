@@ -8,4 +8,4 @@ ombre fade | 0.3 | top,bottom | 0.0-0.4
 butter-soft finish | 0.4 | top,bottom | 0.0-0.3
 crossover detail | 0.3 | bottom | 0.0-0.3
 mesh accent | 0.3 | top | 0.0-0.3
-minimal logo | 0.3 | top,headwear,bag | 0.1-0.4
+small abstract geometric emblem | 0.3 | top,headwear,bag | 0.1-0.4

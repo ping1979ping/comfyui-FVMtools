@@ -5,6 +5,6 @@
 #color# zip-up court hoodie | 0.55 | 0.0-0.2 | cotton,fleece
 #color# v-neck cable pullover | 0.50 | 0.1-0.4 | wool,cotton
 #color# trim warmup pullover | 0.55 | 0.0-0.3 | polyester
-#color# club blazer | 0.30 | 0.2-0.5 | wool
+#color# blazer with small abstract crest | 0.30 | 0.2-0.5 | wool
 #color# light wind shell | 0.50 | 0.0-0.2 | nylon
 #color# fitted bomber | 0.45 | 0.1-0.3 | polyester

@@ -9,4 +9,4 @@ subtle lotus print | 0.20 | top,bottom | 0.0-0.2
 geometric pattern | 0.25 | top,bottom | 0.0-0.3
 color-block | 0.35 | top,bottom,outerwear | 0.0-0.3
 mesh panel detail | 0.30 | top,bottom | 0.0-0.2
-minimal logo | 0.25 | top,headwear | 0.1-0.3
+small abstract geometric emblem | 0.25 | top,headwear | 0.1-0.3

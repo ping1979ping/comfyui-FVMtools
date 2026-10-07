@@ -6,7 +6,7 @@ paisley pattern | 0.4 | top | 0.1-0.4
 mirror embellishment | 0.4 | top,outerwear | 0.1-0.4
 geometric tribal | 0.4 | top | 0.1-0.4
 neon abstract | 0.3 | top | 0.0-0.3
-festival graphic | 0.4 | top | 0.0-0.3
+festival sun-and-stars graphic | 0.4 | top | 0.0-0.3
 sequin trim | 0.3 | outerwear,accessories | 0.0-0.4
 fringe accent | 0.4 | outerwear,accessories | 0.0-0.4
 beaded trim | 0.3 | accessories | 0.0-0.3

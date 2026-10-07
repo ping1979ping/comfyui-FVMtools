@@ -3,7 +3,7 @@
 
 # casual
 crested rugby shirt | 0.65 | 0.2-0.5 | cotton,knit
-varsity tee | 0.55 | 0.1-0.4 | cotton
+striped varsity tee | 0.55 | 0.1-0.4 | cotton
 striped polo | 0.55 | 0.2-0.5 | cotton,knit
 crewneck sweatshirt | 0.60 | 0.1-0.4 | cotton,fleece
 

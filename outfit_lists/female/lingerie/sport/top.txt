@@ -5,7 +5,7 @@
 #color# racerback bralette | 0.85 | 0.0-0.2 | microfiber,spandex,nylon
 #color# seamless bralette | 0.8 | 0.0-0.2 | microfiber,modal
 #color# strappy sports bra | 0.75 | 0.0-0.2 | spandex,nylon
-#color# logo-band bralette | 0.7 | 0.0-0.2 | microfiber,spandex
+#color# bralette with plain elastic band | 0.7 | 0.0-0.2 | microfiber,spandex
 #color# longline sports bra | 0.65 | 0.0-0.2 | microfiber,spandex
 #color# crop bralette | 0.6 | 0.0-0.2 | modal,cotton
 #color# zip-front bralette | 0.55 | 0.0-0.2 | spandex,nylon

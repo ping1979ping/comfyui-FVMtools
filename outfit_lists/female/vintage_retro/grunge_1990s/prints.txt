@@ -1,7 +1,7 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
 plaid pattern | 0.6 | top,bottom,outerwear | 0.1-0.4
 flannel check | 0.5 | top,outerwear | 0.1-0.3
-band logo print | 0.4 | top | 0.1-0.3
+distressed abstract emblem print | 0.4 | top | 0.1-0.3
 ditsy floral | 0.5 | top,bottom | 0.1-0.4
 tartan pattern | 0.4 | bottom,outerwear | 0.1-0.4
 tie-dye pattern | 0.4 | top | 0.1-0.3

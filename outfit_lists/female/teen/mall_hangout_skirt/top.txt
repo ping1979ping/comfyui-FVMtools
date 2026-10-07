@@ -11,5 +11,5 @@
 #color# corset-style bustier | 0.55 | 0.0-0.3 | cotton,spandex
 #color# bandeau top | 0.55 | 0.0-0.3 | cotton,spandex
 #color# fitted long-sleeve crop | 0.60 | 0.0-0.3 | cotton,spandex
-#color# graphic cropped tee | 0.80 | 0.0-0.3 | cotton
+#color# cropped tee with abstract flower graphic | 0.80 | 0.0-0.3 | cotton
 #color# satin-feel cami | 0.50 | 0.0-0.3 | polyester,satin

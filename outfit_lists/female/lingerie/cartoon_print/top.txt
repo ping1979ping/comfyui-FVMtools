@@ -9,6 +9,6 @@
 #color# retro-game bralette | 0.65 | 0.0-0.3 | cotton,modal
 #color# kawaii-print bralette | 0.6 | 0.0-0.3 | cotton,modal
 #color# rainbow-doodle crop top | 0.55 | 0.0-0.3 | cotton,modal
-#color# sticker-print bralette | 0.5 | 0.0-0.3 | cotton,microfiber
+#color# bralette with star and heart sticker print | 0.5 | 0.0-0.3 | cotton,microfiber
 #color# cartoon-cat bralette | 0.5 | 0.0-0.3 | cotton,modal
 #color# speech-bubble bralette | 0.45 | 0.0-0.3 | cotton,modal

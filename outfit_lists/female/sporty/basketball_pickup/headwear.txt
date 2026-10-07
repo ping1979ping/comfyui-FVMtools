@@ -2,6 +2,6 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 snapback cap | 0.65 | 0.0-0.2 | cotton_blend,polyester
-team beanie | 0.40 | 0.0-0.2 | cotton_blend,wool_blend
+striped knit beanie | 0.40 | 0.0-0.2 | cotton_blend,wool_blend
 elastic headband | 0.55 | 0.0-0.2 | spandex,polyester
 backwards cap | 0.55 | 0.0-0.2 | cotton_blend,polyester

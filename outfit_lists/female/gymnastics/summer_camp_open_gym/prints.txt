@@ -8,7 +8,7 @@ neon color-block | 0.70 | top,bottom | 0.0-0.3
 cheetah spot print | 0.55 | top,bottom | 0.0-0.3
 star scatter print | 0.55 | top,outerwear | 0.0-0.3
 watercolor gradient | 0.55 | top | 0.0-0.3
-camp roster graphic on the back | 0.50 | top,outerwear | 0.0-0.3
+camp tent and pine tree graphic on the back | 0.50 | top,outerwear | 0.0-0.3
 holographic shine finish | 0.45 | top | 0.0-0.3
 mesh insert panel | 0.45 | top | 0.0-0.3
 tonal camo print | 0.35 | top,bottom,outerwear | 0.0-0.3

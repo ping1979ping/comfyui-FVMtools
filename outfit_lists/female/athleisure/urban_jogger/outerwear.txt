@@ -3,7 +3,7 @@
 
 # casual
 oversized hoodie | 0.55 | 0.0-0.2 | cotton,fleece
-varsity jacket | 0.45 | 0.1-0.4 | wool,nylon
+striped-rib varsity jacket with leather sleeves | 0.45 | 0.1-0.4 | wool,nylon
 bomber | 0.50 | 0.1-0.4 | nylon,polyester
 
 # mid-casual

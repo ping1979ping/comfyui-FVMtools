@@ -4,8 +4,8 @@ plaid pattern | 0.4 | top,outerwear | 0.1-0.5
 graphic print | 0.3 | top | 0.0-0.4
 geometric pattern | 0.3 | top,bottom | 0.2-0.7
 abstract graphic | 0.3 | top | 0.0-0.4
-brand logo | 0.3 | top,headwear | 0.1-0.5
-embroidered logo | 0.3 | top,outerwear,headwear | 0.2-0.7
+small abstract brand emblem | 0.3 | top,headwear | 0.1-0.5
+embroidered small abstract emblem | 0.3 | top,outerwear,headwear | 0.2-0.7
 camouflage pattern | 0.2 | top,bottom,outerwear | 0.0-0.3
 polka dot | 0.1 | top | 0.2-0.5
 animal print | 0.1 | top,accessories | 0.1-0.4

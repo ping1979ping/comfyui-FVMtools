@@ -1,6 +1,6 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-graphic band print | 0.55 | top | 0.15-0.35
-varsity number print | 0.50 | top,outerwear | 0.15-0.35
+graphic band print reading "{NOVA|ORBIT|ZENITH}" | 0.55 | top | 0.15-0.35
+varsity number print "{7|23|88}" | 0.50 | top,outerwear | 0.15-0.35
 smiley face graphic | 0.55 | top | 0.15-0.35
 checkerboard pattern | 0.50 | top,bottom,accessories | 0.15-0.35
 tie-dye wash | 0.45 | top | 0.15-0.35

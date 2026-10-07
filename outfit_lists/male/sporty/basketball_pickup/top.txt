@@ -1,7 +1,7 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-#color# basketball jersey | 0.90 | 0.0-0.1 | polyester,mesh
+#color# basketball jersey with side-stripe trim | 0.90 | 0.0-0.1 | polyester,mesh
 #color# reversible practice jersey | 0.80 | 0.0-0.1 | polyester,mesh
 #color# sleeveless shooting shirt | 0.75 | 0.0-0.1 | polyester,mesh
 #color# tank top | 0.70 | 0.0-0.1 | cotton,polyester

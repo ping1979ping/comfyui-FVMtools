@@ -1,7 +1,7 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-#color# graphic band tee | 0.85 | 0.2-0.5 | cotton
+#color# graphic band tee with "{NOVA|ORBIT|ZENITH}" logo | 0.85 | 0.2-0.5 | cotton
 #color# cropped tank top | 0.70 | 0.2-0.5 | cotton,jersey
 #color# fishnet long-sleeve | 0.55 | 0.2-0.5 | mesh
 #color# distressed muscle tee | 0.55 | 0.2-0.5 | cotton

@@ -7,7 +7,7 @@ chalk-dusted hands | 0.80 | 0.0-0.3 | -
 #color# medal on a neck ribbon | 0.55 | 0.0-0.3 | metal,polyester
 athletic tape on the wrist | 0.45 | 0.0-0.3 | cotton
 #color# grip bag clipped to the wrist | 0.40 | 0.0-0.3 | canvas,nylon
-#color# team lanyard | 0.30 | 0.0-0.3 | polyester
+#color# two-tone striped team lanyard | 0.30 | 0.0-0.3 | polyester
 #color# insulated water bottle | 0.50 | 0.0-0.3 | metal,plastic
 #color# sweat towel | 0.35 | 0.0-0.3 | terry,cotton
 small stud earrings | 0.25 | 0.0-0.3 | metal

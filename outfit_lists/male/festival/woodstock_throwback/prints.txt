@@ -5,7 +5,7 @@ peace sign motif | 0.50 | top,accessories | 0.0-0.3
 floral folk pattern | 0.45 | top,outerwear | 0.1-0.3
 fringe trim | 0.55 | outerwear,bag,accessories | 0.0-0.3
 patchwork detail | 0.45 | top,bottom,outerwear | 0.0-0.3
-groovy lettering | 0.40 | top | 0.0-0.2
+groovy lettering reading "{PEACE|LOVE|GROOVY}" | 0.40 | top | 0.0-0.2
 mandala motif | 0.40 | top | 0.0-0.3
 ethnic embroidery | 0.40 | top,outerwear | 0.1-0.3
 rainbow stripe | 0.40 | top | 0.0-0.2

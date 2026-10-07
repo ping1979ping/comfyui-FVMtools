@@ -4,7 +4,7 @@
 # casual
 oversized denim jacket | 0.50 | 0.1-0.4 | denim
 windbreaker shell | 0.45 | 0.1-0.4 | nylon
-varsity jacket | 0.40 | 0.1-0.4 | wool,leather
+striped-rib varsity jacket with leather sleeves | 0.40 | 0.1-0.4 | wool,leather
 puffer vest | 0.40 | 0.1-0.4 | nylon
 
 # mid-casual

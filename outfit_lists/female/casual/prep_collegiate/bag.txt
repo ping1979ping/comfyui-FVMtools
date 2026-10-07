@@ -3,7 +3,7 @@
 
 leather satchel | 0.65 | 0.3-0.5 | leather,suede
 top-handle bag | 0.55 | 0.4-0.6 | leather,suede
-classic monogram tote | 0.50 | 0.3-0.5 | canvas,leather
+classic tote with monogram "{L|V|G}" embossed | 0.50 | 0.3-0.5 | canvas,leather
 structured shoulder bag | 0.55 | 0.3-0.5 | leather,suede
 mini crossbody | 0.50 | 0.2-0.4 | leather,suede
 canvas book tote | 0.55 | 0.2-0.4 | canvas,cotton

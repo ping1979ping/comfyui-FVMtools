@@ -1,6 +1,6 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
-vintage band tee | 0.9 | 0.1-0.3 | cotton
+vintage faded tee with abstract artwork | 0.9 | 0.1-0.3 | cotton
 worn-in graphic tee | 0.8 | 0.1-0.3 | cotton,jersey
 oversized cardigan | 0.7 | 0.1-0.3 | wool blend,cotton
 thrifted blouse | 0.6 | 0.1-0.3 | cotton,polyester

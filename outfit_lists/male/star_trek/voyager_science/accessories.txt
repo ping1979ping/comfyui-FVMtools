@@ -9,6 +9,6 @@ research duty PADD with star charts | 0.55 | 0.2-0.8 | plastic
 delta quadrant field analyzer | 0.45 | 0.0-0.6 | plastic,metal
 science officer pen-style scanner | 0.50 | 0.0-0.6 | metal,plastic
 formal service ribbons across chest | 0.35 | 0.7-1.0 | satin,metal
-science ID lanyard around neck | 0.30 | 0.0-0.7 | nylon,plastic
+science lanyard with blank ID card around neck | 0.30 | 0.0-0.7 | nylon,plastic
 spectrograph optical eyepiece on temple | 0.30 | 0.0-0.6 | plastic,metal
 type-2 phaser holstered on hip | 0.40 | 0.0-0.5 | plastic,metal

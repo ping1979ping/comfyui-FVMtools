@@ -1,7 +1,7 @@
 # slot: accessories
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-red helper name badge | 0.85 | 0.3-0.5 | metal
+red helper badge with a smiley pictogram | 0.85 | 0.3-0.5 | metal
 white knit holiday gloves | 0.60 | 0.3-0.5 | cotton
 striped candy cane | 0.50 | 0.3-0.5 |
 green elf-style suspenders | 0.45 | 0.3-0.5 | cotton

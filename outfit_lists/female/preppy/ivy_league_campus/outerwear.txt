@@ -2,7 +2,7 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 # casual
-varsity jacket | 0.55 | 0.1-0.4 | wool,leather
+striped-rib varsity jacket with leather sleeves | 0.55 | 0.1-0.4 | wool,leather
 fitted cardigan | 0.55 | 0.2-0.5 | wool,knit,cashmere
 cropped windbreaker | 0.40 | 0.2-0.4 | nylon
 

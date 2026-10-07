@@ -9,5 +9,5 @@ moto biker jacket | 0.55 | 0.4-0.65 | leather
 hooded shacket | 0.45 | 0.4-0.6 | cotton,polyester
 shrunken denim jacket | 0.45 | 0.4-0.6 | denim
 sporty blazer | 0.45 | 0.4-0.65 | polyester
-varsity cropped jacket | 0.45 | 0.4-0.65 | wool,leather
+color-block cropped varsity jacket | 0.45 | 0.4-0.65 | wool,leather
 cropped trench | 0.40 | 0.4-0.65 | cotton,polyester

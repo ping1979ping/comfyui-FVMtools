@@ -4,7 +4,7 @@ holographic shimmer | 0.40 | top,outerwear,accessories | 0.2-0.6
 neon graphic | 0.50 | top,outerwear | 0.2-0.5
 abstract glitch | 0.35 | top,bottom | 0.2-0.5
 glossy black panel | 0.45 | outerwear,top | 0.3-0.6
-techno typography | 0.35 | top | 0.2-0.5
+techno glitch geometric graphic | 0.35 | top | 0.2-0.5
 all-black blackout | 0.55 | top,bottom,outerwear | 0.3-0.6
 laser-cut detail | 0.30 | top,outerwear | 0.2-0.5
 reflective tape detail | 0.40 | top,outerwear,bottom | 0.2-0.5

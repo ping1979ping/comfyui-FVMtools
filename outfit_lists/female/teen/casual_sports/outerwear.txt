@@ -5,7 +5,7 @@ open zip-up jacket | 0.75 | 0.1-0.3 | polyester,nylon
 cropped puffer | 0.55 | 0.1-0.3 | nylon,polyester
 oversized bomber | 0.50 | 0.1-0.3 | nylon,polyester
 windbreaker | 0.60 | 0.1-0.3 | nylon,polyester
-varsity jacket | 0.45 | 0.1-0.4 | wool,nylon
+striped-rib varsity jacket with leather sleeves | 0.45 | 0.1-0.4 | wool,nylon
 track jacket | 0.60 | 0.1-0.3 | polyester,nylon
 sherpa-lined zip-up | 0.45 | 0.1-0.3 | fleece,polyester
 utility vest | 0.35 | 0.1-0.3 | nylon,polyester

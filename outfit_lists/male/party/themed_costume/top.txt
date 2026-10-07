@@ -9,7 +9,7 @@
 #color# sailor striped top | 0.45 | 0.3-0.4 | cotton
 #color# medieval tunic | 0.45 | 0.3-0.5 | cotton
 #color# 80s neon mesh top | 0.55 | 0.3-0.5 | polyester
-#color# halloween graphic shirt | 0.55 | 0.2-0.4 | cotton
+#color# halloween shirt with pumpkin and bat graphic | 0.55 | 0.2-0.4 | cotton
 #color# tropical hawaiian shirt | 0.65 | 0.3-0.5 | polyester
 #color# greaser tee | 0.50 | 0.2-0.4 | cotton
 #color# rockstar shimmer top | 0.50 | 0.4-0.6 | sequin

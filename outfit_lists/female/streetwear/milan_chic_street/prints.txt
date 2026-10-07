@@ -1,6 +1,6 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-designer monogram | 0.7 | top,bag,headwear | 0.1-0.4
-embroidered logo | 0.6 | top,headwear,outerwear | 0.1-0.4
+designer monogram "{A|M|S|V}" | 0.7 | top,bag,headwear | 0.1-0.4
+embroidered small abstract emblem | 0.6 | top,headwear,outerwear | 0.1-0.4
 fine pinstripe | 0.4 | bottom,outerwear | 0.1-0.4
 houndstooth pattern | 0.4 | top,outerwear | 0.1-0.4
 animal print | 0.4 | top,bottom,bag | 0.1-0.4

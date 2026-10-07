@@ -1,10 +1,10 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-vintage band tee | 0.85 | 0.2-0.4 | jersey,cotton
+vintage faded tee with abstract artwork | 0.85 | 0.2-0.4 | jersey,cotton
 checked button-up | 0.75 | 0.3-0.5 | flannel
 worn-in henley | 0.60 | 0.3-0.5 | jersey,cotton
-graphic concert tee | 0.55 | 0.2-0.4 | jersey,cotton
+abstract artwork concert tee | 0.55 | 0.2-0.4 | jersey,cotton
 pearl-snap western shirt | 0.55 | 0.3-0.5 | poplin,cotton
 faded raglan tee | 0.50 | 0.2-0.4 | jersey,cotton
 plaid shirt | 0.65 | 0.3-0.5 | flannel

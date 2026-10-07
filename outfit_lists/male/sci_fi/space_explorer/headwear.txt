@@ -3,6 +3,6 @@
 
 mission helmet with retractable visor | 0.55 | 0.3-0.8 | kevlar,plastic
 flight cap with chrome insignia | 0.45 | 0.4-0.8 | nylon,satin
-thermal beanie with mission patch | 0.40 | 0.0-0.4 | mesh,nylon
+thermal beanie with abstract round mission patch | 0.40 | 0.0-0.4 | mesh,nylon
 EVA hood with comm earpiece | 0.50 | 0.2-0.7 | neoprene,plastic
 captain peaked cap with chrome crest | 0.30 | 0.6-0.9 | satin,metal_mesh

@@ -3,7 +3,7 @@
 
 oversized hoody | 0.75 | 0.1-0.3 | fleece,cotton
 puffer jacket | 0.55 | 0.1-0.3 | nylon,polyester
-varsity coat | 0.45 | 0.1-0.3 | cotton
+color-block varsity coat with leather sleeves | 0.45 | 0.1-0.3 | cotton
 half-zip anorak | 0.40 | 0.1-0.3 | nylon,polyester
 trucker shirt-jac | 0.50 | 0.1-0.3 | denim
 windbreaker shell | 0.45 | 0.1-0.3 | nylon,polyester

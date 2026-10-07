@@ -6,5 +6,5 @@
 #color# milestone pendant | 0.45 | 0.3-0.5 | metal
 #color# stack bangles | 0.40 | 0.3-0.5 | metal
 #color# corsage wristlet | 0.30 | 0.3-0.5 | fabric
-#color# birthday badge | 0.25 | 0.2-0.4 | metal
+#color# round birthday badge with a star shape | 0.25 | 0.2-0.4 | metal
 #color# ribbon choker | 0.35 | 0.3-0.5 | satin

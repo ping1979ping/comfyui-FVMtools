@@ -1,7 +1,7 @@
 # slot: outerwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-#color# team hoodie | 0.85 | 0.0-0.3 | cotton,fleece
+#color# plain hoodie with contrast drawcord | 0.85 | 0.0-0.3 | cotton,fleece
 #color# zip-up warm-up jacket | 0.75 | 0.0-0.3 | polyester,nylon
 #color# oversized crewneck sweatshirt | 0.70 | 0.0-0.3 | cotton,fleece
 #color# quarter-zip pullover | 0.55 | 0.0-0.3 | polyester,fleece

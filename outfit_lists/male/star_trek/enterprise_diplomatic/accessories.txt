@@ -1,7 +1,7 @@
 # slot: accessories
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-NX-01 mission patch on shoulder | 0.95 | 0.0-1.0 | polyester,metal
+mission patch on shoulder with a stylized starship emblem | 0.95 | 0.0-1.0 | polyester,metal
 captain rank patch on chest | 0.85 | 0.2-1.0 | polyester,metal
 diplomatic envoy lapel pin | 0.55 | 0.5-1.0 | metal
 ambassador credential portfolio in hand | 0.40 | 0.7-1.0 | leather

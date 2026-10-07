@@ -2,7 +2,7 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 # casual
-varsity jacket | 0.50 | 0.1-0.4 | melton,leather
+striped-rib varsity jacket with leather sleeves | 0.50 | 0.1-0.4 | melton,leather
 letterman coat | 0.40 | 0.1-0.4 | melton,leather
 quilted vest | 0.40 | 0.2-0.4 | nylon,polyester
 shawl-collar cardigan | 0.50 | 0.2-0.5 | merino,wool

@@ -4,7 +4,7 @@
 # casual
 fitted polo shirt | 0.80 | 0.2-0.5 | cotton,knit
 piped riding shirt | 0.55 | 0.3-0.6 | cotton,silk
-hunt-club tee | 0.45 | 0.2-0.4 | cotton,knit
+hunt-club tee with small fox silhouette | 0.45 | 0.2-0.4 | cotton,knit
 team-stripe polo | 0.50 | 0.2-0.5 | cotton,knit
 
 # mid-casual

@@ -10,8 +10,8 @@ abstract graphic | 0.4 | top | 0.0-0.3
 ethnic print | 0.3 | top | 0.0-0.3
 mandala print | 0.2 | top | 0.0-0.3
 fringe detail | 0.2 | outerwear,accessories | 0.0-0.3
-bold typography | 0.3 | top | 0.0-0.2
-band logo | 0.3 | top | 0.0-0.2
+bold color-block shapes | 0.3 | top | 0.0-0.2
+angular abstract band emblem | 0.3 | top | 0.0-0.2
 rainbow pattern | 0.2 | top,accessories | 0.0-0.2
 distressed details | 0.3 | top,bottom | 0.0-0.2
 camouflage pattern | 0.2 | top,bottom | 0.0-0.2

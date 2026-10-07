@@ -1,5 +1,5 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-surf brand logo | 0.6 | top | 0.0-0.2
+surf brand wave emblem | 0.6 | top | 0.0-0.2
 wave graphic | 0.5 | top,bottom | 0.0-0.2
 camo pattern | 0.4 | top,bottom | 0.0-0.2
 checkerboard design | 0.4 | top,bottom | 0.0-0.2

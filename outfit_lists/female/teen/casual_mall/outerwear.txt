@@ -3,7 +3,7 @@
 
 #color# oversized denim jacket | 0.75 | 0.15-0.35 | denim
 #color# cropped bomber jacket | 0.70 | 0.15-0.35 | nylon,polyester
-#color# varsity jacket | 0.60 | 0.15-0.35 | wool,leather
+#color# striped-rib varsity jacket | 0.60 | 0.15-0.35 | wool,leather
 #color# teddy coat | 0.55 | 0.15-0.35 | acrylic,fleece
 #color# puffer vest | 0.60 | 0.15-0.35 | nylon,polyester
 #color# oversized flannel overshirt | 0.55 | 0.15-0.35 | cotton

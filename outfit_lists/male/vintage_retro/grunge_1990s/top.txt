@@ -2,7 +2,7 @@
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
 # casual
-band tee | 0.50 | 0.0-0.2 | cotton
+band tee with "{ECHO|VOID|PULSE}" logo | 0.50 | 0.0-0.2 | cotton
 ringer tee | 0.40 | 0.0-0.2 | cotton
 brushed button-up | 0.55 | 0.0-0.3 | flannel
 thermal henley | 0.45 | 0.0-0.3 | cotton,knit

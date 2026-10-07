@@ -3,7 +3,7 @@
 
 # casual
 patched backpack | 0.30 | 0.0-0.3 | cotton,denim
-band merch tote | 0.25 | 0.0-0.3 | cotton
+tote with abstract band-style graphic | 0.25 | 0.0-0.3 | cotton
 crossbody pouch | 0.25 | 0.0-0.3 | cotton,faux leather
 chained sling bag | 0.25 | 0.0-0.3 | faux leather
 studded shoulder bag | 0.20 | 0.0-0.3 | faux leather

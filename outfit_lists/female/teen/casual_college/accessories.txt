@@ -1,7 +1,7 @@
 # slot: accessories
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-campus lanyard with ID badge | 0.55 | 0.15-0.35 | nylon,plastic
+campus lanyard with plain blank ID badge | 0.55 | 0.15-0.35 | nylon,plastic
 claw hair clip | 0.75 | 0.10-0.30 | plastic
 scrunchie on wrist | 0.70 | 0.10-0.30 | cotton
 stud earrings | 0.55 | 0.15-0.35 | metal

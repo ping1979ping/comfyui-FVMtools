@@ -6,7 +6,7 @@ surfboard graphic | 0.4 | top,bag | 0.0-0.2
 tie-dye gradient | 0.5 | top,bottom | 0.0-0.2
 palm tree silhouette | 0.4 | top,bag | 0.0-0.2
 ocean color block | 0.4 | top,bottom,outerwear | 0.0-0.2
-surf brand logo | 0.5 | top,headwear,bag | 0.0-0.2
+surf brand wave emblem | 0.5 | top,headwear,bag | 0.0-0.2
 neon racing stripes | 0.3 | top,bottom | 0.0-0.2
 sun ray graphic | 0.3 | top | 0.0-0.2
 beach scene print | 0.3 | top,bottom | 0.0-0.2

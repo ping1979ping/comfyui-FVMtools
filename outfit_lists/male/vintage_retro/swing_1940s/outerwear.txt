@@ -4,7 +4,7 @@
 # casual
 A-2 flight jacket | 0.45 | 0.0-0.3 | leather
 jean chore coat | 0.40 | 0.0-0.3 | denim
-varsity jacket | 0.40 | 0.1-0.4 | wool,leather
+striped-rib varsity jacket with leather sleeves | 0.40 | 0.1-0.4 | wool,leather
 
 # mid-casual
 sport coat | 0.50 | 0.3-0.6 | tweed,wool

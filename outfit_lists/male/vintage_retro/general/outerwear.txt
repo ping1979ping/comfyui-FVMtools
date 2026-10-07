@@ -4,7 +4,7 @@
 # casual
 denim jacket | 0.45 | 0.0-0.3 | denim
 leather jacket | 0.50 | 0.1-0.4 | leather
-varsity jacket | 0.40 | 0.1-0.4 | wool,leather,cotton
+striped-rib varsity jacket with leather sleeves | 0.40 | 0.1-0.4 | wool,leather,cotton
 
 # mid-casual
 harrington jacket | 0.45 | 0.2-0.5 | cotton

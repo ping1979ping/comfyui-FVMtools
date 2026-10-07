@@ -3,7 +3,7 @@
 
 #color# oversized pullover hoodie | 0.95 | 0.0-0.2 | cotton,fleece
 #color# slouchy crewneck sweatshirt | 0.90 | 0.0-0.2 | cotton,fleece
-#color# baggy graphic tee | 0.85 | 0.0-0.2 | cotton
+#color# baggy tee with abstract line-art graphic | 0.85 | 0.0-0.2 | cotton
 #color# cropped sweatshirt | 0.75 | 0.0-0.2 | cotton,fleece
 #color# loose lounge tee | 0.85 | 0.0-0.2 | cotton
 #color# soft long-sleeve top | 0.80 | 0.0-0.2 | cotton

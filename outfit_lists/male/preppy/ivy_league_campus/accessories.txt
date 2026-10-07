@@ -10,7 +10,7 @@ backpack strap | 0.30 | 0.1-0.3 | canvas
 # mid-casual
 classic belt | 0.60 | 0.3-0.7 | leather,suede
 dress watch | 0.50 | 0.3-0.7 | metal,leather
-club tie | 0.45 | 0.4-0.7 | grosgrain,silk
+striped club tie | 0.45 | 0.4-0.7 | grosgrain,silk
 crested tie | 0.40 | 0.4-0.7 | grosgrain,silk
 striped tie | 0.40 | 0.4-0.7 | silk,grosgrain
 

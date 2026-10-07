@@ -8,4 +8,4 @@ cozy plaid | 0.55 | bottom,outerwear | 0.0-0.2
 checkered pattern | 0.40 | top,outerwear | 0.0-0.2
 faded gradient | 0.40 | top | 0.0-0.2
 two-tone color-block | 0.55 | top,outerwear | 0.0-0.2
-vintage band graphic | 0.50 | top | 0.0-0.2
+vintage concert-crowd silhouette graphic | 0.50 | top | 0.0-0.2

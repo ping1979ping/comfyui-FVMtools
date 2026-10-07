@@ -1,6 +1,6 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
 satin sheen | 0.35 | top,accessories | 0.4-0.7
-minimal monogram | 0.30 | top,accessories | 0.4-0.6
+minimal monogram "{A|M|S}" | 0.30 | top,accessories | 0.4-0.6
 city stripe | 0.30 | top | 0.4-0.6
 subtle tonal print | 0.30 | top | 0.4-0.6
 rooftop skyline | 0.20 | top | 0.4-0.6

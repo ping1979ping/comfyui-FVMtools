@@ -1,10 +1,10 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-brand logo | 0.5 | top,headwear,bag | 0.1-0.4
-sport logo | 0.3 | top,headwear | 0.1-0.4
+small abstract brand emblem | 0.5 | top,headwear,bag | 0.1-0.4
+sport running-figure emblem | 0.3 | top,headwear | 0.1-0.4
 racing stripes | 0.3 | top,bottom,outerwear | 0.0-0.3
 reflective detail | 0.3 | top,outerwear,footwear | 0.1-0.4
 abstract graphic | 0.3 | top | 0.1-0.4
-minimal logo | 0.4 | top,headwear,bag | 0.2-0.5
+small abstract geometric emblem | 0.4 | top,headwear,bag | 0.2-0.5
 color-block pattern | 0.4 | top,bottom,outerwear | 0.1-0.4
 mesh panel | 0.3 | top | 0.0-0.3
 geometric pattern | 0.2 | top,bottom | 0.1-0.4

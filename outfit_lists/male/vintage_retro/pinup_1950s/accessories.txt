@@ -9,7 +9,7 @@ chain wallet | 0.35 | 0.0-0.3 | metal
 # mid-casual
 horn-rim glasses | 0.45 | 0.2-0.6 | metal
 slim suspenders | 0.35 | 0.2-0.6 | leather
-varsity letterman pin | 0.30 | 0.1-0.4 | metal
+varsity letterman pin reading "{A|M|W}" | 0.30 | 0.1-0.4 | metal
 
 # formal
 silken necktie | 0.50 | 0.4-0.8 | silk

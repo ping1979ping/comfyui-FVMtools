@@ -9,4 +9,4 @@ cherry print | 0.25 | top | 0.45-0.65
 bedazzled motif | 0.25 | top,bottom | 0.45-0.7
 faded wash | 0.25 | bottom,outerwear | 0.45-0.65
 holographic finish | 0.25 | top,outerwear | 0.45-0.7
-y2k logo | 0.20 | top | 0.45-0.65
+y2k chrome star emblem | 0.20 | top | 0.45-0.65

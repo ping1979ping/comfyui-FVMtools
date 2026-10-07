@@ -1,7 +1,7 @@
 # slot: accessories
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-festival lanyard | 0.65 | 0.0-0.2 | nylon
+festival lanyard with colorful geometric pattern | 0.65 | 0.0-0.2 | nylon
 mud-stained wristbands | 0.55 | 0.0-0.1 | cotton,plastic
 classic round shades | 0.50 | 0.0-0.2 | metal,plastic
 bandana neckscarf | 0.45 | 0.0-0.2 | cotton
