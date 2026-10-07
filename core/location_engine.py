@@ -14,6 +14,12 @@ Mirrors the data-format conventions of ``core/outfit_engine.py`` and
     elements like time_of_day / weather).
   * ``texture`` is a free-form phrase or ``"-"``.
   * Lines starting with ``#`` and blank lines are ignored.
+  * ``{a|b|c}`` brackets (full JB wildcard syntax, incl. weights ``{%3%a|b}``
+    and empty options ``{|a}``) may appear in ``name`` and ``texture``. The
+    ``|`` inside braces does not split fields. They are resolved once per
+    draw from a seed-derived RNG, so the shared RNG stream is untouched and
+    output stays deterministic. Use them for text on signs, e.g.
+    ``wall sign reading "{EXIT|ENTRANCE|WAY OUT}"``.
 
 The ``prompt_fragment`` string is built with ``#ambient_light#`` or
 ``#shadow_tone#`` tokens still embedded — the LocationCombiner resolves
@@ -24,9 +30,15 @@ from __future__ import annotations
 
 import os
 import random
+import re
 from typing import Optional
 
 from .smp.defaults import DEFAULT_LOCATION_LAYERS
+
+try:
+    from .jb.wildcards import resolve_text as _resolve_text
+except ImportError:  # pragma: no cover - direct import outside the package
+    from core.jb.wildcards import resolve_text as _resolve_text
 
 
 ELEMENT_ORDER = [
@@ -133,6 +145,35 @@ def _parse_coverage(token: str) -> tuple[float, float]:
         return (0.0, 0.0)
 
 
+def _split_fields(line: str) -> list[str]:
+    """Split a list line on ``|`` — except inside ``{...}`` brackets."""
+    parts, buf, depth = [], [], 0
+    for ch in line:
+        if ch == "{":
+            depth += 1
+        elif ch == "}" and depth:
+            depth -= 1
+        if ch == "|" and depth == 0:
+            parts.append("".join(buf).strip())
+            buf = []
+        else:
+            buf.append(ch)
+    parts.append("".join(buf).strip())
+    return parts
+
+
+_WS_RE = re.compile(r" {2,}")
+
+
+def _resolve_braces(text: Optional[str], seed: int, element_id: str) -> Optional[str]:
+    """Resolve ``{a|b}`` brackets in ``text`` (no-op when there are none)."""
+    if not text or "{" not in text:
+        return text
+    resolved, _ = _resolve_text(text, seed, None, salt=element_id)
+    resolved = _WS_RE.sub(" ", resolved)
+    return re.sub(r"\s+([,.])", lambda m: m.group(1), resolved).strip()
+
+
 def load_location_elements(element_id: str, location_set: str) -> list[dict]:
     """Load entries for a single element file in a location set.
 
@@ -154,7 +195,7 @@ def load_location_elements(element_id: str, location_set: str) -> list[dict]:
             line = raw.strip()
             if not line or line.startswith("#"):
                 continue
-            parts = [p.strip() for p in line.split("|")]
+            parts = _split_fields(line)
             if len(parts) < 2:
                 continue
             name = parts[0]
@@ -333,13 +374,15 @@ def generate_location_records(seed: int, location_set: str = "indoor/american_ev
             "layer_depth":    region_hint_template.get("layer_depth", layer),
         }
 
-        prompt_fragment = _build_fragment(element_id, chosen["name"], chosen["texture"])
+        name = _resolve_braces(chosen["name"], seed, element_id)
+        texture = _resolve_braces(chosen["texture"], seed, element_id + ".texture")
+        prompt_fragment = _build_fragment(element_id, name, texture)
 
         elements_out[element_id] = {
-            "name":            chosen["name"],
+            "name":            name,
             "probability":     chosen["probability"],
             "coverage":        round(coverage, 4),
-            "texture":         chosen["texture"],
+            "texture":         texture,
             "layer":           layer,
             "prompt_fragment": prompt_fragment,
             "region_hint":     region_hint,
