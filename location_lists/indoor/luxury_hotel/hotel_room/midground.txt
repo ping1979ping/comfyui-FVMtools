@@ -2,7 +2,7 @@
 # format: name | probability | coverage_range | texture
 
 room service tray on a low ottoman | 0.55 | 0.05-0.15 | polished silver cloche
-pair of monogrammed robes on hooks | 0.6 | 0.1-0.25 | plush white waffle cotton
+pair of white robes on hooks | 0.6 | 0.1-0.25 | plush white waffle cotton
 armchair and ottoman by the balcony | 0.55 | 0.15-0.35 | linen upholstery in cream
 chilled champagne in a silver ice bucket | 0.5 | 0.05-0.15 | condensation beading the metal
 fresh flower arrangement on the console | 0.6 | 0.05-0.15 | tropical blooms in a low vase

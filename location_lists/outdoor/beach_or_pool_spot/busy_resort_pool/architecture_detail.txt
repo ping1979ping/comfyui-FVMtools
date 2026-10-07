@@ -4,7 +4,7 @@
 deck tile too hot for bare feet | 0.55 | 0.15-0.35 | hop-inducing
 infinity edge sheeting over | 0.45 | 0.1-0.25 | glass lip
 underwater bench along one wall | 0.45 | 0.1-0.25 | submerged shelf
-depth tiles worn smooth | 0.4 | 0.03-0.1 | numberless markers
+depth tiles worn smooth | 0.4 | 0.03-0.1 | plain blue marker tiles
 gutter slots sipping the chop | 0.45 | 0.05-0.15 | rhythmic slurp
 umbrella sockets in the deck | 0.4 | 0.02-0.08 | brass rings
 outdoor shower on a teak square | 0.45 | 0.05-0.15 | rinse ritual

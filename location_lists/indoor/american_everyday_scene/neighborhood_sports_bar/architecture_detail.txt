@@ -6,9 +6,9 @@ brick pillar with shelf | 0.6 | 0.05-0.15 | painted brick support
 TV mounting bracket arm | 0.65 | 0.02-0.1 | black swing-out steel arm
 wood wainscot wall paneling | 0.75 | 0.05-0.2 | stained lower wall boards
 hanging pendant bar lamp | 0.8 | 0.05-0.15 | dim glass-shade fixture
-red exit-sign over door | 0.6 | 0.02-0.08 | glowing illuminated sign
+red exit-sign over door | 0.6 | 0.02-0.08 | glowing illuminated sign reading "{EXIT|WAY OUT}"
 diamond-pane front window | 0.55 | 0.05-0.15 | leaded glass with neon reflection
 tin-tile ceiling section | 0.5 | 0.05-0.2 | embossed pressed-metal squares
 chrome foot rail along bar | 0.7 | 0.03-0.1 | polished brass-colored tube
 swinging kitchen door | 0.6 | 0.05-0.15 | round porthole in steel panel
-stained-glass beer-logo window | 0.4 | 0.03-0.1 | colored panel with lager emblem
+stained-glass hop-cone window | 0.4 | 0.03-0.1 | colored panel with golden hop and barley emblem

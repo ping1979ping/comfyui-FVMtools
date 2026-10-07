@@ -10,4 +10,4 @@ faux-stone fireplace surround | 0.55 | 0.4-0.8 | cultured-stone veneer
 sliding-glass door to backyard | 0.6 | 0.3-0.6 | smudged double pane
 vinyl-blind covered picture window | 0.7 | 0.3-0.6 | white plastic horizontal slats
 wood-look paneling half wall | 0.5 | 0.4-0.8 | dated brown thin sheet
-crooked-canvas Marshall's print | 0.6 | 0.3-0.6 | inspirational text on canvas
+crooked-canvas Marshall's print | 0.6 | 0.3-0.6 | abstract watercolor landscape on canvas

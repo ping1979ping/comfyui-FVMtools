@@ -8,6 +8,6 @@ white painted MDF baseboard | 0.85 | 0.1-0.25 | scuffed trim along carpet
 HVAC vent in ceiling tile | 0.85 | 0.05-0.15 | aluminum louver
 thermostat plate on wall | 0.7 | 0.02-0.05 | white plastic touchscreen
 sprinkler head from ceiling | 0.6 | 0.02-0.05 | brass nozzle
-emergency exit sign red glow | 0.7 | 0.05-0.1 | illuminated plastic sign
+red illuminated exit sign | 0.7 | 0.05-0.1 | plastic sign reading "{EXIT|WAY OUT|EXIT HERE}"
 sliding glass receptionist window | 0.85 | 0.1-0.25 | small framed pass-through
 solid-core swinging treatment door | 0.6 | 0.1-0.25 | painted slab with hardware

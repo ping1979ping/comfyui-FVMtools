@@ -12,6 +12,6 @@ floor-mounted power outlet strip | 0.45 | 0.05-0.15 | recessed brass plate
 gum-stained floor tile patch | 0.35 | 0.05-0.1 | dark speckled residue
 water bottle rolled under seat | 0.55 | 0.05-0.15 | clear plastic bottle
 shoe scuff marks on step | 0.4 | 0.05-0.15 | grey rubber streaks
-crumpled handout page on floor | 0.5 | 0.05-0.15 | discarded printed sheet
+crumpled handout page on floor | 0.5 | 0.05-0.15 | discarded crumpled sheet
 cable channel taped along floor | 0.4 | 0.05-0.2 | gaffer-taped cord run
 loose binder paper under desk | 0.45 | 0.05-0.15 | scattered notebook sheet

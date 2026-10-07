@@ -3,12 +3,12 @@
 
 stickers on the shelter glass | 0.55 | 0.02-0.1 | half-peeled stickers
 cigarette ends by the bench | 0.45 | 0.02-0.08 | trodden filters
-advertising poster in a frame | 0.6 | 0.1-0.3 | sun-bleached print
-timetable page behind glass | 0.65 | 0.05-0.2 | curled paper
+advertising poster in a frame | 0.6 | 0.1-0.3 | sun-bleached photo print
+pale paper sheet behind glass | 0.65 | 0.05-0.2 | curled paper with faint grid lines
 coffee cup left on the bench | 0.45 | 0.03-0.1 | stained lid
-free newspaper on the seat | 0.5 | 0.05-0.15 | creased newsprint
+folded newsprint on the seat | 0.5 | 0.05-0.15 | creased pale newsprint
 chewing gum marks on the paving | 0.4 | 0.02-0.08 | flattened grey spots
-graffiti tag on the panel | 0.4 | 0.05-0.15 | marker scrawl
-ticket in a gloved hand | 0.35 | 0.02-0.06 | printed slip
+marker scribble on the panel | 0.4 | 0.05-0.15 | looping abstract marker scribbles
+paper slip in a gloved hand | 0.35 | 0.02-0.06 | small pale slip
 bottle in the bin opening | 0.35 | 0.02-0.08 | scratched plastic
-leaflet stuck to the wet slab | 0.3 | 0.02-0.06 | soaked paper
+paper sheet stuck to the wet slab | 0.3 | 0.02-0.06 | soaked paper

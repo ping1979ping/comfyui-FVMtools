@@ -10,6 +10,6 @@ upper-deck jogging-track rail | 0.7 | 0.3-0.6 | painted railing band
 glass-windbreak panel row | 0.85 | 0.3-0.6 | tinted curved transparent shield
 cabin balcony stack rows | 0.85 | 0.4-0.8 | repeated white tiered cells
 bridge wing observation pod | 0.5 | 0.1-0.3 | extended steel platform
-ship-name lettering panel | 0.6 | 0.2-0.5 | bold painted typographic
+ship-side hull stripe panel | 0.6 | 0.2-0.5 | bold painted color bands
 parasail tow-line distant boat | 0.5 | 0.2-0.4 | tiny tug pulling sail
-themed funnel logo emblem | 0.6 | 0.1-0.3 | painted bright graphic
+themed funnel wave emblem | 0.6 | 0.1-0.3 | painted bright wave-and-sun graphic

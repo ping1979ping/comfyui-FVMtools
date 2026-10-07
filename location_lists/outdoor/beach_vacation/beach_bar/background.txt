@@ -12,6 +12,6 @@ tiki torch row along the roofline | 0.65 | 0.5-0.75 | flame-topped stakes
 distant palm tree line past the dunes | 0.6 | 0.5-0.8 | leaning silhouettes
 sunset sky bleeding over the water | 0.75 | 0.6-0.95 | orange-pink wash
 open-sided pavilion frame against the sky | 0.65 | 0.6-0.9 | post-and-beam skeleton
-hand-painted menu board mounted on the back wall | 0.7 | 0.3-0.6 | chalky lettered plank
+hand-painted board mounted on the back wall{| reading "{MENU|DRINKS|TIKI BAR}"} | 0.7 | 0.3-0.6 | chalky painted plank
 rope-and-post frontage framing the bar | 0.55 | 0.4-0.7 | knotted nautical rail
 straw-fringed roofline against the sky | 0.55 | 0.45-0.75 | dangling thatch tassels

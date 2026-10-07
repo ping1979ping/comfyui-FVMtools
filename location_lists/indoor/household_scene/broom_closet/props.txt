@@ -11,5 +11,5 @@ spare lightbulb pack | 0.65 | 0.05-0.1 | molded plastic case
 hanging spray-bottle holder | 0.6 | 0.05-0.15 | wall-mounted clip rack
 floor wax can | 0.6 | 0.05-0.15 | metal lidded cylinder
 glass jar of clothespins | 0.6 | 0.05-0.1 | clear lidded vessel
-labeled storage tin | 0.65 | 0.05-0.1 | painted small canister
+lidded storage tin | 0.65 | 0.05-0.1 | painted small canister
 folded utility apron | 0.6 | 0.05-0.15 | washed canvas drape

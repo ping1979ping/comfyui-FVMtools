@@ -2,9 +2,9 @@
 # format: name | probability | coverage_range | texture
 
 retro turquoise tile wainscoting | 1.0 | 0.5-0.9 | glossy ceramic chevron
-vintage neon menu sign | 0.85 | 0.3-0.6 | glowing tube-letter buzz
+vintage neon sign reading "{DINER|EAT|OPEN}" | 0.85 | 0.3-0.6 | glowing tube-letter buzz
 chrome-edged service counter | 0.9 | 0.4-0.8 | polished bright metal lip
-framed Americana road posters | 0.75 | 0.3-0.6 | printed faded route maps
+framed Americana road posters | 0.75 | 0.3-0.6 | faded highway illustrations
 checkerboard linoleum floor | 0.85 | 0.4-0.8 | black-white square pattern
 jukebox marquee lit | 0.75 | 0.3-0.6 | bubble-tube colored panels
 red-vinyl booth bench wall | 0.95 | 0.4-0.8 | tufted glossy upholstery

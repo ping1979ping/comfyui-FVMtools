@@ -7,9 +7,9 @@ shelves of beer steins | 0.8 | 0.4-0.8 | pewter-lidded stoneware mugs
 back-bar glass shelves | 0.7 | 0.4-0.8 | bottles of schnapps in amber light
 tiled ceramic stove corner | 0.55 | 0.3-0.6 | green glazed Kachelofen
 coffered timber ceiling | 0.7 | 0.5-0.9 | dark beams with nicotine-yellow plaster
-brewery emblem mirror wall | 0.6 | 0.3-0.6 | gilded logo on smoked glass
+ornamental emblem mirror wall | 0.6 | 0.3-0.6 | {gilded crest|gilded stag silhouette|gilded hop-vine ornament} on smoked glass
 stag-antler trophy wall | 0.5 | 0.3-0.6 | mounted horns over panelling
 leaded glass front window | 0.65 | 0.4-0.7 | diamond panes with curtain half-drawn
-framed club-banner wall | 0.55 | 0.3-0.6 | embroidered pennants and photographs
+framed club pennant wall | 0.55 | 0.3-0.6 | embroidered plain-colored pennants and photographs
 wooden beer barrel row | 0.5 | 0.3-0.6 | oak kegs stacked behind bar
-chalkboard daily-specials board | 0.6 | 0.3-0.5 | handwritten Schnitzel and Pils prices
+chalkboard daily-specials board | 0.6 | 0.3-0.5 | {chalk-smudged slate with simple doodled icons|slate with chalk drawings of a schnitzel and a beer glass|slate with one chalked word "{SCHNITZEL|PILS|TODAY}"}

@@ -14,4 +14,4 @@ bug net hat | 0.45 | 0.05-0.15 | mesh-covered head guard
 compass on lanyard | 0.55 | 0.05-0.1 | navigational tool
 trail-snack zippered pouch | 0.55 | 0.05-0.15 | small carry pouch
 nature journal sketchbook | 0.5 | 0.05-0.15 | spiral-bound notebook
-plant identification card pack | 0.5 | 0.05-0.1 | guide card deck
+plant illustration card pack | 0.5 | 0.05-0.1 | deck of illustrated cards

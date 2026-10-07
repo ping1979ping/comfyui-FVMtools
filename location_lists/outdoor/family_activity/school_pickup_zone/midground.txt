@@ -10,7 +10,7 @@ crossing guard standing post | 0.55 | 0.1-0.3 | reflective vest figure
 benches outside school doors | 0.6 | 0.2-0.5 | painted slatted seats
 backpack pile on ground | 0.55 | 0.1-0.3 | stacked colorful schoolbags
 clusters of kids leaving school | 0.75 | 0.3-0.6 | walking child group blur
-school pickup numbered signs | 0.5 | 0.2-0.5 | printed parent placards
+school pickup colored placard signs | 0.5 | 0.2-0.5 | parent placards with colored shapes
 school bike rack with bikes | 0.55 | 0.2-0.5 | metal hooped rack
 traffic cones in pickup zone | 0.5 | 0.1-0.3 | orange road markers
 metal handrail along walk | 0.55 | 0.2-0.5 | painted pipe rail

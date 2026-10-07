@@ -9,9 +9,9 @@ resort staff cart stacked with folded towels | 0.65 | 0.2-0.35 | wheeled canvas 
 paddleboard rental rack standing upright | 0.55 | 0.2-0.35 | slotted wooden frame
 shaded double cabana with tie-back curtains | 0.6 | 0.25-0.45 | draped white linen bay
 cluster of kayaks lined on the sand | 0.5 | 0.2-0.4 | color-matched hull row
-resort welcome sign on carved wood posts | 0.4 | 0.2-0.3 | routed lettering board
+resort welcome sign{| reading "{WELCOME|BEACH|RESORT}"} on carved wood posts | 0.4 | 0.2-0.3 | routed wooden board
 row of tiki torches along the beach walkway | 0.45 | 0.2-0.3 | bamboo-wrapped posts
-water-sports kiosk with laminated price board | 0.45 | 0.2-0.3 | propped menu placard
+water-sports kiosk with laminated pictogram board | 0.45 | 0.2-0.3 | propped placard with simple icons
 raked-sand path leading up to the pool deck | 0.4 | 0.2-0.3 | combed access lane
 stack of folded pool floats behind the hut | 0.4 | 0.2-0.3 | bundled vinyl rings
 beach wheelchair parked at the boardwalk ramp | 0.3 | 0.2-0.3 | balloon-tired frame

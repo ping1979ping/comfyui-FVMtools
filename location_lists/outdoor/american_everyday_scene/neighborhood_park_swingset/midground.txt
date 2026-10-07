@@ -12,4 +12,4 @@ metal merry-go-round disc | 0.45 | 0.1-0.3 | rusted spinning platform
 park bench with peeling paint | 0.65 | 0.2-0.4 | flaking painted bench
 rubber ground tiles cracked | 0.4 | 0.2-0.4 | sun-faded play tiles
 small dirt patch worn under swings | 0.85 | 0.1-0.3 | bare scuffed dirt
-hopscotch chalk faded on path | 0.4 | 0.1-0.2 | washed-out chalk grid
+faded chalk grid of squares on path | 0.4 | 0.1-0.2 | washed-out chalk boxes

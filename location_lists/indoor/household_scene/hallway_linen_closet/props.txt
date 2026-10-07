@@ -11,5 +11,5 @@ hanger pile clean clothes | 0.7 | 0.1-0.25 | layered fabric items
 folded children-bedding set | 0.7 | 0.05-0.15 | small printed cotton
 spare bath rug rolled | 0.7 | 0.05-0.15 | tightly bound cloth
 extra hanger set | 0.85 | 0.05-0.15 | matched velvet finish
-labeled spice tin set | 0.55 | 0.05-0.1 | painted small canisters
+painted spice tin set | 0.55 | 0.05-0.1 | painted small canisters
 hanging shoe organizer | 0.6 | 0.1-0.25 | fabric pocket strip

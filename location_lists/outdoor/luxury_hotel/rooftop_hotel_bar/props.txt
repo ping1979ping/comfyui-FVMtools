@@ -4,14 +4,14 @@
 coupe glass with garnish | 0.9 | 0.02-0.08 | chilled stem with citrus twist
 copper cocktail shaker | 0.7 | 0.02-0.05 | hammered metal vessel
 flickering glass votive candle | 0.8 | 0.02-0.05 | tiny dancing flame in tumbler
-leather drink menu folder | 0.65 | 0.02-0.08 | embossed cover with gold lettering
+leather drink folder | 0.65 | 0.02-0.08 | embossed cover with gold trim
 champagne bucket on stand | 0.6 | 0.05-0.1 | silver ice bucket with bottle
 folded cashmere guest blanket | 0.6 | 0.05-0.1 | cream wool draped on seat
 smoked old-fashioned tumbler | 0.55 | 0.02-0.05 | amber liquid and large ice cube
 small orchid table arrangement | 0.5 | 0.02-0.08 | white blooms in black vase
 silver oyster tray | 0.45 | 0.02-0.08 | crushed ice with lemon wedges
 cocktail skewer olive dish | 0.45 | 0.02-0.05 | small ceramic bowl
-black bar coaster stack | 0.4 | 0.02-0.05 | slate rounds with logo
+black bar coaster stack | 0.4 | 0.02-0.05 | plain slate rounds
 lit smartphone on table | 0.35 | 0.02-0.05 | glowing screen beside glass
 tray of canapes | 0.5 | 0.05-0.1 | miniature bites on slate
 crystal whiskey decanter | 0.4 | 0.02-0.08 | faceted glass with amber spirit

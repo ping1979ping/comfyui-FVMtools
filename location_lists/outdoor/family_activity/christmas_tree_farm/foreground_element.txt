@@ -11,6 +11,6 @@ red plaid scarf around neck | 0.75 | 0.1-0.25 | woolen tartan textile
 twine bundle for tying tree | 0.65 | 0.05-0.15 | coiled jute cord
 candy cane held in hand | 0.6 | 0.05-0.15 | striped hooked sugar stick
 sap dripping from cut trunk | 0.6 | 0.05-0.15 | sticky amber resin bead
-clipboard with tree price tags | 0.55 | 0.05-0.15 | farm worker order sheet
+clipboard with colored tree tags | 0.55 | 0.05-0.15 | farm worker paper sheet
 pair of leather work gloves | 0.7 | 0.05-0.15 | scuffed brown handwear
 small basket of fresh greens | 0.55 | 0.1-0.25 | wired evergreen sprigs

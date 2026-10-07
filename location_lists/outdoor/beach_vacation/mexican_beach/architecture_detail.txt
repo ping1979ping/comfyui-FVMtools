@@ -11,5 +11,5 @@ thatch-eave shadow line | 0.6 | 0.05-0.15 | fringed palm-frond overhang
 terracotta plant urn rim | 0.5 | 0.02-0.08 | fired clay glazed lip
 rope-lashed palapa joint | 0.55 | 0.02-0.08 | woven natural fiber knot
 mosaic-shell inlay border | 0.45 | 0.02-0.08 | embedded pastel shell pattern
-sunbleached wood signage | 0.45 | 0.02-0.08 | hand-painted faded lettering
+sunbleached wood sign{| reading "{PLAYA|BEACH BAR|TACOS}"} | 0.45 | 0.02-0.08 | faded hand-painted paint
 rough-cut limestone garden edge | 0.5 | 0.05-0.15 | porous cream-toned block

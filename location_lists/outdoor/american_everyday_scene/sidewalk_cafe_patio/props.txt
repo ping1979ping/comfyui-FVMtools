@@ -6,11 +6,11 @@ glass sugar dispenser | 0.5 | 0.01-0.04 | chrome-lidded shaker
 small vase with daisies | 0.7 | 0.02-0.06 | mason jar of wildflowers
 checkered tablecloth corner | 0.6 | 0.03-0.08 | red-and-white gingham
 iced tea in mason jar | 0.65 | 0.02-0.06 | condensation and lemon wedge
-paper menu clipboard | 0.5 | 0.02-0.06 | clipped single page
+wooden clipboard with a plain page | 0.5 | 0.02-0.06 | clipped single sheet
 wire basket of muffins | 0.55 | 0.03-0.08 | blueberry baked goods
 brass watering can | 0.4 | 0.03-0.08 | by the planter
 sleeping dog under table | 0.35 | 0.05-0.12 | golden retriever on pavement
-newspaper and spectacles | 0.4 | 0.02-0.06 | folded local paper
+spectacles resting on a napkin | 0.4 | 0.02-0.06 | folded cloth napkin
 sugar packet caddy | 0.45 | 0.01-0.04 | ceramic holder
 hanging fern basket | 0.6 | 0.03-0.1 | green fronds from awning hook
 parking meter by curb | 0.35 | 0.03-0.08 | old coin-op meter

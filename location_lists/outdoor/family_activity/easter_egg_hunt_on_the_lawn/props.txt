@@ -14,4 +14,4 @@ camera with flash | 0.55 | 0.05-0.15 | family-photo camera
 suspenders on toddler boy | 0.45 | 0.05-0.15 | pastel shoulder straps
 clip-on flower brooch | 0.45 | 0.05-0.05 | small floral pin
 spring umbrella floral print | 0.45 | 0.1-0.3 | unfurled bloom-printed parasol
-event participant ribbon | 0.5 | 0.05-0.1 | printed satin ribbon
+event participant ribbon | 0.5 | 0.05-0.1 | satin ribbon with gold trim

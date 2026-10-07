@@ -9,7 +9,7 @@ hazy september game day sky | 0.75 | 0.5-1.0 | pale blue afternoon backdrop
 scattered fans streaming toward gates | 0.6 | 0.4-0.8 | distant crowd walking in team colors
 stadium gate entrance towers | 0.55 | 0.4-0.7 | brick and glass entry structures
 shade trees bordering the lot | 0.5 | 0.4-0.7 | leafy green canopy along the pavement edge
-elevated press box and scoreboard | 0.6 | 0.4-0.7 | glass box mounted above the stadium rim
+elevated press box and video board | 0.6 | 0.4-0.7 | glass box mounted above the stadium rim
 municipal water tower beyond stadium | 0.4 | 0.3-0.6 | painted tank on tall stilts
 brick campus buildings skyline | 0.45 | 0.3-0.6 | collegiate rooftops beyond the lot
 rows of team pennant banners | 0.55 | 0.3-0.6 | team-colored flags lining a walkway

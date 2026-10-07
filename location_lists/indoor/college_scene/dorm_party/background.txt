@@ -2,7 +2,7 @@
 # format: name | probability | coverage_range | texture
 
 cinderblock wall strung with fairy lights | 0.95 | 0.6-1.0 | painted concrete block with light strand
-taped-up movie and band posters | 0.85 | 0.5-0.9 | curling paper tape-mounted print
+taped-up abstract art posters | 0.85 | 0.5-0.9 | curling paper tape-mounted print
 string lights draped across ceiling | 0.9 | 0.5-0.9 | warm bulb strand looped overhead
 dark window reflecting party lights | 0.7 | 0.4-0.8 | black glass with colored reflection
 painted cinderblock dorm wall | 0.9 | 0.6-1.0 | textured concrete block surface
@@ -15,4 +15,4 @@ closet doors left open in background | 0.45 | 0.3-0.6 | sliding mirrored panel
 whiteboard covered in marker doodles | 0.5 | 0.3-0.6 | scribbled dry-erase surface
 window frame looped with string lights | 0.6 | 0.4-0.7 | glass pane with light strand border
 dark hallway visible through open door | 0.4 | 0.3-0.6 | dim corridor beyond doorway
-black-light poster glowing on wall | 0.4 | 0.3-0.6 | fluorescent pigment print
+black-light poster of abstract swirls glowing on wall | 0.4 | 0.3-0.6 | fluorescent pigment print

@@ -9,5 +9,5 @@ narrow tall painted door | 0.85 | 0.4-0.7 | flush painted leaf
 warm gray painted wall | 0.7 | 0.5-0.9 | softly matte finish
 patterned wallpaper interior | 0.65 | 0.4-0.8 | softly faded print
 sliding pocket door wall | 0.7 | 0.4-0.6 | flush painted leaf
-shelf-edge labeled fronts | 0.7 | 0.3-0.6 | small placard strips
+shelf-edge ribbon trim | 0.7 | 0.3-0.6 | thin colored fabric strips
 small overhead transom slot | 0.55 | 0.2-0.4 | divided pane band

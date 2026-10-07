@@ -3,7 +3,7 @@
 
 large rectangular dining table | 1.0 | 0.4-0.8 | dark wood tabletop
 upholstered dining chairs around | 0.85 | 0.3-0.6 | seated cushioned chairs
-board game laid out flat | 1.0 | 0.3-0.7 | unfolded printed game board
+colorful board game laid out flat | 1.0 | 0.3-0.7 | unfolded game board with path squares
 neat stack of board game boxes | 0.85 | 0.2-0.5 | piled cardboard game boxes
 tray of snacks centered | 0.85 | 0.2-0.5 | platter of munchies
 playing card deck spread | 0.75 | 0.1-0.3 | scattered face-up cards

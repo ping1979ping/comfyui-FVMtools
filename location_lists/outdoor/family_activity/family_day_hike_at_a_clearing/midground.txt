@@ -11,7 +11,7 @@ rock cairn small stack | 0.5 | 0.05-0.2 | balanced stone marker
 campfire ring stone circle | 0.45 | 0.1-0.3 | rocks circle for fire
 toddler in carrier hiking pack | 0.55 | 0.2-0.5 | structured kid backpack carrier
 walking sticks gathered | 0.55 | 0.05-0.2 | natural wood walking aids
-botanical guide book open | 0.45 | 0.05-0.15 | identification field manual
+botanical guide book open to plant drawings | 0.45 | 0.05-0.15 | illustrated field manual
 small daypack with snacks | 0.65 | 0.1-0.3 | smaller carry pack
 binoculars on strap | 0.55 | 0.05-0.15 | optic field glasses
-trail-finder map unfolded | 0.6 | 0.05-0.2 | paper hiking map
+trail-finder map unfolded | 0.6 | 0.05-0.2 | paper sheet with contour lines and colored routes

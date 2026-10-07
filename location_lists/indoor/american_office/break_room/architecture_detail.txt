@@ -7,7 +7,7 @@ backsplash of plain white tile | 0.55 | 0.1-0.3 | coffee-splashed grout
 outlet crowded with plugs | 0.55 | 0.03-0.1 | adapter stack
 door with a push plate | 0.45 | 0.1-0.25 | worn steel plate
 baseboard peeling at the corner | 0.4 | 0.03-0.12 | lifted vinyl strip
-hand-washing sign over the sink | 0.5 | 0.03-0.1 | laminated printout
+hand-washing pictogram over the sink | 0.5 | 0.03-0.1 | laminated printout of hands under a faucet
 thermostat with a plastic lockbox | 0.4 | 0.03-0.1 | scratched cover
 ceiling vent stained grey | 0.4 | 0.05-0.12 | dust-furred louvers
 window sill with dead flies | 0.3 | 0.03-0.1 | chipped paint

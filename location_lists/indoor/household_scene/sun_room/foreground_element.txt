@@ -9,7 +9,7 @@ cascading potted plants | 0.95 | 0.1-0.3 | leafy cascading foliage
 ceramic indoor planter | 0.95 | 0.1-0.25 | rounded glazed vessel
 woven storage basket | 0.85 | 0.1-0.25 | natural reed weave
 folded throw blanket | 0.85 | 0.05-0.15 | softly draped cloth
-stack of garden books | 0.75 | 0.05-0.15 | hardback spine pile
+stack of garden books | 0.75 | 0.05-0.15 | hardback pile with plain cloth spines
 glass watering can | 0.7 | 0.05-0.15 | clear pitcher form
 small ceramic dish set | 0.7 | 0.05-0.15 | matched glazed pair
 hanging macrame planter | 0.7 | 0.1-0.25 | knotted fiber sling

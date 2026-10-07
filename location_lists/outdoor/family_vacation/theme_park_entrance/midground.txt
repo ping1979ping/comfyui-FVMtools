@@ -10,6 +10,6 @@ dancing fountain water jets | 0.6 | 0.3-0.6 | sparkling arched water plumes
 flower-bordered curved path | 0.75 | 0.4-0.7 | mulched bedded blooms
 crowd of arriving families | 0.9 | 0.5-0.9 | diverse summer-clothed figures
 souvenir balloon vendor cart | 0.7 | 0.2-0.5 | tethered helium balloon mass
-park map information board | 0.65 | 0.2-0.5 | laminated graphic panel
+illustrated park map board | 0.65 | 0.2-0.5 | laminated panel with colorful path drawings
 ornate gas lamp post line | 0.7 | 0.3-0.6 | black wrought iron stems
 themed planters topiary shapes | 0.6 | 0.3-0.6 | trimmed boxwood character forms

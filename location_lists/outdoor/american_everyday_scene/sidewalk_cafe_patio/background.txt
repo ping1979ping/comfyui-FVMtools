@@ -3,11 +3,11 @@
 
 brick main-street storefront row | 1.0 | 0.6-1.0 | two-story brick facades with awnings
 striped canvas cafe awning | 0.95 | 0.5-0.9 | scalloped green-and-cream fabric
-old-fashioned cafe window front | 0.85 | 0.5-0.9 | gold-lettered glass with menu board
+old-fashioned cafe window front | 0.85 | 0.5-0.9 | arched glass with gold scrollwork{| and "{CAFE|COFFEE}" in gold lettering} and a small framed board of doodled pastries
 tree-lined main street | 0.8 | 0.5-0.9 | sidewalk maples over parked cars
 historic clock tower down the block | 0.55 | 0.2-0.5 | white-faced brick tower
 hanging flower-basket lamp posts | 0.8 | 0.3-0.7 | cast-iron posts with petunias
 small-town courthouse square glimpse | 0.5 | 0.3-0.7 | limestone building across street
-painted-sign hardware store facade | 0.6 | 0.4-0.8 | faded wall-mural lettering
+hardware store facade with a faded painted mural | 0.6 | 0.4-0.8 | faded wall mural of a giant hammer and wrench
 bunting-draped street scene | 0.55 | 0.4-0.8 | red white and blue flags
 string-light canopy overhead | 0.65 | 0.3-0.7 | warm bulbs on wires

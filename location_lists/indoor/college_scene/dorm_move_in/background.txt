@@ -15,5 +15,5 @@ tall metal wardrobe locker unit | 0.45 | 0.6-0.85 | dented sheet metal
 lofted bunk-style bed frame | 0.5 | 0.65-0.95 | raised steel frame
 dorm mirror mounted on the wall | 0.5 | 0.6-0.8 | streaked reflective glass
 built-in bookshelf column beside the desk | 0.45 | 0.6-0.85 | empty shelf lips
-fire safety placard mounted on the wall | 0.4 | 0.6-0.75 | laminated instructions
-cinderblock corner wall with a faded mascot decal | 0.4 | 0.6-0.8 | peeling vinyl sticker
+fire safety placard with a pictogram diagram | 0.4 | 0.6-0.75 | laminated red and green icons
+cinderblock corner wall with a faded cartoon mascot silhouette decal | 0.4 | 0.6-0.8 | peeling vinyl sticker

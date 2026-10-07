@@ -1,7 +1,7 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-lane markers painted at the start | 0.6 | 0.05-0.2 | numbered blocks
+lane markers painted at the start | 0.6 | 0.05-0.2 | plain colored blocks
 hurdles stacked on the infield | 0.55 | 0.1-0.3 | staggered heights
 walkers in the outside lanes | 0.6 | 0.1-0.3 | steady laps
 water bottles on the bottom bleacher | 0.55 | 0.03-0.1 | team row

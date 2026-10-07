@@ -2,11 +2,11 @@
 # format: name | probability | coverage_range | texture
 
 travel-journal open page | 1.0 | 0.05-0.2 | blank lined paper
-guidebook folded corner | 0.85 | 0.05-0.15 | glossy printed paperback
+paperback folded corner | 0.85 | 0.05-0.15 | glossy cover with a castle photo
 window-streaked raindrop | 0.7 | 0.05-0.15 | trailing water bead
 croissant-flake lap crumb | 0.7 | 0.05-0.1 | golden buttery flake
 fountain-pen capped tip | 0.65 | 0.02-0.08 | shiny narrow nib
-rail-ticket stamped strip | 0.85 | 0.05-0.1 | small printed paper card
+paper rail strip | 0.85 | 0.05-0.1 | small plain card
 sandwich-wrapper paper edge | 0.7 | 0.05-0.15 | crinkled greaseproof paper
 travel-pillow chin-rest | 0.85 | 0.05-0.2 | fluffy U-shape cushion
 hot-tea cup steam | 0.7 | 0.05-0.15 | warm rising vapor curl

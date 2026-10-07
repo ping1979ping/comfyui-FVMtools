@@ -4,7 +4,7 @@
 blue-and-white bunting | 0.7 | 0.0-0.1 | diamond-patterned flags
 wooden pergola roof | 0.5 | 0.0-0.15 | vine-tangled slat frame
 cast-iron lamp post | 0.5 | 0.0-0.1 | black curved fixture
-painted brewery sign | 0.6 | 0.0-0.1 | hanging oval board
+painted brewery sign | 0.6 | 0.0-0.1 | hanging oval board with painted hop emblem{| and the word "{BIER|PROST}"}
 wooden window shutters | 0.45 | 0.0-0.1 | green slatted panels
 timber serving-hatch frame | 0.5 | 0.0-0.1 | carved lintel above kiosk
 stone fountain basin | 0.3 | 0.0-0.15 | mossy bowl with trickle
@@ -12,4 +12,4 @@ wrought-iron garden gate | 0.4 | 0.0-0.1 | scrolled black bars
 tiled roof edge | 0.45 | 0.0-0.1 | terracotta overhang
 hanging flower basket | 0.5 | 0.0-0.1 | red geraniums in wicker
 tree-ring wooden stump seat | 0.3 | 0.0-0.1 | cut round log
-enamel garden-rules sign | 0.3 | 0.0-0.05 | small metal plate
+small enamel pictogram plate | 0.3 | 0.0-0.05 | small metal plate with simple pictogram icons

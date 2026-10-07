@@ -8,6 +8,6 @@ non-slip-tread step pattern | 0.85 | 0.2-0.4 | textured rubber ridges
 queue-line steel cable | 0.85 | 0.1-0.3 | tensioned metal guide
 splash-runoff drain grate | 0.85 | 0.1-0.3 | metal slotted floor cover
 themed-mural wall panel | 0.55 | 0.2-0.4 | painted illustrated scene
-warning-sign frame band | 0.85 | 0.05-0.2 | colored printed metal
+warning pictogram band | 0.85 | 0.05-0.2 | colored metal plate with simple pictogram icons
 support-truss diagonal brace | 0.7 | 0.15-0.3 | painted steel cross-bar
 attendant-booth pitched roof | 0.55 | 0.1-0.3 | painted wood pitched cover

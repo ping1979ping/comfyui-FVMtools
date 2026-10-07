@@ -1,7 +1,7 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-dining table covered in party tablecloth | 1.0 | 0.4-0.8 | printed disposable cover
+dining table covered in party tablecloth | 1.0 | 0.4-0.8 | polka-dot disposable cover
 tiered birthday cake centerpiece | 0.95 | 0.2-0.5 | frosted layered confection
 clusters of helium balloons tied to chairs | 0.9 | 0.3-0.7 | floating latex bunch
 party hat stack on table | 0.7 | 0.1-0.3 | conical paper crowns

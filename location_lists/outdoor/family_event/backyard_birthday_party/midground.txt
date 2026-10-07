@@ -3,7 +3,7 @@
 
 folding table with birthday cake | 1.0 | 0.3-0.6 | white-clothed party dessert table
 pinata hanging from tree branch | 0.9 | 0.2-0.5 | suspended papier-mache figure
-banner strung between two posts | 0.85 | 0.2-0.5 | printed happy birthday bunting
+banner strung between two posts{| reading "{HAPPY BIRTHDAY|PARTY}"} | 0.85 | 0.2-0.5 | colorful triangle pennant bunting
 gift table piled with presents | 0.8 | 0.2-0.5 | wrapped-box collection surface
 folding chairs arranged in rows | 0.65 | 0.2-0.5 | stacked plastic seating
 cornhole board game set | 0.6 | 0.2-0.5 | angled wooden toss boards

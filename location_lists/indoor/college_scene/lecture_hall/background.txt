@@ -13,5 +13,5 @@ painted concrete rear wall | 0.65 | 0.6-1.0 | smooth grey concrete
 suspended acoustic ceiling far above | 0.8 | 0.6-1.0 | grid-mounted tile field
 built-in chalkboard sliding panel | 0.4 | 0.5-0.8 | green slate panel
 flat panel display mounted high | 0.55 | 0.4-0.7 | black bezel screen
-lecture hall crest banner wall | 0.4 | 0.4-0.7 | printed vinyl banner
+lecture hall banner wall with a heraldic crest | 0.4 | 0.4-0.7 | vinyl banner with a plain emblem
 side wall of built-in cabinetry | 0.5 | 0.5-0.8 | laminate storage doors

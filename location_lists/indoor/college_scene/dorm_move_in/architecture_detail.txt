@@ -4,7 +4,7 @@
 wall-mounted thermostat unit | 0.6 | 0.02-0.08 | beige plastic housing
 cinderblock grout lines running in rows | 0.55 | 0.05-0.15 | mortar seams
 door closer arm mounted above the frame | 0.45 | 0.02-0.06 | hydraulic hinge bar
-room number placard on the door | 0.5 | 0.02-0.05 | engraved plastic plate
+room number placard on the door | 0.5 | 0.02-0.05 | plain engraved-look plate
 light switch plate by the entry | 0.45 | 0.02-0.05 | worn toggle switch
 sprinkler head set in the ceiling tile | 0.4 | 0.02-0.05 | recessed brass nozzle
 exposed conduit pipe along the ceiling edge | 0.35 | 0.03-0.08 | painted metal run

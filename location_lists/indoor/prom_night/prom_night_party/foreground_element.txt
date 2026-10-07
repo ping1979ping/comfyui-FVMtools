@@ -6,7 +6,7 @@ scattered confetti across the floor | 0.7 | 0.1-0.3 | metallic paper flecks
 fallen balloon resting on floor | 0.55 | 0.1-0.3 | deflating latex sphere
 spilled punch splash near table edge | 0.4 | 0.1-0.2 | pink liquid droplet spatter
 discarded corsage box on chair | 0.4 | 0.1-0.2 | small clear plastic case
-crumpled napkin near refreshment table | 0.45 | 0.1-0.2 | printed paper napkin heap
+crumpled napkin near refreshment table | 0.45 | 0.1-0.2 | dotted paper napkin heap
 dropped glow stick bracelet | 0.4 | 0.1-0.2 | neon plastic bangle
 fog haze drifting across the floor | 0.7 | 0.2-0.4 | low rolling machine mist
 light beam pool cast on floor | 0.65 | 0.2-0.4 | colored spotlight patch

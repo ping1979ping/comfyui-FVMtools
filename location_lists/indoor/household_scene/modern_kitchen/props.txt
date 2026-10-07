@@ -10,6 +10,6 @@ ceramic dish drying rack | 0.65 | 0.1-0.25 | stacked stoneware plates
 glass olive oil cruet | 0.7 | 0.05-0.15 | clear slim bottle
 stand mixer on counter | 0.6 | 0.1-0.25 | enameled curved housing
 small succulent in concrete pot | 0.7 | 0.05-0.15 | sculpted grey planter
-recipe tablet on stand | 0.55 | 0.05-0.15 | propped glass screen
+video tablet on stand | 0.55 | 0.05-0.15 | propped glass screen with a looping cooking video
 folded apron on hook | 0.6 | 0.05-0.15 | washed cotton drape
 hanging pot rail with utensils | 0.6 | 0.1-0.25 | brushed steel hooks

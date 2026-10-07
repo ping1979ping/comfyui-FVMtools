@@ -4,7 +4,7 @@
 green industrial dumpster | 0.95 | 0.3-0.6 | dented painted steel bin
 blue recycling dumpster | 0.7 | 0.2-0.5 | scuffed blue plastic bin
 wood-slat dumpster enclosure | 0.75 | 0.3-0.6 | weathered painted wood panels
-painted parking line numbered spots | 0.7 | 0.2-0.4 | faded yellow numbers on asphalt
+painted parking lines between spots | 0.7 | 0.2-0.4 | faded yellow stripes on asphalt
 condenser unit row on concrete pad | 0.7 | 0.2-0.4 | rusty beige AC units
 gas meter cluster on wall | 0.55 | 0.1-0.3 | painted gray metering banks
 electric meter bank panel | 0.5 | 0.1-0.3 | rows of glass-faced meters

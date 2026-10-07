@@ -11,5 +11,5 @@ croissant on a plate with butter curl | 0.55 | 0.04-0.12 | flaky golden crust
 dappled shadow of leaves on the table | 0.45 | 0.1-0.3 | moving light spots
 silver teapot with a steam wisp | 0.45 | 0.05-0.15 | polished curved spout
 trailing ivy at the frame edge | 0.35 | 0.05-0.15 | glossy dark leaves
-open menu with a pressed flower | 0.3 | 0.03-0.1 | cream card paper
+open cream card folder with a pressed flower | 0.3 | 0.03-0.1 | cream card paper
 fallen blossom petals on the stone floor | 0.4 | 0.05-0.15 | scattered pale pink

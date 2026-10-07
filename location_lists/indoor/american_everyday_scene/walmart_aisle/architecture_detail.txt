@@ -9,5 +9,5 @@ loss-prevention mirror corner | 0.6 | 0.05-0.15 | convex round mirror
 sprinkler pipe along ceiling | 0.75 | 0.1-0.3 | red painted steel run
 yellow safety bollard at endcap | 0.7 | 0.05-0.15 | painted post bumper
 floor-marker line at aisle edge | 0.65 | 0.05-0.15 | painted yellow stripe
-"associate help" ceiling banner | 0.55 | 0.1-0.2 | hanging vinyl sign
-emergency exit sign red | 0.7 | 0.05-0.1 | illuminated plastic sign
+hanging vinyl ceiling banner{| reading "{HELP|SERVICE}"} | 0.55 | 0.1-0.2 | suspended blue vinyl panel
+red illuminated exit sign | 0.7 | 0.05-0.1 | plastic sign reading "{EXIT|WAY OUT|EXIT HERE}"

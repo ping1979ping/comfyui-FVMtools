@@ -13,6 +13,6 @@ half-empty soda bottle | 0.6 | 0.05-0.15 | plastic carbonated drink bottle
 deck of playing cards | 0.45 | 0.05-0.1 | scattered card set
 portable charger tangled in cords | 0.4 | 0.02-0.08 | small battery brick with cable
 glowing lava lamp on shelf | 0.45 | 0.05-0.15 | swirling colored wax light
-string of college pennant flags | 0.5 | 0.05-0.15 | triangular felt banner strand
+string of plain triangular pennant flags | 0.5 | 0.05-0.15 | felt banner strand
 bowl of chips on table | 0.55 | 0.05-0.15 | plastic bowl of snacks
 disposable camera on table | 0.4 | 0.02-0.08 | plastic single-use camera

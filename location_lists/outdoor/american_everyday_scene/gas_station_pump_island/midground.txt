@@ -5,7 +5,7 @@ row of fuel pumps under canopy | 1.0 | 0.4-0.8 | scuffed plastic pump housings
 parked pickup truck at pump | 0.7 | 0.3-0.6 | dusty domestic vehicle
 sedan with door open mid-fueling | 0.55 | 0.2-0.5 | sun-faded paint
 air pump and vacuum station | 0.5 | 0.2-0.4 | yellow free-standing unit
-ice freezer chest outside store | 0.6 | 0.2-0.4 | white branded cooler
+ice freezer chest outside store | 0.6 | 0.2-0.4 | white cooler
 propane tank exchange cage | 0.5 | 0.2-0.4 | green metal rack
 windshield squeegee buckets | 0.6 | 0.1-0.3 | grimy black plastic
 overflowing roadside trash can | 0.55 | 0.1-0.3 | dented steel barrel

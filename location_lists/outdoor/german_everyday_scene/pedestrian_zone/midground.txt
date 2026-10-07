@@ -7,7 +7,7 @@ planted tub in the middle of the street | 0.65 | 0.1-0.3 | concrete tub
 bench along the paving | 0.6 | 0.15-0.4 | slatted timber
 market stall at the corner | 0.45 | 0.2-0.5 | striped canopy
 bin beside the bench | 0.6 | 0.05-0.2 | dented metal
-A-board with the day's offer | 0.6 | 0.05-0.2 | chalked board
+A-board outside the shop | 0.6 | 0.05-0.2 | chalked board with doodled coffee cup{| and the word "{OPEN|TODAY|MENU}"}
 pram pushed along the street | 0.4 | 0.1-0.3 | worn fabric hood
 delivery trolley by a doorway | 0.4 | 0.1-0.3 | steel frame
 fountain surround in the square | 0.35 | 0.2-0.5 | wet stone rim

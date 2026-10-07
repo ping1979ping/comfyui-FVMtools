@@ -5,7 +5,7 @@ fluorescent ceiling grid lights | 1.0 | 0.3-0.6 | recessed troffer fixtures
 drop ceiling with stained tiles | 1.0 | 0.3-0.6 | yellowed acoustic squares
 linoleum cafeteria floor tile | 1.0 | 0.4-0.8 | grey speckled vinyl
 PA intercom speaker high on wall | 0.7 | 0.05-0.1 | beige perforated grate
-emergency exit sign red glow | 0.7 | 0.05-0.1 | illuminated plastic
+red glowing exit sign | 0.7 | 0.05-0.1 | illuminated plastic sign reading "{EXIT|WAY OUT}"
 HVAC vent on ceiling | 0.75 | 0.1-0.2 | aluminum louver
 security camera dome corner | 0.6 | 0.05-0.1 | smoked plastic bubble
 sprinkler heads dotting ceiling | 0.55 | 0.05-0.15 | brass pendant nozzles

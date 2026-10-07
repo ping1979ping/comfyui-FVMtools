@@ -7,7 +7,7 @@ hull rub-rail trim strip | 0.7 | 0.05-0.2 | vinyl protective edge band
 navigation light housing | 0.55 | 0.02-0.1 | small red-green lens fixture
 deck drain scupper hole | 0.5 | 0.02-0.08 | round through-hull opening
 gunwale non-skid molding | 0.65 | 0.05-0.15 | textured raised edge pattern
-transom name-plaque lettering | 0.5 | 0.02-0.1 | painted vinyl boat name
+transom trim stripe{| with a name decal reading "{SEA BREEZE|LUCKY DAY|SALTY}"} | 0.5 | 0.02-0.1 | painted vinyl decal
 bow rail stanchion base | 0.7 | 0.05-0.15 | welded tubular metal foot
 hatch latch fastener detail | 0.55 | 0.02-0.08 | flush stainless twist latch
 antenna whip mount base | 0.45 | 0.02-0.08 | flexible radio aerial fitting

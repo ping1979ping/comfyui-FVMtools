@@ -5,7 +5,7 @@ curling iron still warm | 0.75 | 0.02-0.1 | faint heat shimmer
 makeup brushes fanned on the dresser | 0.75 | 0.02-0.12 | bristles various sizes
 corsage box with a clear lid | 0.7 | 0.02-0.1 | ribbon looped around it
 boutonniere pin case | 0.5 | 0.02-0.06 | small velvet box
-phone propped against the mirror | 0.65 | 0.02-0.08 | screen lit with messages
+phone propped against the mirror | 0.65 | 0.02-0.08 | screen lit with a soft glow
 shoe boxes with tissue paper | 0.6 | 0.05-0.15 | lids stacked aside
 bobby pin tin left open | 0.55 | 0.02-0.06 | scattered pins
 hairspray can on the dresser | 0.7 | 0.02-0.08 | sticky cap ring

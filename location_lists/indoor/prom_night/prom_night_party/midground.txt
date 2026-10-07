@@ -11,8 +11,8 @@ glowing dance floor tile grid | 0.6 | 0.3-0.5 | lit-panel flooring section
 photo booth prop stand corner | 0.5 | 0.2-0.4 | costume prop rack nook
 speaker tower stack beside stage | 0.55 | 0.2-0.4 | tall black PA cabinet pair
 cocktail table cluster with linens | 0.55 | 0.2-0.4 | tall draped standing tables
-chaperone check-in table near wall | 0.45 | 0.2-0.4 | supervised registration table
+chaperone table near wall | 0.45 | 0.2-0.4 | supervised folding table with a cash box and wristbands
 gift table with keepsake favors | 0.4 | 0.2-0.4 | small favor display table
-king and queen crowning stage riser | 0.5 | 0.2-0.5 | raised platform with banner
+king and queen crowning stage riser | 0.5 | 0.2-0.5 | raised platform with draped fabric
 cotton candy vendor cart on wheels | 0.4 | 0.2-0.4 | vintage rolling treat cart
 coat check rack near the entrance | 0.4 | 0.2-0.4 | hanging garment rail

@@ -5,7 +5,7 @@ layered palm-frond thatch roofing | 0.8 | 0.08-0.2 | overlapping dried leaves
 bamboo pole bar framing with lashed joints | 0.6 | 0.03-0.12 | sisal-bound canes
 driftwood bar front with carved fish | 0.45 | 0.03-0.1 | silvered wood relief
 hanging woven rattan pendant lamps | 0.5 | 0.02-0.08 | open-weave globes
-painted wooden menu board with chalk | 0.45 | 0.01-0.06 | slate black surface
+painted wooden board with chalk doodles of fish and waves | 0.45 | 0.01-0.06 | slate black surface
 rope handrail along the sand ramp | 0.4 | 0.02-0.08 | thick natural twine
 capiz shell chimes under the eave | 0.35 | 0.01-0.05 | translucent shell discs
 raised timber deck platform | 0.5 | 0.05-0.15 | sun-bleached planks

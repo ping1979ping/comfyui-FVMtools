@@ -4,7 +4,7 @@
 cast-iron ceiling fan | 0.4 | 0.0-0.1 | slow dark blades
 white-and-green tile border | 0.7 | 0.0-0.15 | glazed band at wall mid-height
 dark exposed timber beam | 0.7 | 0.0-0.2 | hand-hewn oak overhead
-painted shopfront gold lettering | 0.65 | 0.0-0.1 | arched Baeckerei script on glass
+painted shopfront with gold lettering reading "{BÄCKEREI|BROT|KAFFEE}" | 0.65 | 0.0-0.1 | arched gold script on glass
 brass coat hook rail | 0.55 | 0.0-0.1 | row of polished pegs
 etched glass door panel | 0.5 | 0.0-0.1 | frosted floral pattern
 vintage pendant globe lamp | 0.75 | 0.0-0.1 | warm opal glass hanging light

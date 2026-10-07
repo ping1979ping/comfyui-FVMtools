@@ -10,6 +10,6 @@ built-in room safe with a keypad | 0.45 | 0.02-0.06 | brushed steel faceplate
 bedside USB-C charging ports | 0.5 | 0.01-0.05 | discreetly wired into the lamp base
 marble bathroom vanity backsplash | 0.5 | 0.03-0.1 | veined stone against the mirror
 gold-trimmed light switch plates | 0.4 | 0.01-0.04 | brushed metal surround
-velvet-ribboned do-not-disturb tag | 0.45 | 0.01-0.04 | tasseled hanging cord
-in-room climate control panel | 0.4 | 0.01-0.04 | backlit touch display
+velvet-ribboned door hanger | 0.45 | 0.01-0.04 | tasseled hanging cord{| reading "{QUIET|PRIVACY}"}
+in-room climate control panel | 0.4 | 0.01-0.04 | backlit touch panel with soft glowing icons
 inlaid wood detailing on the closet doors | 0.4 | 0.02-0.08 | subtle marquetry pattern

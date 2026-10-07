@@ -9,6 +9,6 @@ corner altar shelf with a plant | 0.5 | 0.1-0.3 | pothos trailing down
 coat hooks by the door | 0.55 | 0.1-0.3 | jackets and tote bags
 cubby shelf full of shoes | 0.6 | 0.15-0.35 | sneakers toed in
 string lights along the ceiling edge | 0.45 | 0.1-0.3 | warm dots
-class schedule board by the door | 0.5 | 0.1-0.25 | dry-erase grid
+dry-erase board by the door | 0.5 | 0.1-0.25 | wiped-clean grid with a few faint colored marker blocks
 folded blankets in a stack | 0.55 | 0.1-0.3 | wool edges aligned
 speaker on a stand in the corner | 0.45 | 0.05-0.15 | cable taped down

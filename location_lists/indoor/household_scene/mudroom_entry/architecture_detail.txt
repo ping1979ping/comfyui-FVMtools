@@ -10,4 +10,4 @@ arched cubby openings | 0.65 | 0.2-0.4 | softly rounded recess
 flush ceiling fixture | 0.85 | 0.1-0.3 | painted pendant cap
 front door transom panel | 0.7 | 0.2-0.4 | divided glass strip
 beadboard ceiling planks | 0.65 | 0.3-0.6 | painted board grid
-custom labeled cubby plates | 0.65 | 0.05-0.15 | small name placards
+colored cubby marker plates | 0.65 | 0.05-0.15 | small enamel tags

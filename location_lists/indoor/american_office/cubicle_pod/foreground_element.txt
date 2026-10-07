@@ -9,6 +9,6 @@ phone checked below desk level | 0.5 | 0.05-0.15 | screen glow on the lap
 lanyard hanging over the shirt | 0.55 | 0.05-0.15 | swinging badge
 stretching back from the keyboard | 0.5 | 0.1-0.3 | arms behind the head
 stack of folders carried past | 0.45 | 0.1-0.25 | papers sliding
-sticky note held up to read | 0.4 | 0.03-0.1 | scribbled reminder
+sticky note held up | 0.4 | 0.03-0.1 | blank yellow square with a pen-doodled arrow
 cardigan pulled against the AC | 0.5 | 0.1-0.3 | sleeves pushed up
 birthday cake slice on a paper plate | 0.35 | 0.05-0.12 | plastic fork

@@ -7,7 +7,7 @@ distant scattered playing dogs | 0.85 | 0.3-0.7 | varied breed silhouettes
 shaded tree corner | 0.7 | 0.3-0.6 | mature canopy shade
 double-gate entrance vestibule | 0.65 | 0.2-0.5 | airlock-style gate area
 distant dog owners standing | 0.7 | 0.2-0.5 | grouped human figures
-park signage with rules | 0.55 | 0.1-0.3 | mounted regulation board
+park signage with dog pictograms | 0.55 | 0.1-0.3 | mounted board with simple icons
 agility equipment far end | 0.55 | 0.2-0.5 | weave poles and tunnel
 water station with bowls | 0.55 | 0.2-0.4 | spigot and bowls
 benches around perimeter | 0.65 | 0.2-0.5 | wooden seating along fence

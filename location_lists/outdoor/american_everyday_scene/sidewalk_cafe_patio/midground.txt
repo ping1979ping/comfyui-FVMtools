@@ -6,8 +6,8 @@ mesh-back metal patio chairs | 0.9 | 0.25-0.45 | painted iron seats
 planter boxes with geraniums | 0.9 | 0.2-0.4 | wooden boxes spilling red blooms
 patio umbrella over table | 0.7 | 0.25-0.45 | cream canvas parasol
 low wrought-iron patio railing | 0.8 | 0.2-0.4 | black fence with scrollwork
-chalkboard A-frame menu sign | 0.8 | 0.15-0.3 | hand-lettered daily specials
+chalkboard A-frame sign{| reading "{MENU|SPECIALS|COFFEE}"} | 0.8 | 0.15-0.3 | chalk doodles of cups and pastries
 couple sharing coffee and pie | 0.65 | 0.2-0.4 | relaxed diners at corner table
 waitress with tray of lemonades | 0.55 | 0.2-0.4 | apron-clad server on patio
 bike leaning on bike rack | 0.5 | 0.15-0.3 | cruiser with wicker basket
-old man reading a newspaper | 0.45 | 0.2-0.35 | patron with coffee mug at small table
+old man relaxing with a coffee | 0.45 | 0.2-0.35 | patron with coffee mug at small table

@@ -4,7 +4,7 @@
 frozen drink sweating on a ledge | 0.55 | 0.02-0.06 | umbrella garnish
 goggles collection by a family camp | 0.5 | 0.02-0.06 | strap pile
 inflatable unicorn on patrol | 0.5 | 0.03-0.12 | absurd majesty
-paperback fattening with humidity | 0.45 | 0.01-0.05 | deck-chair novel
+paperback fattening with humidity | 0.45 | 0.01-0.05 | plain-cover deck-chair novel
 waterproof speaker doing too much | 0.4 | 0.01-0.05 | contested playlist
 dive rings glinting on the bottom | 0.5 | 0.02-0.08 | scattered targets
 kids' crocs in a bright heap | 0.5 | 0.02-0.06 | molded pile

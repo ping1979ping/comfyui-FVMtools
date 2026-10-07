@@ -11,7 +11,7 @@ butter stick partly unwrapped | 0.7 | 0.05-0.15 | yellow block with paper
 brown sugar packed in cup | 0.7 | 0.05-0.15 | molded amber sugar
 vanilla bottle being poured | 0.65 | 0.05-0.15 | brown liquid stream
 whisk laden with whipped egg | 0.7 | 0.05-0.15 | wire whisk with froth
-recipe card stained with batter | 0.55 | 0.05-0.15 | spotted handwritten card
+index card stained with batter | 0.55 | 0.05-0.15 | spotted card with smudges
 oven mitt holding hot pan | 0.7 | 0.1-0.25 | quilted heat-protective glove
 finished frosted cupcake held | 0.75 | 0.05-0.2 | swirled icing topped treat
 sprinkle jar tipping out | 0.7 | 0.05-0.15 | colorful sugar bits cascade

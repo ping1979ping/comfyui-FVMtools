@@ -1,7 +1,7 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-round Stammtisch table | 1.0 | 0.3-0.5 | heavy oak with brass regulars sign
+round Stammtisch table | 1.0 | 0.3-0.5 | heavy oak with a small brass {emblem plate|stag plaque|plate reading "STAMMTISCH"}
 worn wooden pub chairs | 0.9 | 0.3-0.5 | high-backed seats with scuffed legs
 bar stools along counter | 0.9 | 0.3-0.5 | leather-topped swivel seats
 group of men drinking beer | 0.65 | 0.3-0.5 | seated regulars with half-litre glasses

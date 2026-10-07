@@ -3,12 +3,12 @@
 
 cast-iron storefront column | 0.7 | 0.05-0.15 | painted green fluted post
 corbelled brick cornice | 0.65 | 0.05-0.2 | stepped decorative brick top
-gold-leaf window lettering | 0.7 | 0.03-0.1 | arched cafe name on glass
+gold-leaf {arched window lettering reading "{CAFE|COFFEE|BAKERY}"|scrollwork flourish on the glass} | 0.7 | 0.03-0.1 | arched gold-leaf design on glass
 wooden screen door with spring | 0.5 | 0.05-0.15 | slatted frame and brass handle
 tin awning rod and bracket | 0.55 | 0.02-0.08 | iron arm holding canvas
 transom window above doorway | 0.5 | 0.03-0.1 | small rectangular glass pane
-brass door bell plate | 0.4 | 0.01-0.05 | engraved Open sign
-projecting hanging blade sign | 0.65 | 0.03-0.1 | painted wooden cafe emblem
+brass door bell plate | 0.4 | 0.01-0.05 | polished brass plate with a round button
+projecting hanging blade sign | 0.65 | 0.03-0.1 | painted wooden emblem of a steaming cup
 painted brick pilaster | 0.45 | 0.05-0.15 | cream vertical pier
 decorative downspout and scupper | 0.35 | 0.02-0.08 | black metal rainwater run
 stone window sill with flowers | 0.55 | 0.03-0.1 | carved ledge and pot

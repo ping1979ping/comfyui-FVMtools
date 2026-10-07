@@ -2,10 +2,10 @@
 # format: name | probability | coverage_range | texture
 
 plain painted living room wall | 1.0 | 0.5-0.9 | flat emulsion in off-white
-shelf with books and photos | 0.85 | 0.3-0.6 | mismatched spines
+shelf with books and photos | 0.85 | 0.3-0.6 | mismatched plain colored spines
 window with curtains half open | 0.8 | 0.2-0.5 | plain lined curtains
 television on the wall | 0.75 | 0.2-0.5 | dusty dark screen
-framed prints hung slightly crooked | 0.6 | 0.2-0.5 | cheap poster frames
+framed abstract prints hung slightly crooked | 0.6 | 0.2-0.5 | cheap plain frames
 patterned wallpaper on one wall | 0.45 | 0.3-0.6 | dated repeating pattern
 doorway through to the hall | 0.55 | 0.2-0.5 | painted frame
 sideboard against the wall | 0.6 | 0.25-0.55 | veneer with ring marks

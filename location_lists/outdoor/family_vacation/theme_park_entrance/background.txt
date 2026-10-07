@@ -9,7 +9,7 @@ overhead tram cable line | 0.6 | 0.3-0.7 | thin steel suspension cable
 sky-blue painted facade buildings | 0.7 | 0.5-0.9 | smooth pastel rendered wall
 striped circus tent peak | 0.55 | 0.3-0.7 | red and white canvas stripes
 distant ferris wheel rim | 0.8 | 0.4-0.8 | colored gondola circle
-themed clock tower face | 0.65 | 0.3-0.6 | gilded ornate roman numerals
-billboard welcome sign painted | 0.75 | 0.4-0.7 | airbrushed cartoon mural
+themed clock tower face | 0.65 | 0.3-0.6 | gilded ornate clock face with simple tick marks
+painted entrance billboard | 0.75 | 0.4-0.7 | airbrushed cartoon mural with a banner reading "{WELCOME|HELLO|FUN}"
 park map kiosk roof | 0.5 | 0.2-0.5 | shingled wooden canopy
 souvenir shop facade row | 0.7 | 0.4-0.8 | candy-colored wood paneling

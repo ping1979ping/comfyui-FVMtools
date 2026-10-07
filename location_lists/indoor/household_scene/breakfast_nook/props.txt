@@ -9,7 +9,7 @@ sugar bowl and creamer | 0.85 | 0.05-0.15 | matched glazed pair
 small framed photo on shelf | 0.85 | 0.05-0.15 | matted print
 candle in glass holder | 0.7 | 0.05-0.1 | small clear vessel
 plant on windowsill | 0.85 | 0.05-0.15 | small terracotta pot
-folded morning newspaper | 0.7 | 0.05-0.15 | spread paper sheets
+pressed cloth napkin stack | 0.7 | 0.05-0.15 | soft folded cotton
 butter dish with lid | 0.7 | 0.05-0.1 | small ceramic vessel
 basket of pastries | 0.7 | 0.1-0.25 | natural reed weave
-chalkboard menu sign | 0.6 | 0.1-0.25 | framed slate panel
+small chalkboard easel | 0.6 | 0.1-0.25 | framed slate panel with {simple chalk doodles|a chalked word "{COFFEE|EGGS|TEA}"}

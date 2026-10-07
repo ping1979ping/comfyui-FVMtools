@@ -6,7 +6,7 @@ Edison bulb pendant cluster | 0.8 | 0.05-0.15 | warm glowing filaments on cords
 arched brick window opening | 0.6 | 0.05-0.15 | curved masonry with deep sill
 tin-tile ceiling patch | 0.5 | 0.05-0.15 | embossed painted squares
 cast-iron radiator under window | 0.5 | 0.05-0.1 | chunky ribbed enamel
-hand-painted shop door sign | 0.55 | 0.02-0.1 | cursive gold on glass
+gilded shop door glass | 0.55 | 0.02-0.1 | gold scrollwork on glass{| with the word "{COFFEE|CAFE|OPEN}"}
 pegboard wall rack | 0.45 | 0.05-0.15 | mugs hung on dowels
 steel track light rail | 0.5 | 0.05-0.1 | adjustable black spotlights
 original wooden door frame | 0.4 | 0.05-0.1 | chipped teal paint

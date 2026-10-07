@@ -2,14 +2,14 @@
 # format: name | probability | coverage_range | texture
 
 floss giveaway bowl on counter | 0.85 | 0.05-0.1 | mini packs in bowl
-"please sign in" laminated sign | 0.85 | 0.02-0.05 | small printed plate
-HIPAA notice frame on wall | 0.7 | 0.05-0.15 | framed printed text
+laminated counter sign{| reading "{SIGN IN|WELCOME|HELLO}"} | 0.85 | 0.02-0.05 | small printed plate
+ornate framed wall panel | 0.7 | 0.05-0.15 | gold-edged frame around a pale blank card
 small toy box in kids' corner | 0.7 | 0.05-0.15 | plastic bin of pieces
 dusty silk-flower arrangement | 0.7 | 0.05-0.15 | fake stems in vase
-"insurance accepted" sign | 0.7 | 0.05-0.1 | framed logo grid
+framed emblem-grid panel | 0.7 | 0.05-0.1 | grid of small generic colorful emblems
 pediatric tooth-character poster | 0.55 | 0.05-0.15 | cartoon dental art
 appointment-book pen on counter | 0.85 | 0.02-0.05 | bank-style chained pen
-brochure on gum disease | 0.7 | 0.05-0.1 | trifold glossy pamphlet
-candy-bowl-with-sugar-free disclaimer | 0.55 | 0.05-0.1 | bowl of wrapped mints
+trifold illustrated pamphlet | 0.7 | 0.05-0.1 | glossy folds with tooth diagrams
+candy bowl on counter | 0.55 | 0.05-0.1 | bowl of wrapped mints
 office-staff photo board | 0.55 | 0.1-0.2 | corkboard with portraits
-"now welcoming new patients" sign | 0.7 | 0.05-0.15 | small standee placard
+small standee placard{| reading "{WELCOME|HELLO|SMILE}"} | 0.7 | 0.05-0.15 | tabletop easel board

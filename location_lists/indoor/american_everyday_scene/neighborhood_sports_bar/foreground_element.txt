@@ -8,6 +8,6 @@ basket of wings on table | 0.9 | 0.15-0.35 | red-sauce chicken in paper-lined ba
 sweating pint glass close-up | 0.8 | 0.1-0.3 | condensation on frosty lager
 checkered-pattern tile aisle | 0.5 | 0.15-0.35 | black and white linoleum
 loaded nacho platter | 0.65 | 0.15-0.3 | melted cheese over chips
-stack of laminated menus | 0.5 | 0.1-0.25 | sticky plastic folders
+stack of sticky plastic folders | 0.5 | 0.1-0.25 | laminated covers with food photos
 pool cue chalk and rail | 0.55 | 0.1-0.25 | blue chalk cube on wooden rail
 tabletop of empty bottles | 0.55 | 0.15-0.3 | amber glass and crumpled napkins

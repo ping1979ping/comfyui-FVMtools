@@ -10,6 +10,6 @@ jukebox neon floor reflection | 0.5 | 0.1-0.25 | colored glow on tile
 red-and-white tile border | 0.45 | 0.1-0.2 | contrasting stripe near counter base
 stool foot-rest gleam | 0.5 | 0.05-0.15 | circular chrome bar near floor
 window sunlight bar on floor | 0.55 | 0.15-0.3 | slanted light stripes through blinds
-paper placemat with map print | 0.45 | 0.1-0.25 | local ads and trivia border
+paper placemat with map print | 0.45 | 0.1-0.25 | cartoon road-map print with playful icon border
 scuffed black rubber mat | 0.35 | 0.1-0.2 | grooved runner behind counter
 spilled sugar-packet scatter | 0.3 | 0.05-0.1 | pastel paper sleeves

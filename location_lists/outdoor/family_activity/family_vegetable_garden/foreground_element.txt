@@ -11,7 +11,7 @@ pruning shears in hand | 0.7 | 0.05-0.15 | curved-blade clippers
 seedling in plastic pot | 0.65 | 0.05-0.15 | tiny young plant
 strawberry plucked off vine | 0.7 | 0.05-0.15 | red small berry
 clipped basil sprig | 0.6 | 0.05-0.15 | green herb leaves
-sunflower seed packet | 0.55 | 0.05-0.1 | printed paper envelope
+sunflower seed packet | 0.55 | 0.05-0.1 | paper envelope with a sunflower illustration
 zucchini being harvested | 0.65 | 0.05-0.2 | dark green long squash
 yellow flower of squash | 0.55 | 0.05-0.15 | trumpet-shaped bloom
 cherry tomato cluster on vine | 0.7 | 0.05-0.2 | grouped red fruits

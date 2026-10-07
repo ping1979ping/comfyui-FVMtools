@@ -11,4 +11,4 @@ maple tree in the front yard | 0.6 | 0.2-0.5 | shade over the walk
 concrete walk to the driveway | 0.6 | 0.2-0.4 | expansion joint cracks
 foundation shrubs trimmed round | 0.55 | 0.15-0.35 | mulch bed edging
 porch ceiling painted white | 0.5 | 0.15-0.35 | bare bulb fixture
-house numbers by the door | 0.5 | 0.03-0.1 | brushed metal digits
+house number by the door reading "{12|47|208}" | 0.5 | 0.03-0.1 | brushed metal digits

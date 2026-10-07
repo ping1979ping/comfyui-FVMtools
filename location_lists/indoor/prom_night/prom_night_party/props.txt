@@ -6,7 +6,7 @@ glow stick bracelet pile | 0.55 | 0.05-0.15 | neon plastic tube bundle
 crystal punch bowl with ladle | 0.7 | 0.1-0.2 | glass beverage vessel
 tiered dessert display stand | 0.55 | 0.1-0.2 | stacked treat platter
 paper lantern hanging cluster | 0.5 | 0.05-0.15 | round folded paper globe
-printed prom theme banner sign | 0.55 | 0.05-0.15 | vinyl event lettering
+prom theme banner{| reading "{PROM|PROM NIGHT|DANCE}"} | 0.55 | 0.05-0.15 | vinyl banner with painted stars and moons
 table centerpiece with fairy lights | 0.6 | 0.05-0.15 | small lit floral jar
 king and queen crown props | 0.45 | 0.05-0.1 | rhinestone tiara pair
 fog machine unit on floor | 0.5 | 0.05-0.15 | boxy haze generator

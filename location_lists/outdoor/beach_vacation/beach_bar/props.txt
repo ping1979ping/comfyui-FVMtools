@@ -11,7 +11,7 @@ row of rum bottles on the shelf | 0.6 | 0.02-0.08 | amber glass lineup
 ice bucket sweating on the counter | 0.5 | 0.01-0.05 | frosted metal pail
 sunglasses left on the counter edge | 0.45 | 0.01-0.03 | dark plastic frames
 napkin stack pinned under a shell | 0.4 | 0.01-0.03 | fluttering paper square
-chalk stub beside the menu board | 0.4 | 0.01-0.02 | worn white nub
+chalk stub beside the board | 0.4 | 0.01-0.02 | worn white nub
 straw hat hung on a post hook | 0.5 | 0.01-0.04 | woven wide brim
 beaded coaster stack by the taps | 0.4 | 0.01-0.03 | woven fiber discs
 hurricane lamp flickering on the counter | 0.5 | 0.01-0.05 | glass-shielded candle

@@ -12,4 +12,4 @@ adjacent kids splash-zone canopy | 0.75 | 0.3-0.6 | painted spraying structure
 themed shark-mascot tower top | 0.55 | 0.2-0.5 | molded fiberglass character
 distant tube-rental booth roof | 0.5 | 0.2-0.4 | corrugated tin canopy
 park guest crowd silhouettes | 0.75 | 0.4-0.8 | distant bobbing figure mass
-themed-sign safety placard wall | 0.65 | 0.3-0.6 | painted illustrated panels
+safety pictogram panel wall | 0.65 | 0.3-0.6 | painted panels with simple swimmer pictograms

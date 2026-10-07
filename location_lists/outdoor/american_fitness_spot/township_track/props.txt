@@ -2,7 +2,7 @@
 # format: name | probability | coverage_range | texture
 
 stopwatch on a lanyard | 0.5 | 0.02-0.06 | thumb-worn buttons
-interval workout on a sticky note | 0.4 | 0.02-0.05 | sweat-curled paper
+yellow sticky note stuck to the rail | 0.4 | 0.02-0.05 | sweat-curled paper
 resistance bands looped on the fence | 0.45 | 0.02-0.08 | color set
 foam roller on the bottom riser | 0.4 | 0.02-0.08 | post-run ritual
 spikes bag by the start | 0.4 | 0.02-0.08 | drawstring sack

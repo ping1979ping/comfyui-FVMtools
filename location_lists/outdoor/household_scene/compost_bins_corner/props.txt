@@ -12,4 +12,4 @@ empty seed-starter tray | 0.7 | 0.05-0.15 | small black plastic
 garden hose nozzle | 0.7 | 0.05-0.1 | brass fitting tip
 discarded flower pot | 0.7 | 0.05-0.15 | cracked terracotta
 bin-thermometer probe | 0.55 | 0.05-0.1 | small dial gauge
-empty fertilizer bag | 0.6 | 0.05-0.15 | folded plastic sack
+empty fertilizer bag | 0.6 | 0.05-0.15 | folded plain plastic sack

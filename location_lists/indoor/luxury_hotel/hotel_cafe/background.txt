@@ -4,12 +4,12 @@
 sunlit arched cafe windows | 1.0 | 0.6-1.0 | bright street-facing tall glazing
 pastry display wall | 0.95 | 0.6-1.0 | glass cases of golden croissants
 white-tiled espresso counter | 0.9 | 0.6-1.0 | glossy subway tile front
-brass-framed chalkboard menu | 0.8 | 0.5-0.9 | handwritten pale script on slate
+brass-framed chalkboard | 0.8 | 0.5-0.9 | pale chalk {doodled coffee cups and croissants|lettering reading "{MENU|CAFE|COFFEE}"} on slate
 sunny glass conservatory roof | 0.75 | 0.5-0.9 | airy iron-framed skylight
 sage-green plaster wall | 0.7 | 0.5-0.9 | soft matte painted surface
 open patio-door garden view | 0.65 | 0.4-0.8 | potted greenery in daylight
 exposed brick accent wall | 0.55 | 0.4-0.8 | warm weathered red masonry
 floor-to-ceiling bookshelf wall | 0.5 | 0.4-0.8 | cream-spined volumes and plants
-shelved coffee-bean jar wall | 0.5 | 0.3-0.6 | rows of labeled glass canisters
+shelved coffee-bean jar wall | 0.5 | 0.3-0.6 | rows of glass canisters filled with coffee beans
 whitewashed wood-plank wall | 0.5 | 0.3-0.6 | pale horizontal boards
 vintage botanical print gallery | 0.4 | 0.3-0.6 | framed pressed-plant illustrations

@@ -4,7 +4,7 @@
 slice of apple pie on plate | 0.9 | 0.02-0.08 | flaky crust with melting ice cream
 thick white ceramic coffee mug | 0.9 | 0.02-0.05 | steaming black coffee
 tall chocolate milkshake glass | 0.8 | 0.02-0.08 | whipped cream and cherry
-laminated plastic menu | 0.7 | 0.02-0.08 | glossy burger photos
+laminated plastic photo card | 0.7 | 0.02-0.08 | glossy burger photos
 ketchup and mustard squeeze bottles | 0.7 | 0.02-0.05 | red and yellow plastic pair
 chrome napkin dispenser | 0.65 | 0.02-0.05 | pull-through stainless box
 salt and pepper shaker pair | 0.65 | 0.02-0.05 | glass with steel caps
@@ -12,6 +12,6 @@ cheeseburger and fries basket | 0.6 | 0.05-0.1 | paper-lined red tray
 glass sugar pourer | 0.5 | 0.02-0.05 | metal flip-spout jar
 paper-wrapped straw cup | 0.4 | 0.02-0.05 | striped bendy straws
 cherry-topped sundae dish | 0.45 | 0.02-0.08 | footed glass boat
-guest check pad with pencil | 0.5 | 0.02-0.05 | green-lined order slips
-mini jukebox selection card | 0.35 | 0.02-0.05 | typed song strip
+order pad with pencil | 0.5 | 0.02-0.05 | green-lined blank slips
+mini jukebox selection strip | 0.35 | 0.02-0.05 | colorful paper tab strip
 cast-iron skillet of hash browns | 0.4 | 0.05-0.1 | crispy golden potatoes

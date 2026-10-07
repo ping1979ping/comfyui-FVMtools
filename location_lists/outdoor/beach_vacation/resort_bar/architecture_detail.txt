@@ -13,4 +13,4 @@ stone coping along the terrace edge | 0.45 | 0.03-0.1 | rounded cap stones
 string-light hooks along the beam | 0.4 | 0.02-0.06 | small hardware row
 bar-top ice well recessed in the counter | 0.45 | 0.03-0.1 | chilled steel trough
 speed rail bolted under the bar lip | 0.4 | 0.02-0.06 | bottle-neck row
-signage plank burned with the bar's name | 0.4 | 0.02-0.08 | branded timber sign
+burned timber sign plank{| reading "{BAR|LOUNGE|SUNSET}"} | 0.4 | 0.02-0.08 | branded wood grain

@@ -8,7 +8,7 @@ surfboard rack leaning against a post | 0.55 | 0.15-0.3 | fin-out lineup
 hammock strung between two support posts | 0.5 | 0.1-0.3 | sagging woven rope
 beach umbrella cluster near the bar | 0.6 | 0.15-0.35 | tilted striped canopy
 blender station set on the counter end | 0.55 | 0.1-0.25 | frosted glass jar
-chalkboard specials easel by the entrance | 0.55 | 0.1-0.3 | scrawled daily list
+chalkboard easel by the entrance{| reading "{SPECIALS|HAPPY HOUR}"} | 0.55 | 0.1-0.3 | chalk doodles of palms and drinks
 buoy decorations hung along the eave | 0.5 | 0.1-0.25 | painted round floats
 shell garland strung across the counter | 0.5 | 0.1-0.25 | threaded pale beads
 lounge chairs facing the waterline | 0.55 | 0.15-0.35 | low reclined row

@@ -8,7 +8,7 @@ candy-apple coated dip | 0.85 | 0.05-0.15 | glossy red-sugar hardshell
 caramel-corn paper sleeve | 0.7 | 0.05-0.15 | greased twisted parchment
 straw-bit hair fleck | 0.7 | 0.05-0.1 | thin golden particle
 small-bag of apples | 0.7 | 0.05-0.15 | brown paper bag fold
-sticker-bracelet wrist | 0.6 | 0.05-0.1 | adhesive printed strip
+sticker-bracelet wrist | 0.6 | 0.05-0.1 | adhesive strip with colorful pumpkin pictures
 hot-cocoa-mug rim | 0.7 | 0.05-0.15 | speckled enamelware
 hand-painted face stripe | 0.65 | 0.05-0.1 | pumpkin-themed face paint
 pinecone collected handful | 0.55 | 0.05-0.15 | small brown clustered cones

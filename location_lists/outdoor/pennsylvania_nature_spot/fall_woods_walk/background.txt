@@ -10,5 +10,5 @@ fog hanging in the hollow | 0.45 | 0.2-0.5 | soft grey pool
 deer stand in a distant tree | 0.35 | 0.05-0.15 | plywood platform
 laurel thicket staying green | 0.5 | 0.2-0.4 | leathery leaves
 old woods road grade | 0.5 | 0.2-0.45 | double-rut memory
-posted signs along one edge | 0.4 | 0.05-0.15 | purple paint blazes
+purple-painted trees along one edge | 0.4 | 0.05-0.15 | paint stripes on trunks
 squirrel nest high in a fork | 0.4 | 0.05-0.12 | leaf ball

@@ -11,5 +11,5 @@ rain barrel with tap | 0.55 | 0.1-0.25 | barrel with spigot
 arched arbor entry | 0.55 | 0.1-0.3 | painted curved entry
 mounted hose bib spigot | 0.5 | 0.05-0.15 | wall faucet
 weather vane atop shed | 0.4 | 0.05-0.15 | rooster iron arrow
-hand-painted bed sign label | 0.6 | 0.05-0.15 | wood-burned label plaque
+hand-painted bed marker{| reading "{TOMATOES|BEANS|HERBS}"} | 0.6 | 0.05-0.15 | wood-burned marker plaque
 garden bench wooden slats | 0.55 | 0.1-0.3 | painted plank seat

@@ -14,4 +14,4 @@ gravel parking strip with cars | 0.55 | 0.2-0.5 | crushed stone vehicle row
 wreath crafting workbench | 0.6 | 0.2-0.5 | timber assembly table
 candy cane striped poles row | 0.55 | 0.2-0.5 | painted decorative posts
 strung garland between posts | 0.6 | 0.2-0.5 | green roping with red bows
-festively decorated farm sign | 0.65 | 0.2-0.4 | painted hand-lettered placard
+festively decorated farm sign{| reading "{TREES|WELCOME|FARM}"} | 0.65 | 0.2-0.4 | painted wooden placard with garland

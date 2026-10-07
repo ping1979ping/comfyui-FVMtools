@@ -11,5 +11,5 @@ dog water bowl by door | 0.35 | 0.05-0.1 | steel dish on small mat
 spilled coffee-bean scatter | 0.4 | 0.05-0.15 | dark glossy beans on counter
 laptop and notebook spread | 0.5 | 0.15-0.3 | open screen beside scribbled pages
 tiled counter ledge | 0.45 | 0.1-0.2 | hand-painted ceramic tiles
-slate tip-jar shelf | 0.35 | 0.05-0.15 | handwritten thank-you label
+slate tip-jar shelf | 0.35 | 0.05-0.15 | jar with a small chalk-doodled heart
 condensation ring on glass | 0.3 | 0.05-0.1 | wet circle on pane edge

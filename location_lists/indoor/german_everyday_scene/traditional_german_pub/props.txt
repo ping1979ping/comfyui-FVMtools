@@ -3,15 +3,15 @@
 
 tall Weizen glass | 0.8 | 0.0-0.1 | cloudy wheat beer with foam crown
 half-litre beer mug | 0.8 | 0.0-0.1 | thick-handled glass
-pewter-lid stein | 0.55 | 0.0-0.1 | engraved lid and thumb lift
+pewter-lid stein | 0.55 | 0.0-0.1 | ornately patterned lid and thumb lift
 bar towel on tap | 0.5 | 0.0-0.05 | striped cotton cloth
 bowl of salted pretzel sticks | 0.5 | 0.0-0.08 | small ceramic dish
-framed brewery poster | 0.5 | 0.0-0.1 | vintage lithograph advert
-regulars name plaque | 0.45 | 0.0-0.05 | brass plate on table
-bottle of Korn schnapps | 0.45 | 0.0-0.05 | clear glass with label
+framed vintage brewery lithograph | 0.5 | 0.0-0.1 | illustrated dray-horse scene in faded colors
+regulars brass plaque | 0.45 | 0.0-0.05 | small brass plate with {an engraved stag|an engraved hop cone|the word "STAMMTISCH"} on table
+bottle of clear schnapps | 0.45 | 0.0-0.05 | clear glass with a plain colored band
 brass bar bell | 0.4 | 0.0-0.05 | polished closing-time ringer
-glass ashtray with logo | 0.3 | 0.0-0.05 | heavy decorative tray
+heavy glass ashtray | 0.3 | 0.0-0.05 | decorative faceted tray
 stack of playing cards | 0.45 | 0.0-0.05 | worn deck for Skat
-menu card on stand | 0.5 | 0.0-0.05 | laminated list of dishes
+laminated table card stand | 0.5 | 0.0-0.05 | glossy card with {a drawn pretzel and beer icon|a drawn sausage icon|the word "MENU"}
 candle in glass holder | 0.55 | 0.0-0.05 | small flickering table light
 wooden beer crate | 0.35 | 0.0-0.1 | stacked bottle carrier

@@ -1,10 +1,10 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-boarding-pass paper edge | 1.0 | 0.05-0.15 | small printed strip
+narrow paper pass edge | 1.0 | 0.05-0.15 | small strip with a barcode block
 passport-cover thumbed corner | 0.95 | 0.05-0.15 | embossed booklet edge
 disposable-coffee cup lid | 0.85 | 0.05-0.15 | white plastic sip-top
-luggage-tag dangling band | 0.85 | 0.05-0.1 | printed plastic strap
+luggage-tag dangling band | 0.85 | 0.05-0.1 | colored plastic strap
 phone-screen reflection rim | 0.85 | 0.05-0.15 | smooth dark bezel edge
 neck-pillow U-shape rim | 0.85 | 0.05-0.2 | fluffy U-shape cushion
 travel-snack zip-bag corner | 0.7 | 0.05-0.15 | clear sealable plastic

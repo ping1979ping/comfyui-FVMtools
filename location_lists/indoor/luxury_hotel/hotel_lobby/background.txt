@@ -12,6 +12,6 @@ warm limestone reception backdrop | 0.7 | 0.5-0.9 | honed neutral-toned stone
 backlit onyx feature wall | 0.65 | 0.4-0.8 | glowing amber stone panel
 draped silk curtain backdrop | 0.6 | 0.4-0.7 | flowing ivory floor-length fabric
 mezzanine balcony railing line | 0.55 | 0.4-0.7 | wrought-brass ornamental rail
-resort logo brass signage wall | 0.55 | 0.3-0.6 | polished raised lettering panel
+brass resort emblem wall | 0.55 | 0.3-0.6 | polished raised {emblem of a palm and wave|lettering reading "{RESORT|PARADISE|WELCOME}"} panel
 cascading water-wall feature | 0.5 | 0.4-0.7 | sheeting glassy falling water
 sunburst mirror wall array | 0.45 | 0.3-0.6 | radiating gilded frame cluster

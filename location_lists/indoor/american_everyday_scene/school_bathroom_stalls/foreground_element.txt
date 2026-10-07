@@ -10,4 +10,4 @@ gum stuck to mirror corner | 0.5 | 0.02-0.08 | hardened grey wad
 soap puddle dripping from dispenser | 0.7 | 0.05-0.1 | pink viscous bead
 hair clump near drain | 0.45 | 0.02-0.08 | tangled dark strand
 broken phone case on counter | 0.4 | 0.05-0.1 | cracked plastic shell
-sticker on stall door peeling | 0.5 | 0.02-0.08 | curling vinyl tag
+sticker on stall door peeling | 0.5 | 0.02-0.08 | curling blank vinyl star

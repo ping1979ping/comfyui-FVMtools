@@ -10,4 +10,4 @@ chimney with metal cap | 0.45 | 0.1-0.2 | red brick stack
 exposed gutter and downspout | 0.65 | 0.1-0.3 | painted aluminum
 sagging gutter corner | 0.45 | 0.1-0.2 | rust-stained metal
 front porch sconce light | 0.45 | 0.05-0.15 | small wall-mounted fixture
-green house number plaque | 0.4 | 0.05-0.15 | small plastic placard
+green plastic plaque beside the door | 0.4 | 0.05-0.15 | small placard with a decorative leaf border

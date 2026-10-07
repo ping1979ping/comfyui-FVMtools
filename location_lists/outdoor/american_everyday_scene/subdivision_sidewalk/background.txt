@@ -12,4 +12,4 @@ white vinyl picket-style fences | 0.4 | 0.2-0.4 | low decorative fencing
 asphalt subdivision road | 0.9 | 0.4-0.8 | smooth gray pavement
 neighbor American flag on porch | 0.5 | 0.1-0.3 | small mounted flag
 overhead utility wires absent buried | 0.55 | 0.2-0.4 | clean sky lines
-HOA development entry stone monument distant | 0.35 | 0.2-0.4 | landscaped stone sign
+distant development entry stone monument{| carved with "{WELCOME|THE OAKS}"} | 0.35 | 0.2-0.4 | landscaped stone wall with a plaque

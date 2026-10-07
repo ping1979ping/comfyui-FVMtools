@@ -8,7 +8,7 @@ coffee sipped walking the block | 0.55 | 0.05-0.2 | unhurried pace
 dog greeted outside the bakery | 0.5 | 0.05-0.2 | ear scratch crouch
 crosswalk waited at the light | 0.5 | 0.1-0.25 | button pressed twice
 pizza slice folded on the walk | 0.45 | 0.05-0.15 | paper plate flex
-flyer read on the pole | 0.45 | 0.05-0.15 | head tilted
-bench sat with a paper | 0.45 | 0.1-0.3 | county news spread
+passerby studying a pole covered in colorful paper | 0.45 | 0.05-0.15 | head tilted
+bench sat with a paper cup of coffee | 0.45 | 0.1-0.3 | napkin spread
 bakery bag pinched closed | 0.5 | 0.03-0.1 | still warm
 wave through a shop window | 0.45 | 0.05-0.15 | familiar face

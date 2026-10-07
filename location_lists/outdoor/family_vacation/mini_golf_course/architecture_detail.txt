@@ -6,7 +6,7 @@ themed-castle turret crenellation | 0.7 | 0.1-0.3 | painted plaster battlement
 windmill-vane wooden cap | 0.7 | 0.1-0.3 | painted spinning hub
 faux-stone bridge railing | 0.7 | 0.1-0.3 | sculpted resin balustrade
 themed-volcano spout opening | 0.55 | 0.1-0.25 | painted crater rim
-hole-marker numbered plaque | 0.95 | 0.05-0.15 | enameled metal disk
+hole-marker disc plaque | 0.95 | 0.05-0.15 | enameled metal disk with a single painted digit "{3|5|7}"
 themed-pavilion shingled eaves | 0.55 | 0.1-0.3 | overlapping wooden tiles
 arched entry gateway frame | 0.65 | 0.15-0.35 | painted decorative archway
 wooden boardwalk cross-tie | 0.7 | 0.1-0.25 | weathered grey timber

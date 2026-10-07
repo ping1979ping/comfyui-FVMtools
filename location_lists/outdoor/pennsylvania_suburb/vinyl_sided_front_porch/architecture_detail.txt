@@ -11,4 +11,4 @@ lattice skirt under the porch | 0.45 | 0.1-0.25 | diamond gaps
 gutter guard sticking up | 0.35 | 0.03-0.1 | lifted mesh
 hose spigot dripping | 0.4 | 0.02-0.06 | rust streak below
 settlement crack in the walk | 0.4 | 0.05-0.15 | ant hill in the joint
-storm door sticker faded | 0.35 | 0.02-0.06 | security company logo
+storm door sticker faded | 0.35 | 0.02-0.06 | simple shield-shaped decal

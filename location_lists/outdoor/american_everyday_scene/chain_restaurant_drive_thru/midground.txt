@@ -1,8 +1,8 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-backlit drive-thru menu board | 1.0 | 0.3-0.6 | illuminated panel with combo photos
-preview menu board for ordering | 0.7 | 0.2-0.4 | second smaller menu sign
+backlit drive-thru board{| headed "{MENU|ORDER HERE}"} of glowing combo food photos | 1.0 | 0.3-0.6 | illuminated panel with combo photos
+smaller preview board of food photos | 0.7 | 0.2-0.4 | second smaller illuminated panel
 order-speaker post with mic | 0.95 | 0.1-0.3 | dirty plastic speaker housing
 curving drive-thru lane | 0.95 | 0.3-0.6 | asphalt with painted arrows
 drive-thru directional arrow paint | 0.9 | 0.2-0.5 | faded yellow arrow on asphalt
@@ -10,6 +10,6 @@ white painted lane stripe | 0.85 | 0.2-0.5 | scuffed lane marker
 height-restriction bar at entry | 0.55 | 0.1-0.3 | metal bar with chains
 yellow concrete bollards at speaker | 0.7 | 0.1-0.3 | scuffed painted posts
 pickup window with sliding glass | 0.7 | 0.1-0.3 | small drive-thru window
-trash can next to speaker | 0.55 | 0.05-0.15 | dented branded can
+trash can next to speaker | 0.55 | 0.05-0.15 | dented can with a plain color band
 landscape boulder near lane | 0.4 | 0.1-0.2 | decorative gray stone
 yellow no-parking curb stripe | 0.6 | 0.1-0.3 | faded curb paint

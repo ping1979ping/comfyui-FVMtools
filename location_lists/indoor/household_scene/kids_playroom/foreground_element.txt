@@ -6,7 +6,7 @@ foam play mat squares | 0.85 | 0.4-0.9 | colorful interlocking pads
 scattered toy blocks | 0.95 | 0.05-0.2 | wooden colored cubes
 plush stuffed animal pile | 0.95 | 0.1-0.3 | soft fuzzy heap
 crayon scattered set | 0.85 | 0.05-0.15 | colorful waxy sticks
-storybook open on floor | 0.85 | 0.05-0.15 | spread paper pages
+picture book open on floor | 0.85 | 0.05-0.15 | spread pages of colorful illustrations
 toy car collection | 0.85 | 0.05-0.2 | mixed plastic vehicles
 basket of art supplies | 0.85 | 0.1-0.25 | woven contained pile
 dollhouse on floor | 0.7 | 0.1-0.3 | painted miniature structure

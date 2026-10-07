@@ -8,7 +8,7 @@ chain-link park boundary fence | 0.7 | 0.3-0.6 | woven steel mesh
 parking lot at park edge | 0.55 | 0.2-0.5 | small gravel-asphalt lot
 distant pavilion shelter | 0.5 | 0.2-0.4 | open metal-roofed shelter
 neighbor's back yard fence | 0.45 | 0.2-0.5 | wood privacy fence
-small park sign at entry | 0.55 | 0.1-0.3 | painted wood park sign
+small park entry sign{| reading "{PARK|CITY PARK|WELCOME}"} | 0.55 | 0.1-0.3 | painted wood park sign
 distant baseball diamond | 0.4 | 0.2-0.4 | another field beyond fence
 walking path winding through park | 0.6 | 0.2-0.5 | asphalt pedestrian trail
 faded park trash dumpster behind tree | 0.5 | 0.2-0.4 | green steel bin

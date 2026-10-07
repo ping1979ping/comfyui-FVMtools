@@ -10,6 +10,6 @@ neighborhood mailbox | 0.55 | 0.05-0.15 | painted box on post
 porch column close-up | 0.55 | 0.1-0.3 | painted square pillar
 sidewalk seam line | 0.55 | 0.1-0.25 | concrete expansion joint
 crosswalk striped paint | 0.55 | 0.1-0.3 | painted street zebra
-signpost no parking placard | 0.5 | 0.05-0.15 | mounted street sign
+street signpost with red-and-white placard | 0.5 | 0.05-0.15 | mounted street sign with pictogram
 brick steps to porch | 0.55 | 0.1-0.3 | masonry stoop
 wooden saw-horse barricade | 0.55 | 0.1-0.3 | striped traffic barrier

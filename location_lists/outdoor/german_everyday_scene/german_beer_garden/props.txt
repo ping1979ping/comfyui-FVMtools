@@ -6,7 +6,7 @@ Weissbier glass | 0.6 | 0.0-0.1 | tall vase-shaped glass
 radish spirals on plate | 0.5 | 0.0-0.08 | white spiral cut Radi
 wooden pretzel stand | 0.5 | 0.0-0.1 | hooked rack of knots
 mustard pot and bratwurst | 0.55 | 0.0-0.08 | sausages on tin plate
-printed menu board | 0.5 | 0.0-0.1 | chalk lettering on slate
+chalk menu board | 0.5 | 0.0-0.1 | slate board with chalk doodles{| and the word "{MENU|BIER|SPEISEN}"}
 brass tray with mugs | 0.45 | 0.0-0.1 | many empty glasses
 beer-mat coaster pile | 0.4 | 0.0-0.05 | round cardboard disks
 white-and-blue tablecloth | 0.4 | 0.0-0.1 | folded cotton check

@@ -12,4 +12,4 @@ fruit garnish tray with pineapple wedges | 0.5 | 0.05-0.15 | bright cut citrus
 rolled striped towel on the pool edge | 0.5 | 0.05-0.15 | thick cotton ridges
 dripping bare feet on the step ladder | 0.35 | 0.03-0.1 | wet skin and chrome rail
 leaf of a monstera plant at the frame edge | 0.4 | 0.05-0.15 | broad glossy leaf
-paper cocktail menu on a wet tray | 0.35 | 0.02-0.08 | card dotted with water
+blank paper card on a wet tray | 0.35 | 0.02-0.08 | card dotted with water

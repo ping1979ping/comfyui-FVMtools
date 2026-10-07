@@ -4,7 +4,7 @@
 orange life vests stacked in a bin | 0.85 | 0.05-0.15 | piled foam bricks
 coiled tow rope on a metal hook | 0.65 | 0.02-0.08 | thick yellow loop
 parasail harness with buckles undone | 0.6 | 0.02-0.08 | splayed nylon straps
-rental shack pricing sign on an easel | 0.6 | 0.02-0.08 | hand-lettered board
+rental shack sign on an easel{| reading "{RENTALS|JET SKI|SURF}"} | 0.6 | 0.02-0.08 | hand-painted board
 inflatable banana boat tube deflating slightly | 0.5 | 0.05-0.15 | wrinkled yellow skin
 kayak paddle set leaning in a barrel | 0.55 | 0.02-0.08 | crossed blade pair
 dock cleat with a mooring line looped | 0.5 | 0.01-0.04 | worn brass fitting

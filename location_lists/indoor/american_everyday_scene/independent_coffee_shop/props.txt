@@ -2,16 +2,16 @@
 # format: name | probability | coverage_range | texture
 
 ceramic latte mug | 0.9 | 0.02-0.05 | handmade speckled glaze
-glass jar of coffee beans | 0.7 | 0.02-0.08 | dark roast beans with hand label
+glass jar of coffee beans | 0.7 | 0.02-0.08 | dark roast beans with a plain twine-tied tag
 gooseneck pour-over kettle | 0.6 | 0.02-0.08 | matte black spout
 paper to-go cup with sleeve | 0.7 | 0.02-0.05 | brown cardboard grip
 croissant on parchment paper | 0.6 | 0.02-0.08 | flaky buttery layers
 small succulent in tin | 0.5 | 0.02-0.05 | little green rosette
-tote bag with local logo | 0.4 | 0.02-0.08 | canvas hanging from a chair
-stack of used paperbacks | 0.45 | 0.02-0.08 | dog-eared exchange books
+canvas tote bag with bean icon | 0.4 | 0.02-0.08 | canvas hanging from a chair
+stack of used paperbacks | 0.45 | 0.02-0.08 | dog-eared books with plain colored covers
 tiny wooden stir sticks cup | 0.4 | 0.02-0.05 | small pottery holder
 oat milk steaming pitcher | 0.4 | 0.02-0.05 | steel jug with frothed milk
-sticker-covered laptop | 0.45 | 0.05-0.1 | decals on a silver lid
+sticker-covered laptop | 0.45 | 0.05-0.1 | colorful abstract decals on a silver lid
 paper coaster with doodle | 0.3 | 0.02-0.05 | pen sketch on round cardboard
 slice of banana bread | 0.5 | 0.02-0.08 | dense loaf on plate
-hand-lettered specials easel | 0.4 | 0.05-0.1 | chalk sign near entrance
+chalk easel board near entrance | 0.4 | 0.05-0.1 | {doodled coffee cup and leaf drawings|a short line reading "{SPECIALS|TODAY}"}

@@ -1,9 +1,9 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-block party themed t-shirt | 0.85 | 0.1-0.3 | printed neighborhood logo top
+block party themed t-shirt | 0.85 | 0.1-0.3 | cotton top with colorful abstract house-shape graphic
 sun visor with brim | 0.6 | 0.05-0.15 | curved cap brim
-neighborhood association badge | 0.5 | 0.05-0.1 | clipped name tag
+neighborhood association badge | 0.5 | 0.05-0.1 | clipped plain round badge
 plastic boa or feather scarf | 0.45 | 0.1-0.3 | colorful feathered wrap
 glow stick necklace | 0.5 | 0.05-0.15 | luminous tube band
 plastic lei garland | 0.55 | 0.1-0.3 | flower-strung necklace
@@ -13,5 +13,5 @@ camp chair cooler caddy | 0.55 | 0.1-0.25 | seat with built-in storage
 fanny pack waist belt | 0.5 | 0.05-0.15 | strap-mounted small bag
 glittery temporary tattoo | 0.55 | 0.05-0.05 | sparkly skin transfer
 pinwheel spinner toy | 0.55 | 0.05-0.15 | colorful wind-driven toy
-rolled-up potluck recipe card | 0.5 | 0.05-0.1 | handwritten recipe slip
+rolled-up potluck paper slip | 0.5 | 0.05-0.1 | small rolled paper slip
 small donation jar | 0.45 | 0.05-0.15 | clear collection jar

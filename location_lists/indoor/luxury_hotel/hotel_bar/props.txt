@@ -4,7 +4,7 @@
 crystal whiskey tumbler | 0.9 | 0.05-0.15 | cut glass with ice sphere
 silver cocktail shaker | 0.85 | 0.05-0.15 | chilled frosted metal vessel
 tall champagne flute pair | 0.8 | 0.05-0.15 | thin glasses with rising bubbles
-leather cocktail menu | 0.7 | 0.05-0.15 | embossed folded drinks list
+leather cocktail menu | 0.7 | 0.05-0.15 | embossed folded leather folder with {a gold line border|a gold "MENU" stamp|a gold cocktail-glass emblem}
 brass bar jigger | 0.6 | 0.05-0.1 | small hourglass measuring cup
 crystal decanter | 0.65 | 0.05-0.1 | faceted bottle of amber spirit
 citrus peel garnish dish | 0.55 | 0.05-0.1 | curled orange twists in bowl
@@ -14,4 +14,4 @@ single-stem rose bud vase | 0.5 | 0.02-0.08 | slim glass with red bloom
 smoked-glass ashtray tray | 0.4 | 0.02-0.08 | heavy dark glass dish
 silver ice bucket with tongs | 0.5 | 0.02-0.05 | frosted bucket and cubes
 folded linen bar towel | 0.4 | 0.02-0.05 | crisp white cloth on rail
-vintage whiskey bottle | 0.45 | 0.02-0.05 | dusty label amber glass
+vintage whiskey bottle | 0.45 | 0.02-0.05 | dusty amber glass with a faded plain band

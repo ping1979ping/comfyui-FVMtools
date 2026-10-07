@@ -6,9 +6,9 @@ empty cleaned whiteboard | 0.85 | 0.3-0.6 | ghosted marker layers
 projection screen pulled halfway | 0.6 | 0.25-0.5 | wrinkled matte surface
 glass wall to the hallway | 0.6 | 0.3-0.6 | frosted privacy band
 wall-mounted flatscreen | 0.65 | 0.2-0.45 | cable dangling below
-credenza along the back wall | 0.5 | 0.2-0.45 | stacked handouts
+credenza along the back wall | 0.5 | 0.2-0.45 | stacked paper trays
 window with vertical blinds | 0.55 | 0.2-0.5 | half-tilted slats
-company plaque wall | 0.4 | 0.15-0.35 | dusty framed awards
+framed trophy wall | 0.4 | 0.15-0.35 | dusty frames with glass trophies
 conference-phone in the table center | 0.6 | 0.05-0.15 | flat circular unit
-flip chart easel in the corner | 0.45 | 0.1-0.3 | curled used pages
+flip chart easel in the corner | 0.45 | 0.1-0.3 | curled blank pages with faint marker swirls
 clock above the door | 0.5 | 0.05-0.12 | five minutes fast

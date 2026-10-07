@@ -3,8 +3,8 @@
 
 glass pastry display counter | 1.0 | 0.6-1.0 | gleaming case of layered cakes
 wall of wooden bread shelves | 0.95 | 0.6-1.0 | racks of crusty rye loaves
-chalkboard menu wall | 0.85 | 0.5-0.9 | hand-lettered white chalk prices
-street-facing shopfront window | 0.85 | 0.5-0.9 | bright glass with painted bakery lettering
+chalkboard wall with simple doodled pastry drawings | 0.85 | 0.5-0.9 | white chalk drawings of pretzels and cakes
+street-facing shopfront window | 0.85 | 0.5-0.9 | bright glass with painted lettering reading "{BROT|BÄCKEREI|CAFÉ}"
 cream tiled back wall | 0.75 | 0.5-0.9 | glossy white subway tile with green border
 open stone-oven bakery kitchen | 0.6 | 0.4-0.8 | glowing arched oven behind counter
 rustic beamed plaster ceiling | 0.7 | 0.5-0.9 | whitewashed walls with dark timber beams

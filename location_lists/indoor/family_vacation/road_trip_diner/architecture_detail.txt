@@ -10,4 +10,4 @@ brass coat-hook wall row | 0.6 | 0.05-0.2 | small polished hangers
 art-deco trim molding band | 0.55 | 0.1-0.3 | stepped chrome strip
 window-frame painted casing | 0.75 | 0.1-0.3 | aluminum glossy molding
 soda-fountain spigot bank | 0.7 | 0.1-0.25 | chrome row of taps
-themed-wallpaper road-sign print | 0.55 | 0.2-0.4 | repeating retro icons
+themed wallpaper with retro car print | 0.55 | 0.2-0.4 | repeating retro icons

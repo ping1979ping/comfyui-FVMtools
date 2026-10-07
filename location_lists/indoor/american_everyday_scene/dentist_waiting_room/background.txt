@@ -9,5 +9,5 @@ fish tank against wall | 0.55 | 0.3-0.6 | algae-tinged glass aquarium
 beige textured-vinyl wallpaper | 0.7 | 0.5-0.9 | dated grass-cloth print
 kids' corner low partition | 0.85 | 0.3-0.6 | half wall to play nook
 artificial plant in corner | 0.85 | 0.2-0.5 | dusty fake ficus
-"appointment policy" notice wall | 0.6 | 0.2-0.5 | framed laminated rules
+framed pastel picture wall | 0.6 | 0.2-0.5 | tidy rows of framed abstract prints
 small picture window with blinds | 0.7 | 0.2-0.5 | vinyl horizontal slats

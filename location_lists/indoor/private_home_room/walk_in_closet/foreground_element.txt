@@ -11,4 +11,4 @@ sweater refolded on the shelf | 0.5 | 0.05-0.15 | sleeves tucked
 heels dangled from two fingers | 0.5 | 0.05-0.15 | deciding
 outfit flat-laid over the basket | 0.45 | 0.1-0.25 | combination test
 phone mirror photo taken | 0.5 | 0.05-0.2 | outfit check
-tags snipped with nail scissors | 0.4 | 0.03-0.1 | new top
+tag fasteners snipped with nail scissors | 0.4 | 0.03-0.1 | new top

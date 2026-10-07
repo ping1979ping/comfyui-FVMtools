@@ -6,12 +6,12 @@ Berliner doughnut with sugar | 0.65 | 0.0-0.1 | powdered round pastry
 rye bread loaf with scored crust | 0.7 | 0.0-0.15 | dark crackled top
 plum streusel sheet cake | 0.7 | 0.0-0.15 | crumb topping on purple fruit
 filter coffee pot on warmer | 0.6 | 0.0-0.1 | glass carafe with black handle
-chalk sandwich-board sign | 0.5 | 0.0-0.1 | A-frame with daily special
+chalk sandwich-board with pastry doodles | 0.5 | 0.0-0.1 | A-frame with chalk drawings of a pretzel and a croissant
 cake server and spatula | 0.5 | 0.0-0.05 | silver triangular blade
 wicker bread basket | 0.65 | 0.0-0.1 | linen-lined with seeded rolls
 glass cake dome | 0.55 | 0.0-0.1 | clear lid over buttercream torte
-paper price tags on toothpicks | 0.4 | 0.0-0.05 | little handwritten flags
+paper flags on toothpicks | 0.4 | 0.0-0.05 | little plain flags
 hot chocolate with whipped cream | 0.5 | 0.0-0.08 | tall glass mug dusted with cocoa
 stack of folded tea towels | 0.35 | 0.0-0.08 | checked cotton cloths
-tin cookie box | 0.4 | 0.0-0.08 | embossed lid with festive print
+tin cookie box | 0.4 | 0.0-0.08 | embossed lid with festive pattern
 brass tip dish | 0.35 | 0.0-0.05 | small tray of coins

@@ -2,7 +2,7 @@
 # format: name | probability | coverage_range | texture
 
 carved oak ceiling beam | 0.8 | 0.0-0.2 | dark chamfered timber
-brass-and-porcelain tap handles | 0.8 | 0.0-0.1 | row of branded lever pulls
+brass-and-porcelain tap handles | 0.8 | 0.0-0.1 | row of plain lever pulls
 wrought-iron chandelier | 0.65 | 0.0-0.15 | candle-style bulbs on rings
 stained-glass lamp shade | 0.55 | 0.0-0.1 | coloured glass over bar
 panelled wooden door | 0.5 | 0.0-0.15 | heavy studded entry

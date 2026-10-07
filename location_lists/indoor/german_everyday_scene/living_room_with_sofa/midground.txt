@@ -8,7 +8,7 @@ television stand with clutter | 0.7 | 0.2-0.5 | dark wood-look laminate
 laundry basket waiting to be folded | 0.6 | 0.15-0.4 | plastic weave
 rug in front of the sofa | 0.7 | 0.3-0.6 | flattened pile
 side table with a lamp | 0.6 | 0.15-0.4 | scratched top
-stack of magazines on the floor | 0.5 | 0.1-0.3 | curled covers
+stack of glossy picture books on the floor | 0.5 | 0.1-0.3 | curled colorful photo covers
 child's toys pushed to one side | 0.5 | 0.1-0.35 | scuffed plastic
 folded blanket over the sofa back | 0.7 | 0.15-0.4 | pilled fleece
 footstool used as a table | 0.45 | 0.1-0.3 | worn fabric top

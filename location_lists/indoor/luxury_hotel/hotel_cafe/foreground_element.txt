@@ -9,5 +9,5 @@ sunbeam floor patch | 0.7 | 0.2-0.4 | warm window light on tiles
 glass of orange juice | 0.6 | 0.15-0.3 | bright fresh-squeezed citrus
 small saucer with sugar cubes | 0.55 | 0.15-0.3 | white china dish
 checkerboard marble floor | 0.55 | 0.15-0.3 | black-and-white stone squares
-open pastry menu card | 0.4 | 0.05-0.15 | typed cream card on table
+open cream table card | 0.4 | 0.05-0.15 | card with {a gold border|a drawn croissant|the word "MENU"} on table
 cinnamon-dusted espresso saucer | 0.45 | 0.05-0.15 | tiny cup with biscotti

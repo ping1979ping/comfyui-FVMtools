@@ -2,14 +2,14 @@
 # format: name | probability | coverage_range | texture
 
 Sheetz convenience store facade | 0.8 | 0.4-0.8 | beige stucco with red trim
-Wawa storefront with logo | 0.7 | 0.4-0.8 | white siding with yellow signage
+Wawa storefront | 0.7 | 0.4-0.8 | white siding with a yellow accent band and sign reading "WAWA"
 generic gas station mini-mart | 0.85 | 0.4-0.8 | flat-roofed cinderblock building
-illuminated price sign pylon | 0.9 | 0.2-0.5 | tall plastic LED numerals
-overhead pump canopy with corporate logo | 1.0 | 0.5-1.0 | painted sheet metal roof
+illuminated fuel pylon sign{| with "{GAS|FUEL|OPEN}"} | 0.9 | 0.2-0.5 | tall plastic sign with glowing colored bands
+overhead pump canopy with a colored stripe | 1.0 | 0.5-1.0 | painted sheet metal roof
 adjacent strip mall in distance | 0.5 | 0.3-0.6 | low commercial silhouette
 chain-link fence at lot edge | 0.55 | 0.2-0.5 | rusting woven steel
-fast food restaurant next door | 0.55 | 0.3-0.6 | branded drive-thru building
-billboard for personal injury lawyer | 0.45 | 0.2-0.5 | weathered vinyl ad print
+fast food restaurant next door | 0.55 | 0.3-0.6 | colorful drive-thru building
+billboard with a large smiling portrait | 0.45 | 0.2-0.5 | weathered vinyl print with big color blocks
 state highway with passing cars | 0.6 | 0.3-0.6 | asphalt road with traffic
 tree line behind the lot | 0.4 | 0.2-0.5 | scraggly mixed deciduous
 empty grass strip with utility pole | 0.55 | 0.2-0.5 | tired roadside lawn

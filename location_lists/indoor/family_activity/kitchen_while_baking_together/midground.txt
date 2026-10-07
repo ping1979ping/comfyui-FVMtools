@@ -13,5 +13,5 @@ rolling pin on dusty counter | 0.85 | 0.05-0.2 | wooden cylindrical roller
 sheet pan of risen rolls | 0.7 | 0.2-0.5 | parchment-lined puffy buns
 electric kettle steaming nearby | 0.6 | 0.1-0.3 | hot water countertop kettle
 parchment-lined sheet tray | 0.75 | 0.2-0.5 | white-papered baking tray
-KitchenAid bowl with whipped cream | 0.65 | 0.1-0.3 | metal bowl frothy peaks
+KitchenAid stand mixer bowl with whipped cream | 0.65 | 0.1-0.3 | metal bowl frothy peaks
 piping bag stand and tips | 0.6 | 0.1-0.25 | upright pastry tool stand

@@ -10,4 +10,4 @@ exposed ground hardware-cloth | 0.6 | 0.1-0.3 | wire base layer
 bin removable front slat | 0.85 | 0.1-0.3 | slide-in board
 adjacent fence batten board | 0.85 | 0.4-0.8 | vertical timber slat
 gutter downspout end | 0.65 | 0.1-0.3 | painted metal pipe
-small painted bin label | 0.55 | 0.05-0.15 | weathered wood placard
+small painted bin marker | 0.55 | 0.05-0.15 | weathered wood placard with a painted leaf symbol

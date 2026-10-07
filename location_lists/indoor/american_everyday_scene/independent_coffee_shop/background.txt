@@ -1,10 +1,10 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-chalkboard menu wall | 1.0 | 0.6-1.0 | hand-lettered white script on black slate
+slate chalkboard wall | 1.0 | 0.6-1.0 | black slate with {white chalk doodles of cups and leaves|chalk-drawn border and headings reading "{MENU|COFFEE|TODAY}"}
 exposed red-brick wall | 0.9 | 0.6-1.0 | weathered painted mortar lines
 gleaming espresso machine counter | 0.9 | 0.5-0.9 | copper-and-steel lever group
-large street-facing window | 0.8 | 0.5-0.9 | gold vinyl shop name lettering
+large street-facing window | 0.8 | 0.5-0.9 | {clean glass with warm interior glow|gold vinyl lettering reading "{COFFEE|CAFE}"}
 reclaimed-wood shelving unit | 0.7 | 0.4-0.8 | rustic planks with ceramic mugs
 bean-bag bulk coffee wall | 0.6 | 0.3-0.6 | burlap sacks and glass jars
 local art gallery wall | 0.65 | 0.4-0.7 | mismatched framed prints and posters
@@ -12,4 +12,4 @@ pastry display case | 0.7 | 0.3-0.6 | glass cabinet of croissants and scones
 industrial duct ceiling | 0.55 | 0.4-0.8 | black exposed piping and tracks
 hanging plant macrame row | 0.5 | 0.3-0.6 | trailing pothos in rope hangers
 subway tile back counter | 0.5 | 0.4-0.7 | white glossy tiles with gray grout
-community corkboard flyers | 0.4 | 0.3-0.5 | layered paper notices and tickets
+community corkboard collage | 0.4 | 0.3-0.5 | layered colorful paper scraps and photo cards

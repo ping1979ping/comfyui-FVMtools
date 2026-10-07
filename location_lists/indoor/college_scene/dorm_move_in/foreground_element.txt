@@ -13,7 +13,7 @@ plastic mattress wrap peeled onto the floor | 0.45 | 0.1-0.25 | crinkled sheetin
 foam corner protectors dropped near the bed frame | 0.4 | 0.1-0.2 | stripped packaging foam
 box cutter resting on a flattened box | 0.35 | 0.1-0.15 | retracted blade
 hallway light spilling under the propped door | 0.5 | 0.1-0.2 | thin bright line
-price tag stickers peeled and stuck to the floor | 0.35 | 0.1-0.15 | curling adhesive strips
+round colored sticker dots peeled and stuck to the floor | 0.35 | 0.1-0.15 | curling adhesive dots
 wheeled dolly tracks pressed into the carpet | 0.4 | 0.1-0.2 | faint parallel lines
 stray zip ties clipped from a box | 0.35 | 0.1-0.15 | short plastic curls
-paper packing sheets crumpled near the bins | 0.4 | 0.1-0.25 | wrinkled newsprint
+paper packing sheets crumpled near the bins | 0.4 | 0.1-0.25 | wrinkled plain kraft paper
