@@ -217,7 +217,8 @@ class InpaintRowWidget extends FvmBaseWidget {
 
     onMaskClick(event, pos, node) {
         const items = this.maskWidget?.options?.values
-            || ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories", "aux"];
+            || ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories", "aux",
+                "face+crop", "head+crop", "body+crop", "hair+crop"];
         new LiteGraph.ContextMenu(items, {
             event,
             scale: Math.max(1, app.canvas.ds?.scale ?? 1),

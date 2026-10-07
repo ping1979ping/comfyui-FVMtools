@@ -12,6 +12,10 @@ class InpaintOptions:
         "- cfg: Classifier-Free Guidance scale for sampling contrast\n"
         "- negative_prompt: additional negative prompt combined with the negative conditioning input\n"
         "- mask_type: which mask to use per reference slot (head/face/body/aux)\n"
+        "  '<type>+crop' (face/head/body/hair) also hands the untouched input crop to the\n"
+        "  model as a reference image: with a high denoise the region is re-rendered (e.g.\n"
+        "  another body build from prompt/LoRA) while the clothes stay recognisable.\n"
+        "  Needs a model with reference-latent support (e.g. Krea 2); others ignore it.\n"
         "  'aux' uses body-part masks from detector connected to Person Selector Multi\n"
         "- rounds: number of inpaint passes per crop (latent cycling)\n"
         "- denoise_progression / steps_progression: per-round overrides\n"
@@ -24,7 +28,8 @@ class InpaintOptions:
 
     @classmethod
     def INPUT_TYPES(cls):
-        mask_types = ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories", "aux"]
+        mask_types = ["face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories", "aux",
+                      "face+crop", "head+crop", "body+crop", "hair+crop"]
 
         widgets = {
             "cfg": ("FLOAT", {"default": 1.0, "min": 1.0, "max": 30.0, "step": 0.5,
@@ -158,7 +163,8 @@ class InpaintOptions:
             widgets[f"{prefix}_mask_type"] = (mask_types, {"default": "head",
                                                             "tooltip": f"Mask type for this row.\n"
                                                                        f"face=skin only, head=face+hair, body=full body,\n"
-                                                                       f"aux=body-part SEGS from detector"})
+                                                                       f"aux=body-part SEGS from detector\n"
+                                                                       f"<type>+crop = same mask, plus the input crop as reference image"})
             widgets[f"{prefix}_rounds"] = ("INT", {"default": 1, "min": 1, "max": 10, "step": 1,
                                                     "tooltip": f"Number of inpaint passes for this row.\n"
                                                                f"Each round re-encodes the previous result (latent cycling).\n"

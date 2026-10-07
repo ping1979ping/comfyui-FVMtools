@@ -152,3 +152,15 @@ def clean_mask_crumbs(mask_np, min_area_fraction=0.005):
         if stats[label_id, cv2.CC_STAT_AREA] >= min_area:
             cleaned[labels == label_id] = 1.0
     return cleaned
+
+
+# "<type>+crop": detail <type>, and hand the untouched input crop to the model as
+# a reference image (see inpaint_slot(reference_from_crop=...)).
+CROP_SUFFIX = "+crop"
+
+
+def split_mask_type(mask_type):
+    """``"body+crop"`` -> ``("body", True)``; ``"body"`` -> ``("body", False)``."""
+    if isinstance(mask_type, str) and mask_type.endswith(CROP_SUFFIX):
+        return mask_type[:-len(CROP_SUFFIX)], True
+    return mask_type, False

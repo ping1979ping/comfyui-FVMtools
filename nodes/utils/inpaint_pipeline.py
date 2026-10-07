@@ -235,6 +235,20 @@ def _boundary_color_correction(decoded_np, orig_np, mask_np):
     return np.clip(corrected, 0, 1).astype(np.float32)
 
 
+def _with_reference_latent(conditioning, latent):
+    """Copy of ``conditioning`` with ``latent`` appended to its ``reference_latents``.
+
+    Same effect as ComfyUI's ReferenceLatent node (and node_helpers.
+    conditioning_set_values(..., append=True)); the input list is not mutated.
+    """
+    out = []
+    for text, opts in conditioning:
+        opts = dict(opts)
+        opts["reference_latents"] = list(opts.get("reference_latents") or []) + [latent]
+        out.append([text, opts])
+    return out
+
+
 def _flatten_video_frames(decoded):
     """Normalize VAE-decoded pixels to IMAGE layout [B, H, W, C].
 
@@ -370,6 +384,7 @@ def inpaint_slot(
     delta_clamp=0.35,
     feather_direction="both",
     noise_mask_2d=None,
+    reference_from_crop=False,
 ):
     """Run the full inpaint pipeline for a single masked region.
 
@@ -381,6 +396,13 @@ def inpaint_slot(
             lets a region be sampled unevenly — full strength on the lettering,
             a light touch on the surface around it — without shrinking the crop
             to the strong part and losing the context that made it match.
+        reference_from_crop: attach the untouched input crop to the positive
+            conditioning as a reference image (``reference_latents``). The sampler
+            then re-renders the masked region (e.g. at high denoise) while the
+            model still sees what the region looked like before - clothes stay
+            recognisable though body shape comes from prompt/LoRA. Later rounds
+            keep the ORIGINAL crop as reference, not the cycled result. Models
+            without reference support ignore the entry.
         denoise_progression: pipe-separated denoise per round (e.g. "0.5|0.3").
         steps_progression: pipe-separated steps per round (e.g. "6|4").
         When empty, `denoise` and `steps` are used for all rounds.
@@ -463,6 +485,12 @@ def inpaint_slot(
     latent_samples = vae.encode(cropped_image_device[:, :, :, :3])
     if _PROFILE:
         _sync(); _prof["encode"] += time.perf_counter() - _e0
+
+    if reference_from_crop:
+        positive_cond = _with_reference_latent(
+            positive_cond,
+            latent_samples.detach().clone().to(comfy.model_management.intermediate_device()),
+        )
 
     # Step 8: Apply denoise gradient (center-to-edge falloff)
     if denoise_gradient > 0:

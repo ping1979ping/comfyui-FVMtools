@@ -6,7 +6,7 @@ import comfy.utils
 import comfy.samplers
 import folder_paths
 
-from .utils.mask_utils import is_mask_empty, split_mask_to_components
+from .utils.mask_utils import is_mask_empty, split_mask_to_components, split_mask_type
 from .utils.detailer_report import detail_parts_individually, build_status_text
 from .utils.inpaint_pipeline import inpaint_slot
 from .utils.detail_daemon import DD_DEFAULTS
@@ -15,7 +15,6 @@ from .utils.lora_cache import _LoraFileCache
 
 
 _VALID_MASK_TYPES = {"face", "head", "body", "hair", "facial_skin", "eyes", "mouth", "neck", "accessories"}
-
 # Default inpaint options (used when InpaintOptions node is not connected)
 INPAINT_DEFAULTS = {
     "cfg": 1.0,
@@ -266,6 +265,7 @@ class PersonDetailer:
             denoise_gradient_mode=inpaint_opts.get("denoise_gradient_mode", "linear"),
             delta_clamp=inpaint_opts.get("delta_clamp", 0.35),
             feather_direction=inpaint_opts.get("feather_direction", "both"),
+            reference_from_crop=bool(slot.get("ref_crop", False)),
         )
         return stitched, refined
 
@@ -326,19 +326,21 @@ class PersonDetailer:
                 continue
             slot_key = f"reference_{i}"
             slot_cfg = self._get_slot_config(slot_key, inpaint_options)
+            slot_mask_type, slot_ref_crop = split_mask_type(slot_cfg.get("mask_type", "head"))
             slots.append({
                 "index": i - 1,  # 0-based index into person_data masks
                 "label": f"Ref{i}",
                 "lora": lora,
                 "prompt": prompt,
-                "mask_type": slot_cfg.get("mask_type", "head"),
+                "mask_type": slot_mask_type,
+                "ref_crop": slot_ref_crop,
                 "lora_strength": lora_str,
                 "use_dd": slot_cfg.get("detail_daemon", True),
                 "rounds": slot_cfg.get("rounds", 1),
             })
 
         generic_cfg = self._get_slot_config("generic", inpaint_options)
-        generic_mask_type = generic_cfg.get("mask_type", "head")
+        generic_mask_type, generic_ref_crop = split_mask_type(generic_cfg.get("mask_type", "head"))
         if generic_mask_type not in _VALID_MASK_TYPES and generic_mask_type != "aux":
             print(f"[FVMTools] Warning: invalid generic mask_type '{generic_mask_type}', falling back to 'head'")
             generic_mask_type = "head"
@@ -362,6 +364,7 @@ class PersonDetailer:
             "lora": generic_lora, "lora_strength": generic_lora_strength,
             "prompt": generic_prompt, "use_dd": generic_cfg.get("detail_daemon", True),
             "rounds": generic_cfg.get("rounds", 1),
+            "ref_crop": generic_ref_crop,
         }
 
         # Common inpaint kwargs
@@ -471,7 +474,8 @@ class PersonDetailer:
                         img_summary[slot["label"]] = {"status": "no match", "mask_type": mask_type}
                         continue
 
-                    print(f"    {slot['label']} — {mask_type} detailing...")
+                    print(f"    {slot['label']} — {mask_type} detailing"
+                          f"{' (+crop reference)' if slot.get('ref_crop') else ''}...")
 
                     cached = slot_cache.get((slot["lora"], slot["lora_strength"], slot["prompt"]))
                     stitched, refined = self._inpaint_mask(

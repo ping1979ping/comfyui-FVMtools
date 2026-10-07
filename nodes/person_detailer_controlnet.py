@@ -23,7 +23,7 @@ from .utils.controlnet_preprocess import (
     build_zimage_control_model,
     HAS_CONTROLNET_AUX, HAS_ZIMAGE_CONTROLNET,
 )
-from .person_detailer import INPAINT_DEFAULTS
+from .person_detailer import INPAINT_DEFAULTS, split_mask_type
 
 
 def _get_model_patch_list():
@@ -349,14 +349,14 @@ class PersonDetailerControlNet:
                 "label": f"Ref{i}",
                 "lora": lora,
                 "prompt": prompt,
-                "mask_type": slot_cfg.get("mask_type", "head"),
+                "mask_type": split_mask_type(slot_cfg.get("mask_type", "head"))[0],
                 "lora_strength": lora_str,
                 "use_dd": slot_cfg.get("detail_daemon", True),
                 "rounds": slot_cfg.get("rounds", 1),
             })
 
         generic_cfg = self._get_slot_config("generic", inpaint_options)
-        generic_mask_type = generic_cfg.get("mask_type", "head")
+        generic_mask_type = split_mask_type(generic_cfg.get("mask_type", "head"))[0]
 
         cn_info = ""
         if has_cn:
