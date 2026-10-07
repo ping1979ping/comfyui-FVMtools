@@ -28,3 +28,12 @@ def test_empty_option_and_spacing_tidy():
 def test_plain_text_passthrough():
     assert _resolve_braces("plain name", 1, "props") == "plain name"
     assert _resolve_braces(None, 1, "props") is None
+
+
+def test_outfit_lists_split_and_engine_resolves(tmp_path, monkeypatch):
+    from core import outfit_lists, outfit_engine
+
+    line = 'band tee with {"ROCK"|"TOUR"|} lettering | 0.8 | 0.0-1.0 | cotton'
+    assert outfit_lists.split_fields(line)[1] == "0.8"
+    names = {outfit_engine.resolve_braces('tee {"A"|"B"}', k, "top.garment") for k in range(40)}
+    assert names == {'tee "A"', 'tee "B"'}

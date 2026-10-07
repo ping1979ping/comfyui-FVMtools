@@ -35,10 +35,7 @@ from typing import Optional
 
 from .smp.defaults import DEFAULT_LOCATION_LAYERS
 
-try:
-    from .jb.wildcards import resolve_text as _resolve_text
-except ImportError:  # pragma: no cover - direct import outside the package
-    from core.jb.wildcards import resolve_text as _resolve_text
+from .list_braces import resolve_braces, split_fields
 
 
 ELEMENT_ORDER = [
@@ -145,33 +142,11 @@ def _parse_coverage(token: str) -> tuple[float, float]:
         return (0.0, 0.0)
 
 
-def _split_fields(line: str) -> list[str]:
-    """Split a list line on ``|`` — except inside ``{...}`` brackets."""
-    parts, buf, depth = [], [], 0
-    for ch in line:
-        if ch == "{":
-            depth += 1
-        elif ch == "}" and depth:
-            depth -= 1
-        if ch == "|" and depth == 0:
-            parts.append("".join(buf).strip())
-            buf = []
-        else:
-            buf.append(ch)
-    parts.append("".join(buf).strip())
-    return parts
+_split_fields = split_fields
 
 
-_WS_RE = re.compile(r" {2,}")
-
-
-def _resolve_braces(text: Optional[str], seed: int, element_id: str) -> Optional[str]:
-    """Resolve ``{a|b}`` brackets in ``text`` (no-op when there are none)."""
-    if not text or "{" not in text:
-        return text
-    resolved, _ = _resolve_text(text, seed, None, salt=element_id)
-    resolved = _WS_RE.sub(" ", resolved)
-    return re.sub(r"\s+([,.])", lambda m: m.group(1), resolved).strip()
+def _resolve_braces(text, seed, element_id):
+    return resolve_braces(text, seed, element_id)
 
 
 def load_location_elements(element_id: str, location_set: str) -> list[dict]:

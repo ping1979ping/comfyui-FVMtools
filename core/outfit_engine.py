@@ -5,6 +5,7 @@ import random
 from .outfit_lists import load_garments, load_fabrics, load_fabric_harmony, load_prints, load_texts
 from .outfit_presets import OUTFIT_PRESETS
 from .outfit_parser import parse_overrides, resolve_wildcards
+from .list_braces import resolve_braces
 
 
 # Slot processing order (head-to-toe)
@@ -162,6 +163,8 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
                 decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                               texts_list, print_probability, text_mode,
                                               text_probability)
+                if isinstance(decoration, str):
+                    decoration = resolve_braces(decoration, seed, f"{slot}.decoration")
 
             if not _is_none_garment(garment_name):
                 desc = _build_description(color_tag, fabric_name, garment_name, decoration)
@@ -185,6 +188,8 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
         # Weight by probability
         weights = [g["probability"] for g in compatible]
         chosen_garment = rng.choices(compatible, weights=weights, k=1)[0]
+        chosen_garment = {**chosen_garment,
+                          "name": resolve_braces(chosen_garment["name"], seed, f"{slot}.garment")}
 
         # Pick fabric
         garment_fabrics = chosen_garment["fabrics"]
@@ -195,6 +200,8 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
         decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                       texts_list, print_probability, text_mode,
                                               text_probability)
+        if isinstance(decoration, str):
+            decoration = resolve_braces(decoration, seed, f"{slot}.decoration")
 
         if _is_none_garment(chosen_garment["name"]):
             continue  # placeholder slot (rng already consumed above)
@@ -314,6 +321,8 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
                 decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                               texts_list, print_probability, text_mode,
                                               text_probability)
+                if isinstance(decoration, str):
+                    decoration = resolve_braces(decoration, seed, f"{slot}.decoration")
             if not _is_none_garment(garment_name):
                 fragment = _build_description(color_tag, fabric_name, garment_name, decoration)
                 garments_out[slot] = {
@@ -339,6 +348,8 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
 
         weights = [g["probability"] for g in compatible]
         chosen_garment = rng.choices(compatible, weights=weights, k=1)[0]
+        chosen_garment = {**chosen_garment,
+                          "name": resolve_braces(chosen_garment["name"], seed, f"{slot}.garment")}
 
         garment_fabrics = chosen_garment["fabrics"]
         fabric_name = _pick_fabric(rng, garment_fabrics, fabrics_db, fabric_harmony,
@@ -347,6 +358,8 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
         decoration = _pick_decoration(rng, slot, eff_formality, prints_list,
                                       texts_list, print_probability, text_mode,
                                               text_probability)
+        if isinstance(decoration, str):
+            decoration = resolve_braces(decoration, seed, f"{slot}.decoration")
 
         if _is_none_garment(chosen_garment["name"]):
             continue  # placeholder slot (rng already consumed above)

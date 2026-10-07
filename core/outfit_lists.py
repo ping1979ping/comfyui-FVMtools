@@ -4,6 +4,7 @@ import os
 from typing import Optional
 
 from .config import get_config, _get_project_root
+from .list_braces import split_fields
 
 
 def _get_lists_path():
@@ -141,7 +142,7 @@ def load_garments(slot_name, outfit_set="general_female"):
             if line.startswith("#") and "|" not in line:
                 continue
 
-            parts = [p.strip() for p in line.split("|")]
+            parts = split_fields(line)
             if len(parts) < 4:
                 continue
 
@@ -183,7 +184,7 @@ def load_fabrics(outfit_set="general_female"):
             if not line or line.startswith("#"):
                 continue
 
-            parts = [p.strip() for p in line.split("|")]
+            parts = split_fields(line)
             if len(parts) < 4:
                 continue
 
@@ -222,7 +223,7 @@ def load_prints(outfit_set="general_female"):
             if not line or line.startswith("#"):
                 continue
 
-            parts = [p.strip() for p in line.split("|")]
+            parts = split_fields(line)
             if len(parts) < 4:
                 continue
 
@@ -263,7 +264,7 @@ def load_texts(outfit_set="general_female"):
             if not line or line.startswith("#"):
                 continue
 
-            parts = [p.strip() for p in line.split("|")]
+            parts = split_fields(line)
             if len(parts) < 4:
                 continue
 
@@ -302,7 +303,7 @@ def load_fabric_harmony():
             if not line or line.startswith("#"):
                 continue
 
-            parts = [p.strip() for p in line.split("|")]
+            parts = split_fields(line)
             if len(parts) < 2:
                 continue
 
