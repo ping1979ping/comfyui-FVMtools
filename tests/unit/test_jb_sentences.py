@@ -238,9 +238,18 @@ class TestMetadata:
         assert "evening" not in out and "warm" not in out and "0.6" not in out
 
     def test_block_output_has_no_structure_characters(self):
+        # Quoted wording from the lists (banner reading "CONGRATS", 8e668bb)
+        # is content; JSON structure and key leaks are not.
         for out in (_location()[1], _outfit()[1]):
-            for ch in "{}[]#_/\"":
+            for ch in "{}[]#_/":
                 assert ch not in out, f"{ch!r} in {out}"
+            assert '":' not in out, f"JSON key leak in {out}"
+            assert out.count('"') % 2 == 0, f"unpaired quote in {out}"
+
+    def test_quoted_wording_survives(self):
+        fragment = 'graduation banner reading "CONGRATS"'
+        out = emit_sentences({"elements": {"background": _record(fragment)}})
+        assert out == 'The background is graduation banner reading "CONGRATS".'
 
 
 # ─── Generic fallback (one sentence per branch) ──────────────────────
