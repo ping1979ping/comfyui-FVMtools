@@ -1,13 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-fluorescent ceiling light grid | 1.0 | 0.3-0.6 | rows of tube fixtures
-polished concrete aisle floor | 1.0 | 0.4-0.8 | speckled sealed slab
-open ceiling trusses with HVAC | 0.85 | 0.3-0.6 | exposed steel beams
-security camera dome from ceiling | 0.85 | 0.05-0.1 | smoked plastic bubble
-loss-prevention mirror corner | 0.6 | 0.05-0.15 | convex round mirror
-sprinkler pipe along ceiling | 0.75 | 0.1-0.3 | red painted steel run
-yellow safety bollard at endcap | 0.7 | 0.05-0.15 | painted post bumper
-floor-marker line at aisle edge | 0.65 | 0.05-0.15 | painted yellow stripe
-hanging vinyl ceiling banner{| reading "{HELP|SERVICE}"} | 0.55 | 0.1-0.2 | suspended blue vinyl panel
-red illuminated exit sign | 0.7 | 0.05-0.1 | plastic sign reading "{EXIT|WAY OUT|EXIT HERE}"
+a high gray ceiling with exposed steel trusses overhead | 1.0 | 0.05-0.15 | painted steel beams, bright space above
+long white fluorescent light fixtures in a row far overhead | 0.95 | 0.03-0.1 | bright flat glow
+white sprinkler pipes running high up across the far ceiling | 0.6 | 0.03-0.08 | thin painted pipes
+a gray steel column at the far right | 0.55 | 0.03-0.08 | painted, plain
+a wide roll-up door at the far end of the back wall | 0.4 | 0.05-0.1 | closed steel panels
+a thin yellow safety stripe along the base of the far shelves | 0.45 | 0.02-0.05 | painted band on concrete
+a small round security mirror high up in the far corner | 0.4 | 0.01-0.04 | convex dark glass
+a slim row of ceiling vents far overhead | 0.45 | 0.02-0.06 | white grilles
+a narrow steel beam running across the far ceiling | 0.5 | 0.03-0.08 | gray painted steel
+a thin blue stripe along the top of the far wall | 0.5 | 0.02-0.06 | painted band
+a small white smoke detector disc high up at the back | 0.35 | 0.01-0.03 | plain plastic
+a tall double door at the far left | 0.4 | 0.05-0.1 | gray steel

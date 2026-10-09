@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-constant HVAC retail cool | 0.95 | - | -
-summer aggressive AC chill | 0.85 | - | -
-winter dry heat blowing | 0.7 | - | -
-muggy stuffiness near entrance | 0.55 | - | -
-wet entrance tile from rain | 0.6 | - | -
-slush tracked in from outside | 0.5 | - | -
-dry recirculated air | 0.85 | - | -
-warm summer entrance gust | 0.5 | - | -
-faint new-fabric smell in cool air | 0.5 | - | -
-soft overhead music in dry chill | 0.45 | - | -
+cool conditioned air, still and even | 0.95 | - | -
+soft gray daylight at the far entrance | 0.6 | - | -
+bright clear daylight at the far entrance doors | 0.5 | - | -
+light rain on the glass of the far entrance | 0.45 | - | -
+gray winter daylight beyond the far entrance doors | 0.5 | - | -
+warm summer sun at the far entrance doors | 0.45 | - | -
+calm air with steady bright light | 0.8 | - | -
+crisp autumn light at the far entrance glass | 0.5 | - | -
+overcast flat light across the whole store | 0.6 | - | -
+first snow falling beyond the far entrance glass | 0.35 | - | -
+quiet still air with an even white glow | 0.7 | - | -

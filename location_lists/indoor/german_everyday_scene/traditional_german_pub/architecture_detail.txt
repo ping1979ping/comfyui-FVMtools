@@ -1,15 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-carved oak ceiling beam | 0.8 | 0.0-0.2 | dark chamfered timber
-brass-and-porcelain tap handles | 0.8 | 0.0-0.1 | row of plain lever pulls
-wrought-iron chandelier | 0.65 | 0.0-0.15 | candle-style bulbs on rings
-stained-glass lamp shade | 0.55 | 0.0-0.1 | coloured glass over bar
-panelled wooden door | 0.5 | 0.0-0.15 | heavy studded entry
-carved corbel bracket | 0.45 | 0.0-0.1 | scrolled timber support
-bay window with lace curtain | 0.5 | 0.0-0.15 | cafe-length half-curtain
-embossed leather wall covering | 0.35 | 0.0-0.15 | dark patterned panel
-wall-mounted pewter sconce | 0.55 | 0.0-0.1 | small shaded light
-tiled stove surround | 0.4 | 0.0-0.15 | glazed green squares
-nicotine-aged plaster ceiling | 0.5 | 0.0-0.2 | amber-stained white
-fretwork room divider | 0.4 | 0.0-0.15 | cut wooden lattice screen
+a carved dark oak ceiling beam high up across the room | 0.8 | 0.03-0.12 | chamfered timber
+a wrought-iron chandelier with candle-style bulbs high up at the center | 0.65 | 0.03-0.1 | warm glow
+a stained-glass lamp shade over the far end of the bar | 0.55 | 0.02-0.08 | amber and green glass
+a heavy paneled wooden door with iron studs at the far right | 0.5 | 0.03-0.1 | dark oak
+carved corbel brackets high up along the far wall | 0.45 | 0.02-0.08 | scrolled timber
+wall-mounted pewter sconces with small shades along the far wall | 0.55 | 0.02-0.08 | soft amber light
+a nicotine-aged plaster ceiling high up between the beams | 0.5 | 0.03-0.1 | amber-stained white
+a cut wooden fretwork panel along the top of the far bar | 0.4 | 0.03-0.1 | cut lattice
+brass tap handles in a row at the far end of the counter | 0.7 | 0.02-0.06 | polished
+a brass rail along the front of the far bar | 0.5 | 0.02-0.06 | worn bright
+a lace cafe curtain across the lower half of the far window | 0.5 | 0.03-0.1 | white
+a glazed tiled stove surround in the far corner | 0.4 | 0.03-0.1 | green

@@ -1,13 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-empty blue shopping cart in aisle | 0.85 | 0.15-0.3 | wire mesh with plastic seat
-abandoned cart with one item | 0.6 | 0.1-0.25 | half-loaded carrier
-floor restocking pallet jack | 0.5 | 0.1-0.3 | yellow forks on pallet
-price scanner pole midway | 0.85 | 0.1-0.2 | red kiosk on column
-cross aisle perpendicular row | 0.8 | 0.3-0.6 | opening into next section
-warehouse-style high ceiling reveal | 0.7 | 0.3-0.6 | open metal trusses
-clearance bin island | 0.65 | 0.2-0.4 | wire dump bin
-restocking cart half-loaded | 0.55 | 0.1-0.3 | rolling shelf cart
-ladder leaning on shelf | 0.45 | 0.1-0.25 | yellow rolling step
-black floor-marker arrow | 0.5 | 0.05-0.15 | painted directional decal
+a pallet of shrink-wrapped cardboard boxes a few meters back on the right | 0.8 | 0.2-0.4 | plain brown boxes stacked in even layers
+a pyramid of soda cases a few meters back on the left | 0.7 | 0.2-0.4 | cardboard cases in red and blue, stacked neatly
+a freestanding endcap of stacked paper towel packs a few meters back at the center | 0.7 | 0.2-0.4 | white plastic wrap, neat tower
+a low open chest freezer of frozen goods a few meters back on the right | 0.55 | 0.2-0.4 | glass lid closed, white frost along the edges
+a floor display of stacked cardboard cases a few meters back on the left | 0.6 | 0.2-0.4 | brown boxes with bright printed colors
+a low wire bin of discount items a few meters back on the right | 0.5 | 0.1-0.3 | mixed packages in bright colors
+a row of nested shopping carts a few meters back on the left | 0.5 | 0.2-0.4 | empty, chrome frames, blue plastic handles
+a tall steel shelf unit of boxes a few meters back on the left | 0.9 | 0.3-0.5 | cereal boxes and cans in rows, steel uprights
+a stack of bottled water cases a few meters back on the right | 0.6 | 0.2-0.4 | clear plastic wrap, blue cases
+a rolling flatbed cart of cardboard boxes a few meters back at the center | 0.5 | 0.2-0.4 | empty cart, plain brown boxes
+a low pallet of bagged dog food a few meters back on the left | 0.45 | 0.2-0.4 | large bags in neat layers
+a short endcap shelf of canned vegetables a few meters back on the right | 0.55 | 0.2-0.4 | cans in even rows, steel frame
+a pallet jack with an empty pallet a few meters back at the left | 0.35 | 0.1-0.3 | yellow handle, plain wood pallet

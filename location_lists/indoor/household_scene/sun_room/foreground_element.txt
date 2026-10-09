@@ -1,15 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-warm tile flooring | 1.0 | 0.4-0.9 | terracotta-look squares
-woven natural fiber rug | 0.95 | 0.4-0.9 | jute pattern weave
-wide-plank pine flooring | 0.7 | 0.4-0.9 | softly worn boards
-oversized floor cushion | 0.85 | 0.1-0.3 | linen padded form
-cascading potted plants | 0.95 | 0.1-0.3 | leafy cascading foliage
-ceramic indoor planter | 0.95 | 0.1-0.25 | rounded glazed vessel
-woven storage basket | 0.85 | 0.1-0.25 | natural reed weave
-folded throw blanket | 0.85 | 0.05-0.15 | softly draped cloth
-stack of garden books | 0.75 | 0.05-0.15 | hardback pile with plain cloth spines
-glass watering can | 0.7 | 0.05-0.15 | clear pitcher form
-small ceramic dish set | 0.7 | 0.05-0.15 | matched glazed pair
-hanging macrame planter | 0.7 | 0.1-0.25 | knotted fiber sling
+a plain pale slate floor | 1.0 | 0.1-0.4 | matte stone, soft daylight
+a whitewashed wide-plank wood floor | 0.85 | 0.1-0.4 | pale, soft grain
+a smooth honed gray stone floor | 0.7 | 0.1-0.4 | even, matte
+a plain cream flagstone floor | 0.6 | 0.1-0.4 | flat and even
+a smooth concrete floor | 0.7 | 0.1-0.4 | matte and even
+a plain pale oak plank floor | 0.8 | 0.1-0.4 | satin, clean
+a plain warm beige limestone floor | 0.6 | 0.1-0.4 | honed, even
+a plain dark bluestone floor | 0.45 | 0.1-0.4 | matte, even
+a plain white porcelain floor | 0.5 | 0.1-0.4 | smooth, bright
+a plain oak plank floor | 0.8 | 0.1-0.4 | even grain, satin finish
+a plain beige stone tile floor | 0.6 | 0.1-0.4 | matte and even
+a plain gray limestone floor | 0.6 | 0.1-0.4 | honed and even

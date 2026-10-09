@@ -1,13 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-dusty mauve painted wall | 1.0 | 0.6-1.0 | flat suburban-office paint
-dated wallpaper border at ceiling | 0.7 | 0.1-0.3 | floral patterned vinyl strip
-nature-photo gallery wall | 0.95 | 0.4-0.8 | mass-print framed landscapes
-reception desk with glass partition | 0.95 | 0.3-0.6 | laminate counter with sliding window
-fish tank against wall | 0.55 | 0.3-0.6 | algae-tinged glass aquarium
-beige textured-vinyl wallpaper | 0.7 | 0.5-0.9 | dated grass-cloth print
-kids' corner low partition | 0.85 | 0.3-0.6 | half wall to play nook
-artificial plant in corner | 0.85 | 0.2-0.5 | dusty fake ficus
-framed pastel picture wall | 0.6 | 0.2-0.5 | tidy rows of framed abstract prints
-small picture window with blinds | 0.7 | 0.2-0.5 | vinyl horizontal slats
+the far wall of dusty mauve painted drywall across the whole width of the image | 1.0 | 0.6-1.0 | a row of evenly spaced framed landscape photographs along it, a pale wall light above each
+a long reception counter of beige laminate across the far side of the room | 0.95 | 0.5-0.9 | a sliding glass window in the middle, a low frosted glass partition above it, soft ceiling light
+a wall of framed pastel landscape prints along the far side | 0.9 | 0.6-1.0 | thin frames in even rows on pale beige paint, a row of empty upholstered chairs below them
+a large fish tank set into the far wall at the center | 0.55 | 0.3-0.7 | blue-green aquarium glass with soft water light, green plants inside, a dark cabinet beneath it
+beige grass-cloth vinyl wallpaper across the far wall | 0.7 | 0.6-1.0 | a white wall rail at mid height, a darker wainscot below, a tall artificial ficus in the far corner
+a low half wall around a play nook at the far left | 0.65 | 0.3-0.7 | rounded laminate partition, a small empty round table and two tiny empty chairs inside it
+a small picture window with horizontal blinds at the far right | 0.7 | 0.3-0.7 | pale daylight through the slats, a narrow sill with a small potted plant
+a pale gray wall with a white chair rail across the far side | 0.6 | 0.6-1.0 | a row of empty tweed waiting chairs lined along it, a floor lamp glowing at the far corner
+a glass-fronted pass-through opening at the far center | 0.55 | 0.3-0.7 | a white laminate ledge, a small bright office beyond the glass, soft fluorescent light
+a wall of pale blue paint with a floral wallpaper border under the ceiling at the far side | 0.5 | 0.6-1.0 | framed landscape prints spaced along it, a low empty bench beneath them
+a hallway opening to the treatment rooms at the far left | 0.6 | 0.4-0.8 | a pale corridor with a row of closed white doors, bright light at the far end
+a wall of oak-look laminate paneling across the far side | 0.5 | 0.6-1.0 | warm tan vertical panels, a row of framed prints, an empty padded bench below them
+a corner of two mauve walls at the far right | 0.5 | 0.4-0.8 | a tall artificial ficus in a pot, a framed landscape print on each wall
+a taupe painted wall behind a long low bench along the far side | 0.55 | 0.6-1.0 | the bench empty with a padded seat, a framed seascape print centered above it

@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-chopping board with vegetable scraps | 0.85 | 0.05-0.2 | knife-marked wood
-open spice jars | 0.7 | 0.05-0.15 | mismatched screw-top jars
-dish towel over the oven handle | 0.75 | 0.05-0.15 | faded checked cotton
-half-drunk mug of coffee | 0.7 | 0.05-0.15 | stained ceramic
-wooden spoon resting on the hob | 0.65 | 0.05-0.12 | scorched spoon end
-packet of pasta left open | 0.55 | 0.05-0.15 | torn plastic packaging
-bottle of oil beside the hob | 0.6 | 0.05-0.12 | greasy glass
-knife block by the worktop | 0.5 | 0.05-0.15 | wooden slots
-child's drawing under a magnet | 0.5 | 0.03-0.1 | crayon on torn paper
-salt and pepper mills | 0.55 | 0.03-0.1 | worn wooden bodies
-sponge in the sink corner | 0.6 | 0.02-0.08 | frayed yellow sponge
+a small chopping board with chopped onions at the far end of the worktop | 0.85 | 0.01-0.05 | knife-marked wood
+small spice jars in a row on a far shelf | 0.7 | 0.01-0.05 | screw-top lids
+a small wooden spoon resting on a pot at the back of the hob | 0.65 | 0.01-0.04 | scorched end
+a small dish towel hung on the far oven handle | 0.7 | 0.01-0.05 | checked cotton
+a small coffee mug on the far windowsill | 0.6 | 0.01-0.04 | white ceramic
+a small olive oil bottle beside the far hob | 0.55 | 0.01-0.04 | green glass
+a compact knife block at the far end of the worktop | 0.5 | 0.01-0.05 | wooden slots
+small salt and pepper mills on the far worktop | 0.5 | 0.01-0.04 | wooden bodies
+a small bowl of lemons on a distant shelf | 0.4 | 0.01-0.05 | bright yellow
+a small colander in the sink at the back | 0.45 | 0.01-0.05 | steel
+a small bunch of herbs in a glass on the far sill | 0.45 | 0.01-0.04 | fresh green
+a small stack of plates on a distant shelf | 0.4 | 0.01-0.05 | white porcelain

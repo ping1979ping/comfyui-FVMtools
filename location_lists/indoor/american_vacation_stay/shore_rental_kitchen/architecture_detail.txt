@@ -1,14 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-sand in the floor grout lines | 0.6 | 0.05-0.2 | swept but back again
-slider track gritty underfoot | 0.5 | 0.03-0.1 | crunching roll
-painted beadboard backsplash | 0.5 | 0.1-0.3 | chipped ridges
-outlet covers hand-painted | 0.35 | 0.02-0.06 | tiny lighthouse motif
-cabinet doors that swell shut | 0.4 | 0.05-0.15 | humid stick
-screen door with a torn corner | 0.45 | 0.05-0.15 | patched square
-rust freckles on the range hood | 0.4 | 0.03-0.1 | salt-air pitting
-window crank missing its handle | 0.35 | 0.02-0.06 | pliers nearby
-vinyl floor bubbled near the slider | 0.4 | 0.05-0.15 | sun-lifted seam
-hooks by the door with colored tags | 0.4 | 0.03-0.1 | Sharpie-doodled stars
-ring binder on the counter | 0.45 | 0.02-0.08 | laminated pages
+a white ceiling fan with wicker blades turning far overhead | 0.7 | 0.02-0.1 | slow and quiet
+recessed round lights in the ceiling far overhead | 0.6 | 0.02-0.1 | soft white
+a slim fluorescent panel light in the ceiling far overhead | 0.45 | 0.02-0.1 | even white
+a white window frame with a plain sill above the far sink | 0.6 | 0.02-0.1 | chipped paint, clean
+a plain white door at the far left, closed | 0.5 | 0.02-0.1 | hollow core, brass knob
+white crown molding along the top of the far wall | 0.5 | 0.02-0.1 | smooth paint
+a pendant lamp with a white glass shade hanging high up over the far counter | 0.5 | 0.02-0.1 | soft glow
+a narrow air vent in the far wall near the ceiling | 0.35 | 0.02-0.1 | white plastic
+a thin white shelf along the far wall | 0.45 | 0.02-0.1 | plain painted board
+a wide doorway frame at the far right | 0.4 | 0.02-0.1 | white trim
+a thin wooden valance over the far window | 0.4 | 0.02-0.1 | pale wood

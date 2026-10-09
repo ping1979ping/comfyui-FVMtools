@@ -1,13 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-wall-length glass-door soda cooler | 1.0 | 0.6-1.0 | backlit beverage cooler
-chip rack aisle row | 0.95 | 0.5-0.9 | wire grid with colorful generic snack bags
-coffee station counter backdrop | 0.85 | 0.4-0.8 | stainless drip-machine row
-scratch-ticket display behind counter | 0.85 | 0.3-0.6 | colorful printed roll dispensers
-cigarette display wall behind cashier | 0.7 | 0.3-0.6 | locked plastic-fronted shelves
-slushie machine wall row | 0.8 | 0.3-0.6 | spinning glass cylinder tubs
-ATM and lottery kiosk wall | 0.6 | 0.2-0.5 | generic glowing touch terminals
-beer cave glass-door wall | 0.7 | 0.5-0.9 | cold case with cans visible
-front window with starburst decals | 0.85 | 0.4-0.8 | sticker-covered glass with colorful abstract shapes
-hot food warming case backdrop | 0.7 | 0.3-0.6 | lit deli-style cabinet
+a wall of glass-door beverage coolers across the far side of the store | 1.0 | 0.6-1.0 | rows of backlit bottles and cans in colorful generic packaging, cool white light behind frosted glass
+a back wall of stocked wire shelves across the whole width of the image | 0.9 | 0.6-1.0 | snack bags in assorted colors on steel racks, bright white ceiling light above
+a beer cave of glass cooler doors along the far wall | 0.7 | 0.5-0.9 | cold case with rows of cans, bright cool backlight, frost at the door edges
+a stainless coffee and fountain drink counter along the far right | 0.85 | 0.4-0.8 | a row of drip machines, stacks of paper cups, a dark laminate back panel
+a long checkout counter across the far end of the store | 0.8 | 0.4-0.8 | laminate top, a pale wall of candy shelves behind it, all empty behind the counter
+a wide front glass wall across the far side with the fuel canopy beyond | 0.75 | 0.5-0.9 | fuel pumps in the distance, a gray concrete lot, daylight spilling onto the floor
+a hot food warming case at the far right | 0.6 | 0.3-0.7 | lit glass cabinet with empty steel trays, warm amber light
+a frozen drink machine row at the far left | 0.6 | 0.3-0.7 | spinning clear tubs of red and blue slush, a stainless base
+a far aisle of motor oil bottles and washer fluid jugs on steel shelves | 0.55 | 0.5-0.9 | bright plastic jugs in orange, blue and white along the whole width of the image
+a row of glass-door freezers along the far wall | 0.65 | 0.5-0.9 | frosted doors with bright white light behind them, frozen goods stacked inside
+a glass-door walk-in cooler at the far left | 0.5 | 0.3-0.7 | closed, bottles in rows behind the glass, cold blue-white light
+a far wall of pegboard hooks hung with bags of chips | 0.6 | 0.5-0.9 | colorful snack bags in neat rows across the width of the image
+a tall candy shelf wall at the far side | 0.6 | 0.5-0.9 | rows of wrapped bars in red, blue and gold, white shelving, bright light
+a far wall of steel shelves of canned drinks and bottled water | 0.6 | 0.6-1.0 | cases stacked to the ceiling across the width of the image

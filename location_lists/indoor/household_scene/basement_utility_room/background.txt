@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-unfinished concrete block wall | 1.0 | 0.7-1.0 | rough gray masonry
-painted poured concrete wall | 0.85 | 0.6-1.0 | softly chalky surface
-exposed brick foundation wall | 0.7 | 0.5-0.9 | aged red masonry
-unpainted drywall section | 0.75 | 0.5-0.9 | taped joint surface
-exposed framing stud bay | 0.85 | 0.5-0.9 | rough timber slots
-half-finished paneled wall | 0.6 | 0.4-0.8 | partial board cover
-small high egress window | 0.85 | 0.3-0.6 | small frosted slot
-utility box wall niche | 0.7 | 0.3-0.6 | recessed metal panel
-metal shelving back wall | 0.85 | 0.5-0.9 | stacked utility racks
-sump pit corner wall | 0.6 | 0.3-0.6 | painted concrete recess
+a painted concrete block wall across the far side of the basement | 1.0 | 0.6-1.0 | pale gray blocks across the whole width of the image, a row of exposed pipes running along the top, plain and clean
+a far wall of tall steel storage shelving along the back of the room | 0.9 | 0.6-1.0 | gray metal racks across the whole width of the image, plastic bins in even rows, a bare ceiling light above
+the poured concrete foundation wall at the far end of the room | 0.85 | 0.6-1.0 | smooth pale gray surface with faint form lines, a small frosted window high up at the far right
+a white furnace and water heater against the far wall | 0.8 | 0.5-0.9 | painted metal cabinets side by side, silver ducts rising to the ceiling above, a gray breaker box on the wall beside them
+an exposed joist ceiling and block back wall across the far side | 0.75 | 0.6-1.0 | white painted joists receding, copper and white pipes along them, a pale wall below
+a far wall of exposed wooden studs with pink insulation between them | 0.6 | 0.5-0.9 | unfinished framing across the whole width of the image, a plain wire run along the studs
+a half-finished paneled wall at the far end of the basement | 0.55 | 0.5-0.9 | pale beadboard on the lower half, bare concrete block above it, a plain doorway on the left
+a white washer and dryer pair against the far wall | 0.7 | 0.4-0.8 | front-loading machines side by side, a deep plastic laundry sink to their right, a bare wall behind
+a long plain workbench against the far wall under a hanging light | 0.6 | 0.4-0.8 | wood top, clean and cleared, pale pegboard above it with no tools
+the open stair run at the far side of the basement | 0.5 | 0.4-0.8 | plain wood treads rising to a lit doorway at the top, a concrete wall beside it
+a far wall of gray painted block with a high row of small windows | 0.6 | 0.5-0.9 | narrow frosted panes letting in dim light along the top, a white dehumidifier below
+a ceiling of white painted ductwork and joists over the whole far side | 0.6 | 0.5-0.9 | round and rectangular metal ducts along the full width of the image, pale block wall under them
+a far corner with a deep sump pit cover and pipes | 0.45 | 0.4-0.8 | round gray lid in the floor, copper and white pipes rising along the block wall

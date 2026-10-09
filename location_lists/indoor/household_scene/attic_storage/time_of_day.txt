@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-dim morning gable light | 0.85 | - | -
-midday slatted dust beams | 0.85 | - | -
-warm afternoon shaft of light | 0.85 | - | -
-overcast dim diffusion | 0.85 | - | -
-golden late-day glow | 0.75 | - | -
-twilight shadowed hush | 0.85 | - | -
-bare bulb yellow glow | 0.9 | - | -
-deep night shadow | 0.7 | - | -
-flashlight beam pool | 0.7 | - | -
-soft early dawn dim | 0.7 | - | -
+dim afternoon light through a small gable window | 0.9 | - | -
+slanted dusty midday light from the dormer window | 0.85 | - | -
+soft overcast light and a single bare bulb | 0.85 | - | -
+warm low late-afternoon light through the vent | 0.75 | - | -
+a bare bulb glowing in the evening dusk | 0.85 | - | -
+dim blue twilight at the gable window | 0.7 | - | -
+one bare bulb on at night, deep shadows beyond | 0.7 | - | -
+pale early-morning light through the dormer | 0.65 | - | -
+a work lamp lit, the rest of the attic in shadow | 0.6 | - | -
+dull gray daylight through the louvered vent | 0.75 | - | -

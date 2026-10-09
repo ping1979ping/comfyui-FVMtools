@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-stacked storage trunks | 1.0 | 0.4-0.8 | weathered timber chests
-taped cardboard box pile | 0.95 | 0.4-0.8 | brown packing cartons
-draped sheet over furniture | 0.85 | 0.3-0.6 | softly fallen white cloth
-old wooden dresser piece | 0.7 | 0.3-0.5 | softly worn finish
-plastic storage bin tower | 0.85 | 0.3-0.6 | clear lidded boxes
-forgotten rocking chair | 0.6 | 0.2-0.5 | weathered timber frame
-hanging garment bags | 0.7 | 0.3-0.5 | zipped fabric covers
-old steamer trunk | 0.75 | 0.2-0.4 | leather strapped chest
-abandoned dress form | 0.55 | 0.1-0.3 | cloth-padded torso
-holiday decoration boxes | 0.85 | 0.3-0.6 | seasonal cartons tied with colored string
-old picture frame stack | 0.65 | 0.1-0.3 | leaning artwork pile
-free-hanging lightbulb | 0.7 | 0.1-0.2 | bare pendant fitting
+a low stack of taped cardboard boxes a few meters back on the left | 0.9 | 0.3-0.5 | plain brown cartons, three high, with a dust sheet over the top
+a white dust sheet draped over furniture a few meters back on the right | 0.85 | 0.3-0.5 | soft folds hiding a cupboard, edges grazing the floor
+a stack of clear plastic bins a few meters back on the right | 0.8 | 0.3-0.5 | lidded totes in two columns, filled with folded fabric
+an old wooden dresser against the rafters a few meters back on the left | 0.65 | 0.2-0.4 | dark worn finish, drawers closed, a dust sheet half pulled off
+an empty rocking chair a few meters back on the left | 0.5 | 0.2-0.4 | weathered wood frame, still, a folded quilt over the back
+an old leather-strapped steamer trunk a few meters back at the center | 0.65 | 0.2-0.4 | worn dark trunk with brass corners, closed, on the plank floor
+a rolled rug leaning on the chimney a few meters back on the right | 0.5 | 0.2-0.4 | tightly rolled faded wool, tied with cord
+a wooden crate pile a few meters back near the center | 0.55 | 0.2-0.4 | rough slatted crates stacked two high, closed
+a few zipped garment bags hanging from a rafter rail a few meters back on the left | 0.6 | 0.2-0.4 | pale fabric covers hanging in a row, still
+an empty bed frame leaned on its side a few meters back on the right | 0.45 | 0.2-0.4 | dark wood headboard against the rafter slope
+an old wooden table pushed against the knee wall a few meters back | 0.5 | 0.2-0.4 | scratched top, empty, a dust sheet folded on one end
+two stacked wooden chairs a few meters back on the left | 0.45 | 0.2-0.4 | caned seats stacked upside down, dusty
+a wardrobe with closed doors a few meters back on the right | 0.5 | 0.2-0.4 | dark dull wood, standing against the rafters, a dust sheet over one side
+a tall mirror leaned against the rafters a few meters back on the left | 0.4 | 0.2-0.4 | dusty glass reflecting the dim room, wooden frame

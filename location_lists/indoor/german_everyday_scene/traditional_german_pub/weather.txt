@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-warm stuffy pub air | 1.0 | - | -
-faint hops-and-malt aroma | 0.85 | - | -
-hazy golden lamplight | 0.7 | - | -
-cold rain outside the windows | 0.6 | - | -
-draught of chilly air at door | 0.5 | - | -
-steam from hot dishes | 0.5 | - | -
-muffled murmur of conversation | 0.55 | - | -
-snow melting on coats | 0.4 | - | -
-still cosy shelter from storm | 0.45 | - | -
-warm woodstove radiant heat | 0.4 | - | -
+warm still air with hazy golden lamplight | 1.0 | - | -
+cold rain streaking the leaded window | 0.6 | - | -
+dusk-blue sky beyond the front window | 0.7 | - | -
+first snow falling past the leaded window | 0.4 | - | -
+bare trees outside the leaded glass | 0.45 | - | -
+fog softening the street lamps outside | 0.45 | - | -
+warm steady glow from the tiled stove | 0.55 | - | -
+clear night sky beyond the front window | 0.6 | - | -
+flat overcast gray light beyond the window | 0.5 | - | -
+crisp autumn evening beyond the glass | 0.55 | - | -
+low gray cloud beyond the leaded window | 0.45 | - | -

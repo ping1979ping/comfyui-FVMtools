@@ -1,13 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-profiled crown molding | 0.85 | 0.1-0.3 | painted decorative edge
-tall baseboard trim | 0.9 | 0.1-0.3 | painted wide skirting
-chair rail midway band | 0.8 | 0.1-0.3 | profiled wood molding
-profiled chunky hooks | 0.95 | 0.1-0.3 | turned painted pegs
-deep window sill ledge | 0.75 | 0.1-0.3 | thick painted shelf
-arched cubby openings | 0.65 | 0.2-0.4 | softly rounded recess
-flush ceiling fixture | 0.85 | 0.1-0.3 | painted pendant cap
-front door transom panel | 0.7 | 0.2-0.4 | divided glass strip
-beadboard ceiling planks | 0.65 | 0.3-0.6 | painted board grid
-colored cubby marker plates | 0.65 | 0.05-0.15 | small enamel tags
+a row of black iron hooks along the far wall | 0.7 | 0.02-0.08 | empty, evenly spaced
+a transom window above the far door | 0.6 | 0.03-0.1 | clear glass, white frame
+recessed ceiling lights in a line far overhead | 0.7 | 0.02-0.08 | soft warm points of light
+a white beadboard ceiling far overhead | 0.45 | 0.03-0.1 | plain painted
+a thin black door handle on the far door | 0.4 | 0.01-0.05 | matte iron
+a wall sconce on the far wall at the left | 0.5 | 0.02-0.08 | black metal, warm light
+a small window high up on the far right | 0.5 | 0.03-0.1 | white frame, daylight
+a wood threshold at the far door | 0.4 | 0.02-0.06 | worn oak
+a painted plank ceiling beam far overhead | 0.4 | 0.03-0.1 | white, plain
+a slim ceiling vent far overhead at the back | 0.3 | 0.02-0.06 | white grille
+a wide white door casing in the far right corner | 0.5 | 0.05-0.12 | plain trim, closed door

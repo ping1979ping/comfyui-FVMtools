@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-mason jar row of preserves | 0.95 | 0.1-0.3 | clear sealed glass
-canned goods stacked tier | 0.9 | 0.1-0.3 | metal can rows with plain colored bands
-spice jar set | 0.85 | 0.1-0.25 | matched glass containers filled with colorful spices
-woven storage baskets | 0.85 | 0.1-0.25 | natural reed weave
-flour and sugar canisters | 0.85 | 0.1-0.25 | matching enamel set
-oil and vinegar bottles | 0.75 | 0.05-0.15 | clear stoppered glass
-paper towel roll on holder | 0.7 | 0.05-0.15 | mounted dispenser bar
-cookbook stack on shelf | 0.7 | 0.1-0.25 | hardback volumes with plain cloth covers
-folded linen tea towels | 0.7 | 0.05-0.15 | crisp cotton stack
-wine bottle row | 0.65 | 0.1-0.25 | dark glass cylinders
-hanging garlic braid | 0.6 | 0.05-0.15 | dried bulb plait
-small kitchen scale | 0.65 | 0.05-0.15 | cream enamel face
+a small wooden bowl of apples on the far counter | 0.6 | 0.02-0.06 | red and green
+a small glass jar of pasta on a high shelf at the back | 0.6 | 0.02-0.06 | clear glass, pale noodles
+a small woven basket on the top shelf far on the left | 0.6 | 0.02-0.06 | natural fiber
+a small white ceramic canister on a far shelf | 0.6 | 0.02-0.05 | plain glaze, lid on
+a slim glass bottle of olive oil on a far shelf | 0.5 | 0.01-0.04 | plain, no print, green gold
+a small stack of linen cloths on a far shelf | 0.4 | 0.02-0.05 | natural beige
+a small bunch of dried herbs hanging far on the right | 0.4 | 0.01-0.04 | green gray
+a compact wooden scoop in a jar on the far counter | 0.35 | 0.01-0.04 | pale wood
+a small glass jar of oats on a far shelf | 0.5 | 0.02-0.05 | clear glass
+a small bowl of lemons on a distant counter | 0.5 | 0.02-0.06 | bright yellow
+a slim stack of white bowls on a high shelf at the back | 0.4 | 0.02-0.05 | matte glaze
+a small clear jar of brown sugar on a far shelf | 0.4 | 0.01-0.04 | glass, lid on

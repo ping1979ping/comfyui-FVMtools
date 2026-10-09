@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-HVAC office-cool dry air | 0.95 | - | -
-summer AC chill running | 0.8 | - | -
-winter dry heat from vent | 0.8 | - | -
-muggy stuffiness mid-summer | 0.55 | - | -
-rain visible through small window | 0.65 | - | -
-snow piling on outside ledge | 0.55 | - | -
-overcast grey through blinds | 0.7 | - | -
-warm afternoon dry stillness | 0.7 | - | -
-faint antiseptic mint smell in cool air | 0.5 | - | -
-quiet drone of white-noise machine | 0.45 | - | -
+cool dry office air, still and even | 0.95 | - | -
+soft gray overcast daylight through the window blinds | 0.8 | - | -
+light rain on the window glass beyond the blinds | 0.6 | - | -
+crisp clear winter daylight at the small window | 0.6 | - | -
+warm still air with pale summer sun at the window | 0.6 | - | -
+gentle snowfall visible beyond the window blinds | 0.45 | - | -
+bright clear sky light across the window sill | 0.6 | - | -
+calm air with a soft haze of morning light | 0.5 | - | -
+gray drizzle beyond the small picture window | 0.5 | - | -
+quiet cool air with pale autumn light at the window | 0.6 | - | -
+flat overcast light and still air | 0.7 | - | -

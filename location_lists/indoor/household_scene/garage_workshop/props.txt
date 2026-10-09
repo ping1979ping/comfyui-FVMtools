@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-cordless drill on bench | 0.85 | 0.05-0.15 | molded plastic body
-socket set in open case | 0.8 | 0.05-0.15 | foam insert tray
-hammer hung on pegboard | 0.85 | 0.05-0.15 | claw-head wood handle
-screwdrivers in rack | 0.85 | 0.05-0.15 | colored handle row
-bench vise mounted to top | 0.85 | 0.05-0.15 | cast iron jaws
-glass jars of fasteners | 0.8 | 0.1-0.25 | mason-style screw lids
-project sketch pinned up | 0.65 | 0.05-0.15 | paper sheet of simple line drawings
-oil bottle on shelf | 0.7 | 0.05-0.1 | small plastic vessel
-wood glue bottle | 0.65 | 0.05-0.1 | yellow squeeze bottle
-tape measure on hook | 0.85 | 0.05-0.1 | clipped retractable
-safety glasses on bench | 0.75 | 0.05-0.1 | clear plastic frame
-hearing protectors hung | 0.65 | 0.05-0.1 | foam cup ear muffs
+a small cordless drill on the far workbench | 0.6 | 0.01-0.04 | yellow body, resting
+a small hammer on a far peg | 0.5 | 0.01-0.04 | wooden handle
+a compact toolbox on the far workbench | 0.55 | 0.02-0.05 | red metal case, closed
+a small coffee can of screws on a distant shelf | 0.5 | 0.01-0.04 | plain metal
+a slim tape measure on the far bench | 0.45 | 0.01-0.04 | yellow case
+a small clamp hanging at the back of the wall | 0.5 | 0.01-0.04 | steel bar
+a small plastic bin on a distant shelf | 0.6 | 0.02-0.05 | lidded, gray
+a small can of wood stain on a far shelf | 0.4 | 0.01-0.04 | plain metal
+a small pair of safety glasses on a distant bench | 0.45 | 0.01-0.04 | clear lens
+a compact work light clipped to the far shelf | 0.4 | 0.02-0.05 | white metal
+a small pile of wood offcuts at the back | 0.45 | 0.02-0.05 | pale pine
+a slim square level leaning against the far wall | 0.4 | 0.02-0.05 | yellow aluminum

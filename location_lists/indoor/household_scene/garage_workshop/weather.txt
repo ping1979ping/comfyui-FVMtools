@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear bright outdoor day | 0.85 | - | -
-heavy rain drumming roof | 0.75 | - | -
-overcast still atmosphere | 0.85 | - | -
-hot summer humid air | 0.7 | - | -
-crisp autumn cool brightness | 0.75 | - | -
-cold winter shop chill | 0.7 | - | -
-muggy thunderstorm threat | 0.55 | - | -
-breezy spring openness | 0.7 | - | -
-calm dry afternoon | 0.85 | - | -
-distant snow outside | 0.6 | - | -
+cool dry air and steady shop light | 0.9 | - | -
+gray daylight at the small windows | 0.8 | - | -
+cold winter light and still air | 0.75 | - | -
+soft rain light at the high windows | 0.65 | - | -
+warm summer light through the open door | 0.6 | - | -
+crisp autumn light at the small windows | 0.65 | - | -
+still air with a hint of pale dust in the light | 0.7 | - | -
+pale overcast glow at the door | 0.75 | - | -
+clear bright air and sun on the driveway outside | 0.55 | - | -
+muted frost light at the windows | 0.5 | - | -

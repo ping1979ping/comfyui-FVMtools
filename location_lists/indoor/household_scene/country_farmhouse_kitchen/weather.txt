@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear country morning | 0.9 | - | -
-gentle rain on panes | 0.75 | - | -
-overcast pastoral mood | 0.85 | - | -
-warm summer breeze through window | 0.7 | - | -
-crisp autumn day outside | 0.75 | - | -
-quiet snowfall beyond glass | 0.65 | - | -
-hazy harvest afternoon | 0.7 | - | -
-cool spring stillness | 0.8 | - | -
-calm overcast warmth | 0.85 | - | -
-breezy clear afternoon | 0.7 | - | -
+clear morning beyond the window | 0.9 | - | -
+soft rain on the window glass | 0.7 | - | -
+gray overcast sky beyond the glass | 0.8 | - | -
+warm summer light on the green fields | 0.65 | - | -
+crisp autumn light and gold leaves outside | 0.75 | - | -
+frost on the window and pale winter sun | 0.6 | - | -
+light mist over the yard outside | 0.5 | - | -
+fresh spring light on the orchard outside | 0.65 | - | -
+snow-bright light beyond the window | 0.5 | - | -
+still warm air from the stove | 0.7 | - | -

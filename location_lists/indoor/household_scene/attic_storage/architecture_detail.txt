@@ -1,13 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-exposed roof rafter angles | 1.0 | 0.4-0.8 | linear timber slope
-central roof beam line overhead | 0.85 | 0.2-0.5 | central structural span
-dormer window recess | 0.75 | 0.2-0.5 | stepped wall pocket
-attic pull-down ladder hatch | 0.8 | 0.2-0.4 | folded stair section
-exposed nail heads in boards | 0.7 | 0.05-0.2 | scattered rusted points
-brick chimney column | 0.7 | 0.2-0.5 | aged masonry stack
-gable end vent grille | 0.75 | 0.1-0.3 | painted louvered slot
-exposed electrical wiring run | 0.65 | 0.05-0.2 | stapled cable line
-small bare bulb fixture | 0.85 | 0.05-0.2 | exposed pendant socket
-cobweb-laced corner | 0.7 | 0.05-0.2 | thin draped strands
+a bare bulb hanging from a center beam far overhead | 0.9 | 0.02-0.08 | warm yellow glow, a thin cord
+a small louvered gable vent high up on the far wall | 0.7 | 0.02-0.08 | slatted opening, pale light
+a thin brick chimney flue rising at the far right | 0.6 | 0.03-0.1 | aged red brick
+a folded pull-down ladder hatch in the ceiling far down the room | 0.55 | 0.03-0.1 | plain wood frame, shut
+a small dormer window at the far end | 0.7 | 0.03-0.1 | divided panes, soft daylight
+thin cobwebs in the far corner of the rafters | 0.6 | 0.01-0.05 | pale gray threads
+a narrow beam of dusty light from a small far window | 0.65 | 0.02-0.08 | slanted soft shaft
+a thin collar tie across the rafters far overhead | 0.6 | 0.02-0.08 | rough-sawn timber
+a slim stapled cable run along the far rafter | 0.45 | 0.01-0.05 | dark thin wire
+a small round access hatch in the far knee wall | 0.4 | 0.02-0.06 | closed painted board
+a thin cross brace between two far rafters | 0.45 | 0.02-0.08 | weathered timber
+rafter pairs meeting at the peak far above | 0.6 | 0.03-0.1 | dark aged timber

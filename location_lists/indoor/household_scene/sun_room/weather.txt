@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear bright sunny day | 0.95 | - | -
-gentle rain on glass roof | 0.95 | - | -
-overcast diffused mood | 0.9 | - | -
-muggy summer warmth | 0.7 | - | -
-crisp autumn brightness | 0.85 | - | -
-heavy snowfall beyond glass | 0.75 | - | -
-breezy spring fresh openness | 0.85 | - | -
-calm dry afternoon | 0.9 | - | -
-hazy summer haze | 0.75 | - | -
-distant thunder rumble | 0.6 | - | -
+clear blue sky beyond the glass | 0.9 | - | -
+gray overcast sky beyond the windows | 0.8 | - | -
+light rain streaking the glass | 0.5 | - | -
+soft snow falling beyond the windows | 0.4 | - | -
+warm summer sunlight with a green garden beyond | 0.7 | - | -
+crisp autumn light on gold and red leaves beyond | 0.6 | - | -
+thin high cloud and soft shadows | 0.6 | - | -
+bare tree branches beyond the glass | 0.4 | - | -
+fog-pale light beyond the windows | 0.4 | - | -
+still, warm air with steady daylight | 0.7 | - | -

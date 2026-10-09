@@ -1,14 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-exposed beam ceiling | 0.7 | 0.25-0.5 | hand-hewn marks
-stone chimney face | 0.6 | 0.2-0.4 | mortar smears
-plank floor gaps | 0.55 | 0.15-0.4 | draft lines
-gas lamp fixture converted | 0.4 | 0.03-0.1 | wired sconce
-window frames swollen shut | 0.4 | 0.05-0.15 | painted sashes
-stovepipe through the ceiling plate | 0.55 | 0.05-0.15 | heat-discolored ring
-door with a wooden latch | 0.4 | 0.05-0.12 | leather pull
-chinking cracked between logs | 0.4 | 0.05-0.2 | patched seams
-loft rail of peeled poles | 0.45 | 0.1-0.25 | varnish worn
-thermometer nailed by the door | 0.45 | 0.02-0.06 | analog dial
-outlet strip added along the base | 0.4 | 0.02-0.08 | modern retrofit
+dark wooden roof beams crossing high overhead | 0.9 | 0.02-0.1 | rough hewn timber
+a wrought-iron chandelier hanging far overhead in the center | 0.7 | 0.02-0.1 | warm bulbs
+a river-stone chimney flue rising high up at the far left | 0.5 | 0.02-0.1 | gray and tan stones
+a log post at the far right running from floor to ceiling | 0.55 | 0.02-0.1 | honey-colored bark-free log
+chinked mortar lines between the logs along the far wall | 0.5 | 0.02-0.1 | pale gray mortar
+a skylight high up in the pitched ceiling | 0.4 | 0.02-0.1 | soft white daylight
+a wooden staircase with log rails at the far left going up to a loft | 0.45 | 0.02-0.1 | plain pine treads
+a heavy plank door at the far end of the room | 0.45 | 0.02-0.1 | closed, with iron strap hinges
+a wide timber lintel above the far window | 0.4 | 0.02-0.1 | dark hewn beam
+a slim iron stovepipe rising up the far wall | 0.4 | 0.02-0.1 | matte black
+wooden window shutters folded open at the far windows | 0.35 | 0.02-0.1 | weathered pine
+a deep plank window sill along the far glass wall | 0.4 | 0.02-0.1 | wide pale pine

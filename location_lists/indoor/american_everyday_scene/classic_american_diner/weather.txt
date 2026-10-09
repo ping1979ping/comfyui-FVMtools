@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-warm grease-scented air | 1.0 | - | -
-steamy coffee-laden warmth | 0.85 | - | -
-cool air-conditioned hum | 0.7 | - | -
-muggy summer window glare | 0.55 | - | -
-cozy winter condensation on glass | 0.55 | - | -
-faint maple-syrup sweetness | 0.5 | - | -
-rain streaking the storefront | 0.45 | - | -
-still late-night calm | 0.45 | - | -
-snowy street seen through window | 0.4 | - | -
-bustling clatter of dishes | 0.5 | - | -
+clear blue sky beyond the storefront windows | 0.9 | - | -
+light rain streaking the storefront windows | 0.55 | - | -
+gray overcast sky beyond the glass | 0.8 | - | -
+first snow falling past the windows | 0.4 | - | -
+flat overcast gray light beyond the window | 0.5 | - | -
+bare winter trees across the street, cold bright air | 0.5 | - | -
+warm summer haze beyond the windows | 0.6 | - | -
+crisp October sun on the street outside | 0.7 | - | -
+still warm air with soft interior light | 0.85 | - | -
+low gray cloud over the street beyond the glass | 0.55 | - | -
+light fog outside softening the parking-lot lights | 0.4 | - | -

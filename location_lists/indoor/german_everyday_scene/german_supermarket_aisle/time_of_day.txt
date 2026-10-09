@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-flat store lighting throughout | 1.0 | - | -
-quiet early opening hour | 0.7 | - | -
-busy late afternoon | 0.85 | - | -
-after-work rush | 0.8 | - | -
-mid morning lull | 0.75 | - | -
-saturday crowding | 0.7 | - | -
-near closing time | 0.6 | - | -
-lunchtime queueing | 0.65 | - | -
-restocking in progress | 0.55 | - | -
-just after opening | 0.6 | - | -
+even bright store lighting from the ceiling tubes | 1.0 | - | -
+quiet early-morning store light with cool white tubes | 0.7 | - | -
+soft daylight from the far entrance mixed with tube light | 0.75 | - | -
+warm late-afternoon sun at the far entrance doors | 0.6 | - | -
+cool white tube light, even and shadowless | 0.85 | - | -
+bright midday store light, flat and even | 0.8 | - | -
+dim half-lit store light with every other tube on | 0.4 | - | -
+clean white morning light from the ceiling panels | 0.7 | - | -
+pale gray daylight through the far entrance doors | 0.6 | - | -
+soft blue-white light from the chiller cabinets | 0.5 | - | -
+bright overhead light with a faint glow from the chillers | 0.65 | - | -

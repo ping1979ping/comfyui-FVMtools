@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-heavy rain on roof boards | 0.95 | - | -
-overcast still atmosphere | 0.85 | - | -
-hot summer attic stillness | 0.8 | - | -
-cold winter chill | 0.85 | - | -
-distant thunder rumble | 0.7 | - | -
-calm dry afternoon | 0.8 | - | -
-breezy gable ventilation | 0.6 | - | -
-snowfall on roof above | 0.7 | - | -
-hazy stale warmth | 0.7 | - | -
-dim rainy mood | 0.85 | - | -
+still dusty air with slanting window light | 0.9 | - | -
+warm dry summer air under the roof | 0.75 | - | -
+cold still air with pale winter light | 0.8 | - | -
+gray rain light at the gable window | 0.8 | - | -
+soft hazy air with floating dust in the light | 0.8 | - | -
+flat overcast daylight through the dormer | 0.85 | - | -
+bright cold snow light at the dormer window | 0.6 | - | -
+heavy stale warmth and low amber light | 0.65 | - | -
+crisp autumn light through the gable vent | 0.7 | - | -
+still air with a faint blue evening glow | 0.6 | - | -

@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright diner lunch rush | 1.0 | - | -
-sunny mid-morning breakfast crowd | 0.9 | - | -
-warm late-afternoon slow hour | 0.8 | - | -
-neon-lit evening supper | 0.8 | - | -
-late-night after-movie glow | 0.65 | - | -
-early-morning coffee hush | 0.6 | - | -
-golden sunset window light | 0.55 | - | -
-midnight neon-washed quiet | 0.5 | - | -
-hazy Sunday brunch brightness | 0.5 | - | -
-rainy-dusk window glimmer | 0.4 | - | -
+bright late-morning light through the storefront windows | 1.0 | - | -
+soft overcast midday light with the ceiling lights on | 0.85 | - | -
+warm late-afternoon sun slanting through the windows | 0.8 | - | -
+golden low evening sun at the windows, pendant lamps lit | 0.7 | - | -
+dusk blue at the windows, pendant lamps and neon glowing | 0.65 | - | -
+quiet early-morning daylight, lights just switched on | 0.6 | - | -
+bright noon daylight, even and clean | 0.7 | - | -
+late-night glow of neon and ceiling lamps, dark windows | 0.5 | - | -
+pale winter-morning light at the windows | 0.5 | - | -
+soft gray afternoon light, warm interior lamps on | 0.7 | - | -

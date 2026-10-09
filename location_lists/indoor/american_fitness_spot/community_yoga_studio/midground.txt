@@ -1,14 +1,15 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-mats unrolled in loose rows | 1.0 | 0.4-0.7 | staggered spacing
-cork blocks paired at mat tops | 0.7 | 0.1-0.3 | dented corners
-straps coiled beside mats | 0.6 | 0.05-0.15 | buckle ends
-bolster propped against the wall | 0.55 | 0.1-0.3 | flattened middle
-instructor mat facing the room | 0.6 | 0.15-0.3 | centered alone
-water bottles at mat corners | 0.65 | 0.05-0.15 | assorted steel and plastic
-folding chair for a modified pose | 0.35 | 0.1-0.25 | paint-chipped seat
-fan on a stand oscillating | 0.45 | 0.1-0.25 | ribbon tied to the cage
-diffuser puffing in the corner | 0.4 | 0.05-0.15 | mist curl
-someone settled early in child's pose | 0.45 | 0.1-0.3 | still shape
-towels folded at the mat ends | 0.5 | 0.05-0.15 | rental stack
+an open studio floor of bare pale planks a few meters back across the middle | 1.0 | 0.2-0.5 | nothing on it, even soft light
+a long low wooden bench along the left wall a few meters back | 0.7 | 0.2-0.5 | empty, pale wood, cork blocks stacked under it
+two rows of neatly rolled mats on a low wooden rack a few meters back on the right | 0.8 | 0.2-0.5 | soft muted colors
+a tall wooden rack of folded blankets and bolsters a few meters back on the left | 0.7 | 0.2-0.5 | natural wool and cotton in muted colors
+a wooden ballet barre along the mirror wall a few meters back on the left | 0.5 | 0.2-0.5 | smooth pale wood on slim brackets
+cork blocks and folded straps on a low shelf a few meters back on the right | 0.6 | 0.2-0.5 | natural cork and neutral cotton
+a pale wood cubby unit a few meters back on the left | 0.55 | 0.2-0.5 | empty cubbies with a few folded towels
+a freestanding white room divider a few meters back on the right | 0.4 | 0.2-0.5 | plain fabric panels, soft light through them
+an empty low wooden table with a few smooth stones on it a few meters back on the left | 0.45 | 0.2-0.5 | pale wood, soft light
+a rattan basket and two potted plants a few meters back on the right | 0.5 | 0.2-0.5 | woven basket, leafy fronds, pale floor beneath
+a stack of round meditation cushions a few meters back on the right | 0.55 | 0.2-0.5 | all empty, muted linen covers
+a slim floor fan and a plant stand a few meters back on the left | 0.4 | 0.2-0.5 | white metal, pale floor beneath

@@ -1,14 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-laminate floor in pale wood-look | 0.85 | 0.3-0.6 | sock-polished sheen
-baseboard heater along the wall | 0.5 | 0.05-0.2 | ticking metal fins
-dimmer switch bank by the door | 0.5 | 0.02-0.08 | taped preset marks
-ceiling fan turning slowly | 0.5 | 0.05-0.15 | wobble at speed one
-drop ceiling painted out black | 0.4 | 0.15-0.4 | sprayed grid
-door with a quiet-close arm | 0.4 | 0.05-0.15 | slow hinge
-window film bubbling at a corner | 0.35 | 0.05-0.15 | peeling frost layer
-column wrapped in rope light | 0.35 | 0.05-0.15 | warm coil
-vent hushed to a whisper | 0.4 | 0.03-0.1 | filter taped over
-threshold strip at the entry | 0.4 | 0.02-0.08 | worn aluminum
-wall clock with a silent sweep | 0.45 | 0.03-0.08 | no ticking
+recessed ceiling lights in a line far overhead | 0.8 | 0.02-0.1 | soft white pools of light
+exposed round ducts painted white high up along the ceiling | 0.6 | 0.02-0.1 | matte white metal
+a pale wood door with a brushed steel handle at the far left | 0.6 | 0.02-0.1 | closed, flush
+a slim black window frame at the far end of the room | 0.5 | 0.02-0.1 | thin steel mullions
+a wide white baseboard along the far wall | 0.5 | 0.02-0.1 | clean painted wood
+a thin brass pendant lamp hanging high up at the far side | 0.45 | 0.02-0.1 | warm glow
+acoustic ceiling panels far overhead | 0.4 | 0.02-0.1 | plain white, evenly spaced
+a narrow wall-mounted wooden shelf at the far right | 0.5 | 0.02-0.1 | empty, pale oak
+a round wall light on the far wall at the left | 0.45 | 0.02-0.1 | soft warm glow
+a slim white ceiling fan turning far overhead | 0.4 | 0.02-0.1 | pale blades
+a thin vertical vent grille at the far right of the wall | 0.35 | 0.02-0.1 | white metal
+a frosted glass transom above the far door | 0.4 | 0.02-0.1 | soft white light

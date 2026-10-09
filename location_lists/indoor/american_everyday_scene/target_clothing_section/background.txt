@@ -1,13 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-round rack of women's tops | 1.0 | 0.5-0.9 | dense softgoods on hangers
-back wall hanging-display mural | 0.85 | 0.4-0.8 | oversized photo print of smiling models
-mannequin lineup on platform | 0.85 | 0.3-0.6 | torso forms in coordinated tops
-fitting-room corridor wall | 0.85 | 0.3-0.6 | white painted partition
-clearance-rack wall row | 0.7 | 0.5-0.9 | crammed mixed garments
-A New Day brand signage wall | 0.85 | 0.3-0.6 | white-and-red banner panel{| reading "{A NEW DAY|WOMEN|STYLE}"}
-denim wall folded display | 0.7 | 0.4-0.8 | stacked jeans column
-Cat & Jack kids section divider | 0.5 | 0.3-0.6 | bright graphic backdrop of playful geometric shapes{| and a logo reading "CAT & JACK"}
-endcap display of sale tops | 0.85 | 0.3-0.6 | colorful fixture facing aisle
-mirrored column between racks | 0.7 | 0.3-0.6 | full-length pillar mirror
+the far wall of white painted drywall across the whole width of the image | 1.0 | 0.6-1.0 | a long row of wall-mounted garment rods with folded knit tops and hanging blouses in soft pastels
+a back wall of folded denim in tall white cubbies across the far side | 0.9 | 0.6-1.0 | stacks of blue jeans in several washes, bright white shelving
+rows of round clothing racks stretching far back through the department | 0.9 | 0.5-0.9 | hanging dresses in muted colors, a pale polished floor under bright white lights
+a long wall of folded sweaters in square cubbies across the far side | 0.8 | 0.6-1.0 | cream, gray and navy stacks, a thin red accent stripe along the wall above
+a row of fitting room doors along the far right wall | 0.65 | 0.4-0.8 | closed white louvered doors in a line, a bright corridor light above
+a wall of tall mirrors in thin white frames at the far left | 0.6 | 0.4-0.8 | reflecting the bright racks and ceiling lights
+a far wall of small hanging garments in bright primary colors | 0.6 | 0.5-0.9 | low racks below, white shelves above, evenly lit
+a far wall of hanging t-shirts in color order across the width of the image | 0.75 | 0.6-1.0 | rainbow rows on a white rail, folded stacks on white shelves below
+a far wall of jackets on wall hooks along a white wall | 0.55 | 0.5-0.9 | coats in olive, black and camel in an even row
+a perimeter wall of tall white shelves with folded activewear | 0.6 | 0.5-0.9 | black and gray stacks, bright light across the whole width of the image
+a high ceiling with exposed ducts and rows of white lights across the far side | 0.5 | 0.3-0.7 | red-painted columns standing at wide intervals, clothing racks below
+a far wall of clearance racks packed with mixed garments | 0.5 | 0.5-0.9 | colorful hanging clothes in tight rows on chrome rails
+a far wall of sleepwear in soft pastel stacks on white shelves | 0.5 | 0.5-0.9 | folded sets in pink, gray and pale blue under bright light
+a far wall of hanging dresses on a long white rail | 0.55 | 0.5-0.9 | floral and solid dresses in an even row, bright overhead light

@@ -1,13 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-painted divided window mullions | 1.0 | 0.3-0.7 | crisp grid sashes
-exposed timber rafters | 0.85 | 0.2-0.5 | painted slope spans
-crown molding ceiling line | 0.7 | 0.1-0.3 | profiled painted edge
-deep window sill ledges | 0.95 | 0.2-0.5 | thick painted shelves
-French door transom panel | 0.85 | 0.2-0.4 | divided glass strip
-ceiling skylight panel | 0.65 | 0.2-0.5 | clean glazed inset
-small picture rail line | 0.65 | 0.1-0.3 | thin painted edge
-profiled chair-rail trim | 0.65 | 0.1-0.3 | painted wood molding
-arched window head | 0.55 | 0.1-0.3 | softly curved frame
-flush ceiling pendant cap | 0.7 | 0.1-0.3 | painted ceiling plate
+a white ceiling fan far overhead at the center | 0.65 | 0.02-0.08 | four slim blades
+slim white window mullions along the far wall | 0.7 | 0.03-0.1 | thin painted frames
+a row of transom windows high up on the far wall | 0.55 | 0.03-0.1 | clear glass, white trim
+exposed white rafters far overhead | 0.55 | 0.03-0.1 | painted wood, plain
+a slim wood-framed skylight far overhead | 0.4 | 0.03-0.1 | bright daylight
+a pendant lantern hanging far overhead | 0.4 | 0.02-0.08 | black metal, unlit
+a stone sill along the far windows | 0.5 | 0.03-0.1 | pale gray, smooth
+a thin brass handle on the far french door | 0.35 | 0.01-0.04 | polished
+a plain white crown molding along the top of the far wall | 0.4 | 0.03-0.1 | simple profile
+a thin curtain track along the top of the far windows | 0.4 | 0.02-0.06 | white, plain
+a narrow ceiling vent far overhead at the back | 0.3 | 0.02-0.06 | white grille

@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-wet floor by the entrance | 0.4 | - | -
-no weather visible inside | 0.9 | - | -
-draught from the sliding doors | 0.55 | - | -
-cold draught from the chilled shelves | 0.5 | - | -
-damp air near the entrance | 0.6 | - | -
-umbrellas dripping in the aisle | 0.35 | - | -
-warm air near the bakery | 0.45 | - | -
-condensation on the chiller glass | 0.6 | - | -
-muddy footprints on the floor | 0.35 | - | -
-bright sun at the sliding doors | 0.4 | - | -
+dry still air with a faint chill from the chillers | 0.9 | - | -
+cool air flowing from the open chiller cabinets | 0.6 | - | -
+faint condensation on the chiller glass | 0.6 | - | -
+bright sun on the floor by the far entrance | 0.4 | - | -
+gray rain light at the far entrance glass | 0.5 | - | -
+flat overcast gray light beyond the window | 0.45 | - | -
+warm air by the far bakery counter | 0.5 | - | -
+still air with steady even light | 0.85 | - | -
+clear cold daylight beyond the far entrance | 0.5 | - | -
+light snow falling beyond the far entrance glass | 0.35 | - | -
+mild air with soft light from the doors | 0.55 | - | -

@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-scratch-ticket roll dispenser | 0.95 | 0.05-0.15 | clear plastic case stack
-Slim Jim jar by register | 0.85 | 0.05-0.1 | plastic counter jar
-gum and mint impulse rack | 0.85 | 0.05-0.15 | small cardboard counter strip
-credit card reader on counter | 0.95 | 0.05-0.1 | small terminal with screen
-paper note taped to register{| reading "{CASH ONLY|THANKS}"} | 0.5 | 0.02-0.08 | marker-scrawled paper note
-red LED display panel | 0.8 | 0.05-0.15 | glowing red dot-matrix glow
-beef jerky pack hanging | 0.7 | 0.05-0.1 | foil-bag clip strip
-ice cream freezer chest | 0.7 | 0.1-0.25 | white chest with glossy frozen-treat illustrations
-tire air hose with gauge | 0.5 | 0.05-0.1 | small round dial on coiled hose
-hand sanitizer pump near counter | 0.65 | 0.05-0.1 | small clear pump bottle
-window-stuck vinyl decal{| reading "{OPEN 24 HOURS|WELCOME|OPEN}"} | 0.55 | 0.02-0.08 | window-stuck vinyl
-cup-lid stack stack | 0.85 | 0.05-0.15 | translucent plastic tower
+a small paper cup stack at the far end of the coffee counter | 0.8 | 0.01-0.04 | white cups with brown sleeves
+a small bag of chips on a far shelf | 0.7 | 0.01-0.04 | bright foil bag
+a small jar of beef jerky at the back of the far counter | 0.6 | 0.01-0.04 | glass jar with a red lid
+a small bottle of water on a distant shelf | 0.7 | 0.01-0.04 | clear plastic, blue cap
+a small napkin dispenser at the far end of the condiment station | 0.6 | 0.01-0.04 | stainless steel
+a little glass dome with plain donuts on the far counter | 0.5 | 0.02-0.05 | clear dome, pale glaze
+a small box of candy bars at the back of the far counter | 0.55 | 0.01-0.04 | open cardboard box
+a small bunch of bananas in a bowl at the far end of the counter | 0.5 | 0.02-0.05 | yellow, fresh
+a small coffee pot on a distant warmer | 0.55 | 0.01-0.04 | glass pot, dark coffee
+a small bag of ice on top of a far freezer | 0.4 | 0.02-0.05 | clear plastic
+a small red gas can on the floor far down the aisle | 0.35 | 0.02-0.05 | plain red plastic
+a tiny air freshener hanging on a far rack | 0.35 | 0.01-0.03 | pale green card

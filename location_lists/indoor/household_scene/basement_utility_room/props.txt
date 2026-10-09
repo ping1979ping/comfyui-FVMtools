@@ -1,15 +1,14 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-paint can stack | 0.85 | 0.05-0.2 | metal lidded cylinders
-empty mason jar collection | 0.7 | 0.05-0.15 | clear stacked vessels
-folded ladder against wall | 0.7 | 0.05-0.2 | aluminum rung pair
-old vinyl record crate | 0.6 | 0.1-0.25 | cardboard sleeve box
-holiday tree storage box | 0.7 | 0.1-0.25 | tall taped carton
-tool toolbox metal case | 0.7 | 0.05-0.15 | small portable chest
-spare paint roller tray | 0.55 | 0.05-0.1 | plastic angled pan
-empty cardboard recycle pile | 0.65 | 0.1-0.25 | flattened brown stack
-spare lightbulb pack | 0.6 | 0.05-0.1 | molded plastic case
-detergent jug cluster | 0.7 | 0.05-0.15 | colored plastic vessels
-folded camping gear | 0.6 | 0.1-0.25 | rolled fabric bundle
-emergency flashlight on shelf | 0.6 | 0.05-0.1 | dark plastic torch
+a small white plastic bucket at the far end of the shelves | 0.7 | 0.01-0.04 | clean, empty
+a small cardboard carton on a distant shelf | 0.7 | 0.01-0.04 | plain, taped shut
+a compact gray toolbox on the far workbench | 0.55 | 0.02-0.05 | closed metal case
+a small coiled green hose on a hook at the back | 0.5 | 0.02-0.05 | neat loop
+a slim step ladder folded against the far wall | 0.5 | 0.03-0.06 | aluminum, closed
+a small clear bin on a distant steel shelf | 0.65 | 0.01-0.04 | lidded, folded cloth inside
+a compact flashlight on a distant shelf | 0.4 | 0.01-0.04 | dark plastic
+a small stack of white towels on the far dryer | 0.45 | 0.02-0.05 | neatly folded
+a small plastic jug at the back of the shelf | 0.5 | 0.01-0.04 | blank, pale blue
+a slim broom leaning in the far corner | 0.45 | 0.02-0.05 | pale handle
+a small round laundry basket beside the far machines | 0.4 | 0.02-0.05 | empty, white plastic

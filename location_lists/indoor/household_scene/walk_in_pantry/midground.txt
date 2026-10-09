@@ -1,15 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-central narrow counter run | 0.95 | 0.4-0.8 | butcher block top
-floor-to-ceiling shelving unit | 1.0 | 0.5-0.9 | open painted timber
-hanging basket ladder rack | 0.7 | 0.3-0.6 | sliding library system
-deep drawer base cabinet | 0.85 | 0.3-0.6 | painted pull-out fronts
-rolling step stool kick | 0.7 | 0.2-0.4 | spring-loaded round step
-appliance garage shelf | 0.7 | 0.3-0.5 | tucked appliance niche
-hanging utensil bar overhead | 0.65 | 0.2-0.5 | brushed steel rail
-storage island prep block | 0.6 | 0.3-0.6 | freestanding worktop
-wine rack column | 0.6 | 0.2-0.5 | timber slot pattern
-canned goods tier stand | 0.7 | 0.2-0.5 | wire stepped rack
-overhead cabinet glass fronts | 0.7 | 0.3-0.5 | clear paned doors
-broom hook rail | 0.6 | 0.2-0.5 | mounted hook strip
+a narrow butcher block counter a few meters back on the right | 0.8 | 0.2-0.5 | clear surface, open shelves above it
+a rolling wooden step ladder a few meters back on the left | 0.5 | 0.15-0.4 | pale wood, folded flat
+a wall of shelves on the left a few meters back | 0.9 | 0.3-0.5 | stacked woven baskets on the lower rows, clear jars above
+a deep wall of shelves on the right a few meters back | 0.9 | 0.3-0.5 | rows of plain glass jars, white ceramic canisters
+a slim chest freezer a few meters back on the left | 0.4 | 0.2-0.4 | white, closed lid
+a tall closed pantry cabinet a few meters back at the center | 0.5 | 0.2-0.4 | white doors with brass pulls
+a stack of wooden crates a few meters back on the right | 0.45 | 0.15-0.4 | pale wood, stacked two high, empty
+an open doorway a few meters back at the center | 0.5 | 0.2-0.4 | soft kitchen light beyond, white trim
+a dark wood wine rack a few meters back on the left | 0.4 | 0.2-0.4 | angled slots with a few bottles
+a wall-mounted counter with a wood top a few meters back on the right | 0.5 | 0.2-0.4 | clear surface, one empty stool pushed in below
+a pull-out drawer unit a few meters back on the left | 0.45 | 0.2-0.4 | pale oak fronts, closed
+a slim rolling cart a few meters back on the right | 0.4 | 0.15-0.4 | three tiers, white metal, empty
+a row of woven baskets on the floor a few meters back along the left wall | 0.4 | 0.15-0.4 | natural fiber, empty

@@ -1,15 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-scuffed wooden plank floor | 1.0 | 0.2-0.4 | worn boards with sawdust traces
-beer-stained bar top | 0.9 | 0.2-0.4 | ring marks on dark varnish
-foamy beer glass on coaster | 0.85 | 0.1-0.3 | golden Pils with thick head
-cardboard beer mats stack | 0.6 | 0.05-0.2 | round coasters with simple colored emblems
-heavy stoneware stein | 0.55 | 0.1-0.25 | grey-and-blue glazed handle mug
-checked tablecloth corner | 0.45 | 0.1-0.25 | red-white cloth on table
-worn brass foot rail | 0.5 | 0.1-0.2 | tarnished bar-base tube
-wooden table with carved hearts | 0.5 | 0.1-0.3 | knife-scratched oak
-shot glass of schnapps | 0.45 | 0.05-0.15 | clear spirit beside a beer
-pretzel basket on table | 0.4 | 0.1-0.2 | cloth-lined wicker with salted knots
-drip tray with tap condensation | 0.35 | 0.05-0.15 | steel grille under spouts
-stone tile entry floor | 0.35 | 0.1-0.25 | slate slabs with wet boot prints
+a dark oak plank floor | 0.9 | 0.2-0.4 | matte and even
+a quarry tile floor | 0.5 | 0.2-0.4 | smooth and even
+a smooth dark oak floor | 0.6 | 0.2-0.4 | matte and even
+a wide beech plank floor | 0.5 | 0.2-0.4 | matte and even
+a gray stone floor | 0.45 | 0.2-0.4 | fine sawdust traces
+a walnut-brown parquet floor | 0.5 | 0.2-0.4 | smooth and even
+a scrubbed pale oak plank floor | 0.5 | 0.2-0.4 | smooth and even
+a charcoal flagstone floor | 0.5 | 0.2-0.4 | even and matte
+a plain dark green linoleum floor | 0.4 | 0.2-0.4 | smooth and even
+a plain oak plank floor | 0.8 | 0.1-0.4 | even grain, satin finish
+a plain maple plank floor | 0.7 | 0.1-0.4 | smooth and even
+a plain gray slate floor | 0.7 | 0.1-0.4 | flat and even

@@ -1,13 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-four-way garment rack island | 0.95 | 0.3-0.6 | metal cross-arm fixture
-torso mannequin on pedestal | 0.85 | 0.2-0.4 | beige fiberglass form
-hanging-rod waterfall display | 0.85 | 0.2-0.5 | sloping arm with tops
-red Target shopping cart parked | 0.85 | 0.15-0.3 | bright plastic with wire
-fitting-room queue stanchion | 0.6 | 0.1-0.3 | belt-barrier post
-fixture with size dividers | 0.85 | 0.1-0.25 | acrylic round disks on rod
-folding-table stacked tees | 0.7 | 0.2-0.4 | white laminate display
-cross-aisle perpendicular path | 0.7 | 0.3-0.6 | open polished-floor strip
-accessory island with handbags | 0.6 | 0.2-0.4 | mid-height display unit
-denim folding table | 0.7 | 0.2-0.4 | stacked column of jeans
+a round clothing rack of blouses a few meters back on the left | 1.0 | 0.2-0.4 | dense hangers in soft pastels, chrome frame
+a white display table with stacked folded t-shirts a few meters back on the right | 0.9 | 0.2-0.4 | rolled edge, neat stacks in several colors
+a tall freestanding mirror a few meters back on the left | 0.6 | 0.1-0.3 | thin black frame, reflecting bright racks
+a row of fitting room doors a few meters back on the right | 0.55 | 0.2-0.4 | closed white doors, a pale plank bench in front, empty
+a low endcap of stacked folded sweaters a few meters back at the center | 0.7 | 0.2-0.4 | cream and gray stacks on a white fixture
+a low wire bin of rolled socks a few meters back on the left | 0.45 | 0.1-0.3 | bright mixed colors
+a low cube display of stacked folded jeans a few meters back on the left | 0.65 | 0.2-0.4 | blue denim in neat rows, white cubes
+a four-way rack of summer dresses a few meters back on the right | 0.6 | 0.2-0.4 | chrome arms, light fabrics in soft colors
+a tall rack of jackets a few meters back at the center | 0.55 | 0.2-0.4 | dark coats on hangers, chrome frame
+a white display table with stacked folded scarves a few meters back on the left | 0.4 | 0.1-0.3 | neat piles in autumn colors
+a pillar wrapped in white laminate a few meters back on the right | 0.4 | 0.1-0.3 | red band at the top, clean surface
+a low stacked pile of folded hoodies on a white table a few meters back at the right | 0.5 | 0.2-0.4 | gray and navy
+a slim rack of belts and bags a few meters back on the left | 0.4 | 0.1-0.3 | hanging accessories, chrome hooks

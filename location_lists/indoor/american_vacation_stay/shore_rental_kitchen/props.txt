@@ -1,14 +1,16 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-boogie board leaned in the corner | 0.5 | 0.05-0.2 | wax-scraped deck
-sunglasses collection by the sink | 0.55 | 0.02-0.08 | family assortment
-saltwater taffy box open | 0.45 | 0.02-0.08 | wrappers twisted
-citronella candle tin | 0.45 | 0.02-0.06 | blackened wick
-paper plates in a holder | 0.5 | 0.02-0.08 | wicker frame
-koozies scattered on the counter | 0.5 | 0.02-0.08 | plain souvenir foam
-crab mallet and picks in a cup | 0.4 | 0.02-0.06 | seasoned wood
-ice pop wrappers balled up | 0.45 | 0.02-0.06 | sticky twist
-disposable camera someone brought | 0.3 | 0.02-0.05 | wind wheel
-lost flip flop under a stool | 0.45 | 0.02-0.06 | orphaned single
-hose-rinsed goggles on the rack | 0.45 | 0.02-0.06 | strap tangle
+a small glass bowl of lemons on the far counter | 0.6 | 0.01-0.05 | bright yellow
+a compact white coffee maker at the back of the far counter | 0.6 | 0.01-0.05 | plastic and glass
+a small blue ceramic jar at the back of the far counter | 0.5 | 0.01-0.05 | glazed
+a small wicker basket on top of the far cabinets | 0.5 | 0.01-0.05 | pale fiber
+small seashells in a glass dish on the far windowsill | 0.5 | 0.01-0.05 | cream and pink
+a small potted herb on the far windowsill | 0.5 | 0.01-0.05 | green leaves
+a slim white dish rack at the back of the far sink | 0.4 | 0.01-0.05 | plastic
+a small stack of white plates on a far open shelf | 0.45 | 0.01-0.05 | plain china
+a small toaster at the far end of the counter | 0.45 | 0.01-0.05 | chrome
+a tiny glass vase with a flower at the back of the far counter | 0.4 | 0.01-0.05 | clear glass
+a small striped dish towel hanging on the far oven handle | 0.4 | 0.01-0.05 | blue and white
+a compact white kettle on the far range | 0.4 | 0.01-0.05 | glossy
+a small cutting board leaning at the back of the far counter | 0.35 | 0.01-0.05 | pale wood

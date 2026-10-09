@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-copper kettle on stovetop | 0.8 | 0.05-0.15 | hammered warm metal
-ceramic mixing bowl set | 0.85 | 0.1-0.25 | nested stoneware
-wooden rolling pin on board | 0.75 | 0.05-0.15 | smooth turned timber
-vintage scale on counter | 0.7 | 0.05-0.15 | cream enamel face
-glass cake stand with dome | 0.7 | 0.05-0.15 | clear pressed pedestal
-bunches of garlic and onions | 0.7 | 0.05-0.2 | woven plait strings
-patterned ceramic plates | 0.8 | 0.1-0.25 | hand-painted edges
-butter crock with lid | 0.65 | 0.05-0.15 | small stoneware jar
-woven bread basket | 0.75 | 0.05-0.2 | natural reed weave
-canning jars with preserves | 0.8 | 0.1-0.25 | rows of glass jars
-tin canister set | 0.7 | 0.05-0.2 | painted vintage flower motifs
-chipped enamelware mugs | 0.65 | 0.05-0.15 | softly worn finish
+a small enamel kettle on the far stove | 0.65 | 0.01-0.05 | cream with a dark rim
+a small bowl of red apples on a distant table | 0.65 | 0.02-0.05 | pale ceramic
+a small jug of wildflowers on the far windowsill | 0.6 | 0.01-0.04 | slim blue glaze
+a compact cast-iron pan on a far hook | 0.5 | 0.02-0.05 | black
+a small basket of eggs on a distant counter | 0.5 | 0.01-0.04 | woven willow
+a small stack of white plates on a far shelf | 0.6 | 0.02-0.05 | plain glaze
+a slim wooden rolling pin on a far counter | 0.4 | 0.01-0.04 | pale wood
+a small crock of wooden spoons on a distant counter | 0.5 | 0.02-0.05 | stoneware
+a small loaf of bread on a board at the back | 0.45 | 0.01-0.04 | golden crust
+a small blue-glazed pitcher on a distant dresser | 0.45 | 0.02-0.05 | ceramic
+a small bunch of dried herbs hanging far overhead | 0.4 | 0.01-0.04 | pale green bundle
+a small ceramic mixing bowl at the far end of the counter | 0.4 | 0.02-0.05 | cream

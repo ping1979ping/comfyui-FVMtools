@@ -1,15 +1,15 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-swivel counter stool row | 1.0 | 0.3-0.5 | red vinyl seats on chrome posts
-tabletop jukebox | 0.9 | 0.2-0.4 | glowing selector with chrome arches
-freestanding wall jukebox | 0.8 | 0.2-0.4 | rainbow bubble tube cabinet
-booth table with napkin dispenser | 0.9 | 0.25-0.5 | speckled laminate top
-milkshake mixer station | 0.7 | 0.15-0.3 | spindle blenders and steel cups
-waitress service pass | 0.65 | 0.2-0.4 | pastel uniform with pad and pencil
-glass cake dome stand | 0.6 | 0.15-0.3 | frosted layer cake on pedestal
-round chrome-legged table | 0.6 | 0.2-0.4 | formica top with bent-metal base
-coffee urn station | 0.55 | 0.15-0.3 | steaming steel brewer on shelf
-short-order griddle line | 0.5 | 0.2-0.4 | sizzling flat-top with spatulas
-cash register counter end | 0.5 | 0.15-0.3 | brass-keyed vintage till
-sidewalk-facing window booth | 0.5 | 0.25-0.45 | bench seats flanking a narrow table
+red vinyl swivel stools along the counter a few meters back on the right | 1.0 | 0.3-0.5 | chrome posts, all empty
+rows of empty booths with speckled laminate tables a few meters back on the left | 0.9 | 0.25-0.5 | red vinyl seats, chrome napkin holders on each table
+the chrome-edged end of the counter a few meters back on the right | 0.75 | 0.2-0.4 | speckled laminate top, all stools empty
+a glowing chrome jukebox against the wall a few meters back on the left | 0.7 | 0.2-0.4 | rainbow tube lights, pastel cabinet
+round chrome-legged tables set for lunch a few meters back across the middle | 0.6 | 0.2-0.4 | formica tops, chairs pushed in, all empty
+a milkshake mixer station on the counter a few meters back on the right | 0.5 | 0.15-0.3 | spindle blenders and steel cups
+a tall glass cake dome on the counter a few meters back on the left | 0.5 | 0.15-0.3 | frosted layer cake on a chrome pedestal
+a corner booth a few meters back on the left | 0.5 | 0.25-0.45 | tufted red seats, empty, a round window above
+a brass cash register at the end of the counter a few meters back on the right | 0.4 | 0.15-0.3 | vintage till with a cream enamel case
+a row of window booths a few meters back along the left | 0.6 | 0.25-0.45 | bench seats facing each other, all empty, daylight on the tables
+a stainless griddle line behind the counter a few meters back | 0.5 | 0.2-0.4 | clean flat-top under a steel hood, quiet
+a coffee urn station on a back shelf a few meters back on the right | 0.45 | 0.15-0.3 | steel urn and a rack of white mugs

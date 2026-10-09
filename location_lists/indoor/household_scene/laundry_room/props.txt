@@ -1,15 +1,16 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-stacked detergent pods jar | 0.8 | 0.05-0.15 | clear lidded glass
-fabric softener bottle | 0.75 | 0.05-0.15 | plastic colored vessel
-clothespin in painted bin | 0.7 | 0.05-0.15 | small wood pegs
-mesh delicates bag hanging | 0.65 | 0.05-0.15 | soft fine net
-spray-bottle stain remover | 0.7 | 0.05-0.1 | trigger nozzle plastic
-folded ironing cloth | 0.6 | 0.05-0.15 | smooth pressed pad
-wicker hamper with lid | 0.7 | 0.1-0.25 | woven natural reed
-hanger rack of empty hangers | 0.8 | 0.1-0.25 | matched velvet finish
-small succulent on shelf | 0.65 | 0.05-0.1 | concrete planter pot
-botanical wall print | 0.55 | 0.05-0.15 | printed leaf illustration
-sock pair clipped to line | 0.6 | 0.05-0.15 | small drying clip
-linen sachet on shelf | 0.55 | 0.05-0.1 | embroidered pouch
+a small woven basket on a shelf high up at the far wall | 0.8 | 0.02-0.06 | natural rattan, empty
+a small white ceramic jar on a distant counter at the back | 0.6 | 0.01-0.05 | plain glaze, lid on
+a small plain white bottle on the far counter | 0.6 | 0.01-0.05 | smooth, no print
+a slim stack of folded white towels on a far shelf | 0.7 | 0.02-0.06 | crisp cotton
+a small potted green plant on the far counter | 0.6 | 0.02-0.06 | glossy leaves in a white pot
+a small glass jar of wool dryer balls on the far counter | 0.4 | 0.01-0.05 | clear glass, gray wool
+a small folded gray blanket on a high shelf at the back | 0.5 | 0.02-0.06 | soft knit
+a small white wire basket on a low far shelf | 0.5 | 0.02-0.06 | empty
+a small brass hook with a linen apron far on the left | 0.4 | 0.02-0.05 | natural beige
+a small ceramic dish on the far sink edge | 0.4 | 0.01-0.04 | plain white, a bar of soap
+a slim wooden drying rack folded against the far wall | 0.45 | 0.02-0.06 | pale wood
+a small wicker hamper in the far corner | 0.5 | 0.02-0.06 | lid closed, light brown
+a small white towel hanging on a hook at the far left | 0.4 | 0.02-0.05 | plain cotton

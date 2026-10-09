@@ -1,14 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-rubber tile flooring | 0.85 | 0.3-0.6 | chalk-dusted black tiles
-drop ceiling with new and old panels | 0.55 | 0.15-0.35 | mismatched whites
-exposed conduit along the wall | 0.45 | 0.05-0.2 | painted-over runs
-floor-to-ceiling column padded | 0.45 | 0.1-0.25 | taped foam wrap
-AC vent blowing on one machine | 0.4 | 0.05-0.15 | ribbon fluttering
-baseboard scuffed by plates | 0.45 | 0.05-0.15 | dented drywall above
-mirror seam slightly misaligned | 0.4 | 0.05-0.2 | doubled reflection line
-emergency exit with alarm bar | 0.4 | 0.05-0.15 | yellow-and-black hazard stripe sticker
-ceiling fan on a long downrod | 0.4 | 0.05-0.15 | wobbling slowly
-platform edge with worn tape | 0.4 | 0.05-0.15 | frayed gaffer layers
-clock cage over the class room | 0.35 | 0.03-0.1 | wire guard
+white ceiling tiles with long fluorescent tubes far overhead | 0.85 | 0.02-0.1 | even cool light
+exposed steel roof trusses painted black high up above the far wall | 0.6 | 0.02-0.1 | matte black
+a row of recessed ceiling lights far overhead | 0.6 | 0.02-0.1 | bright white
+a wide gray steel door at the far left | 0.5 | 0.02-0.1 | closed, with a push bar
+round white ductwork running along the ceiling at the far end | 0.55 | 0.02-0.1 | plain painted metal
+a red accent stripe along the top of the far wall | 0.45 | 0.02-0.1 | flat paint
+a concrete support column at the far right painted gray | 0.5 | 0.02-0.1 | smooth paint
+a large slow ceiling fan hanging far overhead | 0.4 | 0.02-0.1 | black blades
+a narrow high window along the far wall | 0.4 | 0.02-0.1 | frosted glass, soft light
+a black rubber baseboard along the far wall | 0.4 | 0.02-0.1 | matte strip
+a pair of glass entry doors at the far end of the room | 0.45 | 0.02-0.1 | bright daylight beyond
+a thin black cable tray running along the ceiling far overhead | 0.35 | 0.02-0.1 | steel

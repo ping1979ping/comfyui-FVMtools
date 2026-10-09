@@ -1,13 +1,15 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-billiard table with racked balls | 0.95 | 0.3-0.5 | green felt and rail cushions
-high-top table with stools | 0.9 | 0.25-0.45 | scuffed round pub tables
-row of padded bar stools | 0.9 | 0.25-0.45 | red vinyl swivel seats
-wood booth with torn vinyl seats | 0.8 | 0.25-0.45 | worn tufted bench backs
-dartboard cabinet on wall | 0.65 | 0.2-0.35 | bristle board with scattered darts
-arcade trivia game machine | 0.6 | 0.2-0.35 | glowing touchscreen cabinet
-group of fans in team-colored jerseys | 0.75 | 0.25-0.5 | cheering patrons with pint glasses
-bartender pouring a draft | 0.7 | 0.2-0.4 | tilted glass under steady tap stream
-shuffleboard table lane | 0.5 | 0.25-0.45 | long powdered wood surface
-pitcher-topped group table | 0.7 | 0.25-0.4 | shared beer and nacho platters
+empty high-top tables with stools a few meters back across the middle | 1.0 | 0.3-0.5 | scuffed round tops, stools pushed in
+a pool table with racked balls a few meters back on the right | 0.9 | 0.25-0.45 | empty green felt, hanging lamp, rails clear
+a row of red vinyl bar stools along the bar a few meters back on the left | 0.9 | 0.25-0.45 | all empty
+wooden booths a few meters back along the right | 0.8 | 0.25-0.45 | worn tufted seats, all empty
+a dartboard cabinet on the wall a few meters back on the left | 0.55 | 0.15-0.3 | bristle board in a dark wood case
+a shuffleboard table a few meters back on the right | 0.45 | 0.2-0.4 | empty long polished wood lane, sand-dusted
+an arcade trivia cabinet a few meters back on the left | 0.5 | 0.15-0.3 | dark glass front
+round pub tables set with napkin holders a few meters back on the left | 0.7 | 0.2-0.4 | chairs pushed in, all empty
+a long wooden table with empty benches a few meters back at the center | 0.55 | 0.25-0.45 | scarred dark top
+a drink rail along the wall a few meters back on the right | 0.5 | 0.15-0.3 | polished wood with empty stools
+a corner jukebox a few meters back on the right | 0.4 | 0.15-0.3 | chrome and dark wood, unlit
+a rack of cues on the wall a few meters back on the left | 0.4 | 0.1-0.25 | dark wood sticks in a line

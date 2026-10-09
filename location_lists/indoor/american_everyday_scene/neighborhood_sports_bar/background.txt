@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-wall of mounted flat-screen TVs | 1.0 | 0.6-1.0 | glowing field and court footage
-long wooden bar with beer taps | 0.95 | 0.6-1.0 | dark varnished counter and chrome tap tower
-backlit liquor shelf wall | 0.85 | 0.5-0.9 | glowing amber bottle rows
-neon tube light cluster | 0.85 | 0.4-0.8 | buzzing colored tube lights{| spelling "{BEER|ALE|PUB}"}
-pennant-covered brick wall | 0.75 | 0.5-0.9 | faded team flags on red brick
-framed jersey display | 0.7 | 0.4-0.8 | glass-fronted memorabilia wall
-dark paneled ceiling with fans | 0.7 | 0.5-0.9 | slow paddle fans over dim wood
-chalk-smudged specials board | 0.65 | 0.3-0.7 | doodled icons of wings and beer mugs
-corner pool-table alcove | 0.7 | 0.4-0.8 | green felt under hanging lamp
-glass-front beer cooler wall | 0.6 | 0.4-0.8 | frosted bottles in cold light
+the long dark wood bar with a row of beer taps across the far side | 1.0 | 0.6-1.0 | red vinyl stools along it, all empty, a lit backbar of bottles behind it spanning the whole width of the image
+a backbar wall of lit glass shelves across the far side of the room | 0.85 | 0.5-0.9 | rows of amber bottles glowing warmly, a mirrored strip behind them
+a brick wall across the far side painted dark red | 0.8 | 0.5-0.9 | a row of dark wall-mounted TVs along the top, pendant lamps below
+a row of wall-mounted TVs across the far wall | 0.8 | 0.4-0.8 | all dark, black glass in even rows above a wood paneled wall
+a corner pool table alcove at the far right | 0.7 | 0.4-0.8 | empty green felt under a hanging lamp, cues racked on the wall behind
+a wood-paneled wall with framed team jerseys along the far left | 0.7 | 0.4-0.8 | glass-fronted frames hung at even intervals
+a row of empty wooden booths along the far wall | 0.8 | 0.5-0.9 | worn red vinyl seats, a hanging lamp over each
+a brick wall with faded pennant flags in team colors at the far end | 0.6 | 0.4-0.8 | flags hung in a row across the whole width of the image
+a glass-front beer cooler wall at the far end of the room | 0.6 | 0.4-0.8 | rows of frosted bottles in cold light behind the glass doors
+a loop of red and blue neon tube above the far backbar | 0.5 | 0.3-0.6 | thin glowing line over the dark shelves
+a wall of tall windows with closed wood blinds along the far left | 0.5 | 0.4-0.8 | dim daylight through the slats, dark wood sills
+a dartboard wall at the far left | 0.5 | 0.3-0.6 | cork surround on dark wood, a hanging lamp above it, empty floor below
+a back hallway lined with empty high-top tables at the far right | 0.5 | 0.3-0.6 | dim wall lamps, a dark brick wall behind

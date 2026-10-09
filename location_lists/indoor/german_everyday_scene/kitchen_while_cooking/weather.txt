@@ -1,13 +1,15 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-rain streaks on the glass | 0.55 | - | -
-misted-up window pane | 0.45 | - | -
-rain drumming on the window | 0.45 | - | -
-wind audible outside | 0.4 | - | -
-damp air after rain | 0.5 | - | -
-dry still air indoors | 0.7 | - | -
-draught from the window frame | 0.4 | - | -
-snow visible outside the window | 0.35 | - | -
-warm close air indoors | 0.5 | - | -
-wet marks tracked in by the door | 0.35 | - | -
+rain streaks on the window glass | 0.55 | - | -
+misted window pane from the cooking steam | 0.6 | - | -
+soft steam drifting in the window light | 0.55 | - | -
+damp gray daylight beyond the window | 0.5 | - | -
+dry still air with a faint warm glow from the oven | 0.6 | - | -
+bright clear sky beyond the window | 0.7 | - | -
+light snow falling beyond the window | 0.35 | - | -
+bare winter branches beyond the window | 0.4 | - | -
+low gray cloud beyond the window | 0.5 | - | -
+warm close air with steady light | 0.55 | - | -
+crisp autumn sky beyond the window | 0.5 | - | -
+bright summer sun on the far sill | 0.45 | - | -

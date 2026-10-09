@@ -1,17 +1,16 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-salted pretzel in paper sleeve | 0.8 | 0.0-0.1 | glossy brown knot with coarse salt
-Berliner doughnut with sugar | 0.65 | 0.0-0.1 | powdered round pastry
-rye bread loaf with scored crust | 0.7 | 0.0-0.15 | dark crackled top
-plum streusel sheet cake | 0.7 | 0.0-0.15 | crumb topping on purple fruit
-filter coffee pot on warmer | 0.6 | 0.0-0.1 | glass carafe with black handle
-chalk sandwich-board with pastry doodles | 0.5 | 0.0-0.1 | A-frame with chalk drawings of a pretzel and a croissant
-cake server and spatula | 0.5 | 0.0-0.05 | silver triangular blade
-wicker bread basket | 0.65 | 0.0-0.1 | linen-lined with seeded rolls
-glass cake dome | 0.55 | 0.0-0.1 | clear lid over buttercream torte
-paper flags on toothpicks | 0.4 | 0.0-0.05 | little plain flags
-hot chocolate with whipped cream | 0.5 | 0.0-0.08 | tall glass mug dusted with cocoa
-stack of folded tea towels | 0.35 | 0.0-0.08 | checked cotton cloths
-tin cookie box | 0.4 | 0.0-0.08 | embossed lid with festive pattern
-brass tip dish | 0.35 | 0.0-0.05 | small tray of coins
+a small salted pretzel in a paper sleeve at the far end of the counter | 0.8 | 0.01-0.05 | glossy brown knot, coarse salt
+small Berliner doughnuts on a tray at the far end of the counter | 0.65 | 0.01-0.05 | powdered sugar
+a small rye loaf with a scored crust on a shelf at the back | 0.7 | 0.01-0.05 | dark crackled top
+a small plum streusel sheet cake on a distant counter | 0.7 | 0.01-0.05 | crumb topping on purple fruit
+a compact glass coffee carafe on a warmer at the far end of the back bar | 0.6 | 0.01-0.05 | black handle
+a small wicker bread basket on a distant shelf | 0.6 | 0.01-0.05 | linen-lined with seeded rolls
+a small glass cake dome on a distant empty table | 0.55 | 0.01-0.05 | clear lid over a buttercream torte
+a small white porcelain coffee cup on a distant empty table | 0.7 | 0.01-0.04 | with a saucer
+a slim bud vase with one tulip on a distant empty table | 0.45 | 0.01-0.04 | clear glass
+a small cookie tin on a shelf at the back | 0.4 | 0.01-0.05 | embossed festive lid
+a small sugar bowl and cream jug on a distant table | 0.4 | 0.01-0.04 | white porcelain pair
+small paper bakery bags tied with twine on a shelf at the back | 0.5 | 0.01-0.05 | plain brown paper
+a small stack of folded checked tea towels at the far end of the counter | 0.35 | 0.01-0.05 | cotton

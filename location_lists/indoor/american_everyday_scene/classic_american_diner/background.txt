@@ -1,14 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-long chrome-edged lunch counter | 1.0 | 0.6-1.0 | polished steel trim over formica
-red vinyl booth row | 0.95 | 0.6-1.0 | glossy tufted seats along windows
-checkerboard black-and-white tile | 0.8 | 0.5-0.9 | glossy square floor grid
-large storefront window glass | 0.8 | 0.5-0.9 | {street view through clean glass|painted gold window lettering reading "{DINER|EAT|OPEN}" over street view}
-glowing pie display case | 0.75 | 0.4-0.8 | lit rotating shelves of whole pies
-pass-through kitchen window | 0.7 | 0.4-0.8 | heat lamps and order wheel
-neon tube sign wall | 0.65 | 0.3-0.6 | glowing red tubing{| spelling "{OPEN|DINER|EAT}"}
-back-bar mirror panel | 0.6 | 0.4-0.7 | etched glass behind milkshake mixers
-vintage enamel menu board | 0.55 | 0.3-0.6 | {white enamel panel with simple food pictograms|white enamel panel with a peg-letter row reading "{MENU|SPECIALS|PIE}"}
-turquoise tiled half-wall | 0.5 | 0.4-0.7 | glazed pastel ceramic wainscot
-retro record-sleeve wall display | 0.4 | 0.3-0.6 | framed 1950s record sleeves with abstract art
+the long chrome-edged lunch counter across the far side of the room | 1.0 | 0.6-1.0 | red vinyl swivel stools along it, all empty, a mirrored stainless back wall behind it across the whole width of the image
+a row of red vinyl booths along the far wall under the windows | 0.95 | 0.5-0.9 | all empty, low bench seats, tall street windows above them across the whole width of the image
+the pass-through kitchen window across the far end of the room | 0.7 | 0.4-0.8 | warm heat lamps over a stainless shelf, a steel hood above the grill line behind it
+a polished stainless steel back wall across the far side | 0.75 | 0.6-1.0 | mirrored strip above the counter, glass shelves of white coffee mugs on the left
+large storefront windows along the far left wall | 0.8 | 0.5-0.9 | plain daylight street view beyond the glass, cream half-curtains on brass rods
+a lit glass pie case at the far center of the counter | 0.6 | 0.4-0.8 | whole pies on rotating shelves, chrome frame, warm glow
+a turquoise tiled half wall along the far side | 0.55 | 0.5-0.9 | glossy ceramic tile below a cream painted wall, round wall lamps in a line above
+a pink and blue neon tube loop high on the far wall | 0.5 | 0.3-0.7 | thin glowing line over a cream wall, a row of empty booths below it
+a cream painted wall behind a row of empty booths at the far right | 0.6 | 0.5-0.9 | framed black-and-white photographs hung at even intervals, red vinyl seat backs
+a glowing chrome jukebox against the far right wall | 0.5 | 0.3-0.6 | rainbow tube lights, empty booths along the wall beside it
+a deep dining room of empty booths on both sides of a center aisle | 0.7 | 0.6-1.0 | aisle running to a cream back wall, pendant lamps over each booth
+a cream brick wall across the far end of the room | 0.55 | 0.6-1.0 | red booth backs along its base, all empty, a round clock at the center
+a stainless back bar with a milkshake mixer line at the far side | 0.5 | 0.4-0.8 | steel cups and spindle blenders, mirrored wall above across the whole width of the image

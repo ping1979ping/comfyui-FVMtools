@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-red Target bullseye sign | 1.0 | 0.05-0.15 | red-and-white concentric circle decal
-red rack-topper card{| reading "{SALE|CLEARANCE}"} | 0.85 | 0.05-0.15 | red cardstock
-bright vinyl shelf flag{| reading "{SALE|DEAL|NEW}"} | 0.85 | 0.05-0.1 | bright vinyl shelf tag
-fitting-room hang tag | 0.65 | 0.02-0.05 | red plastic disc
-Stanley-cup endcap display | 0.55 | 0.1-0.25 | stacked pyramid of colorful insulated cups
-mirror with smudge fingerprints | 0.7 | 0.1-0.25 | streaked silvered glass
-mannequin with bare torso | 0.6 | 0.1-0.25 | beige fiberglass form
-round yellow clearance sticker | 0.85 | 0.02-0.08 | yellow adhesive dot
-size acrylic round disk | 0.85 | 0.02-0.05 | clear plastic spacer
-small fitting-room door plate{| reading "{6 ITEMS MAX|LIMIT 6}"} | 0.6 | 0.05-0.1 | small printed plate
-Circle rewards QR code stand | 0.55 | 0.05-0.1 | small acrylic standee with square pixel-pattern code
-hanging shoulder-strap purse | 0.6 | 0.05-0.15 | nylon strap loop
+a small stack of folded white towels on a far shelf | 0.6 | 0.01-0.04 | neat and soft
+a small wire basket of hair ties at the far end of a rack | 0.45 | 0.01-0.04 | colorful
+a small white shopping basket on a distant display table | 0.5 | 0.02-0.05 | plain plastic
+a slim row of hangers on a distant rail | 0.7 | 0.01-0.04 | white plastic
+a small folded denim jacket on a far shelf | 0.55 | 0.02-0.05 | light blue
+a small pair of sandals on a far low shelf | 0.4 | 0.01-0.04 | tan straps
+a small wicker basket on top of a far shelf | 0.5 | 0.02-0.05 | woven, natural
+a little potted plant on a far white shelf | 0.4 | 0.02-0.05 | green leaves
+a small folded gray scarf at the back of a far shelf | 0.45 | 0.01-0.04 | soft knit
+a small stack of folded pajamas on a distant shelf | 0.5 | 0.01-0.04 | pale pastel
+a small round hat on a distant hook | 0.4 | 0.01-0.04 | straw, plain band
+a little white garment bag at the far end of a rail | 0.35 | 0.02-0.05 | plain

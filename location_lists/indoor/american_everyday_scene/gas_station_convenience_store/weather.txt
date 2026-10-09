@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-aggressive AC summer chill | 0.85 | - | -
-warm coffee-laden indoor air | 0.85 | - | -
-winter dry heat blast from vents | 0.75 | - | -
-muggy stuffiness near hot dogs | 0.7 | - | -
-rain on front window | 0.7 | - | -
-snow tracked in by boots | 0.65 | - | -
-overcast grey through glass | 0.7 | - | -
-condensation on cold-case doors | 0.7 | - | -
-buzzing fluorescent hum with stale coffee smell | 0.5 | - | -
-draft of cold air at door chime | 0.45 | - | -
+clear sky beyond the front windows | 0.8 | - | -
+rain streaking the front glass | 0.6 | - | -
+flat overcast gray light beyond the window | 0.6 | - | -
+thin snow falling beyond the front glass | 0.4 | - | -
+still cool air with steady store light | 0.9 | - | -
+overcast sky above the fuel canopy beyond the glass | 0.7 | - | -
+bright summer glare at the front window | 0.5 | - | -
+fog softening the canopy lights outside | 0.4 | - | -
+dark clear night beyond the glass | 0.6 | - | -
+crisp autumn light through the front window | 0.6 | - | -
+frost at the corners of the front glass | 0.4 | - | -

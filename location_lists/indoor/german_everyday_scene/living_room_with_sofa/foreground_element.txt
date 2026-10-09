@@ -1,14 +1,16 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-blanket crumpled on the sofa arm | 0.9 | 0.15-0.35 | pilled fleece
-open laptop on the sofa | 0.6 | 0.1-0.25 | fingerprinted lid
-feet up on the coffee table | 0.55 | 0.1-0.25 | socked feet
-cushion pulled onto the lap | 0.6 | 0.1-0.3 | squashed filling
-mug held in both hands | 0.55 | 0.05-0.2 | steam rising
-remote held towards the television | 0.5 | 0.05-0.15 | worn buttons
-knees drawn up on the seat | 0.5 | 0.1-0.3 | creased trouser fabric
-phone raised for a photo | 0.5 | 0.05-0.15 | reflection in the screen
-cat curled on the cushion | 0.4 | 0.1-0.25 | soft fur
-plate balanced on the arm | 0.4 | 0.05-0.15 | crumbs on the rim
-book held open on the lap | 0.45 | 0.05-0.2 | thumbed pages
+a light oak laminate plank floor | 1.0 | 0.2-0.4 | smooth and even
+a warm oak parquet floor | 0.8 | 0.2-0.4 | satin finish, even grain
+a plain gray low-pile carpet | 0.7 | 0.2-0.4 | smooth and even
+a wide pale ash plank floor | 0.7 | 0.2-0.4 | matte and even
+a smooth light gray microcement floor | 0.5 | 0.2-0.4 | matte and even
+a plain beige wool carpet | 0.6 | 0.2-0.4 | dense low pile
+a dark walnut plank floor | 0.55 | 0.2-0.4 | rich brown, satin finish
+a wide-plank whitewashed oak floor | 0.6 | 0.2-0.4 | pale and soft
+a light gray vinyl plank floor | 0.5 | 0.2-0.4 | even and clean
+a plain cream low-pile carpet | 0.5 | 0.2-0.4 | soft and uniform
+a honey-colored pine plank floor | 0.5 | 0.2-0.4 | smooth and even
+a charcoal low-pile carpet | 0.45 | 0.2-0.4 | dense and smooth
+a pale beech laminate floor | 0.6 | 0.2-0.4 | light satin finish

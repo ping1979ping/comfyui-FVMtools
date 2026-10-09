@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright utility morning light | 1.0 | - | -
-mid-morning soft glow | 0.9 | - | -
-midday clean brightness | 0.9 | - | -
-warm afternoon spill | 0.8 | - | -
-overcast diffused daylight | 0.85 | - | -
-evening overhead lit | 0.8 | - | -
-late-night appliance glow | 0.6 | - | -
-early dusk fade | 0.65 | - | -
-fluorescent task brightness | 0.75 | - | -
-soft window-only daylight | 0.85 | - | -
+soft overcast late-morning light | 1.0 | - | -
+bright midday daylight from the window | 0.85 | - | -
+warm late-afternoon light through the window | 0.8 | - | -
+soft early-morning daylight with the ceiling lights on | 0.7 | - | -
+even ceiling-light glow on a gray afternoon | 0.7 | - | -
+low golden evening light through the window | 0.5 | - | -
+cool blue-white morning daylight | 0.6 | - | -
+warm evening ceiling light with the window going dark | 0.6 | - | -
+clear bright noon light with the ceiling lights off | 0.5 | - | -
+pale low-sun afternoon light with the ceiling lights on | 0.5 | - | -
+soft diffused light from a frosted window | 0.6 | - | -

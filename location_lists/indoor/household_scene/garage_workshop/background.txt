@@ -1,15 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-painted concrete block wall | 1.0 | 0.7-1.0 | softly chalky masonry
-exposed stud framing wall | 0.8 | 0.6-1.0 | rough timber bays
-pegboard tool wall | 0.95 | 0.5-0.9 | painted hole-grid panel
-slatwall storage system | 0.75 | 0.5-0.9 | grooved horizontal panels
-unpainted drywall section | 0.7 | 0.5-0.9 | taped joint surface
-overhead garage door panel | 0.85 | 0.4-0.8 | ribbed steel sectional
-plywood sheathed wall | 0.7 | 0.5-0.9 | grainy panel boards
-metal shelving back wall | 0.8 | 0.5-0.9 | stacked utility racks
-tool cabinet bank along wall | 0.8 | 0.5-0.9 | rolling steel drawers
-small high window strip | 0.65 | 0.3-0.7 | frosted glass slot
-oil-stained back wall | 0.65 | 0.5-0.9 | weathered painted surface
-clamp rack hung wall | 0.7 | 0.4-0.7 | pegged steel rail
+a pegboard wall across the far side of the workshop | 1.0 | 0.6-1.0 | pale boards across the whole width of the image, hung with a neat grid of dark tool shapes, a bright shop light above
+a far wall of painted white drywall with steel shelving along it | 0.85 | 0.6-1.0 | gray metal racks across the whole width of the image, lidded plastic bins in even rows
+the closed overhead garage door across the far end of the garage | 0.85 | 0.6-1.0 | white paneled sections across the whole width of the image, a thin row of small windows near the top
+a far wall of exposed wooden studs with a long wooden workbench below | 0.7 | 0.5-0.9 | unfinished framing across the whole width of the image, a clear plank worktop under it
+a wall of gray metal tool cabinets in a row along the far side | 0.7 | 0.5-0.9 | tall closed doors across the whole width of the image, a clean worktop above them
+a painted concrete block wall across the far end of the garage | 0.6 | 0.6-1.0 | pale gray blocks across the whole width of the image, a row of steel hooks along it
+a slatwall panel wall across the far side of the shop | 0.65 | 0.6-1.0 | white grooved panels across the whole width of the image, a few dark hooks spaced along it
+a far wall of plywood sheathing with a high strip of small windows | 0.5 | 0.5-0.9 | pale panels across the whole width of the image, soft daylight in the windows above
+a clamp rack and lumber shelf along the far wall | 0.55 | 0.5-0.9 | long boards stacked flat on brackets, bar clamps hung in an even row below
+a far wall of white garage storage cabinets with a wood countertop | 0.6 | 0.6-1.0 | closed doors across the whole width of the image, a clear worktop and a light above
+the open garage door at the far end showing a bright driveway | 0.4 | 0.5-0.9 | a wide opening across the whole width of the image, soft daylight and green trees beyond
+a back wall of pale drywall with a wide workbench under a hanging light | 0.55 | 0.5-0.9 | a neat plank top, nothing on it, a row of fluorescent tubes above
+a corner of the workshop with an overhead storage rack at the far side | 0.45 | 0.4-0.8 | plywood platform with plain lidded bins, painted block wall below

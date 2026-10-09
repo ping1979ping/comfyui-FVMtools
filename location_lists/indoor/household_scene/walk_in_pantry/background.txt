@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-floor-to-ceiling shelving wall | 1.0 | 0.7-1.0 | painted timber boards
-white painted plaster walls | 0.9 | 0.6-1.0 | smooth eggshell finish
-beadboard back wall | 0.8 | 0.5-0.9 | painted vertical planking
-deep open shelves with jars | 0.95 | 0.6-1.0 | stacked glass containers
-storage bin wall | 0.85 | 0.5-0.9 | woven basket fronts
-cabinet doors floor to ceiling | 0.85 | 0.5-0.9 | flush painted timber
-butcher block counter back | 0.7 | 0.4-0.8 | warm laminated maple
-window strip near ceiling | 0.65 | 0.3-0.6 | slim glazed band
-cream painted shaker fronts | 0.85 | 0.6-1.0 | softly painted timber
-small wallpaper accent strip | 0.6 | 0.3-0.6 | softly faded print
+a far wall of floor-to-ceiling open wood shelves across the whole width of the image | 1.0 | 0.7-1.0 | rows of plain glass jars and white ceramic canisters, soft ceiling light
+a far wall of white shaker cabinet doors from floor to ceiling | 0.8 | 0.6-1.0 | closed doors with brushed brass pulls across the whole width of the image
+a far wall of white painted shelves with a pale oak counter at the middle | 0.85 | 0.6-1.0 | a small window above the counter, rows of plain jars above and baskets below
+a far wall of dark green cabinets with brass pulls | 0.6 | 0.6-1.0 | closed doors across the whole width of the image, open shelves above them
+a far wall of pale gray shelves holding rows of plain brown cardboard boxes | 0.5 | 0.6-1.0 | neat rows across the whole width of the image, clear glass jars on the top shelf
+a far wall of glass-front cabinets lit from within | 0.55 | 0.6-1.0 | white dishes inside, warm light, across the whole width of the image
+a far wall of narrow shelves with a brass rail ladder at the far right | 0.5 | 0.6-1.0 | rows of jars and baskets across the whole width of the image
+a far wall of open shelves broken by a small window at the center | 0.65 | 0.6-1.0 | daylight on the shelves, plain jars and woven baskets in rows
+a far wall of built-in pull-out drawers with brushed brass handles | 0.5 | 0.6-1.0 | pale oak fronts across the whole width of the image, open shelves above
+a far wall of tall white shelving with a low counter at the center | 0.7 | 0.6-1.0 | clear jars on the upper shelves, woven baskets on the lower shelves
+the far corner of the room where two walls of shelves meet at the center of the image | 0.6 | 0.6-1.0 | rows of plain jars and baskets, soft ceiling light
+a far wall of shelves with woven baskets on the lower rows and glass jars above | 0.75 | 0.6-1.0 | neat rows across the whole width of the image, warm ceiling light
+a far wall of matte black shelving with oak boards | 0.45 | 0.6-1.0 | clear jars in rows across the whole width of the image, warm light

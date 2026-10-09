@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-vintage suitcase leather strap | 0.8 | 0.05-0.2 | aged tanned hide
-old framed portrait photo | 0.75 | 0.05-0.15 | sepia-toned print
-boxed Christmas ornaments | 0.85 | 0.1-0.25 | tissue-wrapped baubles
-yellowed paperback book | 0.7 | 0.05-0.15 | aged soft pages with a plain faded cover
-broken table lamp | 0.6 | 0.05-0.15 | dusty ceramic base
-mothball-scented quilt | 0.65 | 0.1-0.25 | folded patchwork cloth
-old typewriter case | 0.55 | 0.05-0.15 | hardshell carry case
-empty picture frame stack | 0.7 | 0.1-0.25 | leaning ornate edges
-boxed childhood drawings | 0.6 | 0.05-0.15 | tied paper bundle
-dusty record album crate | 0.65 | 0.1-0.25 | cardboard sleeves with faded abstract artwork
-old vacuum cleaner | 0.55 | 0.1-0.25 | upright dusty unit
-forgotten music box | 0.55 | 0.05-0.1 | small ornate wood
+a small cardboard carton on a distant stack | 0.8 | 0.01-0.04 | plain, taped shut
+a small wooden chair at the back of the attic | 0.5 | 0.02-0.05 | caned seat, dusty
+a compact suitcase on a far trunk | 0.6 | 0.02-0.05 | worn brown hard case
+a slim picture frame leaned on a far box | 0.55 | 0.01-0.04 | dark wood, face to the wall
+a small cloth-covered lamp on a distant dresser | 0.5 | 0.02-0.05 | dusty fabric shade
+a small tin box on a distant shelf | 0.45 | 0.01-0.04 | rusted lid
+a small folded quilt at the far end of a trunk | 0.5 | 0.02-0.05 | faded patchwork
+a small rolled rug at the back against the rafters | 0.45 | 0.02-0.05 | tied with cord
+a compact toy rocking horse far at the back | 0.4 | 0.02-0.05 | pale painted wood
+a small stack of folded cloth on a distant crate | 0.5 | 0.01-0.04 | pale fabric
+a slim lampshade on a far box | 0.4 | 0.01-0.04 | pleated beige
+a small round hat box on a distant shelf | 0.4 | 0.01-0.04 | faded cardboard

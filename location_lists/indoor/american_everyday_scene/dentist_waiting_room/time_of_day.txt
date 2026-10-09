@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright fluorescent overhead | 1.0 | - | -
-weekday-morning office light | 0.95 | - | -
-mid-morning waiting-room lull | 0.85 | - | -
-lunch-hour empty quiet | 0.75 | - | -
-afternoon after-school crowd | 0.85 | - | -
-late-afternoon last-appointment | 0.7 | - | -
-opening-hour first-patient calm | 0.7 | - | -
-closing-hour half-lit | 0.55 | - | -
-overcast-window-only dim | 0.65 | - | -
-single tube buzzing softly | 0.55 | - | -
+even white fluorescent light from the ceiling panels | 1.0 | - | -
+soft weekday morning light through the window blinds | 0.9 | - | -
+bright midday light with every ceiling light on | 0.85 | - | -
+mellow late-afternoon light through the blinds | 0.8 | - | -
+cool overcast daylight mixed with fluorescent light | 0.7 | - | -
+warm early-evening light with the ceiling panels on | 0.6 | - | -
+dim gray daylight with half the ceiling lights on | 0.45 | - | -
+thin stripes of morning sun through the window blinds | 0.55 | - | -
+soft diffuse light from the ceiling panels alone | 0.6 | - | -
+low golden evening light through the window blinds | 0.45 | - | -
+clean white light from every ceiling panel | 0.7 | - | -

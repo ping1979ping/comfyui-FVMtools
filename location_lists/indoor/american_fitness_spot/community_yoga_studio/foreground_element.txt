@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-mat unrolled with a flick | 0.6 | 0.1-0.3 | settling flat
-socks pulled off at the ankle | 0.55 | 0.05-0.15 | balanced on one foot
-strap looped around a foot | 0.5 | 0.05-0.2 | stretch in progress
-water bottle set down quietly | 0.5 | 0.03-0.1 | careful placement
-hair twisted up into a knot | 0.55 | 0.05-0.15 | elastic between teeth
-block reached for mid-pose | 0.5 | 0.05-0.15 | fingertips on cork
-blanket folded over the knees | 0.45 | 0.1-0.25 | settling for savasana
-hoodie unzipped before class | 0.5 | 0.1-0.25 | layer coming off
-phone silenced and tucked in a bag | 0.45 | 0.03-0.1 | last check
-wrists stretched against the floor | 0.45 | 0.05-0.15 | fingers spread
-mat wiped down after class | 0.5 | 0.05-0.15 | spray and cloth pass
+a wide-plank pale oak floor | 1.0 | 0.1-0.4 | matte and even
+a blonde maple floor | 0.8 | 0.1-0.4 | matte and even
+a light bamboo plank floor | 0.7 | 0.1-0.4 | warm even grain
+a pale gray laminate floor with a wood grain | 0.6 | 0.1-0.4 | matte and even
+a honey-colored hardwood floor | 0.75 | 0.1-0.4 | smooth and even
+a smooth concrete floor in warm gray | 0.5 | 0.1-0.4 | matte and even
+a whitewashed pine plank floor | 0.6 | 0.1-0.4 | pale, faint grain
+a natural tan cork floor | 0.4 | 0.1-0.4 | soft, even
+a walnut-tone vinyl plank floor | 0.5 | 0.1-0.4 | smooth and even
+a pale birch plank floor | 0.6 | 0.1-0.4 | satin finish
+a light ash plank floor | 0.55 | 0.1-0.4 | even grain
+a plain warm beige low-pile carpet | 0.4 | 0.1-0.4 | smooth and uniform

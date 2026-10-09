@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-warm oven-scented air | 1.0 | - | -
-steamy coffee-machine haze | 0.85 | - | -
-cosy heated room against drizzle | 0.75 | - | -
-fogged-up shopfront glass | 0.6 | - | -
-cool draft from opening door | 0.5 | - | -
-sweet vanilla-and-butter aroma | 0.7 | - | -
-rain streaks on window | 0.55 | - | -
-bright sun through front glass | 0.6 | - | -
-still quiet hush of morning | 0.45 | - | -
-snowy winter light outside | 0.4 | - | -
+warm air from the ovens with a faint haze of steam | 1.0 | - | -
+light fog on the lower shopfront glass | 0.6 | - | -
+gray drizzle beyond the front window | 0.7 | - | -
+clear bright sky beyond the shopfront glass | 0.8 | - | -
+flat overcast gray light beyond the window | 0.55 | - | -
+still warm air with soft steady lamplight | 0.85 | - | -
+low gray cloud beyond the front glass | 0.6 | - | -
+bright sun on the glass with soft shadows inside | 0.6 | - | -
+light snow falling beyond the shopfront window | 0.4 | - | -
+crisp autumn light beyond the window | 0.6 | - | -
+pale morning mist on the street beyond the glass | 0.45 | - | -

@@ -1,14 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-mirrored wall over the dumbbell rack | 1.0 | 0.4-0.8 | smudged floor-length mirrors
-row of treadmills facing TVs | 0.85 | 0.4-0.7 | worn belts and consoles
-peeling vinyl wall decal | 0.6 | 0.2-0.4 | {silhouette of a lifter with a barbell|large bold lettering reading "{NO EXCUSES|PUSH}"}
-cable machine tower | 0.7 | 0.25-0.5 | worn pulleys and pins
-front desk with a check-in scanner | 0.5 | 0.2-0.4 | laminate counter
-storefront glass papered halfway | 0.5 | 0.25-0.5 | sun-faded colored paper sheets
-wall-mounted fans high up | 0.5 | 0.1-0.25 | dusty cages
-group class room behind glass | 0.45 | 0.2-0.45 | stacked step platforms
-rack of fixed barbells | 0.6 | 0.2-0.4 | chipped chrome sleeves
-TVs on a sports channel | 0.55 | 0.1-0.3 | bright game footage
-water fountain with bottle filler | 0.5 | 0.1-0.25 | glowing blue sensor ring
+a row of treadmills and ellipticals lined up across the far side of the gym | 1.0 | 0.6-1.0 | dark frames facing a long mirror wall, even white ceiling light, all unoccupied
+a long mirrored wall across the far end of the gym | 0.9 | 0.6-1.0 | clean glass doubling the rows of machines, black rubber floor below
+a back wall of dumbbell racks across the whole width of the image | 0.85 | 0.6-1.0 | rows of dark hex dumbbells on steel shelves, a long mirror above
+a far wall of cable machines with a squat rack at the left | 0.7 | 0.6-1.0 | black steel frames, red and gray padding, bright ceiling light
+a bank of weight machines across the far side of the gym | 0.75 | 0.6-1.0 | gray and black weight stacks in neat rows, all empty
+a concrete block wall painted dark gray across the far end of the gym | 0.6 | 0.6-1.0 | a white stripe along the top, long fluorescent tubes overhead
+storefront windows across the far side of the gym | 0.6 | 0.6-1.0 | tinted glass, bright daylight washing the machines beneath, a parked car blurred beyond the glass
+a free-weight area with barbells on racks across the far side of the gym | 0.7 | 0.6-1.0 | black plates stacked on steel pegs, rubber floor below
+a back wall of black padded panels across the whole width of the image | 0.5 | 0.6-1.0 | matte textured padding, a row of rowing machines below, lights overhead
+a cardio zone along the far left with a tight row of stationary bikes | 0.65 | 0.6-1.0 | dark frames side by side, bright white ceiling light
+a far wall of white cinder block with a red accent stripe | 0.5 | 0.6-1.0 | flat paint, a long mirror along the right half
+a row of empty bench press stations across the far side of the gym | 0.6 | 0.6-1.0 | black steel racks with loaded barbells, rubber floor, bright light
+a strip of green turf along the floor at the far end of the gym | 0.45 | 0.6-1.0 | empty, a black sled and kettlebells lined up at the far wall
+an open stretching area along the far wall with a full mirror | 0.45 | 0.6-1.0 | empty black rubber floor, a rack of kettlebells in the far corner

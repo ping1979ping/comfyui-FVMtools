@@ -1,14 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-early-morning fresh-bread rush | 1.0 | - | -
-bright mid-morning breakfast hour | 0.9 | - | -
-sunny Saturday morning bustle | 0.8 | - | -
-lazy afternoon coffee-and-cake hour | 0.9 | - | -
-soft grey overcast afternoon | 0.65 | - | -
-golden late-afternoon window light | 0.7 | - | -
-quiet pre-closing late afternoon | 0.5 | - | -
-dim before-opening dawn glow | 0.45 | - | -
-Sunday midday family visit | 0.55 | - | -
-rainy grey morning opening hour | 0.4 | - | -
-mellow late-morning coffee break | 0.5 | - | -
+soft early-morning daylight through the shopfront glass | 1.0 | - | -
+bright mid-morning light with the pendant lamps on | 0.9 | - | -
+warm late-morning sun slanting through the front window | 0.8 | - | -
+soft overcast afternoon light with warm lamps lit | 0.85 | - | -
+golden late-afternoon light across the floor | 0.7 | - | -
+quiet, even midday light through clear glass | 0.65 | - | -
+dim pre-dawn glow with only the oven lights on | 0.45 | - | -
+pale gray rainy-morning light with the lamps on | 0.5 | - | -
+low winter sun through the front glass | 0.5 | - | -
+mellow afternoon light with a gentle warm glow | 0.7 | - | -
+bright Saturday-morning light through the clear glass | 0.75 | - | -

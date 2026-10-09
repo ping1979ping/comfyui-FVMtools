@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-log settled into the stove | 0.6 | 0.1-0.25 | sparks rising
-quilt pulled over the knees | 0.6 | 0.1-0.3 | couch corner claim
-cocoa mug held in both hands | 0.55 | 0.05-0.15 | marshmallow melt
-puzzle piece tried and rejected | 0.5 | 0.05-0.15 | close but wrong
-cards dealt around the table | 0.5 | 0.1-0.25 | flicked precisely
-boots unlaced at the door | 0.5 | 0.05-0.2 | heel wedged off
-window fog wiped for a look | 0.45 | 0.05-0.15 | palm circle
-guitar strummed quietly | 0.4 | 0.1-0.25 | half-remembered song
-flannel sleeves rolled up | 0.5 | 0.05-0.2 | stove-side warmth
-dog ears scratched absently | 0.45 | 0.05-0.15 | thumping tail
-phone raised for a no-signal check | 0.45 | 0.03-0.1 | one bar hunt
+a wide-plank honey pine floor | 1.0 | 0.1-0.4 | satin finish, soft grain
+a weathered gray plank floor | 0.5 | 0.1-0.4 | soft matte
+a slate tile floor in warm gray | 0.4 | 0.1-0.4 | large flat tiles, even
+a wide-plank oak floor | 0.7 | 0.1-0.4 | satin finish
+a flagstone floor in gray and tan | 0.4 | 0.1-0.4 | large flat stones
+a wide hickory plank floor | 0.55 | 0.1-0.4 | rich brown
+a smooth knotty pine floor | 0.6 | 0.1-0.4 | matte and even
+a plain oak plank floor | 0.8 | 0.1-0.4 | even grain, satin finish
+a plain maple plank floor | 0.7 | 0.1-0.4 | smooth and even
+a wide pale pine plank floor | 0.7 | 0.1-0.4 | light grain, matte
+a dark walnut-look plank floor | 0.6 | 0.1-0.4 | smooth and even
+a plain gray slate floor | 0.7 | 0.1-0.4 | flat and even

@@ -1,15 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-cast-iron ceiling fan | 0.4 | 0.0-0.1 | slow dark blades
-white-and-green tile border | 0.7 | 0.0-0.15 | glazed band at wall mid-height
-dark exposed timber beam | 0.7 | 0.0-0.2 | hand-hewn oak overhead
-painted shopfront with gold lettering reading "{BÄCKEREI|BROT|KAFFEE}" | 0.65 | 0.0-0.1 | arched gold script on glass
-brass coat hook rail | 0.55 | 0.0-0.1 | row of polished pegs
-etched glass door panel | 0.5 | 0.0-0.1 | frosted floral pattern
-vintage pendant globe lamp | 0.75 | 0.0-0.1 | warm opal glass hanging light
-wrought-iron window grille | 0.4 | 0.0-0.1 | curled black metalwork
-bay window with deep sill | 0.55 | 0.0-0.15 | sunlit ledge for plants
-arched plaster doorway | 0.5 | 0.0-0.15 | rounded opening to bake room
-tin-embossed ceiling panel | 0.35 | 0.0-0.1 | pressed pattern in cream paint
-wall-mounted wooden clock | 0.45 | 0.0-0.1 | round white dial, black numerals
+a cast-iron ceiling fan with slow dark blades high up at the center | 0.4 | 0.02-0.08 | still
+a green glazed tile border band along the far wall at mid-height | 0.7 | 0.03-0.1 | glossy
+dark hand-hewn oak beams high up across the ceiling | 0.7 | 0.05-0.12 | rough timber
+opal glass globe pendant lamps hanging in a line far overhead | 0.75 | 0.02-0.08 | warm glow
+a brass coat hook rail along the far left wall | 0.5 | 0.02-0.08 | polished pegs
+an etched glass door panel at the far right | 0.5 | 0.03-0.1 | frosted floral pattern
+a wrought-iron window grille at the far left | 0.4 | 0.03-0.1 | curled black metal
+a deep sunlit window sill along the bay window at the far side | 0.55 | 0.03-0.1 | white painted ledge
+a tin-embossed cream ceiling high up above the far counter | 0.35 | 0.03-0.1 | pressed relief
+a round wooden wall clock with a white dial high up on the far wall | 0.45 | 0.02-0.06 | dark frame
+brass wall lamps with cream shades along the far wall | 0.5 | 0.02-0.08 | soft amber light

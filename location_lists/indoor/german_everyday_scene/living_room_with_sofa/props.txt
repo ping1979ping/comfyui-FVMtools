@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-remote controls on the table | 0.85 | 0.05-0.15 | worn rubber buttons
-mug on a coaster | 0.75 | 0.05-0.12 | tea-stained rim
-charging cable across the floor | 0.55 | 0.05-0.15 | tangled white cable
-open book left face down | 0.55 | 0.03-0.1 | bent spine
-bowl with a few crumbs | 0.5 | 0.03-0.1 | smeared glaze
-tissue box on the side table | 0.5 | 0.03-0.1 | dented cardboard
-child's drawing on the table | 0.45 | 0.03-0.1 | felt tip on paper
-headphones left on the arm | 0.45 | 0.03-0.1 | cracked ear pad
-glasses folded on the book | 0.5 | 0.02-0.08 | smudged lenses
-half-eaten packet of biscuits | 0.45 | 0.03-0.1 | rolled-down wrapper
-phone face down on the cushion | 0.55 | 0.02-0.08 | scratched case
+a small remote control on a distant side table | 0.8 | 0.01-0.04 | black plastic
+a small ceramic mug on the far coffee table | 0.7 | 0.01-0.04 | white glaze
+a small open book face down on a distant shelf | 0.5 | 0.01-0.04 | bent spine
+a small bowl of fruit on the far sideboard | 0.55 | 0.01-0.05 | apples and pears
+a small potted succulent on a distant shelf | 0.5 | 0.01-0.04 | gray-green
+a small framed photograph on the far sideboard | 0.5 | 0.01-0.04 | thin wooden frame
+a small ceramic vase on the far shelf | 0.55 | 0.01-0.04 | matte glaze
+small candles in glass holders on a distant table | 0.45 | 0.01-0.04 | soft flames
+small cushions at the far end of the sofa | 0.5 | 0.01-0.05 | muted colors
+a slim pair of glasses on a distant side table | 0.35 | 0.01-0.03 | thin frame
+a compact table lamp on the far sideboard | 0.5 | 0.01-0.04 | cream shade
+a small wicker basket in the far corner of the room | 0.4 | 0.01-0.05 | woven

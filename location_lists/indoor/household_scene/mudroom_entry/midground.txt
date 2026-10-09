@@ -1,15 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-built-in entry bench | 1.0 | 0.4-0.7 | painted timber seat
-cubby storage bank | 0.95 | 0.4-0.7 | open compartment row
-coat hook rail | 1.0 | 0.3-0.6 | painted board with metal pegs
-shoe shelf under bench | 0.95 | 0.3-0.5 | open slatted ledge
-freestanding coat tree | 0.7 | 0.2-0.5 | tall hooked stand
-console drop zone table | 0.7 | 0.3-0.5 | narrow surface
-wall-mounted mail organizer | 0.7 | 0.2-0.4 | painted slot rack
-boot tray on floor | 0.85 | 0.2-0.4 | shallow rubber pan
-umbrella stand bin | 0.7 | 0.1-0.3 | tall ceramic vessel
-hanging shelf above hooks | 0.7 | 0.3-0.5 | painted ledge
-storage trunk seat | 0.65 | 0.2-0.5 | weathered timber chest
-basket cubby column | 0.7 | 0.3-0.6 | woven storage row
+a built-in bench with drawers below it a few meters back on the left | 0.9 | 0.2-0.5 | empty, a pale wood seat, white painted base
+a tall white storage cabinet a few meters back on the right | 0.7 | 0.2-0.5 | closed doors, brushed nickel pulls
+a row of empty wooden pegs on a board along the left wall a few meters back | 0.7 | 0.15-0.4 | painted white
+a closed front door with narrow side windows a few meters back on the right | 0.7 | 0.2-0.5 | white trim, daylight through the glass
+an open wood-framed cubby unit a few meters back on the left | 0.6 | 0.2-0.5 | empty shelves, pale oak
+a slim console table a few meters back along the right wall | 0.5 | 0.15-0.4 | empty, clear top, dark wood
+a wide doorway to the kitchen a few meters back on the right | 0.55 | 0.2-0.4 | soft light beyond, white trim
+a low slatted shoe bench a few meters back on the left | 0.5 | 0.2-0.4 | empty, pale wood
+a coat closet with white louvered doors a few meters back on the left | 0.5 | 0.2-0.5 | closed
+a pair of tall lockers a few meters back at the center | 0.5 | 0.2-0.5 | painted gray, closed doors
+a deep utility sink in a cabinet a few meters back on the right | 0.35 | 0.2-0.4 | brushed steel faucet, white counter
+a narrow storage bench a few meters back on the right | 0.45 | 0.2-0.4 | empty, lid closed, a painted white front
+an arched passage a few meters back at the center | 0.4 | 0.2-0.4 | leading to a hallway, soft light beyond

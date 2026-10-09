@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-worn fabric sofa with cushions | 1.0 | 0.4-0.8 | flattened woven upholstery
-low coffee table with rings | 0.85 | 0.2-0.5 | marked veneer top
-armchair beside the sofa | 0.6 | 0.25-0.55 | sagging seat cushion
-television stand with clutter | 0.7 | 0.2-0.5 | dark wood-look laminate
-laundry basket waiting to be folded | 0.6 | 0.15-0.4 | plastic weave
-rug in front of the sofa | 0.7 | 0.3-0.6 | flattened pile
-side table with a lamp | 0.6 | 0.15-0.4 | scratched top
-stack of glossy picture books on the floor | 0.5 | 0.1-0.3 | curled colorful photo covers
-child's toys pushed to one side | 0.5 | 0.1-0.35 | scuffed plastic
-folded blanket over the sofa back | 0.7 | 0.15-0.4 | pilled fleece
-footstool used as a table | 0.45 | 0.1-0.3 | worn fabric top
+a gray fabric three-seat sofa a few meters back on the left | 1.0 | 0.4-0.8 | empty, soft cushions in muted colors, a folded wool blanket over the arm
+a low wooden coffee table a few meters back at the center | 0.85 | 0.2-0.5 | empty, a dark rug beneath it
+an armchair beside the sofa a few meters back on the right | 0.6 | 0.25-0.55 | empty, mustard yellow upholstery
+a wide gray wool rug on the floor a few meters back at the center | 0.7 | 0.3-0.6 | flat low pile, the room empty around it
+a low television unit a few meters back at the far wall | 0.7 | 0.2-0.5 | dark wood-look laminate
+a wooden side table with a lamp a few meters back on the right | 0.6 | 0.15-0.4 | empty, a pale shade
+a wicker basket of folded towels a few meters back on the left | 0.5 | 0.1-0.3 | woven and tidy
+a floor lamp with a pale shade a few meters back on the right | 0.55 | 0.1-0.3 | slim brass stem
+a leather pouf footstool a few meters back on the left | 0.4 | 0.1-0.3 | cognac brown
+a wooden dining table with chairs pushed in a few meters back on the far right | 0.5 | 0.2-0.45 | plain oak top, wiped clean
+a light gray corner sofa along the left wall a few meters back | 0.5 | 0.4-0.7 | empty, with a chaise end and soft cushions
+a tall potted plant a few meters back on the left | 0.5 | 0.15-0.35 | glossy leaves in a ceramic pot
+a low shelf unit with plants a few meters back on the right | 0.45 | 0.15-0.35 | oak frame, green leaves

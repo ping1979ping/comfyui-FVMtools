@@ -1,14 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-plain painted living room wall | 1.0 | 0.5-0.9 | flat emulsion in off-white
-shelf with books and photos | 0.85 | 0.3-0.6 | mismatched plain colored spines
-window with curtains half open | 0.8 | 0.2-0.5 | plain lined curtains
-television on the wall | 0.75 | 0.2-0.5 | dusty dark screen
-framed abstract prints hung slightly crooked | 0.6 | 0.2-0.5 | cheap plain frames
-patterned wallpaper on one wall | 0.45 | 0.3-0.6 | dated repeating pattern
-doorway through to the hall | 0.55 | 0.2-0.5 | painted frame
-sideboard against the wall | 0.6 | 0.25-0.55 | veneer with ring marks
-houseplant in the corner | 0.65 | 0.15-0.4 | dusty leaves
-radiator below the window | 0.6 | 0.1-0.3 | painted steel panel
-curtain pole with rings | 0.4 | 0.1-0.3 | painted timber pole
+a plain off-white living room wall across the far side of the room | 1.0 | 0.5-0.9 | flat emulsion paint, a pale wooden skirting board along its base, soft daylight washing across it
+a built-in bookshelf along the far left wall | 0.85 | 0.3-0.6 | plain colored book backs and a few framed photographs, a floor lamp beside it
+a tall window with half-open curtains on the far right | 0.8 | 0.2-0.5 | lined curtains in muted gray, daylight and a pale sky beyond
+a dark switched-off television on a low unit at the far center | 0.7 | 0.2-0.5 | black glass above a veneer sideboard
+three framed abstract prints hung in a row on the far wall | 0.6 | 0.2-0.5 | thin plain frames over pale paint
+a doorway to the hall on the far left | 0.55 | 0.2-0.5 | painted white frame, a coat hook and soft light beyond
+a soft beige textured wallpaper wall along the far side | 0.4 | 0.3-0.6 | plain and quiet, a shaded wall lamp above
+a veneer sideboard along the far wall | 0.6 | 0.25-0.55 | a ceramic lamp and a plain vase on top, a pale wall behind it, soft daylight from the side
+a tall green houseplant in the far corner | 0.65 | 0.15-0.4 | broad glossy leaves in a woven basket pot, soft daylight from the window beside it
+a white panel radiator beneath the far window | 0.5 | 0.1-0.3 | painted steel ribs under the sill, a pale curtain hanging beside it
+a sliding glass balcony door across the far wall | 0.6 | 0.3-0.6 | daylight and leafy courtyard trees beyond
+a pale gray wall with a wooden shelf of ceramic vases across the far side | 0.5 | 0.3-0.6 | evenly spaced, soft light from the side
+a dark wooden wall unit across the far side | 0.5 | 0.4-0.8 | glass-fronted cabinets with plain white china

@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-24-hour fluorescent brightness | 1.0 | - | -
-late-night quiet half-empty | 0.85 | - | -
-early-morning commuter rush | 0.85 | - | -
-mid-morning slow lull | 0.8 | - | -
-lunch hour grab-and-go | 0.85 | - | -
-afternoon school-out crowd | 0.75 | - | -
-evening after-work peak | 0.85 | - | -
-3am graveyard-shift dim | 0.65 | - | -
-flickering tube buzz | 0.65 | - | -
-weekend road-trip stop | 0.75 | - | -
+bright white light from the ceiling panels | 1.0 | - | -
+cool daylight through the front windows | 0.85 | - | -
+hard white night light with dark glass at the front | 0.7 | - | -
+soft early-morning light through the front glass | 0.7 | - | -
+mid-afternoon sun slanting through the front window | 0.6 | - | -
+warm dusk light with the store lights on | 0.7 | - | -
+flat gray daylight with the store lights on | 0.7 | - | -
+late-evening glow of the cooler lights | 0.6 | - | -
+even bright light from every ceiling tube | 0.8 | - | -
+pale morning light at the glass doors | 0.5 | - | -
+blue-hour light beyond the glass, store lights glowing | 0.55 | - | -

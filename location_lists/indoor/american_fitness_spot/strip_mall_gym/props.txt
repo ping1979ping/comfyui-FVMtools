@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-chalk bucket by the racks | 0.5 | 0.03-0.1 | dusted rim
-lifting belt hung on a peg | 0.5 | 0.03-0.1 | cracked leather
-resistance bands on a hook | 0.55 | 0.03-0.1 | faded colors
-someone's keys and phone on the floor | 0.55 | 0.02-0.08 | screen face up
-shaker bottle on a bench | 0.6 | 0.02-0.08 | protein residue
-gym wipes canister empty | 0.45 | 0.02-0.08 | flap hanging open
-lost earbud case on the desk | 0.35 | 0.02-0.05 | scuffed strip of masking tape
-foam roller against the wall | 0.55 | 0.03-0.12 | dented ridges
-jump rope coiled on a peg | 0.45 | 0.02-0.08 | worn handles
-clip collars scattered | 0.5 | 0.02-0.06 | spring-loaded pairs
-sweat towel draped on a rack | 0.5 | 0.03-0.1 | faded stripe along the hem
+a small stack of white towels on a far shelf at the back | 0.7 | 0.01-0.05 | folded cotton
+small black kettlebells lined on a low rack far at the back | 0.6 | 0.01-0.05 | cast iron
+a compact water cooler against the far wall | 0.5 | 0.01-0.05 | white and blue
+a compact gray trash can in the far corner | 0.5 | 0.01-0.05 | plain plastic
+small foam rollers stacked in the far corner | 0.5 | 0.01-0.05 | black and gray
+a small jump rope hanging on a far wall hook | 0.4 | 0.01-0.05 | black cord
+slim resistance bands on a far wall rack | 0.45 | 0.01-0.05 | red and black loops
+a small spray bottle on a distant shelf at the back | 0.5 | 0.01-0.05 | white and clear
+small gray yoga blocks on a far shelf at the back | 0.4 | 0.01-0.05 | dense foam
+a compact black sound box high up on the far wall | 0.4 | 0.01-0.05 | matte plastic
+a small pair of dumbbells on a far low rack | 0.45 | 0.01-0.05 | rubber coated
+a small blue exercise ball in the far corner | 0.4 | 0.01-0.05 | smooth vinyl

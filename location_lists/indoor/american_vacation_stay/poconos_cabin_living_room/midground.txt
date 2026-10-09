@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-coffee table with puzzle in progress | 0.7 | 0.2-0.4 | edge pieces done
-quilt thrown over the couch back | 0.65 | 0.15-0.35 | hand-stitched squares
-space heater as backup | 0.45 | 0.05-0.15 | glowing coils
-card table set for a game | 0.5 | 0.15-0.35 | folding chairs pulled up
-cooler by the kitchenette | 0.5 | 0.1-0.25 | melted ice sloshing
-duffel bags along the wall | 0.55 | 0.1-0.3 | weekend packing
-lantern on the windowsill | 0.45 | 0.03-0.1 | battery powered
-dog stretched by the stove | 0.4 | 0.1-0.3 | twitching asleep
-snow boots drying on a mat | 0.45 | 0.05-0.15 | puddle ring
-marshmallow bag on the counter | 0.4 | 0.02-0.08 | clip sealed
-guitar leaned in the corner | 0.4 | 0.1-0.25 | missing a string
+a big leather sofa facing the far fireplace a few meters back on the left | 1.0 | 0.2-0.5 | deep brown leather, empty, a plaid throw folded over one arm
+two plaid armchairs by the hearth a few meters back on the right | 0.8 | 0.2-0.5 | red and black check upholstery, both unoccupied
+a thick wooden coffee table a few meters back at the center | 0.8 | 0.2-0.5 | empty top, a woven rug beneath it
+a stack of split logs in an iron rack beside the hearth a few meters back on the right | 0.6 | 0.2-0.5 | split birch and oak, dry bark
+a wooden dining table with six chairs pushed in a few meters back on the right | 0.6 | 0.2-0.5 | pale pine, nothing on the top
+a cast iron wood stove a few meters back on the left | 0.5 | 0.2-0.5 | black stove with a stovepipe rising to the ceiling, a slate hearth pad
+a leather loveseat under the window a few meters back on the right | 0.5 | 0.2-0.5 | empty, brown leather, a wool blanket folded on one arm
+two empty rocking chairs by the glass wall a few meters back on the left | 0.55 | 0.2-0.5 | bent pine frames, wool cushions
+a low pine bench along the wall a few meters back on the right | 0.45 | 0.2-0.5 | empty, a basket of firewood beneath it
+an old trunk used as a side table a few meters back on the left | 0.4 | 0.2-0.5 | dark wood with iron straps, empty top except a lamp
+a leather ottoman a few meters back at the center | 0.5 | 0.2-0.5 | dark brown, empty, beside the rug
+a tall floor lamp and a wing chair a few meters back on the left | 0.45 | 0.2-0.5 | chair empty, warm glow
+a corner cabinet of knotty pine a few meters back on the right | 0.4 | 0.2-0.5 | tall plain doors, closed, a lamp glowing on top

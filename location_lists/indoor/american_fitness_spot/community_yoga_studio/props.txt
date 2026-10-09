@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-essential oil bottle on the shelf | 0.45 | 0.02-0.06 | amber glass with a sprig of dried lavender
-tissue box at the room edge | 0.45 | 0.02-0.06 | one sheet up
-hair ties looped on a wrist basket | 0.4 | 0.02-0.05 | mixed elastics
-eye pillows in a bowl | 0.45 | 0.02-0.08 | flaxseed sachets
-sign-in tablet on a stand | 0.5 | 0.02-0.08 | fingerprinted screen
-hand weights in a corner basket | 0.4 | 0.05-0.12 | one and two pounders
-lost-and-found bin of water bottles | 0.4 | 0.03-0.1 | orphaned lids
-small chalkboard on an easel | 0.4 | 0.03-0.1 | {chalk-drawn lotus and sun doodles|one hand-lettered word "{BREATHE|REST|FLOW}"}
-spray bottles of mat cleaner | 0.5 | 0.02-0.08 | tea tree scent
-donation basket by the door | 0.35 | 0.02-0.08 | folded bills
-phone basket by the door | 0.4 | 0.03-0.08 | screens face down
+a small potted pothos on a far shelf at the back | 0.7 | 0.01-0.05 | trailing green leaves
+a tiny white ceramic diffuser on a far shelf at the back | 0.6 | 0.01-0.05 | matte glaze
+a small stack of folded towels on a distant shelf | 0.6 | 0.01-0.05 | white cotton
+small smooth stones in a wooden bowl on a distant shelf | 0.5 | 0.01-0.05 | gray and tan
+a small brass singing bowl on a low shelf far at the back | 0.5 | 0.01-0.05 | polished metal
+a slim wooden incense holder on a distant shelf | 0.4 | 0.01-0.05 | pale wood
+small unlit candles in a row on a far windowsill | 0.5 | 0.01-0.05 | white wax
+a small woven basket at the back of the far shelf | 0.5 | 0.01-0.05 | natural fiber
+a small ceramic vase with dried grasses on a far shelf | 0.45 | 0.01-0.05 | pale beige
+a compact white sound box on a far shelf at the back | 0.4 | 0.01-0.05 | matte plastic
+a small glass water jug on a far shelf at the back | 0.4 | 0.01-0.05 | clear glass
+a tiny succulent in a clay pot on a far windowsill | 0.45 | 0.01-0.05 | gray-green leaves

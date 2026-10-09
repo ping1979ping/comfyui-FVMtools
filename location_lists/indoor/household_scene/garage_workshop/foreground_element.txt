@@ -1,15 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-painted concrete slab floor | 1.0 | 0.4-0.9 | sealed gray surface
-rubber interlocking floor mats | 0.8 | 0.4-0.9 | textured tile squares
-wood shavings scattered | 0.75 | 0.05-0.2 | curled pale fibers
-sawdust pile beneath bench | 0.7 | 0.05-0.2 | fine pale powder
-coiled extension cord | 0.85 | 0.05-0.15 | orange rubber loop
-painted parts bucket | 0.7 | 0.05-0.15 | metal pail with handle
-project lumber stack | 0.8 | 0.1-0.3 | piled raw boards
-oil-stained shop rag | 0.7 | 0.05-0.15 | crumpled red cloth
-hand truck against bench | 0.6 | 0.1-0.25 | steel two-wheel dolly
-gas can on floor | 0.6 | 0.05-0.15 | red plastic jerrican
-work boots on mat | 0.65 | 0.05-0.15 | scuffed leather pair
-push broom against wall | 0.7 | 0.05-0.15 | wide bristle head
+smooth sealed concrete garage floor | 1.0 | 0.1-0.4 | smooth and even
+a light gray concrete floor | 0.8 | 0.1-0.4 | matte and even
+a swept bare concrete floor | 0.75 | 0.1-0.4 | rough pale grain
+a concrete floor with a few faint oil marks | 0.5 | 0.1-0.4 | pale gray, matte
+a smooth concrete floor | 0.55 | 0.1-0.4 | matte and even
+a plain gray garage floor sealed in a matte coat | 0.65 | 0.1-0.4 | smooth, clean
+a gray rubber floor in plain sheets | 0.4 | 0.1-0.4 | matte, slightly ribbed
+a plain wide plywood plank floor in the work area | 0.35 | 0.1-0.4 | smooth and even
+a plain light gray concrete floor | 0.9 | 0.1-0.4 | smooth and even
+a smooth medium gray concrete floor | 0.8 | 0.1-0.4 | matte and even
+a plain pale gray slab floor | 0.7 | 0.1-0.4 | smooth and even
+a plain charcoal concrete floor | 0.5 | 0.1-0.4 | smooth and even

@@ -1,14 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-scalloped pastel awning valance | 0.6 | 0.05-0.2 | mint canvas edge
-chrome counter trim strip | 0.7 | 0.03-0.1 | polished edge banding
-globe pendant lamps | 0.75 | 0.05-0.15 | frosted white spheres
-tufted vinyl booth backing | 0.55 | 0.05-0.15 | button-pleated red panel
-beveled mirror panel | 0.6 | 0.05-0.15 | antique silvered glass
-wood-and-glass entry door | 0.5 | 0.05-0.15 | brass push plate and bell
-stamped tin ceiling tile | 0.5 | 0.05-0.2 | cream repeating pattern
-curved glass display-case front | 0.65 | 0.05-0.15 | slanted frosted panel
-painted pink wainscot band | 0.55 | 0.05-0.15 | rounded glossy lower wall
-ornate wall clock | 0.4 | 0.02-0.08 | round white-faced timepiece
-terrazzo floor border | 0.35 | 0.03-0.1 | speckled stone edge
+a scalloped pastel awning valance above the far windows | 0.6 | 0.03-0.1 | mint canvas edge
+a chrome counter trim strip along the far counter | 0.7 | 0.02-0.06 | polished edge banding
+frosted white globe pendant lamps in a row far overhead | 0.75 | 0.03-0.08 | soft glow
+a tufted vinyl panel behind the far booths | 0.5 | 0.03-0.08 | button-pleated red
+a beveled mirror panel at the far center of the wall | 0.6 | 0.03-0.08 | antique silvered glass
+a wood-and-glass entry door at the far right | 0.5 | 0.04-0.1 | brass push plate
+a stamped tin ceiling tile pattern high above the far side | 0.5 | 0.03-0.1 | cream repeating relief
+a curved glass front on the far display case | 0.55 | 0.03-0.08 | slanted frosted panel
+a painted pink wainscot band along the far wall | 0.5 | 0.03-0.1 | rounded glossy lower wall
+a round white-faced wall clock high on the far wall | 0.4 | 0.01-0.04 | brass rim
+brass wall sconces in a line along the far wall | 0.45 | 0.02-0.06 | frosted shades
+a terrazzo border strip along the far wall base | 0.35 | 0.02-0.06 | speckled stone

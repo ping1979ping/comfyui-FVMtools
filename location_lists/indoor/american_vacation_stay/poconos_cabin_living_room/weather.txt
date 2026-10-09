@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-rain streaks on the window | 0.55 | - | -
-window unit humming against the heat | 0.5 | - | -
-dry forced-air warmth | 0.6 | - | -
-humid summer air indoors | 0.5 | - | -
-wind audible against the siding | 0.4 | - | -
-snow visible outside the window | 0.35 | - | -
-damp air after a thunderstorm | 0.45 | - | -
-still muggy evening air | 0.45 | - | -
-draught from a leaky window frame | 0.4 | - | -
-dry winter static air | 0.4 | - | -
+soft snow falling beyond the tall windows | 0.7 | - | -
+gray rain streaking the glass wall | 0.6 | - | -
+bright autumn color in the trees beyond the glass | 0.8 | - | -
+crisp clear winter sky above bare branches | 0.6 | - | -
+fog hanging in the woods beyond the windows | 0.5 | - | -
+fresh green leaves outside the windows | 0.5 | - | -
+still warm air with soft steady light | 0.8 | - | -
+deep snow on the deck outside the glass | 0.5 | - | -
+low cloud and light mist in the trees outside | 0.5 | - | -
+bright summer green beyond the windows | 0.5 | - | -
+cold clear air and pale sun in the bare trees | 0.5 | - | -

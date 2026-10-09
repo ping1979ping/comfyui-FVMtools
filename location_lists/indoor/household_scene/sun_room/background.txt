@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-floor-to-ceiling glazed wall | 1.0 | 0.7-1.0 | clean clear panel runs
-white painted muntin window wall | 0.95 | 0.6-1.0 | divided pane grid
-glass conservatory pitched roof | 0.85 | 0.5-0.9 | sloped clean glazing
-half-paneled window wall | 0.85 | 0.5-0.9 | painted lower glazed upper
-exterior view of garden visible | 0.95 | 0.5-0.9 | softly blurred greenery
-brick interior accent wall | 0.7 | 0.4-0.8 | aged warm masonry
-painted pale plaster wall | 0.7 | 0.5-0.9 | softly chalky finish
-shiplap accent wall section | 0.65 | 0.4-0.8 | overlapped board joint
-window seat alcove back | 0.75 | 0.3-0.6 | recessed cushioned bay
-floor-to-ceiling French door | 0.85 | 0.3-0.6 | divided pane double leaf
+a far wall of floor-to-ceiling windows with white mullions across the whole width of the image | 1.0 | 0.7-1.0 | green garden and trees beyond, bright daylight
+a far glass wall with a pair of french doors at the center | 0.9 | 0.6-1.0 | white painted frames, a green lawn beyond, tall windows on each side
+a pitched glass roof rising toward the far wall | 0.75 | 0.5-0.9 | white rafters, pale sky above, windows below across the whole width of the image
+a far wall of white tongue-and-groove boards under a row of tall windows | 0.7 | 0.6-1.0 | daylight, garden greenery beyond the glass
+the far corner of the room where two walls of tall windows meet | 0.7 | 0.6-1.0 | white frames, trees beyond, soft daylight
+a far brick wall painted white with an arched window on each side | 0.55 | 0.5-0.9 | warm daylight, a green garden beyond the glass
+a far wall of fieldstone at the left and glass at the right | 0.5 | 0.6-1.0 | gray stone, a wide window with a garden beyond
+a far wall of tall windows with sheer white curtains pulled back at each side | 0.65 | 0.6-1.0 | soft daylight, trees beyond, across the whole width of the image
+a far wall of black steel-framed windows | 0.6 | 0.6-1.0 | thin dark mullions across the whole width of the image, a green yard beyond
+a far wall of wide wood-framed windows with a stone sill | 0.6 | 0.6-1.0 | tall windows across the whole width of the image, a leafy garden beyond
+a far wall with a wide glass door at the right opening to a deck | 0.6 | 0.5-0.9 | white frames, a wood deck and trees beyond
+a far wall of windows facing a wooded backyard | 0.6 | 0.6-1.0 | soft green foliage in the glass, bright even daylight
+a far wall of pale plaster with three tall arched windows | 0.5 | 0.5-0.9 | soft daylight, a green garden beyond

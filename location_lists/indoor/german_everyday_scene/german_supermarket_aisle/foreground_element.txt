@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-trolley handle in the near frame | 0.8 | 0.1-0.3 | worn plastic grip
-product held up to inspect | 0.65 | 0.05-0.2 | glossy packaging
-hand reaching towards a shelf | 0.6 | 0.1-0.25 | sleeve edge in frame
-basket carried at the hip | 0.5 | 0.1-0.3 | plastic handle
-phone held at chest height | 0.5 | 0.05-0.15 | lit screen
-coat sleeve crossing the frame | 0.45 | 0.1-0.25 | creased shell fabric
-items piled in the trolley | 0.6 | 0.15-0.35 | mixed packaging
-purse held in one hand | 0.4 | 0.05-0.15 | worn zip
-shelf edge close to the camera | 0.5 | 0.1-0.3 | metal lip
-carrier bag hooked on the arm | 0.4 | 0.05-0.2 | stretched handles
-child's hand on the trolley | 0.35 | 0.05-0.15 | small fingers
+a smooth pale gray vinyl floor | 1.0 | 0.2-0.4 | matte and even
+a smooth cream vinyl floor | 0.8 | 0.2-0.4 | smooth and even
+a smooth concrete floor | 0.8 | 0.2-0.4 | sealed and even
+a plain light gray linoleum floor | 0.6 | 0.2-0.4 | matte and clean
+a clean white vinyl floor | 0.55 | 0.2-0.4 | matte and even
+a smooth off-white floor | 0.6 | 0.2-0.4 | matte and even
+a pale gray vinyl floor | 0.7 | 0.2-0.4 | smooth and even
+a matte light gray vinyl floor | 0.5 | 0.2-0.4 | soft shadows from the shelves
+a smooth warm gray stone floor | 0.5 | 0.2-0.4 | honed and even
+a pale blue-gray vinyl floor | 0.4 | 0.2-0.4 | smooth and even
+a smooth sealed gray concrete floor | 0.5 | 0.2-0.4 | smooth and even
+a beige stone-look vinyl floor | 0.45 | 0.2-0.4 | matte and even

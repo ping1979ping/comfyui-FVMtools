@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-flat fluorescent light throughout | 1.0 | - | -
-early morning before the rush | 0.7 | - | -
-mid morning lull | 0.75 | - | -
-lunchtime bustle | 0.7 | - | -
-mid afternoon slump | 0.8 | - | -
-late afternoon wind-down | 0.75 | - | -
-early evening shift change | 0.6 | - | -
-daylight mixing with the overheads | 0.7 | - | -
-one bank of lights switched off | 0.45 | - | -
-after-hours near closing | 0.5 | - | -
+bright even white ceiling light, no daylight | 1.0 | - | -
+flat cool fluorescent light overhead | 0.9 | - | -
+early morning daylight through the front glass | 0.7 | - | -
+midday daylight mixing with the ceiling lights | 0.8 | - | -
+low late-afternoon sun through the storefront glass | 0.7 | - | -
+bright white light with dark windows at night | 0.6 | - | -
+soft overcast daylight with all the lights on | 0.7 | - | -
+warm low sun at the front windows | 0.5 | - | -
+pale morning light with half the lights on | 0.5 | - | -
+blue dusk outside and bright lights inside | 0.6 | - | -
+bright evening light under the long tubes | 0.7 | - | -

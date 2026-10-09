@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-soft early morning light | 0.95 | - | -
-mid-morning cool brightness | 0.9 | - | -
-warm afternoon glow | 0.85 | - | -
-calm midday softness | 0.9 | - | -
-overcast diffused light | 0.85 | - | -
-evening pendant glow | 0.85 | - | -
-late-night under-shelf gleam | 0.7 | - | -
-soft dusk fade | 0.7 | - | -
-LED-only task brightness | 0.8 | - | -
-warm lamp-lit interior | 0.8 | - | -
+even warm ceiling light, no daylight in the room | 1.0 | - | -
+soft midday light from the small window | 0.7 | - | -
+warm evening ceiling light | 0.8 | - | -
+soft morning daylight at the far window | 0.6 | - | -
+bright ceiling light with a pale window | 0.7 | - | -
+warm light from the shelf strip lights | 0.6 | - | -
+cool white ceiling light on a gray afternoon | 0.5 | - | -
+low golden light from the far window | 0.4 | - | -
+soft late-afternoon light at the doorway | 0.5 | - | -
+dim warm light with only the strip lights on | 0.4 | - | -

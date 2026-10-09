@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-morning light through the blinds | 0.9 | - | -
-flat late morning light | 0.85 | - | -
-grey overcast midday | 0.85 | - | -
-afternoon light across the carpet | 0.85 | - | -
-late afternoon low sun | 0.8 | - | -
-early evening with a lamp on | 0.9 | - | -
-evening under the ceiling fan light | 0.8 | - | -
-dim light before bed | 0.6 | - | -
-tv glow in a dark room | 0.5 | - | -
-half dark with the hall light on | 0.55 | - | -
+bright morning light through the kitchen window | 1.0 | - | -
+soft midmorning light with a pale sky beyond | 0.7 | - | -
+warm late-afternoon light across the counter | 0.8 | - | -
+bright midday light with the ceiling light off | 0.7 | - | -
+golden early-evening light through the sliding door | 0.7 | - | -
+soft gray overcast daylight with the ceiling light on | 0.6 | - | -
+warm evening light with the pendant lamp glowing | 0.7 | - | -
+cool blue dusk outside and the ceiling light on | 0.5 | - | -
+low early sun slanting across the floor | 0.5 | - | -
+pale hazy afternoon light | 0.5 | - | -
+soft light under a single ceiling lamp at night | 0.4 | - | -

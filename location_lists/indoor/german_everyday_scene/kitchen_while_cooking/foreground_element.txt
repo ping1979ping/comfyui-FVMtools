@@ -1,14 +1,14 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-pot steaming on the hob | 0.9 | 0.1-0.3 | condensation on the lid
-hands stirring in the pan | 0.7 | 0.1-0.3 | steam over the wrist
-open cookbook propped up | 0.5 | 0.05-0.2 | splashed page with a food photo
-dirty plates stacked in the sink | 0.6 | 0.1-0.25 | soap film
-cutting into vegetables | 0.65 | 0.1-0.25 | wet blade
-mug lifted towards the camera | 0.5 | 0.05-0.15 | chipped rim
-tea towel over the shoulder | 0.5 | 0.05-0.15 | damp cotton
-phone propped against the tiles | 0.45 | 0.05-0.15 | smeared screen
-oven glove on the worktop | 0.45 | 0.05-0.15 | scorched quilted fabric
-packet being opened over the pan | 0.4 | 0.05-0.15 | crinkled foil
-steam catching the window light | 0.55 | 0.1-0.25 | drifting vapour
+a wood-look vinyl plank floor | 1.0 | 0.2-0.4 | smooth and even
+a plain light gray ceramic tile floor | 0.9 | 0.2-0.4 | large format with pale grout
+a terracotta tile floor | 0.65 | 0.2-0.4 | smooth and even
+a plain cream vinyl floor | 0.6 | 0.2-0.4 | even and clean
+a smooth gray concrete floor | 0.5 | 0.2-0.4 | sealed and matte
+a pale beech laminate floor | 0.6 | 0.2-0.4 | light grain, satin finish
+a dark gray slate-look tile floor | 0.5 | 0.2-0.4 | even and matte
+a light oak parquet floor | 0.55 | 0.2-0.4 | matte and even
+a plain gray linoleum floor | 0.5 | 0.2-0.4 | smooth and wiped clean
+a smooth beige vinyl floor | 0.55 | 0.2-0.4 | matte and even
+a gray stone floor | 0.45 | 0.2-0.4 | narrow grout lines

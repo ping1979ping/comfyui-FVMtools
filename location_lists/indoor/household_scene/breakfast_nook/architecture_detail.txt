@@ -1,13 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-profiled chair-rail trim | 0.85 | 0.1-0.3 | painted wood molding
-tall baseboard skirting | 0.9 | 0.1-0.3 | painted wide trim
-casement window mullions | 0.95 | 0.2-0.5 | painted divided sashes
-crown molding ceiling line | 0.85 | 0.1-0.3 | profiled painted edge
-window seat sill ledge | 0.85 | 0.1-0.3 | thick painted shelf
-arched bay window opening | 0.7 | 0.2-0.5 | curved structural frame
-wall sconce flanking nook | 0.7 | 0.05-0.2 | small mounted lamps
-small picture rail line | 0.65 | 0.1-0.3 | thin painted edge
-flush ceiling pendant cap | 0.85 | 0.1-0.3 | painted ceiling plate
-deep window sill ledges | 0.8 | 0.1-0.3 | thick painted shelves
+white window trim around the far windows | 0.8 | 0.03-0.1 | crisp painted frames
+a slim chair rail along the far wall | 0.6 | 0.02-0.08 | white painted molding
+a small rattan pendant lamp far overhead | 0.6 | 0.02-0.08 | woven dome, soft glow
+thin crown molding along the top of the far wall | 0.55 | 0.02-0.08 | white painted
+a narrow plate shelf high on the far wall | 0.4 | 0.02-0.06 | white painted board, empty
+a small recessed ceiling light far overhead | 0.5 | 0.01-0.05 | round white fixture
+a thin white curtain rod above the far window | 0.5 | 0.02-0.06 | plain pale fabric hanging below
+a slim window mullion at the far center | 0.55 | 0.02-0.08 | white painted bar between panes
+a low window sill along the far wall | 0.5 | 0.03-0.08 | pale painted wood
+a narrow baseboard along the far wall | 0.45 | 0.02-0.06 | plain white
+a small round vent grille high on the far wall | 0.35 | 0.01-0.05 | white metal

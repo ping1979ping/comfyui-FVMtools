@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-24-hour bright fluorescent | 1.0 | - | -
-midday peak shopping brightness | 0.9 | - | -
-weekend afternoon crowded light | 0.85 | - | -
-weekday morning lull lighting | 0.85 | - | -
-evening after-work busy | 0.85 | - | -
-late-night restock quiet | 0.7 | - | -
-3am empty aisle dim | 0.6 | - | -
-early-bird senior hours light | 0.65 | - | -
-holiday-rush extra-bright | 0.65 | - | -
-opening-hour first-customer hum | 0.55 | - | -
+bright even white light from long ceiling fixtures | 1.0 | - | -
+cool bright store lighting, no daylight | 0.85 | - | -
+soft daylight at the far entrance mixed with ceiling light | 0.6 | - | -
+flat white light with no hard shadows | 0.8 | - | -
+early-morning light with the store lights on | 0.6 | - | -
+pale afternoon light at the far entrance doors | 0.5 | - | -
+warm early-evening light at the far entrance glass | 0.5 | - | -
+bright overhead light across the whole aisle | 0.8 | - | -
+late-evening light with every ceiling fixture on | 0.55 | - | -
+gray daylight beyond the far doors, bright ceiling lights | 0.6 | - | -
+neutral white light with a soft glow on the floor | 0.7 | - | -

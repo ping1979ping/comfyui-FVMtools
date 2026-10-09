@@ -1,13 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-scratch-off lottery ticket on floor | 0.7 | 0.05-0.1 | discarded scratched paper
-crumpled paper slip by counter | 0.85 | 0.05-0.1 | thin thermal paper
-spilled coffee drip pool | 0.7 | 0.05-0.1 | brown drying stain
-chip bag tear on display | 0.55 | 0.02-0.08 | foil-lined snack bag
-plastic stir-stick on counter | 0.7 | 0.02-0.05 | thin black thermoplastic
-empty soda cup left on counter | 0.7 | 0.05-0.15 | plain waxed paper cup with a colorful stripe
-crumpled napkin near hot dogs | 0.7 | 0.05-0.1 | wadded thin paper
-penny on tile floor | 0.4 | 0.01-0.03 | dirty copper coin
-gum wrapper on tile | 0.5 | 0.02-0.05 | shiny foil bit
-orange plastic floor cone | 0.4 | 0.05-0.15 | A-frame plastic cone
+a pale gray smooth concrete floor | 1.0 | 0.1-0.4 | matte and even
+a plain white vinyl floor | 0.8 | 0.1-0.4 | matte and even
+a cream vinyl floor | 0.7 | 0.1-0.4 | matte and even
+a beige vinyl plank floor | 0.6 | 0.1-0.4 | satin finish
+a dark gray sealed concrete floor | 0.6 | 0.1-0.4 | matte, even
+a light tan linoleum floor | 0.6 | 0.1-0.4 | matte and even
+a plain gray vinyl composite floor | 0.5 | 0.1-0.4 | matte and even
+a light gray smooth concrete floor | 0.6 | 0.1-0.4 | clean and even
+a smooth beige epoxy floor | 0.5 | 0.1-0.4 | matte and even
+a plain light gray concrete floor | 0.9 | 0.1-0.4 | smooth and even
+a smooth medium gray concrete floor | 0.8 | 0.1-0.4 | matte and even
+a plain gray vinyl floor | 0.5 | 0.1-0.4 | smooth and even

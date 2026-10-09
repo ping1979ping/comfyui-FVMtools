@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-freestanding farmhouse table | 1.0 | 0.4-0.8 | scrubbed pine top
-apron-front porcelain sink | 0.95 | 0.3-0.7 | white enamel basin
-enamel cookstove range | 0.85 | 0.3-0.7 | cream porcelain front
-butcher block prep island | 0.8 | 0.4-0.7 | thick laminated maple
-painted dresser with plates | 0.8 | 0.4-0.8 | open display shelves
-ladderback dining chairs | 0.85 | 0.3-0.6 | rush-woven seats
-hanging pot rack overhead | 0.75 | 0.3-0.5 | iron rail with copper
-country-style bench at table | 0.7 | 0.3-0.6 | weathered timber slab
-kitchen window seat nook | 0.65 | 0.3-0.6 | cushioned built-in
-freestanding pie safe cupboard | 0.6 | 0.3-0.6 | punched tin doors
-breakfast hutch with glass doors | 0.7 | 0.4-0.7 | painted glazed top
-woven rag rug runner | 0.7 | 0.2-0.5 | braided multi-color cloth
+a long wooden farmhouse table a few meters back at the center | 1.0 | 0.3-0.5 | scarred oak top, set for breakfast with plain plates, ladderback chairs pushed in
+a ladderback chair group around a plain table a few meters back | 0.8 | 0.3-0.5 | four wooden chairs, all empty, pushed in
+a butcher block island a few meters back on the left | 0.7 | 0.3-0.5 | worn maple top, a bowl of apples on it, two stools pushed in beneath
+a black enamel cookstove a few meters back on the right | 0.55 | 0.2-0.4 | cast-iron top, a plain kettle resting on it
+a painted dresser with plates a few meters back on the left | 0.55 | 0.2-0.4 | pale blue cupboard doors, white plates standing on the shelves
+a pot rack hanging a few meters back over the island | 0.45 | 0.1-0.3 | iron bar with copper pans, hanging still
+a wooden bench along a table a few meters back on the right | 0.5 | 0.2-0.4 | empty plank seat, a wooden table set for two in front
+a pie safe cupboard standing a few meters back on the right | 0.5 | 0.2-0.4 | pale painted wood with pierced tin doors, closed
+a cushioned window seat a few meters back on the left | 0.45 | 0.2-0.4 | empty, a faded checked cushion beneath a wide window
+a pine hutch with glass doors a few meters back on the left | 0.5 | 0.2-0.4 | plain dishes behind the glass, closed
+a rag rug runner with a wide striped weave a few meters back | 0.4 | 0.1-0.3 | muted colors, lying on the planks
+a rocking chair by the hearth a few meters back on the right | 0.4 | 0.2-0.4 | empty, worn wood and a folded quilt on the seat
+a round farmhouse table with a plain white cloth a few meters back | 0.5 | 0.3-0.5 | set for two, chairs pushed in, a jug of wildflowers in the center
+a wood stove with a stacked firewood basket a few meters back on the right | 0.4 | 0.2-0.4 | black iron, closed door, a neat stack of split logs

@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-Sunday afternoon game day | 1.0 | - | -
-Friday happy-hour rush | 0.9 | - | -
-late-night overtime crowd | 0.8 | - | -
-Monday night football evening | 0.85 | - | -
-weekday lunch lull | 0.6 | - | -
-playoff Saturday afternoon | 0.8 | - | -
-quiet pre-opening afternoon | 0.4 | - | -
-post-game last call hour | 0.6 | - | -
-early evening dinner crowd | 0.7 | - | -
-midnight closing time | 0.4 | - | -
+warm late-afternoon light with the pendant lamps on | 1.0 | - | -
+dim evening light, taps and backbar glowing | 0.9 | - | -
+soft midday window light with the lamps on | 0.7 | - | -
+early-evening glow of backbar lights and neon | 0.85 | - | -
+late-night dim light of backbar lights and neon | 0.7 | - | -
+bright afternoon daylight through the front window | 0.6 | - | -
+quiet daylight, only the backbar lights on | 0.5 | - | -
+blue dusk at the window with warm lamps lit | 0.7 | - | -
+soft overcast afternoon light through the blinds | 0.6 | - | -
+low amber lamplight on a dark evening | 0.6 | - | -

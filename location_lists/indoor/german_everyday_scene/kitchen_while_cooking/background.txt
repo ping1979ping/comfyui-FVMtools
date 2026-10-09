@@ -1,14 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-plain white kitchen wall tiles | 1.0 | 0.5-0.9 | glossy square tiles with grout
-kitchen wall cupboards in light wood | 0.9 | 0.4-0.8 | laminate fronts with simple handles
-window above the sink | 0.8 | 0.2-0.5 | plain glass with a roller blind
-tiled splashback behind the hob | 0.85 | 0.2-0.5 | wiped-down tiles
-open shelf with jars | 0.6 | 0.2-0.5 | mismatched screw-top jars
-pinboard with photos and paper scraps | 0.55 | 0.15-0.4 | overlapping paper scraps
-plain painted wall above the tiles | 0.75 | 0.3-0.6 | flat emulsion with grease marks
-extractor hood over the hob | 0.7 | 0.15-0.4 | brushed steel with a filter grille
-kitchen door left ajar | 0.5 | 0.2-0.5 | painted timber with a worn handle
-row of wall hooks by the door | 0.45 | 0.1-0.3 | hung tote bags
-row of hanging tea towels | 0.5 | 0.1-0.3 | faded checked cotton
+a wall of plain white kitchen tiles across the far side of the room | 1.0 | 0.5-0.9 | glossy square tiles with thin gray grout, a stainless extractor hood above the hob at the center
+light wood wall cupboards along the far wall | 0.9 | 0.4-0.8 | laminate fronts with simple steel handles, an under-cupboard light strip glowing beneath them
+a window above the sink on the far left | 0.8 | 0.2-0.5 | plain glass with a half-raised roller blind, soft daylight, a row of green herb pots on the sill
+a tiled splashback behind the hob at the far center | 0.85 | 0.3-0.6 | wiped-down white tiles, two pots with lids on the hob far back
+an open wall shelf with screw-top jars along the far right | 0.6 | 0.2-0.5 | mismatched jars of pasta and rice, a wooden board leaning behind them
+a pale yellow painted wall above the tiles across the far side | 0.7 | 0.3-0.6 | flat emulsion paint, a few small framed prints hung at even intervals
+a stainless steel extractor hood over the hob far back | 0.7 | 0.2-0.4 | brushed steel with a filter grille, a soft light beneath it
+a kitchen door standing ajar on the far left | 0.5 | 0.2-0.5 | painted white timber, daylight from a hallway beyond
+a row of wall hooks with hanging checked tea towels along the far right | 0.5 | 0.1-0.3 | faded cotton in red and white
+a tall white refrigerator in the far corner | 0.6 | 0.2-0.5 | a smooth enamel front with a few small round magnets, a pale window light falling on its side
+a long worktop run with a steel hob and sink across the far wall | 0.8 | 0.4-0.8 | light laminate top, a backsplash of white tiles above it
+a wooden rack of spice jars on the far wall | 0.45 | 0.2-0.4 | small glass jars in a neat row on dark wood, warm light from the window beside it, a plain tile wall behind
+a balcony door with sheer curtains on the far right | 0.45 | 0.3-0.6 | white frame, bright daylight beyond the glass

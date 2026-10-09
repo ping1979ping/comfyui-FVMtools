@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-central kitchen island block | 1.0 | 0.5-0.9 | crisp engineered stone top
-breakfast bar overhang counter | 0.85 | 0.4-0.8 | sleek extended slab
-double-bowl undermount sink run | 0.9 | 0.4-0.8 | brushed stainless basin
-induction cooktop counter zone | 0.85 | 0.3-0.7 | smooth black ceramic glass
-built-in wall oven stack | 0.8 | 0.3-0.7 | brushed steel facade
-tall integrated refrigerator column | 0.85 | 0.4-0.8 | flush paneled tower
-range hood over cooktop | 0.8 | 0.3-0.6 | brushed steel canopy
-peninsula counter return | 0.7 | 0.4-0.7 | continuous stone top
-dining counter pendant zone | 0.8 | 0.3-0.6 | trio of hung lights
-glass-fronted upper cabinet bay | 0.65 | 0.3-0.6 | clear paned doors
-coffee station alcove counter | 0.65 | 0.3-0.6 | tucked appliance ledge
-prep zone with butcher block insert | 0.6 | 0.3-0.6 | warm wood inlay
+a long kitchen island with a white quartz top a few meters back at the center | 1.0 | 0.3-0.5 | clear surface, three wood stools pushed in along one side
+a pale oak dining table with chairs pushed in a few meters back on the left | 0.7 | 0.3-0.5 | empty, clear top
+a tall paneled refrigerator a few meters back on the right | 0.6 | 0.2-0.4 | flush with the cabinets, stainless handles
+a stainless steel range with a slim hood above it a few meters back at the center | 0.6 | 0.2-0.4 | clean cooktop
+a peninsula counter a few meters back on the right | 0.7 | 0.3-0.5 | quartz top, two empty bar stools pushed in
+a tall dark cabinet with a double wall oven a few meters back on the left | 0.5 | 0.2-0.4 | flat front, brushed steel
+a wide doorway a few meters back on the right | 0.45 | 0.2-0.4 | leading to a hallway, soft light beyond
+a pair of glass-front wall cabinets a few meters back on the left | 0.5 | 0.2-0.4 | lit from within, white dishes stacked inside
+a white sink set under a window a few meters back at the center | 0.5 | 0.2-0.4 | brushed brass faucet, a clear counter on both sides
+a built-in wine cooler a few meters back on the left | 0.4 | 0.15-0.35 | glass door, soft blue light inside
+a bar-height counter a few meters back along the right wall | 0.55 | 0.3-0.5 | empty, four stools pushed in
+a built-in breakfast banquette a few meters back on the left | 0.4 | 0.3-0.5 | empty, pale leather, a round oak table in front of it
+a second island with a pale stone top a few meters back on the left | 0.45 | 0.3-0.5 | clear surface, a single pendant light above
+a freestanding oak dining table a few meters back at the center | 0.5 | 0.3-0.5 | empty, six chairs pushed in

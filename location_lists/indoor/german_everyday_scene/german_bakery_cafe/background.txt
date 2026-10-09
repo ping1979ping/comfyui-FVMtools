@@ -1,15 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-glass pastry display counter | 1.0 | 0.6-1.0 | gleaming case of layered cakes
-wall of wooden bread shelves | 0.95 | 0.6-1.0 | racks of crusty rye loaves
-chalkboard wall with simple doodled pastry drawings | 0.85 | 0.5-0.9 | white chalk drawings of pretzels and cakes
-street-facing shopfront window | 0.85 | 0.5-0.9 | bright glass with painted lettering reading "{BROT|BÄCKEREI|CAFÉ}"
-cream tiled back wall | 0.75 | 0.5-0.9 | glossy white subway tile with green border
-open stone-oven bakery kitchen | 0.6 | 0.4-0.8 | glowing arched oven behind counter
-rustic beamed plaster ceiling | 0.7 | 0.5-0.9 | whitewashed walls with dark timber beams
-pale-green painted paneling | 0.6 | 0.4-0.8 | vintage wainscot with brass hooks
-vintage cash register station | 0.55 | 0.3-0.6 | brass-keyed till beside coffee machine
-espresso machine back bar | 0.65 | 0.4-0.7 | chrome portafilter machine with cup stacks
-framed old-town photograph wall | 0.5 | 0.3-0.6 | black-and-white prints in thin frames
-glass bell-jar cookie shelf | 0.45 | 0.3-0.6 | domed jars of shortbread and pretzels
+the long glass pastry counter across the far side of the room | 1.0 | 0.6-1.0 | a lit display case of layered cakes and tarts spanning most of the width of the image, a dark wood base with brass trim
+a wall of wooden bread shelves across the far side of the room | 0.95 | 0.6-1.0 | tiered racks of dark rye loaves and rolls, warm pendant light above them, spanning the whole width of the image
+a street-facing shopfront window along the far left wall | 0.85 | 0.5-0.9 | tall clear glass with a pale daylit street beyond, white half-curtains across the lower panes
+a cream tiled back wall across the far end of the room | 0.75 | 0.6-1.0 | glossy white wall tiles with a thin green border band at mid-height, a wooden shelf running above
+an open stone-oven bake room behind the far counter | 0.6 | 0.4-0.8 | a glowing arched brick oven in soft focus, trays of rolls on steel racks beside it
+pale green painted paneling along the far wall | 0.6 | 0.5-0.9 | vintage wainscot with a row of brass coat hooks, whitewashed plaster above, warm wall lamps at even intervals
+a whitewashed plaster wall with dark timber beams across the far end of the room | 0.7 | 0.5-0.9 | exposed oak beams overhead, shallow wall niches holding plain ceramic jars
+a polished espresso machine on the back bar at the far right | 0.65 | 0.4-0.8 | chrome and cream steel with stacked white cups, a wooden shelf of coffee tins above it
+a row of framed black-and-white old-town photographs along the far wall | 0.5 | 0.5-0.9 | thin dark frames spaced evenly over pale green paneling
+a glass bell-jar cookie shelf at the far left of the back wall | 0.45 | 0.4-0.8 | domed jars of shortbread and pretzels on a wooden shelf, warm light from above
+an arched doorway to the back room at the far center | 0.5 | 0.4-0.8 | a rounded plaster opening with warm light beyond, a pale blue painted door leaf standing open
+a long cushioned wall bench in pale green leather along the far wall | 0.55 | 0.5-0.9 | empty, dark wood backrest, round white marble tables standing empty in front of it
+a tall mirror in a dark wood frame on the far wall | 0.4 | 0.4-0.8 | reflecting the pendant lamps and the empty room

@@ -1,15 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-water heater tank column | 0.95 | 0.3-0.6 | tall enamel cylinder
-furnace utility box | 0.95 | 0.4-0.7 | painted metal cabinet
-electrical breaker panel | 0.95 | 0.2-0.4 | gray metal door
-washer dryer back zone | 0.7 | 0.3-0.6 | side-by-side appliances
-metal utility shelving rows | 0.95 | 0.4-0.8 | stacked storage racks
-laundry sink basin tub | 0.8 | 0.2-0.5 | molded plastic tub
-freezer chest unit | 0.85 | 0.3-0.5 | top-load white box
-dehumidifier on floor | 0.85 | 0.2-0.4 | square plastic unit
-plastic storage bin tower | 0.85 | 0.3-0.6 | clear lidded boxes
-work tool bench against wall | 0.7 | 0.3-0.5 | freestanding worktop
-sump pump pit cover | 0.65 | 0.1-0.3 | round lid plate
-furnace ductwork branching | 0.85 | 0.3-0.6 | sheet metal trunks
+a white furnace cabinet a few meters back on the left | 0.9 | 0.3-0.5 | painted metal, silver ducts leading up from the top, a closed access panel
+a gray electrical breaker panel on the wall a few meters back on the right | 0.8 | 0.2-0.4 | closed metal door, a thin conduit running to the ceiling
+two white appliances a few meters back on the right | 0.7 | 0.3-0.5 | a washer and dryer side by side, doors closed, plain tops
+a row of steel storage racks a few meters back on the left | 0.85 | 0.3-0.5 | gray shelving with lidded plastic bins in neat columns
+a deep gray laundry sink a few meters back on the right | 0.6 | 0.2-0.4 | plastic tub on a metal stand, a single faucet, clean
+a white chest freezer a few meters back at the center | 0.65 | 0.3-0.5 | closed lid, plain, standing against the wall
+a white dehumidifier standing a few meters back on the left | 0.55 | 0.2-0.4 | compact boxy unit, still, plain top
+a stack of lidded plastic totes a few meters back on the right | 0.65 | 0.3-0.5 | clear bins in two columns, filled with folded cloth
+a steel support post a few meters back near the center | 0.55 | 0.1-0.3 | painted gray column running to the ceiling joists
+a plain wood workbench a few meters back on the left | 0.5 | 0.3-0.5 | cleared top, a sturdy stool pushed in beneath it, empty
+a water heater tank a few meters back on the right | 0.6 | 0.2-0.4 | tall white cylinder with copper pipes rising
+a folding drying rack a few meters back on the left | 0.45 | 0.2-0.4 | empty white metal frame, folded, leaning on the wall
+a rolling metal utility cart a few meters back on the right | 0.4 | 0.2-0.4 | empty gray shelves, parked against the wall

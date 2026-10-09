@@ -1,15 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-cream beadboard wainscot wall | 1.0 | 0.7-1.0 | painted vertical planking
-exposed brick chimney breast | 0.85 | 0.6-1.0 | aged warm masonry
-floral patterned wallpaper above rail | 0.75 | 0.5-0.9 | softly faded print
-painted timber plank wall | 0.85 | 0.6-1.0 | softly limewashed grain
-stone hearth surround | 0.7 | 0.5-0.9 | rough quarried block
-open shelving on plaster wall | 0.8 | 0.5-0.9 | softly chalky finish
-gingham curtain over window | 0.7 | 0.4-0.8 | small woven check
-hutch cabinet against wall | 0.75 | 0.5-0.9 | painted distressed timber
-vintage tile splashback | 0.65 | 0.4-0.8 | hand-glazed irregular squares
-sage green painted cabinetry wall | 0.8 | 0.6-1.0 | softly worn paint
-butter yellow plaster wall | 0.6 | 0.5-0.9 | warm matte finish
-weathered barnwood plank wall | 0.65 | 0.5-0.9 | knotted reclaimed timber
+a cream beadboard wall with a deep window across the far side of the kitchen | 1.0 | 0.6-1.0 | painted boards across the whole width of the image, a gingham-curtained window in the center, soft daylight
+a brick chimney breast with a cast-iron range at the far end of the kitchen | 0.85 | 0.6-1.0 | warm aged brick rising to the beams, a black stove set into it, a plain oak mantel above
+a wall of open wood shelving and white dishes across the far side | 0.8 | 0.6-1.0 | plain plates and bowls in neat rows across the whole width of the image, a pale plaster wall behind
+a far wall of painted sage green cabinets with a deep porcelain sink | 0.8 | 0.6-1.0 | shaker doors across the whole width of the image, a window above the sink with soft light
+a weathered barnwood plank wall across the far end of the kitchen | 0.6 | 0.6-1.0 | gray-brown boards across the whole width of the image, iron hooks along it, warm light from the right
+a butter yellow plaster wall with a tall window across the far side | 0.65 | 0.6-1.0 | soft uneven paint, a wide window of green yard light, a pine hutch against it on the left
+a stone hearth surround at the far end with a deep wood mantel | 0.6 | 0.5-0.9 | rough pale stone, an empty iron grate, exposed ceiling beams above
+a white farmhouse sink under two windows across the far wall | 0.7 | 0.5-0.9 | deep apron-front basin, a wooden counter either side, daylight on the counter
+a tall painted pine hutch against the far wall | 0.6 | 0.5-0.9 | glass doors with plain white dishes inside, a pale wall to each side
+a plaster wall in warm white across the far side with a wide arched doorway | 0.45 | 0.6-1.0 | soft hand-troweled surface, an arch on the right leading to a dim pantry
+a long run of pale wood cabinets and a butcher block counter across the far wall | 0.6 | 0.6-1.0 | cream painted doors across the whole width of the image, a bright window over the counter
+exposed ceiling beams over a far wall of pale beadboard | 0.55 | 0.6-1.0 | dark rough-hewn timbers receding toward the back, white boards below them
+a back door with glass panes at the far right | 0.45 | 0.4-0.8 | white painted frame, green yard beyond, a pale plaster wall to the left

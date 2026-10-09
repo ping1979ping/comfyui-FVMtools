@@ -1,17 +1,16 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-tall Weizen glass | 0.8 | 0.0-0.1 | cloudy wheat beer with foam crown
-half-litre beer mug | 0.8 | 0.0-0.1 | thick-handled glass
-pewter-lid stein | 0.55 | 0.0-0.1 | ornately patterned lid and thumb lift
-bar towel on tap | 0.5 | 0.0-0.05 | striped cotton cloth
-bowl of salted pretzel sticks | 0.5 | 0.0-0.08 | small ceramic dish
-framed vintage brewery lithograph | 0.5 | 0.0-0.1 | illustrated dray-horse scene in faded colors
-regulars brass plaque | 0.45 | 0.0-0.05 | small brass plate with {an engraved stag|an engraved hop cone|the word "STAMMTISCH"} on table
-bottle of clear schnapps | 0.45 | 0.0-0.05 | clear glass with a plain colored band
-brass bar bell | 0.4 | 0.0-0.05 | polished closing-time ringer
-heavy glass ashtray | 0.3 | 0.0-0.05 | decorative faceted tray
-stack of playing cards | 0.45 | 0.0-0.05 | worn deck for Skat
-laminated table card stand | 0.5 | 0.0-0.05 | glossy card with {a drawn pretzel and beer icon|a drawn sausage icon|the word "MENU"}
-candle in glass holder | 0.55 | 0.0-0.05 | small flickering table light
-wooden beer crate | 0.35 | 0.0-0.1 | stacked bottle carrier
+a small tall Weizen glass at the far end of the bar counter | 0.8 | 0.01-0.04 | cloudy wheat beer with a foam crown
+a small stoneware stein on a distant shelf | 0.7 | 0.01-0.04 | gray-and-blue glaze
+a small pewter-lid stein on the far back shelf | 0.55 | 0.01-0.04 | patterned lid
+a small bowl of salted pretzel sticks on a distant table | 0.5 | 0.01-0.04 | ceramic dish
+a slim bottle of clear schnapps on a shelf at the back of the bar | 0.45 | 0.01-0.03 | clear glass
+a small brass bar bell at the far end of the counter | 0.4 | 0.01-0.03 | polished
+a small glass candle holder on a distant empty table | 0.55 | 0.01-0.03 | flickering light
+a small striped cotton cloth hung on a far tap | 0.45 | 0.01-0.03 | folded
+a small stack of cardboard coasters at the far end of the bar | 0.5 | 0.01-0.03 | round and plain
+a small deck of playing cards on a distant table | 0.4 | 0.01-0.03 | worn
+a small wooden beer crate at the back of the bar | 0.35 | 0.01-0.04 | stacked bottle carrier
+a small framed landscape painting high on the far wall | 0.4 | 0.01-0.05 | dark frame
+a small vase of dried flowers on a distant window sill | 0.4 | 0.01-0.04 | pale stems

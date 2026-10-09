@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright daytime LED interior | 1.0 | - | -
-lunch rush peak fluorescence | 0.95 | - | -
-mid-morning McMuffin crowd light | 0.8 | - | -
-afternoon school-out brightness | 0.85 | - | -
-dinner family-hour glow | 0.85 | - | -
-late-night drive-thru quiet | 0.65 | - | -
-opening early breakfast hum | 0.7 | - | -
-weekend brunch peak | 0.85 | - | -
-holiday-decoration overlay light | 0.55 | - | -
-between-rush half-lit lull | 0.7 | - | -
+bright daytime light through the windows, LEDs on | 1.0 | - | -
+soft overcast noon light with the ceiling lights on | 0.9 | - | -
+warm late-afternoon sun low at the windows | 0.8 | - | -
+early-morning daylight, pale and clean | 0.7 | - | -
+blue dusk at the windows, pendant lights glowing | 0.8 | - | -
+evening light, the dining room fully lit | 0.85 | - | -
+late-night glow of ceiling lights, dark windows | 0.6 | - | -
+bright Saturday midday light, even and clean | 0.7 | - | -
+gray winter afternoon light, interior lamps on | 0.6 | - | -
+golden evening sun slanting across the booths | 0.5 | - | -

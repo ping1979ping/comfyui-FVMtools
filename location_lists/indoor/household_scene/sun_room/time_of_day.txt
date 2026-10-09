@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-soft early morning light | 1.0 | - | -
-warm mid-morning glow | 0.95 | - | -
-bright midday sun | 0.95 | - | -
-golden late-day spill | 0.95 | - | -
-buttery sunset wash | 0.85 | - | -
-overcast diffused softness | 0.85 | - | -
-twilight cooling fade | 0.8 | - | -
-evening lamp-lit warmth | 0.75 | - | -
-dappled afternoon shade | 0.85 | - | -
-dawn pearly light | 0.8 | - | -
+bright midday daylight through the glass | 1.0 | - | -
+soft overcast late-morning light | 0.9 | - | -
+warm late-afternoon sun slanting across the floor | 0.8 | - | -
+soft early-morning light, still low | 0.6 | - | -
+clear bright noon light with sharp window shadows | 0.6 | - | -
+low golden light across the far wall | 0.5 | - | -
+pale gray afternoon light, no shadows | 0.7 | - | -
+warm evening light with the sky turning pink | 0.5 | - | -
+cool blue dusk at the windows | 0.4 | - | -
+diffused light through thin high cloud | 0.6 | - | -

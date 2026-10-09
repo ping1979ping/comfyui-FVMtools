@@ -1,13 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-recessed ceiling downlights | 0.95 | 0.2-0.5 | flush trimless apertures
-painted shelf brackets | 0.9 | 0.2-0.5 | white profiled metal
-under-shelf LED strips | 0.85 | 0.1-0.3 | warm linear glow
-sliding pocket door | 0.75 | 0.2-0.5 | flush painted leaf
-profiled crown molding | 0.7 | 0.1-0.3 | classic painted edge
-custom cubby niche row | 0.7 | 0.2-0.5 | painted square slots
-slate inset frames | 0.7 | 0.05-0.2 | small slate insets{| with tiny chalk doodles}
-adjustable shelf pin holes | 0.65 | 0.05-0.15 | drilled timber row
-glass-fronted display panels | 0.6 | 0.2-0.4 | thin metal mullions
-profiled cabinet face frames | 0.7 | 0.2-0.5 | classic shaker rails
+a recessed ceiling light far overhead at the center | 0.8 | 0.02-0.08 | soft white glow
+a small window at the back of the far wall | 0.5 | 0.03-0.1 | white frame, soft daylight
+a flush-mount ceiling lamp high up at the center | 0.6 | 0.02-0.08 | white glass dome, warm light
+a thin warm strip light along the underside of the far shelves | 0.5 | 0.02-0.08 | soft glow
+a white painted ceiling far overhead | 0.4 | 0.03-0.1 | plain, smooth
+a pocket door track above the far doorway | 0.35 | 0.02-0.06 | thin black metal
+a slim brass rail along the top of the far shelves | 0.4 | 0.02-0.06 | polished
+a tall narrow door in the far right corner | 0.45 | 0.05-0.12 | white, closed
+a plain white crown molding along the top of the far wall | 0.4 | 0.03-0.1 | simple profile
+a thin ceiling vent far overhead at the back | 0.3 | 0.02-0.06 | white grille
+a pair of slim wall sconces at the far left | 0.4 | 0.02-0.08 | brushed brass, soft light

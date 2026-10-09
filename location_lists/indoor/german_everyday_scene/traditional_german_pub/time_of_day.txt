@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-cosy early-evening after-work crowd | 1.0 | - | -
-lively Friday night | 0.9 | - | -
-quiet late-afternoon lull | 0.7 | - | -
-warm lamp-lit dusk | 0.8 | - | -
-deep night closing-time haze | 0.55 | - | -
-sleepy weekday midday lunch | 0.6 | - | -
-Sunday morning Fruehschoppen | 0.5 | - | -
-dim rainy-afternoon gloom | 0.45 | - | -
-football-night packed evening | 0.4 | - | -
-slow mid-afternoon weekday emptiness | 0.4 | - | -
+warm early-evening lamplight with the wall lamps lit | 1.0 | - | -
+dim amber lamplight on a dark evening | 0.8 | - | -
+soft late-afternoon light through the leaded windows | 0.8 | - | -
+quiet midday light with the bar lamps on | 0.6 | - | -
+warm lamp-lit dusk with a blue window | 0.75 | - | -
+deep late-evening glow of the bar lights | 0.6 | - | -
+gray overcast afternoon light through the front window | 0.6 | - | -
+low golden sun through the leaded glass | 0.5 | - | -
+pale morning light with only the bar lights on | 0.45 | - | -
+soft night glow of brass lamps on dark wood | 0.6 | - | -
+dim rainy-afternoon light with the lamps on | 0.5 | - | -

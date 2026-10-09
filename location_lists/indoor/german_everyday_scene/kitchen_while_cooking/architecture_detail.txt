@@ -1,14 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-practical ceiling light | 0.8 | 0.1-0.3 | plain glass shade
-vinyl kitchen flooring | 0.8 | 0.3-0.6 | wood-look vinyl planks
-skirting board along the wall | 0.5 | 0.1-0.25 | painted with scuff marks
-radiator under the window | 0.55 | 0.1-0.3 | painted steel ribs
-socket strip along the tiles | 0.6 | 0.05-0.2 | yellowed plastic sockets
-grouted tile joints | 0.7 | 0.15-0.4 | darkened grout lines
-kitchen door frame | 0.5 | 0.1-0.3 | chipped painted timber
-window sill with clutter | 0.65 | 0.1-0.3 | painted sill with rings
-under-cupboard strip light | 0.5 | 0.05-0.2 | small fluorescent tube
-worn threshold strip at the door | 0.4 | 0.05-0.15 | scratched aluminium
-ceiling corner with a cobweb | 0.35 | 0.05-0.15 | dusty plaster
+a plain glass ceiling lamp with a white shade high up at the center | 0.8 | 0.03-0.1 | soft light
+a painted steel radiator under the far window | 0.55 | 0.03-0.1 | white ribs
+a white socket strip along the tiles at the far right | 0.5 | 0.02-0.06 | plain plastic
+an under-cupboard strip light along the far wall | 0.5 | 0.02-0.08 | warm white glow
+a chipped white door frame at the far left corner | 0.5 | 0.03-0.1 | painted timber
+dark grout lines between the tiles along the far wall | 0.6 | 0.03-0.1 | thin
+a painted skirting board along the base of the far wall | 0.5 | 0.03-0.08 | white
+a deep painted window sill at the far left | 0.55 | 0.03-0.1 | wide ledge
+an aluminium threshold strip across the far doorway | 0.35 | 0.02-0.06 | brushed
+a white ceiling vent grille high up in the far corner | 0.4 | 0.02-0.06 | slatted
+a white window frame with a brass latch at the far side | 0.45 | 0.03-0.08 | tidy

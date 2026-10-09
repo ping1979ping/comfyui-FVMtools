@@ -1,13 +1,15 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-row of chrome-and-red counter stools | 1.0 | 0.3-0.5 | round swivel vinyl seats
-small round marble-top table | 0.85 | 0.25-0.45 | white pedestal with wire chairs
-booth with cherry-red seats | 0.8 | 0.25-0.45 | tufted vinyl benches
-waffle cone display stand | 0.8 | 0.15-0.35 | stacked golden cones in glass jar
-server in paper hat and apron | 0.75 | 0.2-0.4 | soda jerk scooping ice cream
-milkshake mixer station | 0.7 | 0.15-0.35 | chrome spindle blenders
-candy jar shelf | 0.6 | 0.2-0.4 | glass jars of gumdrops and licorice
-kids with sundaes at table | 0.65 | 0.2-0.4 | families sharing banana splits
-old-fashioned scale and register | 0.45 | 0.15-0.3 | brass cash register at counter
-sprinkles and toppings bar | 0.7 | 0.2-0.4 | metal bins of syrup and nuts
+chrome and red swivel stools along the counter a few meters back on the right | 1.0 | 0.3-0.5 | round vinyl seats, all empty
+small round marble-top tables a few meters back on the left | 0.85 | 0.25-0.45 | wire chairs with heart-shaped backs pushed in, all empty
+a cherry-red booth a few meters back on the left | 0.8 | 0.25-0.45 | tufted vinyl seats, empty, a small marble table between them
+a tall glass jar of waffle cones on the counter a few meters back on the right | 0.7 | 0.15-0.3 | stacked golden cones under a lid
+a chrome milkshake mixer station on the counter a few meters back | 0.65 | 0.15-0.3 | spindle blenders and steel cups
+glass candy jars on a shelf a few meters back on the right | 0.55 | 0.15-0.3 | gumdrops and licorice in rows
+a brass cash register at the end of the counter a few meters back on the right | 0.45 | 0.15-0.3 | ornate vintage till
+a stack of glass sundae dishes on the counter a few meters back on the left | 0.5 | 0.1-0.25 | footed glass boats
+a pair of empty bistro tables near the window a few meters back | 0.5 | 0.2-0.4 | white tops, wire chairs pushed in
+a toppings station with steel bins a few meters back on the left | 0.55 | 0.15-0.3 | nuts and sprinkles in bins
+a row of empty window booths a few meters back along the left | 0.6 | 0.25-0.45 | pink vinyl seats, sunlight on the tables
+a glass freezer case a few meters back on the right | 0.5 | 0.2-0.4 | frosted lids, chrome corners

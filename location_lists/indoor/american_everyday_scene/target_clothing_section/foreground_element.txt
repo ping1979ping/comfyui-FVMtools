@@ -1,13 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-dropped hanger on floor | 0.85 | 0.05-0.1 | beige plastic with hook
-shirt fallen off hanger | 0.7 | 0.1-0.2 | crumpled top on floor
-red Target basket left in aisle | 0.7 | 0.1-0.2 | small plastic carry basket
-paper tag dangling off garment | 0.85 | 0.02-0.05 | white cardstock tag on plastic loop
-shopping cart with two items | 0.6 | 0.1-0.25 | half-loaded carrier
-fitting-room rejects pile on rack | 0.7 | 0.15-0.3 | mounded try-ons
-folded-pants tower askew | 0.6 | 0.1-0.2 | leaning denim stack
-size disk on hanger crooked | 0.65 | 0.02-0.05 | colored acrylic disk
-loose paper slip on floor | 0.45 | 0.05-0.1 | thermal paper slip
-plastic security tag dropped | 0.5 | 0.02-0.05 | white ink-tag attachment
+a pale gray smooth concrete floor | 1.0 | 0.1-0.4 | matte and even
+a plain light gray vinyl floor | 0.8 | 0.1-0.4 | clean and even
+a plain taupe low-pile carpet | 0.7 | 0.1-0.4 | dense and smooth
+a wide-plank light oak-look vinyl floor | 0.6 | 0.1-0.4 | matte and even
+a beige sealed concrete floor | 0.7 | 0.1-0.4 | smooth and matte
+a plain warm gray low-pile carpet | 0.7 | 0.1-0.4 | smooth and even
+a smooth off-white vinyl floor | 0.6 | 0.1-0.4 | bright and clean
+a light gray smooth concrete floor | 0.6 | 0.1-0.4 | clean and even
+a pale wood-look plank floor | 0.5 | 0.1-0.4 | light grain
+a plain silver-gray loop carpet | 0.5 | 0.1-0.4 | tight and even
+a smooth cream linoleum floor | 0.45 | 0.1-0.4 | matte and even
+a plain charcoal low-pile carpet | 0.4 | 0.1-0.4 | dense and even

@@ -1,13 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-tall steel shelf row with boxes | 1.0 | 0.7-1.0 | gondola shelving wall
-end cap display of stacked product | 0.9 | 0.4-0.8 | cardboard pallet pile
-back wall freezer aisle row | 0.7 | 0.5-0.9 | glass-doored freezer line
-seasonal aisle with colorful flags | 0.7 | 0.5-0.9 | cluttered overflow stock with plain yellow flags
-soda wall cooler corridor | 0.65 | 0.5-0.9 | glass doors with colorful bottle rows
-toy aisle with bright packaging | 0.7 | 0.5-0.9 | saturated plastic facings
-clothing section perimeter wall | 0.55 | 0.4-0.8 | rack-mounted softgoods
-checkout lane backdrop | 0.5 | 0.4-0.7 | belt and bagging stations
-rollback price banner overhead | 0.85 | 0.3-0.6 | yellow vinyl banner{| reading "{ROLLBACK|SAVE|DEALS}"}
-hanging aisle placard | 0.85 | 0.2-0.5 | suspended white placard{| with a big numeral "{7|12|23}"}
+a long grocery aisle of tall steel shelves running far back to a bright end wall | 1.0 | 0.7-1.0 | boxes and cans in assorted colors on both sides, white ceiling lights in a line overhead
+the far end of the aisle with a wall of glass-door freezers | 0.8 | 0.5-0.9 | frosted doors with bright white light behind them, frozen goods stacked inside
+tall steel shelves packed with cereal boxes along both sides far down the aisle | 0.85 | 0.6-1.0 | bright red, yellow and blue boxes in even rows, a pale floor between them
+a back wall of tall blue-gray warehouse shelving across the whole width of the image | 0.8 | 0.6-1.0 | cardboard boxes and shrink-wrapped pallets stacked to the ceiling
+a wide aisle of toy shelves running far back | 0.65 | 0.5-0.9 | saturated plastic packaging in red, yellow and blue stacked to the top shelf
+a row of beverage coolers with glass doors along the far wall | 0.65 | 0.5-0.9 | colorful bottle rows behind frosted glass, bright cool light
+rows of laundry detergent jugs on tall shelves far down the aisle | 0.6 | 0.6-1.0 | bright orange, blue and white jugs in neat rows
+a far wall of clothing racks and folded stacks beyond the end of the aisle | 0.55 | 0.5-0.9 | soft colors under bright white light
+a far wall of canned vegetables and soup on tall shelves across the width of the image | 0.7 | 0.6-1.0 | rows of cans in red, green and white, evenly lit
+a high gray ceiling with exposed steel trusses and long rows of white lights far overhead | 0.6 | 0.3-0.7 | tall shelves running back beneath it
+a far aisle of towels and bedding on tall shelves | 0.5 | 0.5-0.9 | folded stacks in teal, gray and white across the far side
+a far wall of paper towels and tissue packs stacked high on shelves | 0.55 | 0.6-1.0 | white and pastel plastic wrap, in even rows across the width of the image
+a far wall of bagged pet food stacked on low pallets | 0.45 | 0.5-0.9 | colorful large bags in neat rows, steel shelves above
+a deep aisle of snack shelves running far back | 0.7 | 0.6-1.0 | bright bags and boxes in rows, a bright end wall far down

@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-dry conditioned air | 0.9 | - | -
-wet umbrella drips by the door | 0.4 | - | -
-rain visible through the front glass | 0.5 | - | -
-cold air pushed in by the entrance | 0.45 | - | -
-humid air the AC cannot keep up with | 0.4 | - | -
-slush tracked in on the mats | 0.35 | - | -
-stale recirculated air | 0.6 | - | -
-damp coats drying on chair backs | 0.4 | - | -
-condensation on the front windows | 0.4 | - | -
-no weather visible inside | 0.7 | - | -
+cool dry air-conditioned air and even light | 0.8 | - | -
+gray overcast light through the storefront glass | 0.7 | - | -
+rain on the storefront glass with bright lights inside | 0.5 | - | -
+bright clear summer light at the front windows | 0.6 | - | -
+snowy gray light at the front windows | 0.5 | - | -
+crisp autumn daylight through the front glass | 0.5 | - | -
+still dry heated winter air | 0.5 | - | -
+hazy summer sun washing the front glass | 0.45 | - | -
+flat overcast gray light beyond the window | 0.45 | - | -
+low winter sun flaring on the front windows | 0.4 | - | -
+spring daylight with green trees beyond the glass | 0.5 | - | -

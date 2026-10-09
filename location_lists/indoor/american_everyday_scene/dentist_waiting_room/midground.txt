@@ -1,13 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-row of matching upholstered chairs | 1.0 | 0.4-0.8 | tweed-fabric office seating
-side table between chairs | 0.95 | 0.1-0.25 | laminate round end table
-magazine rack on wall | 0.7 | 0.1-0.25 | wire pocket display
-water cooler in corner | 0.85 | 0.1-0.3 | blue-bottle dispenser
-reception counter ahead | 0.85 | 0.3-0.6 | beige laminate L-shape
-hanging clipboard on counter | 0.85 | 0.05-0.15 | metal clip with a blank sheet
-TV on wall mute | 0.7 | 0.1-0.25 | small flat-screen at angle
-kids' table with toys | 0.6 | 0.2-0.4 | low laminate kid-height table
-brochure rack on wall | 0.7 | 0.1-0.25 | clear acrylic pocket holder
-loveseat against far wall | 0.55 | 0.2-0.4 | small two-seat couch
+a row of matching tweed upholstered chairs a few meters back along the left wall | 1.0 | 0.3-0.6 | all empty, wooden arms, a round laminate side table between each pair
+a low round laminate side table between two empty chairs a few meters back on the right | 0.8 | 0.2-0.4 | bare pale top, wooden-armed chairs angled toward it
+a blue-bottle water cooler in the corner a few meters back on the right | 0.75 | 0.1-0.3 | white base, clear jug with blue water
+a wall-mounted clear acrylic rack a few meters back on the left | 0.5 | 0.1-0.3 | empty pockets, mounted at standing height
+a small empty play table with two tiny chairs a few meters back on the left | 0.55 | 0.2-0.4 | low laminate top, bright plastic seats
+a two-seat vinyl loveseat against the far wall a few meters back | 0.55 | 0.2-0.4 | empty, dark teal upholstery, a lamp table beside it
+a tall artificial ficus in a pot a few meters back at the right corner | 0.7 | 0.1-0.3 | dusty green leaves, plain black planter
+a beige laminate L-shaped counter a few meters back at the center | 0.8 | 0.3-0.5 | a sliding glass window above it, empty behind it, bare top
+two empty wooden-armed chairs angled toward each other a few meters back on the right | 0.7 | 0.2-0.4 | a lamp table between them with a pale shaded lamp
+a freestanding wooden coat rack a few meters back at the left | 0.4 | 0.1-0.3 | empty hooks, dark stained pole
+a low wooden bench along the right wall a few meters back | 0.5 | 0.2-0.4 | empty, padded seat in muted blue
+a floor lamp with a pale shade a few meters back on the left | 0.5 | 0.1-0.3 | warm glow beside a row of empty chairs
+a frosted sliding glass door to the hallway a few meters back on the right | 0.4 | 0.2-0.4 | closed, aluminum frame

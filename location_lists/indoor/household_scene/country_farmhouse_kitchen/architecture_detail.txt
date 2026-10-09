@@ -1,13 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-exposed ceiling beams | 1.0 | 0.3-0.7 | rough-sawn timber
-plate rail along upper wall | 0.85 | 0.2-0.5 | painted display ledge
-chair rail trim midway | 0.8 | 0.1-0.3 | profiled wood molding
-cottage-style window mullions | 0.85 | 0.2-0.5 | small divided panes
-painted tongue-and-groove ceiling | 0.7 | 0.3-0.6 | linear board pattern
-deep window sill ledge | 0.75 | 0.1-0.3 | thick painted shelf
-cast iron stove flue pipe | 0.65 | 0.1-0.3 | matte black metal
-profiled cabinet face frames | 0.8 | 0.2-0.5 | classic shaker rails
-hand-forged door pulls | 0.75 | 0.05-0.15 | dark iron hardware
-pressed tin ceiling panels | 0.6 | 0.3-0.6 | embossed metal squares
+rough-hewn ceiling beams far overhead | 0.9 | 0.03-0.1 | dark aged timber
+a small iron hook rail along the far wall | 0.5 | 0.02-0.06 | black hooks on a plank
+a thin plate rail along the top of the far wall | 0.55 | 0.02-0.06 | painted wood
+a slim stovepipe rising at the far right | 0.5 | 0.03-0.08 | black iron
+a small paned window high on the far wall | 0.6 | 0.02-0.08 | white frame, soft light
+a thin gingham curtain at the far window | 0.55 | 0.03-0.08 | blue and white weave
+a small iron pendant lamp far overhead | 0.5 | 0.02-0.06 | black shade, warm glow
+a narrow plank shelf at the far end | 0.45 | 0.02-0.06 | pale painted wood
+a slim wooden mantel above the far hearth | 0.5 | 0.03-0.08 | dark oak
+a thin white window sill along the far wall | 0.5 | 0.02-0.06 | painted wood
+a low wooden door at the far left | 0.4 | 0.03-0.1 | plank, painted cream, closed
+a small brass door latch on the far door | 0.35 | 0.01-0.04 | aged metal

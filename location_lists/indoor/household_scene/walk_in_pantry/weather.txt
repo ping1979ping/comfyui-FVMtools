@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear bright skies outside | 0.85 | - | -
-gentle rain on small window | 0.7 | - | -
-overcast diffused mood | 0.85 | - | -
-muggy summer stillness | 0.6 | - | -
-crisp autumn brightness | 0.7 | - | -
-quiet snowfall beyond glass | 0.6 | - | -
-calm humid evening | 0.65 | - | -
-breezy spring fresh air | 0.7 | - | -
-hazy warm afternoon | 0.65 | - | -
-dim rainy mood | 0.7 | - | -
+still, cool air with even ceiling light | 0.9 | - | -
+gray overcast light at the small window | 0.7 | - | -
+clear bright light at the small window | 0.7 | - | -
+warm dry air under the ceiling lights | 0.6 | - | -
+light rain on the small window glass | 0.4 | - | -
+snow-bright light at the small window | 0.4 | - | -
+crisp autumn light at the doorway | 0.5 | - | -
+soft summer daylight from the far window | 0.5 | - | -
+still air, steady warm light | 0.8 | - | -
+fog-pale light at the small window | 0.4 | - | -

@@ -1,13 +1,15 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-humid air the window unit fights | 0.6 | - | -
-sticky salt air through the screens | 0.55 | - | -
-thunderstorm heard rolling through | 0.45 | - | -
-rain streaks on the slider glass | 0.5 | - | -
-dry heat radiating from the walkway | 0.5 | - | -
-box fan air moving through the room | 0.6 | - | -
-still muggy evening air | 0.55 | - | -
-breeze lifting the curtain | 0.55 | - | -
-damp towels never quite drying | 0.5 | - | -
-sunscreen and salt smell indoors | 0.5 | - | -
+salt-hazy summer sunlight at the window | 0.8 | - | -
+bright clear sky beyond the sliding door | 0.7 | - | -
+gray overcast sky and low sea fog outside | 0.5 | - | -
+light rain on the window glass | 0.5 | - | -
+still warm air with soft steady light | 0.8 | - | -
+a light breeze stirring the sheer curtains | 0.5 | - | -
+crisp clear October light off the bay | 0.5 | - | -
+gray winter light through the window | 0.4 | - | -
+hazy heat light, the windows bright | 0.5 | - | -
+thunderclouds darkening the far sky outside | 0.35 | - | -
+bright spring light under a pale sky | 0.5 | - | -
+low early sun with glare on the counter | 0.4 | - | -

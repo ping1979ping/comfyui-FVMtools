@@ -1,15 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-white painted utility wall | 1.0 | 0.7-1.0 | smooth eggshell paint
-pale blue subway tile wall | 0.8 | 0.6-1.0 | glossy ceramic squares
-beadboard panel above appliances | 0.85 | 0.5-0.9 | painted vertical planking
-warm grey shiplap wall | 0.75 | 0.5-0.9 | overlapped board joint
-cream cabinetry above machines | 0.9 | 0.5-0.9 | painted shaker fronts
-patterned floor-to-ceiling tile | 0.7 | 0.5-0.9 | small geometric pattern
-painted brick utility wall | 0.65 | 0.5-0.9 | softly limewashed masonry
-floating shelf wall over counter | 0.75 | 0.4-0.8 | open timber ledges
-laundry sorting nook back wall | 0.7 | 0.4-0.8 | bin-fronted recess
-window with sill above sink | 0.8 | 0.4-0.8 | slim painted frame
-sage green painted wall | 0.7 | 0.5-0.9 | softly matte pigment
-mudroom-adjacent half wall | 0.6 | 0.4-0.7 | painted wainscot panel
+a far wall of white front-load washers and dryers side by side under a long wood counter | 1.0 | 0.6-1.0 | white shaker cabinets above them, across the whole width of the image
+a far wall of white shaker cabinets from counter to ceiling | 0.9 | 0.6-1.0 | closed doors with brushed nickel pulls across the whole width of the image, soft overhead light
+a far wall of pale gray painted beadboard | 0.8 | 0.6-1.0 | vertical boards across the whole width of the image, one long open wood shelf running along it high up
+a far wall of glossy white subway tile with a deep utility sink at the far center | 0.75 | 0.5-0.9 | clean grout lines, a window above the sink letting in daylight
+a window wall at the far end of the room | 0.7 | 0.5-0.9 | a wide double-hung window with white trim above a long counter, soft daylight, sage green walls on both sides
+a far wall of sage green cabinets with a stacked washer and dryer tower at the far right | 0.7 | 0.6-1.0 | brushed brass pulls, a wood counter running across the rest of the wall
+a far wall of white painted brick across the whole width of the image | 0.6 | 0.6-1.0 | a long pale wood shelf above a folding counter, open cubbies at the far left
+a far wall of navy blue lower cabinets under a pale wood counter | 0.6 | 0.5-0.9 | white walls above, a row of black wall hooks high up, across the whole width of the image
+a far wall of louvered white closet doors at the left and a washer and dryer pair at the right | 0.5 | 0.5-0.9 | closed doors, a wood shelf above the machines
+a far wall with a full-width folding counter and open shelving above | 0.8 | 0.5-0.9 | pale oak shelves on black brackets, white painted wall behind, across the whole width of the image
+the far corner of the room where two walls of white cabinets meet at the center of the image | 0.55 | 0.5-0.9 | a quartz counter running into the corner, a small window above it
+a far wall of pale blue shiplap | 0.55 | 0.6-1.0 | horizontal boards across the whole width of the image, a white counter below, a wall-mounted drying rod high up
+a far wall of warm white plaster with a frosted glass back door at the far right | 0.5 | 0.5-0.9 | white machines beside it, a long wood shelf above, soft daylight through the glass
+a far wall of light gray cabinets with a tall broom closet at the far left | 0.6 | 0.5-0.9 | flat fronts, a stainless steel sink at the center under a window

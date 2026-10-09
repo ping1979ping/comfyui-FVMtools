@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright shop morning light | 0.9 | - | -
-fluorescent task lit interior | 1.0 | - | -
-midday window slot brightness | 0.8 | - | -
-warm late-afternoon glow | 0.75 | - | -
-overcast diffused daylight | 0.8 | - | -
-evening overhead lit | 0.85 | - | -
-night project lamp pool | 0.75 | - | -
-weekend afternoon brightness | 0.8 | - | -
-early morning quiet light | 0.7 | - | -
-dim dusk shop hush | 0.65 | - | -
+bright cool fluorescent shop light | 1.0 | - | -
+soft daylight from the high windows | 0.85 | - | -
+open door daylight and the shop lights on | 0.7 | - | -
+overcast light and ceiling tubes switched on | 0.8 | - | -
+warm low late-afternoon sun through the windows | 0.6 | - | -
+dim evening light with a hanging work lamp | 0.7 | - | -
+bright white work light at night | 0.75 | - | -
+pale morning light through the small windows | 0.65 | - | -
+even neutral light from the ceiling tubes | 0.85 | - | -
+warm bare bulb glow over the workbench | 0.5 | - | -

@@ -1,14 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-exposed ceiling duct run | 0.7 | 0.05-0.2 | dark painted metal piping
-brick pillar with shelf | 0.6 | 0.05-0.15 | painted brick support
-TV mounting bracket arm | 0.65 | 0.02-0.1 | black swing-out steel arm
-wood wainscot wall paneling | 0.75 | 0.05-0.2 | stained lower wall boards
-hanging pendant bar lamp | 0.8 | 0.05-0.15 | dim glass-shade fixture
-red exit-sign over door | 0.6 | 0.02-0.08 | glowing illuminated sign reading "{EXIT|WAY OUT}"
-diamond-pane front window | 0.55 | 0.05-0.15 | leaded glass with neon reflection
-tin-tile ceiling section | 0.5 | 0.05-0.2 | embossed pressed-metal squares
-chrome foot rail along bar | 0.7 | 0.03-0.1 | polished brass-colored tube
-swinging kitchen door | 0.6 | 0.05-0.15 | round porthole in steel panel
-stained-glass hop-cone window | 0.4 | 0.03-0.1 | colored panel with golden hop and barley emblem
+exposed ceiling duct runs painted dark far overhead | 0.7 | 0.03-0.1 | metal piping
+a brick pillar with a narrow shelf at the far left | 0.6 | 0.03-0.08 | painted brick
+black swing-out TV brackets high on the far wall | 0.6 | 0.02-0.06 | steel arms
+stained wood wainscot along the base of the far wall | 0.7 | 0.03-0.1 | dark lower boards
+dim glass-shade pendant lamps in a row far overhead | 0.8 | 0.03-0.08 | warm glow
+a small red light above the far door reading "EXIT" | 0.6 | 0.01-0.04 | glowing
+a diamond-pane front window at the far end | 0.5 | 0.03-0.08 | leaded glass
+a tin-tile ceiling section high above the far bar | 0.5 | 0.03-0.1 | embossed squares
+a chrome foot rail along the base of the far bar | 0.7 | 0.02-0.06 | polished tube
+a swinging kitchen door with a round window at the far right | 0.55 | 0.03-0.08 | steel panel
+slow paddle fans high up across the far ceiling | 0.5 | 0.02-0.06 | dark wood blades
+black ceiling beams running across the far ceiling | 0.45 | 0.03-0.08 | painted timber

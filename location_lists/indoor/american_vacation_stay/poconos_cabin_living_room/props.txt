@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-flannel shirt on a peg | 0.55 | 0.05-0.15 | buffalo check
-percolator on the burner | 0.5 | 0.03-0.1 | blue enamel
-deck of cards mid-shuffle | 0.5 | 0.02-0.08 | worn corners
-firewood carrier of canvas | 0.5 | 0.03-0.1 | bark crumbs
-matches in a mason jar | 0.45 | 0.02-0.06 | strike strip glued
-worn paperbacks on the shelf | 0.4 | 0.03-0.1 | yellowed pages
-bug spray by the door | 0.45 | 0.02-0.06 | greasy nozzle
-s'more sticks bundled | 0.45 | 0.02-0.08 | whittled points
-reading glasses with a pen | 0.4 | 0.02-0.08 | folded on the table
-board game money sorted | 0.4 | 0.03-0.1 | banker's tray
-wool socks drying on the stove rail | 0.45 | 0.02-0.08 | steaming faintly
+a small brass lamp on the far mantel at the back | 0.7 | 0.01-0.05 | warm glow
+small pinecones in a wooden bowl on a distant shelf | 0.6 | 0.01-0.05 | brown, dry
+a small folded wool blanket on a distant bench at the back | 0.5 | 0.01-0.05 | red plaid
+a small ceramic vase with dried grasses on the far mantel | 0.5 | 0.01-0.05 | pale beige
+small unlit candles on the far windowsill | 0.5 | 0.01-0.05 | cream wax
+a small iron poker set beside the far hearth | 0.45 | 0.01-0.05 | black metal
+a compact basket of kindling at the back of the far hearth | 0.5 | 0.01-0.05 | woven willow
+a small enamel pitcher on a distant shelf at the back | 0.4 | 0.01-0.05 | white with a blue rim
+a small clay pot with a fern on the far window sill | 0.45 | 0.01-0.05 | green fronds
+a small woven basket on the floor in the far back corner | 0.4 | 0.01-0.05 | natural fiber
+a slim glass lantern on a distant shelf at the back | 0.4 | 0.01-0.05 | warm glow
+a tiny wooden bird carving on the far mantel | 0.35 | 0.01-0.05 | carved pine

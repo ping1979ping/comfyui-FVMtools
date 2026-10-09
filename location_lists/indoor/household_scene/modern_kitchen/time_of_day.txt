@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright morning kitchen light | 1.0 | - | -
-soft mid-morning glow | 0.9 | - | -
-warm afternoon spill | 0.85 | - | -
-golden late-day light | 0.8 | - | -
-overcast diffused daylight | 0.85 | - | -
-evening pendant-lit warmth | 0.85 | - | -
-early dusk soft fade | 0.7 | - | -
-under-cabinet night glow | 0.7 | - | -
-clear midday brightness | 0.85 | - | -
-calm twilight ambience | 0.65 | - | -
+soft overcast late-morning light | 0.9 | - | -
+bright midday daylight through the window | 0.85 | - | -
+warm late-afternoon sun through the window | 0.8 | - | -
+soft early-morning light with the pendants on | 0.6 | - | -
+warm evening glow of the pendant and cove lights | 0.7 | - | -
+clear bright noon light across the counters | 0.6 | - | -
+pale gray afternoon light with the downlights on | 0.6 | - | -
+low golden light slanting across the island | 0.5 | - | -
+cool blue dusk at the window with the lights on | 0.5 | - | -
+bright morning light, all lights off | 0.6 | - | -
+soft diffused daylight from a skylight | 0.45 | - | -

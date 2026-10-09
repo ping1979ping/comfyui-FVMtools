@@ -1,13 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-light wood-look polished floor | 1.0 | 0.4-0.8 | high-gloss vinyl plank
-ceiling-track LED spotlight grid | 1.0 | 0.3-0.6 | aimable downlights on rails
-open warehouse ceiling | 0.85 | 0.3-0.6 | exposed white-painted trusses
-HVAC duct run along ceiling | 0.85 | 0.2-0.4 | round white spiral duct
-sprinkler pipe along ceiling | 0.7 | 0.1-0.3 | red painted steel run
-security camera dome | 0.85 | 0.05-0.1 | smoked plastic bubble
-loss-prevention sensor pillar at exit | 0.5 | 0.05-0.15 | grey plastic detector
-overhead department placard | 0.85 | 0.1-0.2 | hanging white plastic placard{| reading "{WOMEN|KIDS|MEN}"}
-endcap baseboard kick plate | 0.6 | 0.05-0.15 | scuffed metal trim
-floor-marker red dot at register | 0.5 | 0.05-0.1 | vinyl floor decal
+white acoustic ceiling panels high up overhead | 0.9 | 0.05-0.15 | square panels in a grid
+long white fluorescent strips in a row far overhead | 0.95 | 0.03-0.1 | bright even glow
+a red-painted steel column at the far right | 0.7 | 0.03-0.08 | smooth gloss paint
+a thin chrome rail along the top of the far wall | 0.5 | 0.02-0.06 | polished steel
+exposed gray ductwork high up across the far ceiling | 0.6 | 0.04-0.1 | round steel pipes
+a slim white shelf bracket row along the far wall | 0.45 | 0.02-0.06 | evenly spaced
+a small round ceiling spotlight high up above the far rack | 0.5 | 0.01-0.04 | white trim
+a narrow red stripe along the far wall | 0.55 | 0.02-0.06 | painted band
+a thin white baseboard along the far wall | 0.4 | 0.02-0.05 | plain trim
+a closed double door at the far left | 0.4 | 0.05-0.1 | white painted
+a small white sprinkler head high up at the back | 0.4 | 0.01-0.03 | plain
+a slim black ceiling track with lights far overhead | 0.45 | 0.02-0.06 | thin spotlight rail

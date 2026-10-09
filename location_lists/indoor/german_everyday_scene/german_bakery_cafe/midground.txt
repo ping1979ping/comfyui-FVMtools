@@ -1,16 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-round marble cafe tables | 1.0 | 0.3-0.5 | small white-topped bistro tables
-bentwood cafe chair cluster | 0.95 | 0.3-0.5 | dark curved wooden seats
-coffee-and-cake table setting | 0.9 | 0.2-0.4 | cake plates, cups and silver forks
-cushioned corner bench booth | 0.7 | 0.3-0.5 | green upholstered wall seating
-tiered cake stand display | 0.7 | 0.15-0.35 | glass plates of fruit torte
-standing coat rack | 0.5 | 0.15-0.3 | wooden stand with hung coats
-bread basket trolley | 0.55 | 0.2-0.4 | wicker baskets of Broetchen
-potted geranium window sill | 0.5 | 0.15-0.3 | red blooms in clay pots
-elderly regulars at corner table | 0.45 | 0.2-0.4 | chatting over coffee and Streuselkuchen
-queue of customers at counter | 0.55 | 0.2-0.4 | people waiting with paper bags
-umbrella stand by the door | 0.4 | 0.1-0.25 | tall metal holder with wet umbrellas
-pastry cart with doilies | 0.45 | 0.2-0.35 | lace-lined silver serving trolley
-wooden high-top table pair | 0.4 | 0.2-0.35 | standing table with coffee cups
+round white marble cafe tables a few meters back on the left | 1.0 | 0.3-0.5 | small bistro tops on cast-iron legs, bentwood chairs pushed in, all empty
+a corner bench booth with green upholstery a few meters back on the right | 0.7 | 0.3-0.5 | empty, a dark wood table in front of it, a warm lamp above
+a tiered glass cake stand on a table a few meters back on the left | 0.7 | 0.15-0.35 | plates of fruit torte under a clear dome, the table otherwise empty
+a wicker bread basket trolley a few meters back on the right | 0.55 | 0.2-0.4 | baskets of rolls on a wooden cart with iron wheels
+a bentwood coat rack by the entrance a few meters back on the right | 0.5 | 0.1-0.25 | tall dark stand, empty
+wooden high-top tables a few meters back across the middle | 0.4 | 0.2-0.35 | slim round tops, all empty
+a silver pastry cart lined with lace doilies a few meters back on the left | 0.45 | 0.2-0.35 | glass plates of cakes on two shelves
+potted red geraniums on a deep window sill a few meters back on the left | 0.5 | 0.15-0.3 | clay pots in the bay window light
+a metal umbrella stand by the door a few meters back on the right | 0.4 | 0.1-0.25 | tall and empty
+a long communal wooden table a few meters back at the center | 0.5 | 0.25-0.45 | scrubbed oak, stools pushed in, set for coffee with white cups
+a small round table set for two a few meters back on the right | 0.6 | 0.2-0.4 | white porcelain cups and a bud vase, both chairs pushed in
+a counter with leather stools a few meters back at the center | 0.5 | 0.25-0.45 | polished wood top, round stools all empty
+a pair of cake display tables a few meters back on the left | 0.4 | 0.2-0.4 | lace cloths, set for an afternoon, empty

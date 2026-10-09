@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-Happy Meal box poster | 0.7 | 0.05-0.15 | glossy cardstock with cartoon characters and a toy
-McCafe sticker on window | 0.7 | 0.05-0.1 | adhesive vinyl decal of a steaming cup icon{| with the wordmark "MCCAFE"}
-tabletop stake stand | 0.85 | 0.05-0.1 | small plastic stake with a bright geometric shape
-napkin dispenser at booth | 0.85 | 0.05-0.1 | brushed metal flip-top
-straw bin at fountain | 0.85 | 0.05-0.1 | plastic flap dispenser
-lid stack column at drinks | 0.85 | 0.05-0.15 | translucent plastic tower
-QR-code table standee | 0.65 | 0.05-0.1 | small acrylic standee with square pixel-pattern code
-high chair stacked nearby | 0.4 | 0.1-0.2 | plastic infant seat
-yellow wet-floor cone | 0.6 | 0.05-0.15 | plastic A-frame with slipping-figure pictogram
-employee mop on stand | 0.4 | 0.05-0.15 | red plastic bucket
-colorful promo poster | 0.7 | 0.05-0.15 | glossy vinyl banner with a large food photo
-ketchup tray with packets | 0.85 | 0.05-0.15 | paper boat with red packets
+small stainless napkin dispensers on distant booth tables | 0.85 | 0.01-0.04 | brushed metal
+small red paper trays stacked on a far counter | 0.7 | 0.01-0.04 | plain red
+small plastic cup lids stacked at the far drinks station | 0.6 | 0.01-0.04 | clear plastic
+a slim straw dispenser at the far drinks station | 0.6 | 0.01-0.04 | white plastic
+a small yellow wet-floor cone far down the back aisle | 0.4 | 0.01-0.04 | plain plastic
+a small potted plant on a distant window ledge | 0.5 | 0.01-0.04 | green leaves
+small condiment packets in a tray on a far table | 0.6 | 0.01-0.03 | red and white
+small drink cups on a tray at the far end of the counter | 0.55 | 0.01-0.04 | paper cups with lids
+a small white paper bag on a distant table | 0.4 | 0.01-0.04 | folded top
+a compact tray stack at the far end of the counter | 0.5 | 0.01-0.04 | brown plastic
+a small high chair pushed against the far wall | 0.35 | 0.02-0.05 | pale plastic
+a small clear salt shaker on a distant table | 0.4 | 0.01-0.03 | glass

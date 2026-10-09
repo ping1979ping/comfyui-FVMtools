@@ -1,15 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-beadboard wainscot wall | 1.0 | 0.7-1.0 | painted vertical planking
-shiplap accent feature wall | 0.85 | 0.5-0.9 | overlapped board joint
-hooks-and-pegs back wall | 0.95 | 0.5-0.9 | painted board with pegs
-built-in lockers wall | 0.9 | 0.5-0.9 | painted compartment fronts
-exposed brick entry wall | 0.7 | 0.5-0.9 | aged warm masonry
-warm gray painted wall | 0.85 | 0.6-1.0 | softly matte finish
-slate-tile feature wall | 0.6 | 0.4-0.8 | textured stone slabs
-chalkboard accent panel | 0.7 | 0.3-0.6 | matte slate surface{| with chalk doodles}
-window with sill above bench | 0.75 | 0.3-0.6 | slim painted frame
-painted shaker cabinet wall | 0.8 | 0.5-0.9 | painted closed fronts
-patterned wallpaper accent | 0.6 | 0.3-0.6 | softly faded print
-narrow corridor walls | 0.7 | 0.5-0.9 | painted plaster
+a far wall of built-in white lockers with open cubbies at the center | 1.0 | 0.6-1.0 | empty cubbies, wooden pegs above, across the whole width of the image
+a far wall of white shiplap with a row of wooden hooks | 0.9 | 0.6-1.0 | empty hooks high up, a long wood shelf above, across the whole width of the image
+a far wall with a glass-paned back door at the center | 0.8 | 0.5-0.9 | white trim, daylight through the glass, a tall window on each side
+a far wall of dark green board-and-batten | 0.75 | 0.6-1.0 | vertical battens across the whole width of the image, a row of black iron hooks high up
+a far wall of gray built-in cabinets with an empty bench below a window | 0.7 | 0.6-1.0 | closed doors above, soft daylight, across the whole width of the image
+a far wall of white painted brick | 0.6 | 0.6-1.0 | a long wood coat rail across the whole width of the image, open shelves at the far left
+a far wall of pale blue beadboard | 0.6 | 0.6-1.0 | vertical boards across the whole width of the image, a row of wood pegs high up
+a far wall of closed navy cabinets from floor to ceiling | 0.55 | 0.6-1.0 | brass pulls across the whole width of the image, an empty plain wood bench at the center
+a far wall of horizontal cedar boards | 0.5 | 0.6-1.0 | warm brown planks across the whole width of the image, a row of black hooks high up
+a far wall of white lockers broken by a tall window at the center | 0.7 | 0.6-1.0 | empty cubbies on both sides, daylight on the floor
+a far wall of warm white plaster with a long wood coat rail | 0.5 | 0.5-0.9 | empty hooks along it, an open shelf above
+a far wall with a built-in bench under a wide window | 0.65 | 0.5-0.9 | empty, white painted base with drawers, bright daylight above
+a far wall of floor-to-ceiling cubbies in pale oak | 0.55 | 0.6-1.0 | open boxes in rows across the whole width of the image, empty
+a far corner where a window wall meets a wall of white lockers at the center of the image | 0.45 | 0.5-0.9 | daylight, a closed door at the far right

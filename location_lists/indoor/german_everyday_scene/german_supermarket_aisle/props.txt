@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-paper tags on the rail | 0.85 | 0.05-0.15 | plain yellow labels
-empty cardboard on the floor | 0.55 | 0.05-0.15 | torn box
-promotional wobbler on a shelf | 0.5 | 0.03-0.1 | curled colorful card with a starburst shape
-paper slip dropped in the aisle | 0.4 | 0.02-0.08 | curled thermal paper
-carrier bags stuffed in the trolley | 0.6 | 0.05-0.15 | crumpled plastic
-tin left on the wrong shelf | 0.45 | 0.03-0.1 | dusty lid
-orange shelf strip near a gap | 0.45 | 0.02-0.08 | plain orange strip
-loyalty card held in hand | 0.4 | 0.02-0.08 | scratched plastic
-folded paper scrap on the trolley handle | 0.5 | 0.02-0.08 | creased scrap
-bottle cap on the floor | 0.35 | 0.02-0.06 | scratched plastic cap
-weighing scales at the aisle end | 0.35 | 0.05-0.15 | worn keypad
+a small neat stack of canned tomatoes on a shelf far down the aisle | 0.8 | 0.01-0.05 | red tins
+small colorful cereal boxes on a high shelf at the far end | 0.7 | 0.01-0.05 | bright cartons
+a small cardboard tray of tins at the far end of the aisle | 0.55 | 0.01-0.05 | torn packaging
+small glass jars lined on a shelf far down the aisle | 0.6 | 0.01-0.05 | screw-top lids
+a small red hand basket on the floor at the far end | 0.45 | 0.01-0.05 | plastic handles
+small plastic bottles of water on a distant shelf | 0.6 | 0.01-0.05 | clear
+a small stack of folded cardboard at the back of the aisle | 0.45 | 0.01-0.05 | flat brown
+a compact weighing scale at the far end of the produce stand | 0.35 | 0.01-0.05 | steel
+small yellow banana bunches in a crate at the far end | 0.5 | 0.01-0.05 | ripe
+small packs of pasta on a distant shelf | 0.6 | 0.01-0.05 | clear pouches
+small loaves of bread on a rack at the far end of the aisle | 0.5 | 0.01-0.05 | golden crust
+small bottles of olive oil on a distant shelf | 0.4 | 0.01-0.05 | green glass

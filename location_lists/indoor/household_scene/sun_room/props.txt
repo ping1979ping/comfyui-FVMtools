@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-leafy fiddle leaf fig | 0.95 | 0.1-0.3 | tall glossy houseplant
-spilling pothos vine pot | 0.95 | 0.1-0.25 | cascading green foliage
-ceramic tea set on table | 0.85 | 0.1-0.2 | matched glazed pieces
-woven throw cushion pair | 0.85 | 0.1-0.25 | textured natural cloth
-stack of glossy interior photo books | 0.75 | 0.05-0.15 | glossy paper pile
-small glass terrarium | 0.7 | 0.05-0.15 | clear domed vessel
-folded linen napkin | 0.7 | 0.05-0.1 | softly creased cloth
-candle in lantern | 0.7 | 0.05-0.15 | metal hung holder
-basket of yarn projects | 0.6 | 0.05-0.15 | woven contained pile
-small bird-shaped sculpture | 0.6 | 0.05-0.1 | painted ceramic figure
-hanging wind chime | 0.65 | 0.05-0.15 | suspended metal rods
-folded sun hat on chair | 0.6 | 0.05-0.15 | woven straw brim
+a row of small clay pots with seedlings on the far window sill | 0.7 | 0.02-0.06 | green sprouts
+a small glass vase on a distant side table | 0.5 | 0.02-0.05 | clear, white blooms
+a small woven basket in the far corner | 0.5 | 0.02-0.06 | natural fiber, empty
+a compact brass lantern on a far shelf | 0.4 | 0.02-0.05 | unlit
+a small folded linen throw on a far chair | 0.5 | 0.02-0.06 | cream
+a small potted succulent on the far sill | 0.5 | 0.01-0.05 | gray-green, clay pot
+a small ceramic watering can on the far ledge | 0.4 | 0.02-0.05 | white glaze
+a slim candle holder on a distant table | 0.4 | 0.01-0.04 | brass, unlit candle
+a small stack of cushions on a far chair | 0.4 | 0.02-0.06 | pale linen
+a small wicker tray on a distant table | 0.4 | 0.02-0.05 | empty
+a small glass terrarium on the far sill | 0.35 | 0.02-0.05 | green moss
+a small bowl of pale stones on a distant table | 0.35 | 0.01-0.04 | white ceramic

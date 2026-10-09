@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-drying rack of sandy sneakers by the door | 0.5 | 0.1-0.25 | grit trail
-cooler propped open to dry | 0.55 | 0.1-0.3 | drain plug out
-grocery bags half unpacked | 0.6 | 0.1-0.3 | vacation stock-up
-blender out for smoothies | 0.5 | 0.05-0.15 | rinsed pitcher
-corn ears stacked for dinner | 0.45 | 0.05-0.15 | husks on
-sunscreen bottles on the counter | 0.6 | 0.03-0.1 | greasy caps
-beat-up toaster with a bent lever | 0.5 | 0.03-0.1 | crumb tray out
-folding chairs leaned by the slider | 0.5 | 0.1-0.3 | webbed seats
-bucket of shells rinsed in the sink | 0.45 | 0.05-0.15 | saltwater cloudy
-board shorts drying on a chair | 0.45 | 0.05-0.15 | drip line
-pizza boxes from the first night | 0.45 | 0.05-0.15 | stacked flat
+a white kitchen island a few meters back at the center | 1.0 | 0.2-0.5 | pale laminate top, empty, with three empty stools along the far side
+an empty round wooden dining table with four chairs pushed in a few meters back on the right | 0.7 | 0.2-0.5 | painted white, plain top
+a stainless refrigerator a few meters back on the left | 0.7 | 0.2-0.5 | tall steel doors reflecting the window light
+a white gas range a few meters back on the right | 0.6 | 0.2-0.5 | black grates, clean, steel hood above
+a small peninsula counter with two empty stools a few meters back on the left | 0.6 | 0.2-0.5 | white top, wicker stools
+a white wire rolling cart a few meters back on the left | 0.4 | 0.2-0.5 | empty, pale shelves
+a tall pantry cupboard a few meters back on the right | 0.5 | 0.2-0.5 | white painted doors, closed, brushed pulls
+a double sink under the window a few meters back at the center | 0.55 | 0.2-0.5 | stainless basins, bright light from the window above
+a dishwasher and lower cabinets a few meters back along the left | 0.5 | 0.2-0.5 | white doors, steel front, even light
+a long pale laminate counter a few meters back along the left | 0.6 | 0.2-0.5 | empty, a window above it, bright light
+a wide doorway a few meters back on the right leading to a hall | 0.4 | 0.2-0.5 | pale wall, soft light
+a stack of folded wooden chairs against the wall a few meters back on the left | 0.35 | 0.2-0.5 | stacked, whitewashed wood
+an empty farmhouse table with two benches a few meters back on the right | 0.45 | 0.2-0.5 | pale wood, benches tucked in

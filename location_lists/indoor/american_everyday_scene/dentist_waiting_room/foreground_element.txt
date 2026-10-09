@@ -1,13 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-old People magazine on side table | 0.95 | 0.05-0.15 | bent glossy cover with a large portrait photo{| and masthead reading "PEOPLE"}
-faded Highlights magazine for kids | 0.7 | 0.05-0.15 | dog-eared cartoon-illustrated cover{| with masthead reading "HIGHLIGHTS"}
-half-empty disposable water cup | 0.7 | 0.02-0.05 | small paper cone cup
-purse on chair beside | 0.55 | 0.1-0.2 | slumped fabric bag
-clipboard with paper sheet | 0.7 | 0.1-0.2 | pen clipped to top
-loose paper slip on floor | 0.4 | 0.02-0.05 | small curled thermal paper
-tissue box mid-pull | 0.65 | 0.05-0.1 | cardboard with sheet sticking out
-empty candy wrapper on chair | 0.4 | 0.02-0.05 | crumpled foil
-hand sanitizer pump on side table | 0.85 | 0.05-0.1 | small clear pump bottle
-abandoned coloring page | 0.5 | 0.05-0.15 | scribbled paper sheet
+a plain speckled gray low-pile commercial carpet | 1.0 | 0.1-0.4 | smooth and even
+a plain taupe low-pile carpet | 0.9 | 0.1-0.4 | dense and uniform
+a beige vinyl plank floor | 0.8 | 0.1-0.4 | smooth and even
+a plain navy low-pile carpet | 0.7 | 0.1-0.4 | dense and even
+a warm oak-look laminate plank floor | 0.7 | 0.1-0.4 | satin finish
+a pale gray linoleum floor | 0.6 | 0.1-0.4 | smooth and matte
+a plain blue-gray loop carpet | 0.7 | 0.1-0.4 | tight and even
+a plain mocha low-pile carpet | 0.6 | 0.1-0.4 | smooth soft pile
+a wide pale wood-look vinyl plank floor | 0.6 | 0.1-0.4 | matte and even
+a plain sage green low-pile carpet | 0.5 | 0.1-0.4 | uniform and flat
+a beige sheet vinyl floor | 0.5 | 0.1-0.4 | matte and even
+a plain charcoal low-pile carpet | 0.55 | 0.1-0.4 | dense and smooth

@@ -1,15 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-chrome stainless wall banding | 0.85 | 0.05-0.2 | horizontal polished strip
-rounded streamline corner trim | 0.7 | 0.05-0.15 | bullet-shaped aluminum cap
-neon tube wall bracket | 0.65 | 0.02-0.1 | glowing pink and blue glass
-porthole door window | 0.6 | 0.05-0.15 | round glass in swinging kitchen door
-pressed-tin ceiling panels | 0.55 | 0.05-0.2 | cream embossed squares
-pendant dome lamp row | 0.6 | 0.05-0.15 | white enamel shades on cords
-art-deco ceiling fan | 0.5 | 0.05-0.15 | slow brass blades
-glass-block window strip | 0.45 | 0.05-0.15 | frosted translucent squares
-red leather door push-plate | 0.4 | 0.02-0.08 | studded padded panel
-brushed-steel napkin-rail | 0.4 | 0.02-0.08 | slim horizontal bar
-terrazzo threshold strip | 0.4 | 0.02-0.08 | flecked entry edge
-wall-mounted pay phone | 0.35 | 0.02-0.1 | black coin booth fixture
+a chrome band running along the far wall at counter height | 0.85 | 0.03-0.1 | polished horizontal strip
+rounded streamline corner trim at the far end of the counter | 0.7 | 0.02-0.08 | bullet-shaped aluminum cap
+white enamel dome pendant lamps in a line far overhead | 0.65 | 0.02-0.08 | warm glow
+pressed-tin ceiling panels high above the far counter | 0.55 | 0.03-0.1 | cream embossed squares
+a slow brass ceiling fan high up at the far center | 0.5 | 0.02-0.06 | wide blades
+a glass-block window strip high on the far left wall | 0.45 | 0.03-0.1 | frosted squares letting in soft light
+a porthole window in the swinging kitchen door at the far right | 0.55 | 0.03-0.08 | round glass, steel frame
+a pink neon tube along the top of the far wall | 0.5 | 0.02-0.06 | thin glowing line
+recessed ceiling lights in a line far overhead | 0.5 | 0.02-0.06 | warm white
+cream ceiling coving along the top of the far wall | 0.4 | 0.02-0.06 | smooth rounded edge
+a brushed-steel hood edge high above the far grill | 0.4 | 0.03-0.08 | plain steel
+a terrazzo threshold strip at the far entrance | 0.35 | 0.02-0.06 | flecked stone

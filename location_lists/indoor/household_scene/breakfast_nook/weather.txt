@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear bright morning outside | 0.95 | - | -
-gentle rain on bay window | 0.85 | - | -
-overcast cozy mood | 0.85 | - | -
-warm summer breeze | 0.7 | - | -
-crisp autumn brightness | 0.85 | - | -
-quiet snowfall beyond glass | 0.7 | - | -
-breezy spring fresh openness | 0.8 | - | -
-calm dry afternoon | 0.85 | - | -
-hazy summer warmth | 0.7 | - | -
-distant rumble of thunder | 0.5 | - | -
+clear bright morning beyond the windows | 0.95 | - | -
+soft rain on the bay window | 0.7 | - | -
+gray overcast sky beyond the glass | 0.8 | - | -
+warm summer light on the green yard | 0.7 | - | -
+crisp autumn brightness and bare branches | 0.75 | - | -
+pale winter sun with frost on the glass | 0.6 | - | -
+light mist across the garden outside | 0.5 | - | -
+fresh spring light on new leaves outside | 0.7 | - | -
+snow-bright light beyond the windows | 0.5 | - | -
+still warm air with steady daylight | 0.8 | - | -

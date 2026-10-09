@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-yellow rollback price tag | 1.0 | 0.05-0.15 | bright shelf-edge flag with a smiley starburst{| reading "ROLLBACK"}
-blue Walmart shelf label | 0.85 | 0.05-0.1 | blue edge strip{| with white lettering "WALMART"}
-red round sticker on box | 0.75 | 0.02-0.08 | round adhesive dot
-starburst shelf clip-on | 0.5 | 0.05-0.1 | bright starburst-shaped tag
-hanging snack peg display | 0.65 | 0.1-0.25 | metal hook strip
-cardboard product display unit | 0.7 | 0.2-0.4 | colorful floor stand
-out-of-stock empty shelf gap | 0.7 | 0.1-0.25 | open pegboard section
-QR-code shelf standee | 0.55 | 0.05-0.1 | small acrylic standee with square pixel-pattern code
-orange sticker dot pile | 0.55 | 0.02-0.08 | small orange dots
-overhead aisle placard | 0.9 | 0.05-0.15 | white plastic panel{| with a large numeral "{5|14|27}"}
-employee vest left on cart | 0.4 | 0.05-0.1 | navy nylon mesh
-plastic divider between products | 0.55 | 0.05-0.1 | clear shelf separator
+a small stack of cereal boxes on a far shelf | 0.7 | 0.01-0.04 | bright boxes in a neat pile
+a small bag of dog food at the back of a low far shelf | 0.5 | 0.02-0.05 | large printed bag
+a small row of canned soup at the back of a far shelf | 0.6 | 0.01-0.04 | red and white cans
+a small cardboard box on a distant pallet | 0.6 | 0.02-0.05 | plain brown
+a small orange traffic cone far down the aisle | 0.4 | 0.02-0.05 | plain orange plastic
+a small jar of peanut butter on a far shelf | 0.5 | 0.01-0.04 | red lid
+a small pack of paper towels on a far shelf | 0.6 | 0.02-0.05 | white wrap
+a small blue plastic basket on a distant shelf | 0.5 | 0.02-0.05 | plain handle
+a small round convex mirror high in the far corner | 0.4 | 0.01-0.04 | dark glass
+a small spray bottle of cleaner at the far end of a shelf | 0.5 | 0.01-0.04 | clear plastic, blue liquid
+a slim stack of folded towels on a distant shelf | 0.45 | 0.01-0.04 | teal and white
+a little plastic bag of onions on a far low shelf | 0.4 | 0.01-0.04 | mesh bag, golden

@@ -1,15 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-stacked front-load washer dryer | 1.0 | 0.4-0.8 | brushed appliance fronts
-side-by-side machines on pedestals | 0.9 | 0.4-0.8 | matte enamel finish
-counter spanning over machines | 0.85 | 0.3-0.6 | folding workspace top
-deep utility sink basin | 0.85 | 0.3-0.5 | white acrylic tub
-hanging rod for drip-dry items | 0.85 | 0.3-0.6 | chrome rail run
-folding table island | 0.65 | 0.3-0.6 | freestanding work top
-ironing board folded against wall | 0.65 | 0.2-0.5 | padded cloth top
-laundry sorting bin row | 0.85 | 0.3-0.6 | stacked woven baskets
-broom and mop storage cubby | 0.7 | 0.2-0.5 | tall slim niche
-overhead drying rack pulley | 0.6 | 0.3-0.5 | timber slat suspension
-wall-mounted folding station | 0.65 | 0.3-0.5 | drop-down work shelf
-upper cabinets with detergents | 0.85 | 0.3-0.6 | painted closed doors
+a folding counter with a pale wood top along the right wall a few meters back | 0.9 | 0.2-0.5 | clear surface, open shelves above it, a rolling cart tucked underneath
+a deep white utility sink in a cabinet a few meters back on the left | 0.8 | 0.2-0.5 | brushed steel faucet, a window above it
+a run of tall white cabinets a few meters back on the left | 0.8 | 0.2-0.5 | closed doors with brushed nickel pulls
+a row of wooden wall hooks and open cubbies along the right wall a few meters back | 0.7 | 0.2-0.5 | painted white, all empty
+a white front-load washer and dryer pair a few meters back on the right | 0.9 | 0.2-0.5 | closed round doors, a wood shelf above them
+a slim three-tier rolling cart a few meters back on the left | 0.5 | 0.15-0.4 | white metal, empty shelves
+a wall-mounted drying rack folded flat against the wall a few meters back on the right | 0.5 | 0.15-0.4 | thin white rails, empty
+a closed white ironing board cabinet a few meters back on the left | 0.45 | 0.2-0.4 | flush door with a slim pull
+a low white bench with cubbies below it a few meters back along the right wall | 0.5 | 0.2-0.4 | empty, a wood seat
+a stacked washer and dryer tower a few meters back on the left | 0.7 | 0.2-0.5 | white, closed round door, a small shelf above
+a wide doorway a few meters back on the right | 0.5 | 0.2-0.4 | leading to a hallway, soft light beyond, white trim
+a long wood counter a few meters back across the middle | 0.6 | 0.2-0.5 | clear surface, white cabinets below it
+a tall white pantry-style cabinet a few meters back at the far left | 0.4 | 0.2-0.4 | closed doors, a slim pull on each

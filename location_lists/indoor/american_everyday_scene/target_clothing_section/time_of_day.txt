@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright daytime LED retail | 1.0 | - | -
-weekday-morning quiet brightness | 0.85 | - | -
-midday weekend crowded light | 0.85 | - | -
-afternoon-school-out shopping | 0.85 | - | -
-evening after-work peak | 0.85 | - | -
-late-night closing-hour dim | 0.6 | - | -
-opening-hour empty aisle | 0.7 | - | -
-holiday-shopping bright | 0.7 | - | -
-slow-Tuesday mid-afternoon | 0.85 | - | -
-just-before-close half-lit | 0.55 | - | -
+bright even white light from the ceiling panels | 1.0 | - | -
+cool neutral light with no daylight | 0.8 | - | -
+soft morning light with the store lights on | 0.7 | - | -
+warm late-afternoon light at the front windows | 0.5 | - | -
+flat gray daylight and bright ceiling light | 0.6 | - | -
+crisp midday light, all ceiling lights on | 0.7 | - | -
+soft early-evening light with warm store lights | 0.6 | - | -
+clean white light from long ceiling strips | 0.8 | - | -
+pale morning light and bright store lights | 0.6 | - | -
+bright overhead light with a soft red accent glow | 0.4 | - | -
+neutral white light, no hard shadows | 0.7 | - | -

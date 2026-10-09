@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-aggressive AC summer chill | 0.9 | - | -
-warm grease-laden indoor air | 0.85 | - | -
-winter dry heat near vestibule | 0.75 | - | -
-muggy stuffiness near fryer | 0.7 | - | -
-rain on parking-lot window | 0.65 | - | -
-snow piled outside glass | 0.5 | - | -
-overcast grey through window | 0.65 | - | -
-humid summer condensation | 0.55 | - | -
-fry-oil smell hanging in warm air | 0.5 | - | -
-cold draft from drive-thru door | 0.45 | - | -
+clear sky and a sunny parking lot beyond the glass | 0.8 | - | -
+light rain on the parking-lot windows | 0.6 | - | -
+gray overcast sky beyond the windows | 0.8 | - | -
+first snow falling past the windows | 0.4 | - | -
+flat overcast gray light beyond the window | 0.5 | - | -
+bare winter trees at the lot edge, cold bright air | 0.5 | - | -
+hot summer glare on the windows, cool dry air inside | 0.6 | - | -
+crisp October light across the parking lot | 0.65 | - | -
+still cool air with soft even interior light | 0.9 | - | -
+low gray cloud over the lot beyond the windows | 0.5 | - | -

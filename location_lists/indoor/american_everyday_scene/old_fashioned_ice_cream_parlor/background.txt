@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-pastel soda fountain counter | 1.0 | 0.6-1.0 | pink marble top with chrome fixtures
-mirrored back-bar wall | 0.9 | 0.5-0.9 | beveled glass with syrup bottles
-black-and-white checkerboard floor | 0.8 | 0.5-0.9 | glossy tile pattern
-pink-and-mint striped wallpaper | 0.85 | 0.5-1.0 | vintage candy stripes
-glass ice cream display case | 0.9 | 0.4-0.8 | tubs of colorful flavors under glass
-chalkboard flavor panel | 0.8 | 0.3-0.7 | chalk-drawn cones and sundaes{| under a heading reading "{FLAVORS|SUNDAES}"}
-retro neon cone sign | 0.6 | 0.2-0.5 | pink glowing tube outline of a cone{| and script reading "{ICE CREAM|SUNDAES}"}
-pressed-tin ceiling with fans | 0.55 | 0.4-0.8 | cream embossed squares
-big front window with gold border | 0.65 | 0.4-0.8 | sunlit glass storefront{| with gold lettering reading "{ICE CREAM|SODAS}"}
-vintage jukebox in corner | 0.45 | 0.2-0.5 | chrome-lit record machine
+a pastel soda fountain counter across the far side of the room | 1.0 | 0.6-1.0 | pink marble top with chrome fittings, round swivel stools along it, all empty, a mirrored back wall spanning the whole width of the image
+a mirrored back wall with glass shelves across the far side | 0.9 | 0.5-0.9 | beveled mirror, rows of glass jars and tall glasses, warm lights
+a glass ice cream display case at the far center of the counter | 0.9 | 0.4-0.8 | tubs of colorful flavors under curved glass, chrome frame
+pink and mint striped wallpaper across the far wall | 0.8 | 0.5-1.0 | above a white wainscot, spanning the whole width of the image
+tall storefront windows with gold trim along the far left | 0.65 | 0.4-0.8 | sunlit street beyond the glass, plain panes
+a pressed-tin ceiling with slow fans high above the far side | 0.5 | 0.4-0.8 | cream embossed squares, white blades
+a row of empty cherry-red booths along the far wall | 0.8 | 0.5-0.9 | tufted vinyl, small marble-top tables, round wall lamps above
+a white tiled wall behind the far counter | 0.6 | 0.5-0.9 | glossy subway tile, a pink painted band at the top
+a pale mint painted wall at the far end of the room | 0.6 | 0.5-0.9 | a row of round gilt-framed mirrors along the whole width of the image
+a glass candy case along the far right wall | 0.5 | 0.3-0.6 | tall jars of gumdrops and licorice in rows, brass trim and a glass top
+a vintage chrome-lit jukebox against the far right wall | 0.4 | 0.3-0.6 | glowing curved top, empty booths beside it
+a far corner of empty marble-top tables with wire chairs | 0.6 | 0.4-0.8 | white wall behind them, daylight from a window on the left
+a pink and white painted counter front across the far side | 0.5 | 0.5-0.9 | glossy beadboard panels, a brass foot rail along the base

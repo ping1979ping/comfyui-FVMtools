@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-wicker armchair pair | 0.95 | 0.4-0.7 | natural woven seats
-upholstered chaise lounge | 0.8 | 0.3-0.6 | cushioned recline form
-small round side table | 0.85 | 0.2-0.4 | painted timber surface
-freestanding plant stand cluster | 0.95 | 0.3-0.6 | tall tiered planters
-window seat bench cushioned | 0.85 | 0.3-0.6 | built-in padded bench
-rattan coffee table | 0.85 | 0.3-0.5 | woven natural top
-hanging plant rail overhead | 0.7 | 0.3-0.6 | suspended planter row
-freestanding floor lamp | 0.7 | 0.2-0.4 | tall slim stand
-two-seat wicker sofa | 0.7 | 0.3-0.6 | natural woven frame
-ceiling fan slow turn | 0.7 | 0.2-0.4 | wood blade slow rotation
-folding screen privacy | 0.55 | 0.3-0.5 | latticed panel divider
-breakfast bistro table | 0.65 | 0.2-0.4 | small round metal top
+a rattan sofa with cream cushions a few meters back on the left | 1.0 | 0.3-0.5 | empty, a low wood table in front of it
+two wicker armchairs facing each other a few meters back on the right | 0.8 | 0.3-0.5 | empty, pale linen cushions
+a tall fiddle-leaf fig in a ceramic pot a few meters back on the right | 0.7 | 0.2-0.4 | glossy green leaves, white pot
+a daybed with linen cushions a few meters back on the left | 0.5 | 0.3-0.5 | empty, pale wood frame
+a round wicker side table a few meters back at the center | 0.5 | 0.15-0.35 | empty, clear top
+a low wooden coffee table a few meters back at the center | 0.6 | 0.2-0.4 | empty clear top
+a pair of potted ferns on a plant stand a few meters back on the left | 0.6 | 0.2-0.4 | lush green fronds
+a wicker chaise longue a few meters back on the right | 0.4 | 0.3-0.5 | empty, cream cushion
+a large potted lemon tree a few meters back on the left | 0.4 | 0.2-0.4 | glossy green leaves, a terracotta pot
+a cast iron plant bench a few meters back on the right | 0.4 | 0.2-0.4 | empty clay pots on it, weathered white paint
+a round dining table with four chairs pushed in a few meters back at the center | 0.5 | 0.3-0.5 | empty, pale wood
+a cushioned window seat a few meters back along the left wall | 0.4 | 0.2-0.4 | empty, pale gray cushion
+a tall potted palm a few meters back on the left | 0.5 | 0.2-0.4 | arching green fronds, a woven basket pot
+a pair of empty linen armchairs a few meters back on the right | 0.5 | 0.3-0.5 | cream upholstery

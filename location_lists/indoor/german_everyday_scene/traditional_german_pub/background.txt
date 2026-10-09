@@ -1,15 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-dark wood-panelled wall | 1.0 | 0.6-1.0 | aged oak wainscot with warm sheen
-long bar with beer taps | 0.95 | 0.5-0.9 | polished counter with brass tap row
-shelves of beer steins | 0.8 | 0.4-0.8 | pewter-lidded stoneware mugs
-back-bar glass shelves | 0.7 | 0.4-0.8 | bottles of schnapps in amber light
-tiled ceramic stove corner | 0.55 | 0.3-0.6 | green glazed Kachelofen
-coffered timber ceiling | 0.7 | 0.5-0.9 | dark beams with nicotine-yellow plaster
-ornamental emblem mirror wall | 0.6 | 0.3-0.6 | {gilded crest|gilded stag silhouette|gilded hop-vine ornament} on smoked glass
-stag-antler trophy wall | 0.5 | 0.3-0.6 | mounted horns over panelling
-leaded glass front window | 0.65 | 0.4-0.7 | diamond panes with curtain half-drawn
-framed club pennant wall | 0.55 | 0.3-0.6 | embroidered plain-colored pennants and photographs
-wooden beer barrel row | 0.5 | 0.3-0.6 | oak kegs stacked behind bar
-chalkboard daily-specials board | 0.6 | 0.3-0.5 | {chalk-smudged slate with simple doodled icons|slate with chalk drawings of a schnitzel and a beer glass|slate with one chalked word "{SCHNITZEL|PILS|TODAY}"}
+a dark oak wood-paneled wall across the far side of the room | 1.0 | 0.6-1.0 | aged wainscot with a warm sheen, brass wall lamps at even intervals along it
+a long wooden bar counter along the far wall | 0.95 | 0.5-0.9 | polished top with a row of brass beer taps, a mirrored backbar with glass shelves rising behind it
+shelves of pewter-lidded stoneware beer steins along the far wall | 0.8 | 0.4-0.8 | rows of gray-and-blue mugs on dark wooden shelves, lit from above
+a back bar of amber-lit glass shelves across the far side | 0.7 | 0.4-0.8 | rows of schnapps bottles glowing, a gilt-framed mirror behind them
+a tall tiled Kachelofen stove in the far corner | 0.55 | 0.3-0.6 | green glazed tiles, a wooden step at its base, warm light on the glaze
+a coffered timber ceiling with dark beams overhead across the far room | 0.7 | 0.5-0.9 | nicotine-yellow plaster between the beams, spanning the width of the image
+a gilded wall mirror on dark paneling along the far wall | 0.6 | 0.3-0.6 | smoked glass in an ornate frame reflecting the amber lamps
+stag-antler trophies mounted on the far wall | 0.5 | 0.3-0.6 | pale horns over dark paneling, lit by a small brass lamp
+a leaded glass front window along the far left wall | 0.65 | 0.4-0.7 | diamond panes with a half-drawn lace curtain, dusk blue light beyond
+framed club pennants and old photographs along the far wall | 0.55 | 0.3-0.6 | embroidered plain-colored pennants on dark paneling
+a row of oak beer kegs stacked behind the far bar | 0.5 | 0.3-0.6 | dark iron-banded barrels in a neat row, a brass lamp glowing above them, dark paneling behind
+a long dark leather banquette along the far wall | 0.55 | 0.4-0.8 | empty, buttoned backrest, a brass lamp above every second bay
+an ornate carved wooden door at the far end of the room | 0.4 | 0.3-0.6 | dark oak with iron hinges, closed

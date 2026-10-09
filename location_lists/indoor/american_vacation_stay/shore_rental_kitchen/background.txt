@@ -1,14 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-white cabinets with worn pulls | 1.0 | 0.4-0.8 | repainted layers
-window over the sink with gauzy curtain | 0.8 | 0.2-0.45 | shell-print fabric
-laminate counters in speckled grey | 0.8 | 0.3-0.6 | sun-faded patches
-shell decor on the sill | 0.55 | 0.05-0.15 | collected jar
-crab-shaped magnets on the icebox | 0.5 | 0.1-0.3 | red enamel clips
-open shelf of mixed mugs | 0.55 | 0.15-0.3 | rental assortment
-sliding door to the deck | 0.65 | 0.3-0.6 | salt-hazed glass
-paper towel holder bolted under a cabinet | 0.5 | 0.03-0.1 | half roll
-tide clock on the wall | 0.45 | 0.05-0.12 | novelty dial
-rattan bar stools at the counter | 0.55 | 0.2-0.4 | unravelling wraps
-ceiling fan with wicker blades | 0.5 | 0.1-0.3 | wobbling pull chain
+a far wall of white shaker cabinets across the whole width of the image | 1.0 | 0.6-1.0 | upper and lower cabinets with brushed nickel pulls, a pale laminate counter between
+a far wall with a wide window above the sink | 0.9 | 0.6-1.0 | white trim, sheer curtains, bright sea-light, rooftops and a pale sky beyond
+a far wall of pale blue painted beadboard across the whole width of the image | 0.7 | 0.6-1.0 | vertical white-trimmed boards, a row of white cabinets above
+a far wall of white subway tile behind the stove | 0.65 | 0.6-1.0 | glossy tiles with light gray grout, a steel range hood above at the center
+a far run of cabinets in soft seafoam green across the far side | 0.6 | 0.6-1.0 | plain doors with silver knobs, a white countertop below, a window on the left
+a sliding glass door at the far end of the kitchen | 0.6 | 0.6-1.0 | opening to a small wooden deck, bright sky, white blinds half open
+a far wall of whitewashed shiplap across the whole width of the image | 0.6 | 0.6-1.0 | pale boards with a faint gray wash, a stainless refrigerator at the far right
+a stainless refrigerator and a white range across the far wall | 0.65 | 0.6-1.0 | a tile backsplash between them, a wide window on the left
+a low counter peninsula across the far side with empty stools | 0.5 | 0.6-1.0 | white laminate top, wicker stools, a window behind
+a far wall of light oak cabinets above a pale quartz counter | 0.55 | 0.6-1.0 | brushed steel hardware, a window over the sink at the left
+a far wall painted sand beige with a window at the center | 0.55 | 0.6-1.0 | white trim, sheer curtains, bright sky beyond, white cabinets on the right
+a far corner of white cabinets and a farmhouse sink under a window | 0.5 | 0.6-1.0 | bright window light on the countertop, pale floor in front
+an open doorway at the far right leading to a bright living room | 0.45 | 0.6-1.0 | pale floor beyond, a white wall in soft focus
+a far wall of pale gray beadboard with a built-in hutch at the left | 0.45 | 0.6-1.0 | white painted hutch with empty open shelves, soft light

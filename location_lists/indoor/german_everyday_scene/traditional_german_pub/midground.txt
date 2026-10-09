@@ -1,16 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-round Stammtisch table | 1.0 | 0.3-0.5 | heavy oak with a small brass {emblem plate|stag plaque|plate reading "STAMMTISCH"}
-worn wooden pub chairs | 0.9 | 0.3-0.5 | high-backed seats with scuffed legs
-bar stools along counter | 0.9 | 0.3-0.5 | leather-topped swivel seats
-group of men drinking beer | 0.65 | 0.3-0.5 | seated regulars with half-litre glasses
-long communal bench table | 0.7 | 0.3-0.5 | scrubbed wood with coasters
-barkeeper pouring a Pils | 0.7 | 0.2-0.4 | tapping a tall slim glass
-corner booth with cushions | 0.55 | 0.3-0.5 | red upholstered bench and table
-dartboard alcove | 0.4 | 0.15-0.3 | cork board with brass-ringed scoring
-slot-machine corner | 0.35 | 0.15-0.3 | blinking coin gaming cabinet
-coat rack by the entrance | 0.45 | 0.1-0.25 | wooden stand with wool jackets
-standing high table | 0.4 | 0.15-0.3 | round bar-height table
-waitress carrying beer trays | 0.5 | 0.2-0.35 | apron and several full glasses
-sausage-and-sauerkraut plates on table | 0.5 | 0.15-0.3 | steaming hearty dishes
+a heavy round oak Stammtisch table a few meters back on the left | 1.0 | 0.3-0.5 | empty, high-backed chairs pushed in around it, a small brass plate at its center
+long communal wooden tables a few meters back across the middle | 0.7 | 0.3-0.5 | scrubbed oak, benches pushed in, all empty
+leather-topped bar stools lined along the counter a few meters back on the right | 0.9 | 0.3-0.5 | all empty, a brass footrail below
+a corner booth with red upholstered cushions a few meters back on the right | 0.55 | 0.3-0.5 | empty, a dark table before it
+a dartboard alcove a few meters back on the far left | 0.4 | 0.15-0.3 | plain cork board with brass rings
+a wooden coat rack by the entrance a few meters back on the right | 0.45 | 0.1-0.25 | tall dark stand, empty
+standing high tables a few meters back at the center | 0.4 | 0.15-0.3 | round bar-height tops, all empty
+square tables set for dinner with red-and-white cloths a few meters back on the left | 0.5 | 0.2-0.4 | folded napkins, chairs pushed in
+wooden barrels used as standing tables a few meters back on the left | 0.4 | 0.15-0.3 | oak, all empty
+a long wooden bench along the wall a few meters back on the left | 0.5 | 0.2-0.4 | empty, with dark paneling behind it
+a cast-iron wood stove with a stack of logs a few meters back on the right | 0.4 | 0.15-0.3 | black iron, cold
+a tall wooden room divider with fretwork a few meters back on the left | 0.4 | 0.15-0.3 | cut wooden lattice
+a stack of wooden beer crates a few meters back by the bar | 0.35 | 0.1-0.25 | dark and worn
