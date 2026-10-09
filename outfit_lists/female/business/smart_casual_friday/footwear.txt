@@ -1,13 +1,15 @@
 # slot: footwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-polished loafers | 0.80 | 0.5-0.8 | leather
-minimal white sneakers | 0.75 | 0.4-0.6 | leather
-ballet flats | 0.65 | 0.4-0.7 | leather,suede
-ankle boots | 0.65 | 0.5-0.8 | leather,suede
-mules | 0.55 | 0.4-0.7 | leather,suede
-pointed flats | 0.55 | 0.5-0.8 | leather,suede
-block-heel booties | 0.45 | 0.4-0.7 | leather,suede
-slip-on sneakers | 0.45 | 0.4-0.6 | leather,canvas
-clean-line sandals | 0.40 | 0.4-0.7 | leather
-kitten heels | 0.50 | 0.5-0.8 | leather,suede
+polished loafers with a flat sole | 0.80 | 0.45-0.8 | leather,suede
+penny loafers with a low stacked heel | 0.50 | 0.45-0.8 | leather
+minimal low-top sneakers with a flat rubber sole | 0.60 | 0.35-0.6 | leather
+ballet flats with a flat sole | 0.60 | 0.4-0.75 | leather,suede
+pointed-toe flats with a flat sole | 0.55 | 0.5-0.8 | leather,suede
+ankle boots with a low block heel | 0.65 | 0.45-0.8 | leather,suede
+Chelsea boots with a low stacked heel | 0.40 | 0.4-0.75 | leather,suede
+closed-toe mules with a one-and-a-half-inch block heel | 0.45 | 0.4-0.75 | leather,suede
+slingback flats with a flat sole | 0.40 | 0.45-0.8 | leather,suede
+block-heel loafers with a one-and-a-half-inch heel | 0.40 | 0.45-0.8 | leather,suede
+low-heeled pumps with a two-inch block heel | 0.40 | 0.5-0.8 | leather,suede
+kitten-heel slingbacks with a one-and-a-half-inch heel | 0.35 | 0.5-0.8 | leather,suede

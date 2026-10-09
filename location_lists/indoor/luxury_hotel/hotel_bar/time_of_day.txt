@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-warm evening cocktail hour | 1.0 | - | -
-dim late-night glow | 0.9 | - | -
-early evening golden dusk | 0.8 | - | -
-soft candlelit nightfall | 0.8 | - | -
-buzzing happy-hour twilight | 0.7 | - | -
-quiet after-midnight stillness | 0.6 | - | -
-blue-hour window glow | 0.6 | - | -
-amber late-afternoon opening | 0.5 | - | -
-moody rainy-evening gloom | 0.45 | - | -
-glittering pre-dinner dusk | 0.5 | - | -
+warm early-evening light with the wall lamps just lit | 1.0 | - | -
+soft late-afternoon light through the street windows | 0.85 | - | -
+dim evening lamplight with a blue dusk at the windows | 0.9 | - | -
+low amber lamplight on a dark evening | 0.5 | - | -
+quiet midday light with only the bar lights on | 0.5 | - | -
+warm late-evening glow of table lamps and backbar lights | 0.8 | - | -
+blue-hour window light with warm lamps glowing | 0.7 | - | -
+golden low sun slanting through the street windows | 0.5 | - | -
+soft overcast afternoon light with the lamps switched on | 0.6 | - | -
+late-night glow of the backbar lights and wall sconces | 0.6 | - | -
+pale early-evening twilight with the sconces glowing | 0.65 | - | -

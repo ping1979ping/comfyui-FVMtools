@@ -1,13 +1,15 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-warm bacon-scented air | 1.0 | - | -
-fresh brewed coffee aroma | 0.9 | - | -
-gentle climate-controlled comfort | 0.75 | - | -
-soft clinking cutlery hum | 0.7 | - | -
-steamy buffet warmth | 0.6 | - | -
-bright clean morning air | 0.6 | - | -
-sun-warmed window-side air | 0.55 | - | -
-fresh-baked bread fragrance | 0.55 | - | -
-cool air-conditioned freshness | 0.5 | - | -
-hushed early-morning stillness | 0.45 | - | -
+clear blue morning sky beyond the tall windows | 0.9 | - | -
+overcast gray sky beyond the sheer curtains | 0.8 | - | -
+light rain on the window glass | 0.5 | - | -
+crisp October sunlight at the windows | 0.7 | - | -
+soft snowfall beyond the sheer curtains | 0.4 | - | -
+pale winter sun low over the street outside | 0.55 | - | -
+bright spring morning sun through the glass | 0.75 | - | -
+hazy summer sunlight through the curtains | 0.6 | - | -
+low morning fog softening the street outside | 0.45 | - | -
+bare winter branches beyond the windows, pale sky | 0.5 | - | -
+still, bright air with soft window light | 0.85 | - | -
+steady drizzle on the courtyard doors | 0.4 | - | -

@@ -1,6 +1,4 @@
-# format: text_content | probability | compatible_slots | font_hint
-"LESS" | 0.08 | top | minimal serif
-"QUIET" | 0.06 | top | minimal serif
-"MUTED" | 0.05 | accessories | clean sans-serif
-"LINE" | 0.05 | accessories | thin sans-serif
-"FORM" | 0.05 | top | minimal serif
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: a minimal matching two-piece set is defined by clean, unprinted surfaces, so no lettering belongs on the top, jacket or bag

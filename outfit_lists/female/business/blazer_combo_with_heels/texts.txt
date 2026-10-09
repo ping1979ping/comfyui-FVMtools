@@ -1,7 +1,4 @@
-# format: text_content | probability | compatible_slots | font_hint
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
 
-"OFFICE" | 0.10 | accessories | clean sans-serif
-"FOCUS" | 0.08 | accessories | minimal serif
-"BOSS" | 0.08 | accessories | engraved serif
-"WORK" | 0.06 | accessories | clean sans-serif
-"workoholic" | 0.05 | top | playful handwriting
+# intentionally empty: blazer separates worn with heels are plain tailoring, and no slogan, monogram or hardware lettering belongs to them

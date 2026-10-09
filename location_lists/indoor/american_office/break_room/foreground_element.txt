@@ -1,14 +1,16 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-stirring coffee with a plastic stick | 0.7 | 0.05-0.15 | swirling creamer
-microwave door held open | 0.55 | 0.05-0.2 | steam rolling out
-lunch container peeled open | 0.6 | 0.05-0.15 | fogged lid in hand
-leaning on the counter mid-story | 0.6 | 0.1-0.3 | ankles crossed
-vending machine buttons pressed | 0.5 | 0.05-0.2 | coil turning
-paper plate carried to the table | 0.5 | 0.05-0.15 | sagging under a slice
-phone scrolled while chewing | 0.55 | 0.05-0.15 | elbow on the table
-mug rinsed at the sink | 0.5 | 0.05-0.15 | water running
-donut box lid lifted for a look | 0.45 | 0.05-0.12 | glaze stuck to cardboard
-chair tipped back on two legs | 0.4 | 0.1-0.25 | hand on the table edge
-ice rattled into a cup | 0.4 | 0.03-0.1 | scoop in the bin
+a light oak vinyl plank floor | 1.0 | 0.1-0.4 | long planks with a matte finish and fine seams
+a smooth light grey sheet vinyl floor | 0.85 | 0.1-0.4 | even and plain with a faint sheen
+a warm beige sheet vinyl floor | 0.7 | 0.1-0.4 | smooth with a soft sheen and no pattern
+a wood-look laminate plank floor | 0.8 | 0.1-0.4 | warm honey tone with a matte finish
+a pale polished concrete floor | 0.75 | 0.1-0.4 | soft reflections of the ceiling lights
+a plain mid-grey low-pile carpet | 0.6 | 0.1-0.4 | smooth and even, no pattern
+a pale grey luxury vinyl plank floor | 0.75 | 0.1-0.4 | long boards with fine seams and a low sheen
+a plain taupe low-pile carpet | 0.5 | 0.1-0.4 | smooth and even, no pattern
+a sealed warm grey concrete floor | 0.6 | 0.1-0.4 | fine saw-cut joints in a regular grid
+a light ash wood-look floor | 0.6 | 0.1-0.4 | wide boards with a satin finish
+a plain charcoal low-pile carpet | 0.45 | 0.1-0.4 | smooth and even, no pattern
+a pale oak laminate floor | 0.55 | 0.1-0.4 | long planks with a soft sheen
+a smooth cream vinyl floor | 0.45 | 0.1-0.4 | even and clean with a low gloss

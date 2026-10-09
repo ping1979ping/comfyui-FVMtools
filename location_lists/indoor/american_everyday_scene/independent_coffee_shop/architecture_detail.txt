@@ -1,15 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-exposed ceiling beam | 0.8 | 0.05-0.2 | rough dark timber
-Edison bulb pendant cluster | 0.8 | 0.05-0.15 | warm glowing filaments on cords
-arched brick window opening | 0.6 | 0.05-0.15 | curved masonry with deep sill
-tin-tile ceiling patch | 0.5 | 0.05-0.15 | embossed painted squares
-cast-iron radiator under window | 0.5 | 0.05-0.1 | chunky ribbed enamel
-gilded shop door glass | 0.55 | 0.02-0.1 | gold scrollwork on glass{| with the word "{COFFEE|CAFE|OPEN}"}
-pegboard wall rack | 0.45 | 0.05-0.15 | mugs hung on dowels
-steel track light rail | 0.5 | 0.05-0.1 | adjustable black spotlights
-original wooden door frame | 0.4 | 0.05-0.1 | chipped teal paint
-mosaic tile entry threshold | 0.4 | 0.02-0.08 | tiny black-and-white hexagons
-brass gooseneck wall lamp | 0.4 | 0.02-0.08 | aged curved arm fixture
-tall casement window panes | 0.5 | 0.05-0.15 | divided glass with peeling frames
+round pendant lights hanging high up at the back | 0.8 | 0.05-0.2 | warm frosted glass globes
+exposed dark pipes along the ceiling overhead | 0.7 | 0.05-0.2 | thin black runs
+black steel window frames across the front | 0.65 | 0.05-0.2 | slim mullions between tall panes
+a wooden door at the back on the left | 0.5 | 0.05-0.2 | closed, with a brass handle
+a brass rail along the edge of the far counter | 0.4 | 0.05-0.2 | a thin polished bar
+white-painted tin ceiling panels overhead | 0.45 | 0.05-0.2 | shallow embossed squares
+recessed track lights high up along the ceiling | 0.55 | 0.05-0.2 | slim black spotlights
+a cast-iron radiator under the far window | 0.4 | 0.05-0.2 | narrow ribbed fins in cream enamel
+dark ceiling beams overhead across the room | 0.55 | 0.05-0.2 | rough timber at even spacing
+an arched brick opening on the left side wall | 0.5 | 0.05-0.2 | curved masonry with a deep sill
+brass wall lamps along the back wall | 0.45 | 0.05-0.2 | small curved arms with warm glow

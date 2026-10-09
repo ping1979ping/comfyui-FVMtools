@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-marker uncapped at the whiteboard | 0.65 | 0.05-0.15 | mid-diagram
-laptop turned to show the screen | 0.55 | 0.1-0.25 | glare on the display
-chair swiveled toward the window | 0.5 | 0.1-0.3 | listening posture
-paper sheet passed across the table | 0.5 | 0.05-0.15 | reaching arms
-water poured into a paper cup | 0.45 | 0.03-0.1 | pitcher tilted
-pen moving across a legal pad | 0.55 | 0.05-0.15 | pen mid-line
-sleeve pushed up checking a watch | 0.45 | 0.03-0.1 | subtle glance
-phone held under the table edge | 0.45 | 0.03-0.1 | thumb scrolling
-leaning back with hands laced | 0.5 | 0.1-0.3 | chair tilted
-donut balanced on a napkin | 0.4 | 0.03-0.1 | sugar dusting
-cord untangled for the projector | 0.4 | 0.05-0.15 | adapter hunt
+a plain mid-grey low-pile carpet | 1.0 | 0.1-0.4 | smooth and even, no pattern
+a plain blue-grey low-pile carpet | 0.85 | 0.1-0.4 | smooth and even, no pattern
+a plain charcoal low-pile carpet | 0.8 | 0.1-0.4 | smooth and even, no pattern
+a plain taupe low-pile carpet | 0.7 | 0.1-0.4 | smooth and even, no pattern
+a smooth light grey polished concrete floor | 0.55 | 0.1-0.4 | soft reflections of the ceiling lights
+a wood-look vinyl plank floor | 0.6 | 0.1-0.4 | pale oak tone with a low sheen
+a warm walnut-look plank floor | 0.55 | 0.1-0.4 | long boards with a satin finish
+a pale oak plank floor | 0.5 | 0.1-0.4 | long boards with a matte finish
+a plain navy low-pile carpet | 0.5 | 0.1-0.4 | smooth and even, no pattern
+a plain light grey broadloom carpet | 0.7 | 0.1-0.4 | short dense pile with a soft sheen
+a sealed grey concrete floor | 0.45 | 0.1-0.4 | fine saw-cut joints in a regular grid
+a plain warm grey low-pile carpet | 0.6 | 0.1-0.4 | smooth and even, no pattern

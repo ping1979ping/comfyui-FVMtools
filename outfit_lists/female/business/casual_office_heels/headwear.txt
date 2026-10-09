@@ -1,7 +1,10 @@
 # slot: headwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Hairstyles, not hats: fabric "-" keeps the palette colour out of the hair (Krea 2 rules, build-outfit-set Step 3c).
 
-claw clip | 0.25 | 0.4-0.7 | metal
-slim headband | 0.20 | 0.4-0.7 | cotton,satin
-beret | 0.15 | 0.4-0.7 | wool
-baseball cap | 0.10 | 0.3-0.55 | cotton
+soft side part with the hair tucked behind the ears, the face open toward the camera | 0.85 | 0.3-1.0 | -
+loose low ponytail at the nape, the face turned toward the camera | 0.75 | 0.3-0.9 | -
+small claw clip holding a relaxed half-up twist, the face turned toward the camera | 0.75 | 0.3-0.8 | -
+easy low bun at the nape, the face open toward the camera | 0.65 | 0.3-0.9 | -
+polished blowout with a soft side part, the face turned toward the camera | 0.65 | 0.4-1.0 | -
+simple half-up style with the hair tucked behind both ears, the face open toward the camera | 0.55 | 0.3-0.9 | -

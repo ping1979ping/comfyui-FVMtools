@@ -1,10 +1,13 @@
 # slot: footwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-oxford shoes | 0.85 | 0.8-1.0 | leather
-derby shoes | 0.70 | 0.7-0.9 | leather
-loafers | 0.65 | 0.6-0.8 | leather,suede
-monk strap shoes | 0.45 | 0.7-1.0 | leather
-chelsea boots | 0.50 | 0.6-0.8 | leather,suede
-brogues | 0.40 | 0.7-0.9 | leather
-cap-toe shoes | 0.35 | 0.8-1.0 | leather
+cap-toe oxfords | 0.80 | 0.75-1.0 | leather
+plain-toe oxfords | 0.55 | 0.7-1.0 | leather
+plain-toe derby shoes | 0.65 | 0.6-0.9 | leather
+penny loafers | 0.55 | 0.5-0.85 | leather
+dress loafers | 0.45 | 0.6-0.9 | leather,suede
+tassel loafers | 0.25 | 0.6-0.85 | leather,suede
+monk strap shoes | 0.40 | 0.65-1.0 | leather
+wingtip brogues | 0.40 | 0.65-0.95 | leather
+Chelsea boots | 0.45 | 0.5-0.85 | leather,suede
+chukka boots | 0.30 | 0.5-0.75 | suede,leather

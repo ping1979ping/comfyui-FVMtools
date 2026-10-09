@@ -1,15 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-sunlit arched cafe windows | 1.0 | 0.6-1.0 | bright street-facing tall glazing
-pastry display wall | 0.95 | 0.6-1.0 | glass cases of golden croissants
-white-tiled espresso counter | 0.9 | 0.6-1.0 | glossy subway tile front
-brass-framed chalkboard | 0.8 | 0.5-0.9 | pale chalk {doodled coffee cups and croissants|lettering reading "{MENU|CAFE|COFFEE}"} on slate
-sunny glass conservatory roof | 0.75 | 0.5-0.9 | airy iron-framed skylight
-sage-green plaster wall | 0.7 | 0.5-0.9 | soft matte painted surface
-open patio-door garden view | 0.65 | 0.4-0.8 | potted greenery in daylight
-exposed brick accent wall | 0.55 | 0.4-0.8 | warm weathered red masonry
-floor-to-ceiling bookshelf wall | 0.5 | 0.4-0.8 | cream-spined volumes and plants
-shelved coffee-bean jar wall | 0.5 | 0.3-0.6 | rows of glass canisters filled with coffee beans
-whitewashed wood-plank wall | 0.5 | 0.3-0.6 | pale horizontal boards
-vintage botanical print gallery | 0.4 | 0.3-0.6 | framed pressed-plant illustrations
+a row of tall arched windows across the far wall | 1.0 | 0.6-1.0 | bright street light beyond the glass, a brick building across the street, slim black iron mullions
+a white-tiled espresso counter along the far side of the room | 0.9 | 0.6-1.0 | glossy subway tile front, a chrome espresso machine on the pale stone top, glass pastry cases at the right end
+a glass pastry display case across the far right | 0.8 | 0.5-0.9 | golden croissants and tarts on tiered white trays, lit from above
+a sage green plaster wall across the whole far side | 0.7 | 0.6-1.0 | matte paint, a row of thin brass picture lights over framed botanical drawings
+an exposed brick wall at the far end of the room | 0.6 | 0.6-1.0 | warm weathered brick across the whole width of the image, open oak shelves with plain white cups
+a glass conservatory roof over the far side of the room | 0.55 | 0.5-0.9 | iron-framed skylight panes, soft daylight pouring down, potted palms along the back wall
+open oak shelves of ceramics and plants across the far side | 0.5 | 0.5-0.9 | cream stoneware and trailing greenery, a pale plaster wall behind them
+a whitewashed wood-plank wall across the far side | 0.5 | 0.6-1.0 | pale horizontal boards, a pair of brass wall lamps
+a street-facing glass storefront along the far left | 0.7 | 0.5-0.9 | floor-to-ceiling panes, the city street and a stone building beyond the glass
+glass jars of coffee beans on open shelves at the far center | 0.4 | 0.4-0.8 | rows of clear canisters with dark roasted beans, warm shelf lights
+a dusty blue velvet banquette along the far wall | 0.55 | 0.5-0.9 | empty, small marble tables in front of it
+a pale marble-topped back counter across the far end of the room | 0.6 | 0.6-1.0 | brass shelf brackets, open shelves of white cups and glass jars above it
+an open archway at the far right into the hotel lobby | 0.5 | 0.4-0.8 | a polished marble floor and a chandelier glow beyond it, empty
+a deep green glazed tile wall across the far side | 0.45 | 0.6-1.0 | glossy plain tiles, a brass shelf holding small plants

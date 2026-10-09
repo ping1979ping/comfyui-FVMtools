@@ -1,15 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-backlit liquor shelf wall | 1.0 | 0.6-1.0 | glowing amber bottles on glass shelves
-black marble bar front | 0.95 | 0.6-1.0 | glossy dark veined stone panel
-gilded mirror backbar | 0.9 | 0.6-1.0 | antiqued smoky reflective glass
-velvet-curtained lounge alcove | 0.8 | 0.5-0.9 | deep burgundy draped fabric
-leaded-glass window facade | 0.7 | 0.5-0.9 | night city lights beyond panes
-fluted walnut wall paneling | 0.75 | 0.5-0.9 | warm vertical carved wood
-art-deco brass wall panel | 0.65 | 0.4-0.8 | geometric polished metal inlay
-tufted leather banquette wall | 0.6 | 0.4-0.8 | deep green button-quilted seating
-dark teal lacquered wall | 0.55 | 0.4-0.8 | glossy deep painted surface
-grand arched lobby opening | 0.55 | 0.3-0.6 | soft lit marble archway
-wine-cellar glass display | 0.5 | 0.3-0.6 | backlit racked bottles
-framed vintage art gallery wall | 0.45 | 0.3-0.6 | dim spotlit gilt frames
+the backbar wall of lit glass shelves across the far side of the room | 1.0 | 0.6-1.0 | rows of dark glass bottles glowing amber, a smoked mirror strip behind them, spanning the whole width of the image
+the far wall of black veined marble behind the bar | 0.9 | 0.6-1.0 | polished slabs across the whole width of the image, thin brass strips between the slabs, warm spot lights above
+tall arched street windows along the far left wall | 0.85 | 0.5-0.9 | dusk-blue city light beyond the glass, dark drapes pulled back at each side, a stone building across the street
+a long banquette of deep green tufted leather along the far wall | 0.8 | 0.5-0.9 | empty, dark walnut paneling above it, brass picture lights over framed abstract paintings
+the far wall of fluted walnut paneling | 0.8 | 0.6-1.0 | vertical grooves across the whole width of the image, a row of brass wall sconces glowing at even intervals
+a velvet-curtained lounge alcove at the far right | 0.7 | 0.4-0.8 | deep burgundy drapes gathered at both sides, two empty armchairs and a low table in soft lamplight
+a dark teal lacquered wall across the far end of the room | 0.7 | 0.6-1.0 | glossy paint catching the lamplight, a row of gilt-framed abstract paintings spaced along it
+an art-deco brass wall panel at the far center | 0.55 | 0.4-0.8 | geometric polished inlay, flanked by two dark wood pilasters, warm uplights washing the metal
+a wide archway on the far right opening to the hotel lobby | 0.6 | 0.4-0.8 | an empty pale marble floor glowing beyond it, a chandelier glow in soft focus
+a glass wine cabinet at the far center of the wall | 0.55 | 0.4-0.8 | racked bottles in cool backlight, framed in dark wood and brass
+a gallery wall of framed abstract art along the far side | 0.5 | 0.5-0.9 | warm gilt frames lit by small picture lights, over a dark paneled lower wall
+a smoked glass back wall across the far end of the room | 0.6 | 0.6-1.0 | tall panels with soft lamp points glowing in them, thin brass trim between the panels
+a pale plaster wall above dark wainscoting at the far side | 0.5 | 0.6-1.0 | a row of brass swing-arm lamps along the whole width of the image, a leather-padded door at the far left
+a marble fireplace at the far left | 0.5 | 0.4-0.8 | a low fire glowing, two empty wingback chairs beside it, a gilt-framed abstract painting above

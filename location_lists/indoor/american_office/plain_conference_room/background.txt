@@ -1,14 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-long laminate conference table | 1.0 | 0.4-0.8 | wood-look top with cable box
-empty cleaned whiteboard | 0.85 | 0.3-0.6 | ghosted marker layers
-projection screen pulled halfway | 0.6 | 0.25-0.5 | wrinkled matte surface
-glass wall to the hallway | 0.6 | 0.3-0.6 | frosted privacy band
-wall-mounted flatscreen | 0.65 | 0.2-0.45 | cable dangling below
-credenza along the back wall | 0.5 | 0.2-0.45 | stacked paper trays
-window with vertical blinds | 0.55 | 0.2-0.5 | half-tilted slats
-framed trophy wall | 0.4 | 0.15-0.35 | dusty frames with glass trophies
-conference-phone in the table center | 0.6 | 0.05-0.15 | flat circular unit
-flip chart easel in the corner | 0.45 | 0.1-0.3 | curled blank pages with faint marker swirls
-clock above the door | 0.5 | 0.05-0.12 | five minutes fast
+the far wall of the conference room | 1.0 | 0.6-1.0 | a flat off-white wall across the whole width of the image, a clean blank whiteboard on the left, a dark wall-mounted display on the right
+the window wall of the conference room | 0.9 | 0.6-1.0 | tall windows with half-lowered grey roller shades across the whole width of the image, a view over a parking lot and low rooftops
+the glass wall to the hallway | 0.8 | 0.6-1.0 | floor-to-ceiling glass with a frosted band at eye level across the whole width of the image, a white door with a steel handle on the right
+the wall of pale grey acoustic panels at the far end | 0.7 | 0.6-1.0 | felt panels on the left half of the image, plain white paint on the right, recessed lights above
+the far wall painted muted navy | 0.7 | 0.6-1.0 | a flat navy accent wall across the whole width of the image, a pale wood credenza along its base on the left
+the wall at the head end of the room | 0.8 | 0.6-1.0 | a long plain white wall across the whole width of the image, a dark wall-mounted display high up in the middle
+the far wall lined with tall closed cabinets | 0.5 | 0.6-1.0 | white laminate doors from floor to ceiling across the whole width of the image, a narrow window on the right
+the sunlit window side seen at a slight angle | 0.6 | 0.6-1.0 | tall windows with white blinds on the right, a bright strip of daylight on the wall, a plain white wall on the left
+the far wall with a row of framed abstract prints | 0.6 | 0.6-1.0 | four large abstract prints in soft blue and grey in an even row across the whole width of the image, a pale wall behind them
+the long side wall running away to the right | 0.55 | 0.6-1.0 | plain white paint with a pale wood trim rail, tall windows near the far end
+the far wall of warm oak veneer panels | 0.55 | 0.6-1.0 | vertical oak boards across the whole width of the image, a dark display high up on the right, recessed lights above
+the corner where the window wall meets a glass wall | 0.5 | 0.6-1.0 | tall windows on the right, a frosted glass partition on the left, a white column in the corner
+the far wall painted soft grey-green | 0.6 | 0.6-1.0 | a flat sage-grey wall across the whole width of the image, a slim shelf high up on the left, a wide window on the right

@@ -1,14 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-cast-iron storefront column | 0.7 | 0.05-0.15 | painted green fluted post
-corbelled brick cornice | 0.65 | 0.05-0.2 | stepped decorative brick top
-gold-leaf {arched window lettering reading "{CAFE|COFFEE|BAKERY}"|scrollwork flourish on the glass} | 0.7 | 0.03-0.1 | arched gold-leaf design on glass
-wooden screen door with spring | 0.5 | 0.05-0.15 | slatted frame and brass handle
-tin awning rod and bracket | 0.55 | 0.02-0.08 | iron arm holding canvas
-transom window above doorway | 0.5 | 0.03-0.1 | small rectangular glass pane
-brass door bell plate | 0.4 | 0.01-0.05 | polished brass plate with a round button
-projecting hanging blade sign | 0.65 | 0.03-0.1 | painted wooden emblem of a steaming cup
-painted brick pilaster | 0.45 | 0.05-0.15 | cream vertical pier
-decorative downspout and scupper | 0.35 | 0.02-0.08 | black metal rainwater run
-stone window sill with flowers | 0.55 | 0.03-0.1 | carved ledge and pot
+a dark green canvas awning along the front of the cafe far behind | 0.7 | 0.05-0.2 | plain fabric with a straight edge
+arched brick window heads on the upper floors across the street | 0.55 | 0.05-0.2 | shallow brick arches over each window
+cast-iron storefront columns along the far side | 0.5 | 0.05-0.2 | slim dark green posts
+a corbelled brick cornice along the roofline across the street | 0.55 | 0.05-0.2 | stepped brick courses at the top
+white window trim on the upper floors far across the street | 0.5 | 0.05-0.2 | thin painted frames
+string lights draped in a loose row high up over the patio | 0.6 | 0.05-0.2 | small warm bulbs on thin wire
+a black iron lamppost far down the block | 0.45 | 0.05-0.2 | slender post with a round lamp
+a glass-paneled wooden door at the back of the patio | 0.5 | 0.05-0.2 | closed, with a brass handle
+stone window sills along the upper floors across the street | 0.45 | 0.05-0.2 | pale narrow ledges
+a transom window above the far doorway | 0.4 | 0.05-0.2 | small rectangular glass pane
+a brick chimney above the roofline on the left | 0.4 | 0.05-0.2 | stone-capped and dark with age

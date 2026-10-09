@@ -1,13 +1,15 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-matching set top | 0.90 | 0.6-0.9 | crepe,polyester
-coordinated knit shell | 0.75 | 0.5-0.8 | cashmere,wool
-clean-line blouse | 0.70 | 0.6-0.9 | silk,crepe
-boxy crop top | 0.55 | 0.5-0.8 | crepe,polyester
-fitted bodysuit | 0.55 | 0.5-0.8 | jersey,polyester
-sleeveless tank | 0.60 | 0.5-0.8 | crepe,polyester
-ribbed tank | 0.50 | 0.4-0.7 | cotton,jersey
-mock-neck shell | 0.65 | 0.6-0.9 | crepe,polyester
-fine-gauge pullover | 0.60 | 0.5-0.8 | cashmere,wool
-half-sleeve top | 0.55 | 0.5-0.8 | crepe,jersey
+clean-line blouse | 0.85 | 0.6-0.9 | silk,crepe
+sleeveless mock-neck shell | 0.70 | 0.55-0.9 | crepe,silk
+fine-gauge knit shell | 0.70 | 0.55-0.85 | cashmere,wool
+mock-neck top | 0.65 | 0.6-0.9 | crepe,silk
+boat-neck top | 0.55 | 0.55-0.85 | crepe,viscose
+cap-sleeve shell | 0.60 | 0.6-0.9 | crepe,silk
+elbow-sleeve top | 0.55 | 0.55-0.85 | crepe,jersey
+V-neck shell | 0.55 | 0.55-0.85 | crepe,silk
+fine-gauge pullover | 0.60 | 0.55-0.85 | cashmere,wool
+fine-gauge crewneck sweater | 0.50 | 0.55-0.85 | wool,cotton
+draped-neck blouse | 0.50 | 0.6-0.9 | crepe,silk
+short-sleeve knit top | 0.50 | 0.5-0.8 | jersey,cotton

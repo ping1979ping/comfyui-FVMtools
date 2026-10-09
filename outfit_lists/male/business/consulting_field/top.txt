@@ -1,14 +1,15 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-travel-friendly dress shirt | 0.85 | 0.7-0.9 | cotton,polyester
-non-iron button-down | 0.80 | 0.6-0.9 | cotton
-performance dress shirt | 0.70 | 0.6-0.9 | polyester
-crisp white shirt | 0.85 | 0.7-1.0 | cotton
-light-blue dress shirt | 0.75 | 0.7-0.9 | cotton
-lightweight oxford shirt | 0.65 | 0.6-0.8 | cotton
-striped business shirt | 0.60 | 0.7-0.9 | cotton
-fine-check shirt | 0.55 | 0.6-0.9 | cotton
-slim-fit dress shirt | 0.70 | 0.7-0.9 | cotton
-lightweight knit polo | 0.45 | 0.5-0.7 | cotton,jersey
-fine-gauge merino top | 0.50 | 0.6-0.8 | wool
+non-iron dress shirt in white | 0.85 | 0.6-0.95 | cotton poplin,cotton twill
+non-iron dress shirt in light blue | 0.85 | 0.6-0.95 | cotton poplin,cotton twill
+spread-collar dress shirt in white | 0.65 | 0.65-0.95 | cotton poplin
+point-collar dress shirt in light blue | 0.60 | 0.65-0.95 | cotton twill,cotton poplin
+button-down collar shirt in light blue | 0.65 | 0.5-0.85 | oxford cloth
+button-down collar shirt in white | 0.55 | 0.5-0.85 | oxford cloth
+open-collar sport shirt | 0.40 | 0.5-0.8 | cotton twill,linen blend
+soft-collar button-up shirt | 0.50 | 0.5-0.8 | cotton poplin,linen blend
+knit polo shirt | 0.35 | 0.5-0.75 | cotton pique,merino wool
+quarter-zip pullover | 0.40 | 0.5-0.8 | merino wool
+crewneck sweater | 0.40 | 0.5-0.85 | merino wool
+v-neck sweater | 0.40 | 0.55-0.9 | merino wool

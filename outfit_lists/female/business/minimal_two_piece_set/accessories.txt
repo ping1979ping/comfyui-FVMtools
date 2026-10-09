@@ -1,11 +1,14 @@
 # slot: accessories
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-slim watch | 0.75 | 0.5-0.9 | metal,leather
+slim wristwatch | 0.75 | 0.5-0.9 | metal
 small stud earrings | 0.75 | 0.5-0.9 | metal
-delicate chain necklace | 0.65 | 0.5-0.8 | metal
-single ring | 0.55 | 0.5-0.8 | metal
-thin huggies | 0.55 | 0.5-0.8 | metal
-narrow belt | 0.55 | 0.5-0.8 | leather
-sheer hosiery | 0.30 | 0.6-0.8 | nylon
-fine bangle | 0.40 | 0.5-0.8 | metal
+delicate chain necklace | 0.65 | 0.5-0.85 | metal
+simple ring | 0.55 | 0.5-0.85 | metal
+small huggie earrings | 0.55 | 0.5-0.85 | metal
+fine bangle | 0.40 | 0.5-0.85 | metal
+fine chain bracelet | 0.35 | 0.5-0.85 | metal
+small pendant necklace | 0.45 | 0.5-0.85 | metal
+slim belt | 0.55 | 0.5-0.85 | leather
+neck scarf | 0.25 | 0.55-0.85 | silk
+nude hosiery | 0.30 | 0.6-0.9 | -

@@ -1,13 +1,16 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-polished dark herringbone floor | 1.0 | 0.3-0.4 | glossy parquet with lamp reflections
-chilled coupe glass | 0.9 | 0.3-0.4 | frosted stem glass with garnish
-cocktail napkin and coaster | 0.8 | 0.3-0.4 | embossed paper square on marble
-bowl of spiced nuts | 0.75 | 0.2-0.4 | small silver dish of warm almonds
-flickering votive candle | 0.7 | 0.2-0.4 | amber glass holder with soft flame
-patterned oriental runner rug | 0.6 | 0.15-0.3 | worn crimson-and-navy woven pile
-brass bar rail edge | 0.55 | 0.15-0.3 | curved gleaming footrest bar
-marble bar-top reflection | 0.5 | 0.15-0.3 | glossy surface mirroring bottle glow
-black-and-white tile border | 0.45 | 0.05-0.15 | checkered stone floor inlay
-dropped cherry garnish pick | 0.35 | 0.05-0.15 | tiny silver skewer on counter
+a polished dark walnut plank floor | 1.0 | 0.1-0.4 | warm reflections of the bar lights
+a deep burgundy low-pile carpet | 0.9 | 0.1-0.4 | plain, softly worn along the walkway
+a polished black marble floor | 0.8 | 0.1-0.4 | soft veining, faint reflections of the lamps
+a wide-plank dark oak floor | 0.85 | 0.1-0.4 | rich brown, soft satin sheen
+a plain charcoal wool carpet | 0.7 | 0.1-0.4 | dense low pile, smooth and even
+a calm navy and burgundy wool rug over a dark wood floor | 0.55 | 0.1-0.4 | muted border, worn soft pile
+a polished gray limestone floor | 0.6 | 0.1-0.4 | honed and even, lamp glow in the surface
+an ebony-stained wood floor | 0.5 | 0.1-0.4 | dark with a soft sheen
+a plain forest green low-pile carpet | 0.6 | 0.1-0.4 | deep and uniform
+a dark honed slate stone floor | 0.45 | 0.1-0.4 | even and matte
+a plain mocha low-pile carpet | 0.55 | 0.1-0.4 | dense wool, smooth
+a worn dark oak plank aisle | 0.45 | 0.1-0.4 | subtle patina down the center
+a plain taupe wool carpet | 0.5 | 0.1-0.4 | smooth soft pile

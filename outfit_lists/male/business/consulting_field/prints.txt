@@ -1,8 +1,11 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-subtle micro-check | 0.45 | top,bottom | 0.6-0.9
-fine windowpane | 0.40 | top,outerwear | 0.6-0.9
-narrow stripes | 0.50 | top | 0.6-0.9
-solid charcoal | 0.55 | outerwear,bottom | 0.7-1.0
-solid navy | 0.55 | outerwear,bottom | 0.7-1.0
-minimal pinstripe | 0.40 | bottom,outerwear | 0.7-1.0
-traveler check pattern | 0.35 | outerwear | 0.6-0.9
+fine stripes | 0.45 | top | 0.6-0.95
+thin stripes | 0.35 | top | 0.6-0.95
+subtle micro-check | 0.40 | top | 0.6-0.95
+small gingham check | 0.30 | top | 0.5-0.85
+subtle windowpane check | 0.30 | top | 0.6-0.95
+tattersall check | 0.25 | top | 0.5-0.85
+narrow bengal stripes | 0.25 | top | 0.6-0.95
+tonal stripe | 0.25 | top | 0.6-0.95
+fine end-on-end weave | 0.20 | top | 0.6-0.95
+tonal texture | 0.15 | top | 0.5-0.9

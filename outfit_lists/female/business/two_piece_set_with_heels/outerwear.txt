@@ -1,13 +1,14 @@
 # slot: outerwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-matching cropped jacket | 0.90 | 0.6-0.9 | crepe,polyester,wool
-coordinated short jacket | 0.75 | 0.6-0.9 | crepe,polyester,wool
-matched blazer | 0.70 | 0.65-0.9 | wool,crepe
-cropped blazer | 0.60 | 0.6-0.85 | wool,polyester,crepe
-boucle jacket | 0.55 | 0.65-0.9 | wool,polyester
-short structured jacket | 0.50 | 0.6-0.9 | wool,polyester
-double-breasted blazer | 0.45 | 0.7-0.9 | wool,polyester
-belted blazer | 0.40 | 0.65-0.9 | wool,polyester
-short trench coat | 0.30 | 0.6-0.85 | cotton,polyester
-classic blazer | 0.45 | 0.6-0.9 | wool,polyester
+nipped-waist single-breasted blazer | 0.90 | 0.6-0.9 | wool blend,crepe
+tailored suit jacket | 0.75 | 0.65-0.9 | wool,wool blend
+collarless jacket | 0.65 | 0.6-0.9 | crepe,wool blend
+boucle jacket | 0.55 | 0.65-0.9 | tweed,wool
+one-button blazer | 0.55 | 0.6-0.9 | crepe,wool blend
+double-breasted blazer | 0.45 | 0.7-0.9 | wool,wool blend
+longline blazer | 0.45 | 0.65-0.9 | wool blend,crepe
+belted blazer | 0.40 | 0.65-0.9 | wool blend,crepe
+tailored waistcoat | 0.30 | 0.7-0.9 | wool,wool blend
+belted trench coat | 0.30 | 0.6-0.85 | cotton
+tailored topcoat | 0.25 | 0.65-0.9 | wool,cashmere

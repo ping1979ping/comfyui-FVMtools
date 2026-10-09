@@ -1,14 +1,16 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-sticky notes on the monitor edge | 0.85 | 0.03-0.1 | curled yellow squares
-coffee mug with a colored band | 0.75 | 0.03-0.1 | ring-stained ceramic
-lanyard and card holder on the desk | 0.7 | 0.02-0.08 | blank white badge with a photo square
-takeout container in the bin | 0.5 | 0.03-0.1 | grease-marked cardboard
-family photo in a cheap frame | 0.55 | 0.02-0.08 | glossy print
-stress ball by the keyboard | 0.45 | 0.02-0.06 | squeezed foam
-tangle of charging cables | 0.6 | 0.03-0.1 | knotted white and black
-half-eaten bag of pretzels | 0.5 | 0.02-0.08 | rolled-down bag
-desk blotter pad with doodled margins | 0.45 | 0.02-0.08 | worn green paper
-hand sanitizer pump bottle | 0.5 | 0.02-0.06 | crusted nozzle
-birthday card standing open | 0.35 | 0.02-0.08 | colorful balloon illustration
+small white desk lamps on distant desks | 0.6 | 0.02-0.06 | slim arms and round heads
+tiny potted succulents on desk corners far down the row | 0.55 | 0.02-0.06 | thick pale green leaves
+small black headphones hanging on the edge of a distant partition | 0.45 | 0.02-0.06 | matte black ear cups
+small grey desk organizers on far desks | 0.45 | 0.02-0.06 | plain molded plastic
+compact black desk phones on desks far behind | 0.45 | 0.02-0.06 | flat grey keypads
+small white ceramic mugs on desks far down the aisle | 0.55 | 0.02-0.06 | plain glaze
+slim steel water bottles on far desks | 0.5 | 0.02-0.06 | brushed finish with a matte lid
+small closed laptops with silver lids on distant desks | 0.5 | 0.02-0.06 | brushed silver finish
+tiny pen cups on desks far down the room | 0.4 | 0.02-0.06 | matte black metal
+small green plants on top of a distant cabinet | 0.45 | 0.02-0.06 | trailing vines over the edge
+a small stack of plain white paper on a far printer tray | 0.4 | 0.02-0.06 | neat edges
+compact desk fans on far desks | 0.35 | 0.02-0.06 | white plastic casing
+small stainless thermoses on distant desks | 0.4 | 0.02-0.06 | brushed steel with black lids

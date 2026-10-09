@@ -1,6 +1,9 @@
 # slot: headwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Hairstyles, not hats: fabric "-" keeps the palette colour out of the hair (Krea 2 rules, build-outfit-set Step 3c).
 
-classic fedora | 0.08 | 0.7-1.0 | felt
-business homburg | 0.06 | 0.8-1.0 | felt
-formal trilby | 0.05 | 0.7-0.9 | felt
+neat side part with a modern, clean finish, the face turned toward the camera | 0.90 | 0.5-1.0 | -
+textured natural style swept to one side, the face open toward the camera | 0.75 | 0.5-1.0 | -
+hair combed back with a soft finish, the face turned toward the camera | 0.70 | 0.5-1.0 | -
+soft side-swept style with a tidy hairline, the face open toward the camera | 0.75 | 0.5-1.0 | -
+neatly groomed natural texture with a clean part, the face open toward the camera | 0.65 | 0.5-1.0 | -

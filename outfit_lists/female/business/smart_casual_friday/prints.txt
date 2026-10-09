@@ -1,8 +1,11 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-horizontal stripes | 0.30 | top | 0.4-0.7
-gingham check | 0.25 | top | 0.4-0.7
-small floral | 0.25 | top,bottom | 0.4-0.7
-polka dots | 0.20 | top | 0.4-0.7
-subtle plaid | 0.30 | outerwear,bottom | 0.4-0.7
-chambray solid | 0.30 | top | 0.4-0.7
-mini geometric | 0.20 | top | 0.4-0.7
+thin horizontal stripes | 0.28 | top | 0.35-0.7
+fine vertical stripes | 0.18 | top | 0.4-0.75
+small gingham check | 0.22 | top | 0.35-0.7
+tiny polka dots | 0.18 | top | 0.4-0.75
+small floral pattern | 0.18 | top | 0.35-0.7
+small geometric pattern | 0.15 | top | 0.4-0.75
+tonal jacquard pattern | 0.12 | top | 0.5-0.8
+subtle check | 0.25 | outerwear | 0.4-0.75
+subtle windowpane check | 0.20 | outerwear | 0.45-0.8
+tonal herringbone weave | 0.15 | outerwear | 0.45-0.8

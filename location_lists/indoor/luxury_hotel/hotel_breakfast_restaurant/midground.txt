@@ -1,15 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-rows of set breakfast tables | 1.0 | 0.3-0.5 | white-clothed four-seat tables
-chafing dish buffet trays | 0.95 | 0.3-0.5 | steel warmers of eggs and bacon
-upholstered dining chairs | 0.85 | 0.3-0.5 | cream-cushioned wood seats
-cereal and granola station | 0.7 | 0.2-0.4 | glass dispensers and bowls
-bread and cheese carving board | 0.6 | 0.2-0.4 | wooden slab with cured meats
-round family table | 0.65 | 0.2-0.4 | large circular linen-draped table
-waiter coffee trolley | 0.6 | 0.15-0.35 | rolling silver pot service cart
-juice dispenser row | 0.55 | 0.15-0.35 | glass jars of orange and apple
-fruit pyramid display | 0.5 | 0.15-0.35 | stacked bright seasonal fruit
-potted orchid centerpiece | 0.5 | 0.15-0.3 | white blooms on buffet
-high-chair beside family table | 0.35 | 0.15-0.3 | wooden child seat
-smoked salmon platter | 0.5 | 0.15-0.3 | ice-bedded pink slices with dill
+rows of empty white-linen tables set for breakfast a few meters back | 1.0 | 0.3-0.5 | cream upholstered chairs pushed in, folded napkins at each place
+a white-linen buffet island a few meters back at the center | 0.85 | 0.3-0.5 | silver warming trays with closed lids, a tiered fruit stand in the middle
+a round table set for four a few meters back on the left | 0.7 | 0.2-0.4 | white linen to the floor, chairs pushed in, a low flower arrangement
+a cereal and granola station a few meters back on the right | 0.6 | 0.2-0.4 | glass dispensers and white bowls on a marble top
+a long upholstered banquette along the left wall a few meters back | 0.7 | 0.3-0.5 | cream quilted seating, empty, small tables set for two in front of it
+a pyramid of fresh fruit on a draped serving counter a few meters back | 0.5 | 0.2-0.4 | oranges, berries and melon, white cloth to the floor
+a silver coffee and tea cart a few meters back on the right | 0.5 | 0.15-0.35 | silver pots on a white-draped top, parked and empty
+tall potted orchids on a long sideboard a few meters back | 0.5 | 0.15-0.3 | white blooms, dark wood top
+a bread and cheese counter a few meters back on the left | 0.5 | 0.2-0.4 | wooden boards of rolls and cheese on a white cloth
+empty four-top tables a few meters back beside the windows | 0.8 | 0.3-0.5 | pale yellow linen, chairs pushed in, daylight across the tops
+a row of juice dispensers on a marble counter a few meters back on the right | 0.55 | 0.2-0.4 | glass jars of orange and apple juice on ice
+a dark wood sideboard a few meters back on the left | 0.45 | 0.15-0.3 | stacked white plates and a silver coffee pot on top
+a square column wrapped in cream fabric a few meters back on the right | 0.45 | 0.15-0.3 | soft folds, a small pendant lamp beside it

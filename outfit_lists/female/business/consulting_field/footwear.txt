@@ -1,12 +1,13 @@
 # slot: footwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-comfortable loafers | 0.80 | 0.5-0.8 | leather
-block-heel pumps | 0.75 | 0.6-0.9 | leather,suede
-travel ballet flats | 0.65 | 0.5-0.8 | leather,suede
-ankle boots | 0.65 | 0.5-0.8 | leather,suede
-low-heel pumps | 0.65 | 0.6-0.9 | leather,suede
-pointed-toe flats | 0.55 | 0.5-0.8 | leather,suede
-classic pumps | 0.65 | 0.6-0.9 | leather,suede
-slip-on loafers | 0.55 | 0.5-0.8 | leather,suede
-walkable mules | 0.45 | 0.5-0.7 | leather,suede
+cushioned loafers with a flat sole | 0.80 | 0.5-0.85 | leather
+pumps with a two-inch block heel | 0.75 | 0.55-1.0 | leather,suede
+ballet flats with a flat sole | 0.60 | 0.5-0.8 | leather,suede
+ankle boots with a two-inch block heel | 0.60 | 0.5-0.85 | leather,suede
+pumps with a one-and-a-half-inch heel | 0.60 | 0.55-1.0 | leather,suede
+pointed-toe flats with a flat sole | 0.55 | 0.5-0.85 | leather,suede
+slip-on loafers with a low stacked heel | 0.55 | 0.5-0.85 | leather,suede
+slingback pumps with a two-inch block heel | 0.50 | 0.55-1.0 | leather,suede
+closed-back mules with a two-inch block heel | 0.40 | 0.5-0.8 | leather,suede
+oxford shoes with a flat sole | 0.40 | 0.5-0.85 | leather

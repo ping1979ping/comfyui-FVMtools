@@ -43,18 +43,20 @@ def test_none_fabric_never_printed_outside_headwear():
 
 
 def test_outfit_block_hairstyle_has_no_colour_in_text_or_json():
+    """Any hairstyle draw: the sentence is the bare entry, the JSON has no colour."""
     block = FVM_JB_OutfitBlock()
-    seen = False
-    for seed in range(60):
-        j, txt, _ = block.build("female/business/power_meeting", seed, "general", 0.9, 0.5,
+    seen = 0
+    for seed in range(40):
+        j, txt, _ = block.build("female/business/power_meeting", seed, "business_executive", 0.9, 0.5,
                                 True, True, True, True, False, False, False, 0.3, "off",
                                 color_mood="auto", output_format="sentences")
         hw = json.loads(j)["outfit"]["garments"].get("headwear")
-        if hw and hw["name"] == "polished low chignon":
-            seen = True
-            assert "The headwear is polished low chignon." in txt
-            assert hw["color_resolved"] is None and hw["fabric"] is None
-    assert seen, "power_meeting never drew its chignon in 60 seeds"
+        if hw and hw["fabric"] is None:
+            seen += 1
+            assert f"The headwear is {hw['name']}." in txt, txt
+            assert hw["color_resolved"] is None and hw["color_role"] is None
+            assert " none " not in f" {txt} "
+    assert seen >= 10, f"only {seen} hairstyle draws in 40 seeds"
 
 
 def test_outerwear_over_a_dress_reads_as_outerwear():

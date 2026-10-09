@@ -1,13 +1,16 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-crisp white tablecloth | 1.0 | 0.3-0.4 | ironed linen with soft folds
-plated eggs benedict | 0.85 | 0.3-0.4 | poached eggs with hollandaise on muffin
-stack of fluffy pancakes | 0.8 | 0.3-0.4 | maple syrup dripping over berries
-basket of warm croissants | 0.75 | 0.2-0.4 | napkin-lined woven bread basket
-fresh fruit plate | 0.75 | 0.2-0.4 | sliced mango and kiwi arrangement
-carpeted dining-room floor | 0.6 | 0.15-0.3 | muted patterned wool broadloom
-sun-dappled tablecloth patch | 0.5 | 0.15-0.3 | window light across linen
-glass of fresh orange juice | 0.55 | 0.15-0.3 | pulpy bright citrus
-parquet floor with chair shadows | 0.5 | 0.05-0.15 | warm wood with soft reflections
-folded cloth napkin and silver | 0.45 | 0.05-0.15 | cutlery on rolled linen
+a wide-plank honey oak floor | 1.0 | 0.1-0.4 | warm satin finish, soft window reflections
+a plain cream low-pile carpet | 0.9 | 0.1-0.4 | smooth and even, faint vacuum lines
+a polished beige limestone floor | 0.8 | 0.1-0.4 | honed, soft reflections of the window light
+a plain warm gray wool carpet | 0.75 | 0.1-0.4 | dense low pile
+a pale oak plank floor | 0.7 | 0.1-0.4 | light grain, matte finish
+a polished cream marble floor | 0.6 | 0.1-0.4 | soft veining, faint daylight reflections
+a plain sage green low-pile carpet | 0.55 | 0.1-0.4 | muted and even
+a calm ivory wool rug over a pale wood floor | 0.45 | 0.1-0.4 | quiet border, soft pile
+a plain taupe broadloom carpet | 0.6 | 0.1-0.4 | dense and uniform
+a smooth pale gray stone floor | 0.5 | 0.1-0.4 | honed and even
+a warm walnut plank floor | 0.5 | 0.1-0.4 | soft sheen
+a plain sand-colored wool carpet | 0.55 | 0.1-0.4 | soft low pile, daylight across it
+a large-format pale stone-look floor | 0.45 | 0.1-0.4 | matte and even, soft window reflections

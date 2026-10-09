@@ -1,15 +1,14 @@
 # slot: accessories
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-statement eyeglasses | 0.85 | 0.4-1.0 | metal
-designer wristwatch | 0.75 | 0.5-1.0 | metal,leather
-artistic scarf | 0.55 | 0.4-0.8 | silk,wool
-tied neckerchief | 0.45 | 0.5-0.8 | silk
-art-pin lapel piece | 0.50 | 0.5-0.8 | metal
-oversized signet ring | 0.40 | 0.5-0.8 | metal
-designer wristband | 0.35 | 0.4-0.7 | leather
-designer belt | 0.70 | 0.5-0.9 | leather
-unique pocket square | 0.55 | 0.6-0.9 | silk
-beaded bracelet | 0.30 | 0.4-0.6 | metal
-sunglasses | 0.55 | 0.4-0.8 | metal
-chain necklace | 0.30 | 0.4-0.7 | metal
+thin-framed eyeglasses | 0.40 | 0.4-0.85 | metal
+slim wristwatch | 0.70 | 0.45-0.85 | metal
+wristwatch on a strap | 0.60 | 0.4-0.85 | leather
+dress belt | 0.60 | 0.5-0.85 | leather
+casual belt | 0.45 | 0.4-0.7 | leather
+woven belt | 0.25 | 0.4-0.7 | leather
+soft scarf | 0.35 | 0.4-0.8 | wool,cashmere
+folded pocket square | 0.35 | 0.55-0.85 | silk
+knit tie | 0.15 | 0.55-0.85 | silk,wool
+slim bracelet | 0.20 | 0.4-0.7 | metal
+simple band ring | 0.12 | 0.4-0.8 | metal

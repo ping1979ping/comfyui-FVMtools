@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright morning coffee rush | 1.0 | - | -
-soft overcast mid-morning calm | 0.85 | - | -
-sunny early-afternoon lull | 0.8 | - | -
-golden late-afternoon window glow | 0.8 | - | -
-quiet early-opening hush | 0.6 | - | -
-warm evening open-mic lighting | 0.55 | - | -
-gray drizzly afternoon dimness | 0.5 | - | -
-Saturday brunch bustle | 0.55 | - | -
-dusk streetlight glow outside | 0.45 | - | -
-closing-time lamp-lit stillness | 0.4 | - | -
+bright mid-morning light through the front window | 1.0 | - | -
+soft overcast late-morning light | 0.9 | - | -
+warm early-afternoon sunlight on the floor | 0.85 | - | -
+golden late-afternoon light through the front glass | 0.8 | - | -
+gentle early morning light, pendant lights on | 0.65 | - | -
+bright midday light with deep soft shadows | 0.7 | - | -
+soft grey afternoon light with the pendants glowing | 0.6 | - | -
+early evening dusk with warm pendant light | 0.55 | - | -
+low winter-morning sun along the brick wall | 0.45 | - | -
+blue hour outside with warm light inside | 0.45 | - | -
+quiet late-evening glow from the pendant lights | 0.4 | - | -

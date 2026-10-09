@@ -1,13 +1,13 @@
 # slot: footwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-clean white sneakers | 0.80 | 0.3-0.6 | leather
-casual loafers | 0.70 | 0.4-0.7 | leather,suede
-soft chukka boots | 0.55 | 0.4-0.7 | suede
-penny loafers | 0.60 | 0.5-0.7 | leather
-boat shoes | 0.50 | 0.3-0.5 | leather
-desert boots | 0.55 | 0.4-0.6 | suede
-casual derby shoes | 0.55 | 0.5-0.8 | leather
-slip-on plimsolls | 0.45 | 0.3-0.5 | canvas
-chelsea boots | 0.50 | 0.5-0.8 | leather,suede
-oxford-style sneakers | 0.40 | 0.4-0.6 | leather
+penny loafers | 0.70 | 0.45-0.8 | leather
+loafers | 0.65 | 0.4-0.75 | suede,leather
+chukka boots | 0.60 | 0.4-0.75 | suede
+desert boots | 0.45 | 0.35-0.65 | suede
+plain-toe derby shoes | 0.55 | 0.5-0.8 | leather
+wingtip derby shoes | 0.35 | 0.5-0.8 | leather
+Chelsea boots | 0.55 | 0.45-0.8 | leather,suede
+tassel loafers | 0.30 | 0.5-0.8 | leather,suede
+boat shoes | 0.20 | 0.35-0.55 | leather
+lace-up ankle boots | 0.35 | 0.4-0.7 | leather,suede

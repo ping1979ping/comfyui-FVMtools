@@ -1,14 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-carpet with a dark spill patch | 0.6 | 0.1-0.3 | blotted stain
-drop ceiling with a projector mount | 0.6 | 0.1-0.3 | empty bracket
-light switch bank by the door | 0.5 | 0.02-0.08 | taped marks
-floor box with flip-up lid | 0.5 | 0.03-0.1 | tangled cords inside
-scuff marks from chair backs | 0.5 | 0.05-0.2 | rubbed wall paint
-air vent whistling faintly | 0.4 | 0.03-0.1 | bent louver
-door stop wedge on the floor | 0.4 | 0.02-0.06 | worn rubber
-window sill with a dead plant | 0.35 | 0.05-0.15 | crisp brown leaves
-cable cover strip along the floor | 0.45 | 0.05-0.15 | yellowed plastic ramp
-thermostat argued over daily | 0.4 | 0.02-0.08 | fingerprinted cover
-clear wall pocket on the door | 0.35 | 0.02-0.08 | empty plastic wall pocket
+recessed round lights in the ceiling overhead | 0.8 | 0.05-0.2 | even rows of small white discs
+white drop-ceiling panels high up across the room | 0.7 | 0.05-0.2 | plain and evenly spaced
+a white door with a steel handle at the far right | 0.6 | 0.05-0.2 | closed, set in the glass wall
+a slim black steel frame around the glass wall on the left | 0.45 | 0.05-0.2 | thin and straight
+a ceiling vent grille high up near the back | 0.45 | 0.05-0.2 | plain white louvers
+white baseboard along the far wall | 0.5 | 0.05-0.2 | a narrow clean strip
+a pale wood chair rail along the side wall | 0.4 | 0.05-0.2 | a thin horizontal band
+thin aluminum window frames on the right | 0.6 | 0.05-0.2 | slim mullions between tall panes
+a frosted film band across the glass wall at the far left | 0.5 | 0.05-0.2 | a soft white strip at eye level
+grey roller shades half lowered at the far windows | 0.55 | 0.05-0.2 | plain fabric with a straight bottom edge
+a narrow shadow gap where the wall meets the ceiling far behind | 0.4 | 0.05-0.2 | a thin dark line
+a white column in the far corner | 0.4 | 0.05-0.2 | smooth and plain

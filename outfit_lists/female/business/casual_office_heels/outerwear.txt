@@ -1,13 +1,14 @@
 # slot: outerwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-soft blazer | 0.85 | 0.45-0.75 | cotton,polyester,wool
-cardigan | 0.75 | 0.4-0.7 | cashmere,wool,cotton
-cropped jacket | 0.65 | 0.4-0.7 | cotton,polyester
-oversized blazer | 0.60 | 0.45-0.75 | wool,polyester
-chambray jacket | 0.50 | 0.35-0.6 | cotton
-relaxed summer blazer | 0.50 | 0.4-0.7 | linen
-short trench coat | 0.45 | 0.45-0.7 | cotton,polyester
-boyfriend blazer | 0.50 | 0.45-0.75 | wool,polyester
+soft blazer | 0.80 | 0.45-0.75 | cotton,wool blend
+open-front cardigan | 0.70 | 0.4-0.7 | cashmere,wool,cotton
+relaxed blazer | 0.60 | 0.45-0.75 | wool blend,linen
+cropped jacket | 0.55 | 0.4-0.7 | cotton,wool blend
+fine-knit cardigan | 0.55 | 0.4-0.7 | cashmere,wool
 unstructured blazer | 0.45 | 0.4-0.7 | linen,cotton
-fine cardigan | 0.55 | 0.4-0.7 | cashmere,wool
+lightweight summer blazer | 0.45 | 0.4-0.7 | linen
+chambray jacket | 0.40 | 0.35-0.6 | cotton
+longline cardigan | 0.40 | 0.4-0.7 | wool,cotton
+single-breasted trench coat | 0.40 | 0.45-0.7 | cotton,polyester
+collarless jacket | 0.35 | 0.45-0.75 | crepe,cotton

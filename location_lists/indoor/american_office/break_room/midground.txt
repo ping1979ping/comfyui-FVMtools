@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-round table with mismatched chairs | 1.0 | 0.3-0.6 | wiped laminate top
-second table pushed to the wall | 0.6 | 0.2-0.5 | folding legs
-coffee pot half full on the burner | 0.8 | 0.05-0.2 | scorched glass carafe
-paper towel roll on the counter | 0.65 | 0.05-0.15 | torn edge hanging
-trash can with a swinging lid | 0.6 | 0.1-0.25 | overfull liner
-box of donuts left open | 0.5 | 0.05-0.15 | one left in the corner
-chair pulled out at an angle | 0.6 | 0.15-0.35 | worn vinyl seat
-lost-and-found box by the door | 0.4 | 0.1-0.25 | tangled umbrellas
-stack of paper cups by the machine | 0.55 | 0.03-0.1 | sleeve half gone
-dish tub with abandoned mugs | 0.5 | 0.05-0.15 | soaking handles
-ice machine growling in the corner | 0.4 | 0.1-0.3 | scuffed steel bin
+two empty rectangular lunch tables a few meters back | 1.0 | 0.2-0.5 | pale laminate tops with grey molded chairs pushed in on both sides
+a round table for four a few meters back on the left | 0.9 | 0.2-0.5 | white laminate top, four empty molded chairs pushed in around it
+a high counter along the window a few meters back on the right | 0.75 | 0.2-0.5 | pale wood top with a row of empty black stools tucked under it
+a stainless refrigerator a few meters back on the right | 0.65 | 0.2-0.5 | tall and plain, with a smooth brushed front
+a white water dispenser a few meters back on the left | 0.5 | 0.2-0.5 | slim, standing against the wall beside a pale cabinet
+a booth bench along the wall a few meters back on the right | 0.6 | 0.2-0.5 | empty, with a plain grey cushion and a narrow table in front of it
+a lounge corner a few meters back on the left | 0.55 | 0.2-0.5 | two empty grey armchairs with a low round table between them
+a kitchen island a few meters back in the middle | 0.6 | 0.2-0.5 | pale quartz top, empty backless stools tucked under one side
+a tall pantry cabinet a few meters back on the right | 0.5 | 0.2-0.5 | closed white doors with brushed steel handles
+a microwave station on a side counter a few meters back | 0.6 | 0.2-0.5 | a microwave and a toaster oven on a plain laminate top, closed cabinet doors below
+a high-top table near the windows a few meters back | 0.55 | 0.2-0.5 | round, with two empty stools tucked in beside it
+a long bench table a few meters back | 0.5 | 0.2-0.5 | empty, with a matching bench on each side and a pale wood top
+a stainless sink and counter a few meters back on the left | 0.55 | 0.2-0.5 | empty and wiped clean, white cabinets below
+a grey recycling station set into the wall a few meters back | 0.4 | 0.2-0.5 | two closed bins side by side with flat lids

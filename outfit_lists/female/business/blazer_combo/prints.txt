@@ -1,8 +1,9 @@
 # format: print_name | probability | compatible_slots | formality_min-formality_max
-subtle check | 0.30 | top,outerwear | 0.5-0.8
-windowpane check | 0.25 | outerwear,bottom | 0.5-0.8
-plaid pattern | 0.30 | outerwear,bottom | 0.5-0.8
-fine pinstripe | 0.25 | bottom,outerwear | 0.6-0.9
-horizontal stripes | 0.30 | top | 0.4-0.7
-houndstooth | 0.25 | outerwear,bottom | 0.6-0.9
-polka dots | 0.20 | top | 0.5-0.8
+fine pinstripes | 0.28 | bottom,outerwear | 0.6-0.9
+subtle windowpane check | 0.22 | bottom,outerwear | 0.55-0.9
+subtle glen plaid | 0.20 | bottom,outerwear | 0.6-0.9
+small houndstooth check | 0.18 | bottom,outerwear | 0.6-0.9
+tonal herringbone weave | 0.20 | bottom,outerwear | 0.6-0.9
+subtle check | 0.20 | top,outerwear | 0.5-0.85
+fine horizontal stripes | 0.25 | top | 0.4-0.75
+tiny pin dots | 0.15 | top | 0.5-0.85

@@ -1,17 +1,17 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-crystal vase floral stems | 0.85 | 0.05-0.15 | tall glass tropical arrangement
-brass luggage-cart wheel detail | 0.6 | 0.02-0.08 | polished small caster
-decorative throw-pillow set | 0.6 | 0.05-0.1 | patterned silk cushions
-brass concierge desk-bell | 0.65 | 0.02-0.05 | small polished call bell
-porcelain orchid arrangement | 0.6 | 0.05-0.1 | delicate potted bloom accent
-glass water-carafe set | 0.55 | 0.02-0.08 | chilled clear pitcher pair
-leather-strap luggage tag | 0.55 | 0.02-0.05 | tan buckled plain leather tab
-gilded picture-frame pair | 0.5 | 0.05-0.1 | ornate wall-mounted art
-scented candle glass-jar | 0.5 | 0.02-0.05 | small flickering votive
-brass luggage-trolley strap | 0.5 | 0.02-0.05 | leather buckled tie
-folded resort brochure | 0.5 | 0.02-0.05 | glossy pamphlet with a photo cover of palm trees and a pool
-folded fresh-towel stack | 0.45 | 0.02-0.08 | rolled white spa linen
-tasseled velvet key-fob | 0.4 | 0.02-0.05 | small dangling room key
-polished bell-desk plaque | 0.4 | 0.02-0.05 | small brass plate {engraved with a bell|reading "{CONCIERGE|BELL DESK}"}
+a small glass vase of white orchids on a distant stone console | 0.8 | 0.02-0.06 | clear glass
+small brass table lamps on a distant side table | 0.7 | 0.02-0.06 | pleated cream shades
+a small ceramic bowl on a distant coffee table | 0.5 | 0.02-0.05 | matte white
+small silk throw pillows on a distant empty sofa | 0.55 | 0.02-0.06 | muted gold and gray
+a small glass water carafe on a far side table | 0.45 | 0.02-0.05 | clear glass
+a small brass desk bell at the far end of the reception desk | 0.5 | 0.01-0.04 | polished
+small gilded frames holding abstract pictures on a distant console | 0.4 | 0.02-0.05 | warm tones
+a small white pillar candle in glass on a far coffee table | 0.5 | 0.02-0.05 | cream wax
+a small crystal bowl on a far side table | 0.4 | 0.02-0.05 | faceted glass
+a small bronze sculpture on a distant stone plinth | 0.45 | 0.02-0.06 | dark metal
+a small brass umbrella stand by the far entrance doors | 0.4 | 0.02-0.06 | polished
+a small velvet cushion on a distant armchair | 0.45 | 0.02-0.05 | deep blue
+a slim brass floor lamp in the far corner of the lounge | 0.5 | 0.02-0.06 | cream shade
+small clear glass tumblers on a tray on a distant side table | 0.4 | 0.02-0.05 | clear glass

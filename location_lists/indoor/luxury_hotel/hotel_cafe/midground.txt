@@ -1,15 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-small round marble cafe tables | 1.0 | 0.3-0.5 | white stone tops on iron bases
-bentwood cafe chair pairs | 0.95 | 0.3-0.5 | curved dark-wood seats
-chrome espresso machine | 0.85 | 0.3-0.5 | gleaming steaming barista station
-pastry trolley | 0.75 | 0.2-0.4 | tiered cart of tarts and macarons
-cushioned window-seat bench | 0.7 | 0.2-0.4 | striped upholstered nook seating
-tall potted olive tree | 0.6 | 0.2-0.4 | silvery leaves in terracotta tub
-communal reading table | 0.55 | 0.15-0.35 | long oak surface with lamps
-barista pour-over bar | 0.6 | 0.15-0.35 | glass kettles and ceramic drippers
-rattan lounge chair pair | 0.55 | 0.15-0.35 | woven armchairs with linen cushions
-wooden umbrella stand | 0.45 | 0.15-0.3 | slim holder with rolled umbrellas
-sidewalk-style bistro table set | 0.5 | 0.15-0.3 | slim round table with two chairs
-hanging fern planter row | 0.4 | 0.15-0.3 | trailing green baskets overhead
+small round marble cafe tables a few meters back on the left | 1.0 | 0.3-0.5 | iron bases, bentwood chairs pushed in, all empty
+a chrome espresso machine on the counter a few meters back on the right | 0.8 | 0.3-0.5 | gleaming steel, a row of white cups beside it
+a glass pastry case on a marble counter a few meters back on the right | 0.7 | 0.2-0.4 | tarts and croissants on tiered white trays
+a cushioned window bench a few meters back along the left windows | 0.7 | 0.2-0.4 | striped upholstery, empty, small tables in front of it
+a long oak communal table a few meters back at the center | 0.55 | 0.2-0.4 | empty, stools pushed in along both sides, two hanging lamps above
+a tall potted olive tree in a terracotta tub a few meters back on the left | 0.5 | 0.15-0.35 | silvery leaves
+two rattan lounge chairs by a low table a few meters back on the right | 0.55 | 0.2-0.4 | linen cushions, both empty
+a pastry cart with tiered trays a few meters back on the left | 0.5 | 0.15-0.35 | tarts and macarons on white china
+bistro table sets by the far window a few meters back | 0.6 | 0.2-0.4 | slim round tables with two chairs each, all empty
+a pour-over coffee bar a few meters back on the right | 0.5 | 0.15-0.35 | glass kettles and ceramic drippers on a pale wood top
+a low velvet sofa a few meters back along the right wall | 0.5 | 0.2-0.4 | dusty blue, empty, a round brass coffee table in front of it
+a row of high stools at a marble window ledge a few meters back on the left | 0.45 | 0.15-0.35 | all empty, daylight on the stone
+a tall wooden shelf unit of ceramic cups and jars a few meters back on the left | 0.4 | 0.15-0.3 | white and gray stoneware

@@ -1,13 +1,14 @@
 # slot: footwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-classic pumps | 0.80 | 0.6-0.9 | leather,suede
-loafers | 0.75 | 0.5-0.8 | leather,suede
-ankle boots | 0.55 | 0.5-0.8 | leather,suede
-pointed-toe flats | 0.50 | 0.5-0.8 | leather,suede
-mules | 0.45 | 0.5-0.8 | leather,suede
-kitten heels | 0.55 | 0.6-0.9 | leather,suede
-slingback flats | 0.45 | 0.5-0.8 | leather,suede
-block-heel booties | 0.45 | 0.5-0.8 | leather,suede
-ballet flats | 0.40 | 0.4-0.7 | leather,suede
-pointed-toe heels | 0.65 | 0.6-0.9 | leather,suede
+pointed-toe pumps with a slim three-inch heel | 0.70 | 0.6-1.0 | leather,suede
+classic pumps with a two-and-a-half-inch block heel | 0.70 | 0.55-1.0 | leather,suede
+loafers with a low stacked heel | 0.75 | 0.5-0.85 | leather,suede
+pointed-toe flats with a flat sole | 0.55 | 0.5-0.85 | leather,suede
+ankle boots with a two-inch block heel | 0.55 | 0.5-0.85 | leather,suede
+slingback pumps with a two-inch block heel | 0.50 | 0.55-1.0 | leather,suede
+kitten-heel pumps with a two-inch heel | 0.50 | 0.55-1.0 | leather,suede
+pointed-toe mules with a two-inch block heel | 0.45 | 0.5-0.85 | leather,suede
+slingback flats with a flat sole | 0.40 | 0.5-0.8 | leather,suede
+ballet flats with a flat sole | 0.40 | 0.45-0.75 | leather,suede
+Chelsea ankle boots with a low stacked heel | 0.40 | 0.5-0.8 | leather,suede

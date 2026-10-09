@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-rolling chairs around the table | 1.0 | 0.3-0.6 | mismatched heights
-chair left turned from the table | 0.6 | 0.15-0.35 | seat still dented
-laptop open at one seat | 0.6 | 0.1-0.25 | lid with abstract-shape stickers
-power strip snake across the table | 0.55 | 0.05-0.2 | taped-down cord
-water pitcher on a tray | 0.45 | 0.05-0.15 | sweating glass
-notepad stack at the center | 0.5 | 0.05-0.15 | plain white paper pads
-markers in the whiteboard tray | 0.6 | 0.03-0.1 | most dried out
-trash can by the credenza | 0.45 | 0.05-0.15 | coffee cups inside
-spare chair against the wall | 0.5 | 0.15-0.35 | odd one out
-projector cart wheeled aside | 0.4 | 0.15-0.3 | cable coiled on top
-box of pastries on the credenza | 0.4 | 0.05-0.15 | picked-over selection
+a long wood-look conference table a few meters back | 1.0 | 0.2-0.5 | bare empty top, black mesh chairs pushed in along both sides
+an oval white conference table a few meters back | 0.8 | 0.2-0.5 | empty top, grey fabric chairs pushed in around it
+two rectangular tables pushed together a few meters back | 0.7 | 0.2-0.5 | empty pale tops, black chairs pushed in along the sides
+a row of empty black chairs along the left wall a few meters back | 0.6 | 0.2-0.5 | lined up against the wall, evenly spaced
+a low credenza along the right wall a few meters back | 0.7 | 0.2-0.5 | closed pale oak doors with nothing on top
+a tall rubber plant in a grey pot a few meters back in the corner | 0.5 | 0.2-0.5 | glossy dark leaves
+a round table with four empty chairs a few meters back on the right | 0.6 | 0.2-0.5 | white top, grey fabric seats
+a stack of folded chairs against the wall a few meters back | 0.4 | 0.2-0.5 | grey plastic, neatly stacked
+an empty side table along the wall a few meters back on the left | 0.45 | 0.2-0.5 | plain top with nothing on it
+a slim grey media cabinet a few meters back | 0.4 | 0.2-0.5 | closed doors, low and wide
+an empty conference table seen end-on a few meters back | 0.75 | 0.2-0.5 | pale oak top, chairs pushed in on both sides, a long soft reflection on the surface
+a pair of empty upholstered chairs by the window a few meters back on the right | 0.5 | 0.2-0.5 | grey fabric, a small round side table between them
+a mobile glass board parked against the wall a few meters back | 0.4 | 0.2-0.5 | blank, on wheels, beside the credenza

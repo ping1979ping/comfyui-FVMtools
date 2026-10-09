@@ -1,10 +1,13 @@
 # slot: accessories
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-tie | 0.75 | 0.7-1.0 | silk,polyester
-watch | 0.85 | 0.6-1.0 | metal,leather
-cufflinks | 0.40 | 0.8-1.0 | metal
-pocket square | 0.45 | 0.8-1.0 | silk,cotton
-belt | 0.80 | 0.6-1.0 | leather
-tie clip | 0.30 | 0.8-1.0 | metal
-lapel pin | 0.15 | 0.8-1.0 | metal
+necktie | 0.75 | 0.7-1.0 | silk
+striped necktie | 0.40 | 0.7-1.0 | silk
+knit tie | 0.25 | 0.6-0.85 | silk,wool
+folded pocket square | 0.40 | 0.75-1.0 | silk
+cufflinks | 0.25 | 0.8-1.0 | metal
+slim tie bar | 0.25 | 0.8-1.0 | metal
+slim wristwatch | 0.80 | 0.55-1.0 | metal
+wristwatch on a strap | 0.55 | 0.5-0.95 | leather
+dress belt | 0.75 | 0.6-1.0 | leather
+casual belt | 0.30 | 0.5-0.75 | leather

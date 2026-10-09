@@ -1,15 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-coffered dark-wood ceiling | 0.85 | 0.05-0.2 | recessed beam grid with warm light
-brass pendant globe lamp | 0.8 | 0.05-0.2 | glowing round suspended fixture
-art-deco fan-shaped wall sconce | 0.75 | 0.05-0.2 | gold radiating glass shade
-mirrored column cladding | 0.7 | 0.05-0.15 | smoked glass-wrapped pillar
-carved crown-molding ledge | 0.65 | 0.05-0.15 | shadowed ornate plaster band
-black-iron wine-rack frame | 0.6 | 0.05-0.15 | angular metal bottle lattice
-velvet-padded door panel | 0.55 | 0.02-0.08 | studded leather entry surface
-antique brass foot-rail bracket | 0.55 | 0.02-0.08 | curved mounting fitting
-etched-glass partition screen | 0.5 | 0.02-0.08 | frosted geometric patterned pane
-bronze ceiling medallion | 0.45 | 0.02-0.08 | round dark relief plaque
-marble-capped half wall | 0.5 | 0.02-0.08 | low veined stone divider
-oak-and-brass shelving bracket | 0.4 | 0.02-0.08 | slim polished support arm
+a coffered dark wood ceiling high up above the far bar | 0.85 | 0.05-0.15 | recessed beams with warm light between them
+brass globe pendant lamps hanging in a line far overhead | 0.8 | 0.02-0.08 | soft amber glow
+art-deco fan-shaped wall sconces high up on the far wall | 0.7 | 0.02-0.08 | gold glass shades
+smoked-glass cladding on a slim pillar at the far right | 0.55 | 0.05-0.12 | soft lamp reflections
+ornate plaster crown molding along the top of the far wall | 0.65 | 0.03-0.1 | cream, in shadow
+a black iron wine rack frame at the far end of the bar | 0.45 | 0.03-0.1 | angular lattice holding racked bottles
+a padded leather door with brass studs in the far left corner | 0.5 | 0.05-0.12 | closed, deep green
+a thin brass rail along the top of the far banquette | 0.45 | 0.02-0.08 | polished
+a bronze ceiling medallion high up in the center | 0.4 | 0.02-0.08 | round, dark relief
+etched-glass partition panels at the far side | 0.5 | 0.05-0.12 | frosted geometric pattern, soft light behind them
+a low marble-capped half wall along the far right | 0.45 | 0.05-0.12 | veined stone top
+recessed ceiling spotlights in a line far overhead | 0.55 | 0.02-0.08 | thin warm beams

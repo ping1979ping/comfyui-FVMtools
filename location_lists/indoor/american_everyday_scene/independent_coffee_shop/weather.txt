@@ -1,13 +1,15 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-roasted-coffee scented warmth | 1.0 | - | -
-cozy steamy window fog | 0.8 | - | -
-cool crisp fall morning outside | 0.6 | - | -
-rain pattering on the glass | 0.6 | - | -
-snow flurries beyond window | 0.45 | - | -
-mild spring light drifting in | 0.55 | - | -
-hot summer glare through blinds | 0.45 | - | -
-quiet murmuring conversation | 0.5 | - | -
-hissing steam wand ambience | 0.5 | - | -
-faint cinnamon and baked-sugar aroma | 0.5 | - | -
+overcast sky and soft grey daylight through the window | 1.0 | - | -
+clear bright sky and crisp light on the street | 0.85 | - | -
+thin high cloud and soft diffuse window light | 0.75 | - | -
+steady rain on the front glass under a grey sky | 0.6 | - | -
+light drizzle outside and damp grey daylight | 0.5 | - | -
+fresh snow on the street and bright cold light | 0.45 | - | -
+light snow falling past the front window | 0.4 | - | -
+bare trees outside under a pale winter sky | 0.5 | - | -
+hazy summer sunlight on the pavement outside | 0.5 | - | -
+crisp autumn light with yellow leaves outside | 0.5 | - | -
+fresh spring light with budding trees outside | 0.45 | - | -
+misty morning outside and soft cool light | 0.4 | - | -

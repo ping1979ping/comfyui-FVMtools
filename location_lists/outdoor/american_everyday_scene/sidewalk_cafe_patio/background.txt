@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-brick main-street storefront row | 1.0 | 0.6-1.0 | two-story brick facades with awnings
-striped canvas cafe awning | 0.95 | 0.5-0.9 | scalloped green-and-cream fabric
-old-fashioned cafe window front | 0.85 | 0.5-0.9 | arched glass with gold scrollwork{| and "{CAFE|COFFEE}" in gold lettering} and a small framed board of doodled pastries
-tree-lined main street | 0.8 | 0.5-0.9 | sidewalk maples over parked cars
-historic clock tower down the block | 0.55 | 0.2-0.5 | white-faced brick tower
-hanging flower-basket lamp posts | 0.8 | 0.3-0.7 | cast-iron posts with petunias
-small-town courthouse square glimpse | 0.5 | 0.3-0.7 | limestone building across street
-hardware store facade with a faded painted mural | 0.6 | 0.4-0.8 | faded wall mural of a giant hammer and wrench
-bunting-draped street scene | 0.55 | 0.4-0.8 | red white and blue flags
-string-light canopy overhead | 0.65 | 0.3-0.7 | warm bulbs on wires
+the far side of the street | 1.0 | 0.6-1.0 | a continuous row of two- and three-storey brick storefronts across the whole width of the image, a church steeple rising above the roofs on the left
+the brick cafe building behind the patio | 0.9 | 0.6-1.0 | a two-storey red brick facade with tall arched windows and a dark green awning across the whole width of the image
+the tree-lined street beyond the patio | 0.8 | 0.6-1.0 | mature maples along both sides of the street, brick buildings behind the trunks, a hazy sky above the roofs
+the old courthouse square at the end of the block | 0.6 | 0.6-1.0 | a pale limestone courthouse with a clock tower far ahead, low brick shops along both sides of the street
+a row of painted brick storefronts across the street | 0.8 | 0.6-1.0 | cream, brick-red and sage green facades of different heights across the whole width of the image, white-trimmed windows on the upper floors
+the corner of the block | 0.7 | 0.6-1.0 | where a brick bank building with a rounded corner meets a street of low shops, a traffic light on a mast arm at the far corner on the right
+the white-painted brick wall behind the patio | 0.75 | 0.6-1.0 | tall green-framed windows and a glass door on the right across the whole width of the image, string lights hanging in a row high up
+the far end of the street | 0.65 | 0.6-1.0 | a gentle rise lined with brick buildings and street trees, a pale blue sky above the rooftops
+the quiet street beyond the low railing | 0.6 | 0.6-1.0 | a two-lane street with a few parked cars along the far curb and brick storefronts behind them across the whole width of the image
+the cream painted-brick side wall on the right | 0.5 | 0.6-1.0 | a tall plain wall rising above the neighboring roofs, a stone-capped chimney at its top
+the shaded side of the street | 0.6 | 0.6-1.0 | deep shade under tree canopies in front of two-storey brick shops across the whole width of the image
+the wide sky above the low brick skyline | 0.45 | 0.6-1.0 | a soft pale sky over rooftops and chimneys across the whole width of the image, one old stone tower far on the left
+the wooded hill at the end of the street | 0.5 | 0.6-1.0 | a green ridge rising beyond the roofs at the far end of the street, brick shops along both sides

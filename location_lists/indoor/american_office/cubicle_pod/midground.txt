@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-desk with two monitors | 1.0 | 0.3-0.6 | smudged dark screens
-wheeled office chair | 0.9 | 0.2-0.5 | worn mesh back
-neighboring desk with clutter | 0.7 | 0.2-0.5 | stacked folders and mugs
-rolling file cabinet under the desk | 0.65 | 0.1-0.3 | dented beige steel
-desk phone with coiled cord | 0.6 | 0.05-0.2 | dusty handset
-recycling bin by the partition | 0.5 | 0.05-0.2 | overfilled paper
-space heater under the desk | 0.4 | 0.05-0.15 | scorched grille
-box of copy paper on the floor | 0.5 | 0.1-0.25 | half-opened carton
-keyboard tray pulled out | 0.6 | 0.1-0.3 | crumb-dusted keys
-second chair pulled over | 0.4 | 0.15-0.35 | borrowed from the next pod
-water bottle collection on the desk | 0.5 | 0.05-0.15 | mixed plastic and steel
+an empty cubicle with a white desk a few meters back | 1.0 | 0.2-0.5 | low grey fabric panels on three sides, a black mesh chair pushed in
+two empty cubicles side by side a few meters back on the left | 0.9 | 0.2-0.5 | grey fabric partitions, white desks, black mesh chairs pushed in
+a row of low grey partitions a few meters back | 0.8 | 0.2-0.5 | running away down the aisle on the right, white desktops visible over the top
+a cluster of four empty workstations a few meters back | 0.85 | 0.2-0.5 | grey fabric dividers between the desks, black mesh chairs pushed in
+a rolling grey file cabinet under an empty desk a few meters back | 0.5 | 0.2-0.5 | closed drawers, a chair pushed in beside it
+a tall grey storage cabinet at the end of a row, a few meters back | 0.55 | 0.2-0.5 | closed doors, taller than the partitions
+an empty L-shaped desk in a corner pod a few meters back on the right | 0.7 | 0.2-0.5 | white laminate top, a mesh chair tucked in
+a standing-height collaboration table a few meters back on the right | 0.5 | 0.2-0.5 | pale top, two empty stools tucked under it
+a tall rubber plant in a grey pot a few meters back on the left | 0.55 | 0.2-0.5 | glossy dark leaves beside a partition
+a glass-front huddle room a few meters back on the right | 0.55 | 0.2-0.5 | an empty small table with two chairs pushed in behind the glass
+a low grey lounge bench a few meters back | 0.45 | 0.2-0.5 | empty, with a small round side table beside it
+an empty desk with a dark switched-off monitor a few meters back | 0.6 | 0.2-0.5 | white desktop, mesh chair pushed in, grey partition behind
+two empty desks facing each other a few meters back on the left | 0.6 | 0.2-0.5 | white tops, chairs pushed in, a low grey divider between them
+a shared printer stand a few meters back on the left | 0.45 | 0.2-0.5 | grey, with closed paper trays and nothing on top

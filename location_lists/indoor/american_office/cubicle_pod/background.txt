@@ -1,14 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-grey fabric cubicle walls | 1.0 | 0.5-0.9 | pin-pricked woven panels
-row of cubicles down the aisle | 0.85 | 0.4-0.7 | repeating grey partitions
-drop ceiling with light panels | 0.8 | 0.2-0.5 | stained acoustic tiles
-office window with vertical blinds | 0.55 | 0.2-0.5 | dusty tilted slats
-empty whiteboard wall in the distance | 0.5 | 0.2-0.4 | smiley with marker pen marks left slightly faded
-supply cabinet against the wall | 0.5 | 0.15-0.4 | beige steel doors
-printer station along the aisle | 0.55 | 0.2-0.4 | paper trays and toner boxes
-framed landscape poster | 0.4 | 0.1-0.25 | faded stock photo of a rowing boat on calm water
-conference room glass wall beyond | 0.45 | 0.2-0.5 | fingerprinted glass
-coat hooks with hanging jackets | 0.45 | 0.1-0.3 | slumped fabric
-exit sign over the far door | 0.4 | 0.05-0.15 | glowing red sign reading "{EXIT|WAY OUT}"
+the far end of the cubicle floor | 1.0 | 0.6-1.0 | rows of low grey fabric partitions receding across the whole width of the image, a plain white wall with tall windows on the right
+the window wall along the right side of the floor | 0.9 | 0.6-1.0 | tall windows with half-raised light grey blinds, a view over a paved parking lot and a line of trees, bright daylight on the right
+the far wall of the office floor | 0.85 | 0.6-1.0 | a flat off-white wall across the whole width of the image, a pair of glass-front meeting rooms on the left, a wide grey aisle leading toward them
+the back of the cubicle area | 0.7 | 0.6-1.0 | a freestanding grey copier beside a tall supply cabinet at the far end of the aisle on the left, a pale wall and a doorway on the right
+the far wall lined with closed private offices | 0.7 | 0.6-1.0 | white doors with narrow glass slots in an even row along the left wall, low grey partitions in front of them
+the far wall painted slate blue | 0.65 | 0.6-1.0 | a flat slate-blue wall across the whole width of the image, a row of low grey partitions in front of it, a recessed light strip above
+the long aisle between the cubicle rows | 0.8 | 0.6-1.0 | grey partitions on both sides running away to a bright window at the far end, ceiling lights in an even row overhead
+the far corner of the floor where two window walls meet | 0.6 | 0.6-1.0 | tall glass across the whole width of the image looking out over rooftops, a plain white column on the left
+the open break area behind the partitions | 0.5 | 0.6-1.0 | a small kitchenette with white cabinets and a pale counter at the back on the right, a glass door on the left
+the glass wall of a conference room at the far end | 0.55 | 0.6-1.0 | floor-to-ceiling glass with a frosted band at eye level across the whole width of the image, an empty room faintly visible behind it
+the far wall with a large abstract painting | 0.5 | 0.6-1.0 | a pale grey wall across the whole width of the image, one wide abstract canvas in soft blue and ochre high up in the middle
+the side wall of the office with high clerestory windows | 0.5 | 0.6-1.0 | a long plain wall on the left with a band of narrow windows high up, grey partitions standing in front of it
+the stairwell corner at the far end | 0.4 | 0.6-1.0 | a steel door with a narrow glass panel in a plain white wall on the right, grey partitions along the left
+the far wall of tall steel-framed windows | 0.6 | 0.6-1.0 | a view over brick rooftops and a wooded hillside across the whole width of the image, low grey partitions in front

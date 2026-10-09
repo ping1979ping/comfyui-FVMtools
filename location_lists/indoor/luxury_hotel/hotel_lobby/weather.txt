@@ -1,13 +1,15 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-climate-controlled cool lobby | 1.0 | - | -
-gentle air-conditioned breeze | 0.9 | - | -
-fragrant floral-scented air | 0.85 | - | -
-still filtered indoor calm | 0.7 | - | -
-crisp marble-cooled atmosphere | 0.65 | - | -
-softly perfumed lobby air | 0.6 | - | -
-warm humid summer air-drift | 0.55 | - | -
-faint sea-breeze garden drift | 0.5 | - | -
-faint chlorine-tinged pool air | 0.5 | - | -
-quietly hushed acoustics | 0.45 | - | -
+clear blue sky beyond the tall windows | 0.9 | - | -
+overcast gray sky and soft window light | 0.8 | - | -
+light rain on the street windows | 0.5 | - | -
+crisp October sunlight through the glass | 0.7 | - | -
+soft snowfall beyond the entrance doors | 0.4 | - | -
+bright summer sun on the street outside | 0.6 | - | -
+low gray cloud over the city outside | 0.55 | - | -
+pale winter light and bare trees beyond the glass | 0.5 | - | -
+hazy morning sun through the windows | 0.55 | - | -
+still air with soft, even interior light | 0.85 | - | -
+wet street reflecting the lights beyond the glass | 0.45 | - | -
+bright spring light on the stone building across the street | 0.55 | - | -

@@ -1,13 +1,14 @@
 # slot: outerwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-unstructured blazer | 0.70 | 0.5-0.8 | wool,cotton
-casual sport coat | 0.60 | 0.5-0.7 | wool,linen
-zip-front bomber | 0.55 | 0.3-0.6 | polyester,nylon
-hooded zip-jacket | 0.55 | 0.3-0.5 | cotton,polyester
-quilted vest | 0.45 | 0.3-0.6 | nylon,polyester
-puffer jacket | 0.50 | 0.3-0.5 | nylon
-modern overshirt | 0.50 | 0.4-0.6 | cotton
-soft-shell jacket | 0.45 | 0.3-0.5 | polyester,nylon
-classic trucker jacket | 0.40 | 0.3-0.5 | denim
-modern field jacket | 0.45 | 0.4-0.6 | cotton
+unstructured blazer | 0.60 | 0.5-0.8 | wool,cotton twill
+soft-shoulder sport coat | 0.35 | 0.5-0.8 | wool
+overshirt jacket | 0.55 | 0.35-0.75 | cotton twill,wool
+chore coat | 0.45 | 0.35-0.7 | cotton twill
+quilted vest | 0.40 | 0.3-0.7 | nylon
+zip-up vest | 0.40 | 0.3-0.6 | cotton fleece
+zip hoodie | 0.40 | 0.3-0.55 | cotton fleece
+lightweight bomber jacket | 0.35 | 0.3-0.6 | nylon
+soft-shell jacket | 0.35 | 0.3-0.7 | nylon
+lightweight down jacket | 0.30 | 0.3-0.6 | nylon
+field jacket | 0.30 | 0.35-0.65 | cotton twill

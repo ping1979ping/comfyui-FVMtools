@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear warm sunny day | 1.0 | - | -
-light breeze rustling awning | 0.8 | - | -
-bright blue cloudless sky | 0.85 | - | -
+clear warm day with a light breeze | 1.0 | - | -
+bright blue sky with a few white clouds | 0.85 | - | -
+partly cloudy sky with soft shade | 0.75 | - | -
 hazy humid summer afternoon | 0.6 | - | -
-partly cloudy with soft shade | 0.75 | - | -
-cool crisp autumn morning | 0.6 | - | -
-light drizzle under awning | 0.4 | - | -
-fall leaves drifting by | 0.45 | - | -
-mild spring day with blossoms | 0.7 | - | -
-gentle golden haze | 0.5 | - | -
+cool crisp autumn day with orange leaves | 0.6 | - | -
+mild spring day with blossoms on the trees | 0.7 | - | -
+overcast day under a low grey sky | 0.6 | - | -
+light drizzle with wet shiny pavement | 0.4 | - | -
+clear cold winter day with bare trees | 0.45 | - | -
+light snow dusting the planters under a pale sky | 0.35 | - | -
+gentle golden haze after rain | 0.45 | - | -

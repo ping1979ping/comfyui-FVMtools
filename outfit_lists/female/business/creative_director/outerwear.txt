@@ -1,12 +1,13 @@
 # slot: outerwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-oversized statement blazer | 0.85 | 0.6-0.9 | wool
-sculptural coat | 0.55 | 0.6-0.9 | wool,cashmere
-cropped designer jacket | 0.50 | 0.6-0.9 | wool,polyester
-unstructured longline coat | 0.55 | 0.6-0.9 | wool,cashmere
-asymmetric trench | 0.40 | 0.5-0.8 | cotton,polyester
-faux-fur statement coat | 0.35 | 0.5-0.8 | acrylic,polyester
-metallic puffer | 0.25 | 0.4-0.7 | nylon
-boxy avant-garde jacket | 0.50 | 0.6-0.9 | wool
-cape coat | 0.30 | 0.6-0.9 | wool,cashmere
+oversized blazer | 0.80 | 0.55-1.0 | wool,wool blend
+longline blazer | 0.55 | 0.6-1.0 | wool,wool blend
+unstructured longline coat | 0.50 | 0.6-1.0 | wool,cashmere
+cropped jacket | 0.50 | 0.55-1.0 | wool,wool blend
+boxy jacket | 0.50 | 0.55-1.0 | wool
+double-breasted blazer | 0.45 | 0.65-1.0 | wool,wool blend
+wrap coat | 0.45 | 0.6-1.0 | wool,cashmere
+belted trench coat | 0.40 | 0.5-0.85 | cotton,polyester
+collarless jacket | 0.40 | 0.55-1.0 | crepe,wool blend
+single-breasted blazer | 0.60 | 0.55-1.0 | wool,wool blend

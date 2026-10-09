@@ -1,9 +1,13 @@
 # slot: bottom
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-dress pants | 0.85 | 0.7-1.0 | wool,polyester
-chinos | 0.65 | 0.5-0.7 | cotton
-tailored trousers | 0.80 | 0.7-1.0 | wool,cotton
-wool trousers | 0.70 | 0.8-1.0 | wool
-flat-front pants | 0.55 | 0.6-0.9 | cotton,wool
-pleated trousers | 0.40 | 0.7-0.9 | wool
+dress trousers | 0.85 | 0.65-1.0 | worsted wool,wool
+flat-front dress trousers | 0.70 | 0.65-1.0 | worsted wool,wool
+pleated dress trousers | 0.45 | 0.65-0.95 | worsted wool,wool
+straight-leg suit trousers | 0.65 | 0.75-1.0 | worsted wool
+tapered dress trousers | 0.55 | 0.6-1.0 | wool
+tailored trousers | 0.60 | 0.6-1.0 | wool,cotton twill
+chinos | 0.65 | 0.5-0.75 | cotton twill
+slim chinos | 0.55 | 0.5-0.75 | cotton twill
+straight-leg chinos | 0.50 | 0.5-0.75 | cotton twill
+pleated chinos | 0.30 | 0.5-0.75 | cotton twill

@@ -1,15 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-grand ceiling chandelier | 0.8 | 0.05-0.2 | crystal tiers over dining floor
-plaster ceiling rose | 0.65 | 0.05-0.2 | ornate relief medallion
-tall window drapery swag | 0.6 | 0.05-0.2 | gathered cream silk valance
-heat-lamp pendant rail | 0.6 | 0.05-0.15 | warm copper lights over buffet
-wainscot dado paneling | 0.6 | 0.05-0.15 | white painted lower wall boards
-brass buffet-rail trim | 0.55 | 0.05-0.15 | polished tray-slide edge
-arched dining-room doorway | 0.55 | 0.02-0.08 | molded entry to lobby
-glass cloche warmer lid | 0.45 | 0.02-0.08 | domed cover over hot dishes
-patterned carpet border | 0.4 | 0.02-0.08 | woven edge band
-column base with fluted plinth | 0.45 | 0.02-0.08 | painted pillar foot
-wall-mounted candle sconce | 0.5 | 0.02-0.08 | soft shaded brass light
-etched-glass buffet sneeze guard | 0.5 | 0.02-0.08 | clear angled shield
+a plaster ceiling rose high up in the center | 0.65 | 0.03-0.1 | a small chandelier hanging from it
+a gathered cream valance across the top of the far windows | 0.6 | 0.05-0.12 | soft silk folds
+white painted wainscoting along the lower far wall | 0.6 | 0.05-0.15 | simple raised panels
+a thin brass trim along the edge of the far buffet counter | 0.5 | 0.02-0.08 | polished
+an arched doorway at the far end | 0.5 | 0.05-0.12 | molded white trim, daylight beyond it
+brass candle-style sconces on the far wall | 0.5 | 0.02-0.08 | soft shaded glow
+a molded cream cornice along the top of the far wall | 0.6 | 0.03-0.1 | plain and in shadow
+recessed ceiling lights in a line far overhead | 0.55 | 0.02-0.08 | thin warm glow
+copper pendant lamps hanging in a row above the far buffet | 0.5 | 0.02-0.08 | warm glow
+a white coffered ceiling high up above the far tables | 0.5 | 0.05-0.15 | shallow square panels
+white painted window mullions along the far wall | 0.55 | 0.05-0.12 | slim vertical lines

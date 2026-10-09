@@ -1,13 +1,13 @@
 # slot: bottom
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-travel dress trousers | 0.85 | 0.7-0.9 | wool,polyester
-wrinkle-resistant trousers | 0.75 | 0.6-0.9 | polyester
-slim-cut chinos | 0.55 | 0.5-0.7 | cotton
-flat-front dress trousers | 0.80 | 0.7-1.0 | wool
-lightweight suit trousers | 0.70 | 0.7-0.9 | wool
-performance trousers | 0.60 | 0.6-0.8 | polyester
-straight-leg trousers | 0.65 | 0.7-0.9 | wool
-tropical-weight trousers | 0.55 | 0.7-0.9 | wool
-twill trousers | 0.50 | 0.6-0.8 | cotton
-business chinos | 0.50 | 0.5-0.7 | cotton
+travel dress trousers | 0.85 | 0.65-0.95 | tropical wool,wool blend
+wrinkle-resistant dress trousers | 0.70 | 0.6-0.9 | wool blend
+slim chinos | 0.60 | 0.5-0.8 | cotton twill
+straight-leg chinos | 0.55 | 0.5-0.8 | cotton twill
+flat-front dress trousers | 0.80 | 0.65-0.95 | tropical wool,wool blend
+tapered dress trousers | 0.65 | 0.6-0.9 | wool blend,tropical wool
+lightweight suit trousers | 0.60 | 0.7-0.95 | tropical wool
+pleated dress trousers | 0.40 | 0.65-0.95 | tropical wool,wool blend
+straight-leg trousers | 0.55 | 0.6-0.9 | wool blend,cotton twill
+dress chinos | 0.55 | 0.55-0.85 | cotton twill

@@ -1,6 +1,10 @@
 # slot: headwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Hairstyles, not hats: fabric "-" keeps the palette colour out of the hair (Krea 2 rules, build-outfit-set Step 3c).
 
-slim headband | 0.20 | 0.7-0.9 | silk,satin
-pearl-trim clip | 0.15 | 0.75-0.95 | metal
-beret | 0.10 | 0.7-0.9 | wool
+smooth low chignon at the nape, the face turned toward the camera | 0.90 | 0.7-1.0 | -
+sleek low bun with a thin pearl hair pin, the face open toward the camera | 0.75 | 0.75-1.0 | -
+polished blowout with a soft side part, the face turned toward the camera | 0.80 | 0.7-1.0 | -
+soft side part with the hair tucked behind the ears, the face open toward the camera | 0.70 | 0.7-1.0 | -
+sleek low ponytail at the nape, the face turned toward the camera | 0.60 | 0.7-1.0 | -
+neat half-up twist with a slim barrette, the face open toward the camera | 0.65 | 0.7-1.0 | -

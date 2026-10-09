@@ -1,14 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-vinyl tile floor | 0.8 | 0.3-0.6 | heel-scuffed squares
-drop ceiling with a humming light | 0.7 | 0.15-0.4 | flickering corner panel
-backsplash of plain white tile | 0.55 | 0.1-0.3 | coffee-splashed grout
-outlet crowded with plugs | 0.55 | 0.03-0.1 | adapter stack
-door with a push plate | 0.45 | 0.1-0.25 | worn steel plate
-baseboard peeling at the corner | 0.4 | 0.03-0.12 | lifted vinyl strip
-hand-washing pictogram over the sink | 0.5 | 0.03-0.1 | laminated printout of hands under a faucet
-thermostat with a plastic lockbox | 0.4 | 0.03-0.1 | scratched cover
-ceiling vent stained grey | 0.4 | 0.05-0.12 | dust-furred louvers
-window sill with dead flies | 0.3 | 0.03-0.1 | chipped paint
-fire extinguisher in a wall bracket | 0.45 | 0.03-0.1 | inspection tag hanging
+recessed LED panel lights in the ceiling overhead | 0.85 | 0.05-0.2 | even rows of flat white squares
+white drop-ceiling panels high up across the room | 0.7 | 0.05-0.2 | plain and evenly spaced
+brushed steel cabinet handles along the far counter | 0.6 | 0.05-0.2 | slim horizontal bars
+white baseboard along the far wall | 0.55 | 0.05-0.2 | a narrow clean strip
+a steel-framed door at the far left | 0.6 | 0.05-0.2 | closed, with a narrow glass panel
+a slim brushed steel faucet over the far sink | 0.55 | 0.05-0.2 | arched neck and a single lever
+a ceiling vent grille high up near the back | 0.45 | 0.05-0.2 | plain white louvers
+a narrow window sill along the right wall | 0.5 | 0.05-0.2 | white painted ledge below the blinds
+white blinds with thin horizontal slats on the right | 0.65 | 0.05-0.2 | half raised, soft light between the slats
+a stainless backsplash strip behind the far counter | 0.4 | 0.05-0.2 | a thin brushed steel band
+a round pendant light hanging far down the room | 0.4 | 0.05-0.2 | frosted white globe

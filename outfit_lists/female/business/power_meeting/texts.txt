@@ -1,6 +1,4 @@
-# format: text_content | probability | compatible_slots | font_hint
-"BOARD" | 0.06 | accessories | engraved serif
-"EXEC" | 0.08 | accessories | engraved serif
-"CHAIR" | 0.05 | accessories | classic serif
-"PARTNER" | 0.05 | accessories | engraved serif
-"DIRECTOR" | 0.06 | accessories | classic serif
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: power dressing for a meeting relies on cut and fabric, and no title, company name or monogram is printed on any piece

@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-dry erase eraser on the tray | 0.55 | 0.02-0.06 | marker-blackened felt
-abandoned coffee cups at seats | 0.6 | 0.03-0.1 | varying fill levels
-stapled paper sets at each place | 0.5 | 0.05-0.15 | corner-stapled pages
-remote for the flatscreen | 0.5 | 0.02-0.06 | taped battery cover
-sticky notes stuck to the table | 0.45 | 0.02-0.08 | yellow squares with scribbled lines
-hdmi dongle bowl | 0.45 | 0.02-0.08 | adapter tangle
-folded tent cards half collapsed | 0.4 | 0.03-0.1 | blank folded cardstock
-phone face down mid-meeting | 0.5 | 0.02-0.06 | buzzing against wood
-laser pointer without batteries | 0.35 | 0.02-0.05 | chewed cap
-pizza boxes from a lunch meeting | 0.4 | 0.05-0.15 | grease-spotted lids
-umbrella hooked on a chair | 0.35 | 0.03-0.1 | still damp
+small glass water carafe on the distant credenza | 0.6 | 0.02-0.06 | clear glass
+small stack of white paper cups on a far side table | 0.45 | 0.02-0.06 | plain and unmarked
+tiny potted plant on the far credenza | 0.5 | 0.02-0.06 | glossy green leaves
+compact stainless coffee thermos on a distant side table | 0.45 | 0.02-0.06 | brushed steel with a black lid
+small stack of blank notepads at the far end of the table | 0.5 | 0.02-0.06 | plain white pages
+slim black pens in a cup on the far credenza | 0.4 | 0.02-0.06 | matte black cup
+small green succulent on the window sill at the far end | 0.5 | 0.02-0.06 | thick pale leaves
+small tissue box on the far credenza | 0.35 | 0.02-0.06 | plain white cardboard
+small folded white napkins on the far credenza | 0.35 | 0.02-0.06 | a neat pile
+slim black umbrella leaning in the far corner | 0.3 | 0.02-0.06 | closed, matte fabric
+small closed silver laptop at the far end of the table | 0.4 | 0.02-0.06 | brushed silver lid
+small tray of plain glasses on the distant credenza | 0.4 | 0.02-0.06 | clear tumblers in a neat row

@@ -1,13 +1,13 @@
 # slot: bottom
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-tapered trousers | 0.80 | 0.5-0.8 | wool,cotton
-black designer trousers | 0.75 | 0.6-0.9 | wool
-slim-cut chinos | 0.60 | 0.5-0.7 | cotton
-wide-leg trousers | 0.55 | 0.5-0.8 | wool,linen
-high-waist trousers | 0.50 | 0.6-0.9 | wool
-cropped trousers | 0.55 | 0.5-0.7 | cotton,wool
-relaxed-fit pants | 0.50 | 0.4-0.7 | cotton
-pleated cropped pants | 0.45 | 0.5-0.8 | wool
-designer jeans | 0.50 | 0.4-0.6 | denim
-cuffed dress pants | 0.45 | 0.6-0.9 | wool
+tapered trousers | 0.80 | 0.5-0.85 | wool,cotton twill
+pleated tapered trousers | 0.55 | 0.55-0.85 | wool
+relaxed wide-leg trousers | 0.45 | 0.5-0.85 | wool,linen blend
+straight-leg trousers | 0.65 | 0.5-0.85 | wool,cotton twill
+slim chinos | 0.50 | 0.4-0.7 | cotton twill
+cropped tapered trousers | 0.45 | 0.45-0.8 | wool,cotton twill
+high-rise trousers | 0.40 | 0.55-0.85 | wool
+straight-leg jeans | 0.40 | 0.4-0.65 | denim
+softly draped tailored trousers | 0.45 | 0.55-0.85 | wool
+relaxed-fit trousers | 0.40 | 0.4-0.7 | cotton twill,linen blend

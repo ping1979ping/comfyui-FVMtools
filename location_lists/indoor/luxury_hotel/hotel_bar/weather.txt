@@ -1,13 +1,15 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-warm cozy interior air | 1.0 | - | -
-softly perfumed cocktail haze | 0.85 | - | -
-gentle air-conditioned hush | 0.8 | - | -
-faint cigar-lounge warmth | 0.6 | - | -
-muted piano-murmured atmosphere | 0.7 | - | -
-cool crisp climate-controlled air | 0.65 | - | -
-distant rain-streaked window | 0.5 | - | -
-citrus-scented lounge air | 0.55 | - | -
-fireplace-warmed stillness | 0.5 | - | -
-quiet low conversation hum | 0.55 | - | -
+clear dusk sky fading to blue beyond the street windows | 0.9 | - | -
+light rain streaking the street windows | 0.6 | - | -
+overcast gray late-afternoon sky beyond the windows | 0.8 | - | -
+first snow falling past the street windows | 0.4 | - | -
+wet street reflecting car lights beyond the glass | 0.55 | - | -
+bare winter trees on the street beyond the windows | 0.5 | - | -
+warm summer dusk glow beyond the street windows | 0.6 | - | -
+crisp October evening sky beyond the glass | 0.7 | - | -
+still air with steady warm light from the wall lamps | 0.85 | - | -
+low gray cloud over the city beyond the windows | 0.55 | - | -
+clear night sky and city lights beyond the windows | 0.75 | - | -
+light fog softening the street lights outside | 0.45 | - | -

@@ -1,13 +1,15 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-fragrant coffee-scented air | 1.0 | - | -
-warm yeasty bakery aroma | 0.9 | - | -
-cool air-conditioned calm | 0.7 | - | -
-gentle steam-misted warmth | 0.65 | - | -
-soft murmured conversation hum | 0.7 | - | -
-breezy open-door freshness | 0.55 | - | -
-cozy rain-pattering window | 0.5 | - | -
-sun-warmed glass stillness | 0.55 | - | -
-buttery vanilla-sweet haze | 0.5 | - | -
-crisp clean morning air | 0.5 | - | -
+clear blue sky beyond the arched windows | 0.9 | - | -
+light rain on the street windows | 0.5 | - | -
+overcast gray sky and soft window light | 0.8 | - | -
+crisp October sunlight on the glass | 0.7 | - | -
+soft snowfall beyond the arched windows | 0.4 | - | -
+bright spring sun through the windows | 0.75 | - | -
+hazy summer sunlight on the glass | 0.6 | - | -
+pale winter light, bare branches outside | 0.5 | - | -
+low gray cloud over the street outside | 0.55 | - | -
+still, warm air with soft window light | 0.85 | - | -
+steady drizzle on the glass | 0.4 | - | -
+fine morning mist fading outside the windows | 0.45 | - | -

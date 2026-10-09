@@ -1,15 +1,14 @@
 # slot: accessories
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-stretch-fit necktie | 0.65 | 0.7-0.9 | silk,polyester
-slim solid tie | 0.70 | 0.7-1.0 | silk
-woven business tie | 0.55 | 0.7-1.0 | silk
-practical wristwatch | 0.85 | 0.5-1.0 | metal,leather
-travel-friendly belt | 0.85 | 0.6-1.0 | leather
-business cardholder | 0.40 | 0.7-1.0 | leather
-visitor lanyard with blank badge card | 0.30 | 0.5-0.7 | nylon
-client-meeting tie | 0.45 | 0.7-0.9 | silk
-luggage tag charm | 0.20 | 0.5-0.7 | leather
-travel cufflinks | 0.35 | 0.7-0.9 | metal
-clip-on tie clip | 0.30 | 0.7-0.9 | metal
-folding pocket square | 0.45 | 0.7-1.0 | silk
+necktie | 0.50 | 0.7-0.95 | silk
+knit tie | 0.40 | 0.6-0.9 | silk,wool blend
+woven necktie | 0.35 | 0.7-0.95 | silk
+slim dress watch | 0.65 | 0.6-0.95 | metal
+wristwatch on a strap | 0.80 | 0.5-0.95 | leather
+dress belt | 0.80 | 0.6-0.95 | leather
+casual belt | 0.50 | 0.5-0.8 | leather
+blank white ID card on a lanyard | 0.10 | 0.5-0.8 | -
+folded pocket square | 0.15 | 0.75-0.95 | silk
+cufflinks | 0.12 | 0.8-0.95 | metal
+thin-framed eyeglasses | 0.15 | 0.5-0.95 | metal

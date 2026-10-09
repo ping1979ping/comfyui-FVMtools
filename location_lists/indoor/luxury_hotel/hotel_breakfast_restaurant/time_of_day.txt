@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright morning breakfast service | 1.0 | - | -
-early-morning first-seating calm | 0.85 | - | -
-sunny mid-morning buffet rush | 0.8 | - | -
-soft golden sunrise window light | 0.7 | - | -
-late-morning brunch glow | 0.65 | - | -
-cool dawn-lit dining room | 0.5 | - | -
-busy weekend breakfast hour | 0.6 | - | -
-quiet end-of-service lull | 0.45 | - | -
-overcast gentle morning daylight | 0.5 | - | -
-low slanting sunrise beams | 0.5 | - | -
+bright early-morning light through the tall windows | 1.0 | - | -
+soft overcast morning light at the windows | 0.8 | - | -
+warm mid-morning sun slanting across the tables | 0.85 | - | -
+pale early-morning light with the pendants glowing | 0.6 | - | -
+golden low sunrise light at the street windows | 0.6 | - | -
+bright late-morning light, even and clean | 0.7 | - | -
+soft gray weekday morning daylight | 0.7 | - | -
+even late-morning daylight with a glow from the pendants | 0.6 | - | -
+clear cool morning light through the sheer curtains | 0.75 | - | -
+warm weekend brunch light at the windows | 0.55 | - | -
+quiet early light with the pendant lamps still glowing | 0.5 | - | -

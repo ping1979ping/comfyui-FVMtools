@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-mismatched wooden cafe chairs | 1.0 | 0.3-0.5 | vintage painted seats around small tables
-reclaimed-wood ordering counter | 0.9 | 0.3-0.5 | scarred butcher-block top with tip jar
-barista pulling espresso shots | 0.8 | 0.2-0.4 | apron and portafilter at the machine
-small round marble cafe table | 0.85 | 0.2-0.4 | cold white stone on cast-iron base
-worn leather armchair corner | 0.7 | 0.2-0.4 | cracked caramel seat with floor lamp
-long communal farm table | 0.65 | 0.25-0.5 | wide planks with laptops and mugs
-pour-over brewing station | 0.6 | 0.15-0.3 | glass cones on gooseneck kettle stand
-window-bar counter seats | 0.6 | 0.2-0.4 | stools facing the street glass
-vinyl record player shelf | 0.4 | 0.15-0.3 | turntable with crates of albums
-coffee roaster machine | 0.45 | 0.2-0.4 | small drum roaster with hopper
-board-game shelf nook | 0.4 | 0.15-0.3 | worn boxes stacked beside a bench
-tall potted fiddle-leaf fig | 0.5 | 0.15-0.3 | big glossy leaves in clay pot
+small round oak cafe tables a few meters back | 1.0 | 0.2-0.5 | all empty, with simple wooden chairs pushed in
+a long communal oak table a few meters back | 0.7 | 0.2-0.5 | empty, with matching benches tucked underneath
+a pair of empty low armchairs a few meters back on the left | 0.6 | 0.2-0.5 | worn tan leather with a small round side table between them
+a pale oak service counter a few meters back on the right | 0.8 | 0.2-0.5 | clean and empty, with a copper-and-steel espresso machine at the far end
+a window bar a few meters back on the right | 0.65 | 0.2-0.5 | a narrow oak counter along the glass with empty black stools tucked under it
+a corner banquette a few meters back on the left | 0.6 | 0.2-0.5 | empty, with green velvet cushions and a small round table
+a tall potted fiddle-leaf fig a few meters back on the right | 0.5 | 0.2-0.5 | glossy broad leaves in a clay pot
+two empty two-seat tables by the window a few meters back | 0.7 | 0.2-0.5 | pale wood tops, chairs pushed in
+a low wooden bench along the wall a few meters back on the left | 0.5 | 0.2-0.5 | empty, with a row of plain grey cushions
+a stainless drip-coffee station on a side counter a few meters back | 0.55 | 0.2-0.5 | empty and tidy, with white cabinets below
+two empty high-top tables with stools a few meters back | 0.55 | 0.2-0.5 | dark metal frames and pale oak tops
+a low shelf of small potted plants a few meters back on the right | 0.45 | 0.2-0.5 | trailing green leaves over a pale wood unit
+a glass pastry case on a counter a few meters back | 0.6 | 0.2-0.5 | pale oak frame, softly lit shelves
+a quiet reading corner a few meters back on the left | 0.4 | 0.2-0.5 | one empty armchair under a brass floor lamp

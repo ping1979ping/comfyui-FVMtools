@@ -1,6 +1,10 @@
 # slot: headwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Hairstyles, not hats: fabric "-" keeps the palette colour out of the hair (Krea 2 rules, build-outfit-set Step 3c).
 
-sleek low ponytail | 0.30 | 0.5-0.9 | none
-minimal hair clip | 0.25 | 0.4-0.8 | metal
-thin headband | 0.15 | 0.5-0.8 | silk
+smooth low chignon at the nape, the face turned toward the camera | 0.90 | 0.5-0.9 | -
+sleek low ponytail at the nape, the face open toward the camera | 0.80 | 0.5-0.9 | -
+soft side part with the hair tucked behind the ears, the face open toward the camera | 0.80 | 0.5-0.9 | -
+neat center part with the hair smoothed back, the face turned toward the camera | 0.70 | 0.5-0.9 | -
+small claw clip holding a neat half-up twist, the face turned toward the camera | 0.70 | 0.4-0.85 | -
+low twisted bun with a slim barrette, the face open toward the camera | 0.65 | 0.5-0.9 | -

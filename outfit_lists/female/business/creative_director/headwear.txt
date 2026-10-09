@@ -1,8 +1,10 @@
 # slot: headwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Hairstyles, not hats: fabric "-" keeps the palette colour out of the hair (Krea 2 rules, build-outfit-set Step 3c).
 
-statement beret | 0.25 | 0.5-0.8 | wool,cashmere
-designer sunglasses | 0.40 | 0.4-0.8 | acetate,metal
-oversized hair clip | 0.25 | 0.5-0.8 | metal,acetate
-printed turban | 0.20 | 0.5-0.8 | silk
-wide-brim hat | 0.20 | 0.5-0.8 | wool,felt
+sleek low bun at the nape, the face open toward the camera | 0.80 | 0.5-1.0 | -
+center part with the hair tucked behind the ears, the face turned toward the camera | 0.75 | 0.4-1.0 | -
+sleek slicked-back style, the face open toward the camera | 0.65 | 0.5-1.0 | -
+low twisted knot at the nape, the face turned toward the camera | 0.65 | 0.5-1.0 | -
+small claw clip holding a relaxed twist, the face turned toward the camera | 0.60 | 0.4-0.85 | -
+textured low ponytail at the nape, the face open toward the camera | 0.55 | 0.4-0.9 | -

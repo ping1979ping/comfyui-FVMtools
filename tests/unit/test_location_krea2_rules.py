@@ -40,8 +40,23 @@ KREA2_STRICT_CATEGORIES = {
     "suburban_office_park",
 }
 
+# Older sets rewritten to the same rules, set by set (their categories also
+# hold sets that were not rewritten).
+KREA2_STRICT_EXTRA_SETS = {
+    "indoor/american_office/break_room",
+    "indoor/american_office/cubicle_pod",
+    "indoor/american_office/plain_conference_room",
+    "indoor/american_everyday_scene/independent_coffee_shop",
+    "outdoor/american_everyday_scene/sidewalk_cafe_patio",
+    "indoor/luxury_hotel/hotel_bar",
+    "indoor/luxury_hotel/hotel_breakfast_restaurant",
+    "indoor/luxury_hotel/hotel_cafe",
+    "indoor/luxury_hotel/hotel_lobby",
+}
+
 STRICT_SETS = [s for s in get_available_location_sets()
-               if s.split("/")[1:2] and s.split("/")[1] in KREA2_STRICT_CATEGORIES]
+               if (s.split("/")[1:2] and s.split("/")[1] in KREA2_STRICT_CATEGORIES)
+               or s in KREA2_STRICT_EXTRA_SETS]
 
 # name + texture, characters, after brace markup is stripped.
 MAX_CHARS = {

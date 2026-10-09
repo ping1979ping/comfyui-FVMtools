@@ -1,14 +1,16 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-sugar packets spilled by the machine | 0.6 | 0.02-0.08 | torn paper packets
-creamer tubs in a bowl | 0.6 | 0.02-0.08 | mixed flavors
-someone's brown lunch bag | 0.6 | 0.03-0.1 | rolled-down paper top with a marker doodle
-unfinished jigsaw puzzle corner | 0.45 | 0.03-0.1 | few assembled pieces on the table
-birthday sheet cake remains | 0.4 | 0.05-0.15 | frosting-smeared board
-mug tree with novelty mugs | 0.5 | 0.03-0.1 | mismatched handles
-plastic cutlery cup | 0.55 | 0.02-0.06 | forks nearly out
-salt and pepper shakers | 0.45 | 0.02-0.06 | rice grains in the salt
-flat pizza box stack | 0.5 | 0.02-0.08 | grease-spotted cardboard
-tupperware drying upside down | 0.5 | 0.02-0.08 | warped lids
-paper sheet pinned on the board | 0.4 | 0.02-0.08 | mostly empty ruled lines
+small glass carafe coffee maker on the far counter | 0.7 | 0.02-0.06 | black base and a half-full carafe
+small white ceramic mugs on a shelf far along the counter | 0.6 | 0.02-0.06 | plain glaze in a loose row
+compact stainless kettle on the far counter | 0.5 | 0.02-0.06 | brushed steel with a black handle
+small stainless toaster at the far end of the counter | 0.5 | 0.02-0.06 | two slots and a lever
+small round fruit bowl on a distant counter corner | 0.5 | 0.02-0.06 | red apples and bananas
+small stack of white paper plates on a distant shelf | 0.45 | 0.02-0.06 | plain and unmarked
+small potted pothos on top of the far refrigerator | 0.55 | 0.02-0.06 | green vines hanging over the edge
+compact white paper towel dispenser on the far wall | 0.5 | 0.02-0.06 | plain white plastic
+small dish rack beside the far sink | 0.45 | 0.02-0.06 | grey wire with a few plain plates
+small green succulent on the window sill at the far end | 0.5 | 0.02-0.06 | thick pale green leaves
+small hand soap pump bottle beside the far sink | 0.4 | 0.02-0.06 | clear plastic with a white pump
+small wicker basket on top of the distant cabinets | 0.4 | 0.02-0.06 | natural woven rattan
+compact paper cup dispenser by the far coffee maker | 0.4 | 0.02-0.06 | white plastic tube

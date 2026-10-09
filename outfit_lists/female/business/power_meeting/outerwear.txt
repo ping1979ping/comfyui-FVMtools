@@ -1,11 +1,15 @@
 # slot: outerwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-power blazer | 0.95 | 0.8-1.0 | wool
-sharp-shoulder jacket | 0.65 | 0.8-1.0 | wool
-double-breasted blazer | 0.75 | 0.8-1.0 | wool
-structured woven jacket | 0.55 | 0.7-1.0 | tweed
-luxury overcoat | 0.50 | 0.8-1.0 | wool,cashmere
-camel wrap coat | 0.45 | 0.7-1.0 | wool,cashmere
-classic trench | 0.50 | 0.7-0.9 | cotton,polyester
-peplum jacket | 0.40 | 0.8-1.0 | wool
+sharp-shouldered blazer | 0.90 | 0.75-1.0 | wool,wool blend
+tailored suit jacket | 0.85 | 0.7-1.0 | wool,wool blend
+nipped-waist single-breasted blazer | 0.70 | 0.7-1.0 | wool,wool blend
+double-breasted blazer | 0.70 | 0.75-1.0 | wool,wool blend
+blazer with peak lapels | 0.55 | 0.8-1.0 | wool,wool blend
+longline blazer | 0.50 | 0.7-1.0 | wool,wool blend
+one-button blazer | 0.50 | 0.7-1.0 | wool,crepe
+boucle jacket | 0.35 | 0.75-1.0 | tweed,wool
+tailored waistcoat | 0.30 | 0.8-1.0 | wool,wool blend
+tailored topcoat | 0.35 | 0.7-1.0 | wool,cashmere
+belted wrap coat | 0.30 | 0.7-1.0 | wool,cashmere
+belted trench coat | 0.30 | 0.7-0.95 | cotton

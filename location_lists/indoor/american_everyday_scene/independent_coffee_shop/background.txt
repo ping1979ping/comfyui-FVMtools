@@ -1,15 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-slate chalkboard wall | 1.0 | 0.6-1.0 | black slate with {white chalk doodles of cups and leaves|chalk-drawn border and headings reading "{MENU|COFFEE|TODAY}"}
-exposed red-brick wall | 0.9 | 0.6-1.0 | weathered painted mortar lines
-gleaming espresso machine counter | 0.9 | 0.5-0.9 | copper-and-steel lever group
-large street-facing window | 0.8 | 0.5-0.9 | {clean glass with warm interior glow|gold vinyl lettering reading "{COFFEE|CAFE}"}
-reclaimed-wood shelving unit | 0.7 | 0.4-0.8 | rustic planks with ceramic mugs
-bean-bag bulk coffee wall | 0.6 | 0.3-0.6 | burlap sacks and glass jars
-local art gallery wall | 0.65 | 0.4-0.7 | mismatched framed prints and posters
-pastry display case | 0.7 | 0.3-0.6 | glass cabinet of croissants and scones
-industrial duct ceiling | 0.55 | 0.4-0.8 | black exposed piping and tracks
-hanging plant macrame row | 0.5 | 0.3-0.6 | trailing pothos in rope hangers
-subway tile back counter | 0.5 | 0.4-0.7 | white glossy tiles with gray grout
-community corkboard collage | 0.4 | 0.3-0.5 | layered colorful paper scraps and photo cards
+the far brick wall of the coffee shop | 1.0 | 0.6-1.0 | exposed red-brown brick across the whole width of the image, open oak shelves high up on the left, a row of round pendant lights in front of it
+the espresso bar at the back of the shop | 0.9 | 0.6-1.0 | a pale oak counter with a copper-and-steel espresso machine in the middle across the whole width of the image, white subway tile behind it, quiet and unattended
+the large street-facing window | 0.85 | 0.6-1.0 | tall panes of clear glass across the whole width of the image, a brick storefront and parked cars across the street, a tree on the left
+the plaster wall painted deep forest green | 0.8 | 0.6-1.0 | a flat green wall across the whole width of the image, three small framed abstract prints in an even row on the left, a warm wall lamp on the right
+the back counter with a glass pastry case | 0.7 | 0.6-1.0 | a low case of pale oak and glass along the back counter on the right, white subway tile above it, a swing door on the far left
+the white subway tile wall at the back | 0.6 | 0.6-1.0 | glossy white tile with grey grout across the whole width of the image, a pale wood shelf high up with small potted plants
+the far end of the shop under an exposed black ceiling | 0.5 | 0.6-1.0 | dark pipes and track lights high up across the whole width of the image, a plain brick wall below
+the whitewashed brick wall at the back | 0.7 | 0.6-1.0 | painted pale brick across the whole width of the image, a row of globe pendant lights in front of it, a wooden door on the far left
+the corner window at the front of the shop | 0.55 | 0.6-1.0 | two walls of tall glass meeting at the right, a brick street scene beyond the glass, a low radiator under the panes
+the wall of open oak shelves | 0.6 | 0.6-1.0 | floor-to-ceiling pale oak shelves with plain ceramic cups and glass jars across the whole width of the back wall
+the side wall of reclaimed wood planks on the left | 0.55 | 0.6-1.0 | warm weathered boards running away toward the back of the shop, a round brass wall lamp high up
+the far wall of dark green tile | 0.45 | 0.6-1.0 | glossy dark green tile across the whole width of the image, a pale oak counter along its base, pendant lights above
+the back hallway side of the shop | 0.4 | 0.6-1.0 | a painted brick archway on the left leading to a dim back room, a plain plaster wall on the right
+the brick street front seen from inside | 0.6 | 0.6-1.0 | arched window openings with black steel frames across the whole width of the image, soft daylight on the brick

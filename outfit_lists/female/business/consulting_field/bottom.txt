@@ -1,11 +1,13 @@
 # slot: bottom
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-stretch dress pants | 0.85 | 0.6-0.9 | polyester,wool
-travel-fit trousers | 0.80 | 0.6-0.9 | polyester,wool
-slim ankle pants | 0.70 | 0.6-0.9 | polyester,wool
-straight-leg pants | 0.70 | 0.6-0.9 | wool,polyester
+stretch dress pants | 0.85 | 0.55-1.0 | polyester,wool blend
+travel-fit trousers | 0.80 | 0.55-1.0 | polyester,wool blend
+slim ankle pants | 0.70 | 0.55-1.0 | polyester,wool blend
+straight-leg pants | 0.70 | 0.55-1.0 | wool,polyester
+high-waist pants | 0.65 | 0.55-1.0 | wool,polyester
 performance trousers | 0.55 | 0.5-0.8 | polyester
-midi pencil skirt | 0.55 | 0.6-0.9 | wool,polyester
-cropped travel pants | 0.45 | 0.5-0.8 | polyester,wool
-high-waist pants | 0.65 | 0.6-0.9 | wool,polyester
+knee-length pencil skirt | 0.55 | 0.6-1.0 | wool,polyester
+wide-leg trousers | 0.45 | 0.55-1.0 | wool blend,polyester
+ankle-length travel pants | 0.45 | 0.5-0.8 | polyester,wool blend
+knee-length A-line skirt | 0.40 | 0.55-1.0 | wool,polyester

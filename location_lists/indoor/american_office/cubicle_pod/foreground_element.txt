@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-spinning slightly in the chair | 0.6 | 0.1-0.3 | hand on the armrest
-coffee mug lifted mid-sip | 0.6 | 0.05-0.15 | steam over the rim
-leaning on the cubicle wall to chat | 0.6 | 0.1-0.3 | arms folded on the rail
-headset pushed back off one ear | 0.5 | 0.05-0.15 | foam pad askew
-phone checked below desk level | 0.5 | 0.05-0.15 | screen glow on the lap
-lanyard hanging over the shirt | 0.55 | 0.05-0.15 | swinging badge
-stretching back from the keyboard | 0.5 | 0.1-0.3 | arms behind the head
-stack of folders carried past | 0.45 | 0.1-0.25 | papers sliding
-sticky note held up | 0.4 | 0.03-0.1 | blank yellow square with a pen-doodled arrow
-cardigan pulled against the AC | 0.5 | 0.1-0.3 | sleeves pushed up
-birthday cake slice on a paper plate | 0.35 | 0.05-0.12 | plastic fork
+a plain mid-grey low-pile carpet | 1.0 | 0.1-0.4 | smooth and even, no pattern
+a plain charcoal low-pile carpet | 0.8 | 0.1-0.4 | smooth and even, no pattern
+a smooth light grey polished concrete floor | 0.7 | 0.1-0.4 | soft reflections of the ceiling lights
+a wood-look vinyl plank floor | 0.7 | 0.1-0.4 | pale oak tone with a low sheen
+a plain taupe low-pile carpet | 0.7 | 0.1-0.4 | smooth and even, no pattern
+a plain slate-blue low-pile carpet | 0.6 | 0.1-0.4 | smooth and even, no pattern
+a warm grey sealed concrete floor | 0.55 | 0.1-0.4 | fine saw-cut joints in a regular grid
+a plain oatmeal broadloom carpet | 0.6 | 0.1-0.4 | smooth and even, no pattern
+a pale oak plank floor | 0.5 | 0.1-0.4 | long boards with a matte finish
+a plain light grey low-pile carpet | 0.7 | 0.1-0.4 | short dense pile with a soft sheen
+a dark grey broadloom carpet | 0.5 | 0.1-0.4 | smooth and even, no pattern
+a grey carpeted aisle with a plain pale runner | 0.4 | 0.1-0.4 | smooth edges, no pattern

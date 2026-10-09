@@ -1,7 +1,10 @@
 # slot: headwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Hairstyles, not hats: fabric "-" keeps the palette colour out of the hair (Krea 2 rules, build-outfit-set Step 3c).
 
-artistic beret | 0.15 | 0.4-0.7 | wool,felt
-designer flat-cap | 0.10 | 0.5-0.7 | wool
-wide-brim hat | 0.08 | 0.5-0.8 | felt
-black bowler | 0.06 | 0.6-0.9 | felt
+tousled natural texture swept to one side, the face open toward the camera | 0.85 | 0.3-1.0 | -
+loose, casually styled texture with a soft part, the face turned toward the camera | 0.80 | 0.3-1.0 | -
+relaxed swept-back style with a natural finish, the face open toward the camera | 0.70 | 0.3-1.0 | -
+soft side-swept style with an easy, lived-in finish, the face turned toward the camera | 0.75 | 0.3-1.0 | -
+neat side part with a textured finish, the face open toward the camera | 0.65 | 0.3-1.0 | -
+natural texture styled with a matte finish and a loose part, the face turned toward the camera | 0.55 | 0.3-1.0 | -

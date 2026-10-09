@@ -1,11 +1,11 @@
 # slot: bag
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-designer tote | 0.70 | 0.5-0.8 | leather,canvas
-sleek messenger bag | 0.60 | 0.5-0.8 | leather
-art portfolio case | 0.55 | 0.6-0.9 | leather
-minimalist crossbody | 0.50 | 0.4-0.7 | leather
-sketchbook satchel | 0.45 | 0.4-0.7 | leather,canvas
-designer backpack | 0.50 | 0.4-0.7 | leather,nylon
-soft-sided briefcase | 0.45 | 0.6-0.9 | leather
-artist roll bag | 0.35 | 0.3-0.6 | canvas,leather
+structured tote bag | 0.65 | 0.45-0.85 | leather,canvas
+slim messenger bag | 0.55 | 0.45-0.8 | leather,canvas
+zip portfolio | 0.50 | 0.5-0.85 | leather
+minimal backpack | 0.45 | 0.4-0.7 | leather,canvas
+soft briefcase | 0.45 | 0.55-0.85 | leather
+slim crossbody bag | 0.30 | 0.4-0.7 | leather
+flat portfolio case | 0.35 | 0.5-0.85 | leather
+weekender bag | 0.25 | 0.4-0.7 | canvas,leather

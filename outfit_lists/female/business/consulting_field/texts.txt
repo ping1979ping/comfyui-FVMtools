@@ -1,7 +1,4 @@
-# format: text_content | probability | compatible_slots | font_hint
-"CONSULT" | 0.10 | accessories | clean sans-serif
-"GLOBAL" | 0.08 | accessories | minimal serif
-"PARTNER" | 0.06 | accessories | engraved serif
-"NYC LDN HKG" | 0.05 | accessories | thin sans-serif
-"FRQT FLYR" | 0.04 | accessories | thin sans-serif
-"ADVISORY" | 0.05 | accessories | classic serif
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: client-site consulting wear carries no lettering, and the ID card stays blank so that no firm name or badge text is printed

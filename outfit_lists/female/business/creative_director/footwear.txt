@@ -1,13 +1,13 @@
 # slot: footwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-architectural heels | 0.75 | 0.6-0.9 | leather,suede
-chunky platform loafers | 0.65 | 0.5-0.8 | leather
-designer sneakers | 0.65 | 0.4-0.7 | leather
-sculptural mules | 0.60 | 0.5-0.8 | leather,suede
-pointed ankle boots | 0.55 | 0.5-0.8 | leather,suede
-metallic pumps | 0.45 | 0.6-0.9 | leather
-strappy heels | 0.55 | 0.5-0.8 | leather,suede
-combat boots | 0.40 | 0.4-0.7 | leather
-square-toe flats | 0.50 | 0.5-0.8 | leather,suede
-designer slingbacks | 0.55 | 0.6-0.9 | leather,suede
+pointed-toe pumps with a slim three-inch heel | 0.70 | 0.55-1.0 | leather,suede
+chunky loafers with a thick flat sole | 0.65 | 0.45-0.8 | leather
+mules with a three-inch block heel | 0.55 | 0.5-0.85 | leather,suede
+pointed-toe ankle boots with a two-and-a-half-inch block heel | 0.55 | 0.5-0.85 | leather,suede
+slingback pumps with a two-and-a-half-inch block heel | 0.55 | 0.55-1.0 | leather,suede
+minimal low-top sneakers with a flat white sole | 0.50 | 0.4-0.7 | leather
+square-toe flats with a flat sole | 0.50 | 0.5-0.8 | leather,suede
+square-toe pumps with a three-inch block heel | 0.50 | 0.55-1.0 | leather,suede
+ankle-strap pumps with a three-inch block heel | 0.45 | 0.5-0.85 | leather,suede
+kitten-heel pumps with a two-inch heel | 0.40 | 0.5-0.85 | leather,suede

@@ -1,11 +1,13 @@
 # slot: outerwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-unstructured blazer | 0.75 | 0.5-0.8 | cotton,linen
-trucker jacket | 0.55 | 0.3-0.6 | denim
-soft cardigan | 0.65 | 0.4-0.7 | cashmere,wool,cotton
-lightweight trench | 0.55 | 0.5-0.8 | cotton,polyester
-field jacket | 0.40 | 0.4-0.6 | cotton
-quilted vest | 0.35 | 0.3-0.6 | nylon,polyester
-shawl-collar wrap | 0.45 | 0.4-0.7 | wool,cashmere
-casual blazer | 0.65 | 0.5-0.8 | linen,cotton
+unstructured blazer | 0.75 | 0.45-0.8 | cotton,linen,wool blend
+tailored blazer | 0.60 | 0.5-0.8 | wool blend,crepe
+soft knit blazer | 0.45 | 0.4-0.75 | ponte,wool
+open-front cardigan | 0.65 | 0.35-0.7 | cashmere,wool,cotton
+longline cardigan | 0.45 | 0.4-0.7 | wool,cashmere
+fine-gauge cardigan | 0.50 | 0.4-0.7 | cashmere,wool
+shawl-collar cardigan | 0.40 | 0.4-0.7 | wool,cashmere
+belted trench coat | 0.45 | 0.45-0.8 | cotton
+knee-length overcoat | 0.30 | 0.5-0.8 | wool,wool blend
+lightweight utility jacket | 0.30 | 0.35-0.6 | cotton

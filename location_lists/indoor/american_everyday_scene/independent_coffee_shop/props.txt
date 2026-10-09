@@ -1,17 +1,16 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-ceramic latte mug | 0.9 | 0.02-0.05 | handmade speckled glaze
-glass jar of coffee beans | 0.7 | 0.02-0.08 | dark roast beans with a plain twine-tied tag
-gooseneck pour-over kettle | 0.6 | 0.02-0.08 | matte black spout
-paper to-go cup with sleeve | 0.7 | 0.02-0.05 | brown cardboard grip
-croissant on parchment paper | 0.6 | 0.02-0.08 | flaky buttery layers
-small succulent in tin | 0.5 | 0.02-0.05 | little green rosette
-canvas tote bag with bean icon | 0.4 | 0.02-0.08 | canvas hanging from a chair
-stack of used paperbacks | 0.45 | 0.02-0.08 | dog-eared books with plain colored covers
-tiny wooden stir sticks cup | 0.4 | 0.02-0.05 | small pottery holder
-oat milk steaming pitcher | 0.4 | 0.02-0.05 | steel jug with frothed milk
-sticker-covered laptop | 0.45 | 0.05-0.1 | colorful abstract decals on a silver lid
-paper coaster with doodle | 0.3 | 0.02-0.05 | pen sketch on round cardboard
-slice of banana bread | 0.5 | 0.02-0.08 | dense loaf on plate
-chalk easel board near entrance | 0.4 | 0.05-0.1 | {doodled coffee cup and leaf drawings|a short line reading "{SPECIALS|TODAY}"}
+small ceramic cups stacked on the distant espresso machine | 0.7 | 0.02-0.06 | plain speckled glaze
+small glass jars on a high shelf far behind the counter | 0.6 | 0.02-0.06 | dark coffee beans inside
+small potted succulents on the far window sill | 0.55 | 0.02-0.06 | thick green leaves
+slim steel gooseneck kettle on a distant counter | 0.5 | 0.02-0.06 | matte black spout
+compact black coffee grinder on the far counter | 0.5 | 0.02-0.06 | cone-shaped hopper
+small vase of dried flowers on a distant table | 0.45 | 0.02-0.06 | pale stems in a clay vase
+small pothos in a hanging pot high up at the back | 0.5 | 0.02-0.06 | long green vines
+tiny paper to-go cups stacked on the far counter | 0.55 | 0.02-0.06 | plain brown cardboard
+compact glass cake stand with a dome on the far counter | 0.45 | 0.02-0.06 | clear glass over a pale cake
+small wooden bowl of lemons on the distant counter | 0.35 | 0.02-0.06 | bright yellow fruit
+slim glass water carafe on a far table | 0.35 | 0.02-0.06 | clear glass with a cork stopper
+small brass bell on the far end of the counter | 0.3 | 0.02-0.06 | polished round dome
+small green ferns on a high shelf far behind | 0.45 | 0.02-0.06 | feathery fronds over the edge

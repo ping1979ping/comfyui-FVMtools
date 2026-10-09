@@ -1,13 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-round wrought-iron cafe tables | 1.0 | 0.3-0.5 | small metal bistro tops with checked cloths
-mesh-back metal patio chairs | 0.9 | 0.25-0.45 | painted iron seats
-planter boxes with geraniums | 0.9 | 0.2-0.4 | wooden boxes spilling red blooms
-patio umbrella over table | 0.7 | 0.25-0.45 | cream canvas parasol
-low wrought-iron patio railing | 0.8 | 0.2-0.4 | black fence with scrollwork
-chalkboard A-frame sign{| reading "{MENU|SPECIALS|COFFEE}"} | 0.8 | 0.15-0.3 | chalk doodles of cups and pastries
-couple sharing coffee and pie | 0.65 | 0.2-0.4 | relaxed diners at corner table
-waitress with tray of lemonades | 0.55 | 0.2-0.4 | apron-clad server on patio
-bike leaning on bike rack | 0.5 | 0.15-0.3 | cruiser with wicker basket
-old man relaxing with a coffee | 0.45 | 0.2-0.35 | patron with coffee mug at small table
+round black metal bistro tables a few meters back | 1.0 | 0.2-0.5 | all empty, with matching metal chairs pushed in
+a row of empty wrought-iron cafe chairs along the low railing a few meters back | 0.7 | 0.2-0.5 | painted black, evenly spaced
+wooden planter boxes along the railing a few meters back | 0.8 | 0.2-0.5 | low, with red geraniums spilling over the edge
+a cream canvas patio umbrella over an empty table a few meters back on the right | 0.7 | 0.2-0.5 | slim pole and a round shade
+a low black iron railing around the patio a few meters back | 0.8 | 0.2-0.5 | simple scrollwork on top, a gate gap on the left
+an empty bench along the brick wall a few meters back on the left | 0.5 | 0.2-0.5 | painted green slats
+two empty square wooden tables a few meters back | 0.6 | 0.2-0.5 | pale tops, folding chairs pushed in
+young street trees in cast-iron grates a few meters back | 0.7 | 0.2-0.5 | slim trunks along the curb with leafy crowns
+tall potted boxwoods beside the cafe door a few meters back on the right | 0.55 | 0.2-0.5 | clipped round shapes in black planters
+a quiet curb and street a few meters back | 0.6 | 0.2-0.5 | empty asphalt with a few parked sedans along the far curb
+a cast-iron lamppost with hanging flower baskets, far down the sidewalk on the left | 0.5 | 0.2-0.5 | slender black post
+two empty tall high-top tables with stools a few meters back on the left | 0.5 | 0.2-0.5 | dark metal frames
+a wide empty sidewalk a few meters back | 0.6 | 0.2-0.5 | swept grey concrete along the storefronts
+a cluster of empty cafe tables under string lights a few meters back | 0.65 | 0.2-0.5 | round tops, chairs pushed in

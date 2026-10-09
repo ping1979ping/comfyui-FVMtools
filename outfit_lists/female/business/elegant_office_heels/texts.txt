@@ -1,7 +1,4 @@
-# format: text_content | probability | compatible_slots | font_hint
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
 
-"CEO" | 0.10 | accessories | engraved serif
-"BOARD" | 0.06 | accessories | minimal serif
-"FOCUS" | 0.06 | accessories | minimal serif
-"OFFICE" | 0.05 | accessories | clean sans-serif
-"MILAN" | 0.05 | accessories | engraved serif
+# intentionally empty: elegant tailoring and silk blouses carry no lettering, and no monogram or title word belongs on the hardware

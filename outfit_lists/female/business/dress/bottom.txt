@@ -1,15 +1,17 @@
 # slot: bottom
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-sheath dress | 0.85 | 0.7-1.0 | wool,polyester,cotton
-wrap dress | 0.70 | 0.6-0.9 | silk,jersey,cotton
-shift dress | 0.60 | 0.6-0.8 | cotton,linen,polyester
-pencil dress | 0.75 | 0.7-1.0 | wool,polyester
-fit-and-flare dress | 0.55 | 0.6-0.8 | cotton,polyester,wool
-blazer dress | 0.50 | 0.7-0.9 | wool,polyester
-shirt dress | 0.55 | 0.6-0.8 | cotton,linen,silk
-bodycon dress | 0.40 | 0.5-0.7 | jersey,polyester
-a-line dress | 0.60 | 0.6-0.9 | wool,cotton,polyester
-midi wrap dress | 0.50 | 0.6-0.9 | silk,jersey
-peplum dress | 0.45 | 0.7-0.9 | wool,polyester,cotton
-long-sleeve sheath dress | 0.55 | 0.7-1.0 | wool,polyester
+knee-length sheath dress | 0.90 | 0.6-1.0 | wool blend,crepe,ponte
+sleeveless knee-length sheath dress | 0.55 | 0.6-1.0 | crepe,wool blend
+midi wrap dress | 0.75 | 0.55-1.0 | crepe,jersey,silk
+midi shirt dress | 0.65 | 0.5-0.9 | cotton,silk,viscose
+belted knee-length shirt dress | 0.50 | 0.5-0.9 | cotton,crepe
+knee-length fit-and-flare dress | 0.55 | 0.5-0.9 | crepe,ponte
+knee-length blazer dress | 0.50 | 0.65-1.0 | wool blend,crepe
+knee-length A-line dress | 0.60 | 0.55-1.0 | wool blend,crepe
+long-sleeve midi sheath dress | 0.55 | 0.6-1.0 | wool blend,crepe
+knee-length pencil dress | 0.65 | 0.65-1.0 | wool blend,crepe
+knee-length peplum dress | 0.40 | 0.6-1.0 | crepe,wool blend
+knee-length shift dress | 0.45 | 0.5-0.9 | crepe,cotton
+knee-length sweater dress | 0.35 | 0.5-0.85 | wool blend,cashmere
+pleated midi dress | 0.35 | 0.55-1.0 | crepe,polyester

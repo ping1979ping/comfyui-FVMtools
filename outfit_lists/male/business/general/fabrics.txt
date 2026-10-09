@@ -1,16 +1,16 @@
 # format: fabric_name | formality | family | weight
 
+worsted wool | 0.9 | natural | medium
 wool | 0.8 | natural | medium
-cotton | 0.6 | natural | medium
-silk | 0.9 | natural | light
-linen | 0.6 | natural | light
-leather | 0.7 | animal | medium
-suede | 0.7 | animal | medium
-tweed | 0.8 | natural | heavy
+merino wool | 0.75 | natural | light
 cashmere | 0.9 | natural | medium
-polyester | 0.5 | synthetic | medium
-jersey | 0.5 | knit | medium
-felt | 0.6 | natural | medium
-metal | 0.7 | accessories | light
-canvas | 0.4 | natural | heavy
-nylon | 0.4 | synthetic | light
+cotton poplin | 0.7 | natural | light
+cotton twill | 0.6 | natural | medium
+cotton pique | 0.5 | natural | medium
+oxford cloth | 0.6 | natural | medium
+cotton gabardine | 0.7 | natural | medium
+linen blend | 0.55 | natural | light
+silk | 0.9 | natural | light
+leather | 0.75 | animal | medium
+suede | 0.7 | animal | medium
+metal | 0.75 | accessories | light

@@ -1,13 +1,13 @@
 # slot: footwear
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-polished oxfords | 0.95 | 0.8-1.0 | leather
-cap-toe dress shoes | 0.80 | 0.8-1.0 | leather
-sleek derby shoes | 0.65 | 0.7-0.9 | leather
-modern monk-straps | 0.55 | 0.7-1.0 | leather
-plain-toe oxfords | 0.70 | 0.8-1.0 | leather
-sharp wholecut shoes | 0.50 | 0.8-1.0 | leather
-business loafers | 0.55 | 0.6-0.8 | leather
-chelsea boots | 0.45 | 0.7-0.9 | leather
-spit-shined oxfords | 0.55 | 0.8-1.0 | leather
-slim-profile dress shoes | 0.50 | 0.7-0.9 | leather
+cap-toe oxfords | 0.85 | 0.7-1.0 | leather
+plain-toe oxfords | 0.70 | 0.7-1.0 | leather
+plain-toe derby shoes | 0.60 | 0.6-0.95 | leather
+double-monk strap shoes | 0.55 | 0.65-1.0 | leather
+single-monk strap shoes | 0.40 | 0.65-1.0 | leather
+dress loafers | 0.45 | 0.6-0.85 | leather,suede
+penny loafers | 0.40 | 0.6-0.85 | leather
+sleek Chelsea boots | 0.50 | 0.6-0.9 | leather,suede
+wholecut oxfords | 0.35 | 0.75-1.0 | leather
+semi-brogue derby shoes | 0.40 | 0.6-0.9 | leather

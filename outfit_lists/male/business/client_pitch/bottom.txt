@@ -1,13 +1,13 @@
 # slot: bottom
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-sharp suit trousers | 0.95 | 0.8-1.0 | wool
-slim-cut dress trousers | 0.80 | 0.7-1.0 | wool
-flat-front trousers | 0.75 | 0.7-1.0 | wool
-tailored business trousers | 0.85 | 0.7-1.0 | wool
-charcoal dress trousers | 0.70 | 0.8-1.0 | wool
-navy suit trousers | 0.75 | 0.8-1.0 | wool
-modern-cut trousers | 0.65 | 0.7-1.0 | wool
-sharp-creased trousers | 0.60 | 0.8-1.0 | wool
-straight-leg dress pants | 0.55 | 0.7-0.9 | wool
-classic-fit suit trousers | 0.65 | 0.8-1.0 | wool
+slim-cut dress trousers | 0.85 | 0.65-1.0 | worsted wool,wool
+flat-front suit trousers | 0.80 | 0.75-1.0 | worsted wool
+tapered dress trousers | 0.75 | 0.65-1.0 | wool,worsted wool
+straight-leg dress trousers | 0.70 | 0.65-1.0 | worsted wool,wool
+tapered ankle-length trousers | 0.55 | 0.6-0.9 | wool,worsted wool
+pleated dress trousers | 0.45 | 0.7-1.0 | worsted wool,wool
+plain-front dress trousers | 0.65 | 0.65-1.0 | wool,worsted wool
+slim straight-leg suit trousers | 0.60 | 0.7-1.0 | worsted wool
+full-length dress trousers | 0.55 | 0.65-1.0 | worsted wool,wool
+dress chinos | 0.30 | 0.6-0.8 | cotton twill

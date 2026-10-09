@@ -1,13 +1,16 @@
 # format: fabric_name | formality | family | weight
 
-cotton | 0.55 | natural | medium
+cotton jersey | 0.45 | knit | medium
+cotton twill | 0.55 | natural | medium
+cotton poplin | 0.6 | natural | light
+oxford cloth | 0.55 | natural | medium
+cotton pique | 0.5 | natural | medium
+cotton fleece | 0.4 | natural | heavy
+merino wool | 0.7 | natural | light
 wool | 0.7 | natural | medium
-polyester | 0.5 | synthetic | medium
-nylon | 0.45 | synthetic | light
+nylon | 0.4 | synthetic | light
+denim | 0.4 | natural | medium
 leather | 0.7 | animal | medium
 suede | 0.65 | animal | medium
-denim | 0.4 | natural | medium
-canvas | 0.4 | natural | medium
-jersey | 0.5 | knit | medium
+canvas | 0.4 | natural | heavy
 metal | 0.7 | accessories | light
-linen | 0.55 | natural | light

@@ -1,17 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-ceramic coffee mug | 0.85 | 0.02-0.06 | white diner-style cup
-glass sugar dispenser | 0.5 | 0.01-0.04 | chrome-lidded shaker
-small vase with daisies | 0.7 | 0.02-0.06 | mason jar of wildflowers
-checkered tablecloth corner | 0.6 | 0.03-0.08 | red-and-white gingham
-iced tea in mason jar | 0.65 | 0.02-0.06 | condensation and lemon wedge
-wooden clipboard with a plain page | 0.5 | 0.02-0.06 | clipped single sheet
-wire basket of muffins | 0.55 | 0.03-0.08 | blueberry baked goods
-brass watering can | 0.4 | 0.03-0.08 | by the planter
-sleeping dog under table | 0.35 | 0.05-0.12 | golden retriever on pavement
-spectacles resting on a napkin | 0.4 | 0.02-0.06 | folded cloth napkin
-sugar packet caddy | 0.45 | 0.01-0.04 | ceramic holder
-hanging fern basket | 0.6 | 0.03-0.1 | green fronds from awning hook
-parking meter by curb | 0.35 | 0.03-0.08 | old coin-op meter
-small American flag in pot | 0.4 | 0.02-0.05 | stick flag among blooms
+small terracotta pots with herbs on a distant window ledge | 0.55 | 0.02-0.06 | green leaves in orange clay
+small white vases of daisies on far tables | 0.6 | 0.02-0.06 | simple glass jars with white blooms
+small dark green trash can at the curb far down the block | 0.45 | 0.02-0.06 | steel drum with a flat lid
+small red fire hydrant at the far corner | 0.4 | 0.02-0.06 | red painted cast iron
+slim black parking meter far down the curb | 0.35 | 0.02-0.06 | grey steel post with a round head
+small galvanized watering can by the far planter | 0.4 | 0.02-0.06 | silver zinc with a long spout
+small hanging fern basket under the far awning | 0.5 | 0.02-0.06 | green fronds from a hook
+small blue mailbox at the far corner | 0.4 | 0.02-0.06 | blue steel with a rounded top
+small potted lavender on the far railing | 0.45 | 0.02-0.06 | grey-green leaves and purple tips
+small stone planter at the far corner of the patio | 0.4 | 0.02-0.06 | pale concrete with trailing ivy
+small white ceramic mugs on distant tables | 0.5 | 0.02-0.06 | plain glaze on round saucers
+small glass lanterns on the far tables | 0.35 | 0.02-0.06 | clear glass with a tiny flame

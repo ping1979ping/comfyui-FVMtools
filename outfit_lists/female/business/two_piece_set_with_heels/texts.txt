@@ -1,7 +1,4 @@
-# format: text_content | probability | compatible_slots | font_hint
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
 
-"OFFICE" | 0.08 | accessories | clean sans-serif
-"FOCUS" | 0.06 | accessories | minimal serif
-"BOSS" | 0.06 | accessories | engraved serif
-"COO" | 0.05 | accessories | minimal serif
-"NYC" | 0.05 | accessories | bold sans-serif
+# intentionally empty: a coordinated blouse-and-skirt set worn with heels is plain office tailoring, and no wordmark, city name or title is printed on any piece

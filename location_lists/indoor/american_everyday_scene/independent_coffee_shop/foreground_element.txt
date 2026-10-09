@@ -1,15 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-scuffed concrete floor | 0.9 | 0.3-0.4 | polished gray slab with stains
-worn herringbone wood floor | 0.8 | 0.2-0.4 | faded warm planks
-reclaimed table surface rings | 0.8 | 0.2-0.4 | scratched wood with mug marks
-foam-art latte on saucer | 0.6 | 0.1-0.2 | leaf pattern in creamy surface
-faded vintage rug runner | 0.55 | 0.15-0.3 | threadbare Persian pattern
-window sunlight patch | 0.6 | 0.15-0.3 | warm rectangles on floorboards
-dog water bowl by door | 0.35 | 0.05-0.1 | steel dish on small mat
-spilled coffee-bean scatter | 0.4 | 0.05-0.15 | dark glossy beans on counter
-laptop and notebook spread | 0.5 | 0.15-0.3 | open screen beside scribbled pages
-tiled counter ledge | 0.45 | 0.1-0.2 | hand-painted ceramic tiles
-slate tip-jar shelf | 0.35 | 0.05-0.15 | jar with a small chalk-doodled heart
-condensation ring on glass | 0.3 | 0.05-0.1 | wet circle on pane edge
+a wide-plank oak floor | 1.0 | 0.1-0.4 | honey boards with a worn matte finish
+a polished concrete floor | 0.9 | 0.1-0.4 | pale grey with soft reflections from the window
+a dark stained wood plank floor | 0.8 | 0.1-0.4 | narrow boards with a low sheen
+a reclaimed pine plank floor | 0.7 | 0.1-0.4 | warm weathered boards with fine nail lines
+a smooth light grey concrete floor | 0.65 | 0.1-0.4 | fine hairline cracks and a soft sheen
+a pale maple plank floor | 0.6 | 0.1-0.4 | long boards with a satin finish
+a worn walnut plank floor | 0.6 | 0.1-0.4 | dark brown boards with soft scuffs
+a sealed warm grey concrete floor | 0.55 | 0.1-0.4 | faint trowel marks and a matte surface
+a slate-grey stone floor | 0.45 | 0.1-0.4 | large smooth slabs with narrow joints
+a plain oatmeal wool rug on an oak plank floor | 0.4 | 0.1-0.4 | smooth and even, no pattern
+a honey oak plank floor | 0.7 | 0.1-0.4 | long boards with a soft sheen
+a charcoal painted concrete floor | 0.45 | 0.1-0.4 | smooth with a few worn patches

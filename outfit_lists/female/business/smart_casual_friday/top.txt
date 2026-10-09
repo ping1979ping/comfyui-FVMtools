@@ -1,14 +1,16 @@
 # slot: top
 # format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
 
-soft-knit pullover | 0.80 | 0.4-0.7 | cashmere,wool,cotton
-relaxed button-down | 0.75 | 0.5-0.8 | cotton,linen
-fine-gauge cardigan | 0.55 | 0.4-0.7 | cashmere,wool
-chambray shirt | 0.55 | 0.4-0.7 | cotton
-striped breton tee | 0.65 | 0.4-0.6 | cotton
-flowy blouse | 0.65 | 0.5-0.8 | silk,chiffon
-mock-neck top | 0.60 | 0.4-0.7 | cotton,jersey
-ribbed crewneck | 0.55 | 0.4-0.7 | cotton,wool
-classic oxford shirt | 0.60 | 0.5-0.8 | cotton
-silky tank top | 0.45 | 0.4-0.7 | silk,polyester
-short-sleeve sweater | 0.50 | 0.4-0.7 | cotton,wool
+fine-gauge crewneck sweater | 0.80 | 0.4-0.75 | cashmere,wool,cotton
+relaxed button-front shirt | 0.75 | 0.45-0.8 | cotton,linen
+classic oxford shirt | 0.60 | 0.45-0.8 | cotton
+light blue chambray shirt | 0.50 | 0.4-0.7 | cotton
+fine-gauge V-neck sweater | 0.60 | 0.4-0.75 | wool,cashmere,cotton
+fine-gauge turtleneck | 0.50 | 0.4-0.75 | wool,cashmere
+soft-drape blouse | 0.65 | 0.5-0.8 | crepe,viscose
+mock-neck top | 0.55 | 0.4-0.7 | cotton,jersey
+ribbed knit top | 0.50 | 0.4-0.7 | cotton,wool
+boat-neck knit top | 0.50 | 0.4-0.7 | cotton,jersey
+short-sleeve fine-knit top | 0.45 | 0.4-0.7 | cotton,wool
+elbow-sleeve top | 0.45 | 0.45-0.75 | viscose,jersey
+quarter-zip pullover | 0.30 | 0.35-0.6 | wool,cotton

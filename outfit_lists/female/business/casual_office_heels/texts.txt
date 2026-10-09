@@ -1,7 +1,4 @@
-# format: text_content | probability | compatible_slots | font_hint
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
 
-"COFFEE" | 0.10 | accessories | playful handwriting
-"FRIDAY" | 0.08 | top | playful handwriting
-"HUSTLE" | 0.08 | accessories | minimal serif
-"NYC" | 0.08 | accessories | bold sans-serif
-"WORK" | 0.06 | accessories | clean sans-serif
+# intentionally empty: casual office tees and knits stay plain, since a slogan tee would turn the look into weekend wear

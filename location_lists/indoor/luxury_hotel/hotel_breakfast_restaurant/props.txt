@@ -1,17 +1,16 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-silver coffee pot | 0.9 | 0.05-0.15 | polished spouted pitcher
-white teapot with cup | 0.7 | 0.05-0.15 | china service with saucer
-glass jam jar with spoon | 0.6 | 0.05-0.15 | strawberry preserves
-butter dish with knife | 0.55 | 0.05-0.15 | cool pale curls on plate
-cereal bowl with milk | 0.55 | 0.05-0.1 | flakes in white china
-salt and pepper shakers | 0.5 | 0.05-0.1 | small glass pair
-steel serving tongs | 0.55 | 0.05-0.1 | hanging from chafing dish
-honey jar with dipper | 0.5 | 0.02-0.08 | golden jar with wooden stick
-yogurt parfait glass | 0.55 | 0.02-0.08 | layered granola and berries
-small vase with fresh tulips | 0.5 | 0.02-0.08 | colorful stems on table
-folded cream table card | 0.4 | 0.02-0.08 | thick cream card with {a gold border|a small drawn croissant|the word "{MENU|BREAKFAST}"}
-toaster conveyor | 0.4 | 0.02-0.05 | steel bread-toasting machine
-egg cup with spoon | 0.4 | 0.02-0.05 | soft-boiled egg in porcelain
-sugar packet caddy | 0.35 | 0.02-0.05 | small ceramic holder
+small silver coffee pots on a distant white-linen buffet table | 0.8 | 0.02-0.06 | polished
+a small white teapot on a distant empty table by the window | 0.6 | 0.02-0.05 | white china
+small glass jam jars on the far buffet counter | 0.55 | 0.02-0.05 | strawberry preserves
+a small bud vase with white tulips on a distant empty table | 0.6 | 0.02-0.05 | clear glass
+a small stack of white plates at the far end of the buffet counter | 0.55 | 0.02-0.06 | plain china
+tiny salt and pepper shakers on a far white-linen table | 0.4 | 0.01-0.04 | clear glass
+a small glass bowl of berries on the far buffet counter | 0.5 | 0.02-0.05 | red and blue fruit
+small white coffee cups stacked at the distant coffee station | 0.55 | 0.02-0.05 | white porcelain
+a small glass pitcher of orange juice on the far juice bar | 0.5 | 0.02-0.05 | bright citrus
+small folded white napkins on a distant empty table | 0.5 | 0.02-0.05 | crisp linen
+a small silver sugar bowl on a distant empty table | 0.4 | 0.02-0.05 | polished
+a small ceramic honey jar on the far buffet counter | 0.4 | 0.02-0.05 | golden
+a small potted orchid on a distant sideboard | 0.45 | 0.02-0.05 | white blooms
