@@ -6,11 +6,11 @@ Behavior per the user's brief:
   - Dynamic optional STRING inputs (``input_1``, ``input_2``, ...). The JS
     side auto-spawns the next slot when the previous one is connected.
   - Each connected input is parsed as JSON; objects merge into the
-    title's child object via deep-merge (last-wins on scalar collision,
-    but new sub-fields are added recursively); arrays append under
-    ``inputs``; bare strings land under their slot name (``input_3``).
-  - Reuses ``core/smp/merge.deep_merge`` — same semantics the SMP
-    Aggregator already uses.
+    title's child object (new sub-fields are added recursively; when two
+    inputs fill the same text key, ``on_conflict`` decides: ``keep_both``
+    lists both side by side, ``last_wins`` keeps the later one; an empty
+    value never replaces a filled one); arrays append under ``inputs``;
+    bare strings land under their slot name (``input_3``).
 
 The slot keys are deliberately *not* underscore-prefixed: ``natural`` and
 ``sentences`` drop every ``_``-key as generation metadata, and a prose
@@ -32,7 +32,6 @@ try:
         parse_input,
     )
     from ...core.jb.sentences import emit_sentences
-    from ...core.smp.merge import deep_merge
 except ImportError:  # pragma: no cover
     from core.jb.serialize import (
         ALL_FORMATS,
@@ -42,7 +41,6 @@ except ImportError:  # pragma: no cover
         parse_input,
     )
     from core.jb.sentences import emit_sentences
-    from core.smp.merge import deep_merge
 
 
 # Maximum number of dynamic optional input slots we declare on the Python
@@ -52,6 +50,64 @@ MAX_INPUTS = 24
 # Bucket for array inputs. Public (no underscore) so the natural / sentences
 # formats keep the content; see module docstring.
 ARRAY_KEY = "inputs"
+
+KEEP_BOTH = "keep_both"
+LAST_WINS = "last_wins"
+
+
+def _is_empty(value) -> bool:
+    return value is None or (isinstance(value, str) and not value.strip())         or (isinstance(value, (dict, list)) and not value)
+
+
+def _as_text_list(value):
+    """A str or a list of str as a list; anything else -> None (not mergeable)."""
+    if isinstance(value, str):
+        return [value]
+    if isinstance(value, list) and all(isinstance(x, str) for x in value):
+        return list(value)
+    return None
+
+
+def _merge_inputs(base: dict, overlay: dict, keep_both: bool) -> dict:
+    """Merge one stitched fragment into ``base``.
+
+    dicts merge recursively and lists append (as ``deep_merge`` does). For a text
+    value that two fragments both fill:
+
+    * ``keep_both`` - both stay, side by side: ``mood: "calm"`` + ``mood: "tense"``
+      become ``mood: ["calm", "tense"]`` (identical texts collapse to one).
+    * otherwise the later one wins (the old behaviour).
+
+    An EMPTY value never wipes a filled one: a builder row ``location`` with every
+    child disabled emits ``{"location": ""}``, which used to replace a whole Location
+    Block with an empty string - the scene lost its location without any error.
+    ``None`` still deletes the key (same as ``deep_merge``).
+    """
+    out = copy.deepcopy(base)
+    for key, value in overlay.items():
+        if value is None:
+            out.pop(key, None)
+            continue
+        if key not in out:
+            out[key] = copy.deepcopy(value)
+            continue
+        existing = out[key]
+        if isinstance(existing, dict) and isinstance(value, dict):
+            out[key] = _merge_inputs(existing, value, keep_both)
+        elif isinstance(existing, list) and isinstance(value, list):
+            out[key] = existing + copy.deepcopy(value)
+        elif _is_empty(value) and not _is_empty(existing):
+            continue
+        elif keep_both and (old := _as_text_list(existing)) is not None                 and (new := _as_text_list(value)) is not None:
+            merged = list(old)
+            for text in new:
+                if text.strip() and text.strip() not in (t.strip() for t in merged):
+                    merged.append(text)
+            merged = [t for t in merged if t.strip()]
+            out[key] = merged[0] if len(merged) == 1 else merged
+        else:
+            out[key] = copy.deepcopy(value)
+    return out
 
 
 class FVM_JB_Stitcher:
@@ -70,9 +126,11 @@ class FVM_JB_Stitcher:
     DESCRIPTION = (
         "Wraps multiple JSON fragments under a single top-level title.\n\n"
         "Each input is parsed as JSON; objects deep-merge into the title's\n"
-        "child object (same-level scalar leaves: last input wins; new\n"
-        "sub-fields underneath are added recursively). Arrays append\n"
-        "under 'inputs'. Bare strings keep their slot name (input_3).\n\n"
+        "child object (new sub-fields are added recursively). When two\n"
+        "inputs fill the same text key, on_conflict decides: keep_both\n"
+        "shows both side by side, last_wins keeps the later one. An empty\n"
+        "value never replaces a filled one. Arrays append under 'inputs'.\n"
+        "Bare strings keep their slot name (input_3).\n\n"
         "output_format 'sentences' writes prose and puts the title in\n"
         "front: 'character_1: The scene takes place ...'.\n\n"
         "Connect input_1 → the next input slot auto-spawns."
@@ -89,11 +147,21 @@ class FVM_JB_Stitcher:
                               "pretty_json / compact_json: structured, for "
                               "Ideogram 4 style JSON prompting."}),
         }
-        optional = {f"input_{i}": ("STRING", {"forceInput": True})
-                    for i in range(1, MAX_INPUTS + 1)}
+        optional = {
+            "on_conflict": ([LAST_WINS, KEEP_BOTH], {
+                "default": LAST_WINS,
+                "tooltip": "What happens when two inputs fill the SAME key with different "
+                           "text (e.g. both have 'mood').\n\n"
+                           "keep_both - both texts stay, side by side in the output.\n"
+                           "last_wins - the later input replaces the earlier one.\n\n"
+                           "Sub-objects always merge, lists always append, and an empty "
+                           "value never replaces a filled one."}),
+        }
+        optional.update({f"input_{i}": ("STRING", {"forceInput": True})
+                         for i in range(1, MAX_INPUTS + 1)})
         return {"required": required, "optional": optional}
 
-    def stitch(self, title, output_format, **kwargs):
+    def stitch(self, title, output_format, on_conflict=LAST_WINS, **kwargs):
         merged: dict = {}
 
         # Collect inputs in declaration order (input_1, input_2, ...).
@@ -109,7 +177,7 @@ class FVM_JB_Stitcher:
         for idx, value in inputs:
             parsed = parse_input(value) if isinstance(value, str) else value
             if isinstance(parsed, dict):
-                merged = deep_merge(merged, parsed)
+                merged = _merge_inputs(merged, parsed, on_conflict == KEEP_BOTH)
             elif isinstance(parsed, list):
                 # Append into the shared array bucket — keeps non-merging
                 # array data accessible without clobbering a dict-merge case.
