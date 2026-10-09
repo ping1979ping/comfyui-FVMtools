@@ -1,6 +1,6 @@
 # /build-outfit-set — FVMtools Outfit Set Builder & Verifier
 
-Build a new outfit set in `outfit_lists/<female|male>/<category>/<leaf>/` with automatic doublette verification.
+Build a new outfit set in `outfit_lists/<female|male>/<category>/<leaf>/`, or rewrite an existing one in place, with automatic doublette verification and a Krea 2 render check.
 
 ## Input
 
@@ -11,6 +11,8 @@ Expected form: a hierarchical slug + theme description, e.g.
 - `male/streetwear/y2k_baggy Y2K vibes, baggy pants, chunky sneakers`
 
 A plain theme + gender (`elegant leggings female, …`) is accepted too — derive the slug in Step 1 and confirm it before writing files.
+
+Or `rewrite <slug> [<slug> …]` for sets that already exist: then follow **Rewrite mode** at the end; Step 1 is skipped because the slug stays.
 
 ## Background — why verification matters
 
@@ -46,10 +48,11 @@ The gender segment never appears (the outfit string describes clothes, not a per
 - **category** — a noun phrase that fits *"a … look"*: `business`, `date_night`, `formal_event`, `boudoir_lingerie`, `dress_with_heels`, `teen`. Not `events`, not `dresses_heels`, not `lingerie_1940`. Prefer an existing category (`ls outfit_lists/female outfit_lists/male`) over inventing one.
 - **leaf** — a noun phrase that fits *"in the … style"*: `grocery_run`, `first_date_heels`, `two_piece_set_with_heels`, `competition_meet_leotard`. Use `general` for the category's default set.
 - **no abbreviations, no country codes**: `two_piece_set` not `twoset`, `leotard` not `leo`, `t_shirt` not `tshirt`, `german_` not `_de`.
+- **never a flat slug** (`general_female`): the dropdowns list only `<gender>/<category>/<leaf>`. The old flat sets live in `outfit_lists/_archive/`, and saved workflows with a flat slug still resolve through `_resolve_legacy_outfit_slug()` in `core/outfit_lists.py`.
 
 ### Step 2: Inspect a reference set
 
-Read `outfit_lists/female/night_out/general/` (or `outfit_lists/male/casual/general/` etc.) to understand format.
+Read `outfit_lists/female/night_out/general/` (or `outfit_lists/male/casual/general/` etc.) to understand the format. For the Krea 2 style (Step 3c), read a set that was render-checked: `outfit_lists/female/business/board_meeting_suit_with_heels/` or any `male/business/*`.
 
 Each set has 10 files:
 - `top.txt` / `bottom.txt` / `footwear.txt` / `outerwear.txt` / `accessories.txt` / `bag.txt` / `headwear.txt` — format: `garment_name | probability | formality_min-formality_max | fabric1,fabric2,...`
@@ -86,6 +89,12 @@ Practical patterns:
 - Avoid `faux_fur` on items named `fur X` — rename to `plush X`.
 - `patent leather X` is always a doublette with `leather` fabric — use `patent X`.
 
+**Variants `{a|b|c}`** work in garment names, prints and texts: `chenille letter "{A|M|S}"`, weights `{%3%a|b}`, an empty option `{|…}`. Pipes inside braces do not split fields. The engine resolves them per seed with its own salt, so the shared RNG stream stays unchanged, and the Step 5 validator sees the resolved text.
+
+**Prints read after "with".** The engine appends a print as `<garment> with <print>`: `wool blend knee-length suit skirt with fine pinstripes`. Write print names as noun phrases that finish that sentence (`fine pinstripes`, `small houndstooth check`), not as adjectives (`pinstriped`).
+
+**No implied writing in garment or print names.** `logo tee`, `slogan print`, `band merch`, `team jersey` and `monogram` render as gibberish. Either describe them without text (`small embroidered crest`), or give the exact short wording in quotes with options: `varsity number "{7|23|88}"`, `embossed monogram "{A|M|S}"`. Real brands are fine; quote only the lettering the real logo carries, and describe a logo without lettering instead of quoting it. Quotes always come in pairs (the JB `sentences` test rejects an unpaired `"`). Longer lettering with sourcing belongs in `texts.txt` (Step 3b).
+
 ### Step 3b: texts.txt — the lettering rules
 
 Two decisions, in this order.
@@ -94,7 +103,9 @@ Two decisions, in this order.
 
 Ask whether a real person in this setting wears a garment with words on it. Campus,
 sports, camp, beach-town souvenir, band merch, bachelorette, workwear: yes. Black-tie,
-power suit, evening gowns, boudoir, sheer eveningwear: no. When the answer is no, still
+power suit, evening gowns, boudoir, sheer eveningwear: no. All `business` sets are
+"no": the rewrite removed their old brand wordmarks (TUMI, PATAGONIA …) and left the
+file intentionally empty. When the answer is no, still
 write the file — with a reason specific to this set, not a copied boilerplate line:
 
 ```
@@ -142,9 +153,9 @@ reference for this style is `female/gymnastics/competition_meet_leotard/texts.tx
 - Unlike `prints.txt`, text entries are **not** filtered by formality — an entry can
   surface at any formality value. Weight it via field 2 instead.
 
-### Step 3c: Krea 2 rules for headwear, heels and realism (render-verified 2026-10-09)
+### Step 3c: Krea 2 rules for headwear, heels and realism (render-verified)
 
-These come from fixed-seed A/B renders on Krea 2 (`/krea2-set-test`, 4 seeds per variant):
+These come from fixed-seed A/B renders on Krea 2 (`/krea2-set-test`, 4 seeds per variant, see Provenance at the end). `tests/unit/test_outfit_hairstyle_headwear.py` checks the engine side (no colour on a hairstyle, `business_executive` always draws it, heels in the `*_with_heels` sets):
 
 - **Headwear is the hairstyle slot, and it keeps the face in the picture.** Write the style plus, at most, a small *colourless* hair accessory. End every entry with a face cue:
   `smooth low chignon at the nape, the face turned toward the camera | 0.9 | 0.6-1.0 | -`
@@ -156,6 +167,7 @@ These come from fixed-seed A/B renders on Krea 2 (`/krea2-set-test`, 4 seeds per
 - **No hair colour, no hair length** (`long`, `short`, `shoulder-length`, `bob`, `pixie`, `blonde`, `dark`…). The person prompt or LoRA decides those.
 - **No headbands, and no coloured hair accessories.** `slim black silk headband` turned the hair grey in 4 of 4 seeds, and a colourless `slim headband` did it in 3 of 4. `tortoiseshell claw clip` gave grey-blonde streaks. Plain `small claw clip`, `slim barrette`, `thin hair pin` and `pearl hair pin` are fine.
 - **Heels say "heel".** Write every footwear entry so the heel is explicit, as one clause: `pointed-toe pumps with a slim three-inch heel`, `slingback pumps with a block heel`. Never write a shoe close-up phrase (`focus on the shoes`), because Krea zooms in on it.
+- **The set name is a promise.** A set called `*_with_heels` holds heels only, no flats or loafers. Other business sets may have flats or loafers, but write the heel or sole out (`loafers with a low stacked heel`).
 - **Realistic business means** knee-length or midi hems, no corset or bustier tops, nothing sheer or sequined outside an evening set, no pleated or plaid minis. The old `elegant_office_heels` produced exactly those, and they read as costume, not workwear.
 - **No person words** in any garment string. Outfit strings describe clothes, and Krea paints an extra person otherwise.
 - **ID badges and lanyards** count as implied writing. Write them as `blank white ID card` at low probability, or leave them out.
@@ -180,6 +192,7 @@ sys.path.insert(0, "D:/AI/ComfyUI/ComfyUI/custom_nodes/comfyui-FVMtools")
 from core.outfit_engine import generate_outfit
 
 SET = "<female|male>/<category>/<leaf>"
+PRESETS = ("general", "night_out", "date_night")  # business sets: add "business_executive"
 
 def check_slot(slot_text):
     clean = re.sub(r"#[^#]+#", "", slot_text).strip().replace("_", " ")
@@ -188,7 +201,7 @@ def check_slot(slot_text):
             for i in range(len(words)-1) if words[i].lower() == words[i+1].lower()]
 
 issues = []
-for preset in ("general", "night_out", "date_night"):
+for preset in PRESETS:
     for formality in (0.4, 0.5, 0.6, 0.7):
         for seed in range(1, 51):
             try:
@@ -208,7 +221,7 @@ for preset in ("general", "night_out", "date_night"):
                 for w, ctx in check_slot(s):
                     issues.append((preset, formality, seed, w, ctx, s))
 
-print(f"600 outfits tested, {len(issues)} doublette issues")
+print(f"{len(PRESETS) * 4 * 50} outfits tested, {len(issues)} doublette issues")
 seen = set()
 for it in issues:
     k = (it[3], it[4])
@@ -269,22 +282,41 @@ For each reported collision, edit the offending garment row:
 
 Re-run Step 5 until validator reports **0 issues**.
 
+### Step 6b: Render check (mandatory)
+
+Render the set with `/krea2-set-test`, paired with a calm location so that only the outfit varies, and **look at the sheet yourself**:
+
+```bash
+D:/AI/ComfyUI/ComfyUI/venv/Scripts/python.exe scripts/krea2_set_check.py \
+  --location outdoor/suburban_office_park/landscaped_front_entrance \
+  --outfit "<slug>" --style <preset the set is used with> \
+  --seeds 11 22 --accessories --bag --port 8189 --out "<scratchpad>/<leaf>.jpg"
+```
+
+The default person is a 45-year-old woman; for `male/*` sets pass `--person "A 45-year-old man, …"` with the same framing. A set passes when, on every seed: one person, head and shoes in frame, the face toward the camera, no colour in the hair, hems and heels as written, no gibberish lettering. The JSONL next to the sheet has the exact outfit text per tile; fix the entry, render the same seeds again.
+
 ### Step 7: Unit tests + commit
 
 ```bash
 cd D:/AI/ComfyUI/ComfyUI/custom_nodes/comfyui-FVMtools && \
-  D:/AI/ComfyUI/ComfyUI/venv/Scripts/python.exe -m pytest tests/unit/test_outfit_lists.py tests/unit/test_set_naming.py -q
+  D:/AI/ComfyUI/ComfyUI/venv/Scripts/python.exe -m pytest tests/unit/test_outfit_lists.py tests/unit/test_set_naming.py tests/unit/test_outfit_hairstyle_headwear.py -q -p no:cacheprovider
 ```
 
-Must end fully green (a `test_set_naming.py` failure means: rename the directory, not the test). Then:
+Must end fully green (a `test_set_naming.py` failure means: rename the directory, not the test). Then run the full suite: it is fully green, so any red test after your change is yours.
 
 ```bash
-cd D:/AI/ComfyUI/ComfyUI/custom_nodes/comfyui-FVMtools && \
-  git add outfit_lists/<slug>/ && \
-  git commit -m "feat: add <slug> outfit set
+git status --short && \
+  D:/AI/ComfyUI/ComfyUI/venv/Scripts/python.exe -m pytest tests/unit -q -p no:cacheprovider 2>&1 | tail -3
+```
 
-<one-line theme description>. Verified doublette-free across 600 outfit
-permutations (3 presets x 4 formalities x 50 seeds)."
+Other sessions may be working in the same repo. Leave changes you did not make alone, add only your own paths (never `git add -A`), and if their work-in-progress turns the suite red, check your own commit on a clean export (`mkdir -p <scratchpad>/clean && git archive HEAD | tar -x -C <scratchpad>/clean`, then run pytest there).
+
+```bash
+git add outfit_lists/<slug>/ && \
+  git commit -m "feat(outfit): add <slug> outfit set
+
+<one-line theme description>. Verified doublette-free across <n> outfit
+permutations (<presets> x 4 formalities x 50 seeds), render-checked on <seeds>."
 ```
 
 ## Definition of Done
@@ -292,13 +324,24 @@ permutations (3 presets x 4 formalities x 50 seeds)."
 - [ ] Directory `outfit_lists/<female|male>/<category>/<leaf>/` has all 10 files — `texts.txt` included
 - [ ] Slug reads as a sentence (*The outfit is a <category> look, in the <leaf> style.*) — `test_set_naming.py` green
 - [ ] Each slot file has 10-20 items (headwear may have 3-6)
+- [ ] No implied writing in garment or print names; any lettering is quoted, short and paired
 - [ ] `texts.txt` either has 4-12 entries that `load_texts()` actually parses, or is
       deliberately empty with a set-specific reason in the header
 - [ ] Names in `texts.txt` are real wherever research could find them, and sourced in
       the header; any invented fallback is marked as such
-- [ ] Validator reports **0 doublettes** over 600 permutations
-- [ ] `test_outfit_lists.py` green (`50 passed`)
-- [ ] Committed with descriptive message
+- [ ] Validator reports **0 doublettes** over all permutations
+- [ ] Render sheet inspected: head and shoes in frame, frontal face, no colour in the hair
+- [ ] `test_outfit_lists.py`, `test_set_naming.py`, `test_outfit_hairstyle_headwear.py` and the full suite green
+- [ ] Committed with explicit paths and a descriptive message
+
+## Rewrite mode — existing sets in place
+
+1. **Keep the slug and the file names** (saved workflows reference the slug). Keep the theme, make it realistic and wearable today.
+2. **Rewrite every file** to Step 3, 3b and 3c, then run Steps 5 to 7.
+3. **Disarm the generator scripts.** `scripts/gen_*.py` (`gen_dresses_underwear_sets.py`, `gen_everyday_sets.py`, …) may still hold the set's old data, and `--force` would write it back. Remove the block and leave a comment in its place.
+4. **Tests that pin an entry break.** When a test expects one exact entry of the set (`polished low chignon`), change the test to check the behaviour over many draws (every hairstyle draw has a face cue), not the entry. Never weaken it to make it pass.
+5. **Many sets at once:** at most 6 sub-agents (Sonnet), each with a group of sets, writing only in their own set folders, no commits. Each runs Step 5 and Step 5b and reports the raw output. The render check, the verdict and the commit stay with the orchestrator.
+6. **Commit per group:** `refactor(lists): rewrite <group> outfit sets to the Krea 2 rules`, listing the sets and the render verdict.
 
 ## Gotchas
 
@@ -318,3 +361,17 @@ permutations (3 presets x 4 formalities x 50 seeds)."
 - **User sees prompt at inference time**: doublettes don't crash anything; they just
   read awkward. But they can confuse SD/SDXL tokenizers — `silk silk blouse` may bias
   toward texture over silhouette. Worth fixing.
+- **Server code is loaded at start.** List files are re-read on every call, but a new
+  `style_preset` or engine change reaches a running ComfyUI only after a restart; until
+  then the preset fails validation with `value not in list`. `krea2_set_check.py`
+  builds the prompts locally and already uses the new code.
+
+## Provenance (dated)
+
+- 2026-10-07: implied-writing pass over garment and print names (32c41a5: logos,
+  slogans, monograms, merch as text-free descriptions or short quoted wording with
+  `{A|B}` options; user rule: real brands fine, quote only lettering the logo carries),
+  brace-aware outfit loader (f2b0653).
+- 2026-10-09: fixed-seed A/B renders on Krea 2 (cielbleu + turbo LoRA, stock Turbo) gave
+  Step 3c; 8 `female/business/*_with_heels` sets built to it (1879d83); all 13 older
+  female and 8 male `business` sets rewritten and render-checked (3b3223a).

@@ -45,7 +45,7 @@ Per tile, check:
 | head + shoes in frame | head cut at the top, close-up on shoes | shoe-centric outfit text, missing framing sentence → keep shoes one clause; headwear entry that names the face |
 | props small and far | mug / lamp / plant huge beside the subject | prop without a size + far placement, object in `foreground_element` → rewrite per Krea 2 rules |
 | background reads as the place | flat wall, generic studio | background too short or an object list → one area sentence across the frame |
-| clean surfaces | smeared blotches, mosaic patches on the floor | busy floor pattern (carpet tile, mosaic) → plain floor wording |
+| clean surfaces | smeared blotches, mosaic patches on the floor | first the preset: `cielbleu` doubles the turbo LoRA and smears floors (see below); on `cielbleu_native` a busy floor pattern (carpet tile, mosaic) → plain matte floor wording |
 | no gibberish text | fake letters on signs, screens, menus | implied writing → blank / pictogram / exact quoted word |
 | realism | CGI look, glossy stock photo, oversaturated | luxury adjectives, fantasy words → mundane, concrete materials and light |
 | outfit as written | wrong garment, colour on hair, missing heels | engine output (check the JSONL text first), doublettes, colour tag on a hairstyle |
