@@ -3,7 +3,12 @@
 import pytest
 
 from core.outfit_engine import generate_outfit, generate_outfit_records
-from core.outfit_lists import get_available_sets
+from core.outfit_lists import (
+    _get_lists_path,
+    _resolve_legacy_outfit_slug,
+    get_available_sets,
+    get_list_file_path,
+)
 
 
 # ─── generate_outfit_records core helper ─────────────────────────────────
@@ -130,4 +135,15 @@ def test_node_input_types_advertises_smp_categories():
 
 def test_records_set_dropdown_includes_known_sets():
     sets = get_available_sets()
-    assert "general_female" in sets
+    assert "female/general/general" in sets
+    assert "male/casual/general" in sets
+    # Flat legacy slugs are no longer listed; they resolve via the fallback.
+    assert "general_female" not in sets
+
+
+def test_legacy_flat_slug_resolves_to_hierarchical_set():
+    """Saved workflows that still say general_female keep working."""
+    assert (_resolve_legacy_outfit_slug("general_female", _get_lists_path())
+            == "female/general/general")
+    top = get_list_file_path("general_female", "top").replace("\\", "/")
+    assert top.endswith("female/general/general/top.txt")

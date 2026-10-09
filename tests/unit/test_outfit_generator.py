@@ -37,10 +37,13 @@ class TestSchema:
         required_keys = list(inputs["required"].keys())
         assert required_keys[0] == "outfit_set"
 
-    def test_outfit_set_contains_general_female(self):
+    def test_outfit_set_contains_female_general_general(self):
+        # The flat slug general_female moved to female/general/general in the
+        # hierarchy migration (12b0caa); the dropdown lists the new path.
         inputs = FVM_OutfitGenerator.INPUT_TYPES()
         outfit_sets = inputs["required"]["outfit_set"][0]
-        assert "general_female" in outfit_sets
+        assert "female/general/general" in outfit_sets
+        assert "general_female" not in outfit_sets
 
     def test_all_enable_checkboxes_exist(self):
         inputs = FVM_OutfitGenerator.INPUT_TYPES()
