@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-acorn cap collection in a pocket | 0.4 | 0.02-0.05 | kid treasure
-thermos shared at the wall | 0.45 | 0.02-0.08 | cap-cup steam
-binoculars raised at a knock | 0.4 | 0.02-0.08 | woodpecker hunt
-orange beanie for the season | 0.5 | 0.02-0.08 | visibility choice
-walking stick from the deadfall | 0.45 | 0.02-0.08 | thumb-worn knot
-leaf pressed into a paperback | 0.35 | 0.02-0.05 | maple keeper
-trail bar unwrapped one-handed | 0.45 | 0.02-0.06 | glove in teeth
-phone camera aimed at the canopy | 0.45 | 0.02-0.08 | color panorama
-dog's found stick oversized | 0.45 | 0.03-0.1 | proud carry
-seed heads picked off socks | 0.4 | 0.02-0.06 | hitchhiker burrs
-compass checked out of habit | 0.3 | 0.02-0.05 | baseline bearing
+small acorns on a far flat boulder | 0.4 | 0.02-0.06 | brown caps and pale nuts
+small orange mushrooms at the base of a far trunk | 0.45 | 0.02-0.06 | slim stems, round caps
+small grey bracket fungi on a far fallen log | 0.4 | 0.02-0.06 | stacked fans
+a small birdhouse on a far tree trunk | 0.35 | 0.02-0.06 | plain grey wood
+a small stone cairn on a far boulder | 0.35 | 0.02-0.06 | three flat stones
+small red berries on a far shrub on the left | 0.4 | 0.02-0.06 | bright against dark leaves
+a small leaf nest high up in a far oak | 0.35 | 0.02-0.06 | dark and loose
+a small stack of split logs at the back near the far wall | 0.4 | 0.02-0.06 | grey and neat
+a thin spider web between far twigs | 0.3 | 0.02-0.06 | pale threads
+a small woodpecker hole in a far dead trunk | 0.35 | 0.02-0.06 | dark round opening
+a small empty wooden bench far down the path | 0.3 | 0.02-0.06 | grey planks
+a small rusty bucket by the far stone wall | 0.3 | 0.02-0.06 | dark iron, upside down

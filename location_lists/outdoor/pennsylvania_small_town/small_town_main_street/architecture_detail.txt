@@ -1,14 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-sidewalk slabs heaved by roots | 0.6 | 0.1-0.3 | tilted joints
-curb painted for the fire zone | 0.5 | 0.05-0.15 | yellow chipped stripe
-cornerstone carved with the year "{1912|1925|1898}" | 0.4 | 0.02-0.08 | weathered stone
-transom windows over the doors | 0.45 | 0.05-0.15 | gold-leaf remnants
-cellar doors in the sidewalk | 0.4 | 0.05-0.15 | steel diamond plate
-brick sidewalk section from restoration | 0.45 | 0.1-0.25 | herringbone patch
-utility pole layered with staples | 0.5 | 0.05-0.15 | staples and torn paper scraps
-storm drain with a painted fish | 0.4 | 0.02-0.08 | painted fish outline
-alley gap between buildings | 0.45 | 0.1-0.3 | dumpster glimpse
-second-story apartments over shops | 0.5 | 0.2-0.4 | AC units in windows
-flag bracket on every other pole | 0.45 | 0.03-0.1 | hanging fabric banners with simple stripes
+a brick cornice along the roofline across the street | 0.6 | 0.05-0.2 | stepped brick courses at the top
+arched brick window heads on the upper floors far across the street | 0.55 | 0.05-0.2 | shallow arches over each window
+white window trim on the upper floors far across the street | 0.5 | 0.05-0.2 | thin painted frames
+a dark green canvas awning over a far shop door | 0.55 | 0.05-0.2 | plain fabric, straight edge
+cast-iron storefront columns along the far side | 0.45 | 0.05-0.2 | slim dark green posts
+a stone window sill row on the far upper floors | 0.4 | 0.05-0.2 | pale narrow ledges
+a brick chimney above the far roofline on the left | 0.4 | 0.05-0.2 | stone-capped, dark with age
+a narrow transom window above a far doorway | 0.4 | 0.05-0.2 | small rectangular glass pane
+a slim black downspout down a far brick wall | 0.4 | 0.05-0.2 | vertical metal tube
+a thin wrought-iron balcony rail on a far upper window | 0.35 | 0.05-0.2 | black scrollwork
+a low sandstone step at a far shop entrance | 0.4 | 0.05-0.2 | pale block

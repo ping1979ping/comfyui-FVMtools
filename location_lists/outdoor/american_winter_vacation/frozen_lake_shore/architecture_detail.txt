@@ -1,14 +1,13 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-booming crack rolling under the ice | 0.5 | 0.1-0.3 | whale-song thunder
-clear black ice windows between snow | 0.5 | 0.1-0.3 | bubbles locked mid-rise
-shore stones capped in ice helmets | 0.45 | 0.05-0.2 | glazed cobbles
-frost flowers blooming on new ice | 0.4 | 0.03-0.12 | feather gardens
-wind-polished slick streaks | 0.45 | 0.1-0.3 | mirror lanes
-slush layer hiding under fresh snow | 0.4 | 0.05-0.2 | grey surprise
-ice ridge sheared and refrozen | 0.4 | 0.05-0.2 | broken stacked panes
-reed stems cased in glass | 0.4 | 0.03-0.12 | crystal straws
-snow squeak pitch rising with the cold | 0.45 | 0.05-0.2 | temperature audible
-dock ladder locked in mid-air | 0.35 | 0.02-0.08 | frozen reach
-bubbles stair-stepped down the black | 0.4 | 0.05-0.15 | frozen ascent
+a thin wooden dock post far along the shore | 0.55 | 0.05-0.2 | grey, capped with snow
+a small grey boathouse roof far down the shoreline | 0.5 | 0.05-0.2 | snow along the ridge
+a slim utility pole at the far edge of the woods | 0.45 | 0.05-0.2 | dark with a thin line
+a low stone wall along the far bank | 0.45 | 0.05-0.2 | snow on top
+a narrow gap in the treeline at the far end of the shore | 0.4 | 0.05-0.2 | dark opening between trunks
+a small timber cabin far back among the trees | 0.5 | 0.05-0.2 | white roof, dark walls
+a thin bare flagpole far down the shore | 0.35 | 0.05-0.2 | plain pole, no flag
+a low dock railing at the far edge of the pier | 0.4 | 0.05-0.2 | grey rails under snow
+a narrow stone chimney above the far cottage roof | 0.4 | 0.05-0.2 | grey stone
+a small wooden shed far back at the treeline on the right | 0.4 | 0.05-0.2 | closed, snow on the roof

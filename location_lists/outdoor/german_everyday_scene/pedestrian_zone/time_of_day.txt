@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-early morning light | 0.85 | - | -
-bright mid morning | 0.85 | - | -
-flat overcast midday | 0.9 | - | -
-early afternoon glare | 0.7 | - | -
-late afternoon long shadows | 0.9 | - | -
-golden hour before sunset | 0.8 | - | -
-blue hour after sunset | 0.6 | - | -
-dusk with street lights coming on | 0.8 | - | -
-grey commuter morning | 0.85 | - | -
-overcast early evening | 0.8 | - | -
+soft overcast late-morning light | 1.0 | - | -
+bright mid-morning sun | 0.9 | - | -
+warm early-afternoon sunlight | 0.85 | - | -
+golden late-afternoon light | 0.8 | - | -
+gentle early morning light | 0.6 | - | -
+soft evening light after sunset | 0.5 | - | -
+blue hour with a pale sky | 0.4 | - | -
+midday sun with short shadows | 0.6 | - | -
+low evening sun along the facades | 0.5 | - | -
+even grey afternoon light | 0.7 | - | -

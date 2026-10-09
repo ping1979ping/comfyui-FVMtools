@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-drying rack on the balcony | 0.85 | 0.2-0.5 | folding aluminium frame
-plastic balcony chair | 0.8 | 0.15-0.4 | weathered white plastic
-planters along the railing | 0.75 | 0.15-0.4 | cracked terracotta
-small folding table | 0.6 | 0.15-0.35 | scratched plastic top
-storage box against the wall | 0.5 | 0.15-0.35 | sun-faded lid
-bicycle wedged in the corner | 0.4 | 0.15-0.4 | rusted chain
-watering can beside the planters | 0.6 | 0.05-0.2 | faded plastic
-laundry basket on the floor | 0.55 | 0.1-0.3 | cracked plastic weave
-parasol folded against the wall | 0.35 | 0.1-0.3 | dusty canvas
-herb pots on the ledge | 0.55 | 0.05-0.2 | dry soil surface
-broom leaning in the corner | 0.4 | 0.1-0.25 | worn bristles
+a slim white-painted steel railing along the far edge of the balcony | 1.0 | 0.2-0.5 | thin vertical bars
+a row of terracotta planters with green herbs along the railing a few meters back | 0.7 | 0.2-0.5 | small round pots
+an empty folded wooden chair leaning against the wall a few meters back on the left | 0.55 | 0.2-0.5 | pale slats
+an empty small round bistro table a few meters back on the right | 0.6 | 0.2-0.5 | black metal top
+an empty white drying rack standing a few meters back on the right | 0.5 | 0.2-0.5 | folded metal frame
+a flower box with trailing ivy on the far railing | 0.6 | 0.2-0.5 | dark green leaves
+a tall potted evergreen shrub in the far corner of the balcony | 0.55 | 0.2-0.5 | dark glazed pot
+a rolled-up grey awning along the top of the balcony a few meters back | 0.4 | 0.2-0.5 | plain fabric
+a white-framed glass door at the back of the balcony on the left | 0.45 | 0.2-0.5 | closed, dark reflection
+a grey plastic storage box in the corner a few meters back on the right | 0.4 | 0.2-0.5 | closed lid
+two stacked white plastic chairs in the corner a few meters back on the right | 0.4 | 0.2-0.5 | simple moulded shape
+a tall plant stand with a green fern a few meters back on the left | 0.45 | 0.2-0.5 | black metal frame
+a low white plaster wall between balconies a few meters back on the right | 0.4 | 0.2-0.5 | smooth and plain

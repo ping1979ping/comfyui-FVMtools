@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-mild sunny air | 0.9 | - | -
-clear blue sky with a light breeze | 0.85 | - | -
-scattered soft clouds | 0.6 | - | -
-warm still afternoon | 0.65 | - | -
-cool fresh sea air | 0.55 | - | -
-dappled sun through leaves | 0.5 | - | -
-thin morning haze over the bay | 0.4 | - | -
-fresh air after a light shower | 0.3 | - | -
-gentle breeze rustling the umbrellas | 0.5 | - | -
-mild overcast sky | 0.35 | - | -
+clear warm day with a light breeze | 1.0 | - | -
+bright blue sky with a few white clouds | 0.85 | - | -
+partly cloudy sky with soft shade | 0.75 | - | -
+hazy humid summer afternoon | 0.6 | - | -
+cool crisp autumn day with a clear sky | 0.6 | - | -
+mild spring day with a pale blue sky | 0.7 | - | -
+overcast day under a low grey sky | 0.6 | - | -
+clear cold winter day with a pale sky | 0.45 | - | -
+thin high cloud and soft light | 0.55 | - | -
+light haze over the distant hills | 0.5 | - | -
+dry still air after a night of rain | 0.4 | - | -

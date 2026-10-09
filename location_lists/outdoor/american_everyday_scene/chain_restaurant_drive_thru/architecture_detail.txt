@@ -1,13 +1,13 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-EIFS stucco facade panels | 0.85 | 0.3-0.6 | painted synthetic stucco
-brand-color metal awning band | 0.85 | 0.2-0.4 | painted parapet trim
-exposed conduit on facade | 0.55 | 0.05-0.15 | gray painted PVC
-exterior speaker housing weathered | 0.75 | 0.1-0.3 | dirty plastic speaker box
-rooftop HVAC unit visible | 0.55 | 0.1-0.3 | gray metal rooftop box
-illuminated lane sign showing {a white arrow|"{DRIVE-THRU|ORDER HERE}"} | 0.85 | 0.1-0.3 | generic directional sign
-faded plastic lightbox panel face | 0.75 | 0.2-0.4 | sun-bleached panel with blurry food photos
-clearance bar with hanging chains | 0.5 | 0.05-0.15 | metal warning bar
-window service window with sill | 0.65 | 0.1-0.3 | small payment window
-chipped brick veneer along base | 0.4 | 0.1-0.3 | red weathered masonry
+a flat metal canopy edge above the pickup window at the far right | 0.55 | 0.05-0.2 | thin red painted trim
+a red accent band along the roofline of the far building | 0.55 | 0.05-0.2 | narrow painted fascia
+large tinted glass windows along the far wall | 0.5 | 0.05-0.2 | dark panes in thin aluminum frames
+a brick base along the bottom of the far wall | 0.45 | 0.05-0.2 | low dark red courses
+wall-mounted light fixtures high up on the far building | 0.5 | 0.05-0.2 | small dark lamps
+a stone cap along the parapet of the far building | 0.4 | 0.05-0.2 | pale narrow ledge on the roofline
+a stainless steel exhaust duct above the roof at the back | 0.4 | 0.05-0.2 | slim silver chimney
+a dark metal door at the back of the far building | 0.4 | 0.05-0.2 | closed, painted brown
+a white downspout at the far corner of the building | 0.4 | 0.05-0.2 | slim painted aluminum
+a flat awning over the side door on the left far down the wall | 0.4 | 0.05-0.2 | narrow dark metal cover

@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-flat overcast sky | 0.9 | - | -
-light drizzle in the air | 0.55 | - | -
-steady grey rain | 0.5 | - | -
-wet ground after rain | 0.6 | - | -
-clear cold air | 0.6 | - | -
-hazy warm air | 0.55 | - | -
-gusty wind moving the trees | 0.55 | - | -
-cold air with breath visible | 0.4 | - | -
-thin high cloud | 0.6 | - | -
-damp mild air | 0.7 | - | -
+mild sunny spring day with a light breeze | 0.9 | - | -
+clear warm summer day | 0.9 | - | -
+hazy warm summer afternoon | 0.6 | - | -
+overcast grey day with low cloud | 0.8 | - | -
+light drizzle under a grey sky | 0.4 | - | -
+cool crisp autumn day with a clear sky | 0.7 | - | -
+windy day with fast clouds | 0.5 | - | -
+bright cold winter day with a pale sky | 0.5 | - | -
+grey damp November day | 0.5 | - | -
+partly cloudy day with soft shade | 0.8 | - | -

@@ -1,14 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-warm sunny summer afternoon | 1.0 | - | -
-golden early-evening glow | 0.9 | - | -
-bright cloudless lunchtime | 0.8 | - | -
-lantern-lit twilight | 0.7 | - | -
-soft late-morning sunshine | 0.6 | - | -
-long-shadow Sunday afternoon | 0.65 | - | -
-blue-hour string-light dusk | 0.55 | - | -
-hazy hot midday | 0.5 | - | -
-golden low-sun late evening | 0.6 | - | -
-bright early-afternoon lull | 0.5 | - | -
-cool overcast autumn afternoon | 0.35 | - | -
+soft overcast late-morning light | 0.8 | - | -
+bright mid-morning sun | 0.9 | - | -
+warm early-afternoon sunlight | 1.0 | - | -
+golden late-afternoon light | 0.9 | - | -
+gentle early morning light | 0.5 | - | -
+soft evening light after sunset | 0.5 | - | -
+midday sun with short shadows | 0.7 | - | -
+low evening sun between the trunks | 0.6 | - | -
+even grey afternoon light | 0.6 | - | -
+bright afternoon sun with soft tree shade | 0.8 | - | -

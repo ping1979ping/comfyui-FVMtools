@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-two rocking chairs on the porch | 0.7 | 0.2-0.45 | weathered resin
-doormat at the door{| reading "{WELCOME|HOME}"} | 0.65 | 0.05-0.15 | worn bristle
-planters of seasonal flowers | 0.6 | 0.1-0.3 | petunias spilling
-package left by the door | 0.55 | 0.05-0.15 | taped brown box
-porch swing on chains | 0.45 | 0.2-0.4 | drifting slightly
-kids' chalk buckets on the step | 0.45 | 0.05-0.15 | rainbow stubs
-garden hose coiled by the spigot | 0.55 | 0.1-0.25 | kinked green loops
-recycling bin at the curb | 0.5 | 0.1-0.25 | lid flipped back
-mail sticking from the box | 0.5 | 0.03-0.1 | folded colored envelopes
-cat watching from the rail | 0.4 | 0.05-0.15 | tail flicking
-wind chime in the corner | 0.45 | 0.03-0.1 | tangled strings
+an empty white wooden rocking chair a few meters back on the left | 0.7 | 0.2-0.5 | painted slats, facing the street
+a white porch railing a few meters back along the edge | 0.8 | 0.2-0.5 | square balusters with a flat top rail
+a set of concrete steps down to the walk a few meters back | 0.65 | 0.2-0.5 | three plain gray treads with a black iron rail
+a hanging basket of green ferns a few meters back on the right | 0.5 | 0.2-0.5 | wire frame on a hook
+an empty porch swing a few meters back on the right | 0.45 | 0.2-0.5 | white painted slats on two chains
+a black mailbox on a post at the curb far down the walk | 0.6 | 0.2-0.5 | gray post at the street edge
+two terracotta planters beside the front door a few meters back | 0.55 | 0.2-0.5 | green shrubs in round pots
+an empty parked sedan in the driveway a few meters back on the right | 0.55 | 0.2-0.5 | silver, windows clear
+a gray storm door a few meters back at the front entrance | 0.5 | 0.2-0.5 | glass panel, closed
+a green garden hose coiled at the foundation a few meters back | 0.3 | 0.2-0.5 | wound neatly on a bracket
+a black wrought-iron lamppost at the end of the walk a few meters back | 0.45 | 0.2-0.5 | slender post with a round lamp
+a young maple on the front lawn a few meters back on the left | 0.55 | 0.2-0.5 | slim trunk with a leafy crown
+an empty white plastic chair a few meters back on the left | 0.4 | 0.2-0.5 | resin, beside the door
+a green trash bin at the side of the driveway a few meters back | 0.35 | 0.2-0.5 | closed lid, wheeled

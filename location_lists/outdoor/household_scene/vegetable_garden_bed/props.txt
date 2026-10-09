@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-woven harvest basket | 0.95 | 0.1-0.25 | natural reed weave
-small hand pruner shears | 0.95 | 0.05-0.1 | spring-hinged blades
-seed envelopes in jar | 0.85 | 0.1-0.2 | colorful envelopes with vegetable pictures
-spray bottle of water | 0.7 | 0.05-0.1 | trigger nozzle plastic
-twine ball with scissors | 0.85 | 0.05-0.15 | natural fiber bundle
-gardening sun hat hung | 0.85 | 0.05-0.15 | woven straw brim
-glass jar of compost tea | 0.6 | 0.05-0.1 | clear lidded vessel
-small gardening journal | 0.65 | 0.05-0.1 | closed spiral-bound notebook with plain cover
-rinse bucket on path | 0.7 | 0.05-0.15 | painted metal pail
-folded apron on bench | 0.7 | 0.05-0.15 | washed canvas drape
-butterfly resting on flower | 0.55 | 0.05-0.1 | small winged form
-ripe pepper in basket | 0.85 | 0.05-0.15 | colorful glossy fruit
+a small green watering can at the far end of the bed | 0.55 | 0.02-0.06 | painted metal with a long spout
+a small hand trowel stuck in the far soil | 0.5 | 0.02-0.06 | steel blade, green handle
+a small wooden stake with twine beside the far bed | 0.4 | 0.02-0.06 | pale wood and thin cord
+a small pair of tan work gloves on the far bed edge | 0.4 | 0.02-0.06 | plain fabric, folded flat
+a small galvanized bucket at the far corner of the garden | 0.45 | 0.02-0.06 | silver zinc with a thin handle
+a small terracotta pot at the far end of the path | 0.4 | 0.02-0.06 | orange clay with green leaves
+a compact wooden harvest basket at the back of the far bed | 0.4 | 0.02-0.06 | pale willow, empty
+a small coil of green hose at the far fence | 0.4 | 0.02-0.06 | neat loops
+a slim bamboo cane in the far soil | 0.35 | 0.02-0.06 | thin pale pole
+a small round bird bath at the far back corner | 0.3 | 0.02-0.06 | gray stone basin
+a small plastic seedling tray at the far end of the bench | 0.35 | 0.02-0.06 | black, with small green sprouts
+a small red tomato among green leaves on a far plant | 0.35 | 0.02-0.06 | glossy red fruit

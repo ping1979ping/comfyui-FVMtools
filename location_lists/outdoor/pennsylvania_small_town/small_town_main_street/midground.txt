@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-diagonal-parked pickups | 0.65 | 0.2-0.45 | tailgates to the walk
-bench outside the bakery | 0.6 | 0.1-0.3 | small brass plate
-A-frame chalkboard on the sidewalk | 0.6 | 0.05-0.2 | chalk smudges and simple doodled icons
-bike rack with two bikes | 0.5 | 0.1-0.25 | one helmet clipped
-parking meters at intervals | 0.55 | 0.05-0.2 | coin-only heads
-planter tubs along the curb | 0.55 | 0.1-0.25 | township-maintained
-dog tied outside the coffee shop | 0.45 | 0.05-0.15 | patient sit
-stroller parked by the bench | 0.4 | 0.1-0.25 | brake locked
-metal vending box chained to a post | 0.45 | 0.05-0.12 | blue steel
-mail truck making its loop | 0.4 | 0.1-0.25 | flashers on
-teens clustered by the pizza door | 0.45 | 0.15-0.3 | backpacks dropped
+empty parked cars along the far curb a few meters back | 0.9 | 0.2-0.5 | sedans and a pickup, evenly spaced
+an empty wooden bench beside the sidewalk a few meters back on the left | 0.6 | 0.2-0.5 | painted dark green slats
+young street trees in cast-iron grates a few meters back along the curb | 0.7 | 0.2-0.5 | slim trunks with leafy crowns
+a black iron lamppost a few meters back on the right | 0.65 | 0.2-0.5 | slender post with a round lamp
+a blue mailbox at the corner a few meters back on the right | 0.45 | 0.2-0.5 | steel drum with a rounded top
+a wide empty sidewalk a few meters back along the storefronts | 0.6 | 0.2-0.5 | swept gray concrete
+a traffic light on a mast arm at the far intersection | 0.5 | 0.2-0.5 | dark metal, lights off
+a black trash can beside a lamppost a few meters back on the left | 0.4 | 0.2-0.5 | steel drum with a flat lid
+a row of wooden planters along the shop fronts a few meters back | 0.5 | 0.2-0.5 | low boxes with green shrubs
+a bike rack at the curb a few meters back on the right | 0.35 | 0.2-0.5 | black steel loops, empty
+two empty parked cars at the curb a few meters back on the left | 0.6 | 0.2-0.5 | silver and dark blue
+a quiet side street opening a few meters back on the right | 0.4 | 0.2-0.5 | empty asphalt between two brick buildings
+a brick-paved crosswalk across the street a few meters back | 0.4 | 0.2-0.5 | plain red pavers
+a gray utility pole with wires a few meters back on the left | 0.4 | 0.2-0.5 | dark wood pole with a small transformer

@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-flatbed cart with handle | 0.65 | 0.1-0.3 | orange Walmart flat cart
-blue plastic shopping cart | 0.75 | 0.1-0.3 | blue Walmart store cart
-bright yellow sign on metal stake{| reading "{SALE|SAVE|DEALS}"} | 0.55 | 0.05-0.15 | bright yellow signboard
-plastic tarp covering pallet | 0.45 | 0.1-0.3 | blue tarp with bungees
-empty wooden delivery pallet | 0.6 | 0.1-0.3 | scuffed wooden pallet
-broken display rack | 0.35 | 0.1-0.2 | bent wire shelving
-bright yellow sticker dot on plant flat | 0.45 | 0.05-0.1 | round bright yellow sticker
-hose nozzle hanging from rack | 0.35 | 0.05-0.1 | dirty brass sprayer
-faded plant care card with sun and water drop icons | 0.45 | 0.05-0.15 | weathered laminated card with pictograms
-gallon watering can in display | 0.35 | 0.05-0.15 | green plastic can
-stack of red brick paver samples | 0.3 | 0.1-0.2 | clay paver display
-pile of bagged charcoal | 0.4 | 0.1-0.2 | black paper bags with a flame graphic
+small orange traffic cone at the far corner of the garden fence | 0.4 | 0.02-0.06 | plain plastic cone
+small green watering can on a far plant rack | 0.45 | 0.02-0.06 | plain metal with a long spout
+slim wooden stakes bundled on a far shelf | 0.35 | 0.02-0.06 | plain pale wood
+small coiled green garden hose on a far rack | 0.5 | 0.02-0.06 | plain rubber coil
+small terracotta pots stacked on a far shelf | 0.45 | 0.02-0.06 | orange clay
+small grey electrical box on the far store wall | 0.35 | 0.02-0.06 | plain metal door
+small white plastic buckets stacked on a far pallet | 0.4 | 0.02-0.06 | plain with thin handles
+small hand trowels hanging on a far rack | 0.35 | 0.02-0.06 | slim steel blades
+small black camera dome under the far canopy edge | 0.3 | 0.02-0.06 | smooth round housing
+small potted flowers on a far display shelf | 0.5 | 0.02-0.06 | mixed blooms in small plastic pots
+small coiled rope on a far pallet | 0.3 | 0.02-0.06 | plain tan rope
+compact fire extinguisher box on the far store wall | 0.3 | 0.02-0.06 | narrow red case

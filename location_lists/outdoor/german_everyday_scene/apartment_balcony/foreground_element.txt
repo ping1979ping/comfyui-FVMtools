@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-hands hanging up washing | 0.7 | 0.1-0.3 | damp fabric
-mug set on the railing | 0.6 | 0.05-0.15 | chipped ceramic
-elbows resting on the railing | 0.6 | 0.1-0.3 | sleeve against metal
-washing basket held at the hip | 0.5 | 0.1-0.3 | plastic rim
-watering a pot with the can | 0.5 | 0.1-0.25 | thin stream of water
-phone held over the railing | 0.45 | 0.05-0.15 | lit screen
-cardigan pulled around the shoulders | 0.5 | 0.1-0.3 | loose knit
-bare feet on the concrete | 0.35 | 0.05-0.2 | cool grey slab
-laundry peg held in the mouth | 0.35 | 0.02-0.08 | worn plastic peg
-leaning over to look down | 0.4 | 0.1-0.3 | hair falling forward
-towel shaken out over the railing | 0.4 | 0.1-0.3 | snapping fabric
+a plain wide-plank wooden deck | 1.0 | 0.1-0.4 | smooth and even
+a smooth grey concrete paving | 0.96 | 0.1-0.4 | matte and even
+a plain light grey stone tile floor | 0.92 | 0.1-0.4 | smooth and even
+a plain dark grey composite deck | 0.88 | 0.1-0.4 | matte and even
+a smooth anthracite concrete floor | 0.84 | 0.1-0.4 | smooth and even
+a plain pale wooden plank deck | 0.8 | 0.1-0.4 | matte and even
+a smooth beige concrete balcony floor | 0.76 | 0.1-0.4 | smooth and even
+a plain light oak plank deck | 0.72 | 0.1-0.4 | matte and even
+a smooth light grey concrete floor | 0.68 | 0.1-0.4 | smooth and even
+a plain warm grey stone paving | 0.64 | 0.1-0.4 | matte and even
+a plain dark brown wooden deck | 0.6 | 0.1-0.4 | smooth and even
+a smooth off-white concrete floor | 0.56 | 0.1-0.4 | matte and even

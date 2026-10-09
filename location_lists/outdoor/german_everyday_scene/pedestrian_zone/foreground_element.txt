@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-shopping bag in each hand | 0.7 | 0.1-0.3 | colorful carrier bags
-phone held up for directions | 0.5 | 0.05-0.2 | lit screen
-coat over the forearm | 0.5 | 0.1-0.3 | creased fabric
-pram handle in the near frame | 0.4 | 0.1-0.3 | worn grip
-paper bag from the bakery | 0.5 | 0.05-0.2 | crumpled paper
-sunglasses pushed up into the hair | 0.45 | 0.03-0.12 | scratched lenses
-purse held open in one hand | 0.4 | 0.05-0.15 | worn lining
-bag strap slipping off the shoulder | 0.45 | 0.1-0.3 | webbing strap
-takeaway cup in hand | 0.5 | 0.05-0.15 | plain cardboard sleeve
-stepping over the drainage channel | 0.35 | 0.1-0.25 | shoe mid-stride
-hair blown across the face | 0.4 | 0.05-0.2 | loose strands
+a smooth light grey concrete paving | 1.0 | 0.1-0.4 | smooth and even
+a plain flat pale stone paving | 0.96 | 0.1-0.4 | matte and even
+a smooth even grey granite paving | 0.92 | 0.1-0.4 | smooth and even
+a plain wide light grey paved ground | 0.88 | 0.1-0.4 | matte and even
+a smooth matte beige stone paving | 0.84 | 0.1-0.4 | smooth and even
+a plain even warm grey paved ground | 0.8 | 0.1-0.4 | matte and even
+a smooth pale concrete paving | 0.76 | 0.1-0.4 | smooth and even
+a plain flat anthracite paved ground | 0.72 | 0.1-0.4 | matte and even
+a smooth even sand-colored stone paving | 0.68 | 0.1-0.4 | smooth and even
+a plain matte light grey paved ground | 0.64 | 0.1-0.4 | matte and even
+a smooth off-white stone paving | 0.6 | 0.1-0.4 | smooth and even
+a plain flat mid grey paved ground | 0.56 | 0.1-0.4 | matte and even

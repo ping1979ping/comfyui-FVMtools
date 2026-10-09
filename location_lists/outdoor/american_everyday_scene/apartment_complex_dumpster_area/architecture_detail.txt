@@ -1,13 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-scuffed vinyl siding on rear wall | 0.85 | 0.3-0.6 | beige horizontal lap siding
-exposed brick foundation course | 0.6 | 0.1-0.3 | painted red masonry
-exterior light fixture caged | 0.5 | 0.05-0.15 | wire-cage wall sconce
-dryer vent with lint trail | 0.55 | 0.05-0.15 | white plastic vent
-HVAC condensate pipe dripping | 0.5 | 0.05-0.15 | small PVC drip line
-chipped paint on dumpster gate | 0.7 | 0.1-0.3 | flaking enclosure paint
-abstract spray paint swirl on dumpster lid | 0.4 | 0.1-0.2 | looping paint scrawl
-rusted gutter downspout | 0.65 | 0.1-0.3 | streaked metal pipe
-exposed conduit on wall | 0.5 | 0.1-0.2 | gray PVC piping
-small warning plate on gate{| reading "{NO DUMPING|KEEP CLEAR}"} | 0.55 | 0.05-0.15 | weathered metal sign
+a row of small air conditioning condensers along the base of the far wall | 0.55 | 0.05-0.2 | gray metal boxes on small pads
+white downspouts running down the far corner of the building | 0.5 | 0.05-0.2 | slim painted aluminum
+a metal railing along the concrete stairs across the lot | 0.5 | 0.05-0.2 | thin black painted bars
+wall-mounted light fixtures high up along the far building | 0.5 | 0.05-0.2 | small dark lamps under the eaves
+a covered breezeway with a flat roof at the far end | 0.5 | 0.05-0.2 | slim posts and a white fascia
+dark window shutters beside the upper windows across the lot | 0.45 | 0.05-0.2 | narrow painted panels
+a brick chimney above the roofline on the right | 0.4 | 0.05-0.2 | stone-capped and dark with age
+balconies with white railings on the upper floors across the lot | 0.5 | 0.05-0.2 | empty concrete slabs, thin rails
+a gutter along the roof edge of the far building | 0.45 | 0.05-0.2 | thin white aluminum run
+a metal door in the far wall at the back of the building | 0.45 | 0.05-0.2 | closed, painted gray
+a gas meter bank on the far wall at the left | 0.35 | 0.05-0.2 | narrow row of small steel meters

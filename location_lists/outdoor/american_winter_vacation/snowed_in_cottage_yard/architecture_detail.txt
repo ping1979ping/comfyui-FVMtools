@@ -1,14 +1,13 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-windowpanes ferned with frost | 0.55 | 0.05-0.2 | crystal gardens
-door swollen and shoulder-opened | 0.45 | 0.03-0.1 | winter fit
-steps packed to a slick ramp | 0.5 | 0.05-0.15 | treacherous grade
-drift strata telling the storm history | 0.45 | 0.1-0.3 | layered chapters
-snow load creaking the shed roof | 0.4 | 0.05-0.2 | weight complaint
-buried rain barrel domed white | 0.4 | 0.03-0.1 | igloo cameo
-wind scallops around every corner | 0.45 | 0.1-0.25 | carved eddies
-blue shadow pooling in the path | 0.5 | 0.1-0.3 | cold light
-glitter drift when the sun breaks | 0.45 | 0.1-0.3 | diamond air
-eave icicle drips counting seconds | 0.45 | 0.03-0.1 | slow metronome
-porch light cap of perfect snow | 0.4 | 0.01-0.05 | white beret
+a stone chimney on the cottage roof far back | 0.6 | 0.05-0.2 | grey stones capped with snow
+a small paned window on the far cottage wall | 0.5 | 0.05-0.2 | dark glass, white frame
+a thin porch post far back at the cottage | 0.5 | 0.05-0.2 | white paint, snow on the top
+a wooden door at the back of the porch | 0.5 | 0.05-0.2 | closed, painted dark green
+a long ridge of snow along the far eave | 0.5 | 0.05-0.2 | smooth white lip
+a thin metal stovepipe on the far shed roof | 0.4 | 0.05-0.2 | dark steel
+a narrow wooden gate in the far fence | 0.4 | 0.05-0.2 | closed, snow along the top
+a small attic window under the far gable | 0.4 | 0.05-0.2 | dark glass
+short icicles along the far gutter | 0.4 | 0.05-0.2 | pale and thin
+a slim iron lamp bracket by the far door | 0.35 | 0.05-0.2 | unlit

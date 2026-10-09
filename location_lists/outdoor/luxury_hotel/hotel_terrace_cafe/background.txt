@@ -1,17 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-sweeping sea view past the terrace balustrade | 0.9 | 0.5-0.9 | glittering blue expanse
-manicured hotel garden with clipped hedges and roses | 0.9 | 0.45-0.8 | tidy green parterre
-terraced cafe overlooking a sunlit bay | 0.85 | 0.4-0.75 | stone steps and white umbrellas
-wisteria-draped pergola over the terrace | 0.7 | 0.25-0.55 | hanging lilac clusters
-grand cream hotel facade with arched windows | 0.7 | 0.3-0.6 | pale stone and shutters
-olive and cypress trees on the hillside | 0.6 | 0.25-0.5 | silver leaves and dark spires
-lemon trees in terracotta pots along the wall | 0.5 | 0.15-0.35 | bright yellow fruit
-rolling vineyard slopes beyond the garden | 0.45 | 0.25-0.5 | parallel green rows
-distant harbor with moored yachts | 0.5 | 0.2-0.45 | white hulls in still water
-fountain courtyard framed by climbing jasmine | 0.5 | 0.2-0.45 | trickling stone basin
-glass-roofed conservatory annex with potted palms | 0.35 | 0.2-0.4 | iron frame and glass panes
-lake panorama in soft haze | 0.3 | 0.25-0.5 | blue layered distance
-cobbled promenade lined with lanterns | 0.4 | 0.15-0.35 | smooth old stones
-rose-covered stone wall in bloom | 0.5 | 0.2-0.4 | pink climbing blossoms
+the limestone hotel facade across the far side of the terrace | 1.0 | 0.6-1.0 | a three-storey pale stone building with tall arched French doors across the whole width of the image, a slate roofline above
+the formal garden beyond the terrace balustrade | 0.9 | 0.6-1.0 | clipped boxwood hedges in neat rectangles across the whole width of the image, a stone fountain far in the middle, tall evergreens behind
+a wide lawn sloping away beyond the low stone balustrade | 0.8 | 0.6-1.0 | smooth grass with a line of mature oaks along the far edge, a wooded hillside rising behind them
+a wooded Pennsylvania hillside far beyond the garden | 0.7 | 0.6-1.0 | layered treetops across the whole width of the image, a pale sky above the ridge line
+a long covered colonnade along the far side of the terrace | 0.7 | 0.6-1.0 | white square columns in an even row, a cream stucco wall behind them, tall glass doors between the columns
+a dark timber pergola over the far end of the terrace | 0.6 | 0.6-1.0 | climbing vines on the posts, wide soft shade beneath, a lawn glimpsed beyond on the right
+the low limestone parapet at the far edge of the terrace | 0.6 | 0.6-1.0 | a pale stone wall across the whole width of the image with a wooded valley far beyond it, pale haze above the trees
+a tall clipped yew hedge across the back of the terrace | 0.65 | 0.6-1.0 | dense dark green wall in a straight line, a stone urn on a pedestal at the far left
+the red brick wing of the hotel on the left | 0.55 | 0.6-1.0 | white-framed windows and a slate roof, a tall chimney on the roofline, a lawn in front of it
+a gravel carriage drive curving beyond the garden | 0.4 | 0.6-1.0 | an empty pale drive lined with young maples, a stone gatehouse far in the distance
+a stone garden pavilion far across the lawn | 0.5 | 0.6-1.0 | a small white pavilion on a rise in the middle of the image, trimmed beds around it, tall trees behind
+the far side of a long reflecting pool | 0.5 | 0.6-1.0 | still dark water across the whole width of the image, a stone terrace and clipped hedges beyond it
+a glass-walled conservatory on the right | 0.45 | 0.6-1.0 | a white iron frame with large panes, potted palms inside, a lawn in front of it
+tall old sycamores along the far end of the lawn | 0.5 | 0.6-1.0 | wide pale trunks and broad crowns across the whole width of the image, soft shade beneath

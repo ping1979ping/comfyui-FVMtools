@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-weathered wood-fence corner | 1.0 | 0.6-1.0 | overlapping timber slats
-overgrown shrubbery flank | 0.95 | 0.4-0.8 | dense leafy growth
-neighboring yard tree line | 0.85 | 0.4-0.7 | layered green canopy
-back of garage exterior | 0.7 | 0.4-0.7 | painted clapboard wall
-ivy-clad fence panel | 0.85 | 0.4-0.8 | trailing leafy cover
-gravel path leading to bins | 0.7 | 0.3-0.5 | small stone surface
-mature backyard hedge | 0.85 | 0.4-0.7 | dense clipped foliage
-small garden shed corner | 0.65 | 0.3-0.5 | weathered cedar siding
-exposed open sky beyond | 0.85 | 0.3-0.7 | open daylight expanse
-nearby raised garden bed | 0.7 | 0.3-0.5 | timber-edged soil patch
+the back corner of the yard where two wooden fences meet | 1.0 | 0.6-1.0 | tall cedar fence boards running off to the left and right across the whole width of the image, a tall tree crown rising behind the corner
+a tall evergreen hedge along the back of the yard | 0.8 | 0.6-1.0 | a dense dark green wall across the whole width of the image, a pale sky and one distant roofline above it on the right
+the side wall of a detached garage at the back of the yard | 0.7 | 0.6-1.0 | gray siding across the whole width of the image, a closed white door on the right, a downspout at the left corner
+a row of mature trees along the back property line | 0.75 | 0.6-1.0 | tall trunks and broad crowns across the whole width of the image, a low wire fence at their base
+an old fieldstone wall along the back of the yard | 0.6 | 0.6-1.0 | a low run of gray stone across the whole width of the image, shrubs rising behind it and woods beyond
+the back of the house far across the yard | 0.6 | 0.6-1.0 | white siding and a plain back door across the whole width of the image, a small concrete step on the right
+a gray wooden picket fence along the back of the yard | 0.55 | 0.6-1.0 | slim boards across the whole width of the image, shrubs and a wooded slope behind it
+an overgrown shrub border along the right side of the yard | 0.55 | 0.6-1.0 | rhododendron and holly forming a dark green wall on the right, a wooden fence behind it
+a wide pale sky above the back of the yard | 0.4 | 0.6-1.0 | a low line of trees and one roof far on the left across the whole width of the image
+a chain-link fence along the back with a wooded edge beyond | 0.55 | 0.6-1.0 | a galvanized fence across the whole width of the image, tall trees and undergrowth beyond it
+a mown field beyond the back fence | 0.5 | 0.6-1.0 | open grass rising to a line of woods across the whole width of the image, a faint blue ridge far behind
+a long low raised garden bed along the back fence | 0.5 | 0.6-1.0 | dark soil in a cedar frame across the whole width of the image, a tall wooden fence rising behind it
+a weathered shed corner at the far left of the yard | 0.45 | 0.6-1.0 | gray boards and a green metal roof, a fence running off to the right across the image

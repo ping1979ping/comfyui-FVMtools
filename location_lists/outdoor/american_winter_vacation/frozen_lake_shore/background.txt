@@ -1,14 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-white lake plain to the far shore | 1.0 | 0.5-0.9 | wind-packed snow over ice
-dark treeline ringing the shore | 0.75 | 0.25-0.5 | spruce silhouette wall
-ice heaved into shore ridges | 0.6 | 0.15-0.35 | tilted blue plates
-snow dunes sculpted across the ice | 0.55 | 0.2-0.45 | wind-carved waves
-far shacks of ice fishermen | 0.4 | 0.1-0.25 | scattered dots
-cattails locked in at the inlet | 0.5 | 0.15-0.3 | frozen pokers
-cloud shadows crossing the white | 0.5 | 0.25-0.5 | traveling grey
-pressure crack wandering out | 0.45 | 0.1-0.3 | dark lightning line
-boarded summer dock iced in | 0.5 | 0.15-0.3 | locked-in pilings
-island pines wearing snow coats | 0.45 | 0.15-0.3 | offshore hummock
-low sun dragging long blue shadows | 0.55 | 0.25-0.5 | stretched forms
+the far shore of the frozen lake | 1.0 | 0.6-1.0 | a long low line of bare hardwoods and dark hemlocks across the whole width of the image, snowy hills rising behind
+the white lake surface stretching to the horizon | 0.9 | 0.6-1.0 | an unbroken field of wind-packed snow over ice across the whole width of the image, a thin pale treeline far beyond
+the wooded hills around the lake | 0.8 | 0.6-1.0 | rounded ridges of bare oaks and pines on all far sides, snow lying thin among the trunks
+the lake narrowing toward a far point on the left | 0.65 | 0.6-1.0 | a wooded headland of dark evergreens reaching into the white ice, hazy hills behind
+the cove across the ice | 0.6 | 0.6-1.0 | low snowy banks and bare shrubs along the far edge of the white surface, a few dark pines behind
+the cottages among the far trees | 0.5 | 0.6-1.0 | a few small timber cottages with white roofs among bare trunks along the far shore, across the whole width of the image
+the pale sky over the lake horizon | 0.6 | 0.6-1.0 | a flat white sky meeting the snowy ice far away across the whole width of the image, a thin dark treeline between
+the low concrete dam at the far end of the lake | 0.4 | 0.6-1.0 | snow on its walkway on the right, bare hills behind it, white ice in front
+the snowy ridge across the lake | 0.65 | 0.6-1.0 | a long grey ridge of bare hardwoods under a pale sky, far beyond the white ice
+the reed-lined far bank | 0.5 | 0.6-1.0 | pale reeds standing along the far shore, white ice in front, dark woods behind
+the island of evergreens far out on the ice | 0.45 | 0.6-1.0 | a small dark island of spruce and hemlock far out on the white surface, hazy hills behind
+the boathouse far along the shore | 0.45 | 0.6-1.0 | a small grey boathouse with a snowy roof far along the left shore, bare trees behind
+the misty far shore | 0.5 | 0.6-1.0 | a faint grey treeline dissolving in light haze across the whole width of the image, white ice below

@@ -1,17 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-ceramic beer stein | 0.6 | 0.0-0.1 | lidded grey stoneware
-Weissbier glass | 0.6 | 0.0-0.1 | tall vase-shaped glass
-radish spirals on plate | 0.5 | 0.0-0.08 | white spiral cut Radi
-wooden pretzel stand | 0.5 | 0.0-0.1 | hooked rack of knots
-mustard pot and bratwurst | 0.55 | 0.0-0.08 | sausages on tin plate
-chalk menu board | 0.5 | 0.0-0.1 | slate board with chalk doodles{| and the word "{MENU|BIER|SPEISEN}"}
-brass tray with mugs | 0.45 | 0.0-0.1 | many empty glasses
-beer-mat coaster pile | 0.4 | 0.0-0.05 | round cardboard disks
-white-and-blue tablecloth | 0.4 | 0.0-0.1 | folded cotton check
-paper napkin holder | 0.3 | 0.0-0.05 | metal dispenser
-leather coin purse | 0.25 | 0.0-0.05 | waitress money pouch
-picnic basket | 0.35 | 0.0-0.1 | wicker with cloth
-tin ashtray stand | 0.15 | 0.0-0.05 | small outdoor tray
-wooden keg tap | 0.45 | 0.0-0.1 | hammered spigot
+small salt shakers on far tables | 0.35 | 0.02-0.06 | plain white
+a small wooden tray at the far end of the tables | 0.4 | 0.02-0.06 | pale pine
+a small brass lantern on a far table | 0.35 | 0.02-0.06 | unlit
+a small dark green bin at the far edge of the garden | 0.4 | 0.02-0.06 | plain plastic
+a small white vase with green sprigs on a far table | 0.4 | 0.02-0.06 | simple ceramic
+a small wicker basket at the far kiosk hatch | 0.35 | 0.02-0.06 | woven natural fibre
+a small enamel bucket at the far corner of the hedge | 0.3 | 0.02-0.06 | white with a dark rim
+a small wooden barrel at the far edge of the kiosk | 0.4 | 0.02-0.06 | pale oak staves
+a small potted fern at the far doorstep | 0.4 | 0.02-0.06 | green fronds
+a small stack of firewood at the far corner of the yard | 0.3 | 0.02-0.06 | pale ends
+a small stone pot at the far end of the wall | 0.35 | 0.02-0.06 | grey with green leaves
+a small wooden stool at the far kiosk wall | 0.3 | 0.02-0.06 | plain pine

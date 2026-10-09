@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-free little library on a post | 0.45 | 0.03-0.1 | glass-door cabinet
-water bowl outside the shop door | 0.5 | 0.02-0.06 | for the dogs
-chalkboard easel with a doodled ice cream cone | 0.5 | 0.03-0.1 | chalk drawing of cones
-paper sheet with a cat photo taped to a pole | 0.45 | 0.02-0.06 | phone tabs cut
-scout troop popcorn table | 0.35 | 0.1-0.25 | folding table and sash
-bike leaned unlocked at the curb | 0.4 | 0.05-0.15 | small-town trust
-to-go cup on the bench arm | 0.45 | 0.02-0.06 | sleeve doubled
-colorful paper sheets with simple graphics in shop windows | 0.5 | 0.03-0.1 | tape-cornered pages
-quarters fed from a cup holder | 0.4 | 0.02-0.06 | meter ritual
-hose watering the curb planters | 0.4 | 0.03-0.1 | morning shopkeeper
-sidewalk sale rack outside | 0.45 | 0.1-0.25 | plain hanging garments flipping
+a small red fire hydrant at the far corner | 0.5 | 0.02-0.06 | red painted cast iron
+small white wooden bollards far down the curb | 0.35 | 0.02-0.06 | short rounded posts
+a small potted fern on a far shop step | 0.5 | 0.02-0.06 | green fronds in a clay pot
+a small flower box under a far upper window | 0.5 | 0.02-0.06 | red geraniums, narrow wooden box
+a small round wall lamp beside a far doorway | 0.4 | 0.02-0.06 | black iron, unlit
+a slim black parking meter far down the curb | 0.35 | 0.02-0.06 | gray post with a round head
+a small gray utility box at the far corner | 0.35 | 0.02-0.06 | closed metal cabinet
+a small iron boot scraper by a far doorstep | 0.3 | 0.02-0.06 | black, low to the ground
+a small stone urn on a far step | 0.35 | 0.02-0.06 | pale gray with trailing ivy
+small clay pots on a far windowsill | 0.4 | 0.02-0.06 | plain terracotta
+a thin flagpole on the far corner building | 0.4 | 0.02-0.06 | slim pole, flag hanging
+a small brass door knocker on a far door | 0.3 | 0.02-0.06 | dark green painted wood

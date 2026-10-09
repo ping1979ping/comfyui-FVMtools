@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-amazon box tucked behind a planter | 0.5 | 0.03-0.1 | driver's hiding spot
-citronella candle on the rail | 0.45 | 0.02-0.08 | melted center
-kid's bike dropped on the walk | 0.5 | 0.1-0.25 | wheel still spinning
-watering can by the planters | 0.5 | 0.03-0.1 | faded plastic
-flag football left on the lawn | 0.45 | 0.03-0.1 | dew-damp
-car keys and sunglasses on the rail | 0.4 | 0.02-0.06 | quick errand pause
-halloween or seasonal decor bin | 0.35 | 0.05-0.15 | between-holidays limbo
-iced tea glass sweating on the arm | 0.45 | 0.02-0.08 | lemon wedge
-plastic-wrapped rolled bundle on the driveway | 0.4 | 0.02-0.06 | driveway toss
-dog leash hooked by the door | 0.45 | 0.02-0.08 | walk-ready
-solar path lights along the walk | 0.5 | 0.05-0.15 | tilted stakes
+a small potted geranium on a far porch step | 0.5 | 0.02-0.06 | red blooms in a clay pot
+a small brass door knocker on the far door | 0.3 | 0.02-0.06 | dark brass on white paint
+a small wicker basket far by the door | 0.35 | 0.02-0.06 | woven, empty
+a small brown doormat far at the threshold | 0.3 | 0.02-0.06 | plain, flat on the floor
+a small white flower box on the far porch rail | 0.4 | 0.02-0.06 | narrow box with green leaves
+a small black boot tray far beside the door | 0.3 | 0.02-0.06 | low rubber tray, empty
+small glass wind lanterns hanging far under the porch roof | 0.3 | 0.02-0.06 | slim black frames, unlit
+a slim wooden broom leaning far against the wall | 0.3 | 0.02-0.06 | thin handle, short bristles
+a small galvanized watering can far by the steps | 0.35 | 0.02-0.06 | zinc with a long spout
+a small round wall lamp far beside the garage | 0.3 | 0.02-0.06 | black fixture, unlit
+a thin flagpole bracket on the far porch post | 0.3 | 0.02-0.06 | slim metal arm, flag hanging
+a compact stone frog far in the flower bed | 0.25 | 0.02-0.06 | small gray garden figurine

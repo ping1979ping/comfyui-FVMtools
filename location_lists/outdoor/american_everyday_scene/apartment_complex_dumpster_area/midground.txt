@@ -1,15 +1,18 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-green industrial dumpster | 0.95 | 0.3-0.6 | dented painted steel bin
-blue recycling dumpster | 0.7 | 0.2-0.5 | scuffed blue plastic bin
-wood-slat dumpster enclosure | 0.75 | 0.3-0.6 | weathered painted wood panels
-painted parking lines between spots | 0.7 | 0.2-0.4 | faded yellow stripes on asphalt
-condenser unit row on concrete pad | 0.7 | 0.2-0.4 | rusty beige AC units
-gas meter cluster on wall | 0.55 | 0.1-0.3 | painted gray metering banks
-electric meter bank panel | 0.5 | 0.1-0.3 | rows of glass-faced meters
-cracked concrete dumpster pad | 0.8 | 0.2-0.4 | stained concrete slab
-metal staircase to second floor | 0.55 | 0.2-0.4 | painted iron steps
-back exit door with concrete pad | 0.55 | 0.1-0.3 | beige steel door
-puddle in low spot of asphalt | 0.55 | 0.1-0.3 | shallow standing water
-mop slop sink outside utility room | 0.3 | 0.1-0.2 | stained concrete basin
+a green steel dumpster with a closed lid a few meters back on the left | 1.0 | 0.2-0.5 | unoccupied, standing against a tan wooden fence
+two large dark green dumpsters side by side in a fenced enclosure a few meters back | 0.9 | 0.2-0.5 | tall brown slat fence, gates standing open
+a tan concrete-block dumpster enclosure a few meters back on the right | 0.7 | 0.2-0.5 | steel gates folded open, a closed dumpster inside
+a row of black wheeled trash bins along the building wall a few meters back | 0.7 | 0.2-0.5 | lids closed, lined up evenly
+a blue recycling dumpster with a closed lid a few meters back on the left | 0.65 | 0.2-0.5 | plain steel body on a concrete pad
+a low red brick corral around two closed dumpsters a few meters back | 0.6 | 0.2-0.5 | steel gates in dark green
+unoccupied parked sedans in a row a few meters back on the right | 0.7 | 0.2-0.5 | dusty windows, parked nose-in along a curb
+an empty metal bike rack beside the building a few meters back on the left | 0.45 | 0.2-0.5 | bolted to a concrete pad
+a white pickup truck parked and unoccupied a few meters back on the right | 0.5 | 0.2-0.5 | parked beside the enclosure with dark windows
+a grass strip with two young trees a few meters back | 0.5 | 0.2-0.5 | mown lawn behind a low concrete curb
+a gray cluster mailbox unit a few meters back on the right | 0.4 | 0.2-0.5 | steel cabinet on a concrete base
+a chain-link fence along the back of the lot a few meters back | 0.5 | 0.2-0.5 | green-coated wire with steel posts
+a tall light pole on a concrete base a few meters back on the left | 0.5 | 0.2-0.5 | galvanized steel with a single lamp head
+an unoccupied dark gray minivan parked beside the enclosure a few meters back | 0.5 | 0.2-0.5 | windows dark, parked straight
+a large steel roll-off container with a closed lid far on the right | 0.4 | 0.2-0.5 | rust-brown, standing at the edge of the lot

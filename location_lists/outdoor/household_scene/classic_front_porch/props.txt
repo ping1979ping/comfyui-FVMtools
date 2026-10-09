@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-ceramic pitcher of lemonade | 0.85 | 0.05-0.15 | rounded glazed vessel
-glass pair of tumblers | 0.7 | 0.05-0.1 | clear faceted cups
-woven outdoor cushion | 0.95 | 0.1-0.25 | textured all-weather cloth
-small garden flag | 0.7 | 0.05-0.15 | us american flag
-hanging wind chime | 0.85 | 0.05-0.15 | suspended metal rods
-folded checkered blanket | 0.85 | 0.05-0.2 | softly draped pattern
-basket of glossy booklets | 0.65 | 0.05-0.15 | woven basket holding a pile of photo-covered booklets
-bird feeder on hook | 0.7 | 0.1-0.25 | wood and seed cylinder
-small wreath on door | 0.85 | 0.1-0.25 | woven seasonal ring
-seasonal pumpkin display | 0.7 | 0.1-0.25 | rounded orange gourd
-pair of dirty work shoes | 0.65 | 0.05-0.15 | scuffed leather pair
-hanging American flag | 0.7 | 0.2-0.4 | us national colors
+a small brass lantern on the far wall beside the door | 0.6 | 0.02-0.06 | warm glass panes
+a small wind chime hanging at the far end of the porch ceiling | 0.45 | 0.02-0.06 | slim metal tubes
+a small potted geranium on the far railing | 0.5 | 0.02-0.06 | green leaves in a clay pot
+a small white flower pot on a distant step | 0.45 | 0.02-0.06 | smooth glaze, green leaves
+a small blue and white ceramic planter at the far corner of the porch | 0.4 | 0.02-0.06 | glazed round pot
+a small folded cream blanket over the far chair arm | 0.4 | 0.02-0.06 | soft solid wool
+a small hanging bird feeder at the far porch corner | 0.4 | 0.02-0.06 | dark wood on a thin chain
+a slim brass door knocker on the distant front door | 0.4 | 0.02-0.06 | polished metal ring
+a small metal watering can by the far steps | 0.45 | 0.02-0.06 | galvanized with a long spout
+a small wicker basket by the far door | 0.4 | 0.02-0.06 | pale woven willow
+a small glass hurricane lamp on the far railing | 0.4 | 0.02-0.06 | clear glass chimney
+a small round cushion on a distant chair at the back | 0.35 | 0.02-0.06 | plain solid cream fabric

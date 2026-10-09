@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-skates knotted over a shoulder | 0.5 | 0.02-0.06 | blade pair
-thermos planted in the snow | 0.45 | 0.01-0.05 | steam flag
-hockey stick bridge over a crack | 0.4 | 0.01-0.05 | cautious tool
-hand auger leaned on a bucket | 0.35 | 0.01-0.05 | cork-screwed steel
-tip-up flag waiting mid-lake | 0.35 | 0.01-0.04 | spring-loaded promise
-mittens clipped to a jacket | 0.45 | 0.01-0.04 | idiot-string wisdom
-puck lost in a snowbank | 0.4 | 0.01-0.03 | spring discovery
-sled rope frozen stiff | 0.4 | 0.01-0.04 | wire curve
-hand warmers shaken furiously | 0.45 | 0.01-0.03 | pocket heat
-broken shovel handle marking thin ice | 0.35 | 0.01-0.05 | improvised warning
-orange peel bright on the white | 0.35 | 0.01-0.03 | snack evidence
+a small dark ice-fishing shelter far out on the ice | 0.5 | 0.02-0.06 | plain boards, closed door
+a small orange buoy frozen far out in the ice | 0.4 | 0.02-0.06 | bright plastic
+a small wooden rowboat upturned on the far bank | 0.45 | 0.02-0.06 | snow along the hull
+a small snow-capped bollard at the far end of the dock | 0.45 | 0.02-0.06 | dark post
+a small red lifebuoy ring on a post at the far end of the dock | 0.35 | 0.02-0.06 | round and plain
+a small stack of firewood at the far corner of the boathouse | 0.4 | 0.02-0.06 | pale ends under snow
+a small grey plastic barrel at the far edge of the dock | 0.4 | 0.02-0.06 | closed lid
+a slim wooden pole stuck in the ice far out | 0.35 | 0.02-0.06 | dark thin stick
+a small coil of rope on a far dock post | 0.35 | 0.02-0.06 | grey loops
+a small round rock at the far shore edge | 0.4 | 0.02-0.06 | grey stone under snow
+a small wooden pallet at the back of the boathouse | 0.35 | 0.02-0.06 | grey boards
+a small tarp-covered boat on a trailer far back along the shore | 0.35 | 0.02-0.06 | blue tarp under snow

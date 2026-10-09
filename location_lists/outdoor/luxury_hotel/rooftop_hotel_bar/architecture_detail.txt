@@ -1,15 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-frameless glass railing clamp | 0.85 | 0.02-0.1 | brushed steel spigot fitting
-steel pergola beam joint | 0.7 | 0.02-0.1 | black bolted connection
-bronze cocktail-bar footrail | 0.7 | 0.02-0.1 | polished curved tube
-string-light wire catenary | 0.65 | 0.05-0.15 | sagging line of warm bulbs
-fluted marble bar front | 0.6 | 0.05-0.15 | vertical grooved stone panel
-elevator penthouse door | 0.55 | 0.05-0.15 | mirrored brass cabin entrance
-stainless drainage channel | 0.5 | 0.02-0.08 | slim linear deck grate
-louvered privacy screen | 0.5 | 0.05-0.15 | angled black timber slats
-rooftop parapet cap stone | 0.5 | 0.02-0.1 | smooth pale limestone coping
-retractable awning mechanism | 0.45 | 0.05-0.15 | folded canvas arm frame
-recessed step-light fixture | 0.45 | 0.02-0.08 | small warm wall glow
-brass wall plaque{| engraved "{RESIDENCE|THE TERRACE}"} | 0.4 | 0.02-0.08 | discreet polished metal
+a slim steel mast with string lights high up over the roof deck | 0.6 | 0.05-0.2 | thin cable and small warm bulbs
+a glass canopy edge high up at the far end of the roof | 0.5 | 0.05-0.2 | thin steel frame, clear panels
+a brick parapet along the far side of the roof | 0.55 | 0.05-0.2 | cream coping stone on top
+a steel stair door in the far right corner | 0.4 | 0.05-0.2 | closed, plain grey
+round white globe lights hanging in a row far overhead | 0.55 | 0.05-0.2 | small soft glow
+a rooftop vent stack in the far left corner | 0.35 | 0.05-0.2 | small and pale
+dark wood slat cladding on the far wall behind the bar | 0.5 | 0.05-0.2 | thin vertical boards
+a thin brass rail along the far edge of the bar | 0.45 | 0.05-0.2 | polished
+recessed ceiling lights in a row under the far canopy | 0.45 | 0.05-0.2 | small warm points
+a low stone planter wall at the far end of the roof | 0.4 | 0.05-0.2 | pale, with clipped hedges
+an elevator housing in a far corner of the roof | 0.35 | 0.05-0.2 | pale grey panels, closed doors
+black steel pergola posts at the far corners | 0.4 | 0.05-0.2 | thin square sections

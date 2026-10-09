@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-bag of wooden clothespins | 0.95 | 0.05-0.15 | small peg bundle
-empty laundry basket | 0.95 | 0.1-0.3 | woven willow tray
-folded towel stack on bench | 0.85 | 0.1-0.25 | crisp terry pile
-spray bottle for stains | 0.65 | 0.05-0.1 | trigger nozzle plastic
-sun hat on bench | 0.7 | 0.05-0.15 | woven straw brim
-gardening apron hung | 0.6 | 0.05-0.15 | washed canvas drape
-pair of garden gloves | 0.7 | 0.05-0.1 | leather palm pair
-small watering can | 0.7 | 0.05-0.15 | metal spout vessel
-butterfly resting on line | 0.55 | 0.05-0.1 | small winged form
-mason jar of lemonade | 0.6 | 0.05-0.1 | clear handled glass
-folded picnic blanket | 0.7 | 0.05-0.2 | softly draped cloth
-small radio playing softly | 0.55 | 0.05-0.1 | retro plastic speaker
+small wooden clothespins along the far end of the line | 0.7 | 0.02-0.06 | pale wood on a thin line
+a small white clothespin bag hanging on the far post | 0.5 | 0.02-0.06 | plain cotton, bare
+a small green watering can by the back fence | 0.5 | 0.02-0.06 | painted metal with a long spout
+a slim wooden prop pole under the far end of the line | 0.45 | 0.02-0.06 | pale wood, leaning
+a small gray birdhouse on the far fence post | 0.45 | 0.02-0.06 | weathered wood with a round hole
+a small terracotta pot by the distant back step | 0.5 | 0.02-0.06 | orange clay with green leaves
+a small green garden hose coil by the far corner of the house | 0.4 | 0.02-0.06 | neat loops on the ground
+a compact plastic laundry basket at the far end of the yard | 0.4 | 0.02-0.06 | pale blue and empty
+a small round metal bird bath at the far back corner | 0.4 | 0.02-0.06 | dark gray basin on a slim stem
+a small orange plastic bucket at the far corner of the fence | 0.35 | 0.02-0.06 | plain with a thin handle
+a small white ceramic planter on the distant back step | 0.4 | 0.02-0.06 | smooth glaze, green leaves
+a small wooden stake with twine beside the far garden bed | 0.35 | 0.02-0.06 | pale wood and thin cord

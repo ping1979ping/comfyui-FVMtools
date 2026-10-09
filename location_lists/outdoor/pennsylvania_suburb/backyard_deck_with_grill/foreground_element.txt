@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-burgers flipped with a press | 0.65 | 0.1-0.25 | sizzle and drip
-can cracked from the cooler | 0.6 | 0.05-0.15 | ice water shake-off
-corn hole bag mid-toss | 0.5 | 0.05-0.2 | arc to the board
-lawn chair settled into | 0.55 | 0.1-0.3 | strap stretch
-plate shielded from a bug | 0.45 | 0.05-0.15 | wave-off
-kid caught before the pool edge | 0.4 | 0.1-0.25 | scoop grab
-grill lid checked with a peek | 0.55 | 0.1-0.25 | smoke release
-umbrella cranked open | 0.5 | 0.05-0.2 | ratchet clicks
-hose kink walked out | 0.45 | 0.05-0.15 | flow restored
-tomatoes checked for ripeness | 0.45 | 0.05-0.15 | gentle squeeze
-sparkler traced in the dusk | 0.35 | 0.05-0.15 | light trail
+a plain wide-plank wooden deck | 1.0 | 0.1-0.4 | smooth and even
+a plain light gray composite deck | 0.8 | 0.1-0.4 | matte and even
+a short natural grass lawn | 0.7 | 0.1-0.4 | fine grass blades, natural soft color
+a plain tan wooden deck surface | 0.9 | 0.1-0.4 | matte and even
+a plain wide-plank cedar deck | 0.75 | 0.1-0.4 | smooth and even
+a plain honey brown wooden deck | 0.7 | 0.1-0.4 | matte and even
+a plain gray wide-plank deck | 0.7 | 0.1-0.4 | smooth and even
+a smooth pale concrete patio slab | 0.5 | 0.1-0.4 | matte and even
+a plain dark brown composite deck | 0.55 | 0.1-0.4 | smooth and even
+a plain light brown wooden deck floor | 0.6 | 0.1-0.4 | matte and even
+a short natural green mown lawn | 0.5 | 0.1-0.4 | fine grass blades, natural soft color
+a plain warm gray flagstone patio | 0.4 | 0.1-0.4 | matte and even

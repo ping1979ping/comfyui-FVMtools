@@ -1,14 +1,13 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-lane lines repainted off-register | 0.5 | 0.05-0.2 | doubled edges
-track surface bubbled at a seam | 0.45 | 0.05-0.15 | patch peeling
-gate with a coded padlock | 0.5 | 0.03-0.1 | chain wrap
-bleacher footboards flexing | 0.45 | 0.05-0.15 | oil-canning steel
-curb ring around the infield | 0.5 | 0.05-0.15 | concrete lip
-drainage grate at the low curve | 0.45 | 0.03-0.1 | puddle magnet
-starting line embedded brass | 0.35 | 0.02-0.08 | worn insert
-fence topped with bare tension wire | 0.45 | 0.05-0.15 | no barbs
-light poles dark until friday | 0.5 | 0.05-0.2 | stadium heads
-ticket booth shuttered | 0.4 | 0.05-0.15 | plywood window
-ramp to the bleachers | 0.45 | 0.05-0.15 | painted grip strips
+a slim white goalpost crossbar at the end of the field far back | 0.5 | 0.05-0.2 | thin painted metal
+thin steel railings along the top row of the far bleachers | 0.5 | 0.05-0.2 | galvanized pipe
+a narrow white curb along the inside edge of the track far back | 0.5 | 0.05-0.2 | smooth low rim
+a slim steel gate in the far fence on the right | 0.45 | 0.05-0.2 | closed galvanized frame
+a thin concrete pad under the far bleachers | 0.4 | 0.05-0.2 | pale and plain
+small round lamps on the far light pole | 0.4 | 0.05-0.2 | grey metal fixtures
+a narrow green fence top rail along the far edge | 0.4 | 0.05-0.2 | smooth painted pipe
+a low brick wall base of the far press box | 0.35 | 0.05-0.2 | plain red brick
+a thin white post at the corner of the far fence | 0.35 | 0.05-0.2 | plain painted steel
+a narrow gray cable run along the far pole base | 0.3 | 0.05-0.2 | thin plain conduit

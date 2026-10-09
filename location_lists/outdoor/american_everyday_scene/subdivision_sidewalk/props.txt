@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-HOA-uniform black mailbox post | 0.85 | 0.1-0.3 | matching painted metal
-seasonal flag on small yard pole | 0.45 | 0.1-0.2 | faded decorative banner
-realtor yard sign{| reading "{FOR SALE|SOLD|OPEN HOUSE}"} | 0.4 | 0.1-0.2 | corrugated plastic sign on a metal frame
-small metal yard sign with a dog silhouette | 0.35 | 0.05-0.15 | small metal sign
-plastic toy left on lawn | 0.4 | 0.05-0.15 | bright forgotten kids toy
-garden hose coiled by spigot | 0.5 | 0.1-0.2 | green vinyl hose coil
-trash toter at curb | 0.65 | 0.1-0.3 | black plastic wheelie bin
-recycling toter at curb | 0.6 | 0.1-0.3 | blue plastic wheelie bin
-small ADT security sign | 0.35 | 0.05-0.15 | metal stake with logo reading "ADT"
-solar walkway light | 0.5 | 0.05-0.15 | small plastic stake light
-new tree support stake and strap | 0.5 | 0.05-0.15 | green plastic strap
-plastic kid's chalk bucket on porch | 0.3 | 0.05-0.15 | bright colored bucket
+small clay planter beside a far front door | 0.5 | 0.02-0.06 | terracotta with green leaves
+small white porch light beside a far door | 0.4 | 0.02-0.06 | plain glass lantern
+small blue recycling bin at the curb far down the block | 0.4 | 0.02-0.06 | plastic bin with a closed lid
+small wooden birdhouse on a far post | 0.35 | 0.02-0.06 | plain brown boards
+small green garden hose reel on a far house wall | 0.4 | 0.02-0.06 | coiled hose on a round frame
+slim black coach lamp beside a far garage door | 0.45 | 0.02-0.06 | small lantern on the wall
+small potted plant on a far front stoop | 0.5 | 0.02-0.06 | green leaves in a gray pot
+small white watering can by a far front step | 0.35 | 0.02-0.06 | plain metal with a long spout
+small bird feeder hanging on a far tree branch | 0.35 | 0.02-0.06 | plain wooden box
+small solar lamp along a far front walkway | 0.4 | 0.02-0.06 | slim black post with a round top
+small gray utility box at the far edge of a lawn | 0.35 | 0.02-0.06 | plain metal case
+small wicker basket on a far porch | 0.3 | 0.02-0.06 | plain woven basket

@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-discarded mattress against bin | 0.4 | 0.1-0.3 | stained foam mattress
-broken IKEA flat-pack chair | 0.35 | 0.1-0.2 | snapped particleboard pieces
-abandoned office chair on its side | 0.35 | 0.1-0.2 | tipped wheeled chair
-busted plastic toter lid | 0.5 | 0.05-0.15 | cracked plastic cover
-overstuffed black trash bag | 0.7 | 0.1-0.3 | bulging garbage sack
-broken-down moving box pile | 0.5 | 0.1-0.3 | flattened cardboard stack
-bicycle frame missing wheels | 0.3 | 0.1-0.2 | rusted stripped bike
-yellow warning sign on wall{| reading "{NO PARKING|TOW ZONE}"} | 0.4 | 0.05-0.15 | metal post sign
-worn rubber-tire wheel chock | 0.35 | 0.05-0.1 | weathered black rubber
-broken bedside lamp discarded | 0.3 | 0.05-0.15 | bent shade with cord
-empty propane grill tank | 0.35 | 0.05-0.15 | dented metal cylinder
-cluster of bagged kitchen trash | 0.7 | 0.1-0.3 | tied white kitchen bags
+small gray electrical box at the far corner of the building | 0.55 | 0.02-0.06 | steel cabinet on a short post
+small orange cone at the far edge of the lot | 0.45 | 0.02-0.06 | plain molded plastic
+small red fire hydrant at the far corner of the lot | 0.5 | 0.02-0.06 | red painted cast iron
+small stack of flattened cardboard boxes against the far fence | 0.4 | 0.02-0.06 | plain brown sheets tied flat
+small clay flower pots on a far stoop | 0.4 | 0.02-0.06 | terracotta with green shrubs
+small green garden hose reel on the far wall | 0.35 | 0.02-0.06 | coiled hose on a wall bracket
+small white junction box on a far utility pole | 0.35 | 0.02-0.06 | plain painted steel
+small charcoal grill on a far balcony | 0.35 | 0.02-0.06 | black kettle shape
+small blue mailbox at the far corner of the lot | 0.4 | 0.02-0.06 | blue steel with a rounded top
+small outdoor water spigot at the base of the far wall | 0.35 | 0.02-0.06 | brass fitting on a short pipe
+small wooden pallet leaning against the far fence | 0.4 | 0.02-0.06 | pale slats, standing on edge
+small round drain grate at the far curb | 0.35 | 0.02-0.06 | dark iron disc

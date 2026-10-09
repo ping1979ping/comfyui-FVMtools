@@ -1,14 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-deck screws backing out | 0.5 | 0.03-0.1 | proud heads
-stairs to the lawn with a wobbly rail | 0.55 | 0.1-0.25 | loose baluster
-hose reel bolted to the house | 0.5 | 0.05-0.15 | crank handle
-dryer vent flap on the wall | 0.4 | 0.02-0.08 | lint beard
-gutter downspout extension | 0.45 | 0.05-0.15 | corrugated black pipe
-deck board replaced unstained | 0.45 | 0.05-0.15 | bright new plank
-hose bib with a splitter | 0.4 | 0.02-0.08 | two-valve brass
-paver pad under the grill | 0.45 | 0.05-0.15 | grease shadow
-lattice under the deck | 0.45 | 0.1-0.25 | stored kayak behind
-motion light at the corner | 0.4 | 0.02-0.08 | angled twin heads
-anti-slip tape on the steps | 0.35 | 0.03-0.1 | peeling strips
+a white vinyl fence post cap far along the back of the yard | 0.5 | 0.05-0.2 | flat square tops
+a slim white downspout at the far corner of the house | 0.45 | 0.05-0.2 | vertical aluminum tube
+a narrow window with white trim on the far house wall | 0.5 | 0.05-0.2 | closed, dark glass
+a small outdoor wall lamp beside the far patio door | 0.45 | 0.05-0.2 | black fixture, unlit
+a thin white gutter along the far roofline | 0.5 | 0.05-0.2 | straight horizontal line
+a small gray hose spigot low on the far wall | 0.35 | 0.05-0.2 | brass tap on vinyl siding
+a low brick foundation under the far siding | 0.4 | 0.05-0.2 | red brick band
+slim white deck posts at the far corner of the deck | 0.5 | 0.05-0.2 | square posts with flat caps
+a small vent grille high on the far gable | 0.35 | 0.05-0.2 | white louvers
+a narrow lattice panel under the far end of the deck | 0.4 | 0.05-0.2 | white diamond grid
+a thin black wire along the far eave | 0.3 | 0.05-0.2 | slim cable on brackets
+a small gray electrical box on the far wall | 0.35 | 0.05-0.2 | closed metal door

@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-backyard wood fence panels | 1.0 | 0.5-0.9 | weathered timber slats
-neighboring shed structure | 0.85 | 0.4-0.7 | painted clapboard wall
-mature backyard hedge | 0.85 | 0.4-0.7 | dense clipped foliage
-distant tree canopy line | 0.95 | 0.4-0.8 | layered green silhouette
-open sky beyond yard | 0.95 | 0.4-0.9 | open daylight expanse
-trellised pole-bean wall | 0.85 | 0.4-0.7 | climbing leafy vines
-ivy-clad fence panel | 0.7 | 0.3-0.6 | trailing leafy cover
-small greenhouse structure | 0.6 | 0.3-0.6 | clear glazed walls
-flowering perennial border | 0.85 | 0.3-0.6 | colorful blooming patch
-neighboring backyard view | 0.7 | 0.3-0.6 | softly distant houses
+a tall wooden fence along the back of the garden | 1.0 | 0.6-1.0 | cedar boards across the whole width of the image, tall tree crowns and a pale sky above the top edge
+a tall evergreen hedge along the back of the garden | 0.7 | 0.6-1.0 | a dense dark green wall across the whole width of the image, a distant roofline above it on the right
+the back of the house across the garden | 0.65 | 0.6-1.0 | white siding, a back door and tall windows across the whole width of the image, a low step on the left
+a row of mature trees along the back of the garden | 0.7 | 0.6-1.0 | tall trunks and broad crowns across the whole width of the image, a wire fence at their base
+a small greenhouse at the back of the garden | 0.5 | 0.6-1.0 | glass panels in a white frame at the center, a cedar fence running off to the left and right behind it
+a wooden shed at the back of the garden | 0.55 | 0.6-1.0 | gray board walls and a green metal roof on the right, a fence and tall trees across the whole width of the image
+a flowering shrub border along the back fence | 0.5 | 0.6-1.0 | tall green shrubs across the whole width of the image, a wooden fence behind them, a pale sky above
+a mown lawn running back to a hedge | 0.5 | 0.6-1.0 | open green grass across the whole width of the image, a tall hedge at the back, trees beyond
+a stone wall with tall perennials along the back | 0.5 | 0.6-1.0 | gray fieldstone across the whole width of the image, tall green plants rising above it, a wooden fence behind
+a chain-link fence with a field beyond | 0.4 | 0.6-1.0 | a low galvanized fence across the whole width of the image, a mown meadow and a line of woods beyond
+a wide pale sky over the garden | 0.4 | 0.6-1.0 | soft blue-white sky above a low line of trees and fence across the whole width of the image
+suburban rooftops beyond the back fence | 0.5 | 0.6-1.0 | shingled gable roofs and chimneys on a gentle slope across the whole width of the image, tall trees between them
+a trellis fence at the back of the garden | 0.45 | 0.6-1.0 | a tall lattice panel with climbing vines across the whole width of the image, green shrubs in front of it

@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-leaning rake and hoe set | 1.0 | 0.3-0.5 | wood-handled garden tools
-shovel against shed wall | 0.95 | 0.2-0.4 | long timber handle
-wheelbarrow parked outside | 0.95 | 0.3-0.6 | painted metal tub
-work bench inside shed | 0.85 | 0.4-0.7 | rough timber top
-hanging coil of garden hose | 0.95 | 0.2-0.4 | green rubber loop
-stack of clay flowerpots | 0.95 | 0.2-0.4 | terracotta tiered pile
-ladder leaning on wall | 0.7 | 0.2-0.4 | wood rung pair
-push lawnmower parked | 0.7 | 0.2-0.5 | painted metal deck
-trug basket of bulbs | 0.7 | 0.1-0.3 | woven natural tray
-shelf of seed envelopes | 0.85 | 0.2-0.4 | colorful small envelopes with vegetable pictures
-hanging gardening apron | 0.7 | 0.1-0.3 | washed canvas drape
-small potting bench | 0.85 | 0.3-0.5 | open work surface
+a rake, a hoe and a shovel leaning against the shed wall a few meters back on the left | 1.0 | 0.2-0.5 | long wooden handles, dark steel heads
+a wheelbarrow parked beside the shed door a few meters back on the right | 0.8 | 0.2-0.5 | green steel tray, one front wheel
+a wooden ladder leaning on the shed wall a few meters back on the left | 0.45 | 0.2-0.5 | pale rails and even rungs
+a push lawn mower parked beside the shed a few meters back on the right | 0.5 | 0.2-0.5 | red body, black handle
+a coiled green garden hose on a wall hook a few meters back on the right | 0.55 | 0.2-0.5 | neat loops on a metal hook
+a tall stack of terracotta flower pots a few meters back at the left of the door | 0.55 | 0.2-0.5 | nested orange clay
+an empty potting bench along the shed wall a few meters back on the left | 0.5 | 0.2-0.5 | pale planks, a low shelf under it, bare top
+a galvanized trash can beside the shed a few meters back on the right | 0.35 | 0.2-0.5 | silver steel with a lid
+a row of dark green plastic planters along the shed wall a few meters back | 0.4 | 0.2-0.5 | round, filled with dark soil
+a wide wooden door standing open a few meters back at the center | 0.45 | 0.2-0.5 | dark inside, tools hung on the wall
+a long-handled pair of pruning loppers hung on the shed wall a few meters back on the left | 0.4 | 0.2-0.5 | red grips on steel blades
+a folded blue tarp on a pallet a few meters back on the right | 0.35 | 0.2-0.5 | neat solid blue fold, folded flat
+a low stone path leading to the shed door a few meters back at the center | 0.4 | 0.2-0.5 | flat gray stones laid in a line
+two large terracotta planters flanking the door a few meters back | 0.45 | 0.2-0.5 | round with green shrubs

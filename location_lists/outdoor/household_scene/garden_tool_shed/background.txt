@@ -1,13 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-weathered cedar shed wall | 1.0 | 0.6-1.0 | aged silvery shingle
-painted shed siding panel | 0.95 | 0.6-1.0 | softly worn paint
-backyard fence behind shed | 0.85 | 0.4-0.8 | weathered timber slats
-overgrown shrubbery flank | 0.85 | 0.4-0.7 | dense leafy growth
-small shed window pane | 0.85 | 0.3-0.6 | divided glass squares
-hung tool wall inside | 0.95 | 0.5-0.9 | pegged rough planks
-pitched shed roof inside | 0.85 | 0.4-0.8 | rough rafter slope
-gravel surround behind shed | 0.7 | 0.3-0.6 | small stone bed
-ivy-clad shed exterior wall | 0.7 | 0.4-0.8 | trailing leafy cover
-small flower bed at base | 0.7 | 0.3-0.6 | colorful planted strip
+a wooden garden shed with a pitched roof across the middle of the image | 1.0 | 0.6-1.0 | weathered cedar boards across the whole width of the image, a closed double door at the center, a small window on the right
+a painted barn-red shed at the back of the yard | 0.75 | 0.6-1.0 | vertical board siding across the whole width of the image, white trim, a gray shingled roof above, a closed door on the left
+a gray vinyl-sided storage shed at the back of the yard | 0.7 | 0.6-1.0 | a plain wall across the whole width of the image, a closed double door at the center, a low shingled roof above
+a shed wall with a tall wooden fence beside it | 0.6 | 0.6-1.0 | board-and-batten siding across the middle of the image, a cedar fence running off to the right, tall trees behind
+a green-painted shed under a large shade tree | 0.55 | 0.6-1.0 | a plain wall across the whole width of the image, a broad tree crown above the roof, a hedge along the left
+a tall evergreen hedge behind the shed | 0.6 | 0.6-1.0 | a dense dark green wall across the whole width of the image, the shed roof and a pale sky above it
+the back fence of the yard behind the shed | 0.55 | 0.6-1.0 | tall cedar boards across the whole width of the image, a few tree crowns rising above it
+a stone-footed shed with a green metal roof | 0.5 | 0.6-1.0 | gray board walls across the whole width of the image, a fieldstone base, shrubs along the left side
+a shed beside a low fieldstone wall | 0.45 | 0.6-1.0 | gray stone along the right across the image, cedar shed boards at the center, tall trees behind
+a long white shed with a lean-to roof along the back fence | 0.5 | 0.6-1.0 | plain boards across the whole width of the image, a wide open door on the right, tall trees behind
+a wide pale sky over the shed and fence | 0.4 | 0.6-1.0 | soft blue-white sky above a low roofline and a line of trees across the whole width of the image
+the house back wall far behind the shed on the left | 0.45 | 0.6-1.0 | white siding and a few windows across the left of the image, the shed in the center, a hedge on the right
+a shed corner with a trellis on the side wall | 0.45 | 0.6-1.0 | plain gray boards across the whole width of the image, a wooden trellis on the left, tall trees behind

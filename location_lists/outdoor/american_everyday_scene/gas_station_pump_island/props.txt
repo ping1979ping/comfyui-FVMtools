@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-paper towel dispenser at pump | 0.75 | 0.05-0.15 | blue metal box
-windshield squeegee handle in bucket | 0.7 | 0.05-0.15 | grimy plastic grip
-yellow wet floor cone | 0.4 | 0.05-0.15 | scuffed plastic cone with a slipping-figure pictogram
-fountain drink cup discarded | 0.55 | 0.05-0.1 | crushed paper cup
-gas pump nozzle clip and lever | 0.85 | 0.05-0.15 | worn metal mechanism
-credit card reader keypad | 0.85 | 0.05-0.1 | dirty rubber buttons
-small trash bin attached to pump | 0.75 | 0.05-0.15 | open black plastic
-pump housing covered in colorful abstract stickers | 0.7 | 0.1-0.3 | layered weathered decals
-plastic bag stuck on bollard | 0.4 | 0.05-0.1 | snagged white grocery bag
-five-gallon kerosene jug | 0.35 | 0.05-0.15 | blue plastic container
-loose grocery cart abandoned | 0.4 | 0.1-0.2 | dented metal basket
-yellow banner taped to glass{| reading "{LOTTO|LOTTERY|WIN}"} | 0.5 | 0.1-0.2 | sun-faded vinyl banner with starburst shapes
+small black squeegee bucket at the far end of the pump island | 0.6 | 0.02-0.06 | plastic bucket with a handle
+small orange traffic cone at the far corner of the building | 0.4 | 0.02-0.06 | plain plastic cone
+small paper towel holder on the far pump post | 0.5 | 0.02-0.06 | grey steel box
+small grey electrical box on the far wall behind the pumps | 0.4 | 0.02-0.06 | plain metal door
+small red plastic gas can beside the far store wall | 0.4 | 0.02-0.06 | plain red with a spout
+slim black hose hanging at the far air post | 0.35 | 0.02-0.06 | coiled rubber
+small potted shrub beside the far entrance | 0.45 | 0.02-0.06 | green leaves in a black pot
+small stack of washer fluid jugs on a far shelf by the store wall | 0.4 | 0.02-0.06 | blue plastic jugs
+compact red fire extinguisher box on the far store wall | 0.35 | 0.02-0.06 | narrow steel case
+small black camera dome under the far canopy edge | 0.35 | 0.02-0.06 | smooth round housing
+small concrete planter at the far corner of the lot | 0.4 | 0.02-0.06 | pale round bowl with green shrubs
+small grey fuse box beside the far store door | 0.3 | 0.02-0.06 | plain metal case

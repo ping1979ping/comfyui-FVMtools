@@ -1,14 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-shallow creek over flat shale | 1.0 | 0.4-0.8 | amber water and riffles
-sycamore leaning over the water | 0.7 | 0.2-0.5 | mottled bark
-far bank of rhododendron | 0.6 | 0.25-0.5 | glossy tangled wall
-swimming hole below the riffle | 0.6 | 0.25-0.5 | green-dark pool
-gravel bar mid-creek | 0.6 | 0.2-0.4 | sorted stones
-old stone abutment remnant | 0.4 | 0.1-0.3 | mossy block wall
-hemlock shade on the far side | 0.5 | 0.2-0.45 | deep green dark
-riffle catching the light | 0.6 | 0.15-0.35 | broken sparkle
-path worn down the bank | 0.6 | 0.15-0.35 | root staircase
-railroad grade above the far bank | 0.35 | 0.15-0.35 | ballast line
-cliff swallows working the water | 0.35 | 0.05-0.2 | looping flights
+the far bank of the creek | 1.0 | 0.6-1.0 | a wall of sycamores and tulip poplars in full green leaf across the whole width of the image, dappled light on the trunks
+a shallow creek running across the middle of the image | 0.9 | 0.6-1.0 | clear brown water over flat grey shale, a few low riffles, wooded banks on both sides
+a rhododendron thicket along the far bank | 0.6 | 0.6-1.0 | dark glossy evergreen mass across the whole width of the image under tall trees
+hemlock shade on the far side of the creek | 0.55 | 0.6-1.0 | dark evergreen boughs across the whole width of the image, cool deep shadow beneath
+a wooded ridge rising far above the valley | 0.6 | 0.6-1.0 | rolling green hills layered in haze across the whole width of the image, a pale sky above
+a big sycamore leaning over the creek on the left | 0.65 | 0.6-1.0 | mottled white and tan trunk, a broad leafy crown reaching across the water
+a layered shale rock face on the far bank | 0.45 | 0.6-1.0 | grey ledges with ferns growing in the cracks, tall trees above
+an old stone bridge abutment on the far right | 0.4 | 0.6-1.0 | a low wall of dark stone blocks, a wooded bank above
+a meadow above the far bank | 0.4 | 0.6-1.0 | tall grass and wildflowers under a line of trees across the whole width of the image
+a bend of the creek far back in the middle | 0.55 | 0.6-1.0 | the stream curving between steep wooded banks, sunlight on the riffle
+a deep pool at the far end of the creek | 0.5 | 0.6-1.0 | dark green water under overhanging branches, a flat rock on the left
+a railroad embankment far above the opposite bank | 0.3 | 0.6-1.0 | a low grassy grade with a dark line of trees, a pale sky above
+a tunnel of leafy branches far upstream | 0.5 | 0.6-1.0 | arching sycamore and maple boughs over the creek, bright light at the far end
+a pale gravel bar far across the creek | 0.5 | 0.6-1.0 | flat sun-bleached stones along the far side, tall trees behind it

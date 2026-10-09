@@ -1,13 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-painted clapboard house siding | 1.0 | 0.6-1.0 | overlapping wood boards
-front door panel painted | 1.0 | 0.4-0.7 | profiled painted leaf
-divided porch column row | 0.95 | 0.4-0.8 | turned painted timbers
-white painted railing balustrade | 0.95 | 0.3-0.6 | turned spindle row
-porch ceiling painted soft blue | 0.95 | 0.3-0.7 | painted board panels
-neighbor street view beyond | 0.85 | 0.3-0.7 | softly distant houses
-mature front yard trees | 0.85 | 0.4-0.7 | leafy canopy cover
-brick foundation skirt | 0.7 | 0.3-0.6 | aged warm masonry
-white shingled exterior wall | 0.7 | 0.5-0.9 | painted cedar shakes
-flowering vine on column | 0.7 | 0.2-0.5 | trailing leafy greenery
+the front wall of the house behind the porch | 1.0 | 0.6-1.0 | white clapboard siding across the whole width of the image, a dark green front door at the center, tall windows on both sides
+the yard and street beyond the porch railing | 0.8 | 0.6-1.0 | a green front lawn, a quiet two-lane street and a row of colonial houses across the whole width of the image, tall maple trunks along the curb
+a row of square white porch columns along the far edge of the porch | 0.75 | 0.6-1.0 | a wooden railing between the columns across the whole width of the image, a green lawn and tall trees beyond
+the red brick front of the house behind the porch | 0.8 | 0.6-1.0 | a brick wall across the whole width of the image, a black door with a glass panel at the center, white-trimmed windows with dark shutters on both sides
+a fieldstone house front behind the porch | 0.6 | 0.6-1.0 | gray-tan stone across the whole width of the image, a heavy wooden front door at the center, small-paned windows on both sides
+the gray shingle-sided house front behind the porch | 0.55 | 0.6-1.0 | wide shingled wall across the whole width of the image, white trim, a deep blue front door on the right
+a broad front lawn sloping down to the sidewalk beyond the porch | 0.6 | 0.6-1.0 | open green grass across the whole width of the image, a large maple on the left, a pale sky above
+the stone foundation wall of the house under the porch roof | 0.45 | 0.6-1.0 | gray fieldstone across the whole width of the image, tall windows above it, a white porch roof overhead
+a deep blue wooden front door at the center of the house wall | 0.6 | 0.6-1.0 | flanked by two tall narrow windows, white clapboard siding across the whole width of the image
+mature shade trees across the street beyond the railing | 0.6 | 0.6-1.0 | tall trunks and wide crowns across the whole width of the image, the fronts of two older frame houses behind them
+the tree-lined residential street beyond the porch steps | 0.65 | 0.6-1.0 | a quiet street of brick and clapboard houses with front lawns across the whole width of the image, a sidewalk along the curb
+a beadboard porch ceiling across the whole width of the image | 0.4 | 0.6-1.0 | pale blue boards high above the far wall, white siding below it, a column at each end
+a boxwood hedge along the front of the porch | 0.5 | 0.6-1.0 | a clipped dark green hedge across the whole width of the image, a lawn and a street beyond it
+a white front wall with a wide bay window on the left | 0.5 | 0.6-1.0 | clapboard siding across the whole width of the image, a front door on the right, a stone chimney rising above

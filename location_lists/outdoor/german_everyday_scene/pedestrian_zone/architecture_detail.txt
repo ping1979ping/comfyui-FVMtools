@@ -1,14 +1,13 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-drainage channel in the paving | 0.5 | 0.05-0.2 | worn stone channel
-bollards at the street entrance | 0.55 | 0.05-0.2 | scuffed steel posts
-block paving pattern underfoot | 0.8 | 0.25-0.55 | interlocking pavers
-kerbless flush surface | 0.5 | 0.15-0.4 | level paving
-manhole cover in the paving | 0.45 | 0.03-0.12 | worn cast iron
-shop threshold step | 0.5 | 0.05-0.2 | worn stone lip
-lamp column with a bracket | 0.5 | 0.1-0.3 | painted steel
-tree grille around a trunk | 0.4 | 0.05-0.2 | cast metal grid
-paving sunken near a drain | 0.4 | 0.05-0.2 | dished surface
-downpipe on a shop wall | 0.4 | 0.05-0.2 | painted metal
-weeds between the pavers | 0.4 | 0.03-0.12 | thin green shoots
+a slim lamp bracket on the far facade | 0.5 | 0.05-0.2 | black, unlit
+a narrow balcony railing on the upper floor far behind | 0.5 | 0.05-0.2 | thin black bars
+a small dormer window in the far roof | 0.45 | 0.05-0.2 | white frame
+a thin downpipe along the far corner | 0.4 | 0.05-0.2 | grey metal
+a small stone cornice along the far roofline | 0.45 | 0.05-0.2 | pale stone
+a slim steel bollard far down the street | 0.4 | 0.05-0.2 | dark steel
+a small round clock face on the far church tower | 0.35 | 0.05-0.2 | pale dial
+a small arched doorway far back on the left | 0.4 | 0.05-0.2 | dark wooden door, closed
+a thin chimney stack far above the roofline | 0.4 | 0.05-0.2 | brick red
+a narrow wooden shutter on a far house window | 0.4 | 0.05-0.2 | green, closed

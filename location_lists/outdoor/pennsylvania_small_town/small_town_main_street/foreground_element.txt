@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-shop door held for a stranger | 0.55 | 0.05-0.2 | bell over the frame
-window display browsed slowly | 0.55 | 0.1-0.3 | reflection layered
-meter fed with found change | 0.5 | 0.05-0.15 | coin pinch
-coffee sipped walking the block | 0.55 | 0.05-0.2 | unhurried pace
-dog greeted outside the bakery | 0.5 | 0.05-0.2 | ear scratch crouch
-crosswalk waited at the light | 0.5 | 0.1-0.25 | button pressed twice
-pizza slice folded on the walk | 0.45 | 0.05-0.15 | paper plate flex
-passerby studying a pole covered in colorful paper | 0.45 | 0.05-0.15 | head tilted
-bench sat with a paper cup of coffee | 0.45 | 0.1-0.3 | napkin spread
-bakery bag pinched closed | 0.5 | 0.03-0.1 | still warm
-wave through a shop window | 0.45 | 0.05-0.15 | familiar face
+a smooth broom-finished concrete sidewalk | 1.0 | 0.1-0.4 | smooth and even
+a plain pale gray concrete sidewalk | 0.9 | 0.1-0.4 | matte and even
+a plain light gray asphalt street surface | 0.7 | 0.1-0.4 | smooth and even
+a plain red brick sidewalk | 0.55 | 0.1-0.4 | matte and even
+a plain warm gray concrete sidewalk | 0.7 | 0.1-0.4 | smooth and even
+a smooth light concrete walkway along the shops | 0.65 | 0.1-0.4 | matte and even
+a plain medium gray asphalt road | 0.6 | 0.1-0.4 | smooth and even
+a plain buff concrete sidewalk | 0.55 | 0.1-0.4 | matte and even
+a plain slate gray flagstone sidewalk | 0.4 | 0.1-0.4 | smooth and even
+a smooth pale concrete pavement | 0.6 | 0.1-0.4 | smooth and even
+a plain granite curb beside a gray sidewalk | 0.4 | 0.1-0.4 | matte and even
+a plain dark gray asphalt street surface | 0.5 | 0.1-0.4 | matte and even

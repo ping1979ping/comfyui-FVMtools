@@ -1,15 +1,15 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-red CVS pharmacy storefront | 0.85 | 0.4-0.8 | red band and {"CVS" lettering|a heart-shaped emblem} on stucco
-Walgreens chain pharmacy facade | 0.55 | 0.4-0.8 | beige stucco with a red swoosh band and {"WALGREENS" lettering|red lettering}
-strip mall row of small shops | 0.7 | 0.4-0.8 | uniform single-story retail
-sun-bleached pharmacy pylon sign{| with "{CVS|RX|PHARMACY}"} | 0.9 | 0.2-0.5 | tall pylon sign at street
-adjacent nail salon storefront | 0.5 | 0.2-0.5 | window with pink flower decals
-asphalt parking lot expanse | 1.0 | 0.5-1.0 | cracked dark pavement
-distant traffic light intersection | 0.55 | 0.2-0.4 | suspended signal heads
-adjacent dry cleaner shop | 0.45 | 0.2-0.4 | small storefront with vent
-back-lot loading bay | 0.5 | 0.2-0.4 | concrete dock with rollup door
-sparse landscape island with shrubs | 0.7 | 0.2-0.4 | mulched curbed planter
-overhead light poles in lot | 0.85 | 0.1-0.3 | tall steel fixtures
-office building behind lot | 0.4 | 0.2-0.4 | flat-roofed beige facade
+a one-storey brick pharmacy building across the lot | 1.0 | 0.6-1.0 | tan brick walls, a red band under the roofline and a wide glass entrance across the whole width of the image
+the pharmacy storefront with a deep entry canopy | 0.85 | 0.6-1.0 | a red-trimmed canopy over a glass sliding entrance across the whole width of the image, white-framed windows on the left
+a strip of low retail shops next door | 0.7 | 0.6-1.0 | flat-roofed stucco units with dark awnings across the whole width of the image, a row of parked cars in front
+the arterial road beyond the lot | 0.65 | 0.6-1.0 | four lanes with a traffic light on a mast arm at the far corner, utility poles along the far side, a pale sky above
+the far side of the parking lot | 0.7 | 0.6-1.0 | wide asphalt with rows of empty parked cars, tall light poles along the back and a tree line above
+the landscaped edge of the lot | 0.55 | 0.6-1.0 | a hedge and a row of young trees in a curbed strip across the whole width of the image, low shops behind
+the tan side wall of the building on the left | 0.5 | 0.6-1.0 | a tall plain brick wall with a rooftop vent at the top, a low hedge along its base
+a stand of oaks and pines behind the lot | 0.5 | 0.6-1.0 | dark evergreens and tall trunks behind a low fence across the whole width of the image
+a flat-roofed office building far behind the lot | 0.45 | 0.6-1.0 | beige two-storey facade with dark glass windows across the whole width of the image
+the intersection at the far corner of the lot | 0.55 | 0.6-1.0 | crosswalks and turn lanes, a gas station canopy far on the right, low trees on the left
+a suburban hillside with houses beyond the road | 0.45 | 0.6-1.0 | rooftops and tall trees rising across the whole width of the image, a hazy sky above
+a wide pale sky above a low retail skyline | 0.4 | 0.6-1.0 | flat rooflines, overhead wires and a few tall trees across the whole width of the image

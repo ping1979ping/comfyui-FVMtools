@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-big yellow poster in window{| reading "{SALE|DEALS|SAVE}"} | 0.95 | 0.2-0.5 | bright vinyl poster with starburst shapes
-window cling with colorful abstract graphics | 0.7 | 0.2-0.4 | static-stuck graphic decal
-ice freezer chest outside door | 0.65 | 0.1-0.3 | white freezer
-red Coca-Cola crate stack outside | 0.7 | 0.1-0.3 | stacked red plastic Coca-Cola crates
-beverage display rack outside | 0.55 | 0.1-0.3 | metal wire rack with bottles
-glass storefront entry door | 0.95 | 0.2-0.4 | dirty smudged storefront glass
-plastic bag holding bin entry | 0.5 | 0.05-0.15 | metal bag holder
-small flatbed cart at door | 0.4 | 0.1-0.2 | yellow store cart
-red shopping basket stack | 0.55 | 0.05-0.15 | plastic basket pile
-sandwich-board sign{| reading "{SALE|DEALS}"} | 0.5 | 0.1-0.2 | bright A-frame sign
-parked old sedan at front | 0.5 | 0.2-0.4 | dusty older car
-faded yellow curb at entry | 0.7 | 0.1-0.3 | chipped curb paint
+an unoccupied pickup truck parked nose-in a few meters back on the left | 1.0 | 0.2-0.5 | dusty body, dark windows
+a short row of empty red shopping carts beside the entrance a few meters back on the right | 0.6 | 0.2-0.5 | plastic baskets nested together
+a covered concrete walkway along the storefront a few meters back | 0.8 | 0.2-0.5 | flat roof on slim steel posts, clean and empty
+dark glass entrance doors a few meters back | 0.8 | 0.2-0.5 | closed, in a black aluminum frame
+a row of yellow steel bollards in front of the wall a few meters back | 0.5 | 0.2-0.5 | evenly spaced on the pavement
+an empty wooden bench beside the doors a few meters back on the left | 0.4 | 0.2-0.5 | plain slats on a steel frame
+two unoccupied parked sedans a few meters back on the right | 0.6 | 0.2-0.5 | dusty windows, parked nose-in
+a tall pole light at the edge of the lot a few meters back | 0.5 | 0.2-0.5 | galvanized steel with a single lamp head
+a black steel trash receptacle with a closed lid beside the doors a few meters back | 0.45 | 0.2-0.5 | round, on a concrete pad
+a stack of empty wooden pallets at the end of the building a few meters back on the left | 0.4 | 0.2-0.5 | pale slats stacked evenly
+a mown grass strip along the edge of the lot a few meters back | 0.5 | 0.2-0.5 | even lawn behind a low curb
+a white delivery van parked and unoccupied a few meters back on the right | 0.4 | 0.2-0.5 | windows dark, parked straight
+a tan block dumpster enclosure at the side of the building a few meters back | 0.4 | 0.2-0.5 | steel gates closed
+a concrete planter with low shrubs beside the entrance a few meters back | 0.4 | 0.2-0.5 | round pale bowl

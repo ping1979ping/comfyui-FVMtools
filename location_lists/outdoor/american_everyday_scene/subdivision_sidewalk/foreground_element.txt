@@ -1,15 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-clean concrete sidewalk panel | 0.95 | 0.3-0.6 | uniform poured concrete
-expansion joint groove in sidewalk | 0.85 | 0.1-0.3 | linear control joint
-trimmed lawn edge along sidewalk | 0.85 | 0.1-0.3 | clean grass-to-pavement border
-sprinkler runoff stain on concrete | 0.45 | 0.1-0.2 | pale mineral deposit
-dropped piece of mulch on slab | 0.4 | 0.05-0.1 | dark bark chip
-small pinecone on sidewalk | 0.35 | 0.05-0.1 | dried cone
-kid's chalk doodle nearly washed | 0.35 | 0.1-0.2 | faded chalk smudge
-fallen leaf on clean concrete | 0.45 | 0.05-0.1 | dry brown leaf
-small ant hill in lawn seam | 0.3 | 0.05-0.1 | tiny dirt mound
-single-flowered weed in seam | 0.5 | 0.05-0.15 | scrubby green sprout
-grass clipping streak on sidewalk | 0.55 | 0.1-0.2 | trail of dried clippings
-discarded folded paper flyer on lawn | 0.3 | 0.05-0.15 | folded paper sheet
+a plain light gray concrete sidewalk | 1.0 | 0.1-0.4 | smooth and even
+a smooth broom-finished concrete sidewalk | 0.9 | 0.1-0.4 | matte and even
+a plain pale concrete sidewalk | 0.8 | 0.1-0.4 | matte and even
+a plain warm gray concrete walkway | 0.6 | 0.1-0.4 | smooth and even
+a short natural grass lawn | 0.5 | 0.1-0.4 | fine grass blades, natural soft color
+a plain light gray asphalt street surface | 0.55 | 0.1-0.4 | matte and even
+a plain smooth concrete pavement | 0.7 | 0.1-0.4 | matte and even
+a plain flat light concrete sidewalk | 0.6 | 0.1-0.4 | smooth and even
+a plain even gray concrete pavement | 0.6 | 0.1-0.4 | matte and even
+a plain medium gray asphalt surface | 0.45 | 0.1-0.4 | smooth and even
+a plain light brushed concrete sidewalk | 0.55 | 0.1-0.4 | matte and even
+a plain pale gray concrete walkway | 0.5 | 0.1-0.4 | smooth and even

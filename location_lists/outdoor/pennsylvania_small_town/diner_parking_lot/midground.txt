@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-pickups nosed to the building | 0.65 | 0.25-0.5 | work-mud flanks
-handicap spots by the ramp | 0.55 | 0.1-0.25 | faded blue paint
-motorcycle pair parked together | 0.45 | 0.1-0.25 | helmets on mirrors
-entrance steps with a railing | 0.6 | 0.1-0.25 | astroturf treads
-coin-operated vending boxes by the door | 0.5 | 0.05-0.15 | red and blue metal boxes
-smokers' bench at the corner | 0.4 | 0.05-0.15 | coffee-can ashtray
-delivery van at the side door | 0.45 | 0.15-0.3 | ramp down
-puddles in the low spots | 0.5 | 0.1-0.25 | sky reflections
-state trooper cruiser parked | 0.35 | 0.15-0.3 | coffee stop
-tour bus taking up the back row | 0.3 | 0.2-0.4 | casino day trip
-gull working the lot | 0.4 | 0.05-0.15 | fry scout
+empty parked pickup trucks a few meters back on the left | 0.8 | 0.2-0.5 | mud-splashed flanks, nosed toward the restaurant
+a row of empty parked sedans a few meters back across the lot | 0.9 | 0.2-0.5 | silver, blue and white, evenly spaced
+an empty parked station wagon a few meters back on the right | 0.55 | 0.2-0.5 | dark green, windows clear
+a tall steel light pole a few meters back on the right | 0.6 | 0.2-0.5 | gray arm with a flat lamp head
+a low curb with a strip of green shrubs a few meters back along the building | 0.65 | 0.2-0.5 | rounded evergreen bushes
+two concrete steps with a black rail a few meters back at the entrance | 0.6 | 0.2-0.5 | plain gray treads
+an empty wooden bench beside the entrance a few meters back on the left | 0.45 | 0.2-0.5 | painted green slats, against the brick
+a red brick dumpster enclosure at the far back corner | 0.5 | 0.2-0.5 | closed wooden gate, a low wall
+an empty parked delivery van a few meters back on the right | 0.45 | 0.2-0.5 | plain white box body
+a grassy island with a young maple a few meters back in the middle of the lot | 0.5 | 0.2-0.5 | a low curb around it
+a row of empty parked cars along the front of the building a few meters back | 0.8 | 0.2-0.5 | nosed to the windows
+a gray utility pole with wires a few meters back on the left | 0.45 | 0.2-0.5 | dark wood with a small transformer
+an empty parked motorcycle a few meters back on the left | 0.35 | 0.2-0.5 | black, resting on its stand

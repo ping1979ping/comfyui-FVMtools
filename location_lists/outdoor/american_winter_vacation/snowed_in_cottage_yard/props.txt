@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-snowshoes crossed by the door | 0.45 | 0.02-0.08 | webbed pair
-sled rope in a stiff coil | 0.45 | 0.01-0.05 | frozen spiral
-bird seed scoop in the bin | 0.4 | 0.01-0.04 | buried to the handle
-carrot budgeted for the snowman | 0.4 | 0.01-0.03 | nose in waiting
-mittens drying on the stove-side line | 0.45 | 0.02-0.06 | steaming row
-thermos parked on the porch rail | 0.4 | 0.01-0.05 | steam curl
-snow brush worn to a nub | 0.4 | 0.01-0.04 | car veteran
-kindling basket topped with birch | 0.45 | 0.02-0.08 | paper-bark curls
-salt bucket with a frozen scoop | 0.4 | 0.01-0.05 | chipped free
-lantern for the woodshed run | 0.4 | 0.01-0.05 | swinging glow
-storm chocolate rationed slowly | 0.35 | 0.01-0.03 | foil corner
+a small shovel leaning on the far porch rail | 0.5 | 0.02-0.06 | dark blade, wooden handle
+a small wooden sled leaning against the far shed wall | 0.4 | 0.02-0.06 | grey boards
+a small galvanized bucket at the far corner of the porch | 0.4 | 0.02-0.06 | silver grey
+a small birdhouse on a thin pole at the far edge of the yard | 0.45 | 0.02-0.06 | weathered wood
+a small bird feeder hanging on a bare branch far back | 0.45 | 0.02-0.06 | wooden box
+a small stack of logs at the far end of the porch | 0.5 | 0.02-0.06 | pale ends
+a small terracotta pot under snow on the far step | 0.35 | 0.02-0.06 | rounded white cap
+a small metal washtub leaning against the far shed | 0.35 | 0.02-0.06 | grey zinc
+a small coil of garden hose on the far wall | 0.3 | 0.02-0.06 | dark green loops
+a small snow-capped fence post at the far corner | 0.45 | 0.02-0.06 | rounded white top
+a small wooden crate on the far porch | 0.35 | 0.02-0.06 | plain pine
+a small snow-capped mailbox at the far end of the drive | 0.4 | 0.02-0.06 | dark steel

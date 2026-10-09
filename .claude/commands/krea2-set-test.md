@@ -23,14 +23,17 @@ Expected form: one or more set names (globs allowed) plus optional seeds/port, e
 cd D:/AI/ComfyUI/ComfyUI/custom_nodes/comfyui-FVMtools && \
   D:/AI/ComfyUI/ComfyUI/venv/Scripts/python.exe scripts/krea2_set_check.py \
     --location "indoor/hospital_campus/*" \
-    --outfit female/business/board_meeting_suit_with_heels \
-    --seeds 11 22 --port 8188 --out "<scratchpad>/hospital.jpg"
+    --outfit female/business/office_day_business_casual_with_heels \
+    --seeds 11 22 --accessories --bag --port 8189 --out "<scratchpad>/hospital.jpg"
 ```
 
-- `--preset cielbleu` (default) is the user's everyday stack: `cielbleuKrea2_v1` + turbo LoRA 0.95 + inline-skin 0.35, 10 steps, cfg 1.2, euler/beta. `--preset turbo` is stock Krea 2 Turbo: 8 steps, cfg 1, er_sde/simple. Run the final check on both.
+- The script's `--port` default is 8188, so always pass the port you checked in Step 1.
+- `--preset cielbleu_native` (default) is the user's everyday stack with the turbo LoRA muted (the checkpoint already contains it): `cielbleuKrea2_v1` + inline-skin 0.35, 10 steps, cfg 1.2, euler/beta. `--preset cielbleu` additionally loads the turbo LoRA 0.95 (double turbo; only for comparison). `--preset turbo` is stock Krea 2 Turbo: 8 steps, cfg 1, er_sde/simple. Run the final check on both.
 - Use 2-3 seeds per set. One seed proves nothing; the goal is that the result is *reproducible*.
+- `--style` defaults to `business_executive` (always draws the hairstyle with its face cue); `--accessories --bag` switch those slots on, which the defaults leave off. The default person is a 45-year-old woman; for `male/*` outfits pass `--person "A 45-year-old man, …"`.
 - The JSONL next to the sheet holds the exact prompt and character count of every tile. The script warns above 2400 chars, where Krea 2 blacks out.
 - To isolate a location problem, pair it with a fixed, simple outfit. To isolate an outfit problem, pair it with a calm location such as `outdoor/suburban_office_park/landscaped_front_entrance`.
+- For many sets, render one sheet per wave or category, not one per set. `--help` lists the rest (`--no-props`, `--no-detail`, moods, size).
 
 ## Step 3: Judge the sheet yourself (Read the .jpg)
 
@@ -51,7 +54,7 @@ Write a short per-set verdict (pass / fix: which entry, why). Then edit the file
 
 ## Known model effects (not caused by the set text)
 
-- **cielbleu smudges.** About 1 in 30 renders gets a dark smeared patch on a large floor or pavement area. An A/B test without the engine's `in … shadows` foreground suffix gave the same rate, so the text is not the cause. Stock Krea 2 Turbo did not show it, and a re-seed fixes it.
+- **cielbleu smudges.** With the turbo LoRA stacked on the checkpoint (`--preset cielbleu`) about 1 in 5 renders of bright, evenly lit interiors got a dark smeared patch on the floor, the same seeds every time. The checkpoint already contains the turbo distillation, so the LoRA applies it twice. `cielbleu_native` (LoRA muted) rendered 12 of 12 clean on the sets that smeared worst (2026-10-10). Stock Krea 2 Turbo never showed it either.
 - **Server code is loaded at start.** List files are re-read on every call, but changes in `core/` or `nodes/` (hairstyle colour fix, new `style_preset` values) reach a running ComfyUI only after a restart. Until then, `business_executive` fails validation with `value not in list`. The script builds prompts locally, so it already uses the new code.
 - **Batch variation without new nodes.** Use Impact `ImpactWildcardProcessor` with `mode = fixed`, `{set|set|…}` in `populated_text` and its seed on randomize, then rgthree `Any Switch` into the combo; see `examples/krea2_business_batch_reading.json`. A Primitive node with `control_filter_list` does **not** filter in frontend 1.53, because the filter widget is not linked after a workflow load.
 

@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-row of fuel pumps under canopy | 1.0 | 0.4-0.8 | scuffed plastic pump housings
-parked pickup truck at pump | 0.7 | 0.3-0.6 | dusty domestic vehicle
-sedan with door open mid-fueling | 0.55 | 0.2-0.5 | sun-faded paint
-air pump and vacuum station | 0.5 | 0.2-0.4 | yellow free-standing unit
-ice freezer chest outside store | 0.6 | 0.2-0.4 | white cooler
-propane tank exchange cage | 0.5 | 0.2-0.4 | green metal rack
-windshield squeegee buckets | 0.6 | 0.1-0.3 | grimy black plastic
-overflowing roadside trash can | 0.55 | 0.1-0.3 | dented steel barrel
-parked semi-truck in back corner | 0.4 | 0.3-0.5 | dirty commercial cab
-stained asphalt fueling pad | 0.9 | 0.4-0.8 | oil-blotched dark surface
-delivery truck restocking store | 0.35 | 0.2-0.4 | white box truck
-diesel pump on far island | 0.55 | 0.2-0.4 | larger pump unit
+a row of fuel pumps a few meters back on the left | 1.0 | 0.2-0.5 | red and grey pump bodies, all unoccupied, black hoses hanging in their holsters
+a second pump island a few meters back on the right | 0.8 | 0.2-0.5 | a raised concrete island with two unoccupied pumps and a yellow post at each end
+a white canopy column with a pump on each side, a few meters back | 0.7 | 0.2-0.5 | thick painted steel
+an empty grey sedan parked at a far pump a few meters back on the left | 0.7 | 0.2-0.5 | clean paint, doors closed
+an empty dark pickup truck parked far back on the right | 0.65 | 0.2-0.5 | closed doors, no one inside
+an empty white delivery van parked at the side of the lot far back | 0.5 | 0.2-0.5 | plain panels and closed doors
+a free-standing air and vacuum post far back on the right | 0.5 | 0.2-0.5 | yellow and grey, unoccupied
+a long white ice freezer chest against the store wall far back on the left | 0.55 | 0.2-0.5 | closed lid
+a galvanized propane exchange cage against the store wall far back | 0.5 | 0.2-0.5 | steel mesh with a closed door
+a row of low yellow steel posts along the island a few meters back | 0.6 | 0.2-0.5 | evenly spaced along the curb
+a tall brick enclosure for the dumpster at the far corner of the lot | 0.5 | 0.2-0.5 | closed doors on the front
+an empty tan SUV parked beside the store far back on the left | 0.55 | 0.2-0.5 | doors closed
+a closed glass entrance door of the store a few meters back on the left | 0.6 | 0.2-0.5 | dark aluminium frame
+a concrete island with a young tree far back on the right | 0.45 | 0.2-0.5 | slim trunk in a mulch ring

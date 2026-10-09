@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-carts drifted against a curb | 0.55 | 0.1-0.25 | wheels turned
-vending boxes in a row | 0.45 | 0.05-0.15 | mixed colors
-handicap ramp with yellow bumps | 0.55 | 0.1-0.2 | truncated domes
-minivan idling for a pickup | 0.5 | 0.15-0.35 | hazards blinking
-folding sidewalk sign for a phone repair{| reading "{REPAIR|PHONES}"} | 0.45 | 0.05-0.15 | wobbling frame
-bike locked to a column | 0.45 | 0.05-0.15 | front wheel gone once
-delivery hand truck by a door | 0.45 | 0.05-0.15 | strapped boxes
-kids waiting outside the karate school | 0.4 | 0.15-0.3 | white gis
-trash can by each column | 0.55 | 0.05-0.15 | dome lids
-puddle mirroring the sign band | 0.45 | 0.1-0.25 | oily sheen
-sale rack rolled outside | 0.45 | 0.1-0.25 | plain hanging garments
+empty parked cars a few meters back along the curb | 0.85 | 0.2-0.5 | nosed to the sidewalk, evenly spaced
+a tall steel light pole a few meters back on the right | 0.6 | 0.2-0.5 | gray arm with a flat lamp head
+a row of young trees in a grass strip a few meters back | 0.6 | 0.2-0.5 | slim trunks, leafy crowns
+an empty metal bench against the wall a few meters back on the left | 0.5 | 0.2-0.5 | dark green slats on black legs
+a gray trash can by the sidewalk a few meters back on the right | 0.45 | 0.2-0.5 | steel drum with a flat lid
+a black bike rack a few meters back by the wall | 0.3 | 0.2-0.5 | steel loops, empty
+a low curb with a strip of green shrubs a few meters back | 0.6 | 0.2-0.5 | rounded evergreen bushes
+a gray steel cart corral a few meters back on the left | 0.3 | 0.2-0.5 | empty, at the edge of the lot
+an empty parked pickup truck a few meters back on the right | 0.5 | 0.2-0.5 | dark blue, windows clear
+a covered canopy post a few meters back at the walkway | 0.5 | 0.2-0.5 | slim white column on a plain base
+a concrete planter with a small maple a few meters back on the left | 0.5 | 0.2-0.5 | round gray base
+a pale concrete crosswalk a few meters back across the drive aisle | 0.4 | 0.2-0.5 | smooth gray pavement
+a blue mailbox by the far entrance a few meters back | 0.3 | 0.2-0.5 | steel with a rounded top

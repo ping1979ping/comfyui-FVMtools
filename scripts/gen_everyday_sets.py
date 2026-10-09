@@ -231,29 +231,6 @@ phone kept under sleeve | 0.35 | 0.1-0.3 | -""",
 
 LOCATION_SETS: dict[str, dict[str, dict[str, str]]] = {
     "indoor/german_everyday_scene": {
-        "kitchen_while_cooking": {
-            "background": """plain white kitchen wall tiles | 1.0 | 0.5-0.9 | glossy square tiles with grout
-kitchen wall cupboards in light wood | 0.9 | 0.4-0.8 | laminate fronts with simple handles
-window over the sink | 0.75 | 0.2-0.5 | plain glass with roller blind""",
-            "midground": """laminate worktop with clutter | 1.0 | 0.4-0.8 | scratched light laminate
-gas hob with used pots | 0.9 | 0.2-0.5 | steel grates with cooking marks
-fridge covered in magnets | 0.7 | 0.2-0.5 | white enamel with paper notes""",
-            "architecture_detail": """practical ceiling light | 0.8 | 0.1-0.25 | plain glass shade
-tiled splashback behind the hob | 0.85 | 0.2-0.4 | wiped-down tiles
-vinyl kitchen flooring | 0.75 | 0.3-0.6 | wood-look vinyl planks""",
-            "props": """chopping board with vegetable scraps | 0.85 | 0.05-0.15 | knife-marked wood
-open spice jars | 0.7 | 0.05-0.1 | mismatched screw-top jars
-dish towel over the oven handle | 0.75 | 0.05-0.1 | faded checked cotton
-half-drunk mug of coffee | 0.65 | 0.05-0.1 | stained ceramic""",
-            "foreground_element": """pot steaming on the hob | 0.9 | 0.1-0.25 | condensation on the lid
-open cookbook propped up | 0.5 | 0.05-0.15 | splashed page
-dirty plates stacked in the sink | 0.6 | 0.1-0.2 | soap film""",
-            "time_of_day": """late afternoon kitchen light | 0.9 | - | -
-evening with the ceiling light on | 0.85 | - | -
-morning light through the blind | 0.8 | - | -""",
-            "weather": """grey daylight outside the window | 0.7 | - | -
-rain streaks on the kitchen window | 0.45 | - | -""",
-        },
         "bathroom_mirror": {
             "background": """bathroom mirror over the basin | 1.0 | 0.4-0.8 | slightly spotted glass
 plain tiled bathroom wall | 0.95 | 0.5-0.9 | white tiles with grey grout
@@ -274,46 +251,6 @@ toothpaste splashes on the mirror | 0.5 | 0.05-0.1 | dried white specks""",
 morning with the light on | 0.85 | - | -
 evening before bed | 0.6 | - | -""",
             "weather": """no weather visible indoors | 0.9 | - | -""",
-        },
-        "living_room_with_sofa": {
-            "background": """plain painted living room wall | 1.0 | 0.5-0.9 | flat emulsion in off-white
-shelf with books and photos | 0.85 | 0.3-0.6 | mismatched spines
-window with curtains half open | 0.7 | 0.2-0.5 | plain lined curtains""",
-            "midground": """worn fabric sofa with cushions | 1.0 | 0.4-0.8 | flattened woven upholstery
-low coffee table with rings | 0.85 | 0.2-0.5 | marked veneer top
-television on a low unit | 0.8 | 0.2-0.5 | dusty black screen""",
-            "architecture_detail": """laminate living room floor | 0.8 | 0.3-0.6 | scuffed plank laminate
-radiator under the window | 0.6 | 0.1-0.25 | painted steel ribs
-plain ceiling lamp | 0.7 | 0.05-0.15 | fabric shade""",
-            "props": """remote controls on the table | 0.85 | 0.05-0.1 | worn rubber buttons
-laundry basket waiting to be folded | 0.6 | 0.1-0.2 | plastic weave
-mug on a coaster | 0.7 | 0.05-0.1 | tea-stained rim
-charging cable across the floor | 0.5 | 0.05-0.1 | tangled white cable""",
-            "foreground_element": """blanket crumpled on the sofa arm | 0.9 | 0.15-0.3 | pilled fleece
-open laptop on the sofa | 0.55 | 0.1-0.2 | fingerprinted lid""",
-            "time_of_day": """grey afternoon light | 0.9 | - | -
-evening with one lamp on | 0.9 | - | -
-morning light across the floor | 0.7 | - | -""",
-            "weather": """rain against the window | 0.5 | - | -
-overcast light outside | 0.7 | - | -""",
-        },
-        "german_supermarket_aisle": {
-            "background": """long supermarket shelving aisle | 1.0 | 0.6-1.0 | packed shelves with price rails
-chiller cabinets along the wall | 0.8 | 0.4-0.8 | glass doors with condensation
-promotional signs overhead | 0.7 | 0.2-0.5 | printed cardboard""",
-            "midground": """pallet of boxed goods mid-aisle | 0.75 | 0.2-0.5 | shrink-wrapped cardboard
-shopping trolley half full | 0.85 | 0.2-0.4 | scuffed steel basket
-stacked crates of drinks | 0.65 | 0.2-0.5 | plastic crates""",
-            "architecture_detail": """speckled supermarket floor | 0.9 | 0.3-0.6 | polished terrazzo-look vinyl
-strip lighting overhead | 0.85 | 0.1-0.3 | bare fluorescent tubes
-low suspended ceiling grid | 0.6 | 0.15-0.35 | plain white panels""",
-            "props": """paper price tags on the rail | 0.85 | 0.05-0.1 | printed yellow labels
-empty cardboard on the floor | 0.55 | 0.05-0.1 | torn box
-hand basket left on a shelf | 0.5 | 0.05-0.1 | red plastic""",
-            "foreground_element": """trolley handle in the near frame | 0.8 | 0.1-0.25 | worn plastic grip
-product held up to read the label | 0.6 | 0.05-0.15 | glossy packaging""",
-            "time_of_day": """flat store lighting, no daylight | 1.0 | - | -""",
-            "weather": """wet floor sign near the entrance | 0.35 | - | -""",
         },
         "bakery_counter": {
             "background": """glass bakery counter with trays | 1.0 | 0.5-0.9 | fingerprinted glass
@@ -372,47 +309,8 @@ jacket over the arm | 0.55 | 0.1-0.25 | creased shell fabric""",
 daylight through the open door | 0.6 | - | -""",
             "weather": """wet shoe prints on the mat | 0.45 | - | -""",
         },
-        "laundry_room": {
-            "background": """plain cellar laundry wall | 1.0 | 0.5-0.9 | painted breeze block
-washing machines side by side | 0.95 | 0.3-0.7 | scuffed white enamel
-drying rack with laundry | 0.75 | 0.3-0.6 | plastic-coated wire""",
-            "midground": """laundry baskets on the floor | 0.9 | 0.2-0.4 | cracked plastic weave
-small sink in the corner | 0.5 | 0.15-0.3 | stained ceramic
-shelf with detergent | 0.7 | 0.15-0.3 | sticky plastic bottles""",
-            "architecture_detail": """bare concrete floor with a drain | 0.8 | 0.3-0.6 | painted concrete
-small high cellar window | 0.55 | 0.1-0.25 | dusty wired glass
-strip light on the ceiling | 0.75 | 0.1-0.25 | bare tube""",
-            "props": """detergent scoop left in the box | 0.6 | 0.02-0.05 | powder residue
-lint caught on the machine | 0.45 | 0.02-0.05 | grey fluff
-clothes pegs in a bag | 0.55 | 0.02-0.08 | mixed plastic pegs""",
-            "foreground_element": """damp washing being lifted out | 0.8 | 0.1-0.25 | heavy wet fabric
-open machine door | 0.6 | 0.1-0.2 | rubber seal""",
-            "time_of_day": """flat cellar light | 0.95 | - | -""",
-            "weather": """no weather visible | 0.9 | - | -""",
-        },
     },
     "outdoor/german_everyday_scene": {
-        "apartment_balcony": {
-            "background": """facade of the opposite block | 1.0 | 0.5-0.9 | rendered wall with small windows
-balcony railing | 0.95 | 0.3-0.7 | painted steel bars
-rooftops beyond the courtyard | 0.6 | 0.2-0.5 | tiled roofs and aerials""",
-            "midground": """drying rack on the balcony | 0.8 | 0.2-0.4 | folding aluminium frame
-plastic balcony chair | 0.75 | 0.15-0.35 | weathered white plastic
-planters along the railing | 0.7 | 0.15-0.35 | cracked terracotta""",
-            "architecture_detail": """concrete balcony floor | 0.85 | 0.3-0.6 | stained concrete slab
-downpipe along the wall | 0.5 | 0.05-0.15 | painted metal pipe""",
-            "props": """watering can in the corner | 0.6 | 0.05-0.1 | faded plastic
-ashtray on the railing | 0.4 | 0.02-0.05 | glass with ash
-laundry pegs on the rack | 0.55 | 0.02-0.08 | mixed pegs""",
-            "foreground_element": """hands hanging up washing | 0.7 | 0.1-0.25 | damp fabric
-mug set on the railing | 0.55 | 0.05-0.1 | chipped ceramic""",
-            "time_of_day": """flat overcast midday | 0.9 | - | -
-low evening sun between the blocks | 0.8 | - | -
-early morning shade | 0.7 | - | -""",
-            "weather": """overcast grey sky | 0.85 | - | -
-light drizzle | 0.4 | - | -
-cold clear air | 0.5 | - | -""",
-        },
         "german_bus_stop": {
             "background": """bus shelter with glass panels | 1.0 | 0.4-0.8 | scratched perspex
 street with parked cars | 0.9 | 0.4-0.8 | tarmac with kerbs
@@ -432,26 +330,6 @@ dusk with the street lights coming on | 0.8 | - | -""",
             "weather": """steady drizzle | 0.5 | - | -
 overcast and windy | 0.7 | - | -
 cold with breath visible | 0.35 | - | -""",
-        },
-        "pedestrian_zone": {
-            "background": """row of shop fronts | 1.0 | 0.5-0.9 | mixed signage and awnings
-paved pedestrian street | 0.95 | 0.4-0.8 | patterned block paving
-church tower further down | 0.4 | 0.15-0.35 | weathered stone""",
-            "midground": """bike racks with locked bikes | 0.75 | 0.2-0.4 | rusted frames
-café tables outside a shop | 0.7 | 0.2-0.4 | folding metal furniture
-planted tub in the middle of the street | 0.6 | 0.1-0.3 | concrete tub""",
-            "architecture_detail": """drainage channel in the paving | 0.5 | 0.05-0.15 | worn stone channel
-bollards at the street entrance | 0.55 | 0.05-0.15 | scuffed steel posts""",
-            "props": """A-board with the day's offer | 0.65 | 0.05-0.15 | chalked board
-pigeons near a bin | 0.5 | 0.05-0.1 | scruffy feathers
-bin overflowing slightly | 0.5 | 0.05-0.1 | dented metal""",
-            "foreground_element": """shopping bag in each hand | 0.7 | 0.1-0.25 | printed carrier bags
-pram pushed along the paving | 0.4 | 0.1-0.25 | worn fabric hood""",
-            "time_of_day": """busy midday | 0.9 | - | -
-late afternoon with long shadows | 0.85 | - | -""",
-            "weather": """overcast | 0.8 | - | -
-wet paving after rain | 0.5 | - | -
-bright cold sunshine | 0.55 | - | -""",
         },
         "allotment_garden": {
             "background": """allotment plots with sheds | 1.0 | 0.5-0.9 | mismatched timber huts

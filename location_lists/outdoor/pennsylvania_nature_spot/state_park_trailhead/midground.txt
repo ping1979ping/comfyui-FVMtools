@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-cars nosed against the rail | 0.6 | 0.2-0.45 | dusty hatchbacks
-kiosk with permit envelopes | 0.5 | 0.05-0.2 | pencil on a string
-dog watered from a bottle | 0.5 | 0.05-0.15 | cupped-hand bowl
-hikers checking the map board | 0.5 | 0.1-0.3 | finger on the route
-bear-proof trash can | 0.55 | 0.05-0.15 | latched steel lid
-bench made from a split log | 0.45 | 0.1-0.25 | small plain metal plate
-boot-brush station at the trail mouth | 0.4 | 0.03-0.1 | boot pictogram sign
-firewood bundle stack for campers | 0.4 | 0.1-0.25 | shrink-wrapped
-horse rig parked long-ways | 0.3 | 0.2-0.4 | trailer with hay bag
-kayaks strapped on a roof | 0.4 | 0.1-0.25 | foam block rig
-fallen log at the lot edge | 0.45 | 0.1-0.25 | shelf fungus
+tall oak trunks a few meters back on both sides of the path | 1.0 | 0.2-0.5 | dark furrowed bark, crowns high above
+a split-rail fence a few meters back along the left | 0.8 | 0.2-0.5 | grey cedar rails on posts, running toward the woods
+two empty wooden picnic tables a few meters back on the right | 0.6 | 0.2-0.5 | weathered brown planks, benches empty
+an empty log bench a few meters back at the edge of the trees | 0.5 | 0.2-0.5 | split log on short posts
+a steel pipe gate a few meters back across the access road | 0.4 | 0.2-0.5 | open, painted yellow
+a boulder a few meters back on the left | 0.5 | 0.2-0.5 | pale grey rounded stone, partly buried
+a wooden stairway a few meters back leading up the bank | 0.45 | 0.2-0.5 | wide timber risers, a plain handrail on the right
+a mountain laurel thicket a few meters back on the right | 0.55 | 0.2-0.5 | dark glossy shrubs at hip height
+a low stone wall a few meters back on the left | 0.4 | 0.2-0.5 | grey fieldstones in a loose line
+a fallen log a few meters back at the edge of the trees | 0.4 | 0.2-0.5 | grey weathered bark, lying parallel
+a dirt path curving away a few meters back toward the trees | 0.6 | 0.2-0.5 | packed brown earth narrowing between trunks
+a low wooden footbridge a few meters back on the left | 0.35 | 0.2-0.5 | plain planks over a dry gully
+ferns a few meters back under the trees on the left | 0.45 | 0.2-0.5 | low even fronds
+a young maple a few meters back on the right | 0.4 | 0.2-0.5 | slim trunk and a rounded crown

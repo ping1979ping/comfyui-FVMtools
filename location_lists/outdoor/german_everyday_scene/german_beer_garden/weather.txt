@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-warm sunny breezy air | 1.0 | - | -
-dappled shade under leaves | 0.9 | - | -
-light overcast bright sky | 0.6 | - | -
-muggy pre-thunderstorm heat | 0.4 | - | -
-gentle warm evening breeze | 0.7 | - | -
-clear blue sky | 0.8 | - | -
-scattered cumulus clouds | 0.5 | - | -
-sudden shower drips from leaves | 0.3 | - | -
-cool autumn crisp air | 0.4 | - | -
-leaves rustling in wind | 0.5 | - | -
+clear warm summer day | 1.0 | - | -
+partly cloudy day with soft shade | 0.9 | - | -
+hazy warm summer afternoon | 0.7 | - | -
+mild sunny spring day with a light breeze | 0.7 | - | -
+overcast grey day with low cloud | 0.6 | - | -
+cool crisp autumn day with a clear sky | 0.5 | - | -
+bright blue sky with a few white clouds | 0.8 | - | -
+warm still evening under a pale sky | 0.6 | - | -
+light breeze under a thin cloud layer | 0.5 | - | -
+mild cloudy day, dry and bright | 0.6 | - | -

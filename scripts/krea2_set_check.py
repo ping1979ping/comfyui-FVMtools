@@ -46,6 +46,11 @@ PRESETS = {
                      loras=[("krea2\\helper\\krea2_turbo_lora_rank_64_bf16.safetensors", 0.95),
                             ("krea2\\helper\\inline-skin-lora-krea-2-raw.safetensors", 0.35)],
                      steps=10, cfg=1.2, sampler="euler", scheduler="beta"),
+    # Same checkpoint without the turbo LoRA: cielbleu already has it baked in,
+    # so loading it again double-applies the turbo distillation.
+    "cielbleu_native": dict(model="krea2\\cielbleuKrea2_v1.safetensors",
+                            loras=[("krea2\\helper\\inline-skin-lora-krea-2-raw.safetensors", 0.35)],
+                            steps=10, cfg=1.2, sampler="euler", scheduler="beta"),
     # Stock Krea 2 Turbo as published.
     "turbo": dict(model="krea2\\krea2_turbo_int8_convrot.safetensors", loras=[],
                   steps=8, cfg=1.0, sampler="er_sde", scheduler="simple"),
@@ -171,7 +176,7 @@ def main():
                     help="outfit set(s), * = glob")
     ap.add_argument("--seeds", nargs="+", type=int, default=[11, 22])
     ap.add_argument("--person", default=DEFAULT_PERSON)
-    ap.add_argument("--preset", choices=sorted(PRESETS), default="cielbleu")
+    ap.add_argument("--preset", choices=sorted(PRESETS), default="cielbleu_native")
     ap.add_argument("--formality", type=float, default=0.7)
     ap.add_argument("--style", default="business_executive", help="Outfit Block style_preset")
     ap.add_argument("--outfit-mood", default="neutral_basics", help="Outfit Block color_mood")

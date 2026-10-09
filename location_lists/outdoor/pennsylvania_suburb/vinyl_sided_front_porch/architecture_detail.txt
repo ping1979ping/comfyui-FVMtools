@@ -1,14 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-porch floorboards painted grey | 0.7 | 0.25-0.5 | worn traffic path
-downspout at the porch corner | 0.55 | 0.05-0.15 | splash block below
-storm door closer arm | 0.45 | 0.02-0.08 | hissing cylinder
-doorbell with a camera | 0.5 | 0.02-0.06 | glowing ring
-porch light with a bug halo | 0.45 | 0.03-0.1 | yellowed globe
-step edge painted with grit strip | 0.45 | 0.05-0.12 | anti-slip band
-lattice skirt under the porch | 0.45 | 0.1-0.25 | diamond gaps
-gutter guard sticking up | 0.35 | 0.03-0.1 | lifted mesh
-hose spigot dripping | 0.4 | 0.02-0.06 | rust streak below
-settlement crack in the walk | 0.4 | 0.05-0.15 | ant hill in the joint
-storm door sticker faded | 0.35 | 0.02-0.06 | simple shield-shaped decal
+white square posts under the far end of the porch roof | 0.6 | 0.05-0.2 | plain painted columns
+a narrow white window with black shutters on the far wall | 0.5 | 0.05-0.2 | closed, dark glass
+a slim white downspout at the far corner of the porch | 0.45 | 0.05-0.2 | vertical aluminum tube
+a small brass porch light beside the far door | 0.45 | 0.05-0.2 | glass lantern, unlit
+a thin white gutter along the far roofline | 0.5 | 0.05-0.2 | straight horizontal line
+a small red brick chimney above the far roof | 0.4 | 0.05-0.2 | stone cap, dark with age
+a low brick foundation under the far siding | 0.4 | 0.05-0.2 | red brick band
+a narrow white trim board at the far corner of the house | 0.4 | 0.05-0.2 | flat painted board
+a small vent grille high on the far gable | 0.35 | 0.05-0.2 | white louvers
+a black wrought-iron railing on the far porch steps | 0.4 | 0.05-0.2 | slim iron bars
+a narrow transom window above the far front door | 0.4 | 0.05-0.2 | small rectangular glass pane
+a slim white lattice panel under the far end of the porch | 0.35 | 0.05-0.2 | diamond grid

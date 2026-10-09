@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-porch swing on chains | 1.0 | 0.4-0.7 | painted wood seat
-two rocking chairs paired | 0.95 | 0.3-0.6 | painted spindle frames
-small wicker side table | 0.95 | 0.2-0.4 | natural woven surface
-hanging basket of flowers | 0.95 | 0.2-0.5 | trailing colorful blooms
-console table along wall | 0.7 | 0.3-0.5 | narrow painted surface
-porch potted plant cluster | 0.95 | 0.3-0.6 | tiered terracotta vessels
-freestanding lantern stand | 0.7 | 0.1-0.3 | tall metal candle holder
-folded outdoor rug | 0.7 | 0.3-0.6 | woven all-weather pad
-hanging porch flag | 0.7 | 0.2-0.4 | colorful printed cloth
-small bench beside door | 0.75 | 0.3-0.5 | weathered timber seat
-porch ceiling fan | 0.7 | 0.2-0.4 | wood blade slow rotation
-small garden gnome figure | 0.55 | 0.05-0.15 | painted ceramic figure
+an empty wooden porch swing hung from chains at the end of the porch on the left | 0.9 | 0.2-0.5 | white slatted seat, hanging still
+two empty wooden rocking chairs side by side a few meters back on the right | 0.9 | 0.2-0.5 | white slats and curved rockers
+an empty rocking chair by the railing a few meters back on the left | 0.7 | 0.2-0.5 | dark green slats
+a small round wicker table between two empty chairs a few meters back | 0.55 | 0.2-0.5 | pale woven wicker
+a tall potted fern on a stand at the porch corner a few meters back on the right | 0.6 | 0.2-0.5 | dense green fronds
+terracotta flower pots with green plants along the porch railing a few meters back | 0.6 | 0.2-0.5 | evenly spaced on the rail
+hanging baskets of green ferns from the porch ceiling a few meters back across the porch | 0.55 | 0.2-0.5 | trailing fronds on chains
+an empty wooden bench along the house wall a few meters back on the left | 0.55 | 0.2-0.5 | slatted, painted white
+a white railing with turned balusters along the porch front a few meters back | 0.8 | 0.2-0.5 | smooth round posts
+wide wooden porch steps leading down at the far right a few meters back | 0.6 | 0.2-0.5 | white risers and a handrail
+an empty wooden glider along the left wall a few meters back | 0.5 | 0.2-0.5 | slatted back and seat, still
+two empty adirondack chairs side by side near the steps a few meters back on the left | 0.5 | 0.2-0.5 | pale gray wood
+two large planters with evergreen shrubs flanking the steps a few meters back | 0.55 | 0.2-0.5 | round dark gray pots
+a tall brass-handled umbrella stand beside the door a few meters back on the right | 0.35 | 0.2-0.5 | dark ceramic, empty

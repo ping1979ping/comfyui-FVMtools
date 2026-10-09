@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-door held against the vestibule spring | 0.55 | 0.05-0.2 | bell chime
-step down mid-conversation | 0.5 | 0.1-0.25 | keys already out
-to-go coffee shielded from wind | 0.5 | 0.03-0.1 | lid tested
-truck door swung wide | 0.5 | 0.1-0.3 | one boot up
-pie box carried level | 0.5 | 0.05-0.15 | two-hand care
-stretch after the big breakfast | 0.5 | 0.05-0.2 | belt adjust
-lot gravel crunched across | 0.5 | 0.1-0.25 | unhurried diagonal
-order window checked from the car | 0.4 | 0.05-0.15 | window down
-helmet buckled by the bikes | 0.4 | 0.05-0.15 | strap tug
-wave to the waitress through glass | 0.45 | 0.05-0.15 | regulars' code
-leftover fry stolen from the bag | 0.45 | 0.03-0.1 | passenger tax
+a plain light gray asphalt surface | 1.0 | 0.1-0.4 | smooth and even
+a plain dark gray asphalt surface | 0.85 | 0.1-0.4 | matte and even
+a plain medium gray asphalt lot | 0.8 | 0.1-0.4 | smooth and even
+a smooth broom-finished concrete apron | 0.7 | 0.1-0.4 | matte and even
+a plain charcoal asphalt surface | 0.7 | 0.1-0.4 | smooth and even
+a plain pale concrete sidewalk by the building | 0.6 | 0.1-0.4 | smooth and even
+a plain slate gray asphalt surface | 0.6 | 0.1-0.4 | matte and even
+a plain warm gray asphalt lot | 0.55 | 0.1-0.4 | smooth and even
+a smooth light concrete pad | 0.5 | 0.1-0.4 | matte and even
+a plain graphite asphalt surface | 0.5 | 0.1-0.4 | smooth and even
+a plain light gray concrete walkway | 0.45 | 0.1-0.4 | smooth and even
+a plain asphalt surface in soft gray | 0.5 | 0.1-0.4 | matte and even

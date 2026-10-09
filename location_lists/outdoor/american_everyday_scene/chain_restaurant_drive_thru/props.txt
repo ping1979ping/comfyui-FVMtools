@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-bright yellow pickup sign on stake{| reading "{PICKUP|ORDER PICKUP|PARK HERE}"} | 0.55 | 0.05-0.15 | generic yellow sign
-dumpster fence corner visible | 0.7 | 0.1-0.3 | wood-slat enclosure
-overflowing trash can | 0.7 | 0.1-0.3 | dented bin with a colored lid
-sandwich-board promo sign with food photos | 0.45 | 0.1-0.2 | bright plastic A-frame with pictures
-yellow wet floor cone | 0.4 | 0.05-0.15 | scuffed plastic cone with a slipping-figure pictogram
-beverage cooler with a plain colorful stripe decal | 0.4 | 0.1-0.3 | outdoor cooler with striped decal
-ATM mounted at drive-thru distance | 0.25 | 0.05-0.15 | kiosk with a plain screen
-brand-color trash receptacle lid | 0.55 | 0.05-0.15 | red or yellow swing-top
-exterior security camera with cover | 0.55 | 0.05-0.1 | small dome cam
-yellow concrete bollard with a painted stripe | 0.65 | 0.1-0.2 | scuffed painted post
-small mounted pickup sign on pole{| reading "{DELIVERY|PICKUP}"} | 0.35 | 0.05-0.15 | small mounted sign
-employee outdoor smoke-break ashtray | 0.4 | 0.05-0.15 | sand-filled metal canister
+small orange traffic cone at the far end of the lane | 0.5 | 0.02-0.06 | plain molded plastic
+small gray utility box at the far corner of the lot | 0.5 | 0.02-0.06 | steel cabinet on a short post
+small red fire hydrant at the far edge of the lot | 0.45 | 0.02-0.06 | red painted cast iron
+small potted shrub beside the far door | 0.4 | 0.02-0.06 | green leaves in a round pot
+small hanging flower basket on a far post | 0.35 | 0.02-0.06 | pink blooms on a hook
+small gray meter box on the far wall at the back | 0.35 | 0.02-0.06 | plain steel cabinet
+small green recycling bin at the back of the far wall | 0.4 | 0.02-0.06 | closed lid, wheeled
+small red fire extinguisher box on the far wall | 0.3 | 0.02-0.06 | plain red steel case
+small round drain cover at the far edge of the lane | 0.35 | 0.02-0.06 | dark iron disc
+small steel hose spigot at the base of the far wall | 0.3 | 0.02-0.06 | brass fitting on a short pipe
+small stack of folded cardboard against the far wall | 0.35 | 0.02-0.06 | plain brown sheets
+small white junction box on a far light pole | 0.3 | 0.02-0.06 | plain painted steel

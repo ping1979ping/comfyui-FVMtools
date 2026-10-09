@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-pitchfork in mulch pile | 0.95 | 0.05-0.2 | tined timber tool
-small spade with worn handle | 0.85 | 0.05-0.15 | metal blade timber grip
-covered scrap pail | 0.85 | 0.05-0.15 | small lidded bucket
-worn leather gloves | 0.85 | 0.05-0.15 | dirty creased pair
-garden twine ball | 0.7 | 0.05-0.1 | natural fiber bundle
-small sieve frame | 0.7 | 0.05-0.15 | wood-framed mesh
-wheelbarrow handle visible | 0.85 | 0.05-0.15 | timber grip end
-empty seed-starter tray | 0.7 | 0.05-0.15 | small black plastic
-garden hose nozzle | 0.7 | 0.05-0.1 | brass fitting tip
-discarded flower pot | 0.7 | 0.05-0.15 | cracked terracotta
-bin-thermometer probe | 0.55 | 0.05-0.1 | small dial gauge
-empty fertilizer bag | 0.6 | 0.05-0.15 | folded plain plastic sack
+a small black kitchen-scrap bucket with a lid at the far end of the bins | 0.6 | 0.02-0.06 | plastic with a thin handle
+a small hand trowel stuck in the soil by the far bin | 0.5 | 0.02-0.06 | steel blade, green handle
+a slim wooden-handled pitchfork leaning on the far fence post | 0.45 | 0.02-0.06 | dark steel tines
+a small stack of clay pots at the far corner of the fence | 0.45 | 0.02-0.06 | orange terracotta
+a small green watering can by the far fence | 0.45 | 0.02-0.06 | painted metal with a long spout
+a small coil of green hose at the far corner of the yard | 0.4 | 0.02-0.06 | neat loops
+a small pair of leather work gloves on the far bin lid | 0.4 | 0.02-0.06 | tan and plain
+a small galvanized bucket by the far back fence | 0.4 | 0.02-0.06 | silver zinc with a thin handle
+a small mesh sieve leaning on the far bin | 0.35 | 0.02-0.06 | wooden frame and wire
+a small plain burlap sack at the far corner of the fence | 0.35 | 0.02-0.06 | tan and folded
+a compact green plastic bin lid propped at the back of the far bin | 0.35 | 0.02-0.06 | flat and round
+a small garden fork stuck upright in the far soil | 0.4 | 0.02-0.06 | slim dark tines

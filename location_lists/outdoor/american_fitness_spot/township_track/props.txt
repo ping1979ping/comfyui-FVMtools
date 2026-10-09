@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-stopwatch on a lanyard | 0.5 | 0.02-0.06 | thumb-worn buttons
-yellow sticky note stuck to the rail | 0.4 | 0.02-0.05 | sweat-curled paper
-resistance bands looped on the fence | 0.45 | 0.02-0.08 | color set
-foam roller on the bottom riser | 0.4 | 0.02-0.08 | post-run ritual
-spikes bag by the start | 0.4 | 0.02-0.08 | drawstring sack
-orange slices in a cooler | 0.4 | 0.03-0.1 | halftime tradition
-pinnies drying on the fence | 0.45 | 0.03-0.1 | mesh row
-starting blocks carried out | 0.4 | 0.03-0.1 | awkward armful
-chalk line for the relay zone | 0.4 | 0.02-0.08 | powder stripe
-headphones case on a towel | 0.45 | 0.02-0.06 | lap soundtrack
-whistle heard across the field | 0.45 | 0.02-0.08 | practice cadence
+small orange cone at the far edge of the infield | 0.5 | 0.02-0.06 | plain plastic cone
+small white relay baton lying far back on the grass | 0.35 | 0.02-0.06 | slim plain tube
+small blue water cooler on a far bench by the fence | 0.45 | 0.02-0.06 | plain plastic body
+small black stopwatch case on a far bench | 0.3 | 0.02-0.06 | plain closed box
+small green tarp rolled up beside the far shed | 0.35 | 0.02-0.06 | plain rolled fabric
+small folded towel on a far bleacher row | 0.3 | 0.02-0.06 | plain white cloth
+small metal bucket of chalk beside the far field | 0.3 | 0.02-0.06 | plain grey pail
+slim white marker flag at the far edge of the grass | 0.4 | 0.02-0.06 | plain flexible pole
+small gray equipment bag on a far bench | 0.4 | 0.02-0.06 | plain closed nylon
+small rolled measuring tape on the far sand pit edge | 0.3 | 0.02-0.06 | plain yellow reel
+small plastic water bottle on a far bleacher step | 0.45 | 0.02-0.06 | clear body, blue cap
+small white towel rack hook on the far shelter wall | 0.3 | 0.02-0.06 | plain metal

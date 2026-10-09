@@ -1,14 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-cottage buried to the sills | 1.0 | 0.4-0.8 | white-drifted hunker
-path dug shoulder-deep to the door | 0.75 | 0.2-0.4 | canyon walk
-woodshed with its drifted lean-to | 0.6 | 0.2-0.4 | white-capped shelter
-fence posts down to their caps | 0.6 | 0.1-0.3 | dotted line of knobs
-orchard trees iced to filigree | 0.5 | 0.2-0.4 | glass branches
-smoke rising from the buried chimney | 0.6 | 0.1-0.3 | grey ribbon
-clothesline sagging with snow rope | 0.45 | 0.1-0.25 | white cable
-drift curling off the roof edge | 0.55 | 0.15-0.35 | frozen wave
-birdfeeder mobbed in the quiet | 0.5 | 0.05-0.2 | flickering visitors
-lane unplowed to the main road | 0.5 | 0.2-0.4 | untracked ribbon
-mailbox drowned to its flag | 0.45 | 0.05-0.15 | red periscope
+the small timber cottage at the back of the yard | 1.0 | 0.6-1.0 | a low cottage with a snowy gable roof and a stone chimney in the middle of the image, bare trees and hemlocks behind
+the yard fence and woods beyond | 0.85 | 0.6-1.0 | a low post-and-rail fence across the whole width of the image, a wall of bare hardwoods and hemlocks behind it
+the white field behind the yard | 0.7 | 0.6-1.0 | an unbroken snowy meadow rising to a wooded hillside across the whole width of the image
+the hemlock woods at the edge of the property | 0.75 | 0.6-1.0 | dark evergreens heavy with snow in a continuous line across the whole width of the image
+the country lane far beyond the fence | 0.55 | 0.6-1.0 | a snow-covered two-lane road with bare maples on both sides, a farmhouse far down on the left
+the woodshed and barn far across the yard | 0.5 | 0.6-1.0 | a long weathered shed with a snowy roof at the back on the right, bare trees above it
+the low snowy hills behind the cottage | 0.7 | 0.6-1.0 | rounded white ridges with scattered dark trees across the whole width of the image, a pale sky above
+the cottage porch far behind | 0.6 | 0.6-1.0 | a small covered porch with a snow-capped railing at the back of the yard, white clapboard walls
+the stone wall at the back of the lot | 0.6 | 0.6-1.0 | an old dry-stone wall with snow on top across the whole width of the image, bare apple trees behind it
+the neighboring cottages through the trees | 0.45 | 0.6-1.0 | a few small cabins with white roofs among bare trunks far across the yard on the left
+the old apple orchard behind the yard | 0.55 | 0.6-1.0 | rows of bare gnarled trees with snow along the branches across the whole width of the image, a grey sky above
+the frozen pond beyond the yard | 0.4 | 0.6-1.0 | a flat white pond with reeds along its far edge, dark trees behind it, far on the right
+the snowy drive between pines far down the yard | 0.5 | 0.6-1.0 | a straight white drive between snowy spruces, a pale sky at its far end

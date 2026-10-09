@@ -1,14 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-shale ledges stepping into the water | 0.6 | 0.15-0.4 | flat cleaved sheets
-undercut bank with exposed roots | 0.5 | 0.1-0.3 | woven overhang
-water line stain on the rocks | 0.5 | 0.05-0.2 | high-water mark
-crayfish holes in the mud edge | 0.4 | 0.03-0.1 | chimney burrows
-flood debris high in a branch | 0.45 | 0.03-0.12 | plastic flag
-gravel sorted by the current | 0.5 | 0.1-0.3 | fined-to-coarse bands
-moss carpet on the north rocks | 0.5 | 0.05-0.2 | spongy pads
-dragonfly perch stick | 0.4 | 0.02-0.08 | repeat landings
-foam line at the eddy | 0.4 | 0.03-0.12 | slow rotation
-sun-warmed slab at the pool edge | 0.5 | 0.1-0.25 | lizard-flat rock
-old cable anchor in a boulder | 0.3 | 0.02-0.08 | rusted eye bolt
+a stone bridge abutment wall far down the creek on the right | 0.4 | 0.05-0.2 | dark blocks, ivy-free
+a narrow wooden footbridge far downstream | 0.4 | 0.05-0.2 | plain planks on thin posts
+a concrete culvert mouth far back in the far bank | 0.35 | 0.05-0.2 | round, dark opening
+an old stone wall remnant along the far bank | 0.4 | 0.05-0.2 | low grey fieldstones
+a stone dam remnant far upstream | 0.35 | 0.05-0.2 | a low pale ledge with a smooth spill
+a sloping concrete ford far downstream | 0.3 | 0.05-0.2 | a plain pale slab across the creek
+a weathered fence post on the far bank | 0.35 | 0.05-0.2 | grey, leaning
+a low retaining wall along the far bank | 0.4 | 0.05-0.2 | grey blocks under tree roots
+a dark steel trestle far back above the trees | 0.3 | 0.05-0.2 | thin girders, high up
+a plain iron pipe rail far down the bank on the left | 0.3 | 0.05-0.2 | thin and dark
+a low rubble wall at the far end of the bank | 0.35 | 0.05-0.2 | grey and plain

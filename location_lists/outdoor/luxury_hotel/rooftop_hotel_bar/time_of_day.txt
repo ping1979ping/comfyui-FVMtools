@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-golden sunset cocktail hour | 1.0 | - | -
-blue-hour twilight glow | 0.95 | - | -
-deep night city lights | 0.9 | - | -
-late-evening candlelit buzz | 0.8 | - | -
-pink dusk afterglow | 0.75 | - | -
-early-evening skyline shimmer | 0.7 | - | -
-midnight neon reflections | 0.6 | - | -
-bright late-afternoon sunshine | 0.5 | - | -
-overcast pre-sunset hush | 0.4 | - | -
-pre-dawn quiet violet sky | 0.35 | - | -
+warm golden light before sunset | 1.0 | - | -
+soft blue hour with the city lights coming on | 0.9 | - | -
+late-afternoon sun low over the rooftops | 0.85 | - | -
+bright midday sun with crisp shadows | 0.5 | - | -
+pink and orange sky just after sunset | 0.7 | - | -
+early evening light with the string lights glowing | 0.8 | - | -
+soft overcast afternoon light | 0.5 | - | -
+dusk with warm lamps glowing on the deck | 0.75 | - | -
+clear night with warm lamp light | 0.5 | - | -
+soft morning light with long shadows | 0.45 | - | -
+late-evening glow of deck lamps and city lights | 0.6 | - | -

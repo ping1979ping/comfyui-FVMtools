@@ -1,13 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-wood-fenced backyard perimeter | 1.0 | 0.6-1.0 | weathered timber slats
-neighboring rooftop line | 0.95 | 0.4-0.8 | softly distant gables
-mature backyard trees | 0.95 | 0.5-0.9 | leafy canopy cover
-brick patio retaining wall | 0.7 | 0.4-0.7 | aged warm masonry
-wood-shingled garden shed wall | 0.85 | 0.4-0.8 | weathered cedar shakes
-sky beyond open yard | 0.95 | 0.4-0.9 | open daylight expanse
-white-painted house siding | 0.85 | 0.4-0.8 | painted clapboard
-hedgerow at fence base | 0.85 | 0.4-0.7 | dense leafy growth
-distant garage roof | 0.7 | 0.3-0.6 | weathered shingle slope
-clothesline pole anchor | 0.95 | 0.3-0.6 | tall metal post
+the wooden privacy fence along the back of the yard | 1.0 | 0.6-1.0 | a continuous run of tall cedar fence boards across the whole width of the image, tall tree crowns rising above it on the left
+the back of the house across the yard | 0.9 | 0.6-1.0 | a two-storey house with white siding, a back door and tall windows across the whole width of the image, a low concrete step on the right
+the far end of a long suburban back lawn | 0.8 | 0.6-1.0 | a flat green lawn running back to a hedge and a line of tall trees across the whole width of the image, a pale sky above
+a tall evergreen hedge along the back of the yard | 0.75 | 0.6-1.0 | a dense dark green wall of arborvitae across the whole width of the image, a next-door roofline just above it on the right
+a chain-link fence with shrubs along the back of the yard | 0.65 | 0.6-1.0 | a low galvanized fence across the whole width of the image, tall shrubs behind it, a wooded slope beyond
+a row of mature maple and oak trees at the back of the yard | 0.7 | 0.6-1.0 | thick trunks and high broad crowns across the whole width of the image, a garage roof showing through on the left
+a detached brick garage at the back of the yard | 0.6 | 0.6-1.0 | a plain red brick wall with a closed white roll-up door at the center, a cedar fence running off to the left and right
+the side wall of the house along the left of the yard | 0.55 | 0.6-1.0 | white lap siding rising to a shingled roof edge, a downspout on the wall, a wide pale sky on the right
+an open field beyond a low wire fence at the back | 0.5 | 0.6-1.0 | a mown meadow rising gently to a line of woods across the whole width of the image, a faint blue ridge far behind
+suburban rooftops beyond the back fence | 0.6 | 0.6-1.0 | rows of shingled gable roofs and chimneys stepping up a gentle slope across the whole width of the image, tall trees between them
+a low fieldstone wall with a garden border along the back | 0.5 | 0.6-1.0 | gray stone across the whole width of the image, green shrubs above it, a wooden fence behind
+a wide pale sky over the back of the yard | 0.45 | 0.6-1.0 | soft blue-white sky with thin clouds above a low line of trees and one distant roof across the whole width of the image
+a white picket fence along the back of the yard | 0.55 | 0.6-1.0 | slim white boards across the whole width of the image, dark green shrubs and a tall tree behind it
+a dark stained wooden fence along the right side of the yard | 0.5 | 0.6-1.0 | a closed gate on the far right, a maple tree rising behind it, a pale sky above

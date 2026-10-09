@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-pigeons near a bin | 0.5 | 0.05-0.15 | scruffy feathers
-bin overflowing slightly | 0.5 | 0.05-0.15 | dented metal
-chalk board outside a café | 0.55 | 0.05-0.2 | smudged chalk drawings of cups and cakes
-sheet of paper trodden into the paving | 0.4 | 0.02-0.08 | dirty paper
-bicycle basket with a bag in it | 0.4 | 0.03-0.12 | wire basket
-photo card stand by the tables | 0.45 | 0.05-0.15 | laminated card with photos of dishes
-coins in a busker's case | 0.3 | 0.02-0.06 | dull metal
-shopping bags leaning on a bench | 0.5 | 0.05-0.2 | colorful carrier bags
-cigarette bin on a wall | 0.35 | 0.02-0.08 | stained steel tube
-round red stickers in a window | 0.45 | 0.05-0.15 | bright red circles with white star shapes
-dog lead tied to a rail | 0.3 | 0.02-0.08 | worn strap
+a small green litter bin at the far curb | 0.5 | 0.02-0.06 | plain painted steel
+a small steel bollard at the far corner | 0.4 | 0.02-0.06 | dark grey
+a small potted shrub at the far shop door | 0.45 | 0.02-0.06 | green leaves
+a small yellow post box at the far corner | 0.4 | 0.02-0.06 | painted steel
+a small wooden crate at the far shop doorstep | 0.35 | 0.02-0.06 | plain pine
+a small flower tub by the far door | 0.4 | 0.02-0.06 | grey stone
+a small grey electrical box at the far edge of the pavement | 0.35 | 0.02-0.06 | closed steel
+a small potted olive at the far cafe door | 0.35 | 0.02-0.06 | dark pot
+a small round steel litter bin far down the street | 0.4 | 0.02-0.06 | dark grey
+a small stone planter at the far end of the street | 0.4 | 0.02-0.06 | pale concrete
+a small bicycle stand at the far corner | 0.3 | 0.02-0.06 | thin steel loops
+a small black lantern on a far wall bracket | 0.3 | 0.02-0.06 | unlit

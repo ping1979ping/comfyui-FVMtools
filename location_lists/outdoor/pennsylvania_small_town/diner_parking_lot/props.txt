@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-to-go cup left on a bumper | 0.45 | 0.02-0.06 | forgotten at the door
-mint toothpicks dropped | 0.35 | 0.02-0.05 | scattered pair
-umbrella tucked under an arm | 0.45 | 0.02-0.08 | tightly furled
-doggie bag carried out | 0.5 | 0.02-0.08 | foil swan maybe
-pie box tied with string | 0.45 | 0.02-0.08 | bakery counter treat
-umbrella dripping in a truck bed | 0.35 | 0.02-0.08 | quick storm
-bell on the pass-through counter visible in the window | 0.35 | 0.02-0.06 | counter relic
-crumbs tossed to the gull | 0.35 | 0.02-0.08 | against better judgment
-motorcycle gloves on a seat | 0.4 | 0.02-0.06 | fingers curled
-coffee thermos refilled to go | 0.45 | 0.02-0.06 | road ritual
-quarters left in the paper box | 0.35 | 0.02-0.05 | honor system
+a small red fire hydrant at the far corner of the lot | 0.5 | 0.02-0.06 | red painted iron
+small yellow bollards beside the far entrance | 0.45 | 0.02-0.06 | short steel posts
+a small potted shrub by the far door | 0.4 | 0.02-0.06 | round dark green leaves
+a slim black bike rack far at the back of the building | 0.3 | 0.02-0.06 | thin tubular loops
+a small gray electric meter box on the far wall | 0.35 | 0.02-0.06 | closed metal door
+a small white propane tank at the far back corner | 0.3 | 0.02-0.06 | cylinder on a low stand
+small orange traffic cones stacked at the far end of the lot | 0.3 | 0.02-0.06 | short plastic cones
+a small cast-iron boot scraper by the far steps | 0.3 | 0.02-0.06 | black, low to the ground
+small clay pots on the far windowsill | 0.35 | 0.02-0.06 | plain terracotta
+a thin flagpole far at the back of the lot | 0.4 | 0.02-0.06 | slim white pole, flag hanging
+a small glass-front ice machine far by the wall | 0.3 | 0.02-0.06 | white metal cabinet
+small stacked plastic milk crates at the far back door | 0.3 | 0.02-0.06 | gray crates

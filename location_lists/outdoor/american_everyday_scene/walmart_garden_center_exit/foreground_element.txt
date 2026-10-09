@@ -1,15 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-spilled potting soil on concrete | 0.7 | 0.1-0.3 | scattered dark dirt
-snapped white plastic plant stake | 0.5 | 0.05-0.1 | broken white stake
-loose plant pot rolling | 0.45 | 0.05-0.15 | empty black nursery pot
-mulch trail leaking from bag | 0.55 | 0.1-0.2 | scattered bark chips
-broken bag of grass seed | 0.4 | 0.1-0.2 | torn paper bag with spill
-wet concrete from hose drip | 0.55 | 0.1-0.3 | dark damp patch
-yellow wet floor cone | 0.4 | 0.05-0.15 | scuffed plastic cone with a slipping-figure pictogram
-trampled cardboard from delivery | 0.5 | 0.1-0.3 | flattened brown cardboard
-flattened cigarette butt | 0.4 | 0.05-0.1 | discarded filter
-abandoned single garden glove | 0.3 | 0.05-0.1 | dirty cloth glove
-yellow painted curb fading | 0.6 | 0.1-0.3 | chipped curb paint
-crack in concrete with weed | 0.55 | 0.05-0.15 | green sprig in seam
+a plain light gray concrete pavement | 1.0 | 0.1-0.4 | smooth and even
+a smooth broom-finished concrete pavement | 0.9 | 0.1-0.4 | matte and even
+a plain light gray asphalt surface | 0.8 | 0.1-0.4 | smooth and even
+a plain pale concrete apron | 0.7 | 0.1-0.4 | matte and even
+a plain warm gray concrete pavement | 0.6 | 0.1-0.4 | smooth and even
+a plain medium gray asphalt surface | 0.6 | 0.1-0.4 | matte and even
+a plain flat light concrete surface | 0.6 | 0.1-0.4 | smooth and even
+a plain even charcoal asphalt lot | 0.5 | 0.1-0.4 | matte and even
+a plain smooth pale concrete walkway | 0.55 | 0.1-0.4 | matte and even
+a plain light brushed concrete pavement | 0.5 | 0.1-0.4 | smooth and even
+a plain flat gray asphalt surface | 0.5 | 0.1-0.4 | smooth and even
+a plain tan concrete pavement | 0.4 | 0.1-0.4 | matte and even

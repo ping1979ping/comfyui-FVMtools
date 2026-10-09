@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-cleared skating patch swept dark | 0.5 | 0.15-0.35 | grey window in the white
-shovel standing in a snow pile | 0.45 | 0.05-0.15 | upright marker
-hockey net dragged onto the ice | 0.4 | 0.1-0.2 | sagging twine
-fox tracks looping the shoreline | 0.45 | 0.05-0.2 | purposeful stitching
-ice angler hunched on a bucket | 0.4 | 0.05-0.15 | patient statue
-snow squall marching across the far end | 0.35 | 0.2-0.4 | grey curtain
-kids testing the shore ice loudness | 0.45 | 0.1-0.25 | stomping chorus
-dog delighted by the slick | 0.45 | 0.05-0.2 | splayed scramble
-bench iced over facing the lake | 0.45 | 0.05-0.15 | glazed slats
-old bubbler hole skinned with new ice | 0.35 | 0.02-0.08 | thin black window
-sled train heading out from shore | 0.35 | 0.1-0.25 | rope caravan
+snow-laden hemlocks along the shore a few meters back on the left | 0.8 | 0.2-0.5 | dark green boughs under white
+a low snow bank along the shoreline a few meters back | 0.85 | 0.2-0.5 | smooth and wind-packed
+tall pale reeds at the shore edge a few meters back on the right | 0.6 | 0.2-0.5 | straw-colored stems rising from snow
+a boat ramp buried under snow a few meters back | 0.5 | 0.2-0.5 | smooth white slope down to the ice
+an upturned canoe under a layer of snow a few meters back on the left | 0.45 | 0.2-0.5 | rounded white hull
+a short wooden dock reaching onto the ice a few meters back on the right | 0.7 | 0.2-0.5 | weathered grey planks under snow
+bare birches along the bank a few meters back | 0.7 | 0.2-0.5 | pale trunks leaning toward the lake
+a snow-covered rock shelf at the shore a few meters back on the left | 0.55 | 0.2-0.5 | rounded grey stones under white caps
+an empty weathered wooden bench facing the lake a few meters back on the right | 0.45 | 0.2-0.5 | snow along the slats
+a dark timber boathouse a few meters back on the left | 0.5 | 0.2-0.5 | snow on the roof, closed doors
+a low ridge of heaved ice at the water's edge a few meters back | 0.55 | 0.2-0.5 | grey-blue slabs under snow
+a leafless willow a few meters back on the right | 0.5 | 0.2-0.5 | drooping bare branches
+a clump of bare shrubs a few meters back on the left | 0.5 | 0.2-0.5 | thin red stems dusted white

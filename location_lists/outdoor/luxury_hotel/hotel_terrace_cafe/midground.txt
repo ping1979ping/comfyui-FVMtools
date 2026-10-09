@@ -1,16 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-round marble-top cafe tables with wicker chairs | 1.0 | 0.25-0.5 | cool white stone and cane
-white tablecloths set with silver and linen napkins | 0.8 | 0.2-0.4 | crisp pressed cotton
-waiter in a black vest pouring coffee | 0.65 | 0.1-0.3 | silver pot and porcelain cup
-guests taking afternoon tea on the terrace | 0.65 | 0.15-0.35 | tiered cake stands
-large cream market umbrellas shading the tables | 0.75 | 0.2-0.45 | fringed canvas canopies
-terracotta planters with trailing geraniums | 0.6 | 0.1-0.3 | red and pink blooms
-pastry display cart with fruit tarts | 0.45 | 0.1-0.25 | glass-domed trays
-low stone terrace wall with potted herbs | 0.5 | 0.15-0.3 | rough pale blocks
-cushioned banquette along the garden edge | 0.5 | 0.15-0.35 | striped upholstery
-outdoor espresso bar under an awning | 0.4 | 0.15-0.3 | brass machine and cups
-wrought iron bistro chairs in pairs | 0.55 | 0.15-0.35 | scrolled black frames
-heat lamps standing between tables | 0.35 | 0.05-0.15 | slim bronze towers
-boxwood topiary spheres flanking the steps | 0.45 | 0.1-0.25 | perfect green globes
+round white cafe tables a few meters back across the terrace | 1.0 | 0.2-0.5 | all empty, set for lunch with white linen, cane chairs pushed in
+cream market umbrellas over empty tables a few meters back on the right | 0.75 | 0.2-0.5 | slim wooden poles, round open canopies
+an empty cushioned banquette along the balustrade a few meters back | 0.55 | 0.2-0.5 | plain pale grey outdoor fabric
+square stone planters with clipped boxwood balls a few meters back on the left | 0.7 | 0.2-0.5 | dark green spheres in pale boxes
+wrought iron bistro chairs around small tables a few meters back on the left | 0.6 | 0.2-0.5 | all empty, black scrolled frames
+a low stone balustrade a few meters back along the garden edge | 0.7 | 0.2-0.5 | pale limestone posts with a flat cap rail
+tall bronze patio heaters a few meters back between the empty tables | 0.4 | 0.2-0.5 | slim columns, switched off
+a wide stone staircase down to the lawn a few meters back on the right | 0.6 | 0.2-0.5 | broad shallow steps with a low iron rail
+terracotta urns with trailing ivy a few meters back on the left | 0.5 | 0.2-0.5 | large glazed pots on stone bases
+a long table set for a luncheon a few meters back on the left | 0.45 | 0.2-0.5 | white linen and glassware, chairs pushed in
+a white pergola frame over empty tables a few meters back at the center | 0.45 | 0.2-0.5 | open beams casting soft shade
+two empty wicker lounge chairs with a low table a few meters back on the right | 0.5 | 0.2-0.5 | cream cushions
+slim lamp posts with round white globes a few meters back along the terrace edge | 0.5 | 0.2-0.5 | black iron poles
+a tiered stone fountain a few meters back at the center | 0.4 | 0.2-0.5 | pale basin with a soft trickle

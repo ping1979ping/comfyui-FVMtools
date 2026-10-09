@@ -1,15 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-canopy of chestnut trees | 1.0 | 0.6-1.0 | broad green leaves dappling sun
-gravel courtyard ground | 0.9 | 0.5-0.9 | pale pebbles under open sky
-brewery building facade | 0.8 | 0.5-0.9 | whitewashed wall with blue-white trim
-tall hedge boundary | 0.6 | 0.4-0.8 | clipped green privet
-half-timbered inn wall | 0.6 | 0.4-0.8 | exposed dark beams and plaster
-rolling Bavarian hills beyond | 0.5 | 0.4-0.7 | distant green meadow slopes
-church steeple above trees | 0.5 | 0.3-0.6 | onion dome over rooftops
-beer kiosk serving hatch | 0.7 | 0.4-0.7 | wooden counter with a chalkboard showing doodled mug and pretzel icons
-stone garden wall | 0.5 | 0.4-0.7 | moss-flecked masonry
-string lights across canopy | 0.55 | 0.3-0.6 | bulbs strung between trunks
-river bank with willows | 0.4 | 0.3-0.6 | slow water behind garden
-blue-white striped awning | 0.55 | 0.3-0.6 | fabric over service area
+the chestnut canopy over the whole garden | 1.0 | 0.6-1.0 | tall chestnut trees with a dense leafy roof across the whole width of the image, dappled light between the trunks
+the brewery building at the back of the garden | 0.85 | 0.6-1.0 | a long whitewashed facade with a steep red-tiled roof and tall shuttered windows across the whole width of the image
+the clipped hedge along the far side | 0.7 | 0.6-1.0 | a tall dark green hedge across the whole width of the image, tree trunks rising in front of it
+the half-timbered inn behind the trees | 0.6 | 0.6-1.0 | dark timber frame and cream plaster on the far side, a red roof, across the whole width of the image
+the row of old trees along the far edge | 0.7 | 0.6-1.0 | a line of chestnut trunks with a low stone wall behind, village rooftops beyond
+the church tower above the tree crowns far on the left | 0.5 | 0.6-1.0 | a white church tower with a green onion dome rising over the leaves, a pale sky
+the green hillside beyond the garden wall | 0.5 | 0.6-1.0 | a wooded hill and meadow rising beyond a low wall across the whole width of the image
+the sandstone garden wall at the back | 0.6 | 0.6-1.0 | an old sandy-colored stone wall with ivy across the whole width of the image, tall trees behind it
+the pale sky between the tree crowns | 0.5 | 0.6-1.0 | bright sky glimpsed through leaves, rows of trunks across the whole width of the image
+the brewery yard far behind the trees | 0.5 | 0.6-1.0 | a plain open yard leading to a white building with a gabled roof far at the back
+the long avenue of old lime trees | 0.55 | 0.6-1.0 | grey trunks in regular rows receding to the far end of the garden, a pale building far behind
+the open meadow far behind the trees | 0.4 | 0.6-1.0 | a wide green meadow behind a low fence across the whole width of the image, a village far beyond
+the whitewashed brewery tower far on the right | 0.4 | 0.6-1.0 | a plain tower with a copper roof rising above the trees

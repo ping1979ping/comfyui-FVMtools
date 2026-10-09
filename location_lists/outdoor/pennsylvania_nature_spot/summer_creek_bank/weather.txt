@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-humid summer haze | 0.8 | - | -
-heavy still air before a thunderstorm | 0.5 | - | -
-sudden afternoon downpour passing | 0.4 | - | -
-wet pavement steaming after rain | 0.45 | - | -
-dry heat with a light breeze | 0.7 | - | -
-sticky evening air | 0.6 | - | -
-thin high cloud | 0.6 | - | -
-flat overcast sky | 0.6 | - | -
-gusty wind ahead of a storm front | 0.45 | - | -
-cloudless glare off the water | 0.5 | - | -
+clear warm summer day with a light breeze | 1.0 | - | -
+bright blue sky with a few white clouds | 0.85 | - | -
+partly cloudy sky with soft shade | 0.75 | - | -
+hazy humid summer afternoon | 0.65 | - | -
+high thin cloud over a warm day | 0.55 | - | -
+still warm air with a pale blue sky | 0.6 | - | -
+overcast warm day under a soft grey sky | 0.5 | - | -
+light haze over the valley | 0.5 | - | -
+clear dry summer day with a deep blue sky | 0.6 | - | -
+warm day with towering white clouds | 0.45 | - | -
+fresh air after a short summer shower | 0.4 | - | -

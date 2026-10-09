@@ -1,14 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear warm evening air | 1.0 | - | -
-gentle rooftop breeze | 0.9 | - | -
-crisp cool night air | 0.75 | - | -
-still balmy summer night | 0.7 | - | -
-thin high cirrus clouds | 0.6 | - | -
-light drifting city haze | 0.55 | - | -
-low clouds glowing from below | 0.5 | - | -
-brisk wind rippling drapes | 0.45 | - | -
-faint mist after rain | 0.4 | - | -
-fire-warmed chilly evening | 0.5 | - | -
-clean post-storm clarity | 0.4 | - | -
+clear warm evening with a light breeze | 1.0 | - | -
+clear sky fading to deep blue | 0.85 | - | -
+partly cloudy sky with soft pink light | 0.7 | - | -
+hazy warm summer evening | 0.6 | - | -
+crisp clear autumn evening | 0.6 | - | -
+cool still spring evening with a pale sky | 0.55 | - | -
+low grey cloud over the city | 0.5 | - | -
+cold clear winter evening | 0.45 | - | -
+thin high cloud over the skyline | 0.55 | - | -
+light haze softening the far towers | 0.5 | - | -
+dry still air after a day of rain | 0.4 | - | -

@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-bike racks with locked bikes | 0.75 | 0.2-0.5 | rusted frames
-café tables outside a shop | 0.7 | 0.2-0.5 | folding metal furniture
-planted tub in the middle of the street | 0.65 | 0.1-0.3 | concrete tub
-bench along the paving | 0.6 | 0.15-0.4 | slatted timber
-market stall at the corner | 0.45 | 0.2-0.5 | striped canopy
-bin beside the bench | 0.6 | 0.05-0.2 | dented metal
-A-board outside the shop | 0.6 | 0.05-0.2 | chalked board with doodled coffee cup{| and the word "{OPEN|TODAY|MENU}"}
-pram pushed along the street | 0.4 | 0.1-0.3 | worn fabric hood
-delivery trolley by a doorway | 0.4 | 0.1-0.3 | steel frame
-fountain surround in the square | 0.35 | 0.2-0.5 | wet stone rim
-street musician with a case open | 0.3 | 0.1-0.3 | worn instrument case
+a row of slim street trees in round beds a few meters back | 0.8 | 0.2-0.5 | young trunks with leafy crowns
+large concrete planters with clipped shrubs a few meters back on the left | 0.6 | 0.2-0.5 | plain and round
+empty wooden benches along the street a few meters back on the right | 0.7 | 0.2-0.5 | slatted timber
+dark bicycles standing in a rack a few meters back on the right | 0.5 | 0.2-0.5 | slim frames
+empty folding cafe tables with chairs pushed in a few meters back on the left | 0.6 | 0.2-0.5 | thin metal frames
+a slim black lamppost a few meters back on the left | 0.6 | 0.2-0.5 | round lamp, unlit
+a low round stone fountain basin a few meters back | 0.4 | 0.2-0.5 | still water, grey stone
+a closed shop window a few meters back on the right | 0.5 | 0.2-0.5 | dark glass, blank frame
+a shop awning rolled up above a few meters back on the left | 0.45 | 0.2-0.5 | grey fabric
+a wide empty stretch of pale paving a few meters back | 0.6 | 0.2-0.5 | smooth grey stone
+a row of slim steel bollards along the far curb a few meters back | 0.45 | 0.2-0.5 | dark posts
+a closed round kiosk a few meters back on the right | 0.4 | 0.2-0.5 | shutters down, plain
+an empty bench under a tree a few meters back on the left | 0.5 | 0.2-0.5 | grey timber slats
+a large round planted tub with a small tree a few meters back on the right | 0.5 | 0.2-0.5 | grey concrete

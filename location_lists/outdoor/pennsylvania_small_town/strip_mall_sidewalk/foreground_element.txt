@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-cart wrangled from the corral | 0.55 | 0.1-0.25 | nested yank
-door leaned open with a shoulder | 0.55 | 0.05-0.2 | bags in both hands
-pizza boxes balanced to the car | 0.5 | 0.05-0.2 | chin assist
-kid steered by the hood | 0.45 | 0.05-0.2 | parking lot protocol
-shopper checking the bags | 0.5 | 0.05-0.15 | walk-and-scan
-gumball cranked and caught | 0.4 | 0.03-0.1 | palm at the chute
-karate belt retied outside | 0.4 | 0.05-0.15 | bow adjusted
-laundry bag hoisted higher | 0.45 | 0.05-0.15 | grip shift
-puddle stepped around | 0.5 | 0.05-0.15 | tightrope curb
-keys fished out at the curb | 0.5 | 0.03-0.1 | pocket dig
-takeout sniffed through the bag | 0.45 | 0.03-0.1 | anticipation
+a smooth broom-finished concrete sidewalk | 1.0 | 0.1-0.4 | smooth and even
+a plain pale gray concrete walkway | 0.9 | 0.1-0.4 | matte and even
+a plain light gray concrete sidewalk | 0.85 | 0.1-0.4 | smooth and even
+a plain warm gray concrete walkway | 0.7 | 0.1-0.4 | matte and even
+a smooth light concrete pavement under the canopy | 0.65 | 0.1-0.4 | smooth and even
+a plain buff concrete sidewalk | 0.6 | 0.1-0.4 | matte and even
+a plain light gray asphalt surface | 0.55 | 0.1-0.4 | smooth and even
+a plain tan concrete walkway | 0.55 | 0.1-0.4 | matte and even
+a smooth pale concrete pavement | 0.6 | 0.1-0.4 | smooth and even
+a plain medium gray concrete sidewalk | 0.5 | 0.1-0.4 | matte and even
+a plain dark gray asphalt surface | 0.45 | 0.1-0.4 | matte and even
+a plain off-white concrete walkway | 0.5 | 0.1-0.4 | smooth and even

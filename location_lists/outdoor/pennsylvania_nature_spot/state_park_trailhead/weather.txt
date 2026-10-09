@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-flat overcast sky | 0.9 | - | -
-humid summer haze | 0.6 | - | -
-light drizzle in the air | 0.55 | - | -
-steady grey rain | 0.45 | - | -
-wet asphalt after a storm | 0.55 | - | -
-clear cold air | 0.6 | - | -
-gusty wind moving the trees | 0.5 | - | -
-cold air with breath visible | 0.4 | - | -
-first flurries not sticking | 0.35 | - | -
-heavy still air before a thunderstorm | 0.4 | - | -
+clear warm day with a light breeze | 1.0 | - | -
+bright blue sky with a few white clouds | 0.85 | - | -
+partly cloudy sky with soft shade | 0.75 | - | -
+hazy humid summer afternoon | 0.55 | - | -
+cool crisp autumn day with a clear sky | 0.65 | - | -
+mild spring day with a pale blue sky | 0.7 | - | -
+overcast day under a low grey sky | 0.6 | - | -
+clear cold winter day with a pale sky | 0.45 | - | -
+thin high cloud and soft light | 0.55 | - | -
+light mist in the trees after rain | 0.4 | - | -
+dry still air under a pale sky | 0.5 | - | -

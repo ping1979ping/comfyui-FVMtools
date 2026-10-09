@@ -1,15 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-carved stone balustrade with turned balusters | 0.7 | 0.05-0.18 | weathered limestone spindles
-arched colonnade with slender columns | 0.55 | 0.05-0.18 | creamy plaster
-wrought iron pergola frame with finials | 0.5 | 0.03-0.12 | black scrolled bars
-terracotta herringbone paving | 0.6 | 0.05-0.2 | warm fired bricks
-fluted stone fountain basin | 0.4 | 0.03-0.1 | mossy lion-head spout
-striped canvas awning with scalloped edge | 0.55 | 0.05-0.15 | cream and navy cloth
-shuttered French doors opening to the terrace | 0.5 | 0.05-0.15 | pale blue slatted wood
-ornate brass lantern on a bracket | 0.4 | 0.01-0.05 | glass panes and patina
-climbing rose trellis against the wall | 0.45 | 0.03-0.1 | white lattice and blossoms
-stone steps with worn edges | 0.45 | 0.03-0.12 | pale rounded treads
-glazed ceramic tile table inlay | 0.3 | 0.01-0.05 | hand painted blue pattern
-stucco wall niche with a potted fern | 0.3 | 0.02-0.07 | shadowed arch recess
+arched French door heads along the far hotel facade | 0.7 | 0.05-0.2 | pale stone keystones above tall glass
+a slate roofline with copper gutters far above the terrace | 0.6 | 0.05-0.2 | dark grey, trimmed in green copper
+a carved stone cornice along the top of the far facade | 0.55 | 0.05-0.2 | cream, with shallow brackets
+black iron balcony railings on the upper floor far behind | 0.5 | 0.05-0.2 | slim scrolled bars
+a stone chimney stack on the far roofline on the left | 0.4 | 0.05-0.2 | pale, with a clay pot
+white painted window shutters high up on the far wing | 0.45 | 0.05-0.2 | narrow louvered panels
+carriage lanterns beside the far doorway | 0.45 | 0.05-0.2 | black iron with warm glass
+ball-topped stone gate piers at the far end of the garden | 0.4 | 0.05-0.2 | pale limestone caps
+a copper-roofed bay window on the far right | 0.4 | 0.05-0.2 | green patina, tall panes
+a stone urn on a pedestal at the far end of the balustrade | 0.5 | 0.05-0.2 | pale and plain
+round brass wall lights between the far doors | 0.4 | 0.05-0.2 | small warm globes
+a wrought iron gate at the far end of the terrace | 0.4 | 0.05-0.2 | closed, black bars between stone posts

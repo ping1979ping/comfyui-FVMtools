@@ -1,14 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-culvert pipe under the entrance road | 0.4 | 0.05-0.15 | corrugated mouth
-lot edge timbers bolted down | 0.5 | 0.05-0.2 | rebar pinned
-signpost with mileage arrows | 0.55 | 0.03-0.1 | routed digits
-trail register box on a post | 0.5 | 0.02-0.08 | hinged lid weathered wood
-erosion bars across the first climb | 0.5 | 0.05-0.2 | half-buried timbers
-lichen crust on the fence rails | 0.45 | 0.05-0.15 | pale green patches
-carsonite post with pictogram decals | 0.4 | 0.02-0.08 | flexible marker
-gravel washboard at the entrance | 0.4 | 0.1-0.25 | rippled surface
-pavilion post carved with hearts and notches | 0.4 | 0.03-0.1 | decades of layers
-drainage swale along the lot | 0.4 | 0.05-0.2 | leaf-packed channel
-cork board dotted with old staples | 0.45 | 0.03-0.1 | torn paper corners
+a wooden post and rail gate far back across the track | 0.4 | 0.05-0.2 | grey, closed
+a stone drainage culvert far down the track on the right | 0.35 | 0.05-0.2 | low, dark opening
+a low log curb along the far side of the lot | 0.4 | 0.05-0.2 | brown, plain
+the green metal roofline of the far pavilion above the trees | 0.4 | 0.05-0.2 | thin and dark
+a plank bridge rail far down the path | 0.35 | 0.05-0.2 | low, grey wood
+a hand-hewn timber post at the far edge of the lot | 0.35 | 0.05-0.2 | grey and weathered
+a stone fire ring far back at the edge of the trees | 0.3 | 0.05-0.2 | low ring of grey stones
+a slim steel bollard at the far end of the lot | 0.35 | 0.05-0.2 | dark green
+a plain steel handrail far up the stairs | 0.35 | 0.05-0.2 | thin dark pipe
+a low retaining wall of logs far back on the right | 0.35 | 0.05-0.2 | stacked brown timbers
+a slate-grey culvert pipe at the far corner of the lot | 0.3 | 0.05-0.2 | round and dark

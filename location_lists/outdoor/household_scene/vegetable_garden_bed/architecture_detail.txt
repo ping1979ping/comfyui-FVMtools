@@ -1,13 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-raised bed timber corner | 1.0 | 0.2-0.5 | rough joined wood
-plant marker stake | 0.95 | 0.05-0.15 | small painted wooden stake with a leaf pictogram
-trellis lattice grid | 0.85 | 0.2-0.5 | wood diamond pattern
-drip-irrigation tubing run | 0.85 | 0.1-0.3 | thin black line
-fence post cap profile | 0.7 | 0.1-0.3 | painted shaped top
-gravel path edging strip | 0.75 | 0.1-0.3 | metal border line
-hoop tunnel arched frame | 0.65 | 0.1-0.3 | bent wire arch
-small chalkboard plant label | 0.7 | 0.05-0.15 | painted slate panel{| with the word "{BASIL|MINT|KALE}"}
-cold-frame glazed lid | 0.55 | 0.1-0.3 | hinged window pane
-hose-bibb tap fitting | 0.7 | 0.05-0.15 | brass garden faucet
+cedar fence boards along the far back of the garden | 0.6 | 0.05-0.2 | tall evenly spaced slats
+a wooden fence post with a flat cap at the far corner | 0.5 | 0.05-0.2 | square gray post
+a closed wooden gate in the far fence on the left | 0.45 | 0.05-0.2 | plain boards with a black latch
+cedar frames edging the far raised beds | 0.5 | 0.05-0.2 | low pale boards at the corners
+a thin metal arch over the far path at the back | 0.35 | 0.05-0.2 | black steel with climbing vines
+a white trim board on the far greenhouse frame | 0.35 | 0.05-0.2 | narrow painted wood
+a hose bibb on the far house wall at the left | 0.35 | 0.05-0.2 | small brass spigot
+a gutter and downspout at the far back corner of the house | 0.35 | 0.05-0.2 | slim white pipe
+a trellis panel on the far fence on the right | 0.4 | 0.05-0.2 | thin crossed laths
+a stone edge along the far back border | 0.3 | 0.05-0.2 | low gray rocks
+a wire tomato cage at the back of the far bed | 0.35 | 0.05-0.2 | thin galvanized rings

@@ -1,17 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-coupe glass with garnish | 0.9 | 0.02-0.08 | chilled stem with citrus twist
-copper cocktail shaker | 0.7 | 0.02-0.05 | hammered metal vessel
-flickering glass votive candle | 0.8 | 0.02-0.05 | tiny dancing flame in tumbler
-leather drink folder | 0.65 | 0.02-0.08 | embossed cover with gold trim
-champagne bucket on stand | 0.6 | 0.05-0.1 | silver ice bucket with bottle
-folded cashmere guest blanket | 0.6 | 0.05-0.1 | cream wool draped on seat
-smoked old-fashioned tumbler | 0.55 | 0.02-0.05 | amber liquid and large ice cube
-small orchid table arrangement | 0.5 | 0.02-0.08 | white blooms in black vase
-silver oyster tray | 0.45 | 0.02-0.08 | crushed ice with lemon wedges
-cocktail skewer olive dish | 0.45 | 0.02-0.05 | small ceramic bowl
-black bar coaster stack | 0.4 | 0.02-0.05 | plain slate rounds
-lit smartphone on table | 0.35 | 0.02-0.05 | glowing screen beside glass
-tray of canapes | 0.5 | 0.05-0.1 | miniature bites on slate
-crystal whiskey decanter | 0.4 | 0.02-0.08 | faceted glass with amber spirit
+small crystal glasses at the far end of the bar counter | 0.7 | 0.02-0.06 | cut glass, clear
+small candle lanterns on distant tables | 0.6 | 0.02-0.06 | amber glass, soft flame
+a small silver ice bucket at the far end of the bar | 0.45 | 0.02-0.06 | frosted metal
+small dark bottles on a high shelf at the back | 0.6 | 0.02-0.06 | amber glow behind them
+a small bud vase on a distant table | 0.5 | 0.02-0.06 | slim clear glass with a white flower
+small potted succulents on a far ledge | 0.4 | 0.02-0.06 | grey-green rosettes in white pots
+small folded blankets on a distant banquette | 0.35 | 0.02-0.06 | soft charcoal wool
+a small brass bowl at the far end of the bar | 0.4 | 0.02-0.06 | polished
+a small white orchid in a pot on a distant table | 0.45 | 0.02-0.06 | pale blooms
+a small wicker basket on a far lounger | 0.3 | 0.02-0.06 | woven and plain
+a compact silver cocktail shaker at the back of the bar | 0.5 | 0.02-0.06 | polished metal
+small votive candles on a far ledge | 0.45 | 0.02-0.06 | clear glass, soft flame

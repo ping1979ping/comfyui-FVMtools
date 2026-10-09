@@ -1,15 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-long wooden beer tables | 1.0 | 0.3-0.5 | rows of scrubbed pine
-folding benches in rows | 0.95 | 0.3-0.5 | sturdy plank seating
-families sharing a table | 0.7 | 0.3-0.5 | adults and kids with food
-friends raising beer mugs | 0.7 | 0.2-0.4 | one-litre glass Mass clinking
-waitress in dirndl | 0.6 | 0.2-0.4 | carrying trays of mugs
-radish and pretzel platters | 0.6 | 0.15-0.3 | wooden boards with Brezel
-red-checked parasol cluster | 0.5 | 0.2-0.4 | fabric sunshades
-chestnut tree trunks | 0.8 | 0.2-0.4 | thick rough-barked columns
-beer barrel standing tables | 0.45 | 0.15-0.3 | oak kegs as tables
-brass band on small stage | 0.35 | 0.2-0.4 | players in traditional costume
-self-service queue at kiosk | 0.5 | 0.2-0.4 | people with empty mugs
-rotisserie chicken stand | 0.4 | 0.15-0.3 | golden birds on spit
+long empty wooden tables with benches pushed in a few meters back | 1.0 | 0.2-0.5 | scrubbed pine, plain tops
+rows of empty wooden tables a few meters back on the left | 0.85 | 0.2-0.5 | pale pine, benches pushed in
+an empty round table under a chestnut tree a few meters back on the right | 0.6 | 0.2-0.5 | plain wood top, stools pushed in
+a long empty bench along the hedge a few meters back | 0.6 | 0.2-0.5 | plain pine
+empty wooden benches stacked at the side a few meters back on the right | 0.4 | 0.2-0.5 | grey weathered boards
+a row of empty wooden tables under the trees a few meters back | 0.8 | 0.2-0.5 | benches pushed in
+a closed wooden kiosk hatch a few meters back on the right | 0.5 | 0.2-0.5 | shutters down, plain wood
+tall chestnut trunks a few meters back on the left | 0.8 | 0.2-0.5 | rough dark bark
+a low wooden fence around the garden a few meters back | 0.5 | 0.2-0.5 | pale painted posts
+a closed white parasol over an empty table a few meters back on the left | 0.45 | 0.2-0.5 | plain canvas
+a row of empty pine tables set for a meal a few meters back | 0.5 | 0.2-0.5 | plain white plates
+a wooden pergola over empty benches a few meters back on the right | 0.4 | 0.2-0.5 | climbing vine on the beams
+a stack of empty wooden crates a few meters back on the left | 0.4 | 0.2-0.5 | plain pine slats

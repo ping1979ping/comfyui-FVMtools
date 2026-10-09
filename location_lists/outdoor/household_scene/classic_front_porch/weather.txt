@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear sunny breezy day | 0.95 | - | -
-gentle steady summer breeze | 0.95 | - | -
-heavy summer rain | 0.85 | - | -
-overcast diffused light | 0.85 | - | -
-crisp autumn dry afternoon | 0.95 | - | -
-quiet snowfall drifting | 0.8 | - | -
-muggy still afternoon | 0.7 | - | -
-distant thunder rumble | 0.7 | - | -
-hazy warm afternoon | 0.75 | - | -
-breezy spring fresh openness | 0.85 | - | -
+clear mild day with a light breeze | 1.0 | - | -
+bright blue sky with a few white clouds | 0.85 | - | -
+partly cloudy sky with soft shade | 0.75 | - | -
+hazy humid summer afternoon | 0.55 | - | -
+overcast day under a pale gray sky | 0.65 | - | -
+mild spring day with fresh green leaves | 0.7 | - | -
+cool crisp autumn day with orange maple leaves | 0.65 | - | -
+clear cold winter day with bare trees | 0.45 | - | -
+light snow dusting the porch railing under a pale sky | 0.35 | - | -
+soft gray sky just after rain | 0.45 | - | -
+gentle golden haze in the air | 0.4 | - | -

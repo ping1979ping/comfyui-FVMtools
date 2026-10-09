@@ -1,14 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-glittering city skyline panorama | 1.0 | 0.7-1.0 | layered lit towers on horizon
-glass balustrade perimeter wall | 0.95 | 0.6-1.0 | clear tempered panels with steel rail
-sunset-streaked horizon sky | 0.85 | 0.6-1.0 | gradient orange and violet cloud bands
-illuminated landmark tower view | 0.8 | 0.5-0.9 | distant glowing spire
-sweeping river-and-bridge vista | 0.7 | 0.5-0.9 | lit bridge spans over dark water
-backlit stone bar wall | 0.7 | 0.4-0.8 | glowing amber shelves of bottles
-dense high-rise window grid | 0.65 | 0.5-0.9 | thousands of tiny lit squares
-twilight cityscape haze | 0.6 | 0.5-0.9 | soft blue atmospheric glow
-trellised pergola canopy | 0.55 | 0.4-0.7 | slatted dark wood beams with string lights
-living green hedge screen | 0.5 | 0.4-0.7 | trimmed boxwood wall panels
-neighboring rooftop silhouettes | 0.45 | 0.4-0.7 | stepped dark building tops
+the city skyline across the far side of the roof | 1.0 | 0.6-1.0 | layered towers of glass and brick across the whole width of the image, a tall stone clock tower rising on the left, pale sky above
+a glass balustrade along the far edge of the roof | 0.9 | 0.6-1.0 | clear panels with a thin steel rail across the whole width of the image, city rooftops stretching out beyond it
+a river and a long bridge far beyond the rooftops | 0.7 | 0.6-1.0 | dark water with a steel bridge across the middle of the image, low brick warehouses along the far bank
+the brick tower of an older high-rise a few blocks away on the right | 0.65 | 0.6-1.0 | rows of tall windows, a stepped roof, soft haze around it
+a wooded ridge on the far horizon | 0.55 | 0.6-1.0 | a long low line of hills above the city rooftops across the whole width of the image, pale blue haze
+the backlit stone wall at the far side of the roof deck | 0.7 | 0.6-1.0 | warm shelves of dark bottles across the whole width of the image behind the bar
+a dark timber pergola across the back of the roof deck | 0.55 | 0.6-1.0 | slatted beams overhead, a boxwood hedge wall behind it, city lights beyond
+a wide open sky above the far rooftops | 0.6 | 0.6-1.0 | a soft gradient sky across the whole width of the image, a few low clouds near the horizon
+neighboring rooftops stepping down on the left | 0.5 | 0.6-1.0 | flat roofs with water towers and brick parapets, dark against a pale sky
+a church steeple and a grid of streets far below | 0.45 | 0.6-1.0 | rows of brick rooftops across the width of the image, a stone steeple on the right
+a trimmed hedge wall along the right side of the roof | 0.5 | 0.6-1.0 | boxwood panels in dark planters, the skyline visible over the top
+a glass-fronted office tower across the street | 0.5 | 0.6-1.0 | a tall wall of windows rising above the roof deck on the right, a pale sky above it
+a long view down a wide avenue far below | 0.45 | 0.6-1.0 | a straight canyon of brick and stone buildings leading to a hazy horizon in the middle of the image

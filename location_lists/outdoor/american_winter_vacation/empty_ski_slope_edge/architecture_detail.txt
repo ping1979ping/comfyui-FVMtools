@@ -1,14 +1,13 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-corduroy grooves crisp underfoot | 0.55 | 0.15-0.4 | fresh-pressed lines
-ice glaze where the sun hit at noon | 0.5 | 0.1-0.3 | refrozen sheen
-pylon pads scarred by seasons | 0.4 | 0.03-0.1 | patched cushions
-cable sag between towers | 0.45 | 0.05-0.2 | catenary curves
-drift knife-edging the fence tops | 0.45 | 0.05-0.2 | sculpted crests
-boot pack trail hardening to concrete | 0.45 | 0.05-0.2 | stomped stair
-snow squeak sharpening as it cools | 0.45 | 0.05-0.2 | cold audible
-gun whales lined down the pitch | 0.4 | 0.1-0.3 | man-made moguls
-shadow line racing up the slope | 0.5 | 0.2-0.4 | sunset tide
-tower lights blinking on in series | 0.4 | 0.05-0.15 | one-by-one wake
-tracks refrozen into rails | 0.45 | 0.1-0.25 | set grooves
+a thin lift tower far up the slope on the left | 0.6 | 0.05-0.2 | grey steel lattice
+snow on the small hut roof far down the run | 0.5 | 0.05-0.2 | smooth white over a dark roof
+a slim light pole at the far edge of the slope | 0.5 | 0.05-0.2 | grey steel, switched off
+small snow guns far along the edge of the run | 0.5 | 0.05-0.2 | white tubes on short stands
+a low timber rail fence along the far edge | 0.45 | 0.05-0.2 | grey rails with snow caps
+a narrow service road cut across the far hillside | 0.45 | 0.05-0.2 | pale line in the snow
+a thin cable line running up the hill far on the right | 0.5 | 0.05-0.2 | dark line against white
+a small dark shed at the far edge of the clearing | 0.4 | 0.05-0.2 | closed, snow on the roof
+slim bare birch trunks along the far edge | 0.5 | 0.05-0.2 | pale and thin
+a small brick chimney on the lodge roof far below | 0.4 | 0.05-0.2 | dark brick with a snow cap

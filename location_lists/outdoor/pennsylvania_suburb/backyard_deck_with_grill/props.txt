@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-spatula and tongs on the grill shelf | 0.65 | 0.03-0.1 | grease sheen
-paper plate stack weighted with a rock | 0.5 | 0.02-0.08 | breeze insurance
-ketchup and mustard bottles | 0.55 | 0.02-0.08 | picnic table pair
-bag of buns clipped shut | 0.5 | 0.02-0.08 | squished corner
-wiffle bat in the grass | 0.5 | 0.03-0.1 | cracked barrel
-sunscreen and bug spray on the table | 0.55 | 0.02-0.08 | family defense line
-bluetooth speaker on the rail | 0.5 | 0.02-0.08 | playlist going
-corn hole boards mid-lawn | 0.5 | 0.1-0.25 | bags scattered
-sidewalk chalk on the patio edge | 0.4 | 0.02-0.08 | rain-melted stubs
-fly swatter on a nail | 0.35 | 0.02-0.06 | bent mesh
-garden gloves on the rail | 0.45 | 0.02-0.06 | dirt-crusted palms
+a small terracotta pot of herbs on a far deck rail | 0.5 | 0.02-0.06 | green leaves in orange clay
+a small tin watering can by the far steps | 0.4 | 0.02-0.06 | galvanized, with a long spout
+small green lawn lights along the far edge of the deck | 0.35 | 0.02-0.06 | short slim stakes
+a small glass jar candle on a far table | 0.35 | 0.02-0.06 | clear jar, unlit
+a compact gray garden trowel far on the lawn | 0.3 | 0.02-0.06 | short handle, low to the ground
+a small wooden birdhouse on a far fence post | 0.4 | 0.02-0.06 | narrow box with a round hole
+a small white bird feeder hanging from a far branch | 0.35 | 0.02-0.06 | slim plastic tube
+a slim metal tiki torch far at the back of the lawn | 0.3 | 0.02-0.06 | thin pole, unlit
+a small black outdoor audio box on the far wall | 0.3 | 0.02-0.06 | compact box, switched off
+a small stack of terracotta saucers on a far step | 0.3 | 0.02-0.06 | low round dishes
+a small wind chime far on the end of the deck | 0.3 | 0.02-0.06 | thin metal tubes hanging still
+a compact tin lantern on a far deck post | 0.35 | 0.02-0.06 | black metal, unlit

@@ -1,13 +1,14 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-early morning frost light | 0.7 | - | -
-bright crisp mid morning | 0.85 | - | -
-flat overcast midday | 0.9 | - | -
-grey november midday | 0.8 | - | -
-late afternoon long shadows | 0.9 | - | -
-early dusk closing in | 0.75 | - | -
-golden hour through bare branches | 0.8 | - | -
-low sun flickering through trunks | 0.7 | - | -
-overcast early evening | 0.75 | - | -
-short-day afternoon fading fast | 0.7 | - | -
+soft overcast morning light | 0.9 | - | -
+low golden late-afternoon sun through the trees | 0.9 | - | -
+bright mid-morning light with long shadows | 0.7 | - | -
+diffuse light under a thin grey sky | 0.8 | - | -
+warm sun low behind the trunks | 0.6 | - | -
+pale misty early morning light | 0.6 | - | -
+soft midday light through the canopy | 0.7 | - | -
+late-afternoon light with long shadows | 0.7 | - | -
+cool blue light just after sunset | 0.4 | - | -
+bright noon sun with dappled shade | 0.6 | - | -
+gentle light under high thin cloud | 0.6 | - | -

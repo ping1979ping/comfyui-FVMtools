@@ -1,13 +1,13 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-red CVS {plastic channel letters reading "{CVS|CVS PHARMACY|PHARMACY}"|illuminated heart-shaped logo mark} | 0.85 | 0.2-0.4 | illuminated storefront signage
-stucco-clad facade with control joints | 0.75 | 0.3-0.6 | textured paint coating
-rooftop HVAC unit visible | 0.55 | 0.1-0.3 | rusted metal box
-sun-faded red-and-white striped banner over door | 0.6 | 0.1-0.3 | weathered vinyl with simple star shapes
-storefront aluminum window frames | 0.7 | 0.2-0.4 | painted dark aluminum
-overhead branded entry awning | 0.55 | 0.1-0.3 | red metal canopy
-window cling with a syringe pictogram | 0.55 | 0.1-0.2 | static-stuck plastic decal
-rooftop downspout running to lot | 0.55 | 0.1-0.3 | painted metal drain pipe
-parking lot light pole with a plain solid-color banner | 0.5 | 0.1-0.3 | tall steel post
-fire-lane curb painted red | 0.6 | 0.1-0.3 | faded curb paint
+a red band along the roofline of the far building | 0.6 | 0.05-0.2 | narrow painted fascia
+dark aluminum window frames along the far wall | 0.5 | 0.05-0.2 | thin black frames around large panes
+a flat red-trimmed canopy over the far entrance | 0.5 | 0.05-0.2 | slim posts and a white underside
+a rooftop air handling unit behind the far parapet | 0.4 | 0.05-0.2 | gray metal box
+wall-mounted lamps high up along the far wall | 0.45 | 0.05-0.2 | small dark fixtures
+brick pilasters along the far wall | 0.4 | 0.05-0.2 | shallow vertical columns of tan brick
+white downspouts at the far corners of the building | 0.4 | 0.05-0.2 | slim painted aluminum
+a concrete curb ramp at the far corner of the sidewalk | 0.35 | 0.05-0.2 | gentle sloped cut in the curb
+a stone cap along the parapet of the far building | 0.4 | 0.05-0.2 | pale narrow ledge on the roofline
+a steel service door at the far end of the building | 0.35 | 0.05-0.2 | closed, painted tan

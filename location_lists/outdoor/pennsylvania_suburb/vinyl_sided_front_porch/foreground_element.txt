@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-screen door held with a hip | 0.6 | 0.1-0.25 | groceries balanced
-rocking chair set moving | 0.55 | 0.1-0.3 | heel push
-wave to a passing neighbor | 0.55 | 0.05-0.2 | raised hand
-package scooped off the mat | 0.5 | 0.05-0.2 | glance at the box
-mail flipped through | 0.5 | 0.05-0.15 | junk sorted out
-hose aimed at the planters | 0.5 | 0.1-0.25 | thumb spray
-sandals kicked off at the door | 0.5 | 0.05-0.15 | toe hook
-chalk drawing admired | 0.4 | 0.1-0.25 | crouched down
-flag straightened on its pole | 0.4 | 0.05-0.15 | bracket adjust
-iced tea sipped on the step | 0.5 | 0.05-0.2 | elbow on knee
-porch light bulb swapped | 0.35 | 0.05-0.15 | tiptoe reach
+a plain gray painted wooden porch floor | 1.0 | 0.1-0.4 | matte and even
+a plain light gray concrete porch slab | 0.8 | 0.1-0.4 | smooth and even
+a plain wide-plank wooden porch deck | 0.8 | 0.1-0.4 | smooth and even
+a short natural grass lawn | 0.5 | 0.1-0.4 | fine grass blades, natural soft color
+a smooth broom-finished concrete walk | 0.65 | 0.1-0.4 | matte and even
+a plain white painted wooden porch floor | 0.55 | 0.1-0.4 | smooth and even
+a plain tan composite porch deck | 0.6 | 0.1-0.4 | matte and even
+a plain brown painted porch floor | 0.55 | 0.1-0.4 | smooth and even
+a plain pale concrete front walk | 0.6 | 0.1-0.4 | matte and even
+a plain slate gray porch floor | 0.5 | 0.1-0.4 | smooth and even
+a plain light brown wooden deck floor | 0.5 | 0.1-0.4 | matte and even
+a short natural green mown lawn | 0.4 | 0.1-0.4 | fine grass blades, natural soft color

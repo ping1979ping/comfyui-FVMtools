@@ -1,14 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-bootlaces cinched on the bumper | 0.6 | 0.05-0.2 | heel-locked wrap
-pack shrugged onto the shoulders | 0.6 | 0.1-0.25 | strap settle
-map photo taken at the board | 0.5 | 0.05-0.15 | phone raised
-first blaze pointed out | 0.5 | 0.05-0.2 | route confirmed
-dog's harness double-checked | 0.45 | 0.05-0.15 | buckle tug
-hiker pausing at the register box | 0.45 | 0.03-0.1 | stub pencil in hand
-stretch against the fence rail | 0.5 | 0.05-0.2 | calf lengthened
-water sip before the climb | 0.5 | 0.03-0.1 | bottle tipped
-jacket tied around the waist | 0.5 | 0.05-0.2 | sleeves knotted
-gravel kicked from a tread | 0.4 | 0.03-0.1 | boot tapped on the timber
-trail mouth sized up | 0.5 | 0.1-0.3 | hands on hips
+a plain packed dirt path | 1.0 | 0.1-0.4 | matte and even
+a smooth packed light brown earth path | 0.85 | 0.1-0.4 | matte and even
+a plain flat packed clay ground | 0.7 | 0.1-0.4 | matte and even
+a short natural grass ground | 0.5 | 0.1-0.4 | fine grass blades, natural soft color
+a smooth firm tan dirt path | 0.7 | 0.1-0.4 | matte and even
+a plain wide-plank cedar boardwalk | 0.5 | 0.1-0.4 | matte and even
+a plain packed brown dirt path | 0.8 | 0.1-0.4 | matte and even
+a smooth packed pale earth ground | 0.6 | 0.1-0.4 | matte and even
+a plain flat sandy-brown earth path | 0.5 | 0.1-0.4 | matte and even
+a plain packed ochre dirt ground | 0.5 | 0.1-0.4 | matte and even
+a smooth even grey asphalt path | 0.45 | 0.1-0.4 | matte and even
+a plain packed grey-brown dirt path | 0.6 | 0.1-0.4 | matte and even

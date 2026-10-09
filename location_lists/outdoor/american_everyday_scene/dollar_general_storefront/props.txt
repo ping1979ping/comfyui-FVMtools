@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-red Coca-Cola crate stack | 0.75 | 0.1-0.3 | stacked plastic Coca-Cola crates
-ice cooler chest with a picture panel | 0.7 | 0.1-0.3 | white freezer with a penguin pictogram
-plastic sidewalk vending box | 0.45 | 0.05-0.15 | weathered orange box
-public payphone leftover | 0.25 | 0.05-0.15 | dusty old payphone shell
-yellow concrete bollard at entry | 0.8 | 0.1-0.2 | scuffed painted post
-trash can with overflow bag | 0.7 | 0.1-0.3 | dented black bin
-flat handcart leaned on wall | 0.4 | 0.05-0.15 | yellow restock cart
-delivery dolly leaned by door | 0.4 | 0.05-0.15 | red two-wheel dolly
-folded sandwich-board sign | 0.4 | 0.1-0.2 | plastic A-frame
-plastic crate of returnable bottles | 0.35 | 0.05-0.15 | crate of empties
-bright yellow sign on stake{| reading "{SALE|CLEARANCE|DEALS}"} | 0.4 | 0.05-0.1 | bright yellow signboard
-paper sign taped to the window{| reading "{HELP WANTED|NOW HIRING}"} | 0.45 | 0.05-0.1 | marker-on-paper sign
+small red fire hydrant at the far corner of the lot | 0.45 | 0.02-0.06 | red painted cast iron
+small orange cone at the far edge of the lot | 0.4 | 0.02-0.06 | plain molded plastic
+small gray electrical box at the far corner of the building | 0.45 | 0.02-0.06 | steel cabinet on a short post
+small potted shrub beside the far entrance | 0.4 | 0.02-0.06 | green leaves in a round pot
+small round drain grate at the far curb | 0.3 | 0.02-0.06 | dark iron disc
+small white junction box on a far pole | 0.3 | 0.02-0.06 | plain painted steel
+small blue mailbox at the far corner of the lot | 0.4 | 0.02-0.06 | blue steel with a rounded top
+small outdoor water spigot at the base of the far wall | 0.3 | 0.02-0.06 | brass fitting on a short pipe
+small yellow concrete wheel stop at the far edge of the lot | 0.35 | 0.02-0.06 | plain low block
+small stack of flattened cardboard boxes against the far wall | 0.35 | 0.02-0.06 | plain brown sheets
+small gray conduit box on the far wall at the back | 0.3 | 0.02-0.06 | plain steel case
+small clay pots with green shrubs on the far step | 0.3 | 0.02-0.06 | terracotta bowls

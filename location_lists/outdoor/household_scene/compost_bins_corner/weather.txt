@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear sunny dry day | 0.85 | - | -
-gentle rain on bin lids | 0.85 | - | -
-overcast diffused mood | 0.95 | - | -
-muggy summer warmth | 0.85 | - | -
-crisp autumn dry breeze | 0.95 | - | -
-breezy spring fresh air | 0.85 | - | -
-calm dewy morning | 0.85 | - | -
-distant thunder rumble | 0.65 | - | -
-hazy warm afternoon | 0.75 | - | -
-post-rain humid stillness | 0.85 | - | -
+clear dry day with a light breeze | 1.0 | - | -
+bright blue sky with a few white clouds | 0.85 | - | -
+partly cloudy sky with soft shade | 0.75 | - | -
+hazy humid summer afternoon | 0.55 | - | -
+overcast day under a pale gray sky | 0.65 | - | -
+mild spring day with fresh green leaves | 0.7 | - | -
+cool crisp autumn day with orange maple leaves | 0.65 | - | -
+clear cold winter day with bare trees | 0.45 | - | -
+light snow cover on the fence tops under a pale sky | 0.3 | - | -
+soft gray sky just after rain | 0.45 | - | -
+thin high cloud and a steady breeze | 0.5 | - | -

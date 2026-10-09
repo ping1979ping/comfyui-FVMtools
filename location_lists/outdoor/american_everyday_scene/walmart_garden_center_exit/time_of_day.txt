@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-bright midday sun | 0.9 | - | -
-late afternoon flat light | 0.8 | - | -
-overcast morning | 0.75 | - | -
-weekend afternoon rush | 0.7 | - | -
-weekday lunchtime quiet | 0.6 | - | -
-hazy summer noon | 0.7 | - | -
-dusk with lot lights humming | 0.55 | - | -
-post-storm afternoon | 0.55 | - | -
-early morning restock hour | 0.45 | - | -
-mid-morning garden rush | 0.6 | - | -
+bright mid-morning sunlight | 1.0 | - | -
+soft overcast late-morning light | 0.8 | - | -
+clear midday sun with short shadows | 0.8 | - | -
+warm early-afternoon sunlight | 0.85 | - | -
+golden late-afternoon light | 0.8 | - | -
+low evening sun with long shadows | 0.55 | - | -
+even gray overcast afternoon light | 0.7 | - | -
+gentle early morning light under a pale sky | 0.55 | - | -
+soft dusk light with the parking lot lights on | 0.4 | - | -
+bright noon sun with crisp shadows | 0.65 | - | -

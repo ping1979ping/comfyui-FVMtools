@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-red CVS plastic shopping cart | 0.7 | 0.1-0.3 | plastic basket with a white stripe
-prescription pickup paper bag | 0.4 | 0.05-0.15 | white paper bag with stapled top
-blue-and-white accessible parking sign on post | 0.7 | 0.05-0.15 | reflective sign with a white wheelchair pictogram
-red-and-white fire lane marker post | 0.55 | 0.05-0.15 | red and white striped metal post
-plastic sidewalk vending box | 0.45 | 0.05-0.15 | weathered orange box
-red painted bollard at entry | 0.55 | 0.1-0.2 | scuffed steel post
-trash can outside doors | 0.7 | 0.05-0.15 | dented black plastic
-sandwich-board with bright seasonal pictures | 0.4 | 0.05-0.15 | faded plastic A-frame with sun and leaf pictograms
-discarded CVS minute clinic flyer | 0.4 | 0.05-0.1 | crumpled card stock with colored shapes
-yellow concrete curb stop block | 0.7 | 0.05-0.15 | scuffed painted concrete
-abandoned coffee cup with straw | 0.45 | 0.05-0.1 | crushed plastic tumbler
-red and white cash kiosk mounted at entrance | 0.3 | 0.05-0.15 | outdoor kiosk with a plain screen
+small red fire hydrant at the far corner of the lot | 0.5 | 0.02-0.06 | red painted cast iron
+small orange cone at the far edge of the lot | 0.4 | 0.02-0.06 | plain molded plastic
+small gray electrical box at the far corner of the building | 0.45 | 0.02-0.06 | steel cabinet on a short post
+small potted shrub beside the far entrance | 0.4 | 0.02-0.06 | green leaves in a round pot
+small round drain grate at the far curb | 0.35 | 0.02-0.06 | dark iron disc
+small white junction box on a far light pole | 0.3 | 0.02-0.06 | plain painted steel
+small blue steel mailbox at the far corner of the lot | 0.4 | 0.02-0.06 | rounded top, plain blue
+small outdoor water spigot at the base of the far wall | 0.3 | 0.02-0.06 | brass fitting on a short pipe
+small round stone planter with a low shrub at the far entrance | 0.35 | 0.02-0.06 | pale concrete bowl
+small green hose bib on the far side wall | 0.3 | 0.02-0.06 | short pipe at the base
+small yellow concrete wheel stop at the far edge of the lot | 0.35 | 0.02-0.06 | plain low block
+small gray conduit box on the far wall at the back | 0.3 | 0.02-0.06 | plain steel case

@@ -1,15 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-worn dirt-and-gravel ground | 1.0 | 0.4-0.9 | scuffed mixed surface
-flagstone stepping pavers | 0.7 | 0.3-0.6 | flat irregular slabs
-soft mossy patch | 0.65 | 0.2-0.4 | spongy green growth
-spilled bag of potting soil | 0.85 | 0.05-0.2 | dark earthy crumb
-clay pot fragments | 0.7 | 0.05-0.15 | broken terracotta shards
-woven trug basket on ground | 0.85 | 0.1-0.25 | natural reed weave
-work boots beside doorway | 0.85 | 0.05-0.15 | scuffed leather pair
-garden glove pair | 0.85 | 0.05-0.1 | dirty fabric pair
-small envelope on bench | 0.7 | 0.05-0.1 | small envelope with a vegetable picture
-fallen leaves on threshold | 0.7 | 0.05-0.15 | dry brown scatter
-small mound of mulch | 0.65 | 0.05-0.2 | dark fibrous pile
-trowel stuck in earth | 0.75 | 0.05-0.1 | metal blade in dirt
+a short natural green grass lawn | 1.0 | 0.1-0.4 | fine grass blades, natural soft color
+a short natural lawn of deep green grass | 0.8 | 0.1-0.4 | fine grass blades, natural soft color
+a short natural lawn of soft medium green grass | 0.75 | 0.1-0.4 | fine grass blades, natural soft color
+a smooth poured concrete pad | 0.7 | 0.1-0.4 | matte and even
+a plain flat packed light-brown earth ground | 0.6 | 0.1-0.4 | matte and even
+a short natural lawn of light green grass | 0.6 | 0.1-0.4 | fine grass blades, natural soft color
+a plain smooth light gray concrete slab | 0.5 | 0.1-0.4 | matte and even
+a plain bare dark soil ground | 0.5 | 0.1-0.4 | matte and even
+a plain wide-plank wooden landing floor | 0.45 | 0.1-0.4 | matte and even
+a short natural lawn of lime green grass | 0.45 | 0.1-0.4 | fine grass blades, natural soft color
+a short natural lawn of olive green grass | 0.4 | 0.1-0.4 | fine grass blades, natural soft color
+a plain smooth buff concrete patio | 0.4 | 0.1-0.4 | matte and even

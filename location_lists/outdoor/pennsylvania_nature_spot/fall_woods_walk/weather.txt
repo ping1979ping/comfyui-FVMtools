@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-clear cold air | 0.8 | - | -
-cold air with breath visible | 0.6 | - | -
-gusty wind stripping the leaves | 0.6 | - | -
-flat overcast sky | 0.8 | - | -
-light drizzle in the air | 0.5 | - | -
-damp leaf-mulch smell after rain | 0.55 | - | -
-first flurries not sticking | 0.4 | - | -
-raw wind with a wet edge | 0.45 | - | -
-thin fog burning off late | 0.45 | - | -
-still cold air in the hollow | 0.5 | - | -
+crisp clear autumn day with a pale blue sky | 1.0 | - | -
+grey overcast sky with still air | 0.85 | - | -
+light mist hanging between the trunks | 0.6 | - | -
+cool fog lifting off the hollow | 0.5 | - | -
+light drizzle under a low grey sky | 0.4 | - | -
+a few white clouds drifting over | 0.6 | - | -
+clear cold morning with pale low sun | 0.55 | - | -
+breezy day with high thin cloud | 0.5 | - | -
+hazy low sun after rain | 0.45 | - | -
+damp cool air after overnight rain | 0.5 | - | -
+still grey afternoon with soft shade | 0.6 | - | -

@@ -1,14 +1,16 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-last skier's tracks setting up | 0.55 | 0.15-0.35 | frozen curves
-sled path worn beside the run | 0.45 | 0.1-0.25 | walkers' groove
-snow cat road switchbacking wide | 0.4 | 0.15-0.3 | packed lane
-powder pillows on the boundary pines | 0.5 | 0.15-0.3 | loaded branches
-lift terminal humming to itself | 0.4 | 0.1-0.2 | idle machinery
-ptarmigan tracks lacing the fence line | 0.35 | 0.03-0.1 | bird stitching
-wind lifting spindrift off the crest | 0.5 | 0.1-0.3 | smoking ridge line
-snowbank seats carved by waiting | 0.4 | 0.05-0.15 | slumped couches
-last chair rocking as it stops | 0.4 | 0.05-0.15 | pendulum settling
-maintenance ski-doo parked | 0.35 | 0.05-0.15 | key-in trust
-moon rising over the far shoulder | 0.4 | 0.1-0.3 | cold lamp
+a chairlift tower with empty chairs hanging a few meters back on the left | 0.9 | 0.2-0.5 | grey steel tower and a dark cable
+a line of slim snow guns along the run's edge a few meters back | 0.7 | 0.2-0.5 | white poles on short stands
+a low snow bank along the slope edge a few meters back | 0.85 | 0.2-0.5 | smooth and wind-packed
+an orange safety fence along the slope edge a few meters back on the right | 0.7 | 0.2-0.5 | low mesh on thin posts
+a row of bare maples at the edge of the run a few meters back | 0.8 | 0.2-0.5 | dark trunks with snow in the forks
+a stand of snow-laden hemlocks a few meters back on the left | 0.8 | 0.2-0.5 | dark green boughs under white
+a small closed timber hut a few meters back on the right | 0.55 | 0.2-0.5 | snow on the roof, dark door
+a gentle rise of untouched snow a few meters back | 0.7 | 0.2-0.5 | smooth rolling white
+snow-capped boulders a few meters back on the left | 0.5 | 0.2-0.5 | rounded grey stones under white caps
+a lift cable with empty chairs crossing high above the slope a few meters back | 0.55 | 0.2-0.5 | dark line against the sky
+a weathered post-and-rail fence a few meters back on the left | 0.5 | 0.2-0.5 | grey rails with snow on top
+a flat white clearing between the trees a few meters back | 0.6 | 0.2-0.5 | even and open
+a low green maintenance shed a few meters back on the right | 0.45 | 0.2-0.5 | closed doors, snow on the roof

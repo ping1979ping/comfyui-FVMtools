@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-towels spread on warm rocks | 0.6 | 0.1-0.3 | drying flat
-cooler wedged in the shallows | 0.5 | 0.05-0.2 | cans cooling in the current
-kids stacking a stone dam | 0.45 | 0.1-0.3 | busy engineering
-water shoes drying on a log | 0.5 | 0.05-0.15 | neoprene pairs
-folding chair in the shallows | 0.45 | 0.1-0.25 | legs sunk in gravel
-minnow bucket at the edge | 0.35 | 0.03-0.1 | dip net across
-dog shaking off mid-bank | 0.45 | 0.05-0.2 | spray halo
-inner tube beached on the bar | 0.4 | 0.1-0.25 | patched vinyl
-fishing rod propped in a forked stick | 0.4 | 0.05-0.15 | line in the pool
-rope swing over the hole | 0.4 | 0.05-0.2 | knotted polypro
-driftwood pile at the bend | 0.45 | 0.1-0.3 | bleached tangle
+a flat grey shale ledge a few meters back along the creek | 0.8 | 0.2-0.5 | broad plates of rock stepping into the water
+a driftwood log a few meters back on the left | 0.5 | 0.2-0.5 | bleached grey trunk lying along the bank
+tall ferns a few meters back on the left | 0.55 | 0.2-0.5 | bright green fronds at knee height
+jewelweed and goldenrod a few meters back on the right | 0.4 | 0.2-0.5 | orange and yellow wildflowers among tall green stems
+a rounded boulder a few meters back at the edge of the creek | 0.55 | 0.2-0.5 | pale grey stone, sun on its top
+a young sycamore a few meters back on the right | 0.5 | 0.2-0.5 | slim mottled trunk, broad leaves
+a grass bank sloping up a few meters back on the right | 0.6 | 0.2-0.5 | even green grass under tall trunks
+a gravel bar a few meters back in the creek | 0.5 | 0.2-0.5 | flat pale stones with water running around them
+a clump of river birch a few meters back on the left | 0.5 | 0.2-0.5 | peeling copper bark, leafy crowns
+a fallen tree a few meters back across the shallows | 0.4 | 0.2-0.5 | grey trunk half in the water, leaves still green
+flat stepping stones a few meters back across the creek | 0.4 | 0.2-0.5 | pale grey slabs just above the water
+a narrow dirt path winding along the bank a few meters back | 0.45 | 0.2-0.5 | packed earth between ferns and trunks
+a bed of cattails a few meters back on the right | 0.35 | 0.2-0.5 | tall brown heads on green stems at the edge of the creek
+a flat sunlit rock a few meters back at the center | 0.45 | 0.2-0.5 | warm grey stone sloping into the creek

@@ -1,15 +1,15 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-three-story garden apartment building | 0.95 | 0.5-1.0 | beige vinyl-sided low-rise
-back-of-house brick apartment wall | 0.7 | 0.4-0.8 | scuffed red brick
-neighboring apartment block | 0.7 | 0.3-0.6 | identical low-rise building
-woodland buffer at lot edge | 0.55 | 0.2-0.5 | scraggly tree line
-asphalt drive lane between buildings | 0.85 | 0.3-0.6 | cracked dark pavement
-chain-link fence at property edge | 0.6 | 0.2-0.5 | rusty woven mesh
-laundry room exterior door | 0.4 | 0.2-0.4 | beige steel door
-pool fence in distance | 0.3 | 0.1-0.3 | white aluminum railing
-bare patch of mowed lawn | 0.65 | 0.2-0.4 | tired thin grass
-distant playground equipment | 0.35 | 0.1-0.3 | faded plastic structures
-overhead utility pole and wires | 0.65 | 0.2-0.4 | wooden pole with lines
-parking lot extending behind | 0.7 | 0.3-0.6 | asphalt with painted lines
+the rear wall of the apartment building | 1.0 | 0.6-1.0 | a three-storey beige vinyl-sided garden apartment block across the whole width of the image, rows of identical windows with closed blinds
+a red brick apartment building across the lot | 0.8 | 0.6-1.0 | red brick walls and white-trimmed windows across the whole width of the image, concrete stoops with metal railings on the left
+the far side of the parking court | 0.75 | 0.6-1.0 | a second low-rise apartment block with gray siding and a dark shingled roof across the whole width of the image, parked cars in front of it
+the wooded edge behind the complex | 0.6 | 0.6-1.0 | a dense tree line of oaks and pines behind a low chain-link fence across the whole width of the image, a hazy sky above
+the corner where two apartment wings meet | 0.6 | 0.6-1.0 | two beige wings joined at a right angle far ahead, a covered breezeway between them and a lamp post at the corner
+a long row of detached garages | 0.55 | 0.6-1.0 | white roll-up doors under a low gabled roof across the whole width of the image, a grassy slope behind on the right
+the service drive behind the buildings | 0.55 | 0.6-1.0 | a two-lane asphalt drive along the back of the complex, a grass embankment and tall utility poles beyond it
+the hillside above the complex | 0.45 | 0.6-1.0 | a green grassy hillside rising behind the rooftops across the whole width of the image, a few evergreens along the top
+the stone-and-siding apartment wing | 0.6 | 0.6-1.0 | gray fieldstone base and tan siding above, two floors of windows and a balcony on the left across the whole width of the image
+the quiet back lot of the complex | 0.6 | 0.6-1.0 | a wide asphalt lot with a low brick apartment building far behind and a line of young maples along its edge on the right
+the end of the building row | 0.5 | 0.6-1.0 | identical townhouse-style units with dark roofs stepping away toward the far end of the lot, a pale sky above
+the neighboring apartment block beyond the fence | 0.5 | 0.6-1.0 | a taller brick building with a flat roof and metal balconies across the whole width of the image, behind a wooden privacy fence

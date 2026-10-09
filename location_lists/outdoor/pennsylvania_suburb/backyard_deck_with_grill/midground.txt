@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-grill lid open with smoke | 0.7 | 0.15-0.35 | flare-up haze
-cooler with the lid ajar | 0.6 | 0.1-0.25 | ice and cans
-citronella torches staked | 0.45 | 0.05-0.2 | bamboo poles
-kiddie pool on the lawn | 0.45 | 0.15-0.3 | grass clippings floating
-lawn chairs unfolded in a loose circle | 0.6 | 0.2-0.4 | woven straps
-bird feeder on a shepherd hook | 0.5 | 0.05-0.15 | squirrel-bent pole
-tomato plants in buckets | 0.5 | 0.1-0.25 | staked and tied
-sprinkler mid-arc | 0.45 | 0.1-0.3 | ticking spray
-dog patrolling the fence line | 0.45 | 0.1-0.25 | nose down
-bug zapper hanging from the eave | 0.4 | 0.03-0.1 | violet glow
-trampoline with a safety net | 0.45 | 0.2-0.4 | anchor straps
+a closed charcoal grill a few meters back on the right | 0.9 | 0.2-0.5 | black kettle shape with the lid shut, cold and unused
+a covered gas grill a few meters back on the left | 0.7 | 0.2-0.5 | dark gray cover over a cart, nothing cooking
+two empty plastic deck chairs a few meters back on the left | 0.7 | 0.2-0.5 | white resin, set side by side
+an empty round patio table with a closed umbrella a few meters back | 0.6 | 0.2-0.5 | dark metal top, pole upright
+a row of terracotta planters along the rail a few meters back | 0.5 | 0.2-0.5 | green shrubs in each
+an empty picnic table on the lawn a few meters back on the right | 0.45 | 0.2-0.5 | weathered wood benches both sides
+a gray storage shed at the side of the yard a few meters back | 0.5 | 0.2-0.5 | vinyl walls with a closed door
+a swing set on the lawn a few meters back on the right | 0.4 | 0.2-0.5 | green metal frame, swings hanging still
+a stack of firewood a few meters back along the fence | 0.3 | 0.2-0.5 | neat split logs under a gray tarp
+a low deck railing a few meters back on the left | 0.7 | 0.2-0.5 | white balusters with a flat top rail
+a set of wooden steps down to the lawn a few meters back | 0.6 | 0.2-0.5 | three plain treads
+a garden hose on a reel at the house wall a few meters back | 0.3 | 0.2-0.5 | green hose, coiled
+a black bicycle leaning on the fence a few meters back on the left | 0.3 | 0.2-0.5 | parked, standing alone
+a large gray cooler on the deck a few meters back | 0.35 | 0.2-0.5 | closed lid, cold and still

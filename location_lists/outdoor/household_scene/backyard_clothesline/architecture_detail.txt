@@ -1,13 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-T-bar clothesline crossarm | 1.0 | 0.2-0.5 | painted metal cross
-turn-tightener at post | 0.85 | 0.05-0.15 | small crank fitting
-pulley clothesline wheel | 0.7 | 0.05-0.15 | small mounted pulley
-fence post cap profile | 0.85 | 0.1-0.3 | painted shaped top
-gravel path edging strip | 0.7 | 0.1-0.3 | metal border line
-fence panel batten board | 0.85 | 0.4-0.8 | vertical timber slat
-small garden gate hinge | 0.7 | 0.05-0.15 | painted iron joint
-backyard string lights | 0.65 | 0.2-0.5 | hung bulb strand
-prop stick notched fork | 0.55 | 0.05-0.15 | crude timber Y
-laundry-line tension turnbuckle | 0.65 | 0.05-0.15 | small painted hardware
+a white downspout down the back corner of the far house on the left | 0.6 | 0.05-0.2 | slim aluminum pipe
+a small concrete step at the far back door | 0.5 | 0.05-0.2 | plain gray slab
+a wall-mounted outdoor light beside the far back door | 0.5 | 0.05-0.2 | small black fixture
+white-trimmed windows along the upper floor of the far house | 0.55 | 0.05-0.2 | thin painted frames
+a gray shingled roof edge along the top of the far house | 0.5 | 0.05-0.2 | straight dark line
+a brick chimney above the roofline on the left | 0.4 | 0.05-0.2 | stone-capped
+cedar fence posts with flat caps along the far fence | 0.55 | 0.05-0.2 | evenly spaced
+a closed wooden gate in the far fence on the right | 0.45 | 0.05-0.2 | plain boards with a black latch
+a thin metal handrail beside the far back steps | 0.4 | 0.05-0.2 | black painted steel
+white soffit boards under the far roof edge | 0.4 | 0.05-0.2 | narrow even boards
+a basement window low on the far house wall | 0.35 | 0.05-0.2 | small dark rectangle
+a gable vent high on the far wall on the right | 0.35 | 0.05-0.2 | white louvered triangle

@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-backlit drive-thru board{| headed "{MENU|ORDER HERE}"} of glowing combo food photos | 1.0 | 0.3-0.6 | illuminated panel with combo photos
-smaller preview board of food photos | 0.7 | 0.2-0.4 | second smaller illuminated panel
-order-speaker post with mic | 0.95 | 0.1-0.3 | dirty plastic speaker housing
-curving drive-thru lane | 0.95 | 0.3-0.6 | asphalt with painted arrows
-drive-thru directional arrow paint | 0.9 | 0.2-0.5 | faded yellow arrow on asphalt
-white painted lane stripe | 0.85 | 0.2-0.5 | scuffed lane marker
-height-restriction bar at entry | 0.55 | 0.1-0.3 | metal bar with chains
-yellow concrete bollards at speaker | 0.7 | 0.1-0.3 | scuffed painted posts
-pickup window with sliding glass | 0.7 | 0.1-0.3 | small drive-thru window
-trash can next to speaker | 0.55 | 0.05-0.15 | dented can with a plain color band
-landscape boulder near lane | 0.4 | 0.1-0.2 | decorative gray stone
-yellow no-parking curb stripe | 0.6 | 0.1-0.3 | faded curb paint
+an empty drive-thru lane curving along the building a few meters back | 1.0 | 0.2-0.5 | smooth asphalt bordered by low concrete curbs
+a single unoccupied sedan parked in the lane a few meters back on the left | 0.7 | 0.2-0.5 | dark silver with dark windows
+a covered pickup window with a flat canopy a few meters back on the right | 0.85 | 0.2-0.5 | closed glass window, slim posts
+a gray steel order post beside the lane a few meters back on the left | 0.65 | 0.2-0.5 | dark blank panel on a short pole
+a row of parked empty cars along the far edge of the lot a few meters back | 0.6 | 0.2-0.5 | unoccupied, parked nose-in
+a curbed island with low shrubs between the lane and the lot a few meters back | 0.65 | 0.2-0.5 | mulched bed with small evergreens
+a tall light pole with two lamp heads in the lot a few meters back on the right | 0.55 | 0.2-0.5 | dark galvanized steel
+a black steel trash receptacle with a closed lid beside the lane a few meters back | 0.5 | 0.2-0.5 | round and plain on a concrete pad
+an unoccupied white pickup truck parked beside the building a few meters back | 0.45 | 0.2-0.5 | windows dark, parked straight
+a short row of yellow steel bollards in front of the wall a few meters back | 0.45 | 0.2-0.5 | evenly spaced on the pavement
+a tan block dumpster enclosure at the back of the lot a few meters back on the right | 0.5 | 0.2-0.5 | steel gates closed
+a low brick planter along the building wall a few meters back on the left | 0.45 | 0.2-0.5 | filled with low green shrubs
+two unoccupied cars waiting nose to tail in the lane a few meters back | 0.4 | 0.2-0.5 | dark windows, engines off
+empty round patio tables beside the building a few meters back on the left | 0.4 | 0.2-0.5 | pale metal tops, chairs pushed in

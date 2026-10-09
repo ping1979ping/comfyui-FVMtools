@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-trekking poles leaned on a bumper | 0.5 | 0.02-0.08 | cork grips
-water bottles lined on a tailgate | 0.55 | 0.02-0.08 | pre-hike ritual
-trail mix bag passed around | 0.5 | 0.02-0.08 | m&m mining
-paper map folded to the section | 0.45 | 0.02-0.08 | crease-worn
-dog leash clipped to a harness | 0.5 | 0.02-0.06 | excited strain
-muddy boots swapped at the car | 0.5 | 0.03-0.1 | sock-footed hop
-granola wrapper pocketed | 0.4 | 0.02-0.05 | pack-it-out habit
-first aid kit in a dry bag | 0.4 | 0.02-0.06 | zipped pouch
-camera with a zoom slung across | 0.4 | 0.02-0.08 | bird hopes
-tick spray applied at the ankles | 0.45 | 0.02-0.08 | sock cuff spritz
-thermos of coffee on the rail | 0.4 | 0.02-0.06 | steam curl
+a small dark green trash bin at the far edge of the lot | 0.5 | 0.02-0.06 | plain steel
+a small bundle of firewood by the far pavilion | 0.4 | 0.02-0.06 | wrapped in clear plastic
+a small water spigot post at the far corner of the lot | 0.35 | 0.02-0.06 | slim grey pipe
+a small orange traffic cone at the far end of the gate | 0.35 | 0.02-0.06 | plain cone
+a small log pile at the back of the far pavilion | 0.4 | 0.02-0.06 | grey split wood
+a small birdhouse on a far post | 0.35 | 0.02-0.06 | plain brown wood
+small wildflowers at the far edge of the meadow | 0.4 | 0.02-0.06 | yellow and white blooms
+a small stone cairn on a far boulder | 0.3 | 0.02-0.06 | three flat stones
+a small green recycling bin at the far end of the lot | 0.4 | 0.02-0.06 | plain lid
+a thin steel post with a yellow cap at the far end of the lot | 0.35 | 0.02-0.06 | slim and short
+a small wooden bird feeder on a far post | 0.3 | 0.02-0.06 | plain grey wood
+a small grey boulder at the far edge of the lot | 0.4 | 0.02-0.06 | rounded and plain

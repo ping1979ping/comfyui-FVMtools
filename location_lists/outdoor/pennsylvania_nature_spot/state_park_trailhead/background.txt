@@ -1,14 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-gravel parking lot at the trailhead | 1.0 | 0.4-0.8 | packed limestone chips
-wooden display board with a simple route diagram | 0.85 | 0.15-0.35 | plexiglass over paper
-trail opening into the woods | 0.8 | 0.3-0.6 | worn dirt mouth
-hardwood hillside rising behind | 0.7 | 0.3-0.6 | oak and maple canopy
-split-rail fence along the lot | 0.6 | 0.15-0.4 | greyed cedar rails
-pit toilet building | 0.45 | 0.1-0.25 | brown board-and-batten
-wooden park entrance sign{| reading "{STATE PARK|WELCOME}"} | 0.5 | 0.1-0.25 | routed yellow edge
-picnic pavilion in the trees | 0.5 | 0.2-0.4 | green steel roof
-creek heard below the lot | 0.45 | 0.1-0.3 | glimpsed riffle
-blaze marks on the first trees | 0.55 | 0.05-0.15 | painted rectangles
-gate arm for after-hours | 0.45 | 0.05-0.15 | padlocked pipe
+a wooded hillside rising behind the trailhead | 1.0 | 0.6-1.0 | mixed oak and maple across the whole width of the image, a pale sky above the ridge line
+the path opening into the woods far back in the middle | 0.85 | 0.6-1.0 | a narrow dirt path between tall trunks, dim depth beyond
+an empty parking area across the far side | 0.7 | 0.6-1.0 | pale packed stone edged by a split-rail fence, trees rising behind it across the whole width of the image
+a forested ridge across the valley | 0.6 | 0.6-1.0 | layered treetops across the whole width of the image, pale haze between the ridges
+a small timber picnic pavilion far back on the right | 0.55 | 0.6-1.0 | a green metal roof on square posts, empty tables beneath it, tall oaks behind
+a stand of tall white pines along the far edge | 0.5 | 0.6-1.0 | straight trunks and feathery dark crowns across the whole width of the image
+a creek valley dropping away far beyond the lot | 0.5 | 0.6-1.0 | treetops in the hollow below, a wooded far bank rising across the whole width of the image
+a meadow edge far behind the lot | 0.45 | 0.6-1.0 | a strip of tall grass with a tree line behind it across the whole width of the image, a pale sky above
+a dense wall of mountain laurel along the far side | 0.5 | 0.6-1.0 | glossy dark shrubs below tall trunks across the whole width of the image
+a rock outcrop on the hillside on the left | 0.4 | 0.6-1.0 | pale grey ledges among the trunks, tall oaks above them
+a brown timber restroom building far back on the left | 0.4 | 0.6-1.0 | a low plain board-and-batten building with a green roof, trees around it
+a steep wooded bank rising on the right | 0.5 | 0.6-1.0 | tall hardwoods across the right half of the image, dark trunks, dense undergrowth below
+a hemlock grove far back in the shade | 0.45 | 0.6-1.0 | dark evergreen boughs across the whole width of the image, soft light beneath
+a forest road curving into the trees far back on the left | 0.35 | 0.6-1.0 | a pale gravel track between dark trunks

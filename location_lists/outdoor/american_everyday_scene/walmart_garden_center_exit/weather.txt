@@ -1,13 +1,13 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-humid summer haze | 0.8 | - | -
-clear hot dry afternoon | 0.75 | - | -
-flat gray overcast | 0.8 | - | -
-muggy post-rain | 0.55 | - | -
-windy with blown sale flags | 0.55 | - | -
-dirty November sky | 0.55 | - | -
-warm spring damp | 0.55 | - | -
-cold dry winter glare | 0.45 | - | -
-hazy pollen-heavy spring | 0.5 | - | -
-light summer shower over potted plants | 0.45 | - | -
+clear blue sky with a light breeze | 1.0 | - | -
+a few white clouds in a blue sky | 0.85 | - | -
+partly cloudy sky with soft shade | 0.75 | - | -
+overcast day under a flat gray sky | 0.6 | - | -
+hazy humid summer afternoon | 0.55 | - | -
+mild spring day with fresh green leaves on the trees | 0.7 | - | -
+crisp autumn day with orange leaves on the far trees | 0.5 | - | -
+clear cold winter day with bare trees | 0.4 | - | -
+pale high cloud with diffuse sunlight | 0.5 | - | -
+light steady rain under a gray sky | 0.35 | - | -

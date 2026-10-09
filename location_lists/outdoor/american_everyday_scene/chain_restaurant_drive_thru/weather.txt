@@ -1,13 +1,14 @@
 # element: weather
 # format: name | probability | coverage_range | texture
 
-humid summer haze | 0.8 | - | -
-flat gray overcast | 0.85 | - | -
-clear hot dry day | 0.7 | - | -
-light drizzle on pavement | 0.6 | - | -
-dirty November sky | 0.65 | - | -
-windy with blowing wrappers | 0.55 | - | -
-muggy storm aftermath | 0.55 | - | -
-slush-melt afternoon | 0.4 | - | -
-cold dry winter glare | 0.5 | - | -
-heavy rain on the speaker lane | 0.4 | - | -
+clear warm day with a light breeze | 1.0 | - | -
+bright blue sky with a few white clouds | 0.85 | - | -
+partly cloudy sky with soft shade | 0.75 | - | -
+overcast day under a low gray sky | 0.6 | - | -
+hazy humid summer afternoon | 0.55 | - | -
+cool crisp autumn day under a pale sky | 0.6 | - | -
+mild spring day with fresh green grass | 0.65 | - | -
+light drizzle under a gray sky with damp pavement | 0.4 | - | -
+clear cold winter day with bare trees | 0.45 | - | -
+light snow dusting the grass under a pale sky | 0.35 | - | -
+gentle haze after rain | 0.45 | - | -

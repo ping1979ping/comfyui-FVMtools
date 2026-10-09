@@ -1,15 +1,15 @@
 # element: foreground_element
 # format: name | probability | coverage_range | texture
 
-painted porch plank flooring | 1.0 | 0.5-0.9 | weathered painted boards
-woven door mat | 0.95 | 0.1-0.3 | natural coir mat{| with the word "{WELCOME|HOME}"}
-porch step weather stain | 0.85 | 0.2-0.5 | softly worn paint
-clay flower pot row | 0.95 | 0.2-0.4 | terracotta tiered planters
-cushioned chair pad | 0.85 | 0.05-0.2 | tied seat cushion
-basket of pine cones | 0.6 | 0.05-0.15 | woven natural tray
-folded throw blanket | 0.85 | 0.05-0.2 | softly draped cloth
-small step beside swing | 0.7 | 0.05-0.15 | painted timber stool
-fallen leaves on plank | 0.75 | 0.05-0.2 | dry colorful scatter
-ceramic dog water bowl | 0.6 | 0.05-0.1 | rounded glazed dish
-folded newsprint on chair | 0.65 | 0.05-0.15 | spread paper sheets
-glass pitcher of lemonade | 0.7 | 0.05-0.15 | clear handled vessel
+a plain wide-plank wooden porch floor | 1.0 | 0.1-0.4 | smooth and even
+a plain wide-plank wooden porch floor in warm medium brown | 0.9 | 0.1-0.4 | matte and even
+a plain wide-plank wooden porch floor in honey tone | 0.8 | 0.1-0.4 | smooth and even
+a plain wide-plank wooden porch floor in dark brown | 0.7 | 0.1-0.4 | matte and even
+a plain wide-plank wooden porch floor in pale gray-brown | 0.6 | 0.1-0.4 | matte and even
+a plain wide-plank wooden porch floor in soft reddish brown | 0.55 | 0.1-0.4 | smooth and even
+a plain flat gray concrete porch floor | 0.6 | 0.1-0.4 | matte and even
+a plain smooth poured concrete porch slab | 0.5 | 0.1-0.4 | matte and even
+a plain composite porch deck floor in soft gray | 0.45 | 0.1-0.4 | matte and even
+a plain wide-plank wooden floor in light oak tone | 0.5 | 0.1-0.4 | smooth and even
+a plain wide-plank porch floor in medium walnut tone | 0.5 | 0.1-0.4 | matte and even
+a plain smooth buff concrete porch floor | 0.4 | 0.1-0.4 | matte and even

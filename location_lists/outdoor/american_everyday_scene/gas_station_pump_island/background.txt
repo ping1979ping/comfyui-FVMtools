@@ -1,15 +1,17 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-Sheetz convenience store facade | 0.8 | 0.4-0.8 | beige stucco with red trim
-Wawa storefront | 0.7 | 0.4-0.8 | white siding with a yellow accent band and sign reading "WAWA"
-generic gas station mini-mart | 0.85 | 0.4-0.8 | flat-roofed cinderblock building
-illuminated fuel pylon sign{| with "{GAS|FUEL|OPEN}"} | 0.9 | 0.2-0.5 | tall plastic sign with glowing colored bands
-overhead pump canopy with a colored stripe | 1.0 | 0.5-1.0 | painted sheet metal roof
-adjacent strip mall in distance | 0.5 | 0.3-0.6 | low commercial silhouette
-chain-link fence at lot edge | 0.55 | 0.2-0.5 | rusting woven steel
-fast food restaurant next door | 0.55 | 0.3-0.6 | colorful drive-thru building
-billboard with a large smiling portrait | 0.45 | 0.2-0.5 | weathered vinyl print with big color blocks
-state highway with passing cars | 0.6 | 0.3-0.6 | asphalt road with traffic
-tree line behind the lot | 0.4 | 0.2-0.5 | scraggly mixed deciduous
-empty grass strip with utility pole | 0.55 | 0.2-0.5 | tired roadside lawn
+the convenience store building across the lot | 1.0 | 0.6-1.0 | a low flat-roofed brick and glass building with a wide empty forecourt in front, across the whole width of the image
+a long flat white fuel canopy overhead | 0.9 | 0.6-1.0 | a wide canopy on slim steel columns stretching across the whole width of the image, rows of unoccupied pumps beneath it
+the far edge of the station lot | 0.8 | 0.6-1.0 | a belt of mature oaks and maples behind a low curb across the whole width of the image, a pale sky above
+the road beyond the pump island | 0.8 | 0.6-1.0 | a two-lane road with a grass verge and utility poles, a wooded hill far behind on the left
+the station seen from across the lot | 0.85 | 0.6-1.0 | a low tan block building at the far end of the lot, a wide canopy over the pump rows on the right
+the far corner of the station lot | 0.65 | 0.6-1.0 | a stand of tall trees and a utility pole beyond a low curb, a red brick building far behind on the left
+a wide asphalt apron behind the pumps | 0.7 | 0.6-1.0 | empty pavement running far back to a tan building across the whole width of the image, a few parked cars at its far edge
+the open farmland beyond the station | 0.55 | 0.6-1.0 | pale fields and a distant barn on the right, utility poles along the edge of the road
+the canopy seen from the side | 0.6 | 0.6-1.0 | a long flat roof edge across the top of the image, white columns receding far back to the store on the left
+the strip of shops beyond the road | 0.6 | 0.6-1.0 | low one-storey brick buildings and a tall tree line far across the road, across the whole width of the image
+the highway embankment beyond the station | 0.5 | 0.6-1.0 | a grassy slope with a guardrail and a long row of trees far back across the whole width of the image
+the car wash building at the far end of the lot | 0.5 | 0.6-1.0 | a low tan block building with a closed roll-up door on the right, a row of trees behind it
+the forested hillside behind the station | 0.55 | 0.6-1.0 | a wooded ridge rising above a low roofline across the whole width of the image, a pale sky above
+the side street at the edge of the station | 0.5 | 0.6-1.0 | a quiet road with a traffic light on a mast arm at the far corner, brick houses far behind

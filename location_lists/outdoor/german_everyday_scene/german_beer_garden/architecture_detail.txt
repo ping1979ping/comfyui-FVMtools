@@ -1,15 +1,13 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-blue-and-white bunting | 0.7 | 0.0-0.1 | diamond-patterned flags
-wooden pergola roof | 0.5 | 0.0-0.15 | vine-tangled slat frame
-cast-iron lamp post | 0.5 | 0.0-0.1 | black curved fixture
-painted brewery sign | 0.6 | 0.0-0.1 | hanging oval board with painted hop emblem{| and the word "{BIER|PROST}"}
-wooden window shutters | 0.45 | 0.0-0.1 | green slatted panels
-timber serving-hatch frame | 0.5 | 0.0-0.1 | carved lintel above kiosk
-stone fountain basin | 0.3 | 0.0-0.15 | mossy bowl with trickle
-wrought-iron garden gate | 0.4 | 0.0-0.1 | scrolled black bars
-tiled roof edge | 0.45 | 0.0-0.1 | terracotta overhang
-hanging flower basket | 0.5 | 0.0-0.1 | red geraniums in wicker
-tree-ring wooden stump seat | 0.3 | 0.0-0.1 | cut round log
-small enamel pictogram plate | 0.3 | 0.0-0.05 | small metal plate with simple pictogram icons
+a small white lamp on a wooden post far along the garden edge | 0.5 | 0.05-0.2 | unlit
+a string of small unlit bulbs high up between the far trees | 0.5 | 0.05-0.2 | thin wire
+a small wooden shutter on the far brewery wall | 0.5 | 0.05-0.2 | dark green, closed
+a thin copper downpipe along the far facade | 0.4 | 0.05-0.2 | green patina
+a narrow stone gatepost at the far entrance | 0.4 | 0.05-0.2 | grey sandstone
+a small dormer window in the far red roof | 0.45 | 0.05-0.2 | white frame
+a slim iron lamp bracket on the far wall | 0.4 | 0.05-0.2 | black, unlit
+a wide wooden gate far at the back of the garden | 0.4 | 0.05-0.2 | closed
+a thin weathervane on the far gable | 0.35 | 0.05-0.2 | dark silhouette
+a small arched window in the far whitewashed wall | 0.4 | 0.05-0.2 | dark glass

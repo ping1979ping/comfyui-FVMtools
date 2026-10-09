@@ -1,14 +1,16 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-row of shop fronts | 1.0 | 0.5-0.9 | mixed awnings and window displays
-paved pedestrian street | 0.95 | 0.4-0.8 | patterned block paving
-church tower further down | 0.45 | 0.15-0.4 | weathered stone
-upper floors above the shops | 0.7 | 0.3-0.6 | rendered facades with windows
-bakery window with trays | 0.5 | 0.2-0.5 | lit glass front
-pharmacy sign projecting out | 0.45 | 0.1-0.3 | illuminated green cross
-crowd further along the street | 0.6 | 0.2-0.5 | blurred coats
-department store entrance | 0.5 | 0.25-0.55 | glass doors
-street narrowing into an alley | 0.4 | 0.2-0.5 | shaded gap
-awnings pulled out over the paving | 0.5 | 0.2-0.5 | striped canvas
-banner strung across the street | 0.35 | 0.1-0.3 | plain colored vinyl with simple stripes
+the shop fronts along the far side of the car-free shopping street | 1.0 | 0.6-1.0 | a continuous row of four-storey rendered buildings with plain dark shop windows across the whole width of the image
+the car-free shopping street running straight ahead | 0.85 | 0.6-1.0 | a wide car-free street between tall pale buildings, a church tower rising far down on the left
+the old town buildings at the end of the street | 0.7 | 0.6-1.0 | narrow gabled houses in cream, ochre and grey far at the end of the street, a pale sky above the roofs
+the department store facade across the street | 0.55 | 0.6-1.0 | a broad stone and glass facade with a flat roof across the whole width of the image
+the half-timbered houses far down the street | 0.55 | 0.6-1.0 | dark beams and white plaster in a row of steep gables, red roofs above
+the plane trees along the street | 0.6 | 0.6-1.0 | large trees in rows on both sides, tall facades behind the trunks across the whole width of the image
+the market square at the far end | 0.5 | 0.6-1.0 | an open paved square with a town hall with a stepped gable far ahead
+the corner building where the street bends right | 0.5 | 0.6-1.0 | a rounded pale stone corner building at the far bend, tall windows
+the long row of upper floors above the shops | 0.7 | 0.6-1.0 | rendered facades with identical tall windows and a tiled roofline across the whole width of the image
+the cathedral rising above the roofs far behind | 0.45 | 0.6-1.0 | a grey sandstone cathedral with a pair of towers over the rooftops, a hazy sky
+the covered arcade along the far side | 0.4 | 0.6-1.0 | a stone arcade with round arches across the whole width of the image, dark shop windows behind
+the street opening onto a wide plaza far ahead | 0.45 | 0.6-1.0 | pale paving, a few trees and a round fountain basin far ahead between tall facades
+the red brick shopping arcade facade | 0.4 | 0.6-1.0 | a brick facade with steel-framed windows across the whole width of the image, a glass roof edge above

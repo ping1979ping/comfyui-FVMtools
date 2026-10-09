@@ -1,13 +1,14 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-bin slat front planks | 0.95 | 0.3-0.6 | weathered horizontal boards
-bin lid hinge hardware | 0.85 | 0.05-0.15 | painted iron joint
-bin corner post profile | 0.95 | 0.2-0.5 | rough timber column
-fence top cap board | 0.85 | 0.1-0.3 | painted shaped edge
-wire mesh frame staples | 0.7 | 0.05-0.15 | small metal fasteners
-exposed ground hardware-cloth | 0.6 | 0.1-0.3 | wire base layer
-bin removable front slat | 0.85 | 0.1-0.3 | slide-in board
-adjacent fence batten board | 0.85 | 0.4-0.8 | vertical timber slat
-gutter downspout end | 0.65 | 0.1-0.3 | painted metal pipe
-small painted bin marker | 0.55 | 0.05-0.15 | weathered wood placard with a painted leaf symbol
+a wooden fence post with a flat cap at the far corner | 0.6 | 0.05-0.2 | square gray post
+a hinged wooden lid on top of the far bin | 0.5 | 0.05-0.2 | pale boards with black hinges
+a wire mesh panel on the front of the far bin | 0.45 | 0.05-0.2 | galvanized squares
+a hose bibb on the far garage wall | 0.4 | 0.05-0.2 | small brass spigot
+a closed wooden gate in the far fence on the left | 0.45 | 0.05-0.2 | plain boards with a black latch
+a gutter and downspout at the far garage corner | 0.4 | 0.05-0.2 | slim white pipe
+a trellis panel on the far fence at the right | 0.4 | 0.05-0.2 | thin crossed laths
+cedar fence boards along the back | 0.6 | 0.05-0.2 | tall evenly spaced slats
+a stone edging along the far back of the bed | 0.35 | 0.05-0.2 | low gray rocks
+an outdoor light on the far garage eave | 0.35 | 0.05-0.2 | small black fixture
+a galvanized corner post on the far chain-link fence | 0.35 | 0.05-0.2 | thin silver pipe

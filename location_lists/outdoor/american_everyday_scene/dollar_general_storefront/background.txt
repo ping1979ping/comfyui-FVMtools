@@ -1,15 +1,14 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-yellow Dollar General storefront facade | 1.0 | 0.5-1.0 | yellow stucco with black band
-black-and-yellow Dollar General sign{| reading "{DOLLAR GENERAL|DOLLAR|DISCOUNT}"} | 0.95 | 0.2-0.5 | channel letters
-small strip mall context | 0.55 | 0.3-0.6 | adjacent low retail
-adjacent vape shop storefront | 0.4 | 0.2-0.4 | bright-lit small shop
-laundromat next door | 0.4 | 0.2-0.4 | glass-front store with dryers visible
-gravel-edged parking lot | 0.8 | 0.4-0.8 | asphalt with crumbling edges
-quiet rural state route | 0.55 | 0.2-0.5 | two-lane road past lot
-distant tree line beyond lot | 0.55 | 0.2-0.5 | scraggly woodland edge
-sun-faded pylon sign at street | 0.7 | 0.2-0.4 | tall plastic sign with a faded yellow panel
-small fenced propane cage | 0.5 | 0.1-0.3 | green metal storage cage
-ATM kiosk near entry | 0.4 | 0.1-0.3 | small standalone kiosk
-adjacent vacant retail unit | 0.4 | 0.2-0.4 | papered-over windows
+a single-storey discount store across the lot | 1.0 | 0.6-1.0 | a flat metal-clad building with a yellow upper band and a wide dark glass entrance across the whole width of the image, a black band above the windows
+a prefabricated retail building filling the far side of the lot | 1.0 | 0.6-1.0 | tan and yellow wall panels under a flat roof across the whole width of the image, a covered walkway along the front
+the long front of a yellow and black discount store across the lot | 0.95 | 0.6-1.0 | a flat roofline and dark glass doors across the whole width of the image, a wide pale sky above
+a low metal-clad store front with a covered walkway across the whole width | 0.9 | 0.6-1.0 | yellow wall panels and blank black bands above dark windows, bare utility poles beyond the roof
+the store front seen across an empty lot | 0.85 | 0.6-1.0 | a yellow and black metal-clad wall with a flat roof across the whole width of the image, a row of evergreens behind it
+the plain side wall of the store on the left | 0.6 | 0.6-1.0 | a tall metal-clad wall with a closed steel service door and a gas meter, the lit front of the store continuing to the right
+a rural two-lane road behind the store | 0.5 | 0.6-1.0 | pale asphalt with grassy shoulders and utility poles beyond the low roof, a tree line beyond
+a neighboring low brick building next door to the store | 0.5 | 0.6-1.0 | a plain flat-roofed one-storey structure beside the yellow store front across the width of the image
+rolling wooded hills rising behind the store roof | 0.5 | 0.6-1.0 | forested ridges in soft layers rising beyond the low yellow building across the whole width of the image
+a small town street corner beyond the store | 0.4 | 0.6-1.0 | a few brick storefronts and a church steeple above the treetops far on the left, the yellow store front in the near half
+the wide asphalt lot in front of the store | 0.6 | 0.6-1.0 | a flat open lot with a low yellow building far ahead across the whole width of the image, a wide pale sky above

@@ -1,14 +1,15 @@
 # element: background
 # format: name | probability | coverage_range | texture
 
-pressure-treated deck boards | 1.0 | 0.4-0.8 | greyed grain and pops
-vinyl privacy fence line | 0.75 | 0.3-0.6 | white panels with green algae streak
-back of the house with a slider | 0.7 | 0.3-0.6 | siding and screen door
-neighbor's above-ground pool over the fence | 0.45 | 0.15-0.35 | blue wall arc
-lawn stretching to the swing set | 0.6 | 0.3-0.6 | mowed stripes fading
-propane grill with a worn cover half off | 0.75 | 0.15-0.35 | grease-stained shelf
-deck rail with solar caps | 0.6 | 0.15-0.35 | dim post lights
-umbrella table with chairs | 0.65 | 0.25-0.5 | crank umbrella tilted
-shed at the yard corner | 0.5 | 0.15-0.35 | plastic ramp
-utility lines crossing the sky | 0.5 | 0.1-0.3 | sagging spans
-flower boxes on the rail | 0.45 | 0.1-0.25 | marigolds leggy
+the back of the yard | 1.0 | 0.6-1.0 | a white vinyl privacy fence along the far edge of a mown lawn across the whole width of the image, tall trees behind it
+the rear of the house behind the deck | 0.8 | 0.6-1.0 | tan vinyl siding with two windows and a glass patio door across the whole width of the image, a low gutter along the roof
+the neighboring yards beyond the fence | 0.6 | 0.6-1.0 | a row of two-storey houses with gray roofs behind a chain link fence across the whole width of the image
+a tree line along the back of the yard | 0.7 | 0.6-1.0 | mature oaks and maples rising above the fence across the whole width of the image, a pale sky above
+the lawn stretching to the far fence | 0.7 | 0.6-1.0 | a wide mown lawn with a young maple on the left and a shrub border along the back across the whole width of the image
+a wooden privacy fence along the back of the yard | 0.65 | 0.6-1.0 | tall cedar boards with a shrub bed in front, a pale sky above across the whole width
+the open backyard under a wide sky | 0.5 | 0.6-1.0 | a flat green lawn running to a hedge at the back, rooftops of neighbor houses beyond across the whole width of the image
+the side of the garage across the yard | 0.45 | 0.6-1.0 | a plain white vinyl wall with a closed door, a tall hedge beside it on the right
+a wooded hillside beyond the back fence | 0.5 | 0.6-1.0 | a green slope with scattered trees rising above the fence across the whole width of the image
+a hedge and shrub border along the back of the yard | 0.6 | 0.6-1.0 | clipped green hedge in front of a plain fence across the whole width of the image
+a brick patio wall at the end of the yard | 0.35 | 0.6-1.0 | a low red brick wall with a wooded edge behind it
+the house wall with a wide window on the left | 0.5 | 0.6-1.0 | gray vinyl siding, white trim and a large closed window, a downspout at the corner

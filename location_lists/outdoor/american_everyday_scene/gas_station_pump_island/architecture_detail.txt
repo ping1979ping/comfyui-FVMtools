@@ -1,13 +1,15 @@
 # element: architecture_detail
 # format: name | probability | coverage_range | texture
 
-corrugated metal canopy underside | 0.85 | 0.3-0.6 | painted white sheet metal
-fluorescent canopy light strips | 0.8 | 0.2-0.4 | recessed tube fixtures
-steel canopy support columns | 0.85 | 0.2-0.5 | painted square posts
-sun-bleached backlit panels on the pole | 0.7 | 0.1-0.3 | yellowed backlit plastic with colored bands
-weathered store entry awning | 0.55 | 0.2-0.4 | metal canopy with a plain color band
-exposed conduit on store wall | 0.5 | 0.1-0.3 | gray PVC piping
-graffiti-scratched glass door | 0.4 | 0.1-0.3 | etched storefront glass
-red circle-and-slash pictogram decal | 0.65 | 0.05-0.15 | faded vinyl sticker with a crossed-out flame icon
-emergency shut-off red button | 0.5 | 0.05-0.1 | recessed safety control
-roof-mounted lit box sign{| reading "{ATM|CASH}"} | 0.45 | 0.1-0.2 | small lit panel
+a thin red band along the canopy edge far overhead | 0.7 | 0.05-0.2 | painted metal fascia
+small round white lights set in the canopy underside far overhead | 0.6 | 0.05-0.2 | recessed flat lamps
+slim white steel columns holding the canopy far back on the left | 0.6 | 0.05-0.2 | smooth painted posts
+a narrow brick planter strip along the store front far back | 0.5 | 0.05-0.2 | low and plain
+a thin dark window frame along the store front across the lot | 0.55 | 0.05-0.2 | aluminium mullions
+a slim aluminium door frame at the far entrance on the right | 0.5 | 0.05-0.2 | clear glass panel
+a narrow horizontal fascia band along the store roofline far across the lot | 0.55 | 0.05-0.2 | smooth painted metal
+a small grey downspout at the far corner of the building | 0.4 | 0.05-0.2 | thin vertical pipe
+a low brick wall along the far edge of the lot | 0.45 | 0.05-0.2 | plain red brick with a flat cap
+a thin metal handrail beside the far entrance steps | 0.4 | 0.05-0.2 | black painted rail
+a narrow concrete curb along the island far back | 0.5 | 0.05-0.2 | pale and plain
+a slim light pole at the far corner of the lot | 0.5 | 0.05-0.2 | grey steel with a flat lamp head

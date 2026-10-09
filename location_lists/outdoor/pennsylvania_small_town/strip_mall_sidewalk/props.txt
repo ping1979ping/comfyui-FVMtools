@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-abandoned paper scrap tumbleweed | 0.45 | 0.02-0.06 | wind-rolled curl
-quarters pressed into a gumball turn | 0.4 | 0.02-0.06 | kid's ritual
-pizza boxes carried flat | 0.5 | 0.03-0.1 | steady stack
-laundry basket on a hip | 0.45 | 0.05-0.15 | detergent on top
-helium balloon tied to a stroller | 0.4 | 0.03-0.1 | party-store exit
-colored paper stack weighted by a rock | 0.35 | 0.02-0.06 | car-wash fundraiser
-silver scratch-off shavings at the trash can | 0.4 | 0.02-0.06 | key-edge shavings
-takeout bag with chopstick flags | 0.45 | 0.02-0.08 | stapled folded top
-energy drink cans on a window sill | 0.4 | 0.02-0.06 | after-practice row
-lost glove on a bollard | 0.35 | 0.02-0.05 | winter orphan
-cart with one bad wheel | 0.5 | 0.05-0.15 | rhythmic clatter
+a small red fire hydrant at the far end of the walkway | 0.4 | 0.02-0.06 | red painted iron
+small yellow bollards far beside the far entrance | 0.4 | 0.02-0.06 | short steel posts
+a small potted shrub at the far storefront | 0.45 | 0.02-0.06 | round dark green leaves
+a small gray electric meter box on the far wall | 0.35 | 0.02-0.06 | closed metal door
+a slim black bollard light far at the corner | 0.3 | 0.02-0.06 | short post with a dark lens
+a small concrete wheel stop far in the parking row | 0.3 | 0.02-0.06 | low gray block
+a thin flagpole far at the back of the lot | 0.35 | 0.02-0.06 | slim pole, flag hanging
+a small stack of folded cardboard far by the end door | 0.3 | 0.02-0.06 | flat brown boxes
+a small round wall lamp far beside the end door | 0.35 | 0.02-0.06 | dark glass, unlit
+small orange traffic cones far at the end of the walkway | 0.3 | 0.02-0.06 | short plastic cones
+a small gray steel cylinder far beside a distant entrance | 0.3 | 0.02-0.06 | narrow, with a flat top
+a compact gray utility box far at the edge of the lot | 0.35 | 0.02-0.06 | closed metal cabinet

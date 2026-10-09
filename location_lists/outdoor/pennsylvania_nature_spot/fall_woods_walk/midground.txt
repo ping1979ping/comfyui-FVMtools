@@ -1,14 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-fallen oak across the path | 0.55 | 0.15-0.35 | step-over trunk
-leaf drifts against the deadfall | 0.6 | 0.15-0.35 | knee-deep pockets
-shagbark hickory trunk | 0.5 | 0.1-0.3 | peeling plates
-grapevine tangle in a gap | 0.45 | 0.1-0.3 | hanging loops
-boulder field patch | 0.45 | 0.15-0.35 | glacial scatter
-spring seep crossing the trail | 0.4 | 0.05-0.2 | black muck strip
-dog ranging ahead | 0.45 | 0.05-0.2 | nose-driven zigzag
-stump shelf of turkey tail fungus | 0.45 | 0.05-0.15 | banded fans
-buck rub on a sapling | 0.4 | 0.03-0.1 | barked scar
-squirrel diggings in the leaves | 0.45 | 0.05-0.15 | fresh excavations
-another walker's red jacket far off | 0.35 | 0.05-0.15 | color through trunks
+straight oak trunks a few meters back on both sides of the path | 1.0 | 0.2-0.5 | dark furrowed bark, rusty crowns high above
+a big maple with a split trunk a few meters back on the left | 0.6 | 0.2-0.5 | grey bark, a flaming red crown overhead
+a shagbark hickory a few meters back on the right | 0.55 | 0.2-0.5 | peeling grey bark plates, a yellow crown overhead
+a low fieldstone wall a few meters back on the left | 0.5 | 0.2-0.5 | grey stones in a loose line running into the trees
+a laurel thicket a few meters back on the right | 0.5 | 0.2-0.5 | dark glossy shrubs at knee height
+a fallen log a few meters back on the left | 0.4 | 0.2-0.5 | grey bark, lying parallel to the path
+a big grey boulder a few meters back on the right | 0.4 | 0.2-0.5 | rounded glacial stone, pale and smooth
+a young beech sapling a few meters back at the center | 0.4 | 0.2-0.5 | slim trunk with pale copper leaves still on
+witch hazel shrubs a few meters back on the left | 0.4 | 0.2-0.5 | thread-like yellow blooms among bare twigs
+a pair of tall hemlocks a few meters back on the right | 0.45 | 0.2-0.5 | dark boughs with soft drooping tips
+a split-rail fence a few meters back along the left | 0.35 | 0.2-0.5 | grey cedar rails, partly hidden by shrubs
+the path bending left a few meters back between the trunks | 0.5 | 0.2-0.5 | packed dirt narrowing under the trees
+brown ferns under the trees a few meters back on the right | 0.4 | 0.2-0.5 | rusty fronds low among the trunks
+a low wooden footbridge a few meters back at the center | 0.3 | 0.2-0.5 | plain planks over a dry gully

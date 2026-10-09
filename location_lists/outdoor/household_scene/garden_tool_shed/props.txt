@@ -1,15 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-old metal watering can | 0.95 | 0.05-0.15 | weathered painted vessel
-seed jar set with twine ties | 0.85 | 0.1-0.25 | clear lidded glass
-small hand trowel | 0.95 | 0.05-0.1 | wooden handle metal blade
-pruning shears on bench | 0.95 | 0.05-0.1 | spring-hinged blades
-twine ball on shelf | 0.85 | 0.05-0.1 | natural fiber bundle
-small flower pots row | 0.95 | 0.1-0.25 | terracotta tiered
-spray bottle of fertilizer | 0.7 | 0.05-0.1 | trigger nozzle plastic
-mason jar of nails | 0.7 | 0.05-0.1 | clear lidded glass
-gardening gloves dirty | 0.85 | 0.05-0.15 | leather palm pair
-sun hat on hook | 0.85 | 0.05-0.15 | woven straw brim
-small chalkboard label | 0.7 | 0.05-0.15 | painted slate panel{| with the word "{HERBS|TOOLS|SEEDS}"}
-empty seed envelopes | 0.7 | 0.05-0.1 | small envelopes with vegetable pictures
+a small pair of green work gloves on the far windowsill | 0.5 | 0.02-0.06 | plain fabric, folded flat
+a small coil of twine on a nail at the far shed wall | 0.4 | 0.02-0.06 | pale cord
+a small galvanized watering can at the far corner of the shed | 0.5 | 0.02-0.06 | silver zinc with a long spout
+a small stack of clay pots on the far windowsill | 0.45 | 0.02-0.06 | orange terracotta
+a small hand trowel hung on a far hook | 0.4 | 0.02-0.06 | steel blade, green handle
+a slim pruning saw hung on the far shed wall | 0.35 | 0.02-0.06 | thin steel blade
+a small padlock on the far shed door latch | 0.35 | 0.02-0.06 | dark brass body
+a compact plastic crate by the far shed corner | 0.35 | 0.02-0.06 | black, empty
+a small green plastic bucket at the back of the far shed | 0.4 | 0.02-0.06 | thin handle
+a small round bird feeder on a far pole at the back | 0.35 | 0.02-0.06 | dark wood and slim chain
+a small glass jar of garden stakes on the far bench | 0.3 | 0.02-0.06 | clear glass with thin sticks
+a small spray bottle on the far windowsill | 0.3 | 0.02-0.06 | plain white plastic

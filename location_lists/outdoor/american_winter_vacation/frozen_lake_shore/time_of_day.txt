@@ -1,13 +1,13 @@
 # element: time_of_day
 # format: name | probability | coverage_range | texture
 
-low winter sun barely clearing the trees | 0.8 | - | -
-bright glare off fresh snow | 0.75 | - | -
-flat white overcast midday | 0.8 | - | -
-early dusk closing in fast | 0.75 | - | -
-alpenglow pink on the high snow | 0.6 | - | -
-blue hour over the snowfield | 0.6 | - | -
-moonlight bright enough to walk by | 0.5 | - | -
-deep night with snow-glow | 0.45 | - | -
-first grey light through falling snow | 0.5 | - | -
-last light catching the chimney smoke | 0.6 | - | -
+soft overcast late-morning light | 1.0 | - | -
+bright mid-morning sun with crisp shadows | 0.9 | - | -
+flat white early-afternoon light | 0.8 | - | -
+low golden late-afternoon sun | 0.85 | - | -
+pale pink light shortly before sunset | 0.55 | - | -
+cold blue light shortly after sunset | 0.5 | - | -
+early morning light with long shadows | 0.6 | - | -
+hazy winter noon light | 0.65 | - | -
+low sun just above the far treeline | 0.5 | - | -
+overcast afternoon light | 0.7 | - | -

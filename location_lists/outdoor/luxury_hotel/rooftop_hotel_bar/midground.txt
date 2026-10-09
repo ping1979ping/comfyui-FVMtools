@@ -1,15 +1,17 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-cocktail bar with brass rail | 1.0 | 0.3-0.5 | marble top with polished fittings
-circular gas fire pit | 0.95 | 0.2-0.4 | dancing flames in glass beads
-low cushioned banquette seating | 0.85 | 0.25-0.5 | tufted outdoor velvet benches
-high bar stool row | 0.8 | 0.2-0.4 | leather seats on slim brass legs
-rectangular linear fire table | 0.75 | 0.2-0.4 | long flame strip with stone surround
-tall cocktail table cluster | 0.7 | 0.2-0.4 | round pedestal tops with votives
-bartender mixing station | 0.65 | 0.2-0.4 | shaker and bottle display behind counter
-cabana daybed with drapes | 0.6 | 0.25-0.5 | white curtains and plush cushions
-heat lamp column pair | 0.55 | 0.15-0.3 | tall bronze patio heaters glowing orange
-potted olive tree planters | 0.55 | 0.2-0.4 | large stone pots with silver foliage
-DJ booth corner | 0.4 | 0.2-0.4 | compact turntable stand with warm light
-infinity plunge pool edge | 0.35 | 0.25-0.5 | glassy water spilling to skyline
+a long marble-topped bar counter a few meters back on the right | 1.0 | 0.2-0.5 | brass rail along the front, slim leather stools lined up, all empty
+a low gas fire table a few meters back at the center | 0.8 | 0.2-0.5 | stone surround, soft flames in glass beads, empty lounge chairs around it
+low cushioned banquettes along the glass balustrade a few meters back on the left | 0.8 | 0.2-0.5 | charcoal outdoor fabric, empty
+tall round cocktail tables a few meters back on the left | 0.7 | 0.2-0.5 | slim pedestal bases, all empty, tall stools pushed in
+two empty cabana daybeds a few meters back on the right | 0.55 | 0.2-0.5 | white curtains tied back, plain cream cushions
+tall bronze patio heaters a few meters back between the empty tables | 0.5 | 0.2-0.5 | slim columns, switched off
+large stone planters with clipped boxwood a few meters back on the left | 0.6 | 0.2-0.5 | dark hedges in pale square boxes
+round potted olive trees a few meters back on the right | 0.5 | 0.2-0.5 | silver-green crowns in large grey pots
+an empty outdoor lounge group around a low table a few meters back on the left | 0.6 | 0.2-0.5 | deep grey cushions, wood frame
+a wide wooden step up to a raised deck a few meters back at the center | 0.4 | 0.2-0.5 | one broad step, empty loungers on top
+a row of slim string-light poles a few meters back along the edge | 0.45 | 0.2-0.5 | black steel posts with warm bulbs
+a long bar-height communal table a few meters back at the center | 0.45 | 0.2-0.5 | dark wood top, empty, stools pushed in
+a plain concrete bench along the right edge a few meters back | 0.4 | 0.2-0.5 | pale and empty
+a wall of glass doors to the lounge a few meters back on the right | 0.45 | 0.2-0.5 | closed, warm light inside, an empty room beyond

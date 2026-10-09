@@ -1,14 +1,15 @@
 # element: props
 # format: name | probability | coverage_range | texture
 
-skis planted X in the snow | 0.5 | 0.02-0.08 | crossed marker
-poles leaned on the fence | 0.45 | 0.01-0.05 | strap tangle
-goggles pushed up dead of use | 0.45 | 0.01-0.04 | mirrored brow
-lone glove atop a fence post | 0.4 | 0.01-0.04 | lost-and-found beacon
-wax scraper in a jacket pocket | 0.35 | 0.01-0.03 | plastic edge
-thermos shared at the overlook | 0.45 | 0.01-0.05 | passed warmth
-boot buckles finally released | 0.45 | 0.01-0.04 | day's-end relief
-trail snack bar frozen solid | 0.4 | 0.01-0.03 | jaw workout
-hand warmers at half power | 0.4 | 0.01-0.03 | fading coals
-helmet hung on a pole grip | 0.4 | 0.01-0.05 | resting shell
-snowball packed on a dare | 0.35 | 0.01-0.04 | pointless ammo
+a small orange cone at the far edge of the run | 0.5 | 0.02-0.06 | bright plastic against white
+small round snow mounds along the far edge of the slope | 0.55 | 0.02-0.06 | smooth white humps
+a small dark green equipment box at the far corner of the hut | 0.4 | 0.02-0.06 | closed steel lid
+a small wooden pallet stack behind the far shed | 0.4 | 0.02-0.06 | grey boards under snow
+a small blue plastic barrel at the far end of the fence | 0.4 | 0.02-0.06 | closed lid
+a small snow-capped stump at the far edge of the clearing | 0.45 | 0.02-0.06 | rounded white top
+a small coiled black hose hanging on a far pole | 0.35 | 0.02-0.06 | dark loops
+a small frosted boulder at the far edge of the slope | 0.45 | 0.02-0.06 | grey stone under white
+a small pile of cut logs far behind the shed | 0.4 | 0.02-0.06 | pale ends under snow
+a small empty wooden rack at the far wall of the hut | 0.35 | 0.02-0.06 | plain grey timber
+a small round hay bale in white wrap at the far edge | 0.35 | 0.02-0.06 | smooth plastic
+a small orange stake at the far end of the fence | 0.35 | 0.02-0.06 | thin plastic pole

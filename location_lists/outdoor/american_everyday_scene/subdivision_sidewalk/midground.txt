@@ -1,15 +1,18 @@
 # element: midground
 # format: name | probability | coverage_range | texture
 
-row of identical black mailboxes | 0.95 | 0.2-0.5 | matching HOA mailboxes
-poured concrete driveway slabs | 0.85 | 0.3-0.6 | clean pale concrete
-mulch flowerbed at house front | 0.7 | 0.2-0.4 | dark dyed mulch
-sprinkler head dotting lawn | 0.55 | 0.05-0.15 | small green pop-up
-parked SUV in driveway | 0.7 | 0.2-0.4 | suburban crossover vehicle
-sidewalk panel grid line | 0.95 | 0.3-0.6 | poured slab seam pattern
-small front-yard tree with mulch ring | 0.7 | 0.2-0.4 | sapling in dark mulch
-white garage door rolled down | 0.85 | 0.2-0.5 | paneled steel door
-streetlight post on sidewalk | 0.65 | 0.1-0.3 | painted decorative metal pole
-ornamental landscape grass clump | 0.5 | 0.1-0.3 | tan grass tufts
-HOA-painted curb edge | 0.65 | 0.2-0.4 | clean white poured curb
-new driveway tree with cinch strap | 0.55 | 0.1-0.3 | staked sapling
+a row of black mailboxes on posts along the curb far down the block on the left | 0.9 | 0.2-0.5 | matching posts, evenly spaced
+an empty grey sedan parked at the curb a few meters back on the right | 0.7 | 0.2-0.5 | closed doors, clean paint
+an empty white pickup truck parked in a driveway far down the block | 0.55 | 0.2-0.5 | closed doors
+a dark green trash bin at the curb a few meters back on the left | 0.5 | 0.2-0.5 | closed lid, plain
+a young street tree in a mown grass strip a few meters back | 0.75 | 0.2-0.5 | slim trunk, leafy crown
+a pale concrete driveway apron meeting the sidewalk a few meters back on the right | 0.6 | 0.2-0.5 | clean and smooth
+a low foundation hedge along a house front a few meters back on the left | 0.6 | 0.2-0.5 | clipped green shrubs
+a red fire hydrant at the curb a few meters back on the right | 0.4 | 0.2-0.5 | painted cast iron
+a wooden utility pole in the grass strip far down the block on the right | 0.5 | 0.2-0.5 | dark weathered wood
+a mown green grass strip between the sidewalk and the street a few meters back | 0.7 | 0.2-0.5 | even lawn
+a mulch bed with low shrubs at a house front a few meters back on the left | 0.55 | 0.2-0.5 | dark brown mulch
+an empty silver minivan parked in a driveway a few meters back on the right | 0.55 | 0.2-0.5 | closed doors
+a closed white garage door at a house a few meters back on the right | 0.6 | 0.2-0.5 | paneled and plain
+a white vinyl fence along a side yard far down the block on the left | 0.45 | 0.2-0.5 | plain flat boards
+a black lamp post at the curb far down the block | 0.45 | 0.2-0.5 | slender post with a lantern top
