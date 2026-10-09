@@ -785,11 +785,14 @@ class _SizeAnalyzer:
 def _run_hint(mocked, monkeypatch, hint, ref_mouth):
     image, pd, pipe = _scene()
     monkeypatch.setattr(qrd, "_get_face_analyzer", lambda: _SizeAnalyzer(ref_mouth))
+    # Flat skin tone, not noise: the teeth metric counts bright unsaturated
+    # pixels on the lip line, and random refs read as toothy_smile now and then.
+    refs = torch.tensor([0.80, 0.55, 0.45]).expand(2, 64, 64, 3).clone()
     out = FVM_QwenRefHeadDetailer().execute(
         image=image,
         pipe=pipe,
         person_data=pd,
-        reference_images=torch.rand(2, 64, 64, 3),
+        reference_images=refs,
         **_args(expression_hint=hint),
     )
     return mocked.encode_calls[-1]["prompt"], out["result"][6]
