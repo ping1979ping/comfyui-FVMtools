@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+far registration counter wall of the waiting area | 1.0 | 0.6-1.0 | a long pale quartz counter across the back, warm oak panels above it, a wood-look ceiling cloud overhead, everything empty
+far window wall of the waiting area | 0.9 | 0.6-1.0 | tall narrow windows across the whole width of the image looking out on a tree line beyond a parking lot, white roller shades half down
+far green wall of the waiting area | 0.7 | 0.6-1.0 | a wall of ferns and pothos on the left, frosted glass doors to a corridor on the right, warm wall sconces between them
+far glass partition of the waiting area | 0.75 | 0.6-1.0 | a clear glass wall with a frosted band across the width of the image, an exam corridor glimpsed behind it
+far elevator wall of the waiting area | 0.65 | 0.6-1.0 | brushed steel elevator doors on the left, a pale oak panel wall across the back, soft light from a skylight above
+far picture window of the waiting area | 0.7 | 0.6-1.0 | one wide window with a deep sill at the back, a lawn and young maples outside, light oak trim on warm gray walls
+far wall hung with a large abstract watercolor canvas | 0.6 | 0.6-1.0 | sage and blue washes on a warm gray wall across the back, a long low oak console below
+far corridor opening behind the waiting area | 0.55 | 0.5-0.9 | a wide doorway on the right with a bright corridor receding, a warm gray wall with light oak trim on the left
+far curved wall of rounded oak panels | 0.6 | 0.6-1.0 | soft sconce light across the back, a wood-look ceiling cloud above, a tall plant in the far corner
+far glass doors to a courtyard | 0.55 | 0.6-1.0 | floor-to-ceiling glass across the width of the image onto a paved courtyard with low planters and young birch trees
+far wall of white oak slats | 0.6 | 0.6-1.0 | warm vertical slats across the whole width of the image, a recessed light cove above, an empty quartz counter on the right
+far skylit double-height wall of the waiting hall | 0.5 | 0.5-0.9 | pale plaster and glass rising behind, daylight pouring in from a wide skylight overhead
+far bank of tall windows with sheer curtains | 0.5 | 0.6-1.0 | soft white light across the back, a warm gray wall with light oak trim at both sides

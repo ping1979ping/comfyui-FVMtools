@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+far window wall of the conference room | 1.0 | 0.6-1.0 | floor-to-ceiling glazing across the whole width of the image looking over a wooded river valley, sheer shades half lowered
+far acoustic oak slat wall of the conference room | 0.85 | 0.6-1.0 | warm vertical slats across the back, a long walnut credenza with a coffee service on the right
+far blank white presentation wall | 0.8 | 0.6-1.0 | a smooth empty white wall at the far end of the room, linear ceiling lights above, oak panels on both sides
+far glass wall of the conference room to the foyer | 0.7 | 0.6-1.0 | clear glass with a frosted band across the width of the image, high round tables in the foyer beyond, all empty
+far satin aluminum partition wall of the event hall | 0.6 | 0.6-1.0 | closed panels across the whole width of the image, a tall potted plant in the far right corner
+far tiered auditorium seating glimpsed through double doors | 0.5 | 0.5-0.9 | rows of empty upholstered seats rising behind the doors, warm wood paneling on the side walls
+far corner of the conference room with a long credenza | 0.65 | 0.6-1.0 | a pale oak credenza with water pitchers and a fruit bowl beneath a corner window
+far wide terrace doors of the conference room | 0.6 | 0.6-1.0 | glass doors across the back opening onto a roof terrace with a view of green treetops over the valley
+far wall of pale oak panels with fine reveal joints | 0.65 | 0.6-1.0 | a smooth warm wall across the back, recessed track spotlights above, a tall plant on the left
+far window wall with a view of a river valley | 0.8 | 0.6-1.0 | tall windows across the width of the image, distant wooded hills and a bend of the river, charcoal shades half down
+far end of the event hall | 0.55 | 0.5-0.9 | a wide open room with a glass wall on the right, round empty tables set for a meeting, even daylight
+far wall of walnut veneer | 0.55 | 0.6-1.0 | a recessed niche with a low credenza across the back, pendant lamps hanging overhead
+far glass wall of the foyer beside the conference room | 0.5 | 0.5-0.9 | high tables near wide windows at the back, a lit coffee bar in the corner, all empty
+far side of the room with a closed operable glass wall | 0.5 | 0.5-0.9 | slim aluminum frames across the width of the image, a bright breakout space visible beyond

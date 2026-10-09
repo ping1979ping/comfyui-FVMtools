@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small stainless gooseneck kettle on the far counter | 0.6 | 0.02-0.06 | polished stainless steel
+tiny white ceramic mugs stacked on the open shelf at the back | 0.6 | 0.02-0.05 | glazed white ceramic
+a small glass jar of tea bags on the shelf at the back | 0.5 | 0.02-0.05 | clear glass with a metal lid
+a small bowl of green apples and clementines on a distant table | 0.5 | 0.02-0.06 | plain white glazed bowl
+a slim plain napkin dispenser on a table far back | 0.4 | 0.02-0.05 | white plastic casing
+a small basket of wrapped granola bars on the far counter | 0.45 | 0.02-0.05 | woven basket with foil-wrapped bars
+a tiny tray with sugar and creamer cups at the far end of the counter | 0.45 | 0.02-0.05 | white cups on a steel tray
+a compact dish rack with two rinsed mugs beside the far sink | 0.4 | 0.02-0.05 | chrome wire rack
+a small succulent on the window sill at the far end | 0.5 | 0.02-0.06 | thick pale green leaves
+a small glass carafe on the far counter | 0.4 | 0.02-0.05 | clear glass with a black handle
+a small wooden bread board leaning at the back of the counter | 0.35 | 0.02-0.05 | pale oak grain
+a compact silver toaster oven on the far counter | 0.4 | 0.02-0.06 | brushed silver casing
+a small stack of plain white paper cups at the far end of the counter | 0.4 | 0.02-0.05 | plain white paper

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished stone-look porcelain tile floor | 1.0 | 0.1-0.4 | soft reflections of the pendant lights
+plain gray low-pile carpet meeting a tile border | 0.85 | 0.1-0.4 | warm bronze trim line between them
+wide plain taupe carpet | 0.8 | 0.1-0.4 | even matte pile
+pale stone-look tile floor | 0.8 | 0.1-0.4 | diagonal strips of daylight from the glass wall
+plain cream low-pile carpet | 0.7 | 0.1-0.4 | muted gray and bronze tone, no pattern
+polished beige porcelain floor | 0.65 | 0.1-0.4 | glossy, with window reflections
+smooth warm gray stone tile floor | 0.6 | 0.1-0.4 | faint veining
+plain bronze-gray carpet | 0.55 | 0.1-0.4 | clean vacuum lines
+polished dark walnut-tone wood floor | 0.45 | 0.1-0.4 | reflecting the warm lights
+wide stone-look floor in pale gray | 0.6 | 0.1-0.4 | late golden strips of light across it
+plain mushroom carpet | 0.5 | 0.1-0.4 | soft glow from the pendants
+a beveled entry mat over a stone-look floor | 0.45 | 0.1-0.4 | dark gray, flat

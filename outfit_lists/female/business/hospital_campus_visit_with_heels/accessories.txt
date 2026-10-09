@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+blank white ID card on a slim retractable reel | 0.30 | 0.55-0.9 | plastic
+slim wristwatch | 0.60 | 0.55-0.9 | metal
+small stud earrings | 0.75 | 0.55-0.9 | metal
+pearl stud earrings | 0.70 | 0.55-0.9 | metal
+delicate pendant necklace | 0.60 | 0.55-0.9 | metal
+thin chain necklace | 0.45 | 0.55-0.9 | metal
+simple ring | 0.35 | 0.55-0.9 | metal
+fine neck scarf | 0.40 | 0.6-0.9 | silk
+small hoop earrings | 0.50 | 0.55-0.85 | metal
+thin bracelet | 0.40 | 0.55-0.9 | metal
+slim bangle | 0.35 | 0.55-0.9 | metal
+small drop earrings | 0.40 | 0.6-0.9 | metal

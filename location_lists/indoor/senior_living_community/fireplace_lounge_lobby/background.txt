@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the lounge | 1.0 | 0.6-1.0 | a broad fieldstone fireplace with a thick oak mantel in the middle of the wall, built-in bookcases on both sides, tall arched windows on the left looking out over a lawn and old oak trees
+the long back wall of the lobby | 0.95 | 0.6-1.0 | a row of tall divided-light windows across the whole width of the image, sheer cream curtains, a lawn with mature maples visible outside
+the far end of the lounge | 0.9 | 0.6-1.0 | warm painted paneling with a white mantel fireplace in the middle, two framed landscape paintings on either side, a wide cased opening on the right leading to a corridor
+the rear wall of the sitting area | 0.85 | 0.6-1.0 | glass double doors on the right opening to a flagstone terrace and green lawn, cream built-in bookcases on the left, a brass floor lamp glowing in the corner
+the far side of a double-height lobby | 0.8 | 0.6-1.0 | an open staircase with white balusters and an oak handrail rising at the far left, tall windows across the back, a stone chimney breast in the middle
+the back of the lounge near the entrance hall | 0.75 | 0.6-1.0 | an empty walnut reception desk with a quartz top in the deep right background, a wide corridor leading away on the left, warm pendant lights overhead
+the far wall of a sunlit bay | 0.7 | 0.6-1.0 | a curved bay of tall windows facing a garden, a built-in window seat with plain cushions, soft cream walls above white wainscoting on the right, all empty
+the wall beyond the seating | 0.7 | 0.6-1.0 | a pale limestone fireplace with a plain white mantel between two tall windows, a large abstract painting in muted blue and ochre above the mantel, all empty
+the distant wall of the great room | 0.6 | 0.6-1.0 | a coffered ceiling running over a long room, a stone fireplace on the left wall, tall windows with a garden view on the right
+the far wall of a library alcove | 0.55 | 0.6-1.0 | floor-to-ceiling oak shelves of books across the whole width of the image, a stone fireplace in the center, a brass reading lamp glowing at the left end
+the back of a wide entrance hall | 0.55 | 0.6-1.0 | tall windows on both sides of a stone fireplace, a high plaster ceiling with white beams, a pair of wingback chairs beside the far windows, all empty
+the far wall of a long lounge | 0.5 | 0.6-1.0 | pale gray painted paneling across the width of the image, a fireplace with a dark slate surround in the middle, tall windows at both ends
+the far corner of the lobby | 0.45 | 0.6-1.0 | a closed grand piano in front of tall windows on the right, a stone fireplace on the left wall, soft light from a brass floor lamp

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue sky with thin high clouds | 0.9 | - | -
+mild early-autumn air and soft sunshine | 0.85 | - | -
+a light breeze and mild, comfortable air | 0.5 | - | -
+crisp October sunshine | 0.7 | - | -
+overcast spring sky with soft light | 0.6 | - | -
+warm summer sun with scattered clouds | 0.7 | - | -
+thin haze over the rooftops | 0.45 | - | -
+chilly clear November noon, pale sun | 0.4 | - | -
+still air under a bright pale sky | 0.65 | - | -
+hint of cloud and a mild late-spring breeze | 0.6 | - | -

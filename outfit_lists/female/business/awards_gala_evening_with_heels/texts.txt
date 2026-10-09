@@ -1,0 +1,4 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: an awards-dinner evening look (column gown, sheath dress, tailored jumpsuit) carries no printed lettering, and a gala bag or wrap is plain

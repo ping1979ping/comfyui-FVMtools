@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+drop earrings | 0.75 | 0.75-1.0 | metal
+pearl earrings | 0.70 | 0.7-1.0 | metal
+small diamond stud earrings | 0.60 | 0.7-1.0 | metal
+pendant necklace | 0.60 | 0.7-1.0 | metal
+pearl pendant necklace | 0.40 | 0.7-1.0 | metal
+delicate chain necklace | 0.55 | 0.7-1.0 | metal
+refined statement necklace | 0.45 | 0.8-1.0 | metal
+fine bracelet | 0.50 | 0.7-1.0 | metal
+slim bangle | 0.40 | 0.7-1.0 | metal
+cocktail ring | 0.40 | 0.8-1.0 | metal
+slim bracelet watch | 0.40 | 0.7-1.0 | metal
+brooch | 0.20 | 0.8-1.0 | metal

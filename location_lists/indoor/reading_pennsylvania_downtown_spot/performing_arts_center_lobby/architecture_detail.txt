@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a carved plaster cornice with gold leaf, far overhead | 0.65 | 0.05-0.15 | slim ornate band
+Moorish-inspired arch moldings at the far end | 0.55 | 0.05-0.15 | painted plasterwork
+a decorative plaster medallion around the distant chandelier | 0.55 | 0.03-0.1 | ornate plaster ring
+heavy wood-paneled wainscot along the walls | 0.55 | 0.05-0.15 | far down the hall
+polished brass handles on the far auditorium doors | 0.5 | 0.02-0.08 | bright brass lever shapes
+coffered ceiling beams with stenciled geometric patterns | 0.55 | 0.05-0.15 | high overhead
+an ornamental brass railing along the distant staircase | 0.55 | 0.03-0.1 | thin curved line
+a thin terrazzo border along the far wall base | 0.4 | 0.03-0.1 | geometric band
+slim brass wall sconces spaced along the far wall | 0.6 | 0.03-0.1 | warm amber glass shades
+tall arched window frames on the far wall | 0.5 | 0.05-0.15 | narrow openings with sheer curtains
+a gilt-framed mirror far down the hall on the right | 0.4 | 0.03-0.1 | tall and narrow

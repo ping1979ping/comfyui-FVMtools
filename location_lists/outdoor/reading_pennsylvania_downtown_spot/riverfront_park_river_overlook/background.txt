@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the Penn Street Bridge across the river | 1.0 | 0.6-1.0 | long concrete open-spandrel arches spanning the whole width of the image, a wooded hillside rising beyond on the far bank
+the wooded bank of West Reading across the water | 0.9 | 0.6-1.0 | brick rowhouses and a church steeple on the hillside, a rail line along the far shore
+the Schuylkill River valley | 0.85 | 0.6-1.0 | a wide slow river running away to the left, a forested ridge across the water, hazy sky above
+a rail line along the far bank | 0.65 | 0.6-1.0 | a wooded hillside rising behind it across the whole width of the image, a church steeple on the left
+the weathered concrete piers of the bridge | 0.7 | 0.6-1.0 | tall piers rising from the river, arch crowns far across the water
+the forested Neversink Mountain | 0.7 | 0.6-1.0 | rising on the far left beyond the river, layered in haze above low brick buildings
+low brick college buildings behind the riverbank | 0.5 | 0.6-1.0 | on the near side of the river, the bridge arches far to the right
+a slender footbridge crossing the river | 0.5 | 0.6-1.0 | far to the left, thin steel railings against a wooded far bank
+a hazy blue sky over the river valley | 0.6 | 0.6-1.0 | the wooded far bank low along the horizon, the bridge arches on the right
+the river bend downstream | 0.6 | 0.6-1.0 | wide calm water between wooded banks, the bridge arches far upstream on the right
+the bridge deck high above the water | 0.55 | 0.6-1.0 | a long concrete balustrade running across the top of the arches, lamp globes spaced along it
+the steep far bank | 0.8 | 0.6-1.0 | a wooded slope with brick rowhouses and a church steeple, a rail line at the water's edge

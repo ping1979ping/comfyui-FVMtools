@@ -1,0 +1,4 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: a hospital-campus visit look carries no printed lettering, and badge or ID text would only render as gibberish (the single badge entry is a blank white card)

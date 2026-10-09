@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small black trash can far down the sidewalk | 0.5 | 0.02-0.06 | black steel drum with a plain lid
+a tiny red fire hydrant at the far corner | 0.45 | 0.01-0.05 | red painted cast iron
+a small blue mailbox at the far corner | 0.4 | 0.02-0.06 | blue painted steel with a rounded top
+a small orange traffic cone far down the curb | 0.4 | 0.01-0.04 | orange plastic with a white band
+a slim parking meter far down the curb | 0.4 | 0.02-0.05 | gray steel post with a round head
+a tiny parked bicycle far down the block | 0.35 | 0.02-0.05 | dark frame leaning on a brick wall
+a small potted shrub in a distant tree pit | 0.4 | 0.02-0.06 | dark evergreen leaves in a black iron grate
+a small steel utility box at the far corner | 0.4 | 0.02-0.06 | dull gray metal cabinet
+a slim black bollard at the far crosswalk | 0.4 | 0.01-0.04 | short black steel post
+a tiny delivery van far down the street | 0.35 | 0.02-0.06 | white box van parked at the curb
+a small round concrete planter at the far corner | 0.35 | 0.02-0.06 | pale gray concrete with dark soil
+a small green dumpster at the end of a distant alley | 0.35 | 0.02-0.06 | dark green steel with a closed lid

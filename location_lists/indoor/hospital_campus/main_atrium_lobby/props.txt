@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small potted succulent on a distant side table | 0.7 | 0.02-0.08 | pale ceramic pot
+small ceramic cup on the far end of the coffee counter | 0.6 | 0.02-0.08 | white glaze
+small bud vase of white tulips on a distant console | 0.65 | 0.02-0.08 | slim clear glass
+slim brass table lamp on a console far on the right | 0.6 | 0.02-0.08 | warm linen shade
+small linen throw folded over a far armchair arm | 0.55 | 0.02-0.08 | soft gray weave
+compact umbrella stand beside the far doors | 0.5 | 0.02-0.08 | black metal
+small glass carafe on a low table at the back | 0.55 | 0.02-0.08 | clear glass
+small closed book on a distant coffee table | 0.5 | 0.02-0.08 | gray linen cover
+small wicker basket at the far end of the bench | 0.5 | 0.02-0.08 | natural weave
+small potted orchid on the far end of the reception desk | 0.6 | 0.02-0.08 | white blooms on a slim stem
+small bowl of green apples on a distant table at the back | 0.5 | 0.02-0.08 | glazed white bowl
+compact bronze bowl on a far stone ledge | 0.45 | 0.02-0.08 | matte finish

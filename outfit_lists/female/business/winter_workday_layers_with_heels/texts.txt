@@ -1,0 +1,4 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: wool trousers, fine knits, a turtleneck and a topcoat carry no printed lettering on a winter office day

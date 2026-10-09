@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+golden hour with low sun glowing on the steel walls | 0.75 | - | -
+bright mid-morning light under a crisp blue sky | 1.0 | - | -
+soft overcast noon light on the foliage | 0.9 | - | -
+late-afternoon light with long birch shadows | 0.8 | - | -
+blue early-evening light with path lights just glowing | 0.45 | - | -
+soft early-morning mist with pastel light | 0.5 | - | -
+clear midday sun with sharp short shadows | 0.8 | - | -
+warm early-afternoon light | 0.8 | - | -
+bright overcast late-morning light | 0.85 | - | -
+soft hazy mid-morning light | 0.6 | - | -
+warm light of the hour before sunset | 0.6 | - | -
+diffuse light of a bright cloudy afternoon | 0.7 | - | -

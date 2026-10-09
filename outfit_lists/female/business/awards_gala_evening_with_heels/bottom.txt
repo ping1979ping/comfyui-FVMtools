@@ -1,0 +1,19 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# One-piece evening garments (head noun last, so the sentences format says "one-piece garment").
+# Hems: midi, tea-length, knee-length or floor-length. Nothing sheer, nothing sequined.
+
+column gown | 0.85 | 0.8-1.0 | satin-back crepe,crepe,velvet
+floor-length gown | 0.50 | 0.9-1.0 | satin-back crepe,velvet,satin
+midi sheath dress | 0.90 | 0.7-1.0 | crepe,satin-back crepe
+knee-length sheath dress | 0.70 | 0.7-0.95 | crepe,wool crepe
+long-sleeve midi dress | 0.70 | 0.75-1.0 | crepe,velvet,satin-back crepe
+cap-sleeve midi dress | 0.55 | 0.75-1.0 | crepe,satin-back crepe
+boat-neck midi dress | 0.65 | 0.75-1.0 | crepe,satin-back crepe
+midi wrap dress | 0.65 | 0.7-0.95 | silk,crepe,satin-back crepe
+bias-cut midi dress | 0.65 | 0.8-1.0 | satin,silk
+fit-and-flare midi dress | 0.55 | 0.75-0.95 | crepe,satin-back crepe
+tea-length dress | 0.50 | 0.75-1.0 | satin,crepe,silk
+tuxedo-style blazer dress | 0.45 | 0.75-1.0 | wool crepe,crepe
+wide-leg tailored jumpsuit | 0.65 | 0.75-1.0 | crepe,satin-back crepe
+straight-leg tailored jumpsuit | 0.50 | 0.75-1.0 | crepe,satin-back crepe

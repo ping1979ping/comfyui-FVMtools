@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+acoustic ceiling tiles with recessed lights in a regular grid overhead | 0.9 | 0.05-0.2 | small square panels
+horizontal wood chair-rail trim along the walls | 0.7 | 0.05-0.2 | pale oak
+a wide double entry door at the back of the room | 0.7 | 0.05-0.2 | closed, brushed-metal handles
+window mullions along the left wall casting thin shadows | 0.75 | 0.05-0.2 | slim white frames
+a baseboard heater grille beneath the window on the left | 0.5 | 0.05-0.2 | long and low
+a ceiling-mounted projector hanging in the middle of the room | 0.55 | 0.05-0.2 | small white box
+air-diffuser grilles in a row overhead | 0.5 | 0.05-0.2 | square white vents
+gray fabric acoustic panels high up along the right wall | 0.6 | 0.05-0.2 | thin rectangles
+a sheer curtain track overhead along the window wall | 0.5 | 0.05-0.2 | slim white rail
+dark wood door frame at the back corner | 0.5 | 0.05-0.2 | plain trim
+crown molding along the top of the far wall | 0.55 | 0.05-0.2 | thin white band

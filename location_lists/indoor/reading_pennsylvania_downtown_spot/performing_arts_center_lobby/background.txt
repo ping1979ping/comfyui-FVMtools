@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the long lobby hall ahead | 1.0 | 0.6-1.0 | cream plaster walls with warm wall sconces, tall double doors to the auditorium at the far end, an ornate painted ceiling high above
+a curving grand staircase rising to a mezzanine on the left | 0.9 | 0.6-1.0 | ornamental brass railing and a gilt balcony rail above, tall arched windows on the right across the width of the image
+a high ornate plaster ceiling | 0.8 | 0.6-1.0 | painted gilt coffers and a glass-drop chandelier hanging in the center far above, cream walls below
+a wall of tall arched windows with sheer curtains | 0.75 | 0.6-1.0 | across the whole street side of the lobby, cream plaster between the windows
+a mezzanine balcony with decorative ironwork | 0.7 | 0.6-1.0 | overlooking the lobby from high up across the back, gilt rail and warm sconces
+the far wall of the lobby | 0.8 | 0.6-1.0 | cream plaster with a tall gilt-framed mirror in the middle and warm sconces on both sides
+tall dark wood auditorium doors at the far end | 0.7 | 0.6-1.0 | brass handles under an arched plaster molding, cream walls on both sides
+the box-office end of the lobby | 0.55 | 0.6-1.0 | a closed window with a brass grille on the right, marble wainscot below, cream walls above
+the lobby seen from the entrance | 0.8 | 0.6-1.0 | a red carpet running far ahead between cream walls, a staircase on the left and a coat-check counter on the right
+a Moorish-inspired arched ceiling | 0.55 | 0.6-1.0 | painted plasterwork in deep red and gold above cream walls, a chandelier far overhead
+the lobby's cream plaster walls | 0.5 | 0.6-1.0 | shallow arched niches and warm sconces spaced along the length of the hall, a chandelier far ahead
+wood-paneled wainscot and cream plaster walls | 0.6 | 0.6-1.0 | stretching along both sides of the hall toward tall doors far ahead

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft midday daylight through the storefront windows | 1.0 | - | -
+warm early-afternoon light from the right | 0.85 | - | -
+bright mid-morning window light | 0.6 | - | -
+soft overcast lunch-hour light | 0.8 | - | -
+amber mid-afternoon light grazing the brick | 0.75 | - | -
+golden late-afternoon sun low through the windows | 0.65 | - | -
+quiet afternoon light with the pendants on | 0.7 | - | -
+early-evening dusk with the Edison bulbs glowing | 0.5 | - | -
+gentle window rim light on a quiet weekday | 0.6 | - | -
+warm pendant glow against dim daylight | 0.5 | - | -

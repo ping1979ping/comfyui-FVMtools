@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rows of empty square light-oak tables set with flatware a few meters back | 1.0 | 0.3-0.5 | soft {gray|taupe} upholstered chairs pushed in
+a long buffet counter a few meters back on the right | 0.8 | 0.3-0.5 | covered stainless chafing dishes and stacked white plates, untouched
+a coffee station on a wood console a few meters back on the right | 0.6 | 0.2-0.4 | stainless carafes in a neat row
+a tan leather banquette along the right wall a few meters back | 0.7 | 0.3-0.5 | empty, with square tables in front of it
+a round high table with two stools a few meters back on the left | 0.5 | 0.2-0.4 | light oak top, all empty
+glass juice dispensers on a counter a few meters back on the far right | 0.5 | 0.2-0.4 | pale orange and clear
+a cluster of fabric-shade pendants hanging over the center aisle, a few meters back | 0.6 | 0.2-0.4 | soft warm glow
+fruit bowls and pastry stands on the buffet, a few meters back on the right | 0.5 | 0.2-0.4 | neatly arranged
+a tall potted fig tree beside the window wall, a few meters back | 0.5 | 0.2-0.4 | glossy leaves
+empty tables for two along the glass wall on the left, a few meters back | 0.8 | 0.3-0.5 | chairs pushed in, daylight across the tops
+a low wood slat divider a few meters back in the center | 0.4 | 0.2-0.4 | light oak, with a row of small plants on top
+a long communal table of pale oak a few meters back on the left | 0.5 | 0.2-0.4 | set with flatware, chairs pushed in
+a stainless tea and toast station a few meters back on the right | 0.4 | 0.2-0.4 | neat and untouched

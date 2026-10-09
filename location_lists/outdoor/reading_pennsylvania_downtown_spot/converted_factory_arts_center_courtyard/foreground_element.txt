@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+worn brick alley paving | 1.0 | 0.1-0.4 | smoothed by decades of use with dark mortar joints
+gray stone pavers | 0.8 | 0.1-0.4 | set in a loose grid with narrow joints
+poured concrete path | 0.8 | 0.1-0.4 | smooth gray slabs edged with thin steel strips
+smooth gray concrete ground | 0.7 | 0.1-0.4 | fine seams and a slight sheen
+red-brown brick pavers | 0.8 | 0.1-0.4 | laid in running bond, softly worn
+pale concrete pavers | 0.6 | 0.1-0.4 | regular grid with narrow joints
+patched brick alley | 0.55 | 0.1-0.4 | old red bricks mended with gray concrete
+sawn granite paving | 0.5 | 0.1-0.4 | light gray slabs with tight joints
+swept asphalt alley | 0.4 | 0.1-0.4 | dark and smooth with a worn edge
+broom-finished concrete path | 0.6 | 0.1-0.4 | even gray surface with shallow joints
+brick herringbone paving | 0.5 | 0.1-0.4 | red bricks laid in a tight herringbone
+dark gray stone paving | 0.5 | 0.1-0.4 | large slabs with thin joints

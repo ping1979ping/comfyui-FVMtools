@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+golden hour, low warm sun raking the brick | 0.9 | - | -
+soft overcast light, even and rich in greens | 0.9 | - | -
+mid-morning dappled sun through oak leaves | 1.0 | - | -
+fresh light after rain, wet leaves shining | 0.6 | - | -
+late-afternoon sun with long soft shadows | 0.85 | - | -
+bright clear noon with a crisp blue sky | 0.8 | - | -
+soft early-morning light with long shadows | 0.7 | - | -
+warm early-evening glow on the brick | 0.7 | - | -
+bright early-afternoon sun | 0.75 | - | -
+pale, gentle light of a hazy morning | 0.55 | - | -
+low amber sun just before sunset | 0.5 | - | -

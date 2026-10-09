@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a long communal table of white oak with eight empty stools a few meters back | 1.0 | 0.3-0.5 | a pale clean top, oak legs
+a high-top counter along the window on the right with six empty backless stools | 0.8 | 0.3-0.5 | a few meters back
+two round bistro tables with empty mustard chairs in the middle of the room | 0.7 | 0.2-0.4 | white laminate tops, a few meters back
+a compact espresso machine and grinder on the far counter | 0.7 | 0.1-0.3 | stainless and black, a few meters back
+a stainless double sink with a gooseneck faucet at the far counter | 0.55 | 0.1-0.3 | a few meters back
+a tall potted rubber plant by the window on the right | 0.5 | 0.2-0.4 | broad dark leaves, a few meters back
+a teal cushioned bench along the left wall | 0.5 | 0.2-0.4 | empty, a few meters back
+an open oak shelf with glass jars of tea and granola against the back wall | 0.5 | 0.1-0.3 | a few meters back
+a stainless filtered water dispenser at the left end of the counter | 0.5 | 0.1-0.3 | narrow and tall, a few meters back
+a stainless dishwasher front under the far counter | 0.4 | 0.1-0.3 | a few meters back
+a low counter with a microwave and a toaster oven on the left | 0.4 | 0.1-0.3 | a few meters back
+a round white pedestal table with four empty chairs near the left wall | 0.5 | 0.2-0.4 | a few meters back
+a row of empty counter stools at the far counter | 0.4 | 0.2-0.4 | slim oak legs, a few meters back

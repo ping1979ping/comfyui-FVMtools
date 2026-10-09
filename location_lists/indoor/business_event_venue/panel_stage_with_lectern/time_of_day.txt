@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late morning, bright work lights on, house lights low | 0.7 | - | -
+midday, even work lights across the empty stage | 0.7 | - | -
+early afternoon, soft house lights and warm key spots | 0.85 | - | -
+mid-afternoon, warm key spots on the chairs and lectern | 1.0 | - | -
+late afternoon, warm key spots with a cool blue backdrop | 0.9 | - | -
+early evening, house lights dimmed, warm key spots | 0.95 | - | -
+evening, cool blue wash across the curtain backdrop | 0.85 | - | -
+morning, bright white work lights over the stage | 0.6 | - | -
+dusk, house lights at thirty percent, glowing backdrop | 0.55 | - | -
+late evening, a single warm spot pooled on the lectern | 0.6 | - | -
+noon, even warm light from the stage lights | 0.5 | - | -
+early morning, quiet pale light from the side door | 0.4 | - | -

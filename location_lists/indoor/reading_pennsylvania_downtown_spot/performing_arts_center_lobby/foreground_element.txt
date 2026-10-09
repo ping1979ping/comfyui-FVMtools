@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished marble floor | 1.0 | 0.1-0.4 | cream and gray stone reflecting the chandelier light
+plain deep red low-pile carpet | 0.8 | 0.1-0.4 | wide runner with a dark border
+cream terrazzo floor | 0.7 | 0.1-0.4 | smooth, with a dark brass inlay border
+polished stone floor | 0.7 | 0.1-0.4 | warm beige with soft chandelier reflections
+wide dark oak floor planks | 0.5 | 0.1-0.4 | satin finish, long boards
+smooth marble floor | 0.8 | 0.1-0.4 | pale gray veining and a thin brass threshold strip
+plain burgundy carpet | 0.6 | 0.1-0.4 | low pile, even and dark with a thin gold edge
+glossy cream marble floor | 0.6 | 0.1-0.4 | soft reflections of the sconces
+honed limestone floor | 0.5 | 0.1-0.4 | pale warm stone with fine joints
+polished dark stone floor | 0.5 | 0.1-0.4 | deep gray with soft warm reflections
+smooth beige terrazzo | 0.5 | 0.1-0.4 | even and glossy with no pattern
+broad marble steps | 0.4 | 0.1-0.4 | wide pale stone treads with a brass edge

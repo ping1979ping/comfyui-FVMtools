@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the two-story entry lobby | 1.0 | 0.6-1.0 | repointed red brick rising two stories across the whole width of the image, iron tie plates in a loose grid, tall factory windows high up on the left
+the warm white oak slat feature wall behind the reception desk | 0.9 | 0.6-1.0 | vertical slats across the whole width of the image, a thin dark shadow gap at the floor
+the wide glass entry doors on the right | 0.85 | 0.6-1.0 | floor-to-ceiling glass leading to a brick courtyard, a mill wing with a square tower beyond and a wooded hillside above the roofline
+the far left wall of white plaster | 0.7 | 0.5-0.9 | a row of framed landscape photographs hung in an even line across the left side of the image, a warm wall washer light above
+an oversized abstract painting on the far left wall | 0.65 | 0.5-0.9 | soft teal and gold brushwork on a white plaster wall, the high ceiling above
+the open stair of oak treads and steel behind on the left | 0.7 | 0.5-0.9 | a matte black steel stringer and a round oak handrail, a brick wall rising behind it
+a mezzanine with a glass railing high up along the right | 0.6 | 0.4-0.8 | looking down into the lobby, the white ceiling above with suspended linear pendants
+the brushed stainless elevator doors at the far right | 0.55 | 0.4-0.8 | two closed doors set in a white wall, soft downlights above
+the high white ceiling above the far brick wall | 0.6 | 0.6-1.0 | suspended linear pendants in rows overhead, tall windows glowing along the left
+the tall factory windows on the left side of the lobby | 0.7 | 0.6-1.0 | clear-framed bays across the full height, brick rooftops and a church steeple beyond, brick piers between the windows
+the far corner where the brick wall meets the glass entry | 0.55 | 0.5-0.9 | brick on the left, a dark bronze storefront frame on the right
+the far wall with a wide open doorway to a corridor | 0.5 | 0.5-0.9 | a white oak portal in the center leading away, repointed brick on both sides
+the far wall of the lobby with cove lights along its base | 0.6 | 0.6-1.0 | repointed red brick across the whole width of the image, a soft glow washing up the wall

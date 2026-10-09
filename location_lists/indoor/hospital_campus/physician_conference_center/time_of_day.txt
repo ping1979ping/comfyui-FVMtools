@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+low early-morning sun through the east windows | 0.55 | - | -
+bright indirect mid-morning light, shades half down | 0.9 | - | -
+strong even midday daylight | 0.85 | - | -
+warm afternoon sidelight across the table | 0.8 | - | -
+long late-afternoon shadows across the floor | 0.65 | - | -
+pendant glow with blue windows at early evening | 0.5 | - | -
+soft overcast late-morning light | 1.0 | - | -
+bright clear early-afternoon daylight | 0.8 | - | -
+golden light of the last hour before sunset | 0.55 | - | -
+soft hazy mid-morning light | 0.6 | - | -
+diffuse light of a bright cloudy afternoon | 0.7 | - | -
+cool soft early-morning light | 0.5 | - | -

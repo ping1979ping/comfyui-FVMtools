@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pearl stud earrings | 0.75 | 0.45-0.9 | metal
+delicate pendant necklace | 0.70 | 0.45-0.9 | metal
+light neck scarf | 0.55 | 0.45-0.85 | silk,viscose
+slim wristwatch | 0.55 | 0.5-0.9 | metal,leather
+small hoop earrings | 0.60 | 0.45-0.85 | metal
+fine bracelet | 0.50 | 0.45-0.85 | metal
+small flower brooch | 0.35 | 0.45-0.8 | metal
+thin belt | 0.50 | 0.5-0.85 | leather
+simple ring | 0.40 | 0.45-0.9 | metal
+small drop earrings | 0.55 | 0.5-0.9 | metal
+slim bangle | 0.40 | 0.45-0.85 | metal
+thin chain necklace | 0.45 | 0.45-0.85 | metal

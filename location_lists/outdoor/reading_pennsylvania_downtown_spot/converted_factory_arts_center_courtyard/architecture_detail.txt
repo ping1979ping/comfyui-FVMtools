@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+horizontal brick banding on the factory facade far across the courtyard | 0.6 | 0.05-0.15 | thin pale lines
+old loading-dock openings made into wide glass entries on the far wall | 0.5 | 0.05-0.15 | dark glass panes in steel frames
+dark gray steel window frames in tall narrow bays far up the wall | 0.6 | 0.05-0.15 | slim grid
+masonry arches filled with glass on the far brick wall | 0.5 | 0.03-0.1 | dark glass in arched openings
+pale concrete lintels and sills over the distant windows | 0.55 | 0.03-0.1 | thin horizontal bands
+slim iron anchor plates studding the brick wall far above | 0.45 | 0.02-0.08 | dark iron cross plates
+mismatched brick patches around a distant new opening | 0.45 | 0.03-0.1 | slightly lighter bricks
+an exposed steel beam over a wide doorway across the courtyard | 0.5 | 0.03-0.1 | slim dark girder
+slim downspouts running down the far brick wall | 0.45 | 0.02-0.08 | thin gray pipes
+a flat brick parapet along the far roofline | 0.5 | 0.03-0.1 | narrow band with pale coping
+small rooftop vents along the distant roof edge | 0.4 | 0.02-0.08 | gray sheet-metal boxes
+a wide steel door in a recessed brick opening far across the courtyard | 0.4 | 0.03-0.1 | dark painted steel leaf

@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear cool autumn day with thin high clouds | 0.9 | - | -
+humid summer haze softening the ridge | 0.7 | - | -
+damp pavement after a passing shower | 0.6 | - | -
+light snow dusting the ledges under a gray sky | 0.5 | - | -
+low fog veiling the upper slope of Mount Penn | 0.5 | - | -
+overcast late-winter day with bare street trees | 0.6 | - | -
+bright clear spring morning with fresh tree leaves | 0.8 | - | -
+steady light drizzle with shiny gray pavement | 0.5 | - | -
+crisp clear winter day with a pale blue sky | 0.7 | - | -
+hot muggy July afternoon with heat shimmer on asphalt | 0.5 | - | -
+breezy day with drifting clouds after a storm | 0.5 | - | -
+leaden overcast sky with rain just ending | 0.5 | - | -

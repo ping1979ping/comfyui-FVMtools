@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small speckled ceramic cup at the far end of a distant counter | 0.7 | 0.02-0.05 | matte glaze
+a small glass of sparkling water on a distant empty table | 0.5 | 0.01-0.04 | clear tumbler
+a small pour-over glass carafe on the white quartz counter at the back | 0.55 | 0.02-0.05 | clear glass
+a tiny espresso cup on a saucer at the far end of the counter | 0.55 | 0.01-0.04 | white china
+a small plate with a croissant on a distant empty table | 0.5 | 0.02-0.05 | golden pastry
+a small ceramic sugar bowl on a distant empty table | 0.4 | 0.01-0.04 | white glaze
+small white ceramic mugs lined on the shelf at the far wall | 0.6 | 0.02-0.06 | plain glaze
+a small potted fern on a shelf at the back | 0.45 | 0.02-0.06 | green fronds
+a tiny glass jar of beans on the counter at the back | 0.4 | 0.01-0.04 | warm brown
+a small stack of cups beside the espresso machine at the back | 0.4 | 0.02-0.05 | white ceramic
+a small wooden tray on the counter at the back | 0.4 | 0.02-0.05 | natural oak
+a small brass kettle at the back of the far counter | 0.4 | 0.02-0.05 | gooseneck spout

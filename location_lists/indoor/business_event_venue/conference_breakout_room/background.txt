@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the front wall of the room | 1.0 | 0.6-1.0 | a gray-green accent wall across the whole width of the image with a low riser against it, a plain white wall panel centered above, a potted fern in the far right corner
+the window wall on the left | 0.9 | 0.6-1.0 | tall windows with sheer white curtains running along the whole left side, brick rooftops and a distant treeline beyond the glass, soft daylight
+the front of the room with two empty armchairs | 0.8 | 0.6-1.0 | a low riser across the width of the image, two empty armchairs angled inward on it, a narrow side table between them, a gray-green wall behind
+the far wall with a credenza | 0.8 | 0.6-1.0 | a slim wood credenza with a glass carafe and cups against a pale wall across the whole width of the image, a tall easel with a blank white pad on the left
+the exposed brick side wall | 0.7 | 0.6-1.0 | warm red brick across the whole right side of the room, tall windows with sheer curtains on the left, a low riser at the far end
+the back of the room with the entry door | 0.6 | 0.6-1.0 | a wide double entry door in a pale wall far behind the rows of chairs, a narrow side table with a covered coffee carafe beside it, all empty
+the far wall of acoustic panels | 0.65 | 0.6-1.0 | gray fabric acoustic panels across the whole width of the image above a dark wood chair rail, a low riser in front of them, all empty
+the far corner of the room | 0.55 | 0.6-1.0 | tall windows on one wall and a pale accent wall on the other meeting in the far corner, a potted fern on a low stand, sheer curtains
+the front wall in warm daylight | 0.85 | 0.6-1.0 | a smooth pale wall across the whole width of the image with a low riser along its foot, daylight from the left windows raking across it
+the front of the room with a rolling cart | 0.5 | 0.6-1.0 | a plain white wall panel centered above a low riser, a rolling cart with a closed laptop in the far right corner, tall windows on the left
+the wall of folding partition panels | 0.5 | 0.6-1.0 | smooth ivory partition panels across the whole right side of the room, a low riser and a pale front wall at the far end
+the far end of the room under the window light | 0.75 | 0.6-1.0 | a long pale front wall with a low riser along it, two tall windows on the left casting thin mullion shadows on the carpet
+the front of the room with a tall easel | 0.6 | 0.6-1.0 | a tall easel with a blank white pad on the left of the front wall, a slim credenza on the right, a gray-green accent wall behind both

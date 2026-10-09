@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm and still indoors, soft light at the windows | 1.0 | - | -
+a low fire burning in the hearth, cool gray light outside | 0.9 | - | -
+rain streaking the tall windows, warm and dry inside | 0.8 | - | -
+bright clear autumn light outside the tall windows | 0.8 | - | -
+snow falling softly outside the tall windows | 0.6 | - | -
+hazy summer sunlight outside the windows | 0.7 | - | -
+thin morning mist over the lawn outside the windows | 0.55 | - | -
+heavy gray overcast outside, lamps glowing indoors | 0.6 | - | -
+crisp blue sky outside the windows | 0.7 | - | -
+fresh spring light, new green leaves outside the windows | 0.6 | - | -
+warm still air, sunlit dust motes drifting | 0.5 | - | -
+bare winter trees outside the tall windows, fire glowing | 0.5 | - | -

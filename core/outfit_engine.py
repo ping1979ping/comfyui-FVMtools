@@ -167,7 +167,7 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
                     decoration = resolve_braces(decoration, seed, f"{slot}.decoration")
 
             if not _is_none_garment(garment_name):
-                desc = _build_description(color_tag, fabric_name, garment_name, decoration)
+                desc = _build_description(color_tag, fabric_name, garment_name, decoration, slot=slot)
                 descriptions.append(desc)
                 details.append(f"{slot}:{garment_name}:{fabric_name or 'none'}:{color_tag}")
             continue
@@ -212,7 +212,7 @@ def generate_outfit(seed, outfit_set="general_female", style_preset="general", f
             color_tag = ov.get("color_tag") or color_tag
             if ov.get("decoration") is not None:
                 decoration = None if ov["decoration"].lower() == "none" else ov["decoration"]
-        desc = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration)
+        desc = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration, slot=slot)
         descriptions.append(desc)
         details.append(f"{slot}:{chosen_garment['name']}:{fabric_name or 'none'}:{color_tag}")
 
@@ -324,7 +324,7 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
                 if isinstance(decoration, str):
                     decoration = resolve_braces(decoration, seed, f"{slot}.decoration")
             if not _is_none_garment(garment_name):
-                fragment = _build_description(color_tag, fabric_name, garment_name, decoration)
+                fragment = _build_description(color_tag, fabric_name, garment_name, decoration, slot=slot)
                 garments_out[slot] = {
                     "slot": slot,
                     "name": garment_name,
@@ -370,7 +370,7 @@ def generate_outfit_records(seed, outfit_set="general_female", style_preset="gen
             color_tag = ov.get("color_tag") or color_tag
             if ov.get("decoration") is not None:
                 decoration = None if ov["decoration"].lower() == "none" else ov["decoration"]
-        fragment = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration)
+        fragment = _build_description(color_tag, fabric_name, chosen_garment["name"], decoration, slot=slot)
         garments_out[slot] = {
             "slot": slot,
             "name": chosen_garment["name"],
@@ -443,6 +443,23 @@ _COLORLESS_ITEMS = (
 )
 
 
+# Fabric placeholders that mean "no material" (bare feet, a hairstyle).
+_NO_FABRIC = frozenset({"", "-", "none"})
+
+
+def is_no_fabric(fabric_name) -> bool:
+    return (fabric_name or "").strip().lower() in _NO_FABRIC
+
+
+def is_hairstyle(slot, fabric_name) -> bool:
+    """A headwear entry without a material is a hairstyle ("smooth low chignon").
+
+    A palette colour in front of it would name a hair colour ("cornflower
+    polished low chignon"), which the outfit must never decide.
+    """
+    return slot == "headwear" and is_no_fabric(fabric_name)
+
+
 def is_colorless_item(garment_name: str) -> bool:
     """True for entries that describe a state rather than a coloured object."""
     lowered = (garment_name or "").lower()
@@ -492,7 +509,7 @@ def color_tag_for(slot: str, fabric_name: str, default_tag: str) -> str:
     return default_tag
 
 
-def _build_description(color_tag, fabric_name, garment_name, decoration=None):
+def _build_description(color_tag, fabric_name, garment_name, decoration=None, slot=None):
     """Build a single garment description like '#primary# silk blouse with floral print'.
 
     If the garment name embeds a literal ``#color#`` marker (data-file
@@ -510,9 +527,10 @@ def _build_description(color_tag, fabric_name, garment_name, decoration=None):
     """
     fabric_visible = (
         bool(fabric_name)
-        # "-" is the data-file placeholder for "no fabric" (bare feet, a hairstyle);
-        # printing it produced fragments like "navy - bare feet".
-        and fabric_name.strip() not in ("-", "")
+        # "-" / "none" are data-file placeholders for "no fabric" (bare feet, a
+        # hairstyle); printing them produced "navy - bare feet" and
+        # "cornflower none polished low chignon".
+        and not is_no_fabric(fabric_name)
         and fabric_name not in INVISIBLE_FABRICS
         and not _fabric_already_named(fabric_name, garment_name)
     )
@@ -530,7 +548,7 @@ def _build_description(color_tag, fabric_name, garment_name, decoration=None):
         result = " ".join(pieces)
     else:
         parts = []
-        if not garment_name_has_color(garment_name):
+        if not garment_name_has_color(garment_name) and not is_hairstyle(slot, fabric_name):
             parts.append(color_tag)
         if fabric_visible:
             parts.append(fabric_name)

@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small potted snake plant on a distant filing cabinet | 0.7 | 0.02-0.08 | glossy upright leaves
+tiny white ceramic mugs on a desk far down the room | 0.6 | 0.02-0.06 | plain white glaze
+small hanging pothos on a high shelf at the back | 0.6 | 0.02-0.06 | green vines hanging over the shelf edge
+slim black desk lamps on desks far in the background | 0.55 | 0.02-0.06 | matte black arms
+a tiny closed laptop with a silver lid on a distant desk | 0.55 | 0.02-0.06 | brushed silver lid
+small stainless water bottles on desks far behind | 0.5 | 0.02-0.06 | brushed steel with a matte finish
+tiny fabric swatches in soft colors pinned in a grid on a distant pinboard | 0.5 | 0.02-0.06 | soft muted colors in a neat grid
+a small stack of closed grey folders on a far desk corner | 0.5 | 0.02-0.06 | plain grey card covers
+tiny pen cups on desks far down the room | 0.45 | 0.02-0.05 | matte black metal
+small headphones hanging on the edge of a distant desk | 0.45 | 0.02-0.05 | matte black ear cups
+a small green succulent on a window sill at the far end | 0.5 | 0.02-0.06 | thick pale green leaves
+small wrapped sample boxes on a low shelf far behind | 0.4 | 0.02-0.06 | plain kraft cardboard
+a compact white desk fan on a far desk | 0.35 | 0.02-0.05 | white plastic casing

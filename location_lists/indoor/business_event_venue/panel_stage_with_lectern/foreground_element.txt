@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+plain charcoal low-pile carpet | 1.0 | 0.1-0.4 | even and matte under dim light
+plain dark gray carpet aisle | 0.9 | 0.1-0.4 | small floor lights along its edge
+plain navy low-pile carpet | 0.8 | 0.1-0.4 | soft overhead glow
+smooth black floor | 0.6 | 0.1-0.4 | faint reflections of the stage lights
+plain slate carpet | 0.8 | 0.1-0.4 | dark gaps between the chair rows
+plain dark taupe low-pile carpet | 0.7 | 0.1-0.4 | warm spill light from the stage
+wide plain charcoal-blue carpet | 0.65 | 0.1-0.4 | cool wash of blue light on the pile
+plain graphite carpet | 0.6 | 0.1-0.4 | quiet even tone
+dark gray low-pile carpet | 0.75 | 0.1-0.4 | soft pools of warm light
+black painted stage floor | 0.45 | 0.1-0.4 | scuffed, with faint light reflections
+plain deep gray carpet | 0.55 | 0.1-0.4 | a taped cable run crossing it far ahead
+plain dark brown low-pile carpet | 0.5 | 0.1-0.4 | warm sheen from the stage spots

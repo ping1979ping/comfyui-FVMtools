@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+theater-style rows of dark gray stackable chairs a few meters back | 1.0 | 0.3-0.5 | a center aisle between the rows, chairs linked together in rows, all empty
+neat rows of empty chairs facing the front wall a few meters back | 0.95 | 0.3-0.5 | evenly spaced, untouched
+narrow side aisles along both walls with chair rows between them, a few meters back | 0.8 | 0.3-0.5 | tidy and symmetrical, all empty
+a tall wooden lectern at the left end of the riser a few meters back | 0.75 | 0.3-0.5 | plain pale oak
+a small side table with a covered coffee carafe against the right wall a few meters back | 0.6 | 0.3-0.5 | white cloth, stacked cups
+a back-row table with a stack of water bottles at the rear of the room | 0.6 | 0.3-0.5 | bottles with caps on, all empty
+a folded partition wall segment on the right wall a few meters back | 0.5 | 0.3-0.5 | smooth ivory panels
+a rolling cart with a closed laptop in the far corner of the room | 0.5 | 0.3-0.5 | compact and black
+two empty armchairs on the low riser angled inward a few meters back | 0.6 | 0.3-0.5 | gray upholstery
+a row of empty chairs along the window wall a few meters back on the left | 0.55 | 0.3-0.5 | dark gray upholstery
+empty chairs set in a loose horseshoe a few meters back | 0.5 | 0.3-0.5 | open toward the front wall
+a long narrow table at the back of the room with stacked paper cups | 0.55 | 0.3-0.5 | plain white cloth
+a tall easel with a blank white pad on the left a few meters back | 0.6 | 0.3-0.5 | slim black legs

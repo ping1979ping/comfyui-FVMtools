@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+white oak two-top tables along the left banquette, a few meters back | 1.0 | 0.3-0.5 | matte {black|walnut} bentwood chairs pushed in, empty
+a four-top table in the center, a few meters back | 0.8 | 0.2-0.4 | white oak top, bentwood chairs pushed in
+a high bar counter with a brass rail a few meters back on the right | 0.8 | 0.3-0.5 | wire-seat stools lined along it, empty
+a round marble-top cafe table near the front window, a few meters back | 0.6 | 0.2-0.4 | two bentwood chairs pushed in
+open wood shelving with stacked white plates a few meters back on the left | 0.55 | 0.2-0.4 | lit from above
+a potted ficus beside the rear doorway, far back | 0.5 | 0.2-0.4 | glossy green leaves
+black-painted ductwork running over the center aisle, a few meters back | 0.6 | 0.2-0.4 | overhead
+empty tables for two beside the storefront windows on the right, a few meters back | 0.8 | 0.3-0.5 | chairs pushed in, daylight on the oak tops
+a cognac leather banquette behind the left tables, a few meters back | 0.7 | 0.3-0.5 | button-tufted, empty
+a tall brick pier with a wrought iron sconce a few meters back on the left | 0.4 | 0.2-0.4 | warm light on the brick
+a shelf of small potted herbs along the front window, a few meters back on the right | 0.45 | 0.2-0.4 | green against the daylight
+a long white oak communal table a few meters back on the right | 0.5 | 0.2-0.4 | bentwood chairs pushed in, empty
+a cast-iron radiator under the front window, a few meters back | 0.35 | 0.2-0.3 | painted black

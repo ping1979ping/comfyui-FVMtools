@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+cool daylight from the stair tower, flat soft shadows | 0.8 | - | -
+bright late-morning daylight through the window wall | 0.9 | - | -
+early morning blue light, downlights still warm | 0.55 | - | -
+mid-morning light, soft and even | 0.85 | - | -
+bright noon light, window wall glowing white | 0.7 | - | -
+early afternoon light reaching across the floor | 0.75 | - | -
+warm downlights under soft afternoon daylight | 0.7 | - | -
+low late-afternoon light flooding through the stair glass | 0.65 | - | -
+mid-afternoon light, even and bright | 0.8 | - | -
+dusk with the glass turning to dark mirrors | 0.35 | - | -

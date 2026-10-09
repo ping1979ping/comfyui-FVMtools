@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear crisp October day with yellow sycamore leaves | 0.85 | - | -
+humid summer haze over the river | 0.7 | - | -
+gray drizzle dimpling the river surface | 0.45 | - | -
+light snow on the grass with the river steaming | 0.4 | - | -
+breezy spring day with a high river and fresh leaves | 0.65 | - | -
+low fog drifting over the water | 0.45 | - | -
+clear cold winter day with a pale blue sky | 0.6 | - | -
+bright warm summer day with thin high clouds | 0.75 | - | -
+soft overcast day with a flat gray sky | 0.7 | - | -
+cool damp morning with mist on the water | 0.5 | - | -
+late-winter day with bare trees along the bank | 0.55 | - | -
+breezy autumn afternoon with drifting clouds | 0.6 | - | -

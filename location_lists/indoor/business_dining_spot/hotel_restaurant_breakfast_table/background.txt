@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a floor-to-ceiling window wall along the whole left side | 1.0 | 0.6-1.0 | thin dark mullions, softly blurred downtown buildings and trees beyond the glass
+the far wall of warm reclaimed wood panels | 0.9 | 0.6-1.0 | across the whole width of the image, thin-framed landscape art hung in an even line
+a long buffet counter along the far right wall | 0.85 | 0.5-0.9 | covered stainless chafing dishes, glass juice dispensers and pastry stands set out and untouched
+a dining room receding to the far end | 0.85 | 0.6-1.0 | rows of light oak tables set with flatware, bright window light falling across them, all empty
+an empty omelet station at the far end of the buffet | 0.55 | 0.3-0.7 | stainless burners and a steel counter under warm lights
+an open doorway at the far right into a quiet hotel lobby lounge | 0.6 | 0.3-0.7 | low armchairs and a floor lamp glimpsed beyond, all empty
+the far wall of soft {gray|warm white} plaster | 0.75 | 0.6-1.0 | a row of fabric-shade pendant lights hanging evenly in front of it across the width of the image
+tall potted plants beside the far windows on the left | 0.6 | 0.3-0.7 | glossy green leaves against the bright glass, standing in pale stone planters
+a coffee station along the far wall | 0.7 | 0.4-0.8 | stainless carafes in a row on a wood console under a slatted ceiling feature
+a glass atrium wall across the far end of the room | 0.5 | 0.5-0.9 | daylight pouring in over a line of potted trees, a pale stone floor beyond
+a wall of tall windows onto a quiet hotel courtyard at the far left | 0.6 | 0.5-0.9 | pale paving and a few clipped shrubs beyond the glass
+a warm stone-clad feature wall at the far center of the room | 0.5 | 0.4-0.8 | soft downlights grazing the texture, light oak tables set in front of it, all empty
+a dark bar with backlit shelves at the far end | 0.4 | 0.4-0.8 | glassware catching the light, empty stools in front
+a cereal and fruit station along the far right wall | 0.5 | 0.3-0.7 | clear glass bowls on a pale stone counter, untouched

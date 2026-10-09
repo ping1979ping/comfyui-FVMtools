@@ -1,0 +1,17 @@
+# fabric database
+# format: fabric_name | formality | family | weight
+
+wool blend | 0.75 | natural | medium
+crepe | 0.7 | synthetic | medium
+ponte | 0.6 | synthetic | medium
+viscose | 0.55 | synthetic | light
+polyester | 0.5 | synthetic | medium
+cotton | 0.55 | natural | medium
+silk | 0.85 | natural | light
+cashmere | 0.9 | natural | medium
+tweed | 0.8 | natural | heavy
+knit | 0.55 | knit | medium
+jersey | 0.5 | knit | medium
+leather | 0.7 | animal | medium
+suede | 0.7 | animal | medium
+metal | 0.7 | accessories | light

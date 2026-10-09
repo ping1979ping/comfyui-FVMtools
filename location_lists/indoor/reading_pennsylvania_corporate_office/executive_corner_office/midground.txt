@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a white oak veneer desk a few meters back in the middle of the room | 1.0 | 0.3-0.5 | a taupe wool task chair tucked in behind it
+two empty rust fabric armchairs facing the desk, a few meters back | 0.85 | 0.2-0.4 | a glass-topped side table between them
+a small round conference table with four empty chairs in the right corner | 0.8 | 0.2-0.4 | pale oak top, grey felt seats
+a low grey boucle sofa along the left wall | 0.7 | 0.2-0.4 | empty, a few meters back
+a long white oak credenza under the windows | 0.75 | 0.2-0.4 | closed doors, running along the window wall a few meters back
+a large snake plant in a stone planter in the window corner | 0.5 | 0.2-0.4 | a few meters back, tall and narrow
+a plain blue-grey wool rug under the armchairs | 0.5 | 0.2-0.4 | a soft border, a few meters back, all empty
+a narrow white oak console table against the right wall | 0.5 | 0.2-0.4 | low and clean, a few meters back, all empty
+a tall white oak cabinet with closed doors on the left | 0.55 | 0.2-0.4 | set against the wall a few meters back
+two empty leather side chairs by the window on the right | 0.6 | 0.2-0.4 | a small round table between them, a few meters back
+a wall-mounted display switched off on the left wall | 0.4 | 0.2-0.4 | a flat black rectangle, a few meters back
+a slim floor lamp with a linen shade beside the sofa on the left | 0.45 | 0.2-0.4 | tall and narrow, a few meters back, all empty
+a long window bench with grey cushions along the far glass wall | 0.4 | 0.2-0.4 | low and plain, a few meters back, all empty

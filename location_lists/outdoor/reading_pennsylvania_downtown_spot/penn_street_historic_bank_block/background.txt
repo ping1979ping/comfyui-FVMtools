@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the corner of Fifth and Penn Street | 0.9 | 0.6-1.0 | a nine-storey stone-faced bank tower with a grid of narrow windows rising far ahead, older brick buildings along both sides of the street
+a nine-storey early-1900s office tower | 0.85 | 0.6-1.0 | pale stone and brick with a repeating grid of narrow windows, looming at the end of the block above the neighboring roofs
+a shuttered stone-faced bank building | 0.8 | 0.6-1.0 | tall pilasters and a heavy carved cornice, dark windows, standing beside the tower at the far end of the block
+a cleared lot behind a chain-link fence | 0.6 | 0.6-1.0 | a gap in the row of old buildings with a bare brick party wall rising beside it, across the whole width of the image
+a row of old commercial buildings with boarded upper windows | 0.8 | 0.6-1.0 | brick and limestone, some storefronts empty, stretching along the far side of the street
+the south side of Penn Street | 0.8 | 0.6-1.0 | a large 2000s mid-rise of tan brick and glass with empty ground-floor storefronts, older buildings to its right
+a tan-brick Art Deco tower | 0.6 | 0.6-1.0 | seventeen storeys rising far behind the rooftops on the left, a hazy sky above it
+the wooded slope of Mount Penn | 0.55 | 0.6-1.0 | dark and hazy beyond the roofs at the far end of the street, a stepped limestone courthouse tower on the left
+a limestone bank facade | 0.7 | 0.6-1.0 | tall stone pilasters and iron-framed transom windows above closed doors, soot-stained, a pale gray sky above the roofline
+a long stretch of the 400 block | 0.75 | 0.6-1.0 | worn stone and brick facades of different heights along the left side of the street, narrowing toward a tall tower far ahead
+a brick building with scaffolding on its lower floors | 0.5 | 0.6-1.0 | on the right side of the street, a stone-faced tower rising far behind it
+a narrow strip of pale sky between tall facades | 0.5 | 0.6-1.0 | above the street canyon, the tower tip far ahead and brick walls on both sides

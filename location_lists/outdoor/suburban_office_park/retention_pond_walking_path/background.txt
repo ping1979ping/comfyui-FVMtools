@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+brick office building across the pond spanning the width of the image | 1.0 | 0.6-1.0 | tinted ribbon windows, its reflection in the water, a wooded hillside rising behind it on the left
+wooded hillside rising beyond the far bank of the pond | 0.85 | 0.6-1.0 | rounded and tree-covered, blue-gray hills layered behind it
+open farm field and tree line beyond the far side of the pond | 0.7 | 0.6-1.0 | a hedgerow along the edge, low hills along the horizon
+four-storey office building with a glass stair tower across the water on the right | 0.8 | 0.6-1.0 | brick and tinted glass, weeping willows leaning over the far bank
+weeping willows and river birches along the far shoreline | 0.7 | 0.6-1.0 | cattails and reeds at the water edge, a brick office wing glimpsed through the trees
+long low brick office building behind the far shoreline | 0.8 | 0.6-1.0 | ribbon windows, a grassy berm in front of it, spruces at both ends
+rolling Berks County hills beyond the pond | 0.7 | 0.6-1.0 | hazy ridgelines in layers above the tree line, open sky across the top third
+two office wings above a landscaped lawn rising from the far edge of the pond | 0.65 | 0.6-1.0 | brick and tinted glass, mature trees on both sides
+an aerating fountain plume rising in the middle of the pond | 0.4 | 0.6-1.0 | with a brick office building across the water behind it
+a stand of tall tulip poplars and oaks across the water on the left | 0.6 | 0.6-1.0 | a brick office corner visible between the trunks
+distant brick office park buildings across the far corner of the pond | 0.7 | 0.6-1.0 | long ribbon windows, tall trees on a gentle slope behind
+broad pond surface stretching across the whole frame | 0.9 | 0.6-1.0 | a far shoreline of reeds and willows with a brick office building beyond

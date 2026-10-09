@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late afternoon, warm sun raking the upper brick | 0.8 | - | -
+golden hour, low sun on the brick and cool shade below | 1.0 | - | -
+sunset, amber glow on the upper windows | 0.9 | - | -
+blue hour, dusk sky deepening above the rooflines | 0.95 | - | -
+dusk, warm string-light bulbs glowing on the wires | 1.0 | - | -
+twilight, soft violet and amber stage wash | 0.8 | - | -
+early evening, last warm light on the planter tops | 0.85 | - | -
+late evening, deep blue sky and glowing windows | 0.7 | - | -
+early night, string lights bright against a dark sky | 0.6 | - | -
+mid-afternoon, soft daylight in the brick courtyard | 0.5 | - | -
+evening, amber window glow from the upper floors | 0.85 | - | -
+after sunset, afterglow fading above the rooflines | 0.7 | - | -

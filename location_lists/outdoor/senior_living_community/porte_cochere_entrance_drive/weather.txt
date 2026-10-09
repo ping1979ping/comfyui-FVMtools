@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+crisp autumn day, clear and calm | 0.8 | - | -
+spring blossoms on flowering cherry trees | 0.6 | - | -
+light morning mist over the hills | 0.55 | - | -
+thin dusting of snow on the lawn and hedges | 0.45 | - | -
+lush green early summer | 0.8 | - | -
+just after rain, wet pavement and a bright sky | 0.5 | - | -
+hazy summer warmth, still air | 0.6 | - | -
+gentle breeze under a high blue sky | 0.9 | - | -
+red and gold maple leaves along the curb | 0.55 | - | -
+pale gray overcast sky, calm air | 0.65 | - | -
+bare branches against a pale winter sky | 0.4 | - | -

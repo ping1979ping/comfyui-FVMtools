@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm gray winter light outside the glass | 0.6 | - | -
+bright clear sky beyond the window wall | 0.9 | - | -
+soft overcast sky beyond the windows | 0.85 | - | -
+thin fog over the rooftops beyond the glass | 0.5 | - | -
+light rain on the window wall | 0.45 | - | -
+fresh spring light through the glass | 0.7 | - | -
+warm summer sun low outside the windows | 0.6 | - | -
+crisp autumn light beyond the glass | 0.7 | - | -
+light snowfall beyond the windows | 0.35 | - | -
+clean, still air with soft daylight | 0.75 | - | -
+calm air and a pale morning sky | 0.4 | - | -

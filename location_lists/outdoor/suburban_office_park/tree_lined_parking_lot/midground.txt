@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rows of parked sedans and SUVs between planted islands, a few meters back | 0.9 | 0.3-0.5 | plain silver, white and dark cars all parked neatly in their stalls
+young pin oaks standing in curbed mulch islands down the middle of the lot | 0.9 | 0.3-0.5 | evenly spaced, with daylilies and juniper beneath them
+black light poles with square fixtures spaced far down each drive aisle | 0.6 | 0.2-0.4 | slim and tall, receding toward the building
+a drive aisle curving toward the entrance canopy across the lot | 0.7 | 0.3-0.5 | painted crosswalk stripes leading to a pale walkway
+brick dumpster enclosure with closed wood gates far at the left edge | 0.45 | 0.2-0.4 | low and plain, partly hidden by shrubs
+segmental block retaining wall along the sloping side of the lot on the right | 0.45 | 0.2-0.4 | planted with juniper
+a shallow grass swale along the far edge of the lot | 0.5 | 0.2-0.4 | mowed banks and a few young trees
+rows of empty stalls with faded white lines stretching away toward the building | 0.8 | 0.3-0.5 | a few parked cars scattered far back
+mature shade trees overhanging the far rows of the lot | 0.8 | 0.3-0.5 | their trunks rising from mulched islands
+a pale concrete walkway crossing the lot toward the building a few meters back | 0.6 | 0.2-0.4 | flanked by low clipped shrubs
+a row of ornamental pear trees along the lot edge on the left | 0.5 | 0.2-0.4 | evenly spaced over a mowed strip
+a few light-colored cars parked in a distant row on the right | 0.55 | 0.2-0.4 | small and plain
+landscape islands of ornamental grasses and shrubs between the rows, a few meters back | 0.7 | 0.3-0.5 | low mounds edged with a concrete curb

@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wide cantilevered canopy on slim charcoal steel columns, a few meters back at the center | 1.0 | 0.3-0.5 | flat roof with a warm wood soffit and recessed downlights
+drop-off loop curving across the frame, a few meters back | 0.8 | 0.3-0.5 | smooth dark asphalt with fresh white lane stripes, empty
+granite planters with ornamental grasses, a few meters back on the left | 0.7 | 0.2-0.4 | low gray stone boxes, soft feathery blades
+stone seat wall with a built-in bench, a few meters back on the right | 0.6 | 0.3-0.5 | pale stone, empty
+row of steel bollards along the curb, a few meters back | 0.5 | 0.2-0.4 | slim and silver, evenly spaced
+crosswalk stripes leading to the entrance doors, a few meters back | 0.65 | 0.3-0.5 | crisp white bars on dark asphalt, empty
+young maples in tree grates along the walkway on the right | 0.6 | 0.3-0.5 | slim trunks, rounded crowns
+slim light poles along the loop, far on the left | 0.5 | 0.2-0.4 | black steel, evenly spaced
+empty bike rack under a young tree, far on the right | 0.4 | 0.2-0.4 | small steel loops, tidy
+glazed vestibule with double doors under the canopy, a few meters back at the center | 0.75 | 0.3-0.5 | clear glass, warm light inside
+rows of low evergreen shrubs along the building base, a few meters back on the left | 0.55 | 0.2-0.4 | clipped and dense
+empty stainless bench under the canopy, a few meters back on the right | 0.5 | 0.2-0.4 | slim and polished
+brick paver apron in front of the doors, a few meters back | 0.6 | 0.3-0.5 | warm red bricks in a calm pattern, empty
+curving concrete walkway beside a lawn, a few meters back on the left | 0.5 | 0.3-0.5 | pale concrete, clipped grass edge

@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small closed leather folio on the desk a few meters back | 0.7 | 0.02-0.06 | soft brown leather
+a slim black desk lamp at the far edge of the desk | 0.6 | 0.02-0.06 | matte black arm with a round shade
+a small glass water carafe on a distant side table | 0.55 | 0.02-0.06 | clear glass with a still surface
+a tiny ceramic bud vase with white flowers on the far credenza | 0.55 | 0.02-0.06 | glazed white ceramic
+a small framed landscape photograph of misty hills on the far credenza | 0.5 | 0.02-0.06 | thin black frame and soft grey tones
+a small stack of closed plain grey folders on the far desk corner | 0.5 | 0.02-0.06 | plain grey card covers
+a tiny smartphone lying face-down at the far edge of the desk | 0.45 | 0.02-0.05 | dark glass back with a thin metal edge
+a slim fountain pen across a closed notebook on the distant desk | 0.45 | 0.02-0.05 | polished black barrel on a plain cover
+a small glass dish of wrapped mints on a distant table | 0.45 | 0.02-0.05 | clear glass with white wrapped mints
+a compact brushed-steel pen holder at the far edge of the desk | 0.4 | 0.02-0.05 | brushed steel cylinder
+a small potted orchid on a distant window sill | 0.5 | 0.02-0.06 | white petals on a thin arching stem
+a small abstract ceramic sculpture on a high shelf at the back | 0.4 | 0.02-0.06 | pale matte glaze
+a small stone paperweight at the far edge of the desk | 0.35 | 0.02-0.05 | smooth grey stone

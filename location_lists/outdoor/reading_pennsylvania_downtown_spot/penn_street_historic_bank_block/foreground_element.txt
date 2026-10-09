@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+gray concrete sidewalk | 0.9 | 0.1-0.4 | patched squares and worn grooved joints
+cracked concrete sidewalk | 0.8 | 0.1-0.4 | dark seams and patched squares
+red brick paver sidewalk | 0.8 | 0.1-0.4 | worn bricks with a granite curb edge
+worn granite curb and gray pavement | 0.7 | 0.1-0.4 | stained slabs near the building line
+dusty gray sidewalk | 0.6 | 0.1-0.4 | stained concrete with a fence base along the edge
+poured concrete pavement | 0.7 | 0.1-0.4 | dark seams, a granite curb on the street side
+smooth pale concrete sidewalk | 0.6 | 0.1-0.4 | few cracks and shallow control joints
+dark asphalt gutter strip | 0.4 | 0.1-0.3 | worn edge beside a granite curb
+old brick sidewalk | 0.6 | 0.1-0.4 | dark red pavers, uneven and well worn
+mottled gray pavement | 0.55 | 0.1-0.4 | patched slabs with a stone curb
+stained concrete walk | 0.5 | 0.1-0.4 | tan slabs with hairline cracks
+brick paver band along the curb | 0.5 | 0.1-0.4 | beside gray concrete slabs

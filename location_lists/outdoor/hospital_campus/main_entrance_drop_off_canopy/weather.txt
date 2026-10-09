@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue sky and a calm warm day | 1.0 | - | -
+crisp fall afternoon with turning maples | 0.6 | - | -
+light rain with wet asphalt and glossy glass | 0.5 | - | -
+fresh snow with clear salted pavement | 0.45 | - | -
+summer haze under a pale blue sky | 0.6 | - | -
+breezy day with leaves drifting across the pavement | 0.5 | - | -
+thin high clouds and soft daylight | 0.85 | - | -
+overcast sky with soft even light | 0.85 | - | -
+partly cloudy sky with drifting shadows | 0.7 | - | -
+fresh green spring growth after a shower | 0.5 | - | -
+light mist hanging over the lawn | 0.4 | - | -
+cold bright winter day with a thin frost on the lawn | 0.45 | - | -

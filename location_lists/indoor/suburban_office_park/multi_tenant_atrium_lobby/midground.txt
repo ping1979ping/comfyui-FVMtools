@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+empty curved reception desk in pale wood and stone, a few meters back on the right | 0.8 | 0.3-0.5 | low and smooth, with nothing on top
+lounge group of empty upholstered chairs around a low table on the left, a few meters back | 0.8 | 0.3-0.5 | neutral gray fabric on slim steel legs
+tall ficus trees in square stone planters along the glass wall, a few meters back | 0.7 | 0.3-0.5 | glossy green leaves
+pendant light fixtures hanging over the lounge area, a few meters back | 0.5 | 0.2-0.4 | slim drum shades on thin cables
+second-level corridor with glass railings above, across the back of the hall | 0.6 | 0.3-0.5 | warm light along the upper level
+granite alcoves holding a pair of empty benches along the right wall, a few meters back | 0.5 | 0.2-0.4 | polished stone with soft downlights
+open staircase with a glass balustrade a few meters back on the left | 0.65 | 0.3-0.5 | brushed stainless rail and wide granite treads
+tall narrow columns clad in cream stone running down the length of the hall | 0.7 | 0.3-0.5 | evenly spaced along both sides
+recessed ceiling coves washing the side walls with warm light | 0.6 | 0.2-0.4 | soft glow along the length of the hall
+a pair of elevator doors framed in oak veneer a few meters back at the center | 0.6 | 0.3-0.5 | brushed stainless with glossy panels
+a low stone planter wall dividing the lounge from the entrance, a few meters back | 0.45 | 0.2-0.4 | filled with clipped greenery
+a bright glass vestibule at the end of the hall, far behind | 0.5 | 0.2-0.4 | double glass doors and tall sidelights
+empty cushioned bench seating along a stone wall on the left, a few meters back | 0.45 | 0.2-0.4 | neutral gray upholstery

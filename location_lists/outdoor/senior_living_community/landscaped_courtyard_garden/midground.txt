@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+waist-high cedar raised garden beds a few meters back on the left | 0.95 | 0.3-0.5 | neat plantings of herbs and low shrubs
+a tiered stone fountain with gently falling water in the middle of the courtyard, far back | 0.8 | 0.2-0.4 | pale weathered stone
+a curved flagstone path winding between planting beds toward the far wing | 0.85 | 0.3-0.5 | edged with low boxwood
+teak benches along the path under shade trees on the right, a few meters back | 0.75 | 0.2-0.4 | empty, silver-gray wood
+iron trellis arches with climbing vines over the path, a few meters back | 0.55 | 0.2-0.4 | black painted metal
+large glazed planters with clipped boxwood balls at the corners of the patio, far back | 0.6 | 0.2-0.4 | deep blue ceramic
+bistro tables with closed umbrellas on a paver patio, a few meters back on the right | 0.65 | 0.3-0.5 | empty, with iron chairs
+black iron lamp posts along the path in the middle distance | 0.6 | 0.2-0.4 | slim and spaced apart
+a bird feeder on a black iron pole, far back in a planting bed | 0.4 | 0.2-0.4 | slim and tall
+a stone birdbath surrounded by ferns, a few meters back on the left | 0.5 | 0.2-0.4 | weathered gray stone
+a bed of tall ornamental grasses far back on the right | 0.55 | 0.2-0.4 | soft feathery plumes
+clipped boxwood hedges forming neat squares around the fountain, a few meters back | 0.55 | 0.2-0.4 | low and dense
+a mature Japanese maple in a mulch bed, far back on the left | 0.5 | 0.2-0.4 | spreading branches
+a long pergola walk with wooden benches, far back on the right | 0.4 | 0.2-0.4 | white painted posts, all empty

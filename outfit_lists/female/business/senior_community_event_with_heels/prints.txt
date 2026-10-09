@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+subtle floral print | 0.40 | top | 0.45-0.8
+ditsy floral print | 0.25 | top | 0.45-0.75
+watercolor floral print | 0.20 | top,bottom | 0.45-0.7
+small polka dots | 0.30 | top | 0.45-0.8
+small geometric print | 0.30 | top,bottom | 0.45-0.8
+tonal stripe | 0.30 | top,bottom | 0.45-0.8
+subtle check | 0.20 | top,outerwear | 0.5-0.85
+tonal jacquard | 0.20 | top | 0.5-0.85
+fine windowpane check | 0.20 | outerwear,bottom | 0.55-0.85
+small houndstooth | 0.20 | outerwear,bottom | 0.55-0.85
+subtle herringbone weave | 0.20 | outerwear,bottom | 0.55-0.85
+fine pinstripe | 0.15 | bottom,outerwear | 0.6-0.85

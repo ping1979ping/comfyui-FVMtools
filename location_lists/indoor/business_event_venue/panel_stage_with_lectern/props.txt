@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small glass water carafe on a distant side table | 0.9 | 0.02-0.08 | clear glass
+a small stack of water glasses beside a carafe on the far stage | 0.7 | 0.02-0.08 | clear glass
+a small box of tissues on the shelf of the distant lectern | 0.5 | 0.02-0.08 | plain white box
+a small wireless clicker on the top of the far lectern | 0.5 | 0.02-0.08 | matte black
+a small gooseneck lamp clipped to the distant lectern | 0.55 | 0.02-0.08 | brushed brass, warm glow
+a small floral arrangement on the far end table | 0.6 | 0.02-0.08 | white blooms and greenery
+a small handheld microphone lying on a distant chair seat | 0.55 | 0.02-0.08 | matte black
+a small folded cloth under a carafe on a far side table | 0.4 | 0.02-0.08 | plain white linen
+a slim gooseneck microphone on the far lectern | 0.75 | 0.02-0.08 | matte black
+a tiny glass tumbler beside the carafe on a distant table | 0.6 | 0.02-0.08 | clear glass
+a small slim floor plant at the far edge of the stage | 0.5 | 0.02-0.08 | dark green leaves
+a small black cable coil at the far side of the stage | 0.4 | 0.02-0.08 | matte black

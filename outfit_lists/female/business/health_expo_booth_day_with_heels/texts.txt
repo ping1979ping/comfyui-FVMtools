@@ -1,0 +1,4 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: a business booth-day outfit carries no printed lettering, and readable badge or lanyard text would render as gibberish

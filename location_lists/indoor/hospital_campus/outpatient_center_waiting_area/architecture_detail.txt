@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+acoustic ceiling panels high up overhead | 0.85 | 0.05-0.2 | slim recessed linear lights
+curved soffit above the far registration counter | 0.7 | 0.05-0.2 | smooth white plaster with warm cove light
+large picture window with a deep sill at the far wall | 0.7 | 0.05-0.2 | white sill, soft daylight
+warm gray wall paint with light oak trim along the sides | 0.7 | 0.05-0.2 | clean straight edges
+narrow rubber wall base along the back wall | 0.5 | 0.05-0.2 | soft taupe, thin and even
+wide white oak door frames at the far end of the room | 0.6 | 0.05-0.2 | clean square profiles
+warm wall sconces spaced along the far wall | 0.65 | 0.05-0.2 | small frosted glass shades
+slim handrail along the corridor edge on the right | 0.5 | 0.05-0.2 | pale wood, straight
+narrow ceiling light cove around the edge of the room | 0.6 | 0.05-0.2 | soft warm line of light
+frosted glass door panels on the far right wall | 0.5 | 0.05-0.2 | pale milky glass
+slim black steel window frames along the far wall | 0.5 | 0.05-0.2 | thin and crisp
+small round pendant lights hanging high above the seating | 0.55 | 0.05-0.2 | matte white shades

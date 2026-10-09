@@ -1,0 +1,10 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Hairstyle slot (fabric "-"): style only, no hair colour or length, every entry ends with a face cue.
+
+smooth low chignon at the nape, the face turned toward the camera | 0.90 | 0.55-0.95 | -
+neat low bun with a slim barrette, the face open toward the camera | 0.85 | 0.55-0.95 | -
+low ponytail tied at the nape with a soft side part, the face turned toward the camera | 0.80 | 0.5-0.85 | -
+small claw clip holding a neat half-up twist, the face turned toward the camera | 0.70 | 0.5-0.85 | -
+polished blowout with a soft side part tucked behind the ears, the face open toward the camera | 0.75 | 0.55-0.95 | -
+sleek side part with the hair pinned back by two small hairpins, the face open toward the camera | 0.60 | 0.6-0.95 | -

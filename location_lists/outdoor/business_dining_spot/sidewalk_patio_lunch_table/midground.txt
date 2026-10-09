@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a row of empty cafe tables along the sidewalk edge, a few meters back | 1.0 | 0.3-0.5 | black wrought-iron bistro chairs pushed in
+low boxwood planter boxes forming the patio edge, a few meters back | 0.7 | 0.2-0.4 | clipped and neat
+a {cream|dark green} market umbrella shading an empty table a few meters back on the right | 0.6 | 0.2-0.4 | closed canopy, black pole
+a granite curb running along the street, a few meters back | 0.6 | 0.2-0.4 | pale gray stone
+a slatted wooden bench a few meters back on the left | 0.5 | 0.2-0.4 | empty, dark green paint
+a brick-paved sidewalk beyond the patio, a few meters back | 0.7 | 0.3-0.5 | tidy herringbone
+ornamental grasses in pots beside a building entrance, a few meters back | 0.45 | 0.2-0.4 | soft and low
+string lights draped from the building to a pole, a few meters back | 0.5 | 0.1-0.3 | bare warm bulbs
+an empty four-top table a few meters back in the center | 0.7 | 0.2-0.4 | black iron frame, chairs pushed in
+a low wrought-iron railing around the patio, a few meters back | 0.6 | 0.2-0.4 | black scrollwork
+a street tree in a cast-iron grate a few meters back on the right | 0.55 | 0.2-0.4 | smooth gray trunk
+empty round tables beside the storefront windows, a few meters back on the left | 0.7 | 0.3-0.5 | black metal tops, chairs pushed in
+a narrow stone step up to a shop doorway, a few meters back | 0.4 | 0.1-0.3 | worn granite

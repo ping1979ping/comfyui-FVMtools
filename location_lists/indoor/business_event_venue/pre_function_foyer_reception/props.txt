@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+tiny paper cocktail napkins stacked on a distant high-top | 0.7 | 0.02-0.08 | plain white
+small tea lights in glass on the high-tops far in the back | 0.8 | 0.02-0.08 | clear glass, warm flame
+a small bowl of mixed nuts on a distant high-top | 0.6 | 0.02-0.08 | white ceramic
+small champagne flutes lined on a tray at the far edge of the bar | 0.55 | 0.02-0.08 | clear glass
+a small matte black pen cup on the distant registration table | 0.65 | 0.02-0.08 | matte black
+a small glass water dispenser with lemon slices on a far side table | 0.6 | 0.02-0.08 | clear glass, yellow slices
+a small potted orchid on the entry table far back | 0.6 | 0.02-0.08 | white blooms
+a small wire basket of wrapped mints on a distant bar top | 0.5 | 0.02-0.08 | black wire
+tiny stacked white cups at the distant coffee station | 0.6 | 0.02-0.08 | white porcelain
+a small brass stanchion base at the far end of the rope line | 0.45 | 0.02-0.08 | polished brass
+a small sculptural grass planter beside a distant column | 0.5 | 0.02-0.08 | matte charcoal pot
+a small unlit pillar candle on a far round table | 0.55 | 0.02-0.08 | cream wax

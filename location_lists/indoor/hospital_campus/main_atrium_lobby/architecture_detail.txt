@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+acoustic wood baffles high up along the ceiling | 0.9 | 0.05-0.2 | evenly spaced pale oak blades
+slim black mullions across the far glass wall | 0.85 | 0.05-0.2 | thin vertical lines
+small round pendant lights hanging high above the stair landing | 0.8 | 0.05-0.2 | white glass globes
+thin brushed steel handrail along the stair edge on the left | 0.7 | 0.05-0.2 | slim and straight
+narrow recessed light cove along the ceiling edge | 0.7 | 0.05-0.2 | soft warm line of light
+square columns clad in pale wood veneer along the right side | 0.65 | 0.05-0.2 | smooth vertical grain
+thin glass balustrade of the mezzanine high up at the back | 0.65 | 0.05-0.2 | clear panels with a slim steel rail
+slim skylight strips high up along the far ceiling | 0.7 | 0.05-0.2 | long narrow bands of daylight
+narrow brass inlay line running along the far stone wall | 0.5 | 0.05-0.2 | fine warm metal strip
+pale oak door frames at the far end of the lobby | 0.5 | 0.05-0.2 | clean square profiles
+small round pendant lamps over the far coffee alcove | 0.5 | 0.05-0.2 | matte white shades

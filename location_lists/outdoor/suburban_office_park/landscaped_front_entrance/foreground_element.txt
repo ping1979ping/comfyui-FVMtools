@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+broom-finished pale concrete sidewalk | 1.0 | 0.1-0.4 | tooled joints and a granite curb along the edge
+smooth light-gray concrete walkway | 0.85 | 0.1-0.4 | wide and gently curving
+red-brown brick paver walkway in running bond | 0.7 | 0.1-0.4 | tight even joints
+buff exposed-aggregate concrete walkway | 0.6 | 0.1-0.4 | fine pebbled surface
+flame-finish granite landing in front of the doors | 0.55 | 0.1-0.4 | pale speckled stone
+mowed lawn strip beside the walkway | 0.7 | 0.1-0.4 | faint mower stripes
+dark asphalt entrance drive with a rolled concrete curb | 0.6 | 0.1-0.4 | smooth and even
+brick paver apron in front of the entrance | 0.65 | 0.1-0.4 | warm red-brown pavers
+light gray concrete pavement with saw-cut joints | 0.75 | 0.1-0.4 | clean broom finish
+clean dark mulch bed edging a concrete walk | 0.45 | 0.1-0.4 | even and freshly raked
+patched gray asphalt at the drive edge | 0.4 | 0.1-0.4 | slightly worn seams
+concrete sidewalk beside a clipped grass verge | 0.7 | 0.1-0.4 | tooled joints every few steps

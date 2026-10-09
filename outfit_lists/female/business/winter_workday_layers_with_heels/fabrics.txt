@@ -1,0 +1,14 @@
+# format: fabric_name | formality | family | weight
+
+wool | 0.80 | natural | medium
+merino | 0.75 | natural | medium
+cashmere | 0.90 | natural | medium
+silk | 0.90 | natural | light
+crepe | 0.70 | synthetic | medium
+ponte | 0.65 | knit | medium
+flannel | 0.70 | natural | medium
+tweed | 0.80 | natural | heavy
+cotton poplin | 0.65 | natural | light
+leather | 0.70 | animal | medium
+suede | 0.70 | animal | medium
+metal | 0.70 | accessories | light

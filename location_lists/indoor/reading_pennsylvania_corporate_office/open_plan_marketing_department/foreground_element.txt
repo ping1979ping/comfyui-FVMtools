@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a smooth pale polished concrete floor | 1.0 | 0.1-0.4 | faint trowel marks and a soft sheen
+a wide-plank white oak floor | 0.9 | 0.1-0.4 | pale boards with a matte finish
+a warm grey sealed concrete floor | 0.9 | 0.1-0.4 | fine saw-cut joints in a regular grid
+a plain mid-grey low-pile carpet | 0.8 | 0.1-0.4 | smooth and even, no pattern
+a wood-look vinyl plank floor | 0.8 | 0.1-0.4 | pale oak tone with a low sheen
+a light grey polished concrete floor | 0.75 | 0.1-0.4 | soft reflections of the tall windows
+an old maple plank mill floor | 0.6 | 0.1-0.4 | worn honey-brown boards with fine nail lines
+a plain charcoal low-pile carpet | 0.6 | 0.1-0.4 | smooth and even, no pattern
+a pale grey sealed concrete floor | 0.6 | 0.1-0.4 | subtle sheen, a few hairline cracks
+a plain warm taupe low-pile carpet | 0.55 | 0.1-0.4 | smooth and even, no pattern
+a matte oak-look plank floor | 0.5 | 0.1-0.4 | long boards in a light honey tone
+a smooth light concrete floor | 0.5 | 0.1-0.4 | a long soft reflection of the window wall

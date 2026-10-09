@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+cocktail high-tops with black stretch covers a few meters back | 1.0 | 0.3-0.5 | scattered across the paving, nothing on top, all empty
+clustered bistro tables with metal chairs pushed in a few meters back on the left | 0.8 | 0.3-0.5 | black metal frames
+concrete planters with ornamental grasses at intervals a few meters back | 0.8 | 0.3-0.5 | tall soft plumes
+folded gray patio umbrellas beside the tables a few meters back on the right | 0.55 | 0.3-0.5 | tied closed
+perennial beds of ornamental grasses along the left wall a few meters back | 0.65 | 0.3-0.5 | low, neat plumes
+a bar-height counter draped in black cloth, empty, a few meters back on the right | 0.7 | 0.3-0.5 | clean and tidy
+a food station with white linens and chafing trays a few meters back on the left | 0.6 | 0.3-0.5 | lids closed
+a small string-lit tree in the middle of the courtyard a few meters back | 0.55 | 0.3-0.5 | glowing bulbs among the branches
+a low stone seating wall along the left side a few meters back | 0.5 | 0.3-0.5 | weathered gray stone, all empty
+a stage lighting rig on slim stands beside the stage a few meters back | 0.5 | 0.3-0.5 | soft violet wash
+empty bistro tables set for an evening reception a few meters back | 0.85 | 0.3-0.5 | white cloths, unlit lanterns
+a long row of cocktail high-tops down the middle of the courtyard a few meters back | 0.75 | 0.3-0.5 | black covers, evenly spaced, all empty
+a bar counter with stacked clear cups and a pitcher a few meters back on the right | 0.45 | 0.3-0.5 | black cloth

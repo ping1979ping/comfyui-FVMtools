@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning, flat even ceiling light across the hall | 0.9 | - | -
+mid-morning, soft daylight from a far side window | 1.0 | - | -
+late morning, bright even ceiling light, doors still closed | 0.9 | - | -
+midday, cool daylight with warm accent spots | 0.8 | - | -
+early afternoon, flat even ceiling light | 0.8 | - | -
+mid-afternoon, soft daylight from the far windows | 0.8 | - | -
+late afternoon, warm light edging the carpet | 0.7 | - | -
+early evening, ceiling lights warm against dusk windows | 0.65 | - | -
+evening, warm accent spots washing the far wall | 0.6 | - | -
+morning, around ten, even white light overhead | 0.85 | - | -
+noon, bright daylight from the far side windows | 0.6 | - | -
+dusk, blue light fading in the far windows | 0.5 | - | -

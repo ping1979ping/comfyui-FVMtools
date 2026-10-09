@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+carved limestone cornice far up the block | 0.7 | 0.05-0.15 | slim band above the second-floor windows
+slim cast-iron columns at a shopfront far down the block | 0.55 | 0.03-0.1 | worn dark paint
+a rusted fire escape on a distant side wall | 0.5 | 0.03-0.1 | thin iron zigzag
+pale stone window lintels across the street | 0.65 | 0.05-0.15 | pale slabs over the brick upper floors
+a recessed stone bank doorway across the street | 0.55 | 0.05-0.15 | heavy carved surround, dark closed door
+weathered sheet-metal parapets along the far rooflines | 0.5 | 0.03-0.1 | thin gray caps
+dark aluminum storefront frames far down the block | 0.55 | 0.03-0.1 | slim frames around empty windows
+patched brick sections on a distant gable wall | 0.45 | 0.03-0.1 | soot-stained mortar joints
+black traffic signals at the far intersection | 0.5 | 0.03-0.1 | dark housings on slim mast arms
+slim black cast-iron lampposts spaced far down the block | 0.65 | 0.05-0.15 | fluted poles with round globes
+tall arched windows across the street | 0.55 | 0.05-0.15 | narrow openings in the limestone bank facade

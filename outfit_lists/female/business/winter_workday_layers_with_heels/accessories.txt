@@ -1,0 +1,18 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Textile accessories use wool / silk / leather only (those get a wearable colour, not a metal tone).
+
+wide scarf | 0.80 | 0.55-0.9 | wool
+soft scarf | 0.60 | 0.55-0.9 | wool,silk
+neck scarf | 0.35 | 0.6-0.9 | silk
+gloves | 0.45 | 0.6-0.9 | leather
+fine black opaque tights | 0.40 | 0.55-0.9 | -
+thin belt | 0.40 | 0.6-0.9 | leather
+slim wristwatch | 0.70 | 0.55-0.95 | metal
+pearl stud earrings | 0.70 | 0.6-0.95 | metal
+small hoop earrings | 0.55 | 0.55-0.9 | metal
+delicate pendant necklace | 0.55 | 0.6-0.9 | metal
+single-strand pearl necklace | 0.40 | 0.65-0.95 | metal
+fine bracelet | 0.40 | 0.55-0.9 | metal
+simple ring | 0.35 | 0.55-0.9 | metal
+brooch | 0.25 | 0.65-0.95 | metal

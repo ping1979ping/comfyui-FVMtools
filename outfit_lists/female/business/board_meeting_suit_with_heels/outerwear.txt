@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+nipped-waist single-breasted blazer | 0.90 | 0.75-1.0 | wool,wool blend
+tailored suit jacket | 0.85 | 0.75-1.0 | wool,wool blend
+double-breasted blazer | 0.65 | 0.75-1.0 | wool,wool blend
+blazer with peak lapels | 0.50 | 0.8-1.0 | wool,wool blend
+one-button blazer | 0.55 | 0.75-1.0 | wool,crepe
+longline blazer | 0.55 | 0.75-1.0 | wool,wool blend
+belted blazer | 0.35 | 0.75-1.0 | wool,crepe
+collarless jacket | 0.35 | 0.75-1.0 | crepe,wool blend
+boucle jacket | 0.35 | 0.75-1.0 | tweed,wool
+tailored waistcoat | 0.30 | 0.8-1.0 | wool,wool blend
+tailored topcoat | 0.25 | 0.7-1.0 | wool,cashmere
+belted wrap coat | 0.25 | 0.7-1.0 | wool,cashmere

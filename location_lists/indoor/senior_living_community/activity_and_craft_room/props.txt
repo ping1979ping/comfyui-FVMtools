@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small jar of paintbrushes beside a watercolor palette on a distant worktable | 0.7 | 0.02-0.08 | wooden handles, bright paint pans
+small skeins of colorful yarn in a woven basket far back on a shelf | 0.65 | 0.02-0.08 | soft blue, rose and cream wool
+tiny ball of yarn with two knitting needles on a far table | 0.55 | 0.02-0.08 | soft gray wool, wooden needles
+small block of clay on a wooden board on a distant counter | 0.5 | 0.02-0.08 | damp terracotta clay
+small wooden embroidery hoop on a far table | 0.5 | 0.02-0.08 | floral stitching
+small jar of colored pencils on a distant worktable | 0.55 | 0.02-0.08 | bright mixed colors, glass jar
+slim stack of blank sketch pads at the far corner of a table | 0.5 | 0.02-0.08 | plain white paper, spiral binding
+tiny pot of ferns on a distant windowsill | 0.5 | 0.02-0.08 | soft green fronds
+small ceramic bowl on a shelf far back | 0.45 | 0.02-0.08 | glazed pale blue
+compact tin of buttons on a far sewing table | 0.4 | 0.02-0.08 | round metal tin, mixed colors
+small spools of thread on a rack far back | 0.4 | 0.02-0.08 | bright mixed colors, wooden rack
+small watering can on a distant windowsill | 0.4 | 0.02-0.08 | painted white metal
+slim glass vase of dried grasses on a far shelf | 0.4 | 0.02-0.08 | clear glass, pale tan stems

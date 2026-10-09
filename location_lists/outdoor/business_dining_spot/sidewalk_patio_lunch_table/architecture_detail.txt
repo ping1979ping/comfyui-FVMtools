@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+red brick facades with white-trimmed windows across the street | 0.8 | 0.05-0.2 | tall and narrow
+a Victorian porch with turned posts at the far left | 0.55 | 0.05-0.15 | white paint
+rowhouse cornices with brick corbels high up | 0.6 | 0.05-0.15 | stepped detail
+cast-iron lamp standards along the far curb | 0.6 | 0.02-0.08 | black, slim
+stone window lintels above the far upper windows | 0.5 | 0.03-0.1 | pale limestone
+a shallow stoop with an iron handrail across the street | 0.45 | 0.03-0.1 | black iron
+dark green window frames in the far storefronts | 0.55 | 0.05-0.15 | thin mullions
+a granite corner stone at the far building | 0.4 | 0.03-0.08 | rough pale gray
+a slim downspout running down the far brick wall | 0.35 | 0.01-0.05 | black metal
+a small cast-iron boot scraper at the far doorstep | 0.3 | 0.01-0.03 | black
+brick pilasters between the far storefronts | 0.5 | 0.05-0.15 | slightly darker brick

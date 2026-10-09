@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a plain mid-grey low-pile carpet | 1.0 | 0.1-0.4 | smooth and even, no pattern
+a plain light grey low-pile carpet | 0.8 | 0.1-0.4 | smooth and even, no pattern
+a wood-look vinyl plank floor | 0.7 | 0.1-0.4 | pale oak tone with a low sheen
+a plain charcoal low-pile carpet | 0.7 | 0.1-0.4 | smooth and even
+a plain warm taupe low-pile carpet | 0.6 | 0.1-0.4 | soft and even
+a pale oak-look plank floor | 0.5 | 0.1-0.4 | long boards with a satin finish
+a smooth sealed concrete floor | 0.4 | 0.1-0.4 | light grey with a quiet sheen
+a plain blue-grey low-pile carpet | 0.5 | 0.1-0.4 | smooth and even
+a plain sage-grey low-pile carpet | 0.4 | 0.1-0.4 | soft and even
+a wide-plank oak floor | 0.5 | 0.1-0.4 | warm boards with a matte finish
+a plain beige low-pile carpet | 0.5 | 0.1-0.4 | smooth and even, no pattern
+a plain silver-grey low-pile carpet | 0.45 | 0.1-0.4 | soft daylight across the pile

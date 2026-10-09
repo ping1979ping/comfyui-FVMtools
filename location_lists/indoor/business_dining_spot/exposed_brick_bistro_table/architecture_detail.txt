@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed red brick arches along the left wall | 0.8 | 0.05-0.2 | deep mortar joints
+a pressed-tin ceiling high overhead | 0.6 | 0.05-0.15 | painted warm white
+black steel ductwork and conduit along the ceiling | 0.7 | 0.05-0.2 | matte black
+heavy timber beams across the ceiling | 0.5 | 0.05-0.15 | dark stained
+large storefront windows on the right | 0.6 | 0.05-0.2 | black mullions
+wrought iron sconces mounted on the far brick wall | 0.55 | 0.02-0.08 | warm glow
+a deep green plaster half-wall along the far side | 0.45 | 0.05-0.15 | smooth and matte
+bare Edison bulbs hanging high up in a line | 0.55 | 0.02-0.08 | warm filaments
+a thin brass rail along the far bar | 0.4 | 0.02-0.08 | polished
+a slim black iron column in the middle of the room | 0.4 | 0.03-0.1 | matte
+a transom window above the rear door | 0.35 | 0.03-0.08 | small and rectangular

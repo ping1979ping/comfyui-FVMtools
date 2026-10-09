@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+warm oak plank floor | 1.0 | 0.1-0.4 | clean, with faint marks of paint
+pale vinyl plank floor that reads as real oak | 0.8 | 0.1-0.4 | matte finish
+smooth polished concrete floor | 0.6 | 0.1-0.4 | soft gray sheen
+plain low-pile carpet in soft gray | 0.6 | 0.1-0.4 | smooth and even
+sunlit rectangle of oak floor from the window | 0.7 | 0.1-0.4 | warm daylight
+light maple plank floor | 0.7 | 0.1-0.4 | satin finish
+wide-plank floor in pale ash | 0.6 | 0.1-0.4 | matte finish
+smooth warm-beige linoleum floor | 0.45 | 0.1-0.4 | clean and even
+plain oatmeal low-pile carpet | 0.5 | 0.1-0.4 | evenly lit
+wide-plank oak floor in a honey tone | 0.65 | 0.1-0.4 | soft reflections of the windows
+smooth light-gray stone floor | 0.45 | 0.1-0.4 | honed and even
+warm oak floor | 0.5 | 0.1-0.4 | a faint dusting of clay dust

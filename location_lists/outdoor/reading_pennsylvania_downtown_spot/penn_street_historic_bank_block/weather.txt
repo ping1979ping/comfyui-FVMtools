@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cold bright November morning with bare branches | 0.8 | - | -
+steady drizzle with shiny gray pavement | 0.5 | - | -
+hot muggy July afternoon, heat shimmer on asphalt | 0.5 | - | -
+wet snow melting in the gutters | 0.4 | - | -
+leaden overcast with rain just ending | 0.55 | - | -
+crisp clear spring morning with fresh tree leaves | 0.8 | - | -
+clear cool autumn day with thin high clouds | 0.85 | - | -
+hazy humid summer afternoon | 0.6 | - | -
+light snow dusting the ledges under a gray sky | 0.45 | - | -
+breezy day with drifting clouds after a storm | 0.5 | - | -
+overcast late-winter day with bare street trees | 0.6 | - | -

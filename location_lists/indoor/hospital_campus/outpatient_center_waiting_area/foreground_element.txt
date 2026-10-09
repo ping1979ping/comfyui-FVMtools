@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+plain warm gray low-pile carpet | 1.0 | 0.1-0.4 | smooth and even, soft light on the surface
+polished pale concrete floor | 0.8 | 0.1-0.4 | faint trowel marks, soft reflections of the ceiling lights
+wood-look vinyl plank floor | 0.8 | 0.1-0.4 | long oak-tone boards, satin finish
+wide white oak plank floor | 0.7 | 0.1-0.4 | warm satin finish, long straight boards
+large pale porcelain floor slabs | 0.7 | 0.1-0.4 | thin even joints, soft sheen
+plain taupe low-pile carpet | 0.75 | 0.1-0.4 | smooth and calm, no pattern
+light gray polished concrete floor | 0.65 | 0.1-0.4 | even and calm, faint reflections
+warm walnut-tone vinyl plank floor | 0.6 | 0.1-0.4 | long straight boards, satin finish
+pale stone-look porcelain floor | 0.6 | 0.1-0.4 | large slabs, no pattern
+plain sage low-pile carpet | 0.5 | 0.1-0.4 | smooth and even, no pattern
+smooth soft gray linoleum floor | 0.45 | 0.1-0.4 | matte, faint reflections
+pale gray terrazzo floor | 0.5 | 0.1-0.4 | fine calm speckle, glossy

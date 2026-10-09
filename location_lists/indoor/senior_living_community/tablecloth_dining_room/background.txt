@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the dining room | 1.0 | 0.6-1.0 | three large round windows in white frames across the whole width of the image, a lawn and old oaks visible outside, floor-length drapes tied back on both sides
+the long window wall on the left | 0.9 | 0.6-1.0 | tall windows with tied-back cream drapes looking out over a stone patio and rolling lawn, white wainscoting below
+the far end of the dining room | 0.85 | 0.6-1.0 | a dark wood sideboard with silver serving dishes along the whole back wall, framed landscape paintings above it, tall windows on both sides
+the rear wall of the dining room | 0.8 | 0.6-1.0 | an arched opening to a smaller private dining room on the right, painted wainscoting along the left, a built-in china cabinet with glass doors in the corner
+the far wall with a plate rail | 0.65 | 0.6-1.0 | white wainscoting topped by a plate rail of decorative china, a pair of brass wall sconces, tall windows on the right
+the far side of a long banquet room | 0.6 | 0.6-1.0 | a continuous wall of tall windows and French doors across the whole width of the image opening to a stone patio
+the distant wall of the dining room | 0.6 | 0.6-1.0 | pale sage painted walls, three framed botanical paintings in a row, double doors closed in the far corner
+the far corner of the dining room | 0.55 | 0.6-1.0 | a tall bay window with a built-in cushioned window seat, floor-length drapes, a round table set in front, all empty
+the back wall of a bright sunroom dining area | 0.5 | 0.6-1.0 | glass walls on three sides looking into a garden, white trim, a ceiling fan turning slowly overhead
+the far wall behind the dining tables | 0.5 | 0.6-1.0 | a wide cased opening with fluted white trim leading to a bright hallway on the left, tall windows on the right, all empty
+the rear wall of a formal dining room | 0.45 | 0.6-1.0 | cream and burgundy striped wallpaper above white wainscoting, tall windows, a crystal chandelier glowing overhead
+the back wall between the windows | 0.5 | 0.6-1.0 | a wide fireplace with a white mantel in the center, tall windows on both sides, a large mirror above the mantel

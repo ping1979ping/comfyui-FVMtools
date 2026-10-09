@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+the wide slow river a few meters back | 0.95 | 0.3-0.5 | gently rippled water between stone riprap banks
+a stone riprap bank along the water's edge | 0.75 | 0.25-0.45 | a few meters back, large gray rocks and a strip of mown grass
+sycamores and willows leaning over the water | 0.7 | 0.25-0.45 | a few meters back on the left, pale mottled trunks
+a paved riverside walkway curving along the bank | 0.8 | 0.3-0.5 | a plain metal pipe railing a few meters back
+empty slatted park benches facing the water | 0.5 | 0.2-0.4 | a few meters back along the walkway on the right
+slim lamp posts along the path | 0.55 | 0.2-0.4 | evenly spaced a few meters back, curving away to the left
+a concrete overlook platform with a steel rail | 0.65 | 0.25-0.45 | a few meters back at the river's edge
+a mowed lawn strip dotted with young trees | 0.6 | 0.25-0.45 | a few meters back along the bank
+a metal pipe railing along the river edge | 0.6 | 0.2-0.4 | a few meters back, running away to the right
+a wide grass slope down to the water | 0.6 | 0.25-0.45 | a few meters back, young trees along the bank
+the calm water surface a few meters back | 0.7 | 0.3-0.5 | reflecting the bridge arches in soft ripples
+a gravel shoulder and a low retaining wall | 0.4 | 0.2-0.4 | a few meters back beside the walkway

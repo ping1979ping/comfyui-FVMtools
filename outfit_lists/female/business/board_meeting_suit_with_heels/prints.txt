@@ -1,0 +1,12 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+fine pinstripes | 0.30 | bottom,outerwear | 0.75-1.0
+fine chalk stripes | 0.20 | bottom,outerwear | 0.75-1.0
+subtle windowpane check | 0.22 | bottom,outerwear | 0.7-1.0
+glen plaid check | 0.18 | bottom,outerwear | 0.7-1.0
+tonal herringbone weave | 0.25 | bottom,outerwear | 0.75-1.0
+small houndstooth check | 0.18 | bottom,outerwear | 0.7-1.0
+subtle check | 0.15 | bottom,outerwear | 0.7-1.0
+tonal jacquard pattern | 0.15 | top | 0.75-1.0
+tiny pin dots | 0.12 | top | 0.7-1.0
+fine vertical stripes | 0.12 | top | 0.7-1.0
+small geometric pattern | 0.10 | top | 0.7-1.0

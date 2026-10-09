@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a small round white table with an oak edge in the middle of the room | 1.0 | 0.3-0.5 | four empty felt chairs in sage and charcoal pushed in around it
+a small oval oak table a few meters back | 0.8 | 0.3-0.5 | three empty charcoal chairs pushed in around it
+a wall-mounted display switched off on the left wall | 0.5 | 0.1-0.3 | a flat black rectangle, a few meters back
+a low white credenza beneath the far window | 0.6 | 0.2-0.4 | closed doors, a few meters back
+a rust fabric pouf near the window on the right | 0.45 | 0.1-0.3 | empty, a few meters back
+a rolling blank glass board against the right wall | 0.45 | 0.2-0.4 | a few meters back
+a tall snake plant in the far left corner | 0.5 | 0.1-0.3 | narrow green leaves, a few meters back
+a narrow oak wall shelf with a small hanging pothos on the right wall | 0.4 | 0.1-0.3 | high up, a few meters back
+four empty felt chairs around a round table a few meters back | 0.9 | 0.3-0.5 | sage and charcoal seats, oak legs
+a compact standing-height table by the window | 0.4 | 0.1-0.3 | two empty stools, a few meters back
+a low sage felt bench along the left wall | 0.4 | 0.2-0.4 | empty, a few meters back
+an empty grey felt privacy panel standing on the left | 0.4 | 0.2-0.4 | tall and narrow, a few meters back

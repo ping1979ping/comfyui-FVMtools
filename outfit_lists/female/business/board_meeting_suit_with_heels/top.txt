@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+button-front blouse | 0.80 | 0.7-1.0 | silk,cotton poplin
+crisp button-front shirt | 0.60 | 0.7-1.0 | cotton poplin
+tie-neck blouse | 0.70 | 0.7-1.0 | silk,crepe
+soft-bow blouse | 0.55 | 0.75-1.0 | silk,crepe
+cap-sleeve shell | 0.50 | 0.7-1.0 | silk,crepe
+concealed-placket blouse | 0.45 | 0.7-1.0 | silk,crepe
+mock-neck top | 0.55 | 0.7-1.0 | crepe,silk
+draped-neck blouse | 0.55 | 0.7-1.0 | crepe,silk
+pleat-neck blouse | 0.50 | 0.7-1.0 | crepe,silk
+elbow-sleeve top | 0.45 | 0.7-1.0 | crepe,silk
+fine-gauge turtleneck | 0.55 | 0.7-1.0 | wool,cashmere
+fine-gauge mock-neck sweater | 0.45 | 0.7-1.0 | wool,cashmere

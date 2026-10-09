@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+three-storey atrium with a steel truss skylight far overhead | 0.7 | 0.05-0.15 | thin painted framing
+brushed stainless rail on a glass balustrade along the upper level, far above | 0.65 | 0.05-0.15 | slim bright line
+thin-mullion tinted curtain wall at the far end | 0.6 | 0.05-0.15 | bronze-green glass
+drywall soffit with a continuous cove light high overhead | 0.55 | 0.05-0.15 | narrow warm glow
+square columns wrapped in cream stone along the far side | 0.55 | 0.05-0.15 | slim pale shafts
+oak veneer surround framing the distant elevator doors | 0.6 | 0.05-0.15 | warm thin frame
+acoustic ceiling tile along the far side corridors | 0.4 | 0.05-0.15 | plain white grid
+slim recessed downlights in a regular row high overhead | 0.55 | 0.05-0.15 | round warm downlights
+slim stainless door pulls on the distant glass doors | 0.4 | 0.02-0.08 | brushed stainless
+narrow aluminum door frames along the upper level at the far end | 0.45 | 0.05-0.15 | thin dark lines

@@ -1,0 +1,14 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+slim clutch | 0.80 | 0.75-1.0 | satin,leather
+envelope clutch | 0.70 | 0.75-1.0 | satin,leather
+small chain-strap bag | 0.65 | 0.7-1.0 | leather,satin
+structured mini top-handle bag | 0.60 | 0.7-1.0 | leather,satin
+box clutch | 0.50 | 0.8-1.0 | satin,leather
+frame clutch | 0.50 | 0.8-1.0 | satin,velvet
+evening bag | 0.50 | 0.8-1.0 | satin,velvet
+small clutch | 0.60 | 0.7-1.0 | leather,suede
+pouch clutch | 0.40 | 0.75-1.0 | velvet,satin
+structured top-handle bag | 0.45 | 0.7-0.95 | leather,suede
+small shoulder bag | 0.40 | 0.7-0.95 | leather,satin

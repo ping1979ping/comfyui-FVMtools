@@ -1,0 +1,14 @@
+# prints/patterns
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+
+solid color | 0.85 | bottom,outerwear | 0.0-1.0
+tonal jacquard | 0.2 | bottom | 0.55-1.0
+small geometric pattern | 0.18 | bottom | 0.45-0.9
+subtle windowpane check | 0.15 | bottom,outerwear | 0.55-0.95
+fine herringbone weave | 0.15 | outerwear | 0.5-0.95
+subtle glen plaid | 0.12 | outerwear | 0.55-0.95
+small polka dot print | 0.12 | bottom | 0.45-0.9
+soft floral print | 0.15 | bottom | 0.4-0.85
+soft abstract print in muted tones | 0.12 | bottom | 0.45-0.9
+tonal textured weave | 0.15 | bottom,outerwear | 0.5-1.0
+subtle ribbed texture | 0.1 | bottom | 0.45-0.9

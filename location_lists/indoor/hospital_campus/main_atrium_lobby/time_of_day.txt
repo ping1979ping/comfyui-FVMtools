@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft overcast late-morning light | 1.0 | - | -
+bright mid-morning daylight | 0.9 | - | -
+clear midday light | 0.85 | - | -
+warm early-afternoon light | 0.8 | - | -
+golden late-afternoon light | 0.8 | - | -
+bright overcast noon light | 0.75 | - | -
+low afternoon sun with long soft shadows | 0.7 | - | -
+soft diffuse light of a bright cloudy afternoon | 0.65 | - | -
+cool early-morning light | 0.6 | - | -
+soft hazy late-morning light | 0.6 | - | -
+warm light of the hour before sunset | 0.55 | - | -
+blue early-evening dusk light with warm lamps | 0.5 | - | -

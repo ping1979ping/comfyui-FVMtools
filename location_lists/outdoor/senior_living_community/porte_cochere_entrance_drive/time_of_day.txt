@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+golden hour, warm sun on the brick facade | 0.9 | - | -
+soft overcast light, even and flattering | 0.9 | - | -
+early-morning low sun with long shadows | 0.7 | - | -
+early evening, lanterns glowing against the dusk | 0.6 | - | -
+bright midday with crisp shadows under the canopy | 0.85 | - | -
+mid-morning sun on the brick | 1.0 | - | -
+late-afternoon sun with long soft shadows | 0.8 | - | -
+bright early-afternoon light | 0.75 | - | -
+pale, gentle light of a hazy morning | 0.55 | - | -
+fresh light just after rain, bright sky | 0.5 | - | -
+warm amber light low in the west | 0.5 | - | -

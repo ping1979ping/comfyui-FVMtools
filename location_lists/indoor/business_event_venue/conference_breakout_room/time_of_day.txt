@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning, soft daylight through the left windows | 0.7 | - | -
+mid-morning, bright daylight and recessed lights half on | 0.9 | - | -
+late morning, clean daylight from the window wall | 1.0 | - | -
+midday, even white light from the ceiling panels | 0.8 | - | -
+early afternoon, daylight angled through the windows | 0.85 | - | -
+mid-afternoon, daylight angled through the left windows | 1.0 | - | -
+late afternoon, warm light edging the mullion shadows | 0.8 | - | -
+early evening, recessed lights bright against dusk glass | 0.65 | - | -
+evening, warm ceiling lights and dark windows | 0.55 | - | -
+noon, cool white light near the entry door | 0.5 | - | -
+morning, soft sheer-curtain light across the carpet | 0.7 | - | -
+dusk, deep blue light in the tall windows | 0.45 | - | -

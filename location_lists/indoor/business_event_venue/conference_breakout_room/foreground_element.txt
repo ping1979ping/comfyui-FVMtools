@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+plain slate low-pile carpet | 1.0 | 0.1-0.4 | even and matte
+center aisle of plain tan low-pile carpet leading toward the front | 0.9 | 0.1-0.4 | smooth pile
+plain warm gray carpet | 0.85 | 0.1-0.4 | soft shadow bands from the chair legs
+plain charcoal low-pile carpet | 0.8 | 0.1-0.4 | a strip of daylight across it from the window
+plain taupe commercial carpet | 0.75 | 0.1-0.4 | clean vacuum lines
+smooth pale gray carpet | 0.7 | 0.1-0.4 | soft light from the ceiling panels
+plain slate-blue low-pile carpet | 0.6 | 0.1-0.4 | quiet even tone
+plain beige carpet | 0.65 | 0.1-0.4 | faint sheen where the window light lands
+dark gray low-pile carpet | 0.6 | 0.1-0.4 | untouched pile
+plain mid-gray carpet | 0.55 | 0.1-0.4 | thin line of daylight along the wall edge
+polished light oak floor | 0.4 | 0.1-0.4 | soft reflection of the windows
+plain stone-gray carpet | 0.5 | 0.1-0.4 | smooth and even

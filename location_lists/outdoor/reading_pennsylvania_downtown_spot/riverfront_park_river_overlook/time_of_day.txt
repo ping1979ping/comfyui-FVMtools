@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late-afternoon sun lighting the bridge arches | 0.9 | - | -
+soft overcast light flattening the river | 0.75 | - | -
+early morning light with long shadows | 0.5 | - | -
+golden hour glow on the far hillside | 0.7 | - | -
+dusk with the bridge arches softly lit | 0.4 | - | -
+midday sun sparkling on the river | 0.8 | - | -
+low morning sun from the left | 0.7 | - | -
+warm early-afternoon light | 0.8 | - | -
+bright late-morning light | 0.8 | - | -
+blue hour with the bridge arches lit | 0.4 | - | -
+flat gray midday light | 0.6 | - | -

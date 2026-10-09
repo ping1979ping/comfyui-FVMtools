@@ -1,0 +1,12 @@
+# slot: bag
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+structured tote | 0.80 | 0.5-0.85 | leather
+laptop tote | 0.65 | 0.5-0.85 | leather,nylon
+top-handle bag | 0.60 | 0.55-0.9 | leather
+structured shoulder bag | 0.60 | 0.5-0.85 | leather,suede
+work satchel | 0.50 | 0.5-0.85 | leather
+zip-top tote | 0.50 | 0.45-0.8 | leather
+slim laptop bag | 0.40 | 0.5-0.85 | leather,nylon
+structured handbag | 0.60 | 0.55-0.9 | leather
+medium crossbody bag | 0.40 | 0.4-0.75 | leather

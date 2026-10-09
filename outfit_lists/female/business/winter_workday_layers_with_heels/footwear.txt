@@ -1,0 +1,14 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Heels only, every name states the heel (Krea 2 rules, build-outfit-set Step 3c). Closed toes, winter-proof.
+
+pointed-toe pumps with a slim three-inch heel | 0.85 | 0.6-0.95 | leather,suede
+classic pumps with a slim three-inch heel | 0.80 | 0.6-0.95 | leather,suede
+almond-toe pumps with a three-inch block heel | 0.70 | 0.55-0.9 | leather,suede
+round-toe pumps with a three-inch block heel | 0.55 | 0.55-0.9 | leather,suede
+Mary Jane pumps with a three-inch block heel | 0.45 | 0.55-0.9 | leather,suede
+ankle-strap pumps with a three-inch block heel | 0.50 | 0.55-0.9 | leather,suede
+heeled ankle boots with a three-inch block heel | 0.90 | 0.55-0.9 | leather,suede
+pointed-toe ankle boots with a slim three-inch heel | 0.70 | 0.6-0.95 | leather,suede
+heeled Chelsea boots with a three-inch block heel | 0.55 | 0.55-0.85 | leather,suede
+zip-side ankle boots with a three-inch block heel | 0.50 | 0.55-0.9 | leather,suede

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a plain charcoal low-pile carpet | 1.0 | 0.1-0.4 | smooth and even, no pattern
+a plain mid-grey low-pile carpet | 0.9 | 0.1-0.4 | smooth and even, no pattern
+a plain warm grey low-pile carpet | 0.8 | 0.1-0.4 | soft and even
+a wide-plank white oak floor | 0.8 | 0.1-0.4 | pale boards with a matte finish
+an old maple plank mill floor | 0.7 | 0.1-0.4 | worn honey-brown boards with fine nail lines
+a smooth polished concrete floor | 0.6 | 0.1-0.4 | soft reflections of the tall windows
+a wood-look vinyl plank floor | 0.6 | 0.1-0.4 | warm oak tone with a low sheen
+a dark grey sealed concrete floor | 0.5 | 0.1-0.4 | fine and even, a quiet sheen
+a plain deep taupe low-pile carpet | 0.5 | 0.1-0.4 | smooth and even
+a pale oak plank floor | 0.5 | 0.1-0.4 | long boards with a satin finish
+a plain slate-grey low-pile carpet | 0.45 | 0.1-0.4 | smooth and even
+a smooth grey concrete floor | 0.4 | 0.1-0.4 | long soft reflections of the window wall

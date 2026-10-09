@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+slim ribbed supports between the distant bridge arches | 0.6 | 0.05-0.15 | pale gray concrete
+a concrete balustrade with small outlook bays on the far bridge | 0.6 | 0.05-0.15 | thin pale rail
+tall concrete obelisk posts at the far bridge end | 0.5 | 0.03-0.1 | slim and pale
+ornamental lamp globes on the distant bridge railing | 0.55 | 0.03-0.1 | white glass globes on iron posts
+unlit LED lights beneath the arch crowns | 0.4 | 0.03-0.1 | slim fixtures far across the river
+tall weathered piers rising from the river far across the water | 0.55 | 0.05-0.15 | gray and stained
+dark water stains on the far bridge piers | 0.45 | 0.03-0.1 | streaks on gray concrete
+a thin metal handrail on the distant footbridge | 0.45 | 0.03-0.1 | slim dark line
+a church steeple on the far hillside | 0.5 | 0.03-0.1 | thin dark spire
+slim poles along the rail line on the far bank | 0.4 | 0.02-0.08 | thin and evenly spaced
+a stone-faced retaining wall along the far shore | 0.4 | 0.03-0.1 | low gray band

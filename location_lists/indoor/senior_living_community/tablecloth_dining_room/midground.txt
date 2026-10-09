@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rows of round tables dressed in white linen a few meters back | 1.0 | 0.3-0.5 | each set for four, upholstered chairs pushed in
+square four-top tables lined up along the window wall on the left | 0.85 | 0.3-0.5 | white linen to the floor, empty upholstered chairs
+a long banquet table set for ten, far back on the right | 0.6 | 0.2-0.4 | white tablecloth and a low flower arrangement
+a wooden dessert cart with a glass cake dome, far back by the sideboard | 0.5 | 0.2-0.4 | brass wheels
+a coffee station on a dark wood side table against the right wall | 0.55 | 0.2-0.4 | silver carafes and white cups, all empty
+a wide clear aisle down the middle of the room toward the windows | 0.7 | 0.3-0.5 | smooth carpet runner
+an upholstered banquette running along the side wall on the left | 0.5 | 0.2-0.4 | soft sage fabric, all empty
+a tall potted palm beside the arched opening on the right | 0.45 | 0.2-0.4 | glossy green fronds
+a row of small round tables along the left window wall, each set for two | 0.6 | 0.3-0.5 | white linen and folded napkins
+empty dining chairs with curved wooden backs around the tables a few meters back | 0.7 | 0.3-0.5 | cream upholstered seats
+low floral centerpieces on every table in the middle distance | 0.6 | 0.2-0.4 | white and green blooms, all empty
+a pair of potted ficus trees in brass planters at the far corners | 0.45 | 0.2-0.4 | dense green leaves
+round tables set with white plates and cloth napkins, a few meters back on the right | 0.75 | 0.3-0.5 | tall candlesticks in the center, all empty

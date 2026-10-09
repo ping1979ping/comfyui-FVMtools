@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright weekday mid-morning | 1.0 | - | -
+weekday late morning | 0.95 | - | -
+early morning just after sunrise | 0.6 | - | -
+midday on a weekday | 0.8 | - | -
+early afternoon | 0.85 | - | -
+mid-afternoon on a weekday | 0.85 | - | -
+late afternoon with low warm light | 0.75 | - | -
+early evening at dusk | 0.5 | - | -
+early evening blue hour with the ceiling lights on | 0.45 | - | -
+quiet early weekday morning | 0.6 | - | -
+{early|late} weekday afternoon | 0.7 | - | -

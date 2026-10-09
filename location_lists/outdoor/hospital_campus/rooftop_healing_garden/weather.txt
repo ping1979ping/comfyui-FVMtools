@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue sky and a calm warm day | 1.0 | - | -
+crisp autumn air with golden birch leaves | 0.6 | - | -
+late spring bloom with fresh green growth | 0.6 | - | -
+light drizzle with wet pavers and steel | 0.5 | - | -
+gentle breeze moving the grasses | 0.8 | - | -
+snow-dusted planter walls on a quiet winter day | 0.45 | - | -
+thin high clouds and soft daylight | 0.85 | - | -
+hazy warm summer air under a pale sky | 0.6 | - | -
+overcast sky with soft even light | 0.8 | - | -
+light mist hanging over the lawn | 0.45 | - | -
+fresh clean air just after rain, pavers still damp | 0.5 | - | -
+partly cloudy sky with drifting shadows | 0.7 | - | -

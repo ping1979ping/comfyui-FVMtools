@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a red brick paver sidewalk | 1.0 | 0.1-0.4 | tight joints, softly worn
+a swept light gray concrete sidewalk | 0.9 | 0.1-0.4 | clean slabs with thin expansion lines
+a herringbone brick paver patio floor | 0.7 | 0.1-0.4 | warm red-brown, clean
+a granite curb and gray pavement | 0.5 | 0.1-0.4 | smooth stone edge
+a pale limestone paver patio | 0.55 | 0.1-0.4 | honed, even joints
+a dark gray asphalt walkway | 0.4 | 0.1-0.4 | fine grain, smooth
+a warm gray flagstone patio | 0.5 | 0.1-0.4 | irregular but flat stones
+a charcoal concrete paver patio | 0.55 | 0.1-0.4 | large square slabs
+a brown-red brick sidewalk | 0.7 | 0.1-0.4 | worn smooth, narrow joints
+a light concrete sidewalk | 0.65 | 0.1-0.4 | broom finish
+a smooth gray stone paver patio | 0.5 | 0.1-0.4 | tidy rows
+a worn red brick patio floor | 0.6 | 0.1-0.4 | swept clean

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rows of round banquet tables set for ten a few meters back | 1.0 | 0.3-0.5 | ivory floor-length linens, champagne chair covers with satin sashes pushed in
+a wide center aisle running toward the stage between the tables | 0.9 | 0.3-0.5 | low hydrangea and greenery centerpieces on every table, ivory linens, all empty
+two staggered rows of empty round tables on the left a few meters back | 0.9 | 0.3-0.5 | place settings squared up, champagne chair covers pushed in
+round tables set for ten across the middle of the room | 0.85 | 0.3-0.5 | white napkins folded at every place, low green centerpieces
+a table near the stage with a taller floral arrangement a few meters back on the right | 0.7 | 0.3-0.5 | white roses and greenery, ivory linen to the floor, all empty
+an ivory-draped side table left of the stage a few meters back | 0.6 | 0.3-0.5 | a row of small unengraved glass award pieces, all empty
+a rolling coffee station along the left wall a few meters back | 0.6 | 0.3-0.5 | silver urns and neat stacks of white cups and saucers
+high-top cocktail tables with white stretch covers beside the aisle a few meters back | 0.55 | 0.3-0.5 | smooth pale fabric, nothing on top, all empty
+a long covered buffet table along the right wall a few meters back | 0.65 | 0.3-0.5 | silver chafing dishes with lids closed, all empty
+tiered white dessert stands on a draped table at the back right | 0.5 | 0.3-0.5 | glossy white porcelain tiers, all empty
+champagne chair covers in neat rows pushed in at the tables on the right a few meters back | 0.8 | 0.3-0.5 | satin sashes tied in matching bows
+empty round tables under a chandelier a few meters back at the center | 0.75 | 0.3-0.5 | crystal glints, ivory linens

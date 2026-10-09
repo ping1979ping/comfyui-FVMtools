@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small metal trash can near the far corner of the terrace | 0.4 | 0.02-0.06 | dark green steel drum with a plain lid
+a tiny parked car at the far edge of the terrace | 0.4 | 0.02-0.06 | silver sedan at the lot edge
+a small wooden bench far along the wall | 0.4 | 0.02-0.06 | plain weathered slats
+a slim lamp post at the far edge of the terrace | 0.45 | 0.01-0.05 | thin dark pole
+a small orange traffic cone at the distant gate | 0.35 | 0.01-0.04 | orange plastic with a white band
+a small boulder at the edge of the far slope | 0.35 | 0.02-0.06 | gray and rounded
+a small picnic table far along the grounds edge | 0.35 | 0.02-0.06 | weathered gray planks
+a small steel gate post at the far end of Skyline Drive | 0.35 | 0.01-0.04 | thin and dark
+a slim utility pole far down Skyline Drive | 0.35 | 0.01-0.04 | thin wooden pole
+a small clump of laurel bushes at the far end of the wall | 0.3 | 0.01-0.04 | dark glossy evergreen leaves
+a small gray electrical box at the far edge of the terrace | 0.35 | 0.01-0.04 | painted metal cabinet on a concrete pad
+a small fieldstone pillar at the far corner of the wall | 0.4 | 0.02-0.06 | short and square

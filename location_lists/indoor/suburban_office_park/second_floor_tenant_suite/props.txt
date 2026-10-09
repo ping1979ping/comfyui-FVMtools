@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small succulent in a white pot on a distant window sill | 0.5 | 0.02-0.05 | plump green rosette
+tiny desk lamp with a brushed steel arm on a far desk | 0.45 | 0.02-0.05 | slim bright arm
+compact coffee maker on the distant kitchenette counter | 0.4 | 0.02-0.05 | dark plastic and glass
+small glass water carafe on a far credenza | 0.4 | 0.02-0.05 | clear glass
+tiny wire-mesh pen cup on a distant desk | 0.35 | 0.02-0.04 | slim dark cylinder
+small blank notepad squared to the edge of a far desk | 0.4 | 0.02-0.04 | pale blank paper
+slim ceramic mug on a distant desk | 0.4 | 0.02-0.04 | plain white ceramic
+small closed laptop on a far desk at the back | 0.4 | 0.02-0.05 | thin gray slab
+small potted fern at the far end of a credenza | 0.35 | 0.02-0.05 | low green tuft
+small framed abstract print on the back wall at the far end | 0.35 | 0.02-0.05 | muted colors
+small gray trash bin beside a distant desk | 0.35 | 0.02-0.05 | dark gray plastic

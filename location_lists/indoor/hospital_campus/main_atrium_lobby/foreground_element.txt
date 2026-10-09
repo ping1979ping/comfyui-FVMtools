@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+smooth pale polished terrazzo floor | 1.0 | 0.1-0.4 | soft warm gray flecks kept calm, faint window reflections
+large pale limestone floor slabs | 0.9 | 0.1-0.4 | thin even joints, soft reflections of the glass wall
+polished pale concrete floor | 0.85 | 0.1-0.4 | faint trowel marks, soft window light
+wide white oak plank floor | 0.7 | 0.1-0.4 | warm satin finish, long straight boards
+smooth gray stone floor | 0.8 | 0.1-0.4 | a thin brass inlay line running into the distance
+large-format pale porcelain floor tiles | 0.75 | 0.1-0.4 | satin finish, thin grout lines
+honed travertine floor | 0.6 | 0.1-0.4 | warm cream stone, soft sheen
+light gray polished concrete floor | 0.7 | 0.1-0.4 | even and calm, faint reflections
+plain muted blue wool rug on a pale stone floor | 0.45 | 0.1-0.4 | low pile, no pattern
+warm beige stone floor | 0.65 | 0.1-0.4 | wide slabs, soft daylight reflection
+pale speckled terrazzo floor | 0.55 | 0.1-0.4 | fine calm speckle, glossy
+matte pale gray porcelain floor | 0.5 | 0.1-0.4 | large slabs, no pattern

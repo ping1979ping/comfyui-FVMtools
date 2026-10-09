@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+red-brown brick walls with weathered mortar | 0.9 | 0.05-0.2 | across the far side
+steel-framed multi-pane windows high up on the brick | 0.8 | 0.05-0.2 | dark gray frames
+cast-iron downspouts running up the brick on the far wall | 0.5 | 0.05-0.2 | thin black pipes
+a wrought-iron gate in an arched opening at the far end | 0.6 | 0.05-0.2 | open, black
+concrete lintels above the windows along the far wall | 0.55 | 0.05-0.2 | pale gray bands
+exposed steel beams of a small canopy at the back | 0.5 | 0.05-0.2 | dark steel
+string lights spanning high overhead between the brick walls | 0.9 | 0.05-0.2 | warm bulbs on thin wire
+lit wrought-iron lanterns mounted on the brick far along the wall | 0.7 | 0.05-0.2 | small amber glow
+a stage fascia painted matte black at the far corner | 0.45 | 0.05-0.2 | plain
+a closed dark green service door in the far wall | 0.4 | 0.05-0.2 | plain
+a church steeple far behind the rooftops | 0.45 | 0.05-0.2 | small silhouette

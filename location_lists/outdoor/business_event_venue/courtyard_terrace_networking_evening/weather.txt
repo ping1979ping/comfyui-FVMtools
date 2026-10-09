@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear, mild early-autumn evening | 1.0 | - | -
+still air with a faint breeze in the grasses | 0.8 | - | -
+dry pavement, slightly cooling stone | 0.7 | - | -
+thin high clouds tinted pink | 0.7 | - | -
+soft haze at the skyline | 0.6 | - | -
+warm, clear summer evening | 0.8 | - | -
+cool clear spring dusk | 0.65 | - | -
+crisp cold winter evening, clear sky | 0.45 | - | -
+overcast evening, flat gray-blue sky | 0.5 | - | -
+light mist hanging in the courtyard air | 0.4 | - | -
+mild evening, scattered clouds glowing orange | 0.6 | - | -

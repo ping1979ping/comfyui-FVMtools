@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+mid-morning daylight with the blinds half open | 0.9 | - | -
+early morning light slanting through the blinds | 0.6 | - | -
+even daylight with cool ceiling lights | 0.75 | - | -
+bright noon light with the blinds angled down | 0.7 | - | -
+early afternoon light, soft and even | 0.85 | - | -
+low late-afternoon light striping the carpet | 0.65 | - | -
+late afternoon light turning warm | 0.7 | - | -
+dusk with ceiling lights on, windows dark blue | 0.35 | - | -
+soft even daylight with the ceiling lights on | 0.7 | - | -
+bright late-morning daylight through the window wall | 0.85 | - | -

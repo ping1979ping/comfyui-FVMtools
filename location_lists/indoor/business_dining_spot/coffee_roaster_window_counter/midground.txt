@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a long window-facing counter of natural walnut a few meters back on the left | 0.9 | 0.3-0.5 | black metal stools tucked under it, empty
+natural wood two-top tables with black legs a few meters back in the center | 0.8 | 0.3-0.5 | empty, chairs pushed in
+low {cognac|tan} leather lounge chairs by the fireplace a few meters back on the left | 0.5 | 0.2-0.4 | empty, a small side table between them
+a plain stone fireplace a few meters back at the far left | 0.4 | 0.2-0.4 | cold hearth
+a white quartz counter a few meters back on the right | 0.7 | 0.3-0.5 | empty stools lined in front, a small glass cake dome at the end
+black metal pendant lamps hanging over the tables a few meters back | 0.6 | 0.2-0.4 | warm glow, all empty
+a wood bench along the right wall a few meters back | 0.5 | 0.2-0.4 | natural oak, empty
+a potted plant on a wood shelf a few meters back on the right | 0.45 | 0.2-0.4 | green leaves
+a row of empty tables for two by the windows a few meters back | 0.7 | 0.3-0.5 | black steel chairs pushed in
+a black steel shelving unit of plain white mugs, a few meters back on the right | 0.45 | 0.2-0.4 | lit from above
+a standing-height wood ledge along the front window, a few meters back on the right | 0.55 | 0.2-0.4 | black stools beneath it, all empty
+a low stack of plain wooden crates a few meters back on the left | 0.35 | 0.2-0.3 | weathered pine
+a tall shelf of potted plants beside the roastery glass, a few meters back | 0.45 | 0.2-0.4 | hanging green leaves

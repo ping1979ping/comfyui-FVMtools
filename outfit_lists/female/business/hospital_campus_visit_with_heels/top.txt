@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+modest-neckline blouse | 0.80 | 0.55-0.9 | crepe,polyester
+button-front blouse | 0.80 | 0.55-0.9 | cotton,silk
+fine-gauge crewneck sweater | 0.65 | 0.5-0.85 | wool,cashmere
+fine-gauge turtleneck | 0.50 | 0.55-0.9 | wool,cashmere
+mock-neck top | 0.65 | 0.5-0.85 | knit,viscose
+cap-sleeve shell | 0.60 | 0.55-0.9 | crepe,silk
+shallow V-neck top | 0.60 | 0.5-0.85 | knit,cotton
+elbow-sleeve top | 0.60 | 0.5-0.85 | crepe,polyester
+tie-neck blouse | 0.70 | 0.55-0.9 | crepe,silk
+three-quarter-sleeve top | 0.55 | 0.5-0.85 | knit,viscose
+pleat-neck blouse | 0.50 | 0.6-0.9 | crepe,silk
+crew-neck blouse | 0.50 | 0.55-0.9 | crepe,viscose

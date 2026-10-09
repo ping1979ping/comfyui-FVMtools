@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small glass water pitcher at the far end of the table | 0.65 | 0.02-0.08 | clear glass with a few tumblers
+slim closed leather portfolio at a distant seat | 0.5 | 0.02-0.08 | dark brown leather
+slim gooseneck microphone on the far end of the table | 0.45 | 0.02-0.08 | black stem
+compact steel coffee carafe on the distant credenza | 0.6 | 0.02-0.08 | brushed steel
+small bowl of green apples on the far credenza | 0.55 | 0.02-0.08 | white ceramic bowl
+small blank notepad at a distant seat | 0.5 | 0.02-0.08 | white paper
+slim presentation clicker on a distant lectern | 0.4 | 0.02-0.08 | black plastic
+small vase of white hydrangea at the far end of the table | 0.6 | 0.02-0.08 | clear glass
+small stack of white cups on a distant tray | 0.45 | 0.02-0.08 | white porcelain
+compact carafe of orange juice on the far credenza | 0.4 | 0.02-0.08 | clear glass
+small succulent on a distant window sill | 0.5 | 0.02-0.08 | pale ceramic pot
+slim brass desk lamp on the far side table | 0.4 | 0.02-0.08 | warm linen shade

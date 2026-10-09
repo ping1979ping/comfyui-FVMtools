@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+far brick and glass hospital facade | 1.0 | 0.6-1.0 | five storeys of buff brick and tall glazing across the whole width of the image, the cantilevered entrance canopy at the center
+far glass curtain wall above the entrance canopy | 0.85 | 0.6-1.0 | dark mullions across the width of the image, sliding glass doors below, the sky reflected in the upper panes
+far seven-storey hospital tower rising behind on the left | 0.75 | 0.6-1.0 | pale precast panels and bands of windows, a landscaped berm with grasses on the right
+far precast concrete parking deck across the loop on the right | 0.7 | 0.6-1.0 | open-sided levels, young maples along the edge, the hospital wing rising behind on the left
+far landscaped berm of ornamental grasses and maples | 0.7 | 0.6-1.0 | across the whole width of the image, the brick hospital facade rising behind it
+far covered glass walkway linking the parking deck | 0.55 | 0.5-0.9 | a slim steel-framed glazed bridge on the right, the brick hospital wing on the left
+far entrance vestibule with sliding glass doors at the center | 0.9 | 0.6-1.0 | warm light inside, brick walls on both sides, a wooden canopy soffit above
+far tree line of mature maples along the access road | 0.6 | 0.6-1.0 | the brick hospital wing visible between the trunks, wooded hills beyond
+far limestone-colored precast facade of the medical pavilion | 0.65 | 0.6-1.0 | broad pale panels with ribbon windows across the width of the image, a flat canopy at the center
+far low stone seat wall and planters in front of the glass lobby | 0.55 | 0.5-0.9 | clipped shrubs and grasses across the back, the glazed lobby rising behind, all empty
+far wooded hills on the horizon behind the hospital roofline | 0.6 | 0.6-1.0 | green slopes above the flat roofs, a clear sky, the brick facade below
+far curved brick forecourt wall of the entrance | 0.5 | 0.5-0.9 | a low warm brick wall sweeping across the back, ornamental grasses along its top, glass doors beyond
+far glass atrium front of the hospital | 0.5 | 0.6-1.0 | a tall glazed front across the width of the image, a slim steel frame, the canopy projecting at the center

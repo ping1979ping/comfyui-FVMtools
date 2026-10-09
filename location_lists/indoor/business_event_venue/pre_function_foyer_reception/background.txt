@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the glass storefront wall facing the street | 1.0 | 0.6-1.0 | a tall bronze-framed glass wall across the whole width of the image, brick buildings across the street beyond, closed wide double doors into the ballroom on the right
+the far side of the foyer | 0.95 | 0.6-1.0 | a warm walnut feature wall across the whole width of the image with recessed linear lighting, a long black-draped table standing empty against it on the left
+the curved reception bar at the far right | 0.8 | 0.6-1.0 | a curved bar with backlit shelves of plain glassware in the far right corner, a pale stone-look wall running across to the left
+the elevator bank at the back left | 0.7 | 0.6-1.0 | brushed-steel elevator doors in a pale wall on the far left, a walnut wall running across the width of the image to the closed ballroom doors on the right
+the far wall hung with framed paintings | 0.8 | 0.6-1.0 | large framed abstract paintings in warm tones spaced along a pale wall across the whole width of the image, a bronze-framed glass door on the left
+the wall of closed ballroom doors | 0.85 | 0.6-1.0 | tall closed wood double doors in the middle of a walnut wall far behind the room, matching sconces on both sides, glass wall letting in light on the left
+the corridor opening to the second foyer | 0.6 | 0.6-1.0 | a wide opening in the far wall showing a second carpeted foyer beyond, walnut paneling on both sides, pendant lights glowing beyond
+the street-side windows at the far end | 0.75 | 0.6-1.0 | floor-to-ceiling windows in dark bronze frames across the whole width of the image, downtown brick buildings and a quiet street beyond the glass
+the bistro nook beside the window | 0.55 | 0.6-1.0 | a small lounge nook of two empty armchairs by the far window on the left, a pale wall and closed doors across to the right
+the far wall with the coat rack | 0.5 | 0.6-1.0 | a coat rack with empty hangers in the far back corner on the left, a long pale wall with a bronze-framed glass door on the right
+the far wall with wood slat ceiling | 0.65 | 0.6-1.0 | a stone-look porcelain wall base and pale wall across the whole width of the image, linear wood slats on the double-height ceiling above
+the glass wall in evening light | 0.6 | 0.6-1.0 | a tall glass wall across the whole width of the image with a blue-hour street beyond, warm pendant light reflected in the glass
+the registration end of the foyer | 0.7 | 0.6-1.0 | a long black-draped table standing empty on the far left, a walnut feature wall behind it, closed wide double doors on the right

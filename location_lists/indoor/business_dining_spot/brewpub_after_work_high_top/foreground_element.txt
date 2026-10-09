@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a sealed dark gray concrete floor | 1.0 | 0.1-0.4 | smooth with a soft sheen
+a worn dark stained plank floor | 0.8 | 0.1-0.4 | scuffed boards
+a smooth charcoal concrete floor | 0.7 | 0.1-0.4 | faint trowel marks
+a wide-plank reclaimed oak floor | 0.65 | 0.1-0.4 | warm brown, scuffed
+a dark slate stone floor | 0.5 | 0.1-0.4 | honed, even
+a red brick paver floor | 0.55 | 0.1-0.4 | tight joints, worn smooth
+a warm gray concrete floor | 0.6 | 0.1-0.4 | satin sheen under the pendants
+a dark walnut plank floor | 0.5 | 0.1-0.4 | soft sheen
+a black-stained wood plank floor | 0.45 | 0.1-0.4 | matte, a few scuffs
+a polished gray concrete floor | 0.7 | 0.1-0.4 | warm reflections of the lamps
+a worn pine plank floor | 0.45 | 0.1-0.4 | golden-brown boards
+a brown-gray stone tile floor | 0.4 | 0.1-0.4 | large format, matte

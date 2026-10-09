@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the tall brick industrial building on the far side | 1.0 | 0.6-1.0 | a red-brown brick facade across the whole width of the image, rows of large multi-pane steel windows glowing warm, string lights spanning overhead
+a low performance stage in the far corner | 0.8 | 0.6-1.0 | a black-painted stage platform tucked against the brick wall on the right, a soft violet wash on the wall above it, string lights crossing the courtyard
+the brick archway on the far side | 0.75 | 0.6-1.0 | an arched opening in the brick wall leading to a lit side street, a wrought-iron gate standing open, a cool blue dusk sky above the roofline
+the far brick wall lined with potted shrubs | 0.8 | 0.6-1.0 | lit wrought-iron lanterns mounted on the brick at intervals across the whole width of the image, potted shrubs along its foot
+the old mill rooftops beyond the courtyard | 0.7 | 0.6-1.0 | brick chimneys and sawtooth roofs across the whole width of the image against a deepening dusk sky, a church steeple rising far behind on the left
+the long converted warehouse wall | 0.85 | 0.6-1.0 | a brick wall with tall steel-framed windows across the whole width of the image, a small steel canopy over a closed door on the right
+the far side of the courtyard with an iron gate | 0.6 | 0.6-1.0 | a brick wall across the width of the image with an arched wrought-iron gate in the middle, string lights draped above it
+the brick facade in golden light | 0.85 | 0.6-1.0 | warm low sun raking across the upper brick across the whole width of the image, the courtyard floor already in cool shade
+the glowing windows of the upper floors | 0.7 | 0.6-1.0 | a brick facade with tall windows glowing amber on the upper floors across the whole width of the image, a dusky blue sky above
+the far wall with the stage lighting | 0.65 | 0.6-1.0 | a brick wall across the whole width of the image washed in soft violet and amber light from a low stage on the right
+the courtyard enclosed by brick buildings | 0.9 | 0.6-1.0 | brick walls with steel-framed windows on three sides, string lights overhead, a patch of dusk sky above the middle
+the far corner of the courtyard | 0.55 | 0.6-1.0 | two brick walls meeting in the far corner, a closed dark green service door, cast-iron downspouts, lanterns glowing on the brick
+the back of the terrace under the string lights | 0.75 | 0.6-1.0 | a brick wall across the whole width of the image with strings of warm bulbs hanging in swags in front of it, a dusk sky above

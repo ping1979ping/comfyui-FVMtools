@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+tiny hand-sanitizer pump bottles at the front of a far booth table | 0.85 | 0.02-0.08 | clear plastic, white pumps
+small blank clipboards at the edge of a distant table | 0.6 | 0.02-0.08 | plain brown board, blank white paper
+a small stack of paper cups beside a water pitcher on a distant table | 0.7 | 0.02-0.08 | white paper, clear pitcher
+a small ceramic mug of pens at the corner of a far table | 0.65 | 0.02-0.08 | plain white ceramic
+a tiny potted succulent on the corner of a distant table | 0.7 | 0.02-0.08 | pale green leaves
+a small stethoscope draped over a chair back in a far booth | 0.5 | 0.02-0.08 | black tubing
+a small bowl of wrapped mints on a table far down the aisle | 0.75 | 0.02-0.08 | white and green candies
+a small box of tissues at the edge of a distant table | 0.55 | 0.02-0.08 | plain white box
+a tiny glass water pitcher and cups at the beverage station far back | 0.6 | 0.02-0.08 | clear glass
+small foam stress balls in a bowl on a far table | 0.5 | 0.02-0.08 | soft blue and white
+a small folded canvas tote bag on a distant table edge | 0.55 | 0.02-0.08 | natural cotton, unprinted
+a small bowl of green apples on a table far down the aisle | 0.5 | 0.02-0.08 | glossy green

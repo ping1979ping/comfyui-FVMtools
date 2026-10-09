@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small park bench far along the walkway | 0.45 | 0.02-0.06 | plain slatted wood on iron legs
+a small trash can far down the path | 0.45 | 0.02-0.06 | dark green steel drum with a plain lid
+a slim lamp post far down the riverside path | 0.45 | 0.01-0.05 | dark pole with a round lamp head
+a small gray stone at the far water's edge | 0.35 | 0.01-0.04 | rounded gray river rock
+a small drinking fountain at the far end of the path | 0.35 | 0.01-0.04 | gray concrete pedestal with a steel spout
+a small steel bollard at the far end of the path | 0.4 | 0.01-0.04 | short dark steel post
+a tiny driftwood log at the far edge of the water | 0.35 | 0.01-0.04 | pale weathered wood on the bank
+a small green utility box beside the far path | 0.35 | 0.02-0.06 | painted metal cabinet on a concrete pad
+a thin metal post at the far end of the overlook | 0.4 | 0.01-0.04 | dark painted steel
+a small picnic table far across the lawn | 0.35 | 0.02-0.06 | weathered gray planks
+a small stone marker at the distant bend of the path | 0.35 | 0.01-0.04 | gray block of cut stone
+a small bike rack at the far end of the lawn | 0.3 | 0.02-0.06 | dark steel loops

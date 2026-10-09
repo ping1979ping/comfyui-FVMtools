@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+oval lawn framed by curving rust-brown steel walls, a few meters back | 1.0 | 0.3-0.5 | smooth short grass, crisp steel edges
+low stone basin water feature, a few meters back on the right | 0.7 | 0.3-0.5 | water spilling over natural stone, calm and clear
+empty wooden bench under white birch trunks, a few meters back on the left | 0.8 | 0.3-0.5 | teak slats, dappled shade
+beds of ornamental grasses and perennials, a few meters back on the right | 0.75 | 0.3-0.5 | soft feathery blades in curved planters
+round empty metal cafe tables on a paved terrace, a few meters back on the left | 0.6 | 0.3-0.5 | slim steel chairs pushed in
+sedge groundcover under a birch grove, a few meters back | 0.7 | 0.3-0.5 | fine green blades around pale trunks
+planter wall nook with a built-in timber bench, a few meters back on the left | 0.6 | 0.3-0.5 | weathered steel on three sides, empty
+natural stone boulders along the lawn edge, a few meters back on the right | 0.55 | 0.2-0.4 | rounded gray stone, soft moss
+slatted timber pergola over an empty table, a few meters back on the right | 0.55 | 0.3-0.5 | slim steel posts, long soft shadows
+curving pavestone path between planters, a few meters back | 0.65 | 0.3-0.5 | pale pavers, edged with sedge
+tall ornamental grasses in raised steel planters, a few meters back on the left | 0.6 | 0.2-0.4 | soft golden-green plumes
+waterfall spilling over natural stone into a calm pool, a few meters back on the left | 0.5 | 0.3-0.5 | clear water, wet dark stone
+row of low steel planters with perennials along the glass parapet, a few meters back | 0.5 | 0.2-0.4 | rust-brown boxes, soft green growth
+small grove of young birch trees on a raised bed, a few meters back on the right | 0.55 | 0.3-0.5 | slim white trunks, light dappled shade

@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning with low sun hitting the glass | 0.6 | - | -
+bright midday with high clear sun and sharp shadows | 0.9 | - | -
+soft diffuse overcast afternoon light | 1.0 | - | -
+golden hour with warm light on the brick | 0.75 | - | -
+blue early-evening light with canopy lights glowing warm | 0.45 | - | -
+bright mid-morning light under a clear sky | 0.85 | - | -
+soft overcast late-morning light | 0.85 | - | -
+warm early-afternoon light | 0.8 | - | -
+low late-afternoon sun with long soft shadows | 0.7 | - | -
+diffuse light of a bright cloudy noon | 0.7 | - | -
+soft hazy mid-morning light | 0.55 | - | -
+warm light of the hour before sunset | 0.55 | - | -

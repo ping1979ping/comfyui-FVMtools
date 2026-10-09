@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+overcast sky and soft even daylight through the windows | 1.0 | - | -
+clear bright sky and crisp window light | 0.9 | - | -
+thin high cloud and soft diffuse daylight | 0.8 | - | -
+steady rain on the windows under a grey sky | 0.6 | - | -
+light drizzle over the courtyard and damp grey daylight | 0.5 | - | -
+fresh snow in the courtyard and bright cold daylight | 0.45 | - | -
+snow falling past the windows in flat white light | 0.4 | - | -
+bare trees in the courtyard under a pale winter sky | 0.5 | - | -
+hazy summer sunlight and still warm air | 0.5 | - | -
+crisp autumn light with turning leaves in the courtyard | 0.5 | - | -
+fresh spring light with budding trees outside | 0.45 | - | -
+mist over the courtyard and soft cool light | 0.4 | - | -

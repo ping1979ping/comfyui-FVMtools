@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a wide aisle of plain blue-gray low-pile carpet | 1.0 | 0.1-0.4 | even matte pile
+plain slate-gray low-pile carpet | 0.9 | 0.1-0.4 | a narrow black cable ramp crossing the aisle far ahead
+a temporary gray aisle runner laid over plain carpet | 0.8 | 0.1-0.4 | smooth and matte
+plain navy low-pile carpet | 0.8 | 0.1-0.4 | thin pale tape lines marking the booth edges
+polished concrete floor of the hall | 0.7 | 0.1-0.4 | faint trowel marks, soft reflections
+plain warm-gray carpet | 0.75 | 0.1-0.4 | clean vacuum lines running down the aisle
+wide plain charcoal carpet | 0.6 | 0.1-0.4 | soft light from the ceiling grid
+plain taupe low-pile carpet | 0.6 | 0.1-0.4 | a brass floor-box cover set into the pile
+plain sage-gray low-pile carpet | 0.55 | 0.1-0.4 | smooth, undisturbed pile
+smooth pale gray vinyl floor | 0.5 | 0.1-0.4 | matte, softly reflecting the ceiling lights
+plain steel-blue carpet | 0.65 | 0.1-0.4 | even tone, soft sheen
+plain light gray low-pile carpet | 0.7 | 0.1-0.4 | clean pile, soft shadows

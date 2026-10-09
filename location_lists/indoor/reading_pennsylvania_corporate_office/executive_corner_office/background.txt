@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the corner window wall of the executive office | 1.0 | 0.6-1.0 | floor-to-ceiling glass across the whole width of the image, brick rowhouse rooftops spreading out far below to a wooded hillside on the horizon
+the east-facing window wall looking over the city | 0.9 | 0.6-1.0 | a long wooded hillside along the horizon with a tiny pale pagoda on its crest on the right, brick rooftops and church steeples far below
+the far window wall with a limestone tower in view | 0.7 | 0.6-1.0 | a stepped Art Deco courthouse tower of pale limestone rising on the left of the view, brick rooftops below, a wooded hillside far beyond
+the south-facing window wall | 0.6 | 0.6-1.0 | a long low wooded hill along the horizon above slate rooftops, a white church steeple in the middle of the view, a quiet street far below
+the west-facing window wall | 0.6 | 0.6-1.0 | a silver river ribbon between tree lines far below on the left, a steel truss bridge crossing it, low brick factory roofs along the bank
+the wall behind the desk | 0.85 | 0.5-0.9 | built-in white oak shelving and closed cabinets across the whole width of the image, a soft warm grey wall above, a concealed door on the far left
+the far left wall of white oak veneer panels | 0.75 | 0.5-0.9 | vertical grain panelling across the left side of the image, a flush concealed door in the middle, recessed lights high up
+the far wall of warm grey painted drywall | 0.7 | 0.5-0.9 | across the whole width of the image, two large abstract canvases in muted blue and sand hung in an even row, recessed lights above
+the full-height glass wall to the corridor on the left | 0.65 | 0.5-0.9 | a frosted band at eye level, thin black steel frame, a closed glass door at the far end
+the window wall with woven grey roller shades half lowered | 0.7 | 0.6-1.0 | across the whole width of the image, soft light filtering past the shades, brick rooftops visible far below
+the corner where two glass walls meet | 0.65 | 0.5-0.9 | thin aluminum mullions rising to the ceiling, brick rooftops and a wooded hillside beyond, the far corner of the room
+the right-hand window bay with a view down to the street | 0.5 | 0.5-0.9 | a ribbon of parked cars and traffic lights far below, brick commercial buildings across the street
+the far end of the room behind a round conference table | 0.55 | 0.5-0.9 | a floor-to-ceiling window wall on the right, a white oak veneer wall on the left, soft recessed lights overhead, all empty

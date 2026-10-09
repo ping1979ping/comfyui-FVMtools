@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+glass-enclosed elevator cab with a thin stainless frame at the far end of the rear wall | 0.6 | 0.05-0.15 | clear panels
+stairwell curtain wall with slim painted steel framing at the far end | 0.6 | 0.05-0.15 | thin pale mullions
+suspended acoustic tile ceiling with recessed light panels high overhead | 0.55 | 0.05-0.15 | plain white grid
+aluminum suite door with tall sidelights far down the hall | 0.55 | 0.05-0.15 | thin dark frame
+warm gray drywall with a thin rubber base along the far wall | 0.45 | 0.05-0.15 | narrow dark line
+glass guardrail with a slim stainless cap rail on the far landing | 0.5 | 0.05-0.15 | thin bright edge
+stainless elevator frame with a narrow beveled return at the rear wall | 0.5 | 0.05-0.15 | slim bright outline
+linear light strips receding along the distant corridor ceiling | 0.5 | 0.05-0.15 | thin glowing lines
+narrow clerestory window high on the far wall | 0.45 | 0.05-0.15 | bright narrow strip of daylight
+thin brushed steel threshold at the distant elevator sill | 0.4 | 0.02-0.08 | slim bright line
+slim stainless handrails along the far stair | 0.4 | 0.05-0.15 | thin bright rails

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+stone piers with limestone caps under the canopy at the far entrance | 0.8 | 0.05-0.2 | pale smooth stone
+coffered canopy soffit with recessed lights high overhead | 0.6 | 0.05-0.2 | white painted panels
+standing-seam copper roof high above the far entry | 0.6 | 0.05-0.2 | warm brown patina
+limestone sills and lintels on the windows of the far wall | 0.6 | 0.05-0.2 | pale carved stone
+black wrought iron railings along the far ramp | 0.55 | 0.05-0.2 | thin black bars
+transom windows above the far entrance doors | 0.55 | 0.05-0.2 | slim divided panes
+wall-mounted lanterns flanking the far entry | 0.6 | 0.02-0.1 | warm glass
+brick chimneys rising from the roofline high up | 0.5 | 0.05-0.2 | white stone caps
+white dormer windows set into the slate roof above | 0.5 | 0.05-0.2 | gabled frames
+white square columns along the far portico | 0.6 | 0.05-0.2 | smooth painted wood
+a thin cornice running along the top of the far wall | 0.4 | 0.02-0.1 | white painted trim

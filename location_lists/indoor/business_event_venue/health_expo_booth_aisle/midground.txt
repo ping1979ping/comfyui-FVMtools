@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+skirted six-foot tables facing the aisle in every booth a few meters back | 1.0 | 0.3-0.5 | a pair of empty upholstered chairs behind each table
+a line of identical empty booths on the right a few meters back | 0.9 | 0.3-0.5 | each with a skirted table, two chairs and a plain white backwall
+a folding privacy partition forming a small alcove in a booth a few meters back on the left | 0.8 | 0.3-0.5 | two empty chairs beside it, soft even light
+a plastic anatomical heart model on a slim pedestal in a booth a few meters back on the right | 0.65 | 0.3-0.5 | pale and glossy, all empty
+rollator walkers and a shower chair set out in a mobility booth a few meters back on the left | 0.6 | 0.3-0.5 | neatly lined up in a row, all empty
+a clear raffle drum on a stand near the middle of the aisle a few meters back | 0.6 | 0.3-0.5 | empty, with a small crank handle
+neat stacks of plain canvas tote bags at the ends of the tables a few meters back on the right | 0.6 | 0.3-0.5 | natural cotton, unprinted, all empty
+bowls of wrapped mints on skirted tables a few meters back along the left side | 0.65 | 0.3-0.5 | white and green candies, all empty
+a blood-pressure cuff station a few meters back on the right | 0.7 | 0.3-0.5 | a table with an empty chair and a closed cuff case
+a line of tall plain white sanitizer stands along the left side of the aisle a few meters back | 0.5 | 0.3-0.5 | clear pump bottles on top
+a water dispenser and stacked paper cups on a skirted table a few meters back on the left | 0.5 | 0.3-0.5 | blue jug, white cups
+a small rest nook of two empty armchairs and a low table a few meters back on the right | 0.5 | 0.3-0.5 | soft gray upholstery
+booth tables dressed in navy and white skirts a few meters back along both sides | 0.85 | 0.3-0.5 | neat pleats to the floor, all empty

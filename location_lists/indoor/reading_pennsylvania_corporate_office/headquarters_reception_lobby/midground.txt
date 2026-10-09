@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a curved reception desk clad in reclaimed dark wood a few meters back | 1.0 | 0.3-0.5 | a pale quartz top, empty and tidy
+stepped grandstand seating of white oak treads with grey cushions along the left | 0.7 | 0.3-0.5 | empty, a few meters back
+a lounge group of two empty grey wool sofas and a round oak table | 0.8 | 0.2-0.4 | on a cream rug, a few meters back on the right
+four empty armchairs in mustard and teal around a low table | 0.6 | 0.2-0.4 | a few meters back on the left
+a cluster of glass globe pendants over the seating | 0.5 | 0.1-0.3 | high up, a few meters back in the middle of the room, all empty
+a potted ficus tree in a concrete planter beside the glass doors | 0.55 | 0.2-0.4 | tall and narrow, a few meters back
+a cream hand-tufted wool rug with soft abstract shapes | 0.4 | 0.2-0.4 | lying under the lounge group, a few meters back
+a low oak planter bench under the windows on the left | 0.45 | 0.2-0.4 | empty, a few meters back
+a grey walk-off mat just inside the entry doors | 0.4 | 0.1-0.3 | flat and plain, a few meters back
+a tall closed oak cabinet against the right wall | 0.4 | 0.2-0.4 | plain doors, a few meters back
+a pair of empty oak bench seats along the brick wall on the right | 0.5 | 0.2-0.4 | a few meters back
+a round oak coffee table with two empty chairs near the doors | 0.5 | 0.2-0.4 | a few meters back

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+built-in courtyard seating a few meters back | 0.9 | 0.3-0.5 | low wooden benches in concrete planters along the brick wall, empty
+raised planters with young trees and grasses | 0.7 | 0.25-0.45 | in poured concrete beds a few meters back on the right
+a low outdoor stage platform at the end of the alley | 0.6 | 0.25-0.45 | bare concrete and empty, far ahead of the camera
+an abstract steel sculpture on a concrete plinth | 0.5 | 0.2-0.4 | off to the left a few meters back, dark weathered metal
+empty cafe tables and chairs | 0.6 | 0.25-0.45 | outside the ground-floor restaurant windows a few meters back on the right
+unlit string lights on tall poles | 0.5 | 0.2-0.4 | hung across the courtyard far overhead
+low bollard lights lining the paved path | 0.55 | 0.2-0.4 | slim and evenly spaced a few meters back
+a wide paved alley a few meters back | 0.8 | 0.3-0.5 | gray pavers between brick walls leading to a low stage at the far end
+glass entry doors set into the brick wall | 0.6 | 0.25-0.45 | a few meters back on the left, dark panes in steel frames
+a metal bike rack along the brick wall | 0.4 | 0.2-0.4 | a few meters back on the right, slim steel loops
+tall light poles with warm lamp heads | 0.5 | 0.2-0.4 | a few meters back across the courtyard, slim and black
+a concrete planter wall | 0.5 | 0.2-0.4 | a few meters back with ornamental grasses, a brick wall behind

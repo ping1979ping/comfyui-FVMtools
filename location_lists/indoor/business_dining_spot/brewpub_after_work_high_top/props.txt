@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small pint glasses lined on a shelf behind the far bar | 0.8 | 0.02-0.06 | clear glass
+a small wooden tasting paddle on a distant empty high-top | 0.55 | 0.02-0.05 | four glasses of amber beer
+small wooden coasters stacked at the far end of the bar | 0.45 | 0.01-0.04 | plain and blank
+small candles in glass jars on distant empty high-tops | 0.55 | 0.01-0.04 | warm flame
+a small basket of soft pretzels on a distant empty high-top | 0.5 | 0.02-0.05 | with a ramekin of mustard
+a small bowl of salted nuts on a distant empty high-top | 0.5 | 0.01-0.04 | white ceramic
+small tulip glasses on the back-bar shelf at the far end | 0.5 | 0.02-0.05 | clear glass
+a small stack of folded paper napkins at the far end of the bar | 0.4 | 0.01-0.04 | white
+small steel taps in a row on the tap tower at the far bar | 0.5 | 0.02-0.05 | polished metal
+a small potted succulent on a windowsill at the far wall | 0.4 | 0.01-0.04 | green
+small white bar towels draped over the rail of the far bar | 0.4 | 0.02-0.05 | folded cotton
+a small brass bell hanging at the end of the far bar | 0.35 | 0.01-0.03 | polished brass

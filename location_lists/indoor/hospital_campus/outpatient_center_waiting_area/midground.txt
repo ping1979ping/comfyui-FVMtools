@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+rows of empty upholstered chairs with wooden arms, a few meters back in the center | 1.0 | 0.3-0.5 | teal and gray fabric, small side tables between pairs
+empty corner seating nook with two lounge chairs, a few meters back on the left | 0.8 | 0.3-0.5 | a round walnut side table between them
+long empty bench in teal fabric, a few meters back on the right | 0.75 | 0.3-0.5 | oak frame with a low back
+tall potted ficus in a woven basket, a few meters back on the right | 0.7 | 0.2-0.4 | glossy green leaves
+low wood shelf with plants and ceramic bowls against the wall, a few meters back on the right | 0.6 | 0.2-0.4 | warm oak, tidy and empty
+water dispenser alcove with a pale oak counter, a few meters back on the left | 0.55 | 0.2-0.4 | empty and tidy
+plain sage wool rug under four empty lounge chairs, a few meters back on the left | 0.65 | 0.3-0.5 | low pile, soft rounded edge
+paired empty chairs sharing a small round side table, middle left | 0.7 | 0.3-0.5 | wood legs, soft gray fabric
+row of low planters with grasses along the window wall on the right | 0.55 | 0.2-0.4 | soft green blades, a few meters back
+empty oak console with a brass lamp, a few meters back on the right | 0.5 | 0.2-0.4 | tidy lamp base
+two empty curved sofas in sage fabric facing each other, a few meters back on the left | 0.65 | 0.3-0.5 | oak legs, a round side table between them
+tall open-slat oak room divider, middle left | 0.45 | 0.2-0.4 | warm vertical slats with plants beyond
+row of empty chairs facing the window wall, a few meters back | 0.6 | 0.3-0.5 | gray fabric with light oak legs

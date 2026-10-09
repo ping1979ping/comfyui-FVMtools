@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+overcast sky and soft even daylight through the window | 1.0 | - | -
+clear bright sky and crisp window light | 0.9 | - | -
+thin high cloud and soft diffuse daylight | 0.8 | - | -
+steady rain on the glass and a wet parking lot | 0.6 | - | -
+light drizzle outside and damp grey daylight | 0.5 | - | -
+fresh snow on the lot outside and bright cold light | 0.45 | - | -
+snow falling past the window in flat white light | 0.4 | - | -
+bare trees outside under a pale winter sky | 0.5 | - | -
+hazy summer sunlight and still warm air | 0.5 | - | -
+crisp autumn light with turning leaves outside | 0.5 | - | -
+fresh spring light with budding trees outside | 0.45 | - | -
+misty morning outside and soft cool light | 0.4 | - | -

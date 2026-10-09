@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright mid-morning overcast daylight | 1.0 | - | -
+cool soft early-morning light | 0.7 | - | -
+even midday mix of daylight and ceiling lights | 0.85 | - | -
+warm mid-afternoon sun streaking across the floor | 0.75 | - | -
+low amber late-afternoon light through the shades | 0.7 | - | -
+warm lamps with dim blue windows at early evening | 0.5 | - | -
+soft diffuse light of a bright cloudy noon | 0.8 | - | -
+clear bright late-morning light | 0.85 | - | -
+gentle early-afternoon daylight | 0.75 | - | -
+golden light of the last hour before sunset | 0.55 | - | -
+hazy warm mid-morning light | 0.6 | - | -
+bright overcast early-afternoon light | 0.7 | - | -

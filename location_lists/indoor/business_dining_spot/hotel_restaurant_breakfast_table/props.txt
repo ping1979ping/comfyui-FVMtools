@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small white ceramic coffee cup and saucer on a distant empty table by the window | 0.8 | 0.02-0.05 | plain china
+a small stainless coffee pot on the coffee station at the back | 0.6 | 0.02-0.06 | brushed steel
+a tiny cream pitcher on a distant empty table | 0.5 | 0.01-0.04 | white china
+small folded cloth napkins on a distant table set for breakfast | 0.6 | 0.02-0.05 | crisp white
+a small glass of orange juice on a distant empty table | 0.6 | 0.01-0.04 | clear tumbler
+a small plate with toast and a jam ramekin on a far table | 0.5 | 0.02-0.05 | white china
+a small fruit cup on the buffet at the far right | 0.45 | 0.02-0.05 | clear glass
+small water glasses on a distant empty table | 0.55 | 0.01-0.04 | clear glass
+a small potted orchid at the far end of the buffet | 0.4 | 0.02-0.06 | white blooms
+a small basket of pastries on the buffet at the far right | 0.5 | 0.02-0.05 | cloth liner
+a small bud vase on a distant empty table | 0.5 | 0.01-0.04 | one green stem
+a small stack of white plates at the far end of the buffet | 0.45 | 0.02-0.05 | plain china

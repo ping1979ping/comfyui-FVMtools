@@ -1,0 +1,4 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: a client-lunch dress look carries no printed lettering, and nothing on it should read as a logo or caption

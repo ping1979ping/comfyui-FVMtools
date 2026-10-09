@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late morning, soft daylight from the foyer doors | 1.0 | - | -
+midday, even warm light from the ceiling grid | 0.9 | - | -
+early afternoon, chandeliers glowing warm amber | 0.85 | - | -
+mid-afternoon, soft light through the sheer curtains | 0.85 | - | -
+late afternoon, low golden light through side windows | 0.8 | - | -
+early evening, chandeliers dimmed to warm amber | 0.8 | - | -
+evening, warm wall-washer light on the drapes | 0.75 | - | -
+morning, cool soft wash from the recessed ceiling lights | 0.7 | - | -
+noon, bright even light across the whole room | 0.6 | - | -
+dusk, blue light fading in the tall windows | 0.6 | - | -
+late evening, warm sconce light on the paneled walls | 0.5 | - | -
+early morning, quiet pale light before the doors open | 0.5 | - | -

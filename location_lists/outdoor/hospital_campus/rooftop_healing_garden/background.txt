@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+far curved rust-brown steel planter wall | 1.0 | 0.6-1.0 | sweeping across the whole width of the image with white birch trunks and tall grasses rising behind it, a five-storey tower with tall windows above on the left
+five-storey tower facade rising behind the roof garden | 0.8 | 0.6-1.0 | rows of tall windows reflecting the sky, the garden stepping down in front of it on the right
+far birch grove on the roof | 0.9 | 0.6-1.0 | white birch trunks standing in sedge across the back of the image, soft dappled shade, wooded hills beyond the parapet
+far timber pergola with slim steel posts | 0.7 | 0.6-1.0 | across the right side of the back, tall grasses and a low planter wall beside it, the treetops of an arboretum beyond
+far glass parapet of the roof garden | 0.75 | 0.6-1.0 | a clear glass guardrail across the whole width of the image, low wooded hills on the horizon, open sky above
+far meadow of ornamental grasses | 0.7 | 0.6-1.0 | drifts of tall grasses and perennials across the back, a curved weathered-steel wall on the left, wooded hills beyond
+far treetops of a historic arboretum beyond the roof edge | 0.65 | 0.6-1.0 | dense green canopy across the whole width of the image, clear sky above, a slim steel railing in front
+far oval lawn framed by curving steel walls | 0.7 | 0.6-1.0 | a smooth green lawn across the back, white birch trunks on the right, the glass tower rising behind
+far stone water feature of the roof garden | 0.55 | 0.5-0.9 | a low basin with water spilling over natural stone, backed by a curved rust-brown wall and birch trunks
+far brick and glass hospital wing behind the garden | 0.6 | 0.6-1.0 | warm brick and tall glazing across the back, planter walls stepping down in front, open sky above
+far park lawn beyond the roof edge | 0.55 | 0.6-1.0 | a wide green lawn and mature trees across the whole width of the image, low hills on the horizon
+far terrace under a slatted pergola | 0.5 | 0.5-0.9 | empty round metal tables on pale paving at the back, planter walls on both sides, tall grasses behind
+far wall of weathered steel with an orange-brown patina | 0.6 | 0.6-1.0 | tall crisp panels across the width of the image, slim birch trunks and sedge rising above the wall
+far sedge meadow under birch trees | 0.5 | 0.5-0.9 | low green sedge across the back, white trunks rising from it, a distant glass guardrail and wooded hills

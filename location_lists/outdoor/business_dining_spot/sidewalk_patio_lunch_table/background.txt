@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far side of the avenue | 1.0 | 0.6-1.0 | a continuous row of two- and three-storey red brick storefronts across the whole width of the image, plain {navy|forest green|cream} awnings over the ground-floor windows
+a Victorian corner house with a wraparound porch at the far left | 0.8 | 0.4-0.8 | white-trimmed gingerbread posts, a wooded hillside rising behind the roof
+street trees lining the far sidewalk | 0.85 | 0.5-0.9 | tall trunks and branches rising above the rooftops across the whole width of the image
+cast-iron lamp standards along the far curb of the avenue | 0.8 | 0.4-0.8 | slim black posts evenly spaced down the block, brick storefronts behind them
+tall arched upper-floor windows on the brick buildings across the street | 0.75 | 0.5-0.9 | white stone lintels, a line of cornices above
+the avenue receding down the block to a distant crossing | 0.8 | 0.5-0.9 | rows of brick facades on both sides, parked cars in soft focus along the far curb
+a limestone-trimmed brick building on the far corner | 0.6 | 0.4-0.8 | tall windows, a flat roof with a stepped cornice
+a church steeple rising above the rooftops far down the block on the left | 0.45 | 0.3-0.7 | pale stone against the sky
+storefront windows with dark green frames across the street | 0.7 | 0.5-0.9 | unlit and empty, set into brick piers
+slate and standing-seam roofs above the brick cornices on the far side | 0.55 | 0.4-0.8 | gray and rust tones against the sky
+a parked sedan and a small delivery van at the far curb | 0.5 | 0.3-0.7 | soft focus, across the whole width of the street
+a deep red painted wood door on the far right | 0.5 | 0.3-0.7 | set into a brick storefront with a stone step
+a granite curb and brick sidewalk running across the far side of the street | 0.6 | 0.4-0.8 | tidy and clean
+the cross street opening on the far left of the frame | 0.5 | 0.4-0.8 | more brick rowhouses and street trees lining the cross street

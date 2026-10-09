@@ -1,0 +1,13 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+pointed-toe pumps with a slim three-inch heel | 0.80 | 0.5-0.85 | leather,suede
+slingback pumps with a three-inch block heel | 0.80 | 0.45-0.8 | leather,suede
+almond-toe pumps with a three-inch block heel | 0.75 | 0.45-0.8 | leather,suede
+Mary Jane pumps with a two-and-a-half-inch block heel | 0.65 | 0.4-0.75 | leather,suede
+ankle-strap pumps with a three-inch block heel | 0.65 | 0.45-0.8 | leather,suede
+T-strap pumps with a three-inch block heel | 0.50 | 0.45-0.8 | leather
+round-toe pumps with a three-inch block heel | 0.60 | 0.4-0.75 | leather,suede
+classic pumps with a three-inch heel | 0.70 | 0.5-0.85 | leather,suede
+pointed-toe slingback pumps with a three-inch block heel | 0.70 | 0.5-0.85 | leather
+square-toe pumps with a three-and-a-half-inch block heel | 0.55 | 0.5-0.85 | leather,suede

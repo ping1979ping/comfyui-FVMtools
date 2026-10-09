@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+rain streaking the tall front windows | 0.6 | - | -
+snow falling beyond the glass entry doors | 0.4 | - | -
+clear spring evening glowing in the doorway | 0.6 | - | -
+gray drizzle on the street outside the windows | 0.5 | - | -
+still, comfortably warm air under the chandelier | 0.6 | - | -
+soft overcast light in the tall windows | 0.75 | - | -
+bright clear day beyond the tall windows | 0.8 | - | -
+dry autumn evening light in the windows | 0.6 | - | -
+dim gray winter afternoon beyond the glass | 0.5 | - | -
+humid summer dusk with a pink sky in the windows | 0.5 | - | -
+quiet, cool and dry air in the lobby | 0.6 | - | -

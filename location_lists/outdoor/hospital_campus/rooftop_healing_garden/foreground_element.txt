@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+pale pavestone path curving toward the lawn | 1.0 | 0.1-0.4 | smooth stone, thin even joints
+precast concrete pavers in running bond | 0.9 | 0.1-0.4 | light gray, thin joints
+short clipped lawn | 0.7 | 0.1-0.4 | even green grass, crisp edge
+fine gravel path edged with sedge | 0.6 | 0.1-0.4 | pale gravel, soft even texture
+smooth cast-in-place concrete paving | 0.75 | 0.1-0.4 | pale gray, faint trowel marks
+warm gray stone paving with thin joints | 0.7 | 0.1-0.4 | large slabs, calm and even
+light timber deck boards | 0.55 | 0.1-0.4 | long straight boards, weathered pale oak
+curved pavestone path with a steel edge | 0.65 | 0.1-0.4 | pale pavers, thin dark line
+pale precast pavers with dappled birch shade | 0.6 | 0.1-0.4 | soft light and shadow stripes
+compact pale gravel ground between planters | 0.45 | 0.1-0.4 | fine stones, even texture
+gray concrete walkway with scored joints | 0.6 | 0.1-0.4 | smooth and clean
+short mown lawn with a pale stone path | 0.55 | 0.1-0.4 | even green grass

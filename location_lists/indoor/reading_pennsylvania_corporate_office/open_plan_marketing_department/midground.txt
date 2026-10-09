@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+two long rows of empty white sit-stand desks a few meters back | 1.0 | 0.3-0.5 | black mesh task chairs pushed in, pale oak dividers between the pairs
+empty back-to-back desk clusters in the middle of the room | 0.95 | 0.3-0.5 | low sage felt dividers between the clusters, grey mesh task chairs tucked in
+a round white oak collaboration table in the middle of the aisle | 0.85 | 0.2-0.4 | four empty stools around it and a single pendant light hanging above
+a glass-fronted meeting room with a white oak frame, a few meters back on the left | 0.8 | 0.2-0.4 | an empty oval table with chairs pushed in behind the glass
+a pair of empty boucle lounge chairs near the windows on the right | 0.7 | 0.2-0.4 | a small round side table between them, a few meters back
+a wood-slat phone booth against the left wall | 0.65 | 0.2-0.4 | empty, with a frosted glass door, a few meters back
+a long pantry island of pale quartz a few meters back on the right | 0.6 | 0.2-0.4 | empty backless stools lined up along one side
+a long low white oak credenza along the left wall | 0.6 | 0.2-0.4 | closed cabinet doors, running a few meters back
+a tall rubber plant in a cream pot between two desk rows | 0.55 | 0.2-0.4 | set a few meters back in the middle of the room
+empty desks stretching away toward the far wall | 0.9 | 0.3-0.5 | pale oak desktops, grey mobile drawers beside each, chairs tucked in
+rolling blank glass boards parked between two desk groups | 0.5 | 0.2-0.4 | a few meters back on the right
+a standing-height meeting table near the columns on the right | 0.5 | 0.2-0.4 | two empty stools, a few meters back
+a long soft grey felt acoustic wall panel along the left | 0.45 | 0.2-0.4 | dividing the desk area from the aisle, a few meters back

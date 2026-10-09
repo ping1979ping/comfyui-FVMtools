@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+quiet and calm, bright light at the windows | 1.0 | - | -
+rain tapping lightly on the skylight | 0.8 | - | -
+clear blue sky outside the garden windows | 0.85 | - | -
+overcast gray outside, soft light indoors | 0.7 | - | -
+snow falling outside the garden windows | 0.5 | - | -
+hazy summer sunshine on the garden outside | 0.65 | - | -
+red and gold autumn leaves outside the windows | 0.55 | - | -
+thin morning mist over the garden beds outside | 0.45 | - | -
+fresh spring green in the garden outside | 0.6 | - | -
+still warm air, soft light on the clean tables | 0.6 | - | -
+bare winter trees outside, bright lights inside | 0.45 | - | -

@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+crown molding high up along the top of the walls | 0.9 | 0.05-0.2 | painted white plaster profile
+oak ceiling beams high overhead between plaster panels | 0.7 | 0.05-0.2 | warm stained wood
+slim brass lantern pendants hanging far overhead | 0.7 | 0.05-0.2 | thin chains and warm glass shades
+divided-light window sashes along the left wall | 0.8 | 0.05-0.2 | deep white-painted sills
+white paneled wainscoting along the lower back wall | 0.7 | 0.05-0.2 | smooth painted panels
+square white columns framing a wide opening far down the hall | 0.6 | 0.05-0.2 | simple painted shafts
+an arched firebox opening in the distant hearth | 0.6 | 0.05-0.2 | dark brick lining
+coffered ceiling panels high overhead at the far end | 0.6 | 0.05-0.2 | white painted grid
+small brass lever handles on paneled doors far down the corridor | 0.45 | 0.02-0.1 | warm brushed brass
+a thin painted picture rail along the back wall | 0.45 | 0.02-0.1 | cream plaster
+recessed ceiling lights in a far row overhead | 0.5 | 0.02-0.1 | round warm glow
+white baseboards running along the foot of the far wall | 0.5 | 0.02-0.1 | tall painted profile

@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+crisp clear autumn afternoon with dry leaves skittering | 0.8 | - | -
+light drizzle with shiny wet pavers | 0.5 | - | -
+humid summer evening under a hazy warm sky | 0.6 | - | -
+first snow dusting the planters and benches | 0.45 | - | -
+cold gray March day with bare trees | 0.6 | - | -
+bright spring day with new leaves on the young trees | 0.75 | - | -
+clear cool morning with a pale blue sky | 0.7 | - | -
+hot summer afternoon with a hazy white sky | 0.55 | - | -
+overcast winter day with a thin layer of snow | 0.45 | - | -
+breezy day with fast-moving clouds | 0.5 | - | -
+steady rain with dark wet brick | 0.4 | - | -

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+the two-lane street a few meters back | 0.95 | 0.3-0.5 | a few parked cars along the far curb and young street trees in square tree pits
+the intersection a few meters back | 0.85 | 0.3-0.5 | wide painted crosswalk stripes across the empty road, black traffic signals on mast arms overhead
+young street trees along both curbs | 0.8 | 0.25-0.5 | slim trunks in square tree pits with cast-iron grates, spaced evenly down the length of the block
+a few parked sedans along the far curb | 0.8 | 0.3-0.5 | and one delivery van, a few meters back across the street
+a steel bus shelter with plain glass panels | 0.55 | 0.2-0.4 | at the far corner across the street, empty, with a concrete bench
+cobra-head street lights on short poles | 0.65 | 0.2-0.4 | evenly spaced down both sides of the street a few meters back
+a wide empty sidewalk across the street | 0.7 | 0.25-0.45 | red brick pavers along the building line, dark storefront windows behind it
+a side street opening on the left | 0.6 | 0.25-0.45 | brick rowhouse fronts and utility poles with sagging wires receding far down the cross street
+a concrete planter and a low brick wall | 0.5 | 0.2-0.4 | at the corner across the intersection, a few meters back, a closed storefront behind
+the crosswalk and the stop line | 0.6 | 0.2-0.4 | worn white stripes on dark asphalt a few meters back, the street continuing far ahead
+utility poles with sagging wires | 0.45 | 0.2-0.4 | thin dark poles evenly spaced on the right, a few meters back
+a delivery van parked at the far curb | 0.4 | 0.2-0.4 | white, a few meters back across the street beside a young tree

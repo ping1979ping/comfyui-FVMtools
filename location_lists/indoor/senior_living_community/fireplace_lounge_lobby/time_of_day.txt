@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft mid-morning daylight | 1.0 | - | -
+bright early-afternoon daylight | 0.9 | - | -
+warm late-afternoon sunlight | 0.9 | - | -
+golden low sun streaming through the tall windows | 0.8 | - | -
+soft overcast late-morning light | 0.8 | - | -
+bright midday light softened by sheer curtains | 0.7 | - | -
+early evening with warm lamps glowing at the windows | 0.7 | - | -
+soft early-morning light with lamps still on | 0.6 | - | -
+late-afternoon light with long soft shadows | 0.6 | - | -
+blue early-evening dusk outside, warm lamplight inside | 0.55 | - | -
+even gray afternoon light | 0.5 | - | -
+amber sunset glow on the far wall | 0.45 | - | -

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small crystal water goblets on a distant white-linen table by the window | 0.8 | 0.02-0.06 | clear cut glass
+tiny brass salt and pepper shakers on a far white-linen table | 0.6 | 0.01-0.04 | polished brass
+a small bud vase with one white rose on an empty table by the far window | 0.7 | 0.02-0.05 | clear glass
+small folded white napkins on a distant empty table | 0.6 | 0.02-0.05 | crisp linen
+a small cloth-lined bread basket on a distant white-linen table | 0.55 | 0.02-0.06 | woven wicker
+tiny votive candles in glass along the far end of the bar | 0.5 | 0.01-0.04 | amber glass
+a small brass lamp at the far end of the bar | 0.55 | 0.02-0.06 | pleated cream shade
+a small cut-glass decanter on a shelf behind the far bar | 0.4 | 0.02-0.05 | amber liquid
+a small stack of white plates on the far sideboard | 0.5 | 0.02-0.06 | plain china
+small brass coat hooks in a row along the far partition on the left | 0.4 | 0.01-0.04 | polished brass
+a small potted fern in a brass pot in the far corner | 0.5 | 0.02-0.06 | glossy leaves
+a small silver tray at the end of the far sideboard | 0.4 | 0.02-0.05 | polished

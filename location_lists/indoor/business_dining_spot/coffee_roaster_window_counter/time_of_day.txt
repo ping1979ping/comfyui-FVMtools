@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft morning daylight through the steel windows | 1.0 | - | -
+pale early-morning light before the roaster warms up | 0.6 | - | -
+bright mid-morning light across the concrete | 0.85 | - | -
+cool daylight glowing through the roastery glass | 0.7 | - | -
+soft overcast midday light | 0.75 | - | -
+slanting early-afternoon sun through the windows | 0.65 | - | -
+quiet mid-afternoon lull with the pendants on | 0.7 | - | -
+warm practical glow from the roaster behind glass | 0.55 | - | -
+golden late-afternoon light low through the windows | 0.5 | - | -
+soft window light with warm pendants overhead | 0.8 | - | -

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+broad dark asphalt drop-off lane | 1.0 | 0.1-0.4 | fresh white lane stripes, smooth surface
+smooth concrete sidewalk with scored joints | 0.9 | 0.1-0.4 | pale gray, clean and even
+brick paver apron in front of the doors | 0.7 | 0.1-0.4 | warm red bricks, calm pattern
+light gray broom-finished concrete paving | 0.75 | 0.1-0.4 | fine even texture
+granite curb with a pale concrete walkway | 0.6 | 0.1-0.4 | clean stone edge, smooth surface
+dark asphalt with crisp white crosswalk bars | 0.6 | 0.1-0.4 | smooth surface
+wide pale concrete walkway | 0.8 | 0.1-0.4 | faint expansion joints
+warm gray granite paving | 0.5 | 0.1-0.4 | large even slabs
+short clipped lawn beside a concrete path | 0.5 | 0.1-0.4 | even green grass, pale path
+smooth charcoal asphalt | 0.65 | 0.1-0.4 | fine even grain, clean
+exposed aggregate concrete walkway | 0.45 | 0.1-0.4 | fine light gray pebbles
+herringbone brick paver walkway | 0.4 | 0.1-0.4 | warm buff bricks, calm color

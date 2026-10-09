@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+warm chandelier glow in the early evening lobby | 0.8 | - | -
+soft daylight through the tall front windows | 0.9 | - | -
+late-afternoon sun slanting through the entry glass | 0.7 | - | -
+amber wall sconces with dusk blue in the windows | 0.5 | - | -
+every light at full brightness before the evening show | 0.55 | - | -
+cool overcast daylight pooling on the marble | 0.7 | - | -
+bright midday light from the tall windows | 0.75 | - | -
+quiet late-morning daylight with the chandelier lit | 0.8 | - | -
+early morning light with the sconces still on | 0.45 | - | -
+blue hour in the windows with warm interior lamps | 0.5 | - | -
+warm early-afternoon light | 0.7 | - | -

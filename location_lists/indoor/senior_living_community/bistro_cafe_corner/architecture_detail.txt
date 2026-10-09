@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+black steel-framed glass partition along the right side | 0.7 | 0.05-0.2 | thin dark mullions
+herringbone oak parquet trim along the base of the far wall | 0.4 | 0.02-0.1 | warm honey wood
+encaustic cement tile panel behind the counter at the back | 0.5 | 0.05-0.2 | soft gray and cream pattern
+brushed brass foot bar along the base of the far counter | 0.5 | 0.02-0.1 | thin polished tube
+a plaster arch framing the pass-through at the far end | 0.6 | 0.05-0.2 | smooth white curve
+warm wood slat ceiling high above the far counter | 0.6 | 0.05-0.2 | narrow oak battens
+fabric-shade wall sconces between the windows along the left wall | 0.55 | 0.05-0.2 | warm glow
+a paneled door painted dark green in the far corner | 0.45 | 0.05-0.2 | brass handle
+globe pendant lights hanging in a row far overhead | 0.7 | 0.05-0.2 | milky white glass
+white-painted exposed beams high overhead | 0.5 | 0.05-0.2 | smooth round edges
+tall divided-light windows along the right wall | 0.65 | 0.05-0.2 | slim white frames
+a slim picture rail along the back wall | 0.4 | 0.02-0.1 | painted sage

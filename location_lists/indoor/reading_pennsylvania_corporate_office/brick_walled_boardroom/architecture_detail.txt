@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+mortar joints repointed in pale grey along the far wall | 0.7 | 0.05-0.15 | fine and slightly uneven
+iron tie plates dotting the brick in an even grid | 0.7 | 0.05-0.15 | dark iron squares across the far wall
+deep brick window reveals with painted steel sills on the right | 0.65 | 0.05-0.2 | slim and white
+white felt acoustic clouds high up over the table | 0.7 | 0.05-0.2 | recessed track spotlights above them
+a glass door with a black steel frame and a bar handle on the far right | 0.5 | 0.05-0.15 | closed
+a flush brushed-metal floor box with a closed lid in the middle of the room | 0.4 | 0.02-0.08 | closed hinged cover
+a wood slat acoustic wall with black felt backing along the left | 0.5 | 0.05-0.2 | narrow vertical slats
+white painted ductwork rising in the far corner | 0.55 | 0.05-0.15 | round and plain
+a narrow shadow gap where the brick meets the baseboard | 0.4 | 0.02-0.1 | along the far wall
+thin black steel window mullions on the right | 0.6 | 0.05-0.15 | set between the brick piers
+recessed track spotlights in a row high up near the windows | 0.5 | 0.05-0.15 | matte black cylinders
+a white oak door frame with a flush door at the far left | 0.4 | 0.05-0.15 | closed

@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning light with long shadows over the street | 0.6 | - | -
+soft overcast late-morning light | 0.9 | - | -
+bright midday sun with short shadows | 0.85 | - | -
+warm early-afternoon light on the brick facades | 0.8 | - | -
+late-afternoon sun raking down the street | 0.9 | - | -
+golden hour light warming the brick | 0.7 | - | -
+early evening with the streetlights just switched on | 0.6 | - | -
+blue hour with lit upper windows and streetlights | 0.5 | - | -
+flat gray midday light | 0.7 | - | -
+low morning sun lighting the left side of the street | 0.7 | - | -
+bright late-morning light | 0.75 | - | -

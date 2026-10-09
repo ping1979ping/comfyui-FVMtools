@@ -1,0 +1,9 @@
+# slot: headwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+smooth low chignon at the nape, the face turned toward the camera | 0.9 | 0.5-1.0 | -
+soft side part with the hair tucked behind the ears, the face open toward the camera | 0.8 | 0.4-1.0 | -
+small claw clip holding a neat half-up twist, the face turned toward the camera | 0.75 | 0.4-0.85 | -
+smooth low ponytail tied at the nape, the face open toward the camera | 0.7 | 0.4-0.9 | -
+slim barrette holding a polished half-up, the face turned toward the camera | 0.7 | 0.4-1.0 | -
+polished blowout with a soft side part tucked behind one ear, the face open toward the camera | 0.8 | 0.4-1.0 | -

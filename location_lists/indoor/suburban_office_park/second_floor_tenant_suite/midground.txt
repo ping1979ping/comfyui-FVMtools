@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+six empty modular desks with low fabric privacy panels, a few meters back | 0.9 | 0.3-0.5 | light oak laminate tops, black mesh task chairs pushed in
+glass-front conference room with an empty oval table on the right, a few meters back | 0.7 | 0.3-0.5 | thin aluminum frames, blinds half drawn
+small reception nook with two empty lounge chairs by the entry door, a few meters back | 0.55 | 0.3-0.5 | neutral gray fabric
+low credenza along the left wall, a few meters back | 0.5 | 0.2-0.4 | light oak with a gray top
+ficus tree in a gray floor planter beside the windows, a few meters back | 0.5 | 0.2-0.4 | glossy green leaves
+kitchenette peninsula with a laminate counter at the back of the suite | 0.55 | 0.3-0.5 | pale cabinets below, empty counter
+carpeted aisle between two rows of empty desks leading toward the far windows | 0.7 | 0.3-0.5 | black mesh chairs pushed in
+gray laminate storage cabinets along the right wall, a few meters back | 0.45 | 0.2-0.4 | low and plain
+empty desks in a long row along the left wall, a few meters back | 0.7 | 0.3-0.5 | black mesh chairs pushed in
+a pair of empty round meeting tables near the windows, a few meters back | 0.4 | 0.2-0.4 | light oak tops, four chairs each
+an empty cluster of four desks facing each other near the center, a few meters back | 0.5 | 0.3-0.5 | low fabric panels between them
+a wide doorway into a second room on the right, a few meters back | 0.4 | 0.2-0.4 | glass sidelights and a pale ceiling

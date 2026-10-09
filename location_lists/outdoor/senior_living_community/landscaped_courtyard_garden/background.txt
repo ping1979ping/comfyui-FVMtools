@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far side of the courtyard | 1.0 | 0.6-1.0 | a three-storey red brick wing with white-trimmed multi-pane windows in even rows across the whole width of the image, a slate roof with brick chimneys above
+the far wall of the courtyard | 0.9 | 0.6-1.0 | a covered porch with white columns and a row of empty white rocking chairs running along the whole brick facade, boxwood hedges in front
+the back of the garden | 0.85 | 0.6-1.0 | mature oaks and maples rising above the brick roofline, a faint blue ridgeline far behind them
+the left side of the courtyard | 0.7 | 0.6-1.0 | a glass sunroom with white trim and wicker furniture inside, climbing ivy on the brick beside it
+the far right of the courtyard | 0.65 | 0.6-1.0 | an arched white pergola draped in climbing vines over a gravel walk, the brick wing beyond it
+the far end of the garden | 0.65 | 0.6-1.0 | a slate-roofed gazebo with white columns standing on the lawn, a boxwood hedge and rolling lawn behind it
+beyond the low stone wall at the back | 0.6 | 0.6-1.0 | rolling lawn dropping away to a tree line and distant wooded hills
+the far brick building with arched windows | 0.6 | 0.6-1.0 | limestone-trimmed brick, two storeys, black iron balconies on the upper floor, a stone terrace below
+the rear of the courtyard | 0.55 | 0.6-1.0 | a tall clipped hedge wall across the whole width of the image, a stone archway in the middle opening to a lawn
+the far side of the garden | 0.55 | 0.6-1.0 | a long fieldstone wall with a wooden gate in the middle, mature trees rising behind it
+the back of the courtyard, beyond the fountain | 0.5 | 0.6-1.0 | a white-trimmed brick wing with tall French doors opening onto a paver terrace
+the far end of the walk | 0.5 | 0.6-1.0 | a stone garden pavilion with a slate roof, flanked by tall evergreen hedges, a wide lawn on the left

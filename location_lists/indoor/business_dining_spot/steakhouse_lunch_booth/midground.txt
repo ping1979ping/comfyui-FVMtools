@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a row of empty tufted {oxblood|deep green} booths a few meters back on the left | 0.95 | 0.3-0.5 | high walnut backs, white-linen tables set for lunch
+empty white-linen tables set for two a few meters back in the center | 1.0 | 0.3-0.5 | chairs pushed in, folded napkins at each place
+a polished mahogany bar a few meters back on the right | 0.8 | 0.3-0.5 | brass foot rail, leather stools lined along it, empty
+brass pendant lamps hanging in a line over the bar on the far right | 0.55 | 0.2-0.4 | warm pools of light on the dark wood
+a carved walnut room divider a few meters back in the center | 0.5 | 0.2-0.4 | frosted glass panels with soft light behind them
+an empty round table a few meters back on the right | 0.6 | 0.2-0.4 | white tablecloth, a low flower arrangement, chairs pushed in
+a potted palm beside a square pillar a few meters back on the left | 0.5 | 0.2-0.4 | brass planter, dark glossy leaves
+a long upholstered banquette along the left wall a few meters back | 0.8 | 0.3-0.5 | deep green tufted leather, empty
+a dark wood sideboard a few meters back on the right | 0.5 | 0.2-0.4 | stacked white plates and a brass lamp on top
+two tall leather armchairs beside a low table a few meters back on the left | 0.45 | 0.2-0.4 | empty, a brass floor lamp between them
+empty four-top tables a few meters back near the windows | 0.7 | 0.3-0.5 | pale green linen, chairs pushed in
+a raised dining platform a few meters back at the center | 0.4 | 0.2-0.4 | one step up, a brass rail, empty tables set for lunch

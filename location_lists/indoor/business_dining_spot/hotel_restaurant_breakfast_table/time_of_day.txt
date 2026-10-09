@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning daylight through the window wall | 1.0 | - | -
+soft even natural light across the tables | 0.9 | - | -
+pale cool light on the left, warm light on the right | 0.7 | - | -
+bright mid-morning light across the carpet | 0.8 | - | -
+warm downlights filling the dim corners | 0.55 | - | -
+gentle low sun just above the rooftops | 0.6 | - | -
+quiet weekday breakfast light | 0.85 | - | -
+soft overcast late-morning light | 0.7 | - | -
+slanting early light falling across the tables | 0.65 | - | -
+clear late-morning light with warm downlights | 0.5 | - | -

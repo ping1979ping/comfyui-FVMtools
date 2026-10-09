@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small unlit candle lantern on a distant high-top | 0.85 | 0.02-0.08 | black metal, clear glass
+a small glass pitcher of ice water on the far bar counter | 0.65 | 0.02-0.08 | clear glass
+a small bowl of cut citrus slices beside a pitcher at the back | 0.5 | 0.02-0.08 | bright yellow and green
+a small stack of clear cups on the distant bar | 0.55 | 0.02-0.08 | clear plastic
+a small vase of white flowers on a far bistro table | 0.6 | 0.02-0.08 | clear glass
+a small basket of folded cloth napkins at the back of the bar | 0.5 | 0.02-0.08 | natural wicker, white cloth
+a small closed umbrella leaning on the edge of a distant table | 0.45 | 0.02-0.08 | gray fabric
+a small succulent in a concrete cube on a far bistro table | 0.6 | 0.02-0.08 | gray concrete, pale green leaves
+tiny tea lights in glass along the far wall ledge | 0.55 | 0.02-0.08 | clear glass, warm flame
+a small bowl of mixed nuts on a distant high-top | 0.4 | 0.02-0.08 | white ceramic
+slim glass bottles of sparkling water on a far table | 0.45 | 0.02-0.08 | clear glass
+a compact stack of folded napkins at the corner of a distant bar | 0.4 | 0.02-0.08 | plain white

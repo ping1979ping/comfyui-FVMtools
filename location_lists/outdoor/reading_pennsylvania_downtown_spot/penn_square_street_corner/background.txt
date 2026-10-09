@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far side of Penn Street | 1.0 | 0.6-1.0 | a continuous row of three- and four-storey brick and limestone commercial buildings across the whole width of the image, a wooded ridge rising above the rooftops on the left
+the length of Penn Street running away from the camera | 0.9 | 0.6-1.0 | brick and stone buildings on both sides narrowing toward the far end, a wooded mountain closing the view at the horizon
+a stepped limestone Art Deco courthouse tower | 0.75 | 0.6-1.0 | rising far behind the rooftops on the left of the frame, a row of older brick buildings across the width of the image below it
+a seventeen-storey tan-brick Art Deco tower | 0.7 | 0.6-1.0 | standing far behind a row of lower commercial buildings on the right of the frame, a hazy sky above it
+the opposite corner of the intersection | 0.85 | 0.6-1.0 | a four-storey limestone bank building with tall arched windows, flanked by plain 1980s brown-glass offices across the width of the image
+a row of old brick buildings with dark upper windows | 0.8 | 0.6-1.0 | stretching across the far side of the street, some ground-floor storefronts empty behind plain glass, hazy sky above the roofline
+the end of the long block | 0.65 | 0.6-1.0 | a low arena roofline and a wooded mountain slope far behind the buildings on the right, red pagoda roofs just visible high on the ridge
+a five-storey brown-glass office block | 0.6 | 0.6-1.0 | dark glass and concrete across the street on the right, next to older limestone buildings, a wooded slope far behind
+the wooded slope of Mount Penn | 0.8 | 0.6-1.0 | a dark layered hillside rising far behind a row of brick rooftops across the whole width of the image
+a red-brown brick corner building | 0.8 | 0.6-1.0 | five storeys with pale stone window lintels and a flat parapet roofline on the right, the street continuing far behind it
+two long blocks of Penn Street | 0.75 | 0.6-1.0 | lined with brick and limestone buildings of different heights, rooftop mechanical boxes along the skyline, pale hazy sky above
+a wide limestone bank facade | 0.7 | 0.6-1.0 | tall arched windows and a recessed stone doorway at the corner across the intersection, brick buildings continuing to the left
+an old brick building with plywood over its upper windows | 0.5 | 0.6-1.0 | on the far side of the street, a tall limestone neighbor beside it on the left

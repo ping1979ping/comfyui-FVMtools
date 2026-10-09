@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small brass fireplace tool set standing at the far end of the hearth | 0.7 | 0.02-0.08 | black iron handles, polished brass stand
+small porcelain teapot on a tray on a distant coffee table | 0.65 | 0.02-0.08 | white glaze with a thin gold rim
+small stack of hardcover books on a distant side table | 0.6 | 0.02-0.08 | muted cloth covers
+slim white vase of hydrangeas far back on the mantel | 0.6 | 0.02-0.08 | pale blue blooms, glossy glaze
+small folded throw blanket over the arm of a distant armchair | 0.6 | 0.02-0.08 | soft cream wool
+two tiny unlit taper candles far back on the mantel | 0.5 | 0.02-0.08 | slim brass holders
+small bowl of green apples on a distant console table | 0.5 | 0.02-0.08 | shiny green skins, white bowl
+small ceramic lamp glowing far back on a console table | 0.6 | 0.02-0.08 | pleated linen shade
+tiny potted orchid on a far windowsill | 0.5 | 0.02-0.08 | white blooms
+small round tray with two cups on a far side table | 0.5 | 0.02-0.08 | white porcelain
+slim brass candlesticks far back on the mantel | 0.45 | 0.02-0.08 | warm polished brass
+small wicker basket of firewood far back beside the hearth | 0.5 | 0.02-0.08 | split birch logs
+compact glass dish of wrapped candies on a distant side table | 0.4 | 0.02-0.08 | clear glass, soft sparkles
+small closed book resting on a distant ottoman | 0.4 | 0.02-0.08 | plain cloth cover

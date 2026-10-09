@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a white quartz countertop with an eased edge along the far wall | 0.7 | 0.05-0.2 | smooth and pale
+a glossy white subway tile backsplash behind the far counter | 0.7 | 0.05-0.2 | clean grout lines
+small matte black pendants hanging over the far counter | 0.6 | 0.05-0.15 | round and plain
+dark bronze aluminum window frames on the right | 0.6 | 0.05-0.2 | thin mullions
+an under-cabinet LED strip along the base of the upper cabinets | 0.5 | 0.02-0.1 | a thin warm line
+recessed downlights in the ceiling overhead | 0.5 | 0.05-0.15 | round white discs
+round matte pendant lights high up in a row | 0.5 | 0.05-0.15 | matte white shades
+a stainless sink with a pull-down faucet at the far counter | 0.45 | 0.05-0.15 | slim and bright
+flush white outlet covers on the backsplash at the back | 0.35 | 0.02-0.06 | plain white plastic
+white ceiling tile grid overhead | 0.5 | 0.05-0.2 | recessed square lights
+a metal transition strip across the floor at the far doorway | 0.35 | 0.02-0.08 | thin line

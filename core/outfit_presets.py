@@ -158,4 +158,18 @@ OUTFIT_PRESETS = {
         "preferred_fabric_families": ["natural", "luxury"],
         "garment_weights": {},
     },
+    # For the female/business/*_with_heels sets, whose headwear.txt holds
+    # hairstyles ending in a face cue ("…, the face turned toward the camera").
+    # Drawing one every time keeps head and face in a Krea 2 full-body frame.
+    "business_executive": {
+        "slot_probabilities": {
+            "headwear": 1.0,
+            "outerwear": 0.55,
+            "accessories": 0.70,
+            "bag": 0.35,
+        },
+        "formality_range": (0.5, 1.0),
+        "preferred_fabric_families": ["natural", "luxury"],
+        "garment_weights": {},
+    },
 }

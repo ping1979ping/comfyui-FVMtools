@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a low stage riser spanning the room's width a few meters back | 1.0 | 0.3-0.5 | black stage skirting along its front edge
+five identical empty upholstered armchairs in a gentle arc on the stage a few meters back | 0.95 | 0.3-0.5 | soft gray fabric, small round side tables between them
+a slim wooden lectern at the right end of the stage a few meters back | 0.8 | 0.3-0.5 | pale oak with a small gooseneck microphone
+a row of small round side tables between the empty armchairs on the stage, a few meters back | 0.7 | 0.3-0.5 | glass carafes and glasses
+floor wedges along the front edge of the stage a few meters back | 0.4 | 0.3-0.5 | low black wedges
+a locked camera tripod beside the front aisle a few meters back on the left | 0.4 | 0.3-0.5 | slim black legs
+a front row of empty chairs in a neat line facing the stage a few meters back | 0.85 | 0.3-0.5 | dark upholstery
+a center aisle splitting the rows of empty seats a few meters back | 0.8 | 0.3-0.5 | with small floor lights along the edge
+empty chairs in neat rows on both sides of the aisle a few meters back | 0.75 | 0.3-0.5 | evenly spaced, untouched
+a low black stage riser with five empty armchairs on the left half a few meters back | 0.6 | 0.3-0.5 | a slim lectern on the right half
+a small floral arrangement on a side table at the end of the stage a few meters back | 0.5 | 0.3-0.5 | white blooms and greenery, all empty
+a short run of steps with a handrail at the left end of the stage, a few meters back | 0.5 | 0.3-0.5 | black metal rail, dark treads
+a pair of slim floor plants flanking the stage steps a few meters back | 0.45 | 0.3-0.5 | tall dark leaves in black pots

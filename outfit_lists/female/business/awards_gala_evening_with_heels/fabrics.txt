@@ -1,0 +1,13 @@
+# format: fabric_name | formality | family | weight
+
+satin-back crepe | 0.90 | synthetic | medium
+crepe | 0.80 | synthetic | medium
+wool crepe | 0.85 | natural | medium
+satin | 0.90 | synthetic | light
+silk | 0.90 | natural | light
+velvet | 0.85 | natural | medium
+cashmere | 0.90 | natural | medium
+wool | 0.80 | natural | medium
+leather | 0.75 | animal | medium
+suede | 0.70 | animal | medium
+metal | 0.70 | accessories | light

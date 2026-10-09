@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue sky with a few high clouds | 0.9 | - | -
+bright cloudless sky and crisp dry air | 0.7 | - | -
+flat gray overcast, dry air | 0.8 | - | -
+light drizzle on dark wet pavement | 0.55 | - | -
+steady rain with glossy puddles on the ground | 0.4 | - | -
+low morning fog softening the distant hills | 0.5 | - | -
+humid summer haze over the hills | 0.6 | - | -
+late October light, red and gold maple leaves | 0.5 | - | -
+light dusting of snow on the lawn, clear pavement | 0.4 | - | -
+cold bright day with frost on the grass | 0.45 | - | -
+breezy partly cloudy day with fast-moving clouds | 0.6 | - | -
+early May after showers, fresh green leaves | 0.5 | - | -

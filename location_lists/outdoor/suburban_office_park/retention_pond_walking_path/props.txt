@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small wooden birdhouse on a slim pole far in the meadow | 0.4 | 0.02-0.05 | weathered wood
+tiny orange float marker far near the outlet | 0.35 | 0.02-0.04 | bright orange plastic
+little row of round river stones far along the path edge | 0.45 | 0.02-0.06 | smooth gray river stones
+small domed trash receptacle far beside the distant bench | 0.4 | 0.02-0.05 | dark domed lid
+tiny wooden stake in the meadow at the far edge | 0.35 | 0.02-0.04 | slim gray stick
+small rounded boulder at the far edge of the buffer | 0.4 | 0.02-0.06 | low gray stone
+little clump of cattails at the far shoreline | 0.45 | 0.02-0.06 | slim brown spikes
+slim wooden fence post far at the property edge | 0.35 | 0.02-0.05 | weathered gray wood
+small cluster of river rocks far beside the inlet | 0.4 | 0.02-0.06 | rounded gray rocks
+tiny white survey marker far at the edge of the lawn | 0.3 | 0.02-0.04 | slim post
+small gray pipe end poking from the bank far on the left | 0.3 | 0.02-0.04 | dark cast iron grate
+little mulched tree ring far along the path | 0.35 | 0.02-0.05 | dark mulch chips

@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+weathered dark gray asphalt | 1.0 | 0.1-0.4 | faint worn white stall lines and tar-sealed seams
+smooth dark asphalt, freshly sealed | 0.65 | 0.1-0.4 | crisp white stall lines, even texture
+gray asphalt with patched seams | 0.7 | 0.1-0.4 | a few faded yellow curb edges
+dark asphalt beside a concrete curb | 0.8 | 0.1-0.4 | mulched island edge at the far side
+asphalt with sun-faded white stall lines | 0.8 | 0.1-0.4 | slightly worn surface
+asphalt drive aisle with a pale concrete gutter along one edge | 0.6 | 0.1-0.4 | clean joints
+pale concrete sidewalk running along the lot edge | 0.6 | 0.1-0.4 | broom finish, tooled joints
+black asphalt with a wide painted crosswalk | 0.5 | 0.1-0.4 | clean white bars
+concrete curb and mulched island edge beside the asphalt | 0.55 | 0.1-0.4 | a young tree trunk at the far side
+mowed lawn verge beside the asphalt | 0.5 | 0.1-0.4 | faint mower stripes
+gray asphalt with a few hairline cracks | 0.6 | 0.1-0.4 | even weathered tone
+smooth concrete apron at the head of the stalls | 0.4 | 0.1-0.4 | light gray with joint lines

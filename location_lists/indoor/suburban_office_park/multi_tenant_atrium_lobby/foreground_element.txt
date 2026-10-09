@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished tan granite floor | 1.0 | 0.1-0.4 | soft reflections of the skylight bays
+polished granite floor in wide tan and charcoal bands | 0.8 | 0.1-0.4 | clean glossy surface
+smooth cream limestone floor | 0.6 | 0.1-0.4 | soft sheen
+polished granite floor with a plain brass-edged border strip | 0.6 | 0.1-0.4 | thin warm metal line
+polished tan granite floor with a soft patch of daylight across it | 0.7 | 0.1-0.4 | gentle reflections
+matte honed granite floor in warm gray | 0.55 | 0.1-0.4 | even and quiet
+glossy granite floor catching the glow of the pendant lights | 0.5 | 0.1-0.4 | warm reflections
+plain low-pile warm gray carpet | 0.45 | 0.1-0.4 | even and clean
+polished buff stone floor with faint veining | 0.55 | 0.1-0.4 | gentle sheen
+polished floor with soft reflections of the glass wall | 0.6 | 0.1-0.4 | tan granite
+pale beige marble floor | 0.45 | 0.1-0.4 | smooth with soft veining
+polished charcoal granite floor | 0.4 | 0.1-0.4 | deep glossy surface

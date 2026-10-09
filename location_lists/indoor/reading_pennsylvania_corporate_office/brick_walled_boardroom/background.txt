@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the boardroom | 1.0 | 0.6-1.0 | repointed red-brown brick across the whole width of the image, a wall-mounted display switched off in the center, tall aluminum-framed windows on the right
+the tall window bays on the right side of the room | 0.9 | 0.6-1.0 | looking across a brick courtyard to a mill wing with a square tower, slate rooftops beyond and a faint wooded hillside on the horizon
+the white oak slat wall behind the head of the table | 0.8 | 0.5-0.9 | vertical slats with black felt backing across the whole width of the image, a thin shadow gap along the floor, all empty
+the left wall painted white with one deep teal panel | 0.7 | 0.5-0.9 | the teal panel in the middle of the wall, a white oak credenza wall at the far end, pendant lights across the top
+the glass wall to the corridor on the far right | 0.7 | 0.5-0.9 | a frosted band at eye level, black steel frame, white felt acoustic clouds floating overhead
+the built-in credenza wall at the far end of the room | 0.75 | 0.5-0.9 | white oak cabinets with closed doors across the whole width of the image, a tall plant in a black planter in the far right corner
+the exposed brick far wall with iron tie plates | 0.8 | 0.6-1.0 | square iron plates in an even grid across the whole width of the image, a narrow shadow gap above the baseboard
+the far corner where brick meets a glass wall | 0.6 | 0.4-0.8 | exposed brick on the left, a floor-to-ceiling glass partition on the right, white painted ductwork high up in the corner
+the brick window wall seen at an angle | 0.65 | 0.5-0.9 | deep reveals around tall steel-framed windows on the right, brick piers between the bays, a courtyard beyond
+the far wall hung with three large abstract canvases | 0.6 | 0.5-0.9 | teal, sand and white canvases on repointed brick, in an even row across the whole width of the image
+the window wall with a view over rooftops | 0.5 | 0.6-1.0 | slate rooftops and brick chimneys stepping away on the right, tall windows between brick piers
+the long brick side wall on the left | 0.6 | 0.5-0.9 | repointed brick with iron tie plates, white painted ductwork high up along the ceiling, the room running away toward the far end
+the head end of the room with a teal built-in cabinet wall | 0.55 | 0.5-0.9 | matte teal cabinet doors across the left half of the image, exposed brick on the right

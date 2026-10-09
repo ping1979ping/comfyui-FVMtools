@@ -1,0 +1,4 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: a polished business-casual look for a community open house carries no printed lettering, and a name tag or event badge would only render as gibberish

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+reclaimed plank cladding on the front of the reception desk | 0.7 | 0.05-0.2 | dark weathered boards along its edge
+stainless pull handles on the glass entry doors on the right | 0.55 | 0.02-0.1 | slim vertical bars
+recessed ceiling downlights in a regular grid overhead | 0.6 | 0.05-0.15 | round white discs
+a matte black steel stair stringer with oak treads on the left | 0.55 | 0.05-0.2 | thin dark line
+saw-cut joint lines in the polished concrete floor running toward the back | 0.45 | 0.05-0.15 | fine and straight
+cove lighting along the base of the far brick wall | 0.6 | 0.05-0.15 | a narrow glow
+a dark bronze aluminum storefront frame around the entry on the right | 0.5 | 0.05-0.2 | thin and straight
+a round oak handrail on the stair at the left | 0.4 | 0.02-0.1 | slim and smooth
+a few darker burnt headers in the repointed brick of the far wall | 0.4 | 0.05-0.15 | slightly darker bricks
+suspended linear pendants in rows high up overhead | 0.65 | 0.05-0.15 | slim white bars
+iron tie plates dotting the brick wall far behind | 0.5 | 0.05-0.15 | dark iron squares

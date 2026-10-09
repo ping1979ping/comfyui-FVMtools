@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+an oak-look vinyl plank floor | 1.0 | 0.1-0.4 | wide boards with a soft sheen
+a wide-plank oak floor | 0.7 | 0.1-0.4 | warm boards with a matte finish
+a pale grey wood-look vinyl plank floor | 0.7 | 0.1-0.4 | long boards, low sheen
+a sealed polished concrete floor | 0.6 | 0.1-0.4 | light grey with soft reflections of the windows
+a large-format light grey porcelain tile floor | 0.6 | 0.1-0.4 | thin grout lines, matte finish
+a warm honey oak-look plank floor | 0.6 | 0.1-0.4 | long boards with a satin finish
+a walnut-look vinyl plank floor | 0.5 | 0.1-0.4 | darker boards, low sheen
+a pale oak plank floor | 0.5 | 0.1-0.4 | soft window reflections along the boards
+a smooth cream porcelain tile floor | 0.45 | 0.1-0.4 | large tiles, matte finish
+a matte grey luxury vinyl plank floor | 0.5 | 0.1-0.4 | long boards, even tone
+a light birch-look plank floor | 0.45 | 0.1-0.4 | pale boards with a matte finish
+a sealed light concrete floor | 0.4 | 0.1-0.4 | long soft reflection of the window wall

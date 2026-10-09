@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+thin black aluminum frames around the glass walls on the left and back | 0.85 | 0.05-0.2 | slim and straight
+a frosted vinyl band at eye level across the glass wall on the left | 0.65 | 0.05-0.15 | plain translucent strip
+a brushed steel pull handle on the glass door at the back | 0.55 | 0.02-0.1 | slim vertical bar
+white ceiling tile grid overhead | 0.7 | 0.05-0.2 | recessed square LED lights
+dark bronze aluminum window frames with thin mullions on the far wall | 0.6 | 0.05-0.2 | straight lines
+white vinyl cove base along the walls | 0.4 | 0.02-0.1 | thin and clean
+a white sprinkler head at the center of the ceiling | 0.35 | 0.02-0.06 | plain white fitting
+a pale outlet cover plate low on the right wall | 0.35 | 0.02-0.06 | plain pale plastic
+white horizontal blinds half open on the far window | 0.55 | 0.05-0.2 | thin slats
+a narrow aluminum threshold strip under the glass door at the back | 0.4 | 0.02-0.08 | thin metal line
+a slim air diffuser in the ceiling near the far window | 0.4 | 0.05-0.15 | thin white square

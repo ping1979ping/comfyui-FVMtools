@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+rear wall of the lobby with two brushed stainless elevator doors at the center | 1.0 | 0.6-1.0 | warm gray painted walls on both sides, a glass-walled stair tower on the right, a bright window wall at the far left
+glass-enclosed elevator shaft rising through the lobby at the far end | 0.7 | 0.6-1.0 | a stainless-framed cab visible behind clear glass, daylight from a high clerestory window
+window wall across the whole width of the lobby | 0.85 | 0.6-1.0 | a wooded hillside above the parking lot, tall tinted glass with thin bronze mullions
+glass-walled stairwell with painted steel framing beyond the elevators | 0.75 | 0.6-1.0 | brushed handrails, treetops filling the tall windows on the left
+long hallway opening to the right toward aluminum-framed glass suite doors | 0.65 | 0.6-1.0 | linear ceiling light strips receding, warm gray walls
+granite wall surround with hairline seams behind the elevator doors | 0.6 | 0.6-1.0 | tan stone, recessed ceiling downlights in a regular grid
+glass guardrail overlooking a lower landing on the left | 0.5 | 0.6-1.0 | stainless cap rail, a bright stair tower window behind it
+glass-walled conference room across the lobby at the far right | 0.55 | 0.6-1.0 | blinds half drawn, an empty oval table inside
+wood-veneer paneled wall running the length of the lobby | 0.55 | 0.6-1.0 | warm oak tones, a glass entry door to a suite at the far end
+tall stair tower glazing at the far end of the lobby | 0.6 | 0.6-1.0 | a rounded wooded ridge beyond the parking lot, thin painted steel framing
+bright clerestory window high on the back wall | 0.5 | 0.6-1.0 | daylight spilling down a cream wall above the elevator doors
+second elevator bank around the corner at the far left | 0.4 | 0.6-1.0 | matching stainless doors in a recessed granite alcove

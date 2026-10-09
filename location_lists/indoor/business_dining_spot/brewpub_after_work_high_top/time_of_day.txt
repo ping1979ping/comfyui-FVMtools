@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+late-afternoon light through the tall windows | 0.9 | - | -
+low golden sun slanting across the brick | 0.85 | - | -
+blue-hour dusk beyond the factory windows | 0.8 | - | -
+warm amber Edison glow overhead | 0.8 | - | -
+early-evening light with the pendants glowing | 0.85 | - | -
+soft overcast late-afternoon light | 0.6 | - | -
+dim brick walls with warm uplights | 0.6 | - | -
+low golden light pooling on the table tops | 0.7 | - | -
+last warm daylight fading at the windows | 0.65 | - | -
+deep dusk with the lamps and fire pit glowing | 0.5 | - | -

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright late-morning daylight from the skylight bays | 0.9 | - | -
+soft mid-morning light through the glass wall | 0.85 | - | -
+early morning light, interior lights still warm | 0.6 | - | -
+noon daylight with soft shadows | 0.8 | - | -
+early afternoon light angling across the granite | 0.8 | - | -
+even daylight with warm interior lights on | 0.75 | - | -
+mid-afternoon light, even and bright | 0.8 | - | -
+late afternoon light warming the stone wall | 0.7 | - | -
+low light reaching deep across the floor | 0.55 | - | -
+early evening, windows blue, pendant lights glowing | 0.45 | - | -

@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small folded linen napkins on the place settings of a distant table at the back of the room | 0.9 | 0.02-0.08 | crisp white linen
+small water goblets above the place settings of a far table | 0.85 | 0.02-0.08 | clear glass with a soft shine
+a small low floral centerpiece on a distant table near the stage | 0.8 | 0.02-0.08 | white hydrangea and greenery
+small unlit glass votives on a far table at the back of the room | 0.7 | 0.02-0.08 | clear glass, cream wax
+small silver cream pitchers on a distant table | 0.7 | 0.02-0.08 | polished silver
+small inverted coffee cups on saucers at a far table at the back | 0.65 | 0.02-0.08 | white porcelain
+small bread plates with butter dishes on a table far down the room | 0.6 | 0.02-0.08 | white porcelain
+tiny salt and pepper shakers on a distant table | 0.6 | 0.02-0.08 | clear glass with silver tops
+a slim wooden lectern on the low stage far across the room | 0.75 | 0.02-0.08 | pale oak
+a small gooseneck microphone on the distant lectern | 0.55 | 0.02-0.08 | matte black
+a small potted ficus beside the far stage steps | 0.6 | 0.02-0.08 | glossy dark green leaves
+compact silver cutlery sets squared up at a far table | 0.5 | 0.02-0.08 | polished silver

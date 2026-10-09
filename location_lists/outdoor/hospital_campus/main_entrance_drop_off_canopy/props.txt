@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+slim steel bollard at the far curb edge | 0.5 | 0.02-0.08 | brushed silver
+small stainless waste and recycling bin by the far door | 0.5 | 0.02-0.08 | brushed steel
+small stone planter with clipped boxwood beside the far doors | 0.6 | 0.02-0.08 | gray stone
+compact umbrella stand inside the far vestibule | 0.4 | 0.02-0.08 | black metal
+small blue push-button door opener on a far wall | 0.4 | 0.02-0.08 | round plate
+compact stainless bench far under the canopy | 0.45 | 0.02-0.08 | brushed steel
+small round granite planter at the far end of the walkway | 0.55 | 0.02-0.08 | gray granite
+slim black lamp post far down the loop | 0.5 | 0.02-0.08 | matte black
+small clipped boxwood shrub in a distant planter | 0.55 | 0.02-0.08 | dense green
+small yellow tactile strip along the far curb edge | 0.35 | 0.02-0.08 | bright paint
+small potted evergreen on a distant stone step | 0.5 | 0.02-0.08 | dark green
+slim steel handrail at the far steps | 0.4 | 0.02-0.08 | polished steel

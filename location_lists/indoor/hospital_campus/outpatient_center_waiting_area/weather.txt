@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear and sunny outside, bright daylight in the windows | 1.0 | - | -
+gray and overcast outside, soft even light inside | 0.9 | - | -
+partly cloudy outside, gentle daylight | 0.8 | - | -
+rain on the windows, wet parking lot outside | 0.65 | - | -
+first snow dusting the parking lot outside | 0.5 | - | -
+calm and still, soft light through the shades | 0.7 | - | -
+heavily overcast outside, quiet gray light | 0.6 | - | -
+hazy and warm outside, cool clean air inside | 0.55 | - | -
+bright cold winter day outside, crisp light | 0.5 | - | -
+fresh green spring leaves outside the window | 0.55 | - | -
+golden autumn leaves on the trees outside | 0.55 | - | -
+light fog outside, soft diffuse light | 0.45 | - | -

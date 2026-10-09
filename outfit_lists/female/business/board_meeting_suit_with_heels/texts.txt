@@ -1,0 +1,4 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: a board-meeting suit and its blouse carry no printed lettering, and no badge or monogram belongs to this set

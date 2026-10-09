@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a polished concrete floor | 1.0 | 0.1-0.4 | faint aggregate speckle and a soft sheen
+a smooth light grey polished concrete floor | 0.85 | 0.1-0.4 | soft reflections of the tall windows
+a large-format pale grey porcelain tile floor | 0.6 | 0.1-0.4 | thin grout lines, matte finish
+a wide-plank white oak floor | 0.7 | 0.1-0.4 | pale boards with a matte finish
+an old maple plank mill floor | 0.6 | 0.1-0.4 | worn honey-brown boards with fine nail lines
+a warm grey sealed concrete floor | 0.7 | 0.1-0.4 | fine saw-cut joints in a regular grid
+a dark grey polished concrete floor | 0.5 | 0.1-0.4 | quiet reflections of the ceiling lights
+a wood-look vinyl plank floor | 0.5 | 0.1-0.4 | pale oak tone with a low sheen
+a plain cream low-pile carpet | 0.4 | 0.1-0.4 | smooth and even, no pattern
+a honed pale slate-grey stone floor | 0.45 | 0.1-0.4 | large smooth slabs
+a smooth light concrete floor | 0.5 | 0.1-0.4 | long soft reflections of the glass doors
+a matte oak-look plank floor | 0.45 | 0.1-0.4 | long boards in a light honey tone

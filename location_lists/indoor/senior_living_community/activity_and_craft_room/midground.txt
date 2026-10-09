@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+large rectangular worktables with light wood tops, a few meters back | 1.0 | 0.3-0.5 | empty armchairs with wooden arms pushed in around each one
+an easel holding an unfinished landscape painting, far back on the left | 0.7 | 0.2-0.4 | a paint-spotted drop cloth beneath
+a sewing table with a machine and a stack of folded fabric, a few meters back on the right | 0.65 | 0.2-0.4 | a task lamp on top
+a circle of upholstered armchairs on the left, a few meters back | 0.7 | 0.3-0.5 | woven baskets of yarn beside them, all empty
+a card table with a half-finished jigsaw puzzle in the middle distance | 0.55 | 0.2-0.4 | four chairs around it, all empty
+a rolling cart of paint tubes and brushes a few meters back on the right | 0.6 | 0.2-0.4 | metal tray top
+a quilting frame with a floral quilt top stretched across it, far back on the left | 0.5 | 0.2-0.4 | soft colors
+a tall green plant in a ceramic pot between two windows, far back | 0.5 | 0.2-0.4 | glossy leaves
+a low bench holding stacked baskets of craft supplies along the right wall | 0.5 | 0.2-0.4 | natural wicker
+a long table covered in clean paper and set for painting, a few meters back | 0.6 | 0.3-0.5 | empty stools along it
+a wooden drying rack with finished watercolor sheets, far back on the left | 0.4 | 0.2-0.4 | tilted racks
+a round table set with trays of colored beads, a few meters back on the right | 0.5 | 0.2-0.4 | empty chairs around it
+a pair of potted ferns in the far corner by the windows | 0.4 | 0.2-0.4 | green fronds

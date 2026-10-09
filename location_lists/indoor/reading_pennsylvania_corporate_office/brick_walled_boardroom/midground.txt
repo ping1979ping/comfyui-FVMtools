@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a long white oak boardroom table running toward the far wall | 1.0 | 0.3-0.5 | empty, with charcoal wool chairs pushed in along both sides
+three linear pendant lights hanging over the table in the middle of the room | 0.7 | 0.1-0.3 | slim black bars, all empty
+a white oak credenza along the left wall | 0.6 | 0.2-0.4 | closed doors, a few meters back
+a slightly taller empty chair at the far head of the table | 0.65 | 0.1-0.3 | charcoal wool upholstery
+spare charcoal chairs lined up against the glass wall on the right | 0.5 | 0.2-0.4 | a few meters back, all empty
+a tall plant in a black planter in the far right corner | 0.5 | 0.2-0.4 | a few meters back
+low wood-slat acoustic panels along the lower part of the left wall | 0.45 | 0.2-0.4 | a few meters back
+a teal built-in cabinet wall with closed doors on the left | 0.5 | 0.2-0.4 | a few meters back
+a rolling blank glass board against the right wall | 0.45 | 0.2-0.4 | a few meters back
+a small round side table in the far left corner | 0.4 | 0.1-0.3 | pale oak top, a few meters back, all empty
+a long white oak table in the middle of the room | 0.85 | 0.3-0.5 | empty, a flush brushed-metal power box at its center, a few meters back
+two rows of empty charcoal chairs facing each other across the table | 0.6 | 0.2-0.4 | pushed in, a few meters back

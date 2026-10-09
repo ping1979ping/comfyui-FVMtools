@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+exposed century-old brick walls along the left | 0.8 | 0.05-0.2 | uneven and warm
+heavy timber ceiling beams and joists high above | 0.7 | 0.05-0.2 | dark stained
+black-painted pipes and sprinkler lines along the ceiling | 0.6 | 0.03-0.1 | overhead
+tall steel-framed factory windows on the left | 0.7 | 0.05-0.2 | thin muntins
+a reclaimed wood bar front at the far right | 0.5 | 0.05-0.15 | dark planks
+glass garage-style doors at the far left | 0.5 | 0.05-0.15 | steel frames
+caged Edison filament pendants hanging high up | 0.6 | 0.02-0.08 | warm amber glow
+a brick arch over the far doorway | 0.45 | 0.05-0.12 | rough old bricks
+a slim black iron beam bracket high on the far wall | 0.4 | 0.02-0.06 | riveted
+a narrow steel-framed transom above the far door | 0.35 | 0.02-0.08 | small panes
+a thin brass foot rail along the far bar | 0.4 | 0.02-0.06 | worn bright

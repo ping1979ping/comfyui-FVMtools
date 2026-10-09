@@ -1,0 +1,13 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+# Evening-quiet: tonal weaves and finishes only. A soft satin sheen or a fine metallic thread is the maximum.
+
+tonal jacquard weave | 0.30 | bottom,outerwear | 0.75-1.0
+subtle tonal damask pattern | 0.20 | bottom | 0.8-1.0
+subtle tonal floral jacquard | 0.15 | bottom | 0.75-1.0
+small tonal geometric pattern | 0.12 | bottom,outerwear | 0.75-1.0
+fine tonal herringbone weave | 0.20 | outerwear | 0.75-1.0
+soft satin sheen | 0.25 | bottom,outerwear | 0.8-1.0
+fine metallic thread running through the weave | 0.12 | bottom,outerwear | 0.85-1.0
+self-fabric belt | 0.20 | bottom | 0.7-1.0
+thin contrast piping | 0.12 | outerwear | 0.75-1.0
+covered buttons | 0.15 | bottom,outerwear | 0.7-1.0

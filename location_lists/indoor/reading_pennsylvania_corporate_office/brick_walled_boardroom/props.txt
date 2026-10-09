@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small glass pitcher and tumblers on a tray on the distant credenza | 0.6 | 0.02-0.06 | clear glass on a steel tray
+a tiny black round conference phone in the middle of the far table | 0.55 | 0.02-0.05 | round matte black body
+slim blank notepads and pens at the far places of the table | 0.5 | 0.02-0.05 | blank white pages and black pens
+a small glass bowl of green apples on the table far back | 0.5 | 0.02-0.06 | clear glass with green apples
+a small dish of wrapped mints at the far end of the table | 0.45 | 0.02-0.05 | white ceramic with wrapped mints
+two small white mugs on a tray on the far credenza | 0.45 | 0.02-0.05 | glazed white ceramic
+a tiny black cable cube at the far edge of the table | 0.4 | 0.02-0.05 | matte black plastic
+a small steel coffee carafe on a side table in the far corner | 0.45 | 0.02-0.06 | brushed steel with a black handle
+a slim glass vase with green stems on the credenza at the back | 0.5 | 0.02-0.06 | plain clear glass
+a small ceramic bowl on the distant credenza | 0.4 | 0.02-0.05 | pale and plain
+a small potted fern on the far credenza | 0.45 | 0.02-0.06 | soft green fronds
+a compact box of plain white tissues at the far end of the table | 0.35 | 0.02-0.05 | plain white cardboard
+a small stack of closed grey folders on the credenza at the back | 0.4 | 0.02-0.05 | plain grey card covers

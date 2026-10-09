@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the break area | 1.0 | 0.6-1.0 | white painted drywall across the whole width of the image with open oak shelving high up, a quartz-topped coffee counter with sage cabinets below in the middle
+the window wall on the right side of the break area | 0.9 | 0.6-1.0 | floor-to-ceiling dark bronze frames looking out over a landscaped parking lot, maples beyond and a low hazy wooded hillside above the treetops
+the coffee counter at the far center of the room | 0.9 | 0.6-1.0 | a pale quartz top with sage green cabinets below and a glossy white subway tile backsplash, open oak shelves above, across the middle of the image
+the far left corner of the break area | 0.75 | 0.5-0.9 | a tall stainless refrigerator beside a glass-front pantry cabinet in pale oak, a sage green wall beyond
+the sage-green accent wall on the left | 0.65 | 0.5-0.9 | smooth painted sage green across the whole left side of the image, a row of framed botanical prints hung in an even line
+the upper cabinet wall in pale oak veneer | 0.7 | 0.5-0.9 | flush doors across the whole width of the image, under-cabinet lights along their base, white subway tile below
+the glass door to the corridor at the back on the right | 0.55 | 0.4-0.8 | a black-framed glass door, a carpeted corridor beyond, a white wall alongside
+the far wall of white painted drywall | 0.7 | 0.6-1.0 | two long open oak shelves high up across the whole width of the image, a few pale ceramic bowls spaced along them
+the window side of the break area, seen at an angle | 0.6 | 0.5-0.9 | dark bronze window frames on the right, a brick neighboring building beyond the lot, tree crowns above its roof
+the far end of the room under round matte pendant lights | 0.6 | 0.5-0.9 | a white tile ceiling above, a coffee counter in the middle, tall windows on the right
+the far wall painted soft teal | 0.45 | 0.5-0.9 | smooth teal across the left half of the image, white oak shelving high up, a pale oak cabinet wall on the right
+the kitchenette wall at the far center | 0.55 | 0.4-0.8 | a pale quartz counter with a stainless double sink, a window above it looking out to maples
+the open pantry shelves at the back of the room | 0.5 | 0.4-0.8 | oak shelves across the whole width of the image, a glass-front cabinet on the far left

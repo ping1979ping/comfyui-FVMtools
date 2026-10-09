@@ -1,0 +1,14 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small potted orchid at the far end of the reception desk | 0.5 | 0.02-0.06 | white blossoms on a slender stem
+tiny ceramic vase on a low table far on the left | 0.5 | 0.02-0.05 | slim pale vase
+small stone urn with a clipped boxwood ball far beside the entrance doors | 0.4 | 0.02-0.06 | weathered gray stone
+tiny brushed-steel umbrella stand far beside the doors | 0.35 | 0.02-0.05 | slim empty cylinder
+small glass water carafe on a distant side table | 0.4 | 0.02-0.05 | clear glass
+slim silk plant in a gray pot far in the corner | 0.45 | 0.02-0.06 | dark green leaves
+small framed abstract print on the far end wall | 0.4 | 0.02-0.06 | muted colors
+little bowl of river stones on a far coffee table | 0.4 | 0.02-0.05 | smooth gray stones
+slim brass floor lamp far in the corner of the lounge | 0.35 | 0.02-0.05 | thin and tall
+small cream throw pillow on a distant lounge chair | 0.35 | 0.02-0.05 | soft cream cotton
+tiny glass bowl with polished stones on a distant ledge | 0.3 | 0.02-0.04 | clear glass

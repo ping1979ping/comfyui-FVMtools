@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+slim black pole lights spaced far along the entrance drive | 0.7 | 0.05-0.15 | square-section poles with flat fixtures
+buff precast sill bands running across the building far behind | 0.6 | 0.05-0.15 | thin horizontal lines
+flat metal canopy edge high above the doors, far back | 0.6 | 0.05-0.15 | thin fascia with recessed downlights
+narrow beige EIFS cornice band under the distant parapet | 0.6 | 0.05-0.15 | shallow reveal line
+flame-finish granite piers flanking the distant glass doors | 0.55 | 0.05-0.15 | pale speckled granite
+slim glass stair tower at the far right corner of the building | 0.6 | 0.05-0.15 | thin metal frame
+precast column covers at the far corners of the building | 0.5 | 0.05-0.15 | plain pale vertical panels
+tinted double glass doors with tall sidelights at the center of the far facade | 0.65 | 0.05-0.15 | dark bronze frames
+thin bronze window mullions repeating across the far facade | 0.7 | 0.05-0.15 | evenly spaced vertical lines
+small low bollard lights along the far edge of the walkway | 0.45 | 0.02-0.08 | short dark posts
+rooftop equipment enclosure in beige panels at the far end of the roof | 0.45 | 0.05-0.15 | low plain box
+slim copper downspout at the far corner of the facade | 0.4 | 0.02-0.08 | thin green-brown vertical line

@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a circular drive looping around a planted center island, a few meters back | 0.95 | 0.3-0.5 | with clipped shrubs and a specimen tree
+a stone-pier porte-cochere canopy over an empty drop-off lane in the middle distance | 1.0 | 0.3-0.5 | limestone caps on the piers
+wide shallow steps beside a gently sloped ramp with a black handrail, a few meters back on the right | 0.65 | 0.2-0.4 | pale concrete
+large planters of clipped boxwood flanking the entrance doors, far back | 0.6 | 0.2-0.4 | dark glazed ceramic
+teak benches under the canopy beside the doors, far back on the left | 0.55 | 0.2-0.4 | empty, silver-gray wood
+black lantern-style lamp posts along the drive on the left, spaced into the distance | 0.65 | 0.2-0.4 | slim and tall
+a mature Japanese maple in the center island, a few meters back | 0.5 | 0.2-0.4 | spreading branches
+clipped boxwood rows edging the walkway on the right | 0.6 | 0.2-0.4 | low and dense
+stone pillars with lanterns at the drive entrance, far back on the left | 0.5 | 0.2-0.4 | weathered fieldstone
+an empty covered walkway along the facade, a few meters back on the right | 0.45 | 0.2-0.4 | white painted posts
+a pair of large stone urns with evergreen shrubs, far back beside the steps | 0.5 | 0.2-0.4 | weathered stone
+a planting bed of ornamental grasses along the base of the facade, a few meters back | 0.5 | 0.2-0.4 | soft feathery plumes
+a low brick planter wall curving around the entrance court, far back on the left | 0.4 | 0.2-0.4 | warm red brick

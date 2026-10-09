@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+gentle breeze moving leaves and grasses | 0.9 | - | -
+peak October foliage in red and gold | 0.75 | - | -
+early summer bloom, lush and green | 0.85 | - | -
+light morning mist over the lawn | 0.6 | - | -
+dew on the herb beds and the grass | 0.55 | - | -
+spring blossoms on the garden trees | 0.65 | - | -
+thin dusting of snow on the lawn and hedges | 0.45 | - | -
+calm, clear air under a high blue sky | 0.9 | - | -
+hazy August warmth, heavy green leaves | 0.55 | - | -
+bare branches against a pale winter sky | 0.4 | - | -
+fresh after a shower, puddles on the pavers | 0.45 | - | -

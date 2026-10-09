@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small bottles of water in a row on a back table far from the front | 0.85 | 0.02-0.08 | clear plastic with white caps
+small blank notepads with a pen on a few chairs at the back | 0.7 | 0.02-0.08 | plain white paper
+a small wireless clicker on the distant lectern top | 0.55 | 0.02-0.08 | matte black
+a small glass water pitcher and tumblers on a distant credenza | 0.7 | 0.02-0.08 | clear glass
+a small box of tissues on a side table far down the room | 0.5 | 0.02-0.08 | plain white box
+tiny dry-erase markers in the easel tray at the far left | 0.5 | 0.02-0.08 | black and blue caps
+a small stack of paper cups beside a coffee carafe at the back | 0.65 | 0.02-0.08 | plain white paper
+a small closed laptop on the shelf of a distant lectern | 0.5 | 0.02-0.08 | matte silver lid
+a slim power strip cord taped along the far wall | 0.4 | 0.02-0.08 | black cord on pale carpet
+a small potted fern in the far corner | 0.6 | 0.02-0.08 | bright green fronds
+a small covered coffee carafe on a distant side table | 0.65 | 0.02-0.08 | brushed steel
+a small plate of wrapped cookies at the back of a far table | 0.45 | 0.02-0.08 | white plate, clear wrap

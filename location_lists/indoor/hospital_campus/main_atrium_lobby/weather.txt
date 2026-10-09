@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear and sunny outside, bright daylight through the glass | 1.0 | - | -
+gray and overcast outside, soft light in the windows | 0.9 | - | -
+partly cloudy outside, gentle daylight | 0.8 | - | -
+calm and still, bright sky outside | 0.7 | - | -
+light rain on the glass, soft even light inside | 0.7 | - | -
+golden autumn foliage seen through the windows | 0.6 | - | -
+fresh green spring leaves outside the glass | 0.6 | - | -
+heavily overcast outside, quiet gray light | 0.6 | - | -
+hazy and warm outside, cool air inside | 0.55 | - | -
+snowing outside, bright white light through the windows | 0.55 | - | -
+fresh snow on the garden outside, cool bright light | 0.5 | - | -
+light fog outside the glass, soft diffuse light | 0.5 | - | -

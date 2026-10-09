@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+five red clay-tiled roofs on the Pagoda far to the left | 0.65 | 0.05-0.15 | curving up at the edges
+small gold lion-head ornaments on the distant Pagoda roofs | 0.5 | 0.02-0.08 | gold castings at the roof corners
+a rough fieldstone base with dark mortar far to the left | 0.55 | 0.05-0.15 | the lower walls of the Pagoda
+stone porches with ornate railings on the far Pagoda | 0.5 | 0.03-0.1 | railings on the lowest levels
+dark brown timber trim around the distant Pagoda doors | 0.45 | 0.03-0.1 | plain dark brown timber
+a courthouse tower top far below on the horizon | 0.55 | 0.03-0.1 | stepped limestone
+church steeples among the rooftops far below | 0.55 | 0.03-0.1 | thin dark spires
+a slim steel guard rail along Skyline Drive far behind | 0.5 | 0.03-0.1 | thin gray line
+a flat stone wall cap along the overlook edge | 0.55 | 0.05-0.15 | far to the right, weathered slabs
+slim tree trunks along the drop-off | 0.45 | 0.03-0.1 | thin dark verticals far to the left
+a tiny torii gate far to the right | 0.35 | 0.02-0.06 | slim dark timber

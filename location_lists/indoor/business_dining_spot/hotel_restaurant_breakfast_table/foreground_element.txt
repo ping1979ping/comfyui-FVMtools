@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a plain tan low-pile carpet | 1.0 | 0.1-0.4 | soft and even
+a plain warm gray low-pile carpet | 0.85 | 0.1-0.4 | dense, even pile
+a light oak plank floor | 0.8 | 0.1-0.4 | matte finish, long grain
+a pale limestone tile floor | 0.6 | 0.1-0.4 | large format, honed
+a taupe wool carpet | 0.7 | 0.1-0.4 | plain, tight pile
+a polished pale porcelain floor | 0.5 | 0.1-0.4 | soft window reflections
+a plain soft sage low-pile carpet | 0.5 | 0.1-0.4 | muted and even
+a wide-plank blond oak floor | 0.65 | 0.1-0.4 | clean satin finish
+a pale travertine stone floor | 0.4 | 0.1-0.4 | honed, warm cream
+a plain oatmeal low-pile carpet | 0.6 | 0.1-0.4 | smooth and uniform
+a dark walnut plank floor | 0.45 | 0.1-0.4 | satin sheen
+a polished gray stone floor | 0.45 | 0.1-0.4 | smooth, soft reflections of the windows

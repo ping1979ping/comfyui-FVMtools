@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool overcast spring afternoon beyond the glass | 0.8 | - | -
+crisp autumn sunlight on the street outside | 0.8 | - | -
+bright clear sky beyond the storefront windows | 0.9 | - | -
+pale winter daylight at the windows | 0.55 | - | -
+light rain on the storefront glass | 0.5 | - | -
+soft gray cloud beyond the windows | 0.7 | - | -
+warm summer sun on the street outside | 0.6 | - | -
+thin snow falling beyond the glass | 0.35 | - | -
+still, mild indoor air with soft daylight | 0.7 | - | -
+misty gray morning beyond the glass | 0.4 | - | -

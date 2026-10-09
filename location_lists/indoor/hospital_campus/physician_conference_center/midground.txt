@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+long oval walnut conference table, a few meters back at the center | 1.0 | 0.3-0.5 | upholstered task chairs ringing the table, all empty and pushed in
+round breakout tables with empty chairs, a few meters back on the left | 0.7 | 0.3-0.5 | pale oak tops, gray fabric chairs
+coffee station on a pale oak credenza, a few meters back on the right | 0.65 | 0.2-0.4 | steel thermos carafes and white cups, tidy
+oak veneer lectern at the far end of the room, a few meters back | 0.6 | 0.2-0.4 | empty and slim, beside a tall plant
+pendant lamps hanging over the table, a few meters back at the center | 0.55 | 0.2-0.4 | matte white shades in a row, all empty
+rows of empty upholstered chairs in a classroom layout, a few meters back | 0.7 | 0.3-0.5 | gray fabric, long pale oak tables in front
+empty chairs stacked on a cart against the far left wall | 0.4 | 0.2-0.4 | black frames, neat and tidy
+high tables with empty stools near the window wall on the right | 0.55 | 0.2-0.4 | pale oak tops, slim steel legs
+empty u-shaped table arrangement, a few meters back at the center | 0.55 | 0.3-0.5 | walnut tables with gray fabric chairs
+low lounge seating nook by the window on the left, a few meters back | 0.5 | 0.3-0.5 | two empty armchairs and a round side table
+tall potted plants in the far corner, a few meters back on the right | 0.5 | 0.2-0.4 | glossy green leaves in matte pots
+water pitchers and glasses on a long credenza, a few meters back on the right | 0.55 | 0.2-0.4 | clear glass on a pale oak top
+long empty table set for a meeting, a few meters back at the center | 0.65 | 0.3-0.5 | tidy folders aligned at each seat, upholstered chairs pushed in

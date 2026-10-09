@@ -1,0 +1,15 @@
+# slot: accessories
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+blank white badge on a plain navy lanyard | 0.3 | 0.4-0.9 | metal
+slim wristwatch | 0.7 | 0.4-1.0 | metal
+stud earrings | 0.7 | 0.4-1.0 | metal
+pearl stud earrings | 0.55 | 0.5-1.0 | metal
+small hoop earrings | 0.5 | 0.4-0.9 | metal
+small drop earrings | 0.35 | 0.5-0.95 | metal
+delicate pendant necklace | 0.5 | 0.4-0.95 | metal
+thin chain necklace | 0.4 | 0.4-0.9 | metal
+fine bracelet | 0.45 | 0.4-0.95 | metal
+simple ring | 0.4 | 0.4-1.0 | metal
+neck scarf | 0.35 | 0.5-0.95 | silk,viscose
+slim belt | 0.35 | 0.45-0.95 | leather

@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+tall stone pilasters on the bank ground floor far down the block | 0.65 | 0.05-0.15 | slim pale piers
+a heavy carved cornice far up the block | 0.6 | 0.05-0.15 | stone band capping the base
+a grid of narrow office windows on the far tower | 0.6 | 0.05-0.15 | dark rectangular windows in rows
+weathered limestone on the far facade | 0.55 | 0.03-0.1 | dark soot staining
+iron-framed transom windows above the distant bank doors | 0.5 | 0.03-0.1 | slim dark frames
+a bare brick party-wall scar beside the far lot | 0.5 | 0.05-0.15 | pale patched outline
+patched stone and mismatched mortar across the street | 0.45 | 0.03-0.1 | on the lower facade
+shallow arched window heads on the upper floors across the street | 0.5 | 0.05-0.15 | shallow brick arches over each window
+slim steel light poles spaced far down the block | 0.55 | 0.03-0.1 | thin gray poles
+plywood panels over upper windows far down the street | 0.5 | 0.03-0.1 | dull brown wooden panels
+a rusted fire escape on a distant side wall | 0.4 | 0.03-0.1 | thin iron zigzag

@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+crisp clear morning light with long shadows | 0.8 | - | -
+hazy midday light softening the ridgelines | 0.8 | - | -
+soft overcast late-morning light | 0.8 | - | -
+low early-evening sun warming the rooftops below | 0.7 | - | -
+golden hour with the downtown windows glinting | 0.7 | - | -
+bright early-afternoon sun | 0.8 | - | -
+flat gray overcast midday light | 0.7 | - | -
+warm late-afternoon light across the valley | 0.85 | - | -
+blue hour with the city lights coming on below | 0.45 | - | -
+low morning sun from the left | 0.7 | - | -
+dusk with the city lights glowing in the valley | 0.4 | - | -

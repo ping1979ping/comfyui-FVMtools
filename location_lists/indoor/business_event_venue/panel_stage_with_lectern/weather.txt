@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+quiet before the session starts | 1.0 | - | -
+faint haze visible in the light beams | 0.8 | - | -
+cool, controlled indoor air | 0.8 | - | -
+dark room edges, bright center stage | 0.7 | - | -
+tidy, symmetrical and still | 0.7 | - | -
+dry still air, no draft from the doors | 0.5 | - | -
+soft overcast daylight from the side door | 0.5 | - | -
+bright clear day outside the side door | 0.5 | - | -
+cold winter air near the closed doors | 0.45 | - | -
+warm summer light from the corridor | 0.45 | - | -
+light rain outside the side door | 0.4 | - | -

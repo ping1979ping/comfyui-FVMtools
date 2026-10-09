@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the front of the main building | 1.0 | 0.6-1.0 | a tall red brick facade with white-trimmed multi-pane windows in even rows across the whole width of the image, a slate hip roof with dormers and brick chimneys above
+the entrance of the building | 0.95 | 0.6-1.0 | glass double entrance doors under a stone-pier canopy in the middle, brick wings stepping back on both sides
+the tree line behind the building | 0.85 | 0.6-1.0 | mature oaks and tulip poplars rising above the roofline, a faint blue ridgeline far behind them
+the left wing of the building | 0.7 | 0.6-1.0 | a covered portico with white columns, boxwood hedges and planting beds along the facade
+the right wing of the building | 0.7 | 0.6-1.0 | a gabled bay with a stone base, second-floor balconies with black iron railings, a lawn in front
+across the drive on the right | 0.6 | 0.6-1.0 | a wide lawn dropping away to a tree line, specimen maples scattered across it
+the full length of the facade | 0.65 | 0.6-1.0 | a continuous row of arched ground-floor windows with limestone trim, a copper-roofed entry bay in the middle
+the distant edge of the property | 0.55 | 0.6-1.0 | a low fieldstone wall with stone pillars and lanterns at the drive entrance, rolling hills beyond
+the far side of the entrance court | 0.55 | 0.6-1.0 | a long brick colonnade with white columns across the whole width of the image, tall windows behind it
+behind the canopy | 0.6 | 0.6-1.0 | a wall of tall windows, a lantern-lit portico on the left, a stone chimney rising on the right
+the building beyond the planted island | 0.55 | 0.6-1.0 | two brick gables with white trim framing the central entry, a slate roof and tall chimneys above
+the front lawn beyond the drive | 0.5 | 0.6-1.0 | a mowed lawn and mature trees on the left, the brick building across the back, a stone wall on the right

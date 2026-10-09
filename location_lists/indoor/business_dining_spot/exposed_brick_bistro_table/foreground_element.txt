@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a wide-plank oak floor | 1.0 | 0.1-0.4 | warm brown, soft satin sheen
+a worn wide-plank oak floor | 0.9 | 0.1-0.4 | gentle patina and long grain lines
+a whitewashed oak plank floor | 0.6 | 0.1-0.4 | pale and matte
+a honey oak plank floor | 0.7 | 0.1-0.4 | warm and clean
+a dark-stained wide-plank floor | 0.6 | 0.1-0.4 | rich brown, subtle sheen
+a red brick paver floor | 0.6 | 0.1-0.4 | tight joints, soft wear
+a plain terracotta quarry tile floor | 0.45 | 0.1-0.4 | warm orange-brown, matte
+a smooth polished concrete floor | 0.5 | 0.1-0.4 | pale gray, faint trowel marks
+a reclaimed pine plank floor | 0.55 | 0.1-0.4 | golden, with a few knots
+a walnut-stained plank floor | 0.5 | 0.1-0.4 | deep brown, clean
+a gray-brown slate stone floor | 0.4 | 0.1-0.4 | honed, even
+a light ash plank floor | 0.5 | 0.1-0.4 | pale, soft sheen

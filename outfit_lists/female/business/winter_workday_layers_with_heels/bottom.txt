@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Skirts are knee-length or midi. Wool and flannel trousers, no minis.
+
+tailored trousers | 0.90 | 0.6-0.95 | wool,flannel,crepe
+wide-leg trousers | 0.75 | 0.6-0.9 | wool,flannel,crepe
+pleated trousers | 0.70 | 0.6-0.9 | wool,flannel
+straight-leg ankle trousers | 0.65 | 0.55-0.9 | wool,ponte,crepe
+cigarette trousers | 0.60 | 0.65-0.95 | wool,crepe
+high-rise tailored trousers | 0.65 | 0.65-0.95 | wool,flannel
+slim ankle trousers | 0.55 | 0.55-0.9 | wool,ponte
+stretch pull-on trousers | 0.40 | 0.55-0.85 | ponte
+knee-length pencil skirt | 0.65 | 0.65-0.95 | wool,tweed,crepe
+knee-length straight skirt | 0.55 | 0.6-0.9 | wool,tweed
+A-line midi skirt | 0.65 | 0.6-0.9 | wool,flannel
+pleated midi skirt | 0.65 | 0.6-0.9 | wool,crepe
+wrap midi skirt | 0.45 | 0.6-0.9 | wool,crepe
+ribbed midi skirt | 0.45 | 0.55-0.9 | merino,wool

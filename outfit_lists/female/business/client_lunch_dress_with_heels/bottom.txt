@@ -1,0 +1,18 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+knee-length sheath dress | 0.9 | 0.55-1.0 | crepe,wool blend,ponte
+sleeveless sheath dress | 0.6 | 0.55-0.95 | crepe,wool blend
+midi wrap dress | 0.8 | 0.5-0.95 | crepe,jersey,silk
+midi shirt dress | 0.7 | 0.5-0.9 | cotton,silk,viscose
+belted shirt dress | 0.55 | 0.5-0.9 | cotton,crepe
+knit midi dress | 0.7 | 0.5-0.9 | ponte,viscose,wool blend
+A-line midi dress | 0.65 | 0.5-0.95 | crepe,polyester
+knee-length fit-and-flare dress | 0.55 | 0.5-0.9 | crepe,ponte
+knee-length blazer dress | 0.5 | 0.6-1.0 | wool blend,crepe
+pleated midi dress | 0.45 | 0.55-0.95 | polyester,crepe
+long-sleeve midi dress | 0.55 | 0.55-0.95 | crepe,jersey,viscose
+tie-waist dress | 0.45 | 0.5-0.9 | crepe,silk
+surplice midi dress | 0.4 | 0.55-0.95 | crepe,viscose
+knee-length shift dress | 0.4 | 0.5-0.9 | crepe,wool blend
+sweater dress | 0.35 | 0.5-0.9 | wool blend,cashmere

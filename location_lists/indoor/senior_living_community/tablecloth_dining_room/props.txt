@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small folded cloth napkins on white plates on tables far back | 0.7 | 0.02-0.08 | crisp white linen fans
+tiny glass bud vases with a single white rose on the distant tables | 0.6 | 0.02-0.08 | clear glass, one white bloom each
+small silver salt and pepper shakers on a far table | 0.5 | 0.02-0.08 | polished silver tops
+tiny crystal water goblets on a distant table | 0.6 | 0.02-0.08 | catching the window light
+small candles in glass hurricane holders on tables far back | 0.55 | 0.02-0.08 | unlit
+a small wicker bread basket on a distant table | 0.45 | 0.02-0.08 | lined with linen
+a small porcelain sugar bowl and creamer on the far coffee station | 0.5 | 0.02-0.08 | white porcelain with a gold rim
+tiny china plates on the plate rail at the back of the room | 0.5 | 0.02-0.08 | blue and white
+slim silver candlesticks on the distant sideboard | 0.5 | 0.02-0.08 | polished silver, soft highlights
+a small silver tray with a teapot on the far sideboard | 0.5 | 0.02-0.08 | gleaming silver
+small low flower arrangements on far tables | 0.55 | 0.02-0.08 | white and green
+compact glass cake dome on the distant dessert cart | 0.4 | 0.02-0.08 | clear glass, pale cake beneath

@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright mid-morning daylight through the glass wall | 1.0 | - | -
+late morning, soft daylight on the stone-look floor | 0.9 | - | -
+midday, bright even light from the street windows | 0.8 | - | -
+early afternoon, pendant lights glowing warm | 0.8 | - | -
+mid-afternoon, soft daylight and warm pendants | 0.8 | - | -
+late afternoon, golden strips of light across the floor | 0.85 | - | -
+early evening, blue-hour glow in the windows | 0.8 | - | -
+evening, warm uplights climbing the walnut wall | 0.7 | - | -
+dusk, deep blue street beyond the glass | 0.65 | - | -
+early morning, pale cool light through the glass | 0.55 | - | -
+late evening, warm pendant glow, dark windows | 0.5 | - | -
+noon, clean white light from the glass wall | 0.55 | - | -

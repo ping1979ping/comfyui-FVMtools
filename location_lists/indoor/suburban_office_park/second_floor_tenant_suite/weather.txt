@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue sky beyond the windows | 0.9 | - | -
+thin high clouds beyond the glass | 0.7 | - | -
+rain streaking the glass, wet drive outside | 0.5 | - | -
+snow falling softly past the windows | 0.4 | - | -
+fog pressing against the glass, hills hidden | 0.45 | - | -
+golden October maples beyond the glass | 0.5 | - | -
+thunderclouds darkening the sky beyond the glass | 0.35 | - | -
+hazy summer sunlight blooming on the glass | 0.55 | - | -
+broken clouds sliding past, light shifting softly | 0.6 | - | -
+fresh green treetops beyond the glass after spring rain | 0.45 | - | -
+bare winter branches beyond the glass, cold hard light | 0.4 | - | -
+gray drizzle beyond the windows, even soft light | 0.6 | - | -

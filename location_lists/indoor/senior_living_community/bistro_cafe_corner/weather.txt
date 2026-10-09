@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+quiet and calm, soft light at the windows | 1.0 | - | -
+gentle rain on the glass doors, cozy and dry inside | 0.8 | - | -
+bright, airy light, clear sky outside | 0.85 | - | -
+overcast gray outside, pendant lights glowing | 0.7 | - | -
+light snow falling outside the windows | 0.5 | - | -
+hazy summer sunshine in the courtyard outside | 0.65 | - | -
+red and gold autumn leaves outside the glass doors | 0.55 | - | -
+thin morning mist over the courtyard outside | 0.45 | - | -
+fresh spring green outside the tall windows | 0.6 | - | -
+warm still air, a soft sheen on the marble counter | 0.6 | - | -
+bare winter trees outside, warm glow indoors | 0.45 | - | -

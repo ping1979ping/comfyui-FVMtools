@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small stone bowl planter with ornamental grass on a distant paving edge | 0.6 | 0.02-0.08 | gray stone
+slim low bollard light along the far path edge | 0.5 | 0.02-0.08 | black metal
+small galvanized watering can beside a distant planter wall | 0.5 | 0.02-0.08 | silver zinc
+small shallow stone bird bath at the far end of the sedge bed | 0.5 | 0.02-0.08 | gray stone
+compact matte black waste bin far down the path | 0.4 | 0.02-0.08 | powder-coated steel
+small steel cafe table at the far right of the terrace | 0.55 | 0.02-0.08 | round top, matte gray
+small ceramic mug on a distant cafe table | 0.45 | 0.02-0.08 | white glaze
+small clump of ornamental grass beside a far planter wall | 0.5 | 0.02-0.08 | fine tan blades
+small terracotta pot of herbs on a distant ledge | 0.45 | 0.02-0.08 | warm clay
+slim steel planter box at the far edge of the lawn | 0.5 | 0.02-0.08 | rust-brown steel
+small birdhouse on a far birch trunk | 0.4 | 0.02-0.08 | weathered wood
+compact stone lantern at the far end of the path | 0.4 | 0.02-0.08 | gray stone

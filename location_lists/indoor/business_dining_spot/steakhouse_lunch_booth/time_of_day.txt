@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft late-morning window light | 0.8 | - | -
+bright midday light through the tall windows | 1.0 | - | -
+warm early-afternoon light from the windows on the left | 0.85 | - | -
+soft overcast noon daylight | 0.8 | - | -
+quiet weekday lunch-hour light | 0.9 | - | -
+low mid-afternoon sun slanting across the booths | 0.6 | - | -
+golden late-afternoon light at the windows | 0.65 | - | -
+warm lamp glow on a dim afternoon | 0.5 | - | -
+early-evening blue light at the windows with sconces on | 0.45 | - | -
+gentle pre-dinner light with the chandeliers lit | 0.5 | - | -

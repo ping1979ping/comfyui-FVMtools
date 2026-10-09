@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft skylight pooling along the floor in the morning | 0.9 | - | -
+even midday mix of daylight and ceiling lights | 0.85 | - | -
+warm afternoon sun at the end window | 0.8 | - | -
+golden late-afternoon glow at the far end | 0.75 | - | -
+ceiling lights on with blue windows at early evening | 0.5 | - | -
+flat diffuse light of an overcast day | 1.0 | - | -
+bright clear late-morning daylight | 0.85 | - | -
+gentle early-afternoon daylight | 0.75 | - | -
+cool soft early-morning light | 0.6 | - | -
+soft hazy mid-morning light | 0.6 | - | -
+low sun streaming through the end window | 0.6 | - | -
+bright overcast early-afternoon light | 0.7 | - | -

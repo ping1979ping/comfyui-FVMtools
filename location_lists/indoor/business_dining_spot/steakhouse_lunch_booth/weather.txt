@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+overcast gray sky beyond the tall windows | 0.9 | - | -
+bright spring sun through the sheer curtains | 0.8 | - | -
+pale winter light at the windows, bare branches outside | 0.6 | - | -
+light rain streaking the window glass | 0.5 | - | -
+soft snowfall beyond the sheer curtains | 0.4 | - | -
+clear blue sky beyond the windows | 0.85 | - | -
+hazy summer sunlight through the curtains | 0.6 | - | -
+crisp October sunlight at the windows | 0.7 | - | -
+steady drizzle outside the windows | 0.4 | - | -
+low gray cloud beyond the window glass | 0.55 | - | -
+still, warm indoor air with soft window light | 0.7 | - | -

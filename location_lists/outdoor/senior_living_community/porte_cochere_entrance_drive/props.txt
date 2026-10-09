@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small cast stone urns with trailing ivy at the far doorway | 0.6 | 0.02-0.08 | pale stone, green ivy
+small brass door pulls on the distant glass doors | 0.5 | 0.02-0.08 | polished brass bars
+tiny coir doormat at the far threshold | 0.45 | 0.02-0.08 | plain brown fiber
+slim black umbrella stand by the far door | 0.4 | 0.02-0.08 | black iron, empty
+small ivy wreath on the distant door | 0.4 | 0.02-0.08 | plain green leaves
+small boxwood topiary in a pot on the far steps | 0.5 | 0.02-0.08 | round green ball, black pot
+tiny hanging baskets of ivy at the far canopy | 0.45 | 0.02-0.08 | trailing green ivy, black chains
+small lantern beside the distant door | 0.5 | 0.02-0.08 | black frame, warm glow
+small terracotta pots on the far steps | 0.45 | 0.02-0.08 | orange clay, plain shrubs
+slim iron boot scraper beside the distant steps | 0.35 | 0.02-0.08 | black cast iron
+small bronze door knocker on the far door | 0.35 | 0.02-0.08 | aged bronze
+compact brass bell hung far back by the entrance | 0.35 | 0.02-0.08 | polished brass

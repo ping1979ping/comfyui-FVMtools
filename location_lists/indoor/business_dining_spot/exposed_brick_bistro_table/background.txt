@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of weathered red brick | 1.0 | 0.6-1.0 | deep mortar joints across the whole width of the image, a row of black-framed abstract prints hung evenly along it
+a long narrow room receding to a rear doorway | 0.9 | 0.6-1.0 | red brick walls on both sides, a line of globe pendant lights shrinking toward the far end
+storefront windows along the right side of the room | 0.9 | 0.5-0.9 | black mullions, soft daylight and a blurred tree-lined street beyond the glass
+a wood-topped bar across the far end | 0.8 | 0.5-0.9 | dark glass bottles on shelves behind it, warm light glowing over them
+an arched brick-framed window at the far center | 0.65 | 0.4-0.8 | pale daylight in the opening, a deep ledge below
+a lit kitchen pass window at the far left | 0.55 | 0.3-0.7 | warm light in a brick-framed opening, a steel shelf below it
+a {cognac|deep green} leather banquette running along the whole left brick wall | 0.9 | 0.5-0.9 | black-framed prints above it, empty and tidy
+a whitewashed brick wall at the far end | 0.7 | 0.6-1.0 | painted warm white across the whole width of the image, an arched alcove with open wood shelves of white plates
+a deep green plaster half-wall below bare brick along the far side | 0.6 | 0.5-0.9 | brass wall lights at even intervals above it
+a rear wall of charcoal-painted brick | 0.55 | 0.6-1.0 | a black steel shelf of small hanging plants running across it
+an exposed brick fireplace alcove at the far end | 0.5 | 0.4-0.8 | painted black firebox, a plain wood mantel above
+a tall steel-framed window at the far right of the brick wall | 0.6 | 0.4-0.8 | gray daylight, a blurred rooftop beyond
+a pair of arched brick alcoves at the far end | 0.55 | 0.4-0.8 | warm picture lights glowing in each opening
+open wood shelving along the far wall of the room | 0.5 | 0.4-0.8 | stacked white plates and glassware lit from above, red brick on both sides of it

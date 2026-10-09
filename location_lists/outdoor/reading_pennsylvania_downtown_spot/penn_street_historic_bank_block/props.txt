@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small yellow caution cone at the far fence corner | 0.45 | 0.01-0.04 | bright yellow plastic
+a small orange barrel at the far curb | 0.45 | 0.01-0.05 | orange plastic with white stripes
+a tiny green dumpster behind the distant fence | 0.4 | 0.02-0.06 | dark green steel with a closed lid
+a small steel utility box at the far corner | 0.4 | 0.02-0.06 | dull gray metal cabinet
+a slim steel scaffold pole against a distant wall | 0.35 | 0.01-0.04 | thin and short
+a small blue mailbox at the far corner | 0.4 | 0.02-0.06 | blue painted steel with a rounded top
+a tiny parked sedan far down the curb | 0.4 | 0.02-0.06 | gray car at the far curb
+a small wooden pallet leaning on the far fence | 0.35 | 0.02-0.06 | pale weathered boards
+a small traffic cone on a distant barrier | 0.4 | 0.01-0.04 | orange plastic with a white band
+a small black trash can far down the sidewalk | 0.45 | 0.02-0.06 | black steel drum with a plain lid
+a tiny red fire hydrant at the far corner | 0.4 | 0.01-0.05 | red painted cast iron
+a slim parking meter far down the curb | 0.35 | 0.02-0.05 | gray steel post with a round head

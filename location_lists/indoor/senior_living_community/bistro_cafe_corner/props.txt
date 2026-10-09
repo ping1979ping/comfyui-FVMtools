@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small ceramic cup on a saucer on the distant counter | 0.7 | 0.02-0.08 | white glaze, creamy foam
+small pastries under a glass dome on the far counter | 0.65 | 0.02-0.08 | golden crusts, clear glass dome
+small glass jar of biscotti on the distant counter | 0.55 | 0.02-0.08 | pale golden biscuits, metal lid
+tiny vase of tulips on a far table | 0.5 | 0.02-0.08 | pink tulips, clear glass
+slim white sugar dispenser on a distant table | 0.4 | 0.02-0.08 | glass body, steel spout
+small wire basket of folded linen napkins on a far table | 0.45 | 0.02-0.08 | black wire, natural linen
+small wooden tray with a teapot on a distant table | 0.5 | 0.02-0.08 | pale oak tray, white teapot
+tiny succulent in a terracotta pot on a far windowsill | 0.5 | 0.02-0.08 | gray-green rosette, orange clay pot
+small stack of white plates on the far end of the counter | 0.45 | 0.02-0.08 | plain white china
+small glass cake stand on the distant counter | 0.5 | 0.02-0.08 | clear glass pedestal, pale cake
+slim brass table lamp glowing far back on a side table | 0.45 | 0.02-0.08 | cream linen shade, warm glow
+compact white teapot on a distant table | 0.45 | 0.02-0.08 | glossy white glaze
+small bowl of lemons on the far shelf | 0.4 | 0.02-0.08 | bright yellow fruit, white bowl

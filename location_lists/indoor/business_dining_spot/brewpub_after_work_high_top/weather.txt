@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+cool autumn dusk outside the windows | 0.8 | - | -
+clear evening sky beyond the glass | 0.8 | - | -
+light rain streaking the tall windows | 0.55 | - | -
+gray overcast sky beyond the factory windows | 0.75 | - | -
+crisp winter dusk beyond the glass | 0.55 | - | -
+warm summer evening light at the windows | 0.6 | - | -
+mild spring dusk beyond the glass | 0.6 | - | -
+drizzle on the glass doors to the deck | 0.4 | - | -
+fire pit glow beyond the glass doors | 0.7 | - | -
+snow falling softly past the windows | 0.3 | - | -
+still, warm air with a low amber haze | 0.6 | - | -

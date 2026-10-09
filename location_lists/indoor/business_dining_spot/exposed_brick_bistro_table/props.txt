@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small white ceramic cups on saucers on a distant empty table by the window | 0.7 | 0.02-0.05 | glossy white
+a small glass bud vase with one green sprig on an empty table at the back | 0.7 | 0.02-0.05 | clear glass
+a small olive oil cruet on a distant empty table | 0.5 | 0.01-0.04 | clear glass
+a tiny candle in a clear glass holder on the far window ledge | 0.55 | 0.01-0.04 | unlit
+a small potted herb on the far window ledge | 0.5 | 0.02-0.06 | green leaves
+a small stack of white plates on the open shelf at the back | 0.55 | 0.02-0.06 | plain china
+small glass tumblers lined on the back bar shelf | 0.5 | 0.02-0.06 | clear glass
+a tiny succulent in a clay pot on a distant empty table | 0.45 | 0.01-0.04 | terracotta pot
+small folded linen napkins stacked at the end of the far bar | 0.5 | 0.02-0.05 | oatmeal linen
+a small copper pot on the high shelf at the back | 0.4 | 0.02-0.06 | warm copper
+a small row of ceramic jars on the pass shelf at the far left | 0.4 | 0.02-0.06 | cream glaze
+small wine glasses on a distant empty table by the window | 0.55 | 0.01-0.04 | clear stemware

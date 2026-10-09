@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+curved entrance drive a few meters back with a rolled concrete curb | 0.95 | 0.3-0.5 | a mowed lawn strip between the drive and the walkway
+mulched planting beds along the base of the building across the whole width | 0.9 | 0.3-0.5 | clipped boxwood, dwarf hydrangea and clumps of feather reed grass
+a grassy berm with a row of spruce trees on the left, a few meters back | 0.8 | 0.3-0.5 | mown lawn rolling up to the tree line
+ornamental {pear|crabapple} trees flanking the front walk a few meters back | 0.8 | 0.3-0.5 | evenly spaced, with clipped hedges at the base
+low granite-faced planter walls on both sides of the entry steps, a few meters back | 0.7 | 0.3-0.5 | filled with clipped shrubs and ornamental grasses
+a few parked sedans far to the left along the drive | 0.5 | 0.2-0.4 | plain silver and dark cars partly hidden by shrubs
+a wide mowed lawn between the sidewalk and the building, a few meters back | 0.9 | 0.3-0.5 | with a few young shade trees staked with black straps
+stamped-concrete crosswalk a few meters back linking the drive to the front walk | 0.55 | 0.2-0.4 | a gentle curve of the walkway toward the doors
+flat entrance canopy over a double-height glass vestibule a few meters back at the center | 0.9 | 0.3-0.5 | slim steel columns, recessed downlights under the soffit
+a clipped yew hedge running along the walkway on the right, a few meters back | 0.6 | 0.2-0.4 | low and even, with young maples behind it
+segmental block retaining wall along the slope on the left side | 0.45 | 0.2-0.4 | planted with juniper and daylilies
+a bed of ornamental grasses and low shrubs across the lawn a few meters back | 0.6 | 0.2-0.4 | soft tufts around a staked young tree
+rows of young honey locust trees along the far side of the drive | 0.5 | 0.2-0.4 | light open canopies over mulched rings

@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm and quiet, soft light at the windows | 1.0 | - | -
+light rain on the windows, dry and warm inside | 0.7 | - | -
+bright clear sky outside the round windows | 0.8 | - | -
+heavy gray overcast outside, chandeliers glowing | 0.6 | - | -
+snow falling quietly outside the windows | 0.5 | - | -
+hazy summer sunlight on the lawn outside | 0.7 | - | -
+red and gold autumn leaves outside the windows | 0.6 | - | -
+thin morning mist over the lawn outside | 0.5 | - | -
+fresh spring green outside the tall windows | 0.6 | - | -
+still air, a soft gleam on glassware and silver | 0.7 | - | -
+bare winter trees outside, warm light inside | 0.5 | - | -

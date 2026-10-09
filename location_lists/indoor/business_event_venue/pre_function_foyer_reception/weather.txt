@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm pre-reception stillness | 1.0 | - | -
+faint steam rising above the coffee station | 0.5 | - | -
+quiet city street visible outside | 0.7 | - | -
+light overcast with soft shadows | 0.85 | - | -
+sparkle on glassware under the pendants | 0.6 | - | -
+bright clear day beyond the glass wall | 0.75 | - | -
+cold gray winter morning outside the glass | 0.55 | - | -
+warm summer evening light on the street | 0.55 | - | -
+light rain on the glass wall | 0.5 | - | -
+crisp autumn light across the floor | 0.5 | - | -
+thin high clouds, mild pale daylight | 0.5 | - | -

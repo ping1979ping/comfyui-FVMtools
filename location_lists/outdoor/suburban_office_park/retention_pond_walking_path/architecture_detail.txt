@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+stacked fieldstone headwall at the far pond inlet | 0.5 | 0.05-0.15 | gray fieldstone with mortar joints
+low concrete outfall box with a galvanized trash rack at the far water edge | 0.45 | 0.02-0.08 | low gray block
+slim black lamp posts spaced along the far curve of the path | 0.6 | 0.05-0.15 | thin poles with round heads
+low steel mesh bench on a concrete pad far on the left | 0.45 | 0.02-0.08 | low dark seat
+timber footbridge with a thin two-rail handrail far down the path | 0.55 | 0.05-0.15 | low wooden span
+brick building elevation with thin ribbon windows across the water | 0.7 | 0.05-0.15 | narrow dark bands
+tiny floating fountain base anchored far out in the pond | 0.35 | 0.02-0.06 | dark floating ring
+low post-and-rail fence along the far property edge | 0.45 | 0.05-0.15 | thin gray rails
+thin concrete edging along the far curve of the path | 0.5 | 0.05-0.15 | pale narrow line
+slim wooden marker posts at the far edge of the buffer | 0.4 | 0.02-0.08 | weathered gray wood
+small round manhole cover beside the distant path | 0.3 | 0.02-0.06 | dark cast iron cover
+beige EIFS parapet cap on the distant building roofline | 0.4 | 0.05-0.15 | thin pale band

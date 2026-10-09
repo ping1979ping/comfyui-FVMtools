@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+wood-top high-top tables with steel stools a few meters back | 1.0 | 0.3-0.5 | empty, a pendant lamp over each
+a long communal table with bench seating a few meters back in the center | 0.7 | 0.3-0.5 | scarred dark wood, empty
+steel stools lined along the U-shaped bar a few meters back on the right | 0.7 | 0.3-0.5 | empty
+{dark leather|worn brown leather} booths along the left wall a few meters back | 0.6 | 0.3-0.5 | high backs, empty
+metal-shade pendant lamps over the empty high-tops, a few meters back | 0.5 | 0.2-0.4 | warm amber light
+a square steel column in the middle of the room, a few meters back | 0.45 | 0.2-0.4 | matte black
+sliding glass doors to the deck a few meters back on the left | 0.5 | 0.2-0.4 | fire pit glow outside
+empty tall tables a few meters back near the windows | 0.5 | 0.2-0.4 | small candles in glass on top
+a wooden barrel used as a drink rail a few meters back on the right | 0.45 | 0.2-0.4 | iron hoops, empty
+open shelving with rows of pint glasses a few meters back on the right | 0.5 | 0.2-0.4 | lit from below
+a row of empty stools along a standing-height rail by the windows, a few meters back | 0.6 | 0.2-0.4 | steel and dark wood
+an empty shuffleboard table a few meters back on the left | 0.35 | 0.2-0.4 | long polished wood
+a wall of dark wood paneling behind the booths, a few meters back | 0.4 | 0.2-0.4 | warm sconces, all empty

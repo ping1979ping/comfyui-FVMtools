@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+two upholstered wingback chairs a few meters back on the left | 0.95 | 0.3-0.5 | angled toward the fireplace, in soft sage and cream fabric, all empty
+an oatmeal linen sofa a few meters back, facing the hearth | 0.9 | 0.3-0.5 | with a round walnut coffee table in front and a plain wool rug beneath, all empty
+a pair of cognac leather club chairs far back on the right | 0.8 | 0.3-0.5 | around a small round side table with a ceramic lamp, all empty
+an empty armchair grouping by the tall windows on the left | 0.75 | 0.3-0.5 | a low oval table between the chairs
+a closed grand piano in the far right corner | 0.5 | 0.2-0.4 | polished black lid, a bench pushed in
+a long console table against the wall a few meters back | 0.6 | 0.2-0.4 | two ceramic lamps glowing softly on top, all empty
+a round card table set for four, far back by the window | 0.6 | 0.2-0.4 | four upholstered chairs pushed in
+an upholstered bench at the foot of the staircase on the left | 0.5 | 0.2-0.4 | muted striped fabric, all empty
+a tall fiddle-leaf fig in a woven basket far back beside the fireplace | 0.5 | 0.2-0.4 | glossy green leaves
+two tufted ottomans in front of the hearth, a few meters back | 0.6 | 0.2-0.4 | soft gray velvet
+a loveseat and two side chairs in a quiet seating group on the right | 0.65 | 0.3-0.5 | arranged around a low oval table, all empty
+a slim wooden secretary desk in a window nook on the left | 0.45 | 0.2-0.4 | a brass lamp on top
+a wide rug in muted blue and gray under the seating group a few meters back | 0.55 | 0.3-0.5 | flat and smooth, all empty
+a pair of tall potted ferns flanking the fireplace, far back | 0.5 | 0.2-0.4 | in glazed ceramic pots

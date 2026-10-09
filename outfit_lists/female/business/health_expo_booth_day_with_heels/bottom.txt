@@ -1,0 +1,16 @@
+# slot: bottom
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored ankle trousers | 0.9 | 0.5-1.0 | wool blend,crepe
+ankle-length wide-leg trousers | 0.7 | 0.5-0.95 | crepe,wool blend
+straight-leg trousers | 0.8 | 0.4-0.9 | ponte,wool blend,crepe
+slim ankle trousers | 0.75 | 0.4-0.9 | ponte,polyester
+pull-on stretch trousers | 0.55 | 0.4-0.8 | ponte,jersey
+cigarette trousers | 0.6 | 0.5-0.95 | wool blend,crepe
+high-rise pleated trousers | 0.5 | 0.55-0.95 | wool blend,crepe
+knee-length pencil skirt | 0.7 | 0.5-1.0 | wool blend,ponte,crepe
+knee-length A-line skirt | 0.65 | 0.45-0.9 | crepe,ponte
+knee-length straight skirt | 0.5 | 0.4-0.85 | ponte,crepe
+A-line midi skirt | 0.6 | 0.45-0.9 | crepe,polyester
+pleated midi skirt | 0.55 | 0.45-0.9 | polyester,crepe
+wrap-front midi skirt | 0.4 | 0.45-0.85 | crepe,polyester

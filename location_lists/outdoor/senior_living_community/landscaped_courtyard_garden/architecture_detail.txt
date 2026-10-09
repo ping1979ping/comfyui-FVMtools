@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+red brick facade with white colonial trim along the far wing | 0.9 | 0.05-0.2 | warm weathered brick
+louvered shutters in deep green on the windows of the far wall | 0.7 | 0.05-0.2 | slim painted slats
+copper gutters and downspouts along the far roofline | 0.55 | 0.05-0.2 | aged green patina
+a fieldstone retaining wall around the raised beds on the left | 0.65 | 0.05-0.2 | low and weathered
+black carriage lanterns beside the far doors | 0.6 | 0.02-0.1 | glass panes
+white square porch columns along the far facade | 0.7 | 0.05-0.2 | smooth painted wood
+a gently sloped ramp with a thin black pipe handrail far to the left | 0.45 | 0.05-0.2 | broom-finished concrete
+a covered walkway on slender timber posts along the far wing | 0.5 | 0.05-0.2 | dark stained beams
+limestone sills under the windows high on the far wall | 0.5 | 0.02-0.1 | pale smooth stone
+slate roof tiles high above the far porch | 0.5 | 0.05-0.2 | dark gray overlapping rows
+brick chimneys rising from the far roofline | 0.55 | 0.05-0.2 | white stone caps

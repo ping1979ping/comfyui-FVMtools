@@ -17,7 +17,7 @@ because the dropdown widget is named ``outfit_set`` — same as the V1 node.
 from __future__ import annotations
 
 try:
-    from ...core.outfit_engine import generate_outfit_records
+    from ...core.outfit_engine import generate_outfit_records, is_hairstyle
     from ...core.outfit_parser import parse_overrides
     from ...core.outfit_presets import OUTFIT_PRESETS
     from ...core.outfit_lists import get_available_sets
@@ -32,7 +32,7 @@ try:
         DEFAULT_PERSON_REGIONS,
     )
 except ImportError:  # pragma: no cover
-    from core.outfit_engine import generate_outfit_records
+    from core.outfit_engine import generate_outfit_records, is_hairstyle
     from core.outfit_parser import parse_overrides
     from core.outfit_presets import OUTFIT_PRESETS
     from core.outfit_lists import get_available_sets
@@ -83,6 +83,11 @@ def _slot_to_garment(rec: dict, region_id: str, subs: dict[str, str]) -> dict:
     raw_name = (rec.get("name") or "").replace("#color#", "").strip()
     raw_name = " ".join(raw_name.split())  # collapse double spaces from the strip
     fragment = resolve_tokens(rec["prompt_fragment"], subs)
+    if is_hairstyle(slot, rec.get("fabric")):
+        # A hairstyle has no material and no colour; JSON consumers (Ideogram)
+        # would otherwise read "fabric: none, colour: cornflower" as hair colour.
+        return {"name": raw_name, "fabric": None, "color_role": None,
+                "color_resolved": None, "prompt_fragment": fragment}
     return {
         "name":            raw_name,
         "fabric":          rec.get("fabric"),
@@ -249,6 +254,11 @@ class FVM_JB_OutfitBlock:
             # enabled. Keep the region id for the first (the top) and give the
             # layer above its own key — existing consumers still read upper_body.
             key = region_id
+            # Outerwear always gets its own key: in dress sets the top slot is a
+            # "none" stub, and a blazer that took the free upper_body key read as
+            # "The top is … blazer" in the sentences format.
+            if slot == "outerwear" and region_id == "upper_body":
+                key = "upper_body_outerwear"
             if key in garments:
                 key = f"{region_id}_{slot}" if slot != region_id else f"{region_id}_2"
             garments[key] = _slot_to_garment(gr, region_id, subs)

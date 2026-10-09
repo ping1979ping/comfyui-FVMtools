@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft early-morning light | 0.8 | - | -
+bright mid-morning sun through the tall windows | 1.0 | - | -
+even overcast midday light | 0.85 | - | -
+golden late-afternoon light across the tables | 0.85 | - | -
+early evening, pendant lights glowing, windows blue | 0.7 | - | -
+soft gray afternoon light, cozy within | 0.7 | - | -
+warm lunchtime light from the garden windows | 0.75 | - | -
+low sun slanting through the glass doors | 0.6 | - | -
+bright late-morning daylight | 0.8 | - | -
+amber light of a late afternoon | 0.6 | - | -
+pale evening light with the pendants on | 0.5 | - | -

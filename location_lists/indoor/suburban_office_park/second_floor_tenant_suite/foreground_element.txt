@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+plain gray-blue low-pile carpet | 1.0 | 0.1-0.4 | even color, soft daylight
+plain warm gray low-pile carpet | 0.8 | 0.1-0.4 | smooth and clean
+plain charcoal low-pile commercial carpet | 0.7 | 0.1-0.4 | quiet dark tone
+plain taupe low-pile carpet | 0.6 | 0.1-0.4 | a thin metal threshold strip at the doorway
+soft patch of sunlight across plain gray carpet | 0.6 | 0.1-0.4 | gentle shadows from the blinds
+pale oak vinyl plank floor | 0.45 | 0.1-0.4 | wide planks, soft sheen
+plain medium-gray carpet | 0.7 | 0.1-0.4 | soft shadows from the blinds
+plain slate-gray low-pile carpet | 0.6 | 0.1-0.4 | even and smooth
+plain dusty-blue low-pile carpet | 0.6 | 0.1-0.4 | soft and uniform
+light oak laminate plank floor | 0.4 | 0.1-0.4 | clean and level
+plain beige low-pile carpet | 0.5 | 0.1-0.4 | warm even tone
+plain gray carpet with a thin metal strip at the floor edge | 0.4 | 0.1-0.4 | smooth surface

@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+an interior glass wall onto the roastery at the far center | 1.0 | 0.6-1.0 | a steel drum roaster glowing warmly behind the glass, stainless hoppers and ducting above it
+a white quartz bar across the far right | 0.85 | 0.5-0.9 | a chrome espresso machine on top, natural wood plank cladding on the front, black pendant lamps hanging above
+the far wall of white-painted brick | 0.8 | 0.6-1.0 | across the whole width of the image, a large abstract landscape mural in muted earth tones on the left
+tall steel-framed windows along the whole left side | 0.9 | 0.5-0.9 | pale daylight and a blurred brick street beyond the glass
+a seating group beside a stone fireplace at the far left | 0.6 | 0.4-0.8 | low cognac leather chairs around a plain wood table, all empty
+a black-painted metal ceiling across the top of the image | 0.7 | 0.5-0.9 | exposed ducts and a line of black {pendant lamps|globe lights} hanging at even intervals
+wall shelves of plain white ceramic mugs on the far right | 0.55 | 0.4-0.8 | natural wood shelves, lit from above
+a steel-framed doorway into the roasting room at the far end | 0.5 | 0.3-0.7 | dim warm light and a stainless hopper glimpsed inside
+a wall of plain glass jars on natural wood shelves in the far corner | 0.5 | 0.3-0.7 | warm light on the glass, white-painted brick around the shelves
+a tall roll-up glass door at the far right of the room | 0.45 | 0.4-0.8 | black steel frame, a blurred brick loading yard beyond the glass
+a long wall of painted concrete block at the far end | 0.65 | 0.6-1.0 | pale gray, steel-framed windows along its upper edge
+a natural wood plank feature wall across the far side | 0.6 | 0.6-1.0 | warm tones, black track lights along the top
+rows of black steel shelving along the far wall of the roastery | 0.5 | 0.4-0.8 | plain wooden crates on the lower shelves, a pale concrete wall behind

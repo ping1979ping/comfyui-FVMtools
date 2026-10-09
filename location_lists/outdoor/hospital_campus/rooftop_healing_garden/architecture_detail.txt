@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+weathered steel planter walls along the far side | 0.9 | 0.05-0.2 | crisp edges, orange-brown patina
+thin timber pergola beams high up on the right | 0.65 | 0.05-0.2 | slim steel posts
+precast concrete pavers laid in running bond along the path | 0.7 | 0.05-0.2 | thin even joints
+narrow cast-in-place concrete bands across the paving | 0.55 | 0.05-0.2 | smooth pale strips
+slim stainless handrail along a gentle ramp on the left | 0.5 | 0.05-0.2 | thin and straight
+thin glass guardrail along the far parapet | 0.7 | 0.05-0.2 | clear panels with a slim steel rail
+low stone basin edge at the back with a clean spill | 0.5 | 0.05-0.2 | smooth gray stone
+narrow steel edging along the far lawn and path | 0.6 | 0.05-0.2 | thin dark line
+slim flush linear drain in the paving at the edge | 0.4 | 0.05-0.2 | thin steel grate
+small round path lights along the far walkway | 0.5 | 0.05-0.2 | slim black posts
+tall windows of the tower above the far wall | 0.55 | 0.05-0.2 | thin dark frames reflecting the sky

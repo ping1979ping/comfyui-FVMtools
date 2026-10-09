@@ -1,0 +1,13 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored evening blazer | 0.80 | 0.75-1.0 | velvet,wool crepe
+satin-lapel tuxedo blazer | 0.75 | 0.8-1.0 | wool crepe,crepe
+longline evening blazer | 0.60 | 0.75-1.0 | crepe,wool crepe
+single-breasted blazer | 0.60 | 0.7-0.95 | wool crepe,crepe
+cropped evening jacket | 0.50 | 0.75-1.0 | crepe,satin,wool crepe
+shawl-collar evening jacket | 0.45 | 0.8-1.0 | velvet,crepe
+pashmina wrap | 0.60 | 0.7-1.0 | cashmere,silk
+evening wrap | 0.55 | 0.75-1.0 | silk,velvet
+belted wrap coat | 0.50 | 0.7-1.0 | wool,cashmere
+long overcoat | 0.45 | 0.7-1.0 | wool,cashmere

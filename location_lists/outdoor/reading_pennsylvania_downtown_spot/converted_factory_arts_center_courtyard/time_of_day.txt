@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+warm late-afternoon sun on the brick wall | 0.9 | - | -
+soft overcast light, even and shadowless | 0.9 | - | -
+early evening light with warm windows | 0.55 | - | -
+bright midday sun with deep shadows under the stage | 0.75 | - | -
+blue hour with lit windows and bollard lights | 0.45 | - | -
+low morning sun slicing across the courtyard | 0.7 | - | -
+bright late-morning light | 0.8 | - | -
+golden hour light on the red-brown brick | 0.65 | - | -
+flat gray early-afternoon light | 0.7 | - | -
+early morning light with long shadows | 0.55 | - | -
+warm afternoon light | 0.8 | - | -

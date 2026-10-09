@@ -1,0 +1,13 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small potted snake plant on a low side table far on the left | 0.5 | 0.02-0.06 | stiff upright green leaves
+tiny ceramic bowl on a distant side table | 0.45 | 0.02-0.05 | pale glazed ceramic
+small framed abstract print on the far wall beside the elevators | 0.4 | 0.02-0.06 | muted colors
+slim glass vase of eucalyptus stems on a far table | 0.4 | 0.02-0.05 | pale silvery green stems
+tiny brass door stop at the far suite door | 0.3 | 0.02-0.04 | polished brass
+small stainless wastebasket far beside the stair door | 0.4 | 0.02-0.05 | brushed steel
+small silk plant in a gray pot far in the corner | 0.45 | 0.02-0.06 | low and green
+little folded wool throw on a distant chair arm | 0.35 | 0.02-0.05 | soft gray wool
+slim chrome floor lamp far in the corner of the nook | 0.35 | 0.02-0.05 | thin and tall
+tiny glass bowl on a far low table | 0.35 | 0.02-0.04 | clear glass

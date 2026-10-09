@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+round marble-top bistro tables with bentwood chairs, a few meters back | 1.0 | 0.3-0.5 | empty and set with a single small vase each
+a curved teal velvet banquette along the left wall | 0.8 | 0.3-0.5 | empty, with a row of small tables in front of it
+a high window counter with leather stools along the right side | 0.7 | 0.3-0.5 | tall windows above it, all empty
+cushioned armchairs around a low round table by the window, a few meters back | 0.75 | 0.3-0.5 | soft gray and cream fabric, all empty
+a long reclaimed-oak communal table in the middle distance | 0.6 | 0.3-0.5 | chairs pushed in
+pothos plants with long green vines hanging from ceiling hooks, far back on the right | 0.45 | 0.2-0.4 | glossy leaves
+a small settee with striped cushions in a nook on the left | 0.5 | 0.2-0.4 | soft blue and cream
+herb pots lined up on the windowsill far back on the right | 0.45 | 0.2-0.4 | green basil and thyme
+a wire rack of baskets near the far end of the counter | 0.4 | 0.2-0.4 | woven and plain
+small square tables set for two near the glass doors on the right | 0.6 | 0.3-0.5 | wooden chairs pushed in
+wooden cafe chairs pushed under a row of small tables along the wall | 0.65 | 0.3-0.5 | a few meters back on the left, all empty
+a freestanding glass pastry case a few meters back on the left | 0.4 | 0.2-0.4 | warm interior lights
+a pair of upholstered armchairs flanking a small round table in the far corner | 0.5 | 0.2-0.4 | soft velvet, all empty

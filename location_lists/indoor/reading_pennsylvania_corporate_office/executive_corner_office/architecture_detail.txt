@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+thin aluminum mullions dividing the floor-to-ceiling glass | 0.85 | 0.05-0.2 | slim vertical lines across the window wall
+white acoustic ceiling tile grid overhead | 0.7 | 0.05-0.2 | recessed square LED lights in a regular pattern
+woven grey roller shades in recessed pockets along the top of the windows | 0.65 | 0.05-0.15 | half lowered
+a white oak veneer door with a brushed steel lever on the left | 0.55 | 0.05-0.15 | closed, set flush in the wall
+a glass sidelight with frosted film beside the door on the left | 0.45 | 0.05-0.15 | narrow and tall
+narrow painted-white baseboard along the far wall | 0.4 | 0.05-0.1 | clean and plain
+a deep aluminum window sill along the glass | 0.55 | 0.05-0.15 | low and clear
+a white-painted drywall column near the window on the right | 0.55 | 0.05-0.2 | smooth and square
+a small white thermostat on the wall beside the far door | 0.35 | 0.02-0.08 | plain white plastic case
+recessed downlights in a row high up near the window wall | 0.6 | 0.05-0.15 | round white discs
+a slim linear air diffuser along the ceiling edge | 0.45 | 0.05-0.15 | thin white slot
+a shadow gap where the oak panels meet the ceiling at the far wall | 0.4 | 0.05-0.1 | thin dark line

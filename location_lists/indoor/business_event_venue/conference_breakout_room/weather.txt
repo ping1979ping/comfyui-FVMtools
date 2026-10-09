@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+quiet, ready, calm air between sessions | 1.0 | - | -
+dust motes drifting in the window light | 0.6 | - | -
+slight crispness of conditioned air | 0.55 | - | -
+gray overcast sky outside the glass | 0.85 | - | -
+bright clear sky outside the tall windows | 0.8 | - | -
+cold bright winter light at the windows | 0.5 | - | -
+soft rain on the window glass | 0.55 | - | -
+warm summer light through the sheer curtains | 0.55 | - | -
+crisp autumn daylight at the windows | 0.5 | - | -
+thin high clouds, mild pale daylight | 0.5 | - | -
+light snow falling beyond the glass | 0.4 | - | -

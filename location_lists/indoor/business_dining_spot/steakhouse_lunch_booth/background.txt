@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of dark walnut paneling | 1.0 | 0.6-1.0 | raised panels across the whole width of the image, brass wall sconces glowing at even intervals along it, framed oil landscapes above
+a long row of high-backed tufted {oxblood|deep green} leather booths | 0.95 | 0.6-1.0 | receding along the whole left side of the image, dark walnut dividers between them, white linen tables set for lunch
+tall arched windows along the far left wall | 0.8 | 0.5-0.9 | sheer cream curtains softening the daylight, a stone building glimpsed across the street
+a dark mahogany bar across the far end of the room | 0.8 | 0.5-0.9 | brass foot rail, dark glass bottles on lit shelves behind it, leather stools pushed in along the front
+a glass-fronted wine cabinet filling the far center of the wall | 0.65 | 0.4-0.8 | racked bottles in warm interior light, framed by two dark wood pilasters
+an open archway at the far right into a second dining room | 0.7 | 0.4-0.8 | white-linen tables in soft focus beyond it, a chandelier glowing over the far tables, all empty
+the far wall of muted deep green plaster above dark wainscoting | 0.7 | 0.6-1.0 | brass picture lights over a row of landscape paintings, spanning the whole width of the image
+a long row of empty white-linen tables receding to the far end of the room | 0.85 | 0.5-0.9 | set for lunch, a chandelier glow hanging above them
+heavy burgundy drapes across the far end of the room | 0.55 | 0.5-0.9 | gathered folds from ceiling to floor, a pair of brass wall lights on either side
+a stone fireplace with a dark wood mantel at the far end | 0.5 | 0.4-0.8 | a low fire glowing, a high-backed leather armchair on either side, all empty
+a carved walnut partition with frosted glass panels across the far side | 0.5 | 0.4-0.8 | soft light glowing from the room behind it
+a deep bay window at the far left | 0.55 | 0.4-0.8 | tall panes with sheer curtains, daylight spilling across the empty booths
+the far wall of cream plaster with dark wood wainscoting | 0.65 | 0.6-1.0 | pleated-shade sconces at even intervals along the whole width of the image

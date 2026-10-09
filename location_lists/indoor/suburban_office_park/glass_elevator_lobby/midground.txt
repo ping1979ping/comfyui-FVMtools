@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+elevator doors with brushed stainless frames and glossy panels a few meters back at the center | 0.9 | 0.3-0.5 | a plain brushed steel button plate beside them
+carpeted waiting nook with two empty upholstered chairs a few meters back on the left | 0.7 | 0.3-0.5 | a low side table with a small plant
+open steel-and-glass staircase a few meters back on the right | 0.6 | 0.3-0.5 | open risers and brushed handrails
+granite wall surround with hairline seams a few meters back around the elevators | 0.5 | 0.2-0.4 | tan stone, evenly cut
+recessed ceiling downlights in a regular grid across the lobby | 0.6 | 0.2-0.4 | soft pools of light on the walls
+wood-veneer paneled wall segment on the left, a few meters back | 0.5 | 0.2-0.4 | warm oak with fine vertical grain
+glass entry doors to a suite on the left, a few meters back | 0.6 | 0.3-0.5 | aluminum frames and tall sidelights
+narrow slot window beside the stair door on the right | 0.4 | 0.2-0.4 | bright vertical strip of daylight
+a low side table and a pair of empty chairs against the window wall, a few meters back | 0.55 | 0.3-0.5 | neutral fabric on slim legs
+glass-walled corridor leading away to the right, a few meters back | 0.5 | 0.2-0.4 | light gray walls and ceiling strips
+glass-enclosed elevator cab with a stainless frame a few meters back at the center | 0.55 | 0.3-0.5 | clear panels, soft interior glow
+a low granite planter with ornamental greenery against the side wall, a few meters back | 0.4 | 0.2-0.4 | clipped leaves in a polished stone box
+a recessed alcove with an empty cushioned bench on the left, a few meters back | 0.4 | 0.2-0.4 | warm downlight above

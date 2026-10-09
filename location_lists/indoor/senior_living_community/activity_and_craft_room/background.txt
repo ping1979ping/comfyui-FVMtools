@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the craft room | 1.0 | 0.6-1.0 | tall windows across the whole width of the image with a view of raised garden beds and a stone path, open oak shelving with yarn baskets on the left
+the back wall of the activity room | 0.9 | 0.6-1.0 | built-in oak cubbies with woven baskets of supplies across the whole width, a wide counter with a sink on the right
+the left wall of the craft room | 0.8 | 0.6-1.0 | glass-front cabinets displaying finished pottery pieces, framed watercolor landscapes in matching frames hung in a row
+the far wall of a bright studio | 0.8 | 0.6-1.0 | a large skylight panel above the back worktables, soft white walls with a warm gray base, double glass doors open on the right to a corridor
+the far corner of the craft room | 0.65 | 0.6-1.0 | a pottery wheel on a rolling cart beside a sink counter, a glass door to the garden on the left
+the back wall of the hobby room | 0.6 | 0.6-1.0 | open shelves holding neat stacks of fabric and paint jars arranged by color across the whole width of the image
+the far window wall on the right | 0.7 | 0.6-1.0 | wide windows with woven roller shades half raised, a garden view, a long counter below
+the far wall of the sewing nook | 0.55 | 0.6-1.0 | a wide counter under a window, spools of thread on a rack, a patchwork quilt hanging on the wall
+the back wall of the art studio | 0.6 | 0.6-1.0 | a long row of framed watercolor paintings above a low bench, tall windows on the left, all empty
+the far wall of the music and game corner | 0.45 | 0.6-1.0 | an upright piano against the wall on the left, tall windows on the right, a built-in cabinet with closed doors
+the rear wall of the craft room | 0.5 | 0.6-1.0 | a mural of abstract flowers in soft colors painted across the whole wall, tall windows on the right
+the far wall of the garden room | 0.55 | 0.6-1.0 | glass on three sides, potted plants on stepped shelves across the width of the image, white trim
+the far wall of a bright workshop | 0.5 | 0.6-1.0 | white pegboard and open shelves of baskets across the whole back wall, a skylight above, a sink counter on the right

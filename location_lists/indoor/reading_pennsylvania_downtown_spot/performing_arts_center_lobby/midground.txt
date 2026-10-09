@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a deep red carpet runner a few meters back | 0.9 | 0.3-0.5 | running down the center of the lobby toward the far doors
+brass stanchion posts with a velvet rope | 0.5 | 0.2-0.4 | unhooked, standing a few meters back on the left
+an upholstered banquette along the left wall | 0.7 | 0.25-0.45 | a few meters back, deep red velvet, empty
+small cocktail tables with white cloths | 0.6 | 0.2-0.4 | set for an event a few meters back on the right, empty
+a marble-topped console table with a flower arrangement | 0.6 | 0.2-0.4 | against the wall a few meters back on the left, all empty
+an empty dark-wood coat-check counter | 0.6 | 0.25-0.45 | on the right a few meters back, brass lamps on top
+potted palms in brass planters | 0.5 | 0.2-0.4 | flanking the doors a few meters back
+wide marble steps leading up to the staircase | 0.5 | 0.2-0.4 | a few meters back, pale veined stone
+empty upholstered armchairs along the wall | 0.4 | 0.2-0.4 | a few meters back, deep red velvet
+the grand staircase a few meters back | 0.7 | 0.3-0.5 | a curved brass railing and red carpet on the treads
+tall brass floor lamps | 0.4 | 0.2-0.4 | a few meters back along the wall, warm shades
+a glass-fronted display case | 0.35 | 0.2-0.4 | dark brass frame, empty, a few meters back on the right

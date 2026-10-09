@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far back wall of the long open-plan office | 1.0 | 0.6-1.0 | repointed red-brown brick across the whole width of the image, a run of glass-front meeting rooms with white oak frames along its base, tall factory windows on the right
+the tall factory window wall on the right side of the open-plan office | 0.95 | 0.6-1.0 | slim aluminum-framed bays across the full height, looking out over brick rooftops and a church steeple to a hazy wooded hillside
+the far end of the open-plan office behind the desk rows | 0.9 | 0.6-1.0 | a continuous wall of exposed brick with square iron tie plates at even spacing, a glass-front pantry corner on the far left
+the far wall painted deep teal | 0.8 | 0.5-0.9 | a flat teal accent wall across the whole width of the image, white oak shelving high up on the left, round pendant lights hanging in a row in front of it
+the far left side of the open-plan office | 0.8 | 0.5-0.9 | a row of glass-fronted private offices with slim black steel frames along the left wall, white acoustic baffles floating overhead in parallel rows
+the whitewashed brick wall at the far end of the room | 0.85 | 0.6-1.0 | pale painted brick across the whole width of the image, tall windows on the right with a view of brick rooftops and a wooded hillside
+the window side of the office, seen at a slight angle | 0.7 | 0.5-0.9 | deep brick reveals around tall windows on the right, a tiny pale pagoda on a distant wooded crest above the rooftops
+the open pantry corner at the back of the room | 0.65 | 0.4-0.8 | white oak cabinets and a pale quartz counter across the back wall, round pendant lights above, frosted glass doors on the left
+the far back wall hung with large abstract canvases | 0.7 | 0.5-0.9 | white-painted drywall across the whole width of the image, three big canvases in soft teal and ochre in an even row, linear lights above
+the far wall behind a row of square concrete columns | 0.75 | 0.5-0.9 | warm white columns at even spacing in front of exposed brick, tall windows glowing on the right
+the long brick side wall running away to the left | 0.6 | 0.4-0.8 | repointed red-brown brick with deep window reveals, white-painted ductwork high up along the ceiling
+the far corner where brick meets a glass wall | 0.55 | 0.4-0.8 | exposed brick on the right, a floor-to-ceiling glass partition on the left with a frosted band at eye level
+the far wall of tall steel-framed windows | 0.5 | 0.5-0.9 | a brick mill wing across a courtyard, rooftops and treetops beyond, brick piers between the bays

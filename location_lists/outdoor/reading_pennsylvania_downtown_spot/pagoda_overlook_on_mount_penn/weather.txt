@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear autumn day with orange-gold hillside foliage | 0.9 | - | -
+thick fog filling the valley below | 0.45 | - | -
+humid summer haze over layered ridges | 0.7 | - | -
+cool spring day with pink cherry blossoms | 0.7 | - | -
+snow-dusted stone wall under a gray sky | 0.45 | - | -
+breezy clearing after a storm with drifting clouds | 0.55 | - | -
+cold clear winter day with a pale blue sky | 0.65 | - | -
+light rain with low clouds over the ridge | 0.4 | - | -
+clear warm summer day with thin high clouds | 0.8 | - | -
+overcast day with low clouds on the ridge | 0.7 | - | -
+late-winter day with bare trees and a gray sky | 0.55 | - | -

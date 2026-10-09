@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small potted fern on the end of a distant bench | 0.7 | 0.02-0.08 | glossy green fronds
+slim glass vase with green stems on a niche shelf far down the corridor | 0.55 | 0.02-0.08 | clear glass
+compact umbrella leaning in a far alcove | 0.45 | 0.02-0.08 | black fabric
+small framed landscape photograph on the far wall | 0.5 | 0.02-0.08 | thin oak frame
+small ceramic planter on a distant wall shelf | 0.6 | 0.02-0.08 | matte white glaze
+compact sanitizer dispenser beside a far door | 0.45 | 0.02-0.08 | white plastic
+slim brass floor lamp at the end of the corridor | 0.5 | 0.02-0.08 | warm linen shade
+small paper cup on the window sill at the far end | 0.4 | 0.02-0.08 | white paper
+small succulent on a distant console | 0.55 | 0.02-0.08 | pale ceramic pot
+slim bud vase of white flowers on a far niche shelf | 0.5 | 0.02-0.08 | clear glass
+small wicker basket under a distant bench | 0.4 | 0.02-0.08 | natural weave
+small round mirror on the far end wall | 0.4 | 0.02-0.08 | thin brass frame

@@ -1,0 +1,16 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+low lounge seating group a few meters back on the left | 1.0 | 0.3-0.5 | four empty pale oak armchairs with sage cushions around a round walnut table
+empty built-in bench along the glass wall on the right | 0.85 | 0.3-0.5 | oak slat seat with sage cushions, a few meters back
+row of olive trees in square planters a few meters back on the right | 0.8 | 0.3-0.5 | slim silver-green trunks, pale concrete planters
+curved empty reception desk a few meters back at the center | 0.75 | 0.3-0.5 | pale quartz top with a warm oak front panel, wide and low
+round coffee kiosk a few meters back on the left | 0.65 | 0.3-0.5 | matte counter with three empty slim bar stools in brushed steel
+tall fiddle-leaf fig planters flanking the stair, a few meters back | 0.7 | 0.2-0.4 | glossy green leaves in pale stone pots
+circular wood bench wrapped around a slim column, a few meters back on the right | 0.6 | 0.3-0.5 | pale oak slats, empty
+two empty low sofas facing each other a few meters back at the center | 0.7 | 0.3-0.5 | teal fabric on slim oak legs, a plain gray rug between them
+long planter bed of grasses and ferns beside the stair, a few meters back on the left | 0.6 | 0.2-0.4 | soft green fronds
+round side tables between empty armchairs, a few meters back on the right | 0.6 | 0.2-0.4 | small succulents on pale oak tops
+slim brushed-brass leaf sculpture on a stone plinth, far on the left | 0.4 | 0.2-0.4 | abstract and soft metallic, about waist high
+wide stone steps up to a raised seating landing, a few meters back | 0.5 | 0.3-0.5 | pale oak benches along the top, all empty
+row of empty upholstered chairs along the back wall, far right | 0.55 | 0.3-0.5 | sage fabric with wooden arms

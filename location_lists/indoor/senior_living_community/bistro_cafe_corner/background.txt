@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the cafe corner | 1.0 | 0.6-1.0 | an oak counter with a pale marble top across the whole width of the image, open shelves of white mugs and glass jars behind it, a row of globe pendant lights above
+the back wall behind the counter | 0.9 | 0.6-1.0 | green subway tile up to the ceiling, a brass espresso machine in the middle, a glass pastry case glowing under warm lights on the left
+the window side of the cafe corner, on the right | 0.85 | 0.6-1.0 | tall windows with a view of a courtyard garden, a pair of glass doors opening to a paver patio, sheer curtains
+the far wall of the cafe | 0.75 | 0.6-1.0 | deep sage beadboard wainscoting along the whole wall, a row of framed botanical paintings above it, brass wall sconces between them
+the far end of the cafe | 0.7 | 0.6-1.0 | a wide open archway on the left showing the warm glow of a fireplace lounge, a black-framed glass partition on the right
+the rear wall of the bistro | 0.65 | 0.6-1.0 | a plaster arch framing a pass-through, a wood slat ceiling feature over the counter, warm pendant lights
+the back counter wall | 0.6 | 0.6-1.0 | white tile and open oak shelves holding ceramic jars and small plants, a brushed brass rail along the base of the counter
+the far glass wall of the cafe | 0.55 | 0.6-1.0 | floor-to-ceiling black steel windows across the whole width of the image, a bright garden outside
+the far corner of the cafe | 0.5 | 0.6-1.0 | a cozy nook with a curved teal velvet banquette along two walls, a small window above it, a pendant lamp hanging in the middle, all empty
+the distant wall of the cafe | 0.5 | 0.6-1.0 | glass drink dispensers on a wood counter, white cabinets above, tall windows on the right
+the back wall of the bistro, beyond the tables | 0.55 | 0.6-1.0 | dark green paneling across the width of the image, a long brass-framed mirror on the left, warm sconce light, all empty
+the far wall of the cafe corner, along the window | 0.5 | 0.6-1.0 | a bar-height window counter running along the whole wall with leather stools, oak trees and a lawn outside, all empty

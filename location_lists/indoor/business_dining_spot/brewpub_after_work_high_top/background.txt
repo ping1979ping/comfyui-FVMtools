@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of aged red brick | 1.0 | 0.6-1.0 | uneven bricks and worn mortar across the whole width of the image, tall steel-framed factory windows on the left
+a large U-shaped reclaimed wood bar across the far right | 0.85 | 0.5-0.9 | a row of plain steel taps on a tap tower, rows of pint glasses on shelves behind it
+rows of empty high-top tables receding along the left | 0.9 | 0.5-0.9 | dark wood tops and steel stools, a pendant lamp hanging over each
+stainless fermentation tanks behind a glass wall at the far center | 0.7 | 0.5-0.9 | softly lit, rising to the ceiling
+a brick pizza oven glowing warm at the far end of the room | 0.5 | 0.3-0.7 | an arched opening with a low orange glow inside, dark timber shelves on either side
+heavy timber ceiling beams across the top of the image | 0.8 | 0.5-0.9 | caged {Edison|filament} pendants hanging at even intervals
+glass garage doors opening onto the deck at the far left | 0.6 | 0.4-0.8 | steel frames, the glow of a fire pit beyond the glass in the dusk
+industrial pipe shelving with glassware on the far right | 0.5 | 0.3-0.7 | black pipe and reclaimed boards, lit from below
+tall factory windows with steel muntins along the far wall | 0.85 | 0.5-0.9 | dusk light on the old brick around them
+a long wall of dark leather booths along the whole far left side | 0.55 | 0.4-0.8 | high backs and brass studs, empty, a row of small wall lights above them
+a far wall of charcoal-painted brick | 0.45 | 0.6-1.0 | across the whole width of the image, warm wall lights at even intervals
+an open steel staircase at the far end rising to a mezzanine | 0.4 | 0.3-0.7 | black railing, warm lights above
+oak barrels stacked in two rows against the far wall | 0.4 | 0.3-0.7 | plain dark staves and black iron hoops, brick rising behind them
+a brick wall with arched recesses across the far end of the room | 0.5 | 0.5-0.9 | warm uplights glowing in each recess, dark timber beams above

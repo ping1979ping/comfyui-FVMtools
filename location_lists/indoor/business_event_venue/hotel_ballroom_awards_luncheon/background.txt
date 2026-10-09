@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the ballroom | 1.0 | 0.6-1.0 | pale taupe paneled bays across the whole width of the image, a low empty carpeted stage centered against them, champagne drapes in both far corners
+the far end of the ballroom behind the tables | 0.95 | 0.6-1.0 | a long run of floor-length {champagne|ivory} drapes across the whole back wall, warm wall-washer light grazing the fabric, a low empty stage in front
+the stage end of the ballroom | 0.9 | 0.6-1.0 | a low carpeted stage across the middle of the far wall with a plain pleated ivory backdrop behind it, a tall potted ficus on each side of the steps
+the back wall with the wide double doors | 0.85 | 0.6-1.0 | tall closed wooden double doors in the middle of a pale paneled wall far behind the tables, matching bronze sconces on both sides, all empty
+the long window wall at the far end | 0.85 | 0.6-1.0 | tall windows with sheer ivory curtains across the whole width of the image, soft daylight, brick rooftops beyond the glass, a draped side table on the right, all empty
+the far side of the room with the buffet | 0.8 | 0.6-1.0 | a long buffet table with covered silver chafing dishes against a smooth ivory partition wall across the whole width of the image, tiered white dessert stands in the far right corner, all empty
+the far wall lined with framed paintings | 0.75 | 0.6-1.0 | a dark wood chair rail and pale taupe wall across the whole width of the image, large framed abstract paintings in warm tones between bronze sconces, all empty
+the far wall beside the awards table | 0.75 | 0.6-1.0 | a long ivory-draped table on the right of the far wall holding a row of small unengraved glass award pieces, pale paneling and a low empty stage on the left
+the back corner of the ballroom | 0.7 | 0.6-1.0 | two walls of pale taupe paneling meeting in the far corner, floor-length champagne drapes on the left, a closed service door in the right wall
+the far wall under the tray ceiling | 0.7 | 0.6-1.0 | a smooth wall of pale warm gray across the whole width of the image, rows of crystal chandeliers glowing above, a low empty stage centered below
+the open foyer doors at the far end | 0.65 | 0.6-1.0 | wide double doors propped open on the far left wall showing a bright corridor, pale paneled wall running across to the right, champagne drapes in the corner
+the far wall washed with warm light | 0.6 | 0.6-1.0 | pale champagne paneling lit by soft wall-washers across the whole width of the image, a low empty stage centered, a tall ficus on each side of the steps
+the coffee service along the far wall | 0.55 | 0.6-1.0 | a rolling station with silver urns and stacked cups on the left of the far wall, pale paneled bays across the width of the image, closed doors on the right

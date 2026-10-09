@@ -1,0 +1,4 @@
+# texts/slogans
+# format: text_value | probability | compatible_slots | font_or_descriptor
+
+# intentionally empty: an office-day blouse, trousers and blazer carry no printed lettering, and the ID card stays blank on purpose

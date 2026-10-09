@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+red brick paver sidewalk | 1.0 | 0.1-0.4 | worn running-bond pattern with a granite curb edge
+gray concrete sidewalk | 0.9 | 0.1-0.4 | grooved expansion joints and a worn granite curb
+smooth poured concrete sidewalk | 0.8 | 0.1-0.4 | pale gray slabs with fine hairline cracks
+brick paver band along the curb | 0.7 | 0.1-0.4 | red pavers beside gray concrete slabs
+worn asphalt street surface | 0.45 | 0.1-0.4 | patched utility cuts and faded lane paint
+tan concrete sidewalk | 0.7 | 0.1-0.4 | squared slabs with dark joints and a granite curb
+light gray sidewalk | 0.65 | 0.1-0.4 | clean concrete with a brick paver border
+dark gray pavement | 0.5 | 0.1-0.4 | fine-grained concrete with a granite curb edge
+herringbone brick sidewalk | 0.5 | 0.1-0.4 | red pavers laid in a tight herringbone, granite curb
+broom-finished concrete sidewalk | 0.6 | 0.1-0.4 | even gray surface with shallow control joints
+sidewalk of old concrete slabs | 0.5 | 0.1-0.4 | slightly stained with a worn curb edge
+brick sidewalk with a granite curb | 0.7 | 0.1-0.4 | dark red pavers, evenly laid

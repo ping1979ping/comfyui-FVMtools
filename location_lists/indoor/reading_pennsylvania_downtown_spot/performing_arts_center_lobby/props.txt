@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small white flowers in a glass vase on a distant table | 0.5 | 0.01-0.05 | white blooms in clear glass
+a tiny champagne flute on a far cocktail table | 0.4 | 0.01-0.04 | clear glass with pale gold wine
+a small brass lamp on a distant console | 0.4 | 0.01-0.05 | brass base with a cream shade
+small folded napkins on a far table | 0.35 | 0.01-0.04 | white linen squares
+slim brass stanchion posts at the far doors | 0.4 | 0.01-0.05 | thin and bright
+a small potted palm at the far end of the hall | 0.4 | 0.02-0.06 | dark green fronds in a brass pot
+a small brass tray with empty glasses on a distant console | 0.35 | 0.01-0.04 | polished brass with clear glasses
+a small bouquet on the far coat-check counter | 0.4 | 0.01-0.05 | white and green blooms
+a small velvet cushion on the distant banquette | 0.35 | 0.01-0.04 | deep red velvet
+a small candle lamp on a far cocktail table | 0.35 | 0.01-0.04 | clear glass with a warm flame glow
+a small silver ice bucket on a distant table | 0.3 | 0.01-0.04 | polished silver
+a small brass bell on the far box-office ledge | 0.3 | 0.01-0.04 | polished brass dome

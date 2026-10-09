@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a low fieldstone retaining wall a few meters back | 0.95 | 0.3-0.5 | rough Pennsylvania fieldstone with a flat stone cap along the overlook edge
+tall oaks and maples framing the drop-off | 0.75 | 0.25-0.45 | a few meters back on the left, trunks rising out of the steep slope
+mountain laurel thickets on the slope | 0.5 | 0.2-0.4 | just below the wall edge, dark glossy leaves
+Japanese cherry trees beside the terrace | 0.5 | 0.25-0.45 | a few meters back on the right, slim dark trunks and spreading branches
+a small parking terrace a few meters back | 0.6 | 0.25-0.45 | empty asphalt with two cars parked far along the edge
+stone steps rising toward the Pagoda base | 0.5 | 0.2-0.4 | on the left a few meters back, wide fieldstone treads
+a curving guard rail along Skyline Drive | 0.45 | 0.2-0.4 | slim steel rails at the far edge of the terrace
+a stone torii gate at the grounds entrance | 0.4 | 0.2-0.4 | plain dark timber, off to the right at a distance
+the steep wooded slope below the wall | 0.8 | 0.3-0.5 | oaks and maples dropping toward the city, a few meters back
+a wide paved terrace with a low stone wall at its edge | 0.9 | 0.3-0.5 | a few meters back, the valley opening beyond
+a flat stone wall cap running along the overlook | 0.7 | 0.25-0.45 | a few meters back, weathered gray slabs
+a grassy verge at the foot of the wall | 0.5 | 0.2-0.4 | short grass tufts and fieldstone, a few meters back

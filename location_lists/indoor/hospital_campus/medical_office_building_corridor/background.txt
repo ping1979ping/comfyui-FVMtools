@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+far end of the long corridor | 1.0 | 0.6-1.0 | a tall window with a view of trees at the end, warm wood-look doors spaced along both walls, a skylight washing the ceiling in daylight
+far elevator lobby at the end of the corridor | 0.85 | 0.6-1.0 | a stone-look wall with brushed steel elevator doors across the back, pale wood-look doors along both sides
+far glass double doors at the end of the corridor | 0.8 | 0.6-1.0 | a bright suite entrance beyond the glass, frosted sidelights, wood-look doors receding along the left wall
+far wall niche at the end of the corridor | 0.7 | 0.6-1.0 | an empty bench and a tall plant in the niche, a large abstract canvas hung above it, closed doors along both sides
+far skylit well of the corridor | 0.75 | 0.6-1.0 | a skylight washing the end wall in soft daylight, a long row of closed doors receding along the right
+far side corridor opening behind on the left | 0.6 | 0.5-0.9 | a bright cross corridor with warm wood-look doors, the main corridor continuing straight ahead to a window
+far stairwell door at the end of the corridor | 0.6 | 0.6-1.0 | a narrow glass vision panel in a pale oak door, pendant lights in a staggered row overhead
+far window seat alcove at the end of the corridor | 0.65 | 0.6-1.0 | a wide window with a deep sill looking out on young maples and a lawn, closed doors along both sides, all empty
+far bend of the corridor | 0.55 | 0.5-0.9 | a gentle curve in a warm gray wall far ahead, a soft pool of daylight on the floor around the corner
+far end wall of pale oak panels | 0.6 | 0.6-1.0 | a large abstract canvas in sage and blue hung at the center, narrow side lights, closed doors along both walls
+far lobby window beyond the corridor | 0.55 | 0.6-1.0 | a wide opening at the end onto a bright lobby with a glass wall and green treetops beyond
+far wall of wavy wood acoustic panels | 0.5 | 0.6-1.0 | warm slats across the end of the corridor, a tall potted plant on the right, pendant lights hanging overhead
+far corridor end with a bright arched opening | 0.45 | 0.5-0.9 | daylight pouring in from a skylight above, warm gray walls with pale oak doors along both sides

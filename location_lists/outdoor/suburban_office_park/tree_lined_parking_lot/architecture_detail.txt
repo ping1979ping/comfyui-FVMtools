@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+black light pole fixtures standing far across the lot | 0.7 | 0.05-0.15 | slim poles with flat square heads
+vertical concrete curb edging the far islands | 0.6 | 0.05-0.15 | low gray lines
+brick facade above a thin tinted ribbon window band, far behind | 0.65 | 0.05-0.15 | narrow dark strip
+precast concrete base panels along the far building wall | 0.6 | 0.05-0.15 | pale low band
+beige EIFS parapet cap at the distant roofline | 0.55 | 0.05-0.15 | thin shallow reveal
+slim glass stair tower at the far corner of the building | 0.6 | 0.05-0.15 | thin metal frame
+narrow painted steel service door on the far side wall | 0.45 | 0.05-0.15 | pale gray rectangle
+rooftop mechanical enclosure in beige panels at the far end of the roof | 0.45 | 0.05-0.15 | low plain box
+small yellow-painted bollard beside a distant light pole base | 0.4 | 0.02-0.08 | slim low post
+narrow painted crosswalk stripes across a far drive aisle | 0.45 | 0.02-0.08 | thin white bars
+tiny concrete wheel stops at the head of far stalls | 0.4 | 0.02-0.08 | pale gray concrete
+slim downspouts at the far corners of the building | 0.4 | 0.02-0.08 | thin vertical lines

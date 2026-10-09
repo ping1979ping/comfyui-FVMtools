@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small black metal bench far against the brick wall on the right | 0.5 | 0.02-0.06 | black powder-coated slats
+tiny round concrete planter with clipped boxwood far beside the doors | 0.5 | 0.02-0.06 | pale concrete with clipped green boxwood
+small steel trash receptacle at the far end of the walkway | 0.45 | 0.02-0.06 | dark powder-coated steel
+little clipped boxwood balls lined up far along the building base | 0.45 | 0.02-0.06 | dense clipped green foliage
+small yellow fire hydrant at the distant edge of the lawn | 0.35 | 0.02-0.05 | bright yellow paint
+tiny black bollard far at the corner of the drive | 0.4 | 0.02-0.05 | slim steel post
+small pair of terracotta pots far beside the glass doors | 0.4 | 0.02-0.06 | warm terracotta clay
+small stone urn with ornamental grass far at the end of the planter wall | 0.4 | 0.02-0.06 | tufts of grass over the rim
+tiny stainless handrail far on the shallow entry steps | 0.4 | 0.02-0.05 | slim bright line
+small metal drain grate far at the edge of the drive curb | 0.35 | 0.02-0.05 | dark cast iron
+little round stepping stones far along the lawn edge | 0.35 | 0.02-0.05 | pale flat stones
+tiny clipped yew cone at the far end of the hedge | 0.35 | 0.02-0.05 | dense dark green foliage

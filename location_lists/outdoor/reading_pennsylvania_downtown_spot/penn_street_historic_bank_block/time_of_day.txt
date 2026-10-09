@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+gray midday light flattening the soot-stained stone | 0.7 | - | -
+low morning sun lighting the bank facade | 0.7 | - | -
+late-afternoon sun catching the tower's upper floors | 0.85 | - | -
+cold early-evening light with streetlights flickering on | 0.55 | - | -
+bright noon sun with deep shadows in the doorways | 0.7 | - | -
+dusk glow on the nine-storey tower | 0.5 | - | -
+soft overcast late-morning light | 0.9 | - | -
+warm early-afternoon light on the stone | 0.8 | - | -
+golden hour light on the upper floors | 0.6 | - | -
+blue hour with lit windows in the tower | 0.45 | - | -
+early morning light with long shadows | 0.6 | - | -

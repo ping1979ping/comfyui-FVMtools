@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small black conference phone in the middle of the far table | 0.6 | 0.02-0.05 | round matte black body
+a tiny ceramic mug on the table near the far chair | 0.55 | 0.02-0.05 | glazed white ceramic
+a small closed laptop with a silver lid on the far side of the table | 0.55 | 0.02-0.06 | brushed silver lid
+a slim blank spiral notebook with a pen across it on the far table | 0.45 | 0.02-0.05 | blank pages and a black pen
+a small clear glass of water at the far edge of the table | 0.45 | 0.02-0.05 | clear glass, still water
+a small succulent on the credenza far at the back | 0.5 | 0.02-0.06 | thick pale green leaves
+a tiny matte black pen cup on the credenza at the back | 0.4 | 0.02-0.05 | matte black metal
+a compact charging cable coiled beside the far laptop | 0.35 | 0.02-0.05 | thin white cable, loosely looped
+a small potted pothos on the high shelf at the back | 0.45 | 0.02-0.06 | green vines hanging over the shelf edge
+a small stainless water bottle on the credenza at the back | 0.4 | 0.02-0.05 | brushed steel
+a small framed abstract print on the distant wall | 0.4 | 0.02-0.06 | soft muted colors in a thin frame
+a tiny pair of closed earbuds on the table far back | 0.3 | 0.02-0.04 | white charging case

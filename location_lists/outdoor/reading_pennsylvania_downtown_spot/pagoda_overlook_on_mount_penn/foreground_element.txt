@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+cracked asphalt terrace | 0.8 | 0.1-0.4 | faded parking lines and patched seams
+flat fieldstone paving | 0.7 | 0.1-0.4 | worn stone slabs with dark mortar joints
+gray asphalt overlook terrace | 0.8 | 0.1-0.4 | smooth patches and fine cracks
+packed gravel ground | 0.6 | 0.1-0.4 | beside the stone wall with short grass tufts
+patched concrete platform | 0.6 | 0.1-0.4 | near the stone steps
+worn gray concrete terrace | 0.7 | 0.1-0.4 | broom-finished slabs with hairline cracks
+irregular flagstone paving | 0.55 | 0.1-0.4 | gray stone slabs set with narrow joints
+packed gravel path | 0.5 | 0.1-0.4 | beside the stone wall
+mown lawn strip along the wall | 0.5 | 0.1-0.4 | short grass over packed earth
+smooth dark asphalt | 0.6 | 0.1-0.4 | clean surface without markings
+pale concrete pavement | 0.6 | 0.1-0.4 | clean slabs with a worn stone edge
+fine gravel ground | 0.45 | 0.1-0.4 | light tan stones, firmly packed

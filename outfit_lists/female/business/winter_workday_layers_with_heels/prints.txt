@@ -1,0 +1,14 @@
+# format: print_name | probability | compatible_slots | formality_min-formality_max
+# Small-scale, tonal and conservative: nothing loud for a Pennsylvania winter office.
+# Only low-weight, quiet entries touch the top slot (knit sweaters and blouses share it).
+
+small-scale houndstooth | 0.25 | outerwear,bottom | 0.6-0.9
+fine herringbone weave | 0.25 | outerwear,bottom | 0.6-0.9
+subtle windowpane check | 0.20 | outerwear,bottom | 0.6-0.9
+small glen plaid | 0.20 | outerwear,bottom | 0.6-0.9
+fine pinstripe | 0.20 | bottom,outerwear | 0.65-0.9
+faint tonal chalk stripe | 0.15 | bottom,outerwear | 0.65-0.9
+subtle micro-check | 0.15 | bottom,outerwear | 0.55-0.85
+tonal herringbone texture | 0.15 | outerwear | 0.6-0.9
+small tonal geometric pattern | 0.10 | top | 0.6-0.9
+fine tonal stripe | 0.10 | top | 0.6-0.9

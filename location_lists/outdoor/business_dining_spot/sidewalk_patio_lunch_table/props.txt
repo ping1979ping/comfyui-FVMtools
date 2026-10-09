@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small water glasses on a distant empty patio table | 0.7 | 0.01-0.04 | clear tumblers
+a small bud vase with a green sprig on a distant empty table | 0.6 | 0.01-0.04 | clear glass
+small folded napkins on a distant empty table | 0.55 | 0.01-0.04 | white cloth
+a tiny candle in a clear glass holder on a distant empty table | 0.45 | 0.01-0.03 | unlit
+a small potted herb on a windowsill at the far storefront | 0.5 | 0.02-0.05 | green leaves
+a small red fire hydrant at the far corner across the street | 0.4 | 0.01-0.04 | painted red
+small pots of ornamental grass beside a doorway across the street | 0.45 | 0.02-0.05 | soft tufts
+a small salt shaker on a distant empty table | 0.4 | 0.01-0.03 | clear glass
+a small black metal planter on the ledge of the far storefront | 0.4 | 0.02-0.05 | matte iron
+a small stack of folded napkins on a windowsill across the street | 0.35 | 0.01-0.03 | white
+small silver cutlery on a distant empty table | 0.45 | 0.01-0.03 | polished steel
+a small empty bistro table beside the far shopfront | 0.4 | 0.01-0.04 | black iron

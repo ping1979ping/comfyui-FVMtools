@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small potted orchid on the far end of the registration counter | 0.7 | 0.02-0.08 | white blooms on a slim stem
+small tissue box on a distant side table | 0.5 | 0.02-0.08 | pale cardboard
+compact sanitizer stand near the far doors | 0.5 | 0.02-0.08 | white steel post
+small ceramic mug on a distant end table | 0.55 | 0.02-0.08 | white glaze
+slim brass lamp on a far console | 0.6 | 0.02-0.08 | warm linen shade
+small wicker basket with folded blankets at the back of the room | 0.5 | 0.02-0.08 | natural weave
+small framed botanical print on the distant wall | 0.5 | 0.02-0.08 | thin oak frame
+small glass vase of green stems on a far shelf | 0.6 | 0.02-0.08 | clear glass
+small succulent on the back shelf | 0.55 | 0.02-0.08 | pale ceramic pot
+small stack of paper cups beside the far water dispenser | 0.4 | 0.02-0.08 | white paper
+small round mirror on the distant wall | 0.4 | 0.02-0.08 | thin brass frame
+compact floor lamp in the far corner | 0.45 | 0.02-0.08 | slim brass stem, soft glow

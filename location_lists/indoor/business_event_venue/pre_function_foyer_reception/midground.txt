@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+standing cocktail high-tops with white cloths, loosely scattered a few meters back | 1.0 | 0.3-0.5 | smooth pale linen to the floor, all empty
+a low lounge sofa and two armchairs around a coffee table a few meters back on the left | 0.65 | 0.3-0.5 | soft gray upholstery, all empty
+a rolling coffee and tea station with stacked cups a few meters back on the right | 0.7 | 0.3-0.5 | white porcelain, silver urns
+a tiered tray of pastries on a draped side table a few meters back | 0.55 | 0.3-0.5 | pale cloth, glossy pastries, all empty
+a tall planter with sculptural grasses beside a column a few meters back | 0.6 | 0.3-0.5 | matte charcoal pot
+brass stanchions with a velvet rope guiding toward the ballroom doors, a few meters back | 0.55 | 0.3-0.5 | burgundy rope
+a tall floral arrangement on a round entry table at the center, a few meters back | 0.65 | 0.3-0.5 | white blooms and greenery, all empty
+stacked bistro chairs pushed against the wall a few meters back on the left | 0.45 | 0.3-0.5 | black metal frames
+glassware racks gleaming near the bar a few meters back on the right | 0.5 | 0.3-0.5 | rows of clear glasses
+rows of empty high-top tables across the middle of the foyer a few meters back | 0.8 | 0.3-0.5 | white stretch covers
+a long draped table with trays of small pastries along the left wall a few meters back | 0.6 | 0.3-0.5 | white cloth to the floor, all empty
+two empty round tables with tall white floral arrangements a few meters back | 0.55 | 0.3-0.5 | ivory linen to the floor

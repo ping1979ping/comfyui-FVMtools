@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+polished buff granite floor | 1.0 | 0.1-0.4 | soft glare from the window wall
+plain warm gray low-pile carpet | 0.9 | 0.1-0.4 | even and clean
+plain charcoal low-pile carpet | 0.7 | 0.1-0.4 | a polished granite border near the elevator doors
+polished tan granite floor with a patch of window light across it | 0.6 | 0.1-0.4 | soft reflections
+polished granite floor with a thin brushed-metal threshold strip | 0.6 | 0.1-0.4 | clean bright line
+plain taupe low-pile carpet | 0.55 | 0.1-0.4 | a faint worn lane toward the doors
+glossy granite floor catching the glow of the ceiling downlights | 0.5 | 0.1-0.4 | warm reflections
+matte honed stone floor in warm gray | 0.5 | 0.1-0.4 | quiet even surface
+smooth polished cream stone floor | 0.45 | 0.1-0.4 | soft sheen
+polished granite floor reflecting the glass stair tower | 0.5 | 0.1-0.4 | tan stone with bright reflections
+plain beige low-pile carpet | 0.5 | 0.1-0.4 | soft daylight across it
+plain slate-gray low-pile carpet | 0.4 | 0.1-0.4 | smooth and even

@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue sky mirrored in the pond | 0.9 | - | -
+bright cloudless sky and crisp dry air | 0.7 | - | -
+flat gray overcast, dry air | 0.8 | - | -
+light drizzle, rings spreading across the pond | 0.55 | - | -
+steady rain, the pond surface pocked by drops | 0.4 | - | -
+low morning fog hanging over the water | 0.5 | - | -
+humid summer haze over the hills | 0.6 | - | -
+late October light, red and gold maple leaves | 0.5 | - | -
+light dusting of snow on the meadow, open dark water | 0.4 | - | -
+cold bright day with frost on the meadow grass | 0.45 | - | -
+breezy partly cloudy day, ripples on the water | 0.6 | - | -
+early May after showers, fresh green leaves | 0.5 | - | -

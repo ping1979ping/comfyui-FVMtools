@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear and sunny outside, bright light across the room | 1.0 | - | -
+gray and overcast outside, soft even light inside | 0.9 | - | -
+partly cloudy outside, gentle daylight | 0.8 | - | -
+still and quiet, cool crisp air inside | 0.7 | - | -
+light rain streaking the glass, soft light inside | 0.6 | - | -
+autumn colors in the valley beyond the glass | 0.6 | - | -
+fresh snow on distant treetops beyond the glass | 0.5 | - | -
+fresh green spring valley beyond the glass | 0.55 | - | -
+hazy and warm outside, cool air inside | 0.55 | - | -
+heavily overcast outside, quiet gray light | 0.55 | - | -
+light fog in the valley beyond the glass | 0.45 | - | -
+bright cold winter day outside, crisp light | 0.5 | - | -

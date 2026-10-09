@@ -1,0 +1,15 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+still, calm air in the quiet empty room | 1.0 | - | -
+soft overcast gray daylight at the side doors | 0.9 | - | -
+bright clear day outside the tall windows | 0.85 | - | -
+faint warm haze in the light near the chandeliers | 0.7 | - | -
+cold bright winter daylight beyond the window glass | 0.65 | - | -
+soft rain streaking the windows of the far wall | 0.6 | - | -
+warm summer sun glowing through the sheer curtains | 0.6 | - | -
+crisp autumn light, low and golden at the doors | 0.55 | - | -
+light snow falling beyond the window glass | 0.5 | - | -
+hushed pre-event stillness, cool conditioned air | 0.8 | - | -
+thin high clouds, mild pale daylight at the doors | 0.6 | - | -
+heavy gray sky, dim light at the far windows | 0.5 | - | -

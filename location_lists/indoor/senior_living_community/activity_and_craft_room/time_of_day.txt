@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright north-facing daylight, cool and even | 1.0 | - | -
+warm mid-afternoon sun through the garden windows | 0.9 | - | -
+soft overcast morning light | 0.8 | - | -
+a skylight beam falling on the far worktables | 0.7 | - | -
+late-afternoon golden light on the shelves | 0.7 | - | -
+early evening with ceiling lights on, windows dimming | 0.6 | - | -
+bright late-morning daylight | 0.85 | - | -
+soft even light of a gray afternoon | 0.7 | - | -
+low sun slanting across the worktables | 0.6 | - | -
+warm lamplight and fading daylight at dusk | 0.45 | - | -
+clear early-morning light | 0.6 | - | -

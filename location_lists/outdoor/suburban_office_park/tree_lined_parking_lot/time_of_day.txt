@@ -1,0 +1,15 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+early morning with low angled light and long shadows | 0.7 | - | -
+mid-morning with bright soft light | 0.9 | - | -
+late morning light, clean and even | 0.8 | - | -
+high noon with short shadows | 0.7 | - | -
+early afternoon in clear even light | 0.85 | - | -
+mid-afternoon in soft even light | 0.8 | - | -
+late afternoon with warm low light and long shadows | 0.75 | - | -
+golden hour just before the end of the workday | 0.55 | - | -
+morning with flat soft light | 0.8 | - | -
+midday with soft diffuse light | 0.75 | - | -
+hazy bright afternoon with softened shadows | 0.6 | - | -
+blue-hour dusk with the light poles just switched on | 0.4 | - | -

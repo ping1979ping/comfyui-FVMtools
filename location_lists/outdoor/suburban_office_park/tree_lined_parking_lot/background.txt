@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+long four-storey brick office wing across the far side of the lot, spanning the whole width of the image | 1.0 | 0.6-1.0 | bronze-tinted ribbon windows, flat roof with a low parapet, a wooded hillside rising behind it on the left
+brick office building at the far end of the parking lot with a glass stair tower at the right corner | 0.85 | 0.6-1.0 | buff precast base panels, ribbon windows in long bands, soft blue hills along the horizon
+two office wings meeting at an angle far across the lot | 0.7 | 0.6-1.0 | one wing stepping forward on the right, tinted windows, tall trees behind the roofline
+low one-storey brick office buildings in a row across the far side of the lot | 0.75 | 0.6-1.0 | shallow slate-gray roofs, rows of small windows, hedgerow and hayfield beyond the last building on the right
+a farm field and hedgerow beyond the far edge of the parking lot | 0.65 | 0.6-1.0 | a long wooded ridge across the whole horizon, open sky filling the upper half of the image
+a wooded hillside rising behind a long beige EIFS and brick office building | 0.7 | 0.6-1.0 | spanning the width of the image, mature oaks and spruces along the top of the slope
+three-storey brick office block with precast sill bands across the far side of the lot | 0.8 | 0.6-1.0 | tinted glass in long horizontal rows, rooftop equipment hidden behind a beige parapet wall, a utility pole line crossing a field at the far right
+an evergreen belt of Norway spruces along the far property edge | 0.55 | 0.6-1.0 | a brick office wing just visible above the trees, rolling hills behind
+wide landscaped berm with mature trees running across the far side of the lot | 0.55 | 0.6-1.0 | a long brick office building rising above it, hazy hills on the horizon
+long brick office building with a recessed glass entrance bay at the center of the far side | 0.75 | 0.6-1.0 | ribbon windows above buff panels, tall light poles standing in front of it
+a four-storey office block and its matching twin farther back on the right | 0.6 | 0.6-1.0 | brick and tinted glass, flat parapets, a wooded slope behind both
+wide open sky above a distant brick office wing | 0.5 | 0.6-1.0 | long ribbon windows under the parapet, low rounded hills along the horizon

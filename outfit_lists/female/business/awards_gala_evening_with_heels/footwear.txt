@@ -1,0 +1,15 @@
+# slot: footwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Heels only, every name states the heel (Krea 2 rules, build-outfit-set Step 3c). No stilettos above 3.5 in.
+
+pointed-toe pumps with a slim three-inch heel | 0.90 | 0.7-1.0 | leather,satin,suede
+classic pumps with a slim three-inch heel | 0.70 | 0.7-1.0 | leather,suede
+evening pumps with a slim three-and-a-half-inch heel | 0.80 | 0.8-1.0 | satin,leather
+pointed-toe pumps with a slim three-and-a-half-inch heel | 0.60 | 0.85-1.0 | leather,satin
+evening pumps with a sculpted three-inch block heel | 0.60 | 0.7-0.95 | satin,leather
+ankle-strap sandals with a slim three-inch heel | 0.75 | 0.8-1.0 | leather,satin
+ankle-strap pumps with a slim three-inch heel | 0.65 | 0.75-1.0 | leather,satin
+closed-toe slingback pumps with a slim three-inch heel | 0.65 | 0.7-0.95 | leather,satin
+d'Orsay pumps with a slim three-inch heel | 0.50 | 0.75-1.0 | leather,satin
+almond-toe pumps with a slim three-inch heel | 0.60 | 0.7-0.95 | leather,suede
+T-strap pumps with a slim three-inch heel | 0.45 | 0.7-0.95 | leather,satin

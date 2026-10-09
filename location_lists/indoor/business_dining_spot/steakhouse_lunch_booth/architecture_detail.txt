@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+cream crown molding along the top of the far wall | 0.8 | 0.05-0.15 | thin and plain
+a plaster ceiling medallion high up in the center | 0.6 | 0.03-0.1 | a small chandelier hanging from it
+raised-panel wainscoting along the lower far wall | 0.7 | 0.05-0.2 | dark walnut
+brass wall sconces high up on the far wall | 0.7 | 0.02-0.08 | pleated shades, warm glow
+coffered ceiling beams overhead above the far bar | 0.5 | 0.05-0.15 | dark stained wood
+an arched doorway at the far end | 0.5 | 0.05-0.15 | trimmed in dark wood
+tufted leather panels on the booth backs along the left | 0.6 | 0.05-0.15 | oxblood buttons
+recessed picture lights above the paintings, far wall | 0.5 | 0.02-0.08 | thin brass fixtures
+a thin brass rail along the far banquette | 0.45 | 0.02-0.08 | polished
+a narrow ceiling cove high up along the walls | 0.5 | 0.03-0.1 | hidden warm lighting
+a heavy dark wood door frame at the far right corner | 0.45 | 0.05-0.12 | molded edges

@@ -1,0 +1,14 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright mid-morning light through the round windows | 1.0 | - | -
+warm lunchtime sun on the white tablecloths | 0.9 | - | -
+soft overcast afternoon light, even and shadowless | 0.8 | - | -
+late-afternoon amber light across the far wall | 0.8 | - | -
+early evening, chandeliers glowing, windows blue | 0.7 | - | -
+soft early-morning light through the drapes | 0.6 | - | -
+bright early-afternoon daylight | 0.7 | - | -
+golden low sun slanting across the tables | 0.65 | - | -
+soft late-morning daylight | 0.8 | - | -
+warm dusk light with the chandeliers lit | 0.5 | - | -
+pale sunlight from one side, long soft shadows | 0.5 | - | -

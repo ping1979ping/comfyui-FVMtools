@@ -1,0 +1,5 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+# Dress set: the one-piece garment lives in bottom.txt, so the top slot is a stub (same as business/dress).
+
+none | 1.00 | 0.0-1.0 | none

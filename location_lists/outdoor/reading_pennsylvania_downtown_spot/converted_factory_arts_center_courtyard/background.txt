@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a tall red-brown brick factory wall | 1.0 | 0.6-1.0 | repeating bays of large multi-pane steel windows rising on the left, a long brick wing closing the courtyard far ahead
+the long brick wing closing the courtyard | 0.9 | 0.6-1.0 | a flat roofline with a low brick parapet across the whole width of the image, tall narrow steel-framed windows in even bays
+renovated brick factory buildings on three sides | 0.85 | 0.6-1.0 | dark gray steel window frames and wide glass entries, a gray sky above the flat rooflines
+a Moderne-style brick factory facade | 0.8 | 0.6-1.0 | horizontal brick banding and pale concrete lintels across the far side of the courtyard
+the old factory block beyond the courtyard | 0.7 | 0.6-1.0 | a tan-brick Art Deco tower peeking over the lower roofs far behind on the right
+brick rowhouse roofs and a faint wooded ridge | 0.55 | 0.6-1.0 | beyond the factory roofs far behind, a pale sky above
+a concrete loading dock along a side wall | 0.55 | 0.6-1.0 | steel roll-up doors closed, brick wall above, across the right side of the image
+a courtyard enclosed by tall brick walls | 0.85 | 0.6-1.0 | rows of steel windows on three sides and a narrow strip of sky above
+masonry arches infilled with new glass | 0.5 | 0.6-1.0 | across the ground floor of the far brick wall, dark panes between pale stone piers
+the flat factory roofline | 0.6 | 0.6-1.0 | a low parapet and a few rooftop vents against a hazy sky across the width of the image
+a renovated brick factory building on the right | 0.7 | 0.6-1.0 | a wide glass entry and steel window bays, an older unrenovated brick wing beyond on the left
+a long wall of weathered red-brown brick | 0.75 | 0.6-1.0 | patched in places, tall steel windows in rows, closing the far end of the courtyard

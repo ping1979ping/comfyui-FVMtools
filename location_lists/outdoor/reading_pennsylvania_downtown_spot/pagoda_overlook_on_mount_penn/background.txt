@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the rooftops of Reading spread across the valley far below | 1.0 | 0.6-1.0 | brick blocks, church steeples and a stepped limestone courthouse tower across the whole width of the image, a forested ridge on the far horizon
+the Schuylkill valley far below the overlook | 0.9 | 0.6-1.0 | a river glinting beyond the rooftops, rail lines cutting through the city, layered ridges fading to blue at the horizon
+the forested Neversink Mountain ridge | 0.8 | 0.6-1.0 | rising across the valley on the far left, with city rooftops and rail lines far below it
+the red-roofed Pagoda at the left edge of the frame | 0.7 | 0.6-1.0 | a seven-storey Japanese-castle-style tower with five curved red-tiled roofs on a fieldstone base, the valley and the city far below on the right
+layered ridgelines fading to blue | 0.8 | 0.6-1.0 | far across the valley, a broad open sky above and downtown rooftops far below
+downtown Reading far below | 0.8 | 0.6-1.0 | a tan-brick Art Deco tower and a stepped courthouse tower standing above dense brick rooftops, hazy ridges at the horizon
+the hills of West Reading | 0.65 | 0.6-1.0 | layered in haze at the horizon beyond the river, brick rowhouse blocks and church steeples far below
+a broad open sky above the valley | 0.6 | 0.6-1.0 | the rooftops of the city far below along the bottom and a wooded ridge on the left
+a wooded slope dropping steeply below the wall | 0.7 | 0.6-1.0 | tall oaks and maples in front, the city and a long ridge far beyond
+the railroad lines through the city | 0.6 | 0.6-1.0 | silver tracks cutting between brick rooftops far below, a river and layered hills beyond
+the valley seen over the stone wall | 0.9 | 0.6-1.0 | brick rooftops of a small city stretching to the horizon, ridges on the left and a hazy sky above
+the city at the foot of the mountain | 0.7 | 0.6-1.0 | a dense grid of brick rooftops far below, a church steeple on the right and a distant ridge across the width of the image

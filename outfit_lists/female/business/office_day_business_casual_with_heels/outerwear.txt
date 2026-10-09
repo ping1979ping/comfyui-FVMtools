@@ -1,0 +1,15 @@
+# slot: outerwear
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+tailored blazer | 0.85 | 0.5-0.85 | wool blend,crepe
+nipped-waist single-breasted blazer | 0.70 | 0.55-0.85 | wool blend,crepe
+soft unstructured blazer | 0.45 | 0.45-0.75 | crepe,viscose
+cardigan-blazer | 0.60 | 0.4-0.75 | ponte,wool blend
+belted blazer | 0.40 | 0.5-0.85 | wool blend,crepe
+longline cardigan | 0.50 | 0.4-0.75 | wool,cashmere
+open-front cardigan | 0.45 | 0.4-0.7 | wool,cashmere,cotton
+fine-knit open-front jacket | 0.40 | 0.4-0.75 | ponte,wool blend
+cropped boucle jacket | 0.40 | 0.55-0.85 | tweed,wool blend
+collarless jacket | 0.35 | 0.5-0.85 | crepe,wool blend
+tailored waistcoat | 0.30 | 0.55-0.85 | wool blend,crepe
+trench coat | 0.35 | 0.4-0.8 | cotton,polyester

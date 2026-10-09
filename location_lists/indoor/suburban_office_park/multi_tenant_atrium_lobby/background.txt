@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+tinted glass curtain wall facing the entrance drive across the whole width of the image | 1.0 | 0.6-1.0 | thin bronze-green mullions, a lawn, spruces and a wooded ridge seen through the glass
+three-storey atrium with a second-floor gallery railing across the far wall | 0.9 | 0.6-1.0 | stainless rail on a glass balustrade, doors to suites in a row along the upper level
+glass-fronted elevator bank at the rear of the hall | 0.85 | 0.6-1.0 | brushed stainless doors framed in oak veneer, a granite feature wall around them
+steel-framed skylight bays glowing high overhead across the atrium | 0.8 | 0.6-1.0 | pale daylight falling down the cream walls
+granite feature wall at the far end of the atrium | 0.7 | 0.6-1.0 | tan and charcoal stone with a quiet linear grain, recessed ceiling coves above it
+open staircase with a glass balustrade rising along the left wall | 0.75 | 0.6-1.0 | brushed stainless handrail, a carpeted landing at the top
+tall ficus trees in square planters in front of a glass wall far behind | 0.6 | 0.6-1.0 | tinted windows beyond with spruces outside
+corridor opening toward suite doors at the far right | 0.55 | 0.6-1.0 | warm light, plain cream walls, aluminum-framed glass doors receding
+two-storey tinted glass wall at the far end of the hall | 0.7 | 0.6-1.0 | bronze window frames, a wooded hillside through the upper panes
+cream stone columns and a second-floor balcony along the rear of the atrium | 0.65 | 0.6-1.0 | glass railings, soft light from above
+soft pale daylight washing a curved wall of wood and stone at the far end | 0.5 | 0.6-1.0 | warm oak panels, recessed coves overhead
+long hall with glass-walled suite entrances on both sides, receding toward a bright window | 0.55 | 0.6-1.0 | plain cream walls, a wooded hillside beyond the glass

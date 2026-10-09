@@ -1,0 +1,17 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+far glass curtain wall of the atrium | 1.0 | 0.6-1.0 | tall panes with slim black mullions across the whole width of the image, a landscaped garden with white birch trunks and sedge beyond the glass
+far gray stone feature staircase of the atrium | 0.9 | 0.6-1.0 | wide stone treads rising from left to right across the back, round white pendant lights hanging above the landing, a thin glass railing
+far wall of vertical oak slats in the lobby | 0.85 | 0.6-1.0 | warm backlit slats across the whole width of the image, an empty curved pale quartz reception desk at the foot of the wall
+far wall of a two-storey atrium | 0.8 | 0.6-1.0 | a glass-fronted mezzanine gallery across the upper half of the image, pale stone below, daylight falling from slim skylight strips
+far elevator bank wall of the lobby | 0.7 | 0.6-1.0 | three brushed steel elevator doors in a pale stone wall across the back, a raised oak coffee alcove on the left, all empty
+far side of the lobby opening to a sunlit courtyard | 0.75 | 0.6-1.0 | floor-to-ceiling glass doors across the width of the image onto a paved patio with low planters and young birch trees
+far curved plaster wall behind the empty reception desk | 0.6 | 0.6-1.0 | warm white wall with a large abstract watercolor canvas in sage and blue, a slim green wall of ferns on the right
+far window wall of the double-height lobby | 0.8 | 0.6-1.0 | tall windows across the whole width of the image looking out over wooded hills, the gray stone stair rising on the left
+far green wall of the atrium | 0.55 | 0.5-0.9 | a high wall of ferns and pothos across the back, pale stone panels on both sides, soft light falling from above
+far side of the atrium under a wide skylight | 0.65 | 0.6-1.0 | pale stone cladding with a glass elevator shaft on the right, even white daylight washing the whole back wall
+far limestone panel wall of the lobby | 0.6 | 0.6-1.0 | broad horizontal panels across the width of the image, a recessed light cove above, an empty curved quartz desk at the center
+far garden-facing glass wall of the lobby | 0.55 | 0.6-1.0 | wide windows across the back looking out on gray pavestone paths, clipped hedges and a timber pergola
+far hallway opening of the lobby | 0.5 | 0.5-0.9 | a wide opening on the right with a skylit corridor receding behind it, pale oak wall panels on the left
+far curved mezzanine balcony of the atrium | 0.5 | 0.5-0.9 | a slim glass balustrade high up across the back, round pendant lights hanging below it, pale stone wall beneath

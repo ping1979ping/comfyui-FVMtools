@@ -1,0 +1,15 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+white-painted exposed ductwork high up along the ceiling | 0.85 | 0.05-0.2 | round spiral ducts and pendant light rails
+square concrete columns painted warm white at even spacing across the room | 0.8 | 0.05-0.2 | smooth and plain
+star-shaped iron tie plates dotting the brick wall far behind | 0.7 | 0.05-0.15 | dark iron discs in a loose grid
+deep brick window reveals on the right | 0.7 | 0.05-0.2 | slim aluminum frames set far back in the wall
+white acoustic baffles floating in parallel rows overhead | 0.75 | 0.05-0.2 | soft felt fins
+long linear LED fixtures high up along the ceiling | 0.7 | 0.05-0.15 | thin white lines of light
+slim black steel frames on the glass offices along the left | 0.65 | 0.05-0.15 | clear glass panes
+white oak doors with narrow glass slots on the left side | 0.55 | 0.05-0.15 | closed, set in the far wall
+mortar joints repointed in pale grey along the far wall | 0.55 | 0.05-0.15 | slightly uneven, fine lines
+matte white sprinkler pipes and cable trays high up along the ceiling | 0.5 | 0.05-0.15 | tidy parallel runs
+a narrow shadow gap where the brick meets the white baseboard | 0.45 | 0.05-0.1 | along the far wall
+round pendant lights in a row high up at the back | 0.5 | 0.05-0.15 | frosted glass globes

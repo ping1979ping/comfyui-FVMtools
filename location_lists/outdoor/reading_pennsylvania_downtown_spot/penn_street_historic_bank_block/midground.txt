@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a temporary chain-link fence a few meters back | 0.9 | 0.3-0.5 | running along the cleared lot on the left, a green dumpster behind it
+young street trees in square pits | 0.75 | 0.25-0.45 | slim trunks along the far curb across the street, a few parked sedans beneath them
+the two-lane street a few meters back | 0.95 | 0.3-0.5 | empty asphalt with a few parked cars along the far curb and steel light poles
+a vacant storefront a few meters back | 0.7 | 0.25-0.45 | dark display windows with paper over the glass and a tarp over the doorway on the left
+scaffold tubes against one stone facade | 0.5 | 0.2-0.4 | slim steel poles on the sidewalk a few meters back on the left
+orange plastic barrels along the far curb | 0.5 | 0.2-0.4 | a few meters back, a low concrete barrier at the corner of the fenced lot
+a wide empty sidewalk a few meters back | 0.75 | 0.25-0.45 | gray concrete beside the fence with stone buildings beyond
+steel light poles with empty arms | 0.5 | 0.2-0.4 | evenly spaced along the far curb a few meters back
+the street corner ahead | 0.7 | 0.25-0.45 | a black traffic signal on a mast arm and a crosswalk a few meters back across the road
+a few parked sedans along the far curb | 0.8 | 0.3-0.5 | beside young street trees, a few meters back across the street
+a closed bank doorway | 0.5 | 0.2-0.4 | heavy stone surround a few meters back across the sidewalk on the right, dark glass
+a low concrete barrier at the lot corner | 0.45 | 0.2-0.4 | a few meters back, gray, with a fence rail behind it

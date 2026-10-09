@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+small galvanized watering can at the edge of a distant raised bed | 0.65 | 0.02-0.08 | dull silver zinc
+small terracotta pots of herbs on a far stone ledge | 0.6 | 0.02-0.08 | orange clay, green herbs
+tiny hand trowel stuck upright in a distant bed | 0.45 | 0.02-0.08 | steel blade, wooden handle
+small stone birdbath beside the far path | 0.5 | 0.02-0.08 | weathered gray stone
+small glass lantern on a distant patio table | 0.5 | 0.02-0.08 | black frame, clear glass
+small cushion on a distant porch rocker | 0.4 | 0.02-0.08 | muted striped fabric
+slim wooden trellis at the far end of a bed | 0.4 | 0.02-0.08 | weathered cedar slats
+tiny wooden basket on a far bench | 0.4 | 0.02-0.08 | woven and plain
+small clay pots stacked at the back of a distant bed | 0.45 | 0.02-0.08 | orange terracotta
+small iron garden stool at the far end of the path | 0.4 | 0.02-0.08 | black scrolled iron
+slim copper rain chain on a distant porch post | 0.35 | 0.02-0.08 | warm copper links
+small ceramic planter on a far windowsill | 0.4 | 0.02-0.08 | glazed green
+tiny black iron wind chime hanging far back on the porch | 0.35 | 0.02-0.08 | dark iron rods

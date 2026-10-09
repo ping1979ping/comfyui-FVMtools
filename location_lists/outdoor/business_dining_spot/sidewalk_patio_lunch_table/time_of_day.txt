@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright midday sun on the brick facades | 1.0 | - | -
+soft late-morning light on the avenue | 0.8 | - | -
+dappled midday light through the street trees | 0.85 | - | -
+warm early-afternoon light | 0.85 | - | -
+soft overcast noon light | 0.7 | - | -
+mid-afternoon light with short shadows | 0.7 | - | -
+warm light on the brick across the street | 0.75 | - | -
+golden late-afternoon sun low on the facades | 0.55 | - | -
+long soft shadows of early evening | 0.45 | - | -
+quiet weekday lunch-hour light | 0.9 | - | -

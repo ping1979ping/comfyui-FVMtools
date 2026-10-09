@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+smooth asphalt riverside path | 0.9 | 0.1-0.4 | faded center line and fine cracks
+concrete overlook edge | 0.8 | 0.1-0.4 | pale expansion joints and a smooth surface
+mown grass verge | 0.6 | 0.1-0.4 | short grass with clover
+gray concrete walkway | 0.8 | 0.1-0.4 | broom-finished slabs with shallow joints
+packed gravel shoulder | 0.45 | 0.1-0.3 | tan stones beside the pavement
+red brick paver overlook | 0.6 | 0.1-0.4 | running-bond bricks with a concrete edge
+smooth poured concrete path | 0.7 | 0.1-0.4 | pale gray with a few hairline cracks
+dark asphalt path | 0.6 | 0.1-0.4 | smooth, with a pale edge line
+pale concrete ground | 0.5 | 0.1-0.4 | clean slabs with narrow joints
+level mown lawn | 0.5 | 0.1-0.4 | short even grass
+worn asphalt walkway | 0.6 | 0.1-0.4 | gray, with a few patched seams
+light gray concrete platform | 0.5 | 0.1-0.4 | pale slabs with fine joints

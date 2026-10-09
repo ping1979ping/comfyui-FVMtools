@@ -1,0 +1,16 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the back of the stage | 1.0 | 0.6-1.0 | a black pipe-and-drape curtain across the whole width of the image, a plain pale blue-white lit backdrop panel centered in it, a lighting truss with stage lights hanging high above
+the stage backdrop wall | 0.95 | 0.6-1.0 | a charcoal fabric wall across the whole width of the image with a soft cool blue wash on it, a slender floor plant on each side of the center
+the wings of the stage | 0.8 | 0.6-1.0 | a black curtain wing on the far left, a partly open wing on the far right showing stacked road cases, a plain dark curtain between them
+the full width of the stage | 0.85 | 0.6-1.0 | a black stage floor with faint reflections running across the image, charcoal acoustic panels on the back wall, a lighting truss overhead
+the back wall with the side door | 0.55 | 0.6-1.0 | a dark curtain across the back of the stage, a side door ajar on the far right showing a warm corridor, small steps with a handrail on the left
+the stage under the lighting truss | 0.8 | 0.6-1.0 | a lighting truss with rows of stage lights hanging high across the width of the image, a pale blue-lit curtain backdrop below, a black stage floor
+the far wall of dark pleated drapes | 0.75 | 0.6-1.0 | deep folds of black pleated fabric across the whole width of the image, backlit softly from behind, faint light reflections on the stage floor
+the stage with a plain white backdrop | 0.7 | 0.6-1.0 | a smooth matte white cyclorama wall glowing pale blue across the whole width of the image, slender floor plants on either side
+the back of the stage in warm light | 0.65 | 0.6-1.0 | a black curtain backdrop across the whole width of the image with warm amber light grazing its folds, a slim floor plant on the right
+the stage with charcoal acoustic panels | 0.6 | 0.6-1.0 | charcoal fabric panels across the whole back wall, dark pilasters on both sides, a low black stage floor along the foot
+the far end of the hall behind the stage | 0.7 | 0.6-1.0 | a wide dark curtain wall with a plain lit backdrop in the middle, a black stage edge along the bottom, a lighting truss high above
+the stage with a deep blue wash | 0.55 | 0.6-1.0 | a deep blue wash across the whole black curtain backdrop, soft rim light on the stage floor, small steps with a handrail on the left
+the dark stage in the middle distance | 0.6 | 0.6-1.0 | a black stage floor and curtain backdrop across the width of the image, the room edges falling into shadow, bright center

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+gray winter morning beyond the windows | 0.7 | - | -
+bright clear sky beyond the steel windows | 0.9 | - | -
+soft overcast sky beyond the glass | 0.85 | - | -
+light rain on the tall windows | 0.5 | - | -
+crisp autumn sunlight on the brick outside | 0.7 | - | -
+fresh spring light beyond the glass | 0.7 | - | -
+warm summer sun on the street outside | 0.55 | - | -
+thin fog over the rooftops beyond the windows | 0.4 | - | -
+light snow drifting past the windows | 0.35 | - | -
+still, warm air with faint steam in the light | 0.6 | - | -

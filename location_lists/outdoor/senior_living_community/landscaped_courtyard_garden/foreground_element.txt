@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+wide level paver path in warm brick tones | 1.0 | 0.1-0.4 | tight even joints
+smooth flagstone path | 0.8 | 0.1-0.4 | gray and tan stones, small gaps
+fine gravel path with a clean brick border | 0.7 | 0.1-0.4 | pale tan stones
+manicured lawn meeting a flagstone step | 0.65 | 0.1-0.4 | short even grass
+warm brick paver patio | 0.7 | 0.1-0.4 | laid in a running bond
+smooth stone steps leading down to the path | 0.5 | 0.1-0.4 | pale limestone
+manicured short lawn | 0.6 | 0.1-0.4 | evenly cut and neat
+dark mulch bed edging a flagstone path | 0.5 | 0.1-0.4 | fresh and even
+pale concrete path with fine broom lines | 0.55 | 0.1-0.4 | clean and level
+sunlit stripe of paver path between soft shadows | 0.55 | 0.1-0.4 | warm brick tone
+wide flagstone terrace | 0.5 | 0.1-0.4 | smooth buff stone
+smooth bluestone patio | 0.45 | 0.1-0.4 | cool blue-gray stone, tight joints

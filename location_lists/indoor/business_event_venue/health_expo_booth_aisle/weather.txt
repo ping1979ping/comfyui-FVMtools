@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+calm, still air in a large empty hall | 1.0 | - | -
+bright, clean and calm, every table freshly arranged | 0.9 | - | -
+faint echo-like quiet of a large empty room | 0.7 | - | -
+soft overcast daylight at the far window | 0.8 | - | -
+bright clear day outside the far windows | 0.7 | - | -
+cold gray winter daylight at the far windows | 0.55 | - | -
+warm sunny summer day beyond the far windows | 0.55 | - | -
+light rain on the far windows | 0.5 | - | -
+crisp autumn daylight at the far windows | 0.5 | - | -
+polished, dust-free sheen on every surface | 0.6 | - | -
+thin high clouds, mild pale light at the doors | 0.5 | - | -

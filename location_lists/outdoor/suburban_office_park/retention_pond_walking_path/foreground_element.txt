@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+curving asphalt path with a gravel shoulder | 1.0 | 0.1-0.4 | faint hairline cracks
+smooth asphalt walking path | 0.85 | 0.1-0.4 | a pale concrete edge along the pond side
+mown lawn edge with faint mower stripes beside the path | 0.7 | 0.1-0.4 | short even grass
+rounded riprap stones along the water's edge | 0.4 | 0.1-0.4 | gray river stones
+tall meadow grass beside the path | 0.55 | 0.1-0.4 | soft seed heads leaning in the air
+dark soil and short grass along the pond margin | 0.5 | 0.1-0.4 | a narrow muddy edge
+fine gravel shoulder beside the asphalt path | 0.6 | 0.1-0.4 | pale crushed stone
+mulched ground around a young tree beside the path | 0.4 | 0.1-0.4 | dark chips in a round bed
+crushed gravel path curving along the pond | 0.5 | 0.1-0.4 | tan stone dust
+gray asphalt path with a darker patched seam | 0.6 | 0.1-0.4 | slightly worn
+level lawn rolling down toward the water | 0.7 | 0.1-0.4 | short even grass
+concrete pad at the path edge | 0.4 | 0.1-0.4 | pale broom finish, one cracked corner

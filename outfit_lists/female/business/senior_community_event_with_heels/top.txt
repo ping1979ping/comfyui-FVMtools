@@ -1,0 +1,15 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+soft blouse | 0.85 | 0.5-0.8 | crepe,polyester
+tie-neck blouse | 0.80 | 0.55-0.85 | crepe,silk
+pleat-neck blouse | 0.65 | 0.55-0.85 | crepe,silk
+relaxed button-front blouse | 0.70 | 0.45-0.75 | cotton,silk
+fine-gauge crewneck sweater | 0.65 | 0.45-0.75 | wool,cashmere
+boat-neck top | 0.60 | 0.45-0.75 | knit,viscose
+V-neck top | 0.65 | 0.45-0.75 | knit,cotton
+elbow-sleeve top | 0.60 | 0.45-0.75 | knit,viscose
+shell top | 0.70 | 0.5-0.8 | silk,crepe
+ruffle-trim blouse | 0.50 | 0.5-0.75 | crepe,polyester
+sleeveless shell | 0.50 | 0.5-0.8 | knit,viscose
+cap-sleeve top | 0.50 | 0.45-0.75 | crepe,viscose

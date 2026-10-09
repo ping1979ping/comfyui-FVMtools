@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+ribbon window wall spanning the far end of the suite across the whole width of the image | 1.0 | 0.6-1.0 | thin bronze mullions, treetops and a wooded ridge beyond the glass, aluminum blinds half lowered
+row of tinted windows along the far wall looking over the parking lot | 0.85 | 0.6-1.0 | tree islands and a farm field with a hedgerow beyond the lot edge
+glass-walled corner office at the far left | 0.7 | 0.6-1.0 | interior glass partitions with a frosted band, an empty desk inside
+interior glass partition wall across the back of the suite | 0.7 | 0.6-1.0 | aluminum frames with a frosted band at mid height, soft daylight beyond
+long open suite with a ceiling of acoustic tiles receding to the far window wall | 0.75 | 0.6-1.0 | off-white painted walls, one accent wall in muted blue
+window wall with soft light diffusing through half-lowered aluminum blinds | 0.7 | 0.6-1.0 | low sky and distant hills filling the upper windows
+neighboring brick wing seen through the window wall at the right | 0.55 | 0.6-1.0 | tinted glass reflecting a pale sky, treetops below the sill
+wide windows with deep precast sills at the far end | 0.6 | 0.6-1.0 | pale sky above distant rounded wooded hills
+glass-front conference room spanning the far wall on the left | 0.6 | 0.6-1.0 | an empty oval table, blinds half drawn
+rows of empty desks along the right wall leading toward the windows | 0.6 | 0.6-1.0 | low fabric panels, tall windows at the far end
+solid wood suite entry door with a narrow sidelight at the far end of the room | 0.45 | 0.6-1.0 | off-white walls, soft light from the corridor
+open suite with a glass partition wall at the back | 0.5 | 0.6-1.0 | thin aluminum frames, a bright corridor beyond

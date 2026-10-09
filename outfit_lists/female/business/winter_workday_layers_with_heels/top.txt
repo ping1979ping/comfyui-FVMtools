@@ -1,0 +1,16 @@
+# slot: top
+# format: garment_name | probability | formality_min-formality_max | fabric1,fabric2,...
+
+fine-gauge turtleneck | 0.90 | 0.6-0.9 | merino,cashmere,wool
+mock-neck sweater | 0.85 | 0.6-0.9 | merino,cashmere,wool
+ribbed fitted turtleneck | 0.65 | 0.55-0.85 | merino,wool
+crewneck sweater | 0.75 | 0.55-0.9 | cashmere,merino
+cowl-neck sweater | 0.60 | 0.55-0.85 | merino,cashmere
+V-neck sweater | 0.60 | 0.55-0.9 | merino,cashmere
+boat-neck sweater | 0.45 | 0.55-0.85 | merino,cashmere
+funnel-neck sweater | 0.50 | 0.55-0.85 | merino,wool
+tie-neck blouse | 0.70 | 0.65-0.95 | crepe,silk
+button-front blouse | 0.70 | 0.6-0.9 | cotton poplin,silk
+pleat-neck blouse | 0.50 | 0.65-0.95 | crepe,silk
+long-sleeve blouse | 0.55 | 0.6-0.9 | crepe,silk
+soft bow-neck blouse | 0.45 | 0.65-0.95 | crepe,silk

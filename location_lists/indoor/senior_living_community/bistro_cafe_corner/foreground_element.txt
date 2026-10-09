@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+wide-plank oak floor with a warm sheen | 1.0 | 0.1-0.4 | soft reflections of the pendant lights
+smooth polished concrete floor in warm gray | 0.8 | 0.1-0.4 | faint trowel marks
+pale gray stone floor | 0.7 | 0.1-0.4 | honed and even
+plain matte oak floor | 0.75 | 0.1-0.4 | a sunlit patch near the window
+dark slate-gray stone floor | 0.55 | 0.1-0.4 | soft sheen
+large warm-gray floor slabs | 0.5 | 0.1-0.4 | thin grout lines
+wide-plank oak floor in a light natural tone | 0.6 | 0.1-0.4 | matte finish
+smooth cream stone floor | 0.5 | 0.1-0.4 | honed and even
+walnut-toned plank floor | 0.55 | 0.1-0.4 | satin finish
+plain low-pile carpet in soft sage | 0.4 | 0.1-0.4 | smooth and even
+pale oak floor | 0.5 | 0.1-0.4 | warm window light
+polished warm-gray concrete floor | 0.45 | 0.1-0.4 | soft sheen
