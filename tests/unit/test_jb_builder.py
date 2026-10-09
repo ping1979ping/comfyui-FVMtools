@@ -1,7 +1,8 @@
 """Tests for nodes/jb/builder.py.
 
 The Builder's UI is the JS row widget; the Python side just consumes the
-hidden ``rows`` JSON field and emits ``raw_json`` + ``string``.
+hidden ``rows`` JSON field (plus ``seed`` for wildcard / bracket expansion)
+and emits ``raw_json`` + ``string``.
 """
 
 import json
@@ -9,8 +10,9 @@ import json
 from nodes.jb.builder import FVM_JB_Builder
 
 
-def _build(rows="[]", output_format="loose_keys"):
-    return FVM_JB_Builder().build(rows=rows, output_format=output_format)
+def _build(rows="[]", output_format="loose_keys", seed=0):
+    return FVM_JB_Builder().build(rows=rows, seed=seed,
+                                  output_format=output_format)
 
 
 def _rows(*items):
@@ -26,11 +28,14 @@ def test_node_metadata():
     assert FVM_JB_Builder.RETURN_NAMES == ("raw_json", "string")
 
 
-def test_input_types_only_rows_and_format():
+def test_input_types_rows_seed_format_and_context():
     schema = FVM_JB_Builder.INPUT_TYPES()
-    assert set(schema["required"].keys()) == {"rows", "output_format"}
-    # No optional fallbacks any more — the JS row widget is the only UI.
-    assert "optional" not in schema or not schema["optional"]
+    # Dict order is the widget order: seed renders above output_format.
+    assert list(schema["required"].keys()) == ["rows", "seed", "output_format"]
+    assert schema["required"]["seed"][0] == "INT"
+    # The only optional input is the adaptiveprompts variable bag.
+    assert set(schema["optional"].keys()) == {"context_from_prompt_generator"}
+    assert schema["optional"]["context_from_prompt_generator"][0] == "DICT"
 
 
 def test_rows_with_user_hosiery_example():
@@ -56,17 +61,18 @@ def test_rows_with_user_hosiery_example():
     assert '"hosiery"' not in string_out
 
 
-def test_rows_strip_quote_chars_from_value_in_loose_keys():
-    """All `"` chars are stripped from loose_keys output, including any
-    embedded in row values. raw_json keeps them (it's strict JSON)."""
+def test_rows_preserve_quote_chars_from_value_in_loose_keys():
+    """User-typed `"` chars in row values survive as content in loose_keys
+    (same rule as ``test_emit_loose_keys_preserves_quote_chars_inside_values``);
+    only the structural quotes around keys and values are dropped."""
     rows = _rows(("ethnicity", 'tanned european "SUPI"', 0))
     raw_json, string_out = _build(rows=rows, output_format="loose_keys")
     # Strict JSON keeps the literal `"` chars (escaped in the JSON source).
     assert json.loads(raw_json) == {"ethnicity": 'tanned european "SUPI"'}
-    # Loose_keys strips them all.
-    assert '"' not in string_out
-    assert "tanned european SUPI" in string_out
-    assert "ethnicity:" in string_out
+    assert 'ethnicity: tanned european "SUPI"' in string_out
+    assert '"ethnicity"' not in string_out
+    assert '"tanned european' not in string_out
+    assert string_out.count('"') == 2
 
 
 def test_loose_keys_output_has_no_extraneous_quotes():
@@ -98,6 +104,25 @@ def test_compact_format():
     _, string_out = _build(rows=rows, output_format="compact_json")
     assert "\n" not in string_out
     assert string_out == '{"a": 1, "b": "two"}'
+
+
+_BRACKET = "{red|blue|green|black|white|pink|gold|teal}"
+
+
+def test_same_seed_same_output():
+    rows = _rows(("hair", _BRACKET, 0), ("eyes", _BRACKET, 0))
+    first = _build(rows=rows, output_format="compact_json", seed=3)
+    second = _build(rows=rows, output_format="compact_json", seed=3)
+    assert first == second
+    picked = json.loads(first[0])
+    assert picked["hair"] in _BRACKET and "{" not in picked["hair"]
+
+
+def test_seed_changes_bracket_picks():
+    rows = _rows(("hair", _BRACKET, 0), ("eyes", _BRACKET, 0))
+    outs = {_build(rows=rows, output_format="compact_json", seed=s)[1]
+            for s in range(8)}
+    assert len(outs) > 1
 
 
 def test_pretty_json_round_trips():
