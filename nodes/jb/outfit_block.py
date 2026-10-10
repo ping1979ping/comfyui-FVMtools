@@ -25,6 +25,7 @@ try:
     from ...core.jb.palette import (apply_color_overrides, build_palette,
                                     resolve_tokens)
     from ...core.jb.color_moods import MOOD_NAMES, mood_help
+    from ...core.jb.multi_pick import log_pick, pick_choice
     from ...core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                       emit_natural, emit_strict_json)
     from ...core.smp.defaults import (
@@ -40,6 +41,7 @@ except ImportError:  # pragma: no cover
     from core.jb.palette import (apply_color_overrides, build_palette,
                                  resolve_tokens)
     from core.jb.color_moods import MOOD_NAMES, mood_help
+    from core.jb.multi_pick import log_pick, pick_choice
     from core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                    emit_natural, emit_strict_json)
     from core.smp.defaults import (
@@ -196,9 +198,10 @@ class FVM_JB_OutfitBlock:
                 "warmth":          ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05,
                                     "tooltip": "Warm/cool bias. Also tints the ambient "
                                     "light and shadow phrases in every mood."}),
-                # Deliberately the LAST widget: ComfyUI restores saved
-                # widgets_values by position, so anything inserted further up
-                # would shift every following value in existing workflows.
+                # ComfyUI restores saved widgets_values by position, so new
+                # widgets only ever go at the END of this dict — anything
+                # inserted further up would shift every following value in
+                # existing workflows.
                 "text_probability": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 1.0, "step": 0.05,
                                     "tooltip": "Chance of a slogan per garment, independent "
                                     "of print_probability. Both add up to the total "
@@ -206,6 +209,19 @@ class FVM_JB_OutfitBlock:
                                     "exceeds 1.0 (0.3 + 0.3 -> 30% prints, 30% slogans, "
                                     "40% plain). Inert while text_mode is 'off' or the "
                                     "outfit set has no texts.txt entries for the slot."}),
+                # Hidden by web/js/fvm_jb_multi_select.js; the checkbox modal
+                # writes them. Old workflows load null here — the JS repairs
+                # that to "".
+                "outfit_set_multi": ("STRING", {"default": "", "tooltip":
+                                    "Filled by the Multi-Select Sets button: the checked "
+                                    "outfit sets, one per line. When it holds any, the block "
+                                    "draws one of them per seed and ignores the outfit_set "
+                                    "dropdown. Empty = use the dropdown."}),
+                "color_mood_multi": ("STRING", {"default": "", "tooltip":
+                                    "Filled by the Multi-Select Moods button: the checked "
+                                    "colour moods, one per line. When it holds any, the block "
+                                    "draws one of them per seed and ignores the color_mood "
+                                    "dropdown. Empty = use the dropdown."}),
             },
         }
 
@@ -216,7 +232,14 @@ class FVM_JB_OutfitBlock:
               color_mood="everyday_muted", output_format="loose_keys",
               overrides="", num_colors=5, harmony_type="auto",
               palette_style="general", vibrancy=0.5, contrast=0.5, warmth=0.5,
-              text_probability=0.0):
+              text_probability=0.0, outfit_set_multi="", color_mood_multi=""):
+        outfit_set, pool, skipped = pick_choice(
+            outfit_set_multi, outfit_set, get_available_sets(), seed, "outfit_set")
+        log_pick("JB Outfit", "outfit_set", outfit_set, pool, skipped)
+        color_mood, mood_pool, skipped = pick_choice(
+            color_mood_multi, color_mood, MOOD_NAMES, seed, "outfit_color_mood")
+        log_pick("JB Outfit", "color_mood", color_mood, mood_pool, skipped)
+
         slot_enables = {
             "headwear":    enable_headwear,
             "top":         enable_top,
@@ -244,6 +267,8 @@ class FVM_JB_OutfitBlock:
             warmth=warmth, color_mood=color_mood,
         )
         apply_color_overrides(palette, color_overrides)
+        if len(mood_pool) > 1:
+            palette["palette_string"] += f"  [mood: {color_mood}]"
         subs = palette["subs"]
 
         garments: dict = {}

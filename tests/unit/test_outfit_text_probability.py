@@ -253,11 +253,15 @@ def _widget_order(input_types):
     ("nodes.jb.outfit_block", "FVM_JB_OutfitBlock"),
 ])
 def test_text_probability_widget_is_last(import_path, cls_name):
-    """Saved workflows map widgets_values by position — the new one goes last."""
+    """Saved workflows map widgets_values by position — the new one goes last.
+
+    Only widgets added later may follow it (the JB block's multi-select
+    fields, checked in test_jb_multi_pick.py)."""
     mod = __import__(import_path, fromlist=[cls_name])
     spec = getattr(mod, cls_name).INPUT_TYPES()
     order = _widget_order(spec)
-    assert order[-1] == "text_probability", order
+    later = {"FVM_JB_OutfitBlock": ["outfit_set_multi", "color_mood_multi"]}.get(cls_name, [])
+    assert order[len(order) - len(later) - 1:] == ["text_probability"] + later, order
     cfg = spec["optional"]["text_probability"]
     assert cfg[0] == "FLOAT"
     assert cfg[1]["default"] == 0.0

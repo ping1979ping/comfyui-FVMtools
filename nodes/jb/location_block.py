@@ -19,6 +19,7 @@ try:
     from ...core.jb.palette import (apply_color_overrides, build_palette,
                                     resolve_tokens, sync_night_atmosphere)
     from ...core.jb.color_moods import MOOD_NAMES, mood_help
+    from ...core.jb.multi_pick import log_pick, pick_choice
     from ...core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                       emit_natural, emit_strict_json)
 except ImportError:  # pragma: no cover
@@ -31,6 +32,7 @@ except ImportError:  # pragma: no cover
     from core.jb.palette import (apply_color_overrides, build_palette,
                                  resolve_tokens, sync_night_atmosphere)
     from core.jb.color_moods import MOOD_NAMES, mood_help
+    from core.jb.multi_pick import log_pick, pick_choice
     from core.jb.serialize import (ALL_FORMATS, NATURAL, emit,
                                    emit_natural, emit_strict_json)
 
@@ -128,6 +130,19 @@ class FVM_JB_LocationBlock:
                 "warmth":          ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.05,
                                     "tooltip": "Warm/cool bias for ambient light and "
                                     "shadow phrases. Applies in every mood."}),
+                # New widgets only ever go at the END (saved widgets_values are
+                # restored by position). Hidden by web/js/fvm_jb_multi_select.js;
+                # old workflows load null here and the JS repairs it to "".
+                "location_set_multi": ("STRING", {"default": "", "tooltip":
+                                    "Filled by the Multi-Select Sets button: the checked "
+                                    "location sets, one per line. When it holds any, the block "
+                                    "draws one of them per seed and ignores the location_set "
+                                    "dropdown. Empty = use the dropdown."}),
+                "color_mood_multi": ("STRING", {"default": "", "tooltip":
+                                    "Filled by the Multi-Select Moods button: the checked "
+                                    "colour moods, one per line. When it holds any, the block "
+                                    "draws one of them per seed and ignores the color_mood "
+                                    "dropdown. Empty = use the dropdown."}),
             },
         }
 
@@ -137,7 +152,15 @@ class FVM_JB_LocationBlock:
               enable_time_of_day, enable_weather,
               color_mood="everyday_muted", output_format="loose_keys",
               overrides="", color_tone="", num_colors=5, harmony_type="auto",
-              palette_style="general", vibrancy=0.5, contrast=0.5, warmth=0.5):
+              palette_style="general", vibrancy=0.5, contrast=0.5, warmth=0.5,
+              location_set_multi="", color_mood_multi=""):
+        location_set, pool, skipped = pick_choice(
+            location_set_multi, location_set, _location_set_choices(), seed, "location_set")
+        log_pick("JB Location", "location_set", location_set, pool, skipped)
+        color_mood, mood_pool, skipped = pick_choice(
+            color_mood_multi, color_mood, MOOD_NAMES, seed, "location_color_mood")
+        log_pick("JB Location", "color_mood", color_mood, mood_pool, skipped)
+
         element_enables = {
             "background":          enable_background,
             "midground":           enable_midground,
@@ -169,6 +192,8 @@ class FVM_JB_LocationBlock:
         tod = rec["elements"].get("time_of_day")
         if tod and not {"ambient_light", "shadow_tone"} & set(color_overrides):
             sync_night_atmosphere(palette, seed, tod["name"])
+        if len(mood_pool) > 1:
+            palette["palette_string"] += f"  [mood: {color_mood}]"
         subs = palette["subs"]
 
         elements: dict = {}

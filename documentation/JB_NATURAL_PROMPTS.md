@@ -324,3 +324,30 @@ blue hour after sunset, hazy warm afternoon
 In these sets, weather entries describe precipitation, air and temperature
 only — `rain streaks on the glass`, `damp air after rain`, `cold air with
 breath visible`. Light belongs to `time_of_day` alone.
+
+---
+
+## 5. Multi-select — one set and one mood per seed
+
+`JB · Outfit Block` and `JB · Location Block` each have two more buttons:
+**Multi-Select Sets** and **Multi-Select Moods**. They open a checkbox tree of
+the dropdown's choices; ticking a folder (`female/business`, `outdoor`) ticks
+every set below it. With two or more ticked, the node draws one of them per
+seed and ignores the dropdown:
+
+- the dropdown and the button glow amber, the dropdown reads
+  `✦ 21 sets · random per seed`, the button `✦ 21 sets drawn per seed — edit`;
+- `set_name` in the JSON names the set that was drawn, `palette_summary` ends
+  with `[mood: warm_earth]` for a drawn mood, and the server console logs
+  every draw (`[FVM JB Outfit] outfit_set: drew …`);
+- with the seed on randomize, every Run draws anew — this replaces the
+  Impact wildcard + rgthree Any Switch chain for batch variation;
+- the draw hashes the seed with its own salt and never touches the engine's
+  RNG, so the outfit for a drawn set is exactly the one you get by picking that
+  set alone with the same seed — a good result can be redone in single mode.
+
+Apply with one box ticked just sets the dropdown; Clear + Apply switches the
+multi-select off. The choices live in hidden STRING widgets (`outfit_set_multi`
+/ `location_set_multi`, `color_mood_multi`, one choice per line), appended
+after the last widget so saved workflows keep their values. A set that was
+renamed or deleted is skipped with a console note.
