@@ -1,6 +1,6 @@
 {
- "last_node_id": 23,
- "last_link_id": 22,
+ "last_node_id": 17,
+ "last_link_id": 16,
  "nodes": [
   {
    "id": 1,
@@ -22,7 +22,7 @@
     "Node name for S&R": "Note"
    },
    "widgets_values": [
-    "Krea 2 · Business-Batch (Reading, PA)\n\nRun mit Batch-Anzahl > 1 (z.B. Run ×12): jeder Lauf zieht ein anderes Location-Set, Outfit-Set und eine andere Outfit-Farbstimmung. Der erste Lauf nutzt die gespeicherten Seeds, danach würfeln alle neu.\n\n• 'Location-Set würfeln': Impact Wildcard, mode = fixed, Liste {set|set|…} steht in populated_text (42 Sets aus 7 Kategorien). Eigenen Seed auf randomize → Any Switch → location_set. Sets hinzufügen/entfernen = Liste editieren (populated_text; wildcard_text ist nur Ablage). Gewichte gehen mit {3::set|1::set}.\n• 'Outfit-Set würfeln': dieselbe Mechanik, die 7 Business-Sets mit Heels. awards_gala_evening_with_heels ist absichtlich nicht drin (passt nur zum Abend-Event) — bei Bedarf ergänzen.\n• 'Outfit-Farben würfeln': color_mood zwischen everyday_muted / cool_muted / warm_earth / neutral_basics.\n• Seeds von Location Block, Outfit Block und Sampler stehen auf randomize.\n• Person: Text oben links ersetzen (oder LoRA-Trigger). Keine Personenwörter in Location/Outfit — die Sets sind darauf ausgelegt.\n• style_preset business_executive: Headwear wird immer gezogen — Frisur ohne Farbe/Länge + 'face turned toward the camera' hält Kopf und Gesicht im Bild.\n• Prompt-Länge bleibt < 2400 Zeichen (Krea 2 wird darüber schwarz/verrauscht).\n\nRegeln & Test: .claude/commands/build-location-set.md (Step 2c), /krea2-set-test, scripts/krea2_set_check.py"
+    "Krea 2 · Business-Batch (Reading, PA)\n\nRun mit Batch-Anzahl > 1 (z.B. Run ×12): jeder Lauf zieht ein anderes Location-Set, Outfit-Set und eine andere Outfit-Farbstimmung. Der erste Lauf nutzt die gespeicherten Seeds, danach würfeln alle neu.\n\n• Location Block → 'Multi-Select Sets': 42 Sets aus 7 Kategorien angehakt, pro Seed wird eins gezogen. Leuchtet das Dropdown, ist die Mehrfachauswahl aktiv und der Dropdown-Wert wird ignoriert. Sets dazu/weg = Haken setzen; ein Ordner-Haken nimmt alles darunter.\n• Outfit Block → 'Multi-Select Sets': die 7 Business-Sets mit Heels. awards_gala_evening_with_heels ist absichtlich nicht drin (passt nur zum Abend-Event) — bei Bedarf anhaken.\n• Outfit Block → 'Multi-Select Moods': everyday_muted / cool_muted / warm_earth / neutral_basics.\n• Welches Set gezogen wurde, steht im JSON (set_name); die Stimmung am Ende von palette_summary.\n• Seeds von Location Block, Outfit Block und Sampler stehen auf randomize. Gleiches Set + gleicher Seed = gleiches Ergebnis, auch einzeln gewählt.\n• Turbo-LoRA ist auf Bypass: der cielbleu-Checkpoint enthält Turbo schon, doppelt gab es Flecken auf hellen Böden.\n• Person: Text oben links ersetzen (oder LoRA-Trigger). Keine Personenwörter in Location/Outfit — die Sets sind darauf ausgelegt.\n• style_preset business_executive: Headwear wird immer gezogen — Frisur ohne Farbe/Länge + 'face turned toward the camera' hält Kopf und Gesicht im Bild.\n• Prompt-Länge bleibt < 2400 Zeichen (Krea 2 wird darüber schwarz/verrauscht).\n\nRegeln & Test: .claude/commands/build-location-set.md (Step 2c), /krea2-set-test, scripts/krea2_set_check.py"
    ],
    "title": "Anleitung",
    "color": "#432",
@@ -57,7 +57,7 @@
      "name": "STRING",
      "type": "STRING",
      "links": [
-      7
+      1
      ]
     }
    ],
@@ -71,136 +71,17 @@
   },
   {
    "id": 3,
-   "type": "ImpactWildcardProcessor",
+   "type": "FVM_JB_LocationBlock",
    "pos": [
     470,
     20
    ],
    "size": [
     420,
-    220
+    660
    ],
    "flags": {},
    "order": 2,
-   "mode": 0,
-   "inputs": [
-    {
-     "name": "wildcard_text",
-     "type": "STRING",
-     "widget": {
-      "name": "wildcard_text"
-     },
-     "link": null
-    },
-    {
-     "name": "populated_text",
-     "type": "STRING",
-     "widget": {
-      "name": "populated_text"
-     },
-     "link": null
-    },
-    {
-     "name": "mode",
-     "type": "COMBO",
-     "widget": {
-      "name": "mode"
-     },
-     "link": null
-    },
-    {
-     "name": "seed",
-     "type": "INT",
-     "widget": {
-      "name": "seed"
-     },
-     "link": null
-    },
-    {
-     "name": "Select to add Wildcard",
-     "type": "COMBO",
-     "widget": {
-      "name": "Select to add Wildcard"
-     },
-     "link": null
-    }
-   ],
-   "outputs": [
-    {
-     "name": "processed text",
-     "type": "STRING",
-     "links": [
-      1
-     ]
-    }
-   ],
-   "properties": {
-    "Node name for S&R": "ImpactWildcardProcessor"
-   },
-   "widgets_values": [
-    "{indoor/business_dining_spot/brewpub_after_work_high_top|indoor/business_dining_spot/coffee_roaster_window_counter|indoor/business_dining_spot/exposed_brick_bistro_table|indoor/business_dining_spot/hotel_restaurant_breakfast_table|indoor/business_dining_spot/steakhouse_lunch_booth|indoor/business_event_venue/conference_breakout_room|indoor/business_event_venue/health_expo_booth_aisle|indoor/business_event_venue/hotel_ballroom_awards_luncheon|indoor/business_event_venue/panel_stage_with_lectern|indoor/business_event_venue/pre_function_foyer_reception|indoor/hospital_campus/main_atrium_lobby|indoor/hospital_campus/medical_office_building_corridor|indoor/hospital_campus/outpatient_center_waiting_area|indoor/hospital_campus/physician_conference_center|indoor/reading_pennsylvania_corporate_office/brick_walled_boardroom|indoor/reading_pennsylvania_corporate_office/executive_corner_office|indoor/reading_pennsylvania_corporate_office/headquarters_reception_lobby|indoor/reading_pennsylvania_corporate_office/office_coffee_bar_break_area|indoor/reading_pennsylvania_corporate_office/open_plan_marketing_department|indoor/reading_pennsylvania_corporate_office/small_glass_huddle_room|indoor/reading_pennsylvania_downtown_spot/performing_arts_center_lobby|indoor/senior_living_community/activity_and_craft_room|indoor/senior_living_community/bistro_cafe_corner|indoor/senior_living_community/fireplace_lounge_lobby|indoor/senior_living_community/tablecloth_dining_room|indoor/suburban_office_park/glass_elevator_lobby|indoor/suburban_office_park/multi_tenant_atrium_lobby|indoor/suburban_office_park/second_floor_tenant_suite|outdoor/business_dining_spot/sidewalk_patio_lunch_table|outdoor/business_event_venue/courtyard_terrace_networking_evening|outdoor/hospital_campus/main_entrance_drop_off_canopy|outdoor/hospital_campus/rooftop_healing_garden|outdoor/reading_pennsylvania_downtown_spot/converted_factory_arts_center_courtyard|outdoor/reading_pennsylvania_downtown_spot/pagoda_overlook_on_mount_penn|outdoor/reading_pennsylvania_downtown_spot/penn_square_street_corner|outdoor/reading_pennsylvania_downtown_spot/penn_street_historic_bank_block|outdoor/reading_pennsylvania_downtown_spot/riverfront_park_river_overlook|outdoor/senior_living_community/landscaped_courtyard_garden|outdoor/senior_living_community/porte_cochere_entrance_drive|outdoor/suburban_office_park/landscaped_front_entrance|outdoor/suburban_office_park/retention_pond_walking_path|outdoor/suburban_office_park/tree_lined_parking_lot}",
-    "{indoor/business_dining_spot/brewpub_after_work_high_top|indoor/business_dining_spot/coffee_roaster_window_counter|indoor/business_dining_spot/exposed_brick_bistro_table|indoor/business_dining_spot/hotel_restaurant_breakfast_table|indoor/business_dining_spot/steakhouse_lunch_booth|indoor/business_event_venue/conference_breakout_room|indoor/business_event_venue/health_expo_booth_aisle|indoor/business_event_venue/hotel_ballroom_awards_luncheon|indoor/business_event_venue/panel_stage_with_lectern|indoor/business_event_venue/pre_function_foyer_reception|indoor/hospital_campus/main_atrium_lobby|indoor/hospital_campus/medical_office_building_corridor|indoor/hospital_campus/outpatient_center_waiting_area|indoor/hospital_campus/physician_conference_center|indoor/reading_pennsylvania_corporate_office/brick_walled_boardroom|indoor/reading_pennsylvania_corporate_office/executive_corner_office|indoor/reading_pennsylvania_corporate_office/headquarters_reception_lobby|indoor/reading_pennsylvania_corporate_office/office_coffee_bar_break_area|indoor/reading_pennsylvania_corporate_office/open_plan_marketing_department|indoor/reading_pennsylvania_corporate_office/small_glass_huddle_room|indoor/reading_pennsylvania_downtown_spot/performing_arts_center_lobby|indoor/senior_living_community/activity_and_craft_room|indoor/senior_living_community/bistro_cafe_corner|indoor/senior_living_community/fireplace_lounge_lobby|indoor/senior_living_community/tablecloth_dining_room|indoor/suburban_office_park/glass_elevator_lobby|indoor/suburban_office_park/multi_tenant_atrium_lobby|indoor/suburban_office_park/second_floor_tenant_suite|outdoor/business_dining_spot/sidewalk_patio_lunch_table|outdoor/business_event_venue/courtyard_terrace_networking_evening|outdoor/hospital_campus/main_entrance_drop_off_canopy|outdoor/hospital_campus/rooftop_healing_garden|outdoor/reading_pennsylvania_downtown_spot/converted_factory_arts_center_courtyard|outdoor/reading_pennsylvania_downtown_spot/pagoda_overlook_on_mount_penn|outdoor/reading_pennsylvania_downtown_spot/penn_square_street_corner|outdoor/reading_pennsylvania_downtown_spot/penn_street_historic_bank_block|outdoor/reading_pennsylvania_downtown_spot/riverfront_park_river_overlook|outdoor/senior_living_community/landscaped_courtyard_garden|outdoor/senior_living_community/porte_cochere_entrance_drive|outdoor/suburban_office_park/landscaped_front_entrance|outdoor/suburban_office_park/retention_pond_walking_path|outdoor/suburban_office_park/tree_lined_parking_lot}",
-    "fixed",
-    1,
-    "randomize",
-    "Select Wildcard 🟢 Full Cache"
-   ],
-   "title": "Location-Set würfeln (Wildcard)"
-  },
-  {
-   "id": 4,
-   "type": "Any Switch (rgthree)",
-   "pos": [
-    610,
-    260
-   ],
-   "size": [
-    260,
-    80
-   ],
-   "flags": {},
-   "order": 3,
-   "mode": 0,
-   "inputs": [
-    {
-     "name": "any_01",
-     "type": "*",
-     "link": 1
-    },
-    {
-     "name": "any_02",
-     "type": "*",
-     "link": null
-    }
-   ],
-   "outputs": [
-    {
-     "name": "*",
-     "type": "*",
-     "shape": 3,
-     "links": [
-      4
-     ]
-    }
-   ],
-   "properties": {
-    "Node name for S&R": "Any Switch (rgthree)"
-   },
-   "title": "Any → Combo"
-  },
-  {
-   "id": 5,
-   "type": "FVM_JB_LocationBlock",
-   "pos": [
-    470,
-    360
-   ],
-   "size": [
-    420,
-    560
-   ],
-   "flags": {},
-   "order": 4,
    "mode": 0,
    "inputs": [
     {
@@ -209,7 +90,7 @@
      "widget": {
       "name": "location_set"
      },
-     "link": 4
+     "link": null
     },
     {
      "name": "seed",
@@ -362,6 +243,24 @@
      },
      "shape": 7,
      "link": null
+    },
+    {
+     "name": "location_set_multi",
+     "type": "STRING",
+     "widget": {
+      "name": "location_set_multi"
+     },
+     "shape": 7,
+     "link": null
+    },
+    {
+     "name": "color_mood_multi",
+     "type": "STRING",
+     "widget": {
+      "name": "color_mood_multi"
+     },
+     "shape": 7,
+     "link": null
     }
    ],
    "outputs": [
@@ -369,7 +268,7 @@
      "name": "location_json",
      "type": "STRING",
      "links": [
-      9
+      3
      ]
     },
     {
@@ -407,261 +306,27 @@
     0.5,
     0.5,
     0.5,
+    "indoor/business_dining_spot/brewpub_after_work_high_top\nindoor/business_dining_spot/coffee_roaster_window_counter\nindoor/business_dining_spot/exposed_brick_bistro_table\nindoor/business_dining_spot/hotel_restaurant_breakfast_table\nindoor/business_dining_spot/steakhouse_lunch_booth\nindoor/business_event_venue/conference_breakout_room\nindoor/business_event_venue/health_expo_booth_aisle\nindoor/business_event_venue/hotel_ballroom_awards_luncheon\nindoor/business_event_venue/panel_stage_with_lectern\nindoor/business_event_venue/pre_function_foyer_reception\nindoor/hospital_campus/main_atrium_lobby\nindoor/hospital_campus/medical_office_building_corridor\nindoor/hospital_campus/outpatient_center_waiting_area\nindoor/hospital_campus/physician_conference_center\nindoor/reading_pennsylvania_corporate_office/brick_walled_boardroom\nindoor/reading_pennsylvania_corporate_office/executive_corner_office\nindoor/reading_pennsylvania_corporate_office/headquarters_reception_lobby\nindoor/reading_pennsylvania_corporate_office/office_coffee_bar_break_area\nindoor/reading_pennsylvania_corporate_office/open_plan_marketing_department\nindoor/reading_pennsylvania_corporate_office/small_glass_huddle_room\nindoor/reading_pennsylvania_downtown_spot/performing_arts_center_lobby\nindoor/senior_living_community/activity_and_craft_room\nindoor/senior_living_community/bistro_cafe_corner\nindoor/senior_living_community/fireplace_lounge_lobby\nindoor/senior_living_community/tablecloth_dining_room\nindoor/suburban_office_park/glass_elevator_lobby\nindoor/suburban_office_park/multi_tenant_atrium_lobby\nindoor/suburban_office_park/second_floor_tenant_suite\noutdoor/business_dining_spot/sidewalk_patio_lunch_table\noutdoor/business_event_venue/courtyard_terrace_networking_evening\noutdoor/hospital_campus/main_entrance_drop_off_canopy\noutdoor/hospital_campus/rooftop_healing_garden\noutdoor/reading_pennsylvania_downtown_spot/converted_factory_arts_center_courtyard\noutdoor/reading_pennsylvania_downtown_spot/pagoda_overlook_on_mount_penn\noutdoor/reading_pennsylvania_downtown_spot/penn_square_street_corner\noutdoor/reading_pennsylvania_downtown_spot/penn_street_historic_bank_block\noutdoor/reading_pennsylvania_downtown_spot/riverfront_park_river_overlook\noutdoor/senior_living_community/landscaped_courtyard_garden\noutdoor/senior_living_community/porte_cochere_entrance_drive\noutdoor/suburban_office_park/landscaped_front_entrance\noutdoor/suburban_office_park/retention_pond_walking_path\noutdoor/suburban_office_park/tree_lined_parking_lot",
+    "",
+    null,
+    null,
     null,
     null
    ]
   },
   {
-   "id": 6,
-   "type": "ImpactWildcardProcessor",
+   "id": 4,
+   "type": "FVM_JB_OutfitBlock",
    "pos": [
     920,
     20
    ],
    "size": [
     420,
-    220
+    790
    ],
    "flags": {},
-   "order": 5,
-   "mode": 0,
-   "inputs": [
-    {
-     "name": "wildcard_text",
-     "type": "STRING",
-     "widget": {
-      "name": "wildcard_text"
-     },
-     "link": null
-    },
-    {
-     "name": "populated_text",
-     "type": "STRING",
-     "widget": {
-      "name": "populated_text"
-     },
-     "link": null
-    },
-    {
-     "name": "mode",
-     "type": "COMBO",
-     "widget": {
-      "name": "mode"
-     },
-     "link": null
-    },
-    {
-     "name": "seed",
-     "type": "INT",
-     "widget": {
-      "name": "seed"
-     },
-     "link": null
-    },
-    {
-     "name": "Select to add Wildcard",
-     "type": "COMBO",
-     "widget": {
-      "name": "Select to add Wildcard"
-     },
-     "link": null
-    }
-   ],
-   "outputs": [
-    {
-     "name": "processed text",
-     "type": "STRING",
-     "links": [
-      2
-     ]
-    }
-   ],
-   "properties": {
-    "Node name for S&R": "ImpactWildcardProcessor"
-   },
-   "widgets_values": [
-    "{female/business/board_meeting_suit_with_heels|female/business/office_day_business_casual_with_heels|female/business/senior_community_event_with_heels|female/business/hospital_campus_visit_with_heels|female/business/health_expo_booth_day_with_heels|female/business/client_lunch_dress_with_heels|female/business/winter_workday_layers_with_heels}",
-    "{female/business/board_meeting_suit_with_heels|female/business/office_day_business_casual_with_heels|female/business/senior_community_event_with_heels|female/business/hospital_campus_visit_with_heels|female/business/health_expo_booth_day_with_heels|female/business/client_lunch_dress_with_heels|female/business/winter_workday_layers_with_heels}",
-    "fixed",
-    1,
-    "randomize",
-    "Select Wildcard 🟢 Full Cache"
-   ],
-   "title": "Outfit-Set würfeln (Wildcard)"
-  },
-  {
-   "id": 7,
-   "type": "Any Switch (rgthree)",
-   "pos": [
-    1060,
-    260
-   ],
-   "size": [
-    260,
-    80
-   ],
-   "flags": {},
-   "order": 6,
-   "mode": 0,
-   "inputs": [
-    {
-     "name": "any_01",
-     "type": "*",
-     "link": 2
-    },
-    {
-     "name": "any_02",
-     "type": "*",
-     "link": null
-    }
-   ],
-   "outputs": [
-    {
-     "name": "*",
-     "type": "*",
-     "shape": 3,
-     "links": [
-      5
-     ]
-    }
-   ],
-   "properties": {
-    "Node name for S&R": "Any Switch (rgthree)"
-   },
-   "title": "Any → Combo"
-  },
-  {
-   "id": 8,
-   "type": "ImpactWildcardProcessor",
-   "pos": [
-    920,
-    1030
-   ],
-   "size": [
-    420,
-    220
-   ],
-   "flags": {},
-   "order": 7,
-   "mode": 0,
-   "inputs": [
-    {
-     "name": "wildcard_text",
-     "type": "STRING",
-     "widget": {
-      "name": "wildcard_text"
-     },
-     "link": null
-    },
-    {
-     "name": "populated_text",
-     "type": "STRING",
-     "widget": {
-      "name": "populated_text"
-     },
-     "link": null
-    },
-    {
-     "name": "mode",
-     "type": "COMBO",
-     "widget": {
-      "name": "mode"
-     },
-     "link": null
-    },
-    {
-     "name": "seed",
-     "type": "INT",
-     "widget": {
-      "name": "seed"
-     },
-     "link": null
-    },
-    {
-     "name": "Select to add Wildcard",
-     "type": "COMBO",
-     "widget": {
-      "name": "Select to add Wildcard"
-     },
-     "link": null
-    }
-   ],
-   "outputs": [
-    {
-     "name": "processed text",
-     "type": "STRING",
-     "links": [
-      3
-     ]
-    }
-   ],
-   "properties": {
-    "Node name for S&R": "ImpactWildcardProcessor"
-   },
-   "widgets_values": [
-    "{everyday_muted|cool_muted|warm_earth|neutral_basics}",
-    "{everyday_muted|cool_muted|warm_earth|neutral_basics}",
-    "fixed",
-    1,
-    "randomize",
-    "Select Wildcard 🟢 Full Cache"
-   ],
-   "title": "Outfit-Farben würfeln (Wildcard)"
-  },
-  {
-   "id": 9,
-   "type": "Any Switch (rgthree)",
-   "pos": [
-    1060,
-    1270
-   ],
-   "size": [
-    260,
-    80
-   ],
-   "flags": {},
-   "order": 8,
-   "mode": 0,
-   "inputs": [
-    {
-     "name": "any_01",
-     "type": "*",
-     "link": 3
-    },
-    {
-     "name": "any_02",
-     "type": "*",
-     "link": null
-    }
-   ],
-   "outputs": [
-    {
-     "name": "*",
-     "type": "*",
-     "shape": 3,
-     "links": [
-      6
-     ]
-    }
-   ],
-   "properties": {
-    "Node name for S&R": "Any Switch (rgthree)"
-   },
-   "title": "Any → Combo"
-  },
-  {
-   "id": 10,
-   "type": "FVM_JB_OutfitBlock",
-   "pos": [
-    920,
-    360
-   ],
-   "size": [
-    420,
-    640
-   ],
-   "flags": {},
-   "order": 9,
+   "order": 3,
    "mode": 0,
    "inputs": [
     {
@@ -670,7 +335,7 @@
      "widget": {
       "name": "outfit_set"
      },
-     "link": 5
+     "link": null
     },
     {
      "name": "seed",
@@ -782,7 +447,7 @@
      "widget": {
       "name": "color_mood"
      },
-     "link": 6
+     "link": null
     },
     {
      "name": "output_format",
@@ -863,6 +528,24 @@
      },
      "shape": 7,
      "link": null
+    },
+    {
+     "name": "outfit_set_multi",
+     "type": "STRING",
+     "widget": {
+      "name": "outfit_set_multi"
+     },
+     "shape": 7,
+     "link": null
+    },
+    {
+     "name": "color_mood_multi",
+     "type": "STRING",
+     "widget": {
+      "name": "color_mood_multi"
+     },
+     "shape": 7,
+     "link": null
     }
    ],
    "outputs": [
@@ -870,7 +553,7 @@
      "name": "outfit_json",
      "type": "STRING",
      "links": [
-      8
+      2
      ]
     },
     {
@@ -913,12 +596,16 @@
     0.5,
     0.5,
     0.0,
+    "female/business/board_meeting_suit_with_heels\nfemale/business/office_day_business_casual_with_heels\nfemale/business/senior_community_event_with_heels\nfemale/business/hospital_campus_visit_with_heels\nfemale/business/health_expo_booth_day_with_heels\nfemale/business/client_lunch_dress_with_heels\nfemale/business/winter_workday_layers_with_heels",
+    "everyday_muted\ncool_muted\nwarm_earth\nneutral_basics",
+    null,
+    null,
     null,
     null
    ]
   },
   {
-   "id": 11,
+   "id": 5,
    "type": "FVM_JB_Stitcher",
    "pos": [
     1370,
@@ -929,7 +616,7 @@
     220
    ],
    "flags": {},
-   "order": 10,
+   "order": 4,
    "mode": 0,
    "inputs": [
     {
@@ -951,17 +638,17 @@
     {
      "name": "input_1",
      "type": "STRING",
-     "link": 7
+     "link": 1
     },
     {
      "name": "input_2",
      "type": "STRING",
-     "link": 8
+     "link": 2
     },
     {
      "name": "input_3",
      "type": "STRING",
-     "link": 9
+     "link": 3
     },
     {
      "name": "input_4",
@@ -979,8 +666,8 @@
      "name": "string",
      "type": "STRING",
      "links": [
-      10,
-      11
+      4,
+      5
      ]
     }
    ],
@@ -993,7 +680,7 @@
    ]
   },
   {
-   "id": 12,
+   "id": 6,
    "type": "PreviewAny",
    "pos": [
     1370,
@@ -1004,13 +691,13 @@
     470
    ],
    "flags": {},
-   "order": 11,
+   "order": 5,
    "mode": 0,
    "inputs": [
     {
      "name": "source",
      "type": "*",
-     "link": 10
+     "link": 4
     }
    ],
    "outputs": [],
@@ -1020,7 +707,7 @@
    "title": "Prompt (Kontrolle)"
   },
   {
-   "id": 13,
+   "id": 7,
    "type": "UNETLoader",
    "pos": [
     1700,
@@ -1031,7 +718,7 @@
     82
    ],
    "flags": {},
-   "order": 12,
+   "order": 6,
    "mode": 0,
    "inputs": [
     {
@@ -1056,7 +743,7 @@
      "name": "MODEL",
      "type": "MODEL",
      "links": [
-      12
+      6
      ]
     }
    ],
@@ -1069,7 +756,7 @@
    ]
   },
   {
-   "id": 14,
+   "id": 8,
    "type": "LoraLoaderModelOnly",
    "pos": [
     1700,
@@ -1080,13 +767,13 @@
     82
    ],
    "flags": {},
-   "order": 13,
-   "mode": 0,
+   "order": 7,
+   "mode": 4,
    "inputs": [
     {
      "name": "model",
      "type": "MODEL",
-     "link": 12
+     "link": 6
     },
     {
      "name": "lora_name",
@@ -1110,7 +797,7 @@
      "name": "MODEL",
      "type": "MODEL",
      "links": [
-      13
+      7
      ]
     }
    ],
@@ -1120,10 +807,11 @@
    "widgets_values": [
     "krea2\\helper\\krea2_turbo_lora_rank_64_bf16.safetensors",
     0.95
-   ]
+   ],
+   "title": "Turbo-LoRA (Bypass: im Checkpoint enthalten)"
   },
   {
-   "id": 15,
+   "id": 9,
    "type": "LoraLoaderModelOnly",
    "pos": [
     1700,
@@ -1134,13 +822,13 @@
     82
    ],
    "flags": {},
-   "order": 14,
+   "order": 8,
    "mode": 0,
    "inputs": [
     {
      "name": "model",
      "type": "MODEL",
-     "link": 13
+     "link": 7
     },
     {
      "name": "lora_name",
@@ -1164,7 +852,7 @@
      "name": "MODEL",
      "type": "MODEL",
      "links": [
-      14
+      8
      ]
     }
    ],
@@ -1177,7 +865,7 @@
    ]
   },
   {
-   "id": 16,
+   "id": 10,
    "type": "CLIPLoader",
    "pos": [
     1700,
@@ -1188,7 +876,7 @@
     106
    ],
    "flags": {},
-   "order": 15,
+   "order": 9,
    "mode": 0,
    "inputs": [
     {
@@ -1222,8 +910,8 @@
      "name": "CLIP",
      "type": "CLIP",
      "links": [
-      15,
-      16
+      9,
+      10
      ]
     }
    ],
@@ -1237,7 +925,7 @@
    ]
   },
   {
-   "id": 17,
+   "id": 11,
    "type": "VAELoader",
    "pos": [
     1700,
@@ -1248,7 +936,7 @@
     58
    ],
    "flags": {},
-   "order": 16,
+   "order": 10,
    "mode": 0,
    "inputs": [
     {
@@ -1265,7 +953,7 @@
      "name": "VAE",
      "type": "VAE",
      "links": [
-      21
+      15
      ]
     }
    ],
@@ -1277,7 +965,7 @@
    ]
   },
   {
-   "id": 18,
+   "id": 12,
    "type": "CLIPTextEncode",
    "pos": [
     2090,
@@ -1288,13 +976,13 @@
     100
    ],
    "flags": {},
-   "order": 17,
+   "order": 11,
    "mode": 0,
    "inputs": [
     {
      "name": "clip",
      "type": "CLIP",
-     "link": 15
+     "link": 9
     },
     {
      "name": "text",
@@ -1302,7 +990,7 @@
      "widget": {
       "name": "text"
      },
-     "link": 11
+     "link": 5
     }
    ],
    "outputs": [
@@ -1310,7 +998,7 @@
      "name": "CONDITIONING",
      "type": "CONDITIONING",
      "links": [
-      17
+      11
      ]
     }
    ],
@@ -1323,7 +1011,7 @@
    "title": "Positiv"
   },
   {
-   "id": 19,
+   "id": 13,
    "type": "CLIPTextEncode",
    "pos": [
     2090,
@@ -1334,13 +1022,13 @@
     100
    ],
    "flags": {},
-   "order": 18,
+   "order": 12,
    "mode": 0,
    "inputs": [
     {
      "name": "clip",
      "type": "CLIP",
-     "link": 16
+     "link": 10
     },
     {
      "name": "text",
@@ -1356,7 +1044,7 @@
      "name": "CONDITIONING",
      "type": "CONDITIONING",
      "links": [
-      18
+      12
      ]
     }
    ],
@@ -1369,7 +1057,7 @@
    "title": "Negativ (leer)"
   },
   {
-   "id": 20,
+   "id": 14,
    "type": "EmptyLatentImage",
    "pos": [
     2090,
@@ -1380,7 +1068,7 @@
     106
    ],
    "flags": {},
-   "order": 19,
+   "order": 13,
    "mode": 0,
    "inputs": [
     {
@@ -1413,7 +1101,7 @@
      "name": "LATENT",
      "type": "LATENT",
      "links": [
-      19
+      13
      ]
     }
    ],
@@ -1427,7 +1115,7 @@
    ]
   },
   {
-   "id": 21,
+   "id": 15,
    "type": "KSampler",
    "pos": [
     2420,
@@ -1438,28 +1126,28 @@
     262
    ],
    "flags": {},
-   "order": 20,
+   "order": 14,
    "mode": 0,
    "inputs": [
     {
      "name": "model",
      "type": "MODEL",
-     "link": 14
+     "link": 8
     },
     {
      "name": "positive",
      "type": "CONDITIONING",
-     "link": 17
+     "link": 11
     },
     {
      "name": "negative",
      "type": "CONDITIONING",
-     "link": 18
+     "link": 12
     },
     {
      "name": "latent_image",
      "type": "LATENT",
-     "link": 19
+     "link": 13
     },
     {
      "name": "seed",
@@ -1515,7 +1203,7 @@
      "name": "LATENT",
      "type": "LATENT",
      "links": [
-      20
+      14
      ]
     }
    ],
@@ -1533,7 +1221,7 @@
    ]
   },
   {
-   "id": 22,
+   "id": 16,
    "type": "VAEDecode",
    "pos": [
     2420,
@@ -1544,18 +1232,18 @@
     46
    ],
    "flags": {},
-   "order": 21,
+   "order": 15,
    "mode": 0,
    "inputs": [
     {
      "name": "samples",
      "type": "LATENT",
-     "link": 20
+     "link": 14
     },
     {
      "name": "vae",
      "type": "VAE",
-     "link": 21
+     "link": 15
     }
    ],
    "outputs": [
@@ -1563,7 +1251,7 @@
      "name": "IMAGE",
      "type": "IMAGE",
      "links": [
-      22
+      16
      ]
     }
    ],
@@ -1572,7 +1260,7 @@
    }
   },
   {
-   "id": 23,
+   "id": 17,
    "type": "SaveImage",
    "pos": [
     2750,
@@ -1583,13 +1271,13 @@
     760
    ],
    "flags": {},
-   "order": 22,
+   "order": 16,
    "mode": 0,
    "inputs": [
     {
      "name": "images",
      "type": "IMAGE",
-     "link": 22
+     "link": 16
     },
     {
      "name": "filename_prefix",
@@ -1612,177 +1300,129 @@
  "links": [
   [
    1,
-   3,
+   2,
    0,
-   4,
-   0,
+   5,
+   2,
    "STRING"
   ],
   [
    2,
+   4,
+   0,
+   5,
+   3,
+   "STRING"
+  ],
+  [
+   3,
+   3,
+   0,
+   5,
+   4,
+   "STRING"
+  ],
+  [
+   4,
+   5,
+   1,
    6,
    0,
-   7,
-   0,
    "STRING"
-  ],
-  [
-   3,
-   8,
-   0,
-   9,
-   0,
-   "STRING"
-  ],
-  [
-   4,
-   4,
-   0,
-   5,
-   0,
-   "*"
   ],
   [
    5,
-   7,
-   0,
-   10,
-   0,
-   "*"
-  ],
-  [
-   6,
-   9,
-   0,
-   10,
-   14,
-   "*"
-  ],
-  [
-   7,
-   2,
-   0,
-   11,
-   2,
-   "STRING"
-  ],
-  [
-   8,
-   10,
-   0,
-   11,
-   3,
-   "STRING"
-  ],
-  [
-   9,
    5,
-   0,
-   11,
-   4,
-   "STRING"
-  ],
-  [
-   10,
-   11,
    1,
    12,
-   0,
+   1,
    "STRING"
   ],
   [
+   6,
+   7,
+   0,
+   8,
+   0,
+   "MODEL"
+  ],
+  [
+   7,
+   8,
+   0,
+   9,
+   0,
+   "MODEL"
+  ],
+  [
+   8,
+   9,
+   0,
+   15,
+   0,
+   "MODEL"
+  ],
+  [
+   9,
+   10,
+   0,
+   12,
+   0,
+   "CLIP"
+  ],
+  [
+   10,
+   10,
+   0,
+   13,
+   0,
+   "CLIP"
+  ],
+  [
    11,
-   11,
+   12,
+   0,
+   15,
    1,
-   18,
-   1,
-   "STRING"
+   "CONDITIONING"
   ],
   [
    12,
    13,
    0,
-   14,
-   0,
-   "MODEL"
+   15,
+   2,
+   "CONDITIONING"
   ],
   [
    13,
    14,
    0,
    15,
-   0,
-   "MODEL"
+   3,
+   "LATENT"
   ],
   [
    14,
    15,
    0,
-   21,
+   16,
    0,
-   "MODEL"
+   "LATENT"
   ],
   [
    15,
+   11,
+   0,
    16,
-   0,
-   18,
-   0,
-   "CLIP"
-  ],
-  [
-   16,
-   16,
-   0,
-   19,
-   0,
-   "CLIP"
-  ],
-  [
-   17,
-   18,
-   0,
-   21,
-   1,
-   "CONDITIONING"
-  ],
-  [
-   18,
-   19,
-   0,
-   21,
-   2,
-   "CONDITIONING"
-  ],
-  [
-   19,
-   20,
-   0,
-   21,
-   3,
-   "LATENT"
-  ],
-  [
-   20,
-   21,
-   0,
-   22,
-   0,
-   "LATENT"
-  ],
-  [
-   21,
-   17,
-   0,
-   22,
    1,
    "VAE"
   ],
   [
-   22,
-   22,
+   16,
+   16,
    0,
-   23,
+   17,
    0,
    "IMAGE"
   ]

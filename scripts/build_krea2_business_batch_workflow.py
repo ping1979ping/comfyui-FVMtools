@@ -1,15 +1,18 @@
 """Build examples/krea2_business_batch_reading.json — a Krea 2 batch workflow.
 
 Every queued run draws a different location set, outfit set and outfit colour
-mood. No new nodes: an Impact ``ImpactWildcardProcessor`` resolves a
-``{set|set|…}`` list with its own seed (``control_after_generate =
-randomize``) and an rgthree ``Any Switch`` passes the string on as ``*`` into
-the Location / Outfit Block combo. Seeds of both JB blocks and the sampler
-randomize too. Run it with a batch count (Run ×N).
+mood, with FVMtools nodes only: the JB Location / Outfit Block multi-select
+(hidden ``*_multi`` widgets, one choice per line) draws one choice per seed,
+and the block seeds randomize. Run it with a batch count (Run ×N).
 
-Why not a Primitive node with ``control_filter_list``: in frontend 1.53 the
-filter widget is not linked to the primitive's value widget after a workflow
-load, so randomize drew from the whole dropdown (gothic menswear, ski slopes).
+The older version chained an Impact ``ImpactWildcardProcessor`` and an rgthree
+``Any Switch`` into the combo. That only worked because the links were written
+into the JSON: the Any Switch takes on its input's STRING type, so it cannot be
+wired to a COMBO by hand. A Primitive with ``control_filter_list`` does not
+filter in frontend 1.53 either.
+
+The cielbleu checkpoint already contains the turbo distillation; the turbo LoRA
+node stays in the graph but bypassed (stacking it smeared bright floors).
 
     venv/Scripts/python.exe scripts/build_krea2_business_batch_workflow.py [--out path]
 """
@@ -31,21 +34,20 @@ LOCATION_CATEGORIES = (
     "business_dining_spot", "suburban_office_park",
 )
 # awards_gala_evening_with_heels is left out on purpose: it only fits an
-# evening event venue. Add it to the wildcard when you want it.
+# evening event venue. Tick it in Multi-Select Sets when you want it.
 OUTFIT_SETS = [f"female/business/{x}_with_heels" for x in (
     "board_meeting_suit", "office_day_business_casual", "senior_community_event",
     "hospital_campus_visit", "health_expo_booth_day", "client_lunch_dress",
     "winter_workday_layers")]
 COLOR_MOODS = ["everyday_muted", "cool_muted", "warm_earth", "neutral_basics"]
-WILDCARD_CACHE_LABEL = "Select Wildcard 🟢 Full Cache"
+# Edit List, Edit Overrides, Multi-Select Sets, Multi-Select Moods — buttons
+# serialise as null after the Python widgets.
+BUTTONS = [None, None, None, None]
+BYPASS = 4
 
 
 def location_sets():
     return [s for s in get_available_location_sets() if s.split("/")[1] in LOCATION_CATEGORIES]
-
-
-def wildcard(options):
-    return "{" + "|".join(options) + "}"
 
 
 FIRST_LOCATION = "indoor/reading_pennsylvania_corporate_office/open_plan_marketing_department"
@@ -58,10 +60,12 @@ NOTE = """Krea 2 · Business-Batch (Reading, PA)
 
 Run mit Batch-Anzahl > 1 (z.B. Run ×12): jeder Lauf zieht ein anderes Location-Set, Outfit-Set und eine andere Outfit-Farbstimmung. Der erste Lauf nutzt die gespeicherten Seeds, danach würfeln alle neu.
 
-• 'Location-Set würfeln': Impact Wildcard, mode = fixed, Liste {set|set|…} steht in populated_text (42 Sets aus 7 Kategorien). Eigenen Seed auf randomize → Any Switch → location_set. Sets hinzufügen/entfernen = Liste editieren (populated_text; wildcard_text ist nur Ablage). Gewichte gehen mit {3::set|1::set}.
-• 'Outfit-Set würfeln': dieselbe Mechanik, die 7 Business-Sets mit Heels. awards_gala_evening_with_heels ist absichtlich nicht drin (passt nur zum Abend-Event) — bei Bedarf ergänzen.
-• 'Outfit-Farben würfeln': color_mood zwischen everyday_muted / cool_muted / warm_earth / neutral_basics.
-• Seeds von Location Block, Outfit Block und Sampler stehen auf randomize.
+• Location Block → 'Multi-Select Sets': 42 Sets aus 7 Kategorien angehakt, pro Seed wird eins gezogen. Leuchtet das Dropdown, ist die Mehrfachauswahl aktiv und der Dropdown-Wert wird ignoriert. Sets dazu/weg = Haken setzen; ein Ordner-Haken nimmt alles darunter.
+• Outfit Block → 'Multi-Select Sets': die 7 Business-Sets mit Heels. awards_gala_evening_with_heels ist absichtlich nicht drin (passt nur zum Abend-Event) — bei Bedarf anhaken.
+• Outfit Block → 'Multi-Select Moods': everyday_muted / cool_muted / warm_earth / neutral_basics.
+• Welches Set gezogen wurde, steht im JSON (set_name); die Stimmung am Ende von palette_summary.
+• Seeds von Location Block, Outfit Block und Sampler stehen auf randomize. Gleiches Set + gleicher Seed = gleiches Ergebnis, auch einzeln gewählt.
+• Turbo-LoRA ist auf Bypass: der cielbleu-Checkpoint enthält Turbo schon, doppelt gab es Flecken auf hellen Böden.
 • Person: Text oben links ersetzen (oder LoRA-Trigger). Keine Personenwörter in Location/Outfit — die Sets sind darauf ausgelegt.
 • style_preset business_executive: Headwear wird immer gezogen — Frisur ohne Farbe/Länge + 'face turned toward the camera' hält Kopf und Gesicht im Bild.
 • Prompt-Länge bleibt < 2400 Zeichen (Krea 2 wird darüber schwarz/verrauscht).
@@ -117,22 +121,6 @@ def out(name, type_):
     return {"name": name, "type": type_}
 
 
-def selector(g, title, options, pos, seed=1):
-    """Impact wildcard (fixed mode, own randomized seed) + rgthree Any Switch."""
-    text = wildcard(options)
-    wc = g.node("ImpactWildcardProcessor", pos, (420, 220),
-                inputs=[wid("wildcard_text", "STRING"), wid("populated_text", "STRING"),
-                        wid("mode", "COMBO"), wid("seed", "INT"), wid("Select to add Wildcard", "COMBO")],
-                outputs=[out("processed text", "STRING")],
-                widgets=[text, text, "fixed", seed, "randomize", WILDCARD_CACHE_LABEL],
-                title=title)
-    sw = g.node("Any Switch (rgthree)", (pos[0] + 140, pos[1] + 240), (260, 80),
-                inputs=[sock("any_01", "*"), sock("any_02", "*")],
-                outputs=[{"name": "*", "type": "*", "shape": 3}], title="Any → Combo")
-    g.link(wc, 0, sw, "any_01")
-    return sw
-
-
 def build():
     g = Graph()
     note = g.node("Note", (20, 20), (420, 420), widgets=[NOTE], title="Anleitung")
@@ -142,7 +130,6 @@ def build():
                     inputs=[wid("value", "STRING")], outputs=[out("STRING", "STRING")],
                     widgets=[PERSON], title="Person (ersetzen)")
 
-    loc_sel = selector(g, "Location-Set würfeln (Wildcard)", location_sets(), (470, 20))
     loc_inputs = [wid("location_set", "COMBO"), wid("seed", "INT")] + [
         wid(f"enable_{e}", "BOOLEAN") for e in ("background", "midground", "architecture_detail",
                                                 "props", "foreground_element", "time_of_day", "weather")
@@ -150,16 +137,15 @@ def build():
          wid("overrides", "STRING", True), wid("color_tone", "COMBO", True),
          wid("num_colors", "INT", True), wid("harmony_type", "COMBO", True),
          wid("palette_style", "COMBO", True), wid("vibrancy", "FLOAT", True),
-         wid("contrast", "FLOAT", True), wid("warmth", "FLOAT", True)]
-    loc = g.node("FVM_JB_LocationBlock", (470, 360), (420, 560), inputs=loc_inputs,
+         wid("contrast", "FLOAT", True), wid("warmth", "FLOAT", True),
+         wid("location_set_multi", "STRING", True), wid("color_mood_multi", "STRING", True)]
+    loc = g.node("FVM_JB_LocationBlock", (470, 20), (420, 660), inputs=loc_inputs,
                  outputs=[out("location_json", "STRING"), out("location_string", "STRING"),
                           out("palette_summary", "STRING")],
                  widgets=[FIRST_LOCATION, 0, "randomize", True, True, True, True, True, True, True,
                           "everyday_muted", "sentences", "", "", 5, "auto", "general",
-                          0.5, 0.5, 0.5, None, None])
+                          0.5, 0.5, 0.5, "\n".join(location_sets()), ""] + BUTTONS)
 
-    out_sel = selector(g, "Outfit-Set würfeln (Wildcard)", OUTFIT_SETS, (920, 20))
-    mood_sel = selector(g, "Outfit-Farben würfeln (Wildcard)", COLOR_MOODS, (920, 1030))
     out_inputs = [wid("outfit_set", "COMBO"), wid("seed", "INT"), wid("style_preset", "COMBO"),
                   wid("formality", "FLOAT"), wid("coverage", "FLOAT")] + [
         wid(f"enable_{s}", "BOOLEAN") for s in ("headwear", "top", "bottom", "footwear",
@@ -169,14 +155,16 @@ def build():
          wid("num_colors", "INT", True), wid("harmony_type", "COMBO", True),
          wid("palette_style", "COMBO", True), wid("vibrancy", "FLOAT", True),
          wid("contrast", "FLOAT", True), wid("warmth", "FLOAT", True),
-         wid("text_probability", "FLOAT", True)]
-    outfit = g.node("FVM_JB_OutfitBlock", (920, 360), (420, 640), inputs=out_inputs,
+         wid("text_probability", "FLOAT", True),
+         wid("outfit_set_multi", "STRING", True), wid("color_mood_multi", "STRING", True)]
+    outfit = g.node("FVM_JB_OutfitBlock", (920, 20), (420, 790), inputs=out_inputs,
                     outputs=[out("outfit_json", "STRING"), out("outfit_string", "STRING"),
                              out("palette_summary", "STRING")],
                     widgets=[FIRST_OUTFIT, 0, "randomize", "business_executive", 0.7, 0.5,
                              True, True, True, True, True, True, True,
                              0.15, "off", "everyday_muted", "sentences", "", 5, "auto", "general",
-                             0.5, 0.5, 0.5, 0.0, None, None])
+                             0.5, 0.5, 0.5, 0.0, "\n".join(OUTFIT_SETS), "\n".join(COLOR_MOODS)]
+                    + BUTTONS)
 
     stitch = g.node("FVM_JB_Stitcher", (1370, 20), (300, 220),
                     inputs=[wid("title", "STRING"), wid("output_format", "COMBO"),
@@ -194,7 +182,9 @@ def build():
     lora1 = g.node("LoraLoaderModelOnly", (1700, 130), (360, 82),
                    inputs=[sock("model", "MODEL"), wid("lora_name", "COMBO"), wid("strength_model", "FLOAT")],
                    outputs=[out("MODEL", "MODEL")],
-                   widgets=["krea2\\helper\\krea2_turbo_lora_rank_64_bf16.safetensors", 0.95])
+                   widgets=["krea2\\helper\\krea2_turbo_lora_rank_64_bf16.safetensors", 0.95],
+                   title="Turbo-LoRA (Bypass: im Checkpoint enthalten)")
+    lora1["mode"] = BYPASS
     lora2 = g.node("LoraLoaderModelOnly", (1700, 240), (360, 82),
                    inputs=[sock("model", "MODEL"), wid("lora_name", "COMBO"), wid("strength_model", "FLOAT")],
                    outputs=[out("MODEL", "MODEL")],
@@ -228,9 +218,6 @@ def build():
                   inputs=[sock("images", "IMAGE"), wid("filename_prefix", "STRING")],
                   outputs=[], widgets=["fvm_business_batch/reading"])
 
-    g.link(loc_sel, 0, loc, "location_set")
-    g.link(out_sel, 0, outfit, "outfit_set")
-    g.link(mood_sel, 0, outfit, "color_mood")
     g.link(person, 0, stitch, "input_1")
     g.link(outfit, 0, stitch, "input_2")
     g.link(loc, 0, stitch, "input_3")
