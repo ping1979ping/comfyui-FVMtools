@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a far wall of warm taupe eggshell paint behind a made queen bed | 1.0 | 0.6-1.0 | a tall window with white blinds at the far right, white baseboard, across the whole width of the image
+a far wall of warm gray paint with a tall window and gathered drapes | 0.85 | 0.6-1.0 | a wide window across the far center, beige carpet below, across the whole width of the image
+a far wall of greige paint with a walk-in closet door at the far left | 0.8 | 0.6-1.0 | a white two-panel door, white baseboard, a window at the far right
+a far wall with a tall arched-top window at the center | 0.65 | 0.5-0.9 | taupe walls at each side, white trim, a beige carpet below, across the whole width of the image
+a far wall of pale gray paint with a high tray ceiling above it | 0.7 | 0.6-1.0 | a white crown molding line, a wide window with blinds at the far center
+a far wall of soft beige paint with two matching windows | 0.7 | 0.6-1.0 | white blinds half raised, white colonial trim, across the whole width of the image
+a far wall of muted blue-gray paint behind an upholstered headboard | 0.6 | 0.6-1.0 | a window at the far left with drapes, white baseboard, across the whole width of the image
+a far wall of taupe paint with a sliding glass door to a small deck | 0.5 | 0.5-0.9 | white blinds half open, green trees beyond, a beige carpet below
+a far corner of two greige walls with a window on each side | 0.5 | 0.5-0.9 | white blinds, white baseboard, a beige carpet across the whole width of the image
+a far wall of warm gray paint with a vaulted ceiling rising above it | 0.55 | 0.6-1.0 | a tall double window with a fan-light top at the center, across the whole width of the image
+a far wall of light taupe paint with a shallow bay window at the center | 0.55 | 0.5-0.9 | white blinds, an empty cushioned window seat in front, drapes at each side
+a far wall of soft greige paint with a closed white bathroom door at the far right | 0.5 | 0.6-1.0 | a window with a valance at the far left, white baseboard, across the whole width of the image

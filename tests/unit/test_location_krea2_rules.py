@@ -38,6 +38,7 @@ KREA2_STRICT_CATEGORIES = {
     "business_event_venue",
     "business_dining_spot",
     "suburban_office_park",
+    "middleclass_family_home",
 }
 
 # Older sets rewritten to the same rules, set by set (their categories also

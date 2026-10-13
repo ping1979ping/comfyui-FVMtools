@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft morning light from the side window | 0.9 | - | -
+bright late-morning light through the drapes | 0.8 | - | -
+soft afternoon light across the table | 0.8 | - | -
+warm late-afternoon sun through the window | 0.7 | - | -
+dimmed chandelier glow in the evening | 0.8 | - | -
+warm chandelier on full at dusk | 0.6 | - | -
+early-morning gray light, chandelier off | 0.5 | - | -
+flat overcast midday light | 0.6 | - | -
+low golden sun slanting across the floor | 0.45 | - | -
+dim night light, only the buffet lamp on | 0.4 | - | -

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+recessed ceiling cans in a row far overhead | 0.85 | 0.02-0.08 | small warm points of light
+a low white drop-ceiling grid far overhead | 0.55 | 0.03-0.1 | plain white tiles
+a white painted beam along the low ceiling | 0.45 | 0.03-0.1 | flat, smooth
+a plain white wall vent far up on the back wall | 0.35 | 0.02-0.06 | white grille
+white colonial baseboard along the far wall | 0.6 | 0.03-0.1 | flat, clean paint
+a steel support column wrapped in drywall at the far side | 0.5 | 0.03-0.1 | painted beige
+a small egress window high on the far wall | 0.55 | 0.03-0.1 | white frame, soft light
+a frosted-glass ceiling fixture far overhead | 0.5 | 0.02-0.08 | white glass, warm glow
+a white two-panel door at the far left | 0.5 | 0.03-0.1 | closed, painted white
+a slim exposed duct painted white along the far ceiling | 0.35 | 0.02-0.08 | plain round metal

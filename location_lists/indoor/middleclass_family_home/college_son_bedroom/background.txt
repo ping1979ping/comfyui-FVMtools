@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a far wall of light gray painted drywall behind a full bed | 1.0 | 0.6-1.0 | white baseboard along the bottom, a window with half-closed white blinds at the far right, across the whole width of the image
+a far wall of pale blue painted drywall with taped-up abstract prints | 0.85 | 0.6-1.0 | white baseboard below, a few felt pennants in plain colors, across the whole width of the image
+a far window wall with white blinds half closed across the whole width of the image | 0.8 | 0.6-1.0 | gray drywall at each side, soft side light through the slats
+a far wall of light gray drywall with a desk set against it | 0.75 | 0.6-1.0 | a dark computer tower with a purple-blue glow at the far left, across the whole width of the image
+a far wall of pale blue drywall with an open closet at the far right | 0.7 | 0.6-1.0 | bi-fold doors pushed open, clothes overflowing, across the whole width of the image
+a far corner of two gray painted walls with a white baseboard | 0.6 | 0.5-0.9 | a navy duffel bag and sports gear in the corner, beige carpet below
+a far wall of light blue drywall with a white 2-panel door at the far left | 0.6 | 0.6-1.0 | brass knob, white trim, a plain wall across the whole width of the image
+a far wall of gray drywall with string lights taped along the top | 0.65 | 0.6-1.0 | warm small bulbs, a plain wall across the whole width of the image
+a far wall of pale gray drywall with a low plastic storage drawer unit | 0.55 | 0.5-0.9 | white baseboard, abstract art taped above, across the whole width of the image
+a far wall of pale blue drywall with a sliding closet door at the far right | 0.55 | 0.6-1.0 | plain white panels, a plain wall across the whole width of the image
+a far wall of light gray drywall lit by purple-blue LED strips | 0.5 | 0.6-1.0 | a soft glow along the baseboard and the desk, across the whole width of the image
+a far wall of pale blue drywall with a twin window and white blinds | 0.5 | 0.6-1.0 | two windows side by side, beige carpet below, across the whole width of the image

@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+flat gray overcast light through the blinds | 0.9 | - | -
+clear blue sky beyond the window | 0.8 | - | -
+bright summer sun on the carpet | 0.6 | - | -
+soft rain streaking the window glass | 0.5 | - | -
+snow-bright light through the blinds | 0.5 | - | -
+crisp autumn light across the carpet | 0.6 | - | -
+bare maple branches beyond the window | 0.5 | - | -
+pale morning fog beyond the glass | 0.4 | - | -
+thin high cloud and soft shadows | 0.6 | - | -
+still warm air with even daylight | 0.7 | - | -
+green spring leaves beyond the window | 0.5 | - | -

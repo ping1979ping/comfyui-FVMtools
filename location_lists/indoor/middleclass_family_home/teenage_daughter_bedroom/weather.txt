@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+still air with steady daylight beyond the curtains | 0.9 | - | -
+gray overcast sky in the window | 0.8 | - | -
+clear blue sky in the window | 0.7 | - | -
+light rain on the window glass | 0.5 | - | -
+bright snow light through the curtains | 0.45 | - | -
+warm summer sun across the far wall | 0.6 | - | -
+crisp autumn light on the carpet | 0.6 | - | -
+thin high cloud and soft shadows | 0.55 | - | -
+fog-pale light beyond the glass | 0.4 | - | -
+bare tree branches beyond the window | 0.45 | - | -

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+warm recessed lights, no daylight | 0.9 | - | -
+soft daylight from the small window, cans on | 0.8 | - | -
+warm evening lamps and recessed cans | 0.85 | - | -
+dim table lamps with the cans on low | 0.5 | - | -
+bright cans on, a gray window | 0.6 | - | -
+late afternoon light through the slider | 0.55 | - | -
+soft morning light at the window well | 0.6 | - | -
+evening lamps only, cans off | 0.4 | - | -
+even warm ceiling light | 0.7 | - | -
+dusk blue at the small window, lamps on | 0.5 | - | -

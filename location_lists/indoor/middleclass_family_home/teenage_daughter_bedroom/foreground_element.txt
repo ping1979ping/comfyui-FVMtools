@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a low-pile beige carpet | 1.0 | 0.1-0.4 | plain matte, even pile
+a low-pile light gray carpet | 0.8 | 0.1-0.4 | plain matte, soft weave
+a plain cream low-pile carpet | 0.7 | 0.1-0.4 | matte, smooth
+a wide-plank oak-look laminate floor | 0.55 | 0.1-0.4 | matte, light grain
+a plain oatmeal low-pile carpet | 0.65 | 0.1-0.4 | soft, flat texture
+a plain pale pink low-pile carpet | 0.5 | 0.1-0.4 | matte, even color
+a plain warm gray low-pile carpet | 0.6 | 0.1-0.4 | matte, even
+a plain greige low-pile carpet | 0.6 | 0.1-0.4 | soft matte
+a light ash plank floor | 0.45 | 0.1-0.4 | matte, straight planks
+a plain ivory low-pile carpet | 0.5 | 0.1-0.4 | flat, matte

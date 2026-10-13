@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the far wall of the spare bedroom | 1.0 | 0.6-1.0 | a flat light tan painted wall across the whole width of the image, a queen bed with a plain quilt centered against it, a window with white blinds on the right
+the window wall of the spare bedroom | 0.9 | 0.6-1.0 | a window with white blinds and plain beige curtains along the far right wall, pale tan paint across the whole width of the image, a dresser on the left
+the far corner of the spare bedroom | 0.85 | 0.6-1.0 | two blue-gray painted walls meeting across the whole width of the image, a white two-panel door on the left, a closet with folded doors on the right
+the closet wall of the spare bedroom | 0.8 | 0.6-1.0 | white bifold closet doors along the far wall across the whole width of the image, beige paint above, a dresser with a small lamp on the left
+the wall behind the bed | 0.85 | 0.6-1.0 | a beige painted wall across the whole width of the image, a slightly dated wooden headboard on a queen bed, a framed abstract print above it
+the doorway end of the spare bedroom | 0.7 | 0.6-1.0 | a white two-panel door standing open along the far left wall, pale blue-gray paint across the whole width of the image, a dresser beside it
+the far wall with a corner of sewing supplies | 0.55 | 0.6-1.0 | a tan painted wall across the whole width of the image, a covered sewing machine and sealed cardboard boxes in the far left corner
+the far wall of a bedroom used for storage | 0.5 | 0.6-1.0 | a light beige wall across the whole width of the image, a treadmill and stacked sealed boxes along the far right wall
+the sloped ceiling wall of an upstairs spare bedroom | 0.45 | 0.4-0.9 | a dormer window with white blinds on the far wall, tan paint across the whole width of the image, a bed under the slope
+the side wall of the spare bedroom | 0.7 | 0.6-1.0 | a blue-gray painted wall along the whole right side of the image, a window with white blinds, a narrow dresser against it
+the far wall of the spare bedroom in muted tones | 0.6 | 0.6-1.0 | a soft greige painted wall across the whole width of the image, a plain double window with blinds in the middle, a bed on the left
+the bedroom wall with a corner desk | 0.4 | 0.4-0.9 | a pale tan wall across the whole width of the image, a small white desk in the far right corner, a bed along the left wall

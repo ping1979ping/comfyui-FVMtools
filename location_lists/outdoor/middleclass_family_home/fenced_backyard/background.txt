@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+the white vinyl privacy fence along the back of the yard | 1.0 | 0.6-1.0 | six feet tall with flat panels across the whole width of the image, a mature maple rising behind it on the left
+the brown wooden privacy fence along the far side | 0.85 | 0.6-1.0 | weathered upright boards across the whole width of the image, the gray roofs of the houses behind the fence above it
+the rear of the house with the deck | 0.8 | 0.6-1.0 | beige vinyl siding, a sliding patio door and two windows across the whole width of the image, a low gutter along the roof
+the far fence line with a row of shrubs | 0.7 | 0.6-1.0 | white vinyl panels with green arborvitae in front across the whole width of the image
+the tall oaks behind the back fence | 0.65 | 0.6-1.0 | thick trunks and heavy green crowns rising above the fence across the whole width of the image, a pale sky above
+the roofs of the houses behind the fence | 0.6 | 0.6-1.0 | gray asphalt shingle roofs and chimneys above a brown fence across the whole width of the image
+the corner of the yard where two fences meet | 0.55 | 0.6-1.0 | white vinyl panels meeting at a right angle, a young maple in the far corner, a wide lawn in front
+the back wall of the garage and the side fence | 0.5 | 0.4-0.9 | white garage door and gray siding on the right, a brown fence on the left, across the width of the image
+the wooden fence with a closed gate | 0.5 | 0.6-1.0 | tall brown boards with a plain latched gate at the far left, across the whole width of the image
+the tan composite privacy fence along the back of the yard | 0.55 | 0.6-1.0 | smooth horizontal slats across the whole width of the image, a row of tall green trees rising behind it on the right

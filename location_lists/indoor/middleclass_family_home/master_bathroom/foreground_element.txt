@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a beige 12x12 ceramic tile floor | 1.0 | 0.1-0.4 | matte, narrow grout lines
+a warm gray 13x13 ceramic tile floor | 0.85 | 0.1-0.4 | matte, even grout
+a plain cream sheet-vinyl floor | 0.7 | 0.1-0.4 | smooth, matte
+a taupe 18x18 porcelain tile floor | 0.7 | 0.1-0.4 | matte, even
+a light greige tile floor | 0.8 | 0.1-0.4 | matte, thin grout lines
+a pale beige vinyl plank floor | 0.55 | 0.1-0.4 | matte, soft grain
+a mid-gray large-format tile floor | 0.55 | 0.1-0.4 | matte, plain
+a warm beige travertine-look tile floor | 0.5 | 0.1-0.4 | honed, even
+a plain tan ceramic tile floor | 0.5 | 0.1-0.4 | matte, even grout
+a light oak-look tile plank floor | 0.4 | 0.1-0.4 | matte, soft grain

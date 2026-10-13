@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft early-morning light through the drapes | 0.8 | - | -
+bright diffuse midmorning daylight | 0.9 | - | -
+warm morning sun along one side wall | 0.7 | - | -
+flat bright early-afternoon light | 0.8 | - | -
+soft late-afternoon light through the blinds | 0.8 | - | -
+low golden evening sun through the window | 0.6 | - | -
+warm bedside lamps at dusk, window dim blue | 0.7 | - | -
+night, two warm 2700K bedside lamps on | 0.7 | - | -
+pale gray dawn at the window, lamps off | 0.5 | - | -
+bright noon light, drapes pulled aside | 0.6 | - | -

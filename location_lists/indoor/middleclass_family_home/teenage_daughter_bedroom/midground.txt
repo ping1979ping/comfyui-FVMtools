@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a bed with a white wood frame and a white and gray comforter a few meters back at the center | 1.0 | 0.3-0.5 | many soft pillows, plush toys at the head
+a white dresser a few meters back on the right | 0.8 | 0.2-0.4 | six drawers, a few small baskets on top
+a white desk with a closed laptop a few meters back on the left | 0.8 | 0.2-0.5 | clear top, an empty chair pushed in
+a vanity table with an empty stool pushed in, a few meters back on the right | 0.6 | 0.2-0.4 | white, a few small jars on top
+a papasan chair, empty, a few meters back on the left | 0.5 | 0.2-0.4 | cream cushion, rattan frame
+a bean bag chair, empty, a few meters back on the right | 0.5 | 0.2-0.4 | pale pink fabric, slightly slumped
+a gray wood nightstand a few meters back beside the bed | 0.6 | 0.15-0.35 | a small lamp on top
+a wooden chair, empty, with clothes draped over it a few meters back on the left | 0.4 | 0.15-0.35 | empty seat, pastel sweaters
+a white bookshelf a few meters back on the right | 0.55 | 0.2-0.4 | stacked books, plain covers, a few baskets
+a tall white wardrobe a few meters back on the left | 0.5 | 0.2-0.4 | closed doors, brass knobs
+a white storage bench, empty, at the foot of the bed a few meters back | 0.45 | 0.15-0.35 | a folded gray blanket on top
+a pale round floor cushion, empty, a few meters back on the left | 0.3 | 0.15-0.35 | plain pastel, slightly flat

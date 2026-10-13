@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning sun in the nook | 0.9 | - | -
+soft late-morning window light | 0.85 | - | -
+bright midday daylight, lights off | 0.7 | - | -
+warm afternoon window light | 0.85 | - | -
+low golden light across the counters | 0.6 | - | -
+warm evening recessed lights and pendants | 0.8 | - | -
+dusk blue at the window, ceiling lights on | 0.6 | - | -
+soft overcast daylight with the cans on | 0.6 | - | -
+early morning gray light, pendants on | 0.5 | - | -
+late afternoon light across the island | 0.5 | - | -

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a brass chandelier with glass shades far overhead at the center | 0.9 | 0.03-0.1 | warm bulbs, a bronze finish
+a white dado rail along the far wall | 0.7 | 0.03-0.1 | smooth painted wood
+white painted wainscot panels along the far wall | 0.65 | 0.03-0.1 | flat raised panels
+a white colonial baseboard along the far wall | 0.6 | 0.03-0.1 | plain painted wood
+a slim white crown molding along the top of the far wall | 0.5 | 0.03-0.1 | smooth paint
+a valance across the top of the far window | 0.5 | 0.03-0.1 | plain tan fabric
+gold drapes at the far window | 0.45 | 0.03-0.1 | plain heavy cloth, tied back
+a white two-panel door at the far left | 0.45 | 0.03-0.1 | closed, brass knob
+a white window casing around the far window | 0.5 | 0.03-0.1 | smooth, painted
+a slim flush ceiling vent far overhead | 0.3 | 0.02-0.06 | white grille

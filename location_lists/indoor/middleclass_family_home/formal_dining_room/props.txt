@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small silk-flower centerpiece on a distant table | 0.7 | 0.02-0.06 | muted pink and green
+a slim table runner down a distant table | 0.55 | 0.02-0.06 | plain burgundy cloth
+a small pair of brass candle holders on the far buffet | 0.55 | 0.02-0.05 | white candles, unlit
+a compact stack of white china plates in the far cabinet | 0.5 | 0.02-0.06 | plain glaze
+a few small wine glasses on a far cabinet shelf | 0.45 | 0.02-0.05 | clear stems
+a small covered serving dish on the far buffet | 0.4 | 0.02-0.05 | white china
+a low ceramic vase on the far hutch | 0.45 | 0.02-0.05 | cream glaze
+a small potted silk plant in the far corner | 0.4 | 0.02-0.06 | green leaves
+a small framed abstract landscape print on the far wall | 0.5 | 0.02-0.06 | muted tones
+a slim brass lamp with a beige shade on the far buffet | 0.45 | 0.02-0.05 | warm glow
+a compact set of placemats stacked on a distant sideboard | 0.35 | 0.02-0.05 | woven, plain
+a small glass bowl at the far end of the buffet | 0.4 | 0.02-0.05 | clear, empty
+a small wooden candle tray on a far shelf | 0.35 | 0.01-0.04 | dark wood

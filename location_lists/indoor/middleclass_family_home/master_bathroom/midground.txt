@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a drop-in soaking tub with a beige tile deck a few meters back at the center | 1.0 | 0.3-0.5 | white acrylic, clear deck, a window above it
+a double vanity with an oak cabinet a few meters back on the left | 0.8 | 0.3-0.5 | cultured marble top, two undermount sinks, nickel faucets
+a walk-in shower with a glass door a few meters back on the right | 0.75 | 0.3-0.5 | 12x24 tile inside, door closed, chrome handle
+a white water-closet door a few meters back on the right | 0.55 | 0.2-0.4 | closed, two panels, brushed nickel knob
+a tall white linen cabinet a few meters back on the left | 0.5 | 0.2-0.4 | closed doors, brushed nickel knobs
+a white double vanity a few meters back along the left wall | 0.65 | 0.3-0.5 | granite top, two sinks, a vanity light bar above
+an empty wooden stool a few meters back beside the tub | 0.4 | 0.15-0.3 | pale oak, clear seat
+a white toilet inside an open water closet a few meters back on the right | 0.35 | 0.15-0.3 | lid closed, plain tile behind
+a wide walk-in shower a few meters back at the center | 0.55 | 0.3-0.5 | glass panel, beige tile, a chrome shower head
+a built-in tub surround a few meters back at the center | 0.5 | 0.3-0.5 | beige tile, white tub, a nickel tub faucet
+a single wide vanity a few meters back on the left | 0.4 | 0.3-0.5 | white cabinet, one sink, clear top
+a closed wicker hamper a few meters back on the right | 0.35 | 0.15-0.3 | woven, lid shut, a clear tile floor around it

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear warm day with a light breeze | 1.0 | - | -
+partly cloudy sky with soft shade | 0.8 | - | -
+hazy humid summer afternoon | 0.6 | - | -
+flat gray overcast sky | 0.7 | - | -
+light rain with damp boards and wet grass | 0.5 | - | -
+crisp clear fall day with a pale blue sky | 0.6 | - | -
+cold gray late autumn day with bare trees | 0.45 | - | -
+first light snow dusting the grass | 0.4 | - | -
+fresh spring morning with dew on the grass | 0.55 | - | -
+warm bright morning with a clear sky | 0.7 | - | -

@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a far wall of tan paint above a white dado rail and painted wainscot | 1.0 | 0.6-1.0 | a wide window with drapes at the center, across the whole width of the image
+a far wall of sage green paint above white wainscot | 0.85 | 0.6-1.0 | two windows with valances, a white dado rail across the whole width of the image
+a far wall of burgundy paint above a white dado rail | 0.75 | 0.6-1.0 | white wainscot below, a tall window with drapes at the far right
+a far wall with a cherry china cabinet at the center | 0.8 | 0.6-1.0 | glass doors, tan upper walls, white wainscot, across the whole width of the image
+a far wall of warm tan paint with a wide bay window | 0.7 | 0.5-0.9 | a valance, white blinds, white wainscot below, a hutch at the far left
+a far wall of greige paint with a cased opening to the kitchen at the far right | 0.6 | 0.5-0.9 | white trim, white dado rail, tan upper wall
+a far wall of beige paint with a window at the center and a dark buffet below | 0.7 | 0.6-1.0 | gold drapes, white dado rail across the whole width of the image
+a far wall of light sage paint with a sliding door to a deck at the far left | 0.55 | 0.6-1.0 | a white dado rail, wainscot below, drapes at the far right
+a far wall of dusty tan paint with picture-frame molding below the rail | 0.5 | 0.6-1.0 | white molding boxes, a window with drapes at the center
+a far wall of golden tan paint with a window at each side of a hutch | 0.55 | 0.6-1.0 | white wainscot, a white dado rail across the whole width of the image
+a far wall of muted green paint with white wainscot | 0.5 | 0.6-1.0 | a plain window with a valance at the center, across the whole width of the image
+a far wall with a wide archway to the living room | 0.45 | 0.4-0.9 | white trim, tan walls above a white dado rail, a lit room beyond

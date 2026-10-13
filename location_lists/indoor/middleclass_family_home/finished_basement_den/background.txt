@@ -1,0 +1,13 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a far wall of painted beige drywall with a small egress window high at the center | 1.0 | 0.6-1.0 | across the whole width of the image, a low ceiling above
+a far wall with a wide walkout sliding glass door at the far right | 0.75 | 0.5-0.9 | gray daylight beyond, beige drywall across the rest of the wall
+a far wall of painted gray drywall with a white baseboard | 0.85 | 0.6-1.0 | a plain white two-panel door at the far left, across the whole width of the image
+a far wall with a small wet bar and a small refrigerator below | 0.7 | 0.5-0.9 | oak-look cabinets, a laminate counter, a stainless sink at the center
+a far wall of painted tan drywall with two wrapped support columns | 0.7 | 0.6-1.0 | a low drop ceiling above, across the whole width of the image
+a far wall with a dark flat television on a low stand at the center | 0.8 | 0.5-0.9 | beige drywall around it, across the whole width of the image
+a far wall with a storage door and shelving beyond a half wall | 0.55 | 0.4-0.9 | white painted half wall, a plain door at the far left
+a far wall of painted blue-gray drywall with a recessed window well | 0.6 | 0.6-1.0 | a small window high at the far right, across the whole width of the image
+a far wall of white drywall with a built-in cabinet unit | 0.55 | 0.5-0.9 | oak-look doors, a clear top, across the whole width of the image
+a far wall with a gas fireplace insert and a plain white mantel | 0.45 | 0.4-0.9 | beige drywall, a low hearth, a low ceiling above

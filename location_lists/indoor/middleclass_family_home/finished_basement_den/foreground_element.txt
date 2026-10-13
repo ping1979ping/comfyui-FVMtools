@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a plain beige low-pile carpet | 1.0 | 0.1-0.4 | matte, even pile
+a plain gray low-pile carpet | 0.85 | 0.1-0.4 | matte, even pile
+a wide oak-look vinyl plank floor | 0.8 | 0.1-0.4 | matte, soft grain
+a plain tan berber carpet | 0.6 | 0.1-0.4 | matte, short loops
+a plain gray vinyl plank floor | 0.6 | 0.1-0.4 | matte, even
+a plain medium brown low-pile carpet | 0.55 | 0.1-0.4 | matte, even pile
+a plain beige ceramic tile floor | 0.4 | 0.1-0.4 | matte, even grout
+a plain oatmeal low-pile carpet | 0.6 | 0.1-0.4 | matte, soft and even
+a plain light brown plank floor | 0.5 | 0.1-0.4 | matte, even grain
+a wide gray-brown plank floor | 0.5 | 0.1-0.4 | matte, soft grain
+a plain charcoal low-pile carpet | 0.4 | 0.1-0.4 | matte, even pile
+a plain cream low-pile carpet | 0.5 | 0.1-0.4 | matte, even pile

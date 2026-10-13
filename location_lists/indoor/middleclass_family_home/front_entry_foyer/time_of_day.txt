@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+diffuse morning light through the sidelights | 1.0 | - | -
+bright mid-morning light through the front door glass | 0.85 | - | -
+soft midday light from the transom | 0.8 | - | -
+bright afternoon light across the floor | 0.8 | - | -
+warm late-afternoon light through the sidelights | 0.8 | - | -
+evening with the chandelier glowing | 0.7 | - | -
+dusk with the porch light glowing outside | 0.55 | - | -
+early morning gray light through the sidelights | 0.5 | - | -
+soft late-morning light on the stair runner | 0.5 | - | -
+gentle gray light before sunrise | 0.35 | - | -

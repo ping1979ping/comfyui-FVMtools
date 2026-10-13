@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a kitchen island with a granite top a few meters back at the center | 1.0 | 0.3-0.5 | clear surface, three empty wood stools pushed in along one side
+a round oak breakfast table a few meters back on the left | 0.8 | 0.3-0.5 | empty, four empty chairs pushed in, clear top
+a peninsula counter a few meters back on the right | 0.7 | 0.3-0.5 | quartz top, two empty stools pushed in
+a stainless dishwasher beside the sink a few meters back at the center | 0.5 | 0.2-0.4 | closed door, oak cabinets at each side
+a stainless French-door refrigerator a few meters back on the right | 0.6 | 0.2-0.4 | closed, plain stainless doors
+a rectangular dining table a few meters back on the left | 0.6 | 0.3-0.5 | empty, six empty chairs pushed in, bare wood top
+a pantry door a few meters back on the right | 0.45 | 0.2-0.4 | white two-panel, closed
+a stainless range with a microwave above a few meters back at the center | 0.55 | 0.2-0.4 | clean cooktop, closed oven door
+a white island with an overhang a few meters back on the left | 0.6 | 0.3-0.5 | white quartz top, empty stools pushed in beneath
+a wide doorway to the dining room a few meters back on the right | 0.45 | 0.2-0.4 | white trim, soft light beyond
+a built-in desk nook with oak cabinets a few meters back on the left | 0.4 | 0.2-0.4 | clear laminate top, empty chair pushed in
+a bay window with a bench seat a few meters back on the left | 0.4 | 0.2-0.4 | empty, plain beige cushion

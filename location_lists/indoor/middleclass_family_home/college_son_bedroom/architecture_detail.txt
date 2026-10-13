@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a plain white colonial baseboard along the far wall | 0.8 | 0.03-0.1 | flat paint, slim profile
+a white 2-panel door at the far left | 0.6 | 0.03-0.1 | closed, brass knob
+white blinds half closed on the far window | 0.75 | 0.03-0.1 | thin slats, soft side light
+a flat white ceiling fan far overhead | 0.5 | 0.03-0.1 | four plain blades, light kit
+a white window frame along the far wall | 0.55 | 0.03-0.1 | plain trim, slim sill
+a flush ceiling light far overhead at the center | 0.5 | 0.02-0.08 | white frosted dome
+a small white vent grille low on the far wall | 0.35 | 0.02-0.06 | plain plastic
+a white closet door track across the far right | 0.4 | 0.03-0.1 | bi-fold, plain panels
+a white outlet plate low on the far wall | 0.35 | 0.01-0.04 | with a charger cable plugged in
+a thin strip of LED light along the far baseboard | 0.45 | 0.02-0.06 | soft purple-blue glow

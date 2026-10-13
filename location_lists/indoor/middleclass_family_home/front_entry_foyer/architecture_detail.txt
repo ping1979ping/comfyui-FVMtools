@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a brass chandelier with frosted glass high above the hall | 0.8 | 0.02-0.08 | warm glow, high up
+a white spindle railing along the far stairs | 0.7 | 0.02-0.08 | square balusters, oak handrail
+a small white light switch on the far wall | 0.4 | 0.02-0.06 | plain plate
+white crown molding along the top of the far wall | 0.6 | 0.02-0.08 | smooth, straight
+a small round thermostat on the far wall | 0.35 | 0.02-0.06 | plain beige
+a plain white baseboard along the far wall | 0.55 | 0.02-0.08 | flat, even
+a small frosted glass panel in the far sidelight | 0.4 | 0.02-0.06 | pale, diffuse
+a slim brass door handle on the far front door | 0.5 | 0.02-0.06 | polished
+a small white smoke detector on the far ceiling | 0.3 | 0.02-0.05 | round, plain
+a slim white door casing around the far closet | 0.45 | 0.02-0.08 | flat trim

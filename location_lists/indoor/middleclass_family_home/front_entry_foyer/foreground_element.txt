@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a plain oak-look laminate floor | 1.0 | 0.1-0.4 | matte, warm brown, even
+a plain beige ceramic tile floor | 0.85 | 0.1-0.4 | matte, thin grout lines, even
+a plain light oak plank floor | 0.8 | 0.1-0.4 | satin, even grain
+a plain beige carpet runner on oak floor | 0.55 | 0.1-0.4 | low pile, matte
+a plain dark brown hardwood floor | 0.6 | 0.1-0.4 | satin, even
+a plain gray porcelain tile floor | 0.5 | 0.1-0.4 | matte, thin grout lines
+a plain tan wall-to-wall carpet | 0.4 | 0.1-0.4 | low pile, even
+a plain tan area rug on oak floor | 0.4 | 0.1-0.4 | low pile, matte
+a plain slate-look tile floor | 0.4 | 0.1-0.4 | matte, even
+a plain cream vinyl plank floor | 0.4 | 0.1-0.4 | matte, even

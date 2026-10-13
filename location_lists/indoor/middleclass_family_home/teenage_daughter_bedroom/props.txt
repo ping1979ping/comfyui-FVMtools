@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small plush toy on the far end of the bed | 0.7 | 0.02-0.06 | soft, pastel fabric
+a small stack of books at the far end of the desk | 0.5 | 0.02-0.06 | plain covers, no titles
+a slim water bottle at the far end of the desk | 0.55 | 0.01-0.04 | pale pink, no print
+a compact hair dryer at the far end of the vanity | 0.45 | 0.02-0.05 | white plastic
+a small curling iron at the far end of the vanity | 0.4 | 0.01-0.04 | black barrel
+a small pastel throw pillow at the far end of the bed | 0.6 | 0.02-0.06 | lavender knit
+a tiny string of fairy lights draped on the far shelf | 0.55 | 0.01-0.04 | warm small bulbs
+a small clay pot with a leafy plant on a distant shelf | 0.5 | 0.02-0.06 | green leaves
+a small gray cardigan over the far chair back | 0.4 | 0.02-0.06 | soft knit
+a small white lamp at the far end of the nightstand | 0.5 | 0.02-0.06 | linen shade
+a compact closed laptop at the far end of the desk | 0.55 | 0.02-0.06 | silver, closed lid
+a small basket of hair ties at the far end of the dresser | 0.35 | 0.01-0.04 | woven, pastel
+a small candle jar on a distant shelf | 0.35 | 0.01-0.04 | plain white glass, unlit

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+pale early-morning light from one window | 1.0 | - | -
+soft mid-morning daylight through the blinds | 0.95 | - | -
+flat even early-afternoon light | 0.85 | - | -
+soft late-afternoon light from the window | 0.8 | - | -
+dim evening with one bedside lamp on | 0.8 | - | -
+warm dusk light with the bedside lamp on | 0.6 | - | -
+bright midday light through white blinds | 0.7 | - | -
+quiet gray morning light at the window | 0.7 | - | -
+overhead ceiling light on in the evening | 0.5 | - | -
+low golden light through the blinds | 0.45 | - | -

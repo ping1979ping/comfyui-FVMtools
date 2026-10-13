@@ -1,0 +1,15 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a far wall of greige eggshell paint with a white colonial baseboard | 1.0 | 0.6-1.0 | a gas fireplace with a white mantel at the center, across the whole width of the image
+a far wall of tan paint with a wide white-framed window at the center | 0.9 | 0.6-1.0 | white faux-wood blinds half open, tab-top curtains at each side, across the whole width of the image
+a far wall with a sliding glass door to a wooden deck | 0.85 | 0.6-1.0 | white vertical blinds drawn back, beige curtains at each side, across the whole width of the image
+a far wall of warm beige paint with a fieldstone fireplace surround at the far left | 0.8 | 0.6-1.0 | a plain oak mantel above it, a window with white blinds at the far right
+a far wall of pale gray-tan paint with a built-in white bookcase | 0.7 | 0.6-1.0 | wicker baskets on the shelves, a doorway at the far right, across the whole width of the image
+a far wall of soft taupe paint with two tall windows | 0.7 | 0.6-1.0 | white blinds, a white two-panel door at the far left, across the whole width of the image
+a far wall of light tan paint with a tile-surround gas fireplace at the far right | 0.65 | 0.6-1.0 | a white mantel, a large window with blinds at the far left
+a far wall of warm greige paint with a wide archway to the dining room | 0.55 | 0.4-0.9 | white trim around the opening, an oak-look floor continuing beyond
+a far wall of tan paint with a bay window at the center | 0.55 | 0.5-0.9 | a cushioned bay nook, white blinds, beige curtains at each side
+a far wall of cream paint with a stone fireplace flanked by two windows | 0.6 | 0.6-1.0 | white blinds, a dark wooden mantel, across the whole width of the image
+a far wall of light brown paint with white wainscot below | 0.45 | 0.6-1.0 | a window with blinds at the center, a white baseboard along the whole wall
+a far wall of sage-beige paint with a sliding door at the far left | 0.5 | 0.6-1.0 | a plain white window at the far right, simple beige curtains

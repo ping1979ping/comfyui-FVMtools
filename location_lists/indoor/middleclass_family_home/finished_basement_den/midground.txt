@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+an old sectional sofa a few meters back on the left | 1.0 | 0.3-0.5 | empty, worn tan fabric, a folded blanket on one arm
+a pool table a few meters back at the center | 0.7 | 0.3-0.5 | empty, green felt, cues racked on the wall behind
+a ping-pong table a few meters back at the center | 0.55 | 0.3-0.5 | empty, folded half up, a plain green top
+a compact bar counter a few meters back on the right | 0.55 | 0.2-0.4 | laminate top, two empty stools pushed in
+a dark flat television on a low stand a few meters back on the right | 0.7 | 0.2-0.4 | switched off, a game console beneath
+a worn recliner a few meters back on the right | 0.5 | 0.2-0.4 | empty, brown fabric, a plain side table beside it
+a round game table a few meters back on the left | 0.45 | 0.2-0.4 | empty, four empty chairs pushed in, a stack of board games on top
+a drywall-wrapped support column a few meters back at the center | 0.5 | 0.15-0.3 | painted beige, plain and square
+a plain white door to the storage room a few meters back on the left | 0.45 | 0.2-0.4 | closed, white two-panel
+a tan loveseat a few meters back on the right | 0.5 | 0.3-0.5 | empty, a throw pillow in each corner
+a low bookcase a few meters back on the left | 0.4 | 0.2-0.4 | oak-look, board games and totes stacked inside
+a daybed couch a few meters back along the far wall | 0.35 | 0.3-0.5 | empty, plain gray cushions

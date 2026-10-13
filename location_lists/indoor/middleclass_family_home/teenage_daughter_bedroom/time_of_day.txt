@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+pale morning light through sheer curtains | 0.9 | - | -
+bright afternoon light through the window | 0.85 | - | -
+soft overcast late-morning light | 0.7 | - | -
+warm late-afternoon sun slanting across the carpet | 0.7 | - | -
+night with string lights and a pastel LED strip | 0.8 | - | -
+early morning pale gray light, lamps off | 0.55 | - | -
+dim evening with only the bedside lamp on | 0.55 | - | -
+dusk blue at the window, the ceiling light on | 0.5 | - | -
+night with only the fairy lights glowing | 0.5 | - | -
+soft diffused white light, blinds fully open | 0.5 | - | -

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a full bed with a navy comforter a bit unmade, a few meters back at the center | 1.0 | 0.3-0.5 | rumpled sheets, two flat pillows, gray wall behind
+a wide desk with a dark gaming PC tower a few meters back on the left | 0.9 | 0.2-0.5 | purple-blue RGB glow, an empty gaming chair pushed in
+a black gaming chair, empty, a few meters back on the left | 0.6 | 0.2-0.4 | pushed in at the desk, red and black fabric
+a plastic storage drawer tower a few meters back on the right | 0.6 | 0.2-0.4 | clear drawers with folded clothes inside, closed
+an overflowing laundry basket a few meters back on the right | 0.55 | 0.2-0.4 | gray plastic, clothes piled over the rim
+a compact black refrigerator on a low stand a few meters back on the right | 0.5 | 0.2-0.4 | closed door, a coffee maker beside it
+an open closet with overflowing hangers a few meters back on the left | 0.65 | 0.3-0.5 | doors folded back, jackets and hoodies packed in
+a navy duffel bag with sports gear a few meters back on the right | 0.5 | 0.2-0.4 | a hockey stick leaning beside it, zipped shut
+a low dresser with the top drawer half open a few meters back on the left | 0.5 | 0.2-0.4 | old wood, a cap resting on top
+a pair of cardboard crates a few meters back on the right | 0.4 | 0.15-0.35 | stacked dorm leftovers, plain brown
+a wide white desk with an empty chair set in, a few meters back on the right | 0.55 | 0.2-0.5 | clear top, a lamp at the far end
+a bean bag chair, empty, in the corner a few meters back on the left | 0.4 | 0.2-0.4 | dark gray fabric, slightly slumped

@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a made queen bed with an espresso headboard a few meters back at the center | 1.0 | 0.3-0.5 | gray duvet, five pillows, nothing on the floor around it
+a made king bed with an upholstered gray headboard a few meters back at the center | 0.8 | 0.3-0.5 | white duvet, a folded navy throw across the foot
+a matching oak dresser a few meters back on the left | 0.7 | 0.2-0.4 | six closed drawers, brushed nickel pulls, a clear top
+a pair of empty nightstands a few meters back at each side of the bed | 0.7 | 0.2-0.4 | oak finish, a fabric-shade lamp on each
+an empty upholstered armchair a few meters back in the corner on the right | 0.6 | 0.2-0.4 | beige fabric, a small side table beside it
+an empty cushioned bench a few meters back at the foot of the bed | 0.6 | 0.2-0.4 | gray fabric, a folded throw on one end
+a tall chest of drawers a few meters back on the right | 0.55 | 0.2-0.4 | espresso finish, closed drawers, a clear top
+a walk-in closet doorway a few meters back on the left | 0.5 | 0.2-0.4 | white doors open, hanging clothes in soft light
+an empty reading chair with an ottoman a few meters back near the window | 0.5 | 0.2-0.4 | beige fabric, a floor lamp beside it
+a made bed with a tufted headboard a few meters back at the center | 0.55 | 0.3-0.5 | white and gray bedding, two nightstands at the sides
+a low cedar chest a few meters back at the foot of the bed | 0.45 | 0.2-0.4 | closed lid, dark wood, clear top
+a small empty sitting area a few meters back near the window | 0.45 | 0.3-0.5 | two empty armchairs, a round side table between them

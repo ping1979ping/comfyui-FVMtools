@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a covered gas grill a few meters back on the right | 0.9 | 0.2-0.5 | gray vinyl cover over a black cart, nothing cooking
+a green resin storage shed a few meters back on the left | 0.8 | 0.2-0.5 | closed double doors, a shallow gray roof
+an old A-frame swing set a few meters back on the left | 0.8 | 0.2-0.5 | faded green metal legs, two empty chain swings hanging still
+a square wooden sandbox a few meters back on the right | 0.6 | 0.2-0.5 | gray boards with pale sand, otherwise empty
+a round patio table with a closed umbrella a few meters back | 0.8 | 0.2-0.5 | dark metal top, four empty chairs pushed in around it
+two empty plastic chairs stacked a few meters back on the left | 0.6 | 0.2-0.5 | white resin, one stacked on the other
+a low square fire pit a few meters back in the middle | 0.6 | 0.2-0.5 | gray concrete blocks, cold ashes, two empty wooden chairs beside it
+a paver patio with a covered grill a few meters back on the right | 0.7 | 0.2-0.5 | tan concrete pavers, a dark cover on the grill, empty
+a large maple tree standing a few meters back on the left | 0.7 | 0.2-0.5 | thick gray trunk, a wide canopy, dappled shade underneath
+a hose reel on the fence a few meters back on the right | 0.45 | 0.2-0.5 | green plastic reel, a coiled hose
+a wooden deck with a railing a few meters back across the width | 0.8 | 0.2-0.5 | pressure-treated boards, white balusters, three steps down to the lawn
+a pair of empty wooden Adirondack chairs a few meters back on the right | 0.55 | 0.2-0.5 | weathered gray paint, facing the fence
+a row of raised garden beds along the fence a few meters back | 0.5 | 0.2-0.5 | low wooden frames with green vegetable plants
+a wooden bench under the maple a few meters back, empty | 0.45 | 0.2-0.5 | gray planks, plain and unoccupied

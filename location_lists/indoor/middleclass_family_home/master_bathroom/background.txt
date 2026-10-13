@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a far wall of beige ceramic tile behind a drop-in soaking tub | 1.0 | 0.6-1.0 | a window with privacy glass above the tub at the far center, across the whole width of the image
+a far wall of a long double oak vanity with a cultured marble top | 0.9 | 0.6-1.0 | two undermount sinks, brushed nickel faucets, greige paint above, across the whole width of the image
+a far wall of a walk-in shower with a clear glass door | 0.8 | 0.5-0.9 | 12x24 beige tile inside, a frosted window at the far right, greige paint to the left
+a far wall of greige paint with a white double vanity at the center | 0.75 | 0.6-1.0 | a granite top, two sinks, nickel faucets, white baseboard, across the whole width of the image
+a far corner with a tub deck of beige tile under a wide window | 0.7 | 0.5-0.9 | white blinds half raised, greige walls, a tub across the far width
+a far wall of soft taupe paint with a white water-closet door at the far right | 0.6 | 0.6-1.0 | a double vanity at the far left, a beige tile floor below
+a far wall of light beige tile wainscot with taupe paint above | 0.6 | 0.6-1.0 | a white soaking tub at the center, a frosted window above, across the whole width of the image
+a far wall of a white double vanity with a granite top under a wide frosted window | 0.6 | 0.6-1.0 | a brushed nickel towel bar at the far left, across the whole width of the image
+a far wall of a walk-in shower enclosure with a frameless glass panel | 0.5 | 0.4-0.9 | gray 12x24 tile, a built-in niche, a vanity at the far left
+a far wall of greige paint with a tub under a window and a linen cabinet at the far right | 0.55 | 0.6-1.0 | white cabinet doors, beige tile deck, across the whole width of the image
+a far wall of warm gray paint with a long white vanity | 0.5 | 0.6-1.0 | cultured marble top, a vanity light bar with frosted bulbs, across the whole width of the image

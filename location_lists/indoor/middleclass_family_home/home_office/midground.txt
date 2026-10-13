@@ -1,0 +1,15 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+an L-shaped oak laminate desk a few meters back | 1.0 | 0.2-0.5 | a clear desktop, a black mesh chair empty and pushed in
+an empty black mesh office chair a few meters back at the desk | 0.85 | 0.2-0.5 | pushed in, ergonomic armrests, a gray base
+a white laminate desk a few meters back on the right | 0.8 | 0.2-0.5 | a closed laptop on the surface, an empty chair pushed in
+a two-drawer metal filing cabinet a few meters back on the left | 0.7 | 0.2-0.5 | beige and closed, a small plant on top
+a tall bookcase a few meters back on the left | 0.75 | 0.2-0.5 | pale oak finish, plain storage boxes and binders on the shelves
+an inkjet printer on a wooden stand a few meters back on the right | 0.65 | 0.2-0.5 | a closed lid, a paper tray holding a blank stack
+a fold-out sofa a few meters back along the wall | 0.5 | 0.2-0.5 | empty, closed and folded, a plain gray cushion
+a low two-shelf cart a few meters back | 0.45 | 0.2-0.5 | plain storage bins, a printer paper box
+an empty desk chair a few meters back in the corner | 0.4 | 0.2-0.5 | pushed in against a small side desk, plain gray fabric
+a corner desk with a lamp a few meters back on the left | 0.6 | 0.2-0.5 | oak laminate, a switched off desk lamp, a clear surface
+a wide oak desk with a hutch a few meters back | 0.55 | 0.2-0.5 | open shelves above, an empty chair pushed in
+a folding table with stacked boxes a few meters back on the right | 0.4 | 0.2-0.5 | empty and folded legs, sealed cardboard boxes, plain and closed

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft morning side light through half-closed blinds | 0.9 | - | -
+gray overcast afternoon light through the window | 0.85 | - | -
+bright midday light with the blinds half open | 0.7 | - | -
+warm late-afternoon sun slanting across the carpet | 0.7 | - | -
+night with purple-blue glow and a warm desk lamp | 0.8 | - | -
+early morning pale light, the ceiling light off | 0.6 | - | -
+dim evening with only the desk lamp on | 0.55 | - | -
+dusk blue at the window, the ceiling light on | 0.5 | - | -
+night with only the string lights and LED strip on | 0.5 | - | -
+soft diffused white light, blinds fully open | 0.5 | - | -

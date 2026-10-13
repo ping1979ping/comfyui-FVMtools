@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+overcast sky and soft even light through the blinds | 1.0 | - | -
+clear sky and crisp window light | 0.85 | - | -
+thin cloud and soft diffuse daylight | 0.8 | - | -
+steady rain on the window under a gray sky | 0.6 | - | -
+light snow falling outside the window | 0.5 | - | -
+bare winter branches outside in flat light | 0.45 | - | -
+green summer leaves outside in soft light | 0.55 | - | -
+autumn leaves outside in soft light | 0.5 | - | -
+light fog and pale gray light at the window | 0.45 | - | -
+warm spring daylight through the blinds | 0.55 | - | -

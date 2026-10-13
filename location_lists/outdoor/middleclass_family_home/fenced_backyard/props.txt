@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small terracotta planter on the far deck rail | 0.5 | 0.02-0.06 | green leaves in orange clay
+a small green garden hose coiled at the far fence | 0.5 | 0.02-0.06 | low loop on the ground
+a small wooden bird feeder on a far post | 0.45 | 0.02-0.06 | slim post, empty perch
+a compact charcoal bag leaning at the far end of the deck | 0.4 | 0.02-0.06 | plain dark paper
+a small metal watering can by the far steps | 0.4 | 0.02-0.06 | galvanized, long spout
+a low plastic planter in the far corner of the patio | 0.4 | 0.02-0.06 | plain gray, green leaves
+a tiny glass jar candle on a far deck table | 0.35 | 0.02-0.05 | clear, unlit
+a small plastic bucket by the far shed | 0.35 | 0.02-0.06 | plain blue, empty
+a slim garden rake leaning on the far fence | 0.35 | 0.02-0.05 | wooden handle
+a small gray flowerpot on a far step | 0.4 | 0.02-0.06 | matte clay, green sprigs
+a compact folded umbrella stand at the far end of the deck | 0.3 | 0.02-0.05 | plain metal
+a small wooden crate in the far corner of the yard | 0.35 | 0.02-0.06 | plain gray boards

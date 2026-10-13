@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a white ceiling fan with a frosted light kit far overhead | 0.8 | 0.02-0.08 | five blades, still
+a recessed tray ceiling step far overhead | 0.55 | 0.03-0.1 | white paint, shallow
+a white two-panel door at the far left | 0.55 | 0.03-0.1 | closed, brass-tone knob
+a thin white crown molding line along the far wall | 0.5 | 0.03-0.1 | flat, painted
+a white colonial baseboard along the far wall | 0.55 | 0.03-0.1 | flat, painted
+a slim white window casing at the far right | 0.5 | 0.03-0.1 | flat, painted
+a small round smoke detector on the far ceiling | 0.35 | 0.01-0.04 | white plastic
+a white vent grille low on the far wall | 0.35 | 0.01-0.04 | small, flat
+a plain white light switch plate by the far door | 0.35 | 0.01-0.04 | flat, small
+a slim white curtain rod above the far window | 0.5 | 0.02-0.06 | thin, plain
+a small flat-panel closet door at the far left | 0.4 | 0.03-0.1 | white, closed

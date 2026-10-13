@@ -1,0 +1,14 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+flat gray overcast light through the drapes | 0.9 | - | -
+clear blue sky beyond the window | 0.8 | - | -
+bright summer sun on the far wall | 0.6 | - | -
+crisp autumn light across the floor | 0.6 | - | -
+cold bright winter light off the snow outside | 0.5 | - | -
+light rain streaking the window glass | 0.5 | - | -
+thin high cloud and soft shadows | 0.6 | - | -
+still warm air with steady daylight | 0.7 | - | -
+pale fog beyond the glass | 0.4 | - | -
+bare branches beyond the window | 0.4 | - | -
+dim stormy light, chandelier on | 0.4 | - | -

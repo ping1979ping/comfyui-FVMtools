@@ -1,0 +1,17 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small closed laptop at the far end of the desk | 0.7 | 0.02-0.06 | dark silver lid, closed
+a compact black headset at the far end of the desk | 0.5 | 0.02-0.06 | matte plastic, folded
+a small pen cup at the far end of the desk | 0.55 | 0.02-0.06 | black mesh, a few plain pens
+a slim blank paper stack on a distant shelf | 0.55 | 0.02-0.06 | plain white sheets, squared
+a small desk lamp at the far end of the desk | 0.65 | 0.02-0.06 | slim black arm, round head, switched off
+a compact power strip with cables in the far corner | 0.5 | 0.02-0.06 | white plastic, tidy black cables
+a small coffee mug at the far end of the desk | 0.5 | 0.02-0.06 | plain white ceramic
+a small potted plant on a distant shelf | 0.55 | 0.02-0.06 | green leaves, a white pot
+a small wire basket on a distant shelf | 0.4 | 0.02-0.06 | black metal, empty
+a compact tissue box at the far end of the desk | 0.35 | 0.01-0.04 | plain white
+a small tape dispenser at the far end of the desk | 0.35 | 0.01-0.04 | plain black plastic
+a slim cardboard box in the far corner | 0.45 | 0.02-0.06 | sealed with tape, plain brown
+a tiny desk fan on a distant shelf | 0.3 | 0.01-0.04 | white plastic, switched off
+a small black mouse pad at the far end of the desk | 0.35 | 0.01-0.04 | plain and flat

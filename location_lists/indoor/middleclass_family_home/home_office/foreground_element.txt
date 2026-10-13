@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a plain beige low-pile carpet | 1.0 | 0.1-0.4 | smooth and even, no pattern
+a plain light gray low-pile carpet | 0.9 | 0.1-0.4 | smooth and even, no pattern
+a plain taupe low-pile carpet | 0.8 | 0.1-0.4 | smooth and even, no pattern
+a plain oatmeal low-pile carpet | 0.7 | 0.1-0.4 | smooth and even, no pattern
+a plain warm gray low-pile carpet | 0.7 | 0.1-0.4 | smooth and even, matte
+a plain tan low-pile carpet | 0.7 | 0.1-0.4 | smooth and even, no pattern
+a clear plastic mat on beige carpet | 0.4 | 0.1-0.4 | flat, matte, plain
+a wood-look laminate plank floor | 0.4 | 0.1-0.4 | pale oak tone, matte
+a plain cream low-pile carpet | 0.5 | 0.1-0.4 | smooth and even, no pattern
+a plain pale sand low-pile carpet | 0.5 | 0.1-0.4 | smooth and even, matte

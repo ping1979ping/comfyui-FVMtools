@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a frosted-glass vanity light bar over the far vanity | 0.8 | 0.02-0.08 | three frosted bulbs, warm
+a brushed nickel towel bar on the far wall | 0.6 | 0.02-0.06 | slim, plain
+a white two-panel door at the far left | 0.5 | 0.03-0.1 | closed, nickel knob
+a frosted privacy-glass window above the far tub | 0.65 | 0.03-0.1 | white frame, soft light
+a white exhaust fan grille on the far ceiling | 0.45 | 0.01-0.05 | flat, small
+a thin white colonial baseboard along the far wall | 0.45 | 0.03-0.1 | flat, painted
+a slim beige tile border band along the far wall | 0.4 | 0.03-0.1 | smooth, plain
+a recessed shower light far overhead | 0.35 | 0.01-0.04 | small white trim
+a white window trim around the far window | 0.5 | 0.03-0.1 | flat, painted
+a slim chrome grab bar inside the far shower | 0.3 | 0.01-0.04 | thin, plain
+a brushed nickel robe hook on the far door | 0.35 | 0.01-0.04 | small, plain

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear bright sky through the sidelights | 1.0 | - | -
+soft overcast light and even shadows | 0.8 | - | -
+light rain streaking the sidelight glass | 0.5 | - | -
+hazy humid light through the door glass | 0.5 | - | -
+crisp fall sunlight on the tan wall | 0.65 | - | -
+gray late autumn light through the glass | 0.45 | - | -
+cold bright light reflecting off snow outside | 0.45 | - | -
+fresh spring morning light with a green view outside | 0.55 | - | -
+bright sun low in a clear winter sky outside | 0.4 | - | -
+damp gray light through the transom | 0.4 | - | -

@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a white vinyl fence post cap far along the back fence | 0.55 | 0.02-0.08 | flat square top
+a slim white downspout at the far corner of the house | 0.5 | 0.02-0.08 | vertical aluminum tube
+a narrow window with white trim on the far house wall | 0.5 | 0.02-0.08 | closed, dark glass
+a small black wall lamp beside the far patio door | 0.45 | 0.02-0.08 | unlit fixture
+a thin white gutter along the far roofline | 0.5 | 0.02-0.08 | straight horizontal line
+a low white deck railing along the far edge of the deck | 0.55 | 0.02-0.08 | square posts, slim balusters
+a small gray vent cap on the far wall | 0.35 | 0.02-0.06 | round, matte
+a low concrete step at the far end of the patio | 0.4 | 0.02-0.08 | plain gray
+a small brown wooden gate latch on the far fence | 0.35 | 0.02-0.06 | dark metal
+a short gray post light beside the far fence | 0.35 | 0.02-0.06 | unlit, matte

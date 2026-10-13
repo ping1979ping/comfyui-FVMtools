@@ -1,0 +1,13 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a wide oak-look plank floor | 1.0 | 0.1-0.4 | matte, soft grain
+a plain beige ceramic tile floor | 0.85 | 0.1-0.4 | matte, even grout
+a warm honey oak plank floor | 0.7 | 0.1-0.4 | matte, even color
+a plain gray luxury vinyl plank floor | 0.7 | 0.1-0.4 | matte, soft grain
+a plain tan ceramic tile floor | 0.6 | 0.1-0.4 | matte and even
+a light oak-look vinyl plank floor | 0.8 | 0.1-0.4 | matte, clean grain
+a plain cream vinyl floor | 0.4 | 0.1-0.4 | matte, smooth
+a medium brown plank floor | 0.55 | 0.1-0.4 | matte, soft grain
+a plain off-white ceramic tile floor | 0.5 | 0.1-0.4 | matte, even
+a wide hickory-look plank floor | 0.5 | 0.1-0.4 | matte, even color

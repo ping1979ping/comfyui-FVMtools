@@ -1,0 +1,14 @@
+# element: background
+# format: name | probability | coverage_range | texture
+
+a far wall of honey oak cabinets with a speckled granite counter below | 1.0 | 0.6-1.0 | a window above the double sink, across the whole width of the image
+a far wall of white shaker cabinets with a gray quartz counter below | 0.95 | 0.6-1.0 | a subway tile backsplash, across the whole width of the image
+a far wall of gray shaker cabinets with a white quartz counter | 0.8 | 0.6-1.0 | stainless range at the center, a window at the far left
+a far wall with a stainless double sink under a wide window | 0.85 | 0.6-1.0 | oak cabinets at each side, a green backyard beyond the glass
+a far wall of cherry-brown cabinets with a tan granite counter | 0.7 | 0.6-1.0 | white subway tile above, across the whole width of the image
+a far wall with a tall stainless French-door refrigerator at the far right | 0.8 | 0.6-1.0 | white cabinets across the rest of the wall, a quartz counter below
+a far wall of painted drywall in warm beige above a long counter | 0.6 | 0.6-1.0 | oak cabinets below, a window at the far center
+a far breakfast nook with a bay window across the back wall | 0.7 | 0.5-0.9 | an empty round oak table in front of it, daylight across the whole width of the image
+a far wall with a stainless range and an over-range microwave at the center | 0.8 | 0.6-1.0 | oak cabinets at each side, tan tile backsplash
+a far wall of off-white cabinets with a sliding glass door at the far right | 0.65 | 0.5-0.9 | a wooden deck and lawn beyond, a counter to the left
+a far wall of two-tone cabinets in white and gray | 0.6 | 0.6-1.0 | a laminate counter, a window above the sink across the whole width of the image

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+low early morning sun with long shadows | 0.8 | - | -
+bright mid-morning sunlight | 1.0 | - | -
+soft overcast late-morning light | 0.85 | - | -
+bright midday sun with short shadows | 0.8 | - | -
+warm early-afternoon sunlight | 0.85 | - | -
+golden late-afternoon light | 0.85 | - | -
+soft evening light just after sunset | 0.5 | - | -
+even gray light of an overcast afternoon | 0.7 | - | -
+pale pink light just before sunrise | 0.4 | - | -
+warm low sun through the trees | 0.6 | - | -

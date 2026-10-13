@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+clear blue sky in the window | 0.8 | - | -
+gray overcast sky beyond the glass | 0.8 | - | -
+light rain on the window glass | 0.5 | - | -
+bright summer sun on the far counter | 0.6 | - | -
+crisp autumn light across the floor | 0.6 | - | -
+snow-bright light from the backyard | 0.5 | - | -
+thin cloud and soft shadows | 0.6 | - | -
+still air with steady daylight | 0.8 | - | -
+bare branches beyond the window | 0.4 | - | -
+pale fog beyond the glass | 0.4 | - | -

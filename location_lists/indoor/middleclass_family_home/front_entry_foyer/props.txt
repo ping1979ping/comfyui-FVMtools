@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small ceramic bowl on a distant console table | 0.6 | 0.02-0.06 | plain white, empty
+a small pair of sneakers by the far door | 0.5 | 0.02-0.06 | neat, side by side
+a small potted plant on a distant side table | 0.5 | 0.02-0.06 | green leaves in white clay
+a compact brass table lamp on a far console | 0.55 | 0.02-0.06 | cream shade, glowing
+a small plain doormat inside the far door | 0.45 | 0.02-0.06 | blank, dark coir
+a small wicker basket at the far end of the hall | 0.4 | 0.02-0.06 | woven, empty
+a small plain wreath on the far front door | 0.4 | 0.02-0.06 | green leaves, a plain bow
+a slim umbrella stand in the far corner | 0.4 | 0.02-0.06 | dark metal, plain
+a small glass vase on a distant table | 0.4 | 0.02-0.06 | clear, a few green stems
+a low shoe rack in the far corner | 0.4 | 0.02-0.06 | plain wood, a few shoes
+a small brass key dish on a distant table | 0.35 | 0.02-0.05 | empty
+a small folded blanket on the far stair step | 0.3 | 0.02-0.06 | plain gray

@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+bright morning light with window glare on the desk | 1.0 | - | -
+soft mid-morning daylight through the blinds | 0.95 | - | -
+indirect even afternoon light | 0.9 | - | -
+flat early-afternoon light, ceiling light off | 0.8 | - | -
+late-afternoon light from the window | 0.8 | - | -
+evening with the desk lamp and overhead light on | 0.8 | - | -
+dim evening with only the desk lamp on | 0.6 | - | -
+bright midday light through white blinds | 0.7 | - | -
+quiet gray morning light at the window | 0.65 | - | -
+low golden light through the blinds | 0.45 | - | -

@@ -1,0 +1,13 @@
+# element: weather
+# format: name | probability | coverage_range | texture
+
+no daylight, only the ceiling lights | 0.8 | - | -
+gray light through the small window | 0.8 | - | -
+bright sky light in the window well | 0.6 | - | -
+dim overcast light from the slider | 0.6 | - | -
+still cool air with even light | 0.8 | - | -
+rain streaks on the window well glass | 0.4 | - | -
+snow-bright light in the window well | 0.4 | - | -
+soft summer light through the small window | 0.5 | - | -
+dull autumn light at the window | 0.5 | - | -
+leaf shadows at the small window | 0.4 | - | -

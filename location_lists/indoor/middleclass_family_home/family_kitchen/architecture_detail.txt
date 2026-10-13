@@ -1,0 +1,13 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a frosted-glass ceiling fixture far overhead | 0.8 | 0.02-0.08 | white glass, warm glow
+recessed ceiling cans in a row far overhead | 0.8 | 0.02-0.08 | small warm points of light
+two slim glass pendants far above the island | 0.6 | 0.02-0.08 | clear glass, warm glow
+white colonial baseboard along the far wall | 0.6 | 0.03-0.1 | flat, clean paint
+a white two-panel door at the far left | 0.5 | 0.03-0.1 | closed, painted white
+a slim white window frame along the far wall | 0.55 | 0.03-0.1 | plain trim, flat
+a white range hood high on the far wall | 0.4 | 0.03-0.1 | plain painted finish
+a plain white ceiling vent far overhead | 0.35 | 0.02-0.06 | white grille
+a crown molding strip along the far top edge | 0.4 | 0.03-0.1 | white, smooth
+a plain white wall outlet cover at the far backsplash | 0.3 | 0.01-0.04 | flat plastic

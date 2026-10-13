@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft morning window light on the tub | 0.9 | - | -
+bright diffuse midmorning daylight | 0.8 | - | -
+flat even afternoon light through frosted glass | 0.85 | - | -
+warm late-afternoon sun through the blinds | 0.6 | - | -
+evening vanity bar light with frosted bulbs | 0.8 | - | -
+night, warm vanity light only | 0.6 | - | -
+pale gray dawn at the window, lights off | 0.5 | - | -
+bright noon light on the tile | 0.6 | - | -
+soft dusk blue at the window, vanity on | 0.55 | - | -
+low golden light across the tub deck | 0.5 | - | -

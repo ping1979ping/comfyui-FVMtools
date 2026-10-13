@@ -1,0 +1,17 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a gray microfiber sectional sofa a few meters back on the left | 0.9 | 0.3-0.5 | empty, with a plain throw blanket folded over one arm
+a brown sofa and a matching loveseat a few meters back at the center | 0.8 | 0.3-0.5 | empty, set at right angles around a rug
+an espresso TV console a few meters back along the far wall | 0.8 | 0.2-0.4 | a dark switched-off television on top, closed doors below
+a plain oak coffee table on a patterned area rug a few meters back at the center | 0.8 | 0.2-0.4 | empty top, clear surface
+a brown fabric recliner a few meters back on the right | 0.7 | 0.2-0.4 | empty, footrest closed, a plain pillow
+a white mantel with a gas fireplace a few meters back at the center | 0.65 | 0.2-0.4 | cold and clean, a tile surround
+an oak end table with a beige-shade lamp a few meters back on the left | 0.55 | 0.15-0.35 | empty top, lamp switched on
+a low bookcase with wicker baskets a few meters back on the right | 0.5 | 0.2-0.4 | closed baskets in neat rows
+a cherry sofa table behind an empty sofa a few meters back on the left | 0.4 | 0.2-0.4 | clear top, one plain lamp
+a large beige ottoman a few meters back at the center | 0.45 | 0.2-0.4 | empty, a plain wooden tray on top
+a pair of cream armchairs a few meters back on the right | 0.5 | 0.2-0.4 | empty, angled toward the center
+a tall oak display cabinet a few meters back on the left | 0.4 | 0.2-0.4 | glass doors, plain ceramic bowls inside
+a wide doorway to a hallway a few meters back on the right | 0.4 | 0.2-0.4 | white two-panel door open, soft light beyond
+a gray sofa pushed against the wall a few meters back at the right | 0.45 | 0.3-0.5 | empty, with mismatched plain pillows

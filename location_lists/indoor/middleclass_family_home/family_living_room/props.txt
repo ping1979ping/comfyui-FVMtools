@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small framed abstract landscape print on the far wall | 0.6 | 0.02-0.06 | muted browns and blues
+a slim beige-shade table lamp on a distant end table | 0.6 | 0.02-0.06 | warm glow
+a small silk plant in a pot in the far corner | 0.55 | 0.02-0.06 | green leaves, plain pot
+a compact wicker basket of board games on a far shelf | 0.4 | 0.02-0.06 | woven, closed
+a small ceramic bowl on a distant side table | 0.5 | 0.02-0.06 | plain glaze
+a small cluster of candles on the far mantel | 0.5 | 0.02-0.05 | white pillars, unlit
+a tiny plain throw pillow at the far end of the sofa | 0.5 | 0.02-0.05 | muted rust color
+a small folded throw blanket on a distant sofa arm | 0.55 | 0.02-0.06 | soft gray knit
+a slim glass vase on the far mantel | 0.4 | 0.02-0.05 | clear, dried grasses
+a small woven basket in the far corner | 0.45 | 0.02-0.06 | natural fiber
+a compact remote tray on a distant coffee table | 0.35 | 0.01-0.04 | dark wood, empty
+a small potted fern on a far windowsill | 0.4 | 0.02-0.05 | green fronds
+a low ceramic table lamp on the far console | 0.45 | 0.02-0.05 | cream base, beige shade

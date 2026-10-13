@@ -1,0 +1,13 @@
+# element: time_of_day
+# format: name | probability | coverage_range | texture
+
+soft morning light through the slider | 0.9 | - | -
+bright late-morning light through the blinds | 0.85 | - | -
+flat midday daylight across the carpet | 0.7 | - | -
+warm late-afternoon sun through the window | 0.8 | - | -
+soft overcast afternoon light | 0.7 | - | -
+warm 2700K lamps with the recessed cans on at dusk | 0.75 | - | -
+evening lamp glow with the blinds closed | 0.7 | - | -
+early-morning gray light with one lamp on | 0.5 | - | -
+low golden sun slanting across the floor | 0.5 | - | -
+dim night light, only two table lamps on | 0.4 | - | -

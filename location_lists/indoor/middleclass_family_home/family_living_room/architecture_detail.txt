@@ -1,0 +1,14 @@
+# element: architecture_detail
+# format: name | probability | coverage_range | texture
+
+a frosted-glass ceiling fixture far overhead | 0.8 | 0.02-0.08 | white glass, warm light
+recessed ceiling cans in a row far overhead | 0.7 | 0.02-0.08 | small white trims
+a white colonial baseboard along the far wall | 0.7 | 0.03-0.1 | plain painted wood
+white faux-wood blinds on the far window | 0.65 | 0.03-0.1 | half open, plain slats
+a slim white crown molding along the top of the far wall | 0.5 | 0.03-0.1 | smooth paint
+a white two-panel door at the far left | 0.55 | 0.03-0.1 | closed, brushed nickel knob
+a slim ceiling fan far overhead at the center | 0.45 | 0.03-0.1 | oak-look blades, still
+a tab-top curtain panel at the far right | 0.5 | 0.03-0.1 | plain beige cotton
+a small white wall vent high on the far wall | 0.35 | 0.02-0.06 | plain grille
+a white window casing around the far window | 0.5 | 0.03-0.1 | smooth, painted
+a thin white stair railing at the far right | 0.35 | 0.03-0.1 | painted spindles

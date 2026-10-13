@@ -1,0 +1,14 @@
+# element: midground
+# format: name | probability | coverage_range | texture
+
+a wooden console against the wall a few meters back on the right | 0.9 | 0.2-0.5 | dark oak top, a small lamp glowing on it, empty
+a wooden hall tree with brass hooks a few meters back on the left | 0.7 | 0.2-0.5 | dark finish, empty hooks, an empty bench seat below
+a pair of empty shoes lined on a mat a few meters back by the door | 0.6 | 0.2-0.5 | rubber boot tray, tidy
+a round entry table a few meters back in the middle | 0.7 | 0.2-0.5 | dark wood, a small bowl on top, otherwise empty
+the staircase base with an oak newel post a few meters back on the left | 0.8 | 0.2-0.5 | white spindles, beige carpet runner
+a tall coat closet door a few meters back on the right | 0.55 | 0.2-0.5 | white paneled, closed
+a wicker umbrella stand by the door a few meters back on the right | 0.45 | 0.2-0.5 | woven brown, a few plain umbrellas
+a large potted plant a few meters back on the left | 0.5 | 0.2-0.5 | glossy leaves in a ceramic pot
+a narrow bench with empty cubbies a few meters back on the left | 0.5 | 0.2-0.5 | white wood, empty, tidy shoe cubbies
+a plain wooden chair against the wall a few meters back, empty | 0.4 | 0.2-0.5 | oak finish, flat seat, unoccupied
+a floor-length curtain beside the sidelight a few meters back | 0.35 | 0.2-0.5 | cream fabric, hanging straight

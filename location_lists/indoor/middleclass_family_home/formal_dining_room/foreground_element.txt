@@ -1,0 +1,15 @@
+# element: foreground_element
+# format: name | probability | coverage_range | texture
+
+a medium oak hardwood plank floor | 1.0 | 0.1-0.4 | satin, soft grain
+a low-pile tan carpet | 0.85 | 0.1-0.4 | matte and even
+a wide oak-look vinyl plank floor | 0.8 | 0.1-0.4 | matte, soft grain
+a low-pile beige carpet | 0.7 | 0.1-0.4 | plain, even color
+a cherry-toned hardwood plank floor | 0.6 | 0.1-0.4 | satin, even grain
+a plain patterned area rug in tan and burgundy on oak planks | 0.65 | 0.1-0.4 | low pile, muted
+a low-pile greige carpet | 0.6 | 0.1-0.4 | matte, even
+a honey oak plank floor | 0.6 | 0.1-0.4 | satin, soft grain
+a plain cream low-pile carpet | 0.5 | 0.1-0.4 | soft, matte
+a wide gray oak-look plank floor | 0.45 | 0.1-0.4 | matte, even
+a plain beige area rug on dark hardwood planks | 0.5 | 0.1-0.4 | low pile, matte
+a low-pile taupe carpet | 0.5 | 0.1-0.4 | plain, matte

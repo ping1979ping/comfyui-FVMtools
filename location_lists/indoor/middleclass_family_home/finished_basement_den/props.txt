@@ -1,0 +1,16 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small stack of board games on the far shelf | 0.7 | 0.02-0.06 | plain colored boxes, no print
+a small bean bag in the far corner | 0.6 | 0.02-0.06 | plain gray fabric
+a slim folded blanket at the far end of the sofa | 0.6 | 0.02-0.06 | plain beige fleece
+a compact dehumidifier in the far corner | 0.5 | 0.02-0.06 | plain white plastic
+a small stack of plastic totes in the far corner | 0.5 | 0.02-0.06 | gray lids, plain
+a small game console on the low far stand | 0.5 | 0.01-0.04 | black, switched off
+a small lamp on the far end table | 0.55 | 0.02-0.05 | beige shade, warm glow
+a small basket of throw blankets at the back of the far wall | 0.4 | 0.02-0.06 | woven brown
+a slim rack of pool cues on the far wall | 0.4 | 0.02-0.05 | plain dark wood
+a small potted plant on the far windowsill | 0.4 | 0.02-0.05 | green leaves, plain pot
+a compact beverage cooler at the back of the far counter | 0.5 | 0.02-0.06 | black, closed door
+a small tray of plain glasses on the far bar | 0.35 | 0.01-0.04 | clear glass
+a slim stack of plain pillows at the far end of the couch | 0.4 | 0.02-0.05 | solid colors

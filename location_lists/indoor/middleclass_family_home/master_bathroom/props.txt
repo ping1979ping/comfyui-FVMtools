@@ -1,0 +1,15 @@
+# element: props
+# format: name | probability | coverage_range | texture
+
+a small stack of folded gray towels on the far tub deck | 0.8 | 0.02-0.06 | soft cotton
+a small soap pump bottle at the far end of the vanity | 0.7 | 0.01-0.05 | plain white, no print
+a small toothbrush cup on the far vanity | 0.5 | 0.01-0.04 | plain white ceramic, empty
+a small potted plant on the far tub deck | 0.5 | 0.02-0.06 | green leaves, clay pot
+a compact tissue box at the far end of the vanity | 0.45 | 0.01-0.04 | plain pale cover
+a small gray bath mat on the far floor by the tub | 0.55 | 0.02-0.06 | plain, flat weave
+a compact wicker basket in the far corner | 0.5 | 0.02-0.06 | woven, rolled white towels
+a small white hamper in the far corner | 0.4 | 0.02-0.06 | closed lid, plain
+a small folded white washcloth on the far vanity | 0.4 | 0.01-0.04 | soft cotton
+a small candle in a glass jar on the far tub deck | 0.35 | 0.01-0.04 | plain white wax
+a slim towel hanging on the far towel bar | 0.55 | 0.02-0.06 | gray cotton
+a small glass tray at the far end of the vanity | 0.35 | 0.01-0.04 | clear, empty
