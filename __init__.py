@@ -15,6 +15,7 @@ try:
     from .nodes.person_detailer_power import PersonDetailerPower
     from .nodes.person_selector_sam3 import PersonSelectorSAM3
     from .nodes.person_selector_sam3_native import PersonSelectorSAM3Native
+    from .nodes.list_count import FVM_ListCount
 
     # ── SMP (StructPromptMaker) — dict-based structural prompt suite ──
     from .nodes.smp.outfit_generator import FVM_SMP_OutfitGenerator
@@ -620,6 +621,7 @@ try:
         "FVM_SongExtendApply": FVM_SongExtendApply,
         "FVM_SongExtendCommit": FVM_SongExtendCommit,
         "FVM_SongExtendMerge": FVM_SongExtendMerge,
+        "FVM_ListCount": FVM_ListCount,
     }
 
     NODE_DISPLAY_NAME_MAPPINGS = {
@@ -669,6 +671,7 @@ try:
         "FVM_SongExtendApply": "Music · Verlaengern 4 · Pruefen",
         "FVM_SongExtendCommit": "Music · Verlaengern 5 · Anhaengen",
         "FVM_SongExtendMerge": "Music · Verlaengern 6 · Zusammenfuegen",
+        "FVM_ListCount": "List / Batch Count",
     }
 
     # ── K2 Lab — Krea 2 regional control suite ──
