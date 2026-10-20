@@ -1251,7 +1251,7 @@ function buildRowWidget(node) {
         const wrap = document.createElement("div");
         wrap.dataset.rowIdx = String(idx);
         Object.assign(wrap.style, {
-            display: "flex", alignItems: "center", gap: "4px",
+            display: "flex", alignItems: "flex-start", gap: "4px",
             paddingLeft: (row.indent * INDENT_PX) + "px",
             transition: "background-color 0.1s",
         });
@@ -1260,7 +1260,7 @@ function buildRowWidget(node) {
         const bar = document.createElement("div");
         Object.assign(bar.style, {
             width: "3px", height: "20px", background: "#585b70",
-            borderRadius: "1px", flex: "0 0 auto",
+            borderRadius: "1px", flex: "0 0 auto", marginTop: "2px",
         });
         wrap.append(bar);
 
@@ -1274,7 +1274,7 @@ function buildRowWidget(node) {
             ? "Aktiv — Klick deaktiviert diese Zeile + alles Untergeordnete"
             : "Deaktiviert — Klick aktiviert wieder";
         Object.assign(toggle.style, {
-            flex: "0 0 22px", height: "22px", padding: "0",
+            flex: "0 0 22px", height: "22px", padding: "0", marginTop: "1px",
             background: "transparent", color: on ? "#a6e3a1" : "#6c7086",
             border: "1px solid #45475a", borderRadius: "4px",
             cursor: "pointer", fontSize: "12px", userSelect: "none",
@@ -1293,20 +1293,53 @@ function buildRowWidget(node) {
             flex: "0 0 130px", background: "#181825", color: "#89b4fa",
             border: "1px solid #45475a", borderRadius: "4px", padding: "3px 6px",
             fontSize: "12px", fontFamily: "inherit",
+            height: "24px", boxSizing: "border-box",
         });
         keyIn.addEventListener("input", () => { row.key = keyIn.value; commit(); });
         wrap.append(keyIn);
 
-        // Value input
-        const valIn = document.createElement("input");
-        valIn.type = "text"; valIn.value = row.value; valIn.placeholder = "value (leave empty for branch)";
+        // Value field. A one-row textarea that grows with its content so a
+        // long value wraps onto extra lines instead of scrolling sideways.
+        // The value itself stays single-line: Enter is swallowed and pasted
+        // line breaks are folded into spaces.
+        const valIn = document.createElement("textarea");
+        valIn.rows = 1; valIn.value = row.value; valIn.placeholder = "value (leave empty for branch)";
+        valIn.spellcheck = false;
         Object.assign(valIn.style, {
             flex: "1 1 auto", background: "#181825", color: "#a6e3a1",
             border: "1px solid #45475a", borderRadius: "4px", padding: "3px 6px",
             fontSize: "12px", fontFamily: "inherit", minWidth: "60px",
+            lineHeight: "16px", boxSizing: "border-box", resize: "none",
+            overflow: "hidden", whiteSpace: "pre-wrap", overflowWrap: "anywhere",
         });
-        valIn.addEventListener("input", () => { row.value = valIn.value; commit(); });
+        const autosize = () => {
+            valIn.style.height = "auto";
+            valIn.style.height = (valIn.scrollHeight + 2) + "px";  // + top/bottom border
+        };
+        valIn.addEventListener("input", () => {
+            if (/[\r\n]/.test(valIn.value)) {
+                const caret = valIn.selectionStart;
+                valIn.value = valIn.value.replace(/\r?\n|\r/g, " ");
+                valIn.selectionStart = valIn.selectionEnd = caret;
+            }
+            row.value = valIn.value;
+            autosize();
+            commit();
+        });
+        // Registered after the autocomplete's own keydown handler, so an
+        // open popup still gets Enter to accept its suggestion first.
         attachWildcardAutocomplete(valIn);
+        valIn.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" && !e.defaultPrevented) e.preventDefault();
+        });
+        // Re-wrap when the field's width changes (node resized, first layout).
+        try {
+            let lastW = -1;
+            new ResizeObserver(() => {
+                const w = valIn.clientWidth;
+                if (w !== lastW) { lastW = w; autosize(); }
+            }).observe(valIn);
+        } catch (e) { /* ResizeObserver not available */ }
         wrap.append(valIn);
 
         // ⋮ drag handle. Pointerdown starts tracking; if the pointer moves
@@ -1319,7 +1352,7 @@ function buildRowWidget(node) {
         Object.assign(menuBtn.style, {
             flex: "0 0 24px", background: "#313244", color: "#cdd6f4",
             border: "1px solid #45475a", borderRadius: "4px", cursor: "grab",
-            fontSize: "14px", padding: "0", height: "22px",
+            fontSize: "14px", padding: "0", height: "22px", marginTop: "1px",
             userSelect: "none", touchAction: "none",
         });
         attachDragHandle(menuBtn, wrap, idx);
