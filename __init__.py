@@ -40,6 +40,7 @@ try:
     from .nodes.jb.location_block import FVM_JB_LocationBlock
     from .nodes.jb.ideogram_assembler import FVM_Ideogram_Assembler
     from .nodes.jb.ideogram_jitter import FVM_Ideogram_BoxJitter
+    from .nodes.jb.moss_layout import FVM_MOSS_SAM3Layout
 
     # ── Music — Cover-Texte: Prosodie messen, Prompt dafuer bauen ──
     from .nodes.music.lyrics_prosody import FVM_LyricsProsodyAnalyze
@@ -612,6 +613,7 @@ try:
         "FVM_JB_LocationBlock": FVM_JB_LocationBlock,
         "FVM_Ideogram_Assembler": FVM_Ideogram_Assembler,
         "FVM_Ideogram_BoxJitter": FVM_Ideogram_BoxJitter,
+        "FVM_MOSS_SAM3Layout": FVM_MOSS_SAM3Layout,
         "FVM_LyricsProsodyAnalyze": FVM_LyricsProsodyAnalyze,
         "FVM_CoverLyricsPromptBuilder": FVM_CoverLyricsPromptBuilder,
         "FVM_WhisperChunksToLyricLines": FVM_WhisperChunksToLyricLines,
@@ -662,6 +664,7 @@ try:
         "FVM_JB_LocationBlock": "JB · Location Block",
         "FVM_Ideogram_Assembler": "JB · Ideogram Assembler",
         "FVM_Ideogram_BoxJitter": "JB · Ideogram Box Jitter",
+        "FVM_MOSS_SAM3Layout": "JB · MOSS Layout from SAM3",
         "FVM_LyricsProsodyAnalyze": "Music · Lyrics-Prosodie messen",
         "FVM_CoverLyricsPromptBuilder": "Music · Cover-Prompt bauen",
         "FVM_WhisperChunksToLyricLines": "Music · Whisper-Passagen zu Zeilen",

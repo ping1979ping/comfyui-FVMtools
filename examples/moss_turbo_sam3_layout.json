@@ -1,0 +1,1924 @@
+{
+ "last_node_id": 31,
+ "last_link_id": 43,
+ "nodes": [
+  {
+   "id": 1,
+   "type": "FVM_JB_Builder",
+   "pos": [
+    -1540,
+    40
+   ],
+   "size": [
+    640,
+    330
+   ],
+   "flags": {},
+   "order": 1,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "context_from_prompt_generator",
+     "type": "DICT",
+     "link": null
+    },
+    {
+     "name": "rows",
+     "type": "STRING",
+     "link": null,
+     "widget": {
+      "name": "rows"
+     }
+    },
+    {
+     "name": "seed",
+     "type": "INT",
+     "link": null,
+     "widget": {
+      "name": "seed"
+     }
+    },
+    {
+     "name": "output_format",
+     "type": "COMBO",
+     "link": null,
+     "widget": {
+      "name": "output_format"
+     }
+    }
+   ],
+   "outputs": [
+    {
+     "name": "raw_json",
+     "type": "STRING",
+     "links": [
+      1
+     ]
+    },
+    {
+     "name": "string",
+     "type": "STRING",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_JB_Builder"
+   },
+   "widgets_values": [
+    "[{\"key\": \"subject\", \"value\": \"a woman in her mid-thirties\", \"indent\": 0, \"enabled\": true}, {\"key\": \"face\", \"value\": \"warm brown eyes, light freckles, natural makeup\", \"indent\": 0, \"enabled\": true}, {\"key\": \"hair\", \"value\": \"shoulder-length dark brown hair\", \"indent\": 0, \"enabled\": true}, {\"key\": \"expression\", \"value\": \"relaxed, confident smile\", \"indent\": 0, \"enabled\": true}, {\"key\": \"pose\", \"value\": \"standing naturally, looking at the camera\", \"indent\": 0, \"enabled\": true}]",
+    0,
+    "randomize",
+    "sentences",
+    ""
+   ],
+   "title": "JB Builder — Person (character_1)"
+  },
+  {
+   "id": 2,
+   "type": "FVM_JB_OutfitBlock",
+   "pos": [
+    -1540,
+    400
+   ],
+   "size": [
+    420,
+    790
+   ],
+   "flags": {},
+   "order": 2,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "outfit_json",
+     "type": "STRING",
+     "links": [
+      2
+     ]
+    },
+    {
+     "name": "outfit_string",
+     "type": "STRING",
+     "links": []
+    },
+    {
+     "name": "palette_summary",
+     "type": "STRING",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_JB_OutfitBlock"
+   },
+   "widgets_values": [
+    "female/business/office_day_business_casual_with_heels",
+    0,
+    "randomize",
+    "business_executive",
+    0.6,
+    0.6,
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    0.1,
+    "off",
+    "everyday_muted",
+    "sentences",
+    "",
+    5,
+    "auto",
+    "general",
+    0.5,
+    0.5,
+    0.5,
+    0.0,
+    "",
+    "",
+    null,
+    null,
+    null,
+    null
+   ],
+   "title": "JB Outfit Block"
+  },
+  {
+   "id": 3,
+   "type": "FVM_JB_LocationBlock",
+   "pos": [
+    -1100,
+    400
+   ],
+   "size": [
+    420,
+    660
+   ],
+   "flags": {},
+   "order": 3,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "location_json",
+     "type": "STRING",
+     "links": [
+      4
+     ]
+    },
+    {
+     "name": "location_string",
+     "type": "STRING",
+     "links": []
+    },
+    {
+     "name": "palette_summary",
+     "type": "STRING",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_JB_LocationBlock"
+   },
+   "widgets_values": [
+    "indoor/business_dining_spot/coffee_roaster_window_counter",
+    0,
+    "randomize",
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    "everyday_muted",
+    "sentences",
+    "",
+    "",
+    5,
+    "auto",
+    "general",
+    0.5,
+    0.5,
+    0.5,
+    "",
+    "",
+    null,
+    null,
+    null,
+    null
+   ],
+   "title": "JB Location Block"
+  },
+  {
+   "id": 4,
+   "type": "FVM_JB_Stitcher",
+   "pos": [
+    -860,
+    40
+   ],
+   "size": [
+    300,
+    160
+   ],
+   "flags": {},
+   "order": 4,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "title",
+     "type": "STRING",
+     "link": null,
+     "widget": {
+      "name": "title"
+     }
+    },
+    {
+     "name": "output_format",
+     "type": "COMBO",
+     "link": null,
+     "widget": {
+      "name": "output_format"
+     }
+    },
+    {
+     "name": "on_conflict",
+     "type": "COMBO",
+     "link": null,
+     "widget": {
+      "name": "on_conflict"
+     }
+    },
+    {
+     "name": "input_1",
+     "type": "STRING",
+     "link": 1
+    },
+    {
+     "name": "input_2",
+     "type": "STRING",
+     "link": 2
+    },
+    {
+     "name": "input_3",
+     "type": "STRING",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "raw_json",
+     "type": "STRING",
+     "links": [
+      3
+     ]
+    },
+    {
+     "name": "string",
+     "type": "STRING",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_JB_Stitcher"
+   },
+   "widgets_values": [
+    "character_1",
+    "sentences",
+    "last_wins"
+   ],
+   "title": "Stitcher — character_1 (Person + Outfit)"
+  },
+  {
+   "id": 5,
+   "type": "FVM_JB_Stitcher",
+   "pos": [
+    -520,
+    40
+   ],
+   "size": [
+    300,
+    160
+   ],
+   "flags": {},
+   "order": 5,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "title",
+     "type": "STRING",
+     "link": null,
+     "widget": {
+      "name": "title"
+     }
+    },
+    {
+     "name": "output_format",
+     "type": "COMBO",
+     "link": null,
+     "widget": {
+      "name": "output_format"
+     }
+    },
+    {
+     "name": "on_conflict",
+     "type": "COMBO",
+     "link": null,
+     "widget": {
+      "name": "on_conflict"
+     }
+    },
+    {
+     "name": "input_1",
+     "type": "STRING",
+     "link": 3
+    },
+    {
+     "name": "input_2",
+     "type": "STRING",
+     "link": 4
+    },
+    {
+     "name": "input_3",
+     "type": "STRING",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "raw_json",
+     "type": "STRING",
+     "links": [
+      5
+     ]
+    },
+    {
+     "name": "string",
+     "type": "STRING",
+     "links": [
+      6
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_JB_Stitcher"
+   },
+   "widgets_values": [
+    "scene",
+    "sentences",
+    "last_wins"
+   ],
+   "title": "Stitcher — scene (alles kombiniert)"
+  },
+  {
+   "id": 6,
+   "type": "SetNode",
+   "pos": [
+    -520,
+    240
+   ],
+   "size": [
+    300,
+    60
+   ],
+   "flags": {},
+   "order": 6,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "STRING",
+     "type": "STRING",
+     "link": 5
+    }
+   ],
+   "outputs": [
+    {
+     "name": "STRING",
+     "type": "STRING",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "SetNode",
+    "previousName": "PROMPT"
+   },
+   "widgets_values": [
+    "PROMPT"
+   ],
+   "title": "Set_PROMPT",
+   "color": "#1a3a1a",
+   "bgcolor": "#2a5a2a"
+  },
+  {
+   "id": 7,
+   "type": "PreviewAny",
+   "pos": [
+    -660,
+    340
+   ],
+   "size": [
+    580,
+    720
+   ],
+   "flags": {},
+   "order": 7,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "source",
+     "type": "*",
+     "link": 6
+    }
+   ],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "PreviewAny"
+   },
+   "title": "Prompt als Text (Kontrolle)"
+  },
+  {
+   "id": 8,
+   "type": "LoadImage",
+   "pos": [
+    20,
+    40
+   ],
+   "size": [
+    340,
+    440
+   ],
+   "flags": {},
+   "order": 8,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      7
+     ]
+    },
+    {
+     "name": "MASK",
+     "type": "MASK",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "claude_moss_ref.png",
+    "image"
+   ],
+   "title": "Referenzbild (Komposition)"
+  },
+  {
+   "id": 9,
+   "type": "CheckpointLoaderSimple",
+   "pos": [
+    20,
+    520
+   ],
+   "size": [
+    340,
+    100
+   ],
+   "flags": {},
+   "order": 9,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      8
+     ]
+    },
+    {
+     "name": "CLIP",
+     "type": "CLIP",
+     "links": [
+      9
+     ]
+    },
+    {
+     "name": "VAE",
+     "type": "VAE",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "CheckpointLoaderSimple"
+   },
+   "widgets_values": [
+    "sam3\\sam3.1_multiplex_fp16.safetensors"
+   ],
+   "title": "SAM3 (nativ)"
+  },
+  {
+   "id": 10,
+   "type": "GetNode",
+   "pos": [
+    400,
+    40
+   ],
+   "size": [
+    380,
+    60
+   ],
+   "flags": {},
+   "order": 10,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "STRING",
+     "type": "STRING",
+     "links": [
+      10
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "GetNode"
+   },
+   "widgets_values": [
+    "PROMPT"
+   ],
+   "title": "Get_PROMPT",
+   "color": "#1a3a1a",
+   "bgcolor": "#2a5a2a"
+  },
+  {
+   "id": 11,
+   "type": "FVM_MOSS_SAM3Layout",
+   "pos": [
+    400,
+    130
+   ],
+   "size": [
+    400,
+    560
+   ],
+   "flags": {},
+   "order": 11,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "link": 7
+    },
+    {
+     "name": "prompt",
+     "type": "STRING",
+     "link": 10
+    },
+    {
+     "name": "sam3_native_model",
+     "type": "MODEL",
+     "link": 8
+    },
+    {
+     "name": "sam3_native_clip",
+     "type": "CLIP",
+     "link": 9
+    },
+    {
+     "name": "sam3_model",
+     "type": "SAM3_MODEL_CONFIG",
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "name": "moss_prompt",
+     "type": "STRING",
+     "links": [
+      13,
+      18
+     ]
+    },
+    {
+     "name": "moss_prompt_upscaled",
+     "type": "STRING",
+     "links": [
+      35
+     ]
+    },
+    {
+     "name": "width",
+     "type": "INT",
+     "links": [
+      20
+     ]
+    },
+    {
+     "name": "height",
+     "type": "INT",
+     "links": [
+      21
+     ]
+    },
+    {
+     "name": "up_width",
+     "type": "INT",
+     "links": [
+      30
+     ]
+    },
+    {
+     "name": "up_height",
+     "type": "INT",
+     "links": [
+      31
+     ]
+    },
+    {
+     "name": "preview",
+     "type": "IMAGE",
+     "links": [
+      11
+     ]
+    },
+    {
+     "name": "report",
+     "type": "STRING",
+     "links": [
+      12
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "FVM_MOSS_SAM3Layout"
+   },
+   "widgets_values": [
+    "person | character | character_{n}\n",
+    0.4,
+    3,
+    0.01,
+    1.0,
+    1.5,
+    "",
+    "photo",
+    "single"
+   ],
+   "title": "JB · MOSS Layout from SAM3"
+  },
+  {
+   "id": 12,
+   "type": "PreviewImage",
+   "pos": [
+    840,
+    40
+   ],
+   "size": [
+    380,
+    440
+   ],
+   "flags": {},
+   "order": 12,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "images",
+     "type": "IMAGE",
+     "link": 11
+    }
+   ],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "PreviewImage"
+   },
+   "widgets_values": [],
+   "title": "Boxen"
+  },
+  {
+   "id": 13,
+   "type": "PreviewAny",
+   "pos": [
+    840,
+    520
+   ],
+   "size": [
+    380,
+    360
+   ],
+   "flags": {},
+   "order": 13,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "source",
+     "type": "*",
+     "link": 12
+    }
+   ],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "PreviewAny"
+   },
+   "title": "Report"
+  },
+  {
+   "id": 14,
+   "type": "PreviewAny",
+   "pos": [
+    20,
+    670
+   ],
+   "size": [
+    780,
+    210
+   ],
+   "flags": {},
+   "order": 14,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "source",
+     "type": "*",
+     "link": 13
+    }
+   ],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "PreviewAny"
+   },
+   "title": "MOSS-Prompt (JSON)"
+  },
+  {
+   "id": 15,
+   "type": "MOSSImageHFLoader",
+   "pos": [
+    20,
+    1000
+   ],
+   "size": [
+    400,
+    130
+   ],
+   "flags": {},
+   "order": 15,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      14
+     ]
+    },
+    {
+     "name": "CLIP",
+     "type": "CLIP",
+     "links": [
+      15
+     ]
+    },
+    {
+     "name": "VAE",
+     "type": "VAE",
+     "links": [
+      27,
+      33,
+      42
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "MOSSImageHFLoader"
+   },
+   "widgets_values": [
+    "D:/AI/AI_Models/MOSS-Image/SFT",
+    "default",
+    "default"
+   ],
+   "title": "MOSS-Image SFT (HF-Ordner, bf16)"
+  },
+  {
+   "id": 16,
+   "type": "Power Lora Loader (rgthree)",
+   "pos": [
+    460,
+    1000
+   ],
+   "size": [
+    420,
+    200
+   ],
+   "flags": {},
+   "order": 16,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 14
+    },
+    {
+     "name": "clip",
+     "type": "CLIP",
+     "link": 15
+    }
+   ],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      16
+     ]
+    },
+    {
+     "name": "CLIP",
+     "type": "CLIP",
+     "links": [
+      17,
+      34
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "Power Lora Loader (rgthree)",
+    "Show Strengths": "Single Strength"
+   },
+   "widgets_values": [
+    {},
+    {
+     "type": "PowerLoraLoaderHeaderWidget"
+    },
+    {
+     "on": true,
+     "lora": "moss\\MOSS-Image-SFT-4-steps_v2.safetensors",
+     "strength": 1,
+     "strengthTwo": null
+    },
+    {},
+    ""
+   ],
+   "title": "Power Lora Loader — Turbo zuerst, dann deine"
+  },
+  {
+   "id": 17,
+   "type": "ModelSamplingSD3",
+   "pos": [
+    920,
+    1000
+   ],
+   "size": [
+    300,
+    60
+   ],
+   "flags": {},
+   "order": 17,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 16
+    }
+   ],
+   "outputs": [
+    {
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      22,
+      37
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ModelSamplingSD3"
+   },
+   "widgets_values": [
+    5
+   ],
+   "title": "Flow-Shift 5 (MOSS)"
+  },
+  {
+   "id": 18,
+   "type": "CLIPTextEncode",
+   "pos": [
+    1300,
+    40
+   ],
+   "size": [
+    400,
+    160
+   ],
+   "flags": {},
+   "order": 18,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "clip",
+     "type": "CLIP",
+     "link": 17
+    },
+    {
+     "name": "text",
+     "type": "STRING",
+     "link": 18,
+     "widget": {
+      "name": "text"
+     }
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CONDITIONING",
+     "type": "CONDITIONING",
+     "links": [
+      19,
+      23
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "CLIPTextEncode"
+   },
+   "widgets_values": [
+    ""
+   ],
+   "title": "Positiv — MOSS-Layout",
+   "color": "#232",
+   "bgcolor": "#353"
+  },
+  {
+   "id": 19,
+   "type": "ConditioningZeroOut",
+   "pos": [
+    1300,
+    240
+   ],
+   "size": [
+    400,
+    30
+   ],
+   "flags": {},
+   "order": 19,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "conditioning",
+     "type": "CONDITIONING",
+     "link": 19
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CONDITIONING",
+     "type": "CONDITIONING",
+     "links": [
+      24
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ConditioningZeroOut"
+   },
+   "title": "Negativ (CFG 1: leer)"
+  },
+  {
+   "id": 20,
+   "type": "EmptyFlux2LatentImage",
+   "pos": [
+    1300,
+    320
+   ],
+   "size": [
+    400,
+    110
+   ],
+   "flags": {},
+   "order": 20,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "width",
+     "type": "INT",
+     "link": 20,
+     "widget": {
+      "name": "width"
+     }
+    },
+    {
+     "name": "height",
+     "type": "INT",
+     "link": 21,
+     "widget": {
+      "name": "height"
+     }
+    }
+   ],
+   "outputs": [
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      25
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "EmptyFlux2LatentImage"
+   },
+   "widgets_values": [
+    1024,
+    1024,
+    1
+   ]
+  },
+  {
+   "id": 21,
+   "type": "KSampler",
+   "pos": [
+    1740,
+    40
+   ],
+   "size": [
+    320,
+    470
+   ],
+   "flags": {},
+   "order": 21,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 22
+    },
+    {
+     "name": "positive",
+     "type": "CONDITIONING",
+     "link": 23
+    },
+    {
+     "name": "negative",
+     "type": "CONDITIONING",
+     "link": 24
+    },
+    {
+     "name": "latent_image",
+     "type": "LATENT",
+     "link": 25
+    }
+   ],
+   "outputs": [
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      26
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "KSampler"
+   },
+   "widgets_values": [
+    0,
+    "randomize",
+    4,
+    1.0,
+    "euler",
+    "simple",
+    1.0
+   ],
+   "title": "KSampler Pass 1"
+  },
+  {
+   "id": 22,
+   "type": "VAEDecode",
+   "pos": [
+    1740,
+    560
+   ],
+   "size": [
+    320,
+    50
+   ],
+   "flags": {},
+   "order": 22,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "samples",
+     "type": "LATENT",
+     "link": 26
+    },
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 27
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      28,
+      29
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAEDecode"
+   }
+  },
+  {
+   "id": 23,
+   "type": "PreviewImage",
+   "pos": [
+    2100,
+    40
+   ],
+   "size": [
+    400,
+    600
+   ],
+   "flags": {},
+   "order": 23,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "images",
+     "type": "IMAGE",
+     "link": 28
+    }
+   ],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "PreviewImage"
+   },
+   "widgets_values": [],
+   "title": "Pass 1"
+  },
+  {
+   "id": 24,
+   "type": "ImageScale",
+   "pos": [
+    1300,
+    1000
+   ],
+   "size": [
+    400,
+    130
+   ],
+   "flags": {},
+   "order": 24,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "image",
+     "type": "IMAGE",
+     "link": 29
+    },
+    {
+     "name": "width",
+     "type": "INT",
+     "link": 30,
+     "widget": {
+      "name": "width"
+     }
+    },
+    {
+     "name": "height",
+     "type": "INT",
+     "link": 31,
+     "widget": {
+      "name": "height"
+     }
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      32
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ImageScale"
+   },
+   "widgets_values": [
+    "lanczos",
+    1536,
+    1536,
+    "disabled"
+   ],
+   "title": "Hochskalieren ×1,5"
+  },
+  {
+   "id": 25,
+   "type": "VAEEncode",
+   "pos": [
+    1300,
+    1170
+   ],
+   "size": [
+    400,
+    50
+   ],
+   "flags": {},
+   "order": 25,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "pixels",
+     "type": "IMAGE",
+     "link": 32
+    },
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 33
+    }
+   ],
+   "outputs": [
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      40
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAEEncode"
+   }
+  },
+  {
+   "id": 26,
+   "type": "CLIPTextEncode",
+   "pos": [
+    1300,
+    1260
+   ],
+   "size": [
+    400,
+    160
+   ],
+   "flags": {},
+   "order": 26,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "clip",
+     "type": "CLIP",
+     "link": 34
+    },
+    {
+     "name": "text",
+     "type": "STRING",
+     "link": 35,
+     "widget": {
+      "name": "text"
+     }
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CONDITIONING",
+     "type": "CONDITIONING",
+     "links": [
+      36,
+      38
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "CLIPTextEncode"
+   },
+   "widgets_values": [
+    ""
+   ],
+   "title": "Positiv — MOSS-Layout (×1,5)",
+   "color": "#232",
+   "bgcolor": "#353"
+  },
+  {
+   "id": 27,
+   "type": "ConditioningZeroOut",
+   "pos": [
+    1300,
+    1460
+   ],
+   "size": [
+    400,
+    30
+   ],
+   "flags": {},
+   "order": 27,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "conditioning",
+     "type": "CONDITIONING",
+     "link": 36
+    }
+   ],
+   "outputs": [
+    {
+     "name": "CONDITIONING",
+     "type": "CONDITIONING",
+     "links": [
+      39
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ConditioningZeroOut"
+   },
+   "title": "Negativ (CFG 1: leer)"
+  },
+  {
+   "id": 28,
+   "type": "KSampler",
+   "pos": [
+    1740,
+    1000
+   ],
+   "size": [
+    320,
+    470
+   ],
+   "flags": {},
+   "order": 28,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "model",
+     "type": "MODEL",
+     "link": 37
+    },
+    {
+     "name": "positive",
+     "type": "CONDITIONING",
+     "link": 38
+    },
+    {
+     "name": "negative",
+     "type": "CONDITIONING",
+     "link": 39
+    },
+    {
+     "name": "latent_image",
+     "type": "LATENT",
+     "link": 40
+    }
+   ],
+   "outputs": [
+    {
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      41
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "KSampler"
+   },
+   "widgets_values": [
+    0,
+    "randomize",
+    6,
+    1.0,
+    "euler",
+    "simple",
+    0.4
+   ],
+   "title": "KSampler Refine"
+  },
+  {
+   "id": 29,
+   "type": "VAEDecode",
+   "pos": [
+    1740,
+    1520
+   ],
+   "size": [
+    320,
+    50
+   ],
+   "flags": {},
+   "order": 29,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "samples",
+     "type": "LATENT",
+     "link": 41
+    },
+    {
+     "name": "vae",
+     "type": "VAE",
+     "link": 42
+    }
+   ],
+   "outputs": [
+    {
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      43
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAEDecode"
+   }
+  },
+  {
+   "id": 30,
+   "type": "SaveImage",
+   "pos": [
+    2100,
+    1000
+   ],
+   "size": [
+    400,
+    740
+   ],
+   "flags": {},
+   "order": 30,
+   "mode": 0,
+   "inputs": [
+    {
+     "name": "images",
+     "type": "IMAGE",
+     "link": 43
+    }
+   ],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "SaveImage"
+   },
+   "widgets_values": [
+    "moss/sam3_layout"
+   ]
+  },
+  {
+   "id": 31,
+   "type": "MarkdownNote",
+   "pos": [
+    -1560,
+    -420
+   ],
+   "size": [
+    1500,
+    360
+   ],
+   "flags": {},
+   "order": 31,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "properties": {
+    "Node name for S&R": "MarkdownNote"
+   },
+   "widgets_values": [
+    "## MOSS Turbo · Layout aus Referenzbild\n\n**Ablauf:** ① JB baut den Prompt (Person + Outfit → `character_1`, plus Location) und gibt ihn über **Set_PROMPT** aus. ② SAM3 sucht im Referenzbild Boxen nach `box_rules`; der Layout-Node füllt jede Box aus ihrem Slot im PROMPT und schreibt den Rest (Location) in die Szenenbeschreibung → MOSS-JSON. ③ MOSS-SFT + Turbo-LoRA. ④ Pass 1 mit 4 Steps. ⑤ ×1,5 vergrößern, mit eigenem MOSS-JSON (Boxen mitskaliert) 6 Steps bei Denoise 0,4 nachrendern.\n\n**box_rules** (eine Zeile pro Regel): `sam3-prompt | character/object/text | slot`. `{n}` nummeriert Treffer von links nach rechts: zwei Personen → `character_1`, `character_2`. Für eine zweite Person einen weiteren Stitcher `character_2` an den scene-Stitcher hängen. Boxen ohne passenden Slot bekommen ihren SAM3-Prompt als Beschreibung (z.B. `table | object | table`).\n\n**Turbo-Regeln (akhaliq MOSS-Image-SFT-4-steps v2):** CFG 1, Euler/simple, ≤1024² → 4 Steps, ~1536 → 6 Steps. Mit der normalen 25–50-Step-Einstellung wird das Bild verschmiert. Eigene MOSS-LoRAs im Power Lora Loader unter der Turbo-LoRA anfügen."
+   ],
+   "title": "Anleitung"
+  }
+ ],
+ "links": [
+  [
+   1,
+   1,
+   0,
+   4,
+   3,
+   "STRING"
+  ],
+  [
+   2,
+   2,
+   0,
+   4,
+   4,
+   "STRING"
+  ],
+  [
+   3,
+   4,
+   0,
+   5,
+   3,
+   "STRING"
+  ],
+  [
+   4,
+   3,
+   0,
+   5,
+   4,
+   "STRING"
+  ],
+  [
+   5,
+   5,
+   0,
+   6,
+   0,
+   "STRING"
+  ],
+  [
+   6,
+   5,
+   1,
+   7,
+   0,
+   "STRING"
+  ],
+  [
+   7,
+   8,
+   0,
+   11,
+   0,
+   "IMAGE"
+  ],
+  [
+   8,
+   9,
+   0,
+   11,
+   2,
+   "MODEL"
+  ],
+  [
+   9,
+   9,
+   1,
+   11,
+   3,
+   "CLIP"
+  ],
+  [
+   10,
+   10,
+   0,
+   11,
+   1,
+   "STRING"
+  ],
+  [
+   11,
+   11,
+   6,
+   12,
+   0,
+   "IMAGE"
+  ],
+  [
+   12,
+   11,
+   7,
+   13,
+   0,
+   "STRING"
+  ],
+  [
+   13,
+   11,
+   0,
+   14,
+   0,
+   "STRING"
+  ],
+  [
+   14,
+   15,
+   0,
+   16,
+   0,
+   "MODEL"
+  ],
+  [
+   15,
+   15,
+   1,
+   16,
+   1,
+   "CLIP"
+  ],
+  [
+   16,
+   16,
+   0,
+   17,
+   0,
+   "MODEL"
+  ],
+  [
+   17,
+   16,
+   1,
+   18,
+   0,
+   "CLIP"
+  ],
+  [
+   18,
+   11,
+   0,
+   18,
+   1,
+   "STRING"
+  ],
+  [
+   19,
+   18,
+   0,
+   19,
+   0,
+   "CONDITIONING"
+  ],
+  [
+   20,
+   11,
+   2,
+   20,
+   0,
+   "INT"
+  ],
+  [
+   21,
+   11,
+   3,
+   20,
+   1,
+   "INT"
+  ],
+  [
+   22,
+   17,
+   0,
+   21,
+   0,
+   "MODEL"
+  ],
+  [
+   23,
+   18,
+   0,
+   21,
+   1,
+   "CONDITIONING"
+  ],
+  [
+   24,
+   19,
+   0,
+   21,
+   2,
+   "CONDITIONING"
+  ],
+  [
+   25,
+   20,
+   0,
+   21,
+   3,
+   "LATENT"
+  ],
+  [
+   26,
+   21,
+   0,
+   22,
+   0,
+   "LATENT"
+  ],
+  [
+   27,
+   15,
+   2,
+   22,
+   1,
+   "VAE"
+  ],
+  [
+   28,
+   22,
+   0,
+   23,
+   0,
+   "IMAGE"
+  ],
+  [
+   29,
+   22,
+   0,
+   24,
+   0,
+   "IMAGE"
+  ],
+  [
+   30,
+   11,
+   4,
+   24,
+   1,
+   "INT"
+  ],
+  [
+   31,
+   11,
+   5,
+   24,
+   2,
+   "INT"
+  ],
+  [
+   32,
+   24,
+   0,
+   25,
+   0,
+   "IMAGE"
+  ],
+  [
+   33,
+   15,
+   2,
+   25,
+   1,
+   "VAE"
+  ],
+  [
+   34,
+   16,
+   1,
+   26,
+   0,
+   "CLIP"
+  ],
+  [
+   35,
+   11,
+   1,
+   26,
+   1,
+   "STRING"
+  ],
+  [
+   36,
+   26,
+   0,
+   27,
+   0,
+   "CONDITIONING"
+  ],
+  [
+   37,
+   17,
+   0,
+   28,
+   0,
+   "MODEL"
+  ],
+  [
+   38,
+   26,
+   0,
+   28,
+   1,
+   "CONDITIONING"
+  ],
+  [
+   39,
+   27,
+   0,
+   28,
+   2,
+   "CONDITIONING"
+  ],
+  [
+   40,
+   25,
+   0,
+   28,
+   3,
+   "LATENT"
+  ],
+  [
+   41,
+   28,
+   0,
+   29,
+   0,
+   "LATENT"
+  ],
+  [
+   42,
+   15,
+   2,
+   29,
+   1,
+   "VAE"
+  ],
+  [
+   43,
+   29,
+   0,
+   30,
+   0,
+   "IMAGE"
+  ]
+ ],
+ "groups": [
+  {
+   "id": 1,
+   "title": "① Prompt bauen — JB Builder + Outfit + Location → Set PROMPT",
+   "bounding": [
+    -1560,
+    -20,
+    1500,
+    1320
+   ],
+   "color": "#3f5f3f",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 2,
+   "title": "② Layout aus Referenzbild — SAM3-Boxen + PROMPT → MOSS-JSON",
+   "bounding": [
+    0,
+    -20,
+    1240,
+    920
+   ],
+   "color": "#3f5f7f",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 3,
+   "title": "③ MOSS-Image SFT + Turbo-LoRA (rgthree Power Lora Loader)",
+   "bounding": [
+    0,
+    940,
+    1240,
+    420
+   ],
+   "color": "#5f3f7f",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 4,
+   "title": "④ Pass 1 — Turbo 4 Steps, CFG 1",
+   "bounding": [
+    1280,
+    -20,
+    1240,
+    920
+   ],
+   "color": "#7f5f3f",
+   "font_size": 24,
+   "flags": {}
+  },
+  {
+   "id": 5,
+   "title": "⑤ ×1,5 vergrößern + Refine — 6 Steps, Denoise 0,4",
+   "bounding": [
+    1280,
+    940,
+    1240,
+    820
+   ],
+   "color": "#7f3f3f",
+   "font_size": 24,
+   "flags": {}
+  }
+ ],
+ "config": {},
+ "extra": {
+  "ds": {
+   "scale": 0.45,
+   "offset": [
+    1700,
+    600
+   ]
+  }
+ },
+ "version": 0.4
+}
