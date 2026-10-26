@@ -1,0 +1,34 @@
+{
+ "chunks": [
+  {
+   "text": "Ho-ho-ho-ho-ho-ho-ho-ho-ho-ho-ho-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-o-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh-oh.",
+   "timestamp": [
+    0.0,
+    7.28
+   ]
+  },
+  {
+   "text": "Am Morgen geht die Sonne auf, die Straßen werden wach, ich lauf mit dir den Fluss hinauf, und lache hundertfach.",
+   "timestamp": [
+    9.28,
+    25.68
+   ]
+  },
+  {
+   "text": "Wir sind das Licht in dieser Stadt, wir singen lauter und frei",
+   "timestamp": [
+    25.68,
+    31.68
+   ]
+  },
+  {
+   "text": "Was uns heute noch gehalten hat, ist morgen schon vorbei",
+   "timestamp": [
+    31.68,
+    36.68
+   ]
+  }
+ ],
+ "language": "de",
+ "source": "whisper-small, CPU, transformers generate (segments)"
+}

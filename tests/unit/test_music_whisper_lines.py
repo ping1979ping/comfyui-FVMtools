@@ -1,5 +1,7 @@
 """Tests fuer die Zeilenbildung aus Whisper-Passagen (mit Zeitmarken)."""
 
+import pytest
+
 from nodes.music.lyrics_prosody import analysiere
 from nodes.music.whisper_lines import (
     MIN_ZEILEN_SEKTION,
@@ -7,6 +9,7 @@ from nodes.music.whisper_lines import (
     bericht,
     chunks_zu_zeilen,
     token_text,
+    zeilen_mit_zeiten,
 )
 
 # So sieht WHISPER_CHUNKS aus comfy_mtb aus: Passage plus [start, ende].
@@ -54,6 +57,33 @@ class TestTokenText:
     def test_leer_und_none(self):
         assert token_text("") == ""
         assert token_text(None) == ""
+
+    def test_umlaute_aus_byte_bpe(self):
+        # GPT-2-Byte-BPE schreibt "ß" als "ÃŁ" und "ü" als "Ã¼"
+        assert token_text("ĠDie ĠStraÃŁen Ġwerden Ġwach") == "Die Straßen werden wach"
+        assert token_text("ĠÃ¼ber Ġdie ĠBrÃ¼cke") == "über die Brücke"
+
+    def test_echte_umlaute_bleiben(self):
+        assert token_text("ĠStraße Ġüber") == "Straße über"
+
+
+class TestZeilenMitZeiten:
+    def test_zeiten_und_pausen(self):
+        zeilen = zeilen_mit_zeiten(CHUNKS)
+        assert [z["start"] for z in zeilen] == [0.0, 2.6, 7.0, 9.4, 14.0, 16.7]
+        assert zeilen[0]["gap"] == 0.0
+        assert zeilen[2]["gap"] == pytest.approx(2.0)
+        assert zeilen[1]["end"] == 5.0
+
+    def test_fetzen_verlaengert_die_vorgaengerin(self):
+        zeilen = zeilen_mit_zeiten(CHUNKS_FETZEN)
+        assert zeilen[0]["text"] == "Hold the line girl"
+        assert zeilen[0]["end"] == 1.4
+        assert zeilen[1]["gap"] == pytest.approx(1.6)
+
+    def test_ohne_zeitmarken(self):
+        zeilen = zeilen_mit_zeiten([{"text": "Zeile eins hier"}])
+        assert zeilen == [{"text": "Zeile eins hier", "start": None, "end": None, "gap": None}]
 
 
 class TestChunksZuZeilen:

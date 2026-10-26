@@ -101,6 +101,21 @@ def fit_score_timing(wave: np.ndarray, sr: int, onsets: Sequence[Tuple[float, fl
     repetitiver Musik (jeder Chorus sieht gleich aus); die ganze Partitur als
     Muster ist eindeutig.
     """
+    best = (-1.0, 1.0, 0)
+    peaks = []
+    for s, corr in _score_correlations(wave, sr, onsets, score_seconds, scales, max_offset_s):
+        i = int(np.argmax(corr))
+        peaks.append(corr[i])
+        if corr[i] > best[0]:
+            best = (float(corr[i]), s, i)
+    med = float(np.median(np.abs(peaks))) + 1e-9
+    return Timing(offset=best[2] * HOP_SECONDS, scale=best[1], corr=best[0], contrast=best[0] / med)
+
+
+def _score_correlations(wave: np.ndarray, sr: int, onsets: Sequence[Tuple[float, float]],
+                        score_seconds: float, scales: Optional[np.ndarray] = None,
+                        max_offset_s: float = 30.0):
+    """(Tempo-Faktor, Korrelation je Versatz-Frame) fuer jeden Tempo-Faktor."""
     env = onset_envelope(wave, sr)
     env = env - env.mean()
     env_norm = np.linalg.norm(env) + 1e-9
@@ -108,8 +123,6 @@ def fit_score_timing(wave: np.ndarray, sr: int, onsets: Sequence[Tuple[float, fl
         scales = np.arange(0.94, 1.0601, 0.002)
     kernel = np.exp(-0.5 * (np.arange(-8, 9) / 3.0) ** 2)
     max_lag = int(max_offset_s / HOP_SECONDS)
-    best = (-1.0, 1.0, 0)
-    peaks = []
     for s in scales:
         n = int(score_seconds * s / HOP_SECONDS) + 50
         tpl = np.zeros(n)
@@ -121,13 +134,39 @@ def fit_score_timing(wave: np.ndarray, sr: int, onsets: Sequence[Tuple[float, fl
         tpl = tpl - tpl.mean()
         L = len(env) + n
         corr = np.fft.irfft(np.fft.rfft(env, L) * np.conj(np.fft.rfft(tpl, L)), L)
-        corr = corr[:max(1, min(max_lag, len(env)))] / (np.linalg.norm(tpl) * env_norm + 1e-9)
-        i = int(np.argmax(corr))
-        peaks.append(corr[i])
-        if corr[i] > best[0]:
-            best = (float(corr[i]), float(s), i)
-    med = float(np.median(np.abs(peaks))) + 1e-9
-    return Timing(offset=best[2] * HOP_SECONDS, scale=best[1], corr=best[0], contrast=best[0] / med)
+        yield float(s), corr[:max(1, min(max_lag, len(env)))] / (np.linalg.norm(tpl) * env_norm + 1e-9)
+
+
+def runner_up_timing(wave: np.ndarray, sr: int, onsets: Sequence[Tuple[float, float]],
+                     score_seconds: float, best: Timing, min_shift_s: float,
+                     scales: Optional[np.ndarray] = None, max_offset_s: float = 30.0) -> Optional[Timing]:
+    """Zweitbeste Ausrichtung: die hoechste Spitze, die mindestens ``min_shift_s`` daneben liegt.
+
+    Gemessen wird der Abstand in der Mitte der Partitur - so zaehlt auch ein
+    anderer Tempo-Faktor bei gleichem Versatz als eigene Ausrichtung. Typischer
+    Fall (run02): dieselbe Partitur einen Schlag frueher, 89 % der Spitze.
+    ``contrast`` ist hier das Verhaeltnis zur besten Spitze (0..1).
+    """
+    mid = score_seconds / 2.0
+    best_mid = best.offset + best.scale * mid
+    found: Optional[Tuple[float, float, int]] = None
+    for s, corr in _score_correlations(wave, sr, onsets, score_seconds, scales, max_offset_s):
+        lags = np.arange(len(corr)) * HOP_SECONDS
+        far = np.abs(lags + s * mid - best_mid) >= min_shift_s
+        # nur echte Spitzen - sonst gewinnt die Flanke der besten Spitze am Rand der Sperrzone
+        peak = np.zeros(len(corr), dtype=bool)
+        peak[1:-1] = (corr[1:-1] >= corr[:-2]) & (corr[1:-1] >= corr[2:])
+        far &= peak
+        if not far.any():
+            continue
+        masked = np.where(far, corr, -np.inf)
+        i = int(np.argmax(masked))
+        if found is None or masked[i] > found[0]:
+            found = (float(masked[i]), s, i)
+    if found is None or found[0] <= 0:
+        return None
+    return Timing(offset=found[2] * HOP_SECONDS, scale=found[1], corr=found[0],
+                  contrast=found[0] / best.corr if best.corr > 0 else 0.0)
 
 
 def grid_phase(wave: np.ndarray, sr: int, end: int, period_s: float,

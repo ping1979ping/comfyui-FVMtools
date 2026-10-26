@@ -18,6 +18,8 @@ Output`` ist dagegen derselbe Fliesstext wie vorher.
    Wortanfang, Tokens ohne ``Ġ`` gehoeren an das vorherige Wort. Ohne
    Zusammensetzen zaehlt der Silbenzaehler Bruchstuecke und jedes Reimwort ist
    falsch. ``token_text`` macht daraus ``It's not in the way`` und ``treatin'``.
+   Byte-Level-BPE schreibt dabei Umlaute als Byte-Zeichen (``StraÃŁen``); die
+   werden auf UTF-8 zurueckgefuehrt (``Straßen``).
 2. Passagen sind schon segmentiert und liegen oft ohne Pause aneinander, also
    wird standardmaessig NICHT verschmolzen (``pause_zeile = 0``). Nur Fetzen
    unter ``MIN_WOERTER_ZEILE`` Woertern wandern an die Vorgaengerin.
@@ -40,6 +42,36 @@ WORTANFANG = "Ġ"  # Ġ
 ZEILENUMBRUCH = "Ċ"  # Ċ
 
 
+def _byte_zeichen():
+    """Umkehrung der GPT-2-Abbildung Byte -> druckbares Zeichen (``bytes_to_unicode``)."""
+    druckbar = (
+        list(range(ord("!"), ord("~") + 1))
+        + list(range(ord("¡"), ord("¬") + 1))
+        + list(range(ord("®"), ord("ÿ") + 1))
+    )
+    zuordnung, extra = {}, 0
+    for byte in range(256):
+        if byte in druckbar:
+            zuordnung[chr(byte)] = byte
+        else:
+            zuordnung[chr(256 + extra)] = byte
+            extra += 1
+    return zuordnung
+
+
+BYTE_ZEICHEN = _byte_zeichen()
+
+
+def _bytes_zurueck(wort: str) -> str:
+    """``StraÃŁen`` -> ``Straßen``; alles, was kein gueltiges UTF-8 ergibt, bleibt."""
+    if all(ord(z) < 128 for z in wort) or any(z not in BYTE_ZEICHEN for z in wort):
+        return wort
+    try:
+        return bytes(BYTE_ZEICHEN[z] for z in wort).decode("utf-8")
+    except UnicodeDecodeError:
+        return wort
+
+
 def token_text(rohtext: str) -> str:
     """Setze BPE-Tokens zu lesbarem Text zusammen (siehe Modul-Docstring)."""
     text = str(rohtext or "")
@@ -53,7 +85,7 @@ def token_text(rohtext: str) -> str:
             stuecke.append(" " + token[len(WORTANFANG) :])
         else:
             stuecke.append(token)
-    return " ".join("".join(stuecke).split())
+    return " ".join(_bytes_zurueck(w) for w in "".join(stuecke).split())
 
 
 def _chunkliste(chunks):
@@ -75,16 +107,14 @@ def _vergleichsform(zeile: str) -> str:
     return " ".join(re.sub(r"[^\w\s']", " ", zeile.lower()).split())
 
 
-def chunks_zu_zeilen(
-    chunks,
-    pause_zeile: float = 0.0,
-    pause_sektion: float = 1.6,
-    mit_sektionen: bool = True,
-) -> str:
-    """Baue Text mit Zeilenumbruechen und optionalen Sektionsmarken."""
-    liste = _chunkliste(chunks)
-    zeilen, luecken, letztes_ende = [], [], None
-    for chunk in liste:
+def zeilen_mit_zeiten(chunks, pause_zeile: float = 0.0) -> list:
+    """Zeilen als ``{"text", "start", "end", "gap"}`` - dieselbe Bildung wie im Node.
+
+    ``gap`` ist die Pause vor der Zeile (erste Zeile: Zeit seit 0 s bzw. None
+    ohne Zeitmarke). ``end`` ist das Ende der letzten angeklebten Passage.
+    """
+    zeilen, letztes_ende = [], None
+    for chunk in _chunkliste(chunks):
         text = token_text(chunk.get("text"))
         if not text:
             continue
@@ -95,12 +125,34 @@ def chunks_zu_zeilen(
         zu_kurz = len(text.split()) < MIN_WOERTER_ZEILE
         dicht = luecke is not None and pause_zeile > 0 and luecke < pause_zeile
         if zeilen and (zu_kurz or dicht):
-            zeilen[-1] = f"{zeilen[-1]} {text}"
+            zeilen[-1]["text"] = f"{zeilen[-1]['text']} {text}"
+            if ende is not None:
+                zeilen[-1]["end"] = float(ende)
         else:
-            zeilen.append(text)
-            luecken.append(luecke if luecke is not None else 0.0)
+            if luecke is None and not zeilen and start is not None:
+                luecke = float(start)
+            zeilen.append({
+                "text": text,
+                "start": None if start is None else float(start),
+                "end": None if ende is None else float(ende),
+                "gap": luecke,
+            })
         if ende is not None:
             letztes_ende = ende
+    return zeilen
+
+
+def chunks_zu_zeilen(
+    chunks,
+    pause_zeile: float = 0.0,
+    pause_sektion: float = 1.6,
+    mit_sektionen: bool = True,
+) -> str:
+    """Baue Text mit Zeilenumbruechen und optionalen Sektionsmarken."""
+    getaktet = zeilen_mit_zeiten(chunks, pause_zeile)
+    zeilen = [z["text"] for z in getaktet]
+    # erste Zeile zaehlt fuer die Sektionsbildung ohne Pause davor (wie bisher)
+    luecken = [0.0] + [z["gap"] if z["gap"] is not None else 0.0 for z in getaktet[1:]]
     if not zeilen:
         return ""
     if not mit_sektionen:

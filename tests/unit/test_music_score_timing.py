@@ -158,6 +158,175 @@ class TestBuildTiming:
         assert "Tempo 129" in st.report_text(data)
 
 
+# Gleichmaessige Viertel ohne Akkorde: jede Verschiebung um einen Schlag passt fast genauso gut
+GLEICH = """X:1
+T:
+M:4/4
+L:1/4
+Q:1/4=120
+V: Vocal clef=treble name="Vocal Melody" snm="Vocal"
+K:C
+% verse
+V: Vocal
+C D E F|G A B c|C D E F|G A B c|C D E F|G A B c|
+"""
+
+# echte Laeufe (StudioSuite V1) im ComfyUI-Ausgabeordner neben dem Pack
+RUNS = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "output",
+                                    "studiosuite", "test", "music_song_yue2"))
+
+
+def _echter_lauf(run):
+    import soundfile as sf
+    base = os.path.join(RUNS, run)
+    wave, sr = sf.read(os.path.join(base, "song_00001.flac"), always_2d=True, dtype="float32")
+    with open(os.path.join(base, "score_00001.txt"), encoding="utf-8") as handle:
+        return wave.T, sr, handle.read()
+
+
+class TestRunnerUp:
+    def test_runner_up_always_reported(self, sloop):
+        score = parse_score(sloop)
+        data = st.build_timing(render_from_score(score, 1.3, seed=1), SR, sloop)
+        ru = data["fit"]["runner_up"]
+        assert ru is not None
+        assert abs(ru["shift_beats"]) >= st.RUNNER_UP_MIN_BEATS - 0.02
+        assert 0.0 < ru["ratio"] < st.RUNNER_UP_CLOSE
+        assert ru["shift_s"] == pytest.approx(ru["shift_beats"] * data["beat_s"], abs=0.01)
+        # sichere Ausrichtung: keine Alternative, alte Felder wie bisher
+        assert data["alignment_unsure"] is False
+        assert data["alternative"] is None
+        assert data["offset_s"] == pytest.approx(1.3, abs=0.03)
+        assert set(data["fit"]) >= {"corr", "contrast", "search_seconds"}
+        assert "Zweitbeste Spitze" in st.report_text(data)
+
+    def test_periodic_score_is_unsure_with_alternative(self):
+        score = parse_score(GLEICH)
+        data = st.build_timing(render_from_score(score, 1.5, seed=2), SR, GLEICH)
+        assert data["alignment_unsure"] is True
+        alt = data["alternative"]
+        assert alt is not None
+        assert abs(abs(alt["shift_beats"]) - 1.0) < 0.1          # Nachbarschlag
+        assert alt["offset_s"] == pytest.approx(data["offset_s"] + alt["shift_s"], abs=0.02)
+        assert [s["label"] for s in alt["sections"]] == [s["label"] for s in data["sections"]]
+        assert alt["sections"][0]["start_s"] == pytest.approx(alt["offset_s"], abs=1e-3)
+        assert any("Zweitbeste Ausrichtung" in w for w in data["warnings"])
+        assert any(w.startswith("Ausrichtung unsicher") for w in data["warnings"])
+
+    def test_runner_up_function_respects_min_shift(self):
+        from nodes.music.audio_stitch import fit_score_timing, runner_up_timing
+        score = parse_score(KURZ)
+        wave = render_from_score(score, 0.8, seed=6)
+        best = fit_score_timing(wave, SR, onset_times(score), score.total_seconds())
+        ru = runner_up_timing(wave, SR, onset_times(score), score.total_seconds(), best, 0.4)
+        mid = score.total_seconds() / 2
+        assert abs((ru.offset + ru.scale * mid) - (best.offset + best.scale * mid)) >= 0.4 - 1e-6
+        assert ru.corr <= best.corr
+        assert 0.0 < ru.contrast <= 1.0
+
+    @pytest.mark.skipif(not os.path.isdir(RUNS), reason="echte YuE2-Laeufe nicht vorhanden")
+    def test_real_run02_minus_one_beat(self):
+        wave, sr, abc = _echter_lauf("run02")
+        data = st.build_timing(wave, sr, abc)
+        assert data["fit"]["onset_offset_s"] == pytest.approx(0.6, abs=0.02)   # Einsatz-Spitze wie bisher
+        ru = data["fit"]["runner_up"]
+        assert ru["offset_s"] == pytest.approx(0.04, abs=0.03)
+        assert ru["shift_beats"] == pytest.approx(-1.0, abs=0.05)
+        assert ru["ratio"] == pytest.approx(0.89, abs=0.02)
+
+    @pytest.mark.skipif(not os.path.isdir(RUNS), reason="echte YuE2-Laeufe nicht vorhanden")
+    def test_real_run01_close_runner_up(self):
+        wave, sr, abc = _echter_lauf("run01")
+        data = st.build_timing(wave, sr, abc)
+        assert data["fit"]["onset_offset_s"] == pytest.approx(1.12, abs=0.02)
+        assert data["fit"]["contrast"] >= st.WEAK_CONTRAST                 # alte Eindeutigkeit: sicher
+        assert data["fit"]["runner_up"]["ratio"] >= st.RUNNER_UP_CLOSE     # aber Nachbarschlag fast gleich
+        assert data["fit"]["runner_up"]["shift_beats"] == pytest.approx(1.0, abs=0.05)
+
+    # Whisper-Versatz (Zeilenabgleich, siehe test_music_lyric_align): run01 -0,74 s, run02 -1,55 s
+    @pytest.mark.skipif(not os.path.isdir(RUNS), reason="echte YuE2-Laeufe nicht vorhanden")
+    @pytest.mark.parametrize("run,whisper", [("run01", -0.74), ("run02", -1.55), ("run03", -0.77)])
+    def test_real_runs_vocal_alignment_matches_whisper(self, run, whisper):
+        wave, sr, abc = _echter_lauf(run)
+        data = st.build_timing(wave, sr, abc)
+        assert data["alignment_method"] == "vocal"
+        assert data["offset_s"] == pytest.approx(whisper, abs=max(0.5 * data["beat_s"], 0.35))
+        assert data["intro_trimmed_s"] == pytest.approx(-data["offset_s"] / data["tempo_factor"], abs=0.01)
+        assert data["alignment_unsure"] is False and data["alternative"] is None
+        intro = data["sections"][0]
+        assert intro["start_s"] == 0.0 and intro["trimmed_s"] == pytest.approx(-data["offset_s"], abs=0.01)
+        assert all(b["t"] >= 0 for b in data["beats"])
+        assert any("Gesangs-Einmessung" in w for w in data["warnings"])
+        assert not any("Vorlaufs" in w for w in data["warnings"])
+
+
+def render_with_voice(score, offset, seed=0, sr=SR, tail=3.0):
+    """Wie render_from_score, dazu ein 1,5-kHz-Ton fuer jeden Gesangston (die "Stimme").
+
+    ``offset`` darf negativ sein: dann fehlt der Anfang der Partitur (gekuerztes Intro).
+    """
+    rng = np.random.default_rng(seed)
+    n = int((offset + score.total_seconds() + tail) * sr)
+    wave = np.zeros(n, dtype=np.float32)
+    for t, w in onset_times(score):
+        i = int((offset + t + rng.normal(0, 0.006)) * sr)
+        if 0 <= i < n - 400:
+            wave[i:i + 400] += rng.standard_normal(400).astype(np.float32) * np.exp(-np.arange(400) / 80.0) * w * 0.4
+    for a, b in st.vocal_spans(score):
+        i0, i1 = max(0, int((offset + a) * sr)), min(n, int((offset + b - 0.03) * sr))
+        if i1 > i0:
+            wave[i0:i1] += 0.2 * np.sin(2 * np.pi * 1500.0 * np.arange(i1 - i0) / sr).astype(np.float32)
+    wave += rng.standard_normal(n).astype(np.float32) * 0.01
+    return np.stack([wave, wave])
+
+
+class TestVocalAlignment:
+    def test_vocal_spans_vocal_voice_only(self):
+        score = parse_score(KURZ)
+        spans = st.vocal_spans(score)
+        assert len(spans) == 16 + 14                      # Verse 16 Achtel, Chorus 14 Toene
+        assert spans[0] == pytest.approx((4.0, 4.5))      # nach zwei Pausentakten Intro
+        assert st.vocal_voice(score) == "Vocal"
+
+    def test_fit_vocal_offset_negative(self):
+        score = parse_score(KURZ)
+        wave = render_with_voice(score, -1.5, seed=4)
+        v = st.fit_vocal_offset(wave, SR, score)
+        assert v["offset"] == pytest.approx(-1.5, abs=0.1)
+        assert v["ratio"] < st.VOCAL_MAX_RATIO
+
+    def test_trimmed_intro_uses_vocal(self):
+        score = parse_score(KURZ)
+        data = st.build_timing(render_with_voice(score, -1.5, seed=4), SR, KURZ)
+        assert data["alignment_method"] == "vocal"
+        assert data["offset_s"] == pytest.approx(-1.5, abs=0.1)
+        assert data["intro_trimmed_s"] == pytest.approx(1.5, abs=0.1)
+        assert data["fit"]["vocal"]["used"] is True
+        intro, verse = data["sections"][:2]
+        assert intro["start_s"] == 0.0 and intro["trimmed_s"] == pytest.approx(1.5, abs=0.1)
+        assert verse["start_s"] == pytest.approx(4.0 - 1.5, abs=0.1)
+        assert data["bars"][0]["in_audio"]                # erster Intro-Takt (0-2 s) ragt noch hinein
+        assert all(b["t"] >= 0 for b in data["beats"])
+        assert "Gesangs-Einmessung" in st.report_text(data)
+
+    def test_normal_render_keeps_onsets(self):
+        score = parse_score(KURZ)
+        data = st.build_timing(render_with_voice(score, 1.1, seed=5), SR, KURZ)
+        assert data["alignment_method"] == "onsets"
+        assert data["offset_s"] == pytest.approx(1.1, abs=0.03)
+        assert data["fit"]["vocal"]["offset_s"] == pytest.approx(1.1, abs=0.1)   # stimmt ueberein
+        assert data["fit"]["vocal"]["used"] is False
+        assert data["intro_trimmed_s"] == 0.0
+
+    def test_no_vocal_notes_no_vocal_fit(self):
+        abc = KURZ.replace('"C"C2D2E2F2|"G"G2A2B2c2|"F"A2G2F2E2|"C"D2C2D2E2|', "z8|z8|z8|z8|").replace(
+            '"C"c2B2A2G2|"F"F2G2A2B2|"G"c2A2F2D2|"C"C4E4|', "z8|z8|z8|z8|")
+        score = parse_score(abc)
+        assert st.fit_vocal_offset(render_from_score(score, 1.0), SR, score) is None
+        data = st.build_timing(render_from_score(score, 1.0), SR, abc)
+        assert data["fit"]["vocal"] is None and data["alignment_method"] == "onsets"
+
+
 class TestSaveJson:
     def test_counter_and_subfolder(self, tmp_path):
         p1, n1, sub = st.save_json("{}", "studiosuite/test/run1/timing", str(tmp_path))

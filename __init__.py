@@ -55,6 +55,7 @@ try:
         FVM_SongExtendMerge,
     )
     from .nodes.music.score_timing import FVM_ScoreTimingExport
+    from .nodes.music.lyric_align import FVM_LyricTimingAlign
 
     # ── API routes for outfit list editing ──
     import os
@@ -625,6 +626,7 @@ try:
         "FVM_SongExtendCommit": FVM_SongExtendCommit,
         "FVM_SongExtendMerge": FVM_SongExtendMerge,
         "FVM_ScoreTimingExport": FVM_ScoreTimingExport,
+        "FVM_LyricTimingAlign": FVM_LyricTimingAlign,
         "FVM_ListCount": FVM_ListCount,
     }
 
@@ -677,6 +679,7 @@ try:
         "FVM_SongExtendCommit": "Music · Verlaengern 5 · Anhaengen",
         "FVM_SongExtendMerge": "Music · Verlaengern 6 · Zusammenfuegen",
         "FVM_ScoreTimingExport": "Music · Partitur-Timing exportieren (JSON)",
+        "FVM_LyricTimingAlign": "Music · Lyrics-Zeilen abgleichen (Whisper + Timing, JSON)",
         "FVM_ListCount": "List / Batch Count",
     }
 
