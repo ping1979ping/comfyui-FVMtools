@@ -54,6 +54,7 @@ try:
         FVM_SongExtendCommit,
         FVM_SongExtendMerge,
     )
+    from .nodes.music.score_timing import FVM_ScoreTimingExport
 
     # ── API routes for outfit list editing ──
     import os
@@ -623,6 +624,7 @@ try:
         "FVM_SongExtendApply": FVM_SongExtendApply,
         "FVM_SongExtendCommit": FVM_SongExtendCommit,
         "FVM_SongExtendMerge": FVM_SongExtendMerge,
+        "FVM_ScoreTimingExport": FVM_ScoreTimingExport,
         "FVM_ListCount": FVM_ListCount,
     }
 
@@ -674,6 +676,7 @@ try:
         "FVM_SongExtendApply": "Music · Verlaengern 4 · Pruefen",
         "FVM_SongExtendCommit": "Music · Verlaengern 5 · Anhaengen",
         "FVM_SongExtendMerge": "Music · Verlaengern 6 · Zusammenfuegen",
+        "FVM_ScoreTimingExport": "Music · Partitur-Timing exportieren (JSON)",
         "FVM_ListCount": "List / Batch Count",
     }
 
