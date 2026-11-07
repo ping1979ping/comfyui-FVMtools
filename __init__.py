@@ -41,6 +41,9 @@ try:
     from .nodes.jb.ideogram_assembler import FVM_Ideogram_Assembler
     from .nodes.jb.ideogram_jitter import FVM_Ideogram_BoxJitter
     from .nodes.jb.moss_layout import FVM_MOSS_SAM3Layout
+    from .nodes.jb.moss_regional_lora import FVM_MOSS_RegionalLoRA
+    from .nodes.jb.moss_from_ideogram import FVM_MOSS_FromIdeogram
+    from .nodes.jb.moss_box_person import FVM_MOSS_BoxPersonData
 
     # ── Music — Cover-Texte: Prosodie messen, Prompt dafuer bauen ──
     from .nodes.music.lyrics_prosody import FVM_LyricsProsodyAnalyze
@@ -616,6 +619,9 @@ try:
         "FVM_Ideogram_Assembler": FVM_Ideogram_Assembler,
         "FVM_Ideogram_BoxJitter": FVM_Ideogram_BoxJitter,
         "FVM_MOSS_SAM3Layout": FVM_MOSS_SAM3Layout,
+        "FVM_MOSS_RegionalLoRA": FVM_MOSS_RegionalLoRA,
+        "FVM_MOSS_FromIdeogram": FVM_MOSS_FromIdeogram,
+        "FVM_MOSS_BoxPersonData": FVM_MOSS_BoxPersonData,
         "FVM_LyricsProsodyAnalyze": FVM_LyricsProsodyAnalyze,
         "FVM_CoverLyricsPromptBuilder": FVM_CoverLyricsPromptBuilder,
         "FVM_WhisperChunksToLyricLines": FVM_WhisperChunksToLyricLines,
@@ -669,6 +675,9 @@ try:
         "FVM_Ideogram_Assembler": "JB · Ideogram Assembler",
         "FVM_Ideogram_BoxJitter": "JB · Ideogram Box Jitter",
         "FVM_MOSS_SAM3Layout": "JB · MOSS Layout from SAM3",
+        "FVM_MOSS_RegionalLoRA": "JB · MOSS Regional LoRA",
+        "FVM_MOSS_FromIdeogram": "JB · MOSS Layout from Ideogram",
+        "FVM_MOSS_BoxPersonData": "JB · MOSS Boxes → Person Data",
         "FVM_LyricsProsodyAnalyze": "Music · Lyrics-Prosodie messen",
         "FVM_CoverLyricsPromptBuilder": "Music · Cover-Prompt bauen",
         "FVM_WhisperChunksToLyricLines": "Music · Whisper-Passagen zu Zeilen",
