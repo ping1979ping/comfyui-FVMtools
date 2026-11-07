@@ -35,7 +35,7 @@ Bring die unten gelisteten 56 Location-Sets von FVMtools auf die render-geprüft
 - `outdoor/pennsylvania_small_town`: diner_parking_lot, small_town_main_street, strip_mall_sidewalk
 - `outdoor/pennsylvania_suburb`: backyard_deck_with_grill, vinyl_sided_front_porch
 
-**Alle anderen Location-Sets fasst du nicht an.** Das gilt auch für Kategorien und Sets mit Schule, Teens, Kindern oder Familie, für `private_space`, `private_home_room`, Schlaf- und Badezimmer, Motel- und Hotelzimmer, Pool- und Strand-Settings, `college_scene` und `prom_night`. Outfit-Sets bleiben ebenfalls unverändert.
+**Alle Office Location-Sets sind schon überarbeitet.** Outfit-Sets bleiben ebenfalls unverändert.
 
 ## Ablauf
 
