@@ -36,8 +36,17 @@ class FaceAnalyzer:
         3. outfit_config.ini [models] insightface_path
         Falls back to standard path if nothing found (InsightFace may auto-download).
         """
+        models_dir = getattr(folder_paths, "models_dir", None)
+        if not isinstance(models_dir, str):
+            # Mocked folder_paths (unit tests): os.path.join would accept the
+            # mock, build a cwd-relative path and let InsightFace download
+            # buffalo_l (~275 MB) into it on every run.
+            raise RuntimeError(
+                f"[FVMTools] folder_paths.models_dir is not a path ({type(models_dir).__name__})"
+            )
+
         # 1. Standard ComfyUI location
-        standard = os.path.join(folder_paths.models_dir, "insightface")
+        standard = os.path.join(models_dir, "insightface")
         if os.path.isdir(os.path.join(standard, "models", "buffalo_l")):
             return standard
 
